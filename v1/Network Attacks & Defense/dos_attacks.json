@@ -1,0 +1,4565 @@
+[
+    {
+        "q": "What does DoS stand for in cybersecurity?",
+        "o": [
+            "Denial of Service attack type",
+            "Data over System transfer",
+            "Direct online Security measure",
+            "Distributed operations System"
+        ]
+    },
+    {
+        "q": "What is the main goal of a DoS attack?",
+        "o": [
+            "Make service unavailable to users",
+            "Steal data from the target system",
+            "Gain unauthorized access to system",
+            "Modify data on the target host"
+        ]
+    },
+    {
+        "q": "What is difference between DoS and DDoS?",
+        "o": [
+            "DDoS uses multiple attack sources",
+            "DoS is more powerful than DDoS",
+            "DDoS targets single machine only",
+            "DoS requires more resources here"
+        ]
+    },
+    {
+        "q": "What is volumetric attack in DDoS?",
+        "o": [
+            "Flood target with high traffic",
+            "Exploit application vulnerability",
+            "Target specific TCP connection",
+            "Attack DNS server records only"
+        ]
+    },
+    {
+        "q": "What is protocol attack in DDoS context?",
+        "o": [
+            "Exploit protocol weakness to exhaust",
+            "Send massive traffic volume only",
+            "Target application layer weakness",
+            "Attack physical network cables"
+        ]
+    },
+    {
+        "q": "What is application layer DDoS attack?",
+        "o": [
+            "Target layer 7 application services",
+            "Flood network layer with packets",
+            "Exploit transport layer protocol",
+            "Attack data link layer frames"
+        ]
+    },
+    {
+        "q": "What is SYN flood attack technique?",
+        "o": [
+            "Send many SYN without completing",
+            "Send many FIN packets to target",
+            "Send many ACK packets to target",
+            "Send many RST packets to target"
+        ]
+    },
+    {
+        "q": "What resource is exhausted in SYN flood?",
+        "o": [
+            "Connection state table entries",
+            "Available disk space on server",
+            "CPU processing cycles only here",
+            "Network bandwidth on link only"
+        ]
+    },
+    {
+        "q": "What is half-open connection in TCP?",
+        "o": [
+            "Connection after SYN before ACK",
+            "Connection with full handshake done",
+            "Connection closed by server only",
+            "Connection reset by firewall"
+        ]
+    },
+    {
+        "q": "What is SYN cookie defense technique?",
+        "o": [
+            "Encode state in sequence number",
+            "Block all SYN packets received",
+            "Encrypt SYN packet contents here",
+            "Log all SYN packets for review"
+        ]
+    },
+    {
+        "q": "How do SYN cookies avoid state storage?",
+        "o": [
+            "Server encodes info in ISN value",
+            "Server stores state in database",
+            "Server forwards to proxy device",
+            "Server blocks suspicious sources"
+        ]
+    },
+    {
+        "q": "What is UDP flood attack method?",
+        "o": [
+            "Send many UDP packets to targets",
+            "Send many TCP packets to targets",
+            "Send many ICMP packets to targets",
+            "Send many ARP packets to targets"
+        ]
+    },
+    {
+        "q": "Why is UDP flood effective attack?",
+        "o": [
+            "UDP is connectionless no handshake",
+            "UDP has stronger encryption here",
+            "UDP is slower than TCP protocol",
+            "UDP requires more server resources"
+        ]
+    },
+    {
+        "q": "What is ICMP flood attack technique?",
+        "o": [
+            "Send many ping requests to target",
+            "Send many TCP SYN to target here",
+            "Send many UDP packets to target",
+            "Send many ARP requests to target"
+        ]
+    },
+    {
+        "q": "What is Ping of Death attack?",
+        "o": [
+            "Send oversized ICMP packet to crash",
+            "Send normal ping at high rate",
+            "Send encrypted ping to target",
+            "Send ping with spoofed source"
+        ]
+    },
+    {
+        "q": "Why was Ping of Death effective historically?",
+        "o": [
+            "Fragmented reassembly caused overflow",
+            "ICMP protocol was unencrypted here",
+            "Ping rate was not limited then",
+            "Firewalls did not exist then"
+        ]
+    },
+    {
+        "q": "What is Smurf attack technique?",
+        "o": [
+            "ICMP to broadcast with spoofed source",
+            "TCP SYN to many hosts at once",
+            "UDP packets to random ports only",
+            "ARP requests to entire subnet"
+        ]
+    },
+    {
+        "q": "What amplifies traffic in Smurf attack?",
+        "o": [
+            "All hosts reply to spoofed victim",
+            "Single host replies multiple times",
+            "Firewall duplicates the packets",
+            "Router fragments the packets"
+        ]
+    },
+    {
+        "q": "How to prevent Smurf attacks on network?",
+        "o": [
+            "Disable broadcast ICMP responses",
+            "Enable broadcast ICMP responses",
+            "Block all ICMP traffic completely",
+            "Allow all broadcast traffic here"
+        ]
+    },
+    {
+        "q": "What is Fraggle attack similarity?",
+        "o": [
+            "Like Smurf but uses UDP instead",
+            "Like Smurf but uses TCP instead",
+            "Like Ping flood but encrypted",
+            "Like SYN flood but fragmented"
+        ]
+    },
+    {
+        "q": "What is amplification attack principle?",
+        "o": [
+            "Small request generates large response",
+            "Large request generates small response",
+            "Equal request and response sizes",
+            "No response generated at all"
+        ]
+    },
+    {
+        "q": "What is amplification factor in DDoS?",
+        "o": [
+            "Ratio of response to request size",
+            "Number of attacking hosts used here",
+            "Duration of the attack in seconds",
+            "Cost of the attack resources"
+        ]
+    },
+    {
+        "q": "What is DNS amplification attack?",
+        "o": [
+            "Query open resolvers with spoofed IP",
+            "Attack DNS server directly only",
+            "Block DNS queries at firewall",
+            "Encrypt DNS traffic for attack"
+        ]
+    },
+    {
+        "q": "What DNS query type maximizes amplification?",
+        "o": [
+            "ANY query returns all records",
+            "A query returns single record",
+            "PTR query for reverse lookup",
+            "MX query for mail servers"
+        ]
+    },
+    {
+        "q": "What is open resolver vulnerability?",
+        "o": [
+            "Responds to queries from any source",
+            "Only responds to local network",
+            "Blocks all external queries here",
+            "Requires authentication for query"
+        ]
+    },
+    {
+        "q": "How to mitigate DNS amplification?",
+        "o": [
+            "Restrict recursive queries to local",
+            "Allow queries from any source",
+            "Increase DNS cache size only",
+            "Disable DNS logging completely"
+        ]
+    },
+    {
+        "q": "What is NTP amplification attack?",
+        "o": [
+            "Use monlist command for amplification",
+            "Block NTP synchronization traffic",
+            "Encrypt NTP packets for attack",
+            "Speed up NTP update frequency"
+        ]
+    },
+    {
+        "q": "What is monlist command in NTP?",
+        "o": [
+            "Returns list of recent clients",
+            "Blocks all client connections",
+            "Encrypts time synchronization",
+            "Monitors server performance"
+        ]
+    },
+    {
+        "q": "What is NTP amplification factor typically?",
+        "o": [
+            "Up to 556x amplification possible",
+            "Only 2x amplification possible",
+            "No amplification possible here",
+            "Reduces traffic size actually"
+        ]
+    },
+    {
+        "q": "How to prevent NTP amplification abuse?",
+        "o": [
+            "Disable monlist or upgrade NTP",
+            "Enable monlist on all servers",
+            "Block all NTP traffic completely",
+            "Allow NTP from any source here"
+        ]
+    },
+    {
+        "q": "What is SSDP amplification attack?",
+        "o": [
+            "Abuse UPnP discovery for DDoS",
+            "Attack secure socket protocol",
+            "Block service discovery traffic",
+            "Encrypt discovery messages here"
+        ]
+    },
+    {
+        "q": "What protocol does SSDP use?",
+        "o": [
+            "UDP on port 1900 for discovery",
+            "TCP on port 80 for requests",
+            "UDP on port 53 for queries",
+            "TCP on port 443 for secure"
+        ]
+    },
+    {
+        "q": "What is memcached amplification attack?",
+        "o": [
+            "Abuse UDP memcached for massive DDoS",
+            "Attack memory cache directly only",
+            "Block all cache server access",
+            "Encrypt cache data for attack"
+        ]
+    },
+    {
+        "q": "What amplification factor does memcached have?",
+        "o": [
+            "Up to 50000x amplification possible",
+            "Only 10x amplification possible",
+            "Only 2x amplification possible",
+            "No amplification capability here"
+        ]
+    },
+    {
+        "q": "How to prevent memcached DDoS abuse?",
+        "o": [
+            "Disable UDP and use TCP only",
+            "Enable UDP for better performance",
+            "Allow external access to cache",
+            "Increase cache size for traffic"
+        ]
+    },
+    {
+        "q": "What is CLDAP amplification attack?",
+        "o": [
+            "Connectionless LDAP for DDoS",
+            "Secure LDAP for authentication",
+            "Encrypted LDAP for privacy",
+            "Local LDAP for directory"
+        ]
+    },
+    {
+        "q": "What is Chargen amplification attack?",
+        "o": [
+            "Abuse character generator service",
+            "Attack character encoding only",
+            "Block all UDP traffic here",
+            "Encrypt packet payload data"
+        ]
+    },
+    {
+        "q": "What is reflection attack in DDoS?",
+        "o": [
+            "Use third party to reflect traffic",
+            "Attack target directly only here",
+            "Encrypt attack traffic for hiding",
+            "Block incoming traffic at target"
+        ]
+    },
+    {
+        "q": "Why use reflection in DDoS attacks?",
+        "o": [
+            "Hide attacker source address",
+            "Increase attack bandwidth only",
+            "Improve attack accuracy here",
+            "Reduce attack cost only"
+        ]
+    },
+    {
+        "q": "What enables reflection attacks?",
+        "o": [
+            "IP source address spoofing ability",
+            "Target firewall misconfiguration",
+            "DNS server vulnerability only",
+            "Application layer weakness"
+        ]
+    },
+    {
+        "q": "What is BCP38 recommendation for?",
+        "o": [
+            "Source address validation at edge",
+            "Encryption of all traffic here",
+            "Blocking of all UDP traffic",
+            "Logging of all connections"
+        ]
+    },
+    {
+        "q": "What is ingress filtering purpose?",
+        "o": [
+            "Block packets with spoofed source",
+            "Allow all incoming traffic here",
+            "Encrypt incoming traffic data",
+            "Log incoming traffic only"
+        ]
+    },
+    {
+        "q": "What is Slowloris attack technique?",
+        "o": [
+            "Send partial HTTP requests slowly",
+            "Send complete requests very fast",
+            "Send encrypted requests only",
+            "Block all HTTP connections"
+        ]
+    },
+    {
+        "q": "What resource does Slowloris exhaust?",
+        "o": [
+            "Web server connection pool limit",
+            "Network bandwidth on the link",
+            "Disk space on web server here",
+            "CPU cycles on web server"
+        ]
+    },
+    {
+        "q": "How does Slowloris keep connections open?",
+        "o": [
+            "Send headers slowly never complete",
+            "Send complete requests repeatedly",
+            "Send encrypted data continuously",
+            "Send large files to server"
+        ]
+    },
+    {
+        "q": "What is HTTP flood attack method?",
+        "o": [
+            "Send many legitimate HTTP requests",
+            "Send malformed HTTP requests here",
+            "Block all HTTP traffic at edge",
+            "Encrypt HTTP traffic for attack"
+        ]
+    },
+    {
+        "q": "Why is HTTP flood hard to detect?",
+        "o": [
+            "Requests appear legitimate normal",
+            "Requests are always encrypted",
+            "Requests come from single source",
+            "Requests have malformed headers"
+        ]
+    },
+    {
+        "q": "What is HTTP GET flood attack?",
+        "o": [
+            "Request same resource repeatedly",
+            "Send POST data to server only",
+            "Delete resources on server here",
+            "Update server configuration"
+        ]
+    },
+    {
+        "q": "What is HTTP POST flood attack?",
+        "o": [
+            "Submit forms with large data",
+            "Request static pages repeatedly",
+            "Delete server resources only",
+            "Block incoming POST requests"
+        ]
+    },
+    {
+        "q": "What is RUDY attack technique?",
+        "o": [
+            "R U Dead Yet slow POST attack",
+            "Rapid Unified Denial attack",
+            "Random UDP Denial attack type",
+            "Resource Utilization Denial"
+        ]
+    },
+    {
+        "q": "How does RUDY attack work?",
+        "o": [
+            "Send POST body very slowly byte",
+            "Send GET requests very rapidly",
+            "Send encrypted payloads to server",
+            "Block all server responses"
+        ]
+    },
+    {
+        "q": "What is Slow Read attack method?",
+        "o": [
+            "Read response very slowly to hold",
+            "Write data very slowly to server",
+            "Block reading of server response",
+            "Encrypt response before sending"
+        ]
+    },
+    {
+        "q": "What is application layer DDoS defense?",
+        "o": [
+            "Rate limiting and behavior analysis",
+            "Block all layer 7 traffic here",
+            "Encrypt all application data only",
+            "Ignore application layer attacks"
+        ]
+    },
+    {
+        "q": "What is challenge response for DDoS?",
+        "o": [
+            "Verify human before allowing access",
+            "Block all requests automatically",
+            "Encrypt all response data here",
+            "Log all requests for analysis"
+        ]
+    },
+    {
+        "q": "What is CAPTCHA used for in DDoS?",
+        "o": [
+            "Distinguish humans from bots",
+            "Encrypt user data for privacy",
+            "Speed up page loading time",
+            "Block all automated traffic"
+        ]
+    },
+    {
+        "q": "What is JavaScript challenge in DDoS?",
+        "o": [
+            "Execute JS to prove browser real",
+            "Block all JavaScript execution",
+            "Encrypt JavaScript code here",
+            "Log JavaScript execution only"
+        ]
+    },
+    {
+        "q": "What is cookie challenge for DDoS?",
+        "o": [
+            "Set cookie to verify real browser",
+            "Block all cookies from clients",
+            "Encrypt cookie data for privacy",
+            "Delete cookies after session"
+        ]
+    },
+    {
+        "q": "What is botnet in DDoS context?",
+        "o": [
+            "Network of compromised computers",
+            "Single powerful attack machine",
+            "Legitimate network traffic source",
+            "Security monitoring system"
+        ]
+    },
+    {
+        "q": "What is bot in botnet terminology?",
+        "o": [
+            "Single compromised machine zombie",
+            "Master control server computer",
+            "Legitimate user computer here",
+            "Security analysis system"
+        ]
+    },
+    {
+        "q": "What is C2 in botnet architecture?",
+        "o": [
+            "Command and Control server system",
+            "Computer to Computer connection",
+            "Centralized Cache system here",
+            "Controlled Communication channel"
+        ]
+    },
+    {
+        "q": "What is IRC-based C2 channel?",
+        "o": [
+            "Use IRC chat for bot commands",
+            "Use HTTP for bot communication",
+            "Use DNS for command channel",
+            "Use P2P for bot network"
+        ]
+    },
+    {
+        "q": "What is HTTP-based C2 advantage?",
+        "o": [
+            "Blends with normal web traffic",
+            "Faster than IRC communication",
+            "More secure than other methods",
+            "Easier to detect by defenders"
+        ]
+    },
+    {
+        "q": "What is P2P botnet architecture?",
+        "o": [
+            "Decentralized no single C2 server",
+            "Centralized single control point",
+            "Uses IRC for communication only",
+            "Requires encryption always here"
+        ]
+    },
+    {
+        "q": "Why is P2P botnet harder to takedown?",
+        "o": [
+            "No single point of failure exists",
+            "Uses stronger encryption method",
+            "Has more bots than centralised",
+            "Attacks faster than others"
+        ]
+    },
+    {
+        "q": "What is DGA in botnet communication?",
+        "o": [
+            "Domain Generation Algorithm for C2",
+            "Distributed Gateway Architecture",
+            "Digital Gateway Access method",
+            "Dynamic Group Assignment"
+        ]
+    },
+    {
+        "q": "How does DGA help botnets evade?",
+        "o": [
+            "Generate pseudorandom domain names",
+            "Encrypt all communication data",
+            "Speed up command delivery here",
+            "Reduce botnet size for hiding"
+        ]
+    },
+    {
+        "q": "What is fast flux DNS technique?",
+        "o": [
+            "Rapidly change DNS A records",
+            "Slow down DNS resolution time",
+            "Encrypt DNS query responses",
+            "Block DNS queries at edge"
+        ]
+    },
+    {
+        "q": "What is double flux DNS technique?",
+        "o": [
+            "Change both A and NS records",
+            "Change only A records rapidly",
+            "Encrypt A and NS records",
+            "Block A and NS queries"
+        ]
+    },
+    {
+        "q": "What is Mirai botnet known for?",
+        "o": [
+            "Massive IoT device DDoS attacks",
+            "Only desktop computer infection",
+            "Only server system attacks",
+            "Only cloud service attacks"
+        ]
+    },
+    {
+        "q": "What devices does Mirai target?",
+        "o": [
+            "IoT devices with default passwords",
+            "Enterprise servers with patches",
+            "Desktop computers with antivirus",
+            "Mobile phones with encryption"
+        ]
+    },
+    {
+        "q": "What protocol does Mirai scan for?",
+        "o": [
+            "Telnet on port 23 for access",
+            "SSH on port 22 for access",
+            "HTTP on port 80 for access",
+            "HTTPS on port 443 for access"
+        ]
+    },
+    {
+        "q": "What is booter service in DDoS?",
+        "o": [
+            "DDoS for hire attack service",
+            "Legitimate performance testing",
+            "Network monitoring service",
+            "Security assessment tool"
+        ]
+    },
+    {
+        "q": "What is stresser in DDoS context?",
+        "o": [
+            "Same as booter DDoS service",
+            "Legitimate load testing tool",
+            "Network security scanner",
+            "Performance monitoring service"
+        ]
+    },
+    {
+        "q": "What is DDoS mitigation service?",
+        "o": [
+            "Absorb and filter attack traffic",
+            "Amplify attack traffic to target",
+            "Generate attack traffic for test",
+            "Block all traffic to target"
+        ]
+    },
+    {
+        "q": "What is scrubbing center in DDoS?",
+        "o": [
+            "Filter malicious traffic from clean",
+            "Generate attack traffic for testing",
+            "Block all incoming traffic here",
+            "Encrypt traffic for protection"
+        ]
+    },
+    {
+        "q": "How does traffic scrubbing work?",
+        "o": [
+            "Analyze and drop malicious packets",
+            "Block all incoming traffic here",
+            "Encrypt all traffic for safety",
+            "Forward all traffic unchanged"
+        ]
+    },
+    {
+        "q": "What is BGP blackhole for DDoS?",
+        "o": [
+            "Route attack traffic to null",
+            "Route clean traffic to target",
+            "Encrypt traffic at BGP level",
+            "Block all BGP announcements"
+        ]
+    },
+    {
+        "q": "What is RTBH technique in DDoS?",
+        "o": [
+            "Remotely Triggered Black Hole routing",
+            "Real Time Bandwidth Handling",
+            "Rapid Traffic Blocking Handler",
+            "Remote Threat Blocking Host"
+        ]
+    },
+    {
+        "q": "What is limitation of blackholing?",
+        "o": [
+            "Drops both good and bad traffic",
+            "Only drops malicious traffic here",
+            "Increases bandwidth to target",
+            "Improves latency to target"
+        ]
+    },
+    {
+        "q": "What is anycast in DDoS mitigation?",
+        "o": [
+            "Distribute traffic across locations",
+            "Concentrate traffic to single point",
+            "Encrypt traffic for protection",
+            "Block traffic at network edge"
+        ]
+    },
+    {
+        "q": "How does anycast help with DDoS?",
+        "o": [
+            "Absorb attack across many nodes",
+            "Concentrate attack on single node",
+            "Encrypt attack traffic for hiding",
+            "Block all attack traffic here"
+        ]
+    },
+    {
+        "q": "What is CDN role in DDoS protection?",
+        "o": [
+            "Distribute and absorb attack load",
+            "Concentrate traffic to origin",
+            "Encrypt all content delivery",
+            "Block content from users"
+        ]
+    },
+    {
+        "q": "What is rate limiting for DDoS?",
+        "o": [
+            "Limit requests per source IP",
+            "Allow unlimited requests always",
+            "Block all requests completely",
+            "Encrypt all request data"
+        ]
+    },
+    {
+        "q": "What is connection rate limiting?",
+        "o": [
+            "Limit new connections per second",
+            "Allow unlimited connections here",
+            "Block all new connections now",
+            "Encrypt connection attempts"
+        ]
+    },
+    {
+        "q": "What is request rate limiting?",
+        "o": [
+            "Limit HTTP requests per time period",
+            "Allow unlimited requests always",
+            "Block all HTTP requests here",
+            "Encrypt HTTP request data"
+        ]
+    },
+    {
+        "q": "What is IP reputation in DDoS?",
+        "o": [
+            "Block known malicious IP sources",
+            "Allow all IP addresses access",
+            "Encrypt IP header information",
+            "Log all IP addresses only"
+        ]
+    },
+    {
+        "q": "What is geo-blocking for DDoS?",
+        "o": [
+            "Block traffic from specific regions",
+            "Allow traffic from all regions",
+            "Encrypt traffic by region",
+            "Log traffic by geographic area"
+        ]
+    },
+    {
+        "q": "What is TCP window scaling attack?",
+        "o": [
+            "Abuse window size for resource drain",
+            "Speed up TCP connection setup",
+            "Encrypt TCP window values",
+            "Block TCP window negotiation"
+        ]
+    },
+    {
+        "q": "What is Sockstress attack technique?",
+        "o": [
+            "Exhaust resources via TCP state",
+            "Send many UDP packets at once",
+            "Flood with ICMP echo requests",
+            "Attack application layer only"
+        ]
+    },
+    {
+        "q": "What is TCP RST attack method?",
+        "o": [
+            "Send forged RST to terminate connection",
+            "Send SYN to initiate connection here",
+            "Send ACK to acknowledge data receipt",
+            "Send FIN to gracefully close session"
+        ]
+    },
+    {
+        "q": "What is teardrop attack technique?",
+        "o": [
+            "Send overlapping fragmented packets",
+            "Send complete packets very quickly",
+            "Send encrypted packets to target",
+            "Send small packets at slow rate"
+        ]
+    },
+    {
+        "q": "What causes teardrop attack impact?",
+        "o": [
+            "Fragment reassembly buffer overflow",
+            "Network bandwidth exhaustion here",
+            "Application layer vulnerability",
+            "Encryption key weakness found"
+        ]
+    },
+    {
+        "q": "What is LAND attack method?",
+        "o": [
+            "Packet with same source and dest IP",
+            "Packet with different source dest",
+            "Encrypted packet to target system",
+            "Fragmented packet to target host"
+        ]
+    },
+    {
+        "q": "What is bonk attack similar to?",
+        "o": [
+            "Teardrop with UDP fragmentation",
+            "SYN flood with rapid connection",
+            "Ping flood with ICMP packets",
+            "HTTP flood with GET requests"
+        ]
+    },
+    {
+        "q": "What is WinNuke attack target?",
+        "o": [
+            "Windows NetBIOS port 139 attack",
+            "Linux SSH port 22 attack here",
+            "Web server port 80 attack only",
+            "DNS server port 53 attack"
+        ]
+    },
+    {
+        "q": "What is Christmas tree packet attack?",
+        "o": [
+            "TCP packet with all flags set",
+            "UDP packet with fragmentation",
+            "ICMP packet with large size",
+            "ARP packet with spoofed MAC"
+        ]
+    },
+    {
+        "q": "Why called Christmas tree packet?",
+        "o": [
+            "All flags lit up like tree lights",
+            "Attack happens during holidays",
+            "Packets are colored when viewed",
+            "Attack targets Christmas servers"
+        ]
+    },
+    {
+        "q": "What is null packet scan attack?",
+        "o": [
+            "TCP packet with no flags set",
+            "TCP packet with all flags set",
+            "UDP packet without payload data",
+            "ICMP packet without checksum"
+        ]
+    },
+    {
+        "q": "What is carpet bombing DDoS attack?",
+        "o": [
+            "Attack entire IP range subnet wide",
+            "Attack single IP address only",
+            "Attack single port on many hosts",
+            "Attack single service only here"
+        ]
+    },
+    {
+        "q": "Why is carpet bombing hard to mitigate?",
+        "o": [
+            "Traffic distributed across IPs",
+            "Attack concentrated on one IP",
+            "Traffic is always encrypted",
+            "Attack uses single protocol"
+        ]
+    },
+    {
+        "q": "What is pulse wave DDoS attack?",
+        "o": [
+            "Bursts of attack then pause repeat",
+            "Constant steady attack traffic",
+            "Gradually increasing attack level",
+            "Single burst then complete stop"
+        ]
+    },
+    {
+        "q": "Why is pulse wave effective technique?",
+        "o": [
+            "Evades threshold-based detection",
+            "Uses more bandwidth than steady",
+            "Harder to generate by attackers",
+            "Requires more botnet resources"
+        ]
+    },
+    {
+        "q": "What is ransom DDoS attack type?",
+        "o": [
+            "DDoS threat demanding payment",
+            "Encrypting files for ransom only",
+            "Stealing data for extortion",
+            "Defacing website for ransom"
+        ]
+    },
+    {
+        "q": "What is RDoS attack technique?",
+        "o": [
+            "Ransom Denial of Service threat",
+            "Remote Denial of Service attack",
+            "Rapid Denial of Service method",
+            "Routing Denial of Service only"
+        ]
+    },
+    {
+        "q": "What is smoke screen DDoS purpose?",
+        "o": [
+            "Distract from other attack activity",
+            "Primary attack method for damage",
+            "Test target defenses capability",
+            "Generate revenue from attack"
+        ]
+    },
+    {
+        "q": "What other attacks hide behind smoke screen?",
+        "o": [
+            "Data exfiltration or intrusion",
+            "Another DDoS from same source",
+            "Performance testing of target",
+            "Security audit of systems"
+        ]
+    },
+    {
+        "q": "What is multi-vector DDoS attack?",
+        "o": [
+            "Combine multiple attack techniques",
+            "Use single attack method only",
+            "Attack single target at time",
+            "Use single protocol for attack"
+        ]
+    },
+    {
+        "q": "Why is multi-vector harder to defend?",
+        "o": [
+            "Different mitigations for each type",
+            "Requires less attacker resources",
+            "Uses less bandwidth overall here",
+            "Easier to detect than single"
+        ]
+    },
+    {
+        "q": "What is protocol 0 attack method?",
+        "o": [
+            "Send IP packets with protocol zero",
+            "Attack using UDP protocol only",
+            "Attack using TCP protocol only",
+            "Attack using ICMP protocol"
+        ]
+    },
+    {
+        "q": "What is GRE flood attack?",
+        "o": [
+            "Flood using GRE tunnel packets",
+            "Flood using TCP SYN packets",
+            "Flood using UDP packets only",
+            "Flood using ICMP echo packets"
+        ]
+    },
+    {
+        "q": "What is ESP flood attack type?",
+        "o": [
+            "Flood using IPsec ESP packets",
+            "Flood using TCP SYN packets",
+            "Flood using HTTP GET requests",
+            "Flood using DNS queries only"
+        ]
+    },
+    {
+        "q": "What is SIP flood attack target?",
+        "o": [
+            "Voice over IP signaling service",
+            "Web server HTTP service only",
+            "Database server SQL service",
+            "File server SMB service"
+        ]
+    },
+    {
+        "q": "What SIP method is used in attacks?",
+        "o": [
+            "INVITE requests to exhaust resources",
+            "GET requests to retrieve data only",
+            "POST requests to submit data",
+            "DELETE requests to remove data"
+        ]
+    },
+    {
+        "q": "What is DNS water torture attack?",
+        "o": [
+            "Query random subdomains to exhaust",
+            "Query single domain repeatedly",
+            "Block all DNS queries at edge",
+            "Encrypt DNS query responses"
+        ]
+    },
+    {
+        "q": "Why is water torture hard to cache?",
+        "o": [
+            "Random subdomains never cached",
+            "Queries are for same domain",
+            "Responses are always encrypted",
+            "Queries come from single source"
+        ]
+    },
+    {
+        "q": "What is NXDOMAIN attack type?",
+        "o": [
+            "Query non-existent domains heavily",
+            "Query existing domains only here",
+            "Block domain resolution at edge",
+            "Encrypt domain query traffic"
+        ]
+    },
+    {
+        "q": "What exhausts in NXDOMAIN attack?",
+        "o": [
+            "DNS resolver cache and CPU",
+            "Network bandwidth only here",
+            "Application layer resources",
+            "Physical network cables"
+        ]
+    },
+    {
+        "q": "What is DNS query flood simple?",
+        "o": [
+            "Send many DNS queries to server",
+            "Send many TCP SYN to DNS",
+            "Block all DNS traffic here",
+            "Encrypt DNS query packets"
+        ]
+    },
+    {
+        "q": "What is TCP ACK flood attack?",
+        "o": [
+            "Send many ACK packets to target",
+            "Send many SYN packets to target",
+            "Send many FIN packets to target",
+            "Send many RST packets to target"
+        ]
+    },
+    {
+        "q": "Why does ACK flood cause problems?",
+        "o": [
+            "Processing ACK without connection wastes",
+            "ACK packets are very large size",
+            "ACK packets cannot be blocked here",
+            "ACK packets contain malware data"
+        ]
+    },
+    {
+        "q": "What is TCP FIN flood attack?",
+        "o": [
+            "Send many FIN packets to target",
+            "Send many SYN packets to target",
+            "Send many ACK packets to target",
+            "Send many RST packets to target"
+        ]
+    },
+    {
+        "q": "What is push and ACK flood?",
+        "o": [
+            "Send TCP PSH ACK packets rapidly",
+            "Send TCP SYN packets rapidly here",
+            "Send UDP packets rapidly only",
+            "Send ICMP packets rapidly here"
+        ]
+    },
+    {
+        "q": "What is fragmented ACK flood?",
+        "o": [
+            "Fragment ACK packets to evade",
+            "Complete ACK packets at high rate",
+            "Encrypt ACK packets for hiding",
+            "Block ACK packets at firewall"
+        ]
+    },
+    {
+        "q": "What is out of state attack?",
+        "o": [
+            "Send packets not matching connection",
+            "Send packets within valid sessions",
+            "Encrypt all packet payloads here",
+            "Block all stateful connections"
+        ]
+    },
+    {
+        "q": "What is SSL/TLS exhaustion attack?",
+        "o": [
+            "Exhaust resources with handshakes",
+            "Break SSL encryption algorithm",
+            "Steal SSL private keys here",
+            "Block all encrypted traffic"
+        ]
+    },
+    {
+        "q": "Why is SSL handshake expensive?",
+        "o": [
+            "Asymmetric crypto requires CPU",
+            "Symmetric crypto is very slow",
+            "Handshake uses much bandwidth",
+            "Certificates are very large"
+        ]
+    },
+    {
+        "q": "What is SSL renegotiation attack?",
+        "o": [
+            "Request many renegotiations to exhaust",
+            "Break SSL encryption strength",
+            "Steal session encryption keys",
+            "Block SSL renegotiation packets"
+        ]
+    },
+    {
+        "q": "What is THC SSL DoS tool?",
+        "o": [
+            "Tool exploiting SSL renegotiation",
+            "Tool for SSL encryption cracking",
+            "Tool for certificate theft only",
+            "Tool for SSL traffic blocking"
+        ]
+    },
+    {
+        "q": "How to mitigate SSL exhaustion?",
+        "o": [
+            "Disable renegotiation limit handshakes",
+            "Enable unlimited renegotiation here",
+            "Block all SSL traffic completely",
+            "Use weaker encryption algorithms"
+        ]
+    },
+    {
+        "q": "What is SSL flood attack?",
+        "o": [
+            "Complete many SSL handshakes rapidly",
+            "Block SSL handshake attempts here",
+            "Encrypt SSL handshake data only",
+            "Slow down SSL handshake speed"
+        ]
+    },
+    {
+        "q": "What is encrypted attack traffic?",
+        "o": [
+            "DDoS using HTTPS encrypted requests",
+            "DDoS using plain HTTP requests only",
+            "Blocking encrypted traffic at edge",
+            "Decrypting attack traffic always"
+        ]
+    },
+    {
+        "q": "Why is encrypted DDoS challenging?",
+        "o": [
+            "Cannot inspect payload for filtering",
+            "Encrypted traffic is smaller size",
+            "Encryption is easy to block here",
+            "Encrypted sources easily identified"
+        ]
+    },
+    {
+        "q": "What is DNS over HTTPS abuse?",
+        "o": [
+            "Hide DNS queries in HTTPS traffic",
+            "Block all DNS queries at edge",
+            "Encrypt DNS responses only here",
+            "Speed up DNS resolution time"
+        ]
+    },
+    {
+        "q": "What is API abuse DDoS attack?",
+        "o": [
+            "Flood API endpoints with requests",
+            "Block API access for all users",
+            "Encrypt API request data only",
+            "Speed up API response time"
+        ]
+    },
+    {
+        "q": "Why are APIs DDoS targets?",
+        "o": [
+            "APIs process heavy backend logic",
+            "APIs have unlimited rate limits",
+            "APIs are always unprotected here",
+            "APIs cannot be monitored easily"
+        ]
+    },
+    {
+        "q": "What is web scraping as attack?",
+        "o": [
+            "Excessive automated data extraction",
+            "Manual browsing of website content",
+            "Blocking access to web content",
+            "Encrypting web page data only"
+        ]
+    },
+    {
+        "q": "What is credential stuffing impact?",
+        "o": [
+            "Resource exhaustion plus account breach",
+            "Only account breach without load",
+            "Only resource exhaustion no breach",
+            "Neither exhaustion nor breach"
+        ]
+    },
+    {
+        "q": "What is brute force as DoS?",
+        "o": [
+            "Lock accounts or exhaust auth systems",
+            "Only gain access to accounts here",
+            "Only test password strength now",
+            "Never causes denial of service"
+        ]
+    },
+    {
+        "q": "What is ReDoS attack technique?",
+        "o": [
+            "Regular expression denial of service",
+            "Remote denial of service attack",
+            "Rapid denial of service method",
+            "Routing denial of service only"
+        ]
+    },
+    {
+        "q": "What causes ReDoS vulnerability?",
+        "o": [
+            "Backtracking in regex processing",
+            "Network bandwidth exhaustion here",
+            "Memory allocation failures only",
+            "Disk space exhaustion on server"
+        ]
+    },
+    {
+        "q": "What is HashDoS attack method?",
+        "o": [
+            "Collisions in hash table handling",
+            "Breaking cryptographic hash functions",
+            "Stealing password hash values",
+            "Blocking hash calculation process"
+        ]
+    },
+    {
+        "q": "What triggers HashDoS vulnerability?",
+        "o": [
+            "Predictable hash function collisions",
+            "Random hash function outputs",
+            "Strong cryptographic hashing",
+            "Encrypted hash table storage"
+        ]
+    },
+    {
+        "q": "What is billion laughs XML attack?",
+        "o": [
+            "Exponential entity expansion DoS",
+            "Simple XML parsing attack only",
+            "XML encryption breaking attack",
+            "XML injection for data theft"
+        ]
+    },
+    {
+        "q": "What is XML external entity DoS?",
+        "o": [
+            "Load huge external file via XXE",
+            "Simple XML parsing error only",
+            "XML encryption attack technique",
+            "XML injection for SQL access"
+        ]
+    },
+    {
+        "q": "What is zip bomb attack method?",
+        "o": [
+            "Highly compressed file expands huge",
+            "Encrypted zip file cannot open",
+            "Corrupted zip file crashes app",
+            "Password protected zip blocked"
+        ]
+    },
+    {
+        "q": "What is decompression bomb impact?",
+        "o": [
+            "Exhaust disk or memory resources",
+            "Steal files during extraction",
+            "Encrypt files after extraction",
+            "Delete files after processing"
+        ]
+    },
+    {
+        "q": "What is fork bomb attack type?",
+        "o": [
+            "Process replicates until crash",
+            "Network traffic floods target",
+            "Disk fills with log files",
+            "Memory leak in application"
+        ]
+    },
+    {
+        "q": "What is local DoS attack type?",
+        "o": [
+            "Attack from within same system",
+            "Attack from external network only",
+            "Attack from cloud infrastructure",
+            "Attack from mobile devices"
+        ]
+    },
+    {
+        "q": "What is CPU exhaustion attack?",
+        "o": [
+            "Trigger expensive computations",
+            "Consume network bandwidth only",
+            "Fill disk storage completely",
+            "Exhaust memory allocation pool"
+        ]
+    },
+    {
+        "q": "What is memory exhaustion attack?",
+        "o": [
+            "Allocate memory until crash",
+            "Consume CPU cycles only here",
+            "Fill disk storage completely",
+            "Consume network bandwidth"
+        ]
+    },
+    {
+        "q": "What is disk filling attack type?",
+        "o": [
+            "Generate data until disk full",
+            "Consume CPU cycles only here",
+            "Exhaust memory allocation pool",
+            "Consume network bandwidth"
+        ]
+    },
+    {
+        "q": "What is file handle exhaustion?",
+        "o": [
+            "Open many files until limit",
+            "Delete important system files",
+            "Encrypt files for ransom here",
+            "Corrupt file system metadata"
+        ]
+    },
+    {
+        "q": "What is process table exhaustion?",
+        "o": [
+            "Create processes until limit",
+            "Kill critical system processes",
+            "Encrypt running process memory",
+            "Modify process execution code"
+        ]
+    },
+    {
+        "q": "What is socket exhaustion attack?",
+        "o": [
+            "Create connections until limit",
+            "Block all network traffic here",
+            "Encrypt network socket data",
+            "Modify socket behavior code"
+        ]
+    },
+    {
+        "q": "What is thread exhaustion attack?",
+        "o": [
+            "Consume all available threads",
+            "Block thread creation only",
+            "Encrypt thread execution data",
+            "Modify thread scheduling code"
+        ]
+    },
+    {
+        "q": "What is network interface flooding?",
+        "o": [
+            "Overwhelm NIC with packets",
+            "Block NIC from sending data",
+            "Encrypt NIC configuration here",
+            "Modify NIC driver software"
+        ]
+    },
+    {
+        "q": "What is IoT DDoS characteristic?",
+        "o": [
+            "Large botnet of weak devices",
+            "Small botnet of strong devices",
+            "Single powerful attack device",
+            "Manual attack from user"
+        ]
+    },
+    {
+        "q": "Why are IoT devices vulnerable?",
+        "o": [
+            "Weak security and default credentials",
+            "Strong encryption always enabled",
+            "Regular automatic security updates",
+            "Comprehensive security monitoring"
+        ]
+    },
+    {
+        "q": "What is reflection attack defense?",
+        "o": [
+            "BCP38 ingress filtering antispoofing",
+            "Allow all spoofed traffic through",
+            "Ignore source address validation",
+            "Disable all filtering at edge"
+        ]
+    },
+    {
+        "q": "What is upstream filtering for DDoS?",
+        "o": [
+            "ISP filters before traffic reaches",
+            "Target filters after receiving all",
+            "No filtering at any point here",
+            "Only endpoint filtering applied"
+        ]
+    },
+    {
+        "q": "What is on-premise DDoS mitigation?",
+        "o": [
+            "Dedicated appliances at location",
+            "Cloud-based filtering service only",
+            "ISP upstream filtering only here",
+            "No mitigation capability at all"
+        ]
+    },
+    {
+        "q": "What is cloud DDoS mitigation benefit?",
+        "o": [
+            "Absorb larger attacks with capacity",
+            "Faster than on-premise solution",
+            "Cheaper than any alternative",
+            "No configuration required ever"
+        ]
+    },
+    {
+        "q": "What is hybrid DDoS protection?",
+        "o": [
+            "Combine on-premise and cloud",
+            "Only on-premise solution used",
+            "Only cloud solution used here",
+            "No protection solution at all"
+        ]
+    },
+    {
+        "q": "When does hybrid solution escalate to cloud?",
+        "o": [
+            "Attack exceeds on-premise capacity",
+            "Attack is very small volume",
+            "Cloud is always used first",
+            "Manual escalation only always"
+        ]
+    },
+    {
+        "q": "What is DDoS attack surface?",
+        "o": [
+            "All potential targets and vectors",
+            "Only web server port 80 target",
+            "Only single IP address target",
+            "Only application layer target"
+        ]
+    },
+    {
+        "q": "How to reduce DDoS attack surface?",
+        "o": [
+            "Minimize exposed services and IPs",
+            "Expose all services and IPs",
+            "Add more services for redundancy",
+            "Ignore attack surface completely"
+        ]
+    },
+    {
+        "q": "What is DDoS attack attribution?",
+        "o": [
+            "Identify source of the attack",
+            "Block attack without knowing source",
+            "Ignore source identification here",
+            "Attribute attack to wrong source"
+        ]
+    },
+    {
+        "q": "Why is DDoS attribution difficult?",
+        "o": [
+            "Spoofing botnets proxies anonymize",
+            "Attackers always use real IPs",
+            "Single source easy to identify",
+            "Attribution tools very accurate"
+        ]
+    },
+    {
+        "q": "What is DDoS forensics purpose?",
+        "o": [
+            "Analyze attack for future defense",
+            "Block current attack in progress",
+            "Ignore attack details completely",
+            "Generate attack traffic for test"
+        ]
+    },
+    {
+        "q": "What data helps DDoS forensics?",
+        "o": [
+            "Packet captures flow logs metadata",
+            "Only application logs from server",
+            "Only user authentication records",
+            "Only firewall configuration files"
+        ]
+    },
+    {
+        "q": "What is DDoS response playbook?",
+        "o": [
+            "Documented steps for attack response",
+            "Automated attack generation tool",
+            "Manual attack testing procedure",
+            "Single page of contact info"
+        ]
+    },
+    {
+        "q": "What should playbook include?",
+        "o": [
+            "Roles escalation mitigation steps",
+            "Only contact information for team",
+            "Only network diagram of systems",
+            "Only vendor product documentation"
+        ]
+    },
+    {
+        "q": "What is DDoS tabletop exercise?",
+        "o": [
+            "Simulate attack response scenario",
+            "Actually attack own systems here",
+            "Block all traffic for testing",
+            "Ignore attack preparation"
+        ]
+    },
+    {
+        "q": "What is war room for DDoS response?",
+        "o": [
+            "Dedicated space for incident handling",
+            "Automated attack detection system",
+            "Cloud mitigation service provider",
+            "Network monitoring dashboard only"
+        ]
+    },
+    {
+        "q": "What is attack baseline measurement?",
+        "o": [
+            "Normal traffic patterns for comparison",
+            "Maximum attack traffic observed here",
+            "Minimum protection level required",
+            "Average response time to attacks"
+        ]
+    },
+    {
+        "q": "What is time to mitigation metric?",
+        "o": [
+            "Duration from detection to protection",
+            "Duration from attack start to end",
+            "Duration of normal operation here",
+            "Duration of maintenance window"
+        ]
+    },
+    {
+        "q": "What is false positive rate in DDoS?",
+        "o": [
+            "Legitimate traffic blocked incorrectly",
+            "Attack traffic allowed through here",
+            "Correct identification of attacks",
+            "Correct passing of good traffic"
+        ]
+    },
+    {
+        "q": "What is false negative rate impact?",
+        "o": [
+            "Attack traffic not blocked properly",
+            "Legitimate traffic blocked incorrectly",
+            "Correct identification of attacks",
+            "Correct passing of good traffic"
+        ]
+    },
+    {
+        "q": "What is DDoS war gaming purpose?",
+        "o": [
+            "Test defenses with simulated attack",
+            "Actually launch attack on target",
+            "Document attack response procedures",
+            "Train new security team members"
+        ]
+    },
+    {
+        "q": "What is red team DDoS testing?",
+        "o": [
+            "Offensive testing of DDoS defenses",
+            "Defensive monitoring of network here",
+            "Automated scanning for vulnerabilities",
+            "Compliance audit of security controls"
+        ]
+    },
+    {
+        "q": "What is blue team role in DDoS?",
+        "o": [
+            "Defend against attack attempts",
+            "Launch attacks to test defenses",
+            "Document security procedures only",
+            "Train users on security awareness"
+        ]
+    },
+    {
+        "q": "What is DDoS testing legal consideration?",
+        "o": [
+            "Get written authorization first here",
+            "Test without any permission needed",
+            "Notify target after testing done",
+            "Legal only if attacker caught"
+        ]
+    },
+    {
+        "q": "What is stress testing versus DDoS?",
+        "o": [
+            "Authorized capacity testing proper",
+            "Unauthorized attack on target here",
+            "Same thing different name only",
+            "Always illegal regardless intent"
+        ]
+    },
+    {
+        "q": "What is load testing for DDoS prep?",
+        "o": [
+            "Determine capacity before attack",
+            "Launch actual DDoS attack test",
+            "Block all traffic during test",
+            "Encrypt traffic for testing"
+        ]
+    },
+    {
+        "q": "What is capacity planning for DDoS?",
+        "o": [
+            "Plan resources to handle attacks",
+            "Plan attacks on target systems",
+            "Plan response to single attack",
+            "Plan notification after attack"
+        ]
+    },
+    {
+        "q": "What is overprovisioning defense?",
+        "o": [
+            "Have more capacity than needed",
+            "Have minimum capacity required",
+            "Have no spare capacity at all",
+            "Have capacity equal to load"
+        ]
+    },
+    {
+        "q": "What is elastic scaling for DDoS?",
+        "o": [
+            "Add capacity automatically under load",
+            "Fixed capacity regardless of load",
+            "Reduce capacity during attack here",
+            "Block all traffic when loaded"
+        ]
+    },
+    {
+        "q": "What is autoscaling limitation for DDoS?",
+        "o": [
+            "Cost and scaling speed limits",
+            "No limitations exist at all here",
+            "Always faster than attack growth",
+            "Always cheaper than mitigation"
+        ]
+    },
+    {
+        "q": "What is SLA for DDoS mitigation?",
+        "o": [
+            "Service level agreement guarantees",
+            "Security level assessment report",
+            "Standard logging architecture here",
+            "System level alert notification"
+        ]
+    },
+    {
+        "q": "What SLA metrics for DDoS service?",
+        "o": [
+            "Time to mitigate capacity uptime",
+            "Only attack detection accuracy",
+            "Only false positive rate here",
+            "Only network bandwidth capacity"
+        ]
+    },
+    {
+        "q": "What is DDoS insurance coverage?",
+        "o": [
+            "Financial protection from attack costs",
+            "Technical protection from attacks",
+            "Legal protection from liability",
+            "Reputation protection service"
+        ]
+    },
+    {
+        "q": "What costs does DDoS insurance cover?",
+        "o": [
+            "Revenue loss incident response fees",
+            "Only hardware replacement costs",
+            "Only employee salary payments",
+            "Only legal fees for prosecution"
+        ]
+    },
+    {
+        "q": "What is DDoS attack profile?",
+        "o": [
+            "Characteristics of attack traffic",
+            "Attacker personal information here",
+            "Target vulnerability assessment",
+            "Defense configuration details"
+        ]
+    },
+    {
+        "q": "What is attack vector analysis?",
+        "o": [
+            "Identify methods used in attack",
+            "Block all possible attack paths",
+            "Encrypt all vulnerable services",
+            "Log all attack attempts only"
+        ]
+    },
+    {
+        "q": "What is traffic fingerprinting DDoS?",
+        "o": [
+            "Identify attack patterns in traffic",
+            "Block all fingerprinted traffic",
+            "Encrypt traffic to hide patterns",
+            "Generate fake traffic patterns"
+        ]
+    },
+    {
+        "q": "What is statistical anomaly detection?",
+        "o": [
+            "Identify deviation from normal stats",
+            "Match known attack signatures here",
+            "Block based on IP reputation",
+            "Encrypt based on traffic volume"
+        ]
+    },
+    {
+        "q": "What is entropy-based detection?",
+        "o": [
+            "Measure randomness in traffic patterns",
+            "Match known malicious patterns here",
+            "Block based on source location",
+            "Encrypt based on destination"
+        ]
+    },
+    {
+        "q": "What is machine learning for DDoS?",
+        "o": [
+            "Train models to detect attacks",
+            "Block all automated traffic here",
+            "Encrypt all classified traffic",
+            "Log all ML model decisions"
+        ]
+    },
+    {
+        "q": "What ML advantages for DDoS detection?",
+        "o": [
+            "Detect unknown attack patterns",
+            "Only detect known signatures here",
+            "Always 100% accurate detection",
+            "No false positives ever"
+        ]
+    },
+    {
+        "q": "What is deep learning for DDoS?",
+        "o": [
+            "Neural networks for complex patterns",
+            "Simple rule-based detection only",
+            "Manual traffic analysis method",
+            "Static signature matching"
+        ]
+    },
+    {
+        "q": "What is LSTM for DDoS detection?",
+        "o": [
+            "Long Short Term Memory for sequences",
+            "Large Scale Traffic Monitoring tool",
+            "Limited Security Testing Method",
+            "Local System Threat Management"
+        ]
+    },
+    {
+        "q": "What is CNN for DDoS detection?",
+        "o": [
+            "Convolutional Neural Network analysis",
+            "Centralized Network Notification",
+            "Controlled Network Navigation",
+            "Certified Network Neutralizer"
+        ]
+    },
+    {
+        "q": "What is autoencoder for DDoS?",
+        "o": [
+            "Learn normal then detect anomalies",
+            "Encode attack signatures for matching",
+            "Encrypt traffic for protection",
+            "Compress attack logs for storage"
+        ]
+    },
+    {
+        "q": "What is SDN for DDoS mitigation?",
+        "o": [
+            "Software Defined Networking flexibility",
+            "Standard Data Notification system",
+            "Secure Data Network architecture",
+            "Simple Denial Neutralizer tool"
+        ]
+    },
+    {
+        "q": "How does SDN help DDoS defense?",
+        "o": [
+            "Programmable rapid response capability",
+            "Fixed hardware cannot be changed",
+            "Slower than traditional networking",
+            "More expensive than alternatives"
+        ]
+    },
+    {
+        "q": "What is OpenFlow for DDoS?",
+        "o": [
+            "SDN protocol for flow control",
+            "Open source firewall software",
+            "Network traffic encryption tool",
+            "Attack detection signature format"
+        ]
+    },
+    {
+        "q": "What is NFV for DDoS mitigation?",
+        "o": [
+            "Network Function Virtualization",
+            "Network Firewall Verification here",
+            "New Filtering Version update",
+            "Normal Flow Validation check"
+        ]
+    },
+    {
+        "q": "What NFV advantage for DDoS?",
+        "o": [
+            "Scale mitigation capacity dynamically",
+            "Fixed capacity cannot change it",
+            "Slower than physical appliances",
+            "More expensive than hardware"
+        ]
+    },
+    {
+        "q": "What is moving target defense?",
+        "o": [
+            "Change attack surface dynamically",
+            "Fixed attack surface always here",
+            "Move data to different location",
+            "Move users to different site"
+        ]
+    },
+    {
+        "q": "What is IP hopping technique?",
+        "o": [
+            "Change IP addresses dynamically",
+            "Block all IP address changes here",
+            "Encrypt IP header information",
+            "Log all IP address access"
+        ]
+    },
+    {
+        "q": "What is port hopping for DDoS?",
+        "o": [
+            "Change service ports dynamically",
+            "Block all port scanning attempts",
+            "Encrypt port number in header",
+            "Log all port access attempts"
+        ]
+    },
+    {
+        "q": "What is proof of work challenge?",
+        "o": [
+            "Require computation before access",
+            "Block all requests without work",
+            "Encrypt requests for validation",
+            "Log all work proof attempts"
+        ]
+    },
+    {
+        "q": "How does proof of work help?",
+        "o": [
+            "Makes attacks more expensive here",
+            "Makes defense more expensive too",
+            "No impact on attacker cost at all",
+            "Only works for web traffic"
+        ]
+    },
+    {
+        "q": "What is client puzzle protocol?",
+        "o": [
+            "Solve puzzle to prove legitimacy",
+            "Block all puzzle-solving attempts",
+            "Encrypt puzzle solutions data",
+            "Log all puzzle attempts made"
+        ]
+    },
+    {
+        "q": "What is CAPTCHA for DDoS defense?",
+        "o": [
+            "Human verification before access",
+            "Block all automated requests here",
+            "Encrypt user input data only",
+            "Log all verification attempts"
+        ]
+    },
+    {
+        "q": "What is invisible CAPTCHA?",
+        "o": [
+            "Verify without user interaction",
+            "Block invisible bot requests",
+            "Encrypt invisible traffic data",
+            "Log invisible access attempts"
+        ]
+    },
+    {
+        "q": "What is browser fingerprinting DDoS?",
+        "o": [
+            "Identify real browsers from bots",
+            "Block all browser access attempts",
+            "Encrypt browser identity data",
+            "Log all browser fingerprints"
+        ]
+    },
+    {
+        "q": "What is behavioral analysis for DDoS?",
+        "o": [
+            "Detect bot behavior patterns here",
+            "Block all behavioral anomalies",
+            "Encrypt behavioral data storage",
+            "Log all behavioral patterns"
+        ]
+    },
+    {
+        "q": "What is reputation scoring for DDoS?",
+        "o": [
+            "Score sources based on history",
+            "Block all unknown sources here",
+            "Encrypt source information data",
+            "Log all source access attempts"
+        ]
+    },
+    {
+        "q": "What is threat intelligence for DDoS?",
+        "o": [
+            "Use known bad source information",
+            "Block all intelligence sources",
+            "Encrypt intelligence data only",
+            "Log intelligence gathering only"
+        ]
+    },
+    {
+        "q": "What is IP blacklist for DDoS?",
+        "o": [
+            "Block known malicious IP sources",
+            "Allow only whitelisted addresses",
+            "Encrypt all blacklisted traffic",
+            "Log all blacklist decisions"
+        ]
+    },
+    {
+        "q": "What is IP whitelist for DDoS?",
+        "o": [
+            "Allow only known good sources",
+            "Block only known bad sources",
+            "Encrypt all whitelisted traffic",
+            "Log all whitelist decisions"
+        ]
+    },
+    {
+        "q": "What is dynamic blacklisting?",
+        "o": [
+            "Add sources based on behavior",
+            "Static list never changes here",
+            "Encrypt blacklist database file",
+            "Log all blacklist changes made"
+        ]
+    },
+    {
+        "q": "What is prefix-level blocking?",
+        "o": [
+            "Block entire IP prefix range",
+            "Block single IP address only",
+            "Encrypt prefix routing data",
+            "Log prefix blocking decisions"
+        ]
+    },
+    {
+        "q": "What is ASN-level blocking?",
+        "o": [
+            "Block entire autonomous system",
+            "Block single IP address only",
+            "Encrypt ASN routing data here",
+            "Log ASN blocking decisions"
+        ]
+    },
+    {
+        "q": "What is country-level blocking risk?",
+        "o": [
+            "Legitimate users blocked too",
+            "No legitimate users affected",
+            "Attack completely stopped here",
+            "No risk at all whatsoever"
+        ]
+    },
+    {
+        "q": "What is tarpit defense technique?",
+        "o": [
+            "Slow down attacker connections",
+            "Speed up legitimate connections",
+            "Block all slow connections here",
+            "Encrypt slow connection data"
+        ]
+    },
+    {
+        "q": "How does tarpit work?",
+        "o": [
+            "Accept connection respond slowly",
+            "Reject connection immediately here",
+            "Encrypt connection data stream",
+            "Log connection attempts only"
+        ]
+    },
+    {
+        "q": "What is sinkhole for DDoS?",
+        "o": [
+            "Redirect attack to null route",
+            "Redirect legitimate traffic here",
+            "Block all redirected traffic",
+            "Encrypt redirected traffic data"
+        ]
+    },
+    {
+        "q": "What is DNS sinkhole for botnet?",
+        "o": [
+            "Redirect C2 domains to controlled",
+            "Block all DNS queries completely",
+            "Encrypt DNS response data here",
+            "Log all DNS query attempts"
+        ]
+    },
+    {
+        "q": "What is ACL for DDoS defense?",
+        "o": [
+            "Access Control List at router",
+            "Attack Control Limitation tool",
+            "Automated Countermeasure Launcher",
+            "Anonymous Connection Limiter"
+        ]
+    },
+    {
+        "q": "What is hardware-based ACL advantage?",
+        "o": [
+            "Line rate processing speed here",
+            "Software processing flexibility",
+            "Lower cost than software ACL",
+            "Easier configuration than SW"
+        ]
+    },
+    {
+        "q": "What is stateful versus stateless filtering?",
+        "o": [
+            "Stateful tracks connections state",
+            "Stateless tracks connection state",
+            "Both track connection state here",
+            "Neither tracks connection state"
+        ]
+    },
+    {
+        "q": "What is stateful filtering DDoS weakness?",
+        "o": [
+            "State table can be exhausted",
+            "Cannot be exhausted at all here",
+            "Faster than stateless filtering",
+            "More accurate than stateless"
+        ]
+    },
+    {
+        "q": "What is connection tracking table?",
+        "o": [
+            "Store state of each connection",
+            "Block all tracked connections",
+            "Encrypt connection data stored",
+            "Log all connection attempts"
+        ]
+    },
+    {
+        "q": "What is flow table in DDoS?",
+        "o": [
+            "Store information about traffic flows",
+            "Block all flows through device",
+            "Encrypt flow metadata stored",
+            "Log all flow table entries"
+        ]
+    },
+    {
+        "q": "What is flow-based detection?",
+        "o": [
+            "Analyze traffic flow metadata",
+            "Analyze each packet individually",
+            "Block all flow-based traffic",
+            "Encrypt all flow data only"
+        ]
+    },
+    {
+        "q": "What is NetFlow for DDoS detection?",
+        "o": [
+            "Cisco flow monitoring protocol",
+            "Flow blocking protocol standard",
+            "Flow encryption method used",
+            "Flow logging format only"
+        ]
+    },
+    {
+        "q": "What is sFlow for DDoS detection?",
+        "o": [
+            "Sampled flow monitoring standard",
+            "Secure flow blocking protocol",
+            "Standard flow encryption method",
+            "Simple flow logging format"
+        ]
+    },
+    {
+        "q": "What is IPFIX for DDoS?",
+        "o": [
+            "IP Flow Information Export standard",
+            "IP Flow Interception and Xfer",
+            "Internet Protocol Firewall IX",
+            "Intrusion Prevention Framework"
+        ]
+    },
+    {
+        "q": "What is sampling in flow analysis?",
+        "o": [
+            "Analyze subset of packets only",
+            "Analyze every packet passing",
+            "Block subset of traffic only",
+            "Encrypt subset of data only"
+        ]
+    },
+    {
+        "q": "What is sampling advantage?",
+        "o": [
+            "Lower processing overhead needed",
+            "Higher accuracy than full capture",
+            "No data is missed at all",
+            "Better detection than full"
+        ]
+    },
+    {
+        "q": "What is sampling disadvantage?",
+        "o": [
+            "May miss short attack bursts",
+            "Always detects all attacks",
+            "Requires more processing power",
+            "More expensive than full capture"
+        ]
+    },
+    {
+        "q": "What is DPI for DDoS detection?",
+        "o": [
+            "Deep Packet Inspection analysis",
+            "Data Protection Implementation",
+            "Distributed Processing Interface",
+            "Dynamic Protocol Identification"
+        ]
+    },
+    {
+        "q": "What is DPI advantage for DDoS?",
+        "o": [
+            "Inspect payload for signatures",
+            "Faster than header-only analysis",
+            "Lower processing overhead here",
+            "Works with encrypted traffic"
+        ]
+    },
+    {
+        "q": "What is DPI challenge?",
+        "o": [
+            "Performance and encryption issues",
+            "Cannot detect any attacks here",
+            "Too inaccurate for production",
+            "Too expensive to implement"
+        ]
+    },
+    {
+        "q": "What is traffic mirroring for DDoS?",
+        "o": [
+            "Copy traffic for analysis here",
+            "Block mirrored traffic always",
+            "Encrypt mirrored traffic data",
+            "Log mirroring operations only"
+        ]
+    },
+    {
+        "q": "What is SPAN port for mirroring?",
+        "o": [
+            "Switch Port Analyzer copies",
+            "Security Protocol Analysis Node",
+            "Standard Packet Analyzer Network",
+            "Secure Protocol Access Notifier"
+        ]
+    },
+    {
+        "q": "What is TAP device for visibility?",
+        "o": [
+            "Test Access Point passive copy",
+            "Traffic Analysis Protocol system",
+            "Trusted Access Point device",
+            "Temporary Access Permission"
+        ]
+    },
+    {
+        "q": "What is inline versus out of band?",
+        "o": [
+            "Inline sits in traffic path",
+            "Out of band sits in traffic path",
+            "Both sit in traffic path here",
+            "Neither in traffic path"
+        ]
+    },
+    {
+        "q": "What is inline mitigation advantage?",
+        "o": [
+            "Immediate blocking capability here",
+            "No impact on latency at all",
+            "Cannot cause outage if fails",
+            "Easier to deploy than out of band"
+        ]
+    },
+    {
+        "q": "What is out of band advantage?",
+        "o": [
+            "No single point of failure",
+            "Immediate blocking possible here",
+            "Lower detection latency always",
+            "In traffic path for blocking"
+        ]
+    },
+    {
+        "q": "What is asymmetric routing challenge?",
+        "o": [
+            "Different paths for request response",
+            "Same path for all traffic here",
+            "Encrypted traffic only issue",
+            "Compressed traffic only issue"
+        ]
+    },
+    {
+        "q": "How does asymmetric affect stateful?",
+        "o": [
+            "Cannot track full connection",
+            "Improves connection tracking here",
+            "No impact on state tracking",
+            "Only affects encrypted traffic"
+        ]
+    },
+    {
+        "q": "What is BGP Flowspec for DDoS?",
+        "o": [
+            "Distribute filtering rules via BGP",
+            "Block all BGP traffic for DDoS",
+            "Encrypt BGP routing updates here",
+            "Log all BGP announcements only"
+        ]
+    },
+    {
+        "q": "What is Flowspec rule content?",
+        "o": [
+            "Match criteria and action specified",
+            "Only IP address blocking rules",
+            "Only port number filtering here",
+            "Only protocol type matching"
+        ]
+    },
+    {
+        "q": "What is Flowspec propagation?",
+        "o": [
+            "Rules distributed across network",
+            "Rules stay on single router only",
+            "Rules are encrypted for security",
+            "Rules are logged but not applied"
+        ]
+    },
+    {
+        "q": "What is DOTS protocol for DDoS?",
+        "o": [
+            "DDoS Open Threat Signaling",
+            "Data Over Transport Security",
+            "Distributed Operations Testing",
+            "Dynamic Online Threat System"
+        ]
+    },
+    {
+        "q": "What is DOTS purpose?",
+        "o": [
+            "Signal for DDoS mitigation help",
+            "Block all DDoS attack traffic",
+            "Encrypt all DDoS notifications",
+            "Log all DDoS incidents only"
+        ]
+    },
+    {
+        "q": "What is DOTS architecture?",
+        "o": [
+            "Client signals to server for help",
+            "Server attacks client for testing",
+            "Client blocks server traffic here",
+            "Server logs client requests only"
+        ]
+    },
+    {
+        "q": "What is diversion for DDoS defense?",
+        "o": [
+            "Redirect traffic to scrubbing center",
+            "Keep traffic on original path here",
+            "Block all traffic at source edge",
+            "Encrypt traffic before forwarding"
+        ]
+    },
+    {
+        "q": "What is DNS-based diversion method?",
+        "o": [
+            "Change DNS to point to scrubber",
+            "Block DNS queries during attack",
+            "Encrypt DNS responses completely",
+            "Log all DNS changes for audit"
+        ]
+    },
+    {
+        "q": "What is BGP-based diversion?",
+        "o": [
+            "Announce routes via scrubbing center",
+            "Block all BGP announcements here",
+            "Encrypt BGP routing updates now",
+            "Log all BGP route changes only"
+        ]
+    },
+    {
+        "q": "What is GRE tunnel for clean traffic?",
+        "o": [
+            "Return scrubbed traffic to origin",
+            "Block tunnel traffic completely",
+            "Encrypt tunnel payload data here",
+            "Log tunnel utilization metrics"
+        ]
+    },
+    {
+        "q": "What is direct connect for mitigation?",
+        "o": [
+            "Physical link to scrubbing provider",
+            "Logical connection over internet",
+            "Wireless link to cloud service",
+            "Dial-up connection for backup"
+        ]
+    },
+    {
+        "q": "What is always-on mitigation model?",
+        "o": [
+            "Traffic always routes through scrubber",
+            "Mitigation only during attacks here",
+            "No mitigation capability at all",
+            "Manual activation required always"
+        ]
+    },
+    {
+        "q": "What is on-demand mitigation advantage?",
+        "o": [
+            "Lower latency during normal operation",
+            "Higher latency during normal times",
+            "More expensive than always-on here",
+            "Slower to activate than always-on"
+        ]
+    },
+    {
+        "q": "What is on-demand mitigation risk?",
+        "o": [
+            "Delay during attack redirection",
+            "Always experiencing attack impact",
+            "Lower cost than alternatives here",
+            "Faster than always-on mitigation"
+        ]
+    },
+    {
+        "q": "What is layered DDoS defense?",
+        "o": [
+            "Multiple protection layers combined",
+            "Single protection layer only here",
+            "No protection layers at all now",
+            "Protection only at network edge"
+        ]
+    },
+    {
+        "q": "What is defense in depth for DDoS?",
+        "o": [
+            "Multiple overlapping protections",
+            "Single point of protection only",
+            "No protection at any layer here",
+            "Protection only in cloud service"
+        ]
+    },
+    {
+        "q": "What is network layer defense?",
+        "o": [
+            "Protect against volumetric attacks",
+            "Protect against application attacks",
+            "Protect against encrypted attacks",
+            "Protect against insider attacks"
+        ]
+    },
+    {
+        "q": "What is transport layer defense?",
+        "o": [
+            "Protect against protocol attacks",
+            "Protect against network floods here",
+            "Protect against application abuse",
+            "Protect against physical damage"
+        ]
+    },
+    {
+        "q": "What is application layer defense?",
+        "o": [
+            "Protect against L7 attacks specific",
+            "Protect against volumetric floods",
+            "Protect against protocol attacks",
+            "Protect against physical damage"
+        ]
+    },
+    {
+        "q": "What is WAF for DDoS protection?",
+        "o": [
+            "Web Application Firewall filtering",
+            "Wide Area Firewall blocking here",
+            "Wireless Access Firewall system",
+            "Workload Analysis Framework"
+        ]
+    },
+    {
+        "q": "What is WAF rule for DDoS?",
+        "o": [
+            "Pattern matching for bad requests",
+            "Block all web traffic completely",
+            "Encrypt application layer data",
+            "Log all application requests"
+        ]
+    },
+    {
+        "q": "What is rate-based WAF rule?",
+        "o": [
+            "Limit requests per time period",
+            "Allow unlimited requests always",
+            "Block based on content only here",
+            "Encrypt based on rate metrics"
+        ]
+    },
+    {
+        "q": "What is signature-based WAF rule?",
+        "o": [
+            "Match known attack patterns here",
+            "Block all unknown traffic now",
+            "Encrypt based on signatures found",
+            "Log signature matches only"
+        ]
+    },
+    {
+        "q": "What is anomaly-based WAF detection?",
+        "o": [
+            "Identify deviation from baseline",
+            "Match known attack patterns only",
+            "Block all anomalous traffic here",
+            "Encrypt anomalous data packets"
+        ]
+    },
+    {
+        "q": "What is positive security model?",
+        "o": [
+            "Allow only known good patterns",
+            "Block only known bad patterns",
+            "Allow all traffic by default",
+            "Block all traffic by default"
+        ]
+    },
+    {
+        "q": "What is negative security model?",
+        "o": [
+            "Block only known bad patterns",
+            "Allow only known good patterns",
+            "Allow all traffic by default",
+            "Block all traffic by default"
+        ]
+    },
+    {
+        "q": "What is bot management for DDoS?",
+        "o": [
+            "Distinguish good bots from bad",
+            "Block all bots regardless type",
+            "Allow all bots without checking",
+            "Encrypt all bot traffic data"
+        ]
+    },
+    {
+        "q": "What is good bot example?",
+        "o": [
+            "Search engine crawler indexing",
+            "DDoS attack bot in botnet",
+            "Credential stuffing attack bot",
+            "Web scraping abuse bot here"
+        ]
+    },
+    {
+        "q": "What is bad bot example?",
+        "o": [
+            "Credential stuffing attack automated",
+            "Search engine crawler legitimate",
+            "Monitoring bot from uptime service",
+            "Social media sharing preview"
+        ]
+    },
+    {
+        "q": "What is bot score in detection?",
+        "o": [
+            "Probability request is from bot",
+            "Number of bots in attack here",
+            "Speed of bot request rate now",
+            "Size of bot request payload"
+        ]
+    },
+    {
+        "q": "What is device fingerprinting?",
+        "o": [
+            "Identify device characteristics",
+            "Block all fingerprinted devices",
+            "Encrypt device identity data here",
+            "Log all device access attempts"
+        ]
+    },
+    {
+        "q": "What is TLS fingerprinting?",
+        "o": [
+            "Identify client by handshake",
+            "Block all TLS connections here",
+            "Encrypt TLS handshake metadata",
+            "Log all TLS version usage"
+        ]
+    },
+    {
+        "q": "What is JA3 fingerprinting?",
+        "o": [
+            "Hash of TLS client hello fields",
+            "JavaScript analysis version 3",
+            "JSON authentication protocol 3",
+            "Java application scanner tool"
+        ]
+    },
+    {
+        "q": "What is JA3S fingerprinting?",
+        "o": [
+            "Hash of TLS server hello fields",
+            "JavaScript server version 3",
+            "JSON server protocol version",
+            "Java server scanner tool"
+        ]
+    },
+    {
+        "q": "What is HTTP2 fingerprinting?",
+        "o": [
+            "Identify client by HTTP2 settings",
+            "Block all HTTP2 traffic here",
+            "Encrypt HTTP2 connection data",
+            "Log all HTTP2 requests only"
+        ]
+    },
+    {
+        "q": "What is TCP fingerprinting?",
+        "o": [
+            "Identify OS by TCP parameters",
+            "Block all TCP connections here",
+            "Encrypt TCP header information",
+            "Log all TCP connections only"
+        ]
+    },
+    {
+        "q": "What is header order analysis?",
+        "o": [
+            "Detect bots by HTTP header order",
+            "Sort HTTP headers alphabetically",
+            "Block requests with wrong order",
+            "Encrypt header ordering data"
+        ]
+    },
+    {
+        "q": "What is challenge-response for bots?",
+        "o": [
+            "Test if client can execute JS",
+            "Block all automated requests",
+            "Encrypt challenge data completely",
+            "Log all challenge responses"
+        ]
+    },
+    {
+        "q": "What is silent challenge?",
+        "o": [
+            "Invisible test for real browser",
+            "Visible CAPTCHA for all users",
+            "Block all challenged requests",
+            "Encrypt challenge mechanism"
+        ]
+    },
+    {
+        "q": "What is managed challenge?",
+        "o": [
+            "Adaptive challenge based on risk",
+            "Fixed challenge for all requests",
+            "No challenge ever required here",
+            "Manual challenge administration"
+        ]
+    },
+    {
+        "q": "What is waiting room for DDoS?",
+        "o": [
+            "Queue users during high load",
+            "Block all users during attack",
+            "Redirect all users to error",
+            "Encrypt all user traffic data"
+        ]
+    },
+    {
+        "q": "What is waiting room advantage?",
+        "o": [
+            "Maintain service for some users",
+            "Block service for all users",
+            "No impact on user experience",
+            "Increase attack impact here"
+        ]
+    },
+    {
+        "q": "What is circuit breaker pattern?",
+        "o": [
+            "Stop cascade failures in system",
+            "Block all traffic during attack",
+            "Encrypt traffic between services",
+            "Log all service interactions"
+        ]
+    },
+    {
+        "q": "What is graceful degradation?",
+        "o": [
+            "Reduce functionality under load",
+            "Maintain full functionality always",
+            "Block all functionality during load",
+            "Encrypt degraded service data"
+        ]
+    },
+    {
+        "q": "What is fail-open versus fail-close?",
+        "o": [
+            "Allow or block when system fails",
+            "System never fails at all here",
+            "Encryption fails open or closed",
+            "Logging fails open or closed"
+        ]
+    },
+    {
+        "q": "What is DDoS monitoring dashboard?",
+        "o": [
+            "Visualize attack traffic in real time",
+            "Block attack traffic automatically",
+            "Encrypt dashboard data completely",
+            "Log dashboard access attempts"
+        ]
+    },
+    {
+        "q": "What metrics to monitor for DDoS?",
+        "o": [
+            "Traffic volume latency error rates",
+            "Only network bandwidth used here",
+            "Only CPU utilization metrics now",
+            "Only disk space available left"
+        ]
+    },
+    {
+        "q": "What is attack alert threshold?",
+        "o": [
+            "Traffic level triggering alert",
+            "Block level for all traffic",
+            "Encryption level for data here",
+            "Logging level for events only"
+        ]
+    },
+    {
+        "q": "What is baseline deviation alert?",
+        "o": [
+            "Notify when traffic differs normal",
+            "Block traffic differing normal",
+            "Encrypt differing traffic data",
+            "Log all deviation events only"
+        ]
+    },
+    {
+        "q": "What is attack report for DDoS?",
+        "o": [
+            "Post-incident analysis document",
+            "Real-time blocking decision here",
+            "Encryption status report only",
+            "Logging configuration document"
+        ]
+    },
+    {
+        "q": "What should attack report contain?",
+        "o": [
+            "Timeline impact mitigation lessons",
+            "Only attack start time noted",
+            "Only attacker IP addresses list",
+            "Only cost of the attack here"
+        ]
+    },
+    {
+        "q": "What is mean time to detect?",
+        "o": [
+            "Average time to identify attack",
+            "Time between attacks occurring",
+            "Time to mitigate attack fully",
+            "Time to recover from attack"
+        ]
+    },
+    {
+        "q": "What is mean time to mitigate?",
+        "o": [
+            "Average time to stop attack",
+            "Time to detect attack starting",
+            "Time between attack incidents",
+            "Time to recover from damage"
+        ]
+    },
+    {
+        "q": "What is attack surface management?",
+        "o": [
+            "Reduce exposed assets and vectors",
+            "Increase exposed assets for test",
+            "Block all attack surface access",
+            "Encrypt attack surface data"
+        ]
+    },
+    {
+        "q": "What is external attack surface?",
+        "o": [
+            "Internet-facing assets and services",
+            "Internal network assets only here",
+            "Encrypted assets on network now",
+            "Logged assets in inventory"
+        ]
+    },
+    {
+        "q": "What is DDoS simulation service?",
+        "o": [
+            "Authorized testing of defenses",
+            "Unauthorized attack on targets",
+            "Blocking of simulated attacks",
+            "Encryption of simulation data"
+        ]
+    },
+    {
+        "q": "What is stress test versus DDoS test?",
+        "o": [
+            "Both authorized capacity testing",
+            "Stress test is always illegal",
+            "DDoS test is always illegal here",
+            "Neither requires authorization"
+        ]
+    },
+    {
+        "q": "What is DDoS attack economics?",
+        "o": [
+            "Cost to attack versus defend",
+            "Attacker profit from attack only",
+            "Defender cost only considered",
+            "No cost involved at all here"
+        ]
+    },
+    {
+        "q": "What is asymmetric attack cost?",
+        "o": [
+            "Small attack cost big defense cost",
+            "Equal cost for attack and defense",
+            "Defense costs less than attack",
+            "No cost difference exists here"
+        ]
+    },
+    {
+        "q": "What is cost of DDoS attack?",
+        "o": [
+            "Booter service as low as ten dollars",
+            "Always millions of dollars cost",
+            "Free attacks available widely",
+            "Cost exceeds potential damage"
+        ]
+    },
+    {
+        "q": "What is business cost of DDoS?",
+        "o": [
+            "Revenue loss reputation damage",
+            "Only hardware replacement cost",
+            "Only employee overtime payment",
+            "No business cost involved here"
+        ]
+    },
+    {
+        "q": "What is regulatory impact of DDoS?",
+        "o": [
+            "Compliance fines reputation damage",
+            "No regulatory requirements exist",
+            "Only encryption requirements here",
+            "Only logging requirements apply"
+        ]
+    },
+    {
+        "q": "What is DDoS attack motivation?",
+        "o": [
+            "Extortion hacktivism competition",
+            "Only financial gain motivation",
+            "Only political motivation here",
+            "Only personal grudge reason"
+        ]
+    },
+    {
+        "q": "What is hacktivism DDoS example?",
+        "o": [
+            "Anonymous attacks on government",
+            "Ransomware encrypting files here",
+            "Credential theft for profit now",
+            "Data exfiltration for sale"
+        ]
+    },
+    {
+        "q": "What is competitive DDoS attack?",
+        "o": [
+            "Attack competitor during sales",
+            "Attack own systems for testing",
+            "Attack partner for leverage here",
+            "Attack random target for fun"
+        ]
+    },
+    {
+        "q": "What is DDoS for extortion?",
+        "o": [
+            "Threaten attack demand payment",
+            "Attack without financial demand",
+            "Attack for political statement",
+            "Attack for personal revenge only"
+        ]
+    },
+    {
+        "q": "What is triple extortion attack?",
+        "o": [
+            "Add DDoS to ransomware and leak",
+            "Three separate DDoS attacks now",
+            "Attack three targets at once",
+            "Three payment demands made"
+        ]
+    },
+    {
+        "q": "What is DDoS threat actor type?",
+        "o": [
+            "Script kiddie to nation state",
+            "Only nation state actors attack",
+            "Only organized crime attacks here",
+            "Only teenagers launch attacks"
+        ]
+    },
+    {
+        "q": "What is script kiddie attacker?",
+        "o": [
+            "Low skill using available tools",
+            "Highly skilled nation state here",
+            "Organized crime professional now",
+            "Military cyber operation team"
+        ]
+    },
+    {
+        "q": "What is organized crime DDoS?",
+        "o": [
+            "Professional extortion operations",
+            "Amateur attacks for fun only",
+            "Government sponsored attacks here",
+            "Personal revenge attacks only"
+        ]
+    },
+    {
+        "q": "What is nation state DDoS?",
+        "o": [
+            "Government sponsored attacks",
+            "Amateur teenager attacks here",
+            "Random criminal opportunist now",
+            "Corporate espionage attack"
+        ]
+    },
+    {
+        "q": "What is DDoS as a Service?",
+        "o": [
+            "Commercial attack offerings",
+            "Legitimate security testing only",
+            "Government defensive service here",
+            "Non-profit protection service"
+        ]
+    },
+    {
+        "q": "What is booter access model?",
+        "o": [
+            "Subscription or pay per attack",
+            "Free unlimited access always",
+            "Government license required here",
+            "Corporate contract required"
+        ]
+    },
+    {
+        "q": "What is bulletproof hosting?",
+        "o": [
+            "Hosting ignoring abuse reports",
+            "Hosting with strong security here",
+            "Hosting with encryption required",
+            "Hosting with government approval"
+        ]
+    },
+    {
+        "q": "What is takedown of DDoS service?",
+        "o": [
+            "Law enforcement seizes booter",
+            "User stops using the service",
+            "Service upgrades infrastructure",
+            "Service encrypts all traffic"
+        ]
+    },
+    {
+        "q": "What is Operation Power Off?",
+        "o": [
+            "International booter takedown effort",
+            "Power grid attack operation name",
+            "DDoS mitigation service name",
+            "Botnet command and control"
+        ]
+    },
+    {
+        "q": "What is CFAA relevant to DDoS?",
+        "o": [
+            "Computer Fraud and Abuse Act US",
+            "Cyber Firewall and Audit Act",
+            "Centralized Fraud Analysis Agency",
+            "Common Firewall Access Authority"
+        ]
+    },
+    {
+        "q": "What is legal penalty for DDoS?",
+        "o": [
+            "Fines and imprisonment possible",
+            "No legal consequences at all",
+            "Only civil penalties apply here",
+            "Only verbal warning issued"
+        ]
+    },
+    {
+        "q": "What is DDoS attack liability?",
+        "o": [
+            "Criminal and civil liability both",
+            "No liability for attackers here",
+            "Only victim has liability now",
+            "Only ISP has liability for it"
+        ]
+    },
+    {
+        "q": "What is responsible disclosure DDoS?",
+        "o": [
+            "Report amplification vectors found",
+            "Launch small test attacks openly",
+            "Sell vulnerability to attackers",
+            "Ignore discovered vulnerabilities"
+        ]
+    },
+    {
+        "q": "What is coordinated disclosure?",
+        "o": [
+            "Work with vendor before publish",
+            "Publish immediately when found",
+            "Sell to highest bidder quietly",
+            "Never disclose vulnerabilities"
+        ]
+    },
+    {
+        "q": "What is bug bounty for DDoS?",
+        "o": [
+            "Reward for finding amplification",
+            "Penalty for launching attacks here",
+            "Payment for attack services now",
+            "Fee for mitigation services"
+        ]
+    },
+    {
+        "q": "What is DDoS attack trends?",
+        "o": [
+            "Larger more sophisticated attacks",
+            "Smaller simpler attacks now only",
+            "Attacks are decreasing steadily",
+            "No significant trend changes here"
+        ]
+    },
+    {
+        "q": "What is terabit DDoS attack?",
+        "o": [
+            "Attack exceeding 1 Tbps bandwidth",
+            "Attack lasting for one terasecond",
+            "Attack from one trillion sources",
+            "Attack costing one teradollar"
+        ]
+    },
+    {
+        "q": "What is largest recorded DDoS?",
+        "o": [
+            "Multi-terabit attacks observed now",
+            "Only megabit attacks ever seen",
+            "Gigabit is maximum possible here",
+            "No measurement of attack size"
+        ]
+    },
+    {
+        "q": "What is carpet bombing trend?",
+        "o": [
+            "Increasing use of distributed target",
+            "Decreasing use of this technique",
+            "Only historical attack method now",
+            "Never used in modern attacks"
+        ]
+    },
+    {
+        "q": "What is encrypted attack trend?",
+        "o": [
+            "Increasing use of HTTPS attacks",
+            "Decreasing use of encryption",
+            "Encryption never used in attacks",
+            "Only HTTP attacks observed now"
+        ]
+    },
+    {
+        "q": "What is multi-vector attack trend?",
+        "o": [
+            "Combining more vectors in attacks",
+            "Single vector attacks preferred",
+            "Vector count decreasing now here",
+            "No multi-vector attacks occur"
+        ]
+    },
+    {
+        "q": "What is IoT botnet trend?",
+        "o": [
+            "Growing use of IoT for attacks",
+            "IoT devices are rarely compromised",
+            "IoT botnets decreasing in size",
+            "No IoT devices used in attacks"
+        ]
+    },
+    {
+        "q": "What is AI in DDoS attacks?",
+        "o": [
+            "Adapt attack to evade defenses",
+            "AI never used in DDoS attacks",
+            "AI only used for defense here",
+            "AI makes attacks easier to stop"
+        ]
+    },
+    {
+        "q": "What is AI in DDoS defense?",
+        "o": [
+            "Detect and adapt to new attacks",
+            "AI not useful for defense here",
+            "AI only used by attackers now",
+            "AI makes defense more expensive"
+        ]
+    },
+    {
+        "q": "What is 5G impact on DDoS?",
+        "o": [
+            "More bandwidth for attacks possible",
+            "5G prevents all DDoS attacks here",
+            "5G reduces attack bandwidth now",
+            "No impact from 5G technology"
+        ]
+    },
+    {
+        "q": "What is edge computing DDoS impact?",
+        "o": [
+            "Distribute both attack and defense",
+            "Concentrate attack at single point",
+            "Edge only affects legitimate traffic",
+            "No impact on DDoS attacks here"
+        ]
+    },
+    {
+        "q": "What is cloud-native DDoS protection?",
+        "o": [
+            "Protection built into cloud service",
+            "Protection added separately after",
+            "No protection available in cloud",
+            "Protection only for on-premise"
+        ]
+    },
+    {
+        "q": "What is API gateway for DDoS?",
+        "o": [
+            "Central point for API protection",
+            "API directly exposed to internet",
+            "APIs cannot be protected at all",
+            "APIs are immune to DDoS attacks"
+        ]
+    },
+    {
+        "q": "What is service mesh DDoS defense?",
+        "o": [
+            "Infrastructure level traffic control",
+            "Application code only protection",
+            "Network perimeter only defense",
+            "No protection from service mesh"
+        ]
+    },
+    {
+        "q": "What is serverless DDoS consideration?",
+        "o": [
+            "Function invocation limits and cost",
+            "Serverless immune to all DDoS",
+            "No consideration needed at all",
+            "Only affects function performance"
+        ]
+    },
+    {
+        "q": "What is container DDoS defense?",
+        "o": [
+            "Orchestration platform provides controls",
+            "Containers cannot be attacked here",
+            "No container specific defenses",
+            "Only manual defense possible now"
+        ]
+    },
+    {
+        "q": "What is Kubernetes DDoS protection?",
+        "o": [
+            "Network policies and ingress rate limit",
+            "Kubernetes immune to DDoS attacks",
+            "No built-in protection at all here",
+            "Only external solutions available"
+        ]
+    },
+    {
+        "q": "What is ingress controller for DDoS?",
+        "o": [
+            "Entry point with rate limiting capability",
+            "Exit point for all cluster traffic",
+            "Storage controller for data now",
+            "Compute controller for pods here"
+        ]
+    },
+    {
+        "q": "What is network policy for DDoS?",
+        "o": [
+            "Define allowed pod communication rules",
+            "Block all pod communication entirely",
+            "Encrypt all pod traffic at rest",
+            "Log all pod network activity"
+        ]
+    },
+    {
+        "q": "What is resource quota for DDoS?",
+        "o": [
+            "Limit resource consumption per tenant",
+            "Allow unlimited resource usage here",
+            "Encrypt resource allocation data",
+            "Log resource usage metrics only"
+        ]
+    },
+    {
+        "q": "What is limit range in Kubernetes?",
+        "o": [
+            "Set min and max resource per pod",
+            "Allow unlimited pod resources",
+            "Encrypt pod resource limits",
+            "Log pod resource consumption"
+        ]
+    },
+    {
+        "q": "What is horizontal pod autoscaling?",
+        "o": [
+            "Add pods based on load metrics",
+            "Remove all pods under load here",
+            "Fixed pod count regardless load",
+            "Encrypt pod scaling decisions"
+        ]
+    },
+    {
+        "q": "What is HPA limitation for DDoS?",
+        "o": [
+            "Scaling speed and maximum limits",
+            "No limitations exist at all here",
+            "Always faster than attack growth",
+            "Always cheaper than alternative"
+        ]
+    },
+    {
+        "q": "What is pod disruption budget?",
+        "o": [
+            "Maintain availability during changes",
+            "Block all pod changes entirely",
+            "Encrypt pod disruption data only",
+            "Log all pod disruptions events"
+        ]
+    },
+    {
+        "q": "What is service mesh sidecar?",
+        "o": [
+            "Proxy handling traffic for pod",
+            "Direct pod to pod communication",
+            "Storage attached to each pod",
+            "Compute added to each pod"
+        ]
+    },
+    {
+        "q": "What is Istio for DDoS defense?",
+        "o": [
+            "Service mesh with traffic control",
+            "Storage service for Kubernetes",
+            "Compute service for clusters",
+            "Monitoring service only"
+        ]
+    },
+    {
+        "q": "What is circuit breaking in Istio?",
+        "o": [
+            "Limit connections and requests",
+            "Allow unlimited connections here",
+            "Encrypt all circuit data now",
+            "Log circuit state changes only"
+        ]
+    },
+    {
+        "q": "What is outlier detection in mesh?",
+        "o": [
+            "Remove unhealthy endpoints automatically",
+            "Keep all endpoints regardless health",
+            "Encrypt unhealthy endpoint data",
+            "Log endpoint health status only"
+        ]
+    },
+    {
+        "q": "What is retry budget concept?",
+        "o": [
+            "Limit retries to prevent cascade",
+            "Allow unlimited retries always",
+            "Encrypt retry configuration data",
+            "Log all retry attempts only"
+        ]
+    },
+    {
+        "q": "What is timeout setting for DDoS?",
+        "o": [
+            "Prevent resource holding too long",
+            "Allow connections forever here",
+            "Encrypt timeout configuration",
+            "Log timeout events only now"
+        ]
+    },
+    {
+        "q": "What is connection pooling benefit?",
+        "o": [
+            "Reuse connections reduce overhead",
+            "Create new connection each request",
+            "Encrypt connection pool data",
+            "Log connection pool stats"
+        ]
+    },
+    {
+        "q": "What is load shedding technique?",
+        "o": [
+            "Reject excess requests preserve service",
+            "Accept all requests regardless load",
+            "Encrypt shed load data records",
+            "Log load shedding decisions only"
+        ]
+    },
+    {
+        "q": "What is priority queue for DDoS?",
+        "o": [
+            "Process important requests first",
+            "Process all requests equally",
+            "Block priority request traffic",
+            "Encrypt priority assignments"
+        ]
+    },
+    {
+        "q": "What is admission control?",
+        "o": [
+            "Accept or reject based on capacity",
+            "Always admit all requests here",
+            "Encrypt admission decisions made",
+            "Log admission control events"
+        ]
+    },
+    {
+        "q": "What is token bucket algorithm?",
+        "o": [
+            "Rate limiting with burst capability",
+            "Block all traffic completely now",
+            "Encrypt token allocation data",
+            "Log token consumption only"
+        ]
+    },
+    {
+        "q": "What is leaky bucket algorithm?",
+        "o": [
+            "Rate limiting smooth output rate",
+            "Allow burst traffic always here",
+            "Block all traffic completely now",
+            "Encrypt bucket state data only"
+        ]
+    },
+    {
+        "q": "What is sliding window rate limit?",
+        "o": [
+            "Smooth rate calculation over time",
+            "Fixed window with reset boundary",
+            "Block all windows of traffic",
+            "Encrypt window calculation data"
+        ]
+    },
+    {
+        "q": "What is fixed window rate limit issue?",
+        "o": [
+            "Burst at window boundary possible",
+            "No issues with fixed window here",
+            "Better than sliding window always",
+            "Cannot be implemented at all"
+        ]
+    },
+    {
+        "q": "What is distributed rate limiting?",
+        "o": [
+            "Coordinate limits across instances",
+            "Each instance has isolated limit",
+            "No rate limiting distributed",
+            "Block distributed traffic only"
+        ]
+    },
+    {
+        "q": "What is centralized rate limit challenge?",
+        "o": [
+            "Single point of failure and latency",
+            "No challenges with centralized",
+            "Better than distributed always",
+            "Cannot be implemented at all"
+        ]
+    },
+    {
+        "q": "What is local rate limit advantage?",
+        "o": [
+            "Lower latency no coordination",
+            "Perfect accuracy guaranteed here",
+            "Single point of failure exists",
+            "Requires central coordination"
+        ]
+    },
+    {
+        "q": "What is synchronization for rate limit?",
+        "o": [
+            "Share counter state across nodes",
+            "Each node independent state only",
+            "Block synchronized traffic here",
+            "Encrypt synchronization data"
+        ]
+    },
+    {
+        "q": "What is Redis for rate limiting?",
+        "o": [
+            "Fast in-memory counter storage",
+            "Slow disk based counter only",
+            "Block all Redis traffic now",
+            "Encrypt Redis data at rest"
+        ]
+    },
+    {
+        "q": "What is eventual consistency issue?",
+        "o": [
+            "Temporary over or under limit possible",
+            "Perfect consistency always here",
+            "No consistency issues ever",
+            "Block inconsistent traffic only"
+        ]
+    },
+    {
+        "q": "What is cell rate algorithm?",
+        "o": [
+            "Precise scheduling of transmissions",
+            "Block all cell traffic only",
+            "Encrypt cell rate data here",
+            "Log cell rate events only"
+        ]
+    },
+    {
+        "q": "What is GCRA rate limiting?",
+        "o": [
+            "Generic Cell Rate Algorithm precise",
+            "General Computer Rate Analysis",
+            "Global Connection Rate Audit",
+            "Guaranteed Capacity Rate Access"
+        ]
+    },
+    {
+        "q": "What is fair queuing for DDoS?",
+        "o": [
+            "Equal bandwidth to each flow",
+            "Priority to attack traffic only",
+            "Block all queued traffic here",
+            "Encrypt queue state data now"
+        ]
+    },
+    {
+        "q": "What is weighted fair queuing?",
+        "o": [
+            "Proportional bandwidth allocation",
+            "Equal bandwidth to all flows",
+            "Block weighted traffic only",
+            "Encrypt weight assignments"
+        ]
+    },
+    {
+        "q": "What is class-based queuing?",
+        "o": [
+            "Allocate bandwidth by traffic class",
+            "Single class for all traffic",
+            "Block class-based traffic only",
+            "Encrypt class assignments here"
+        ]
+    },
+    {
+        "q": "What is priority queuing issue?",
+        "o": [
+            "Starvation of lower priority traffic",
+            "No issues with priority ever",
+            "Better than fair queuing always",
+            "Cannot be implemented at all"
+        ]
+    },
+    {
+        "q": "What is RED for congestion?",
+        "o": [
+            "Random Early Detection drop",
+            "Rapid Error Detection system",
+            "Remote Endpoint Defense tool",
+            "Rate Enforcement Daemon"
+        ]
+    },
+    {
+        "q": "What is WRED enhancement?",
+        "o": [
+            "Weighted RED by traffic class",
+            "Faster RED implementation here",
+            "Encrypted RED algorithm only",
+            "Logged RED decisions only"
+        ]
+    },
+    {
+        "q": "What is TCP ECN purpose?",
+        "o": [
+            "Signal congestion without drop",
+            "Block all ECN traffic here",
+            "Encrypt congestion signals",
+            "Log congestion events only"
+        ]
+    },
+    {
+        "q": "What is explicit congestion for DDoS?",
+        "o": [
+            "Attackers may ignore ECN signals",
+            "ECN stops all DDoS attacks",
+            "ECN makes attacks stronger",
+            "ECN not relevant to DDoS"
+        ]
+    },
+    {
+        "q": "What is traffic policing?",
+        "o": [
+            "Drop excess traffic immediately",
+            "Queue excess traffic for later",
+            "Encrypt policed traffic data",
+            "Log policing events only"
+        ]
+    },
+    {
+        "q": "What is traffic shaping?",
+        "o": [
+            "Buffer and smooth traffic output",
+            "Drop excess traffic immediately",
+            "Block all shaped traffic here",
+            "Encrypt shaped traffic data"
+        ]
+    },
+    {
+        "q": "What is policing versus shaping?",
+        "o": [
+            "Policing drops shaping delays",
+            "Both drop excess traffic only",
+            "Both delay excess traffic only",
+            "No difference between them"
+        ]
+    },
+    {
+        "q": "What is committed information rate?",
+        "o": [
+            "Guaranteed minimum bandwidth rate",
+            "Maximum bandwidth ever allowed",
+            "Average bandwidth over time here",
+            "Burst bandwidth capability only"
+        ]
+    },
+    {
+        "q": "What is peak information rate?",
+        "o": [
+            "Maximum allowed including burst",
+            "Minimum guaranteed bandwidth rate",
+            "Average bandwidth over time here",
+            "Sustained bandwidth rate only"
+        ]
+    },
+    {
+        "q": "What is burst size in QoS?",
+        "o": [
+            "Allowed temporary rate exceed",
+            "Blocked traffic amount only",
+            "Encrypted data size limit here",
+            "Logged event size maximum"
+        ]
+    },
+    {
+        "q": "What is committed burst size?",
+        "o": [
+            "Guaranteed burst at CIR rate",
+            "Burst blocked at any rate",
+            "Maximum burst ever allowed",
+            "Minimum burst required"
+        ]
+    },
+    {
+        "q": "What is excess burst size?",
+        "o": [
+            "Additional burst above CBS allowed",
+            "Burst always blocked entirely",
+            "Encrypted burst data only here",
+            "Logged burst events only now"
+        ]
+    },
+    {
+        "q": "What is single rate three color?",
+        "o": [
+            "CIR with CBS and EBS marking",
+            "Multiple rates for traffic here",
+            "No color marking applied now",
+            "Block all colored traffic"
+        ]
+    },
+    {
+        "q": "What is two rate three color?",
+        "o": [
+            "CIR and PIR with color marking",
+            "Single rate only applied here",
+            "No color marking used at all",
+            "Block two rate traffic only"
+        ]
+    },
+    {
+        "q": "What is DSCP for QoS marking?",
+        "o": [
+            "Differentiated Services Code Point",
+            "Dynamic Security Control Protocol",
+            "Distributed System Control Plane",
+            "Data Security Classification Point"
+        ]
+    },
+    {
+        "q": "What is DSCP role in DDoS?",
+        "o": [
+            "Attackers may set high priority",
+            "DSCP prevents all DDoS attacks",
+            "DSCP not relevant to attacks",
+            "Only defenders set DSCP values"
+        ]
+    },
+    {
+        "q": "What is DSCP remarking defense?",
+        "o": [
+            "Reset DSCP at network edge",
+            "Trust all incoming DSCP values",
+            "Block all DSCP marked traffic",
+            "Encrypt DSCP field contents"
+        ]
+    },
+    {
+        "q": "What is CoS at layer 2?",
+        "o": [
+            "Class of Service in VLAN tag",
+            "Cost of Service calculation",
+            "Control of System operation",
+            "Centralization of Services"
+        ]
+    },
+    {
+        "q": "What is MPLS TE for DDoS?",
+        "o": [
+            "Traffic engineering reroute around",
+            "Block all MPLS traffic here",
+            "Encrypt MPLS label stack now",
+            "Log MPLS path changes only"
+        ]
+    },
+    {
+        "q": "What is segment routing benefit?",
+        "o": [
+            "Programmable traffic steering",
+            "Fixed path routing only here",
+            "Block all segment traffic now",
+            "Encrypt segment identifiers"
+        ]
+    },
+    {
+        "q": "What is SRv6 for DDoS defense?",
+        "o": [
+            "IPv6 segment routing flexibility",
+            "Block all SRv6 traffic here",
+            "Encrypt SRv6 identifiers now",
+            "Log SRv6 path changes only"
+        ]
+    },
+    {
+        "q": "What is anycast DNS for DDoS?",
+        "o": [
+            "Distribute DNS across locations",
+            "Single DNS server location only",
+            "Block all anycast DNS traffic",
+            "Encrypt anycast DNS queries"
+        ]
+    },
+    {
+        "q": "What is GeoDNS for resilience?",
+        "o": [
+            "Route to nearest available server",
+            "Route to farthest server always",
+            "Block all geographic routing",
+            "Encrypt geographic decisions"
+        ]
+    },
+    {
+        "q": "What is DNS load balancing?",
+        "o": [
+            "Distribute queries across servers",
+            "Send all queries to one server",
+            "Block DNS for load purposes",
+            "Encrypt DNS load decisions"
+        ]
+    },
+    {
+        "q": "What is GSLB for DDoS?",
+        "o": [
+            "Global Server Load Balancing",
+            "Generic Security Load Blocker",
+            "Guaranteed Service Level Base",
+            "Global Security Layer Bridge"
+        ]
+    },
+    {
+        "q": "What is health check for GSLB?",
+        "o": [
+            "Monitor server availability status",
+            "Block all health check traffic",
+            "Encrypt health status data only",
+            "Log health check events only"
+        ]
+    },
+    {
+        "q": "What is failover for DDoS?",
+        "o": [
+            "Automatic switch to backup site",
+            "Manual switch required always",
+            "Block failover traffic entirely",
+            "Encrypt failover decisions"
+        ]
+    },
+    {
+        "q": "What is active-active deployment?",
+        "o": [
+            "Multiple sites handling traffic",
+            "Single site active at time",
+            "All sites blocked during attack",
+            "Encrypted site only active"
+        ]
+    },
+    {
+        "q": "What is active-passive deployment?",
+        "o": [
+            "Standby site activates on failure",
+            "All sites active simultaneously",
+            "Both sites blocked during attack",
+            "No failover capability at all"
+        ]
+    },
+    {
+        "q": "What is hot standby versus cold?",
+        "o": [
+            "Hot ready immediately cold requires time",
+            "Both ready immediately always",
+            "Both require time to start",
+            "No difference between them"
+        ]
+    },
+    {
+        "q": "What is RTO for DDoS recovery?",
+        "o": [
+            "Recovery Time Objective target",
+            "Routing Table Optimization tool",
+            "Real Time Operation system",
+            "Remote Threat Origin source"
+        ]
+    },
+    {
+        "q": "What is RPO relevance to DDoS?",
+        "o": [
+            "Recovery Point data loss tolerance",
+            "Rate Per Operation traffic",
+            "Routing Protocol Optimization",
+            "Remote Protection Objective"
+        ]
+    },
+    {
+        "q": "What is chaos engineering for DDoS?",
+        "o": [
+            "Test resilience by injecting failures",
+            "Create chaos to attack targets",
+            "Block all chaotic traffic flow",
+            "Encrypt chaos test results"
+        ]
+    },
+    {
+        "q": "What is game day exercise?",
+        "o": [
+            "Planned testing of response",
+            "Actual attack on game servers",
+            "Block all gaming traffic now",
+            "Encrypt game day test data"
+        ]
+    },
+    {
+        "q": "What is blameless postmortem?",
+        "o": [
+            "Focus on improvement not blame",
+            "Assign blame for all failures",
+            "Block postmortem discussions",
+            "Encrypt postmortem documents"
+        ]
+    },
+    {
+        "q": "What is runbook for DDoS?",
+        "o": [
+            "Step by step response procedures",
+            "Automated attack script tool",
+            "Block all runbook execution",
+            "Encrypt runbook contents only"
+        ]
+    },
+    {
+        "q": "What is playbook automation?",
+        "o": [
+            "Automated response to attack",
+            "Manual response only allowed",
+            "Block automated responses here",
+            "Encrypt automation logic only"
+        ]
+    },
+    {
+        "q": "What is SOAR for DDoS?",
+        "o": [
+            "Security Orchestration Automation Response",
+            "Secure Operation Alert Response",
+            "System Operation Analysis Review",
+            "Security Operation Audit Recording"
+        ]
+    },
+    {
+        "q": "What is SOAR playbook for DDoS?",
+        "o": [
+            "Automated mitigation workflow",
+            "Manual mitigation checklist only",
+            "Block all SOAR operations",
+            "Encrypt SOAR playbook data"
+        ]
+    },
+    {
+        "q": "What is threat hunting for DDoS?",
+        "o": [
+            "Proactive search for attack indicators",
+            "Wait for attacks to be detected",
+            "Block all hunting activities",
+            "Encrypt hunting results only"
+        ]
+    },
+    {
+        "q": "What is IOC for DDoS?",
+        "o": [
+            "Indicator of Compromise evidence",
+            "Internet Operation Center facility",
+            "Integrated Operation Control system",
+            "Internal Observation Capability"
+        ]
+    },
+    {
+        "q": "What is IOA for DDoS?",
+        "o": [
+            "Indicator of Attack behavior pattern",
+            "Internet Operation Architecture",
+            "Integrated Operation Analysis",
+            "Internal Observation Assessment"
+        ]
+    },
+    {
+        "q": "What is threat modeling for DDoS?",
+        "o": [
+            "Identify potential attack scenarios",
+            "Wait for actual attacks to occur",
+            "Block all threat model traffic",
+            "Encrypt threat model results"
+        ]
+    },
+    {
+        "q": "What is STRIDE for DDoS?",
+        "o": [
+            "Threat modeling framework categories",
+            "Security Testing and Response",
+            "Standard Threat Response Drill",
+            "Security Tool for Response"
+        ]
+    },
+    {
+        "q": "What is attack tree for DDoS?",
+        "o": [
+            "Visual representation attack paths",
+            "Blocking tree for all attacks",
+            "Encryption decision tree only",
+            "Logging tree for events"
+        ]
+    },
+    {
+        "q": "What is DREAD scoring for DDoS?",
+        "o": [
+            "Risk assessment damage reproducibility",
+            "Detection and Response Evaluation",
+            "Defense Rating and Analysis",
+            "Distributed Response Action"
+        ]
+    },
+    {
+        "q": "What is zero trust for DDoS?",
+        "o": [
+            "Never trust always verify approach",
+            "Trust all internal traffic here",
+            "Block all external traffic only",
+            "Encrypt internal traffic only"
+        ]
+    },
+    {
+        "q": "What is microsegmentation benefit?",
+        "o": [
+            "Limit lateral movement impact",
+            "No segmentation in network",
+            "Block all segmented traffic",
+            "Encrypt segment boundaries"
+        ]
+    },
+    {
+        "q": "What is SASE architecture?",
+        "o": [
+            "Secure Access Service Edge combined",
+            "Simple Access Security Engine",
+            "Standard Architecture Security",
+            "Secure Application System Edge"
+        ]
+    },
+    {
+        "q": "What is SASE benefit for DDoS?",
+        "o": [
+            "Integrated cloud-based protection",
+            "No DDoS protection capability",
+            "Only on-premise protection only",
+            "Block all SASE traffic flow"
+        ]
+    },
+    {
+        "q": "What is SSE for security?",
+        "o": [
+            "Security Service Edge protection",
+            "Simple Security Engine tool",
+            "Standard Security Endpoint",
+            "Secure System Environment"
+        ]
+    },
+    {
+        "q": "What is ZTNA access control?",
+        "o": [
+            "Zero Trust Network Access verify",
+            "Zone Traffic Network Access",
+            "Zonal Threat Neutralization",
+            "Zero Tolerance Network Alert"
+        ]
+    },
+    {
+        "q": "What is SDP architecture?",
+        "o": [
+            "Software Defined Perimeter hidden",
+            "Standard Defense Protocol used",
+            "Secure Data Protection layer",
+            "System Defense Perimeter only"
+        ]
+    },
+    {
+        "q": "What is dark cloud for DDoS?",
+        "o": [
+            "Hide infrastructure from internet",
+            "Cloud service that is offline",
+            "Encrypted cloud environment",
+            "Blocked cloud access point"
+        ]
+    },
+    {
+        "q": "What is single packet authorization?",
+        "o": [
+            "Knock sequence before connection",
+            "Block all packets without auth",
+            "Encrypt packet authorization",
+            "Log authorization attempts"
+        ]
+    },
+    {
+        "q": "What is port knocking for hiding?",
+        "o": [
+            "Sequence opens hidden service",
+            "Block all knocking attempts",
+            "Encrypt knocking sequence",
+            "Log all knock events only"
+        ]
+    },
+    {
+        "q": "What is honeypot for DDoS intel?",
+        "o": [
+            "Decoy to study attack patterns",
+            "Block all honeypot traffic",
+            "Encrypt honeypot observation",
+            "Log honeypot access only"
+        ]
+    },
+    {
+        "q": "What is honeynet for DDoS?",
+        "o": [
+            "Network of decoys for analysis",
+            "Single decoy system only here",
+            "Block all honeynet traffic",
+            "Encrypt honeynet activities"
+        ]
+    },
+    {
+        "q": "What is deception technology?",
+        "o": [
+            "Mislead attackers with decoys",
+            "Attack deception on targets",
+            "Block all deceptive traffic",
+            "Encrypt deception activities"
+        ]
+    },
+    {
+        "q": "What is deception in DDoS defense?",
+        "o": [
+            "Redirect attack to dummy targets",
+            "Attack dummy targets ourselves",
+            "Block all decoy traffic flow",
+            "Encrypt decoy infrastructure"
+        ]
+    },
+    {
+        "q": "What is collaboration in DDoS defense?",
+        "o": [
+            "Share threat intelligence widely",
+            "Keep all intelligence secret",
+            "Block all shared information",
+            "Encrypt all collaboration data"
+        ]
+    },
+    {
+        "q": "What is ISAC for DDoS?",
+        "o": [
+            "Information Sharing Analysis Center",
+            "Internet Security Access Control",
+            "Integrated System Analysis Center",
+            "Internal Security Audit Committee"
+        ]
+    },
+    {
+        "q": "What is FIRST for incident response?",
+        "o": [
+            "Forum of Incident Response Teams",
+            "Fast Incident Response System",
+            "Federal Investigation Response",
+            "Firewall Incident Response Tool"
+        ]
+    },
+    {
+        "q": "What is STIX for threat intel?",
+        "o": [
+            "Structured Threat Information eXpression",
+            "Standard Threat Information XML",
+            "Security Threat Index Exchange",
+            "Simple Threat Intelligence eXchange"
+        ]
+    },
+    {
+        "q": "What is TAXII for sharing?",
+        "o": [
+            "Trusted Automated eXchange of Indicator",
+            "Technical Analysis eXchange Interface",
+            "Threat Analysis XML Information",
+            "Traffic Analysis eXchange Index"
+        ]
+    },
+    {
+        "q": "What is OpenDXL for integration?",
+        "o": [
+            "Open Data Exchange Layer messaging",
+            "Open Defense eXchange Link",
+            "Open Detection eXtension Layer",
+            "Open Distributed eXecution Layer"
+        ]
+    },
+    {
+        "q": "What is API integration for DDoS?",
+        "o": [
+            "Automate mitigation coordination",
+            "Block all API traffic flow here",
+            "Encrypt API call parameters",
+            "Log API integration events"
+        ]
+    },
+    {
+        "q": "What is webhook for DDoS alerting?",
+        "o": [
+            "Push notification on detection",
+            "Pull notification manually only",
+            "Block all webhook traffic here",
+            "Encrypt webhook payloads only"
+        ]
+    },
+    {
+        "q": "What is SIEM integration for DDoS?",
+        "o": [
+            "Correlate DDoS with other events",
+            "Block all SIEM traffic flow",
+            "Encrypt SIEM log entries only",
+            "Log SIEM integration events"
+        ]
+    },
+    {
+        "q": "What is XDR for DDoS?",
+        "o": [
+            "Extended Detection Response correlation",
+            "External Defense Response system",
+            "Extra Detection Recording tool",
+            "Exchange Detection Repository"
+        ]
+    },
+    {
+        "q": "What is MTTI for DDoS metrics?",
+        "o": [
+            "Mean Time To Identify attack",
+            "Maximum Time To Investigate",
+            "Minimum Time To Implement",
+            "Median Time To Inform user"
+        ]
+    },
+    {
+        "q": "What is MTTR for DDoS?",
+        "o": [
+            "Mean Time To Respond or Recover",
+            "Maximum Time To Remediate",
+            "Minimum Time To Report event",
+            "Median Time To Restart service"
+        ]
+    },
+    {
+        "q": "What is SLO for DDoS service?",
+        "o": [
+            "Service Level Objective target",
+            "Security Level Operation mode",
+            "Standard Logging Objective",
+            "System Level Output metric"
+        ]
+    },
+    {
+        "q": "What is error budget concept?",
+        "o": [
+            "Acceptable downtime or failures",
+            "Budget for attack services",
+            "Error logging allocation limit",
+            "Encryption key budget only"
+        ]
+    },
+    {
+        "q": "What is SLI for DDoS?",
+        "o": [
+            "Service Level Indicator metric",
+            "Security Level Index value",
+            "System Logging Interface type",
+            "Standard Level Implementation"
+        ]
+    },
+    {
+        "q": "What is observability for DDoS?",
+        "o": [
+            "Understand system state from outputs",
+            "Block all observable traffic",
+            "Encrypt observation data only",
+            "Log observations for audit"
+        ]
+    },
+    {
+        "q": "What is distributed tracing?",
+        "o": [
+            "Follow request across services",
+            "Block all traced traffic flow",
+            "Encrypt trace data completely",
+            "Log only trace identifiers"
+        ]
+    },
+    {
+        "q": "What is OpenTelemetry for DDoS?",
+        "o": [
+            "Standardized observability data format",
+            "Open source attack telemetry",
+            "Opening for telecommunications",
+            "Open test of telemetry data"
+        ]
+    },
+    {
+        "q": "What is eBPF for DDoS detection?",
+        "o": [
+            "Kernel level packet processing",
+            "Encrypted Berkeley Packet Format",
+            "External Blocking Packet Filter",
+            "Extended Block Protocol Format"
+        ]
+    },
+    {
+        "q": "What is XDP for DDoS mitigation?",
+        "o": [
+            "eXpress Data Path fast processing",
+            "eXtended Defense Protocol tool",
+            "eXternal Data Protection layer",
+            "eXecutable Defense Program only"
+        ]
+    },
+    {
+        "q": "What is XDP advantage for DDoS?",
+        "o": [
+            "Process packets before networking stack",
+            "Process packets after full stack",
+            "Block all XDP processed traffic",
+            "Encrypt XDP processing output"
+        ]
+    },
+    {
+        "q": "What is AF_XDP socket type?",
+        "o": [
+            "User space packet processing socket",
+            "Kernel space only socket type",
+            "Encrypted socket for security",
+            "Logged socket for auditing"
+        ]
+    },
+    {
+        "q": "What is DPDK for packet processing?",
+        "o": [
+            "Data Plane Development Kit bypass",
+            "Distributed Packet Detection Kit",
+            "Dynamic Processing Defense Kit",
+            "Data Protection Development Kit"
+        ]
+    },
+    {
+        "q": "What is DPDK advantage for DDoS?",
+        "o": [
+            "High speed packet processing bypass",
+            "Standard kernel networking speed",
+            "Block all DPDK traffic flow",
+            "Encrypt DPDK processed packets"
+        ]
+    },
+    {
+        "q": "What is smart NIC for DDoS?",
+        "o": [
+            "Offload processing to network card",
+            "Regular NIC with no processing",
+            "Block all smart NIC traffic",
+            "Encrypt at network card only"
+        ]
+    },
+    {
+        "q": "What is programmable ASIC?",
+        "o": [
+            "Custom hardware for specific tasks",
+            "General purpose CPU processing",
+            "Software defined networking only",
+            "Virtual appliance processing"
+        ]
+    },
+    {
+        "q": "What is P4 programming for DDoS?",
+        "o": [
+            "Protocol Independent Packet Processing",
+            "Priority 4 packet handling only",
+            "Protection level 4 system here",
+            "Parallel 4 processing method"
+        ]
+    },
+    {
+        "q": "What is containerized DDoS mitigation?",
+        "o": [
+            "Deploy mitigation as containers",
+            "Block all container traffic",
+            "Encrypt container deployments",
+            "Log container metrics only"
+        ]
+    },
+    {
+        "q": "What is microservices DDoS challenge?",
+        "o": [
+            "Many services to protect individually",
+            "Fewer attack surfaces to defend",
+            "No challenges with microservices",
+            "Block all microservice traffic"
+        ]
+    },
+    {
+        "q": "What is API rate limiting strategy?",
+        "o": [
+            "Limit calls per user or key",
+            "Allow unlimited API access",
+            "Block all API traffic here",
+            "Encrypt API rate limits"
+        ]
+    },
+    {
+        "q": "What is GraphQL DDoS risk?",
+        "o": [
+            "Complex queries exhaust resources",
+            "GraphQL immune to all attacks",
+            "No specific risk from GraphQL",
+            "Block all GraphQL traffic"
+        ]
+    },
+    {
+        "q": "What is query complexity analysis?",
+        "o": [
+            "Calculate cost before execution",
+            "Execute all queries regardless",
+            "Block complex queries always",
+            "Encrypt query complexity data"
+        ]
+    },
+    {
+        "q": "What is query depth limiting?",
+        "o": [
+            "Limit nested query depth allowed",
+            "Allow unlimited query nesting",
+            "Block all nested queries here",
+            "Encrypt query depth values"
+        ]
+    },
+    {
+        "q": "What is gRPC DDoS protection?",
+        "o": [
+            "Rate limiting and load balancing",
+            "No protection needed for gRPC",
+            "Block all gRPC traffic flow",
+            "Encrypt gRPC protection data"
+        ]
+    },
+    {
+        "q": "What is WebSocket DDoS challenge?",
+        "o": [
+            "Persistent connections resource drain",
+            "WebSocket immune to DDoS attacks",
+            "No specific WebSocket challenges",
+            "Block all WebSocket connections"
+        ]
+    },
+    {
+        "q": "What is connection limit for WebSocket?",
+        "o": [
+            "Maximum connections per source",
+            "Allow unlimited connections here",
+            "Block all connection attempts",
+            "Encrypt connection limits data"
+        ]
+    },
+    {
+        "q": "What is message rate limit WebSocket?",
+        "o": [
+            "Limit messages per connection time",
+            "Allow unlimited messages always",
+            "Block all message traffic here",
+            "Encrypt message rate limits"
+        ]
+    },
+    {
+        "q": "What is HTTP/3 DDoS consideration?",
+        "o": [
+            "QUIC protocol new attack surface",
+            "HTTP/3 immune to DDoS attacks",
+            "No new considerations for HTTP/3",
+            "Block all HTTP/3 traffic flow"
+        ]
+    },
+    {
+        "q": "What is QUIC amplification risk?",
+        "o": [
+            "Potential reflection attacks exist",
+            "QUIC prevents all amplification",
+            "No amplification risk at all",
+            "Block all QUIC traffic flow"
+        ]
+    },
+    {
+        "q": "What is connection ID in QUIC?",
+        "o": [
+            "Identify connections without IP",
+            "Block connections by identifier",
+            "Encrypt connection identifiers",
+            "Log connection ID changes"
+        ]
+    },
+    {
+        "q": "What is address validation in QUIC?",
+        "o": [
+            "Verify client address before proceeding",
+            "Skip all address validation here",
+            "Block validated addresses only",
+            "Encrypt address validation data"
+        ]
+    },
+    {
+        "q": "What is retry token in QUIC?",
+        "o": [
+            "Challenge client before connection",
+            "Allow all connections directly",
+            "Block retry connections here",
+            "Encrypt retry token values"
+        ]
+    },
+    {
+        "q": "What is connection migration impact?",
+        "o": [
+            "Same connection survives IP change",
+            "Connection dies on IP change",
+            "Block all migrated connections",
+            "Encrypt migration data only"
+        ]
+    },
+    {
+        "q": "What is 0-RTT attack risk?",
+        "o": [
+            "Replay attacks possible with early data",
+            "No risk with 0-RTT connections",
+            "Block all 0-RTT attempts here",
+            "Encrypt 0-RTT data always"
+        ]
+    },
+    {
+        "q": "What is DNS over QUIC protection?",
+        "o": [
+            "Encrypted DNS with connection control",
+            "Plain text DNS over QUIC only",
+            "Block DNS over QUIC traffic",
+            "Log DNS over QUIC queries"
+        ]
+    },
+    {
+        "q": "What is Multipath TCP for resilience?",
+        "o": [
+            "Multiple paths for redundancy here",
+            "Single path only for connections",
+            "Block multipath connections now",
+            "Encrypt multipath data only"
+        ]
+    },
+    {
+        "q": "What is edge caching for DDoS?",
+        "o": [
+            "Serve content from edge locations",
+            "Serve all from origin directly",
+            "Block edge cached content here",
+            "Encrypt edge cache data only"
+        ]
+    },
+    {
+        "q": "What is cache warming strategy?",
+        "o": [
+            "Pre-populate cache before attack",
+            "Empty cache during attack here",
+            "Block cache warming traffic",
+            "Encrypt cache warm requests"
+        ]
+    },
+    {
+        "q": "What is cache bypass attack?",
+        "o": [
+            "Request unique URLs to bypass cache",
+            "Attack only cached content here",
+            "Block all bypass attempts now",
+            "Encrypt bypass request data"
+        ]
+    },
+    {
+        "q": "What is origin shielding?",
+        "o": [
+            "Additional cache layer protects origin",
+            "Direct connection to origin only",
+            "Block all shielded traffic here",
+            "Encrypt shield configuration"
+        ]
+    },
+    {
+        "q": "What is geographic load balancing?",
+        "o": [
+            "Route users to nearest location",
+            "Route all to single location",
+            "Block geographic routing here",
+            "Encrypt location decisions"
+        ]
+    },
+    {
+        "q": "What is latency-based routing?",
+        "o": [
+            "Route to fastest responding server",
+            "Route to slowest server always",
+            "Block latency based routing",
+            "Encrypt latency measurements"
+        ]
+    },
+    {
+        "q": "What is weighted routing for resilience?",
+        "o": [
+            "Distribute traffic by assigned weights",
+            "Equal distribution to all servers",
+            "Block weighted routing entirely",
+            "Encrypt weight assignments"
+        ]
+    },
+    {
+        "q": "What is DNS TTL impact on DDoS?",
+        "o": [
+            "Lower TTL allows faster changes",
+            "Higher TTL provides better security",
+            "TTL irrelevant to DDoS attacks",
+            "Block all TTL modifications"
+        ]
+    },
+    {
+        "q": "What is negative caching for DNS?",
+        "o": [
+            "Cache NXDOMAIN responses too",
+            "Only cache positive responses",
+            "Block all negative caching",
+            "Encrypt negative cache data"
+        ]
+    },
+    {
+        "q": "What is DNS cookie for protection?",
+        "o": [
+            "Validate client with cookie exchange",
+            "Block all cookie traffic here",
+            "Encrypt DNS cookie values",
+            "Log cookie validation only"
+        ]
+    },
+    {
+        "q": "What is Response Rate Limiting DNS?",
+        "o": [
+            "Limit identical response rate",
+            "Allow unlimited responses here",
+            "Block all rate limited traffic",
+            "Encrypt rate limit values"
+        ]
+    },
+    {
+        "q": "What is DNSSEC impact on amplification?",
+        "o": [
+            "Larger responses increase amplification",
+            "DNSSEC reduces amplification risk",
+            "No impact from DNSSEC on size",
+            "Block all DNSSEC traffic flow"
+        ]
+    },
+    {
+        "q": "What is minimal responses DNS?",
+        "o": [
+            "Return only essential records here",
+            "Return all possible records always",
+            "Block minimal response traffic",
+            "Encrypt minimal response mode"
+        ]
+    },
+    {
+        "q": "What is EDNS Client Subnet privacy?",
+        "o": [
+            "Share location for optimization",
+            "Hide client location completely",
+            "Block all ECS traffic flow",
+            "Encrypt ECS data always"
+        ]
+    },
+    {
+        "q": "What is recursive resolver hardening?",
+        "o": [
+            "Secure resolver configuration here",
+            "Open resolver accessible publicly",
+            "Block all resolver traffic",
+            "Encrypt resolver responses"
+        ]
+    }
+]

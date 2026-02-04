@@ -1,0 +1,2414 @@
+[
+    {
+        "q": "What is the default root account status on macOS?",
+        "o": [
+            "Root account is disabled by default requiring explicit enablement for use",
+            "Root account is enabled with default password for administrative access",
+            "Root has full access but requires physical security key authentication",
+            "Root account does not exist on macOS systems using different model"
+        ]
+    },
+    {
+        "q": "What is SIP (System Integrity Protection)?",
+        "o": [
+            "macOS security feature protecting system files and processes from modification",
+            "Encryption system for protecting user data on macOS file systems now",
+            "Network security protocol for secure internet connections on Apple devices",
+            "Password protection mechanism for System Preferences access on Mac"
+        ]
+    },
+    {
+        "q": "How can SIP status be checked on macOS?",
+        "o": [
+            "Using csrutil status command in Terminal to display protection state",
+            "Through System Preferences Security and Privacy panel on the system",
+            "Using sip --check command to query current protection configuration",
+            "SIP status visible in About This Mac system information window"
+        ]
+    },
+    {
+        "q": "What is Gatekeeper on macOS?",
+        "o": [
+            "Security feature controlling which applications can be installed and run",
+            "Firewall system protecting macOS from network based attacks on system",
+            "Password manager built into macOS for secure credential storage here",
+            "Parental control feature limiting application access for child users"
+        ]
+    },
+    {
+        "q": "What is the purpose of sudo on macOS?",
+        "o": [
+            "Execute commands with elevated root privileges after authentication",
+            "Secure user data operations for encrypting files on the system now",
+            "System update daemon for downloading and installing macOS updates",
+            "Super user data organization for managing file permissions on disk"
+        ]
+    },
+    {
+        "q": "Where is the sudoers file located on macOS?",
+        "o": [
+            "Located at /etc/sudoers controlling sudo access policies on system",
+            "Found in /System/Library/sudoers for system level configuration now",
+            "Stored in /Library/Preferences/sudoers.plist as property list file",
+            "Located in user home directory as .sudoers hidden configuration"
+        ]
+    },
+    {
+        "q": "What is TCC (Transparency Consent and Control)?",
+        "o": [
+            "macOS privacy framework controlling application access to protected resources",
+            "Total computer control allowing full system administration access now",
+            "Transmission control center for network traffic management on Mac",
+            "Terminal command controller for restricting shell access to users"
+        ]
+    },
+    {
+        "q": "Where is the TCC database located?",
+        "o": [
+            "User TCC at ~/Library/Application Support/com.apple.TCC/TCC.db",
+            "System TCC stored in /System/TCC/database.sqlite for all users",
+            "TCC configuration in /etc/tcc.conf as text configuration file",
+            "Privacy database in /Library/Preferences/TCC.plist format"
+        ]
+    },
+    {
+        "q": "What is Keychain on macOS?",
+        "o": [
+            "Password management system storing credentials and certificates securely",
+            "Physical security key requirement for unlocking macOS systems now",
+            "Key logging application built into macOS for monitoring input",
+            "Encryption key storage for FileVault disk encryption system only"
+        ]
+    },
+    {
+        "q": "What is the default Keychain file location?",
+        "o": [
+            "Located at ~/Library/Keychains/login.keychain-db for user credentials",
+            "Found in /System/Library/Keychains/system.keychain for all users",
+            "Stored in /etc/keychain as system wide credential database file",
+            "Located at /Library/Keychains/master.keychain for administrator"
+        ]
+    },
+    {
+        "q": "What is FileVault on macOS?",
+        "o": [
+            "Full disk encryption feature protecting data on macOS boot volume",
+            "File organization system for managing documents on Mac computers",
+            "Vault application for storing sensitive files in encrypted container",
+            "Backup system creating encrypted copies of important user files"
+        ]
+    },
+    {
+        "q": "What is launchd on macOS?",
+        "o": [
+            "System and service management daemon replacing init on macOS systems",
+            "Application launcher for starting programs from Dock on desktop",
+            "Launch control for rocket themed game built into macOS system",
+            "Daemon for launching network connections on system startup only"
+        ]
+    },
+    {
+        "q": "What are LaunchAgents on macOS?",
+        "o": [
+            "Per-user daemons running in user context for background tasks execution",
+            "System agents monitoring user activity for security purposes on Mac",
+            "Launch applications that start automatically on system boot always",
+            "Agent software for remotely controlling macOS systems over network"
+        ]
+    },
+    {
+        "q": "What are LaunchDaemons on macOS?",
+        "o": [
+            "System-wide services running as root regardless of user login status",
+            "Daemon processes that only run when user is actively logged in now",
+            "Launch applications controlled by demon themed daemon manager here",
+            "User level daemons for running background applications on desktop"
+        ]
+    },
+    {
+        "q": "Where are user LaunchAgents located?",
+        "o": [
+            "Located at ~/Library/LaunchAgents for user specific launch agents",
+            "Found in /System/Library/LaunchAgents for user level agents here",
+            "Stored in /etc/LaunchAgents for all user agent configurations now",
+            "Located at /Library/User/LaunchAgents for shared user agents"
+        ]
+    },
+    {
+        "q": "Where are system LaunchDaemons located?",
+        "o": [
+            "Located at /Library/LaunchDaemons for third party system daemons",
+            "Found in /System/LaunchDaemons for all system level daemons here",
+            "Stored in ~/Library/LaunchDaemons for user installed daemons now",
+            "Located at /etc/LaunchDaemons for daemon configuration files"
+        ]
+    },
+    {
+        "q": "What is the dscl command used for?",
+        "o": [
+            "Directory Service command line utility for managing user accounts",
+            "Disk scheduling command for optimizing disk performance on Mac",
+            "Data synchronization controller for cloud backup operations here",
+            "Display scaling command for adjusting screen resolution settings"
+        ]
+    },
+    {
+        "q": "How can local users be enumerated on macOS?",
+        "o": [
+            "Using dscl . -list /Users command to list all local user accounts",
+            "Running cat /etc/passwd to display user account information now",
+            "Using users command to show all accounts on the system currently",
+            "Checking System Preferences Users panel for account listing only"
+        ]
+    },
+    {
+        "q": "What is the admin group on macOS?",
+        "o": [
+            "Group providing members with sudo access and administrative privileges",
+            "Administrator group with full root access without password required",
+            "System group for managing administrative preferences settings only",
+            "Group controlling access to Administrator account on the system"
+        ]
+    },
+    {
+        "q": "How can group membership be checked on macOS?",
+        "o": [
+            "Using id command or dscl . -read /Groups/admin GroupMembership",
+            "Running groups command followed by username for membership check",
+            "Checking /etc/group file for group membership information now here",
+            "Using System Preferences to view user group settings in panel"
+        ]
+    },
+    {
+        "q": "What is Authorization Services on macOS?",
+        "o": [
+            "Framework for requesting and granting privileges for system operations",
+            "Service for authorizing application installations from App Store only",
+            "Authorization system for granting network access to applications here",
+            "Service managing user authentication for login on macOS systems"
+        ]
+    },
+    {
+        "q": "What does the security command do on macOS?",
+        "o": [
+            "Command line interface for Keychain and security framework operations",
+            "Security scanner checking for malware on the system automatically",
+            "Firewall configuration tool for managing network security settings",
+            "Password strength checker for evaluating credential security now"
+        ]
+    },
+    {
+        "q": "What is AMFI (AppleMobileFileIntegrity)?",
+        "o": [
+            "Kernel extension enforcing code signing requirements on macOS system",
+            "Apple mobile file integration for syncing iOS devices with Mac",
+            "File integrity monitoring for detecting unauthorized modifications",
+            "Mobile file access interface for reading iOS device storage here"
+        ]
+    },
+    {
+        "q": "What is code signing on macOS?",
+        "o": [
+            "Cryptographic signature verifying application authenticity and integrity",
+            "Code obfuscation technique for protecting application source code",
+            "Signing applications with user signature for personalization now",
+            "Source code management system for tracking code changes on Mac"
+        ]
+    },
+    {
+        "q": "What is notarization on macOS?",
+        "o": [
+            "Apple service scanning and approving applications for distribution",
+            "Notary public service for legal document signing on Mac systems",
+            "Application certification for App Store submission approval only",
+            "Code signing with physical notary stamp for verification purposes"
+        ]
+    },
+    {
+        "q": "What is the codesign command used for?",
+        "o": [
+            "Signing and verifying code signatures on applications and binaries",
+            "Designing application code layout for macOS development projects",
+            "Co-signing applications with multiple developer certificates now",
+            "Signing commits in git repositories for code verification here"
+        ]
+    },
+    {
+        "q": "What is Hardened Runtime on macOS?",
+        "o": [
+            "Security feature applying additional protections to applications",
+            "Runtime environment for running applications in hardened sandbox",
+            "Hard disk runtime for managing disk operations during execution",
+            "Hardened operating system mode for maximum security settings"
+        ]
+    },
+    {
+        "q": "What is App Sandbox on macOS?",
+        "o": [
+            "Isolation mechanism limiting application access to system resources",
+            "Storage area for downloaded applications before installation now",
+            "Sandbox game application built into macOS for entertainment use",
+            "Testing environment for running applications in isolation mode"
+        ]
+    },
+    {
+        "q": "What is XProtect on macOS?",
+        "o": [
+            "Built-in anti-malware technology scanning for known malware signatures",
+            "X-ray protection for screen preventing eye strain during use now",
+            "Extra protection layer for FileVault encrypted disk volumes here",
+            "Cross protection for managing security across Apple devices sync"
+        ]
+    },
+    {
+        "q": "What is MRT (Malware Removal Tool) on macOS?",
+        "o": [
+            "Apple tool automatically removing known malware from macOS systems",
+            "Manual removal tool requiring user interaction for malware cleanup",
+            "Media removal tool for safely ejecting external storage devices",
+            "Memory retention tool for optimizing RAM usage on Mac systems"
+        ]
+    },
+    {
+        "q": "What is plist (Property List) on macOS?",
+        "o": [
+            "XML or binary file format storing configuration and preference data",
+            "Playlist file format for music and media organization on Mac now",
+            "Process list command for viewing running applications on system",
+            "Print list configuration for managing printer settings on Mac"
+        ]
+    },
+    {
+        "q": "How can plist files be read on macOS?",
+        "o": [
+            "Using plutil or defaults read command for property list access",
+            "Opening with TextEdit application for viewing plist content now",
+            "Using cat command to display plist file contents in terminal",
+            "Double clicking plist files opens them in property list viewer"
+        ]
+    },
+    {
+        "q": "What is Homebrew on macOS?",
+        "o": [
+            "Popular third-party package manager for installing software on Mac",
+            "Built-in application installer for macOS system applications now",
+            "Home brewing application for recipe management and tracking here",
+            "Browser extension manager for Safari browser on Mac systems"
+        ]
+    },
+    {
+        "q": "What is the wheel group on macOS?",
+        "o": [
+            "Group traditionally granting members ability to use su command",
+            "Group managing disk wheel operations for storage management now",
+            "Wheel interface control group for mouse and trackpad settings",
+            "Group for users with wheelchair accessibility needs on system"
+        ]
+    },
+    {
+        "q": "What is PPPC (Privacy Preferences Policy Control)?",
+        "o": [
+            "MDM mechanism for pre-approving application privacy permissions",
+            "Personal privacy protection control for individual user settings",
+            "Policy based printer permission control for printing services",
+            "Privacy protocol for protecting communications on network here"
+        ]
+    },
+    {
+        "q": "What is FDA (Full Disk Access) permission?",
+        "o": [
+            "TCC permission granting application access to protected user data",
+            "Full disk administrator access bypassing all security restrictions",
+            "Food and drug administration compliance for health applications",
+            "Full disk analysis permission for diagnostic tools only on Mac"
+        ]
+    },
+    {
+        "q": "What is Accessibility permission on macOS?",
+        "o": [
+            "TCC permission allowing control of other applications for automation",
+            "Permission for accessibility features like VoiceOver and Zoom only",
+            "Access permission for users with disabilities on macOS systems",
+            "Ability to access all files regardless of permission settings now"
+        ]
+    },
+    {
+        "q": "What is Screen Recording permission on macOS?",
+        "o": [
+            "TCC permission allowing application to capture screen contents",
+            "Permission for recording screen during video calls only on Mac",
+            "Screen capture permission limited to screenshot functionality now",
+            "Recording permission for audio capture during screen recording"
+        ]
+    },
+    {
+        "q": "What is Input Monitoring permission on macOS?",
+        "o": [
+            "TCC permission allowing monitoring of keyboard and mouse input",
+            "Permission for monitoring input devices for hardware diagnostics",
+            "Input logging permission for accessibility keyboard features now",
+            "Monitoring permission for parental control of user input only"
+        ]
+    },
+    {
+        "q": "What is Camera permission on macOS?",
+        "o": [
+            "TCC permission controlling application access to built-in camera",
+            "Permission for camera settings adjustment in System Preferences",
+            "Camera calibration permission for professional photography apps",
+            "Permission allowing camera use only during video calls on Mac"
+        ]
+    },
+    {
+        "q": "What is Microphone permission on macOS?",
+        "o": [
+            "TCC permission controlling application access to microphone audio",
+            "Permission for microphone settings in Sound preferences panel",
+            "Microphone calibration permission for audio recording software",
+            "Permission allowing microphone use only during calls on system"
+        ]
+    },
+    {
+        "q": "What is Location Services permission on macOS?",
+        "o": [
+            "Permission controlling application access to geolocation data",
+            "Location tracking for Find My Mac device recovery service only",
+            "Location permission for maps application navigation features now",
+            "Service location permission for configuring network services"
+        ]
+    },
+    {
+        "q": "What is Contacts permission on macOS?",
+        "o": [
+            "TCC permission controlling application access to Contacts database",
+            "Permission for editing contact information in Contacts app only",
+            "Contact synchronization permission for iCloud sync features now",
+            "Permission allowing contact sharing via AirDrop on Mac systems"
+        ]
+    },
+    {
+        "q": "What is Calendar permission on macOS?",
+        "o": [
+            "TCC permission controlling application access to Calendar events",
+            "Permission for creating calendar events in Calendar app only now",
+            "Calendar synchronization permission for iCloud calendar sync here",
+            "Permission allowing calendar sharing with other users on system"
+        ]
+    },
+    {
+        "q": "What is Photos permission on macOS?",
+        "o": [
+            "TCC permission controlling application access to Photos library",
+            "Permission for editing photos in Photos application only on Mac",
+            "Photo synchronization permission for iCloud Photo Library sync",
+            "Permission allowing photo sharing via social media applications"
+        ]
+    },
+    {
+        "q": "What is Reminders permission on macOS?",
+        "o": [
+            "TCC permission controlling application access to Reminders database",
+            "Permission for creating reminders in Reminders app only on system",
+            "Reminder synchronization permission for iCloud sync features here",
+            "Permission allowing reminder sharing with other users on Mac"
+        ]
+    },
+    {
+        "q": "What is the /etc/authorization file?",
+        "o": [
+            "Deprecated file defining authorization rights replaced by database",
+            "Current authorization configuration for all system permissions here",
+            "Authorization log file recording all privilege elevation events now",
+            "User authorization file for storing personal permission settings"
+        ]
+    },
+    {
+        "q": "What replaced /etc/authorization on modern macOS?",
+        "o": [
+            "Authorization database at /var/db/auth.db manages rights now",
+            "System Preferences Security panel replaced authorization file now",
+            "Plist file at /Library/Preferences/authorization.plist is used",
+            "TCC database completely replaced authorization configuration here"
+        ]
+    },
+    {
+        "q": "What is security authorizationdb command?",
+        "o": [
+            "Command for reading and modifying authorization database rights",
+            "Security tool for managing database authentication on macOS now",
+            "Authorization database backup command for security purposes here",
+            "Command for authorizing database applications to access data"
+        ]
+    },
+    {
+        "q": "What is osascript command on macOS?",
+        "o": [
+            "Command for executing AppleScript and JavaScript for Automation",
+            "Operating system script for system configuration and setup now",
+            "Script command for running shell scripts with elevated privileges",
+            "Apple script compiler for converting scripts to applications here"
+        ]
+    },
+    {
+        "q": "What is AppleScript on macOS?",
+        "o": [
+            "Scripting language for automating applications and system tasks",
+            "Apple application script format for App Store submissions only",
+            "Script format for creating iOS applications on macOS systems",
+            "Application scripting for web development on Safari browser"
+        ]
+    },
+    {
+        "q": "What is JXA (JavaScript for Automation)?",
+        "o": [
+            "JavaScript-based scripting for macOS automation similar to AppleScript",
+            "Java extension for automating cross-platform applications here",
+            "JSON export automation for data processing applications on Mac",
+            "JavaScript extension for Safari browser automation only on system"
+        ]
+    },
+    {
+        "q": "What is Automator on macOS?",
+        "o": [
+            "Visual workflow automation application for creating automated tasks",
+            "Automatic software update tool for maintaining macOS current now",
+            "Automation daemon for running scheduled tasks on macOS systems",
+            "Auto-complete tool for automating text input on Mac keyboard"
+        ]
+    },
+    {
+        "q": "What are Login Items on macOS?",
+        "o": [
+            "Applications configured to launch automatically at user login time",
+            "Items displayed on login screen for quick access by all users now",
+            "Login credentials stored in Keychain for automatic authentication",
+            "Security items required for successful login to macOS systems"
+        ]
+    },
+    {
+        "q": "Where are Login Items configured?",
+        "o": [
+            "System Preferences > Users & Groups > Login Items for user config",
+            "Located in /etc/login.items configuration file on the system now",
+            "Configured through /Library/LoginItems directory for all users",
+            "Set in ~/Library/Preferences/login.plist for user preferences"
+        ]
+    },
+    {
+        "q": "What is kext (Kernel Extension) on macOS?",
+        "o": [
+            "Loadable kernel module extending macOS kernel functionality at runtime",
+            "Keyboard extension for adding custom keyboard layouts on Mac now",
+            "Key exchange protocol for secure communication on macOS systems",
+            "External kernel for running alternative operating system on Mac"
+        ]
+    },
+    {
+        "q": "What replaced kexts on modern macOS?",
+        "o": [
+            "System Extensions providing user-space drivers with similar functionality",
+            "Kernel modules still primary method for extending kernel on Mac",
+            "Driver Kit completely replaced all kernel extension functionality",
+            "App Extensions replaced kexts for all driver functionality now"
+        ]
+    },
+    {
+        "q": "What is System Extensions on macOS?",
+        "o": [
+            "User-space alternatives to kernel extensions for drivers and security",
+            "Extensions to macOS system for adding new features and capabilities",
+            "System level App Store extensions for enhancing applications now",
+            "Extended system partition for additional operating system files"
+        ]
+    },
+    {
+        "q": "What is DriverKit on macOS?",
+        "o": [
+            "Framework for building device drivers that run in user space safely",
+            "Kit for driving instructor applications on macOS for education",
+            "Driver database for downloading device drivers from Apple servers",
+            "Toolkit for managing storage drives and disk utilities on Mac"
+        ]
+    },
+    {
+        "q": "What is EndpointSecurity framework?",
+        "o": [
+            "API for security applications to monitor and authorize system events",
+            "End-to-end encryption security for macOS network communications",
+            "Security framework for endpoint management by IT administrators",
+            "Framework securing USB and external device connections on Mac"
+        ]
+    },
+    {
+        "q": "What is bash history file location on macOS?",
+        "o": [
+            "Located at ~/.bash_history for recording bash command history",
+            "Found in /var/log/bash_history for system wide command logging",
+            "Stored in ~/Library/Logs/bash_history for organized access now",
+            "Located at /etc/bash_history for all user command histories"
+        ]
+    },
+    {
+        "q": "What is zsh history file location on macOS?",
+        "o": [
+            "Located at ~/.zsh_history for recording zsh command history",
+            "Found in /var/log/zsh_history for system wide command logging",
+            "Stored in ~/Library/Logs/zsh_history for organized access now",
+            "Located at /etc/zsh_history for all user command histories here"
+        ]
+    },
+    {
+        "q": "What is the default shell on modern macOS?",
+        "o": [
+            "Zsh replaced bash as default shell starting with macOS Catalina",
+            "Bash remains the default shell on all macOS versions currently",
+            "Fish shell is default on modern macOS for improved experience",
+            "Sh is default shell with bash available as optional upgrade now"
+        ]
+    },
+    {
+        "q": "What is .zshrc file used for?",
+        "o": [
+            "Zsh configuration file executed for interactive shell sessions",
+            "Zsh resource compiler for optimizing shell startup performance",
+            "Zsh run commands log file recording all executed commands now",
+            "Zsh runtime configuration for system level shell settings here"
+        ]
+    },
+    {
+        "q": "What is .bash_profile used for on macOS?",
+        "o": [
+            "Bash configuration file executed for login shell sessions on Mac",
+            "Bash user profile containing personal information and settings",
+            "Profile picture configuration for bash terminal appearance now",
+            "Bash professional license file for commercial shell use here"
+        ]
+    },
+    {
+        "q": "What is the /etc/paths file?",
+        "o": [
+            "System file defining default PATH environment variable components",
+            "Path configuration for network routing on macOS systems now here",
+            "Pathway definitions for application shortcuts and aliases on Mac",
+            "File path indexing for Spotlight search functionality on system"
+        ]
+    },
+    {
+        "q": "What is /etc/paths.d directory?",
+        "o": [
+            "Directory containing files that add paths to system PATH variable",
+            "Path definitions directory for network route configurations now",
+            "Daemon path directory for background service configurations here",
+            "Directory storing application path shortcuts for quick access"
+        ]
+    },
+    {
+        "q": "What is dyld (dynamic linker) on macOS?",
+        "o": [
+            "Dynamic loader responsible for loading shared libraries at runtime",
+            "Dynamic yield linker for optimizing application performance now",
+            "Disk yield daemon for managing disk I/O operations on system",
+            "Dynamic library database for tracking installed libraries here"
+        ]
+    },
+    {
+        "q": "What is DYLD_INSERT_LIBRARIES?",
+        "o": [
+            "Environment variable for injecting libraries into processes on Mac",
+            "Dynamic library insert directory for system library management",
+            "Library insertion database for tracking dynamically loaded code",
+            "Insert libraries command for adding libraries to running processes"
+        ]
+    },
+    {
+        "q": "Why might DYLD_INSERT_LIBRARIES not work?",
+        "o": [
+            "Hardened Runtime and SIP restrict library injection for security",
+            "Library injection always works on macOS without any restrictions",
+            "Only works for system applications not for user applications now",
+            "Requires special developer certificate for library injection use"
+        ]
+    },
+    {
+        "q": "What is DYLD_LIBRARY_PATH?",
+        "o": [
+            "Environment variable specifying library search path for dyld loader",
+            "Dynamic library path database for tracking library locations now",
+            "Path configuration for dynamic library compilation on macOS here",
+            "Library path permissions for controlling access to shared libraries"
+        ]
+    },
+    {
+        "q": "What is the /usr/local directory used for?",
+        "o": [
+            "Third-party software installation location not protected by SIP",
+            "Local user storage for personal files and documents on Mac now",
+            "User local applications directory protected by SIP on system here",
+            "Local system configuration directory for macOS settings files"
+        ]
+    },
+    {
+        "q": "What is /Applications directory?",
+        "o": [
+            "Default location for installed applications accessible to all users",
+            "System applications directory protected from user modification now",
+            "Application installer staging directory for pending installations",
+            "Backup directory for removed applications on macOS systems here"
+        ]
+    },
+    {
+        "q": "What is ~/Applications directory?",
+        "o": [
+            "User-specific applications directory for personally installed apps",
+            "Shortcut to system Applications directory for user convenience now",
+            "Application settings directory for user preferences storage here",
+            "Temporary application directory for apps downloaded by user only"
+        ]
+    },
+    {
+        "q": "What is /Library directory?",
+        "o": [
+            "System-wide resources and configuration accessible to all users",
+            "Library of books and media content for entertainment on Mac now",
+            "Code library directory for shared programming resources on system",
+            "Library application directory for document management on Mac"
+        ]
+    },
+    {
+        "q": "What is ~/Library directory?",
+        "o": [
+            "User-specific application support cache and preferences storage",
+            "Personal document library for user created content on Mac now",
+            "Library shortcuts directory for quick access to shared libraries",
+            "User library card storage for library management applications"
+        ]
+    },
+    {
+        "q": "What is /System/Library directory?",
+        "o": [
+            "macOS system resources protected by SIP from modifications now",
+            "System library for shared code used by all applications on Mac",
+            "Library directory for system administrator documentation here",
+            "System level library configuration for network resources only"
+        ]
+    },
+    {
+        "q": "What is the quarantine attribute on macOS?",
+        "o": [
+            "Extended attribute marking downloaded files for Gatekeeper check",
+            "Quarantine folder for isolating suspicious files on the system",
+            "Attribute for files blocked by antivirus software on Mac now here",
+            "Security attribute for files requiring administrator approval"
+        ]
+    },
+    {
+        "q": "How can quarantine attribute be checked?",
+        "o": [
+            "Using xattr -l command to list extended attributes on files",
+            "Checking file properties in Finder Get Info window on Mac now",
+            "Running quarantine --check on file to verify attribute status",
+            "Using ls -l command to display quarantine status of files here"
+        ]
+    },
+    {
+        "q": "How can quarantine attribute be removed?",
+        "o": [
+            "Using xattr -d com.apple.quarantine command on the file path",
+            "Removing through Finder by clearing checkbox in Get Info window",
+            "Running quarantine --remove command on the file to clear flag",
+            "Quarantine is permanent and cannot be removed by any method"
+        ]
+    },
+    {
+        "q": "What is spctl command on macOS?",
+        "o": [
+            "Security policy control for Gatekeeper and code signing assessment",
+            "Special control command for system process management on Mac now",
+            "Spotlight control for managing search indexing on macOS systems",
+            "Speech control command for VoiceOver accessibility features here"
+        ]
+    },
+    {
+        "q": "What is pkgutil command on macOS?",
+        "o": [
+            "Package utility for querying and managing installed packages info",
+            "Package installation utility for deploying software packages now",
+            "Public key utility for managing encryption keys on Mac systems",
+            "Package update tool for checking for software updates on Mac"
+        ]
+    },
+    {
+        "q": "What is installer command on macOS?",
+        "o": [
+            "Command line tool for installing packages from pkg files on Mac",
+            "Installation wizard for guiding users through software setup now",
+            "Install manager for coordinating multiple package installations",
+            "Installer daemon for background software installation processes"
+        ]
+    },
+    {
+        "q": "What are pkg files on macOS?",
+        "o": [
+            "macOS installer packages containing software for installation here",
+            "Package files containing compressed documents for sharing now",
+            "Program kernel files containing executable code for applications",
+            "Public key group files for managing encryption certificates"
+        ]
+    },
+    {
+        "q": "What is softwareupdate command?",
+        "o": [
+            "Command line tool for managing macOS software updates on system",
+            "Software update daemon running in background for updates check",
+            "Update configuration command for software repository settings",
+            "Software upgrade command for major macOS version upgrades only"
+        ]
+    },
+    {
+        "q": "What is kmutil command on macOS?",
+        "o": [
+            "Kernel management utility for managing kernel extension collections",
+            "Keyboard mapping utility for configuring keyboard layouts on Mac",
+            "Key management utility for encryption key handling on system now",
+            "Kernel module upload tool for loading drivers into kernel space"
+        ]
+    },
+    {
+        "q": "What is systemextensionsctl command?",
+        "o": [
+            "Command for managing System Extensions on macOS Catalina and later",
+            "System extension controller for kernel extension management now",
+            "Control command for system extension preferences configuration",
+            "Extension control for Safari browser extensions management here"
+        ]
+    },
+    {
+        "q": "What is profiles command on macOS?",
+        "o": [
+            "Command line tool for managing configuration profiles on Mac now",
+            "User profile management for creating new user accounts on system",
+            "Profile viewer for displaying user profile information here",
+            "Profiling tool for measuring application performance on Mac"
+        ]
+    },
+    {
+        "q": "What are configuration profiles on macOS?",
+        "o": [
+            "XML or mobileconfig files for managing settings and restrictions",
+            "User configuration files for personal preference settings here",
+            "Profile pictures and user avatar configurations on Mac systems",
+            "Configuration backups for restoring settings on new installation"
+        ]
+    },
+    {
+        "q": "What is MDM (Mobile Device Management)?",
+        "o": [
+            "System for remotely managing and configuring Apple devices now",
+            "Mobile daemon for syncing iOS devices with Mac computers here",
+            "Device monitoring service for tracking Mac device locations now",
+            "Management display mode for administrator interface on macOS"
+        ]
+    },
+    {
+        "q": "What is DEP (Device Enrollment Program)?",
+        "o": [
+            "Apple program for automatic MDM enrollment of corporate devices",
+            "Deprecated encryption protocol replaced by modern encryption now",
+            "Developer enrollment program for App Store developer access here",
+            "Device exchange program for replacing faulty Apple devices"
+        ]
+    },
+    {
+        "q": "What is the diskutil command?",
+        "o": [
+            "Disk utility command for managing disks partitions and volumes",
+            "Disk cleanup utility for removing temporary files on Mac system",
+            "Disk encryption tool for FileVault management on Mac devices",
+            "Disk diagnostic utility for checking drive health on system"
+        ]
+    },
+    {
+        "q": "What is hdiutil command?",
+        "o": [
+            "Command for creating and managing disk images on macOS systems",
+            "Hard disk information utility for displaying drive details here",
+            "Hidden disk utility for accessing hidden partitions on Mac now",
+            "HD image utility for managing high definition media files only"
+        ]
+    },
+    {
+        "q": "What is DMG file on macOS?",
+        "o": [
+            "Disk image file format commonly used for distributing software",
+            "Document management group file for collaborative editing now here",
+            "Digital media gallery for storing photos and videos on Mac now",
+            "Disk monitoring graph file for tracking disk performance stats"
+        ]
+    },
+    {
+        "q": "What is tmutil command?",
+        "o": [
+            "Time Machine utility for managing backup operations from command line",
+            "Terminal multiplexer utility similar to tmux on macOS systems",
+            "Time management utility for scheduling tasks on Mac systems now",
+            "Temporary utility for managing temporary files on macOS here"
+        ]
+    },
+    {
+        "q": "How can sudo misconfigurations be exploited on macOS?",
+        "o": [
+            "Using NOPASSWD entries or wildcards to execute commands as root",
+            "Sudo exploitation is prevented by SIP on modern macOS versions now",
+            "Misconfigurations require physical access to exploit on Mac systems",
+            "Sudo always requires password regardless of configuration settings"
+        ]
+    },
+    {
+        "q": "What is sudoers NOPASSWD directive?",
+        "o": [
+            "Configuration allowing specified commands without password prompt",
+            "No password directive for disabling password on user account now",
+            "Directive for requiring no password during user creation on Mac",
+            "Configuration for passwordless SSH login to remote systems here"
+        ]
+    },
+    {
+        "q": "How can writable LaunchAgent plist lead to privilege escalation?",
+        "o": [
+            "Modifying plist to execute malicious commands at user login time",
+            "Writable plists are ignored by launchd for security on macOS now",
+            "LaunchAgent plists require code signature before execution here",
+            "Writable plists automatically trigger security alert to user"
+        ]
+    },
+    {
+        "q": "What is CVE-2021-30657 (Gatekeeper bypass)?",
+        "o": [
+            "Vulnerability allowing unsigned code execution via notarized app bundle",
+            "Gatekeeper bypass requiring firmware modification on Mac systems",
+            "Security vulnerability in gate-keeping network traffic on macOS now",
+            "Keeper database vulnerability exposing encrypted passwords here"
+        ]
+    },
+    {
+        "q": "What is CVE-2021-30713 (TCC bypass)?",
+        "o": [
+            "XCSSET malware TCC bypass using AppleScript application injection",
+            "TCC database encryption vulnerability allowing credential theft now",
+            "Privacy bypass requiring physical access to Mac computer systems",
+            "Terminal command controller bypass for shell access on macOS here"
+        ]
+    },
+    {
+        "q": "What is synthetic click attack on macOS?",
+        "o": [
+            "Programmatically generating clicks to bypass TCC permission prompts",
+            "Synthetic mouse clicking for automated UI testing purposes only",
+            "Click attack creating synthetic sound from Mac speaker system now",
+            "Clicking attack for keyboard shortcut injection on Mac systems"
+        ]
+    },
+    {
+        "q": "What security prevented synthetic click attacks?",
+        "o": [
+            "Accessibility permission requirement for generating synthetic events",
+            "Synthetic clicks are completely blocked on all macOS versions now",
+            "Security requiring physical mouse for all click generation here",
+            "SIP prevents all synthetic event generation on macOS systems"
+        ]
+    },
+    {
+        "q": "How can Keychain be accessed programmatically?",
+        "o": [
+            "Using security command or Security framework API for item access",
+            "Keychain access requires hardware authentication on all Mac now",
+            "Programmatic access blocked without administrator approval here",
+            "Only Keychain Access application can access keychain items now"
+        ]
+    },
+    {
+        "q": "What is Keychain dumping on macOS?",
+        "o": [
+            "Extracting stored credentials from Keychain using various techniques",
+            "Dumping keychain file to external drive for offline analysis now",
+            "Creating backup of keychain for migration to new Mac system here",
+            "Keychain crash dumping for debugging authentication issues only"
+        ]
+    },
+    {
+        "q": "What tool can dump macOS Keychain passwords?",
+        "o": [
+            "Chainbreaker and security command can extract keychain credentials",
+            "Only Apple diagnostic tools can access keychain contents on Mac",
+            "Keychain dumping tools are blocked by SIP on modern macOS now",
+            "Third party tools cannot access keychain due to encryption here"
+        ]
+    },
+    {
+        "q": "What is authorization plugin abuse?",
+        "o": [
+            "Creating malicious plugin to capture credentials during login",
+            "Plugin abuse requiring modification of SIP protected directories",
+            "Authorization plugins can only be installed by Apple engineers",
+            "Plugin system was removed in modern macOS for security reasons"
+        ]
+    },
+    {
+        "q": "Where are authorization plugins located?",
+        "o": [
+            "In /Library/Security/SecurityAgentPlugins directory on macOS",
+            "Found in /System/Library/AuthPlugins protected by SIP on Mac",
+            "Located in ~/Library/Plugins/Authorization for user plugins now",
+            "Authorization plugins stored in /etc/auth/plugins directory here"
+        ]
+    },
+    {
+        "q": "What is Directory Utility abuse?",
+        "o": [
+            "Exploiting enabled root account or directory service vulnerabilities",
+            "Utility abuse for organizing files into malicious directories now",
+            "Directory navigation attack for accessing restricted folders here",
+            "Utility for directory structure manipulation requiring root only"
+        ]
+    },
+    {
+        "q": "What was CVE-2017-13872 (High Sierra root bug)?",
+        "o": [
+            "Vulnerability allowing root access by entering blank password repeatedly",
+            "High Sierra encryption bug exposing unencrypted passwords on disk",
+            "Root certificate vulnerability allowing man in the middle attacks",
+            "Bug in Sierra Update causing root partition corruption on Mac"
+        ]
+    },
+    {
+        "q": "How can hidden users be created on macOS?",
+        "o": [
+            "Setting IsHidden attribute to true using dscl for the user record",
+            "Hidden users cannot be created on macOS for security reasons now",
+            "User hiding requires modification of SIP protected system files",
+            "Creating hidden users requires physical access and firmware mod"
+        ]
+    },
+    {
+        "q": "What is /var/db/dslocal/nodes/Default/?",
+        "o": [
+            "Directory containing local user and group account data on macOS",
+            "Default node database for network directory services on Mac now",
+            "Variable database local for temporary storage of user data here",
+            "Default configuration for DSL network connections on macOS system"
+        ]
+    },
+    {
+        "q": "How can password hash be extracted on macOS?",
+        "o": [
+            "Using dscl to read ShadowHashData attribute from user record",
+            "Password hashes are not stored on macOS using different system",
+            "Hash extraction requires decryption of FileVault volume first",
+            "Only Apple can extract password hashes from macOS systems now"
+        ]
+    },
+    {
+        "q": "What is the format of macOS password hashes?",
+        "o": [
+            "PBKDF2 or SALTED-SHA512 stored in ShadowHashData binary plist",
+            "MD5 hashes stored in /etc/shadow file similar to Linux systems",
+            "SHA256 hashes in plain text format in user record configuration",
+            "Encryption key hashes using AES-256 for password storage on Mac"
+        ]
+    },
+    {
+        "q": "What is APFS (Apple File System)?",
+        "o": [
+            "Modern Apple file system with native encryption and snapshot support",
+            "Apple protocol for file sharing between Mac and iOS devices now",
+            "Application programming file system for developer tools on Mac",
+            "Automated partition file system for managing disk space here"
+        ]
+    },
+    {
+        "q": "What are APFS snapshots?",
+        "o": [
+            "Read-only copies of file system state at specific point in time",
+            "Screen capture snapshots saved in Apple Photo Stream service now",
+            "Application snapshots for suspending running programs on macOS",
+            "Snapshot backups uploaded automatically to iCloud Drive here"
+        ]
+    },
+    {
+        "q": "How can APFS snapshots be listed?",
+        "o": [
+            "Using tmutil listlocalsnapshots / command on macOS system",
+            "Snapshots visible in Disk Utility application under volumes panel",
+            "Running diskutil apfs snapshot command to show all snapshots now",
+            "APFS snapshots listed in Time Machine preferences automatically"
+        ]
+    },
+    {
+        "q": "What is Signed System Volume (SSV)?",
+        "o": [
+            "Cryptographically verified system volume introduced in macOS Big Sur",
+            "System volume with digital signature for software distribution now",
+            "Signed storage volume for FileVault encrypted user data on Mac",
+            "Volume signing service for third party external drives on macOS"
+        ]
+    },
+    {
+        "q": "What is csrutil command?",
+        "o": [
+            "System Integrity Protection control command for configuration on Mac",
+            "Customer service request utility for Apple support on macOS now",
+            "Core security resource utility for managing security settings here",
+            "Certificate signing request utility for code signing on Mac now"
+        ]
+    },
+    {
+        "q": "How can SIP be disabled on macOS?",
+        "o": [
+            "Booting into Recovery Mode and using csrutil disable command there",
+            "Using Terminal command sudo csrutil disable with admin password",
+            "SIP cannot be disabled and is permanently enabled on all Mac now",
+            "Disabling through System Preferences Security and Privacy panel"
+        ]
+    },
+    {
+        "q": "What are SIP protected directories?",
+        "o": [
+            "/System /usr /bin /sbin and core system locations on macOS",
+            "Only /System/Library is protected by SIP on macOS systems now",
+            "All directories with root ownership protected by SIP on Mac here",
+            "SIP protects all directories unless explicitly marked writable"
+        ]
+    },
+    {
+        "q": "What is process injection on macOS?",
+        "o": [
+            "Injecting code into running processes to execute in their context",
+            "Injection of processes into queue for prioritized execution now",
+            "Process creation by injecting parameters into system launcher here",
+            "Injection of commands into process configuration on startup only"
+        ]
+    },
+    {
+        "q": "What is task_for_pid() on macOS?",
+        "o": [
+            "Mach API for obtaining task port allowing process manipulation",
+            "Task utility for finding process ID of running applications now",
+            "PID assignment task for new process creation on macOS system here",
+            "Task manager function for ending process by ID on Mac systems"
+        ]
+    },
+    {
+        "q": "What protects task_for_pid() usage?",
+        "o": [
+            "Requires get-task-allow entitlement or root to call on processes",
+            "Task for PID is completely disabled on modern macOS versions now",
+            "Only Apple signed applications can use task for PID on Mac here",
+            "SIP prevents all task for PID calls regardless of privileges now"
+        ]
+    },
+    {
+        "q": "What is the mach_inject framework?",
+        "o": [
+            "Framework for injecting code into running processes via Mach APIs",
+            "Machine injection framework for adding hardware to Mac systems",
+            "Mach kernel inject for loading kernel extensions on macOS now",
+            "Framework for injecting mach-o binaries into application bundles"
+        ]
+    },
+    {
+        "q": "What is dylib hijacking on macOS?",
+        "o": [
+            "Placing malicious dylib in search path for application loading",
+            "Hijacking dynamic library servers for credential theft on Mac now",
+            "Library hijacking for redirecting network traffic on macOS here",
+            "Dynamic library high jacking for kernel extension loading only"
+        ]
+    },
+    {
+        "q": "What makes applications vulnerable to dylib hijacking?",
+        "o": [
+            "Using weak or unqualified library paths without proper validation",
+            "All applications are vulnerable to dylib hijacking on macOS now",
+            "Applications without code signature vulnerable to hijacking here",
+            "Only applications from App Store are protected from hijacking"
+        ]
+    },
+    {
+        "q": "What is @rpath in macOS binaries?",
+        "o": [
+            "Runtime search path for locating dynamic libraries at load time",
+            "Root path definition for application bundle resource location now",
+            "Relative path marker for portable application development on Mac",
+            "Read path attribute for tracking library file access on macOS"
+        ]
+    },
+    {
+        "q": "What is @executable_path?",
+        "o": [
+            "Dynamic loader variable pointing to directory containing binary",
+            "Executable permission path for running programs on macOS system",
+            "Path to executable file within application bundle on Mac now here",
+            "Execution path recording for process auditing on macOS systems"
+        ]
+    },
+    {
+        "q": "What is @loader_path?",
+        "o": [
+            "Dynamic loader variable pointing to directory containing loading binary",
+            "Loader permission path for dynamic library access on macOS now",
+            "Path where loader downloads libraries from network on Mac here",
+            "Loading path definition for application startup on macOS system"
+        ]
+    },
+    {
+        "q": "What is LC_RPATH in Mach-O binaries?",
+        "o": [
+            "Load command defining runtime search path for library resolution",
+            "Library command reading path from configuration file on macOS now",
+            "Load control runtime path for kernel extension loading on Mac",
+            "Lazy compilation runtime path for just-in-time code compilation"
+        ]
+    },
+    {
+        "q": "What tool can view Mach-O binary structure?",
+        "o": [
+            "otool command shows binary headers load commands and dependencies",
+            "Only Xcode IDE can display Mach-O binary information on macOS now",
+            "Binary structure viewer built into Finder Get Info on Mac here",
+            "Terminal file command displays complete Mach-O structure on Mac"
+        ]
+    },
+    {
+        "q": "What is install_name_tool?",
+        "o": [
+            "Tool for changing dynamic library install names in Mach-O binaries",
+            "Installation name configuration for applications on macOS system",
+            "Tool for recording installation name during software setup on Mac",
+            "Name installation utility for creating user accounts on macOS now"
+        ]
+    },
+    {
+        "q": "What is xattr command on macOS?",
+        "o": [
+            "Command for viewing and modifying extended attributes on files",
+            "X attribute permission command for special file access on Mac now",
+            "Extra attributes display for showing hidden file information here",
+            "Extended attack command for security testing on macOS systems"
+        ]
+    },
+    {
+        "q": "What is com.apple.metadata:kMDItemWhereFroms?",
+        "o": [
+            "Extended attribute storing download URL for files on macOS system",
+            "Metadata item for tracking file creation location on Mac system",
+            "iCloud synchronization attribute for tracking file origin on Mac",
+            "Spotlight metadata for search indexing of web content on macOS"
+        ]
+    },
+    {
+        "q": "What is Finder integration abuse on macOS?",
+        "o": [
+            "Exploiting Finder extensions or scripts for code execution on Mac",
+            "Finder abuse for accessing restricted folders on macOS systems now",
+            "Integration of malicious code into Finder application bundle here",
+            "Finder configuration abuse for hiding malware on macOS desktop"
+        ]
+    },
+    {
+        "q": "What are Finder Sync Extensions?",
+        "o": [
+            "Extensions providing file sync status badges and context menus",
+            "Finder synchronization for iCloud Drive integration on macOS now",
+            "Sync extension for folder mirroring to external drives on Mac here",
+            "Extension for synchronizing Finder preferences across Mac devices"
+        ]
+    },
+    {
+        "q": "What is Quick Look plugin abuse?",
+        "o": [
+            "Malicious Quick Look plugins executing code when previewing files",
+            "Quick Look extension for previewing sensitive files on macOS now",
+            "Plugin abuse for quick looking at protected system files on Mac",
+            "Look plugin for capturing screenshots of preview content on Mac"
+        ]
+    },
+    {
+        "q": "Where are Quick Look plugins located?",
+        "o": [
+            "In /Library/QuickLook or ~/Library/QuickLook directories on Mac",
+            "Found in /System/Library/QuickLook protected by SIP on macOS now",
+            "Located in application bundles in PlugIns/QuickLook folder here",
+            "Quick Look plugins stored in /etc/quicklook directory on Mac"
+        ]
+    },
+    {
+        "q": "What is Spotlight importer abuse?",
+        "o": [
+            "Malicious Spotlight importer executing when indexing specific files",
+            "Spotlight configuration abuse for hiding files from search on Mac",
+            "Importing spotlight indexed data into external monitoring system",
+            "Abusing spotlight importing for exposing protected file content"
+        ]
+    },
+    {
+        "q": "Where are Spotlight importers located?",
+        "o": [
+            "In /Library/Spotlight or ~/Library/Spotlight directories on macOS",
+            "Found in application bundle Contents/Library/Spotlight folder now",
+            "Located in /System/Library/Spotlight protected by SIP on Mac here",
+            "Spotlight importers in ~/.spotlight/importers directory on macOS"
+        ]
+    },
+    {
+        "q": "What is screensaver bundle abuse?",
+        "o": [
+            "Malicious screensaver executing code when screensaver activates now",
+            "Screensaver abuse for capturing displayed content on Mac screen",
+            "Bundle abuse for hiding malware in screensaver package on macOS",
+            "Abuse for bypassing lock screen using screensaver on Mac systems"
+        ]
+    },
+    {
+        "q": "Where are screensavers located on macOS?",
+        "o": [
+            "In /Library/Screen Savers or ~/Library/Screen Savers directories",
+            "Found in /System/Library/ScreenSavers protected by SIP on Mac now",
+            "Located in /Applications/Screen Savers folder on macOS system here",
+            "Screensavers stored in ~/Desktop/ScreenSavers for user access only"
+        ]
+    },
+    {
+        "q": "What is color picker abuse on macOS?",
+        "o": [
+            "Malicious color picker executing code when color panel opens on Mac",
+            "Color picker abuse for capturing screen colors on macOS systems now",
+            "Abuse for accessing protected color profiles on Mac systems here",
+            "Picker abuse for selecting restricted colors in design tools only"
+        ]
+    },
+    {
+        "q": "Where are color pickers located on macOS?",
+        "o": [
+            "In /Library/ColorPickers or ~/Library/ColorPickers directories now",
+            "Found in /System/Library/ColorPickers protected by SIP on Mac here",
+            "Located in application bundles in PlugIns/ColorPickers folder only",
+            "Color pickers in /Applications/Accessories folder on macOS system"
+        ]
+    },
+    {
+        "q": "What is preference pane abuse on macOS?",
+        "o": [
+            "Malicious preference pane executing code when opened in preferences",
+            "Preference abuse for modifying system settings without permission",
+            "Pane abuse for accessing hidden system preferences on Mac now here",
+            "Abuse for capturing preference changes for credential theft now"
+        ]
+    },
+    {
+        "q": "Where are preference panes located?",
+        "o": [
+            "In /Library/PreferencePanes or ~/Library/PreferencePanes on Mac",
+            "Found in /System/Library/PreferencePanes protected by SIP here",
+            "Located in System Preferences application bundle on macOS now only",
+            "Preference panes in /etc/prefs directory on macOS system only"
+        ]
+    },
+    {
+        "q": "What is Audio Unit plugin abuse?",
+        "o": [
+            "Malicious Audio Unit loading when audio host application opens",
+            "Audio capture abuse for recording audio on macOS systems now here",
+            "Audio unit for injecting audio into system sounds on Mac only now",
+            "Plugin abuse for modifying audio settings without permission here"
+        ]
+    },
+    {
+        "q": "Where are Audio Unit plugins located?",
+        "o": [
+            "In /Library/Audio/Plug-Ins/Components or ~/Library equivalent",
+            "Found in /System/Library/Audio with all Apple audio plugins here",
+            "Located in application bundles under Audio folder only on Mac now",
+            "Audio plugins in /etc/audio/plugins directory on macOS system"
+        ]
+    },
+    {
+        "q": "What is cron job persistence on macOS?",
+        "o": [
+            "Using crontab to schedule persistent command execution on system",
+            "Cron was removed from macOS and replaced by launchd completely now",
+            "Cron jobs require SIP bypass for persistence on modern macOS here",
+            "Only root can create cron jobs for persistence on Mac systems now"
+        ]
+    },
+    {
+        "q": "Does cron still work on modern macOS?",
+        "o": [
+            "Yes cron still functions but launchd is preferred for scheduling",
+            "Cron was completely removed in macOS Catalina and later versions",
+            "Cron only works in compatibility mode requiring explicit enabling",
+            "Cron replaced by at daemon for scheduling on modern macOS now"
+        ]
+    },
+    {
+        "q": "What is at daemon on macOS?",
+        "o": [
+            "Service for scheduling one-time command execution in the future",
+            "At daemon was removed and replaced by launchd on macOS systems",
+            "Attention daemon for monitoring user activity on Mac systems now",
+            "Automatic daemon for running background tasks on macOS startup"
+        ]
+    },
+    {
+        "q": "What is periodic utility on macOS?",
+        "o": [
+            "Runs scripts in /etc/periodic directories daily weekly and monthly",
+            "Periodic system check utility for monitoring Mac health status now",
+            "Period synchronization for time zone updates on macOS systems here",
+            "Periodic backup utility for Time Machine operations on Mac only"
+        ]
+    },
+    {
+        "q": "What is rc.common on macOS?",
+        "o": [
+            "Legacy startup script sourced during boot on older macOS versions",
+            "Remote control common file for network management on Mac systems",
+            "Resource control configuration for limiting process resources now",
+            "Recovery command common file for macOS Recovery Mode operations"
+        ]
+    },
+    {
+        "q": "What is /etc/rc.local on macOS?",
+        "o": [
+            "Legacy script for custom startup commands not used on modern macOS",
+            "Remote control local for managing services on local Mac system now",
+            "Resource control local for limiting local process resources here",
+            "Recovery command local for local Recovery Mode operations only"
+        ]
+    },
+    {
+        "q": "What is emond on macOS?",
+        "o": [
+            "Event monitoring daemon executing rules when system events occur",
+            "Electronic mail daemon for handling email on macOS systems now",
+            "Emergency monitoring for system health alerts on Mac systems here",
+            "Encryption management daemon for FileVault operations on Mac only"
+        ]
+    },
+    {
+        "q": "Where are emond rules located?",
+        "o": [
+            "In /etc/emond.d/rules directory on macOS for event monitoring",
+            "Found in /Library/Event Monitor/Rules on macOS systems now here",
+            "Located in ~/Library/emond/rules for user specific event rules",
+            "Event rules in /System/Library/emond protected by SIP on Mac"
+        ]
+    },
+    {
+        "q": "What is XPC service abuse on macOS?",
+        "o": [
+            "Exploiting XPC service vulnerabilities for privilege escalation",
+            "XPC service for cross process communication abuse on Mac systems",
+            "Extreme process control for managing privileged services on macOS",
+            "XPC configuration abuse for service denial on macOS systems here"
+        ]
+    },
+    {
+        "q": "What is XPC on macOS?",
+        "o": [
+            "Inter-process communication mechanism for services and applications",
+            "Extended process control for managing application lifecycle on Mac",
+            "X protocol communication for remote display on macOS systems now",
+            "Exceptional process coordination for multi-threaded apps on Mac"
+        ]
+    },
+    {
+        "q": "What is launchctl command?",
+        "o": [
+            "Interface for interacting with launchd to manage services on Mac",
+            "Launch control command for starting applications from Dock on Mac",
+            "Control command for managing launch agent configurations on macOS",
+            "Launch catalogue for listing available applications on system now"
+        ]
+    },
+    {
+        "q": "How can running launch jobs be listed?",
+        "o": [
+            "Using launchctl list command to show all loaded launch jobs now",
+            "Running ps aux to show all launch daemons and agents on system",
+            "Checking Activity Monitor for running launch jobs on Mac system",
+            "Using top command to display launch job status on macOS here"
+        ]
+    },
+    {
+        "q": "What is StartCalendarInterval in launchd?",
+        "o": [
+            "Key for scheduling job execution at specific calendar intervals",
+            "Calendar integration for launch agent notification on Mac system",
+            "Start interval for calendar synchronization services on macOS now",
+            "Calendar interval for periodic backup scheduling only on Mac here"
+        ]
+    },
+    {
+        "q": "What is WatchPaths in launchd?",
+        "o": [
+            "Key for triggering job when specified file paths are modified",
+            "Watch path for monitoring file system changes on macOS system now",
+            "Path watching service for security monitoring on Mac systems here",
+            "Watched paths for Time Machine backup selection on macOS only"
+        ]
+    },
+    {
+        "q": "What is QueueDirectories in launchd?",
+        "o": [
+            "Key for triggering job when files appear in specified directories",
+            "Queue management for processing directories on macOS systems now",
+            "Directory queue for organizing file downloads on Mac system here",
+            "Queue directory for print job management on macOS systems only"
+        ]
+    },
+    {
+        "q": "What is KeepAlive in launchd?",
+        "o": [
+            "Key for automatically restarting job if it exits or crashes now",
+            "Keep alive setting for preventing system sleep on Mac systems here",
+            "Alive status monitoring for service health checks on macOS now",
+            "Keep alive for maintaining network connection on Mac system only"
+        ]
+    },
+    {
+        "q": "What is RunAtLoad in launchd?",
+        "o": [
+            "Key causing job to start immediately when plist is loaded now",
+            "Run configuration for loading applications at login on Mac system",
+            "At load running for measuring load time of services on macOS here",
+            "Load running setting for startup performance on Mac systems only"
+        ]
+    },
+    {
+        "q": "What is MachServices in launchd?",
+        "o": [
+            "Key registering Mach service ports for inter-process communication",
+            "Mach service configuration for kernel extension on macOS systems",
+            "Machine services for hardware management on Mac systems now here",
+            "Mach kernel services for memory management on macOS system only"
+        ]
+    },
+    {
+        "q": "What is ProgramArguments in launchd?",
+        "o": [
+            "Key specifying command and arguments for job to execute on load",
+            "Program argument parsing configuration for applications on macOS",
+            "Argument program for processing command line input on Mac system",
+            "Program configuration for defining application behavior on macOS"
+        ]
+    },
+    {
+        "q": "What is UserName in launchd daemon?",
+        "o": [
+            "Key specifying user context for daemon to run under on macOS now",
+            "Username storage for daemon authentication on Mac systems here",
+            "User name display for showing daemon owner in Activity Monitor",
+            "Name configuration for daemon identification on macOS system only"
+        ]
+    },
+    {
+        "q": "What is GroupName in launchd daemon?",
+        "o": [
+            "Key specifying group context for daemon to run under on macOS now",
+            "Group name for organizing daemons by category on Mac systems here",
+            "Group configuration for daemon access control on macOS system now",
+            "Name group for labeling related daemons on Mac systems only here"
+        ]
+    },
+    {
+        "q": "What is RootDirectory in launchd?",
+        "o": [
+            "Key specifying chroot directory for daemon execution environment",
+            "Root directory setting for daemon file access on macOS systems now",
+            "Directory configuration for root owned daemons on Mac system here",
+            "Root folder setting for daemon data storage on macOS system only"
+        ]
+    },
+    {
+        "q": "What is WorkingDirectory in launchd?",
+        "o": [
+            "Key specifying working directory for job execution on macOS now",
+            "Working folder configuration for daemon file operations on Mac here",
+            "Directory for storing daemon temporary files on macOS systems now",
+            "Work directory setting for daemon process management on Mac only"
+        ]
+    },
+    {
+        "q": "What is EnvironmentVariables in launchd?",
+        "o": [
+            "Key for setting environment variables for job execution context",
+            "Environment configuration for daemon runtime on macOS systems now",
+            "Variable storage for daemon configuration on Mac systems here only",
+            "Environment settings for daemon startup on macOS system now here"
+        ]
+    },
+    {
+        "q": "What is StandardOutPath in launchd?",
+        "o": [
+            "Key specifying file path for job stdout redirection on macOS now",
+            "Standard output configuration for daemon logging on Mac systems",
+            "Output path for daemon console messages on macOS system here only",
+            "Standard configuration for daemon output display on Mac systems"
+        ]
+    },
+    {
+        "q": "What is StandardErrorPath in launchd?",
+        "o": [
+            "Key specifying file path for job stderr redirection on macOS now",
+            "Standard error configuration for daemon error logging on Mac here",
+            "Error path for daemon crash logs on macOS systems only here now",
+            "Standard configuration for daemon error display on Mac systems"
+        ]
+    },
+    {
+        "q": "What is osqueryi on macOS?",
+        "o": [
+            "Interactive osquery shell for querying system state using SQL",
+            "OS query interface for searching operating system files on Mac",
+            "Query input tool for searching spotlight index on macOS systems",
+            "Operating system query for hardware diagnostics on Mac systems"
+        ]
+    },
+    {
+        "q": "Can osquery detect LaunchAgent persistence?",
+        "o": [
+            "Yes using launchd table to query all registered launch jobs now",
+            "Osquery cannot access launchd data due to SIP on macOS systems",
+            "Only Apple tools can detect LaunchAgent persistence on Mac here",
+            "Launch agent detection requires kernel extension on macOS now"
+        ]
+    },
+    {
+        "q": "What is BlockBlock on macOS?",
+        "o": [
+            "Security tool monitoring persistence mechanisms for malware detection",
+            "Block list tool for blocking network connections on macOS systems",
+            "Blocking utility for preventing application execution on Mac now",
+            "Block device tool for managing external storage on Mac system"
+        ]
+    },
+    {
+        "q": "What is KnockKnock on macOS?",
+        "o": [
+            "Objective-See tool scanning for persistence mechanisms on macOS",
+            "Network discovery tool for finding devices on local network here",
+            "Knock detection for monitoring door lock on HomeKit enabled Mac",
+            "Knocking pattern tool for port knocking firewall on Mac systems"
+        ]
+    },
+    {
+        "q": "What is Objective-See?",
+        "o": [
+            "Collection of free macOS security tools created by Patrick Wardle",
+            "Objective programming framework for macOS application development",
+            "Mac security company creating enterprise security products only now",
+            "Apple internal security team for reviewing macOS vulnerabilities"
+        ]
+    },
+    {
+        "q": "What is LuLu on macOS?",
+        "o": [
+            "Free open source firewall monitoring outbound network connections",
+            "Luna logging utility for tracking user activity on Mac systems now",
+            "Lock utility for securing screen with custom lock screen on macOS",
+            "Location lookup for tracking device position on Mac systems here"
+        ]
+    },
+    {
+        "q": "What is RansomWhere on macOS?",
+        "o": [
+            "Utility detecting ransomware by monitoring file encryption behavior",
+            "Ransomware removal tool for cleaning infected Mac systems now here",
+            "Location tracking for finding ransomware source on network on Mac",
+            "Ransom payment utility for decrypting files on macOS systems only"
+        ]
+    },
+    {
+        "q": "What is OverSight on macOS?",
+        "o": [
+            "Tool monitoring microphone and camera access on Mac systems now",
+            "Oversight management for tracking administrator activity on macOS",
+            "Over the shoulder security monitoring for physical intrusion alert",
+            "Sight over utility for remote monitoring of Mac screen content"
+        ]
+    },
+    {
+        "q": "What is TaskExplorer on macOS?",
+        "o": [
+            "Utility showing detailed process and code signing information on Mac",
+            "Task exploration for discovering background process on Mac systems",
+            "Explorer task for finding hidden files on macOS file system now",
+            "Task manager replacement for Activity Monitor on macOS systems"
+        ]
+    },
+    {
+        "q": "What is ProcInfo on macOS?",
+        "o": [
+            "Library for process monitoring and creation tracking on macOS now",
+            "Process information display similar to top command on Mac systems",
+            "Info proc utility for getting detailed process metrics on macOS",
+            "Procedure information for debugging applications on Mac system"
+        ]
+    },
+    {
+        "q": "What is FileMonitor on macOS?",
+        "o": [
+            "Objective-See tool monitoring file system events on macOS systems",
+            "File monitoring service built into macOS for security scanning now",
+            "Monitor file utility for tracking file access on Mac system here",
+            "File system monitor for detecting disk corruption on macOS only"
+        ]
+    },
+    {
+        "q": "What is ProcessMonitor on macOS?",
+        "o": [
+            "Objective-See tool monitoring process lifecycle events on macOS",
+            "Process monitoring service built into Activity Monitor on Mac now",
+            "Monitor process utility for tracking CPU usage on macOS systems",
+            "Process tracker for debugging application problems on Mac here"
+        ]
+    },
+    {
+        "q": "What is Crescendo on macOS?",
+        "o": [
+            "Swift based real-time event viewer for Endpoint Security API events",
+            "Music application for crescendo audio effects on Mac systems now",
+            "Crescendo scaling tool for adjusting display resolution on macOS",
+            "Audio monitoring for detecting sound based attacks on Mac here"
+        ]
+    },
+    {
+        "q": "What is Santa on macOS?",
+        "o": [
+            "Google binary authorization system for macOS enterprise control",
+            "Santa Claus themed screensaver application for Mac during holiday",
+            "Santoku security alliance for macOS threat intelligence sharing",
+            "Santa configuration for managing parental controls on Mac now"
+        ]
+    },
+    {
+        "q": "What is binary whitelisting on macOS?",
+        "o": [
+            "Allowing only approved binaries to execute while blocking others",
+            "White list for binary file associations on macOS file system now",
+            "Listing binary files in white color for visibility on Mac desktop",
+            "Binary approval for App Store applications only on macOS system"
+        ]
+    },
+    {
+        "q": "What is CVE-2020-9839 (SIP bypass)?",
+        "o": [
+            "Vulnerability allowing SIP bypass through IOKit exploitation now",
+            "SIP configuration vulnerability exposing system settings on macOS",
+            "Software integration protocol bypass for network attacks on Mac",
+            "System image processing bypass for graphics exploitation here"
+        ]
+    },
+    {
+        "q": "What is CVE-2020-9771 (TCC bypass)?",
+        "o": [
+            "Vulnerability allowing TCC bypass via legacy bundle technique now",
+            "Terminal command controller bypass through shell injection here",
+            "TCC configuration corruption causing permission reset on macOS",
+            "Privacy bypass requiring physical access to Mac computer only"
+        ]
+    },
+    {
+        "q": "What is CVE-2021-1784 (SIP bypass)?",
+        "o": [
+            "Mount root snapshot vulnerability allowing system file modification",
+            "System image processing bypass for kernel exploitation on macOS",
+            "SIP bypass through software installation protocol on Mac systems",
+            "Root permission bypass through mounting external volume on Mac"
+        ]
+    },
+    {
+        "q": "What is CVE-2021-30892 (Shrootless)?",
+        "o": [
+            "SIP bypass vulnerability through system installer exploitation now",
+            "Rootless system bypass for gaining root access on macOS systems",
+            "Shroud rootless attack for hiding root activity on Mac system",
+            "Root shell vulnerability causing shell execution on macOS here"
+        ]
+    },
+    {
+        "q": "What is Migraine vulnerability (CVE-2023-32369)?",
+        "o": [
+            "SIP bypass through Migration Assistant exploitation on macOS now",
+            "Memory grain vulnerability causing kernel panic on Mac systems",
+            "Migraine attack causing system slowdown on macOS computers here",
+            "Migration vulnerability exposing data during Time Machine backup"
+        ]
+    },
+    {
+        "q": "What is powerdir vulnerability (CVE-2021-30970)?",
+        "o": [
+            "TCC bypass through power management directory manipulation now",
+            "Power directory vulnerability exposing battery data on Mac here",
+            "Directory power attack for gaining elevated permissions on macOS",
+            "Power saving directory vulnerability affecting sleep mode on Mac"
+        ]
+    },
+    {
+        "q": "What is Finder TCC bypass technique?",
+        "o": [
+            "Exploiting Finder permissions to access protected directories now",
+            "TCC bypass through Finder configuration modification on macOS here",
+            "Finder terminal command controller bypass for shell on Mac system",
+            "Technique for finding TCC bypass vulnerabilities on Mac systems"
+        ]
+    },
+    {
+        "q": "What is terminal.app TCC bypass?",
+        "o": [
+            "Exploiting Terminal FDA permission for broad file access on Mac",
+            "Terminal command controller bypass for accessing shell on macOS",
+            "Bypass for terminal restrictions on accessing protected files now",
+            "Terminal application bypass for executing unsigned code on Mac"
+        ]
+    },
+    {
+        "q": "What is mount command privilege escalation?",
+        "o": [
+            "Exploiting mount to access files on other APFS volumes on system",
+            "Mount command for elevating privileges to root on macOS systems",
+            "Privilege escalation through mounting root filesystem on Mac now",
+            "Mount volume attack for gaining write access to system files here"
+        ]
+    },
+    {
+        "q": "What is Time Machine backup exploitation?",
+        "o": [
+            "Accessing protected files from backup snapshots on macOS systems",
+            "Time Machine vulnerability exposing encrypted backup contents now",
+            "Exploitation through Time Machine network share on Mac system here",
+            "Backup exploitation requiring physical access to backup drive only"
+        ]
+    },
+    {
+        "q": "What is Recovery Mode abuse on macOS?",
+        "o": [
+            "Using Recovery Mode to bypass security and modify protected files",
+            "Recovery mode abuse for factory resetting Mac without password",
+            "Abuse for recovering deleted files from Time Machine backup now",
+            "Recovery attack for accessing encrypted data on FileVault Mac"
+        ]
+    },
+    {
+        "q": "What is Target Disk Mode abuse?",
+        "o": [
+            "Accessing disk contents by booting Mac as external drive target",
+            "Target disk for mounting encrypted volumes without password now",
+            "Disk targeting for remote access to Mac storage over network here",
+            "Target mode for cloning disk content to another Mac system only"
+        ]
+    },
+    {
+        "q": "What is Single User Mode on older macOS?",
+        "o": [
+            "Boot mode providing root shell without authentication on old Mac",
+            "Single user configuration for personal use on macOS systems now",
+            "User mode for single application execution on Mac desktop here",
+            "Single access mode for restricting Mac to one user account only"
+        ]
+    },
+    {
+        "q": "What replaced Single User Mode on modern macOS?",
+        "o": [
+            "Removed and replaced with recoveryOS for security improvements",
+            "Single user mode still available but requires password on Mac now",
+            "Replaced with Safe Mode for troubleshooting on modern macOS here",
+            "Replaced with verbose mode for detailed boot logging on Mac only"
+        ]
+    },
+    {
+        "q": "What is nvram command on macOS?",
+        "o": [
+            "Command for reading and modifying NVRAM firmware variables on Mac",
+            "Non-volatile RAM display for hardware diagnostics on Mac systems",
+            "Network VRAM for video memory management over network on macOS",
+            "New VRAM utility for graphics card configuration on Mac systems"
+        ]
+    },
+    {
+        "q": "What is csrutil authenticated-root?",
+        "o": [
+            "SIP feature verifying cryptographic hash of system volume on boot",
+            "Authentication root for certificate signing on macOS systems now",
+            "CSR utility for generating authenticated certificates on Mac here",
+            "Root authentication for sudo command on macOS systems only now"
+        ]
+    },
+    {
+        "q": "What is bputil command on Apple Silicon?",
+        "o": [
+            "Boot policy utility for managing secure boot on Apple Silicon Mac",
+            "Boot partition utility for managing disk partitions on Mac now here",
+            "Binary policy utility for application whitelisting on macOS system",
+            "Boot process utility for measuring startup time on Mac systems"
+        ]
+    },
+    {
+        "q": "What is Secure Enclave on Mac?",
+        "o": [
+            "Hardware security module storing encryption keys and Touch ID data",
+            "Secure memory enclave for protecting application data on macOS",
+            "Enclave for secure network communication on Mac systems now here",
+            "Encrypted storage enclave for FileVault key protection on Mac"
+        ]
+    },
+    {
+        "q": "What is Secure Enclave Processor (SEP)?",
+        "o": [
+            "Dedicated security coprocessor handling encryption operations on Mac",
+            "Security encryption processor for network traffic on macOS now",
+            "SEP for processing secure boot validation on Mac computer here",
+            "Processor for encoding secure video on Apple devices with video"
+        ]
+    },
+    {
+        "q": "What protects Secure Enclave keys?",
+        "o": [
+            "Hardware isolation preventing software access to stored keys now",
+            "Secure enclave password protecting all stored keys on Mac here",
+            "SIP protection extending to Secure Enclave on macOS systems only",
+            "FileVault encryption protecting Secure Enclave contents on Mac"
+        ]
+    },
+    {
+        "q": "What is DMA attack on Mac?",
+        "o": [
+            "Using Thunderbolt or PCIe device for direct memory access attack",
+            "Data manipulation attack for modifying files on Mac system now",
+            "Direct memory allocation for overloading RAM on macOS systems",
+            "Disk management attack for corrupting APFS on Mac computers"
+        ]
+    },
+    {
+        "q": "What is Thunderbolt security on modern Mac?",
+        "o": [
+            "IOMMU protection preventing DMA attacks from Thunderbolt devices",
+            "Thunderbolt encryption for secure data transfer on Mac systems",
+            "Security certificate for Thunderbolt device authentication on Mac",
+            "Thunderbolt firewall for blocking malicious device connection now"
+        ]
+    },
+    {
+        "q": "What is kernel extension loading on Apple Silicon?",
+        "o": [
+            "Requires reduced security mode and explicit user approval now",
+            "Kernel extensions load automatically on Apple Silicon Mac systems",
+            "Kext loading disabled permanently on Apple Silicon computers here",
+            "Only Apple signed kexts can load on Apple Silicon Mac systems"
+        ]
+    },
+    {
+        "q": "What is com.apple.private.tcc.allow entitlement?",
+        "o": [
+            "Private entitlement granting TCC access without user approval",
+            "TCC allowance entitlement for App Store applications only now here",
+            "Private entitlement for accessing iCloud data on macOS systems",
+            "Apple private entitlement for accessing Keychain items on Mac"
+        ]
+    },
+    {
+        "q": "What is com.apple.rootless.install.heritable?",
+        "o": [
+            "SIP entitlement inherited by child processes for system access",
+            "Rootless installation for installing packages without root on Mac",
+            "Heritable root for preserving root access across processes here",
+            "Install entitlement for system preference installation on macOS"
+        ]
+    },
+    {
+        "q": "What is com.apple.security.cs.allow-dyld-environment-variables?",
+        "o": [
+            "Entitlement allowing DYLD environment variables for process now",
+            "Dynamic library security for code signing on macOS systems here",
+            "Allow environment configuration for dyld debugging on Mac only",
+            "Security entitlement for allowing unsigned dylib loading on Mac"
+        ]
+    },
+    {
+        "q": "What is com.apple.security.cs.disable-library-validation?",
+        "o": [
+            "Entitlement allowing loading of unsigned or differently signed dylibs",
+            "Library validation disable for debugging on macOS development now",
+            "Disable validation for speeding up library loading on Mac here",
+            "Security entitlement for disabling SIP for library operations"
+        ]
+    },
+    {
+        "q": "What is com.apple.security.get-task-allow?",
+        "o": [
+            "Entitlement permitting debugger attachment to process on macOS",
+            "Task allowance for running background processes on Mac system now",
+            "Get task entitlement for accessing process information on macOS",
+            "Security entitlement for getting task manager access on Mac here"
+        ]
+    },
+    {
+        "q": "What is codesign -d --entitlements command?",
+        "o": [
+            "Command displaying embedded entitlements in signed binary on Mac",
+            "Code signature display for viewing certificate information now",
+            "Entitlement download command for getting entitlements from Apple",
+            "Designate entitlements for assigning permissions to binary here"
+        ]
+    },
+    {
+        "q": "What is jtool2 on macOS?",
+        "o": [
+            "Tool for analyzing Mach-O binaries and entitlements on macOS now",
+            "Java tool for cross platform development on Mac systems here only",
+            "Jump tool for navigating between code sections in binaries on Mac",
+            "Json tool for parsing JSON configuration files on macOS systems"
+        ]
+    },
+    {
+        "q": "What is process hollowing on macOS?",
+        "o": [
+            "Replacing process memory with malicious code while maintaining PID",
+            "Hollowing process priority for performance optimization on Mac",
+            "Process emptying for freeing memory on macOS systems now here",
+            "Hollow process creation for stealth execution on Mac system only"
+        ]
+    },
+    {
+        "q": "What is dyld_shared_cache exploitation?",
+        "o": [
+            "Exploiting shared library cache for code execution on macOS now",
+            "Shared cache exploitation for improving load time on Mac system",
+            "Dynamic library sharing for distributing malware on macOS here",
+            "Cache exploitation for accessing cached credentials on Mac only"
+        ]
+    },
+    {
+        "q": "Where is dyld_shared_cache located?",
+        "o": [
+            "Found in /System/Library/dyld directory on macOS systems now",
+            "Located in /Library/Caches/dyld for shared library caching here",
+            "Stored in ~/Library/Caches/dyld for user library cache on Mac",
+            "Dynamic cache in /var/cache/dyld for temporary library storage"
+        ]
+    },
+    {
+        "q": "What is IOKit exploitation on macOS?",
+        "o": [
+            "Exploiting device driver vulnerabilities for kernel code execution",
+            "IOKit configuration for input output device management on Mac now",
+            "Kit exploitation for accessing hardware peripherals on macOS here",
+            "Input output attack for manipulating device data on Mac systems"
+        ]
+    },
+    {
+        "q": "What is IOKit user client abuse?",
+        "o": [
+            "Exploiting IOKit interfaces accessible from user space on macOS",
+            "User client configuration for IOKit device access on Mac system",
+            "Client abuse for overloading IOKit service on macOS systems here",
+            "User abuse for accessing IOKit kernel data from user space only"
+        ]
+    },
+    {
+        "q": "What is kernel slide on macOS?",
+        "o": [
+            "Random offset applied to kernel base address for ASLR protection",
+            "Kernel presentation slide for macOS architecture overview on Mac",
+            "Slide kernel for smooth scrolling in kernel panics on Mac system",
+            "Kernel sliding for moving kernel between memory regions on macOS"
+        ]
+    },
+    {
+        "q": "What is KASLR on macOS?",
+        "o": [
+            "Kernel Address Space Layout Randomization for exploit mitigation",
+            "Kernel address storage layout for memory management on Mac now",
+            "KASLR for kernel automatic software loading on macOS systems here",
+            "Kernel ASL router for kernel network communication on Mac only"
+        ]
+    },
+    {
+        "q": "How can kernel slide be leaked?",
+        "o": [
+            "Through information disclosure vulnerabilities in kernel interfaces",
+            "Kernel slide is fixed and cannot be leaked on macOS systems now",
+            "Slide leaking through memory dumps in crash reports on Mac here",
+            "Leaking requires physical access to read kernel memory on macOS"
+        ]
+    },
+    {
+        "q": "What is PAC (Pointer Authentication) on Apple Silicon?",
+        "o": [
+            "ARM security feature signing pointers to prevent code reuse attacks",
+            "Packet authentication code for network security on Mac systems",
+            "Privilege access control for managing user permissions on macOS",
+            "Program authentication certificate for code signing on Mac here"
+        ]
+    },
+    {
+        "q": "What is PPL (Page Protection Layer)?",
+        "o": [
+            "Kernel security feature protecting page tables on Apple Silicon",
+            "Page protection for FileVault encrypted volumes on Mac systems",
+            "Protection layer for preserving page layout on macOS printing",
+            "Page permission list for managing memory access on Mac system"
+        ]
+    },
+    {
+        "q": "What is KTRR (Kernel Text Read-only Region)?",
+        "o": [
+            "Hardware protection making kernel code read-only on Apple devices",
+            "Kernel text reader for displaying kernel logs on macOS systems",
+            "Text region protection for kernel debugging on Mac system here",
+            "Kernel transfer region for moving code between zones on macOS"
+        ]
+    },
+    {
+        "q": "What is kernel integrity protection on macOS?",
+        "o": [
+            "Hardware and software protections preventing kernel code modification",
+            "Integrity checking for kernel configuration on macOS systems now",
+            "Protection service for monitoring kernel health on Mac computer",
+            "Kernel integrity for verifying kernel hash on boot on Mac only"
+        ]
+    },
+    {
+        "q": "What is IOKit registry?",
+        "o": [
+            "Database of connected devices and drivers on macOS system now",
+            "Registry for IOKit configuration settings on Mac systems here",
+            "Device registration for IOKit driver installation on macOS only",
+            "IOKit registry for tracking IOKit service versions on Mac now"
+        ]
+    },
+    {
+        "q": "What is ioreg command on macOS?",
+        "o": [
+            "Command for viewing IOKit registry entries on macOS systems now",
+            "IO register command for managing hardware registers on Mac here",
+            "Registry command for Windows style registry on macOS systems",
+            "Regular expression command for IOKit pattern matching on Mac"
+        ]
+    },
+    {
+        "q": "What is IORegistryExplorer?",
+        "o": [
+            "Apple utility for browsing IOKit registry hierarchy on macOS now",
+            "Explorer for IO registration in disk management on Mac systems",
+            "Registry explorer for viewing configuration on macOS system here",
+            "IOKit exploration tool for hardware diagnostics on Mac systems"
+        ]
+    },
+    {
+        "q": "What is XPC_FLAGS_SETUID?",
+        "o": [
+            "XPC configuration allowing service to run with elevated privileges",
+            "Flag for setting user ID in XPC configuration on macOS systems",
+            "XPC flags for secure user identification on Mac system now here",
+            "Setuid flag for XPC service debugging on macOS system only now"
+        ]
+    },
+    {
+        "q": "What is launchd JetsamProperties?",
+        "o": [
+            "Configuration for memory pressure handling of launch jobs on Mac",
+            "Jetsam properties for removing unused launch jobs on macOS now",
+            "Properties for jet stream networking in launchd on Mac systems",
+            "Launch job property for managing startup priority on Mac here"
+        ]
+    },
+    {
+        "q": "What is com.apple.machports.third-party-app entitlement?",
+        "o": [
+            "Entitlement needed for Mach port communication with system services",
+            "Third party application entitlement for App Store apps on Mac now",
+            "Mach port security entitlement for kernel communication on macOS",
+            "Application entitlement for accessing third party services on Mac"
+        ]
+    },
+    {
+        "q": "What is Safari extension abuse on macOS?",
+        "o": [
+            "Using Safari extension permissions for data exfiltration or persistence",
+            "Extension abuse for modifying Safari settings on macOS systems now",
+            "Safari extension for accessing browser history on Mac system here",
+            "Abuse for installing malicious Safari themes on Mac systems only"
+        ]
+    },
+    {
+        "q": "What is kernel panic log location on macOS?",
+        "o": [
+            "Panic logs stored in /Library/Logs/DiagnosticReports on Mac now",
+            "Kernel panic logged in /var/log/kernel.panic on macOS systems here",
+            "Found in ~/Library/Logs/KernelPanic for user accessible logs only",
+            "Stored in /System/Library/Logs/Panic protected by SIP on Mac"
+        ]
+    },
+    {
+        "q": "What is unified logging on macOS?",
+        "o": [
+            "Centralized logging system replacing syslog on modern macOS now",
+            "Unified log for combining all application logs on Mac systems here",
+            "Logging unification for merging system and user logs on macOS",
+            "Unified logging service for log collection on Mac system only"
+        ]
+    },
+    {
+        "q": "What is log command on macOS?",
+        "o": [
+            "Command for querying and streaming unified log entries on Mac now",
+            "Log command for displaying console output on macOS systems here",
+            "Logging command for writing log entries on Mac system only now",
+            "Log utility for managing log file rotation on macOS systems"
+        ]
+    },
+    {
+        "q": "What is log show --predicate command?",
+        "o": [
+            "Filtering log entries using predicate expressions on macOS now",
+            "Show log prediction for anticipated log entries on Mac systems",
+            "Predicate logging for showing predicted events on macOS here",
+            "Log prediction for showing future log entries on Mac only now"
+        ]
+    },
+    {
+        "q": "What is Console.app on macOS?",
+        "o": [
+            "Application for viewing system logs and diagnostic reports on Mac",
+            "Console terminal for command line access on macOS systems now",
+            "App console for debugging application issues on Mac system here",
+            "Console gaming application for Mac gaming platform on macOS"
+        ]
+    },
+    {
+        "q": "What is ASL (Apple System Log)?",
+        "o": [
+            "Legacy logging system replaced by unified logging on modern macOS",
+            "Apple security log for tracking security events on Mac system now",
+            "System logging for application debugging on macOS systems here",
+            "ASL for advanced system logging on Apple servers only on Mac"
+        ]
+    },
+    {
+        "q": "What is /var/folders exploitation?",
+        "o": [
+            "Abusing temporary directories for persistence or data access on Mac",
+            "Var folders for variable storage on macOS file system now here only",
+            "Folder variable exploitation for hiding malware on Mac systems",
+            "Exploitation of folder permissions for privilege escalation on Mac"
+        ]
+    },
+    {
+        "q": "What is Safari plist manipulation?",
+        "o": [
+            "Modifying Safari preferences for persistence or settings change now",
+            "Safari property list for configuring browser on macOS systems here",
+            "Plist manipulation for injecting code into Safari on Mac system",
+            "Safari configuration modification for homepage hijacking on Mac"
+        ]
+    },
+    {
+        "q": "What is AppleScript Folder Actions?",
+        "o": [
+            "Scripts triggered when items added to monitored folders on macOS",
+            "Folder actions for organizing files in Finder on Mac system now",
+            "AppleScript for automating folder creation on macOS desktop here",
+            "Action scripts for folder modification alerts on Mac system only"
+        ]
+    },
+    {
+        "q": "How can Folder Actions be abused for persistence?",
+        "o": [
+            "Attaching malicious script to folder triggered on file addition now",
+            "Folder action abuse requires modification of SIP protected folders",
+            "Actions are validated preventing malicious script attachment here",
+            "Folder actions only run for Apple signed scripts on macOS now"
+        ]
+    },
+    {
+        "q": "What is iCloud keychain exploitation?",
+        "o": [
+            "Extracting credentials from iCloud synced keychain items on Mac now",
+            "iCloud keychain encryption preventing any extraction on Mac here",
+            "Keychain exploitation requiring iCloud password for access on Mac",
+            "Exploitation of iCloud backup for accessing keychain on macOS"
+        ]
+    },
+    {
+        "q": "What is local iCloud data location?",
+        "o": [
+            "Stored in ~/Library/Mobile Documents and CloudKit containers now",
+            "iCloud data in /System/Library/iCloud protected by SIP on Mac here",
+            "Found in /Library/iCloud for system wide iCloud data on macOS",
+            "Located in /var/icloud for variable iCloud storage on Mac only"
+        ]
+    },
+    {
+        "q": "What is Notes database location on macOS?",
+        "o": [
+            "SQLite database in ~/Library/Group Containers for Notes app data",
+            "Notes stored in ~/Documents/Notes as plain text files on Mac now",
+            "Found in /Library/Notes for system notes on macOS systems here",
+            "Located in iCloud only with no local storage on Mac system now"
+        ]
+    },
+    {
+        "q": "What is Messages database exploitation?",
+        "o": [
+            "Accessing chat history from chat.db database on macOS systems now",
+            "Messages encryption preventing database access on Mac computers",
+            "Database exploitation requiring Messages app password on macOS",
+            "Exploitation of Messages backup for accessing chat history here"
+        ]
+    },
+    {
+        "q": "Where is Messages database located?",
+        "o": [
+            "Found in ~/Library/Messages/chat.db on macOS systems now here",
+            "Located in /Library/Messages for system messages on Mac system",
+            "Stored in iCloud only with no local database on Mac desktop now",
+            "Messages in ~/Documents/Messages as exported files only on Mac"
+        ]
+    },
+    {
+        "q": "What is Contacts database location?",
+        "o": [
+            "SQLite database in ~/Library/Application Support/AddressBook now",
+            "Contacts stored in /Library/Contacts for all users on Mac here",
+            "Found in ~/Documents/Contacts as vCard files on macOS systems",
+            "Located in iCloud only with no local storage on Mac system now"
+        ]
+    },
+    {
+        "q": "What is Calendar database location?",
+        "o": [
+            "SQLite databases in ~/Library/Calendars directory on macOS now",
+            "Calendar stored in /Library/Calendar for system access on Mac here",
+            "Found in ~/Documents/Calendar as iCal files on macOS systems",
+            "Located in iCloud only with no local storage on Mac system only"
+        ]
+    },
+    {
+        "q": "What is Safari history database location?",
+        "o": [
+            "Found in ~/Library/Safari/History.db on macOS systems now here",
+            "Safari history in /Library/Safari for all users on Mac system",
+            "Located in ~/Documents/Safari as exported HTML on Mac only now",
+            "History stored in iCloud only with no local storage on Mac now"
+        ]
+    },
+    {
+        "q": "What is Cookies.binarycookies on macOS?",
+        "o": [
+            "Binary cookie storage format used by Safari and other apps on Mac",
+            "Cookie text file for storing HTTP cookies on macOS systems now",
+            "Binary cooking recipe application for Mac kitchen management here",
+            "Cookie binary for encrypted cookie storage on macOS system only"
+        ]
+    },
+    {
+        "q": "What is sfl2 file format on macOS?",
+        "o": [
+            "Shared File List version 2 storing recent items and favorites now",
+            "Secure file lock format for protecting files on macOS systems here",
+            "Second file list for backup file organization on Mac system only",
+            "Spotlight file list for indexed files on macOS search system"
+        ]
+    },
+    {
+        "q": "What is com.apple.loginitems.plist?",
+        "o": [
+            "Plist storing Login Items configuration for user session on macOS",
+            "Login item initialization list for system services on Mac now here",
+            "Items list for login screen customization on macOS systems only",
+            "Login configuration for password requirements on Mac system now"
+        ]
+    },
+    {
+        "q": "What is SSH key theft on macOS?",
+        "o": [
+            "Extracting private SSH keys from ~/.ssh directory for impersonation",
+            "SSH key theft prevented by keychain encryption on Mac systems now",
+            "Key theft requiring SSH password for decryption on macOS systems",
+            "SSH theft from encrypted key storage on Mac requiring password"
+        ]
+    },
+    {
+        "q": "What is AWS credential theft on macOS?",
+        "o": [
+            "Extracting credentials from ~/.aws/credentials file on Mac system",
+            "AWS credentials encrypted and unavailable on macOS systems now here",
+            "Credential theft requiring AWS two-factor on macOS systems only",
+            "AWS theft from encrypted credential storage requiring password"
+        ]
+    },
+    {
+        "q": "What is kubeconfig theft on macOS?",
+        "o": [
+            "Extracting Kubernetes credentials from ~/.kube/config on Mac now",
+            "Kubeconfig encrypted preventing theft on macOS systems here only",
+            "Config theft requiring kubernetes password on Mac systems now",
+            "Kube credential theft from encrypted storage on Mac requires auth"
+        ]
+    },
+    {
+        "q": "What is browser credential extraction on macOS?",
+        "o": [
+            "Extracting saved passwords from browser credential stores on Mac",
+            "Browser credentials encrypted with keychain on macOS systems now",
+            "Credential extraction blocked by browser security on Mac here",
+            "Browser passwords stored in secure enclave on Mac preventing theft"
+        ]
+    },
+    {
+        "q": "What is Chrome credential location on macOS?",
+        "o": [
+            "Found in ~/Library/Application Support/Google/Chrome/Login Data",
+            "Chrome credentials in Keychain protected by macOS security now",
+            "Located in /Library/Chrome for system Chrome installation on Mac",
+            "Chrome passwords in ~/Documents/Chrome as exported file only"
+        ]
+    },
+    {
+        "q": "What is Firefox credential location on macOS?",
+        "o": [
+            "Found in ~/Library/Application Support/Firefox/Profiles with logins",
+            "Firefox credentials in Keychain protected by macOS security now",
+            "Located in /Library/Firefox for system Firefox on Mac system",
+            "Firefox passwords in ~/Documents/Firefox as exported file only"
+        ]
+    },
+    {
+        "q": "What is .CFUserTextEncoding file?",
+        "o": [
+            "File storing user text encoding preferences in home directory now",
+            "Core Foundation text encryption file for secure storage on Mac",
+            "User encoding configuration for terminal text display on macOS",
+            "Text encoding certificate for international text on Mac system"
+        ]
+    },
+    {
+        "q": "What is /etc/kcpassword file?",
+        "o": [
+            "Obfuscated password for automatic login on macOS systems now here",
+            "Keychain password backup for recovery on Mac systems only now",
+            "KC password encryption key for keychain on macOS systems here",
+            "Kernel configuration password for boot settings on Mac only"
+        ]
+    },
+    {
+        "q": "How is /etc/kcpassword obfuscated?",
+        "o": [
+            "XOR encoded with fixed key making it easily decodable on macOS",
+            "Encrypted with FileVault key preventing decryption without password",
+            "Hashed with PBKDF2 preventing password recovery on Mac systems",
+            "Encoded with base64 requiring key from Secure Enclave on Mac"
+        ]
+    }
+]

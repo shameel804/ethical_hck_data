@@ -1,0 +1,4511 @@
+[
+    {
+        "q": "What is the primary goal of Confidentiality in the CIA Triad?",
+        "o": [
+            "prevent unauthorized disclosure",
+            "ensure data availability",
+            "verify data integrity",
+            "monitor network traffic"
+        ]
+    },
+    {
+        "q": "Which concept ensures that data is not altered without authorization?",
+        "o": [
+            "Integrity",
+            "Availability",
+            "Confidentiality",
+            "Authentication"
+        ]
+    },
+    {
+        "q": "What does Availability within the CIA Triad guarantee?",
+        "o": [
+            "reliable access to data",
+            "data encryption at rest",
+            "user identity verification",
+            "preventing data leaks"
+        ]
+    },
+    {
+        "q": "Which security principle restricts access rights to the bare minimum?",
+        "o": [
+            "Least Privilege",
+            "Separation of Duties",
+            "Defense in Depth",
+            "Security Through Obscurity"
+        ]
+    },
+    {
+        "q": "What is the main purpose of Separation of Duties?",
+        "o": [
+            "prevent single-person fraud",
+            "increase system speed",
+            "simplify user access",
+            "reduce backup costs"
+        ]
+    },
+    {
+        "q": "Which model enforces policies based on security labels?",
+        "o": [
+            "Mandatory Access Control",
+            "Discretionary Access Control",
+            "Role-Based Access Control",
+            "Rule-Based Access Control"
+        ]
+    },
+    {
+        "q": "In Defense in Depth, what is the benefit of layered security?",
+        "o": [
+            "redundancy against failure",
+            "simplified management",
+            "lower operational cost",
+            "faster network speed"
+        ]
+    },
+    {
+        "q": "What is a core principle of Zero Trust Architecture?",
+        "o": [
+            "never trust, always verify",
+            "trust internal networks",
+            "verify only external users",
+            "trust based on location"
+        ]
+    },
+    {
+        "q": "Which term describes a weakness that can be exploited?",
+        "o": [
+            "Vulnerability",
+            "Threat",
+            "Risk",
+            "Asset"
+        ]
+    },
+    {
+        "q": "What is the likelihood of a threat exploiting a vulnerability called?",
+        "o": [
+            "Risk",
+            "Impact",
+            "Exposure",
+            "Incident"
+        ]
+    },
+    {
+        "q": "Which control type is designed to stop an attack before it happens?",
+        "o": [
+            "Preventive",
+            "Detective",
+            "Corrective",
+            "Recovery"
+        ]
+    },
+    {
+        "q": "What is the first step in the Risk Management process?",
+        "o": [
+            "Risk Identification",
+            "Risk Assessment",
+            "Risk Mitigation",
+            "Risk Monitoring"
+        ]
+    },
+    {
+        "q": "Which concept ensures a user cannot deny an action they performed?",
+        "o": [
+            "Non-repudiation",
+            "Authorization",
+            "Authentication",
+            "Accountability"
+        ]
+    },
+    {
+        "q": "What does 'Security through Obscurity' rely on?",
+        "o": [
+            "secrecy of design",
+            "strong encryption",
+            "multi-factor auth",
+            "public algorithms"
+        ]
+    },
+    {
+        "q": "Which security model is known as the 'Chinese Wall' model?",
+        "o": [
+            "Brewer and Nash",
+            "Bell-LaPadula",
+            "Biba Integrity",
+            "Clark-Wilson"
+        ]
+    },
+    {
+        "q": "What is the primary focus of the Bell-LaPadula model?",
+        "o": [
+            "Confidentiality",
+            "Integrity",
+            "Availability",
+            "Accountability"
+        ]
+    },
+    {
+        "q": "Which model focuses primarily on data integrity?",
+        "o": [
+            "Biba Model",
+            "Bell-LaPadula",
+            "Brewer-Nash",
+            "Graham-Denning"
+        ]
+    },
+    {
+        "q": "What defines the 'attack surface' of a system?",
+        "o": [
+            "sum of all potential vulnerabilities",
+            "total number of users allowed",
+            "physical size of the server room",
+            "amount of data stored on disk"
+        ]
+    },
+    {
+        "q": "Which principle suggests that security mechanisms should be simple?",
+        "o": [
+            "Economy of Mechanism",
+            "Fail-Safe Defaults",
+            "Complete Mediation",
+            "Least Common Mechanism"
+        ]
+    },
+    {
+        "q": "What is the default stance of a 'Fail-Safe' system?",
+        "o": [
+            "deny access on failure",
+            "grant access on failure",
+            "retry access on failure",
+            "log access on failure"
+        ]
+    },
+    {
+        "q": "Which concept involves checking every access request for authorization?",
+        "o": [
+            "Complete Mediation",
+            "Least Privilege",
+            "Open Design",
+            "Psychological Acceptability"
+        ]
+    },
+    {
+        "q": "What is 'Due diligence' in the context of security?",
+        "o": [
+            "prudent management investigation",
+            "implementing specific controls",
+            "mandatory government reporting",
+            "purchasing insurance policies"
+        ]
+    },
+    {
+        "q": "What does 'Due care' refer to in security practices?",
+        "o": [
+            "practicing reasonable responsibility",
+            "conducting background checks",
+            "performing risk assessment",
+            "signing legal contracts"
+        ]
+    },
+    {
+        "q": "Which is NOT a valid risk treatment strategy?",
+        "o": [
+            "Risk Ignorance",
+            "Risk Avoidance",
+            "Risk Transfer",
+            "Risk Acceptance"
+        ]
+    },
+    {
+        "q": "What is the function of a 'Data Custodian'?",
+        "o": [
+            "protects data technical aspects",
+            "determines data classification",
+            "uses data for business tasks",
+            "owns the data legally"
+        ]
+    },
+    {
+        "q": "Who is primarily responsible for deciding data classification?",
+        "o": [
+            "Data Owner",
+            "Data Custodian",
+            "System Admin",
+            "End User"
+        ]
+    },
+    {
+        "q": "What is the main goal of a Security Policy?",
+        "o": [
+            "define management's security stance",
+            "provide step-by-step procedures",
+            "configure firewall rulesets",
+            "list all employee passwords"
+        ]
+    },
+    {
+        "q": "Which document outlines specific mandatory requirements?",
+        "o": [
+            "Standard",
+            "Guideline",
+            "Procedure",
+            "Policy"
+        ]
+    },
+    {
+        "q": "What distinguishes a Procedure from a Policy?",
+        "o": [
+            "step-by-step instructions",
+            "high-level objectives",
+            "optional recommendations",
+            "legal requirements"
+        ]
+    },
+    {
+        "q": "Which is a characteristic of 'Guidelines'?",
+        "o": [
+            "recommended actions",
+            "mandatory rules",
+            "step-by-step lists",
+            "enforceable laws"
+        ]
+    },
+    {
+        "q": "What does the 'A' in STRIDE stand for?",
+        "o": [
+            "Authentication bypass",
+            "Availability loss",
+            "Access denial",
+            "Audit failure"
+        ]
+    },
+    {
+        "q": "in STRIDE, what does 'Spoofing' violate?",
+        "o": [
+            "Authentication",
+            "Integrity",
+            "Availability",
+            "Confidentiality"
+        ]
+    },
+    {
+        "q": "What security property does Tampering compromise?",
+        "o": [
+            "Integrity",
+            "Confidentiality",
+            "Availability",
+            "Non-repudiation"
+        ]
+    },
+    {
+        "q": "Repudiation threats primarily attack which security goal?",
+        "o": [
+            "Non-repudiation",
+            "Confidentiality",
+            "Availability",
+            "Authorization"
+        ]
+    },
+    {
+        "q": "Information Disclosure is a direct attack on what?",
+        "o": [
+            "Confidentiality",
+            "Integrity",
+            "Availability",
+            "Authentication"
+        ]
+    },
+    {
+        "q": "Denial of Service attacks target which CIA attribute?",
+        "o": [
+            "Availability",
+            "Integrity",
+            "Confidentiality",
+            "Accountability"
+        ]
+    },
+    {
+        "q": "Elevation of Privilege attacks targeting which aspect?",
+        "o": [
+            "Authorization",
+            "Availability",
+            "Confidentiality",
+            "Non-repudiation"
+        ]
+    },
+    {
+        "q": "What is the definition of 'Residual Risk'?",
+        "o": [
+            "risk remaining after controls",
+            "total risk before controls",
+            "risk transferred to others",
+            "risk avoided completely"
+        ]
+    },
+    {
+        "q": "Which formula represents Total Risk?",
+        "o": [
+            "Threat x Vulnerability x Asset Value",
+            "Impact + Probability",
+            "Asset Value - Control Cost",
+            "Threat / Vulnerability"
+        ]
+    },
+    {
+        "q": "What is the purpose of a Business Impact Analysis (BIA)?",
+        "o": [
+            "identify critical business functions",
+            "prevent all security incidents",
+            "calculate technical vulnerabilities",
+            "audit firewall rule sets"
+        ]
+    },
+    {
+        "q": "Which metric measures the maximum acceptable data loss?",
+        "o": [
+            "Recovery Point Objective",
+            "Recovery Time Objective",
+            "Maximum Tolerable Downtime",
+            "Mean Time To Repair"
+        ]
+    },
+    {
+        "q": "What does Recovery Time Objective (RTO) define?",
+        "o": [
+            "target time to restore service",
+            "amount of data loss allowed",
+            "time between failures",
+            "total system lifespan"
+        ]
+    },
+    {
+        "q": "Which concept best describes 'Defense in Depth'?",
+        "o": [
+            "layered security controls",
+            "single strong firewall",
+            "reliance on encryption",
+            "physical security only"
+        ]
+    },
+    {
+        "q": "What is an example of an Administrative Control?",
+        "o": [
+            "Security Awareness Training",
+            "Firewall Configuration",
+            "Biometric Door Lock",
+            "Antivirus Software"
+        ]
+    },
+    {
+        "q": "Which is an example of a Physical Control?",
+        "o": [
+            "Security Guards",
+            "Password Policy",
+            "Encryption Keys",
+            "Audit Logs"
+        ]
+    },
+    {
+        "q": "What is an example of a Technical (Logical) Control?",
+        "o": [
+            "Intrusion Detection System",
+            "Background Checks",
+            "Fences and Gates",
+            "Acceptable Use Policy"
+        ]
+    },
+    {
+        "q": "Which term describes hiding messages within other media?",
+        "o": [
+            "Steganography",
+            "Cryptography",
+            "Hashing",
+            "Obfuscation"
+        ]
+    },
+    {
+        "q": "What is the difference between encoding and encryption?",
+        "o": [
+            "encryption requires a key",
+            "encoding is for security",
+            "encryption is always faster",
+            "encoding hides data meaning"
+        ]
+    },
+    {
+        "q": "Which is a symmetric encryption algorithm?",
+        "o": [
+            "AES",
+            "RSA",
+            "ECC",
+            "Diffie-Hellman"
+        ]
+    },
+    {
+        "q": "Which is an asymmetric encryption algorithm?",
+        "o": [
+            "RSA",
+            "AES",
+            "DES",
+            "3DES"
+        ]
+    },
+    {
+        "q": "What is the primary benefit of symmetric encryption?",
+        "o": [
+            "speed and efficiency",
+            "easier key distribution",
+            "non-repudiation support",
+            "scalability for many users"
+        ]
+    },
+    {
+        "q": "What is the primary benefit of asymmetric encryption?",
+        "o": [
+            "secure key exchange",
+            "processing speed",
+            "smaller key size",
+            "lower computational cost"
+        ]
+    },
+    {
+        "q": "In Zero Trust, what is a 'Micro-perimeter'?",
+        "o": [
+            "security around specific data/app",
+            "firewall for the whole network",
+            "physical fence around building",
+            "antivirus on endpoints"
+        ]
+    },
+    {
+        "q": "What does 'Lateral Movement' refer to?",
+        "o": [
+            "moving between devices in a network",
+            "upgrading privilege levels",
+            "exfiltrating data externally",
+            "physical entry to a building"
+        ]
+    },
+    {
+        "q": "Which principle limits the damage of a compromised account?",
+        "o": [
+            "Least Privilege",
+            "Full Disclosure",
+            "Open Design",
+            "Weakest Link"
+        ]
+    },
+    {
+        "q": "What is 'Social Engineering' primarily targeting?",
+        "o": [
+            "human psychology",
+            "software bugs",
+            "network protocols",
+            "hardware flaws"
+        ]
+    },
+    {
+        "q": "Which attack involves pretending to be a trustworthy entity?",
+        "o": [
+            "Phishing",
+            "DoS",
+            "SQL Injection",
+            "Buffer Overflow"
+        ]
+    },
+    {
+        "q": "What is 'Tailgating' in physical security?",
+        "o": [
+            "following someone through a door",
+            "copying an ID badge",
+            "intercepting wifi signals",
+            "looking over shoulders"
+        ]
+    },
+    {
+        "q": "What does a 'Deterrent' control aim to do?",
+        "o": [
+            "discourage potential attackers",
+            "physically stop an attack",
+            "identify an attack occurring",
+            "restore system after attack"
+        ]
+    },
+    {
+        "q": "Cameras and motion sensors are primarily what type of control?",
+        "o": [
+            "Detective",
+            "Preventive",
+            "Corrective",
+            "Compensating"
+        ]
+    },
+    {
+        "q": "A backup restore process is an example of which control?",
+        "o": [
+            "Corrective",
+            "Preventive",
+            "Detective",
+            "Deterrent"
+        ]
+    },
+    {
+        "q": "What is the 'Weakest Link' in most security systems?",
+        "o": [
+            "Humans",
+            "Firewalls",
+            "Encryption",
+            "Updates"
+        ]
+    },
+    {
+        "q": "Which governance framework is widely used for IT security?",
+        "o": [
+            "COBIT",
+            "AGIO",
+            "SCRUM",
+            "KANBAN"
+        ]
+    },
+    {
+        "q": "What is the role of the 'Board of Directors' in security?",
+        "o": [
+            "oversight and strategic direction",
+            "configuring network firewalls",
+            "writing code for applications",
+            "managing daily incident logs"
+        ]
+    },
+    {
+        "q": "Which term describes the accepted level of risk for an org?",
+        "o": [
+            "Risk Appetite",
+            "Risk Capacity",
+            "Risk Tolerance",
+            "Risk Threshold"
+        ]
+    },
+    {
+        "q": "What is 'Single Loss Expectancy' (SLE)?",
+        "o": [
+            "cost of one single incident",
+            "yearly cost of incidents",
+            "probability of an incident",
+            "cost of implementing controls"
+        ]
+    },
+    {
+        "q": "How is 'Annualized Loss Expectancy' (ALE) calculated?",
+        "o": [
+            "SLE x ARO",
+            "SLE / ARO",
+            "SLE + ARO",
+            "SLE - ARO"
+        ]
+    },
+    {
+        "q": "What does ARO stand for in risk calculation?",
+        "o": [
+            "Annualized Rate of Occurrence",
+            "Average Risk Output",
+            "Asset Risk Origin",
+            "Annual Return Option"
+        ]
+    },
+    {
+        "q": "Which approach calculates risk using monetary values?",
+        "o": [
+            "Quantitative Risk Assessment",
+            "Qualitative Risk Assessment",
+            "Hybrid Risk Assessment",
+            "Subjective Risk Assessment"
+        ]
+    },
+    {
+        "q": "Qualitative Risk Assessment uses what to evaluate risk?",
+        "o": [
+            "scenarios and ratings",
+            "exact dollar amounts",
+            "complex mathematical formulas",
+            "historical financial data"
+        ]
+    },
+    {
+        "q": "What is the purpose of 'Mandatory Vacations'?",
+        "o": [
+            "detect fraud by employees",
+            "improve employee morale",
+            "reduce payroll costs",
+            "ensure office coverage"
+        ]
+    },
+    {
+        "q": "What concept ensures actions can be traced to a user?",
+        "o": [
+            "Accountability",
+            "Secrecy",
+            "Anonymity",
+            "Availability"
+        ]
+    },
+    {
+        "q": "Which is an example of 'something you know' auth?",
+        "o": [
+            "Password",
+            "Smart Card",
+            "Fingerprint",
+            "Location"
+        ]
+    },
+    {
+        "q": "Which is an example of 'something you have' auth?",
+        "o": [
+            "Token Device",
+            "PIN Code",
+            "Retina Scan",
+            "Signature"
+        ]
+    },
+    {
+        "q": "Which is an example of 'something you are' auth?",
+        "o": [
+            "Biometrics",
+            "Password",
+            "ID Badge",
+            "Private Key"
+        ]
+    },
+    {
+        "q": "Multi-Factor Authentication requires what?",
+        "o": [
+            "two or more different factors",
+            "two passwords",
+            "two different fingerprints",
+            "password and a PIN"
+        ]
+    },
+    {
+        "q": "What is 'Mutual Authentication'?",
+        "o": [
+            "client and server verify each other",
+            "server verifies the client",
+            "client verifies the server",
+            "user verifies the password"
+        ]
+    },
+    {
+        "q": "Which protocol provides a secure channel over an insecure network?",
+        "o": [
+            "SSH",
+            "Telnet",
+            "FTP",
+            "HTTP"
+        ]
+    },
+    {
+        "q": "What is the secure version of FTP?",
+        "o": [
+            "SFTP",
+            "TFTP",
+            "FTP-S",
+            "UDP-FTP"
+        ]
+    },
+    {
+        "q": "Which port does HTTPS typically use?",
+        "o": [
+            "443",
+            "80",
+            "21",
+            "22"
+        ]
+    },
+    {
+        "q": "What describes 'Data at Rest'?",
+        "o": [
+            "stored on hard drive or media",
+            "traveling over the network",
+            "currently being processed in RAM",
+            "displayed on a monitor"
+        ]
+    },
+    {
+        "q": "What describes 'Data in Transit'?",
+        "o": [
+            "moving securely across networks",
+            "stored in a database",
+            "archived on tape backups",
+            "loaded into CPU registers"
+        ]
+    },
+    {
+        "q": "What describes 'Data in Use'?",
+        "o": [
+            "actively processed by application",
+            "encrypted on a USB drive",
+            "transmitted over VPN",
+            "stored in cloud bucket"
+        ]
+    },
+    {
+        "q": "Which is a 'Need-to-Know' violation?",
+        "o": [
+            "reading files irrelevant to job",
+            "logging in with own ID",
+            "encrypting sensitive email",
+            "shredding confidential papers"
+        ]
+    },
+    {
+        "q": "What is a 'Clean Desk Policy'?",
+        "o": [
+            "secure sensitive info when away",
+            "organize cables neatly",
+            "clean dust from computers",
+            "disinfect keyboards daily"
+        ]
+    },
+    {
+        "q": "What is the risk of 'Dumpster Diving'?",
+        "o": [
+            "retrieving discarded sensitive data",
+            "getting dirty from trash",
+            "finding free hardware",
+            "identifying recycling habits"
+        ]
+    },
+    {
+        "q": "Which term means 'proving who you say you are'?",
+        "o": [
+            "Authentication",
+            "Identification",
+            "Authorization",
+            "Accountability"
+        ]
+    },
+    {
+        "q": "Which term means 'determining what you can do'?",
+        "o": [
+            "Authorization",
+            "Authentication",
+            "Identification",
+            "Auditing"
+        ]
+    },
+    {
+        "q": "What is 'Shoulder Surfing'?",
+        "o": [
+            "viewing screen without permission",
+            "stealing a laptop bag",
+            "listening to phone calls",
+            "cloning a badge"
+        ]
+    },
+    {
+        "q": "Whitelisting allows access to whom?",
+        "o": [
+            "only explicitly approved entities",
+            "everyone except blocked entities",
+            "everyone by default",
+            "unknown entities only"
+        ]
+    },
+    {
+        "q": "Blacklisting blocks access to whom?",
+        "o": [
+            "only explicitly denied entities",
+            "everyone except approved entities",
+            "internal users only",
+            "external users only"
+        ]
+    },
+    {
+        "q": "What is a 'Honeypot' used for?",
+        "o": [
+            "decoy to distract attackers",
+            "storage for sweet data",
+            "primary authentication server",
+            "high-speed network switch"
+        ]
+    },
+    {
+        "q": "What is 'Sandboxing'?",
+        "o": [
+            "isolating code execution",
+            "testing on production",
+            "playing in the dirt",
+            "encrypting hard drives"
+        ]
+    },
+    {
+        "q": "Which attack exploits the trust a user has for a site?",
+        "o": [
+            "Cross-Site Scripting (XSS)",
+            "SQL Injection",
+            "Buffer Overflow",
+            "Man-in-the-Middle"
+        ]
+    },
+    {
+        "q": "Which attack exploits the trust a site has for a user?",
+        "o": [
+            "Cross-Site Request Forgery (CSRF)",
+            "Phishing",
+            "Ransomware",
+            "Spyware"
+        ]
+    },
+    {
+        "q": "What defines a 'Zero-Day' vulnerability?",
+        "o": [
+            "unknown to vendor, no patch",
+            "patched on the same day",
+            "exists for zero days",
+            "affects zero users"
+        ]
+    },
+    {
+        "q": "What is a 'Botnet'?",
+        "o": [
+            "network of infected zombie devices",
+            "AI customer service agent",
+            "robot network cables",
+            "automated software build"
+        ]
+    },
+    {
+        "q": "What is the primary purpose of Ransomware?",
+        "o": [
+            "encrypt data and demand payment",
+            "steal data silently",
+            "destroy hardware components",
+            "monitor user activity"
+        ]
+    },
+    {
+        "q": "What is 'Logic Bomb'?",
+        "o": [
+            "malware triggered by specific condition",
+            "explosive hardware device",
+            "philosophical coding argument",
+            "accidental syntax error"
+        ]
+    },
+    {
+        "q": "What does 'Spyware' typically do?",
+        "o": [
+            "collects info without consent",
+            "shows annoying popups",
+            "encrypts user files",
+            "slows down internet speed"
+        ]
+    },
+    {
+        "q": "What specific attack involves slicing small amounts of money from many accounts?",
+        "o": [
+            "Salami Attack",
+            "Phishing",
+            "Whaling",
+            "Data Diddling"
+        ]
+    },
+    {
+        "q": "Which attack specifically alters data entry before processing?",
+        "o": [
+            "Data Diddling",
+            "Salami Attack",
+            "Buffer Overflow",
+            "Side Channel"
+        ]
+    },
+    {
+        "q": "What is the primary goal of an 'Air Gap'?",
+        "o": [
+            "physical network isolation",
+            "wireless signal boosting",
+            "cooling server rooms",
+            "filtering email spam"
+        ]
+    },
+    {
+        "q": "Which security model protects conflict of interest?",
+        "o": [
+            "Brewer and Nash",
+            "Biba",
+            "Bell-LaPadula",
+            "Clark-Wilson"
+        ]
+    },
+    {
+        "q": "What does the Biba model preventing 'Write Up' ensure?",
+        "o": [
+            "Integrity",
+            "Confidentiality",
+            "Availability",
+            "Authorization"
+        ]
+    },
+    {
+        "q": "In Bell-LaPadula, what is the 'Simple Security Property'?",
+        "o": [
+            "No Read Up",
+            "No Write Down",
+            "No Read Down",
+            "No Write Up"
+        ]
+    },
+    {
+        "q": "In Bell-LaPadula, what is the 'Star Property'?",
+        "o": [
+            "No Write Down",
+            "No Read Up",
+            "No Write Up",
+            "No Read Down"
+        ]
+    },
+    {
+        "q": "Which model introduces the concept of 'Transformation Procedures'?",
+        "o": [
+            "Clark-Wilson",
+            "Biba",
+            "Bell-LaPadula",
+            "Graham-Denning"
+        ]
+    },
+    {
+        "q": "What does the Clark-Wilson model primarily enforce?",
+        "o": [
+            "Integrity and Separation of Duties",
+            "Confidentiality and Secrecy",
+            "Availability and Uptime",
+            "Anonymity and Privacy"
+        ]
+    },
+    {
+        "q": "Which concept refers to the right to be forgotten?",
+        "o": [
+            "Privacy",
+            "Secrecy",
+            "Availability",
+            "Integrity"
+        ]
+    },
+    {
+        "q": "What is the main purpose of a 'Privacy Impact Assessment'?",
+        "o": [
+            "evaluate risk to personal data",
+            "calculate financial loss",
+            "test network speed",
+            "check firewall rules"
+        ]
+    },
+    {
+        "q": "Which law regulates data protection in the EU?",
+        "o": [
+            "GDPR",
+            "HIPAA",
+            "SOX",
+            "PCI-DSS"
+        ]
+    },
+    {
+        "q": "What is 'Personally Identifiable Information' (PII)?",
+        "o": [
+            "data linking to specific person",
+            "public marketing data",
+            "anonymous usage statistics",
+            "encrypted system logs"
+        ]
+    },
+    {
+        "q": "Which is considered PII?",
+        "o": [
+            "Social Security Number",
+            "Device IP Address",
+            "Operating System Version",
+            "Browser Type"
+        ]
+    },
+    {
+        "q": "What is the role of a 'Data Processor'?",
+        "o": [
+            "processes data on behalf of controller",
+            "owns the data legally",
+            "creates the data initially",
+            "approves data deletion"
+        ]
+    },
+    {
+        "q": "Which principle limits data collection to what is necessary?",
+        "o": [
+            "Data Minimization",
+            "Data Redundancy",
+            "Data Aggregation",
+            "Data Mining"
+        ]
+    },
+    {
+        "q": "What is 'Tokenization' used for?",
+        "o": [
+            "replacing sensitive data with non-sensitive",
+            "encrypting data with keys",
+            "compressing large files",
+            "creating user sessions"
+        ]
+    },
+    {
+        "q": "Which is an example of 'Data Masking'?",
+        "o": [
+            "showing only last 4 digits of card",
+            "encrypting the entire database",
+            "deleting old records",
+            "backing up data to tape"
+        ]
+    },
+    {
+        "q": "What is the purpose of 'Data Sanitization'?",
+        "o": [
+            "permanently removing data",
+            "cleaning hardware",
+            "organizing file folders",
+            "updating software versions"
+        ]
+    },
+    {
+        "q": "Which method destroys data by magnetic field?",
+        "o": [
+            "Degaussing",
+            "Shredding",
+            "Purging",
+            "Overwriting"
+        ]
+    },
+    {
+        "q": "What is 'Zeroizing'?",
+        "o": [
+            "overwriting memory with zeros",
+            "deleting file pointers",
+            "formatting a disk quick",
+            "resetting system clock"
+        ]
+    },
+    {
+        "q": "Which form of erasure is most secure for SSDs?",
+        "o": [
+            "Cryptographic Erasure",
+            "Multiple Overwrites",
+            "Degaussing",
+            "Standard Formatting"
+        ]
+    },
+    {
+        "q": "What is 'Emanation Security' concerned with?",
+        "o": [
+            "signal leakage from devices",
+            "email phishing attacks",
+            "data leakage via USB",
+            "software emanating bugs"
+        ]
+    },
+    {
+        "q": "What is TEMPEST associated with?",
+        "o": [
+            "shielding against electromagnetic spying",
+            "storm protection for data centers",
+            "temperature monitoring in server rooms",
+            "temporary employee security"
+        ]
+    },
+    {
+        "q": "What does a 'Faraday Cage' block?",
+        "o": [
+            "electromagnetic fields",
+            "physical intruders",
+            "network traffic",
+            "sound waves"
+        ]
+    },
+    {
+        "q": "Which physical control prevents 'Piggybacking'?",
+        "o": [
+            "Mantrap",
+            "Security Badge",
+            "Biometric Scanner",
+            "CCTV Camera"
+        ]
+    },
+    {
+        "q": "What is a 'Mantrap'?",
+        "o": [
+            "small space with two interlocking doors",
+            "hidden pit for intruders",
+            "network honeypot system",
+            "bait for social engineering"
+        ]
+    },
+    {
+        "q": "Which lighting is used to deter intruders at night?",
+        "o": [
+            "Continuous/Standby Lighting",
+            "Emergency Lighting",
+            "Decorative Lighting",
+            "Task Lighting"
+        ]
+    },
+    {
+        "q": "What is the primary purpose of a fence?",
+        "o": [
+            "delay and deter intruders",
+            "stop all intruders guaranteed",
+            "detect intrusion attempts",
+            "capture intruder evidence"
+        ]
+    },
+    {
+        "q": "Which lock type uses a keypad?",
+        "o": [
+            "Cipher Lock",
+            "Warded Lock",
+            "Tumbler Lock",
+            "Device Lock"
+        ]
+    },
+    {
+        "q": "What is the vulnerability of a standard key lock?",
+        "o": [
+            "Lock Picking",
+            "Replay Attack",
+            "Brute Force",
+            "Dictionary Attack"
+        ]
+    },
+    {
+        "q": "Which biometric factor is 'Retina Scan' based on?",
+        "o": [
+            "blood vessel pattern in eye",
+            "color of the iris",
+            "shape of the face",
+            "geometry of the hand"
+        ]
+    },
+    {
+        "q": "Which biometric is most accurate but intrusive?",
+        "o": [
+            "Retina Scan",
+            "Voice Recognition",
+            "Fingerprint",
+            "Face Recognition"
+        ]
+    },
+    {
+        "q": "What is the 'Crossover Error Rate' (CER)?",
+        "o": [
+            "point where FAR and FRR are equal",
+            "total error rate of system",
+            "maximum allowed error rate",
+            "minimum required accuracy"
+        ]
+    },
+    {
+        "q": "Which is better: a lower or higher CER?",
+        "o": [
+            "Lower",
+            "Higher",
+            "Equal to 50%",
+            "It depends on cost"
+        ]
+    },
+    {
+        "q": "What is 'False Acceptance Rate' (FAR)?",
+        "o": [
+            "unauthorized user granted access",
+            "authorized user denied access",
+            "system accepts false data",
+            "user fails to login"
+        ]
+    },
+    {
+        "q": "What is 'False Rejection Rate' (FRR)?",
+        "o": [
+            "authorized user denied access",
+            "unauthorized user granted access",
+            "system rejects valid data",
+            "user rejects the system"
+        ]
+    },
+    {
+        "q": "Which creates the 'Type I Error' in biometrics?",
+        "o": [
+            "False Rejection",
+            "False Acceptance",
+            "Crossover Error",
+            "System Failure"
+        ]
+    },
+    {
+        "q": "Which creates the 'Type II Error' in biometrics?",
+        "o": [
+            "False Acceptance",
+            "False Rejection",
+            "Crossover Error",
+            "System Crash"
+        ]
+    },
+    {
+        "q": "What is 'Keystroke Dynamics'?",
+        "o": [
+            "analyzing typing rhythm",
+            "logging all keys pressed",
+            "encrypting keyboard input",
+            "locking keyboard physically"
+        ]
+    },
+    {
+        "q": "Which is a 'Behavioral' biometric?",
+        "o": [
+            "Voice Pattern",
+            "Fingerprint",
+            "Iris Scan",
+            "DNA Matching"
+        ]
+    },
+    {
+        "q": "What is 'Single Sign-On' (SSO)?",
+        "o": [
+            "one login for multiple systems",
+            "one account per system",
+            "sharing passwords",
+            "using only one factor"
+        ]
+    },
+    {
+        "q": "Which is a common SSO protocol?",
+        "o": [
+            "SAML",
+            "HTTP",
+            "FTP",
+            "SMTP"
+        ]
+    },
+    {
+        "q": "What does SAML stand for?",
+        "o": [
+            "Security Assertion Markup Language",
+            "System Access Management Logic",
+            "Secure Auth Markup Link",
+            "Standard Access Mode List"
+        ]
+    },
+    {
+        "q": "What is the role of an Identity Provider (IdP)?",
+        "o": [
+            "creates and manages identity info",
+            "consumes identity for access",
+            "routes network traffic",
+            "encrypts database fields"
+        ]
+    },
+    {
+        "q": "What is the role of a Service Provider (SP)?",
+        "o": [
+            "provides resources based on identity",
+            "authenticates the user credentials",
+            "issues token cards",
+            "monitors logs"
+        ]
+    },
+    {
+        "q": "Which protocol uses 'Tickets' for authentication?",
+        "o": [
+            "Kerberos",
+            "RADIUS",
+            "TACACS+",
+            "LDAP"
+        ]
+    },
+    {
+        "q": "What is the KDC in Kerberos?",
+        "o": [
+            "Key Distribution Center",
+            "Kernel Data Control",
+            "Key Definition Code",
+            "Known Device Check"
+        ]
+    },
+    {
+        "q": "What is a 'Replay Attack' countermeasure in Kerberos?",
+        "o": [
+            "Timestamps",
+            "Long passwords",
+            "Biometrics",
+            "Firewalls"
+        ]
+    },
+    {
+        "q": "Which protocol is primarily used for network device admin?",
+        "o": [
+            "TACACS+",
+            "Kerberos",
+            "NTLM",
+            "OAUTH"
+        ]
+    },
+    {
+        "q": "What is the main advantage of TACACS+ over RADIUS?",
+        "o": [
+            "encrypts the entire packet",
+            "uses UDP for speed",
+            "is open source",
+            "supports only wifi"
+        ]
+    },
+    {
+        "q": "RADIUS primarily uses which transport protocol?",
+        "o": [
+            "UDP",
+            "TCP",
+            "SCTP",
+            "ICMP"
+        ]
+    },
+    {
+        "q": "What is 'Federated Identity'?",
+        "o": [
+            "linking identity across organizations",
+            "centralized internal login",
+            "government issued ID",
+            "anonymous guest access"
+        ]
+    },
+    {
+        "q": "Which standard is OAuth 2.0 primarily for?",
+        "o": [
+            "Authorization",
+            "Authentication",
+            "Encryption",
+            "Auditing"
+        ]
+    },
+    {
+        "q": "OpenID Connect (OIDC) sits on top of which protocol?",
+        "o": [
+            "OAuth 2.0",
+            "SAML",
+            "Kerberos",
+            "LDAP"
+        ]
+    },
+    {
+        "q": "What does LDAP stand for?",
+        "o": [
+            "Lightweight Directory Access Protocol",
+            "Local Data Access Point",
+            "Level Domain Auth Protocol",
+            "List Directory Account Procedure"
+        ]
+    },
+    {
+        "q": "What is 'Authorization Creep'?",
+        "o": [
+            "accumulating unnecessary rights over time",
+            "unauthorized access scaling up",
+            "slow system performance",
+            "gradual password expiration"
+        ]
+    },
+    {
+        "q": "What process prevents Authorization Creep?",
+        "o": [
+            "Access Recertification",
+            "Password Rotation",
+            "System Reboot",
+            "Data Backup"
+        ]
+    },
+    {
+        "q": "What is a 'Job Rotation' security benefit?",
+        "o": [
+            "exposes fraud and reduces reliance",
+            "increases employee boredom",
+            "reduces training costs",
+            "simplifies payroll"
+        ]
+    },
+    {
+        "q": "What is 'Separation of Duties' primarily preventing?",
+        "o": [
+            "Conflict of interest",
+            "External hacks",
+            "System downtime",
+            "Data loss"
+        ]
+    },
+    {
+        "q": "A 'Non-Disclosure Agreement' (NDA) is what type of control?",
+        "o": [
+            "Administrative",
+            "Technical",
+            "Physical",
+            "Corrective"
+        ]
+    },
+    {
+        "q": "What is 'Onboarding' in security context?",
+        "o": [
+            "provisioning access for new hires",
+            "training users on hacking",
+            "installing new servers",
+            "connecting to wifi"
+        ]
+    },
+    {
+        "q": "What involves removing access when an employee leaves?",
+        "o": [
+            "Offboarding",
+            "Onboarding",
+            "Recertification",
+            "Orientation"
+        ]
+    },
+    {
+        "q": "Which agreement ensures service uptime levels?",
+        "o": [
+            "SLA",
+            "NDA",
+            "MOU",
+            "ISA"
+        ]
+    },
+    {
+        "q": "What is an ISA (Interconnection Security Agreement)?",
+        "o": [
+            "technical details of connection",
+            "legal liability contract",
+            "payment terms document",
+            "internal HR policy"
+        ]
+    },
+    {
+        "q": "What describes 'Due Care' vs 'Due Diligence'?",
+        "o": [
+            "Doing vs Researching",
+            "Planning vs Executing",
+            "Thinking vs Acting",
+            "Buying vs Selling"
+        ]
+    },
+    {
+        "q": "Which framework focuses on credit card security?",
+        "o": [
+            "PCI-DSS",
+            "HIPAA",
+            "GDPR",
+            "FISMA"
+        ]
+    },
+    {
+        "q": "Which regulation focuses on US healthcare data?",
+        "o": [
+            "HIPAA",
+            "GLBA",
+            "SOX",
+            "FERPA"
+        ]
+    },
+    {
+        "q": "What does SOX (Sarbanes-Oxley) regulate?",
+        "o": [
+            "Financial reporting",
+            "Healthcare privacy",
+            "Credit cards",
+            "Student records"
+        ]
+    },
+    {
+        "q": "What is the primary goal of GLBA?",
+        "o": [
+            "financial institution data privacy",
+            "global business licensing",
+            "government list banning",
+            "general liability assessment"
+        ]
+    },
+    {
+        "q": "Which US law protects student education records?",
+        "o": [
+            "FERPA",
+            "COPPA",
+            "CIPA",
+            "FIPS"
+        ]
+    },
+    {
+        "q": "What is COPPA designed to act for?",
+        "o": [
+            "children's online privacy",
+            "copyright protection",
+            "computer crime acts",
+            "corporate policy audits"
+        ]
+    },
+    {
+        "q": "What is the 'Computer Fraud and Abuse Act' (CFAA)?",
+        "o": [
+            "criminalizes unauthorized access",
+            "regulates online fraud ads",
+            "protects consumer credit cards",
+            "monitor employees emails"
+        ]
+    },
+    {
+        "q": "What does strict liability mean in law?",
+        "o": [
+            "liable regardless of intent",
+            "liable only if negligent",
+            "liable only if malicious",
+            "not liable for software"
+        ]
+    },
+    {
+        "q": "Which concept allows using copyrighted work for education?",
+        "o": [
+            "Fair Use",
+            "Public Domain",
+            "Creative Commons",
+            "Trade Secret"
+        ]
+    },
+    {
+        "q": "A trademark protects what?",
+        "o": [
+            "brand identity and logos",
+            "inventions and machines",
+            "literary works",
+            "secret formulas"
+        ]
+    },
+    {
+        "q": "A patent protects what?",
+        "o": [
+            "inventions and processes",
+            "artistic works",
+            "brand names",
+            "customer lists"
+        ]
+    },
+    {
+        "q": "A copyright protects what?",
+        "o": [
+            "creative expression of ideas",
+            "functional machine parts",
+            "business slogans",
+            "employee knowledge"
+        ]
+    },
+    {
+        "q": "What is a 'Trade Secret'?",
+        "o": [
+            "confidential business info",
+            "published patent details",
+            "registered trademark",
+            "public marketing plan"
+        ]
+    },
+    {
+        "q": "What is 'Wassenaar Arrangement' related to?",
+        "o": [
+            "export controls on dual-use goods",
+            "international copyright law",
+            "cross-border privacy flow",
+            "cybercrime extradition"
+        ]
+    },
+    {
+        "q": "Which OECD principle states data should be accurate?",
+        "o": [
+            "Data Quality",
+            "Collection Limitation",
+            "Purpose Specification",
+            "Security Safeguards"
+        ]
+    },
+    {
+        "q": "What is the purpose of 'Code of Ethics'?",
+        "o": [
+            "guide professional conduct",
+            "enforce legal penalties",
+            "define technical standards",
+            "list job descriptions"
+        ]
+    },
+    {
+        "q": "Which organization manages the CISSP certification?",
+        "o": [
+            "ISC2",
+            "ISACA",
+            "CompTIA",
+            "EC-Council"
+        ]
+    },
+    {
+        "q": "Which organization publishes the 'Top 10' web risks?",
+        "o": [
+            "OWASP",
+            "NIST",
+            "ISO",
+            "SANS"
+        ]
+    },
+    {
+        "q": "What is the NIST Cybersecurity Framework core?",
+        "o": [
+            "Identify Protect Detect Respond Recover",
+            "Plan Do Check Act",
+            "Prepare Protect Respond Rest",
+            "Assess Design Implement Monitor"
+        ]
+    },
+    {
+        "q": "Which ISO standard focuses on InfoSec Management?",
+        "o": [
+            "ISO 27001",
+            "ISO 9001",
+            "ISO 20000",
+            "ISO 31000"
+        ]
+    },
+    {
+        "q": "What is 'Sherman Antitrust Act' relevant to?",
+        "o": [
+            "monopolistic business practices",
+            "digital copyright issues",
+            "telecom privacy rules",
+            "international trade"
+        ]
+    },
+    {
+        "q": "What is 'eDiscovery'?",
+        "o": [
+            "electronic data for legal evidence",
+            "finding new websites",
+            "inventing electronic devices",
+            "recovering lost passwords"
+        ]
+    },
+    {
+        "q": "What is 'Chain of Custody' critical for?",
+        "o": [
+            "legal admissibility of evidence",
+            "tracking inventory items",
+            "managing supply chains",
+            "monitoring employee shifts"
+        ]
+    },
+    {
+        "q": "Which evidence type proves a fact on its own?",
+        "o": [
+            "Direct Evidence",
+            "Circumstantial Evidence",
+            "Hearsay Evidence",
+            "Corroborative Evidence"
+        ]
+    },
+    {
+        "q": "What is 'Best Evidence Rule'?",
+        "o": [
+            "original documents preferred",
+            "copies are always acceptable",
+            "oral testimony is best",
+            "digital evidence is invalid"
+        ]
+    },
+    {
+        "q": "Which is generally NOT admissible in court?",
+        "o": [
+            "Hearsay",
+            "Direct Evidence",
+            "Documentary Evidence",
+            "Expert Testimony"
+        ]
+    },
+    {
+        "q": "What is 'Entrapment'?",
+        "o": [
+            "inducing someone to commit crime",
+            "setting a honeypot trap",
+            "catching a criminal in act",
+            "monitoring network traffic"
+        ]
+    },
+    {
+        "q": "Which is 'Enticement'?",
+        "o": [
+            "luring towards a honeypot (legal)",
+            "forcing someone to hack (illegal)",
+            "stealing data secretly",
+            "bribing an official"
+        ]
+    },
+    {
+        "q": "What is 'Sovereignty' in data terms?",
+        "o": [
+            "laws of country where data resides",
+            "ownership by the creator",
+            "encryption control by user",
+            "independent internet state"
+        ]
+    },
+    {
+        "q": "Which Diffie-Hellman component is public?",
+        "o": [
+            "Prime modulus and generator",
+            "Private exponents",
+            "Shared secret key",
+            "Session identifier"
+        ]
+    },
+    {
+        "q": "What is the primary vulnerability of Diffie-Hellman?",
+        "o": [
+            "Man-in-the-Middle attacks",
+            "Brute force on keys",
+            "Replay attacks",
+            "Side channel leaks"
+        ]
+    },
+    {
+        "q": "RSA security relies on difficulty of what?",
+        "o": [
+            "factoring large prime numbers",
+            "calculating discrete logarithms",
+            "solving elliptic curves",
+            "inverting hash functions"
+        ]
+    },
+    {
+        "q": "ECC (Elliptic Curve) offers what advantage over RSA?",
+        "o": [
+            "smaller keys for same security",
+            "faster encryption speed",
+            "simpler algorithm logic",
+            "no private key needed"
+        ]
+    },
+    {
+        "q": "What does a Digital Signature provide?",
+        "o": [
+            "Authentication and Integrity",
+            "Confidentiality only",
+            "Availability",
+            "Anonymity"
+        ]
+    },
+    {
+        "q": "Which key signs the message digest?",
+        "o": [
+            "Sender's Private Key",
+            "Sender's Public Key",
+            "Receiver's Public Key",
+            "Receiver's Private Key"
+        ]
+    },
+    {
+        "q": "Which key verifies the message digest?",
+        "o": [
+            "Sender's Public Key",
+            "Sender's Private Key",
+            "Receiver's Private Key",
+            "Receiver's Public Key"
+        ]
+    },
+    {
+        "q": "What is a 'Hash Collision'?",
+        "o": [
+            "two inputs producing same hash",
+            "cracking the hash algorithm",
+            "reversing hash to plaintext",
+            "encrypting a hash value"
+        ]
+    },
+    {
+        "q": "What is the 'Birthday Attack' related to?",
+        "o": [
+            "finding hash collisions",
+            "guessing passwords by date",
+            "social engineering birthdays",
+            "brute forcing pin codes"
+        ]
+    },
+    {
+        "q": "What is 'Salting' a password?",
+        "o": [
+            "adding random data before hashing",
+            "encrypting the hash output",
+            "hashing the password twice",
+            "storing password in plaintext"
+        ]
+    },
+    {
+        "q": "What does Salting primarily prevent?",
+        "o": [
+            "Rainbow Table attacks",
+            "Brute Force attacks",
+            "Phishing attacks",
+            "Keylogging"
+        ]
+    },
+    {
+        "q": "Which algorithm is a Stream Cipher?",
+        "o": [
+            "RC4",
+            "AES",
+            "DES",
+            "Blowfish"
+        ]
+    },
+    {
+        "q": "Which algorithm is a Block Cipher?",
+        "o": [
+            "AES",
+            "RC4",
+            "ChaCha20",
+            "Salsa20"
+        ]
+    },
+    {
+        "q": "What is 'Electronic Code Book' (ECB) mode weakness?",
+        "o": [
+            "identical blocks produce identical ciphertext",
+            "slow performance on large files",
+            "requires very long keys",
+            "cannot be parallelized"
+        ]
+    },
+    {
+        "q": "Which mode uses an Initialization Vector (IV)?",
+        "o": [
+            "CBC",
+            "ECB",
+            "None",
+            "RAW"
+        ]
+    },
+    {
+        "q": "What happens if you reuse a One-Time Pad?",
+        "o": [
+            "security is completely broken",
+            "security is slightly reduced",
+            "it becomes a two-time pad",
+            "encryption becomes faster"
+        ]
+    },
+    {
+        "q": "What is 'Key Escrow'?",
+        "o": [
+            "storing keys with a third party",
+            "destroying expired keys",
+            "generating new keys daily",
+            "sharing keys on public web"
+        ]
+    },
+    {
+        "q": "What describes 'Steganography' carriers?",
+        "o": [
+            "cover used to hide data",
+            "algorithm used to encrypt",
+            "network protocol used",
+            "person carrying the drive"
+        ]
+    },
+    {
+        "q": "Which access control model uses 'Attributes'?",
+        "o": [
+            "ABAC",
+            "RBAC",
+            "DAC",
+            "MAC"
+        ]
+    },
+    {
+        "q": "In RBAC, permissions are assigned to what?",
+        "o": [
+            "Roles",
+            "Users directly",
+            "Computers",
+            "Locations"
+        ]
+    },
+    {
+        "q": "What is 'Rule-Based Access Control' determined by?",
+        "o": [
+            "global rules like firewall ACLs",
+            "user job titles",
+            "data sensitivity labels",
+            "resource ownership"
+        ]
+    },
+    {
+        "q": "Which model is 'Owner-centric'?",
+        "o": [
+            "Discretionary Access Control",
+            "Mandatory Access Control",
+            "Role-Based Access Control",
+            "Attribute-Based Access Control"
+        ]
+    },
+    {
+        "q": "Which model is rigid and label-based?",
+        "o": [
+            "Mandatory Access Control",
+            "Discretionary Access Control",
+            "Role-Based Access Control",
+            "Identity-Based Access Control"
+        ]
+    },
+    {
+        "q": "What is 'Review' phase in Access Control?",
+        "o": [
+            "monitoring and auditing access",
+            "granting initial permissions",
+            "authenticating the user",
+            "encrypting the session"
+        ]
+    },
+    {
+        "q": "What is 'Revocation'?",
+        "o": [
+            "removing access rights",
+            "renewing passwords",
+            "upgrading user roles",
+            "auditing log files"
+        ]
+    },
+    {
+        "q": "Which framework focuses on Enterprise Architecture?",
+        "o": [
+            "TOGAF",
+            "COBIT",
+            "ITIL",
+            "PCR"
+        ]
+    },
+    {
+        "q": "What is SABSA primarily for?",
+        "o": [
+            "Security Architecture service management",
+            "Software coding standards",
+            "Network cabling layout",
+            "Physical building security"
+        ]
+    },
+    {
+        "q": "In Common Criteria, what is EAL?",
+        "o": [
+            "Evaluation Assurance Level",
+            "Encryption Algorithm List",
+            "Enterprise Access Layer",
+            "Emergency Action Limit"
+        ]
+    },
+    {
+        "q": "Which EAL level represents 'Formally Verified'?",
+        "o": [
+            "EAL 7",
+            "EAL 1",
+            "EAL 4",
+            "EAL 5"
+        ]
+    },
+    {
+        "q": "What is a 'Protection Profile' (PP)?",
+        "o": [
+            "user-defined security requirements",
+            "vendor implementation details",
+            "evaluation methodology guide",
+            "final certification certificate"
+        ]
+    },
+    {
+        "q": "What is 'Security Target' (ST)?",
+        "o": [
+            "vendor claims of security",
+            "hacker's intended victim",
+            "customer's wish list",
+            "government mandate"
+        ]
+    },
+    {
+        "q": "What is the 'Reference Monitor' concept?",
+        "o": [
+            "abstract machine checking access",
+            "admin watching CCTV screens",
+            "software logging errors",
+            "hr department checking badges"
+        ]
+    },
+    {
+        "q": "What is the 'Security Kernel'?",
+        "o": [
+            "hardware/software implementing reference monitor",
+            "central CPU of a firewall",
+            "encrypted password file",
+            "Linux operating system core"
+        ]
+    },
+    {
+        "q": "What does 'T' stand for in 'T-Map'?",
+        "o": [
+            "Trust",
+            "Time",
+            "Threat",
+            "Technology"
+        ]
+    },
+    {
+        "q": "Which BCP phase comes first?",
+        "o": [
+            "Project Scope and Planning",
+            "Business Impact Analysis",
+            "Recovery Strategy",
+            "Plan Approval"
+        ]
+    },
+    {
+        "q": "What is 'Maximum Tolerable Downtime' (MTD)?",
+        "o": [
+            "max time business can survive down",
+            "time to restore backups",
+            "average repair time",
+            "scheduled maintenance window"
+        ]
+    },
+    {
+        "q": "Which site type is fully equipped and ready?",
+        "o": [
+            "Hot Site",
+            "Warm Site",
+            "Cold Site",
+            "Mobile Site"
+        ]
+    },
+    {
+        "q": "Which site has equipment but no data?",
+        "o": [
+            "Warm Site",
+            "Hot Site",
+            "Cold Site",
+            "Cloud Site"
+        ]
+    },
+    {
+        "q": "Which site has power/AC but no equipment?",
+        "o": [
+            "Cold Site",
+            "Warm Site",
+            "Hot Site",
+            "Mirror Site"
+        ]
+    },
+    {
+        "q": "What is a 'Tabletop Exercise'?",
+        "o": [
+            "discussion-based simulation",
+            "physically moving to backup site",
+            "shutting down live servers",
+            "restoring actual tapes"
+        ]
+    },
+    {
+        "q": "What is a 'Parallel Test'?",
+        "o": [
+            "running alternate site alongside primary",
+            "testing two servers at once",
+            "running wires in parallel",
+            "checking disk mirroring"
+        ]
+    },
+    {
+        "q": "What describes a 'Full Interruption Test'?",
+        "o": [
+            "shutting down primary to use alternate",
+            "unplugging network cables randomly",
+            "simulating a power outage only",
+            "stopping work for a meeting"
+        ]
+    },
+    {
+        "q": "What is 'Electronic Vaulting'?",
+        "o": [
+            "batch transfer of backups offsite",
+            "real-time disk mirroring",
+            "encrypting files on disk",
+            "locking server room door"
+        ]
+    },
+    {
+        "q": "What is 'Remote Journaling'?",
+        "o": [
+            "streaming logs to remote site",
+            "keeping a written diary offsite",
+            "remote access for employees",
+            "blogging about security"
+        ]
+    },
+    {
+        "q": "What is 'Database Shadowing'?",
+        "o": [
+            "real-time replication of DB",
+            "hiding database columns",
+            "backing up DB once a week",
+            "monitoring DB queries"
+        ]
+    },
+    {
+        "q": "Which firewall filters based on state?",
+        "o": [
+            "Stateful Inspection",
+            "Packet Filtering",
+            "Circuit-Level Gateway",
+            "Application Proxy"
+        ]
+    },
+    {
+        "q": "Which firewall operates at Layer 7?",
+        "o": [
+            "Application Proxy",
+            "Packet Filter",
+            "Stateful Inspection",
+            "Circuit Gateway"
+        ]
+    },
+    {
+        "q": "What is a 'Packet Filter' firewall?",
+        "o": [
+            "filters based on headers only",
+            "inspects payload content",
+            "tracks session state",
+            "proxies user connections"
+        ]
+    },
+    {
+        "q": "Which is a 'Bastion Host'?",
+        "o": [
+            "exposed, hardened server",
+            "internal file server",
+            "hidden admin console",
+            "backup tape drive"
+        ]
+    },
+    {
+        "q": "What is a 'Screened Subnet' also known as?",
+        "o": [
+            "DMZ",
+            "Intranet",
+            "Extranet",
+            "VPN"
+        ]
+    },
+    {
+        "q": "What is 'Dual-Homed Host'?",
+        "o": [
+            "two NICs, one internal one external",
+            "redundant server cluster",
+            "server with two IP addresses",
+            "home computer used for work"
+        ]
+    },
+    {
+        "q": "What does IPSec protect?",
+        "o": [
+            "IP packets",
+            "MAC frames",
+            "Application data only",
+            "Hard drive sectors"
+        ]
+    },
+    {
+        "q": "Which IPSec mode encrypts the entire packet?",
+        "o": [
+            "Tunnel Mode",
+            "Transport Mode",
+            "Bridge Mode",
+            "Switch Mode"
+        ]
+    },
+    {
+        "q": "Which IPSec mode encrypts only the payload?",
+        "o": [
+            "Transport Mode",
+            "Tunnel Mode",
+            "Gateway Mode",
+            "Client Mode"
+        ]
+    },
+    {
+        "q": "What is 'AH' in IPSec?",
+        "o": [
+            "Authentication Header",
+            "Auth Helper",
+            "Access Holder",
+            "Algorithm Hash"
+        ]
+    },
+    {
+        "q": "What does AH provide?",
+        "o": [
+            "Integrity and Authentication",
+            "Confidentiality",
+            "Availability",
+            "Non-repudiation only"
+        ]
+    },
+    {
+        "q": "What is 'ESP' in IPSec?",
+        "o": [
+            "Encapsulating Security Payload",
+            "Encryption Standard Pack",
+            "Extra Secure Protocol",
+            "External Service Point"
+        ]
+    },
+    {
+        "q": "What does ESP provide?",
+        "o": [
+            "Confidentiality, Integrity, Auth",
+            "Integrity only",
+            "Availability only",
+            "Routing logs"
+        ]
+    },
+    {
+        "q": "What is 'Split Tunneling'?",
+        "o": [
+            "routing some traffic VPN, some direct",
+            "encrypting half the packet",
+            "using two VPNs at once",
+            "breaking firewall rules"
+        ]
+    },
+    {
+        "q": "Which VPN protocol is SSL/TLS based?",
+        "o": [
+            "SSL VPN",
+            "L2TP",
+            "PPTP",
+            "IPSec"
+        ]
+    },
+    {
+        "q": "What describes 'Always-On VPN'?",
+        "o": [
+            "automatically connects when online",
+            "manual connection required",
+            "only works specifically on wifi",
+            "never disconnects even without power"
+        ]
+    },
+    {
+        "q": "What is 'Network Access Control' (NAC)?",
+        "o": [
+            "evaluates device health before access",
+            "controls physical network cables",
+            "monitors internet speed",
+            "blocks all external traffic"
+        ]
+    },
+    {
+        "q": "What is an 'Agent-based' NAC?",
+        "o": [
+            "software installed on device",
+            "scans device remotely",
+            "checks MAC address only",
+            "monitors traffic flow"
+        ]
+    },
+    {
+        "q": "What is '802.1X' standard for?",
+        "o": [
+            "Port-based Network Access Control",
+            "Wireless encryption WPA2",
+            "Ethernet cabling speed",
+            "Symmetric key exchange"
+        ]
+    },
+    {
+        "q": "What is the 'Supplicant' in 802.1X?",
+        "o": [
+            "device requesting access",
+            "switch or access point",
+            "authentication server",
+            "network admin"
+        ]
+    },
+    {
+        "q": "What is the 'Authenticator' in 802.1X?",
+        "o": [
+            "switch or access point",
+            "user device",
+            "backend database",
+            "certificate authority"
+        ]
+    },
+    {
+        "q": "What is 'EAP'?",
+        "o": [
+            "Extensible Authentication Protocol",
+            "Encrypted Access Point",
+            "External Authorization Policy",
+            "Emergency Action Plan"
+        ]
+    },
+    {
+        "q": "Which EAP method is most secure?",
+        "o": [
+            "EAP-TLS",
+            "EAP-MD5",
+            "LEAP",
+            "EAP-FAST"
+        ]
+    },
+    {
+        "q": "What is 'EAP-TLS' requirement?",
+        "o": [
+            "client and server certificates",
+            "server certificate only",
+            "password only",
+            "MAC address only"
+        ]
+    },
+    {
+        "q": "What is 'PEAP' designed to do?",
+        "o": [
+            "encapsulate EAP in TLS tunnel",
+            "replace EAP entirely",
+            "simplify password strength",
+            "broadcast SSID name"
+        ]
+    },
+    {
+        "q": "What is a 'VLAN' purpose?",
+        "o": [
+            "logical segmentation of network",
+            "physical separation of wires",
+            "increasing internet bandwidth",
+            "encrypting LAN traffic"
+        ]
+    },
+    {
+        "q": "What is 'VLAN Hopping'?",
+        "o": [
+            "attacking to jump VLANs",
+            "managing VLAN configurations",
+            "optimizing VLAN speed",
+            "routing between VLANs legally"
+        ]
+    },
+    {
+        "q": "Which is a mitigation for VLAN Hopping?",
+        "o": [
+            "disable dynamic trunking (DTP)",
+            "enable all ports as trunks",
+            "use default VLAN 1",
+            "remove all switch passwords"
+        ]
+    },
+    {
+        "q": "What is 'Double Tagging' attack?",
+        "o": [
+            "nesting VLAN tags to bypass",
+            "putting two price tags",
+            "identifying two users",
+            "tagging evidence twice"
+        ]
+    },
+    {
+        "q": "What is 'Switch Spoofing'?",
+        "o": [
+            "pretending to be a trunk switch",
+            "stealing a physical switch",
+            "configuring switch wrong",
+            "flooding switch with MACs"
+        ]
+    },
+    {
+        "q": "What is 'ARP Poisoning'?",
+        "o": [
+            "associating attacker MAC with IP",
+            "injecting virus into ARP",
+            "deleting ARP table entries",
+            "flooding ARP requests"
+        ]
+    },
+    {
+        "q": "What does ARP Poisoning enable?",
+        "o": [
+            "Man-in-the-Middle attacks",
+            "Denial of Service only",
+            "Password cracking offline",
+            "SQL injection"
+        ]
+    },
+    {
+        "q": "What works as a countermeasure to ARP poisoning?",
+        "o": [
+            "Dynamic ARP Inspection (DAI)",
+            "Port Security",
+            "BPDU Guard",
+            "Root Guard"
+        ]
+    },
+    {
+        "q": "What is 'MAC Flooding'?",
+        "o": [
+            "filling switch CAM table",
+            "spamming email addresses",
+            "flooding network with UDP",
+            "creating many VMs"
+        ]
+    },
+    {
+        "q": "What happens when CAM table is full?",
+        "o": [
+            "switch acts like a hub (broadcasts)",
+            "switch shuts down completely",
+            "switch blocks all traffic",
+            "switch encrypts all data"
+        ]
+    },
+    {
+        "q": "What prevents MAC Flooding?",
+        "o": [
+            "Port Security",
+            "STP",
+            "VLANs",
+            "OSPF"
+        ]
+    },
+    {
+        "q": "What is 'Spanning Tree Protocol' (STP) for?",
+        "o": [
+            "preventing switching loops",
+            "organizing cable trees",
+            "optimizing routing tables",
+            "measuring latency"
+        ]
+    },
+    {
+        "q": "What is 'Broadcast Storm'?",
+        "o": [
+            "excessive broadcast traffic loop",
+            "heavy rain damaging cables",
+            "wireless signal interference",
+            "too many emails sent"
+        ]
+    },
+    {
+        "q": "What is 'Root Guard'?",
+        "o": [
+            "prevents unauthorized root bridge",
+            "protecting linux root account",
+            "physical guard at root DNS",
+            "firewall rule for root"
+        ]
+    },
+    {
+        "q": "What is 'BPDU Guard' used for?",
+        "o": [
+            "disable port if BPDU received",
+            "filter bad packets",
+            "monitor CPU usage",
+            "encrypt switch management"
+        ]
+    },
+    {
+        "q": "What is 'DHCP Snooping'?",
+        "o": [
+            "preventing rogue DHCP servers",
+            "reading users emails",
+            "checking for viruses",
+            "logging dns queries"
+        ]
+    },
+    {
+        "q": "What is a 'Rogue Access Point'?",
+        "o": [
+            "unauthorized wireless AP",
+            "broken hardware AP",
+            "AP with slow speed",
+            "AP configured correctly"
+        ]
+    },
+    {
+        "q": "What is an 'Evil Twin'?",
+        "o": [
+            "rogue AP mimicking legitimate SSID",
+            "clone of a hard drive",
+            "phishing email copy",
+            "duplicate user account"
+        ]
+    },
+    {
+        "q": "What is 'Bluejacking'?",
+        "o": [
+            "sending unsolicited bluetooth messages",
+            "stealing data via bluetooth",
+            "crashing bluetooth device",
+            "listening to bluetooth audio"
+        ]
+    },
+    {
+        "q": "What is 'Bluesnarfing'?",
+        "o": [
+            "stealing data via bluetooth",
+            "sending annoying messages",
+            "pairing headers attack",
+            "jamming bluetooth signal"
+        ]
+    },
+    {
+        "q": "What is 'NFC' range typically?",
+        "o": [
+            "4 cm or less",
+            "10 meters",
+            "100 meters",
+            "1 kilometer"
+        ]
+    },
+    {
+        "q": "What is 'RFID' used for?",
+        "o": [
+            "tracking tags and cards",
+            "long distance wifi",
+            "satellite communication",
+            "fiber optic speed"
+        ]
+    },
+    {
+        "q": "What is 'War Driving'?",
+        "o": [
+            "driving searching for wifi",
+            "driving tank in game",
+            "hacking car computers",
+            "racing simulation"
+        ]
+    },
+    {
+        "q": "What is 'War Chalking'?",
+        "o": [
+            "marking wifi spots on walls",
+            "drawing on war maps",
+            "writing code on blackboards",
+            "graffiti art"
+        ]
+    },
+    {
+        "q": "Which is more secure: WPA2-Personal or Enterprise?",
+        "o": [
+            "WPA2-Enterprise",
+            "WPA2-Personal",
+            "WEP",
+            "Open"
+        ]
+    },
+    {
+        "q": "What replaced WEP?",
+        "o": [
+            "WPA",
+            "SSL",
+            "SSH",
+            "TLS"
+        ]
+    },
+    {
+        "q": "Why is WEP insecure?",
+        "o": [
+            "weak RC4 IV implementation",
+            "too slow to use",
+            "requires expensive hardware",
+            "incompatible with windows"
+        ]
+    },
+    {
+        "q": "WPA2 uses which encryption?",
+        "o": [
+            "AES-CCMP",
+            "TKIP",
+            "RC4",
+            "DES"
+        ]
+    },
+    {
+        "q": "WPA3 introduces what for better security?",
+        "o": [
+            "SAE (Simultaneous Authentication of Equals)",
+            "WEP compatibility",
+            "Shorter passwords",
+            "No encryption needed"
+        ]
+    },
+    {
+        "q": "What is 'WPS' vulnerability?",
+        "o": [
+            "PIN brute force allowing entry",
+            "weak encryption algorithm",
+            "slow connection speed",
+            "requires physical button"
+        ]
+    },
+    {
+        "q": "In IaaS, who is responsible for the physical data center?",
+        "o": [
+            "Cloud Provider",
+            "Customer",
+            "Third Party",
+            "Government"
+        ]
+    },
+    {
+        "q": "In IaaS, who is responsible for the Operating System?",
+        "o": [
+            "Customer",
+            "Cloud Provider",
+            "Vendor",
+            "ISP"
+        ]
+    },
+    {
+        "q": "In SaaS, who is responsible for application patching?",
+        "o": [
+            "Cloud Provider",
+            "Customer",
+            "End User",
+            "Developer"
+        ]
+    },
+    {
+        "q": "What is the 'Shared Responsibility Model'?",
+        "o": [
+            "defines security duties of provider vs customer",
+            "sharing passwords among team",
+            "splitting costs of hardware",
+            "distributing cloud load"
+        ]
+    },
+    {
+        "q": "What is a 'CASB' used for?",
+        "o": [
+            "enforce security policies between user and cloud",
+            "store cloud backups",
+            "encrypt local hard drives",
+            "monitor physical building access"
+        ]
+    },
+    {
+        "q": "What does CASB stand for?",
+        "o": [
+            "Cloud Access Security Broker",
+            "Central Authorization Service Base",
+            "Cloud Application Secure Bridge",
+            "Cyber Attack Safety Board"
+        ]
+    },
+    {
+        "q": "What is 'Cloud Bursting'?",
+        "o": [
+            "overflowing traffic to public cloud",
+            "cloud server crashing",
+            "data leaking from cloud",
+            "rapid cloud adoption"
+        ]
+    },
+    {
+        "q": "What is a 'Community Cloud'?",
+        "o": [
+            "shared by organizations with common goals",
+            "public free cloud storage",
+            "social media platform",
+            "local neighborhood network"
+        ]
+    },
+    {
+        "q": "What is 'Virtualization' security risk?",
+        "o": [
+            "VM Escape",
+            "Hardware theft",
+            "Power outage",
+            "Cable damage"
+        ]
+    },
+    {
+        "q": "What is a 'Hypervisor'?",
+        "o": [
+            "software creating and running VMs",
+            "manager of supercomputers",
+            "high speed network switch",
+            "encrypted database"
+        ]
+    },
+    {
+        "q": "What is a Type 1 Hypervisor?",
+        "o": [
+            "runs directly on hardware (Bare Metal)",
+            "runs inside an OS (Hosted)",
+            "runs only on cloud",
+            "runs only on desktops"
+        ]
+    },
+    {
+        "q": "What is a Type 2 Hypervisor?",
+        "o": [
+            "runs on top of host OS",
+            "runs directly on hardware",
+            "runs in firmware",
+            "runs on network card"
+        ]
+    },
+    {
+        "q": "Which is an example of a Type 1 Hypervisor?",
+        "o": [
+            "ESXi",
+            "VirtualBox",
+            "VMware Workstation",
+            "Parallels"
+        ]
+    },
+    {
+        "q": "Which is an example of a Type 2 Hypervisor?",
+        "o": [
+            "VirtualBox",
+            "Hyper-V Server",
+            "Xen",
+            "KVM"
+        ]
+    },
+    {
+        "q": "What is 'Containerization'?",
+        "o": [
+            "packaging app and deps together",
+            "shipping physical servers",
+            "encrypting hard drives",
+            "storing data in silos"
+        ]
+    },
+    {
+        "q": "What is the difference between VM and Container?",
+        "o": [
+            "containers share host kernel",
+            "VMs share host kernel",
+            "containers include full OS",
+            "VMs are smaller than containers"
+        ]
+    },
+    {
+        "q": "What is 'Docker' primarily used for?",
+        "o": [
+            "creating and running containers",
+            "virtualizing windows desktops",
+            "managing cloud billing",
+            "scanning for viruses"
+        ]
+    },
+    {
+        "q": "What does 'Kubernetes' do?",
+        "o": [
+            "orchestrates container deployment",
+            "builds docker images",
+            "compiles source code",
+            "scans network ports"
+        ]
+    },
+    {
+        "q": "What is 'Serverless Computing'?",
+        "o": [
+            "running code without managing servers",
+            "using no computers at all",
+            "running servers without power",
+            "using only peer-to-peer"
+        ]
+    },
+    {
+        "q": "What is 'FaaS'?",
+        "o": [
+            "Function as a Service",
+            "Firewall as a Service",
+            "File as a Service",
+            "Fiber as a Service"
+        ]
+    },
+    {
+        "q": "What is 'Infrastructure as Code' (IaC)?",
+        "o": [
+            "managing infrastructure via config files",
+            "writing code to build servers physically",
+            "coding inside a data center",
+            "encrypting infrastructure data"
+        ]
+    },
+    {
+        "q": "What is a security benefit of IaC?",
+        "o": [
+            "consistent and auditable configs",
+            "slower deployment times",
+            "manual configuration errors",
+            "hidden server settings"
+        ]
+    },
+    {
+        "q": "What is 'Immutable Infrastructure'?",
+        "o": [
+            "servers are never modified, only replaced",
+            "servers cannot be hacked",
+            "infrastructure that never breaks",
+            "hardware that lasts forever"
+        ]
+    },
+    {
+        "q": "What is 'Shadow IT'?",
+        "o": [
+            "unapproved software/hardware use",
+            "covert hacking operations",
+            "IT department in the basement",
+            "dark mode on screens"
+        ]
+    },
+    {
+        "q": "What is the first step in Incident Response (PICERL)?",
+        "o": [
+            "Preparation",
+            "Identification",
+            "Containment",
+            "Eradication"
+        ]
+    },
+    {
+        "q": "What happens in the 'Identification' phase?",
+        "o": [
+            "detecting and determining incident scope",
+            "training the response team",
+            "cleaning up the malware",
+            "restoring from backups"
+        ]
+    },
+    {
+        "q": "What is the goal of 'Containment'?",
+        "o": [
+            "limit damage and spread",
+            "identify the attacker",
+            "restore business operations",
+            "write the final report"
+        ]
+    },
+    {
+        "q": "What is 'Eradication'?",
+        "o": [
+            "removing the root cause",
+            "disconnecting the network",
+            "identifying the malware",
+            "hiring a lawyer"
+        ]
+    },
+    {
+        "q": "What is 'Recovery' phase focus?",
+        "o": [
+            "restoring systems to normal operation",
+            "deleting logs",
+            "interviewing witnesses",
+            "prosecuting the attacker"
+        ]
+    },
+    {
+        "q": "What is 'Lessons Learned' phase?",
+        "o": [
+            "analyzing incident to improve future",
+            "learning to code better",
+            "teaching attackers a lesson",
+            "reading manuals"
+        ]
+    },
+    {
+        "q": "What is 'Chain of Custody'?",
+        "o": [
+            "documentation of evidence handling",
+            "police handcuffing procedure",
+            "locking evidence in a safe",
+            "linking block chains"
+        ]
+    },
+    {
+        "q": "Why is 'Order of Volatility' important?",
+        "o": [
+            "capture most fleeting data first",
+            "cheapest data is saved first",
+            "easiest data is copied first",
+            "largest files are ignored"
+        ]
+    },
+    {
+        "q": "Which data is most volatile?",
+        "o": [
+            "CPU Registers and Cache",
+            "RAM",
+            "Hard Drive Data",
+            "Archived Tapes"
+        ]
+    },
+    {
+        "q": "Which is more volatile: RAM or Hard Drive?",
+        "o": [
+            "RAM",
+            "Hard Drive",
+            "They are equal",
+            "Neither is volatile"
+        ]
+    },
+    {
+        "q": "What is a 'Forensic Image'?",
+        "o": [
+            "bit-by-bit copy of media",
+            "photo of the crime scene",
+            "screenshot of the desktop",
+            "copy of selected files"
+        ]
+    },
+    {
+        "q": "What is 'Hashing' used for in forensics?",
+        "o": [
+            "verifying integrity of evidence",
+            "encrypting the evidence",
+            "compressing image size",
+            "sorting files alphabetically"
+        ]
+    },
+    {
+        "q": "What is 'Write Blocker' used for?",
+        "o": [
+            "preventing alteration of evidence drive",
+            "stopping criminals from writing code",
+            "blocking network writes",
+            "locking keyboard input"
+        ]
+    },
+    {
+        "q": "What is 'Anti-Forensics'?",
+        "o": [
+            "techniques to hide or destroy evidence",
+            "analyzing evidence incorrectly",
+            "lawyers arguing in court",
+            "preventing crime beforehand"
+        ]
+    },
+    {
+        "q": "What is 'Memory Dump'?",
+        "o": [
+            "capturing RAM contents to file",
+            "deleting memory buffers",
+            "forgetting passwords",
+            "throwing away RAM sticks"
+        ]
+    },
+    {
+        "q": "What can be found in a Memory Dump?",
+        "o": [
+            "running processes and keys",
+            "files deleted months ago",
+            "BIOS settings only",
+            "CPU serial number"
+        ]
+    },
+    {
+        "q": "What is 'Threat Hunting'?",
+        "o": [
+            "proactively searching for hidden threats",
+            "waiting for alerts to fire",
+            "hunting animals in woods",
+            "installing antivirus software"
+        ]
+    },
+    {
+        "q": "What is an 'IoC'?",
+        "o": [
+            "Indicator of Compromise",
+            "Index of Corruption",
+            "Internal Operating Code",
+            "Internet over Cable"
+        ]
+    },
+    {
+        "q": "Which is an example of an IoC?",
+        "o": [
+            "Unusual outbound network traffic",
+            "Installed antivirus name",
+            "CPU temperature",
+            "User login success"
+        ]
+    },
+    {
+        "q": "What is 'TTP' in threat intel?",
+        "o": [
+            "Tactics, Techniques, and Procedures",
+            "Time To Patch",
+            "Total Threat Potential",
+            "Transmission Type Protocol"
+        ]
+    },
+    {
+        "q": "What is the 'Cyber Kill Chain'?",
+        "o": [
+            "stages of a cyber attack",
+            "list of banned hackers",
+            "software to kill viruses",
+            "hardware destruction sequence"
+        ]
+    },
+    {
+        "q": "What is the first stage of Kill Chain?",
+        "o": [
+            "Reconnaissance",
+            "Weaponization",
+            "Delivery",
+            "Exploitation"
+        ]
+    },
+    {
+        "q": "What happens in 'Weaponization'?",
+        "o": [
+            "coupling exploit with payload",
+            "identifying the target",
+            "launching the attack",
+            "stealing the data"
+        ]
+    },
+    {
+        "q": "What happens in 'Delivery'?",
+        "o": [
+            "transmitting weapon to target",
+            "building the malware",
+            "finding vulnerabilities",
+            "controlling the victim"
+        ]
+    },
+    {
+        "q": "What happens in 'C2' (Command and Control)?",
+        "o": [
+            "attacker communicates with compromised host",
+            "installing the virus",
+            "finding open ports",
+            "encrypting the drive"
+        ]
+    },
+    {
+        "q": "What is 'Actions on Objectives'?",
+        "o": [
+            "achieving the attack goal (exfil/destruction)",
+            "planning the attack",
+            "evading detection",
+            "gaining initial access"
+        ]
+    },
+    {
+        "q": "What is 'MITRE ATT&CK' framework?",
+        "o": [
+            "knowledge base of adversary tactics",
+            "antivirus software suite",
+            "firewall configuration guide",
+            "network monitoring tool"
+        ]
+    },
+    {
+        "q": "What is 'Diamond Model' of intrusion analysis?",
+        "o": [
+            "Adversary, Infrastructure, Capability, Victim",
+            "Confidentiality, Integrity, Availability, Safety",
+            "Identify, Protect, Detect, Respond",
+            "Plan, Do, Check, Act"
+        ]
+    },
+    {
+        "q": "What is 'SOAR' in security ops?",
+        "o": [
+            "Security Orchestration, Automation, Response",
+            "Secure Operation And Recovery",
+            "System Overload Alert Response",
+            "Standard Operating Action Rule"
+        ]
+    },
+    {
+        "q": "What is the benefit of a Playbook in SOAR?",
+        "o": [
+            "standardized automated response steps",
+            "fun games for analysts",
+            "manual logging of events",
+            "physical security procedures"
+        ]
+    },
+    {
+        "q": "What is 'SIEM'?",
+        "o": [
+            "Security Information and Event Management",
+            "System Incident Emergency Mode",
+            "Secure Internet Email Module",
+            "Server Infrastructure Error Monitor"
+        ]
+    },
+    {
+        "q": "What allows SIEM to correlate events?",
+        "o": [
+            "Time Synchronization (NTP)",
+            "Fast internet speed",
+            "Large hard drives",
+            "Color coded logs"
+        ]
+    },
+    {
+        "q": "What is 'Log Normalization'?",
+        "o": [
+            "converting logs to standard format",
+            "deleting duplicate logs",
+            "encrypting log files",
+            "compressing old logs"
+        ]
+    },
+    {
+        "q": "What is 'WORM' storage media?",
+        "o": [
+            "Write Once Read Many",
+            "Write Often Read Mostly",
+            "Wireless Only Radio Mode",
+            "Windows Operational Recovery Module"
+        ]
+    },
+    {
+        "q": "Why use WORM for logs?",
+        "o": [
+            "prevent alteration of history",
+            "save disk space",
+            "increase read speed",
+            "encrypt data automatically"
+        ]
+    },
+    {
+        "q": "What is 'Penetration Testing'?",
+        "o": [
+            "simulated cyber attack to find flaws",
+            "installing firewalls",
+            "monitoring network traffic",
+            "repairing broken servers"
+        ]
+    },
+    {
+        "q": "What is 'Black Box' testing?",
+        "o": [
+            "tester has no prior knowledge",
+            "tester has full knowledge",
+            "tester has partial knowledge",
+            "testing black hardware"
+        ]
+    },
+    {
+        "q": "What is 'White Box' testing?",
+        "o": [
+            "tester has full knowledge/access",
+            "tester has no knowledge",
+            "testing white hardware",
+            "testing legal compliance"
+        ]
+    },
+    {
+        "q": "What is 'Gray Box' testing?",
+        "o": [
+            "tester has partial knowledge",
+            "tester is color blind",
+            "testing old systems",
+            "testing cloud only"
+        ]
+    },
+    {
+        "q": "What is 'Rules of Engagement' (RoE)?",
+        "o": [
+            "guidelines and limits for the test",
+            "strategies for winning war",
+            "marriage proposal rules",
+            "coding syntax standards"
+        ]
+    },
+    {
+        "q": "What is 'Pivot' in pen testing?",
+        "o": [
+            "using compromised host to attack others",
+            "rotating the monitor",
+            "changing attack strategy",
+            "generating reports"
+        ]
+    },
+    {
+        "q": "What is 'Persistence' in pen testing?",
+        "o": [
+            "maintaining access after restart",
+            "working long hours",
+            "trying many passwords",
+            "scanning continuously"
+        ]
+    },
+    {
+        "q": "What is 'Bug Bounty' program?",
+        "o": [
+            "rewarding public for finding bugs",
+            "internal QA testing bonus",
+            "hiring exterminators",
+            "buying software bugs"
+        ]
+    },
+    {
+        "q": "What is 'Red Team'?",
+        "o": [
+            "offensive security team (attackers)",
+            "defensive security team",
+            "management team",
+            "audit team"
+        ]
+    },
+    {
+        "q": "What is 'Blue Team'?",
+        "o": [
+            "defensive security team (defenders)",
+            "offensive security team",
+            "network administrators",
+            "helpdesk support"
+        ]
+    },
+    {
+        "q": "What is 'Purple Team'?",
+        "o": [
+            "collaboration of Red and Blue teams",
+            "senior management",
+            "external auditors",
+            "hr department"
+        ]
+    },
+    {
+        "q": "What is 'Social Engineering' Toolkit (SET)?",
+        "o": [
+            "tools for human-side attacks",
+            "software for team building",
+            "social media manager",
+            "contact list organizer"
+        ]
+    },
+    {
+        "q": "What is 'Phishing' simulation?",
+        "o": [
+            "testing user awareness with fake emails",
+            "fishing video game",
+            "sending real malware to users",
+            "checking email server speed"
+        ]
+    },
+    {
+        "q": "What is 'Vishing'?",
+        "o": [
+            "Voice Phishing (phone calls)",
+            "Video Phishing",
+            "Virtual Phishing",
+            "Visual Phishing"
+        ]
+    },
+    {
+        "q": "What is 'Smishing'?",
+        "o": [
+            "SMS Phishing (text messages)",
+            "Smart Phishing",
+            "Small Phishing",
+            "Smile Phishing"
+        ]
+    },
+    {
+        "q": "What is 'Whaling'?",
+        "o": [
+            "targeting high-level executives",
+            "hunting whales online",
+            "storing massive data",
+            "phishing for large files"
+        ]
+    },
+    {
+        "q": "What is 'Spear Phishing'?",
+        "o": [
+            "targeting specific individuals",
+            "random mass email spam",
+            "attacking underwater cables",
+            "fishing with a spear"
+        ]
+    },
+    {
+        "q": "What is 'Pharming'?",
+        "o": [
+            "redirecting traffic to fake site via DNS",
+            "growing server farms",
+            "harvesting email addresses",
+            "planting logic bombs"
+        ]
+    },
+    {
+        "q": "What is 'Watering Hole' attack?",
+        "o": [
+            "infecting site visited by target group",
+            "poisoning office water cooler",
+            "flooding server room",
+            "leaking plumbing data"
+        ]
+    },
+    {
+        "q": "What is 'Typocquatting'?",
+        "o": [
+            "registering misspelled domain names",
+            "typing too fast",
+            "squatting in server room",
+            "using wrong keyboard layout"
+        ]
+    },
+    {
+        "q": "What is 'Dumpster Diving' countermeasure?",
+        "o": [
+            "Shredding documents",
+            "Using clear trash bags",
+            "Recycling paper",
+            "Locking dumpsters only"
+        ]
+    },
+    {
+        "q": "What is 'Shoulder Surfing' countermeasure?",
+        "o": [
+            "Privacy screens",
+            "Larger monitors",
+            "Brighter screens",
+            "Standing desks"
+        ]
+    },
+    {
+        "q": "What is 'Tailgating' countermeasure?",
+        "o": [
+            "Man-traps and awareness",
+            "Faster doors",
+            "No ID badges",
+            "Open door policy"
+        ]
+    },
+    {
+        "q": "What is 'Pretexting'?",
+        "o": [
+            "inventing a scenario to get info",
+            "texting before calling",
+            "writing a preface",
+            "testing software pre-release"
+        ]
+    },
+    {
+        "q": "What is 'Quid Pro Quo' attack?",
+        "o": [
+            "offering service for info",
+            "asking for money",
+            "threatening violence",
+            "hacking for revenge"
+        ]
+    },
+    {
+        "q": "What is 'Baiting'?",
+        "o": [
+            "leaving infected media to be found",
+            "insulting someone online",
+            "fishing for compliments",
+            "feeding birds"
+        ]
+    },
+    {
+        "q": "What is 'Influence Campaign'?",
+        "o": [
+            "swaying public opinion via disinformation",
+            "marketing a new product",
+            "campaigning for office",
+            "teaching a class"
+        ]
+    },
+    {
+        "q": "What is 'Deepfake'?",
+        "o": [
+            "AI-generated fake audio/video",
+            "diving deep into code",
+            "fake deepdish pizza",
+            "hidden encrypted partition"
+        ]
+    },
+    {
+        "q": "What is 'Hybrid Warfare'?",
+        "o": [
+            "combining conventional and cyber attacks",
+            "fighting with hybrid cars",
+            "using two types of firewalls",
+            "mixing windows and linux"
+        ]
+    },
+    {
+        "q": "What is 'Supply Chain' attack?",
+        "o": [
+            "compromising third-party vendor",
+            "stealing shipping trucks",
+            "breaking metal chains",
+            "disrupting food supply"
+        ]
+    },
+    {
+        "q": "What is 'Cloud Service Provider' risk?",
+        "o": [
+            "vendor lock-in",
+            "unlimited scalability",
+            "lower cost",
+            "automatic updates"
+        ]
+    },
+    {
+        "q": "What is 'Data Sovereignty' risk?",
+        "o": [
+            "data stored in foreign jurisdiction",
+            "data becoming king",
+            "data lost in space",
+            "data encryption failure"
+        ]
+    },
+    {
+        "q": "What is 'Right to Audit' clause?",
+        "o": [
+            "permission to inspect vendor security",
+            "right to listen to audio",
+            "right to tax audit",
+            "permission to hack vendor"
+        ]
+    },
+    {
+        "q": "What is 'SLA' importance?",
+        "o": [
+            "defines guaranteed uptime/performance",
+            "lists employee salaries",
+            "legal disclaimer for website",
+            "software license key"
+        ]
+    },
+    {
+        "q": "What is 'MTBF'?",
+        "o": [
+            "Mean Time Between Failures",
+            "Maximum Time Before Fail",
+            "Minimum Time Between Fixes",
+            "Mean Time Big Failure"
+        ]
+    },
+    {
+        "q": "What is 'MTTR'?",
+        "o": [
+            "Mean Time To Repair",
+            "Maximum Time To Respond",
+            "Minimum Time To Recover",
+            "Mean Time To Reboot"
+        ]
+    },
+    {
+        "q": "What is 'RPO'?",
+        "o": [
+            "Recovery Point Objective (data loss)",
+            "Recovery Plan Option",
+            "Rapid Process Output",
+            "Return Point Origin"
+        ]
+    },
+    {
+        "q": "What is 'RTO'?",
+        "o": [
+            "Recovery Time Objective (downtime)",
+            "Real Time Operation",
+            "Return To Office",
+            "Rapid Time Out"
+        ]
+    },
+    {
+        "q": "What is 'Business Continuity Plan' (BCP)?",
+        "o": [
+            "keeping business running during disaster",
+            "plan to start a new business",
+            "backing up files only",
+            "installing antivirus"
+        ]
+    },
+    {
+        "q": "What is 'Disaster Recovery Plan' (DRP)?",
+        "o": [
+            "restoring IT systems after disaster",
+            "cleaning up after a party",
+            "buying insurance",
+            "evacuation route only"
+        ]
+    },
+    {
+        "q": "What is 'High Availability'?",
+        "o": [
+            "systems operational 99.999% of time",
+            "systems are very tall",
+            "systems are expensive",
+            "systems use high power"
+        ]
+    },
+    {
+        "q": "What is 'Failover'?",
+        "o": [
+            "switching to redundant system on failure",
+            "system crashing completely",
+            "failing over and over",
+            "turning off the power"
+        ]
+    },
+    {
+        "q": "What is the primary goal of Bell-LaPadula model?",
+        "o": [
+            "Confidentiality",
+            "Integrity",
+            "Availability",
+            "Accountability"
+        ]
+    },
+    {
+        "q": "What is the 'Simple Security Property' in Bell-LaPadula?",
+        "o": [
+            "No Read Up",
+            "No Write Down",
+            "No Read Down",
+            "No Write Up"
+        ]
+    },
+    {
+        "q": "What is the 'Star Property' (*-Property) in Bell-LaPadula?",
+        "o": [
+            "No Write Down",
+            "No Read Up",
+            "No Write Up",
+            "No Read Down"
+        ]
+    },
+    {
+        "q": "What is the primary goal of Biba model?",
+        "o": [
+            "Integrity",
+            "Confidentiality",
+            "Availability",
+            "Reliability"
+        ]
+    },
+    {
+        "q": "What is the 'Simple Integrity Property' in Biba?",
+        "o": [
+            "No Read Down",
+            "No Write Up",
+            "No Read Up",
+            "No Write Down"
+        ]
+    },
+    {
+        "q": "What is the 'Star Integrity Property' in Biba?",
+        "o": [
+            "No Write Up",
+            "No Read Down",
+            "No Write Down",
+            "No Read Up"
+        ]
+    },
+    {
+        "q": "What does Clark-Wilson model focus on?",
+        "o": [
+            "Commercial Integrity and Well-formed Transactions",
+            "Military Confidentiality",
+            "Availability of Services",
+            "Network routing protocols"
+        ]
+    },
+    {
+        "q": "What is 'Separation of Duties' in Clark-Wilson?",
+        "o": [
+            "dividing tasks so one person lacks full control",
+            "separating network cables",
+            "hiring two ceos",
+            "splitting database into tables"
+        ]
+    },
+    {
+        "q": "What is the 'Brewer-Nash' model also known as?",
+        "o": [
+            "Chinese Wall Model",
+            "Berlin Wall Model",
+            "Great Wall Model",
+            "Firewall Model"
+        ]
+    },
+    {
+        "q": "What does Brewer-Nash prevent?",
+        "o": [
+            "Conflict of Interest",
+            "Data corruption",
+            "Unauthorized encryption",
+            "DDoS attacks"
+        ]
+    },
+    {
+        "q": "What is 'Graham-Denning' model about?",
+        "o": [
+            "secure creation and deletion of subjects/objects",
+            "encrypting email",
+            "managing firewall rules",
+            "physical security access"
+        ]
+    },
+    {
+        "q": "What is 'Harrison-Ruzzo-Ullman' (HRU) model?",
+        "o": [
+            "managing access rights in operating systems",
+            "calculating risk probability",
+            "designing secure hardware",
+            "monitoring network traffic"
+        ]
+    },
+    {
+        "q": "What is 'Lipner's Integrity Matrix Model'?",
+        "o": [
+            "combines Bell-LaPadula and Biba",
+            "upgrade to RSA encryption",
+            "new firewall technology",
+            "virus scanning method"
+        ]
+    },
+    {
+        "q": "What is 'TCSEC' commonly called?",
+        "o": [
+            "Orange Book",
+            "Red Book",
+            "Green Book",
+            "Blue Book"
+        ]
+    },
+    {
+        "q": "Which TCSEC level is highest security?",
+        "o": [
+            "A1",
+            "D",
+            "C2",
+            "B1"
+        ]
+    },
+    {
+        "q": "What is 'Kerckhoffs's Principle'?",
+        "o": [
+            "security should not rely on secrecy of algorithm",
+            "security through obscurity is best",
+            "longer keys are always better",
+            "encryption is unbreakable"
+        ]
+    },
+    {
+        "q": "What is 'Work Factor' in crypto?",
+        "o": [
+            "effort/time needed to break encryption",
+            "salary of security engineer",
+            "electricity used by cpu",
+            "speed of network"
+        ]
+    },
+    {
+        "q": "What is a 'Covert Channel'?",
+        "o": [
+            "hiding data in unintended communication paths",
+            "encrypted VPN tunnel",
+            "secure radio frequency",
+            "official press release"
+        ]
+    },
+    {
+        "q": "What is 'Covert Storage Channel'?",
+        "o": [
+            "hiding data in storage attributes",
+            "storing files in hidden folder",
+            "encrypting hard drive",
+            "locking file cabinet"
+        ]
+    },
+    {
+        "q": "What is 'Covert Timing Channel'?",
+        "o": [
+            "modulating system timing to signal data",
+            "sending email at midnight",
+            "synchronizing clocks",
+            "timing the boot process"
+        ]
+    },
+    {
+        "q": "What is 'Inference' attack in databases?",
+        "o": [
+            "deducing sensitive info from non-sensitive data",
+            "encrypting the database",
+            "deleting the database",
+            "copying the database"
+        ]
+    },
+    {
+        "q": "What is 'Aggregation' attack?",
+        "o": [
+            "combining low-sensitivity data to reveal high",
+            "summing up numbers in excel",
+            "collecting logs centrally",
+            "backing up data"
+        ]
+    },
+    {
+        "q": "What is 'Polyinstantiation'?",
+        "o": [
+            "multiple instances of data to prevent inference",
+            "copying objects in code",
+            "running parallel virtual machines",
+            "installing software twice"
+        ]
+    },
+    {
+        "q": "What is 'Quantum Computing' threat to crypto?",
+        "o": [
+            "breaking current public key algorithms quickly",
+            "making computers too expensive",
+            "overheating data centers",
+            "creating too much data"
+        ]
+    },
+    {
+        "q": "Which algorithm does Shor's Algorithm break?",
+        "o": [
+            "RSA and ECC",
+            "AES",
+            "One-Time Pad",
+            "MD5"
+        ]
+    },
+    {
+        "q": "What does Grover's Algorithm affect?",
+        "o": [
+            "Symmetric ciphers (reduces effective key size)",
+            "Public key crypto only",
+            "Hashing only",
+            "Network speed"
+        ]
+    },
+    {
+        "q": "What is 'Post-Quantum Cryptography'?",
+        "o": [
+            "algorithms resistant to quantum computers",
+            "crypto used only by aliens",
+            "encryption for time travel",
+            "hardware based encryption"
+        ]
+    },
+    {
+        "q": "What is 'Homomorphic Encryption'?",
+        "o": [
+            "performing calculations on encrypted data",
+            "encrypting same data twice",
+            "hiding data in images",
+            "encrypting home wifi"
+        ]
+    },
+    {
+        "q": "What is 'Zero-Knowledge Proof'?",
+        "o": [
+            "proving you know secret without revealing it",
+            "proving you know nothing",
+            "taking a test with no study",
+            "encrypting with 0 keys"
+        ]
+    },
+    {
+        "q": "What is 'Perfect Forward Secrecy' (PFS)?",
+        "o": [
+            "compromise of long-term key doesn't compromise past sessions",
+            "keeping secrets forever",
+            "forwarding email securely",
+            "predicting future attacks"
+        ]
+    },
+    {
+        "q": "What is 'HSM' (Hardware Security Module)?",
+        "o": [
+            "dedicated appliance for key management",
+            "high speed modem",
+            "hardware sensor monitor",
+            "home security monitor"
+        ]
+    },
+    {
+        "q": "What is 'TPM' (Trusted Platform Module)?",
+        "o": [
+            "microchip on motherboard for security",
+            "total process management",
+            "Trusted Party Member",
+            "Third Party Monitor"
+        ]
+    },
+    {
+        "q": "What is 'Attestation' in TPM?",
+        "o": [
+            "proving integrity of system state to remote party",
+            "testing software code",
+            "legal testimony in court",
+            "renewing a certificate"
+        ]
+    },
+    {
+        "q": "What is 'Data Remanence'?",
+        "o": [
+            "residual data left after deletion",
+            "backup data storage",
+            "memory leakage in code",
+            "archived old emails"
+        ]
+    },
+    {
+        "q": "What is 'Degaussing'?",
+        "o": [
+            "destroying magnetic media with magnet",
+            "cleaning a screen",
+            "rebooting a server",
+            "encrypting a tape"
+        ]
+    },
+    {
+        "q": "What is 'Crypto-shredding'?",
+        "o": [
+            "destroying the key effectively deletes data",
+            "putting paper in shredder",
+            "breaking hardware physically",
+            "overwriting disk 35 times"
+        ]
+    },
+    {
+        "q": "What is 'GDPR' primarily protecting?",
+        "o": [
+            "Personal Data of EU citizens",
+            "Government secrets",
+            "Corporate intellectual property",
+            "US military data"
+        ]
+    },
+    {
+        "q": "What is 'Right to be Forgotten' (Erasure)?",
+        "o": [
+            "user can request data deletion",
+            "user can forget password",
+            "server deletes logs automatically",
+            "encrypting data forever"
+        ]
+    },
+    {
+        "q": "What is 'Data Portability'?",
+        "o": [
+            "right to receive data in common format",
+            "moving laptop around",
+            "copying files to usb",
+            "sending email attachments"
+        ]
+    },
+    {
+        "q": "What is 'Privacy by Design'?",
+        "o": [
+            "integrating privacy from start of project",
+            "buying privacy screens",
+            "hiring a privacy officer",
+            "encrypting only at end"
+        ]
+    },
+    {
+        "q": "What is a 'DPO'?",
+        "o": [
+            "Data Protection Officer",
+            "Data Processing Output",
+            "Digital Policy Organizer",
+            "Director of Privacy Ops"
+        ]
+    },
+    {
+        "q": "What is 'SOX' (Sarbanes-Oxley) focus?",
+        "o": [
+            "financial reporting and corporate governance",
+            "healthcare data privacy",
+            "credit card security",
+            "student records privacy"
+        ]
+    },
+    {
+        "q": "What is 'HIPAA' focus?",
+        "o": [
+            "Protected Health Information (PHI)",
+            "Financial records",
+            "Credit card numbers",
+            "Educational records"
+        ]
+    },
+    {
+        "q": "What is 'PCI-DSS' focus?",
+        "o": [
+            "Credit Card data security",
+            "Personal health info",
+            "Government secrets",
+            "Public websites"
+        ]
+    },
+    {
+        "q": "What is 'GLBA' (Gramm-Leach-Bliley Act)?",
+        "o": [
+            "financial institutions data privacy",
+            "global banking law",
+            "general liability act",
+            "government legal board"
+        ]
+    },
+    {
+        "q": "What is 'COPPA'?",
+        "o": [
+            "Children's Online Privacy Protection Act",
+            "Copyright Protection Act",
+            "Computer Operations Policy",
+            "Corporate Ownership Plan"
+        ]
+    },
+    {
+        "q": "What is 'Formula for SLE'?",
+        "o": [
+            "Asset Value x Exposure Factor",
+            "Risk x Probability",
+            "Threat x Vulnerability",
+            "Cost / Benefit"
+        ]
+    },
+    {
+        "q": "What is 'Formula for ALE'?",
+        "o": [
+            "SLE x ARO",
+            "AV x EF",
+            "Risk + Cost",
+            "SLE / Years"
+        ]
+    },
+    {
+        "q": "What is 'ARO' in risk?",
+        "o": [
+            "Annualized Rate of Occurrence",
+            "Average Restoration Option",
+            "Asset Recovery Operation",
+            "Automated Risk Order"
+        ]
+    },
+    {
+        "q": "What is 'Residual Risk'?",
+        "o": [
+            "risk remaining after controls applied",
+            "risk sent to trash",
+            "risk accepted by management",
+            "risk transferred to insurance"
+        ]
+    },
+    {
+        "q": "What is 'Inherent Risk'?",
+        "o": [
+            "risk before any controls",
+            "risk that is inherited",
+            "risk that is internal",
+            "risk of doing nothing"
+        ]
+    },
+    {
+        "q": "What is 'Risk Transfer'?",
+        "o": [
+            "shifting risk to third party (insurance)",
+            "ignoring the risk",
+            "fixing the risk",
+            "accepting the risk"
+        ]
+    },
+    {
+        "q": "What is 'Risk Avoidance'?",
+        "o": [
+            "stopping activity that causes risk",
+            "ignoring the risk exists",
+            "hiding the risk",
+            "running away from risk"
+        ]
+    },
+    {
+        "q": "What is 'Risk Acceptance'?",
+        "o": [
+            "acknowledging and tolerating risk",
+            "fixing the risk later",
+            "buying insurance",
+            "denying the risk"
+        ]
+    },
+    {
+        "q": "What is 'Risk Mitigation'?",
+        "o": [
+            "implementing controls to reduce risk",
+            "canceling the project",
+            "watching the risk grow",
+            "defining the risk"
+        ]
+    },
+    {
+        "q": "What is 'Zachman Framework'?",
+        "o": [
+            "ontology for enterprise architecture",
+            "javascript framework",
+            "risk management tool",
+            "burp suite plugin"
+        ]
+    },
+    {
+        "q": "What columns are in Zachman Framework?",
+        "o": [
+            "What, How, Where, Who, When, Why",
+            "Confidentiality, Integrity, Availability",
+            "Plan, Do, Check, Act",
+            "Identify, Protect, Detect"
+        ]
+    },
+    {
+        "q": "What is 'Sherwood Applied Business Security Architecture' (SABSA)?",
+        "o": [
+            "security architecture framework layered like Zachman",
+            "software development lifecycle",
+            "network routing protocol",
+            "encryption algorithm"
+        ]
+    },
+    {
+        "q": "What is 'Open Group Architecture Framework' (TOGAF)?",
+        "o": [
+            "framework for enterprise architecture",
+            "open source software license",
+            "group messaging app",
+            "access control list"
+        ]
+    },
+    {
+        "q": "What is 'Due Diligence'?",
+        "o": [
+            "research and investigation before decision",
+            "doing the work quickly",
+            "paying bills on time",
+            "following orders blindly"
+        ]
+    },
+    {
+        "q": "What is 'Due Care'?",
+        "o": [
+            "prudent person rule (acting responsibly)",
+            "caring for employees",
+            "cleaning the server room",
+            "renewing certificates"
+        ]
+    },
+    {
+        "q": "What is 'Negligence'?",
+        "o": [
+            "failure to exercise due care",
+            "hacking a system",
+            "stealing data",
+            "forgetting a password"
+        ]
+    },
+    {
+        "q": "What is 'Civil Law' focused on?",
+        "o": [
+            "disputes between individuals/orgs (compensation)",
+            "crimes against society (prison)",
+            "religious rules",
+            "military court martial"
+        ]
+    },
+    {
+        "q": "What is 'Criminal Law' focused on?",
+        "o": [
+            "public order and punishment (prison/fines)",
+            "contract disputes",
+            "copyright infringement lawsuits",
+            "employee firing"
+        ]
+    },
+    {
+        "q": "What is 'Administrative Law'?",
+        "o": [
+            "regulations by government agencies",
+            "laws of administration office",
+            "rules for secretaries",
+            "server admin rules"
+        ]
+    },
+    {
+        "q": "What is 'Intellectual Property'?",
+        "o": [
+            "creations of the mind (copyright, patent)",
+            "smart property investment",
+            "AI generated content",
+            "university textbooks"
+        ]
+    },
+    {
+        "q": "What does a 'Patent' protect?",
+        "o": [
+            "inventions and processes",
+            "music and art",
+            "brand names and logos",
+            "source code text"
+        ]
+    },
+    {
+        "q": "What does 'Copyright' protect?",
+        "o": [
+            "expression of ideas (books, code, art)",
+            "inventions",
+            "short names and slogans",
+            "facts and data"
+        ]
+    },
+    {
+        "q": "What does 'Trademark' protect?",
+        "o": [
+            "brand identity (logos, names)",
+            "secret recipes",
+            "software algorithms",
+            "music lyrics"
+        ]
+    },
+    {
+        "q": "What protects a 'Trade Secret'?",
+        "o": [
+            "confidentiality agreements (NDAs)",
+            "registering with government",
+            "publishing it in paper",
+            "copyright symbol"
+        ]
+    },
+    {
+        "q": "What is 'Wassenaar Arrangement'?",
+        "o": [
+            "export controls on dual-use goods (crypto)",
+            "international fishing treaty",
+            "internet protocol standard",
+            "european privacy law"
+        ]
+    },
+    {
+        "q": "What works as an 'Administrative Control'?",
+        "o": [
+            "Policy and Procedures",
+            "Firewall",
+            "Fence",
+            "Encryption"
+        ]
+    },
+    {
+        "q": "What works as a 'Technical Control'?",
+        "o": [
+            "Firewall",
+            "Policy document",
+            "Security Guard",
+            "Background check"
+        ]
+    },
+    {
+        "q": "What works as a 'Physical Control'?",
+        "o": [
+            "Lock",
+            "Password",
+            "ACL",
+            "Training"
+        ]
+    },
+    {
+        "q": "What is 'Preventive Control'?",
+        "o": [
+            "stops incident from happening",
+            "detects incident happening",
+            "fixes incident after",
+            "compensates for missing control"
+        ]
+    },
+    {
+        "q": "What is 'Detective Control'?",
+        "o": [
+            "identifies incident occurred",
+            "stops incident",
+            "repairs damage",
+            "prevents access"
+        ]
+    },
+    {
+        "q": "What is 'Corrective Control'?",
+        "o": [
+            "restores systems after incident",
+            "monitors logs",
+            "blocks traffic",
+            "encrypts hard drive"
+        ]
+    },
+    {
+        "q": "What is 'Deterrent Control'?",
+        "o": [
+            "discourages attacker (warning sign)",
+            "physically stops attacker",
+            "catches attacker",
+            "heals the system"
+        ]
+    },
+    {
+        "q": "What is 'Compensating Control'?",
+        "o": [
+            "alternative control when primary is missing",
+            "paying money for security",
+            "insurance policy",
+            "backup server"
+        ]
+    },
+    {
+        "q": "What is 'Recovery Control'?",
+        "o": [
+            "restoring data from backups",
+            "installing updates",
+            "scanning for viruses",
+            "training users"
+        ]
+    },
+    {
+        "q": "What is 'Egress Filtering'?",
+        "o": [
+            "filtering outbound traffic",
+            "filtering inbound traffic",
+            "filtering email spam",
+            "filtering water cooling"
+        ]
+    },
+    {
+        "q": "What does Egress Filtering prevent?",
+        "o": [
+            "C2 communication and data exfiltration",
+            "users downloading viruses",
+            "hackers getting in",
+            "system crashing"
+        ]
+    },
+    {
+        "q": "What is 'Data Loss Prevention' (DLP)?",
+        "o": [
+            "detecting/preventing sensitive data leak",
+            "backing up data to tape",
+            "deleting unused data",
+            "hiding data in images"
+        ]
+    },
+    {
+        "q": "What is 'Endpoint Detection and Response' (EDR)?",
+        "o": [
+            "monitoring/responding to threats on endpoints",
+            "antivirus signature scanning",
+            "firewall for the internet",
+            "email filtering service"
+        ]
+    },
+    {
+        "q": "What is 'XDR'?",
+        "o": [
+            "Extended Detection and Response (cross-layered)",
+            "Extreme Data Recovery",
+            "Extra Drive Redundancy",
+            "Xenon Disk Raid"
+        ]
+    },
+    {
+        "q": "What is 'Zero Trust' architecture?",
+        "o": [
+            "never trust, always verify",
+            "trust internal network only",
+            "trust everyone",
+            "trust no one except admin"
+        ]
+    },
+    {
+        "q": "What is 'Micro-segmentation'?",
+        "o": [
+            "isolating workloads individually",
+            "using small network cables",
+            "splitting hard drive partitions",
+            "hiring small teams"
+        ]
+    },
+    {
+        "q": "What is 'Just-In-Time' (JIT) access?",
+        "o": [
+            "granting access only when needed for limited time",
+            "logging in really fast",
+            "accessing correct server",
+            "compiling code at runtime"
+        ]
+    },
+    {
+        "q": "What is 'Just-Enough-Administration' (JEA)?",
+        "o": [
+            "limiting admin privileges to task",
+            "hiring fewer admins",
+            "using cheap hardware",
+            "ignoring logs"
+        ]
+    },
+    {
+        "q": "What is 'Privileged Access Management' (PAM)?",
+        "o": [
+            "securing/monitoring privileged accounts",
+            "managing printer access",
+            "public address system",
+            "personal assistant manager"
+        ]
+    },
+    {
+        "q": "What is 'UEBA'?",
+        "o": [
+            "User and Entity Behavior Analytics",
+            "Universal Encryption Base Algorithm",
+            "Unified Email Backup Agent",
+            "User Experience Best Action"
+        ]
+    },
+    {
+        "q": "What does UEBA detect?",
+        "o": [
+            "anomalous behavior deviating from baseline",
+            "viruses by signature",
+            "firewall rule violations",
+            "hardware failures"
+        ]
+    },
+    {
+        "q": "What is 'Honeypot'?",
+        "o": [
+            "decoy system to lure attackers",
+            "storage for passwords",
+            "sweet treat for admins",
+            "sticky keyboard"
+        ]
+    },
+    {
+        "q": "What is 'Honeynet'?",
+        "o": [
+            "network of honeypots",
+            "internet for bees",
+            "fast fiber network",
+            "encrypted vpn mesh"
+        ]
+    },
+    {
+        "q": "What is 'Darknet' monitoring?",
+        "o": [
+            "monitoring unused IP space",
+            "monitoring dark web sites",
+            "monitoring at night",
+            "monitoring encrypted traffic"
+        ]
+    },
+    {
+        "q": "What is 'Sinkhole' in security?",
+        "o": [
+            "redirecting malicious traffic to nowhere",
+            "hole in the ground",
+            "water drainage system",
+            "deleting all data"
+        ]
+    },
+    {
+        "q": "What is 'Threat Hunting'?",
+        "o": [
+            "proactively searching for hidden threats",
+            "hunting animals for sport",
+            "finding bugs in code",
+            "looking for lost files"
+        ]
+    },
+    {
+        "q": "What is 'Red Team' in security?",
+        "o": [
+            "offensive team simulating attacks",
+            "team wearing red shirts",
+            "emergency response team",
+            "fire safety team"
+        ]
+    },
+    {
+        "q": "What is 'Blue Team' in security?",
+        "o": [
+            "defensive team protecting systems",
+            "team in blue uniforms",
+            "water cooling team",
+            "HR department"
+        ]
+    },
+    {
+        "q": "What is 'Purple Team'?",
+        "o": [
+            "collaboration between red and blue teams",
+            "team in purple shirts",
+            "management team",
+            "legal department"
+        ]
+    },
+    {
+        "q": "What is 'SOAR' in security?",
+        "o": [
+            "Security Orchestration Automation Response",
+            "System Oriented Attack Recovery",
+            "Secure Online Access Registry",
+            "Strategic Offensive Attack Readiness"
+        ]
+    },
+    {
+        "q": "What is 'SIEM' purpose?",
+        "o": [
+            "Security event correlation and analysis",
+            "Simple Internet Email Manager",
+            "System Integration Engine Module",
+            "Secure Internet Exchange Monitor"
+        ]
+    },
+    {
+        "q": "What is 'IOC' in threat intel?",
+        "o": [
+            "Indicator of Compromise",
+            "Internet of Connections",
+            "Input Output Controller",
+            "Integration of Components"
+        ]
+    },
+    {
+        "q": "What is 'TTP' in threat intel?",
+        "o": [
+            "Tactics Techniques Procedures",
+            "Total Threat Protection",
+            "Trusted Third Party",
+            "Transfer Transport Protocol"
+        ]
+    },
+    {
+        "q": "What is 'Kill Chain' concept?",
+        "o": [
+            "stages of a cyber attack",
+            "manufacturing process",
+            "supply chain management",
+            "email forwarding chain"
+        ]
+    }
+]

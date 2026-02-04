@@ -1,0 +1,4547 @@
+[
+    {
+        "q": "What protocol does Windows use by default for domain authentication?",
+        "o": [
+            "Kerberos",
+            "NTLM only",
+            "LDAP only",
+            "OAuth 2.0"
+        ]
+    },
+    {
+        "q": "What is the primary function of Active Directory in a Windows network?",
+        "o": [
+            "Centralized identity management",
+            "File compression service",
+            "Antivirus scanning tool",
+            "Disk defragmentation"
+        ]
+    },
+    {
+        "q": "Which Windows feature stores user credentials locally for offline use?",
+        "o": [
+            "Credential Manager",
+            "Windows Firewall",
+            "Task Scheduler",
+            "Event Viewer"
+        ]
+    },
+    {
+        "q": "What file contains the local Windows password hashes?",
+        "o": [
+            "SAM",
+            "SYSTEM",
+            "SECURITY",
+            "SOFTWARE"
+        ]
+    },
+    {
+        "q": "Which authentication protocol is considered legacy in Windows?",
+        "o": [
+            "NTLM",
+            "Kerberos",
+            "OAuth",
+            "SAML"
+        ]
+    },
+    {
+        "q": "What is Group Policy primarily used for in Windows environments?",
+        "o": [
+            "Centralized system configuration",
+            "Database administration tasks",
+            "Hardware driver updates",
+            "Network speed optimization"
+        ]
+    },
+    {
+        "q": "Where are Group Policy Objects stored in Active Directory?",
+        "o": [
+            "SYSVOL folder",
+            "System32 folder",
+            "Program Files",
+            "Windows Temp"
+        ]
+    },
+    {
+        "q": "What is the default domain controller security database called?",
+        "o": [
+            "NTDS.dit",
+            "SAM.db",
+            "AD.mdb",
+            "DC.sys"
+        ]
+    },
+    {
+        "q": "Which Windows service manages Kerberos ticket requests?",
+        "o": [
+            "Key Distribution Center",
+            "Local Security Authority",
+            "Windows Defender",
+            "Remote Registry"
+        ]
+    },
+    {
+        "q": "What command opens the Local Security Policy editor in Windows?",
+        "o": [
+            "secpol.msc",
+            "gpedit.msc",
+            "regedit.exe",
+            "services.msc"
+        ]
+    },
+    {
+        "q": "Which user group has the highest privileges in Windows?",
+        "o": [
+            "Administrators",
+            "Power Users",
+            "Backup Operators",
+            "Remote Desktop"
+        ]
+    },
+    {
+        "q": "What is the purpose of User Account Control in Windows?",
+        "o": [
+            "Prevent unauthorized changes",
+            "Compress user files",
+            "Schedule system backups",
+            "Monitor network traffic"
+        ]
+    },
+    {
+        "q": "Which protocol secures LDAP communications over SSL?",
+        "o": [
+            "LDAPS",
+            "LDAP-TLS",
+            "LDAP-SEC",
+            "SLDAP"
+        ]
+    },
+    {
+        "q": "What Windows tool displays security audit logs?",
+        "o": [
+            "Event Viewer",
+            "Task Manager",
+            "Device Manager",
+            "Disk Manager"
+        ]
+    },
+    {
+        "q": "Which account is automatically disabled in modern Windows?",
+        "o": [
+            "Guest account",
+            "Administrator",
+            "System account",
+            "Network Service"
+        ]
+    },
+    {
+        "q": "What is the purpose of Windows Defender in the operating system?",
+        "o": [
+            "Antivirus protection",
+            "Disk partitioning",
+            "Network routing",
+            "File compression"
+        ]
+    },
+    {
+        "q": "Which feature in Windows Defender provides real-time protection?",
+        "o": [
+            "Real-time monitoring",
+            "Scheduled scans only",
+            "Manual scanning mode",
+            "Offline detection"
+        ]
+    },
+    {
+        "q": "What is a Security Identifier in Windows?",
+        "o": [
+            "Unique user or group ID",
+            "File encryption key",
+            "Network adapter MAC",
+            "Registry entry name"
+        ]
+    },
+    {
+        "q": "Which Windows registry hive contains security settings?",
+        "o": [
+            "HKEY_LOCAL_MACHINE",
+            "HKEY_CURRENT_USER",
+            "HKEY_CLASSES_ROOT",
+            "HKEY_DYN_DATA"
+        ]
+    },
+    {
+        "q": "What is LSASS process responsible for in Windows?",
+        "o": [
+            "Security policy enforcement",
+            "File system indexing",
+            "Print spooler service",
+            "Desktop window manager"
+        ]
+    },
+    {
+        "q": "Which GPO setting enforces password complexity requirements?",
+        "o": [
+            "Password Policy",
+            "Audit Policy",
+            "Firewall Rules",
+            "Update Settings"
+        ]
+    },
+    {
+        "q": "What does the net user command display in Windows?",
+        "o": [
+            "User account information",
+            "Network adapter status",
+            "Running services list",
+            "System memory usage"
+        ]
+    },
+    {
+        "q": "Which Windows service handles Group Policy processing?",
+        "o": [
+            "Group Policy Client",
+            "Windows Installer",
+            "Print Spooler",
+            "BITS Service"
+        ]
+    },
+    {
+        "q": "What is the default location of Windows security event logs?",
+        "o": [
+            "Windows Event Logs",
+            "System32 folder",
+            "Program Data",
+            "User AppData"
+        ]
+    },
+    {
+        "q": "Which account type allows service programs to run in Windows?",
+        "o": [
+            "Service account",
+            "Guest account",
+            "Standard user",
+            "Power user"
+        ]
+    },
+    {
+        "q": "What does NTLM stand for in Windows authentication?",
+        "o": [
+            "NT LAN Manager",
+            "Network Login Mode",
+            "New Token Method",
+            "Native Trust Layer"
+        ]
+    },
+    {
+        "q": "Which tool manages local users and groups in Windows?",
+        "o": [
+            "lusrmgr.msc",
+            "devmgmt.msc",
+            "diskmgmt.msc",
+            "compmgmt.msc"
+        ]
+    },
+    {
+        "q": "What is the primary purpose of Windows Firewall?",
+        "o": [
+            "Network traffic filtering",
+            "Virus removal tool",
+            "Password manager",
+            "Disk encryption"
+        ]
+    },
+    {
+        "q": "Which Windows feature encrypts the entire hard drive?",
+        "o": [
+            "BitLocker",
+            "EFS only",
+            "Windows Defender",
+            "Secure Boot"
+        ]
+    },
+    {
+        "q": "What type of authentication uses tickets in Active Directory?",
+        "o": [
+            "Kerberos auth",
+            "Basic auth",
+            "Digest auth",
+            "Form auth"
+        ]
+    },
+    {
+        "q": "Which policy defines minimum password length in Windows?",
+        "o": [
+            "Password Policy",
+            "Account Policy",
+            "Lockout Policy",
+            "Audit Policy"
+        ]
+    },
+    {
+        "q": "What command forces an immediate Group Policy update?",
+        "o": [
+            "gpupdate /force",
+            "gpedit /now",
+            "policy /update",
+            "gprefresh /all"
+        ]
+    },
+    {
+        "q": "Which Windows component validates digital signatures on drivers?",
+        "o": [
+            "Driver Signature Enforcement",
+            "Windows Update Service",
+            "Hardware Compatibility",
+            "Device Installation"
+        ]
+    },
+    {
+        "q": "What is the purpose of the Security Configuration Wizard?",
+        "o": [
+            "Create security policies",
+            "Install antivirus",
+            "Configure network",
+            "Manage disk space"
+        ]
+    },
+    {
+        "q": "Which log in Event Viewer captures login attempts?",
+        "o": [
+            "Security log",
+            "System log",
+            "Application log",
+            "Setup log"
+        ]
+    },
+    {
+        "q": "What is the default password hash algorithm in modern Windows?",
+        "o": [
+            "NTLM hash format",
+            "MD5 hash format",
+            "SHA1 hash format",
+            "DES encryption"
+        ]
+    },
+    {
+        "q": "Which Windows feature protects against ransomware attacks?",
+        "o": [
+            "Controlled Folder Access",
+            "Windows Update",
+            "Disk Cleanup",
+            "System Restore"
+        ]
+    },
+    {
+        "q": "What does UAC elevation prompt indicate to users?",
+        "o": [
+            "Admin privileges needed",
+            "Network connection lost",
+            "Disk space is low",
+            "Update available"
+        ]
+    },
+    {
+        "q": "Which Active Directory object represents a security boundary?",
+        "o": [
+            "Domain",
+            "Container",
+            "Folder",
+            "Share"
+        ]
+    },
+    {
+        "q": "What is the purpose of the KRBTGT account in AD?",
+        "o": [
+            "Kerberos ticket encryption",
+            "User password storage",
+            "Domain controller sync",
+            "Group policy update"
+        ]
+    },
+    {
+        "q": "Which Windows component stores encrypted credentials in memory?",
+        "o": [
+            "LSASS process",
+            "Explorer shell",
+            "Winlogon service",
+            "NetLogon service"
+        ]
+    },
+    {
+        "q": "What policy prevents brute force password attacks?",
+        "o": [
+            "Account Lockout Policy",
+            "Password History",
+            "Minimum Length",
+            "Complexity Setting"
+        ]
+    },
+    {
+        "q": "Which Windows tool scans for malware on demand?",
+        "o": [
+            "Windows Defender scan",
+            "Disk Cleanup tool",
+            "System File Check",
+            "Registry Editor"
+        ]
+    },
+    {
+        "q": "What is the primary function of the Netlogon service?",
+        "o": [
+            "Domain authentication",
+            "File sharing",
+            "Print services",
+            "DNS resolution"
+        ]
+    },
+    {
+        "q": "Which GPO setting restricts software installation?",
+        "o": [
+            "Software Restriction",
+            "Firewall Rules",
+            "Audit Settings",
+            "Password Policy"
+        ]
+    },
+    {
+        "q": "What does the whoami command display in Windows?",
+        "o": [
+            "Current user info",
+            "System hardware",
+            "Network status",
+            "Disk capacity"
+        ]
+    },
+    {
+        "q": "Which Windows feature provides secure remote desktop access?",
+        "o": [
+            "Remote Desktop Protocol",
+            "Telnet Service",
+            "FTP Server",
+            "HTTP Server"
+        ]
+    },
+    {
+        "q": "What is the purpose of Security Templates in Windows?",
+        "o": [
+            "Predefined security config",
+            "Network monitoring",
+            "Driver installation",
+            "System restoration"
+        ]
+    },
+    {
+        "q": "Which account lockout threshold is commonly recommended?",
+        "o": [
+            "5 failed attempts",
+            "1 failed attempt",
+            "20 attempts",
+            "Unlimited attempts"
+        ]
+    },
+    {
+        "q": "What Windows service manages smart card authentication?",
+        "o": [
+            "Smart Card Service",
+            "Remote Registry",
+            "Print Spooler",
+            "BITS Service"
+        ]
+    },
+    {
+        "q": "Which tool exports Group Policy settings to a file?",
+        "o": [
+            "Resultant Set of Policy",
+            "Registry Editor",
+            "Event Viewer",
+            "Disk Manager"
+        ]
+    },
+    {
+        "q": "What is the default behavior of Windows Defender ATP?",
+        "o": [
+            "Threat detection response",
+            "Disk optimization",
+            "Network acceleration",
+            "File compression"
+        ]
+    },
+    {
+        "q": "Which Active Directory partition contains user objects?",
+        "o": [
+            "Domain partition",
+            "Schema partition",
+            "Config partition",
+            "App partition"
+        ]
+    },
+    {
+        "q": "What command shows group membership for a Windows user?",
+        "o": [
+            "net user username",
+            "net share /all",
+            "net start list",
+            "net config srv"
+        ]
+    },
+    {
+        "q": "Which Windows Defender feature blocks exploit techniques?",
+        "o": [
+            "Exploit Guard",
+            "Virus Scanner",
+            "Update Service",
+            "Backup Tool"
+        ]
+    },
+    {
+        "q": "What is the purpose of Credential Guard in Windows 10?",
+        "o": [
+            "Protect domain secrets",
+            "Manage passwords",
+            "Encrypt files",
+            "Block malware"
+        ]
+    },
+    {
+        "q": "Which policy enforces screen lock timeout in Windows?",
+        "o": [
+            "Screen saver policy",
+            "Login policy",
+            "Network policy",
+            "Update policy"
+        ]
+    },
+    {
+        "q": "What does the gpresult command show in Windows?",
+        "o": [
+            "Applied Group Policy",
+            "Hardware resources",
+            "Network connections",
+            "Installed programs"
+        ]
+    },
+    {
+        "q": "Which Windows feature protects boot process integrity?",
+        "o": [
+            "Secure Boot",
+            "Fast Boot",
+            "Safe Mode",
+            "Boot Menu"
+        ]
+    },
+    {
+        "q": "What is the main purpose of AppLocker in Windows?",
+        "o": [
+            "Application whitelisting",
+            "Network firewall",
+            "Disk encryption",
+            "User management"
+        ]
+    },
+    {
+        "q": "Which account has unrestricted access on Windows systems?",
+        "o": [
+            "SYSTEM account",
+            "Guest account",
+            "Standard user",
+            "Network user"
+        ]
+    },
+    {
+        "q": "What does the secedit command configure in Windows?",
+        "o": [
+            "Security settings",
+            "Network shares",
+            "Disk volumes",
+            "Print queues"
+        ]
+    },
+    {
+        "q": "Which Windows log tracks object access attempts?",
+        "o": [
+            "Security audit log",
+            "Application log",
+            "System log",
+            "Setup log"
+        ]
+    },
+    {
+        "q": "What is the purpose of Windows Defender Firewall?",
+        "o": [
+            "Filter network traffic",
+            "Remove viruses",
+            "Compress files",
+            "Manage updates"
+        ]
+    },
+    {
+        "q": "Which AD component handles name resolution for domains?",
+        "o": [
+            "DNS Server",
+            "DHCP Server",
+            "File Server",
+            "Web Server"
+        ]
+    },
+    {
+        "q": "What is the primary function of the LDAP protocol?",
+        "o": [
+            "Directory services query",
+            "File transfer",
+            "Email delivery",
+            "Web hosting"
+        ]
+    },
+    {
+        "q": "Which Windows component manages certificate services?",
+        "o": [
+            "Certificate Authority",
+            "Key Management",
+            "Token Service",
+            "Auth Provider"
+        ]
+    },
+    {
+        "q": "What policy prevents password reuse in Windows?",
+        "o": [
+            "Password history",
+            "Minimum length",
+            "Lockout duration",
+            "Reset timeout"
+        ]
+    },
+    {
+        "q": "Which tool analyzes security configuration in Windows?",
+        "o": [
+            "Security Configuration Analysis",
+            "Disk Management Tool",
+            "Network Monitor",
+            "Performance Counter"
+        ]
+    },
+    {
+        "q": "What is the default Kerberos ticket lifetime in Windows?",
+        "o": [
+            "10 hours default",
+            "24 hours fixed",
+            "1 hour only",
+            "Unlimited time"
+        ]
+    },
+    {
+        "q": "Which Windows feature provides application sandboxing?",
+        "o": [
+            "Windows Sandbox",
+            "Virtual Desktop",
+            "Remote App",
+            "App Store"
+        ]
+    },
+    {
+        "q": "What does the netstat command display in Windows?",
+        "o": [
+            "Network connections",
+            "User accounts",
+            "Disk partitions",
+            "Running services"
+        ]
+    },
+    {
+        "q": "Which AD replication topology connects all domain controllers?",
+        "o": [
+            "Site topology",
+            "Star topology",
+            "Ring topology",
+            "Bus topology"
+        ]
+    },
+    {
+        "q": "What is the purpose of a Group Managed Service Account?",
+        "o": [
+            "Automated password mgmt",
+            "User login tracking",
+            "File sharing access",
+            "Print job routing"
+        ]
+    },
+    {
+        "q": "Which Windows component enforces code integrity policies?",
+        "o": [
+            "Device Guard",
+            "Update Agent",
+            "Sync Service",
+            "Backup Tool"
+        ]
+    },
+    {
+        "q": "What policy setting defines password maximum age?",
+        "o": [
+            "Maximum password age",
+            "Minimum password age",
+            "Password length",
+            "Lockout counter"
+        ]
+    },
+    {
+        "q": "Which Windows service authenticates smart card logins?",
+        "o": [
+            "Smart Card Authentication",
+            "Remote Desktop",
+            "File Sharing",
+            "Print Server"
+        ]
+    },
+    {
+        "q": "What is the function of Windows Defender Antivirus?",
+        "o": [
+            "Malware protection",
+            "Disk management",
+            "Network routing",
+            "User creation"
+        ]
+    },
+    {
+        "q": "Which GPO extension manages Internet Explorer settings?",
+        "o": [
+            "IE Maintenance",
+            "Software Deploy",
+            "Script Policy",
+            "Folder Redirect"
+        ]
+    },
+    {
+        "q": "What command lists running Windows services?",
+        "o": [
+            "net start",
+            "net share",
+            "net user",
+            "net group"
+        ]
+    },
+    {
+        "q": "Which Windows feature isolates browser from the OS?",
+        "o": [
+            "Application Guard",
+            "Windows Sandbox",
+            "Virtual Desktop",
+            "Remote App"
+        ]
+    },
+    {
+        "q": "What is the purpose of the SAM database in Windows?",
+        "o": [
+            "Store local accounts",
+            "Manage services",
+            "Track events",
+            "Configure network"
+        ]
+    },
+    {
+        "q": "Which protocol encrypts RDP sessions by default?",
+        "o": [
+            "TLS encryption",
+            "No encryption",
+            "MD5 hashing",
+            "Base64 encoding"
+        ]
+    },
+    {
+        "q": "What Windows security feature prevents DLL injection?",
+        "o": [
+            "ASLR protection",
+            "Disk caching",
+            "File indexing",
+            "Font smoothing"
+        ]
+    },
+    {
+        "q": "Which Active Directory role manages schema changes?",
+        "o": [
+            "Schema Master",
+            "PDC Emulator",
+            "RID Master",
+            "Infra Master"
+        ]
+    },
+    {
+        "q": "What policy controls Remote Desktop access in Windows?",
+        "o": [
+            "Remote Desktop Policy",
+            "Firewall Rules",
+            "Audit Policy",
+            "Update Settings"
+        ]
+    },
+    {
+        "q": "Which Windows component handles biometric authentication?",
+        "o": [
+            "Windows Hello",
+            "Windows Update",
+            "Windows Store",
+            "Windows Mail"
+        ]
+    },
+    {
+        "q": "What is the default security event log size in Windows?",
+        "o": [
+            "20 MB default",
+            "100 MB fixed",
+            "1 GB maximum",
+            "512 KB min"
+        ]
+    },
+    {
+        "q": "Which Group Policy setting enables BitLocker encryption?",
+        "o": [
+            "BitLocker policy",
+            "EFS settings",
+            "Firewall rules",
+            "Audit policy"
+        ]
+    },
+    {
+        "q": "What does the tasklist command show in Windows?",
+        "o": [
+            "Running processes",
+            "Network shares",
+            "User accounts",
+            "Disk volumes"
+        ]
+    },
+    {
+        "q": "Which Windows Defender component analyzes cloud threats?",
+        "o": [
+            "Cloud protection",
+            "Local scanning",
+            "Offline mode",
+            "Manual check"
+        ]
+    },
+    {
+        "q": "What is the purpose of Fine-Grained Password Policy?",
+        "o": [
+            "Different policies groups",
+            "Single policy all",
+            "No password required",
+            "Auto password gen"
+        ]
+    },
+    {
+        "q": "Which AD object type represents a security group?",
+        "o": [
+            "Security group",
+            "Distribution group",
+            "Container object",
+            "Shared folder"
+        ]
+    },
+    {
+        "q": "What command opens Group Policy Editor in Windows?",
+        "o": [
+            "gpedit.msc",
+            "secpol.msc",
+            "regedit.exe",
+            "cmd.exe"
+        ]
+    },
+    {
+        "q": "Which Windows feature provides memory integrity protection?",
+        "o": [
+            "HVCI protection",
+            "Disk caching",
+            "File indexing",
+            "Font smoothing"
+        ]
+    },
+    {
+        "q": "What is the role of the PDC Emulator in Active Directory?",
+        "o": [
+            "Password change sync",
+            "Schema modification",
+            "Object creation",
+            "Site management"
+        ]
+    },
+    {
+        "q": "Which policy controls USB device access in Windows?",
+        "o": [
+            "Device restrictions",
+            "Network policy",
+            "Audit settings",
+            "Update config"
+        ]
+    },
+    {
+        "q": "What is the purpose of Security Auditing in Windows?",
+        "o": [
+            "Track security events",
+            "Compress disk files",
+            "Manage user accounts",
+            "Configure network"
+        ]
+    },
+    {
+        "q": "Which authentication level requires both password and smart card?",
+        "o": [
+            "Multi-factor auth",
+            "Single factor",
+            "Anonymous auth",
+            "Basic login"
+        ]
+    },
+    {
+        "q": "What does the icacls command manage in Windows?",
+        "o": [
+            "File permissions",
+            "Network shares",
+            "Running services",
+            "User passwords"
+        ]
+    },
+    {
+        "q": "Which Windows Defender feature scans email attachments?",
+        "o": [
+            "Email scanning",
+            "Disk scanning",
+            "Boot scanning",
+            "Registry scan"
+        ]
+    },
+    {
+        "q": "What is the function of Trust Relationships in AD?",
+        "o": [
+            "Cross-domain access",
+            "File compression",
+            "Disk encryption",
+            "Log rotation"
+        ]
+    },
+    {
+        "q": "Which GPO setting controls Windows Update behavior?",
+        "o": [
+            "Windows Update policy",
+            "Firewall rules",
+            "Audit settings",
+            "Password policy"
+        ]
+    },
+    {
+        "q": "What command displays local security policy settings?",
+        "o": [
+            "secedit /export",
+            "gpupdate /all",
+            "net config /s",
+            "netsh show"
+        ]
+    },
+    {
+        "q": "Which Windows service handles domain logon scripts?",
+        "o": [
+            "Netlogon service",
+            "Print Spooler",
+            "Windows Audio",
+            "Background Task"
+        ]
+    },
+    {
+        "q": "What is the primary purpose of Windows Event Forwarding?",
+        "o": [
+            "Centralize event logs",
+            "Forward email",
+            "Route network",
+            "Share files"
+        ]
+    },
+    {
+        "q": "Which AD attribute stores the user password hash?",
+        "o": [
+            "unicodePwd attribute",
+            "displayName value",
+            "sAMAccountName",
+            "objectClass type"
+        ]
+    },
+    {
+        "q": "What policy prevents installing unsigned drivers?",
+        "o": [
+            "Driver signing policy",
+            "Software restriction",
+            "Firewall rules",
+            "Audit settings"
+        ]
+    },
+    {
+        "q": "Which Windows component protects against network threats?",
+        "o": [
+            "Windows Firewall",
+            "Disk Cleanup",
+            "System Restore",
+            "Disk Manager"
+        ]
+    },
+    {
+        "q": "What is the role of the RID Master in Active Directory?",
+        "o": [
+            "Allocate unique IDs",
+            "Sync passwords",
+            "Modify schema",
+            "Manage sites"
+        ]
+    },
+    {
+        "q": "Which Windows feature provides hardware-based security?",
+        "o": [
+            "TPM chip support",
+            "Software firewall",
+            "Disk indexing",
+            "Font rendering"
+        ]
+    },
+    {
+        "q": "What command verifies domain controller connectivity?",
+        "o": [
+            "dcdiag command",
+            "ipconfig /all",
+            "netstat -an",
+            "tasklist /v"
+        ]
+    },
+    {
+        "q": "Which policy setting enforces audit logging for logins?",
+        "o": [
+            "Audit logon events",
+            "Password history",
+            "Account lockout",
+            "Reset counter"
+        ]
+    },
+    {
+        "q": "What is Windows Defender SmartScreen used for?",
+        "o": [
+            "Block malicious sites",
+            "Manage passwords",
+            "Compress files",
+            "Update drivers"
+        ]
+    },
+    {
+        "q": "Which AD object stores printer configurations?",
+        "o": [
+            "Print queue object",
+            "User container",
+            "Group policy",
+            "Shared folder"
+        ]
+    },
+    {
+        "q": "What does the auditpol command configure in Windows?",
+        "o": [
+            "Audit policy settings",
+            "Network connections",
+            "Disk partitions",
+            "User accounts"
+        ]
+    },
+    {
+        "q": "Which Windows feature restricts PowerShell execution?",
+        "o": [
+            "Execution policy",
+            "Firewall rules",
+            "Audit settings",
+            "User rights"
+        ]
+    },
+    {
+        "q": "What authentication method uses certificate-based tokens?",
+        "o": [
+            "PKI authentication",
+            "Password auth",
+            "Anonymous auth",
+            "Basic login"
+        ]
+    },
+    {
+        "q": "Which Group Policy node contains security settings?",
+        "o": [
+            "Security Settings",
+            "Software Settings",
+            "Windows Settings",
+            "Admin Templates"
+        ]
+    },
+    {
+        "q": "What is the purpose of Windows Defender ATP?",
+        "o": [
+            "Advanced threat protect",
+            "Basic virus scan",
+            "Disk optimization",
+            "File compression"
+        ]
+    },
+    {
+        "q": "Which AD container holds deleted objects temporarily?",
+        "o": [
+            "Deleted Objects",
+            "Lost and Found",
+            "System folder",
+            "Users folder"
+        ]
+    },
+    {
+        "q": "What command displays effective permissions on a file?",
+        "o": [
+            "icacls command",
+            "net share",
+            "net user",
+            "netstat -a"
+        ]
+    },
+    {
+        "q": "Which Windows component handles WMI security queries?",
+        "o": [
+            "WMI service",
+            "DNS server",
+            "DHCP client",
+            "Print spooler"
+        ]
+    },
+    {
+        "q": "What policy controls screensaver password requirement?",
+        "o": [
+            "Interactive logon",
+            "Network logon",
+            "Service logon",
+            "Batch logon"
+        ]
+    },
+    {
+        "q": "Which Windows Defender feature uses behavior monitoring?",
+        "o": [
+            "Behavior protection",
+            "Signature scan",
+            "Manual check",
+            "Offline mode"
+        ]
+    },
+    {
+        "q": "What is the function of Active Directory Sites?",
+        "o": [
+            "Control replication",
+            "Store user data",
+            "Manage printers",
+            "Share files only"
+        ]
+    },
+    {
+        "q": "Which command tests Kerberos authentication?",
+        "o": [
+            "klist command",
+            "net user",
+            "ipconfig",
+            "nslookup"
+        ]
+    },
+    {
+        "q": "What does the sfc /scannow command verify?",
+        "o": [
+            "System file integrity",
+            "Network connections",
+            "User permissions",
+            "Disk space"
+        ]
+    },
+    {
+        "q": "Which GPO setting restricts Control Panel access?",
+        "o": [
+            "Restrict Control Panel",
+            "Password Policy",
+            "Audit Settings",
+            "Update Config"
+        ]
+    },
+    {
+        "q": "What is the purpose of Managed Service Accounts in AD?",
+        "o": [
+            "Auto password change",
+            "Manual password set",
+            "No password need",
+            "User defined only"
+        ]
+    },
+    {
+        "q": "Which Windows feature encrypts individual files?",
+        "o": [
+            "EFS encryption",
+            "BitLocker only",
+            "NTFS compress",
+            "Zip archive"
+        ]
+    },
+    {
+        "q": "What command shows AD replication status?",
+        "o": [
+            "repadmin command",
+            "ipconfig /all",
+            "netstat -an",
+            "tasklist /v"
+        ]
+    },
+    {
+        "q": "Which policy defines allowed logon hours for users?",
+        "o": [
+            "Logon hours policy",
+            "Password policy",
+            "Lockout policy",
+            "Audit policy"
+        ]
+    },
+    {
+        "q": "What Windows component monitors file system changes?",
+        "o": [
+            "File System Watcher",
+            "Disk Cleanup",
+            "Defrag Tool",
+            "Backup Service"
+        ]
+    },
+    {
+        "q": "Which AD group scope is used across forest trusts?",
+        "o": [
+            "Universal groups",
+            "Domain local",
+            "Global groups",
+            "Local groups"
+        ]
+    },
+    {
+        "q": "What is the purpose of Security Descriptors in Windows?",
+        "o": [
+            "Define object access",
+            "Compress files",
+            "Manage network",
+            "Configure disk"
+        ]
+    },
+    {
+        "q": "Which GPO setting enables folder redirection?",
+        "o": [
+            "Folder Redirection",
+            "Software Deploy",
+            "Script Policy",
+            "Registry Pref"
+        ]
+    },
+    {
+        "q": "What command manages local Administrators group members?",
+        "o": [
+            "net localgroup",
+            "net share",
+            "net config",
+            "net session"
+        ]
+    },
+    {
+        "q": "Which Windows service handles certificate enrollment?",
+        "o": [
+            "Certificate Services",
+            "Remote Desktop",
+            "File Server",
+            "Print Server"
+        ]
+    },
+    {
+        "q": "What policy controls access to removable storage devices?",
+        "o": [
+            "Removable Storage",
+            "Network Share",
+            "Audit Events",
+            "User Rights"
+        ]
+    },
+    {
+        "q": "Which AD role creates new user relative IDs?",
+        "o": [
+            "RID Master role",
+            "PDC Emulator",
+            "Schema Master",
+            "Domain Naming"
+        ]
+    },
+    {
+        "q": "What is the primary function of Windows Credential Guard?",
+        "o": [
+            "Isolate credentials",
+            "Store passwords",
+            "Share secrets",
+            "Export keys"
+        ]
+    },
+    {
+        "q": "Which command checks Windows Firewall status?",
+        "o": [
+            "netsh firewall show",
+            "ipconfig /all",
+            "net config",
+            "tasklist /v"
+        ]
+    },
+    {
+        "q": "What GPO setting disables USB autorun functionality?",
+        "o": [
+            "AutoPlay policies",
+            "Driver signing",
+            "App restrictions",
+            "Audit logging"
+        ]
+    },
+    {
+        "q": "Which Windows component validates application signatures?",
+        "o": [
+            "Windows Authenticode",
+            "Disk Manager",
+            "Task Scheduler",
+            "Event Logger"
+        ]
+    },
+    {
+        "q": "What is the purpose of Protected Users group in AD?",
+        "o": [
+            "Prevent credential theft",
+            "Allow all access",
+            "Disable auditing",
+            "Remove passwords"
+        ]
+    },
+    {
+        "q": "Which policy setting controls network share access?",
+        "o": [
+            "Share permissions",
+            "Audit policy",
+            "Password policy",
+            "Lockout policy"
+        ]
+    },
+    {
+        "q": "What command exports security event logs?",
+        "o": [
+            "wevtutil export",
+            "eventlog save",
+            "seclog export",
+            "logman query"
+        ]
+    },
+    {
+        "q": "Which Windows feature provides network level authentication?",
+        "o": [
+            "NLA for RDP",
+            "Basic auth",
+            "Anonymous",
+            "No auth"
+        ]
+    },
+    {
+        "q": "What is the function of DACLs in Windows security?",
+        "o": [
+            "Define access control",
+            "Compress files",
+            "Encrypt network",
+            "Manage print"
+        ]
+    },
+    {
+        "q": "Which AD attribute indicates account disable status?",
+        "o": [
+            "userAccountControl",
+            "displayName only",
+            "sAMAccountName",
+            "objectClass"
+        ]
+    },
+    {
+        "q": "What policy enforces logon banner message display?",
+        "o": [
+            "Interactive logon",
+            "Network logon",
+            "Batch logon",
+            "Service logon"
+        ]
+    },
+    {
+        "q": "Which Windows component handles time synchronization?",
+        "o": [
+            "Windows Time",
+            "DNS Server",
+            "DHCP Client",
+            "Print Spooler"
+        ]
+    },
+    {
+        "q": "What is the purpose of the Infrastructure Master role?",
+        "o": [
+            "Cross-domain updates",
+            "Password changes",
+            "Schema modify",
+            "Naming master"
+        ]
+    },
+    {
+        "q": "Which command displays domain trust relationships?",
+        "o": [
+            "netdom query",
+            "ipconfig /all",
+            "netstat -an",
+            "tasklist /v"
+        ]
+    },
+    {
+        "q": "What GPO setting restricts registry editor access?",
+        "o": [
+            "Prevent regedit",
+            "Password policy",
+            "Audit settings",
+            "Update config"
+        ]
+    },
+    {
+        "q": "Which Windows Defender feature blocks PUAs?",
+        "o": [
+            "PUA protection",
+            "Virus scan only",
+            "Firewall rules",
+            "Disk cleanup"
+        ]
+    },
+    {
+        "q": "What is the function of SACLs in Windows auditing?",
+        "o": [
+            "Define audit rules",
+            "Set permissions",
+            "Compress files",
+            "Encrypt data"
+        ]
+    },
+    {
+        "q": "Which AD container holds computer objects by default?",
+        "o": [
+            "Computers container",
+            "Users container",
+            "System folder",
+            "Domain root"
+        ]
+    },
+    {
+        "q": "What command manages Windows Firewall rules?",
+        "o": [
+            "netsh advfirewall",
+            "ipconfig /flush",
+            "net start fw",
+            "sc config fw"
+        ]
+    },
+    {
+        "q": "Which policy controls event log maximum size?",
+        "o": [
+            "Event Log policy",
+            "Password policy",
+            "Lockout policy",
+            "Audit policy"
+        ]
+    },
+    {
+        "q": "What is Windows Defender Network Protection used for?",
+        "o": [
+            "Block malicious net",
+            "Manage passwords",
+            "Compress files",
+            "Update system"
+        ]
+    },
+    {
+        "q": "Which AD group type cannot be assigned permissions?",
+        "o": [
+            "Distribution group",
+            "Security group",
+            "Universal group",
+            "Global group"
+        ]
+    },
+    {
+        "q": "What command shows logged-on users on a system?",
+        "o": [
+            "query user cmd",
+            "net share /all",
+            "netstat -an",
+            "tasklist /svc"
+        ]
+    },
+    {
+        "q": "Which Windows feature provides attack surface reduction?",
+        "o": [
+            "ASR rules config",
+            "Disk cleanup",
+            "File indexing",
+            "Font cache"
+        ]
+    },
+    {
+        "q": "What is the purpose of Service Principal Names in AD?",
+        "o": [
+            "Kerberos delegation",
+            "Password storage",
+            "File sharing",
+            "Print service"
+        ]
+    },
+    {
+        "q": "Which GPO extension handles drive mappings?",
+        "o": [
+            "Drive maps pref",
+            "Software deploy",
+            "Script policy",
+            "Folder redirect"
+        ]
+    },
+    {
+        "q": "What command queries Active Directory from cmd?",
+        "o": [
+            "dsquery command",
+            "ipconfig /all",
+            "netstat -an",
+            "tasklist /v"
+        ]
+    },
+    {
+        "q": "Which Windows component protects against kernel attacks?",
+        "o": [
+            "Kernel protection",
+            "User mode only",
+            "App sandbox",
+            "Network filter"
+        ]
+    },
+    {
+        "q": "What policy defines minimum password age in Windows?",
+        "o": [
+            "Min password age",
+            "Max password age",
+            "Password length",
+            "History count"
+        ]
+    },
+    {
+        "q": "Which AD replication uses compressed data transfer?",
+        "o": [
+            "Inter-site repl",
+            "Intra-site only",
+            "No compression",
+            "Manual sync"
+        ]
+    },
+    {
+        "q": "What is the function of Applocker Certificate Rules?",
+        "o": [
+            "Allow signed apps",
+            "Block all apps",
+            "Allow unsigned",
+            "No restriction"
+        ]
+    },
+    {
+        "q": "Which Windows command verifies system file integrity?",
+        "o": [
+            "sfc /scannow",
+            "chkdsk /f",
+            "defrag /u",
+            "diskpart"
+        ]
+    },
+    {
+        "q": "What GPO setting enables Windows Defender Firewall?",
+        "o": [
+            "Firewall policy",
+            "Audit policy",
+            "Password policy",
+            "Update policy"
+        ]
+    },
+    {
+        "q": "Which Active Directory object holds OU permissions?",
+        "o": [
+            "OU ACL entries",
+            "User passwords",
+            "Group members",
+            "Print queues"
+        ]
+    },
+    {
+        "q": "What command displays effective Group Policy settings?",
+        "o": [
+            "gpresult /r",
+            "gpedit /show",
+            "policy /list",
+            "secpol /view"
+        ]
+    },
+    {
+        "q": "Which Windows service handles Kerberos constrained delegation?",
+        "o": [
+            "KDC service",
+            "DNS service",
+            "DHCP service",
+            "WINS service"
+        ]
+    },
+    {
+        "q": "What is the purpose of Resource-Based Constrained Delegation?",
+        "o": [
+            "Service delegation",
+            "User login only",
+            "File sharing",
+            "Print routing"
+        ]
+    },
+    {
+        "q": "Which policy setting controls print spooler security?",
+        "o": [
+            "Print security",
+            "Audit policy",
+            "Password policy",
+            "Lockout policy"
+        ]
+    },
+    {
+        "q": "What Windows component manages VPN connections securely?",
+        "o": [
+            "RRAS service",
+            "DNS server",
+            "DHCP client",
+            "Print spooler"
+        ]
+    },
+    {
+        "q": "Which AD feature enables single sign-on across domains?",
+        "o": [
+            "Trust relationship",
+            "Password sync",
+            "Manual login",
+            "Local account"
+        ]
+    },
+    {
+        "q": "What command creates a new AD user account?",
+        "o": [
+            "dsadd user cmd",
+            "net config user",
+            "netstat -user",
+            "tasklist user"
+        ]
+    },
+    {
+        "q": "Which Windows Defender component scans downloads?",
+        "o": [
+            "Download scanning",
+            "Boot scanning",
+            "Memory scan",
+            "Registry scan"
+        ]
+    },
+    {
+        "q": "What GPO setting restricts command prompt usage?",
+        "o": [
+            "Prevent cmd use",
+            "Password policy",
+            "Audit settings",
+            "Update config"
+        ]
+    },
+    {
+        "q": "Which Windows feature provides secure firmware validation?",
+        "o": [
+            "Measured Boot",
+            "Fast Startup",
+            "Sleep Mode",
+            "Hibernate"
+        ]
+    },
+    {
+        "q": "What is the function of the Domain Naming Master?",
+        "o": [
+            "Control domain ops",
+            "Sync passwords",
+            "Modify schema",
+            "Allocate IDs"
+        ]
+    },
+    {
+        "q": "Which attack extracts password hashes from LSASS memory?",
+        "o": [
+            "Credential dumping",
+            "Port scanning",
+            "DNS poisoning",
+            "ARP spoofing"
+        ]
+    },
+    {
+        "q": "What tool is commonly used to dump credentials from LSASS?",
+        "o": [
+            "Mimikatz tool",
+            "Nmap scanner",
+            "Wireshark app",
+            "Burp Suite"
+        ]
+    },
+    {
+        "q": "Which Windows feature prevents credential theft from memory?",
+        "o": [
+            "Credential Guard",
+            "Windows Firewall",
+            "BitLocker drive",
+            "AppLocker rules"
+        ]
+    },
+    {
+        "q": "What technique uses stolen NTLM hashes for authentication?",
+        "o": [
+            "Pass-the-Hash",
+            "SQL injection",
+            "XSS attack",
+            "CSRF exploit"
+        ]
+    },
+    {
+        "q": "Which attack uses a stolen Kerberos TGT for lateral movement?",
+        "o": [
+            "Pass-the-Ticket",
+            "Port scanning",
+            "DNS tunneling",
+            "ARP poisoning"
+        ]
+    },
+    {
+        "q": "What is a Golden Ticket attack in Active Directory?",
+        "o": [
+            "Forged KRBTGT ticket",
+            "Valid user login",
+            "Password reset",
+            "Account lockout"
+        ]
+    },
+    {
+        "q": "Which AD account hash enables Golden Ticket creation?",
+        "o": [
+            "KRBTGT hash",
+            "Admin password",
+            "Guest account",
+            "Service user"
+        ]
+    },
+    {
+        "q": "What is a Silver Ticket attack in Kerberos?",
+        "o": [
+            "Forged service ticket",
+            "Valid TGT request",
+            "Password reset",
+            "Account creation"
+        ]
+    },
+    {
+        "q": "Which Windows event ID indicates a successful logon?",
+        "o": [
+            "Event ID 4624",
+            "Event ID 4625",
+            "Event ID 4634",
+            "Event ID 4648"
+        ]
+    },
+    {
+        "q": "What event ID logs failed logon attempts in Windows?",
+        "o": [
+            "Event ID 4625",
+            "Event ID 4624",
+            "Event ID 4634",
+            "Event ID 4648"
+        ]
+    },
+    {
+        "q": "Which technique requests service tickets to crack offline?",
+        "o": [
+            "Kerberoasting",
+            "Port scanning",
+            "DNS tunneling",
+            "ARP spoofing"
+        ]
+    },
+    {
+        "q": "What makes an account vulnerable to Kerberoasting attacks?",
+        "o": [
+            "Weak SPN password",
+            "No password set",
+            "Account disabled",
+            "Locked account"
+        ]
+    },
+    {
+        "q": "Which Windows feature logs process creation events?",
+        "o": [
+            "Audit Process Creation",
+            "Disk Cleanup Log",
+            "Defrag History",
+            "Backup Report"
+        ]
+    },
+    {
+        "q": "What event ID tracks new Windows process creation?",
+        "o": [
+            "Event ID 4688",
+            "Event ID 4625",
+            "Event ID 4634",
+            "Event ID 4648"
+        ]
+    },
+    {
+        "q": "Which attack abuses unconstrained Kerberos delegation?",
+        "o": [
+            "Delegation attack",
+            "SQL injection",
+            "XSS attack",
+            "CSRF exploit"
+        ]
+    },
+    {
+        "q": "What Windows feature restricts Kerberos delegation scope?",
+        "o": [
+            "Constrained delegation",
+            "Open delegation",
+            "No delegation",
+            "Full delegation"
+        ]
+    },
+    {
+        "q": "Which attack targets AD Certificate Services templates?",
+        "o": [
+            "ESC attacks",
+            "SQL injection",
+            "XSS attacks",
+            "CSRF exploits"
+        ]
+    },
+    {
+        "q": "What misconfiguration enables ESC1 certificate attacks?",
+        "o": [
+            "Enrollment rights",
+            "Password policy",
+            "Firewall rules",
+            "Audit settings"
+        ]
+    },
+    {
+        "q": "Which Windows tool analyzes Group Policy inheritance?",
+        "o": [
+            "RSOP analysis",
+            "Disk Manager",
+            "Event Viewer",
+            "Task Manager"
+        ]
+    },
+    {
+        "q": "What command resets the machine account password?",
+        "o": [
+            "Reset-ComputerMachine",
+            "Set-ADUser pwd",
+            "New-ADComputer",
+            "Remove-Computer"
+        ]
+    },
+    {
+        "q": "Which attack abuses Group Policy Object permissions?",
+        "o": [
+            "GPO abuse attack",
+            "SQL injection",
+            "XSS attack",
+            "CSRF exploit"
+        ]
+    },
+    {
+        "q": "What permission allows GPO modification by adversaries?",
+        "o": [
+            "Write access GPO",
+            "Read only access",
+            "Execute access",
+            "Delete access"
+        ]
+    },
+    {
+        "q": "Which Windows log tracks PowerShell script execution?",
+        "o": [
+            "PowerShell Operational",
+            "Security Log only",
+            "System Log only",
+            "Application Log"
+        ]
+    },
+    {
+        "q": "What PowerShell logging records full script blocks?",
+        "o": [
+            "Script Block Logging",
+            "Transcription only",
+            "Module logging",
+            "No logging"
+        ]
+    },
+    {
+        "q": "Which feature records all PowerShell input and output?",
+        "o": [
+            "Transcription log",
+            "Event Viewer",
+            "Task Manager",
+            "Disk Manager"
+        ]
+    },
+    {
+        "q": "What is the purpose of Constrained Language Mode?",
+        "o": [
+            "Restrict PowerShell",
+            "Enable all scripts",
+            "Bypass security",
+            "Allow execution"
+        ]
+    },
+    {
+        "q": "Which Windows Defender feature detects fileless malware?",
+        "o": [
+            "Behavioral detection",
+            "Signature only",
+            "Hash matching",
+            "File scanning"
+        ]
+    },
+    {
+        "q": "What attack technique uses WMI for persistence?",
+        "o": [
+            "WMI subscription",
+            "SQL injection",
+            "XSS attack",
+            "CSRF exploit"
+        ]
+    },
+    {
+        "q": "Which Windows component monitors WMI event subscriptions?",
+        "o": [
+            "WMI Event Tracing",
+            "Disk Cleanup",
+            "Defrag Tool",
+            "Backup Service"
+        ]
+    },
+    {
+        "q": "What technique schedules malicious tasks for persistence?",
+        "o": [
+            "Scheduled Task abuse",
+            "Direct memory access",
+            "Physical attack",
+            "Social engineer"
+        ]
+    },
+    {
+        "q": "Which Windows registry key enables auto-start programs?",
+        "o": [
+            "Run key entries",
+            "Font cache key",
+            "Printer config",
+            "Sound settings"
+        ]
+    },
+    {
+        "q": "What attack modifies registry for persistence?",
+        "o": [
+            "Registry persistence",
+            "Direct injection",
+            "Buffer overflow",
+            "Format string"
+        ]
+    },
+    {
+        "q": "Which Windows feature detects registry modifications?",
+        "o": [
+            "Registry Auditing",
+            "Disk Cleanup",
+            "Defrag Tool",
+            "Backup Service"
+        ]
+    },
+    {
+        "q": "What technique exploits Windows services for privilege?",
+        "o": [
+            "Service exploitation",
+            "Direct injection",
+            "Buffer attack",
+            "Format string"
+        ]
+    },
+    {
+        "q": "Which misconfiguration allows DLL hijacking attacks?",
+        "o": [
+            "Insecure DLL path",
+            "Strong password",
+            "Encrypted drive",
+            "Locked account"
+        ]
+    },
+    {
+        "q": "What command displays Windows services and their paths?",
+        "o": [
+            "sc qc servicename",
+            "net share /all",
+            "netstat -an",
+            "tasklist /svc"
+        ]
+    },
+    {
+        "q": "Which tool detects unquoted service path vulnerabilities?",
+        "o": [
+            "PowerUp script",
+            "Nmap scanner",
+            "Wireshark app",
+            "Burp Suite"
+        ]
+    },
+    {
+        "q": "What attack escalates privileges via scheduled tasks?",
+        "o": [
+            "Task scheduler abuse",
+            "SQL injection",
+            "XSS attacks",
+            "CSRF exploits"
+        ]
+    },
+    {
+        "q": "Which Windows event tracks service installation?",
+        "o": [
+            "Event ID 7045",
+            "Event ID 4624",
+            "Event ID 4634",
+            "Event ID 4648"
+        ]
+    },
+    {
+        "q": "What technique uses COM object hijacking for persistence?",
+        "o": [
+            "COM hijacking",
+            "SQL injection",
+            "XSS attacks",
+            "CSRF exploits"
+        ]
+    },
+    {
+        "q": "Which registry location stores COM object references?",
+        "o": [
+            "CLSID registry",
+            "Font cache key",
+            "Printer config",
+            "Sound settings"
+        ]
+    },
+    {
+        "q": "What Windows mechanism enforces application allowlisting?",
+        "o": [
+            "AppLocker WDAC",
+            "Basic firewall",
+            "Disk cleanup",
+            "Defrag tool"
+        ]
+    },
+    {
+        "q": "Which bypass technique evades AppLocker restrictions?",
+        "o": [
+            "LOLBAS binaries",
+            "Strong password",
+            "Encrypted drive",
+            "Locked account"
+        ]
+    },
+    {
+        "q": "What is a LOLBin in Windows security context?",
+        "o": [
+            "Living Off the Land",
+            "Local Offline Login",
+            "Legacy OS Loader",
+            "Linux on Linux"
+        ]
+    },
+    {
+        "q": "Which Windows binary is commonly abused for execution?",
+        "o": [
+            "mshta.exe binary",
+            "calc.exe file",
+            "notepad.exe",
+            "explorer.exe"
+        ]
+    },
+    {
+        "q": "What technique uses WMIC for remote code execution?",
+        "o": [
+            "WMIC process call",
+            "SQL injection",
+            "XSS attacks",
+            "CSRF exploits"
+        ]
+    },
+    {
+        "q": "Which Windows tool can execute VBS scripts remotely?",
+        "o": [
+            "cscript wscript",
+            "Task Manager",
+            "Event Viewer",
+            "Disk Manager"
+        ]
+    },
+    {
+        "q": "What attack uses PrintNightmare vulnerability?",
+        "o": [
+            "Print Spooler RCE",
+            "Database attack",
+            "Web injection",
+            "Network scan"
+        ]
+    },
+    {
+        "q": "Which Windows service was affected by PrintNightmare?",
+        "o": [
+            "Print Spooler",
+            "DNS Server",
+            "DHCP Client",
+            "Remote Desktop"
+        ]
+    },
+    {
+        "q": "What attack exploits Zerologon vulnerability?",
+        "o": [
+            "Netlogon bypass",
+            "SQL injection",
+            "XSS attacks",
+            "CSRF exploits"
+        ]
+    },
+    {
+        "q": "Which protocol was vulnerable to Zerologon attack?",
+        "o": [
+            "Netlogon protocol",
+            "HTTP protocol",
+            "FTP protocol",
+            "SMTP protocol"
+        ]
+    },
+    {
+        "q": "What CVE identifier represents Zerologon vulnerability?",
+        "o": [
+            "CVE-2020-1472",
+            "CVE-2019-1234",
+            "CVE-2021-5678",
+            "CVE-2018-9876"
+        ]
+    },
+    {
+        "q": "Which mitigation prevents Pass-the-Hash attacks?",
+        "o": [
+            "Credential Guard",
+            "Open firewall",
+            "Disable audit",
+            "Allow RDP"
+        ]
+    },
+    {
+        "q": "What security control detects lateral movement?",
+        "o": [
+            "Network monitoring",
+            "Disk cleanup",
+            "Defrag tool",
+            "Backup task"
+        ]
+    },
+    {
+        "q": "Which Windows event indicates remote logon type?",
+        "o": [
+            "Logon Type 10",
+            "Logon Type 2",
+            "Logon Type 3",
+            "Logon Type 4"
+        ]
+    },
+    {
+        "q": "What logon type represents network authentication?",
+        "o": [
+            "Logon Type 3",
+            "Logon Type 2",
+            "Logon Type 10",
+            "Logon Type 7"
+        ]
+    },
+    {
+        "q": "Which attack extracts credentials from memory dumps?",
+        "o": [
+            "Memory forensics",
+            "Port scanning",
+            "DNS tunneling",
+            "ARP poisoning"
+        ]
+    },
+    {
+        "q": "What tool analyzes Windows memory for credentials?",
+        "o": [
+            "Volatility tool",
+            "Nmap scanner",
+            "Wireshark app",
+            "Burp Suite"
+        ]
+    },
+    {
+        "q": "Which Windows feature protects against DLL injection?",
+        "o": [
+            "Control Flow Guard",
+            "Disk Cleanup",
+            "Defrag Tool",
+            "Backup Service"
+        ]
+    },
+    {
+        "q": "What attack technique exploits named pipes in Windows?",
+        "o": [
+            "Named pipe impersonate",
+            "SQL injection attack",
+            "Cross-site scripting",
+            "CSRF exploitation"
+        ]
+    },
+    {
+        "q": "Which Windows feature provides process isolation?",
+        "o": [
+            "Job objects",
+            "Disk Manager",
+            "Event Viewer",
+            "Task Manager"
+        ]
+    },
+    {
+        "q": "What technique uses token impersonation for privilege?",
+        "o": [
+            "Token manipulation",
+            "SQL injection",
+            "XSS attacks",
+            "CSRF exploits"
+        ]
+    },
+    {
+        "q": "Which Windows right enables token impersonation?",
+        "o": [
+            "SeImpersonate privilege",
+            "Read permission only",
+            "Write access basic",
+            "Execute standard"
+        ]
+    },
+    {
+        "q": "What attack uses SeDebugPrivilege for injection?",
+        "o": [
+            "Process injection",
+            "Database attack",
+            "Web injection",
+            "Network scan"
+        ]
+    },
+    {
+        "q": "Which Windows technique injects code into processes?",
+        "o": [
+            "Process hollowing",
+            "SQL injection",
+            "XSS attacks",
+            "CSRF exploits"
+        ]
+    },
+    {
+        "q": "What method creates a suspended process for injection?",
+        "o": [
+            "CreateProcess flag",
+            "Kill process",
+            "End task now",
+            "Restart app"
+        ]
+    },
+    {
+        "q": "Which technique replaces legitimate process memory?",
+        "o": [
+            "Process hollowing",
+            "Direct file copy",
+            "Disk formatting",
+            "Backup restore"
+        ]
+    },
+    {
+        "q": "What Windows API is used for remote thread injection?",
+        "o": [
+            "CreateRemoteThread",
+            "DeleteFile API",
+            "ReadFile API",
+            "WriteFile API"
+        ]
+    },
+    {
+        "q": "Which attack uses APC injection for code execution?",
+        "o": [
+            "APC queue injection",
+            "SQL injection",
+            "XSS attacks",
+            "CSRF exploits"
+        ]
+    },
+    {
+        "q": "What Windows mechanism queues procedures asynchronously?",
+        "o": [
+            "Async Procedure Call",
+            "Sync File Copy",
+            "Direct Memory",
+            "Cache Write"
+        ]
+    },
+    {
+        "q": "Which technique uses Window message hooks for injection?",
+        "o": [
+            "SetWindowsHookEx",
+            "DeleteWindow API",
+            "CloseWindow API",
+            "HideWindow API"
+        ]
+    },
+    {
+        "q": "What Windows feature monitors API hooking attempts?",
+        "o": [
+            "ETW tracing",
+            "Disk Cleanup",
+            "Defrag Tool",
+            "Backup Task"
+        ]
+    },
+    {
+        "q": "Which mitigation protects against process injection?",
+        "o": [
+            "Address randomization",
+            "Disable firewall",
+            "Open all ports",
+            "Allow execution"
+        ]
+    },
+    {
+        "q": "What security mechanism validates code integrity?",
+        "o": [
+            "Hypervisor integrity",
+            "Disk cleanup job",
+            "Defrag schedule",
+            "Backup routine"
+        ]
+    },
+    {
+        "q": "Which Windows feature uses virtualization for security?",
+        "o": [
+            "VBS security",
+            "Disk Manager",
+            "Event Viewer",
+            "Task Manager"
+        ]
+    },
+    {
+        "q": "What attack bypasses Security Support Provider?",
+        "o": [
+            "SSP injection",
+            "SQL injection",
+            "XSS attacks",
+            "CSRF exploits"
+        ]
+    },
+    {
+        "q": "Which registry key registers SSP DLLs in Windows?",
+        "o": [
+            "Security Packages",
+            "Font Cache Key",
+            "Printer Config",
+            "Sound Settings"
+        ]
+    },
+    {
+        "q": "What technique adds custom security provider?",
+        "o": [
+            "AddSecurityPackage API",
+            "DeleteFile function",
+            "ReadFile function",
+            "WriteFile call"
+        ]
+    },
+    {
+        "q": "Which Windows mechanism handles authentication packages?",
+        "o": [
+            "LSA authentication",
+            "Disk Management",
+            "Event Logging",
+            "Task Scheduling"
+        ]
+    },
+    {
+        "q": "What attack exploits password filters for theft?",
+        "o": [
+            "Password filter abuse",
+            "SQL injection only",
+            "XSS attacks only",
+            "CSRF exploits"
+        ]
+    },
+    {
+        "q": "Which registry key stores password filter DLLs?",
+        "o": [
+            "Notification Packages",
+            "Font Cache Keys",
+            "Printer Config",
+            "Sound Settings"
+        ]
+    },
+    {
+        "q": "What technique persists via Authentication Packages?",
+        "o": [
+            "Auth Package persist",
+            "Direct file copy",
+            "Disk formatting",
+            "Backup restore"
+        ]
+    },
+    {
+        "q": "Which Windows log records authentication package loads?",
+        "o": [
+            "Security Event Log",
+            "Application Log",
+            "System Log only",
+            "Setup Log only"
+        ]
+    },
+    {
+        "q": "What attack uses SID History for privilege escalation?",
+        "o": [
+            "SID History inject",
+            "SQL injection",
+            "XSS attacks",
+            "CSRF exploits"
+        ]
+    },
+    {
+        "q": "Which AD attribute stores previous domain SIDs?",
+        "o": [
+            "sIDHistory attribute",
+            "displayName value",
+            "sAMAccountName",
+            "objectClass type"
+        ]
+    },
+    {
+        "q": "What tool modifies SID History in Active Directory?",
+        "o": [
+            "Mimikatz SID",
+            "Nmap scanner",
+            "Wireshark app",
+            "Burp Suite"
+        ]
+    },
+    {
+        "q": "Which defense prevents SID History attacks?",
+        "o": [
+            "SID Filtering trust",
+            "Open all ports",
+            "Disable firewall",
+            "Allow all login"
+        ]
+    },
+    {
+        "q": "What attack forges AD directory replication data?",
+        "o": [
+            "DCSync attack",
+            "SQL injection",
+            "XSS attacks",
+            "CSRF exploits"
+        ]
+    },
+    {
+        "q": "Which permission enables DCSync attacks in AD?",
+        "o": [
+            "Replicating Changes",
+            "Read Only access",
+            "Execute access",
+            "Delete access"
+        ]
+    },
+    {
+        "q": "What tool performs DCSync attacks against AD?",
+        "o": [
+            "Mimikatz DCSync",
+            "Nmap scanner",
+            "Wireshark tool",
+            "Burp Suite"
+        ]
+    },
+    {
+        "q": "Which Windows mechanism protects against DCSync?",
+        "o": [
+            "AdminSDHolder protection",
+            "Disk Cleanup task",
+            "Defrag Schedule job",
+            "Backup Routine"
+        ]
+    },
+    {
+        "q": "What attack uses DCShadow for stealthy persistence?",
+        "o": [
+            "DCShadow attack",
+            "SQL injection",
+            "XSS attacks",
+            "CSRF exploits"
+        ]
+    },
+    {
+        "q": "Which technique registers a rogue domain controller?",
+        "o": [
+            "DCShadow technique",
+            "Direct file copy",
+            "Disk formatting",
+            "Backup restore"
+        ]
+    },
+    {
+        "q": "What attack extracts credentials from LSASS memory dump files?",
+        "o": [
+            "Mimikatz parsing",
+            "Registry export",
+            "Event log scan",
+            "Config backup"
+        ]
+    },
+    {
+        "q": "Which Windows feature prevents unauthorized kernel drivers?",
+        "o": [
+            "Hypervisor Code Integrity",
+            "Standard boot sequence",
+            "Fast startup mode",
+            "Legacy BIOS option"
+        ]
+    },
+    {
+        "q": "What technique abuses Windows Task Scheduler for persistence?",
+        "o": [
+            "Scheduled task creation",
+            "Direct file writes",
+            "Memory injection",
+            "Network tunneling"
+        ]
+    },
+    {
+        "q": "Which attack leverages Kerberos pre-authentication weakness?",
+        "o": [
+            "AS-REP Roasting",
+            "Standard password test",
+            "Certificate import",
+            "Token generation"
+        ]
+    },
+    {
+        "q": "What Windows component monitors for suspicious process behavior?",
+        "o": [
+            "Defender ATP Sensors",
+            "Basic event logging",
+            "Standard firewall",
+            "Disk monitoring"
+        ]
+    },
+    {
+        "q": "Which GPO setting prevents LLMNR protocol usage?",
+        "o": [
+            "Turn off multicast DNS",
+            "Enable link features",
+            "Allow local names",
+            "Standard DNS mode"
+        ]
+    },
+    {
+        "q": "What technique exploits weak service binary permissions?",
+        "o": [
+            "Service binary hijack",
+            "Standard uninstall",
+            "Direct deletion",
+            "Normal service stop"
+        ]
+    },
+    {
+        "q": "Which Windows security feature isolates secrets using VBS?",
+        "o": [
+            "Credential Guard VBS",
+            "Standard encryption",
+            "File-based vault",
+            "Registry secrets"
+        ]
+    },
+    {
+        "q": "What attack targets Windows Print Spooler service remotely?",
+        "o": [
+            "PrintNightmare exploit",
+            "Direct file copy",
+            "Standard print job",
+            "Normal driver load"
+        ]
+    },
+    {
+        "q": "Which tool detects Golden Ticket attacks in Active Directory?",
+        "o": [
+            "Advanced threat analytics",
+            "Basic event viewer",
+            "Standard backups",
+            "Disk monitoring"
+        ]
+    },
+    {
+        "q": "What Windows feature restricts PowerShell script execution?",
+        "o": [
+            "Execution Policy setting",
+            "Direct file blocking",
+            "Network firewall",
+            "Antivirus rules"
+        ]
+    },
+    {
+        "q": "Which attack abuses Windows COM object hijacking?",
+        "o": [
+            "COM object persistence",
+            "Standard app launch",
+            "Direct execution",
+            "Normal shortcut"
+        ]
+    },
+    {
+        "q": "What technique extracts NTDS.dit from a running domain controller?",
+        "o": [
+            "Volume Shadow Copy",
+            "Direct file copy",
+            "Standard backup",
+            "Registry export"
+        ]
+    },
+    {
+        "q": "Which Windows tool provides centralized credential management?",
+        "o": [
+            "LAPS for AD clients",
+            "Manual password track",
+            "Spreadsheet store",
+            "Email-based share"
+        ]
+    },
+    {
+        "q": "What attack leverages Windows Event Subscription for persistence?",
+        "o": [
+            "WMI event consumer",
+            "Standard alert setup",
+            "Direct file write",
+            "Normal log config"
+        ]
+    },
+    {
+        "q": "Which security feature prevents process injection in Windows?",
+        "o": [
+            "Arbitrary Code Guard",
+            "Standard firewall",
+            "Disk encryption",
+            "Network filter"
+        ]
+    },
+    {
+        "q": "What Windows component validates Authenticode signatures?",
+        "o": [
+            "Windows Trust Provider",
+            "Standard file check",
+            "AV signature scan",
+            "Hash calculation"
+        ]
+    },
+    {
+        "q": "Which attack exploits weak DACL on Active Directory objects?",
+        "o": [
+            "ACL-based privilege",
+            "Standard user add",
+            "Direct group join",
+            "Normal permission"
+        ]
+    },
+    {
+        "q": "What technique abuses Windows Remote Registry for recon?",
+        "o": [
+            "Remote reg enumeration",
+            "Direct file read",
+            "Standard backup",
+            "Normal export"
+        ]
+    },
+    {
+        "q": "Which GPO setting enables advanced auditing in Windows?",
+        "o": [
+            "Advanced Audit Policy",
+            "Basic event toggle",
+            "Standard log size",
+            "Default settings"
+        ]
+    },
+    {
+        "q": "What attack targets Windows NTLM relay vulnerabilities?",
+        "o": [
+            "NTLM relay attack",
+            "Standard auth flow",
+            "Direct password",
+            "Normal Kerberos"
+        ]
+    },
+    {
+        "q": "Which Windows feature provides boot-time malware protection?",
+        "o": [
+            "Early Launch Anti-Malware",
+            "Standard boot sequence",
+            "Fast startup only",
+            "Legacy BIOS mode"
+        ]
+    },
+    {
+        "q": "What technique exploits Windows AppInit DLLs for persistence?",
+        "o": [
+            "AppInit DLL injection",
+            "Standard DLL load",
+            "Direct execution",
+            "Normal import"
+        ]
+    },
+    {
+        "q": "Which security baseline tool is maintained by Microsoft?",
+        "o": [
+            "Security Compliance Kit",
+            "Third-party scanner",
+            "Open source only",
+            "Manual checklist"
+        ]
+    },
+    {
+        "q": "What attack abuses Windows SID History for privilege escalation?",
+        "o": [
+            "SID History inject",
+            "Standard group add",
+            "Direct admin grant",
+            "Normal user move"
+        ]
+    },
+    {
+        "q": "Which Windows component provides hardware-based key storage?",
+        "o": [
+            "TPM chip integration",
+            "Software-based vault",
+            "File encryption",
+            "Registry storage"
+        ]
+    },
+    {
+        "q": "What technique exploits Windows Netlogon vulnerability?",
+        "o": [
+            "Zerologon attack",
+            "Standard domain join",
+            "Direct password set",
+            "Normal user sync"
+        ]
+    },
+    {
+        "q": "Which GPO setting restricts removable media access?",
+        "o": [
+            "Device Installation Policy",
+            "Standard driver block",
+            "Firewall setting",
+            "Audit policy"
+        ]
+    },
+    {
+        "q": "What Windows feature prevents unsigned driver loading?",
+        "o": [
+            "Driver signature force",
+            "Standard warning only",
+            "Prompt user choice",
+            "Allow all drivers"
+        ]
+    },
+    {
+        "q": "Which attack targets Windows DCOM for remote execution?",
+        "o": [
+            "DCOM lateral movement",
+            "Standard RPC call",
+            "Direct WMI query",
+            "Normal service start"
+        ]
+    },
+    {
+        "q": "What technique uses Windows Debugging API for injection?",
+        "o": [
+            "Debug privilege abuse",
+            "Standard attach mode",
+            "Direct memory read",
+            "Normal breakpoint"
+        ]
+    },
+    {
+        "q": "Which Windows security log event indicates Kerberos ticket request?",
+        "o": [
+            "Event ID 4768",
+            "Event ID 4624",
+            "Event ID 4625",
+            "Event ID 4634"
+        ]
+    },
+    {
+        "q": "What attack leverages Windows Explorer extensions for persistence?",
+        "o": [
+            "Shell extension hijack",
+            "Standard file assoc",
+            "Direct shortcut",
+            "Normal start menu"
+        ]
+    },
+    {
+        "q": "Which Windows feature provides memory protection for browsers?",
+        "o": [
+            "Application Guard VM",
+            "Standard sandbox mode",
+            "Basic tab isolation",
+            "Normal process"
+        ]
+    },
+    {
+        "q": "What technique abuses Windows Subsystem for Linux for evasion?",
+        "o": [
+            "WSL binary execution",
+            "Standard Linux tool",
+            "Direct shell run",
+            "Normal virtualization"
+        ]
+    },
+    {
+        "q": "Which GPO setting controls Windows Update configuration?",
+        "o": [
+            "Windows Update Policy",
+            "Direct registry edit",
+            "Manual download",
+            "Offline update"
+        ]
+    },
+    {
+        "q": "What Windows component provides application compatibility logging?",
+        "o": [
+            "Application Verifier",
+            "Standard event log",
+            "Debug trace file",
+            "Crash dump"
+        ]
+    },
+    {
+        "q": "Which attack exploits Windows Search Indexer for privilege escalation?",
+        "o": [
+            "Search indexer abuse",
+            "Standard file find",
+            "Direct privilege",
+            "Normal escalation"
+        ]
+    },
+    {
+        "q": "What technique uses Windows Error Reporting for malware delivery?",
+        "o": [
+            "WER directory abuse",
+            "Standard crash dump",
+            "Direct file write",
+            "Normal error log"
+        ]
+    },
+    {
+        "q": "Which Windows feature provides network isolation for apps?",
+        "o": [
+            "Windows Firewall rules",
+            "Standard NAT config",
+            "Basic port block",
+            "Direct IP filter"
+        ]
+    },
+    {
+        "q": "What attack targets Windows Server Message Block protocol?",
+        "o": [
+            "SMB relay attack",
+            "Standard share access",
+            "Direct file copy",
+            "Normal network"
+        ]
+    },
+    {
+        "q": "Which security event indicates successful user logon?",
+        "o": [
+            "Event ID 4624",
+            "Event ID 4625",
+            "Event ID 4768",
+            "Event ID 4769"
+        ]
+    },
+    {
+        "q": "What technique abuses Windows Management Instrumentation persistence?",
+        "o": [
+            "WMI permanent event",
+            "Standard query run",
+            "Direct script exec",
+            "Normal class call"
+        ]
+    },
+    {
+        "q": "Which Windows tool provides Group Policy result analysis?",
+        "o": [
+            "RSOP snap-in tool",
+            "Standard event view",
+            "Direct registry",
+            "Manual inspection"
+        ]
+    },
+    {
+        "q": "What attack leverages Windows Background Intelligent Transfer?",
+        "o": [
+            "BITS job persistence",
+            "Standard download",
+            "Direct file copy",
+            "Normal transfer"
+        ]
+    },
+    {
+        "q": "Which Windows feature protects against firmware attacks?",
+        "o": [
+            "System Guard Secure",
+            "Standard BIOS boot",
+            "Legacy mode only",
+            "Fast startup"
+        ]
+    },
+    {
+        "q": "What technique exploits Windows netsh helper DLLs?",
+        "o": [
+            "Netsh helper persist",
+            "Standard network cmd",
+            "Direct config edit",
+            "Normal firewall"
+        ]
+    },
+    {
+        "q": "Which GPO setting enables Device Guard WDAC policies?",
+        "o": [
+            "Code Integrity Policy",
+            "Standard driver sign",
+            "Basic app whitelist",
+            "Direct block list"
+        ]
+    },
+    {
+        "q": "What Windows component validates driver chain of trust?",
+        "o": [
+            "Kernel Mode Signing",
+            "User mode check",
+            "Standard file hash",
+            "Direct compare"
+        ]
+    },
+    {
+        "q": "Which attack targets Active Directory certificate templates?",
+        "o": [
+            "ESC template abuse",
+            "Standard cert request",
+            "Direct CA access",
+            "Normal enrollment"
+        ]
+    },
+    {
+        "q": "What technique uses Windows Accessibility features for persistence?",
+        "o": [
+            "Image File Execution",
+            "Standard shortcut",
+            "Direct startup folder",
+            "Normal registry run"
+        ]
+    },
+    {
+        "q": "Which Windows log contains authentication provider events?",
+        "o": [
+            "Security event logs",
+            "Application logs",
+            "System event log",
+            "Setup event log"
+        ]
+    },
+    {
+        "q": "What attack exploits Windows DLL search order?",
+        "o": [
+            "DLL search hijack",
+            "Standard import",
+            "Direct load call",
+            "Normal dependency"
+        ]
+    },
+    {
+        "q": "Which Windows feature provides protected process for AV?",
+        "o": [
+            "Protected Process Light",
+            "Standard admin mode",
+            "Direct service run",
+            "Normal elevation"
+        ]
+    },
+    {
+        "q": "What technique abuses Windows RPC endpoints for recon?",
+        "o": [
+            "RPC endpoint mapping",
+            "Standard port scan",
+            "Direct connection",
+            "Normal service list"
+        ]
+    },
+    {
+        "q": "Which GPO setting controls LSA protection level?",
+        "o": [
+            "LSA Protected Mode",
+            "Standard auth config",
+            "Direct policy edit",
+            "Normal security"
+        ]
+    },
+    {
+        "q": "What Windows component handles secure channel authentication?",
+        "o": [
+            "Schannel Provider DLL",
+            "Standard SSL layer",
+            "Direct TLS config",
+            "Normal encryption"
+        ]
+    },
+    {
+        "q": "Which attack leverages Windows Shim database for persistence?",
+        "o": [
+            "Application shim abuse",
+            "Standard compatibility",
+            "Direct app patch",
+            "Normal fix apply"
+        ]
+    },
+    {
+        "q": "What technique exploits Windows Service Control Manager?",
+        "o": [
+            "SCM service creation",
+            "Standard install",
+            "Direct binary drop",
+            "Normal service"
+        ]
+    },
+    {
+        "q": "Which Windows security event indicates privilege use?",
+        "o": [
+            "Event ID 4672",
+            "Event ID 4624",
+            "Event ID 4625",
+            "Event ID 4634"
+        ]
+    },
+    {
+        "q": "What Windows feature provides credential caching protection?",
+        "o": [
+            "Remote Guard RDP",
+            "Standard session",
+            "Direct connection",
+            "Normal remote"
+        ]
+    },
+    {
+        "q": "Which attack targets Windows DNS Server for code execution?",
+        "o": [
+            "SIGRed DNS exploit",
+            "Standard zone add",
+            "Direct record edit",
+            "Normal query"
+        ]
+    },
+    {
+        "q": "What technique uses Windows Autoruns locations for persistence?",
+        "o": [
+            "Registry Run keys",
+            "Direct file drop",
+            "Standard shortcut",
+            "Normal start menu"
+        ]
+    },
+    {
+        "q": "Which GPO setting enables PowerShell script logging?",
+        "o": [
+            "Module Logging Policy",
+            "Standard event log",
+            "Direct file trace",
+            "Normal audit"
+        ]
+    },
+    {
+        "q": "What Windows component provides anti-rollback protection?",
+        "o": [
+            "Windows Defender AC",
+            "Standard update check",
+            "Direct version compare",
+            "Normal patch level"
+        ]
+    },
+    {
+        "q": "Which attack exploits Windows Distributed File System?",
+        "o": [
+            "DFS share abuse",
+            "Standard file copy",
+            "Direct network path",
+            "Normal mapping"
+        ]
+    },
+    {
+        "q": "What technique abuses Windows AMSI for security bypass?",
+        "o": [
+            "AMSI patch memory",
+            "Standard disable",
+            "Direct registry",
+            "Normal unload"
+        ]
+    },
+    {
+        "q": "Which Windows feature monitors for suspicious network activity?",
+        "o": [
+            "Defender NIS component",
+            "Standard firewall log",
+            "Direct packet capture",
+            "Normal traffic"
+        ]
+    },
+    {
+        "q": "What attack leverages Windows Pass-the-Certificate technique?",
+        "o": [
+            "Certificate auth abuse",
+            "Standard smart card",
+            "Direct PKI request",
+            "Normal enrollment"
+        ]
+    },
+    {
+        "q": "Which security log event indicates group membership change?",
+        "o": [
+            "Event ID 4728",
+            "Event ID 4624",
+            "Event ID 4625",
+            "Event ID 4672"
+        ]
+    },
+    {
+        "q": "What Windows component provides secure enclave for apps?",
+        "o": [
+            "VBS Enclave runtime",
+            "Standard isolation",
+            "Direct sandboxing",
+            "Normal container"
+        ]
+    },
+    {
+        "q": "Which technique exploits Windows Add-Type cmdlet?",
+        "o": [
+            "Runtime code compile",
+            "Standard module load",
+            "Direct script exec",
+            "Normal function call"
+        ]
+    },
+    {
+        "q": "What GPO setting controls credential delegation restrictions?",
+        "o": [
+            "Credential Delegation",
+            "Standard auth config",
+            "Direct policy set",
+            "Normal security"
+        ]
+    },
+    {
+        "q": "Which Windows feature provides tamper protection for Defender?",
+        "o": [
+            "Tamper Protection flag",
+            "Standard admin lock",
+            "Direct policy set",
+            "Normal config block"
+        ]
+    },
+    {
+        "q": "What attack targets Windows AD Connect synchronization?",
+        "o": [
+            "Azure AD Connect abuse",
+            "Standard sync config",
+            "Direct password sync",
+            "Normal federation"
+        ]
+    },
+    {
+        "q": "Which technique uses Windows Clipboard API for data theft?",
+        "o": [
+            "Clipboard monitoring",
+            "Standard copy paste",
+            "Direct memory read",
+            "Normal text access"
+        ]
+    },
+    {
+        "q": "What Windows security event indicates new service installation?",
+        "o": [
+            "Event ID 4697",
+            "Event ID 4624",
+            "Event ID 4625",
+            "Event ID 4672"
+        ]
+    },
+    {
+        "q": "Which attack exploits Windows named pipe impersonation?",
+        "o": [
+            "Impersonation via pipe",
+            "Standard IPC access",
+            "Direct handle use",
+            "Normal communication"
+        ]
+    },
+    {
+        "q": "What Windows component provides cryptographic key protection?",
+        "o": [
+            "Key Storage Provider",
+            "Standard file vault",
+            "Direct encryption",
+            "Normal password"
+        ]
+    },
+    {
+        "q": "Which GPO setting enables Attack Surface Reduction rules?",
+        "o": [
+            "ASR rules policy",
+            "Standard exploit guard",
+            "Direct block list",
+            "Normal restriction"
+        ]
+    },
+    {
+        "q": "What technique abuses Windows WDigest authentication cache?",
+        "o": [
+            "WDigest credential dump",
+            "Standard NTLM hash",
+            "Direct SAM extract",
+            "Normal auth cache"
+        ]
+    },
+    {
+        "q": "Which Windows feature monitors for ransomware behavior?",
+        "o": [
+            "Controlled Folder Access",
+            "Standard file monitor",
+            "Direct backup check",
+            "Normal AV scan"
+        ]
+    },
+    {
+        "q": "What attack leverages Windows SeTcbPrivilege elevation?",
+        "o": [
+            "Token privilege abuse",
+            "Standard admin grant",
+            "Direct group add",
+            "Normal elevation"
+        ]
+    },
+    {
+        "q": "Which security log event indicates scheduled task creation?",
+        "o": [
+            "Event ID 4698",
+            "Event ID 4624",
+            "Event ID 4625",
+            "Event ID 4672"
+        ]
+    },
+    {
+        "q": "What Windows component provides secure boot measurements?",
+        "o": [
+            "TPM measured boot log",
+            "Standard hash check",
+            "Direct file compare",
+            "Normal verification"
+        ]
+    },
+    {
+        "q": "Which technique exploits Windows DPAPI for credential theft?",
+        "o": [
+            "DPAPI master key theft",
+            "Standard decryption",
+            "Direct password file",
+            "Normal vault access"
+        ]
+    },
+    {
+        "q": "What GPO setting controls dangerous file type execution?",
+        "o": [
+            "High Risk Extensions",
+            "Standard file block",
+            "Direct extension ban",
+            "Normal type filter"
+        ]
+    },
+    {
+        "q": "Which Windows feature provides process tree analysis?",
+        "o": [
+            "EDR process tracking",
+            "Standard task manager",
+            "Direct PID list",
+            "Normal process view"
+        ]
+    },
+    {
+        "q": "What attack targets Windows Kerberos constrained delegation?",
+        "o": [
+            "S4U protocol abuse",
+            "Standard delegation",
+            "Direct ticket forge",
+            "Normal service auth"
+        ]
+    },
+    {
+        "q": "Which technique uses Windows TypeLib for persistence?",
+        "o": [
+            "COM TypeLib hijack",
+            "Standard library load",
+            "Direct DLL import",
+            "Normal runtime"
+        ]
+    },
+    {
+        "q": "What Windows security event indicates policy change?",
+        "o": [
+            "Event ID 4719",
+            "Event ID 4624",
+            "Event ID 4625",
+            "Event ID 4672"
+        ]
+    },
+    {
+        "q": "Which Windows component provides exploit mitigation for apps?",
+        "o": [
+            "Exploit Protection CFG",
+            "Standard ASLR only",
+            "Direct DEP enable",
+            "Normal security"
+        ]
+    },
+    {
+        "q": "What attack exploits Windows AD Recycle Bin for object recovery?",
+        "o": [
+            "Deleted object restore",
+            "Standard backup use",
+            "Direct LDAP query",
+            "Normal AD search"
+        ]
+    },
+    {
+        "q": "Which GPO setting enables Windows Firewall logging?",
+        "o": [
+            "Firewall Log config",
+            "Standard event ID",
+            "Direct trace file",
+            "Normal packet log"
+        ]
+    },
+    {
+        "q": "What technique abuses Windows Image File Execution Options?",
+        "o": [
+            "IFEO debugger hijack",
+            "Standard debug attach",
+            "Direct process start",
+            "Normal execution"
+        ]
+    },
+    {
+        "q": "Which Windows feature validates code integrity at runtime?",
+        "o": [
+            "Hypervisor CI runtime",
+            "Standard hash check",
+            "Direct signature test",
+            "Normal validation"
+        ]
+    },
+    {
+        "q": "What kernel structure stores process token information?",
+        "o": [
+            "EPROCESS TOKEN field",
+            "Standard user table",
+            "Direct memory block",
+            "Normal handle list"
+        ]
+    },
+    {
+        "q": "Which technique bypasses Windows AMSI using reflection?",
+        "o": [
+            "Field nullification",
+            "Standard disable call",
+            "Direct registry edit",
+            "Normal unload method"
+        ]
+    },
+    {
+        "q": "What Windows kernel mode component manages object types?",
+        "o": [
+            "Object Manager subsystem",
+            "Standard file system",
+            "Direct driver layer",
+            "Normal registry"
+        ]
+    },
+    {
+        "q": "Which attack uses Windows PEB structure for module enumeration?",
+        "o": [
+            "PEB LDR walking",
+            "Standard API query",
+            "Direct file search",
+            "Normal library list"
+        ]
+    },
+    {
+        "q": "What Windows component enforces Virtualization Based Security?",
+        "o": [
+            "Hypervisor enforcement",
+            "Standard kernel mode",
+            "Direct BIOS setting",
+            "Normal user space"
+        ]
+    },
+    {
+        "q": "Which forensic artifact reveals executable launch history?",
+        "o": [
+            "Prefetch file analysis",
+            "Standard event log",
+            "Direct file timestamp",
+            "Normal registry key"
+        ]
+    },
+    {
+        "q": "What technique exploits Windows callback object notification?",
+        "o": [
+            "Kernel callback abuse",
+            "Standard notify setup",
+            "Direct driver install",
+            "Normal service start"
+        ]
+    },
+    {
+        "q": "Which Windows structure contains syscall dispatch table?",
+        "o": [
+            "SSDT kernel table",
+            "Standard API list",
+            "Direct handle array",
+            "Normal export table"
+        ]
+    },
+    {
+        "q": "What attack leverages Windows Direct Kernel Object Manipulation?",
+        "o": [
+            "DKOM rootkit technique",
+            "Standard kernel patch",
+            "Direct file modify",
+            "Normal registry edit"
+        ]
+    },
+    {
+        "q": "Which Windows feature protects against stack buffer overflows?",
+        "o": [
+            "Stack Cookie GS check",
+            "Standard bound check",
+            "Direct memory guard",
+            "Normal array limit"
+        ]
+    },
+    {
+        "q": "What technique uses Windows ETW for security evasion?",
+        "o": [
+            "ETW provider patching",
+            "Standard disable toggle",
+            "Direct event block",
+            "Normal log redirect"
+        ]
+    },
+    {
+        "q": "Which Windows memory protection prevents ROP attacks?",
+        "o": [
+            "Control Flow Guard",
+            "Standard DEP only",
+            "Direct ASLR alone",
+            "Normal stack protect"
+        ]
+    },
+    {
+        "q": "What forensic technique analyzes Windows SRUM database?",
+        "o": [
+            "SRUM artifact parsing",
+            "Standard event review",
+            "Direct file timeline",
+            "Normal log analysis"
+        ]
+    },
+    {
+        "q": "Which attack exploits Windows Minifilter driver stack?",
+        "o": [
+            "Filter callback abuse",
+            "Standard driver load",
+            "Direct file I/O hook",
+            "Normal registry filter"
+        ]
+    },
+    {
+        "q": "What Windows kernel feature tracks I/O request packets?",
+        "o": [
+            "IRP major functions",
+            "Standard file calls",
+            "Direct buffer access",
+            "Normal stream read"
+        ]
+    },
+    {
+        "q": "Which technique bypasses Windows PPL protection level?",
+        "o": [
+            "Vulnerable driver load",
+            "Standard admin access",
+            "Direct handle dupe",
+            "Normal token steal"
+        ]
+    },
+    {
+        "q": "What Windows component manages kernel memory allocation?",
+        "o": [
+            "Pool Allocator system",
+            "Standard heap manager",
+            "Direct page table",
+            "Normal virtual memory"
+        ]
+    },
+    {
+        "q": "Which forensic artifact tracks USB device connections?",
+        "o": [
+            "USBSTOR registry key",
+            "Standard event log",
+            "Direct file creation",
+            "Normal device entry"
+        ]
+    },
+    {
+        "q": "What attack uses Windows Heaven Gate for x64 code execution?",
+        "o": [
+            "WoW64 segment switch",
+            "Standard API forward",
+            "Direct syscall make",
+            "Normal function call"
+        ]
+    },
+    {
+        "q": "Which Windows security feature validates exception handlers?",
+        "o": [
+            "SafeSEH protection",
+            "Standard stack check",
+            "Direct memory guard",
+            "Normal crash handler"
+        ]
+    },
+    {
+        "q": "What technique exploits Windows filter driver communication?",
+        "o": [
+            "Filter port messaging",
+            "Standard device IOCTL",
+            "Direct kernel call",
+            "Normal driver query"
+        ]
+    },
+    {
+        "q": "Which Windows memory region contains kernel exports?",
+        "o": [
+            "Ntoskrnl image base",
+            "Standard user library",
+            "Direct system file",
+            "Normal boot region"
+        ]
+    },
+    {
+        "q": "What forensic analysis examines Windows shellbags?",
+        "o": [
+            "Shellbag artifact review",
+            "Standard event log",
+            "Direct registry scan",
+            "Normal file history"
+        ]
+    },
+    {
+        "q": "Which attack targets Windows HyperGuard protection?",
+        "o": [
+            "HVCI bypass technique",
+            "Standard driver sign",
+            "Direct boot patch",
+            "Normal kernel load"
+        ]
+    },
+    {
+        "q": "What Windows component manages kernel thread scheduling?",
+        "o": [
+            "Dispatcher priority",
+            "Standard process list",
+            "Direct CPU affinity",
+            "Normal queue manager"
+        ]
+    },
+    {
+        "q": "Which technique uses Windows Native API for stealth?",
+        "o": [
+            "Direct syscall invoke",
+            "Standard API wrapper",
+            "Direct kernel call",
+            "Normal function use"
+        ]
+    },
+    {
+        "q": "What forensic artifact reveals network connection history?",
+        "o": [
+            "SRUM network data",
+            "Standard event log",
+            "Direct socket trace",
+            "Normal packet capture"
+        ]
+    },
+    {
+        "q": "Which Windows kernel structure stores process handles?",
+        "o": [
+            "Handle Table entry",
+            "Standard object list",
+            "Direct file array",
+            "Normal registry map"
+        ]
+    },
+    {
+        "q": "What attack exploits Windows Transaction NTFS feature?",
+        "o": [
+            "TxF file ghosting",
+            "Standard file hide",
+            "Direct stream create",
+            "Normal attribute set"
+        ]
+    },
+    {
+        "q": "Which Windows protection randomizes kernel base address?",
+        "o": [
+            "KASLR implementation",
+            "Standard boot sequence",
+            "Direct memory layout",
+            "Normal load order"
+        ]
+    },
+    {
+        "q": "What technique abuses Windows callback table entries?",
+        "o": [
+            "Notify routine patch",
+            "Standard register call",
+            "Direct function hook",
+            "Normal event setup"
+        ]
+    },
+    {
+        "q": "Which forensic technique analyzes Windows jump lists?",
+        "o": [
+            "Jump list parsing",
+            "Standard LNK review",
+            "Direct file history",
+            "Normal access scan"
+        ]
+    },
+    {
+        "q": "What Windows kernel component manages exception dispatch?",
+        "o": [
+            "KiDispatchException",
+            "Standard error handle",
+            "Direct fault process",
+            "Normal crash routine"
+        ]
+    },
+    {
+        "q": "Which attack uses Windows minifilter altitude for ordering?",
+        "o": [
+            "Altitude manipulation",
+            "Standard driver load",
+            "Direct filter bypass",
+            "Normal stack insert"
+        ]
+    },
+    {
+        "q": "What Windows feature protects against heap overflow?",
+        "o": [
+            "Heap metadata guard",
+            "Standard bound check",
+            "Direct memory fence",
+            "Normal allocation"
+        ]
+    },
+    {
+        "q": "Which technique exploits Windows kernel pool overflow?",
+        "o": [
+            "Pool corruption attack",
+            "Standard buffer write",
+            "Direct memory spray",
+            "Normal heap groom"
+        ]
+    },
+    {
+        "q": "What forensic artifact tracks application execution?",
+        "o": [
+            "Amcache.hve analysis",
+            "Standard event log",
+            "Direct file timestamp",
+            "Normal registry key"
+        ]
+    },
+    {
+        "q": "Which Windows kernel mode API handles registry operations?",
+        "o": [
+            "Configuration Manager",
+            "Standard registry API",
+            "Direct hive access",
+            "Normal key function"
+        ]
+    },
+    {
+        "q": "What attack leverages Windows Debug Object for evasion?",
+        "o": [
+            "Debug object detach",
+            "Standard anti-debug",
+            "Direct breakpoint",
+            "Normal exception"
+        ]
+    },
+    {
+        "q": "Which Windows protection validates driver certificate chain?",
+        "o": [
+            "WHQL signing verify",
+            "Standard hash check",
+            "Direct file compare",
+            "Normal signature"
+        ]
+    },
+    {
+        "q": "What technique uses Windows Section Object for injection?",
+        "o": [
+            "Section mapping inject",
+            "Standard DLL load",
+            "Direct memory write",
+            "Normal process start"
+        ]
+    },
+    {
+        "q": "Which forensic analysis examines Windows RecentApps?",
+        "o": [
+            "RecentApps timeline",
+            "Standard event log",
+            "Direct file access",
+            "Normal registry key"
+        ]
+    },
+    {
+        "q": "What Windows kernel structure contains security descriptor?",
+        "o": [
+            "Object Header SD field",
+            "Standard DACL table",
+            "Direct ACL array",
+            "Normal permission"
+        ]
+    },
+    {
+        "q": "Which attack targets Windows Secure Kernel Mode?",
+        "o": [
+            "VTL boundary escape",
+            "Standard kernel patch",
+            "Direct hypervisor",
+            "Normal driver load"
+        ]
+    },
+    {
+        "q": "What technique bypasses Windows Credential Guard protection?",
+        "o": [
+            "Pass the ticket AD",
+            "Standard LSASS dump",
+            "Direct memory read",
+            "Normal hash extract"
+        ]
+    },
+    {
+        "q": "Which Windows component enforces kernel memory isolation?",
+        "o": [
+            "Kernel Shadow Stack",
+            "Standard page protect",
+            "Direct memory guard",
+            "Normal stack fence"
+        ]
+    },
+    {
+        "q": "What forensic technique analyzes Windows UserAssist?",
+        "o": [
+            "UserAssist ROT13 decode",
+            "Standard event log",
+            "Direct file analysis",
+            "Normal registry read"
+        ]
+    },
+    {
+        "q": "Which attack uses Windows APC injection mechanism?",
+        "o": [
+            "Kernel APC queue inject",
+            "Standard thread create",
+            "Direct memory write",
+            "Normal DLL load"
+        ]
+    },
+    {
+        "q": "What Windows kernel feature tracks driver load events?",
+        "o": [
+            "Driver load callback",
+            "Standard event log",
+            "Direct trace file",
+            "Normal registry key"
+        ]
+    },
+    {
+        "q": "Which technique exploits Windows token impersonation level?",
+        "o": [
+            "Token level elevation",
+            "Standard privilege add",
+            "Direct group modify",
+            "Normal user change"
+        ]
+    },
+    {
+        "q": "What forensic artifact reveals browser history?",
+        "o": [
+            "WebCacheV01 database",
+            "Standard event log",
+            "Direct file access",
+            "Normal registry key"
+        ]
+    },
+    {
+        "q": "Which Windows kernel API creates process objects?",
+        "o": [
+            "NtCreateProcessEx",
+            "Standard CreateProcess",
+            "Direct kernel call",
+            "Normal spawn API"
+        ]
+    },
+    {
+        "q": "What attack leverages Windows Secure Launch for persistence?",
+        "o": [
+            "DRTM measurement bypass",
+            "Standard boot sequence",
+            "Direct UEFI patch",
+            "Normal secure boot"
+        ]
+    },
+    {
+        "q": "Which Windows protection prevents use-after-free exploitation?",
+        "o": [
+            "Pool type annotation",
+            "Standard memory track",
+            "Direct reference count",
+            "Normal heap metadata"
+        ]
+    },
+    {
+        "q": "What technique uses Windows Object Directory for namespace?",
+        "o": [
+            "Symbolic link hijack",
+            "Standard path resolution",
+            "Direct object access",
+            "Normal file create"
+        ]
+    },
+    {
+        "q": "Which forensic analysis examines Windows MFT records?",
+        "o": [
+            "MFT timeline parsing",
+            "Standard file listing",
+            "Direct sector read",
+            "Normal directory scan"
+        ]
+    },
+    {
+        "q": "What Windows kernel structure stores thread local storage?",
+        "o": [
+            "TEB thread block",
+            "Standard stack frame",
+            "Direct memory region",
+            "Normal process space"
+        ]
+    },
+    {
+        "q": "Which attack targets Windows PatchGuard protection?",
+        "o": [
+            "KPP disable technique",
+            "Standard driver sign",
+            "Direct kernel patch",
+            "Normal boot modify"
+        ]
+    },
+    {
+        "q": "What technique exploits Windows Interrupt Descriptor Table?",
+        "o": [
+            "IDT hook installation",
+            "Standard ISR modify",
+            "Direct vector patch",
+            "Normal interrupt set"
+        ]
+    },
+    {
+        "q": "Which Windows component manages kernel object reference?",
+        "o": [
+            "Object Reference Count",
+            "Standard handle track",
+            "Direct pointer list",
+            "Normal memory access"
+        ]
+    },
+    {
+        "q": "What forensic technique analyzes Windows BAM database?",
+        "o": [
+            "BAM execution records",
+            "Standard event log",
+            "Direct file timestamp",
+            "Normal registry key"
+        ]
+    },
+    {
+        "q": "Which attack uses Windows MDL for physical memory access?",
+        "o": [
+            "MDL mapping exploit",
+            "Standard buffer copy",
+            "Direct memory read",
+            "Normal I/O request"
+        ]
+    },
+    {
+        "q": "What Windows kernel API performs file system operations?",
+        "o": [
+            "IoCreateFile routine",
+            "Standard CreateFile",
+            "Direct handle open",
+            "Normal file access"
+        ]
+    },
+    {
+        "q": "Which technique bypasses Windows ACG protection?",
+        "o": [
+            "JIT compilation abuse",
+            "Standard code write",
+            "Direct memory modify",
+            "Normal page change"
+        ]
+    },
+    {
+        "q": "What forensic artifact tracks service installation?",
+        "o": [
+            "System event 7045",
+            "Standard event log",
+            "Direct registry key",
+            "Normal file create"
+        ]
+    },
+    {
+        "q": "Which Windows kernel structure contains HAL dispatch table?",
+        "o": [
+            "HalDispatchTable ptr",
+            "Standard kernel export",
+            "Direct function array",
+            "Normal API table"
+        ]
+    },
+    {
+        "q": "What attack exploits Windows GDI object vulnerabilities?",
+        "o": [
+            "GDI bitmap primitive",
+            "Standard graphics call",
+            "Direct DC handle",
+            "Normal draw function"
+        ]
+    },
+    {
+        "q": "Which Windows protection validates return addresses?",
+        "o": [
+            "Shadow Stack SSP",
+            "Standard stack cookie",
+            "Direct return check",
+            "Normal frame walk"
+        ]
+    },
+    {
+        "q": "What technique uses Windows kernel pool tag for tracking?",
+        "o": [
+            "Pool tag manipulation",
+            "Standard memory trace",
+            "Direct allocation mark",
+            "Normal buffer label"
+        ]
+    },
+    {
+        "q": "Which forensic analysis examines Windows ShadowCopy?",
+        "o": [
+            "VSS snapshot forensics",
+            "Standard backup review",
+            "Direct file compare",
+            "Normal restore point"
+        ]
+    },
+    {
+        "q": "What Windows kernel component handles power management?",
+        "o": [
+            "Power Manager subsystem",
+            "Standard ACPI driver",
+            "Direct firmware call",
+            "Normal system idle"
+        ]
+    },
+    {
+        "q": "Which attack targets Windows Kernel Virtual Address Shadow?",
+        "o": [
+            "KVAS bypass technique",
+            "Standard memory access",
+            "Direct page table",
+            "Normal kernel read"
+        ]
+    },
+    {
+        "q": "What technique exploits Windows CreateRemoteThread API?",
+        "o": [
+            "Remote thread injection",
+            "Standard process start",
+            "Direct memory write",
+            "Normal DLL load"
+        ]
+    },
+    {
+        "q": "Which Windows feature protects against Spectre attacks?",
+        "o": [
+            "Retpoline mitigation",
+            "Standard cache flush",
+            "Direct branch predict",
+            "Normal speculation"
+        ]
+    },
+    {
+        "q": "What forensic artifact reveals PowerShell command history?",
+        "o": [
+            "ConsoleHost_history",
+            "Standard event log",
+            "Direct file access",
+            "Normal registry key"
+        ]
+    },
+    {
+        "q": "Which Windows kernel API allocates virtual memory?",
+        "o": [
+            "NtAllocateVirtual",
+            "Standard VirtualAlloc",
+            "Direct page mapping",
+            "Normal heap create"
+        ]
+    },
+    {
+        "q": "What attack uses Windows Image Section for process hollow?",
+        "o": [
+            "Process hollowing PE",
+            "Standard DLL inject",
+            "Direct memory write",
+            "Normal thread create"
+        ]
+    },
+    {
+        "q": "Which technique bypasses Windows kernel integrity checks?",
+        "o": [
+            "Test signing enable",
+            "Standard driver load",
+            "Direct boot config",
+            "Normal secure boot"
+        ]
+    },
+    {
+        "q": "What Windows component manages kernel exception handling?",
+        "o": [
+            "SEH frame chain",
+            "Standard error trap",
+            "Direct fault handle",
+            "Normal crash routine"
+        ]
+    },
+    {
+        "q": "Which forensic technique analyzes Windows Cortana search?",
+        "o": [
+            "Cortana database parse",
+            "Standard event log",
+            "Direct file analysis",
+            "Normal registry scan"
+        ]
+    },
+    {
+        "q": "What attack exploits Windows kernel Zone Identifier ADS?",
+        "o": [
+            "MOTW bypass technique",
+            "Standard file copy",
+            "Direct stream remove",
+            "Normal attribute set"
+        ]
+    },
+    {
+        "q": "Which Windows protection mitigates Meltdown vulnerabilities?",
+        "o": [
+            "KPTI page isolation",
+            "Standard cache control",
+            "Direct memory fence",
+            "Normal CPU feature"
+        ]
+    },
+    {
+        "q": "What technique uses Windows NtMapViewOfSection injection?",
+        "o": [
+            "Section view mapping",
+            "Standard memory alloc",
+            "Direct page create",
+            "Normal buffer map"
+        ]
+    },
+    {
+        "q": "Which Windows kernel structure manages file objects?",
+        "o": [
+            "FILE_OBJECT pointer",
+            "Standard handle entry",
+            "Direct stream object",
+            "Normal I/O control"
+        ]
+    },
+    {
+        "q": "What forensic analysis examines Windows Notifications?",
+        "o": [
+            "WPN database parsing",
+            "Standard event log",
+            "Direct file access",
+            "Normal registry scan"
+        ]
+    },
+    {
+        "q": "Which attack targets Windows System Service Descriptor Table?",
+        "o": [
+            "SSDT hook rootkit",
+            "Standard driver load",
+            "Direct kernel patch",
+            "Normal syscall modify"
+        ]
+    },
+    {
+        "q": "What Windows component enforces kernel code signing policy?",
+        "o": [
+            "CI.dll verification",
+            "Standard driver check",
+            "Direct hash validate",
+            "Normal signature"
+        ]
+    },
+    {
+        "q": "Which technique exploits Windows kernel object namespace?",
+        "o": [
+            "Object name squatting",
+            "Standard handle open",
+            "Direct create call",
+            "Normal path access"
+        ]
+    },
+    {
+        "q": "What forensic artifact tracks scheduled task changes?",
+        "o": [
+            "Task XML modification",
+            "Standard event log",
+            "Direct file compare",
+            "Normal registry key"
+        ]
+    },
+    {
+        "q": "Which Windows kernel feature tracks module load events?",
+        "o": [
+            "Image load callback",
+            "Standard event log",
+            "Direct trace output",
+            "Normal driver query"
+        ]
+    },
+    {
+        "q": "What attack uses Windows Kernel Streaming for privilege?",
+        "o": [
+            "KS filter exploit",
+            "Standard media driver",
+            "Direct IOCTL call",
+            "Normal device access"
+        ]
+    },
+    {
+        "q": "Which Windows protection prevents null page mapping?",
+        "o": [
+            "Zero page protection",
+            "Standard access check",
+            "Direct memory guard",
+            "Normal page fault"
+        ]
+    },
+    {
+        "q": "What technique uses Windows NtQueueApcThread injection?",
+        "o": [
+            "User APC injection",
+            "Standard thread create",
+            "Direct memory write",
+            "Normal DLL load"
+        ]
+    },
+    {
+        "q": "Which forensic technique analyzes Windows Timeline?",
+        "o": [
+            "ActivitiesCache parse",
+            "Standard event log",
+            "Direct file timeline",
+            "Normal registry key"
+        ]
+    },
+    {
+        "q": "What Windows kernel component manages device objects?",
+        "o": [
+            "DEVICE_OBJECT stack",
+            "Standard driver chain",
+            "Direct hardware layer",
+            "Normal I/O manager"
+        ]
+    },
+    {
+        "q": "Which attack exploits Windows font driver vulnerabilities?",
+        "o": [
+            "Win32k font parsing",
+            "Standard text render",
+            "Direct glyph process",
+            "Normal display draw"
+        ]
+    },
+    {
+        "q": "What Windows protection prevents low address mapping?",
+        "o": [
+            "Bottom-up ASLR policy",
+            "Standard memory layout",
+            "Direct address reserve",
+            "Normal allocation"
+        ]
+    },
+    {
+        "q": "Which technique bypasses Windows LSA credential isolation?",
+        "o": [
+            "Credential cache attack",
+            "Standard memory dump",
+            "Direct handle access",
+            "Normal process read"
+        ]
+    },
+    {
+        "q": "What forensic analysis examines Windows WMI persistence?",
+        "o": [
+            "WMI repository parse",
+            "Standard event log",
+            "Direct file review",
+            "Normal registry key"
+        ]
+    },
+    {
+        "q": "Which Windows kernel structure stores driver entry points?",
+        "o": [
+            "DRIVER_OBJECT dispatch",
+            "Standard function table",
+            "Direct API array",
+            "Normal export list"
+        ]
+    },
+    {
+        "q": "What attack uses Windows ALPC for privilege escalation?",
+        "o": [
+            "ALPC callback exploit",
+            "Standard RPC call",
+            "Direct message send",
+            "Normal port connect"
+        ]
+    },
+    {
+        "q": "Which Windows component manages kernel memory prototypes?",
+        "o": [
+            "Prototype PTE system",
+            "Standard page table",
+            "Direct memory map",
+            "Normal allocation"
+        ]
+    },
+    {
+        "q": "What forensic artifact reveals network share access?",
+        "o": [
+            "Event ID 5140 audit",
+            "Standard event log",
+            "Direct file access",
+            "Normal registry key"
+        ]
+    },
+    {
+        "q": "Which technique exploits Windows kernel pool spraying?",
+        "o": [
+            "Pool grooming attack",
+            "Standard memory fill",
+            "Direct buffer alloc",
+            "Normal heap spray"
+        ]
+    },
+    {
+        "q": "What Windows protection validates kernel stack integrity?",
+        "o": [
+            "Kernel CET enforcement",
+            "Standard stack check",
+            "Direct return verify",
+            "Normal guard page"
+        ]
+    },
+    {
+        "q": "Which attack targets Windows Trusted Platform Module?",
+        "o": [
+            "TPM seal key extract",
+            "Standard firmware read",
+            "Direct chip access",
+            "Normal key request"
+        ]
+    },
+    {
+        "q": "What forensic technique analyzes Windows Firewall logs?",
+        "o": [
+            "Pfirewall log parsing",
+            "Standard event log",
+            "Direct packet trace",
+            "Normal network scan"
+        ]
+    },
+    {
+        "q": "Which Windows kernel feature manages work item queues?",
+        "o": [
+            "System Worker Thread",
+            "Standard thread pool",
+            "Direct queue process",
+            "Normal task schedule"
+        ]
+    },
+    {
+        "q": "What technique uses Windows NtSetContextThread injection?",
+        "o": [
+            "Context thread hijack",
+            "Standard register set",
+            "Direct memory write",
+            "Normal thread create"
+        ]
+    },
+    {
+        "q": "Which Windows component enforces virtualization security?",
+        "o": [
+            "Hyper-V hypervisor",
+            "Standard virtual box",
+            "Direct hardware VM",
+            "Normal emulation"
+        ]
+    },
+    {
+        "q": "What forensic artifact tracks RDP session history?",
+        "o": [
+            "RDP bitmap cache files",
+            "Standard event log",
+            "Direct session trace",
+            "Normal registry key"
+        ]
+    },
+    {
+        "q": "Which attack exploits Windows DirectComposition?",
+        "o": [
+            "DWM kernel exploit",
+            "Standard graphics call",
+            "Direct render driver",
+            "Normal display API"
+        ]
+    },
+    {
+        "q": "What Windows kernel structure stores thread priority?",
+        "o": [
+            "KTHREAD priority field",
+            "Standard scheduler",
+            "Direct CPU affinity",
+            "Normal queue level"
+        ]
+    },
+    {
+        "q": "Which technique bypasses Windows Arbitrary Code Guard?",
+        "o": [
+            "ROP chain execution",
+            "Standard code write",
+            "Direct memory alloc",
+            "Normal page change"
+        ]
+    },
+    {
+        "q": "What forensic analysis examines Windows EventTranscript?",
+        "o": [
+            "Diagnostic transcript",
+            "Standard event log",
+            "Direct file parse",
+            "Normal registry key"
+        ]
+    },
+    {
+        "q": "Which Windows protection prevents type confusion attacks?",
+        "o": [
+            "CastGuard protection",
+            "Standard type check",
+            "Direct class verify",
+            "Normal object valid"
+        ]
+    },
+    {
+        "q": "What attack uses Windows Print DLL injection technique?",
+        "o": [
+            "Print monitor persist",
+            "Standard spooler load",
+            "Direct driver install",
+            "Normal print setup"
+        ]
+    },
+    {
+        "q": "Which Windows kernel component manages timer objects?",
+        "o": [
+            "Timer Queue DPC",
+            "Standard clock tick",
+            "Direct interrupt set",
+            "Normal schedule call"
+        ]
+    },
+    {
+        "q": "What forensic technique analyzes Windows Error Reporting?",
+        "o": [
+            "WER crash dump parse",
+            "Standard event log",
+            "Direct file review",
+            "Normal system trace"
+        ]
+    },
+    {
+        "q": "Which technique exploits Windows CSRSS for privilege?",
+        "o": [
+            "CSRSS handle inherit",
+            "Standard process create",
+            "Direct session access",
+            "Normal subsystem call"
+        ]
+    },
+    {
+        "q": "What Windows component validates boot configuration?",
+        "o": [
+            "Boot Configuration Data",
+            "Standard UEFI setup",
+            "Direct BIOS config",
+            "Normal startup order"
+        ]
+    },
+    {
+        "q": "Which attack targets Windows hypervisor extensions?",
+        "o": [
+            "VMCALL hypercall abuse",
+            "Standard VM escape",
+            "Direct hardware access",
+            "Normal driver call"
+        ]
+    },
+    {
+        "q": "What forensic artifact reveals email attachment execution?",
+        "o": [
+            "Outlook temp files",
+            "Standard event log",
+            "Direct file trace",
+            "Normal registry key"
+        ]
+    },
+    {
+        "q": "Which Windows kernel feature protects credential secrets?",
+        "o": [
+            "VBS secret isolation",
+            "Standard memory protect",
+            "Direct encryption",
+            "Normal access control"
+        ]
+    },
+    {
+        "q": "What Windows feature provides measured boot attestation?",
+        "o": [
+            "TPM boot measurement",
+            "Standard BIOS check",
+            "Direct hash verify",
+            "Normal startup log"
+        ]
+    },
+    {
+        "q": "Which kernel structure tracks process creation events?",
+        "o": [
+            "PsSetCreateProcess",
+            "Standard event log",
+            "Direct trace output",
+            "Normal callback"
+        ]
+    },
+    {
+        "q": "What technique exploits Windows thread pool for evasion?",
+        "o": [
+            "TP callback injection",
+            "Standard thread create",
+            "Direct memory write",
+            "Normal DLL load"
+        ]
+    },
+    {
+        "q": "Which Windows protection validates heap chunk headers?",
+        "o": [
+            "Heap Guard Cookie",
+            "Standard bound check",
+            "Direct memory fence",
+            "Normal allocation"
+        ]
+    },
+    {
+        "q": "What forensic artifact tracks browser download history?",
+        "o": [
+            "Zone.Identifier ADS",
+            "Standard event log",
+            "Direct file access",
+            "Normal registry key"
+        ]
+    },
+    {
+        "q": "Which attack uses Windows AppContainer escape techniques?",
+        "o": [
+            "Sandbox breakout exploit",
+            "Standard process exit",
+            "Direct handle leak",
+            "Normal capability"
+        ]
+    }
+]

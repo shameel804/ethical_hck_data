@@ -1,0 +1,4520 @@
+[
+    {
+        "q": "What is the kernel used by macOS?",
+        "o": [
+            "XNU kernel",
+            "Linux kernel",
+            "Windows NT",
+            "FreeBSD kernel"
+        ]
+    },
+    {
+        "q": "Which component provides the UNIX foundation in macOS?",
+        "o": [
+            "Darwin",
+            "Aqua",
+            "Cocoa",
+            "Carbon"
+        ]
+    },
+    {
+        "q": "What is the default file system in modern macOS?",
+        "o": [
+            "APFS",
+            "HFS+",
+            "NTFS",
+            "ext4"
+        ]
+    },
+    {
+        "q": "Which macOS feature protects system files from modification?",
+        "o": [
+            "System Integrity Protection",
+            "FileVault",
+            "Gatekeeper",
+            "XProtect"
+        ]
+    },
+    {
+        "q": "What is SIP in macOS?",
+        "o": [
+            "System Integrity Protection",
+            "Secure Integration Protocol",
+            "System Interface Process",
+            "Security Isolation Program"
+        ]
+    },
+    {
+        "q": "Which macOS feature provides full disk encryption?",
+        "o": [
+            "FileVault",
+            "BitLocker",
+            "LUKS",
+            "VeraCrypt"
+        ]
+    },
+    {
+        "q": "What technology verifies app signatures in macOS?",
+        "o": [
+            "Gatekeeper",
+            "FileVault",
+            "XProtect",
+            "SIP"
+        ]
+    },
+    {
+        "q": "Which macOS component provides malware scanning?",
+        "o": [
+            "XProtect",
+            "Gatekeeper",
+            "FileVault",
+            "SIP"
+        ]
+    },
+    {
+        "q": "What is the macOS keychain used for?",
+        "o": [
+            "Storing passwords and keys",
+            "Disk encryption",
+            "App sandboxing",
+            "System backup"
+        ]
+    },
+    {
+        "q": "Which directory contains macOS system applications?",
+        "o": [
+            "/Applications",
+            "/System/Applications",
+            "/usr/apps",
+            "/bin/apps"
+        ]
+    },
+    {
+        "q": "What command shows current user in macOS Terminal?",
+        "o": [
+            "whoami",
+            "getuser",
+            "showme",
+            "currentuser"
+        ]
+    },
+    {
+        "q": "Which macOS feature restricts app permissions?",
+        "o": [
+            "App Sandbox",
+            "SIP",
+            "Gatekeeper",
+            "XProtect"
+        ]
+    },
+    {
+        "q": "What is the default shell in modern macOS?",
+        "o": [
+            "zsh",
+            "bash",
+            "sh",
+            "fish"
+        ]
+    },
+    {
+        "q": "Which command changes file permissions in macOS?",
+        "o": [
+            "chmod",
+            "changeperm",
+            "setperm",
+            "modperm"
+        ]
+    },
+    {
+        "q": "What is the superuser account called in macOS?",
+        "o": [
+            "root",
+            "admin",
+            "system",
+            "super"
+        ]
+    },
+    {
+        "q": "Which command runs a command as root in macOS?",
+        "o": [
+            "sudo",
+            "su",
+            "admin",
+            "root"
+        ]
+    },
+    {
+        "q": "What file contains user password hashes in macOS?",
+        "o": [
+            "DirectoryService database",
+            "/etc/passwd",
+            "/etc/shadow",
+            "/var/db/passwd"
+        ]
+    },
+    {
+        "q": "Which macOS preference controls security settings?",
+        "o": [
+            "Security and Privacy",
+            "System Preferences",
+            "Privacy Settings",
+            "Security Center"
+        ]
+    },
+    {
+        "q": "What is the macOS firewall called?",
+        "o": [
+            "Application Firewall",
+            "Windows Firewall",
+            "iptables",
+            "pf firewall"
+        ]
+    },
+    {
+        "q": "Which command shows network connections in macOS?",
+        "o": [
+            "netstat",
+            "shownet",
+            "netshow",
+            "connections"
+        ]
+    },
+    {
+        "q": "What is Touch ID used for in macOS?",
+        "o": [
+            "Biometric authentication",
+            "Disk encryption",
+            "App signing",
+            "Malware scanning"
+        ]
+    },
+    {
+        "q": "Which macOS feature protects Safari browsing?",
+        "o": [
+            "Intelligent Tracking Prevention",
+            "Gatekeeper",
+            "XProtect",
+            "SIP"
+        ]
+    },
+    {
+        "q": "What is the macOS equivalent of Task Manager?",
+        "o": [
+            "Activity Monitor",
+            "Task Manager",
+            "Process Explorer",
+            "System Monitor"
+        ]
+    },
+    {
+        "q": "Which directory contains user home folders in macOS?",
+        "o": [
+            "/Users",
+            "/home",
+            "/users",
+            "/Home"
+        ]
+    },
+    {
+        "q": "What command lists running processes in macOS?",
+        "o": [
+            "ps",
+            "tasks",
+            "procs",
+            "listproc"
+        ]
+    },
+    {
+        "q": "Which macOS feature provides automatic updates?",
+        "o": [
+            "Software Update",
+            "Windows Update",
+            "apt-get",
+            "yum update"
+        ]
+    },
+    {
+        "q": "What is the macOS package manager from Apple?",
+        "o": [
+            "pkgutil",
+            "apt",
+            "yum",
+            "dnf"
+        ]
+    },
+    {
+        "q": "Which tool installs software from source on macOS?",
+        "o": [
+            "Homebrew",
+            "apt-get",
+            "pacman",
+            "yum"
+        ]
+    },
+    {
+        "q": "What extension do macOS installer packages use?",
+        "o": [
+            ".pkg",
+            ".exe",
+            ".deb",
+            ".rpm"
+        ]
+    },
+    {
+        "q": "Which command shows disk usage in macOS?",
+        "o": [
+            "df",
+            "diskspace",
+            "freedisk",
+            "diskuse"
+        ]
+    },
+    {
+        "q": "What is the macOS recovery mode used for?",
+        "o": [
+            "System repair and reinstall",
+            "Gaming mode",
+            "Development mode",
+            "Network testing"
+        ]
+    },
+    {
+        "q": "Which key combination boots into macOS recovery?",
+        "o": [
+            "Command + R",
+            "F8",
+            "Shift + R",
+            "Control + R"
+        ]
+    },
+    {
+        "q": "What is Time Machine in macOS?",
+        "o": [
+            "Backup solution",
+            "Clock application",
+            "Time zone manager",
+            "Calendar app"
+        ]
+    },
+    {
+        "q": "Which macOS feature encrypts individual files?",
+        "o": [
+            "Create encrypted disk image",
+            "FileVault",
+            "Gatekeeper",
+            "XProtect"
+        ]
+    },
+    {
+        "q": "What tool manages macOS login items?",
+        "o": [
+            "System Preferences Login Items",
+            "Startup folder",
+            "init.d",
+            "systemd"
+        ]
+    },
+    {
+        "q": "Which command shows system information in macOS?",
+        "o": [
+            "system_profiler",
+            "systeminfo",
+            "hostnamectl",
+            "uname -a"
+        ]
+    },
+    {
+        "q": "What is the macOS Console app used for?",
+        "o": [
+            "Viewing system logs",
+            "Terminal replacement",
+            "Disk management",
+            "Network config"
+        ]
+    },
+    {
+        "q": "Which directory contains system logs in macOS?",
+        "o": [
+            "/var/log",
+            "/System/logs",
+            "/logs",
+            "/Library/logs"
+        ]
+    },
+    {
+        "q": "What is launchd in macOS?",
+        "o": [
+            "System and service manager",
+            "Launch menu",
+            "App store",
+            "Disk utility"
+        ]
+    },
+    {
+        "q": "Which file type defines launchd services?",
+        "o": [
+            "plist files",
+            "service files",
+            "conf files",
+            "ini files"
+        ]
+    },
+    {
+        "q": "What command manages launchd services?",
+        "o": [
+            "launchctl",
+            "systemctl",
+            "service",
+            "initctl"
+        ]
+    },
+    {
+        "q": "Which directory contains system launch daemons?",
+        "o": [
+            "/Library/LaunchDaemons",
+            "/System/LaunchDaemons",
+            "/etc/daemons",
+            "/usr/lib/daemons"
+        ]
+    },
+    {
+        "q": "What is a launch agent in macOS?",
+        "o": [
+            "User-level background process",
+            "System daemon",
+            "Kernel module",
+            "Login application"
+        ]
+    },
+    {
+        "q": "Which directory contains user launch agents?",
+        "o": [
+            "~/Library/LaunchAgents",
+            "/Library/LaunchAgents",
+            "/System/LaunchAgents",
+            "/etc/agents"
+        ]
+    },
+    {
+        "q": "What is the Secure Enclave in macOS?",
+        "o": [
+            "Hardware security processor",
+            "Software sandbox",
+            "Encrypted folder",
+            "Secure browser"
+        ]
+    },
+    {
+        "q": "Which chip contains the Secure Enclave?",
+        "o": [
+            "Apple T2 or Apple Silicon",
+            "Intel CPU main core",
+            "GPU chip",
+            "Network card"
+        ]
+    },
+    {
+        "q": "What data is stored in Secure Enclave?",
+        "o": [
+            "Biometric templates and keys",
+            "User documents",
+            "Application data",
+            "System logs"
+        ]
+    },
+    {
+        "q": "Which macOS feature notarizes applications?",
+        "o": [
+            "Apple Notarization Service",
+            "Gatekeeper",
+            "XProtect",
+            "SIP"
+        ]
+    },
+    {
+        "q": "What is notarization in macOS?",
+        "o": [
+            "Apple scanning apps for malware",
+            "Code signing",
+            "App store review",
+            "Disk encryption"
+        ]
+    },
+    {
+        "q": "Which command checks an app's signature?",
+        "o": [
+            "codesign -v",
+            "checksig",
+            "sigverify",
+            "appsign"
+        ]
+    },
+    {
+        "q": "What is a Developer ID in macOS?",
+        "o": [
+            "Certificate to sign apps",
+            "App store account",
+            "User identifier",
+            "Device serial"
+        ]
+    },
+    {
+        "q": "Which macOS feature restricts app network access?",
+        "o": [
+            "App Firewall rules",
+            "Gatekeeper",
+            "XProtect",
+            "SIP"
+        ]
+    },
+    {
+        "q": "What is the purpose of quarantine in macOS?",
+        "o": [
+            "Mark downloaded files for review",
+            "Isolate infected files",
+            "Encrypt sensitive data",
+            "Block network access"
+        ]
+    },
+    {
+        "q": "Which extended attribute marks quarantined files?",
+        "o": [
+            "com.apple.quarantine",
+            "quarantine.flag",
+            "apple.download",
+            "file.quarantine"
+        ]
+    },
+    {
+        "q": "What command removes quarantine from a file?",
+        "o": [
+            "xattr -d com.apple.quarantine",
+            "unquarantine",
+            "rm -quarantine",
+            "chmod +q"
+        ]
+    },
+    {
+        "q": "Which macOS feature provides screen recording privacy?",
+        "o": [
+            "Screen Recording permission",
+            "SIP",
+            "Gatekeeper",
+            "FileVault"
+        ]
+    },
+    {
+        "q": "What manages camera and microphone access?",
+        "o": [
+            "Privacy preferences",
+            "SIP",
+            "Gatekeeper",
+            "XProtect"
+        ]
+    },
+    {
+        "q": "Which macOS feature restricts location access?",
+        "o": [
+            "Location Services permissions",
+            "SIP",
+            "Gatekeeper",
+            "FileVault"
+        ]
+    },
+    {
+        "q": "What is Full Disk Access in macOS?",
+        "o": [
+            "Permission to access all user data",
+            "Administrator account",
+            "Root access",
+            "Disk encryption"
+        ]
+    },
+    {
+        "q": "Which macOS feature blocks accessibility access?",
+        "o": [
+            "Accessibility permissions",
+            "SIP",
+            "Gatekeeper",
+            "XProtect"
+        ]
+    },
+    {
+        "q": "What is Transparency Consent Control in macOS?",
+        "o": [
+            "TCC permission database",
+            "Network transparency",
+            "Log viewer",
+            "Backup system"
+        ]
+    },
+    {
+        "q": "Which database stores TCC permissions?",
+        "o": [
+            "TCC.db",
+            "permissions.db",
+            "access.db",
+            "privacy.db"
+        ]
+    },
+    {
+        "q": "What command shows installed software in macOS?",
+        "o": [
+            "pkgutil --pkgs",
+            "apt list",
+            "rpm -qa",
+            "dpkg -l"
+        ]
+    },
+    {
+        "q": "Which directory contains third-party kernel extensions?",
+        "o": [
+            "/Library/Extensions",
+            "/System/Library/Extensions",
+            "/Kernel/Extensions",
+            "/usr/lib/kext"
+        ]
+    },
+    {
+        "q": "What is a kext in macOS?",
+        "o": [
+            "Kernel extension",
+            "Keychain extension",
+            "Key exchange tool",
+            "Keyboard extension"
+        ]
+    },
+    {
+        "q": "Which command lists loaded kernel extensions?",
+        "o": [
+            "kextstat",
+            "lsmod",
+            "modprobe -l",
+            "kernelmod"
+        ]
+    },
+    {
+        "q": "What replaced kexts in Apple Silicon Macs?",
+        "o": [
+            "System Extensions",
+            "Kernel modules",
+            "Device drivers",
+            "Launch daemons"
+        ]
+    },
+    {
+        "q": "Which macOS version deprecated kernel extensions?",
+        "o": [
+            "macOS 11 Big Sur",
+            "macOS 10.15 Catalina",
+            "macOS 10.14 Mojave",
+            "macOS 12 Monterey"
+        ]
+    },
+    {
+        "q": "What is the DriverKit in macOS?",
+        "o": [
+            "User-space driver framework",
+            "Kernel extension type",
+            "Device manager",
+            "Hardware scanner"
+        ]
+    },
+    {
+        "q": "Which entitlement allows kernel extension loading?",
+        "o": [
+            "User approval via Settings",
+            "Root access only",
+            "Developer account",
+            "Apple certificate"
+        ]
+    },
+    {
+        "q": "What is AMFI in macOS?",
+        "o": [
+            "Apple Mobile File Integrity",
+            "Apple Memory Format Interface",
+            "Advanced Mac File Index",
+            "Application Module Filter"
+        ]
+    },
+    {
+        "q": "Which component enforces code signing?",
+        "o": [
+            "AMFI",
+            "SIP only",
+            "Gatekeeper only",
+            "XProtect only"
+        ]
+    },
+    {
+        "q": "What is the mach kernel part of XNU?",
+        "o": [
+            "Microkernel component",
+            "File system",
+            "Network stack",
+            "Device driver"
+        ]
+    },
+    {
+        "q": "Which component is BSD layer in XNU?",
+        "o": [
+            "FreeBSD-derived subsystem",
+            "Mach microkernel",
+            "IOKit driver",
+            "CoreOS layer"
+        ]
+    },
+    {
+        "q": "What is IOKit in macOS?",
+        "o": [
+            "Device driver framework",
+            "Input/Output tool",
+            "Internet of Things kit",
+            "I/O utility"
+        ]
+    },
+    {
+        "q": "Which framework handles power management?",
+        "o": [
+            "IOKit Power Management",
+            "PowerKit",
+            "EnergyManager",
+            "BatteryKit"
+        ]
+    },
+    {
+        "q": "What is the protected /System volume?",
+        "o": [
+            "Read-only system partition",
+            "User data volume",
+            "Backup partition",
+            "Recovery volume"
+        ]
+    },
+    {
+        "q": "Which macOS feature creates sealed system volume?",
+        "o": [
+            "Signed System Volume",
+            "FileVault",
+            "APFS encryption",
+            "SIP"
+        ]
+    },
+    {
+        "q": "What is the cryptexes folder in macOS?",
+        "o": [
+            "Signed system extensions",
+            "Encrypted files",
+            "Crypto libraries",
+            "Certificate store"
+        ]
+    },
+    {
+        "q": "Which command checks SIP status?",
+        "o": [
+            "csrutil status",
+            "sip --status",
+            "checksip",
+            "system_profiler SIP"
+        ]
+    },
+    {
+        "q": "What must you boot into to disable SIP?",
+        "o": [
+            "Recovery Mode",
+            "Safe Mode",
+            "Single User Mode",
+            "Target Disk Mode"
+        ]
+    },
+    {
+        "q": "Which command disables SIP in Recovery?",
+        "o": [
+            "csrutil disable",
+            "sip off",
+            "disable-sip",
+            "nosip"
+        ]
+    },
+    {
+        "q": "What directories does SIP protect?",
+        "o": [
+            "/System /usr /bin /sbin",
+            "/Applications only",
+            "/Users only",
+            "/Library only"
+        ]
+    },
+    {
+        "q": "Which debugger is restricted by SIP?",
+        "o": [
+            "lldb and dtrace",
+            "gdb only",
+            "Xcode only",
+            "Console only"
+        ]
+    },
+    {
+        "q": "What is Hardened Runtime in macOS?",
+        "o": [
+            "App protection features",
+            "Hardware security",
+            "Fast execution mode",
+            "Compilation option"
+        ]
+    },
+    {
+        "q": "Which entitlement allows JIT compilation?",
+        "o": [
+            "com.apple.security.cs.allow-jit",
+            "allow-jit",
+            "jit-enabled",
+            "runtime.jit"
+        ]
+    },
+    {
+        "q": "What is Library Validation in macOS?",
+        "o": [
+            "Restrict loading untrusted libraries",
+            "Check library versions",
+            "Validate library checksums",
+            "Library backup system"
+        ]
+    },
+    {
+        "q": "Which entitlement disables library validation?",
+        "o": [
+            "com.apple.security.cs.disable-library-validation",
+            "no-lib-valid",
+            "library.disabled",
+            "skip-validation"
+        ]
+    },
+    {
+        "q": "What is code injection in macOS?",
+        "o": [
+            "Inserting code into another process",
+            "Writing source code",
+            "Compiling applications",
+            "Installing software"
+        ]
+    },
+    {
+        "q": "Which feature prevents DYLD injection?",
+        "o": [
+            "Hardened Runtime",
+            "Gatekeeper",
+            "XProtect",
+            "FileVault"
+        ]
+    },
+    {
+        "q": "What is DYLD_INSERT_LIBRARIES?",
+        "o": [
+            "Environment variable for library injection",
+            "System library path",
+            "Dynamic linker config",
+            "Library installer"
+        ]
+    },
+    {
+        "q": "Which protection blocks environment injection?",
+        "o": [
+            "Hardened Runtime",
+            "SIP only",
+            "XProtect only",
+            "Gatekeeper only"
+        ]
+    },
+    {
+        "q": "What is a sandbox violation in macOS?",
+        "o": [
+            "Attempt to access restricted resource",
+            "Disk error",
+            "Network failure",
+            "Memory corruption"
+        ]
+    },
+    {
+        "q": "Which app container stores sandboxed data?",
+        "o": [
+            "~/Library/Containers",
+            "/var/sandbox",
+            "/System/Sandbox",
+            "/Library/Sandbox"
+        ]
+    },
+    {
+        "q": "What defines sandbox rules for an app?",
+        "o": [
+            "Entitlements in code signature",
+            "Info.plist only",
+            "Preferences pane",
+            "Command line args"
+        ]
+    },
+    {
+        "q": "Which entitlement allows network access?",
+        "o": [
+            "com.apple.security.network.client",
+            "network-access",
+            "allow-network",
+            "net.enabled"
+        ]
+    },
+    {
+        "q": "What is the TCC database location for current user?",
+        "o": [
+            "~/Library/Application Support/com.apple.TCC/TCC.db",
+            "/var/db/TCC/TCC.db",
+            "/System/TCC/TCC.db",
+            "/Library/TCC.db"
+        ]
+    },
+    {
+        "q": "Which tool resets TCC permissions via command line?",
+        "o": [
+            "tccutil reset",
+            "tcc-reset",
+            "privacy reset",
+            "permissions clear"
+        ]
+    },
+    {
+        "q": "What Gatekeeper setting only allows App Store apps?",
+        "o": [
+            "App Store only",
+            "Anywhere",
+            "Developer ID only",
+            "No restriction"
+        ]
+    },
+    {
+        "q": "Which spctl command checks app approval?",
+        "o": [
+            "spctl -a -v",
+            "spctl --check",
+            "spctl --verify",
+            "spctl -status"
+        ]
+    },
+    {
+        "q": "What is the MRT in macOS security?",
+        "o": [
+            "Malware Removal Tool",
+            "Memory Runtime Test",
+            "Mac Recovery Tool",
+            "Module Runtime Trace"
+        ]
+    },
+    {
+        "q": "Which macOS daemon handles XProtect updates?",
+        "o": [
+            "XProtect service via softwareupdate",
+            "xprotectd daemon",
+            "malware service",
+            "security daemon"
+        ]
+    },
+    {
+        "q": "What file contains XProtect malware signatures?",
+        "o": [
+            "XProtect.bundle in CoreServices",
+            "/etc/xprotect.conf",
+            "/var/xprotect/sigs",
+            "/Library/XProtect"
+        ]
+    },
+    {
+        "q": "Which command forces XProtect update?",
+        "o": [
+            "softwareupdate --background-critical",
+            "xprotect update",
+            "update-xprotect",
+            "security update"
+        ]
+    },
+    {
+        "q": "What is the FileVault recovery key used for?",
+        "o": [
+            "Decrypt disk if password forgotten",
+            "Create backup",
+            "Reset password",
+            "Enable encryption"
+        ]
+    },
+    {
+        "q": "Which command enables FileVault from Terminal?",
+        "o": [
+            "fdesetup enable",
+            "filevault --enable",
+            "diskutil encrypt",
+            "security encrypt"
+        ]
+    },
+    {
+        "q": "What encryption does FileVault 2 use?",
+        "o": [
+            "AES-XTS 256-bit",
+            "AES-CBC 128-bit",
+            "RSA-2048",
+            "3DES"
+        ]
+    },
+    {
+        "q": "Which chip stores FileVault keys on Apple Silicon?",
+        "o": [
+            "Secure Enclave",
+            "Main CPU",
+            "GPU",
+            "SSD controller"
+        ]
+    },
+    {
+        "q": "What command shows FileVault status?",
+        "o": [
+            "fdesetup status",
+            "filevault --status",
+            "diskutil fv status",
+            "security fv"
+        ]
+    },
+    {
+        "q": "Which parameter lists FileVault users?",
+        "o": [
+            "fdesetup list",
+            "filevault users",
+            "fv --users",
+            "security listfv"
+        ]
+    },
+    {
+        "q": "What is Secure Token in macOS?",
+        "o": [
+            "Credential for FileVault access",
+            "Network authentication",
+            "App Store token",
+            "iCloud credential"
+        ]
+    },
+    {
+        "q": "Which command grants Secure Token?",
+        "o": [
+            "sysadminctl -secureTokenOn",
+            "security addtoken",
+            "fdesetup granttoken",
+            "token --enable"
+        ]
+    },
+    {
+        "q": "What is Bootstrap Token in macOS?",
+        "o": [
+            "Automated device enrollment credential",
+            "User password",
+            "Recovery key",
+            "App certificate"
+        ]
+    },
+    {
+        "q": "Which MDM feature uses Bootstrap Token?",
+        "o": [
+            "Automated kext approval",
+            "App Store access",
+            "Network config",
+            "User creation"
+        ]
+    },
+    {
+        "q": "What plist key runs launchd job at load?",
+        "o": [
+            "RunAtLoad",
+            "StartOnLoad",
+            "AutoRun",
+            "LoadStart"
+        ]
+    },
+    {
+        "q": "Which launchd key keeps process running?",
+        "o": [
+            "KeepAlive",
+            "Persistent",
+            "AlwaysRun",
+            "NeverStop"
+        ]
+    },
+    {
+        "q": "What launchd key specifies the program path?",
+        "o": [
+            "ProgramArguments or Program",
+            "ExecPath",
+            "Command",
+            "Binary"
+        ]
+    },
+    {
+        "q": "Which launchd key sets environment variables?",
+        "o": [
+            "EnvironmentVariables",
+            "EnvVars",
+            "Environment",
+            "Variables"
+        ]
+    },
+    {
+        "q": "What launchd key limits CPU usage?",
+        "o": [
+            "ProcessType or LowPriorityIO",
+            "CPULimit",
+            "MaxCPU",
+            "Throttle"
+        ]
+    },
+    {
+        "q": "Which launchd key specifies working directory?",
+        "o": [
+            "WorkingDirectory",
+            "CWD",
+            "Directory",
+            "Path"
+        ]
+    },
+    {
+        "q": "What command loads a launchd job?",
+        "o": [
+            "launchctl load or bootstrap",
+            "launchctl start",
+            "launchctl run",
+            "launchctl add"
+        ]
+    },
+    {
+        "q": "Which command unloads a launchd job?",
+        "o": [
+            "launchctl unload or bootout",
+            "launchctl stop",
+            "launchctl remove",
+            "launchctl delete"
+        ]
+    },
+    {
+        "q": "What is the Unified Logging system in macOS?",
+        "o": [
+            "Centralized log collection",
+            "Single log file",
+            "Network logging",
+            "Cloud logging"
+        ]
+    },
+    {
+        "q": "Which command reads unified logs?",
+        "o": [
+            "log show",
+            "syslog",
+            "tail -f",
+            "journalctl"
+        ]
+    },
+    {
+        "q": "What tool streams live logs in macOS?",
+        "o": [
+            "log stream",
+            "tail -f /var/log",
+            "Console stream",
+            "syslog -w"
+        ]
+    },
+    {
+        "q": "Which log predicate filters by process?",
+        "o": [
+            "process == processname",
+            "proc:processname",
+            "app:processname",
+            "name:processname"
+        ]
+    },
+    {
+        "q": "What subsystem logs security events?",
+        "o": [
+            "com.apple.securityd",
+            "security.log",
+            "audit.log",
+            "system.security"
+        ]
+    },
+    {
+        "q": "Which log level shows debug messages?",
+        "o": [
+            "--level debug",
+            "--verbose",
+            "--all",
+            "--detail"
+        ]
+    },
+    {
+        "q": "What is the install.log file?",
+        "o": [
+            "Package installation log",
+            "System install log",
+            "App store log",
+            "Update log"
+        ]
+    },
+    {
+        "q": "Which directory contains crash reports?",
+        "o": [
+            "~/Library/Logs/DiagnosticReports",
+            "/var/crash",
+            "/System/Crashes",
+            "/Library/CrashLogs"
+        ]
+    },
+    {
+        "q": "What file extension do crash reports use?",
+        "o": [
+            ".crash or .ips",
+            ".log",
+            ".txt",
+            ".dump"
+        ]
+    },
+    {
+        "q": "Which command shows kernel panics?",
+        "o": [
+            "View /Library/Logs/DiagnosticReports",
+            "dmesg",
+            "kern.log",
+            "panic.log"
+        ]
+    },
+    {
+        "q": "What is NVRAM in Mac security context?",
+        "o": [
+            "Persistent firmware storage",
+            "Volatile memory",
+            "SSD storage",
+            "Network memory"
+        ]
+    },
+    {
+        "q": "Which command reads NVRAM variables?",
+        "o": [
+            "nvram -p",
+            "nvram show",
+            "system_profiler NVRAM",
+            "firmware read"
+        ]
+    },
+    {
+        "q": "What NVRAM variable affects boot security?",
+        "o": [
+            "boot-args",
+            "boot-mode",
+            "security-level",
+            "safe-boot"
+        ]
+    },
+    {
+        "q": "Which boot-arg disables SIP protections?",
+        "o": [
+            "Must use csrutil in Recovery",
+            "nosip",
+            "sip=0",
+            "disable-sip"
+        ]
+    },
+    {
+        "q": "What is Startup Security Utility?",
+        "o": [
+            "Configure boot security settings",
+            "Startup repair tool",
+            "Boot menu",
+            "Recovery installer"
+        ]
+    },
+    {
+        "q": "Which security setting is Full Security?",
+        "o": [
+            "Only signed Apple software",
+            "Any bootable OS",
+            "No verification",
+            "Network boot only"
+        ]
+    },
+    {
+        "q": "What setting is Reduced Security?",
+        "o": [
+            "Allow third-party kexts and kernel",
+            "Full Apple verification",
+            "Disable all security",
+            "Safe mode only"
+        ]
+    },
+    {
+        "q": "Which Apple Silicon mode allows downgrades?",
+        "o": [
+            "Reduced Security or Permissive",
+            "Full Security",
+            "Recovery mode",
+            "DFU mode"
+        ]
+    },
+    {
+        "q": "What is Local Policy in Apple Silicon?",
+        "o": [
+            "Boot security configuration per OS",
+            "Local user policy",
+            "Network policy",
+            "App policy"
+        ]
+    },
+    {
+        "q": "Which key combination enters Recovery on Intel?",
+        "o": [
+            "Command + R",
+            "Option",
+            "Shift",
+            "Control + R"
+        ]
+    },
+    {
+        "q": "What keys enter Recovery on Apple Silicon?",
+        "o": [
+            "Hold power button",
+            "Command + R",
+            "Option key",
+            "Shift key"
+        ]
+    },
+    {
+        "q": "Which Recovery option reinstalls macOS?",
+        "o": [
+            "Reinstall macOS",
+            "Disk Utility",
+            "Terminal",
+            "Safari recovery"
+        ]
+    },
+    {
+        "q": "What is Target Disk Mode?",
+        "o": [
+            "Use Mac as external drive",
+            "Boot from network",
+            "Safe mode",
+            "Recovery mode"
+        ]
+    },
+    {
+        "q": "Which mode replaced Target Disk Mode on Apple Silicon?",
+        "o": [
+            "Mac Sharing Mode",
+            "Direct Disk Mode",
+            "External Mode",
+            "Share Mode"
+        ]
+    },
+    {
+        "q": "What is DFU mode on Mac?",
+        "o": [
+            "Device Firmware Update mode",
+            "Direct File Upload",
+            "Disk Format Utility",
+            "Debug Firmware Update"
+        ]
+    },
+    {
+        "q": "Which tool recovers Mac from DFU mode?",
+        "o": [
+            "Apple Configurator 2",
+            "Finder",
+            "iTunes",
+            "Terminal"
+        ]
+    },
+    {
+        "q": "What is the pf firewall in macOS?",
+        "o": [
+            "BSD Packet Filter firewall",
+            "Personal Firewall",
+            "Program Firewall",
+            "Protocol Filter"
+        ]
+    },
+    {
+        "q": "Which file configures pf firewall rules?",
+        "o": [
+            "/etc/pf.conf",
+            "/etc/firewall.conf",
+            "/var/pf/rules",
+            "/Library/Firewall"
+        ]
+    },
+    {
+        "q": "What command enables pf firewall?",
+        "o": [
+            "pfctl -e",
+            "pf enable",
+            "firewall start",
+            "pfctl start"
+        ]
+    },
+    {
+        "q": "Which command loads pf rules?",
+        "o": [
+            "pfctl -f /etc/pf.conf",
+            "pf load",
+            "pfctl load",
+            "firewall rules"
+        ]
+    },
+    {
+        "q": "What is the Application Firewall based on?",
+        "o": [
+            "Socket filter",
+            "pf firewall",
+            "iptables",
+            "netfilter"
+        ]
+    },
+    {
+        "q": "Which command manages application firewall?",
+        "o": [
+            "socketfilterfw",
+            "appfirewall",
+            "firewall-cmd",
+            "fwconfig"
+        ]
+    },
+    {
+        "q": "What is stealth mode in macOS firewall?",
+        "o": [
+            "Ignore ICMP and probe requests",
+            "Hide all traffic",
+            "Encrypt packets",
+            "Block all connections"
+        ]
+    },
+    {
+        "q": "Which command enables stealth mode?",
+        "o": [
+            "socketfilterfw --setstealthmode on",
+            "firewall --stealth",
+            "pfctl -stealth",
+            "security stealth"
+        ]
+    },
+    {
+        "q": "What is the Keychain Access app used for?",
+        "o": [
+            "Manage passwords and certificates",
+            "Disk encryption",
+            "Network security",
+            "App sandboxing"
+        ]
+    },
+    {
+        "q": "Which keychain stores user credentials?",
+        "o": [
+            "login keychain",
+            "System keychain",
+            "Local keychain",
+            "Network keychain"
+        ]
+    },
+    {
+        "q": "What is the System keychain in macOS?",
+        "o": [
+            "System-wide certificates and keys",
+            "User passwords",
+            "App credentials",
+            "Network passwords"
+        ]
+    },
+    {
+        "q": "Which command manages keychains from Terminal?",
+        "o": [
+            "security command",
+            "keychain-cli",
+            "key-manage",
+            "credential"
+        ]
+    },
+    {
+        "q": "What creates an application-specific keychain?",
+        "o": [
+            "security create-keychain",
+            "keychain new",
+            "create-keys",
+            "new-keychain"
+        ]
+    },
+    {
+        "q": "Which security command lists keychains?",
+        "o": [
+            "security list-keychains",
+            "security show-keychains",
+            "security keychains",
+            "security ls"
+        ]
+    },
+    {
+        "q": "What is keychain sharing between apps?",
+        "o": [
+            "Entitlement-based credential sharing",
+            "Password sync",
+            "Network sharing",
+            "iCloud sync"
+        ]
+    },
+    {
+        "q": "Which entitlement enables keychain sharing?",
+        "o": [
+            "com.apple.security.application-groups",
+            "keychain.share",
+            "share.credentials",
+            "app.keychain"
+        ]
+    },
+    {
+        "q": "What is Endpoint Security framework?",
+        "o": [
+            "Security event monitoring API",
+            "Antivirus framework",
+            "Network security",
+            "File encryption"
+        ]
+    },
+    {
+        "q": "Which apps use Endpoint Security?",
+        "o": [
+            "Security software and EDR",
+            "Web browsers",
+            "Office apps",
+            "Games"
+        ]
+    },
+    {
+        "q": "What replaced kauth for security monitoring?",
+        "o": [
+            "Endpoint Security framework",
+            "OpenBSM",
+            "DTrace",
+            "fsevents"
+        ]
+    },
+    {
+        "q": "Which entitlement is needed for Endpoint Security?",
+        "o": [
+            "com.apple.developer.endpoint-security.client",
+            "security.endpoint",
+            "es.client",
+            "endpoint.access"
+        ]
+    },
+    {
+        "q": "What is OpenBSM in macOS?",
+        "o": [
+            "Basic Security Module audit framework",
+            "Open source browser",
+            "Binary security manager",
+            "Boot security module"
+        ]
+    },
+    {
+        "q": "Which command views audit logs?",
+        "o": [
+            "praudit",
+            "auditcat",
+            "audit-read",
+            "bsmlog"
+        ]
+    },
+    {
+        "q": "What file controls audit configuration?",
+        "o": [
+            "/etc/security/audit_control",
+            "/etc/audit.conf",
+            "/var/audit/config",
+            "/Library/audit"
+        ]
+    },
+    {
+        "q": "Which directory contains audit trail files?",
+        "o": [
+            "/var/audit",
+            "/etc/audit",
+            "/Library/Audit",
+            "/System/Audit"
+        ]
+    },
+    {
+        "q": "What are FSEvents in macOS?",
+        "o": [
+            "File system change notifications",
+            "Filesystem events log",
+            "File security events",
+            "Folder sync events"
+        ]
+    },
+    {
+        "q": "Which API monitors file changes?",
+        "o": [
+            "FSEvents API",
+            "inotify",
+            "fanotify",
+            "kqueue"
+        ]
+    },
+    {
+        "q": "What database stores FSEvents history?",
+        "o": [
+            ".fseventsd folder on volumes",
+            "/var/fsevents",
+            "/Library/FSEvents",
+            "/System/fsevents"
+        ]
+    },
+    {
+        "q": "Which tool parses FSEvents for forensics?",
+        "o": [
+            "FSEventsParser",
+            "fslog",
+            "event-viewer",
+            "fstrace"
+        ]
+    },
+    {
+        "q": "What is Spotlight in relation to forensics?",
+        "o": [
+            "Indexes file metadata for analysis",
+            "Search light tool",
+            "Flash light app",
+            "Screen highlighter"
+        ]
+    },
+    {
+        "q": "Which database stores Spotlight index?",
+        "o": [
+            ".Spotlight-V100 on volumes",
+            "/var/spotlight",
+            "/Library/Spotlight",
+            "/System/Spotlight"
+        ]
+    },
+    {
+        "q": "What command queries Spotlight from Terminal?",
+        "o": [
+            "mdfind",
+            "spotlight",
+            "search",
+            "find-spot"
+        ]
+    },
+    {
+        "q": "Which command shows metadata of files?",
+        "o": [
+            "mdls",
+            "metadata",
+            "getmeta",
+            "fileinfo"
+        ]
+    },
+    {
+        "q": "What is the Quarantine Events database?",
+        "o": [
+            "History of downloaded files",
+            "Virus quarantine log",
+            "Malware database",
+            "App sandbox log"
+        ]
+    },
+    {
+        "q": "Where is Quarantine Events stored?",
+        "o": [
+            "~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2",
+            "/var/quarantine",
+            "/Library/Quarantine",
+            "/System/Quarantine"
+        ]
+    },
+    {
+        "q": "Which tool analyzes Quarantine Events?",
+        "o": [
+            "sqlite3 query the database",
+            "quarantine-view",
+            "qev-reader",
+            "download-log"
+        ]
+    },
+    {
+        "q": "What is the KnowledgeC database?",
+        "o": [
+            "User activity and app usage history",
+            "Knowledge base",
+            "App catalog",
+            "System config"
+        ]
+    },
+    {
+        "q": "Where is KnowledgeC.db located?",
+        "o": [
+            "~/Library/Application Support/Knowledge",
+            "/var/knowledge",
+            "/Library/Knowledge",
+            "/System/Knowledge"
+        ]
+    },
+    {
+        "q": "What forensic data does KnowledgeC contain?",
+        "o": [
+            "App usage, screen time, device activity",
+            "Network logs",
+            "File access only",
+            "System events only"
+        ]
+    },
+    {
+        "q": "Which browser stores history in macOS Safari?",
+        "o": [
+            "History.db in ~/Library/Safari",
+            "/var/safari",
+            "/Library/Safari",
+            "/System/Safari"
+        ]
+    },
+    {
+        "q": "What file contains Safari downloads?",
+        "o": [
+            "Downloads.plist in ~/Library/Safari",
+            "/var/downloads",
+            "download.log",
+            "safari.downloads"
+        ]
+    },
+    {
+        "q": "Which keychain item stores Safari passwords?",
+        "o": [
+            "Web form passwords in login keychain",
+            "Safari keychain",
+            "Browser passwords",
+            "Web credentials"
+        ]
+    },
+    {
+        "q": "What is the Dock plist used for in forensics?",
+        "o": [
+            "Recent applications and documents",
+            "Dock appearance",
+            "Icon positions",
+            "Animation settings"
+        ]
+    },
+    {
+        "q": "Where is the Dock plist located?",
+        "o": [
+            "~/Library/Preferences/com.apple.dock.plist",
+            "/var/dock",
+            "/Library/Dock",
+            "/System/Dock"
+        ]
+    },
+    {
+        "q": "Which file shows recently opened files?",
+        "o": [
+            "com.apple.recentitems.plist",
+            "recent.log",
+            "openfiles.db",
+            "history.plist"
+        ]
+    },
+    {
+        "q": "What is Login Items in macOS forensics?",
+        "o": [
+            "Apps that run at user login",
+            "Login history",
+            "Authentication log",
+            "Session records"
+        ]
+    },
+    {
+        "q": "Where are Login Items stored?",
+        "o": [
+            "com.apple.loginitems.plist or Settings",
+            "/var/login",
+            "/Library/Login",
+            "/System/Login"
+        ]
+    },
+    {
+        "q": "What is MachO binary format?",
+        "o": [
+            "macOS executable format",
+            "Machine object",
+            "Mac hardware object",
+            "Memory allocation object"
+        ]
+    },
+    {
+        "q": "Which tool analyzes MachO files?",
+        "o": [
+            "otool or jtool2",
+            "file only",
+            "strings only",
+            "hexdump only"
+        ]
+    },
+    {
+        "q": "What command shows MachO load commands?",
+        "o": [
+            "otool -l",
+            "otool -h",
+            "otool -d",
+            "otool -s"
+        ]
+    },
+    {
+        "q": "Which load command defines code signature?",
+        "o": [
+            "LC_CODE_SIGNATURE",
+            "LC_SIGN",
+            "LC_CODESIGN",
+            "LC_SIGNATURE"
+        ]
+    },
+    {
+        "q": "What is the FAT binary in macOS?",
+        "o": [
+            "Universal binary for multiple architectures",
+            "Large binary file",
+            "Compressed binary",
+            "Encrypted binary"
+        ]
+    },
+    {
+        "q": "Which command creates a FAT binary?",
+        "o": [
+            "lipo",
+            "fat-create",
+            "universal",
+            "combine"
+        ]
+    },
+    {
+        "q": "What is dyld in macOS?",
+        "o": [
+            "Dynamic linker/loader",
+            "Disk utility",
+            "Debug tool",
+            "Driver loader"
+        ]
+    },
+    {
+        "q": "Which environment variable debugs dyld?",
+        "o": [
+            "DYLD_PRINT_LIBRARIES",
+            "DYLD_DEBUG",
+            "DYLD_VERBOSE",
+            "DYLD_TRACE"
+        ]
+    },
+    {
+        "q": "What is dyld shared cache?",
+        "o": [
+            "Prelinked system libraries",
+            "Disk cache",
+            "Memory cache",
+            "Network cache"
+        ]
+    },
+    {
+        "q": "Where is dyld shared cache located?",
+        "o": [
+            "/System/Library/dyld",
+            "/var/dyld",
+            "/Library/dyld",
+            "/usr/dyld"
+        ]
+    },
+    {
+        "q": "Which tool extracts dyld cache?",
+        "o": [
+            "dyld_shared_cache_util or dsc_extractor",
+            "tar",
+            "unzip",
+            "gzip"
+        ]
+    },
+    {
+        "q": "What is a Mach-O segment?",
+        "o": [
+            "Memory region in binary",
+            "Code section only",
+            "Data section only",
+            "Resource bundle"
+        ]
+    },
+    {
+        "q": "Which segment contains executable code?",
+        "o": [
+            "__TEXT segment",
+            "__DATA segment",
+            "__CODE segment",
+            "__EXEC segment"
+        ]
+    },
+    {
+        "q": "What segment contains initialized data?",
+        "o": [
+            "__DATA segment",
+            "__TEXT segment",
+            "__INIT segment",
+            "__BSS segment"
+        ]
+    },
+    {
+        "q": "Which section contains C strings?",
+        "o": [
+            "__cstring",
+            "__strings",
+            "__text",
+            "__chars"
+        ]
+    },
+    {
+        "q": "What is __LINKEDIT segment?",
+        "o": [
+            "Linker metadata and signatures",
+            "Link libraries",
+            "External links",
+            "Network links"
+        ]
+    },
+    {
+        "q": "Which tool shows Mach-O headers?",
+        "o": [
+            "otool -h or file",
+            "head",
+            "strings",
+            "hexdump"
+        ]
+    },
+    {
+        "q": "What is Mach IPC in macOS?",
+        "o": [
+            "Inter-process communication via ports",
+            "Machine IP config",
+            "Mac hardware interface",
+            "Memory access channel"
+        ]
+    },
+    {
+        "q": "Which construct is a Mach port?",
+        "o": [
+            "Kernel message queue endpoint",
+            "Network socket",
+            "File descriptor",
+            "Shared memory"
+        ]
+    },
+    {
+        "q": "What is the task port in Mach?",
+        "o": [
+            "Handle to process resources",
+            "Network task",
+            "File task",
+            "Memory task"
+        ]
+    },
+    {
+        "q": "Which port controls thread execution?",
+        "o": [
+            "Thread port",
+            "Control port",
+            "Exec port",
+            "Run port"
+        ]
+    },
+    {
+        "q": "What attack abuses task port access?",
+        "o": [
+            "Code injection via task_for_pid",
+            "Network attack",
+            "File corruption",
+            "Memory leak"
+        ]
+    },
+    {
+        "q": "Which entitlement grants task_for_pid?",
+        "o": [
+            "com.apple.security.get-task-allow",
+            "task.access",
+            "process.inject",
+            "pid.control"
+        ]
+    },
+    {
+        "q": "What is exception port in Mach?",
+        "o": [
+            "Handles process crashes and exceptions",
+            "Error logging",
+            "Exception handler",
+            "Error port"
+        ]
+    },
+    {
+        "q": "Which exception type is breakpoint?",
+        "o": [
+            "EXC_BREAKPOINT",
+            "EXC_DEBUG",
+            "EXC_STOP",
+            "EXC_PAUSE"
+        ]
+    },
+    {
+        "q": "What is bootstrap port in launchd?",
+        "o": [
+            "Service lookup port",
+            "Boot port",
+            "Startup port",
+            "Init port"
+        ]
+    },
+    {
+        "q": "Which XPC mechanism uses Mach ports?",
+        "o": [
+            "XPC connection endpoints",
+            "File sharing",
+            "Network sockets",
+            "Shared memory"
+        ]
+    },
+    {
+        "q": "What is XPC in macOS?",
+        "o": [
+            "Interprocess communication framework",
+            "Extended process control",
+            "External proxy control",
+            "Execute process command"
+        ]
+    },
+    {
+        "q": "Which directory contains XPC services?",
+        "o": [
+            "XPCServices in app bundle",
+            "/Library/XPC",
+            "/System/XPC",
+            "/var/xpc"
+        ]
+    },
+    {
+        "q": "What protects XPC service access?",
+        "o": [
+            "Entitlements and code signing",
+            "Password only",
+            "Network rules",
+            "File permissions"
+        ]
+    },
+    {
+        "q": "Which attack exploits XPC services?",
+        "o": [
+            "XPC injection and privilege escalation",
+            "Network injection",
+            "SQL injection",
+            "File injection"
+        ]
+    },
+    {
+        "q": "What is IOKit User Client?",
+        "o": [
+            "User-kernel communication channel",
+            "I/O library",
+            "User interface",
+            "Client application"
+        ]
+    },
+    {
+        "q": "Which tool enumerates IOKit objects?",
+        "o": [
+            "ioreg command",
+            "ioutil",
+            "iolist",
+            "ioscan"
+        ]
+    },
+    {
+        "q": "What command shows IOKit registry?",
+        "o": [
+            "ioreg -l",
+            "ioreg -a",
+            "ioreg -d",
+            "ioreg -s"
+        ]
+    },
+    {
+        "q": "Which attack targets IOKit drivers?",
+        "o": [
+            "Kernel code execution via IOKit",
+            "Network attack",
+            "File corruption",
+            "Memory leak"
+        ]
+    },
+    {
+        "q": "What is IOService in IOKit?",
+        "o": [
+            "Base class for all drivers",
+            "I/O service daemon",
+            "Service manager",
+            "Hardware service"
+        ]
+    },
+    {
+        "q": "Which method opens IOKit user client?",
+        "o": [
+            "IOServiceOpen",
+            "IOOpen",
+            "ServiceConnect",
+            "DriverOpen"
+        ]
+    },
+    {
+        "q": "What function calls IOKit kernel method?",
+        "o": [
+            "IOConnectCallMethod",
+            "IOCallKernel",
+            "IOInvoke",
+            "IOExecute"
+        ]
+    },
+    {
+        "q": "Which vulnerability affects IOKit parsing?",
+        "o": [
+            "Memory corruption in drivers",
+            "SQL injection",
+            "XSS attack",
+            "CSRF attack"
+        ]
+    },
+    {
+        "q": "What is AppleHV framework?",
+        "o": [
+            "Hypervisor framework",
+            "Apple hardware view",
+            "High voltage API",
+            "Hardware validation"
+        ]
+    },
+    {
+        "q": "Which framework provides kernel code execution?",
+        "o": [
+            "IOKit exploits historically",
+            "AppKit always",
+            "Foundation always",
+            "WebKit always"
+        ]
+    },
+    {
+        "q": "What is PAC in Apple Silicon?",
+        "o": [
+            "Pointer Authentication Codes",
+            "Process Access Control",
+            "Protected Address Cache",
+            "Privilege Access Check"
+        ]
+    },
+    {
+        "q": "Which CPU feature provides PAC?",
+        "o": [
+            "ARM v8.3 extension",
+            "Intel VT-x",
+            "AMD-V",
+            "RISC-V M-mode"
+        ]
+    },
+    {
+        "q": "What attack does PAC prevent?",
+        "o": [
+            "ROP and code reuse",
+            "Network attacks",
+            "File corruption",
+            "Memory allocation"
+        ]
+    },
+    {
+        "q": "Which register stores PAC keys?",
+        "o": [
+            "System registers in EL",
+            "General purpose",
+            "Stack pointer",
+            "Program counter"
+        ]
+    },
+    {
+        "q": "What is MTE in Apple Silicon?",
+        "o": [
+            "Memory Tagging Extension",
+            "Mac Type Extension",
+            "Module Test Environment",
+            "Memory Transfer Engine"
+        ]
+    },
+    {
+        "q": "Which protection does APRR provide?",
+        "o": [
+            "Page permission restrictions",
+            "Access control",
+            "File protection",
+            "Network security"
+        ]
+    },
+    {
+        "q": "What is PPL in Apple Silicon?",
+        "o": [
+            "Page Protection Layer",
+            "Protected Program Loader",
+            "Primary Protection Level",
+            "Process Permission List"
+        ]
+    },
+    {
+        "q": "Which kernel region does PPL protect?",
+        "o": [
+            "Page tables and critical data",
+            "User memory",
+            "Network buffers",
+            "File system"
+        ]
+    },
+    {
+        "q": "What is KTRR in Apple chips?",
+        "o": [
+            "Kernel Text Read-only Region",
+            "Kernel Transfer Region",
+            "Key Trust Root",
+            "Kernel Timer Register"
+        ]
+    },
+    {
+        "q": "Which protection prevents kernel patches?",
+        "o": [
+            "KTRR makes kernel read-only",
+            "ASLR only",
+            "SIP only",
+            "Sandbox only"
+        ]
+    },
+    {
+        "q": "What is the Secure Monitor in Apple Silicon?",
+        "o": [
+            "Highest privilege firmware code",
+            "Display monitor",
+            "Performance monitor",
+            "Security application"
+        ]
+    },
+    {
+        "q": "Which execution level runs Secure Monitor?",
+        "o": [
+            "EL3 or equivalent",
+            "EL0",
+            "EL1",
+            "EL2"
+        ]
+    },
+    {
+        "q": "What is iBoot in Mac boot chain?",
+        "o": [
+            "Second stage bootloader",
+            "Initial boot",
+            "I/O boot",
+            "Internet boot"
+        ]
+    },
+    {
+        "q": "Which component verifies iBoot signature?",
+        "o": [
+            "Boot ROM",
+            "Kernel",
+            "Finder",
+            "launchd"
+        ]
+    },
+    {
+        "q": "What is the Boot ROM in Apple devices?",
+        "o": [
+            "Immutable first stage boot code",
+            "Bootable ROM disk",
+            "Boot recovery",
+            "Boot configuration"
+        ]
+    },
+    {
+        "q": "Which attack targets boot chain?",
+        "o": [
+            "Bootkit and boot persistence",
+            "Network attack only",
+            "File encryption",
+            "Memory corruption"
+        ]
+    },
+    {
+        "q": "What is checkm8 vulnerability?",
+        "o": [
+            "Boot ROM exploit",
+            "Kernel exploit",
+            "App exploit",
+            "Network exploit"
+        ]
+    },
+    {
+        "q": "Which protection prevents checkm8 abuse?",
+        "o": [
+            "Physical access still required",
+            "SIP protection",
+            "Gatekeeper",
+            "XProtect"
+        ]
+    },
+    {
+        "q": "What is SEP in Apple devices?",
+        "o": [
+            "Secure Enclave Processor",
+            "Security Extension Protocol",
+            "System Enhanced Protection",
+            "Secure Execution Platform"
+        ]
+    },
+    {
+        "q": "Which data does SEP protect?",
+        "o": [
+            "Biometrics and encryption keys",
+            "User files",
+            "Applications",
+            "Network traffic"
+        ]
+    },
+    {
+        "q": "What OS runs on Secure Enclave?",
+        "o": [
+            "sepOS (dedicated RTOS)",
+            "macOS",
+            "iOS",
+            "Linux"
+        ]
+    },
+    {
+        "q": "Which memory is SEP isolated from?",
+        "o": [
+            "Main processor memory",
+            "GPU memory only",
+            "SSD storage",
+            "Network buffer"
+        ]
+    },
+    {
+        "q": "What is anti-replay in SEP?",
+        "o": [
+            "Prevent rollback attacks",
+            "Prevent network replay",
+            "Prevent file copy",
+            "Prevent screen record"
+        ]
+    },
+    {
+        "q": "Which component stores replay counter?",
+        "o": [
+            "Secure Storage Component",
+            "Main memory",
+            "SSD",
+            "Network card"
+        ]
+    },
+    {
+        "q": "What is the SSC in Apple Silicon?",
+        "o": [
+            "Secure Storage Component",
+            "System Security Controller",
+            "Storage System Cache",
+            "Secure Session Control"
+        ]
+    },
+    {
+        "q": "Which attack does SSC prevent?",
+        "o": [
+            "Hardware key extraction",
+            "Network interception",
+            "File theft",
+            "Process injection"
+        ]
+    },
+    {
+        "q": "What is Local Policy in Apple Silicon?",
+        "o": [
+            "Per-OS boot security settings",
+            "Network policy",
+            "User policy",
+            "App policy"
+        ]
+    },
+    {
+        "q": "Which tool configures boot security?",
+        "o": [
+            "bputil or Startup Security",
+            "security",
+            "csrutil",
+            "spctl"
+        ]
+    },
+    {
+        "q": "What is the Owner Identity in Apple Silicon?",
+        "o": [
+            "Device owner key pair",
+            "User account",
+            "Apple ID",
+            "iCloud account"
+        ]
+    },
+    {
+        "q": "Which recovery protects Owner Identity?",
+        "o": [
+            "Activation Lock",
+            "FileVault",
+            "SIP",
+            "Gatekeeper"
+        ]
+    },
+    {
+        "q": "What is SPRR in Apple Silicon?",
+        "o": [
+            "Shadow Page Read/execute Restrict",
+            "System Page Register",
+            "Secure Page Restriction",
+            "Stack Protection Register"
+        ]
+    },
+    {
+        "q": "Which memory protection does SPRR add?",
+        "o": [
+            "JIT code restrictions",
+            "File protection",
+            "Network security",
+            "Disk encryption"
+        ]
+    },
+    {
+        "q": "What is code directory in codesign?",
+        "o": [
+            "Hash catalog of binary pages",
+            "Code folder",
+            "Source directory",
+            "Binary folder"
+        ]
+    },
+    {
+        "q": "Which hash algorithm signs apps?",
+        "o": [
+            "SHA-256 typically",
+            "MD5 always",
+            "SHA-1 only",
+            "CRC32"
+        ]
+    },
+    {
+        "q": "What is designated requirement?",
+        "o": [
+            "Code signing identity constraint",
+            "App requirement",
+            "System requirement",
+            "Hardware requirement"
+        ]
+    },
+    {
+        "q": "Which command shows code requirements?",
+        "o": [
+            "codesign -d --requirements",
+            "codesign -v",
+            "codesign -s",
+            "codesign -f"
+        ]
+    },
+    {
+        "q": "What is team identifier in signing?",
+        "o": [
+            "Developer team ID",
+            "App team",
+            "User group",
+            "Network team"
+        ]
+    },
+    {
+        "q": "Which certificate signs Mac apps?",
+        "o": [
+            "Developer ID Application",
+            "Root CA only",
+            "Self-signed",
+            "SSL certificate"
+        ]
+    },
+    {
+        "q": "What is ad-hoc signing?",
+        "o": [
+            "Signing without Apple identity",
+            "Advertising code",
+            "Temporary signing",
+            "Network signing"
+        ]
+    },
+    {
+        "q": "Which flag enables ad-hoc signing?",
+        "o": [
+            "codesign -s -",
+            "codesign --adhoc",
+            "codesign --temp",
+            "codesign --local"
+        ]
+    },
+    {
+        "q": "What validates code signature at runtime?",
+        "o": [
+            "AMFI kernel extension",
+            "Gatekeeper only",
+            "XProtect only",
+            "SIP only"
+        ]
+    },
+    {
+        "q": "Which policy validates App Store apps?",
+        "o": [
+            "Apple signed policy",
+            "Network policy",
+            "User policy",
+            "Local policy"
+        ]
+    },
+    {
+        "q": "What is platform binary in codesign?",
+        "o": [
+            "Apple signed system component",
+            "Platform game",
+            "Binary format",
+            "Install binary"
+        ]
+    },
+    {
+        "q": "Which flag marks platform binary?",
+        "o": [
+            "Platform flag in signature",
+            "System flag",
+            "Apple flag",
+            "Core flag"
+        ]
+    },
+    {
+        "q": "What bypass removes code signature?",
+        "o": [
+            "Remove or invalidate signature",
+            "Add signature",
+            "Modify signature",
+            "Copy signature"
+        ]
+    },
+    {
+        "q": "Which protection prevents signature removal?",
+        "o": [
+            "AMFI runtime checks",
+            "Gatekeeper only",
+            "FileVault only",
+            "XProtect only"
+        ]
+    },
+    {
+        "q": "What is cs_ops syscall?",
+        "o": [
+            "Code signing operations",
+            "Customer service",
+            "Control system",
+            "Context switch"
+        ]
+    },
+    {
+        "q": "Which cs_ops flag shows status?",
+        "o": [
+            "CS_OPS_STATUS",
+            "CS_GET_STATUS",
+            "CS_SHOW_STATUS",
+            "CS_READ_STATUS"
+        ]
+    },
+    {
+        "q": "What TCC bypass exploits permissions?",
+        "o": [
+            "Abuse trusted processes",
+            "Network bypass",
+            "File system bypass",
+            "Memory bypass"
+        ]
+    },
+    {
+        "q": "Which TCC permission is most valuable?",
+        "o": [
+            "Full Disk Access",
+            "Camera only",
+            "Microphone only",
+            "Contacts only"
+        ]
+    },
+    {
+        "q": "What is TCC.db injection attack?",
+        "o": [
+            "Modify database for permissions",
+            "SQL injection web",
+            "Code injection",
+            "Memory injection"
+        ]
+    },
+    {
+        "q": "Which SIP protection prevents TCC.db mod?",
+        "o": [
+            "TCC.db under SIP path",
+            "FileVault",
+            "Gatekeeper",
+            "XProtect"
+        ]
+    },
+    {
+        "q": "What is synthetic click attack?",
+        "o": [
+            "Programmatic UI clicks for TCC",
+            "Physical clicking",
+            "Hardware attack",
+            "Network attack"
+        ]
+    },
+    {
+        "q": "Which API was abused for synthetic clicks?",
+        "o": [
+            "CGEvent or AppleScript",
+            "Network API",
+            "File API",
+            "Memory API"
+        ]
+    },
+    {
+        "q": "What protection blocks synthetic clicks?",
+        "o": [
+            "User consent required",
+            "Password only",
+            "FileVault",
+            "XProtect"
+        ]
+    },
+    {
+        "q": "Which app bundle allows TCC inheritance?",
+        "o": [
+            "Apps in same app group",
+            "All apps",
+            "No apps",
+            "System apps only"
+        ]
+    },
+    {
+        "q": "What is mount_apfs attack?",
+        "o": [
+            "Mount APFS snapshot to bypass SIP",
+            "Mount network share",
+            "Mount USB drive",
+            "Mount disk image"
+        ]
+    },
+    {
+        "q": "Which snapshot bypasses SIP historically?",
+        "o": [
+            "Sealed System Volume snapshots",
+            "User snapshots",
+            "Backup snapshots",
+            "Cloud snapshots"
+        ]
+    },
+    {
+        "q": "What is shrootless attack?",
+        "o": [
+            "SIP bypass via System Installer",
+            "Rootless jailbreak",
+            "Network attack",
+            "File corruption"
+        ]
+    },
+    {
+        "q": "Which daemon was exploited for shrootless?",
+        "o": [
+            "system_installd",
+            "launchd",
+            "syslogd",
+            "configd"
+        ]
+    },
+    {
+        "q": "What is PowerDir vulnerability?",
+        "o": [
+            "TCC bypass via directory services",
+            "Power management bug",
+            "Directory traversal",
+            "Power outage attack"
+        ]
+    },
+    {
+        "q": "Which service was PowerDir target?",
+        "o": [
+            "Directory service plugin",
+            "Power service",
+            "Network service",
+            "File service"
+        ]
+    },
+    {
+        "q": "What is PackageKit vulnerability class?",
+        "o": [
+            "Installing to SIP paths",
+            "Network package",
+            "File package",
+            "Memory package"
+        ]
+    },
+    {
+        "q": "Which pkg script enables persistence?",
+        "o": [
+            "postinstall or preinstall",
+            "configure",
+            "build",
+            "deploy"
+        ]
+    },
+    {
+        "q": "What is MallocStackLogging attack?",
+        "o": [
+            "Environment variable injection",
+            "Memory allocation",
+            "Stack overflow",
+            "Heap spray"
+        ]
+    },
+    {
+        "q": "Which protection blocks env injection?",
+        "o": [
+            "Hardened Runtime stripping",
+            "FileVault",
+            "XProtect",
+            "Gatekeeper"
+        ]
+    },
+    {
+        "q": "What is CVE-2023-32369?",
+        "o": [
+            "Migraine SIP bypass",
+            "Network vulnerability",
+            "File vulnerability",
+            "Memory vulnerability"
+        ]
+    },
+    {
+        "q": "Which component had Migraine flaw?",
+        "o": [
+            "Migration Assistant",
+            "Safari",
+            "Mail",
+            "Finder"
+        ]
+    },
+    {
+        "q": "What is kernel memory disclosure?",
+        "o": [
+            "Reading kernel memory contents",
+            "Kernel crash",
+            "Network leak",
+            "File disclosure"
+        ]
+    },
+    {
+        "q": "Which IOKit method may leak memory?",
+        "o": [
+            "Methods returning kernel addresses",
+            "Open method",
+            "Close method",
+            "Read method"
+        ]
+    },
+    {
+        "q": "What is heap spray in kernel?",
+        "o": [
+            "Fill kernel heap with data",
+            "Clean heap",
+            "Free heap",
+            "Compact heap"
+        ]
+    },
+    {
+        "q": "Which object is used for kernel spray?",
+        "o": [
+            "Mach messages and ports",
+            "Files only",
+            "Sockets only",
+            "Pipes only"
+        ]
+    },
+    {
+        "q": "What is zone_require in XNU?",
+        "o": [
+            "Enforce type-safe zones",
+            "Zone creation",
+            "Zone deletion",
+            "Zone listing"
+        ]
+    },
+    {
+        "q": "Which mitigation hardens kalloc?",
+        "o": [
+            "Data PAC and zone_require",
+            "ASLR only",
+            "NX bit only",
+            "Stack guard only"
+        ]
+    },
+    {
+        "q": "What is kernel ASLR in macOS?",
+        "o": [
+            "Randomized kernel base address",
+            "User ASLR only",
+            "App ASLR",
+            "Library ASLR"
+        ]
+    },
+    {
+        "q": "Which flag shows KASLR slide?",
+        "o": [
+            "boot-args with keepsyms",
+            "debug flag",
+            "verbose flag",
+            "safe flag"
+        ]
+    },
+    {
+        "q": "What is SMAP in macOS kernel?",
+        "o": [
+            "Supervisor Mode Access Prevention",
+            "System Map",
+            "Security Map",
+            "Stack Map"
+        ]
+    },
+    {
+        "q": "Which CPU feature enables SMAP?",
+        "o": [
+            "Intel/AMD SMAP bit",
+            "ARM feature",
+            "GPU feature",
+            "Network feature"
+        ]
+    },
+    {
+        "q": "What attack bypasses SMAP?",
+        "o": [
+            "ROP to disable or kernel data only",
+            "Network attack",
+            "File corruption",
+            "Memory read"
+        ]
+    },
+    {
+        "q": "Which kernel zone contains task structs?",
+        "o": [
+            "Tasks zone",
+            "Memory zone",
+            "Network zone",
+            "File zone"
+        ]
+    },
+    {
+        "q": "What is task_for_pid vulnerability?",
+        "o": [
+            "Access other process memory",
+            "Task creation",
+            "Process termination",
+            "Thread creation"
+        ]
+    },
+    {
+        "q": "Which entitlement restricts task_for_pid?",
+        "o": [
+            "com.apple.security.get-task-allow",
+            "task.access",
+            "process.control",
+            "pid.get"
+        ]
+    },
+    {
+        "q": "What is processor_set_tasks attack?",
+        "o": [
+            "Enumerate all tasks",
+            "Create tasks",
+            "Delete tasks",
+            "Modify tasks"
+        ]
+    },
+    {
+        "q": "Which protection blocks processor_set_tasks?",
+        "o": [
+            "Entitlement requirement",
+            "Password only",
+            "FileVault",
+            "XProtect"
+        ]
+    },
+    {
+        "q": "What is JIT mapping in macOS?",
+        "o": [
+            "Just-in-time code compilation mapping",
+            "Job task",
+            "Join thread",
+            "Jump instruction"
+        ]
+    },
+    {
+        "q": "Which protection limits JIT pages?",
+        "o": [
+            "MAP_JIT flag requirement",
+            "ASLR only",
+            "NX only",
+            "SMAP only"
+        ]
+    },
+    {
+        "q": "What is the W^X policy?",
+        "o": [
+            "Write XOR Execute protection",
+            "Write and execute",
+            "Windows XP policy",
+            "Wireless policy"
+        ]
+    },
+    {
+        "q": "Which hardware enforces W^X on Apple Silicon?",
+        "o": [
+            "APRR and JIT region",
+            "Software only",
+            "Network hardware",
+            "Storage hardware"
+        ]
+    },
+    {
+        "q": "What is dyld interposing?",
+        "o": [
+            "Replace library functions at load",
+            "Library loading",
+            "Library creation",
+            "Library deletion"
+        ]
+    },
+    {
+        "q": "Which protection blocks interposing?",
+        "o": [
+            "Hardened Runtime flag",
+            "FileVault",
+            "Gatekeeper",
+            "XProtect"
+        ]
+    },
+    {
+        "q": "What is __RESTRICT segment?",
+        "o": [
+            "Block environment variables",
+            "Restricted access",
+            "Read restriction",
+            "Write restriction"
+        ]
+    },
+    {
+        "q": "Which attack evades __RESTRICT?",
+        "o": [
+            "Modify binary to remove segment",
+            "Network attack",
+            "File corruption",
+            "Memory attack"
+        ]
+    },
+    {
+        "q": "What is process hollowing?",
+        "o": [
+            "Replace legitimate process code",
+            "Create empty process",
+            "Delete process",
+            "Pause process"
+        ]
+    },
+    {
+        "q": "Which protection detects hollowing?",
+        "o": [
+            "Code signature validation",
+            "Network monitoring",
+            "File monitoring",
+            "Memory monitoring"
+        ]
+    },
+    {
+        "q": "What is MACF in XNU?",
+        "o": [
+            "Mandatory Access Control Framework",
+            "Mac Configuration",
+            "Memory Access Control",
+            "Module Access"
+        ]
+    },
+    {
+        "q": "Which MACF policy provides sandbox?",
+        "o": [
+            "Sandbox policy",
+            "SELinux policy",
+            "AppArmor policy",
+            "TOMOYO policy"
+        ]
+    },
+    {
+        "q": "What is AMFI's role in MACF?",
+        "o": [
+            "Code signing policy enforcement",
+            "File integrity",
+            "Network filtering",
+            "Memory protection"
+        ]
+    },
+    {
+        "q": "Which hook validates exec in MACF?",
+        "o": [
+            "mac_vnode_check_exec",
+            "exec_hook",
+            "run_check",
+            "process_start"
+        ]
+    },
+    {
+        "q": "What is sandbox profile format?",
+        "o": [
+            "Scheme-like language rules",
+            "JSON format",
+            "XML format",
+            "Binary format"
+        ]
+    },
+    {
+        "q": "Which directory contains sandbox profiles?",
+        "o": [
+            "/System/Library/Sandbox/Profiles",
+            "/Library/Sandbox",
+            "/var/sandbox",
+            "/etc/sandbox"
+        ]
+    },
+    {
+        "q": "What is sandbox-exec command?",
+        "o": [
+            "Run process in custom sandbox",
+            "Execute sandbox",
+            "Start sandbox",
+            "Create sandbox"
+        ]
+    },
+    {
+        "q": "Which sandbox operation allows file read?",
+        "o": [
+            "file-read*",
+            "read-file",
+            "allow-read",
+            "fs-read"
+        ]
+    },
+    {
+        "q": "What blocks sandbox profile customization?",
+        "o": [
+            "SIP protects profile directory",
+            "FileVault",
+            "Gatekeeper",
+            "XProtect"
+        ]
+    },
+    {
+        "q": "Which sandbox bypass uses symlinks?",
+        "o": [
+            "TOCTOU via symlink race",
+            "Direct link",
+            "Hard link only",
+            "Alias only"
+        ]
+    },
+    {
+        "q": "What is container randomization?",
+        "o": [
+            "Random container paths for apps",
+            "Random data",
+            "Random network",
+            "Random memory"
+        ]
+    },
+    {
+        "q": "Which Keychain attack extracts credentials?",
+        "o": [
+            "Keychain dump with proper entitlements",
+            "Network sniffing",
+            "File reading",
+            "Memory dump"
+        ]
+    },
+    {
+        "q": "What tool dumps macOS keychain?",
+        "o": [
+            "security dump-keychain",
+            "keychain-dump",
+            "extract-keys",
+            "key-export"
+        ]
+    },
+    {
+        "q": "Which flag unlocks keychain for dump?",
+        "o": [
+            "-d flag with password",
+            "-u flag",
+            "-p flag",
+            "-k flag"
+        ]
+    },
+    {
+        "q": "What is credential stealing via Chrome?",
+        "o": [
+            "Decrypt Chrome saved passwords",
+            "Network capture",
+            "File theft",
+            "Memory dump"
+        ]
+    },
+    {
+        "q": "Which key encrypts Chrome passwords?",
+        "o": [
+            "Keychain stored key",
+            "Password itself",
+            "Apple ID",
+            "iCloud key"
+        ]
+    },
+    {
+        "q": "What persistence uses login hooks?",
+        "o": [
+            "com.apple.loginwindow LoginHook",
+            "launchd",
+            "cron",
+            "systemd"
+        ]
+    },
+    {
+        "q": "Which persistence uses authorization plugin?",
+        "o": [
+            "Install in /Library/Security",
+            "Install in /usr/lib",
+            "Install in /bin",
+            "Install in /sbin"
+        ]
+    },
+    {
+        "q": "What is emond persistence?",
+        "o": [
+            "Event Monitor Daemon rules",
+            "Emoji daemon",
+            "Email daemon",
+            "Error daemon"
+        ]
+    },
+    {
+        "q": "Which directory holds emond rules?",
+        "o": [
+            "/etc/emond.d/rules",
+            "/var/emond",
+            "/Library/emond",
+            "/System/emond"
+        ]
+    },
+    {
+        "q": "What persistence uses periodic jobs?",
+        "o": [
+            "Scripts in /etc/periodic",
+            "Cron jobs",
+            "At jobs",
+            "Batch jobs"
+        ]
+    },
+    {
+        "q": "Which folder runs periodic daily?",
+        "o": [
+            "/etc/periodic/daily",
+            "/var/periodic",
+            "/Library/periodic",
+            "/System/periodic"
+        ]
+    },
+    {
+        "q": "What is dylib hijacking?",
+        "o": [
+            "Load malicious library before legitimate",
+            "Library deletion",
+            "Library modification",
+            "Library execution"
+        ]
+    },
+    {
+        "q": "Which condition enables dylib hijack?",
+        "o": [
+            "Weak or missing library reference",
+            "Strong reference",
+            "System library",
+            "Network library"
+        ]
+    },
+    {
+        "q": "What tool finds dylib hijack opportunities?",
+        "o": [
+            "otool -L and check paths",
+            "file command",
+            "strings",
+            "hexdump"
+        ]
+    },
+    {
+        "q": "Which protection blocks most hijacks?",
+        "o": [
+            "Library Validation",
+            "FileVault",
+            "XProtect",
+            "MRT"
+        ]
+    },
+    {
+        "q": "What is kernel extension persistence?",
+        "o": [
+            "Load kext at boot",
+            "Temporary load",
+            "User space only",
+            "Network only"
+        ]
+    },
+    {
+        "q": "Which approval is needed for third-party kext?",
+        "o": [
+            "User approval in Security prefs",
+            "Automatic approval",
+            "Apple approval",
+            "Developer approval"
+        ]
+    },
+    {
+        "q": "What is System Extension persistence?",
+        "o": [
+            "User space extensions at boot",
+            "Kernel extensions",
+            "Network extensions",
+            "App extensions"
+        ]
+    },
+    {
+        "q": "Which tool manages System Extensions?",
+        "o": [
+            "systemextensionsctl",
+            "kextutil",
+            "extensionctl",
+            "sysextctl"
+        ]
+    },
+    {
+        "q": "What is Spotlight importer persistence?",
+        "o": [
+            "Code runs when indexing files",
+            "Search persistence",
+            "Index backup",
+            "Cache storage"
+        ]
+    },
+    {
+        "q": "Which bundle type is Spotlight importer?",
+        "o": [
+            ".mdimporter bundle",
+            ".app bundle",
+            ".framework",
+            ".plugin"
+        ]
+    },
+    {
+        "q": "What is Quick Look generator persistence?",
+        "o": [
+            "Code runs on file preview",
+            "Quick boot",
+            "Fast search",
+            "Rapid load"
+        ]
+    },
+    {
+        "q": "Which bundle type is Quick Look?",
+        "o": [
+            ".qlgenerator bundle",
+            ".app bundle",
+            ".framework",
+            ".kext"
+        ]
+    },
+    {
+        "q": "What macOS artifact tracks USB devices?",
+        "o": [
+            "IORegistry and system.log",
+            "USB.db",
+            "Device.log",
+            "Port.db"
+        ]
+    },
+    {
+        "q": "Which command shows connected USB?",
+        "o": [
+            "system_profiler SPUSBDataType",
+            "lsusb",
+            "usb-devices",
+            "usbinfo"
+        ]
+    },
+    {
+        "q": "What stores WiFi connection history?",
+        "o": [
+            "com.apple.airport.preferences.plist",
+            "wifi.db",
+            "network.log",
+            "airport.db"
+        ]
+    },
+    {
+        "q": "Which artifact shows Bluetooth devices?",
+        "o": [
+            "com.apple.Bluetooth.plist",
+            "bluetooth.db",
+            "bt.log",
+            "pair.db"
+        ]
+    },
+    {
+        "q": "What is ASL in macOS logging?",
+        "o": [
+            "Apple System Logger (legacy)",
+            "Advanced System Log",
+            "Application Security Log",
+            "Audit System Log"
+        ]
+    },
+    {
+        "q": "Which replaced ASL in modern macOS?",
+        "o": [
+            "Unified Logging",
+            "syslog",
+            "journald",
+            "eventlog"
+        ]
+    },
+    {
+        "q": "What format stores unified logs?",
+        "o": [
+            "tracev3 format",
+            "text logs",
+            "JSON logs",
+            "XML logs"
+        ]
+    },
+    {
+        "q": "Which tool converts unified logs?",
+        "o": [
+            "log collect and log show",
+            "logrotate",
+            "logparse",
+            "logreader"
+        ]
+    },
+    {
+        "q": "What is the systemstats database?",
+        "o": [
+            "System statistics and energy",
+            "System status",
+            "Stats counter",
+            "Performance log"
+        ]
+    },
+    {
+        "q": "Where is systemstats stored?",
+        "o": [
+            "/private/var/db/systemstats",
+            "/var/systemstats",
+            "/Library/systemstats",
+            "/System/systemstats"
+        ]
+    },
+    {
+        "q": "What forensic value has app usage?",
+        "o": [
+            "Timeline of user activity",
+            "Storage usage",
+            "Network usage",
+            "Memory usage"
+        ]
+    },
+    {
+        "q": "Which database tracks app launches?",
+        "o": [
+            "CoreDuet and KnowledgeC",
+            "Launch.db",
+            "Apps.log",
+            "Start.db"
+        ]
+    },
+    {
+        "q": "What is duet activity in forensics?",
+        "o": [
+            "User activity aggregation",
+            "Dual activity",
+            "Device sync",
+            "Double logging"
+        ]
+    },
+    {
+        "q": "Where is CoreDuet database?",
+        "o": [
+            "/private/var/db/CoreDuet",
+            "/var/coreduet",
+            "/Library/CoreDuet",
+            "/System/CoreDuet"
+        ]
+    },
+    {
+        "q": "What tool analyzes macOS memory?",
+        "o": [
+            "Volatility with mac profile",
+            "Wireshark",
+            "tcpdump",
+            "nmap"
+        ]
+    },
+    {
+        "q": "Which format is macOS memory dump?",
+        "o": [
+            "Mach-O core dump format",
+            "ELF format",
+            "PE format",
+            "Raw format"
+        ]
+    },
+    {
+        "q": "What creates memory dumps on Mac?",
+        "o": [
+            "osxpmem or MacQuisition",
+            "dd command",
+            "cp command",
+            "tar command"
+        ]
+    },
+    {
+        "q": "Which Volatility plugin lists Mac processes?",
+        "o": [
+            "mac_pslist",
+            "mac_procs",
+            "mac_tasks",
+            "mac_ps"
+        ]
+    },
+    {
+        "q": "What is the IODeviceTree?",
+        "o": [
+            "Hardware device hierarchy",
+            "File tree",
+            "Network tree",
+            "Process tree"
+        ]
+    },
+    {
+        "q": "Which tool shows IODeviceTree?",
+        "o": [
+            "ioreg command",
+            "device-tree",
+            "hw-info",
+            "sysinfo"
+        ]
+    },
+    {
+        "q": "What is sysdiagnose in macOS?",
+        "o": [
+            "Comprehensive system diagnostic",
+            "System diagnosis",
+            "Disk check",
+            "Network test"
+        ]
+    },
+    {
+        "q": "Which key triggers sysdiagnose?",
+        "o": [
+            "Ctrl+Option+Shift+Cmd+Period",
+            "Cmd+Shift+D",
+            "Ctrl+Alt+Del",
+            "Cmd+D"
+        ]
+    },
+    {
+        "q": "What does sysdiagnose collect?",
+        "o": [
+            "Logs, profiles, network, processes",
+            "Files only",
+            "Network only",
+            "Memory only"
+        ]
+    },
+    {
+        "q": "Where is sysdiagnose output saved?",
+        "o": [
+            "/var/tmp or Desktop",
+            "/tmp",
+            "/var/log",
+            "/Library/Logs"
+        ]
+    },
+    {
+        "q": "What is OCLP in Mac security context?",
+        "o": [
+            "OpenCore Legacy Patcher",
+            "Open Command Line Protocol",
+            "OS Command Layer",
+            "Online Certificate Protocol"
+        ]
+    },
+    {
+        "q": "Which risk does custom bootloaders pose?",
+        "o": [
+            "Bypass boot security chain",
+            "Improve security",
+            "Add encryption",
+            "Enhance boot time"
+        ]
+    },
+    {
+        "q": "What is Asahi Linux security implication?",
+        "o": [
+            "Alternative OS may weaken security",
+            "Enhanced security",
+            "No implication",
+            "Better encryption"
+        ]
+    },
+    {
+        "q": "Which Apple Silicon boot mode allows Linux?",
+        "o": [
+            "Reduced or Permissive Security",
+            "Full Security",
+            "Secure Boot",
+            "Normal boot"
+        ]
+    },
+    {
+        "q": "What is 1TR mode in Apple Silicon?",
+        "o": [
+            "One True Recovery mode",
+            "First Trust Region",
+            "Terminal Recovery",
+            "Test Recovery"
+        ]
+    },
+    {
+        "q": "Which action requires 1TR mode?",
+        "o": [
+            "Change security policy",
+            "Normal boot",
+            "App install",
+            "File access"
+        ]
+    },
+    {
+        "q": "What is recoveryOS in Mac?",
+        "o": [
+            "Recovery partition operating system",
+            "Recovery software",
+            "Restore tool",
+            "Repair utility"
+        ]
+    },
+    {
+        "q": "Which volume contains recoveryOS?",
+        "o": [
+            "Recovery volume in APFS container",
+            "Main volume",
+            "Data volume",
+            "System volume"
+        ]
+    },
+    {
+        "q": "What is the Mach zone allocator?",
+        "o": [
+            "Kernel memory allocator",
+            "File allocator",
+            "Network buffer",
+            "Disk allocator"
+        ]
+    },
+    {
+        "q": "Which attack targets zone allocator?",
+        "o": [
+            "Zone confusion and type confusion",
+            "Network attack",
+            "File corruption",
+            "Disk attack"
+        ]
+    },
+    {
+        "q": "What mitigation is data PAC?",
+        "o": [
+            "Pointer authentication for data",
+            "Data encryption",
+            "Access control",
+            "File protection"
+        ]
+    },
+    {
+        "q": "Which kernel objects have data PAC?",
+        "o": [
+            "Critical kernel pointers",
+            "All memory",
+            "User data only",
+            "Network packets"
+        ]
+    },
+    {
+        "q": "What is kernel zone poisoning?",
+        "o": [
+            "Fill freed memory with pattern",
+            "Zone creation",
+            "Memory allocation",
+            "Data storage"
+        ]
+    },
+    {
+        "q": "Which pattern detects use-after-free?",
+        "o": [
+            "0xDEADBEEF or similar",
+            "0x00000000",
+            "0xFFFFFFFF",
+            "Random pattern"
+        ]
+    },
+    {
+        "q": "What is kheap in modern XNU?",
+        "o": [
+            "Kernel heap allocator",
+            "Keyboard heap",
+            "Key heap",
+            "Kernel hash"
+        ]
+    },
+    {
+        "q": "Which kheap segregates allocations?",
+        "o": [
+            "Separate heaps by type",
+            "Single heap",
+            "No segregation",
+            "Random allocation"
+        ]
+    },
+    {
+        "q": "What is kalloc_type in XNU?",
+        "o": [
+            "Type-aware allocation",
+            "Kernel allocation",
+            "Key allocation",
+            "Kind allocation"
+        ]
+    },
+    {
+        "q": "Which attack does kalloc_type mitigate?",
+        "o": [
+            "Type confusion",
+            "Buffer overflow",
+            "Integer overflow",
+            "Format string"
+        ]
+    },
+    {
+        "q": "What is vm_map in XNU?",
+        "o": [
+            "Virtual memory mapping",
+            "Volume map",
+            "Variable map",
+            "Version map"
+        ]
+    },
+    {
+        "q": "Which primitive controls vm_map?",
+        "o": [
+            "mach_vm_* APIs",
+            "File APIs",
+            "Network APIs",
+            "String APIs"
+        ]
+    },
+    {
+        "q": "What is kernel task port?",
+        "o": [
+            "Port to kernel task",
+            "TCP port",
+            "USB port",
+            "Network port"
+        ]
+    },
+    {
+        "q": "Which protection guards kernel task port?",
+        "o": [
+            "Not available to userspace",
+            "Password protected",
+            "Encrypted",
+            "Hidden"
+        ]
+    },
+    {
+        "q": "What does tfp0 mean in jailbreaking?",
+        "o": [
+            "Task for pid 0 kernel access",
+            "Transfer protocol",
+            "Test function",
+            "Template file"
+        ]
+    },
+    {
+        "q": "Which exploit primitive is tfp0?",
+        "o": [
+            "Kernel read/write",
+            "User access",
+            "File access",
+            "Network access"
+        ]
+    },
+    {
+        "q": "What is PAC bypass technique?",
+        "o": [
+            "Forge or reuse valid signatures",
+            "Disable PAC",
+            "Remove PAC",
+            "Ignore PAC"
+        ]
+    },
+    {
+        "q": "Which vulnerability enables PAC bypass?",
+        "o": [
+            "Signing gadget or oracle",
+            "Buffer overflow",
+            "Integer overflow",
+            "Format string"
+        ]
+    },
+    {
+        "q": "What is PACMAN attack?",
+        "o": [
+            "Speculative execution PAC leak",
+            "Network attack",
+            "Malware type",
+            "Physical attack"
+        ]
+    },
+    {
+        "q": "Which defense mitigates PACMAN?",
+        "o": [
+            "Hardware patches and mitigations",
+            "Software only",
+            "No defense needed",
+            "Antivirus"
+        ]
+    },
+    {
+        "q": "What is augmented PAC?",
+        "o": [
+            "Enhanced PAC with context",
+            "Additional PAC",
+            "Backup PAC",
+            "Old PAC"
+        ]
+    },
+    {
+        "q": "Which context strengthens PAC?",
+        "o": [
+            "Type and location info",
+            "Time info",
+            "User info",
+            "Network info"
+        ]
+    },
+    {
+        "q": "What is kernel PPL code?",
+        "o": [
+            "Page Protection Layer trusted code",
+            "Program protection",
+            "Password protection",
+            "Port protection"
+        ]
+    },
+    {
+        "q": "Which operations require PPL?",
+        "o": [
+            "Page table modifications",
+            "File operations",
+            "Network operations",
+            "User operations"
+        ]
+    },
+    {
+        "q": "What is coretrust in macOS?",
+        "o": [
+            "Code signature trust evaluation",
+            "Core data",
+            "Core graphics",
+            "Core network"
+        ]
+    },
+    {
+        "q": "Which daemon implements coretrust?",
+        "o": [
+            "syspolicyd uses coretrust",
+            "launchd",
+            "syslogd",
+            "configd"
+        ]
+    },
+    {
+        "q": "What is trustcache in Apple systems?",
+        "o": [
+            "Cached trusted code hashes",
+            "Trusted network cache",
+            "Trust user cache",
+            "Trust file cache"
+        ]
+    },
+    {
+        "q": "Which static trustcache exists?",
+        "o": [
+            "Boot and System trustcache",
+            "User trustcache",
+            "App trustcache",
+            "Network trustcache"
+        ]
+    },
+    {
+        "q": "What is loadable trustcache?",
+        "o": [
+            "Runtime loaded trusted hashes",
+            "Loadable code",
+            "Load balancer",
+            "Load monitor"
+        ]
+    },
+    {
+        "q": "Which attack targets trustcache?",
+        "o": [
+            "Inject hash to bypass codesign",
+            "Network attack",
+            "File attack",
+            "Memory attack"
+        ]
+    },
+    {
+        "q": "What is img4 format?",
+        "o": [
+            "Apple signed image format",
+            "Image file format",
+            "IMG archive",
+            "Installer image"
+        ]
+    },
+    {
+        "q": "Which component validates img4?",
+        "o": [
+            "iBoot and kernel",
+            "Finder only",
+            "Safari only",
+            "Mail only"
+        ]
+    },
+    {
+        "q": "What is SHSH blob?",
+        "o": [
+            "Signed hash for restore",
+            "Shared hash",
+            "Secure hash",
+            "System hash"
+        ]
+    },
+    {
+        "q": "Which attack uses saved SHSH?",
+        "o": [
+            "Downgrade to vulnerable firmware",
+            "Upgrade attack",
+            "Network attack",
+            "File attack"
+        ]
+    },
+    {
+        "q": "What is nonce in SHSH context?",
+        "o": [
+            "Anti-replay random value",
+            "Number once",
+            "Named once",
+            "Note once"
+        ]
+    },
+    {
+        "q": "Which component generates nonce?",
+        "o": [
+            "Secure Enclave",
+            "Main CPU",
+            "GPU",
+            "SSD"
+        ]
+    },
+    {
+        "q": "What is generator in jailbreak?",
+        "o": [
+            "Set nonce for downgrade",
+            "Power generator",
+            "Code generator",
+            "Key generator"
+        ]
+    },
+    {
+        "q": "Which tool sets generator?",
+        "o": [
+            "Jailbreak tools like checkra1n",
+            "System Preferences",
+            "Terminal only",
+            "Finder"
+        ]
+    },
+    {
+        "q": "What is SEP firmware?",
+        "o": [
+            "Secure Enclave software",
+            "Separate firmware",
+            "Security firmware",
+            "System firmware"
+        ]
+    },
+    {
+        "q": "Which attack targets SEP?",
+        "o": [
+            "Very difficult, isolated processor",
+            "Easy remote attack",
+            "Simple file attack",
+            "Quick network attack"
+        ]
+    },
+    {
+        "q": "What is SSV in macOS?",
+        "o": [
+            "Signed System Volume",
+            "Secure System Volume",
+            "System Storage Volume",
+            "Signed Storage Volume"
+        ]
+    },
+    {
+        "q": "Which cryptographic construct protects SSV?",
+        "o": [
+            "Merkle tree seal",
+            "AES encryption",
+            "RSA signature",
+            "SHA hash"
+        ]
+    },
+    {
+        "q": "What detects SSV tampering?",
+        "o": [
+            "Boot verification failure",
+            "Silent failure",
+            "No detection",
+            "User notification"
+        ]
+    },
+    {
+        "q": "Which command shows SSV status?",
+        "o": [
+            "csrutil authenticated-root status",
+            "ssv status",
+            "diskutil ssv",
+            "security ssv"
+        ]
+    },
+    {
+        "q": "What is authenticated root in macOS?",
+        "o": [
+            "Cryptographically verified system",
+            "Root user authentication",
+            "Admin authentication",
+            "User authentication"
+        ]
+    },
+    {
+        "q": "Which boot process checks authenticated root?",
+        "o": [
+            "iBoot verifies before boot",
+            "Kernel only",
+            "User space",
+            "Applications"
+        ]
+    },
+    {
+        "q": "What is dyld closure?",
+        "o": [
+            "Precomputed library loading info",
+            "Library closure",
+            "Dynamic closure",
+            "Load closure"
+        ]
+    },
+    {
+        "q": "Where are dyld closures cached?",
+        "o": [
+            "/var/db/dyld and Library/Caches",
+            "/tmp",
+            "/var/tmp",
+            "/System"
+        ]
+    },
+    {
+        "q": "What attack targets dyld closures?",
+        "o": [
+            "Inject malicious closure",
+            "Network attack",
+            "File attack",
+            "Memory attack"
+        ]
+    },
+    {
+        "q": "Which protection validates closures?",
+        "o": [
+            "Code signing and SIP",
+            "Password only",
+            "FileVault only",
+            "XProtect only"
+        ]
+    },
+    {
+        "q": "What is ESF client?",
+        "o": [
+            "Endpoint Security Framework client",
+            "Extended security framework",
+            "External security",
+            "Enhanced security"
+        ]
+    },
+    {
+        "q": "Which events does ESF monitor?",
+        "o": [
+            "Process, file, network events",
+            "UI events only",
+            "Audio events only",
+            "Graphics events only"
+        ]
+    },
+    {
+        "q": "What authorization does ESF need?",
+        "o": [
+            "Full Disk Access and entitlement",
+            "Password only",
+            "No authorization",
+            "Network access"
+        ]
+    },
+    {
+        "q": "Which action can ESF take?",
+        "o": [
+            "Allow or deny operations",
+            "Log only",
+            "Alert only",
+            "Notify only"
+        ]
+    },
+    {
+        "q": "What is Network Extension framework?",
+        "o": [
+            "Network filtering and VPN",
+            "Network monitoring",
+            "Network extension cable",
+            "Network expansion"
+        ]
+    },
+    {
+        "q": "Which System Extension type handles DNS?",
+        "o": [
+            "DNS Proxy Provider",
+            "DNS Extension",
+            "DNS Plugin",
+            "DNS Module"
+        ]
+    },
+    {
+        "q": "What is Content Filter Provider?",
+        "o": [
+            "Network content inspection",
+            "File filter",
+            "Mail filter",
+            "App filter"
+        ]
+    },
+    {
+        "q": "Which network level does Packet Tunnel work?",
+        "o": [
+            "Layer 3 IP packets",
+            "Layer 2 only",
+            "Layer 7 only",
+            "Layer 1 only"
+        ]
+    },
+    {
+        "q": "What is App Proxy Provider?",
+        "o": [
+            "Per-app network proxy",
+            "System proxy",
+            "Web proxy",
+            "Mail proxy"
+        ]
+    },
+    {
+        "q": "Which entitlement allows System Extensions?",
+        "o": [
+            "com.apple.developer.system-extension.install",
+            "system.ext",
+            "extension.sys",
+            "install.ext"
+        ]
+    },
+    {
+        "q": "What is DriverKit framework?",
+        "o": [
+            "User space driver development",
+            "Kernel driver kit",
+            "Driver installation",
+            "Driver debug"
+        ]
+    },
+    {
+        "q": "Which advantage has DriverKit?",
+        "o": [
+            "Crashes dont affect kernel",
+            "Faster drivers",
+            "More features",
+            "Easier development"
+        ]
+    },
+    {
+        "q": "What replaces USBDriverKit kexts?",
+        "o": [
+            "DriverKit based USB drivers",
+            "New kexts",
+            "System drivers",
+            "Network drivers"
+        ]
+    },
+    {
+        "q": "Which entitlement allows DriverKit?",
+        "o": [
+            "com.apple.developer.driverkit",
+            "driver.kit",
+            "kit.driver",
+            "dev.driver"
+        ]
+    },
+    {
+        "q": "What is notarization ticket?",
+        "o": [
+            "Apple signed attestation",
+            "Event ticket",
+            "Support ticket",
+            "Access ticket"
+        ]
+    },
+    {
+        "q": "Where is notarization ticket stored?",
+        "o": [
+            "Stapled to app or online",
+            "Local database",
+            "System file",
+            "Keychain"
+        ]
+    },
+    {
+        "q": "What triggers notarization check?",
+        "o": [
+            "First launch of downloaded app",
+            "Every launch",
+            "System boot",
+            "User login"
+        ]
+    },
+    {
+        "q": "Which tool staples ticket?",
+        "o": [
+            "xcrun stapler",
+            "codesign",
+            "notarize",
+            "ticket"
+        ]
+    },
+    {
+        "q": "What is OSSystemExtensionRequest?",
+        "o": [
+            "API to install System Extension",
+            "OS update request",
+            "System request",
+            "Extension query"
+        ]
+    },
+    {
+        "q": "Which user action approves extension?",
+        "o": [
+            "Approve in Security preferences",
+            "Password only",
+            "Auto approved",
+            "Admin only"
+        ]
+    },
+    {
+        "q": "What is Transparency report in macOS?",
+        "o": [
+            "Privacy permission log",
+            "Financial report",
+            "Network report",
+            "System report"
+        ]
+    },
+    {
+        "q": "Where is App Privacy Report?",
+        "o": [
+            "Settings Privacy section",
+            "System Preferences",
+            "Console app",
+            "Activity Monitor"
+        ]
+    },
+    {
+        "q": "What does Privacy Report show?",
+        "o": [
+            "App sensor and data access",
+            "Network usage",
+            "CPU usage",
+            "Disk usage"
+        ]
+    },
+    {
+        "q": "Which macOS version added Privacy Report?",
+        "o": [
+            "macOS Monterey 12",
+            "macOS Big Sur 11",
+            "macOS Catalina 10.15",
+            "macOS Ventura 13"
+        ]
+    },
+    {
+        "q": "What is managed device attestation?",
+        "o": [
+            "Hardware backed MDM verification",
+            "User attestation",
+            "App attestation",
+            "Network attestation"
+        ]
+    },
+    {
+        "q": "Which component enables attestation?",
+        "o": [
+            "Secure Enclave certificates",
+            "User certificates",
+            "App certificates",
+            "Network certificates"
+        ]
+    },
+    {
+        "q": "What is DeviceCheck API?",
+        "o": [
+            "Device reputation flags",
+            "Device check tool",
+            "Check device",
+            "Device verify"
+        ]
+    },
+    {
+        "q": "Which server verifies DeviceCheck?",
+        "o": [
+            "Apple servers",
+            "Developer servers",
+            "Local server",
+            "Cloud server"
+        ]
+    },
+    {
+        "q": "What is App Attest API?",
+        "o": [
+            "Hardware backed app verification",
+            "App testing",
+            "App attestation form",
+            "App certificate"
+        ]
+    },
+    {
+        "q": "Which key type uses App Attest?",
+        "o": [
+            "Secure Enclave key pair",
+            "User key",
+            "App key",
+            "Network key"
+        ]
+    },
+    {
+        "q": "What prevents app cloning with App Attest?",
+        "o": [
+            "Hardware bound keys",
+            "Software check",
+            "Network check",
+            "User check"
+        ]
+    },
+    {
+        "q": "Which fraud does App Attest mitigate?",
+        "o": [
+            "Fake or modified apps",
+            "Network fraud",
+            "User fraud",
+            "Payment fraud"
+        ]
+    },
+    {
+        "q": "What is Private Access Token?",
+        "o": [
+            "Privacy preserving CAPTCHA alternative",
+            "Private network token",
+            "Access control token",
+            "Privacy settings"
+        ]
+    },
+    {
+        "q": "Which protocol uses Private Access Tokens?",
+        "o": [
+            "HTTP authentication extension",
+            "FTP protocol",
+            "SMTP protocol",
+            "SSH protocol"
+        ]
+    },
+    {
+        "q": "What is Hide My Email?",
+        "o": [
+            "Random email alias service",
+            "Email encryption",
+            "Email hiding",
+            "Email deletion"
+        ]
+    },
+    {
+        "q": "Which service provides Hide My Email?",
+        "o": [
+            "iCloud+ subscription",
+            "Free for all",
+            "macOS feature",
+            "Safari feature"
+        ]
+    },
+    {
+        "q": "What is iCloud Private Relay?",
+        "o": [
+            "Privacy preserving internet proxy",
+            "Private network",
+            "VPN service",
+            "Proxy server"
+        ]
+    },
+    {
+        "q": "Which traffic routes through Private Relay?",
+        "o": [
+            "Safari and insecure DNS",
+            "All traffic",
+            "Only DNS",
+            "Only HTTP"
+        ]
+    },
+    {
+        "q": "What is Mail Privacy Protection?",
+        "o": [
+            "Block email tracking pixels",
+            "Email encryption",
+            "Email signing",
+            "Email filtering"
+        ]
+    },
+    {
+        "q": "Which data does Mail Privacy hide?",
+        "o": [
+            "IP address and open time",
+            "Email content",
+            "Sender address",
+            "Subject line"
+        ]
+    },
+    {
+        "q": "What is Lockdown Mode?",
+        "o": [
+            "Extreme optional security mode",
+            "Screen lock",
+            "App lock",
+            "System lock"
+        ]
+    },
+    {
+        "q": "Which features does Lockdown Mode disable?",
+        "o": [
+            "JIT, attachments, complex web",
+            "All features",
+            "Network only",
+            "Apps only"
+        ]
+    },
+    {
+        "q": "What user benefits from Lockdown Mode?",
+        "o": [
+            "High risk targets like journalists",
+            "All users",
+            "Developers only",
+            "Admins only"
+        ]
+    },
+    {
+        "q": "Which macOS version added Lockdown Mode?",
+        "o": [
+            "macOS Ventura 13",
+            "macOS Monterey 12",
+            "macOS Big Sur 11",
+            "macOS Sonoma 14"
+        ]
+    },
+    {
+        "q": "What is Rapid Security Response?",
+        "o": [
+            "Fast security patches between updates",
+            "Emergency response",
+            "Rapid boot",
+            "Quick recovery"
+        ]
+    },
+    {
+        "q": "Which content uses Rapid Security Response?",
+        "o": [
+            "Safari and system library fixes",
+            "Full OS update",
+            "App updates",
+            "Driver updates"
+        ]
+    },
+    {
+        "q": "What is passkey in macOS?",
+        "o": [
+            "FIDO2 passwordless credential",
+            "Password key",
+            "Access key",
+            "Security key"
+        ]
+    },
+    {
+        "q": "Which technology enables passkeys?",
+        "o": [
+            "WebAuthn and FIDO2",
+            "OAuth only",
+            "SAML only",
+            "Kerberos only"
+        ]
+    },
+    {
+        "q": "Where are passkeys stored?",
+        "o": [
+            "iCloud Keychain synced",
+            "Local only",
+            "Browser storage",
+            "System file"
+        ]
+    },
+    {
+        "q": "What authenticates passkey use?",
+        "o": [
+            "Touch ID Face ID or password",
+            "Only password",
+            "Only Touch ID",
+            "Only Face ID"
+        ]
+    },
+    {
+        "q": "What is Declarative MDM?",
+        "o": [
+            "Device desired state configuration",
+            "Declare device",
+            "MDM declaration",
+            "Config declaration"
+        ]
+    },
+    {
+        "q": "Which advantage has Declarative MDM?",
+        "o": [
+            "Faster autonomous compliance",
+            "Slower updates",
+            "More commands",
+            "Less security"
+        ]
+    },
+    {
+        "q": "What is software update server in MDM?",
+        "o": [
+            "Local update caching server",
+            "Remote server",
+            "Cloud server",
+            "Proxy server"
+        ]
+    },
+    {
+        "q": "Which profile deploys certificates?",
+        "o": [
+            "Certificate payload profile",
+            "App profile",
+            "Network profile",
+            "User profile"
+        ]
+    },
+    {
+        "q": "What is SCEP in MDM context?",
+        "o": [
+            "Simple Certificate Enrollment Protocol",
+            "Secure Configuration Protocol",
+            "System Certificate Protocol",
+            "Server Communication Protocol"
+        ]
+    },
+    {
+        "q": "Which MDM feature enforces passcode?",
+        "o": [
+            "Passcode policy payload",
+            "App restriction",
+            "Network config",
+            "Update policy"
+        ]
+    },
+    {
+        "q": "What command remotely wipes Mac?",
+        "o": [
+            "EraseDevice MDM command",
+            "wipedisk",
+            "format",
+            "clean"
+        ]
+    }
+]

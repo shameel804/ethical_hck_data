@@ -1,0 +1,4547 @@
+[
+    {
+        "q": "What is the primary definition of a threat actor in cybersecurity?",
+        "o": [
+            "An entity that initiates a threat",
+            "A system vulnerability type",
+            "A security software tool",
+            "A network firewall rule"
+        ]
+    },
+    {
+        "q": "Which term describes a long-term cyber attack by a sophisticated group?",
+        "o": [
+            "Advanced Persistent Threat",
+            "Distributed Denial Service",
+            "Automated Phishing Script",
+            "Zero Day Vulnerability"
+        ]
+    },
+    {
+        "q": "What does the acronym TTP stand for in threat intelligence?",
+        "o": [
+            "Tactics, Techniques, and Procedures",
+            "Tools, Targets, and Protocols",
+            "Time, Threats, and Permissions",
+            "Traffic, Transfer, and Ports"
+        ]
+    },
+    {
+        "q": "Which of these is considered an Indicator of Compromise (IoC)?",
+        "o": [
+            "A known malicious IP address",
+            "A standard software update",
+            "A verified user login event",
+            "A secure network connection"
+        ]
+    },
+    {
+        "q": "What is the main purpose of a threat intelligence feed?",
+        "o": [
+            "To provide data on potential threats",
+            "To automatically patch software",
+            "To encrypt network traffic data",
+            "To manage user passwords safely"
+        ]
+    },
+    {
+        "q": "Who is typically motivated by political or social causes?",
+        "o": [
+            "Hacktivist",
+            "Script Kiddie",
+            "Insider",
+            "Cyber Criminal"
+        ]
+    },
+    {
+        "q": "Which phase of the APT lifecycle involves gaining initial access?",
+        "o": [
+            "Initial Compromise",
+            "Data Exfiltration",
+            "Lateral Movement",
+            "Cleanup Activity"
+        ]
+    },
+    {
+        "q": "What typically characterizes a nation-state threat actor?",
+        "o": [
+            "High resources and sophistication",
+            "Motivation for financial gain only",
+            "Lack of technical expertise",
+            "Short-term attack duration"
+        ]
+    },
+    {
+        "q": "What is a signature-based detection method primarily looking for?",
+        "o": [
+            "Known patterns of malicious code",
+            "Abnormal user behavior analytics",
+            "Zero-day vulnerability exploits",
+            "Encrypted network traffic flows"
+        ]
+    },
+    {
+        "q": "Which type of threat actor usually has authorized access to the system?",
+        "o": [
+            "Insider Threat",
+            "Cyber Terrorist",
+            "Organized Crime",
+            "Script Kiddie"
+        ]
+    },
+    {
+        "q": "What information does a file hash provide as an IoC?",
+        "o": [
+            "A unique identifier for a file",
+            "The file creation timestamp",
+            "The file owner's username",
+            "The file's permission set"
+        ]
+    },
+    {
+        "q": "Which TTP component describes 'how' an adversary attacks?",
+        "o": [
+            "Techniques",
+            "Tactics",
+            "Procedures",
+            "Pretexting"
+        ]
+    },
+    {
+        "q": "What is the primary goal of cyber espionage?",
+        "o": [
+            "Stealing sensitive information",
+            "Disrupting service availability",
+            "Defacing public websites",
+            "encrypting user data files"
+        ]
+    },
+    {
+        "q": "Which feed type provides real-time data on active malware?",
+        "o": [
+            "Malware Threat Feed",
+            "Vulnerability Feed",
+            "News RSS Feed",
+            "Social Media Feed"
+        ]
+    },
+    {
+        "q": "What distinguishes an APT from a standard cyber attack?",
+        "o": [
+            "Duration and persistence",
+            "Use of basic tools",
+            "Immediate financial goal",
+            "Targeting random users"
+        ]
+    },
+    {
+        "q": "What is a 'zero-day' in the context of threat intelligence?",
+        "o": [
+            "A vulnerability with no fix",
+            "A day with no attacks",
+            "A deprecated software",
+            "A secure system boot"
+        ]
+    },
+    {
+        "q": "Which term refers to the 'what' and 'why' of an attack?",
+        "o": [
+            "Tactics",
+            "Techniques",
+            "Procedures",
+            "Payloads"
+        ]
+    },
+    {
+        "q": "What is the use of 'sinkholing' in threat intelligence?",
+        "o": [
+            "Redirecting malicious traffic",
+            "Storing backup data securely",
+            "Creating user accounts",
+            "Scanning for viruses"
+        ]
+    },
+    {
+        "q": "Which actor is most likely to use 'script kiddie' tools?",
+        "o": [
+            "Unskilled individual",
+            "State-sponsored group",
+            "Corporate spy",
+            "Security researcher"
+        ]
+    },
+    {
+        "q": "Where can open-source threat intelligence be found?",
+        "o": [
+            "Publicly available sources",
+            "Paid private subscriptions",
+            "Internal company logs",
+            "Encrypted dark web sites"
+        ]
+    },
+    {
+        "q": "What connects the 'Cyber Kill Chain' to TTPs?",
+        "o": [
+            "It maps attack stages to behaviors",
+            "It encrypts threat feed data",
+            "It identifies only malware hashes",
+            "It prevents all network attacks"
+        ]
+    },
+    {
+        "q": "Which data standard is commonly used for sharing threat intelligence?",
+        "o": [
+            "STIX",
+            "HTML",
+            "JPEG",
+            "SMTP"
+        ]
+    },
+    {
+        "q": "What is the primary motivation of a 'Cyber Mercenary'?",
+        "o": [
+            "Financial payment from clients",
+            "Political ideology changes",
+            "Personal fame and notoriety",
+            "Testing security software"
+        ]
+    },
+    {
+        "q": "Which IoC is most difficult for an attacker to change?",
+        "o": [
+            "TTPs",
+            "Hash values",
+            "IP addresses",
+            "Domain names"
+        ]
+    },
+    {
+        "q": "What does a 'Bot Herder' control?",
+        "o": [
+            "A network of infected computers",
+            "The corporate firewall policy",
+            "The physical server room access",
+            "The software development team"
+        ]
+    },
+    {
+        "q": "Which is an example of a strategic threat intelligence source?",
+        "o": [
+            "White papers on geopolitical risks",
+            "Real-time firewall block logs",
+            "Automated malware signature lists",
+            "Daily antivirus update files"
+        ]
+    },
+    {
+        "q": "What does 'Command and Control' (C2) traffic indicate?",
+        "o": [
+            "Communications with attacker infrastructure",
+            "Normal server administrative traffic",
+            "Internal database replication data",
+            "Standard employee email messages"
+        ]
+    },
+    {
+        "q": "Which threat actor is typically associated with 'Industrial Espionage'?",
+        "o": [
+            "Competitors seeking trade secrets",
+            "Activists seeking social change",
+            "Script kiddies seeking attention",
+            "Automated bots crawling web"
+        ]
+    },
+    {
+        "q": "What is the role of a 'Procedures' in TTP?",
+        "o": [
+            "Detailed steps taken by the attacker",
+            "High-level goals of the operation",
+            "General technical capabilities used",
+            "The motivation behind the attack"
+        ]
+    },
+    {
+        "q": "Which IoC type is ephemeral and changes frequently?",
+        "o": [
+            "IP Address",
+            "Behavior",
+            "TTP",
+            "Strategy"
+        ]
+    },
+    {
+        "q": "What defines a 'Hybrid Threat'?",
+        "o": [
+            "Combines cyber and physical attacks",
+            "Uses only one type of malware",
+            "Targets only mobile devices",
+            "Uses purely social engineering"
+        ]
+    },
+    {
+        "q": "What is 'Attribution' in threat intelligence?",
+        "o": [
+            "Identifying the perpetrator of an attack",
+            "Calculating the cost of the damage",
+            "Restoring the system from backups",
+            "encrypting the stolen data files"
+        ]
+    },
+    {
+        "q": "Which protocol is often used to transport STIX data?",
+        "o": [
+            "TAXII",
+            "FTP",
+            "SSH",
+            "RDP"
+        ]
+    },
+    {
+        "q": "What is a 'Dark Web' marketplace often used for?",
+        "o": [
+            "Buying and selling illegal tools",
+            "Hosting open source projects",
+            "Publishing academic research",
+            "Recruiting legitimate employees"
+        ]
+    },
+    {
+        "q": "Which of these is a 'Behavioral' IoC?",
+        "o": [
+            "Rapid data transfer at odd hours",
+            "A specific file MD5 hash",
+            "A hardcoded malicious URL",
+            "A static registry key value"
+        ]
+    },
+    {
+        "q": "What is the 'Pyramid of Pain' in threat/defense?",
+        "o": [
+            "Difficulty for attackers to change indicators",
+            "Severity of vulnerability impact ratings",
+            "Hierarchy of corporate security management",
+            "Cost of implementing different firewalls"
+        ]
+    },
+    {
+        "q": "Which threat actor group often uses sophisticated, custom malware?",
+        "o": [
+            "APT Groups",
+            "Script Kiddies",
+            "Adware Bots",
+            "Phishing Spammers"
+        ]
+    },
+    {
+        "q": "What is 'Operational' threat intelligence?",
+        "o": [
+            " insights into imminent attacks",
+            "High-level executive risk reports",
+            "Long-term strategic planning data",
+            "Post-incident forensic analysis"
+        ]
+    },
+    {
+        "q": "What does a 'Beacon' signal usually imply?",
+        "o": [
+            "Infected host checking in with C2",
+            "Server successfully rebooting",
+            "Firewall blocking a connection",
+            "Antivirus update completing"
+        ]
+    },
+    {
+        "q": "Which is a common vector for initial infection?",
+        "o": [
+            "Phishing Application",
+            "Secure Boot",
+            "Code Review",
+            "Data Backup"
+        ]
+    },
+    {
+        "q": "What describes 'Living off the Land' tactics?",
+        "o": [
+            "Using existing system tools for attacks",
+            "Physically stealing hardware devices",
+            "Using custom compiled malware only",
+            "Operating from a rural location"
+        ]
+    },
+    {
+        "q": "What is the main value of sharing IOCs?",
+        "o": [
+            "Faster detection across organizations",
+            "Increasing the value of Bitcoin",
+            "Reducing internet bandwidth usage",
+            "Simplifying password complexity policies"
+        ]
+    },
+    {
+        "q": "Who normally consumes 'Tactical' threat intelligence?",
+        "o": [
+            "SOC Analysts and Incident Responders",
+            "CEOs and Board Members",
+            "HR and Legal Departments",
+            "Sales and Marketing Teams"
+        ]
+    },
+    {
+        "q": "What is a 'drop' site in an attack lifecycle?",
+        "o": [
+            "Location to store stolen data",
+            "Site to download antivirus",
+            "Place to recruit hackers",
+            "Server to host website"
+        ]
+    },
+    {
+        "q": "Which of these is a Host-based IoC?",
+        "o": [
+            "Unexpected registry changes",
+            "Malicious domain name",
+            "Suspicious IP traffic",
+            "Unusual geographical login"
+        ]
+    },
+    {
+        "q": "What does 'TTP' analysis help predict?",
+        "o": [
+            "Future attacker behavior",
+            "Hardware failure rates",
+            "Software licensing costs",
+            "Network bandwidth limits"
+        ]
+    },
+    {
+        "q": "Which threat actor is likely to deface a website?",
+        "o": [
+            "Hacktivist",
+            "State Spy",
+            "Data Broker",
+            "Access Broker"
+        ]
+    },
+    {
+        "q": "What is 'Credential Stuffing'?",
+        "o": [
+            "Using stolen logins on multiple sites",
+            "Creating strong passwords manually",
+            "Encrypting password databases",
+            "Deleting user accounts in bulk"
+        ]
+    },
+    {
+        "q": "Which file type is commonly malicious in email attachments?",
+        "o": [
+            ".exe",
+            ".txt",
+            ".png",
+            ".mp3"
+        ]
+    },
+    {
+        "q": "What is the purpose of 'Doxing'?",
+        "o": [
+            "Publicly revealing private info",
+            "Encrypting a hard drive",
+            "Installing a rootkit",
+            "Blocking a network port"
+        ]
+    },
+    {
+        "q": "What is the first phase of the Intelligence Cycle?",
+        "o": [
+            "Planning and Direction",
+            "Collection",
+            "Analysis",
+            "Dissemination"
+        ]
+    },
+    {
+        "q": "Which attack targets high-profile executives specifically?",
+        "o": [
+            "Whaling",
+            "Vishing",
+            "Smishing",
+            "Pharming"
+        ]
+    },
+    {
+        "q": "What describes 'Commodity Malware'?",
+        "o": [
+            "Widely available malicious software",
+            "Custom nation-state cyber tool",
+            "Hardware-based attack device",
+            "Zero-day exploit code"
+        ]
+    },
+    {
+        "q": "Which data is considered 'Strategic Intelligence'?",
+        "o": [
+            "High-level trends for decision makers",
+            "IP addresses for firewalls",
+            "Hash values for antivirus",
+            "Network packet captures"
+        ]
+    },
+    {
+        "q": "What is the typical lifespan of an IP address IoC?",
+        "o": [
+            "Short (Hours to Days)",
+            "Medium (Weeks)",
+            "Long (Months)",
+            "Permanent (Years)"
+        ]
+    },
+    {
+        "q": "Which group is known as a 'Financial' threat actor?",
+        "o": [
+            "Cybercriminals",
+            "Hacktivists",
+            "Nation States",
+            "Script Kiddies"
+        ]
+    },
+    {
+        "q": "What is 'Raw Intelligence'?",
+        "o": [
+            "Unprocessed collected data",
+            "Final analytic reports",
+            "Verified actionable alerts",
+            "Executive summaries"
+        ]
+    },
+    {
+        "q": "Which TTP involves hiding code within other files?",
+        "o": [
+            "Steganography",
+            "Cryptography",
+            "Biometrics",
+            "Authorization"
+        ]
+    },
+    {
+        "q": "What is the goal of 'Dissemination' in the intel cycle?",
+        "o": [
+            "Distributing intel to consumers",
+            "Collecting raw data logs",
+            "Analyzing malware code",
+            "Planning future scans"
+        ]
+    },
+    {
+        "q": "Which term describes a fake email from a trusted source?",
+        "o": [
+            "Spoofing",
+            "Sniffing",
+            "Scanning",
+            "Spamming"
+        ]
+    },
+    {
+        "q": "What is 'OSINT' short for?",
+        "o": [
+            "Open Source Intelligence",
+            "Operating System Integration",
+            "Offsite Internal Network",
+            "Online Security Interface"
+        ]
+    },
+    {
+        "q": "Which tool is commonly used to visualize link analysis?",
+        "o": [
+            "Maltego",
+            "Notepad",
+            "Calculator",
+            "Paint"
+        ]
+    },
+    {
+        "q": "What defines 'Insider Threat' intent?",
+        "o": [
+            "Malicious or accidental harm by employee",
+            "External hacker attacking firewall",
+            "Automated bot scanning ports",
+            "Vendor software having bugs"
+        ]
+    },
+    {
+        "q": "Which is a 'Network' IoC?",
+        "o": [
+            "Unusual outbound traffic",
+            "Modified system file",
+            "New admin user created",
+            "Deleted log entries"
+        ]
+    },
+    {
+        "q": "What does a 'Watering Hole' attack target?",
+        "o": [
+            "Websites visited by the victim",
+            "The victim's email server",
+            "The victim's home router",
+            "The victim's phone line"
+        ]
+    },
+    {
+        "q": "Which phase involves converting data into information?",
+        "o": [
+            "Processing",
+            "Collection",
+            "Direction",
+            "Feedback"
+        ]
+    },
+    {
+        "q": "What is a 'Botnet' primarily used for?",
+        "o": [
+            "Large scale DDoS attacks",
+            "Mining cryptocurrency solo",
+            "Storing legitimate backups",
+            "Updating software patches"
+        ]
+    },
+    {
+        "q": "Which actor uses 'Ransomware as a Service' (RaaS)?",
+        "o": [
+            "Affiliates",
+            "Developers",
+            "Victims",
+            "Defenders"
+        ]
+    },
+    {
+        "q": "What is 'Typosquatting'?",
+        "o": [
+            "Registering similar domain names",
+            "Typing passwords incorrectly",
+            "Sending spam emails fast",
+            "Cracking wifi passwords"
+        ]
+    },
+    {
+        "q": "Which intelligence type is 'Machine-Readable'?",
+        "o": [
+            "Tactical",
+            "Strategic",
+            "Operational",
+            "Political"
+        ]
+    },
+    {
+        "q": "What is the 'Diamond Model' used for?",
+        "o": [
+            "Intrusion Analysis",
+            "Financial Auditing",
+            "Network Design",
+            "Software Coding"
+        ]
+    },
+    {
+        "q": "Which vertex is part of the Diamond Model?",
+        "o": [
+            "Adversary",
+            "Firewall",
+            "Budget",
+            "Policy"
+        ]
+    },
+    {
+        "q": "What defines a 'Campaign' in threat intel?",
+        "o": [
+            "A series of related attacks",
+            "A single phishing email",
+            "A security awareness day",
+            "A software patch cycle"
+        ]
+    },
+    {
+        "q": "Which is an example of 'Social Engineering'?",
+        "o": [
+            "Pretexting",
+            "Port Scanning",
+            "Buffer Overflow",
+            "SQL Injection"
+        ]
+    },
+    {
+        "q": "What helps analysts link different attacks?",
+        "o": [
+            "Shared TTPs",
+            "Different IP addresses",
+            "Random timestamps",
+            "Variable file names"
+        ]
+    },
+    {
+        "q": "Which feed focuses on 'Brand Reputation'?",
+        "o": [
+            "Digital Risk Protection",
+            "Malware Signatures",
+            "Vulnerability Database",
+            "Network Flow Logs"
+        ]
+    },
+    {
+        "q": "What is a 'C2 Server'?",
+        "o": [
+            "Command and Control Server",
+            "Customer Care Server",
+            "Critical Core Server",
+            "Cloud Compute Server"
+        ]
+    },
+    {
+        "q": "Which actor targets critical infrastructure?",
+        "o": [
+            "Nation State",
+            "Adware Bot",
+            "Spammer",
+            "Scraper"
+        ]
+    },
+    {
+        "q": "What implies a 'False Positive' IoC match?",
+        "o": [
+            "Alert on benign activity",
+            "Alert on malicious activity",
+            "No alert on malicious activity",
+            "No alert on benign activity"
+        ]
+    },
+    {
+        "q": "Which is a 'File-less' malware technique?",
+        "o": [
+            "PowerShell script execution",
+            "Dropping a .exe file",
+            "Downloading a .zip file",
+            "Copying a .dll file"
+        ]
+    },
+    {
+        "q": "What does CVE stand for?",
+        "o": [
+            "Common Vulnerabilities and Exposures",
+            "Critical Virus Entry",
+            "Computer Verification Error",
+            "Cyber Validation Event"
+        ]
+    },
+    {
+        "q": "What is 'Threat Hunting' defined as?",
+        "o": [
+            "Proactively searching for undetected threats",
+            "Reacting to firewall alerts",
+            "Installing antivirus software",
+            "Patching known vulnerabilities"
+        ]
+    },
+    {
+        "q": "Which data format is YARA used for?",
+        "o": [
+            "Malware pattern matching",
+            "Network traffic logs",
+            "User password hashes",
+            "Encrypted email bodies"
+        ]
+    },
+    {
+        "q": "What is a 'Honeypot' used for?",
+        "o": [
+            "Deceiving and trapping attackers",
+            "Storing sensitive user data",
+            "Speeding up network traffic",
+            "Encrypting backup files"
+        ]
+    },
+    {
+        "q": "Which actor is driven by religious or ideological beliefs?",
+        "o": [
+            "Cyber Terrorist",
+            "Script Kiddie",
+            "White Hat Hacker",
+            "Software Vendor"
+        ]
+    },
+    {
+        "q": "What does 'TLP' stand for in intel sharing?",
+        "o": [
+            "Traffic Light Protocol",
+            "Threat Level Priority",
+            "Time Limit Policy",
+            "Trusted Link Paring"
+        ]
+    },
+    {
+        "q": "Which TLP color means 'Personal/Confidential'?",
+        "o": [
+            "Red",
+            "Green",
+            "White",
+            "Clear"
+        ]
+    },
+    {
+        "q": "What is a 'Payload' in a cyber attack?",
+        "o": [
+            "The malicious actions executed",
+            "The email subject line",
+            "The target IP address",
+            "The attacker's username"
+        ]
+    },
+    {
+        "q": "Which is an example of 'Open Source' intelligence?",
+        "o": [
+            "Social media posts",
+            "Internal router logs",
+            "Private dark web forums",
+            "Classified government docs"
+        ]
+    },
+    {
+        "q": "What does 'IOC' stand for?",
+        "o": [
+            "Indicator of Compromise",
+            "Internet of Computers",
+            "Internal Operation Code",
+            "Incident of Crime"
+        ]
+    },
+    {
+        "q": "Which term describes a vulnerability sold on the black market?",
+        "o": [
+            "Zero-day Exploit",
+            "Public Patch",
+            "Beta Software",
+            "Open Source Tool"
+        ]
+    },
+    {
+        "q": "What is the primary target of 'Ransomware'?",
+        "o": [
+            "Availability of data",
+            "Confidentiality of network",
+            "Integrity of hardware",
+            "Authenticity of users"
+        ]
+    },
+    {
+        "q": "Which activity is part of the 'Weaponization' phase?",
+        "o": [
+            "Creating a malicious PDF",
+            "Scanning for open ports",
+            "Stealing the password",
+            "Installing the backdoor"
+        ]
+    },
+    {
+        "q": "What is a 'Script Kiddie'?",
+        "o": [
+            "Unskilled attacker using existing tools",
+            "Expert coding malware developer",
+            "Professional security auditor",
+            "Automated AI attack bot"
+        ]
+    },
+    {
+        "q": "Which threat intel type is 'High Level'?",
+        "o": [
+            "Strategic",
+            "Tactical",
+            "Technical",
+            "Raw"
+        ]
+    },
+    {
+        "q": "What is 'Spear Phishing'?",
+        "o": [
+            "Targeted email attack",
+            "Random email spam",
+            "Voice call scam",
+            "SMS text scam"
+        ]
+    },
+    {
+        "q": "Which organization maintains the CVE list?",
+        "o": [
+            "MITRE",
+            "Microsoft",
+            "Google",
+            "Apple"
+        ]
+    },
+    {
+        "q": "What is 'Cyber Warfare'?",
+        "o": [
+            "Nation-state conflict in cyberspace",
+            "Online gaming competition",
+            "Fighting computer viruses",
+            "Arguing on social media"
+        ]
+    },
+    {
+        "q": "Which IoC is associated with 'Command Line' activity?",
+        "o": [
+            "Suspicious shell commands",
+            "Bad IP reputation",
+            "Email sender address",
+            "File MD5 hash"
+        ]
+    },
+    {
+        "q": "What is the purpose of 'Threat Profiling'?",
+        "o": [
+            "Understanding specific adversary behaviors",
+            "Installing new firewall hardware",
+            "Backing up all database files",
+            "Creating user account policies"
+        ]
+    },
+    {
+        "q": "Which MITRE ATT&CK tactic deals with 'persistence'?",
+        "o": [
+            "Maintaining access to the system",
+            "Initial entry into the network",
+            "Moving between internal hosts",
+            "Stealing data from the target"
+        ]
+    },
+    {
+        "q": "What is the primary function of MISP (Malware Information Sharing Platform)?",
+        "o": [
+            "Sharing and storing IoCs",
+            "Scanning for viruses actively",
+            "Cracking passwords automatically",
+            "Hosting dark web marketplaces"
+        ]
+    },
+    {
+        "q": "Which APT group is commonly associated with Russia?",
+        "o": [
+            "APT28 (Fancy Bear)",
+            "Lazarus Group",
+            "APT1",
+            "Equation Group"
+        ]
+    },
+    {
+        "q": "What is 'Lateral Movement' in the context of TTPs?",
+        "o": [
+            "Moving from one system to another internally",
+            "Exfiltrating data to the internet",
+            "Gaining initial access from outside",
+            "Deleting logs to hide tracks"
+        ]
+    },
+    {
+        "q": "Which data format is JSON-based and used for STIX 2.0?",
+        "o": [
+            "JSON",
+            "XML",
+            "CSV",
+            "Binary"
+        ]
+    },
+    {
+        "q": "What distinguishes 'Lazarus Group'?",
+        "o": [
+            "North Korean state sponsorship",
+            "Focus on environmental activism",
+            "Operating primarily from Antarctica",
+            "Refusing to use malware tools"
+        ]
+    },
+    {
+        "q": "Which phase of the Cyber Kill Chain involves 'Delivery'?",
+        "o": [
+            "Transmitting the weapon to the target",
+            "Identifying the target vulnerabilities",
+            "Exploiting the vulnerability found",
+            "Installing the remote backdoor"
+        ]
+    },
+    {
+        "q": "What is a 'Tactical' threat intelligence goal?",
+        "o": [
+            "Identifying specific TTPs for defense",
+            "Planning long-term security budget",
+            "Hiring new security staff members",
+            "Writing company privacy policies"
+        ]
+    },
+    {
+        "q": "Which term describes a vulnerability in a supply chain component?",
+        "o": [
+            "Supply Chain Attack",
+            "Insider Threat",
+            "Phishing Attack",
+            "DDoS Attack"
+        ]
+    },
+    {
+        "q": "What is the focus of 'OpenCTI'?",
+        "o": [
+            "Managing cyber threat intelligence knowledge",
+            "Scanning networks for open ports",
+            "Testing web application security",
+            "Encrypting hard drive partitions"
+        ]
+    },
+    {
+        "q": "Which ATT&CK tactic involves 'Privilege Escalation'?",
+        "o": [
+            "Gaining higher level permissions",
+            "Identifying the target network",
+            "Sending data out of network",
+            "Crashing the system kernel"
+        ]
+    },
+    {
+        "q": "What does the 'Equation Group' have links to?",
+        "o": [
+            "Sophisticated NSA-linked tools",
+            "Basic script kiddie exploits",
+            "Public ransomware campaigns",
+            "Adware distribution networks"
+        ]
+    },
+    {
+        "q": "Which IoC type is considered 'Hash'?",
+        "o": [
+            "SHA-256 checksum of a file",
+            "The filename string itself",
+            "The file creation date",
+            "The file owner name"
+        ]
+    },
+    {
+        "q": "What is 'Threat Hunting' dependent on mainly?",
+        "o": [
+            "Human analysis and hypothesis",
+            "Automated firewall rules only",
+            "Waiting for an alert to fire",
+            "Installing new antivirus software"
+        ]
+    },
+    {
+        "q": "Which defines 'Finished Intelligence'?",
+        "o": [
+            "Analyzed and contextualized data",
+            "Raw logs from a firewall",
+            "List of random IP addresses",
+            "Unsorted malware samples"
+        ]
+    },
+    {
+        "q": "What is the 'Exploitation' phase in the Kill Chain?",
+        "o": [
+            "Triggering the vulnerability code",
+            "Selecting the target email",
+            "Escalating root privileges",
+            "Copying the sensitive database"
+        ]
+    },
+    {
+        "q": "Which actor is 'APT1' historically linked to?",
+        "o": [
+            "China",
+            "Russia",
+            "Iran",
+            "USA"
+        ]
+    },
+    {
+        "q": "What is 'Domain Generation Algorithm' (DGA) used for?",
+        "o": [
+            "Dynamically creating C2 domains",
+            "Generating secure passwords",
+            "Encrypting email messages",
+            "Scanning for open WiFi"
+        ]
+    },
+    {
+        "q": "Which is a 'Host' based artifact?",
+        "o": [
+            "Startup folder registry key",
+            "Network packet capture",
+            "Router firewall log",
+            "DNS server cache"
+        ]
+    },
+    {
+        "q": "What is the purpose of 'Data Exfiltration'?",
+        "o": [
+            "Stealing data from the network",
+            "Deleting data from the disk",
+            "Encrypting data in place",
+            "Backing up data to tape"
+        ]
+    },
+    {
+        "q": "Which TTP is 'Credential Dumping'?",
+        "o": [
+            "Stealing login information from memory",
+            "Deleting user accounts from AD",
+            "Creating new admin users",
+            "Resetting user passwords"
+        ]
+    },
+    {
+        "q": "What is 'Fin7' known for?",
+        "o": [
+            "Targeting financial institutions",
+            "Political hactivism attacks",
+            "Disrupting power grids",
+            "Stealing military secrets"
+        ]
+    },
+    {
+        "q": "Which is a 'Network' based artifact?",
+        "o": [
+            "PCAP file",
+            "Memory dump",
+            "Registry hive",
+            "System event log"
+        ]
+    },
+    {
+        "q": "What does 'Tirade' refer to in some contexts?",
+        "o": [
+            "Specific malware family name",
+            "A type of firewall hardware",
+            "A security policy document",
+            "A network cable type"
+        ]
+    },
+    {
+        "q": "Which phase comes after 'Exploitation' in Kill Chain?",
+        "o": [
+            "Installation",
+            "Reconnaissance",
+            "Weaponization",
+            "Delivery"
+        ]
+    },
+    {
+        "q": "What is 'Cozy Bear' linked to?",
+        "o": [
+            "APT29",
+            "APT28",
+            "APT1",
+            "APT10"
+        ]
+    },
+    {
+        "q": "Which IoC is 'Network Artifact'?",
+        "o": [
+            "User-Agent string",
+            "Process ID",
+            "File path",
+            "Registry key"
+        ]
+    },
+    {
+        "q": "What is 'Attacker Infrastructure'?",
+        "o": [
+            "Servers used to launch attacks",
+            "The victim's network layout",
+            "The software being exploited",
+            "The physical office of hackers"
+        ]
+    },
+    {
+        "q": "Which is an example of 'Masquerading'?",
+        "o": [
+            "Naming malware 'svchost.exe'",
+            "Deleting system logs",
+            "Encrypting the payload",
+            "Scanning for vulnerabilities"
+        ]
+    },
+    {
+        "q": "What does 'FUD' mean in malware context?",
+        "o": [
+            "Fully Undetectable",
+            "File Upload Download",
+            "Fast User Data",
+            "Firewall Update Date"
+        ]
+    },
+    {
+        "q": "Which level of the Pyramid of Pain is 'Tools'?",
+        "o": [
+            "Second from top (Challenging)",
+            "Bottom (Trivial)",
+            "Top (Tough)",
+            "Middle (Annoying)"
+        ]
+    },
+    {
+        "q": "What does 'ISAC' stand for?",
+        "o": [
+            "Information Sharing and Analysis Center",
+            "International Security Audit Council",
+            "Internet Safety Access Control",
+            "Internal Server Admin Configuration"
+        ]
+    },
+    {
+        "q": "Which APT group is associated with Iran?",
+        "o": [
+            "OilRig (APT34)",
+            "APT28",
+            "APT1",
+            "Deep Panda"
+        ]
+    },
+    {
+        "q": "What is the top of the Pyramid of Pain?",
+        "o": [
+            "TTPs",
+            "Tools",
+            "Network Artifacts",
+            "Domain Names"
+        ]
+    },
+    {
+        "q": "Which MITRE ATT&CK tactic involves 'Lateral Movement'?",
+        "o": [
+            "Moving through the environment",
+            "Establishing persistence",
+            "Gathering initial data",
+            "Exfiltrating files"
+        ]
+    },
+    {
+        "q": "What is 'Charming Kitten' known for aiming at?",
+        "o": [
+            "Iranian strategic interests",
+            "Korean financial gain",
+            "Russian military secrets",
+            "Chinese manufacturing IP"
+        ]
+    },
+    {
+        "q": "Which is easier to change for an attacker than 'Tools'?",
+        "o": [
+            "Network Artifacts",
+            "TTPs",
+            "Operating System",
+            "Target Industry"
+        ]
+    },
+    {
+        "q": "What does a 'Sinkhole' operation typically achieve?",
+        "o": [
+            "Intercepting botnet traffic",
+            "Identifying phishing emails",
+            "Patching server vulnerabilities",
+            "Encrypting user passwords"
+        ]
+    },
+    {
+        "q": "Which sector does 'FS-ISAC' focus on?",
+        "o": [
+            "Financial Services",
+            "Food Safety",
+            "Fire Support",
+            "Federal Security"
+        ]
+    },
+    {
+        "q": "what is 'Pass-the-Hash' classified as in ATT&CK?",
+        "o": [
+            "Technique",
+            "Tactic",
+            "Procedure",
+            "Campaign"
+        ]
+    },
+    {
+        "q": "Which IoC is at the bottom of the Pyramid of Pain?",
+        "o": [
+            "Hash Values",
+            "IP Addresses",
+            "Domain Names",
+            "Network Artifacts"
+        ]
+    },
+    {
+        "q": "What is 'Deep Panda' often associated with?",
+        "o": [
+            "China",
+            "Russia",
+            "Iran",
+            "Vietnam"
+        ]
+    },
+    {
+        "q": "Which defines 'Tactical Intelligence' audience?",
+        "o": [
+            "Security Operations Center (SOC)",
+            "Board of Directors",
+            "Chief Financial Officer",
+            "Human Resources"
+        ]
+    },
+    {
+        "q": "What is 'Fast Flux' DNS used for?",
+        "o": [
+            "Hiding C2 server IP addresses",
+            "Speeding up website loading",
+            "Encrypting VOIP calls",
+            "Balancing load on databases"
+        ]
+    },
+    {
+        "q": "Which technique involves 'Spearphishing Attachment'?",
+        "o": [
+            "Initial Access",
+            "Impact",
+            "Exfiltration",
+            "Discovery"
+        ]
+    },
+    {
+        "q": "What is 'Sandworm' group known for?",
+        "o": [
+            "Grid-disrupting attacks",
+            "Banking trojans only",
+            "Social media spamming",
+            "Adware distribution"
+        ]
+    },
+    {
+        "q": "Which is a 'Strategic' intel requirement?",
+        "o": [
+            "Understanding adversary intent",
+            "Blocking a specific IP",
+            "Patching a server bug",
+            "Updating antivirus definitions"
+        ]
+    },
+    {
+        "q": "What is 'Domain Shadowing'?",
+        "o": [
+            "Creating subdomains on compromised accounts",
+            "Registering similar domain names",
+            "Blocking valid domains",
+            "Redirecting DNS queries"
+        ]
+    },
+    {
+        "q": "Which 'Procedure' detail is most granular?",
+        "o": [
+            "Exact command line arguments used",
+            "The general technique name",
+            "The broad tactic goal",
+            "The attacker's country"
+        ]
+    },
+    {
+        "q": "What is 'Turla' group associated with?",
+        "o": [
+            "Advanced espionage malware",
+            "Simple crypto miners",
+            "Android adware apps",
+            "Phishing for credit cards"
+        ]
+    },
+    {
+        "q": "Which IoC lifespan is 'Medium'?",
+        "o": [
+            "Domain Names",
+            "Hash Values",
+            "IP Addresses",
+            "TTPs"
+        ]
+    },
+    {
+        "q": "What is 'Credential Access' tactic?",
+        "o": [
+            "Stealing account names and passwords",
+            "Using stolen credentials",
+            "Bypassing authentication",
+            "Modifying account permissions"
+        ]
+    },
+    {
+        "q": "Which group target Telecommunications mainly?",
+        "o": [
+            "LightBasin",
+            "DarkHotel",
+            "Sandworm",
+            "Carbanak"
+        ]
+    },
+    {
+        "q": "What is 'Operational Security' (OPSEC) for attackers?",
+        "o": [
+            "Hiding their identity and actions",
+            "Scanning broadly for targets",
+            "Publishing their tools online",
+            "Using meaningful file names"
+        ]
+    },
+    {
+        "q": "Which is a 'Discovery' tactic example?",
+        "o": [
+            "Network Service Scanning",
+            "Brute Force Login",
+            "Data Encryption",
+            "Scheduled Task Creation"
+        ]
+    },
+    {
+        "q": "What is 'Command and Control' phase goal?",
+        "o": [
+            "Remote manipulation of victims",
+            "Physical theft of servers",
+            "Crashing the application",
+            "Infecting with virus"
+        ]
+    },
+    {
+        "q": "Which tool helps visualize 'Maltego' graphs?",
+        "o": [
+            "Link Analysis",
+            "Code Compilation",
+            "Network Sniffing",
+            "Password Cracking"
+        ]
+    },
+    {
+        "q": "What does 'TLP:AMBER' allow?",
+        "o": [
+            "Sharing within organization and clients",
+            "Sharing with the public",
+            "No sharing at all",
+            "Sharing with specific individuals only"
+        ]
+    },
+    {
+        "q": "Which is an example of 'Defense Evasion'?",
+        "o": [
+            "Disabling security tools",
+            "Creating a new user",
+            "Scanning network ports",
+            "Reading email contents"
+        ]
+    },
+    {
+        "q": "What refers to 'The Unknown Unknowns'?",
+        "o": [
+            "Unidentified threats and risks",
+            "Known vulnerabilities unpatched",
+            "Identified threat actors",
+            "Blocked firewall ports"
+        ]
+    },
+    {
+        "q": "Which is a 'Collection' tactic focus?",
+        "o": [
+            "Gathering data of interest",
+            "Sending data out of network",
+            "Encrypting local files",
+            "Deleting system logs"
+        ]
+    },
+    {
+        "q": "What is 'Carbanak' famous for?",
+        "o": [
+            "Banking heists",
+            "Election interference",
+            "Power grid attacks",
+            "Website defacement"
+        ]
+    },
+    {
+        "q": "Which IoC is 'Trivial' to change?",
+        "o": [
+            "Data Hash",
+            "TTP",
+            "Network Protocol",
+            "Code Logic"
+        ]
+    },
+    {
+        "q": "What is 'Active Defense'?",
+        "o": [
+            "Engaging adversary to disrupt attack",
+            "Passively monitoring logs",
+            "Only patching systems",
+            "Installing antivirus software"
+        ]
+    },
+    {
+        "q": "Which distinguishes 'APT41'?",
+        "o": [
+            "State-sponsored espionage + financial crime",
+            "Purely ideological hacktivism",
+            "Solely destructive wiper attacks",
+            "Only targeting mobile phones"
+        ]
+    },
+    {
+        "q": "Which animal name often denotes Chinese threat actors?",
+        "o": [
+            "Panda",
+            "Bear",
+            "Kitten",
+            "Chollima"
+        ]
+    },
+    {
+        "q": "What is 'Shodan' primarily used for in specific?",
+        "o": [
+            "Search engine for internet-connected devices",
+            "Social media profile scraper",
+            "Dark web marketplace index",
+            "Email address verifier"
+        ]
+    },
+    {
+        "q": "Which CrowdStrike cryptonym refers to Russian actors?",
+        "o": [
+            "Bear",
+            "Panda",
+            "Spider",
+            "Jackal"
+        ]
+    },
+    {
+        "q": "What is a 'STIX Domain Object' (SDO)?",
+        "o": [
+            "High level intel concept like Campaign",
+            "Low level network packet byte",
+            "Binary executable file content",
+            "User password hash value"
+        ]
+    },
+    {
+        "q": "Which model is linear/sequential in nature?",
+        "o": [
+            "Cyber Kill Chain",
+            "MITRE ATT&CK",
+            "Diamond Model",
+            "Pyramid of Pain"
+        ]
+    },
+    {
+        "q": "What does 'TheHarvester' tool collect?",
+        "o": [
+            "Emails, subdomains, and names",
+            "Credit card numbers",
+            "Encrypted passwords",
+            "Wi-Fi handshakes"
+        ]
+    },
+    {
+        "q": "Which nation is associated with 'Kitten' naming?",
+        "o": [
+            "Iran",
+            "North Korea",
+            "Russia",
+            "China"
+        ]
+    },
+    {
+        "q": "What is 'Indicator Expansion'?",
+        "o": [
+            "Finding related IoCs from a single seed",
+            "Increasing the size of log files",
+            "Adding more hard drives to server",
+            "Writing longer threat reports"
+        ]
+    },
+    {
+        "q": "Which STIX object specifically describes an IP address?",
+        "o": [
+            "Observed Data",
+            "Campaign",
+            "Threat Actor",
+            "Attack Pattern"
+        ]
+    },
+    {
+        "q": "What distinguishes ATT&CK from Kill Chain?",
+        "o": [
+            "ATT&CK is a matrix of specific techniques",
+            "ATT&CK is only for physical security",
+            "Kill Chain is for software development",
+            "Kill Chain has more phases than ATT&CK"
+        ]
+    },
+    {
+        "q": "Which actor name implies 'Cyber Crime' usually?",
+        "o": [
+            "Spider",
+            "Panda",
+            "Bear",
+            "Kitten"
+        ]
+    },
+    {
+        "q": "What is 'Pivot' in an investigation?",
+        "o": [
+            "Using data to find connected infrastructure",
+            "Physically turning the monitor",
+            "Changing the password policy",
+            "Stopping the investigation suddenly"
+        ]
+    },
+    {
+        "q": "Which concept helps attribution by style/code analysis?",
+        "o": [
+            "Code Similarity",
+            "IP Geolocation",
+            "Domain Registration",
+            "File Size"
+        ]
+    },
+    {
+        "q": "What is 'Chollima' associated with?",
+        "o": [
+            "North Korea",
+            "Vietnam",
+            "India",
+            "Pakistan"
+        ]
+    },
+    {
+        "q": "Which is an example of 'Passive DNS'?",
+        "o": [
+            "Historical DNS resolution records",
+            "Sending queries to DNS server",
+            "Blocking DNS traffic at firewall",
+            "Encrypting DNS packets"
+        ]
+    },
+    {
+        "q": "What is 'Yara' rule primarily based on?",
+        "o": [
+            "String or byte patterns in files",
+            "Network connection behavior",
+            "User login timestamps",
+            "CPU usage percentages"
+        ]
+    },
+    {
+        "q": "Which focuses on the 'Relationship' between entities?",
+        "o": [
+            "STIX Relationship Object (SRO)",
+            "Firewall Access Control List",
+            "Active Directory Group Policy",
+            "Network Routing Table"
+        ]
+    },
+    {
+        "q": "What is 'Censys' used for?",
+        "o": [
+            "Internet-wide scanning and monitoring",
+            "Social engineering employees",
+            "Cracking zip file passwords",
+            "Creating phishing websites"
+        ]
+    },
+    {
+        "q": "Which actor motivation is 'Espionage'?",
+        "o": [
+            "Stealing secrets for advantage",
+            "Destroying data for fun",
+            "Making money via ransomware",
+            "Showing off technical skills"
+        ]
+    },
+    {
+        "q": "What is 'Tactic' in ATT&CK?",
+        "o": [
+            "The adversary's technical goal",
+            "The specific tool used",
+            "The step-by-step procedure",
+            "The vulnerability exploited"
+        ]
+    },
+    {
+        "q": "Which naming convention uses 'Typhoon'?",
+        "o": [
+            "Microsoft (Blizzard/Typhoon/etc)",
+            "CrowdStrike (Animals)",
+            "FireEye (APT numbers)",
+            "Palo Alto (Chemicals)"
+        ]
+    },
+    {
+        "q": "What is 'Maltego' entity?",
+        "o": [
+            "A node representing data (e.g. IP)",
+            "A script to run exploits",
+            "A type of malware",
+            "A network switch"
+        ]
+    },
+    {
+        "q": "Which phase of Kill Chain is 'Actions on Objectives'?",
+        "o": [
+            "The final goal execution",
+            "The initial research step",
+            "The malware installation",
+            "The weapon delivery"
+        ]
+    },
+    {
+        "q": "What is 'Threat Intelligence Platform' (TIP) core function?",
+        "o": [
+            "Aggregating and normalizing feeds",
+            "Blocking attacks in real-time",
+            "Scanning computers for viruses",
+            "Training users on security"
+        ]
+    },
+    {
+        "q": "Which actor targets Dissidents commonly?",
+        "o": [
+            "Authoritarian State Actors",
+            "Financial Cyber Criminals",
+            "Corporate Spies",
+            "Script Kiddies"
+        ]
+    },
+    {
+        "q": "What is 'Link Analysis' visualizes?",
+        "o": [
+            "Connections between data points",
+            "Speed of network cables",
+            "Strength of passwords",
+            "Code lines in a file"
+        ]
+    },
+    {
+        "q": "Which refers to 'Indicator Lifecycle' state?",
+        "o": [
+            "Active / Expired",
+            "Red / Blue",
+            "Fast / Slow",
+            "Encrypted / Plain"
+        ]
+    },
+    {
+        "q": "What is 'Adversary Emulation'?",
+        "o": [
+            "Mimicking specific threat actor TTPs",
+            "Buying malware on dark web",
+            "Identifying vulnerabilities only",
+            "Reviewing security policy logs"
+        ]
+    },
+    {
+        "q": "Which is a 'Strategic' attribution level?",
+        "o": [
+            "Linking to a specific government",
+            "Identifying the specific laptop",
+            "Finding the malware hash",
+            "Locating the IP address"
+        ]
+    },
+    {
+        "q": "What does 'Enrichment' do to an indicator?",
+        "o": [
+            "Adds context (geo, whois, etc)",
+            "Deletes it from database",
+            "Encrypts it for storage",
+            "Compresses it to save space"
+        ]
+    },
+    {
+        "q": "Which is an 'Open Source' feed example?",
+        "o": [
+            "AlienVault OTX",
+            "Private Vendor Gold Feed",
+            "Internal Honeypot Logs",
+            "Classified Military Intel"
+        ]
+    },
+    {
+        "q": "What is 'Confidence Level' in intel?",
+        "o": [
+            "Certainty of the assessment",
+            "Speed of the network",
+            "Cost of the tool",
+            "Height of the firewall"
+        ]
+    },
+    {
+        "q": "Which distinguishes 'Vishing'?",
+        "o": [
+            "Voice-based phishing",
+            "Video-based hacking",
+            "Virtual machine attack",
+            "Visual code injection"
+        ]
+    },
+    {
+        "q": "What is 'Smishing'?",
+        "o": [
+            "SMS-based phishing",
+            "Small file phishing",
+            "Smart device phishing",
+            "Smooth network attack"
+        ]
+    },
+    {
+        "q": "Which refers to 'Confidence: High'?",
+        "o": [
+            "Judgement is based on high-quality info",
+            "The attack is very expensive",
+            "The malware is very fast",
+            "The hacker is very famous"
+        ]
+    },
+    {
+        "q": "What is 'Stack Counting' in threat hunting?",
+        "o": [
+            "Frequency analysis of data values",
+            "Counting physical servers in a rack",
+            "Calculating memory stack depth",
+            "Validating matching bracket pairs"
+        ]
+    },
+    {
+        "q": "Which STIX object represents 'Who' is attacking?",
+        "o": [
+            "Threat Actor",
+            "Observed Data",
+            "Sighting",
+            "Indicator"
+        ]
+    },
+    {
+        "q": "What makes 'False Flag' attribution difficult?",
+        "o": [
+            "Adversaries mimicking other groups' TTPs",
+            "Encryption of the payload source code",
+            "Use of publicly available tools",
+            "Lack of logging on victim systems"
+        ]
+    },
+    {
+        "q": "In the Diamond Model, what connects 'Adversary' and 'Victim'?",
+        "o": [
+            "Socio-political Axis",
+            "Technology Axis",
+            "Infrastructure Axis",
+            "Capability Axis"
+        ]
+    },
+    {
+        "q": "Which technique is 'DLL Side-Loading'?",
+        "o": [
+            "Placing a malicious DLL near legitimate EXE",
+            "Injecting code into running process memory",
+            "Overwriting system DLLs with malware",
+            "Downloading DLLs from the internet"
+        ]
+    },
+    {
+        "q": "What is 'Outlier Analysis' looking for?",
+        "o": [
+            "Data points that deviate from the norm",
+            "The most common events in the log",
+            "Perfectly matching signature patterns",
+            "Files with the correct checksums"
+        ]
+    },
+    {
+        "q": "Which STIX object describes 'How' an attack happens?",
+        "o": [
+            "Attack Pattern",
+            "Intrusion Set",
+            "Malware",
+            "Identity"
+        ]
+    },
+    {
+        "q": "What is the 'Technology Axis' in Diamond Model?",
+        "o": [
+            "Connects Infrastructure and Capability",
+            "Connects Adversary and Victim",
+            "Connects Time and Space",
+            "Connects Online and Offline"
+        ]
+    },
+    {
+        "q": "Which implies 'Living off the Land' (LotL) binary?",
+        "o": [
+            "LOLBin",
+            "Rootkit",
+            "Trojan",
+            "ZeroDay"
+        ]
+    },
+    {
+        "q": "What is 'FormBook'?",
+        "o": [
+            "Information stealer malware",
+            "Social media platform",
+            "Encryption algorithm",
+            "Network firewall"
+        ]
+    },
+    {
+        "q": "Which implies a 'Supply Chain Compromise'?",
+        "o": [
+            "Malicious update from trusted vendor",
+            "Phishing email to employee",
+            "Brute force on RDP port",
+            "SQL injection on website"
+        ]
+    },
+    {
+        "q": "What is 'Volumetric' analysis useful for?",
+        "o": [
+            "Detecting data exfiltration spikes",
+            "Identifying specific malware names",
+            "Finding logic bombs in code",
+            "Verifying user identities"
+        ]
+    },
+    {
+        "q": "Which STIX SDO represents a security flaw?",
+        "o": [
+            "Vulnerability",
+            "Weakness",
+            "Exploit",
+            "Bug"
+        ]
+    },
+    {
+        "q": "What is 'Timestomping'?",
+        "o": [
+            "Modifying file timestamps to hide activity",
+            "Speeding up the system clock",
+            "Deleting scheduled tasks",
+            "Validating time servers"
+        ]
+    },
+    {
+        "q": "Which connects 'Adversary' and 'Infrastructure'?",
+        "o": [
+            "Infrastructure Axis",
+            "Capability Axis",
+            "Victim Axis",
+            "Social Axis"
+        ]
+    },
+    {
+        "q": "What is 'Cobalt Strike' often used for?",
+        "o": [
+            "Adversary simulation and C2",
+            "Protecting endpoints from viruses",
+            "Managing firewall rulesets",
+            "Backing up database servers"
+        ]
+    },
+    {
+        "q": "Which implies 'Least Frequency of Occurrence' hunting?",
+        "o": [
+            "Investigating rare events",
+            "Checking top talkers",
+            "Analyzing common logs",
+            "Ignoring odd anomalies"
+        ]
+    },
+    {
+        "q": "What is 'Process Hollowing'?",
+        "o": [
+            "Replacing legitimate process code with malware",
+            "Deleting a running process",
+            "Creating a zombie process",
+            "Debugging a system process"
+        ]
+    },
+    {
+        "q": "Which STIX object groups related activity?",
+        "o": [
+            "Campaign",
+            "Report",
+            "Note",
+            "Opinion"
+        ]
+    },
+    {
+        "q": "What is 'Mimikatz' primarily used for?",
+        "o": [
+            "Extracting credentials from memory",
+            "Scanning network for vulnerabilities",
+            "Encrypting files for ransom",
+            "Creating phishing emails"
+        ]
+    },
+    {
+        "q": "Which helps detect 'Lateral Movement'?",
+        "o": [
+            "Analyzing Windows Event Log 4624 (Logon)",
+            "Checking CPU temperature logs",
+            "Verifying hard drive SMART status",
+            "Reviewing website visitor stats"
+        ]
+    },
+    {
+        "q": "What is 'Domain Fronting'?",
+        "o": [
+            "Hiding C2 traffic behind reputable CDN",
+            "Creating a fake front page website",
+            "Blocking domains at the gateway",
+            "Registering domains in person"
+        ]
+    },
+    {
+        "q": "Which is an example of 'Deception' tech?",
+        "o": [
+            "Canary Tokens",
+            "Firewall Rules",
+            "Antivirus Scans",
+            "Backup Tapes"
+        ]
+    },
+    {
+        "q": "What is 'Traffic Analysis' looking for?",
+        "o": [
+            "Patterns in communication flow",
+            "Content of encrypted packets",
+            "Hardware MAC addresses",
+            "Wifi signal strength"
+        ]
+    },
+    {
+        "q": "Which STIX SDO represents a software program?",
+        "o": [
+            "Tool",
+            "Software",
+            "Program",
+            "App"
+        ]
+    },
+    {
+        "q": "What implies 'Beaconing' interval jitter?",
+        "o": [
+            "Randomizing C2 check-in times",
+            "Constant persistent connection",
+            "Sending data at exact seconds",
+            "Stopping all network traffic"
+        ]
+    },
+    {
+        "q": "Which attack targets 'Air-Gapped' networks?",
+        "o": [
+            "USB drive based malware",
+            "Remote RDP exploit",
+            "Email phishing link",
+            " wifi jamming attack"
+        ]
+    },
+    {
+        "q": "What is 'BloodHound' used for?",
+        "o": [
+            "Mapping Active Directory relations",
+            "Sniffing network packets",
+            "Cracking wifi passwords",
+            "Tracking physical location"
+        ]
+    },
+    {
+        "q": "Which STIX object provides subjective info?",
+        "o": [
+            "Opinion",
+            "Fact",
+            "Truth",
+            "Data"
+        ]
+    },
+    {
+        "q": "What is 'Fileless Persistence'?",
+        "o": [
+            "Registry-based startup scripts",
+            "Dropping a startup exe",
+            "Creating a desktop shortcut",
+            "Copying files to USB"
+        ]
+    },
+    {
+        "q": "Which implies 'Baselining'?",
+        "o": [
+            "Establishing known normal behavior",
+            "Setting up the first server",
+            "Writing the security policy",
+            "Installing the OS kernel"
+        ]
+    },
+    {
+        "q": "What is 'Emotet' originally?",
+        "o": [
+            "Banking Trojan",
+            "Ransomware",
+            "Spyware",
+            "Adware"
+        ]
+    },
+    {
+        "q": "Which helps identify 'Beaconing'?",
+        "o": [
+            "Regularity of connection timing",
+            "Size of the data packet",
+            "Destination IP country",
+            "Source port number"
+        ]
+    },
+    {
+        "q": "What is 'Shadow IT' risk?",
+        "o": [
+            "Unapproved software/hardware usage",
+            "Working in a dark room",
+            "Hiding the server rack",
+            "Using privacy screens"
+        ]
+    },
+    {
+        "q": "Which STIX object details a specific instance?",
+        "o": [
+            "Sighting",
+            "Observing",
+            "Viewing",
+            "Looking"
+        ]
+    },
+    {
+        "q": "What is the primary purpose of 'Sigma' rules?",
+        "o": [
+            "Generic signature format for SIEM search",
+            "Network packet capture analysis",
+            "Binary malware auditing",
+            "Web application firewalling"
+        ]
+    },
+    {
+        "q": "Which section of a YARA rule contains the matching logic?",
+        "o": [
+            "condition",
+            "strings",
+            "meta",
+            "imports"
+        ]
+    },
+    {
+        "q": "What format are Sigma rules written in?",
+        "o": [
+            "YAML",
+            "JSON",
+            "XML",
+            "Binary"
+        ]
+    },
+    {
+        "q": "Which is a valid Snort rule action?",
+        "o": [
+            "alert",
+            "stop",
+            "pause",
+            "return"
+        ]
+    },
+    {
+        "q": "What does a CTI Maturity Model assess?",
+        "o": [
+            "Effectiveness of threat intel program",
+            "Speed of the internet connection",
+            "Number of malware samples collected",
+            "Cost of the security software"
+        ]
+    },
+    {
+        "q": "Which YARA keyword defines the rule name?",
+        "o": [
+            "rule",
+            "name",
+            "def",
+            "function"
+        ]
+    },
+    {
+        "q": "What is the 'meta' section in YARA used for?",
+        "o": [
+            "Descriptive information like author",
+            "Hexadecimal string definitions",
+            "Boolean matching logic",
+            "Importing external modules"
+        ]
+    },
+    {
+        "q": "Which tool converts Sigma rules to SIEM queries?",
+        "o": [
+            "Sigmac",
+            "Yarac",
+            "Snortc",
+            "Logc"
+        ]
+    },
+    {
+        "q": "What is a 'Suricata' rule compatible with?",
+        "o": [
+            "Snort rules",
+            "YARA rules",
+            "Sigma rules",
+            "STIX objects"
+        ]
+    },
+    {
+        "q": "Which level implies 'Ad HOC' CTI maturity?",
+        "o": [
+            "Level 1 - Initial",
+            "Level 3 - Defined",
+            "Level 5 - Optimized",
+            "Level 4 - Managed"
+        ]
+    },
+    {
+        "q": "What does '$' prefix denote in YARA strings?",
+        "o": [
+            "A string identifier",
+            "A variable assignment",
+            "A comment line",
+            "A function call"
+        ]
+    },
+    {
+        "q": "Which Sigma field describes the log source?",
+        "o": [
+            "logsource",
+            "detection",
+            "title",
+            "level"
+        ]
+    },
+    {
+        "q": "What is 'JA3' used for?",
+        "o": [
+            "TLS client fingerprinting",
+            "SSH server key exchange",
+            "HTTP header analysis",
+            "DNS query timing"
+        ]
+    },
+    {
+        "q": "Which implies 'Optimized' CTI maturity?",
+        "o": [
+            "Continuous improvement and automation",
+            "Manual collection of data",
+            "No formal processes exist",
+            "Reacting only to incidents"
+        ]
+    },
+    {
+        "q": "What defines a 'Snort' rule header?",
+        "o": [
+            "Action, Proto, Src, Dst",
+            "Name, Desc, ID, Date",
+            "Alert, Log, Pass, Drop",
+            "TCP, UDP, ICMP, IP"
+        ]
+    },
+    {
+        "q": "Which YARA condition matches any string?",
+        "o": [
+            "any of them",
+            "all of them",
+            "none of them",
+            "one of them"
+        ]
+    },
+    {
+        "q": "What is 'Suricata' primarily?",
+        "o": [
+            "IDS/IPS Engine",
+            "Firewall Manager",
+            "Antivirus Scanner",
+            "Password Cracker"
+        ]
+    },
+    {
+        "q": "Which Sigma section holds search logic?",
+        "o": [
+            "detection",
+            "logsource",
+            "title",
+            "id"
+        ]
+    },
+    {
+        "q": "What is 'Zeek' (formerly Bro) used for?",
+        "o": [
+            "Network security monitoring",
+            "Endpoint malware scanning",
+            "Web application firewall",
+            "Database encryption key"
+        ]
+    },
+    {
+        "q": "Which CTI metric measures 'Actionability'?",
+        "o": [
+            "Rate of intel leading to defense update",
+            "Number of reports generated",
+            "Total gigabytes of logs stored",
+            "Cost of the intelligence feed"
+        ]
+    },
+    {
+        "q": "What is 'Cuckoo Sandbox' used for?",
+        "o": [
+            "Automated malware analysis",
+            "Network traffic generation",
+            "Password strength testing",
+            "Vulnerability scanning"
+        ]
+    },
+    {
+        "q": "Which creates a 'Golden Ticket' in AD?",
+        "o": [
+            "Kerberos Ticket Granting Ticket (TGT) Compromise",
+            "Local Admin Password Solution (LAPS)",
+            "Domain Name System (DNS) cache",
+            "Dynamic Host Configuration (DHCP)"
+        ]
+    },
+    {
+        "q": "What is 'Kerberoasting'?",
+        "o": [
+            "Requesting service tickets to crack offline",
+            "Roasting the physical server CPU",
+            "Deleting the Kerberos database",
+            "Creating a fake domain controller"
+        ]
+    },
+    {
+        "q": "Which implies 'Living off the Land' (LotL)?",
+        "o": [
+            "Using powershell.exe / wmic.exe",
+            "Using custom.exe malware",
+            "Using compiled python scripts",
+            "Using downloaded hacking tools"
+        ]
+    },
+    {
+        "q": "What is 'Dribble' in YARA?",
+        "o": [
+            "No such standard keyword",
+            "A specific module",
+            "A rule type",
+            "A condition operator"
+        ]
+    },
+    {
+        "q": "Which is an example of 'Threat Landscape'?",
+        "o": [
+            "Current prevalent attack trends",
+            "A map of the data center",
+            "List of company employees",
+            "The physical office layout"
+        ]
+    },
+    {
+        "q": "What is 'Attribution' confidence based on?",
+        "o": [
+            "Converging lines of evidence",
+            "Guessing based on timing",
+            "Analyzing file size only",
+            "Reading news headlines"
+        ]
+    },
+    {
+        "q": "Which implies 'Automated' CTI consumption?",
+        "o": [
+            "API integration with SOAR",
+            "Reading PDF reports manually",
+            "Copy pasting IP addresses",
+            "Discussing in meetings"
+        ]
+    },
+    {
+        "q": "What is 'IOC Fatigue'?",
+        "o": [
+            "Overwhelmed by too many alerts",
+            "Tiredness from reading reports",
+            "Slow network performance",
+            "Running out of disk space"
+        ]
+    },
+    {
+        "q": "Which file type is a 'YARA' rule?",
+        "o": [
+            ".yar",
+            ".xml",
+            ".json",
+            ".sig"
+        ]
+    },
+    {
+        "q": "What does 'Strings' command do?",
+        "o": [
+            "Extracts printable text from binary",
+            "Compiles the code to exe",
+            "Deletes valid text lines",
+            "Encrypts the file content"
+        ]
+    },
+    {
+        "q": "Which involves 'Frequency Analysis'?",
+        "o": [
+            "Detecting DGA domains",
+            "Scanning for viruses",
+            "Blocking IP ranges",
+            "Updating software"
+        ]
+    },
+    {
+        "q": "What is 'Entropy' used to detect?",
+        "o": [
+            "Packed or encrypted malware",
+            "Plain text email messages",
+            "Standard system executables",
+            "Empty text files"
+        ]
+    },
+    {
+        "q": "Which implies 'False Negative'?",
+        "o": [
+            "Missing a real threat",
+            "Alerting on safe traffic",
+            "Blocking a valid user",
+            "Crashing the firewall"
+        ]
+    },
+    {
+        "q": "What is 'Threat Density'?",
+        "o": [
+            "Concentration of threats in a sector",
+            "Weight of the server rack",
+            "Thickness of the firewall",
+            "Number of security staff"
+        ]
+    },
+    {
+        "q": "What is 'Confirmation Bias' in analysis?",
+        "o": [
+            "Favoring info that supports existing belief",
+            "Assuming the enemy thinks like you",
+            "Relying on the first piece of info",
+            "Believing the group majority view"
+        ]
+    },
+    {
+        "q": "Which platform is known as 'AlienVault OTX'?",
+        "o": [
+            "Open Threat Exchange",
+            "Online Testing Xchange",
+            "Operational Threat Xray",
+            "Official Texture XML"
+        ]
+    },
+    {
+        "q": "How did GDPR affect WHOIS data?",
+        "o": [
+            "Redacted personal registrant info",
+            "Made all data public by default",
+            "Deleted all historical records",
+            "Required accurate GPS coordinates"
+        ]
+    },
+    {
+        "q": "What is 'Mirror Imaging' bias?",
+        "o": [
+            "Assuming adversary behaves like you",
+            "Looking at data in a mirror",
+            "Copying the hard drive twice",
+            "Reversing the image colors"
+        ]
+    },
+    {
+        "q": "Which implies 'VirusTotal' function?",
+        "o": [
+            "Multi-engine malware scanning",
+            "Real-time firewall blocking",
+            "Dark web social network",
+            "Encrypted email service"
+        ]
+    },
+    {
+        "q": "What is 'Anomali' platform known for?",
+        "o": [
+            "Threat Intelligence Platform (TIP)",
+            "Web Application Firewall (WAF)",
+            "Identity Access Management (IAM)",
+            "Network Access Control (NAC)"
+        ]
+    },
+    {
+        "q": "Which bias is 'Anchoring'?",
+        "o": [
+            "Relying too heavily on first info",
+            "Refusing to change opinion",
+            "Following the team leader",
+            "Being afraid of bad news"
+        ]
+    },
+    {
+        "q": "What does 'Recorded Future' specialize in?",
+        "o": [
+            "Automated intelligence analytics",
+            "Manual virus removal services",
+            "Physical security guard training",
+            "Selling refurbished hardware"
+        ]
+    },
+    {
+        "q": "Which is a 'Registrant' in WHOIS?",
+        "o": [
+            "The owner of the domain",
+            "The ISP hosting the site",
+            "The government regulator",
+            "The DNS server software"
+        ]
+    },
+    {
+        "q": "What is 'Analysis of Competing Hypotheses' (ACH)?",
+        "o": [
+            "Method to evaluate multiple explanations",
+            "Tool to crack passwords fast",
+            "Script to scan networks",
+            "Protocol to encrypt data"
+        ]
+    },
+    {
+        "q": "Which implies 'Survivorship Bias'?",
+        "o": [
+            "Focusing only on threats that bypassed defenses",
+            "Analyzing all threats equally",
+            "Ignoring successful attacks",
+            "Studying only dead malware"
+        ]
+    },
+    {
+        "q": "What is 'Availability Bias'?",
+        "o": [
+            "Overestimating likelihood of memorable events",
+            "Ensuring server uptime is 99%",
+            "Checking if domain is available",
+            "Using available open source tools"
+        ]
+    },
+    {
+        "q": "Which IoC is 'URL'?",
+        "o": [
+            "Network Indicator",
+            "Host Artifact",
+            "Biometric Data",
+            "Hardware Serial"
+        ]
+    },
+    {
+        "q": "What involves 'Traffic Light Protocol' (TLP)?",
+        "o": [
+            "Sharing boundaries definitions",
+            "Network speed limits",
+            "Firewall rule ordering",
+            "Traffic shaping policies"
+        ]
+    },
+    {
+        "q": "Which is 'TLP:RED' condition?",
+        "o": [
+            "Not for disclosure, restricted to participants",
+            "Disclosure to public allowed",
+            "Disclosure to own organization",
+            "Disclosure to clients allowed"
+        ]
+    },
+    {
+        "q": "What is a 'Sinkhole' IP address?",
+        "o": [
+            "Address controlled by defenders to trap traffic",
+            "Address of the attacker's home",
+            "Address of the victim's server",
+            "Address of the DNS root server"
+        ]
+    },
+    {
+        "q": "Which tool is 'Any.Run'?",
+        "o": [
+            "Interactive malware sandbox",
+            "Static code analyzer",
+            "Network packet sniffer",
+            "Password vault manager"
+        ]
+    },
+    {
+        "q": "What implies 'Indicator Aging'?",
+        "o": [
+            "IoCs lose value over time",
+            "Old IoCs become more valuable",
+            "Hardware gets slower with age",
+            "Software becomes deprecated"
+        ]
+    },
+    {
+        "q": "Which is a 'Commercial' threat feed?",
+        "o": [
+            "CrowdStrike Intel",
+            "Abuse.ch URLhaus",
+            "PhishTank",
+            "Tor Exit Nodes List"
+        ]
+    },
+    {
+        "q": "What is 'Groupthink' bias?",
+        "o": [
+            "Desire for harmony overrides realistic appraisal",
+            "Thinking about multiple groups at once",
+            "Organizing analysts into small teams",
+            "Using group policy objects in AD"
+        ]
+    },
+    {
+        "q": "Which implies 'Structured Data'?",
+        "o": [
+            "Organized in defined fields (XML/JSON)",
+            "Free text PDF reports",
+            "Email body content",
+            "Audio recording transcript"
+        ]
+    },
+    {
+        "q": "What is 'Hybrid Analysis' sandbox?",
+        "o": [
+            "Malware analysis service",
+            "Network hybrid cloud",
+            "Electric car software",
+            "Biometric scanner tool"
+        ]
+    },
+    {
+        "q": "Which is crucial for 'Attribution'?",
+        "o": [
+            "High confidence evidence",
+            "Quickest possible guess",
+            "Lowest cost assessment",
+            "Shortest possible report"
+        ]
+    },
+    {
+        "q": "What is 'Reverse WHOIS'?",
+        "o": [
+            "Finding domains owned by same email/name",
+            "Finding the owner of a specific domain",
+            "Deleting WHOIS records",
+            "Updating WHOIS records"
+        ]
+    },
+    {
+        "q": "Which implies 'Passive' collection?",
+        "o": [
+            "Listening without altering traffic",
+            "Port scanning the target",
+            "Logging into the target",
+            "sending exploit packets"
+        ]
+    },
+    {
+        "q": "What is 'Active' collection?",
+        "o": [
+            "Interacting with the target system",
+            "Reading public news sites",
+            "Downloading threat feeds",
+            "Listening to network tabs"
+        ]
+    },
+    {
+        "q": "Which bias is 'Recency Bias'?",
+        "o": [
+            "Weighing recent events more heavily",
+            "Ignoring all new information",
+            "Focusing only on old history",
+            "Assuming nothing changes"
+        ]
+    },
+    {
+        "q": "What is 'Intelligence Requirements' (IR)?",
+        "o": [
+            "Questions that need answering",
+            "Hardware specs for the server",
+            "Sills needed for hiring",
+            "Budget for the department"
+        ]
+    },
+    {
+        "q": "Which is 'Priority Intelligence Requirement' (PIR)?",
+        "o": [
+            "Critical business-driving questions",
+            "Low level technical details",
+            "Daily news summaries",
+            "Weekly status updates"
+        ]
+    },
+    {
+        "q": "What implies 'Feedback' in intel cycle?",
+        "o": [
+            "Reviewing if intel met needs",
+            "Sending data back to attacker",
+            "Echo on the voice line",
+            "Rebooting the server"
+        ]
+    },
+    {
+        "q": "What makes 'DNS over HTTPS' (DoH) challenging for defenders?",
+        "o": [
+            "Encrypted DNS queries hide domains from monitoring",
+            "It slows down internet traffic significantly",
+            "It is not supported by modern browsers",
+            "It requires expensive hardware to run"
+        ]
+    },
+    {
+        "q": "Which tool maps tests directly to MITRE ATT&CK techniques?",
+        "o": [
+            "Atomic Red Team",
+            "Wireshark",
+            "John the Ripper",
+            "Aircrack-ng"
+        ]
+    },
+    {
+        "q": "What is a common use of 'XOR' operations in malware?",
+        "o": [
+            "Simple string obfuscation",
+            "Public key encryption",
+            "File compression algorithm",
+            "Generating random numbers"
+        ]
+    },
+    {
+        "q": "Which sector is governed by NERC CIP standards?",
+        "o": [
+            "Electric Utility / Power Grid",
+            "Healthcare / Hospitals",
+            "Retail / E-commerce",
+            "Education / Universities"
+        ]
+    },
+    {
+        "q": "What is 'Fast Flux' networking primarily used for?",
+        "o": [
+            "Resilient C2 infrastructure",
+            "Speeding up file downloads",
+            "Load balancing web servers",
+            "Encrypting VPN connections"
+        ]
+    },
+    {
+        "q": "Which indicator suggests 'Base64' encoding?",
+        "o": [
+            "Alphanumeric string ending with =",
+            "Detailed hex dump starting with 0x",
+            "Binary file header MZ",
+            "Clear text English words"
+        ]
+    },
+    {
+        "q": "What is 'Domain Fronting' technique?",
+        "o": [
+            "Using high-reputation domain to mask C2",
+            "Registering domain with fake ID",
+            "Hosting website on the dark web",
+            "Blocking domains at the firewall"
+        ]
+    },
+    {
+        "q": "Which tool is used for 'Adversary Emulation'?",
+        "o": [
+            "Caldera",
+            "Nmap",
+            "Putty",
+            "WinRAR"
+        ]
+    },
+    {
+        "q": "What is 'Steganography' in exfiltration?",
+        "o": [
+            "Hiding data within image/audio files",
+            "Encrypting data with AES-256",
+            "Compressing data into ZIP files",
+            "Encoding data in Base64"
+        ]
+    },
+    {
+        "q": "Which regulation covers EU data privacy?",
+        "o": [
+            "GDPR",
+            "HIPAA",
+            "PCI DSS",
+            "SOX"
+        ]
+    },
+    {
+        "q": "What defines 'Packer' usage in malware?",
+        "o": [
+            "Compressing/encrypting executable to hide code",
+            "Organizing files into folders",
+            "Creating installation wizards",
+            "Managing database tables"
+        ]
+    },
+    {
+        "q": "Which command is often used for 'Living off the Land'?",
+        "o": [
+            "certutil.exe",
+            "chrome.exe",
+            "notepad.exe",
+            "calc.exe"
+        ]
+    },
+    {
+        "q": "What is 'Beacon Jitter'?",
+        "o": [
+            "Variation in C2 callback intervals",
+            "Shaking of the server rack",
+            "Unstable wifi signal connection",
+            "Corrupted data packets"
+        ]
+    },
+    {
+        "q": "Which implies 'Fileless Malware' technique?",
+        "o": [
+            "Reflective DLL Injection",
+            "Dropping a malicious EXE",
+            "Installing a rootkit driver",
+            "Modifying the Hosts file"
+        ]
+    },
+    {
+        "q": "What is 'JA3S'?",
+        "o": [
+            "TLS Server Fingerprinting",
+            "Java Application Security",
+            "JavaScript API Source",
+            "Json Authentication 3"
+        ]
+    },
+    {
+        "q": "Which group targeted the SWIFT banking system?",
+        "o": [
+            "Lazarus Group",
+            "Equation Group",
+            "Anonymous",
+            "Lizard Squad"
+        ]
+    },
+    {
+        "q": "What is 'Bulletproof Hosting'?",
+        "o": [
+            "Service that ignores abuse complaints",
+            "Hosting with armed guards",
+            "Server with metal casing",
+            "Cloud service with 100% uptime"
+        ]
+    },
+    {
+        "q": "Which technique bypasses 'Mark of the Web'?",
+        "o": [
+            "Container files (ISO/IMG)",
+            "Downloading via Chrome",
+            "Using reliable antivirus",
+            "Saving file as PDF"
+        ]
+    },
+    {
+        "q": "What is 'Process Doppelganging'?",
+        "o": [
+            "Transactional NTFS code injection technique",
+            "Duplicating running processes",
+            "Renaming processes to hide",
+            "Creating backup processes"
+        ]
+    },
+    {
+        "q": "Which implies 'Strategic' CI targeting?",
+        "o": [
+            "Pre-positioning on power grids for war",
+            "Stealing credit cards for money",
+            "Defacing retail websites",
+            "Mining crypto on servers"
+        ]
+    },
+    {
+        "q": "What is 'DGA' (Domain Generation Algorithm)?",
+        "o": [
+            "Algorithmic generation of C2 domains",
+            "Digital Graphic Art software",
+            "Domain Group Admin privilege",
+            "Database Global Access mode"
+        ]
+    },
+    {
+        "q": "Which is a 'Persistence' mechanism in Registry?",
+        "o": [
+            "Run Keys (HKCU/Run)",
+            "Uninstall Key",
+            "File Association Key",
+            "Hardware Description Key"
+        ]
+    },
+    {
+        "q": "What is 'Timestomping' used to evade?",
+        "o": [
+            "Forensic timeline analysis",
+            "Real time antivirus scan",
+            "Network firewall rules",
+            "User password expiry"
+        ]
+    },
+    {
+        "q": "Which technique uses 'Bitsadmin'?",
+        "o": [
+            "Downloading malicious files",
+            "Calculating bitwise ops",
+            "Administering database bits",
+            "Drawing bitmap images"
+        ]
+    },
+    {
+        "q": "What is 'Supply Chain' risk for software?",
+        "o": [
+            "Compromise of upstream libraries/tools",
+            "Delay in shipping hardware",
+            "Cost of license renewal",
+            "Loss of internet connection"
+        ]
+    },
+    {
+        "q": "Which implies 'Lateral Movement' via SMB?",
+        "o": [
+            "PsExec usage",
+            "RDP usage",
+            "SSH usage",
+            "FTP usage"
+        ]
+    },
+    {
+        "q": "What is 'Golden SAML'?",
+        "o": [
+            "Forging SAML tokens for cloud access",
+            "A premium software license",
+            "Secure coding standard",
+            "Encrypted XML file"
+        ]
+    },
+    {
+        "q": "Which actor focuses on Intellectual Property theft?",
+        "o": [
+            "APT1 (China linked)",
+            "Anonymous (Hacktivist)",
+            "Zeus Botnet (Criminal)",
+            "Mirai Botnet (IoT)"
+        ]
+    },
+    {
+        "q": "What is 'ShadowPad'?",
+        "o": [
+            "A shared modular malware platform",
+            "A secure laptop privacy screen",
+            "A network monitoring tool",
+            "A secure notes application"
+        ]
+    },
+    {
+        "q": "Which implies 'Credential Dumping' tool?",
+        "o": [
+            "Mimikatz",
+            "Wireshark",
+            "Putty",
+            "Nmap"
+        ]
+    },
+    {
+        "q": "What is 'Kerberos' primary vulnerability?",
+        "o": [
+            "Ticket forgery (Golden/Silver Ticket)",
+            "Weak encryption on tickets",
+            "Clear text password transmission",
+            "Open port on firewall"
+        ]
+    },
+    {
+        "q": "Which refers to 'Indicator Decay'?",
+        "o": [
+            "Decrease in IoC relevance over time",
+            "Corrupted hard drive sectors",
+            "Fading of monitor usage",
+            "Loss of wifi signal"
+        ]
+    },
+    {
+        "q": "What is 'Threat Convergence'?",
+        "o": [
+            "Merging of cyber and physical threats",
+            "Meeting of two threat actors",
+            "Combining two malware files",
+            "Connecting two networks"
+        ]
+    },
+    {
+        "q": "Which implies 'Access Broker'?",
+        "o": [
+            "Selling initial access to other criminals",
+            "Managing user accounts for company",
+            "Buying hardware for discount",
+            "Fixing broken passwords"
+        ]
+    },
+    {
+        "q": "What is 'Double Extortion' ransomware?",
+        "o": [
+            "Encrypting data AND threatening to leak it",
+            "Encrypting data twice",
+            "Asking for double the money",
+            "Infecting two computers"
+        ]
+    },
+    {
+        "q": "Which APT group is known as 'Cozy Bear'?",
+        "o": [
+            "APT29",
+            "APT28",
+            "APT41",
+            "APT34"
+        ]
+    },
+    {
+        "q": "What was the vector in the 'SolarWinds' compromise?",
+        "o": [
+            "Malicious update to Orion software",
+            "Phishing email to CEO",
+            "USB drive in parking lot",
+            "Brute force of RDP"
+        ]
+    },
+    {
+        "q": "Which APT is primarily associated with the GRU (Russian Intel)?",
+        "o": [
+            "APT28 (Fancy Bear)",
+            "APT29 (Cozy Bear)",
+            "APT10 (Stone Panda)",
+            "APT33 (Elfin)"
+        ]
+    },
+    {
+        "q": "What distinguishes 'Zero-Click' exploits?",
+        "o": [
+            "No user interaction required",
+            "User must click once",
+            "User must reboot system",
+            "User must download file"
+        ]
+    },
+    {
+        "q": "Which group is known for 'Shamoon' wiper malware?",
+        "o": [
+            "APT33 (Iran linked)",
+            "APT28 (Russia linked)",
+            "APT1 (China linked)",
+            "Lazarus (NK linked)"
+        ]
+    },
+    {
+        "q": "What is 'Zerodium' known for?",
+        "o": [
+            "Buying zero-day exploits",
+            "Developing antivirus",
+            "Hosting open source code",
+            "Providing free training"
+        ]
+    },
+    {
+        "q": "Which target sector is APT34 (OilRig) known for?",
+        "o": [
+            "Middle East gov/energy",
+            "South American retail",
+            "Australian education",
+            "Canadian healthcare"
+        ]
+    },
+    {
+        "q": "What is 'Sunburst' in context of SolarWinds?",
+        "o": [
+            "The backdoor malware used",
+            "The name of the hacker group",
+            "The company CEO's name",
+            "The cleaning software tool"
+        ]
+    },
+    {
+        "q": "Which implies 'Exploit Chain'?",
+        "o": [
+            "Using multiple exploits in sequence",
+            "Linking computers with a cable",
+            "Sending emails to a list",
+            "Mining crypto currency"
+        ]
+    },
+    {
+        "q": "What is 'Kaseya VSA' attack type?",
+        "o": [
+            "Supply chain ransomware delivery",
+            "Direct phishing campaign",
+            "Physical theft of servers",
+            "DDoS on public website"
+        ]
+    },
+    {
+        "q": "Which APT uses 'Hammertoss'?",
+        "o": [
+            "APT29",
+            "APT1",
+            "APT34",
+            "Fin7"
+        ]
+    },
+    {
+        "q": "What is 'Pegasus' spyware?",
+        "o": [
+            "Mobile surveillance tool by NSO Group",
+            "Windows ransomware by criminals",
+            "Linux analytical tool by NSA",
+            "Mac antivirus by Apple"
+        ]
+    },
+    {
+        "q": "Which implies 'Strategic Web Compromise'?",
+        "o": [
+            "Watering hole attack",
+            "Phishing email",
+            "USB drop",
+            "Wifi jamming"
+        ]
+    },
+    {
+        "q": "What is 'Teardrop' malware?",
+        "o": [
+            "Post-exploitation trojan",
+            "Ransomware builder",
+            "DDoS botnet",
+            "Cryptominer"
+        ]
+    },
+    {
+        "q": "Which group is 'Stone Panda'?",
+        "o": [
+            "APT10",
+            "APT29",
+            "APT28",
+            "APT33"
+        ]
+    },
+    {
+        "q": "What is 'Grey Energy'?",
+        "o": [
+            "Successor to BlackEnergy malware",
+            "A form of solar power",
+            "A fast network cable",
+            "A grey hat hacker group"
+        ]
+    },
+    {
+        "q": "Which implies 'Wiper' malware goal?",
+        "o": [
+            "Irrecoverable data destruction",
+            "Encrypting data for money",
+            "Stealing passwords quietly",
+            "Monitoring user keystrokes"
+        ]
+    },
+    {
+        "q": "What is 'NotPetya' primarily classified as?",
+        "o": [
+            "Destructive wiper disguised as ransomware",
+            "Standard criminal ransomware",
+            "Banking trojan",
+            "Adware application"
+        ]
+    },
+    {
+        "q": "Which is a 'Zero-Day Broker' market type?",
+        "o": [
+            "Grey Market",
+            "Super Market",
+            "Stock Market",
+            "Flea Market"
+        ]
+    },
+    {
+        "q": "What is 'Olympic Destroyer'?",
+        "o": [
+            "Wiper malware targeting 2018 Olympics",
+            "A sports tracking app",
+            "A ticket selling bot",
+            "A video streaming service"
+        ]
+    },
+    {
+        "q": "Which group is 'Sandworm'?",
+        "o": [
+            "Russian GRU unit 74455",
+            "Chinese PLA unit 61398",
+            "Iranian IRGC unit",
+            "North Korean RGB unit"
+        ]
+    },
+    {
+        "q": "What is 'HAFNIUM'?",
+        "o": [
+            "Group targeting Exchange Servers",
+            "A chemical element",
+            "A new processor type",
+            "A security software"
+        ]
+    },
+    {
+        "q": "Which implies 'Initial Access Broker' (IAB)?",
+        "o": [
+            "Specializes in breaching networks to sell access",
+            "Fixes broken internet connections",
+            "Buys stock shares for clients",
+            "Manages building door keys"
+        ]
+    },
+    {
+        "q": "What is 'Conti' known for?",
+        "o": [
+            "Ransomware-as-a-Service operations",
+            "Free antivirus distribution",
+            "Open source coding projects",
+            "Charitable donations"
+        ]
+    },
+    {
+        "q": "Which APT targeted 'Democratic National Committee' (DNC)?",
+        "o": [
+            "APT28 and APT29",
+            "APT1 and APT10",
+            "Lazarus and Kimsuky",
+            "Fin7 and Carbanak"
+        ]
+    },
+    {
+        "q": "What is 'EternalBlue'?",
+        "o": [
+            "SMB exploit used in Wannacry",
+            "A never ending blue screen",
+            "A permanent cloud storage",
+            "A secure wifi protocol"
+        ]
+    },
+    {
+        "q": "Which group is 'Wicked Panda'?",
+        "o": [
+            "APT41",
+            "APT28",
+            "APT34",
+            "Fin6"
+        ]
+    },
+    {
+        "q": "What is 'ProxyLogon'?",
+        "o": [
+            "Microsoft Exchange vulnerability chain",
+            "A web proxy server software",
+            "A firewall login portal",
+            "A VPN configuration setting"
+        ]
+    },
+    {
+        "q": "Which implies 'False Flag' in Olympic Destroyer?",
+        "o": [
+            "Forged artifacts to look like Lazarus (NK)",
+            "Used real North Korean code only",
+            "Signed with valid Microsoft certs",
+            "Came from US IP addresses"
+        ]
+    },
+    {
+        "q": "What is 'DarkSide'?",
+        "o": [
+            "Ransomware group behind Colonial Pipeline",
+            "A gloomy weather application",
+            "A black hat hacker conference",
+            "A secure operating system"
+        ]
+    },
+    {
+        "q": "Which implies 'Cyber Privateer'?",
+        "o": [
+            "Non-state actor state-tolerated/encouraged",
+            "Private security guard",
+            "Corporate internal auditor",
+            "Freelance web developer"
+        ]
+    },
+    {
+        "q": "What is 'REvil' (Sodinokibi)?",
+        "o": [
+            "Major RaaS group (defunct/rebranded)",
+            "A video game villain",
+            "A software testing tool",
+            "A new cryptocurrency"
+        ]
+    },
+    {
+        "q": "Which implies 'Big Game Hunting' in ransomware?",
+        "o": [
+            "Targeting large high-revenue orgs",
+            "Playing video games online",
+            "Hunting for software bugs",
+            "Phishing individual users"
+        ]
+    },
+    {
+        "q": "What is 'TrickBot'?",
+        "o": [
+            "Modular banking trojan used for access",
+            "A magic trick app",
+            "A chat bot for support",
+            "A card game simulator"
+        ]
+    },
+    {
+        "q": "Which implies 'Affiliate Model' in cybercrime?",
+        "o": [
+            "Renting attacks tools for cut of profits",
+            "Networking at conferences",
+            "Selling legitimate software",
+            "Referring friends to jobs"
+        ]
+    },
+    {
+        "q": "What is 'SOAR' in security operations?",
+        "o": [
+            "Security Orchestration, Automation and Response",
+            "System Operations and Recovery",
+            "Secure Online Access Router",
+            "Standard Operating Action Rule"
+        ]
+    },
+    {
+        "q": "Which implies 'Jump Box' usage?",
+        "o": [
+            "Intermediate server to mask origin",
+            "Physical box to jump over",
+            "Hardware router for wifi",
+            "Backup drive storage"
+        ]
+    },
+    {
+        "q": "What is 'Tor' exit node risk?",
+        "o": [
+            "Traffic can be monitored by node operator",
+            "Tor prevents all encryption",
+            "Node is always slow",
+            "Node deletes all data"
+        ]
+    },
+    {
+        "q": "Which phase involves 'Data Encryption' by ransomware?",
+        "o": [
+            "Actions on Objectives",
+            "Reconnaissance",
+            "Weaponization",
+            "Delivery"
+        ]
+    },
+    {
+        "q": "What is 'Bulletproof' hosting feature?",
+        "o": [
+            "Lenient content policy / Non-cooperation with police",
+            "Physical concrete walls",
+            "Fireproof server room",
+            "Waterproof cabling"
+        ]
+    },
+    {
+        "q": "Which implies 'Attribution' by 'Context'?",
+        "o": [
+            "Considering geopolitical motives and timing",
+            "Checking timestamp of files",
+            "Reading code comments",
+            "Looking at IP registry"
+        ]
+    },
+    {
+        "q": "What is 'Playbook' in SOAR?",
+        "o": [
+            "Defined workflow for incident response",
+            "A book of passwords",
+            "A list of employee names",
+            "A manual for the printer"
+        ]
+    },
+    {
+        "q": "Which implies 'Operator' vs 'Developer' distinction?",
+        "o": [
+            "Person running attack vs Person writing code",
+            "Person using computer vs Person fixing it",
+            "CEO vs CTO",
+            "Attacker vs Defender"
+        ]
+    },
+    {
+        "q": "What is 'OpSec' failure example?",
+        "o": [
+            "Attacker logging in from personal IP",
+            "Attacker using VPN",
+            "Attacker wiping logs",
+            "Attacker encrypting payloads"
+        ]
+    },
+    {
+        "q": "Which implies 'Multi-Stage' malware?",
+        "o": [
+            "Dropper downloads payload which downloads modules",
+            "Single huge exe file",
+            "Script that just deletes files",
+            "Virus that only spreads via USB"
+        ]
+    },
+    {
+        "q": "What is 'Fast-Flux' service network?",
+        "o": [
+            "Rapidly changing DNS records for botnet",
+            "High speed internet provider",
+            "Quick computer repair shop",
+            "Instant messaging app"
+        ]
+    },
+    {
+        "q": "Which is 'Detect' function in NIST CSF?",
+        "o": [
+            "Develop and implement appropriate activities to identify the occurrence of a cybersecurity event",
+            "Develop and implement appropriate safeguards to ensure delivery of critical services",
+            "Develop and implement appropriate activities to allow for recovery",
+            "Develop and implement appropriate activities to take action regarding a detected cybersecurity incident"
+        ]
+    },
+    {
+        "q": "What implies 'Respond' function in NIST CSF?",
+        "o": [
+            "Take action regarding a detected cybersecurity incident",
+            "Restore capabilities or services that were impaired",
+            "Identify the occurrence of a cybersecurity event",
+            "Protect critical infrastructure services"
+        ]
+    },
+    {
+        "q": "Which implies 'Recover' function in NIST CSF?",
+        "o": [
+            "Restore capabilities impaired by cybersecurity event",
+            "Detect cybersecurity events",
+            "Respond to cybersecurity incidents",
+            "Identify cybersecurity risks"
+        ]
+    },
+    {
+        "q": "What is 'Identify' function in NIST CSF?",
+        "o": [
+            "Develop organizational understanding to manage cybersecurity risk",
+            "Develop safeguards to ensure delivery of critical services",
+            "Develop activities to detect cybersecurity events",
+            "Develop activities to respond to cybersecurity incidents"
+        ]
+    },
+    {
+        "q": "Which implies 'Protect' function in NIST CSF?",
+        "o": [
+            "Implement safeguards to ensure delivery of critical services",
+            "Identify cybersecurity risks",
+            "Detect cybersecurity events",
+            "Recover from cybersecurity incidents"
+        ]
+    },
+    {
+        "q": "What is 'Cyber Threat Intelligence' (CTI) primary output?",
+        "o": [
+            "Actionable insights to reduce risk",
+            "More log files",
+            "Higher firewall bills",
+            "Slower network speed"
+        ]
+    },
+    {
+        "q": "Which implies 'Intelligence-Led' security?",
+        "o": [
+            "Defenses prioritized by likely threat behaviors",
+            "Buying the most expensive tools",
+            "Hiring the most people",
+            "Following only compliance checklists"
+        ]
+    },
+    {
+        "q": "What is 'Beaconing' pattern analysis?",
+        "o": [
+            "Detecting regular communication intervals",
+            "Looking for bright lights",
+            "Finding wifi hotspots",
+            "Tracking GPS signals"
+        ]
+    },
+    {
+        "q": "Which implies 'Jitter' in C2?",
+        "o": [
+            "Randomizing sleep time to evade detection",
+            "Nervousness of the attacker",
+            "Shaking of the mouse cursor",
+            "Packet loss on the network"
+        ]
+    },
+    {
+        "q": "What is 'Dead Drop Resolver'?",
+        "o": [
+            "Using public post (like Reddit) for C2 IP info",
+            "Leaving USB drive in park",
+            "Deleting email account",
+            "Crashing DNS server"
+        ]
+    },
+    {
+        "q": "Which implies 'Domain Generation Algorithm' detection?",
+        "o": [
+            "High entropy / nonsensical domain names",
+            "Domains ending in .com",
+            "Domains with real words",
+            "Domains hosted on AWS"
+        ]
+    },
+    {
+        "q": "What is 'Data Wiping'?",
+        "o": [
+            "Overwriting data to make it unrecoverable",
+            "Creating a backup copy",
+            "Compressing the folder",
+            "Encrypting the drive"
+        ]
+    },
+    {
+        "q": "Which implies 'Ransomware' Actions on Objectives?",
+        "o": [
+            "Encryption for Impact",
+            "Data Discovery",
+            "Network Scanning",
+            "Account Creation"
+        ]
+    },
+    {
+        "q": "What is 'Defacement' Actions on Objectives?",
+        "o": [
+            "Altering web content to embarrass victim",
+            "Stealing credit card database",
+            "Encrypting file server",
+            "Installing crypto miner"
+        ]
+    },
+    {
+        "q": "Which implies 'Resource Hijacking'?",
+        "o": [
+            "Using victim CPU for crypto mining",
+            "Stealing physical laptops",
+            "Taking over the email account",
+            "Redirecting website traffic"
+        ]
+    },
+    {
+        "q": "What is 'Disk Wiping' malware class?",
+        "o": [
+            "Wiper",
+            "Ransomware",
+            "Spyware",
+            "Adware"
+        ]
+    },
+    {
+        "q": "Which implies 'Internal Reconnaissance'?",
+        "o": [
+            "Mapping network shares / active directory",
+            "Scanning external IP range",
+            "Googling company name",
+            "Reading public new"
+        ]
+    },
+    {
+        "q": "What is 'Lateral Tool Transfer'?",
+        "o": [
+            "Copying hacking tools to other internal hosts",
+            "Emailing tools to friend",
+            "Downloading tools from internet",
+            "Buying tools on dark web"
+        ]
+    },
+    {
+        "q": "Which implies 'File Deletion' for defense evasion?",
+        "o": [
+            "Removing malware installer after execution",
+            "Deleting system32 folder",
+            "Uninstalling antivirus",
+            "Formatting the hard drive"
+        ]
+    },
+    {
+        "q": "What is 'DKOM' in rootkit technology?",
+        "o": [
+            "Direct Kernel Object Manipulation",
+            "Dynamic Key Order Management",
+            "Distributed Kernel Operation Module",
+            "Digital Key Obfuscation Method"
+        ]
+    },
+    {
+        "q": "Which implies 'UEFI Persistence'?",
+        "o": [
+            "Malware survives OS reinstallation",
+            "Malware hides in Master Boot Record",
+            "Malware infects the hard drive firmware",
+            "Malware patches the Windows kernel"
+        ]
+    },
+    {
+        "q": "What is 'LoJax'?",
+        "o": [
+            "First UEFI rootkit used in the wild",
+            "A low level javascript obfuscator",
+            "A unix loopback jumper",
+            "A log analysis json parser"
+        ]
+    },
+    {
+        "q": "Which instruction is used for 'Timing Attack' VM evasion?",
+        "o": [
+            "RDTSC",
+            "MOV",
+            "JMP",
+            "NOP"
+        ]
+    },
+    {
+        "q": "What implies 'MosaicRegressor'?",
+        "o": [
+            "UEFI bootkit found in wild",
+            "Image steganography tool",
+            "Pattern matching algorithm",
+            "Database regression tester"
+        ]
+    },
+    {
+        "q": "Which implies 'Hooking' the IDT?",
+        "o": [
+            "Intercepting Interrupt Descriptor Table",
+            "Phishing the Identity Team",
+            "Connecting cables to the switch",
+            "Debugging the application UI"
+        ]
+    },
+    {
+        "q": "What is 'SSDT Hooking'?",
+        "o": [
+            "Modifying System Service Descriptor Table",
+            "Scanning Solid State Drive Tracks",
+            "Saving Secure Data Transmission",
+            "Stopping System Shutdown Timer"
+        ]
+    },
+    {
+        "q": "Which implies 'Heaven's Gate' technique?",
+        "o": [
+            "Executing 64-bit code from 32-bit process",
+            "Bypassing firewall to cloud",
+            "Escaping sandbox to host",
+            "Unlocking admin account"
+        ]
+    },
+    {
+        "q": "What is 'Process Hollowing' entry point?",
+        "o": [
+            "AddressOfEntryPoint in PE header",
+            "EndOfFile marker",
+            "StackPointer registry",
+            "HeapAlloc function"
+        ]
+    },
+    {
+        "q": "Which implies 'AtomBombing' injection?",
+        "o": [
+            "Using Global Atom Tables for code injection",
+            "Crashing the nuclear power plant",
+            "Sending massive ping flood",
+            "Deleting all atoms in database"
+        ]
+    },
+    {
+        "q": "What is 'Propagate' injection?",
+        "o": [
+            "Subclassing window properties to inject code",
+            "Spreading worms via email",
+            "Copying files recursively",
+            "Broadcasting UDP packets"
+        ]
+    },
+    {
+        "q": "Which implies 'Gargoyle' technique?",
+        "o": [
+            "Memory scanning evasion via ROP to mask execution",
+            "Scaring users with popup",
+            "Watching network traffic silently",
+            "Turning stone into software"
+        ]
+    },
+    {
+        "q": "What is 'Module Stomping'?",
+        "o": [
+            "Overwriting loaded DLL code section",
+            "Stepping on the hardware module",
+            "Deleting software modules",
+            "Compressing module size"
+        ]
+    },
+    {
+        "q": "Which implies 'Return Oriented Programming' (ROP)?",
+        "o": [
+            "Chaining small code gadgets to bypass DEP",
+            "Programming asking for returns",
+            "Coding in reverse order",
+            "Writing recursive functions"
+        ]
+    },
+    {
+        "q": "What is 'ASLR' primarily mitigating?",
+        "o": [
+            "Buffer overflow reliable exploitation",
+            "SQL injection attacks",
+            "Weak password usage",
+            "Phishing emails"
+        ]
+    },
+    {
+        "q": "Which implies 'DEP' (Data Execution Prevention)?",
+        "o": [
+            "Marking memory pages as non-executable",
+            "Preventing data loss",
+            "Encrypting hard drive data",
+            "Filtering email attachments"
+        ]
+    },
+    {
+        "q": "What is 'Shim Engine' persistence?",
+        "o": [
+            "Using Application Compatibility Shims (sdb)",
+            "Installing a hardware shim",
+            "Modifying engine timing belt",
+            "Shaking the mouse input"
+        ]
+    },
+    {
+        "q": "Which technique uses 'WMI Event Subscription'?",
+        "o": [
+            "Persistence via Windows Management Instrumentation",
+            "Listening to wifi events",
+            "Subscribing to blog feed",
+            "Watching mouse movements"
+        ]
+    },
+    {
+        "q": "What is 'COM Hijacking'?",
+        "o": [
+            "Replacing Component Object Model objects",
+            "Hijacking the communication line",
+            "Redirecting the serial port",
+            "Stealing the .com domain"
+        ]
+    },
+    {
+        "q": "Which implies 'DLL Search Order Hijacking'?",
+        "o": [
+            "Placing malicious DLL in application directory",
+            "Searching for DLLs online",
+            "Ordering DLLs alphabetically",
+            "Deleting system DLLs"
+        ]
+    },
+    {
+        "q": "What is 'Phantom DLL' hijacking?",
+        "o": [
+            "Replacing missing DLLs intended for old versions",
+            "Creating invisible files",
+            "Injecting ghost processes",
+            "Haunting the system admin"
+        ]
+    },
+    {
+        "q": "Which implies 'Reflective DLL Injection'?",
+        "o": [
+            "Loading DLL from memory without using LoadLibrary",
+            "Loading DLL from a mirror site",
+            "Reflecting the screen content",
+            "Copying DLL to backup drive"
+        ]
+    },
+    {
+        "q": "What is 'Sideloading' typically abusing?",
+        "o": [
+            "Legitimate executable loading malicious DLL",
+            "Downloading apps from side store",
+            "Installing Linux on Windows",
+            "Moving monitor to the side"
+        ]
+    },
+    {
+        "q": "Which technique uses 'AppCert DLLs' registry?",
+        "o": [
+            "Injecting DLL into every process creating a window",
+            "Certifying application code",
+            "Validating apple certificates",
+            "Checking app performance"
+        ]
+    },
+    {
+        "q": "What is 'Image File Execution Options' (IFEO) abuse?",
+        "o": [
+            "Attaching debugger to launch malware instead of app",
+            "Editing image files directly",
+            "Changing desktop wallpaper",
+            "Selecting file icon options"
+        ]
+    },
+    {
+        "q": "Which implies 'Winlogon Helper DLL' persistence?",
+        "o": [
+            "Loading malware during user logon event",
+            "Helping user type password",
+            "Logging window events",
+            "Debugging login screen"
+        ]
+    },
+    {
+        "q": "What is 'Netsh Helper DLL' persistence?",
+        "o": [
+            "Malicious DLL loaded by netsh.exe",
+            "Helping set up network",
+            "Debugging network shell",
+            "Sharing internet connection"
+        ]
+    },
+    {
+        "q": "Which implies 'Time Provider' persistence?",
+        "o": [
+            "Malicious DLL loaded by W32Time service",
+            "Providing accurate NTP time",
+            "Setting the clock back",
+            "Timing the boot process"
+        ]
+    },
+    {
+        "q": "What is 'Print Monitor' persistence?",
+        "o": [
+            "Malicious DLL loaded by Spooler service",
+            "Watching for paper jams",
+            "Monitoring ink levels",
+            "Calibrating the printer"
+        ]
+    },
+    {
+        "q": "Which technique uses 'LSA Protection' bypass?",
+        "o": [
+            "Loading unsigned driver to patch kernel",
+            "Protecting Local Security Authority",
+            "Locking the server room door",
+            "Using strong passwords"
+        ]
+    },
+    {
+        "q": "What is 'PatchGuard' (KPP)?",
+        "o": [
+            "Kernel Patch Protection preventing hooking",
+            "Patching holes in walls",
+            "Guarding the ethernet cable",
+            "Protecting software updates"
+        ]
+    },
+    {
+        "q": "Which exploits 'Intel ME' (Management Engine)?",
+        "o": [
+            "Platinum group using AMT serial-over-LAN",
+            "Managing intel stocks",
+            "Overclocking the CPU",
+            "Cooling the processor"
+        ]
+    },
+    {
+        "q": "What is 'Shadow Hammer'?",
+        "o": [
+            "Supply chain attack on ASUS Live Update",
+            "A heavy blacksmith tool",
+            "A dark hacking group",
+            "A shadow copy wiper"
+        ]
+    },
+    {
+        "q": "Which implies 'Code Signing Certificate' theft?",
+        "o": [
+            "Using stolen certs to sign malware",
+            "Stealing physical paper certs",
+            "Breaking the SSL lock icon",
+            "Forging a diploma"
+        ]
+    },
+    {
+        "q": "What is 'Golden Ticket' lifetime typically?",
+        "o": [
+            "10 years (configurable)",
+            "1 hour",
+            "1 day",
+            "Forever"
+        ]
+    },
+    {
+        "q": "What allows 'Pegasus' to infect iPhones?",
+        "o": [
+            "Zero-click iMessage exploit chain (e.g. FORCEDENTRY)",
+            "Installing a fake App Store",
+            "Connecting to public wifi",
+            "User clicking a link in SMS"
+        ]
+    },
+    {
+        "q": "What is 'OEP' in reverse engineering?",
+        "o": [
+            "Original Entry Point",
+            "Optimized Execution Path",
+            "Open Encryption Protocol",
+            "Operating Environment Param"
+        ]
+    },
+    {
+        "q": "Which Volatility plugin detects injected code?",
+        "o": [
+            "malfind",
+            "pslist",
+            "cmdscan",
+            "sockscan"
+        ]
+    },
+    {
+        "q": "What is 'UPX' primarily used for?",
+        "o": [
+            "Packing executables to reduce size",
+            "Encrypting traffic via TLS",
+            "Scanning for viruses",
+            "Designing user interfaces"
+        ]
+    },
+    {
+        "q": "Which exploit targeted 'SatCom' traffic?",
+        "o": [
+            "Turla's Snake using satellite downlink IP",
+            "Stuxnet using centrifuge frequencies",
+            "Mirai using IoT cameras",
+            "Wannacry using SMB ports"
+        ]
+    },
+    {
+        "q": "What is 'VAD' in memory forensics?",
+        "o": [
+            "Virtual Address Descriptor",
+            "Video Audio Driver",
+            "Visual Application Design",
+            "Verified Access Domain"
+        ]
+    },
+    {
+        "q": "Which implies 'Heap Spraying' technique?",
+        "o": [
+            "Allocating code chunks to predict address",
+            "Cleaning the heap memory",
+            "Deleting random memory blocks",
+            "Compressing the heap size"
+        ]
+    },
+    {
+        "q": "What is 'Egg Hunting' in exploit dev?",
+        "o": [
+            "Scanning memory for a specific shellcode tag",
+            "Looking for Easter eggs in games",
+            "Searching for bugs in software",
+            "Detecting virtual machine"
+        ]
+    },
+    {
+        "q": "Which implies 'Tailored Access Operations' (TAO)?",
+        "o": [
+            "NSA unit for high-value target exploitation",
+            "Tailoring clothes for access",
+            "Chinese APT group name",
+            "Russian GRU department"
+        ]
+    },
+    {
+        "q": "What is 'Vault7' leak?",
+        "o": [
+            "CIA cyber tools released by WikiLeaks",
+            "NSA tools released by Shadow Brokers",
+            "A secure bank vault design",
+            "A new encryption standard"
+        ]
+    },
+    {
+        "q": "Which tool decompiles Android apps?",
+        "o": [
+            "JADX",
+            "Ghidra",
+            "IDA Pro",
+            "OllyDbg"
+        ]
+    },
+    {
+        "q": "What is 'Magecart' attack type?",
+        "o": [
+            "Digital credit card skimming (Formjacking)",
+            "Adding items to shopping cart",
+            "Physical skimming at ATM",
+            "DDoS on retail website"
+        ]
+    },
+    {
+        "q": "Which implies 'Supply Chain' hardware interdiction?",
+        "o": [
+            "Intercepting shipping to plant implant",
+            "Breaking the hardware in transit",
+            "Stealing the package",
+            "Delayed delivery of server"
+        ]
+    },
+    {
+        "q": "What is 'Cottonmouth' (NSA tool) used for?",
+        "o": [
+            "USB hardware implant for RF bridge",
+            "A venomous snake bite",
+            "A cotton harvesting machine",
+            "A mouth guard for boxing"
+        ]
+    },
+    {
+        "q": "Which Volatility plugin lists processes?",
+        "o": [
+            "pslist / psscan",
+            "dlllist",
+            "hivelist",
+            "modules"
+        ]
+    },
+    {
+        "q": "What implies 'Unlinking' in heap exploit?",
+        "o": [
+            "Modifying pointers to overwrite memory",
+            "Removing a file link",
+            "Disconnecting network cable",
+            "Breaking a URL link"
+        ]
+    },
+    {
+        "q": "Which is 'Baseband' processor risk?",
+        "o": [
+            "Vulnerabilities in cellular radio firmware",
+            "Slow wifi connection speed",
+            "Overheating the phone CPU",
+            "Draining the battery fast"
+        ]
+    },
+    {
+        "q": "What is 'Jailbreak' primarily doing?",
+        "o": [
+            "Disabling OS security restrictions (Rooting)",
+            "Breaking out of physical prison",
+            "Crashing the application",
+            "Resetting the phone to factory"
+        ]
+    },
+    {
+        "q": "Which exploit uses 'Use-After-Free'?",
+        "o": [
+            "Accessing memory after it is freed",
+            "Using software after trial ends",
+            "Using free wifi hotspots",
+            "Freeing up disk space"
+        ]
+    },
+    {
+        "q": "What is 'ROP Gadget'?",
+        "o": [
+            "Small instruction sequence ending in ret",
+            "A physical tech gadget",
+            "A software plugin tool",
+            "A robotic arm part"
+        ]
+    },
+    {
+        "q": "Which implies 'Format String' vulnerability?",
+        "o": [
+            "Unchecked user input in printf function",
+            "Formatting the hard drive string",
+            "Deleting a text string",
+            "Encrypting a password string"
+        ]
+    },
+    {
+        "q": "What is 'Integer Overflow' result?",
+        "o": [
+            "Value wrapping around to negative/small",
+            "Creating a very large number",
+            "Crashing the calculator app",
+            "Burning the CPU chip"
+        ]
+    },
+    {
+        "q": "Which implies 'Race Condition' (TOCTOU)?",
+        "o": [
+            "Time of Check to Time of Use gap",
+            "Running a race on the server",
+            "Fast network packet routing",
+            "Overclocking the processor"
+        ]
+    },
+    {
+        "q": "What is 'Symbolic Execution'?",
+        "o": [
+            "Analyzing program with symbolic values",
+            "Running a program with icons",
+            "executing the logo file",
+            "Validating symbols in text"
+        ]
+    },
+    {
+        "q": "Which tool is for 'Fuzzing'?",
+        "o": [
+            "AFL (American Fuzzy Lop)",
+            "Nmap",
+            "Wireshark",
+            "Metasploit"
+        ]
+    },
+    {
+        "q": "What is 'Concolic Testing'?",
+        "o": [
+            "Hybrid concrete and symbolic execution",
+            "Testing concrete strength",
+            "Checking alcoholic content",
+            "Validating console logs"
+        ]
+    },
+    {
+        "q": "Which implies 'Control Flow Graph' (CFG)?",
+        "o": [
+            "Representation of paths in program",
+            "Graph of network traffic flow",
+            "Chart of project management",
+            "Diagram of office layout"
+        ]
+    },
+    {
+        "q": "What is 'Tainting' analysis?",
+        "o": [
+            "Tracking flow of untrusted input",
+            "Coloring the code lines",
+            "Corrupting the database",
+            "Marking files as bad"
+        ]
+    },
+    {
+        "q": "Which implies 'Side-Channel' attack?",
+        "o": [
+            "Leaking info via power/time/sound",
+            "Attacking from the side of building",
+            "Using a side entrance door",
+            "Speaking in a side conversation"
+        ]
+    },
+    {
+        "q": "What is 'Spectre' vulnerability type?",
+        "o": [
+            "Speculative execution side-channel",
+            "Ghost in the machine",
+            "Application logic bug",
+            "Network protocol flaw"
+        ]
+    },
+    {
+        "q": "Which implies 'Meltdown' vulnerability?",
+        "o": [
+            "Rogue data cache load",
+            "CPU overheating melting",
+            "Server room fire",
+            "System crash panic"
+        ]
+    },
+    {
+        "q": "What is 'Rowhammer' attack?",
+        "o": [
+            "Flipping bits in RAM via rapid access",
+            "Hitting the server with hammer",
+            "Breaking the database rows",
+            "Sorting excel rows fast"
+        ]
+    },
+    {
+        "q": "Which implies 'Cold Boot' attack?",
+        "o": [
+            "Recovering keys from RAM after reboot",
+            "Booting computer in freezer",
+            "Starting system in winter",
+            "Installing cooling fan"
+        ]
+    },
+    {
+        "q": "What is 'DMA' attack risk?",
+        "o": [
+            "Direct Memory Access bypassing CPU",
+            "Digital Media Advertising spam",
+            "Direct Message Authentication",
+            "Data Management Admin"
+        ]
+    },
+    {
+        "q": "Which implies 'Evil Maid' attack?",
+        "o": [
+            "Physical access to device in hotel room",
+            "A malicious cleaning script",
+            "A virus named Maid",
+            "A bad housekeeping service"
+        ]
+    },
+    {
+        "q": "What is 'Shor's Algorithm' threat?",
+        "o": [
+            "Breaking RSA/ECC using quantum computer",
+            "Sorting database very fast",
+            "Encrypting data twice securely",
+            "Generating random numbers"
+        ]
+    },
+    {
+        "q": "Which implies 'DeepFake' risk to intel?",
+        "o": [
+            "AI-generated audio/video impersonation",
+            "Fake news articles text",
+            "Photoshop edit of image",
+            "False email sender name"
+        ]
+    },
+    {
+        "q": "What is 'Padding Oracle' attack?",
+        "o": [
+            "Decryption via error messages about padding",
+            "Predicting the future oracle",
+            "Adding extra data to packet",
+            "Validating form input padding"
+        ]
+    },
+    {
+        "q": "Which implies 'Hardware Trojan'?",
+        "o": [
+            "Malicious modification of integrated circuit",
+            "Software virus in BIOS",
+            "Phishing email attachment",
+            "Weak password policy"
+        ]
+    },
+    {
+        "q": "What is 'Differential Power Analysis' (DPA)?",
+        "o": [
+            "Extracting keys via power consumption traces",
+            "Analyzing electricity bill costs",
+            "Comparing high voltage lines",
+            "Measuring battery life drain"
+        ]
+    },
+    {
+        "q": "Which implies 'Adversarial Machine Learning'?",
+        "o": [
+            "Trickling AI model into wrong classification",
+            "Teaching AI to be evil",
+            "Robot taking over the world",
+            "AI writing better code"
+        ]
+    },
+    {
+        "q": "What is 'Grover's Algorithm' impact?",
+        "o": [
+            "Reducing brute force search time (hashing)",
+            "Breaking public key crypto instantly",
+            "Sorting list in constant time",
+            "Compressing files effectively"
+        ]
+    },
+    {
+        "q": "Which implies 'Model Inversion' attack?",
+        "o": [
+            "Reconstructing training data from AI model",
+            "Turning the server upside down",
+            "Reversing the database schema",
+            "Inverting the image colors"
+        ]
+    },
+    {
+        "q": "What is 'Data Poisoning' in AI?",
+        "o": [
+            "Corrupting training data set",
+            "Deleting the database",
+            "Encrypting the hard drive",
+            "Spamming the email inbox"
+        ]
+    },
+    {
+        "q": "Which implies 'Post-Quantum Cryptography'?",
+        "o": [
+            "Algorithms resistant to quantum attacks",
+            "Encryption used in the future",
+            "Crypto for time travel",
+            "Hardware based encryption"
+        ]
+    },
+    {
+        "q": "What is 'Lattice-Based' cryptography?",
+        "o": [
+            "A promised post-quantum approach",
+            "Encryption using grid paper",
+            "Securing garden lattice fence",
+            "Network topology mapping"
+        ]
+    },
+    {
+        "q": "Which implies 'Homomorphic Encryption'?",
+        "o": [
+            "Computing on encrypted data without decrypting",
+            "Encrypting data twice same key",
+            "Hiding data in images",
+            "Compressing data securely"
+        ]
+    },
+    {
+        "q": "What is 'Blockchain' utility in intel?",
+        "o": [
+            "Immutable record of IoC sharing",
+            "Mining coins for profit",
+            "Speeding up the internet",
+            "Replacing all databases"
+        ]
+    },
+    {
+        "q": "Which implies 'Smart Contract' vulnerability?",
+        "o": [
+            "Logic bug in decentralized code (DAO hack)",
+            "Paper contract error",
+            "Legal typo in court",
+            "Weak password on PDF"
+        ]
+    },
+    {
+        "q": "What is '51% Attack'?",
+        "o": [
+            "Taking control of blockchain consensus",
+            "Winning the election vote",
+            "Filling disk to 51%",
+            "Overclocking CPU to 51%"
+        ]
+    },
+    {
+        "q": "Which implies 'Cryptojacking'?",
+        "o": [
+            "Unauthorized mining on victim hardware",
+            "Stealing the physical crypto wallet",
+            "Phishing for bank passwords",
+            "Encrypting files for ransom"
+        ]
+    },
+    {
+        "q": "What is 'Dusting Attack' in crypto?",
+        "o": [
+            "Sending tiny amounts to track wallet owner",
+            "Cleaning the server fan dust",
+            "Deleting small files",
+            "Blocking spam emails"
+        ]
+    },
+    {
+        "q": "Which implies 'Sybil Attack'?",
+        "o": [
+            "Creating multiple fake identities to gain influence",
+            "Attacking the hospital database",
+            "Phishing the HR department",
+            "Flooding the network switch"
+        ]
+    },
+    {
+        "q": "What is 'Eclipse Attack'?",
+        "o": [
+            "Isolating a node in peer-to-peer network",
+            "Blocking the sun with moon",
+            "Covering the security camera",
+            "Turning off the monitor"
+        ]
+    },
+    {
+        "q": "Which implies 'Automated Fuzzing' with AI?",
+        "o": [
+            "Using ML to find deeper code bugs",
+            "Robot pressing random keys",
+            "Scanning for open ports",
+            "Checking spelling errors"
+        ]
+    },
+    {
+        "q": "What is 'GAN' (Generative Adversarial Network)?",
+        "o": [
+            "AI architecture for creating realistic fakes",
+            "Global Area Network protocol",
+            "General Access Node device",
+            "Group Admin Name policy"
+        ]
+    },
+    {
+        "q": "Which implies 'Model Extraction'?",
+        "o": [
+            "Stealing the AI model parameters",
+            "Unzipping a file archive",
+            "Taking photo of the screen",
+            "Downloading a dataset"
+        ]
+    },
+    {
+        "q": "What is 'Prompt Injection' in LLMs?",
+        "o": [
+            "Manipulating input to bypass AI safety",
+            "Typing fast on keyboard",
+            "Injecting SQL into database",
+            "Adding a prompt to CLI"
+        ]
+    },
+    {
+        "q": "Which implies 'Social Engineering' via DeepFake?",
+        "o": [
+            "Voice/Video impersonation of CEO",
+            "Phishing email text",
+            "Shoulder surfing password",
+            "Dumpster diving documents"
+        ]
+    },
+    {
+        "q": "What is 'Exploit Development' phase?",
+        "o": [
+            "Creating reliable code to trigger bug",
+            "Finding the vulnerability",
+            "Patching the software",
+            "Installing the OS"
+        ]
+    },
+    {
+        "q": "Which implies 'Heap Feng Shui'?",
+        "o": [
+            "Arranging heap layout for exploitation",
+            "Cleaning the office desk",
+            "Organizing files by size",
+            "Decorating the server room"
+        ]
+    },
+    {
+        "q": "What is 'Address Space Layout Randomization' bypass?",
+        "o": [
+            "Using info leak to find base address",
+            "Guessing the password",
+            "Brute forcing the port",
+            "Disabling the firewall"
+        ]
+    },
+    {
+        "q": "Which implies 'Stack Canary' bypass?",
+        "o": [
+            "Leaking cookie value or overwriting SEH",
+            "Killing the bird",
+            "Turning off the alarm",
+            "Unplugging the server"
+        ]
+    },
+    {
+        "q": "What is 'SafeSEH'?",
+        "o": [
+            "Validation of exception handler chain",
+            "Safety manual for employees",
+            "Secure encrypted hard drive",
+            "Safe search engine mode"
+        ]
+    },
+    {
+        "q": "Which implies 'CFG' (Control Flow Guard) bypass?",
+        "o": [
+            "Corrupting the bitmap or indirect calls",
+            "Breaking the flow chart",
+            "Stopping the traffic light",
+            "Unplugging the router"
+        ]
+    },
+    {
+        "q": "What is 'ACG' (Arbitrary Code Guard)?",
+        "o": [
+            "Prevents generating dynamic code in memory",
+            "Guards the building entrance",
+            "Protects arbitrary files",
+            "Encrypts code on disk"
+        ]
+    },
+    {
+        "q": "Which implies 'CIG' (Code Integrity Guard)?",
+        "o": [
+            "Only trusted signed code can load",
+            "Checking code for bugs",
+            "Verifying file size",
+            "Backing up code daily"
+        ]
+    },
+    {
+        "q": "What is 'Hypervisor-Protected Code Integrity' (HVCI)?",
+        "o": [
+            "Virtualization based security for kernel",
+            "Protecting the hypervisor password",
+            "Virtual machine backup",
+            "Cloud firewall rules"
+        ]
+    },
+    {
+        "q": "Which implies 'Kernel DMA Protection'?",
+        "o": [
+            "IOMMU isolation for peripherals",
+            "Locking the computer case",
+            "Disabling USB ports software",
+            "Encrypting the RAM"
+        ]
+    },
+    {
+        "q": "What is 'System Guard' (Windows)?",
+        "o": [
+            "Boot integrity protection features",
+            "Anti-virus software name",
+            "Firewall rule set",
+            "Physical security guard"
+        ]
+    }
+]

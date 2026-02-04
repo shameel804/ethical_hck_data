@@ -1,0 +1,4556 @@
+[
+    {
+        "q": "What does IP stand for in TCP/IP?",
+        "o": [
+            "Internet Protocol",
+            "Internal Protocol",
+            "Interface Protocol",
+            "Intranet Protocol"
+        ]
+    },
+    {
+        "q": "What does TCP stand for?",
+        "o": [
+            "Transmission Control Protocol",
+            "Transfer Control Protocol",
+            "Transport Control Protocol",
+            "Terminal Control Protocol"
+        ]
+    },
+    {
+        "q": "Which layer of the OSI model does IP operate at?",
+        "o": [
+            "Network layer",
+            "Transport layer",
+            "Data link layer",
+            "Session layer"
+        ]
+    },
+    {
+        "q": "Which layer of the OSI model does TCP operate at?",
+        "o": [
+            "Transport layer",
+            "Network layer",
+            "Application layer",
+            "Session layer"
+        ]
+    },
+    {
+        "q": "What is the purpose of an IP address?",
+        "o": [
+            "Identify devices on a network",
+            "Encrypt network traffic",
+            "Store website content",
+            "Process application data"
+        ]
+    },
+    {
+        "q": "How many bits are in an IPv4 address?",
+        "o": [
+            "32 bits",
+            "64 bits",
+            "128 bits",
+            "16 bits"
+        ]
+    },
+    {
+        "q": "How many bits are in an IPv6 address?",
+        "o": [
+            "128 bits",
+            "64 bits",
+            "32 bits",
+            "256 bits"
+        ]
+    },
+    {
+        "q": "What is IP spoofing?",
+        "o": [
+            "Forging the source IP address in packets",
+            "Encrypting IP packets for security",
+            "Compressing IP headers for speed",
+            "Monitoring IP traffic on networks"
+        ]
+    },
+    {
+        "q": "Which protocol provides reliable data delivery?",
+        "o": [
+            "TCP",
+            "UDP",
+            "ICMP",
+            "ARP"
+        ]
+    },
+    {
+        "q": "What is the three-way handshake used for?",
+        "o": [
+            "Establishing TCP connections",
+            "Encrypting network packets",
+            "Routing IP datagrams",
+            "Resolving MAC addresses"
+        ]
+    },
+    {
+        "q": "What are the three steps of the TCP handshake?",
+        "o": [
+            "SYN, SYN-ACK, ACK",
+            "ACK, SYN, FIN",
+            "FIN, ACK, RST",
+            "PSH, URG, ACK"
+        ]
+    },
+    {
+        "q": "What is a SYN flood attack?",
+        "o": [
+            "Sending many SYN requests without completing handshakes",
+            "Intercepting SYN packets during transmission",
+            "Modifying SYN packets to contain malware",
+            "Blocking all SYN packets at the firewall"
+        ]
+    },
+    {
+        "q": "What port number does HTTP typically use?",
+        "o": [
+            "80",
+            "443",
+            "21",
+            "25"
+        ]
+    },
+    {
+        "q": "What port number does HTTPS typically use?",
+        "o": [
+            "443",
+            "80",
+            "8080",
+            "22"
+        ]
+    },
+    {
+        "q": "What is the purpose of a port number?",
+        "o": [
+            "Identify a specific service or application",
+            "Encrypt data during transmission",
+            "Route packets between networks",
+            "Store IP address information"
+        ]
+    },
+    {
+        "q": "What is the range of well-known ports?",
+        "o": [
+            "0 to 1023",
+            "1024 to 49151",
+            "49152 to 65535",
+            "0 to 65535"
+        ]
+    },
+    {
+        "q": "What does ICMP stand for?",
+        "o": [
+            "Internet Control Message Protocol",
+            "Internet Connection Message Protocol",
+            "Internal Control Message Protocol",
+            "Interface Control Message Protocol"
+        ]
+    },
+    {
+        "q": "What is the ping command used for?",
+        "o": [
+            "Testing network connectivity",
+            "Transferring files securely",
+            "Scanning open ports",
+            "Monitoring bandwidth usage"
+        ]
+    },
+    {
+        "q": "Which protocol does ping use?",
+        "o": [
+            "ICMP",
+            "TCP",
+            "UDP",
+            "ARP"
+        ]
+    },
+    {
+        "q": "What is a packet in network communication?",
+        "o": [
+            "A unit of data transmitted over a network",
+            "A type of network security device",
+            "A method for encrypting traffic",
+            "A hardware component in routers"
+        ]
+    },
+    {
+        "q": "What information is contained in an IP header?",
+        "o": [
+            "Source and destination IP addresses",
+            "Username and password",
+            "File names and sizes",
+            "Website content only"
+        ]
+    },
+    {
+        "q": "What is the default TTL value in Windows?",
+        "o": [
+            "128",
+            "64",
+            "255",
+            "32"
+        ]
+    },
+    {
+        "q": "What does TTL stand for in IP packets?",
+        "o": [
+            "Time To Live",
+            "Total Transfer Length",
+            "Transport Transfer Level",
+            "Target Transmission Limit"
+        ]
+    },
+    {
+        "q": "What happens when TTL reaches zero?",
+        "o": [
+            "The packet is discarded",
+            "The packet is encrypted",
+            "The packet is duplicated",
+            "The packet is compressed"
+        ]
+    },
+    {
+        "q": "What is a TCP sequence number used for?",
+        "o": [
+            "Tracking the order of data segments",
+            "Encrypting the packet payload",
+            "Identifying the destination port",
+            "Storing the source IP address"
+        ]
+    },
+    {
+        "q": "What is TCP session hijacking?",
+        "o": [
+            "Taking over an established TCP connection",
+            "Blocking all TCP traffic on a network",
+            "Encrypting TCP packets during transit",
+            "Creating multiple TCP connections"
+        ]
+    },
+    {
+        "q": "What is the purpose of the ACK flag in TCP?",
+        "o": [
+            "Acknowledge received data",
+            "Request a new connection",
+            "Close an active session",
+            "Send urgent data first"
+        ]
+    },
+    {
+        "q": "What is the purpose of the FIN flag in TCP?",
+        "o": [
+            "Signal connection termination",
+            "Request priority handling",
+            "Acknowledge data receipt",
+            "Reset the connection"
+        ]
+    },
+    {
+        "q": "What is the purpose of the RST flag in TCP?",
+        "o": [
+            "Immediately terminate a connection",
+            "Request data retransmission",
+            "Enable encrypted communication",
+            "Synchronize sequence numbers"
+        ]
+    },
+    {
+        "q": "What is IP fragmentation?",
+        "o": [
+            "Splitting large packets into smaller pieces",
+            "Combining small packets into one",
+            "Encrypting packets for security",
+            "Compressing packet headers"
+        ]
+    },
+    {
+        "q": "Why is IP fragmentation necessary?",
+        "o": [
+            "Packets exceed the MTU size",
+            "Packets need encryption",
+            "Packets require compression",
+            "Packets must be duplicated"
+        ]
+    },
+    {
+        "q": "What does MTU stand for?",
+        "o": [
+            "Maximum Transmission Unit",
+            "Minimum Transfer Unit",
+            "Maximum Transfer Utility",
+            "Multiple Transmission Unit"
+        ]
+    },
+    {
+        "q": "What is the standard MTU for Ethernet?",
+        "o": [
+            "1500 bytes",
+            "1024 bytes",
+            "2048 bytes",
+            "512 bytes"
+        ]
+    },
+    {
+        "q": "What is a source IP address?",
+        "o": [
+            "The IP address of the sender",
+            "The IP address of the receiver",
+            "The IP address of the router",
+            "The IP address of the server"
+        ]
+    },
+    {
+        "q": "What is a destination IP address?",
+        "o": [
+            "The IP address of the receiver",
+            "The IP address of the sender",
+            "The IP address of the gateway",
+            "The IP address of the switch"
+        ]
+    },
+    {
+        "q": "What is the loopback IP address in IPv4?",
+        "o": [
+            "127.0.0.1",
+            "192.168.0.1",
+            "10.0.0.1",
+            "0.0.0.0"
+        ]
+    },
+    {
+        "q": "What is the broadcast address used for?",
+        "o": [
+            "Sending data to all hosts on a network",
+            "Sending data to a single host",
+            "Encrypting network communications",
+            "Blocking malicious traffic"
+        ]
+    },
+    {
+        "q": "Which class does 192.168.x.x belong to?",
+        "o": [
+            "Class C",
+            "Class A",
+            "Class B",
+            "Class D"
+        ]
+    },
+    {
+        "q": "What is a private IP address?",
+        "o": [
+            "An address not routable on the internet",
+            "An address assigned by ICANN",
+            "An address used only for servers",
+            "An address encrypted for security"
+        ]
+    },
+    {
+        "q": "What is NAT used for?",
+        "o": [
+            "Translating private IPs to public IPs",
+            "Encrypting network packets",
+            "Filtering malicious traffic",
+            "Monitoring network bandwidth"
+        ]
+    },
+    {
+        "q": "What does NAT stand for?",
+        "o": [
+            "Network Address Translation",
+            "Network Access Technology",
+            "Network Authentication Token",
+            "Network Application Transfer"
+        ]
+    },
+    {
+        "q": "What is a subnet mask used for?",
+        "o": [
+            "Dividing IP addresses into network and host",
+            "Encrypting IP packets",
+            "Routing packets between countries",
+            "Storing DNS information"
+        ]
+    },
+    {
+        "q": "What is the default subnet mask for Class C?",
+        "o": [
+            "255.255.255.0",
+            "255.255.0.0",
+            "255.0.0.0",
+            "255.255.255.255"
+        ]
+    },
+    {
+        "q": "What protocol resolves IP addresses to MAC addresses?",
+        "o": [
+            "ARP",
+            "DNS",
+            "DHCP",
+            "ICMP"
+        ]
+    },
+    {
+        "q": "What does ARP stand for?",
+        "o": [
+            "Address Resolution Protocol",
+            "Advanced Routing Protocol",
+            "Application Relay Protocol",
+            "Automatic Response Protocol"
+        ]
+    },
+    {
+        "q": "What is a MAC address?",
+        "o": [
+            "A hardware address for network interfaces",
+            "A software address for applications",
+            "An encryption key for packets",
+            "A routing identifier for routers"
+        ]
+    },
+    {
+        "q": "What is the purpose of DHCP?",
+        "o": [
+            "Automatically assign IP addresses",
+            "Encrypt network traffic",
+            "Resolve domain names",
+            "Monitor network security"
+        ]
+    },
+    {
+        "q": "What does DHCP stand for?",
+        "o": [
+            "Dynamic Host Configuration Protocol",
+            "Dynamic Host Control Protocol",
+            "Direct Host Configuration Protocol",
+            "Default Host Control Protocol"
+        ]
+    },
+    {
+        "q": "Which TCP flag initiates a connection?",
+        "o": [
+            "SYN",
+            "ACK",
+            "FIN",
+            "RST"
+        ]
+    },
+    {
+        "q": "What is a half-open connection?",
+        "o": [
+            "A connection with incomplete handshake",
+            "A fully established connection",
+            "A connection using encryption",
+            "A connection between two routers"
+        ]
+    },
+    {
+        "q": "What is the purpose of checksums in TCP?",
+        "o": [
+            "Verify data integrity",
+            "Encrypt packet contents",
+            "Route packets correctly",
+            "Store sequence numbers"
+        ]
+    },
+    {
+        "q": "What is a socket in networking?",
+        "o": [
+            "A combination of IP address and port",
+            "A type of network cable",
+            "A hardware encryption device",
+            "A wireless access point"
+        ]
+    },
+    {
+        "q": "What is the ephemeral port range?",
+        "o": [
+            "49152 to 65535",
+            "0 to 1023",
+            "1024 to 49151",
+            "0 to 65535"
+        ]
+    },
+    {
+        "q": "What is connection-oriented communication?",
+        "o": [
+            "Establishing a session before sending data",
+            "Sending data without establishing a session",
+            "Encrypting all network traffic",
+            "Broadcasting data to all hosts"
+        ]
+    },
+    {
+        "q": "Which protocol is connectionless?",
+        "o": [
+            "UDP",
+            "TCP",
+            "HTTP",
+            "FTP"
+        ]
+    },
+    {
+        "q": "What is the main advantage of TCP over UDP?",
+        "o": [
+            "Guaranteed delivery of data",
+            "Faster transmission speed",
+            "Lower network overhead",
+            "Better for streaming media"
+        ]
+    },
+    {
+        "q": "What is the main advantage of UDP over TCP?",
+        "o": [
+            "Lower latency and overhead",
+            "Guaranteed data delivery",
+            "Automatic error correction",
+            "Built-in encryption support"
+        ]
+    },
+    {
+        "q": "What is flow control in TCP?",
+        "o": [
+            "Managing data transmission rate",
+            "Encrypting packet headers",
+            "Routing between networks",
+            "Authenticating users"
+        ]
+    },
+    {
+        "q": "What is congestion control in TCP?",
+        "o": [
+            "Preventing network overload",
+            "Encrypting network traffic",
+            "Filtering malicious packets",
+            "Balancing server loads"
+        ]
+    },
+    {
+        "q": "What is the TCP window size?",
+        "o": [
+            "Amount of data sent before acknowledgment",
+            "Maximum packet size allowed",
+            "Time before connection timeout",
+            "Number of retransmission attempts"
+        ]
+    },
+    {
+        "q": "What is the purpose of the URG flag in TCP?",
+        "o": [
+            "Indicate urgent data in the segment",
+            "Request connection termination",
+            "Acknowledge received packets",
+            "Synchronize sequence numbers"
+        ]
+    },
+    {
+        "q": "What is the purpose of the PSH flag in TCP?",
+        "o": [
+            "Push data to the application immediately",
+            "Request priority routing",
+            "Encrypt the packet payload",
+            "Reset the connection state"
+        ]
+    },
+    {
+        "q": "What is a TCP segment?",
+        "o": [
+            "A unit of data at the transport layer",
+            "A packet at the network layer",
+            "A frame at the data link layer",
+            "A bit at the physical layer"
+        ]
+    },
+    {
+        "q": "What is an IP datagram?",
+        "o": [
+            "A data unit at the network layer",
+            "A segment at the transport layer",
+            "A frame at the data link layer",
+            "A packet at the application layer"
+        ]
+    },
+    {
+        "q": "What is packet sniffing?",
+        "o": [
+            "Capturing and analyzing network traffic",
+            "Encrypting packets during transit",
+            "Blocking malicious network packets",
+            "Compressing packets for speed"
+        ]
+    },
+    {
+        "q": "What tool is commonly used for packet sniffing?",
+        "o": [
+            "Wireshark",
+            "Notepad",
+            "Excel",
+            "Word"
+        ]
+    },
+    {
+        "q": "What is a network protocol?",
+        "o": [
+            "Rules for communication between devices",
+            "Hardware for connecting networks",
+            "Software for creating websites",
+            "Cable for transmitting data"
+        ]
+    },
+    {
+        "q": "What is encapsulation in networking?",
+        "o": [
+            "Adding headers as data moves down layers",
+            "Removing headers from network packets",
+            "Encrypting data for transmission",
+            "Compressing packets for speed"
+        ]
+    },
+    {
+        "q": "What is decapsulation in networking?",
+        "o": [
+            "Removing headers as data moves up layers",
+            "Adding headers to network packets",
+            "Decrypting received data",
+            "Decompressing packet contents"
+        ]
+    },
+    {
+        "q": "What is the OSI model?",
+        "o": [
+            "A framework for network communication",
+            "A type of encryption algorithm",
+            "A network security protocol",
+            "A hardware component standard"
+        ]
+    },
+    {
+        "q": "How many layers does the OSI model have?",
+        "o": [
+            "Seven layers",
+            "Five layers",
+            "Four layers",
+            "Six layers"
+        ]
+    },
+    {
+        "q": "How many layers does the TCP/IP model have?",
+        "o": [
+            "Four layers",
+            "Seven layers",
+            "Five layers",
+            "Six layers"
+        ]
+    },
+    {
+        "q": "What is a gateway in networking?",
+        "o": [
+            "A device connecting different networks",
+            "A software for monitoring traffic",
+            "A cable type for fast connections",
+            "A protocol for secure transmission"
+        ]
+    },
+    {
+        "q": "What is a router used for?",
+        "o": [
+            "Forwarding packets between networks",
+            "Connecting devices in a single network",
+            "Storing website content",
+            "Encrypting network traffic"
+        ]
+    },
+    {
+        "q": "What is a switch used for?",
+        "o": [
+            "Connecting devices within a network",
+            "Routing packets between networks",
+            "Filtering malicious traffic",
+            "Encrypting data transmissions"
+        ]
+    },
+    {
+        "q": "What is a firewall?",
+        "o": [
+            "A security device filtering traffic",
+            "A device for routing packets",
+            "A protocol for encryption",
+            "A cable for connecting networks"
+        ]
+    },
+    {
+        "q": "What layer does a firewall typically operate at?",
+        "o": [
+            "Network and transport layers",
+            "Physical layer only",
+            "Data link layer only",
+            "Application layer only"
+        ]
+    },
+    {
+        "q": "What is a stateful firewall?",
+        "o": [
+            "Tracks connection states for filtering",
+            "Filters based on IP addresses only",
+            "Only allows encrypted traffic",
+            "Blocks all incoming connections"
+        ]
+    },
+    {
+        "q": "What is a stateless firewall?",
+        "o": [
+            "Filters packets without tracking sessions",
+            "Tracks all connection states",
+            "Only works with TCP traffic",
+            "Requires user authentication"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPsec?",
+        "o": [
+            "Secure IP communications with encryption",
+            "Speed up IP packet transmission",
+            "Compress IP packets for efficiency",
+            "Route packets between networks"
+        ]
+    },
+    {
+        "q": "What does IPsec stand for?",
+        "o": [
+            "Internet Protocol Security",
+            "Internal Protocol Security",
+            "Interface Protocol Security",
+            "Intranet Protocol Security"
+        ]
+    },
+    {
+        "q": "What is a VPN?",
+        "o": [
+            "A secure tunnel over public networks",
+            "A type of network cable",
+            "A hardware firewall device",
+            "A protocol for email"
+        ]
+    },
+    {
+        "q": "What does VPN stand for?",
+        "o": [
+            "Virtual Private Network",
+            "Virtual Public Network",
+            "Variable Private Network",
+            "Verified Private Network"
+        ]
+    },
+    {
+        "q": "What is TCP retransmission?",
+        "o": [
+            "Resending packets that were not acknowledged",
+            "Sending duplicate packets for redundancy",
+            "Encrypting packets before transmission",
+            "Compressing packets to save bandwidth"
+        ]
+    },
+    {
+        "q": "What triggers TCP retransmission?",
+        "o": [
+            "Missing acknowledgment after timeout",
+            "Receiving duplicate packets",
+            "Network congestion detected",
+            "User request for resend"
+        ]
+    },
+    {
+        "q": "What is a denial of service attack?",
+        "o": [
+            "Overwhelming a system to make it unavailable",
+            "Stealing data from a network",
+            "Encrypting files for ransom",
+            "Gaining unauthorized access"
+        ]
+    },
+    {
+        "q": "What does DoS stand for?",
+        "o": [
+            "Denial of Service",
+            "Data over Security",
+            "Domain of Service",
+            "Delivery of Software"
+        ]
+    },
+    {
+        "q": "What does DDoS stand for?",
+        "o": [
+            "Distributed Denial of Service",
+            "Direct Denial of Service",
+            "Dynamic Denial of Service",
+            "Delayed Denial of Service"
+        ]
+    },
+    {
+        "q": "How does a DDoS differ from a DoS attack?",
+        "o": [
+            "Multiple sources attack simultaneously",
+            "Uses encryption for the attack",
+            "Targets only web servers",
+            "Requires physical access"
+        ]
+    },
+    {
+        "q": "What is a botnet?",
+        "o": [
+            "A network of compromised computers",
+            "A security monitoring tool",
+            "A type of firewall",
+            "A network protocol"
+        ]
+    },
+    {
+        "q": "What is an IP header?",
+        "o": [
+            "Metadata prepended to IP packets",
+            "Encrypted payload of packets",
+            "Checksum for data integrity",
+            "Footer appended to packets"
+        ]
+    },
+    {
+        "q": "What is the protocol field in IP header?",
+        "o": [
+            "Identifies the next layer protocol",
+            "Stores the source IP address",
+            "Contains the packet checksum",
+            "Defines the TTL value"
+        ]
+    },
+    {
+        "q": "What protocol number is TCP?",
+        "o": [
+            "6",
+            "17",
+            "1",
+            "50"
+        ]
+    },
+    {
+        "q": "What protocol number is UDP?",
+        "o": [
+            "17",
+            "6",
+            "1",
+            "47"
+        ]
+    },
+    {
+        "q": "What protocol number is ICMP?",
+        "o": [
+            "1",
+            "6",
+            "17",
+            "50"
+        ]
+    },
+    {
+        "q": "What is the version field in IP header for IPv4?",
+        "o": [
+            "4",
+            "6",
+            "1",
+            "0"
+        ]
+    },
+    {
+        "q": "What is a man-in-the-middle attack?",
+        "o": [
+            "Intercepting communication between parties",
+            "Flooding a network with packets",
+            "Guessing user passwords",
+            "Scanning for open ports"
+        ]
+    },
+    {
+        "q": "What is the purpose of TCP sequence numbers?",
+        "o": [
+            "Order data segments correctly",
+            "Encrypt the packet payload",
+            "Identify source port number",
+            "Store destination address"
+        ]
+    },
+    {
+        "q": "What is an initial sequence number in TCP?",
+        "o": [
+            "The starting number for a connection",
+            "The final number before closing",
+            "A fixed value for all sessions",
+            "The port number of the server"
+        ]
+    },
+    {
+        "q": "Why are initial sequence numbers randomized?",
+        "o": [
+            "To prevent sequence prediction attacks",
+            "To improve connection speed",
+            "To reduce packet size",
+            "To enable compression"
+        ]
+    },
+    {
+        "q": "What is sequence prediction attack?",
+        "o": [
+            "Guessing TCP sequence numbers to hijack",
+            "Predicting user passwords",
+            "Forecasting network congestion",
+            "Anticipating firewall rules"
+        ]
+    },
+    {
+        "q": "What information can be spoofed in IP packets?",
+        "o": [
+            "Source IP address",
+            "Destination MAC address",
+            "Protocol version number",
+            "Hardware checksum only"
+        ]
+    },
+    {
+        "q": "Why is IP spoofing effective in DoS attacks?",
+        "o": [
+            "Hides the attacker identity",
+            "Increases packet speed",
+            "Reduces bandwidth usage",
+            "Improves attack accuracy"
+        ]
+    },
+    {
+        "q": "What is a SYN cookie?",
+        "o": [
+            "Defense mechanism against SYN floods",
+            "A type of session identifier",
+            "Cookie stored in web browser",
+            "Encryption key for TCP"
+        ]
+    },
+    {
+        "q": "How do SYN cookies protect against SYN floods?",
+        "o": [
+            "Encode connection info in sequence number",
+            "Block all incoming SYN packets",
+            "Encrypt all network traffic",
+            "Limit connection speed globally"
+        ]
+    },
+    {
+        "q": "What is the TCP backlog queue?",
+        "o": [
+            "Storage for half-open connections",
+            "Buffer for completed connections",
+            "Queue for encrypted packets",
+            "Storage for routing tables"
+        ]
+    },
+    {
+        "q": "How does SYN flood exhaust server resources?",
+        "o": [
+            "Fills up the backlog queue",
+            "Consumes all disk space",
+            "Uses all available bandwidth",
+            "Depletes CPU processing power"
+        ]
+    },
+    {
+        "q": "What is a reflective attack in networking?",
+        "o": [
+            "Using third parties to amplify attacks",
+            "Bouncing packets off firewalls",
+            "Mirroring traffic for analysis",
+            "Reflecting malware infections"
+        ]
+    },
+    {
+        "q": "What is an amplification attack?",
+        "o": [
+            "Small request generates large response",
+            "Large request generates small response",
+            "Equal request and response sizes",
+            "No response is generated"
+        ]
+    },
+    {
+        "q": "What is a blind spoofing attack?",
+        "o": [
+            "Spoofing without seeing responses",
+            "Spoofing with visual monitoring",
+            "Spoofing using malware",
+            "Spoofing through encryption"
+        ]
+    },
+    {
+        "q": "What makes blind spoofing more difficult?",
+        "o": [
+            "Cannot see response packets",
+            "Requires special hardware",
+            "Needs administrator access",
+            "Must decrypt all traffic"
+        ]
+    },
+    {
+        "q": "What is non-blind spoofing?",
+        "o": [
+            "Spoofing while monitoring traffic",
+            "Spoofing without seeing packets",
+            "Spoofing encrypted connections",
+            "Spoofing with physical access"
+        ]
+    },
+    {
+        "q": "What is ARP cache poisoning?",
+        "o": [
+            "Corrupting IP to MAC mappings",
+            "Infecting DNS cache entries",
+            "Modifying routing tables",
+            "Altering firewall rules"
+        ]
+    },
+    {
+        "q": "How does ARP poisoning enable IP spoofing?",
+        "o": [
+            "Redirects traffic to attacker",
+            "Encrypts all network packets",
+            "Blocks legitimate traffic",
+            "Increases bandwidth speed"
+        ]
+    },
+    {
+        "q": "What is the land attack?",
+        "o": [
+            "Sending packets with same source and dest",
+            "Flooding network with large packets",
+            "Injecting malware into packets",
+            "Blocking all incoming traffic"
+        ]
+    },
+    {
+        "q": "What is the teardrop attack?",
+        "o": [
+            "Sending overlapping fragmented packets",
+            "Dropping all network connections",
+            "Tearing down firewall rules",
+            "Removing encryption from packets"
+        ]
+    },
+    {
+        "q": "What vulnerability does teardrop exploit?",
+        "o": [
+            "Fragment reassembly bugs",
+            "Password hashing weakness",
+            "Encryption key generation",
+            "Routing table corruption"
+        ]
+    },
+    {
+        "q": "What is the ping of death attack?",
+        "o": [
+            "Sending oversized ICMP packets",
+            "Flooding with small pings",
+            "Blocking all ping requests",
+            "Encrypting ping responses"
+        ]
+    },
+    {
+        "q": "Why does ping of death cause crashes?",
+        "o": [
+            "Buffer overflow during reassembly",
+            "Network bandwidth exhaustion",
+            "CPU overload from processing",
+            "Memory leak in applications"
+        ]
+    },
+    {
+        "q": "What is IP source routing?",
+        "o": [
+            "Sender specifies packet path",
+            "Router determines packet path",
+            "Random path selection",
+            "Encrypted routing tables"
+        ]
+    },
+    {
+        "q": "Why is source routing a security risk?",
+        "o": [
+            "Attacker can bypass security controls",
+            "It slows down packet delivery",
+            "It requires more bandwidth",
+            "It enables packet encryption"
+        ]
+    },
+    {
+        "q": "What is loose source routing?",
+        "o": [
+            "Packet must pass through specified hops",
+            "Packet follows exact specified path",
+            "Packet avoids specified routers",
+            "Packet is encrypted at each hop"
+        ]
+    },
+    {
+        "q": "What is strict source routing?",
+        "o": [
+            "Packet follows exact path specified",
+            "Packet may use any route available",
+            "Packet is dropped at each router",
+            "Packet skips security checks"
+        ]
+    },
+    {
+        "q": "How can source routing attacks be prevented?",
+        "o": [
+            "Disable source routing on routers",
+            "Enable packet encryption only",
+            "Increase packet buffer size",
+            "Allow all source routing options"
+        ]
+    },
+    {
+        "q": "What is IP fragmentation attack?",
+        "o": [
+            "Exploiting packet reassembly process",
+            "Encrypting fragmented packets",
+            "Compressing large IP packets",
+            "Blocking fragmented traffic"
+        ]
+    },
+    {
+        "q": "What is a tiny fragment attack?",
+        "o": [
+            "Using very small fragments to bypass filters",
+            "Sending large packets to crash systems",
+            "Encrypting small data chunks",
+            "Blocking tiny network packets"
+        ]
+    },
+    {
+        "q": "How do tiny fragments bypass firewalls?",
+        "o": [
+            "TCP header split across fragments",
+            "Fragments appear as normal traffic",
+            "Firewall ignores small packets",
+            "Encryption hides the content"
+        ]
+    },
+    {
+        "q": "What is fragment overlap attack?",
+        "o": [
+            "Fragments contain overlapping data",
+            "Fragments are encrypted twice",
+            "Fragments exceed maximum size",
+            "Fragments are dropped randomly"
+        ]
+    },
+    {
+        "q": "Why are fragment overlap attacks dangerous?",
+        "o": [
+            "Can overwrite allowed header with blocked",
+            "Causes immediate system crash",
+            "Deletes all stored data",
+            "Disables network interfaces"
+        ]
+    },
+    {
+        "q": "What is the rose attack related to?",
+        "o": [
+            "IP fragmentation vulnerabilities",
+            "DNS cache poisoning",
+            "Password cracking methods",
+            "Wireless network attacks"
+        ]
+    },
+    {
+        "q": "What is TCP connection state?",
+        "o": [
+            "Current status of a TCP session",
+            "Speed of data transmission",
+            "Type of encryption used",
+            "Location of the server"
+        ]
+    },
+    {
+        "q": "What is the ESTABLISHED state in TCP?",
+        "o": [
+            "Connection is fully active and open",
+            "Connection is being initiated",
+            "Connection is being closed",
+            "Connection has been reset"
+        ]
+    },
+    {
+        "q": "What is the TIME_WAIT state in TCP?",
+        "o": [
+            "Waiting after connection close",
+            "Waiting for initial handshake",
+            "Waiting for data transmission",
+            "Waiting for encryption setup"
+        ]
+    },
+    {
+        "q": "Why does TIME_WAIT state exist?",
+        "o": [
+            "Ensure all packets are received",
+            "Speed up new connections",
+            "Encrypt remaining data",
+            "Block malicious packets"
+        ]
+    },
+    {
+        "q": "What is the CLOSE_WAIT state?",
+        "o": [
+            "Received FIN waiting for app closure",
+            "Sent FIN waiting for acknowledgment",
+            "Waiting for initial connection",
+            "Connection forcefully terminated"
+        ]
+    },
+    {
+        "q": "What is a TCP connection table attack?",
+        "o": [
+            "Exhausting connection table entries",
+            "Modifying routing table entries",
+            "Corrupting DNS cache tables",
+            "Filling ARP cache tables"
+        ]
+    },
+    {
+        "q": "What is the purpose of TCP RST attack?",
+        "o": [
+            "Forcefully terminate connections",
+            "Establish new connections faster",
+            "Encrypt active sessions",
+            "Monitor traffic patterns"
+        ]
+    },
+    {
+        "q": "How does TCP RST attack work?",
+        "o": [
+            "Send forged RST packets",
+            "Block all TCP traffic",
+            "Encrypt connection data",
+            "Modify packet headers"
+        ]
+    },
+    {
+        "q": "What is required for successful RST attack?",
+        "o": [
+            "Correct sequence number and IPs",
+            "Physical access to the server",
+            "Administrator credentials",
+            "Encryption key of session"
+        ]
+    },
+    {
+        "q": "What is TCP window scaling?",
+        "o": [
+            "Extending window size beyond 64KB",
+            "Reducing window to save memory",
+            "Encrypting window contents",
+            "Blocking excessive data"
+        ]
+    },
+    {
+        "q": "What security issue relates to TCP window?",
+        "o": [
+            "Large windows easier to guess sequence",
+            "Small windows cause buffer overflow",
+            "Windows store unencrypted data",
+            "Windows contain user passwords"
+        ]
+    },
+    {
+        "q": "What is TCP timestamp used for?",
+        "o": [
+            "Round trip time calculation and PAWS",
+            "Encrypting packet contents securely",
+            "Storing user session tokens",
+            "Recording server location"
+        ]
+    },
+    {
+        "q": "What is PAWS in TCP?",
+        "o": [
+            "Protection Against Wrapped Sequences",
+            "Protocol for Advanced Web Security",
+            "Packet Analysis and Warning System",
+            "Protected Access Wireless Service"
+        ]
+    },
+    {
+        "q": "What information can TCP timestamps leak?",
+        "o": [
+            "System uptime information",
+            "User password hashes",
+            "Encryption key values",
+            "Firewall configurations"
+        ]
+    },
+    {
+        "q": "What is a Christmas tree attack?",
+        "o": [
+            "Packet with all TCP flags set",
+            "Attack during holiday season",
+            "Malware with festive theme",
+            "DDoS on shopping sites"
+        ]
+    },
+    {
+        "q": "What is the purpose of Christmas tree scan?",
+        "o": [
+            "Identify open and closed ports",
+            "Establish encrypted connections",
+            "Transfer files between hosts",
+            "Monitor network bandwidth"
+        ]
+    },
+    {
+        "q": "What is a null scan in TCP?",
+        "o": [
+            "Packet with no TCP flags set",
+            "Scan that finds nothing",
+            "Empty payload packet",
+            "Connection with no data"
+        ]
+    },
+    {
+        "q": "What is a FIN scan used for?",
+        "o": [
+            "Stealth port scanning technique",
+            "Closing active connections",
+            "Encrypting final packets",
+            "Monitoring session end"
+        ]
+    },
+    {
+        "q": "How do FIN scans evade detection?",
+        "o": [
+            "No connection established",
+            "Packets are encrypted",
+            "Traffic is compressed",
+            "Headers are removed"
+        ]
+    },
+    {
+        "q": "What is an ACK scan used for?",
+        "o": [
+            "Mapping firewall rules",
+            "Establishing connections",
+            "Encrypting traffic",
+            "Monitoring bandwidth"
+        ]
+    },
+    {
+        "q": "What does an ACK scan reveal?",
+        "o": [
+            "Whether ports are filtered",
+            "Which services are running",
+            "User credentials stored",
+            "Encryption algorithms used"
+        ]
+    },
+    {
+        "q": "What is idle scanning?",
+        "o": [
+            "Using zombie host for port scan",
+            "Scanning when network is quiet",
+            "Slow speed scanning technique",
+            "Passive traffic monitoring"
+        ]
+    },
+    {
+        "q": "Why is idle scanning stealthy?",
+        "o": [
+            "Victim sees zombie IP not attacker",
+            "Packets are encrypted end to end",
+            "Scan happens very slowly",
+            "No packets are actually sent"
+        ]
+    },
+    {
+        "q": "What is a zombie host in idle scanning?",
+        "o": [
+            "Innocent host used to relay scan",
+            "Infected computer in botnet",
+            "Dormant server on network",
+            "Disabled security device"
+        ]
+    },
+    {
+        "q": "What is the IP ID field used for in idle scan?",
+        "o": [
+            "Detect port status through increment",
+            "Encrypt the packet payload",
+            "Store routing information",
+            "Identify protocol version"
+        ]
+    },
+    {
+        "q": "What is egress filtering?",
+        "o": [
+            "Filtering outbound traffic",
+            "Filtering inbound traffic",
+            "Filtering encrypted packets",
+            "Filtering based on time"
+        ]
+    },
+    {
+        "q": "How does egress filtering prevent spoofing?",
+        "o": [
+            "Blocks packets with external source IPs",
+            "Encrypts all outgoing traffic",
+            "Compresses large packets",
+            "Routes through secure servers"
+        ]
+    },
+    {
+        "q": "What is ingress filtering?",
+        "o": [
+            "Filtering inbound traffic",
+            "Filtering outbound traffic",
+            "Filtering based on content",
+            "Filtering encrypted data"
+        ]
+    },
+    {
+        "q": "What is BCP 38 related to?",
+        "o": [
+            "Network ingress filtering",
+            "Password complexity rules",
+            "Encryption standards",
+            "Wireless security"
+        ]
+    },
+    {
+        "q": "What is uRPF in networking?",
+        "o": [
+            "Unicast Reverse Path Forwarding",
+            "Universal Routing Protocol Format",
+            "User Request Processing Filter",
+            "Uniform Resource Path Finder"
+        ]
+    },
+    {
+        "q": "How does uRPF prevent IP spoofing?",
+        "o": [
+            "Verifies source IP is reachable",
+            "Encrypts all packet contents",
+            "Limits packet transmission rate",
+            "Blocks all foreign traffic"
+        ]
+    },
+    {
+        "q": "What is TTL-based filtering?",
+        "o": [
+            "Blocking based on hop count",
+            "Filtering by time of day",
+            "Blocking old packets",
+            "Limiting connection time"
+        ]
+    },
+    {
+        "q": "What is a connection flood attack?",
+        "o": [
+            "Opening many full TCP connections",
+            "Flooding with fragmented packets",
+            "Sending oversized UDP traffic",
+            "Broadcasting ICMP requests"
+        ]
+    },
+    {
+        "q": "How does a connection flood differ from SYN flood?",
+        "o": [
+            "Completes the full handshake",
+            "Uses UDP instead of TCP",
+            "Targets router instead of server",
+            "Encrypts all attack traffic"
+        ]
+    },
+    {
+        "q": "What is a sockstress attack?",
+        "o": [
+            "Exhausting resources with zero window",
+            "Stressing network sockets with malware",
+            "Attacking sock puppet accounts",
+            "Disrupting SSH connections"
+        ]
+    },
+    {
+        "q": "What is TCP resource exhaustion?",
+        "o": [
+            "Depleting server connection resources",
+            "Running out of network bandwidth",
+            "Exceeding disk storage limits",
+            "Overloading CPU processing"
+        ]
+    },
+    {
+        "q": "What is a slow HTTP attack?",
+        "o": [
+            "Sending HTTP requests very slowly",
+            "Attacking during low traffic hours",
+            "Using slow internet connections",
+            "Delaying response processing"
+        ]
+    },
+    {
+        "q": "What is the purpose of TCP keep-alive?",
+        "o": [
+            "Detect dead connections",
+            "Speed up data transfer",
+            "Encrypt idle sessions",
+            "Compress packet headers"
+        ]
+    },
+    {
+        "q": "What security risk do TCP timestamps pose?",
+        "o": [
+            "Reveal system boot time",
+            "Expose user passwords",
+            "Show encryption keys",
+            "Display file contents"
+        ]
+    },
+    {
+        "q": "What is ICMP redirect attack?",
+        "o": [
+            "Malicious routing table modification",
+            "Redirecting web traffic to ads",
+            "Changing DNS server addresses",
+            "Modifying firewall rules"
+        ]
+    },
+    {
+        "q": "How can ICMP redirect attacks be prevented?",
+        "o": [
+            "Disable ICMP redirect acceptance",
+            "Enable stronger encryption",
+            "Use faster network connections",
+            "Install additional firewalls"
+        ]
+    },
+    {
+        "q": "What is ICMP tunneling?",
+        "o": [
+            "Encapsulating data within ICMP packets",
+            "Creating VPN with ICMP protocol",
+            "Blocking ICMP at firewall",
+            "Monitoring ICMP traffic"
+        ]
+    },
+    {
+        "q": "Why is ICMP tunneling a concern?",
+        "o": [
+            "Can bypass firewall restrictions",
+            "Causes network congestion",
+            "Slows down ping responses",
+            "Corrupts network packets"
+        ]
+    },
+    {
+        "q": "What is a smurf attack?",
+        "o": [
+            "ICMP flood using broadcast addresses",
+            "Small packet flooding attack",
+            "Attack targeting small networks",
+            "Malware disguised as game"
+        ]
+    },
+    {
+        "q": "How does a smurf attack amplify traffic?",
+        "o": [
+            "Many hosts respond to broadcast",
+            "Packets grow larger over time",
+            "Router duplicates each packet",
+            "Encryption adds extra data"
+        ]
+    },
+    {
+        "q": "What is a fraggle attack?",
+        "o": [
+            "UDP version of smurf attack",
+            "Fragment based network attack",
+            "Fragile system exploitation",
+            "Small scale DDoS attack"
+        ]
+    },
+    {
+        "q": "What UDP ports are targeted in fraggle attacks?",
+        "o": [
+            "Port 7 echo and port 19 chargen",
+            "Port 80 HTTP and port 443 HTTPS",
+            "Port 22 SSH and port 23 telnet",
+            "Port 53 DNS and port 25 SMTP"
+        ]
+    },
+    {
+        "q": "What is a chargen attack?",
+        "o": [
+            "Exploiting character generator service",
+            "Changing network configurations",
+            "Charging for network services",
+            "Character-based malware attack"
+        ]
+    },
+    {
+        "q": "What is session splicing?",
+        "o": [
+            "Splitting attacks across multiple packets",
+            "Joining multiple sessions together",
+            "Cutting network connections",
+            "Merging encrypted sessions"
+        ]
+    },
+    {
+        "q": "How does session splicing evade IDS?",
+        "o": [
+            "Attack pattern split across packets",
+            "Traffic is heavily encrypted",
+            "Packets look like normal traffic",
+            "IDS cannot read packet headers"
+        ]
+    },
+    {
+        "q": "What is TTL manipulation attack?",
+        "o": [
+            "Crafting packets to expire at IDS",
+            "Changing packet lifetime randomly",
+            "Increasing time to live infinitely",
+            "Disabling TTL field completely"
+        ]
+    },
+    {
+        "q": "How can TTL manipulation evade security?",
+        "o": [
+            "IDS sees packet but target does not",
+            "Packet appears to be encrypted",
+            "Security devices ignore TTL field",
+            "Routers forward low TTL packets"
+        ]
+    },
+    {
+        "q": "What is the urgent pointer attack?",
+        "o": [
+            "Malicious use of TCP urgent pointer",
+            "Sending urgent priority packets",
+            "Pointing to malicious servers",
+            "Bypassing urgent traffic filters"
+        ]
+    },
+    {
+        "q": "What is overlapping fragment attack?",
+        "o": [
+            "Second fragment overwrites first",
+            "Fragments do not overlap at all",
+            "All fragments are identical",
+            "Fragments exceed buffer size"
+        ]
+    },
+    {
+        "q": "What defense helps against fragment attacks?",
+        "o": [
+            "Fragment reassembly before inspection",
+            "Allowing all fragmented traffic",
+            "Increasing fragment buffer size",
+            "Disabling packet fragmentation"
+        ]
+    },
+    {
+        "q": "What is the purpose of GRE in networking?",
+        "o": [
+            "Encapsulate various protocols in tunnels",
+            "Encrypt network traffic completely",
+            "Block unauthorized connections",
+            "Monitor bandwidth utilization"
+        ]
+    },
+    {
+        "q": "What does GRE stand for?",
+        "o": [
+            "Generic Routing Encapsulation",
+            "General Route Encryption",
+            "Global Resource Exchange",
+            "Gateway Routing Endpoint"
+        ]
+    },
+    {
+        "q": "What security risk does GRE tunneling present?",
+        "o": [
+            "Can bypass firewall inspection",
+            "Slows network significantly",
+            "Consumes excessive memory",
+            "Requires special hardware"
+        ]
+    },
+    {
+        "q": "What is IP protocol 47 used for?",
+        "o": [
+            "GRE tunneling",
+            "TCP traffic",
+            "UDP traffic",
+            "ICMP messages"
+        ]
+    },
+    {
+        "q": "What is a covert channel in networking?",
+        "o": [
+            "Hidden communication bypassing controls",
+            "Encrypted legitimate communication",
+            "Private network segment",
+            "Backup communication path"
+        ]
+    },
+    {
+        "q": "How can IP header fields create covert channels?",
+        "o": [
+            "Using unused or optional fields",
+            "Encrypting header contents",
+            "Increasing header size",
+            "Removing security flags"
+        ]
+    },
+    {
+        "q": "What is a timing covert channel?",
+        "o": [
+            "Encoding data in transmission timing",
+            "Using timestamps for encryption",
+            "Measuring round trip time",
+            "Scheduling packet delivery"
+        ]
+    },
+    {
+        "q": "What is OS fingerprinting in TCP/IP?",
+        "o": [
+            "Identifying operating systems from packets",
+            "Creating digital signatures",
+            "Encrypting system information",
+            "Updating system software"
+        ]
+    },
+    {
+        "q": "How does passive OS fingerprinting work?",
+        "o": [
+            "Observing normal network traffic",
+            "Sending probe packets actively",
+            "Installing monitoring software",
+            "Reading system log files"
+        ]
+    },
+    {
+        "q": "What TCP/IP characteristics reveal OS type?",
+        "o": [
+            "TTL values and window sizes",
+            "Encryption algorithms used",
+            "User login credentials",
+            "Application names installed"
+        ]
+    },
+    {
+        "q": "What tool is commonly used for active OS fingerprinting?",
+        "o": [
+            "Nmap",
+            "Notepad",
+            "Calculator",
+            "WordPad"
+        ]
+    },
+    {
+        "q": "What is TCP sequence number wraparound?",
+        "o": [
+            "Sequence numbers restart after max value",
+            "Sequence numbers decrease to zero",
+            "Sequence numbers stay constant",
+            "Sequence numbers become negative"
+        ]
+    },
+    {
+        "q": "What problem does ISN wraparound cause?",
+        "o": [
+            "Potential sequence number collision",
+            "Immediate connection termination",
+            "Automatic packet encryption",
+            "Forced route change"
+        ]
+    },
+    {
+        "q": "What is TCP MD5 signature option used for?",
+        "o": [
+            "Protecting BGP sessions from hijacking",
+            "Encrypting web traffic completely",
+            "Compressing large data packets",
+            "Accelerating TCP connections"
+        ]
+    },
+    {
+        "q": "Which protocol commonly uses TCP MD5 signatures?",
+        "o": [
+            "BGP",
+            "HTTP",
+            "FTP",
+            "SMTP"
+        ]
+    },
+    {
+        "q": "What is a TCP injection attack?",
+        "o": [
+            "Inserting data into active sessions",
+            "Blocking all TCP traffic",
+            "Creating new TCP connections",
+            "Encrypting TCP payloads"
+        ]
+    },
+    {
+        "q": "What is required for successful TCP injection?",
+        "o": [
+            "Valid sequence numbers and timing",
+            "Physical access to servers",
+            "Root privileges on client",
+            "Encryption keys for session"
+        ]
+    },
+    {
+        "q": "What is TCP desynchronization?",
+        "o": [
+            "Client and server have different states",
+            "TCP clocks are not synchronized",
+            "Packets arrive out of order",
+            "Connections timeout incorrectly"
+        ]
+    },
+    {
+        "q": "How does desynchronization enable hijacking?",
+        "o": [
+            "Attacker substitutes own packets",
+            "Legitimate traffic is encrypted",
+            "Server closes connections",
+            "Client retransmits automatically"
+        ]
+    },
+    {
+        "q": "What is an ACK storm in TCP?",
+        "o": [
+            "Endless ACK exchanges after hijack",
+            "Rapid acknowledgment of data",
+            "Storm of connection requests",
+            "Attack using only ACK packets"
+        ]
+    },
+    {
+        "q": "How can ACK storms be detected?",
+        "o": [
+            "Unusual traffic patterns observed",
+            "All connections stop working",
+            "Encryption fails on packets",
+            "Servers crash immediately"
+        ]
+    },
+    {
+        "q": "What is the Mitnick attack?",
+        "o": [
+            "TCP sequence prediction with IP spoofing",
+            "Password cracking technique",
+            "Social engineering method",
+            "Wireless network attack"
+        ]
+    },
+    {
+        "q": "What made the Mitnick attack historically significant?",
+        "o": [
+            "Demonstrated TCP weakness in 1994",
+            "First wireless network hack",
+            "Largest data breach at time",
+            "Introduced new encryption method"
+        ]
+    },
+    {
+        "q": "What is a TCP state table exhaustion attack?",
+        "o": [
+            "Filling server connection tracking table",
+            "Corrupting TCP state machine logic",
+            "Modifying routing table entries",
+            "Exhausting disk storage space"
+        ]
+    },
+    {
+        "q": "What is selective acknowledgment in TCP?",
+        "o": [
+            "Acknowledging specific received segments",
+            "Selecting which packets to send",
+            "Choosing encryption algorithms",
+            "Picking random sequence numbers"
+        ]
+    },
+    {
+        "q": "What does SACK stand for in TCP?",
+        "o": [
+            "Selective Acknowledgment",
+            "Sequential ACK",
+            "Secure Acknowledgment",
+            "System ACK"
+        ]
+    },
+    {
+        "q": "What vulnerability was found in SACK handling?",
+        "o": [
+            "Denial of service through crafted SACK",
+            "Remote code execution via SACK",
+            "Data theft using SACK packets",
+            "Encryption bypass with SACK"
+        ]
+    },
+    {
+        "q": "What is TCP SACK Panic?",
+        "o": [
+            "Linux kernel vulnerability in SACK",
+            "Network performance issue",
+            "Connection timeout error",
+            "Routing table corruption"
+        ]
+    },
+    {
+        "q": "What is the effect of TCP SACK Panic exploit?",
+        "o": [
+            "Kernel panic and system crash",
+            "Data encryption failure",
+            "Network bandwidth exhaustion",
+            "User password exposure"
+        ]
+    },
+    {
+        "q": "What is a TCP reassembly attack?",
+        "o": [
+            "Exploiting how systems reassemble TCP",
+            "Rebuilding encrypted connections",
+            "Reconnecting dropped sessions",
+            "Reconstructing lost packets"
+        ]
+    },
+    {
+        "q": "What is fragmentation overlap in reassembly?",
+        "o": [
+            "Multiple fragments claim same offset",
+            "Fragments do not fit together",
+            "Fragments are perfectly aligned",
+            "Fragments contain same data"
+        ]
+    },
+    {
+        "q": "What is the jolt attack?",
+        "o": [
+            "Sending fragments with invalid offset",
+            "Electric pulse on network cable",
+            "Sudden bandwidth surge",
+            "Rapid connection cycling"
+        ]
+    },
+    {
+        "q": "What is the purpose of IP option fields?",
+        "o": [
+            "Provide optional features like routing",
+            "Store authentication credentials",
+            "Encrypt packet payloads",
+            "Compress header information"
+        ]
+    },
+    {
+        "q": "Why are IP options a security concern?",
+        "o": [
+            "Can be exploited for attacks",
+            "Make packets too large",
+            "Slow down transmission",
+            "Disable encryption"
+        ]
+    },
+    {
+        "q": "What is the record route IP option?",
+        "o": [
+            "Documents the path packets take",
+            "Records user browsing history",
+            "Logs authentication attempts",
+            "Saves encryption keys used"
+        ]
+    },
+    {
+        "q": "What is the timestamp IP option used for?",
+        "o": [
+            "Record time at each hop",
+            "Set packet expiration time",
+            "Schedule future transmission",
+            "Log connection duration"
+        ]
+    },
+    {
+        "q": "What is an Nmap decoy scan?",
+        "o": [
+            "Hiding scan source among fake IPs",
+            "Using honeypots for scanning",
+            "Scanning through proxy servers",
+            "Encrypting scan traffic"
+        ]
+    },
+    {
+        "q": "How do decoy scans evade detection?",
+        "o": [
+            "Victim sees many source IPs",
+            "Traffic appears encrypted",
+            "Packets look like normal traffic",
+            "Scan happens very slowly"
+        ]
+    },
+    {
+        "q": "What is banner grabbing in TCP?",
+        "o": [
+            "Collecting service version information",
+            "Displaying advertisements to users",
+            "Creating visual headers for packets",
+            "Capturing login screen images"
+        ]
+    },
+    {
+        "q": "How can banner grabbing be prevented?",
+        "o": [
+            "Disable or customize service banners",
+            "Enable stronger encryption",
+            "Increase firewall rules",
+            "Block all incoming traffic"
+        ]
+    },
+    {
+        "q": "What is a port knock sequence?",
+        "o": [
+            "Series of connection attempts to open port",
+            "Sound made when port is accessed",
+            "Test for port availability",
+            "Sequence number for packets"
+        ]
+    },
+    {
+        "q": "How does port knocking enhance security?",
+        "o": [
+            "Hides open ports from scanners",
+            "Encrypts all port traffic",
+            "Speeds up port connections",
+            "Blocks all port access"
+        ]
+    },
+    {
+        "q": "What is single packet authorization?",
+        "o": [
+            "Opening port with one cryptographic packet",
+            "Authorizing single user per port",
+            "Sending one packet per connection",
+            "Using single key for all encryption"
+        ]
+    },
+    {
+        "q": "What is IP blackholing?",
+        "o": [
+            "Dropping all traffic to destination",
+            "Encrypting traffic destination",
+            "Hiding IP addresses from view",
+            "Converting IPs to darkness"
+        ]
+    },
+    {
+        "q": "When is blackholing used as defense?",
+        "o": [
+            "During DDoS attacks on specific IPs",
+            "For routine traffic management",
+            "While encrypting network traffic",
+            "When backing up servers"
+        ]
+    },
+    {
+        "q": "What is remote triggered blackhole routing?",
+        "o": [
+            "BGP signaling to drop attack traffic",
+            "Remote control of router power",
+            "Triggering alarms during attacks",
+            "Automated firewall responses"
+        ]
+    },
+    {
+        "q": "What is RTBH commonly used for?",
+        "o": [
+            "DDoS attack mitigation",
+            "Traffic encryption",
+            "Bandwidth optimization",
+            "Route advertisement"
+        ]
+    },
+    {
+        "q": "What is IP anycast?",
+        "o": [
+            "Same IP on multiple servers globally",
+            "Any computer can use same IP",
+            "Casting IP to any network",
+            "Broadcasting IP everywhere"
+        ]
+    },
+    {
+        "q": "How does anycast help with DDoS?",
+        "o": [
+            "Distributes attack across locations",
+            "Encrypts all attack traffic",
+            "Blocks attacks at source",
+            "Hides target from attackers"
+        ]
+    },
+    {
+        "q": "What is a TCP proxy used for?",
+        "o": [
+            "Intermediary for TCP connections",
+            "Encrypting TCP traffic only",
+            "Blocking all TCP packets",
+            "Monitoring TCP bandwidth"
+        ]
+    },
+    {
+        "q": "How can TCP proxies protect against attacks?",
+        "o": [
+            "Validate connections before forwarding",
+            "Encrypt all traffic automatically",
+            "Block all incoming connections",
+            "Speed up legitimate traffic"
+        ]
+    },
+    {
+        "q": "What is a SYN proxy?",
+        "o": [
+            "Completes handshake on behalf of server",
+            "Blocks all SYN packets",
+            "Encrypts SYN requests",
+            "Monitors SYN traffic only"
+        ]
+    },
+    {
+        "q": "What is connection rate limiting?",
+        "o": [
+            "Restricting connections per time period",
+            "Limiting data transfer speed",
+            "Restricting bandwidth usage",
+            "Limiting user login attempts"
+        ]
+    },
+    {
+        "q": "What is half-open connection limiting?",
+        "o": [
+            "Restricting incomplete handshakes",
+            "Limiting partial TCP traffic",
+            "Restricting semi-open ports",
+            "Limiting halfway routing"
+        ]
+    },
+    {
+        "q": "What is TCP optimization for security?",
+        "o": [
+            "Tuning TCP parameters for protection",
+            "Making TCP encryption faster",
+            "Speeding up TCP connections",
+            "Compressing TCP packets"
+        ]
+    },
+    {
+        "q": "What is the somaxconn kernel parameter?",
+        "o": [
+            "Maximum pending connections queue size",
+            "Maximum socket memory allocation",
+            "Total connections allowed",
+            "Connection timeout value"
+        ]
+    },
+    {
+        "q": "What does tcp_syncookies kernel option do?",
+        "o": [
+            "Enables SYN cookie protection",
+            "Synchronizes network clocks",
+            "Encrypts cookie data",
+            "Syncs database connections"
+        ]
+    },
+    {
+        "q": "What is tcp_max_syn_backlog?",
+        "o": [
+            "Maximum half-open connection queue",
+            "Maximum SYN packet size",
+            "Total SYN packets allowed",
+            "SYN retry timeout value"
+        ]
+    },
+    {
+        "q": "What is the purpose of net.ipv4.tcp_syn_retries?",
+        "o": [
+            "Number of SYN retransmission attempts",
+            "Time between SYN packets",
+            "Maximum SYN packet size",
+            "SYN encryption strength"
+        ]
+    },
+    {
+        "q": "What is IP protocol 50 used for?",
+        "o": [
+            "ESP - Encapsulating Security Payload",
+            "TCP - Transmission Control Protocol",
+            "UDP - User Datagram Protocol",
+            "GRE - Generic Routing Encapsulation"
+        ]
+    },
+    {
+        "q": "What is IP protocol 51 used for?",
+        "o": [
+            "AH - Authentication Header",
+            "ESP - Encapsulating Security",
+            "GRE - Generic Routing",
+            "ICMP - Control Message"
+        ]
+    },
+    {
+        "q": "What is the difference between AH and ESP?",
+        "o": [
+            "AH authenticates while ESP encrypts",
+            "AH encrypts while ESP authenticates",
+            "Both provide same functionality",
+            "Neither provides encryption"
+        ]
+    },
+    {
+        "q": "What is transport mode in IPsec?",
+        "o": [
+            "Encrypts payload but not IP header",
+            "Encrypts entire packet with header",
+            "Only authenticates the header",
+            "Transports packets without change"
+        ]
+    },
+    {
+        "q": "What is tunnel mode in IPsec?",
+        "o": [
+            "Encrypts entire original packet",
+            "Creates tunnel without encryption",
+            "Only protects header portion",
+            "Tunnels traffic without security"
+        ]
+    },
+    {
+        "q": "What is IKE used for in IPsec?",
+        "o": [
+            "Key exchange and SA negotiation",
+            "Encrypting packet contents",
+            "Routing IPsec traffic",
+            "Decrypting received packets"
+        ]
+    },
+    {
+        "q": "What does IKE stand for?",
+        "o": [
+            "Internet Key Exchange",
+            "Internal Key Encryption",
+            "Integrated Key Encryption",
+            "Interface Key Exchange"
+        ]
+    },
+    {
+        "q": "What is a Security Association in IPsec?",
+        "o": [
+            "Agreed security parameters for connection",
+            "Association of security personnel",
+            "Group of protected servers",
+            "Set of firewall rules"
+        ]
+    },
+    {
+        "q": "What is the Security Parameter Index?",
+        "o": [
+            "Identifier for security association",
+            "Index of encryption algorithms",
+            "List of security parameters",
+            "Position of security header"
+        ]
+    },
+    {
+        "q": "What is replay protection in IPsec?",
+        "o": [
+            "Preventing reuse of captured packets",
+            "Replaying security events",
+            "Recording traffic for analysis",
+            "Playing back authentication"
+        ]
+    },
+    {
+        "q": "How does IPsec prevent replay attacks?",
+        "o": [
+            "Using sequence numbers and window",
+            "Encrypting with unique keys",
+            "Blocking repeated IP addresses",
+            "Timing packet transmission"
+        ]
+    },
+    {
+        "q": "What is a dead peer detection in IPsec?",
+        "o": [
+            "Detecting failed VPN endpoints",
+            "Finding dead network cables",
+            "Identifying offline servers",
+            "Detecting malicious peers"
+        ]
+    },
+    {
+        "q": "What is NAT-T in IPsec?",
+        "o": [
+            "NAT Traversal for ESP through NAT",
+            "Network Address Translation Test",
+            "NAT Traffic management",
+            "NAT Testing protocol"
+        ]
+    },
+    {
+        "q": "Why is NAT problematic for IPsec?",
+        "o": [
+            "NAT modifies IP headers protected by IPsec",
+            "NAT blocks all encrypted traffic",
+            "NAT slows down IPsec encryption",
+            "NAT cannot route IPsec packets"
+        ]
+    },
+    {
+        "q": "What port does NAT-T use?",
+        "o": [
+            "UDP port 4500",
+            "TCP port 443",
+            "UDP port 500",
+            "TCP port 80"
+        ]
+    },
+    {
+        "q": "What is the purpose of perfect forward secrecy?",
+        "o": [
+            "Protect past sessions if key compromised",
+            "Ensure future sessions are secure",
+            "Forward all traffic securely",
+            "Perfect encryption for all data"
+        ]
+    },
+    {
+        "q": "How does PFS work in key exchange?",
+        "o": [
+            "New keys derived for each session",
+            "Same key used for all sessions",
+            "Keys stored permanently",
+            "Keys sent in packets"
+        ]
+    },
+    {
+        "q": "What is the Diffie-Hellman exchange?",
+        "o": [
+            "Key agreement protocol over insecure channel",
+            "Method for encrypting data",
+            "Protocol for routing packets",
+            "Algorithm for compressing data"
+        ]
+    },
+    {
+        "q": "What is a man-in-the-middle vulnerability in DH?",
+        "o": [
+            "Attacker can substitute own keys",
+            "Keys are too short to use",
+            "Exchange takes too long",
+            "Protocol uses weak encryption"
+        ]
+    },
+    {
+        "q": "How is man-in-the-middle prevented in IPsec?",
+        "o": [
+            "Using authentication with key exchange",
+            "Encrypting the exchange packets",
+            "Speed up the key exchange",
+            "Use longer encryption keys"
+        ]
+    },
+    {
+        "q": "What is the purpose of traffic flow confidentiality?",
+        "o": [
+            "Hide traffic patterns from observers",
+            "Make traffic flow faster",
+            "Redirect traffic confidentially",
+            "Copy traffic for analysis"
+        ]
+    },
+    {
+        "q": "How can traffic analysis be performed?",
+        "o": [
+            "Observing packet sizes and timing",
+            "Reading encrypted content directly",
+            "Guessing encryption keys used",
+            "Intercepting authentication"
+        ]
+    },
+    {
+        "q": "What is padding used for in security?",
+        "o": [
+            "Obscure actual message length",
+            "Add extra encryption layers",
+            "Fill unused network bandwidth",
+            "Create backup of packets"
+        ]
+    },
+    {
+        "q": "What is an anti-replay window?",
+        "o": [
+            "Range of accepted sequence numbers",
+            "Time window for authentication",
+            "Display blocked replay attempts",
+            "Interface for security monitoring"
+        ]
+    },
+    {
+        "q": "What happens to packets outside replay window?",
+        "o": [
+            "Packets are discarded",
+            "Packets are encrypted again",
+            "Packets are forwarded anyway",
+            "Packets are queued for later"
+        ]
+    },
+    {
+        "q": "What is TCP Authentication Option?",
+        "o": [
+            "Modern replacement for TCP MD5",
+            "Original TCP authentication method",
+            "Optional TCP encryption mode",
+            "TCP debugging option"
+        ]
+    },
+    {
+        "q": "What does TCP-AO provide over MD5?",
+        "o": [
+            "Stronger cryptography and key management",
+            "Faster connection establishment",
+            "Smaller packet overhead",
+            "Backward compatibility only"
+        ]
+    },
+    {
+        "q": "What is the purpose of key chaining in TCP-AO?",
+        "o": [
+            "Change keys without dropping connection",
+            "Link encryption keys together",
+            "Create chain of trusted servers",
+            "Chain multiple connections"
+        ]
+    },
+    {
+        "q": "What is BGP hijacking?",
+        "o": [
+            "Falsely announcing IP prefixes",
+            "Taking over BGP router directly",
+            "Stealing BGP configuration files",
+            "Blocking BGP traffic flows"
+        ]
+    },
+    {
+        "q": "How does BGP hijacking affect traffic?",
+        "o": [
+            "Traffic routed through attacker",
+            "Traffic is completely blocked",
+            "Traffic is automatically encrypted",
+            "Traffic speed is reduced"
+        ]
+    },
+    {
+        "q": "What is RPKI in BGP security?",
+        "o": [
+            "Resource Public Key Infrastructure",
+            "Routing Protocol Key Index",
+            "Router Public Key Interface",
+            "Remote Protocol Key Install"
+        ]
+    },
+    {
+        "q": "How does RPKI improve BGP security?",
+        "o": [
+            "Validates route origin announcements",
+            "Encrypts all BGP messages",
+            "Speeds up route convergence",
+            "Reduces routing table size"
+        ]
+    },
+    {
+        "q": "What is a ROA in RPKI?",
+        "o": [
+            "Route Origin Authorization",
+            "Routing Origin Address",
+            "Remote Origin Authentication",
+            "Router Origin Announcement"
+        ]
+    },
+    {
+        "q": "What is BGP route leaking?",
+        "o": [
+            "Accidental propagation of routes",
+            "Deliberate blocking of routes",
+            "Encryption of route updates",
+            "Compression of routing tables"
+        ]
+    },
+    {
+        "q": "What is the impact of BGP route leaks?",
+        "o": [
+            "Traffic takes unexpected paths",
+            "All traffic is encrypted",
+            "Routes become faster",
+            "Networks become isolated"
+        ]
+    },
+    {
+        "q": "What is TCP Fast Open?",
+        "o": [
+            "Sending data in SYN packet",
+            "Quick socket opening",
+            "Fast port scanning",
+            "Rapid connection testing"
+        ]
+    },
+    {
+        "q": "What security concern exists with TCP Fast Open?",
+        "o": [
+            "Can amplify reflective attacks",
+            "Always encrypts traffic",
+            "Slows down connections",
+            "Requires authentication"
+        ]
+    },
+    {
+        "q": "What is the TFO cookie used for?",
+        "o": [
+            "Validate returning clients",
+            "Encrypt connection data",
+            "Store user preferences",
+            "Track browsing history"
+        ]
+    },
+    {
+        "q": "What is Multipath TCP?",
+        "o": [
+            "Using multiple paths simultaneously",
+            "Creating backup connections",
+            "Encrypting multiple routes",
+            "Testing multiple servers"
+        ]
+    },
+    {
+        "q": "What security issues affect MPTCP?",
+        "o": [
+            "Address spoofing across subflows",
+            "Encryption is always disabled",
+            "Connections are always slow",
+            "Only works on local networks"
+        ]
+    },
+    {
+        "q": "What is TCP BBR?",
+        "o": [
+            "Bottleneck Bandwidth and RTT congestion control",
+            "Buffer Bandwidth Routing protocol",
+            "Baseline Bandwidth Rate limiter",
+            "Buffered Block Retransmission"
+        ]
+    },
+    {
+        "q": "How can BBR be exploited?",
+        "o": [
+            "Aggressive bandwidth consumption",
+            "Decrypting network traffic",
+            "Stealing user credentials",
+            "Bypassing authentication"
+        ]
+    },
+    {
+        "q": "What is QUIC protocol?",
+        "o": [
+            "UDP-based encrypted transport",
+            "Quick Internet Connection",
+            "Query User Interface Control",
+            "Quantum Unified Internet Channel"
+        ]
+    },
+    {
+        "q": "How does QUIC differ from TCP?",
+        "o": [
+            "Built-in encryption and faster handshake",
+            "Uses only TCP as transport",
+            "No encryption support at all",
+            "Slower than TCP connection"
+        ]
+    },
+    {
+        "q": "What is connection migration in QUIC?",
+        "o": [
+            "Maintaining connection across IP changes",
+            "Moving servers between locations",
+            "Migrating data between connections",
+            "Transferring users to new servers"
+        ]
+    },
+    {
+        "q": "What is a QUIC amplification attack?",
+        "o": [
+            "Exploiting initial handshake responses",
+            "Amplifying QUIC speed",
+            "Increasing connection bandwidth",
+            "Enhancing encryption strength"
+        ]
+    },
+    {
+        "q": "What is IP path MTU discovery?",
+        "o": [
+            "Finding largest packet size for path",
+            "Discovering shortest network path",
+            "Measuring bandwidth on routes",
+            "Testing connection latency"
+        ]
+    },
+    {
+        "q": "What attack exploits PMTUD?",
+        "o": [
+            "Forcing smaller MTU with fake ICMP",
+            "Increasing packet size infinitely",
+            "Discovering all network paths",
+            "Encrypting path information"
+        ]
+    },
+    {
+        "q": "What is PMTUD blackhole?",
+        "o": [
+            "Packets silently dropped due to MTU",
+            "Encryption of path discovery",
+            "Black background in network tools",
+            "Hidden network monitoring"
+        ]
+    },
+    {
+        "q": "What is TCP Cubic algorithm?",
+        "o": [
+            "Congestion control using cubic function",
+            "Encryption using cube root",
+            "Three-dimensional routing",
+            "Cubic packet structure"
+        ]
+    },
+    {
+        "q": "What is a low-rate TCP attack?",
+        "o": [
+            "Periodic pulses exploiting congestion control",
+            "Slow data transfer attack",
+            "Low bandwidth consumption attack",
+            "Minimal packet sending attack"
+        ]
+    },
+    {
+        "q": "How does the shrew attack work?",
+        "o": [
+            "Short bursts trigger TCP retransmission",
+            "Constant slow traffic stream",
+            "Single large packet attack",
+            "Continuous bandwidth flood"
+        ]
+    },
+    {
+        "q": "What is TCP Vegas congestion control?",
+        "o": [
+            "Uses RTT for congestion detection",
+            "Gambles on packet delivery",
+            "Only works in Nevada region",
+            "Uses random packet timing"
+        ]
+    },
+    {
+        "q": "What is ECN in TCP?",
+        "o": [
+            "Explicit Congestion Notification",
+            "Encrypted Connection Network",
+            "Extended Control Notification",
+            "External Communication Node"
+        ]
+    },
+    {
+        "q": "How does ECN signal congestion?",
+        "o": [
+            "Routers mark packets instead of dropping",
+            "Endpoints encrypt congestion signals",
+            "Networks block congested paths",
+            "Servers send explicit messages"
+        ]
+    },
+    {
+        "q": "What is the ECN attack vector?",
+        "o": [
+            "Manipulating ECN bits maliciously",
+            "Encrypting all ECN traffic",
+            "Blocking ECN notifications",
+            "Duplicating ECN marked packets"
+        ]
+    },
+    {
+        "q": "What is the TCP Incast problem?",
+        "o": [
+            "Many-to-one communication causes losses",
+            "Incoming traffic is encrypted",
+            "Casting packets to many hosts",
+            "Internal network saturation"
+        ]
+    },
+    {
+        "q": "Where does TCP Incast commonly occur?",
+        "o": [
+            "Data center and storage networks",
+            "Home wireless networks",
+            "Mobile phone connections",
+            "Satellite communications"
+        ]
+    },
+    {
+        "q": "What is the Nagle algorithm?",
+        "o": [
+            "Coalescing small packets before sending",
+            "Encrypting network communications",
+            "Splitting large file transfers",
+            "Naming network protocols"
+        ]
+    },
+    {
+        "q": "What is the interaction between Nagle and delayed ACK?",
+        "o": [
+            "Can cause temporary deadlock",
+            "Improves overall throughput",
+            "Enables faster encryption",
+            "Reduces packet size"
+        ]
+    },
+    {
+        "q": "What is a TCP sockstress zero window attack?",
+        "o": [
+            "Advertising zero receive window permanently",
+            "Opening sockets without any window",
+            "Stressing socket with no traffic",
+            "Zero packets sent to socket"
+        ]
+    },
+    {
+        "q": "How does zero window attack exhaust resources?",
+        "o": [
+            "Server holds connection in memory",
+            "All network bandwidth is consumed",
+            "CPU processes infinite loops",
+            "Disk fills with log entries"
+        ]
+    },
+    {
+        "q": "What is TCP persist timer?",
+        "o": [
+            "Probes receiver when window is zero",
+            "Keeps connection alive permanently",
+            "Persists data across reboots",
+            "Maintains encryption state"
+        ]
+    },
+    {
+        "q": "What is a stick attack on load balancers?",
+        "o": [
+            "Exploiting session persistence mechanism",
+            "Physical attack on hardware",
+            "Sticky packet routing",
+            "Pointer-based memory attack"
+        ]
+    },
+    {
+        "q": "How can persistence attacks affect availability?",
+        "o": [
+            "Force traffic to single server",
+            "Distribute traffic evenly",
+            "Encrypt all server traffic",
+            "Block specific IP addresses"
+        ]
+    },
+    {
+        "q": "What is TCP segment offloading?",
+        "o": [
+            "NIC handles segmentation for CPU",
+            "Offloading TCP to cloud",
+            "Removing TCP overhead",
+            "Outsourcing connections"
+        ]
+    },
+    {
+        "q": "What security issue relates to TSO?",
+        "o": [
+            "Can create unusual packet sizes",
+            "Always encrypts segments",
+            "Increases CPU usage",
+            "Reduces network speed"
+        ]
+    },
+    {
+        "q": "What is Large Receive Offload?",
+        "o": [
+            "NIC combines received segments",
+            "Large file receiving method",
+            "Receiving oversized packets",
+            "Loading received data slowly"
+        ]
+    },
+    {
+        "q": "What is the RST cookie technique?",
+        "o": [
+            "Defense using initial RST response",
+            "Storing reset information",
+            "Cookie sent with RST packets",
+            "Resetting cookie storage"
+        ]
+    },
+    {
+        "q": "How does the RST cookie work?",
+        "o": [
+            "Verify reauthentication with expected sequence",
+            "Block all RST packets received",
+            "Encrypt RST packet contents",
+            "Reset all connection cookies"
+        ]
+    },
+    {
+        "q": "What is DNS based blackholing?",
+        "o": [
+            "Returning blackhole IP for DNS queries",
+            "Blocking DNS traffic completely",
+            "Encrypting DNS responses",
+            "Hiding DNS servers"
+        ]
+    },
+    {
+        "q": "What is a TCP split handshake attack?",
+        "o": [
+            "Exploiting simultaneous open sequence",
+            "Dividing handshake across paths",
+            "Splitting SYN into fragments",
+            "Separating encryption handshake"
+        ]
+    },
+    {
+        "q": "What is simultaneous open in TCP?",
+        "o": [
+            "Both sides send SYN simultaneously",
+            "Opening many ports at once",
+            "Parallel connection attempts",
+            "Synchronized time opening"
+        ]
+    },
+    {
+        "q": "What is the purpose of TCP state tracking in firewalls?",
+        "o": [
+            "Track connection lifecycle for filtering",
+            "Store TCP passwords temporarily",
+            "Encrypt connection state data",
+            "Compress routing information"
+        ]
+    },
+    {
+        "q": "What is connection tracking bypass?",
+        "o": [
+            "Evading stateful firewall inspection",
+            "Tracking encrypted connections",
+            "Bypassing connection limits",
+            "Avoiding traffic monitoring"
+        ]
+    },
+    {
+        "q": "What is the FTP bounce attack?",
+        "o": [
+            "Using FTP PORT to scan third parties",
+            "Bouncing files between servers",
+            "Redirecting FTP traffic",
+            "FTP connection refresh"
+        ]
+    },
+    {
+        "q": "Why is passive FTP more secure?",
+        "o": [
+            "Server does not connect to client",
+            "All traffic is encrypted",
+            "Uses authentication always",
+            "Transfers files faster"
+        ]
+    },
+    {
+        "q": "What is TCP wrapper security?",
+        "o": [
+            "Host-based access control for services",
+            "Wrapping TCP in encryption",
+            "Physical wire protection",
+            "Container for TCP data"
+        ]
+    },
+    {
+        "q": "What files control TCP wrappers?",
+        "o": [
+            "hosts.allow and hosts.deny",
+            "tcp.conf and tcp.rules",
+            "wrapper.cfg and filter.cfg",
+            "access.list and deny.list"
+        ]
+    },
+    {
+        "q": "What is the nonce in network protocols?",
+        "o": [
+            "Number used once for freshness",
+            "Named network connection",
+            "Null value in encryption",
+            "Node communication code"
+        ]
+    },
+    {
+        "q": "How do nonces prevent replay attacks?",
+        "o": [
+            "Each request requires unique nonce",
+            "Nonces encrypt all traffic",
+            "Random timing of packets",
+            "Blocking repeated sources"
+        ]
+    },
+    {
+        "q": "What is the challenge-response protocol?",
+        "o": [
+            "Prove identity by computing response",
+            "Ask questions to verify identity",
+            "Challenge attacker to decrypt",
+            "Respond to network challenges"
+        ]
+    },
+    {
+        "q": "What is TCP over TLS?",
+        "o": [
+            "Encrypting TCP payload with TLS",
+            "Replacing TCP with TLS",
+            "TLS running over TCP",
+            "Combining TCP and TLS layers"
+        ]
+    },
+    {
+        "q": "What layer does TLS operate at?",
+        "o": [
+            "Between transport and application",
+            "Network layer only",
+            "Physical layer",
+            "Data link layer"
+        ]
+    },
+    {
+        "q": "What is STARTTLS?",
+        "o": [
+            "Upgrading plain connection to TLS",
+            "Starting TLS from beginning",
+            "Initializing TLS servers",
+            "Testing TLS connections"
+        ]
+    },
+    {
+        "q": "What is the STARTTLS stripping attack?",
+        "o": [
+            "MITM blocks TLS upgrade command",
+            "Removing all TLS encryption",
+            "Stripping TLS certificates",
+            "Cleaning TLS cache data"
+        ]
+    },
+    {
+        "q": "What is opportunistic encryption?",
+        "o": [
+            "Encrypt when possible without auth",
+            "Seizing encryption opportunities",
+            "Optional encryption for speed",
+            "Encryption during low traffic"
+        ]
+    },
+    {
+        "q": "What is tcpcrypt?",
+        "o": [
+            "Opportunistic TCP encryption protocol",
+            "Tool for cracking TCP",
+            "TCP password encryption",
+            "Cryptographic TCP testing"
+        ]
+    },
+    {
+        "q": "What is the benefit of tcpcrypt?",
+        "o": [
+            "Encryption without configuration",
+            "Faster TCP connections",
+            "Smaller packet sizes",
+            "Better error correction"
+        ]
+    },
+    {
+        "q": "What is TCP/IP fingerprint spoofing?",
+        "o": [
+            "Modifying stack characteristics",
+            "Copying fingerprints digitally",
+            "Stealing TCP passwords",
+            "Spoofing IP addresses"
+        ]
+    },
+    {
+        "q": "What tools can modify OS fingerprints?",
+        "o": [
+            "OSfuscate and Fingerprint Fucator",
+            "Nmap and Wireshark only",
+            "Standard OS settings page",
+            "Windows Registry Editor"
+        ]
+    },
+    {
+        "q": "What is a promiscuous mode attack?",
+        "o": [
+            "Exploit NIC capturing all packets",
+            "Attack using improper language",
+            "Promiscuous server connections",
+            "Mixed mode encryption attack"
+        ]
+    },
+    {
+        "q": "How can promiscuous mode be detected?",
+        "o": [
+            "Send packets that only promiscuous NICs see",
+            "Check network adapter settings",
+            "Monitor CPU usage patterns",
+            "Analyze disk activity"
+        ]
+    },
+    {
+        "q": "What is the ARP announcement?",
+        "o": [
+            "Gratuitous ARP updating mappings",
+            "Announcement of new routers",
+            "Declaring network presence",
+            "Authentication request packet"
+        ]
+    },
+    {
+        "q": "How do gratuitous ARP packets enable attacks?",
+        "o": [
+            "Update ARP caches without request",
+            "Request MAC address information",
+            "Encrypt ARP communications",
+            "Block ARP traffic entirely"
+        ]
+    },
+    {
+        "q": "What is Dynamic ARP Inspection?",
+        "o": [
+            "Switch feature validating ARP packets",
+            "Inspecting files for malware",
+            "Dynamic IP address allocation",
+            "Automatic router protocol"
+        ]
+    },
+    {
+        "q": "How does DAI prevent ARP spoofing?",
+        "o": [
+            "Verify ARP against DHCP snooping database",
+            "Encrypts all ARP packets",
+            "Blocks all ARP traffic",
+            "Routes ARP through firewall"
+        ]
+    },
+    {
+        "q": "What is DHCP snooping?",
+        "o": [
+            "Switch security filtering DHCP traffic",
+            "Monitoring DHCP server logs",
+            "Sniffing DHCP passwords",
+            "DHCP packet encryption"
+        ]
+    },
+    {
+        "q": "What is a rogue DHCP server attack?",
+        "o": [
+            "Unauthorized DHCP providing wrong info",
+            "Real DHCP server misconfigured",
+            "DHCP encryption broken",
+            "DHCP server overloaded"
+        ]
+    },
+    {
+        "q": "What is DHCP starvation attack?",
+        "o": [
+            "Exhausting DHCP address pool",
+            "Starving DHCP server of power",
+            "Blocking DHCP traffic flow",
+            "DHCP timeout exploitation"
+        ]
+    },
+    {
+        "q": "How can DHCP starvation be prevented?",
+        "o": [
+            "Port security and rate limiting",
+            "Encryption of DHCP packets",
+            "Larger IP address pools",
+            "Faster DHCP servers"
+        ]
+    },
+    {
+        "q": "What is IP Source Guard?",
+        "o": [
+            "Switch feature filtering spoofed IPs",
+            "Protecting source code files",
+            "Guarding server IP addresses",
+            "Source routing protection"
+        ]
+    },
+    {
+        "q": "How does IP Source Guard work?",
+        "o": [
+            "Binds IP to port from DHCP snooping",
+            "Encrypts IP source addresses",
+            "Blocks all IP traffic initially",
+            "Monitors IP usage patterns"
+        ]
+    },
+    {
+        "q": "What is private VLAN?",
+        "o": [
+            "VLAN isolation within a VLAN",
+            "VPN over VLAN technology",
+            "Private virtual LAN address",
+            "VLAN encryption method"
+        ]
+    },
+    {
+        "q": "How do private VLANs improve security?",
+        "o": [
+            "Prevent horizontal attacks between hosts",
+            "Encrypt all VLAN traffic",
+            "Speed up VLAN switching",
+            "Reduce VLAN overhead"
+        ]
+    },
+    {
+        "q": "What is 802.1AE MACsec?",
+        "o": [
+            "Layer 2 encryption standard",
+            "Wireless security protocol",
+            "MAC address encoding",
+            "Section 1 of 802 standard"
+        ]
+    },
+    {
+        "q": "What does MACsec protect against?",
+        "o": [
+            "Eavesdropping and tampering on LAN",
+            "Wireless password cracking",
+            "Internet-based attacks only",
+            "Software vulnerabilities"
+        ]
+    },
+    {
+        "q": "What is 802.1X port-based access control?",
+        "o": [
+            "Authentication before network access",
+            "Controlling port speed settings",
+            "Physical port security lock",
+            "Port forwarding configuration"
+        ]
+    },
+    {
+        "q": "What are the components of 802.1X?",
+        "o": [
+            "Supplicant authenticator and server",
+            "Client server and gateway",
+            "Switch router and firewall",
+            "Hub bridge and repeater"
+        ]
+    },
+    {
+        "q": "What is EAP in 802.1X?",
+        "o": [
+            "Extensible Authentication Protocol",
+            "Extended Access Protocol",
+            "Encrypted Application Protocol",
+            "External Authorization Protocol"
+        ]
+    },
+    {
+        "q": "What is EAP-TLS?",
+        "o": [
+            "Certificate-based EAP authentication",
+            "TLS over EAP protocol",
+            "Extended TLS for applications",
+            "Encrypted TLS tunneling"
+        ]
+    },
+    {
+        "q": "What is PEAP?",
+        "o": [
+            "Protected EAP using TLS tunnel",
+            "Personal EAP for home use",
+            "Private Extensible Protocol",
+            "Protocol for EAP Applications"
+        ]
+    },
+    {
+        "q": "What attack targets 802.1X?",
+        "o": [
+            "Inserting unauthorized device after auth",
+            "Breaking TLS encryption",
+            "Guessing EAP passwords",
+            "Flooding with auth requests"
+        ]
+    },
+    {
+        "q": "What is MAC Authentication Bypass?",
+        "o": [
+            "Fallback auth using MAC address",
+            "Bypassing MAC filtering entirely",
+            "Breaking MAC encryption",
+            "Avoiding MAC address logging"
+        ]
+    },
+    {
+        "q": "What is the security weakness of MAB?",
+        "o": [
+            "MAC addresses can be easily spoofed",
+            "MAB provides strong encryption",
+            "Always requires certificates",
+            "Uses complex authentication"
+        ]
+    },
+    {
+        "q": "What is Cisco TrustSec?",
+        "o": [
+            "Security group tagging architecture",
+            "Trust verification software",
+            "Secret storage technology",
+            "Trusted execution environment"
+        ]
+    },
+    {
+        "q": "How does SGT improve network security?",
+        "o": [
+            "Policy based on identity not topology",
+            "Encrypts all security groups",
+            "Groups based on IP address",
+            "Trusts all tagged traffic"
+        ]
+    },
+    {
+        "q": "What is microsegmentation?",
+        "o": [
+            "Granular network isolation policies",
+            "Micro-sized network segments",
+            "Segmenting microservices only",
+            "Small packet fragmentation"
+        ]
+    },
+    {
+        "q": "How does microsegmentation prevent lateral movement?",
+        "o": [
+            "Each workload has unique policy",
+            "Encrypts all east-west traffic",
+            "Blocks all internal traffic",
+            "Segments by time of day"
+        ]
+    },
+    {
+        "q": "What is network behavior analysis?",
+        "o": [
+            "Detecting anomalies in traffic patterns",
+            "Analyzing user behavior online",
+            "Behavioral training for networks",
+            "Testing network functionality"
+        ]
+    },
+    {
+        "q": "What is NetFlow used for in security?",
+        "o": [
+            "Traffic metadata for analysis",
+            "Flowing network traffic faster",
+            "Encrypting flow data",
+            "Blocking malicious flows"
+        ]
+    },
+    {
+        "q": "What information does NetFlow capture?",
+        "o": [
+            "Source dest IPs ports and bytes",
+            "Full packet payload content",
+            "Encryption keys and passwords",
+            "User account information"
+        ]
+    },
+    {
+        "q": "What is IPFIX?",
+        "o": [
+            "IP Flow Information Export standard",
+            "IP Fix for network problems",
+            "Internet Protocol Index",
+            "IP Filtering Index"
+        ]
+    },
+    {
+        "q": "What is sFlow?",
+        "o": [
+            "Sampled packet and counter export",
+            "Secure flow encryption",
+            "Slow flow control",
+            "Short flow management"
+        ]
+    },
+    {
+        "q": "What is the difference between NetFlow and sFlow?",
+        "o": [
+            "sFlow samples while NetFlow tracks flows",
+            "Both are exactly the same",
+            "NetFlow is sampled sFlow is not",
+            "sFlow is Cisco specific"
+        ]
+    },
+    {
+        "q": "What is a network tap?",
+        "o": [
+            "Hardware device copying traffic",
+            "Tapping into network cables",
+            "Testing network performance",
+            "Network speed control"
+        ]
+    },
+    {
+        "q": "Why are taps preferred over span ports?",
+        "o": [
+            "No packet loss and full duplex",
+            "Cheaper than SPAN ports",
+            "Easier to configure",
+            "Work wirelessly"
+        ]
+    },
+    {
+        "q": "What is a network packet broker?",
+        "o": [
+            "Aggregates and filters traffic",
+            "Brokers between networks",
+            "Sells network packets",
+            "Negotiates bandwidth"
+        ]
+    },
+    {
+        "q": "What is SSL/TLS inspection?",
+        "o": [
+            "Decrypting traffic for analysis",
+            "Inspecting SSL certificates",
+            "Testing TLS performance",
+            "Measuring encryption speed"
+        ]
+    },
+    {
+        "q": "What is the security concern with TLS inspection?",
+        "o": [
+            "Creates additional attack surface",
+            "Makes encryption stronger",
+            "Speeds up connections",
+            "Reduces network load"
+        ]
+    },
+    {
+        "q": "What is certificate pinning?",
+        "o": [
+            "App validates specific certificate",
+            "Pinning certificates to wall",
+            "Attaching pins to certificates",
+            "Certificate organization method"
+        ]
+    },
+    {
+        "q": "How does cert pinning prevent MITM?",
+        "o": [
+            "Rejects unexpected certificates",
+            "Pins attacker to network",
+            "Encrypts all pinned traffic",
+            "Speeds up authentication"
+        ]
+    },
+    {
+        "q": "What is HPKP?",
+        "o": [
+            "HTTP Public Key Pinning standard",
+            "High Performance Key Protocol",
+            "HTTP Private Key Protection",
+            "Hypertext Public Key Policy"
+        ]
+    },
+    {
+        "q": "Why was HPKP deprecated?",
+        "o": [
+            "Risk of denial of service",
+            "Provided no real security",
+            "Too slow to implement",
+            "Replaced by encryption"
+        ]
+    },
+    {
+        "q": "What is Expect-CT header?",
+        "o": [
+            "Certificate Transparency enforcement",
+            "Expecting client connection",
+            "Content type expectation",
+            "CT scan for security"
+        ]
+    },
+    {
+        "q": "What is Certificate Transparency?",
+        "o": [
+            "Public logging of issued certs",
+            "Transparent certificate display",
+            "See-through certificates",
+            "Clear encryption method"
+        ]
+    },
+    {
+        "q": "How does CT help detect misissued certs?",
+        "o": [
+            "Domain owners monitor logs",
+            "Logs automatically revoke certs",
+            "Transparency blocks bad certs",
+            "CT encrypts certificates"
+        ]
+    },
+    {
+        "q": "What is OCSP stapling?",
+        "o": [
+            "Server provides cert revocation status",
+            "Stapling OCSP documents together",
+            "Online certificate storage",
+            "OCSP file organization"
+        ]
+    },
+    {
+        "q": "Why is OCSP stapling preferred?",
+        "o": [
+            "Better privacy and performance",
+            "Stronger encryption provided",
+            "More staples mean more secure",
+            "Required by law"
+        ]
+    },
+    {
+        "q": "What is CAA DNS record?",
+        "o": [
+            "Specifies allowed certificate authorities",
+            "Certificate Authentication Authority",
+            "Cryptographic Address Association",
+            "CA Account Access record"
+        ]
+    },
+    {
+        "q": "How does CAA prevent unauthorized certs?",
+        "o": [
+            "CAs check CAA before issuing",
+            "Blocks all CA connections",
+            "Encrypts CA communications",
+            "Authenticates all CAs"
+        ]
+    },
+    {
+        "q": "What is DANE?",
+        "o": [
+            "DNS-based Auth Named Entities",
+            "Domain Authentication Network",
+            "Digital Authentication Names",
+            "DNS Access Network Entity"
+        ]
+    },
+    {
+        "q": "How does DANE improve TLS security?",
+        "o": [
+            "Binds certificates to DNS via DNSSEC",
+            "Encrypts all DNS traffic",
+            "Blocks malicious domains",
+            "Creates new certificate types"
+        ]
+    },
+    {
+        "q": "What is the TLSA record?",
+        "o": [
+            "DNS record for DANE certificate info",
+            "TLS Authentication record",
+            "Transport Layer Security Address",
+            "TLS Application record"
+        ]
+    },
+    {
+        "q": "What is TCP stack hardening?",
+        "o": [
+            "Configuring TCP for security",
+            "Making physical cables harder",
+            "Stacking TCP connections",
+            "Hardening server hardware"
+        ]
+    },
+    {
+        "q": "What is syncache in FreeBSD?",
+        "o": [
+            "Efficient half-open connection storage",
+            "Synchronizing cache data",
+            "Cache for sync operations",
+            "Synchronized file caching"
+        ]
+    },
+    {
+        "q": "What is syn_data_retrans?",
+        "o": [
+            "Retransmit data in SYN for TFO",
+            "Synchronize data retransmission",
+            "SYN data relay transmission",
+            "Synthetic data retransmit"
+        ]
+    },
+    {
+        "q": "What is randomized port allocation?",
+        "o": [
+            "Random source port selection",
+            "Randomly assigning server ports",
+            "Port allocation gambling",
+            "Random port scanning"
+        ]
+    },
+    {
+        "q": "Why does randomized allocation help security?",
+        "o": [
+            "Harder to predict for spoofing",
+            "Makes ports run faster",
+            "Encrypts port numbers",
+            "Blocks port scanners"
+        ]
+    },
+    {
+        "q": "What is the purpose of tcp_challenge_ack_limit?",
+        "o": [
+            "Limit challenge ACKs per second",
+            "Challenge all incoming ACKs",
+            "Limit ACK packet size",
+            "Count total ACK packets"
+        ]
+    },
+    {
+        "q": "What vulnerability relates to challenge ACK limits?",
+        "o": [
+            "Off-path TCP injection attack",
+            "On-path packet modification",
+            "Challenge packet flooding",
+            "ACK encryption bypass"
+        ]
+    },
+    {
+        "q": "What is IP spoofing detection via TCP?",
+        "o": [
+            "Using TCP to verify source IPs",
+            "Detecting spoofed TCP packets",
+            "Finding IP in TCP header",
+            "Blocking TCP from bad IPs"
+        ]
+    },
+    {
+        "q": "What is traceroute used for in security?",
+        "o": [
+            "Map network path and topology",
+            "Tracing route of attackers",
+            "Following malware spread",
+            "Tracking user activity"
+        ]
+    },
+    {
+        "q": "How does Paris traceroute differ?",
+        "o": [
+            "Consistent probing for load balancers",
+            "French version of traceroute",
+            "Encrypted traceroute packets",
+            "Faster traceroute speed"
+        ]
+    },
+    {
+        "q": "What is ICMP rate limiting?",
+        "o": [
+            "Restricting ICMP packet rate",
+            "Limiting ICMP to specific IPs",
+            "Rating ICMP performance",
+            "ICMP speed control"
+        ]
+    },
+    {
+        "q": "How does ICMP rate limiting affect security scans?",
+        "o": [
+            "Slows down active reconnaissance",
+            "Blocks all scanning completely",
+            "Makes scans more accurate",
+            "Encrypts scan results"
+        ]
+    },
+    {
+        "q": "What is IP spoofing via DNS?",
+        "o": [
+            "Using DNS to attack spoofed IP",
+            "Spoofing DNS server IPs",
+            "DNS lookup for spoofed IPs",
+            "Blocking DNS from spoofed IPs"
+        ]
+    },
+    {
+        "q": "What is the NTP amplification attack?",
+        "o": [
+            "Using NTP monlist for DDoS",
+            "Amplifying network time signals",
+            "Making NTP responses faster",
+            "Increasing NTP accuracy"
+        ]
+    },
+    {
+        "q": "What command triggers NTP amplification?",
+        "o": [
+            "monlist returning recent clients",
+            "ntpdate synchronizing time",
+            "ntpq showing peer status",
+            "ntpdc querying daemon"
+        ]
+    },
+    {
+        "q": "What is memcached amplification?",
+        "o": [
+            "DDoS using memcached responses",
+            "Speeding up memcached servers",
+            "Amplifying cache performance",
+            "Increasing cache size"
+        ]
+    },
+    {
+        "q": "What amplification factor can memcached achieve?",
+        "o": [
+            "Over 50000x amplification possible",
+            "Maximum 10x amplification",
+            "No amplification at all",
+            "Fixed 100x amplification"
+        ]
+    },
+    {
+        "q": "What is LDAP amplification?",
+        "o": [
+            "DDoS using CLDAP responses",
+            "Amplifying LDAP queries",
+            "Speeding up LDAP servers",
+            "Increasing LDAP bandwidth"
+        ]
+    },
+    {
+        "q": "What IP protocol is especially vulnerable to amplification?",
+        "o": [
+            "UDP due to connectionless nature",
+            "TCP because of handshake",
+            "ICMP for ping responses",
+            "GRE for tunneling"
+        ]
+    },
+    {
+        "q": "What is the TCP Meltdown attack?",
+        "o": [
+            "Congestion through in-order delivery",
+            "Melting down TCP connections",
+            "Overheating network hardware",
+            "Destroying TCP state tables"
+        ]
+    },
+    {
+        "q": "Where does TCP Meltdown commonly occur?",
+        "o": [
+            "VPN tunnels over lossy links",
+            "Direct Ethernet connections",
+            "Fiber optic networks",
+            "Wired LAN environments"
+        ]
+    },
+    {
+        "q": "What is the interaction problem in TCP over TCP?",
+        "o": [
+            "Inner retransmits before outer",
+            "Both TCP layers encrypt separately",
+            "Outer TCP is slower than inner",
+            "Two TCP layers cannot connect"
+        ]
+    },
+    {
+        "q": "What is SYN flood mitigation via hardware?",
+        "o": [
+            "ASIC-based SYN proxy handling",
+            "Physical SYN packet blocking",
+            "Hardware firewall for SYN",
+            "SYN encryption accelerator"
+        ]
+    },
+    {
+        "q": "What is the purpose of threat intelligence feeds?",
+        "o": [
+            "Known malicious IP blocking",
+            "Feeding information to threats",
+            "Intelligence testing tools",
+            "Threat analysis training"
+        ]
+    },
+    {
+        "q": "What is IP reputation scoring?",
+        "o": [
+            "Rating IP addresses for trust",
+            "Scoring IP performance speed",
+            "Reputation of IP protocols",
+            "IP address ranking system"
+        ]
+    },
+    {
+        "q": "What factors affect IP reputation?",
+        "o": [
+            "Past malicious activity history",
+            "Geographic IP location only",
+            "IP address numerical value",
+            "Network speed from IP"
+        ]
+    },
+    {
+        "q": "What is geofencing in network security?",
+        "o": [
+            "Blocking traffic by geography",
+            "Fencing network equipment",
+            "Geographic network mapping",
+            "Geo-location encryption"
+        ]
+    },
+    {
+        "q": "What are the limitations of geofencing?",
+        "o": [
+            "VPNs and proxies bypass it",
+            "Too expensive to implement",
+            "Slows network significantly",
+            "Requires special hardware"
+        ]
+    },
+    {
+        "q": "What is a cleaning center in DDoS mitigation?",
+        "o": [
+            "Scrubs malicious from legitimate traffic",
+            "Cleans physical network equipment",
+            "Cleaning malware from servers",
+            "Center for network maintenance"
+        ]
+    },
+    {
+        "q": "How does traffic diversion work in DDoS defense?",
+        "o": [
+            "Reroute traffic through cleaning center",
+            "Divert traffic away from network",
+            "Block all diverted traffic",
+            "Encrypt diverted packets"
+        ]
+    },
+    {
+        "q": "What is BGP flowspec?",
+        "o": [
+            "Traffic filtering via BGP",
+            "Specification for BGP flow",
+            "Flow control in BGP",
+            "BGP speed specification"
+        ]
+    },
+    {
+        "q": "How does flowspec help during attacks?",
+        "o": [
+            "Distribute filtering rules via BGP",
+            "Encrypt all BGP traffic",
+            "Block all BGP connections",
+            "Speed up BGP convergence"
+        ]
+    },
+    {
+        "q": "What is the SDP architecture?",
+        "o": [
+            "Software Defined Perimeter hiding services",
+            "System Data Protection framework",
+            "Service Delivery Platform design",
+            "Secure Data Processing architecture"
+        ]
+    },
+    {
+        "q": "How does SDP use dark networks?",
+        "o": [
+            "Services invisible until authorized",
+            "Uses dark web for routing",
+            "Encrypts in darkness mode",
+            "Operates after sunset only"
+        ]
+    },
+    {
+        "q": "What is Zero Trust Network Access?",
+        "o": [
+            "Never trust always verify model",
+            "Zero network access allowed",
+            "Trusting no one at all",
+            "Network with zero security"
+        ]
+    },
+    {
+        "q": "How does ZTNA differ from VPN?",
+        "o": [
+            "Per-application not network access",
+            "Uses same technology as VPN",
+            "VPN is more granular",
+            "No difference at all"
+        ]
+    },
+    {
+        "q": "What is the SASE architecture?",
+        "o": [
+            "Secure Access Service Edge converged",
+            "System Access Security Enterprise",
+            "Service Access Secure Endpoint",
+            "Security Architecture System Edge"
+        ]
+    },
+    {
+        "q": "What components does SASE combine?",
+        "o": [
+            "SD-WAN and security services",
+            "Only firewall and VPN",
+            "Just antivirus and backup",
+            "Router and switch only"
+        ]
+    },
+    {
+        "q": "What is TCP Fast Open Cookie Theft?",
+        "o": [
+            "Stealing TFO tokens for impersonation",
+            "Fast stealing of browser cookies",
+            "Quick cookie encryption bypass",
+            "Rapid cookie generation attack"
+        ]
+    },
+    {
+        "q": "What is the purpose of TCP-ENO?",
+        "o": [
+            "Encryption Negotiation Option for TCP",
+            "Enhanced Network Operation",
+            "Extended Network Options",
+            "Encrypted Network Operations"
+        ]
+    },
+    {
+        "q": "How does TCP-ENO work with tcpcrypt?",
+        "o": [
+            "Provides negotiation framework",
+            "Replaces tcpcrypt entirely",
+            "Only works separately",
+            "No connection at all"
+        ]
+    },
+    {
+        "q": "What is the challenge of encrypting TCP headers?",
+        "o": [
+            "Middleboxes need header access",
+            "Headers are too small",
+            "Encryption is too slow",
+            "No algorithms exist"
+        ]
+    },
+    {
+        "q": "What is a middlebox in networking?",
+        "o": [
+            "Device modifying traffic in transit",
+            "Physical box in middle of room",
+            "Medium sized network device",
+            "Box between two servers"
+        ]
+    },
+    {
+        "q": "How does encapsulation defeat middlebox interference?",
+        "o": [
+            "Hide original headers from inspection",
+            "Make packets physically larger",
+            "Encrypt the middlebox itself",
+            "Route around middleboxes"
+        ]
+    },
+    {
+        "q": "What is MPTCP security subflow?",
+        "o": [
+            "Additional path for redundancy",
+            "Encrypted flow path",
+            "Secondary security channel",
+            "Main traffic pathway"
+        ]
+    },
+    {
+        "q": "What is the ADD_ADDR attack in MPTCP?",
+        "o": [
+            "Hijacking with false address addition",
+            "Adding too many addresses",
+            "Address allocation failure",
+            "Advertising fake addresses"
+        ]
+    },
+    {
+        "q": "How does MPTCP v1 improve security?",
+        "o": [
+            "HMAC authentication of tokens",
+            "Encrypts all subflows",
+            "Blocks all new paths",
+            "Uses only single path"
+        ]
+    },
+    {
+        "q": "What is the purpose of Network Service Headers?",
+        "o": [
+            "Service chaining metadata",
+            "Network naming system",
+            "Header encryption service",
+            "Service discovery protocol"
+        ]
+    },
+    {
+        "q": "What security concerns exist with NSH?",
+        "o": [
+            "Trusted domain assumption vulnerability",
+            "Encryption overhead too high",
+            "Headers consume bandwidth",
+            "No known security issues"
+        ]
+    },
+    {
+        "q": "What is segment routing?",
+        "o": [
+            "Source specifies path via segments",
+            "Routing in network segments",
+            "Segmenting route tables",
+            "Division of routing domains"
+        ]
+    },
+    {
+        "q": "What security issue relates to segment routing?",
+        "o": [
+            "Packets can bypass controls via path",
+            "Segments are always encrypted",
+            "Routing becomes more secure",
+            "No security implications"
+        ]
+    },
+    {
+        "q": "What is eBPF in network security?",
+        "o": [
+            "Programmable kernel packet filtering",
+            "Extended Backup Protocol Filter",
+            "Encrypted Block Packet Format",
+            "Enhanced Bandwidth Protocol"
+        ]
+    },
+    {
+        "q": "How can eBPF improve security monitoring?",
+        "o": [
+            "Deep packet inspection in kernel",
+            "Encrypt all network packets",
+            "Block all suspicious traffic",
+            "Accelerate network speed"
+        ]
+    },
+    {
+        "q": "What is XDP in the Linux kernel?",
+        "o": [
+            "eXpress Data Path for fast processing",
+            "Extended Data Protocol handler",
+            "XML Data Processing module",
+            "External Data Protection"
+        ]
+    },
+    {
+        "q": "How can XDP mitigate DDoS attacks?",
+        "o": [
+            "Drop packets before network stack",
+            "Encrypt packets faster",
+            "Block at application layer",
+            "Filter after processing"
+        ]
+    },
+    {
+        "q": "What is programmable data plane?",
+        "o": [
+            "Custom packet processing logic",
+            "Programming network planes",
+            "Data center programming",
+            "Plane scheduling system"
+        ]
+    },
+    {
+        "q": "What is P4 programming language?",
+        "o": [
+            "Protocol-independent packet processor",
+            "Programming for Protocol 4",
+            "Packet Processing Pipeline",
+            "Protocol Processing Platform"
+        ]
+    },
+    {
+        "q": "How does P4 enable new security functions?",
+        "o": [
+            "Custom parsing and matching logic",
+            "Encrypts all P4 programs",
+            "Blocks non-P4 traffic",
+            "Replaces all protocols"
+        ]
+    },
+    {
+        "q": "What is network function virtualization?",
+        "o": [
+            "Software-based network functions",
+            "Virtualizing network cables",
+            "Function calls over network",
+            "Virtual network protocols"
+        ]
+    },
+    {
+        "q": "What security considerations exist for NFV?",
+        "o": [
+            "Shared infrastructure and isolation",
+            "Virtual functions are slower",
+            "No security implications",
+            "Always more secure than hardware"
+        ]
+    },
+    {
+        "q": "What is intent-based networking?",
+        "o": [
+            "Declarative policy enforcement",
+            "Network based on intentions",
+            "Intentional packet sending",
+            "Network purpose tracking"
+        ]
+    },
+    {
+        "q": "How does IBN improve security posture?",
+        "o": [
+            "Automated policy verification",
+            "Manual security reviews",
+            "Removes need for security",
+            "Blocks all network traffic"
+        ]
+    },
+    {
+        "q": "What is SDN controller security?",
+        "o": [
+            "Protecting centralized network control",
+            "Securing data center networks",
+            "Software development security",
+            "Controller physical protection"
+        ]
+    },
+    {
+        "q": "What is the risk of SDN controller compromise?",
+        "o": [
+            "Complete network visibility and control",
+            "Only affects local segment",
+            "Minimal impact on network",
+            "No security implication"
+        ]
+    },
+    {
+        "q": "What is the OpenFlow protocol?",
+        "o": [
+            "SDN controller to switch communication",
+            "Open source network flow",
+            "Flowing data openly",
+            "Flow control for open networks"
+        ]
+    },
+    {
+        "q": "What security features does OpenFlow lack?",
+        "o": [
+            "Built-in authentication and encryption",
+            "Flow table management",
+            "Packet matching capabilities",
+            "Controller communication"
+        ]
+    },
+    {
+        "q": "What is north-south traffic?",
+        "o": [
+            "Traffic entering and leaving data center",
+            "Northern hemisphere traffic",
+            "Up and down network movement",
+            "Vertical packet routing"
+        ]
+    },
+    {
+        "q": "What is east-west traffic?",
+        "o": [
+            "Traffic between servers in data center",
+            "Eastern hemisphere traffic",
+            "Left and right network movement",
+            "Horizontal packet routing"
+        ]
+    },
+    {
+        "q": "Why is east-west traffic security challenging?",
+        "o": [
+            "High volume and traditional perimeter focus",
+            "Traffic moves too quickly",
+            "Encryption is impossible",
+            "No monitoring tools exist"
+        ]
+    },
+    {
+        "q": "What is network traffic analysis?",
+        "o": [
+            "Examining communication patterns for threats",
+            "Analyzing network performance only",
+            "Traffic planning for networks",
+            "Network capacity analysis"
+        ]
+    },
+    {
+        "q": "What is encrypted traffic analysis?",
+        "o": [
+            "Detecting threats without decryption",
+            "Analyzing encryption algorithms",
+            "Breaking encrypted traffic",
+            "Encrypting traffic analysis"
+        ]
+    },
+    {
+        "q": "What metadata reveals threats in encryption?",
+        "o": [
+            "Packet sizes timing and destinations",
+            "The encryption key used",
+            "The actual message content",
+            "The user password"
+        ]
+    },
+    {
+        "q": "What is JA3 fingerprinting?",
+        "o": [
+            "TLS client fingerprint from handshake",
+            "Japanese version 3 protocol",
+            "Just Another 3-way handshake",
+            "Joint Authentication 3"
+        ]
+    },
+    {
+        "q": "How does JA3 help detect malware?",
+        "o": [
+            "Malware has unique TLS signatures",
+            "Blocks all JA3 traffic",
+            "Encrypts JA3 fingerprints",
+            "JA3 decrypts malware"
+        ]
+    },
+    {
+        "q": "What is JA3S?",
+        "o": [
+            "Server-side TLS fingerprint",
+            "JA3 Security version",
+            "Japanese 3 Server",
+            "Just Another 3 Server"
+        ]
+    },
+    {
+        "q": "What is HASSH?",
+        "o": [
+            "SSH client and server fingerprinting",
+            "Hash SSH acronym",
+            "Hidden SSH protocol",
+            "Hashed Socket Shell"
+        ]
+    },
+    {
+        "q": "What is network deception technology?",
+        "o": [
+            "Decoys to detect and delay attackers",
+            "Deceiving network users",
+            "Deceptive network naming",
+            "Network magic tricks"
+        ]
+    },
+    {
+        "q": "What is a honey token?",
+        "o": [
+            "Fake credential that alerts on use",
+            "Sweet network authentication",
+            "Honey encrypted token",
+            "Token made of honey"
+        ]
+    },
+    {
+        "q": "What is a canary trap in security?",
+        "o": [
+            "Unique markers to detect leaks",
+            "Trap for network birds",
+            "Canary network testing",
+            "Yellow alert system"
+        ]
+    },
+    {
+        "q": "What is deception-in-depth?",
+        "o": [
+            "Multiple deception layers throughout",
+            "Deep network deception",
+            "Deceptive depth analysis",
+            "In-depth lying"
+        ]
+    },
+    {
+        "q": "What is moving target defense?",
+        "o": [
+            "Constantly changing attack surface",
+            "Moving network equipment",
+            "Target relocation defense",
+            "Mobile defense systems"
+        ]
+    },
+    {
+        "q": "How does IP address randomization help?",
+        "o": [
+            "Makes reconnaissance harder",
+            "Speeds up network traffic",
+            "Encrypts IP addresses",
+            "Blocks IP scanning"
+        ]
+    },
+    {
+        "q": "What is port hopping defense?",
+        "o": [
+            "Services change ports periodically",
+            "Hopping between network ports",
+            "Port jumping attack",
+            "Sports hopping protocol"
+        ]
+    },
+    {
+        "q": "What is network obfuscation?",
+        "o": [
+            "Hiding network characteristics from attackers",
+            "Obscuring network cables",
+            "Confusing network names",
+            "Obfuscating network speeds"
+        ]
+    },
+    {
+        "q": "What is traffic morphing?",
+        "o": [
+            "Changing traffic to look like something else",
+            "Morphing network shapes",
+            "Traffic transformation",
+            "Morphological traffic"
+        ]
+    },
+    {
+        "q": "What is protocol mimicry?",
+        "o": [
+            "Malware imitating legitimate protocols",
+            "Mimicking protocol sounds",
+            "Protocol imitation game",
+            "Copying protocol names"
+        ]
+    },
+    {
+        "q": "How can protocol mimicry evade detection?",
+        "o": [
+            "Traffic appears as allowed protocol",
+            "Protocols become invisible",
+            "Mimicry encrypts traffic",
+            "Detection systems fail"
+        ]
+    },
+    {
+        "q": "What is domain fronting?",
+        "o": [
+            "Using CDN to hide true destination",
+            "Front of domain name",
+            "Domain facing forward",
+            "Frontal domain attack"
+        ]
+    },
+    {
+        "q": "Why is domain fronting effective?",
+        "o": [
+            "Traffic appears to go to CDN provider",
+            "Encrypts domain names completely",
+            "Blocks all domain access",
+            "Speeds up domain resolution"
+        ]
+    },
+    {
+        "q": "What is DNS tunneling?",
+        "o": [
+            "Encoding data in DNS queries",
+            "Tunneling through DNS servers",
+            "DNS encryption method",
+            "Tunnel named after DNS"
+        ]
+    },
+    {
+        "q": "How can DNS tunneling be detected?",
+        "o": [
+            "Unusual query patterns and sizes",
+            "Impossible to detect DNS tunnels",
+            "Only by blocking all DNS",
+            "Detection not needed"
+        ]
+    },
+    {
+        "q": "What is ICMP tunneling?",
+        "o": [
+            "Data hidden in ICMP payload",
+            "Tunneling through ICMP servers",
+            "ICMP encryption method",
+            "Tunnel using ping"
+        ]
+    },
+    {
+        "q": "What is slow rate attack?",
+        "o": [
+            "Attack below detection thresholds",
+            "Slow internet speed attack",
+            "Rating slow networks",
+            "Slow motion attack"
+        ]
+    },
+    {
+        "q": "What is Slowloris attack?",
+        "o": [
+            "HTTP DoS with partial requests",
+            "Slow primate attack",
+            "Loris network protocol",
+            "Slow loading attack"
+        ]
+    },
+    {
+        "q": "How does Slowloris exhaust resources?",
+        "o": [
+            "Keeps connections alive indefinitely",
+            "Sends massive traffic floods",
+            "Encrypts all connections",
+            "Blocks server ports"
+        ]
+    },
+    {
+        "q": "What is RUDY attack?",
+        "o": [
+            "R-U-Dead-Yet slow POST attack",
+            "Rudimentary denial attack",
+            "Ruby network attack",
+            "Rude network behavior"
+        ]
+    },
+    {
+        "q": "What is slow read attack?",
+        "o": [
+            "Slowly receiving responses to exhaust",
+            "Reading network slowly",
+            "Slow file reading",
+            "Reading encrypted data slowly"
+        ]
+    },
+    {
+        "q": "What is application layer DDoS?",
+        "o": [
+            "Targeting specific app functions",
+            "Applications denying service",
+            "DDoS on application install",
+            "Layer 7 only protection"
+        ]
+    },
+    {
+        "q": "What is the GET flood attack?",
+        "o": [
+            "Overwhelming server with HTTP GET requests",
+            "Getting network flood data",
+            "Flood of GET commands",
+            "Getting flooded networks"
+        ]
+    },
+    {
+        "q": "What is SSL flood attack?",
+        "o": [
+            "Exhausting server with TLS handshakes",
+            "Flooding SSL certificates",
+            "SSL encryption flood",
+            "Secure socket flooding"
+        ]
+    },
+    {
+        "q": "Why is SSL asymmetric in computational cost?",
+        "o": [
+            "Server does more work than client",
+            "Client does more encryption",
+            "Both sides equal work",
+            "No computation involved"
+        ]
+    },
+    {
+        "q": "What is THC-SSL-DOS?",
+        "o": [
+            "Tool exploiting SSL renegotiation",
+            "THC encryption standard",
+            "Secure socket software",
+            "Terminal hacking command"
+        ]
+    },
+    {
+        "q": "What is the renegotiation attack?",
+        "o": [
+            "Repeated TLS handshakes exhausting server",
+            "Renegotiating network contracts",
+            "Negotiation failure attack",
+            "Renegotiating encryption keys"
+        ]
+    },
+    {
+        "q": "What is amplification factor?",
+        "o": [
+            "Response size divided by request size",
+            "Signal amplification in networks",
+            "Factor for amplifying speed",
+            "Network power amplification"
+        ]
+    },
+    {
+        "q": "What is reflection in DDoS?",
+        "o": [
+            "Using third party to send to victim",
+            "Reflecting network signals",
+            "Mirror attack technique",
+            "Reflective encryption"
+        ]
+    },
+    {
+        "q": "What combines reflection and amplification?",
+        "o": [
+            "DrDoS - Distributed Reflection DoS",
+            "RaDDoS attacks only",
+            "Reflamp attack",
+            "AmpRef technique"
+        ]
+    },
+    {
+        "q": "What is the Memcrashed attack?",
+        "o": [
+            "Massive memcached amplification DDoS",
+            "Memory crash attack",
+            "Crashed memory attack",
+            "Memorized attack pattern"
+        ]
+    },
+    {
+        "q": "What record-breaking size did Memcrashed reach?",
+        "o": [
+            "1.7 Tbps in 2018 attack",
+            "Maximum 10 Gbps reached",
+            "Only 100 Mbps possible",
+            "No records broken"
+        ]
+    },
+    {
+        "q": "What is carpet bombing in DDoS?",
+        "o": [
+            "Attacking entire IP range not single target",
+            "Network cable bombing",
+            "Carpet network coverage",
+            "Bomb disposal in networks"
+        ]
+    },
+    {
+        "q": "Why is carpet bombing hard to mitigate?",
+        "o": [
+            "Traffic spread across many destinations",
+            "Carpets absorb network traffic",
+            "Bombs are physical not digital",
+            "Easy to detect and block"
+        ]
+    },
+    {
+        "q": "What is pulse wave attack?",
+        "o": [
+            "Bursts of traffic with intervals",
+            "Pulse network monitoring",
+            "Wave of network pulses",
+            "Pulsating encryption"
+        ]
+    },
+    {
+        "q": "What makes pulse attacks challenging?",
+        "o": [
+            "Detection systems reset between pulses",
+            "Pulses are too fast to see",
+            "Wave patterns are encrypted",
+            "No challenge at all"
+        ]
+    },
+    {
+        "q": "What is multi-vector DDoS attack?",
+        "o": [
+            "Combining multiple attack types simultaneously",
+            "Multiple network vectors",
+            "Vector graphic attacks",
+            "Single direction attack"
+        ]
+    },
+    {
+        "q": "What is adaptive DDoS mitigation?",
+        "o": [
+            "Automatically adjusting defenses to attacks",
+            "Adapting networks to threats",
+            "Manual mitigation updates",
+            "Fixed defense rules"
+        ]
+    },
+    {
+        "q": "What is the role of AI in DDoS defense?",
+        "o": [
+            "Pattern detection and anomaly recognition",
+            "Artificial attack generation",
+            "Intelligence gathering only",
+            "No role in DDoS defense"
+        ]
+    },
+    {
+        "q": "What is a scrubbing center?",
+        "o": [
+            "Facility filtering malicious traffic",
+            "Cleaning network equipment",
+            "Data scrubbing location",
+            "Center for network testing"
+        ]
+    },
+    {
+        "q": "What is on-premise vs cloud DDoS mitigation?",
+        "o": [
+            "Local appliance vs cloud-based service",
+            "Both are the same approach",
+            "Only cloud is effective",
+            "Only on-premise works"
+        ]
+    },
+    {
+        "q": "What is hybrid DDoS protection?",
+        "o": [
+            "Combining on-premise and cloud mitigation",
+            "Hybrid network configuration",
+            "Mixed attack protection",
+            "Half protected networks"
+        ]
+    }
+]

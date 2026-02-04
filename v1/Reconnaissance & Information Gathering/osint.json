@@ -1,0 +1,4547 @@
+[
+    {
+        "q": "What does OSINT stand for?",
+        "o": [
+            "Open Source Intelligence",
+            "Online Security Information Network",
+            "Operational System Integration",
+            "Offensive Security Internet Tool"
+        ]
+    },
+    {
+        "q": "What is the primary characteristic of OSINT?",
+        "o": [
+            "Information from publicly available sources",
+            "Data obtained through hacking systems",
+            "Classified government intelligence only",
+            "Information requiring special clearance"
+        ]
+    },
+    {
+        "q": "Which of the following is an OSINT source?",
+        "o": [
+            "Social media profiles and posts",
+            "Encrypted private databases",
+            "Classified government documents",
+            "Protected health records"
+        ]
+    },
+    {
+        "q": "What is email harvesting in OSINT?",
+        "o": [
+            "Collecting email addresses from public sources",
+            "Creating fake email accounts",
+            "Hacking into email servers",
+            "Deleting spam from inbox"
+        ]
+    },
+    {
+        "q": "Which tool is commonly used for email harvesting?",
+        "o": [
+            "theHarvester",
+            "Microsoft Outlook",
+            "Gmail filters",
+            "Yahoo Mail"
+        ]
+    },
+    {
+        "q": "What is a common source for finding business emails?",
+        "o": [
+            "Company website contact pages",
+            "Personal diary entries",
+            "Encrypted file systems",
+            "Private messaging apps"
+        ]
+    },
+    {
+        "q": "What is metadata in digital files?",
+        "o": [
+            "Data embedded describing the file properties",
+            "The main visible content of a file",
+            "Encrypted password protection",
+            "File compression algorithms"
+        ]
+    },
+    {
+        "q": "Which tool extracts metadata from images?",
+        "o": [
+            "ExifTool",
+            "Photoshop",
+            "Paint",
+            "VLC Player"
+        ]
+    },
+    {
+        "q": "What information can image EXIF data contain?",
+        "o": [
+            "GPS coordinates and camera model",
+            "Only the image file size",
+            "Email of the photographer",
+            "Social security numbers"
+        ]
+    },
+    {
+        "q": "What is document metadata extraction?",
+        "o": [
+            "Pulling hidden info from PDFs and Office docs",
+            "Reading the visible text content only",
+            "Printing documents to paper",
+            "Scanning physical papers"
+        ]
+    },
+    {
+        "q": "What can PDF metadata reveal?",
+        "o": [
+            "Author name and creation software",
+            "Only the page count",
+            "Password to open file",
+            "Encryption keys used"
+        ]
+    },
+    {
+        "q": "What is the Wayback Machine?",
+        "o": [
+            "Internet Archive storing old website snapshots",
+            "Time travel device",
+            "Music streaming service",
+            "Video game console"
+        ]
+    },
+    {
+        "q": "Why is website archiving useful in OSINT?",
+        "o": [
+            "Shows historical content no longer online",
+            "Only useful for entertainment",
+            "Helps with video streaming",
+            "Improves internet connection speed"
+        ]
+    },
+    {
+        "q": "What is a cached webpage?",
+        "o": [
+            "Stored copy of page from search engine",
+            "Live streaming video content",
+            "Newly created webpage",
+            "Password protected portal"
+        ]
+    },
+    {
+        "q": "How can Google cache help OSINT investigators?",
+        "o": [
+            "View pages removed from live internet",
+            "Only for checking spelling",
+            "Speeding up web browsing",
+            "Blocking advertisements"
+        ]
+    },
+    {
+        "q": "What is image analysis in OSINT?",
+        "o": [
+            "Extracting intelligence from photos",
+            "Creating digital artwork",
+            "Editing photo colors",
+            "Compressing image files"
+        ]
+    },
+    {
+        "q": "What is reverse image search?",
+        "o": [
+            "Finding other sources of same image online",
+            "Flipping image horizontally",
+            "Inverting image colors",
+            "Rotating image upside down"
+        ]
+    },
+    {
+        "q": "Which service provides reverse image search?",
+        "o": [
+            "Google Images, TinEye, and Yandex",
+            "Microsoft Notepad",
+            "Windows Calculator",
+            "VLC Media Player"
+        ]
+    },
+    {
+        "q": "What is a persona in OSINT context?",
+        "o": [
+            "Fake identity created for investigation",
+            "Real identity document",
+            "Government issued ID card",
+            "Birth certificate copy"
+        ]
+    },
+    {
+        "q": "Why create personas for OSINT operations?",
+        "o": [
+            "Protect investigator identity when researching",
+            "For illegal hacking activities",
+            "To commit identity fraud",
+            "To steal money online"
+        ]
+    },
+    {
+        "q": "What makes a good OSINT persona?",
+        "o": [
+            "Consistent believable backstory",
+            "Using your real information",
+            "Random conflicting details",
+            "No profile picture at all"
+        ]
+    },
+    {
+        "q": "What is Google Dorking?",
+        "o": [
+            "Using advanced search operators",
+            "Installing Google software",
+            "Dancing with Google logo",
+            "Breaking into Google servers"
+        ]
+    },
+    {
+        "q": "What does site: operator do in Google?",
+        "o": [
+            "Limits search to specific website",
+            "Blocks all website results",
+            "Creates a new website",
+            "Deletes website content"
+        ]
+    },
+    {
+        "q": "What does filetype: operator find?",
+        "o": [
+            "Documents of specific file format",
+            "All images on internet",
+            "Only video content",
+            "Audio files exclusively"
+        ]
+    },
+    {
+        "q": "What is the intitle: Google operator?",
+        "o": [
+            "Searches for words in page title",
+            "Creates new webpage titles",
+            "Removes all page titles",
+            "Translates page titles"
+        ]
+    },
+    {
+        "q": "What social media is primary for business OSINT?",
+        "o": [
+            "LinkedIn for professional profiles",
+            "TikTok for dance videos",
+            "Snapchat for filters",
+            "Pinterest for recipes"
+        ]
+    },
+    {
+        "q": "What can LinkedIn reveal for OSINT?",
+        "o": [
+            "Employee names, roles, and connections",
+            "Only company logo design",
+            "Personal phone numbers always",
+            "Home addresses of employees"
+        ]
+    },
+    {
+        "q": "What is SOCMINT?",
+        "o": [
+            "Social Media Intelligence gathering",
+            "Society of Computer Mints",
+            "Socket Monitoring Integration",
+            "Social Committee Internet"
+        ]
+    },
+    {
+        "q": "What is GEOINT in relation to OSINT?",
+        "o": [
+            "Geospatial intelligence from maps",
+            "General intelligence testing",
+            "Genetic information science",
+            "Genre of internet content"
+        ]
+    },
+    {
+        "q": "What is IMINT?",
+        "o": [
+            "Imagery Intelligence from visual data",
+            "Internet Mint protocol",
+            "Immediate Internet access",
+            "Internal Marketing Intel"
+        ]
+    },
+    {
+        "q": "What is the purpose of Maltego?",
+        "o": [
+            "Visual link analysis for OSINT",
+            "Music streaming service",
+            "Video editing software",
+            "Word processing program"
+        ]
+    },
+    {
+        "q": "What are Maltego transforms?",
+        "o": [
+            "Automated queries that discover info",
+            "Image rotation features",
+            "Sound effect modules",
+            "Text formatting options"
+        ]
+    },
+    {
+        "q": "What is Shodan used for?",
+        "o": [
+            "Search engine for internet devices",
+            "Shopping comparison website",
+            "Social media platform",
+            "Email service provider"
+        ]
+    },
+    {
+        "q": "What can Shodan discover?",
+        "o": [
+            "Exposed webcams, servers, IoT devices",
+            "Only personal email addresses",
+            "Offline desktop computers",
+            "Printed paper documents"
+        ]
+    },
+    {
+        "q": "What is Censys?",
+        "o": [
+            "Internet-wide scanning search platform",
+            "Census data collection",
+            "Censorship monitoring tool",
+            "Central sensing system"
+        ]
+    },
+    {
+        "q": "What does Hunter.io specialize in?",
+        "o": [
+            "Finding email addresses for domains",
+            "Hunting game animals",
+            "Tracking wildlife migration",
+            "Food delivery service"
+        ]
+    },
+    {
+        "q": "What is Pipl used for?",
+        "o": [
+            "People search engine aggregation",
+            "Pipe installation services",
+            "Plumbing inspections",
+            "Pipeline monitoring"
+        ]
+    },
+    {
+        "q": "What is WHOIS lookup?",
+        "o": [
+            "Query for domain registration info",
+            "Question about identity",
+            "Who is playing games",
+            "Worldwide hosting info"
+        ]
+    },
+    {
+        "q": "What information can WHOIS provide?",
+        "o": [
+            "Registrant name and contact details",
+            "Only website content",
+            "User passwords",
+            "Browser history"
+        ]
+    },
+    {
+        "q": "What is DNS enumeration?",
+        "o": [
+            "Discovering DNS records for domain",
+            "Deleting DNS entries",
+            "Creating DNS servers",
+            "Blocking DNS queries"
+        ]
+    },
+    {
+        "q": "What DNS record type reveals mail servers?",
+        "o": [
+            "MX records",
+            "A records",
+            "CNAME records",
+            "TXT records"
+        ]
+    },
+    {
+        "q": "What is a subdomain takeover risk?",
+        "o": [
+            "Claiming orphaned subdomain DNS entries",
+            "Buying the main domain name",
+            "Registering new domain names",
+            "Renewing domain ownership"
+        ]
+    },
+    {
+        "q": "What tool enumerates subdomains?",
+        "o": [
+            "Sublist3r and Amass",
+            "Microsoft Word",
+            "Adobe Reader",
+            "VLC Player"
+        ]
+    },
+    {
+        "q": "What is passive DNS?",
+        "o": [
+            "Historical DNS query database",
+            "DNS without electricity",
+            "Inactive DNS servers",
+            "DNS for quiet networks"
+        ]
+    },
+    {
+        "q": "What can passive DNS reveal?",
+        "o": [
+            "Historical IP to domain mappings",
+            "Current live website content",
+            "Real-time network traffic",
+            "File system contents"
+        ]
+    },
+    {
+        "q": "What is certificate transparency logs?",
+        "o": [
+            "Public log of issued SSL certificates",
+            "Private certificate storage",
+            "Encrypted certificate vault",
+            "Certificate deletion service"
+        ]
+    },
+    {
+        "q": "Why check CT logs for OSINT?",
+        "o": [
+            "Discover subdomains from certificates",
+            "Break encryption of websites",
+            "Delete security certificates",
+            "Create fake certificates"
+        ]
+    },
+    {
+        "q": "What is crt.sh?",
+        "o": [
+            "Certificate transparency search engine",
+            "Creating shell scripts",
+            "Cloud running terminal",
+            "Cryptographic shell program"
+        ]
+    },
+    {
+        "q": "What is Recon-ng?",
+        "o": [
+            "Web reconnaissance framework",
+            "Video recording software",
+            "Recipe organizer app",
+            "Remote controller device"
+        ]
+    },
+    {
+        "q": "What are Recon-ng modules?",
+        "o": [
+            "Extensions for different recon tasks",
+            "Physical hardware units",
+            "Classroom training sections",
+            "Music playlist categories"
+        ]
+    },
+    {
+        "q": "What is SpiderFoot?",
+        "o": [
+            "Automated OSINT collection tool",
+            "Arachnid research website",
+            "Spider identification app",
+            "Footwear company website"
+        ]
+    },
+    {
+        "q": "What makes SpiderFoot useful?",
+        "o": [
+            "Automates gathering from many sources",
+            "Only searches one website",
+            "Requires manual data entry",
+            "Works offline exclusively"
+        ]
+    },
+    {
+        "q": "What is a sock puppet account?",
+        "o": [
+            "Fake online identity for research",
+            "Puppet made from socks",
+            "Children entertainment show",
+            "Clothing retail account"
+        ]
+    },
+    {
+        "q": "What is operational security in OSINT?",
+        "o": [
+            "Protecting investigator identity",
+            "Operating system security patches",
+            "Office security cameras",
+            "Online shopping security"
+        ]
+    },
+    {
+        "q": "Why use VPN during OSINT research?",
+        "o": [
+            "Mask your IP address from targets",
+            "Speed up internet connection",
+            "Block all advertisements",
+            "Improve video quality"
+        ]
+    },
+    {
+        "q": "What is a burner phone for OSINT?",
+        "o": [
+            "Disposable phone not tied to identity",
+            "Phone with heating function",
+            "Fire-resistant mobile device",
+            "Phone for burning documents"
+        ]
+    },
+    {
+        "q": "What is theHarvester tool scope?",
+        "o": [
+            "Emails, subdomains, hosts, employee names",
+            "Only physical mail addresses",
+            "Farm equipment harvesting",
+            "Crop yield calculations"
+        ]
+    },
+    {
+        "q": "What data sources does theHarvester use?",
+        "o": [
+            "Search engines and public databases",
+            "Private government systems",
+            "Classified intelligence feeds",
+            "Encrypted military networks"
+        ]
+    },
+    {
+        "q": "What is FOCA tool used for?",
+        "o": [
+            "Metadata extraction from documents",
+            "Focusing camera lenses",
+            "Food ordering coordinator",
+            "Financial operating calculator"
+        ]
+    },
+    {
+        "q": "What can FOCA reveal about organization?",
+        "o": [
+            "Internal usernames and software used",
+            "Only public website content",
+            "Employee salary information",
+            "Personal bank accounts"
+        ]
+    },
+    {
+        "q": "What is Metagoofil?",
+        "o": [
+            "Metadata extractor for public docs",
+            "Metal detecting software",
+            "Gopher game remake",
+            "Foolish metadata creator"
+        ]
+    },
+    {
+        "q": "What documents does Metagoofil target?",
+        "o": [
+            "PDF, DOC, XLS, PPT, and others",
+            "Only image files",
+            "Audio recordings only",
+            "Video files exclusively"
+        ]
+    },
+    {
+        "q": "What is social engineering in OSINT context?",
+        "o": [
+            "Gathering info through human interaction",
+            "Building social media platforms",
+            "Engineering social structures",
+            "Designing society systems"
+        ]
+    },
+    {
+        "q": "What is pretexting?",
+        "o": [
+            "Creating fake scenario for info gathering",
+            "Writing preface to textbook",
+            "Pre-testing software code",
+            "Preparing text documents"
+        ]
+    },
+    {
+        "q": "What is physical OSINT?",
+        "o": [
+            "Intelligence from real-world observation",
+            "Fitness tracking information",
+            "Physical therapy data",
+            "Weightlifting statistics"
+        ]
+    },
+    {
+        "q": "What is dumpster diving in OSINT?",
+        "o": [
+            "Searching discarded documents",
+            "Swimming pool diving",
+            "Scuba diving training",
+            "Garbage truck driving"
+        ]
+    },
+    {
+        "q": "What can job postings reveal for OSINT?",
+        "o": [
+            "Technologies and systems company uses",
+            "Only salary information",
+            "Personal employee hobbies",
+            "Family member names"
+        ]
+    },
+    {
+        "q": "What is pastebin monitoring?",
+        "o": [
+            "Watching for leaked data on paste sites",
+            "Monitoring paste texture",
+            "Bin collection schedules",
+            "Waste management tracking"
+        ]
+    },
+    {
+        "q": "Why monitor GitHub for OSINT?",
+        "o": [
+            "Developers may commit sensitive data",
+            "Only for downloading games",
+            "Watching cat videos",
+            "Music streaming service"
+        ]
+    },
+    {
+        "q": "What is GitLeaks?",
+        "o": [
+            "Tool scanning repos for secrets",
+            "Water leak detection",
+            "Gas leak monitoring",
+            "Roof leak finder"
+        ]
+    },
+    {
+        "q": "What is TruffleHog?",
+        "o": [
+            "Git secrets scanner tool",
+            "Mushroom hunting guide",
+            "Pig farming app",
+            "Chocolate recipe finder"
+        ]
+    },
+    {
+        "q": "What is breach data in OSINT?",
+        "o": [
+            "Stolen credentials from hacks",
+            "Financial breakthrough news",
+            "Building breach protocols",
+            "Contract breach lawsuits"
+        ]
+    },
+    {
+        "q": "What is Have I Been Pwned?",
+        "o": [
+            "Service checking if email was breached",
+            "Gaming achievement tracker",
+            "Password strength tester",
+            "Email spam filter"
+        ]
+    },
+    {
+        "q": "What is DeHashed?",
+        "o": [
+            "Searchable breach database service",
+            "Potato preparation guide",
+            "Hash brown recipe site",
+            "Hashtag generator tool"
+        ]
+    },
+    {
+        "q": "What is dark web OSINT?",
+        "o": [
+            "Intelligence from Tor hidden services",
+            "Researching at night time",
+            "Using dark mode browser",
+            "Monitoring power outages"
+        ]
+    },
+    {
+        "q": "What browser accesses dark web?",
+        "o": [
+            "Tor Browser for onion sites",
+            "Chrome web browser only",
+            "Safari for Apple devices",
+            "Internet Explorer legacy"
+        ]
+    },
+    {
+        "q": "What is an onion service?",
+        "o": [
+            "Hidden website on Tor network",
+            "Vegetable delivery service",
+            "Cooking recipe website",
+            "Food ordering platform"
+        ]
+    },
+    {
+        "q": "What is Ahmia?",
+        "o": [
+            "Search engine for Tor hidden services",
+            "Islamic greeting service",
+            "Music streaming platform",
+            "Photo editing software"
+        ]
+    },
+    {
+        "q": "What is image steganography detection?",
+        "o": [
+            "Finding hidden data in images",
+            "Editing photo brightness",
+            "Removing image watermarks",
+            "Cropping photo borders"
+        ]
+    },
+    {
+        "q": "What tool detects steganography?",
+        "o": [
+            "StegDetect and similar tools",
+            "Microsoft Paint program",
+            "Windows Photo Viewer",
+            "Apple Preview app"
+        ]
+    },
+    {
+        "q": "What is geolocation from images?",
+        "o": [
+            "Determining location from photo contents",
+            "Adding GPS to cameras",
+            "Mapping software installation",
+            "Satellite launching"
+        ]
+    },
+    {
+        "q": "What clues help geolocate a photo?",
+        "o": [
+            "Signs, landmarks, architecture, shadows",
+            "Only the file name",
+            "Image resolution alone",
+            "File format type"
+        ]
+    },
+    {
+        "q": "What is SunCalc used for?",
+        "o": [
+            "Analyzing sun position for time and date",
+            "Calculating math problems",
+            "Weather forecasting app",
+            "Sunscreen recommendations"
+        ]
+    },
+    {
+        "q": "What is chronolocation?",
+        "o": [
+            "Determining when photo was taken",
+            "Time travel research",
+            "Clock repair service",
+            "Calendar printing"
+        ]
+    },
+    {
+        "q": "What is facial recognition in OSINT?",
+        "o": [
+            "Identifying people from face images",
+            "Face painting tutorials",
+            "Facial cream reviews",
+            "Beauty product testing"
+        ]
+    },
+    {
+        "q": "What tool performs facial recognition search?",
+        "o": [
+            "PimEyes and similar services",
+            "Microsoft Word",
+            "Adobe Acrobat",
+            "Windows Notepad"
+        ]
+    },
+    {
+        "q": "What is sentiment analysis in OSINT?",
+        "o": [
+            "Analyzing emotional tone in text",
+            "Counting sentence words",
+            "Checking grammar errors",
+            "Translating languages"
+        ]
+    },
+    {
+        "q": "What is network analysis in OSINT?",
+        "o": [
+            "Mapping relationships between entities",
+            "Setting up computer networks",
+            "Installing network cables",
+            "Configuring routers"
+        ]
+    },
+    {
+        "q": "What is a pivot in OSINT research?",
+        "o": [
+            "Using found data to discover more info",
+            "Rotating on basketball court",
+            "Turning around quickly",
+            "Changing career direction"
+        ]
+    },
+    {
+        "q": "What is attribution in OSINT?",
+        "o": [
+            "Identifying who is behind activity",
+            "Giving credit for artwork",
+            "Writing bibliography",
+            "Citing academic sources"
+        ]
+    },
+    {
+        "q": "What is SIGINT?",
+        "o": [
+            "Signals Intelligence from communications",
+            "Sign language interpretation",
+            "Signature collection service",
+            "Signal strength indicator"
+        ]
+    },
+    {
+        "q": "What is HUMINT?",
+        "o": [
+            "Human Intelligence from people sources",
+            "Humor internet content",
+            "Humanitarian network",
+            "Humid environment monitor"
+        ]
+    },
+    {
+        "q": "What is FININT?",
+        "o": [
+            "Financial Intelligence analysis",
+            "Finnish internet provider",
+            "Fin swimming technique",
+            "Final internet draft"
+        ]
+    },
+    {
+        "q": "What is a threat actor profile?",
+        "o": [
+            "Documentation of adversary capabilities",
+            "Actor resume in Hollywood",
+            "Theater performer biography",
+            "Movie star interview"
+        ]
+    },
+    {
+        "q": "What is TTPs in threat intelligence?",
+        "o": [
+            "Tactics, Techniques, and Procedures",
+            "Time To Process",
+            "Total Technical Points",
+            "Text Transfer Protocol"
+        ]
+    },
+    {
+        "q": "What is an indicator of compromise?",
+        "o": [
+            "Evidence suggesting system breach",
+            "Sign of physical illness",
+            "Indicator light on device",
+            "Compromise document header"
+        ]
+    },
+    {
+        "q": "What is email verification in OSINT?",
+        "o": [
+            "Checking if email address is valid",
+            "Reading email content",
+            "Deleting spam messages",
+            "Creating new email accounts"
+        ]
+    },
+    {
+        "q": "What technique verifies email deliverability?",
+        "o": [
+            "SMTP handshake without sending mail",
+            "Actually sending test emails",
+            "Guessing based on domain name",
+            "Checking social media profiles"
+        ]
+    },
+    {
+        "q": "What is email header analysis?",
+        "o": [
+            "Examining routing info in message headers",
+            "Reading the subject line only",
+            "Checking email signature design",
+            "Formatting email font style"
+        ]
+    },
+    {
+        "q": "What can email headers reveal for OSINT?",
+        "o": [
+            "Sender IP address and mail servers used",
+            "Only the recipient email address",
+            "Personal photos of sender",
+            "Bank account information"
+        ]
+    },
+    {
+        "q": "What is the Received header in email?",
+        "o": [
+            "Shows path email traveled through servers",
+            "Date when email was received by user",
+            "Number of times email was read",
+            "Reply count for the message"
+        ]
+    },
+    {
+        "q": "What tool analyzes email headers?",
+        "o": [
+            "MX Toolbox and similar services",
+            "Microsoft Word processor",
+            "Adobe Photoshop editor",
+            "VLC media player"
+        ]
+    },
+    {
+        "q": "What is SPF record checking?",
+        "o": [
+            "Verifying authorized mail servers",
+            "Spam prevention filter setup",
+            "Special purpose file creation",
+            "Software protection framework"
+        ]
+    },
+    {
+        "q": "What is DKIM verification?",
+        "o": [
+            "Checking digital signature on emails",
+            "Domain key input manager",
+            "Deleting known infected mail",
+            "Direct keyboard input method"
+        ]
+    },
+    {
+        "q": "What is DMARC in email security?",
+        "o": [
+            "Policy for email authentication reporting",
+            "Digital mail archive center",
+            "Domain management admin role",
+            "Deleted mail auto recovery"
+        ]
+    },
+    {
+        "q": "What is email permutation for discovery?",
+        "o": [
+            "Generating possible email patterns",
+            "Randomly guessing email text",
+            "Sending mass email blasts",
+            "Blocking unwanted senders"
+        ]
+    },
+    {
+        "q": "What common email pattern do companies use?",
+        "o": [
+            "firstname.lastname at domain dot com format",
+            "Random number sequences only",
+            "Birth date based patterns",
+            "Social security numbers"
+        ]
+    },
+    {
+        "q": "What is LinkedIn email extraction?",
+        "o": [
+            "Finding emails from profile data",
+            "Hacking into LinkedIn servers",
+            "Creating fake LinkedIn accounts",
+            "Deleting LinkedIn connections"
+        ]
+    },
+    {
+        "q": "What is document property metadata?",
+        "o": [
+            "Info stored in file attributes",
+            "Main text content of document",
+            "Physical paper properties",
+            "Printer ink specifications"
+        ]
+    },
+    {
+        "q": "What is hidden text in documents?",
+        "o": [
+            "White text on white background",
+            "Bold text in headers",
+            "Regular paragraph content",
+            "Visible footnotes section"
+        ]
+    },
+    {
+        "q": "What can tracked changes reveal?",
+        "o": [
+            "Edit history and author names",
+            "Only the final document",
+            "Print date information",
+            "Paper size settings"
+        ]
+    },
+    {
+        "q": "What is comment extraction from docs?",
+        "o": [
+            "Finding hidden review comments",
+            "Reading visible footnotes",
+            "Extracting main text body",
+            "Copying document titles"
+        ]
+    },
+    {
+        "q": "What metadata does MP3 files contain?",
+        "o": [
+            "ID3 tags with artist and album",
+            "Only the song duration",
+            "Video frame information",
+            "Image resolution data"
+        ]
+    },
+    {
+        "q": "What is GPS data in smartphone photos?",
+        "o": [
+            "Location coordinates where photo taken",
+            "Phone network signal strength",
+            "Battery level at capture time",
+            "Screen brightness setting"
+        ]
+    },
+    {
+        "q": "How can GPS metadata be dangerous?",
+        "o": [
+            "Reveals home or work location",
+            "Only shows camera brand name",
+            "Improves photo quality",
+            "Adds fun filters to images"
+        ]
+    },
+    {
+        "q": "What is metadata stripping?",
+        "o": [
+            "Removing hidden data from files",
+            "Adding more metadata to files",
+            "Reading visible file content",
+            "Compressing file size only"
+        ]
+    },
+    {
+        "q": "What tool strips metadata from images?",
+        "o": [
+            "ExifTool with remove commands",
+            "Microsoft Paint program",
+            "Windows Photo Viewer",
+            "Apple Preview application"
+        ]
+    },
+    {
+        "q": "What is archive.today?",
+        "o": [
+            "Alternative to Wayback Machine",
+            "Historical document library",
+            "Calendar scheduling app",
+            "File compression tool"
+        ]
+    },
+    {
+        "q": "What advantage does archive.today have?",
+        "o": [
+            "Takes new snapshots on demand",
+            "Only stores audio files",
+            "Requires paid subscription",
+            "Works offline exclusively"
+        ]
+    },
+    {
+        "q": "What is web scraping for OSINT?",
+        "o": [
+            "Automated extraction of website data",
+            "Manually copying text from sites",
+            "Deleting website content",
+            "Creating new web pages"
+        ]
+    },
+    {
+        "q": "What tool performs web scraping?",
+        "o": [
+            "Scrapy, BeautifulSoup, or Selenium",
+            "Microsoft PowerPoint slides",
+            "Adobe Illustrator graphics",
+            "Apple Numbers spreadsheet"
+        ]
+    },
+    {
+        "q": "What is JavaScript rendering issue in scraping?",
+        "o": [
+            "Content loaded dynamically not visible",
+            "JavaScript makes sites faster",
+            "All content always visible",
+            "Static HTML works differently"
+        ]
+    },
+    {
+        "q": "What tool handles JavaScript rendering?",
+        "o": [
+            "Selenium or Puppeteer browser automation",
+            "Simple curl HTTP requests only",
+            "Basic wget download tool",
+            "Text editor applications"
+        ]
+    },
+    {
+        "q": "What is robots.txt analysis?",
+        "o": [
+            "Finding paths sites want hidden",
+            "Robot toy instruction manual",
+            "Artificial intelligence code",
+            "Automation software license"
+        ]
+    },
+    {
+        "q": "What can robots.txt reveal?",
+        "o": [
+            "Hidden admin panels and directories",
+            "Only search engine settings",
+            "Website coding language used",
+            "Server hardware specifications"
+        ]
+    },
+    {
+        "q": "What is sitemap.xml analysis?",
+        "o": [
+            "Discovering all pages on website",
+            "Creating new website pages",
+            "Deleting old content",
+            "Changing site design"
+        ]
+    },
+    {
+        "q": "What is website technology fingerprinting?",
+        "o": [
+            "Identifying software stack used",
+            "Fingerprint scanning app",
+            "Biometric website access",
+            "Touch screen calibration"
+        ]
+    },
+    {
+        "q": "What tool identifies website technologies?",
+        "o": [
+            "Wappalyzer and BuiltWith",
+            "Microsoft Calculator app",
+            "Apple Music player",
+            "Google Maps navigation"
+        ]
+    },
+    {
+        "q": "What can CMS detection reveal?",
+        "o": [
+            "WordPress, Drupal, or Joomla version",
+            "Only website color scheme",
+            "Physical server location",
+            "Website owner home address"
+        ]
+    },
+    {
+        "q": "What is virtual host enumeration?",
+        "o": [
+            "Finding sites on same IP address",
+            "Setting up virtual machines",
+            "Hosting virtual parties",
+            "Virtual reality gaming"
+        ]
+    },
+    {
+        "q": "What is persona aging?",
+        "o": [
+            "Building history for fake account",
+            "Studying elderly people online",
+            "Age verification systems",
+            "Birthday reminder service"
+        ]
+    },
+    {
+        "q": "Why age a persona account?",
+        "o": [
+            "New accounts look suspicious",
+            "Old accounts cost more money",
+            "Age improves internet speed",
+            "Platforms prefer new users"
+        ]
+    },
+    {
+        "q": "What is persona backstory development?",
+        "o": [
+            "Creating believable fake history",
+            "Writing personal biography",
+            "Researching historical events",
+            "Reading story books"
+        ]
+    },
+    {
+        "q": "What makes persona backstory believable?",
+        "o": [
+            "Consistent details across platforms",
+            "Completely random information",
+            "Copying famous people exactly",
+            "Using no personal details"
+        ]
+    },
+    {
+        "q": "What is persona isolation?",
+        "o": [
+            "Separating fake identity from real",
+            "Lonely social media account",
+            "Quarantine procedures online",
+            "Blocking all connections"
+        ]
+    },
+    {
+        "q": "What is browser fingerprinting concern?",
+        "o": [
+            "Unique browser can identify you",
+            "Fingerprints on screen damage",
+            "Touch screen not working",
+            "Keyboard needs cleaning"
+        ]
+    },
+    {
+        "q": "What is correlation attack on persona?",
+        "o": [
+            "Linking fake to real identity",
+            "Mathematical calculation error",
+            "Fighting between accounts",
+            "Account password attack"
+        ]
+    },
+    {
+        "q": "What is digital footprint reduction?",
+        "o": [
+            "Minimizing traceable online presence",
+            "Making computer screen smaller",
+            "Reducing file storage size",
+            "Deleting operating system"
+        ]
+    },
+    {
+        "q": "What is Twint tool used for?",
+        "o": [
+            "Twitter scraping without API",
+            "Twin finding service",
+            "Text messaging application",
+            "Weather information app"
+        ]
+    },
+    {
+        "q": "What is social media OPSEC?",
+        "o": [
+            "Protecting identity during research",
+            "Operating social accounts",
+            "Social security operations",
+            "Socializing at security events"
+        ]
+    },
+    {
+        "q": "What does viewing someone profile risk?",
+        "o": [
+            "Platform may notify viewed user",
+            "Absolutely no risk involved",
+            "Computer virus infection",
+            "Account automatic deletion"
+        ]
+    },
+    {
+        "q": "What is LinkedIn profile viewing concern?",
+        "o": [
+            "Users see who viewed profile",
+            "No one can see viewers",
+            "LinkedIn accounts get hacked",
+            "Profiles delete automatically"
+        ]
+    },
+    {
+        "q": "How to anonymize LinkedIn viewing?",
+        "o": [
+            "Private browsing mode setting",
+            "View more profiles faster",
+            "Login from different country",
+            "Create multiple accounts"
+        ]
+    },
+    {
+        "q": "What is Instagram OSINT challenge?",
+        "o": [
+            "Private accounts limit access",
+            "All Instagram is public always",
+            "No photos on Instagram",
+            "Only text posts allowed"
+        ]
+    },
+    {
+        "q": "What is Facebook Graph Search legacy?",
+        "o": [
+            "Powerful search now discontinued",
+            "Current primary search method",
+            "Graph drawing application",
+            "Mathematical equation solver"
+        ]
+    },
+    {
+        "q": "What is Snapchat Map OSINT use?",
+        "o": [
+            "See public snaps by location",
+            "GPS navigation for driving",
+            "Weather map visualization",
+            "Traffic condition monitoring"
+        ]
+    },
+    {
+        "q": "What is TikTok OSINT consideration?",
+        "o": [
+            "Rapid content creation and deletion",
+            "All videos permanent forever",
+            "No location information shown",
+            "Only audio content available"
+        ]
+    },
+    {
+        "q": "What is Reddit OSINT value?",
+        "o": [
+            "Anonymous commentary reveals info",
+            "All Reddit users verified",
+            "No personal information shared",
+            "Only cat pictures posted"
+        ]
+    },
+    {
+        "q": "What is Discord server OSINT?",
+        "o": [
+            "Communities may leak info publicly",
+            "All servers completely private",
+            "Only gaming content exists",
+            "No text communication allowed"
+        ]
+    },
+    {
+        "q": "What is Telegram OSINT challenge?",
+        "o": [
+            "Encrypted chats limit access",
+            "All messages public by default",
+            "No group functionality exists",
+            "Only voice calls supported"
+        ]
+    },
+    {
+        "q": "What is public Telegram channel?",
+        "o": [
+            "Broadcast channel anyone can view",
+            "Private encrypted messaging",
+            "Television channel streaming",
+            "Radio broadcast frequency"
+        ]
+    },
+    {
+        "q": "What is Gravatar OSINT technique?",
+        "o": [
+            "Email to profile picture lookup",
+            "Gravity measurement app",
+            "Avatar video game",
+            "Graphic design software"
+        ]
+    },
+    {
+        "q": "What is Namechk service?",
+        "o": [
+            "Username availability checker",
+            "Name change legal service",
+            "Check printing company",
+            "Restaurant reservation"
+        ]
+    },
+    {
+        "q": "What is Knowem platform?",
+        "o": [
+            "Social media username search",
+            "Knowledge management system",
+            "Know your employee service",
+            "Knowing meditation app"
+        ]
+    },
+    {
+        "q": "What is username correlation?",
+        "o": [
+            "Finding same user across platforms",
+            "Creating unique usernames",
+            "Blocking certain usernames",
+            "Generating random names"
+        ]
+    },
+    {
+        "q": "Why do people reuse usernames?",
+        "o": [
+            "Easier to remember one name",
+            "Required by all platforms",
+            "Usernames cost money",
+            "Legal requirement to reuse"
+        ]
+    },
+    {
+        "q": "What is Sherlock tool for?",
+        "o": [
+            "Username search across platforms",
+            "Detective story reading app",
+            "Mystery game player",
+            "Crime solving service"
+        ]
+    },
+    {
+        "q": "What is social-analyzer tool?",
+        "o": [
+            "Multi-platform profile finder",
+            "Personality quiz generator",
+            "Social skills training app",
+            "Friendship matching service"
+        ]
+    },
+    {
+        "q": "What is phone number OSINT?",
+        "o": [
+            "Finding info from phone numbers",
+            "Making phone calls only",
+            "Phone repair service",
+            "Phone sales website"
+        ]
+    },
+    {
+        "q": "What can Truecaller reveal?",
+        "o": [
+            "Name associated with phone number",
+            "Only call blocking features",
+            "Phone hardware specifications",
+            "Cellular network coverage"
+        ]
+    },
+    {
+        "q": "What is CallerID spoofing detection?",
+        "o": [
+            "Verifying real caller identity",
+            "Making prank phone calls",
+            "Spoofing your own number",
+            "Caller identification service"
+        ]
+    },
+    {
+        "q": "What is vehicle OSINT research?",
+        "o": [
+            "Finding info from license plates",
+            "Vehicle repair instructions",
+            "Car sales listings only",
+            "Traffic violation records"
+        ]
+    },
+    {
+        "q": "What is CARFAX used for?",
+        "o": [
+            "Vehicle history reports",
+            "Car fax machine sending",
+            "Cartoon car characters",
+            "Car factory locations"
+        ]
+    },
+    {
+        "q": "What is corporate registry OSINT?",
+        "o": [
+            "Public business registration data",
+            "Private company secrets",
+            "Corporate email accounts",
+            "Employee personal information"
+        ]
+    },
+    {
+        "q": "What can SEC filings reveal?",
+        "o": [
+            "Financial data and executives",
+            "Only stock prices daily",
+            "Corporate meeting minutes",
+            "Employee vacation schedules"
+        ]
+    },
+    {
+        "q": "What is property records OSINT?",
+        "o": [
+            "Public land ownership data",
+            "Private property photos",
+            "Real estate agent contact",
+            "Property insurance details"
+        ]
+    },
+    {
+        "q": "What is court records OSINT?",
+        "o": [
+            "Public litigation information",
+            "Private attorney notes",
+            "Judge personal details",
+            "Jury deliberation secrets"
+        ]
+    },
+    {
+        "q": "What is PACER system?",
+        "o": [
+            "US federal court records access",
+            "Pacemaker medical device",
+            "Pace running application",
+            "Pacific coastal weather"
+        ]
+    },
+    {
+        "q": "What is bankruptcy records value?",
+        "o": [
+            "Financial history and assets",
+            "Only current debts listed",
+            "Private bank passwords",
+            "Credit card numbers"
+        ]
+    },
+    {
+        "q": "What is patent records OSINT?",
+        "o": [
+            "Intellectual property and inventors",
+            "Only product prices listed",
+            "Manufacturing processes secret",
+            "Private research data"
+        ]
+    },
+    {
+        "q": "What is academic research OSINT?",
+        "o": [
+            "Published papers and authors",
+            "Private student grades",
+            "Unpublished research only",
+            "Classroom attendance data"
+        ]
+    },
+    {
+        "q": "What is news archive research?",
+        "o": [
+            "Historical news articles search",
+            "Breaking news alerts only",
+            "Future event predictions",
+            "Weather forecast history"
+        ]
+    },
+    {
+        "q": "What is data broker information?",
+        "o": [
+            "Aggregated personal data for sale",
+            "Only business data traded",
+            "Free information sharing",
+            "Government data distribution"
+        ]
+    },
+    {
+        "q": "What is voter registration OSINT?",
+        "o": [
+            "Public voter roll information",
+            "How people voted exactly",
+            "Private ballot contents",
+            "Election fraud evidence"
+        ]
+    },
+    {
+        "q": "What does voter data often include?",
+        "o": [
+            "Name, address, and party affiliation",
+            "Only voting location listed",
+            "Complete ballot choices",
+            "Social security numbers"
+        ]
+    },
+    {
+        "q": "What is flight tracking OSINT?",
+        "o": [
+            "Monitoring aircraft movements",
+            "Booking flight reservations",
+            "Selling airline tickets",
+            "Pilot training programs"
+        ]
+    },
+    {
+        "q": "What is FlightAware platform?",
+        "o": [
+            "Real-time flight tracking service",
+            "Airline booking website",
+            "Airport security system",
+            "Pilot certification agency"
+        ]
+    },
+    {
+        "q": "What is ADS-B data?",
+        "o": [
+            "Aircraft broadcast position data",
+            "Advertising display screen",
+            "Audio distribution system",
+            "Automatic door sensor"
+        ]
+    },
+    {
+        "q": "What is ship tracking OSINT?",
+        "o": [
+            "Monitoring vessel movements",
+            "Ship building documentation",
+            "Cruise vacation booking",
+            "Fishing license registry"
+        ]
+    },
+    {
+        "q": "What is MarineTraffic?",
+        "o": [
+            "Real-time vessel tracking",
+            "Marine biology research",
+            "Ocean pollution monitoring",
+            "Fish population counting"
+        ]
+    },
+    {
+        "q": "What is AIS data for ships?",
+        "o": [
+            "Automatic Identification System broadcast",
+            "Artificial Intelligence System",
+            "Audio Input Signal format",
+            "Automated Information Service"
+        ]
+    },
+    {
+        "q": "What is satellite imagery OSINT?",
+        "o": [
+            "Analysis of overhead imagery",
+            "Satellite TV programming",
+            "Space exploration news",
+            "Weather satellite data only"
+        ]
+    },
+    {
+        "q": "What is Google Earth Pro for OSINT?",
+        "o": [
+            "Historical satellite imagery review",
+            "Only current images available",
+            "Street view only feature",
+            "Map drawing application"
+        ]
+    },
+    {
+        "q": "What is Sentinel Hub?",
+        "o": [
+            "Free satellite imagery platform",
+            "Military surveillance system",
+            "Private security company",
+            "Video game platform"
+        ]
+    },
+    {
+        "q": "What temporal analysis reveals?",
+        "o": [
+            "Changes over time at location",
+            "Only current conditions shown",
+            "Future predictions made",
+            "Historical dating service"
+        ]
+    },
+    {
+        "q": "What is change detection in imagery?",
+        "o": [
+            "Comparing images from different dates",
+            "Detecting camera movement",
+            "Image color correction",
+            "Photo filter application"
+        ]
+    },
+    {
+        "q": "What is network infrastructure mapping?",
+        "o": [
+            "Documenting target IT assets",
+            "Physical network cable paths",
+            "Social network connections",
+            "Transportation routes only"
+        ]
+    },
+    {
+        "q": "What is BGP looking glass for OSINT?",
+        "o": [
+            "Viewing routing information publicly",
+            "Looking at glass decorations",
+            "Border guard protocol",
+            "Big graphics processor"
+        ]
+    },
+    {
+        "q": "What can ASN lookup reveal?",
+        "o": [
+            "Organization network ranges",
+            "Only phone area codes",
+            "Social security numbers",
+            "Personal email addresses"
+        ]
+    },
+    {
+        "q": "What is IP geolocation accuracy?",
+        "o": [
+            "City-level typically, varies by provider",
+            "Always exact street address",
+            "Never accurate at all",
+            "Only country level possible"
+        ]
+    },
+    {
+        "q": "What is WHOIS privacy protection?",
+        "o": [
+            "Service hiding registrant details",
+            "Wireless network protection",
+            "Website hosting insurance",
+            "Web hosting inspection"
+        ]
+    },
+    {
+        "q": "How to bypass WHOIS privacy?",
+        "o": [
+            "Historical WHOIS, legal channels",
+            "Cannot bypass any way",
+            "Hacking the registrar",
+            "Paying large bribes"
+        ]
+    },
+    {
+        "q": "What is historical WHOIS data?",
+        "o": [
+            "Past registration records stored",
+            "Future predicted ownership",
+            "Current live data only",
+            "Deleted forever after change"
+        ]
+    },
+    {
+        "q": "What tool provides WHOIS history?",
+        "o": [
+            "DomainTools, WhoisXML API",
+            "Microsoft Office suite",
+            "Adobe Creative Cloud",
+            "Apple iCloud services"
+        ]
+    },
+    {
+        "q": "What is cryptocurrency tracing in OSINT?",
+        "o": [
+            "Following blockchain transactions",
+            "Mining Bitcoin directly",
+            "Creating new cryptocurrencies",
+            "Deleting blockchain data"
+        ]
+    },
+    {
+        "q": "What is blockchain explorer?",
+        "o": [
+            "Tool viewing public transactions",
+            "Internet browser software",
+            "File explorer program",
+            "Game exploration mode"
+        ]
+    },
+    {
+        "q": "What can Bitcoin address reveal?",
+        "o": [
+            "Transaction history and amounts",
+            "Owner name and address",
+            "Bank account numbers",
+            "Social security info"
+        ]
+    },
+    {
+        "q": "What is Chainalysis used for?",
+        "o": [
+            "Blockchain investigation platform",
+            "Chain link manufacturing",
+            "DNA analysis software",
+            "Food chain tracking"
+        ]
+    },
+    {
+        "q": "What is cryptocurrency mixing?",
+        "o": [
+            "Obscuring transaction origin",
+            "Creating new coins",
+            "Mining faster blocks",
+            "Deleting transactions"
+        ]
+    },
+    {
+        "q": "What is dark web marketplace OSINT?",
+        "o": [
+            "Monitoring illegal trading sites",
+            "Legitimate online shopping",
+            "Dark mode website design",
+            "Night time web browsing"
+        ]
+    },
+    {
+        "q": "What is threat intelligence feed?",
+        "o": [
+            "Stream of IOCs and threat data",
+            "Animal feeding schedule",
+            "News RSS subscription",
+            "Social media timeline"
+        ]
+    },
+    {
+        "q": "What is STIX format?",
+        "o": [
+            "Structured Threat Information eXpression",
+            "Simple Text Information XML",
+            "Stick figure format",
+            "Security text input"
+        ]
+    },
+    {
+        "q": "What is TAXII protocol?",
+        "o": [
+            "Threat data exchange mechanism",
+            "Transportation app",
+            "Tax calculation software",
+            "Taxi reservation system"
+        ]
+    },
+    {
+        "q": "What is MITRE ATT and CK framework?",
+        "o": [
+            "Knowledge base of adversary tactics",
+            "Military attack planning",
+            "Mitigation and tracking",
+            "Missile testing system"
+        ]
+    },
+    {
+        "q": "What is pivoting from email to person?",
+        "o": [
+            "Using email to find more identity info",
+            "Rotating email servers",
+            "Changing email passwords",
+            "Deleting email accounts"
+        ]
+    },
+    {
+        "q": "What is reverse phone lookup?",
+        "o": [
+            "Finding owner from phone number",
+            "Calling numbers backwards",
+            "Phone repair service",
+            "Reversing phone charges"
+        ]
+    },
+    {
+        "q": "What is location from phone area code?",
+        "o": [
+            "General geographic region only",
+            "Exact street address always",
+            "No location info possible",
+            "Real-time GPS tracking"
+        ]
+    },
+    {
+        "q": "What is deep web vs dark web?",
+        "o": [
+            "Unindexed pages vs hidden services",
+            "Same thing different names",
+            "Dark is deeper than deep",
+            "Deep is more dangerous"
+        ]
+    },
+    {
+        "q": "What is academic database OSINT?",
+        "o": [
+            "Research publications and authors",
+            "Student grade records",
+            "Private thesis documents",
+            "Classroom recordings"
+        ]
+    },
+    {
+        "q": "What is Google Scholar for OSINT?",
+        "o": [
+            "Academic publication search",
+            "School application portal",
+            "Scholarship finder app",
+            "Student loan service"
+        ]
+    },
+    {
+        "q": "What can conference presentations reveal?",
+        "o": [
+            "Research interests and affiliations",
+            "Only presentation slides",
+            "Private email addresses",
+            "Home addresses always"
+        ]
+    },
+    {
+        "q": "What is competitive intelligence?",
+        "o": [
+            "Gathering business info on competitors",
+            "Sports competition analysis",
+            "Intelligence quotient testing",
+            "Competition entry forms"
+        ]
+    },
+    {
+        "q": "What public filings reveal business intel?",
+        "o": [
+            "SEC, patent, and trademark filings",
+            "Only annual report covers",
+            "Employee personal data",
+            "Trade secret details"
+        ]
+    },
+    {
+        "q": "What is press release monitoring?",
+        "o": [
+            "Tracking company announcements",
+            "Printing press maintenance",
+            "Journalism training course",
+            "Button pressing practice"
+        ]
+    },
+    {
+        "q": "What is conference attendee list OSINT?",
+        "o": [
+            "Finding who will attend events",
+            "Conference room booking",
+            "Video conference setup",
+            "Calendar scheduling"
+        ]
+    },
+    {
+        "q": "What is organizational chart discovery?",
+        "o": [
+            "Mapping company hierarchy",
+            "Creating flow charts",
+            "Music chart listings",
+            "Navigation map creation"
+        ]
+    },
+    {
+        "q": "What is supplier relationship mapping?",
+        "o": [
+            "Identifying business partners",
+            "Dating relationship advice",
+            "Family tree creation",
+            "Friend connection app"
+        ]
+    },
+    {
+        "q": "What is FOIA request for OSINT?",
+        "o": [
+            "Freedom of Information Act request",
+            "Federal office inspection audit",
+            "Financial operation inquiry",
+            "Foreign office interview"
+        ]
+    },
+    {
+        "q": "What government data is accessible via FOIA?",
+        "o": [
+            "Non-classified government records",
+            "All top secret documents",
+            "Private citizen records",
+            "Classified military intel"
+        ]
+    },
+    {
+        "q": "What is public meeting minutes?",
+        "o": [
+            "Recorded government meeting notes",
+            "Private corporate meetings",
+            "Personal diary entries",
+            "Classified briefings"
+        ]
+    },
+    {
+        "q": "What is government contract database?",
+        "o": [
+            "Public procurement records",
+            "Secret contract details",
+            "Private business deals",
+            "Personal loan records"
+        ]
+    },
+    {
+        "q": "What is export control database?",
+        "o": [
+            "Tracking controlled item shipments",
+            "Import tax calculator",
+            "Shipping address book",
+            "Package tracking service"
+        ]
+    },
+    {
+        "q": "What is sanctions list checking?",
+        "o": [
+            "Verifying entity restrictions",
+            "Beach safety sanction",
+            "Sporting event punishment",
+            "Religious penalty list"
+        ]
+    },
+    {
+        "q": "What is OFAC list?",
+        "o": [
+            "US sanctions compliance list",
+            "Office facility list",
+            "Official facts list",
+            "Officer ranking list"
+        ]
+    },
+    {
+        "q": "What is PEP screening?",
+        "o": [
+            "Politically Exposed Persons check",
+            "Pepper ordering process",
+            "Performance evaluation program",
+            "Personal equipment purchase"
+        ]
+    },
+    {
+        "q": "What is adverse media screening?",
+        "o": [
+            "Checking negative news coverage",
+            "Advertising review process",
+            "Media player testing",
+            "Audio quality check"
+        ]
+    },
+    {
+        "q": "What is due diligence OSINT?",
+        "o": [
+            "Background research before business deal",
+            "Work deadline management",
+            "Payment due date tracking",
+            "Library due date system"
+        ]
+    },
+    {
+        "q": "What is KYC OSINT component?",
+        "o": [
+            "Know Your Customer verification",
+            "Kentucky youth center",
+            "Keyboard your computer",
+            "Kitchen yoga class"
+        ]
+    },
+    {
+        "q": "What is enhanced due diligence?",
+        "o": [
+            "Deeper investigation for high risk",
+            "Faster screening process",
+            "Simpler background check",
+            "Automated approval only"
+        ]
+    },
+    {
+        "q": "What is shadow profile phenomenon?",
+        "o": [
+            "Data collected without user account",
+            "Dark mode profile setting",
+            "Profile picture filter",
+            "Hidden account feature"
+        ]
+    },
+    {
+        "q": "What is social graph analysis?",
+        "o": [
+            "Mapping connections between people",
+            "Drawing social diagrams",
+            "Graph mathematics course",
+            "Graphic design social"
+        ]
+    },
+    {
+        "q": "What is influence mapping?",
+        "o": [
+            "Identifying key opinion leaders",
+            "Weather influence patterns",
+            "Mapping physical terrain",
+            "Influenza tracking map"
+        ]
+    },
+    {
+        "q": "What is botnet detection in social media?",
+        "o": [
+            "Identifying automated fake accounts",
+            "Counting robot followers",
+            "Bot game character tracking",
+            "Automatic messaging service"
+        ]
+    },
+    {
+        "q": "What characteristics identify bot accounts?",
+        "o": [
+            "Posting patterns and profile features",
+            "Only profile picture quality",
+            "Account creation date only",
+            "Number of friends only"
+        ]
+    },
+    {
+        "q": "What is disinformation tracking?",
+        "o": [
+            "Monitoring spread of false info",
+            "Disabling information systems",
+            "Information system setup",
+            "Data storage tracking"
+        ]
+    },
+    {
+        "q": "What is deepfake detection?",
+        "o": [
+            "Identifying AI generated media",
+            "Deep sea video capture",
+            "Fake testimonial removal",
+            "Deep diving documentation"
+        ]
+    },
+    {
+        "q": "What visual clues indicate deepfakes?",
+        "o": [
+            "Unnatural blinking and artifacts",
+            "Perfect video quality always",
+            "Low resolution only",
+            "Black and white footage"
+        ]
+    },
+    {
+        "q": "What is reverse video search?",
+        "o": [
+            "Finding original source of video",
+            "Playing video backwards",
+            "Video editing reversal",
+            "Rewinding playback"
+        ]
+    },
+    {
+        "q": "What is InVID tool for?",
+        "o": [
+            "Video verification and analysis",
+            "Invalid video detection",
+            "Video invitation service",
+            "Investment video platform"
+        ]
+    },
+    {
+        "q": "What is audio forensics in OSINT?",
+        "o": [
+            "Analyzing audio recording authenticity",
+            "Music production software",
+            "Audio player app features",
+            "Sound system calibration"
+        ]
+    },
+    {
+        "q": "What is acoustic fingerprinting?",
+        "o": [
+            "Identifying audio by its characteristics",
+            "Fingerprint sound for security",
+            "Guitar tuning method",
+            "Speaker identification"
+        ]
+    },
+    {
+        "q": "What is background audio analysis?",
+        "o": [
+            "Identifying location from ambient sound",
+            "Music volume adjustment",
+            "Background noise removal",
+            "Audio mixing technique"
+        ]
+    },
+    {
+        "q": "What is language and dialect analysis?",
+        "o": [
+            "Determining speaker origin by speech",
+            "Language translation service",
+            "Grammar checking tool",
+            "Dictionary lookup feature"
+        ]
+    },
+    {
+        "q": "What is writing style analysis?",
+        "o": [
+            "Identifying author by text patterns",
+            "Checking spelling errors",
+            "Formatting document styles",
+            "Font selection process"
+        ]
+    },
+    {
+        "q": "What is stylometry?",
+        "o": [
+            "Statistical analysis of writing style",
+            "Fashion style measurement",
+            "Hair styling technique",
+            "Typography font metrics"
+        ]
+    },
+    {
+        "q": "What is authorship attribution?",
+        "o": [
+            "Determining who wrote a text",
+            "Author biography writing",
+            "Book attribution process",
+            "Citation formatting"
+        ]
+    },
+    {
+        "q": "What is named entity recognition?",
+        "o": [
+            "Extracting names, places, orgs from text",
+            "Naming convention guidelines",
+            "Entity relationship diagrams",
+            "Recognition award ceremony"
+        ]
+    },
+    {
+        "q": "What is topic modeling?",
+        "o": [
+            "Discovering themes in text corpus",
+            "Creating topic sentences",
+            "Fashion model photography",
+            "3D modeling software"
+        ]
+    },
+    {
+        "q": "What is GeoIP database?",
+        "o": [
+            "IP to location mapping database",
+            "Geology information portal",
+            "Geographic imaging project",
+            "Geothermal power data"
+        ]
+    },
+    {
+        "q": "What is traceroute for OSINT?",
+        "o": [
+            "Mapping network path to target",
+            "Tracking delivery packages",
+            "Route planning for travel",
+            "Trace drawing application"
+        ]
+    },
+    {
+        "q": "What can traceroute reveal?",
+        "o": [
+            "Network topology and transit providers",
+            "Only final destination",
+            "User passwords stored",
+            "File contents on server"
+        ]
+    },
+    {
+        "q": "What is wireless network OSINT?",
+        "o": [
+            "Mapping WiFi networks publicly",
+            "Wire installation service",
+            "Wireless phone service",
+            "Radio frequency testing"
+        ]
+    },
+    {
+        "q": "What is WiGLE database?",
+        "o": [
+            "Wardriving WiFi network map",
+            "Wiggly line drawing app",
+            "Wireless gigabit network",
+            "Widget layout editor"
+        ]
+    },
+    {
+        "q": "What info does WiFi OSINT reveal?",
+        "o": [
+            "SSID, MAC, location, security type",
+            "Only network speed data",
+            "User browsing history",
+            "Device file contents"
+        ]
+    },
+    {
+        "q": "What is mobile tower triangulation?",
+        "o": [
+            "Estimating location from cell towers",
+            "Building communication towers",
+            "Triangle shaped antenna",
+            "Mobile phone repair"
+        ]
+    },
+    {
+        "q": "What is IMSI catcher detection?",
+        "o": [
+            "Finding fake cell tower devices",
+            "Catching fish with phones",
+            "Image capture software",
+            "Instant messaging service"
+        ]
+    },
+    {
+        "q": "What is bluetooth device tracking?",
+        "o": [
+            "Monitoring BT device presence",
+            "Blue colored tooth care",
+            "Tooth sensor medical",
+            "Dental imaging software"
+        ]
+    },
+    {
+        "q": "What is MAC address vendor lookup?",
+        "o": [
+            "Identifying device manufacturer",
+            "Apple computer finding",
+            "Makeup cosmetics search",
+            "Machine coding lookup"
+        ]
+    },
+    {
+        "q": "What is IoT device discovery?",
+        "o": [
+            "Finding internet connected devices",
+            "Lost device location",
+            "Input output testing",
+            "Discovering new inventions"
+        ]
+    },
+    {
+        "q": "What is default credential checking?",
+        "o": [
+            "Testing factory login credentials",
+            "Credit score verification",
+            "Default payment method",
+            "Credential creation process"
+        ]
+    },
+    {
+        "q": "What is firmware version enumeration?",
+        "o": [
+            "Identifying device software version",
+            "Firm handshake greeting",
+            "Software license counting",
+            "Version control merging"
+        ]
+    },
+    {
+        "q": "What is industrial control system OSINT?",
+        "o": [
+            "Finding exposed SCADA systems",
+            "Industrial cleaning service",
+            "Control room monitoring",
+            "Factory worker tracking"
+        ]
+    },
+    {
+        "q": "What risks exist with exposed ICS?",
+        "o": [
+            "Critical infrastructure attacks",
+            "Only minor inconvenience",
+            "No security implications",
+            "Improved system performance"
+        ]
+    },
+    {
+        "q": "What is HMI interface discovery?",
+        "o": [
+            "Human Machine Interface exposure",
+            "Health monitoring interface",
+            "Home media integration",
+            "Hybrid motor inspection"
+        ]
+    },
+    {
+        "q": "What is building management system OSINT?",
+        "o": [
+            "Finding exposed BMS controls",
+            "Building construction plans",
+            "Management training course",
+            "Building maintenance schedule"
+        ]
+    },
+    {
+        "q": "What is webcam database searching?",
+        "o": [
+            "Finding publicly accessible cameras",
+            "Webcam purchasing site",
+            "Camera repair database",
+            "Photography tutorial site"
+        ]
+    },
+    {
+        "q": "What ethical concerns exist with webcam OSINT?",
+        "o": [
+            "Privacy invasion potential",
+            "No ethical issues present",
+            "Always legal everywhere",
+            "Required for all research"
+        ]
+    },
+    {
+        "q": "What is street view OSINT?",
+        "o": [
+            "Using mapping imagery for intel",
+            "Street cleaning schedule",
+            "View from street cafe",
+            "Street light inspection"
+        ]
+    },
+    {
+        "q": "What can street view reveal?",
+        "o": [
+            "Physical security and layout",
+            "Only traffic conditions",
+            "Real-time weather data",
+            "Current people present"
+        ]
+    },
+    {
+        "q": "What is drone imagery OSINT?",
+        "o": [
+            "Analysis of aerial drone footage",
+            "Drone racing statistics",
+            "Drone purchasing guide",
+            "Drone repair service"
+        ]
+    },
+    {
+        "q": "What legal restrictions apply to drone OSINT?",
+        "o": [
+            "Varies by jurisdiction and use",
+            "No restrictions anywhere",
+            "Always completely illegal",
+            "Only military drones restricted"
+        ]
+    },
+    {
+        "q": "What is open camera protocol exploitation?",
+        "o": [
+            "Accessing cameras via known protocols",
+            "Opening camera lens caps",
+            "Protocol golf tournament",
+            "Camera protocol manual"
+        ]
+    },
+    {
+        "q": "What is RTSP stream discovery?",
+        "o": [
+            "Finding real-time streaming feeds",
+            "Rapid transit schedule",
+            "Real time stock prices",
+            "Restaurant reservation"
+        ]
+    },
+    {
+        "q": "What is social media geotagging?",
+        "o": [
+            "Location data embedded in posts",
+            "Social gathering invitations",
+            "Geography tagging game",
+            "Greeting tag messages"
+        ]
+    },
+    {
+        "q": "What risk does geotagging create?",
+        "o": [
+            "Reveals user location patterns",
+            "Improves photo quality only",
+            "No security implications",
+            "Required by all platforms"
+        ]
+    },
+    {
+        "q": "What is location inference from context?",
+        "o": [
+            "Determining place without GPS data",
+            "Location inference services",
+            "Context switching technique",
+            "Inferential statistics only"
+        ]
+    },
+    {
+        "q": "What contextual clues reveal location?",
+        "o": [
+            "Language, brands, architecture",
+            "Only weather conditions",
+            "Image file format only",
+            "Photo color saturation"
+        ]
+    },
+    {
+        "q": "What is temporal pattern analysis?",
+        "o": [
+            "Analyzing activity over time",
+            "Weather pattern study",
+            "Temporary file analysis",
+            "Temple architecture review"
+        ]
+    },
+    {
+        "q": "What can posting times reveal?",
+        "o": [
+            "Timezone and daily routines",
+            "Only post popularity",
+            "Account creation date",
+            "Password strength level"
+        ]
+    },
+    {
+        "q": "What is event correlation in OSINT?",
+        "o": [
+            "Connecting related incidents",
+            "Event planning service",
+            "Correlation coefficient",
+            "Even number matching"
+        ]
+    },
+    {
+        "q": "What is timeline reconstruction?",
+        "o": [
+            "Building chronological event sequence",
+            "Clock repair service",
+            "Timeline app development",
+            "Time travel theory"
+        ]
+    },
+    {
+        "q": "What is OSINT automation with Python?",
+        "o": [
+            "Scripting repetitive collection tasks",
+            "Python snake as pet for OSINT",
+            "Automated snake handling",
+            "Python programming snake game"
+        ]
+    },
+    {
+        "q": "What Python library is useful for web scraping?",
+        "o": [
+            "requests and BeautifulSoup together",
+            "Microsoft Excel library only",
+            "Apple Pages automation",
+            "Adobe Photoshop scripting"
+        ]
+    },
+    {
+        "q": "What is API enumeration in OSINT?",
+        "o": [
+            "Discovering and querying target APIs",
+            "Counting API letters in name",
+            "Application paper inspection",
+            "Automated pizza ingredient"
+        ]
+    },
+    {
+        "q": "What is rate limiting in API OSINT?",
+        "o": [
+            "Restrictions on query frequency",
+            "Rating quality of APIs",
+            "Limiting employee rates",
+            "Interest rate calculations"
+        ]
+    },
+    {
+        "q": "What is GraphQL introspection for OSINT?",
+        "o": [
+            "Querying schema to discover endpoints",
+            "Graph paper introspection",
+            "Inner thought processes",
+            "Graphic design review"
+        ]
+    },
+    {
+        "q": "What is API key discovery?",
+        "o": [
+            "Finding exposed developer keys",
+            "Creating new API accounts",
+            "Key duplication service",
+            "Keyboard shortcut finding"
+        ]
+    },
+    {
+        "q": "What is source code OSINT?",
+        "o": [
+            "Analyzing publicly available code",
+            "Source of river mapping",
+            "News source verification",
+            "Audio source recording"
+        ]
+    },
+    {
+        "q": "What is commit history analysis?",
+        "o": [
+            "Reviewing git repository changes",
+            "Commitment relationship advice",
+            "History book reading",
+            "Committee meeting notes"
+        ]
+    },
+    {
+        "q": "What can developer comments reveal?",
+        "o": [
+            "Internal systems and credentials",
+            "Only code formatting style",
+            "Personal music preferences",
+            "Favorite food choices"
+        ]
+    },
+    {
+        "q": "What is dependency analysis?",
+        "o": [
+            "Identifying software libraries used",
+            "Dependent relationship counseling",
+            "Financial dependency tracking",
+            "Addiction dependency treatment"
+        ]
+    },
+    {
+        "q": "What is leaked credentials monitoring?",
+        "o": [
+            "Watching for exposed passwords",
+            "Creating credential backups",
+            "Credential paper printing",
+            "License credential renewal"
+        ]
+    },
+    {
+        "q": "What is paste site monitoring?",
+        "o": [
+            "Watching for data dumps on paste sites",
+            "Glue paste comparison shopping",
+            "Copy paste tutorial videos",
+            "Toothpaste brand monitoring"
+        ]
+    },
+    {
+        "q": "What is canary token detection?",
+        "o": [
+            "Finding honeypot tracking tokens",
+            "Bird species identification",
+            "Canary island tourism",
+            "Yellow color detection"
+        ]
+    },
+    {
+        "q": "What is counter-OSINT?",
+        "o": [
+            "Defending against OSINT collection",
+            "Counting OSINT sources",
+            "Counter-intelligence coffee shop",
+            "Kitchen counter inspection"
+        ]
+    },
+    {
+        "q": "What is information compartmentalization?",
+        "o": [
+            "Separating data across identities",
+            "Compartment furniture design",
+            "Train compartment booking",
+            "Compartment syndrome medical"
+        ]
+    },
+    {
+        "q": "What is disinformation as defense?",
+        "o": [
+            "Planting false data to mislead",
+            "Disabling information systems",
+            "Information technology class",
+            "Forming new information"
+        ]
+    },
+    {
+        "q": "What is privacy by design?",
+        "o": [
+            "Building privacy into systems",
+            "Designing private rooms",
+            "Privacy fence construction",
+            "Designer privacy clothing"
+        ]
+    },
+    {
+        "q": "What is digital hygiene?",
+        "o": [
+            "Practices reducing digital footprint",
+            "Computer screen cleaning",
+            "Digital toothbrush usage",
+            "Hygiene app development"
+        ]
+    },
+    {
+        "q": "What is legal framework for OSINT?",
+        "o": [
+            "Laws governing information collection",
+            "Lawyer OSINT specialization",
+            "Legal document framework",
+            "Framework house construction"
+        ]
+    },
+    {
+        "q": "What is CFAA in US context?",
+        "o": [
+            "Computer Fraud and Abuse Act",
+            "Coffee flavor association America",
+            "California federal aviation",
+            "Central farming area act"
+        ]
+    },
+    {
+        "q": "What is GDPR impact on OSINT?",
+        "o": [
+            "EU data protection compliance needs",
+            "GDP ratio calculations",
+            "General department procurement",
+            "Government data portal rules"
+        ]
+    },
+    {
+        "q": "What is terms of service consideration?",
+        "o": [
+            "Platform rules for data collection",
+            "Phone service agreement",
+            "Military service terms",
+            "Customer service timing"
+        ]
+    },
+    {
+        "q": "What is ethical OSINT practice?",
+        "o": [
+            "Responsible and legal collection",
+            "Eating ethically sourced OSINT",
+            "Ethics philosophy class",
+            "Ethical treatment of animals"
+        ]
+    },
+    {
+        "q": "What is proportionality in OSINT?",
+        "o": [
+            "Collection matching investigation needs",
+            "Mathematical proportions",
+            "Proportional font sizing",
+            "Diet proportion planning"
+        ]
+    },
+    {
+        "q": "What is minimization principle?",
+        "o": [
+            "Collecting only necessary data",
+            "Minimizing window screens",
+            "Minimalist home design",
+            "Minimum wage calculation"
+        ]
+    },
+    {
+        "q": "What is data retention policy?",
+        "o": [
+            "How long to keep collected data",
+            "Retaining wall construction",
+            "Water retention medical",
+            "Employee retention strategy"
+        ]
+    },
+    {
+        "q": "What is source verification?",
+        "o": [
+            "Confirming information authenticity",
+            "Power source electrical check",
+            "Water source testing",
+            "News source subscription"
+        ]
+    },
+    {
+        "q": "What is primary vs secondary source?",
+        "o": [
+            "Original vs derived information",
+            "Primary school vs secondary",
+            "Primary colors vs mixed",
+            "Primary doctor vs specialist"
+        ]
+    },
+    {
+        "q": "What is confirmation bias in OSINT?",
+        "o": [
+            "Favoring info confirming beliefs",
+            "Order confirmation emails",
+            "Bias in confirmation ceremonies",
+            "Biased confirmation testing"
+        ]
+    },
+    {
+        "q": "What is analysis of competing hypotheses?",
+        "o": [
+            "Structured analytic technique",
+            "Competition hypothesis testing",
+            "Hypothesis about competitors",
+            "Athletic competition analysis"
+        ]
+    },
+    {
+        "q": "What is structured analytic technique?",
+        "o": [
+            "Methodical approach to analysis",
+            "Building structure analysis",
+            "Analytical chemistry structure",
+            "Structured interview process"
+        ]
+    },
+    {
+        "q": "What is devils advocate method?",
+        "o": [
+            "Deliberately challenging analysis",
+            "Devil costume advocacy",
+            "Advocating for devil rights",
+            "Legal defense for devil"
+        ]
+    },
+    {
+        "q": "What is key assumptions check?",
+        "o": [
+            "Verifying underlying beliefs",
+            "Key duplication verification",
+            "Piano key checking",
+            "Key lime pie recipe check"
+        ]
+    },
+    {
+        "q": "What is quality of information rating?",
+        "o": [
+            "Assessing reliability and accuracy",
+            "Information quantity count",
+            "Quality control manufacturing",
+            "Information technology quality"
+        ]
+    },
+    {
+        "q": "What is Admiralty Code for source rating?",
+        "o": [
+            "A-F reliability and 1-6 credibility",
+            "Admiral naval rank code",
+            "Admiralty law maritime code",
+            "Military admission code"
+        ]
+    },
+    {
+        "q": "What is link analysis visualization?",
+        "o": [
+            "Graphing entity relationships",
+            "Website link checking",
+            "Chain link manufacturing",
+            "Golf link course design"
+        ]
+    },
+    {
+        "q": "What is i2 Analysts Notebook?",
+        "o": [
+            "Professional link analysis tool",
+            "Note-taking application",
+            "Analysis writing notebook",
+            "Chemistry lab notebook"
+        ]
+    },
+    {
+        "q": "What is Gephi used for?",
+        "o": [
+            "Open source network visualization",
+            "Getting files compressed",
+            "Geographic positioning",
+            "General purpose hosting"
+        ]
+    },
+    {
+        "q": "What is open source alternatives to i2?",
+        "o": [
+            "Gephi, Neo4j, and NetworkX",
+            "Microsoft Office suite",
+            "Adobe Creative Cloud",
+            "Apple iWork applications"
+        ]
+    },
+    {
+        "q": "What is geospatial analysis platform?",
+        "o": [
+            "Tools for location-based analysis",
+            "Geology spatial research",
+            "Space exploration platform",
+            "Geometric shape analysis"
+        ]
+    },
+    {
+        "q": "What is QGIS for OSINT?",
+        "o": [
+            "Open source geographic information system",
+            "Quick graphics image software",
+            "Quality graphics inspection",
+            "Quantum graphic interface"
+        ]
+    },
+    {
+        "q": "What is OpenStreetMap value for OSINT?",
+        "o": [
+            "Community-sourced detailed mapping",
+            "Opening street ceremonies",
+            "Street opening regulations",
+            "Open office street view"
+        ]
+    },
+    {
+        "q": "What is heat mapping in analysis?",
+        "o": [
+            "Visualizing concentration of activity",
+            "Heating system mapping",
+            "Heat wave tracking",
+            "Thermal camera mapping"
+        ]
+    },
+    {
+        "q": "What is cluster analysis?",
+        "o": [
+            "Grouping related data points",
+            "Star cluster astronomy",
+            "Cluster headache medical",
+            "Cluster bomb military"
+        ]
+    },
+    {
+        "q": "What is entity extraction automation?",
+        "o": [
+            "Auto-identifying names, places, orgs",
+            "Entity relationship database",
+            "Extraction tooth dental",
+            "Mineral extraction mining"
+        ]
+    },
+    {
+        "q": "What is natural language processing for OSINT?",
+        "o": [
+            "Automated text analysis and extraction",
+            "Nature language learning",
+            "Language processing delay",
+            "Natural language speaking"
+        ]
+    },
+    {
+        "q": "What is machine learning for OSINT?",
+        "o": [
+            "Pattern recognition in large datasets",
+            "Machine building construction",
+            "Learning machine operation",
+            "Machinery maintenance learning"
+        ]
+    },
+    {
+        "q": "What is classification in ML for OSINT?",
+        "o": [
+            "Categorizing data automatically",
+            "Library classification system",
+            "Classified document review",
+            "Class scheduling system"
+        ]
+    },
+    {
+        "q": "What is anomaly detection?",
+        "o": [
+            "Finding unusual patterns in data",
+            "Anomaly science fiction",
+            "Detecting abnormal health",
+            "Animal anomaly study"
+        ]
+    },
+    {
+        "q": "What is predictive analysis?",
+        "o": [
+            "Forecasting future patterns from data",
+            "Prediction game playing",
+            "Predicting weather tomorrow",
+            "Predictive text typing"
+        ]
+    },
+    {
+        "q": "What is workflow automation in OSINT?",
+        "o": [
+            "Automating repetitive collection steps",
+            "Work flow chart creation",
+            "Workflow management meeting",
+            "Flow rate measurement work"
+        ]
+    },
+    {
+        "q": "What is n8n for OSINT?",
+        "o": [
+            "Workflow automation platform",
+            "Mathematics n factorial",
+            "Number eight spelled",
+            "Network eight nodes"
+        ]
+    },
+    {
+        "q": "What is data enrichment?",
+        "o": [
+            "Adding context from additional sources",
+            "Data nutrition enhancement",
+            "Enriched bread ingredients",
+            "Uranium enrichment process"
+        ]
+    },
+    {
+        "q": "What is pivot table analysis?",
+        "o": [
+            "Summarizing and cross-referencing data",
+            "Basketball pivot technique",
+            "Table rotation mechanism",
+            "Pivot door installation"
+        ]
+    },
+    {
+        "q": "What is report writing for OSINT?",
+        "o": [
+            "Documenting findings professionally",
+            "Report card grading",
+            "Newspaper report writing",
+            "Book report assignment"
+        ]
+    },
+    {
+        "q": "What makes effective OSINT report?",
+        "o": [
+            "Clear, sourced, and actionable",
+            "Very long and detailed always",
+            "No sources cited needed",
+            "Only raw data included"
+        ]
+    },
+    {
+        "q": "What is intelligence confidence level?",
+        "o": [
+            "Degree of certainty in assessment",
+            "Self-confidence building",
+            "Confidence interval statistics",
+            "Confidential document marking"
+        ]
+    },
+    {
+        "q": "What is caveat in intelligence report?",
+        "o": [
+            "Limitations and assumptions stated",
+            "Cave exploration report",
+            "Caviar restaurant review",
+            "Cavity dental examination"
+        ]
+    },
+    {
+        "q": "What is dissemination control?",
+        "o": [
+            "Managing who receives intelligence",
+            "Seminar distribution planning",
+            "Seed dissemination biology",
+            "Information spreading control"
+        ]
+    },
+    {
+        "q": "What is need to know principle?",
+        "o": [
+            "Limiting access to essential personnel",
+            "Knowledge is power philosophy",
+            "Needing education urgently",
+            "Knowledge base article"
+        ]
+    },
+    {
+        "q": "What is open source tradecraft?",
+        "o": [
+            "Skills and methods of OSINT collection",
+            "Open trading marketplace",
+            "Craft beer open source",
+            "Trade school open enrollment"
+        ]
+    },
+    {
+        "q": "What is collection management?",
+        "o": [
+            "Organizing and prioritizing sources",
+            "Art collection museum",
+            "Debt collection service",
+            "Garbage collection schedule"
+        ]
+    },
+    {
+        "q": "What is requirements-driven collection?",
+        "o": [
+            "Collection based on specific needs",
+            "Requirement document writing",
+            "Driver requirement testing",
+            "Collection hobby requirements"
+        ]
+    },
+    {
+        "q": "What is gap analysis in OSINT?",
+        "o": [
+            "Identifying missing intelligence",
+            "Gap clothing store analysis",
+            "Mind the gap warning",
+            "Gap year planning"
+        ]
+    },
+    {
+        "q": "What is standing collection requirement?",
+        "o": [
+            "Ongoing monitoring of target",
+            "Standing desk requirement",
+            "Standing ovation collection",
+            "Stationary collection hobby"
+        ]
+    },
+    {
+        "q": "What is ad hoc collection task?",
+        "o": [
+            "One-time specific request",
+            "Advertising hoc request",
+            "Ad placement collection",
+            "Hock shop ad collection"
+        ]
+    },
+    {
+        "q": "What is OSINT maturity model?",
+        "o": [
+            "Framework for capability assessment",
+            "Mature content warning",
+            "Maturity date financial",
+            "Mature cheese aging model"
+        ]
+    },
+    {
+        "q": "What is OSINT team structure?",
+        "o": [
+            "Roles and responsibilities organization",
+            "Team sports structure",
+            "Building team structure",
+            "Structural team engineering"
+        ]
+    },
+    {
+        "q": "What is collection, processing, analysis cycle?",
+        "o": [
+            "Intelligence production workflow",
+            "Bicycle cycling collection",
+            "Processing payment cycle",
+            "Analysis paralysis cycle"
+        ]
+    },
+    {
+        "q": "What is feedback loop in OSINT?",
+        "o": [
+            "Refining collection based on results",
+            "Audio feedback squeal",
+            "Feedback form submission",
+            "Loop road construction"
+        ]
+    },
+    {
+        "q": "What is all source intelligence?",
+        "o": [
+            "Combining OSINT with other INT types",
+            "All source cooking recipes",
+            "Source code review all",
+            "Water source mapping all"
+        ]
+    },
+    {
+        "q": "What is fusion center?",
+        "o": [
+            "Multi-agency intelligence sharing hub",
+            "Nuclear fusion research",
+            "Fusion cuisine restaurant",
+            "Fusion music genre center"
+        ]
+    },
+    {
+        "q": "What is Bellingcat methodology?",
+        "o": [
+            "Open source investigation approach",
+            "Bell cat training method",
+            "Cat bell collar review",
+            "Bellington cat breeding"
+        ]
+    },
+    {
+        "q": "What is verification through multiple sources?",
+        "o": [
+            "Confirming info from independent sources",
+            "Source code verification",
+            "Multiple choice verification",
+            "Verification code email"
+        ]
+    },
+    {
+        "q": "What is digital verification toolkit?",
+        "o": [
+            "Tools for authenticating content",
+            "Digital tool purchasing",
+            "Verification code generator",
+            "Toolkit assembly digital"
+        ]
+    },
+    {
+        "q": "What is First Draft News methodology?",
+        "o": [
+            "Verification framework for media",
+            "Draft beer news coverage",
+            "News draft writing class",
+            "First edition news paper"
+        ]
+    },
+    {
+        "q": "What is OSINT for threat hunting?",
+        "o": [
+            "Proactive adversary detection",
+            "Hunting threat species",
+            "Threat assessment hunting",
+            "Bounty hunting threats"
+        ]
+    },
+    {
+        "q": "What is brand monitoring?",
+        "o": [
+            "Tracking company mentions online",
+            "Cattle brand identification",
+            "Branding iron monitoring",
+            "Brand loyalty testing"
+        ]
+    },
+    {
+        "q": "What is reputation risk assessment?",
+        "o": [
+            "Evaluating potential brand damage",
+            "Risk assessment gambling",
+            "Reputation management hiring",
+            "Assessment test reputation"
+        ]
+    },
+    {
+        "q": "What is supply chain intelligence?",
+        "o": [
+            "Vetting business partners and vendors",
+            "Supply closet organization",
+            "Chain store intelligence",
+            "Supply demand economics"
+        ]
+    },
+    {
+        "q": "What is M&A due diligence using OSINT?",
+        "o": [
+            "Background checks for acquisitions",
+            "Merger agreement signing",
+            "Academic merger due process",
+            "MA state due date"
+        ]
+    },
+    {
+        "q": "What is employee screening OSINT?",
+        "o": [
+            "Background verification for hiring",
+            "Employee screen brightness",
+            "Screen printing employee",
+            "Screening employee health"
+        ]
+    },
+    {
+        "q": "What privacy laws limit employee OSINT?",
+        "o": [
+            "GDPR, FCRA, state and local laws",
+            "No laws limit it anywhere",
+            "Only criminal checks limited",
+            "Employers can find everything"
+        ]
+    },
+    {
+        "q": "What is physical security reconnaissance?",
+        "o": [
+            "Gathering info about facility security",
+            "Physical fitness security",
+            "Security guard physical",
+            "Physical therapy security"
+        ]
+    },
+    {
+        "q": "What is social engineering pretext development?",
+        "o": [
+            "Creating believable cover story",
+            "Social media text sharing",
+            "Engineering project development",
+            "Text message development"
+        ]
+    },
+    {
+        "q": "What is target package?",
+        "o": [
+            "Compiled intelligence on subject",
+            "Package delivery target",
+            "Target store packaging",
+            "Archery target package"
+        ]
+    },
+    {
+        "q": "What is link chart?",
+        "o": [
+            "Visual relationship diagram",
+            "Web link organization",
+            "Chain link chart",
+            "Golf link course chart"
+        ]
+    },
+    {
+        "q": "What is activity timeline?",
+        "o": [
+            "Chronological event record",
+            "Physical activity tracking",
+            "Activity book timeline",
+            "Activity vacation timeline"
+        ]
+    },
+    {
+        "q": "What is pattern of life analysis?",
+        "o": [
+            "Studying subject routines",
+            "Life pattern wallpaper",
+            "Pattern sewing for life",
+            "Lifestyle pattern magazine"
+        ]
+    },
+    {
+        "q": "What is behavioral profiling?",
+        "o": [
+            "Predicting actions from behavior",
+            "Profile picture behavior",
+            "Profiling racial behavior",
+            "Filing profile documents"
+        ]
+    },
+    {
+        "q": "What is technical profiling?",
+        "o": [
+            "Identifying systems and technologies",
+            "Technical writing profile",
+            "Profile technical support",
+            "Technical school profiling"
+        ]
+    },
+    {
+        "q": "What is network diagram?",
+        "o": [
+            "IT infrastructure visualization",
+            "Fishing net diagram",
+            "Network marketing diagram",
+            "Diagram of networking event"
+        ]
+    },
+    {
+        "q": "What is exposure assessment?",
+        "o": [
+            "Evaluating attack surface",
+            "Sun exposure assessment",
+            "Photography exposure setting",
+            "Exposure therapy assessment"
+        ]
+    },
+    {
+        "q": "What is vulnerability correlation?",
+        "o": [
+            "Matching vulnerabilities to assets",
+            "Vulnerable population correlation",
+            "Correlation vulnerability study",
+            "Vulnerable species count"
+        ]
+    },
+    {
+        "q": "What is third party risk through OSINT?",
+        "o": [
+            "Vendors creating security exposure",
+            "Third party celebration",
+            "Party risk management",
+            "Political party third risk"
+        ]
+    },
+    {
+        "q": "What is open source threat landscape?",
+        "o": [
+            "Public threats to organization",
+            "Landscape photography open",
+            "Open terrain landscaping",
+            "Threat landscape gardening"
+        ]
+    },
+    {
+        "q": "What is industry specific threat research?",
+        "o": [
+            "Sector-focused adversary study",
+            "Industry magazine research",
+            "Research industry careers",
+            "Specific industry analysis"
+        ]
+    },
+    {
+        "q": "What is geopolitical risk analysis?",
+        "o": [
+            "Political climate impact assessment",
+            "Geography political mapping",
+            "Political geography class",
+            "Risk analysis geography"
+        ]
+    },
+    {
+        "q": "What is crisis monitoring?",
+        "o": [
+            "Real-time event tracking",
+            "Crisis counseling monitoring",
+            "Monitor crisis resolution",
+            "Crisis hotline monitoring"
+        ]
+    },
+    {
+        "q": "What is situational awareness from OSINT?",
+        "o": [
+            "Understanding current environment",
+            "Situation comedy awareness",
+            "Aware of situations generally",
+            "Situational ethics awareness"
+        ]
+    },
+    {
+        "q": "What is early warning indicators?",
+        "o": [
+            "Signs of emerging threats",
+            "Warning light indicators",
+            "Early morning warnings",
+            "Indicator species early"
+        ]
+    },
+    {
+        "q": "What is strategic intelligence vs tactical?",
+        "o": [
+            "Long-term planning vs immediate action",
+            "Strategic games vs tactical",
+            "Tactical equipment strategic",
+            "Strategic military tactical"
+        ]
+    },
+    {
+        "q": "What is operational intelligence use?",
+        "o": [
+            "Planning specific operations",
+            "Operating system intelligence",
+            "Operation room intelligence",
+            "Surgical operation planning"
+        ]
+    },
+    {
+        "q": "What is continuous monitoring?",
+        "o": [
+            "Ongoing surveillance of targets",
+            "Continuing education monitoring",
+            "Monitor screen nonstop",
+            "Continuous improvement monitoring"
+        ]
+    },
+    {
+        "q": "What is alerting threshold?",
+        "o": [
+            "Trigger point for notification",
+            "Alert sound threshold audio",
+            "Threshold doorway alert",
+            "Alert dog threshold training"
+        ]
+    },
+    {
+        "q": "What is intelligence requirement?",
+        "o": [
+            "Specific question needing answer",
+            "Intelligence testing requirement",
+            "Requirement for intelligence",
+            "Intelligent requirement document"
+        ]
+    },
+    {
+        "q": "What is priority intelligence requirement?",
+        "o": [
+            "Most critical questions first",
+            "Priority mail intelligence",
+            "Priority seating requirement",
+            "Intelligence priority queue"
+        ]
+    },
+    {
+        "q": "What is specific information requirement?",
+        "o": [
+            "Detailed data needed for decision",
+            "Specific data file location",
+            "Information request specific",
+            "Requirement for information"
+        ]
+    },
+    {
+        "q": "What is intelligence cycle?",
+        "o": [
+            "Process from requirement to product",
+            "Bicycle intelligence feature",
+            "Cycling intelligence sport",
+            "Intelligent cycling computer"
+        ]
+    },
+    {
+        "q": "What is collection plan?",
+        "o": [
+            "Strategy for gathering intelligence",
+            "Art collection planning",
+            "Garbage collection plan",
+            "Debt collection strategy"
+        ]
+    },
+    {
+        "q": "What is production phase?",
+        "o": [
+            "Creating finished intelligence product",
+            "Production line manufacturing",
+            "Movie production phase",
+            "Music production stage"
+        ]
+    },
+    {
+        "q": "What is advanced persistent threat OSINT?",
+        "o": [
+            "Tracking sophisticated nation-state actors",
+            "Advanced pet training online",
+            "Persistent thread programming",
+            "Threat persistent online gaming"
+        ]
+    },
+    {
+        "q": "What is APT group attribution challenge?",
+        "o": [
+            "Determining responsible threat actor",
+            "Apartment group management",
+            "Attribution presentation file",
+            "Group apartment rental"
+        ]
+    },
+    {
+        "q": "What is diamond model in threat analysis?",
+        "o": [
+            "Framework linking adversary, capability, infrastructure, victim",
+            "Diamond jewelry valuation",
+            "Baseball diamond model",
+            "Diamond mining analysis"
+        ]
+    },
+    {
+        "q": "What is kill chain analysis?",
+        "o": [
+            "Mapping attack phases for defense",
+            "Chain store closing analysis",
+            "Killing chain link analysis",
+            "Chain restaurant analysis"
+        ]
+    },
+    {
+        "q": "What is OSINT for incident response?",
+        "o": [
+            "Gathering context during security incident",
+            "Incident report writing only",
+            "Response time measurement",
+            "Incident count tracking"
+        ]
+    },
+    {
+        "q": "What is attribution infrastructure mapping?",
+        "o": [
+            "Connecting attacker systems and domains",
+            "Infrastructure attribution awards",
+            "Mapping building infrastructure",
+            "Attribution document infrastructure"
+        ]
+    },
+    {
+        "q": "What is malware family OSINT?",
+        "o": [
+            "Researching known malware variants",
+            "Family computer malware check",
+            "Family reunion malware topic",
+            "Malware affecting families"
+        ]
+    },
+    {
+        "q": "What is ransomware group tracking?",
+        "o": [
+            "Monitoring criminal extortion groups",
+            "Random software group tracking",
+            "Group ransomware software review",
+            "Tracking retail groups"
+        ]
+    },
+    {
+        "q": "What is dark web forum monitoring?",
+        "o": [
+            "Observing criminal community discussions",
+            "Dark room forum lighting",
+            "Forum website dark mode",
+            "Dark chocolate forum"
+        ]
+    },
+    {
+        "q": "What is initial access broker research?",
+        "o": [
+            "Finding sellers of compromised access",
+            "Initial public offering broker",
+            "Broker initial training course",
+            "Access badge initial setup"
+        ]
+    },
+    {
+        "q": "What is credential marketplace monitoring?",
+        "o": [
+            "Watching stolen credential sales",
+            "Marketplace credential requirements",
+            "Credential market research",
+            "Market credential verification"
+        ]
+    },
+    {
+        "q": "What is exploit trading forum research?",
+        "o": [
+            "Finding zero-day sales and trades",
+            "Trading card exploit research",
+            "Forum exploit trading strategy",
+            "Stock trading exploit forum"
+        ]
+    },
+    {
+        "q": "What is cryptocurrency ransomware tracing?",
+        "o": [
+            "Following ransom payment flows",
+            "Cryptocurrency trading ransomware",
+            "Random crypto tracing software",
+            "Ransom crypto investment"
+        ]
+    },
+    {
+        "q": "What is bulletproof hosting identification?",
+        "o": [
+            "Finding abuse-resistant hosting providers",
+            "Bulletproof vest hosting party",
+            "Hosting bulletproof glass company",
+            "Proof hosting verification"
+        ]
+    },
+    {
+        "q": "What is VPN service abuse research?",
+        "o": [
+            "Identifying VPNs favored by criminals",
+            "VPN service customer abuse",
+            "Abuse report VPN service",
+            "VPN service quality research"
+        ]
+    },
+    {
+        "q": "What is proxy chain analysis?",
+        "o": [
+            "Tracing connections through multiple proxies",
+            "Chain store proxy analysis",
+            "Proxy voting chain analysis",
+            "Analysis chain proxy server"
+        ]
+    },
+    {
+        "q": "What is fast flux network detection?",
+        "o": [
+            "Finding rapidly changing DNS infrastructure",
+            "Fast flux capacitor network",
+            "Network fast speed detection",
+            "Flux network fast charging"
+        ]
+    },
+    {
+        "q": "What is domain generation algorithm analysis?",
+        "o": [
+            "Understanding malware C2 domain creation",
+            "Algorithm domain name generation",
+            "Domain analysis algorithm development",
+            "Generation gap domain study"
+        ]
+    },
+    {
+        "q": "What is passive DNS for threat hunting?",
+        "o": [
+            "Historical DNS for malware infrastructure",
+            "Passive DNS server setup",
+            "DNS passive mode configuration",
+            "Hunting DNS server passive"
+        ]
+    },
+    {
+        "q": "What is YARA rule for OSINT?",
+        "o": [
+            "Pattern matching for malware identification",
+            "Yara clothing brand research",
+            "Rule yara game review",
+            "YARA yarn art research"
+        ]
+    },
+    {
+        "q": "What is Sigma rule for detection?",
+        "o": [
+            "Generic signature format for logs",
+            "Sigma mathematics formula",
+            "Sigma male behavior detection",
+            "Detection sigma level measure"
+        ]
+    },
+    {
+        "q": "What is MISP platform?",
+        "o": [
+            "Malware Information Sharing Platform",
+            "Missing information search platform",
+            "Misp mispronunciation platform",
+            "Platform misp error reporting"
+        ]
+    },
+    {
+        "q": "What is OpenCTI for threat intel?",
+        "o": [
+            "Open Cyber Threat Intelligence platform",
+            "Open city transportation info",
+            "CTI open conference training",
+            "Open computer training institute"
+        ]
+    },
+    {
+        "q": "What is threat intelligence sharing protocol?",
+        "o": [
+            "Standards for exchanging IOCs",
+            "Sharing protocol threat level",
+            "Protocol sharing dinner threat",
+            "Threat assessment sharing"
+        ]
+    },
+    {
+        "q": "What is Traffic Light Protocol?",
+        "o": [
+            "Information sharing restriction levels",
+            "Traffic signal timing protocol",
+            "Light traffic management",
+            "Protocol traffic light installation"
+        ]
+    },
+    {
+        "q": "What does TLP RED mean?",
+        "o": [
+            "Not for disclosure, restricted to recipients",
+            "Red traffic light stop",
+            "TLP red color preference",
+            "Red alert level TLP"
+        ]
+    },
+    {
+        "q": "What does TLP AMBER mean?",
+        "o": [
+            "Limited disclosure to organization and clients",
+            "Amber traffic caution signal",
+            "Amber color warning level",
+            "TLP amber jewelry classification"
+        ]
+    },
+    {
+        "q": "What does TLP GREEN mean?",
+        "o": [
+            "Shareable with community not publicly",
+            "Green traffic light go signal",
+            "Green environmental TLP rating",
+            "TLP green color certification"
+        ]
+    },
+    {
+        "q": "What does TLP WHITE/CLEAR mean?",
+        "o": [
+            "Public disclosure permitted",
+            "White traffic light clear road",
+            "Clear white paint color",
+            "White clearance sale TLP"
+        ]
+    },
+    {
+        "q": "What is information sharing community?",
+        "o": [
+            "Trusted group exchanging threat data",
+            "Community information center",
+            "Sharing community resources",
+            "Community sharing economy"
+        ]
+    },
+    {
+        "q": "What is ISAC participation?",
+        "o": [
+            "Information Sharing and Analysis Center",
+            "Isaac biblical name center",
+            "ISAC conference registration",
+            "Participating in ISAC sports"
+        ]
+    },
+    {
+        "q": "What is sector-specific ISAC?",
+        "o": [
+            "Industry-focused threat sharing",
+            "Sector business ISAC meeting",
+            "Specific sector sales ISAC",
+            "ISAC specific location sector"
+        ]
+    },
+    {
+        "q": "What is AI for OSINT enhancement?",
+        "o": [
+            "Machine learning improving collection",
+            "Artificial insemination OSINT",
+            "AI robot OSINT assistant",
+            "OSINT AI gaming enhancement"
+        ]
+    },
+    {
+        "q": "What is GPT for OSINT analysis?",
+        "o": [
+            "LLM assisting with analysis tasks",
+            "GPT graphics processing OSINT",
+            "OSINT GPT game playing",
+            "GPT general purpose testing"
+        ]
+    },
+    {
+        "q": "What is computer vision for OSINT?",
+        "o": [
+            "Automated image analysis and recognition",
+            "Computer screen vision test",
+            "Vision computer repair service",
+            "OSINT computer display vision"
+        ]
+    },
+    {
+        "q": "What is OCR for document OSINT?",
+        "o": [
+            "Optical Character Recognition for text extraction",
+            "OCR office copy room",
+            "Document OCR error checking",
+            "OCR document formatting only"
+        ]
+    },
+    {
+        "q": "What is speech to text for OSINT?",
+        "o": [
+            "Transcribing audio for analysis",
+            "Speech therapy text reading",
+            "Text message speech pattern",
+            "OSINT speech writing practice"
+        ]
+    },
+    {
+        "q": "What is translation for OSINT?",
+        "o": [
+            "Converting foreign language sources",
+            "Translation service business only",
+            "OSINT translator job position",
+            "Translation accuracy testing"
+        ]
+    },
+    {
+        "q": "What is summarization for large datasets?",
+        "o": [
+            "Condensing information automatically",
+            "Summary writing class assignment",
+            "Dataset summary statistics only",
+            "Large summary file compression"
+        ]
+    },
+    {
+        "q": "What is semantic search for OSINT?",
+        "o": [
+            "Meaning-based rather than keyword search",
+            "Semantic HTML code search",
+            "Search semantic web development",
+            "OSINT semantic error search"
+        ]
+    },
+    {
+        "q": "What is knowledge graph for OSINT?",
+        "o": [
+            "Structured relationship representation",
+            "Knowledge test graph paper",
+            "Graph knowledge quiz score",
+            "OSINT knowledge graph drawing"
+        ]
+    },
+    {
+        "q": "What is Neo4j for OSINT?",
+        "o": [
+            "Graph database for relationship mapping",
+            "Neo4j new job position four",
+            "Job neo four matrix",
+            "Neo matrix OSINT movie"
+        ]
+    },
+    {
+        "q": "What is Elasticsearch for OSINT?",
+        "o": [
+            "Search engine for large data indexing",
+            "Elastic search band website",
+            "Search elastic material testing",
+            "OSINT elastic waistband search"
+        ]
+    },
+    {
+        "q": "What is data lake for OSINT storage?",
+        "o": [
+            "Large-scale unstructured data repository",
+            "Lake data fishing report",
+            "Data swimming lake recreation",
+            "Lake storage water data"
+        ]
+    },
+    {
+        "q": "What is ETL pipeline for OSINT?",
+        "o": [
+            "Extract Transform Load data processing",
+            "ETL electronic telephone line",
+            "Pipeline ETL installation service",
+            "OSINT ETL electric company"
+        ]
+    },
+    {
+        "q": "What is Apache Kafka for streaming?",
+        "o": [
+            "Real-time data streaming platform",
+            "Kafka literature streaming audio",
+            "Apache tribal streaming ceremony",
+            "Streaming apache dance video"
+        ]
+    },
+    {
+        "q": "What is API integration for automation?",
+        "o": [
+            "Connecting to data sources programmatically",
+            "API integration office meeting",
+            "Integration API document writing",
+            "Programmatic API manual reading"
+        ]
+    },
+    {
+        "q": "What is webhook for real-time alerts?",
+        "o": [
+            "HTTP callback for event notification",
+            "Web hook fishing equipment",
+            "Hook web design element",
+            "Webhook crochet pattern online"
+        ]
+    },
+    {
+        "q": "What is docker for OSINT tools?",
+        "o": [
+            "Containerization for tool deployment",
+            "Docker ship worker OSINT",
+            "Tool docker harbor work",
+            "OSINT docker container ship"
+        ]
+    },
+    {
+        "q": "What is OSINT framework selection?",
+        "o": [
+            "Choosing appropriate tool ecosystem",
+            "Framework picture selection art",
+            "Selection frame border choosing",
+            "OSINT picture frame selection"
+        ]
+    },
+    {
+        "q": "What is Hunchly for web research?",
+        "o": [
+            "Automatic web capture and documentation",
+            "Hunchly hunchback research",
+            "Research hunchly body posture",
+            "Web hunchly stretching exercise"
+        ]
+    },
+    {
+        "q": "What is Obsidian for OSINT notes?",
+        "o": [
+            "Knowledge management with linking",
+            "Obsidian rock collection notes",
+            "Notes obsidian gemstone journal",
+            "OSINT obsidian stone research"
+        ]
+    },
+    {
+        "q": "What is CherryTree for case notes?",
+        "o": [
+            "Hierarchical note-taking application",
+            "Cherry tree gardening notes",
+            "Tree cherry picking case",
+            "Case cherry wood furniture"
+        ]
+    },
+    {
+        "q": "What is Kali Linux for OSINT?",
+        "o": [
+            "Security-focused OS with tools",
+            "Kali Linux operating system only",
+            "Linux Kali meditation practice",
+            "OSINT Kali yoga exercise"
+        ]
+    },
+    {
+        "q": "What is Buscador OSINT VM?",
+        "o": [
+            "Pre-configured virtual machine for OSINT",
+            "Buscador search engine Spanish",
+            "VM buscador virtual meeting",
+            "OSINT buscador bus schedule"
+        ]
+    },
+    {
+        "q": "What is CSI Linux for investigations?",
+        "o": [
+            "Investigation-focused Linux distribution",
+            "CSI television show Linux",
+            "Linux CSI crime solving",
+            "Investigation Linux CSI drama"
+        ]
+    },
+    {
+        "q": "What is Tails OS for anonymity?",
+        "o": [
+            "Amnesic operating system for privacy",
+            "Tails animal OS version",
+            "OS tails wagging dog",
+            "Animal tails operating research"
+        ]
+    },
+    {
+        "q": "What is Whonix for anonymous research?",
+        "o": [
+            "Tor-focused virtual machine setup",
+            "Whonix who is questions",
+            "Research whonix identity query",
+            "Anonymous whonix polling research"
+        ]
+    },
+    {
+        "q": "What is browser isolation for OSINT?",
+        "o": [
+            "Sandboxed browsing for safety",
+            "Browser isolation social distance",
+            "Isolation browser quarantine mode",
+            "OSINT browser isolation therapy"
+        ]
+    },
+    {
+        "q": "What is virtual machine snapshot?",
+        "o": [
+            "Saving VM state for rollback",
+            "Virtual snapshot photography",
+            "Machine snapshot camera virtual",
+            "Snapshot virtual reality photo"
+        ]
+    },
+    {
+        "q": "What is credential separation practice?",
+        "o": [
+            "Using different accounts per persona",
+            "Credential separation divorce",
+            "Separation credential anxiety",
+            "Practice credential certification"
+        ]
+    },
+    {
+        "q": "What is geolocation privacy for researcher?",
+        "o": [
+            "Hiding physical location while working",
+            "Geolocation privacy fence",
+            "Privacy geolocation GPS setting",
+            "Researcher privacy geolocation app"
+        ]
+    },
+    {
+        "q": "What is attribution prevention for OSINT?",
+        "o": [
+            "Avoiding target knowing of research",
+            "Attribution prevention award ceremony",
+            "Prevention attribution disease",
+            "OSINT attribution prevention medicine"
+        ]
+    },
+    {
+        "q": "What is sock puppet detection avoidance?",
+        "o": [
+            "Creating undetectable research personas",
+            "Sock detection laundry service",
+            "Puppet detection child play",
+            "Avoidance sock puppet show"
+        ]
+    },
+    {
+        "q": "What is CAPTCHA challenge in automation?",
+        "o": [
+            "Anti-bot measures blocking collection",
+            "CAPTCHA challenge game playing",
+            "Challenge CAPTCHA puzzle solving",
+            "Automation CAPTCHA art creation"
+        ]
+    },
+    {
+        "q": "What is anti-scraping measure bypass ethics?",
+        "o": [
+            "Legal and ethical considerations",
+            "Anti-scraping cleaning product",
+            "Measure bypass surgery medical",
+            "Ethics bypass measure avoidance"
+        ]
+    },
+    {
+        "q": "What is honeypot trap awareness?",
+        "o": [
+            "Recognizing fake target resources",
+            "Honeypot bee trap awareness",
+            "Trap honeypot awareness training",
+            "Awareness honeypot cooking class"
+        ]
+    },
+    {
+        "q": "What is disinformation detection in OSINT?",
+        "o": [
+            "Identifying false information sources",
+            "Disinformation detection alarm system",
+            "Detection disinformation spreading OSINT",
+            "OSINT disinformation writing detection"
+        ]
+    },
+    {
+        "q": "What is influence operation research?",
+        "o": [
+            "Studying coordinated manipulation campaigns",
+            "Influence operation surgery medical",
+            "Operation influence research hospital",
+            "Research influence campaign donation"
+        ]
+    },
+    {
+        "q": "What is bot network attribution?",
+        "o": [
+            "Identifying controllers of fake accounts",
+            "Bot network computer repair",
+            "Attribution bot robotic award",
+            "Network bot computer virus"
+        ]
+    },
+    {
+        "q": "What is narrative tracking?",
+        "o": [
+            "Following story evolution across media",
+            "Narrative tracking story writing",
+            "Tracking narrative GPS location",
+            "Story tracking narrative journal"
+        ]
+    },
+    {
+        "q": "What is cross-platform analysis?",
+        "o": [
+            "Correlating data across multiple platforms",
+            "Platform cross training analysis",
+            "Analysis platform cross examination",
+            "Cross platform jumping analysis"
+        ]
+    },
+    {
+        "q": "What is OSINT for due diligence?",
+        "o": [
+            "Background research for business decisions",
+            "Due diligence OSINT deadline",
+            "Diligence due payment OSINT",
+            "OSINT due diligence homework"
+        ]
+    },
+    {
+        "q": "What is vendor risk assessment?",
+        "o": [
+            "Evaluating third-party security posture",
+            "Vendor assessment sales pitch",
+            "Risk vendor selling assessment",
+            "Assessment vendor retail risk"
+        ]
+    },
+    {
+        "q": "What is merger target research?",
+        "o": [
+            "Investigating acquisition candidates",
+            "Merger target practice archery",
+            "Target research merger announcement",
+            "Research target store merger"
+        ]
+    },
+    {
+        "q": "What is competitive landscape mapping?",
+        "o": [
+            "Understanding market competitors",
+            "Landscape competitive gardening mapping",
+            "Mapping competitive sports landscape",
+            "Competitive landscape photography"
+        ]
+    },
+    {
+        "q": "What is market intelligence gathering?",
+        "o": [
+            "Business environment research",
+            "Market gathering shopping OSINT",
+            "Intelligence market stock trading",
+            "Gathering market farmer produce"
+        ]
+    },
+    {
+        "q": "What is patent landscape analysis?",
+        "o": [
+            "Intellectual property competitive research",
+            "Patent landscape garden design",
+            "Landscape patent pending analysis",
+            "Analysis patent leather shoe"
+        ]
+    },
+    {
+        "q": "What is regulatory filing research?",
+        "o": [
+            "Analyzing mandatory public disclosures",
+            "Filing regulatory cabinet organization",
+            "Research filing paper shredder",
+            "Regulatory filing tax research"
+        ]
+    },
+    {
+        "q": "What is executive profiling for business?",
+        "o": [
+            "Research on company leadership",
+            "Executive profiling racial issue",
+            "Profiling executive furniture design",
+            "Business executive profiling criminal"
+        ]
+    },
+    {
+        "q": "What is organizational structure mapping?",
+        "o": [
+            "Documenting company hierarchy",
+            "Organizational chart structure building",
+            "Structure mapping organizational behavior",
+            "Mapping organizational development course"
+        ]
+    },
+    {
+        "q": "What is technology stack research?",
+        "o": [
+            "Identifying target IT systems",
+            "Technology stack pancake stack",
+            "Research technology stack overflow",
+            "Stack technology book research"
+        ]
+    },
+    {
+        "q": "What is infrastructure footprint analysis?",
+        "o": [
+            "Mapping target technical assets",
+            "Footprint infrastructure carbon analysis",
+            "Analysis footprint infrastructure walking",
+            "Infrastructure footprint shoe size"
+        ]
+    },
+    {
+        "q": "What is cloud asset discovery?",
+        "o": [
+            "Finding target cloud resources",
+            "Cloud discovery weather analysis",
+            "Discovery cloud storage backup",
+            "Asset cloud computing discovery"
+        ]
+    },
+    {
+        "q": "What is subdomain brute forcing ethics?",
+        "o": [
+            "Legal considerations for active discovery",
+            "Brute forcing subdomain gym",
+            "Ethics subdomain brute strength",
+            "Forcing subdomain ethics committee"
+        ]
+    },
+    {
+        "q": "What is responsible disclosure through OSINT?",
+        "o": [
+            "Reporting findings to affected parties",
+            "Disclosure responsible party planning",
+            "Responsible disclosure document filing",
+            "OSINT disclosure responsibility training"
+        ]
+    },
+    {
+        "q": "What is OSINT finding documentation?",
+        "o": [
+            "Recording evidence properly",
+            "Documentation finding lost items",
+            "Finding documentation folder location",
+            "OSINT finding treasure documentation"
+        ]
+    },
+    {
+        "q": "What is chain of custody for evidence?",
+        "o": [
+            "Maintaining integrity of findings",
+            "Chain custody jewelry findings",
+            "Custody chain link evidence",
+            "Evidence custody battle chain"
+        ]
+    },
+    {
+        "q": "What is screenshot verification?",
+        "o": [
+            "Proving authenticity of captures",
+            "Screenshot verification photography",
+            "Verification screenshot gaming",
+            "Capture screenshot verification code"
+        ]
+    },
+    {
+        "q": "What is wayback verification of findings?",
+        "o": [
+            "Confirming via historical archives",
+            "Wayback verification time travel",
+            "Verification wayback machine broken",
+            "Findings wayback confirmation email"
+        ]
+    },
+    {
+        "q": "What is hash verification for files?",
+        "o": [
+            "Confirming file integrity",
+            "Hash verification breakfast food",
+            "Verification hash brown cooking",
+            "File hash tag verification"
+        ]
+    },
+    {
+        "q": "What is metadata preservation?",
+        "o": [
+            "Keeping original file properties",
+            "Preservation metadata museum",
+            "Metadata preservation historical",
+            "Original metadata preservation society"
+        ]
+    },
+    {
+        "q": "What is OSINT for legal proceedings?",
+        "o": [
+            "Evidence gathering for litigation",
+            "Legal proceedings OSINT court",
+            "Proceedings legal OSINT evidence",
+            "OSINT legal document proceedings"
+        ]
+    },
+    {
+        "q": "What is eDiscovery OSINT component?",
+        "o": [
+            "Electronic discovery for legal cases",
+            "Discovery electronic OSINT gadget",
+            "Component eDiscovery computer part",
+            "OSINT eDiscovery component failure"
+        ]
+    },
+    {
+        "q": "What is litigation support through OSINT?",
+        "o": [
+            "Providing research for legal teams",
+            "Litigation support desk furniture",
+            "Support litigation emotional OSINT",
+            "OSINT litigation support group"
+        ]
+    },
+    {
+        "q": "What is asset tracing research?",
+        "o": [
+            "Finding hidden wealth and property",
+            "Asset tracing line drawing",
+            "Research asset tracing accountant",
+            "Tracing asset research paper"
+        ]
+    },
+    {
+        "q": "What is location history research?",
+        "o": [
+            "Tracking individual movements",
+            "Location history GPS research",
+            "Research location history museum",
+            "History location research library"
+        ]
+    },
+    {
+        "q": "What is communication pattern analysis?",
+        "o": [
+            "Studying messaging behavior",
+            "Communication pattern sewing analysis",
+            "Pattern communication phone analysis",
+            "Analysis communication wallpaper pattern"
+        ]
+    },
+    {
+        "q": "What is relationship inference from data?",
+        "o": [
+            "Determining connections between people",
+            "Relationship inference counseling",
+            "Inference relationship therapy session",
+            "Data relationship inference dating"
+        ]
+    },
+    {
+        "q": "What is lifestyle indicator research?",
+        "o": [
+            "Understanding subject habits and interests",
+            "Lifestyle indicator health research",
+            "Research indicator lifestyle magazine",
+            "Indicator research lifestyle brand"
+        ]
+    },
+    {
+        "q": "What is financial indicator research?",
+        "o": [
+            "Assessing economic status from OSINT",
+            "Financial indicator stock market",
+            "Research financial indicator economy",
+            "Indicator financial research investment"
+        ]
+    },
+    {
+        "q": "What is OSINT for missing persons?",
+        "o": [
+            "Finding information about lost individuals",
+            "Missing persons OSINT police",
+            "Persons missing OSINT report",
+            "OSINT missing persons poster"
+        ]
+    },
+    {
+        "q": "What is human trafficking investigation OSINT?",
+        "o": [
+            "Research supporting anti-trafficking efforts",
+            "Trafficking investigation human resources",
+            "Human trafficking OSINT documentary",
+            "Investigation human trafficking awareness"
+        ]
+    },
+    {
+        "q": "What is child safety OSINT application?",
+        "o": [
+            "Protecting minors from exploitation",
+            "Child safety seat application",
+            "Application child safety lock",
+            "Safety child OSINT app store"
+        ]
+    },
+    {
+        "q": "What is fraud investigation OSINT?",
+        "o": [
+            "Research supporting fraud detection",
+            "Fraud investigation insurance claim",
+            "Investigation fraud detection software",
+            "OSINT fraud investigation agency"
+        ]
+    },
+    {
+        "q": "What is insurance fraud detection?",
+        "o": [
+            "Finding false claims through research",
+            "Insurance fraud detection algorithm",
+            "Detection insurance fraud scheme",
+            "Fraud detection insurance premium"
+        ]
+    },
+    {
+        "q": "What is identity verification through OSINT?",
+        "o": [
+            "Confirming claimed identity information",
+            "Identity verification photo ID",
+            "Verification identity theft OSINT",
+            "OSINT identity verification badge"
+        ]
+    },
+    {
+        "q": "What is background screening best practice?",
+        "o": [
+            "Thorough but legal checks",
+            "Background screening movie theater",
+            "Screening background wallpaper selection",
+            "Best practice background zoom"
+        ]
+    },
+    {
+        "q": "What is tenant screening OSINT?",
+        "o": [
+            "Research for rental applications",
+            "Tenant screening apartment lease",
+            "Screening tenant background check",
+            "OSINT tenant screening fee"
+        ]
+    },
+    {
+        "q": "What is dating profile verification?",
+        "o": [
+            "Checking authenticity of online profiles",
+            "Dating profile verification phone",
+            "Verification dating profile photo",
+            "Profile dating verification email"
+        ]
+    },
+    {
+        "q": "What is romance scam investigation?",
+        "o": [
+            "Researching potential fraudsters",
+            "Romance scam investigation drama",
+            "Investigation romance scam movie",
+            "Scam romance investigation novel"
+        ]
+    },
+    {
+        "q": "What is catfishing detection?",
+        "o": [
+            "Identifying fake online personas",
+            "Catfishing detection fishing rod",
+            "Detection catfishing TV show",
+            "Fishing catfishing detection net"
+        ]
+    },
+    {
+        "q": "What is the ultimate goal of OSINT?",
+        "o": [
+            "Informed decision making from public data",
+            "Hacking into private systems",
+            "Collecting all possible data",
+            "Replacing human analysts"
+        ]
+    }
+]

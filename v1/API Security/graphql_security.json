@@ -1,0 +1,4574 @@
+[
+    {
+        "q": "What is GraphQL?",
+        "o": [
+            "Query language for APIs now",
+            "Database management system used",
+            "File transfer protocol standard",
+            "Network monitoring tool here"
+        ]
+    },
+    {
+        "q": "Who created GraphQL?",
+        "o": [
+            "Facebook developed GraphQL",
+            "Google created GraphQL first",
+            "Amazon built GraphQL tool",
+            "Microsoft designed GraphQL"
+        ]
+    },
+    {
+        "q": "What is GraphQL query?",
+        "o": [
+            "Request specific data fields",
+            "Modify data in database now",
+            "Delete records permanently",
+            "Create new database entry"
+        ]
+    },
+    {
+        "q": "What is GraphQL mutation?",
+        "o": [
+            "Modify data on server side",
+            "Only read data from server",
+            "Subscribe to data changes",
+            "Query specific data fields"
+        ]
+    },
+    {
+        "q": "What is GraphQL subscription?",
+        "o": [
+            "Real-time data updates now",
+            "One-time query execution only",
+            "Data modification request here",
+            "Static data retrieval task"
+        ]
+    },
+    {
+        "q": "What is GraphQL schema?",
+        "o": [
+            "Defines API data structure",
+            "Stores database records now",
+            "Handles authentication logic",
+            "Manages file uploads only"
+        ]
+    },
+    {
+        "q": "What is GraphQL resolver?",
+        "o": [
+            "Function that fetches data",
+            "Defines schema structure now",
+            "Handles authentication only",
+            "Validates input data here"
+        ]
+    },
+    {
+        "q": "What is introspection in GraphQL?",
+        "o": [
+            "Query schema information now",
+            "Modify schema definition here",
+            "Delete schema entirely used",
+            "Hide schema from clients"
+        ]
+    },
+    {
+        "q": "Why is introspection a security concern?",
+        "o": [
+            "Reveals API structure info",
+            "No security concern at all",
+            "Improves API security now",
+            "Hides sensitive data here"
+        ]
+    },
+    {
+        "q": "How to disable introspection?",
+        "o": [
+            "Configure server to disable",
+            "Cannot disable introspection",
+            "No configuration needed now",
+            "Introspection is mandatory"
+        ]
+    },
+    {
+        "q": "What is GraphQL Playground?",
+        "o": [
+            "Interactive IDE for GraphQL",
+            "Production database interface",
+            "File management system now",
+            "User authentication portal"
+        ]
+    },
+    {
+        "q": "Should Playground be in production?",
+        "o": [
+            "Disable for security reasons",
+            "Always enable in production",
+            "Required for API to work",
+            "No impact on security"
+        ]
+    },
+    {
+        "q": "What is GraphQL over HTTP?",
+        "o": [
+            "Standard transport protocol",
+            "Only works over WebSocket",
+            "Requires custom protocol now",
+            "Uses FTP for transport"
+        ]
+    },
+    {
+        "q": "What HTTP method for GraphQL queries?",
+        "o": [
+            "GET or POST are allowed",
+            "Only DELETE is allowed now",
+            "Only PUT method works here",
+            "PATCH is the standard one"
+        ]
+    },
+    {
+        "q": "What is operationName in GraphQL?",
+        "o": [
+            "Identifies specific operation",
+            "Mandatory for all queries",
+            "Authenticates the request now",
+            "Encrypts the query data"
+        ]
+    },
+    {
+        "q": "What is GraphQL variables?",
+        "o": [
+            "Dynamic values in queries",
+            "Static schema definitions",
+            "Server configuration values",
+            "Authentication credentials"
+        ]
+    },
+    {
+        "q": "Why use variables in GraphQL?",
+        "o": [
+            "Prevent injection attacks now",
+            "Slow down query execution",
+            "Increase query complexity here",
+            "Disable query validation"
+        ]
+    },
+    {
+        "q": "What is query depth?",
+        "o": [
+            "Nesting level of query fields",
+            "Number of queries per minute",
+            "Size of response payload",
+            "Count of fields returned"
+        ]
+    },
+    {
+        "q": "Why limit query depth?",
+        "o": [
+            "Prevent denial of service",
+            "Speed up simple queries now",
+            "Allow unlimited nesting here",
+            "Improve data accuracy today"
+        ]
+    },
+    {
+        "q": "What is query complexity?",
+        "o": [
+            "Compute cost of a query",
+            "Number of typos in query",
+            "Size of query string used",
+            "Count of variables used"
+        ]
+    },
+    {
+        "q": "What is complexity analysis?",
+        "o": [
+            "Calculate query cost before run",
+            "After execution resource check",
+            "No analysis is possible now",
+            "Only analyze simple queries"
+        ]
+    },
+    {
+        "q": "What is field-level authorization?",
+        "o": [
+            "Check permission per field",
+            "Allow all fields to everyone",
+            "No field restrictions needed",
+            "Only schema level auth used"
+        ]
+    },
+    {
+        "q": "What is resolver authorization?",
+        "o": [
+            "Check permissions in resolver",
+            "Skip all permission checks",
+            "Authorization is automatic now",
+            "No resolver checks needed"
+        ]
+    },
+    {
+        "q": "What is GraphQL injection?",
+        "o": [
+            "Malicious query manipulation",
+            "Normal query execution done",
+            "Safe query construction used",
+            "Standard data retrieval task"
+        ]
+    },
+    {
+        "q": "How to prevent GraphQL injection?",
+        "o": [
+            "Use parameterized variables now",
+            "Concatenate strings for queries",
+            "Build queries dynamically here",
+            "Skip input validation fully"
+        ]
+    },
+    {
+        "q": "What is batching in GraphQL?",
+        "o": [
+            "Multiple queries in one request",
+            "Single query only per request",
+            "No batching is supported now",
+            "Only mutations can be batched"
+        ]
+    },
+    {
+        "q": "Is batching a security risk?",
+        "o": [
+            "Can bypass rate limiting now",
+            "No security concern at all",
+            "Improves security measures here",
+            "Always safe to use fully"
+        ]
+    },
+    {
+        "q": "What is query allowlisting?",
+        "o": [
+            "Pre-approve specific queries",
+            "Allow any query execution now",
+            "Block all queries by default",
+            "No query filtering applied"
+        ]
+    },
+    {
+        "q": "What is persisted queries?",
+        "o": [
+            "Pre-registered queries on server",
+            "Queries that never expire now",
+            "Cached query results stored",
+            "Queries saved in browser"
+        ]
+    },
+    {
+        "q": "Why use persisted queries?",
+        "o": [
+            "Reduce attack surface area",
+            "Increase attack possibilities",
+            "No security benefit at all",
+            "Only for performance gain"
+        ]
+    },
+    {
+        "q": "What is automatic persisted queries?",
+        "o": [
+            "Client-driven query caching",
+            "Server generates all queries",
+            "No caching mechanism used",
+            "Manual query registration"
+        ]
+    },
+    {
+        "q": "What is GraphQL fragment?",
+        "o": [
+            "Reusable query component now",
+            "Broken query that fails here",
+            "Encrypted query portion used",
+            "Authentication token part"
+        ]
+    },
+    {
+        "q": "Can fragments cause issues?",
+        "o": [
+            "Circular fragments can DoS",
+            "Fragments are always safe",
+            "No performance impact now",
+            "Fragments improve security"
+        ]
+    },
+    {
+        "q": "What is GraphQL alias?",
+        "o": [
+            "Rename field in response now",
+            "Hide field from response here",
+            "Encrypt field value sent out",
+            "Delete field permanently today"
+        ]
+    },
+    {
+        "q": "Can aliases be abused?",
+        "o": [
+            "Duplicate fields multiple times",
+            "Aliases are always safe now",
+            "No abuse possible with alias",
+            "Aliases limit query size"
+        ]
+    },
+    {
+        "q": "What is GraphQL directive?",
+        "o": [
+            "Modify query execution logic",
+            "Only for schema definition",
+            "Cannot affect execution now",
+            "Used for comments only"
+        ]
+    },
+    {
+        "q": "What is @deprecated directive?",
+        "o": [
+            "Mark field as deprecated now",
+            "Delete the field immediately",
+            "Hide field from all clients",
+            "Encrypt field value stored"
+        ]
+    },
+    {
+        "q": "What is @skip directive?",
+        "o": [
+            "Conditionally skip field now",
+            "Always include the field here",
+            "Delete field from schema used",
+            "Encrypt field in response"
+        ]
+    },
+    {
+        "q": "What is @include directive?",
+        "o": [
+            "Conditionally include field now",
+            "Always exclude the field here",
+            "Mandatory field inclusion used",
+            "Optional field definition"
+        ]
+    },
+    {
+        "q": "What is GraphQL type system?",
+        "o": [
+            "Defines data types in schema",
+            "No types in GraphQL used",
+            "Optional type definitions now",
+            "Types for mutations only"
+        ]
+    },
+    {
+        "q": "What is scalar type?",
+        "o": [
+            "Primitive data type like String",
+            "Complex nested object type",
+            "List of multiple values now",
+            "Union of different types"
+        ]
+    },
+    {
+        "q": "What are default scalar types?",
+        "o": [
+            "Int Float String Boolean ID",
+            "Only String and Number now",
+            "No default scalars exist",
+            "Char Byte Short Long Text"
+        ]
+    },
+    {
+        "q": "What is custom scalar type?",
+        "o": [
+            "User-defined data type now",
+            "Built-in type modification",
+            "Cannot create custom types",
+            "Only for queries allowed"
+        ]
+    },
+    {
+        "q": "What is input type?",
+        "o": [
+            "Complex mutation input type",
+            "Output only type definition",
+            "Query result type used",
+            "Subscription data type"
+        ]
+    },
+    {
+        "q": "What is enum type?",
+        "o": [
+            "Set of predefined values now",
+            "Random value generation here",
+            "Dynamic value assignment",
+            "Any value allowed type"
+        ]
+    },
+    {
+        "q": "What is union type?",
+        "o": [
+            "One of multiple types now",
+            "Combination of all types",
+            "Single type only allowed",
+            "No type specified here"
+        ]
+    },
+    {
+        "q": "What is interface type?",
+        "o": [
+            "Shared fields across types",
+            "No shared fields allowed",
+            "Single implementation only",
+            "Mutation specific type"
+        ]
+    },
+    {
+        "q": "What is non-null type?",
+        "o": [
+            "Field cannot be null now",
+            "Field is always null here",
+            "Optional field definition",
+            "Nullable by default type"
+        ]
+    },
+    {
+        "q": "What is list type?",
+        "o": [
+            "Array of values returned now",
+            "Single value only allowed",
+            "No multiple values here",
+            "Dictionary type definition"
+        ]
+    },
+    {
+        "q": "What is GraphQL error handling?",
+        "o": [
+            "Return errors with data now",
+            "Only return errors or data",
+            "No error handling exists",
+            "Errors cause full failure"
+        ]
+    },
+    {
+        "q": "What is partial response?",
+        "o": [
+            "Return data with some errors",
+            "All or nothing response now",
+            "No partial data allowed",
+            "Complete success required"
+        ]
+    },
+    {
+        "q": "What is error masking?",
+        "o": [
+            "Hide internal error details",
+            "Show all error information",
+            "No error messages returned",
+            "Detailed stack traces shown"
+        ]
+    },
+    {
+        "q": "Why mask errors in GraphQL?",
+        "o": [
+            "Prevent information leakage now",
+            "Help attackers debug issues",
+            "No security reason exists",
+            "Errors are always safe"
+        ]
+    },
+    {
+        "q": "What is N+1 problem?",
+        "o": [
+            "Multiple database queries issue",
+            "Single query optimization now",
+            "No query performance issue",
+            "Optimal query execution"
+        ]
+    },
+    {
+        "q": "How to solve N+1 problem?",
+        "o": [
+            "Use DataLoader for batching",
+            "Execute queries sequentially",
+            "Increase query complexity now",
+            "Remove all nested queries"
+        ]
+    },
+    {
+        "q": "What is DataLoader?",
+        "o": [
+            "Batch and cache data loading",
+            "Slow individual data loading",
+            "No caching mechanism used",
+            "Direct database connection"
+        ]
+    },
+    {
+        "q": "What is GraphQL caching?",
+        "o": [
+            "Cache query results now",
+            "No caching is possible",
+            "Caching breaks GraphQL",
+            "Only mutations can cache"
+        ]
+    },
+    {
+        "q": "Why is GraphQL caching hard?",
+        "o": [
+            "POST requests not cached",
+            "Caching works perfectly now",
+            "No difficulty with caching",
+            "Same as REST caching here"
+        ]
+    },
+    {
+        "q": "What is field-level caching?",
+        "o": [
+            "Cache individual field data",
+            "Cache entire response only",
+            "No field caching possible",
+            "Cache schema definition"
+        ]
+    },
+    {
+        "q": "What is query normalization?",
+        "o": [
+            "Standardize query format now",
+            "Keep queries as received",
+            "Modify query semantics here",
+            "Encrypt query content used"
+        ]
+    },
+    {
+        "q": "What is operation-level timeout?",
+        "o": [
+            "Limit query execution time",
+            "Unlimited execution allowed",
+            "No timeout configuration",
+            "Only for mutations used"
+        ]
+    },
+    {
+        "q": "What is resolver timeout?",
+        "o": [
+            "Individual resolver time limit",
+            "No timeout for resolvers",
+            "Unlimited resolver execution",
+            "Only schema level timeout"
+        ]
+    },
+    {
+        "q": "What is query cost limit?",
+        "o": [
+            "Maximum allowed query complexity",
+            "Minimum required complexity now",
+            "No complexity limits set",
+            "Only for subscriptions"
+        ]
+    },
+    {
+        "q": "What is rate limiting in GraphQL?",
+        "o": [
+            "Limit requests per time frame",
+            "No rate limiting possible now",
+            "Unlimited requests allowed",
+            "Only for mutations applied"
+        ]
+    },
+    {
+        "q": "What is query-based rate limiting?",
+        "o": [
+            "Rate limit based on complexity",
+            "Simple request count only",
+            "No complexity consideration",
+            "Fixed limit for all queries"
+        ]
+    },
+    {
+        "q": "What is field-based rate limiting?",
+        "o": [
+            "Limit specific field access",
+            "All fields same rate limit",
+            "No per-field limiting now",
+            "Only type level limits"
+        ]
+    },
+    {
+        "q": "What is GraphQL authentication?",
+        "o": [
+            "Verify user identity first",
+            "No authentication needed now",
+            "Authentication is optional",
+            "Only for mutations required"
+        ]
+    },
+    {
+        "q": "Where to handle authentication?",
+        "o": [
+            "HTTP layer before GraphQL",
+            "Only in resolvers allowed",
+            "Schema level authentication",
+            "No standard location exists"
+        ]
+    },
+    {
+        "q": "What is context in GraphQL?",
+        "o": [
+            "Shared data across resolvers",
+            "Isolated resolver data only",
+            "User input parameters here",
+            "Schema definition context"
+        ]
+    },
+    {
+        "q": "What is context-based auth?",
+        "o": [
+            "Pass user info via context",
+            "No context for auth used",
+            "Authentication in schema only",
+            "Resolver handles everything"
+        ]
+    },
+    {
+        "q": "What is GraphQL authorization?",
+        "o": [
+            "Check if user can access",
+            "Same as authentication now",
+            "No authorization in GraphQL",
+            "Only for public APIs needed"
+        ]
+    },
+    {
+        "q": "What is schema-level authorization?",
+        "o": [
+            "Check access at schema layer",
+            "No schema authorization now",
+            "Resolver only authorization",
+            "Client side access control"
+        ]
+    },
+    {
+        "q": "What is directive-based authorization?",
+        "o": [
+            "Use directives for access control",
+            "No directive authorization exists",
+            "Directives cannot authorize",
+            "Only resolver authorization"
+        ]
+    },
+    {
+        "q": "What is @auth directive custom?",
+        "o": [
+            "Custom authorization directive",
+            "Built-in GraphQL directive now",
+            "Standard specification directive",
+            "Cannot create auth directive"
+        ]
+    },
+    {
+        "q": "What is role-based access in GraphQL?",
+        "o": [
+            "Restrict by user role assigned",
+            "No role-based access exists",
+            "All users have same access",
+            "Roles only for mutations"
+        ]
+    },
+    {
+        "q": "What is field-level access control?",
+        "o": [
+            "Control access per field now",
+            "All or nothing access only",
+            "No field level control here",
+            "Type level control only"
+        ]
+    },
+    {
+        "q": "What is row-level security?",
+        "o": [
+            "Restrict data to owner only",
+            "All rows visible to all now",
+            "No row filtering supported",
+            "Schema level control only"
+        ]
+    },
+    {
+        "q": "What is data filtering?",
+        "o": [
+            "Return only authorized data",
+            "Return all data to everyone",
+            "No filtering is possible now",
+            "Filter only on client side"
+        ]
+    },
+    {
+        "q": "What is input validation?",
+        "o": [
+            "Validate data before processing",
+            "Accept any input as valid",
+            "No validation in GraphQL",
+            "Only type validation done"
+        ]
+    },
+    {
+        "q": "Where to validate input?",
+        "o": [
+            "Schema and resolver levels",
+            "Only on client side now",
+            "No validation location exists",
+            "Database level only used"
+        ]
+    },
+    {
+        "q": "What is schema validation?",
+        "o": [
+            "Type checking by GraphQL",
+            "No automatic validation now",
+            "Manual validation required",
+            "Only for mutations used"
+        ]
+    },
+    {
+        "q": "What is custom validation?",
+        "o": [
+            "Business logic validation rules",
+            "Type checking only is custom",
+            "No custom validation allowed",
+            "Schema validation is custom"
+        ]
+    },
+    {
+        "q": "What is GraphQL transport security?",
+        "o": [
+            "HTTPS for GraphQL endpoint",
+            "HTTP is secure enough now",
+            "No transport security needed",
+            "Encryption at resolver only"
+        ]
+    },
+    {
+        "q": "What is WebSocket security?",
+        "o": [
+            "Secure subscriptions with WSS",
+            "WS is secure for subs now",
+            "No WebSocket security exists",
+            "Only HTTP subscriptions"
+        ]
+    },
+    {
+        "q": "What is CORS in GraphQL?",
+        "o": [
+            "Cross-origin request settings",
+            "No CORS for GraphQL needed",
+            "CORS not applicable here",
+            "Only for REST APIs used"
+        ]
+    },
+    {
+        "q": "Should GraphQL allow all origins?",
+        "o": [
+            "Restrict to trusted origins",
+            "Allow all origins is safe",
+            "No origin check needed now",
+            "CORS is not important"
+        ]
+    },
+    {
+        "q": "What is CSRF protection for GraphQL?",
+        "o": [
+            "Prevent cross-site mutations",
+            "No CSRF risk in GraphQL",
+            "Only REST has CSRF issue",
+            "CSRF not applicable here"
+        ]
+    },
+    {
+        "q": "How to prevent GraphQL CSRF?",
+        "o": [
+            "Use CSRF tokens or same-site",
+            "No protection is needed now",
+            "CSRF cannot affect GraphQL",
+            "Only disable mutations used"
+        ]
+    },
+    {
+        "q": "What is query logging?",
+        "o": [
+            "Record executed queries now",
+            "No logging in GraphQL used",
+            "Logging breaks performance",
+            "Only error logging done"
+        ]
+    },
+    {
+        "q": "Why log GraphQL queries?",
+        "o": [
+            "Audit and security monitoring",
+            "Logging is not necessary",
+            "Performance reasons only here",
+            "Debugging only purpose"
+        ]
+    },
+    {
+        "q": "What to log in GraphQL?",
+        "o": [
+            "Query operation and user info",
+            "Full query with all data",
+            "No logging recommended now",
+            "Only error messages logged"
+        ]
+    },
+    {
+        "q": "What is sensitive data in logs?",
+        "o": [
+            "Passwords and tokens logged",
+            "All data is safe to log",
+            "No sensitive data exists",
+            "Logging is always secure"
+        ]
+    },
+    {
+        "q": "What is Apollo Server?",
+        "o": [
+            "Popular GraphQL server library",
+            "GraphQL client library only",
+            "Database for GraphQL data",
+            "Authentication service here"
+        ]
+    },
+    {
+        "q": "What is graphql-js?",
+        "o": [
+            "Reference GraphQL implementation",
+            "JavaScript client library",
+            "Database query language",
+            "Browser framework used"
+        ]
+    },
+    {
+        "q": "What is GraphQL shield?",
+        "o": [
+            "Permission layer for GraphQL",
+            "No security library exists",
+            "Attack tool for GraphQL",
+            "Performance monitoring library"
+        ]
+    },
+    {
+        "q": "What is graphql-depth-limit?",
+        "o": [
+            "Limit query nesting depth",
+            "No depth limiting package",
+            "Increase query depth here",
+            "Remove all depth limits"
+        ]
+    },
+    {
+        "q": "What is graphql-query-complexity?",
+        "o": [
+            "Calculate query cost score",
+            "No complexity analysis lib",
+            "Speed up query execution",
+            "Remove complexity limits"
+        ]
+    },
+    {
+        "q": "What is GraphQL validation?",
+        "o": [
+            "Check query against schema",
+            "No validation in GraphQL",
+            "Optional validation only now",
+            "Client-side validation only"
+        ]
+    },
+    {
+        "q": "What are validation rules?",
+        "o": [
+            "Rules to validate queries",
+            "No rules in GraphQL spec",
+            "Only custom rules allowed",
+            "Rules for schema only"
+        ]
+    },
+    {
+        "q": "What is field selection validation?",
+        "o": [
+            "Check valid fields selected",
+            "Allow any field selection",
+            "No field validation done",
+            "Only type validation here"
+        ]
+    },
+    {
+        "q": "What is argument validation?",
+        "o": [
+            "Validate argument types match",
+            "Accept any argument type",
+            "No argument checking done",
+            "Only name validation used"
+        ]
+    },
+    {
+        "q": "What is variable type validation?",
+        "o": [
+            "Check variable matches type",
+            "Variables are untyped now",
+            "No variable validation used",
+            "Only value validation done"
+        ]
+    },
+    {
+        "q": "What is fragment spread validation?",
+        "o": [
+            "Check fragment type matches",
+            "Allow any fragment spread",
+            "No fragment validation used",
+            "Only inline fragments checked"
+        ]
+    },
+    {
+        "q": "What is operation name uniqueness?",
+        "o": [
+            "Each operation unique name",
+            "Duplicate names allowed now",
+            "No name requirement exists",
+            "Only for mutations applied"
+        ]
+    },
+    {
+        "q": "What is field merging validation?",
+        "o": [
+            "Check merged fields compatible",
+            "No merging validation done",
+            "All fields can merge now",
+            "Fields never merge here"
+        ]
+    },
+    {
+        "q": "What is query document validation?",
+        "o": [
+            "Validate entire query doc",
+            "No document validation used",
+            "Only operation validated now",
+            "Fragment validation only"
+        ]
+    },
+    {
+        "q": "What is ExecutableDefinitions rule?",
+        "o": [
+            "Only operations and fragments",
+            "Allow schema definitions now",
+            "Type definitions allowed too",
+            "No restriction on content"
+        ]
+    },
+    {
+        "q": "What is LoneAnonymousOperation rule?",
+        "o": [
+            "Anonymous op must be alone",
+            "Multiple anonymous allowed",
+            "No anonymous operations now",
+            "Named operations required"
+        ]
+    },
+    {
+        "q": "What is KnownTypeNames rule?",
+        "o": [
+            "Types must exist in schema",
+            "Unknown types are allowed",
+            "No type checking needed now",
+            "Only scalar checking done"
+        ]
+    },
+    {
+        "q": "What is UniqueOperationNames rule?",
+        "o": [
+            "Operations have unique names",
+            "Duplicate op names allowed",
+            "No name checking required",
+            "Only for queries applied"
+        ]
+    },
+    {
+        "q": "What is UniqueVariableNames rule?",
+        "o": [
+            "Variables have unique names",
+            "Duplicate var names allowed",
+            "No variable name checking",
+            "Only type checking done"
+        ]
+    },
+    {
+        "q": "What is NoUndefinedVariables rule?",
+        "o": [
+            "All used vars must be defined",
+            "Undefined variables allowed",
+            "No variable checking done",
+            "Only for mutations checked"
+        ]
+    },
+    {
+        "q": "What is NoUnusedVariables rule?",
+        "o": [
+            "All defined vars must be used",
+            "Unused variables allowed now",
+            "No unused checking needed",
+            "Only for queries applied"
+        ]
+    },
+    {
+        "q": "What is NoFragmentCycles rule?",
+        "o": [
+            "Prevent circular fragments",
+            "Circular fragments allowed",
+            "No cycle detection needed",
+            "Cycles are performance only"
+        ]
+    },
+    {
+        "q": "What is UniqueFragmentNames rule?",
+        "o": [
+            "Fragments have unique names",
+            "Duplicate frag names allowed",
+            "No fragment name checking",
+            "Only type fragments checked"
+        ]
+    },
+    {
+        "q": "What is KnownFragmentNames rule?",
+        "o": [
+            "Used fragments must be defined",
+            "Unknown fragments allowed now",
+            "No fragment checking needed",
+            "Only inline fragments checked"
+        ]
+    },
+    {
+        "q": "What is NoUnusedFragments rule?",
+        "o": [
+            "All defined frags must be used",
+            "Unused fragments allowed now",
+            "No unused frag checking used",
+            "Only for optimization done"
+        ]
+    },
+    {
+        "q": "What is PossibleFragmentSpreads rule?",
+        "o": [
+            "Fragment type must match context",
+            "Any fragment spread allowed",
+            "No type checking on spread",
+            "Only interface spreads checked"
+        ]
+    },
+    {
+        "q": "What is KnownDirectives rule?",
+        "o": [
+            "Directives must be defined now",
+            "Custom directives always work",
+            "No directive validation used",
+            "Only built-in checked here"
+        ]
+    },
+    {
+        "q": "What is UniqueDirectivesPerLocation?",
+        "o": [
+            "Non-repeatable once per loc",
+            "Any directive any number here",
+            "No location checking done",
+            "Directives are repeatable"
+        ]
+    },
+    {
+        "q": "What is KnownArgumentNames rule?",
+        "o": [
+            "Args must match definition",
+            "Unknown arguments allowed now",
+            "No argument name checking",
+            "Only type checking done"
+        ]
+    },
+    {
+        "q": "What is UniqueArgumentNames rule?",
+        "o": [
+            "No duplicate arg names",
+            "Duplicate args are allowed",
+            "No arg name validation now",
+            "Only for directives checked"
+        ]
+    },
+    {
+        "q": "What is ProvidedRequiredArguments rule?",
+        "o": [
+            "Required args must be given",
+            "Optional args work as req",
+            "No required arg checking now",
+            "All arguments are optional"
+        ]
+    },
+    {
+        "q": "What is ValuesOfCorrectType rule?",
+        "o": [
+            "Values match expected types",
+            "Any value type accepted now",
+            "No value type checking done",
+            "Only scalar types checked"
+        ]
+    },
+    {
+        "q": "What is VariablesInAllowedPosition rule?",
+        "o": [
+            "Variable type compatible with arg",
+            "Any variable position works",
+            "No position checking needed",
+            "Only for non-null checked"
+        ]
+    },
+    {
+        "q": "What is OverlappingFieldsCanBeMerged rule?",
+        "o": [
+            "Overlapping fields must merge",
+            "No merge checking required",
+            "Fields never overlap here",
+            "Only aliases checked now"
+        ]
+    },
+    {
+        "q": "What is UniqueInputFieldNames rule?",
+        "o": [
+            "Input object fields unique",
+            "Duplicate input fields allowed",
+            "No input field checking done",
+            "Only for mutations checked"
+        ]
+    },
+    {
+        "q": "What is SingleFieldSubscriptions rule?",
+        "o": [
+            "Subscription single root field",
+            "Multiple subscription fields ok",
+            "No subscription restriction",
+            "Only for queries applied"
+        ]
+    },
+    {
+        "q": "What is defer directive?",
+        "o": [
+            "Stream part of response later",
+            "Immediate full response now",
+            "Cancel query execution here",
+            "Skip field entirely used"
+        ]
+    },
+    {
+        "q": "What is stream directive?",
+        "o": [
+            "Stream list items over time",
+            "Return list all at once now",
+            "Cancel list processing here",
+            "Skip list entirely used"
+        ]
+    },
+    {
+        "q": "What is live query?",
+        "o": [
+            "Real-time query updates now",
+            "One-time query execution only",
+            "Mutation with live results",
+            "Subscription alternative used"
+        ]
+    },
+    {
+        "q": "What is GraphQL over SSE?",
+        "o": [
+            "Server-sent events transport",
+            "Only WebSocket supported now",
+            "HTTP not supported for sub",
+            "No streaming in GraphQL"
+        ]
+    },
+    {
+        "q": "What is graphql-upload?",
+        "o": [
+            "Handle file uploads in GraphQL",
+            "No file upload support exists",
+            "Upload only via REST API",
+            "Download files only here"
+        ]
+    },
+    {
+        "q": "What are file upload security risks?",
+        "o": [
+            "Malicious file execution risk",
+            "Files are always safe now",
+            "No upload security concerns",
+            "Only size is a concern"
+        ]
+    },
+    {
+        "q": "How to secure file uploads?",
+        "o": [
+            "Validate type and scan content",
+            "Accept any file directly now",
+            "No validation is needed here",
+            "Trust client-side validation"
+        ]
+    },
+    {
+        "q": "What is multipart request specification?",
+        "o": [
+            "GraphQL file upload standard",
+            "No standard for uploads exists",
+            "Only proprietary implementations",
+            "REST only specification used"
+        ]
+    },
+    {
+        "q": "What is batched mutation attack?",
+        "o": [
+            "Multiple mutations bypass limits",
+            "Batching is always secure now",
+            "No attack via batching here",
+            "Mutations cannot be batched"
+        ]
+    },
+    {
+        "q": "How to limit batched mutations?",
+        "o": [
+            "Set max operations per request",
+            "Allow unlimited operations now",
+            "Batching cannot be limited",
+            "Only queries can be limited"
+        ]
+    },
+    {
+        "q": "What is alias-based attack?",
+        "o": [
+            "Repeat expensive fields often",
+            "Aliases cannot be abused now",
+            "No performance impact here",
+            "Aliases are always limited"
+        ]
+    },
+    {
+        "q": "How to prevent alias abuse?",
+        "o": [
+            "Limit alias count per query",
+            "Allow unlimited aliases now",
+            "Aliases cannot be counted",
+            "Only field limiting works"
+        ]
+    },
+    {
+        "q": "What is field duplication attack?",
+        "o": [
+            "Same field many times costly",
+            "Duplication is always merged",
+            "No duplicate fields allowed",
+            "Duplicates are optimized"
+        ]
+    },
+    {
+        "q": "What is object identifier exposure?",
+        "o": [
+            "Expose internal IDs in API",
+            "IDs are always safe to show",
+            "No exposure concern exists",
+            "Only expose to admins"
+        ]
+    },
+    {
+        "q": "What is IDOR in GraphQL?",
+        "o": [
+            "Access others data via ID",
+            "No IDOR in GraphQL exists",
+            "IDOR only in REST APIs",
+            "IDs prevent IDOR always"
+        ]
+    },
+    {
+        "q": "How to prevent GraphQL IDOR?",
+        "o": [
+            "Verify authorization for ID",
+            "Trust all ID access now",
+            "IDs are self-authorizing",
+            "No IDOR prevention needed"
+        ]
+    },
+    {
+        "q": "What is sensitive data exposure?",
+        "o": [
+            "Return private data in response",
+            "GraphQL never exposes data",
+            "All data is public anyway",
+            "Only mutations expose data"
+        ]
+    },
+    {
+        "q": "How to prevent data exposure?",
+        "o": [
+            "Field-level access control now",
+            "Schema prevents exposure here",
+            "No control is possible used",
+            "Client handles privacy only"
+        ]
+    },
+    {
+        "q": "What is excessive data exposure?",
+        "o": [
+            "Return more data than needed",
+            "GraphQL prevents over-fetch",
+            "Clients only get what asked",
+            "No excessive exposure risk"
+        ]
+    },
+    {
+        "q": "What is broken object level auth?",
+        "o": [
+            "Access objects without auth",
+            "Objects self-authenticate now",
+            "No object auth in GraphQL",
+            "Schema handles all auth"
+        ]
+    },
+    {
+        "q": "What is broken function level auth?",
+        "o": [
+            "Access functions without auth",
+            "Functions auto-authorize now",
+            "No function auth needed here",
+            "All functions are public"
+        ]
+    },
+    {
+        "q": "What is debug mode exposure?",
+        "o": [
+            "Show debug info in production",
+            "Debug mode is always safe",
+            "No debug mode in GraphQL",
+            "Debug only for queries"
+        ]
+    },
+    {
+        "q": "What is stack trace exposure?",
+        "o": [
+            "Show code paths in errors",
+            "Stack traces are safe now",
+            "No stack traces in GraphQL",
+            "Only for development used"
+        ]
+    },
+    {
+        "q": "What is verbose error message?",
+        "o": [
+            "Detailed error helps attacker",
+            "Verbose errors are secure",
+            "No verbose errors possible",
+            "Errors are always minimal"
+        ]
+    },
+    {
+        "q": "What is error code enumeration?",
+        "o": [
+            "Different errors reveal info",
+            "Error codes are always same",
+            "No enumeration is possible",
+            "Codes are randomized now"
+        ]
+    },
+    {
+        "q": "What is schema exposure risk?",
+        "o": [
+            "Attackers learn API structure",
+            "Schema exposure is harmless",
+            "Schema is always hidden now",
+            "No risk from introspection"
+        ]
+    },
+    {
+        "q": "What is development vs production config?",
+        "o": [
+            "Different security settings",
+            "Same config for both envs",
+            "No config differences needed",
+            "Dev settings are secure"
+        ]
+    },
+    {
+        "q": "What is GraphQL playground in prod?",
+        "o": [
+            "Security risk if enabled now",
+            "Safe to enable in production",
+            "Required for API to work",
+            "No security impact at all"
+        ]
+    },
+    {
+        "q": "What is GraphiQL?",
+        "o": [
+            "Interactive GraphQL IDE tool",
+            "GraphQL database system now",
+            "Production query executor",
+            "Schema definition tool"
+        ]
+    },
+    {
+        "q": "Should GraphiQL be public?",
+        "o": [
+            "Restrict to internal only now",
+            "Always make it public here",
+            "No security concern exists",
+            "Required for API users"
+        ]
+    },
+    {
+        "q": "What is Apollo Studio?",
+        "o": [
+            "GraphQL development platform",
+            "Production server software",
+            "Database for GraphQL data",
+            "Client-side library only"
+        ]
+    },
+    {
+        "q": "What is schema registry?",
+        "o": [
+            "Central schema management hub",
+            "No registry needed in GraphQL",
+            "Client-side schema storage",
+            "Database for queries only"
+        ]
+    },
+    {
+        "q": "What is schema federation?",
+        "o": [
+            "Combine multiple GraphQL APIs",
+            "Single schema only approach",
+            "No federation in GraphQL",
+            "Federation breaks security"
+        ]
+    },
+    {
+        "q": "What are federation security concerns?",
+        "o": [
+            "Cross-service auth complexity",
+            "Federation is always secure",
+            "No additional security needed",
+            "Simpler than single schema"
+        ]
+    },
+    {
+        "q": "What is Apollo Federation?",
+        "o": [
+            "Compose distributed schemas",
+            "No federation solution exists",
+            "Single schema architecture",
+            "Database federation tool"
+        ]
+    },
+    {
+        "q": "What is gateway security?",
+        "o": [
+            "Protect federated gateway now",
+            "Gateways are self-securing",
+            "No gateway security needed",
+            "Only subgraphs need security"
+        ]
+    },
+    {
+        "q": "What is subgraph authentication?",
+        "o": [
+            "Verify requests to subgraphs",
+            "Subgraphs trust all requests",
+            "No subgraph auth is needed",
+            "Only gateway authenticates"
+        ]
+    },
+    {
+        "q": "What is entity resolution security?",
+        "o": [
+            "Secure cross-service queries",
+            "Entities auto-authorize now",
+            "No resolution security exists",
+            "Only for mutations needed"
+        ]
+    },
+    {
+        "q": "What is GraphQL mesh?",
+        "o": [
+            "Unify multiple data sources",
+            "Single GraphQL server only",
+            "No mesh solution exists now",
+            "Database mesh technology"
+        ]
+    },
+    {
+        "q": "What is SDL first development?",
+        "o": [
+            "Schema definition language first",
+            "Code first approach only",
+            "No SDL in GraphQL exists",
+            "SDL is deprecated now"
+        ]
+    },
+    {
+        "q": "What is code first development?",
+        "o": [
+            "Generate schema from code",
+            "Write SDL manually only now",
+            "No code first approach used",
+            "Code first is deprecated"
+        ]
+    },
+    {
+        "q": "What is schema stitching?",
+        "o": [
+            "Combine schemas into one now",
+            "Split single schema apart",
+            "No stitching capability exists",
+            "Deprecated for federation"
+        ]
+    },
+    {
+        "q": "What is schema delegation?",
+        "o": [
+            "Forward queries to other schema",
+            "No delegation in GraphQL now",
+            "Handle all queries locally",
+            "Delegation causes security"
+        ]
+    },
+    {
+        "q": "What is remote schema?",
+        "o": [
+            "Schema from another server now",
+            "Local schema only allowed",
+            "No remote schemas supported",
+            "Remote schemas are unsafe"
+        ]
+    },
+    {
+        "q": "What are remote schema risks?",
+        "o": [
+            "Trust external schema content",
+            "Remote schemas are safe now",
+            "No risk from remote used",
+            "Only local has risks here"
+        ]
+    },
+    {
+        "q": "What is subscription security?",
+        "o": [
+            "Secure real-time connections",
+            "Subscriptions are auto-secure",
+            "No security for subscriptions",
+            "Only mutations need security"
+        ]
+    },
+    {
+        "q": "What is subscription authentication?",
+        "o": [
+            "Auth at connection time now",
+            "No auth for subscriptions used",
+            "Subscriptions are public only",
+            "Auth only for queries"
+        ]
+    },
+    {
+        "q": "What is connection params?",
+        "o": [
+            "Auth data in WS connection",
+            "No params in connections now",
+            "Only for HTTP requests used",
+            "Params are deprecated here"
+        ]
+    },
+    {
+        "q": "What is subscription lifecycle?",
+        "o": [
+            "Connect subscribe publish stop",
+            "No lifecycle in subscriptions",
+            "Always connected state now",
+            "Only start and stop events"
+        ]
+    },
+    {
+        "q": "What is PubSub in GraphQL?",
+        "o": [
+            "Publish subscribe pattern now",
+            "Database pattern only used",
+            "No PubSub in GraphQL here",
+            "Only for REST APIs used"
+        ]
+    },
+    {
+        "q": "What is subscription authorization?",
+        "o": [
+            "Check access to stream data",
+            "No auth for stream data now",
+            "Subscriptions bypass auth used",
+            "Only initial auth matters"
+        ]
+    },
+    {
+        "q": "What is subscription filtering?",
+        "o": [
+            "Filter events per subscriber",
+            "All subscribers see all events",
+            "No filtering is possible now",
+            "Only server-side filtering"
+        ]
+    },
+    {
+        "q": "What is withFilter utility?",
+        "o": [
+            "Filter subscription events now",
+            "No filter utility exists here",
+            "Block all subscription events",
+            "Speed up subscriptions used"
+        ]
+    },
+    {
+        "q": "What is subscription rate limiting?",
+        "o": [
+            "Limit events per time period",
+            "No rate limiting for subs now",
+            "Unlimited events allowed here",
+            "Only queries are rate limited"
+        ]
+    },
+    {
+        "q": "What is subscription memory attack?",
+        "o": [
+            "Open many subs exhaust memory",
+            "Subscriptions use no memory",
+            "No memory attack possible now",
+            "Memory is unlimited for subs"
+        ]
+    },
+    {
+        "q": "How to limit subscription connections?",
+        "o": [
+            "Max connections per client set",
+            "Unlimited connections allowed",
+            "Cannot limit connections now",
+            "Only server-side limits work"
+        ]
+    },
+    {
+        "q": "What is GraphQL persisted operation?",
+        "o": [
+            "Pre-registered query hash used",
+            "Ad-hoc queries only allowed",
+            "No persisted operations exist",
+            "Client caches operations"
+        ]
+    },
+    {
+        "q": "What is operation hash?",
+        "o": [
+            "Unique identifier for query",
+            "Random query identifier now",
+            "No hash for operations here",
+            "Only for mutations used"
+        ]
+    },
+    {
+        "q": "What is trusted documents?",
+        "o": [
+            "Only allow known queries now",
+            "Trust any query from client",
+            "No document restriction here",
+            "All queries are trusted"
+        ]
+    },
+    {
+        "q": "What is operation safelist?",
+        "o": [
+            "Allowlist of permitted queries",
+            "Blocklist of bad queries",
+            "No query filtering exists",
+            "Only for subscriptions"
+        ]
+    },
+    {
+        "q": "What is build-time extraction?",
+        "o": [
+            "Extract queries at build step",
+            "Runtime query extraction now",
+            "No extraction needed here",
+            "Manual query collection"
+        ]
+    },
+    {
+        "q": "What is query cost estimation?",
+        "o": [
+            "Calculate resource usage before",
+            "No estimation is possible now",
+            "Post-execution analysis only",
+            "Only for mutations needed"
+        ]
+    },
+    {
+        "q": "What is static query analysis?",
+        "o": [
+            "Analyze without execution now",
+            "Requires execution for analysis",
+            "No static analysis exists here",
+            "Only runtime analysis works"
+        ]
+    },
+    {
+        "q": "What is query fingerprinting?",
+        "o": [
+            "Unique identifier for query shape",
+            "Random identifier generation",
+            "No query identification now",
+            "Only for logging purposes"
+        ]
+    },
+    {
+        "q": "What is query normalization?",
+        "o": [
+            "Standardize query format now",
+            "Keep original query format",
+            "No normalization possible",
+            "Only for caching used"
+        ]
+    },
+    {
+        "q": "What is field-based costing?",
+        "o": [
+            "Assign cost to each field",
+            "Same cost for all fields now",
+            "No field costing possible",
+            "Only type-based costing"
+        ]
+    },
+    {
+        "q": "What is multiplier cost?",
+        "o": [
+            "List fields multiply child cost",
+            "List has same cost as single",
+            "No multiplier in costing now",
+            "Only root fields multiply"
+        ]
+    },
+    {
+        "q": "What is connection pattern costing?",
+        "o": [
+            "Cost based on page size limit",
+            "Flat cost for all connections",
+            "No pagination costing exists",
+            "Only for first page done"
+        ]
+    },
+    {
+        "q": "What is resolver-based costing?",
+        "o": [
+            "Resolver measures actual cost",
+            "Pre-execution cost only now",
+            "No resolver costing possible",
+            "Only schema costing works"
+        ]
+    },
+    {
+        "q": "What is cost directive?",
+        "o": [
+            "Annotate field with cost value",
+            "No directive for costing now",
+            "Cost in code only allowed",
+            "Directive sets global cost"
+        ]
+    },
+    {
+        "q": "What is complexity score?",
+        "o": [
+            "Sum of all field costs now",
+            "Single field cost only here",
+            "No score calculation exists",
+            "Only depth is scored"
+        ]
+    },
+    {
+        "q": "What is max complexity limit?",
+        "o": [
+            "Reject if score exceeds limit",
+            "Allow any complexity level",
+            "No limit enforcement done",
+            "Soft warning only given"
+        ]
+    },
+    {
+        "q": "What is user-based complexity limit?",
+        "o": [
+            "Different limits per user tier",
+            "Same limit for all users now",
+            "No user-based limits exist",
+            "Only admin has limits"
+        ]
+    },
+    {
+        "q": "What is timeout protection?",
+        "o": [
+            "Abort query after time limit",
+            "Run query indefinitely now",
+            "No timeout is possible here",
+            "Only for subscriptions"
+        ]
+    },
+    {
+        "q": "What is resolver timeout?",
+        "o": [
+            "Individual resolver time limit",
+            "Same timeout all resolvers",
+            "No resolver timeout exists",
+            "Only global timeout works"
+        ]
+    },
+    {
+        "q": "What is query execution timeout?",
+        "o": [
+            "Total time for full query",
+            "Individual field timeout only",
+            "No execution timeout exists",
+            "Timeout resets per field"
+        ]
+    },
+    {
+        "q": "What is circuit breaker pattern?",
+        "o": [
+            "Stop calling failing service",
+            "Always retry failed services",
+            "No circuit pattern exists",
+            "Only for mutations used"
+        ]
+    },
+    {
+        "q": "What is fallback resolver?",
+        "o": [
+            "Default value when error now",
+            "Always throw on errors here",
+            "No fallback is possible used",
+            "Only for nullable fields"
+        ]
+    },
+    {
+        "q": "What is resolver error handling?",
+        "o": [
+            "Handle errors gracefully now",
+            "Let errors propagate always",
+            "No error handling needed",
+            "Errors abort entire query"
+        ]
+    },
+    {
+        "q": "What is error extension?",
+        "o": [
+            "Custom data in error object",
+            "Standard errors only allowed",
+            "No extension is possible now",
+            "Extensions for success only"
+        ]
+    },
+    {
+        "q": "What is error code in extensions?",
+        "o": [
+            "Machine-readable error type",
+            "Human message only given now",
+            "No error codes in GraphQL",
+            "Codes are deprecated here"
+        ]
+    },
+    {
+        "q": "What is error path field?",
+        "o": [
+            "Location of error in response",
+            "No path information given",
+            "Path only for success data",
+            "Deprecated in new spec"
+        ]
+    },
+    {
+        "q": "What is partial error response?",
+        "o": [
+            "Data with some errors mixed",
+            "All or nothing response now",
+            "Never return partial data",
+            "Errors prevent all data"
+        ]
+    },
+    {
+        "q": "What is null propagation?",
+        "o": [
+            "Error nulls parent fields",
+            "Null stays at error field",
+            "No null propagation exists",
+            "Nullable never propagates"
+        ]
+    },
+    {
+        "q": "What is @specifiedBy directive?",
+        "o": [
+            "Link to scalar specification",
+            "Define custom directive used",
+            "Built-in type definition",
+            "Deprecated directive now"
+        ]
+    },
+    {
+        "q": "What is custom scalar security?",
+        "o": [
+            "Validate custom type values",
+            "Custom scalars are unsafe now",
+            "No validation for custom here",
+            "Only built-in are validated"
+        ]
+    },
+    {
+        "q": "What is serialization attack?",
+        "o": [
+            "Exploit custom scalar parsing",
+            "No serialization risk exists",
+            "Safe with custom scalars",
+            "Only deserialization attacks"
+        ]
+    },
+    {
+        "q": "What is DateTime scalar security?",
+        "o": [
+            "Validate date format input",
+            "DateTime is always safe now",
+            "No validation needed here",
+            "Trust client date values"
+        ]
+    },
+    {
+        "q": "What is JSON scalar risk?",
+        "o": [
+            "Arbitrary object injection now",
+            "JSON scalar is safe always",
+            "No injection risk exists",
+            "Structured JSON only"
+        ]
+    },
+    {
+        "q": "What is ID scalar security?",
+        "o": [
+            "Validate ID format and access",
+            "IDs are always safe to use",
+            "No ID validation needed here",
+            "Trust all ID values"
+        ]
+    },
+    {
+        "q": "What is upload scalar?",
+        "o": [
+            "Handle file upload input now",
+            "No upload type in GraphQL",
+            "Standard scalar for files",
+            "Deprecated file handling"
+        ]
+    },
+    {
+        "q": "What is max file size limit?",
+        "o": [
+            "Restrict upload file size",
+            "Allow any file size now here",
+            "No size limit is possible",
+            "Only server limits apply"
+        ]
+    },
+    {
+        "q": "What is allowed file types?",
+        "o": [
+            "Whitelist acceptable MIME types",
+            "Allow any file type upload",
+            "No type restriction needed",
+            "Trust client-provided type"
+        ]
+    },
+    {
+        "q": "What is file content validation?",
+        "o": [
+            "Scan file for malicious content",
+            "MIME type check is enough",
+            "No content scanning needed",
+            "Trust file contents always"
+        ]
+    },
+    {
+        "q": "What is antivirus scanning?",
+        "o": [
+            "Scan uploads for malware now",
+            "No scanning is necessary here",
+            "Trust all uploaded files",
+            "Only for certain types"
+        ]
+    },
+    {
+        "q": "What is path traversal in uploads?",
+        "o": [
+            "Escape upload directory attack",
+            "No traversal risk in GraphQL",
+            "Upload paths are sanitized",
+            "Only REST has this issue"
+        ]
+    },
+    {
+        "q": "What is execution layer security?",
+        "o": [
+            "Protect query execution phase",
+            "Only parsing needs security",
+            "Execution is automatically safe",
+            "No execution protection"
+        ]
+    },
+    {
+        "q": "What is resolver injection?",
+        "o": [
+            "Inject code via resolver input",
+            "Resolvers are safe by default",
+            "No injection in resolvers now",
+            "Only SQL injection exists"
+        ]
+    },
+    {
+        "q": "What is resolver side effect?",
+        "o": [
+            "Unintended data modification",
+            "Resolvers have no side effects",
+            "Side effects are prevented",
+            "Only mutations have effects"
+        ]
+    },
+    {
+        "q": "What is query mutation in GET?",
+        "o": [
+            "Execute mutations via GET risk",
+            "GET mutations are safe now",
+            "No mutations in GET allowed",
+            "GET only for queries"
+        ]
+    },
+    {
+        "q": "What is method restriction?",
+        "o": [
+            "POST only for mutations now",
+            "Allow all methods everywhere",
+            "No method restriction needed",
+            "Only for queries applies"
+        ]
+    },
+    {
+        "q": "What is GraphQL over GET?",
+        "o": [
+            "Query in URL parameters now",
+            "No GET support in GraphQL",
+            "Only POST works for queries",
+            "GET is deprecated method"
+        ]
+    },
+    {
+        "q": "What is GET query security?",
+        "o": [
+            "Query visible in logs cache",
+            "GET queries are fully safe",
+            "No logging of URL params",
+            "Params are encrypted"
+        ]
+    },
+    {
+        "q": "What is POST body vs GET query?",
+        "o": [
+            "POST body not in URL logs",
+            "Same security for both used",
+            "GET is more secure option",
+            "No difference exists here"
+        ]
+    },
+    {
+        "q": "What is content-type validation?",
+        "o": [
+            "Accept only application/json",
+            "Accept any content type now",
+            "No content-type checking done",
+            "Only for file uploads"
+        ]
+    },
+    {
+        "q": "What is accept header checking?",
+        "o": [
+            "Validate expected response type",
+            "Return any format requested",
+            "No accept checking needed",
+            "Only for REST APIs"
+        ]
+    },
+    {
+        "q": "What is query string attack?",
+        "o": [
+            "Exploit query in URL params",
+            "URL params are always safe",
+            "No query string attacks now",
+            "Only POST has this issue"
+        ]
+    },
+    {
+        "q": "What is referrer leakage?",
+        "o": [
+            "Query in URL sent to other site",
+            "Referrer never leaks query now",
+            "No referrer security concern",
+            "Only for POST requests"
+        ]
+    },
+    {
+        "q": "What is browser history leakage?",
+        "o": [
+            "Queries saved in history log",
+            "History never stores queries",
+            "No history security concern",
+            "Only POST is in history"
+        ]
+    },
+    {
+        "q": "What is server log leakage?",
+        "o": [
+            "Full query logged by server",
+            "Servers never log queries now",
+            "No logging security concern",
+            "Only errors are logged"
+        ]
+    },
+    {
+        "q": "What is proxy cache leakage?",
+        "o": [
+            "Query cached by proxy server",
+            "Proxies never cache GraphQL",
+            "No proxy security concern",
+            "Only for static content"
+        ]
+    },
+    {
+        "q": "What is CDN caching issue?",
+        "o": [
+            "CDN caches sensitive response",
+            "CDN never caches GraphQL now",
+            "No CDN security concern here",
+            "CDN is always safe to use"
+        ]
+    },
+    {
+        "q": "What is cache key manipulation?",
+        "o": [
+            "Trick cache to serve wrong data",
+            "Cache keys are collision-free",
+            "No cache manipulation exists",
+            "Keys are cryptographic"
+        ]
+    },
+    {
+        "q": "What is cache poisoning in GraphQL?",
+        "o": [
+            "Store malicious cached response",
+            "No cache poisoning possible",
+            "GraphQL prevents poisoning",
+            "Only REST has this issue"
+        ]
+    },
+    {
+        "q": "What is response splitting?",
+        "o": [
+            "Inject headers in response",
+            "No response splitting risk",
+            "GraphQL prevents splitting",
+            "Only for HTML responses"
+        ]
+    },
+    {
+        "q": "What is JSON hijacking?",
+        "o": [
+            "Steal JSON response cross-site",
+            "No JSON hijacking in GraphQL",
+            "Modern browsers prevent this",
+            "Only for array responses"
+        ]
+    },
+    {
+        "q": "What is JSONP security?",
+        "o": [
+            "Callback injection risk now",
+            "JSONP is safe to use here",
+            "No JSONP in GraphQL used",
+            "JSONP is secure pattern"
+        ]
+    },
+    {
+        "q": "What is mutation idempotency?",
+        "o": [
+            "Same mutation same result now",
+            "Mutations always have effect",
+            "No idempotency in GraphQL",
+            "Only queries are idempotent"
+        ]
+    },
+    {
+        "q": "What is idempotency key header?",
+        "o": [
+            "Unique key prevents duplicate",
+            "No idempotency keys in GraphQL",
+            "Keys are deprecated now",
+            "Only for REST APIs"
+        ]
+    },
+    {
+        "q": "What is transaction support?",
+        "o": [
+            "Atomic mutation execution now",
+            "No transaction in GraphQL here",
+            "Each field is separate txn",
+            "Only database has txn"
+        ]
+    },
+    {
+        "q": "What is optimistic UI?",
+        "o": [
+            "Update UI before mutation confirms",
+            "Wait for mutation response first",
+            "No optimistic update exists",
+            "Server-side UI update only"
+        ]
+    },
+    {
+        "q": "What is optimistic locking?",
+        "o": [
+            "Check version before update now",
+            "No locking in GraphQL used",
+            "Always overwrite old data here",
+            "Lock on read instead"
+        ]
+    },
+    {
+        "q": "What is ETag in GraphQL?",
+        "o": [
+            "Response version identifier now",
+            "No ETag support in GraphQL",
+            "Only for REST API caching",
+            "ETag is deprecated here"
+        ]
+    },
+    {
+        "q": "What is If-Match header?",
+        "o": [
+            "Conditional update by version",
+            "No conditional updates exist",
+            "Always process all updates",
+            "Only for GET requests"
+        ]
+    },
+    {
+        "q": "What is rate limit header?",
+        "o": [
+            "Inform client of limits now",
+            "No rate info to client given",
+            "Keep limits secret always",
+            "Only for REST responses"
+        ]
+    },
+    {
+        "q": "What is retry-after header?",
+        "o": [
+            "Tell when to retry after limit",
+            "No retry guidance given now",
+            "Always retry immediately here",
+            "Only for server errors"
+        ]
+    },
+    {
+        "q": "What is GraphQL execution phases?",
+        "o": [
+            "Parse validate execute complete",
+            "Only execute phase exists",
+            "Parse and execute only now",
+            "No defined phases here"
+        ]
+    },
+    {
+        "q": "What is parse phase security?",
+        "o": [
+            "Reject malformed queries early",
+            "Parse all queries regardless",
+            "No security in parse phase",
+            "Only syntax checking done"
+        ]
+    },
+    {
+        "q": "What is validation phase security?",
+        "o": [
+            "Check query against rules now",
+            "Skip validation for speed here",
+            "No validation is security used",
+            "Only for production"
+        ]
+    },
+    {
+        "q": "What is execution phase security?",
+        "o": [
+            "Authorize during resolution now",
+            "Execution is automatic safe",
+            "No security checks needed",
+            "Only for mutations"
+        ]
+    },
+    {
+        "q": "What is response serialization security?",
+        "o": [
+            "Safely encode response data now",
+            "Response is always safe here",
+            "No serialization concerns used",
+            "Only for custom scalars"
+        ]
+    },
+    {
+        "q": "What is selection set attack?",
+        "o": [
+            "Request excessive field selection",
+            "Selection sets are always safe",
+            "No attack via selection used",
+            "Only for deprecated fields"
+        ]
+    },
+    {
+        "q": "What is field argument attack?",
+        "o": [
+            "Malicious values in arguments",
+            "Arguments are always validated",
+            "No argument attacks exist",
+            "Only type validated here"
+        ]
+    },
+    {
+        "q": "What is variable injection?",
+        "o": [
+            "Inject via query variables now",
+            "Variables are type-safe always",
+            "No variable injection exists",
+            "Only for custom scalars"
+        ]
+    },
+    {
+        "q": "What is default value security?",
+        "o": [
+            "Ensure defaults are secure now",
+            "Defaults are always safe here",
+            "No default value concerns",
+            "Only for optional args"
+        ]
+    },
+    {
+        "q": "What is argument coercion?",
+        "o": [
+            "Convert input to expected type",
+            "Accept exact types only now",
+            "No type conversion done here",
+            "Only for integers used"
+        ]
+    },
+    {
+        "q": "What is coercion attack?",
+        "o": [
+            "Exploit type conversion logic",
+            "Coercion is always safe now",
+            "No coercion attacks exist here",
+            "Only GraphQL spec issue"
+        ]
+    },
+    {
+        "q": "What is integer overflow in GraphQL?",
+        "o": [
+            "Large int causes overflow now",
+            "GraphQL handles large ints safe",
+            "No overflow is possible here",
+            "Only for Float type"
+        ]
+    },
+    {
+        "q": "What is Float precision issue?",
+        "o": [
+            "Loss of precision in floats",
+            "Perfect precision always now",
+            "No precision concerns exist",
+            "Only for very small floats"
+        ]
+    },
+    {
+        "q": "What is String length limit?",
+        "o": [
+            "Limit max string input size",
+            "Strings have no size limit",
+            "Unlimited string allowed now",
+            "Only for IDs limited"
+        ]
+    },
+    {
+        "q": "What is array size limit?",
+        "o": [
+            "Limit list argument length",
+            "Arrays have no size limit",
+            "Unlimited arrays allowed now",
+            "Only for pagination"
+        ]
+    },
+    {
+        "q": "What is object depth limit?",
+        "o": [
+            "Limit nested input depth now",
+            "Unlimited nesting allowed here",
+            "No depth limit for input",
+            "Only for query depth"
+        ]
+    },
+    {
+        "q": "What is recursive input type?",
+        "o": [
+            "Input type references itself",
+            "No recursive types allowed",
+            "All types can be recursive",
+            "Only output types recurse"
+        ]
+    },
+    {
+        "q": "What is input type attack?",
+        "o": [
+            "Exploit via complex input now",
+            "Input types are always safe",
+            "No input type attacks exist",
+            "Only output is attacked"
+        ]
+    },
+    {
+        "q": "What is enum validation?",
+        "o": [
+            "Only defined values allowed",
+            "Accept any enum value now",
+            "No enum validation done here",
+            "Enums are just strings"
+        ]
+    },
+    {
+        "q": "What is enum extension attack?",
+        "o": [
+            "Inject undefined enum value",
+            "Enums cannot be exploited",
+            "No enum attack is possible",
+            "Only strings are attacked"
+        ]
+    },
+    {
+        "q": "What is union type resolver?",
+        "o": [
+            "Determine concrete type now",
+            "No resolver for unions here",
+            "Unions resolve automatically",
+            "Client specifies type"
+        ]
+    },
+    {
+        "q": "What is __resolveType security?",
+        "o": [
+            "Validate type resolution now",
+            "Type resolution is safe here",
+            "No security for resolution",
+            "Only for interfaces"
+        ]
+    },
+    {
+        "q": "What is interface resolver security?",
+        "o": [
+            "Check implementing type access",
+            "Interfaces auto-authorize now",
+            "No interface security needed",
+            "Only concrete types"
+        ]
+    },
+    {
+        "q": "What is inline fragment security?",
+        "o": [
+            "Authorize per fragment type",
+            "Inline fragments are safe now",
+            "No fragment authorization here",
+            "Only named fragments"
+        ]
+    },
+    {
+        "q": "What is type condition attack?",
+        "o": [
+            "Exploit union/interface types",
+            "Type conditions are safe now",
+            "No type condition attacks",
+            "Only for queries"
+        ]
+    },
+    {
+        "q": "What is __typename exposure?",
+        "o": [
+            "Reveals implementation types",
+            "Typename is always safe now",
+            "No exposure from typename",
+            "Only for development"
+        ]
+    },
+    {
+        "q": "What is schema introspection attack?",
+        "o": [
+            "Learn API via introspection",
+            "Introspection is harmless now",
+            "No attack via introspection",
+            "Only mutation exposure"
+        ]
+    },
+    {
+        "q": "What is __schema query?",
+        "o": [
+            "Full schema information now",
+            "No schema query exists here",
+            "Query returns nothing useful",
+            "Only for GraphiQL"
+        ]
+    },
+    {
+        "q": "What is __type query?",
+        "o": [
+            "Specific type information now",
+            "No type query in GraphQL",
+            "Returns generic data only",
+            "Only for interfaces"
+        ]
+    },
+    {
+        "q": "What is schema SDL exposure?",
+        "o": [
+            "Full schema in SDL format",
+            "No SDL export possible now",
+            "SDL is always sanitized",
+            "Only for registered users"
+        ]
+    },
+    {
+        "q": "What is field suggestion attack?",
+        "o": [
+            "Learn fields via suggestions",
+            "Suggestions are disabled now",
+            "No suggestion in production",
+            "Only for queries"
+        ]
+    },
+    {
+        "q": "What is did you mean suggestion?",
+        "o": [
+            "Reveals similar field names",
+            "Suggestions are always safe",
+            "No suggestions in GraphQL",
+            "Only for mutations"
+        ]
+    },
+    {
+        "q": "What is hide suggestions in production?",
+        "o": [
+            "Disable to prevent discovery",
+            "Keep suggestions enabled now",
+            "Suggestions are required here",
+            "Only for specific fields"
+        ]
+    },
+    {
+        "q": "What is operation type restriction?",
+        "o": [
+            "Limit what operations allowed",
+            "All operations always allowed",
+            "No restriction is possible",
+            "Only queries can be blocked"
+        ]
+    },
+    {
+        "q": "What is mutation-only endpoint?",
+        "o": [
+            "Separate endpoint for mutations",
+            "Single endpoint for all types",
+            "No separation possible now",
+            "Only for subscriptions"
+        ]
+    },
+    {
+        "q": "What is read-only endpoint?",
+        "o": [
+            "Queries only no mutations",
+            "All endpoints allow writes",
+            "No read-only mode exists",
+            "Only for caching"
+        ]
+    },
+    {
+        "q": "What is GraphQL gateway?",
+        "o": [
+            "Central entry point for APIs",
+            "No gateway in GraphQL used",
+            "Direct connection to each",
+            "Only for REST migration"
+        ]
+    },
+    {
+        "q": "What is gateway authentication?",
+        "o": [
+            "Verify identity at gateway",
+            "Each subgraph authenticates",
+            "No authentication at gateway",
+            "Client authenticates itself"
+        ]
+    },
+    {
+        "q": "What is gateway authorization?",
+        "o": [
+            "Check permissions centrally",
+            "Subgraphs handle all auth",
+            "No authorization at gateway",
+            "Only for specific fields"
+        ]
+    },
+    {
+        "q": "What is request context propagation?",
+        "o": [
+            "Pass auth info to subgraphs",
+            "No context propagation used",
+            "Subgraphs have no context",
+            "Only for logging"
+        ]
+    },
+    {
+        "q": "What is header forwarding?",
+        "o": [
+            "Send auth headers to services",
+            "No header forwarding done",
+            "Headers stay at gateway now",
+            "Only for custom headers"
+        ]
+    },
+    {
+        "q": "What is service-to-service auth?",
+        "o": [
+            "Authenticate between services",
+            "Services trust each other now",
+            "No internal auth needed here",
+            "Only gateway authenticated"
+        ]
+    },
+    {
+        "q": "What is mTLS for services?",
+        "o": [
+            "Mutual TLS between services",
+            "No TLS for internal calls",
+            "Single TLS at gateway only",
+            "Only for external calls"
+        ]
+    },
+    {
+        "q": "What is service mesh for GraphQL?",
+        "o": [
+            "Infrastructure security layer",
+            "No service mesh needed here",
+            "Mesh only for REST services",
+            "GraphQL handles internally"
+        ]
+    },
+    {
+        "q": "What is Istio for GraphQL?",
+        "o": [
+            "Service mesh with mTLS now",
+            "No Istio support for GraphQL",
+            "Alternative to gateway used",
+            "Only for monolithic apps"
+        ]
+    },
+    {
+        "q": "What is Envoy proxy for GraphQL?",
+        "o": [
+            "High-performance proxy sidecar",
+            "No Envoy support exists now",
+            "Only for REST traffic used",
+            "GraphQL incompatible"
+        ]
+    },
+    {
+        "q": "What is distributed tracing?",
+        "o": [
+            "Track requests across services",
+            "No tracing in GraphQL used",
+            "Only for monolithic apps",
+            "Client-side tracing only"
+        ]
+    },
+    {
+        "q": "What is OpenTelemetry for GraphQL?",
+        "o": [
+            "Standard observability framework",
+            "No OpenTelemetry support now",
+            "Only for REST applications",
+            "GraphQL has own standard"
+        ]
+    },
+    {
+        "q": "What is trace context header?",
+        "o": [
+            "Pass trace ID across services",
+            "No trace headers in GraphQL",
+            "Only for REST requests used",
+            "GraphQL uses operation ID"
+        ]
+    },
+    {
+        "q": "What is span for GraphQL?",
+        "o": [
+            "Track individual field/resolver",
+            "No span concept in GraphQL",
+            "Only operation level tracing",
+            "Spans are deprecated now"
+        ]
+    },
+    {
+        "q": "What is resolver instrumentation?",
+        "o": [
+            "Measure resolver performance",
+            "No resolver metrics possible",
+            "Only for custom scalars",
+            "Built-in instrumentation"
+        ]
+    },
+    {
+        "q": "What is field-level metrics?",
+        "o": [
+            "Track each field access stats",
+            "No field metrics in GraphQL",
+            "Only operation level metrics",
+            "Client tracks field usage"
+        ]
+    },
+    {
+        "q": "What is error rate metric?",
+        "o": [
+            "Track resolver failure rate",
+            "No error metrics available",
+            "Only for queries tracked",
+            "Errors not measurable"
+        ]
+    },
+    {
+        "q": "What is latency percentile?",
+        "o": [
+            "P50 P95 P99 response times",
+            "Only average latency tracked",
+            "No percentile in GraphQL",
+            "Client measures latency"
+        ]
+    },
+    {
+        "q": "What is GraphQL audit log?",
+        "o": [
+            "Record all operations now",
+            "No audit logging possible",
+            "Only errors are logged here",
+            "Client handles audit"
+        ]
+    },
+    {
+        "q": "What to include in audit log?",
+        "o": [
+            "User operation timestamp result",
+            "Only query text is logged",
+            "Minimal logging for privacy",
+            "Full request response"
+        ]
+    },
+    {
+        "q": "What is log redaction?",
+        "o": [
+            "Remove sensitive data from log",
+            "Log all data unredacted now",
+            "No redaction is possible here",
+            "Only for specific fields"
+        ]
+    },
+    {
+        "q": "What is structured logging?",
+        "o": [
+            "JSON format for log analysis",
+            "Plain text logs only here",
+            "No structured logs in GraphQL",
+            "Only for production"
+        ]
+    },
+    {
+        "q": "What is log correlation ID?",
+        "o": [
+            "Link logs across services",
+            "No correlation in GraphQL",
+            "Only for monolithic apps",
+            "Client provides ID"
+        ]
+    },
+    {
+        "q": "What is security event log?",
+        "o": [
+            "Log auth failures and attacks",
+            "Only business events logged",
+            "No security logging done",
+            "Client logs security"
+        ]
+    },
+    {
+        "q": "What is real-time alerting?",
+        "o": [
+            "Alert on security events now",
+            "No alerting in GraphQL here",
+            "Only periodic reports sent",
+            "Client handles alerts"
+        ]
+    },
+    {
+        "q": "What is anomaly detection?",
+        "o": [
+            "Detect unusual query patterns",
+            "No anomaly detection exists",
+            "Only for REST APIs used",
+            "Manual review required"
+        ]
+    },
+    {
+        "q": "What is bot detection for GraphQL?",
+        "o": [
+            "Identify automated abuse now",
+            "No bot detection possible",
+            "GraphQL prevents bot access",
+            "Only for web browsers"
+        ]
+    },
+    {
+        "q": "What is device fingerprinting?",
+        "o": [
+            "Identify client device now",
+            "No fingerprinting in GraphQL",
+            "Only for browser clients used",
+            "Deprecated technique"
+        ]
+    },
+    {
+        "q": "What is behavioral analysis?",
+        "o": [
+            "Detect abnormal usage patterns",
+            "No behavior analysis exists",
+            "Only for specific fields",
+            "Client provides analysis"
+        ]
+    },
+    {
+        "q": "What is API abuse detection?",
+        "o": [
+            "Identify malicious access now",
+            "No abuse detection in GraphQL",
+            "Schema prevents all abuse",
+            "Only for mutations"
+        ]
+    },
+    {
+        "q": "What is threat intelligence?",
+        "o": [
+            "Use known attack signatures",
+            "No threat intel for GraphQL",
+            "Only for network level",
+            "Client provides intel"
+        ]
+    },
+    {
+        "q": "What is IP reputation?",
+        "o": [
+            "Block known bad IP addresses",
+            "No IP blocking in GraphQL",
+            "Trust all IP addresses now",
+            "Only for DDoS protection"
+        ]
+    },
+    {
+        "q": "What is geographic blocking?",
+        "o": [
+            "Restrict access by location",
+            "No geo blocking possible now",
+            "GraphQL is location agnostic",
+            "Only for compliance"
+        ]
+    },
+    {
+        "q": "What is ASN blocking?",
+        "o": [
+            "Block by network provider now",
+            "No ASN blocking in GraphQL",
+            "All networks are trusted here",
+            "Only for data centers"
+        ]
+    },
+    {
+        "q": "What is WAF for GraphQL?",
+        "o": [
+            "Web application firewall rules",
+            "No WAF support for GraphQL",
+            "WAF only for REST APIs here",
+            "GraphQL bypasses WAF"
+        ]
+    },
+    {
+        "q": "What is GraphQL-aware WAF?",
+        "o": [
+            "Understands GraphQL structure",
+            "Standard WAF works fine now",
+            "No specialized WAF exists",
+            "WAF is deprecated here"
+        ]
+    },
+    {
+        "q": "What is signature-based detection?",
+        "o": [
+            "Match known attack patterns",
+            "No signatures for GraphQL now",
+            "Only for SQL injection used",
+            "Pattern matching is old"
+        ]
+    },
+    {
+        "q": "What is positive security model?",
+        "o": [
+            "Allow only known good traffic",
+            "Block only known bad traffic",
+            "No security model in GraphQL",
+            "Both models same effect"
+        ]
+    },
+    {
+        "q": "What is negative security model?",
+        "o": [
+            "Block known bad patterns now",
+            "Allow only whitelisted items",
+            "No difference from positive",
+            "Deprecated security model"
+        ]
+    },
+    {
+        "q": "What is API gateway vs WAF?",
+        "o": [
+            "Gateway for logic WAF for attacks",
+            "They are the same thing now",
+            "Only use one or the other",
+            "WAF replaces gateway here"
+        ]
+    },
+    {
+        "q": "What is DDoS protection for GraphQL?",
+        "o": [
+            "Mitigate volumetric attacks now",
+            "GraphQL immune to DDoS here",
+            "No DDoS protection needed",
+            "Only for REST APIs"
+        ]
+    },
+    {
+        "q": "What is application layer DDoS?",
+        "o": [
+            "Attack via expensive queries",
+            "No app layer DDoS exists now",
+            "Only network DDoS is real",
+            "GraphQL prevents DDoS"
+        ]
+    },
+    {
+        "q": "What is query complexity DDoS?",
+        "o": [
+            "Abuse nested queries for DoS",
+            "Complexity limits prevent all",
+            "No complexity DDoS possible",
+            "Only for unmeasured fields"
+        ]
+    },
+    {
+        "q": "What is batch request DDoS?",
+        "o": [
+            "Many operations in one request",
+            "Batching is always safe now",
+            "No batch DDoS is possible",
+            "Batch limits prevent all"
+        ]
+    },
+    {
+        "q": "What is alias amplification?",
+        "o": [
+            "Multiply load via aliases now",
+            "Aliases do not amplify load",
+            "No amplification is possible",
+            "Alias limits prevent all"
+        ]
+    },
+    {
+        "q": "What is fragment bomb attack?",
+        "o": [
+            "Exponential expansion via frags",
+            "Fragments are always bounded",
+            "No fragment bomb is possible",
+            "Cycle detection prevents"
+        ]
+    },
+    {
+        "q": "What is ReDoS in GraphQL?",
+        "o": [
+            "Regex DoS in custom scalars",
+            "No regex in GraphQL used here",
+            "ReDoS is only for REST now",
+            "GraphQL sanitizes regex"
+        ]
+    },
+    {
+        "q": "What is hash collision attack?",
+        "o": [
+            "Exploit hash table performance",
+            "No hash tables in GraphQL",
+            "Hash collision is prevented",
+            "Only for specific platforms"
+        ]
+    },
+    {
+        "q": "What is billion laughs attack?",
+        "o": [
+            "Exponential entity expansion",
+            "No XML entities in GraphQL",
+            "JSON prevents this attack",
+            "Only for legacy systems"
+        ]
+    },
+    {
+        "q": "What is zip bomb in uploads?",
+        "o": [
+            "Compressed file expands huge",
+            "No decompression in GraphQL",
+            "Upload scanning prevents this",
+            "Only for specific types"
+        ]
+    },
+    {
+        "q": "What is memory exhaustion attack?",
+        "o": [
+            "Consume server memory til crash",
+            "GraphQL manages memory well",
+            "No memory attack is possible",
+            "Only for subscriptions"
+        ]
+    },
+    {
+        "q": "What is CPU exhaustion attack?",
+        "o": [
+            "Use expensive ops to exhaust",
+            "Timeouts prevent all attacks",
+            "No CPU attack is possible",
+            "Only for custom scalars"
+        ]
+    },
+    {
+        "q": "What is connection pool exhaustion?",
+        "o": [
+            "Use all database connections",
+            "Connection pools are unlimited",
+            "No pool exhaustion possible",
+            "Only for specific databases"
+        ]
+    },
+    {
+        "q": "What is file descriptor exhaustion?",
+        "o": [
+            "Open too many connections now",
+            "FD limits prevent this attack",
+            "No FD attack in GraphQL here",
+            "Only for subscriptions"
+        ]
+    },
+    {
+        "q": "What is thread pool exhaustion?",
+        "o": [
+            "Block all worker threads now",
+            "Async prevents thread issues",
+            "No thread pool in GraphQL",
+            "Only for blocking resolvers"
+        ]
+    },
+    {
+        "q": "What is Slowloris for GraphQL?",
+        "o": [
+            "Slow request trickle attack",
+            "Timeouts prevent Slowloris now",
+            "No Slowloris in GraphQL here",
+            "Only for HTTP servers"
+        ]
+    },
+    {
+        "q": "What is resource limiting?",
+        "o": [
+            "Cap resources per request now",
+            "No resource limits in GraphQL",
+            "Unlimited resources allowed",
+            "Only for mutations"
+        ]
+    },
+    {
+        "q": "What is per-user resource quota?",
+        "o": [
+            "Limit resources by user now",
+            "Same limits for all users here",
+            "No per-user limits exist",
+            "Only for premium users"
+        ]
+    },
+    {
+        "q": "What is graceful degradation?",
+        "o": [
+            "Reduce features under load now",
+            "Full features always available",
+            "No degradation in GraphQL",
+            "Only for specific fields"
+        ]
+    },
+    {
+        "q": "What is load shedding?",
+        "o": [
+            "Reject requests under high load",
+            "Accept all requests always now",
+            "No load shedding possible",
+            "Only for mutations"
+        ]
+    },
+    {
+        "q": "What is priority queuing?",
+        "o": [
+            "Important requests first now",
+            "All requests equal priority",
+            "No queuing in GraphQL here",
+            "Only for subscriptions"
+        ]
+    },
+    {
+        "q": "What is admission control?",
+        "o": [
+            "Check before processing request",
+            "Process all requests always",
+            "No admission control exists",
+            "Only for mutations"
+        ]
+    },
+    {
+        "q": "What is query cost budget?",
+        "o": [
+            "User allowance per time window",
+            "No budget for queries exists",
+            "Unlimited queries allowed now",
+            "Only for mutations"
+        ]
+    },
+    {
+        "q": "What is complexity refund pattern?",
+        "o": [
+            "Return unused cost to budget",
+            "No refund mechanism exists",
+            "Cost is always fully deducted",
+            "Only for subscriptions"
+        ]
+    },
+    {
+        "q": "What is adaptive rate limiting?",
+        "o": [
+            "Adjust limits based on behavior",
+            "Fixed limits for all users now",
+            "No adaptive limits exist here",
+            "Only for premium users"
+        ]
+    },
+    {
+        "q": "What is token bucket algorithm?",
+        "o": [
+            "Tokens replenish over time now",
+            "Fixed request count per window",
+            "No token-based limiting here",
+            "Only for mutations"
+        ]
+    },
+    {
+        "q": "What is leaky bucket algorithm?",
+        "o": [
+            "Smooth out request bursts now",
+            "Allow unlimited bursts here",
+            "No smoothing algorithm exists",
+            "Only for subscriptions"
+        ]
+    },
+    {
+        "q": "What is sliding window rate limit?",
+        "o": [
+            "Continuous time window now",
+            "Fixed time windows only used",
+            "No sliding window possible",
+            "Only for queries"
+        ]
+    },
+    {
+        "q": "What is distributed rate limiting?",
+        "o": [
+            "Share limits across servers",
+            "Each server independent limits",
+            "No distributed limiting now",
+            "Only for single server"
+        ]
+    },
+    {
+        "q": "What is Redis for rate limiting?",
+        "o": [
+            "Shared state for limits now",
+            "No Redis support for limits",
+            "In-memory limits only used",
+            "Database for storage only"
+        ]
+    },
+    {
+        "q": "What is operation-level rate limit?",
+        "o": [
+            "Different limits per operation",
+            "Same limit all operations now",
+            "No operation-level limits here",
+            "Only for mutations"
+        ]
+    },
+    {
+        "q": "What is client identification for limits?",
+        "o": [
+            "Identify client for tracking now",
+            "Anonymous limits for all here",
+            "No client identification used",
+            "Only by user account"
+        ]
+    },
+    {
+        "q": "What is API key rate limiting?",
+        "o": [
+            "Track limits per API key now",
+            "Same limits for all keys here",
+            "No per-key limits possible",
+            "Only for user authentication"
+        ]
+    },
+    {
+        "q": "What is user-based rate limiting?",
+        "o": [
+            "Limits per authenticated user",
+            "Same limits for all users now",
+            "No user-based limits exist",
+            "Only for anonymous users"
+        ]
+    },
+    {
+        "q": "What is IP-based rate limiting?",
+        "o": [
+            "Limits per IP address now",
+            "Same limits for all IPs here",
+            "No IP-based limits possible",
+            "Only for authenticated users"
+        ]
+    },
+    {
+        "q": "What is GraphQL security audit?",
+        "o": [
+            "Review security configuration",
+            "No audit process exists now",
+            "Automatic security guaranteed",
+            "Only for production env"
+        ]
+    },
+    {
+        "q": "What is security checklist?",
+        "o": [
+            "Verify security best practices",
+            "No checklist for GraphQL now",
+            "Automatic compliance checking",
+            "Only for initial setup"
+        ]
+    },
+    {
+        "q": "What is schema security review?",
+        "o": [
+            "Analyze schema for issues now",
+            "Schemas are secure by default",
+            "No review process exists",
+            "Only for public APIs"
+        ]
+    },
+    {
+        "q": "What is resolver code review?",
+        "o": [
+            "Check resolvers for vulns now",
+            "Resolvers are auto-secure here",
+            "No code review needed used",
+            "Only for custom scalars"
+        ]
+    },
+    {
+        "q": "What is penetration testing?",
+        "o": [
+            "Active security testing now",
+            "No pen testing for GraphQL",
+            "Automatic vulnerability scan",
+            "Only for REST APIs"
+        ]
+    },
+    {
+        "q": "What is GraphQL security scanner?",
+        "o": [
+            "Automated vulnerability testing",
+            "No scanners for GraphQL now",
+            "Manual review only needed",
+            "Only for production"
+        ]
+    },
+    {
+        "q": "What is InQL tool?",
+        "o": [
+            "Burp GraphQL security scanner",
+            "No such tool exists now used",
+            "Performance testing tool here",
+            "Development IDE tool"
+        ]
+    },
+    {
+        "q": "What is GraphQL Voyager?",
+        "o": [
+            "Visual schema explorer tool",
+            "Security testing tool here",
+            "Attack tool for GraphQL now",
+            "Server implementation"
+        ]
+    },
+    {
+        "q": "What is Clairvoyance tool?",
+        "o": [
+            "Schema extraction even disabled",
+            "Performance monitoring tool",
+            "Development debugging tool",
+            "Database management tool"
+        ]
+    },
+    {
+        "q": "What is BatchQL tool?",
+        "o": [
+            "Test batch query security now",
+            "Batch query generator tool",
+            "Performance testing only here",
+            "Development tool only"
+        ]
+    },
+    {
+        "q": "What is graphw00f?",
+        "o": [
+            "GraphQL server fingerprinting",
+            "Security hardening tool here",
+            "Schema validation tool now",
+            "Performance profiler"
+        ]
+    },
+    {
+        "q": "What is CrackQL?",
+        "o": [
+            "GraphQL password spraying tool",
+            "Query optimization tool here",
+            "Schema generation tool now",
+            "Performance testing"
+        ]
+    },
+    {
+        "q": "What is Altair GraphQL Client?",
+        "o": [
+            "Feature-rich GraphQL IDE now",
+            "Attack tool for GraphQL here",
+            "Server implementation used",
+            "Security scanning tool"
+        ]
+    },
+    {
+        "q": "What is Apollo Sandbox?",
+        "o": [
+            "Cloud-based GraphQL explorer",
+            "Local development only tool",
+            "Security testing platform",
+            "Database management"
+        ]
+    },
+    {
+        "q": "What is security header for GraphQL?",
+        "o": [
+            "HTTP headers to add security",
+            "No headers for GraphQL needed",
+            "GraphQL has own headers now",
+            "Only for REST responses"
+        ]
+    },
+    {
+        "q": "What is Content-Security-Policy?",
+        "o": [
+            "Prevent XSS and injection now",
+            "No CSP for GraphQL needed",
+            "Only for HTML pages used",
+            "GraphQL prevents XSS"
+        ]
+    },
+    {
+        "q": "What is X-Content-Type-Options?",
+        "o": [
+            "Prevent MIME type sniffing",
+            "Not needed for JSON APIs",
+            "Only for file downloads used",
+            "GraphQL sets automatically"
+        ]
+    },
+    {
+        "q": "What is X-Frame-Options?",
+        "o": [
+            "Prevent clickjacking attacks",
+            "Not relevant for APIs here",
+            "Only for HTML responses now",
+            "GraphQL is immune"
+        ]
+    },
+    {
+        "q": "What is Strict-Transport-Security?",
+        "o": [
+            "Force HTTPS connections now",
+            "Not needed for GraphQL here",
+            "Only for browsers used",
+            "GraphQL uses own header"
+        ]
+    },
+    {
+        "q": "What is referrer policy header?",
+        "o": [
+            "Control referrer information",
+            "Not relevant for APIs now",
+            "Only for browser requests",
+            "GraphQL ignores referrer"
+        ]
+    },
+    {
+        "q": "What is permissions policy?",
+        "o": [
+            "Control browser features now",
+            "Not for APIs used here only",
+            "Only for HTML pages needed",
+            "GraphQL sets this auto"
+        ]
+    },
+    {
+        "q": "What is cache control header?",
+        "o": [
+            "Control response caching now",
+            "No caching for GraphQL here",
+            "GraphQL manages own cache",
+            "Only for GET requests"
+        ]
+    },
+    {
+        "q": "What is no-store directive?",
+        "o": [
+            "Prevent sensitive data caching",
+            "All responses cached by default",
+            "No such directive exists",
+            "Only for static assets"
+        ]
+    },
+    {
+        "q": "What is private directive?",
+        "o": [
+            "Cache for single user only",
+            "Makes response public cache",
+            "No private caching possible",
+            "Only for CDN caching"
+        ]
+    },
+    {
+        "q": "What is vary header?",
+        "o": [
+            "Cache based on request headers",
+            "No vary for GraphQL needed",
+            "Vary is deprecated now used",
+            "Only for REST responses"
+        ]
+    },
+    {
+        "q": "What is correlation ID header?",
+        "o": [
+            "Track requests across services",
+            "No correlation in GraphQL now",
+            "Only for monolithic apps used",
+            "GraphQL uses operation ID"
+        ]
+    },
+    {
+        "q": "What is request ID header?",
+        "o": [
+            "Unique ID per request now",
+            "No request ID in GraphQL",
+            "Only for REST APIs used",
+            "GraphQL generates internally"
+        ]
+    },
+    {
+        "q": "What is GraphQL compliance?",
+        "o": [
+            "Meet regulatory requirements",
+            "No compliance for GraphQL now",
+            "Automatic compliance built in",
+            "Only for financial APIs"
+        ]
+    },
+    {
+        "q": "What is GDPR for GraphQL?",
+        "o": [
+            "European data protection law",
+            "GDPR not applicable to APIs",
+            "GraphQL is GDPR compliant",
+            "Only for EU-hosted servers"
+        ]
+    },
+    {
+        "q": "What is data minimization?",
+        "o": [
+            "Collect only needed data now",
+            "Collect all available data here",
+            "Not possible in GraphQL used",
+            "Client handles minimization"
+        ]
+    },
+    {
+        "q": "What is right to be forgotten?",
+        "o": [
+            "Delete user data on request",
+            "No deletion in GraphQL now",
+            "Data is auto-deleted always",
+            "Only for inactive accounts"
+        ]
+    },
+    {
+        "q": "What is data portability?",
+        "o": [
+            "Export user data in format now",
+            "Not applicable to APIs here",
+            "GraphQL provides auto-export",
+            "Only for social platforms"
+        ]
+    },
+    {
+        "q": "What is PCI DSS for GraphQL?",
+        "o": [
+            "Payment card data security",
+            "Not applicable to GraphQL now",
+            "GraphQL is PCI compliant here",
+            "Only for REST payment APIs"
+        ]
+    },
+    {
+        "q": "What is HIPAA for GraphQL?",
+        "o": [
+            "Healthcare data protection law",
+            "HIPAA not for APIs at all",
+            "GraphQL is HIPAA compliant",
+            "Only for medical devices"
+        ]
+    },
+    {
+        "q": "What is SOC 2 compliance?",
+        "o": [
+            "Security organizational controls",
+            "Not relevant for APIs now",
+            "GraphQL includes SOC 2 here",
+            "Only for cloud providers"
+        ]
+    },
+    {
+        "q": "What is field-level encryption?",
+        "o": [
+            "Encrypt specific field values",
+            "All fields encrypted by default",
+            "No field encryption possible",
+            "Only for ID fields"
+        ]
+    },
+    {
+        "q": "What is at-rest encryption?",
+        "o": [
+            "Encrypt stored data now used",
+            "GraphQL encrypts automatically",
+            "No encryption in GraphQL",
+            "Only for file uploads"
+        ]
+    },
+    {
+        "q": "What is in-transit encryption?",
+        "o": [
+            "Encrypt data during transfer",
+            "HTTPS is not encryption now",
+            "No in-transit encryption here",
+            "Only for WebSocket"
+        ]
+    },
+    {
+        "q": "What is key management?",
+        "o": [
+            "Securely manage crypto keys",
+            "Keys are publicly shared now",
+            "No key management needed",
+            "Only for file encryption"
+        ]
+    },
+    {
+        "q": "What is secrets management?",
+        "o": [
+            "Secure storage for secrets",
+            "Hardcode secrets in code now",
+            "No secrets in GraphQL here",
+            "Only for production"
+        ]
+    },
+    {
+        "q": "What is HashiCorp Vault?",
+        "o": [
+            "Secrets management solution",
+            "No Vault for GraphQL now",
+            "GraphQL has own secrets here",
+            "Only for infrastructure"
+        ]
+    },
+    {
+        "q": "What is AWS Secrets Manager?",
+        "o": [
+            "Cloud secrets management now",
+            "Not for GraphQL integration",
+            "Only for AWS Lambda used",
+            "GraphQL uses own secrets"
+        ]
+    },
+    {
+        "q": "What is environment variables?",
+        "o": [
+            "Store config outside code now",
+            "Hardcode all configuration",
+            "No env vars in GraphQL here",
+            "Only for development"
+        ]
+    },
+    {
+        "q": "What is twelve-factor app?",
+        "o": [
+            "Best practices for SaaS apps",
+            "Not applicable to GraphQL now",
+            "Only for monolithic apps here",
+            "GraphQL has own practices"
+        ]
+    },
+    {
+        "q": "What is config vs code separation?",
+        "o": [
+            "Keep config outside codebase",
+            "Config in code is acceptable",
+            "No separation needed here now",
+            "Only for production"
+        ]
+    },
+    {
+        "q": "What is immutable infrastructure?",
+        "o": [
+            "Replace instead of modify now",
+            "Modify running servers always",
+            "Not for GraphQL servers here",
+            "Only for containers"
+        ]
+    },
+    {
+        "q": "What is container security?",
+        "o": [
+            "Secure containerized GraphQL",
+            "Containers are secure by default",
+            "No container concerns exist",
+            "Only for Kubernetes"
+        ]
+    },
+    {
+        "q": "What is Docker security for GraphQL?",
+        "o": [
+            "Secure Docker deployments now",
+            "Docker is inherently secure",
+            "No Docker security needed",
+            "Only for production"
+        ]
+    },
+    {
+        "q": "What is Kubernetes security?",
+        "o": [
+            "Secure K8s GraphQL deployment",
+            "K8s secures automatically now",
+            "No K8s security concerns here",
+            "Only for large scale"
+        ]
+    },
+    {
+        "q": "What is pod security policy?",
+        "o": [
+            "Restrict pod privileges now",
+            "Pods have no restrictions here",
+            "No pod policies exist used",
+            "Only for multi-tenant"
+        ]
+    },
+    {
+        "q": "What is network policy?",
+        "o": [
+            "Control pod network traffic",
+            "All traffic allowed by default",
+            "No network policies exist",
+            "Only for service mesh"
+        ]
+    },
+    {
+        "q": "What is service account?",
+        "o": [
+            "Identity for pod processes now",
+            "Pods use host identity always",
+            "No service accounts in K8s",
+            "Only for external services"
+        ]
+    },
+    {
+        "q": "What is RBAC in Kubernetes?",
+        "o": [
+            "Role-based access to K8s now",
+            "No access control in K8s here",
+            "Kubernetes is wide open used",
+            "Only for admin operations"
+        ]
+    },
+    {
+        "q": "What is supply chain security?",
+        "o": [
+            "Secure dependencies and tools",
+            "Dependencies are always safe",
+            "No supply chain concerns now",
+            "Only for open source"
+        ]
+    },
+    {
+        "q": "What is dependency scanning?",
+        "o": [
+            "Check packages for vulns now",
+            "Dependencies never have vulns",
+            "No scanning needed here used",
+            "Only for production"
+        ]
+    },
+    {
+        "q": "What is npm audit?",
+        "o": [
+            "Check Node.js dependencies now",
+            "No audit for npm packages",
+            "Audit only for production here",
+            "GraphQL has own audit"
+        ]
+    },
+    {
+        "q": "What is Snyk?",
+        "o": [
+            "Vulnerability scanning service",
+            "GraphQL server implementation",
+            "Performance monitoring tool",
+            "Development IDE tool"
+        ]
+    },
+    {
+        "q": "What is Dependabot?",
+        "o": [
+            "Automated dependency updates",
+            "Manual update tool only here",
+            "No automation for updates",
+            "Only for GitHub repos"
+        ]
+    },
+    {
+        "q": "What is SBOM?",
+        "o": [
+            "Software bill of materials now",
+            "No SBOM for GraphQL needed",
+            "Only for hardware devices",
+            "GraphQL is SBOM exempt"
+        ]
+    },
+    {
+        "q": "What is code signing?",
+        "o": [
+            "Verify code authenticity now",
+            "No signing for GraphQL code",
+            "Only for compiled binaries",
+            "GraphQL signs automatically"
+        ]
+    },
+    {
+        "q": "What is immutable artifact?",
+        "o": [
+            "Unchanged deployment package",
+            "Mutable artifacts are fine now",
+            "No artifacts in GraphQL here",
+            "Only for containers"
+        ]
+    },
+    {
+        "q": "What is GitOps?",
+        "o": [
+            "Git as source of truth now",
+            "No GitOps for GraphQL here",
+            "Only for infrastructure used",
+            "Manual deployment preferred"
+        ]
+    },
+    {
+        "q": "What is CI/CD security?",
+        "o": [
+            "Secure continuous integration",
+            "CI/CD is automatically secure",
+            "No CI/CD security needed now",
+            "Only for production"
+        ]
+    },
+    {
+        "q": "What is pipeline security?",
+        "o": [
+            "Secure build and deploy steps",
+            "Pipelines are inherently safe",
+            "No pipeline concerns exist",
+            "Only for enterprise"
+        ]
+    },
+    {
+        "q": "What is secrets in CI/CD?",
+        "o": [
+            "Securely handle CI/CD secrets",
+            "Secrets in repo are acceptable",
+            "No secrets in CI/CD needed",
+            "Only for production builds"
+        ]
+    },
+    {
+        "q": "What is least privilege principle?",
+        "o": [
+            "Minimal permissions needed only",
+            "Give maximum permissions always",
+            "No privilege control needed",
+            "Only for admin accounts"
+        ]
+    },
+    {
+        "q": "What is defense in depth?",
+        "o": [
+            "Multiple security layers now",
+            "Single layer is sufficient here",
+            "No layered security needed",
+            "Only for enterprise"
+        ]
+    },
+    {
+        "q": "What is zero trust architecture?",
+        "o": [
+            "Never trust always verify now",
+            "Trust internal network always",
+            "No zero trust for GraphQL",
+            "Only for microservices"
+        ]
+    },
+    {
+        "q": "What is security by design?",
+        "o": [
+            "Build security from start now",
+            "Add security after completion",
+            "No design phase needed here",
+            "Only for large projects"
+        ]
+    },
+    {
+        "q": "What is threat modeling?",
+        "o": [
+            "Identify potential threats now",
+            "No threats for GraphQL exist",
+            "Only for sensitive apps here",
+            "After deployment analysis"
+        ]
+    },
+    {
+        "q": "What is STRIDE model?",
+        "o": [
+            "Threat categorization framework",
+            "No such model exists for APIs",
+            "Only for desktop apps here",
+            "Network threat model only"
+        ]
+    },
+    {
+        "q": "What is risk assessment?",
+        "o": [
+            "Evaluate security risks now",
+            "No risks in GraphQL exist here",
+            "Only for compliance needed",
+            "After incident only"
+        ]
+    },
+    {
+        "q": "What is security incident response?",
+        "o": [
+            "Handle security breaches now",
+            "No incidents for GraphQL here",
+            "Only for large enterprises",
+            "Prevention is sufficient"
+        ]
+    },
+    {
+        "q": "What is breach notification?",
+        "o": [
+            "Inform affected parties now",
+            "No notification required here",
+            "Only for regulated industries",
+            "Prevention avoids this"
+        ]
+    },
+    {
+        "q": "What is forensic logging?",
+        "o": [
+            "Logs for incident investigation",
+            "Standard logging is enough now",
+            "No forensic logs needed here",
+            "Only for financial apps"
+        ]
+    },
+    {
+        "q": "What is log retention policy?",
+        "o": [
+            "How long to keep logs now",
+            "Keep logs forever is fine here",
+            "Delete logs immediately used",
+            "Only for compliance"
+        ]
+    },
+    {
+        "q": "What is security training?",
+        "o": [
+            "Train developers on security",
+            "No training for GraphQL now",
+            "Only for security teams here",
+            "On-the-job learning only"
+        ]
+    },
+    {
+        "q": "What is secure SDLC?",
+        "o": [
+            "Security in dev lifecycle now",
+            "Security after development here",
+            "No SDLC for APIs needed used",
+            "Only for enterprise"
+        ]
+    },
+    {
+        "q": "What is security review process?",
+        "o": [
+            "Review changes for security",
+            "No review needed for code now",
+            "Automated review is enough",
+            "Only for major releases"
+        ]
+    },
+    {
+        "q": "What is bug bounty program?",
+        "o": [
+            "Pay for security bug reports",
+            "No bounties for GraphQL now",
+            "Only for large companies used",
+            "Internal testing sufficient"
+        ]
+    },
+    {
+        "q": "What is responsible disclosure?",
+        "o": [
+            "Coordinated vulnerability report",
+            "Public disclosure immediately now",
+            "No disclosure needed here used",
+            "Only for critical vulns"
+        ]
+    },
+    {
+        "q": "What is security policy file?",
+        "o": [
+            "Document how to report vulns",
+            "No policy file for APIs now",
+            "Only for open source used",
+            "Contact info only needed"
+        ]
+    },
+    {
+        "q": "What is security.txt?",
+        "o": [
+            "Standard security contact file",
+            "No such standard exists now",
+            "Only for web pages used here",
+            "GraphQL uses own standard"
+        ]
+    },
+    {
+        "q": "What is deprecation security?",
+        "o": [
+            "Safely retire old features now",
+            "Remove features immediately here",
+            "No deprecation needed in APIs",
+            "Only for breaking changes"
+        ]
+    },
+    {
+        "q": "What is versioning security?",
+        "o": [
+            "Manage API versions safely now",
+            "Single version is sufficient",
+            "No versioning in GraphQL used",
+            "Only for breaking changes"
+        ]
+    },
+    {
+        "q": "What is sunset header?",
+        "o": [
+            "Announce API deprecation date",
+            "No sunset in GraphQL now used",
+            "Only for REST APIs here",
+            "GraphQL never sunsets"
+        ]
+    },
+    {
+        "q": "What is GraphQL security best practices summary?",
+        "o": [
+            "Auth rate-limit validate log",
+            "Single best practice is enough",
+            "No best practices exist now",
+            "Only for production"
+        ]
+    },
+    {
+        "q": "What is schema first vs code first security?",
+        "o": [
+            "Schema first allows review before code",
+            "Code first is more secure overall",
+            "No security difference exists now",
+            "Schema first is less secure"
+        ]
+    },
+    {
+        "q": "What is typed resolver pattern?",
+        "o": [
+            "Enforce return types in resolvers",
+            "No typed resolvers in GraphQL now",
+            "Only for query resolvers used",
+            "Types not enforceable here"
+        ]
+    },
+    {
+        "q": "What is resolver middleware?",
+        "o": [
+            "Intercept resolver execution now",
+            "No middleware in GraphQL here",
+            "Only for mutations available",
+            "Middleware breaks performance"
+        ]
+    },
+    {
+        "q": "What is authentication middleware?",
+        "o": [
+            "Check auth before resolvers run",
+            "Auth after resolver execution here",
+            "No auth middleware exists now",
+            "Only for subscriptions"
+        ]
+    },
+    {
+        "q": "What is logging middleware?",
+        "o": [
+            "Log resolver execution details",
+            "No logging middleware exists now",
+            "Middleware cannot log here used",
+            "Only for errors logged"
+        ]
+    },
+    {
+        "q": "What is timing middleware?",
+        "o": [
+            "Measure resolver execution time",
+            "No timing middleware exists now",
+            "Only for queries measured here",
+            "Timing breaks performance"
+        ]
+    },
+    {
+        "q": "What is cache middleware?",
+        "o": [
+            "Cache resolver results automatically",
+            "No caching middleware in GraphQL",
+            "Only for specific fields cached",
+            "Caching done elsewhere"
+        ]
+    },
+    {
+        "q": "What is validation middleware?",
+        "o": [
+            "Custom validation before resolvers",
+            "No validation middleware exists",
+            "Schema validation is sufficient",
+            "Only for mutations"
+        ]
+    },
+    {
+        "q": "What is error handling middleware?",
+        "o": [
+            "Transform errors before response",
+            "No error middleware in GraphQL now",
+            "Errors returned as-is always here",
+            "Only for specific errors"
+        ]
+    },
+    {
+        "q": "What is Apollo plugins?",
+        "o": [
+            "Lifecycle hooks for server events",
+            "No plugin system in Apollo now",
+            "Only for monitoring used here",
+            "Plugins are deprecated"
+        ]
+    },
+    {
+        "q": "What is requestDidStart plugin?",
+        "o": [
+            "Hook for each incoming request",
+            "No such plugin hook exists now",
+            "Only for response phase used",
+            "Deprecated in newer versions"
+        ]
+    },
+    {
+        "q": "What is willSendResponse plugin?",
+        "o": [
+            "Hook before sending response now",
+            "No response hook exists here",
+            "Only for error responses used",
+            "Deprecated plugin hook"
+        ]
+    },
+    {
+        "q": "What is didEncounterErrors plugin?",
+        "o": [
+            "Hook when errors are detected",
+            "No error hook in plugins now",
+            "Only for fatal errors used here",
+            "Deprecated in Apollo 4"
+        ]
+    },
+    {
+        "q": "What is schema directive transformer?",
+        "o": [
+            "Modify schema with directives now",
+            "Directives cannot transform schema",
+            "No transformer pattern exists",
+            "Only for built-in directives"
+        ]
+    },
+    {
+        "q": "What is mapSchema function?",
+        "o": [
+            "Programmatically modify schema",
+            "No schema modification possible",
+            "Schema is immutable always here",
+            "Only for specific types"
+        ]
+    },
+    {
+        "q": "What is schema visiting pattern?",
+        "o": [
+            "Traverse and modify schema nodes",
+            "No visiting pattern exists now",
+            "Schemas cannot be traversed",
+            "Only for development mode"
+        ]
+    },
+    {
+        "q": "What is field config transformation?",
+        "o": [
+            "Modify field resolver behavior now",
+            "No field transformation exists",
+            "Resolvers are immutable here",
+            "Only for specific fields"
+        ]
+    },
+    {
+        "q": "What is argument transformation?",
+        "o": [
+            "Modify arguments before resolver",
+            "Arguments passed as-is always now",
+            "No transformation is possible",
+            "Only for mutations"
+        ]
+    },
+    {
+        "q": "What is input sanitization?",
+        "o": [
+            "Clean user input before use now",
+            "GraphQL sanitizes automatically",
+            "No sanitization needed here",
+            "Only for strings"
+        ]
+    },
+    {
+        "q": "What is output encoding?",
+        "o": [
+            "Encode data in response safely",
+            "GraphQL encodes automatically now",
+            "No encoding needed for JSON",
+            "Only for HTML output"
+        ]
+    },
+    {
+        "q": "What is XSS in GraphQL responses?",
+        "o": [
+            "Inject scripts via response data",
+            "No XSS in GraphQL responses now",
+            "JSON prevents all XSS here",
+            "Only for HTML responses"
+        ]
+    },
+    {
+        "q": "What is stored XSS via GraphQL?",
+        "o": [
+            "Persist malicious script in database",
+            "No stored XSS via GraphQL now",
+            "Database prevents stored XSS",
+            "Only for specific fields"
+        ]
+    },
+    {
+        "q": "What is reflected XSS in GraphQL?",
+        "o": [
+            "Echo malicious input in response",
+            "No reflected XSS possible now",
+            "GraphQL escapes all input here",
+            "Only for error messages"
+        ]
+    },
+    {
+        "q": "What is blind injection?",
+        "o": [
+            "Exploit without seeing result now",
+            "No blind injection in GraphQL",
+            "Response always shows result",
+            "Only for time-based attacks"
+        ]
+    },
+    {
+        "q": "What is time-based blind injection?",
+        "o": [
+            "Infer result via timing delays",
+            "No time-based attacks possible",
+            "GraphQL prevents timing attacks",
+            "Only for SQL injection"
+        ]
+    },
+    {
+        "q": "What is boolean-based blind injection?",
+        "o": [
+            "Infer result via true/false response",
+            "No boolean-based attacks possible",
+            "GraphQL validates all input now",
+            "Only for SQL databases"
+        ]
+    },
+    {
+        "q": "What is out-of-band injection?",
+        "o": [
+            "Exfiltrate data via external channel",
+            "No OOB attacks in GraphQL now",
+            "GraphQL is isolated from network",
+            "Only for DNS exfiltration"
+        ]
+    },
+    {
+        "q": "What is second-order injection?",
+        "o": [
+            "Stored payload triggers later now",
+            "No second-order attacks exist",
+            "GraphQL prevents all injection",
+            "Only for SQL databases"
+        ]
+    },
+    {
+        "q": "What is SSRF via GraphQL?",
+        "o": [
+            "Forge requests to internal services",
+            "No SSRF in GraphQL exists now",
+            "GraphQL validates all URLs here",
+            "Only for specific fields"
+        ]
+    },
+    {
+        "q": "What is open redirect vulnerability?",
+        "o": [
+            "Redirect user to malicious site",
+            "No redirects in GraphQL APIs now",
+            "GraphQL cannot cause redirects",
+            "Only for browser clients"
+        ]
+    },
+    {
+        "q": "What is path traversal via input?",
+        "o": [
+            "Access files outside directory now",
+            "No file access in GraphQL here",
+            "GraphQL sanitizes all paths",
+            "Only for file operations"
+        ]
+    },
+    {
+        "q": "What is command injection risk?",
+        "o": [
+            "Execute system commands via input",
+            "No command execution in GraphQL",
+            "GraphQL validates shell commands",
+            "Only for specific resolvers"
+        ]
+    },
+    {
+        "q": "What is LDAP injection?",
+        "o": [
+            "Manipulate directory queries now",
+            "No LDAP in GraphQL exists here",
+            "GraphQL sanitizes LDAP queries",
+            "Only for authentication"
+        ]
+    },
+    {
+        "q": "What is NoSQL injection?",
+        "o": [
+            "Inject malicious query operators",
+            "No NoSQL injection possible now",
+            "GraphQL prevents all injection",
+            "Only for MongoDB databases"
+        ]
+    },
+    {
+        "q": "What is XML injection in GraphQL?",
+        "o": [
+            "Only if resolvers process XML now",
+            "No XML in GraphQL specification",
+            "GraphQL uses XML internally here",
+            "Only for legacy integrations"
+        ]
+    },
+    {
+        "q": "What is deserialization vulnerability?",
+        "o": [
+            "Exploit object deserialization now",
+            "No deserialization in GraphQL",
+            "JSON is safe for deserialize",
+            "Only for specific scalars"
+        ]
+    },
+    {
+        "q": "What is prototype pollution?",
+        "o": [
+            "Inject properties to Object now",
+            "No prototype pollution possible",
+            "GraphQL prevents pollution here",
+            "Only for specific libraries"
+        ]
+    },
+    {
+        "q": "What is mass assignment?",
+        "o": [
+            "Set unintended fields via input",
+            "GraphQL prevents mass assignment",
+            "Schema defines allowed fields",
+            "Only for mutations"
+        ]
+    },
+    {
+        "q": "What is parameter tampering?",
+        "o": [
+            "Modify request parameters maliciously",
+            "GraphQL validates all parameters",
+            "No tampering is possible now",
+            "Only for HTTP layer"
+        ]
+    },
+    {
+        "q": "What is HTTP parameter pollution?",
+        "o": [
+            "Multiple values confuse parser now",
+            "No parameter pollution in GraphQL",
+            "JSON body prevents pollution here",
+            "Only for query strings"
+        ]
+    },
+    {
+        "q": "What is request smuggling?",
+        "o": [
+            "Confuse proxy and origin parsing",
+            "No request smuggling for GraphQL",
+            "GraphQL validates all requests",
+            "Only for specific proxies"
+        ]
+    },
+    {
+        "q": "What is host header attack?",
+        "o": [
+            "Manipulate host header for exploit",
+            "No host header attacks possible",
+            "GraphQL ignores host header now",
+            "Only for password reset"
+        ]
+    },
+    {
+        "q": "What is clickjacking via GraphQL?",
+        "o": [
+            "Frame GraphQL page for clicks now",
+            "No clickjacking for APIs here",
+            "GraphQL is immune to framing",
+            "Only for web applications"
+        ]
+    },
+    {
+        "q": "What is session fixation?",
+        "o": [
+            "Pre-set session ID for victim now",
+            "No session fixation in GraphQL",
+            "GraphQL uses JWT only here used",
+            "Only for cookie sessions"
+        ]
+    },
+    {
+        "q": "What is session hijacking?",
+        "o": [
+            "Steal and reuse session token now",
+            "No hijacking possible in GraphQL",
+            "GraphQL tokens are secure here",
+            "Only for insecure transport"
+        ]
+    },
+    {
+        "q": "What is token leakage?",
+        "o": [
+            "Expose auth token accidentally now",
+            "No token leakage in GraphQL",
+            "Tokens are encrypted by default",
+            "Only for logging errors"
+        ]
+    },
+    {
+        "q": "What is authorization bypass?",
+        "o": [
+            "Access resources without permission",
+            "No bypass possible in GraphQL",
+            "Schema enforces all access here",
+            "Only for specific fields"
+        ]
+    },
+    {
+        "q": "What is privilege escalation?",
+        "o": [
+            "Gain higher permissions than allowed",
+            "No escalation in GraphQL exists",
+            "Permissions are strictly enforced",
+            "Only for admin roles"
+        ]
+    },
+    {
+        "q": "What is horizontal privilege escalation?",
+        "o": [
+            "Access other users data same level",
+            "No horizontal escalation exists",
+            "GraphQL enforces user isolation",
+            "Only for specific resources"
+        ]
+    },
+    {
+        "q": "What is vertical privilege escalation?",
+        "o": [
+            "Gain admin privileges from user",
+            "No vertical escalation possible",
+            "Role system prevents escalation",
+            "Only for specific mutations"
+        ]
+    },
+    {
+        "q": "What is business logic vulnerability?",
+        "o": [
+            "Flaw in application logic flow now",
+            "No business logic flaws possible",
+            "GraphQL type system prevents all",
+            "Only for payment systems"
+        ]
+    },
+    {
+        "q": "What is race condition exploit?",
+        "o": [
+            "Exploit timing between operations",
+            "No race conditions in GraphQL",
+            "Mutations are atomic by default",
+            "Only for specific operations"
+        ]
+    },
+    {
+        "q": "What is TOCTOU vulnerability?",
+        "o": [
+            "Time of check vs time of use",
+            "No TOCTOU in GraphQL exists now",
+            "GraphQL prevents timing issues",
+            "Only for file operations"
+        ]
+    },
+    {
+        "q": "What is GraphQL over gRPC?",
+        "o": [
+            "Use gRPC as GraphQL transport now",
+            "No gRPC support for GraphQL",
+            "Only HTTP transport works here",
+            "gRPC replaces GraphQL"
+        ]
+    },
+    {
+        "q": "What is GraphQL code generation security?",
+        "o": [
+            "Validate generated code integrity",
+            "Generated code is always safe now",
+            "No security concerns for codegen",
+            "Only for typed languages"
+        ]
+    },
+    {
+        "q": "What is introspection security middleware?",
+        "o": [
+            "Conditionally allow introspection",
+            "All or nothing introspection now",
+            "No conditional introspection here",
+            "Middleware cannot control this"
+        ]
+    }
+]

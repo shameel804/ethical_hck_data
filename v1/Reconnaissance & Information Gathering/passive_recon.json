@@ -1,0 +1,4529 @@
+[
+    {
+        "q": "What is the primary purpose of WHOIS lookups in passive reconnaissance?",
+        "o": [
+            "Identify domain registration details",
+            "Scan for open ports on server",
+            "Exploit running services remotely",
+            "Intercept network traffic data"
+        ]
+    },
+    {
+        "q": "Which record type does a WHOIS query primarily retrieve information about?",
+        "o": [
+            "Domain ownership",
+            "Network routing",
+            "Firewall rules",
+            "System logs"
+        ]
+    },
+    {
+        "q": "In a WHOIS record, what does the 'Registrar' field indicate?",
+        "o": [
+            "Company managing the domain name",
+            "Server hosting the website content",
+            "Person who designed the website",
+            "Software running on the server"
+        ]
+    },
+    {
+        "q": "Which information is commonly found in WHOIS data?",
+        "o": [
+            "Creation and expiration dates",
+            "Database schema definitions",
+            "Internal IP address schemes",
+            "User password hashes"
+        ]
+    },
+    {
+        "q": "What is a common privacy measure that obscures WHOIS data?",
+        "o": [
+            "WHOIS privacy protection services",
+            "SSL/TLS encryption protocols",
+            "Data encryption at rest",
+            "Firewall rule configuration"
+        ]
+    },
+    {
+        "q": "Which command line tool is standard for querying WHOIS databases?",
+        "o": [
+            "whois",
+            "ping",
+            "traceroute",
+            "netstat"
+        ]
+    },
+    {
+        "q": "Why is historical WHOIS data valuable for attackers?",
+        "o": [
+            "Reveals past owners and contact info",
+            "Shows current running services",
+            "Provides real-time traffic stats",
+            "Decrypts current SSL certificates"
+        ]
+    },
+    {
+        "q": "What is the 'Registrant' in WHOIS terminology?",
+        "o": [
+            "The entity that owns the domain",
+            "The company selling the domain",
+            "The server hosting the DNS",
+            "The agency regulating domains"
+        ]
+    },
+    {
+        "q": "Which TLDs often have stricter WHOIS data requirements?",
+        "o": [
+            "Country code TLDs (ccTLDs)",
+            "Generic TLDs (gTLDs)",
+            "Infrastructure TLDs",
+            "Test TLDs"
+        ]
+    },
+    {
+        "q": "What does the 'Admin Contact' in WHOIS records represent?",
+        "o": [
+            "Person handling administrative matters",
+            "Person managing technical issues",
+            "Person paying for the domain",
+            "Person developing the site"
+        ]
+    },
+    {
+        "q": "What is DNS enumeration typically used for?",
+        "o": [
+            "Finding subdomains and IP addresses",
+            "Cracking user passwords",
+            "Injecting malicious scripts",
+            "Bypassing authentication"
+        ]
+    },
+    {
+        "q": "Which DNS record type maps a hostname to an IPv4 address?",
+        "o": [
+            "A record",
+            "AAAA record",
+            "MX record",
+            "NS record"
+        ]
+    },
+    {
+        "q": "Which DNS record identifies the mail servers for a domain?",
+        "o": [
+            "MX record",
+            "PTR record",
+            "CNAME record",
+            "TXT record"
+        ]
+    },
+    {
+        "q": "What is the purpose of an 'NS' record in DNS?",
+        "o": [
+            "Delegates a DNS zone to use specific name servers",
+            "Maps an IP address to a canonical name",
+            "Stores text-based information for verification",
+            "Redirects traffic to a different port"
+        ]
+    },
+    {
+        "q": "Which tool is commonly used for passive DNS enumeration?",
+        "o": [
+            "Sublist3r",
+            "Wireshark",
+            "Burp Suite",
+            "Metasploit"
+        ]
+    },
+    {
+        "q": "What does a CNAME record usually point to?",
+        "o": [
+            "Another domain name",
+            "An IP address",
+            "A mail server",
+            "A text string"
+        ]
+    },
+    {
+        "q": "Which DNS record is used for reverse DNS lookups?",
+        "o": [
+            "PTR record",
+            "A record",
+            "SRV record",
+            "SOA record"
+        ]
+    },
+    {
+        "q": "What does a TXT record often contain?",
+        "o": [
+            "SPF or DKIM verification data",
+            "Binary executable code",
+            "Encrypted password hashes",
+            "Routing table information"
+        ]
+    },
+    {
+        "q": "What information does an SOA record provide?",
+        "o": [
+            "Authoritative zone information",
+            "List of subdomains",
+            "IP address mappings",
+            "Mail exchange priorities"
+        ]
+    },
+    {
+        "q": "What is the risk of a Zone Transfer (AXFR)?",
+        "o": [
+            "Reveals the entire DNS zone file",
+            "Allows remote code execution",
+            "Grants administrative access",
+            "Decrypts network traffic"
+        ]
+    },
+    {
+        "q": "What is 'Google Dorking' also known as?",
+        "o": [
+            "Google Hacking",
+            "Search Engine Optimization",
+            "Web Crawling",
+            "Page Ranking"
+        ]
+    },
+    {
+        "q": "Which operator restricts search results to a specific site?",
+        "o": [
+            "site:",
+            "filetype:",
+            "intitle:",
+            "inurl:"
+        ]
+    },
+    {
+        "q": "What does the 'filetype:pdf' operator do?",
+        "o": [
+            "Searches only for PDF files",
+            "Searches generally for PDFs",
+            "Excludes PDF files from results",
+            "Highlights PDF links in results"
+        ]
+    },
+    {
+        "q": "Which operator searches for text within the page title?",
+        "o": [
+            "intitle:",
+            "intext:",
+            "inurl:",
+            "cache:"
+        ]
+    },
+    {
+        "q": "What is the purpose of the 'cache:' operator?",
+        "o": [
+            "Views Google's cached version of a page",
+            "Clears the browser cache",
+            "Searches for hidden cached files",
+            "Lists all cached pages for a site"
+        ]
+    },
+    {
+        "q": "Which operator specifically looks for text in the URL?",
+        "o": [
+            "inurl:",
+            "index of:",
+            "link:",
+            "related:"
+        ]
+    },
+    {
+        "q": "How can you exclude terms from a search query?",
+        "o": [
+            "Using the minus sign (-)",
+            "Using the plus sign (+)",
+            "Using quotation marks",
+            "Using the tilde (~)"
+        ]
+    },
+    {
+        "q": "What does 'index of' often reveal in search results?",
+        "o": [
+            "Directory listings with files",
+            "The main index page of a site",
+            "Search engine index status",
+            "Database index configurations"
+        ]
+    },
+    {
+        "q": "Which operator finds pages that link to a specific URL?",
+        "o": [
+            "link:",
+            "anchor:",
+            "ref:",
+            "connect:"
+        ]
+    },
+    {
+        "q": "What is the use of 'ext:log' in dorking?",
+        "o": [
+            "Finds exposed log files",
+            "Logs search activity",
+            "Extends search timeout",
+            "Filters external links"
+        ]
+    },
+    {
+        "q": "What is Social Media Intelligence (SOCMINT)?",
+        "o": [
+            "Gathering intel from social platforms",
+            "Hacking social media accounts",
+            "Blocking social media access",
+            "Managing social media ads"
+        ]
+    },
+    {
+        "q": "Which platform is primarily used for professional intel?",
+        "o": [
+            "LinkedIn",
+            "Instagram",
+            "TikTok",
+            "Snapchat"
+        ]
+    },
+    {
+        "q": "What can geotags in social media posts reveal?",
+        "o": [
+            "Physical location of the poster",
+            "Device IP address",
+            "ISP provider name",
+            "Network MAC address"
+        ]
+    },
+    {
+        "q": "Why are employee LinkedIn profiles useful for recon?",
+        "o": [
+            "They list technologies used by the company",
+            "They contain login passwords",
+            "They provide direct server access",
+            "They bypass firewall rules"
+        ]
+    },
+    {
+        "q": "What is a common risk of oversharing on social media?",
+        "o": [
+            "Revealing operational security details",
+            "Increasing rigorous spam filters",
+            "Lowering search engine ranking",
+            "Reducing network bandwidth"
+        ]
+    },
+    {
+        "q": "Which tool is often used to search social usernames?",
+        "o": [
+            "Sherlock",
+            "Wireshark",
+            "Nmap",
+            "Hydra"
+        ]
+    },
+    {
+        "q": "What does metadata in uploaded photos often contain?",
+        "o": [
+            "EXIF data like location and camera model",
+            "User passwords and emails",
+            "Hidden malware payloads",
+            "Server configuration files"
+        ]
+    },
+    {
+        "q": "How can friend lists be useful in passive recon?",
+        "o": [
+            "Mapping relationships and trust circles",
+            "Identifying vulnerable software",
+            "Finding open network ports",
+            "Tracking website uptime"
+        ]
+    },
+    {
+        "q": "What is the concept of 'scraping' in SOCMINT?",
+        "o": [
+            "Automated data extraction from profiles",
+            "Deleting user accounts via scripts",
+            "Posting automated comments",
+            "Reporting fake profiles"
+        ]
+    },
+    {
+        "q": "Why might attackers look for job postings?",
+        "o": [
+            "To identify specific software stacks used",
+            "To apply for jobs undercover",
+            "To spam the HR department",
+            "To access payroll systems"
+        ]
+    },
+    {
+        "q": "What are public records in the context of specific recon?",
+        "o": [
+            "Government or legal documents available openly",
+            "Encrypted internal memos",
+            "Private email communications",
+            "Protected health records"
+        ]
+    },
+    {
+        "q": "Which site stores past versions of websites?",
+        "o": [
+            "Wayback Machine",
+            "Google Cache",
+            "Bing Archives",
+            "Yahoo History"
+        ]
+    },
+    {
+        "q": "What can EDGAR database searches reveal?",
+        "o": [
+            "Financial filings of public companies",
+            "Employee criminal records",
+            "Private medical histories",
+            "Vehicle registration details"
+        ]
+    },
+    {
+        "q": "How can property records assist in reconnaissance?",
+        "o": [
+            "Confirming physical addresses and ownership",
+            "Finding wireless network keys",
+            "Accessing building security cameras",
+            "Unlocking electronic doors"
+        ]
+    },
+    {
+        "q": "What is the purpose of searching patent databases?",
+        "o": [
+            "Understanding proprietary technology",
+            "Checking for trademark violations",
+            "Stealing product designs",
+            "Validating software licenses"
+        ]
+    },
+    {
+        "q": "Which search engine is specialized for IoT devices?",
+        "o": [
+            "Shodan",
+            "Google",
+            "Bing",
+            "DuckDuckGo"
+        ]
+    },
+    {
+        "q": "What can technical support forum posts reveal?",
+        "o": [
+            "Specific technical issues and versions",
+            "Employee salary information",
+            "Office lunch menus",
+            "Company stock prices"
+        ]
+    },
+    {
+        "q": "Why is it important to investigate cloud buckets?",
+        "o": [
+            "They often contain exposed sensitive data",
+            "They host critical web services",
+            "They provide free storage",
+            "They bypass regional firewalls"
+        ]
+    },
+    {
+        "q": "What does 'Have I Been Pwned' help check?",
+        "o": [
+            "If credentials appeared in data breaches",
+            "If a website is down",
+            "If a domain is available",
+            "If an email is valid"
+        ]
+    },
+    {
+        "q": "What information does 'Netcraft' provide?",
+        "o": [
+            "Web server and hosting history",
+            "Network packet details",
+            "WiFi signal strength",
+            "System process list"
+        ]
+    },
+    {
+        "q": "Which command checks connectivity to a host?",
+        "o": [
+            "ping",
+            "ls",
+            "cd",
+            "mkdir"
+        ]
+    },
+    {
+        "q": "What tool traces the path packets take to a host?",
+        "o": [
+            "traceroute",
+            "ipconfig",
+            "route",
+            "netstat"
+        ]
+    },
+    {
+        "q": "What is the primary function of 'nslookup'?",
+        "o": [
+            "Querying DNS servers",
+            "Scanning network ports",
+            "Sniffing network traffic",
+            "Cracking passwords"
+        ]
+    },
+    {
+        "q": "Which tool replaces nslookup on many modern systems?",
+        "o": [
+            "dig",
+            "host",
+            "lookup",
+            "dnsquery"
+        ]
+    },
+    {
+        "q": "What does 'dig +short' command output?",
+        "o": [
+            "Brief answer section only",
+            "Full verbose trace",
+            "Only error messages",
+            "Help documentation"
+        ]
+    },
+    {
+        "q": "Which operator search for unrelated sites on same IP?",
+        "o": [
+            "Reverse IP Lookup",
+            "Forward DNS Lookup",
+            "Zone Transfer",
+            "Port Scan"
+        ]
+    },
+    {
+        "q": "What is 'certificate transparency' used for in recon?",
+        "o": [
+            "Finding subdomains associated with certs",
+            "Validating SSL encryption strength",
+            "Checking certificate expiration",
+            "Revoking invalid certificates"
+        ]
+    },
+    {
+        "q": "Which site is known for aggregating data breaches?",
+        "o": [
+            "DeHashed",
+            "GitHub",
+            "StackOverflow",
+            "Reddit"
+        ]
+    },
+    {
+        "q": "What is the 'robots.txt' file useful for?",
+        "o": [
+            "Identifying disallowed paths and directories",
+            "Listing all user accounts",
+            "Storing admin passwords",
+            "Configuring firewall rules"
+        ]
+    },
+    {
+        "q": "What does 'sitemap.xml' typically contain?",
+        "o": [
+            "List of accessible URLs on a site",
+            "Database connection strings",
+            "Server configuration details",
+            "User session tokens"
+        ]
+    },
+    {
+        "q": "Which Google dork finds login pages?",
+        "o": [
+            "inurl:login",
+            "intext:password",
+            "filetype:log",
+            "site:admin"
+        ]
+    },
+    {
+        "q": "What does 'site:github.com password' look for?",
+        "o": [
+            "Accidentally committed passwords on GitHub",
+            "GitHub login page",
+            "GitHub password reset page",
+            "Repositories named password"
+        ]
+    },
+    {
+        "q": "Why search for 'confidential' document types?",
+        "o": [
+            "To find sensitive internal documents",
+            "To improve search ranking",
+            "To verify file integrity",
+            "To locate public press releases"
+        ]
+    },
+    {
+        "q": "What is the purpose of 'hunter.io'?",
+        "o": [
+            "Finding email addresses associated with a domain",
+            "Hunting for malware on a server",
+            "Tracking wildlife via GPS",
+            "Scanning for open ports"
+        ]
+    },
+    {
+        "q": "Which tool visualizes relationships in OSINT data?",
+        "o": [
+            "Maltego",
+            "Nmap",
+            "Wireshark",
+            "John the Ripper"
+        ]
+    },
+    {
+        "q": "What does 'builtwith.com' reveal?",
+        "o": [
+            "Technology stack of a website",
+            "Physical location of servers",
+            "Employee contact list",
+            "Financial revenue data"
+        ]
+    },
+    {
+        "q": "What is 'passive' about passive reconnaissance?",
+        "o": [
+            "No direct interaction with the target",
+            "Slow scanning speed",
+            "Using automated scripts",
+            "Monitoring own network"
+        ]
+    },
+    {
+        "q": "Which activity is considered active recon, not passive?",
+        "o": [
+            "Port scanning the target server",
+            "looking up WHOIS records",
+            "Searching Google for info",
+            "Browsing the target website"
+        ]
+    },
+    {
+        "q": "What does 'CRLF' stand for in HTTP contexts?",
+        "o": [
+            "Carriage Return Line Feed",
+            "Certificate Revocation List File",
+            "Cross Referencing Log Format",
+            "Common Resource Locator Function"
+        ]
+    },
+    {
+        "q": "Why check a target's press releases?",
+        "o": [
+            "To learn about partnerships and tech stacks",
+            "To find coupon codes",
+            "To read customer reviews",
+            "To contact support"
+        ]
+    },
+    {
+        "q": "What can valid subdomains reveal?",
+        "o": [
+            "Internal services like 'dev' or 'test'",
+            "External competitor sites",
+            "Global internet traffic",
+            "User browsing history"
+        ]
+    },
+    {
+        "q": "What is 'pastebin' often used for in recon?",
+        "o": [
+            "Finding leaked config files or code",
+            "Hosting malicious websites",
+            "Scanning for vulnerabilities",
+            "Encrypting sensitive data"
+        ]
+    },
+    {
+        "q": "Which search engine focuses on source code?",
+        "o": [
+            "PublicWWW",
+            "Bing",
+            "Yahoo",
+            "Ask"
+        ]
+    },
+    {
+        "q": "What is 'Censys' primarily used for?",
+        "o": [
+            "Internet-wide scanning and asset discovery",
+            "Social media monitoring",
+            "Email spam filtering",
+            "Password cracking"
+        ]
+    },
+    {
+        "q": "How can DNS TXT records verify domain ownership?",
+        "o": [
+            "By hosting a specific verification string",
+            "By redirecting to a verification page",
+            "By blocking all other traffic",
+            "By changing the domain extension"
+        ]
+    },
+    {
+        "q": "What is a 'wildcard' DNS record?",
+        "o": [
+            "Matches requests for non-existent subdomains",
+            "Blocks all subdomain requests",
+            "Randomizes IP responses",
+            "Encrypts DNS queries"
+        ]
+    },
+    {
+        "q": "What information comes from 'bgp.he.net'?",
+        "o": [
+            "Network ASN and IP prefix information",
+            "Employee social security numbers",
+            "Website HTML source code",
+            "Internal database tables"
+        ]
+    },
+    {
+        "q": "What does ASN stand for in networking?",
+        "o": [
+            "Autonomous System Number",
+            "Active Service Node",
+            "Address Space Network",
+            "Automated Security Nexus"
+        ]
+    },
+    {
+        "q": "Why identify a target's ASN?",
+        "o": [
+            "To map their IP address ranges",
+            "To find their email providers",
+            "To crack their WiFi passwords",
+            "To bypass their antivirus"
+        ]
+    },
+    {
+        "q": "What is 'reverse whois' used for?",
+        "o": [
+            "Finding other domains owned by the same entity",
+            "Hiding domain ownership details",
+            "Transferring domain to new registrar",
+            "Deleting WHOIS records"
+        ]
+    },
+    {
+        "q": "Which tool finds virtual hosts on an IP?",
+        "o": [
+            "HostHunter",
+            "PingSweep",
+            "NetCat",
+            "TcpDump"
+        ]
+    },
+    {
+        "q": "What is the danger of exposed AWS S3 buckets?",
+        "o": [
+            "Unrestricted access to stored data",
+            "Slow website performance",
+            "Increased hosting costs",
+            "Incompatible file formats"
+        ]
+    },
+    {
+        "q": "Which Google dork finds open directories?",
+        "o": [
+            "intitle:\"index of /\"",
+            "inurl:admin",
+            "site:ftp",
+            "filetype:dir"
+        ]
+    },
+    {
+        "q": "What does 'intext:@gmail.com' search for?",
+        "o": [
+            "Exposed Gmail addresses",
+            "Gmail login page",
+            "Gmail help articles",
+            "Google mail servers"
+        ]
+    },
+    {
+        "q": "Why look for 'Copyright 2018' in footers?",
+        "o": [
+            "To identify potentially outdated sites",
+            "To check for copyright infringement",
+            "To verify legal compliance",
+            "To find new content"
+        ]
+    },
+    {
+        "q": "What acts as a passive vulnerability scanner?",
+        "o": [
+            "Analyzing server headers for versions",
+            "Sending exploit payloads",
+            "Brute forcing login forms",
+            "Running denial of service"
+        ]
+    },
+    {
+        "q": "What does the 'Server' HTTP header reveal?",
+        "o": [
+            "Web server software and version",
+            "Operating system of the client",
+            "Internal network IP addresses",
+            "Database password hash"
+        ]
+    },
+    {
+        "q": "What information does 'X-Powered-By' header give?",
+        "o": [
+            "Underlying technology framework",
+            "Power consumption of server",
+            "Name of the server admin",
+            "ISP providing the connection"
+        ]
+    },
+    {
+        "q": "Why are default pages dangerous?",
+        "o": [
+            "They indicate unconfigured services",
+            "They use too much bandwidth",
+            "They are ugly to look at",
+            "They confuse legitimate users"
+        ]
+    },
+    {
+        "q": "What is 'metadata' in a file?",
+        "o": [
+            "Data about the data",
+            "The file content itself",
+            "The file encryption key",
+            "The file compression method"
+        ]
+    },
+    {
+        "q": "Which tool extracts metadata from files?",
+        "o": [
+            "ExifTool",
+            "MetaSploit",
+            "WireShark",
+            "Nmap"
+        ]
+    },
+    {
+        "q": "What can PDF metadata reveal?",
+        "o": [
+            "Author name and software used",
+            "The text of the document",
+            "The printer used to print",
+            "The screen resolution"
+        ]
+    },
+    {
+        "q": "How does 'Wayback URLs' help recon?",
+        "o": [
+            "Lists historical URLs for a domain",
+            "Restores deleted websites",
+            "Accelerates website loading",
+            "Enciphers website traffic"
+        ]
+    },
+    {
+        "q": "What is 'theHarvester' used for?",
+        "o": [
+            "Gathering emails and subdomains",
+            "Farming virtual currency",
+            "Harvesting crops digitally",
+            "Cleaning database tables"
+        ]
+    },
+    {
+        "q": "Which recon activity is least likely to set off alarms?",
+        "o": [
+            "Browsing the company LinkedIn page",
+            "Running a full port scan",
+            "Attempting multiple logins",
+            "Injecting SQL queries"
+        ]
+    },
+    {
+        "q": "What does a '200 OK' status code mean?",
+        "o": [
+            "Request succeeded",
+            "Resource not found",
+            "Server error",
+            "Redirecting"
+        ]
+    },
+    {
+        "q": "What does a '403 Forbidden' status code mean?",
+        "o": [
+            "Access denied",
+            "Page not found",
+            "Server timeout",
+            "Payment required"
+        ]
+    },
+    {
+        "q": "What does a '404 Not Found' status code mean?",
+        "o": [
+            "Resource does not exist",
+            "Server is overloaded",
+            "Request is unauthorized",
+            "Method not allowed"
+        ]
+    },
+    {
+        "q": "Why map the network topology passively?",
+        "o": [
+            "To understand infrastructure without alerts",
+            "To test network speed limits",
+            "To configure network routers",
+            "To install network printers"
+        ]
+    },
+    {
+        "q": "What gives away a technology stack in errors?",
+        "o": [
+            "Verbose error messages",
+            "Blank white screens",
+            "Generic 500 pages",
+            "Custom 404 pages"
+        ]
+    },
+    {
+        "q": "What is the primary benefit of using 'WhoisXML API' for historical data?",
+        "o": [
+            "Accessing past domain registration records",
+            "Real-time packet sniffing features",
+            "Automated server vulnerability patching",
+            "Encrypting local database files"
+        ]
+    },
+    {
+        "q": "When analyzing Start of Authority (SOA) records, what does the 'Refresh' value determine?",
+        "o": [
+            "How often secondary servers check for updates",
+            "The timeout for client DNS queries",
+            "The expiration time of the domain name",
+            "The speed of the mail server connection"
+        ]
+    },
+    {
+        "q": "Which Google dork would most likely expose an SQL dump file?",
+        "o": [
+            "filetype:sql \"insert into\" users",
+            "inurl:index.php?id=",
+            "intitle:\"Welcome to SQL\"",
+            "site:mysql.com download"
+        ]
+    },
+    {
+        "q": "What is the specific purpose of 'hunter.io' in the reconnaissance phase?",
+        "o": [
+            "Verifying email address formats and existence",
+            "Scanning for open UDP ports",
+            "Monitoring dark web credential dumps",
+            "Tracking GPS locations of servers"
+        ]
+    },
+    {
+        "q": "How does 'certificate transparency' assist in passive subgraph enumeration?",
+        "o": [
+            "Logs all issued SSL/TLS certificates publicly",
+            "Decrypts all HTTPS traffic automatically",
+            "Blocks revoked certificates instantly",
+            "Hides the true IP address of the server"
+        ]
+    },
+    {
+        "q": "What differentiates a 'passive' DNS sensor from an active query?",
+        "o": [
+            "It records DNS responses observed on the network",
+            "It sends direct queries to the target server",
+            "It modifies the DNS zone file directly",
+            "It blocks malicious DNS requests only"
+        ]
+    },
+    {
+        "q": "Which command-line tool is best suited for automating OSINT searches across multiple platforms?",
+        "o": [
+            "SpiderFoot",
+            "Wireshark",
+            "JohnTheRipper",
+            "Aircrack-ng"
+        ]
+    },
+    {
+        "q": "What is the main risk associated with 'zone transfer' vulnerabilities?",
+        "o": [
+            "Leaking the entire internal network topology",
+            "Crashing the DNS server immediately",
+            "Encrypting the zone file with ransomware",
+            "Resetting the domain administrator password"
+        ]
+    },
+    {
+        "q": "Which specific Google dork operator restricts results to a specific domain extension?",
+        "o": [
+            "site:.gov",
+            "filetype:gov",
+            "link:gov",
+            "related:gov"
+        ]
+    },
+    {
+        "q": "What information is typically NOT found in a standard WHOIS record?",
+        "o": [
+            "Web server operating system version",
+            "Registrar name and URL",
+            "Domain creation date",
+            "Name server addresses"
+        ]
+    },
+    {
+        "q": "Why is 'Shodan' often referred to as the search engine for hackers?",
+        "o": [
+            "It indexes banner information from connected devices",
+            "It provides free exploit code for all software",
+            "It bypasses all firewall authentication",
+            "It generates unbreakable passwords"
+        ]
+    },
+    {
+        "q": "What is the function of the 'cache:' operator in search engines?",
+        "o": [
+            "Viewing a previous version of a webpage",
+            "Clearing the browser's local cache",
+            "Searching for cached passwords",
+            "Hiding your IP address"
+        ]
+    },
+    {
+        "q": "Which tool is specifically designed to visualize relationships between entities in OSINT?",
+        "o": [
+            "Maltego",
+            "Nmap",
+            "Burp Suite",
+            "Sqlmap"
+        ]
+    },
+    {
+        "q": "What does the 'MX' record priority value indicate?",
+        "o": [
+            "Order in which mail servers should be attempted",
+            "The speed of the mail server CPU",
+            "The storage capacity of the mailbox",
+            "The maximum email size allowed"
+        ]
+    },
+    {
+        "q": "What is 'dorking' in the context of passive reconnaissance?",
+        "o": [
+            "Using advanced search operators to find sensitive info",
+            "Sending spam emails to target employees",
+            "Flooding a server with ping requests",
+            "Cracking Wi-Fi passwords"
+        ]
+    },
+    {
+        "q": "Which file on a web server often lists disallowed directories for crawlers?",
+        "o": [
+            "robots.txt",
+            "sitemap.xml",
+            "config.php",
+            "index.html"
+        ]
+    },
+    {
+        "q": "What does 'reverse image search' help identify in OSINT?",
+        "o": [
+            "Original source or other uses of an image",
+            "The camera model used to take the photo",
+            "The exact GPS coordinates of the image",
+            "The password of the uploader"
+        ]
+    },
+    {
+        "q": "Which DNS record type is essential for verifying email sender identity via SPF?",
+        "o": [
+            "TXT",
+            "CNAME",
+            "A",
+            "NS"
+        ]
+    },
+    {
+        "q": "What is the primary limitation of passive reconnaissance?",
+        "o": [
+            "It relies on publicly available information only",
+            "It triggers intrusion detection systems easily",
+            "It requires expensive hardware to perform",
+            "It cannot be performed remotely"
+        ]
+    },
+    {
+        "q": "Which platform is most useful for gathering professional career data and organizational charts?",
+        "o": [
+            "LinkedIn",
+            "Instagram",
+            "TikTok",
+            "Reddit"
+        ]
+    },
+    {
+        "q": "What does a 'CNAME' record resolve to?",
+        "o": [
+            "Another domain name (alias)",
+            "An IPv4 address directly",
+            "An IPv6 address directly",
+            "A mail server priority"
+        ]
+    },
+    {
+        "q": "Which search operator finds pages containing a specific phrase exactly?",
+        "o": [
+            "\"phrase\"",
+            "phrase",
+            "+phrase",
+            "-phrase"
+        ]
+    },
+    {
+        "q": "What is 'Censys' best known for in the security community?",
+        "o": [
+            "Analyzing internet-wide scan data and certificates",
+            "Cracking WPA2 wireless passwords",
+            "Intercepting mobile phone calls",
+            "Generating phishing email templates"
+        ]
+    },
+    {
+        "q": "Why might an attacker analyze a target's job postings?",
+        "o": [
+            "To identify specific technologies and software in use",
+            "To apply for a job at the company",
+            "To estimate the company's revenue",
+            "To find the CEO's home address"
+        ]
+    },
+    {
+        "q": "What is the purpose of 'DNS dump' tools?",
+        "o": [
+            "To retrieve all discoverable DNS records for a domain",
+            "To delete DNS records from the server",
+            "To flood the DNS server with traffic",
+            "To encrypt DNS communications"
+        ]
+    },
+    {
+        "q": "Which HTTP header might reveal the software running on a server?",
+        "o": [
+            "Server",
+            "User-Agent",
+            "Cookie",
+            "Accept-Language"
+        ]
+    },
+    {
+        "q": "What does the 'related:' search operator do?",
+        "o": [
+            "Finds websites with similar content",
+            "Finds social media profiles of the author",
+            "Finds internal subdomains of the site",
+            "Finds the hosting provider of the site"
+        ]
+    },
+    {
+        "q": "Which online archive allows viewing past versions of websites?",
+        "o": [
+            "Wayback Machine",
+            "GitHub Gist",
+            "Pastebin",
+            "Stack Overflow"
+        ]
+    },
+    {
+        "q": "What is 'metadata' broadly defined as?",
+        "o": [
+            "Data describing other data",
+            "Encrypted user passwords",
+            "Compiled executable code",
+            "Network routing tables"
+        ]
+    },
+    {
+        "q": "Which tool can extract EXIF data from images?",
+        "o": [
+            "ExifTool",
+            "Nmap",
+            "Wireshark",
+            "Netcat"
+        ]
+    },
+    {
+        "q": "What does 'SRV' record specify in DNS?",
+        "o": [
+            "Location of servers for specific services",
+            "The domain administrator's email",
+            "The encryption key for the zone",
+            "The geographical location of the server"
+        ]
+    },
+    {
+        "q": "Why is 'Recon-ng' popular among penetration testers?",
+        "o": [
+            "It is a modular web reconnaissance framework",
+            "It is the fastest port scanner available",
+            "It can decrypt SSL traffic in real-time",
+            "It breaks into Wi-Fi networks automatically"
+        ]
+    },
+    {
+        "q": "What does the 'intitle:index.of' dork specifically target?",
+        "o": [
+            "Directory listings enabled on servers",
+            "The main homepage of a website",
+            "Database login pages",
+            "Admin configuration panels"
+        ]
+    },
+    {
+        "q": "Which organization manages IP address allocation globally?",
+        "o": [
+            "IANA",
+            "IEEE",
+            "W3C",
+            "ISO"
+        ]
+    },
+    {
+        "q": "What is the significance of the 'PTR' record?",
+        "o": [
+            "It maps an IP address back to a hostname",
+            "It maps a hostname to an IP address",
+            "It specifies the mail server",
+            "It defines the zone authority"
+        ]
+    },
+    {
+        "q": "Which tool is primarily used for sub-domain enumeration?",
+        "o": [
+            "Sublist3r",
+            "John the Ripper",
+            "Hydra",
+            "Sqlmap"
+        ]
+    },
+    {
+        "q": "What is 'pretexting' in the context of social engineering recon?",
+        "o": [
+            "Creating a fabricated scenario to obtain info",
+            "Scanning ports before an attack",
+            "encrypting files before exfiltration",
+            "Testing firewalls with dummy packets"
+        ]
+    },
+    {
+        "q": "Which social media feature is risky if set to public for employees?",
+        "o": [
+            "Detailed work history and project descriptions",
+            "Profile picture visibility",
+            "Number of followers",
+            "Favorite music lists"
+        ]
+    },
+    {
+        "q": "What does 'info:' operator show in some search engines?",
+        "o": [
+            "Information Google has about a URL",
+            "The IP address of the website",
+            "The SSL certificate details",
+            "The server uptime statistics"
+        ]
+    },
+    {
+        "q": "Why gather information about a target's suppliers?",
+        "o": [
+            "To identify potential supply chain attack vectors",
+            "To buy cheaper hardware",
+            "To apply for credit",
+            "To compare stock prices"
+        ]
+    },
+    {
+        "q": "What is 'theHarvester' capable of searching?",
+        "o": [
+            "Search engines, PGP servers, and Shodan",
+            "Local hard drives only",
+            "Dark web marketplaces only",
+            "Encrypted chat logs"
+        ]
+    },
+    {
+        "q": "What data is typically masked in modern WHOIS privacy records?",
+        "o": [
+            "Registrant's personal contact details",
+            "Domain expiration date",
+            "Name server addresses",
+            "Registrar name"
+        ]
+    },
+    {
+        "q": "Which extensive database scans the internet for IoT devices?",
+        "o": [
+            "Shodan",
+            "Google Images",
+            "Bing Maps",
+            "YouTube"
+        ]
+    },
+    {
+        "q": "What does 'AAAA' record map a hostname to?",
+        "o": [
+            "IPv6 address",
+            "IPv4 address",
+            "Mail server",
+            "Canonical name"
+        ]
+    },
+    {
+        "q": "What is the risk of publicly accessible GitHub repositories?",
+        "o": [
+            "Leaking source code and credentials",
+            "Hosting malware for the public",
+            "Slowing down the development process",
+            "Increasing cloud storage costs"
+        ]
+    },
+    {
+        "q": "Which command performs a zone transfer if allowed?",
+        "o": [
+            "dig axfr",
+            "ping -t",
+            "netstat -an",
+            "traceroute -z"
+        ]
+    },
+    {
+        "q": "What does 'inurl:admin' help an attacker find?",
+        "o": [
+            "Potential administrative login pages",
+            "Administrative job postings",
+            "Government administration sites",
+            "Network administration manuals"
+        ]
+    },
+    {
+        "q": "What is 'credential dumping' checking against in recon?",
+        "o": [
+            "Publicly leaked database breaches",
+            "Active directory servers",
+            "Live login pages",
+            "Local SAM files"
+        ]
+    },
+    {
+        "q": "Which passive technique helps identify the network block owner?",
+        "o": [
+            "WHOIS IP lookup",
+            "Ping sweep",
+            "Port knocking",
+            "SYN scanning"
+        ]
+    },
+    {
+        "q": "What is 'FOCA' used for in reconnaissance?",
+        "o": [
+            "Metadata extraction from documents",
+            "Brute forcing SSH servers",
+            "Intercepting Wi-Fi traffic",
+            "Generating rainbow tables"
+        ]
+    },
+    {
+        "q": "What does 'site:pastebin.com' combined with a domain name look for?",
+        "o": [
+            "Leaked code or config snippets",
+            "Official company press releases",
+            "Marketing campaign materials",
+            "Customer support tickets"
+        ]
+    },
+    {
+        "q": "Why analyze a target's public financial reports (e.g., 10-K)?",
+        "o": [
+            "To find insights on mergers and IT budget",
+            "To steal bank account numbers directly",
+            "To audit their tax returns",
+            "To buy their stock"
+        ]
+    },
+    {
+        "q": "What is a 'secondary' DNS server used for?",
+        "o": [
+            "Redundancy and load balancing",
+            "Hosting the primary zone file",
+            "Developing new DNS records",
+            "Blocking malicious queries"
+        ]
+    },
+    {
+        "q": "What does 'netcraft.com' site report provide?",
+        "o": [
+            "Hosting history and OS detection",
+            "Real-time traffic interception",
+            "Private email contents",
+            "Internal LAN architecture"
+        ]
+    },
+    {
+        "q": "Which search operator searches for files with a specific extension?",
+        "o": [
+            "filetype:",
+            "extension:",
+            "format:",
+            "type:"
+        ]
+    },
+    {
+        "q": "What is the primary goal of 'footprinting'?",
+        "o": [
+            "Creating a complete profile of the target's security posture",
+            "Breaking into the network immediately",
+            "Deleting log files from the server",
+            "Installing a backdoor"
+        ]
+    },
+    {
+        "q": "How can 'StackOverflow' profiles aid recon?",
+        "o": [
+            "Reveals specific coding problems and technologies used",
+            "Provides direct access to company servers",
+            "Lists all employee phone numbers",
+            "Shows real-time server logs"
+        ]
+    },
+    {
+        "q": "What does the 'link:' operator find?",
+        "o": [
+            "Pages that link to the specified URL",
+            "All links within a specific page",
+            "Broken links on a website",
+            "Malicious links in a domain"
+        ]
+    },
+    {
+        "q": "What is 'domain squatting' or 'typosquatting' detection important for?",
+        "o": [
+            "Identifying malicious look-alike domains",
+            "Buying cheap domains for resale",
+            "Testing typing speed of employees",
+            "Improving SEO ranking"
+        ]
+    },
+    {
+        "q": "Which tool automates gathering emails from search engines?",
+        "o": [
+            "theHarvester",
+            "Nessus",
+            "Metasploit",
+            "OpenVAS"
+        ]
+    },
+    {
+        "q": "What information does 'ARIN' provide?",
+        "o": [
+            "IP address ownership in North America",
+            "Global domain name registrations",
+            "European network routing tables",
+            "Asian internet service providers"
+        ]
+    },
+    {
+        "q": "Why might an attacker look for 'debug' parameters in URLs?",
+        "o": [
+            "They often reveal verbose error info",
+            "They speed up the website",
+            "They secure the connection",
+            "They hide the server version"
+        ]
+    },
+    {
+        "q": "What is 'OSINT Framework'?",
+        "o": [
+            "A collection of OSINT tools and resources",
+            "A software library for Python",
+            "A government intelligence agency",
+            "A certification for hackers"
+        ]
+    },
+    {
+        "q": "What does 'site:*.*.cn' search for?",
+        "o": [
+            "Domains ending in .cn with subdomains",
+            "Any site hosted in Canada",
+            "Cipher notes on websites",
+            "Connect nodes on the network"
+        ]
+    },
+    {
+        "q": "What is the risk of forgotten subdomains?",
+        "o": [
+            "They may run outdated, vulnerable software",
+            "They consume too much electricity",
+            "They confuse search engine crawlers",
+            "They reduce main domain authority"
+        ]
+    },
+    {
+        "q": "Which protocol is used to query directory services?",
+        "o": [
+            "LDAP",
+            "FTP",
+            "SMTP",
+            "SNMP"
+        ]
+    },
+    {
+        "q": "What does 'nslookup -type=mx' retrieve?",
+        "o": [
+            "Mail Exchange records",
+            "Name Server records",
+            "Text records",
+            "Address records"
+        ]
+    },
+    {
+        "q": "Why check for 'Powered by WordPress' footer text?",
+        "o": [
+            "To identify the CMS and potential vulnerabilities",
+            "To appreciate the web design",
+            "To contact the WordPress developers",
+            "To download the WordPress theme"
+        ]
+    },
+    {
+        "q": "What is 'passive' operating system fingerprinting?",
+        "o": [
+            "Analyzing TTL and window size in captured packets",
+            "Sending malformed packets to the host",
+            "Logging into the server to check OS",
+            "Asking the admin what OS they use"
+        ]
+    },
+    {
+        "q": "What does 'TTL' stand for in IP packets?",
+        "o": [
+            "Time To Live",
+            "Time To Load",
+            "Total Traffic Limit",
+            "Transmission Type Label"
+        ]
+    },
+    {
+        "q": "How can 'TTL' values hint at the OS?",
+        "o": [
+            "Different OSes use different default TTL values",
+            "TTL defines the OS version name",
+            "TTL is the kernel compilation date",
+            "TTL is the serial number of the OS"
+        ]
+    },
+    {
+        "q": "What is 'Google Hacking Database' (GHDB)?",
+        "o": [
+            "A repository of useful search dorks",
+            "A leaked database of Google passwords",
+            "A tool to hack Google servers",
+            "A list of Google employees"
+        ]
+    },
+    {
+        "q": "What does 'allintitle:' ensure?",
+        "o": [
+            "All query terms appear in the title",
+            "Any query term appears in the title",
+            "No query terms appear in the title",
+            "Title matches the URL exactly"
+        ]
+    },
+    {
+        "q": "Why is 'contact info' pages interesting for recon?",
+        "o": [
+            "They provide phone numbers and email patterns",
+            "They are usually unsecured",
+            "They contain high-resolution logos",
+            "They list the server IP address"
+        ]
+    },
+    {
+        "q": "What is 'SpiderFoot' used for?",
+        "o": [
+            "Automated OSINT collection and analysis",
+            "Web spidering for SEO ranking",
+            "Footprinting physical buildings",
+            "Analyzing spider venom"
+        ]
+    },
+    {
+        "q": "What does 'host -t ns' command return?",
+        "o": [
+            "Name servers for a domain",
+            "Network status of the host",
+            "New settings for the host",
+            "Number of sessions active"
+        ]
+    },
+    {
+        "q": "Why are 'press kits' useful for social engineering?",
+        "o": [
+            "They provide high-quality logos and executive bios",
+            "They contain server passwords",
+            "They list all firewall rules",
+            "They allow free software downloads"
+        ]
+    },
+    {
+        "q": "What does 'crt.sh' provide access to?",
+        "o": [
+            "Certificate Transparency logs",
+            "Critical shell commands",
+            "Cathode Ray Tube schematics",
+            "Create Sheet macros"
+        ]
+    },
+    {
+        "q": "What is a 'dead' subdomain?",
+        "o": [
+            "A subdomain that no longer resolves or points to content",
+            "A subdomain used for zombie botnets",
+            "A subdomain blocked by firewalls",
+            "A subdomain with no CSS styling"
+        ]
+    },
+    {
+        "q": "Why is 'dead' subdomain takeover a risk?",
+        "o": [
+            "Attackers can register the destination and host content",
+            "It causes the main site to crash",
+            "It deletes the domain registration",
+            "It slows down DNS resolution"
+        ]
+    },
+    {
+        "q": "What is 'recon-ng's' interface similar to?",
+        "o": [
+            "Metasploit Console",
+            "Windows Command Prompt",
+            "Python IDLE",
+            "Chrome Developer Tools"
+        ]
+    },
+    {
+        "q": "What does 'site:trello.com' search for?",
+        "o": [
+            "Public Trello boards exposing project info",
+            "Trello login page",
+            "Trello API documentation",
+            "Trello pricing plans"
+        ]
+    },
+    {
+        "q": "Which tool can help identify WAFs?",
+        "o": [
+            "WafW00f",
+            "Ncat",
+            "Ping",
+            "Traceroute"
+        ]
+    },
+    {
+        "q": "What is specific about 'Client-Side' recon?",
+        "o": [
+            "Analyzing scripts and code running in the browser",
+            "Scanning the server hardware",
+            "Interviewing the client physically",
+            "Reviewing server-side logs"
+        ]
+    },
+    {
+        "q": "What can comments in HTML source code reveal?",
+        "o": [
+            "Developer notes, TODOs, or old code snippets",
+            "Encrypted user passwords",
+            "Server binary files",
+            "SSL private keys"
+        ]
+    },
+    {
+        "q": "What is 'Whois history' useful for?",
+        "o": [
+            "Tracking ownership changes over time",
+            "Predicting future domain names",
+            "Validating current SSL certs",
+            "Checking site loading speed"
+        ]
+    },
+    {
+        "q": "Why check 'sitemap.xml' for 'admin' paths?",
+        "o": [
+            "It might list hidden administrative URLs",
+            "It guarantees admin access",
+            "It shows the admin password",
+            "It deletes the admin account"
+        ]
+    },
+    {
+        "q": "What does a '301 Moved Permanently' code suggest?",
+        "o": [
+            "The resource has moved to a new URL",
+            "The server is down for maintenance",
+            "The request requires authentication",
+            "The script has a syntax error"
+        ]
+    },
+    {
+        "q": "What can 'technographics' reveal?",
+        "o": [
+            "Software and hardware used by a company",
+            "Graphic design preferences",
+            "Technical drawing schematics",
+            "Employee technical skills only"
+        ]
+    },
+    {
+        "q": "Why is 'DNSSEC' relevant to recon?",
+        "o": [
+            "It prevents DNS spoofing but adds complexity",
+            "It hides all DNS records",
+            "It speeds up DNS queries",
+            "It allows free domain registration"
+        ]
+    },
+    {
+        "q": "What does 'Start of Authority' (SOA) define?",
+        "o": [
+            "Primary parameters for the DNS zone",
+            "Starting point of a network scan",
+            "The CEO of the company",
+            "The genesis block of a blockchain"
+        ]
+    },
+    {
+        "q": "Which tool is best for map-based OSINT?",
+        "o": [
+            "Google Earth / Maps",
+            "Notepad",
+            "Calculator",
+            "Paint"
+        ]
+    },
+    {
+        "q": "What does finding 'id_rsa' in a repo imply?",
+        "o": [
+            "Exposure of a private SSH key",
+            "A standard public key file",
+            "An encrypted message",
+            "A random data file"
+        ]
+    },
+    {
+        "q": "What is the 'user-agent' string?",
+        "o": [
+            "Identifies the client software to the server",
+            "The name of the user logging in",
+            "The password of the agent",
+            "The server software version"
+        ]
+    },
+    {
+        "q": "Why change 'user-agent' during recon?",
+        "o": [
+            "To mimic different devices or browsers",
+            "To increase connection speed",
+            "To decrypt SSL traffic",
+            "To bypass CAPTCHAs"
+        ]
+    },
+    {
+        "q": "What does 'site:s3.amazonaws.com' search for?",
+        "o": [
+            "Publicly indexed AWS S3 buckets",
+            "Amazon shopping products",
+            "Amazon Prime movies",
+            "AWS console login"
+        ]
+    },
+    {
+        "q": "What is 'email permutation' used for?",
+        "o": [
+            "Guessing valid email formats based on names",
+            "Encrypting email contents",
+            "Blocking spam emails",
+            "Forwarding emails automatically"
+        ]
+    },
+    {
+        "q": "Which tool generates email permutations?",
+        "o": [
+            "Email-guesser tools",
+            "Nmap",
+            "Wireshark",
+            "Burp Suite"
+        ]
+    },
+    {
+        "q": "What is the value of 'LinkedIn' company pages?",
+        "o": [
+            "Shows employee structure and recent updates",
+            "Provides direct root access",
+            "Lists all firewall IPs",
+            "Shows server CPU usage"
+        ]
+    },
+    {
+        "q": "What does 'inurl:dashboard' potentially find?",
+        "o": [
+            "Administrative or user dashboards",
+            "Car dashboard images",
+            "Dashboard cleaning products",
+            "Dashboard widgets for desktop"
+        ]
+    },
+    {
+        "q": "What is the primary function of the 'ViewDNS.info' service?",
+        "o": [
+            "Providing a suite of web-based DNS and IP tools",
+            "Hosting malicious DNS servers",
+            "Encrypting DNS queries for privacy",
+            "Blocking ads on websites"
+        ]
+    },
+    {
+        "q": "Which command would you use to perform a reverse DNS lookup on a range of IPs using 'dnsrecon'?",
+        "o": [
+            "dnsrecon -r <IP_RANGE>",
+            "dnsrecon -d <DOMAIN>",
+            "dnsrecon -z <ZONE>",
+            "dnsrecon -s <SERVER>"
+        ]
+    },
+    {
+        "q": "What does the 'cache_snooping' technique in DNS reconnaissance involve?",
+        "o": [
+            "Determining if a specific record is in the DNS cache",
+            "Deleting the DNS cache of the target",
+            "Injecting false records into the cache",
+            "Encrypting the cache content"
+        ]
+    },
+    {
+        "q": "How can 'Automating OSINT' with Python scripts be beneficial?",
+        "o": [
+            "Processes large datasets faster than manual methods",
+            "Guarantees 100% accuracy of all data",
+            "Bypasses all legal restrictions automatically",
+            "Encrypts the results by default"
+        ]
+    },
+    {
+        "q": "What is the specialized use of the 'Dark Web' search engines in recon?",
+        "o": [
+            "Finding breached credentials and leaked data",
+            "Hosting the company website",
+            "Searching for standard SEO keywords",
+            "Testing firewall throughput"
+        ]
+    },
+    {
+        "q": "What does analyzing 'EXIF' data from a series of photos help establish?",
+        "o": [
+            "Movement patterns or typical locations of a target",
+            "The exact shutter speed used for each shot",
+            "The brand of the memory card used",
+            "The battery level of the camera"
+        ]
+    },
+    {
+        "q": "Which tool effectively maps the network path and identifies potential firewalls?",
+        "o": [
+            "Firewalk (or traceroute with analysis)",
+            "Ping",
+            "Netstat",
+            "Telnet"
+        ]
+    },
+    {
+        "q": "What information can be derived from 'publicly available business filings'?",
+        "o": [
+            "Key executives, shareholders, and physical addresses",
+            "Network router passwords",
+            "Server rack configurations",
+            "Employee browsing history"
+        ]
+    },
+    {
+        "q": "Why is 'User-Agent' spoofing important during web scraping for recon?",
+        "o": [
+            "To avoid being blocked by anti-bot protections",
+            "To speed up the download of images",
+            "To encrypt the HTML content",
+            "To bypass SSL certificate errors"
+        ]
+    },
+    {
+        "q": "What does a 'wildcard' certificate (*.example.com) indicate about the infrastructure?",
+        "o": [
+            "Provides encryption for all directly adjacent subdomains",
+            "Protects all domains on the entire internet",
+            "Encrypts only the root domain",
+            "Is invalid and insecure"
+        ]
+    },
+    {
+        "q": "Which 'Maltego' entity type represents a person's digital footprint?",
+        "o": [
+            "Person",
+            "Infrastructure",
+            "Location",
+            "Malware"
+        ]
+    },
+    {
+        "q": "What is the 'Wayback Machine's' limitation?",
+        "o": [
+            "It cannot archive pages that are blocked by robots.txt",
+            "It requires a paid subscription for any access",
+            "It only archives text, never images",
+            "It deletes data after 24 hours"
+        ]
+    },
+    {
+        "q": "How can 'GHDB' helps in finding vulnerable servers?",
+        "o": [
+            "Provides queries for specific vulnerable server versions",
+            "Automatically patches the servers",
+            "Generates exploits for the servers",
+            "Shuts down the vulnerable servers"
+        ]
+    },
+    {
+        "q": "What is the significance of investigating 'subsidiary' companies?",
+        "o": [
+            "They often have weaker security than the parent company",
+            "They generate more revenue",
+            "They have better logos",
+            "They use more advanced firewalls"
+        ]
+    },
+    {
+        "q": "Which specific record in DNSSEC provides the cryptographic signature?",
+        "o": [
+            "RRSIG",
+            "DNSKEY",
+            "NSEC",
+            "DS"
+        ]
+    },
+    {
+        "q": "What is 'typosquatting' protection often implemented as?",
+        "o": [
+            "Defensive domain registration of similar names",
+            "Blocking all traffic from foreign IPs",
+            "Using a complex domain name",
+            "Encrypting the domain name"
+        ]
+    },
+    {
+        "q": "What does 'site:linkedin.com/in/' target specifically?",
+        "o": [
+            "Personal user profiles",
+            "Company pages",
+            "Job postings",
+            "Group discussions"
+        ]
+    },
+    {
+        "q": "Why is identifying the 'hosting provider' relevant?",
+        "o": [
+            "Different providers have different security policies and protections",
+            "It tells you how much the company pays",
+            "It reveals the website template",
+            "It shows the CEO's email"
+        ]
+    },
+    {
+        "q": "What does 'EmailHeader' analysis reveal that is useful for recon?",
+        "o": [
+            "Internal IP addresses and mail server software",
+            "The sender's password",
+            "The recipient's browsing history",
+            "The content of the attachment"
+        ]
+    },
+    {
+        "q": "Which OSINT concept involves connecting seemingly unrelated data points?",
+        "o": [
+            "Correlation",
+            "Encryption",
+            "Deletion",
+            "Compression"
+        ]
+    },
+    {
+        "q": "What is 'Amass' known for in the reconnaissance field?",
+        "o": [
+            "In-depth subdomain enumeration using active and passive methods",
+            "Cracking WEP keys",
+            "Scanning for SQL injection",
+            "Brute-forcing RDP headers"
+        ]
+    },
+    {
+        "q": "What does the 'filetype:config' dork often reveal?",
+        "o": [
+            "Configuration files which may contain credentials",
+            "Website layout configurations",
+            "User interface settings",
+            "Printer configuration manuals"
+        ]
+    },
+    {
+        "q": "How does 'Shodan' gather its data?",
+        "o": [
+            "By scanning the entire IPv4 address space continuously",
+            "By hacking into servers",
+            "By asking admins for data",
+            "By reading emails"
+        ]
+    },
+    {
+        "q": "What is 'Censys' query language similar to?",
+        "o": [
+            "SQL or Lucene syntax",
+            "Python code",
+            "C++ code",
+            "HTML tags"
+        ]
+    },
+    {
+        "q": "What data can be mined from 'GitHub' commit history?",
+        "o": [
+            "Past code changes, potentially revealing removed keys",
+            "Future feature plans",
+            "Deleted user accounts",
+            "Private messages betwen devs"
+        ]
+    },
+    {
+        "q": "Whay is 'Pastebin' monitoring critical for organizations?",
+        "o": [
+            "To detect leaked credentials or proprietary code early",
+            "To find new coding tutorials",
+            "To share marketing materials",
+            "To backup configurations"
+        ]
+    },
+    {
+        "q": "What does 'ip:192.168.1.1' search for in Shodan?",
+        "o": [
+            "Devices with that specific IP address",
+            "Devices blocking that IP",
+            "Devices routing to that IP",
+            "Devices owned by that IP"
+        ]
+    },
+    {
+        "q": "What information does 'BGP' routing tables provide?",
+        "o": [
+            "Relationships between Autonomous Systems (AS)",
+            "Internal LAN switching paths",
+            "VPN tunnel encryption keys",
+            "Wi-Fi password hashes"
+        ]
+    },
+    {
+        "q": "Which tool can query multiple search engines simultaneously?",
+        "o": [
+            "Searx or meta-search tools",
+            "Single-site browser",
+            "Notepad++",
+            "File Explorer"
+        ]
+    },
+    {
+        "q": "What is the danger of 'exposed .git directory'?",
+        "o": [
+            "Attackers can reconstruct the entire source code history",
+            "It allows free git push access",
+            "It breaks the website styling",
+            "It changes the website content"
+        ]
+    },
+    {
+        "q": "What does 'site:s3-external-1.amazonaws.com' help find?",
+        "o": [
+            "Buckets in a specific AWS region",
+            "Amazon retail products",
+            "Amazon Prime videos",
+            "AWS root account login"
+        ]
+    },
+    {
+        "q": "Why map '3rd party dependencies' of a target website?",
+        "o": [
+            "To allow for supply chain attacks via vulnerable libraries",
+            "To optimize website loading speed",
+            "To mimic the site design",
+            "To apply for a job there"
+        ]
+    },
+    {
+        "q": "What is 'SOCMINT' best used for in a red team engagement?",
+        "o": [
+            "Building profiles for social engineering attacks",
+            "Direct code exploitation",
+            "Testing firewall rules",
+            "Reviewing physical locks"
+        ]
+    },
+    {
+        "q": "Which record helps identify the 'canonical' name of a service?",
+        "o": [
+            "CNAME",
+            "A",
+            "TXT",
+            "MX"
+        ]
+    },
+    {
+        "q": "What is the utility of 'reverse generic TLD' lookup?",
+        "o": [
+            "Finding all domains registered by a specific email",
+            "Finding the IP of a TLD",
+            "Registering a new TLD",
+            "Deleting a TLD"
+        ]
+    },
+    {
+        "q": "What can 'Google Trends' reveal about a target?",
+        "o": [
+            "Peaks in interest which might correlate with events",
+            "The CEO's password",
+            "The server's IP address",
+            "The exact number of employees"
+        ]
+    },
+    {
+        "q": "Why is 'metadata' scrubbing important for defenders?",
+        "o": [
+            "To prevent leakage of internal user and system info",
+            "To reduce file size only",
+            "To make files look cleaner",
+            "To increase file compatibility"
+        ]
+    },
+    {
+        "q": "What does 'fierce' tool specialize in?",
+        "o": [
+            "DNS reconnaissance and subdomain scanning",
+            "Wireless cracking",
+            "Web application firewall evasion",
+            "Password brute forcing"
+        ]
+    },
+    {
+        "q": "Which command in 'dig' requests a zone transfer?",
+        "o": [
+            "dig axfr @server domain",
+            "dig ns domain",
+            "dig mx domain",
+            "dig txt domain"
+        ]
+    },
+    {
+        "q": "What is the implication of 'open directory listings'?",
+        "o": [
+            "Allows attackers to browse and download server files",
+            "Improves user navigation experience",
+            "Speeds up server indexing",
+            "Secures the file system"
+        ]
+    },
+    {
+        "q": "What does 'inurl:wp-content' specifically target?",
+        "o": [
+            "WordPress powered websites",
+            "Joomla powered websites",
+            "Drupal powered websites",
+            "Custom PHP sites"
+        ]
+    },
+    {
+        "q": "How can 'favicon' hashes be used in recon?",
+        "o": [
+            "To identify frameworks or software versions via Shodan",
+            "To improve website aesthetics",
+            "To encrypt the website icon",
+            "To validate the SSL cert"
+        ]
+    },
+    {
+        "q": "What is 'OSINT' cycle?",
+        "o": [
+            "Planning, Gathering, Analyzing, Disseminating",
+            "Hacking, Cracking, Phishing, Sleeping",
+            "Scanning, Enumerating, Exploiting, Reporting",
+            "Coding, Testing, Deploying, Monitoring"
+        ]
+    },
+    {
+        "q": "Why is 'historical DNS' data valuable?",
+        "o": [
+            "It shows old IPs that might still be active or less secure",
+            "It proves who owns the domain today",
+            "It lists current open ports",
+            "It provides real-time traffic stats"
+        ]
+    },
+    {
+        "q": "What does finding a 'dev' subdomain often imply?",
+        "o": [
+            "A development environment with potentially weaker security",
+            "The main device of the network",
+            "A device driver download site",
+            "A devil-worshipping site"
+        ]
+    },
+    {
+        "q": "Which tool is useful for harvesting emails from LinkedIn?",
+        "o": [
+            "theHarvester (with modules) or specialized scrapers",
+            "Nmap",
+            "Wireshark",
+            "Metasploit"
+        ]
+    },
+    {
+        "q": "What is the risk of 'IDOR' found via passive crawling?",
+        "o": [
+            "Accessing unauthorized data by changing ID parameters",
+            "Crashing the server with too many requests",
+            "Injecting malicious SQL code",
+            "Stealing the admin cookie"
+        ]
+    },
+    {
+        "q": "What does 'site:docs.google.com' allow finding?",
+        "o": [
+            "Public Google Docs that might contain sensitive info",
+            "Google's own documentation",
+            "Google's privacy policy",
+            "Google's search settings"
+        ]
+    },
+    {
+        "q": "Why use 'VPN' or 'Tor' during passive recon?",
+        "o": [
+            "To mask the source IP and location involves anonymity",
+            "To increase connection speed",
+            "To encrypt local files",
+            "To access local LAN devices"
+        ]
+    },
+    {
+        "q": "What is 'grey box' recon?",
+        "o": [
+            "Having partial knowledge of the target",
+            "Having full knowledge",
+            "Having no knowledge",
+            "Using grey hat hacker tools"
+        ]
+    },
+    {
+        "q": "What does 'reconnaissance' phase precede in the kill chain?",
+        "o": [
+            "Weaponization",
+            "Installation",
+            "Command and Control",
+            "Actions on Objectives"
+        ]
+    },
+    {
+        "q": "What information does 'Common Crawl' provide?",
+        "o": [
+            "A massive archive of web crawl data",
+            "A list of common passwords",
+            "A list of common vulnerabilities",
+            "A map of common network ports"
+        ]
+    },
+    {
+        "q": "How can 'public keys' (PGP) be used for recon?",
+        "o": [
+            "To find email addresses associated with keys",
+            "To decrypt private messages",
+            "To sign malicious software",
+            "To bypass firewalls"
+        ]
+    },
+    {
+        "q": "What does 'intitle:\"index of\" backup' search for?",
+        "o": [
+            "Directories containing backup files",
+            "Backup software manuals",
+            "Database backup commands",
+            "Cloud backup login pages"
+        ]
+    },
+    {
+        "q": "Why is 'SSL Certificate Subject' interesting?",
+        "o": [
+            "It reveals the organization name and location",
+            "It contains the private key",
+            "It lists all user passwords",
+            "It shows the server CPU model"
+        ]
+    },
+    {
+        "q": "What is 'active' vs 'passive' OSINT?",
+        "o": [
+            "Active allows contact, Passive avoids contact",
+            "Active is faster, Passive is slower",
+            "Active is legal, Passive is illegal",
+            "Active uses Linux, Passive uses Windows"
+        ]
+    },
+    {
+        "q": "Which tool maps visuals of a website's structure?",
+        "o": [
+            "Visual site mappers or graph tools",
+            "Text editors",
+            "Hex editors",
+            "Audio players"
+        ]
+    },
+    {
+        "q": "What does 'site:gitlab.com' search for?",
+        "o": [
+            "Repositories hosted on GitLab",
+            "GitLab source code",
+            "GitLab login page",
+            "GitLab pricing"
+        ]
+    },
+    {
+        "q": "Why are 'default credentials' a target in recon?",
+        "o": [
+            "They are often left unchanged on new deployments",
+            "They are hard to guess",
+            "They are encrypted strongly",
+            "They expire quickly"
+        ]
+    },
+    {
+        "q": "What does 'filetype:xls password' find?",
+        "o": [
+            "Excel files potentially containing passwords",
+            "Password protected Excel files",
+            "Excel password recovery tools",
+            "Manuals on Excel passwords"
+        ]
+    },
+    {
+        "q": "What is 'DNS dumping'?",
+        "o": [
+            "Attempting to retrieve all zone records",
+            "Throwing away DNS records",
+            "Cleaning the DNS cache",
+            "restarting the DNS server"
+        ]
+    },
+    {
+        "q": "Which tool integrates with 'Shodan' via API?",
+        "o": [
+            "Many CLI tools and frameworks",
+            "None, it's web-only",
+            "Only web browsers",
+            "Only printed manuals"
+        ]
+    },
+    {
+        "q": "What does 'port:21' in Shodan search for?",
+        "o": [
+            "Devices with FTP port open",
+            "Devices with SSH port open",
+            "Devices with HTTP port open",
+            "Devices with 21 ports total"
+        ]
+    },
+    {
+        "q": "Why look for 'swagger.json' files?",
+        "o": [
+            "To understand API endpoints and structure",
+            "To find the developers' swagger",
+            "To download music",
+            "To watch videos"
+        ]
+    },
+    {
+        "q": "What does 'inurl:.git' search for?",
+        "o": [
+            "Exposed git folders",
+            "Git software download",
+            "Git tutorials",
+            "Git repository hosting"
+        ]
+    },
+    {
+        "q": "What implies a 'managed' DNS service?",
+        "o": [
+            "NS records pointing to a provider like Cloudflare",
+            "NS records pointing to localhost",
+            "No NS records",
+            "NS records pointing to IP 127.0.0.1"
+        ]
+    },
+    {
+        "q": "What is 'domain age' a factor for?",
+        "o": [
+            "Trustworthiness and potential filtering",
+            "Website loading speed",
+            "Font size on the page",
+            "Video quality"
+        ]
+    },
+    {
+        "q": "Which service checks if an email exists?",
+        "o": [
+            "Email verification services",
+            "Port scanners",
+            "Password crackers",
+            "File recovery tools"
+        ]
+    },
+    {
+        "q": "What does 'city:\"New York\"' in Shodan do?",
+        "o": [
+            "Filters results for devices in New York",
+            "Finds maps of New York",
+            "Finds flights to New York",
+            "Finds hotels in New York"
+        ]
+    },
+    {
+        "q": "Why are 'PDF' metadata often rich?",
+        "o": [
+            "They store author, creation date, and software version",
+            "They store the entire hard drive content",
+            "They store the printer IP",
+            "They store the Wi-Fi password"
+        ]
+    },
+    {
+        "q": "What indicates a 'soft' 404?",
+        "o": [
+            "A 200 OK response but with 'not found' content",
+            "A standard 404 response",
+            "A 500 error",
+            "A 301 redirect"
+        ]
+    },
+    {
+        "q": "What is the 'robots.txt' 'Disallow' directive?",
+        "o": [
+            "Instructions for bots not to visit specific paths",
+            "A firewall rule blocking IPs",
+            "A password for the admin panel",
+            "A command to delete files"
+        ]
+    },
+    {
+        "q": "Which tool is used for automated phone number recon?",
+        "o": [
+            "PhoneInfoga",
+            "Nmap",
+            "Nikto",
+            "Wireshark"
+        ]
+    },
+    {
+        "q": "What is 'username' reuse analysis?",
+        "o": [
+            "Checking if a username exists across multiple platforms",
+            "Reusing the same password",
+            "Sharing usernames with friends",
+            "Deleting old usernames"
+        ]
+    },
+    {
+        "q": "What is the benefit of 'satellite imagery' in recon?",
+        "o": [
+            "Verifying physical security measures and layout",
+            "Checking the weather",
+            "Counting cars in the parking lot",
+            "Finding the best parking spot"
+        ]
+    },
+    {
+        "q": "What does 'inurl:phpinfo.php' expose?",
+        "o": [
+            "Detailed PHP configuration and environment variables",
+            "PHP programming tutorials",
+            "PHP download page",
+            "PHP compiler errors"
+        ]
+    },
+    {
+        "q": "Why is 'source code' analysis considered passive?",
+        "o": [
+            "It analyzes publicly delivered content without attack payloads",
+            "It requires a login",
+            "It runs on the server",
+            "It changes the code"
+        ]
+    },
+    {
+        "q": "What does 'org:\"Company Name\"' filter do in Shodan?",
+        "o": [
+            "Shows devices belonging to that organization",
+            "Shows the company website",
+            "Shows the company address",
+            "Shows the company logo"
+        ]
+    },
+    {
+        "q": "What is 'certificate pinning' relevant to?",
+        "o": [
+            "Ensuring a client only accepts a specific certificate",
+            "Pinning a certificate to the wall",
+            "Printing a certificate",
+            "Deleting a certificate"
+        ]
+    },
+    {
+        "q": "What does finding 'AWS_ACCESS_KEY_ID' in code mean?",
+        "o": [
+            "A severe security leak of cloud credentials",
+            "A standard variable name",
+            "A comment in the code",
+            "A false positive"
+        ]
+    },
+    {
+        "q": "Which tool searches code repositories for secrets?",
+        "o": [
+            "TruffleHog or Gitleaks",
+            "Paint",
+            "Word",
+            "Excel"
+        ]
+    },
+    {
+        "q": "What relies on 'graphs' to show data links?",
+        "o": [
+            "Link analysis tools like Maltego",
+            "Text editors",
+            "Command prompts",
+            "Calculator apps"
+        ]
+    },
+    {
+        "q": "What is the primary output of 'traceroute'?",
+        "o": [
+            "List of router hops between source and destination",
+            "List of open ports",
+            "List of users logged in",
+            "List of installed software"
+        ]
+    },
+    {
+        "q": "Why check 'CN' (Common Name) in SSL certs?",
+        "o": [
+            "To ensure the certificate matches the domain",
+            "To check the expiration date",
+            "To see the issuer name",
+            "To find the encryption algorithm"
+        ]
+    },
+    {
+        "q": "What is 'domain fronting' related to?",
+        "o": [
+            "Using a high-reputation domain to hide C2 traffic",
+            "Buying a domain name",
+            "Designing a website front page",
+            "Hosting a website on the front end"
+        ]
+    },
+    {
+        "q": "What does 'site:.mil' restrict search to?",
+        "o": [
+            "US Military domains",
+            "Millionaire websites",
+            "Milk production sites",
+            "Miller company sites"
+        ]
+    },
+    {
+        "q": "What makes 'cloud buckets' discoverable?",
+        "o": [
+            "Predictable naming conventions and public indexing",
+            "They broadcast a signal",
+            "They are listed in a central directory",
+            "They send emails"
+        ]
+    },
+    {
+        "q": "What is 'web archiving' useful for in forensics?",
+        "o": [
+            "Preserving evidence of web content at a point in time",
+            "Saving disk space",
+            "Speeding up browsing",
+            "Filtering ads"
+        ]
+    },
+    {
+        "q": "Which command finds the IP of a host in Linux?",
+        "o": [
+            "host or dig",
+            "ipconf",
+            "showip",
+            "getip"
+        ]
+    },
+    {
+        "q": "What does 'grep' tool do in recon?",
+        "o": [
+            "Searches for patterns in text/logs",
+            "Downloads files",
+            "Compiles code",
+            "Plays music"
+        ]
+    },
+    {
+        "q": "Why verify 'email deliverability'?",
+        "o": [
+            "To confirm an email address is active",
+            "To read the email",
+            "To change the password",
+            "To delete the account"
+        ]
+    },
+    {
+        "q": "What is 'OSINT' primarily based on?",
+        "o": [
+            "Open Source, publicly available information",
+            "Classified documents",
+            "Stolen data",
+            "Private conversations"
+        ]
+    },
+    {
+        "q": "What does 'inurl:ftp' suggest?",
+        "o": [
+            "Sites running FTP services or having ftp in URL",
+            "File Transfer Protocol software",
+            "Free to play games",
+            "Fast track program"
+        ]
+    },
+    {
+        "q": "How does 'geo-location' via IP work?",
+        "o": [
+            "Maps IP ranges to physical locations via databases",
+            "Uses GPS chips in servers",
+            "Asks the user for location",
+            "Triangulates via cell towers"
+        ]
+    },
+    {
+        "q": "Who maintains the global DNS root zone?",
+        "o": [
+            "ICANN / IANA",
+            "Google",
+            "Microsoft",
+            "Apple"
+        ]
+    },
+    {
+        "q": "What does 'site:pastebin.com password' find?",
+        "o": [
+            "Pastes containing the word password",
+            "Pastebin login page",
+            "Pastebin pro account",
+            "Pastebin help"
+        ]
+    },
+    {
+        "q": "Why is 'passive' recon preferred initially?",
+        "o": [
+            "It is undetectable by the target",
+            "It is faster",
+            "It is easier",
+            "It is cheaper"
+        ]
+    },
+    {
+        "q": "Which tool provides a 'security report card' for domains?",
+        "o": [
+            "SecurityTrails or similar services",
+            "Nmap",
+            "Metasploit",
+            "Wireshark"
+        ]
+    },
+    {
+        "q": "What implies 'virtual hosting'?",
+        "o": [
+            "Multiple domains resolving to the same IP",
+            "Hosting in VR",
+            "Hosting on a single physical server dedicated",
+            "Hosting without an IP"
+        ]
+    },
+    {
+        "q": "What is 'cybersquatting' predominantly used for?",
+        "o": [
+            "Profiting from the goodwill of someone else's trademark",
+            "Scanning cybercafe networks",
+            "Squatting in server rooms physically",
+            "Building cyber defenses"
+        ]
+    },
+    {
+        "q": "How does 'HSTS' affect passive reconnaissance?",
+        "o": [
+            "It forces HTTPS, making interception of plain HTTP harder",
+            "It disables all HTTPS traffic",
+            "It broadcasts the server IP",
+            "It allows free SSL certs"
+        ]
+    },
+    {
+        "q": "What does 'site:drive.google.com' uncover?",
+        "o": [
+            "Publicly shared Google Drive files",
+            "Google Maps driving directions",
+            "Google Drive login",
+            "Drive driver software"
+        ]
+    },
+    {
+        "q": "Why is 'job board' scraping a valid recon tactic?",
+        "o": [
+            "It reveals internal software stacks and versions maintained",
+            "It's fun to read job descriptions",
+            "It helps find a new job for the attacker",
+            "It increases website traffic"
+        ]
+    },
+    {
+        "q": "What is the primary purpose of 'AlienVault OTX'?",
+        "o": [
+            "Crowdsourced threat intelligence and pulse sharing",
+            "Alien communication",
+            "Vault cracking software",
+            "Private VPN service"
+        ]
+    },
+    {
+        "q": "What does a 'CAA' DNS record specify?",
+        "o": [
+            "Which CAs are allowed to issue certificates for the domain",
+            "The canonical alias address",
+            "The contact admin address",
+            "The central authority authentication"
+        ]
+    },
+    {
+        "q": "Why are 'subdomain takeovers' possible?",
+        "o": [
+            "A CNAME points to a resource that has been deleted/released",
+            "The admin forgot the password",
+            "The domain expired",
+            "The DNS server crashed"
+        ]
+    },
+    {
+        "q": "Which search engine is best for finding IoT devices using banners?",
+        "o": [
+            "Shodan",
+            "Google",
+            "Bing",
+            "Yahoo"
+        ]
+    },
+    {
+        "q": "What does 'inurl:/proc/self/cwd' target?",
+        "o": [
+            "LFI vulnerabilities exposing current working directory",
+            "Process management dashboard",
+            "Production selfie uploads",
+            "Proactive security scanning"
+        ]
+    },
+    {
+        "q": "What does 'site:ideone.com' potentially reveal?",
+        "o": [
+            "Code snippets posted by developers",
+            "One idea generation tool",
+            "Identity verification site",
+            "IDE software download"
+        ]
+    },
+    {
+        "q": "How can 'favicon.ico' analysis identify a framework?",
+        "o": [
+            "By calculating its hash and comparing to known signatures",
+            "By looking at the colors",
+            "By reading the text on the icon",
+            "By checking file size only"
+        ]
+    },
+    {
+        "q": "What is 'passive' fingerprinting of TCP stacks?",
+        "o": [
+            "Analyzing initial packet window sizes and TTLs",
+            "Sending SYN packets",
+            "Sending FIN packets",
+            "Connecting via Telnet"
+        ]
+    },
+    {
+        "q": "What does 'site:npm.taobao.org' search for?",
+        "o": [
+            "Packages in a specific NPM mirror",
+            "Taobao shopping items",
+            "New Packages Manager download",
+            "Node.js tutorials"
+        ]
+    },
+    {
+        "q": "Why monitor 'new domain registrations' similar to target?",
+        "o": [
+            "To detect phishing campaigns against the target early",
+            "To buy them first",
+            "To congratulations the owner",
+            "To increase internet size"
+        ]
+    },
+    {
+        "q": "What does 'intext:\"Index of /\" +passwd' find?",
+        "o": [
+            "Directory listing containing 'passwd' file",
+            "Password index page",
+            "Index of all passwords",
+            "Password generator"
+        ]
+    },
+    {
+        "q": "What is 'ZoomEye'?",
+        "o": [
+            "A cyberspace search engine similar to Shodan",
+            "A video conferencing tool",
+            "A magnifying glass app",
+            "An eye tracking software"
+        ]
+    },
+    {
+        "q": "What does 'site:digitalocean.com' help find?",
+        "o": [
+            "Community tutorials or hosted assets",
+            "Digital ocean wallpaper",
+            "Oceanography data",
+            "Digital clock software"
+        ]
+    },
+    {
+        "q": "Why is 'paste monitoring' important for blue teams?",
+        "o": [
+            "To catch data leaks before they are widely exploited",
+            "To copy code snippets",
+            "To monitoring glue quality",
+            "To track paste consumption"
+        ]
+    },
+    {
+        "q": "What does 'filetype:env' search for?",
+        "o": [
+            "Environment configuration files typically containing keys",
+            "Environmental reports",
+            "Envelope templates",
+            "Envision software files"
+        ]
+    },
+    {
+        "q": "What is 'URLScan.io' uses for?",
+        "o": [
+            "Scanning and analyzing websites and their interactions",
+            "Scanning barcode URLs",
+            "Scanning for viruses on local PC",
+            "Scanning physical documents"
+        ]
+    },
+    {
+        "q": "How can 'analytics ID' (e.g., UA-XXXX) be used in recon?",
+        "o": [
+            "To find other domains owned by the same entity",
+            "To improve SEO ranking",
+            "To login to Google Analytics",
+            "To track user mouse movements"
+        ]
+    },
+    {
+        "q": "What implies a 'flat' network topology from recon?",
+        "o": [
+            "Lack of segmentation often visible in IP ranges",
+            "The network cables are flat",
+            "The map is 2D",
+            "All computers are laptops"
+        ]
+    },
+    {
+        "q": "What does 'site:codepen.io' reveal?",
+        "o": [
+            "Front-end code snippets and potential logic leaks",
+            "Pen testing code",
+            "Code breaking tools",
+            "Pens for coding"
+        ]
+    },
+    {
+        "q": "What is 'enumerate' in recon terms?",
+        "o": [
+            "To list and identify items systematically",
+            "To number pages",
+            "To count money",
+            "To estimate vaguely"
+        ]
+    },
+    {
+        "q": "Why look for 'swagger-ui' endpoint?",
+        "o": [
+            "To access interactive API documentation",
+            "To find user interface themes",
+            "To download swagger music",
+            "To chat with support"
+        ]
+    },
+    {
+        "q": "What does 'inurl:server-status' target?",
+        "o": [
+            "Apache server status page",
+            "A status update on social media",
+            "Server rack status lights",
+            "Server purchase status"
+        ]
+    },
+    {
+        "q": "What does 'filetype:pem' find?",
+        "o": [
+            "Privacy Enhanced Mail files potentially keys",
+            "Permission files",
+            "Permanent files",
+            "Performance logs"
+        ]
+    },
+    {
+        "q": "What is the risk of 'wildcard' cookies?",
+        "o": [
+            "They are accessible by all subdomains",
+            "They are very tasty",
+            "They never expire",
+            "They are always encrypted"
+        ]
+    },
+    {
+        "q": "Which tool tracks 'DNS propagation'?",
+        "o": [
+            "DNSChecker or similar global monitoring tools",
+            "Local ping command",
+            "Task Manager",
+            "System Monitor"
+        ]
+    },
+    {
+        "q": "What is 'VisualPing' used for in recon?",
+        "o": [
+            "Monitoring visual changes on a website",
+            "Pinging visually",
+            "Testing screen brightness",
+            "Optimizing images"
+        ]
+    },
+    {
+        "q": "What does 'intext:\"DB_PASSWORD\"' search for?",
+        "o": [
+            "Hardcoded database passwords in source/config",
+            "Database password policy",
+            "Database connection error",
+            "Database admin name"
+        ]
+    },
+    {
+        "q": "Why are 'mobile app stores' a recon target?",
+        "o": [
+            "To download APKs/IPAs for reverse engineering",
+            "To buy games",
+            "To rate the app 1 star",
+            "To find the developer's phone number"
+        ]
+    },
+    {
+        "q": "What does 'site:azurewebsites.net' find?",
+        "o": [
+            "Applications hosted on Azure default domains",
+            "Microsoft Azure login",
+            "Azure sky images",
+            "Azure pricing calculator"
+        ]
+    },
+    {
+        "q": "What is identifying 'Wappalyzer' output?",
+        "o": [
+            "Technology stack used on the website",
+            "Wrapping paper designs",
+            "Mobile app analytics",
+            "Server CPU temperature"
+        ]
+    },
+    {
+        "q": "How does 'security.txt' assist ethical hackers?",
+        "o": [
+            "Provides contact info for reporting vulnerabilities",
+            "Lists all vulnerabilities",
+            "Provides the admin password",
+            "Blocks all hackers"
+        ]
+    },
+    {
+        "q": "What does 'inurl:web.config' find?",
+        "o": [
+            "IIS configuration files",
+            "Web design configuration",
+            "Web browser config",
+            "Web spider config"
+        ]
+    },
+    {
+        "q": "What does 'site:bitbucket.org' search for?",
+        "o": [
+            "Public repositories on Bitbucket",
+            "Buckets of bits",
+            "Bitcoin wallets",
+            "Bucket list ideas"
+        ]
+    },
+    {
+        "q": "Why check 'sanitized' vs 'unsanitized' inputs conceptually?",
+        "o": [
+            "To identify potential injection points",
+            "To clean the keyboard",
+            "To follow hygiene protocols",
+            "To pass a health inspection"
+        ]
+    },
+    {
+        "q": "What is a 'look-alike' domain strategy?",
+        "o": [
+            "Registering rnicrosoft.com instead of microsoft.com",
+            "Copying the website look",
+            "Using the same logo",
+            "Using the same colors"
+        ]
+    },
+    {
+        "q": "What does 'intitle:\"curriculum vitae\"' find?",
+        "o": [
+            "Resumes/CVs containing personal details",
+            "School curriculums",
+            "Vitamin C info",
+            "Circular logic"
+        ]
+    },
+    {
+        "q": "What capabilities does 'Recon-ng' have?",
+        "o": [
+            "Modules for contacts, credentials, companies, domains",
+            "Modules for space exploration",
+            "Modules for cooking",
+            "Modules for driving"
+        ]
+    },
+    {
+        "q": "What does 'site:herokuapp.com' reveal?",
+        "o": [
+            "Apps deployed on Heroku free tier/default domains",
+            "Hero images",
+            "Heroic acts",
+            "Heroku login"
+        ]
+    },
+    {
+        "q": "Why analyze 'client-side' JavaScript files?",
+        "o": [
+            "To find API keys or hidden endpoints",
+            "To learn JavaScript",
+            "To speed up the browser",
+            "To block ads"
+        ]
+    },
+    {
+        "q": "What does 'inurl:/.git/config' target?",
+        "o": [
+            "The Git configuration file specifically",
+            "Git download page",
+            "GitHub home page",
+            "Git tutorial video"
+        ]
+    },
+    {
+        "q": "What does 'Linkdin' scraping provide for social engineering?",
+        "o": [
+            "Target roles, email formats, and hierarchies",
+            "Free resume templates",
+            "Job offers",
+            "Motivational quotes"
+        ]
+    },
+    {
+        "q": "What is 'domain expiration' monitoring good for?",
+        "o": [
+            "Snatching domains or detecting abandoned assets",
+            "Attending the expiration party",
+            "Sending renewal reminders",
+            "Deleting the internet"
+        ]
+    },
+    {
+        "q": "What does 'site:firebaseio.com' search for?",
+        "o": [
+            "Open Firebase databases",
+            "Fire safety tips",
+            "Base jumping videos",
+            "Firewall baselines"
+        ]
+    },
+    {
+        "q": "How can 'historical WHOIS' reveal the true owner?",
+        "o": [
+            "Privacy protection might have been enabled late",
+            "It shows the future owner",
+            "It decrypts the privacy shield",
+            "It asks the current owner"
+        ]
+    },
+    {
+        "q": "What does 'Intelx.io' specialize in?",
+        "o": [
+            "Intelligence X: searching darknet and public data",
+            "Intel CPU manufacturing",
+            "Intelligent xylophones",
+            "International X-rays"
+        ]
+    },
+    {
+        "q": "Why is 'SSL Tls Version' checking important?",
+        "o": [
+            "To identify support for deprecated/insecure protocols",
+            "To check internet speed",
+            "To see the lock icon",
+            "To read the certificate text"
+        ]
+    },
+    {
+        "q": "What does 'site:jsfiddle.net' reveal?",
+        "o": [
+            "JavaScript fiddles/prototypes by developers",
+            "Fiddle music",
+            "JavaScript tutorials",
+            "Net fishing tools"
+        ]
+    },
+    {
+        "q": "What is 'dork' in hacking slang?",
+        "o": [
+            "A specialized search query to find vulnerabilities",
+            "A clumsy hacker",
+            "A standard password",
+            "A sophisticated virus"
+        ]
+    },
+    {
+        "q": "What does 'intext:\"API_SECRET\"' search for?",
+        "o": [
+            "Hardcoded API secrets",
+            "API documentation",
+            "Secret societies",
+            "Secret message encoding"
+        ]
+    },
+    {
+        "q": "Why check 'headers' of email responses?",
+        "o": [
+            "To trace the originating IP and hops",
+            "To check for spelling errors",
+            "To see the font style",
+            "To find the subject line"
+        ]
+    },
+    {
+        "q": "What is 'hunter.io' verify feature?",
+        "o": [
+            "Checking if an email is deliverable",
+            "Hunting for bugs",
+            "Verifying hunters license",
+            "Checking connection speed"
+        ]
+    },
+    {
+        "q": "What does 'site:repl.it' find?",
+        "o": [
+            "Public REPLs (code sandboxes)",
+            "Reptiles",
+            "Replicas of websites",
+            "Reply button images"
+        ]
+    },
+    {
+        "q": "What indicates a 'parked' domain?",
+        "o": [
+            "Generic landing content with ads, no real site",
+            "A car icon",
+            "A green checkmark",
+            "A 404 error"
+        ]
+    },
+    {
+        "q": "What does 'ext:bkf' find?",
+        "o": [
+            "Microsoft Backup Files",
+            "Breakfast recipes",
+            "Background files",
+            "Black kite folders"
+        ]
+    },
+    {
+        "q": "Why look for 'trace.axd'?",
+        "o": [
+            "ASP.NET trace utility leaking info",
+            "Drawing trace tool",
+            "GPS trace log",
+            "Printer trace setup"
+        ]
+    },
+    {
+        "q": "What does 'inurl:composer.json' reveal?",
+        "o": [
+            "PHP dependency list and versions",
+            "Music composer software",
+            "Json viewer tool",
+            "Composition notebook"
+        ]
+    },
+    {
+        "q": "What is the utility of 'censys.io' certificates view?",
+        "o": [
+            "Finding all Hosts utilizing a specific cert",
+            "Creating new certs",
+            "Revoking certs",
+            "Deleting certs"
+        ]
+    },
+    {
+        "q": "What does 'site:stackoverflow.com' combined with 'company name' find?",
+        "o": [
+            "Developers asking questions about internal tech stack",
+            "Company job ads only",
+            "Stock overflow errors",
+            "Stacking boxes tips"
+        ]
+    },
+    {
+        "q": "What is 'OSINT' not?",
+        "o": [
+            "Hacking into private servers illegally",
+            "Gathering public info",
+            "Analyzing public data",
+            "Searching databases"
+        ]
+    },
+    {
+        "q": "What does 'filetype:sql' search for?",
+        "o": [
+            "SQL database dumps or scripts",
+            "Sequel movie scripts",
+            "Squared lines",
+            "Squirrel photos"
+        ]
+    },
+    {
+        "q": "What does 'intitle:\"ganglia\"' find?",
+        "o": [
+            "Ganglia distributed monitoring system interface",
+            "Ganglion cyst info",
+            "Gang activity reports",
+            "Gangway signs"
+        ]
+    },
+    {
+        "q": "Why check 'MX' records for a web recon?",
+        "o": [
+            "To see if they use Google, O365, or on-prem email",
+            "To check web page speed",
+            "To find the web server OS",
+            "To validate HTML"
+        ]
+    },
+    {
+        "q": "What does 'intext:\"Index of /\" .bash_history' target?",
+        "o": [
+            "Exposed bash history files",
+            "Bash scripting tutorials",
+            "History of Bash street",
+            "Bash shell download"
+        ]
+    },
+    {
+        "q": "What does 'site:codeshare.io' find?",
+        "o": [
+            "Shared code snippets in real-time",
+            "Sharing codes for games",
+            "Code of conduct",
+            "Share prices"
+        ]
+    },
+    {
+        "q": "Who is the 'Registrar' vs 'Registry'?",
+        "o": [
+            "Registrar sells domains, Registry manages TLD database",
+            "Registrar manages TLD, Registry sells domains",
+            "They are the same",
+            "Neither exists"
+        ]
+    },
+    {
+        "q": "What does 'site:ghostbin.com' find?",
+        "o": [
+            "Pastes on Ghostbin",
+            "Ghost sightings",
+            "Bin collection days",
+            "Ghost hunting gear"
+        ]
+    },
+    {
+        "q": "What implies 'Cloudflare' usage in recon?",
+        "o": [
+            "Nameservers like 'coco.ns.cloudflare.com'",
+            "Clear sky icons",
+            "Cloud shapes",
+            "Flare gun images"
+        ]
+    },
+    {
+        "q": "What does 'ext:ovpn' find?",
+        "o": [
+            "OpenVPN configuration files",
+            "Oven recipes",
+            "Overpowered video notes",
+            "Oval patterns"
+        ]
+    },
+    {
+        "q": "What is the goal of 'Attack Surface Mapping'?",
+        "o": [
+            "Identifying all possible points of entry",
+            "Drawing a map of the office",
+            "Attacking the surface of the desk",
+            "Mapping the surface of the moon"
+        ]
+    },
+    {
+        "q": "What does 'inurl:package.json' find?",
+        "o": [
+            "Node.js package dependencies",
+            "Package tracking info",
+            "Packaging tape instructions",
+            "Packing lists"
+        ]
+    },
+    {
+        "q": "What can 'server banners' be changed to?",
+        "o": [
+            "Misleading info to confuse attackers",
+            "Advertisements",
+            "Cool ASCII art",
+            "Nothing, they are hardcoded"
+        ]
+    },
+    {
+        "q": "What is 'passive' traffic analysis?",
+        "o": [
+            "Listening to traffic without modifying it",
+            "Stopping traffic",
+            "Redirecting traffic",
+            "Creating traffic"
+        ]
+    },
+    {
+        "q": "What does 'site:aws.amazon.com' find?",
+        "o": [
+            "AWS documentation and public pages",
+            "Amazon shopping cart",
+            "Amazon river map",
+            "Amazing stories"
+        ]
+    },
+    {
+        "q": "Why is 'contact us' form analysis useful?",
+        "o": [
+            "Reveals email addresses and potential logic flaws",
+            "To send fan mail",
+            "To complain about service",
+            "To ask for a job"
+        ]
+    },
+    {
+        "q": "What does 'filetype:kdbx' find?",
+        "o": [
+            "KeePass database files",
+            "Kids database x-ray",
+            "Keyboard driver x",
+            "Key distribution box"
+        ]
+    },
+    {
+        "q": "What does 'intitle:\"Network Camera\"' find?",
+        "o": [
+            "Exposed IP camera interfaces",
+            "Camera shopping sites",
+            "Network diagrams",
+            "Camera manual pdfs"
+        ]
+    },
+    {
+        "q": "What is the use of 'CT' logs (Certificate Transparency)?",
+        "o": [
+            "To allow public auditing of all issued certs",
+            "To transparently encrypt data",
+            "To clear transparency history",
+            "To print on transparencies"
+        ]
+    },
+    {
+        "q": "What does 'inurl:/server-info' target?",
+        "o": [
+            "Apache server info page",
+            "Server sales info",
+            "Information server login",
+            "Serve info command"
+        ]
+    },
+    {
+        "q": "What is 'Google Alerts' useful for in OSINT?",
+        "o": [
+            "Monitoring mentions of a target in real-time",
+            "Waking up the hacker",
+            "Alerting Google to bugs",
+            "Google's own alarm clock"
+        ]
+    },
+    {
+        "q": "What does 'ext:rdp' find?",
+        "o": [
+            "Remote Desktop Protocol configuration files",
+            "Red Data Plan",
+            "Rapid Development Platform",
+            "Read Data Port"
+        ]
+    },
+    {
+        "q": "What does 'site:intercom.io' find?",
+        "o": [
+            "Intercom help centers for companies",
+            "Intercom systems for sale",
+            "Internal communication logs",
+            "Internet committee site"
+        ]
+    },
+    {
+        "q": "What is 'DNS cache spoofing' similar to?",
+        "o": [
+            "DNS poisoning",
+            "DNS securing",
+            "DNS flushing",
+            "DNS backing up"
+        ]
+    },
+    {
+        "q": "What does 'filetype:ppk' find?",
+        "o": [
+            "PuTTY Private Key files",
+            "PowerPoint Key",
+            "Personal Protection Kit",
+            "Payload Package"
+        ]
+    },
+    {
+        "q": "Why analyze 'HTML comments'?",
+        "o": [
+            "Developers often leave sensitive notes",
+            "To comment on the design",
+            "To chat with other users",
+            "To rate the page"
+        ]
+    },
+    {
+        "q": "What does 'inurl:jenkins' find?",
+        "o": [
+            "Jenkins CI/CD servers",
+            "Jenkins butler service",
+            "Jen Kins profiles",
+            "Jenkins text editor"
+        ]
+    },
+    {
+        "q": "What is a 'burned' bridge/IP?",
+        "o": [
+            "An IP that has been blocked/blacklisted",
+            "A fire hazard",
+            "A fast network bridge",
+            "A bridge made of wood"
+        ]
+    },
+    {
+        "q": "What does 'inurl:jmx-console' find?",
+        "o": [
+            "JBoss JMX console",
+            "JMX mixing console",
+            "Java Matrix",
+            "Jump Max X"
+        ]
+    },
+    {
+        "q": "What does 'site:box.com' find?",
+        "o": [
+            "Public Box shared files",
+            "Box packaging company",
+            "Boxing matches",
+            "Box layouts"
+        ]
+    },
+    {
+        "q": "What is 'recon' short for?",
+        "o": [
+            "Reconnaissance",
+            "Reconciliation",
+            "Reconsideration",
+            "Reconstruction"
+        ]
+    },
+    {
+        "q": "What is the primary function of 'Amass' enum -active flag?",
+        "o": [
+            "Enables active reconnaissance methods to validate findings",
+            "Deletes all findings",
+            "Encrypts the results",
+            "Updates the tool"
+        ]
+    },
+    {
+        "q": "What does 'ASN' stands for?",
+        "o": [
+            "Autonomous System Number",
+            "Apple Serial Number",
+            "Address System Name",
+            "Advanced Security Network"
+        ]
+    },
+    {
+        "q": "Which tool is known for visualizing complex data relationships in graphs?",
+        "o": [
+            "Maltego",
+            "Notepad",
+            "Calculator",
+            "Paint"
+        ]
+    },
+    {
+        "q": "What does 'shodan search --fields ip_str,port,org' do?",
+        "o": [
+            "Searches and returns specific fields like IP, port, and Org",
+            "Deletes Shodan database",
+            "Hacks the listed IPs",
+            "Scans local ports"
+        ]
+    },
+    {
+        "q": "What does the 'source' command in 'Recon-ng' do?",
+        "o": [
+            "Loads a script file to execute commands",
+            "Shows the source code of the tool",
+            "Connects to the source",
+            "Deletes the source"
+        ]
+    },
+    {
+        "q": "What is 'Censys' DSL?",
+        "o": [
+            "The Domain Specific Language used for querying",
+            "Digital Subscriber Line",
+            "Data Security Layer",
+            "Domain Secure Link"
+        ]
+    },
+    {
+        "q": "Why is 'certificate transparency' monitoring 'passive'?",
+        "o": [
+            "It involves querying public logs, not the target server",
+            "It requires a password",
+            "It is slow",
+            "It is done by robots"
+        ]
+    },
+    {
+        "q": "What does 'spiderfoot -s <target>' command start?",
+        "o": [
+            "A scan against the specified target",
+            "A spider simulation",
+            "A foot race",
+            "A system shutdown"
+        ]
+    },
+    {
+        "q": "What is 'metadata' in a DOCX file?",
+        "o": [
+            "Author, edit time, and revision history properties",
+            "The text content only",
+            "The file icon",
+            "The font style"
+        ]
+    },
+    {
+        "q": "What does 'exiftool -all= image.jpg' do?",
+        "o": [
+            "Removes all metadata tags from the image",
+            "Adds all metadata tags",
+            "Enciphers the image",
+            "Prints the image"
+        ]
+    },
+    {
+        "q": "What does 'theHarvester -d domain -b google' specify?",
+        "o": [
+            "Search the given domain using Google as the source",
+            "Search Google for the domain",
+            "Hack Google",
+            "Buy the domain from Google"
+        ]
+    },
+    {
+        "q": "What is a 'reverse whois' search?",
+        "o": [
+            "Finding domains owned by a specific person/email",
+            "Finding the person who owns a domain",
+            "Deleting a domain",
+            "Changing domain ownership"
+        ]
+    },
+    {
+        "q": "What does 'dnsrecon -d domain -t std' perform?",
+        "o": [
+            "Standard enumeration including SOA, NS, A, AAAA, MX",
+            "Standard deviation calculation",
+            "Standard time measurement",
+            "Standard text formatting"
+        ]
+    },
+    {
+        "q": "Why use 'proxychains' with recon tools?",
+        "o": [
+            "To route traffic through proxies for anonymity",
+            "To chain multiple tools together",
+            "To lock the proxy settings",
+            "To speed up the connection"
+        ]
+    },
+    {
+        "q": "What does 'site:gitlab.com \"password\"' search for?",
+        "o": [
+            "Passwords exposed in public GitLab repositories",
+            "GitLab password reset",
+            "GitLab login",
+            "GitLab password policy"
+        ]
+    },
+    {
+        "q": "What is 'passive' fingerprinting of a WAF?",
+        "o": [
+            "Analyzing cookie names and header responses",
+            "Sending attack payloads",
+            "Asking the WAF vendor",
+            "Looking at the firewall hardware"
+        ]
+    },
+    {
+        "q": "What does 'inurl:phpmyadmin/index.php' find?",
+        "o": [
+            "Exposed phpMyAdmin login interfaces",
+            "PHP admin tutorials",
+            "Index of PHP files",
+            "My PHP code"
+        ]
+    },
+    {
+        "q": "How does 'Whois history' help in attribution?",
+        "o": [
+            "Identifying previous owners or unredacted contact info",
+            "Predicting future owners",
+            "Validating the current IP",
+            "Checking site ranking"
+        ]
+    },
+    {
+        "q": "What is 'socmint' short for?",
+        "o": [
+            "Social Media Intelligence",
+            "Social Minting",
+            "Society Mint",
+            "Socket Mint"
+        ]
+    },
+    {
+        "q": "What does 'foca' tool primarily extract?",
+        "o": [
+            "Metadata from public documents",
+            "Focal points of images",
+            "Focus settings",
+            "Folder capacity"
+        ]
+    },
+    {
+        "q": "What is 'Shodan' API key used for?",
+        "o": [
+            "Authenticating programmatic requests to Shodan",
+            "Encrypting the search",
+            "Unlocking the Shodan website",
+            "Generating a password"
+        ]
+    },
+    {
+        "q": "What does 'nuclei -t technologies' do?",
+        "o": [
+            "Scans using templates to detect technologies",
+            "Scans for nuclear weapons",
+            "Scans specifically for text",
+            "Scans for new files"
+        ]
+    },
+    {
+        "q": "What is 'GitRob' used for?",
+        "o": [
+            "Scanning GitHub organizations for sensitive files",
+            "Robbing banks",
+            "Stealing git repos",
+            "Automating git commits"
+        ]
+    },
+    {
+        "q": "What does 'link:domain.com -site:domain.com' find?",
+        "o": [
+            "External inbound links to the domain",
+            "Internal links",
+            "Broken links",
+            "Missing links"
+        ]
+    },
+    {
+        "q": "What implies 'virtual host' routing?",
+        "o": [
+            "Host header determines which site is served on shared IP",
+            "Virtual reality hosting",
+            "Ghost hosting",
+            "Hosting without a server"
+        ]
+    },
+    {
+        "q": "What does 'site:*.*.edu' find?",
+        "o": [
+            "Subdomains of any educational institution",
+            "Education sites only",
+            "Educated people",
+            "Educational software"
+        ]
+    },
+    {
+        "q": "What is 'subbucket' used for?",
+        "o": [
+            "Enumerating S3 buckets via subdomains",
+            "Submarines",
+            "Bucketing water",
+            "Subdirectory scanning"
+        ]
+    },
+    {
+        "q": "What does 'inurl:main.yml' often reveal?",
+        "o": [
+            "Ansible playbooks or CI/CD workflow files",
+            "Main menu configuration",
+            "Maintenance logs",
+            "Main street addresses"
+        ]
+    },
+    {
+        "q": "Why is 'favicon' hashing reliable?",
+        "o": [
+            "Favicons rarely change even if other headers do",
+            "It is encrypted",
+            "It is colorful",
+            "It is cached"
+        ]
+    },
+    {
+        "q": "What is 'OSINT' regarding 'People'?",
+        "o": [
+            "Finding social profiles, emails, and physical addresses",
+            "People watching",
+            "Hiring people",
+            "Talking to people"
+        ]
+    },
+    {
+        "q": "What does 'site:bit.ly' search for?",
+        "o": [
+            "Shortened links that might be public",
+            "Bitcoins",
+            "Little bits",
+            "Bittorents"
+        ]
+    },
+    {
+        "q": "What is 'CloudFail' tool used for?",
+        "o": [
+            "Unmasking real IPs behind Cloudflare",
+            "Failing cloud uploads",
+            "Testing cloud speed",
+            "Crashing cloud servers"
+        ]
+    },
+    {
+        "q": "What does 'inurl:elastic' find?",
+        "o": [
+            "Potentially exposed Elasticsearch clusters",
+            "Elastic bands",
+            "Elasticity physics",
+            "Elastic webbing"
+        ]
+    },
+    {
+        "q": "What is 'passive' DNS replication?",
+        "o": [
+            "Database of DNS query results built by sensors",
+            "Replicating DNA",
+            "Copying DNS settings manually",
+            "Printing DNS records"
+        ]
+    },
+    {
+        "q": "What does 'intitle:\"index of\" id_rsa' find?",
+        "o": [
+            "Directory listing containing SSH private keys",
+            "Index of ideas",
+            "RSA algorithm explanation",
+            "Encryption software"
+        ]
+    },
+    {
+        "q": "What is 'Sherlock' tool used for?",
+        "o": [
+            "Hunting usernames across social platforms",
+            "Solving crimes",
+            "Reading books",
+            "Watching movies"
+        ]
+    },
+    {
+        "q": "What does 'site:s3.amazonaws.com keyword' find?",
+        "o": [
+            "S3 buckets containing the keyword",
+            "Amazon products",
+            "Keyword research tools",
+            "Cloud storage pricing"
+        ]
+    },
+    {
+        "q": "What is 'Recon' phase goal?",
+        "o": [
+            "Gather information to plan the attack",
+            "Launch the attack",
+            "Clean up traces",
+            "Install malware"
+        ]
+    },
+    {
+        "q": "What does 'inurl:dashboard.html' find?",
+        "o": [
+            "Dashboard pages",
+            "HTML tutorials",
+            "Board games",
+            "Dashing designs"
+        ]
+    },
+    {
+        "q": "What is 'email harvesting'?",
+        "o": [
+            "Collecting email addresses for phishing/attacks",
+            "Farming emails",
+            "Sending emails",
+            "Deleting emails"
+        ]
+    },
+    {
+        "q": "What does 'filetype:xls username' find?",
+        "o": [
+            "Excel files containing usernames",
+            "Username generation tools",
+            "Excel user manuals",
+            "User profile pictures"
+        ]
+    },
+    {
+        "q": "What is 'A' record?",
+        "o": [
+            "maps domain to IPv4",
+            "maps domain to IPv6",
+            "maps domain to mail server",
+            "maps domain to text"
+        ]
+    },
+    {
+        "q": "What implies a 'honeypot' during recon?",
+        "o": [
+            "Open ports that imply vulnerable services but are traps",
+            "Sweet honey",
+            "A bear trap",
+            "A sticky pot"
+        ]
+    },
+    {
+        "q": "What does 'site:target.com -www' find?",
+        "o": [
+            "Subdomains other than www",
+            "The www site only",
+            "Nothing",
+            "The whole internet"
+        ]
+    },
+    {
+        "q": "What allows 'zone transfer'?",
+        "o": [
+            "Misconfigured DNS server allowing AXFR",
+            "Strong firewall",
+            "Secure password",
+            "Encrypted connection"
+        ]
+    },
+    {
+        "q": "What does 'inurl:wsdl' find?",
+        "o": [
+            "Web Service Description Language files",
+            "Web design links",
+            "Windows system files",
+            "Wide search download"
+        ]
+    },
+    {
+        "q": "What is 'censys' based on?",
+        "o": [
+            "ZMap and Scans.io data",
+            "Google data",
+            "Bing data",
+            "Yahoo data"
+        ]
+    },
+    {
+        "q": "What does 'related:example.com' find?",
+        "o": [
+            "Related websites",
+            "Relatives of the owner",
+            "Relational databases",
+            "Relaxing music"
+        ]
+    },
+    {
+        "q": "Why check 'txt' records?",
+        "o": [
+            "SPF, DKIM, and verification strings",
+            "To read messages",
+            "To see the font",
+            "To check spelling"
+        ]
+    },
+    {
+        "q": "What is 'OSINT' gathering?",
+        "o": [
+            "Collecting open source intelligence",
+            "Gathering oscars",
+            "Open source integration",
+            "Operating system internal"
+        ]
+    },
+    {
+        "q": "What does 'cache:example.com' show?",
+        "o": [
+            "Cached version of the page",
+            "Cash price",
+            "Cat pictures",
+            "Catchy tunes"
+        ]
+    },
+    {
+        "q": "What is 'Netcraft' toolbar?",
+        "o": [
+            "Browser extension for site info and risk rating",
+            "Toolbar for craftsmanship",
+            "Networking tool",
+            "Fishing net"
+        ]
+    },
+    {
+        "q": "What does 'site:github.com target' find?",
+        "o": [
+            "Code repositories related to target",
+            "GitHub login",
+            "Git tutorials",
+            "Target stores"
+        ]
+    },
+    {
+        "q": "Why search 'stackoverflow'?",
+        "o": [
+            "To find tech stack details from employee questions",
+            "To find cooking recipes",
+            "To stack pamphlets",
+            "To flow charts"
+        ]
+    },
+    {
+        "q": "What does 'ip:1.2.3.4' in Shodan find?",
+        "o": [
+            "Info about that specific IP",
+            "The number 1234",
+            "IP address format",
+            "Iphoria games"
+        ]
+    },
+    {
+        "q": "What is 'maltego' transforms?",
+        "o": [
+            "Scripts that fetch data and link entities",
+            "Robot transformers",
+            "Voltage transformers",
+            "Transforming images"
+        ]
+    },
+    {
+        "q": "What does 'info:example.com' find?",
+        "o": [
+            "Details about the URL know to capabilities",
+            "Information desk",
+            "Informatics class",
+            "Inferno movie"
+        ]
+    },
+    {
+        "q": "What is 'whois' privacy?",
+        "o": [
+            "Service masking real contact info",
+            "Who is watching",
+            "Who is playing",
+            "Who is singing"
+        ]
+    },
+    {
+        "q": "What does 'filetype:log' find?",
+        "o": [
+            "Log files",
+            "Log cabins",
+            "Logic puzzles",
+            "Logos"
+        ]
+    },
+    {
+        "q": "What is 'Recon-ng' written in?",
+        "o": [
+            "Python",
+            "Java",
+            "C++",
+            "Ruby"
+        ]
+    },
+    {
+        "q": "What does 'inurl:admin-panel' find?",
+        "o": [
+            "Admin panels",
+            "Panel interviews",
+            "Solar panels",
+            "Panel vans"
+        ]
+    },
+    {
+        "q": "What is 'passive' recon?",
+        "o": [
+            "Non-intrusive information gathering",
+            "Sleeping on the job",
+            "Watching TV",
+            "Listening to music"
+        ]
+    },
+    {
+        "q": "What does 'site:pastebin.com' find?",
+        "o": [
+            "Pastes",
+            "Pastries",
+            "Pasta",
+            "Pastels"
+        ]
+    },
+    {
+        "q": "What is 'Shodan'?",
+        "o": [
+            "Search engine for internet-connected devices",
+            "A martial art",
+            "A shoe brand",
+            "A city in China"
+        ]
+    },
+    {
+        "q": "What does 'intitle:index.of' find?",
+        "o": [
+            "Open directories",
+            "Index fingers",
+            "Indices in books",
+            "Indoor plants"
+        ]
+    },
+    {
+        "q": "What is 'theHarvester'?",
+        "o": [
+            "OSINT tool for emails and domains",
+            "A farming tool",
+            "A movie",
+            "A band"
+        ]
+    },
+    {
+        "q": "What does 'filetype:pdf' find?",
+        "o": [
+            "PDF documents",
+            "Public domain files",
+            "Personal data files",
+            "Printable document formats"
+        ]
+    },
+    {
+        "q": "What is 'nslookup'?",
+        "o": [
+            "Tool to query DNS servers",
+            "Looking up new star signs",
+            "No sleep lookup",
+            "Nice site lookup"
+        ]
+    },
+    {
+        "q": "What does 'inurl:login' find?",
+        "o": [
+            "Login pages",
+            "Log files",
+            "Logic gates",
+            "Logbooks"
+        ]
+    },
+    {
+        "q": "What is 'dig'?",
+        "o": [
+            "DNS lookup utility",
+            "Digging tool",
+            "Digital camera",
+            "Dignity"
+        ]
+    },
+    {
+        "q": "What does 'site:linkedin.com' find?",
+        "o": [
+            "LinkedIn profiles",
+            "Linked lists",
+            "Links to sites",
+            "Linkin Park songs"
+        ]
+    },
+    {
+        "q": "What is 'google dork'?",
+        "o": [
+            "Advanced google search query",
+            "A silly person",
+            "A google employee",
+            "A hacking tool"
+        ]
+    },
+    {
+        "q": "What does 'ext:conf' find?",
+        "o": [
+            "Configuration files",
+            "Conferences",
+            "Confetti",
+            "Confidence tricks"
+        ]
+    },
+    {
+        "q": "What is 'wayback machine'?",
+        "o": [
+            "Internet archive",
+            "Time travel device",
+            "Back of the bus",
+            "Machine learning"
+        ]
+    },
+    {
+        "q": "What does 'intext:password' find?",
+        "o": [
+            "Text containing 'password'",
+            "Password generator",
+            "Password protection",
+            "Passing words"
+        ]
+    },
+    {
+        "q": "What is 'whois'?",
+        "o": [
+            "Protocol to query domain owner info",
+            "Question word",
+            "Doctor Who",
+            "Who cares"
+        ]
+    },
+    {
+        "q": "What does 'site:twitter.com' find?",
+        "o": [
+            "Tweets",
+            "Birds",
+            "Twister game",
+            "Twinkling stars"
+        ]
+    },
+    {
+        "q": "What is 'ping'?",
+        "o": [
+            "Utility to test reachability",
+            "Ping pong",
+            "Pinning a message",
+            "Pink color"
+        ]
+    },
+    {
+        "q": "What does 'filetype:doc' find?",
+        "o": [
+            "Word documents",
+            "Doctors",
+            "Documentaries",
+            "Docks"
+        ]
+    },
+    {
+        "q": "What is 'traceroute'?",
+        "o": [
+            "Trace path packets take",
+            "Tracing paper",
+            "Race route",
+            "Trace mineral"
+        ]
+    },
+    {
+        "q": "What does 'inurl:register' find?",
+        "o": [
+            "Registration pages",
+            "Cash registers",
+            "Registered trademarks",
+            "Regular expressions"
+        ]
+    },
+    {
+        "q": "What is 'sublist3r'?",
+        "o": [
+            "Subdomain enumeration tool",
+            "Submarine sandwich",
+            "Listing service",
+            "Subtitle editor"
+        ]
+    },
+    {
+        "q": "What does 'site:facebook.com' find?",
+        "o": [
+            "Facebook profiles",
+            "Face masks",
+            "Books",
+            "Booking flights"
+        ]
+    },
+    {
+        "q": "What is 'host' command?",
+        "o": [
+            "DNS lookup utility",
+            "Party host",
+            "Hosting service",
+            "Hostel"
+        ]
+    },
+    {
+        "q": "What does 'ext:xml' find?",
+        "o": [
+            "XML files",
+            "Xylophones",
+            "X-rays",
+            "Extra medium"
+        ]
+    },
+    {
+        "q": "What is 'haveibeenpwned'?",
+        "o": [
+            "Check if email is in breach",
+            "Gaming site",
+            "Pawn shop",
+            "Chess game"
+        ]
+    },
+    {
+        "q": "What does 'intext:admin' find?",
+        "o": [
+            "Text containing 'admin'",
+            "Administer medicine",
+            "Admission ticket",
+            "Advertising"
+        ]
+    },
+    {
+        "q": "What is 'builtwith'?",
+        "o": [
+            "Site technology profiler",
+            "Construction company",
+            "Lego set",
+            "Body building"
+        ]
+    },
+    {
+        "q": "What does 'filetype:ppt' find?",
+        "o": [
+            "PowerPoint presentations",
+            "Puppets",
+            "Pop tarts",
+            "Paper towels"
+        ]
+    },
+    {
+        "q": "What is 'robtex'?",
+        "o": [
+            "IP and DNS analysis tool",
+            "Robot texture",
+            "Robotic arm",
+            "Tex-Mex food"
+        ]
+    },
+    {
+        "q": "What does 'site:youtube.com' find?",
+        "o": [
+            "Videos",
+            "Tubes",
+            "You",
+            "Youth club"
+        ]
+    },
+    {
+        "q": "What is 'securitytrails'?",
+        "o": [
+            "DNS and domain data provider",
+            "Hiking trails",
+            "Security guard",
+            "Trailer park"
+        ]
+    },
+    {
+        "q": "What does 'inurl:upload' find?",
+        "o": [
+            "Upload forms",
+            "Up arrow",
+            "Loading screen",
+            "Upstate New York"
+        ]
+    },
+    {
+        "q": "What is 'crt.sh'?",
+        "o": [
+            "Certificate search",
+            "Create shell",
+            "Critter shack",
+            "Court show"
+        ]
+    },
+    {
+        "q": "What does 'ext:inc' find?",
+        "o": [
+            "Include files",
+            "Ink cartridges",
+            "Incorporated",
+            "Inches"
+        ]
+    },
+    {
+        "q": "What is 'dnsdumpster'?",
+        "o": [
+            "DNS recon tool",
+            "Trash dumpster",
+            "Dumping grounds",
+            "Dunking basketball"
+        ]
+    },
+    {
+        "q": "What does 'site:instagram.com' find?",
+        "o": [
+            "Instagram profiles",
+            "Instant noodles",
+            "Grammar check",
+            "Grams"
+        ]
+    },
+    {
+        "q": "What is 'ipinfo.io'?",
+        "o": [
+            "IP address details service",
+            "Input output",
+            "Info center",
+            "Iodine"
+        ]
+    },
+    {
+        "q": "What does 'intext:username' find?",
+        "o": [
+            "Text containing 'username'",
+            "Used car name",
+            "Using name",
+            "User manuals"
+        ]
+    },
+    {
+        "q": "What is 'threatcrowd'?",
+        "o": [
+            "Threat intelligence engine",
+            "Crowd control",
+            "Three crowns",
+            "Threatening letter"
+        ]
+    },
+    {
+        "q": "What does 'filetype:txt' find?",
+        "o": [
+            "Text files",
+            "Taxi",
+            "Tax forms",
+            "Texas"
+        ]
+    },
+    {
+        "q": "What is 'bucket-stream' tool?",
+        "o": [
+            "Find interesting Amazon S3 Buckets by watching certificate transparency logs",
+            "Streaming water",
+            "Bucket list maker",
+            "Movie streaming"
+        ]
+    },
+    {
+        "q": "What does 'site:gitlab.com' find?",
+        "o": [
+            "Public GitLab repositories",
+            "Lab reports",
+            "Git tutorials",
+            "Computer labs"
+        ]
+    },
+    {
+        "q": "What is 'AWSBucketDump'?",
+        "o": [
+            "Tool to look for interesting files in S3 buckets",
+            "Dump truck",
+            "Waste disposal",
+            "Cloud rain"
+        ]
+    },
+    {
+        "q": "What does 'inurl:wp-config.php' find?",
+        "o": [
+            "WordPress configuration files",
+            "Word processor config",
+            "Wallpaper config",
+            "Writing pad"
+        ]
+    },
+    {
+        "q": "What is 'Gitleaks'?",
+        "o": [
+            "Tool to detect secrets in git repos",
+            "Plumbing tool",
+            "Vegetable",
+            "Wiki leaks"
+        ]
+    },
+    {
+        "q": "What does 'site:trello.com' find?",
+        "o": [
+            "Public Trello boards",
+            "Hello greeting",
+            "Cello music",
+            "Train schedule"
+        ]
+    },
+    {
+        "q": "What is 'trufflehog'?",
+        "o": [
+            "Searches through git repositories for secrets",
+            "Mushroom hunting pig",
+            "Chocolate maker",
+            "Harry potter spell"
+        ]
+    },
+    {
+        "q": "What does 'intitle:\"index of\" .env' find?",
+        "o": [
+            "Exposed .env files in directory listings",
+            "Environment news",
+            "Envelope index",
+            "Envious people"
+        ]
+    },
+    {
+        "q": "What is 'shhgit'?",
+        "o": [
+            "Real-time monitoring of GitHub for secrets",
+            "Quiet git",
+            "Shushing sound",
+            "Git guide"
+        ]
+    },
+    {
+        "q": "What does 'site:npmjs.com' find?",
+        "o": [
+            "NPM packages",
+            "News site",
+            "Map site",
+            "Payment site"
+        ]
+    }
+]

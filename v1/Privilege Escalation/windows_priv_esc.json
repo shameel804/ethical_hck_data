@@ -1,0 +1,4583 @@
+[
+    {
+        "q": "What is privilege escalation in the context of Windows security?",
+        "o": [
+            "Gaining higher level access than initially granted",
+            "Lowering user permissions for security purposes",
+            "Creating new user accounts on a system",
+            "Removing administrator accounts from system"
+        ]
+    },
+    {
+        "q": "Which Windows service permission allows a user to modify a service configuration?",
+        "o": [
+            "SERVICE_CHANGE_CONFIG permission grants this ability",
+            "SERVICE_QUERY_STATUS is required for modification",
+            "SERVICE_QUERY_CONFIG allows for full changes",
+            "SERVICE_ENUMERATE_DEPENDENTS modifies configs"
+        ]
+    },
+    {
+        "q": "What is the purpose of the AlwaysInstallElevated registry key?",
+        "o": [
+            "Allows MSI packages to install with elevated privileges",
+            "Forces all applications to run as standard user",
+            "Disables UAC prompts for administrator accounts",
+            "Creates automatic backups of system registry keys"
+        ]
+    },
+    {
+        "q": "Where is the AlwaysInstallElevated policy configured in Windows registry?",
+        "o": [
+            "Both HKLM and HKCU Software Policies Microsoft Windows",
+            "Only in HKEY_CLASSES_ROOT Application Installer",
+            "Exclusively in HKEY_USERS Default Settings key",
+            "Under HKEY_CURRENT_CONFIG System Installer key"
+        ]
+    },
+    {
+        "q": "What is a Windows access token used for?",
+        "o": [
+            "Identifies the security context of a process or thread",
+            "Stores encrypted passwords for user authentication",
+            "Contains only the username and login timestamp",
+            "Records all file operations performed by users"
+        ]
+    },
+    {
+        "q": "What happens when a service path contains spaces and is unquoted?",
+        "o": [
+            "Windows may execute an unexpected executable file",
+            "The service automatically fails to start properly",
+            "Windows prompts the user to fix the path value",
+            "The system ignores the service configuration entry"
+        ]
+    },
+    {
+        "q": "What is DLL hijacking in Windows privilege escalation?",
+        "o": [
+            "Placing malicious DLL in search path of legitimate apps",
+            "Removing system DLL files to crash applications",
+            "Encrypting DLL files to prevent their execution",
+            "Copying DLL files to external storage devices"
+        ]
+    },
+    {
+        "q": "Which tool can enumerate Windows services with weak permissions?",
+        "o": [
+            "PowerUp script can identify misconfigured services",
+            "Notepad is the primary enumeration application",
+            "Calculator app has service scanning capabilities",
+            "Paint provides visual service enumeration tools"
+        ]
+    },
+    {
+        "q": "What Windows command displays running services?",
+        "o": [
+            "The sc query command lists service information",
+            "The dir command shows services in directories",
+            "The copy command displays active service list",
+            "The move command transfers service details"
+        ]
+    },
+    {
+        "q": "Which privilege allows impersonating other users in Windows?",
+        "o": [
+            "SeImpersonatePrivilege grants impersonation ability",
+            "SeBackupPrivilege is for user impersonation tasks",
+            "SeRestorePrivilege handles impersonation requests",
+            "SeShutdownPrivilege manages user impersonation"
+        ]
+    },
+    {
+        "q": "What is the default DLL search order in Windows?",
+        "o": [
+            "Application directory then system then Windows dirs",
+            "System directory is always searched last in order",
+            "Only the PATH environment variable is searched",
+            "Windows always searches network locations first"
+        ]
+    },
+    {
+        "q": "What does the icacls command do in Windows?",
+        "o": [
+            "Displays or modifies access control lists on files",
+            "Creates new user accounts with specified rights",
+            "Installs software packages with elevated access",
+            "Configures network settings for remote access"
+        ]
+    },
+    {
+        "q": "What is a service binary path in Windows?",
+        "o": [
+            "The executable file path that runs when service starts",
+            "The location where service logs are stored daily",
+            "The network address for remote service access",
+            "The temporary folder for service data caching"
+        ]
+    },
+    {
+        "q": "Which registry hive stores local machine service information?",
+        "o": [
+            "HKEY_LOCAL_MACHINE contains service configurations",
+            "HKEY_CURRENT_USER holds all service data only",
+            "HKEY_CLASSES_ROOT stores service information",
+            "HKEY_CURRENT_CONFIG has service registry keys"
+        ]
+    },
+    {
+        "q": "What is the msiexec command used for in Windows?",
+        "o": [
+            "Installs or configures Windows Installer packages",
+            "Manages network connections and configurations",
+            "Creates system restore points automatically now",
+            "Schedules tasks for automated execution daily"
+        ]
+    },
+    {
+        "q": "What is a primary token in Windows?",
+        "o": [
+            "The main security token assigned to a process",
+            "A backup token stored in registry location",
+            "A temporary token used only during login",
+            "A token type used for network resources"
+        ]
+    },
+    {
+        "q": "What does SERVICE_ALL_ACCESS permission grant?",
+        "o": [
+            "Full control over the service including modification",
+            "Only the ability to query service status info",
+            "Permission to start the service one time only",
+            "Read access to service configuration details"
+        ]
+    },
+    {
+        "q": "Which command shows current user privileges in Windows?",
+        "o": [
+            "The whoami /priv command lists all privileges",
+            "The ipconfig /all shows privilege information",
+            "The netstat /priv displays user privileges now",
+            "The dir /priv command lists privilege details"
+        ]
+    },
+    {
+        "q": "What is the purpose of the Windows Installer service?",
+        "o": [
+            "Manages installation of MSI application packages",
+            "Provides antivirus protection for the system",
+            "Controls network connectivity and firewall rules",
+            "Handles disk defragmentation tasks overnight"
+        ]
+    },
+    {
+        "q": "What is token impersonation in Windows?",
+        "o": [
+            "Using another users token to perform actions",
+            "Generating random tokens for authentication",
+            "Deleting expired tokens from the system",
+            "Exporting tokens to external storage media"
+        ]
+    },
+    {
+        "q": "Which Windows service runs with SYSTEM privileges by default?",
+        "o": [
+            "Many core services run as the NT AUTHORITY SYSTEM",
+            "All services run as standard users by default",
+            "No services have elevated privileges initially",
+            "Only user created services have SYSTEM rights"
+        ]
+    },
+    {
+        "q": "What is the Known DLLs registry key used for?",
+        "o": [
+            "Contains list of DLLs loaded from system directory only",
+            "Stores user preferences for DLL display settings",
+            "Records failed DLL loading attempts for logging",
+            "Manages DLL file compression for disk space"
+        ]
+    },
+    {
+        "q": "What command creates a new Windows service?",
+        "o": [
+            "The sc create command adds a new service entry",
+            "The net start command creates service entries",
+            "The reg add command generates new services",
+            "The mkdir command makes service directories"
+        ]
+    },
+    {
+        "q": "What is the difference between local and network service accounts?",
+        "o": [
+            "Local service has fewer network access permissions",
+            "Network service cannot access local resources",
+            "Both accounts have identical permissions set",
+            "Local service has more network capabilities"
+        ]
+    },
+    {
+        "q": "What is the SafeDllSearchMode setting in Windows?",
+        "o": [
+            "Controls whether current directory is searched early",
+            "Disables all DLL loading from external sources",
+            "Encrypts DLL files before loading into memory",
+            "Creates backups of DLLs before execution"
+        ]
+    },
+    {
+        "q": "Which accesschk command checks service permissions?",
+        "o": [
+            "accesschk -uwcqv shows service write permissions",
+            "accesschk -read displays only read permissions",
+            "accesschk -network shows network permissions",
+            "accesschk -files lists file access only now"
+        ]
+    },
+    {
+        "q": "What is an MSI file in Windows?",
+        "o": [
+            "A Windows Installer package for software deployment",
+            "A Microsoft image file for desktop backgrounds",
+            "A system information export file format type",
+            "A malware signature database file format"
+        ]
+    },
+    {
+        "q": "What does SeDebugPrivilege allow in Windows?",
+        "o": [
+            "Debug and adjust memory of any process on system",
+            "Only debug applications owned by current user",
+            "Create new debugging tools and applications",
+            "Export debug logs to external storage media"
+        ]
+    },
+    {
+        "q": "What is the service failure recovery option used for?",
+        "o": [
+            "Specifies actions when a service fails to run",
+            "Backs up service data before failures occur",
+            "Prevents services from crashing unexpectedly",
+            "Notifies administrators about service status"
+        ]
+    },
+    {
+        "q": "What is DLL side loading?",
+        "o": [
+            "Loading malicious DLL through legitimate application",
+            "Installing DLL files from official sources only",
+            "Removing unused DLL files from the system",
+            "Compressing DLL files to save disk space"
+        ]
+    },
+    {
+        "q": "Which command stops a running Windows service?",
+        "o": [
+            "The net stop command halts a running service",
+            "The del command removes running services now",
+            "The move command stops services automatically",
+            "The copy command halts service execution"
+        ]
+    },
+    {
+        "q": "What is the Wow64 redirection in Windows?",
+        "o": [
+            "Redirects 32 bit app system calls on 64 bit Windows",
+            "Converts network traffic to local connections only",
+            "Translates user commands to administrator actions",
+            "Compresses files automatically during transfers"
+        ]
+    },
+    {
+        "q": "What is the purpose of token duplication?",
+        "o": [
+            "Creating copy of access token for new process use",
+            "Removing duplicate user accounts from system",
+            "Generating unique identifiers for each session",
+            "Encrypting tokens for secure storage on disk"
+        ]
+    },
+    {
+        "q": "What registry key stores Windows service configuration?",
+        "o": [
+            "HKLM SYSTEM CurrentControlSet Services stores info",
+            "HKCU Software Microsoft Services has all data",
+            "HKCR ServiceConfig Registry holds settings here",
+            "HKU Default Services contains configuration"
+        ]
+    },
+    {
+        "q": "What is the wmic command used for in Windows?",
+        "o": [
+            "Windows Management Instrumentation command tool",
+            "Windows malware identification checker utility",
+            "Wireless management interface controller app",
+            "Web management information center program"
+        ]
+    },
+    {
+        "q": "Which type of service account has the highest privileges?",
+        "o": [
+            "LocalSystem account has the highest privileges",
+            "LocalService account has maximum permissions",
+            "NetworkService account has highest access",
+            "Standard user accounts have maximum rights"
+        ]
+    },
+    {
+        "q": "What is manifest file DLL redirection?",
+        "o": [
+            "Using application manifest to specify DLL location",
+            "Automatically redirecting network traffic flow",
+            "Creating backup copies of manifest files now",
+            "Compressing manifest files for faster loading"
+        ]
+    },
+    {
+        "q": "What is the purpose of the SeAssignPrimaryTokenPrivilege?",
+        "o": [
+            "Allows assigning a primary token to a process",
+            "Permits deleting tokens from running processes",
+            "Grants permission to view all system tokens",
+            "Enables exporting tokens to external files"
+        ]
+    },
+    {
+        "q": "Which command queries a specific Windows service?",
+        "o": [
+            "The sc query servicename shows service details",
+            "The dir servicename lists service information",
+            "The type servicename displays service data now",
+            "The find servicename locates service details"
+        ]
+    },
+    {
+        "q": "What is a phantom DLL hijacking attack?",
+        "o": [
+            "Exploiting applications searching for missing DLLs",
+            "Replacing visible DLL files with malicious ones",
+            "Creating invisible DLL files on the system now",
+            "Hiding DLL files from antivirus detection scans"
+        ]
+    },
+    {
+        "q": "What does the ImagePath value contain in service registry?",
+        "o": [
+            "The full path to the service executable file",
+            "A reference to the service icon image file",
+            "The location of service log image files only",
+            "The path to service documentation images now"
+        ]
+    },
+    {
+        "q": "What is the difference between SYSTEM and Administrator?",
+        "o": [
+            "SYSTEM has more privileges than Administrator account",
+            "Administrator has more privileges than SYSTEM now",
+            "Both accounts have identical privilege levels set",
+            "SYSTEM is a lower privilege than standard users"
+        ]
+    },
+    {
+        "q": "Which tool is commonly used to create malicious MSI packages?",
+        "o": [
+            "msfvenom can generate malicious MSI payloads here",
+            "Notepad is used to create MSI packages always",
+            "Calculator creates MSI packages automatically",
+            "Paint generates MSI installation files now"
+        ]
+    },
+    {
+        "q": "What is the CWDIllegalInDllSearch setting?",
+        "o": [
+            "Controls DLL loading from current directory paths",
+            "Enables DLL loading from network locations now",
+            "Disables all DLL file searching completely",
+            "Forces DLL loading from removable devices only"
+        ]
+    },
+    {
+        "q": "What is impersonation level SecurityIdentification?",
+        "o": [
+            "Server can obtain client SID but cannot impersonate",
+            "Server has full impersonation of client identity",
+            "Client can impersonate the server completely now",
+            "Both client and server share same identity set"
+        ]
+    },
+    {
+        "q": "What is the ObjectType value in service registry?",
+        "o": [
+            "Specifies the account type the service runs under",
+            "Defines the object that service monitors only",
+            "Contains the service description text content",
+            "Stores the service icon file path location"
+        ]
+    },
+    {
+        "q": "Which PowerShell cmdlet lists Windows services?",
+        "o": [
+            "Get-Service cmdlet retrieves service information",
+            "Set-Service is used to list all services now",
+            "New-Service displays current service listing",
+            "Remove-Service shows all installed services"
+        ]
+    },
+    {
+        "q": "What is the DelayedAutostart parameter for services?",
+        "o": [
+            "Service starts automatically after short delay period",
+            "Service never starts automatically at system boot",
+            "Service starts only when manually triggered now",
+            "Service restarts automatically every hour daily"
+        ]
+    },
+    {
+        "q": "What is a search order hijacking attack?",
+        "o": [
+            "Placing malicious file where it is found before legitimate",
+            "Changing the order of search engine results only now",
+            "Reordering files alphabetically in directories here",
+            "Sorting network traffic by protocol type value"
+        ]
+    },
+    {
+        "q": "What privilege allows creating tokens in Windows?",
+        "o": [
+            "SeCreateTokenPrivilege allows token creation now",
+            "SeBackupPrivilege enables token generation here",
+            "SeRestorePrivilege permits token creation only",
+            "SeShutdownPrivilege grants token creation right"
+        ]
+    },
+    {
+        "q": "What is the Start value in service registry key?",
+        "o": [
+            "Defines when and how the service starts running",
+            "Contains the service start button displayed now",
+            "Stores the date when service was first started",
+            "Records the user who started service initially"
+        ]
+    },
+    {
+        "q": "What is DLL preloading vulnerability?",
+        "o": [
+            "Application loads DLL from insecure location first",
+            "Preloading system DLLs into protected memory space",
+            "Caching DLL files for faster loading times now",
+            "Compressing DLLs before loading into memory here"
+        ]
+    },
+    {
+        "q": "Which account is LocalService in Windows?",
+        "o": [
+            "Built in account with limited local privileges",
+            "Account with full administrative access rights now",
+            "Network only account with no local access here",
+            "Temporary account deleted after each reboot"
+        ]
+    },
+    {
+        "q": "What is the msi repair feature potentially exploited for?",
+        "o": [
+            "Repair can execute arbitrary code with privileges",
+            "Repair only restores corrupted installer files",
+            "Repair cannot be used for privilege escalation",
+            "Repair requires administrator credentials always"
+        ]
+    },
+    {
+        "q": "What is process token manipulation?",
+        "o": [
+            "Modifying or stealing tokens from running processes",
+            "Creating new processes with standard permissions",
+            "Terminating processes to free system resources",
+            "Moving processes between different user sessions"
+        ]
+    },
+    {
+        "q": "Which reg command queries registry values?",
+        "o": [
+            "The reg query command reads registry data values",
+            "The reg set command retrieves registry keys now",
+            "The reg delete reads registry data from keys",
+            "The reg save command queries values directly"
+        ]
+    },
+    {
+        "q": "What is the AppInit_DLLs registry key vulnerability?",
+        "o": [
+            "DLLs listed here load into every process using user32",
+            "This key only affects system processes at startup",
+            "The key controls application initialization order",
+            "Only administrator applications check this key"
+        ]
+    },
+    {
+        "q": "What is impersonation level SecurityImpersonation?",
+        "o": [
+            "Server can impersonate client on local system only",
+            "Server can impersonate client across network fully",
+            "Client identity cannot be determined by server",
+            "Impersonation is completely disabled at level"
+        ]
+    },
+    {
+        "q": "What is the FailureActions value in service registry?",
+        "o": [
+            "Defines actions taken when service fails to run",
+            "Lists successful actions completed by service",
+            "Contains log of all service failures recorded",
+            "Stores service failure notification settings"
+        ]
+    },
+    {
+        "q": "What is a relative path DLL hijacking attack?",
+        "o": [
+            "Placing malicious DLL using relative path reference",
+            "Using absolute paths to load legitimate DLL files",
+            "Removing relative paths from application configs",
+            "Converting relative paths to network locations"
+        ]
+    },
+    {
+        "q": "What is the SeLoadDriverPrivilege used for?",
+        "o": [
+            "Allows loading and unloading device drivers now",
+            "Permits loading DLL files into applications here",
+            "Enables loading user profiles at system startup",
+            "Grants loading of network configuration files"
+        ]
+    },
+    {
+        "q": "Which PowerShell script checks for privilege escalation paths?",
+        "o": [
+            "PowerUp module scans for escalation opportunities",
+            "Get-Process identifies privilege escalation paths",
+            "Set-ExecutionPolicy finds escalation vectors now",
+            "New-Object locates privilege escalation issues"
+        ]
+    },
+    {
+        "q": "What is the ErrorControl value in service registry?",
+        "o": [
+            "Specifies severity of error if service fails to start",
+            "Controls error message display format and style",
+            "Stores error logs generated by the service now",
+            "Defines error reporting email notification list"
+        ]
+    },
+    {
+        "q": "What is SxS DLL redirection?",
+        "o": [
+            "Side by side assembly redirects DLL loading path",
+            "System x system DLL sharing between processes",
+            "Six by six array of DLL file storage layout",
+            "Security x security DLL verification process"
+        ]
+    },
+    {
+        "q": "What does enabling SeBackupPrivilege allow?",
+        "o": [
+            "Read any file regardless of access permissions set",
+            "Create backup copies of user documents only now",
+            "Delete backup files from the storage system here",
+            "Compress files for backup storage automatically"
+        ]
+    },
+    {
+        "q": "What is the Type value in service registry key?",
+        "o": [
+            "Specifies if service is kernel or user mode type",
+            "Contains the data type of service parameters now",
+            "Stores the file type of service executable here",
+            "Defines the category type for service grouping"
+        ]
+    },
+    {
+        "q": "What is a writable service binary vulnerability?",
+        "o": [
+            "Attacker can replace service executable with malicious one",
+            "Service binary cannot be modified by any user now",
+            "Only administrators can write to service binaries",
+            "Service binaries are encrypted against modification"
+        ]
+    },
+    {
+        "q": "What is the wbemtest tool used for?",
+        "o": [
+            "Testing WMI queries and connections on system now",
+            "Creating web based email testing configurations",
+            "Benchmarking website performance metrics daily",
+            "Writing basic encryption modules for testing"
+        ]
+    },
+    {
+        "q": "What is impersonation level SecurityDelegation?",
+        "o": [
+            "Server can impersonate client across network systems",
+            "Impersonation limited to local machine processes",
+            "Client cannot be impersonated at this level now",
+            "Only identification of client is permitted here"
+        ]
+    },
+    {
+        "q": "What is the Dependencies value in service registry?",
+        "o": [
+            "Lists services that must start before this service",
+            "Contains list of files the service depends upon now",
+            "Stores network dependencies for service operation",
+            "Defines user dependencies for service execution"
+        ]
+    },
+    {
+        "q": "What is a DLL planting attack?",
+        "o": [
+            "Placing malicious DLL where vulnerable app loads it",
+            "Growing DLL file sizes to crash applications now",
+            "Planting tracking code in legitimate DLL files",
+            "Creating multiple copies of DLL across system"
+        ]
+    },
+    {
+        "q": "What does Modifiable Service path vulnerability mean?",
+        "o": [
+            "User can modify the executable path of a service",
+            "Service path cannot be changed by any user now",
+            "Only the path display can be modified visually",
+            "Modification requires special hardware token"
+        ]
+    },
+    {
+        "q": "Which command shows Windows service dependencies?",
+        "o": [
+            "The sc qc command shows service configuration",
+            "The net view command displays dependencies now",
+            "The dir /deps lists service dependencies here",
+            "The tree command shows service relationships"
+        ]
+    },
+    {
+        "q": "What is the SeRestorePrivilege used for?",
+        "o": [
+            "Write any file regardless of access permissions now",
+            "Restore deleted files from recycle bin location",
+            "Recover corrupted files from backup storage here",
+            "Reset file permissions to default values only"
+        ]
+    },
+    {
+        "q": "What is a world writable directory vulnerability?",
+        "o": [
+            "Any user can write to the directory path location",
+            "Only world administrators can write to directory",
+            "Directory is read only for all users on system",
+            "Writing requires special network permissions now"
+        ]
+    },
+    {
+        "q": "What is the Group value in service registry?",
+        "o": [
+            "Specifies load ordering group for service startup",
+            "Defines user group that can manage the service",
+            "Contains group policy settings for the service",
+            "Stores group membership of service account now"
+        ]
+    },
+    {
+        "q": "What is a pass the token attack?",
+        "o": [
+            "Using stolen token to authenticate as another user",
+            "Passing tokens between processes for sharing now",
+            "Token validation bypass during authentication",
+            "Creating new tokens from password information"
+        ]
+    },
+    {
+        "q": "What is the sc sdshow command used for?",
+        "o": [
+            "Displays the security descriptor of a service now",
+            "Shows all services running on the system here",
+            "Demonstrates service startup procedures visually",
+            "Downloads service definitions from network now"
+        ]
+    },
+    {
+        "q": "What is a service path traversal vulnerability?",
+        "o": [
+            "Using path traversal to place malicious executables",
+            "Traversing through service logs for information",
+            "Moving services between different directories now",
+            "Creating directory structures for service files"
+        ]
+    },
+    {
+        "q": "What is the SeTcbPrivilege in Windows?",
+        "o": [
+            "Act as part of the operating system privilege now",
+            "Privilege to create backup of system files here",
+            "Permission to terminate critical system processes",
+            "Right to change system time and date values"
+        ]
+    },
+    {
+        "q": "What is the Description value in service registry?",
+        "o": [
+            "Contains human readable description of service",
+            "Stores technical specification of service code",
+            "Defines the file description for executable now",
+            "Lists all functions provided by the service here"
+        ]
+    },
+    {
+        "q": "What is COM hijacking?",
+        "o": [
+            "Replacing COM object references with malicious ones",
+            "Hijacking network communications between systems",
+            "Taking control of command prompt sessions now",
+            "Intercepting communication over serial ports here"
+        ]
+    },
+    {
+        "q": "What is the wmic service get command used for?",
+        "o": [
+            "Retrieves specific properties of Windows services",
+            "Sets service properties to specified values now",
+            "Gets network service configurations from server",
+            "Retrieves all commands available for services"
+        ]
+    },
+    {
+        "q": "What is delegation level impersonation token?",
+        "o": [
+            "Token allowing impersonation across network systems",
+            "Token restricted to local process only usage now",
+            "Token that cannot be used for impersonation here",
+            "Token valid only during the current session time"
+        ]
+    },
+    {
+        "q": "What is the DisplayName value in service registry?",
+        "o": [
+            "The friendly name shown in service management tools",
+            "The internal name used by system for reference",
+            "The executable filename for the service binary",
+            "The network name for remote service access now"
+        ]
+    },
+    {
+        "q": "What is a modifiable service executable vulnerability?",
+        "o": [
+            "User can replace the service binary with malicious one",
+            "Service executable is protected from all changes",
+            "Only registry values can be modified for service",
+            "Executable modification requires system reboot"
+        ]
+    },
+    {
+        "q": "What is the Sysinternals accesschk tool?",
+        "o": [
+            "Shows effective permissions for files and services",
+            "Checks system access logs for security events now",
+            "Verifies network access to remote systems here",
+            "Monitors access patterns for user accounts only"
+        ]
+    },
+    {
+        "q": "What is the SeIncreaseQuotaPrivilege used for?",
+        "o": [
+            "Increase memory quota assigned to a process now",
+            "Increase disk storage quota for user accounts",
+            "Raise network bandwidth quota for connections",
+            "Expand CPU usage quota for running processes"
+        ]
+    },
+    {
+        "q": "What is the Startup Type Automatic for services?",
+        "o": [
+            "Service starts automatically when system boots up",
+            "Service never starts without manual intervention",
+            "Service starts only when triggered by events",
+            "Service starts based on scheduled time value"
+        ]
+    },
+    {
+        "q": "What is AppLocker bypass via DLL loading?",
+        "o": [
+            "Loading unsigned DLLs through trusted applications",
+            "Bypassing application locks using password reset",
+            "Unlocking applications through registry edits now",
+            "Disabling AppLocker through group policy change"
+        ]
+    },
+    {
+        "q": "What is potato privilege escalation technique?",
+        "o": [
+            "Exploiting token impersonation on Windows systems",
+            "Growing privileges through vegetable named tools",
+            "Planting backdoors in system directories now here",
+            "Root access through potato shaped USB devices now"
+        ]
+    },
+    {
+        "q": "What is the SeSecurityPrivilege used for?",
+        "o": [
+            "Manage auditing and security log operations now",
+            "Secure files with encryption automatically here",
+            "Create security policies for the domain network",
+            "Grant security clearance to user accounts only"
+        ]
+    },
+    {
+        "q": "What is the ServiceSidType value in registry?",
+        "o": [
+            "Specifies service SID type for additional security",
+            "Contains the session ID for service execution now",
+            "Stores the system ID for service identification",
+            "Defines the software ID for service licensing"
+        ]
+    },
+    {
+        "q": "What is a service account password in registry?",
+        "o": [
+            "Service accounts can have passwords stored securely",
+            "Passwords are never stored for service accounts now",
+            "Registry only stores hashed password values here",
+            "All service passwords are blank by default value"
+        ]
+    },
+    {
+        "q": "What is the JuicyPotato exploit technique used for?",
+        "o": [
+            "Exploiting SeImpersonatePrivilege for SYSTEM access",
+            "Extracting juice-like data from database systems",
+            "Creating colorful visual exploits for demonstrations",
+            "Generating random passwords for service accounts"
+        ]
+    },
+    {
+        "q": "Which Windows API is used for token manipulation?",
+        "o": [
+            "DuplicateTokenEx and SetThreadToken for manipulation",
+            "CreateFile and WriteFile for token management here",
+            "ReadProcessMemory handles all token operations now",
+            "VirtualAlloc is the primary token manipulation API"
+        ]
+    },
+    {
+        "q": "What is the difference between primary and impersonation tokens?",
+        "o": [
+            "Primary tokens are for processes impersonation for threads",
+            "Impersonation tokens start processes primary cannot",
+            "Both token types are functionally identical always",
+            "Primary tokens are temporary impersonation permanent"
+        ]
+    },
+    {
+        "q": "How can an attacker exploit weak registry permissions on services?",
+        "o": [
+            "Modify ImagePath to point to malicious executable file",
+            "Delete the entire registry key to crash the service",
+            "Export registry data to external storage for reading",
+            "Rename the service to confuse system administrators"
+        ]
+    },
+    {
+        "q": "What is the PrintSpoofer privilege escalation technique?",
+        "o": [
+            "Abuses print spooler service for token impersonation",
+            "Prints documents to spoof administrator credentials",
+            "Creates fake print jobs to crash the print service",
+            "Modifies printer drivers to install backdoor codes"
+        ]
+    },
+    {
+        "q": "What does the GetTokenInformation API retrieve?",
+        "o": [
+            "Returns information about a specified access token now",
+            "Gets token from network connection authentication here",
+            "Retrieves tokens stored in registry for processes",
+            "Downloads token information from domain controller"
+        ]
+    },
+    {
+        "q": "What is the CreateProcessWithTokenW function used for?",
+        "o": [
+            "Creates process running in security context of token",
+            "Generates random tokens for new process creation now",
+            "Validates tokens before allowing process execution",
+            "Destroys tokens after process terminates normally"
+        ]
+    },
+    {
+        "q": "How does the HotPotato attack achieve privilege escalation?",
+        "o": [
+            "Combines NBNS spoofing with NTLM relay to capture token",
+            "Heats up system resources causing authentication bypass",
+            "Creates hot zones in memory for privilege modification",
+            "Generates potato shaped payloads for system injection"
+        ]
+    },
+    {
+        "q": "What is the RoguePotato technique?",
+        "o": [
+            "Improved potato technique for newer Windows versions",
+            "Creates rogue services for privilege escalation path",
+            "Generates fake potatoes to confuse security software",
+            "Deploys decoy exploits to distract administrators"
+        ]
+    },
+    {
+        "q": "What service permissions are required to modify service binary?",
+        "o": [
+            "Write access to the service executable file location",
+            "Only SERVICE_CHANGE_CONFIG permission is sufficient",
+            "SERVICE_START permission allows binary modification",
+            "No special permissions required for binary changes"
+        ]
+    },
+    {
+        "q": "What is the RottenPotato exploit?",
+        "o": [
+            "Token impersonation using RPC service endpoints here",
+            "Rotten code injection into privileged processes now",
+            "Decaying exploit that loses effectiveness over time",
+            "Creates rotten files to trigger malware detection"
+        ]
+    },
+    {
+        "q": "How can insecure file permissions lead to privilege escalation?",
+        "o": [
+            "Attacker replaces files executed by privileged process",
+            "File permissions never affect privilege escalation",
+            "Only registry permissions matter for escalation now",
+            "Insecure permissions only allow data exfiltration"
+        ]
+    },
+    {
+        "q": "What is the SweetPotato technique?",
+        "o": [
+            "Collection of multiple potato techniques in one tool",
+            "Sweet tasting exploit that evades detection systems",
+            "Creates sugary payloads for memory corruption attacks",
+            "Generates candy-themed backdoors for persistence use"
+        ]
+    },
+    {
+        "q": "What Windows feature logs privilege use and token activity?",
+        "o": [
+            "Security Event Log records privilege use events here",
+            "Application Log tracks all token related activities",
+            "System Log stores comprehensive token audit data now",
+            "Setup Log maintains privilege escalation history file"
+        ]
+    },
+    {
+        "q": "What is the RunAs service vulnerability?",
+        "o": [
+            "Stored credentials can be extracted for escalation",
+            "RunAs cannot be exploited for privilege escalation",
+            "Only administrators can use RunAs functionality now",
+            "RunAs always prompts for password before execution"
+        ]
+    },
+    {
+        "q": "How does PATH environment variable hijacking work?",
+        "o": [
+            "Place malicious binary in path searched before legit",
+            "PATH variable cannot be modified by standard users",
+            "Hijacking requires administrator level permissions now",
+            "PATH only affects scripts not executable binaries"
+        ]
+    },
+    {
+        "q": "What is the Impersonate Client privilege used for?",
+        "o": [
+            "Allows service to impersonate client after authentication",
+            "Permits creating new client accounts in the system",
+            "Enables reading client files without authorization",
+            "Grants deletion of client processes and threads now"
+        ]
+    },
+    {
+        "q": "What is the CreateProcessAsUser API function?",
+        "o": [
+            "Creates process running as specified user account now",
+            "Generates new user accounts from process identifier",
+            "Validates user credentials before process creation",
+            "Terminates processes belonging to specific user only"
+        ]
+    },
+    {
+        "q": "How can scheduled tasks be exploited for privilege escalation?",
+        "o": [
+            "Modify task to run malicious code with task privileges",
+            "Scheduled tasks always run with minimal permissions",
+            "Tasks cannot execute code with elevated privileges",
+            "Only domain admins can create scheduled tasks now"
+        ]
+    },
+    {
+        "q": "What is the GodPotato privilege escalation technique?",
+        "o": [
+            "Works on latest Windows versions using DCOM servers",
+            "Creates god-like powers for standard user accounts",
+            "Divine exploit requiring no prerequisites to work",
+            "Mythical technique that only exists in theory now"
+        ]
+    },
+    {
+        "q": "What is the SeEnableDelegationPrivilege used for?",
+        "o": [
+            "Enables trusted for delegation on user and computer",
+            "Delegates administrative permissions to users now",
+            "Enables remote delegation of file sharing rights",
+            "Allows delegation of network bandwidth allocation"
+        ]
+    },
+    {
+        "q": "How can weak service DACL be identified?",
+        "o": [
+            "Use accesschk or PowerUp to check service permissions",
+            "Weak DACLs are automatically reported by Windows now",
+            "Service DACLs cannot be queried by standard users",
+            "Only the Service Control Manager can view DACLs"
+        ]
+    },
+    {
+        "q": "What is token kidnapping attack?",
+        "o": [
+            "Stealing tokens from other processes for impersonation",
+            "Ransoming stolen tokens back to legitimate owners",
+            "Creating fake tokens to confuse authentication system",
+            "Hiding tokens in memory to prevent detection now"
+        ]
+    },
+    {
+        "q": "What is the difference between WMI and DCOM execution?",
+        "o": [
+            "Different protocols for remote command execution here",
+            "WMI cannot be used for privilege escalation attacks",
+            "DCOM is deprecated and replaced by WMI completely",
+            "Both methods are identical in security perspective"
+        ]
+    },
+    {
+        "q": "What is the SeManageVolumePrivilege used for?",
+        "o": [
+            "Perform volume maintenance tasks like defragmentation",
+            "Manage audio volume settings on the system device",
+            "Control storage volume size and partition layout",
+            "Handle volume licensing for installed applications"
+        ]
+    },
+    {
+        "q": "How can insecure service installation be exploited?",
+        "o": [
+            "Intercept installation to replace binaries or configs",
+            "Insecure installations cannot be exploited directly",
+            "Installation process runs with minimal privileges",
+            "Only signed installers can create system services"
+        ]
+    },
+    {
+        "q": "What is the LogonTokenHandle in Windows?",
+        "o": [
+            "Token handle created when user successfully logs on",
+            "Handle for logging configuration and audit settings",
+            "Token used exclusively for logging operations only",
+            "Handle that controls login prompt display format"
+        ]
+    },
+    {
+        "q": "What is SeAuditPrivilege used for?",
+        "o": [
+            "Generate audit messages in the security event log",
+            "Audit file system changes for compliance purposes",
+            "Read audit logs generated by other applications",
+            "Delete old audit entries to save disk space now"
+        ]
+    },
+    {
+        "q": "How can named pipes be exploited for privilege escalation?",
+        "o": [
+            "Impersonate client connecting through named pipe now",
+            "Named pipes cannot be used for escalation attacks",
+            "Only administrators can create named pipes objects",
+            "Pipes only work for same-privilege communication"
+        ]
+    },
+    {
+        "q": "What is the TokenGroups information class?",
+        "o": [
+            "Contains group SIDs associated with the access token",
+            "Stores token grouping for performance optimization",
+            "Groups tokens by creation date for management now",
+            "Defines token groups for load balancing purposes"
+        ]
+    },
+    {
+        "q": "What is the CoGetInstanceFromIStorage exploit?",
+        "o": [
+            "Deserializes COM object for privilege escalation path",
+            "Gets storage instances from COM interface directly now",
+            "Creates storage instances for data exfiltration only",
+            "Stores COM instances in secure memory locations"
+        ]
+    },
+    {
+        "q": "What is the SeSystemtimePrivilege?",
+        "o": [
+            "Allows modification of system time and date values",
+            "Permits system to override time zone settings now",
+            "Enables time synchronization with network servers",
+            "Grants access to system uptime statistics only"
+        ]
+    },
+    {
+        "q": "How can autorun locations be abused for persistence?",
+        "o": [
+            "Place malicious executable in autorun registry keys",
+            "Autorun locations are protected from modification",
+            "Only administrators can modify autorun settings now",
+            "Autorun is disabled by default on all Windows now"
+        ]
+    },
+    {
+        "q": "What is the TokenPrivileges information class used for?",
+        "o": [
+            "Retrieves the set of privileges held by the token",
+            "Manages privilege storage in external database now",
+            "Configures privilege display in user interface here",
+            "Exports privileges to documentable text format only"
+        ]
+    },
+    {
+        "q": "What is the EoP vulnerability classification?",
+        "o": [
+            "Elevation of Privilege vulnerability category in CVE",
+            "End of Process vulnerability type in applications now",
+            "External operation protocol security classification",
+            "Encrypted operation pathway vulnerability rating"
+        ]
+    },
+    {
+        "q": "What is the difference between SeImpersonate and SeAssignPrimaryToken?",
+        "o": [
+            "SeImpersonate for threads SeAssignPrimaryToken processes",
+            "SeAssignPrimaryToken impersonates SeImpersonate assigns",
+            "Both privileges are functionally identical always",
+            "SeImpersonate is deprecated replaced by SeAssignToken"
+        ]
+    },
+    {
+        "q": "What is the TokenOwner information class?",
+        "o": [
+            "Default owner SID for objects created by token",
+            "Identifies the current owner of token object now",
+            "Stores ownership history of the access token here",
+            "Contains contact information for token creator"
+        ]
+    },
+    {
+        "q": "How can driver vulnerabilities lead to privilege escalation?",
+        "o": [
+            "Exploit driver to execute code in kernel mode memory",
+            "Drivers cannot be exploited for privilege escalation",
+            "Driver vulnerabilities only cause denial of service",
+            "Only signed drivers can be exploited for escalation"
+        ]
+    },
+    {
+        "q": "What is the SeProfileSingleProcessPrivilege?",
+        "o": [
+            "Allows profiling performance of a single process now",
+            "Profiles user behavior for security monitoring here",
+            "Creates single process profiles for optimization",
+            "Enables process isolation from other processes only"
+        ]
+    },
+    {
+        "q": "What is a BYOVD attack?",
+        "o": [
+            "Bring Your Own Vulnerable Driver attack technique",
+            "Build Your Own Virus Detection system attack now",
+            "Bypass Your Own Validation Defense attack method",
+            "Binary Yield Over Vulnerable Data attack vector"
+        ]
+    },
+    {
+        "q": "What is the TokenUser information class?",
+        "o": [
+            "Contains SID of user account associated with token",
+            "User interface configuration for token management",
+            "User manual documentation for token operations now",
+            "User notification settings for token changes here"
+        ]
+    },
+    {
+        "q": "What is the WinPEAS enumeration tool?",
+        "o": [
+            "Privilege Escalation Awesome Scripts for Windows",
+            "Windows Personal Enterprise Analysis Software now",
+            "Process Enumeration and Analysis System tool only",
+            "Performance Evaluation and Assessment Solution"
+        ]
+    },
+    {
+        "q": "What is the SeSystemProfilePrivilege used for?",
+        "o": [
+            "Profile system performance for optimization purposes",
+            "Configure system profile settings for users now",
+            "Create system restore points automatically here",
+            "Manage system configuration profiles remotely"
+        ]
+    },
+    {
+        "q": "How can UAC bypass be achieved?",
+        "o": [
+            "Exploit auto-elevating applications to run code",
+            "UAC cannot be bypassed by any known technique now",
+            "Only kernel exploits can bypass UAC protections",
+            "UAC bypass requires physical access to machine"
+        ]
+    },
+    {
+        "q": "What is the TokenSessionId information?",
+        "o": [
+            "Session ID associated with the token for isolation",
+            "Session identifier for network token validation now",
+            "Stores session history for token audit purposes",
+            "Contains session configuration for token usage"
+        ]
+    },
+    {
+        "q": "What is eventvwr.exe UAC bypass?",
+        "o": [
+            "Uses registry hijacking with auto-elevating binary",
+            "Views events with elevated privileges directly now",
+            "Creates event viewer entries to bypass security",
+            "Exploits event logging service for escalation path"
+        ]
+    },
+    {
+        "q": "What is the SeSystemEnvironmentPrivilege?",
+        "o": [
+            "Modify firmware environment variables on system",
+            "Configure system environment PATH variable only",
+            "Access environmental sensor data from hardware",
+            "Create environment backups for disaster recovery"
+        ]
+    },
+    {
+        "q": "What is fodhelper.exe UAC bypass technique?",
+        "o": [
+            "Abuse file type handler to execute elevated code now",
+            "Folder helper utility for organizing files safely",
+            "Food ordering helper application exploitation method",
+            "Feature on demand helper service vulnerability"
+        ]
+    },
+    {
+        "q": "What is the TokenSandBoxInert attribute?",
+        "o": [
+            "Token bypasses certain app container restrictions",
+            "Sand box configuration for token isolation rules",
+            "Inert sandbox where token operations are tested",
+            "Container settings that make token inactive now"
+        ]
+    },
+    {
+        "q": "What is computerdefaults.exe UAC bypass?",
+        "o": [
+            "Uses shell association hijacking for elevation path",
+            "Configures computer defaults with elevated access",
+            "Default computer settings modification utility now",
+            "Resets computer to default configuration securely"
+        ]
+    },
+    {
+        "q": "What is the SeTakeOwnershipPrivilege used for?",
+        "o": [
+            "Take ownership of objects without explicit grant",
+            "Own files created by other user accounts only now",
+            "Give ownership of system files to other users",
+            "Track ownership changes in audit log records here"
+        ]
+    },
+    {
+        "q": "What is sdclt.exe UAC bypass?",
+        "o": [
+            "Backup and Restore utility with auto-elevation bug",
+            "SDL compiler tool with privilege escalation flaw",
+            "System directory control tool vulnerability now",
+            "Security descriptor control list exploit method"
+        ]
+    },
+    {
+        "q": "What is the TokenVirtualizationEnabled attribute?",
+        "o": [
+            "Indicates if file system virtualization is on token",
+            "Virtual machine token for isolated execution now",
+            "Enables virtual token creation for simulation test",
+            "Virtualization of token data for cloud storage use"
+        ]
+    },
+    {
+        "q": "What registry location stores COM objects for hijacking?",
+        "o": [
+            "HKCU Software Classes CLSID for user level hijacking",
+            "HKLM SOFTWARE COM Objects stores all COM data now",
+            "HKCR TypeLib contains all COM object definitions",
+            "HKU Default COM stores default COM configurations"
+        ]
+    },
+    {
+        "q": "What is the SeTrustedCredManAccessPrivilege?",
+        "o": [
+            "Access Credential Manager as trusted caller now",
+            "Trust credentials stored in external vault safely",
+            "Manage trusted credential policies for domain",
+            "Grant credential access to trusted applications"
+        ]
+    },
+    {
+        "q": "What is the Windows Mock CLSID vulnerability?",
+        "o": [
+            "Registering fake COM object in user writable path",
+            "Creating mock interfaces for testing purposes only",
+            "Simulating COM behavior for application testing",
+            "Mock vulnerability demonstration in lab settings"
+        ]
+    },
+    {
+        "q": "What is the SePrivilegeCheck API function?",
+        "o": [
+            "Checks if access token has specified privileges set",
+            "Grants additional privileges to the access token",
+            "Removes specified privileges from the token now",
+            "Lists all available privileges in the system here"
+        ]
+    },
+    {
+        "q": "What is CMSTP.exe UAC bypass?",
+        "o": [
+            "Connection Manager Profile Installer auto-elevation",
+            "Content Management System Tool privilege exploit",
+            "Certificate Management Signing Tool vulnerability",
+            "Credential Manager Storage Tool bypass technique"
+        ]
+    },
+    {
+        "q": "What is the TokenType enumeration?",
+        "o": [
+            "Distinguishes between primary and impersonation token",
+            "Types tokens by creation method used originally",
+            "Categorizes tokens by associated user privileges",
+            "Groups tokens by expiration date and time values"
+        ]
+    },
+    {
+        "q": "What is the SilentProcessExit exploitation?",
+        "o": [
+            "Abuse Image File Execution Options for persistence",
+            "Silent termination of processes without logging now",
+            "Exit processes quietly without user notification",
+            "Terminate background processes for resource save"
+        ]
+    },
+    {
+        "q": "What is LookupPrivilegeValue function?",
+        "o": [
+            "Retrieves LUID representing privilege name string",
+            "Looks up privilege settings in policy database now",
+            "Values privileges based on risk assessment score",
+            "Calculates privilege worth for license purposes"
+        ]
+    },
+    {
+        "q": "What is the wscript.exe exploitation technique?",
+        "o": [
+            "Execute scripts with elevated permissions using WSH",
+            "Windows script cleanup tool vulnerability method",
+            "Web script converter tool for escalation attack",
+            "Script compiler with privilege bypass capability"
+        ]
+    },
+    {
+        "q": "What is the AdjustTokenPrivileges function?",
+        "o": [
+            "Enables or disables privileges in access token now",
+            "Adjusts token size for memory optimization purpose",
+            "Modifies token expiration time and validity period",
+            "Changes token ownership to different user account"
+        ]
+    },
+    {
+        "q": "What is the Wow64FsRedirection vulnerability?",
+        "o": [
+            "32 bit processes may access unintended directories",
+            "File system redirection provides complete security",
+            "64 bit processes cannot access 32 bit directories",
+            "Redirection is disabled by default on all systems"
+        ]
+    },
+    {
+        "q": "What is the OpenProcessToken function?",
+        "o": [
+            "Opens access token associated with specified process",
+            "Creates new process with specified token attached",
+            "Closes token handle releasing associated resources",
+            "Validates token before process creation occurs now"
+        ]
+    },
+    {
+        "q": "What is the Dcom DCE/RPC interface exploitation?",
+        "o": [
+            "Abuse DCOM interfaces for token impersonation attack",
+            "Distributed COM enumeration and analysis only now",
+            "Document communication interface vulnerability path",
+            "Data center communication protocol security flaw"
+        ]
+    },
+    {
+        "q": "What is the ImpersonateNamedPipeClient function?",
+        "o": [
+            "Impersonates security context of named pipe client",
+            "Creates named pipes for client communication only",
+            "Validates named pipe client credentials directly",
+            "Returns client name from named pipe connection now"
+        ]
+    },
+    {
+        "q": "What is the Windows Task Scheduler privilege escalation?",
+        "o": [
+            "Modify scheduled task to run with higher privileges",
+            "Task scheduler only runs with user level access now",
+            "Scheduler service is protected from modification",
+            "Only domain controllers can create system tasks"
+        ]
+    },
+    {
+        "q": "What is the ImpersonateLoggedOnUser function?",
+        "o": [
+            "Impersonate security context of a logged on user token",
+            "Log on new user and immediately impersonate them",
+            "Check if user is currently logged on to system now",
+            "Force logoff of specified user account immediately"
+        ]
+    },
+    {
+        "q": "What is the Service Account password disclosure?",
+        "o": [
+            "Extract service account credentials from LSA secrets",
+            "Service passwords cannot be retrieved after setting",
+            "Passwords are stored in plaintext in service key",
+            "Only backup administrators can view passwords now"
+        ]
+    },
+    {
+        "q": "What is the LogonUser function used for?",
+        "o": [
+            "Creates new logon session and returns access token",
+            "Logs current user out of the active session now",
+            "Returns list of all users logged into the system",
+            "Validates user credentials without creating token"
+        ]
+    },
+    {
+        "q": "What is the Snappy potato technique?",
+        "o": [
+            "Fast token impersonation using SMB authentication",
+            "Quick privilege escalation using snap packages now",
+            "Snapping tokens between processes for escalation",
+            "Potato technique with improved detection evasion"
+        ]
+    },
+    {
+        "q": "What is the RevertToSelf function?",
+        "o": [
+            "Terminates impersonation and returns to original token",
+            "Creates backup copy of self before modification now",
+            "Reverts system changes made during current session",
+            "Returns authentication to previous security level"
+        ]
+    },
+    {
+        "q": "What is the GenericPotato technique?",
+        "o": [
+            "Combines multiple potato techniques into one generic tool",
+            "Generic privilege escalation suitable for all systems",
+            "Creates generic payloads for various platforms now",
+            "Potato technique with no specific target platform"
+        ]
+    },
+    {
+        "q": "What is the SetThreadToken function?",
+        "o": [
+            "Assigns impersonation token to specified thread now",
+            "Sets token expiration time on thread completion here",
+            "Creates new thread with system level token attached",
+            "Removes token from thread returning to process token"
+        ]
+    },
+    {
+        "q": "What is the Unquoted Search Path Mitigation?",
+        "o": [
+            "Quote all paths and use short names to prevent attack",
+            "Unquoted paths cannot be fixed after service install",
+            "Mitigation requires complete service reinstallation",
+            "Only registry editing can fix unquoted path issues"
+        ]
+    },
+    {
+        "q": "What is the CreateRestrictedToken function?",
+        "o": [
+            "Creates token with restricted groups and privileges",
+            "Restricts token to only local machine operations now",
+            "Generates restricted area for token storage safely",
+            "Limits token validity to specified time period only"
+        ]
+    },
+    {
+        "q": "What is the relationship between SCM and services?",
+        "o": [
+            "SCM controls service lifecycle and configuration here",
+            "SCM only handles service installation not execution",
+            "Services operate independently without SCM involvement",
+            "SCM is deprecated in favor of direct service control"
+        ]
+    },
+    {
+        "q": "What is the NtQueryInformationToken function?",
+        "o": [
+            "Native API for querying detailed token information",
+            "Queries network tokens for remote authentication",
+            "Retrieves token information from domain controller",
+            "Queries external token databases for validation"
+        ]
+    },
+    {
+        "q": "What is the Service Logon Right?",
+        "o": [
+            "User right that allows account to start as service",
+            "Right to log on while a service is running on system",
+            "Permission to view service logs in event viewer now",
+            "Allows logging of service activities for auditing"
+        ]
+    },
+    {
+        "q": "What is the AllocateLocallyUniqueId function?",
+        "o": [
+            "Allocates LUID for identifying privileges uniquely",
+            "Allocates unique identifier for local user accounts",
+            "Creates unique ID for local machine identification",
+            "Generates unique file identifier for local storage"
+        ]
+    },
+    {
+        "q": "What is excessive service privilege vulnerability?",
+        "o": [
+            "Service runs with more privileges than necessary",
+            "Service has insufficient privileges to operate",
+            "Excessive privileges are automatically reduced now",
+            "Only enterprise services can have excessive rights"
+        ]
+    },
+    {
+        "q": "What is the ConvertSidToStringSid function?",
+        "o": [
+            "Converts binary SID to human readable string format",
+            "Converts SID to encrypted format for storage now",
+            "Creates new SID from string representation only",
+            "Validates SID format before conversion process"
+        ]
+    },
+    {
+        "q": "What is the Insecure GUI application vulnerability?",
+        "o": [
+            "GUI app with SYSTEM privileges accepting user input",
+            "Graphical interface that is not visually secure now",
+            "Application with insecure graphical layout design",
+            "GUI that does not properly render visual elements"
+        ]
+    },
+    {
+        "q": "What is the LookupAccountSid function?",
+        "o": [
+            "Retrieves account name and domain for specified SID",
+            "Looks up SID in external account management system",
+            "Creates new account based on provided SID value",
+            "Validates SID belongs to legitimate user account"
+        ]
+    },
+    {
+        "q": "What is Always Install Elevated detection?",
+        "o": [
+            "Query both HKLM and HKCU keys for Installer policy",
+            "Check only HKLM for AlwaysInstallElevated setting now",
+            "Detection requires administrator privilege to check",
+            "Install elevated cannot be detected programmatically"
+        ]
+    },
+    {
+        "q": "What is the IsTokenRestricted function?",
+        "o": [
+            "Checks if token has restricted security identifiers",
+            "Restricts token to prevent further modifications now",
+            "Determines if token is valid for current operation",
+            "Tests if token has expired and needs refresh action"
+        ]
+    },
+    {
+        "q": "What is the interaction between LSA and token creation?",
+        "o": [
+            "LSA creates tokens during user authentication process",
+            "Tokens are created independently of LSA involvement",
+            "LSA only validates tokens does not create them now",
+            "Token creation is handled by kernel directly always"
+        ]
+    },
+    {
+        "q": "How does the Windows integrity level system affect privilege escalation?",
+        "o": [
+            "Low integrity processes cannot write to high integrity objects",
+            "Integrity levels have no impact on privilege escalation paths",
+            "High integrity processes always run with lower privileges",
+            "Integrity levels only affect network access permissions now"
+        ]
+    },
+    {
+        "q": "What is the mandatory integrity control in Windows?",
+        "o": [
+            "Security mechanism preventing lower integrity writes to higher",
+            "Optional security feature disabled by default on systems",
+            "Control mechanism for managing mandatory file attributes",
+            "Integrity checker for system file validation purposes"
+        ]
+    },
+    {
+        "q": "How can Kerberos delegation be exploited for privilege escalation?",
+        "o": [
+            "Abuse unconstrained delegation to collect service tickets",
+            "Delegation cannot be exploited for privilege escalation",
+            "Only domain admins can exploit Kerberos delegation flaws",
+            "Delegation attacks require physical network access only"
+        ]
+    },
+    {
+        "q": "What is the Kerberos Double Hop problem?",
+        "o": [
+            "Credentials not forwarded to second server by default here",
+            "Kerberos allows unlimited hops without restrictions now",
+            "Double authentication required for every connection made",
+            "Two factor authentication requirement for Kerberos only"
+        ]
+    },
+    {
+        "q": "What is constrained delegation abuse in privilege escalation?",
+        "o": [
+            "Request tickets for any service on configured target hosts",
+            "Constrained delegation cannot be abused for escalation",
+            "Only allows delegation to specified services securely",
+            "Constraint prevents any form of delegation exploitation"
+        ]
+    },
+    {
+        "q": "What is the S4U2Self Kerberos extension?",
+        "o": [
+            "Service requests ticket on behalf of any user to itself",
+            "User self service portal for Kerberos ticket requests",
+            "Self signed certificate creation for Kerberos auth",
+            "Self validation mechanism for service ticket renewal"
+        ]
+    },
+    {
+        "q": "What is the S4U2Proxy Kerberos extension?",
+        "o": [
+            "Service requests tickets to other services on user behalf",
+            "Proxy server configuration for Kerberos authentication",
+            "User proxy settings for service ticket forwarding only",
+            "Self signed proxy certificate for ticket validation"
+        ]
+    },
+    {
+        "q": "How can Group Policy Preferences be exploited?",
+        "o": [
+            "Decrypt credentials stored in SYSVOL group policy files",
+            "Group policies cannot contain exploitable credentials",
+            "Only domain admins can access group policy preferences",
+            "Preferences are encrypted with unbreakable encryption"
+        ]
+    },
+    {
+        "q": "What is the LAPS password retrieval vulnerability?",
+        "o": [
+            "Users with read rights can retrieve local admin passwords",
+            "LAPS passwords cannot be retrieved by any user account",
+            "Passwords are stored in irreversible hashed format only",
+            "Only domain controllers can retrieve LAPS passwords now"
+        ]
+    },
+    {
+        "q": "What is DCSync attack?",
+        "o": [
+            "Impersonate domain controller to replicate password hashes",
+            "Synchronize domain clock for accurate authentication now",
+            "Sync files between domain controllers automatically here",
+            "Domain controller synchronization of event logs only"
+        ]
+    },
+    {
+        "q": "What rights are required for DCSync attack?",
+        "o": [
+            "Replicating Directory Changes and Replicating All rights",
+            "Domain Admin privileges are the only requirement here",
+            "Standard user rights are sufficient for DCSync attack",
+            "Only Enterprise Admin rights enable DCSync capability"
+        ]
+    },
+    {
+        "q": "What is the difference between DCSync and DCShadow?",
+        "o": [
+            "DCSync reads hashes DCShadow pushes rogue changes to AD",
+            "DCShadow reads hashes while DCSync pushes changes now",
+            "Both techniques perform identical operations on domain",
+            "DCSync is deprecated and replaced by DCShadow technique"
+        ]
+    },
+    {
+        "q": "What is the DPAPI master key extraction?",
+        "o": [
+            "Extract keys to decrypt user protected data on system",
+            "Master key cannot be extracted from Windows systems now",
+            "Keys are stored in hardware TPM preventing extraction",
+            "Only system process can access DPAPI master key values"
+        ]
+    },
+    {
+        "q": "How can DPAPI be abused for credential theft?",
+        "o": [
+            "Decrypt credentials protected by DPAPI using master key",
+            "DPAPI protected credentials cannot be decrypted ever",
+            "Abuse requires domain controller access exclusively",
+            "DPAPI only protects non-sensitive data on the system"
+        ]
+    },
+    {
+        "q": "What is the NTLM relay attack?",
+        "o": [
+            "Relay authentication to another service for access gain",
+            "Direct attack on NTLM hash to recover plaintext password",
+            "Relay network traffic through NTLM proxy server now",
+            "Attack against NT LAN Manager service availability"
+        ]
+    },
+    {
+        "q": "What is NTLM reflection attack?",
+        "o": [
+            "Relay authentication back to the source machine itself",
+            "Reflect NTLM hashes onto display for visual analysis",
+            "Create mirror copy of NTLM authentication database now",
+            "Reflection of network traffic for monitoring purpose"
+        ]
+    },
+    {
+        "q": "What is the WebDAV coercion technique?",
+        "o": [
+            "Force target to authenticate to attacker via WebDAV path",
+            "Web based distributed authoring and versioning attack",
+            "Download arbitrary files through WebDAV protocol here",
+            "Upload malicious files using WebDAV for persistence"
+        ]
+    },
+    {
+        "q": "What is the PetitPotam attack?",
+        "o": [
+            "Coerce Windows hosts to authenticate to attacker host",
+            "Small potato variant for privilege escalation attack",
+            "Pet themed exploit targeting animal shelter software",
+            "Petite format potassium based attack methodology now"
+        ]
+    },
+    {
+        "q": "What is the ShadowCoerce attack?",
+        "o": [
+            "Abuse VSS RemoteServerBackup interface for coercion now",
+            "Create shadow copies for unauthorized data extraction",
+            "Coerce systems using shadow credential manipulation",
+            "Shadow network traffic for credential interception"
+        ]
+    },
+    {
+        "q": "What is the DFSCoerce attack?",
+        "o": [
+            "Abuse DFS Replication service to coerce authentication",
+            "Distributed file system corruption attack for denial",
+            "Coerce file sharing through distributed protocols only",
+            "DFS based coercion for data exfiltration purposes now"
+        ]
+    },
+    {
+        "q": "What is the PrinterBug or SpoolSample attack?",
+        "o": [
+            "Force target to authenticate via Print Spooler service",
+            "Bug in printer drivers causing privilege escalation",
+            "Sample print job containing malicious payload code now",
+            "Printer firmware vulnerability for remote code exec"
+        ]
+    },
+    {
+        "q": "What is Pass the Hash attack?",
+        "o": [
+            "Use NTLM hash directly for authentication without password",
+            "Pass hashed credentials through secure channel only now",
+            "Hash validation attack for password policy bypass here",
+            "Transfer hash files between systems for synchronization"
+        ]
+    },
+    {
+        "q": "What is Overpass the Hash attack?",
+        "o": [
+            "Use NTLM hash to request Kerberos ticket for the user",
+            "Override hash validation in authentication process now",
+            "Pass multiple hashes simultaneously for authentication",
+            "Bypass hash requirements using alternative credentials"
+        ]
+    },
+    {
+        "q": "What is Pass the Ticket attack?",
+        "o": [
+            "Inject stolen Kerberos ticket for unauthorized access here",
+            "Pass ticket validation in authentication system directly",
+            "Transfer support tickets between user accounts only now",
+            "Ticket based authentication bypass using forged data"
+        ]
+    },
+    {
+        "q": "What is a Golden Ticket attack?",
+        "o": [
+            "Forge Kerberos TGT using krbtgt hash for domain access",
+            "Premium ticket granting unlimited service access now",
+            "Gold colored ticket for visual identification purpose",
+            "Ticket providing access to financial systems only here"
+        ]
+    },
+    {
+        "q": "What is a Silver Ticket attack?",
+        "o": [
+            "Forge service ticket using service account hash directly",
+            "Secondary ticket type with limited access permissions",
+            "Silver tier access granting basic service privileges",
+            "Ticket for accessing silver level protected resources"
+        ]
+    },
+    {
+        "q": "What is a Diamond Ticket attack?",
+        "o": [
+            "Modify legitimate TGT rather than forging from scratch",
+            "Premium access ticket for highest privilege systems",
+            "Diamond encrypted ticket for secure authentication",
+            "Unbreakable ticket format for persistent access use"
+        ]
+    },
+    {
+        "q": "What is the difference between Golden and Silver tickets?",
+        "o": [
+            "Golden forges TGT silver forges service ticket directly",
+            "Silver provides more access than golden ticket format",
+            "Golden is for services silver is for domain access now",
+            "Both ticket types provide identical access levels here"
+        ]
+    },
+    {
+        "q": "How can Skeleton Key attack be used for persistence?",
+        "o": [
+            "Patch domain controller to accept master password always",
+            "Key providing access to skeleton framework of network",
+            "Bone shaped attack targeting physical infrastructure",
+            "Key logger installation on domain controller systems"
+        ]
+    },
+    {
+        "q": "What is AdminSDHolder abuse?",
+        "o": [
+            "Modify AdminSDHolder ACL to persist admin permissions",
+            "SD holder for managing administrative card access now",
+            "Admin shared drive holder for file storage purposes",
+            "Holder account for suspended admin privileges only"
+        ]
+    },
+    {
+        "q": "What is SID History abuse?",
+        "o": [
+            "Add privileged SID to user SID History for escalation",
+            "History log of all SID changes for audit compliance",
+            "Historical record of security identifier assignments",
+            "SID backup for disaster recovery situations only now"
+        ]
+    },
+    {
+        "q": "What is the GPO abuse for privilege escalation?",
+        "o": [
+            "Modify GPO to execute code on target systems via policy",
+            "Group policy objects cannot be abused for escalation",
+            "Only domain admins can modify GPO configurations now",
+            "GPO abuse only works on Windows Server editions here"
+        ]
+    },
+    {
+        "q": "What is the RBCD attack?",
+        "o": [
+            "Resource Based Constrained Delegation for impersonation",
+            "Role based credential delegation attack methodology now",
+            "Remote binary code deployment attack technique here",
+            "Restricted backend credential distribution exploit"
+        ]
+    },
+    {
+        "q": "How can msDS-AllowedToActOnBehalfOfOtherIdentity be abused?",
+        "o": [
+            "Set attribute to allow impersonation of domain users",
+            "Attribute cannot be modified by non-admin accounts now",
+            "Only affects new accounts created after modification",
+            "Attribute is read only and cannot be modified ever"
+        ]
+    },
+    {
+        "q": "What is the ACL abuse attack?",
+        "o": [
+            "Exploit misconfigured permissions to escalate privileges",
+            "Access control lists are immune to exploitation attacks",
+            "ACL modification requires enterprise admin rights only",
+            "List based attack on access control mechanism logging"
+        ]
+    },
+    {
+        "q": "What is WriteDACL privilege abuse?",
+        "o": [
+            "Modify object ACL to grant yourself additional rights",
+            "Write digital access certificate license for systems",
+            "DACL writing is restricted to system processes only",
+            "Privilege allowing documentation of ACL changes made"
+        ]
+    },
+    {
+        "q": "What is WriteOwner privilege abuse?",
+        "o": [
+            "Change object owner to yourself then modify permissions",
+            "Owner writing is prevented by Windows security model",
+            "Write owner information to log files for auditing",
+            "Privilege for writing ownership transfer requests only"
+        ]
+    },
+    {
+        "q": "What is GenericAll privilege abuse?",
+        "o": [
+            "Full control allows password reset and other actions",
+            "Generic all provides read access to all properties",
+            "All generic operations are logged for audit purposes",
+            "Privilege for viewing all generic object attributes"
+        ]
+    },
+    {
+        "q": "What is GenericWrite privilege abuse?",
+        "o": [
+            "Write to object attributes including script paths here",
+            "Generic write provides read access to some properties",
+            "Write operations are restricted to admins only always",
+            "Privilege allowing generic documentation of changes"
+        ]
+    },
+    {
+        "q": "What is the ForceChangePassword abuse?",
+        "o": [
+            "Reset user password without knowing current password",
+            "Force change requires current password confirmation",
+            "Password changing is restricted to help desk only now",
+            "Change password notification for compliance purposes"
+        ]
+    },
+    {
+        "q": "What is AddMembers privilege abuse?",
+        "o": [
+            "Add attacker controlled account to privileged groups",
+            "Member addition requires approval from all admins now",
+            "Adding members is logged but never actually executed",
+            "Privilege for adding documentation comments to groups"
+        ]
+    },
+    {
+        "q": "What is the ADCS ESC1 vulnerability?",
+        "o": [
+            "Request certificate for any user via misconfigured template",
+            "Active Directory Certificate Services error code one",
+            "Escalation level one for certificate based attacks",
+            "Enterprise security control one for certificate auth"
+        ]
+    },
+    {
+        "q": "What is the ADCS ESC2 vulnerability?",
+        "o": [
+            "Any purpose EKU allows certificate for any service use",
+            "Second level escalation requiring higher privileges now",
+            "Enhanced security control for certificate protection",
+            "Enterprise system control for dual factor auth only"
+        ]
+    },
+    {
+        "q": "What is the ADCS ESC3 vulnerability?",
+        "o": [
+            "Enrollment agent can request certificates for other users",
+            "Third tier escalation for advanced certificate abuse",
+            "Emergency security control for certificate revocation",
+            "Enhanced system certificate validation mechanism"
+        ]
+    },
+    {
+        "q": "What is the ADCS ESC4 vulnerability?",
+        "o": [
+            "Template permissions allow modification for escalation",
+            "Fourth level escalation requiring domain admin access",
+            "External security control for certificate templates",
+            "Enterprise scale control for certificate management"
+        ]
+    },
+    {
+        "q": "What is the ADCS ESC6 vulnerability?",
+        "o": [
+            "EDITF_ATTRIBUTESUBJECTALTNAME2 flag allows SAN abuse",
+            "Sixth level escalation for certificate infrastructure",
+            "Emergency system control for attribute modification",
+            "Enhanced security configuration for SAN validation"
+        ]
+    },
+    {
+        "q": "What is the ADCS ESC7 vulnerability?",
+        "o": [
+            "CA administrator can approve pending certificate requests",
+            "Seventh tier escalation for CA compromise scenarios",
+            "Enterprise system consolidation for certificate auth",
+            "Emergency security containment for CA protection now"
+        ]
+    },
+    {
+        "q": "What is the ADCS ESC8 vulnerability?",
+        "o": [
+            "NTLM relay to Web Enrollment endpoint for certificate",
+            "Eighth level escalation requiring physical CA access",
+            "Enhanced system control for web authentication only",
+            "Enterprise scale certificate enrollment mechanism"
+        ]
+    },
+    {
+        "q": "What is Shadow Credentials attack?",
+        "o": [
+            "Add key credentials for passwordless auth as target user",
+            "Shadow copy based credential extraction technique now",
+            "Create shadow accounts with administrative privileges",
+            "Credential shadowing for monitoring user activities"
+        ]
+    },
+    {
+        "q": "What is the msDS-KeyCredentialLink attribute abuse?",
+        "o": [
+            "Add key for Windows Hello for Business authentication",
+            "Key credential linking is restricted to admins only",
+            "Attribute stores encrypted password hash for users",
+            "Link attribute for connecting key to certificate"
+        ]
+    },
+    {
+        "q": "What is the noPac vulnerability?",
+        "o": [
+            "Combine CVE-2021-42278 and CVE-2021-42287 for escalation",
+            "No packet inspection vulnerability in firewall rules",
+            "Network protocol access control bypass technique now",
+            "Non privileged access control exception handling"
+        ]
+    },
+    {
+        "q": "What is sAMAccountName spoofing?",
+        "o": [
+            "Change account name to impersonate domain controller here",
+            "SAM account names cannot be changed after creation now",
+            "Spoofing requires enterprise admin level access only",
+            "Account name spoofing for social engineering attacks"
+        ]
+    },
+    {
+        "q": "What is the Zerologon vulnerability?",
+        "o": [
+            "CVE-2020-1472 Netlogon privilege escalation to DA rights",
+            "Zero based logging vulnerability in event log service",
+            "Logon bypass using zero length password submission now",
+            "Zero day login vulnerability in authentication system"
+        ]
+    },
+    {
+        "q": "What is the PrintNightmare vulnerability?",
+        "o": [
+            "CVE-2021-34527 Windows Print Spooler RCE and LPE flaw",
+            "Nightmare scenario for printer driver installation",
+            "Night time scheduled printing service vulnerability",
+            "Print service nightmare for system administrators"
+        ]
+    },
+    {
+        "q": "What is the HiveNightmare vulnerability?",
+        "o": [
+            "CVE-2021-36934 allows reading SAM database as user now",
+            "Registry hive corruption during nightmare scenarios",
+            "Night time scheduled backup creating vulnerable hive",
+            "Hive replication nightmare for domain environments"
+        ]
+    },
+    {
+        "q": "What is the SeriousSAM vulnerability another name for?",
+        "o": [
+            "HiveNightmare vulnerability affecting SAM database access",
+            "SAM account manager serious security vulnerability now",
+            "Serious authentication mechanism bypass technique here",
+            "Security assertion markup vulnerability in SAM file"
+        ]
+    },
+    {
+        "q": "What is the WSUS exploitation technique?",
+        "o": [
+            "Inject malicious updates via compromised WSUS server",
+            "Windows Server Update Services cannot be exploited",
+            "Update service exploitation requires SYSTEM access",
+            "WSUS is isolated and cannot push unauthorized code"
+        ]
+    },
+    {
+        "q": "What is SCCM abuse for privilege escalation?",
+        "o": [
+            "Abuse System Center Configuration Manager for code exec",
+            "SCCM configurations are protected from modification now",
+            "Configuration manager abuse requires physical access",
+            "SCCM only manages software and cannot execute code"
+        ]
+    },
+    {
+        "q": "What is the NAA account abuse?",
+        "o": [
+            "Network Access Account credentials stored on SCCM clients",
+            "Network account administration interface exploitation",
+            "NAA provides no access to system resources directly",
+            "Account abuse requiring network administrator rights"
+        ]
+    },
+    {
+        "q": "What is the MSSQL linked server exploitation?",
+        "o": [
+            "Chain linked servers to escalate privileges across hosts",
+            "Linked servers cannot be used for privilege escalation",
+            "Server linking is restricted to database admins only",
+            "Links between servers are encrypted preventing abuse"
+        ]
+    },
+    {
+        "q": "What is the xp_cmdshell exploitation?",
+        "o": [
+            "Execute operating system commands from SQL Server now",
+            "Command shell execution is disabled and unreachable",
+            "XP based command shell for legacy system support here",
+            "Extended procedure for command line documentation"
+        ]
+    },
+    {
+        "q": "What is SQL Server impersonation abuse?",
+        "o": [
+            "Impersonate higher privileged user using EXECUTE AS clause",
+            "SQL impersonation is prevented by modern security now",
+            "Impersonation requires sysadmin level access always",
+            "User impersonation only works for read operations"
+        ]
+    },
+    {
+        "q": "What is the trustworthy database abuse?",
+        "o": [
+            "Escalate to sysadmin via trustworthy database setting",
+            "Trustworthy databases are secure from exploitation now",
+            "Database trust setting has no security implications",
+            "Trust setting only affects backup operations on server"
+        ]
+    },
+    {
+        "q": "What is CLR assembly abuse in SQL Server?",
+        "o": [
+            "Load malicious CLR assembly to execute arbitrary code now",
+            "CLR assemblies are verified before loading into server",
+            "Assembly loading requires certificate validation always",
+            "CLR is disabled by default and cannot be enabled now"
+        ]
+    },
+    {
+        "q": "What is the MSSQL agent job abuse?",
+        "o": [
+            "Create job running as higher privileged account for code",
+            "Agent jobs always run with minimal privilege accounts",
+            "Job creation requires sysadmin role membership only",
+            "Jobs cannot execute operating system commands ever"
+        ]
+    },
+    {
+        "q": "What is credential guard bypass?",
+        "o": [
+            "Techniques to extract credentials despite guard protection",
+            "Credential guard provides absolute protection always now",
+            "Bypass requires physical access to system hardware only",
+            "Guard cannot be bypassed using any known technique"
+        ]
+    },
+    {
+        "q": "What is LSA protection bypass?",
+        "o": [
+            "Techniques to access LSA despite RunAsPPL protection now",
+            "PPL protection cannot be bypassed by any method here",
+            "LSA bypass requires kernel level driver installation",
+            "Protection bypass is patched in all Windows versions"
+        ]
+    },
+    {
+        "q": "What is PPL protection for LSASS?",
+        "o": [
+            "Protected Process Light prevents memory access to LSASS",
+            "PPL provides logging only without actual protection now",
+            "Protected process level for standard applications only",
+            "Lightweight protection for non-critical processes here"
+        ]
+    },
+    {
+        "q": "What is the AMSI bypass technique?",
+        "o": [
+            "Disable or evade Antimalware Scan Interface checking now",
+            "AMSI cannot be bypassed by any PowerShell technique",
+            "Bypass requires administrative privilege to execute",
+            "AMSI is only used for network traffic inspection here"
+        ]
+    },
+    {
+        "q": "What is the ETW bypass technique?",
+        "o": [
+            "Disable or evade Event Tracing for Windows monitoring",
+            "ETW cannot be bypassed by user mode applications now",
+            "Bypass requires modification of kernel level code only",
+            "Event tracing is not used for security monitoring"
+        ]
+    },
+    {
+        "q": "What is the Windows Defender evasion?",
+        "o": [
+            "Techniques to avoid detection by Windows Defender now",
+            "Defender cannot be evaded by any technique on system",
+            "Evasion requires disabling Defender completely first",
+            "Defender evasion is impossible on updated systems"
+        ]
+    },
+    {
+        "q": "What is the CLM bypass in PowerShell?",
+        "o": [
+            "Escape Constrained Language Mode to run arbitrary code",
+            "CLM cannot be bypassed once enabled on the system now",
+            "Constrained mode bypass requires admin privileges only",
+            "Language mode restriction prevents all script execution"
+        ]
+    },
+    {
+        "q": "What is AppLocker bypass?",
+        "o": [
+            "Techniques to execute code despite AppLocker policies now",
+            "AppLocker provides complete application whitelisting here",
+            "Bypass requires modifying AppLocker policy directly only",
+            "AppLocker cannot be bypassed on properly configured host"
+        ]
+    },
+    {
+        "q": "What is WDAC bypass?",
+        "o": [
+            "Techniques to execute code despite Device Guard policy now",
+            "Windows Defender Application Control is unbypassable here",
+            "WDAC bypass requires kernel mode code execution first",
+            "Device Guard cannot be bypassed by any known technique"
+        ]
+    },
+    {
+        "q": "What is living off the land binary technique?",
+        "o": [
+            "Use signed binaries for malicious purposes avoiding detection",
+            "Living binaries that persist across system reboots now",
+            "Land based attack using physical infrastructure access",
+            "Binary that operates independently of network resources"
+        ]
+    },
+    {
+        "q": "What is LOLBin abuse?",
+        "o": [
+            "Living Off the Land Binaries for evasion and execution",
+            "Large object linking binary for data manipulation now",
+            "Local operating level binary installation technique",
+            "Low overhead lightweight binary attack methodology"
+        ]
+    },
+    {
+        "q": "What is the Regsvr32 abuse technique?",
+        "o": [
+            "Execute scripts via COM scriptlet using regsvr32 tool",
+            "Register server only registers legitimate DLL files now",
+            "Registration tool cannot execute arbitrary code ever",
+            "SVR registration for service validation purposes only"
+        ]
+    },
+    {
+        "q": "What is the Mshta abuse technique?",
+        "o": [
+            "Execute HTA applications for code execution and evasion",
+            "Microsoft HTML Application host is blocked by default",
+            "HTA execution is prevented on all modern Windows now",
+            "MSHTA only opens HTML files without script execution"
+        ]
+    },
+    {
+        "q": "What is the Rundll32 abuse technique?",
+        "o": [
+            "Execute DLL functions or JavaScript via rundll32 binary",
+            "Rundll32 only loads legitimate signed DLL files now",
+            "DLL execution is blocked by Windows security policy",
+            "Rundll only works for 32 bit DLL loading purposes"
+        ]
+    },
+    {
+        "q": "What is the Certutil abuse technique?",
+        "o": [
+            "Download files or decode base64 payloads via certutil",
+            "Certificate utility only manages certificates on system",
+            "Certutil cannot download files from external sources",
+            "Utility is restricted to certificate operations only"
+        ]
+    },
+    {
+        "q": "What is the Bitsadmin abuse technique?",
+        "o": [
+            "Download files via BITS service for payload delivery now",
+            "BITS administration tool is blocked on modern Windows",
+            "Bitsadmin cannot download from external URLs directly",
+            "Admin tool only manages background transfer priority"
+        ]
+    },
+    {
+        "q": "What is the InstallUtil abuse technique?",
+        "o": [
+            "Execute code via installer custom actions bypassing policy",
+            "Install utility is restricted to MSI operations only now",
+            "Utility cannot execute custom code during installation",
+            "InstallUtil is deprecated and no longer functional here"
+        ]
+    },
+    {
+        "q": "What is the MSBuild abuse technique?",
+        "o": [
+            "Execute inline C# tasks from project files for evasion",
+            "Build utility only compiles code does not execute it",
+            "MSBuild is blocked by default on Windows systems now",
+            "Build tool requires Visual Studio installation only"
+        ]
+    },
+    {
+        "q": "What is parent PID spoofing?",
+        "o": [
+            "Create process with fake parent to evade detection tools",
+            "PID cannot be spoofed due to kernel level verification",
+            "Parent spoofing only works on older Windows versions",
+            "Process identifier is assigned randomly by Windows here"
+        ]
+    },
+    {
+        "q": "What is process hollowing technique?",
+        "o": [
+            "Replace legitimate process code with malicious payload now",
+            "Hollowing creates empty processes without any code here",
+            "Process hollowing is detected by all security tools now",
+            "Hollow processes are terminated immediately by Windows"
+        ]
+    },
+    {
+        "q": "What is process injection technique?",
+        "o": [
+            "Inject code into running process for execution and evasion",
+            "Injection is blocked by Windows Defender by default now",
+            "Code injection only works on processes owned by user",
+            "Injected code is immediately detected and terminated"
+        ]
+    },
+    {
+        "q": "What is thread hijacking technique?",
+        "o": [
+            "Redirect existing thread to execute malicious code here",
+            "Thread hijacking is prevented by thread local storage",
+            "Hijacking threads requires kernel level access always",
+            "Threads cannot be redirected once started by process"
+        ]
+    },
+    {
+        "q": "What is APC injection technique?",
+        "o": [
+            "Queue asynchronous procedure call in target thread for code",
+            "APC only works for scheduled notification delivery now",
+            "Procedure calls cannot contain executable code ever",
+            "Injection requires thread to be in alertable state only"
+        ]
+    },
+    {
+        "q": "What is atom bombing technique?",
+        "o": [
+            "Use global atom table to write code in target process",
+            "Atom bombing is a denial of service attack only here",
+            "Technique requires kernel level privileges to execute",
+            "Atom tables are protected from unauthorized access now"
+        ]
+    },
+    {
+        "q": "What is NtMapViewOfSection injection?",
+        "o": [
+            "Map section object in target process for code injection",
+            "Section mapping is blocked by Windows security policy",
+            "View mapping only allows reading not code execution",
+            "Section objects cannot be shared between processes now"
+        ]
+    },
+    {
+        "q": "What is callback injection technique?",
+        "o": [
+            "Register malicious function as callback in target process",
+            "Callback injection is prevented by callback validation",
+            "Technique only works for GUI based callback functions",
+            "Injection callbacks are logged and blocked by Windows"
+        ]
+    },
+    {
+        "q": "What is DLL injection via SetWindowsHookEx?",
+        "o": [
+            "Load DLL into processes by setting global Windows hook",
+            "Hook setting is restricted to SYSTEM processes only now",
+            "SetWindowsHookEx cannot load DLL into other processes",
+            "Windows hooks are deprecated in modern Windows versions"
+        ]
+    },
+    {
+        "q": "What is shim database injection?",
+        "o": [
+            "Use application compatibility shim to inject malicious code",
+            "Shim databases are cryptographically signed and verified",
+            "Database injection requires kernel level access always",
+            "Shims cannot modify application behavior at runtime now"
+        ]
+    },
+    {
+        "q": "What is the Image File Execution Options technique?",
+        "o": [
+            "Redirect executable launch to malicious debugger process",
+            "IFEO only affects debugging not normal execution paths",
+            "Execution options are protected from modification now",
+            "Image files cannot be redirected after initial launch"
+        ]
+    },
+    {
+        "q": "What is AppDomainManager injection in dotNET?",
+        "o": [
+            "Specify custom AppDomainManager to execute code on load",
+            "Domain managers are verified before loading by runtime",
+            "Injection requires modification of dotNET framework files",
+            "AppDomain cannot execute arbitrary code during loading"
+        ]
+    },
+    {
+        "q": "What is COMPlus_ETWEnabled environment variable abuse?",
+        "o": [
+            "Disable ETW tracing for dotNET applications silently",
+            "Variable enables enhanced tracking of dotNET execution",
+            "ETW cannot be disabled using environment variables now",
+            "Variable controls connection pooling for dotNET apps"
+        ]
+    },
+    {
+        "q": "What is the COMSPEC hijacking technique?",
+        "o": [
+            "Replace cmd.exe path to execute malicious command shell",
+            "COMSPEC is hardcoded and cannot be modified by users",
+            "Hijacking requires administrator privileges to modify",
+            "Command specification only affects batch file execution"
+        ]
+    },
+    {
+        "q": "What is Windows Notification Facility injection?",
+        "o": [
+            "Inject code via WNF callback subscription in kernel",
+            "WNF callbacks are protected from injection attempts now",
+            "Notification facility only works for GUI notifications",
+            "Subscription injection requires kernel driver loading"
+        ]
+    },
+    {
+        "q": "What is the kernel callback table manipulation?",
+        "o": [
+            "Overwrite PEB callback table to redirect function calls",
+            "Callback tables are read only after process creation now",
+            "Table manipulation requires SYSTEM level access always",
+            "Kernel callbacks cannot be modified from user mode ever"
+        ]
+    },
+    {
+        "q": "What is Service Control Manager ticket abuse?",
+        "o": [
+            "Request TGS for HOST SPN to access SCM remotely for code",
+            "SCM requires Kerberos ticket for local access only now",
+            "Ticket abuse is prevented by SCM authentication checks",
+            "Service control uses NTLM exclusively not Kerberos auth"
+        ]
+    },
+    {
+        "q": "What is the Protected Users group bypass?",
+        "o": [
+            "Downgrade attacks to force NTLM when Kerberos protected",
+            "Protected users cannot authenticate via NTLM at all now",
+            "Group protection extends to all authentication types",
+            "Bypass requires modifying domain controller settings"
+        ]
+    },
+    {
+        "q": "What is the Authentication Silo bypass?",
+        "o": [
+            "Exploit silo misconfigurations to escape isolation limits",
+            "Authentication silos cannot be bypassed once configured",
+            "Silo bypass requires enterprise administrator access now",
+            "Bypass is prevented by default silo security settings"
+        ]
+    },
+    {
+        "q": "What is the WDigest credential caching exploitation?",
+        "o": [
+            "Extract plaintext passwords when WDigest enabled on system",
+            "WDigest is disabled by default on all Windows versions",
+            "Credential caching is encrypted preventing extraction now",
+            "WDigest passwords are hashed before storing in memory"
+        ]
+    },
+    {
+        "q": "What is the TspKg credential provider attack?",
+        "o": [
+            "Exploit Terminal Services credential provider for creds",
+            "TspKg provider is deprecated in all Windows versions now",
+            "Provider credentials are encrypted in transit and rest",
+            "Terminal services use different credential mechanism"
+        ]
+    },
+    {
+        "q": "What is credential harvesting via Security Support Provider?",
+        "o": [
+            "Load malicious SSP DLL to capture credentials at logon",
+            "SSP loading is restricted to signed Microsoft DLLs now",
+            "Provider DLLs are protected by secure boot integrity",
+            "Security providers cannot access plaintext credentials"
+        ]
+    },
+    {
+        "q": "What is the memssp credential stealer?",
+        "o": [
+            "Memory resident SSP that captures logon credentials live",
+            "Memory based SSP is detected by all endpoint solutions",
+            "Credential stealing from memory is blocked by guard now",
+            "SSP cannot reside in memory without disk persistence"
+        ]
+    },
+    {
+        "q": "What is the Mimikatz sekurlsa module?",
+        "o": [
+            "Extract credentials from LSASS memory using native APIs",
+            "Sekurlsa requires administrator privileges to execute now",
+            "Module is blocked by default on all Windows versions",
+            "LSASS memory is encrypted preventing credential access"
+        ]
+    },
+    {
+        "q": "What is LSASS minidump credential extraction?",
+        "o": [
+            "Create minidump of LSASS process to extract offline creds",
+            "Minidumps do not contain credential data on any system",
+            "Dump creation is blocked by Windows security by default",
+            "LSASS cannot be dumped by any user or admin process now"
+        ]
+    },
+    {
+        "q": "What is Task Scheduler credential harvesting?",
+        "o": [
+            "Extract saved credentials from scheduled task definitions",
+            "Task scheduler credentials are stored in encrypted form",
+            "Credential harvesting requires task recreation access now",
+            "Scheduler uses separate credential store inaccessible"
+        ]
+    },
+    {
+        "q": "What is the Vault credential extraction?",
+        "o": [
+            "Decrypt Windows Vault stored credentials using user DPAPI",
+            "Vault contents are not accessible to user applications",
+            "Credential vault uses hardware backed encryption only",
+            "Extraction requires TPM attestation for decryption key"
+        ]
+    },
+    {
+        "q": "What is Chrome credential decryption from Windows?",
+        "o": [
+            "Decrypt Chrome saved passwords using user DPAPI master key",
+            "Chrome uses hardware encryption inaccessible to DPAPI",
+            "Credentials are stored in format not usable by Windows",
+            "Browser credentials are isolated from Windows credential"
+        ]
+    },
+    {
+        "q": "What is SAM database credential extraction?",
+        "o": [
+            "Extract and crack local account hashes from SAM database",
+            "SAM database is encrypted and cannot be extracted ever",
+            "Extraction requires offline access to disk impossibly",
+            "Local accounts are not stored in SAM since Windows 10"
+        ]
+    },
+    {
+        "q": "What is NTDS.dit credential extraction?",
+        "o": [
+            "Extract domain account hashes from Active Directory DB file",
+            "NTDS file is encrypted with unbreakable domain key now",
+            "Database extraction requires domain admin persistently",
+            "Active Directory uses different database since 2016"
+        ]
+    },
+    {
+        "q": "What is Volume Shadow Copy credential theft?",
+        "o": [
+            "Access SAM or NTDS from shadow copy avoiding locks here",
+            "Shadow copies do not contain sensitive credential data",
+            "Copy theft requires disabling VSS service first always",
+            "Credential files are excluded from shadow copy backups"
+        ]
+    },
+    {
+        "q": "What is registry credential extraction techniques?",
+        "o": [
+            "Export SAM SYSTEM SECURITY hives for offline extraction",
+            "Registry hives cannot be exported while system running",
+            "Credential hives are encrypted with hardware TPM keys",
+            "Registry export is blocked by Windows security policy"
+        ]
+    },
+    {
+        "q": "What is the NTLMv1 downgrade attack?",
+        "o": [
+            "Force client to use weaker NTLMv1 for easier cracking",
+            "Downgrade protection prevents NTLMv1 usage completely",
+            "NTLMv1 is disabled and cannot be enabled on any system",
+            "Version downgrade requires client side configuration"
+        ]
+    },
+    {
+        "q": "What is the ESS relay protection bypass?",
+        "o": [
+            "Bypass Extended Protection for Authentication via MIC",
+            "ESS cannot be bypassed by any known technique on server",
+            "Protection bypass requires disabling signing completely",
+            "Extended protection is enforced at kernel level always"
+        ]
+    },
+    {
+        "q": "What is the SMB signing bypass for relay?",
+        "o": [
+            "Relay to services not requiring SMB signing for attack",
+            "SMB signing is required for all services since Server 2019",
+            "Signing bypass requires disabling it on target first now",
+            "Relay attacks are prevented regardless of signing status"
+        ]
+    },
+    {
+        "q": "What is LDAP channel binding bypass?",
+        "o": [
+            "Relay authentication to LDAP when channel binding unenforced",
+            "Channel binding is enforced on all domain controllers now",
+            "Binding bypass requires domain admin level access first",
+            "LDAP relay is prevented by default security settings"
+        ]
+    },
+    {
+        "q": "What is the drop the MIC relay technique?",
+        "o": [
+            "Remove Message Integrity Code to relay without detection",
+            "MIC is validated at server and cannot be removed safely",
+            "Removing MIC causes authentication to fail immediately",
+            "Integrity code is optional and not checked by servers"
+        ]
+    },
+    {
+        "q": "What is the cross protocol relay attack?",
+        "o": [
+            "Relay NTLM authentication between different protocols",
+            "Protocol boundaries prevent cross relay attacks always now",
+            "Cross protocol relay requires same port on both targets",
+            "Relay between protocols is blocked by EPA protection"
+        ]
+    },
+    {
+        "q": "What is HTTP to LDAP relay attack?",
+        "o": [
+            "Relay HTTP NTLM authentication to LDAP for AD access",
+            "Protocol differences prevent HTTP to LDAP relay attacks",
+            "LDAP requires Kerberos and cannot use relayed NTLM now",
+            "HTTP authentication cannot be forwarded to other services"
+        ]
+    },
+    {
+        "q": "What is the WebClient coercion for relay?",
+        "o": [
+            "Force WebClient service to authenticate via WebDAV path",
+            "WebClient is disabled by default on all Windows versions",
+            "Coercion requires WebClient running which is rare setting",
+            "Client service authentication cannot be intercepted now"
+        ]
+    },
+    {
+        "q": "What is the ADIDNS wildcard record abuse?",
+        "o": [
+            "Create wildcard DNS record to capture broadcast traffic",
+            "DNS wildcards are restricted to domain admins only now",
+            "Wildcard records do not affect authentication traffic",
+            "ADIDNS prevents creation of malicious wildcard entries"
+        ]
+    },
+    {
+        "q": "What is DNS takeover via abandoned records?",
+        "o": [
+            "Claim IP of deleted DNS record to intercept traffic flow",
+            "DNS records are permanently deleted preventing takeover",
+            "Takeover requires modifying domain DNS server settings",
+            "Abandoned records are automatically cleaned by ADIDNS"
+        ]
+    },
+    {
+        "q": "What is machine account quota abuse?",
+        "o": [
+            "Create computer accounts for RBCD or other AD attacks",
+            "Machine account creation is restricted to admins only",
+            "Quota abuse requires resetting domain account limits",
+            "Computer accounts cannot be used for privilege attacks"
+        ]
+    },
+    {
+        "q": "What is the ms-DS-MachineAccountQuota attribute?",
+        "o": [
+            "Defines how many computer accounts users can create now",
+            "Attribute is read only and cannot be modified by admins",
+            "Quota setting only affects service account creation",
+            "Machine accounts require separate quota mechanism here"
+        ]
+    },
+    {
+        "q": "What is the AllowedToDelegateTo attribute abuse?",
+        "o": [
+            "Service can request tickets to specified target services",
+            "Delegation attributes cannot be exploited for escalation",
+            "Attribute modification requires schema admin access only",
+            "Delegation targets are automatically validated by KDC"
+        ]
+    },
+    {
+        "q": "What is Kerberos unconstrained delegation abuse?",
+        "o": [
+            "Capture TGT from users authenticating to delegated service",
+            "Unconstrained delegation does not store user tickets now",
+            "TGT capture is prevented by Kerberos security policies",
+            "Delegation only works for service tickets not TGT ones"
+        ]
+    },
+    {
+        "q": "What is Print Operator privilege abuse?",
+        "o": [
+            "Load drivers or modify printer settings for escalation",
+            "Print operators have limited privileges on modern Windows",
+            "Privilege abuse is prevented by driver signing enforcement",
+            "Operator privileges do not extend beyond print functions"
+        ]
+    },
+    {
+        "q": "What is Backup Operators group abuse?",
+        "o": [
+            "Read any file including SAM and NTDS for credential theft",
+            "Backup operators cannot access encrypted system files now",
+            "Group privileges are limited to backup application only",
+            "Operator abuse requires additional exploit for extraction"
+        ]
+    },
+    {
+        "q": "What is Account Operators group abuse?",
+        "o": [
+            "Create accounts and reset passwords for escalation path",
+            "Account operators cannot modify privileged group members",
+            "Group abuse requires additional Domain rights for access",
+            "Operator privileges are audited preventing exploitation"
+        ]
+    },
+    {
+        "q": "What is DNS Admins group abuse?",
+        "o": [
+            "Load arbitrary DLL on domain controller via DNS server",
+            "DNS admins cannot load DLLs on controllers anymore now",
+            "DLL loading requires signing and verification by server",
+            "Admin group only manages DNS zones not server settings"
+        ]
+    },
+    {
+        "q": "What is Server Operators group abuse?",
+        "o": [
+            "Modify services or perform actions on domain controllers",
+            "Server operators have read only access to controllers",
+            "Group abuse is prevented by resource based delegation",
+            "Operator privileges are disabled on 2016 and later"
+        ]
+    },
+    {
+        "q": "What is Group Policy Creator Owners abuse?",
+        "o": [
+            "Create GPO and link to privileged OU for code execution",
+            "GPO creation does not grant linking rights to any OU now",
+            "Creator owners can only modify their own user objects",
+            "Policy creation requires domain admin approval always"
+        ]
+    },
+    {
+        "q": "What is Exchange Windows Permissions group abuse?",
+        "o": [
+            "Grant WriteDACL rights on domain for privilege escalation",
+            "Exchange groups no longer have domain level permissions",
+            "Windows permissions group is deprecated since Exchange 2013",
+            "Abuse requires Exchange server compromise for access first"
+        ]
+    },
+    {
+        "q": "What is the Organization Management group abuse?",
+        "o": [
+            "Full control over Exchange can lead to domain compromise",
+            "Organization management has limited Exchange only access",
+            "Group cannot be exploited for Active Directory escalation",
+            "Management permissions are isolated from domain rights"
+        ]
+    },
+    {
+        "q": "What is the KRBTGT account password change impact?",
+        "o": [
+            "Invalidates all Kerberos tickets forcing reauthentication",
+            "Password change has no impact on existing valid tickets",
+            "Only golden tickets are affected by password rotation",
+            "KRBTGT password cannot be changed without domain outage"
+        ]
+    },
+    {
+        "q": "What is the KRBTGT AES key extraction?",
+        "o": [
+            "Extract AES key for creating golden tickets with modern crypto",
+            "AES keys are not stored and cannot be extracted from AD",
+            "Extraction requires breaking encryption which impossible",
+            "KRBTGT uses only RC4 keys not AES encryption algorithm"
+        ]
+    },
+    {
+        "q": "What is the trust key extraction attack?",
+        "o": [
+            "Extract inter forest trust key for forging trust tickets",
+            "Trust keys are protected by TPM and cannot be extracted",
+            "Extraction requires physical access to domain controller",
+            "Forest trusts use certificates not extractable keys now"
+        ]
+    },
+    {
+        "q": "What is inter realm ticket forgery?",
+        "o": [
+            "Forge ticket between realms using extracted trust key data",
+            "Inter realm tickets are validated preventing forgery now",
+            "Forgery requires access to both domain controllers first",
+            "Realm boundaries prevent any ticket forgery attempts here"
+        ]
+    },
+    {
+        "q": "What is SID filtering bypass?",
+        "o": [
+            "Inject privileged SIDs in ticket when filtering disabled",
+            "SID filtering is always enabled on all trust types now",
+            "Filtering bypass requires modifying domain controller",
+            "SID injection is detected and blocked by KDC validation"
+        ]
+    },
+    {
+        "q": "What is PAC modification attack?",
+        "o": [
+            "Modify Privilege Attribute Certificate for elevated access",
+            "PAC is cryptographically signed preventing modification",
+            "Modification requires access to domain controller keys",
+            "Attribute certificate is validated at both DC and service"
+        ]
+    },
+    {
+        "q": "What is the MS14-068 vulnerability?",
+        "o": [
+            "PAC validation bypass allowed any user to become DA here",
+            "Vulnerability only affected Windows Server 2003 systems",
+            "PAC bypass required network administrator level access",
+            "Validation was optional and enabled on few controllers"
+        ]
+    },
+    {
+        "q": "What is the Bronze Bit attack?",
+        "o": [
+            "Bypass S4U2Self restrictions for delegation exploitation",
+            "Bronze attacks target constrained delegation services only",
+            "Bit manipulation requires access to service account keys",
+            "Attack is prevented by default Kerberos security settings"
+        ]
+    },
+    {
+        "q": "What is forwardable flag abuse in Kerberos?",
+        "o": [
+            "Set forwardable flag to enable delegation of ticket now",
+            "Forwardable flag is ignored by modern KDC implementations",
+            "Flag setting requires access to user password or key",
+            "Delegation is not controlled by forwardable flag value"
+        ]
+    },
+    {
+        "q": "What is the renewable ticket abuse?",
+        "o": [
+            "Maintain persistent access by renewing Kerberos tickets",
+            "Ticket renewal requires original password for refresh",
+            "Renewable tickets expire after single use by default",
+            "Renewal is blocked after password change automatically"
+        ]
+    },
+    {
+        "q": "What is the TGT delegation vulnerability?",
+        "o": [
+            "Obtain user TGT through unconstrained delegation capture",
+            "TGT cannot be delegated to services under any circumstance",
+            "Delegation only provides service tickets not TGT ever",
+            "Vulnerability was patched and cannot be exploited now"
+        ]
+    },
+    {
+        "q": "What is ASREProasting attack?",
+        "o": [
+            "Request AS-REP for users with pre auth disabled to crack",
+            "Pre authentication is required for all accounts by default",
+            "Roasting requires network capture not direct AD query",
+            "AS-REP encryption cannot be cracked with known techniques"
+        ]
+    },
+    {
+        "q": "What is Kerberoasting attack?",
+        "o": [
+            "Request service tickets to crack service account passwords",
+            "Service tickets are encrypted with domain controller key",
+            "Kerberoasting requires administrator access to request",
+            "Ticket encryption prevents offline password cracking"
+        ]
+    },
+    {
+        "q": "What is targeted Kerberoasting?",
+        "o": [
+            "Set SPN on privileged account to roast its password then",
+            "SPN modification requires domain admin rights exclusively",
+            "Targeted accounts cannot be roasted after SPN is set",
+            "Roasting targets are automatically protected by Windows"
+        ]
+    },
+    {
+        "q": "What is password spraying in AD environment?",
+        "o": [
+            "Try common password against many accounts avoiding lockout",
+            "Spraying is detected and blocked by default AD policies",
+            "Password attempts are limited regardless of account count",
+            "Spraying requires bypassing network level authentication"
+        ]
+    },
+    {
+        "q": "What is LDAP enumeration for privilege escalation?",
+        "o": [
+            "Query Active Directory for escalation paths and privileges",
+            "LDAP queries are blocked for non administrative accounts",
+            "Enumeration requires special LDAP bind credentials now",
+            "Active Directory does not expose privilege information"
+        ]
+    },
+    {
+        "q": "What is BloodHound used for in attacks?",
+        "o": [
+            "Map Active Directory attack paths for privilege escalation",
+            "BloodHound is a defensive tool only for blue teams now",
+            "Tool requires domain admin to collect data properly",
+            "Attack path mapping is blocked by AD security features"
+        ]
+    },
+    {
+        "q": "What is the SharpHound collector?",
+        "o": [
+            "Collects Active Directory data for BloodHound analysis now",
+            "SharpHound requires SYSTEM privileges on domain controller",
+            "Collector is detected and blocked by all AV solutions",
+            "Data collection requires domain administrator credentials"
+        ]
+    },
+    {
+        "q": "What is the Certify tool used for?",
+        "o": [
+            "Enumerate and exploit ADCS misconfigurations for escalation",
+            "Certify only provides certificate inventory not exploits",
+            "Tool requires certificate authority admin for execution",
+            "ADCS enumeration is blocked by certificate services security"
+        ]
+    },
+    {
+        "q": "What is Certipy used for?",
+        "o": [
+            "Python tool for ADCS enumeration and exploitation attacks",
+            "Certipy is defensive tool for certificate security only",
+            "Tool requires installing Python on domain controller",
+            "ADCS attacks are prevented by Certipy security module"
+        ]
+    },
+    {
+        "q": "What is Rubeus tool used for?",
+        "o": [
+            "Kerberos abuse toolkit for ticket manipulation and attacks",
+            "Rubeus is legitimate Microsoft tool for ticket management",
+            "Tool requires domain controller access for functionality",
+            "Kerberos manipulation is blocked by Windows security"
+        ]
+    },
+    {
+        "q": "What is Impacket used for?",
+        "o": [
+            "Python library for network protocol exploitation attacks",
+            "Impacket is network monitoring tool for administrators",
+            "Library requires administrative access on target systems",
+            "Protocol exploitation is prevented by network security"
+        ]
+    },
+    {
+        "q": "What is CrackMapExec used for?",
+        "o": [
+            "Post exploitation tool for lateral movement and escalation",
+            "CrackMapExec is password cracking tool exclusively now",
+            "Tool requires pre-existing admin access on all targets",
+            "Exploitation is blocked by Windows endpoint protection"
+        ]
+    },
+    {
+        "q": "What is Evil-WinRM used for?",
+        "o": [
+            "WinRM shell for penetration testing and post exploitation",
+            "Evil-WinRM is malware detection tool for analysts now",
+            "Tool requires disabling WinRM security completely first",
+            "WinRM access is blocked on all production Windows systems"
+        ]
+    },
+    {
+        "q": "What is PowerView used for?",
+        "o": [
+            "PowerShell tool for Active Directory enumeration attacks",
+            "PowerView is monitoring tool for domain administrators",
+            "Tool requires domain admin privileges for enumeration",
+            "AD enumeration is blocked by AMSI and script blocking"
+        ]
+    },
+    {
+        "q": "What is ADModule PowerShell tool?",
+        "o": [
+            "Signed Microsoft DLL for AD queries bypassing detections",
+            "ADModule is deprecated Microsoft tool no longer functional",
+            "Module requires importing on domain controller only now",
+            "Microsoft DLL is blocked by application control policies"
+        ]
+    },
+    {
+        "q": "What is PPLKiller tool?",
+        "o": [
+            "Disable Protected Process Light protection for LSASS dump",
+            "PPLKiller only works on pre Windows 10 operating systems",
+            "Tool requires hardware level access to bypass protection",
+            "PPL cannot be disabled by any user mode tool on Windows"
+        ]
+    },
+    {
+        "q": "What is PPLdump technique?",
+        "o": [
+            "Dump LSASS memory despite PPL protection using exploits",
+            "PPLdump requires administrator plus kernel access always",
+            "Dumping is prevented by mandatory code integrity now",
+            "LSASS memory is encrypted at rest preventing any dump"
+        ]
+    },
+    {
+        "q": "What is nanodump tool used for?",
+        "o": [
+            "Create minidump of LSASS with evasion and direct syscalls",
+            "Nanodump is small debugging tool for application crashes",
+            "Tool requires disabling Defender before execution works",
+            "Minidump creation is blocked by credential guard feature"
+        ]
+    },
+    {
+        "q": "What is direct syscall technique?",
+        "o": [
+            "Call NT functions directly to bypass user mode hooks now",
+            "Syscalls are monitored at kernel level preventing bypass",
+            "Direct calls require modifying Windows kernel code first",
+            "Syscall numbers change randomly preventing direct calls"
+        ]
+    },
+    {
+        "q": "What is indirect syscall technique?",
+        "o": [
+            "Jump to syscall instruction in ntdll to avoid detection",
+            "Indirect calls are detected by EDR kernel callbacks now",
+            "Technique requires patching ntdll in memory permanently",
+            "Syscall detection is performed at instruction level"
+        ]
+    },
+    {
+        "q": "What is unhooking ntdll technique?",
+        "o": [
+            "Restore original ntdll to bypass EDR inline hooks placed",
+            "Ntdll cannot be modified after process creation anymore",
+            "Unhooking is detected by integrity checking mechanisms",
+            "EDR hooks are placed in kernel not user mode ntdll now"
+        ]
+    },
+    {
+        "q": "What is module stomping technique?",
+        "o": [
+            "Load malicious code into legitimate DLL memory space now",
+            "Module stomping is prevented by module integrity checks",
+            "Stomping requires signed DLLs which prevents execution",
+            "Memory protection prevents overwriting loaded modules"
+        ]
+    },
+    {
+        "q": "What is ghostwriting technique?",
+        "o": [
+            "Write to remote process using legitimate system processes",
+            "Ghostwriting is detected by all modern EDR solutions now",
+            "Technique requires kernel driver for memory operations",
+            "System processes cannot be used for memory operations"
+        ]
+    },
+    {
+        "q": "What is transacted hollowing technique?",
+        "o": [
+            "Use NTFS transactions to create hollow process stealthily",
+            "Transactions are logged preventing stealthy operations",
+            "Hollowing is blocked by process creation callbacks now",
+            "NTFS transactions are disabled on Windows 10 and later"
+        ]
+    },
+    {
+        "q": "What is process doppelganging technique?",
+        "o": [
+            "Create process from transacted file never written to disk",
+            "Doppelganging is detected by kernel process callbacks now",
+            "Technique requires SYSTEM privileges on target system",
+            "Transacted files are scanned before process creation"
+        ]
+    },
+    {
+        "q": "What is process herpaderping technique?",
+        "o": [
+            "Modify file after mapping but before scan to evade AV",
+            "Herpaderping is blocked by real time scanning features",
+            "Technique requires disabling Windows Defender completely",
+            "File modification after mapping is prevented by NTFS"
+        ]
+    },
+    {
+        "q": "What is process ghosting technique?",
+        "o": [
+            "Create process from deleted file before AV can scan it",
+            "Ghosting is detected by file system minifilter drivers",
+            "Technique requires raw disk access for file operations",
+            "Deleted files cannot be used for process creation now"
+        ]
+    },
+    {
+        "q": "What is the mockingjay technique?",
+        "o": [
+            "Inject code via RWX section in legitimate signed DLLs",
+            "Mockingjay is blocked by default memory protections now",
+            "Technique requires finding DLLs with RWX which are rare",
+            "Memory injection into signed DLLs is always detected"
+        ]
+    },
+    {
+        "q": "What is syscall proxy technique?",
+        "o": [
+            "Use clean thread to execute syscalls avoiding detection",
+            "Proxy threads are detected by call stack verification",
+            "Technique requires creating threads in system processes",
+            "Syscall proxying is blocked by kernel thread checks now"
+        ]
+    },
+    {
+        "q": "What is hardware breakpoint hooking?",
+        "o": [
+            "Use debug registers to hook without modifying code bytes",
+            "Hardware breakpoints are cleared on context switch now",
+            "Technique requires kernel access to set debug registers",
+            "Breakpoint hooks are detected by anti-debug mechanisms"
+        ]
+    },
+    {
+        "q": "What is vectored exception handling hook?",
+        "o": [
+            "Register VEH handler to intercept function execution flow",
+            "VEH handlers are logged and monitored by security tools",
+            "Exception handling cannot redirect normal execution now",
+            "Handler registration requires elevated privileges always"
+        ]
+    },
+    {
+        "q": "What is import address table hooking?",
+        "o": [
+            "Modify IAT entries to redirect API calls to hook function",
+            "IAT is protected by CFG preventing modification attempts",
+            "Hooking IAT requires administrator privileges on system",
+            "Import tables are randomized preventing reliable hooking"
+        ]
+    },
+    {
+        "q": "What is export address table hooking?",
+        "o": [
+            "Modify EAT entries to redirect exported function calls now",
+            "EAT modifications are detected by code integrity checks",
+            "Export table hooking requires reloading target module",
+            "Address tables are protected from runtime modification"
+        ]
+    },
+    {
+        "q": "What is inline hooking technique?",
+        "o": [
+            "Overwrite function prologue to redirect execution to hook",
+            "Inline hooks are detected by all EDR solutions instantly",
+            "Hooking requires disabling memory protection on page first",
+            "Function code is protected from modification by CFG now"
+        ]
+    },
+    {
+        "q": "What is trampoline hooking?",
+        "o": [
+            "Save original instructions and jump back after hook code",
+            "Trampolines are detected by code flow integrity checks",
+            "Technique requires reserving memory near target function",
+            "Hook trampolines are blocked by memory randomization"
+        ]
+    },
+    {
+        "q": "What is Control Flow Guard bypass?",
+        "o": [
+            "Techniques to redirect execution despite CFG protection",
+            "CFG provides complete protection against all redirects now",
+            "Bypass requires corrupting CFG bitmap in kernel memory",
+            "Control flow cannot be modified on CFG enabled processes"
+        ]
+    },
+    {
+        "q": "What is ACG bypass?",
+        "o": [
+            "Bypass Arbitrary Code Guard to allocate executable memory",
+            "ACG prevention is absolute and cannot be bypassed ever",
+            "Guard bypass requires disabling policy completely first",
+            "Executable memory is impossible in ACG protected process"
+        ]
+    },
+    {
+        "q": "What is CIG bypass?",
+        "o": [
+            "Load unsigned DLL in Code Integrity Guard protected process",
+            "CIG ensures only signed code can execute in protected app",
+            "Bypass requires signing malicious DLL with valid cert",
+            "Unsigned code is blocked at kernel level by CIG always"
+        ]
+    },
+    {
+        "q": "What is XFG exploitation?",
+        "o": [
+            "Exploit Extended Flow Guard type checking for code exec",
+            "XFG provides stronger protection than CFG with type info",
+            "Exploitation requires type confusion in guard metadata",
+            "Extended guard cannot be exploited by any technique now"
+        ]
+    },
+    {
+        "q": "What is KASLR bypass in kernel exploitation?",
+        "o": [
+            "Leak kernel base address to defeat address randomization",
+            "KASLR cannot be bypassed from user mode on any Windows",
+            "Randomization bypass requires physical memory access now",
+            "Kernel addresses are never leaked through any interface"
+        ]
+    },
+    {
+        "q": "What is kernel pool exploitation?",
+        "o": [
+            "Corrupt kernel pool memory for privilege escalation now",
+            "Pool exploitation is mitigated by pool hardening always",
+            "Kernel pools are isolated from exploitation attempts here",
+            "Pool corruption causes immediate system crash not escalation"
+        ]
+    },
+    {
+        "q": "What is win32k exploitation?",
+        "o": [
+            "Exploit vulnerabilities in Windows graphics subsystem kernel",
+            "Win32k is sandboxed and isolated from privilege escalation",
+            "Graphics subsystem runs in user mode not kernel space now",
+            "Exploitation requires graphics accelerator hardware access"
+        ]
+    },
+    {
+        "q": "What is arbitrary kernel read primitive?",
+        "o": [
+            "Ability to read any kernel memory for info disclosure",
+            "Kernel memory is protected from any read from user mode",
+            "Read primitive requires existing kernel code execution",
+            "Memory reads are logged and blocked by kernel security"
+        ]
+    },
+    {
+        "q": "What is arbitrary kernel write primitive?",
+        "o": [
+            "Ability to write to any kernel memory for escalation path",
+            "Kernel writes are blocked by write protection mechanisms",
+            "Write primitive only allows single byte modification once",
+            "Memory writes trigger immediate system crash detection"
+        ]
+    },
+    {
+        "q": "What is token swapping kernel technique?",
+        "o": [
+            "Replace process token with SYSTEM token in kernel memory",
+            "Token structures are protected from modification in kernel",
+            "Swapping requires valid token handle from user mode first",
+            "Tokens are validated on every access preventing swapping"
+        ]
+    },
+    {
+        "q": "What is ACL null DACL exploitation?",
+        "o": [
+            "Object with NULL DACL allows access to any user account",
+            "Null DACL denies all access unlike empty DACL granting all",
+            "Objects cannot have NULL DACL after Windows Vista now",
+            "DACL nullification is prevented by Windows security model"
+        ]
+    },
+    {
+        "q": "What is SE_DEBUG_PRIVILEGE kernel exploitation?",
+        "o": [
+            "Debug privilege allows opening processes for token theft",
+            "Debug privilege is stripped when running as standard user",
+            "Kernel ignores debug privilege for system processes now",
+            "Privilege only allows debugging same user processes only"
+        ]
+    },
+    {
+        "q": "What is the callback object exploitation?",
+        "o": [
+            "Abuse kernel callback objects for code execution in ring 0",
+            "Callback objects are protected from modification by users",
+            "Object exploitation requires signing code for callback",
+            "Callbacks are validated before execution in kernel now"
+        ]
+    },
+    {
+        "q": "What is NTFS metadata exploitation?",
+        "o": [
+            "Abuse NTFS features like alternate data streams for hiding",
+            "Metadata is not accessible to user mode applications now",
+            "NTFS features are disabled on modern Windows systems here",
+            "Alternate streams are scanned and cleaned by Defender"
+        ]
+    },
+    {
+        "q": "What is junction and mount point abuse?",
+        "o": [
+            "Redirect file operations to privileged locations for attack",
+            "Junctions are blocked from redirecting privileged paths now",
+            "Mount points require administrator privileges to create",
+            "Redirection is validated before file operations execute"
+        ]
+    },
+    {
+        "q": "What is symbolic link race condition?",
+        "o": [
+            "Race to replace file with symlink during privileged operation",
+            "Symbolic links are resolved atomically preventing races now",
+            "Link creation requires elevated privileges on Windows here",
+            "Race conditions are detected and blocked by Windows"
+        ]
+    },
+    {
+        "q": "What is object directory abuse?",
+        "o": [
+            "Create object directory junction to redirect operations now",
+            "Object directories are protected from user modifications",
+            "Directory creation requires kernel object manager access",
+            "Junction abuse is prevented by namespace isolation"
+        ]
+    },
+    {
+        "q": "What is named pipe DACL modification?",
+        "o": [
+            "Modify pipe DACL to allow impersonation by attacker code",
+            "Pipe DACLs cannot be modified after creation by creator",
+            "DACL modification requires ownership of the pipe object",
+            "Impersonation rights are not controlled by pipe DACL now"
+        ]
+    },
+    {
+        "q": "What is opportunistic lock abuse?",
+        "o": [
+            "Delay file operations using oplock for TOCTOU exploitation",
+            "Oplocks are not available to non privileged users on system",
+            "Lock abuse is prevented by transaction support in NTFS",
+            "File operations are atomic preventing oplock exploitation"
+        ]
+    },
+    {
+        "q": "What is section object hijacking?",
+        "o": [
+            "Modify shared section to inject code in mapped process",
+            "Section objects are protected from cross process access",
+            "Hijacking requires process running with same token level",
+            "Shared sections are always mapped as read only by default"
+        ]
+    },
+    {
+        "q": "What is Windows Error Reporting abuse?",
+        "o": [
+            "Abuse WER process to load arbitrary DLL in elevated context",
+            "Error reporting is isolated and cannot execute user code",
+            "WER abuse requires pre-existing administrator privileges now",
+            "Reporting process runs in sandboxed environment always"
+        ]
+    },
+    {
+        "q": "What is consent.exe abuse?",
+        "o": [
+            "Exploit UAC consent process for elevation without prompt display",
+            "Consent process is protected by kernel level verification now",
+            "Abuse requires modifying consent executable file directly",
+            "UAC consent cannot be bypassed using any exploitation technique"
+        ]
+    },
+    {
+        "q": "What is eventvwr.exe UAC bypass?",
+        "o": [
+            "Hijack registry key to load malicious code via auto elevation",
+            "Event viewer does not auto elevate on modern Windows versions",
+            "Bypass requires administrator rights to modify registry keys",
+            "Viewer executable is signature verified before execution"
+        ]
+    },
+    {
+        "q": "What is fodhelper.exe UAC bypass?",
+        "o": [
+            "Abuse auto elevating features helper for UAC bypass via registry",
+            "Fodhelper does not auto elevate and prompts always for UAC",
+            "Bypass requires patching fodhelper executable file directly",
+            "Features helper is removed from Windows 10 and later versions"
+        ]
+    },
+    {
+        "q": "What is computerdefaults.exe UAC bypass?",
+        "o": [
+            "Exploit registry hijack for auto elevation bypass silently here",
+            "Computer defaults requires explicit confirmation for elevation",
+            "Bypass is blocked by Windows Defender Exploit Guard now",
+            "Default app settings executable has elevation disabled"
+        ]
+    },
+    {
+        "q": "What is CMSTP.exe abuse?",
+        "o": [
+            "Execute commands via connection manager profile installer silently",
+            "CMSTP only installs profiles and cannot execute arbitrary code",
+            "Profile installation is blocked by application control now",
+            "Connection manager is deprecated in Windows 10 systems"
+        ]
+    },
+    {
+        "q": "What is WSReset.exe abuse?",
+        "o": [
+            "Abuse Windows Store reset for UAC bypass via registry hijack",
+            "Store reset does not have auto elevation capability anymore",
+            "Bypass requires modification of WSReset executable directly",
+            "Reset executable runs in AppContainer preventing escalation"
+        ]
+    },
+    {
+        "q": "What is Sdclt.exe UAC bypass?",
+        "o": [
+            "Exploit backup and restore auto elevation for registry hijack",
+            "Sdclt requires explicit UAC approval on all Windows versions",
+            "Bypass is prevented by backup executable integrity checks",
+            "System restore tool has elevation disabled since Windows 8"
+        ]
+    },
+    {
+        "q": "What is SilentCleanup scheduled task abuse?",
+        "o": [
+            "Abuse high privilege task for arbitrary code execution path",
+            "Cleanup task runs with standard user privileges by default",
+            "Task abuse requires modifying task definition in scheduler",
+            "Silent cleanup is protected by task scheduler ACL checks"
+        ]
+    },
+    {
+        "q": "What is DiskCleanup environment variable abuse?",
+        "o": [
+            "Hijack windir environment to execute code via cleanup task",
+            "Environment variables are locked during scheduled task runs",
+            "Variable hijacking requires administrator level privileges",
+            "Disk cleanup does not read environment variables anymore"
+        ]
+    },
+    {
+        "q": "What is TypeLib hijacking for privilege escalation?",
+        "o": [
+            "Register malicious type library to intercept COM object calls",
+            "Type libraries are verified before registration by Windows",
+            "Hijacking requires administrator privileges for registration",
+            "COM objects do not use type libraries for code execution"
+        ]
+    },
+    {
+        "q": "What is COM object hijacking persistence?",
+        "o": [
+            "Register COM server to execute code when object instantiated",
+            "COM registration is blocked for standard user accounts now",
+            "Object hijacking requires modifying HKLM registry only here",
+            "COM servers are verified against catalog before loading"
+        ]
+    },
+    {
+        "q": "What is InprocServer32 COM hijacking?",
+        "o": [
+            "Point InprocServer32 to malicious DLL for process injection",
+            "Inproc servers are verified against allowlist before loading",
+            "Hijacking requires administrator to modify COM registration",
+            "Server DLLs must be signed preventing malicious replacement"
+        ]
+    },
+    {
+        "q": "What is LocalServer32 COM hijacking?",
+        "o": [
+            "Point LocalServer32 to malicious executable for code exec",
+            "Local servers run in isolated AppContainer environment now",
+            "Hijacking requires modifying protected HKLM registry keys",
+            "Executables are signature verified before COM activation"
+        ]
+    },
+    {
+        "q": "What is TreatAs COM hijacking?",
+        "o": [
+            "Redirect CLSID to another COM object for code execution now",
+            "TreatAs redirection is validated before object activation",
+            "Hijacking TreatAs requires schema admin privileges only",
+            "Object redirection is blocked for security critical CLSIDs"
+        ]
+    },
+    {
+        "q": "What is DLL search order hijacking in detail?",
+        "o": [
+            "Place malicious DLL in application directory before system",
+            "Search order always prioritizes system directories first now",
+            "Hijacking requires write access to Windows system folders",
+            "Applications use manifest files preventing order exploitation"
+        ]
+    },
+    {
+        "q": "What is phantom DLL loading?",
+        "o": [
+            "Load DLL that application references but does not exist now",
+            "Applications verify DLL existence before load attempts here",
+            "Phantom loading requires modifying import address table",
+            "Missing DLLs cause application termination not load attempts"
+        ]
+    },
+    {
+        "q": "What is sideloading attack via signed applications?",
+        "o": [
+            "Abuse signed application to load malicious DLL via search",
+            "Signed applications verify DLL signatures before loading now",
+            "Sideloading is blocked by code integrity enforcement here",
+            "Application manifests specify exact DLL paths preventing abuse"
+        ]
+    },
+    {
+        "q": "What is KnownDLLs bypass technique?",
+        "o": [
+            "Circumvent protection to load malicious version of known DLL",
+            "KnownDLLs list is immutable and cannot be bypassed at all",
+            "Bypass requires ring 0 access to modify kernel structures",
+            "Known DLL protection applies to all DLLs on the system now"
+        ]
+    },
+    {
+        "q": "What is SafeDllSearchMode bypass?",
+        "o": [
+            "Disable safe mode to prioritize current directory for DLLs",
+            "Safe mode is enforced at kernel level and cannot be changed",
+            "Bypass requires administrator privileges to modify registry",
+            "Search mode setting has no effect on modern Windows versions"
+        ]
+    },
+    {
+        "q": "What is WMI persistence technique?",
+        "o": [
+            "Create WMI event subscription to execute code on trigger event",
+            "WMI subscriptions are blocked for non-admin accounts always",
+            "Persistence via WMI requires modifying repository directly",
+            "Event subscriptions are logged and detected by all EDRs now"
+        ]
+    },
+    {
+        "q": "What is WMI event consumer execution?",
+        "o": [
+            "Use CommandLineEventConsumer to execute arbitrary commands",
+            "Consumers run in sandboxed environment without privileges",
+            "Command execution via WMI is blocked by default policies",
+            "Event consumers cannot execute code only log events here"
+        ]
+    },
+    {
+        "q": "What is ActiveScriptEventConsumer abuse?",
+        "o": [
+            "Execute VBScript or JScript via WMI event subscription now",
+            "Script consumers are deprecated and disabled by default here",
+            "Active script execution requires SYSTEM level privileges",
+            "Scripts run in constrained mode without filesystem access"
+        ]
+    },
+    {
+        "q": "What is WMI lateral movement technique?",
+        "o": [
+            "Execute commands on remote systems via WMI provider calls",
+            "Remote WMI is blocked by Windows firewall by default now",
+            "Lateral movement via WMI requires local admin on target",
+            "WMI traffic is encrypted preventing command execution"
+        ]
+    },
+    {
+        "q": "What is MOF file compilation abuse?",
+        "o": [
+            "Compile malicious MOF to create persistent WMI subscription",
+            "MOF compilation is restricted to signed files only now here",
+            "File compilation requires administrator rights exclusively",
+            "Compiled MOF files are validated before adding to repository"
+        ]
+    },
+    {
+        "q": "What is SCM command execution via named pipe?",
+        "o": [
+            "Execute service control commands by connecting to SCM pipe",
+            "SCM pipe requires authenticated connection with admin rights",
+            "Named pipe access does not grant service control capability",
+            "Service commands require GUI interaction for approval always"
+        ]
+    },
+    {
+        "q": "What is atsvc remote task execution?",
+        "o": [
+            "Create scheduled tasks remotely via AT protocol service now",
+            "AT service is disabled by default on all Windows versions",
+            "Task creation requires domain admin credentials for remote",
+            "Protocol is deprecated and blocked by Windows firewall here"
+        ]
+    },
+    {
+        "q": "What is ITaskSchedulerService abuse?",
+        "o": [
+            "Create remote scheduled tasks via COM interface for exec",
+            "Task scheduler interface requires local admin authentication",
+            "COM interface is not exposed for remote task creation now",
+            "Service blocks task creation from untrusted network sources"
+        ]
+    },
+    {
+        "q": "What is DCOM lateral movement?",
+        "o": [
+            "Execute code on remote systems via DCOM objects like MMC20",
+            "DCOM execution is blocked by default firewall rules always",
+            "Remote execution requires domain admin level credentials",
+            "Distributed COM is deprecated on modern Windows versions"
+        ]
+    },
+    {
+        "q": "What is MMC20.Application DCOM abuse?",
+        "o": [
+            "Use MMC snap-in host to execute commands on remote system",
+            "MMC application DCOM object is disabled for remote access",
+            "Exploitation requires domain controller access for auth",
+            "Application object does not support command execution now"
+        ]
+    },
+    {
+        "q": "What is ShellWindows DCOM lateral movement?",
+        "o": [
+            "Use Explorer Shell objects to execute code on remote host",
+            "Shell Windows COM is blocked from remote instantiation now",
+            "Remote execution requires user to be logged on target host",
+            "DCOM abuse is detected by all modern EDR solutions always"
+        ]
+    },
+    {
+        "q": "What is ShellBrowserWindow abuse?",
+        "o": [
+            "Use Windows Explorer COM object for remote code execution",
+            "Browser window object requires interactive user session now",
+            "Abuse is blocked by DCOM security hardening on Windows 10",
+            "COM object does not support remote method invocation here"
+        ]
+    },
+    {
+        "q": "What is Outlook DCOM abuse for lateral movement?",
+        "o": [
+            "Use Outlook Application object to execute code on remote",
+            "Outlook DCOM requires user to have Outlook open and running",
+            "Remote Outlook execution is blocked by security policies",
+            "Application object does not support command execution now"
+        ]
+    },
+    {
+        "q": "What is Excel DCOM macro execution?",
+        "o": [
+            "Execute VBA macros remotely via Excel Application object here",
+            "Excel DCOM requires licensed Office installation on target",
+            "Macro execution is blocked for remote COM instantiation now",
+            "Application object runs in Protected View without macros"
+        ]
+    },
+    {
+        "q": "What is RDP session hijacking?",
+        "o": [
+            "Take over existing RDP session using SYSTEM privileges access",
+            "Session hijacking is prevented by session isolation feature",
+            "Hijacking requires knowing user password for the session now",
+            "RDP sessions are encrypted preventing interception attempts"
+        ]
+    },
+    {
+        "q": "What is RDP sticky keys persistence?",
+        "o": [
+            "Replace sethc.exe with cmd.exe for login screen access here",
+            "Sticky keys replacement is blocked by file protection now",
+            "Persistence requires physical access to modify system files",
+            "Login screen executables are signature verified before run"
+        ]
+    },
+    {
+        "q": "What is utilman.exe backdoor technique?",
+        "o": [
+            "Replace utility manager with command shell for access pre login",
+            "Utilman replacement is blocked by Windows Resource Protection",
+            "Backdoor requires boot from external media to modify files",
+            "Utility manager is deprecated and removed from Windows 10"
+        ]
+    },
+    {
+        "q": "What is narrator.exe backdoor?",
+        "o": [
+            "Replace narrator with malicious code for login screen access",
+            "Narrator is protected by Windows system file protection here",
+            "Backdoor requires disabling Secure Boot for file replacement",
+            "Accessibility tools are signature verified before execution"
+        ]
+    },
+    {
+        "q": "What is osk.exe backdoor technique?",
+        "o": [
+            "Replace on screen keyboard for login screen code execution",
+            "OSK replacement is prevented by code integrity enforcement",
+            "Backdoor requires modifying WinSxS store which is protected",
+            "Keyboard executable runs in AppContainer preventing abuse"
+        ]
+    },
+    {
+        "q": "What is Magnifier backdoor persistence?",
+        "o": [
+            "Replace magnifier for elevated code execution at login here",
+            "Magnifier is protected by Secure Boot verification chain now",
+            "Persistence requires boot media to replace system binaries",
+            "Accessibility backdoors are detected by boot time scanning"
+        ]
+    },
+    {
+        "q": "What is boot configuration data modification?",
+        "o": [
+            "Modify BCD to disable security features or add boot code",
+            "BCD is protected by Secure Boot preventing modification now",
+            "Configuration changes require TPM owner authorization key",
+            "Boot data modification is blocked by UEFI security policies"
+        ]
+    },
+    {
+        "q": "What is bootkit persistence technique?",
+        "o": [
+            "Modify boot records to load malicious code before OS starts",
+            "Bootkits are blocked by Secure Boot chain verification now",
+            "Persistence requires physical access and disk encryption key",
+            "Boot modification is detected by measured boot attestation"
+        ]
+    },
+    {
+        "q": "What is UEFI rootkit persistence?",
+        "o": [
+            "Persist malicious code in UEFI firmware for ultimate stealth",
+            "UEFI firmware is read only and cannot be modified by OS now",
+            "Rootkit requires hardware level access to flash firmware",
+            "Firmware modification is detected by Secure Boot attestation"
+        ]
+    },
+    {
+        "q": "What is VBS exploitation for persistence?",
+        "o": [
+            "Exploit Virtualization Based Security bypass for persistence",
+            "VBS provides absolute isolation that cannot be compromised",
+            "Exploitation requires ring minus one hypervisor access here",
+            "Persistence in VBS is impossible due to memory encryption"
+        ]
+    },
+    {
+        "q": "What is Hypervisor code injection?",
+        "o": [
+            "Inject code into hypervisor layer for rootkit functionality",
+            "Hypervisor is protected by hardware security extensions now",
+            "Code injection requires modifying signed hypervisor binary",
+            "Virtual machine isolation prevents hypervisor modification"
+        ]
+    },
+    {
+        "q": "What is driver callback abuse?",
+        "o": [
+            "Abuse legitimate driver callbacks for kernel code execution",
+            "Driver callbacks are protected from modification by PatchGuard",
+            "Callback abuse requires loading unsigned kernel driver first",
+            "Legitimate drivers validate callback parameters before use"
+        ]
+    },
+    {
+        "q": "What is PatchGuard bypass technique?",
+        "o": [
+            "Circumvent kernel patch protection for kernel modifications",
+            "PatchGuard cannot be bypassed on modern Windows versions now",
+            "Bypass requires modifying protected hypervisor memory areas",
+            "Kernel protection is enforced at hardware level by VBS here"
+        ]
+    },
+    {
+        "q": "What is DSE bypass for driver loading?",
+        "o": [
+            "Bypass Driver Signature Enforcement to load unsigned driver",
+            "DSE is enforced at boot and cannot be disabled at runtime",
+            "Bypass requires Secure Boot to be disabled in firmware now",
+            "Signature enforcement is validated by hardware attestation"
+        ]
+    },
+    {
+        "q": "What is vulnerable driver exploitation?",
+        "o": [
+            "Use signed vulnerable driver to perform kernel operations",
+            "Vulnerable drivers are revoked and blocked by Windows now",
+            "Driver exploitation requires finding unpatched zero days",
+            "Signed drivers cannot be used for malicious operations here"
+        ]
+    },
+    {
+        "q": "What is BYOVD attack technique?",
+        "o": [
+            "Bring Your Own Vulnerable Driver for kernel level access",
+            "Vulnerable drivers are blocked by HVCI driver blocklist",
+            "Technique requires finding drivers not on blocklist ever",
+            "Driver loading is prevented by application control policy"
+        ]
+    },
+    {
+        "q": "What is minifilter driver abuse?",
+        "o": [
+            "Load minifilter to intercept or hide file system operations",
+            "Minifilters require signature and altitude registration now",
+            "Filter abuse is detected by security product self protection",
+            "File system drivers cannot hide operations from kernel here"
+        ]
+    },
+    {
+        "q": "What is network filter driver abuse?",
+        "o": [
+            "Load NDIS filter to intercept or modify network traffic here",
+            "Network filters require Microsoft signing for production use",
+            "Filter driver loading is blocked by network stack integrity",
+            "Traffic modification is detected by transport layer security"
+        ]
+    },
+    {
+        "q": "What is Winsock LSP injection?",
+        "o": [
+            "Install layered service provider to intercept network calls",
+            "LSP is deprecated and not supported on modern Windows now",
+            "Provider installation requires administrator approval dialog",
+            "Winsock layers are validated at network initialization time"
+        ]
+    },
+    {
+        "q": "What is WFP callout driver abuse?",
+        "o": [
+            "Install Windows Filtering Platform callout for packet inspection",
+            "WFP callouts require Microsoft signing for kernel loading",
+            "Driver abuse is blocked by network security product protection",
+            "Callout installation is logged and detected by EDR solutions"
+        ]
+    },
+    {
+        "q": "What is keyboard filter driver abuse?",
+        "o": [
+            "Load keyboard filter to log keystrokes at kernel level here",
+            "Keyboard drivers require hardware certification signatures now",
+            "Filter loading is blocked by input device stack protection",
+            "Keystroke logging is detected by behavioral analysis always"
+        ]
+    },
+    {
+        "q": "What is display miniport driver abuse?",
+        "o": [
+            "Exploit display driver for kernel code execution via GPU now",
+            "Display drivers run in user mode session zero sandbox here",
+            "Driver exploitation requires graphics hardware specific bugs",
+            "Miniport drivers are protected by display stack integrity"
+        ]
+    },
+    {
+        "q": "What is print processor exploitation?",
+        "o": [
+            "Load malicious print processor DLL for SYSTEM code execution",
+            "Print processors require spooler service administrator rights",
+            "Processor loading is blocked by spooler isolation feature",
+            "DLL verification prevents malicious processor installation"
+        ]
+    },
+    {
+        "q": "What is print provider exploitation?",
+        "o": [
+            "Install malicious print provider for local privilege escalation",
+            "Print providers require Microsoft signature for installation",
+            "Provider exploitation is blocked on all Windows versions now",
+            "Spooler service validates providers before loading any DLLs"
+        ]
+    },
+    {
+        "q": "What is print monitor persistence?",
+        "o": [
+            "Install malicious port monitor for SYSTEM level persistence now",
+            "Monitor installation requires signature verification by spooler",
+            "Persistence is detected by endpoint security solutions always",
+            "Port monitors are deprecated in modern Windows print stack"
+        ]
+    },
+    {
+        "q": "What is password filter DLL abuse?",
+        "o": [
+            "Install filter to capture plaintext passwords during changes",
+            "Password filters are loaded in authenticated session only now",
+            "Filter installation requires domain controller admin access",
+            "DLL loading is blocked by LSA protection on modern systems"
+        ]
+    },
+    {
+        "q": "What is authentication package abuse?",
+        "o": [
+            "Load malicious auth package to capture credentials at logon",
+            "Authentication packages require Microsoft signing for LSA",
+            "Package abuse is blocked by credential guard on Windows 10",
+            "Logon packages run in isolated VBS environment only here"
+        ]
+    },
+    {
+        "q": "What is network provider credential harvesting?",
+        "o": [
+            "Install network provider to capture network credentials live",
+            "Providers run in low privilege context without credentials",
+            "Network provider installation requires driver signing now",
+            "Credential access is blocked by network provider isolation"
+        ]
+    },
+    {
+        "q": "What is Credential Manager DLL injection?",
+        "o": [
+            "Inject into Credential Manager process to harvest stored creds",
+            "Credential Manager is protected by PPL on modern Windows now",
+            "Injection requires bypassing memory protection mechanisms",
+            "Stored credentials are encrypted with hardware backed keys"
+        ]
+    },
+    {
+        "q": "What is Remote Desktop credential theft?",
+        "o": [
+            "Extract RDP credentials from memory during active session now",
+            "Credentials are cleared from memory after connection setup",
+            "Theft requires SYSTEM access which defeats credential guard",
+            "RDP uses NLA preventing any credential extraction attempts"
+        ]
+    },
+    {
+        "q": "What is CredSSP exploitation?",
+        "o": [
+            "Downgrade or relay CredSSP authentication for credential theft",
+            "CredSSP is protected by TLS preventing any relay attacks now",
+            "Exploitation requires man in middle position on network here",
+            "Protocol version checking prevents downgrade attacks always"
+        ]
+    },
+    {
+        "q": "What is NLA bypass technique?",
+        "o": [
+            "Bypass Network Level Authentication to access RDP login here",
+            "NLA is enforced at protocol level and cannot be bypassed now",
+            "Bypass requires modifying client and server configurations",
+            "Authentication requirement is validated by domain controller"
+        ]
+    },
+    {
+        "q": "What is RemoteFX exploitation?",
+        "o": [
+            "Exploit RemoteFX for code execution via graphics rendering",
+            "RemoteFX is removed from Windows due to security concerns now",
+            "Exploitation requires specialized graphics hardware access",
+            "Graphics rendering runs in isolated virtual machine context"
+        ]
+    },
+    {
+        "q": "What is Hyper-V escape technique?",
+        "o": [
+            "Break out of virtual machine to execute code on host system",
+            "VM escape is prevented by hardware virtualization extensions",
+            "Escape requires exploiting hypervisor which is rare scenario",
+            "Guest isolation is enforced by CPU virtualization features"
+        ]
+    },
+    {
+        "q": "What is VMBus exploitation?",
+        "o": [
+            "Exploit Hyper-V VM bus for host compromise from guest machine",
+            "VMBus is protected by input validation in hypervisor layer",
+            "Exploitation requires finding zero day in bus implementation",
+            "Bus communication is encrypted preventing unauthorized access"
+        ]
+    },
+    {
+        "q": "What is Integration Services abuse?",
+        "o": [
+            "Abuse Hyper-V integration components for guest to host attack",
+            "Integration services run in isolated security context always",
+            "Abuse requires administrative access on guest virtual machine",
+            "Components are signature verified before loading in guest"
+        ]
+    },
+    {
+        "q": "What is VSC exploitation in Hyper-V?",
+        "o": [
+            "Exploit Virtual Service Consumer for privilege escalation path",
+            "Service consumers are protected by VBS memory encryption now",
+            "Exploitation requires kernel access in guest virtual machine",
+            "Consumers run in minimal interface with limited attack surface"
+        ]
+    },
+    {
+        "q": "What is Windows Container escape?",
+        "o": [
+            "Break out of Windows container to access host resources now",
+            "Container isolation is enforced by kernel namespace security",
+            "Escape requires exploiting job object or namespace boundaries",
+            "Containers run in Hyper-V isolated mode preventing escapes"
+        ]
+    },
+    {
+        "q": "What is Docker Windows privilege escalation?",
+        "o": [
+            "Escalate from container to host via misconfigured Docker setup",
+            "Docker on Windows provides complete isolation from host always",
+            "Escalation requires exploiting Docker daemon vulnerabilities",
+            "Container privileges are limited by Windows job objects here"
+        ]
+    },
+    {
+        "q": "What is Windows Sandbox escape?",
+        "o": [
+            "Break out of Windows Sandbox VM to access host file system",
+            "Sandbox is hardware isolated virtual machine preventing escape",
+            "Escape requires exploiting hypervisor which is highly unlikely",
+            "Sandbox uses separate kernel instance with no host sharing"
+        ]
+    },
+    {
+        "q": "What is AppContainer escape technique?",
+        "o": [
+            "Break out of AppContainer sandbox to access system resources",
+            "AppContainer provides token based isolation that is complete",
+            "Escape requires kernel vulnerability for capability bypass",
+            "Container capabilities cannot be expanded after creation"
+        ]
+    },
+    {
+        "q": "What is UWP app privilege escalation?",
+        "o": [
+            "Exploit UWP application for access beyond declared capabilities",
+            "UWP apps are restricted by AppContainer without exceptions now",
+            "Escalation requires finding vulnerability in broker process",
+            "Application capabilities are enforced at kernel token level"
+        ]
+    },
+    {
+        "q": "What is broker process exploitation?",
+        "o": [
+            "Exploit brokering process to escape from sandboxed application",
+            "Broker processes are minimal and have small attack surface now",
+            "Exploitation requires finding IPC vulnerabilities in broker",
+            "Brokered operations are validated before execution always"
+        ]
+    },
+    {
+        "q": "What is RuntimeBroker abuse?",
+        "o": [
+            "Exploit RuntimeBroker for UWP app capability bypass attack",
+            "Runtime broker validates all capability requests strictly now",
+            "Abuse requires finding vulnerability in capability checking",
+            "Broker runs with minimal privileges insufficient for escape"
+        ]
+    },
+    {
+        "q": "What is Background Task Host exploitation?",
+        "o": [
+            "Exploit background task infrastructure for code execution now",
+            "Task host runs in AppContainer with limited capabilities here",
+            "Exploitation requires finding vulnerability in task scheduling",
+            "Background tasks are validated before execution by Windows"
+        ]
+    },
+    {
+        "q": "What is Windows Notification exploitation?",
+        "o": [
+            "Abuse notification infrastructure for code execution or persistence",
+            "Notification system runs in isolated user context without privileges",
+            "Exploitation requires finding vulnerability in toast handler",
+            "Notifications cannot execute code only display information"
+        ]
+    },
+    {
+        "q": "What is Action Center abuse for persistence?",
+        "o": [
+            "Install malicious quick action for persistent code execution here",
+            "Action center only displays predefined system toggles now",
+            "Persistence requires modifying protected system settings only",
+            "Quick actions cannot execute arbitrary code on the system"
+        ]
+    },
+    {
+        "q": "What is Windows Search exploitation?",
+        "o": [
+            "Exploit search indexer for local privilege escalation attack now",
+            "Search service runs with minimal privileges in user context",
+            "Exploitation requires finding vulnerability in content handler",
+            "Indexer cannot access files outside of permitted scope here"
+        ]
+    },
+    {
+        "q": "What is IFilter exploitation technique?",
+        "o": [
+            "Abuse search filter handler for code execution during indexing",
+            "IFilters are loaded in isolated process with no privileges now",
+            "Filter exploitation requires finding parsing vulnerability here",
+            "Content handlers are sandboxed preventing privilege escalation"
+        ]
+    },
+    {
+        "q": "What is Protocol Handler exploitation?",
+        "o": [
+            "Abuse custom URL protocol handler for arbitrary code execution",
+            "Protocol handlers are validated before registration by Windows",
+            "Exploitation requires user interaction with malicious link only",
+            "Handlers run in AppContainer preventing privilege escalation"
+        ]
+    },
+    {
+        "q": "What is file association hijacking?",
+        "o": [
+            "Modify file association to execute malicious code on file open",
+            "Associations are protected by application manifest verification",
+            "Hijacking requires administrator privileges for system types",
+            "File handlers are validated against default application hash"
+        ]
+    },
+    {
+        "q": "What is ProgID hijacking?",
+        "o": [
+            "Modify programmatic identifier to redirect application launch here",
+            "ProgIDs are protected from modification by registry ACL checks",
+            "Hijacking requires modifying HKLM registry which needs admin",
+            "Program identifiers are validated against signature database"
+        ]
+    },
+    {
+        "q": "What is shell extension hijacking?",
+        "o": [
+            "Install malicious shell extension for code execution in Explorer",
+            "Shell extensions require Microsoft signature for Explorer loading",
+            "Hijacking extensions is blocked by Windows Defender SmartScreen",
+            "Extensions are loaded in isolated broker process not Explorer"
+        ]
+    },
+    {
+        "q": "What is Context Menu handler abuse?",
+        "o": [
+            "Install malicious handler to execute code on right click menu",
+            "Context handlers require signature for Explorer shell loading",
+            "Menu handler abuse is detected by all security products now",
+            "Handlers run in separate process from Explorer preventing abuse"
+        ]
+    },
+    {
+        "q": "What is Icon Overlay handler abuse?",
+        "o": [
+            "Install malicious icon handler for code execution in Explorer now",
+            "Overlay handlers are signature verified before loading here",
+            "Handler abuse requires finding crash vulnerability in Explorer",
+            "Icon handlers run with limited privileges in separate process"
+        ]
+    },
+    {
+        "q": "What is Thumbnail Handler exploitation?",
+        "o": [
+            "Exploit thumbnail generation for code execution via media file",
+            "Thumbnail handlers run in isolated low privilege process now",
+            "Exploitation requires finding parsing vulnerability in handler",
+            "Handlers are sandboxed preventing access to system resources"
+        ]
+    },
+    {
+        "q": "What is Preview Handler exploitation?",
+        "o": [
+            "Exploit file preview for code execution via malicious document",
+            "Preview handlers run in AppContainer with no privileges here",
+            "Exploitation requires escaping preview handler sandbox first",
+            "File previews are generated in isolated virtual machine now"
+        ]
+    },
+    {
+        "q": "What is Property Handler exploitation?",
+        "o": [
+            "Exploit metadata handler for code execution via file properties",
+            "Property handlers run in protected low privilege context now",
+            "Exploitation requires finding crash bug in property parsing",
+            "Handlers cannot access resources outside their sandbox ever"
+        ]
+    },
+    {
+        "q": "What is Copy Hook exploitation?",
+        "o": [
+            "Install malicious copy hook for code execution on file copy here",
+            "Copy hooks require signature verified DLL for installation now",
+            "Hook exploitation is blocked by Windows file operation security",
+            "File hooks run in isolated process separate from Explorer"
+        ]
+    },
+    {
+        "q": "What is Drop Handler exploitation?",
+        "o": [
+            "Install malicious drop handler for code execution on drag drop",
+            "Drop handlers require elevated installation for shell integration",
+            "Handler exploitation is detected by application behavior analysis",
+            "Drag drop operations are validated before handler invocation"
+        ]
+    },
+    {
+        "q": "What is Start Menu persistence technique?",
+        "o": [
+            "Place malicious shortcut in start menu for user login execution",
+            "Start menu items are scanned and blocked by SmartScreen always",
+            "Persistence requires bypassing startup folder monitoring here",
+            "Shortcuts cannot execute code without user explicit interaction"
+        ]
+    },
+    {
+        "q": "What is Logon Script persistence?",
+        "o": [
+            "Configure logon script via GPO for code execution at user login",
+            "Logon scripts require domain admin privileges for configuration",
+            "Script persistence is logged and detected by security products",
+            "Scripts run in restricted mode without filesystem write access"
+        ]
+    },
+    {
+        "q": "What is Startup Folder persistence detection evasion?",
+        "o": [
+            "Use obfuscated LNK file to evade startup folder monitoring now",
+            "Startup items are fully analyzed regardless of obfuscation here",
+            "Evasion requires modifying Windows Defender exclusion list",
+            "All startup executables are scanned before process creation"
+        ]
+    },
+    {
+        "q": "What is Registry Run key persistence evasion?",
+        "o": [
+            "Use alternate registry location to evade autorun detection tools",
+            "All autorun locations are monitored by security products now",
+            "Evasion requires finding undocumented persistence locations",
+            "Registry autoruns are blocked by application control policies"
+        ]
+    },
+    {
+        "q": "What is screensaver persistence?",
+        "o": [
+            "Configure screensaver to execute malicious code on activation",
+            "Screensavers require signature verification before execution now",
+            "Persistence is detected by monitoring SCRNSAVE.EXE registry key",
+            "Saver executables run in isolated user context without privileges"
+        ]
+    },
+    {
+        "q": "What is Netsh helper DLL persistence?",
+        "o": [
+            "Register malicious netsh helper for code execution on netsh run",
+            "Helper registration requires administrator privileges always now",
+            "Persistence is detected by monitoring netsh extension registry",
+            "Helpers are validated against allowlist before loading here"
+        ]
+    },
+    {
+        "q": "What is AppInit DLLs persistence?",
+        "o": [
+            "Register DLL to load into every user mode process via appinit",
+            "AppInit is disabled by secure boot on Windows 8 and later now",
+            "DLL persistence requires signature for loading into processes",
+            "Initialization DLLs are blocked by code integrity enforcement"
+        ]
+    },
+    {
+        "q": "What is AppCert DLLs persistence?",
+        "o": [
+            "Register DLL to load via CreateProcess API call validation hook",
+            "AppCert is deprecated and disabled on all modern Windows now",
+            "DLL registration requires bypassing driver signing enforcement",
+            "Certificate DLLs are scanned before loading by security tools"
+        ]
+    },
+    {
+        "q": "What is Image Hijacks persistence?",
+        "o": [
+            "Use debugger key to redirect application execution to malware",
+            "Image hijacks are detected by all endpoint security products now",
+            "Persistence requires administrator rights for registry modification",
+            "Debugger redirection is blocked by process creation callbacks"
+        ]
+    },
+    {
+        "q": "What is DNSAdmins privilege escalation detection?",
+        "o": [
+            "Monitor serverLevelPluginDll attribute for malicious DLL path value",
+            "DNS server blocks DLL loading from network paths automatically",
+            "Detection requires advanced log analysis not available by default",
+            "Plugin DLL changes are not logged by Windows event logging"
+        ]
+    },
+    {
+        "q": "What is Kerberoasting detection strategy?",
+        "o": [
+            "Monitor for abnormal TGS requests especially RC4 ticket requests",
+            "Roasting attacks are undetectable by network monitoring alone",
+            "Detection requires endpoint agents on all domain controllers",
+            "Ticket requests are encrypted preventing any content analysis"
+        ]
+    },
+    {
+        "q": "What is DCSync detection approach?",
+        "o": [
+            "Monitor for non-DC replication requests using Directory Services log",
+            "DCSync cannot be detected since it uses legitimate replication",
+            "Detection requires network capture of all DC traffic exclusively",
+            "Replication traffic is encrypted preventing content inspection"
+        ]
+    },
+    {
+        "q": "What is Golden Ticket detection challenge?",
+        "o": [
+            "Forged tickets may have no domain controller event for validation",
+            "Golden tickets are detected by their unusual lifetime values now",
+            "Detection requires real time analysis of all Kerberos traffic",
+            "Ticket forgery is immediately detected by domain controllers"
+        ]
+    },
+    {
+        "q": "What is ASREProasting detection method?",
+        "o": [
+            "Monitor event 4768 with encryption type 23 indicating RC4 use",
+            "Roasting generates no events and cannot be detected by logs",
+            "Detection requires monitoring all authentication DNS queries",
+            "AS-REP requests for disabled preauth are not logged by default"
+        ]
+    },
+    {
+        "q": "What is credential dumping detection strategy?",
+        "o": [
+            "Monitor for LSASS access with specific handle rights pattern seen",
+            "Credential dumping is undetectable without kernel level hooks",
+            "Detection requires limiting dump tool execution using allowlist",
+            "Memory access cannot be monitored by any security product now"
+        ]
+    },
+    {
+        "q": "What is Pass the Hash detection approach?",
+        "o": [
+            "Monitor for NTLM logons where username differs from system name",
+            "PTH attacks use legitimate credentials and cannot be detected",
+            "Detection requires blocking all NTLM authentication network wide",
+            "Hash usage is identical to password authentication in logs"
+        ]
+    },
+    {
+        "q": "What is lateral movement detection via WMI?",
+        "o": [
+            "Monitor process creation events with WmiPrvSE as parent process",
+            "WMI execution is too common to distinguish malicious activity",
+            "Detection requires blocking all remote WMI usage in environment",
+            "Provider host process tree is not logged by Windows by default"
+        ]
+    },
+    {
+        "q": "What is ADCS attack detection strategy?",
+        "o": [
+            "Monitor certificate requests for unusual subject or SAN values here",
+            "Certificate attacks are undetectable through normal log analysis",
+            "Detection requires real time validation of all certificate chains",
+            "ADCS does not log certificate request details for analysis now"
+        ]
+    },
+    {
+        "q": "What is Shadow Credentials detection approach?",
+        "o": [
+            "Monitor changes to msDS-KeyCredentialLink attribute in AD objects",
+            "Key credential modifications are not logged by Active Directory",
+            "Detection requires network capture of all LDAP modification traffic",
+            "Attribute changes are encrypted preventing content inspection"
+        ]
+    },
+    {
+        "q": "What is print spooler attack detection?",
+        "o": [
+            "Monitor for driver installation and spooler service DLL loading here",
+            "Spooler attacks are too fast to detect before damage is done now",
+            "Detection requires disabling print spooler which breaks printing",
+            "Driver loading is normal operation and cannot be distinguished"
+        ]
+    },
+    {
+        "q": "What is coerced authentication detection?",
+        "o": [
+            "Monitor for outbound SMB or HTTP connections from domain controllers",
+            "Coercion attacks cannot be detected since they use normal protocols",
+            "Detection requires blocking all outbound connections from DCs here",
+            "Authentication coercion generates no events on source system"
+        ]
+    },
+    {
+        "q": "What is NTLM relay detection strategy?",
+        "o": [
+            "Monitor for authentication from unexpected source IP addresses now",
+            "Relay attacks use legitimate credentials and cannot be detected",
+            "Detection requires enabling EPA which may break legacy applications",
+            "Relayed authentication appears identical to normal auth in logs"
+        ]
+    },
+    {
+        "q": "What is privilege escalation via service modification detection?",
+        "o": [
+            "Monitor service configuration changes especially binary path edits",
+            "Service modifications by admins are too common to alert on now",
+            "Detection requires baseline of all services which changes often",
+            "Configuration changes are not logged in Windows event log system"
+        ]
+    },
+    {
+        "q": "What is scheduled task based attack detection?",
+        "o": [
+            "Monitor task creation events with unusual actions or permissions set",
+            "Task creation is legitimate activity that cannot be distinguished",
+            "Detection requires blocking all task creation which is impractical",
+            "Scheduled tasks are not logged by Windows event log by default"
+        ]
+    },
+    {
+        "q": "What is PowerShell based attack detection approach?",
+        "o": [
+            "Enable script block logging and monitor for suspicious commands now",
+            "Attackers can bypass logging by using older PowerShell versions",
+            "Detection requires analyzing all PowerShell which creates noise",
+            "Script execution is too common to generate actionable alerts"
+        ]
+    },
+    {
+        "q": "What is EDR evasion detection paradox?",
+        "o": [
+            "Detecting evasion attempts can reveal attacker presence on system",
+            "Evasion techniques are invisible to all detection mechanisms now",
+            "Detection requires kernel level visibility which attackers disable",
+            "Evasion success means no artifacts exist for detection analysis"
+        ]
+    },
+    {
+        "q": "What is behavioral detection of privilege escalation?",
+        "o": [
+            "Monitor for unusual process relationships and privilege changes here",
+            "Behavioral analysis generates too many false positives to be useful",
+            "Detection requires baselining all systems which is impractical now",
+            "Privilege changes are legitimate and cannot indicate compromise"
+        ]
+    },
+    {
+        "q": "What is memory forensics for privilege escalation?",
+        "o": [
+            "Analyze memory dumps for evidence of token manipulation or injection",
+            "Memory forensics requires system offline which destroys evidence",
+            "Analysis assumes attacker did not use anti-forensics techniques",
+            "Memory evidence is volatile and lost before investigation starts"
+        ]
+    },
+    {
+        "q": "What is kernel debugging for escalation analysis?",
+        "o": [
+            "Attach kernel debugger to analyze exploitation in real time here",
+            "Debugging requires physical access making remote analysis impossible",
+            "Attacker code terminates when debugger attachment is detected now",
+            "Kernel debugging is disabled by Secure Boot on production systems"
+        ]
+    },
+    {
+        "q": "What is hypervisor introspection for detection?",
+        "o": [
+            "Monitor guest OS from hypervisor layer for privilege escalation here",
+            "Introspection requires custom hypervisor breaking compatibility now",
+            "Attackers can detect and evade introspection from within guest OS",
+            "Hypervisor visibility is limited and cannot see all guest activity"
+        ]
+    }
+]

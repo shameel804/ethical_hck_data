@@ -1,0 +1,4538 @@
+[
+    {
+        "q": "What is API security testing?",
+        "o": [
+            "Verify API security controls work",
+            "Normal functional testing only",
+            "Proper performance testing here",
+            "Load testing for APIs"
+        ]
+    },
+    {
+        "q": "What is the purpose of API testing?",
+        "o": [
+            "Find vulnerabilities in APIs now",
+            "Normal test user interface only",
+            "Proper database testing only here",
+            "Network testing purpose"
+        ]
+    },
+    {
+        "q": "What is OWASP API Security?",
+        "o": [
+            "Top API security risks list now",
+            "Normal web security only here now",
+            "Proper mobile security testing",
+            "Desktop security testing"
+        ]
+    },
+    {
+        "q": "What is API fuzzing?",
+        "o": [
+            "Send malformed data to find bugs",
+            "Normal valid data testing only here",
+            "Proper manual testing approach",
+            "Performance testing method"
+        ]
+    },
+    {
+        "q": "What is Swagger used for?",
+        "o": [
+            "Document and test API endpoints now",
+            "Normal database documentation only",
+            "Proper code documentation here",
+            "System documentation only"
+        ]
+    },
+    {
+        "q": "What is OpenAPI specification?",
+        "o": [
+            "Standard for describing REST APIs",
+            "Normal SOAP API standard only here",
+            "Proper GraphQL standard here now",
+            "gRPC specification"
+        ]
+    },
+    {
+        "q": "What is Postman used for?",
+        "o": [
+            "API development and testing tool",
+            "Normal email client only here now",
+            "Proper web browser software here",
+            "Database management tool"
+        ]
+    },
+    {
+        "q": "What is API authentication testing?",
+        "o": [
+            "Verify auth mechanisms are secure",
+            "Normal skip authentication tests here",
+            "Proper test UI login only now",
+            "Database auth testing only"
+        ]
+    },
+    {
+        "q": "What is JWT testing?",
+        "o": [
+            "Test JSON Web Token security now",
+            "Normal skip token testing here",
+            "Proper session cookies only here",
+            "Basic auth testing only"
+        ]
+    },
+    {
+        "q": "What is OAuth testing?",
+        "o": [
+            "Verify OAuth flow security now here",
+            "Normal basic auth testing only",
+            "Proper API key testing only here",
+            "Certificate testing only"
+        ]
+    },
+    {
+        "q": "What is API authorization testing?",
+        "o": [
+            "Verify access controls work correctly",
+            "Normal authentication testing only",
+            "Proper skip authorization tests here",
+            "UI permission testing"
+        ]
+    },
+    {
+        "q": "What is BOLA testing?",
+        "o": [
+            "Test Broken Object Level Auth now",
+            "Normal authentication bypass only here",
+            "Proper injection testing here now",
+            "XSS testing method"
+        ]
+    },
+    {
+        "q": "What is IDOR testing?",
+        "o": [
+            "Test Insecure Direct Object Reference",
+            "Normal injection testing only here now",
+            "Proper XSS testing method used here",
+            "CSRF testing approach"
+        ]
+    },
+    {
+        "q": "What is rate limiting testing?",
+        "o": [
+            "Verify API throttling works now here",
+            "Normal no rate limit testing needed",
+            "Proper performance testing only here",
+            "Load testing approach"
+        ]
+    },
+    {
+        "q": "What is input validation testing?",
+        "o": [
+            "Test API handles bad input safely",
+            "Normal accept all input types here now",
+            "Proper skip validation tests here",
+            "Output testing only"
+        ]
+    },
+    {
+        "q": "What is SQL injection testing?",
+        "o": [
+            "Test API for SQL injection vulns",
+            "Normal database testing only here now",
+            "Proper frontend testing method here",
+            "Network testing approach"
+        ]
+    },
+    {
+        "q": "What is command injection testing?",
+        "o": [
+            "Test for OS command execution now",
+            "Normal SQL injection only here now",
+            "Proper XSS testing method used here",
+            "CSRF testing approach"
+        ]
+    },
+    {
+        "q": "What is XSS testing in APIs?",
+        "o": [
+            "Test for script injection in responses",
+            "Normal frontend XSS testing only here",
+            "Proper SQL injection testing here now",
+            "CSRF testing method"
+        ]
+    },
+    {
+        "q": "What is API security headers testing?",
+        "o": [
+            "Verify security headers are set now",
+            "Normal skip header testing here now",
+            "Proper body content testing only",
+            "URL testing approach"
+        ]
+    },
+    {
+        "q": "What is CORS testing?",
+        "o": [
+            "Test Cross-Origin Resource Sharing now",
+            "Normal skip CORS testing here now",
+            "Proper CSRF testing only here used",
+            "XSS testing method"
+        ]
+    },
+    {
+        "q": "What is SSL/TLS testing for APIs?",
+        "o": [
+            "Verify secure transport is used now",
+            "Normal skip encryption testing here",
+            "Proper application testing only here",
+            "Database encryption only"
+        ]
+    },
+    {
+        "q": "What is certificate pinning testing?",
+        "o": [
+            "Test if cert pinning is enforced",
+            "Normal skip certificate tests here now",
+            "Proper basic TLS testing only here",
+            "HTTP testing approach"
+        ]
+    },
+    {
+        "q": "What is API versioning testing?",
+        "o": [
+            "Test security across API versions now",
+            "Normal test latest version only here",
+            "Proper skip versioning tests here now",
+            "Single version testing"
+        ]
+    },
+    {
+        "q": "What is deprecated API testing?",
+        "o": [
+            "Test old API versions for vulns now",
+            "Normal ignore old versions here now",
+            "Proper test new versions only here",
+            "Skip deprecated endpoints"
+        ]
+    },
+    {
+        "q": "What is API documentation testing?",
+        "o": [
+            "Verify docs match implementation",
+            "Normal skip documentation review here",
+            "Proper code review only here now",
+            "Manual testing only"
+        ]
+    },
+    {
+        "q": "What is Burp Suite for APIs?",
+        "o": [
+            "Web and API security testing tool",
+            "Normal web testing only here now used",
+            "Proper network scanning tool here",
+            "Database testing tool"
+        ]
+    },
+    {
+        "q": "What is OWASP ZAP for APIs?",
+        "o": [
+            "Open source API security scanner",
+            "Normal web scanner only here now used",
+            "Proper network scanner here used now",
+            "Database scanner tool"
+        ]
+    },
+    {
+        "q": "What is API endpoint discovery?",
+        "o": [
+            "Find all API endpoints to test now",
+            "Normal test known endpoints only here",
+            "Proper skip discovery phase here now",
+            "Manual enumeration only"
+        ]
+    },
+    {
+        "q": "What is API enumeration testing?",
+        "o": [
+            "Discover API resources and methods",
+            "Normal skip enumeration phase here now",
+            "Proper known endpoints only here",
+            "Documentation review only"
+        ]
+    },
+    {
+        "q": "What is parameter tampering testing?",
+        "o": [
+            "Modify API params to find vulns now",
+            "Normal use valid params only here now",
+            "Proper skip param testing here used",
+            "Header testing only"
+        ]
+    },
+    {
+        "q": "What is HTTP method testing?",
+        "o": [
+            "Test all HTTP methods on endpoints now",
+            "Normal test GET and POST only here",
+            "Proper skip method testing here now",
+            "GET testing only"
+        ]
+    },
+    {
+        "q": "What is content type testing?",
+        "o": [
+            "Test different content types now here",
+            "Normal JSON testing only here used now",
+            "Proper skip content type tests here",
+            "XML testing only"
+        ]
+    },
+    {
+        "q": "What is API error handling testing?",
+        "o": [
+            "Test API error responses for leaks",
+            "Normal skip error testing here now",
+            "Proper success responses only here",
+            "Ignore error messages"
+        ]
+    },
+    {
+        "q": "What is verbose error testing?",
+        "o": [
+            "Check for info disclosure in errors",
+            "Normal ignore error messages here now",
+            "Proper skip verbose error tests here",
+            "Generic error testing"
+        ]
+    },
+    {
+        "q": "What is API response validation?",
+        "o": [
+            "Verify response security is proper now",
+            "Normal skip response validation here",
+            "Proper request testing only here now",
+            "Header testing only"
+        ]
+    },
+    {
+        "q": "What is mass assignment testing?",
+        "o": [
+            "Test for unintended property binding",
+            "Normal skip mass assignment tests here",
+            "Proper input validation only here now",
+            "Output testing only"
+        ]
+    },
+    {
+        "q": "What is business logic testing?",
+        "o": [
+            "Test API business rule enforcement",
+            "Normal skip logic testing here now",
+            "Proper technical testing only here",
+            "Automated scanning only"
+        ]
+    },
+    {
+        "q": "What is API abuse testing?",
+        "o": [
+            "Test for abuse scenarios now here",
+            "Normal functional testing only here now",
+            "Proper skip abuse testing here used",
+            "Performance testing only"
+        ]
+    },
+    {
+        "q": "What is replay attack testing?",
+        "o": [
+            "Test for request replay vulnerabilities",
+            "Normal skip replay testing here now",
+            "Proper unique request testing only",
+            "Real-time testing only"
+        ]
+    },
+    {
+        "q": "What is API session testing?",
+        "o": [
+            "Test session management security now",
+            "Normal skip session testing here now",
+            "Proper stateless API testing only",
+            "Token testing only"
+        ]
+    },
+    {
+        "q": "What is token expiration testing?",
+        "o": [
+            "Verify tokens expire correctly now here",
+            "Normal skip expiration tests here now",
+            "Proper permanent tokens testing here",
+            "Session testing only"
+        ]
+    },
+    {
+        "q": "What is token refresh testing?",
+        "o": [
+            "Test token refresh flow security now",
+            "Normal skip refresh testing here now",
+            "Proper single token testing only here",
+            "Access token only"
+        ]
+    },
+    {
+        "q": "What is API key testing?",
+        "o": [
+            "Test API key security and rotation now",
+            "Normal skip API key testing here now",
+            "Proper OAuth testing only here used",
+            "JWT testing only"
+        ]
+    },
+    {
+        "q": "What is basic auth testing?",
+        "o": [
+            "Test basic authentication security now",
+            "Normal skip basic auth tests here now",
+            "Proper modern auth only testing here",
+            "Token auth testing"
+        ]
+    },
+    {
+        "q": "What is bearer token testing?",
+        "o": [
+            "Test bearer token implementation now",
+            "Normal skip bearer token tests here",
+            "Proper basic auth testing only here",
+            "Cookie auth testing"
+        ]
+    },
+    {
+        "q": "What is API logging testing?",
+        "o": [
+            "Verify sensitive data not logged now",
+            "Normal skip logging review here now",
+            "Proper log everything approach here",
+            "No logging testing"
+        ]
+    },
+    {
+        "q": "What is sensitive data exposure testing?",
+        "o": [
+            "Test for PII leaks in responses now",
+            "Normal skip data exposure tests here",
+            "Proper return all data approach here",
+            "No data testing"
+        ]
+    },
+    {
+        "q": "What is data encryption testing?",
+        "o": [
+            "Verify sensitive data is encrypted now",
+            "Normal skip encryption testing here",
+            "Proper plain text acceptable here now",
+            "No encryption testing"
+        ]
+    },
+    {
+        "q": "What is API contract testing?",
+        "o": [
+            "Verify API meets its specification now",
+            "Normal skip contract testing here now",
+            "Proper ad-hoc testing only here used",
+            "No specification testing"
+        ]
+    },
+    {
+        "q": "What is schema validation testing?",
+        "o": [
+            "Test response matches schema now here",
+            "Normal skip schema validation here now",
+            "Proper accept any response here used",
+            "No schema testing"
+        ]
+    },
+    {
+        "q": "What is negative testing for APIs?",
+        "o": [
+            "Test API with invalid inputs now here",
+            "Normal valid input testing only here",
+            "Proper skip negative testing here now",
+            "Positive testing only"
+        ]
+    },
+    {
+        "q": "What is boundary testing for APIs?",
+        "o": [
+            "Test parameter limits and boundaries",
+            "Normal skip boundary testing here now",
+            "Proper normal values only here used",
+            "Average value testing"
+        ]
+    },
+    {
+        "q": "What is null value testing?",
+        "o": [
+            "Test API response to null values now",
+            "Normal skip null testing here now used",
+            "Proper valid values only here used",
+            "Non-null testing only"
+        ]
+    },
+    {
+        "q": "What is empty string testing?",
+        "o": [
+            "Test API with empty string inputs now",
+            "Normal skip empty string tests here",
+            "Proper valid strings only here used",
+            "Non-empty testing"
+        ]
+    },
+    {
+        "q": "What is special character testing?",
+        "o": [
+            "Test API with special characters now",
+            "Normal skip special char tests here",
+            "Proper alphanumeric only here used now",
+            "Letter testing only"
+        ]
+    },
+    {
+        "q": "What is unicode testing for APIs?",
+        "o": [
+            "Test API handling of unicode chars",
+            "Normal ASCII testing only here now used",
+            "Proper skip unicode tests here now",
+            "English only testing"
+        ]
+    },
+    {
+        "q": "What is encoding testing?",
+        "o": [
+            "Test various encoding formats now here",
+            "Normal UTF-8 testing only here used now",
+            "Proper skip encoding tests here now",
+            "No encoding testing"
+        ]
+    },
+    {
+        "q": "What is large payload testing?",
+        "o": [
+            "Test API with oversized payloads now",
+            "Normal small payloads only here used",
+            "Proper skip size testing here now",
+            "Normal size testing"
+        ]
+    },
+    {
+        "q": "What is file upload testing?",
+        "o": [
+            "Test file upload security in APIs now",
+            "Normal skip upload testing here now used",
+            "Proper text data only here used now",
+            "JSON testing only"
+        ]
+    },
+    {
+        "q": "What is GraphQL introspection testing?",
+        "o": [
+            "Test if introspection is disabled now",
+            "Normal introspection is safe here now",
+            "Proper skip introspection test here",
+            "Allow introspection"
+        ]
+    },
+    {
+        "q": "What is GraphQL query depth testing?",
+        "o": [
+            "Test for query depth DoS attacks now",
+            "Normal no depth limits needed here now",
+            "Proper skip depth testing here used",
+            "Allow any depth"
+        ]
+    },
+    {
+        "q": "What is batch request testing?",
+        "o": [
+            "Test batching for abuse potential now",
+            "Normal skip batch testing here now used",
+            "Proper single request testing only",
+            "No batch testing"
+        ]
+    },
+    {
+        "q": "What is race condition testing?",
+        "o": [
+            "Test for timing vulnerabilities now",
+            "Normal skip race condition tests here",
+            "Proper sequential testing only here",
+            "Single thread testing"
+        ]
+    },
+    {
+        "q": "What is concurrency testing?",
+        "o": [
+            "Test API under concurrent requests now",
+            "Normal single request testing only here",
+            "Proper skip concurrency tests here now",
+            "Sequential testing"
+        ]
+    },
+    {
+        "q": "What is API performance testing?",
+        "o": [
+            "Test API response times and limits now",
+            "Normal skip performance tests here now",
+            "Proper functional testing only here",
+            "Security testing only"
+        ]
+    },
+    {
+        "q": "What is load testing for APIs?",
+        "o": [
+            "Test API behavior under heavy load now",
+            "Normal light load testing only here now",
+            "Proper skip load testing here used now",
+            "Single user testing"
+        ]
+    },
+    {
+        "q": "What is stress testing for APIs?",
+        "o": [
+            "Test API at and beyond capacity now",
+            "Normal normal load testing only here",
+            "Proper skip stress tests here used now",
+            "Light testing only"
+        ]
+    },
+    {
+        "q": "What is API penetration testing?",
+        "o": [
+            "Simulate attacks on API infrastructure",
+            "Normal automated scanning only here now",
+            "Proper skip pen testing here used now",
+            "Vulnerability scan only"
+        ]
+    },
+    {
+        "q": "What is automated API testing?",
+        "o": [
+            "Use tools to automate API tests now",
+            "Normal manual testing only here used now",
+            "Proper skip automation here used now",
+            "Manual process only"
+        ]
+    },
+    {
+        "q": "What is manual API testing?",
+        "o": [
+            "Human-driven API security testing now",
+            "Normal automated testing only here now",
+            "Proper skip manual testing here used",
+            "Tools only testing"
+        ]
+    },
+    {
+        "q": "What is regression testing for APIs?",
+        "o": [
+            "Retest after changes are made now here",
+            "Normal skip regression tests here now",
+            "Proper one-time testing only here used",
+            "No retesting needed"
+        ]
+    },
+    {
+        "q": "What is continuous API testing?",
+        "o": [
+            "Integrate testing in CI/CD pipeline now",
+            "Normal one-time testing only here used",
+            "Proper skip continuous tests here now",
+            "Annual testing only"
+        ]
+    },
+    {
+        "q": "What is API security scanning?",
+        "o": [
+            "Automated vulnerability detection now",
+            "Normal manual review only here used now",
+            "Proper skip scanning here used now",
+            "No scanning needed"
+        ]
+    },
+    {
+        "q": "What is SAST for APIs?",
+        "o": [
+            "Static code analysis for API security",
+            "Normal runtime testing only here now",
+            "Proper skip static analysis here now",
+            "Dynamic testing only"
+        ]
+    },
+    {
+        "q": "What is DAST for APIs?",
+        "o": [
+            "Dynamic testing of running APIs now",
+            "Normal code review only here now used",
+            "Proper skip dynamic tests here now",
+            "Static analysis only"
+        ]
+    },
+    {
+        "q": "What is IAST for APIs?",
+        "o": [
+            "Interactive app security testing now",
+            "Normal external testing only here now",
+            "Proper skip IAST here used now",
+            "Black box testing only"
+        ]
+    },
+    {
+        "q": "What is API test environment?",
+        "o": [
+            "Safe environment for testing APIs now",
+            "Normal test in production here used now",
+            "Proper no test environment needed here",
+            "Production testing"
+        ]
+    },
+    {
+        "q": "What is test data management?",
+        "o": [
+            "Handle sensitive data in tests safely",
+            "Normal use production data here now",
+            "Proper no data management needed here",
+            "Real customer data"
+        ]
+    },
+    {
+        "q": "What is mock API testing?",
+        "o": [
+            "Test against simulated API responses now",
+            "Normal real API testing only here now",
+            "Proper skip mock testing here used now",
+            "Production API only"
+        ]
+    },
+    {
+        "q": "What is API test reporting?",
+        "o": [
+            "Document findings from API tests now",
+            "Normal skip reporting here used now",
+            "Proper no documentation needed here now",
+            "Mental notes only"
+        ]
+    },
+    {
+        "q": "What is vulnerability prioritization?",
+        "o": [
+            "Rank API vulns by severity now here",
+            "Normal fix all at once approach here now",
+            "Proper random order fixing here used",
+            "No prioritization"
+        ]
+    },
+    {
+        "q": "What is CVSS scoring?",
+        "o": [
+            "Common Vulnerability Scoring System now",
+            "Normal no scoring needed here used now",
+            "Proper simple high/low rating here used",
+            "No severity rating"
+        ]
+    },
+    {
+        "q": "What is API security baseline?",
+        "o": [
+            "Minimum security requirements for APIs",
+            "Normal no baseline needed here now used",
+            "Proper ad-hoc security approach here",
+            "No security standards"
+        ]
+    },
+    {
+        "q": "What is compliance testing?",
+        "o": [
+            "Verify API meets regulations now here",
+            "Normal skip compliance tests here now",
+            "Proper no compliance needed here used",
+            "Security only testing"
+        ]
+    },
+    {
+        "q": "What is API threat modeling?",
+        "o": [
+            "Identify potential threats to APIs now",
+            "Normal skip threat modeling here now",
+            "Proper reactive approach only here used",
+            "No threat analysis"
+        ]
+    },
+    {
+        "q": "What is attack surface analysis?",
+        "o": [
+            "Map all API entry points for testing",
+            "Normal skip surface analysis here now",
+            "Proper known endpoints only here used",
+            "No surface analysis"
+        ]
+    },
+    {
+        "q": "What is API reconnaissance?",
+        "o": [
+            "Gather info about target API now here",
+            "Normal skip recon phase here now used",
+            "Proper known info only here used now",
+            "No information gathering"
+        ]
+    },
+    {
+        "q": "What is OSINT for API testing?",
+        "o": [
+            "Open source intelligence gathering now",
+            "Normal skip OSINT phase here now used",
+            "Proper internal info only here used now",
+            "No external research"
+        ]
+    },
+    {
+        "q": "What is API traffic analysis?",
+        "o": [
+            "Analyze API request/response patterns",
+            "Normal skip traffic analysis here now",
+            "Proper single request review only here",
+            "No pattern analysis"
+        ]
+    },
+    {
+        "q": "What is proxy-based testing?",
+        "o": [
+            "Intercept API traffic for analysis now",
+            "Normal direct API calls only here now",
+            "Proper skip proxy testing here used now",
+            "No interception testing"
+        ]
+    },
+    {
+        "q": "What is API request manipulation?",
+        "o": [
+            "Modify requests to find vulnerabilities",
+            "Normal valid requests only here now used",
+            "Proper skip manipulation tests here now",
+            "Original request testing"
+        ]
+    },
+    {
+        "q": "What is response analysis?",
+        "o": [
+            "Analyze API responses for issues now",
+            "Normal skip response analysis here now",
+            "Proper request testing only here used",
+            "No response review"
+        ]
+    },
+    {
+        "q": "What is header manipulation testing?",
+        "o": [
+            "Modify HTTP headers to find vulns now",
+            "Normal skip header testing here now used",
+            "Proper body testing only here used now",
+            "No header testing"
+        ]
+    },
+    {
+        "q": "What is cookie testing for APIs?",
+        "o": [
+            "Test cookie security in API calls now",
+            "Normal skip cookie testing here now used",
+            "Proper token testing only here used now",
+            "No cookie testing"
+        ]
+    },
+    {
+        "q": "What is path traversal testing?",
+        "o": [
+            "Test for directory traversal attacks now",
+            "Normal skip path tests here now used",
+            "Proper valid paths only here used now",
+            "No path testing"
+        ]
+    },
+    {
+        "q": "What is XXE testing?",
+        "o": [
+            "Test XML External Entity attacks now",
+            "Normal skip XXE tests here now used now",
+            "Proper JSON APIs only here used now",
+            "No XML testing"
+        ]
+    },
+    {
+        "q": "What is SSRF testing?",
+        "o": [
+            "Test Server-Side Request Forgery now",
+            "Normal skip SSRF tests here now used now",
+            "Proper client-side only here used now",
+            "No server testing"
+        ]
+    },
+    {
+        "q": "What is NoSQL injection testing?",
+        "o": [
+            "Test for MongoDB-style injection now",
+            "Normal SQL injection only here now used",
+            "Proper skip NoSQL tests here now used",
+            "No database testing"
+        ]
+    },
+    {
+        "q": "What is LDAP injection testing?",
+        "o": [
+            "Test LDAP query manipulation now here",
+            "Normal skip LDAP testing here now used",
+            "Proper SQL testing only here used now",
+            "No directory testing"
+        ]
+    },
+    {
+        "q": "What is template injection testing?",
+        "o": [
+            "Test server-side template injection now",
+            "Normal skip template tests here now used",
+            "Proper frontend testing only here used",
+            "No injection testing"
+        ]
+    },
+    {
+        "q": "What is deserialization testing?",
+        "o": [
+            "Test insecure deserialization attacks now",
+            "Normal skip deserialization tests here now",
+            "Proper serialization only here used now",
+            "No object testing"
+        ]
+    },
+    {
+        "q": "What is prototype pollution testing?",
+        "o": [
+            "Test JavaScript prototype attacks now",
+            "Normal skip prototype tests here now used",
+            "Proper backend testing only here used now",
+            "No JS testing"
+        ]
+    },
+    {
+        "q": "What is JWT algorithm testing?",
+        "o": [
+            "Test JWT algorithm vulnerabilities now",
+            "Normal skip algorithm tests here now used",
+            "Proper signature only tests here used now",
+            "No token testing"
+        ]
+    },
+    {
+        "q": "What is JWT none algorithm attack?",
+        "o": [
+            "Test accepting unsigned JWT tokens now",
+            "Normal skip none algorithm test here now",
+            "Proper signed tokens only here used now",
+            "No algorithm testing"
+        ]
+    },
+    {
+        "q": "What is JWT key confusion attack?",
+        "o": [
+            "Test RS256 to HS256 confusion now here",
+            "Normal skip key confusion tests here now",
+            "Proper single algorithm only here used now",
+            "No key testing"
+        ]
+    },
+    {
+        "q": "What is JWT signature bypass testing?",
+        "o": [
+            "Test for signature verification bypass now",
+            "Normal skip signature tests here now used",
+            "Proper valid signatures only here used now",
+            "No signature testing"
+        ]
+    },
+    {
+        "q": "What is JWT claim manipulation?",
+        "o": [
+            "Modify JWT claims to escalate rights now",
+            "Normal skip claim tests here now used now",
+            "Proper valid claims only here used now",
+            "No claim testing"
+        ]
+    },
+    {
+        "q": "What is OAuth implicit flow testing?",
+        "o": [
+            "Test deprecated implicit grant flow now",
+            "Normal skip implicit flow tests here now",
+            "Proper code flow only here used now",
+            "No OAuth testing"
+        ]
+    },
+    {
+        "q": "What is OAuth PKCE testing?",
+        "o": [
+            "Test Proof Key for Code Exchange now",
+            "Normal skip PKCE testing here now used",
+            "Proper basic OAuth only here used now",
+            "No code challenge testing"
+        ]
+    },
+    {
+        "q": "What is OAuth redirect URI testing?",
+        "o": [
+            "Test redirect URI validation now here",
+            "Normal skip redirect tests here now used",
+            "Proper allow any redirect here used now",
+            "No URI testing"
+        ]
+    },
+    {
+        "q": "What is OAuth state parameter testing?",
+        "o": [
+            "Test CSRF protection via state now here",
+            "Normal skip state tests here now used now",
+            "Proper no state needed here used now",
+            "No CSRF testing"
+        ]
+    },
+    {
+        "q": "What is OAuth scope escalation testing?",
+        "o": [
+            "Test for unauthorized scope access now",
+            "Normal skip scope tests here now used now",
+            "Proper requested scope only here used now",
+            "No scope testing"
+        ]
+    },
+    {
+        "q": "What is OAuth token theft testing?",
+        "o": [
+            "Test token exposure vulnerabilities now",
+            "Normal skip theft tests here now used now",
+            "Proper secure storage only here used now",
+            "No exposure testing"
+        ]
+    },
+    {
+        "q": "What is OpenID Connect testing?",
+        "o": [
+            "Test OIDC implementation security now here",
+            "Normal skip OIDC tests here now used now",
+            "Proper OAuth only testing here used now",
+            "No identity testing"
+        ]
+    },
+    {
+        "q": "What is SAML testing?",
+        "o": [
+            "Test SAML assertions and parsing now here",
+            "Normal skip SAML tests here now used now",
+            "Proper OAuth only testing here used now",
+            "No SSO testing"
+        ]
+    },
+    {
+        "q": "What is API key entropy testing?",
+        "o": [
+            "Test API key randomness and strength now",
+            "Normal skip entropy tests here now used now",
+            "Proper any key format here used now",
+            "No key testing"
+        ]
+    },
+    {
+        "q": "What is API key scope testing?",
+        "o": [
+            "Test API key permission boundaries now",
+            "Normal skip scope tests here now used now",
+            "Proper full access keys here used now",
+            "No permission testing"
+        ]
+    },
+    {
+        "q": "What is privilege escalation testing?",
+        "o": [
+            "Test for unauthorized elevation now here",
+            "Normal skip privilege tests here now used",
+            "Proper same level testing here used now",
+            "No escalation testing"
+        ]
+    },
+    {
+        "q": "What is horizontal privilege testing?",
+        "o": [
+            "Access other users data at same level now",
+            "Normal skip horizontal tests here now used",
+            "Proper own data testing only here used now",
+            "No user testing"
+        ]
+    },
+    {
+        "q": "What is vertical privilege testing?",
+        "o": [
+            "Access higher privilege functions now here",
+            "Normal skip vertical tests here now used",
+            "Proper same role testing here used now",
+            "No role testing"
+        ]
+    },
+    {
+        "q": "What is multi-tenant testing?",
+        "o": [
+            "Test tenant isolation in APIs now here",
+            "Normal skip tenant tests here now used",
+            "Proper single tenant testing here used now",
+            "No isolation testing"
+        ]
+    },
+    {
+        "q": "What is API caching security testing?",
+        "o": [
+            "Test cache poisoning vulnerabilities now",
+            "Normal skip cache tests here now used now",
+            "Proper no caching security here used now",
+            "No cache testing"
+        ]
+    },
+    {
+        "q": "What is cache key injection testing?",
+        "o": [
+            "Manipulate cache keys for attacks now here",
+            "Normal skip cache key tests here now used",
+            "Proper standard keys only here used now",
+            "No key testing"
+        ]
+    },
+    {
+        "q": "What is web cache deception testing?",
+        "o": [
+            "Test caching of sensitive data now here",
+            "Normal skip deception tests here now used",
+            "Proper cache everything here used now",
+            "No cache testing"
+        ]
+    },
+    {
+        "q": "What is HTTP request smuggling testing?",
+        "o": [
+            "Test request smuggling attacks now here",
+            "Normal skip smuggling tests here now used",
+            "Proper standard requests only here used now",
+            "No smuggling testing"
+        ]
+    },
+    {
+        "q": "What is HTTP response splitting testing?",
+        "o": [
+            "Test header injection for splitting now here",
+            "Normal skip splitting tests here now used",
+            "Proper valid responses only here used now",
+            "No response testing"
+        ]
+    },
+    {
+        "q": "What is host header injection testing?",
+        "o": [
+            "Test host header manipulation now here used",
+            "Normal skip host tests here now used now",
+            "Proper valid host only here used now",
+            "No header testing"
+        ]
+    },
+    {
+        "q": "What is clickjacking testing for APIs?",
+        "o": [
+            "Test X-Frame-Options header presence now",
+            "Normal skip clickjacking tests here now",
+            "Proper API not affected here used now",
+            "No frame testing"
+        ]
+    },
+    {
+        "q": "What is Content-Security-Policy testing?",
+        "o": [
+            "Test CSP header configuration now here",
+            "Normal skip CSP tests here now used now",
+            "Proper no CSP needed for APIs here now",
+            "No policy testing"
+        ]
+    },
+    {
+        "q": "What is HSTS testing?",
+        "o": [
+            "Test Strict-Transport-Security header now",
+            "Normal skip HSTS tests here now used now",
+            "Proper HTTP acceptable here used now",
+            "No transport testing"
+        ]
+    },
+    {
+        "q": "What is X-Content-Type-Options testing?",
+        "o": [
+            "Test nosniff header presence now here used",
+            "Normal skip content type tests here now",
+            "Proper MIME sniffing allowed here used now",
+            "No content testing"
+        ]
+    },
+    {
+        "q": "What is Referrer-Policy testing?",
+        "o": [
+            "Test referrer header leakage now here used",
+            "Normal skip referrer tests here now used",
+            "Proper full referrer allowed here used now",
+            "No referrer testing"
+        ]
+    },
+    {
+        "q": "What is Feature-Policy testing?",
+        "o": [
+            "Test Permissions-Policy header now here used",
+            "Normal skip feature tests here now used now",
+            "Proper all features allowed here used now",
+            "No feature testing"
+        ]
+    },
+    {
+        "q": "What is API timeout testing?",
+        "o": [
+            "Test request timeout handling now here used",
+            "Normal skip timeout tests here now used now",
+            "Proper no timeout needed here used now",
+            "No time testing"
+        ]
+    },
+    {
+        "q": "What is slow HTTP attack testing?",
+        "o": [
+            "Test for slow request DoS attacks now here",
+            "Normal skip slow attack tests here now",
+            "Proper fast requests only here used now",
+            "No DoS testing"
+        ]
+    },
+    {
+        "q": "What is ReDoS testing?",
+        "o": [
+            "Test Regular Expression DoS attacks now",
+            "Normal skip regex tests here now used now",
+            "Proper simple regex only here used now",
+            "No regex testing"
+        ]
+    },
+    {
+        "q": "What is XML bomb testing?",
+        "o": [
+            "Test billion laughs attack now here used",
+            "Normal skip XML tests here now used now",
+            "Proper JSON only APIs here used now",
+            "No XML testing"
+        ]
+    },
+    {
+        "q": "What is resource exhaustion testing?",
+        "o": [
+            "Test for memory and CPU exhaustion now",
+            "Normal skip resource tests here now used",
+            "Proper functional testing only here used now",
+            "No resource testing"
+        ]
+    },
+    {
+        "q": "What is API documentation security?",
+        "o": [
+            "Test for sensitive info in docs now here",
+            "Normal skip docs review here now used now",
+            "Proper public docs are fine here used now",
+            "No doc testing"
+        ]
+    },
+    {
+        "q": "What is swagger.json exposure testing?",
+        "o": [
+            "Test OpenAPI spec exposure now here used",
+            "Normal public spec is fine here now used",
+            "Proper skip spec tests here now used now",
+            "No spec testing"
+        ]
+    },
+    {
+        "q": "What is debug endpoint testing?",
+        "o": [
+            "Find exposed debug endpoints now here used",
+            "Normal debug endpoints are safe here now",
+            "Proper skip debug tests here now used now",
+            "No debug testing"
+        ]
+    },
+    {
+        "q": "What is admin endpoint testing?",
+        "o": [
+            "Test admin API access controls now here",
+            "Normal admin endpoints are protected here",
+            "Proper skip admin tests here now used now",
+            "No admin testing"
+        ]
+    },
+    {
+        "q": "What is internal API exposure testing?",
+        "o": [
+            "Test internal APIs exposed externally now",
+            "Normal internal APIs are secure here now",
+            "Proper skip internal tests here now used",
+            "No internal testing"
+        ]
+    },
+    {
+        "q": "What is shadow API testing?",
+        "o": [
+            "Discover undocumented API endpoints now",
+            "Normal only documented APIs exist here now",
+            "Proper skip shadow tests here now used now",
+            "No discovery testing"
+        ]
+    },
+    {
+        "q": "What is zombie API testing?",
+        "o": [
+            "Find deprecated but active APIs now here",
+            "Normal old APIs are removed here now used",
+            "Proper skip zombie tests here now used now",
+            "No deprecated testing"
+        ]
+    },
+    {
+        "q": "What is API inventory testing?",
+        "o": [
+            "Verify complete API inventory now here used",
+            "Normal skip inventory review here now used",
+            "Proper known APIs only here now used now",
+            "No inventory testing"
+        ]
+    },
+    {
+        "q": "What is mutation testing for APIs?",
+        "o": [
+            "Verify tests catch code changes now here",
+            "Normal skip mutation tests here now used now",
+            "Proper static tests only here now used now",
+            "No mutation testing"
+        ]
+    },
+    {
+        "q": "What is fuzz testing coverage?",
+        "o": [
+            "Measure API fuzzing effectiveness now here",
+            "Normal skip coverage metrics here now used",
+            "Proper random fuzzing only here now used now",
+            "No coverage testing"
+        ]
+    },
+    {
+        "q": "What is API test case design?",
+        "o": [
+            "Design effective security test cases now",
+            "Normal ad-hoc testing only here now used now",
+            "Proper skip test design here now used now",
+            "No design testing"
+        ]
+    },
+    {
+        "q": "What is equivalence partitioning?",
+        "o": [
+            "Group inputs into equivalent classes now",
+            "Normal test all inputs here now used now",
+            "Proper skip partitioning here now used now",
+            "No grouping testing"
+        ]
+    },
+    {
+        "q": "What is decision table testing?",
+        "o": [
+            "Test combinations of conditions now here",
+            "Normal single condition testing only here now",
+            "Proper skip table tests here now used now",
+            "No combination testing"
+        ]
+    },
+    {
+        "q": "What is state transition testing?",
+        "o": [
+            "Test API state changes and flows now here",
+            "Normal stateless testing only here now used",
+            "Proper skip state tests here now used now",
+            "No flow testing"
+        ]
+    },
+    {
+        "q": "What is use case testing?",
+        "o": [
+            "Test based on user scenarios now here used",
+            "Normal skip use case tests here now used now",
+            "Proper technical testing only here now used",
+            "No scenario testing"
+        ]
+    },
+    {
+        "q": "What is exploratory testing?",
+        "o": [
+            "Unscripted creative API testing now here",
+            "Normal scripted tests only here now used now",
+            "Proper skip exploration here now used now",
+            "No creative testing"
+        ]
+    },
+    {
+        "q": "What is API mocking?",
+        "o": [
+            "Simulate API responses for testing now here",
+            "Normal real APIs only here now used now",
+            "Proper skip mocking here now used now",
+            "No simulation testing"
+        ]
+    },
+    {
+        "q": "What is API stubbing?",
+        "o": [
+            "Replace dependencies for testing now here",
+            "Normal real dependencies only here now used",
+            "Proper skip stubbing here now used now",
+            "No dependency testing"
+        ]
+    },
+    {
+        "q": "What is contract-first testing?",
+        "o": [
+            "Define spec before implementation now here",
+            "Normal implementation first here now used now",
+            "Proper skip contract tests here now used now",
+            "No spec testing"
+        ]
+    },
+    {
+        "q": "What is consumer-driven contract testing?",
+        "o": [
+            "Consumers define expected API behavior now",
+            "Normal provider defines contract only here now",
+            "Proper skip consumer tests here now used now",
+            "No contract testing"
+        ]
+    },
+    {
+        "q": "What is Pact testing?",
+        "o": [
+            "Consumer-driven contract testing tool now",
+            "Normal skip Pact tests here now used now",
+            "Proper integration testing only here now used",
+            "No Pact testing"
+        ]
+    },
+    {
+        "q": "What is API integration testing?",
+        "o": [
+            "Test API interactions with systems now here",
+            "Normal unit testing only here now used now",
+            "Proper skip integration here now used now",
+            "No system testing"
+        ]
+    },
+    {
+        "q": "What is end-to-end API testing?",
+        "o": [
+            "Test complete API workflows now here used",
+            "Normal component testing only here now used",
+            "Proper skip E2E tests here now used now",
+            "No workflow testing"
+        ]
+    },
+    {
+        "q": "What is API component testing?",
+        "o": [
+            "Test individual API components now here used",
+            "Normal full system testing only here now used",
+            "Proper skip component tests here now used now",
+            "No isolated testing"
+        ]
+    },
+    {
+        "q": "What is API unit testing?",
+        "o": [
+            "Test individual API functions now here used",
+            "Normal integration testing only here now used",
+            "Proper skip unit tests here now used now",
+            "No function testing"
+        ]
+    },
+    {
+        "q": "What is API snapshot testing?",
+        "o": [
+            "Compare responses to baseline now here used",
+            "Normal skip snapshot tests here now used now",
+            "Proper dynamic comparison only here now used",
+            "No baseline testing"
+        ]
+    },
+    {
+        "q": "What is API property-based testing?",
+        "o": [
+            "Test properties with random data now here",
+            "Normal example-based only here now used now",
+            "Proper skip property tests here now used now",
+            "No random testing"
+        ]
+    },
+    {
+        "q": "What is chaos testing for APIs?",
+        "o": [
+            "Inject failures to test resilience now here",
+            "Normal skip chaos tests here now used now",
+            "Proper stable environment only here now used",
+            "No failure testing"
+        ]
+    },
+    {
+        "q": "What is canary testing for APIs?",
+        "o": [
+            "Test with subset of traffic now here used",
+            "Normal full traffic testing only here now used",
+            "Proper skip canary tests here now used now",
+            "No subset testing"
+        ]
+    },
+    {
+        "q": "What is A/B testing for APIs?",
+        "o": [
+            "Compare API versions with split traffic now",
+            "Normal single version only here now used now",
+            "Proper skip A/B tests here now used now",
+            "No comparison testing"
+        ]
+    },
+    {
+        "q": "What is blue-green deployment testing?",
+        "o": [
+            "Test parallel environment deployments now",
+            "Normal single environment here now used now",
+            "Proper skip deployment tests here now used now",
+            "No parallel testing"
+        ]
+    },
+    {
+        "q": "What is rollback testing?",
+        "o": [
+            "Verify rollback procedures work now here",
+            "Normal skip rollback tests here now used now",
+            "Proper forward only changes here now used now",
+            "No revert testing"
+        ]
+    },
+    {
+        "q": "What is backward compatibility testing?",
+        "o": [
+            "Verify old clients still work now here used",
+            "Normal skip compatibility tests here now used",
+            "Proper latest clients only here now used now",
+            "No legacy testing"
+        ]
+    },
+    {
+        "q": "What is forward compatibility testing?",
+        "o": [
+            "Verify new clients work with old API now",
+            "Normal skip forward tests here now used now",
+            "Proper same version only here now used now",
+            "No future testing"
+        ]
+    },
+    {
+        "q": "What is API versioning strategy testing?",
+        "o": [
+            "Test version handling mechanisms now here",
+            "Normal single version only here now used now",
+            "Proper skip versioning tests here now used now",
+            "No version testing"
+        ]
+    },
+    {
+        "q": "What is path versioning testing?",
+        "o": [
+            "Test version in URL path like /v1 now here",
+            "Normal skip path tests here now used now",
+            "Proper header versioning only here now used now",
+            "No path testing"
+        ]
+    },
+    {
+        "q": "What is header versioning testing?",
+        "o": [
+            "Test version in HTTP headers now here used",
+            "Normal skip header tests here now used now",
+            "Proper path versioning only here now used now",
+            "No header testing"
+        ]
+    },
+    {
+        "q": "What is query versioning testing?",
+        "o": [
+            "Test version in query params now here used",
+            "Normal skip query tests here now used now",
+            "Proper path versioning only here now used now",
+            "No query testing"
+        ]
+    },
+    {
+        "q": "What is content negotiation testing?",
+        "o": [
+            "Test Accept header handling now here used",
+            "Normal skip content tests here now used now",
+            "Proper JSON only responses here now used now",
+            "No format testing"
+        ]
+    },
+    {
+        "q": "What is HATEOAS testing?",
+        "o": [
+            "Test hypermedia links in responses now here",
+            "Normal skip HATEOAS tests here now used now",
+            "Proper simple REST only here now used now",
+            "No link testing"
+        ]
+    },
+    {
+        "q": "What is pagination testing?",
+        "o": [
+            "Test page parameter handling now here used",
+            "Normal skip pagination tests here now used now",
+            "Proper return all data here now used now",
+            "No page testing"
+        ]
+    },
+    {
+        "q": "What is filtering testing?",
+        "o": [
+            "Test query filter parameters now here used",
+            "Normal skip filter tests here now used now",
+            "Proper return unfiltered data here now used now",
+            "No filter testing"
+        ]
+    },
+    {
+        "q": "What is sorting testing?",
+        "o": [
+            "Test sort parameter handling now here used",
+            "Normal skip sort tests here now used now",
+            "Proper unsorted data only here now used now",
+            "No sort testing"
+        ]
+    },
+    {
+        "q": "What is field selection testing?",
+        "o": [
+            "Test sparse fieldsets handling now here used",
+            "Normal skip field tests here now used now",
+            "Proper return all fields here now used now",
+            "No selection testing"
+        ]
+    },
+    {
+        "q": "What is API compression testing?",
+        "o": [
+            "Test gzip and compression support now here",
+            "Normal skip compression tests here now used now",
+            "Proper uncompressed only here now used now",
+            "No compression testing"
+        ]
+    },
+    {
+        "q": "What is ETag testing?",
+        "o": [
+            "Test caching with ETags now here used now",
+            "Normal skip ETag tests here now used now",
+            "Proper no caching needed here now used now",
+            "No ETag testing"
+        ]
+    },
+    {
+        "q": "What is Last-Modified testing?",
+        "o": [
+            "Test conditional request handling now here",
+            "Normal skip modified tests here now used now",
+            "Proper no caching needed here now used now",
+            "No conditional testing"
+        ]
+    },
+    {
+        "q": "What is idempotency testing?",
+        "o": [
+            "Verify repeated requests same result now",
+            "Normal skip idempotency tests here now used now",
+            "Proper no idempotency needed here now used now",
+            "No repeat testing"
+        ]
+    },
+    {
+        "q": "What is API retry logic testing?",
+        "o": [
+            "Test client retry behavior now here used now",
+            "Normal skip retry tests here now used now",
+            "Proper no retry needed here now used now",
+            "No retry testing"
+        ]
+    },
+    {
+        "q": "What is exponential backoff testing?",
+        "o": [
+            "Test increasing retry delays now here used",
+            "Normal skip backoff tests here now used now",
+            "Proper immediate retry only here now used now",
+            "No backoff testing"
+        ]
+    },
+    {
+        "q": "What is circuit breaker testing?",
+        "o": [
+            "Test failure isolation patterns now here",
+            "Normal skip breaker tests here now used now",
+            "Proper no circuit breaker here now used now",
+            "No failure testing"
+        ]
+    },
+    {
+        "q": "What is bulkhead pattern testing?",
+        "o": [
+            "Test resource isolation patterns now here",
+            "Normal skip bulkhead tests here now used now",
+            "Proper shared resources only here now used now",
+            "No isolation testing"
+        ]
+    },
+    {
+        "q": "What is timeout pattern testing?",
+        "o": [
+            "Test request timeout handling now here used",
+            "Normal skip timeout tests here now used now",
+            "Proper no timeout needed here now used now",
+            "No timeout testing"
+        ]
+    },
+    {
+        "q": "What is API gateway security testing?",
+        "o": [
+            "Test gateway security controls now here used",
+            "Normal skip gateway tests here now used now",
+            "Proper direct API testing only here used now",
+            "No gateway testing"
+        ]
+    },
+    {
+        "q": "What is rate limit header testing?",
+        "o": [
+            "Verify rate limit headers present now here",
+            "Normal skip rate header tests here now used",
+            "Proper no rate headers needed here used now",
+            "No header testing"
+        ]
+    },
+    {
+        "q": "What is quota management testing?",
+        "o": [
+            "Test API quota enforcement now here used now",
+            "Normal skip quota tests here now used now",
+            "Proper unlimited quota only here used now",
+            "No quota testing"
+        ]
+    },
+    {
+        "q": "What is throttling bypass testing?",
+        "o": [
+            "Test for rate limit bypass methods now here",
+            "Normal skip bypass tests here now used now",
+            "Proper rate limits work fine here used now",
+            "No bypass testing"
+        ]
+    },
+    {
+        "q": "What is IP rotation testing?",
+        "o": [
+            "Test rate limit bypass via IP changes now",
+            "Normal skip IP tests here now used now",
+            "Proper single IP testing only here used now",
+            "No IP testing"
+        ]
+    },
+    {
+        "q": "What is user agent rotation testing?",
+        "o": [
+            "Test bypass via user agent changes now here",
+            "Normal skip UA tests here now used now",
+            "Proper single UA testing only here used now",
+            "No UA testing"
+        ]
+    },
+    {
+        "q": "What is distributed attack testing?",
+        "o": [
+            "Test rate limits across multiple sources now",
+            "Normal skip distributed tests here now used",
+            "Proper single source testing only here used now",
+            "No distributed testing"
+        ]
+    },
+    {
+        "q": "What is API key rotation testing?",
+        "o": [
+            "Test key rotation procedures work now here",
+            "Normal skip rotation tests here now used now",
+            "Proper static keys only here used now",
+            "No rotation testing"
+        ]
+    },
+    {
+        "q": "What is secret management testing?",
+        "o": [
+            "Test secure secret handling now here used now",
+            "Normal skip secret tests here now used now",
+            "Proper hardcoded secrets fine here used now",
+            "No secret testing"
+        ]
+    },
+    {
+        "q": "What is vault integration testing?",
+        "o": [
+            "Test secret vault integration now here used",
+            "Normal skip vault tests here now used now",
+            "Proper no vault needed here used now",
+            "No vault testing"
+        ]
+    },
+    {
+        "q": "What is HSM testing for APIs?",
+        "o": [
+            "Test hardware security module use now here",
+            "Normal skip HSM tests here now used now",
+            "Proper software crypto only here used now",
+            "No HSM testing"
+        ]
+    },
+    {
+        "q": "What is mTLS testing?",
+        "o": [
+            "Test mutual TLS authentication now here used",
+            "Normal skip mTLS tests here now used now",
+            "Proper one-way TLS only here used now",
+            "No mutual testing"
+        ]
+    },
+    {
+        "q": "What is client certificate testing?",
+        "o": [
+            "Test client cert authentication now here used",
+            "Normal skip cert tests here now used now",
+            "Proper token auth only here used now",
+            "No certificate testing"
+        ]
+    },
+    {
+        "q": "What is API key revocation testing?",
+        "o": [
+            "Test revoked keys are rejected now here used",
+            "Normal skip revocation tests here now used now",
+            "Proper keys never revoked here used now",
+            "No revocation testing"
+        ]
+    },
+    {
+        "q": "What is token blacklist testing?",
+        "o": [
+            "Test blacklisted tokens rejected now here used",
+            "Normal skip blacklist tests here now used now",
+            "Proper no blacklist needed here used now",
+            "No blacklist testing"
+        ]
+    },
+    {
+        "q": "What is session fixation testing?",
+        "o": [
+            "Test for session fixation attacks now here",
+            "Normal skip fixation tests here now used now",
+            "Proper sessions are safe here used now",
+            "No fixation testing"
+        ]
+    },
+    {
+        "q": "What is session hijacking testing?",
+        "o": [
+            "Test for session takeover attacks now here",
+            "Normal skip hijacking tests here now used now",
+            "Proper sessions are secure here used now",
+            "No hijacking testing"
+        ]
+    },
+    {
+        "q": "What is concurrent session testing?",
+        "o": [
+            "Test multiple session handling now here used",
+            "Normal skip concurrent tests here now used now",
+            "Proper allow unlimited sessions here used now",
+            "No session testing"
+        ]
+    },
+    {
+        "q": "What is logout functionality testing?",
+        "o": [
+            "Test session termination works now here used",
+            "Normal skip logout tests here now used now",
+            "Proper logout not important here used now",
+            "No logout testing"
+        ]
+    },
+    {
+        "q": "What is forced logout testing?",
+        "o": [
+            "Test remote session termination now here used",
+            "Normal skip forced tests here now used now",
+            "Proper no remote logout here used now",
+            "No forced testing"
+        ]
+    },
+    {
+        "q": "What is account lockout testing?",
+        "o": [
+            "Test lockout after failed attempts now here",
+            "Normal skip lockout tests here now used now",
+            "Proper no lockout needed here used now",
+            "No lockout testing"
+        ]
+    },
+    {
+        "q": "What is password policy testing?",
+        "o": [
+            "Test password requirements enforced now here",
+            "Normal skip password tests here now used now",
+            "Proper any password accepted here used now",
+            "No password testing"
+        ]
+    },
+    {
+        "q": "What is MFA bypass testing?",
+        "o": [
+            "Test multi-factor auth bypasses now here used",
+            "Normal skip MFA tests here now used now",
+            "Proper MFA is secure here used now",
+            "No MFA testing"
+        ]
+    },
+    {
+        "q": "What is biometric testing for APIs?",
+        "o": [
+            "Test biometric auth implementation now here",
+            "Normal skip biometric tests here now used now",
+            "Proper password auth only here used now",
+            "No biometric testing"
+        ]
+    },
+    {
+        "q": "What is CAPTCHA bypass testing?",
+        "o": [
+            "Test CAPTCHA protection bypasses now here",
+            "Normal skip CAPTCHA tests here now used now",
+            "Proper CAPTCHA works fine here used now",
+            "No CAPTCHA testing"
+        ]
+    },
+    {
+        "q": "What is bot detection testing?",
+        "o": [
+            "Test bot protection mechanisms now here used",
+            "Normal skip bot tests here now used now",
+            "Proper no bots exist here used now",
+            "No bot testing"
+        ]
+    },
+    {
+        "q": "What is fingerprinting detection testing?",
+        "o": [
+            "Test device fingerprint validation now here",
+            "Normal skip fingerprint tests here now used now",
+            "Proper no fingerprinting here used now",
+            "No fingerprint testing"
+        ]
+    },
+    {
+        "q": "What is headless browser testing?",
+        "o": [
+            "Test detection of headless browsers now here",
+            "Normal skip headless tests here now used now",
+            "Proper all browsers accepted here used now",
+            "No browser testing"
+        ]
+    },
+    {
+        "q": "What is WebSocket security testing?",
+        "o": [
+            "Test WebSocket connection security now here",
+            "Normal skip WebSocket tests here now used now",
+            "Proper HTTP only testing here used now",
+            "No WebSocket testing"
+        ]
+    },
+    {
+        "q": "What is Server-Sent Events testing?",
+        "o": [
+            "Test SSE connection security now here used",
+            "Normal skip SSE tests here now used now",
+            "Proper REST only testing here used now",
+            "No SSE testing"
+        ]
+    },
+    {
+        "q": "What is gRPC security testing?",
+        "o": [
+            "Test gRPC protocol security now here used now",
+            "Normal skip gRPC tests here now used now",
+            "Proper REST only testing here used now",
+            "No gRPC testing"
+        ]
+    },
+    {
+        "q": "What is Protocol Buffers testing?",
+        "o": [
+            "Test protobuf message security now here used",
+            "Normal skip protobuf tests here now used now",
+            "Proper JSON only testing here used now",
+            "No protobuf testing"
+        ]
+    },
+    {
+        "q": "What is message queue testing?",
+        "o": [
+            "Test async message security now here used now",
+            "Normal skip queue tests here now used now",
+            "Proper sync APIs only here used now",
+            "No queue testing"
+        ]
+    },
+    {
+        "q": "What is webhook security testing?",
+        "o": [
+            "Test webhook validation security now here",
+            "Normal skip webhook tests here now used now",
+            "Proper no webhooks testing here used now",
+            "No webhook testing"
+        ]
+    },
+    {
+        "q": "What is webhook signature testing?",
+        "o": [
+            "Test webhook signature verification now here",
+            "Normal skip signature tests here now used now",
+            "Proper no signatures needed here used now",
+            "No signature testing"
+        ]
+    },
+    {
+        "q": "What is callback URL testing?",
+        "o": [
+            "Test callback URL validation now here used now",
+            "Normal skip callback tests here now used now",
+            "Proper allow any callback here used now",
+            "No callback testing"
+        ]
+    },
+    {
+        "q": "What is CORS preflight testing?",
+        "o": [
+            "Test OPTIONS preflight handling now here used",
+            "Normal skip preflight tests here now used now",
+            "Proper allow all origins here used now",
+            "No preflight testing"
+        ]
+    },
+    {
+        "q": "What is origin validation testing?",
+        "o": [
+            "Test origin header validation now here used",
+            "Normal skip origin tests here now used now",
+            "Proper accept all origins here used now",
+            "No origin testing"
+        ]
+    },
+    {
+        "q": "What is null origin testing?",
+        "o": [
+            "Test handling of null origin now here used",
+            "Normal skip null origin tests here now used now",
+            "Proper accept null origin here used now",
+            "No null testing"
+        ]
+    },
+    {
+        "q": "What is wildcard origin testing?",
+        "o": [
+            "Test wildcard CORS configuration now here",
+            "Normal skip wildcard tests here now used now",
+            "Proper wildcard is fine here used now",
+            "No wildcard testing"
+        ]
+    },
+    {
+        "q": "What is credentials header testing?",
+        "o": [
+            "Test Access-Control-Allow-Credentials now",
+            "Normal skip credentials tests here now used now",
+            "Proper always allow credentials here used now",
+            "No credentials testing"
+        ]
+    },
+    {
+        "q": "What is exposed headers testing?",
+        "o": [
+            "Test Access-Control-Expose-Headers now here",
+            "Normal skip exposed tests here now used now",
+            "Proper expose all headers here used now",
+            "No expose testing"
+        ]
+    },
+    {
+        "q": "What is max age header testing?",
+        "o": [
+            "Test Access-Control-Max-Age value now here",
+            "Normal skip max age tests here now used now",
+            "Proper no caching config here used now",
+            "No max age testing"
+        ]
+    },
+    {
+        "q": "What is subdomain takeover testing?",
+        "o": [
+            "Test for dangling DNS records now here used",
+            "Normal skip subdomain tests here now used now",
+            "Proper DNS is always valid here used now",
+            "No subdomain testing"
+        ]
+    },
+    {
+        "q": "What is DNS rebinding testing?",
+        "o": [
+            "Test DNS rebinding attack vectors now here",
+            "Normal skip DNS tests here now used now",
+            "Proper DNS is secure here used now",
+            "No DNS testing"
+        ]
+    },
+    {
+        "q": "What is open redirect testing?",
+        "o": [
+            "Test redirect URL validation now here used",
+            "Normal skip redirect tests here now used now",
+            "Proper allow any redirect here used now",
+            "No redirect testing"
+        ]
+    },
+    {
+        "q": "What is CRLF injection testing?",
+        "o": [
+            "Test for header injection via CRLF now here",
+            "Normal skip CRLF tests here now used now",
+            "Proper CRLF filtered here used now",
+            "No CRLF testing"
+        ]
+    },
+    {
+        "q": "What is HTTP parameter pollution?",
+        "o": [
+            "Test duplicate parameter handling now here",
+            "Normal skip pollution tests here now used now",
+            "Proper single params only here used now",
+            "No pollution testing"
+        ]
+    },
+    {
+        "q": "What is type juggling testing?",
+        "o": [
+            "Test type coercion vulnerabilities now here",
+            "Normal skip type tests here now used now",
+            "Proper strict typing used here used now",
+            "No type testing"
+        ]
+    },
+    {
+        "q": "What is integer overflow testing?",
+        "o": [
+            "Test large integer handling now here used now",
+            "Normal skip overflow tests here now used now",
+            "Proper bounds checking exists here used now",
+            "No overflow testing"
+        ]
+    },
+    {
+        "q": "What is buffer overflow testing?",
+        "o": [
+            "Test for memory corruption vulns now here",
+            "Normal skip buffer tests here now used now",
+            "Proper safe languages used here used now",
+            "No buffer testing"
+        ]
+    },
+    {
+        "q": "What is format string testing?",
+        "o": [
+            "Test format string vulnerabilities now here",
+            "Normal skip format tests here now used now",
+            "Proper safe APIs used here used now",
+            "No format testing"
+        ]
+    },
+    {
+        "q": "What is code injection testing?",
+        "o": [
+            "Test for remote code execution now here used",
+            "Normal skip code tests here now used now",
+            "Proper sandboxed execution here used now",
+            "No code testing"
+        ]
+    },
+    {
+        "q": "What is expression language injection?",
+        "o": [
+            "Test EL injection vulnerabilities now here",
+            "Normal skip EL tests here now used now",
+            "Proper no EL used here used now",
+            "No EL testing"
+        ]
+    },
+    {
+        "q": "What is GraphQL batching abuse testing?",
+        "o": [
+            "Test batching for abuse potential now here",
+            "Normal skip batching tests here now used now",
+            "Proper no batching exists here used now",
+            "No batching testing"
+        ]
+    },
+    {
+        "q": "What is GraphQL alias abuse testing?",
+        "o": [
+            "Test alias for DoS potential now here used",
+            "Normal skip alias tests here now used now",
+            "Proper no aliases allowed here used now",
+            "No alias testing"
+        ]
+    },
+    {
+        "q": "What is GraphQL fragment abuse testing?",
+        "o": [
+            "Test fragment recursion attacks now here used",
+            "Normal skip fragment tests here now used now",
+            "Proper no fragments allowed here used now",
+            "No fragment testing"
+        ]
+    },
+    {
+        "q": "What is GraphQL directive testing?",
+        "o": [
+            "Test directive abuse potential now here used",
+            "Normal skip directive tests here now used now",
+            "Proper no custom directives here used now",
+            "No directive testing"
+        ]
+    },
+    {
+        "q": "What is query complexity testing?",
+        "o": [
+            "Test query cost calculation now here used now",
+            "Normal skip complexity tests here now used now",
+            "Proper no complexity limits here used now",
+            "No complexity testing"
+        ]
+    },
+    {
+        "q": "What is field-level authorization testing?",
+        "o": [
+            "Test per-field access controls now here used",
+            "Normal skip field auth tests here now used now",
+            "Proper all fields accessible here used now",
+            "No field testing"
+        ]
+    },
+    {
+        "q": "What is resolver security testing?",
+        "o": [
+            "Test GraphQL resolver security now here used",
+            "Normal skip resolver tests here now used now",
+            "Proper resolvers are safe here used now",
+            "No resolver testing"
+        ]
+    },
+    {
+        "q": "What is subscription security testing?",
+        "o": [
+            "Test GraphQL subscription auth now here used",
+            "Normal skip subscription tests here now used now",
+            "Proper subscriptions are open here used now",
+            "No subscription testing"
+        ]
+    },
+    {
+        "q": "What is persisted query testing?",
+        "o": [
+            "Test persisted query security now here used",
+            "Normal skip persisted tests here now used now",
+            "Proper allow any query here used now",
+            "No query testing"
+        ]
+    },
+    {
+        "q": "What is API inventory management testing?",
+        "o": [
+            "Verify complete API asset tracking now here",
+            "Normal skip inventory tests here now used now",
+            "Proper all APIs documented here used now",
+            "No inventory testing"
+        ]
+    },
+    {
+        "q": "What is API lifecycle testing?",
+        "o": [
+            "Test API versioning lifecycle now here used",
+            "Normal skip lifecycle tests here now used now",
+            "Proper single version only here used now",
+            "No lifecycle testing"
+        ]
+    },
+    {
+        "q": "What is deprecation warning testing?",
+        "o": [
+            "Test deprecated endpoint warnings now here",
+            "Normal skip deprecation tests here now used now",
+            "Proper no deprecation warnings here used now",
+            "No warning testing"
+        ]
+    },
+    {
+        "q": "What is sunset header testing?",
+        "o": [
+            "Test Sunset header implementation now here",
+            "Normal skip sunset tests here now used now",
+            "Proper no sunset dates needed here used now",
+            "No sunset testing"
+        ]
+    },
+    {
+        "q": "What is API changelog testing?",
+        "o": [
+            "Verify changelog accuracy and security now",
+            "Normal skip changelog tests here now used now",
+            "Proper no changelog needed here used now",
+            "No changelog testing"
+        ]
+    },
+    {
+        "q": "What is breaking change testing?",
+        "o": [
+            "Test backward incompatible changes now here",
+            "Normal skip breaking tests here now used now",
+            "Proper all changes compatible here used now",
+            "No breaking testing"
+        ]
+    },
+    {
+        "q": "What is SDK security testing?",
+        "o": [
+            "Test client SDK implementations now here used",
+            "Normal skip SDK tests here now used now",
+            "Proper SDKs are secure here used now",
+            "No SDK testing"
+        ]
+    },
+    {
+        "q": "What is mobile API testing?",
+        "o": [
+            "Test mobile API specific issues now here used",
+            "Normal skip mobile tests here now used now",
+            "Proper web testing only here used now",
+            "No mobile testing"
+        ]
+    },
+    {
+        "q": "What is IoT API testing?",
+        "o": [
+            "Test IoT device API security now here used",
+            "Normal skip IoT tests here now used now",
+            "Proper standard APIs only here used now",
+            "No IoT testing"
+        ]
+    },
+    {
+        "q": "What is embedded API testing?",
+        "o": [
+            "Test embedded system APIs now here used now",
+            "Normal skip embedded tests here now used now",
+            "Proper web APIs only here used now",
+            "No embedded testing"
+        ]
+    },
+    {
+        "q": "What is firmware API testing?",
+        "o": [
+            "Test firmware update API security now here",
+            "Normal skip firmware tests here now used now",
+            "Proper no firmware APIs here used now",
+            "No firmware testing"
+        ]
+    },
+    {
+        "q": "What is cloud API testing?",
+        "o": [
+            "Test cloud provider API security now here",
+            "Normal skip cloud tests here now used now",
+            "Proper on-premise only here used now",
+            "No cloud testing"
+        ]
+    },
+    {
+        "q": "What is serverless API testing?",
+        "o": [
+            "Test serverless function security now here",
+            "Normal skip serverless tests here now used now",
+            "Proper traditional servers here used now",
+            "No serverless testing"
+        ]
+    },
+    {
+        "q": "What is container API testing?",
+        "o": [
+            "Test containerized API security now here used",
+            "Normal skip container tests here now used now",
+            "Proper bare metal only here used now",
+            "No container testing"
+        ]
+    },
+    {
+        "q": "What is Kubernetes API testing?",
+        "o": [
+            "Test K8s API security controls now here used",
+            "Normal skip K8s tests here now used now",
+            "Proper no K8s deployed here used now",
+            "No K8s testing"
+        ]
+    },
+    {
+        "q": "What is service mesh testing?",
+        "o": [
+            "Test service mesh security now here used now",
+            "Normal skip mesh tests here now used now",
+            "Proper no service mesh here used now",
+            "No mesh testing"
+        ]
+    },
+    {
+        "q": "What is sidecar proxy testing?",
+        "o": [
+            "Test sidecar security controls now here used",
+            "Normal skip sidecar tests here now used now",
+            "Proper no sidecars deployed here used now",
+            "No sidecar testing"
+        ]
+    },
+    {
+        "q": "What is API metric manipulation testing?",
+        "o": [
+            "Test for metric tampering attacks now here",
+            "Normal skip metric tests here now used now",
+            "Proper metrics are accurate here used now",
+            "No metric testing"
+        ]
+    },
+    {
+        "q": "What is observability security testing?",
+        "o": [
+            "Test logging and tracing security now here",
+            "Normal skip observability tests here now used now",
+            "Proper observability is secure here used now",
+            "No observability testing"
+        ]
+    },
+    {
+        "q": "What is trace injection testing?",
+        "o": [
+            "Test distributed trace security now here used",
+            "Normal skip trace tests here now used now",
+            "Proper tracing is secure here used now",
+            "No trace testing"
+        ]
+    },
+    {
+        "q": "What is log injection testing?",
+        "o": [
+            "Test for log forging attacks now here used",
+            "Normal skip log tests here now used now",
+            "Proper logs are sanitized here used now",
+            "No log testing"
+        ]
+    },
+    {
+        "q": "What is alert fatigue testing?",
+        "o": [
+            "Test for alert manipulation attacks now here",
+            "Normal skip alert tests here now used now",
+            "Proper alerts are reliable here used now",
+            "No alert testing"
+        ]
+    },
+    {
+        "q": "What is monitoring bypass testing?",
+        "o": [
+            "Test for detection evasion now here used now",
+            "Normal skip bypass tests here now used now",
+            "Proper monitoring is complete here used now",
+            "No bypass testing"
+        ]
+    },
+    {
+        "q": "What is API billing fraud testing?",
+        "o": [
+            "Test for usage underreporting now here used",
+            "Normal skip billing tests here now used now",
+            "Proper billing is accurate here used now",
+            "No billing testing"
+        ]
+    },
+    {
+        "q": "What is metering manipulation testing?",
+        "o": [
+            "Test for meter tampering attacks now here used",
+            "Normal skip meter tests here now used now",
+            "Proper metering is accurate here used now",
+            "No metering testing"
+        ]
+    },
+    {
+        "q": "What is free tier abuse testing?",
+        "o": [
+            "Test free tier exploitation methods now here",
+            "Normal skip free tier tests here now used now",
+            "Proper free tier is limited here used now",
+            "No tier testing"
+        ]
+    },
+    {
+        "q": "What is trial period testing?",
+        "o": [
+            "Test trial abuse prevention now here used now",
+            "Normal skip trial tests here now used now",
+            "Proper trial limits work here used now",
+            "No trial testing"
+        ]
+    },
+    {
+        "q": "What is API security automation?",
+        "o": [
+            "Automate security testing in CI/CD now here",
+            "Normal manual testing only here now used now",
+            "Proper skip automation here now used now",
+            "No pipeline testing"
+        ]
+    },
+    {
+        "q": "What is shift-left security testing?",
+        "o": [
+            "Test security early in development now here",
+            "Normal production testing only here now used now",
+            "Proper skip early testing here now used now",
+            "No development testing"
+        ]
+    },
+    {
+        "q": "What is DevSecOps testing?",
+        "o": [
+            "Integrate security into DevOps now here used",
+            "Normal separate security team here now used now",
+            "Proper skip DevSecOps here now used now",
+            "No ops integration"
+        ]
+    },
+    {
+        "q": "What is security gate testing?",
+        "o": [
+            "Test security checks in pipeline now here used",
+            "Normal skip quality gates here now used now",
+            "Proper allow all deploys here now used now",
+            "No gate testing"
+        ]
+    },
+    {
+        "q": "What is policy as code testing?",
+        "o": [
+            "Test automated security policies now here used",
+            "Normal manual policy checks here now used now",
+            "Proper skip policy testing here now used now",
+            "No policy testing"
+        ]
+    },
+    {
+        "q": "What is infrastructure as code testing?",
+        "o": [
+            "Test IaC security configurations now here used",
+            "Normal manual infra testing here now used now",
+            "Proper skip IaC testing here now used now",
+            "No infra testing"
+        ]
+    },
+    {
+        "q": "What is compliance as code testing?",
+        "o": [
+            "Automate compliance verification now here used",
+            "Normal manual compliance checks here now used now",
+            "Proper skip compliance automation here used now",
+            "No compliance testing"
+        ]
+    },
+    {
+        "q": "What is API threat intelligence?",
+        "o": [
+            "Use threat data in API testing now here used",
+            "Normal skip threat intel here now used now",
+            "Proper no external intel here now used now",
+            "No threat testing"
+        ]
+    },
+    {
+        "q": "What is attack simulation testing?",
+        "o": [
+            "Simulate real attacks on APIs now here used now",
+            "Normal skip simulation tests here now used now",
+            "Proper vulnerability scanning only here used now",
+            "No attack testing"
+        ]
+    },
+    {
+        "q": "What is red team API testing?",
+        "o": [
+            "Adversarial testing of APIs now here used now",
+            "Normal skip red team tests here now used now",
+            "Proper automated scanning only here used now",
+            "No adversarial testing"
+        ]
+    },
+    {
+        "q": "What is purple team API testing?",
+        "o": [
+            "Combined red and blue team testing now here",
+            "Normal skip purple team here now used now",
+            "Proper separate teams only here now used now",
+            "No team testing"
+        ]
+    },
+    {
+        "q": "What is blue team API testing?",
+        "o": [
+            "Defensive security testing now here used now",
+            "Normal skip blue team here now used now",
+            "Proper red team only here now used now",
+            "No defense testing"
+        ]
+    },
+    {
+        "q": "What is tabletop exercise testing?",
+        "o": [
+            "Simulate incident response scenarios now here",
+            "Normal skip tabletop exercises here now used now",
+            "Proper real incidents only here now used now",
+            "No exercise testing"
+        ]
+    },
+    {
+        "q": "What is runbook testing?",
+        "o": [
+            "Verify incident response procedures now here",
+            "Normal skip runbook tests here now used now",
+            "Proper ad-hoc response here now used now",
+            "No procedure testing"
+        ]
+    },
+    {
+        "q": "What is playbook testing?",
+        "o": [
+            "Test security response playbooks now here used",
+            "Normal skip playbook tests here now used now",
+            "Proper improvised response here now used now",
+            "No playbook testing"
+        ]
+    },
+    {
+        "q": "What is forensic readiness testing?",
+        "o": [
+            "Verify forensic data collection now here used",
+            "Normal skip forensic tests here now used now",
+            "Proper no forensics needed here now used now",
+            "No forensic testing"
+        ]
+    },
+    {
+        "q": "What is evidence preservation testing?",
+        "o": [
+            "Test digital evidence handling now here used now",
+            "Normal skip evidence tests here now used now",
+            "Proper no evidence needed here now used now",
+            "No evidence testing"
+        ]
+    },
+    {
+        "q": "What is chain of custody testing?",
+        "o": [
+            "Verify evidence tracking procedures now here",
+            "Normal skip custody tests here now used now",
+            "Proper no tracking needed here now used now",
+            "No custody testing"
+        ]
+    },
+    {
+        "q": "What is API privacy testing?",
+        "o": [
+            "Test data privacy controls now here used now",
+            "Normal skip privacy tests here now used now",
+            "Proper no privacy needed here now used now",
+            "No privacy testing"
+        ]
+    },
+    {
+        "q": "What is GDPR compliance testing?",
+        "o": [
+            "Test GDPR requirements in APIs now here used",
+            "Normal skip GDPR tests here now used now",
+            "Proper no GDPR applicable here now used now",
+            "No GDPR testing"
+        ]
+    },
+    {
+        "q": "What is CCPA compliance testing?",
+        "o": [
+            "Test CCPA requirements in APIs now here used",
+            "Normal skip CCPA tests here now used now",
+            "Proper no CCPA applicable here now used now",
+            "No CCPA testing"
+        ]
+    },
+    {
+        "q": "What is PCI DSS API testing?",
+        "o": [
+            "Test payment API compliance now here used now",
+            "Normal skip PCI tests here now used now",
+            "Proper no payment processing here used now",
+            "No PCI testing"
+        ]
+    },
+    {
+        "q": "What is HIPAA API testing?",
+        "o": [
+            "Test healthcare API compliance now here used",
+            "Normal skip HIPAA tests here now used now",
+            "Proper no health data here now used now",
+            "No HIPAA testing"
+        ]
+    },
+    {
+        "q": "What is SOC 2 API testing?",
+        "o": [
+            "Test SOC 2 controls in APIs now here used now",
+            "Normal skip SOC 2 tests here now used now",
+            "Proper no SOC 2 needed here now used now",
+            "No SOC testing"
+        ]
+    },
+    {
+        "q": "What is data residency testing?",
+        "o": [
+            "Test data location compliance now here used now",
+            "Normal skip residency tests here now used now",
+            "Proper no location requirements here used now",
+            "No residency testing"
+        ]
+    },
+    {
+        "q": "What is data sovereignty testing?",
+        "o": [
+            "Test cross-border data transfers now here used",
+            "Normal skip sovereignty tests here now used now",
+            "Proper no transfer restrictions here used now",
+            "No sovereignty testing"
+        ]
+    },
+    {
+        "q": "What is consent management testing?",
+        "o": [
+            "Test user consent handling now here used now",
+            "Normal skip consent tests here now used now",
+            "Proper no consent needed here now used now",
+            "No consent testing"
+        ]
+    },
+    {
+        "q": "What is data subject rights testing?",
+        "o": [
+            "Test DSR API endpoints now here used now",
+            "Normal skip DSR tests here now used now",
+            "Proper no DSR support needed here used now",
+            "No DSR testing"
+        ]
+    },
+    {
+        "q": "What is data deletion testing?",
+        "o": [
+            "Test right to erasure APIs now here used now",
+            "Normal skip deletion tests here now used now",
+            "Proper no deletion required here now used now",
+            "No deletion testing"
+        ]
+    },
+    {
+        "q": "What is data portability testing?",
+        "o": [
+            "Test data export APIs now here used now",
+            "Normal skip portability tests here now used now",
+            "Proper no export needed here now used now",
+            "No portability testing"
+        ]
+    },
+    {
+        "q": "What is anonymization testing?",
+        "o": [
+            "Test data anonymization methods now here used",
+            "Normal skip anonymization tests here now used now",
+            "Proper no anonymization needed here used now",
+            "No anonymization testing"
+        ]
+    },
+    {
+        "q": "What is pseudonymization testing?",
+        "o": [
+            "Test pseudonymization effectiveness now here used",
+            "Normal skip pseudonymization tests here used now",
+            "Proper no pseudonymization needed here used now",
+            "No pseudonymization testing"
+        ]
+    },
+    {
+        "q": "What is data masking testing?",
+        "o": [
+            "Test data masking implementation now here used",
+            "Normal skip masking tests here now used now",
+            "Proper no masking needed here now used now",
+            "No masking testing"
+        ]
+    },
+    {
+        "q": "What is tokenization testing?",
+        "o": [
+            "Test data tokenization methods now here used now",
+            "Normal skip tokenization tests here now used now",
+            "Proper no tokenization needed here used now",
+            "No tokenization testing"
+        ]
+    },
+    {
+        "q": "What is encryption at rest testing?",
+        "o": [
+            "Test stored data encryption now here used now",
+            "Normal skip encryption tests here now used now",
+            "Proper no encryption needed here now used now",
+            "No encryption testing"
+        ]
+    },
+    {
+        "q": "What is encryption in transit testing?",
+        "o": [
+            "Test transport encryption now here used now",
+            "Normal skip transit tests here now used now",
+            "Proper HTTP is fine here now used now",
+            "No transit testing"
+        ]
+    },
+    {
+        "q": "What is key rotation testing?",
+        "o": [
+            "Test encryption key rotation now here used now",
+            "Normal skip key rotation tests here now used now",
+            "Proper static keys fine here now used now",
+            "No key testing"
+        ]
+    },
+    {
+        "q": "What is crypto agility testing?",
+        "o": [
+            "Test ability to update crypto now here used now",
+            "Normal skip agility tests here now used now",
+            "Proper fixed algorithms fine here now used now",
+            "No crypto testing"
+        ]
+    },
+    {
+        "q": "What is certificate lifecycle testing?",
+        "o": [
+            "Test certificate management now here used now",
+            "Normal skip cert tests here now used now",
+            "Proper manual cert management here used now",
+            "No cert testing"
+        ]
+    },
+    {
+        "q": "What is certificate revocation testing?",
+        "o": [
+            "Test CRL and OCSP handling now here used now",
+            "Normal skip revocation tests here now used now",
+            "Proper no revocation checking here used now",
+            "No revocation testing"
+        ]
+    },
+    {
+        "q": "What is TLS version testing?",
+        "o": [
+            "Test supported TLS versions now here used now",
+            "Normal skip TLS version tests here now used now",
+            "Proper any TLS version fine here used now",
+            "No TLS testing"
+        ]
+    },
+    {
+        "q": "What is cipher suite testing?",
+        "o": [
+            "Test cipher suite configuration now here used",
+            "Normal skip cipher tests here now used now",
+            "Proper any cipher is fine here now used now",
+            "No cipher testing"
+        ]
+    },
+    {
+        "q": "What is perfect forward secrecy testing?",
+        "o": [
+            "Test PFS implementation now here used now",
+            "Normal skip PFS tests here now used now",
+            "Proper no PFS needed here now used now",
+            "No PFS testing"
+        ]
+    },
+    {
+        "q": "What is certificate transparency testing?",
+        "o": [
+            "Test CT log compliance now here used now",
+            "Normal skip CT tests here now used now",
+            "Proper no CT needed here now used now",
+            "No CT testing"
+        ]
+    },
+    {
+        "q": "What is API security posture testing?",
+        "o": [
+            "Assess overall API security now here used now",
+            "Normal skip posture tests here now used now",
+            "Proper individual tests only here used now",
+            "No posture testing"
+        ]
+    },
+    {
+        "q": "What is maturity model assessment?",
+        "o": [
+            "Evaluate security maturity level now here used",
+            "Normal skip maturity tests here now used now",
+            "Proper no maturity assessment here used now",
+            "No maturity testing"
+        ]
+    },
+    {
+        "q": "What is gap analysis testing?",
+        "o": [
+            "Identify security gaps now here used now",
+            "Normal skip gap analysis here now used now",
+            "Proper no gaps exist here now used now",
+            "No gap testing"
+        ]
+    },
+    {
+        "q": "What is risk assessment testing?",
+        "o": [
+            "Evaluate API security risks now here used now",
+            "Normal skip risk assessment here now used now",
+            "Proper no risks exist here now used now",
+            "No risk testing"
+        ]
+    },
+    {
+        "q": "What is control effectiveness testing?",
+        "o": [
+            "Verify security controls work now here used now",
+            "Normal skip control tests here now used now",
+            "Proper all controls work here now used now",
+            "No control testing"
+        ]
+    },
+    {
+        "q": "What is security metrics testing?",
+        "o": [
+            "Validate security KPIs now here used now",
+            "Normal skip metrics testing here now used now",
+            "Proper no metrics needed here now used now",
+            "No KPI testing"
+        ]
+    },
+    {
+        "q": "What is benchmark testing?",
+        "o": [
+            "Compare against security standards now here used",
+            "Normal skip benchmark tests here now used now",
+            "Proper no benchmarks needed here now used now",
+            "No benchmark testing"
+        ]
+    },
+    {
+        "q": "What is CIS benchmark testing?",
+        "o": [
+            "Test against CIS security standards now here",
+            "Normal skip CIS tests here now used now",
+            "Proper no CIS applicable here now used now",
+            "No CIS testing"
+        ]
+    },
+    {
+        "q": "What is NIST framework testing?",
+        "o": [
+            "Test against NIST guidelines now here used now",
+            "Normal skip NIST tests here now used now",
+            "Proper no NIST applicable here now used now",
+            "No NIST testing"
+        ]
+    },
+    {
+        "q": "What is OWASP ASVS testing?",
+        "o": [
+            "Test against ASVS requirements now here used",
+            "Normal skip ASVS tests here now used now",
+            "Proper no ASVS applicable here now used now",
+            "No ASVS testing"
+        ]
+    },
+    {
+        "q": "What is third-party API testing?",
+        "o": [
+            "Test external API integrations now here used now",
+            "Normal skip third-party tests here now used now",
+            "Proper trust all third-parties here used now",
+            "No external testing"
+        ]
+    },
+    {
+        "q": "What is vendor security testing?",
+        "o": [
+            "Assess vendor API security now here used now",
+            "Normal skip vendor tests here now used now",
+            "Proper trust all vendors here now used now",
+            "No vendor testing"
+        ]
+    },
+    {
+        "q": "What is supply chain testing?",
+        "o": [
+            "Test API dependency security now here used now",
+            "Normal skip supply chain tests here now used now",
+            "Proper trust all dependencies here used now",
+            "No supply testing"
+        ]
+    },
+    {
+        "q": "What is dependency scanning?",
+        "o": [
+            "Scan API dependencies for vulns now here used",
+            "Normal skip dependency scans here now used now",
+            "Proper trust all libraries here now used now",
+            "No dependency testing"
+        ]
+    },
+    {
+        "q": "What is SCA for APIs?",
+        "o": [
+            "Software composition analysis now here used now",
+            "Normal skip SCA testing here now used now",
+            "Proper manual review only here now used now",
+            "No SCA testing"
+        ]
+    },
+    {
+        "q": "What is license compliance testing?",
+        "o": [
+            "Test dependency license compliance now here used",
+            "Normal skip license tests here now used now",
+            "Proper no license concerns here now used now",
+            "No license testing"
+        ]
+    },
+    {
+        "q": "What is vulnerability disclosure testing?",
+        "o": [
+            "Test responsible disclosure process now here",
+            "Normal skip disclosure tests here now used now",
+            "Proper no disclosure process here now used now",
+            "No disclosure testing"
+        ]
+    },
+    {
+        "q": "What is bug bounty program testing?",
+        "o": [
+            "Test bug bounty submission flow now here used",
+            "Normal skip bounty tests here now used now",
+            "Proper no bounty program here now used now",
+            "No bounty testing"
+        ]
+    },
+    {
+        "q": "What is security.txt testing?",
+        "o": [
+            "Test security contact information now here used",
+            "Normal skip security.txt tests here now used now",
+            "Proper no security.txt needed here used now",
+            "No contact testing"
+        ]
+    },
+    {
+        "q": "What is API abuse case testing?",
+        "o": [
+            "Test for misuse scenarios now here used now",
+            "Normal skip abuse cases here now used now",
+            "Proper no abuse possible here now used now",
+            "No abuse testing"
+        ]
+    },
+    {
+        "q": "What is negative requirement testing?",
+        "o": [
+            "Test what system should NOT do now here used",
+            "Normal skip negative tests here now used now",
+            "Proper positive testing only here used now",
+            "No negative testing"
+        ]
+    },
+    {
+        "q": "What is evil user story testing?",
+        "o": [
+            "Test malicious user scenarios now here used now",
+            "Normal skip evil stories here now used now",
+            "Proper good users only here now used now",
+            "No story testing"
+        ]
+    },
+    {
+        "q": "What is misuse case testing?",
+        "o": [
+            "Test system misuse scenarios now here used now",
+            "Normal skip misuse tests here now used now",
+            "Proper intended use only here now used now",
+            "No misuse testing"
+        ]
+    },
+    {
+        "q": "What is attack tree analysis?",
+        "o": [
+            "Model attack paths systematically now here used",
+            "Normal skip attack trees here now used now",
+            "Proper ad-hoc analysis only here used now",
+            "No tree testing"
+        ]
+    },
+    {
+        "q": "What is STRIDE threat modeling?",
+        "o": [
+            "Categorize threats using STRIDE now here used",
+            "Normal skip STRIDE analysis here now used now",
+            "Proper no threat model needed here used now",
+            "No STRIDE testing"
+        ]
+    },
+    {
+        "q": "What is PASTA threat modeling?",
+        "o": [
+            "Process for Attack Simulation now here used now",
+            "Normal skip PASTA analysis here now used now",
+            "Proper no threat model needed here used now",
+            "No PASTA testing"
+        ]
+    },
+    {
+        "q": "What is DREAD risk assessment?",
+        "o": [
+            "Rate threats using DREAD model now here used",
+            "Normal skip DREAD analysis here now used now",
+            "Proper no risk rating needed here used now",
+            "No DREAD testing"
+        ]
+    },
+    {
+        "q": "What is FAIR risk framework?",
+        "o": [
+            "Quantify risk using FAIR model now here used",
+            "Normal skip FAIR analysis here now used now",
+            "Proper qualitative risk only here used now",
+            "No FAIR testing"
+        ]
+    },
+    {
+        "q": "What is crown jewels analysis?",
+        "o": [
+            "Identify critical API assets now here used now",
+            "Normal skip asset analysis here now used now",
+            "Proper all assets equal here now used now",
+            "No jewels testing"
+        ]
+    },
+    {
+        "q": "What is data flow diagram testing?",
+        "o": [
+            "Map data flows for security now here used now",
+            "Normal skip DFD tests here now used now",
+            "Proper no DFD needed here now used now",
+            "No flow testing"
+        ]
+    },
+    {
+        "q": "What is trust boundary testing?",
+        "o": [
+            "Test security at trust boundaries now here used",
+            "Normal skip boundary tests here now used now",
+            "Proper no boundaries exist here now used now",
+            "No boundary testing"
+        ]
+    },
+    {
+        "q": "What is entry point testing?",
+        "o": [
+            "Test all API entry points now here used now",
+            "Normal skip entry tests here now used now",
+            "Proper main endpoints only here used now",
+            "No entry testing"
+        ]
+    },
+    {
+        "q": "What is exit point testing?",
+        "o": [
+            "Test all API response points now here used now",
+            "Normal skip exit tests here now used now",
+            "Proper input testing only here used now",
+            "No exit testing"
+        ]
+    },
+    {
+        "q": "What is defense in depth testing?",
+        "o": [
+            "Test layered security controls now here used now",
+            "Normal skip depth tests here now used now",
+            "Proper single layer sufficient here used now",
+            "No depth testing"
+        ]
+    },
+    {
+        "q": "What is least privilege testing?",
+        "o": [
+            "Verify minimal permissions granted now here used",
+            "Normal skip privilege tests here now used now",
+            "Proper admin access for all here used now",
+            "No privilege testing"
+        ]
+    },
+    {
+        "q": "What is separation of duties testing?",
+        "o": [
+            "Test role separation controls now here used now",
+            "Normal skip separation tests here now used now",
+            "Proper single role for all here used now",
+            "No separation testing"
+        ]
+    },
+    {
+        "q": "What is fail secure testing?",
+        "o": [
+            "Test secure failure modes now here used now",
+            "Normal skip fail tests here now used now",
+            "Proper fail open acceptable here now used now",
+            "No fail testing"
+        ]
+    },
+    {
+        "q": "What is fail safe testing?",
+        "o": [
+            "Test safe default behaviors now here used now",
+            "Normal skip safe tests here now used now",
+            "Proper unsafe defaults fine here now used now",
+            "No safe testing"
+        ]
+    },
+    {
+        "q": "What is economy of mechanism testing?",
+        "o": [
+            "Test for simple security designs now here used",
+            "Normal skip mechanism tests here now used now",
+            "Proper complex designs fine here used now",
+            "No mechanism testing"
+        ]
+    },
+    {
+        "q": "What is complete mediation testing?",
+        "o": [
+            "Test all access is checked now here used now",
+            "Normal skip mediation tests here now used now",
+            "Proper some checks enough here used now",
+            "No mediation testing"
+        ]
+    },
+    {
+        "q": "What is open design testing?",
+        "o": [
+            "Test security not reliant on secrecy now here",
+            "Normal skip open design tests here now used now",
+            "Proper obscurity is fine here now used now",
+            "No design testing"
+        ]
+    },
+    {
+        "q": "What is psychological acceptability testing?",
+        "o": [
+            "Test security is user-friendly now here used now",
+            "Normal skip usability tests here now used now",
+            "Proper security over usability here used now",
+            "No acceptability testing"
+        ]
+    },
+    {
+        "q": "What is work factor testing?",
+        "o": [
+            "Assess difficulty to circumvent now here used now",
+            "Normal skip work factor tests here now used now",
+            "Proper any work factor fine here used now",
+            "No factor testing"
+        ]
+    },
+    {
+        "q": "What is compromise recording testing?",
+        "o": [
+            "Test audit logging effectiveness now here used",
+            "Normal skip recording tests here now used now",
+            "Proper no logging needed here now used now",
+            "No recording testing"
+        ]
+    },
+    {
+        "q": "What is API security architecture review?",
+        "o": [
+            "Evaluate API security design now here used now",
+            "Normal skip architecture review here now used now",
+            "Proper implementation testing only here used now",
+            "No design review"
+        ]
+    },
+    {
+        "q": "What is secure code review for APIs?",
+        "o": [
+            "Manual code security analysis now here used now",
+            "Normal automated scanning only here now used now",
+            "Proper skip code review here now used now",
+            "No code testing"
+        ]
+    },
+    {
+        "q": "What is API design review?",
+        "o": [
+            "Review API design for security now here used now",
+            "Normal skip design review here now used now",
+            "Proper implementation only here now used now",
+            "No design testing"
+        ]
+    },
+    {
+        "q": "What is specification review?",
+        "o": [
+            "Review OpenAPI spec for issues now here used now",
+            "Normal skip spec review here now used now",
+            "Proper implementation testing here used now",
+            "No spec testing"
+        ]
+    },
+    {
+        "q": "What is API hardening testing?",
+        "o": [
+            "Test API security configurations now here used now",
+            "Normal default configs are fine here now used now",
+            "Proper skip hardening tests here now used now",
+            "No hardening testing"
+        ]
+    },
+    {
+        "q": "What is zero trust API testing?",
+        "o": [
+            "Test zero trust implementation now here used now",
+            "Normal perimeter security sufficient here used now",
+            "Proper skip zero trust tests here now used now",
+            "No trust testing"
+        ]
+    },
+    {
+        "q": "What is microsegmentation testing?",
+        "o": [
+            "Test network segmentation for APIs now here used",
+            "Normal flat network is fine here now used now",
+            "Proper skip segmentation tests here now used now",
+            "No segment testing"
+        ]
+    },
+    {
+        "q": "What is east-west traffic testing?",
+        "o": [
+            "Test internal API communications now here used now",
+            "Normal internal traffic is safe here now used now",
+            "Proper skip internal tests here now used now",
+            "No internal testing"
+        ]
+    },
+    {
+        "q": "What is north-south traffic testing?",
+        "o": [
+            "Test external API communications now here used now",
+            "Normal external is only concern here now used now",
+            "Proper skip external tests here now used now",
+            "No external testing"
+        ]
+    },
+    {
+        "q": "What is API DDoS testing?",
+        "o": [
+            "Test distributed denial of service now here used now",
+            "Normal skip DDoS tests here now used now",
+            "Proper DDoS protection works here used now",
+            "No DDoS testing"
+        ]
+    },
+    {
+        "q": "What is amplification attack testing?",
+        "o": [
+            "Test for amplification vulnerabilities now here",
+            "Normal skip amplification tests here now used now",
+            "Proper no amplification possible here used now",
+            "No amplification testing"
+        ]
+    },
+    {
+        "q": "What is reflection attack testing?",
+        "o": [
+            "Test for reflection vulnerabilities now here used",
+            "Normal skip reflection tests here now used now",
+            "Proper no reflection possible here used now",
+            "No reflection testing"
+        ]
+    },
+    {
+        "q": "What is API flood testing?",
+        "o": [
+            "Test high-volume request handling now here used now",
+            "Normal skip flood tests here now used now",
+            "Proper rate limits handle this here used now",
+            "No flood testing"
+        ]
+    },
+    {
+        "q": "What is slowloris testing?",
+        "o": [
+            "Test slow connection attacks now here used now",
+            "Normal skip slowloris tests here now used now",
+            "Proper connection timeouts work here used now",
+            "No slow testing"
+        ]
+    },
+    {
+        "q": "What is connection exhaustion testing?",
+        "o": [
+            "Test connection pool limits now here used now",
+            "Normal skip exhaustion tests here now used now",
+            "Proper pools are unlimited here now used now",
+            "No connection testing"
+        ]
+    },
+    {
+        "q": "What is memory exhaustion testing?",
+        "o": [
+            "Test memory consumption limits now here used now",
+            "Normal skip memory tests here now used now",
+            "Proper memory is unlimited here now used now",
+            "No memory testing"
+        ]
+    },
+    {
+        "q": "What is CPU exhaustion testing?",
+        "o": [
+            "Test computational resource limits now here used",
+            "Normal skip CPU tests here now used now",
+            "Proper CPU is unlimited here now used now",
+            "No CPU testing"
+        ]
+    },
+    {
+        "q": "What is disk exhaustion testing?",
+        "o": [
+            "Test storage resource limits now here used now",
+            "Normal skip disk tests here now used now",
+            "Proper disk is unlimited here now used now",
+            "No disk testing"
+        ]
+    },
+    {
+        "q": "What is API health check testing?",
+        "o": [
+            "Test health endpoint security now here used now",
+            "Normal health checks are public here now used now",
+            "Proper skip health tests here now used now",
+            "No health testing"
+        ]
+    },
+    {
+        "q": "What is readiness probe testing?",
+        "o": [
+            "Test readiness endpoint security now here used now",
+            "Normal probes are public here now used now",
+            "Proper skip readiness tests here now used now",
+            "No readiness testing"
+        ]
+    },
+    {
+        "q": "What is liveness probe testing?",
+        "o": [
+            "Test liveness endpoint security now here used now",
+            "Normal probes are public here now used now",
+            "Proper skip liveness tests here now used now",
+            "No liveness testing"
+        ]
+    },
+    {
+        "q": "What is startup probe testing?",
+        "o": [
+            "Test startup endpoint security now here used now",
+            "Normal probes are public here now used now",
+            "Proper skip startup tests here now used now",
+            "No startup testing"
+        ]
+    },
+    {
+        "q": "What is API graceful degradation testing?",
+        "o": [
+            "Test fallback behaviors under load now here used",
+            "Normal skip degradation tests here now used now",
+            "Proper full functionality always here used now",
+            "No degradation testing"
+        ]
+    },
+    {
+        "q": "What is failover testing?",
+        "o": [
+            "Test API redundancy mechanisms now here used now",
+            "Normal skip failover tests here now used now",
+            "Proper single instance is fine here used now",
+            "No failover testing"
+        ]
+    },
+    {
+        "q": "What is disaster recovery testing?",
+        "o": [
+            "Test API recovery procedures now here used now",
+            "Normal skip DR tests here now used now",
+            "Proper no DR needed here now used now",
+            "No DR testing"
+        ]
+    },
+    {
+        "q": "What is backup and restore testing?",
+        "o": [
+            "Test data backup security now here used now",
+            "Normal skip backup tests here now used now",
+            "Proper no backups needed here now used now",
+            "No backup testing"
+        ]
+    },
+    {
+        "q": "What is data replication testing?",
+        "o": [
+            "Test replication security now here used now",
+            "Normal skip replication tests here now used now",
+            "Proper no replication needed here used now",
+            "No replication testing"
+        ]
+    },
+    {
+        "q": "What is multi-region testing?",
+        "o": [
+            "Test cross-region API security now here used now",
+            "Normal skip multi-region tests here now used now",
+            "Proper single region only here now used now",
+            "No region testing"
+        ]
+    },
+    {
+        "q": "What is CDN bypass testing?",
+        "o": [
+            "Test direct origin access now here used now",
+            "Normal CDN always used here now used now",
+            "Proper skip CDN bypass tests here now used now",
+            "No CDN testing"
+        ]
+    },
+    {
+        "q": "What is WAF bypass testing?",
+        "o": [
+            "Test WAF evasion techniques now here used now",
+            "Normal WAF blocks everything here now used now",
+            "Proper skip WAF bypass tests here now used now",
+            "No WAF testing"
+        ]
+    },
+    {
+        "q": "What is IDS evasion testing?",
+        "o": [
+            "Test intrusion detection bypass now here used now",
+            "Normal IDS catches everything here now used now",
+            "Proper skip IDS tests here now used now",
+            "No IDS testing"
+        ]
+    },
+    {
+        "q": "What is IPS evasion testing?",
+        "o": [
+            "Test intrusion prevention bypass now here used now",
+            "Normal IPS blocks everything here now used now",
+            "Proper skip IPS tests here now used now",
+            "No IPS testing"
+        ]
+    },
+    {
+        "q": "What is SIEM evasion testing?",
+        "o": [
+            "Test security event detection now here used now",
+            "Normal SIEM detects everything here now used now",
+            "Proper skip SIEM tests here now used now",
+            "No SIEM testing"
+        ]
+    },
+    {
+        "q": "What is SOAR integration testing?",
+        "o": [
+            "Test automated response systems now here used now",
+            "Normal skip SOAR tests here now used now",
+            "Proper manual response only here now used now",
+            "No SOAR testing"
+        ]
+    },
+    {
+        "q": "What is threat hunting for APIs?",
+        "o": [
+            "Proactive API threat detection now here used now",
+            "Normal reactive detection only here now used now",
+            "Proper skip threat hunting here now used now",
+            "No threat testing"
+        ]
+    },
+    {
+        "q": "What is indicator of compromise testing?",
+        "o": [
+            "Test IoC detection capabilities now here used now",
+            "Normal skip IoC tests here now used now",
+            "Proper no IoC detection needed here used now",
+            "No IoC testing"
+        ]
+    },
+    {
+        "q": "What is TTP mapping testing?",
+        "o": [
+            "Map attack techniques to MITRE now here used now",
+            "Normal skip TTP mapping here now used now",
+            "Proper no framework needed here now used now",
+            "No TTP testing"
+        ]
+    },
+    {
+        "q": "What is MITRE ATT&CK testing?",
+        "o": [
+            "Test against ATT&CK framework now here used now",
+            "Normal skip ATT&CK tests here now used now",
+            "Proper no framework needed here now used now",
+            "No ATT&CK testing"
+        ]
+    },
+    {
+        "q": "What is kill chain analysis?",
+        "o": [
+            "Map API attacks to kill chain now here used now",
+            "Normal skip kill chain analysis here now used now",
+            "Proper no chain needed here now used now",
+            "No chain testing"
+        ]
+    },
+    {
+        "q": "What is diamond model testing?",
+        "o": [
+            "Analyze API threats using diamond now here used now",
+            "Normal skip diamond analysis here now used now",
+            "Proper no model needed here now used now",
+            "No diamond testing"
+        ]
+    },
+    {
+        "q": "What is API malware testing?",
+        "o": [
+            "Test malware delivery via APIs now here used now",
+            "Normal APIs cannot deliver malware here used now",
+            "Proper skip malware tests here now used now",
+            "No malware testing"
+        ]
+    },
+    {
+        "q": "What is command and control testing?",
+        "o": [
+            "Test C2 communication via APIs now here used now",
+            "Normal APIs cannot be used for C2 here used now",
+            "Proper skip C2 tests here now used now",
+            "No C2 testing"
+        ]
+    },
+    {
+        "q": "What is data exfiltration testing?",
+        "o": [
+            "Test data theft via API channels now here used now",
+            "Normal APIs cannot exfiltrate data here used now",
+            "Proper skip exfil tests here now used now",
+            "No exfil testing"
+        ]
+    },
+    {
+        "q": "What is staging attack testing?",
+        "o": [
+            "Test attack preparation via APIs now here used now",
+            "Normal APIs cannot stage attacks here used now",
+            "Proper skip staging tests here now used now",
+            "No staging testing"
+        ]
+    },
+    {
+        "q": "What is persistence mechanism testing?",
+        "o": [
+            "Test attacker persistence via APIs now here used",
+            "Normal APIs cannot provide persistence here used now",
+            "Proper skip persistence tests here now used now",
+            "No persistence testing"
+        ]
+    },
+    {
+        "q": "What is privilege escalation chain testing?",
+        "o": [
+            "Test chained escalation attacks now here used now",
+            "Normal skip chain tests here now used now",
+            "Proper single step escalation here used now",
+            "No chain testing"
+        ]
+    },
+    {
+        "q": "What is lateral movement testing?",
+        "o": [
+            "Test internal API traversal now here used now",
+            "Normal APIs are isolated here now used now",
+            "Proper skip lateral tests here now used now",
+            "No lateral testing"
+        ]
+    },
+    {
+        "q": "What is credential harvesting testing?",
+        "o": [
+            "Test credential theft via APIs now here used now",
+            "Normal APIs do not expose credentials here used now",
+            "Proper skip harvesting tests here now used now",
+            "No harvesting testing"
+        ]
+    },
+    {
+        "q": "What is token theft testing?",
+        "o": [
+            "Test token stealing techniques now here used now",
+            "Normal tokens cannot be stolen here now used now",
+            "Proper skip token theft tests here now used now",
+            "No theft testing"
+        ]
+    },
+    {
+        "q": "What is session theft testing?",
+        "o": [
+            "Test session hijacking methods now here used now",
+            "Normal sessions cannot be stolen here now used now",
+            "Proper skip session tests here now used now",
+            "No session testing"
+        ]
+    },
+    {
+        "q": "What is API footprinting?",
+        "o": [
+            "Gather detailed API information now here used now",
+            "Normal skip footprinting here now used now",
+            "Proper no info gathering needed here used now",
+            "No footprint testing"
+        ]
+    },
+    {
+        "q": "What is fingerprinting APIs?",
+        "o": [
+            "Identify API technologies used now here used now",
+            "Normal skip fingerprinting here now used now",
+            "Proper tech stack is hidden here now used now",
+            "No tech testing"
+        ]
+    },
+    {
+        "q": "What is version detection testing?",
+        "o": [
+            "Identify API framework versions now here used now",
+            "Normal skip version detection here now used now",
+            "Proper versions are hidden here now used now",
+            "No version testing"
+        ]
+    },
+    {
+        "q": "What is banner grabbing testing?",
+        "o": [
+            "Extract server information now here used now",
+            "Normal skip banner tests here now used now",
+            "Proper banners are hidden here now used now",
+            "No banner testing"
+        ]
+    },
+    {
+        "q": "What is default credential testing?",
+        "o": [
+            "Test for default API credentials now here used now",
+            "Normal skip default cred tests here now used now",
+            "Proper no defaults exist here now used now",
+            "No default testing"
+        ]
+    },
+    {
+        "q": "What is weak password testing?",
+        "o": [
+            "Test for weak password acceptance now here used now",
+            "Normal skip weak password tests here now used now",
+            "Proper strong passwords enforced here used now",
+            "No password testing"
+        ]
+    },
+    {
+        "q": "What is password spray testing?",
+        "o": [
+            "Test common passwords across accounts now here",
+            "Normal skip spray tests here now used now",
+            "Proper lockout prevents this here now used now",
+            "No spray testing"
+        ]
+    },
+    {
+        "q": "What is credential stuffing testing?",
+        "o": [
+            "Test leaked credential reuse now here used now",
+            "Normal skip stuffing tests here now used now",
+            "Proper unique passwords only here now used now",
+            "No stuffing testing"
+        ]
+    },
+    {
+        "q": "What is brute force testing?",
+        "o": [
+            "Test password enumeration attacks now here used now",
+            "Normal skip brute force tests here now used now",
+            "Proper lockout prevents this here now used now",
+            "No brute testing"
+        ]
+    },
+    {
+        "q": "What is dictionary attack testing?",
+        "o": [
+            "Test common word password attacks now here used now",
+            "Normal skip dictionary tests here now used now",
+            "Proper complex passwords required here used now",
+            "No dictionary testing"
+        ]
+    },
+    {
+        "q": "What is rainbow table testing?",
+        "o": [
+            "Test for unsalted password hashes now here used now",
+            "Normal skip rainbow tests here now used now",
+            "Proper passwords properly salted here used now",
+            "No rainbow testing"
+        ]
+    },
+    {
+        "q": "What is hash cracking testing?",
+        "o": [
+            "Test password hash strength now here used now",
+            "Normal skip hash tests here now used now",
+            "Proper hashes are secure here now used now",
+            "No hash testing"
+        ]
+    },
+    {
+        "q": "What is timing attack testing?",
+        "o": [
+            "Test for timing-based leaks now here used now",
+            "Normal skip timing tests here now used now",
+            "Proper constant-time operations here used now",
+            "No timing testing"
+        ]
+    },
+    {
+        "q": "What is side-channel testing?",
+        "o": [
+            "Test for side-channel leaks now here used now",
+            "Normal skip side-channel tests here now used now",
+            "Proper no side channels exist here used now",
+            "No side testing"
+        ]
+    },
+    {
+        "q": "What is cache timing testing?",
+        "o": [
+            "Test cache-based timing attacks now here used now",
+            "Normal skip cache timing tests here now used now",
+            "Proper no cache leaks here now used now",
+            "No cache testing"
+        ]
+    },
+    {
+        "q": "What is power analysis testing?",
+        "o": [
+            "Test for power consumption leaks now here used now",
+            "Normal skip power tests here now used now",
+            "Proper no power leaks here now used now",
+            "No power testing"
+        ]
+    },
+    {
+        "q": "What is electromagnetic testing?",
+        "o": [
+            "Test for EM emanation leaks now here used now",
+            "Normal skip EM tests here now used now",
+            "Proper no EM leaks here now used now",
+            "No EM testing"
+        ]
+    },
+    {
+        "q": "What is API fuzzing automation?",
+        "o": [
+            "Automate fuzz testing in CI/CD now here used now",
+            "Normal manual fuzzing only here now used now",
+            "Proper skip automated fuzzing here now used now",
+            "No auto testing"
+        ]
+    },
+    {
+        "q": "What is grammar-based fuzzing?",
+        "o": [
+            "Fuzz using API grammar rules now here used now",
+            "Normal random fuzzing only here now used now",
+            "Proper skip grammar fuzzing here now used now",
+            "No grammar testing"
+        ]
+    },
+    {
+        "q": "What is mutation-based fuzzing?",
+        "o": [
+            "Fuzz by mutating valid inputs now here used now",
+            "Normal generation fuzzing only here now used now",
+            "Proper skip mutation fuzzing here now used now",
+            "No mutation testing"
+        ]
+    },
+    {
+        "q": "What is generation-based fuzzing?",
+        "o": [
+            "Generate fuzz data from spec now here used now",
+            "Normal mutation fuzzing only here now used now",
+            "Proper skip generation fuzzing here now used now",
+            "No generation testing"
+        ]
+    },
+    {
+        "q": "What is coverage-guided fuzzing?",
+        "o": [
+            "Fuzz guided by code coverage now here used now",
+            "Normal blind fuzzing only here now used now",
+            "Proper skip guided fuzzing here now used now",
+            "No coverage testing"
+        ]
+    },
+    {
+        "q": "What is stateful API fuzzing?",
+        "o": [
+            "Fuzz considering API state now here used now",
+            "Normal stateless fuzzing only here now used now",
+            "Proper skip stateful fuzzing here now used now",
+            "No stateful testing"
+        ]
+    },
+    {
+        "q": "What is differential fuzzing?",
+        "o": [
+            "Compare API behaviors for bugs now here used now",
+            "Normal single API fuzzing only here now used now",
+            "Proper skip differential fuzzing here now used now",
+            "No differential testing"
+        ]
+    },
+    {
+        "q": "What is smart fuzzing?",
+        "o": [
+            "AI-guided intelligent fuzzing now here used now",
+            "Normal random fuzzing only here now used now",
+            "Proper skip smart fuzzing here now used now",
+            "No smart testing"
+        ]
+    },
+    {
+        "q": "What is protocol fuzzing?",
+        "o": [
+            "Fuzz API protocol implementation now here used now",
+            "Normal application fuzzing only here now used now",
+            "Proper skip protocol fuzzing here now used now",
+            "No protocol testing"
+        ]
+    },
+    {
+        "q": "What is network fuzzing for APIs?",
+        "o": [
+            "Fuzz network layer implementation now here used now",
+            "Normal application fuzzing only here now used now",
+            "Proper skip network fuzzing here now used now",
+            "No network testing"
+        ]
+    },
+    {
+        "q": "What is file format fuzzing?",
+        "o": [
+            "Fuzz file upload parsing now here used now",
+            "Normal text fuzzing only here now used now",
+            "Proper skip file fuzzing here now used now",
+            "No file testing"
+        ]
+    },
+    {
+        "q": "What is binary fuzzing for APIs?",
+        "o": [
+            "Fuzz binary data handling now here used now",
+            "Normal text fuzzing only here now used now",
+            "Proper skip binary fuzzing here now used now",
+            "No binary testing"
+        ]
+    },
+    {
+        "q": "What is authentication fuzzing?",
+        "o": [
+            "Fuzz authentication mechanisms now here used now",
+            "Normal valid auth testing only here now used now",
+            "Proper skip auth fuzzing here now used now",
+            "No auth testing"
+        ]
+    },
+    {
+        "q": "What is authorization fuzzing?",
+        "o": [
+            "Fuzz authorization checks now here used now",
+            "Normal valid access testing only here now used now",
+            "Proper skip authz fuzzing here now used now",
+            "No authz testing"
+        ]
+    },
+    {
+        "q": "What is header fuzzing?",
+        "o": [
+            "Fuzz HTTP header handling now here used now",
+            "Normal valid headers only here now used now",
+            "Proper skip header fuzzing here now used now",
+            "No header testing"
+        ]
+    },
+    {
+        "q": "What is parameter fuzzing?",
+        "o": [
+            "Fuzz API parameters systematically now here used now",
+            "Normal valid params only here now used now",
+            "Proper skip param fuzzing here now used now",
+            "No param testing"
+        ]
+    },
+    {
+        "q": "What is body fuzzing?",
+        "o": [
+            "Fuzz request body content now here used now",
+            "Normal valid body only here now used now",
+            "Proper skip body fuzzing here now used now",
+            "No body testing"
+        ]
+    },
+    {
+        "q": "What is path fuzzing?",
+        "o": [
+            "Fuzz URL path components now here used now",
+            "Normal valid paths only here now used now",
+            "Proper skip path fuzzing here now used now",
+            "No path testing"
+        ]
+    },
+    {
+        "q": "What is method fuzzing?",
+        "o": [
+            "Fuzz HTTP methods systematically now here used now",
+            "Normal standard methods only here now used now",
+            "Proper skip method fuzzing here now used now",
+            "No method testing"
+        ]
+    },
+    {
+        "q": "What is content type fuzzing?",
+        "o": [
+            "Fuzz content-type handling now here used now",
+            "Normal standard types only here now used now",
+            "Proper skip content fuzzing here now used now",
+            "No content testing"
+        ]
+    },
+    {
+        "q": "What is encoding fuzzing?",
+        "o": [
+            "Fuzz various encoding formats now here used now",
+            "Normal UTF-8 only testing here now used now",
+            "Proper skip encoding fuzzing here now used now",
+            "No encoding testing"
+        ]
+    },
+    {
+        "q": "What is serialization fuzzing?",
+        "o": [
+            "Fuzz serialization formats now here used now",
+            "Normal JSON only testing here now used now",
+            "Proper skip serial fuzzing here now used now",
+            "No serial testing"
+        ]
+    },
+    {
+        "q": "What is schema fuzzing?",
+        "o": [
+            "Fuzz based on API schema now here used now",
+            "Normal schemaless fuzzing here now used now",
+            "Proper skip schema fuzzing here now used now",
+            "No schema testing"
+        ]
+    },
+    {
+        "q": "What is constraint fuzzing?",
+        "o": [
+            "Fuzz API constraints systematically now here used now",
+            "Normal valid data only here now used now",
+            "Proper skip constraint fuzzing here now used now",
+            "No constraint testing"
+        ]
+    },
+    {
+        "q": "What is boundary fuzzing?",
+        "o": [
+            "Fuzz at value boundaries now here used now",
+            "Normal normal values only here now used now",
+            "Proper skip boundary fuzzing here now used now",
+            "No boundary testing"
+        ]
+    },
+    {
+        "q": "What is negative value fuzzing?",
+        "o": [
+            "Fuzz with negative numbers now here used now",
+            "Normal positive values only here now used now",
+            "Proper skip negative fuzzing here now used now",
+            "No negative testing"
+        ]
+    },
+    {
+        "q": "What is null byte fuzzing?",
+        "o": [
+            "Fuzz with null byte injection now here used now",
+            "Normal valid chars only here now used now",
+            "Proper skip null fuzzing here now used now",
+            "No null testing"
+        ]
+    },
+    {
+        "q": "What is format string fuzzing?",
+        "o": [
+            "Fuzz with format specifiers now here used now",
+            "Normal valid strings only here now used now",
+            "Proper skip format fuzzing here now used now",
+            "No format testing"
+        ]
+    },
+    {
+        "q": "What is unicode fuzzing?",
+        "o": [
+            "Fuzz with unicode edge cases now here used now",
+            "Normal ASCII only testing here now used now",
+            "Proper skip unicode fuzzing here now used now",
+            "No unicode testing"
+        ]
+    },
+    {
+        "q": "What is oversized input fuzzing?",
+        "o": [
+            "Fuzz with extremely large inputs now here used now",
+            "Normal size inputs only here now used now",
+            "Proper skip oversized fuzzing here now used now",
+            "No size testing"
+        ]
+    },
+    {
+        "q": "What is recursive structure fuzzing?",
+        "o": [
+            "Fuzz deeply nested structures now here used now",
+            "Normal flat structures only here now used now",
+            "Proper skip recursive fuzzing here now used now",
+            "No recursive testing"
+        ]
+    },
+    {
+        "q": "What is array fuzzing?",
+        "o": [
+            "Fuzz array size and contents now here used now",
+            "Normal valid arrays only here now used now",
+            "Proper skip array fuzzing here now used now",
+            "No array testing"
+        ]
+    },
+    {
+        "q": "What is object fuzzing?",
+        "o": [
+            "Fuzz object structures now here used now",
+            "Normal valid objects only here now used now",
+            "Proper skip object fuzzing here now used now",
+            "No object testing"
+        ]
+    },
+    {
+        "q": "What is type confusion fuzzing?",
+        "o": [
+            "Fuzz with wrong data types now here used now",
+            "Normal correct types only here now used now",
+            "Proper skip type fuzzing here now used now",
+            "No type testing"
+        ]
+    },
+    {
+        "q": "What is required field fuzzing?",
+        "o": [
+            "Fuzz by omitting required fields now here used now",
+            "Normal all fields present here now used now",
+            "Proper skip required fuzzing here now used now",
+            "No required testing"
+        ]
+    },
+    {
+        "q": "What is additional field fuzzing?",
+        "o": [
+            "Fuzz by adding extra fields now here used now",
+            "Normal defined fields only here now used now",
+            "Proper skip additional fuzzing here now used now",
+            "No additional testing"
+        ]
+    },
+    {
+        "q": "What is property order fuzzing?",
+        "o": [
+            "Fuzz by reordering properties now here used now",
+            "Normal ordered properties here now used now",
+            "Proper skip order fuzzing here now used now",
+            "No order testing"
+        ]
+    },
+    {
+        "q": "What is duplicate key fuzzing?",
+        "o": [
+            "Fuzz with duplicate JSON keys now here used now",
+            "Normal unique keys only here now used now",
+            "Proper skip duplicate fuzzing here now used now",
+            "No duplicate testing"
+        ]
+    },
+    {
+        "q": "What is comment injection fuzzing?",
+        "o": [
+            "Fuzz with JSON comments now here used now",
+            "Normal strict JSON only here now used now",
+            "Proper skip comment fuzzing here now used now",
+            "No comment testing"
+        ]
+    },
+    {
+        "q": "What is trailing data fuzzing?",
+        "o": [
+            "Fuzz with trailing garbage data now here used now",
+            "Normal clean payloads only here now used now",
+            "Proper skip trailing fuzzing here now used now",
+            "No trailing testing"
+        ]
+    },
+    {
+        "q": "What is mixed content fuzzing?",
+        "o": [
+            "Fuzz with mismatched content types now here used now",
+            "Normal matching content only here now used now",
+            "Proper skip mixed fuzzing here now used now",
+            "No mixed testing"
+        ]
+    },
+    {
+        "q": "What is chunked encoding fuzzing?",
+        "o": [
+            "Fuzz chunked transfer encoding now here used now",
+            "Normal standard encoding here now used now",
+            "Proper skip chunked fuzzing here now used now",
+            "No chunked testing"
+        ]
+    },
+    {
+        "q": "What is compression fuzzing?",
+        "o": [
+            "Fuzz compressed request handling now here used now",
+            "Normal uncompressed requests here now used now",
+            "Proper skip compress fuzzing here now used now",
+            "No compress testing"
+        ]
+    },
+    {
+        "q": "What is multipart fuzzing?",
+        "o": [
+            "Fuzz multipart form data now here used now",
+            "Normal single part data here now used now",
+            "Proper skip multipart fuzzing here now used now",
+            "No multipart testing"
+        ]
+    },
+    {
+        "q": "What is WebSocket frame fuzzing?",
+        "o": [
+            "Fuzz WebSocket frame handling now here used now",
+            "Normal HTTP only testing here now used now",
+            "Proper skip WS fuzzing here now used now",
+            "No WS testing"
+        ]
+    },
+    {
+        "q": "What is API regression security testing?",
+        "o": [
+            "Catch security regressions now here used now",
+            "Normal skip regression testing here now used now",
+            "Proper one-time testing only here used now",
+            "No regression testing"
+        ]
+    },
+    {
+        "q": "What is continuous security testing?",
+        "o": [
+            "Integrate testing in CI/CD pipeline now here",
+            "Normal periodic testing only here now used now",
+            "Proper skip continuous testing here now used now",
+            "No continuous testing"
+        ]
+    },
+    {
+        "q": "What is security chaos engineering?",
+        "o": [
+            "Intentionally inject security failures now here",
+            "Normal skip chaos testing here now used now",
+            "Proper stable environment only here used now",
+            "No chaos testing"
+        ]
+    },
+    {
+        "q": "What is game day testing?",
+        "o": [
+            "Practice security incident response now here used",
+            "Normal skip game day tests here now used now",
+            "Proper real incidents only here now used now",
+            "No practice testing"
+        ]
+    },
+    {
+        "q": "What is API canary deployment testing?",
+        "o": [
+            "Test security in gradual rollouts now here used",
+            "Normal full deployment only here now used now",
+            "Proper skip canary testing here now used now",
+            "No canary testing"
+        ]
+    },
+    {
+        "q": "What is blue-green deployment testing?",
+        "o": [
+            "Test security in parallel environments now here",
+            "Normal single environment only here now used now",
+            "Proper skip blue-green tests here now used now",
+            "No deploy testing"
+        ]
+    },
+    {
+        "q": "What is feature flag security testing?",
+        "o": [
+            "Test security of feature toggles now here used",
+            "Normal skip feature flag tests here now used now",
+            "Proper no feature flags here now used now",
+            "No flag testing"
+        ]
+    },
+    {
+        "q": "What is dark launch testing?",
+        "o": [
+            "Test hidden feature security now here used now",
+            "Normal skip dark launch tests here now used now",
+            "Proper public launches only here now used now",
+            "No dark testing"
+        ]
+    },
+    {
+        "q": "What is shadow traffic testing?",
+        "o": [
+            "Test with duplicated production traffic now here",
+            "Normal skip shadow testing here now used now",
+            "Proper synthetic traffic only here used now",
+            "No shadow testing"
+        ]
+    },
+    {
+        "q": "What is traffic mirroring testing?",
+        "o": [
+            "Mirror traffic for security analysis now here",
+            "Normal skip mirroring tests here now used now",
+            "Proper no traffic copy here now used now",
+            "No mirror testing"
+        ]
+    },
+    {
+        "q": "What is API observability testing?",
+        "o": [
+            "Test monitoring and tracing now here used now",
+            "Normal skip observability tests here now used now",
+            "Proper no monitoring needed here used now",
+            "No observability testing"
+        ]
+    },
+    {
+        "q": "What is distributed tracing testing?",
+        "o": [
+            "Test request tracing across services now here",
+            "Normal skip tracing tests here now used now",
+            "Proper single service only here now used now",
+            "No tracing testing"
+        ]
+    },
+    {
+        "q": "What is span testing?",
+        "o": [
+            "Test individual trace spans now here used now",
+            "Normal skip span tests here now used now",
+            "Proper full traces only here now used now",
+            "No span testing"
+        ]
+    },
+    {
+        "q": "What is context propagation testing?",
+        "o": [
+            "Test trace context passing now here used now",
+            "Normal skip context tests here now used now",
+            "Proper no context needed here now used now",
+            "No context testing"
+        ]
+    },
+    {
+        "q": "What is baggage testing?",
+        "o": [
+            "Test trace baggage handling now here used now",
+            "Normal skip baggage tests here now used now",
+            "Proper no baggage needed here now used now",
+            "No baggage testing"
+        ]
+    },
+    {
+        "q": "What is sampling strategy testing?",
+        "o": [
+            "Test trace sampling configuration now here used",
+            "Normal skip sampling tests here now used now",
+            "Proper sample everything here now used now",
+            "No sampling testing"
+        ]
+    },
+    {
+        "q": "What is log correlation testing?",
+        "o": [
+            "Test log and trace correlation now here used now",
+            "Normal skip correlation tests here now used now",
+            "Proper no correlation needed here used now",
+            "No correlation testing"
+        ]
+    },
+    {
+        "q": "What is metric cardinality testing?",
+        "o": [
+            "Test metric label combinations now here used now",
+            "Normal skip cardinality tests here now used now",
+            "Proper unlimited cardinality here used now",
+            "No cardinality testing"
+        ]
+    },
+    {
+        "q": "What is dashboard testing?",
+        "o": [
+            "Test security dashboards accuracy now here used",
+            "Normal skip dashboard tests here now used now",
+            "Proper no dashboards needed here now used now",
+            "No dashboard testing"
+        ]
+    },
+    {
+        "q": "What is alerting rule testing?",
+        "o": [
+            "Test security alert triggers now here used now",
+            "Normal skip alert tests here now used now",
+            "Proper no alerting needed here now used now",
+            "No alert testing"
+        ]
+    },
+    {
+        "q": "What is on-call runbook testing?",
+        "o": [
+            "Test incident response procedures now here used",
+            "Normal skip runbook tests here now used now",
+            "Proper ad-hoc response only here used now",
+            "No runbook testing"
+        ]
+    },
+    {
+        "q": "What is API contract versioning testing?",
+        "o": [
+            "Test version negotiation security now here used",
+            "Normal skip versioning tests here now used now",
+            "Proper single version only here now used now",
+            "No version testing"
+        ]
+    },
+    {
+        "q": "What is API sunset testing?",
+        "o": [
+            "Test deprecated API phase-out now here used now",
+            "Normal skip sunset tests here now used now",
+            "Proper keep all versions here now used now",
+            "No sunset testing"
+        ]
+    }
+]

@@ -1,0 +1,4574 @@
+[
+    {
+        "q": "What is 'Security Architecture'?",
+        "o": [
+            "Structure and behavior of an organization's security processes and systems",
+            "Building walls",
+            "Designing logos",
+            "Writing code"
+        ]
+    },
+    {
+        "q": "What is 'Defense in Depth'?",
+        "o": [
+            "Using multiple layers of security controls",
+            "Deep sea diving",
+            "Digging a hole",
+            "One strong lock"
+        ]
+    },
+    {
+        "q": "What is 'Zero Trust Architecture'?",
+        "o": [
+            "Never trust, always verify (No implicit trust)",
+            "Trust everyone",
+            "No passwords",
+            "Zero cost"
+        ]
+    },
+    {
+        "q": "What is 'Least Privilege'?",
+        "o": [
+            "Granting only minimum permissions needed for a task",
+            "Giving admin to all",
+            "No permissions",
+            "Most privilege"
+        ]
+    },
+    {
+        "q": "What is 'Separation of Duties'?",
+        "o": [
+            "Dividing tasks so no single person has full control",
+            "Working alone",
+            "Multitasking",
+            "Firing people"
+        ]
+    },
+    {
+        "q": "What is a 'Security Zone'?",
+        "o": [
+            "Network segment with specific security level/policy",
+            "Danger zone",
+            "Time zone",
+            "Game zone"
+        ]
+    },
+    {
+        "q": "What is a 'Perimeter'?",
+        "o": [
+            "Boundary between trusted and untrusted networks",
+            "Circle size",
+            "Ruler",
+            "Fence"
+        ]
+    },
+    {
+        "q": "What is a 'Firewall'?",
+        "o": [
+            "Device monitoring/controlling network traffic based on rules",
+            "Burning wall",
+            "Heater",
+            "Fire exit"
+        ]
+    },
+    {
+        "q": "What is 'IDAM'?",
+        "o": [
+            "Identity and Access Management",
+            "I Am Damn",
+            "Idea Management",
+            "ID Card"
+        ]
+    },
+    {
+        "q": "What is 'Authentication'?",
+        "o": [
+            "Verifying identity (Who you are)",
+            "Authorization",
+            "Audit",
+            "Accounting"
+        ]
+    },
+    {
+        "q": "What is 'Authorization'?",
+        "o": [
+            "Verifying permissions (What you can do)",
+            "Authentication",
+            "Login",
+            "Signing up"
+        ]
+    },
+    {
+        "q": "What is 'CIA Triad'?",
+        "o": [
+            "Confidentiality, Integrity, Availability",
+            "Central Intelligence Agency",
+            "Cat In Apple",
+            "Car Ice Air"
+        ]
+    },
+    {
+        "q": "What is 'Confidentiality'?",
+        "o": [
+            "Keeping data secret from unauthorized people",
+            "Telling secrets",
+            "Public data",
+            "Backup"
+        ]
+    },
+    {
+        "q": "What is 'Integrity'?",
+        "o": [
+            "Ensuring data is not altered/tampered with",
+            "Honesty",
+            "Speed",
+            "Access"
+        ]
+    },
+    {
+        "q": "What is 'Availability'?",
+        "o": [
+            "Ensuring systems/data are accessible when needed",
+            "Free time",
+            "Downtime",
+            "Sleeping"
+        ]
+    },
+    {
+        "q": "What is 'Single Point of Failure' (SPOF)?",
+        "o": [
+            "Part of system that stops entire system if it fails",
+            "Solo player",
+            "First place",
+            "Winner"
+        ]
+    },
+    {
+        "q": "What is 'Redundancy'?",
+        "o": [
+            "Duplication of critical components for backup",
+            "Uselessness",
+            "Firing",
+            "Boring"
+        ]
+    },
+    {
+        "q": "What is 'Fail-Safe'?",
+        "o": [
+            "System defaults to safe state upon failure",
+            "Fail hard",
+            "Dangerous failure",
+            "Explosion"
+        ]
+    },
+    {
+        "q": "What is 'Fail-Open' (Physical)?",
+        "o": [
+            "Door unlocks on power loss (Safety)",
+            "Door locks",
+            "Window breaks",
+            "Alarm sounds"
+        ]
+    },
+    {
+        "q": "What is 'Fail-Secure' (Physical)?",
+        "o": [
+            "Door locks on power loss (Security)",
+            "Door opens",
+            "Lights on",
+            "Guard sleeps"
+        ]
+    },
+    {
+        "q": "What is 'Encryption'?",
+        "o": [
+            "Encoding data so only authorized can read it",
+            "Hiding file",
+            "Deleting",
+            "Zipping"
+        ]
+    },
+    {
+        "q": "What is 'Decryption'?",
+        "o": [
+            "Decoding encrypted data back to plaintext",
+            "Hacking",
+            "Reading",
+            "Writing"
+        ]
+    },
+    {
+        "q": "What is 'Plaintext'?",
+        "o": [
+            "Unencrypted readable data",
+            "Plane text",
+            "Simple font",
+            "Paper"
+        ]
+    },
+    {
+        "q": "What is 'Ciphertext'?",
+        "o": [
+            "Encrypted unreadable data",
+            "Cyber text",
+            "Secret code",
+            "Password"
+        ]
+    },
+    {
+        "q": "What is 'Symmetric Encryption'?",
+        "o": [
+            "Same key used for encryption and decryption",
+            "Two keys",
+            "Mirror",
+            "Balance"
+        ]
+    },
+    {
+        "q": "What is 'Asymmetric Encryption'?",
+        "o": [
+            "Different keys (Public/Private) for enc/dec",
+            "One key",
+            "No key",
+            "Fast"
+        ]
+    },
+    {
+        "q": "What is a 'Public Key'?",
+        "o": [
+            "Key shared openly for encryption",
+            "House key",
+            "Secret key",
+            "Car key"
+        ]
+    },
+    {
+        "q": "What is a 'Private Key'?",
+        "o": [
+            "Key kept secret for decryption (or signing)",
+            "Diary key",
+            "Public key",
+            "Gate key"
+        ]
+    },
+    {
+        "q": "What is 'Hash Function'?",
+        "o": [
+            "One-way function mapping data to fixed size string",
+            "Potato dish",
+            "Encryption",
+            "Compression"
+        ]
+    },
+    {
+        "q": "What is 'Salt' (Hashing)?",
+        "o": [
+            "Random data added before hashing to unique output",
+            "Pepper",
+            "Sugar",
+            "Spice"
+        ]
+    },
+    {
+        "q": "What is 'Access Control'?",
+        "o": [
+            "Restricting access to resources",
+            "Remote control",
+            "Traffic light",
+            "Mouse"
+        ]
+    },
+    {
+        "q": "What is 'DAC'?",
+        "o": [
+            "Discretionary Access Control (Owner decides)",
+            "Digital Audio",
+            "Direct Air",
+            "Daily Access"
+        ]
+    },
+    {
+        "q": "What is 'MAC' (Access Control)?",
+        "o": [
+            "Mandatory Access Control (System/Labels decide)",
+            "Apple computer",
+            "Makeup",
+            "Burger"
+        ]
+    },
+    {
+        "q": "What is 'RBAC'?",
+        "o": [
+            "Role-Based Access Control (Based on job function)",
+            "Rule Based",
+            "Real Base",
+            "Red Back"
+        ]
+    },
+    {
+        "q": "What is 'ABAC'?",
+        "o": [
+            "Attribute-Based Access Control (Based on user/env attributes)",
+            "Alphabet",
+            "Accounting",
+            "Abacus"
+        ]
+    },
+    {
+        "q": "What is 'MFA'?",
+        "o": [
+            "Multi-Factor Authentication (Using 2+ factors)",
+            "Master Fine Arts",
+            "My File Access",
+            "More Factors"
+        ]
+    },
+    {
+        "q": "What are the 3 factors of auth?",
+        "o": [
+            "Something you know, have, are",
+            "Name, Age, Sex",
+            "User, Pass, Email",
+            "Key, Card, Code"
+        ]
+    },
+    {
+        "q": "What is 'Something you know'?",
+        "o": [
+            "Password / PIN",
+            "Key",
+            "Fingerprint",
+            "Phone"
+        ]
+    },
+    {
+        "q": "What is 'Something you have'?",
+        "o": [
+            "Token / Phone / Smartcard",
+            "Password",
+            "Face",
+            "Mother's name"
+        ]
+    },
+    {
+        "q": "What is 'Something you are'?",
+        "o": [
+            "Biometrics (Fingerprint / Retina)",
+            "ID Card",
+            "Password",
+            "Username"
+        ]
+    },
+    {
+        "q": "What is 'SSO'?",
+        "o": [
+            "Single Sign-On (Log in once, access many apps)",
+            "So So",
+            "Super Sign On",
+            "Secret Sign On"
+        ]
+    },
+    {
+        "q": "What is 'Federation' (Identity)?",
+        "o": [
+            "Sharing identity across domains/orgs",
+            "Star Trek",
+            "Country",
+            "Club"
+        ]
+    },
+    {
+        "q": "What is 'Network Segmentation'?",
+        "o": [
+            "Splitting network into subnets for security/performance",
+            "Orange slices",
+            "Broken cable",
+            "Combining networks"
+        ]
+    },
+    {
+        "q": "What is 'VLAN'?",
+        "o": [
+            "Virtual LAN (Logical segmentation on switch)",
+            "Video LAN",
+            "Very LAN",
+            "Voice LAN"
+        ]
+    },
+    {
+        "q": "What is 'Micro-segmentation'?",
+        "o": [
+            "Granular segmentation down to workload/device level",
+            "Small segment",
+            "Microscope",
+            "One segment"
+        ]
+    },
+    {
+        "q": "What is 'Bastion Host'?",
+        "o": [
+            "Hardened server for accessing internal zone",
+            "Castle",
+            "Cannon",
+            "Backup"
+        ]
+    },
+    {
+        "q": "What is 'Jump Box'?",
+        "o": [
+            "Intermediary server to administer other servers",
+            "Trampoline",
+            "Cardboard box",
+            "Gym"
+        ]
+    },
+    {
+        "q": "What is 'Honeypot'?",
+        "o": [
+            "Decoy system to lure/monitor attackers",
+            "Bee hive",
+            "Sweet food",
+            "Flower pot"
+        ]
+    },
+    {
+        "q": "What is 'IDS'?",
+        "o": [
+            "Intrusion Detection System (Alerts only)",
+            "ID System",
+            "Internet DS",
+            "Ignition"
+        ]
+    },
+    {
+        "q": "What is 'IPS'?",
+        "o": [
+            "Intrusion Prevention System (Blocks attacks)",
+            "IP Address",
+            "Internet PS",
+            "Instant PS"
+        ]
+    },
+    {
+        "q": "What is 'SIEM'?",
+        "o": [
+            "Security Information and Event Management (Log analysis)",
+            "Soup",
+            "Card game",
+            "Sim card"
+        ]
+    },
+    {
+        "q": "What is 'Log' (Security)?",
+        "o": [
+            "Record of system events/activities",
+            "Wood",
+            "Tree trunk",
+            "Math function"
+        ]
+    },
+    {
+        "q": "What is 'Audit Trail'?",
+        "o": [
+            "Chronological record of changes/access",
+            "Hiking path",
+            "IRS check",
+            "Listening"
+        ]
+    },
+    {
+        "q": "What is 'VPN'?",
+        "o": [
+            "Virtual Private Network (Encrypted tunnel)",
+            "Very Personal Net",
+            "Video Phone Net",
+            "Virtual Public Net"
+        ]
+    },
+    {
+        "q": "What is 'Tunneling'?",
+        "o": [
+            "Encapsulating one protocol inside another",
+            "Digging",
+            "Train",
+            "Burrowing"
+        ]
+    },
+    {
+        "q": "What is 'Cloud Computing'?",
+        "o": [
+            "On-demand delivery of compute/storage over internet",
+            "Weather",
+            "Skynet",
+            "Rain"
+        ]
+    },
+    {
+        "q": "What is 'IaaS'?",
+        "o": [
+            "Infrastructure as a Service (VMs, Storage)",
+            "Ice as a Solid",
+            "Internet as a Svc",
+            "I ask"
+        ]
+    },
+    {
+        "q": "What is 'PaaS'?",
+        "o": [
+            "Platform as a Service (Dev env, DBs)",
+            "Pass",
+            "Play as a Svc",
+            "Phone as a Svc"
+        ]
+    },
+    {
+        "q": "What is 'SaaS'?",
+        "o": [
+            "Software as a Service (Web apps like Gmail)",
+            "Sass",
+            "Soft drinks",
+            "Sales"
+        ]
+    },
+    {
+        "q": "What is 'Public Cloud'?",
+        "o": [
+            "Cloud shared by multiple tenants (AWS, Azure)",
+            "Rainy cloud",
+            "Park",
+            "Library"
+        ]
+    },
+    {
+        "q": "What is 'Private Cloud'?",
+        "o": [
+            "Cloud dedicated to single organization",
+            "Fog",
+            "Home server",
+            "My room"
+        ]
+    },
+    {
+        "q": "What is 'Hybrid Cloud'?",
+        "o": [
+            "Mix of Public and Private clouds",
+            "Car",
+            "Storm",
+            "Mix tape"
+        ]
+    },
+    {
+        "q": "What is 'Edge Computing'?",
+        "o": [
+            "Processing data near source (IoT) relative to cloud",
+            "Corner",
+            "Cliff",
+            "Sharp"
+        ]
+    },
+    {
+        "q": "What is 'Microservices'?",
+        "o": [
+            "App structured as collection of small loosely coupled services",
+            "Small waiters",
+            "Microphone",
+            "Tiny app"
+        ]
+    },
+    {
+        "q": "What is 'Containerization' (Docker)?",
+        "o": [
+            "Bundling app code and deps into isolated unit",
+            "Shipping",
+            "Tupperware",
+            "Box"
+        ]
+    },
+    {
+        "q": "What is 'Orchestration' (K8s)?",
+        "o": [
+            "Automated management of containers (Deploy, Scale)",
+            "Music band",
+            "Conducting",
+            "Ordering"
+        ]
+    },
+    {
+        "q": "What is 'API'?",
+        "o": [
+            "Application Programming Interface (Software comms)",
+            "Apple Pie",
+            "A Personal ID",
+            "App Info"
+        ]
+    },
+    {
+        "q": "What is 'REST' (API)?",
+        "o": [
+            "Representational State Transfer (Web arch style)",
+            "Sleep",
+            "Break",
+            "Remaining"
+        ]
+    },
+    {
+        "q": "What is 'Web Application Firewall' (WAF)?",
+        "o": [
+            "Protects web apps from HTTP attacks (SQLi, XSS)",
+            "Waffle",
+            "Weapon",
+            "Web Filter"
+        ]
+    },
+    {
+        "q": "What is 'Data Loss Prevention' (DLP)?",
+        "o": [
+            "Tools to prevent sensitive data exfiltration",
+            "Don't Lose Phone",
+            "Disk Loss Prot",
+            "Data Leak Plan"
+        ]
+    },
+    {
+        "q": "What is 'Endpoint Security'?",
+        "o": [
+            "Securing end-user devices (Laptops, Phones)",
+            "End of road",
+            "Last point",
+            "Server security"
+        ]
+    },
+    {
+        "q": "What is 'Patch Management'?",
+        "o": [
+            "Process of applying updates to software/OS",
+            "Sewing",
+            "Gardening",
+            "Bandage"
+        ]
+    },
+    {
+        "q": "What is 'Vulnerability Scanning'?",
+        "o": [
+            "Automated check for known weak spots/CVEs",
+            "X-Ray",
+            "Photo scan",
+            "Reading"
+        ]
+    },
+    {
+        "q": "What is 'Penetration Testing'?",
+        "o": [
+            "Simulated cyberattack to find exploitables",
+            "Pen test",
+            "Pencil test",
+            "Poke test"
+        ]
+    },
+    {
+        "q": "What is 'Incident Response'?",
+        "o": [
+            "Plan/Action taken during security breach",
+            "Ambulance",
+            "Panic",
+            "Reporting"
+        ]
+    },
+    {
+        "q": "What is 'Business Continuity Plan' (BCP)?",
+        "o": [
+            "Plan to keep business running during disaster",
+            "Backup plan",
+            "Bus pass",
+            "Continual play"
+        ]
+    },
+    {
+        "q": "What is 'Disaster Recovery' (DR)?",
+        "o": [
+            "Restoring IT systems after a disaster",
+            "Doctor",
+            "Hospital",
+            "Fixing car"
+        ]
+    },
+    {
+        "q": "What is 'RTO'?",
+        "o": [
+            "Recovery Time Objective (Max downtime allowed)",
+            "Real Time Ops",
+            "Radio To Over",
+            "Right To Own"
+        ]
+    },
+    {
+        "q": "What is 'RPO'?",
+        "o": [
+            "Recovery Point Objective (Max data loss allowed)",
+            "Robot PO",
+            "Right Point",
+            "Real PO"
+        ]
+    },
+    {
+        "q": "What is 'Threat Modeling'?",
+        "o": [
+            "Identifying potential threats/vulns in design phase",
+            "Fashion model",
+            "Scary toy",
+            "Drawing"
+        ]
+    },
+    {
+        "q": "What is 'STRIDE'?",
+        "o": [
+            "Threat model (Spoof, Tamper, Repud, InfoDisc, DoS, ElevPriv)",
+            "Walking",
+            "Gum",
+            "Long step"
+        ]
+    },
+    {
+        "q": "What is 'Supply Chain Security'?",
+        "o": [
+            "Securing 3rd party components/vendors",
+            "Necklace",
+            "Trucks",
+            "Warehouse"
+        ]
+    },
+    {
+        "q": "What is 'Insider Threat'?",
+        "o": [
+            "Threat from within org (Employee, Contractor)",
+            "Ghost",
+            "Spy",
+            "Stomach ache"
+        ]
+    },
+    {
+        "q": "What is 'Social Engineering'?",
+        "o": [
+            "Manipulating people to divulge info/access",
+            "Building bridges",
+            "Civil Eng",
+            "Party planning"
+        ]
+    },
+    {
+        "q": "What is 'Phishing'?",
+        "o": [
+            "Email scam to steal creds/install malware",
+            "Fishing",
+            "Boat",
+            "Sport"
+        ]
+    },
+    {
+        "q": "What is 'Vishing'?",
+        "o": [
+            "Voice Phishing (Phone scam)",
+            "Wishing",
+            "Video",
+            "Vision"
+        ]
+    },
+    {
+        "q": "What is 'Smishing'?",
+        "o": [
+            "SMS Phishing (Text scam)",
+            "Smashing",
+            "Smiling",
+            "Smoke"
+        ]
+    },
+    {
+        "q": "What is 'Physical Security'?",
+        "o": [
+            "Protecting hardware/facilities (Locks, Cameras, Guards)",
+            "Gym",
+            "Bodyguard",
+            "Health"
+        ]
+    },
+    {
+        "q": "What is 'Tailgating' (Piggybacking)?",
+        "o": [
+            "Following auth person through door without badge",
+            "Driving close",
+            "Party",
+            "Backpack"
+        ]
+    },
+    {
+        "q": "What is 'Dumpster Diving'?",
+        "o": [
+            "Searching trash for sensitive info",
+            "Swimming",
+            "Recycling",
+            "Cleaning"
+        ]
+    },
+    {
+        "q": "What is 'Shoulder Surfing'?",
+        "o": [
+            "Looking at someone's screen/keyboard to steal info",
+            "Surfing",
+            "Massage",
+            "Hugging"
+        ]
+    },
+    {
+        "q": "What is 'Biometrics'?",
+        "o": [
+            "Auth based on physical traits (Fingerprint, Iris)",
+            "Biology",
+            "Metrics",
+            "Measuring"
+        ]
+    },
+    {
+        "q": "What is 'False Acceptance Rate' (FAR)?",
+        "o": [
+            "Unauthorized user incorrectly accepted (Bad)",
+            "Far away",
+            "Wrong answer",
+            "Distance"
+        ]
+    },
+    {
+        "q": "What is 'False Rejection Rate' (FRR)?",
+        "o": [
+            "Authorized user incorrectly rejected (Annoying)",
+            "Rejection",
+            "Sadness",
+            "Free"
+        ]
+    },
+    {
+        "q": "What is 'Crossover Error Rate' (CER)?",
+        "o": [
+            "Point where FAR meets FRR (Lower is better)",
+            "Cross road",
+            "X Mark",
+            "High score"
+        ]
+    },
+    {
+        "q": "What is 'Cryptography'?",
+        "o": [
+            "Science of secure communication/encryption",
+            "Maps",
+            "Graves",
+            "Currency"
+        ]
+    },
+    {
+        "q": "What is 'Non-Repudiation'?",
+        "o": [
+            "Sender cannot deny sending a message (Digital Signatures)",
+            "No return",
+            "No refund",
+            "Agreeing"
+        ]
+    },
+    {
+        "q": "What is 'Digital Signature'?",
+        "o": [
+            "Cryptographic proof of authenticity and integrity",
+            "E-sign",
+            "Autograph",
+            "Pen"
+        ]
+    },
+    {
+        "q": "What is 'PKI'?",
+        "o": [
+            "Public Key Infrastructure (Managing certs/keys)",
+            "Park",
+            "Picky",
+            "Pack"
+        ]
+    },
+    {
+        "q": "What is 'Certificate Authority' (CA)?",
+        "o": [
+            "Entity that issues digital certificates",
+            "Police",
+            "Boss",
+            "Teacher"
+        ]
+    },
+    {
+        "q": "What is 'Root of Trust'?",
+        "o": [
+            "Source that can always be trusted in a crypto system",
+            "Trust fund",
+            "Root vegetable",
+            "Tree root"
+        ]
+    },
+    {
+        "q": "What is 'TPM'?",
+        "o": [
+            "Trusted Platform Module (Hardware chip for crypto/keys)",
+            "Total PM",
+            "The PM",
+            "Top PM"
+        ]
+    },
+    {
+        "q": "What is 'HSM'?",
+        "o": [
+            "Hardware Security Module (Dedicated crypto processor)",
+            "High School Musical",
+            "Home Security",
+            "Heavy Metal"
+        ]
+    },
+    {
+        "q": "What is 'Secure Boot'?",
+        "o": [
+            "Ensures only trusted software boots OS (Signature check)",
+            "Safe shoes",
+            "Fast start",
+            "Reboot"
+        ]
+    },
+    {
+        "q": "What is 'Full Disk Encryption' (FDE)?",
+        "o": [
+            "Encrypts entire hard drive at rest (BitLocker)",
+            "CD backup",
+            "Zip file",
+            "Hidden folder"
+        ]
+    },
+    {
+        "q": "What is 'Data at Rest'?",
+        "o": [
+            "Inactive data stored physically (HDD, Tape)",
+            "Sleeping data",
+            "Deleted data",
+            "Backup"
+        ]
+    },
+    {
+        "q": "What is 'Data in Transit'?",
+        "o": [
+            "Data moving across network (Wire)",
+            "Bus data",
+            "Mail",
+            "Flying data"
+        ]
+    },
+    {
+        "q": "What is 'Data in Use'?",
+        "o": [
+            "Data currently being processed in RAM/CPU",
+            "User data",
+            "Active file",
+            "Screen data"
+        ]
+    },
+    {
+        "q": "What is 'Air Gap'?",
+        "o": [
+            "Physical isolation from other networks (No cable)",
+            "Wind",
+            "Open window",
+            "Space"
+        ]
+    },
+    {
+        "q": "What is 'Sandboxing'?",
+        "o": [
+            "Running code in isolated/restricted environment",
+            "Playground",
+            "Beach",
+            "Desert"
+        ]
+    },
+    {
+        "q": "What is 'Virtualization'?",
+        "o": [
+            "Creating virtual version of resource (OS/Server)",
+            "Video game",
+            "Dreaming",
+            "Films"
+        ]
+    },
+    {
+        "q": "What is 'Hypervisor'?",
+        "o": [
+            "Software creating and running VMs",
+            "Manager",
+            "Boss",
+            "Super Visor"
+        ]
+    },
+    {
+        "q": "What is 'Type 1 Hypervisor'?",
+        "o": [
+            "Bare-metal (Runs directly on hardware - ESXi)",
+            "Hosted",
+            "Desktop",
+            "App"
+        ]
+    },
+    {
+        "q": "What is 'Type 2 Hypervisor'?",
+        "o": [
+            "Hosted (Runs on OS - VirtualBox)",
+            "Bare metal",
+            "Hardware",
+            "Server"
+        ]
+    },
+    {
+        "q": "What is 'VM Escape'?",
+        "o": [
+            "Attacker breaking out of VM to host OS",
+            "Running away",
+            "Closing app",
+            "Deleting VM"
+        ]
+    },
+    {
+        "q": "What is 'Container' vs 'VM'?",
+        "o": [
+            "Container shares OS kernel; VM has full OS",
+            "Same thing",
+            "Container is bigger",
+            "VM is faster"
+        ]
+    },
+    {
+        "q": "What is 'Side-Channel Attack'?",
+        "o": [
+            "Attack based on physical implementation (Power, Time)",
+            "Back door",
+            "Social Eng",
+            "Phishing"
+        ]
+    },
+    {
+        "q": "What is 'Covert Channel'?",
+        "o": [
+            "Hidden comms channel violating security policy",
+            "TV channel",
+            "Radio",
+            "Tunnel"
+        ]
+    },
+    {
+        "q": "What is 'Steganography'?",
+        "o": [
+            "Hiding data within other data (Image/Audio)",
+            "Painting",
+            "Music",
+            "Writing"
+        ]
+    },
+    {
+        "q": "What is 'Watermarking'?",
+        "o": [
+            "Embedding copyright info into media",
+            "Wet paper",
+            "Spilling water",
+            "Cleaning"
+        ]
+    },
+    {
+        "q": "What is 'DLP' uses?",
+        "o": [
+            "Block USB, Filter Email, Scan Storage",
+            "Speed up PC",
+            "Fix bugs",
+            "Install OS"
+        ]
+    },
+    {
+        "q": "What is 'CASB'?",
+        "o": [
+            "Cloud Access Security Broker (Gatekeeper for cloud)",
+            "Casbah",
+            "Bank",
+            "Brokerage"
+        ]
+    },
+    {
+        "q": "What is 'SD-WAN'?",
+        "o": [
+            "Software-Defined Wide Area Network",
+            "San Diego WAN",
+            "Super WAN",
+            "Slow WAN"
+        ]
+    },
+    {
+        "q": "What is 'SASE'?",
+        "o": [
+            "Secure Access Service Edge (Cloud network sec)",
+            "Sassy",
+            "Safe",
+            "Sauce"
+        ]
+    },
+    {
+        "q": "What is 'NAC'?",
+        "o": [
+            "Network Access Control (Check posture before connect)",
+            "Snack",
+            "Knack",
+            "Neck"
+        ]
+    },
+    {
+        "q": "What is 'Host-based Firewall'?",
+        "o": [
+            "Firewall software running on end device (Windows FW)",
+            "Server room",
+            "Hardware FW",
+            "Appfw"
+        ]
+    },
+    {
+        "q": "What is 'Network Firewall'?",
+        "o": [
+            "Hardware appliance filtering traffic between subnets",
+            "Software",
+            "Antivirus",
+            "Switch"
+        ]
+    },
+    {
+        "q": "What is 'Packet Filtering'?",
+        "o": [
+            "Simple firewall checking Header (IP/Port)",
+            "Deep scan",
+            "App scan",
+            "Virus scan"
+        ]
+    },
+    {
+        "q": "What is 'Stateful Inspection'?",
+        "o": [
+            "Firewall tracking connection state table",
+            "Stateless",
+            "Packet filter",
+            "Proxy"
+        ]
+    },
+    {
+        "q": "What is 'Proxy Server'?",
+        "o": [
+            "Intermediary for requests from clients to resources",
+            "Direct connect",
+            "DNS",
+            "Router"
+        ]
+    },
+    {
+        "q": "What is 'Reverse Proxy'?",
+        "o": [
+            "Proxy sitting in front of servers (Load bal, SSL offload)",
+            "Forward Proxy",
+            "Client proxy",
+            "Web browser"
+        ]
+    },
+    {
+        "q": "What is 'Load Balancer'?",
+        "o": [
+            "Distributes traffic across multiple servers",
+            "Scale",
+            "Weight",
+            "Gym"
+        ]
+    },
+    {
+        "q": "What is 'SSL Offloading'?",
+        "o": [
+            "Decrypting SSL at Load Balancer to relieve Web Servers",
+            "Turn off SSL",
+            "Delete SSL",
+            "Hack SSL"
+        ]
+    },
+    {
+        "q": "What is 'NAT'?",
+        "o": [
+            "Network Address Translation (Private to Public IP)",
+            "Gnat",
+            "Not A Thing",
+            "Net Tool"
+        ]
+    },
+    {
+        "q": "What is 'PAT'?",
+        "o": [
+            "Port Address Translation (Many PCs, one Public IP)",
+            "Patting",
+            "Pet",
+            "Pot"
+        ]
+    },
+    {
+        "q": "What is 'DMZ' architecture?",
+        "o": [
+            "Screened subnet for public facing services",
+            "Internal LAN",
+            "Secure zone",
+            "Admin zone"
+        ]
+    },
+    {
+        "q": "What is 'HIDS'?",
+        "o": [
+            "Host-based Intrusion Detection System (File integrity)",
+            "Hiding",
+            "High IDS",
+            "Hardware IDS"
+        ]
+    },
+    {
+        "q": "What is 'NIDS'?",
+        "o": [
+            "Network-based Intrusion Detection System (Tap/Span)",
+            "New IDS",
+            "Near IDS",
+            "Nice IDS"
+        ]
+    },
+    {
+        "q": "What is 'Switched Port Analyzer' (SPAN)?",
+        "o": [
+            "Port mirroring for monitoring traffic",
+            "Bridge",
+            "Spaniel",
+            "Length"
+        ]
+    },
+    {
+        "q": "What is 'Zero Day Exploit'?",
+        "o": [
+            "Attack on vuln unknown to vendor (0 days to fix)",
+            "Expired",
+            "Old virus",
+            "New day"
+        ]
+    },
+    {
+        "q": "What is 'APT'?",
+        "o": [
+            "Advanced Persistent Threat (Nation state/Group)",
+            "Apartment",
+            "Aptitude",
+            "App"
+        ]
+    },
+    {
+        "q": "What is 'Kill Chain'?",
+        "o": [
+            "Stages of a cyber attack (Recon to Action)",
+            "Weapon",
+            "Necklace",
+            "Movie"
+        ]
+    },
+    {
+        "q": "What is 'Reconnaissance'?",
+        "o": [
+            "Gathering info about target (Scanning, OSINT)",
+            "Attack",
+            "Defense",
+            "Logging"
+        ]
+    },
+    {
+        "q": "What is 'Weaponization'?",
+        "o": [
+            "Creating exploit payload (e.g. maldoc)",
+            "Shooting",
+            "Buying gun",
+            "Fighting"
+        ]
+    },
+    {
+        "q": "What is 'Delivery' (Kill Chain)?",
+        "o": [
+            "Sending weapon to target (Email, USB)",
+            "Pizza",
+            "Post",
+            "Birth"
+        ]
+    },
+    {
+        "q": "What is 'Exploitation'?",
+        "o": [
+            "Triggering vuln to execute code",
+            "Using",
+            "Helping",
+            "Fixing"
+        ]
+    },
+    {
+        "q": "What is 'Installation' (Kill Chain)?",
+        "o": [
+            "Installing backdoor/persistence",
+            "Setup",
+            "Loading",
+            "Building"
+        ]
+    },
+    {
+        "q": "What is 'C2' (Command & Control)?",
+        "o": [
+            "Channel for attacker to control compromised host",
+            "See too",
+            "Formula",
+            "Robot"
+        ]
+    },
+    {
+        "q": "What is 'Actions on Objectives'?",
+        "o": [
+            "Attacker achieving goal (Exfil, Ransom)",
+            "Ending",
+            "Winning",
+            "Starting"
+        ]
+    },
+    {
+        "q": "What is 'MITRE ATT&CK'?",
+        "o": [
+            "Knowledge base of adversary tactics and techniques",
+            "Attack dog",
+            "Shield",
+            "Weapon"
+        ]
+    },
+    {
+        "q": "What is 'NIST CSF'?",
+        "o": [
+            "Cyber Security Framework (Identify, Protect, Detect, Respond, Recover)",
+            "Police",
+            "Law",
+            "Standard"
+        ]
+    },
+    {
+        "q": "What is 'ISO 27001'?",
+        "o": [
+            "Standard for InfoSec Management Systems (ISMS)",
+            "Camera ISO",
+            "Game",
+            "OS"
+        ]
+    },
+    {
+        "q": "What is 'PCI DSS'?",
+        "o": [
+            "Payment Card Industry Data Security Standard",
+            "PC Game",
+            "Slot machine",
+            "Bank"
+        ]
+    },
+    {
+        "q": "What is 'HIPAA'?",
+        "o": [
+            "Health Insurance Portability and Accountability Act (PHI)",
+            "Hippo",
+            "Hype",
+            "App"
+        ]
+    },
+    {
+        "q": "What is 'GDPR'?",
+        "o": [
+            "General Data Protection Regulation (EU Privacy)",
+            "Good PR",
+            "Grandpa",
+            "Game"
+        ]
+    },
+    {
+        "q": "What is 'PII'?",
+        "o": [
+            "Personally Identifiable Information (Name, SSN)",
+            "Pie",
+            "Math",
+            "Peas"
+        ]
+    },
+    {
+        "q": "What is 'PHI'?",
+        "o": [
+            "Protected Health Information",
+            "Greek letter",
+            "Physics",
+            "Phone"
+        ]
+    },
+    {
+        "q": "What is 'Data Owner'?",
+        "o": [
+            "Accountable for data classification and control",
+            "Admin",
+            "User",
+            "Custodian"
+        ]
+    },
+    {
+        "q": "What is 'Data Steward/Custodian'?",
+        "o": [
+            "Responsible for technical management/protection of data",
+            "Owner",
+            "Boss",
+            "Cleaner"
+        ]
+    },
+    {
+        "q": "What is 'Data Processor' (GDPR)?",
+        "o": [
+            "Entity processing data on behalf of Controller",
+            "CPU",
+            "Food processor",
+            "Owner"
+        ]
+    },
+    {
+        "q": "What is 'Data Controller' (GDPR)?",
+        "o": [
+            "Entity determining purpose/means of processing",
+            "Console",
+            "Remote",
+            "Boss"
+        ]
+    },
+    {
+        "q": "What is 'Right to be Forgotten'?",
+        "o": [
+            "User right to have data erased (Erasure)",
+            "Amnesia",
+            "Memory loss",
+            "Deleting history"
+        ]
+    },
+    {
+        "q": "What is 'BYOD'?",
+        "o": [
+            "Bring Your Own Device (Mobile security risk)",
+            "Party",
+            "Food",
+            "Drink"
+        ]
+    },
+    {
+        "q": "What is 'MDM'?",
+        "o": [
+            "Mobile Device Management (Remote wipe, Enforce policy)",
+            "Music",
+            "Candy",
+            "Meds"
+        ]
+    },
+    {
+        "q": "What is 'COPE'?",
+        "o": [
+            "Corporate Owned, Personally Enabled",
+            "Coping",
+            "Police",
+            "Hope"
+        ]
+    },
+    {
+        "q": "What is 'CYOD'?",
+        "o": [
+            "Choose Your Own Device",
+            "See you",
+            "Code",
+            "Yoda"
+        ]
+    },
+    {
+        "q": "What is 'Geofencing'?",
+        "o": [
+            "Virtual perimeter triggering action on entry/exit",
+            "Fence",
+            "Gardening",
+            "Earth"
+        ]
+    },
+    {
+        "q": "What is 'Remote Wipe'?",
+        "o": [
+            "Deleting data on device over network (Theft)",
+            "Cleaning",
+            "Tissue",
+            "Wash"
+        ]
+    },
+    {
+        "q": "What is 'Jailbreaking' (iOS)?",
+        "o": [
+            "Removing manufacturer restrictions (Root access)",
+            "Prison break",
+            "Escape",
+            "Breaking phone"
+        ]
+    },
+    {
+        "q": "What is 'Rooting' (Android)?",
+        "o": [
+            "Gaining privileged control (Root access)",
+            "Gardening",
+            "Cheering",
+            "Digging"
+        ]
+    },
+    {
+        "q": "What is 'Sideloading'?",
+        "o": [
+            "Installing apps from unofficial sources",
+            "Walking sideways",
+            "Loading truck",
+            "Upload"
+        ]
+    },
+    {
+        "q": "What is 'Bluejacking'?",
+        "o": [
+            "Sending unsolicited messages via Bluetooth",
+            "Car jack",
+            "Stealing",
+            "Painting blue"
+        ]
+    },
+    {
+        "q": "What is 'Bluesnarfing'?",
+        "o": [
+            "Stealing data via Bluetooth connection",
+            "Smurfs",
+            "Snacking",
+            "Laughing"
+        ]
+    },
+    {
+        "q": "What is 'War Driving'?",
+        "o": [
+            "Driving around scanning for Wi-Fi networks",
+            "War",
+            "Racing",
+            "Taxi"
+        ]
+    },
+    {
+        "q": "What is 'Evil Twin'?",
+        "o": [
+            "Rogue Access Point mimicking legitimate one",
+            "Sibling",
+            "Clone",
+            "Ghost"
+        ]
+    },
+    {
+        "q": "What is 'WPA2' vs WEP?",
+        "o": [
+            "WPA2 (AES) is secure; WEP (RC4) is broken",
+            "Same",
+            "WEP is better",
+            "Both bad"
+        ]
+    },
+    {
+        "q": "What is 'AES'?",
+        "o": [
+            "Advanced Encryption Standard (Symmetric)",
+            "Old cipher",
+            "Asymmetric",
+            "Hash"
+        ]
+    },
+    {
+        "q": "What is 'RSA'?",
+        "o": [
+            "Rivest-Shamir-Adleman (Asymmetric Algo)",
+            "Space agency",
+            "Country",
+            "Car brand"
+        ]
+    },
+    {
+        "q": "What is 'Diffie-Hellman'?",
+        "o": [
+            "Key Exchange protocol (Securely share key)",
+            "Action movie",
+            "Band",
+            "City"
+        ]
+    },
+    {
+        "q": "What is 'ECC' (Crypto)?",
+        "o": [
+            "Elliptic Curve Cryptography (Strong keys, less bits)",
+            "Error check",
+            "College",
+            "Cards"
+        ]
+    },
+    {
+        "q": "What is 'Rainbow Table'?",
+        "o": [
+            "Precomputed table of hash chains for cracking passwords",
+            "Furniture",
+            "Colors",
+            "Chart"
+        ]
+    },
+    {
+        "q": "What is 'Salting' defense against?",
+        "o": [
+            "Rainbow Tables (Makes hashes unique)",
+            "Taste",
+            "Slugs",
+            "Ice"
+        ]
+    },
+    {
+        "q": "What is 'Key Stretching' (PBKDF2)?",
+        "o": [
+            "Making password hashing slow/CPU intensive",
+            "Yoga",
+            "Exercise",
+            "Long key"
+        ]
+    },
+    {
+        "q": "What is 'Collision' (Hash)?",
+        "o": [
+            "Two different inputs producing same hash output",
+            "Car crash",
+            "Meeting",
+            "Hapinness"
+        ]
+    },
+    {
+        "q": "What is 'Birthday Attack'?",
+        "o": [
+            "Attack to find hash collisions (Birthday Paradox)",
+            "Party",
+            "Cake",
+            "surprise"
+        ]
+    },
+    {
+        "q": "What is 'Downgrade Attack'?",
+        "o": [
+            "Forcing system to use weaker security/protocol",
+            "Going down",
+            "Update",
+            "Falling"
+        ]
+    },
+    {
+        "q": "What is 'Replay Attack'?",
+        "o": [
+            "Capturing and re-sending auth packets",
+            "Video replay",
+            "Sports",
+            "Gaming"
+        ]
+    },
+    {
+        "q": "What is 'Session Hijacking'?",
+        "o": [
+            "Taking over active user session (Cookie theft)",
+            "Kidnap",
+            "Car jack",
+            "Meeting"
+        ]
+    },
+    {
+        "q": "What is 'XSS'?",
+        "o": [
+            "Cross-Site Scripting (Injecting JS into webpage)",
+            "Excess",
+            "Styling",
+            "Closing"
+        ]
+    },
+    {
+        "q": "What is 'CSRF/XSRF'?",
+        "o": [
+            "Cross-Site Request Forgery (Unwanted action on trusted site)",
+            "Surfing",
+            "Forging",
+            "Copying"
+        ]
+    },
+    {
+        "q": "What is 'SQL Injection'?",
+        "o": [
+            "Injecting SQL code into inputs to manipulate DB",
+            "Shot",
+            "Needle",
+            "Medicine"
+        ]
+    },
+    {
+        "q": "What is 'Input Validation'?",
+        "o": [
+            "Checking input data for correctness/safety",
+            "Typing",
+            "Reading",
+            "Writing"
+        ]
+    },
+    {
+        "q": "What is 'Clickjacking'?",
+        "o": [
+            "Tricking user into clicking invisible button/overlay",
+            "Mouse click",
+            "Hijack",
+            "Photos"
+        ]
+    },
+    {
+        "q": "What is 'Directory Traversal'?",
+        "o": [
+            "Accessing files outside web root (../)",
+            "Walking",
+            "Hiking",
+            "Map"
+        ]
+    },
+    {
+        "q": "What is 'Buffer Overflow'?",
+        "o": [
+            "Writing more data than buffer can hold (Crash/Exec)",
+            "Full cup",
+            "Spilling",
+            "Too much"
+        ]
+    },
+    {
+        "q": "What is 'Integer Overflow'?",
+        "o": [
+            "Number exceeds max value and wraps around",
+            "Big number",
+            "Math error",
+            "Calculator"
+        ]
+    },
+    {
+        "q": "What is 'Logic Bomb'?",
+        "o": [
+            "Malicious code executed on specific trigger/time",
+            "Puzzle",
+            "Game",
+            "Explosive"
+        ]
+    },
+    {
+        "q": "What is 'Trojan Horse'?",
+        "o": [
+            "Malware disguised as legitimate software",
+            "Animal",
+            "Gift",
+            "Statue"
+        ]
+    },
+    {
+        "q": "What is 'Ransomware'?",
+        "o": [
+            "Malware encrypting files and demanding payment",
+            "Kidnap",
+            "Thief",
+            "Store"
+        ]
+    },
+    {
+        "q": "What is 'Worm'?",
+        "o": [
+            "Self-replicating malware spreading via network",
+            "Insect",
+            "Bug",
+            "Snake"
+        ]
+    },
+    {
+        "q": "What is 'Spyware'?",
+        "o": [
+            "Software collecting user info without consent",
+            "Glasses",
+            "Camera",
+            "Bond"
+        ]
+    },
+    {
+        "q": "What is 'Adware'?",
+        "o": [
+            "Software automatically displaying unwanted ads",
+            "Addedware",
+            "Addition",
+            "Subtract"
+        ]
+    },
+    {
+        "q": "What is 'Rootkit'?",
+        "o": [
+            "Malware hiding existence of other malware/processes (Kernel level)",
+            "Gardening tool",
+            "Admin kit",
+            "Medical kit"
+        ]
+    },
+    {
+        "q": "What is 'Botnet'?",
+        "o": [
+            "Network of infected devices controlled by attacker",
+            "Robot net",
+            "Fishing",
+            "AI Network"
+        ]
+    },
+    {
+        "q": "What is 'DDoS'?",
+        "o": [
+            "Distributed Denial of Service (Many sources atk single target)",
+            "Direct DoS",
+            "Double DoS",
+            "Daily Service"
+        ]
+    },
+    {
+        "q": "What is 'Smurf Attack'?",
+        "o": [
+            "DDoS using ICMP broadcast amplification",
+            "Cartoon",
+            "Blue men",
+            "Tiny attack"
+        ]
+    },
+    {
+        "q": "What is 'Fraggle Attack'?",
+        "o": [
+            "DDoS using UDP broadcast amplification",
+            "Rock",
+            "Fragile",
+            "Broken"
+        ]
+    },
+    {
+        "q": "What is 'Ping of Death'?",
+        "o": [
+            "Sending oversized ping packet to crash system",
+            "Video game",
+            "Scary movie",
+            "Loud noise"
+        ]
+    },
+    {
+        "q": "What is 'Teardrop Attack'?",
+        "o": [
+            "Sending fragmented packets that cannot be reassembled",
+            "Crying",
+            "Rain",
+            "Sadness"
+        ]
+    },
+    {
+        "q": "What is 'Hactivism'?",
+        "o": [
+            "Hacking for political/social cause",
+            "Acting",
+            "Active",
+            "Sport"
+        ]
+    },
+    {
+        "q": "What is 'Script Kiddie'?",
+        "o": [
+            "Unskilled attacker using existing tools/scripts",
+            "Actor",
+            "Child",
+            "Writer"
+        ]
+    },
+    {
+        "q": "What is 'White Hat'?",
+        "o": [
+            "Ethical hacker (Authorized)",
+            "Chef",
+            "Cowboy",
+            "Wedding"
+        ]
+    },
+    {
+        "q": "What is 'Black Hat'?",
+        "o": [
+            "Malicious hacker (Unauthorized)",
+            "Villain",
+            "Magician",
+            "Witch"
+        ]
+    },
+    {
+        "q": "What is 'Gray Hat'?",
+        "o": [
+            "Hacker who may violate laws but not malicious",
+            "Old hat",
+            "Dirty hat",
+            "Paint"
+        ]
+    },
+    {
+        "q": "What is 'Bug Bounty'?",
+        "o": [
+            "Reward for finding vulns in software",
+            "Hunting bugs",
+            "Chocolate",
+            "Pirate"
+        ]
+    },
+    {
+        "q": "What is 'CVE'?",
+        "o": [
+            "Common Vulnerabilities and Exposures (List of known vulns)",
+            "Cover",
+            "Curve",
+            "Cave"
+        ]
+    },
+    {
+        "q": "What is 'CVSS'?",
+        "o": [
+            "Common Vulnerability Scoring System (Severity score)",
+            "CVS Pharmacy",
+            "Compass",
+            "Canvas"
+        ]
+    },
+    {
+        "q": "What is 'Zero Trust' principle?",
+        "o": [
+            "Never trust, always verify",
+            "Trust but verify",
+            "Trust everyone",
+            "Verify later"
+        ]
+    },
+    {
+        "q": "What is 'Micro-segmentation' benefit?",
+        "o": [
+            "Limits lateral movement of attacker",
+            "Faster network",
+            "Cheaper",
+            "Easier management"
+        ]
+    },
+    {
+        "q": "What is 'Software Defined Perimeter' (SDP)?",
+        "o": [
+            "Dynamic network connections based on identity/context (Black Cloud)",
+            "Fence",
+            "Wall",
+            "Gate"
+        ]
+    },
+    {
+        "q": "What is 'CASB' function?",
+        "o": [
+            "Visibility, Compliance, Data Security, Threat Protection",
+            "Cooking",
+            "Cleaning",
+            "Banking"
+        ]
+    },
+    {
+        "q": "What is 'Shadow IT'?",
+        "o": [
+            "Use of IT systems/software without approval",
+            "Dark mode",
+            "Night shift",
+            "Ninja"
+        ]
+    },
+    {
+        "q": "What is 'Cold Site'?",
+        "o": [
+            "Recovery site with space/power but no equipment",
+            "Igloo",
+            "Fridge",
+            "Winter"
+        ]
+    },
+    {
+        "q": "What is 'Warm Site'?",
+        "o": [
+            "Recovery site with equipment but not fully operational data",
+            "Beach",
+            "Summer",
+            "Oven"
+        ]
+    },
+    {
+        "q": "What is 'Hot Site'?",
+        "o": [
+            "Fully operational recovery site (Real-time sync)",
+            "Volcano",
+            "Fire",
+            "Sun"
+        ]
+    },
+    {
+        "q": "What is 'Differential Backup'?",
+        "o": [
+            "Backs up data changed since last FULL backup",
+            "Car gear",
+            "Math",
+            "Different"
+        ]
+    },
+    {
+        "q": "What is 'Incremental Backup'?",
+        "o": [
+            "Backs up data changed since last backup (Any type)",
+            "Small steps",
+            "Growing",
+            "Inch"
+        ]
+    },
+    {
+        "q": "What is 'Full Backup'?",
+        "o": [
+            "Backs up all selected data",
+            "Full moon",
+            "Dinner",
+            "Bucket"
+        ]
+    },
+    {
+        "q": "Which backup restores fastest?",
+        "o": [
+            "Full Backup",
+            "Incremental",
+            "Differential",
+            "Cloud"
+        ]
+    },
+    {
+        "q": "Which backup backs up fastest?",
+        "o": [
+            "Incremental",
+            "Full",
+            "Differential",
+            "Tape"
+        ]
+    },
+    {
+        "q": "What is 'RAID'?",
+        "o": [
+            "Redundant Array of Independent Disks (Data redundancy/perf)",
+            "Bug spray",
+            "Police raid",
+            "Game"
+        ]
+    },
+    {
+        "q": "What is 'RAID 0'?",
+        "o": [
+            "Striping (Performance, No Redundancy)",
+            "Zero cost",
+            "Zero data",
+            "Round"
+        ]
+    },
+    {
+        "q": "What is 'RAID 1'?",
+        "o": [
+            "Mirroring (Redundancy)",
+            "One disk",
+            "Won",
+            "First"
+        ]
+    },
+    {
+        "q": "What is 'RAID 5'?",
+        "o": [
+            "Striping with Parity (Redundancy + Perf)",
+            "High 5",
+            "Five disks",
+            "Pentagon"
+        ]
+    },
+    {
+        "q": "What is 'RAID 10'?",
+        "o": [
+            "Striping (0) + Mirroring (1) combined",
+            "Perfect 10",
+            "Top ten",
+            "Big disk"
+        ]
+    },
+    {
+        "q": "What is 'Forensics' first rule?",
+        "o": [
+            "Preserve evidence / Do not alter original data",
+            "Call police",
+            "Run away",
+            "Touch everything"
+        ]
+    },
+    {
+        "q": "What is 'Chain of Custody'?",
+        "o": [
+            "Documentation of evidence handling/possession",
+            "Necklace",
+            "Handcuffs",
+            "Prison"
+        ]
+    },
+    {
+        "q": "What is 'Order of Volatility'?",
+        "o": [
+            "Order to collect evidence (Most volatile to least: CPU, RAM, HDD)",
+            "Explosion",
+            "Chemistry",
+            "Stock market"
+        ]
+    },
+    {
+        "q": "What is 'E-Discovery'?",
+        "o": [
+            "Process of identifying/collecting electronic evidence for legal cases",
+            "Space ship",
+            "Finding email",
+            "New star"
+        ]
+    },
+    {
+        "q": "What is 'Legal Hold'?",
+        "o": [
+            "Requirement to preserve data relevant to litigation",
+            "Wrestling move",
+            "Phone hold",
+            "Stopping law"
+        ]
+    },
+    {
+        "q": "What is 'SLA'?",
+        "o": [
+            "Service Level Agreement (Contractual uptime/perf)",
+            "Slay",
+            "Sleep",
+            "Salad"
+        ]
+    },
+    {
+        "q": "What is 'NDA'?",
+        "o": [
+            "Non-Disclosure Agreement (Confidentiality contract)",
+            "No Data",
+            "Near Day",
+            "New Day"
+        ]
+    },
+    {
+        "q": "What is 'MOU'?",
+        "o": [
+            "Memorandum of Understanding (Less formal agreement)",
+            "Cow sound",
+            "Mouse",
+            "Mountain"
+        ]
+    },
+    {
+        "q": "What is 'ISA' (Interconnection)?",
+        "o": [
+            "Interconnection Security Agreement (Technical details of connection)",
+            "Ice",
+            "Is A",
+            "Name"
+        ]
+    },
+    {
+        "q": "What is 'BPA'?",
+        "o": [
+            "Business Partnership Agreement",
+            "Chemical",
+            "Back Pain",
+            "Best Pal"
+        ]
+    },
+    {
+        "q": "What is 'Risk Acceptance'?",
+        "o": [
+            "Acknowledging risk and doing nothing (Cost > Benefit)",
+            "Giving up",
+            "Liking risk",
+            "Ignoring"
+        ]
+    },
+    {
+        "q": "What is 'Risk Avoidance'?",
+        "o": [
+            "Stopping activity that causes risk",
+            "Running away",
+            "Hiding",
+            "Fear"
+        ]
+    },
+    {
+        "q": "What is 'Risk Mitigation'?",
+        "o": [
+            "Implementing controls to reduce risk",
+            "Fixing",
+            "Fighting",
+            "Helping"
+        ]
+    },
+    {
+        "q": "What is 'Risk Transference'?",
+        "o": [
+            "Shifting risk to 3rd party (Insurance)",
+            "Moving house",
+            "Sending mail",
+            "Bus"
+        ]
+    },
+    {
+        "q": "What is 'ALE' (Risk)?",
+        "o": [
+            "Annual Loss Expectancy (SLE x ARO)",
+            "Beer",
+            "Friend",
+            "Name"
+        ]
+    },
+    {
+        "q": "What is 'SLE' (Risk)?",
+        "o": [
+            "Single Loss Expectancy (Asset Value x Exposure Factor)",
+            "Sleep",
+            "Sled",
+            "Slow"
+        ]
+    },
+    {
+        "q": "What is 'ARO' (Risk)?",
+        "o": [
+            "Annualized Rate of Occurrence (How often it happens)",
+            "Arrow",
+            "Rowing",
+            "Air"
+        ]
+    },
+    {
+        "q": "What is 'Quantitative Risk Analysis'?",
+        "o": [
+            "Using numbers/money to assess risk",
+            "Opinion",
+            "Guessing",
+            "Feeling"
+        ]
+    },
+    {
+        "q": "What is 'Qualitative Risk Analysis'?",
+        "o": [
+            "Using subjective categories (High/Med/Low) to assess risk",
+            "Math",
+            "Counting",
+            "Money"
+        ]
+    },
+    {
+        "q": "What is 'Vendor Lock-in'?",
+        "o": [
+            "Dependency on single vendor making it hard to switch",
+            "Prison",
+            "Locked door",
+            "Shopping"
+        ]
+    },
+    {
+        "q": "What is 'Cloud Agnostic'?",
+        "o": [
+            "Designing app to run on any cloud provider",
+            "Atheist",
+            "Cloudy",
+            "Rain"
+        ]
+    },
+    {
+        "q": "What is 'Elasticity' (Cloud)?",
+        "o": [
+            "Automatically scaling resources up/down based on demand",
+            "Rubber band",
+            "Gymnastics",
+            "Flexible"
+        ]
+    },
+    {
+        "q": "What is 'Scalability'?",
+        "o": [
+            "Ability to handle increased load by adding resources",
+            "Weighing scale",
+            "Climbing",
+            "Snake skin"
+        ]
+    },
+    {
+        "q": "What is 'High Availability' (HA)?",
+        "o": [
+            "System aiming for 99.999% uptime",
+            "Hello",
+            "High five",
+            "Tall"
+        ]
+    },
+    {
+        "q": "What is 'DevSecOps'?",
+        "o": [
+            "Integrating security into DevOps process",
+            "Development",
+            "Operations",
+            "Secret Ops"
+        ]
+    },
+    {
+        "q": "What is 'CI/CD'?",
+        "o": [
+            "Continuous Integration / Continuous Delivery (Pipeline)",
+            "Music CD",
+            "See I See D",
+            "Circular"
+        ]
+    },
+    {
+        "q": "What is 'SAST'?",
+        "o": [
+            "Static Application Security Testing (Code scan)",
+            "Fast",
+            "Last",
+            "Sassy"
+        ]
+    },
+    {
+        "q": "What is 'DAST'?",
+        "o": [
+            "Dynamic Application Security Testing (Runtime scan)",
+            "Dust",
+            "Fast",
+            "Past"
+        ]
+    },
+    {
+        "q": "What is 'IAST'?",
+        "o": [
+            "Interactive Application Security Testing (Agent inside app)",
+            "Last",
+            "Fast",
+            "Mast"
+        ]
+    },
+    {
+        "q": "What is 'RASP'?",
+        "o": [
+            "Runtime Application Self-Protection (Blocks attacks)",
+            "Raspberry",
+            "File",
+            "Tool"
+        ]
+    },
+    {
+        "q": "What is 'Fuzzing'?",
+        "o": [
+            "Sending random/malformed data to find crashes/vulns",
+            "Hair",
+            "Peach",
+            "Soft"
+        ]
+    },
+    {
+        "q": "What is 'Hardening'?",
+        "o": [
+            "Securing system by reducing attack surface (Disabling services)",
+            "Freezing",
+            "Cooking",
+            "Building"
+        ]
+    },
+    {
+        "q": "What is 'Change Management'?",
+        "o": [
+            "Controlled process for modifying systems (Approvals)",
+            "Coins",
+            "Dressing",
+            "Weather"
+        ]
+    },
+    {
+        "q": "What is 'Configuration Management'?",
+        "o": [
+            "Maintaining consistency of system settings",
+            "Puzzle",
+            "Shape",
+            "Drawing"
+        ]
+    },
+    {
+        "q": "What is 'Baseline' (Security)?",
+        "o": [
+            "Standard secure configuration for systems",
+            "Music bass",
+            "Sports",
+            "Line"
+        ]
+    },
+    {
+        "q": "What is 'Golden Image'?",
+        "o": [
+            "Pre-configured/Hardened OS image for deployment",
+            "Statue",
+            "Gold bar",
+            "Photo"
+        ]
+    },
+    {
+        "q": "What is 'Infrastructure as Code' (IaC)?",
+        "o": [
+            "Managing infra via code (Terraform)",
+            "Building",
+            "Roads",
+            "Bridge"
+        ]
+    },
+    {
+        "q": "What is 'Immutability' (Infrastructure)?",
+        "o": [
+            "servers are never modified after deployment, only replaced",
+            "Silence",
+            "Stillness",
+            "Statue"
+        ]
+    },
+    {
+        "q": "What is 'Ephemeral' ( Infrastructure)?",
+        "o": [
+            "Short-lived resources",
+            "Ghost",
+            "Dream",
+            "Cloud"
+        ]
+    },
+    {
+        "q": "What is 'Defense against Social Engineering'?",
+        "o": [
+            "User Awareness Training",
+            "Firewall",
+            "Antivirus",
+            "Encryption"
+        ]
+    },
+    {
+        "q": "What is 'Clean Desk Policy'?",
+        "o": [
+            "No sensitive documents left on desk",
+            "Cleaning",
+            "Washing",
+            "Furniture"
+        ]
+    },
+    {
+        "q": "What is 'Screen Lock'?",
+        "o": [
+            "Auto-locking screen after inactivity",
+            "Door lock",
+            "Padlock",
+            "Broken screen"
+        ]
+    },
+    {
+        "q": "What is 'Physical Access Control'?",
+        "o": [
+            "Badges, Biometrics, Mantraps",
+            "Firewall",
+            "Login",
+            "Password"
+        ]
+    },
+    {
+        "q": "What is 'Mantrap'?",
+        "o": [
+            "Two-door system to control entry (One opens at a time)",
+            "Hunting",
+            "Cage",
+            "Net"
+        ]
+    },
+    {
+        "q": "What is 'Turnstile'?",
+        "o": [
+            "Barrier allowing one person at a time",
+            "Spinning",
+            "Door",
+            "Gate"
+        ]
+    },
+    {
+        "q": "What is 'Faraday Cage'?",
+        "o": [
+            "Enclosure blocking electromagnetic fields (Signals)",
+            "Zoo cage",
+            "Bird cage",
+            "Box"
+        ]
+    },
+    {
+        "q": "What is 'TEMPEST'?",
+        "o": [
+            "Standard for shielding against EM emission spying",
+            "Storm",
+            "Teapot",
+            "Play"
+        ]
+    },
+    {
+        "q": "What is 'Fire Suppression' (Server Room)?",
+        "o": [
+            "Gas-based (FM-200/Halon replacement) to save electronics",
+            "Water hose",
+            "Bucket",
+            "Fan"
+        ]
+    },
+    {
+        "q": "Why not water for server fire?",
+        "o": [
+            "Damages electronics / Electrocution risk",
+            "Too wet",
+            "Cold",
+            "Dirty"
+        ]
+    },
+    {
+        "q": "What is 'HVAC' role in security?",
+        "o": [
+            "Maintaining temp/humidity to prevent hardware failure",
+            "Comfort",
+            "Smell",
+            "Noise"
+        ]
+    },
+    {
+        "q": "What is 'UPS'?",
+        "o": [
+            "Uninterruptible Power Supply (Battery backup)",
+            "Delivery",
+            "Upstairs",
+            "Oops"
+        ]
+    },
+    {
+        "q": "What is 'Generator'?",
+        "o": [
+            "Long-term power backup (Diesel/Gas)",
+            "Creator",
+            "Engine",
+            "Dynamo"
+        ]
+    },
+    {
+        "q": "What is 'Smart Card'?",
+        "o": [
+            "Card with embedded chip for auth (CAC/PIV)",
+            "Credit card",
+            "Gift card",
+            "Business card"
+        ]
+    },
+    {
+        "q": "What is 'Token' (Auth)?",
+        "o": [
+            "Device generating One Time Password (OTP)",
+            "Coin",
+            "Game piece",
+            "Gift"
+        ]
+    },
+    {
+        "q": "What is 'TOTP'?",
+        "o": [
+            "Time-based One-Time Password (Google Auth)",
+            "Top",
+            "Totem",
+            "Total"
+        ]
+    },
+    {
+        "q": "What is 'HOTP'?",
+        "o": [
+            "HMAC-based One-Time Password (Event based)",
+            "Hot",
+            "Hope",
+            "Hat"
+        ]
+    },
+    {
+        "q": "What is 'Federated Identity' example?",
+        "o": [
+            "Log in with Google/Facebook",
+            "LDAP",
+            "Local user",
+            "Root"
+        ]
+    },
+    {
+        "q": "What is 'SAML'?",
+        "o": [
+            "Security Assertion Markup Language (XML for SSO)",
+            "Camel",
+            "Sam",
+            "Sample"
+        ]
+    },
+    {
+        "q": "What is 'OIDC'?",
+        "o": [
+            "OpenID Connect (Auth layer on OAuth 2.0 - JSON)",
+            "Old ID",
+            "Ocean",
+            "Open Door"
+        ]
+    },
+    {
+        "q": "What is 'OAuth 2.0'?",
+        "o": [
+            "Authorization framework (Access Delegation)",
+            "Authentication",
+            "Auth 1",
+            "Author"
+        ]
+    },
+    {
+        "q": "What is 'LDAP'?",
+        "o": [
+            "Lightweight Directory Access Protocol (Querying directories)",
+            "Lap",
+            "Light",
+            "Map"
+        ]
+    },
+    {
+        "q": "What is 'Active Directory' (AD)?",
+        "o": [
+            "Microsoft's directory service (Users, Computers, Policies)",
+            "Phone book",
+            "Map",
+            "List"
+        ]
+    },
+    {
+        "q": "What is 'Kerberos'?",
+        "o": [
+            "Network auth protocol using tickets (Symmetric Key)",
+            "Dog",
+            "Greek",
+            "Hero"
+        ]
+    },
+    {
+        "q": "What is 'Radius'?",
+        "o": [
+            "Remote Authentication Dial-In User Service (AAA)",
+            "Circle",
+            "Math",
+            "Radio"
+        ]
+    },
+    {
+        "q": "What is 'TACACS+'?",
+        "o": [
+            "Cisco AAA protocol (Separates Auth/Auth/Acct)",
+            "Tacos",
+            "Tactics",
+            "Tags"
+        ]
+    },
+    {
+        "q": "What is 'AAA'?",
+        "o": [
+            "Authentication, Authorization, Accounting",
+            "Battery",
+            "Car help",
+            "Rating"
+        ]
+    },
+    {
+        "q": "What is 'Diameter' protocol?",
+        "o": [
+            "AAA protocol (Evolution of RADIUS, uses TCP/SCTP)",
+            "Circle size",
+            "Radius x 2",
+            "Geometry"
+        ]
+    },
+    {
+        "q": "What is 'SSH'?",
+        "o": [
+            "Secure Shell (Encrypted remote login)",
+            "Silent Shell",
+            "Super Shell",
+            "Snake"
+        ]
+    },
+    {
+        "q": "What is 'Telnet'?",
+        "o": [
+            "Unencrypted remote login protocol (Insecure)",
+            "Phone net",
+            "Tell net",
+            "Text net"
+        ]
+    },
+    {
+        "q": "What is 'SFTP'?",
+        "o": [
+            "SSH File Transfer Protocol (Encrypted)",
+            "Simple FTP",
+            "Super FTP",
+            "Slow FTP"
+        ]
+    },
+    {
+        "q": "What is 'FTPS'?",
+        "o": [
+            "FTP over SSL/TLS",
+            "Fast FTP",
+            "Free FTP",
+            "File TPS"
+        ]
+    },
+    {
+        "q": "What is 'SNMPv3'?",
+        "o": [
+            "Secure Network Management Protocol (Auth + Encryption)",
+            "Postal Service",
+            "Simple Net",
+            "Scan Map"
+        ]
+    },
+    {
+        "q": "What is 'DNSSEC'?",
+        "o": [
+            "DNS Security Extensions (Signs records to prevent spoofing)",
+            "DNS Secret",
+            "Domain Security",
+            "Digital Net"
+        ]
+    },
+    {
+        "q": "What is 'IPsec'?",
+        "o": [
+            "Internet Protocol Security (Auth/Encrypt IP packets)",
+            "IP Second",
+            "Internet Police",
+            "Internal PC"
+        ]
+    },
+    {
+        "q": "What is 'Transport Mode' (IPsec)?",
+        "o": [
+            "Encrypts only payload (End-to-end)",
+            "Truck",
+            "Bus",
+            "Plane"
+        ]
+    },
+    {
+        "q": "What is 'Tunnel Mode' (IPsec)?",
+        "o": [
+            "Encrypts entire packet (Site-to-site VPN)",
+            "Digging",
+            "Subway",
+            "Train"
+        ]
+    },
+    {
+        "q": "What is 'AH' (IPsec)?",
+        "o": [
+            "Authentication Header (Integrity/Auth, No Encryption)",
+            "Sigh",
+            "Yell",
+            "Laugh"
+        ]
+    },
+    {
+        "q": "What is 'ESP' (IPsec)?",
+        "o": [
+            "Encapsulating Security Payload (Encryption + Auth)",
+            "Magic",
+            "Psychic",
+            "Extra Sensory"
+        ]
+    },
+    {
+        "q": "What is 'Key Management'?",
+        "o": [
+            "Generation, storage, distribution, deletion of keys",
+            "Janitor",
+            "Locksmith",
+            "Hotel"
+        ]
+    },
+    {
+        "q": "What is 'Entropy' (Crypto)?",
+        "o": [
+            "Measure of randomness (Higher is better for keys)",
+            "Empty",
+            "Heat",
+            "Physics"
+        ]
+    },
+    {
+        "q": "What is 'IV' (Initialization Vector)?",
+        "o": [
+            "Random value added to initial block in crypto",
+            "Intravenous",
+            "Four",
+            "Idea"
+        ]
+    },
+    {
+        "q": "What is 'Nonce'?",
+        "o": [
+            "Number used once (Prevent replay)",
+            "Nonsense",
+            "None",
+            "Nine"
+        ]
+    },
+    {
+        "q": "What is 'Perfect Forward Secrecy' (PFS)?",
+        "o": [
+            "Compromise of long-term key doesn't compromise past session keys",
+            "Perfect Score",
+            "Future telling",
+            "Secret plan"
+        ]
+    },
+    {
+        "q": "What is 'Web Shell'?",
+        "o": [
+            "Malicious script allowing remote control of web server",
+            "Sea shell",
+            "Browser",
+            "Crab"
+        ]
+    },
+    {
+        "q": "What is 'Credential Stuffing'?",
+        "o": [
+            "Using stolen creds from one breach to login elsewhere",
+            "Turkey",
+            "Packing",
+            "Eating"
+        ]
+    },
+    {
+        "q": "What is 'Password Spraying'?",
+        "o": [
+            "Trying common password against many accounts",
+            "Graffiti",
+            "Cleaning",
+            "Watering"
+        ]
+    },
+    {
+        "q": "What is 'Brute Force'?",
+        "o": [
+            "Trying all possible password combinations",
+            "Strong man",
+            "Fighting",
+            "Animal"
+        ]
+    },
+    {
+        "q": "What is 'Dictionary Attack'?",
+        "o": [
+            "Trying words from a list/dictionary",
+            "Library",
+            "Reading",
+            "Spelling"
+        ]
+    },
+    {
+        "q": "What is 'Pass the Hash'?",
+        "o": [
+            "Authenticating with captured hash without cracking it",
+            "Cooking",
+            "Running",
+            "Football"
+        ]
+    },
+    {
+        "q": "What is 'Man-in-the-Middle' (MitM)?",
+        "o": [
+            "Attacker intercepting/relaying comms between two parties",
+            "Referee",
+            "Center",
+            "Sandwich"
+        ]
+    },
+    {
+        "q": "What is 'ARP Poisoning'?",
+        "o": [
+            "Faking ARP replies to redirect traffic (Layer 2 MitM)",
+            "Sick dog",
+            "Chemical",
+            "Food"
+        ]
+    },
+    {
+        "q": "What is 'DNS Poisoning'?",
+        "o": [
+            "Corrupting DNS cache to redirect users to malicious site",
+            "Sick web",
+            "Server virus",
+            "Food"
+        ]
+    },
+    {
+        "q": "What is 'Domain Hijacking'?",
+        "o": [
+            "Taking control of domain registration",
+            "Kidnap",
+            "Stealing car",
+            "Website design"
+        ]
+    },
+    {
+        "q": "What is 'Typosquatting'?",
+        "o": [
+            "Registering domains similar to popular ones (gooogle.com)",
+            "Exercising",
+            "Sitting",
+            "Typing"
+        ]
+    },
+    {
+        "q": "What is 'Click Fraud'?",
+        "o": [
+            "Automated clicks on ads to generate revenue/cost",
+            "Fake mouse",
+            "Broken button",
+            "Ad block"
+        ]
+    },
+    {
+        "q": "What is 'Spam'?",
+        "o": [
+            "Unsolicited bulk email",
+            "Meat",
+            "Ham",
+            "Food"
+        ]
+    },
+    {
+        "q": "What is 'SPIM'?",
+        "o": [
+            "Spam over Instant Messaging",
+            "Spinning",
+            "Speed",
+            "Talking"
+        ]
+    },
+    {
+        "q": "What is 'Vishing'?",
+        "o": [
+            "Voice Phishing",
+            "Visual",
+            "Video",
+            "Visit"
+        ]
+    },
+    {
+        "q": "What is 'Whaling'?",
+        "o": [
+            "Phishing targeting high-level executives (CEO)",
+            "Fishing",
+            "Ocean",
+            "Hunting"
+        ]
+    },
+    {
+        "q": "What is 'Spear Phishing'?",
+        "o": [
+            "Targeted phishing attack on specific individual/org",
+            "Fishing",
+            "Hunting",
+            "Sport"
+        ]
+    },
+    {
+        "q": "What is 'Watering Hole Attack'?",
+        "o": [
+            "Infecting website frequently visited by target group",
+            "Drinking",
+            "Safari",
+            "Swimming"
+        ]
+    },
+    {
+        "q": "What is 'Pharming'?",
+        "o": [
+            "Redirecting traffic to fake site via DNS/Host file",
+            "Farming",
+            "Agriculture",
+            "Pharmacy"
+        ]
+    },
+    {
+        "q": "What is 'Hoax'?",
+        "o": [
+            "False warning causing panic/action (Delete Window32)",
+            "Joke",
+            "Comedy",
+            "Magic"
+        ]
+    },
+    {
+        "q": "What is 'Influence Campaign'?",
+        "o": [
+            "Coordinated effort to shift public opinion (Disinfo)",
+            "Election",
+            "Voting",
+            "Advertising"
+        ]
+    },
+    {
+        "q": "What is 'Tailgating' vs 'Piggybacking'?",
+        "o": [
+            "Tailgating: No consent; Piggybacking: With consent (User holds door)",
+            "Same",
+            "Piggybacking needs pig",
+            "Tailgating needs car"
+        ]
+    },
+    {
+        "q": "What is 'Biometric factors'?",
+        "o": [
+            "Physiological (Fingerprint) and Behavioral (Keystroke)",
+            "Math and Science",
+            "Bio and Chem",
+            "Eyes and Ears"
+        ]
+    },
+    {
+        "q": "What is 'CER' (Biometrics)?",
+        "o": [
+            "Crossover Error Rate (Lower is more accurate)",
+            "Certificate",
+            "Certainty",
+            "Correction"
+        ]
+    },
+    {
+        "q": "What is 'Federated Identity' benefit?",
+        "o": [
+            "Single login across multiple enterprises/domains",
+            "Cheaper",
+            "Faster internet",
+            "More passwords"
+        ]
+    },
+    {
+        "q": "What is 'Shibboleth'?",
+        "o": [
+            "Open source SSO software (SAML based)",
+            "Code word",
+            "Monster",
+            "Game"
+        ]
+    },
+    {
+        "q": "What is 'OpenID'?",
+        "o": [
+            "Decentralized authentication protocol",
+            "Open Door",
+            "Key",
+            "Lock"
+        ]
+    },
+    {
+        "q": "What is 'Privileged Access Management' (PAM)?",
+        "o": [
+            "Managing/Monitoring admin accounts/access",
+            "Cooking spray",
+            "Name",
+            "Map"
+        ]
+    },
+    {
+        "q": "What is 'Just-in-Time' (JIT) access?",
+        "o": [
+            "Granting privileges only when needed and for limited time",
+            "Late",
+            "Early",
+            "Fast"
+        ]
+    },
+    {
+        "q": "What is 'Access Recertification'?",
+        "o": [
+            "Periodic review of user permissions",
+            "Certificate",
+            "Testing",
+            "Exam"
+        ]
+    },
+    {
+        "q": "What is 'Account Lockout'?",
+        "o": [
+            "Disabling account after N failed login attempts",
+            "Lost key",
+            "Prison",
+            "Closing"
+        ]
+    },
+    {
+        "q": "What is 'Captive Portal'?",
+        "o": [
+            "Web page requiring login/agreement before Wi-Fi access",
+            "Prison",
+            "Gate",
+            "Cave"
+        ]
+    },
+    {
+        "q": "What is 'WPA3'?",
+        "o": [
+            "Newest Wi-Fi security (SAE instad of PSK handshake)",
+            "Web 3",
+            "Router",
+            "Cable"
+        ]
+    },
+    {
+        "q": "What is 'SAE' (WPA3)?",
+        "o": [
+            "Simultaneous Authentication of Equals (Prevents offline dict atk)",
+            "Society",
+            "Essay",
+            "Say"
+        ]
+    },
+    {
+        "q": "What is 'EAP'?",
+        "o": [
+            "Extensible Authentication Protocol (Framework for auth)",
+            "Sleep",
+            "Eat",
+            "App"
+        ]
+    },
+    {
+        "q": "What is 'PEAP'?",
+        "o": [
+            "Protected EAP (Encrypted tunnel for auth)",
+            "Peep",
+            "Fruit",
+            "Sound"
+        ]
+    },
+    {
+        "q": "What is 'EAP-TLS'?",
+        "o": [
+            "EAP using Client and Server certs (Most secure)",
+            "Web",
+            "Email",
+            "Chat"
+        ]
+    },
+    {
+        "q": "What is 'Heat Map' (Wi-Fi)?",
+        "o": [
+            "Visual map of signal strength/coverage",
+            "Temperature",
+            "Weather",
+            "Fire"
+        ]
+    },
+    {
+        "q": "What is 'Site Survey' (Wi-Fi)?",
+        "o": [
+            "Analysis of RF env to plan AP placement",
+            "Construction",
+            "Voting",
+            "Asking"
+        ]
+    },
+    {
+        "q": "What is 'Zigbee'?",
+        "o": [
+            "Low-power wireless mesh protocol (IoT/Home Auto)",
+            "Bee",
+            "Dance",
+            "Music"
+        ]
+    },
+    {
+        "q": "What is 'Z-Wave'?",
+        "o": [
+            "Wireless mesh protocol for home automation",
+            "Ocean",
+            "Hand",
+            "Hair"
+        ]
+    },
+    {
+        "q": "What is 'NFC'?",
+        "o": [
+            "Near Field Communication (Contactless payment)",
+            "Football",
+            "Chicken",
+            "No Flying"
+        ]
+    },
+    {
+        "q": "What is 'RFID'?",
+        "o": [
+            "Radio Frequency Identification (Tracking tags)",
+            "Radio",
+            "Id",
+            "Red"
+        ]
+    },
+    {
+        "q": "What is 'Bluetooth Class 1' range?",
+        "o": [
+            "~100 meters (Industrial)",
+            "1 meter",
+            "10 meters",
+            "1 km"
+        ]
+    },
+    {
+        "q": "What is 'Bluetooth Class 2' range?",
+        "o": [
+            "~10 meters (Mobile phones)",
+            "100 meters",
+            "1 km",
+            "1 cm"
+        ]
+    },
+    {
+        "q": "What is 'Ant+'?",
+        "o": [
+            "Wireless protocol for health/fitness sensors",
+            "Insect",
+            "Uncle",
+            "Plus"
+        ]
+    },
+    {
+        "q": "What is 'Infrared' (IR)?",
+        "o": [
+            "Line-of-sight wireless (TV Remote)",
+            "Red light",
+            "Heat",
+            "Camera"
+        ]
+    },
+    {
+        "q": "What is 'USB OTG'?",
+        "o": [
+            "USB On-The-Go (Mobile acts as host)",
+            "Stick",
+            "Cable",
+            "Drive"
+        ]
+    },
+    {
+        "q": "What is 'Tethering'?",
+        "o": [
+            "Sharing mobile internet connection with other devices",
+            "Rope",
+            "Knot",
+            "Climbing"
+        ]
+    },
+    {
+        "q": "What is 'Hotspot'?",
+        "o": [
+            "Wi-Fi access point created by mobile device",
+            "Volcano",
+            "Club",
+            "Beach"
+        ]
+    },
+    {
+        "q": "What is 'SIM Cloning'?",
+        "o": [
+            "Copying SIM card to intercept calls/texts",
+            "Biology",
+            "Magic",
+            "Sheep"
+        ]
+    },
+    {
+        "q": "What is 'Subscriber Identity Module' (SIM)?",
+        "o": [
+            "Chip identifying user on cellular network",
+            "Game",
+            "Robot",
+            "Phone"
+        ]
+    },
+    {
+        "q": "What is 'BYOD' risk?",
+        "o": [
+            "Mixing personal/corp data, harder to control",
+            "Free phone",
+            "Cheap",
+            "Fun"
+        ]
+    },
+    {
+        "q": "What is 'Geotagging'?",
+        "o": [
+            "Adding location metadata to photos/content",
+            "Spray paint",
+            "Game",
+            "Label"
+        ]
+    },
+    {
+        "q": "What is 'Full Device Encryption'?",
+        "o": [
+            "Protects data if device is lost/stolen",
+            "Slows phone",
+            "Battery drain",
+            "Cool feature"
+        ]
+    },
+    {
+        "q": "What is 'Biometric Spoofing'?",
+        "o": [
+            "Faking biometric trait (Photo for FaceID)",
+            "Joke",
+            "Makeup",
+            "Acting"
+        ]
+    },
+    {
+        "q": "What is 'Liveness Detection'?",
+        "o": [
+            "Verifying biometric sample is from live person (Blink)",
+            "Pulse check",
+            "Breath",
+            "Zombie check"
+        ]
+    },
+    {
+        "q": "What is 'Attestation' (Device)?",
+        "o": [
+            "Proving device integrity/identity to remote party",
+            "Testing",
+            "Exam",
+            "Singing"
+        ]
+    },
+    {
+        "q": "What is 'Carrier Unlocking'?",
+        "o": [
+            "Removing restriction to use specific carrier SIM",
+            "Open door",
+            "Free phone",
+            "Jailbreak"
+        ]
+    },
+    {
+        "q": "What is 'Firmware OTA'?",
+        "o": [
+            "Over-The-Air update for device firmware",
+            "Radio",
+            "TV",
+            "Cloud"
+        ]
+    },
+    {
+        "q": "What is 'Embedded System'?",
+        "o": [
+            "Computer system with dedicated function inside larger system",
+            "Bed",
+            "Sleep",
+            "Jewelry"
+        ]
+    },
+    {
+        "q": "What is 'SoC'?",
+        "o": [
+            "System on Chip (CPU/GPU/RAM on one chip)",
+            "Socks",
+            "Soccer",
+            "Social"
+        ]
+    },
+    {
+        "q": "What is 'RTOS'?",
+        "o": [
+            "Real-Time Operating System (Deterministic timing)",
+            "Root OS",
+            "Red OS",
+            "Right OS"
+        ]
+    },
+    {
+        "q": "What is 'Raspberry Pi'?",
+        "o": [
+            "Low cost credit-card sized computer",
+            "Fruit",
+            "Cake",
+            "Dessert"
+        ]
+    },
+    {
+        "q": "What is 'Arduino'?",
+        "o": [
+            "Open source microcontroller platform",
+            "Robot",
+            "Toy",
+            "Game"
+        ]
+    },
+    {
+        "q": "What is 'FPGA'?",
+        "o": [
+            "Field Programmable Gate Array (Reprogrammable hardware)",
+            "Golf",
+            "Gate",
+            "Game"
+        ]
+    },
+    {
+        "q": "What is 'ICS'?",
+        "o": [
+            "Industrial Control System",
+            "Ice cream",
+            "Integrated Circuit",
+            "Internet CS"
+        ]
+    },
+    {
+        "q": "What is 'HMI'?",
+        "o": [
+            "Human Machine Interface (Control panel)",
+            "HDMI",
+            "Home",
+            "Human"
+        ]
+    },
+    {
+        "q": "What is 'PLC'?",
+        "o": [
+            "Programmable Logic Controller (Industrial computer)",
+            "Public Ltd Co",
+            "Place",
+            "Police"
+        ]
+    },
+    {
+        "q": "What is 'Modbus'?",
+        "o": [
+            "Common serial comms protocol in ICS",
+            "Bus",
+            "Modern",
+            "Model"
+        ]
+    },
+    {
+        "q": "What is 'DNP3'?",
+        "o": [
+            "Distributed Network Protocol (Utilities/SCADA)",
+            "DnD",
+            "Music",
+            "Video"
+        ]
+    },
+    {
+        "q": "What is 'ZigBee' security issue?",
+        "o": [
+            "Weak encryption keys handling in some implementations",
+            "Bees",
+            "Honey",
+            "Flying"
+        ]
+    },
+    {
+        "q": "What is 'CAN bus'?",
+        "o": [
+            "Controller Area Network (Vehicle internal network)",
+            "Tin can",
+            "Bus stop",
+            "Food"
+        ]
+    },
+    {
+        "q": "What is 'IV Infusion Pump' risk?",
+        "o": [
+            "Network connected vulnerability leading to dosage manipulation",
+            "Water",
+            "Hospital bed",
+            "Needle"
+        ]
+    },
+    {
+        "q": "What is 'Smart Meter'?",
+        "o": [
+            "Utility meter sending usage data remotely",
+            "Ruler",
+            "Thermometer",
+            "Speedo"
+        ]
+    },
+    {
+        "q": "What is 'Building Automation System' (BAS)?",
+        "o": [
+            "Controls HVAC, Lighting, Access (Smart Building)",
+            "Bass guitar",
+            "Fish",
+            "Construction"
+        ]
+    },
+    {
+        "q": "What is 'Physical Destruction' (Data)?",
+        "o": [
+            "Shredding, Drilling, Incinerating drives (Most secure)",
+            "Deleting",
+            "Formatting",
+            "Hiding"
+        ]
+    },
+    {
+        "q": "What is 'Degaussing'?",
+        "o": [
+            "Using magnet to destroy data on magnetic media",
+            "Gaussian blur",
+            "Ghost",
+            "Cleaning"
+        ]
+    },
+    {
+        "q": "What is 'Purging' (Data)?",
+        "o": [
+            "Sanitizing media to allow removal from secure area",
+            "Cleaning",
+            "Diet",
+            "Movie"
+        ]
+    },
+    {
+        "q": "What is 'Wiping' (Data)?",
+        "o": [
+            "Overwriting data with random characters (Passes)",
+            "Towel",
+            "Cleaning",
+            "Dusting"
+        ]
+    },
+    {
+        "q": "What is 'Cloud Storage'?",
+        "o": [
+            "Storing data on remote provider servers (S3, Dropbox)",
+            "Rain",
+            "Sky",
+            "Box"
+        ]
+    },
+    {
+        "q": "What is 'Public/Private Key Pair'?",
+        "o": [
+            "Mathematiclly linked keys (Encrypt with one, Decrypt with other)",
+            "Twins",
+            "Shoes",
+            "Friends"
+        ]
+    },
+    {
+        "q": "What is 'Session Key'?",
+        "o": [
+            "Temporary symmetric key for single session",
+            "Door key",
+            "Car key",
+            "House key"
+        ]
+    },
+    {
+        "q": "What is 'Obfuscation'?",
+        "o": [
+            "Making code/data difficult to understand/read",
+            "Hiding",
+            "Lying",
+            "Darkness"
+        ]
+    },
+    {
+        "q": "What is 'Tokenization' (Data)?",
+        "o": [
+            "Replacing sensitive data with non-sensitive token",
+            "Coin",
+            "Game",
+            "Arcade"
+        ]
+    },
+    {
+        "q": "What is 'Masking' (Data)?",
+        "o": [
+            "Hiding parts of data with characters (e.g. credit card X)",
+            "Costume",
+            "Painting",
+            "Tape"
+        ]
+    },
+    {
+        "q": "What is 'Partitioning' (Data)?",
+        "o": [
+            "Splitting data into separate locations/tables",
+            "Wall",
+            "Curtain",
+            "Room"
+        ]
+    },
+    {
+        "q": "What is 'Shard' (Database)?",
+        "o": [
+            "Horizontal partition of data in database",
+            "Glass piece",
+            "Weapon",
+            "Ice"
+        ]
+    },
+    {
+        "q": "What is 'Replication' (Data)?",
+        "o": [
+            "Copying data to multiple locations for availability",
+            "Clone",
+            "Twin",
+            "Repeat"
+        ]
+    },
+    {
+        "q": "What is 'Archive'?",
+        "o": [
+            "Long-term storage for inactive data",
+            "Museum",
+            "Old building",
+            "Dusty box"
+        ]
+    },
+    {
+        "q": "What is 'Retention Policy'?",
+        "o": [
+            "Rules defining how long data must be kept",
+            "School detention",
+            "Memory test",
+            "Holding breath"
+        ]
+    },
+    {
+        "q": "What is 'Legal Hold' process?",
+        "o": [
+            "Suspending normal data destruction during lawsuit",
+            "Jail",
+            "Handcuffs",
+            "Court"
+        ]
+    },
+    {
+        "q": "What is 'Chain of Truth'?",
+        "o": [
+            "Not a standard term (Likely referring to Chain of Custody orTrust)",
+            "Honesty",
+            "Lie detector",
+            "Rope"
+        ]
+    },
+    {
+        "q": "What is 'Web of Trust' (PGP)?",
+        "o": [
+            "Decentralized trust model where users sign each others keys",
+            "Spider web",
+            "Internet",
+            "Friends"
+        ]
+    },
+    {
+        "q": "What is 'X.509'?",
+        "o": [
+            "Standard format for public key certificates",
+            "Secret agent",
+            "Space ship",
+            "Planet"
+        ]
+    },
+    {
+        "q": "What is 'CRL'?",
+        "o": [
+            "Certificate Revocation List (Bad certs list)",
+            "Curl",
+            "Coral",
+            "Color"
+        ]
+    },
+    {
+        "q": "What is 'OCSP'?",
+        "o": [
+            "Online Certificate Status Protocol (Real-time check)",
+            "Ocean",
+            "Octopus",
+            "Optical"
+        ]
+    },
+    {
+        "q": "What is 'OCSP Stapling'?",
+        "o": [
+            "Server sends OCSP response with cert (Faster/Private)",
+            "Office supplies",
+            "Paperwork",
+            "Binding"
+        ]
+    },
+    {
+        "q": "What is 'CSR'?",
+        "o": [
+            "Certificate Signing Request (Sent to CA)",
+            "Customer Service",
+            "Corporate Responsibility",
+            "Car"
+        ]
+    },
+    {
+        "q": "What is 'Root CA'?",
+        "o": [
+            "Top-level CA trust anchor (Self-signed)",
+            "Tree",
+            "Gardener",
+            "Dentist"
+        ]
+    },
+    {
+        "q": "What is 'Intermediate CA'?",
+        "o": [
+            "CA between Root and End Entity (Safety buffer)",
+            "Middle school",
+            "Translation",
+            "Waiting room"
+        ]
+    },
+    {
+        "q": "What is 'Wildcard Certificate'?",
+        "o": [
+            "Cert valid for all subdomains (*.example.com)",
+            "Poker",
+            "Joker",
+            "Game"
+        ]
+    },
+    {
+        "q": "What is 'SAN' (Certificate)?",
+        "o": [
+            "Subject Alternative Name (Multiple domains on one cert)",
+            "Storage Area Network",
+            "San Francisco",
+            "Sandy"
+        ]
+    },
+    {
+        "q": "What is 'Self-Signed Certificate'?",
+        "o": [
+            "Cert signed by its own creator (Untrusted by browsers)",
+            "Autograph",
+            "Narcissist",
+            "Mirror"
+        ]
+    },
+    {
+        "q": "What is 'Key Escrow' risk?",
+        "o": [
+            "If escrow agent is compromised, all keys are exposed",
+            "Lost key",
+            "Locked out",
+            "Expensive"
+        ]
+    },
+    {
+        "q": "What is 'Recovery Agent' (Encryption)?",
+        "o": [
+            "Person authorized to recover keys/data",
+            "Doctor",
+            "Repo man",
+            "Spy"
+        ]
+    },
+    {
+        "q": "What is 'Hardware Security Module' (HSM) use?",
+        "o": [
+            "Secure key generation and storage (Tamper resistant)",
+            "Server rack",
+            "Gaming PC",
+            "Phone case"
+        ]
+    },
+    {
+        "q": "What is 'TPM' use?",
+        "o": [
+            "Device authentication and integrity checking (BitLocker)",
+            "Time Keeping",
+            "Total Power",
+            "Temp"
+        ]
+    },
+    {
+        "q": "What is 'Attestation' (TPM)?",
+        "o": [
+            "Reporting platform state to remote verifier",
+            "Test",
+            "Exam",
+            "Proof"
+        ]
+    },
+    {
+        "q": "What is 'Sealing' (TPM)?",
+        "o": [
+            "Encrypting data to specific system state",
+            "Envelope",
+            "Tape",
+            "Glue"
+        ]
+    },
+    {
+        "q": "What is 'Pervasive Encryption'?",
+        "o": [
+            "Encrypting data at all levels/states by default",
+            "Rare encryption",
+            "No encryption",
+            "Slow encryption"
+        ]
+    },
+    {
+        "q": "What is 'Format-Preserving Encryption'?",
+        "o": [
+            "Encrypted output has same format as input (e.g. credit card)",
+            "Zip file",
+            "PDF",
+            "Image"
+        ]
+    },
+    {
+        "q": "What is 'Quantum Key Distribution' advantage?",
+        "o": [
+            "Detects eavesdropping via physics laws",
+            "Faster",
+            "Cheaper",
+            "Wireless"
+        ]
+    },
+    {
+        "q": "What is 'Lattice-Based Cryptography'?",
+        "o": [
+            "Post-quantum algo family resistant to quantum attacks",
+            "Garden fence",
+            "Ladder",
+            "Pie"
+        ]
+    },
+    {
+        "q": "What is 'Blockchain' integrity?",
+        "o": [
+            "Each block hashes previous block (Chain)",
+            "Rope",
+            "Glue",
+            "Lock"
+        ]
+    },
+    {
+        "q": "What is 'Proof of Work'?",
+        "o": [
+            "Computational effort to valid transactions (Mining)",
+            "Resume",
+            "Digging",
+            "Sweat"
+        ]
+    },
+    {
+        "q": "What is 'Proof of Stake'?",
+        "o": [
+            "Validators chosen based on coins held",
+            "Steak dinner",
+            "Vampire",
+            "Tent"
+        ]
+    },
+    {
+        "q": "What is 'Cold Wallet'?",
+        "o": [
+            "Offline crypto storage (Hardware/Paper)",
+            "Fridge",
+            "Ice",
+            "Winter coat"
+        ]
+    },
+    {
+        "q": "What is 'Hot Wallet'?",
+        "o": [
+            "Online crypto storage (Connected)",
+            "Pocket",
+            "Oven",
+            "Summer"
+        ]
+    },
+    {
+        "q": "What is 'Air Gap' weakness?",
+        "o": [
+            "Internal threat / Bridging via removable media (USB)",
+            "Wind",
+            "No oxygen",
+            "Cold"
+        ]
+    },
+    {
+        "q": "What is 'Data Diode'?",
+        "o": [
+            "Hardware allowing data flow in only one direction",
+            "Light bulb",
+            "Switch",
+            "Valve"
+        ]
+    },
+    {
+        "q": "What is 'Bastion Host' hardening?",
+        "o": [
+            "Disable all unnecessary services/ports, robust logs",
+            "More RAM",
+            "Faster CPU",
+            "Bigger disk"
+        ]
+    },
+    {
+        "q": "What is 'Jump Server' auditing?",
+        "o": [
+            "Recording all sessions (Video/Keystroke) for accountability",
+            "Counting jumps",
+            "Fitness",
+            "Music"
+        ]
+    },
+    {
+        "q": "What is 'Screened Subnet'?",
+        "o": [
+            "Formal term for DMZ",
+            "Cinema",
+            "Net",
+            "Fishing"
+        ]
+    },
+    {
+        "q": "What is 'East-West' micro-segmentation?",
+        "o": [
+            "Securing server-to-server traffic inside data center",
+            "Travel",
+            "Compass",
+            "Map"
+        ]
+    },
+    {
+        "q": "What is 'Zero Trust' network access (ZTNA)?",
+        "o": [
+            "Access to apps based on identity/context, not network location",
+            "VPN",
+            "Firewall",
+            "Router"
+        ]
+    },
+    {
+        "q": "What is 'Context-Aware Access'?",
+        "o": [
+            "Using user, device, loc, time to decide access",
+            "Reading text",
+            "Smart glasses",
+            "History"
+        ]
+    },
+    {
+        "q": "What is 'Adaptive Authentication'?",
+        "o": [
+            "Changing auth requirements based on risk score",
+            "Changing clothes",
+            "Evolution",
+            "Chameleon"
+        ]
+    },
+    {
+        "q": "What is 'Continuous Authentication'?",
+        "o": [
+            "Verifying identity throughout session (Behavioral)",
+            "Never stopping",
+            "Long password",
+            "Nagging"
+        ]
+    },
+    {
+        "q": "What is 'Sovereign Identity'?",
+        "o": [
+            "User fully controls their own identity data (Decentralized)",
+            "King",
+            "Country",
+            "Flag"
+        ]
+    },
+    {
+        "q": "What is 'Privacy Enhancing Technologies' (PETs)?",
+        "o": [
+            "Tech to protect privacy (Homomorphic, Differential Privacy)",
+            "Animals",
+            "Dogs",
+            "Cats"
+        ]
+    },
+    {
+        "q": "What is 'Differential Privacy'?",
+        "o": [
+            "Adding noise to dataset to protect individual privacy while keeping pattern",
+            "Different clothes",
+            " Secrets",
+            "Hiding"
+        ]
+    },
+    {
+        "q": "What is 'Synthetic Data'?",
+        "o": [
+            "Artificially generated data mimicking real data properties",
+            "Fake news",
+            "Plastic",
+            "Toys"
+        ]
+    },
+    {
+        "q": "What is 'Data Minimization'?",
+        "o": [
+            "Collecting only data strictly necessary for purpose",
+            "Small font",
+            "Compression",
+            "Deleting"
+        ]
+    },
+    {
+        "q": "What is 'Purpose Limitation' (GDPR)?",
+        "o": [
+            "Using data only for stated purpose",
+            "Goal",
+            "Stopping",
+            "Game over"
+        ]
+    },
+    {
+        "q": "What is 'Storage Limitation' (GDPR)?",
+        "o": [
+            "Keeping data no longer than necessary",
+            "Small disk",
+            "Full memory",
+            "Warehouse"
+        ]
+    },
+    {
+        "q": "What is 'Confidential Computing'?",
+        "o": [
+            "Processing data in hardware-isolated enclave (TEE)",
+            "Secret laptop",
+            "Whispering",
+            "Hiding"
+        ]
+    },
+    {
+        "q": "What is 'TEE'?",
+        "o": [
+            "Trusted Execution Environment (Secure area of processor)",
+            "Golf",
+            "Drink",
+            "Shirt"
+        ]
+    },
+    {
+        "q": "What is 'Intel SGX'?",
+        "o": [
+            "Software Guard Extensions (Example of TEE)",
+            "Car",
+            "Graphics",
+            "Game"
+        ]
+    },
+    {
+        "q": "What is 'ARM TrustZone'?",
+        "o": [
+            "Hardware security extension for ARM processors (Mobile)",
+            "Safe zone",
+            "War zone",
+            "No fly zone"
+        ]
+    },
+    {
+        "q": "What is 'Secure Enclave' (Apple)?",
+        "o": [
+            "Dedicated secure coprocessor for TouchID/FaceID data",
+            "Cave",
+            "Fort",
+            "Box"
+        ]
+    },
+    {
+        "q": "What is 'Supply Chain Risk Management' (SCRM)?",
+        "o": [
+            "Managing risks from suppliers/vendors",
+            "Shipping",
+            "Warehouse",
+            "Shopping"
+        ]
+    },
+    {
+        "q": "What is 'Hardware Trojan'?",
+        "o": [
+            "Malicious modification of circuitry (Backdoor)",
+            "Toy horse",
+            "Soldier",
+            "Virus"
+        ]
+    },
+    {
+        "q": "What is 'Counterfeit Hardware' risk?",
+        "o": [
+            "Lower quality, reliability, potential malware",
+            "Fake money",
+            "Copycat",
+            "Cheap"
+        ]
+    },
+    {
+        "q": "What is 'Firmware Analysis'?",
+        "o": [
+            "Examining device firmware for vulns (Binwalk)",
+            "Hard ware",
+            "Soft ware",
+            "Study"
+        ]
+    },
+    {
+        "q": "What is 'Bus Snooping'?",
+        "o": [
+            "Monitoring data bus on circuit board",
+            "Bus ride",
+            "Spy",
+            "Traffic"
+        ]
+    },
+    {
+        "q": "What is 'JTAG'?",
+        "o": [
+            "Hardware interface for debugging/programming chips",
+            "Tag game",
+            "Name tag",
+            "Price tag"
+        ]
+    },
+    {
+        "q": "What is 'UART'?",
+        "o": [
+            "Universal Asynchronous Receiver-Transmitter (Serial console)",
+            "Art",
+            "Cart",
+            "Dart"
+        ]
+    },
+    {
+        "q": "What is 'Logic Analyzer'?",
+        "o": [
+            "Tool to capture digital signals",
+            "Puzzle solver",
+            "Brain",
+            "Computer"
+        ]
+    },
+    {
+        "q": "What is 'Glitch Attack' (Fault Injection)?",
+        "o": [
+            "Manipulating power/clock to cause error/bypass check",
+            "Video game",
+            "Bug",
+            "Screen flicker"
+        ]
+    },
+    {
+        "q": "What is 'Cold Boot Attack'?",
+        "o": [
+            "Retrieving keys from RAM after reboot (Remanence)",
+            "Winter shoes",
+            "Kicking",
+            "Ice"
+        ]
+    },
+    {
+        "q": "What is 'Tempest Attack'?",
+        "o": [
+            "Spying on screen via EM emissions",
+            "Storm",
+            "Wind",
+            "Rain"
+        ]
+    },
+    {
+        "q": "What is 'Acoustic Cryptanalysis'?",
+        "o": [
+            "Deduced keys from sound of CPU/Keyboard",
+            "Music",
+            "Listening",
+            "Singing"
+        ]
+    },
+    {
+        "q": "What is 'Rowhammer'?",
+        "o": [
+            "Flipping bits in RAM by accessing adjacent rows rapidly",
+            "Building",
+            "Tool",
+            "Thor"
+        ]
+    },
+    {
+        "q": "What is 'Spectre'?",
+        "o": [
+            "CPU speculative execution vulnerability (Read memory)",
+            "Ghost",
+            "Bond movie",
+            "Light"
+        ]
+    },
+    {
+        "q": "What is 'Meltdown'?",
+        "o": [
+            "CPU vulnerability allowing user process to read kernel memory",
+            "Ice cream",
+            "Tantrum",
+            "Nuclear"
+        ]
+    },
+    {
+        "q": "What is 'Patch Tuesday'?",
+        "o": [
+            "Microsoft's regular patch release cycle",
+            "Taco Tuesday",
+            "Holiday",
+            "Party"
+        ]
+    },
+    {
+        "q": "What is 'Exploit Kit'?",
+        "o": [
+            "Toolkit automating attacks against browser/plugin vulns",
+            "Tool box",
+            "Lego",
+            "First aid"
+        ]
+    },
+    {
+        "q": "What is 'Payload' (Malware)?",
+        "o": [
+            "The part of malware that performs malicious action",
+            "Cargo",
+            "Truck",
+            "Money"
+        ]
+    },
+    {
+        "q": "What is 'Dropper' (Malware)?",
+        "o": [
+            "Program designed to install malware (Payload)",
+            "Falling",
+            "Rain",
+            "Candy"
+        ]
+    },
+    {
+        "q": "What is 'C&C' vs 'C2'?",
+        "o": [
+            "Same thing: Command and Control",
+            "C&C is music",
+            "C2 is movie",
+            "Different"
+        ]
+    },
+    {
+        "q": "What is 'Beaconing'?",
+        "o": [
+            "Malware regularly signaling C2 server",
+            "Lighthouse",
+            "Bacon",
+            "Waving"
+        ]
+    },
+    {
+        "q": "What is 'DGA'?",
+        "o": [
+            "Domain Generation Algorithm (Used by malware/botnets)",
+            "Dog",
+            "Golf",
+            "Game"
+        ]
+    },
+    {
+        "q": "What is 'Fast Flux'?",
+        "o": [
+            "Rapidly changing IP addresses for a domain (Botnet)",
+            "Speed",
+            "Time travel",
+            "Car"
+        ]
+    },
+    {
+        "q": "What is 'Bulletproof Hosting'?",
+        "o": [
+            "Hosting service lenient to malicious content",
+            "Armor",
+            "Safe",
+            "Cloud"
+        ]
+    },
+    {
+        "q": "What is 'Dark Web'?",
+        "o": [
+            "Content not indexed by search engines, requires special software (Tor)",
+            "Night time",
+            "Black color",
+            "Spider"
+        ]
+    },
+    {
+        "q": "What is 'Tor'?",
+        "o": [
+            "The Onion Router (Anonymity network)",
+            "Thor",
+            "Door",
+            "Tore"
+        ]
+    },
+    {
+        "q": "What is 'Onion Routing'?",
+        "o": [
+            "Layered encryption enabling anonymity",
+            "Cooking",
+            "Vegetable",
+            "Crying"
+        ]
+    },
+    {
+        "q": "What is 'Exit Node' (Tor)?",
+        "o": [
+            "Last node in Tor circuit (Traffic appears from here)",
+            "Door",
+            "End",
+            "Stop"
+        ]
+    },
+    {
+        "q": "What is 'VPN' vs 'Tor'?",
+        "o": [
+            "VPN: Trust provider, Faster; Tor: Trust no one, Slower, Anonymous",
+            "Same",
+            "Tor is faster",
+            "VPN is free"
+        ]
+    },
+    {
+        "q": "What is 'Tails' OS?",
+        "o": [
+            "Amnesic Incognito Live System (Privacy focused Linux)",
+            "Animal",
+            "Coat",
+            "Story"
+        ]
+    },
+    {
+        "q": "What is 'Qubes OS'?",
+        "o": [
+            "Security-focused OS using virtualization (Compartmentalization)",
+            "Ice cubes",
+            "Toys",
+            "Geometry"
+        ]
+    },
+    {
+        "q": "What is 'Kali Linux'?",
+        "o": [
+            "Linux distro designed for Penetration Testing",
+            "Goddess",
+            "Martial Art",
+            "Game"
+        ]
+    },
+    {
+        "q": "What is 'Metasploit'?",
+        "o": [
+            "Penetration testing framework",
+            "Explosion",
+            "Metal",
+            "Robot"
+        ]
+    },
+    {
+        "q": "What is 'Nmap'?",
+        "o": [
+            "Network Mapper (Scanner)",
+            "Map app",
+            "Nap",
+            "Game"
+        ]
+    },
+    {
+        "q": "What is 'Wireshark'?",
+        "o": [
+            "Network Protocol Analyzer (Packet sniffer)",
+            "Fish",
+            "Ocean",
+            "Wire"
+        ]
+    },
+    {
+        "q": "What is 'Burp Suite'?",
+        "o": [
+            "Web Vulnerability Scanner / Proxy",
+            "Rude",
+            "Food",
+            "Drink"
+        ]
+    },
+    {
+        "q": "What is 'OWASP ZAP'?",
+        "o": [
+            "Zed Attack Proxy (Open Source Web Scanner)",
+            "Zap gun",
+            "Lightning",
+            "Speed"
+        ]
+    },
+    {
+        "q": "What is 'Nessus'?",
+        "o": [
+            "Vulnerability Scanner",
+            "Monster",
+            "Lake",
+            "Myth"
+        ]
+    },
+    {
+        "q": "What is 'Shodan'?",
+        "o": [
+            "Search engine for internet-connected devices",
+            "Karate",
+            "Show",
+            "Dan"
+        ]
+    },
+    {
+        "q": "What is 'Maltego'?",
+        "o": [
+            "Link analysis tool for OSINT/Forensics",
+            "Malt",
+            "Lego",
+            "Game"
+        ]
+    },
+    {
+        "q": "What is 'Ghidra'?",
+        "o": [
+            "Reverse engineering tool suite (NSA)",
+            "Monster",
+            "Dragon",
+            "Hydra"
+        ]
+    },
+    {
+        "q": "What is 'IDA Pro'?",
+        "o": [
+            "Interactive Disassembler (Reverse Engineering)",
+            "Name",
+            "Idea",
+            "Pro"
+        ]
+    },
+    {
+        "q": "What is 'Hashcat'?",
+        "o": [
+            "Advanced password recovery tool",
+            "Cat food",
+            "Potato",
+            "Drug"
+        ]
+    },
+    {
+        "q": "What is 'John the Ripper'?",
+        "o": [
+            "Password cracker",
+            "Killer",
+            "Person",
+            "Movie"
+        ]
+    },
+    {
+        "q": "What is 'Mimikatz'?",
+        "o": [
+            "Tool to extract plaintext passwords/hash/tickets from memory",
+            "Cat",
+            "Copy",
+            "Mime"
+        ]
+    },
+    {
+        "q": "What is 'Responder' (Tool)?",
+        "o": [
+            "LLMNR/NBT-NS poisoner for credential harvesting",
+            "Answer",
+            "Medical",
+            "Phone"
+        ]
+    },
+    {
+        "q": "What is 'Empire' (PowerShell)?",
+        "o": [
+            "Post-exploitation framework",
+            "King",
+            "Building",
+            "TV Show"
+        ]
+    },
+    {
+        "q": "What is 'Cobalt Strike'?",
+        "o": [
+            "Adversary Simulation software (Red Team)",
+            "Blue",
+            "Metal",
+            "Strike"
+        ]
+    },
+    {
+        "q": "What is 'BloodHound'?",
+        "o": [
+            "Tool to map AD trust relationships/attack paths",
+            "Dog",
+            "Hunting",
+            "Red"
+        ]
+    }
+]

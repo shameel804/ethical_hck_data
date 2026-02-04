@@ -1,0 +1,4547 @@
+[
+    {
+        "q": "What does 'APT' stand for?",
+        "o": [
+            "Advanced Persistent Threat",
+            "Automatic Protection Tool",
+            "Anti Phishing Technique",
+            "Advanced Penetration Test"
+        ]
+    },
+    {
+        "q": "What primarily characterizes an 'Advanced' threat?",
+        "o": [
+            "Use of sophisticated/custom techniques and resources",
+            "Fast internet speed",
+            "Expensive computer",
+            "New software"
+        ]
+    },
+    {
+        "q": "What primarily characterizes a 'Persistent' threat?",
+        "o": [
+            "Long-term access to target network (months/years)",
+            "Nagging emails",
+            "Frequent reboots",
+            "Daily backups"
+        ]
+    },
+    {
+        "q": "Who is the typical 'Threat' in APT?",
+        "o": [
+            "State-sponsored groups or organized crime",
+            "Script kiddie",
+            "Disgruntled employee",
+            "Random hacker"
+        ]
+    },
+    {
+        "q": "What is the primary goal of most APTs?",
+        "o": [
+            "Espionage and data exfiltration",
+            "Defacing websites",
+            "Showing off skills",
+            "Breaking hardware"
+        ]
+    },
+    {
+        "q": "What is the 'Cyber Kill Chain'?",
+        "o": [
+            "Framework describing phases of a cyber attack",
+            "Chain mail",
+            "Computer lock",
+            "Network cable"
+        ]
+    },
+    {
+        "q": "What is the first phase of the Kill Chain?",
+        "o": [
+            "Reconnaissance",
+            "Installation",
+            "Action on Objectives",
+            "Delivery"
+        ]
+    },
+    {
+        "q": "What happens during 'Reconnaissance'?",
+        "o": [
+            "Gathering information about the target",
+            "Planting malware",
+            "Stealing files",
+            "Breaking passwords"
+        ]
+    },
+    {
+        "q": "What happens during 'Weaponization'?",
+        "o": [
+            "Coupling exploit with a backdoor into a payload",
+            "Buying guns",
+            "Training soldiers",
+            "Writing emails"
+        ]
+    },
+    {
+        "q": "What happens during 'Delivery'?",
+        "o": [
+            "Transmitting weaponized payload to victim (Email/Web)",
+            "Shipping package",
+            "Pizza delivery",
+            "Phone call"
+        ]
+    },
+    {
+        "q": "What happens during 'Exploitation'?",
+        "o": [
+            "Triggering vulnerability to execute code",
+            "Asking for money",
+            "Using resources",
+            "Mining crypto"
+        ]
+    },
+    {
+        "q": "What happens during 'Installation'?",
+        "o": [
+            "Establishing backdoor/persistence on victim",
+            "Pluging in cables",
+            "Setting up wifi",
+            "Installing office"
+        ]
+    },
+    {
+        "q": "What happens during 'Command and Control' (C2)?",
+        "o": [
+            "Establishing channel for remote manipulation",
+            "Bossing people around",
+            "Remote control TV",
+            "Traffic lights"
+        ]
+    },
+    {
+        "q": "What happens during 'Actions on Objectives'?",
+        "o": [
+            "Achieving the goal (Exfiltration/Destruction)",
+            "Planning phase",
+            "Testing connection",
+            "Logging out"
+        ]
+    },
+    {
+        "q": "What is 'Spear Phishing'?",
+        "o": [
+            "Targeted email attack against specific individual",
+            "Fishing with spear",
+            "Spam email",
+            "Phone scam"
+        ]
+    },
+    {
+        "q": "What is 'Whaling'?",
+        "o": [
+            "Phishing targeting C-level executives (CEO/CFO)",
+            "Hunting whales",
+            "Boat trip",
+            "Big fish"
+        ]
+    },
+    {
+        "q": "What is 'Watering Hole Attack'?",
+        "o": [
+            "Infecting websites frequented by the target",
+            "Drinking water",
+            "Digging hole",
+            "Swimming pool"
+        ]
+    },
+    {
+        "q": "What is 'Supply Chain Attack'?",
+        "o": [
+            "Compromising a vendor to breach the target",
+            "Broken chain",
+            "Shipping delay",
+            "Missing package"
+        ]
+    },
+    {
+        "q": "Who is 'Fancy Bear' (APT28)?",
+        "o": [
+            "Russian state-sponsored group (GRU)",
+            "Cartoon bear",
+            "Circus animal",
+            "Toy store"
+        ]
+    },
+    {
+        "q": "Who is 'Cozy Bear' (APT29)?",
+        "o": [
+            "Russian state-sponsored group (SVR)",
+            "Sleeping bear",
+            "Warm coat",
+            "Winter hat"
+        ]
+    },
+    {
+        "q": "Who is 'Lazarus Group'?",
+        "o": [
+            "North Korean state-sponsored group",
+            "Bible character",
+            "Movie title",
+            "Rock band"
+        ]
+    },
+    {
+        "q": "Who is 'Equation Group'?",
+        "o": [
+            "Sophisticated group linked to NSA (USA)",
+            "Math club",
+            "School class",
+            "Formula 1"
+        ]
+    },
+    {
+        "q": "What is 'Stuxnet' famous for?",
+        "o": [
+            "Physically damaging Iranian nuclear centrifuges",
+            "Stealing credit cards",
+            "Crashing windows",
+            "Hacking facebook"
+        ]
+    },
+    {
+        "q": "What is 'Lateral Movement'?",
+        "o": [
+            "Moving from one system to another within network",
+            "Walking sideways",
+            "Driving car",
+            "Moving desk"
+        ]
+    },
+    {
+        "q": "What is 'Persistence'?",
+        "o": [
+            "Maintaining access across reboots",
+            "Working hard",
+            "Not giving up",
+            "Running fast"
+        ]
+    },
+    {
+        "q": "What is 'Exfiltration'?",
+        "o": [
+            "Unauthorized transfer of data out of network",
+            "Filtering water",
+            "Entering building",
+            "Breathing out"
+        ]
+    },
+    {
+        "q": "What is 'Living off the Land' (LotL)?",
+        "o": [
+            "Using built-in system tools for attacks (PowerShell)",
+            "Camping outside",
+            "Farming food",
+            "Eating berries"
+        ]
+    },
+    {
+        "q": "What is 'Fileless Malware'?",
+        "o": [
+            "Malware executing in memory without disk file",
+            "Empty folder",
+            "Invisible ink",
+            "Deleted file"
+        ]
+    },
+    {
+        "q": "What is 'Zero-Day Exploit'?",
+        "o": [
+            "Attack using vulnerability unknown to vendor",
+            "New calendar",
+            "First day",
+            "Fast attack"
+        ]
+    },
+    {
+        "q": "What is 'C2 Beacon'?",
+        "o": [
+            "Malware signaling 'alive' to attacker server",
+            "Lighthouse light",
+            "Flashlight",
+            "Radio tower"
+        ]
+    },
+    {
+        "q": "What is 'TTP'?",
+        "o": [
+            "Tactics, Techniques, and Procedures",
+            "Time To Process",
+            "Tools Testing Plan",
+            "Technical Training Program"
+        ]
+    },
+    {
+        "q": "What does 'Tactics' refer to in TTP?",
+        "o": [
+            "The 'Why' or the goal (e.g., Lateral Movement)",
+            "The specific tool",
+            "The exact command",
+            "The time of day"
+        ]
+    },
+    {
+        "q": "What does 'Techniques' refer to in TTP?",
+        "o": [
+            "The 'How' (e.g., Pass-the-Hash)",
+            "The motivation",
+            "The victim name",
+            "The computer type"
+        ]
+    },
+    {
+        "q": "What does 'Procedures' refer to in TTP?",
+        "o": [
+            "The specific implementation/steps used",
+            "The general idea",
+            "The high level plan",
+            "The cost of attack"
+        ]
+    },
+    {
+        "q": "What is 'Mimikatz'?",
+        "o": [
+            "Tool to extract plaintext passwords/hashes from memory",
+            "Cat toy",
+            "Video game",
+            "Cooking recipe"
+        ]
+    },
+    {
+        "q": "What is 'Cobalt Strike'?",
+        "o": [
+            "Adversary emulation software often used by APTs",
+            "Mining company",
+            "Union strike",
+            "Blue paint"
+        ]
+    },
+    {
+        "q": "What is 'Empire' (PowerShell)?",
+        "o": [
+            "Post-exploitation framework",
+            "TV show",
+            "Building construction",
+            "Government type"
+        ]
+    },
+    {
+        "q": "What is 'BloodHound'?",
+        "o": [
+            "Tool to map AD relationships and attack paths",
+            "Dog breed",
+            "Vampire movie",
+            "Medical test"
+        ]
+    },
+    {
+        "q": "What is 'IoC'?",
+        "o": [
+            "Indicator of Compromise",
+            "Internet of Cars",
+            "Inside of Computer",
+            "Index of Content"
+        ]
+    },
+    {
+        "q": "What is a 'Hash' IoC?",
+        "o": [
+            "File signature (MD5/SHA256) of malware",
+            "Potato dish",
+            "Twitter tag",
+            "Drug slang"
+        ]
+    },
+    {
+        "q": "What is 'Pyramid of Pain'?",
+        "o": [
+            "Diagram showing difficulty for attacker to change IoCs",
+            "Gym workout",
+            "Egypt tour",
+            "Back injury"
+        ]
+    },
+    {
+        "q": "What is at the TOP of Pyramid of Pain?",
+        "o": [
+            "TTPs (Tough to change)",
+            "Hash Values",
+            "IP Addresses",
+            "Domain Names"
+        ]
+    },
+    {
+        "q": "What is at the BOTTOM of Pyramid of Pain?",
+        "o": [
+            "Hash Values (Easy to change)",
+            "TTPs",
+            "Network Artifacts",
+            "Tools"
+        ]
+    },
+    {
+        "q": "What is 'MITRE ATT&CK'?",
+        "o": [
+            "Knowledge base of adversary tactics and techniques",
+            "Martial arts",
+            "Military base",
+            "Attack dog"
+        ]
+    },
+    {
+        "q": "What is 'Attribution'?",
+        "o": [
+            "Identifying the actor behind an attack",
+            "Giving credit",
+            "Citing source",
+            "Naming file"
+        ]
+    },
+    {
+        "q": "What is 'False Flag' operation?",
+        "o": [
+            "Attacker planting evidence to blame someone else",
+            "Capture the flag",
+            "Wrong answer",
+            "Surrender flag"
+        ]
+    },
+    {
+        "q": "What is 'DGA'?",
+        "o": [
+            "Domain Generation Algorithm (for C2 resilience)",
+            "Dog Grooming Assoc",
+            "Digital Graphic Art",
+            "Disk Game App"
+        ]
+    },
+    {
+        "q": "What is 'Fast Flux'?",
+        "o": [
+            "Rapidly changing DNS records to hide C2",
+            "Time travel",
+            "Soldering tool",
+            "Fast car"
+        ]
+    },
+    {
+        "q": "What is 'Domain Fronting'?",
+        "o": [
+            "Hiding traffic to C2 behind legitimate domain (CDN)",
+            "Website design",
+            "Front door",
+            "Reception desk"
+        ]
+    },
+    {
+        "q": "What is 'Steganography'?",
+        "o": [
+            "Hiding data within other files (Images)",
+            "Dinosaur study",
+            "Writing shorthand",
+            "Drawing maps"
+        ]
+    },
+    {
+        "q": "What is 'Obfuscation'?",
+        "o": [
+            "Making code difficult to read/analyze",
+            "Turning off lights",
+            "Cleaning glasses",
+            "Speaking softly"
+        ]
+    },
+    {
+        "q": "What is 'Packing' (Malware)?",
+        "o": [
+            "Compressing/encrypting executable to evade AV",
+            "Moving house",
+            "Gift wrapping",
+            "Lunch box"
+        ]
+    },
+    {
+        "q": "What is 'Sandbox Evasion'?",
+        "o": [
+            "Malware detecting it is analyzed and sleeping",
+            "Toys in sand",
+            "Beach trip",
+            "Desert run"
+        ]
+    },
+    {
+        "q": "What is 'Creds'?",
+        "o": [
+            "Credentials (Username/Password)",
+            "Credit cards",
+            "Street cred",
+            "Movie credits"
+        ]
+    },
+    {
+        "q": "What is 'Privilege Escalation'?",
+        "o": [
+            "Gaining higher level access (User to Admin)",
+            "Climbing ladder",
+            "Getting raise",
+            "Flying plane"
+        ]
+    },
+    {
+        "q": "What is 'UAC Bypass'?",
+        "o": [
+            "Executing high priv code without user prompt",
+            "Skipping line",
+            "Opening door",
+            "Ignoring boss"
+        ]
+    },
+    {
+        "q": "What is 'Token Manipulation'?",
+        "o": [
+            "Stealing/Copying access tokens to impersonate",
+            "Playing game",
+            "Subway ride",
+            "Coin trick"
+        ]
+    },
+    {
+        "q": "What is 'DLL Hijacking' persistence?",
+        "o": [
+            "Placing malicious DLL where app loads it",
+            "Stealing book",
+            "Library fine",
+            "Broken shelf"
+        ]
+    },
+    {
+        "q": "What is 'Scheduled Task' persistence?",
+        "o": [
+            "Windows task running malware on schedule",
+            "Calendar invite",
+            "Alarm clock",
+            "To-do list"
+        ]
+    },
+    {
+        "q": "What is 'Registry Run Key'?",
+        "o": [
+            "Registry location launching apps at startup",
+            "Car key",
+            "Hotel register",
+            "Marathon run"
+        ]
+    },
+    {
+        "q": "What is 'LOLBin'?",
+        "o": [
+            "Living Off The Land Binary (Signed OS tool)",
+            "Laughing Out Loud",
+            "Trash bin",
+            "Recycling center"
+        ]
+    },
+    {
+        "q": "What is 'Certutil' used for by APTs?",
+        "o": [
+            "Downloading files or decoding base64",
+            "Checking certificates",
+            "Printing paper",
+            "Cleaning disk"
+        ]
+    },
+    {
+        "q": "What is 'Bitsadmin' used for by APTs?",
+        "o": [
+            "Downloading payloads via BITS service",
+            "Administering bits",
+            "Counting money",
+            "Small pieces"
+        ]
+    },
+    {
+        "q": "What is 'Mshta' used for by APTs?",
+        "o": [
+            "Executing HTA (HTML App) payloads",
+            "Misspelled word",
+            "Greeting ms",
+            "Web browser"
+        ]
+    },
+    {
+        "q": "What is 'Regsvr32' used for by APTs?",
+        "o": [
+            "Bypassing AppLocker (Squiblydoo)",
+            "Registering server",
+            "Counting to 32",
+            "Registry cleaner"
+        ]
+    },
+    {
+        "q": "What is 'Process Injection'?",
+        "o": [
+            "Running malicious code inside legitimate process",
+            "Flu shot",
+            "Manufacturing step",
+            "Chemical mix"
+        ]
+    },
+    {
+        "q": "What is 'Process Hollowing'?",
+        "o": [
+            "Unmapping process executable and replacing it",
+            "Empty tree",
+            "Cave digging",
+            "Hungry stomach"
+        ]
+    },
+    {
+        "q": "What is 'Reflective DLL Injection'?",
+        "o": [
+            "Loading DLL from memory (No disk drop)",
+            "Mirror trick",
+            "Thinking hard",
+            "Shiny object"
+        ]
+    },
+    {
+        "q": "What is 'Threat Hunting'?",
+        "o": [
+            "Proactively searching network for hidden threats",
+            "Deer hunting",
+            "Looking for ghosts",
+            "Safety drill"
+        ]
+    },
+    {
+        "q": "What is 'Baselining'?",
+        "o": [
+            "Establishing 'normal' activity to spot anomalies",
+            "Playing baseball",
+            "Drawing line",
+            "Singing bass"
+        ]
+    },
+    {
+        "q": "What is 'Anomaly Detection'?",
+        "o": [
+            "Identifying deviations from the baseline",
+            "Finding bugs",
+            "Spotting ufo",
+            "Medical diagnosis"
+        ]
+    },
+    {
+        "q": "What is 'YARA'?",
+        "o": [
+            "Rule-based pattern matching for malware ID",
+            "Yelling loud",
+            "Yard work",
+            "Yacht club"
+        ]
+    },
+    {
+        "q": "What is 'Sigma'?",
+        "o": [
+            "Generic signature format for SIEM events",
+            "Greek letter",
+            "Fraternity house",
+            "Summation math"
+        ]
+    },
+    {
+        "q": "What is 'Strategic Intelligence'?",
+        "o": [
+            "High-level info for decision makers (Trends)",
+            "Game plan",
+            "Chess move",
+            "Military rank"
+        ]
+    },
+    {
+        "q": "What is 'Tactical Intelligence'?",
+        "o": [
+            "TTP profiles of threat actors",
+            "Army gear",
+            "Small details",
+            "Short term"
+        ]
+    },
+    {
+        "q": "What is 'Operational Intelligence'?",
+        "o": [
+            "Specific upcoming operations knowledge",
+            "Surgery room",
+            "Business hours",
+            "Running machine"
+        ]
+    },
+    {
+        "q": "What is 'Technical Intelligence'?",
+        "o": [
+            "IoCs like IPs, Hashes, Domains",
+            "Tech support",
+            "Computer repair",
+            "Manual reading"
+        ]
+    },
+    {
+        "q": "What is 'Cyber Threat Intelligence' (CTI)?",
+        "o": [
+            "Collection/Analysis of threat info",
+            "Spy movie",
+            "Smart computer",
+            "Reading news"
+        ]
+    },
+    {
+        "q": "What is 'ISAC'?",
+        "o": [
+            "Information Sharing and Analysis Center",
+            "Isaac Newton",
+            "Ice Sack",
+            "International School"
+        ]
+    },
+    {
+        "q": "What is 'TLP' (Traffic Light Protocol)?",
+        "o": [
+            "Labeling scheme for info sharing sensitivity",
+            "Driving rules",
+            "City planning",
+            "Color game"
+        ]
+    },
+    {
+        "q": "What does 'TLP:RED' mean?",
+        "o": [
+            "Not for disclosure, restricted to participants",
+            "Stop sign",
+            "Danger ahead",
+            "Red paint"
+        ]
+    },
+    {
+        "q": "What does 'TLP:GREEN' mean?",
+        "o": [
+            "Limited disclosure (Community/Partners)",
+            "Go ahead",
+            "Recycle bin",
+            "Green grass"
+        ]
+    },
+    {
+        "q": "What does 'TLP:CLEAR' mean?",
+        "o": [
+            "No limits on disclosure (Public)",
+            "Glass window",
+            "Clean water",
+            "Invisible ink"
+        ]
+    },
+    {
+        "q": "What is 'STIX'?",
+        "o": [
+            "Structured Threat Information Expression (Format)",
+            "Wooden stick",
+            "River Styx",
+            "Glue stick"
+        ]
+    },
+    {
+        "q": "What is 'TAXII'?",
+        "o": [
+            "Trusted Automated Exchange of Intelligence (Transport)",
+            "Yellow car",
+            "Airport ride",
+            "Paying tax"
+        ]
+    },
+    {
+        "q": "What is 'Open Source Intelligence' (OSINT)?",
+        "o": [
+            "Data collected from public sources",
+            "Open door",
+            "Free software",
+            "Public library"
+        ]
+    },
+    {
+        "q": "What is 'Dark Web' monitoring?",
+        "o": [
+            "Scanning Tor sites for leaked data/chatter",
+            "Night vision",
+            "Turning off lights",
+            "Spider web"
+        ]
+    },
+    {
+        "q": "What is a 'Honeypot'?",
+        "o": [
+            "Decoy system to attract/monitor attackers",
+            "Full of honey",
+            "Bear trap",
+            "Sweet food"
+        ]
+    },
+    {
+        "q": "What is a 'Canary Token'?",
+        "o": [
+            "Trap file/link alerting on access",
+            "Yellow bird",
+            "Coal mine",
+            "Singing song"
+        ]
+    },
+    {
+        "q": "What is 'Active Defense'?",
+        "o": [
+            "Engaging adversary (Annoyance/Deception)",
+            "Playing sports",
+            "Running fast",
+            "Shield wall"
+        ]
+    },
+    {
+        "q": "What is 'Tarpit'?",
+        "o": [
+            "Service designed to slow down connections",
+            "Sticky road",
+            "Dinosaur trap",
+            "Roof cover"
+        ]
+    },
+    {
+        "q": "What is 'Sinkholing'?",
+        "o": [
+            "Redirecting malicious traffic to defender control",
+            "Water draining",
+            "Road collapse",
+            "Kitchen sink"
+        ]
+    },
+    {
+        "q": "What is 'GPO' (Group Policy Object)?",
+        "o": [
+            "Windows config pushed to domain computers",
+            "General Post Office",
+            "Government Payout",
+            "Grand Parent"
+        ]
+    },
+    {
+        "q": "What is 'Golden SAML'?",
+        "o": [
+            "Forging SAML tokens to access cloud apps",
+            "Award trophy",
+            "Cereal brand",
+            "Gold coin"
+        ]
+    },
+    {
+        "q": "What is 'Supply Chain Interdiction'?",
+        "o": [
+            "Intercepting hardware in transit to implant bugs",
+            "Traffic stop",
+            "Blocking pass",
+            "Mail theft"
+        ]
+    },
+    {
+        "q": "What is 'Shadow IT' risk to APT?",
+        "o": [
+            "Unmanaged devices/apps creating entry points",
+            "Dark room",
+            "Ninja warrior",
+            "Cloudy day"
+        ]
+    },
+    {
+        "q": "What is 'Bring Your Own Device' (BYOD) risk?",
+        "o": [
+            "Personal devices on corporate network",
+            "Party invite",
+            "Lunch box",
+            "School trip"
+        ]
+    },
+    {
+        "q": "What is 'Juice Jacking'?",
+        "o": [
+            "Malware via public USB charging station",
+            "Making juice",
+            "Car jack",
+            "Fruit press"
+        ]
+    },
+    {
+        "q": "What is 'Evil Maid' attack?",
+        "o": [
+            "Physical access to unattended device (Hotel)",
+            "Bad cleaning",
+            "Ghost story",
+            "Haunted hotel"
+        ]
+    },
+    {
+        "q": "What is 'Cold Boot' attack?",
+        "o": [
+            "Freezing RAM to read keys after power off",
+            "Winter boots",
+            "Ice cream",
+            "Starting car"
+        ]
+    },
+    {
+        "q": "What is 'APT1' (Comment Crew)?",
+        "o": [
+            "Chinese PLA Unit 61398 targeting US industries",
+            "YouTube commenters",
+            "News reporters",
+            "Movie critics"
+        ]
+    },
+    {
+        "q": "What is 'APT3' (Gothic Panda)?",
+        "o": [
+            "Chinese group known for UPS/Buckeye tools",
+            "Cute panda",
+            "Zoo exhibit",
+            "Bamboo eater"
+        ]
+    },
+    {
+        "q": "What is 'APT10' (Stone Panda)?",
+        "o": [
+            "Chinese group targeting MSPs (Cloud Hopper)",
+            "Rock statue",
+            "Heavy stone",
+            "Garden gnome"
+        ]
+    },
+    {
+        "q": "What is 'Cloud Hopper' campaign?",
+        "o": [
+            "Attacking Managed Service Providers to reach clients",
+            "Jumping clouds",
+            "Rain dance",
+            "Plane travel"
+        ]
+    },
+    {
+        "q": "What is 'APT28' (Fancy Bear) origin?",
+        "o": [
+            "Russian GRU Military Intelligence",
+            "Siberian forest",
+            "Moscow zoo",
+            "Toy factory"
+        ]
+    },
+    {
+        "q": "What is 'APT29' (Cozy Bear) origin?",
+        "o": [
+            "Russian SVR Foreign Intelligence",
+            "Winter coat",
+            "Fire place",
+            "Bed time"
+        ]
+    },
+    {
+        "q": "What is 'Sandworm' Team?",
+        "o": [
+            "Russian group targeting Ukraine Power Grid",
+            "Desert insect",
+            "Beach toy",
+            "Sci-fi movie"
+        ]
+    },
+    {
+        "q": "What is 'NotPetya'?",
+        "o": [
+            "Destructive Wiper posing as Ransomware (Sandworm)",
+            "Pet cat",
+            "Not a toy",
+            "Encryption tool"
+        ]
+    },
+    {
+        "q": "What is 'WannaCry' mechanism?",
+        "o": [
+            "Ransomware using EternalBlue (SMB exploit)",
+            "Crying baby",
+            "Sad movie",
+            "Onion router"
+        ]
+    },
+    {
+        "q": "What is 'EternalBlue'?",
+        "o": [
+            "NSA exploit for SMBv1 leaked by Shadow Brokers",
+            "Blue sky",
+            "Ocean deep",
+            "Sad feeling"
+        ]
+    },
+    {
+        "q": "Who are 'Shadow Brokers'?",
+        "o": [
+            "Group that leaked NSA tools (EternalBlue)",
+            "Stock traders",
+            "Dark room",
+            "Insurance agents"
+        ]
+    },
+    {
+        "q": "What is 'APT33' origin?",
+        "o": [
+            "Iranian group targeting Aviation/Energy (Shamoon)",
+            "Persian cat",
+            "Flying carpet",
+            "Desert sand"
+        ]
+    },
+    {
+        "q": "What is 'Shamoon'?",
+        "o": [
+            "Wiper malware targeting Saudi Aramco",
+            "Full moon",
+            "Desert storm",
+            "Oil rig"
+        ]
+    },
+    {
+        "q": "What is 'APT34' (OilRig)?",
+        "o": [
+            "Iranian group targeting Middle East Gov/Finance",
+            "Drilling oil",
+            "Gas station",
+            "Construction site"
+        ]
+    },
+    {
+        "q": "What is 'Charming Kitten'? ",
+        "o": [
+            "Iranian APT targeting dissidents/media",
+            "Cute cat",
+            "Pet store",
+            "Soft fur"
+        ]
+    },
+    {
+        "q": "What is 'Lazarus' heist?",
+        "o": [
+            "Bangladesh Bank SWIFT hack ($81 million)",
+            "Bank loan",
+            "ATM withdrawal",
+            "Lottery win"
+        ]
+    },
+    {
+        "q": "What is 'Sony Pictures Hack' attribution?",
+        "o": [
+            "North Korea (Lazarus) over 'The Interview' movie",
+            "Playstation",
+            "TV repair",
+            "Movie ticket"
+        ]
+    },
+    {
+        "q": "What is 'APT32' (OceanLotus)?",
+        "o": [
+            "Vietnamese group targeting foreign corps/dissidents",
+            "Water flower",
+            "Fish tank",
+            "Beach resort"
+        ]
+    },
+    {
+        "q": "What is 'DarkHotel'?",
+        "o": [
+            "Korean group targeting hotel Wifi of executives",
+            "Haunted house",
+            "Night club",
+            "Room service"
+        ]
+    },
+    {
+        "q": "What is 'Turla' (Snake/Uroburos)?",
+        "o": [
+            "Advanced Russian group using Satellite C2",
+            "Reptile house",
+            "Mythical creature",
+            "Twisting road"
+        ]
+    },
+    {
+        "q": "What is 'Epic Turla'?",
+        "o": [
+            "Campaign initiating infections via watering holes",
+            "Action movie",
+            "Long story",
+            "Video game"
+        ]
+    },
+    {
+        "q": "What is 'Ransomware as a Service' (RaaS)?",
+        "o": [
+            "Affiliate model for renting ransomware infrastructure",
+            "Cloud storage",
+            "Subscription box",
+            "Customer support"
+        ]
+    },
+    {
+        "q": "What is 'Double Extortion'?",
+        "o": [
+            "Encrypting data AND threatening to leak it",
+            "Paying twice",
+            "Two criminals",
+            "Copying keys"
+        ]
+    },
+    {
+        "q": "Who is 'REvil' (Sodinokibi)?",
+        "o": [
+            "Major RaaS group (Kaseya attack)",
+            "Resident Evil",
+            "Bad villain",
+            "Video game"
+        ]
+    },
+    {
+        "q": "Who is 'DarkSide'?",
+        "o": [
+            "RaaS group behind Colonial Pipeline attack",
+            "Star Wars",
+            "Night time",
+            "Moon phase"
+        ]
+    },
+    {
+        "q": "What was 'Colonial Pipeline' impact?",
+        "o": [
+            "Gas shortage in US East Coast due to OT shutdown",
+            "Water leak",
+            "Oil spill",
+            "Traffic jam"
+        ]
+    },
+    {
+        "q": "Who is 'Conti'?",
+        "o": [
+            "Prolific RaaS group targeting hospitals/gov (Irish HSE)",
+            "Car brand",
+            "Breakfast",
+            "Music band"
+        ]
+    },
+    {
+        "q": " What is 'Initial Access Broker' (IAB)?",
+        "o": [
+            "Actor selling network access to other criminals",
+            "Stock broker",
+            "Real estate",
+            "Door man"
+        ]
+    },
+    {
+        "q": "What is 'Big Game Hunting' (Ransomware)?",
+        "o": [
+            "Targeting large enterprises for high ransom",
+            "Safari trip",
+            "Video game",
+            "Zoo keeper"
+        ]
+    },
+    {
+        "q": "What is 'TrickBot'?",
+        "o": [
+            "Banking trojan evolved into malware dropper",
+            "Magic trick",
+            "Robot toy",
+            "Card game"
+        ]
+    },
+    {
+        "q": "What is 'Emotet'?",
+        "o": [
+            "Modular malware distributor (MaaS)",
+            "Emotional sentiment",
+            "Text emoji",
+            "Chat app"
+        ]
+    },
+    {
+        "q": "What is 'Dridex'?",
+        "o": [
+            "Banking trojan often delivered via Excel macro",
+            "Dry cleaning",
+            "Index card",
+            "Doctor name"
+        ]
+    },
+    {
+        "q": "What is 'Macro Malware'?",
+        "o": [
+            "Malicious VBA code in Office docs",
+            "Big virus",
+            "Space ship",
+            "Microscope"
+        ]
+    },
+    {
+        "q": "What is 'VBA'?",
+        "o": [
+            "Visual Basic for Applications (Office scripting)",
+            "Very Big Apple",
+            "Video Basic Audio",
+            "Virtual Base Address"
+        ]
+    },
+    {
+        "q": "What is 'Mark of the Web' (MoTW)?",
+        "o": [
+            "NTFS stream flagging file from internet (blocks macros)",
+            "Spider web",
+            "Tattoo ink",
+            "Browser history"
+        ]
+    },
+    {
+        "q": "What is 'SolarWinds' supply chain hack?",
+        "o": [
+            "Malicious code injected into Orion build pipeline (Sunburst)",
+            "Sun power",
+            "Wind energy",
+            "Weather forecast"
+        ]
+    },
+    {
+        "q": "What is 'Sunburst'?",
+        "o": [
+            "Backdoor inserted into SolarWinds Orion DLL",
+            "Candy name",
+            "Star explosion",
+            "Sunny day"
+        ]
+    },
+    {
+        "q": "What is 'Teardrop'?",
+        "o": [
+            "Memory-only dropper used in SolarWinds attacks",
+            "Crying eye",
+            "Rain water",
+            "Sad song"
+        ]
+    },
+    {
+        "q": "What is 'Kaseya VSA' attack?",
+        "o": [
+            "Supply chain ransomware attack via MSP management software",
+            "Computer case",
+            "Virus scan",
+            "Keyboard tyuping"
+        ]
+    },
+    {
+        "q": "What is 'Codecov' breach?",
+        "o": [
+            "Bash uploader script modified to exfiltrate CI secrets",
+            "Covid test",
+            "Code coverage",
+            "Covering tracks"
+        ]
+    },
+    {
+        "q": "What is 'Dependency Confusion'?",
+        "o": [
+            "Public package with higher version replaces private internal one",
+            "Mixed feelings",
+            "Lost child",
+            "Package delivery"
+        ]
+    },
+    {
+        "q": "What is 'Timestomping'?",
+        "o": [
+            "Modifying file timestamps to hide malware existence",
+            "Walking slow",
+            "Time travel",
+            "Clock repair"
+        ]
+    },
+    {
+        "q": "What is 'PsExec' use by APT?",
+        "o": [
+            "Microsoft tool used for lateral movement/remote execution",
+            "Post script",
+            "Process list",
+            "Power supply"
+        ]
+    },
+    {
+        "q": "What is 'RDP Hijacking'?",
+        "o": [
+            "Taking over existing RDP session of logged-in user",
+            "Remote control",
+            " stealing car",
+            "Phone call"
+        ]
+    },
+    {
+        "q": "What is 'Jump Box' / 'Pivot'?",
+        "o": [
+            "Compromised host used to access internal network segments",
+            "Exercise gym",
+            "Basketball move",
+            "Garden fence"
+        ]
+    },
+    {
+        "q": "What is 'Pass-the-Hash'?",
+        "o": [
+            "Using NTLM hash to authenticate without password",
+            "Passing food",
+            "Hash brown",
+            "Relay race"
+        ]
+    },
+    {
+        "q": "What is 'Overpass-the-Hash'?",
+        "o": [
+            "Using hash to request Kerberos TGT (AES keys)",
+            "Highway bridge",
+            "Driving over",
+            "Passing grade"
+        ]
+    },
+    {
+        "q": "What is 'Pass-the-Ticket'?",
+        "o": [
+            "Using stolen Kerberos ticket to access resources",
+            "Train ride",
+            "Concert entry",
+            "Traffic fine"
+        ]
+    },
+    {
+        "q": "What is 'Golden Ticket'?",
+        "o": [
+            "Forged TGT (KRBTGT) granting Domain Admin access",
+            "Movie pass",
+            "Chocolate bar",
+            "Lottery win"
+        ]
+    },
+    {
+        "q": "What is 'Silver Ticket'?",
+        "o": [
+            "Forged TGS for specific service on specific server",
+            "Second place",
+            "Silverware",
+            "Coin collection"
+        ]
+    },
+    {
+        "q": "What is 'Skeleton Key'?",
+        "o": [
+            "Malware patching LSASS to accept master password",
+            "Bone key",
+            "Halloween",
+            "Medical bone"
+        ]
+    },
+    {
+        "q": "What is 'DCShadow'?",
+        "o": [
+            "Rogue DC injecting changes into AD replication stream",
+            "Dark room",
+            "Night time",
+            "Shadow puppet"
+        ]
+    },
+    {
+        "q": "What is 'LSASS'?",
+        "o": [
+            "Local Security Authority Subsystem Service (Auth process)",
+            "Last Sass",
+            "Loose Sand",
+            "Lost Ship"
+        ]
+    },
+    {
+        "q": "What is 'Dumping LSASS'?",
+        "o": [
+            "Extracting memory of LSASS to find credentials",
+            "Trash dump",
+            "Memory loss",
+            "File delete"
+        ]
+    },
+    {
+        "q": "What is 'ProcDump'?",
+        "o": [
+            "Sysinternals tool used to dump process memory (LSASS)",
+            "Trash can",
+            "Procedure doc",
+            "Processor fan"
+        ]
+    },
+    {
+        "q": "What is 'Comsvcs.dll' method?",
+        "o": [
+            "LOLBin method to dump LSASS via MiniDump export",
+            "Comm service",
+            "Computer virus",
+            "Library book"
+        ]
+    },
+    {
+        "q": "What is 'Kerberoasting'?",
+        "o": [
+            "Requesting TGS for service and cracking offline",
+            "Cooking food",
+            "Camp fire",
+            "Roast beef"
+        ]
+    },
+    {
+        "q": "What is 'AS-REP Roasting'?",
+        "o": [
+            "Attack against users with 'Pre-Auth not required'",
+            "Morning coffee",
+            "Reply email",
+            "Representing"
+        ]
+    },
+    {
+        "q": "What is 'Unconstrained Delegation'?",
+        "o": [
+            "Server holds user's TGT in memory (risk of theft)",
+            "Free time",
+            "Delegating work",
+            "No rules"
+        ]
+    },
+    {
+        "q": "What is 'Constrained Delegation'?",
+        "o": [
+            "Service can only impersonate user to specific services",
+            "Strict boss",
+            "Limited time",
+            "Tight rope"
+        ]
+    },
+    {
+        "q": "What is 'Resource-Based Constrained Delegation'?",
+        "o": [
+            "Resource defines who can delegate to it",
+            "Natural resources",
+            "Base camp",
+            "Training plan"
+        ]
+    },
+    {
+        "q": "What is 'AdminSDHolder'?",
+        "o": [
+            "AD object protecting high-privilege groups",
+            "Holding bag",
+            "Admin desk",
+            "SD Card"
+        ]
+    },
+    {
+        "q": "What is 'SDProp'?",
+        "o": [
+            "Process enforcing AdminSDHolder permissions hourly",
+            "Propeller",
+            "Property tax",
+            "Stage prop"
+        ]
+    },
+    {
+        "q": "What is 'NTDS.dit'?",
+        "o": [
+            "Active Directory database file containing all hashes",
+            "Note pad",
+            "Text doc",
+            "System log"
+        ]
+    },
+    {
+        "q": "What is 'Volume Shadow Copy'?",
+        "o": [
+            "Windows backup feature used to steal locked files (NTDS)",
+            "Loud music",
+            "Shadow boxer",
+            "Copy machine"
+        ]
+    },
+    {
+        "q": "What is 'vssadmin'?",
+        "o": [
+            "Tool to manage Shadow Copies (often used by ransomware)",
+            "System admin",
+            "Virtual server",
+            "Video s"
+        ]
+    },
+    {
+        "q": "What is 'Active Directory' (AD)?",
+        "o": [
+            "Microsoft directory service for domain networks",
+            "Phone book",
+            "Map direction",
+            "Active sport"
+        ]
+    },
+    {
+        "q": "What is 'Domain Controller' (DC)?",
+        "o": [
+            "Server responding to security auth requests",
+            "Remote control",
+            "Game console",
+            "Traffic cop"
+        ]
+    },
+    {
+        "q": "What is 'Group Policy'?",
+        "o": [
+            "Infrastructure to manage configs for users/computers",
+            "Insurance plan",
+            "Team meeting",
+            "Group chat"
+        ]
+    },
+    {
+        "q": "What is 'SYSVOL'?",
+        "o": [
+            "Shared folder on DC storing malicious GPO scripts",
+            "System volume",
+            "Loud speaker",
+            "Disk drive"
+        ]
+    },
+    {
+        "q": "What is 'C2 Channel'?",
+        "o": [
+            "Communication path between compromised host and attacker",
+            "TV channel",
+            "Water canal",
+            "Radio freq"
+        ]
+    },
+    {
+        "q": "What is 'DNS C2'?",
+        "o": [
+            "Tunneling commands/data inside DNS TXT/A records",
+            "Website name",
+            "Phone book",
+            "Domain shop"
+        ]
+    },
+    {
+        "q": "What is 'DoH' (DNS over HTTPS) C2 Risk?",
+        "o": [
+            "Bypassing DNS filters/logging by using HTTPS",
+            "Doughnut",
+            "Homer Simpson",
+            "Baking bread"
+        ]
+    },
+    {
+        "q": "What is 'Domain Fronting'?",
+        "o": [
+            "Using high-reputation domain in SNI to hide true C2",
+            "Web design",
+            "Store front",
+            "Front door"
+        ]
+    },
+    {
+        "q": "What is 'Beaconing'?",
+        "o": [
+            "Regular periodic connection to C2 server",
+            "Bacon strip",
+            "Car light",
+            "Lighthouse"
+        ]
+    },
+    {
+        "q": "What is 'Jitter' in C2?",
+        "o": [
+            "Randomizing beacon interval to avoid detection",
+            "Coffee shake",
+            "Nervous tic",
+            "Dancing move"
+        ]
+    },
+    {
+        "q": "What is 'Sliver' (C2)?",
+        "o": [
+            "Open source C2 framework (Go-based)",
+            "Wood splinter",
+            "Silver metal",
+            "Small slice"
+        ]
+    },
+    {
+        "q": "What is 'Covenant' (C2)?",
+        "o": [
+            ".NET based C2 framework",
+            "Religious group",
+            "Promise made",
+            "Contract law"
+        ]
+    },
+    {
+        "q": "What is 'Mythic' (C2)?",
+        "o": [
+            "Multi-platform C2 framework (macOS/Linux key)",
+            "Legend story",
+            "Greek god",
+            "False fact"
+        ]
+    },
+    {
+        "q": "What is 'PoshC2'?",
+        "o": [
+            "Proxy aware C2 framework written in PowerShell",
+            "Fancy car",
+            "High class",
+            "Spice Girl"
+        ]
+    },
+    {
+        "q": "What is 'Merlin' (C2)?",
+        "o": [
+            "HTTP/2 C2 channel tool",
+            "Wizard magic",
+            "Bird type",
+            "King Arthur"
+        ]
+    },
+    {
+        "q": "What is 'Metasploit Meterpreter'?",
+        "o": [
+            "Advanced payload providing interactive shell (in-memory)",
+            "Parking meter",
+            "Metric system",
+            "Poetry rhyme"
+        ]
+    },
+    {
+        "q": "What is 'Staged Payload'?",
+        "o": [
+            "Small initial code (stager) downloads larger payload",
+            "Theater play",
+            "Rocket launch",
+            "Fake event"
+        ]
+    },
+    {
+        "q": "What is 'Stageless Payload'?",
+        "o": [
+            "Full payload contained in single artifact (larger)",
+            "Real life",
+            "One step",
+            "Direct hit"
+        ]
+    },
+    {
+        "q": "What is 'Obfuscation'?",
+        "o": [
+            "Hiding code intent (Base64/XOR/Renaming)",
+            "Talking quiet",
+            "Turning lights",
+            "Cleaning room"
+        ]
+    },
+    {
+        "q": "What is 'AMSI'?",
+        "o": [
+            "Antimalware Scan Interface (Windows script shimming)",
+            "Aunt name",
+            "Anti Missile",
+            "American Std"
+        ]
+    },
+    {
+        "q": "What is 'AMSI Bypass'?",
+        "o": [
+            "Disabling AMSI in memory to run malicious scripts",
+            "Skipping class",
+            "Driving around",
+            "Paying toll"
+        ]
+    },
+    {
+        "q": "What is 'ETW'?",
+        "o": [
+            "Event Tracing for Windows (Telemetry)",
+            "Eating food",
+            "Extra Time",
+            "End The War"
+        ]
+    },
+    {
+        "q": "What is 'Patching ETW'?",
+        "o": [
+            "Modifying ntdll to stop sending telemetry events",
+            "Fixing pants",
+            "Software update",
+            "Band aid"
+        ]
+    },
+    {
+        "q": "What is 'Process Mocking'?",
+        "o": [
+            "Impersonating trusted process context",
+            "Making fun",
+            "Fake smile",
+            "Comedy show"
+        ]
+    },
+    {
+        "q": "What is 'Parent PID Spoofing'?",
+        "o": [
+            "Launching process appearing to be spawned by legit parent",
+            "Fake dad",
+            "Family tree",
+            "Adoption"
+        ]
+    },
+    {
+        "q": "What is 'Command Line Spoofing'?",
+        "o": [
+            "Hiding arguments from process auditing logs",
+            "Fake order",
+            "Magic trick",
+            "Lying words"
+        ]
+    },
+    {
+        "q": "What is 'DllSearchOrderHijacking'?",
+        "o": [
+            "Placing DLL in app directory to preempt system DLL",
+            "Library search",
+            "Book finding",
+            "Lost item"
+        ]
+    },
+    {
+        "q": "What is 'Phantom DLL Hijacking'?",
+        "o": [
+            "Exploiting old DLLs typical in Windows but usually missing",
+            "Ghost story",
+            "Spooky house",
+            "Invisible man"
+        ]
+    },
+    {
+        "q": "What is 'UAC' (User Account Control)?",
+        "o": [
+            "Prompt asking permission for admin actions",
+            "Under Age",
+            "Universal AC",
+            "United Area"
+        ]
+    },
+    {
+        "q": "What is 'Auto-Elevate'?",
+        "o": [
+            "Windows binaries that bypass UAC prompts automatically",
+            "Elevator up",
+            "Flying high",
+            "Car jack"
+        ]
+    },
+    {
+        "q": "What is 'Fodhelper' UAC Bypass?",
+        "o": [
+            "Registry key manipulation to execute high-priv cmd",
+            "Helping hand",
+            "Food helper",
+            "Cleaning tool"
+        ]
+    },
+    {
+        "q": "What is 'Eventvwr' UAC Bypass?",
+        "o": [
+            "Hijacking mmc.exe process flow via registry",
+            "Party plan",
+            "Watching TV",
+            "Calendar app"
+        ]
+    },
+    {
+        "q": "What is 'AlwaysInstallElevated'?",
+        "o": [
+            "GPO setting allowing any MSI to run as System",
+            "Elevator ride",
+            "Tall building",
+            "Installation"
+        ]
+    },
+    {
+        "q": "What is 'Modifiable Service'?",
+        "o": [
+            "Service config writable by low-priv user (binPath)",
+            "Car repair",
+            "Change clothes",
+            "Waiter tip"
+        ]
+    },
+    {
+        "q": "What is 'WMI' Lateral Movement?",
+        "o": [
+            "Using Win32_Process Create to launch process remotely",
+            "Walking slow",
+            "Wireless internet",
+            "Water meter"
+        ]
+    },
+    {
+        "q": "What is 'WinRM' Lateral Movement?",
+        "o": [
+            "Using Windows Remote Management (PSRemoting) to execute",
+            "Winning lottery",
+            "Window cleaning",
+            "Room rental"
+        ]
+    },
+    {
+        "q": "What is 'DCOM' Lateral Movement?",
+        "o": [
+            "Instantiating COM objects (MMC20/ShellWindows) on remote host",
+            "Dot com boom",
+            "Direct command",
+            "Comic book"
+        ]
+    },
+    {
+        "q": "What is 'SMB Beacon' (Cobalt Strike)?",
+        "o": [
+            "P2P C2 traffic over Named Pipes (SMB)",
+            "Lighthouse",
+            "Small beacon",
+            "Smoke signal"
+        ]
+    },
+    {
+        "q": "What is 'Named Pipe'?",
+        "o": [
+            "IPC mechanism often used for SMB lateral movement",
+            "Plumbing pipe",
+            "Smoking pipe",
+            "Name tag"
+        ]
+    },
+    {
+        "q": "What is 'SOCKS Proxy' pivot?",
+        "o": [
+            "Tunneling tool traffic through compromised host",
+            "Wearing socks",
+            "Puppet show",
+            "Stock market"
+        ]
+    },
+    {
+        "q": "What is 'Port Forwarding' pivot?",
+        "o": [
+            "Redirecting local port traffic to remote destination",
+            "Ship port",
+            "Forward mail",
+            "Soccer game"
+        ]
+    },
+    {
+        "q": "What is 'Ligolo-ng'?",
+        "o": [
+            "Advanced tunneling tool using TUN interfaces",
+            "Lego toy",
+            "Italian pasta",
+            "Singing opera"
+        ]
+    },
+    {
+        "q": "What is 'Chisel'?",
+        "o": [
+            "TCP/UDP tunneling tool over HTTP",
+            "Wood tool",
+            "Sculpture art",
+            "Cheesecake"
+        ]
+    },
+    {
+        "q": "What is 'Rubeus'?",
+        "o": [
+            "C# toolset for raw Kerberos interaction/abuse",
+            "Red gem",
+            "Harry Potter",
+            "Rubiks cube"
+        ]
+    },
+    {
+        "q": "What is 'Impacket'?",
+        "o": [
+            "Python classes for working with network protocols (SMB/Kerberos)",
+            "Package delivery",
+            "Impact drill",
+            "Tooth filling"
+        ]
+    },
+    {
+        "q": "What is 'Secretsdump.py'?",
+        "o": [
+            "Impacket script to extract credentials (SAM/LSA/NTDS)",
+            "Secret diary",
+            "Trash dump",
+            "Hidden treasure"
+        ]
+    },
+    {
+        "q": "What is 'Responder'?",
+        "o": [
+            "LLMNR/NBT-NS poisoner to capture NTLM hashes",
+            "First aid",
+            "Email reply",
+            "Phone answer"
+        ]
+    },
+    {
+        "q": "What is 'Inveigh'?",
+        "o": [
+            "PowerShell/C# LLMNR/mDNS spoofer",
+            "Weight scale",
+            "Vein doctor",
+            "Angry speech"
+        ]
+    },
+    {
+        "q": "What is 'LLMNR Poisoning'?",
+        "o": [
+            "Answering local name resolution broadcasts to steal hash",
+            "Poison food",
+            "Chemical spill",
+            "Sick stomach"
+        ]
+    },
+    {
+        "q": "What is 'WPAD' attack?",
+        "o": [
+            "Serving malicious Proxy Auto-Config file to MITM traffic",
+            "Writing pad",
+            "iPad app",
+            "Walking path"
+        ]
+    },
+    {
+        "q": "What is 'ADCS' (Cert Services)?",
+        "o": [
+            "PKI role in AD often misconfigured (Escalation vectors)",
+            "Add computers",
+            "Advertisement",
+            "Counting sum"
+        ]
+    },
+    {
+        "q": "What is 'PetitPotam'?",
+        "o": [
+            "Coercing DC to authenticate (NTLM) to attacker via EFSRPC",
+            "Small pot",
+            "Flower vase",
+            "Cooking pan"
+        ]
+    },
+    {
+        "q": "What is 'Shadow Coercion'?",
+        "o": [
+            "Forcing machine auth via MS-FSRVP (Shadow Copy Protocol)",
+            "Dark shadow",
+            "Bullying",
+            "Force push"
+        ]
+    },
+    {
+        "q": "What is 'PrinterBug' (SpoolSample)?",
+        "o": [
+            "Coercing machine auth via Print Spooler service",
+            "Broken printer",
+            "Insect bite",
+            "Paper jam"
+        ]
+    },
+    {
+        "q": "What is 'NTLM Relay'?",
+        "o": [
+            "Relaying captured NTLM auth to another server (SMB Signing off)",
+            "Running race",
+            "Radio tower",
+            "Passing baton"
+        ]
+    },
+    {
+        "q": "What prevents 'NTLM Relay'?",
+        "o": [
+            "SMB Signing (Message Integrity)",
+            "Running fast",
+            "Strong password",
+            "Firewall rule"
+        ]
+    },
+    {
+        "q": "What is 'LDAP Signing'?",
+        "o": [
+            "Preventing relay/MITM of LDAP queries",
+            "Signing paper",
+            "Name tag",
+            "Lap dance"
+        ]
+    },
+    {
+        "q": "What is 'Channel Binding' (EPA)?",
+        "o": [
+            "Binding auth capabilities to TLS session (Anti-Relay)",
+            "TV channel",
+            "Book binding",
+            "Rope knot"
+        ]
+    },
+    {
+        "q": "What is 'AD ACL' Abuse?",
+        "o": [
+            "Exploiting permission entries (WriteDACL/Owner) to take over",
+            "Knee injury",
+            "Broken bone",
+            "Gym exercise"
+        ]
+    },
+    {
+        "q": "What is 'BloodHound' Edges?",
+        "o": [
+            "Relationships like 'MemberOf' or 'CanRDP'",
+            "Knife blade",
+            "Cliff edge",
+            "Geometry line"
+        ]
+    },
+    {
+        "q": "What is 'GenericAll' right?",
+        "o": [
+            "Full control over target object",
+            "Generic drug",
+            "Everything bag",
+            "Department store"
+        ]
+    },
+    {
+        "q": "What is 'ForceChangePassword' right?",
+        "o": [
+            "Ability to reset user password without knowing current",
+            "Gym force",
+            "Changing clothes",
+            "Forced entry"
+        ]
+    },
+    {
+        "q": "What is 'AddMembers' right?",
+        "o": [
+            "Ability to add arbitrary users to a group",
+            "Math fail",
+            "Club join",
+            "New friend"
+        ]
+    },
+    {
+        "q": "What is 'DCSync' right?",
+        "o": [
+            "Replicating Directory Changes (Get Hashes)",
+            "Syncing phone",
+            "Music beat",
+            "Dance move"
+        ]
+    },
+    {
+        "q": "What is 'Account Operator' group?",
+        "o": [
+            "Default group that can manage most users/computers",
+            "Math teacher",
+            "Phone operator",
+            "Bank teller"
+        ]
+    },
+    {
+        "q": "What is 'Backup Operator' group?",
+        "o": [
+            "Can backup files (Read access to all files including NTDS)",
+            "Reverse gear",
+            "Safety net",
+            "Second singer"
+        ]
+    },
+    {
+        "q": "What is 'Print Operator' group?",
+        "o": [
+            "Can load kernel drivers (historically) or manage printers",
+            "Newspaper",
+            "Typing text",
+            "Finger print"
+        ]
+    },
+    {
+        "q": "What is 'Server Operator' group?",
+        "o": [
+            "Can login locally to DC and backup files",
+            "Waiter job",
+            "Tennis play",
+            "Computer room"
+        ]
+    },
+    {
+        "q": "What is 'Protected Users' group?",
+        "o": [
+            "Group enforcing strict security (No NTLM/Cached creds)",
+            "Bodyguard",
+            "Safe room",
+            "Helmet wear"
+        ]
+    },
+    {
+        "q": "What is 'SID History' Injection?",
+        "o": [
+            "Adding Administrator SID to user's history for persistence",
+            "History book",
+            "Browser cache",
+            "Timeline view"
+        ]
+    },
+    {
+        "q": "What is 'Mimikatz DCSync' requirement?",
+        "o": [
+            "Replicating Directory Changes permission",
+            "Domain Admin only",
+            "Local Admin",
+            "User password"
+        ]
+    },
+    {
+        "q": "What is 'AdminCount' attribute?",
+        "o": [
+            "Flag indicating user is/was a protected group member",
+            "Counting numbers",
+            "Math score",
+            "Admin desk"
+        ]
+    },
+    {
+        "q": "What is 'Resetting AdminCount' importance?",
+        "o": [
+            "Ensuring SDProp stops overwriting ACLs on demoted user",
+            "Fixing error",
+            "Starting over",
+            "Cleaning desk"
+        ]
+    },
+    {
+        "q": "What is 'Local Administrator Password Solution' (LAPS)?",
+        "o": [
+            "Managing local admin passwords via AD attributes",
+            "Running laps",
+            "Laptop computer",
+            "Sitting down"
+        ]
+    },
+    {
+        "q": "What is 'LAPS' vulnerability?",
+        "o": [
+            "Read access to ms-Mcs-AdmPwd attribute (Cleartext)",
+            "Falling down",
+            "Broken screen",
+            "Weak knees"
+        ]
+    },
+    {
+        "q": "What is 'Group Policy Preference' (GPP) vulnerability?",
+        "o": [
+            "Passwords stored in SYSVOL XML with known AES key",
+            "Prefering tea",
+            "Voting choice",
+            "Group hug"
+        ]
+    },
+    {
+        "q": "What is 'SYSVOL' Cpassword?",
+        "o": [
+            "Encrypted string in GPP XML decryptable by anyone",
+            "Secret code",
+            "Password hint",
+            "System error"
+        ]
+    },
+    {
+        "q": "What is 'Zerologon' (CVE-2020-1472)?",
+        "o": [
+            "Resetting DC machine account password via Netlogon crypto flaw",
+            "Zero score",
+            "Logging off",
+            "Starting fresh"
+        ]
+    },
+    {
+        "q": "What is 'PrintNightmare'?",
+        "o": [
+            "RCE via Print Spooler service (Driver install)",
+            "Bad dream",
+            "Scary movie",
+            "Broken printer"
+        ]
+    },
+    {
+        "q": "What is 'NoPac' (SamTheAdmin)?",
+        "o": [
+            "Priv escalation via Kerberos PAC validation bypass",
+            "No packing",
+            "Empty box",
+            "Tupac singer"
+        ]
+    },
+    {
+        "q": "What is 'PowerShell ScriptBlock Logging'?",
+        "o": [
+            "Logging de-obfuscated script content (Event 4104)",
+            "Writing play",
+            "Block party",
+            "Cutting wood"
+        ]
+    },
+    {
+        "q": "What is 'PowerShell Transcription'?",
+        "o": [
+            "Logging all console input/output to text files",
+            "Writing notes",
+            "Medical scribe",
+            "Listening music"
+        ]
+    },
+    {
+        "q": "What is 'Module Logging'?",
+        "o": [
+            "Logging pipeline execution details (Event 4103)",
+            "Space station",
+            "School class",
+            "Building block"
+        ]
+    },
+    {
+        "q": "What is 'Constrained Language Mode' (CLM)?",
+        "o": [
+            "Restricting PowerShell API access for non-admins",
+            "Speaking strict",
+            "Grammar nazi",
+            "Baby talk"
+        ]
+    },
+    {
+        "q": "What is 'AppLocker'?",
+        "o": [
+            "Whitelisting rules for executables/scripts",
+            "Gym locker",
+            "Phone app",
+            "Locking door"
+        ]
+    },
+    {
+        "q": "What is 'WDAC' (Windows Defender App Control)?",
+        "o": [
+            "Advanced application whitelisting (Kernel level)",
+            "Car AC",
+            "Defense sport",
+            "Control room"
+        ]
+    },
+    {
+        "q": "What is 'COM Hijacking'?",
+        "o": [
+            "Replacing unregistered COM DLLs or Registry keys",
+            "Stealing mic",
+            "Funny joke",
+            "Internet domain"
+        ]
+    },
+    {
+        "q": "What is 'CLSID'?",
+        "o": [
+            "GUID identifying a COM class object",
+            "Class ID",
+            "School roll",
+            "Name tag"
+        ]
+    },
+    {
+        "q": "What is 'HKCU' vs 'HKLM' Hijack?",
+        "o": [
+            "User hive takes precedence over Machine hive (No admin needed)",
+            "King and Queen",
+            "High and Low",
+            "Big and Small"
+        ]
+    },
+    {
+        "q": "What is 'Scheduled Task' persistence?",
+        "o": [
+            "Running malware at bioot/login/idle via Task Scheduler",
+            "Calendar invite",
+            "Alarm clock",
+            "To-do list"
+        ]
+    },
+    {
+        "q": "What is 'Service' persistence?",
+        "o": [
+            "Creating/Modifying Windows Service (Requires Admin)",
+            "Waiter job",
+            "Car fix",
+            "Church mass"
+        ]
+    },
+    {
+        "q": "What is 'Golden Image' Poisoning?",
+        "o": [
+            "Planting backdoor in base OS image used for deployment",
+            "Gold statue",
+            "Photo frame",
+            "Perfect picture"
+        ]
+    },
+    {
+        "q": "What is 'Hardware Implant'?",
+        "o": [
+            "Physical device added to supply chain (intercept/C2)",
+            "Medical knee",
+            "Dental tooth",
+            "Planting tree"
+        ]
+    },
+    {
+        "q": "What is 'Interdiction'?",
+        "o": [
+            "Intercepting shipping to modify hardware",
+            "Traffic light",
+            "Stop sign",
+            "Police raid"
+        ]
+    },
+    {
+        "q": "What is 'DMA' Attack?",
+        "o": [
+            "Direct Memory Access via Thunderbolt/PCIe reading RAM",
+            "Boxing punch",
+            "Driving car",
+            "Memory card"
+        ]
+    },
+    {
+        "q": "What is 'IOMMU' defense?",
+        "o": [
+            "Isolating device DMA access (protection against DMA attacks)",
+            "Eye doctor",
+            "Motherboard",
+            "Brain waves"
+        ]
+    },
+    {
+        "q": "What is 'Secure Boot'?",
+        "o": [
+            "Verifying digital signature of bootloader/kernel",
+            "Locking shoe",
+            "Safe walking",
+            "Tight lace"
+        ]
+    },
+    {
+        "q": "What is 'Trusted Platform Module' (TPM)?",
+        "o": [
+            "Hardware chip for crypto keys and integrity measurements",
+            "Trusted friend",
+            "Platform game",
+            "Module class"
+        ]
+    },
+    {
+        "q": "What is 'BitLocker'?",
+        "o": [
+            "Full Disk Encryption using TPM for key release",
+            "Drill bit",
+            "Locking door",
+            "Coin wallet"
+        ]
+    },
+    {
+        "q": "What is 'Cold Boot' attack mitigation?",
+        "o": [
+            "Full memory overwrite on shutdown or intricate RAM encryption",
+            "Warm shoes",
+            "Hot coffee",
+            "Winter coat"
+        ]
+    },
+    {
+        "q": "What is 'Evil Maid' mitigation?",
+        "o": [
+            "Measured Boot / TPM sealing / Physical intrusion detection",
+            "Cleaning room",
+            "Hiring staff",
+            "Hotel stay"
+        ]
+    },
+    {
+        "q": "What is 'FDE'?",
+        "o": [
+            "Full Disk Encryption",
+            "Fast Data Entry",
+            "Free Day End",
+            "Four Door Entry"
+        ]
+    },
+    {
+        "q": "What is 'SED' (Self-Encrypting Drive)?",
+        "o": [
+            "Hard drive handling encryption in hardware controller",
+            "Sitting down",
+            "Sending email",
+            "Sad mood"
+        ]
+    },
+    {
+        "q": "What is 'Opal' standard?",
+        "o": [
+            "Standard for self-encrypting drives",
+            "Gem stone",
+            "Car name",
+            "Old pal"
+        ]
+    },
+    {
+        "q": "What is 'LNK' Persistence?",
+        "o": [
+            "Modifying shortcut files to run malware before target app",
+            "Internet link",
+            "Chain link",
+            "Zelda game"
+        ]
+    },
+    {
+        "q": "What is 'DLL Proxying'?",
+        "o": [
+            "Malicious DLL forwards valid calls to real DLL (Man-in-the-Middle)",
+            "Voting proxy",
+            "Web proxy",
+            "Fake ID"
+        ]
+    },
+    {
+        "q": "What is 'DLL Sideloading'?",
+        "o": [
+            "Placing malicious DLL next to legit signed executable",
+            "Loading truck",
+            "Walking sideways",
+            "Side dish"
+        ]
+    },
+    {
+        "q": "What is 'Rootkit'?",
+        "o": [
+            "Malware designed to hide existence at OS/Kernel level",
+            "Garden plant",
+            "Science kit",
+            "Dental root"
+        ]
+    },
+    {
+        "q": "What is 'User-mode Rootkit'?",
+        "o": [
+            "Hooks API calls (Ring 3) to hide files/processes",
+            "Video game",
+            "User profile",
+            "Fashion mode"
+        ]
+    },
+    {
+        "q": "What is 'Kernel-mode Rootkit'?",
+        "o": [
+            "Hooks kernel structures (Ring 0) for deep evasion",
+            "Popcorn kernel",
+            "Military rank",
+            "Hard nut"
+        ]
+    },
+    {
+        "q": "What is 'Bootkit'?",
+        "o": [
+            "Rootkit infecting Master Boot Record (MBR) or VBR",
+            "Shoe kit",
+            "Car trunk",
+            "First aid"
+        ]
+    },
+    {
+        "q": "What is 'Shim' persistence (SDB)?",
+        "o": [
+            "Using AppCompat shims to inject code into generic apps",
+            "Door wedge",
+            "Dancing move",
+            "Table leg"
+        ]
+    },
+    {
+        "q": "What is 'WMI Event Subscription' persistence?",
+        "o": [
+            "Permanent event consumer triggered by system state",
+            "Magazine sub",
+            "Calendar event",
+            "Ticket sale"
+        ]
+    },
+    {
+        "q": "What is 'Office Startup' persistence?",
+        "o": [
+            "Placing file in Word Startup folder (Auto-load)",
+            "Morning coffee",
+            "Starting car",
+            "Gym routine"
+        ]
+    },
+    {
+        "q": "What is 'Screensaver' persistence?",
+        "o": [
+            "Replacing .scr file or registry payload",
+            "Sleeping computer",
+            "Saving money",
+            "Sun screen"
+        ]
+    },
+    {
+        "q": "What is 'eBPF' malware risk?",
+        "o": [
+            "Kernel-level visibility/modification without module loading",
+            "Electric bill",
+            "Traffic police",
+            "Fast car"
+        ]
+    },
+    {
+        "q": "What is 'LD_PRELOAD' trick (Linux)?",
+        "o": [
+            "Env var forcing library load before others (Hooking)",
+            "Loading dock",
+            "Pre wash",
+            "Heavy lifting"
+        ]
+    },
+    {
+        "q": "What is 'Cron Job' persistence (Linux)?",
+        "o": [
+            "Scheduled task executing command periodically",
+            "Old man",
+            "Time clock",
+            "Corn cob"
+        ]
+    },
+    {
+        "q": "What is 'Systemd Service' persistence?",
+        "o": [
+            "Creating malicious .service file for auto-start",
+            "Waiter tip",
+            "System error",
+            "Car repair"
+        ]
+    },
+    {
+        "q": "What is '.bashrc' persistence?",
+        "o": [
+            "Adding command to user shell init script",
+            "Bash party",
+            "Remote control",
+            "Trash bin"
+        ]
+    },
+    {
+        "q": "What is 'SSH Key' persistence?",
+        "o": [
+            "Adding attacker public key to authorized_keys",
+            "House key",
+            "Quiet noise",
+            "Car lock"
+        ]
+    },
+    {
+        "q": "What is 'Cloud Metallic'?",
+        "o": [
+            "Federated Identity abuse (Golden SAML)",
+            "Heavy metal",
+            "Silver cloud",
+            "Rain storm"
+        ]
+    },
+    {
+        "q": "What is 'Token Theft' (Cloud)?",
+        "o": [
+            "Stealing Session Token/Access Key from environment",
+            "Arcade game",
+            "Subway ride",
+            "Coin trick"
+        ]
+    },
+    {
+        "q": "What is 'Instance Metadata' (IMDS) attack?",
+        "o": [
+            "Querying 169.254.169.254 to steal IAM role creds",
+            "Data entry",
+            "Phone book",
+            "Library card"
+        ]
+    },
+    {
+        "q": "What is 'IMDSv2' improvement?",
+        "o": [
+            "Requires session token header (Anti-SSRF)",
+            "New version",
+            "Sequel movie",
+            "Upgrade kit"
+        ]
+    },
+    {
+        "q": "What is 'S3 Bucket' Leaks?",
+        "o": [
+            "Misconfigured public read/write permissions",
+            "Water bucket",
+            "Beach toy",
+            "Trash can"
+        ]
+    },
+    {
+        "q": "What is 'UserEnum' (Cloud)?",
+        "o": [
+            "Enumerating valid accounts via error messages",
+            "Counting fingers",
+            "Math class",
+            "Phone list"
+        ]
+    },
+    {
+        "q": "What is 'Password Spraying'?",
+        "o": [
+            "Trying one common password against many accounts",
+            "Water hose",
+            "Graffiti art",
+            "Cleaning window"
+        ]
+    },
+    {
+        "q": "Why use 'Password Spraying' over Brute Force?",
+        "o": [
+            "Avoids account lockout policies",
+            "Faster speed",
+            "Less effort",
+            "More fun"
+        ]
+    },
+    {
+        "q": "What is 'Credential Stuffing'?",
+        "o": [
+            "Using leaked username/password pairs from other breaches",
+            "Thanksgiving turkey",
+            "Packing box",
+            "Full stomach"
+        ]
+    },
+    {
+        "q": "What is 'MFA Fatigue' (Push Bombing)?",
+        "o": [
+            "Spamming push notifications until user accepts",
+            "Running far",
+            "Sleeping tired",
+            "Explosion sound"
+        ]
+    },
+    {
+        "q": "What is 'SIM Swapping'?",
+        "o": [
+            "Porting victim number to attacker SIM (Bypass SMS MFA)",
+            "Trading cards",
+            "Phone call",
+            "Changing clothes"
+        ]
+    },
+    {
+        "q": "What is 'FIDO2' key?",
+        "o": [
+            "Hardware token providing phishing-resistant MFA",
+            "Dog name",
+            "House key",
+            "Music note"
+        ]
+    },
+    {
+        "q": "What is 'Passkeys'?",
+        "o": [
+            "Passwordless auth using public key crypto (FIDO based)",
+            "Ski pass",
+            "Door lock",
+            "Secret code"
+        ]
+    },
+    {
+        "q": "What is 'Heaven's Gate' technique?",
+        "o": [
+            "Switching form 32-bit WoW64 code to 64-bit to evade hooks",
+            "Religious place",
+            "Golden door",
+            "Cloud computing"
+        ]
+    },
+    {
+        "q": "What is 'Hell's Gate' approach?",
+        "o": [
+            "Dynamically resolving syscalls from ntdll to bypass hooks",
+            "Fiery place",
+            "Underworld",
+            "Rock band"
+        ]
+    },
+    {
+        "q": "What is 'Halo's Gate'?",
+        "o": [
+            "Evolution of Hell's Gate handling hooked syscall instructions",
+            "Angel ring",
+            "Video game",
+            "Light check"
+        ]
+    },
+    {
+        "q": "What is 'API Hashing'?",
+        "o": [
+            "Resolving Windows APIs by hash instead of name strings",
+            "Potato hash",
+            "Cooking food",
+            "Twitter tag"
+        ]
+    },
+    {
+        "q": "What is 'Import Address Table' (IAT) Usage?",
+        "o": [
+            "Malware often hides imports to avoid static analysis",
+            "Address book",
+            "Shipping log",
+            "Table cloth"
+        ]
+    },
+    {
+        "q": "What is 'Dynamic Import Resolution'?",
+        "o": [
+            "Using LoadLibrary/GetProcAddress to find APIs at runtime",
+            "Moving house",
+            "Fast car",
+            "Import tax"
+        ]
+    },
+    {
+        "q": "What is 'Stack Spoofing'?",
+        "o": [
+            "Faking call stack to look legitimate to EDR",
+            "Pancake stack",
+            "Card trick",
+            "Chimney smoke"
+        ]
+    },
+    {
+        "q": "What is 'Thread Local Storage' (TLS) Callback Malware?",
+        "o": [
+            "Code executing before Entry Point (Anti-Debug)",
+            "Web encrypt",
+            "Sewing thread",
+            "Phone call"
+        ]
+    },
+    {
+        "q": "What is 'Polymorphism'?",
+        "o": [
+            "Malware changing its code signature each iteration",
+            "Shape shifter",
+            "Plastic mold",
+            "Many wives"
+        ]
+    },
+    {
+        "q": "What is 'Metamorphism'?",
+        "o": [
+            "Rewriting entire code structure while keeping logic",
+            "Butterfly change",
+            "Rock formation",
+            "Power ranger"
+        ]
+    },
+    {
+        "q": "What is 'DGA' seeding?",
+        "o": [
+            "Using predictable seed (e.g. date) to generate domains",
+            "Planting corn",
+            "Garden work",
+            "Torrent file"
+        ]
+    },
+    {
+        "q": "What is 'Sinkhole' operation?",
+        "o": [
+            "Registering DGA domains to identify infected bots",
+            "Road collapse",
+            "Kitchen repair",
+            "Water drain"
+        ]
+    },
+    {
+        "q": "What is 'Fast Flux' Single vs Double?",
+        "o": [
+            "Double flux changes both A records and NS records",
+            "Fast car",
+            "Time travel",
+            "Two lights"
+        ]
+    },
+    {
+        "q": "What is 'Ja3' fingerprinting?",
+        "o": [
+            "Identifying TLS client applications (Malware C2) via handshake",
+            "Jazz music",
+            "Jar file",
+            "German yes"
+        ]
+    },
+    {
+        "q": "What is 'Ja3s'?",
+        "o": [
+            "Server side TLS fingerprinting",
+            "Jazz band",
+            "Java script",
+            "Jet plane"
+        ]
+    },
+    {
+        "q": "What is 'Beacon Object File' (BOF)?",
+        "o": [
+            "Small post-ex compiled C object running in Cobalt Strike beacon",
+            "Boy friend",
+            "Smell bad",
+            "Bureau of files"
+        ]
+    },
+    {
+        "q": "What makes 'BOF' stealthy?",
+        "o": [
+            "Runs in process memory, no new process creation",
+            "Invisible cloak",
+            "Silent shoes",
+            "Ninja suit"
+        ]
+    },
+    {
+        "q": "What is 'Reflective Loader'?",
+        "o": [
+            "Component mapping DLL from memory to execute",
+            "Mirror glass",
+            "Construction vehicle",
+            "Thinking man"
+        ]
+    },
+    {
+        "q": "What is 'Module Stomping'?",
+        "o": [
+            "Overwriting a loaded benign DLL with malicious code",
+            "Dancing feet",
+            "Crushing can",
+            "Space walk"
+        ]
+    },
+    {
+        "q": "What is 'Process Doppelganging'?",
+        "o": [
+            "Replacing process memory via NTFS transactions (TxF)",
+            "Double image",
+            "Evil twin",
+            "Ghost walk"
+        ]
+    },
+    {
+        "q": "What is 'Process Herpaderping'?",
+        "o": [
+            "Obscuring intent by modifying file on disk after mapping",
+            "Funny walk",
+            "Silly name",
+            "Derp face"
+        ]
+    },
+    {
+        "q": "What is 'Ghosting' (Process)?",
+        "o": [
+            "Delete pending file mapped into process",
+            "Scary movie",
+            "Dating leave",
+            "White sheet"
+        ]
+    },
+    {
+        "q": "What is 'Gargoyle' technique?",
+        "o": [
+            "Hiding executable memory as Read-Only when sleeping",
+            "Stone statue",
+            "Mouth wash",
+            "Ugly face"
+        ]
+    },
+    {
+        "q": "What is 'Ekko' sleep?",
+        "o": [
+            "Using ROP chain to sleep allow memory encryption",
+            "Echo sound",
+            "Dolphin name",
+            "Forest noise"
+        ]
+    },
+    {
+        "q": "What is 'Follina' (CVE-2022-30190)?",
+        "o": [
+            "MSDT protocol handler executing code via Word",
+            "Flower name",
+            "Italian pasta",
+            "Falling leaf"
+        ]
+    },
+    {
+        "q": "What is 'Mark-of-the-Web' Bypass (Zip)?",
+        "o": [
+            "7zip/ISO files not propagating MotW zone identifier",
+            "Web design",
+            "Tattoo art",
+            "Spider silk"
+        ]
+    },
+    {
+        "q": "What is 'HTML Smuggling'?",
+        "o": [
+            "Delivering payload via JavaScript Blob within HTML",
+            "Boat cargo",
+            "Border cross",
+            "Hidden tax"
+        ]
+    },
+    {
+        "q": "What is 'ISO' file risk?",
+        "o": [
+            "Mounts as drive, bypassing MotW for contained files",
+            "International Std",
+            "Camera setting",
+            "Isolation"
+        ]
+    },
+    {
+        "q": "What is 'LNK' stomping?",
+        "o": [
+            "Padding LNK file with nulls to hide malicious command",
+            "Link chain",
+            "Walking loud",
+            "Zelda game"
+        ]
+    },
+    {
+        "q": "What is 'AppDomainManager' Injection?",
+        "o": [
+            ".NET persistence/execution via config file hijack",
+            "Domain name",
+            "App store",
+            "Managing boss"
+        ]
+    },
+    {
+        "q": "What is 'ClickOnce' abuse?",
+        "o": [
+            "Initial access vector via trusted installation prompt",
+            "Mouse click",
+            "One time",
+            "Photo shoot"
+        ]
+    },
+    {
+        "q": "What is 'VSTO' Add-in?",
+        "o": [
+            "Visual Studio Tools for Office (Malicious Macros replacement)",
+            "Visto card",
+            "Visiting town",
+            "Toast bread"
+        ]
+    },
+    {
+        "q": "What is 'XLL' Malware?",
+        "o": [
+            "Excel Add-in (Dynamic Link Library) execution",
+            "Shirt size",
+            "Roman number",
+            "Excel sheet"
+        ]
+    },
+    {
+        "q": "What is 'OneNote' (.one) vector?",
+        "o": [
+            "Embedding HTA/WSF scripts behind images in notes",
+            "Single note",
+            "Music pitch",
+            "Notebook"
+        ]
+    },
+    {
+        "q": "What is 'CHM' malware?",
+        "o": [
+            "Compiled HTML Help file executing ActiveScript",
+            "Chemistry",
+            "Chimney",
+            "Chewing gum"
+        ]
+    },
+    {
+        "q": "What is 'MSIX' Malware?",
+        "o": [
+            "Modern Windows package format used to install malware",
+            "Six M's",
+            "Roman Numeral",
+            "Mixing bowl"
+        ]
+    },
+    {
+        "q": "What is 'AppInstaller' Protocol?",
+        "o": [
+            "ms-appinstaller uri scheme triggering install from web",
+            "Installing app",
+            "Phone store",
+            "Application paper"
+        ]
+    },
+    {
+        "q": "What is 'Search Poisoning' (SEO)?",
+        "o": [
+            "Ranking malicious sites high in search results (Gootloader)",
+            "Bad search",
+            "Toxic food",
+            "Looking glass"
+        ]
+    },
+    {
+        "q": "What is 'Gootloader'?",
+        "o": [
+            "JavaScript framework delivering ransomware via SEO poisoned forums",
+            "Good loader",
+            "Boot shoe",
+            "Loading truck"
+        ]
+    },
+    {
+        "q": "What is 'Qakbot' (Qbot)?",
+        "o": [
+            "Banking trojan used as Access-as-a-Service (Black Basta)",
+            "Robot duck",
+            "Quack sound",
+            "Computer bot"
+        ]
+    },
+    {
+        "q": "What is 'IcedID'?",
+        "o": [
+            "Banking trojan acting as dropper for ransomware",
+            "Cold ID",
+            "Ice cube",
+            "Frozen food"
+        ]
+    },
+    {
+        "q": "What is 'BazarLoader'?",
+        "o": [
+            "Backdoor used by Conti/Ryuk for initial access",
+            "Shopping mall",
+            "Strange behavior",
+            "Loading dock"
+        ]
+    },
+    {
+        "q": "What is 'Cobalt Strike Beacon' Staging?",
+        "o": [
+            "Downloading full beacon DLL via small shellcode",
+            "Building stage",
+            "Theater play",
+            "Rocket launch"
+        ]
+    },
+    {
+        "q": "What is 'Malleable C2' Profile?",
+        "o": [
+            "Configuring Cobalt Strike traffic to mimic legit sites (Amazon)",
+            "Bending metal",
+            "Soft clay",
+            "Flexible schedule"
+        ]
+    },
+    {
+        "q": "What is 'Sleep Mask'?",
+        "o": [
+            "Obfuscating beacon in memory while sleeping",
+            "Eye mask",
+            "Bed time",
+            "Halloween costume"
+        ]
+    },
+    {
+        "q": "What is 'Direct System Calls'?",
+        "o": [
+            "Bypassing User-mode hooks by invoking syscall instruction directly",
+            "Phone call",
+            "Direct flight",
+            "System error"
+        ]
+    },
+    {
+        "q": "What is 'Unhooking'?",
+        "o": [
+            "Restoring patched API bytes to original state (Bypass EDR)",
+            "Fishing line",
+            "Coat hanger",
+            "Boxing punch"
+        ]
+    },
+    {
+        "q": "What is 'Peruns Fart'?",
+        "o": [
+            "Obtaining clean unhooked ntdll from disk to overwrite memory",
+            "Smelling bad",
+            "Wind blow",
+            "Gas leak"
+        ]
+    },
+    {
+        "q": "What is 'Reflective Loading' detection?",
+        "o": [
+            "Identifying memory regions with RWX permissions",
+            "Looking mirror",
+            "Thinking hard",
+            "Shiny object"
+        ]
+    },
+    {
+        "q": "What is 'Memory Scanning'?",
+        "o": [
+            "EDR technique to find malware signatures in RAM",
+            "Brain scan",
+            "Remembering name",
+            "Looking photo"
+        ]
+    },
+    {
+        "q": "What is 'Call Stack' Analysis?",
+        "o": [
+            "Reviewing return addresses to catch unbacked memory exec",
+            "Phone calls",
+            "Stack of books",
+            "Playing cards"
+        ]
+    },
+    {
+        "q": "What is 'Parent Process ID' (PPID) Spoofing?",
+        "o": [
+            "Manipulating process creation to hide chain",
+            "Fake dad",
+            "Adoption",
+            "Family tree"
+        ]
+    },
+    {
+        "q": "What is 'BlockDLL's' policy?",
+        "o": [
+            "Preventing non-Microsoft DLLs from loading (ACG)",
+            "Lego block",
+            "Stop light",
+            "Library fine"
+        ]
+    },
+    {
+        "q": "What is 'Arbitrary Code Guard' (ACG)?",
+        "o": [
+            "Preventing allocation of executable memory",
+            "Security guard",
+            "Random code",
+            "Lawyer judge"
+        ]
+    },
+    {
+        "q": "What is 'Attack Surface Reduction' (ASR)?",
+        "o": [
+            "Rules to block common malware vectors (Office-spawn-Process)",
+            "Cleaning table",
+            "Smooth road",
+            "Cutting grass"
+        ]
+    },
+    {
+        "q": "What is 'Credential Guard'?",
+        "o": [
+            "Virtualization-based security isolating LSA secrets",
+            "Body guard",
+            "Password book",
+            "Door lock"
+        ]
+    },
+    {
+        "q": "What is 'Remote Credential Guard'?",
+        "o": [
+            "Preventing crendentials sent over RDP (Use Kerberos)",
+            "Remote control",
+            "Hotel key",
+            "Distance learning"
+        ]
+    },
+    {
+        "q": "What is 'Protected Process Light' (PPL)?",
+        "o": [
+            "Preventing non-signed code from accessing process (LSA)",
+            "Light bulb",
+            "Heavy weight",
+            "Sun screen"
+        ]
+    },
+    {
+        "q": "What is 'PPLDump'?",
+        "o": [
+            "Bypassing PPL to dump LSASS (via driver/services)",
+            "Trash dump",
+            "Truck load",
+            "Recycling bin"
+        ]
+    },
+    {
+        "q": "What is 'mimidrv.sys'?",
+        "o": [
+            "Kernel driver used by Mimikatz to bypass protections",
+            "Driving car",
+            "System fail",
+            "Cat toy"
+        ]
+    },
+    {
+        "q": "What is 'Bring Your Own Vulnerable Driver' (BYOVD)?",
+        "o": [
+            "Loading unsigned/vulnerable driver to gain kernel execution",
+            "Drive car",
+            "Party invite",
+            "Bring beer"
+        ]
+    },
+    {
+        "q": "What is 'VulnDriver'?",
+        "o": [
+            "Legitimate signed driver with exploit (Capcom.sys)",
+            "Car crash",
+            "Bad driver",
+            "Video game"
+        ]
+    },
+    {
+        "q": "What is 'Kernel Callback' disabling?",
+        "o": [
+            "Removing EDR kernel hooks/callbacks via driver",
+            "Phone call",
+            "Returning home",
+            "Back door"
+        ]
+    },
+    {
+        "q": "What is 'ETW Ti' (Threat Intelligence)?",
+        "o": [
+            "Kernel-provided telemetry for EDRs (Process/Mem)",
+            "Alien movie",
+            "Tie knot",
+            "Smart person"
+        ]
+    },
+    {
+        "q": "What is 'PatchGuard' (KPP)?",
+        "o": [
+            "Preventing kernel patching (SSDT hooking)",
+            "Band aid",
+            "Security guard",
+            "Garden patch"
+        ]
+    },
+    {
+        "q": "What is 'Hypervisor Code Integrity' (HVCI)?",
+        "o": [
+            "VBS feature preventing unsigned kernel code",
+            "Space ship",
+            "High visor",
+            "Honest person"
+        ]
+    },
+    {
+        "q": "What is 'Zero Trust' Architecture?",
+        "o": [
+            "Never trust, always verify (Identity centric)",
+            "No faith",
+            "Suspicious mind",
+            "Empty belief"
+        ]
+    },
+    {
+        "q": "What is 'Micro-Segmentation'?",
+        "o": [
+            "Isolating workloads to limit lateral movement",
+            "Small slice",
+            "Orange fruit",
+            "Insect leg"
+        ]
+    },
+    {
+        "q": "What is 'Just-In-Time' (JIT) Access?",
+        "o": [
+            "Granting privileges only for duration needed",
+            "Late arrival",
+            "Clock watch",
+            "Running fast"
+        ]
+    },
+    {
+        "q": "What is 'Just-Enough-Administration' (JEA)?",
+        "o": [
+            "PowerShell capability to restrict admin commands",
+            "Good boss",
+            "Enough food",
+            "Admin desk"
+        ]
+    },
+    {
+        "q": "What is 'Gatekeeper' (macOS)?",
+        "o": [
+            "Security feature enforcing code signing/notarization",
+            "Door guard",
+            "Fence post",
+            "Key holder"
+        ]
+    },
+    {
+        "q": "What is 'Gatekeeper Bypass'?",
+        "o": [
+            "Running unsigned app by removing quarantine attribute",
+            "Jumping fence",
+            "Sneaking in",
+            "Open door"
+        ]
+    },
+    {
+        "q": "What is 'TCC' (Transparency Consent Control)?",
+        "o": [
+            "macOS privacy framework (Camera/Mic/Disk access)",
+            "Terms and Conditions",
+            "Traffic control",
+            "Tea coffee cup"
+        ]
+    },
+    {
+        "q": "What is 'TCC Bypass'?",
+        "o": [
+            "Modifying TCC.db or exploiting apps with entitlements",
+            "Crossing road",
+            "Skipping line",
+            "Ignoring rules"
+        ]
+    },
+    {
+        "q": "What is 'XProtect'?",
+        "o": [
+            "Built-in macOS antivirus signature list",
+            "Ex girlfriend",
+            "Super hero",
+            "Shield wall"
+        ]
+    },
+    {
+        "q": "What is 'Apple Notarization'?",
+        "o": [
+            "Apple scanning process for malicious content before distro",
+            "Signing paper",
+            "Notes app",
+            "Lawyer seal"
+        ]
+    },
+    {
+        "q": "What is 'Dyld Injection'?",
+        "o": [
+            "Injecting dylib into process via env vars (macOS)",
+            "Dying hard",
+            "Injection mold",
+            "Color dye"
+        ]
+    },
+    {
+        "q": "What is 'LaunchAgents' persistence?",
+        "o": [
+            "Plist file in Library/LaunchAgents running at login",
+            "Rocket launch",
+            "Secret agent",
+            "Starting sprint"
+        ]
+    },
+    {
+        "q": "What is 'LaunchDaemons' persistence?",
+        "o": [
+            "Plist file executing as root on boot (System-wide)",
+            "Demon monster",
+            "Software bug",
+            "Speed boat"
+        ]
+    },
+    {
+        "q": "What is 'Linux eBPF Kit'?",
+        "o": [
+            "Backdoor using eBPF to hide packets/procs from tools",
+            "Electric kit",
+            "Car parts",
+            "First aid"
+        ]
+    },
+    {
+        "q": "What is 'Diamorphine'?",
+        "o": [
+            "LKM rootkit for Linux (C module)",
+            "Diamond ring",
+            "Morphing power",
+            "Drug name"
+        ]
+    },
+    {
+        "q": "What is 'SSH Door'?",
+        "o": [
+            "Modified sshd binary or hook capturing passwords",
+            "Front door",
+            "Quiet room",
+            "Secure shell"
+        ]
+    },
+    {
+        "q": "What is 'PAM Backdoor'?",
+        "o": [
+            "Modified PAM module accepting magic password",
+            "Cooking spray",
+            "Door mat",
+            "Face cream"
+        ]
+    },
+    {
+        "q": "What is 'Shared Object Hijacking'?",
+        "o": [
+            "Linux equivalent of DLL Hijacking (.so files)",
+            "Sharing toy",
+            "ufo sighting",
+            "Library book"
+        ]
+    },
+    {
+        "q": "What is 'SUID Binary' Abuse?",
+        "o": [
+            "Exploiting binary with setuid bit to gain root",
+            "Suit and tie",
+            "Sweating hard",
+            "Winning lottery"
+        ]
+    },
+    {
+        "q": "What is 'GTFOBins'?",
+        "o": [
+            "List of binaries usable for privilege escalation",
+            "Get Out",
+            "Car brand",
+            "Trash bin"
+        ]
+    },
+    {
+        "q": "What is 'Docker Escape'?",
+        "o": [
+            "Breaking out of container to host OS (Privileged mode)",
+            "Boat dock",
+            "Running away",
+            "Shipping box"
+        ]
+    },
+    {
+        "q": "What is 'Kubernetes Pod' compromise?",
+        "o": [
+            "Gaining shell in pod to pivot in cluster",
+            "Pea pod",
+            "Music player",
+            "Space ship"
+        ]
+    },
+    {
+        "q": "What is 'Kubelet' API risk?",
+        "o": [
+            "Unauthenticated access allowing scheduling malicious pods",
+            "Small cube",
+            "Letter K",
+            "Baby toy"
+        ]
+    },
+    {
+        "q": "What is 'Cloud Meta-Data' SSRF?",
+        "o": [
+            "Accessing 169.254.169.254 via web vul to steal keys",
+            "Cloudy sky",
+            "Metal music",
+            "Data base"
+        ]
+    },
+    {
+        "q": "What is 'Lambda' persistence?",
+        "o": [
+            "Backdooring serverless function code",
+            "Greek letter",
+            "Physics sign",
+            "Sheep noise"
+        ]
+    },
+    {
+        "q": "What is 'UserAgent' spoofing?",
+        "o": [
+            "Modifying HTTP header to look like browser",
+            "Secret agent",
+            "Phone call",
+            "Travel plan"
+        ]
+    },
+    {
+        "q": "What is 'JA3' spoofing (Cycle)?",
+        "o": [
+            "Mimicking TLS client hello fingerprint to evade detection",
+            "Bicycle ride",
+            "Washing machine",
+            "Jazz band"
+        ]
+    },
+    {
+        "q": "What is 'Domain Borrowing'?",
+        "o": [
+            "Using expired subdomains of valid CDN customers",
+            "Borrowing money",
+            "Web host",
+            "Online shop"
+        ]
+    },
+    {
+        "q": "What is 'Living Off the Pipelines'?",
+        "o": [
+            "Using CI/CD tools (GitHub Actions) for crypto mining/attacks",
+            "Plumbing work",
+            "Oil pipe",
+            "Surfing wave"
+        ]
+    },
+    {
+        "q": "What is 'Repo Jacking'?",
+        "o": [
+            "Registering deleted GitHub username to hijack redirects",
+            "Car tow",
+            "Bank robbery",
+            "Code library"
+        ]
+    },
+    {
+        "q": "What is 'TypoSquatting' packages?",
+        "o": [
+            "Malicious npm/pypi package with similar name",
+            "Squat jump",
+            "Typing error",
+            "Bad spelling"
+        ]
+    },
+    {
+        "q": "What is 'StarJacking'?",
+        "o": [
+            "Faking popularity of repo to trick users",
+            "Space travel",
+            "Movie star",
+            "Car theft"
+        ]
+    },
+    {
+        "q": "What is 'SEO Poisoning'?",
+        "o": [
+            "Optimizing malicious sites to top search results",
+            "Poison food",
+            "Search engine",
+            "Ranking list"
+        ]
+    },
+    {
+        "q": "What is 'Malvertising'?",
+        "o": [
+            "Distributing malware via ad networks",
+            "Bad selling",
+            "TV commercial",
+            "Billboard"
+        ]
+    },
+    {
+        "q": "What is 'ShadowPad'?",
+        "o": [
+            "Modular backdoor used by Chinese APTs (Supply Chain)",
+            "Dark notebook",
+            "Ninja secret",
+            "Writing pad"
+        ]
+    },
+    {
+        "q": "What is 'Winnti' Group?",
+        "o": [
+            "Chinese group targeting gaming/software/pharma certs",
+            "Windows NT",
+            "Winter season",
+            "Winning team"
+        ]
+    },
+    {
+        "q": "What is 'PlugX'?",
+        "o": [
+            "RAT used heavily by Chinese APTs (DLL Sideloading)",
+            "Electric plug",
+            "Video game",
+            "X factor"
+        ]
+    },
+    {
+        "q": "What is 'Derusbi'?",
+        "o": [
+            "Server backdoor (Linux/Windows) used by Winnti/APT41",
+            "Bus driver",
+            "Russian city",
+            "Derby race"
+        ]
+    },
+    {
+        "q": "What is 'APT41' (Double Dragon)?",
+        "o": [
+            "Chinese group conducting both espionage and cybercrime",
+            "Two heads",
+            "Fire breath",
+            "Mythical beast"
+        ]
+    },
+    {
+        "q": "What is 'Operation Aurora'?",
+        "o": [
+            "2009 Chinese attack on Google/Adobe (IE 0-day)",
+            "Northern lights",
+            "Sunrise view",
+            "Space mission"
+        ]
+    },
+    {
+        "q": "What is 'HAFNIUM'?",
+        "o": [
+            "Chinese group targeting Exchange Servers (ProxyLogon)",
+            "Chemical element",
+            "Nuclear power",
+            "Heavy metal"
+        ]
+    },
+    {
+        "q": "What is 'Web Shell' persistence?",
+        "o": [
+            "Malicious script on web server allowing remote exec",
+            "Sea shell",
+            "Spider web",
+            "Egg shell"
+        ]
+    },
+    {
+        "q": "What is 'China Chopper'?",
+        "o": [
+            "Small webshell used by Chinese groups (4KB)",
+            "Kitchen knife",
+            "Bike ride",
+            "Karate chop"
+        ]
+    },
+    {
+        "q": "What is 'Behinder' Webshell?",
+        "o": [
+            "Encrypted webshell framework (AES/XOR)",
+            "Walking back",
+            "Hidden view",
+            "Follow leader"
+        ]
+    },
+    {
+        "q": "What is 'Godzilla' Webshell?",
+        "o": [
+            "Advanced webshell with encryption/bypass features",
+            "Movie monster",
+            "Big lizard",
+            "City crush"
+        ]
+    },
+    {
+        "q": "What is 'Antsword'?",
+        "o": [
+            "Webshell management tool (Modular)",
+            "Insect fight",
+            "Sharp blade",
+            "Small bug"
+        ]
+    },
+    {
+        "q": "What is 'VPNFilter'?",
+        "o": [
+            "IoT botnet targeting routers/NAS (Russian state linked)",
+            "Water filter",
+            "Coffee maker",
+            "Pool cleaner"
+        ]
+    },
+    {
+        "q": "What is 'Cyclops Blink'?",
+        "o": [
+            "Sandworm botnet replacing VPNFilter (WatchGuard)",
+            "Eye winking",
+            "One eyed monster",
+            "Fast light"
+        ]
+    },
+    {
+        "q": "What is 'Industroyer' (CrashOverride)?",
+        "o": [
+            "Malware targeting Ukraine Power Grid (IEC 104)",
+            "Factory worker",
+            "Building site",
+            "Heavy machine"
+        ]
+    },
+    {
+        "q": "What is 'Triton' (Trisis)?",
+        "o": [
+            "Malware targeting Triconex Safety Instrumented Systems (SIS)",
+            "Sea god",
+            "Three prongs",
+            "Under water"
+        ]
+    },
+    {
+        "q": "What is 'Incontroller' (Pipedream)?",
+        "o": [
+            "Modular ICS attack framework (Omron/Schneider)",
+            "Remote control",
+            "Pipe dream",
+            "Video game"
+        ]
+    },
+    {
+        "q": "What is 'BlackEnergy'?",
+        "o": [
+            "DDoS bot evolved to target ICS/SCADA",
+            "Dark matter",
+            "No coffee",
+            "Power outage"
+        ]
+    },
+    {
+        "q": "What is 'Havex' (Dragonfly)?",
+        "o": [
+            "RAT targeting ICS vendor sites (Supply Chain)",
+            "Having fun",
+            "Insect fly",
+            "Garden pest"
+        ]
+    },
+    {
+        "q": "What is 'Air Gap' Jumping?",
+        "o": [
+            "Bridging isolated networks via USB/Sound/EM",
+            "Flying plane",
+            "Space walk",
+            "Breathing deep"
+        ]
+    },
+    {
+        "q": "What is 'USBferry'?",
+        "o": [
+            "Malware designed to steal data from air-gapped systems via USB",
+            "Boat ride",
+            "river crossing",
+            "Carrying cargo"
+        ]
+    },
+    {
+        "q": "What is 'Cottonmouth' (NSA)?",
+        "o": [
+            "USB hardware implant providing RF bridge",
+            "Dry mouth",
+            "Snake bite",
+            "Fabric type"
+        ]
+    },
+    {
+        "q": "What is 'JETPLOW' (NSA)?",
+        "o": [
+            "Firmware persistence for Cisco Firewalls",
+            "Farming tool",
+            "Snow removal",
+            "Airplane engine"
+        ]
+    },
+    {
+        "q": "What is 'EquationDrug'?",
+        "o": [
+            "Complex espionage platform (Predecessor to GrayFish)",
+            "Math problem",
+            "Medicine pill",
+            "Science lab"
+        ]
+    },
+    {
+        "q": "What is 'GrayFish'?",
+        "o": [
+            "Sophisticated implant storing FS in registry",
+            "Old swimming",
+            "Dinner meal",
+            "Color paint"
+        ]
+    },
+    {
+        "q": "What is 'Fanny' Worm?",
+        "o": [
+            "USB worm using Stuxnet LNK exploits to map air-gaps",
+            "Funny joke",
+            "Name tag",
+            "Waist bag"
+        ]
+    },
+    {
+        "q": "What is 'Flame' Malware?",
+        "o": [
+            "Massive espionage toolkit (20MB) with Bluetooth/Audio",
+            "Fire burn",
+            "Candle light",
+            "Cooking grill"
+        ]
+    },
+    {
+        "q": "What is 'Gauss' Malware?",
+        "o": [
+            "Banking trojan by Equation Group with encrypted payload",
+            "Math physics",
+            "Magnetic field",
+            "German name"
+        ]
+    },
+    {
+        "q": "What is 'Duqu' 2.0?",
+        "o": [
+            "Memory-resident malware targeting Kaspersky (signed drivers)",
+            "Duck animal",
+            "Duke title",
+            "Video s"
+        ]
+    },
+    {
+        "q": "What is 'Project Sauron' (Strider)?",
+        "o": [
+            "Removable storage stealer/keylogger (Government targets)",
+            "Evil eye",
+            "Lord Rings",
+            "Dinosaur"
+        ]
+    },
+    {
+        "q": "What is 'Regin' Malware?",
+        "o": [
+            "Multi-stage toolkit targeting GSM networks/Gov",
+            "King rule",
+            "Regina name",
+            "Rain weather"
+        ]
+    },
+    {
+        "q": "What is 'Animal Farm' APT?",
+        "o": [
+            "French intelligence group (Babar/Casper)",
+            "Book title",
+            "Petting zoo",
+            "Barn yar"
+        ]
+    },
+    {
+        "q": "What is 'Careto' (The Mask)?",
+        "o": [
+            "Spanish speaking APT targeting Gov/Energy",
+            "Facial mask",
+            "Carrot veg",
+            "Red car"
+        ]
+    },
+    {
+        "q": "What is 'Pegasus' (NSO Group)?",
+        "o": [
+            "Zero-click mobile surveillance spyware (iOS/Android)",
+            "Flying horse",
+            "Mythical animal",
+            "Space constellation"
+        ]
+    },
+    {
+        "q": "What is 'FORCEDENTRY'?",
+        "o": [
+            "iMessage zero-click exploit (PDF parsing) for Pegasus",
+            "Police raid",
+            "Breaking door",
+            "Lock picking"
+        ]
+    },
+    {
+        "q": "What is 'LoJax'?",
+        "o": [
+            "First UEFI rootkit used in wild (by APT28)",
+            "Low jack",
+            "Car tracker",
+            "Card game"
+        ]
+    },
+    {
+        "q": "What is 'MosaicRegressor'?",
+        "o": [
+            "UEFI implant found in wild (Chinese nexus)",
+            "Art piece",
+            "Tile floor",
+            "Math graph"
+        ]
+    },
+    {
+        "q": "What is 'BlackLotus'?",
+        "o": [
+            "UEFI bootkit bypassing Secure Boot (Baton Drop)",
+            "Flower type",
+            "Card game",
+            "Yoga pose"
+        ]
+    },
+    {
+        "q": "What is 'Baton Drop' (CVE-2022-21894)?",
+        "o": [
+            "Secure Boot bypass exploit used by BlackLotus",
+            "Relay race",
+            "Dropping stick",
+            "Police gear"
+        ]
+    },
+    {
+        "q": "What is 'MoonCheck'?",
+        "o": [
+            "Researched firmware implant (MoonBounce)",
+            "Space mission",
+            "Night sky",
+            "Lunar lander"
+        ]
+    },
+    {
+        "q": "What is 'CosmicStrand'?",
+        "o": [
+            "UEFI rootkit modifying CSMCORE to hook boot",
+            "Outer space",
+            "Hair style",
+            " Beach sand"
+        ]
+    },
+    {
+        "q": "What is 'SPI Flash' access?",
+        "o": [
+            "Reading/Writing BIOS chip directly",
+            "Fast camera",
+            "Secret agent",
+            "Cooking pan"
+        ]
+    },
+    {
+        "q": "What is 'JTAG' interface?",
+        "o": [
+            "Hardware debug port allowing CPU control/Memory read",
+            "Clothing tag",
+            "Playing tag",
+            "Jet plane"
+        ]
+    },
+    {
+        "q": "What is 'UART' interface?",
+        "o": [
+            "Serial communication often exposing root shell",
+            "Art gallery",
+            "Cart racing",
+            "Shopping cart"
+        ]
+    },
+    {
+        "q": "What is 'Bus Pirate'?",
+        "o": [
+            "Hardware tool to interact with JTAG/UART/SPI",
+            "Public transport",
+            "Eye patch",
+            "Sea ship"
+        ]
+    },
+    {
+        "q": "What is 'Logic Analyzer'?",
+        "o": [
+            "Tool to capture/decode digital signals (I2C/SPI)",
+            "Brain test",
+            "Puzzle game",
+            "Math class"
+        ]
+    },
+    {
+        "q": "What is 'Chip-off' Forensics?",
+        "o": [
+            "Physically removing flash chip to read data",
+            "Eating snack",
+            "Broken glass",
+            "Casino betting"
+        ]
+    },
+    {
+        "q": "What is 'Cold Boot' attack on BitLocker?",
+        "o": [
+            "Recovering VMK from RAM remanence",
+            "Winter shoes",
+            "Ice water",
+            "Restarting PC"
+        ]
+    },
+    {
+        "q": "What is 'TPM Sniffing'?",
+        "o": [
+            "Capturing key sent from TPM to CPU on trace",
+            "Smelling flower",
+            "Nose cold",
+            "Gas leak"
+        ]
+    },
+    {
+        "q": "What is 'Glitching' protection?",
+        "o": [
+            "Implementing voltage monitors/random delays",
+            "Video game",
+            "Screen flicker",
+            "Broken TV"
+        ]
+    },
+    {
+        "q": "What is 'Anti-Tamper' mesh?",
+        "o": [
+            "Conductive traces triggering wipe if broken",
+            "Garden fence",
+            "Fishing net",
+            "Screen door"
+        ]
+    },
+    {
+        "q": "What is 'SS7' Vulnerability?",
+        "o": [
+            "Telecom protocol flaw allowing call/SMS interception",
+            "Seven seas",
+            "Super sport",
+            "Secret spy"
+        ]
+    },
+    {
+        "q": "What is 'Diameter' protocol?",
+        "o": [
+            "Successor to SS7/Radius (4G/LTE/5G)",
+            "Circle math",
+            "Measuring tape",
+            "Bigger size"
+        ]
+    },
+    {
+        "q": "What is 'Stingray' (IMSI Catcher)?",
+        "o": [
+            "Fake cell tower identifying/intercepting phones",
+            "Sea animal",
+            "Police car",
+            "Music band"
+        ]
+    },
+    {
+        "q": "What is 'Femtocell' Attack?",
+        "o": [
+            "Malicious small cell intercepting local traffic",
+            "Small plant",
+            "Battery type",
+            "Biology class"
+        ]
+    },
+    {
+        "q": "What is 'Baseband' Processor?",
+        "o": [
+            "Chip managing cellular radio (RTOS)",
+            "Music guitar",
+            "Basement floor",
+            "Army camp"
+        ]
+    },
+    {
+        "q": "What is 'Baseband' exploit?",
+        "o": [
+            "RCE over air via malformed cellular packets",
+            "Radio song",
+            "Broken radio",
+            "Loud noise"
+        ]
+    },
+    {
+        "q": "What is 'Triangulation' (Operation)?",
+        "o": [
+            "Kaspersky discovered iOS 0-click exploit chain",
+            "Math geometry",
+            "Map finding",
+            "Three angles"
+        ]
+    },
+    {
+        "q": "What is 'TrueType Font' vuln (iOS)?",
+        "o": [
+            "Kernel RCE via font parsing (often initial entry)",
+            "Writing letter",
+            "Printing press",
+            "Reading book"
+        ]
+    },
+    {
+        "q": "What is 'IOMFB' exploit?",
+        "o": [
+            "iOS Framebuffer vulnerability (Kernel R/W)",
+            "Facebook post",
+            "Video buffer",
+            "Picture frame"
+        ]
+    },
+    {
+        "q": "What is 'BlastDoor' (iOS)?",
+        "o": [
+            "Sandbox for parsing iMessage data (security)",
+            "Explosion proof",
+            "Rocket launch",
+            "Bank vault"
+        ]
+    },
+    {
+        "q": "What is 'Lockdown Mode' (Apple)?",
+        "o": [
+            "Extreme protection reducing attack surface (Block JIT/Attachments)",
+            "Prison cell",
+            "School drill",
+            "Staying home"
+        ]
+    },
+    {
+        "q": "What is 'Pointer Authentication' (PAC) bypass?",
+        "o": [
+            "Signing arbitrary pointers to defeat exploit mitigation",
+            "Signing autograph",
+            "Pointing finger",
+            "Identity check"
+        ]
+    },
+    {
+        "q": "What is 'PPL' Bypass (Windows)?",
+        "o": [
+            "Disabling Protected Process Light to access LSA",
+            "People person",
+            "Privacy law",
+            "Light switch"
+        ]
+    },
+    {
+        "q": "What is 'KASLR' Leak?",
+        "o": [
+            "Finding kernel base address to offset ROP chain",
+            "Castle wall",
+            "Random dice",
+            "Leaking water"
+        ]
+    },
+    {
+        "q": "What is 'SMEP' (Supervisor Mode Execution Prevention)?",
+        "o": [
+            "CPU feature stopping kernel from executing user pages",
+            "Smelling bad",
+            "Step up",
+            "Stop sign"
+        ]
+    },
+    {
+        "q": "What is 'SMAP' (Supervisor Mode Access Prevention)?",
+        "o": [
+            "CPU feature stopping kernel from reading/writing user pages",
+            "Map app",
+            "Smart phone",
+            "Small tap"
+        ]
+    },
+    {
+        "q": "What is 'Return-Oriented Programming' (ROP)?",
+        "o": [
+            "Chaining existing code chunks (gadgets) to bypass DEP",
+            "Returning home",
+            "Computer code",
+            "Robotic arm"
+        ]
+    },
+    {
+        "q": "What is 'JOP' (Jump Oriented Programming)?",
+        "o": [
+            "Using Jump instructions instead of Returns for control flow",
+            "High jump",
+            "Skipping rope",
+            "Hopping leg"
+        ]
+    },
+    {
+        "q": "What is 'Data-Oriented Programming' (DOP)?",
+        "o": [
+            "Manipulating data variables to alter flow (Non-Control Data)",
+            "Data entry",
+            "Spread sheet",
+            "Statistician"
+        ]
+    },
+    {
+        "q": "What is 'AI Fuzzing'?",
+        "o": [
+            "Using Machine Learning to find zero-day vulnerabilities",
+            "Fuzzy bear",
+            "Static noise",
+            "Smart search"
+        ]
+    },
+    {
+        "q": "What is 'Deepfake' Phishing?",
+        "o": [
+            "Using AI generated audio/video to impersonate CEO",
+            "Deep ocean",
+            "Fake news",
+            "Actor movie"
+        ]
+    },
+    {
+        "q": "What is 'Data Poisoning' (AI)?",
+        "o": [
+            "Injecting malicious data into training set to corrupt mode",
+            "Bad food",
+            "Toxic waste",
+            "Snake bite"
+        ]
+    },
+    {
+        "q": "What is 'Model Inversion'?",
+        "o": [
+            "Extracting training data (PII) from model queries",
+            "Upside down",
+            "Mirror image",
+            "Reversing car"
+        ]
+    },
+    {
+        "q": "What is 'Adversarial Example'?",
+        "o": [
+            "Input designed to trick ML model (e.g. stop sign as speed limit)",
+            "Bad example",
+            "Enemy soldier",
+            "Opposite day"
+        ]
+    },
+    {
+        "q": "What is 'Satellite C2'?",
+        "o": [
+            "Using satellite links to hide C2 location (Turla)",
+            "Space station",
+            "Moon lander",
+            "Star gazing"
+        ]
+    },
+    {
+        "q": "What is 'Air-Gap' Ultrasonic Channel?",
+        "o": [
+            "Exfiltrating data via high frequency sound (Microphone)",
+            "Dog whistle",
+            "Loud music",
+            "Bat sonar"
+        ]
+    },
+    {
+        "q": "What is 'Optical' Air-Gap Channel?",
+        "o": [
+            "Exfiltrating data via HDD LED blinking or Screen brightness",
+            "Eye glasses",
+            "Flash light",
+            "Camera lens"
+        ]
+    },
+    {
+        "q": "What is 'Thermal' Air-Gap Channel?",
+        "o": [
+            "Exfiltrating data via heat fluctuations (BitWhisper)",
+            "Hot stove",
+            "Summer day",
+            "Warm coat"
+        ]
+    },
+    {
+        "q": "What is 'Electromagnetic' Air-Gap Channel?",
+        "o": [
+            "Exfiltrating data via radio waves from GPU/CPU (GSMem)",
+            "Magnet toy",
+            "Radio station",
+            "Electric shock"
+        ]
+    },
+    {
+        "q": "What is 'Power Line' Side Channel?",
+        "o": [
+            "Injecting data into power grid wiring",
+            "Electric cord",
+            "High voltage",
+            "Battery charger"
+        ]
+    },
+    {
+        "q": "What is 'TEMPEST'?",
+        "o": [
+            "NSA specification for shielding against EM spying",
+            "Stormy weather",
+            "Shakespeare play",
+            "Teapot dome"
+        ]
+    },
+    {
+        "q": "What is 'Van Eck Phreaking'?",
+        "o": [
+            "Reading LCD/CRT screen content from EM emissions",
+            "Phone hacking",
+            "Dutch painter",
+            "Radio amateur"
+        ]
+    },
+    {
+        "q": "What is 'Supply Chain' Hardware Implant?",
+        "o": [
+            "Tiny chip added to motherboard during shipping",
+            "Medical bone",
+            "Planting seed",
+            "Computer repair"
+        ]
+    },
+    {
+        "q": "What is 'Firmware' Implant?",
+        "o": [
+            "Malware residing in HDD/SSD controller or GPU",
+            "Soft ware",
+            "Hard hat",
+            "Firm shake"
+        ]
+    },
+    {
+        "q": "What is 'Persistent State'?",
+        "o": [
+            "Nation state actor committed to long term objectives",
+            "Solid rock",
+            "Always there",
+            "Government building"
+        ]
+    },
+    {
+        "q": "What is 'Cyber Espionage'?",
+        "o": [
+            "Theft of intellectual property/secrets via hacking",
+            "Spy movie",
+            "Stealing car",
+            "Looking glass"
+        ]
+    },
+    {
+        "q": "What is 'Cyber Sabotage'?",
+        "o": [
+            "Disrupting or destroying systems (Stuxnet/Shamoon)",
+            "Breaking toy",
+            "Stopping work",
+            "Throwing wrench"
+        ]
+    },
+    {
+        "q": "What is 'Hybrid Warfare'?",
+        "o": [
+            "Combining cyber attacks with physical/kinetic military action",
+            "Electric car",
+            "Mixed breed",
+            "Two faced"
+        ]
+    },
+    {
+        "q": "What is 'Information Operations' (IO)?",
+        "o": [
+            "Manipulating public opinion via leaks/propaganda",
+            "News paper",
+            "Library book",
+            "School lesson"
+        ]
+    },
+    {
+        "q": "What is 'Hack and Leak'?",
+        "o": [
+            "Stealing emails and publishing them to influence politics",
+            "Water leak",
+            "Broken pipe",
+            "Gossiping"
+        ]
+    },
+    {
+        "q": "What is 'Doxxing'?",
+        "o": [
+            "Publishing private PII of individuals maliciously",
+            "Doc file",
+            "Box opening",
+            "Dog barking"
+        ]
+    },
+    {
+        "q": "What is 'Swatting'?",
+        "o": [
+            "Calling armed police to victim's house falsely",
+            "Fly swatter",
+            "Hit hard",
+            "Police raid"
+        ]
+    },
+    {
+        "q": "What is 'Ransomware' Double Extortion?",
+        "o": [
+            "Encrypting files AND threatening to release stolen data",
+            "Paying twice",
+            "Two thieves",
+            "Copying keys"
+        ]
+    },
+    {
+        "q": "What is 'Triple Extortion'?",
+        "o": [
+            "Encryption + Leak + DDoS/Harassing customers",
+            "Three times",
+            "Hat trick",
+            "Triangle shape"
+        ]
+    },
+    {
+        "q": "What is 'Post-Quantum Cryptography' (PQC)?",
+        "o": [
+            "Algorithms resistant to Quantum Computer attacks",
+            "After lunch",
+            "Sending mail",
+            "Time travel"
+        ]
+    },
+    {
+        "q": "What is 'Shor's Algorithm' threat?",
+        "o": [
+            "Efficiently factoring large numbers (Breaks RSA/ECC)",
+            "Short cut",
+            "Shore line",
+            "Math class"
+        ]
+    },
+    {
+        "q": "What is 'Grover's Algorithm' threat?",
+        "o": [
+            "Speeding up search (Halves Encryption Key strength)",
+            "Sesame Street",
+            "Gardener",
+            "Searching bag"
+        ]
+    },
+    {
+        "q": "What is 'Crypto Agility'?",
+        "o": [
+            "Capacity to update algorithms rapidly without breaking apps",
+            "Running fast",
+            "Gymnast",
+            "Yoga pose"
+        ]
+    },
+    {
+        "q": "What is 'Zero-Knowledge Proof'?",
+        "o": [
+            "Proving knowledge of secret without revealing it",
+            "Nothing known",
+            "Empty head",
+            "Secret box"
+        ]
+    },
+    {
+        "q": "What is 'Homomorphic Encryption'?",
+        "o": [
+            "Computing on encrypted data without decrypting",
+            "Same shape",
+            "Secret math",
+            "Hidden calc"
+        ]
+    },
+    {
+        "q": "What is 'Multiparty Computation' (MPC)?",
+        "o": [
+            "Jointly computing function while keeping inputs private",
+            "Party time",
+            "Group project",
+            "Voting booth"
+        ]
+    },
+    {
+        "q": "What is 'Differential Privacy'?",
+        "o": [
+            "Adding noise to dataset to protect individual privacy",
+            "Different day",
+            "Private room",
+            "Secret club"
+        ]
+    },
+    {
+        "q": "What is 'Federated Learning'?",
+        "o": [
+            "Training ML model across devices without sharing data",
+            "Government",
+            "School union",
+            "Learning together"
+        ]
+    },
+    {
+        "q": "What is 'Sovereign Cloud'?",
+        "o": [
+            "Cloud infrastructure within national jurisdiction/control",
+            "King ruler",
+            "Rain cloud",
+            "National park"
+        ]
+    }
+]

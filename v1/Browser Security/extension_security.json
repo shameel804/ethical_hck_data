@@ -1,0 +1,4547 @@
+[
+    {
+        "q": "What is a browser extension?",
+        "o": [
+            "Small software program that adds features to browser",
+            "Core component of browser rendering engine",
+            "Operating system security module",
+            "Network protocol handler"
+        ]
+    },
+    {
+        "q": "What file defines extension metadata and permissions?",
+        "o": [
+            "manifest.json",
+            "config.xml",
+            "extension.js",
+            "settings.ini"
+        ]
+    },
+    {
+        "q": "What is the current version of the Chrome extension manifest?",
+        "o": [
+            "Manifest V3",
+            "Manifest V1",
+            "Manifest V5",
+            "Manifest V0"
+        ]
+    },
+    {
+        "q": "What does the 'permissions' field in manifest.json specify?",
+        "o": [
+            "Browser APIs the extension can access",
+            "User login credentials",
+            "Server endpoints for data sync",
+            "Operating system file paths"
+        ]
+    },
+    {
+        "q": "What is a content script in browser extensions?",
+        "o": [
+            "JavaScript that runs in context of web pages",
+            "Background service for extension logic",
+            "User interface popup component",
+            "Extension update handler"
+        ]
+    },
+    {
+        "q": "What is the background script in browser extensions?",
+        "o": [
+            "Persistent script handling extension logic",
+            "Script that modifies page appearance",
+            "Installation wizard script",
+            "Browser crash recovery handler"
+        ]
+    },
+    {
+        "q": "What API allows extensions to send HTTP requests?",
+        "o": [
+            "chrome.webRequest or fetch API",
+            "chrome.network.send",
+            "browser.http.request",
+            "extension.net.fetch"
+        ]
+    },
+    {
+        "q": "What is the popup in a browser extension?",
+        "o": [
+            "HTML page shown when clicking extension icon",
+            "Error notification dialog",
+            "System tray menu component",
+            "Browser history panel"
+        ]
+    },
+    {
+        "q": "What permission allows an extension to access all websites?",
+        "o": [
+            "<all_urls> permission",
+            "universalAccess permission",
+            "globalSites permission",
+            "webAll permission"
+        ]
+    },
+    {
+        "q": "What is the activeTab permission used for?",
+        "o": [
+            "Temporary access to current tab when user invokes extension",
+            "Permanent access to all active tabs",
+            "Permission to close browser tabs",
+            "Access to tab history data"
+        ]
+    },
+    {
+        "q": "What is a browser action in extensions?",
+        "o": [
+            "Extension icon visible in browser toolbar",
+            "Keyboard shortcut handler",
+            "Background process manager",
+            "Network request interceptor"
+        ]
+    },
+    {
+        "q": "What is a page action in extensions?",
+        "o": [
+            "Icon that appears only on specific pages",
+            "Form submission handler",
+            "Page loading indicator",
+            "Navigation button controller"
+        ]
+    },
+    {
+        "q": "What is the storage API used for in extensions?",
+        "o": [
+            "Persisting extension data across sessions",
+            "Managing browser cache files",
+            "Accessing system disk storage",
+            "Controlling cloud backup"
+        ]
+    },
+    {
+        "q": "What is chrome.storage.sync used for?",
+        "o": [
+            "Syncing extension data across user devices",
+            "Synchronizing with remote databases",
+            "Syncing browser bookmarks",
+            "Coordinating multiple extensions"
+        ]
+    },
+    {
+        "q": "What is chrome.storage.local used for?",
+        "o": [
+            "Storing data locally on the device",
+            "Accessing browser localStorage",
+            "Storing system credentials",
+            "Managing temporary files"
+        ]
+    },
+    {
+        "q": "What is message passing in browser extensions?",
+        "o": [
+            "Communication between extension components",
+            "Sending emails from extension",
+            "Broadcasting to other extensions",
+            "System notification dispatch"
+        ]
+    },
+    {
+        "q": "What API sends messages between content and background scripts?",
+        "o": [
+            "chrome.runtime.sendMessage",
+            "chrome.tabs.postMessage",
+            "browser.message.send",
+            "extension.communicate"
+        ]
+    },
+    {
+        "q": "What is the tabs permission used for?",
+        "o": [
+            "Accessing information about browser tabs",
+            "Creating new browser windows",
+            "Managing tab indentation",
+            "Controlling keyboard shortcuts"
+        ]
+    },
+    {
+        "q": "What does the webNavigation permission grant?",
+        "o": [
+            "Access to navigation events during requests",
+            "Control browser history navigation",
+            "Modify URL bar content",
+            "Manage bookmark navigation"
+        ]
+    },
+    {
+        "q": "What is the cookies permission used for?",
+        "o": [
+            "Reading and modifying browser cookies",
+            "Managing extension preferences",
+            "Accessing cached images",
+            "Storing user passwords"
+        ]
+    },
+    {
+        "q": "What is a service worker in Manifest V3?",
+        "o": [
+            "Replaces persistent background pages",
+            "Handles UI rendering for extension",
+            "Manages extension installation",
+            "Controls browser themes"
+        ]
+    },
+    {
+        "q": "What is the declarativeNetRequest API?",
+        "o": [
+            "Rule-based request modification in MV3",
+            "Dynamic network configuration",
+            "DNS query handler",
+            "VPN connection manager"
+        ]
+    },
+    {
+        "q": "What is extension sandboxing?",
+        "o": [
+            "Isolating extension code from web content",
+            "Running extensions in virtual machines",
+            "Encrypting extension files",
+            "Blocking extension network access"
+        ]
+    },
+    {
+        "q": "What is the contextMenus API used for?",
+        "o": [
+            "Adding items to browser right-click menu",
+            "Creating dropdown navigation menus",
+            "Managing extension settings menu",
+            "Controlling keyboard shortcuts"
+        ]
+    },
+    {
+        "q": "What is the notifications API used for?",
+        "o": [
+            "Displaying system notifications to user",
+            "Sending push notifications to server",
+            "Managing email notifications",
+            "Logging extension events"
+        ]
+    },
+    {
+        "q": "What is the alarms API used for?",
+        "o": [
+            "Scheduling code to run at specific times",
+            "Managing system clock settings",
+            "Setting browser reminders",
+            "Controlling page refresh intervals"
+        ]
+    },
+    {
+        "q": "What does the history permission grant access to?",
+        "o": [
+            "Browser browsing history data",
+            "Extension version history",
+            "Page edit history",
+            "Download history only"
+        ]
+    },
+    {
+        "q": "What is the bookmarks permission used for?",
+        "o": [
+            "Reading and modifying browser bookmarks",
+            "Creating browser shortcuts",
+            "Managing reading list",
+            "Saving page screenshots"
+        ]
+    },
+    {
+        "q": "What is Content Security Policy for extensions?",
+        "o": [
+            "Security rules restricting extension resources",
+            "Policy for sharing content between sites",
+            "Digital rights management system",
+            "Parental control settings"
+        ]
+    },
+    {
+        "q": "What is the downloads API used for?",
+        "o": [
+            "Managing file downloads programmatically",
+            "Limiting download speeds",
+            "Blocking malicious downloads",
+            "Uploading files to servers"
+        ]
+    },
+    {
+        "q": "What is cross-origin isolation in extensions?",
+        "o": [
+            "Preventing access between different origins",
+            "Combining multiple extensions",
+            "Sharing data across browsers",
+            "Merging extension contexts"
+        ]
+    },
+    {
+        "q": "What is the identity API used for?",
+        "o": [
+            "OAuth authentication for extensions",
+            "Managing user profiles",
+            "Fingerprinting browser identity",
+            "Verifying extension authenticity"
+        ]
+    },
+    {
+        "q": "What is the webRequest API used for?",
+        "o": [
+            "Intercepting and modifying network requests",
+            "Creating web server endpoints",
+            "Testing website speed",
+            "Managing browser cache"
+        ]
+    },
+    {
+        "q": "What is a host permission in extensions?",
+        "o": [
+            "Permission to access specific website domains",
+            "Administrative server access",
+            "Local network hosting rights",
+            "Virtual host configuration"
+        ]
+    },
+    {
+        "q": "What is the management API used for?",
+        "o": [
+            "Managing other installed extensions",
+            "System administration tasks",
+            "Browser process control",
+            "Memory management"
+        ]
+    },
+    {
+        "q": "What is the declarativeContent API?",
+        "o": [
+            "Show page action based on page content rules",
+            "Dynamic content generation",
+            "Automatic form filling",
+            "Content blocking rules"
+        ]
+    },
+    {
+        "q": "What is extension externally_connectable?",
+        "o": [
+            "Allows websites to send messages to extension",
+            "Connects extension to external databases",
+            "Enables remote extension updates",
+            "Links extension to cloud services"
+        ]
+    },
+    {
+        "q": "What is the scripting API in Manifest V3?",
+        "o": [
+            "Programmatically inject scripts into pages",
+            "Write extension source code",
+            "Generate dynamic JavaScript",
+            "Compile TypeScript code"
+        ]
+    },
+    {
+        "q": "What is extension update URL used for?",
+        "o": [
+            "Specifying where to check for updates",
+            "Redirecting to extension homepage",
+            "Setting default new tab page",
+            "Configuring proxy servers"
+        ]
+    },
+    {
+        "q": "What is the debugger API in extensions?",
+        "o": [
+            "Attaches to Chrome DevTools debugging protocol",
+            "Displays console error messages",
+            "Manages extension crash reports",
+            "Tests extension performance"
+        ]
+    },
+    {
+        "q": "What is the pageCapture API used for?",
+        "o": [
+            "Saving web pages as MHTML files",
+            "Taking page screenshots",
+            "Recording page videos",
+            "Capturing page audio"
+        ]
+    },
+    {
+        "q": "What is the privacy API used for?",
+        "o": [
+            "Controlling browser privacy settings",
+            "Encrypting user data",
+            "Managing VPN connections",
+            "Blocking tracking scripts"
+        ]
+    },
+    {
+        "q": "What is the proxy API used for?",
+        "o": [
+            "Configuring browser proxy settings",
+            "Creating proxy servers",
+            "VPN management",
+            "Network tunneling"
+        ]
+    },
+    {
+        "q": "What is the sessions API used for?",
+        "o": [
+            "Accessing recently closed tabs and windows",
+            "Managing user login sessions",
+            "Controlling browser sessions",
+            "Tracking extension usage"
+        ]
+    },
+    {
+        "q": "What is the topSites API used for?",
+        "o": [
+            "Accessing most visited sites data",
+            "Analyzing website rankings",
+            "Managing favorite websites",
+            "Blocking malicious sites"
+        ]
+    },
+    {
+        "q": "What is the tts API used for?",
+        "o": [
+            "Text-to-speech functionality",
+            "Translation services",
+            "Typing suggestions",
+            "Text formatting"
+        ]
+    },
+    {
+        "q": "What is a malicious browser extension?",
+        "o": [
+            "Extension designed to harm users or steal data",
+            "Extension with too many permissions",
+            "Extension updated frequently",
+            "Extension not from official store"
+        ]
+    },
+    {
+        "q": "What is extension spoofing?",
+        "o": [
+            "Fake extension mimicking legitimate one",
+            "Hiding extension from user view",
+            "Encrypting extension code",
+            "Bypassing store review"
+        ]
+    },
+    {
+        "q": "What is the clipboardRead permission?",
+        "o": [
+            "Allows reading clipboard contents",
+            "Tracks clipboard history",
+            "Manages clipboard formatting",
+            "Clears clipboard data"
+        ]
+    },
+    {
+        "q": "What is the clipboardWrite permission?",
+        "o": [
+            "Allows writing to clipboard",
+            "Logs all copy actions",
+            "Encrypts clipboard data",
+            "Syncs clipboard across devices"
+        ]
+    },
+    {
+        "q": "What is the geolocation permission in extensions?",
+        "o": [
+            "Access to user location data",
+            "Geographic content blocking",
+            "Map display functionality",
+            "IP address lookup"
+        ]
+    },
+    {
+        "q": "What is the optional_permissions field?",
+        "o": [
+            "Permissions requested at runtime instead of install",
+            "Permissions that can be revoked",
+            "Non-essential extra features",
+            "Deprecated permission list"
+        ]
+    },
+    {
+        "q": "What is a web accessible resource?",
+        "o": [
+            "Extension file accessible from web pages",
+            "Public API endpoint",
+            "Shared cloud storage",
+            "Open source code file"
+        ]
+    },
+    {
+        "q": "What is an extension options page?",
+        "o": [
+            "Settings configuration page for extension",
+            "Extension installation wizard",
+            "Browser preferences panel",
+            "System settings page"
+        ]
+    },
+    {
+        "q": "What is the nativeMessaging permission?",
+        "o": [
+            "Communication with native applications",
+            "Sending SMS messages",
+            "Native mobile app access",
+            "System notification control"
+        ]
+    },
+    {
+        "q": "What is extension ID?",
+        "o": [
+            "Unique identifier for each extension",
+            "User account number",
+            "Installation serial number",
+            "Browser session token"
+        ]
+    },
+    {
+        "q": "What is the unlimitedStorage permission?",
+        "o": [
+            "No quota limit for extension storage",
+            "Access to system disk",
+            "Cloud storage integration",
+            "Database server access"
+        ]
+    },
+    {
+        "q": "What is incognito mode access for extensions?",
+        "o": [
+            "Extension behavior in private browsing",
+            "Hidden extension execution",
+            "Anonymous data collection",
+            "Encrypted extension storage"
+        ]
+    },
+    {
+        "q": "What is the tabCapture API?",
+        "o": [
+            "Capture tab audio and video streams",
+            "Track tab browsing history",
+            "Monitor tab performance",
+            "Control tab permissions"
+        ]
+    },
+    {
+        "q": "What is the desktopCapture API?",
+        "o": [
+            "Capture screen and window content",
+            "Control desktop applications",
+            "Manage system wallpaper",
+            "Access file explorer"
+        ]
+    },
+    {
+        "q": "What is the fontSettings API?",
+        "o": [
+            "Control browser font settings",
+            "Install custom fonts",
+            "Manage system fonts",
+            "Set extension UI fonts"
+        ]
+    },
+    {
+        "q": "What is the omnibox API?",
+        "o": [
+            "Customize browser address bar functionality",
+            "Create search engine",
+            "Manage browser favorites",
+            "Control navigation buttons"
+        ]
+    },
+    {
+        "q": "What are extension content script matches?",
+        "o": [
+            "URL patterns where content scripts run",
+            "Text patterns to search for",
+            "Regex for data extraction",
+            "CSS selector matches"
+        ]
+    },
+    {
+        "q": "What is run_at in content script configuration?",
+        "o": [
+            "When content script should be injected",
+            "Time limit for script execution",
+            "Scheduled execution time",
+            "Script priority order"
+        ]
+    },
+    {
+        "q": "What does run_at document_start mean?",
+        "o": [
+            "Inject script before DOM is constructed",
+            "Run when page starts loading",
+            "Execute before browser starts",
+            "Initialize before user interaction"
+        ]
+    },
+    {
+        "q": "What does run_at document_idle mean?",
+        "o": [
+            "Inject after DOM complete or window load",
+            "Run during browser idle state",
+            "Execute when tab is inactive",
+            "Delay until system is idle"
+        ]
+    },
+    {
+        "q": "What does run_at document_end mean?",
+        "o": [
+            "Inject immediately after DOM is complete",
+            "Run when page is closing",
+            "Execute at session end",
+            "Initialize before page unload"
+        ]
+    },
+    {
+        "q": "What is the all_frames option in content scripts?",
+        "o": [
+            "Inject script into all frames on page",
+            "Apply to all browser windows",
+            "Run in every open tab",
+            "Execute on all devices"
+        ]
+    },
+    {
+        "q": "What is the match_about_blank option?",
+        "o": [
+            "Inject into about:blank frames",
+            "Match empty search queries",
+            "Handle blank page errors",
+            "Ignore empty results"
+        ]
+    },
+    {
+        "q": "What is extension icon badge?",
+        "o": [
+            "Small text overlay on extension icon",
+            "Extension verification badge",
+            "Store rating indicator",
+            "Update notification icon"
+        ]
+    },
+    {
+        "q": "What is chrome.browserAction.setBadgeText?",
+        "o": [
+            "Sets text displayed on extension badge",
+            "Changes extension name",
+            "Updates tooltip text",
+            "Modifies popup title"
+        ]
+    },
+    {
+        "q": "What is the action API in Manifest V3?",
+        "o": [
+            "Unified API replacing browserAction and pageAction",
+            "User interaction tracking",
+            "Automated testing interface",
+            "Event logging system"
+        ]
+    },
+    {
+        "q": "What is extension key in manifest?",
+        "o": [
+            "Fixed extension ID for development",
+            "Encryption key for data",
+            "License key for premium features",
+            "API access key"
+        ]
+    },
+    {
+        "q": "What is side panel in extensions?",
+        "o": [
+            "Panel that opens on browser side",
+            "Hidden settings menu",
+            "Debug console",
+            "Extension marketplace"
+        ]
+    },
+    {
+        "q": "What is chrome.commands API?",
+        "o": [
+            "Register keyboard shortcuts for extension",
+            "Execute system commands",
+            "Manage browser commands",
+            "Script execution interface"
+        ]
+    },
+    {
+        "q": "What is extension internationalization?",
+        "o": [
+            "Supporting multiple languages in extension",
+            "Accessing international websites",
+            "Converting currencies",
+            "Translating web pages"
+        ]
+    },
+    {
+        "q": "What is _locales folder used for?",
+        "o": [
+            "Storing translation files for extension",
+            "Saving location data",
+            "Regional settings configuration",
+            "Timezone information"
+        ]
+    },
+    {
+        "q": "What is default_locale in manifest?",
+        "o": [
+            "Fallback language for extension",
+            "Preferred user language",
+            "Browser default language",
+            "System locale setting"
+        ]
+    },
+    {
+        "q": "What is chrome.i18n.getMessage?",
+        "o": [
+            "Retrieves localized string for extension",
+            "Gets user language preference",
+            "Translates page content",
+            "Sends multilingual messages"
+        ]
+    },
+    {
+        "q": "What is extension cross-extension messaging?",
+        "o": [
+            "Communication between different extensions",
+            "Syncing extension settings",
+            "Sharing user data between extensions",
+            "Coordinating extension updates"
+        ]
+    },
+    {
+        "q": "What is chrome.runtime.connect?",
+        "o": [
+            "Creates persistent connection for messaging",
+            "Connects to remote server",
+            "Establishes database connection",
+            "Links to native application"
+        ]
+    },
+    {
+        "q": "What is port in extension messaging?",
+        "o": [
+            "Channel for long-lived message communication",
+            "Network port configuration",
+            "USB port access",
+            "Audio output port"
+        ]
+    },
+    {
+        "q": "What is extension unpacked mode?",
+        "o": [
+            "Loading extension from local folder for development",
+            "Decompressing extension package",
+            "Extracting extension source code",
+            "Uninstalling extension files"
+        ]
+    },
+    {
+        "q": "What is CRX file format?",
+        "o": [
+            "Packaged Chrome extension format",
+            "Compressed resource file",
+            "Certificate revocation format",
+            "Configuration backup format"
+        ]
+    },
+    {
+        "q": "What is extension private key used for?",
+        "o": [
+            "Signing extension for consistent ID",
+            "Encrypting user data",
+            "Authenticating API requests",
+            "Protecting source code"
+        ]
+    },
+    {
+        "q": "What is Chrome Web Store?",
+        "o": [
+            "Official marketplace for Chrome extensions",
+            "Cloud storage for browser data",
+            "Online code editor",
+            "Browser theme gallery"
+        ]
+    },
+    {
+        "q": "What is extension's content script isolated world?",
+        "o": [
+            "Separate JavaScript context from page scripts",
+            "Sandboxed cloud environment",
+            "Virtual machine for extension code",
+            "Encrypted execution space"
+        ]
+    },
+    {
+        "q": "What is the inject CSS capability?",
+        "o": [
+            "Adding stylesheets to web pages",
+            "Modifying extension appearance",
+            "Changing browser theme",
+            "Formatting popup content"
+        ]
+    },
+    {
+        "q": "What is the offscreen API in Manifest V3?",
+        "o": [
+            "Creates hidden document for DOM operations",
+            "Manages screen orientation",
+            "Controls display settings",
+            "Handles screenshot capture"
+        ]
+    },
+    {
+        "q": "What is extension content script CSS injection?",
+        "o": [
+            "Adding styles to web pages via extension",
+            "Modifying extension popup styles",
+            "Changing browser UI appearance",
+            "Styling options page"
+        ]
+    },
+    {
+        "q": "What are exclude_matches in content scripts?",
+        "o": [
+            "URL patterns where script should not run",
+            "Users to exclude from tracking",
+            "Files to exclude from packaging",
+            "Features to disable"
+        ]
+    },
+    {
+        "q": "What is the webRequestBlocking permission?",
+        "o": [
+            "Ability to block or modify requests synchronously",
+            "Prevent all network access",
+            "Block specific URLs entirely",
+            "Disable extension network features"
+        ]
+    },
+    {
+        "q": "What is extension manifest version?",
+        "o": [
+            "Specification version for manifest format",
+            "Extension software version",
+            "Browser compatibility version",
+            "API version number"
+        ]
+    },
+    {
+        "q": "What happens when extension requests unused permissions?",
+        "o": [
+            "Users may be wary of granting excessive access",
+            "Extension automatically gets approved",
+            "Permissions are silently granted",
+            "Browser blocks installation entirely"
+        ]
+    },
+    {
+        "q": "What is the minimum_chrome_version field?",
+        "o": [
+            "Lowest browser version extension supports",
+            "Required for security features",
+            "Version when extension was created",
+            "Oldest supported API version"
+        ]
+    },
+    {
+        "q": "Why should extensions avoid requesting all_urls permission?",
+        "o": [
+            "Grants excessive access and increases attack surface",
+            "Causes extension to run slower",
+            "Prevents extension from storing data",
+            "Makes extension incompatible with other extensions"
+        ]
+    },
+    {
+        "q": "What security risk does the tabs permission introduce?",
+        "o": [
+            "Can reveal sensitive URL information across all tabs",
+            "Allows extension to close user tabs",
+            "Enables extension to delete tab history",
+            "Grants access to tab source code"
+        ]
+    },
+    {
+        "q": "How can content scripts be vulnerable to XSS?",
+        "o": [
+            "Injecting page data without proper sanitization",
+            "Running too slowly on pages",
+            "Using too much browser memory",
+            "Not properly caching responses"
+        ]
+    },
+    {
+        "q": "What is DOM-based XSS in extension context?",
+        "o": [
+            "Script injection through manipulated DOM elements",
+            "Document styling attack",
+            "Memory overflow in DOM parsing",
+            "Cross-domain object sharing"
+        ]
+    },
+    {
+        "q": "Why is eval() dangerous in browser extensions?",
+        "o": [
+            "Executes arbitrary code which may be malicious",
+            "Slows down extension performance",
+            "Increases memory consumption",
+            "Causes compatibility issues"
+        ]
+    },
+    {
+        "q": "What is the security concern with innerHTML in extensions?",
+        "o": [
+            "Can execute scripts if malicious content is inserted",
+            "Causes page rendering issues",
+            "Slower than other DOM methods",
+            "Incompatible with Manifest V3"
+        ]
+    },
+    {
+        "q": "How does externally_connectable create security risks?",
+        "o": [
+            "Websites can send messages that may be trusted incorrectly",
+            "Enables remote code execution automatically",
+            "Bypasses all browser security features",
+            "Exposes extension source code"
+        ]
+    },
+    {
+        "q": "What is message origin validation in extensions?",
+        "o": [
+            "Verifying the sender of messages before processing",
+            "Checking message size limits",
+            "Validating message encryption",
+            "Confirming message delivery"
+        ]
+    },
+    {
+        "q": "Why should extensions validate message sender?",
+        "o": [
+            "Prevent malicious websites from sending commands",
+            "Improve message delivery speed",
+            "Reduce memory usage",
+            "Enable cross-browser compatibility"
+        ]
+    },
+    {
+        "q": "What is extension privilege escalation?",
+        "o": [
+            "Gaining higher permissions than intended",
+            "Installing extension as administrator",
+            "Upgrading to paid extension version",
+            "Moving extension to different browser"
+        ]
+    },
+    {
+        "q": "How can web_accessible_resources be exploited?",
+        "o": [
+            "Fingerprinting users by detecting installed extensions",
+            "Directly accessing extension permissions",
+            "Modifying extension source code",
+            "Disabling extension security features"
+        ]
+    },
+    {
+        "q": "What is extension fingerprinting?",
+        "o": [
+            "Detecting installed extensions to identify users",
+            "Creating unique extension signatures",
+            "Verifying extension authenticity",
+            "Matching extension preferences"
+        ]
+    },
+    {
+        "q": "Why should extensions minimize host permissions?",
+        "o": [
+            "Reduce attack surface and limit potential damage",
+            "Improve extension loading speed",
+            "Enable better cross-browser support",
+            "Reduce extension file size"
+        ]
+    },
+    {
+        "q": "What is the principle of least privilege for extensions?",
+        "o": [
+            "Request only permissions absolutely necessary",
+            "Use minimum code for functionality",
+            "Run with highest available privileges",
+            "Share permissions with other extensions"
+        ]
+    },
+    {
+        "q": "How can storage.sync be a privacy concern?",
+        "o": [
+            "Data synced may contain sensitive user information",
+            "Sync operations are not encrypted",
+            "Storage directly accessible to websites",
+            "Sync data shared with other extensions"
+        ]
+    },
+    {
+        "q": "What security issue exists with background page persistence?",
+        "o": [
+            "Long-running processes may be targets for exploitation",
+            "Background pages consume too much memory",
+            "Persistence prevents browser updates",
+            "Background scripts cannot be debugged"
+        ]
+    },
+    {
+        "q": "Why is service worker lifecycle important for security?",
+        "o": [
+            "Termination clears potentially corrupted state",
+            "Workers run with elevated privileges",
+            "Lifecycle determines permission scope",
+            "Workers share data between extensions"
+        ]
+    },
+    {
+        "q": "What is content script injection vulnerability?",
+        "o": [
+            "Malicious page influencing content script behavior",
+            "Script running in wrong tab",
+            "Injection speed causing timing issues",
+            "Script size exceeding limits"
+        ]
+    },
+    {
+        "q": "How can postMessage handling be insecure in extensions?",
+        "o": [
+            "Not validating origin of incoming messages",
+            "Sending messages too frequently",
+            "Using deprecated message format",
+            "Not compressing message payload"
+        ]
+    },
+    {
+        "q": "What risk does clipboard access pose?",
+        "o": [
+            "Can capture sensitive copied data like passwords",
+            "May overwrite important user clipboard",
+            "Causes clipboard sync failures",
+            "Slows down copy operations"
+        ]
+    },
+    {
+        "q": "Why is debugger permission particularly dangerous?",
+        "o": [
+            "Full access to DevTools protocol enables any action",
+            "Debugger makes extension run slower",
+            "Permission increases extension file size",
+            "Debugging consumes excessive memory"
+        ]
+    },
+    {
+        "q": "What is the security concern with nativeMessaging?",
+        "o": [
+            "Bridge to native apps may execute arbitrary code",
+            "Native hosts are always untrustworthy",
+            "Messaging bypasses all encryption",
+            "Native apps gain browser permissions"
+        ]
+    },
+    {
+        "q": "How can update URLs be exploited?",
+        "o": [
+            "Man-in-the-middle attack delivers malicious update",
+            "Updates automatically grant new permissions",
+            "URL changes disable extension signing",
+            "Update server gains browser access"
+        ]
+    },
+    {
+        "q": "What is CSP bypass in extensions?",
+        "o": [
+            "Circumventing Content Security Policy restrictions",
+            "Compressing security policy data",
+            "Cross-site policy sharing",
+            "Policy version compatibility"
+        ]
+    },
+    {
+        "q": "Why should extensions avoid inline scripts?",
+        "o": [
+            "Cannot be protected by CSP and may be injection targets",
+            "Inline scripts load too slowly",
+            "They cannot access extension APIs",
+            "Browser does not cache inline code"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in dynamic script loading?",
+        "o": [
+            "Loaded scripts may be tampered with or malicious",
+            "Dynamic loading slows extension performance",
+            "Scripts cannot be properly cached",
+            "Loading creates memory leaks"
+        ]
+    },
+    {
+        "q": "How can extension options pages be vulnerable?",
+        "o": [
+            "Input from page may not be properly validated",
+            "Options pages cannot use HTTPS",
+            "Settings stored without protection",
+            "Options accessible to other extensions"
+        ]
+    },
+    {
+        "q": "What is the risk of storing secrets in extension code?",
+        "o": [
+            "Source code is easily viewable and extractable",
+            "Secrets make extension file too large",
+            "Code secrets are automatically expired",
+            "Storage in code prevents encryption"
+        ]
+    },
+    {
+        "q": "Why is API key protection important in extensions?",
+        "o": [
+            "Exposed keys can be abused for unauthorized access",
+            "Keys improve extension performance",
+            "API keys enable cross-browser support",
+            "Keys are required for store submission"
+        ]
+    },
+    {
+        "q": "What is clickjacking in extension context?",
+        "o": [
+            "Tricking users to click extension UI elements",
+            "Monitoring user click patterns",
+            "Blocking unwanted click events",
+            "Recording click coordinates"
+        ]
+    },
+    {
+        "q": "How can manifest.json misconfigurations create vulnerabilities?",
+        "o": [
+            "Overly permissive settings expand attack surface",
+            "Missing fields cause installation failures",
+            "Extra fields expose source code",
+            "Incorrect formatting prevents updates"
+        ]
+    },
+    {
+        "q": "What is the security implication of all_frames in content scripts?",
+        "o": [
+            "Script runs in potentially untrusted iframes",
+            "Frames cannot communicate with extension",
+            "All frame injection slows page load",
+            "Frame scripts share the same memory"
+        ]
+    },
+    {
+        "q": "Why should extensions avoid document.write?",
+        "o": [
+            "Can overwrite entire document including security context",
+            "Write operations are too slow",
+            "Deprecated in modern browsers",
+            "Causes memory allocation issues"
+        ]
+    },
+    {
+        "q": "What vulnerability exists with extension storage without encryption?",
+        "o": [
+            "Stored data readable if device is compromised",
+            "Unencrypted data cannot be synced",
+            "Storage quota is reduced without encryption",
+            "Unencrypted storage causes performance issues"
+        ]
+    },
+    {
+        "q": "How can cross-extension communication be risky?",
+        "o": [
+            "Malicious extension may send harmful messages",
+            "Communication slows down both extensions",
+            "Shared messages consume storage quota",
+            "Extensions must share the same permissions"
+        ]
+    },
+    {
+        "q": "What is the security consideration for extension popups?",
+        "o": [
+            "Popup HTML must sanitize any displayed data",
+            "Popups cannot access extension storage",
+            "Popup size affects security level",
+            "Only one popup can be open at a time"
+        ]
+    },
+    {
+        "q": "Why is user gesture requirement important?",
+        "o": [
+            "Prevents unauthorized actions without user interaction",
+            "Gestures improve extension responsiveness",
+            "Required for cross-browser compatibility",
+            "Reduces extension memory usage"
+        ]
+    },
+    {
+        "q": "What is the risk of overly broad match patterns?",
+        "o": [
+            "Content script runs on unintended pages",
+            "Patterns slow down pattern matching",
+            "Broad patterns increase file size",
+            "Matching uses excessive memory"
+        ]
+    },
+    {
+        "q": "How can extension icons be used for phishing?",
+        "o": [
+            "Mimicking legitimate extension to deceive users",
+            "Icons can contain hidden executable code",
+            "Icon files bypass security scanning",
+            "Large icons slow browser startup"
+        ]
+    },
+    {
+        "q": "What is the concern with extension auto-updates?",
+        "o": [
+            "Malicious update can silently replace safe extension",
+            "Updates cannot be rolled back",
+            "Auto-updates bypass permission prompts",
+            "Updates share data with developers"
+        ]
+    },
+    {
+        "q": "Why should extensions validate all user inputs?",
+        "o": [
+            "Prevent injection attacks and unexpected behavior",
+            "Input validation speeds up processing",
+            "Validation reduces storage requirements",
+            "Required for Manifest V3 compliance"
+        ]
+    },
+    {
+        "q": "What security risk exists with third-party libraries in extensions?",
+        "o": [
+            "Libraries may contain vulnerabilities or malicious code",
+            "Third-party code runs slower",
+            "Libraries exceed size limits",
+            "External libraries cannot be updated"
+        ]
+    },
+    {
+        "q": "How can extension network requests leak information?",
+        "o": [
+            "Requests may expose user browsing behavior",
+            "Network calls slow down extension",
+            "Requests use excessive bandwidth",
+            "Network data cannot be encrypted"
+        ]
+    },
+    {
+        "q": "What is the vulnerability in using JSON.parse on untrusted data?",
+        "o": [
+            "Malformed JSON may cause unexpected errors",
+            "Parsing large JSON is slow",
+            "JSON format limits data types",
+            "Parse operations block the main thread"
+        ]
+    },
+    {
+        "q": "Why is timing attack relevant to extensions?",
+        "o": [
+            "Response times may reveal sensitive information",
+            "Timing affects extension ranking",
+            "Attack relates to update timing",
+            "Timing determines permission scope"
+        ]
+    },
+    {
+        "q": "What is the risk of unrestricted download permissions?",
+        "o": [
+            "Can silently download malicious files",
+            "Downloads consume excessive disk space",
+            "Download API is deprecated",
+            "Files downloaded bypass scanning"
+        ]
+    },
+    {
+        "q": "How can browser history access be abused?",
+        "o": [
+            "Track sensitive sites user has visited",
+            "History access slows browser startup",
+            "Accessing history modifies entries",
+            "History permission enables tab access"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in webRequest modification?",
+        "o": [
+            "Modified requests may bypass security controls",
+            "Request modification is slow",
+            "Modifications affect all extensions",
+            "Web requests cannot be encrypted"
+        ]
+    },
+    {
+        "q": "Why is incognito mode access a privacy concern?",
+        "o": [
+            "Extensions may track private browsing activity",
+            "Incognito mode disables extension features",
+            "Private mode limits storage access",
+            "Extensions run slower in incognito"
+        ]
+    },
+    {
+        "q": "What is the security risk of shared isolated worlds?",
+        "o": [
+            "Multiple content scripts may interfere with each other",
+            "Isolation increases memory usage",
+            "Shared worlds slow script execution",
+            "Worlds cannot access extension APIs"
+        ]
+    },
+    {
+        "q": "How can extension install flow be exploited?",
+        "o": [
+            "Deceptive prompts trick users into installing",
+            "Installation bypasses all security checks",
+            "Install process grants admin rights",
+            "Extensions auto-install without consent"
+        ]
+    },
+    {
+        "q": "What is permission creep in extensions?",
+        "o": [
+            "Gradually requesting more permissions over time",
+            "Permissions expiring after time period",
+            "Slow permission verification process",
+            "Permissions transferring between extensions"
+        ]
+    },
+    {
+        "q": "Why should extensions avoid XMLHttpRequest for cross-origin?",
+        "o": [
+            "Fetch API provides better security controls",
+            "XMLHttpRequest is deprecated",
+            "XHR cannot handle large responses",
+            "Fetch is faster than XHR"
+        ]
+    },
+    {
+        "q": "What is the concern with extension popup URL parameters?",
+        "o": [
+            "Parameters may be manipulated by other code",
+            "URL length limits popup functionality",
+            "Parameters cannot be encrypted",
+            "Popup URLs are publicly visible"
+        ]
+    },
+    {
+        "q": "How can localStorage in extensions be vulnerable?",
+        "o": [
+            "Data accessible by any script in same origin",
+            "Storage has low capacity limits",
+            "localStorage is deprecated for extensions",
+            "Data cannot be synced across devices"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension's fetch requests?",
+        "o": [
+            "Response may be modified if not properly validated",
+            "Fetch is slower than other methods",
+            "Requests bypass CORS restrictions",
+            "Fetch cannot handle binary data"
+        ]
+    },
+    {
+        "q": "Why is DOM access from content scripts risky?",
+        "o": [
+            "Page may present malicious DOM elements",
+            "DOM access slows page rendering",
+            "Content scripts cannot modify DOM",
+            "DOM access requires special permissions"
+        ]
+    },
+    {
+        "q": "What is prototype pollution vulnerability in extensions?",
+        "o": [
+            "Modifying object prototypes affects all instances",
+            "Pollution reduces available memory",
+            "Prototype copying slows extension",
+            "Objects cannot be properly garbage collected"
+        ]
+    },
+    {
+        "q": "How can cookie access permission be abused?",
+        "o": [
+            "Session cookies stolen for account takeover",
+            "Cookie access slows page loading",
+            "Extension cookies shared with websites",
+            "Cookie permission grants history access"
+        ]
+    },
+    {
+        "q": "What is the risk of using unsanitized data in chrome.scripting.executeScript?",
+        "o": [
+            "Arbitrary code execution on target page",
+            "Script execution is slow",
+            "Scripts cannot access page variables",
+            "Execution requires additional permissions"
+        ]
+    },
+    {
+        "q": "Why should extensions avoid storing credentials?",
+        "o": [
+            "Storage is not designed for sensitive secrets",
+            "Credentials consume too much quota",
+            "Storing disables password autofill",
+            "Credentials cannot be encrypted"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in notification content?",
+        "o": [
+            "HTML in notifications may execute scripts",
+            "Notifications reveal extension identity",
+            "Notification sound files are hackable",
+            "Content limited to plain text only"
+        ]
+    },
+    {
+        "q": "How can WebSocket connections in extensions be risky?",
+        "o": [
+            "Unvalidated messages may contain attacks",
+            "WebSocket is not supported in extensions",
+            "Connections consume excessive bandwidth",
+            "Socket data cannot be encrypted"
+        ]
+    },
+    {
+        "q": "What is the concern with dynamic import in extensions?",
+        "o": [
+            "Imported modules may be compromised",
+            "Dynamic imports are not cached",
+            "Imports slow down extension startup",
+            "Imported code runs with privileges"
+        ]
+    },
+    {
+        "q": "Why is error handling security-relevant in extensions?",
+        "o": [
+            "Error messages may leak sensitive information",
+            "Errors slow down extension execution",
+            "Unhandled errors crash the browser",
+            "Error logs consume storage quota"
+        ]
+    },
+    {
+        "q": "What is the vulnerability in extension-to-page communication?",
+        "o": [
+            "Page can intercept or forge messages",
+            "Communication slows page rendering",
+            "Messages cannot be larger than 1KB",
+            "Communication requires page permission"
+        ]
+    },
+    {
+        "q": "How can extension development mode be exploited?",
+        "o": [
+            "Unpacked extensions bypass signature verification",
+            "Development mode has more permissions",
+            "Debug builds run faster than release",
+            "Mode enables remote code loading"
+        ]
+    },
+    {
+        "q": "What risk exists with extension context menu items?",
+        "o": [
+            "Menu actions may be triggered on sensitive content",
+            "Too many items slow down context menu",
+            "Menu icons can contain malware",
+            "Items visible to other extensions"
+        ]
+    },
+    {
+        "q": "Why is logging sensitive in extension security?",
+        "o": [
+            "Logs may contain sensitive user data",
+            "Logging slows extension performance",
+            "Console logs are publicly visible",
+            "Log files consume storage quota"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in URL pattern matching?",
+        "o": [
+            "Overly permissive patterns match unintended sites",
+            "Complex patterns are slow to evaluate",
+            "Patterns cannot include query strings",
+            "Matching uses excessive memory"
+        ]
+    },
+    {
+        "q": "How can extension resource caching be exploited?",
+        "o": [
+            "Cached malicious content persists",
+            "Caching slows extension updates",
+            "Cache size is too limited",
+            "Cached data shared between users"
+        ]
+    },
+    {
+        "q": "What is the security implication of extension-controlled new tabs?",
+        "o": [
+            "Can display phishing content as trusted browser page",
+            "New tab replacement slows browser startup",
+            "Only one extension can control new tab",
+            "New tab pages cannot use extension APIs"
+        ]
+    },
+    {
+        "q": "Why should extensions sanitize data before display?",
+        "o": [
+            "Prevent script injection in extension UI",
+            "Sanitization improves load times",
+            "Required for store compliance",
+            "Reduces extension memory usage"
+        ]
+    },
+    {
+        "q": "What risk does session storage create in extensions?",
+        "o": [
+            "Data persists longer than expected in memory",
+            "Session storage has strict size limits",
+            "Storage slows extension performance",
+            "Data cannot be encrypted"
+        ]
+    },
+    {
+        "q": "How can extension default settings be vulnerable?",
+        "o": [
+            "Insecure defaults may expose user data",
+            "Default values consume storage quota",
+            "Settings cannot be changed after install",
+            "Defaults slow extension initialization"
+        ]
+    },
+    {
+        "q": "What is the concern with extension permissions inheritance?",
+        "o": [
+            "Child frames may unexpectedly gain permissions",
+            "Inheritance reduces available quotas",
+            "Permissions cannot transfer to iframes",
+            "Inherited permissions are less restrictive"
+        ]
+    },
+    {
+        "q": "Why is Content Security Policy important for extension popups?",
+        "o": [
+            "Prevents execution of malicious scripts in popup",
+            "CSP improves popup performance",
+            "Required for popup functionality",
+            "CSP enables cross-origin popup access"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension event handlers?",
+        "o": [
+            "Events from untrusted sources may be processed",
+            "Too many handlers slow extension",
+            "Event data cannot be validated",
+            "Handlers consume excessive memory"
+        ]
+    },
+    {
+        "q": "How can extension badge manipulation be used maliciously?",
+        "o": [
+            "Display fake alerts to deceive users",
+            "Badge updates slow down browser",
+            "Badges can contain executable code",
+            "All extensions share the same badge"
+        ]
+    },
+    {
+        "q": "What is the risk of broad content script matching?",
+        "o": [
+            "Scripts run on sensitive pages unintentionally",
+            "Broad matching uses more memory",
+            "Matching slows page load times",
+            "Scripts cannot be properly debugged"
+        ]
+    },
+    {
+        "q": "Why should extensions avoid global variable declarations?",
+        "o": [
+            "May conflict with page scripts and cause errors",
+            "Global variables slow script execution",
+            "Variables consume excessive memory",
+            "Global scope is not available in MV3"
+        ]
+    },
+    {
+        "q": "What security concern exists with extension-injected buttons?",
+        "o": [
+            "Buttons may trigger privileged extension actions",
+            "Buttons slow page rendering",
+            "Injected elements visible to other scripts",
+            "Button styles cannot be customized"
+        ]
+    },
+    {
+        "q": "How can declarativeNetRequest rules be misconfigured?",
+        "o": [
+            "Rules may block or modify wrong requests",
+            "Too many rules slow network performance",
+            "Rules cannot be dynamically updated",
+            "Rule syntax is browser-specific"
+        ]
+    },
+    {
+        "q": "What is the vulnerability in extension version strings?",
+        "o": [
+            "Downgrade attacks using lower versions",
+            "Version numbers affect store ranking",
+            "Strings limited to specific formats",
+            "Version determines available APIs"
+        ]
+    },
+    {
+        "q": "Why is tab URL access a sensitive permission?",
+        "o": [
+            "URLs may contain sensitive information like tokens",
+            "Accessing URLs slows tab switching",
+            "URL permission grants history access",
+            "Tab URLs cannot be reliably obtained"
+        ]
+    },
+    {
+        "q": "What risk exists with extension-controlled search?",
+        "o": [
+            "Search queries may be tracked or redirected",
+            "Custom search slows down results",
+            "Search replacement affects browser stability",
+            "Query data shared with other extensions"
+        ]
+    },
+    {
+        "q": "How can message port connections be exploited?",
+        "o": [
+            "Long-lived connections can send malicious data",
+            "Port connections consume excessive memory",
+            "Ports cannot be properly closed",
+            "Connection limit restricts functionality"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in runtime.onMessage handlers?",
+        "o": [
+            "Handler may trust messages from malicious sources",
+            "Too many handlers slow message processing",
+            "Handlers cannot return async responses",
+            "Messages have strict size limits"
+        ]
+    },
+    {
+        "q": "Why is HTTPS important for extension API calls?",
+        "o": [
+            "Prevent interception of sensitive data",
+            "HTTPS is faster than HTTP",
+            "Required for Manifest V3 extensions",
+            "HTTP calls are automatically blocked"
+        ]
+    },
+    {
+        "q": "What is the concern with extension-created iframes?",
+        "o": [
+            "Iframe may load malicious content",
+            "Iframes slow down page rendering",
+            "Created frames share extension context",
+            "Frame creation requires special permission"
+        ]
+    },
+    {
+        "q": "How can alarm API be misused?",
+        "o": [
+            "Persistent alarms may drain battery or resources",
+            "Alarms cannot be cancelled by users",
+            "Alarm frequency affects browser stability",
+            "Alarms share time across extensions"
+        ]
+    },
+    {
+        "q": "What vulnerability exists with file download renaming?",
+        "o": [
+            "Renamed files may hide dangerous extensions",
+            "Renaming slows download completion",
+            "File names have character limits",
+            "Renamed files bypass virus scanning"
+        ]
+    },
+    {
+        "q": "Why should extensions validate redirect URLs?",
+        "o": [
+            "Prevent open redirect vulnerabilities",
+            "Validation improves redirect speed",
+            "Required for OAuth authentication",
+            "Redirects consume network bandwidth"
+        ]
+    },
+    {
+        "q": "What is the security risk of shared storage between contexts?",
+        "o": [
+            "Different contexts may corrupt or leak data",
+            "Shared storage reduces available quota",
+            "Storage access is slower when shared",
+            "Contexts cannot write simultaneously"
+        ]
+    },
+    {
+        "q": "How can attackers exploit chrome.runtime.getURL?",
+        "o": [
+            "Access web accessible resources to fingerprint extension",
+            "Remotely execute code through URL manipulation",
+            "Bypass extension permission requirements",
+            "Directly access extension storage data"
+        ]
+    },
+    {
+        "q": "What is DOM clobbering in extension content scripts?",
+        "o": [
+            "Page elements overriding JavaScript variables via named access",
+            "Hiding DOM elements from extension view",
+            "Duplicating DOM nodes to cause memory issues",
+            "Removing script elements from the page"
+        ]
+    },
+    {
+        "q": "How can content scripts leak extension internals to pages?",
+        "o": [
+            "Exposing privileged data through DOM modifications",
+            "Automatic sharing of all extension variables",
+            "Synchronous access to extension storage",
+            "Content scripts run with page permissions"
+        ]
+    },
+    {
+        "q": "What is the security impact of __proto__ in extension messaging?",
+        "o": [
+            "Prototype pollution through crafted message objects",
+            "Protocol version mismatch errors",
+            "Message encryption bypass",
+            "Private field exposure"
+        ]
+    },
+    {
+        "q": "How can RegExp execution be exploited in extensions?",
+        "o": [
+            "ReDoS attacks causing denial of service",
+            "Regex bypassing input validation",
+            "Pattern matching accessing privileged data",
+            "Regular expressions executing arbitrary code"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension URL scheme handlers?",
+        "o": [
+            "chrome-extension URLs may be predictable",
+            "Scheme handlers run without sandboxing",
+            "Custom schemes bypass all security",
+            "URL handlers have unlimited permissions"
+        ]
+    },
+    {
+        "q": "How can extensions be exploited through window.postMessage abuse?",
+        "o": [
+            "Injecting commands that extension processes",
+            "PostMessage bypasses all extension security",
+            "Messages automatically have extension permissions",
+            "Window communication shares all data"
+        ]
+    },
+    {
+        "q": "What is the risk of relying solely on message structure validation?",
+        "o": [
+            "Attackers can craft valid-looking malicious messages",
+            "Structure validation is too slow",
+            "Messages are automatically encrypted",
+            "Validation prevents async message handling"
+        ]
+    },
+    {
+        "q": "How can chrome.tabs.executeScript be weaponized?",
+        "o": [
+            "Injecting malicious code into trusted pages",
+            "Script execution crashes the browser",
+            "Execute bypasses tab permissions entirely",
+            "Injection automatically elevates privileges"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension OAuth callback handling?",
+        "o": [
+            "Token interception through redirect manipulation",
+            "OAuth callbacks bypass permission checks",
+            "Authentication tokens stored in plaintext",
+            "Callback URLs publicly accessible"
+        ]
+    },
+    {
+        "q": "How can service worker termination affect security state?",
+        "o": [
+            "Security controls may not reinitialize properly",
+            "Termination leaks memory to other processes",
+            "Worker death shares data with websites",
+            "Termination disables all permissions"
+        ]
+    },
+    {
+        "q": "What is the risk of chrome.storage.session in Manifest V3?",
+        "o": [
+            "Data may persist longer than service worker session",
+            "Session storage is shared between extensions",
+            "Storage bypasses encryption requirements",
+            "Session data accessible to web pages"
+        ]
+    },
+    {
+        "q": "How can native messaging host manifest be compromised?",
+        "o": [
+            "Modified manifest redirects to malicious binary",
+            "Host manifest bypasses code signing",
+            "Manifest files grant additional permissions",
+            "Host configuration automatically trusted"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension CSP sandbox attribute?",
+        "o": [
+            "Sandbox restrictions may be incomplete",
+            "Sandboxed pages gain extension context",
+            "Sandbox disables all security features",
+            "Attribute values bypass policy enforcement"
+        ]
+    },
+    {
+        "q": "How can chrome.debugger attachments persist?",
+        "o": [
+            "Debugger remains attached after extension action",
+            "Attachments survive browser restart",
+            "Debugger grants permanent elevated access",
+            "Attachment transfers between extensions"
+        ]
+    },
+    {
+        "q": "What is the security implication of web_accessible_resources match patterns?",
+        "o": [
+            "Overly broad patterns expose resources to attackers",
+            "Patterns grant additional permissions",
+            "Match rules disable resource isolation",
+            "Resources accessible without user consent"
+        ]
+    },
+    {
+        "q": "How can chrome.runtime.connect port names be exploited?",
+        "o": [
+            "Spoofed port names bypass origin verification",
+            "Port names grant elevated permissions",
+            "Connection names share message channels",
+            "Naming collisions crash extensions"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension command shortcut registration?",
+        "o": [
+            "Overriding browser security shortcuts",
+            "Commands execute with system privileges",
+            "Shortcuts bypass user gesture requirements",
+            "Registration grants keyboard access"
+        ]
+    },
+    {
+        "q": "How can declarative rules be exploited for request modification?",
+        "o": [
+            "Rules used to redirect sensitive requests",
+            "Declarative rules bypass CORS entirely",
+            "Rule modification requires no permissions",
+            "Rules execute before security headers"
+        ]
+    },
+    {
+        "q": "What is the risk of chrome.scripting.registerContentScripts?",
+        "o": [
+            "Dynamic registration may inject into unintended pages",
+            "Registered scripts bypass content script isolation",
+            "Registration grants additional permissions",
+            "Scripts automatically enable on privileged pages"
+        ]
+    },
+    {
+        "q": "How can extension event page wake-up be exploited?",
+        "o": [
+            "Force wake-up to maintain persistent access",
+            "Wake events bypass security state checks",
+            "Event pages share memory with websites",
+            "Wake-up grants elevated permissions"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension sidebar panel implementation?",
+        "o": [
+            "Panel can access page content in unexpected ways",
+            "Sidebar bypasses frame isolation",
+            "Panel content runs with page permissions",
+            "Implementation shares extension context"
+        ]
+    },
+    {
+        "q": "How can chrome.action.setPopup be misused?",
+        "o": [
+            "Replace popup with malicious page dynamically",
+            "Popup changes bypass user notification",
+            "SetPopup grants additional privileges",
+            "Dynamic popup disables CSP"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension permission optional removal?",
+        "o": [
+            "Removed permissions may leave residual access",
+            "Removal creates race condition for exploit",
+            "Permissions remain active in memory",
+            "Removal breaks extension functionality"
+        ]
+    },
+    {
+        "q": "How can chrome.webNavigation events leak browsing data?",
+        "o": [
+            "Navigation events reveal full URL including parameters",
+            "Events bypass private browsing protection",
+            "Navigation data shared with other extensions",
+            "Event timestamps reveal user behavior"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension cross-origin fetch handling?",
+        "o": [
+            "Response data may be leaked to untrusted code",
+            "Fetch bypasses all browser restrictions",
+            "Cross-origin requests share cookies",
+            "Response modification is undetectable"
+        ]
+    },
+    {
+        "q": "How can chrome.downloads.download be used for attacks?",
+        "o": [
+            "Silently download and execute malicious files",
+            "Downloads bypass browser security prompts",
+            "Download API grants file system access",
+            "Downloaded files have extension permissions"
+        ]
+    },
+    {
+        "q": "What is the risk of dynamic host permission grants?",
+        "o": [
+            "Granted permissions may exceed user expectation",
+            "Dynamic grants bypass permission prompts",
+            "Permissions automatically include subdomains",
+            "Grants transfer to other extensions"
+        ]
+    },
+    {
+        "q": "How can extension storage.managed be exploited?",
+        "o": [
+            "Enterprise policies may configure malicious settings",
+            "Managed storage bypasses user preferences",
+            "Policy data accessible to websites",
+            "Managed settings disable security features"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in chrome.identity.launchWebAuthFlow?",
+        "o": [
+            "Redirect URL may be intercepted or spoofed",
+            "Auth flow bypasses HTTPS requirements",
+            "Tokens stored without encryption",
+            "Flow automatically shares credentials"
+        ]
+    },
+    {
+        "q": "How can offscreen documents in MV3 be exploited?",
+        "o": [
+            "Hidden document may process data without monitoring",
+            "Offscreen bypasses CSP restrictions",
+            "Documents share service worker context",
+            "Offscreen automatically has DOM access"
+        ]
+    },
+    {
+        "q": "What is the security impact of runtime.sendMessage without callback?",
+        "o": [
+            "Errors may be silently ignored enabling attacks",
+            "Messages without callback bypass validation",
+            "Send operations complete without permission",
+            "Callback absence grants additional access"
+        ]
+    },
+    {
+        "q": "How can chrome.tabs.query with sensitive properties be abused?",
+        "o": [
+            "Query extracts URLs with authentication tokens",
+            "Tab query bypasses origin restrictions",
+            "Query results include private data",
+            "Properties reveal all open applications"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension bookmark API?",
+        "o": [
+            "Bookmarks may contain javascript: URLs for XSS",
+            "API bypasses bookmark permission checks",
+            "Bookmark data shared across profiles",
+            "API grants history access automatically"
+        ]
+    },
+    {
+        "q": "How can chrome.history.search be exploited for profiling?",
+        "o": [
+            "Search reveals detailed browsing patterns",
+            "History API bypasses privacy mode",
+            "Search results include all users",
+            "Query patterns reveal extension activity"
+        ]
+    },
+    {
+        "q": "What is the risk of extension devtools_page?",
+        "o": [
+            "DevTools page can inspect any content including sensitive data",
+            "Page bypasses all browser security",
+            "DevTools have kernel-level access",
+            "Page runs with system privileges"
+        ]
+    },
+    {
+        "q": "How can chrome.proxy.settings be used maliciously?",
+        "o": [
+            "Redirect traffic through attacker-controlled proxy",
+            "Proxy settings bypass HTTPS protection",
+            "Configuration exposes all network data",
+            "Settings persist after extension removal"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension ttsEngine handling?",
+        "o": [
+            "Engine may receive and exfiltrate spoken text",
+            "TTS bypasses audio permission",
+            "Engine runs with elevated privileges",
+            "Speech synthesis accesses microphone"
+        ]
+    },
+    {
+        "q": "How can chrome.privacy API be exploited?",
+        "o": [
+            "Disabling browser security features silently",
+            "Privacy settings shared between extensions",
+            "API bypasses user security preferences",
+            "Settings grant additional permissions"
+        ]
+    },
+    {
+        "q": "What is the security impact of declarativeNetRequest header modification?",
+        "o": [
+            "Remove or add security headers like CSP",
+            "Modification bypasses certificate validation",
+            "Headers changes propagate to all requests",
+            "Declarative rules ignore CORS preflight"
+        ]
+    },
+    {
+        "q": "How can extension update mechanism be attacked?",
+        "o": [
+            "Compromised update server distributes malware",
+            "Updates bypass signature verification",
+            "Update process runs with admin rights",
+            "Automatic updates install any code"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in chrome.webRequest response body access?",
+        "o": [
+            "Response interception reveals sensitive data",
+            "Body access bypasses encryption",
+            "Intercepted responses modifiable",
+            "WebRequest decrypts HTTPS automatically"
+        ]
+    },
+    {
+        "q": "How can content script world isolation be bypassed?",
+        "o": [
+            "Shared DOM allows indirect communication channel",
+            "Isolation disabled in specific contexts",
+            "World bypass grants page scripts access",
+            "Isolation fails under memory pressure"
+        ]
+    },
+    {
+        "q": "What is the risk of chrome.runtime.setUninstallURL?",
+        "o": [
+            "Redirect to phishing page that mimics reinstall",
+            "URL executes with extension permissions",
+            "Uninstall URL accesses user credentials",
+            "Setting bypasses browser navigation"
+        ]
+    },
+    {
+        "q": "How can chrome.contextMenus.onClicked leak context?",
+        "o": [
+            "Event contains page URL and selection data",
+            "Click events bypass origin restrictions",
+            "Context data shared with all extensions",
+            "Events execute in page context"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension incognito split mode?",
+        "o": [
+            "Data may leak between incognito and normal contexts",
+            "Split mode disables all protections",
+            "Incognito instance shares storage",
+            "Mode creates permission escalation"
+        ]
+    },
+    {
+        "q": "How can chrome.alarms.create with persistence be exploited?",
+        "o": [
+            "Persistent alarms enable long-term tracking",
+            "Alarms survive browser restart inappropriately",
+            "Creation bypasses resource limits",
+            "Persistent timers access system clock"
+        ]
+    },
+    {
+        "q": "What is the security impact of unvalidated extension ID usage?",
+        "o": [
+            "Spoofed ID allows impersonation attacks",
+            "ID validation is always skipped",
+            "Extension IDs grant permissions",
+            "Unvalidated IDs access other extension data"
+        ]
+    },
+    {
+        "q": "How can chrome.notifications buttons be exploited?",
+        "o": [
+            "Click handlers execute privileged actions",
+            "Buttons bypass user gesture requirements",
+            "Notification clicks grant permissions",
+            "Button events run with page context"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension declarativeContent PageStateMatcher?",
+        "o": [
+            "Matcher can trigger on sensitive page content",
+            "State matching bypasses permissions",
+            "Matchers access page data directly",
+            "Declarative triggers share context"
+        ]
+    },
+    {
+        "q": "How can chrome.cookies.getAll be used for session hijacking?",
+        "o": [
+            "Extract session cookies for external use",
+            "GetAll bypasses httpOnly flag",
+            "Cookies automatically decrypted",
+            "All cookies accessible without permission"
+        ]
+    },
+    {
+        "q": "What is the risk of extension tabId-based operations without validation?",
+        "o": [
+            "Operation performed on wrong tab after focus change",
+            "Tab ID grants permanent access",
+            "IDs bypass cross-origin restrictions",
+            "Validation prevents all tab operations"
+        ]
+    },
+    {
+        "q": "How can chrome.management.setEnabled be exploited?",
+        "o": [
+            "Disable security extensions to enable attacks",
+            "Management API bypasses user confirmation",
+            "Setting changes affect all profiles",
+            "Enable/disable grants additional permissions"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension socket API connections?",
+        "o": [
+            "Raw sockets bypass HTTP security model",
+            "Socket access bypasses firewall rules",
+            "Connections automatically encrypted",
+            "API grants network stack access"
+        ]
+    },
+    {
+        "q": "How can page-accessible extension APIs be exploited?",
+        "o": [
+            "Malicious pages invoke extension functionality",
+            "APIs run with website permissions",
+            "Exposed APIs bypass message validation",
+            "Page access grants storage permissions"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension i18n string injection?",
+        "o": [
+            "Localized strings may contain executable code paths",
+            "I18n bypasses input sanitization",
+            "Strings automatically have high trust",
+            "Localization grants additional permissions"
+        ]
+    },
+    {
+        "q": "How can chrome.declarativeWebRequest cookie manipulation work?",
+        "o": [
+            "Rules add or remove cookies silently",
+            "Cookie changes affect other extensions",
+            "Manipulation bypasses consent requirements",
+            "Declarative cookies ignore httpOnly"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension window.open handling?",
+        "o": [
+            "Opened windows may inherit extension context unexpectedly",
+            "Window creation bypasses popup blocking",
+            "Opened pages have extension permissions",
+            "Window handling shares all data"
+        ]
+    },
+    {
+        "q": "How can chrome.pageAction visibility be exploited?",
+        "o": [
+            "Icon changes deceive users about page safety",
+            "Visibility modifications grant permissions",
+            "Action state shared between tabs",
+            "Page action bypasses CSP"
+        ]
+    },
+    {
+        "q": "What is the risk of extension runtime.lastError suppression?",
+        "o": [
+            "Ignored errors hide security failures",
+            "Suppression grants additional permissions",
+            "Errors reveal sensitive data",
+            "LastError bypasses all validation"
+        ]
+    },
+    {
+        "q": "How can extension geolocation via tabs be exploited?",
+        "o": [
+            "Track user location through injected scripts",
+            "Tab geolocation bypasses permission prompts",
+            "Location data shared with other extensions",
+            "Geolocation grants network access"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in chrome.fileSystem API retention?",
+        "o": [
+            "Retained entries provide persistent file access",
+            "Retention bypasses user consent",
+            "File handles accessible cross-origin",
+            "API grants unrestricted disk access"
+        ]
+    },
+    {
+        "q": "How can extension BroadcastChannel be exploited?",
+        "o": [
+            "Channel enables covert communication between contexts",
+            "Broadcast bypasses message validation",
+            "Channel data shared with websites",
+            "Broadcasting grants elevated permissions"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension webRequestBlocking removal in MV3?",
+        "o": [
+            "Extensions cannot block malicious requests in real-time",
+            "Removal eliminates all security capabilities",
+            "Blocking was never security-relevant",
+            "MV3 adds better blocking mechanisms"
+        ]
+    },
+    {
+        "q": "How can chrome.sidePanel.setOptions be misused?",
+        "o": [
+            "Replace panel with phishing content per-tab",
+            "Panel options bypass content validation",
+            "Settings grant additional tab access",
+            "Side panel runs with page permissions"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension media stream handling?",
+        "o": [
+            "Captured streams may persist after permission revoked",
+            "Stream capture bypasses indicator display",
+            "Media data shared with other extensions",
+            "Streams automatically grant recording rights"
+        ]
+    },
+    {
+        "q": "How can chrome.permissions.contains be exploited for fingerprinting?",
+        "o": [
+            "Permission checks reveal extension configuration",
+            "Contains bypasses permission validation",
+            "Checks grant additional access",
+            "Permission state shared externally"
+        ]
+    },
+    {
+        "q": "What is the risk of extension SharedArrayBuffer usage?",
+        "o": [
+            "SAB enables timing attacks in extension context",
+            "Shared buffers bypass memory isolation",
+            "Array data accessible cross-origin",
+            "Buffer usage grants worker permissions"
+        ]
+    },
+    {
+        "q": "How can extension mutationObserver callbacks be exploited?",
+        "o": [
+            "Observers monitor sensitive DOM changes",
+            "Callbacks bypass content script isolation",
+            "Mutation data shared with pages",
+            "Observers grant elevated DOM access"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in chrome.runtime.openOptionsPage redirect?",
+        "o": [
+            "Options page URL may be manipulated",
+            "Open bypasses navigation security",
+            "Redirect grants settings access",
+            "Options page runs with page permissions"
+        ]
+    },
+    {
+        "q": "How can extension declarativeNetRequest regexSubstitution be exploited?",
+        "o": [
+            "Regex replacement enables redirect manipulation",
+            "Substitution bypasses all URL validation",
+            "Regex patterns grant network access",
+            "Replacement runs with elevated permissions"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension message port disconnection?",
+        "o": [
+            "Disconnect may leave operations in undefined state",
+            "Disconnection shares pending data",
+            "Ports remain usable after close",
+            "Disconnect grants cleanup permissions"
+        ]
+    },
+    {
+        "q": "How can chrome.tabs.sendMessage to all tabs be exploited?",
+        "o": [
+            "Broadcast commands to all injected content scripts",
+            "Send bypasses tab permission checks",
+            "Messages run with recipient permissions",
+            "Broadcast grants cross-tab access"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension Blob URL creation?",
+        "o": [
+            "Blob URLs may be accessible beyond extension context",
+            "Blobs bypass CSP entirely",
+            "URL creation grants file access",
+            "Blob data shared cross-origin"
+        ]
+    },
+    {
+        "q": "How can chrome.action.openPopup be weaponized?",
+        "o": [
+            "Force popup display for clickjacking",
+            "Open bypasses user gesture requirements",
+            "Popup runs with page permissions",
+            "Opening grants additional permissions"
+        ]
+    },
+    {
+        "q": "What is the risk of extension crypto.subtle in untrusted context?",
+        "o": [
+            "Keys may be extracted or misused",
+            "Crypto API bypasses encryption requirements",
+            "Subtle operations are unmonitored",
+            "Cryptography grants system access"
+        ]
+    },
+    {
+        "q": "How can extension response caching enable attacks?",
+        "o": [
+            "Cache poisoning persists malicious responses",
+            "Caching bypasses certificate validation",
+            "Cached data shared between origins",
+            "Response cache grants storage access"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in chrome.windows.create with focused:false?",
+        "o": [
+            "Hidden windows perform actions without user awareness",
+            "Creation bypasses popup blocking",
+            "Windows run with elevated permissions",
+            "Unfocused windows share foreground context"
+        ]
+    },
+    {
+        "q": "How can extension indexedDB be exploited across contexts?",
+        "o": [
+            "Shared database enables cross-context data access",
+            "IndexedDB bypasses storage isolation",
+            "Database grants file system access",
+            "Contexts share encryption keys"
+        ]
+    },
+    {
+        "q": "What is the security impact of chrome.scripting.insertCSS?",
+        "o": [
+            "Injected CSS may extract data via exfiltration techniques",
+            "CSS injection bypasses page restrictions",
+            "Styles grant script execution",
+            "InsertCSS runs with page permissions"
+        ]
+    },
+    {
+        "q": "How can extension iframe sandbox attribute be bypassed?",
+        "o": [
+            "allow-scripts with extension content enables exploitation",
+            "Sandbox automatically grants full access",
+            "Attribute bypasses all restrictions",
+            "Sandboxed frames share parent context"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension WebSocket origin handling?",
+        "o": [
+            "Extension origin may be trusted unexpectedly by servers",
+            "WebSocket bypasses CORS entirely",
+            "Origin header automatically removed",
+            "Socket connections share credentials"
+        ]
+    },
+    {
+        "q": "How can chrome.system info APIs be exploited for fingerprinting?",
+        "o": [
+            "System info creates unique device identifier",
+            "APIs bypass privacy protections",
+            "Info data shared with websites",
+            "System access grants hardware control"
+        ]
+    },
+    {
+        "q": "What is the risk of extension serviceWorker importScripts?",
+        "o": [
+            "Dynamically imported scripts may be compromised",
+            "ImportScripts bypasses CSP validation",
+            "Imported code runs with extension privileges",
+            "Script import grants file access"
+        ]
+    },
+    {
+        "q": "How can extension navigator object modifications persist?",
+        "o": [
+            "Modified navigator properties affect all future pages",
+            "Modifications bypass content script isolation",
+            "Navigator changes grant system access",
+            "Object modification shares context"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in chrome.extension.getBackgroundPage?",
+        "o": [
+            "Direct reference enables state manipulation",
+            "GetBackgroundPage bypasses messaging security",
+            "Background access grants all permissions",
+            "Reference shares worker memory"
+        ]
+    },
+    {
+        "q": "How can extension event listener registration timing be exploited?",
+        "o": [
+            "Race condition in setup enables bypass",
+            "Listener registration grants permissions",
+            "Timing determines event priority",
+            "Events share handler context"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension console API access?",
+        "o": [
+            "Log output may reveal sensitive extension data",
+            "Console bypasses output restrictions",
+            "API grants DevTools access",
+            "Logging shares data cross-origin"
+        ]
+    },
+    {
+        "q": "How can chrome.declarativeNetRequest.updateDynamicRules be exploited?",
+        "o": [
+            "Rules modified to redirect or block security resources",
+            "Update bypasses rule validation",
+            "Dynamic rules grant persistent access",
+            "Modification shares rules externally"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension Web Workers communication?",
+        "o": [
+            "Worker messages may be intercepted or forged",
+            "Workers bypass content script isolation",
+            "Communication shares all data",
+            "Worker access grants thread control"
+        ]
+    },
+    {
+        "q": "How can extension ArrayBuffer transfer be exploited?",
+        "o": [
+            "Transferred buffers may leak memory contents",
+            "Transfer bypasses ownership validation",
+            "Buffers share cross-context",
+            "ArrayBuffer grants memory access"
+        ]
+    },
+    {
+        "q": "What is the risk of extension performance.now() access?",
+        "o": [
+            "High-resolution timing enables side-channel attacks",
+            "Performance API bypasses timing restrictions",
+            "Measurements reveal cross-origin data",
+            "Timing grants CPU access"
+        ]
+    },
+    {
+        "q": "How can extension theme API be exploited?",
+        "o": [
+            "Theme changes may mask browser security indicators",
+            "API bypasses UI modification restrictions",
+            "Theme data executable",
+            "Changes grant display control"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in chrome.enterprise.platformKeys?",
+        "o": [
+            "Enterprise keys may be misused for impersonation",
+            "API bypasses key protection",
+            "Keys accessible without authentication",
+            "Platform access grants system control"
+        ]
+    },
+    {
+        "q": "How can extension clipboard event handlers be exploited?",
+        "o": [
+            "Intercept and modify clipboard operations silently",
+            "Events bypass clipboard permissions",
+            "Handlers grant persistent access",
+            "Clipboard sharing reveals sensitive data"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension ReadableStream handling?",
+        "o": [
+            "Streams may leak data during transfer",
+            "ReadableStream bypasses memory isolation",
+            "Stream data accessible cross-context",
+            "Handling grants network access"
+        ]
+    },
+    {
+        "q": "How can extension touch event coordinates be exploited?",
+        "o": [
+            "Precise coordinates reveal input patterns",
+            "Events bypass page isolation",
+            "Touch data shared with pages",
+            "Coordinates grant display access"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension Proxy object usage?",
+        "o": [
+            "Proxies may intercept extension internal operations",
+            "Proxy usage bypasses object protection",
+            "Objects automatically proxied",
+            "Proxy access grants prototype control"
+        ]
+    },
+    {
+        "q": "How can chrome.documentScan API be exploited?",
+        "o": [
+            "Scanned documents may contain sensitive information",
+            "Scan bypasses permission prompts",
+            "Document data shared externally",
+            "API grants hardware access"
+        ]
+    },
+    {
+        "q": "What is the risk of extension requestIdleCallback misuse?",
+        "o": [
+            "Idle callbacks may execute during sensitive operations",
+            "Callback bypasses execution context",
+            "Idle time reveals user activity",
+            "Requests grant thread priority"
+        ]
+    },
+    {
+        "q": "How can extension IntersectionObserver reveal cross-origin information?",
+        "o": [
+            "Visibility changes may leak content dimensions",
+            "Observer bypasses origin restrictions",
+            "Intersection data shared cross-frame",
+            "Callbacks grant DOM access"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension TextEncoder output handling?",
+        "o": [
+            "Encoded data may be used for injection attacks",
+            "Encoder bypasses sanitization",
+            "Text output executable",
+            "Encoding grants binary access"
+        ]
+    },
+    {
+        "q": "How can extension caches API persist malicious content?",
+        "o": [
+            "Cached responses may be modified without expiration",
+            "Cache bypasses integrity checks",
+            "Storage shared between contexts",
+            "API grants network control"
+        ]
+    },
+    {
+        "q": "How does prototype chain manipulation affect extension security?",
+        "o": [
+            "Modified prototypes can intercept all method calls",
+            "Chain changes automatically sanitized",
+            "Manipulation grants code execution",
+            "Prototypes shared between extensions"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension Error stack trace exposure?",
+        "o": [
+            "Stack traces reveal internal extension paths and logic",
+            "Errors bypass information hiding",
+            "Traces grant source code access",
+            "Stack data shared cross-origin"
+        ]
+    },
+    {
+        "q": "How can extension service worker fetch handlers be exploited?",
+        "o": [
+            "Handlers may intercept requests to sensitive endpoints",
+            "Fetch handlers bypass network security",
+            "Handler bypasses granted automatically",
+            "Workers share request credentials"
+        ]
+    },
+    {
+        "q": "What is Content Security Policy source allowlist bypass?",
+        "o": [
+            "Finding allowed domains that serve attacker content",
+            "CSP automatically disabled for extensions",
+            "Source lists bypass all restrictions",
+            "Allowlist grants code execution"
+        ]
+    },
+    {
+        "q": "How can extension screenshot capabilities be abused?",
+        "o": [
+            "Capture sensitive page content including credentials",
+            "Screenshots bypass page permissions",
+            "Capture grants permanent access",
+            "Image data shared externally"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension iframe src modification?",
+        "o": [
+            "Dynamic src changes may load attacker content",
+            "Src modification bypasses CSP",
+            "Changes grant frame permissions",
+            "Modification shares frame context"
+        ]
+    },
+    {
+        "q": "How can chrome.runtime.getManifest reveal security info?",
+        "o": [
+            "Manifest exposes permission scope and configuration",
+            "GetManifest bypasses access controls",
+            "Manifest data modifiable at runtime",
+            "Method grants elevated permissions"
+        ]
+    },
+    {
+        "q": "What is the security risk of extension persistent listeners?",
+        "o": [
+            "Listeners may receive events after context should end",
+            "Persistence bypasses termination",
+            "Listeners share memory with websites",
+            "Persistent events grant additional access"
+        ]
+    },
+    {
+        "q": "How can extension form data capture be exploited?",
+        "o": [
+            "Intercept credentials before HTTPS encryption",
+            "Form capture bypasses page isolation",
+            "Data capture grants storage access",
+            "Forms share input with pages"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension URL bar modification?",
+        "o": [
+            "Display misleading URL to hide malicious destination",
+            "Bar modification bypasses browser UI",
+            "URL changes grant navigation control",
+            "Modification shares browser state"
+        ]
+    },
+    {
+        "q": "How can extensions detect and evade security tools?",
+        "o": [
+            "Check for specific extensions or DevTools state",
+            "Evasion bypasses all detection",
+            "Detection grants elevated permissions",
+            "Tools automatically disable for extensions"
+        ]
+    },
+    {
+        "q": "What is the risk of extension runtime.getContexts API?",
+        "o": [
+            "Reveals information about all extension contexts",
+            "API bypasses context isolation",
+            "Contexts automatically share data",
+            "GetContexts grants control permissions"
+        ]
+    },
+    {
+        "q": "How can extension CSP nonce prediction enable attacks?",
+        "o": [
+            "Predictable nonces allow script injection",
+            "Nonces automatically shared with pages",
+            "Prediction grants execution rights",
+            "CSP nonces bypass all validation"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension postMessage target validation?",
+        "o": [
+            "Wildcard target allows message interception",
+            "Target validation is always skipped",
+            "PostMessage bypasses origin checks",
+            "Targets share message channels"
+        ]
+    },
+    {
+        "q": "How can extension file scheme access be exploited?",
+        "o": [
+            "Read local files containing sensitive data",
+            "File access bypasses system permissions",
+            "Scheme grants unlimited disk access",
+            "Files shared with websites"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension beforeunload handlers?",
+        "o": [
+            "Handlers may prevent important navigation away",
+            "Unload events bypass page control",
+            "Handlers grant persistent presence",
+            "Events share navigation state"
+        ]
+    },
+    {
+        "q": "How can extensions implement covert exfiltration channels?",
+        "o": [
+            "Use DNS queries or image requests to leak data",
+            "Exfiltration always detected by browser",
+            "Channels bypass network permissions",
+            "Covert methods grant elevated access"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension drag and drop handling?",
+        "o": [
+            "Dropped content may contain malicious payloads",
+            "Drag events bypass content validation",
+            "Handling grants file system access",
+            "Drop data shared cross-origin"
+        ]
+    },
+    {
+        "q": "How can extension content hash verification be bypassed?",
+        "o": [
+            "Collision attacks against weak hash algorithms",
+            "Verification automatically disabled",
+            "Hash bypasses grant access",
+            "Content hashes shared externally"
+        ]
+    },
+    {
+        "q": "What is the risk of extension srcdoc iframe injection?",
+        "o": [
+            "Inline HTML content bypasses origin restrictions",
+            "Srcdoc bypasses all CSP rules",
+            "Injection grants page permissions",
+            "Content shares extension context"
+        ]
+    },
+    {
+        "q": "How can extension keyboard event capture enable keylogging?",
+        "o": [
+            "Capture all keystrokes including passwords",
+            "Events bypass input permissions",
+            "Capture grants persistent access",
+            "Keyboard data shared externally"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension autofill data access?",
+        "o": [
+            "Extract saved credentials and credit cards",
+            "Autofill bypasses permission prompts",
+            "Data access grants profile control",
+            "Autofill shared between extensions"
+        ]
+    },
+    {
+        "q": "How can extension SVG content be exploited?",
+        "o": [
+            "SVG may contain script tags for code execution",
+            "SVG bypasses all content policies",
+            "Vector graphics grant DOM access",
+            "SVG content shared cross-origin"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension canvas fingerprinting?",
+        "o": [
+            "Canvas output creates unique device identifier",
+            "Fingerprinting bypasses privacy settings",
+            "Canvas grants hardware access",
+            "Drawing data shared externally"
+        ]
+    },
+    {
+        "q": "How can extension PDF handling be exploited?",
+        "o": [
+            "Malicious PDF may trigger vulnerabilities",
+            "PDF handling bypasses sandboxing",
+            "Documents grant file access",
+            "PDF data shared cross-origin"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension WebGL context?",
+        "o": [
+            "GPU access may leak hardware information",
+            "WebGL bypasses browser security",
+            "Context grants system access",
+            "Graphics data shared externally"
+        ]
+    },
+    {
+        "q": "How can extension cross-origin opener reference be exploited?",
+        "o": [
+            "Opener reference allows cross-origin manipulation",
+            "Reference bypasses origin isolation",
+            "Opener grants window control",
+            "Cross-origin access shared context"
+        ]
+    },
+    {
+        "q": "What is the risk of extension script tag dynamic creation?",
+        "o": [
+            "Dynamically created scripts may load malicious code",
+            "Creation bypasses CSP validation",
+            "Scripts grant execution privileges",
+            "Tags share page context"
+        ]
+    },
+    {
+        "q": "How can extension font loading be exploited?",
+        "o": [
+            "Custom fonts may leak system information",
+            "Font loading bypasses privacy protections",
+            "Fonts grant file system access",
+            "Data shared through font requests"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension CSS custom properties?",
+        "o": [
+            "Properties may leak state through computed styles",
+            "CSS bypasses content isolation",
+            "Properties grant script access",
+            "Custom values shared cross-origin"
+        ]
+    },
+    {
+        "q": "How can extension history.pushState be abused?",
+        "o": [
+            "Manipulate browser history for phishing",
+            "PushState bypasses navigation security",
+            "History changes grant URL control",
+            "State shared between contexts"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension ResizeObserver?",
+        "o": [
+            "Size changes may leak cross-origin content dimensions",
+            "Observer bypasses origin restrictions",
+            "Resize data shared cross-frame",
+            "Callbacks grant layout access"
+        ]
+    },
+    {
+        "q": "How can extension speechRecognition be exploited?",
+        "o": [
+            "Capture audio without visible indicator",
+            "Recognition bypasses permission prompts",
+            "Audio data shared externally",
+            "Speech grants microphone control"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension PaymentRequest API?",
+        "o": [
+            "Intercept payment details during transaction",
+            "Payment bypasses security confirmation",
+            "API grants financial access",
+            "Transaction data shared externally"
+        ]
+    },
+    {
+        "q": "How can extension gamepad API leak information?",
+        "o": [
+            "Gamepad state creates fingerprinting vector",
+            "API bypasses permission requirements",
+            "Input data shared externally",
+            "Gamepad grants hardware access"
+        ]
+    },
+    {
+        "q": "What is the risk of extension Notification permission prompt hijacking?",
+        "o": [
+            "Trick user into granting permissions for malicious use",
+            "Prompts bypassed automatically",
+            "Notifications grant persistent access",
+            "Permission shared with websites"
+        ]
+    },
+    {
+        "q": "How can extension Battery API be exploited?",
+        "o": [
+            "Battery status creates device fingerprint",
+            "API bypasses privacy protections",
+            "Status shared externally",
+            "Battery grants system access"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension Bluetooth API usage?",
+        "o": [
+            "Bluetooth access may compromise paired devices",
+            "API bypasses pairing requirements",
+            "Connections grant device control",
+            "Bluetooth data shared externally"
+        ]
+    },
+    {
+        "q": "How can extension USB API access be exploited?",
+        "o": [
+            "Access USB devices to install malware",
+            "USB bypasses device permissions",
+            "API grants hardware control",
+            "Device data shared externally"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension WebMIDI access?",
+        "o": [
+            "MIDI devices may be vulnerable to exploitation",
+            "API bypasses device security",
+            "MIDI grants system access",
+            "Music data shared externally"
+        ]
+    },
+    {
+        "q": "How can extension Serial API be weaponized?",
+        "o": [
+            "Access serial devices to control connected hardware",
+            "Serial bypasses access controls",
+            "API grants device root access",
+            "Port data shared externally"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension WebHID API?",
+        "o": [
+            "HID access may control security keys improperly",
+            "API bypasses device authentication",
+            "HID grants input control",
+            "Device data shared externally"
+        ]
+    },
+    {
+        "q": "How can extension WebNFC be exploited?",
+        "o": [
+            "NFC data may be read or written maliciously",
+            "API bypasses proximity requirements",
+            "NFC grants tag access",
+            "Token data shared externally"
+        ]
+    },
+    {
+        "q": "What is the risk of extension WebXR access?",
+        "o": [
+            "VR/AR tracking may reveal physical environment",
+            "XR bypasses privacy protections",
+            "Immersive grants sensor access",
+            "Spatial data shared externally"
+        ]
+    },
+    {
+        "q": "How can extension Sensor APIs be misused?",
+        "o": [
+            "Sensors may reveal user activity patterns",
+            "APIs bypass permission requirements",
+            "Sensor grants hardware access",
+            "Motion data shared externally"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension media session handling?",
+        "o": [
+            "Media controls may be hijacked for UI spoofing",
+            "Session bypasses media permissions",
+            "Handling grants playback control",
+            "Media state shared externally"
+        ]
+    },
+    {
+        "q": "How can extension Background Fetch be exploited?",
+        "o": [
+            "Large downloads may contain malicious payloads",
+            "Fetch bypasses download prompts",
+            "Background grants network access",
+            "Data shared without notification"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension Push API?",
+        "o": [
+            "Push may deliver commands without user knowledge",
+            "API bypasses notification requirements",
+            "Push grants persistent channel",
+            "Messages shared externally"
+        ]
+    },
+    {
+        "q": "How can extension Periodic Background Sync enable tracking?",
+        "o": [
+            "Regular sync reveals user activity patterns",
+            "Sync bypasses user consent",
+            "Periodic grants persistent access",
+            "Sync data shared externally"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension Content Index API?",
+        "o": [
+            "Indexed content may reveal browsing patterns",
+            "API bypasses privacy mode",
+            "Index grants content access",
+            "Indexed data shared externally"
+        ]
+    },
+    {
+        "q": "How can extension Navigation Preload be misused?",
+        "o": [
+            "Preload responses may be tampered with",
+            "Preload bypasses request validation",
+            "Navigation grants early access",
+            "Requests shared inappropriately"
+        ]
+    },
+    {
+        "q": "What is the risk of extension Trusted Types bypass?",
+        "o": [
+            "Bypass allows DOM XSS despite policy",
+            "Types automatically disabled",
+            "Bypass grants execution rights",
+            "Trust shared between contexts"
+        ]
+    },
+    {
+        "q": "How can extension Atomics and SharedArrayBuffer enable attacks?",
+        "o": [
+            "High-precision timing despite Spectre mitigations",
+            "Atomics bypass memory isolation",
+            "Shared memory grants cross-thread access",
+            "Buffer data shared externally"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension Import Maps?",
+        "o": [
+            "Maps may redirect imports to malicious modules",
+            "Import bypasses module verification",
+            "Maps grant code control",
+            "Module paths shared externally"
+        ]
+    },
+    {
+        "q": "How can extension WASM memory be exploited?",
+        "o": [
+            "WASM may bypass JavaScript security checks",
+            "Memory bypasses sandbox completely",
+            "WASM grants system access",
+            "Binary shared across contexts"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension Module Workers?",
+        "o": [
+            "Module imports may load untrusted code",
+            "Workers bypass CSP for imports",
+            "Modules grant thread privileges",
+            "Code shared without validation"
+        ]
+    },
+    {
+        "q": "How can extension Constructable Stylesheets be weaponized?",
+        "o": [
+            "Dynamically created styles may extract data",
+            "Stylesheets bypass content policies",
+            "Construction grants DOM access",
+            "Styles shared cross-origin"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension custom elements?",
+        "o": [
+            "Custom elements may intercept DOM interactions",
+            "Elements bypass page isolation",
+            "Custom callbacks grant DOM access",
+            "Components shared across contexts"
+        ]
+    },
+    {
+        "q": "How can extension Shadow DOM be exploited?",
+        "o": [
+            "Shadow roots may hide malicious content",
+            "DOM bypasses page inspection",
+            "Shadow grants encapsulated access",
+            "Content hidden from security tools"
+        ]
+    },
+    {
+        "q": "What is the risk of extension Slot element manipulation?",
+        "o": [
+            "Slot reassignment may inject content unexpectedly",
+            "Slots bypass content validation",
+            "Manipulation grants DOM control",
+            "Slotted content shared insecurely"
+        ]
+    },
+    {
+        "q": "How can extension Template element be misused?",
+        "o": [
+            "Template content may contain deferred attacks",
+            "Templates bypass active content scanning",
+            "Elements grant delayed execution",
+            "Content shared without sanitization"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension adoptedStyleSheets?",
+        "o": [
+            "Adopted styles may affect multiple documents",
+            "Styles bypass document isolation",
+            "Adoption grants cross-frame styling",
+            "Sheets shared between contexts"
+        ]
+    },
+    {
+        "q": "How can extension PerformanceObserver reveal sensitive timing?",
+        "o": [
+            "High-resolution timing enables side-channel attacks",
+            "Observer bypasses timing restrictions",
+            "Performance grants navigation timing",
+            "Metrics shared externally"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension ReportingObserver?",
+        "o": [
+            "Reports may reveal internal extension errors",
+            "Observer bypasses error handling",
+            "Reporting grants error access",
+            "Violations shared externally"
+        ]
+    },
+    {
+        "q": "How can extension AbortController be used maliciously?",
+        "o": [
+            "Abort may disrupt critical security operations",
+            "Controller bypasses request completion",
+            "Abort grants cancellation rights",
+            "Signals shared inappropriately"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension FormData manipulation?",
+        "o": [
+            "Modified form data may bypass validation",
+            "FormData bypasses input sanitization",
+            "Manipulation grants submission control",
+            "Data shared without encryption"
+        ]
+    },
+    {
+        "q": "How can extension URLSearchParams be exploited?",
+        "o": [
+            "Parameter injection through crafted URLs",
+            "Params bypass query validation",
+            "Manipulation grants URL control",
+            "Query data shared externally"
+        ]
+    },
+    {
+        "q": "What is the risk of extension Headers manipulation in fetch?",
+        "o": [
+            "Modified headers may bypass security controls",
+            "Headers bypass CORS restrictions",
+            "Manipulation grants request control",
+            "Header data shared inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension Response clone be exploited?",
+        "o": [
+            "Cloned responses may leak stream data",
+            "Clone bypasses consumption restrictions",
+            "Response grants body access",
+            "Data shared across contexts"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension Request construction?",
+        "o": [
+            "Constructed requests may bypass origin checks",
+            "Request bypasses permission validation",
+            "Construction grants network access",
+            "Requests shared without authorization"
+        ]
+    },
+    {
+        "q": "How can extensions intercept service worker registration?",
+        "o": [
+            "Intercept and modify worker scripts during registration",
+            "Registration bypasses scope restrictions",
+            "Interception grants worker control",
+            "Workers shared between origins"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension fetch event respondWith?",
+        "o": [
+            "Custom responses may serve malicious content",
+            "RespondWith bypasses network security",
+            "Response grants content control",
+            "Data served without validation"
+        ]
+    },
+    {
+        "q": "How can extension Clients API reveal browsing activity?",
+        "o": [
+            "Client enumeration reveals open pages",
+            "API bypasses privacy mode",
+            "Clients grant window access",
+            "Browsing data shared externally"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension skipWaiting?",
+        "o": [
+            "Skip forces immediate activation bypassing checks",
+            "Waiting bypasses lifecycle security",
+            "Skip grants immediate control",
+            "Activation shared prematurely"
+        ]
+    },
+    {
+        "q": "How can extension WindowClient focus be exploited?",
+        "o": [
+            "Force focus to enable clickjacking attacks",
+            "Focus bypasses user gesture requirements",
+            "Client grants window control",
+            "Focus shared inappropriately"
+        ]
+    },
+    {
+        "q": "What is the risk of extension claim() in service workers?",
+        "o": [
+            "Claim may take control of unrelated pages",
+            "Claiming bypasses scope restrictions",
+            "Claim grants page control",
+            "Clients claimed inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension CacheStorage be poisoned?",
+        "o": [
+            "Store malicious responses for future requests",
+            "Cache bypasses origin validation",
+            "Storage grants persistent access",
+            "Cached data served to victims"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension extendable events?",
+        "o": [
+            "Extended events may process after security context ends",
+            "Extension bypasses event lifecycle",
+            "Events grant prolonged execution",
+            "Processing shared inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension PushManager subscription be exploited?",
+        "o": [
+            "Subscriptions enable persistent tracking channel",
+            "Manager bypasses notification consent",
+            "Push grants server communication",
+            "Subscription shared externally"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension NavigationPreloadManager?",
+        "o": [
+            "Preload may prematurely reveal navigation intent",
+            "Manager bypasses lazy loading security",
+            "Preload grants early request access",
+            "Navigation shared before completion"
+        ]
+    },
+    {
+        "q": "How can extension SyncManager registration be misused?",
+        "o": [
+            "Sync enables data exfiltration during offline periods",
+            "Manager bypasses network restrictions",
+            "Registration grants periodic execution",
+            "Sync data shared externally"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension PaymentManager?",
+        "o": [
+            "Payment handlers may intercept transaction data",
+            "Manager bypasses payment security",
+            "Handlers grant financial access",
+            "Transaction shared inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension ContentIndexEvent be exploited?",
+        "o": [
+            "Index events may reveal content interest patterns",
+            "Event bypasses privacy protections",
+            "Index grants content metadata access",
+            "Patterns shared externally"
+        ]
+    },
+    {
+        "q": "What is the risk of extension CookieStore API?",
+        "o": [
+            "Async cookie access may race with security checks",
+            "Store bypasses cookie protections",
+            "API grants persistent cookie access",
+            "Cookies shared across contexts"
+        ]
+    },
+    {
+        "q": "How can extension LockManager enable denial of service?",
+        "o": [
+            "Hold locks indefinitely to block other operations",
+            "Manager bypasses lock timeout",
+            "Locks grant exclusive access",
+            "Resources blocked inappropriately"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension StorageManager?",
+        "o": [
+            "Quota manipulation may cause application failures",
+            "Manager bypasses storage limits",
+            "API grants persistent storage",
+            "Quota shared inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension BarcodeDetector leak information?",
+        "o": [
+            "Scan camera input to extract sensitive data",
+            "Detector bypasses camera permissions",
+            "Scanning grants image access",
+            "Barcode data shared externally"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension TextDetector?",
+        "o": [
+            "OCR may extract text from sensitive images",
+            "Detector bypasses image permissions",
+            "Text grants content access",
+            "Extracted data shared externally"
+        ]
+    },
+    {
+        "q": "How can extension FaceDetector be misused?",
+        "o": [
+            "Face detection enables biometric tracking",
+            "Detector bypasses privacy consent",
+            "Detection grants biometric access",
+            "Face data shared externally"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension EyeDropper API?",
+        "o": [
+            "Color sampling may reveal cross-origin content",
+            "Dropper bypasses origin restrictions",
+            "Sampling grants pixel access",
+            "Color data shared externally"
+        ]
+    },
+    {
+        "q": "How can extension Clipboard API DataTransfer be exploited?",
+        "o": [
+            "Transfer objects may contain malicious payloads",
+            "DataTransfer bypasses content validation",
+            "Clipboard grants data access",
+            "Transfer shared inappropriately"
+        ]
+    },
+    {
+        "q": "What is the risk of extension Sanitizer API bypass?",
+        "o": [
+            "Bypass allows HTML injection despite sanitization",
+            "Sanitizer automatically disabled",
+            "Bypass grants DOM mutation access",
+            "Clean output tainted externally"
+        ]
+    },
+    {
+        "q": "How can extension scheduler.postTask be exploited?",
+        "o": [
+            "Task scheduling may delay security operations",
+            "Scheduler bypasses priority controls",
+            "Tasks grant execution timing control",
+            "Scheduling shared inappropriately"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension prioritized task scheduling?",
+        "o": [
+            "Priority manipulation may starve security tasks",
+            "Scheduler bypasses fairness controls",
+            "Priority grants resource control",
+            "Tasks blocked inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension isInputPending enable timing attacks?",
+        "o": [
+            "Input state reveals user interaction patterns",
+            "Pending bypasses event privacy",
+            "Detection grants input timing access",
+            "State shared externally"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension Navigation API?",
+        "o": [
+            "Navigation interception may redirect to phishing",
+            "API bypasses navigation security",
+            "Interception grants URL control",
+            "Navigation shared inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension AppHistory be exploited?",
+        "o": [
+            "History manipulation may hide malicious navigation",
+            "AppHistory bypasses history protection",
+            "Manipulation grants navigation control",
+            "History shared externally"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension URLPattern matching?",
+        "o": [
+            "Pattern bypass may match unintended URLs",
+            "Pattern bypasses URL validation",
+            "Matching grants navigation access",
+            "Patterns shared inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension CompressionStream be exploited?",
+        "o": [
+            "Compression may hide malicious content",
+            "Stream bypasses content scanning",
+            "Compression grants bypass capability",
+            "Data shared without inspection"
+        ]
+    },
+    {
+        "q": "What is the risk of extension DecompressionStream?",
+        "o": [
+            "Decompressed content may trigger buffer overflow",
+            "Stream bypasses memory limits",
+            "Decompression grants expansion access",
+            "Data shared without validation"
+        ]
+    },
+    {
+        "q": "How can extension TransformStream processing be exploited?",
+        "o": [
+            "Transform may inject malicious content inline",
+            "Stream bypasses content validation",
+            "Transform grants processing control",
+            "Data modified inappropriately"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension AbortSignal.timeout?",
+        "o": [
+            "Timeout racing may bypass security checks",
+            "Signal bypasses completion requirements",
+            "Timeout grants cancellation control",
+            "Operations aborted inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension structuredClone be exploited?",
+        "o": [
+            "Clone may transfer objects with hidden state",
+            "Clone bypasses property protection",
+            "Cloning grants object access",
+            "Data shared inappropriately"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension Object.hasOwn checks?",
+        "o": [
+            "Check bypass may access inherited malicious properties",
+            "HasOwn bypasses prototype security",
+            "Checking grants property access",
+            "Inheritance shared inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension at() array method be exploited?",
+        "o": [
+            "Negative indices may access unintended elements",
+            "At bypasses bounds checking",
+            "Access grants array control",
+            "Elements shared inappropriately"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension Promise.any handling?",
+        "o": [
+            "AggregateError may leak rejection details",
+            "Any bypasses error handling",
+            "Promise grants async control",
+            "Errors shared inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension WeakRef be exploited?",
+        "o": [
+            "Weak references enable memory timing attacks",
+            "WeakRef bypasses garbage collection",
+            "References grant object access",
+            "Memory state shared externally"
+        ]
+    },
+    {
+        "q": "What is the risk of extension FinalizationRegistry?",
+        "o": [
+            "Finalizer timing reveals memory patterns",
+            "Registry bypasses cleanup restrictions",
+            "Finalization grants timing information",
+            "Callbacks shared inappropriately"
+        ]
+    },
+    {
+        "q": "How can extensions bypass Manifest V3 remote code restrictions?",
+        "o": [
+            "Load code from user controllable sources",
+            "Restrictions automatically disabled",
+            "Bypass grants code execution",
+            "Remote code allowed by default"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension webRequest filter matching?",
+        "o": [
+            "Overly broad filters capture sensitive requests",
+            "Filters bypass request permissions",
+            "Matching grants interception access",
+            "Requests shared inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension declarativeNetRequest action chaining be exploited?",
+        "o": [
+            "Chained rules may combine to dangerous effects",
+            "Actions bypass individual rule limits",
+            "Chaining grants cumulative access",
+            "Rules shared inappropriately"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension user scripts world?",
+        "o": [
+            "User script world may bypass extension CSP",
+            "World bypasses content isolation",
+            "Scripts grant world access",
+            "Code shared inappropriately"
+        ]
+    },
+    {
+        "q": "How can extensions exploit Manifest V3 declarative rule limits?",
+        "o": [
+            "Fill rules to prevent legitimate security rules",
+            "Limits bypass all restrictions",
+            "Exploitation grants rule control",
+            "Rules shared between extensions"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension getRegisteredContentScripts?",
+        "o": [
+            "Query reveals extension injection behavior",
+            "API bypasses registration privacy",
+            "Get grants script access",
+            "Registration shared externally"
+        ]
+    },
+    {
+        "q": "How can extension updateContentScripts be weaponized?",
+        "o": [
+            "Update scripts to inject malicious code dynamically",
+            "Update bypasses installation checks",
+            "Modification grants content control",
+            "Scripts shared inappropriately"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension unregisterContentScripts?",
+        "o": [
+            "Unregister security scripts to enable attacks",
+            "API bypasses script protection",
+            "Removal grants page vulnerability",
+            "Scripts removed inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension executeScript args parameter be exploited?",
+        "o": [
+            "Argument injection into target context",
+            "Args bypass sanitization completely",
+            "Parameters grant code injection",
+            "Data shared without validation"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension declarativeNetRequest getDynamicRules?",
+        "o": [
+            "Query reveals extension blocking behavior",
+            "API bypasses rule privacy",
+            "Get grants rule access",
+            "Rules shared externally"
+        ]
+    },
+    {
+        "q": "How can extension action.getUserSettings be exploited for fingerprinting?",
+        "o": [
+            "Settings reveal unique user configuration",
+            "API bypasses privacy protections",
+            "Get grants settings access",
+            "Configuration shared externally"
+        ]
+    },
+    {
+        "q": "What is the risk of extension runtime.getFrameId?",
+        "o": [
+            "Frame ID may be used to target privileged frames",
+            "API bypasses frame isolation",
+            "Get grants frame access",
+            "IDs shared inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension scripting.executeScript files parameter be exploited?",
+        "o": [
+            "File paths may reference compromised local scripts",
+            "Files bypass content validation",
+            "Parameter grants file access",
+            "Scripts shared without verification"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension action.isEnabled check?",
+        "o": [
+            "Enabled state reveals extension behavior patterns",
+            "Check bypasses state privacy",
+            "API grants configuration access",
+            "State shared externally"
+        ]
+    },
+    {
+        "q": "How can extension offscreen API createDocument be exploited?",
+        "o": [
+            "Create hidden documents for covert operations",
+            "Creation bypasses document limits",
+            "API grants offscreen access",
+            "Documents shared inappropriately"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension offscreen Reason enum values?",
+        "o": [
+            "Reason may grant capabilities beyond stated purpose",
+            "Enum bypasses purpose validation",
+            "Values grant API access",
+            "Reasons shared inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension tabGroups API be exploited?",
+        "o": [
+            "Group manipulation reveals browsing organization",
+            "API bypasses tab privacy",
+            "Groups grant organization access",
+            "Configuration shared externally"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension sidePanel.open?",
+        "o": [
+            "Open side panel to overlay legitimate content",
+            "Open bypasses user gesture requirements",
+            "API grants panel control",
+            "Content displayed inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension readingList API be exploited?",
+        "o": [
+            "Reading list reveals user interests and intentions",
+            "API bypasses browsing privacy",
+            "Access grants list control",
+            "Entries shared externally"
+        ]
+    },
+    {
+        "q": "What is the risk of extension userScripts API configuration?",
+        "o": [
+            "User scripts may run with unexpected privileges",
+            "Configuration bypasses security validation",
+            "API grants script control",
+            "Settings shared inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension declarativeNetRequest.setExtensionActionOptions be exploited?",
+        "o": [
+            "Action options may hide rule activity from user",
+            "Options bypass display requirements",
+            "API grants visibility control",
+            "Settings shared inappropriately"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension chrome.scripting.removeCSS?",
+        "o": [
+            "Remove security styles to enable attacks",
+            "Removal bypasses style protection",
+            "API grants CSS control",
+            "Styles removed inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension chrome.dns.resolve be exploited?",
+        "o": [
+            "DNS queries reveal browsing intent before navigation",
+            "Resolve bypasses privacy protections",
+            "API grants DNS access",
+            "Queries shared externally"
+        ]
+    },
+    {
+        "q": "What is the security impact of extension enterprise.reportingPrivate?",
+        "o": [
+            "Enterprise API may exfiltrate detailed user data",
+            "Reporting bypasses privacy consent",
+            "API grants enterprise access",
+            "Data shared with administrators"
+        ]
+    },
+    {
+        "q": "How can extension platformKeys.getKeyPair be exploited?",
+        "o": [
+            "Key pairs may be used for unauthorized signing",
+            "API bypasses key protection",
+            "Get grants cryptographic access",
+            "Keys shared inappropriately"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension certificateProvider callbacks?",
+        "o": [
+            "Callbacks may provide malicious certificates",
+            "Provider bypasses certificate validation",
+            "Callbacks grant authentication control",
+            "Certificates shared inappropriately"
+        ]
+    },
+    {
+        "q": "How can extension loginState API be exploited?",
+        "o": [
+            "Login state reveals user presence patterns",
+            "API bypasses presence privacy",
+            "State grants session access",
+            "Login data shared externally"
+        ]
+    },
+    {
+        "q": "What is the risk of extension printingMetrics access?",
+        "o": [
+            "Print metrics reveal sensitive document activity",
+            "API bypasses printing privacy",
+            "Metrics grant activity access",
+            "Data shared externally"
+        ]
+    },
+    {
+        "q": "How can extension wallpaper API be exploited?",
+        "o": [
+            "Wallpaper changes may display phishing content",
+            "API bypasses display security",
+            "Setting grants visual control",
+            "Images displayed inappropriately"
+        ]
+    },
+    {
+        "q": "What is extension store review bypass technique?",
+        "o": [
+            "Submit benign code that fetches malicious updates",
+            "Review bypassed automatically",
+            "Bypass grants store approval",
+            "Review shared with attackers"
+        ]
+    },
+    {
+        "q": "How can extensions evade static analysis?",
+        "o": [
+            "Obfuscate code and use dynamic evaluation",
+            "Analysis bypassed by default",
+            "Evasion grants code approval",
+            "Static checks shared externally"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in extension delayed malicious behavior?",
+        "o": [
+            "Activate malicious code after review period",
+            "Delay bypasses detection",
+            "Timing grants review bypass",
+            "Behavior shared after approval"
+        ]
+    },
+    {
+        "q": "How can extension update paths enable supply chain attacks?",
+        "o": [
+            "Compromised update injects malware to existing users",
+            "Updates bypass signature verification",
+            "Path grants code distribution",
+            "Updates shared without consent"
+        ]
+    },
+    {
+        "q": "What is defender posture against extension threats?",
+        "o": [
+            "Limit permissions and audit installed extensions",
+            "Defense requires no user action",
+            "Posture grants automatic protection",
+            "Threats shared with developers"
+        ]
+    },
+    {
+        "q": "How can organizations detect malicious extension behavior?",
+        "o": [
+            "Monitor network traffic and API call patterns",
+            "Detection happens automatically",
+            "Monitoring grants complete visibility",
+            "Behavior shared with vendors"
+        ]
+    },
+    {
+        "q": "What mitigation prevents extension permission abuse?",
+        "o": [
+            "Runtime permission prompts before sensitive operations",
+            "Abuse prevented by default",
+            "Mitigation grants automatic protection",
+            "Permissions shared with users"
+        ]
+    },
+    {
+        "q": "How does Manifest V3 improve extension security?",
+        "o": [
+            "Service workers limit persistence and remote code execution",
+            "V3 eliminates all security risks",
+            "Improvement grants automatic safety",
+            "Security shared between versions"
+        ]
+    },
+    {
+        "q": "What is extension forensics methodology?",
+        "o": [
+            "Extract and analyze extension files and storage",
+            "Forensics reveals all encryption keys",
+            "Analysis grants automatic detection",
+            "Methodology shared with attackers"
+        ]
+    },
+    {
+        "q": "How can memory forensics detect malicious extensions?",
+        "o": [
+            "Extract JavaScript strings and network artifacts from process memory",
+            "Memory reveals all cryptographic secrets",
+            "Forensics grants code access",
+            "Detection shared automatically"
+        ]
+    },
+    {
+        "q": "What network forensics reveals extension threats?",
+        "o": [
+            "Analyze outbound connections and data exfiltration patterns",
+            "Network grants complete visibility",
+            "Forensics reveals encryption content",
+            "Analysis shared with extension"
+        ]
+    },
+    {
+        "q": "How can extension code be reverse engineered?",
+        "o": [
+            "Unpack and deobfuscate JavaScript from extension package",
+            "Reverse engineering bypasses all protection",
+            "Code grants automatic understanding",
+            "Engineering shared with developers"
+        ]
+    },
+    {
+        "q": "What is extension behavioral analysis?",
+        "o": [
+            "Monitor API calls and network activity during execution",
+            "Analysis reveals all encrypted data",
+            "Behavior grants automatic detection",
+            "Monitoring shared with extension"
+        ]
+    },
+    {
+        "q": "How can extensions implement anti-forensics?",
+        "o": [
+            "Clear storage and delete evidence on detection",
+            "Anti-forensics always successful",
+            "Clearing grants automatic evasion",
+            "Evidence shared before deletion"
+        ]
+    },
+    {
+        "q": "What indicators of compromise reveal malicious extensions?",
+        "o": [
+            "Unexpected network connections and permission usage patterns",
+            "IoC reveals all extension secrets",
+            "Indicators grant automatic detection",
+            "Compromise shared immediately"
+        ]
+    },
+    {
+        "q": "How can threat hunting detect extension attacks?",
+        "o": [
+            "Search for anomalous browser behavior and registry modifications",
+            "Hunting reveals all hidden extensions",
+            "Detection grants automatic response",
+            "Threats shared between systems"
+        ]
+    },
+    {
+        "q": "What logs capture extension activity?",
+        "o": [
+            "Browser console and system event logs may capture activity",
+            "Logs reveal all encrypted traffic",
+            "Logging grants complete visibility",
+            "Activity shared automatically"
+        ]
+    },
+    {
+        "q": "How can SIEM detect malicious extension behavior?",
+        "o": [
+            "Correlate browser events with network and endpoint data",
+            "SIEM detects all extension threats",
+            "Detection grants automatic response",
+            "Events shared in real-time"
+        ]
+    },
+    {
+        "q": "What EDR capabilities detect extension threats?",
+        "o": [
+            "Monitor browser process behavior and child processes",
+            "EDR prevents all extension attacks",
+            "Detection grants automatic remediation",
+            "Threats shared immediately"
+        ]
+    },
+    {
+        "q": "How can network traffic analysis detect extension exfiltration?",
+        "o": [
+            "Identify unusual traffic patterns to unknown domains",
+            "Analysis decrypts all extension traffic",
+            "Detection grants automatic blocking",
+            "Traffic shared with extension"
+        ]
+    },
+    {
+        "q": "What browser security policies limit extension risk?",
+        "o": [
+            "Allowlist approved extensions and block side-loading",
+            "Policies prevent all extension attacks",
+            "Limiting grants automatic protection",
+            "Risk shared between extensions"
+        ]
+    },
+    {
+        "q": "How can certificate pinning protect against extension MITM?",
+        "o": [
+            "Detect certificate changes from extension interception",
+            "Pinning prevents all MITM attacks",
+            "Protection grants automatic detection",
+            "Certificates shared with extension"
+        ]
+    },
+    {
+        "q": "What sandboxing protects against extension exploitation?",
+        "o": [
+            "Isolate extension processes with limited privileges",
+            "Sandboxing prevents all exploits",
+            "Protection grants automatic containment",
+            "Isolation shared between extensions"
+        ]
+    },
+    {
+        "q": "How can content-addressable storage detect extension tampering?",
+        "o": [
+            "Verify file hashes against known good values",
+            "Storage prevents all tampering",
+            "Detection grants automatic repair",
+            "Hashes shared with extension"
+        ]
+    },
+    {
+        "q": "What code signing validates extension authenticity?",
+        "o": [
+            "Cryptographic signatures verify publisher identity",
+            "Signing prevents all impersonation",
+            "Validation grants automatic trust",
+            "Signatures shared externally"
+        ]
+    },
+    {
+        "q": "How can runtime integrity monitoring detect extension modification?",
+        "o": [
+            "Compare running code against signed original",
+            "Monitoring prevents all modifications",
+            "Detection grants automatic rollback",
+            "Integrity shared with extension"
+        ]
+    },
+    {
+        "q": "What access control mechanisms limit extension capabilities?",
+        "o": [
+            "Permission systems restricting sensitive API access",
+            "Controls prevent all unauthorized access",
+            "Mechanisms grant automatic protection",
+            "Access shared between extensions"
+        ]
+    },
+    {
+        "q": "How can audit logs track extension permission usage?",
+        "o": [
+            "Record API calls with timestamps and parameters",
+            "Logs prevent all permission abuse",
+            "Tracking grants automatic detection",
+            "Usage shared in real-time"
+        ]
+    },
+    {
+        "q": "What static analysis detects malicious extension patterns?",
+        "o": [
+            "Analyze code structure for obfuscation and dangerous APIs",
+            "Static analysis detects all malware",
+            "Detection grants automatic blocking",
+            "Patterns shared with extension"
+        ]
+    },
+    {
+        "q": "How can machine learning classify extension threats?",
+        "o": [
+            "Train models on behavioral features and API patterns",
+            "ML detects all extension threats",
+            "Classification grants automatic response",
+            "Threats shared immediately"
+        ]
+    },
+    {
+        "q": "What fuzzing discovers extension vulnerabilities?",
+        "o": [
+            "Generate malformed inputs to trigger crashes and errors",
+            "Fuzzing finds all vulnerabilities",
+            "Discovery grants automatic exploitation",
+            "Bugs shared with developers"
+        ]
+    },
+    {
+        "q": "How can taint tracking identify extension data flows?",
+        "o": [
+            "Track untrusted data from source to sink",
+            "Taint prevents all injection attacks",
+            "Tracking grants automatic sanitization",
+            "Flows shared with extension"
+        ]
+    },
+    {
+        "q": "What symbolic execution analyzes extension behavior?",
+        "o": [
+            "Explore all code paths with symbolic constraints",
+            "Execution finds all vulnerabilities",
+            "Analysis grants complete coverage",
+            "Paths shared externally"
+        ]
+    },
+    {
+        "q": "How can sandboxed execution safely analyze extensions?",
+        "o": [
+            "Run extension in isolated environment with monitoring",
+            "Sandboxing reveals all behaviors",
+            "Execution grants safe analysis",
+            "Analysis shared immediately"
+        ]
+    },
+    {
+        "q": "What deobfuscation reveals hidden extension behavior?",
+        "o": [
+            "Transform obfuscated code to readable form",
+            "Deobfuscation always succeeds",
+            "Revealing grants full understanding",
+            "Code shared with extension"
+        ]
+    },
+    {
+        "q": "How can call graph analysis identify extension functionality?",
+        "o": [
+            "Map function relationships and data dependencies",
+            "Analysis reveals all extension secrets",
+            "Graphing grants complete understanding",
+            "Functions shared externally"
+        ]
+    },
+    {
+        "q": "What event handler analysis detects malicious triggers?",
+        "o": [
+            "Identify code executed in response to browser events",
+            "Analysis detects all malicious code",
+            "Detection grants automatic response",
+            "Handlers shared with extension"
+        ]
+    },
+    {
+        "q": "How can content script analysis identify injection risks?",
+        "o": [
+            "Review what code runs in web page contexts",
+            "Analysis prevents all injection",
+            "Review grants automatic sanitization",
+            "Scripts shared between contexts"
+        ]
+    },
+    {
+        "q": "What message passing analysis identifies data leaks?",
+        "o": [
+            "Track cross-context communication for sensitive data",
+            "Analysis prevents all data leaks",
+            "Tracking grants automatic blocking",
+            "Messages shared externally"
+        ]
+    },
+    {
+        "q": "How can storage analysis reveal persistence mechanisms?",
+        "o": [
+            "Examine stored data for configuration and exfiltration",
+            "Analysis reveals all encryption keys",
+            "Review grants complete access",
+            "Storage shared with extension"
+        ]
+    },
+    {
+        "q": "What permission analysis identifies over-privileged extensions?",
+        "o": [
+            "Compare requested versus used permissions",
+            "Analysis detects all privilege abuse",
+            "Review grants automatic restriction",
+            "Permissions shared between extensions"
+        ]
+    },
+    {
+        "q": "How can origin analysis detect cross-origin violations?",
+        "o": [
+            "Track data flows between different security boundaries",
+            "Analysis prevents all violations",
+            "Tracking grants automatic enforcement",
+            "Origins shared inappropriately"
+        ]
+    },
+    {
+        "q": "What DOM analysis identifies injection vulnerabilities?",
+        "o": [
+            "Review how extension modifies page structure",
+            "Analysis prevents all injection",
+            "Review grants automatic sanitization",
+            "DOM shared between contexts"
+        ]
+    },
+    {
+        "q": "How can network request analysis detect exfiltration?",
+        "o": [
+            "Examine URLs and payloads for data leakage",
+            "Analysis decrypts all traffic",
+            "Detection grants automatic blocking",
+            "Requests shared externally"
+        ]
+    },
+    {
+        "q": "What cookie analysis identifies session theft?",
+        "o": [
+            "Track cookie access and transmission patterns",
+            "Analysis prevents all theft",
+            "Tracking grants automatic protection",
+            "Cookies shared externally"
+        ]
+    },
+    {
+        "q": "How can cryptographic analysis assess extension security?",
+        "o": [
+            "Review key generation and encryption implementations",
+            "Analysis reveals all keys",
+            "Review grants automatic exploitation",
+            "Crypto shared externally"
+        ]
+    },
+    {
+        "q": "What authentication analysis identifies bypass risks?",
+        "o": [
+            "Review token handling and session management",
+            "Analysis prevents all bypasses",
+            "Review grants automatic protection",
+            "Auth shared externally"
+        ]
+    },
+    {
+        "q": "How can update analysis detect time-bomb malware?",
+        "o": [
+            "Compare extension versions for behavior changes",
+            "Analysis detects all time bombs",
+            "Review grants automatic response",
+            "Updates shared immediately"
+        ]
+    },
+    {
+        "q": "What dependency analysis identifies supply chain risks?",
+        "o": [
+            "Review included libraries for known vulnerabilities",
+            "Analysis prevents all supply chain attacks",
+            "Review grants automatic updates",
+            "Dependencies shared externally"
+        ]
+    },
+    {
+        "q": "How can CSP analysis evaluate extension protection?",
+        "o": [
+            "Review Content Security Policy for bypass potential",
+            "Analysis prevents all XSS",
+            "Review grants automatic hardening",
+            "CSP shared between contexts"
+        ]
+    },
+    {
+        "q": "What iframe analysis identifies clickjacking risks?",
+        "o": [
+            "Review frame embedding and communication patterns",
+            "Analysis prevents all clickjacking",
+            "Review grants automatic protection",
+            "Frames shared externally"
+        ]
+    },
+    {
+        "q": "How can eval usage analysis identify code injection?",
+        "o": [
+            "Track dynamic code execution functions",
+            "Analysis prevents all injection",
+            "Tracking grants automatic removal",
+            "Eval shared between contexts"
+        ]
+    },
+    {
+        "q": "What prototype pollution analysis identifies mutation risks?",
+        "o": [
+            "Review object manipulation for prototype attacks",
+            "Analysis prevents all pollution",
+            "Review grants automatic freezing",
+            "Prototypes shared globally"
+        ]
+    },
+    {
+        "q": "How can RegExp analysis identify ReDoS vulnerabilities?",
+        "o": [
+            "Review patterns for catastrophic backtracking",
+            "Analysis prevents all ReDoS",
+            "Review grants automatic optimization",
+            "Patterns shared externally"
+        ]
+    },
+    {
+        "q": "What CORS analysis identifies misconfiguration risks?",
+        "o": [
+            "Review cross-origin request handling and validation",
+            "Analysis prevents all misconfigurations",
+            "Review grants automatic tightening",
+            "CORS shared between origins"
+        ]
+    },
+    {
+        "q": "How can error handling analysis identify information disclosure?",
+        "o": [
+            "Review exception handling for data leakage",
+            "Analysis prevents all disclosure",
+            "Review grants automatic sanitization",
+            "Errors shared externally"
+        ]
+    },
+    {
+        "q": "What input validation analysis identifies injection points?",
+        "o": [
+            "Review data entry points for sanitization gaps",
+            "Analysis prevents all injection",
+            "Review grants automatic validation",
+            "Inputs shared between contexts"
+        ]
+    },
+    {
+        "q": "How can output encoding analysis prevent XSS?",
+        "o": [
+            "Review how data is rendered in HTML contexts",
+            "Analysis eliminates all XSS",
+            "Review grants automatic encoding",
+            "Outputs shared externally"
+        ]
+    },
+    {
+        "q": "What race condition analysis identifies timing vulnerabilities?",
+        "o": [
+            "Review async operations for check-time-use-time flaws",
+            "Analysis prevents all races",
+            "Review grants automatic synchronization",
+            "Timing shared between contexts"
+        ]
+    },
+    {
+        "q": "How can memory leak analysis identify denial of service?",
+        "o": [
+            "Review object lifecycle and garbage collection behavior",
+            "Analysis prevents all leaks",
+            "Review grants automatic cleanup",
+            "Memory shared externally"
+        ]
+    },
+    {
+        "q": "What WebSocket analysis identifies real-time threats?",
+        "o": [
+            "Review bidirectional communication for injection risks",
+            "Analysis prevents all WebSocket attacks",
+            "Review grants automatic protection",
+            "Sockets shared externally"
+        ]
+    },
+    {
+        "q": "How can IndexedDB analysis identify data exposure?",
+        "o": [
+            "Review stored data for sensitive information leakage",
+            "Analysis encrypts all data",
+            "Review grants automatic protection",
+            "Database shared externally"
+        ]
+    },
+    {
+        "q": "What Worker analysis identifies background threats?",
+        "o": [
+            "Review background execution for covert operations",
+            "Analysis prevents all threats",
+            "Review grants automatic termination",
+            "Workers shared between contexts"
+        ]
+    },
+    {
+        "q": "How can manifest analysis identify high-risk permissions?",
+        "o": [
+            "Review declared permissions against extension functionality",
+            "Analysis prevents all abuse",
+            "Review grants automatic restriction",
+            "Manifest shared externally"
+        ]
+    },
+    {
+        "q": "What API hooking analysis identifies function interception?",
+        "o": [
+            "Review modifications to native browser APIs",
+            "Analysis prevents all hooking",
+            "Review grants automatic restoration",
+            "APIs shared between extensions"
+        ]
+    },
+    {
+        "q": "How can keystroke logging analysis detect keyloggers?",
+        "o": [
+            "Review keyboard event handlers for capture behavior",
+            "Analysis prevents all keylogging",
+            "Review grants automatic blocking",
+            "Keystrokes shared externally"
+        ]
+    },
+    {
+        "q": "What clipboard analysis identifies data theft?",
+        "o": [
+            "Review clipboard access patterns and data handling",
+            "Analysis prevents all theft",
+            "Review grants automatic blocking",
+            "Clipboard shared externally"
+        ]
+    },
+    {
+        "q": "How can screenshot analysis detect surveillance?",
+        "o": [
+            "Review tab capture and screen recording usage",
+            "Analysis prevents all surveillance",
+            "Review grants automatic blocking",
+            "Screenshots shared externally"
+        ]
+    },
+    {
+        "q": "What history access analysis identifies tracking?",
+        "o": [
+            "Review browsing history queries and storage",
+            "Analysis prevents all tracking",
+            "Review grants automatic blocking",
+            "History shared externally"
+        ]
+    },
+    {
+        "q": "How can extension reputation systems improve security?",
+        "o": [
+            "Aggregate user reports and behavioral analysis",
+            "Systems prevent all threats",
+            "Reputation grants automatic trust",
+            "Ratings shared between users"
+        ]
+    },
+    {
+        "q": "What differential analysis detects extension update attacks?",
+        "o": [
+            "Compare behavior between extension versions",
+            "Analysis detects all update attacks",
+            "Comparison grants automatic rollback",
+            "Versions shared externally"
+        ]
+    },
+    {
+        "q": "How can browser telemetry improve extension security?",
+        "o": [
+            "Aggregate anonymized usage patterns to detect anomalies",
+            "Telemetry prevents all attacks",
+            "Detection grants automatic response",
+            "Data shared with browser vendor"
+        ]
+    },
+    {
+        "q": "What enterprise controls manage extension risk?",
+        "o": [
+            "Group policy and MDM restrict extension installation",
+            "Controls prevent all unauthorized extensions",
+            "Management grants automatic enforcement",
+            "Policies shared across organization"
+        ]
+    },
+    {
+        "q": "How can regular audits improve extension security posture?",
+        "o": [
+            "Periodically review installed extensions and permissions",
+            "Audits prevent all security issues",
+            "Review grants automatic remediation",
+            "Findings shared immediately"
+        ]
+    },
+    {
+        "q": "What security training improves extension awareness?",
+        "o": [
+            "Educate users about extension risks and indicators",
+            "Training prevents all attacks",
+            "Education grants automatic protection",
+            "Knowledge shared immediately"
+        ]
+    },
+    {
+        "q": "How can incident response address extension compromise?",
+        "o": [
+            "Disable extension and investigate data exposure scope",
+            "Response prevents all damage",
+            "Investigation grants automatic recovery",
+            "Incidents shared externally"
+        ]
+    }
+]

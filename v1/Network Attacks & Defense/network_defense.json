@@ -1,0 +1,4601 @@
+[
+    {
+        "q": "What is a firewall primary function?",
+        "o": [
+            "Filter traffic between networks",
+            "Speed up network connections",
+            "Encrypt all data packets",
+            "Store network backup data"
+        ]
+    },
+    {
+        "q": "What is a packet filter firewall?",
+        "o": [
+            "Examines packet headers only",
+            "Inspects full packet content",
+            "Blocks all network traffic",
+            "Encrypts packet payloads"
+        ]
+    },
+    {
+        "q": "What is a stateful firewall?",
+        "o": [
+            "Tracks connection state",
+            "Filters without state memory",
+            "Only blocks outbound traffic",
+            "Only allows encrypted data"
+        ]
+    },
+    {
+        "q": "What is a stateless firewall?",
+        "o": [
+            "Filters packets individually",
+            "Remembers all connections",
+            "Requires user authentication",
+            "Only works at application layer"
+        ]
+    },
+    {
+        "q": "What does IDS stand for?",
+        "o": [
+            "Intrusion Detection System",
+            "Internal Defense Service",
+            "Internet Data Security",
+            "Integrated Defense System"
+        ]
+    },
+    {
+        "q": "What does IPS stand for?",
+        "o": [
+            "Intrusion Prevention System",
+            "Internal Protection Service",
+            "Internet Privacy System",
+            "Integrated Prevention Service"
+        ]
+    },
+    {
+        "q": "What is difference between IDS and IPS?",
+        "o": [
+            "IPS can block while IDS alerts",
+            "IDS blocks while IPS monitors",
+            "Both are exactly the same now",
+            "IDS is faster than IPS always"
+        ]
+    },
+    {
+        "q": "What is signature-based detection?",
+        "o": [
+            "Match known attack patterns",
+            "Detect unusual behavior only",
+            "Block all unknown traffic",
+            "Allow only signed packets"
+        ]
+    },
+    {
+        "q": "What is anomaly-based detection?",
+        "o": [
+            "Detect deviation from normal",
+            "Match known attack signatures",
+            "Block all encrypted traffic",
+            "Allow only baseline traffic"
+        ]
+    },
+    {
+        "q": "What is a false positive in IDS?",
+        "o": [
+            "Legitimate traffic flagged attack",
+            "Attack not detected by system",
+            "System detecting correctly",
+            "Firewall blocking all traffic"
+        ]
+    },
+    {
+        "q": "What is a false negative in IDS?",
+        "o": [
+            "Attack not detected by system",
+            "Legitimate traffic flagged attack",
+            "System working perfectly now",
+            "All traffic being monitored"
+        ]
+    },
+    {
+        "q": "What is network segmentation?",
+        "o": [
+            "Divide network into zones",
+            "Combine all networks together",
+            "Speed up network traffic flow",
+            "Encrypt all network segments"
+        ]
+    },
+    {
+        "q": "What is a DMZ in networking?",
+        "o": [
+            "Demilitarized zone buffer network",
+            "Direct management zone area",
+            "Data management zone storage",
+            "Dedicated monitoring zone"
+        ]
+    },
+    {
+        "q": "What is purpose of a DMZ?",
+        "o": [
+            "Host public-facing services",
+            "Store internal databases only",
+            "Connect to internal network",
+            "Block all external traffic"
+        ]
+    },
+    {
+        "q": "What is a VLAN?",
+        "o": [
+            "Virtual Local Area Network",
+            "Very Large Area Network",
+            "Virtual Link Access Node",
+            "Verified Local Access Network"
+        ]
+    },
+    {
+        "q": "What is VLAN security benefit?",
+        "o": [
+            "Isolate network segments logically",
+            "Speed up all network traffic",
+            "Encrypt VLAN tagged traffic",
+            "Block all external connections"
+        ]
+    },
+    {
+        "q": "What is a proxy firewall?",
+        "o": [
+            "Intermediary for all connections",
+            "Direct packet forwarding only",
+            "Encrypts all proxy traffic",
+            "Blocks all proxy requests"
+        ]
+    },
+    {
+        "q": "What is an application layer firewall?",
+        "o": [
+            "Inspects application protocols",
+            "Only checks packet headers",
+            "Filters at physical layer",
+            "Blocks all applications"
+        ]
+    },
+    {
+        "q": "What is WAF purpose?",
+        "o": [
+            "Protect web applications specifically",
+            "Speed up web application loading",
+            "Encrypt web traffic only",
+            "Block all web traffic flow"
+        ]
+    },
+    {
+        "q": "What is next-generation firewall?",
+        "o": [
+            "Deep packet inspection capable",
+            "Basic packet filtering only",
+            "Physical firewall hardware",
+            "Legacy firewall replacement"
+        ]
+    },
+    {
+        "q": "What is deep packet inspection?",
+        "o": [
+            "Examine packet payload content",
+            "Check packet headers only",
+            "Encrypt packet data payload",
+            "Block deep nested packets"
+        ]
+    },
+    {
+        "q": "What is network access control?",
+        "o": [
+            "Restrict device network access",
+            "Speed up network connections",
+            "Encrypt all access requests",
+            "Block all network access"
+        ]
+    },
+    {
+        "q": "What is 802.1X authentication?",
+        "o": [
+            "Port-based network access control",
+            "Wireless encryption standard only",
+            "Physical port security feature",
+            "Application layer protocol"
+        ]
+    },
+    {
+        "q": "What is RADIUS protocol?",
+        "o": [
+            "Remote authentication service",
+            "Rapid access defense system",
+            "Remote access data interface",
+            "Routing authentication device"
+        ]
+    },
+    {
+        "q": "What is TACACS+ protocol?",
+        "o": [
+            "Terminal Access Controller service",
+            "Transmission access control",
+            "Technical authentication control",
+            "Transport access command"
+        ]
+    },
+    {
+        "q": "What is difference RADIUS vs TACACS+?",
+        "o": [
+            "TACACS+ encrypts entire packet",
+            "RADIUS encrypts entire packet",
+            "Both use same encryption method",
+            "Neither encrypts any data"
+        ]
+    },
+    {
+        "q": "What is network monitoring?",
+        "o": [
+            "Observe network traffic patterns",
+            "Block suspicious network traffic",
+            "Encrypt monitored traffic data",
+            "Speed up network performance"
+        ]
+    },
+    {
+        "q": "What is NetFlow protocol?",
+        "o": [
+            "Network traffic analysis protocol",
+            "Network forwarding protocol only",
+            "Encryption for network flows",
+            "Blocking protocol for flows"
+        ]
+    },
+    {
+        "q": "What is SNMP for monitoring?",
+        "o": [
+            "Simple Network Management Protocol",
+            "Secure Network Monitoring Protocol",
+            "System Network Management Process",
+            "Standard Network Monitor Program"
+        ]
+    },
+    {
+        "q": "What is a honeypot?",
+        "o": [
+            "Decoy system to attract attackers",
+            "Production system with security",
+            "Encrypted storage container",
+            "Firewall configuration tool"
+        ]
+    },
+    {
+        "q": "What is a honeynet?",
+        "o": [
+            "Network of honeypot systems",
+            "Single honeypot deployment",
+            "Encrypted network segment",
+            "Firewall protected network"
+        ]
+    },
+    {
+        "q": "What is network forensics?",
+        "o": [
+            "Investigate network incidents",
+            "Speed up network performance",
+            "Encrypt forensic evidence",
+            "Block forensic analysis"
+        ]
+    },
+    {
+        "q": "What is packet capture?",
+        "o": [
+            "Record network traffic data",
+            "Block captured packets only",
+            "Encrypt captured traffic",
+            "Speed up packet delivery"
+        ]
+    },
+    {
+        "q": "What is tcpdump tool?",
+        "o": [
+            "Command-line packet analyzer",
+            "Graphical network monitor",
+            "Firewall configuration tool",
+            "Encryption key generator"
+        ]
+    },
+    {
+        "q": "What is Wireshark tool?",
+        "o": [
+            "Network protocol analyzer GUI",
+            "Command-line packet capture",
+            "Firewall management tool",
+            "Encryption testing tool"
+        ]
+    },
+    {
+        "q": "What is network baselining?",
+        "o": [
+            "Establish normal traffic patterns",
+            "Block baseline traffic only",
+            "Encrypt baseline measurements",
+            "Speed up baseline traffic"
+        ]
+    },
+    {
+        "q": "What is egress filtering?",
+        "o": [
+            "Filter outbound traffic",
+            "Filter inbound traffic only",
+            "Block all egress traffic",
+            "Encrypt egress packets"
+        ]
+    },
+    {
+        "q": "What is ingress filtering?",
+        "o": [
+            "Filter inbound traffic",
+            "Filter outbound traffic only",
+            "Block all ingress traffic",
+            "Encrypt ingress packets"
+        ]
+    },
+    {
+        "q": "What is BCP 38 for?",
+        "o": [
+            "Source address validation filtering",
+            "Destination address validation",
+            "Encrypt all network packets",
+            "Block all spoofed traffic"
+        ]
+    },
+    {
+        "q": "What is ACL in networking?",
+        "o": [
+            "Access Control List for filtering",
+            "Application Control Layer",
+            "Automatic Configuration List",
+            "Access Command Language"
+        ]
+    },
+    {
+        "q": "What is implicit deny in ACL?",
+        "o": [
+            "Block traffic not explicitly allowed",
+            "Allow traffic not explicitly denied",
+            "Encrypt denied traffic only",
+            "Log all denied traffic"
+        ]
+    },
+    {
+        "q": "What is port security?",
+        "o": [
+            "Limit devices per switch port",
+            "Encrypt port communications",
+            "Block all port traffic flow",
+            "Speed up port connections"
+        ]
+    },
+    {
+        "q": "What is MAC address filtering?",
+        "o": [
+            "Allow only specific MAC addresses",
+            "Encrypt MAC address traffic",
+            "Block all MAC traffic flow",
+            "Speed up MAC lookups"
+        ]
+    },
+    {
+        "q": "What is ARP inspection?",
+        "o": [
+            "Validate ARP messages integrity",
+            "Block all ARP traffic now",
+            "Encrypt ARP packet data",
+            "Speed up ARP resolution"
+        ]
+    },
+    {
+        "q": "What is DHCP snooping?",
+        "o": [
+            "Filter unauthorized DHCP servers",
+            "Block all DHCP traffic here",
+            "Encrypt DHCP communications",
+            "Speed up DHCP process"
+        ]
+    },
+    {
+        "q": "What is IP source guard?",
+        "o": [
+            "Validate source IP addresses",
+            "Block all IP source traffic",
+            "Encrypt IP source data",
+            "Speed up IP routing"
+        ]
+    },
+    {
+        "q": "What is network encryption?",
+        "o": [
+            "Protect data in transit",
+            "Protect data at rest only",
+            "Block encrypted traffic",
+            "Speed up network traffic"
+        ]
+    },
+    {
+        "q": "What is VPN purpose?",
+        "o": [
+            "Secure tunnel over public network",
+            "Speed up public connections",
+            "Block VPN traffic flow",
+            "Encrypt at rest only"
+        ]
+    },
+    {
+        "q": "What is IPsec protocol?",
+        "o": [
+            "Secure IP packet transmission",
+            "Speed up IP routing only",
+            "Block IP packet traffic",
+            "Internet Protocol security"
+        ]
+    },
+    {
+        "q": "What is SSL/TLS for?",
+        "o": [
+            "Secure transport layer encryption",
+            "Speed up secure connections",
+            "Block secure traffic only",
+            "Store secure certificates"
+        ]
+    },
+    {
+        "q": "What is network quarantine?",
+        "o": [
+            "Isolate non-compliant devices",
+            "Block all network devices",
+            "Encrypt quarantined traffic",
+            "Speed up quarantine process"
+        ]
+    },
+    {
+        "q": "What is endpoint security?",
+        "o": [
+            "Protect individual devices",
+            "Protect network infrastructure",
+            "Block endpoint connections",
+            "Encrypt endpoint traffic"
+        ]
+    },
+    {
+        "q": "What is host-based firewall?",
+        "o": [
+            "Firewall on individual device",
+            "Firewall for entire network",
+            "Block all host traffic",
+            "Encrypt host communications"
+        ]
+    },
+    {
+        "q": "What is HIDS?",
+        "o": [
+            "Host-based Intrusion Detection",
+            "Hardware Intrusion Defense System",
+            "Hybrid Intrusion Detection Service",
+            "Host Identity Detection System"
+        ]
+    },
+    {
+        "q": "What is NIDS?",
+        "o": [
+            "Network Intrusion Detection System",
+            "Node Intrusion Defense System",
+            "Network Identity Detection Service",
+            "Node Identity Defense System"
+        ]
+    },
+    {
+        "q": "What is sandbox technology?",
+        "o": [
+            "Isolated environment for testing",
+            "Production server environment",
+            "Encrypted storage container",
+            "Firewall configuration zone"
+        ]
+    },
+    {
+        "q": "What is network tap?",
+        "o": [
+            "Passive traffic monitoring device",
+            "Active traffic filtering device",
+            "Encrypted traffic splitter",
+            "Firewall bypass device"
+        ]
+    },
+    {
+        "q": "What is SPAN port?",
+        "o": [
+            "Switch Port Analyzer mirror",
+            "Security Protocol Access Node",
+            "Secure Port Authentication Node",
+            "Switch Protection Access Network"
+        ]
+    },
+    {
+        "q": "What is log management?",
+        "o": [
+            "Collect and analyze system logs",
+            "Block log generation process",
+            "Encrypt all log entries",
+            "Delete old log files only"
+        ]
+    },
+    {
+        "q": "What is SIEM system?",
+        "o": [
+            "Security Information Event Management",
+            "Secure Internet Event Monitor",
+            "System Information Event Manager",
+            "Security Intrusion Event Monitor"
+        ]
+    },
+    {
+        "q": "What is SIEM benefit?",
+        "o": [
+            "Correlate events across systems",
+            "Block all security events",
+            "Encrypt event log data",
+            "Speed up event processing"
+        ]
+    },
+    {
+        "q": "What is security orchestration?",
+        "o": [
+            "Automate security response actions",
+            "Manual security operations only",
+            "Block automated responses",
+            "Encrypt orchestration data"
+        ]
+    },
+    {
+        "q": "What is threat intelligence?",
+        "o": [
+            "Information about current threats",
+            "Block all threat sources",
+            "Encrypt threat data only",
+            "Speed up threat detection"
+        ]
+    },
+    {
+        "q": "What is IOC in security?",
+        "o": [
+            "Indicator of Compromise evidence",
+            "Internet Operation Center",
+            "Internal Operation Control",
+            "Integrated Operation Command"
+        ]
+    },
+    {
+        "q": "What is network hardening?",
+        "o": [
+            "Reduce attack surface area",
+            "Increase network complexity",
+            "Block all network traffic",
+            "Encrypt network configuration"
+        ]
+    },
+    {
+        "q": "What is patch management?",
+        "o": [
+            "Keep systems updated with fixes",
+            "Block all system updates",
+            "Encrypt patch downloads",
+            "Speed up patch deployment"
+        ]
+    },
+    {
+        "q": "What is vulnerability scanning?",
+        "o": [
+            "Identify security weaknesses",
+            "Block vulnerable systems",
+            "Encrypt scan results",
+            "Speed up system scanning"
+        ]
+    },
+    {
+        "q": "What is penetration testing?",
+        "o": [
+            "Simulate attacks to find flaws",
+            "Block penetration attempts",
+            "Encrypt test results data",
+            "Speed up security testing"
+        ]
+    },
+    {
+        "q": "What is difference vuln scan vs pentest?",
+        "o": [
+            "Pentest exploits vulnerabilities",
+            "Vuln scan exploits vulnerabilities",
+            "Both are exactly the same",
+            "Neither finds vulnerabilities"
+        ]
+    },
+    {
+        "q": "What is defense in depth?",
+        "o": [
+            "Multiple layers of security",
+            "Single strong security layer",
+            "Block all defense traffic",
+            "Encrypt defense configuration"
+        ]
+    },
+    {
+        "q": "What is least privilege principle?",
+        "o": [
+            "Minimal necessary access rights",
+            "Maximum access for all users",
+            "Block privileged access only",
+            "Encrypt privilege settings"
+        ]
+    },
+    {
+        "q": "What is separation of duties?",
+        "o": [
+            "Distribute critical functions",
+            "Combine all roles together",
+            "Block duty assignments",
+            "Encrypt duty definitions"
+        ]
+    },
+    {
+        "q": "What is change management?",
+        "o": [
+            "Control system modifications",
+            "Block all system changes",
+            "Encrypt change requests",
+            "Speed up change process"
+        ]
+    },
+    {
+        "q": "What is incident response plan?",
+        "o": [
+            "Procedure for security incidents",
+            "Block incident notifications",
+            "Encrypt incident reports",
+            "Speed up incident handling"
+        ]
+    },
+    {
+        "q": "What is business continuity?",
+        "o": [
+            "Maintain operations during crisis",
+            "Block crisis communications",
+            "Encrypt continuity plans",
+            "Speed up crisis response"
+        ]
+    },
+    {
+        "q": "What is disaster recovery?",
+        "o": [
+            "Restore systems after disaster",
+            "Block disaster notifications",
+            "Encrypt disaster plans only",
+            "Speed up disaster response"
+        ]
+    },
+    {
+        "q": "What is RTO in recovery?",
+        "o": [
+            "Recovery Time Objective target",
+            "Real Time Operation system",
+            "Remote Transfer Operation",
+            "Rapid Transition Objective"
+        ]
+    },
+    {
+        "q": "What is RPO in recovery?",
+        "o": [
+            "Recovery Point Objective data",
+            "Real Point Operation system",
+            "Remote Protection Objective",
+            "Rapid Protection Operation"
+        ]
+    },
+    {
+        "q": "What is network redundancy?",
+        "o": [
+            "Duplicate paths for availability",
+            "Single path for efficiency",
+            "Block redundant connections",
+            "Encrypt redundant links"
+        ]
+    },
+    {
+        "q": "What is high availability?",
+        "o": [
+            "Minimize system downtime goal",
+            "Maximize downtime for maintenance",
+            "Block availability checks",
+            "Encrypt availability data"
+        ]
+    },
+    {
+        "q": "What is load balancing?",
+        "o": [
+            "Distribute traffic across servers",
+            "Send all to single server",
+            "Block balanced traffic flow",
+            "Encrypt load distribution"
+        ]
+    },
+    {
+        "q": "What is failover mechanism?",
+        "o": [
+            "Switch to backup on failure",
+            "Block failover connections",
+            "Encrypt failover traffic",
+            "Speed up failover process"
+        ]
+    },
+    {
+        "q": "What is active-passive failover?",
+        "o": [
+            "Standby waits for primary fail",
+            "Both systems active together",
+            "Block passive system traffic",
+            "Encrypt failover decisions"
+        ]
+    },
+    {
+        "q": "What is active-active failover?",
+        "o": [
+            "Both systems handle traffic",
+            "One system always waiting",
+            "Block active system traffic",
+            "Encrypt active connections"
+        ]
+    },
+    {
+        "q": "What is network time protocol?",
+        "o": [
+            "Synchronize clocks across network",
+            "Block time synchronization",
+            "Encrypt time server traffic",
+            "Speed up time updates"
+        ]
+    },
+    {
+        "q": "What is NTP security concern?",
+        "o": [
+            "Can be abused for amplification",
+            "NTP fully secure protocol",
+            "No security concerns exist",
+            "Only encryption is needed"
+        ]
+    },
+    {
+        "q": "What is secure DNS?",
+        "o": [
+            "DNSSEC or encrypted DNS",
+            "Standard DNS protocol only",
+            "Block all DNS traffic flow",
+            "Speed up DNS resolution"
+        ]
+    },
+    {
+        "q": "What is DNS over HTTPS?",
+        "o": [
+            "Encrypt DNS in HTTPS traffic",
+            "Standard DNS over HTTP only",
+            "Block DoH traffic entirely",
+            "Speed up DoH resolution"
+        ]
+    },
+    {
+        "q": "What is DNS over TLS?",
+        "o": [
+            "Encrypt DNS using TLS protocol",
+            "Standard DNS over TCP only",
+            "Block DoT traffic entirely",
+            "Speed up DoT resolution"
+        ]
+    },
+    {
+        "q": "What is DNSSEC purpose?",
+        "o": [
+            "Authenticate DNS responses",
+            "Encrypt DNS queries only",
+            "Block DNSSEC traffic flow",
+            "Speed up DNS resolution"
+        ]
+    },
+    {
+        "q": "What is network behavior analysis?",
+        "o": [
+            "Detect anomalies in traffic",
+            "Block behavioral analysis",
+            "Encrypt behavior patterns",
+            "Speed up analysis results"
+        ]
+    },
+    {
+        "q": "What is user behavior analytics?",
+        "o": [
+            "Detect unusual user activity",
+            "Block user behavior monitoring",
+            "Encrypt behavior analysis",
+            "Speed up user analytics"
+        ]
+    },
+    {
+        "q": "What is zero trust model?",
+        "o": [
+            "Never trust always verify access",
+            "Trust all internal traffic",
+            "Block all external traffic",
+            "Encrypt zero trust data"
+        ]
+    },
+    {
+        "q": "What is microsegmentation?",
+        "o": [
+            "Fine-grained network segmentation",
+            "Large network segments only",
+            "Block microsegmented traffic",
+            "Encrypt segment boundaries"
+        ]
+    },
+    {
+        "q": "What is software-defined perimeter?",
+        "o": [
+            "Dynamic network access boundary",
+            "Physical firewall perimeter only",
+            "Block perimeter connections",
+            "Encrypt perimeter traffic"
+        ]
+    },
+    {
+        "q": "What is SSL inspection?",
+        "o": [
+            "Decrypt and examine encrypted traffic",
+            "Block all SSL traffic flow",
+            "Speed up SSL connections",
+            "Only encrypt SSL traffic"
+        ]
+    },
+    {
+        "q": "What is SSL inspection limitation?",
+        "o": [
+            "Privacy concerns and certificate trust",
+            "No limitations exist at all",
+            "Always faster than no inspection",
+            "Simpler than packet filtering"
+        ]
+    },
+    {
+        "q": "What is certificate pinning?",
+        "o": [
+            "Bind application to specific certificate",
+            "Block all certificate traffic",
+            "Encrypt certificate data only",
+            "Speed up certificate validation"
+        ]
+    },
+    {
+        "q": "What is network address translation?",
+        "o": [
+            "Map private to public addresses",
+            "Block address translation traffic",
+            "Encrypt translated addresses",
+            "Speed up address lookups"
+        ]
+    },
+    {
+        "q": "What is NAT security benefit?",
+        "o": [
+            "Hide internal IP addresses",
+            "Encrypt all NAT traffic",
+            "Block NAT connections now",
+            "Speed up NAT processing"
+        ]
+    },
+    {
+        "q": "What is carrier-grade NAT?",
+        "o": [
+            "Large scale NAT for ISPs",
+            "Small scale NAT for home",
+            "Block carrier NAT traffic",
+            "Encrypt carrier NAT addresses"
+        ]
+    },
+    {
+        "q": "What is port address translation?",
+        "o": [
+            "NAT with port mapping too",
+            "Block port translation traffic",
+            "Encrypt port mappings only",
+            "Speed up port translation"
+        ]
+    },
+    {
+        "q": "What is reverse proxy security?",
+        "o": [
+            "Hide backend server details",
+            "Block reverse proxy traffic",
+            "Encrypt proxy configuration",
+            "Speed up proxy connections"
+        ]
+    },
+    {
+        "q": "What is forward proxy security?",
+        "o": [
+            "Control outbound traffic access",
+            "Block forward proxy traffic",
+            "Encrypt proxy requests only",
+            "Speed up forward proxy"
+        ]
+    },
+    {
+        "q": "What is transparent proxy?",
+        "o": [
+            "Proxy without client awareness",
+            "Block transparent proxy traffic",
+            "Encrypt transparent connections",
+            "Speed up transparent proxy"
+        ]
+    },
+    {
+        "q": "What is content filtering?",
+        "o": [
+            "Block unwanted content types",
+            "Allow all content types access",
+            "Encrypt filtered content only",
+            "Speed up content delivery"
+        ]
+    },
+    {
+        "q": "What is URL filtering?",
+        "o": [
+            "Block access to specific URLs",
+            "Allow all URL access types",
+            "Encrypt filtered URL data",
+            "Speed up URL resolution"
+        ]
+    },
+    {
+        "q": "What is DNS filtering?",
+        "o": [
+            "Block domains at DNS level",
+            "Allow all DNS queries through",
+            "Encrypt DNS filter rules",
+            "Speed up DNS filtering"
+        ]
+    },
+    {
+        "q": "What is IP reputation filtering?",
+        "o": [
+            "Block known malicious IPs",
+            "Allow all IP addresses through",
+            "Encrypt IP reputation data",
+            "Speed up IP lookups"
+        ]
+    },
+    {
+        "q": "What is geo-blocking?",
+        "o": [
+            "Block traffic by geographic location",
+            "Allow all geographic locations",
+            "Encrypt geographic data only",
+            "Speed up geo lookups"
+        ]
+    },
+    {
+        "q": "What is application control?",
+        "o": [
+            "Allow or block specific applications",
+            "Allow all applications through",
+            "Encrypt application traffic",
+            "Speed up applications"
+        ]
+    },
+    {
+        "q": "What is DLP in security?",
+        "o": [
+            "Data Loss Prevention system",
+            "Dynamic Link Protection only",
+            "Distributed Load Processing",
+            "Data Logging Protocol"
+        ]
+    },
+    {
+        "q": "What is DLP network monitoring?",
+        "o": [
+            "Detect sensitive data leaving network",
+            "Block all network monitoring",
+            "Encrypt DLP configuration",
+            "Speed up DLP processing"
+        ]
+    },
+    {
+        "q": "What is email gateway security?",
+        "o": [
+            "Filter malicious emails",
+            "Block all email traffic flow",
+            "Encrypt email gateway only",
+            "Speed up email delivery"
+        ]
+    },
+    {
+        "q": "What is anti-phishing protection?",
+        "o": [
+            "Detect fraudulent websites emails",
+            "Block all phishing traffic",
+            "Encrypt phishing detection",
+            "Speed up phishing analysis"
+        ]
+    },
+    {
+        "q": "What is DMARC protocol?",
+        "o": [
+            "Email authentication policy protocol",
+            "Block DMARC email traffic",
+            "Encrypt DMARC records only",
+            "Speed up DMARC validation"
+        ]
+    },
+    {
+        "q": "What is SPF for email?",
+        "o": [
+            "Sender Policy Framework validation",
+            "Block SPF email messages",
+            "Encrypt SPF record data",
+            "Speed up SPF checking"
+        ]
+    },
+    {
+        "q": "What is DKIM for email?",
+        "o": [
+            "DomainKeys Identified Mail signature",
+            "Block DKIM email messages",
+            "Encrypt DKIM signatures only",
+            "Speed up DKIM validation"
+        ]
+    },
+    {
+        "q": "What is network antimalware?",
+        "o": [
+            "Scan traffic for malware",
+            "Block all network traffic",
+            "Encrypt malware signatures",
+            "Speed up malware detection"
+        ]
+    },
+    {
+        "q": "What is sandboxing in security?",
+        "o": [
+            "Execute suspicious files safely",
+            "Block sandbox execution now",
+            "Encrypt sandbox results only",
+            "Speed up sandbox analysis"
+        ]
+    },
+    {
+        "q": "What is file hash analysis?",
+        "o": [
+            "Compare file hashes to known bad",
+            "Block all hash analysis here",
+            "Encrypt hash values only",
+            "Speed up hash computation"
+        ]
+    },
+    {
+        "q": "What is behavioral analysis malware?",
+        "o": [
+            "Detect by actions not signatures",
+            "Block behavioral analysis",
+            "Encrypt behavior patterns",
+            "Speed up behavior detection"
+        ]
+    },
+    {
+        "q": "What is heuristic detection?",
+        "o": [
+            "Rule-based suspicious detection",
+            "Block heuristic analysis",
+            "Encrypt heuristic rules",
+            "Speed up heuristic scanning"
+        ]
+    },
+    {
+        "q": "What is command and control detection?",
+        "o": [
+            "Identify malware communication",
+            "Block C2 detection tools",
+            "Encrypt C2 patterns only",
+            "Speed up C2 detection"
+        ]
+    },
+    {
+        "q": "What is beaconing detection?",
+        "o": [
+            "Find periodic outbound connections",
+            "Block beaconing traffic only",
+            "Encrypt beacon patterns",
+            "Speed up beacon detection"
+        ]
+    },
+    {
+        "q": "What is DNS exfiltration detection?",
+        "o": [
+            "Find data hidden in DNS queries",
+            "Block all DNS traffic now",
+            "Encrypt DNS exfil patterns",
+            "Speed up DNS analysis"
+        ]
+    },
+    {
+        "q": "What is encrypted traffic analysis?",
+        "o": [
+            "Analyze metadata not content",
+            "Decrypt all encrypted traffic",
+            "Block encrypted traffic here",
+            "Speed up encryption analysis"
+        ]
+    },
+    {
+        "q": "What is JA3 fingerprint?",
+        "o": [
+            "TLS client fingerprint method",
+            "Block JA3 fingerprinting",
+            "Encrypt JA3 hash values",
+            "Speed up JA3 analysis"
+        ]
+    },
+    {
+        "q": "What is JA3S fingerprint?",
+        "o": [
+            "TLS server fingerprint method",
+            "Block JA3S fingerprinting",
+            "Encrypt JA3S hash values",
+            "Speed up JA3S analysis"
+        ]
+    },
+    {
+        "q": "What is network deception technology?",
+        "o": [
+            "Mislead attackers with decoys",
+            "Block deception technology",
+            "Encrypt deception assets",
+            "Speed up deception deployment"
+        ]
+    },
+    {
+        "q": "What is canary token?",
+        "o": [
+            "Alert on unauthorized access",
+            "Block canary token usage",
+            "Encrypt canary data only",
+            "Speed up canary detection"
+        ]
+    },
+    {
+        "q": "What is threat hunting?",
+        "o": [
+            "Proactive search for threats",
+            "Wait for alerts to trigger",
+            "Block hunting activities",
+            "Encrypt hunting results"
+        ]
+    },
+    {
+        "q": "What is hypothesis-driven hunting?",
+        "o": [
+            "Start with assumption to test",
+            "Random search for threats",
+            "Block hypothesis testing",
+            "Encrypt hunting hypothesis"
+        ]
+    },
+    {
+        "q": "What is IOC-driven hunting?",
+        "o": [
+            "Search for known indicators",
+            "Random search without IOCs",
+            "Block IOC hunting methods",
+            "Encrypt IOC search results"
+        ]
+    },
+    {
+        "q": "What is network flow analysis?",
+        "o": [
+            "Analyze traffic metadata patterns",
+            "Inspect full packet content",
+            "Block flow analysis tools",
+            "Encrypt flow data only"
+        ]
+    },
+    {
+        "q": "What is full packet capture?",
+        "o": [
+            "Store complete packet data",
+            "Store only packet headers",
+            "Block packet capture tools",
+            "Encrypt captured packets"
+        ]
+    },
+    {
+        "q": "What is network forensic analysis?",
+        "o": [
+            "Investigate captured traffic",
+            "Block forensic analysis",
+            "Encrypt forensic evidence",
+            "Speed up forensic review"
+        ]
+    },
+    {
+        "q": "What is PCAP file format?",
+        "o": [
+            "Packet capture file format",
+            "Packet compression format",
+            "Protected capture format",
+            "Parsed capture format"
+        ]
+    },
+    {
+        "q": "What is network file carving?",
+        "o": [
+            "Extract files from traffic",
+            "Block file extraction here",
+            "Encrypt carved files only",
+            "Speed up file carving"
+        ]
+    },
+    {
+        "q": "What is session reconstruction?",
+        "o": [
+            "Rebuild network conversations",
+            "Block session reconstruction",
+            "Encrypt session data only",
+            "Speed up reconstruction"
+        ]
+    },
+    {
+        "q": "What is security information sharing?",
+        "o": [
+            "Exchange threat data organizations",
+            "Block information sharing here",
+            "Encrypt shared information",
+            "Speed up sharing process"
+        ]
+    },
+    {
+        "q": "What is STIX format?",
+        "o": [
+            "Structured Threat Information eXpression",
+            "Standard Threat Information XML",
+            "Security Threat Index eXchange",
+            "System Threat Identification XML"
+        ]
+    },
+    {
+        "q": "What is TAXII transport?",
+        "o": [
+            "Threat intelligence exchange protocol",
+            "Block TAXII communications",
+            "Encrypt TAXII messages only",
+            "Speed up TAXII transfer"
+        ]
+    },
+    {
+        "q": "What is netflow vs sflow?",
+        "o": [
+            "Different flow sampling methods",
+            "Both exactly the same method",
+            "Block both flow protocols",
+            "Encrypt flow protocols only"
+        ]
+    },
+    {
+        "q": "What is IPFIX protocol?",
+        "o": [
+            "IP Flow Information Export",
+            "IP Firewall Information eXchange",
+            "Internet Protocol Flow Index",
+            "IP Filtering Information XML"
+        ]
+    },
+    {
+        "q": "What is DNS sinkhole?",
+        "o": [
+            "Redirect malicious domains",
+            "Block all DNS traffic here",
+            "Encrypt sinkhole destinations",
+            "Speed up DNS sinkholing"
+        ]
+    },
+    {
+        "q": "What is null routing?",
+        "o": [
+            "Route traffic to nowhere",
+            "Block null route traffic",
+            "Encrypt null route path",
+            "Speed up null routing"
+        ]
+    },
+    {
+        "q": "What is blackhole routing?",
+        "o": [
+            "Discard packets silently route",
+            "Block blackhole route traffic",
+            "Encrypt blackhole destinations",
+            "Speed up blackhole routing"
+        ]
+    },
+    {
+        "q": "What is rate limiting defense?",
+        "o": [
+            "Limit request rate per source",
+            "Block rate limited traffic",
+            "Encrypt rate limit values",
+            "Speed up rate checking"
+        ]
+    },
+    {
+        "q": "What is connection limiting?",
+        "o": [
+            "Limit concurrent connections",
+            "Allow unlimited connections",
+            "Encrypt connection limits",
+            "Speed up connection setup"
+        ]
+    },
+    {
+        "q": "What is SYN cookie defense?",
+        "o": [
+            "Stateless SYN flood protection",
+            "Block all SYN traffic now",
+            "Encrypt SYN cookie values",
+            "Speed up SYN processing"
+        ]
+    },
+    {
+        "q": "What is TCP reset defense?",
+        "o": [
+            "Send RST to terminate attack",
+            "Block all TCP reset traffic",
+            "Encrypt reset packet values",
+            "Speed up reset response"
+        ]
+    },
+    {
+        "q": "What is tarpit defense?",
+        "o": [
+            "Slow down attacker connections",
+            "Speed up attacker connections",
+            "Block tarpit connections here",
+            "Encrypt tarpit configuration"
+        ]
+    },
+    {
+        "q": "What is CAPTCHA for defense?",
+        "o": [
+            "Challenge to prove human user",
+            "Block all CAPTCHA requests",
+            "Encrypt CAPTCHA challenges",
+            "Speed up CAPTCHA solving"
+        ]
+    },
+    {
+        "q": "What is Proof of Work defense?",
+        "o": [
+            "Require computation before access",
+            "Block proof of work traffic",
+            "Encrypt PoW challenges only",
+            "Speed up PoW verification"
+        ]
+    },
+    {
+        "q": "What is BGP route filtering?",
+        "o": [
+            "Control advertised routes",
+            "Block all BGP traffic here",
+            "Encrypt BGP route data",
+            "Speed up BGP convergence"
+        ]
+    },
+    {
+        "q": "What is RPKI for routing?",
+        "o": [
+            "Resource Public Key Infrastructure",
+            "Route Protection Key Index",
+            "Routing Protocol Key Identifier",
+            "Remote Protection Key Infrastructure"
+        ]
+    },
+    {
+        "q": "What is ROA in routing security?",
+        "o": [
+            "Route Origin Authorization certificate",
+            "Route Operation Analysis tool",
+            "Routing Origin Access control",
+            "Remote Origin Authentication"
+        ]
+    },
+    {
+        "q": "What is BGP community for security?",
+        "o": [
+            "Tag routes for policy decisions",
+            "Block community tagged routes",
+            "Encrypt community values only",
+            "Speed up community processing"
+        ]
+    },
+    {
+        "q": "What is GTSM for BGP?",
+        "o": [
+            "Generalized TTL Security Mechanism",
+            "Global Traffic Security Monitor",
+            "Generic Transport Security Method",
+            "Guaranteed Transmission Security"
+        ]
+    },
+    {
+        "q": "What is MD5 for BGP authentication?",
+        "o": [
+            "Authenticate BGP peer sessions",
+            "Block authenticated BGP peers",
+            "Encrypt BGP peer traffic",
+            "Speed up BGP authentication"
+        ]
+    },
+    {
+        "q": "What is TCP-AO for BGP?",
+        "o": [
+            "TCP Authentication Option enhanced",
+            "TCP Access Override command",
+            "TCP Attack Observation tool",
+            "TCP Algorithm Option setting"
+        ]
+    },
+    {
+        "q": "What is prefix filtering?",
+        "o": [
+            "Accept only valid prefix ranges",
+            "Block all prefix filtering",
+            "Encrypt prefix filter rules",
+            "Speed up prefix validation"
+        ]
+    },
+    {
+        "q": "What is bogon filtering?",
+        "o": [
+            "Block unallocated IP ranges",
+            "Allow bogon addresses through",
+            "Encrypt bogon filter list",
+            "Speed up bogon checking"
+        ]
+    },
+    {
+        "q": "What is Martian filtering?",
+        "o": [
+            "Block reserved IP addresses",
+            "Allow Martian addresses through",
+            "Encrypt Martian filter list",
+            "Speed up Martian checking"
+        ]
+    },
+    {
+        "q": "What is uRPF check?",
+        "o": [
+            "Unicast Reverse Path Forwarding",
+            "Universal Route Protection Filter",
+            "Unicast Routing Policy Firewall",
+            "Universal Reverse Proxy Filter"
+        ]
+    },
+    {
+        "q": "What is strict uRPF mode?",
+        "o": [
+            "Source must match interface route",
+            "Source checked any interface",
+            "Block all uRPF traffic now",
+            "Encrypt uRPF check results"
+        ]
+    },
+    {
+        "q": "What is loose uRPF mode?",
+        "o": [
+            "Source must exist in routing table",
+            "Source must match exact interface",
+            "Block loose uRPF traffic",
+            "Encrypt loose mode checks"
+        ]
+    },
+    {
+        "q": "What is control plane policing?",
+        "o": [
+            "Protect device management interface",
+            "Block control plane traffic",
+            "Encrypt control plane data",
+            "Speed up control processing"
+        ]
+    },
+    {
+        "q": "What is management plane security?",
+        "o": [
+            "Secure device administration access",
+            "Block management connections",
+            "Encrypt management traffic",
+            "Speed up management access"
+        ]
+    },
+    {
+        "q": "What is out-of-band management?",
+        "o": [
+            "Separate network for management",
+            "Management over production network",
+            "Block out-of-band access here",
+            "Encrypt OOB management traffic"
+        ]
+    },
+    {
+        "q": "What is in-band management risk?",
+        "o": [
+            "Management traffic on production",
+            "No risk with in-band management",
+            "In-band more secure than OOB",
+            "Block in-band management traffic"
+        ]
+    },
+    {
+        "q": "What is jump server?",
+        "o": [
+            "Secure gateway for admin access",
+            "Block jump server connections",
+            "Encrypt jump server traffic",
+            "Speed up jump connections"
+        ]
+    },
+    {
+        "q": "What is bastion host?",
+        "o": [
+            "Hardened server for gateway access",
+            "Block bastion host traffic",
+            "Encrypt bastion connections",
+            "Speed up bastion access"
+        ]
+    },
+    {
+        "q": "What is privileged access management?",
+        "o": [
+            "Control administrative credentials",
+            "Block privileged access here",
+            "Encrypt PAM system data",
+            "Speed up PAM validation"
+        ]
+    },
+    {
+        "q": "What is session recording?",
+        "o": [
+            "Record admin session activity",
+            "Block session recording here",
+            "Encrypt session recordings",
+            "Speed up session playback"
+        ]
+    },
+    {
+        "q": "What is just-in-time access?",
+        "o": [
+            "Grant access only when needed",
+            "Always maintain persistent access",
+            "Block JIT access requests",
+            "Encrypt JIT credentials"
+        ]
+    },
+    {
+        "q": "What is password vault?",
+        "o": [
+            "Secure storage for credentials",
+            "Block vault access requests",
+            "Speed up credential retrieval",
+            "Encrypt only vault backups"
+        ]
+    },
+    {
+        "q": "What is secrets management?",
+        "o": [
+            "Handle sensitive credentials securely",
+            "Block secrets distribution here",
+            "Speed up secret rotation",
+            "Encrypt secrets at rest only"
+        ]
+    },
+    {
+        "q": "What is certificate rotation?",
+        "o": [
+            "Periodically replace certificates",
+            "Never change certificate values",
+            "Block certificate rotation",
+            "Encrypt rotation schedule"
+        ]
+    },
+    {
+        "q": "What is key escrow?",
+        "o": [
+            "Trusted party holds backup keys",
+            "Block key escrow requests",
+            "Encrypt escrowed key copies",
+            "Speed up key retrieval"
+        ]
+    },
+    {
+        "q": "What is HSM for security?",
+        "o": [
+            "Hardware Security Module device",
+            "High Security Management tool",
+            "Host Security Monitor system",
+            "Hybrid Security Method"
+        ]
+    },
+    {
+        "q": "What is TPM for security?",
+        "o": [
+            "Trusted Platform Module chip",
+            "Transport Protocol Monitor tool",
+            "Technical Protection Mechanism",
+            "Trusted Process Manager"
+        ]
+    },
+    {
+        "q": "What is secure boot process?",
+        "o": [
+            "Verify firmware and OS integrity",
+            "Block boot process completely",
+            "Encrypt boot partition only",
+            "Speed up boot sequence"
+        ]
+    },
+    {
+        "q": "What is measured boot?",
+        "o": [
+            "Record boot components for attestation",
+            "Block measured boot components",
+            "Encrypt measurement values only",
+            "Speed up measurement process"
+        ]
+    },
+    {
+        "q": "What is remote attestation?",
+        "o": [
+            "Verify device state remotely",
+            "Block remote attestation traffic",
+            "Encrypt attestation data only",
+            "Speed up attestation process"
+        ]
+    },
+    {
+        "q": "What is network admission control flow?",
+        "o": [
+            "Check posture before network access",
+            "Allow all devices immediately",
+            "Block admission control checks",
+            "Encrypt admission data only"
+        ]
+    },
+    {
+        "q": "What is posture assessment?",
+        "o": [
+            "Evaluate device security state",
+            "Block posture check traffic",
+            "Encrypt posture data only",
+            "Speed up posture assessment"
+        ]
+    },
+    {
+        "q": "What is remediation server?",
+        "o": [
+            "Fix non-compliant devices",
+            "Block remediation traffic here",
+            "Encrypt remediation data only",
+            "Speed up remediation process"
+        ]
+    },
+    {
+        "q": "What is ZTNA verification?",
+        "o": [
+            "Continuous user and device check",
+            "One-time authentication only",
+            "Block all ZTNA traffic here",
+            "Encrypt ZTNA sessions only"
+        ]
+    },
+    {
+        "q": "What is policy decision point?",
+        "o": [
+            "Evaluate access policy requests",
+            "Block policy decisions completely",
+            "Encrypt policy evaluations only",
+            "Speed up policy decisions"
+        ]
+    },
+    {
+        "q": "What is policy enforcement point?",
+        "o": [
+            "Apply access control decisions",
+            "Block policy enforcement here",
+            "Encrypt enforcement data only",
+            "Speed up enforcement actions"
+        ]
+    },
+    {
+        "q": "What is SASE architecture benefit?",
+        "o": [
+            "Combine network and security cloud",
+            "Separate network from security",
+            "Block SASE architecture traffic",
+            "Encrypt SASE components only"
+        ]
+    },
+    {
+        "q": "What is SSE architecture?",
+        "o": [
+            "Security Service Edge subset",
+            "Secure System Endpoint tool",
+            "Standard Security Engine only",
+            "System Security Enforcement"
+        ]
+    },
+    {
+        "q": "What is CASB for cloud?",
+        "o": [
+            "Cloud Access Security Broker",
+            "Cloud Application Security Block",
+            "Central Access Security Bridge",
+            "Cloud Authentication Security Base"
+        ]
+    },
+    {
+        "q": "What is CASB shadow IT detection?",
+        "o": [
+            "Find unauthorized cloud apps",
+            "Block all cloud applications",
+            "Encrypt cloud app traffic",
+            "Speed up cloud discovery"
+        ]
+    },
+    {
+        "q": "What is SWG for web?",
+        "o": [
+            "Secure Web Gateway filtering",
+            "Standard Web Guard system",
+            "System Web Gateway tool",
+            "Secure Wireless Gateway"
+        ]
+    },
+    {
+        "q": "What is FWaaS?",
+        "o": [
+            "Firewall as a Service cloud",
+            "Filtering Web Application Service",
+            "Forwarding Web Access Service",
+            "Firewall Web Application Server"
+        ]
+    },
+    {
+        "q": "What is cloud-delivered security?",
+        "o": [
+            "Security functions from cloud",
+            "On-premise security only",
+            "Block cloud security traffic",
+            "Encrypt cloud delivery only"
+        ]
+    },
+    {
+        "q": "What is SD-WAN security?",
+        "o": [
+            "Security in software-defined WAN",
+            "Block SD-WAN traffic entirely",
+            "Encrypt SD-WAN only now",
+            "Speed up SD-WAN routing"
+        ]
+    },
+    {
+        "q": "What is SD-WAN zero trust?",
+        "o": [
+            "Apply ZTNA to branch access",
+            "Trust all branch traffic now",
+            "Block zero trust features",
+            "Encrypt zero trust only"
+        ]
+    },
+    {
+        "q": "What is WAN optimization security?",
+        "o": [
+            "Secure accelerated traffic",
+            "Block WAN optimization here",
+            "Encrypt optimization data",
+            "Speed up WAN security"
+        ]
+    },
+    {
+        "q": "What is network visibility?",
+        "o": [
+            "See all traffic and assets",
+            "Block visibility tools here",
+            "Encrypt visibility data only",
+            "Speed up visibility checks"
+        ]
+    },
+    {
+        "q": "What is asset discovery?",
+        "o": [
+            "Find all network devices",
+            "Block discovery traffic here",
+            "Encrypt discovery results",
+            "Speed up asset discovery"
+        ]
+    },
+    {
+        "q": "What is passive discovery?",
+        "o": [
+            "Monitor traffic to find devices",
+            "Send probes to find devices",
+            "Block passive discovery here",
+            "Encrypt discovery traffic"
+        ]
+    },
+    {
+        "q": "What is active discovery?",
+        "o": [
+            "Probe network to find devices",
+            "Monitor traffic passively only",
+            "Block active discovery here",
+            "Encrypt probe packets only"
+        ]
+    },
+    {
+        "q": "What is vulnerability management?",
+        "o": [
+            "Find and fix security weaknesses",
+            "Block vulnerability scanning",
+            "Encrypt vulnerability data only",
+            "Speed up vulnerability fixes"
+        ]
+    },
+    {
+        "q": "What is authenticated scanning?",
+        "o": [
+            "Scan with valid credentials",
+            "Scan without any credentials",
+            "Block authenticated scans",
+            "Encrypt scan credentials"
+        ]
+    },
+    {
+        "q": "What is unauthenticated scanning?",
+        "o": [
+            "Scan without credentials access",
+            "Scan with valid credentials",
+            "Block unauthenticated scans",
+            "Encrypt scan results only"
+        ]
+    },
+    {
+        "q": "What is agent-based scanning?",
+        "o": [
+            "Agent on host performs scan",
+            "Remote scanner probes host",
+            "Block agent-based scanning",
+            "Encrypt agent communication"
+        ]
+    },
+    {
+        "q": "What is agentless scanning?",
+        "o": [
+            "Remote scan without local agent",
+            "Local agent required always",
+            "Block agentless scanning here",
+            "Encrypt agentless traffic"
+        ]
+    },
+    {
+        "q": "What is CVSS scoring?",
+        "o": [
+            "Common Vulnerability Scoring System",
+            "Central Vulnerability Security Score",
+            "Critical Vulnerability Severity Scale",
+            "Common Vulnerability Security Standard"
+        ]
+    },
+    {
+        "q": "What is CVSS base score?",
+        "o": [
+            "Intrinsic vulnerability characteristics",
+            "Environmental modifier only",
+            "Temporal modifier only",
+            "Combined total score only"
+        ]
+    },
+    {
+        "q": "What is risk-based prioritization?",
+        "o": [
+            "Fix by risk not just severity",
+            "Fix highest severity first only",
+            "Block low risk vulnerabilities",
+            "Encrypt risk assessment data"
+        ]
+    },
+    {
+        "q": "What is virtual patching?",
+        "o": [
+            "Block exploit without code fix",
+            "Install software patch quickly",
+            "Block virtual patching traffic",
+            "Encrypt virtual patch rules"
+        ]
+    },
+    {
+        "q": "What is compensating control?",
+        "o": [
+            "Alternative security measure used",
+            "Block compensating controls",
+            "Encrypt control configuration",
+            "Speed up control deployment"
+        ]
+    },
+    {
+        "q": "What is security baseline?",
+        "o": [
+            "Minimum security configuration",
+            "Maximum security settings only",
+            "Block baseline configurations",
+            "Encrypt baseline settings"
+        ]
+    },
+    {
+        "q": "What is CIS benchmark?",
+        "o": [
+            "Center for Internet Security standards",
+            "Critical Infrastructure Security check",
+            "Central Information Security baseline",
+            "Common Internet Security benchmark"
+        ]
+    },
+    {
+        "q": "What is STIG for hardening?",
+        "o": [
+            "Security Technical Implementation Guide",
+            "Standard Technical Information Guide",
+            "Security Tool Implementation Guide",
+            "System Technical Information Guide"
+        ]
+    },
+    {
+        "q": "What is configuration drift?",
+        "o": [
+            "Settings change from baseline",
+            "Settings remain at baseline",
+            "Block configuration changes",
+            "Encrypt drift detection data"
+        ]
+    },
+    {
+        "q": "What is file integrity monitoring?",
+        "o": [
+            "Detect unauthorized file changes",
+            "Block file integrity checks",
+            "Encrypt FIM alert data only",
+            "Speed up file monitoring"
+        ]
+    },
+    {
+        "q": "What is FIM baseline?",
+        "o": [
+            "Known good file state record",
+            "Block FIM baselining process",
+            "Encrypt baseline file hashes",
+            "Speed up baseline creation"
+        ]
+    },
+    {
+        "q": "What is change detection?",
+        "o": [
+            "Identify file or config changes",
+            "Block change detection tools",
+            "Encrypt change detection data",
+            "Speed up change monitoring"
+        ]
+    },
+    {
+        "q": "What is log aggregation?",
+        "o": [
+            "Collect logs central location",
+            "Block log aggregation traffic",
+            "Encrypt aggregated logs only",
+            "Speed up log collection"
+        ]
+    },
+    {
+        "q": "What is log correlation?",
+        "o": [
+            "Connect related log events",
+            "Block log correlation rules",
+            "Encrypt correlated events only",
+            "Speed up correlation process"
+        ]
+    },
+    {
+        "q": "What is log retention policy?",
+        "o": [
+            "Define how long keep logs",
+            "Block log retention rules",
+            "Encrypt retention schedule",
+            "Speed up log deletion"
+        ]
+    },
+    {
+        "q": "What is log tamper protection?",
+        "o": [
+            "Prevent log modification",
+            "Block log protection features",
+            "Encrypt log protection keys",
+            "Speed up log verification"
+        ]
+    },
+    {
+        "q": "What is centralized logging?",
+        "o": [
+            "Collect all logs one place",
+            "Keep logs on each device",
+            "Block centralized collection",
+            "Encrypt only central logs"
+        ]
+    },
+    {
+        "q": "What is syslog protocol?",
+        "o": [
+            "Standard log message format",
+            "Block syslog traffic flow",
+            "Encrypt syslog messages only",
+            "Speed up syslog delivery"
+        ]
+    },
+    {
+        "q": "What is syslog-ng?",
+        "o": [
+            "Enhanced syslog implementation",
+            "Block syslog-ng traffic here",
+            "Encrypt syslog-ng messages",
+            "Speed up syslog processing"
+        ]
+    },
+    {
+        "q": "What is rsyslog?",
+        "o": [
+            "Rocket-fast system logging",
+            "Block rsyslog traffic here",
+            "Encrypt rsyslog messages",
+            "Speed up rsyslog delivery"
+        ]
+    },
+    {
+        "q": "What is Windows Event Forwarding?",
+        "o": [
+            "Collect Windows events centrally",
+            "Block event forwarding here",
+            "Encrypt forwarded events only",
+            "Speed up event collection"
+        ]
+    },
+    {
+        "q": "What is Elastic Stack for security?",
+        "o": [
+            "Log analysis and visualization",
+            "Block Elastic traffic flow",
+            "Encrypt Elastic data only",
+            "Speed up Elastic queries"
+        ]
+    },
+    {
+        "q": "What is Splunk for security?",
+        "o": [
+            "SIEM and log analytics platform",
+            "Block Splunk data ingestion",
+            "Encrypt Splunk indexes only",
+            "Speed up Splunk searches"
+        ]
+    },
+    {
+        "q": "What is threat feed integration?",
+        "o": [
+            "Import external threat indicators",
+            "Block threat feed updates",
+            "Encrypt threat feed data",
+            "Speed up feed processing"
+        ]
+    },
+    {
+        "q": "What is threat intelligence platform?",
+        "o": [
+            "Manage and analyze threat data",
+            "Block threat intelligence traffic",
+            "Encrypt platform data only",
+            "Speed up threat analysis"
+        ]
+    },
+    {
+        "q": "What is MISP platform?",
+        "o": [
+            "Malware Information Sharing Platform",
+            "Management Integration Security Platform",
+            "Monitoring Information Security Process",
+            "Malware Identification Security Program"
+        ]
+    },
+    {
+        "q": "What is OpenCTI platform?",
+        "o": [
+            "Open Cyber Threat Intelligence",
+            "Open Critical Threat Indicator",
+            "Open Centralized Threat Intelligence",
+            "Open Common Threat Information"
+        ]
+    },
+    {
+        "q": "What is YARA rules?",
+        "o": [
+            "Pattern matching for malware",
+            "Block YARA scanning here",
+            "Encrypt YARA rule files",
+            "Speed up YARA matching"
+        ]
+    },
+    {
+        "q": "What is Sigma rules?",
+        "o": [
+            "Generic signature format logs",
+            "Block Sigma rule matching",
+            "Encrypt Sigma rule files",
+            "Speed up Sigma detection"
+        ]
+    },
+    {
+        "q": "What is Snort rules?",
+        "o": [
+            "Network intrusion detection patterns",
+            "Block Snort rule processing",
+            "Encrypt Snort rule files",
+            "Speed up Snort detection"
+        ]
+    },
+    {
+        "q": "What is Suricata IDS?",
+        "o": [
+            "High performance IDS/IPS engine",
+            "Block Suricata traffic flow",
+            "Encrypt Suricata alerts only",
+            "Speed up Suricata processing"
+        ]
+    },
+    {
+        "q": "What is Zeek network analysis?",
+        "o": [
+            "Network security monitoring framework",
+            "Block Zeek analysis traffic",
+            "Encrypt Zeek log output",
+            "Speed up Zeek processing"
+        ]
+    },
+    {
+        "q": "What is network security monitoring?",
+        "o": [
+            "Continuous traffic analysis",
+            "Block monitoring traffic here",
+            "Encrypt monitoring results",
+            "Speed up monitoring process"
+        ]
+    },
+    {
+        "q": "What is security onion?",
+        "o": [
+            "Open source NSM distribution",
+            "Block Security Onion traffic",
+            "Encrypt Security Onion logs",
+            "Speed up Security Onion"
+        ]
+    },
+    {
+        "q": "What is traffic mirroring?",
+        "o": [
+            "Copy traffic for analysis",
+            "Block mirrored traffic here",
+            "Encrypt mirrored packets",
+            "Speed up mirror processing"
+        ]
+    },
+    {
+        "q": "What is inline deployment?",
+        "o": [
+            "Device in traffic path blocking",
+            "Device out of traffic path",
+            "Block inline device traffic",
+            "Encrypt inline device data"
+        ]
+    },
+    {
+        "q": "What is out-of-band deployment?",
+        "o": [
+            "Monitor without blocking path",
+            "Device in traffic path only",
+            "Block out-of-band analysis",
+            "Encrypt OOB traffic copies"
+        ]
+    },
+    {
+        "q": "What is fail-open vs fail-close?",
+        "o": [
+            "Allow or block on device failure",
+            "Both block on device failure",
+            "Both allow on device failure",
+            "No difference between modes"
+        ]
+    },
+    {
+        "q": "What is bypass switch?",
+        "o": [
+            "Route around failed inline device",
+            "Block bypass traffic entirely",
+            "Encrypt bypass configuration",
+            "Speed up bypass switching"
+        ]
+    },
+    {
+        "q": "What is network recorder?",
+        "o": [
+            "Full packet capture appliance",
+            "Block recording traffic here",
+            "Encrypt recorded packets only",
+            "Speed up recording process"
+        ]
+    },
+    {
+        "q": "What is metadata analysis?",
+        "o": [
+            "Analyze connection information",
+            "Analyze full packet content",
+            "Block metadata collection",
+            "Encrypt metadata records"
+        ]
+    },
+    {
+        "q": "What is flow data retention?",
+        "o": [
+            "Store connection summaries",
+            "Block flow data storage",
+            "Encrypt flow records only",
+            "Speed up flow storage"
+        ]
+    },
+    {
+        "q": "What is alert fatigue?",
+        "o": [
+            "Too many alerts overwhelm analysts",
+            "Not enough alerts generated",
+            "Perfect alert volume balance",
+            "Block alert fatigue completely"
+        ]
+    },
+    {
+        "q": "What is alert tuning?",
+        "o": [
+            "Reduce false positive alerts",
+            "Increase all alert volume",
+            "Block alert tuning process",
+            "Encrypt tuning configuration"
+        ]
+    },
+    {
+        "q": "What is alert prioritization?",
+        "o": [
+            "Rank alerts by importance",
+            "Treat all alerts equally",
+            "Block prioritization logic",
+            "Encrypt priority settings"
+        ]
+    },
+    {
+        "q": "What is security playbook?",
+        "o": [
+            "Standard response procedures",
+            "Block playbook execution here",
+            "Encrypt playbook content",
+            "Speed up playbook runs"
+        ]
+    },
+    {
+        "q": "What is incident triage?",
+        "o": [
+            "Initial incident assessment",
+            "Block triage process here",
+            "Encrypt triage decisions",
+            "Speed up triage analysis"
+        ]
+    },
+    {
+        "q": "What is escalation procedure?",
+        "o": [
+            "Notify appropriate people incidents",
+            "Block escalation completely",
+            "Encrypt escalation data only",
+            "Speed up escalation process"
+        ]
+    },
+    {
+        "q": "What is containment strategy?",
+        "o": [
+            "Limit incident damage spread",
+            "Block containment measures",
+            "Encrypt containment actions",
+            "Speed up containment response"
+        ]
+    },
+    {
+        "q": "What is eradication phase?",
+        "o": [
+            "Remove threat from environment",
+            "Block eradication actions",
+            "Encrypt eradication logs",
+            "Speed up threat removal"
+        ]
+    },
+    {
+        "q": "What is recovery phase?",
+        "o": [
+            "Restore normal operations",
+            "Block recovery procedures",
+            "Encrypt recovery data only",
+            "Speed up recovery process"
+        ]
+    },
+    {
+        "q": "What is lessons learned?",
+        "o": [
+            "Improve after incident review",
+            "Block lessons learned process",
+            "Encrypt lessons documentation",
+            "Speed up lessons collection"
+        ]
+    },
+    {
+        "q": "What is mean time to detect?",
+        "o": [
+            "Average detection time metric",
+            "Block detection time tracking",
+            "Encrypt detection timestamps",
+            "Speed up detection reporting"
+        ]
+    },
+    {
+        "q": "What is mean time to respond?",
+        "o": [
+            "Average response time metric",
+            "Block response time tracking",
+            "Encrypt response timestamps",
+            "Speed up response reporting"
+        ]
+    },
+    {
+        "q": "What is dwell time?",
+        "o": [
+            "Attacker time in environment",
+            "Block dwell time tracking",
+            "Encrypt dwell time metrics",
+            "Speed up dwell detection"
+        ]
+    },
+    {
+        "q": "What is security metrics program?",
+        "o": [
+            "Measure security effectiveness",
+            "Block metrics collection here",
+            "Encrypt all metrics data",
+            "Speed up metrics reporting"
+        ]
+    },
+    {
+        "q": "What is KPI for security?",
+        "o": [
+            "Key Performance Indicator measure",
+            "Block KPI tracking system",
+            "Encrypt KPI data only",
+            "Speed up KPI calculation"
+        ]
+    },
+    {
+        "q": "What is KRI for security?",
+        "o": [
+            "Key Risk Indicator measure",
+            "Block KRI monitoring here",
+            "Encrypt KRI data only",
+            "Speed up KRI reporting"
+        ]
+    },
+    {
+        "q": "What is security maturity model?",
+        "o": [
+            "Assess security program level",
+            "Block maturity assessment",
+            "Encrypt maturity scores only",
+            "Speed up maturity review"
+        ]
+    },
+    {
+        "q": "What is CMMI for security?",
+        "o": [
+            "Capability Maturity Model Integration",
+            "Central Management Model Interface",
+            "Common Maturity Measurement Index",
+            "Critical Management Metrics Integration"
+        ]
+    },
+    {
+        "q": "What is NIST CSF framework?",
+        "o": [
+            "Cybersecurity Framework five functions",
+            "Network Security Framework tool",
+            "National Security Federation standard",
+            "Network Standard Function control"
+        ]
+    },
+    {
+        "q": "What is ISO 27001 for security?",
+        "o": [
+            "Information security management standard",
+            "Network security framework only",
+            "Infrastructure security standard",
+            "International network security"
+        ]
+    },
+    {
+        "q": "What is SOC 2 compliance?",
+        "o": [
+            "Service Organization Control audit",
+            "Security Operation Center standard",
+            "System Operation Compliance check",
+            "Standard Operating Control framework"
+        ]
+    },
+    {
+        "q": "What is PCI DSS network requirement?",
+        "o": [
+            "Payment Card Industry Data Security",
+            "Private Cloud Infrastructure standard",
+            "Protected Communication Infrastructure",
+            "Primary Control Infrastructure standard"
+        ]
+    },
+    {
+        "q": "What is HIPAA network security?",
+        "o": [
+            "Healthcare data protection requirements",
+            "High Infrastructure Protection standard",
+            "Host Integrated Protection Assessment",
+            "Hybrid Infrastructure Protocol Access"
+        ]
+    },
+    {
+        "q": "What is GDPR network requirement?",
+        "o": [
+            "Data protection and privacy rules",
+            "General Defense Protocol Requirements",
+            "Global Data Processing Regulation",
+            "Government Data Protection Rules"
+        ]
+    },
+    {
+        "q": "What is data encryption at rest?",
+        "o": [
+            "Encrypt stored data on disk",
+            "Encrypt data in transit only",
+            "Block data encryption tools",
+            "Speed up encryption process"
+        ]
+    },
+    {
+        "q": "What is data encryption in transit?",
+        "o": [
+            "Encrypt data moving over network",
+            "Encrypt stored data only here",
+            "Block transit encryption tools",
+            "Speed up transit encryption"
+        ]
+    },
+    {
+        "q": "What is end-to-end encryption?",
+        "o": [
+            "Encrypt between endpoints only",
+            "Encrypt at network devices too",
+            "Block E2E encryption traffic",
+            "Speed up E2E encryption"
+        ]
+    },
+    {
+        "q": "What is TLS 1.3 improvement?",
+        "o": [
+            "Faster handshake fewer round trips",
+            "Slower but more secure handshake",
+            "Same as TLS 1.2 performance",
+            "Block TLS 1.3 connections"
+        ]
+    },
+    {
+        "q": "What is perfect forward secrecy?",
+        "o": [
+            "Past sessions secure if key compromised",
+            "Future sessions secure only here",
+            "Block PFS enabled traffic now",
+            "Encrypt PFS key exchange"
+        ]
+    },
+    {
+        "q": "What is ephemeral key exchange?",
+        "o": [
+            "Temporary keys for each session",
+            "Permanent keys for all sessions",
+            "Block ephemeral key traffic",
+            "Encrypt ephemeral key data"
+        ]
+    },
+    {
+        "q": "What is ECDHE key exchange?",
+        "o": [
+            "Elliptic Curve Diffie-Hellman Ephemeral",
+            "Encrypted Certificate Delivery Exchange",
+            "Enhanced Cipher Data Hash Exchange",
+            "Extended Certificate Distribution Hub"
+        ]
+    },
+    {
+        "q": "What is certificate transparency?",
+        "o": [
+            "Public log of issued certificates",
+            "Block certificate logging here",
+            "Encrypt certificate logs only",
+            "Speed up certificate issuance"
+        ]
+    },
+    {
+        "q": "What is OCSP stapling?",
+        "o": [
+            "Server provides certificate status",
+            "Client checks certificate status",
+            "Block OCSP stapled responses",
+            "Encrypt OCSP stapling data"
+        ]
+    },
+    {
+        "q": "What is HSTS protection?",
+        "o": [
+            "HTTP Strict Transport Security",
+            "Host Security Transfer Standard",
+            "Hybrid Secure Transport System",
+            "High Security Transport Server"
+        ]
+    },
+    {
+        "q": "What is HPKP for security?",
+        "o": [
+            "HTTP Public Key Pinning header",
+            "Host Protection Key Protocol",
+            "Hybrid Public Key Processing",
+            "High Performance Key Pinning"
+        ]
+    },
+    {
+        "q": "What is CAA DNS record?",
+        "o": [
+            "Certification Authority Authorization",
+            "Certificate Access Authentication",
+            "Central Authority Authentication",
+            "Common Access Authorization"
+        ]
+    },
+    {
+        "q": "What is mutual TLS?",
+        "o": [
+            "Both client and server authenticate",
+            "Only server authenticates here",
+            "Block mutual TLS traffic",
+            "Encrypt mTLS certificates"
+        ]
+    },
+    {
+        "q": "What is client certificate authentication?",
+        "o": [
+            "Client proves identity with cert",
+            "Server proves identity only",
+            "Block client certificates here",
+            "Encrypt client cert data"
+        ]
+    },
+    {
+        "q": "What is service mesh security?",
+        "o": [
+            "Secure communication between services",
+            "Block service mesh traffic",
+            "Encrypt mesh configuration",
+            "Speed up mesh routing"
+        ]
+    },
+    {
+        "q": "What is Istio for security?",
+        "o": [
+            "Service mesh with mTLS built-in",
+            "Block Istio traffic entirely",
+            "Encrypt Istio configuration",
+            "Speed up Istio routing"
+        ]
+    },
+    {
+        "q": "What is Envoy proxy security?",
+        "o": [
+            "Sidecar proxy with TLS features",
+            "Block Envoy proxy traffic",
+            "Encrypt Envoy configuration",
+            "Speed up Envoy routing"
+        ]
+    },
+    {
+        "q": "What is sidecar proxy pattern?",
+        "o": [
+            "Proxy alongside each service",
+            "Central proxy for all services",
+            "Block sidecar proxy traffic",
+            "Encrypt sidecar configuration"
+        ]
+    },
+    {
+        "q": "What is SPIFFE for identity?",
+        "o": [
+            "Secure Production Identity Framework",
+            "Standard Protocol Identity Federation",
+            "Security Production Identity Format",
+            "Service Protection Identity Framework"
+        ]
+    },
+    {
+        "q": "What is SPIRE identity server?",
+        "o": [
+            "SPIFFE Runtime Environment server",
+            "Security Protocol Identity Registry",
+            "Standard Protection Identity Runtime",
+            "Service Production Identity Server"
+        ]
+    },
+    {
+        "q": "What is workload identity?",
+        "o": [
+            "Identity for applications not users",
+            "User identity for workloads",
+            "Block workload identity traffic",
+            "Encrypt workload identity"
+        ]
+    },
+    {
+        "q": "What is runtime security?",
+        "o": [
+            "Protect running applications",
+            "Block runtime monitoring here",
+            "Encrypt runtime data only",
+            "Speed up runtime checks"
+        ]
+    },
+    {
+        "q": "What is eBPF for security?",
+        "o": [
+            "Kernel level security monitoring",
+            "Block eBPF tracing traffic",
+            "Encrypt eBPF programs only",
+            "Speed up eBPF processing"
+        ]
+    },
+    {
+        "q": "What is Falco for runtime?",
+        "o": [
+            "Cloud-native runtime security",
+            "Block Falco monitoring here",
+            "Encrypt Falco alerts only",
+            "Speed up Falco detection"
+        ]
+    },
+    {
+        "q": "What is network policy Kubernetes?",
+        "o": [
+            "Control pod to pod traffic",
+            "Block all pod communications",
+            "Encrypt network policy rules",
+            "Speed up policy enforcement"
+        ]
+    },
+    {
+        "q": "What is Calico network policy?",
+        "o": [
+            "Extended Kubernetes networking CNI",
+            "Block Calico network traffic",
+            "Encrypt Calico policies only",
+            "Speed up Calico routing"
+        ]
+    },
+    {
+        "q": "What is Cilium for eBPF?",
+        "o": [
+            "eBPF-based Kubernetes networking",
+            "Block Cilium traffic entirely",
+            "Encrypt Cilium configuration",
+            "Speed up Cilium routing"
+        ]
+    },
+    {
+        "q": "What is container network interface?",
+        "o": [
+            "Plugin standard for container networking",
+            "Block CNI plugin traffic",
+            "Encrypt CNI configuration",
+            "Speed up CNI operations"
+        ]
+    },
+    {
+        "q": "What is pod security policy?",
+        "o": [
+            "Define pod security constraints",
+            "Block pod security checks",
+            "Encrypt pod security data",
+            "Speed up pod validation"
+        ]
+    },
+    {
+        "q": "What is OPA for policy?",
+        "o": [
+            "Open Policy Agent enforcement",
+            "Block OPA policy checks",
+            "Encrypt OPA policy rules",
+            "Speed up OPA evaluation"
+        ]
+    },
+    {
+        "q": "What is Gatekeeper for Kubernetes?",
+        "o": [
+            "OPA-based admission controller",
+            "Block Gatekeeper traffic",
+            "Encrypt Gatekeeper policies",
+            "Speed up Gatekeeper checks"
+        ]
+    },
+    {
+        "q": "What is admission controller?",
+        "o": [
+            "Validate before resource creation",
+            "Block admission controller traffic",
+            "Encrypt admission data only",
+            "Speed up admission process"
+        ]
+    },
+    {
+        "q": "What is mutating admission webhook?",
+        "o": [
+            "Modify resources before creation",
+            "Only validate resources here",
+            "Block mutating webhooks traffic",
+            "Encrypt webhook configuration"
+        ]
+    },
+    {
+        "q": "What is validating admission webhook?",
+        "o": [
+            "Check resources without modification",
+            "Modify resources before creation",
+            "Block validating webhooks traffic",
+            "Encrypt validation logic only"
+        ]
+    },
+    {
+        "q": "What is secrets encryption Kubernetes?",
+        "o": [
+            "Encrypt etcd stored secrets",
+            "Store secrets plain text only",
+            "Block secrets encryption process",
+            "Speed up secrets access"
+        ]
+    },
+    {
+        "q": "What is external secrets operator?",
+        "o": [
+            "Sync secrets from external stores",
+            "Block external secrets access",
+            "Encrypt external secrets only",
+            "Speed up secret synchronization"
+        ]
+    },
+    {
+        "q": "What is HashiCorp Vault for secrets?",
+        "o": [
+            "Dynamic secrets management platform",
+            "Block Vault access traffic",
+            "Encrypt Vault configuration",
+            "Speed up Vault operations"
+        ]
+    },
+    {
+        "q": "What is dynamic secrets?",
+        "o": [
+            "Credentials generated on demand",
+            "Static credentials stored forever",
+            "Block dynamic secrets creation",
+            "Encrypt dynamic credential"
+        ]
+    },
+    {
+        "q": "What is secret rotation automation?",
+        "o": [
+            "Automatically change credentials",
+            "Never rotate credentials here",
+            "Block rotation automation",
+            "Encrypt rotation schedule"
+        ]
+    },
+    {
+        "q": "What is cloud KMS for encryption?",
+        "o": [
+            "Key Management Service cloud",
+            "Block KMS traffic completely",
+            "Encrypt KMS keys at rest",
+            "Speed up KMS operations"
+        ]
+    },
+    {
+        "q": "What is envelope encryption?",
+        "o": [
+            "DEK encrypted with KEK method",
+            "Single key encryption only",
+            "Block envelope encryption",
+            "Encrypt the envelope data"
+        ]
+    },
+    {
+        "q": "What is data encryption key?",
+        "o": [
+            "Key that encrypts actual data",
+            "Key that encrypts other keys",
+            "Block DEK generation process",
+            "Encrypt DEK values only"
+        ]
+    },
+    {
+        "q": "What is key encryption key?",
+        "o": [
+            "Key that encrypts other keys",
+            "Key that encrypts actual data",
+            "Block KEK generation process",
+            "Encrypt KEK values only"
+        ]
+    },
+    {
+        "q": "What is BYOK for cloud?",
+        "o": [
+            "Bring Your Own Key customer managed",
+            "Block BYOK key import",
+            "Encrypt BYOK key material",
+            "Speed up BYOK operations"
+        ]
+    },
+    {
+        "q": "What is HYOK for cloud?",
+        "o": [
+            "Hold Your Own Key on-premise",
+            "Block HYOK key traffic",
+            "Encrypt HYOK key material",
+            "Speed up HYOK operations"
+        ]
+    },
+    {
+        "q": "What is cloud security posture?",
+        "o": [
+            "Configuration and compliance state",
+            "Block posture monitoring traffic",
+            "Encrypt posture data only",
+            "Speed up posture assessment"
+        ]
+    },
+    {
+        "q": "What is CSPM tool?",
+        "o": [
+            "Cloud Security Posture Management",
+            "Cloud Service Protection Monitor",
+            "Central Security Posture Manager",
+            "Common Security Protection Model"
+        ]
+    },
+    {
+        "q": "What is CWPP solution?",
+        "o": [
+            "Cloud Workload Protection Platform",
+            "Central Workload Protection Process",
+            "Cloud Worker Protection Program",
+            "Common Workload Processing Platform"
+        ]
+    },
+    {
+        "q": "What is CNAPP platform?",
+        "o": [
+            "Cloud Native Application Protection",
+            "Central Network Application Protection",
+            "Cloud Network Access Protection",
+            "Common Native Application Platform"
+        ]
+    },
+    {
+        "q": "What is infrastructure as code security?",
+        "o": [
+            "Scan templates for misconfigurations",
+            "Block IaC deployment traffic",
+            "Encrypt IaC template files",
+            "Speed up IaC deployment"
+        ]
+    },
+    {
+        "q": "What is Terraform security scanning?",
+        "o": [
+            "Check Terraform for security issues",
+            "Block Terraform apply command",
+            "Encrypt Terraform state files",
+            "Speed up Terraform execution"
+        ]
+    },
+    {
+        "q": "What is Checkov for IaC?",
+        "o": [
+            "Static analysis for IaC security",
+            "Block Checkov scanning process",
+            "Encrypt Checkov results only",
+            "Speed up Checkov analysis"
+        ]
+    },
+    {
+        "q": "What is tfsec for Terraform?",
+        "o": [
+            "Terraform security scanner tool",
+            "Block tfsec scanning process",
+            "Encrypt tfsec results only",
+            "Speed up tfsec analysis"
+        ]
+    },
+    {
+        "q": "What is container image scanning?",
+        "o": [
+            "Find vulnerabilities in images",
+            "Block image scanning process",
+            "Encrypt scan results only",
+            "Speed up image scanning"
+        ]
+    },
+    {
+        "q": "What is Trivy scanner?",
+        "o": [
+            "Container vulnerability scanner",
+            "Block Trivy scanning traffic",
+            "Encrypt Trivy results only",
+            "Speed up Trivy analysis"
+        ]
+    },
+    {
+        "q": "What is Grype scanner?",
+        "o": [
+            "Container and file vulnerability scanner",
+            "Block Grype scanning process",
+            "Encrypt Grype results only",
+            "Speed up Grype analysis"
+        ]
+    },
+    {
+        "q": "What is image signing?",
+        "o": [
+            "Verify image authenticity and integrity",
+            "Block image signing process",
+            "Encrypt image signatures only",
+            "Speed up image verification"
+        ]
+    },
+    {
+        "q": "What is Sigstore for signing?",
+        "o": [
+            "Keyless signing for artifacts",
+            "Block Sigstore signing traffic",
+            "Encrypt Sigstore signatures",
+            "Speed up Sigstore verification"
+        ]
+    },
+    {
+        "q": "What is cosign tool?",
+        "o": [
+            "Container image signing tool",
+            "Block cosign signing process",
+            "Encrypt cosign signatures only",
+            "Speed up cosign verification"
+        ]
+    },
+    {
+        "q": "What is software bill of materials?",
+        "o": [
+            "List of software components used",
+            "Block SBOM generation process",
+            "Encrypt SBOM data files",
+            "Speed up SBOM creation"
+        ]
+    },
+    {
+        "q": "What is SPDX format?",
+        "o": [
+            "Software Package Data Exchange",
+            "Security Protocol Data Exchange",
+            "Standard Package Distribution XML",
+            "System Protection Data Exchange"
+        ]
+    },
+    {
+        "q": "What is CycloneDX format?",
+        "o": [
+            "SBOM standard format specification",
+            "Block CycloneDX generation",
+            "Encrypt CycloneDX files only",
+            "Speed up CycloneDX creation"
+        ]
+    },
+    {
+        "q": "What is supply chain security?",
+        "o": [
+            "Secure software development pipeline",
+            "Block supply chain monitoring",
+            "Encrypt supply chain data",
+            "Speed up supply chain"
+        ]
+    },
+    {
+        "q": "What is SLSA framework?",
+        "o": [
+            "Supply chain Levels for Artifacts",
+            "Security Level Standard Assessment",
+            "Software Lifecycle Security Analysis",
+            "Standard Level Security Assurance"
+        ]
+    },
+    {
+        "q": "What is in-toto attestation?",
+        "o": [
+            "Supply chain metadata framework",
+            "Block in-toto attestation traffic",
+            "Encrypt attestation data only",
+            "Speed up attestation process"
+        ]
+    },
+    {
+        "q": "What is build provenance?",
+        "o": [
+            "Record of how artifact was built",
+            "Block provenance generation",
+            "Encrypt provenance data only",
+            "Speed up provenance creation"
+        ]
+    },
+    {
+        "q": "What is GitOps security?",
+        "o": [
+            "Git as source of truth security",
+            "Block GitOps operations here",
+            "Encrypt GitOps configuration",
+            "Speed up GitOps deployment"
+        ]
+    },
+    {
+        "q": "What is policy as code?",
+        "o": [
+            "Define policies in version control",
+            "Manual policy enforcement only",
+            "Block policy as code tools",
+            "Encrypt policy files only"
+        ]
+    },
+    {
+        "q": "What is Sentinel for policy?",
+        "o": [
+            "HashiCorp policy as code framework",
+            "Block Sentinel policy checks",
+            "Encrypt Sentinel policies only",
+            "Speed up Sentinel evaluation"
+        ]
+    },
+    {
+        "q": "What is Rego language?",
+        "o": [
+            "OPA policy language specification",
+            "Block Rego policy execution",
+            "Encrypt Rego policy files",
+            "Speed up Rego evaluation"
+        ]
+    },
+    {
+        "q": "What is drift detection?",
+        "o": [
+            "Find unauthorized infrastructure changes",
+            "Block drift detection tools",
+            "Encrypt drift detection data",
+            "Speed up drift detection"
+        ]
+    },
+    {
+        "q": "What is compliance as code?",
+        "o": [
+            "Automate compliance verification",
+            "Manual compliance checking only",
+            "Block compliance automation",
+            "Encrypt compliance results"
+        ]
+    },
+    {
+        "q": "What is InSpec for compliance?",
+        "o": [
+            "Infrastructure testing framework",
+            "Block InSpec testing traffic",
+            "Encrypt InSpec results only",
+            "Speed up InSpec testing"
+        ]
+    },
+    {
+        "q": "What is Chef Compliance?",
+        "o": [
+            "Automated compliance scanning platform",
+            "Block Chef Compliance scanning",
+            "Encrypt compliance results only",
+            "Speed up compliance checks"
+        ]
+    },
+    {
+        "q": "What is Ansible for security?",
+        "o": [
+            "Security automation and remediation",
+            "Block Ansible execution traffic",
+            "Encrypt Ansible playbooks only",
+            "Speed up Ansible execution"
+        ]
+    },
+    {
+        "q": "What is security hardening automation?",
+        "o": [
+            "Automated baseline configuration",
+            "Manual hardening process only",
+            "Block hardening automation",
+            "Encrypt hardening results"
+        ]
+    },
+    {
+        "q": "What is network automation security?",
+        "o": [
+            "Automate network device config",
+            "Block network automation traffic",
+            "Encrypt automation scripts only",
+            "Speed up automation deployment"
+        ]
+    },
+    {
+        "q": "What is intent-based networking?",
+        "o": [
+            "Define desired state automatically",
+            "Manual network configuration only",
+            "Block IBN automation traffic",
+            "Encrypt IBN policy data"
+        ]
+    },
+    {
+        "q": "What is network assurance?",
+        "o": [
+            "Verify network meets intent",
+            "Block assurance monitoring",
+            "Encrypt assurance data only",
+            "Speed up assurance checks"
+        ]
+    },
+    {
+        "q": "What is AIOps for security?",
+        "o": [
+            "AI for IT operations analysis",
+            "Block AIOps monitoring traffic",
+            "Encrypt AIOps data only",
+            "Speed up AIOps processing"
+        ]
+    },
+    {
+        "q": "What is MLOps for security?",
+        "o": [
+            "ML operations for security models",
+            "Block MLOps pipeline traffic",
+            "Encrypt MLOps model data",
+            "Speed up MLOps deployment"
+        ]
+    },
+    {
+        "q": "What is adversarial ML?",
+        "o": [
+            "Attacks against machine learning",
+            "Block adversarial ML attacks",
+            "Encrypt ML model parameters",
+            "Speed up ML inference"
+        ]
+    },
+    {
+        "q": "What is model poisoning attack?",
+        "o": [
+            "Corrupt training data for model",
+            "Block model training traffic",
+            "Encrypt poisoned data only",
+            "Speed up model training"
+        ]
+    },
+    {
+        "q": "What is evasion attack ML?",
+        "o": [
+            "Craft inputs to fool model",
+            "Block evasion attempts traffic",
+            "Encrypt evasion patterns only",
+            "Speed up model inference"
+        ]
+    },
+    {
+        "q": "What is model extraction attack?",
+        "o": [
+            "Steal model parameters via queries",
+            "Block model extraction traffic",
+            "Encrypt model parameters only",
+            "Speed up model training"
+        ]
+    },
+    {
+        "q": "What is differential privacy?",
+        "o": [
+            "Add noise to protect individual data",
+            "Block privacy protection tools",
+            "Encrypt differential data only",
+            "Speed up privacy processing"
+        ]
+    },
+    {
+        "q": "What is federated learning security?",
+        "o": [
+            "Train models without sharing data",
+            "Block federated learning traffic",
+            "Encrypt federated model updates",
+            "Speed up federated training"
+        ]
+    },
+    {
+        "q": "What is homomorphic encryption?",
+        "o": [
+            "Compute on encrypted data directly",
+            "Block homomorphic computation",
+            "Decrypt before computation only",
+            "Speed up encryption process"
+        ]
+    },
+    {
+        "q": "What is secure multi-party computation?",
+        "o": [
+            "Joint computation without revealing inputs",
+            "Block MPC protocol traffic",
+            "Share all inputs with parties",
+            "Speed up MPC computation"
+        ]
+    },
+    {
+        "q": "What is confidential computing?",
+        "o": [
+            "Protect data during processing",
+            "Block confidential workloads",
+            "Encrypt data at rest only",
+            "Speed up confidential processing"
+        ]
+    },
+    {
+        "q": "What is TEE for security?",
+        "o": [
+            "Trusted Execution Environment isolated",
+            "Block TEE workload execution",
+            "Encrypt TEE memory only",
+            "Speed up TEE processing"
+        ]
+    },
+    {
+        "q": "What is Intel SGX?",
+        "o": [
+            "Software Guard Extensions enclave",
+            "Block SGX enclave creation",
+            "Encrypt SGX code only",
+            "Speed up SGX processing"
+        ]
+    },
+    {
+        "q": "What is AMD SEV?",
+        "o": [
+            "Secure Encrypted Virtualization",
+            "Block SEV VM creation",
+            "Encrypt SEV memory only",
+            "Speed up SEV processing"
+        ]
+    },
+    {
+        "q": "What is attestation for TEE?",
+        "o": [
+            "Verify TEE integrity remotely",
+            "Block attestation verification",
+            "Encrypt attestation data only",
+            "Speed up attestation process"
+        ]
+    },
+    {
+        "q": "What is enclave security?",
+        "o": [
+            "Isolated secure memory region",
+            "Block enclave creation process",
+            "Encrypt enclave code only",
+            "Speed up enclave execution"
+        ]
+    },
+    {
+        "q": "What is memory encryption?",
+        "o": [
+            "Encrypt RAM contents in hardware",
+            "Block memory encryption feature",
+            "Encrypt disk only not RAM",
+            "Speed up memory access"
+        ]
+    },
+    {
+        "q": "What is side-channel attack defense?",
+        "o": [
+            "Prevent information leakage via timing",
+            "Block side-channel attempts",
+            "Encrypt side-channel data",
+            "Speed up processing timing"
+        ]
+    },
+    {
+        "q": "What is speculative execution attack?",
+        "o": [
+            "Exploit CPU prediction for data leak",
+            "Block speculative execution here",
+            "Encrypt speculation data only",
+            "Speed up CPU execution"
+        ]
+    },
+    {
+        "q": "What is hardware security module defense?",
+        "o": [
+            "Tamper-resistant key protection",
+            "Block HSM access completely",
+            "Software key storage only",
+            "Speed up HSM operations"
+        ]
+    },
+    {
+        "q": "What is FIPS 140-2 validation?",
+        "o": [
+            "Cryptographic module security standard",
+            "Block FIPS validation check",
+            "Encrypt FIPS documentation",
+            "Speed up validation process"
+        ]
+    },
+    {
+        "q": "What is Common Criteria certification?",
+        "o": [
+            "IT security evaluation standard",
+            "Block CC certification process",
+            "Encrypt certification documents",
+            "Speed up CC evaluation"
+        ]
+    },
+    {
+        "q": "What is EAL for security products?",
+        "o": [
+            "Evaluation Assurance Level rating",
+            "Block EAL assessment process",
+            "Encrypt EAL documentation",
+            "Speed up EAL evaluation"
+        ]
+    },
+    {
+        "q": "What is threat hunting?",
+        "o": [
+            "Proactive search for hidden threats",
+            "Block threat hunting activities",
+            "Encrypt hunting results only",
+            "Speed up hunting process"
+        ]
+    },
+    {
+        "q": "What is hypothesis-driven hunting?",
+        "o": [
+            "Start with specific threat theory",
+            "Random search for threats only",
+            "Block hunting hypothesis testing",
+            "Encrypt hypothesis data only"
+        ]
+    },
+    {
+        "q": "What is IOC-based hunting?",
+        "o": [
+            "Search using known indicators",
+            "Block IOC-based searches here",
+            "Encrypt IOC data files only",
+            "Speed up IOC matching"
+        ]
+    },
+    {
+        "q": "What is TTP-based hunting?",
+        "o": [
+            "Search for behavior patterns",
+            "Block TTP-based hunting here",
+            "Encrypt TTP data only",
+            "Speed up TTP matching"
+        ]
+    },
+    {
+        "q": "What is MITRE ATT&CK for hunting?",
+        "o": [
+            "Framework for adversary techniques",
+            "Block ATT&CK usage here",
+            "Encrypt ATT&CK data only",
+            "Speed up ATT&CK mapping"
+        ]
+    },
+    {
+        "q": "What is kill chain analysis?",
+        "o": [
+            "Map attack stages for defense",
+            "Block kill chain analysis",
+            "Encrypt kill chain data",
+            "Speed up chain analysis"
+        ]
+    },
+    {
+        "q": "What is diamond model?",
+        "o": [
+            "Adversary infrastructure victim event",
+            "Block diamond model analysis",
+            "Encrypt diamond model data",
+            "Speed up model analysis"
+        ]
+    },
+    {
+        "q": "What is purple team exercise?",
+        "o": [
+            "Red and blue team collaboration",
+            "Block purple team activities",
+            "Encrypt exercise findings only",
+            "Speed up exercise completion"
+        ]
+    },
+    {
+        "q": "What is atomic red team?",
+        "o": [
+            "Small focused attack simulations",
+            "Block atomic test execution",
+            "Encrypt test results only",
+            "Speed up test execution"
+        ]
+    },
+    {
+        "q": "What is CALDERA framework?",
+        "o": [
+            "Automated adversary emulation platform",
+            "Block CALDERA emulation",
+            "Encrypt CALDERA output only",
+            "Speed up CALDERA execution"
+        ]
+    },
+    {
+        "q": "What is breach and attack simulation?",
+        "o": [
+            "Continuous security validation tool",
+            "Block BAS tool execution",
+            "Encrypt BAS results only",
+            "Speed up BAS testing"
+        ]
+    },
+    {
+        "q": "What is security chaos engineering?",
+        "o": [
+            "Deliberately inject failures to test",
+            "Block chaos engineering tests",
+            "Encrypt chaos test results",
+            "Speed up chaos injection"
+        ]
+    },
+    {
+        "q": "What is game day exercise?",
+        "o": [
+            "Planned security incident simulation",
+            "Block game day exercises",
+            "Encrypt exercise documentation",
+            "Speed up exercise completion"
+        ]
+    },
+    {
+        "q": "What is tabletop exercise?",
+        "o": [
+            "Discussion-based incident scenario",
+            "Block tabletop exercises completely",
+            "Encrypt exercise notes only",
+            "Speed up tabletop sessions"
+        ]
+    },
+    {
+        "q": "What is cyber range training?",
+        "o": [
+            "Realistic attack simulation environment",
+            "Block cyber range access",
+            "Encrypt range data only",
+            "Speed up range deployment"
+        ]
+    },
+    {
+        "q": "What is deception technology?",
+        "o": [
+            "Lure attackers with fake assets",
+            "Block deception deployment",
+            "Encrypt deception configuration",
+            "Speed up deception detection"
+        ]
+    },
+    {
+        "q": "What is honeypot defense?",
+        "o": [
+            "Decoy system to detect attackers",
+            "Block honeypot deployment here",
+            "Encrypt honeypot logs only",
+            "Speed up honeypot response"
+        ]
+    },
+    {
+        "q": "What is honeytoken?",
+        "o": [
+            "Fake credential to detect misuse",
+            "Block honeytoken creation here",
+            "Encrypt honeytoken values only",
+            "Speed up token detection"
+        ]
+    },
+    {
+        "q": "What is canary token?",
+        "o": [
+            "Alert trigger for unauthorized access",
+            "Block canary token deployment",
+            "Encrypt canary configuration",
+            "Speed up canary alerting"
+        ]
+    },
+    {
+        "q": "What is breadcrumb for deception?",
+        "o": [
+            "Lure attacker to deception assets",
+            "Block breadcrumb creation here",
+            "Encrypt breadcrumb locations",
+            "Speed up breadcrumb detection"
+        ]
+    },
+    {
+        "q": "What is moving target defense?",
+        "o": [
+            "Dynamic changing attack surface",
+            "Block MTD implementation here",
+            "Encrypt MTD configuration only",
+            "Speed up MTD rotation"
+        ]
+    },
+    {
+        "q": "What is IP address rotation?",
+        "o": [
+            "Change IPs to confuse attackers",
+            "Block IP rotation feature",
+            "Encrypt rotated IP addresses",
+            "Speed up IP changes"
+        ]
+    },
+    {
+        "q": "What is port hopping?",
+        "o": [
+            "Change ports dynamically for evasion",
+            "Block port hopping feature",
+            "Encrypt port assignments only",
+            "Speed up port rotation"
+        ]
+    },
+    {
+        "q": "What is network address shuffling?",
+        "o": [
+            "Randomize internal addressing scheme",
+            "Block address shuffling here",
+            "Encrypt shuffled addresses",
+            "Speed up address changes"
+        ]
+    },
+    {
+        "q": "What is software diversity defense?",
+        "o": [
+            "Run varied implementations of service",
+            "Block software diversity here",
+            "Encrypt diverse implementations",
+            "Speed up software deployment"
+        ]
+    },
+    {
+        "q": "What is N-variant systems?",
+        "o": [
+            "Run multiple diversified copies",
+            "Block variant system execution",
+            "Encrypt variant output only",
+            "Speed up variant execution"
+        ]
+    },
+    {
+        "q": "What is ASLR for defense?",
+        "o": [
+            "Address Space Layout Randomization",
+            "Block ASLR protection here",
+            "Encrypt randomized addresses",
+            "Speed up address randomization"
+        ]
+    },
+    {
+        "q": "What is DEP for security?",
+        "o": [
+            "Data Execution Prevention protection",
+            "Block DEP enforcement here",
+            "Encrypt DEP configuration only",
+            "Speed up DEP processing"
+        ]
+    },
+    {
+        "q": "What is CFI for security?",
+        "o": [
+            "Control Flow Integrity protection",
+            "Block CFI enforcement here",
+            "Encrypt CFI configuration only",
+            "Speed up CFI checking"
+        ]
+    },
+    {
+        "q": "What is stack canary?",
+        "o": [
+            "Detect stack buffer overflow attack",
+            "Block stack canary feature",
+            "Encrypt canary value only",
+            "Speed up stack checking"
+        ]
+    },
+    {
+        "q": "What is SIEM for defense?",
+        "o": [
+            "Security Information Event Management",
+            "Block SIEM log collection",
+            "Encrypt SIEM data only",
+            "Speed up SIEM processing"
+        ]
+    },
+    {
+        "q": "What is SOAR for defense?",
+        "o": [
+            "Security Orchestration Automation Response",
+            "Block SOAR workflow execution",
+            "Encrypt SOAR playbooks only",
+            "Speed up SOAR operations"
+        ]
+    },
+    {
+        "q": "What is XDR for defense?",
+        "o": [
+            "Extended Detection and Response platform",
+            "Block XDR data collection",
+            "Encrypt XDR telemetry only",
+            "Speed up XDR analysis"
+        ]
+    },
+    {
+        "q": "What is MDR service?",
+        "o": [
+            "Managed Detection and Response service",
+            "Block MDR service access",
+            "Encrypt MDR communication",
+            "Speed up MDR response"
+        ]
+    },
+    {
+        "q": "What is threat fusion center?",
+        "o": [
+            "Combine multiple threat sources",
+            "Block threat fusion operations",
+            "Encrypt fusion data only",
+            "Speed up fusion processing"
+        ]
+    },
+    {
+        "q": "What is ISACs for sharing?",
+        "o": [
+            "Information Sharing Analysis Centers",
+            "Block ISAC data sharing",
+            "Encrypt ISAC communication",
+            "Speed up ISAC delivery"
+        ]
+    },
+    {
+        "q": "What is STIX for sharing?",
+        "o": [
+            "Structured Threat Information eXpression",
+            "Block STIX data exchange",
+            "Encrypt STIX documents only",
+            "Speed up STIX parsing"
+        ]
+    },
+    {
+        "q": "What is TAXII for sharing?",
+        "o": [
+            "Trusted Automated eXchange of Indicator",
+            "Block TAXII server access",
+            "Encrypt TAXII transport only",
+            "Speed up TAXII transfer"
+        ]
+    },
+    {
+        "q": "What is TLP for classification?",
+        "o": [
+            "Traffic Light Protocol sharing",
+            "Block TLP classification here",
+            "Encrypt TLP markers only",
+            "Speed up TLP assignment"
+        ]
+    },
+    {
+        "q": "What is PAP for sharing?",
+        "o": [
+            "Permissible Actions Protocol",
+            "Block PAP classification here",
+            "Encrypt PAP markers only",
+            "Speed up PAP assignment"
+        ]
+    },
+    {
+        "q": "What is CTI platform integration?",
+        "o": [
+            "Connect threat intel to security tools",
+            "Block CTI integration traffic",
+            "Encrypt CTI data only",
+            "Speed up CTI processing"
+        ]
+    },
+    {
+        "q": "What is threat scoring?",
+        "o": [
+            "Rank threat severity and relevance",
+            "Block threat scoring process",
+            "Encrypt threat scores only",
+            "Speed up score calculation"
+        ]
+    },
+    {
+        "q": "What is enrichment for alerts?",
+        "o": [
+            "Add context to raw alerts",
+            "Block alert enrichment here",
+            "Encrypt enriched data only",
+            "Speed up enrichment process"
+        ]
+    },
+    {
+        "q": "What is automated triage?",
+        "o": [
+            "ML-based initial alert assessment",
+            "Block automated triage process",
+            "Encrypt triage decisions only",
+            "Speed up triage processing"
+        ]
+    },
+    {
+        "q": "What is case management?",
+        "o": [
+            "Track and manage security incidents",
+            "Block case management access",
+            "Encrypt case data only",
+            "Speed up case processing"
+        ]
+    },
+    {
+        "q": "What is evidence collection?",
+        "o": [
+            "Gather artifacts for investigation",
+            "Block evidence collection here",
+            "Encrypt evidence chain only",
+            "Speed up evidence gathering"
+        ]
+    },
+    {
+        "q": "What is chain of custody?",
+        "o": [
+            "Document evidence handling history",
+            "Block custody documentation",
+            "Encrypt custody records only",
+            "Speed up custody tracking"
+        ]
+    },
+    {
+        "q": "What is forensic imaging?",
+        "o": [
+            "Bit-for-bit copy of storage",
+            "Block forensic imaging here",
+            "Encrypt forensic images only",
+            "Speed up imaging process"
+        ]
+    },
+    {
+        "q": "What is memory forensics?",
+        "o": [
+            "Analyze RAM for artifacts",
+            "Block memory analysis here",
+            "Encrypt memory dumps only",
+            "Speed up memory analysis"
+        ]
+    },
+    {
+        "q": "What is network forensics?",
+        "o": [
+            "Analyze captured network traffic",
+            "Block network forensics here",
+            "Encrypt captured traffic only",
+            "Speed up traffic analysis"
+        ]
+    },
+    {
+        "q": "What is timeline analysis?",
+        "o": [
+            "Reconstruct event sequence timing",
+            "Block timeline creation here",
+            "Encrypt timeline data only",
+            "Speed up timeline building"
+        ]
+    },
+    {
+        "q": "What is artifact analysis?",
+        "o": [
+            "Examine forensic evidence items",
+            "Block artifact examination here",
+            "Encrypt artifact data only",
+            "Speed up artifact processing"
+        ]
+    },
+    {
+        "q": "What is malware sandboxing?",
+        "o": [
+            "Analyze malware in isolated environment",
+            "Block sandbox execution here",
+            "Encrypt sandbox results only",
+            "Speed up sandbox analysis"
+        ]
+    },
+    {
+        "q": "What is dynamic analysis?",
+        "o": [
+            "Observe malware behavior running",
+            "Block dynamic analysis here",
+            "Encrypt analysis results only",
+            "Speed up dynamic execution"
+        ]
+    },
+    {
+        "q": "What is static analysis?",
+        "o": [
+            "Analyze code without execution",
+            "Block static analysis process",
+            "Encrypt analysis output only",
+            "Speed up static processing"
+        ]
+    },
+    {
+        "q": "What is reverse engineering?",
+        "o": [
+            "Understand malware code internals",
+            "Block reverse engineering here",
+            "Encrypt RE output only",
+            "Speed up RE processing"
+        ]
+    },
+    {
+        "q": "What is IOC extraction?",
+        "o": [
+            "Pull indicators from malware sample",
+            "Block IOC extraction process",
+            "Encrypt extracted IOCs only",
+            "Speed up IOC extraction"
+        ]
+    },
+    {
+        "q": "What is YARA signature creation?",
+        "o": [
+            "Write rules to detect malware",
+            "Block YARA rule creation",
+            "Encrypt YARA rules only",
+            "Speed up rule testing"
+        ]
+    },
+    {
+        "q": "What is attribution analysis?",
+        "o": [
+            "Identify attack source or actor",
+            "Block attribution analysis here",
+            "Encrypt attribution data only",
+            "Speed up attribution process"
+        ]
+    },
+    {
+        "q": "What is threat actor profiling?",
+        "o": [
+            "Document adversary capabilities TTPs",
+            "Block actor profiling here",
+            "Encrypt profile data only",
+            "Speed up profiling process"
+        ]
+    },
+    {
+        "q": "What is campaign tracking?",
+        "o": [
+            "Monitor ongoing attack operations",
+            "Block campaign tracking here",
+            "Encrypt campaign data only",
+            "Speed up campaign analysis"
+        ]
+    },
+    {
+        "q": "What is infrastructure pivoting?",
+        "o": [
+            "Map connected attacker resources",
+            "Block pivoting analysis here",
+            "Encrypt pivot data only",
+            "Speed up pivot discovery"
+        ]
+    },
+    {
+        "q": "What is passive DNS analysis?",
+        "o": [
+            "Historical DNS resolution data",
+            "Block passive DNS access",
+            "Encrypt DNS history only",
+            "Speed up DNS analysis"
+        ]
+    },
+    {
+        "q": "What is WHOIS history?",
+        "o": [
+            "Historical domain registration data",
+            "Block WHOIS history access",
+            "Encrypt WHOIS data only",
+            "Speed up WHOIS lookup"
+        ]
+    },
+    {
+        "q": "What is certificate transparency log?",
+        "o": [
+            "Public record of issued certs",
+            "Block CT log access here",
+            "Encrypt CT log data only",
+            "Speed up CT log search"
+        ]
+    },
+    {
+        "q": "What is domain fronting detection?",
+        "o": [
+            "Identify CDN abuse for C2",
+            "Block domain fronting here",
+            "Encrypt detection results only",
+            "Speed up fronting detection"
+        ]
+    },
+    {
+        "q": "What is DNS tunneling detection?",
+        "o": [
+            "Identify data exfil via DNS",
+            "Block DNS tunneling detection",
+            "Encrypt tunnel data only",
+            "Speed up tunnel detection"
+        ]
+    },
+    {
+        "q": "What is beacon detection?",
+        "o": [
+            "Identify periodic C2 communication",
+            "Block beacon detection process",
+            "Encrypt beacon patterns only",
+            "Speed up beacon analysis"
+        ]
+    },
+    {
+        "q": "What is JA3 fingerprinting?",
+        "o": [
+            "TLS client fingerprint from hello",
+            "Block JA3 fingerprinting here",
+            "Encrypt JA3 hashes only",
+            "Speed up JA3 matching"
+        ]
+    },
+    {
+        "q": "What is JA3S fingerprinting?",
+        "o": [
+            "TLS server fingerprint from response",
+            "Block JA3S fingerprinting here",
+            "Encrypt JA3S hashes only",
+            "Speed up JA3S matching"
+        ]
+    },
+    {
+        "q": "What is JARM fingerprinting?",
+        "o": [
+            "Active TLS server fingerprint probe",
+            "Block JARM fingerprinting here",
+            "Encrypt JARM data only",
+            "Speed up JARM scanning"
+        ]
+    },
+    {
+        "q": "What is Hassh fingerprinting?",
+        "o": [
+            "SSH client server fingerprinting",
+            "Block Hassh fingerprinting here",
+            "Encrypt Hassh data only",
+            "Speed up Hassh matching"
+        ]
+    },
+    {
+        "q": "What is user agent analysis?",
+        "o": [
+            "Detect anomalous HTTP clients",
+            "Block UA analysis process",
+            "Encrypt UA strings only",
+            "Speed up UA classification"
+        ]
+    },
+    {
+        "q": "What is exfiltration detection?",
+        "o": [
+            "Identify unauthorized data transfer",
+            "Block exfiltration detection",
+            "Encrypt detection results only",
+            "Speed up exfil detection"
+        ]
+    },
+    {
+        "q": "What is DGA detection?",
+        "o": [
+            "Identify algorithmically generated domains",
+            "Block DGA detection process",
+            "Encrypt DGA data only",
+            "Speed up DGA classification"
+        ]
+    },
+    {
+        "q": "What is fast flux detection?",
+        "o": [
+            "Identify rapidly changing DNS",
+            "Block fast flux detection",
+            "Encrypt flux data only",
+            "Speed up flux analysis"
+        ]
+    },
+    {
+        "q": "What is phishing domain detection?",
+        "o": [
+            "Identify lookalike domains",
+            "Block phishing detection here",
+            "Encrypt detection results",
+            "Speed up domain analysis"
+        ]
+    },
+    {
+        "q": "What is typosquatting detection?",
+        "o": [
+            "Find misspelled domain registrations",
+            "Block typosquatting detection",
+            "Encrypt detection data only",
+            "Speed up typo scanning"
+        ]
+    },
+    {
+        "q": "What is homograph detection?",
+        "o": [
+            "Identify Unicode lookalike domains",
+            "Block homograph detection here",
+            "Encrypt detection results",
+            "Speed up homograph scan"
+        ]
+    },
+    {
+        "q": "What is brand monitoring?",
+        "o": [
+            "Watch for impersonation attempts",
+            "Block monitoring activities here",
+            "Encrypt monitoring results",
+            "Speed up brand scanning"
+        ]
+    },
+    {
+        "q": "What is dark web monitoring?",
+        "o": [
+            "Watch for leaked credentials",
+            "Block dark web monitoring",
+            "Encrypt monitoring results",
+            "Speed up dark web scan"
+        ]
+    },
+    {
+        "q": "What is credential stuffing defense?",
+        "o": [
+            "Detect automated login attempts",
+            "Block stuffing defense tools",
+            "Encrypt detection results",
+            "Speed up stuffing detection"
+        ]
+    },
+    {
+        "q": "What is account takeover prevention?",
+        "o": [
+            "Detect and block stolen credentials",
+            "Block prevention mechanisms",
+            "Encrypt prevention data only",
+            "Speed up takeover detection"
+        ]
+    },
+    {
+        "q": "What is bot detection?",
+        "o": [
+            "Identify automated vs human traffic",
+            "Block bot detection system",
+            "Encrypt bot data only",
+            "Speed up bot classification"
+        ]
+    },
+    {
+        "q": "What is CAPTCHA for defense?",
+        "o": [
+            "Challenge to verify human user",
+            "Block CAPTCHA verification",
+            "Encrypt CAPTCHA responses",
+            "Speed up CAPTCHA solving"
+        ]
+    },
+    {
+        "q": "What is reCAPTCHA v3?",
+        "o": [
+            "Invisible risk score based CAPTCHA",
+            "Block reCAPTCHA verification",
+            "Encrypt reCAPTCHA scores",
+            "Speed up verification process"
+        ]
+    },
+    {
+        "q": "What is device fingerprinting?",
+        "o": [
+            "Identify device by characteristics",
+            "Block fingerprinting collection",
+            "Encrypt fingerprint data only",
+            "Speed up fingerprint matching"
+        ]
+    },
+    {
+        "q": "What is behavioral biometrics?",
+        "o": [
+            "Authenticate by user behavior patterns",
+            "Block behavioral analysis here",
+            "Encrypt biometric data only",
+            "Speed up behavior analysis"
+        ]
+    },
+    {
+        "q": "What is risk-based authentication?",
+        "o": [
+            "Adjust auth based on risk score",
+            "Block risk assessment process",
+            "Encrypt risk scores only",
+            "Speed up risk calculation"
+        ]
+    },
+    {
+        "q": "What is step-up authentication?",
+        "o": [
+            "Require stronger auth for risk",
+            "Block step-up auth requests",
+            "Encrypt step-up data only",
+            "Speed up step-up process"
+        ]
+    },
+    {
+        "q": "What is continuous authentication?",
+        "o": [
+            "Verify user throughout session",
+            "Block continuous auth checks",
+            "Encrypt auth session data",
+            "Speed up auth verification"
+        ]
+    },
+    {
+        "q": "What is session anomaly detection?",
+        "o": [
+            "Find abnormal session behavior",
+            "Block session monitoring here",
+            "Encrypt session data only",
+            "Speed up session analysis"
+        ]
+    },
+    {
+        "q": "What is impossible travel detection?",
+        "o": [
+            "Find logins from distant locations",
+            "Block travel detection here",
+            "Encrypt location data only",
+            "Speed up travel analysis"
+        ]
+    },
+    {
+        "q": "What is geo-velocity check?",
+        "o": [
+            "Calculate speed between logins",
+            "Block velocity checking here",
+            "Encrypt velocity data only",
+            "Speed up velocity calculation"
+        ]
+    },
+    {
+        "q": "What is IP reputation scoring?",
+        "o": [
+            "Rate IP address trustworthiness",
+            "Block reputation scoring here",
+            "Encrypt reputation data only",
+            "Speed up reputation lookup"
+        ]
+    },
+    {
+        "q": "What is ASN reputation?",
+        "o": [
+            "Rate network provider trustworthiness",
+            "Block ASN reputation checks",
+            "Encrypt ASN data only",
+            "Speed up ASN lookup"
+        ]
+    },
+    {
+        "q": "What is residential proxy detection?",
+        "o": [
+            "Identify traffic via home IPs",
+            "Block proxy detection here",
+            "Encrypt proxy data only",
+            "Speed up proxy detection"
+        ]
+    },
+    {
+        "q": "What is datacenter IP detection?",
+        "o": [
+            "Identify traffic from hosting providers",
+            "Block datacenter detection",
+            "Encrypt detection data only",
+            "Speed up datacenter lookup"
+        ]
+    },
+    {
+        "q": "What is VPN detection?",
+        "o": [
+            "Identify VPN service usage",
+            "Block VPN detection features",
+            "Encrypt VPN detection data",
+            "Speed up VPN identification"
+        ]
+    },
+    {
+        "q": "What is Tor exit node detection?",
+        "o": [
+            "Identify traffic from Tor network",
+            "Block Tor detection feature",
+            "Encrypt Tor detection data",
+            "Speed up Tor identification"
+        ]
+    },
+    {
+        "q": "What is geolocation accuracy?",
+        "o": [
+            "Precision of IP location mapping",
+            "Block geolocation service",
+            "Encrypt location data only",
+            "Speed up location lookup"
+        ]
+    },
+    {
+        "q": "What is network segmentation audit?",
+        "o": [
+            "Verify proper network isolation",
+            "Block segmentation audit here",
+            "Encrypt audit results only",
+            "Speed up audit process"
+        ]
+    },
+    {
+        "q": "What is firewall rule review?",
+        "o": [
+            "Analyze and optimize firewall rules",
+            "Block rule review process",
+            "Encrypt rule documentation",
+            "Speed up rule review"
+        ]
+    },
+    {
+        "q": "What is unused rule detection?",
+        "o": [
+            "Find firewall rules never triggered",
+            "Block unused rule detection",
+            "Encrypt rule hit counts",
+            "Speed up rule analysis"
+        ]
+    },
+    {
+        "q": "What is shadowed rule detection?",
+        "o": [
+            "Find rules blocked by earlier rules",
+            "Block shadow detection here",
+            "Encrypt shadow analysis data",
+            "Speed up shadow detection"
+        ]
+    },
+    {
+        "q": "What is rule optimization?",
+        "o": [
+            "Consolidate and improve rule efficiency",
+            "Block optimization process here",
+            "Encrypt optimization results",
+            "Speed up optimization"
+        ]
+    },
+    {
+        "q": "What is change management for security?",
+        "o": [
+            "Control and track security changes",
+            "Block change management here",
+            "Encrypt change records only",
+            "Speed up change approval"
+        ]
+    },
+    {
+        "q": "What is CAB for changes?",
+        "o": [
+            "Change Advisory Board review",
+            "Block CAB review process",
+            "Encrypt CAB documentation",
+            "Speed up CAB approval"
+        ]
+    },
+    {
+        "q": "What is emergency change process?",
+        "o": [
+            "Expedited change for critical fixes",
+            "Block emergency changes here",
+            "Encrypt emergency documentation",
+            "Speed up emergency approval"
+        ]
+    },
+    {
+        "q": "What is security exception process?",
+        "o": [
+            "Document approved security deviations",
+            "Block exception requests here",
+            "Encrypt exception data only",
+            "Speed up exception approval"
+        ]
+    },
+    {
+        "q": "What is risk acceptance?",
+        "o": [
+            "Formally accept remaining risk",
+            "Block risk acceptance process",
+            "Encrypt acceptance documentation",
+            "Speed up acceptance approval"
+        ]
+    },
+    {
+        "q": "What is residual risk?",
+        "o": [
+            "Risk remaining after controls",
+            "Block residual risk assessment",
+            "Encrypt residual risk data",
+            "Speed up risk calculation"
+        ]
+    },
+    {
+        "q": "What is inherent risk?",
+        "o": [
+            "Risk before any controls applied",
+            "Block inherent risk assessment",
+            "Encrypt inherent risk data",
+            "Speed up risk assessment"
+        ]
+    },
+    {
+        "q": "What is control effectiveness?",
+        "o": [
+            "How well control mitigates risk",
+            "Block effectiveness testing",
+            "Encrypt effectiveness data",
+            "Speed up effectiveness tests"
+        ]
+    },
+    {
+        "q": "What is defense in depth?",
+        "o": [
+            "Multiple layers of security controls",
+            "Single control for all threats",
+            "Block defense implementation",
+            "Encrypt defense configuration"
+        ]
+    },
+    {
+        "q": "What is layered security?",
+        "o": [
+            "Multiple independent security layers",
+            "Single security layer only",
+            "Block layered implementation",
+            "Encrypt layer configuration"
+        ]
+    },
+    {
+        "q": "What is least privilege in network?",
+        "o": [
+            "Minimum access needed for function",
+            "Maximum access for convenience",
+            "Block privilege restrictions",
+            "Encrypt privilege data only"
+        ]
+    },
+    {
+        "q": "What is need-to-know principle?",
+        "o": [
+            "Access only what job requires",
+            "Access everything by default",
+            "Block need assessment here",
+            "Encrypt need documentation"
+        ]
+    },
+    {
+        "q": "What is separation of duties?",
+        "o": [
+            "Split critical tasks among people",
+            "Single person handles all tasks",
+            "Block duty separation here",
+            "Encrypt duty assignments"
+        ]
+    },
+    {
+        "q": "What is dual control?",
+        "o": [
+            "Two people required for action",
+            "Single person for all actions",
+            "Block dual control requirement",
+            "Encrypt control configuration"
+        ]
+    },
+    {
+        "q": "What is split knowledge?",
+        "o": [
+            "No single person has complete info",
+            "One person knows everything",
+            "Block split knowledge here",
+            "Encrypt split portions only"
+        ]
+    },
+    {
+        "q": "What is M of N control?",
+        "o": [
+            "M of N parties required for action",
+            "All parties always required",
+            "Block M of N implementation",
+            "Encrypt M of N configuration"
+        ]
+    },
+    {
+        "q": "What is key ceremony?",
+        "o": [
+            "Formal process for key operations",
+            "Block key ceremony process",
+            "Encrypt ceremony documentation",
+            "Speed up ceremony execution"
+        ]
+    },
+    {
+        "q": "What is key custodian?",
+        "o": [
+            "Person responsible for key share",
+            "Block custodian assignment",
+            "Encrypt custodian identity",
+            "Speed up custodian selection"
+        ]
+    },
+    {
+        "q": "What is key escrow?",
+        "o": [
+            "Store key copy with trusted party",
+            "Block key escrow process",
+            "Encrypt escrowed key data",
+            "Speed up escrow storage"
+        ]
+    },
+    {
+        "q": "What is key recovery?",
+        "o": [
+            "Process to restore lost keys",
+            "Block key recovery process",
+            "Encrypt recovery documentation",
+            "Speed up recovery process"
+        ]
+    },
+    {
+        "q": "What is security architecture review?",
+        "o": [
+            "Evaluate overall security design",
+            "Block architecture review here",
+            "Encrypt review documentation",
+            "Speed up review process"
+        ]
+    },
+    {
+        "q": "What is threat modeling?",
+        "o": [
+            "Identify and prioritize threats",
+            "Block threat modeling here",
+            "Encrypt threat model data",
+            "Speed up threat analysis"
+        ]
+    },
+    {
+        "q": "What is STRIDE threat model?",
+        "o": [
+            "Spoofing Tampering Repudiation categories",
+            "Block STRIDE analysis here",
+            "Encrypt STRIDE documentation",
+            "Speed up STRIDE analysis"
+        ]
+    },
+    {
+        "q": "What is DREAD risk rating?",
+        "o": [
+            "Damage Reproducibility Exploitability score",
+            "Block DREAD scoring here",
+            "Encrypt DREAD documentation",
+            "Speed up DREAD calculation"
+        ]
+    },
+    {
+        "q": "What is attack surface analysis?",
+        "o": [
+            "Identify all potential entry points",
+            "Block attack surface analysis",
+            "Encrypt surface documentation",
+            "Speed up surface analysis"
+        ]
+    },
+    {
+        "q": "What is attack surface reduction?",
+        "o": [
+            "Minimize potential attack vectors",
+            "Block reduction efforts here",
+            "Encrypt reduction documentation",
+            "Speed up reduction process"
+        ]
+    }
+]

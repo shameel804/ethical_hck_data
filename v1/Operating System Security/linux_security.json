@@ -1,0 +1,4529 @@
+[
+    {
+        "q": "What command displays the current user in Linux?",
+        "o": [
+            "whoami",
+            "pwd",
+            "ls",
+            "cd"
+        ]
+    },
+    {
+        "q": "Which file stores encrypted user passwords in Linux?",
+        "o": [
+            "/etc/shadow",
+            "/etc/passwd",
+            "/etc/group",
+            "/etc/hosts"
+        ]
+    },
+    {
+        "q": "What permission value represents read-only access?",
+        "o": [
+            "4",
+            "1",
+            "2",
+            "7"
+        ]
+    },
+    {
+        "q": "Which command changes file ownership in Linux?",
+        "o": [
+            "chown",
+            "chmod",
+            "chgrp",
+            "ls"
+        ]
+    },
+    {
+        "q": "What is the default shell for most Linux distributions?",
+        "o": [
+            "bash",
+            "zsh",
+            "fish",
+            "csh"
+        ]
+    },
+    {
+        "q": "Which file contains user account information in Linux?",
+        "o": [
+            "/etc/passwd",
+            "/etc/shadow",
+            "/etc/group",
+            "/etc/hosts"
+        ]
+    },
+    {
+        "q": "What command modifies file permissions in Linux?",
+        "o": [
+            "chmod",
+            "chown",
+            "chgrp",
+            "umask"
+        ]
+    },
+    {
+        "q": "Which user has UID 0 in Linux systems?",
+        "o": [
+            "root",
+            "admin",
+            "sudo",
+            "system"
+        ]
+    },
+    {
+        "q": "What does the umask command control in Linux?",
+        "o": [
+            "Default file permissions",
+            "Network settings",
+            "Disk partitions",
+            "Process priority"
+        ]
+    },
+    {
+        "q": "Which directory contains system binaries in Linux?",
+        "o": [
+            "/bin",
+            "/tmp",
+            "/var",
+            "/etc"
+        ]
+    },
+    {
+        "q": "What permission mode allows execute access for all?",
+        "o": [
+            "111",
+            "444",
+            "222",
+            "777"
+        ]
+    },
+    {
+        "q": "Which command lists running processes in Linux?",
+        "o": [
+            "ps",
+            "ls",
+            "df",
+            "pwd"
+        ]
+    },
+    {
+        "q": "What is the purpose of sudo command in Linux?",
+        "o": [
+            "Execute as superuser",
+            "Switch directories",
+            "Copy files",
+            "Delete users"
+        ]
+    },
+    {
+        "q": "Which file defines sudo permissions for users?",
+        "o": [
+            "/etc/sudoers",
+            "/etc/passwd",
+            "/etc/shadow",
+            "/etc/group"
+        ]
+    },
+    {
+        "q": "What does the rwx permission triplet represent?",
+        "o": [
+            "Read Write Execute",
+            "Run Write Exit",
+            "Read Work Exit",
+            "Run Work Execute"
+        ]
+    },
+    {
+        "q": "Which command adds a new user in Linux?",
+        "o": [
+            "useradd",
+            "adduser",
+            "newuser",
+            "createuser"
+        ]
+    },
+    {
+        "q": "What directory stores user home folders in Linux?",
+        "o": [
+            "/home",
+            "/root",
+            "/var",
+            "/tmp"
+        ]
+    },
+    {
+        "q": "Which command changes user password in Linux?",
+        "o": [
+            "passwd",
+            "chpass",
+            "setpass",
+            "newpass"
+        ]
+    },
+    {
+        "q": "What is the numeric permission for full access?",
+        "o": [
+            "777",
+            "666",
+            "555",
+            "444"
+        ]
+    },
+    {
+        "q": "Which directory contains system configuration files?",
+        "o": [
+            "/etc",
+            "/bin",
+            "/var",
+            "/usr"
+        ]
+    },
+    {
+        "q": "What command displays current login sessions?",
+        "o": [
+            "who",
+            "top",
+            "ps",
+            "df"
+        ]
+    },
+    {
+        "q": "Which permission bit is needed to enter a directory?",
+        "o": [
+            "Execute bit",
+            "Read bit only",
+            "Write bit only",
+            "Special bit"
+        ]
+    },
+    {
+        "q": "What is the primary purpose of /etc/group file?",
+        "o": [
+            "Group definitions",
+            "User passwords",
+            "System configs",
+            "Network settings"
+        ]
+    },
+    {
+        "q": "Which command displays user group membership?",
+        "o": [
+            "groups",
+            "users",
+            "members",
+            "list"
+        ]
+    },
+    {
+        "q": "What does the sticky bit permission do?",
+        "o": [
+            "Restrict file deletion",
+            "Allow full access",
+            "Enable execution",
+            "Grant ownership"
+        ]
+    },
+    {
+        "q": "Which directory contains log files in Linux?",
+        "o": [
+            "/var/log",
+            "/etc/log",
+            "/usr/log",
+            "/tmp/log"
+        ]
+    },
+    {
+        "q": "What command lists all installed packages on Debian?",
+        "o": [
+            "dpkg -l",
+            "rpm -qa",
+            "apt list",
+            "yum list"
+        ]
+    },
+    {
+        "q": "Which file stores the root user home directory?",
+        "o": [
+            "/root",
+            "/home/root",
+            "/etc/root",
+            "/var/root"
+        ]
+    },
+    {
+        "q": "What command shows disk usage in Linux?",
+        "o": [
+            "df",
+            "du",
+            "ls",
+            "ps"
+        ]
+    },
+    {
+        "q": "Which permission value represents write access?",
+        "o": [
+            "2",
+            "1",
+            "4",
+            "7"
+        ]
+    },
+    {
+        "q": "What is the purpose of the wheel group in Linux?",
+        "o": [
+            "Sudo access control",
+            "File ownership",
+            "Network access",
+            "Printer access"
+        ]
+    },
+    {
+        "q": "Which command terminates a process in Linux?",
+        "o": [
+            "kill",
+            "stop",
+            "end",
+            "quit"
+        ]
+    },
+    {
+        "q": "What file format does /etc/passwd use?",
+        "o": [
+            "Colon-separated",
+            "Tab-separated",
+            "Comma-separated",
+            "Space-separated"
+        ]
+    },
+    {
+        "q": "Which command sets the access control list on files?",
+        "o": [
+            "setfacl",
+            "getfacl",
+            "chmod",
+            "chown"
+        ]
+    },
+    {
+        "q": "What is the default file permission before umask?",
+        "o": [
+            "666 for files",
+            "777 for files",
+            "644 for files",
+            "755 for files"
+        ]
+    },
+    {
+        "q": "Which daemon handles secure shell connections?",
+        "o": [
+            "sshd",
+            "httpd",
+            "ftpd",
+            "smbd"
+        ]
+    },
+    {
+        "q": "What command displays network connections in Linux?",
+        "o": [
+            "netstat",
+            "ifconfig",
+            "route",
+            "hostname"
+        ]
+    },
+    {
+        "q": "Which directory contains cron job scripts?",
+        "o": [
+            "/etc/cron.d",
+            "/var/cron",
+            "/usr/cron",
+            "/tmp/cron"
+        ]
+    },
+    {
+        "q": "What is the purpose of /etc/hosts file?",
+        "o": [
+            "Static hostname mapping",
+            "User authentication",
+            "Password storage",
+            "Process control"
+        ]
+    },
+    {
+        "q": "Which command displays system uptime?",
+        "o": [
+            "uptime",
+            "time",
+            "date",
+            "clock"
+        ]
+    },
+    {
+        "q": "What permission allows others to read but not write?",
+        "o": [
+            "r--",
+            "rw-",
+            "rwx",
+            "-w-"
+        ]
+    },
+    {
+        "q": "Which service manages system logging in Linux?",
+        "o": [
+            "rsyslog",
+            "cron",
+            "sshd",
+            "httpd"
+        ]
+    },
+    {
+        "q": "What command edits the crontab for current user?",
+        "o": [
+            "crontab -e",
+            "cron -edit",
+            "edit cron",
+            "vi crontab"
+        ]
+    },
+    {
+        "q": "Which directory stores temporary files in Linux?",
+        "o": [
+            "/tmp",
+            "/var",
+            "/etc",
+            "/usr"
+        ]
+    },
+    {
+        "q": "What command shows firewall rules in iptables?",
+        "o": [
+            "iptables -L",
+            "iptables -A",
+            "iptables -D",
+            "iptables -F"
+        ]
+    },
+    {
+        "q": "Which file defines the system hostname?",
+        "o": [
+            "/etc/hostname",
+            "/etc/hosts",
+            "/etc/network",
+            "/etc/system"
+        ]
+    },
+    {
+        "q": "What is the SUID permission bit used for?",
+        "o": [
+            "Run as owner",
+            "Run as group",
+            "Sticky files",
+            "Lock files"
+        ]
+    },
+    {
+        "q": "Which command displays kernel version in Linux?",
+        "o": [
+            "uname -r",
+            "version",
+            "kernel -v",
+            "cat /proc"
+        ]
+    },
+    {
+        "q": "What directory contains device files in Linux?",
+        "o": [
+            "/dev",
+            "/etc",
+            "/var",
+            "/sys"
+        ]
+    },
+    {
+        "q": "Which command locks a user account in Linux?",
+        "o": [
+            "usermod -L",
+            "passwd -l",
+            "lock user",
+            "disable user"
+        ]
+    },
+    {
+        "q": "What is the octal permission for read and execute?",
+        "o": [
+            "5",
+            "4",
+            "6",
+            "7"
+        ]
+    },
+    {
+        "q": "Which file stores DNS resolver configuration?",
+        "o": [
+            "/etc/resolv.conf",
+            "/etc/dns.conf",
+            "/etc/network.conf",
+            "/etc/hosts.conf"
+        ]
+    },
+    {
+        "q": "What command displays listening ports in Linux?",
+        "o": [
+            "ss -l",
+            "ls -l",
+            "ps -l",
+            "df -l"
+        ]
+    },
+    {
+        "q": "Which directory holds shared library files?",
+        "o": [
+            "/lib",
+            "/bin",
+            "/etc",
+            "/var"
+        ]
+    },
+    {
+        "q": "What is the purpose of /etc/securetty file?",
+        "o": [
+            "Root login terminals",
+            "User passwords",
+            "Group settings",
+            "Network config"
+        ]
+    },
+    {
+        "q": "Which command changes default shell for a user?",
+        "o": [
+            "chsh",
+            "shell",
+            "setsh",
+            "newsh"
+        ]
+    },
+    {
+        "q": "What permission set is 644 in symbolic form?",
+        "o": [
+            "rw-r--r--",
+            "rwxr-xr-x",
+            "rw-rw-r--",
+            "r--r--r--"
+        ]
+    },
+    {
+        "q": "Which command manages systemd services?",
+        "o": [
+            "systemctl",
+            "service",
+            "init",
+            "daemon"
+        ]
+    },
+    {
+        "q": "What file defines PAM authentication modules?",
+        "o": [
+            "/etc/pam.d",
+            "/etc/auth.d",
+            "/etc/sec.d",
+            "/etc/login.d"
+        ]
+    },
+    {
+        "q": "Which directory contains mount points?",
+        "o": [
+            "/mnt",
+            "/etc",
+            "/var",
+            "/tmp"
+        ]
+    },
+    {
+        "q": "What command displays SELinux status?",
+        "o": [
+            "sestatus",
+            "selinux",
+            "getstatus",
+            "showse"
+        ]
+    },
+    {
+        "q": "Which file stores shell startup commands?",
+        "o": [
+            ".bashrc",
+            ".config",
+            ".profile",
+            ".login"
+        ]
+    },
+    {
+        "q": "What is the SGID permission bit used for?",
+        "o": [
+            "Run as group owner",
+            "Run as file owner",
+            "Sticky directory",
+            "Lock the file"
+        ]
+    },
+    {
+        "q": "Which command shows memory usage in Linux?",
+        "o": [
+            "free",
+            "mem",
+            "ram",
+            "cache"
+        ]
+    },
+    {
+        "q": "What directory stores kernel modules?",
+        "o": [
+            "/lib/modules",
+            "/etc/modules",
+            "/var/modules",
+            "/usr/modules"
+        ]
+    },
+    {
+        "q": "Which command displays file access control lists?",
+        "o": [
+            "getfacl",
+            "setfacl",
+            "showfacl",
+            "listfacl"
+        ]
+    },
+    {
+        "q": "What is purpose of /etc/login.defs file?",
+        "o": [
+            "Login configuration",
+            "User passwords",
+            "Group settings",
+            "Network setup"
+        ]
+    },
+    {
+        "q": "Which service manages time synchronization?",
+        "o": [
+            "ntpd or chronyd",
+            "sshd service",
+            "httpd service",
+            "ftpd service"
+        ]
+    },
+    {
+        "q": "What command searches for files by name?",
+        "o": [
+            "find",
+            "grep",
+            "locate",
+            "search"
+        ]
+    },
+    {
+        "q": "Which directory stores optional software packages?",
+        "o": [
+            "/opt",
+            "/usr",
+            "/var",
+            "/tmp"
+        ]
+    },
+    {
+        "q": "What is the purpose of /proc filesystem?",
+        "o": [
+            "Kernel information",
+            "User data storage",
+            "Device files",
+            "Network config"
+        ]
+    },
+    {
+        "q": "Which command schedules one-time task execution?",
+        "o": [
+            "at",
+            "cron",
+            "batch",
+            "timer"
+        ]
+    },
+    {
+        "q": "What permission is needed to list directory contents?",
+        "o": [
+            "Read permission",
+            "Write permission",
+            "Execute only",
+            "Special bit"
+        ]
+    },
+    {
+        "q": "Which file stores kernel boot parameters?",
+        "o": [
+            "/etc/default/grub",
+            "/etc/kernel.conf",
+            "/boot/config",
+            "/var/boot"
+        ]
+    },
+    {
+        "q": "What command displays all users on the system?",
+        "o": [
+            "cat /etc/passwd",
+            "list users",
+            "show users",
+            "get users"
+        ]
+    },
+    {
+        "q": "Which directory contains systemd service units?",
+        "o": [
+            "/etc/systemd",
+            "/var/systemd",
+            "/usr/systemd",
+            "/lib/systems"
+        ]
+    },
+    {
+        "q": "What is the purpose of the nobody user?",
+        "o": [
+            "Unprivileged processes",
+            "System administration",
+            "Network services",
+            "File ownership"
+        ]
+    },
+    {
+        "q": "Which command displays system audit logs?",
+        "o": [
+            "ausearch",
+            "auditlog",
+            "syslog",
+            "journald"
+        ]
+    },
+    {
+        "q": "What file controls SSH server configuration?",
+        "o": [
+            "/etc/ssh/sshd_config",
+            "/etc/ssh.conf",
+            "/var/ssh/config",
+            "/usr/ssh/setup"
+        ]
+    },
+    {
+        "q": "Which command shows currently logged in users?",
+        "o": [
+            "w",
+            "u",
+            "l",
+            "p"
+        ]
+    },
+    {
+        "q": "What is the default permission for new directories?",
+        "o": [
+            "777 minus umask",
+            "666 minus umask",
+            "755 fixed",
+            "644 fixed"
+        ]
+    },
+    {
+        "q": "Which daemon manages print services in Linux?",
+        "o": [
+            "cupsd",
+            "lpd",
+            "printd",
+            "spooler"
+        ]
+    },
+    {
+        "q": "What command displays routing table in Linux?",
+        "o": [
+            "ip route",
+            "netstat",
+            "route",
+            "ifconfig"
+        ]
+    },
+    {
+        "q": "Which file defines system-wide environment variables?",
+        "o": [
+            "/etc/environment",
+            "/etc/profile",
+            "/etc/bashrc",
+            "/etc/sysenv"
+        ]
+    },
+    {
+        "q": "What is the purpose of chroot command?",
+        "o": [
+            "Change root directory",
+            "Change ownership",
+            "Change permissions",
+            "Change user"
+        ]
+    },
+    {
+        "q": "Which directory contains GRUB bootloader files?",
+        "o": [
+            "/boot/grub",
+            "/etc/grub",
+            "/var/grub",
+            "/usr/grub"
+        ]
+    },
+    {
+        "q": "What command creates symbolic links in Linux?",
+        "o": [
+            "ln -s",
+            "link",
+            "symlink",
+            "mklink"
+        ]
+    },
+    {
+        "q": "Which service handles name resolution in Linux?",
+        "o": [
+            "nscd",
+            "dnsd",
+            "named",
+            "resolver"
+        ]
+    },
+    {
+        "q": "What is the purpose of /sys filesystem?",
+        "o": [
+            "Kernel device info",
+            "User file storage",
+            "Network settings",
+            "Process data"
+        ]
+    },
+    {
+        "q": "Which command displays authentication failures?",
+        "o": [
+            "lastb",
+            "last",
+            "who",
+            "users"
+        ]
+    },
+    {
+        "q": "What file stores the current runlevel target?",
+        "o": [
+            "/etc/systemd/default",
+            "/etc/inittab",
+            "/etc/runlevel",
+            "/var/target"
+        ]
+    },
+    {
+        "q": "Which permission allows creating files in directory?",
+        "o": [
+            "Write permission",
+            "Read permission",
+            "Execute only",
+            "Special bit"
+        ]
+    },
+    {
+        "q": "What command manages SELinux boolean settings?",
+        "o": [
+            "setsebool",
+            "getsebool",
+            "selinux",
+            "sebool"
+        ]
+    },
+    {
+        "q": "Which directory stores web server files typically?",
+        "o": [
+            "/var/www",
+            "/etc/www",
+            "/usr/www",
+            "/opt/www"
+        ]
+    },
+    {
+        "q": "What is the purpose of the auditd daemon?",
+        "o": [
+            "Security auditing",
+            "File backup",
+            "Network monitor",
+            "Process track"
+        ]
+    },
+    {
+        "q": "Which command shows last login times for users?",
+        "o": [
+            "lastlog",
+            "loginlog",
+            "userlog",
+            "authlog"
+        ]
+    },
+    {
+        "q": "What file contains AppArmor policy profiles?",
+        "o": [
+            "/etc/apparmor.d",
+            "/etc/armor.d",
+            "/var/apparmor",
+            "/usr/armor"
+        ]
+    },
+    {
+        "q": "Which command updates package manager cache?",
+        "o": [
+            "apt update",
+            "apt upgrade",
+            "apt install",
+            "apt remove"
+        ]
+    },
+    {
+        "q": "What is the purpose of fail2ban service in Linux?",
+        "o": [
+            "Block brute force attacks",
+            "Encrypt user files",
+            "Manage disk space",
+            "Schedule backups"
+        ]
+    },
+    {
+        "q": "Which SELinux mode logs but does not enforce policies?",
+        "o": [
+            "Permissive mode",
+            "Enforcing mode",
+            "Disabled mode",
+            "Targeted mode"
+        ]
+    },
+    {
+        "q": "What command generates SSH key pairs?",
+        "o": [
+            "ssh-keygen",
+            "ssh-key",
+            "genkey",
+            "sshgen"
+        ]
+    },
+    {
+        "q": "Which file stores authorized SSH public keys?",
+        "o": [
+            "authorized_keys",
+            "known_hosts",
+            "id_rsa.pub",
+            "ssh_config"
+        ]
+    },
+    {
+        "q": "What is the AppArmor security framework used for?",
+        "o": [
+            "Application confinement",
+            "Disk encryption",
+            "Network routing",
+            "User management"
+        ]
+    },
+    {
+        "q": "Which command checks open ports using nmap?",
+        "o": [
+            "nmap -sT target",
+            "nmap -help",
+            "nmap -version",
+            "nmap -quit"
+        ]
+    },
+    {
+        "q": "What is the purpose of TCP Wrappers in Linux?",
+        "o": [
+            "Host-based access control",
+            "Disk compression",
+            "Memory management",
+            "Process scheduling"
+        ]
+    },
+    {
+        "q": "Which file contains TCP Wrappers allow rules?",
+        "o": [
+            "/etc/hosts.allow",
+            "/etc/hosts.deny",
+            "/etc/tcp.conf",
+            "/etc/wrapper"
+        ]
+    },
+    {
+        "q": "What command displays SELinux context of files?",
+        "o": [
+            "ls -Z",
+            "ls -l",
+            "ls -a",
+            "ls -R"
+        ]
+    },
+    {
+        "q": "Which iptables chain handles incoming traffic?",
+        "o": [
+            "INPUT chain",
+            "OUTPUT chain",
+            "FORWARD chain",
+            "NAT chain"
+        ]
+    },
+    {
+        "q": "What is the purpose of the aide tool in Linux?",
+        "o": [
+            "File integrity check",
+            "Network scanning",
+            "Password cracking",
+            "Log analysis"
+        ]
+    },
+    {
+        "q": "Which command disables a systemd service?",
+        "o": [
+            "systemctl disable",
+            "systemctl stop",
+            "systemctl remove",
+            "systemctl delete"
+        ]
+    },
+    {
+        "q": "What file contains PAM password policy settings?",
+        "o": [
+            "/etc/pam.d/common-password",
+            "/etc/passwd.conf",
+            "/etc/password.policy",
+            "/etc/pam.password"
+        ]
+    },
+    {
+        "q": "Which command shows all established connections?",
+        "o": [
+            "netstat -an",
+            "netstat -v",
+            "netstat -h",
+            "netstat -q"
+        ]
+    },
+    {
+        "q": "What is the purpose of rkhunter tool?",
+        "o": [
+            "Rootkit detection",
+            "Network scanning",
+            "File encryption",
+            "User management"
+        ]
+    },
+    {
+        "q": "Which SELinux context type is used for web content?",
+        "o": [
+            "httpd_sys_content_t",
+            "default_t",
+            "user_home_t",
+            "tmp_t"
+        ]
+    },
+    {
+        "q": "What command restores default SELinux contexts?",
+        "o": [
+            "restorecon",
+            "setcon",
+            "chcon",
+            "secon"
+        ]
+    },
+    {
+        "q": "Which GPG option encrypts a file?",
+        "o": [
+            "gpg -c filename",
+            "gpg -d filename",
+            "gpg -v filename",
+            "gpg -l filename"
+        ]
+    },
+    {
+        "q": "What is the purpose of logrotate utility?",
+        "o": [
+            "Log file management",
+            "User rotation",
+            "Password cycling",
+            "Disk formatting"
+        ]
+    },
+    {
+        "q": "Which command lists all cron jobs for root?",
+        "o": [
+            "crontab -l",
+            "cron -list",
+            "crond -show",
+            "crons -all"
+        ]
+    },
+    {
+        "q": "What file restricts cron access to users?",
+        "o": [
+            "/etc/cron.deny",
+            "/etc/cron.conf",
+            "/etc/crontab",
+            "/var/cron"
+        ]
+    },
+    {
+        "q": "Which nftables command lists all rules?",
+        "o": [
+            "nft list ruleset",
+            "nft show all",
+            "nft rules",
+            "nft display"
+        ]
+    },
+    {
+        "q": "What is the purpose of chage command?",
+        "o": [
+            "Password aging policy",
+            "File ownership change",
+            "Group modification",
+            "User creation"
+        ]
+    },
+    {
+        "q": "Which option forces password change on next login?",
+        "o": [
+            "chage -d 0 user",
+            "passwd -e user",
+            "usermod -p user",
+            "chpass -f user"
+        ]
+    },
+    {
+        "q": "What directory contains SSL certificates?",
+        "o": [
+            "/etc/ssl/certs",
+            "/var/ssl",
+            "/usr/ssl",
+            "/opt/ssl"
+        ]
+    },
+    {
+        "q": "Which command verifies RPM package signatures?",
+        "o": [
+            "rpm -V package",
+            "rpm -i package",
+            "rpm -e package",
+            "rpm -U package"
+        ]
+    },
+    {
+        "q": "What is the purpose of Lynis security tool?",
+        "o": [
+            "Security auditing",
+            "File encryption",
+            "Network scanning",
+            "User management"
+        ]
+    },
+    {
+        "q": "Which PAM module enforces password complexity?",
+        "o": [
+            "pam_pwquality",
+            "pam_unix",
+            "pam_env",
+            "pam_limits"
+        ]
+    },
+    {
+        "q": "What command displays kernel security parameters?",
+        "o": [
+            "sysctl -a",
+            "kern -show",
+            "kparam -l",
+            "kernel -v"
+        ]
+    },
+    {
+        "q": "Which file contains kernel security settings?",
+        "o": [
+            "/etc/sysctl.conf",
+            "/etc/kernel.conf",
+            "/etc/security.conf",
+            "/etc/system.conf"
+        ]
+    },
+    {
+        "q": "What sysctl parameter disables IP forwarding?",
+        "o": [
+            "net.ipv4.ip_forward",
+            "net.core.forward",
+            "ip.forward.enable",
+            "kernel.ip.route"
+        ]
+    },
+    {
+        "q": "Which command shows AppArmor profile status?",
+        "o": [
+            "aa-status",
+            "apparmor-status",
+            "armor-stat",
+            "aa-show"
+        ]
+    },
+    {
+        "q": "What is the purpose of auditctl command?",
+        "o": [
+            "Audit rule management",
+            "File encryption",
+            "Network monitoring",
+            "User tracking"
+        ]
+    },
+    {
+        "q": "Which audit rule monitors file access?",
+        "o": [
+            "-w path -p rwxa",
+            "-a path -m read",
+            "-f path -t access",
+            "-r path -o file"
+        ]
+    },
+    {
+        "q": "What command generates audit reports?",
+        "o": [
+            "aureport",
+            "auditctl",
+            "aulog",
+            "auditor"
+        ]
+    },
+    {
+        "q": "Which file stores audit daemon configuration?",
+        "o": [
+            "/etc/audit/auditd.conf",
+            "/etc/auditd.conf",
+            "/var/audit/config",
+            "/usr/audit/setup"
+        ]
+    },
+    {
+        "q": "What is the purpose of OSSEC in Linux?",
+        "o": [
+            "Host intrusion detection",
+            "File compression",
+            "Network routing",
+            "Disk encryption"
+        ]
+    },
+    {
+        "q": "Which command puts AppArmor profile in complain mode?",
+        "o": [
+            "aa-complain",
+            "aa-enforce",
+            "aa-disable",
+            "aa-enable"
+        ]
+    },
+    {
+        "q": "What file defines user resource limits?",
+        "o": [
+            "/etc/security/limits.conf",
+            "/etc/limits.conf",
+            "/etc/resource.conf",
+            "/etc/user.limits"
+        ]
+    },
+    {
+        "q": "Which PAM module sets resource limits?",
+        "o": [
+            "pam_limits",
+            "pam_unix",
+            "pam_env",
+            "pam_access"
+        ]
+    },
+    {
+        "q": "What command encrypts a partition with LUKS?",
+        "o": [
+            "cryptsetup luksFormat",
+            "luks encrypt",
+            "crypt format",
+            "encrypt disk"
+        ]
+    },
+    {
+        "q": "Which file stores LUKS encrypted volume mappings?",
+        "o": [
+            "/etc/crypttab",
+            "/etc/luks.conf",
+            "/etc/crypt.conf",
+            "/etc/encrypt"
+        ]
+    },
+    {
+        "q": "What is the purpose of tripwire utility?",
+        "o": [
+            "File integrity monitoring",
+            "Network scanning",
+            "Password cracking",
+            "User management"
+        ]
+    },
+    {
+        "q": "Which command opens LUKS encrypted volume?",
+        "o": [
+            "cryptsetup luksOpen",
+            "luks open",
+            "crypt mount",
+            "open crypt"
+        ]
+    },
+    {
+        "q": "What sysctl setting enables SYN cookies?",
+        "o": [
+            "net.ipv4.tcp_syncookies",
+            "net.tcp.syncookies",
+            "tcp.syn.cookies",
+            "kernel.tcp.syn"
+        ]
+    },
+    {
+        "q": "Which command shows login history in Linux?",
+        "o": [
+            "last",
+            "history",
+            "log",
+            "login"
+        ]
+    },
+    {
+        "q": "What is the purpose of ClamAV in Linux?",
+        "o": [
+            "Antivirus scanning",
+            "File encryption",
+            "Network routing",
+            "User management"
+        ]
+    },
+    {
+        "q": "Which command updates ClamAV virus definitions?",
+        "o": [
+            "freshclam",
+            "clamav-update",
+            "update-clam",
+            "clam-refresh"
+        ]
+    },
+    {
+        "q": "What file contains SSH client configuration?",
+        "o": [
+            "~/.ssh/config",
+            "~/.ssh/known",
+            "~/.ssh/hosts",
+            "~/.ssh/client"
+        ]
+    },
+    {
+        "q": "Which SSH option disables root login?",
+        "o": [
+            "PermitRootLogin no",
+            "RootLogin false",
+            "DisableRoot yes",
+            "NoRootAccess true"
+        ]
+    },
+    {
+        "q": "What is the purpose of knockd daemon?",
+        "o": [
+            "Port knocking service",
+            "File encryption",
+            "Network routing",
+            "User management"
+        ]
+    },
+    {
+        "q": "Which command scans for viruses with ClamAV?",
+        "o": [
+            "clamscan",
+            "clamav",
+            "avscan",
+            "virscan"
+        ]
+    },
+    {
+        "q": "What sysctl setting ignores ICMP redirects?",
+        "o": [
+            "net.ipv4.conf.all.accept_redirects",
+            "net.icmp.redirect",
+            "icmp.ignore",
+            "kernel.icmp"
+        ]
+    },
+    {
+        "q": "Which file stores sudoers include directory?",
+        "o": [
+            "/etc/sudoers.d",
+            "/etc/sudo.d",
+            "/var/sudoers",
+            "/usr/sudoers"
+        ]
+    },
+    {
+        "q": "What command validates sudoers file syntax?",
+        "o": [
+            "visudo -c",
+            "sudo -check",
+            "sudoers -v",
+            "validate sudo"
+        ]
+    },
+    {
+        "q": "Which iptables target drops packets silently?",
+        "o": [
+            "DROP",
+            "REJECT",
+            "DENY",
+            "BLOCK"
+        ]
+    },
+    {
+        "q": "What is the purpose of firewalld service?",
+        "o": [
+            "Dynamic firewall manager",
+            "File encryption",
+            "Network routing",
+            "User management"
+        ]
+    },
+    {
+        "q": "Which command adds firewalld rule permanently?",
+        "o": [
+            "firewall-cmd --permanent",
+            "firewalld --save",
+            "fwcmd --persist",
+            "firewall --store"
+        ]
+    },
+    {
+        "q": "What file defines firewalld default zone?",
+        "o": [
+            "/etc/firewalld/firewalld.conf",
+            "/etc/firewall.conf",
+            "/etc/fwd.conf",
+            "/var/firewalld"
+        ]
+    },
+    {
+        "q": "Which command lists firewalld active zones?",
+        "o": [
+            "firewall-cmd --get-active-zones",
+            "firewalld --zones",
+            "fwcmd --list",
+            "firewall --show"
+        ]
+    },
+    {
+        "q": "What is the purpose of polkit in Linux?",
+        "o": [
+            "Authorization framework",
+            "File encryption",
+            "Network routing",
+            "Disk management"
+        ]
+    },
+    {
+        "q": "Which directory contains polkit rules?",
+        "o": [
+            "/etc/polkit-1/rules.d",
+            "/etc/polkit/rules",
+            "/var/polkit",
+            "/usr/polkit"
+        ]
+    },
+    {
+        "q": "What command shows SELinux denials?",
+        "o": [
+            "ausearch -m avc",
+            "selinux -log",
+            "se-denial",
+            "avc-search"
+        ]
+    },
+    {
+        "q": "Which tool generates SELinux policy modules?",
+        "o": [
+            "audit2allow",
+            "semodule",
+            "sepolicy",
+            "semanage"
+        ]
+    },
+    {
+        "q": "What command installs SELinux policy module?",
+        "o": [
+            "semodule -i",
+            "sepolicy -add",
+            "selinux -install",
+            "se-load"
+        ]
+    },
+    {
+        "q": "Which file stores SELinux user mappings?",
+        "o": [
+            "/etc/selinux/targeted/seusers",
+            "/etc/seusers",
+            "/var/selinux/users",
+            "/usr/selinux/map"
+        ]
+    },
+    {
+        "q": "What is the purpose of semanage command?",
+        "o": [
+            "SELinux policy management",
+            "File encryption",
+            "Network routing",
+            "User creation"
+        ]
+    },
+    {
+        "q": "Which command adds SELinux port label?",
+        "o": [
+            "semanage port -a",
+            "seport -add",
+            "se-port -l",
+            "selabel port"
+        ]
+    },
+    {
+        "q": "What sysctl parameter limits core dumps?",
+        "o": [
+            "kernel.core_pattern",
+            "core.dump.limit",
+            "kernel.dump",
+            "sys.core"
+        ]
+    },
+    {
+        "q": "Which command shows process capabilities?",
+        "o": [
+            "getcap",
+            "setcap",
+            "procap",
+            "capshow"
+        ]
+    },
+    {
+        "q": "What is the purpose of Linux capabilities?",
+        "o": [
+            "Fine-grained privileges",
+            "File encryption",
+            "Network routing",
+            "Disk management"
+        ]
+    },
+    {
+        "q": "Which command sets file capabilities?",
+        "o": [
+            "setcap",
+            "getcap",
+            "filecap",
+            "capset"
+        ]
+    },
+    {
+        "q": "What capability allows binding to privileged ports?",
+        "o": [
+            "CAP_NET_BIND_SERVICE",
+            "CAP_NET_ADMIN",
+            "CAP_SYS_ADMIN",
+            "CAP_DAC_OVERRIDE"
+        ]
+    },
+    {
+        "q": "Which command removes all capabilities from file?",
+        "o": [
+            "setcap -r",
+            "getcap -d",
+            "caprem",
+            "uncap"
+        ]
+    },
+    {
+        "q": "What is the purpose of seccomp in Linux?",
+        "o": [
+            "Syscall filtering",
+            "File encryption",
+            "Network routing",
+            "User management"
+        ]
+    },
+    {
+        "q": "Which kernel module provides namespaces?",
+        "o": [
+            "Built into kernel",
+            "namespace.ko",
+            "ns_module",
+            "container.ko"
+        ]
+    },
+    {
+        "q": "What command displays process namespaces?",
+        "o": [
+            "lsns",
+            "nslist",
+            "procns",
+            "showns"
+        ]
+    },
+    {
+        "q": "Which namespace isolates process IDs?",
+        "o": [
+            "PID namespace",
+            "NET namespace",
+            "MNT namespace",
+            "USER namespace"
+        ]
+    },
+    {
+        "q": "What is the purpose of cgroups in Linux?",
+        "o": [
+            "Resource limiting",
+            "File encryption",
+            "Network routing",
+            "User management"
+        ]
+    },
+    {
+        "q": "Which directory contains cgroup v2 hierarchy?",
+        "o": [
+            "/sys/fs/cgroup",
+            "/proc/cgroup",
+            "/etc/cgroup",
+            "/var/cgroup"
+        ]
+    },
+    {
+        "q": "What command enters a namespace?",
+        "o": [
+            "nsenter",
+            "namespace",
+            "ns-join",
+            "entns"
+        ]
+    },
+    {
+        "q": "Which tool creates new namespaces?",
+        "o": [
+            "unshare",
+            "share",
+            "newns",
+            "mkns"
+        ]
+    },
+    {
+        "q": "What file shows current cgroup controllers?",
+        "o": [
+            "cgroup.controllers",
+            "controllers.list",
+            "cgroup.conf",
+            "ctrl.cgroup"
+        ]
+    },
+    {
+        "q": "Which cgroup controller limits CPU usage?",
+        "o": [
+            "cpu controller",
+            "mem controller",
+            "io controller",
+            "pids controller"
+        ]
+    },
+    {
+        "q": "What is the purpose of eBPF in Linux?",
+        "o": [
+            "Kernel programmability",
+            "File encryption",
+            "Network routing",
+            "User management"
+        ]
+    },
+    {
+        "q": "Which command shows loaded eBPF programs?",
+        "o": [
+            "bpftool prog list",
+            "ebpf -show",
+            "bpf -list",
+            "lsbpf"
+        ]
+    },
+    {
+        "q": "What is the purpose of landlock in Linux?",
+        "o": [
+            "Unprivileged sandboxing",
+            "File encryption",
+            "Network routing",
+            "Disk management"
+        ]
+    },
+    {
+        "q": "Which file controls kernel module loading?",
+        "o": [
+            "/etc/modprobe.d",
+            "/etc/modules.conf",
+            "/var/modprobe",
+            "/usr/modules"
+        ]
+    },
+    {
+        "q": "What command blacklists a kernel module?",
+        "o": [
+            "modprobe -b",
+            "modblack",
+            "kmods -block",
+            "module -deny"
+        ]
+    },
+    {
+        "q": "Which sysctl disables kernel module loading?",
+        "o": [
+            "kernel.modules_disabled",
+            "module.disable",
+            "kern.nomod",
+            "sys.modules"
+        ]
+    },
+    {
+        "q": "What tool manages systemd security settings?",
+        "o": [
+            "systemd-analyze security",
+            "systemctl security",
+            "sysd-sec",
+            "secure-systemd"
+        ]
+    },
+    {
+        "q": "Which systemd option restricts filesystem access?",
+        "o": [
+            "ProtectSystem=strict",
+            "ReadOnlyPaths=/",
+            "SecureFS=true",
+            "LockFilesystem"
+        ]
+    },
+    {
+        "q": "What systemd directive drops capabilities?",
+        "o": [
+            "CapabilityBoundingSet",
+            "DropCaps",
+            "RemoveCapabilities",
+            "NoCaps"
+        ]
+    },
+    {
+        "q": "Which systemd setting enables sandboxing?",
+        "o": [
+            "PrivateTmp=true",
+            "Sandbox=enable",
+            "Isolate=true",
+            "Protected=yes"
+        ]
+    },
+    {
+        "q": "What is the purpose of kernel lockdown mode?",
+        "o": [
+            "Restrict kernel access",
+            "File encryption",
+            "Network routing",
+            "User management"
+        ]
+    },
+    {
+        "q": "Which command shows kernel lockdown status?",
+        "o": [
+            "cat /sys/kernel/security/lockdown",
+            "lockdown -status",
+            "kernel -lock",
+            "sysctl lockdown"
+        ]
+    },
+    {
+        "q": "What boot parameter enables kernel lockdown?",
+        "o": [
+            "lockdown=integrity",
+            "secure=on",
+            "lock=kernel",
+            "protect=boot"
+        ]
+    },
+    {
+        "q": "Which tool provides integrity measurement?",
+        "o": [
+            "IMA (Integrity Measurement)",
+            "TPM only",
+            "SecureBoot only",
+            "UEFI alone"
+        ]
+    },
+    {
+        "q": "What attack exploits misconfigured SUID binaries?",
+        "o": [
+            "Privilege escalation",
+            "Buffer overflow",
+            "SQL injection",
+            "XSS attack"
+        ]
+    },
+    {
+        "q": "Which command finds all SUID files on system?",
+        "o": [
+            "find / -perm -4000",
+            "locate suid",
+            "search perm",
+            "ls -suid"
+        ]
+    },
+    {
+        "q": "What happens when kernel ASLR is disabled?",
+        "o": [
+            "Predictable memory layout",
+            "Faster boot time",
+            "Better performance",
+            "Increased security"
+        ]
+    },
+    {
+        "q": "Which file controls kernel ASLR settings?",
+        "o": [
+            "/proc/sys/kernel/randomize_va_space",
+            "/etc/aslr.conf",
+            "/sys/kernel/aslr",
+            "/var/aslr"
+        ]
+    },
+    {
+        "q": "What is the purpose of stack canaries in Linux?",
+        "o": [
+            "Buffer overflow detection",
+            "File encryption",
+            "Network routing",
+            "User management"
+        ]
+    },
+    {
+        "q": "Which GCC flag enables stack protection?",
+        "o": [
+            "-fstack-protector",
+            "-protect-stack",
+            "-stack-guard",
+            "-buffer-safe"
+        ]
+    },
+    {
+        "q": "What does NX bit prevent in Linux?",
+        "o": [
+            "Code execution on stack",
+            "File reading",
+            "Network access",
+            "User login"
+        ]
+    },
+    {
+        "q": "Which tool analyzes ELF binary security?",
+        "o": [
+            "checksec",
+            "elfcheck",
+            "binsec",
+            "secelf"
+        ]
+    },
+    {
+        "q": "What attack bypasses ASLR using information leak?",
+        "o": [
+            "Memory disclosure attack",
+            "SQL injection",
+            "XSS attack",
+            "CSRF attack"
+        ]
+    },
+    {
+        "q": "Which kernel parameter enables KASLR?",
+        "o": [
+            "kaslr (boot parameter)",
+            "kernel.aslr=1",
+            "sysctl.kaslr",
+            "enable.kaslr"
+        ]
+    },
+    {
+        "q": "What is the purpose of PIE in Linux binaries?",
+        "o": [
+            "Position independent code",
+            "File encryption",
+            "Network routing",
+            "User management"
+        ]
+    },
+    {
+        "q": "Which tool detects kernel rootkits?",
+        "o": [
+            "chkrootkit",
+            "kerncheck",
+            "rootscan",
+            "kdetect"
+        ]
+    },
+    {
+        "q": "What attack exploits kernel vulnerabilities?",
+        "o": [
+            "Kernel exploit",
+            "SQL injection",
+            "XSS attack",
+            "CSRF attack"
+        ]
+    },
+    {
+        "q": "Which file shows loaded kernel modules?",
+        "o": [
+            "/proc/modules",
+            "/etc/modules",
+            "/sys/modules",
+            "/var/modules"
+        ]
+    },
+    {
+        "q": "What command lists loaded kernel modules?",
+        "o": [
+            "lsmod",
+            "modlist",
+            "kmod",
+            "showmod"
+        ]
+    },
+    {
+        "q": "Which tool unloads kernel modules?",
+        "o": [
+            "rmmod",
+            "delmod",
+            "unmod",
+            "removemod"
+        ]
+    },
+    {
+        "q": "What is the purpose of module signing in Linux?",
+        "o": [
+            "Verify module authenticity",
+            "Compress modules",
+            "Speed up loading",
+            "Manage dependencies"
+        ]
+    },
+    {
+        "q": "Which sysctl restricts kernel pointer exposure?",
+        "o": [
+            "kernel.kptr_restrict",
+            "kernel.ptr_hide",
+            "kernel.hide_pointers",
+            "kernel.ptr_secure"
+        ]
+    },
+    {
+        "q": "What file shows kernel symbol addresses?",
+        "o": [
+            "/proc/kallsyms",
+            "/etc/ksyms",
+            "/sys/symbols",
+            "/var/kernel"
+        ]
+    },
+    {
+        "q": "Which sysctl restricts dmesg access?",
+        "o": [
+            "kernel.dmesg_restrict",
+            "dmesg.secure",
+            "kernel.log_restrict",
+            "syslog.dmesg"
+        ]
+    },
+    {
+        "q": "What attack exploits race conditions in Linux?",
+        "o": [
+            "TOCTOU attack",
+            "SQL injection",
+            "XSS attack",
+            "CSRF attack"
+        ]
+    },
+    {
+        "q": "Which tool monitors file system changes?",
+        "o": [
+            "inotifywait",
+            "filewatch",
+            "fsmonitor",
+            "watchfile"
+        ]
+    },
+    {
+        "q": "What is the purpose of seccomp-bpf?",
+        "o": [
+            "Filter system calls",
+            "Encrypt files",
+            "Route network",
+            "Manage users"
+        ]
+    },
+    {
+        "q": "Which mode of seccomp allows audit only?",
+        "o": [
+            "SECCOMP_RET_LOG",
+            "SECCOMP_AUDIT",
+            "SECCOMP_LOG_ONLY",
+            "SECCOMP_TRACE"
+        ]
+    },
+    {
+        "q": "What container runtime uses seccomp profiles?",
+        "o": [
+            "Docker and containerd",
+            "Apache only",
+            "MySQL only",
+            "SSH server"
+        ]
+    },
+    {
+        "q": "Which file contains Docker seccomp profile?",
+        "o": [
+            "default.json",
+            "seccomp.conf",
+            "docker.sec",
+            "container.profile"
+        ]
+    },
+    {
+        "q": "What attack exploits container escape?",
+        "o": [
+            "Container breakout",
+            "SQL injection",
+            "XSS attack",
+            "CSRF attack"
+        ]
+    },
+    {
+        "q": "Which namespace prevents container host access?",
+        "o": [
+            "User namespace",
+            "IPC namespace",
+            "UTS namespace",
+            "Time namespace"
+        ]
+    },
+    {
+        "q": "What Docker flag runs container as non-root?",
+        "o": [
+            "--user",
+            "--noroot",
+            "--unprivileged",
+            "--safe"
+        ]
+    },
+    {
+        "q": "Which tool scans container images for vulnerabilities?",
+        "o": [
+            "Trivy",
+            "nmap",
+            "tcpdump",
+            "wireshark"
+        ]
+    },
+    {
+        "q": "What is the purpose of rootless containers?",
+        "o": [
+            "Run without root privileges",
+            "Faster execution",
+            "Smaller images",
+            "Better logging"
+        ]
+    },
+    {
+        "q": "Which runtime supports rootless containers?",
+        "o": [
+            "Podman",
+            "Apache",
+            "MySQL",
+            "PostgreSQL"
+        ]
+    },
+    {
+        "q": "What attack exploits shared kernel in containers?",
+        "o": [
+            "Kernel vulnerability",
+            "SQL injection",
+            "XSS attack",
+            "CSRF attack"
+        ]
+    },
+    {
+        "q": "Which cgroup setting limits container memory?",
+        "o": [
+            "memory.max",
+            "mem.limit",
+            "cgroup.memory",
+            "limit.ram"
+        ]
+    },
+    {
+        "q": "What tool enforces container resource limits?",
+        "o": [
+            "cgroups",
+            "iptables",
+            "SELinux only",
+            "AppArmor only"
+        ]
+    },
+    {
+        "q": "Which Docker option restricts capabilities?",
+        "o": [
+            "--cap-drop",
+            "--remove-cap",
+            "--no-caps",
+            "--limit-cap"
+        ]
+    },
+    {
+        "q": "What is the purpose of read-only root filesystem?",
+        "o": [
+            "Prevent file modification",
+            "Faster boot",
+            "Better logging",
+            "Easier backup"
+        ]
+    },
+    {
+        "q": "Which Docker flag enables read-only filesystem?",
+        "o": [
+            "--read-only",
+            "--no-write",
+            "--immutable",
+            "--locked"
+        ]
+    },
+    {
+        "q": "What attack exploits writable /proc in container?",
+        "o": [
+            "Kernel parameter tampering",
+            "SQL injection",
+            "XSS attack",
+            "CSRF attack"
+        ]
+    },
+    {
+        "q": "Which mount option prevents SUID execution?",
+        "o": [
+            "nosuid",
+            "noexec",
+            "nodev",
+            "ro"
+        ]
+    },
+    {
+        "q": "What mount option prevents device file creation?",
+        "o": [
+            "nodev",
+            "nosuid",
+            "noexec",
+            "ro"
+        ]
+    },
+    {
+        "q": "Which mount option prevents binary execution?",
+        "o": [
+            "noexec",
+            "nosuid",
+            "nodev",
+            "ro"
+        ]
+    },
+    {
+        "q": "What is the purpose of hidepid mount option?",
+        "o": [
+            "Hide other user processes",
+            "Encrypt /proc",
+            "Speed up /proc",
+            "Compress /proc"
+        ]
+    },
+    {
+        "q": "Which file contains fstab mount options?",
+        "o": [
+            "/etc/fstab",
+            "/etc/mount.conf",
+            "/sys/mounts",
+            "/var/fstab"
+        ]
+    },
+    {
+        "q": "What attack exploits world-writable directories?",
+        "o": [
+            "Symlink attack",
+            "SQL injection",
+            "XSS attack",
+            "CSRF attack"
+        ]
+    },
+    {
+        "q": "Which find option locates world-writable files?",
+        "o": [
+            "-perm -o+w",
+            "-world-write",
+            "-ww",
+            "-write-all"
+        ]
+    },
+    {
+        "q": "What is the purpose of immutable file attribute?",
+        "o": [
+            "Prevent any modification",
+            "Speed up access",
+            "Compress file",
+            "Encrypt file"
+        ]
+    },
+    {
+        "q": "Which command sets immutable attribute?",
+        "o": [
+            "chattr +i",
+            "chmod +i",
+            "setattr +i",
+            "attr -i"
+        ]
+    },
+    {
+        "q": "What file attribute prevents deletion?",
+        "o": [
+            "Immutable attribute",
+            "Read-only flag",
+            "Execute bit",
+            "SUID bit"
+        ]
+    },
+    {
+        "q": "Which command displays file attributes?",
+        "o": [
+            "lsattr",
+            "chattr",
+            "getattr",
+            "showattr"
+        ]
+    },
+    {
+        "q": "What is the purpose of append-only attribute?",
+        "o": [
+            "Allow only appending",
+            "Speed up writes",
+            "Compress data",
+            "Encrypt content"
+        ]
+    },
+    {
+        "q": "Which PAM module provides multi-factor auth?",
+        "o": [
+            "pam_google_authenticator",
+            "pam_mfa",
+            "pam_otp",
+            "pam_2fa"
+        ]
+    },
+    {
+        "q": "What file contains PAM TOTP configuration?",
+        "o": [
+            ".google_authenticator",
+            ".pam_totp",
+            ".mfa_config",
+            ".otp_secret"
+        ]
+    },
+    {
+        "q": "Which command configures PAM TOTP?",
+        "o": [
+            "google-authenticator",
+            "pam-totp-setup",
+            "mfa-config",
+            "otp-init"
+        ]
+    },
+    {
+        "q": "What is the purpose of pam_faillock module?",
+        "o": [
+            "Account lockout policy",
+            "File encryption",
+            "Network routing",
+            "User creation"
+        ]
+    },
+    {
+        "q": "Which PAM module enforces login time?",
+        "o": [
+            "pam_time",
+            "pam_login",
+            "pam_hour",
+            "pam_schedule"
+        ]
+    },
+    {
+        "q": "What file controls pam_time restrictions?",
+        "o": [
+            "/etc/security/time.conf",
+            "/etc/pam.time",
+            "/etc/login.time",
+            "/var/pam/time"
+        ]
+    },
+    {
+        "q": "Which PAM module restricts by host/tty?",
+        "o": [
+            "pam_access",
+            "pam_host",
+            "pam_tty",
+            "pam_source"
+        ]
+    },
+    {
+        "q": "What file controls pam_access rules?",
+        "o": [
+            "/etc/security/access.conf",
+            "/etc/pam.access",
+            "/etc/login.access",
+            "/var/pam/access"
+        ]
+    },
+    {
+        "q": "Which sysctl enables syn flood protection?",
+        "o": [
+            "net.ipv4.tcp_syncookies=1",
+            "tcp.syn.protect=1",
+            "net.syn.guard=1",
+            "kernel.syn.safe=1"
+        ]
+    },
+    {
+        "q": "What sysctl limits SYN backlog queue?",
+        "o": [
+            "net.ipv4.tcp_max_syn_backlog",
+            "tcp.syn.maxqueue",
+            "net.syn.limit",
+            "kernel.tcp.queue"
+        ]
+    },
+    {
+        "q": "Which sysctl enables reverse path filtering?",
+        "o": [
+            "net.ipv4.conf.all.rp_filter",
+            "rp.filter.enable",
+            "net.rp.check",
+            "kernel.rpf"
+        ]
+    },
+    {
+        "q": "What does reverse path filtering protect against?",
+        "o": [
+            "IP spoofing attacks",
+            "SQL injection",
+            "Buffer overflow",
+            "XSS attack"
+        ]
+    },
+    {
+        "q": "Which sysctl disables source routing?",
+        "o": [
+            "net.ipv4.conf.all.accept_source_route",
+            "source.route.disable",
+            "net.no.srcroute",
+            "kernel.srcrt"
+        ]
+    },
+    {
+        "q": "What attack uses source routing?",
+        "o": [
+            "Bypass firewall rules",
+            "SQL injection",
+            "XSS attack",
+            "CSRF attack"
+        ]
+    },
+    {
+        "q": "Which sysctl logs martian packets?",
+        "o": [
+            "net.ipv4.conf.all.log_martians",
+            "martian.log.enable",
+            "net.log.invalid",
+            "kernel.martians"
+        ]
+    },
+    {
+        "q": "What are martian packets in networking?",
+        "o": [
+            "Invalid source addresses",
+            "Encrypted packets",
+            "Compressed data",
+            "Normal traffic"
+        ]
+    },
+    {
+        "q": "Which tool creates iptables persistence?",
+        "o": [
+            "iptables-persistent",
+            "iptables-save-auto",
+            "ipt-persist",
+            "firewall-save"
+        ]
+    },
+    {
+        "q": "What command saves current iptables rules?",
+        "o": [
+            "iptables-save",
+            "iptables -S",
+            "ipt-backup",
+            "save-ipt"
+        ]
+    },
+    {
+        "q": "Which command restores iptables rules?",
+        "o": [
+            "iptables-restore",
+            "iptables -R",
+            "ipt-load",
+            "restore-ipt"
+        ]
+    },
+    {
+        "q": "What iptables chain handles forwarded traffic?",
+        "o": [
+            "FORWARD",
+            "INPUT",
+            "OUTPUT",
+            "PREROUTING"
+        ]
+    },
+    {
+        "q": "Which iptables table handles NAT?",
+        "o": [
+            "nat table",
+            "filter table",
+            "mangle table",
+            "raw table"
+        ]
+    },
+    {
+        "q": "What iptables module tracks connections?",
+        "o": [
+            "conntrack",
+            "tracker",
+            "connection",
+            "flow"
+        ]
+    },
+    {
+        "q": "Which conntrack state represents new connection?",
+        "o": [
+            "NEW",
+            "ESTABLISHED",
+            "RELATED",
+            "INVALID"
+        ]
+    },
+    {
+        "q": "What conntrack state represents response traffic?",
+        "o": [
+            "ESTABLISHED",
+            "NEW",
+            "RELATED",
+            "INVALID"
+        ]
+    },
+    {
+        "q": "Which iptables target allows logging?",
+        "o": [
+            "LOG",
+            "WRITE",
+            "RECORD",
+            "SAVE"
+        ]
+    },
+    {
+        "q": "What iptables match limits connection rate?",
+        "o": [
+            "-m limit",
+            "-m rate",
+            "-m speed",
+            "-m flow"
+        ]
+    },
+    {
+        "q": "Which ssh-keygen option specifies key type?",
+        "o": [
+            "-t type",
+            "-k type",
+            "-type",
+            "-key"
+        ]
+    },
+    {
+        "q": "What is the recommended SSH key type?",
+        "o": [
+            "ed25519",
+            "rsa1",
+            "dsa",
+            "ecdsa-256"
+        ]
+    },
+    {
+        "q": "Which SSH option enables strict host checking?",
+        "o": [
+            "StrictHostKeyChecking",
+            "HostVerify",
+            "CheckHost",
+            "VerifyKey"
+        ]
+    },
+    {
+        "q": "What file contains SSH known hosts?",
+        "o": [
+            "~/.ssh/known_hosts",
+            "~/.ssh/hosts",
+            "~/.ssh/servers",
+            "~/.ssh/peers"
+        ]
+    },
+    {
+        "q": "Which SSH option limits authentication attempts?",
+        "o": [
+            "MaxAuthTries",
+            "AuthLimit",
+            "TryLimit",
+            "MaxAttempts"
+        ]
+    },
+    {
+        "q": "What SSH option sets idle timeout?",
+        "o": [
+            "ClientAliveInterval",
+            "IdleTimeout",
+            "SessionTimeout",
+            "Timeout"
+        ]
+    },
+    {
+        "q": "Which SSH option disables password auth?",
+        "o": [
+            "PasswordAuthentication no",
+            "NoPassword yes",
+            "DisablePass yes",
+            "PassAuth false"
+        ]
+    },
+    {
+        "q": "What SSH option restricts allowed users?",
+        "o": [
+            "AllowUsers",
+            "UserList",
+            "PermitUsers",
+            "AcceptUsers"
+        ]
+    },
+    {
+        "q": "Which SSH option enables key-only auth?",
+        "o": [
+            "PubkeyAuthentication yes",
+            "KeyOnly yes",
+            "ForceKey yes",
+            "RequireKey yes"
+        ]
+    },
+    {
+        "q": "What happens with SSH banner grabbing?",
+        "o": [
+            "Server version disclosed",
+            "Password revealed",
+            "Key exposed",
+            "Session hijacked"
+        ]
+    },
+    {
+        "q": "Which file shows systemd journal logs?",
+        "o": [
+            "journalctl output",
+            "/var/log/syslog",
+            "/var/log/messages",
+            "/var/log/dmesg"
+        ]
+    },
+    {
+        "q": "What journalctl option follows logs live?",
+        "o": [
+            "-f or --follow",
+            "-l or --live",
+            "-t or --tail",
+            "-w or --watch"
+        ]
+    },
+    {
+        "q": "Which journalctl filter shows specific unit?",
+        "o": [
+            "-u unitname",
+            "-s service",
+            "-n name",
+            "-p program"
+        ]
+    },
+    {
+        "q": "What journalctl option shows kernel messages?",
+        "o": [
+            "-k or --dmesg",
+            "-d or --driver",
+            "-m or --module",
+            "-k or --kernel"
+        ]
+    },
+    {
+        "q": "Which priority level indicates critical errors?",
+        "o": [
+            "crit (priority 2)",
+            "info (priority 6)",
+            "debug (priority 7)",
+            "notice (priority 5)"
+        ]
+    },
+    {
+        "q": "What command rotates systemd journal?",
+        "o": [
+            "journalctl --rotate",
+            "journalctl --cycle",
+            "journal-rotate",
+            "logrotate journal"
+        ]
+    },
+    {
+        "q": "Which file configures journal settings?",
+        "o": [
+            "/etc/systemd/journald.conf",
+            "/etc/journal.conf",
+            "/var/log/journald.conf",
+            "/usr/lib/journald.conf"
+        ]
+    },
+    {
+        "q": "What setting limits journal disk usage?",
+        "o": [
+            "SystemMaxUse=",
+            "MaxDisk=",
+            "DiskLimit=",
+            "StorageMax="
+        ]
+    },
+    {
+        "q": "Which command vacuums old journal entries?",
+        "o": [
+            "journalctl --vacuum-time",
+            "journalctl --clean",
+            "journalctl --purge",
+            "journalctl --remove"
+        ]
+    },
+    {
+        "q": "What technique hides processes from ps command?",
+        "o": [
+            "Rootkit process hiding",
+            "Normal daemon",
+            "Service masking",
+            "User switching"
+        ]
+    },
+    {
+        "q": "Which kernel structure lists all running tasks?",
+        "o": [
+            "task_struct linked list",
+            "process_table array",
+            "run_queue hash",
+            "task_list tree"
+        ]
+    },
+    {
+        "q": "What attack modifies task_struct for privilege?",
+        "o": [
+            "Credential overwrite",
+            "Buffer overflow",
+            "SQL injection",
+            "XSS attack"
+        ]
+    },
+    {
+        "q": "Which kernel field stores process credentials?",
+        "o": [
+            "cred structure",
+            "uid field",
+            "gid field",
+            "cap field"
+        ]
+    },
+    {
+        "q": "What does prepare_kernel_cred(0) return?",
+        "o": [
+            "Root credentials",
+            "User credentials",
+            "Empty struct",
+            "Error code"
+        ]
+    },
+    {
+        "q": "Which function applies new kernel credentials?",
+        "o": [
+            "commit_creds()",
+            "set_creds()",
+            "apply_creds()",
+            "change_creds()"
+        ]
+    },
+    {
+        "q": "What attack exploits kernel race conditions?",
+        "o": [
+            "Dirty COW exploit",
+            "SQL injection",
+            "XSS attack",
+            "CSRF attack"
+        ]
+    },
+    {
+        "q": "Which syscall creates a copy of memory page?",
+        "o": [
+            "copy_on_write",
+            "mmap_copy",
+            "clone_page",
+            "fork_mem"
+        ]
+    },
+    {
+        "q": "What vulnerability affects copy-on-write mechanism?",
+        "o": [
+            "Race condition bug",
+            "Buffer overflow",
+            "Format string",
+            "Integer overflow"
+        ]
+    },
+    {
+        "q": "Which tool analyzes kernel crash dumps?",
+        "o": [
+            "crash utility",
+            "gdb only",
+            "strace",
+            "ltrace"
+        ]
+    },
+    {
+        "q": "What file contains kernel crash dump?",
+        "o": [
+            "/var/crash or vmcore",
+            "/var/log/crash",
+            "/tmp/kdump",
+            "/etc/crash"
+        ]
+    },
+    {
+        "q": "Which service creates kernel crash dumps?",
+        "o": [
+            "kdump service",
+            "syslog service",
+            "auditd daemon",
+            "journald"
+        ]
+    },
+    {
+        "q": "What attack exploits use-after-free in kernel?",
+        "o": [
+            "Dangling pointer exploit",
+            "Stack overflow",
+            "Heap spray",
+            "Format string"
+        ]
+    },
+    {
+        "q": "Which kernel allocator is targeted for exploits?",
+        "o": [
+            "SLUB/SLAB allocator",
+            "Buddy allocator only",
+            "Page allocator",
+            "Zone allocator"
+        ]
+    },
+    {
+        "q": "What technique controls kernel heap layout?",
+        "o": [
+            "Heap feng shui",
+            "Stack pivot",
+            "ROP chain",
+            "JOP chain"
+        ]
+    },
+    {
+        "q": "Which kernel protection detects heap corruption?",
+        "o": [
+            "KASAN (kernel ASan)",
+            "ASLR only",
+            "Stack guard",
+            "NX bit"
+        ]
+    },
+    {
+        "q": "What does KASAN stand for?",
+        "o": [
+            "Kernel AddressSanitizer",
+            "Kernel Advanced Security",
+            "Kernel Attack Shield",
+            "Kernel Access Scan"
+        ]
+    },
+    {
+        "q": "Which tool detects memory leaks in kernel?",
+        "o": [
+            "kmemleak",
+            "memcheck",
+            "valgrind",
+            "leaksan"
+        ]
+    },
+    {
+        "q": "What protection randomizes kernel stack?",
+        "o": [
+            "Stack randomization",
+            "KASLR only",
+            "PIE binary",
+            "ASLR user"
+        ]
+    },
+    {
+        "q": "Which kernel option enables stack protector?",
+        "o": [
+            "CONFIG_STACKPROTECTOR",
+            "CONFIG_STACK_GUARD",
+            "CONFIG_CANARY",
+            "CONFIG_PROTECT"
+        ]
+    },
+    {
+        "q": "What eBPF program type monitors syscalls?",
+        "o": [
+            "BPF_PROG_TYPE_TRACEPOINT",
+            "BPF_PROG_TYPE_SOCKET",
+            "BPF_PROG_TYPE_XDP",
+            "BPF_PROG_TYPE_CGROUP"
+        ]
+    },
+    {
+        "q": "Which eBPF helper reads process context?",
+        "o": [
+            "bpf_get_current_pid_tgid()",
+            "bpf_get_task()",
+            "bpf_read_pid()",
+            "bpf_current_process()"
+        ]
+    },
+    {
+        "q": "What tool compiles eBPF programs?",
+        "o": [
+            "clang with -target bpf",
+            "gcc-bpf",
+            "bpf-cc",
+            "ebpf-compiler"
+        ]
+    },
+    {
+        "q": "Which eBPF map type stores per-CPU data?",
+        "o": [
+            "BPF_MAP_TYPE_PERCPU_HASH",
+            "BPF_MAP_TYPE_ARRAY",
+            "BPF_MAP_TYPE_HASH",
+            "BPF_MAP_TYPE_STACK"
+        ]
+    },
+    {
+        "q": "What security tool uses eBPF for tracing?",
+        "o": [
+            "Falco security",
+            "AppArmor only",
+            "SELinux only",
+            "grsecurity"
+        ]
+    },
+    {
+        "q": "Which attack abuses eBPF for privilege escalation?",
+        "o": [
+            "eBPF verifier bypass",
+            "SQL injection",
+            "XSS attack",
+            "CSRF attack"
+        ]
+    },
+    {
+        "q": "What sysctl restricts unprivileged eBPF?",
+        "o": [
+            "kernel.unprivileged_bpf_disabled",
+            "bpf.user_disable",
+            "kernel.ebpf_restrict",
+            "bpf.priv_only"
+        ]
+    },
+    {
+        "q": "Which Linux Security Module uses labels?",
+        "o": [
+            "SELinux",
+            "AppArmor",
+            "SMACK only",
+            "TOMOYO"
+        ]
+    },
+    {
+        "q": "What SELinux label component indicates user?",
+        "o": [
+            "SELinux user identity",
+            "Role component",
+            "Type component",
+            "Level component"
+        ]
+    },
+    {
+        "q": "Which SELinux label component is role?",
+        "o": [
+            "Second component",
+            "First component",
+            "Third component",
+            "Fourth component"
+        ]
+    },
+    {
+        "q": "What SELinux type is for unrestricted access?",
+        "o": [
+            "unconfined_t",
+            "default_t",
+            "user_t",
+            "system_t"
+        ]
+    },
+    {
+        "q": "Which command queries SELinux policy?",
+        "o": [
+            "sesearch",
+            "sequery",
+            "sepolicy-query",
+            "se-ask"
+        ]
+    },
+    {
+        "q": "What tool creates custom SELinux policies?",
+        "o": [
+            "audit2allow and sepolgen",
+            "se-create",
+            "policy-make",
+            "selinux-gen"
+        ]
+    },
+    {
+        "q": "Which file contains SELinux targeted policy?",
+        "o": [
+            "/etc/selinux/targeted/policy",
+            "/var/selinux/policy",
+            "/usr/lib/selinux",
+            "/sys/selinux/policy"
+        ]
+    },
+    {
+        "q": "What controls SELinux network port labels?",
+        "o": [
+            "semanage port",
+            "seport command",
+            "portcon file",
+            "se-network"
+        ]
+    },
+    {
+        "q": "Which SELinux boolean allows httpd network?",
+        "o": [
+            "httpd_can_network_connect",
+            "httpd_network_on",
+            "allow_httpd_network",
+            "httpd_net_enable"
+        ]
+    },
+    {
+        "q": "What file shows current SELinux booleans?",
+        "o": [
+            "getsebool -a output",
+            "/etc/selinux/booleans",
+            "/var/selinux/bools",
+            "/sys/selinux/bool"
+        ]
+    },
+    {
+        "q": "Which SELinux mode allows policy testing?",
+        "o": [
+            "Permissive mode",
+            "Disabled mode",
+            "Strict mode",
+            "Testing mode"
+        ]
+    },
+    {
+        "q": "What tool troubleshoots SELinux denials?",
+        "o": [
+            "sealert and setroubleshoot",
+            "se-debug",
+            "selinux-help",
+            "se-fix"
+        ]
+    },
+    {
+        "q": "Which directory contains AppArmor profiles?",
+        "o": [
+            "/etc/apparmor.d",
+            "/var/apparmor/profiles",
+            "/usr/lib/apparmor",
+            "/sys/apparmor"
+        ]
+    },
+    {
+        "q": "What AppArmor mode logs but allows actions?",
+        "o": [
+            "Complain mode",
+            "Enforce mode",
+            "Disabled mode",
+            "Audit mode"
+        ]
+    },
+    {
+        "q": "Which command enforces AppArmor profile?",
+        "o": [
+            "aa-enforce",
+            "aa-enable",
+            "aa-activate",
+            "aa-start"
+        ]
+    },
+    {
+        "q": "What tool generates AppArmor profiles?",
+        "o": [
+            "aa-genprof",
+            "aa-create",
+            "aa-make",
+            "aa-build"
+        ]
+    },
+    {
+        "q": "Which AppArmor directive allows file read?",
+        "o": [
+            "/path/file r,",
+            "allow /path read",
+            "read: /path/file",
+            "r /path/file"
+        ]
+    },
+    {
+        "q": "What AppArmor rule allows network access?",
+        "o": [
+            "network inet tcp,",
+            "allow network tcp",
+            "tcp: allow",
+            "net: inet tcp"
+        ]
+    },
+    {
+        "q": "Which abstractions file includes common paths?",
+        "o": [
+            "abstractions/base",
+            "common/paths",
+            "include/standard",
+            "shared/system"
+        ]
+    },
+    {
+        "q": "What attack targets NULL pointer dereference?",
+        "o": [
+            "Kernel NULL deref exploit",
+            "Stack overflow",
+            "Heap overflow",
+            "Format string"
+        ]
+    },
+    {
+        "q": "Which sysctl prevents mmap at address 0?",
+        "o": [
+            "vm.mmap_min_addr",
+            "kernel.null_protect",
+            "vm.zero_block",
+            "mmap.min_address"
+        ]
+    },
+    {
+        "q": "What protection prevents kernel NULL exploits?",
+        "o": [
+            "SMEP/SMAP protection",
+            "ASLR only",
+            "NX bit only",
+            "Stack canary"
+        ]
+    },
+    {
+        "q": "Which CPU feature prevents userspace exec?",
+        "o": [
+            "SMEP (Supervisor Mode)",
+            "NX bit only",
+            "DEP only",
+            "ASLR"
+        ]
+    },
+    {
+        "q": "What attack bypasses SMEP protection?",
+        "o": [
+            "ROP in kernel space",
+            "Stack overflow",
+            "Heap spray",
+            "Format string"
+        ]
+    },
+    {
+        "q": "Which CPU feature prevents userspace access?",
+        "o": [
+            "SMAP (Supervisor Mode)",
+            "SMEP only",
+            "NX bit",
+            "DEP"
+        ]
+    },
+    {
+        "q": "What technique disables SMEP temporarily?",
+        "o": [
+            "CR4 register manipulation",
+            "BIOS setting",
+            "Kernel config",
+            "Boot parameter"
+        ]
+    },
+    {
+        "q": "Which register stores SMEP/SMAP bits?",
+        "o": [
+            "CR4 register",
+            "CR0 register",
+            "CR3 register",
+            "MSR register"
+        ]
+    },
+    {
+        "q": "What kernel mitigation prevents ret2usr?",
+        "o": [
+            "SMEP and SMAP",
+            "ASLR only",
+            "Stack canary",
+            "NX bit"
+        ]
+    },
+    {
+        "q": "Which attack returns to user code from kernel?",
+        "o": [
+            "ret2usr attack",
+            "ret2libc",
+            "ROP chain",
+            "JOP chain"
+        ]
+    },
+    {
+        "q": "What memory corruption finds adjacent allocations?",
+        "o": [
+            "Heap overflow",
+            "Stack overflow",
+            "Integer overflow",
+            "Format string"
+        ]
+    },
+    {
+        "q": "Which kernel feature isolates user memory?",
+        "o": [
+            "KPTI (page table isolation)",
+            "ASLR only",
+            "SMEP only",
+            "Stack guard"
+        ]
+    },
+    {
+        "q": "What attack exploits Meltdown vulnerability?",
+        "o": [
+            "Speculative execution leak",
+            "Buffer overflow",
+            "Format string",
+            "Integer overflow"
+        ]
+    },
+    {
+        "q": "Which mitigation protects against Meltdown?",
+        "o": [
+            "KPTI (kernel isolation)",
+            "ASLR only",
+            "SMEP only",
+            "Stack canary"
+        ]
+    },
+    {
+        "q": "What attack exploits Spectre vulnerability?",
+        "o": [
+            "Branch prediction exploit",
+            "Stack overflow",
+            "Heap overflow",
+            "Format string"
+        ]
+    },
+    {
+        "q": "Which mitigation protects against Spectre?",
+        "o": [
+            "Retpoline patches",
+            "KPTI only",
+            "SMEP only",
+            "SMAP only"
+        ]
+    },
+    {
+        "q": "What file shows CPU vulnerability status?",
+        "o": [
+            "/sys/devices/system/cpu/vulnerabilities",
+            "/proc/cpu/vuln",
+            "/etc/cpu/secure",
+            "/var/cpu/status"
+        ]
+    },
+    {
+        "q": "Which kernel config enables KPTI?",
+        "o": [
+            "CONFIG_PAGE_TABLE_ISOLATION",
+            "CONFIG_KPTI_ENABLE",
+            "CONFIG_ISOLATE_KERNEL",
+            "CONFIG_PTI_ON"
+        ]
+    },
+    {
+        "q": "What syscall interface attacks kernel directly?",
+        "o": [
+            "ioctl calls",
+            "read only",
+            "write only",
+            "open only"
+        ]
+    },
+    {
+        "q": "Which tool fuzzes kernel interfaces?",
+        "o": [
+            "syzkaller",
+            "afl-kernel",
+            "kernfuzz",
+            "ksysfuzz"
+        ]
+    },
+    {
+        "q": "What format does syzkaller use for syscalls?",
+        "o": [
+            "Syzlang descriptions",
+            "C code only",
+            "Assembly",
+            "Python scripts"
+        ]
+    },
+    {
+        "q": "Which kernel debugging tool traces functions?",
+        "o": [
+            "ftrace",
+            "strace",
+            "ltrace",
+            "dtrace"
+        ]
+    },
+    {
+        "q": "What file enables ftrace function tracing?",
+        "o": [
+            "/sys/kernel/debug/tracing",
+            "/proc/ftrace",
+            "/etc/trace",
+            "/var/trace"
+        ]
+    },
+    {
+        "q": "Which tool provides dynamic kernel probes?",
+        "o": [
+            "kprobes and kretprobes",
+            "gdb only",
+            "lldb only",
+            "strace"
+        ]
+    },
+    {
+        "q": "What directory contains kernel debug info?",
+        "o": [
+            "/sys/kernel/debug",
+            "/proc/debug",
+            "/etc/kernel/debug",
+            "/var/debug"
+        ]
+    },
+    {
+        "q": "Which tool extracts kernel from vmlinuz?",
+        "o": [
+            "extract-vmlinux script",
+            "gunzip vmlinuz",
+            "unpack-kernel",
+            "vmlinux-extract"
+        ]
+    },
+    {
+        "q": "What file contains uncompressed kernel?",
+        "o": [
+            "vmlinux",
+            "vmlinuz",
+            "bzImage",
+            "zImage"
+        ]
+    },
+    {
+        "q": "Which tool disassembles kernel binary?",
+        "o": [
+            "objdump or radare2",
+            "strings only",
+            "file command",
+            "hexdump"
+        ]
+    },
+    {
+        "q": "What kernel symbol helps identify version?",
+        "o": [
+            "linux_banner",
+            "kernel_version",
+            "system_info",
+            "os_release"
+        ]
+    },
+    {
+        "q": "Which memory region contains kernel code?",
+        "o": [
+            "High memory region",
+            "User space",
+            "Stack region",
+            "Heap region"
+        ]
+    },
+    {
+        "q": "What tool reads kernel memory from userspace?",
+        "o": [
+            "/dev/mem or /dev/kmem",
+            "/proc/mem",
+            "/sys/mem",
+            "/etc/mem"
+        ]
+    },
+    {
+        "q": "Which kernel feature restricts /dev/mem?",
+        "o": [
+            "CONFIG_STRICT_DEVMEM",
+            "CONFIG_NOMEM",
+            "CONFIG_DEVMEM_OFF",
+            "CONFIG_NO_ACCESS"
+        ]
+    },
+    {
+        "q": "What sysctl limits core dump content?",
+        "o": [
+            "kernel.core_pattern",
+            "core.limit",
+            "dump.restrict",
+            "coredump.size"
+        ]
+    },
+    {
+        "q": "Which tool analyzes memory for forensics?",
+        "o": [
+            "Volatility framework",
+            "Wireshark",
+            "tcpdump",
+            "nmap"
+        ]
+    },
+    {
+        "q": "What Linux profile does Volatility need?",
+        "o": [
+            "Kernel version profile",
+            "Network profile",
+            "User profile",
+            "Disk profile"
+        ]
+    },
+    {
+        "q": "Which Volatility plugin lists processes?",
+        "o": [
+            "linux_pslist",
+            "linux_procs",
+            "linux_tasks",
+            "linux_ps"
+        ]
+    },
+    {
+        "q": "What Volatility plugin shows network connections?",
+        "o": [
+            "linux_netstat",
+            "linux_network",
+            "linux_conn",
+            "linux_sockets"
+        ]
+    },
+    {
+        "q": "Which tool captures live memory in Linux?",
+        "o": [
+            "LiME (Linux Memory Extractor)",
+            "dd only",
+            "cp command",
+            "tar archive"
+        ]
+    },
+    {
+        "q": "What format does LiME use for memory dump?",
+        "o": [
+            "raw or lime format",
+            "ELF format",
+            "PE format",
+            "Mach-O format"
+        ]
+    },
+    {
+        "q": "Which kernel module interface does LiME use?",
+        "o": [
+            "Loadable kernel module",
+            "eBPF program",
+            "Syscall hook",
+            "Procfs entry"
+        ]
+    },
+    {
+        "q": "What attack hides malicious kernel module?",
+        "o": [
+            "Module list manipulation",
+            "File encryption",
+            "Network hiding",
+            "Process fork"
+        ]
+    },
+    {
+        "q": "Which kernel structure lists loaded modules?",
+        "o": [
+            "modules list_head",
+            "mod_table array",
+            "kmod_hash",
+            "lkm_tree"
+        ]
+    },
+    {
+        "q": "What technique detects hidden kernel modules?",
+        "o": [
+            "Memory scanning for signatures",
+            "ps command",
+            "top command",
+            "lsmod only"
+        ]
+    },
+    {
+        "q": "Which rootkit technique hooks syscall table?",
+        "o": [
+            "Syscall table manipulation",
+            "File modification",
+            "Network redirect",
+            "User creation"
+        ]
+    },
+    {
+        "q": "What kernel structure contains syscall handlers?",
+        "o": [
+            "sys_call_table",
+            "syscall_list",
+            "call_handlers",
+            "system_calls"
+        ]
+    },
+    {
+        "q": "Which protection prevents syscall table writes?",
+        "o": [
+            "Write-protected memory",
+            "ASLR only",
+            "Stack guard",
+            "Heap protection"
+        ]
+    },
+    {
+        "q": "What technique modifies function prologues?",
+        "o": [
+            "Inline hooking",
+            "Table patching",
+            "Module injection",
+            "Memory spray"
+        ]
+    },
+    {
+        "q": "Which tool detects inline kernel hooks?",
+        "o": [
+            "Memory integrity checker",
+            "ps command",
+            "lsmod command",
+            "top command"
+        ]
+    },
+    {
+        "q": "What attack targets VFS layer for hiding?",
+        "o": [
+            "VFS hook rootkit",
+            "Network rootkit",
+            "User rootkit",
+            "Boot rootkit"
+        ]
+    },
+    {
+        "q": "Which kernel structure handles file operations?",
+        "o": [
+            "file_operations struct",
+            "fs_ops table",
+            "vfs_handlers",
+            "file_methods"
+        ]
+    },
+    {
+        "q": "What VFS function lists directory contents?",
+        "o": [
+            "readdir or iterate",
+            "list_dir",
+            "get_files",
+            "scan_dir"
+        ]
+    },
+    {
+        "q": "Which attack modifies readdir to hide files?",
+        "o": [
+            "File hiding rootkit",
+            "Network hiding",
+            "Process hiding",
+            "User hiding"
+        ]
+    },
+    {
+        "q": "What kernel feature provides write protection?",
+        "o": [
+            "CR0 WP bit",
+            "ASLR only",
+            "SMEP only",
+            "SMAP only"
+        ]
+    },
+    {
+        "q": "Which register bit controls write protection?",
+        "o": [
+            "CR0 bit 16 (WP)",
+            "CR4 bit 20",
+            "MSR bit 0",
+            "EFLAGS bit 9"
+        ]
+    },
+    {
+        "q": "What technique clears WP bit for kernel writes?",
+        "o": [
+            "mov cr0, rax (clear WP)",
+            "cli instruction",
+            "sti instruction",
+            "pushf instruction"
+        ]
+    },
+    {
+        "q": "Which attack overwrites modprobe_path?",
+        "o": [
+            "Arbitrary code execution",
+            "Buffer overflow",
+            "Format string",
+            "Integer overflow"
+        ]
+    },
+    {
+        "q": "What kernel variable runs on unknown binary?",
+        "o": [
+            "modprobe_path",
+            "init_path",
+            "exec_path",
+            "shell_path"
+        ]
+    },
+    {
+        "q": "Which technique triggers modprobe execution?",
+        "o": [
+            "Execute unknown binary format",
+            "Normal process exec",
+            "Shell command",
+            "Service start"
+        ]
+    },
+    {
+        "q": "What attack overwrites core_pattern for exploit?",
+        "o": [
+            "Crash handler hijack",
+            "Buffer overflow",
+            "Format string",
+            "Integer overflow"
+        ]
+    },
+    {
+        "q": "Which file controls crash handler execution?",
+        "o": [
+            "/proc/sys/kernel/core_pattern",
+            "/etc/core.conf",
+            "/var/crash/handler",
+            "/sys/core/exec"
+        ]
+    },
+    {
+        "q": "What kernel structure stores ROP gadget targets?",
+        "o": [
+            "Kernel text segment",
+            "User stack",
+            "Heap memory",
+            "BSS segment"
+        ]
+    },
+    {
+        "q": "Which tool finds kernel ROP gadgets?",
+        "o": [
+            "ROPgadget or ropper",
+            "strings only",
+            "file command",
+            "hexdump"
+        ]
+    },
+    {
+        "q": "What kernel ROP gadget pops rdi register?",
+        "o": [
+            "pop rdi; ret",
+            "mov rdi, rax",
+            "push rdi",
+            "xor rdi, rdi"
+        ]
+    },
+    {
+        "q": "Which kernel debug option leaks addresses?",
+        "o": [
+            "CONFIG_DEBUG_INFO",
+            "CONFIG_MODULES",
+            "CONFIG_SMP",
+            "CONFIG_PREEMPT"
+        ]
+    },
+    {
+        "q": "What attack uses kernel address leak?",
+        "o": [
+            "KASLR bypass",
+            "Stack overflow",
+            "Heap overflow",
+            "Format string"
+        ]
+    },
+    {
+        "q": "Which technique leaks kernel base address?",
+        "o": [
+            "Info disclosure bug",
+            "Buffer overflow",
+            "Format string",
+            "Integer overflow"
+        ]
+    },
+    {
+        "q": "What kernel function returns current task?",
+        "o": [
+            "current or get_current()",
+            "task_now()",
+            "this_process()",
+            "running_task()"
+        ]
+    },
+    {
+        "q": "Which field in task_struct points to creds?",
+        "o": [
+            "cred pointer",
+            "uid field",
+            "pid field",
+            "state field"
+        ]
+    },
+    {
+        "q": "What struct field stores effective UID?",
+        "o": [
+            "euid in cred",
+            "uid in task",
+            "id in process",
+            "user in thread"
+        ]
+    },
+    {
+        "q": "Which kernel function copy credentials?",
+        "o": [
+            "copy_creds()",
+            "clone_cred()",
+            "dup_creds()",
+            "new_creds()"
+        ]
+    },
+    {
+        "q": "What attack uses reference count overflow?",
+        "o": [
+            "Refcount overflow exploit",
+            "Stack overflow",
+            "Heap overflow",
+            "Format string"
+        ]
+    },
+    {
+        "q": "Which kernel config prevents refcount overflow?",
+        "o": [
+            "CONFIG_REFCOUNT_FULL",
+            "CONFIG_REF_CHECK",
+            "CONFIG_COUNT_SAFE",
+            "CONFIG_OVERFLOW"
+        ]
+    },
+    {
+        "q": "What attack corrupts kernel objects?",
+        "o": [
+            "Heap spray in kernel",
+            "Stack overflow",
+            "Format string",
+            "Integer overflow"
+        ]
+    },
+    {
+        "q": "Which allocator cache is exploited for spray?",
+        "o": [
+            "kmalloc-* caches",
+            "page cache",
+            "slab cache",
+            "zone cache"
+        ]
+    },
+    {
+        "q": "What kernel object has useful function pointers?",
+        "o": [
+            "tty_struct",
+            "inode only",
+            "dentry only",
+            "file only"
+        ]
+    },
+    {
+        "q": "Which tty_struct field contains ops?",
+        "o": [
+            "ops pointer",
+            "data field",
+            "count field",
+            "flags field"
+        ]
+    },
+    {
+        "q": "What PTY device is used for kernel exploits?",
+        "o": [
+            "/dev/ptmx",
+            "/dev/tty",
+            "/dev/pts",
+            "/dev/console"
+        ]
+    },
+    {
+        "q": "Which syscall allocates PTY structure?",
+        "o": [
+            "open(/dev/ptmx)",
+            "ioctl()",
+            "read()",
+            "write()"
+        ]
+    },
+    {
+        "q": "What technique sprays pipe_buffer structures?",
+        "o": [
+            "Pipe-based heap spray",
+            "Stack spray",
+            "File spray",
+            "Network spray"
+        ]
+    },
+    {
+        "q": "Which syscall creates pipe for spray?",
+        "o": [
+            "pipe() syscall",
+            "socket()",
+            "open()",
+            "dup()"
+        ]
+    },
+    {
+        "q": "What msg_msg structure used in exploits?",
+        "o": [
+            "System V message queue",
+            "Socket message",
+            "File message",
+            "IPC message"
+        ]
+    },
+    {
+        "q": "Which syscall creates msg_msg objects?",
+        "o": [
+            "msgsnd()",
+            "write()",
+            "send()",
+            "ioctl()"
+        ]
+    },
+    {
+        "q": "What attack technique is cross-cache?",
+        "o": [
+            "Cross-cache exploitation",
+            "Same-cache spray",
+            "Stack pivot",
+            "ROP chain"
+        ]
+    },
+    {
+        "q": "Which technique reclaims freed slabs?",
+        "o": [
+            "Slab exhaustion",
+            "Page allocation",
+            "Buddy system",
+            "Zone claim"
+        ]
+    },
+    {
+        "q": "What kernel feature enables CFI protection?",
+        "o": [
+            "CONFIG_CFI_CLANG",
+            "CONFIG_CFI_GCC",
+            "CONFIG_CONTROL_FLOW",
+            "CONFIG_CFI_ENABLE"
+        ]
+    },
+    {
+        "q": "Which CFI scheme does Linux kernel use?",
+        "o": [
+            "Clang CFI",
+            "GCC CFI",
+            "LLVM CFI",
+            "Microsoft CFI"
+        ]
+    },
+    {
+        "q": "What attack bypasses kernel CFI?",
+        "o": [
+            "Data-only attack",
+            "ROP attack",
+            "JOP attack",
+            "COP attack"
+        ]
+    },
+    {
+        "q": "Which protection constrains function pointers?",
+        "o": [
+            "CFI indirect call check",
+            "ASLR only",
+            "SMEP only",
+            "SMAP only"
+        ]
+    },
+    {
+        "q": "What kernel feature enables shadow stacks?",
+        "o": [
+            "CONFIG_X86_SHADOW_STACK",
+            "CONFIG_SHADOW_STACK",
+            "CONFIG_CET_STACK",
+            "CONFIG_SS_ENABLE"
+        ]
+    },
+    {
+        "q": "Which CPU feature provides shadow stacks?",
+        "o": [
+            "Intel CET",
+            "Intel VT-x",
+            "AMD SME",
+            "AMD SEV"
+        ]
+    },
+    {
+        "q": "What attack is prevented by shadow stacks?",
+        "o": [
+            "ROP attacks",
+            "Data corruption",
+            "Info disclosure",
+            "DoS attacks"
+        ]
+    },
+    {
+        "q": "Which register holds shadow stack pointer?",
+        "o": [
+            "SSP register",
+            "RSP register",
+            "RBP register",
+            "RIP register"
+        ]
+    },
+    {
+        "q": "What technique performs stack switching attack?",
+        "o": [
+            "Stack pivot",
+            "Heap spray",
+            "ROP chain",
+            "JOP chain"
+        ]
+    },
+    {
+        "q": "Which gadget performs stack pivot?",
+        "o": [
+            "xchg rsp, rax; ret",
+            "mov rsp, rbp",
+            "push rsp",
+            "pop rsp"
+        ]
+    },
+    {
+        "q": "What kernel protection validates allocations?",
+        "o": [
+            "KFENCE (Kernel Electric)",
+            "KASAN only",
+            "UBSAN only",
+            "KCSAN only"
+        ]
+    },
+    {
+        "q": "Which kernel sanitizer detects undefined behavior?",
+        "o": [
+            "UBSAN",
+            "KASAN",
+            "KCSAN",
+            "MSAN"
+        ]
+    },
+    {
+        "q": "What attack exploits type confusion?",
+        "o": [
+            "Object type confusion",
+            "Buffer overflow",
+            "Format string",
+            "Integer overflow"
+        ]
+    },
+    {
+        "q": "Which kernel config enables type confusion check?",
+        "o": [
+            "CONFIG_TYPECHECK",
+            "CONFIG_TYPE_SAFE",
+            "CONFIG_OBJCHECK",
+            "CONFIG_TYPED"
+        ]
+    },
+    {
+        "q": "What attack uses double-fetch vulnerability?",
+        "o": [
+            "TOCTOU from userspace",
+            "Buffer overflow",
+            "Format string",
+            "Integer overflow"
+        ]
+    },
+    {
+        "q": "Which function copies from userspace safely?",
+        "o": [
+            "copy_from_user()",
+            "memcpy()",
+            "strcpy()",
+            "memmove()"
+        ]
+    },
+    {
+        "q": "What validation prevents double-fetch?",
+        "o": [
+            "Single copy then validate",
+            "Double copy",
+            "No validation",
+            "Inline check"
+        ]
+    },
+    {
+        "q": "Which annotation marks user pointers?",
+        "o": [
+            "__user annotation",
+            "__kernel mark",
+            "__safe tag",
+            "__ptr flag"
+        ]
+    },
+    {
+        "q": "What tool checks user pointer usage?",
+        "o": [
+            "sparse static analyzer",
+            "gcc only",
+            "clang only",
+            "lint"
+        ]
+    },
+    {
+        "q": "Which kernel config enables sparse checks?",
+        "o": [
+            "make C=1 or C=2",
+            "CONFIG_SPARSE",
+            "CONFIG_CHECK",
+            "CONFIG_ANAL"
+        ]
+    },
+    {
+        "q": "What attack exploits integer overflow in kernel?",
+        "o": [
+            "Size calculation overflow",
+            "Buffer overflow",
+            "Format string",
+            "Use after free"
+        ]
+    },
+    {
+        "q": "Which kernel macro prevents integer overflow?",
+        "o": [
+            "check_add_overflow()",
+            "safe_add()",
+            "no_overflow()",
+            "int_check()"
+        ]
+    },
+    {
+        "q": "What GCC flag enables overflow trapping?",
+        "o": [
+            "-ftrapv",
+            "-foverflow",
+            "-fcheck-int",
+            "-fsafe-math"
+        ]
+    },
+    {
+        "q": "Which kernel sanitizer detects data races?",
+        "o": [
+            "KCSAN",
+            "KASAN",
+            "UBSAN",
+            "MSAN"
+        ]
+    },
+    {
+        "q": "What does KCSAN stand for?",
+        "o": [
+            "Kernel Concurrency Sanitizer",
+            "Kernel Code Scanner",
+            "Kernel Check System",
+            "Kernel Control Scan"
+        ]
+    },
+    {
+        "q": "Which attack exploits kernel data race?",
+        "o": [
+            "Race condition exploit",
+            "Buffer overflow",
+            "Format string",
+            "Integer overflow"
+        ]
+    },
+    {
+        "q": "What kernel lock primitive is RCU?",
+        "o": [
+            "Read-Copy-Update",
+            "Read-Check-Update",
+            "Race-Control-Unit",
+            "Ref-Count-Update"
+        ]
+    },
+    {
+        "q": "Which RCU function marks read section?",
+        "o": [
+            "rcu_read_lock()",
+            "rcu_lock()",
+            "read_rcu()",
+            "lock_rcu()"
+        ]
+    },
+    {
+        "q": "What attack exploits RCU grace period?",
+        "o": [
+            "Use-after-free in RCU",
+            "Buffer overflow",
+            "Format string",
+            "Integer overflow"
+        ]
+    },
+    {
+        "q": "Which function waits for RCU readers?",
+        "o": [
+            "synchronize_rcu()",
+            "wait_rcu()",
+            "sync_readers()",
+            "rcu_wait()"
+        ]
+    },
+    {
+        "q": "What kernel feature provides memory tagging?",
+        "o": [
+            "ARM MTE support",
+            "Intel MPX",
+            "AMD SME",
+            "RISC-V PMP"
+        ]
+    },
+    {
+        "q": "Which CPU architecture has hardware MTE?",
+        "o": [
+            "ARM v8.5+",
+            "Intel x86_64",
+            "AMD EPYC",
+            "RISC-V"
+        ]
+    },
+    {
+        "q": "What does MTE protect against?",
+        "o": [
+            "Memory safety bugs",
+            "Network attacks",
+            "File system bugs",
+            "Device driver issues"
+        ]
+    },
+    {
+        "q": "Which kernel config enables ARM MTE?",
+        "o": [
+            "CONFIG_ARM64_MTE",
+            "CONFIG_MTE_ENABLE",
+            "CONFIG_ARM_TAG",
+            "CONFIG_MEMORY_TAG"
+        ]
+    },
+    {
+        "q": "What Intel technology isolates kernel?",
+        "o": [
+            "Intel TDX",
+            "Intel SGX",
+            "Intel VT-x",
+            "Intel TSX"
+        ]
+    },
+    {
+        "q": "Which AMD technology provides memory encrypt?",
+        "o": [
+            "AMD SEV/SME",
+            "AMD-V",
+            "AMD Secure",
+            "AMD Safe"
+        ]
+    },
+    {
+        "q": "What does SEV stand for?",
+        "o": [
+            "Secure Encrypted Virtualization",
+            "Security Enhanced VM",
+            "Secure Environment Virtual",
+            "Safe Encrypted Virtual"
+        ]
+    },
+    {
+        "q": "Which config enables AMD memory encryption?",
+        "o": [
+            "CONFIG_AMD_MEM_ENCRYPT",
+            "CONFIG_SEV_ENABLE",
+            "CONFIG_AMD_SECURE",
+            "CONFIG_ENCRYPT"
+        ]
+    },
+    {
+        "q": "What attack targets AMD SEV?",
+        "o": [
+            "SEV-SNP bypass attacks",
+            "Stack overflow",
+            "Heap overflow",
+            "Format string"
+        ]
+    },
+    {
+        "q": "Which mitigation protects against SEV attacks?",
+        "o": [
+            "SEV-SNP (Secure Nested Paging)",
+            "Basic SEV",
+            "SEV-ES only",
+            "No mitigation"
+        ]
+    },
+    {
+        "q": "What kernel feature limits kernel access?",
+        "o": [
+            "Kernel lockdown LSM",
+            "SELinux only",
+            "AppArmor only",
+            "SMACK only"
+        ]
+    },
+    {
+        "q": "Which lockdown mode blocks module loading?",
+        "o": [
+            "lockdown=confidentiality",
+            "lockdown=integrity",
+            "lockdown=basic",
+            "lockdown=off"
+        ]
+    },
+    {
+        "q": "What SecureBoot technology verifies kernel?",
+        "o": [
+            "UEFI Secure Boot",
+            "Legacy BIOS",
+            "TPM only",
+            "GRUB only"
+        ]
+    },
+    {
+        "q": "Which kernel module is signed for SecureBoot?",
+        "o": [
+            "All loaded modules",
+            "Only core modules",
+            "No modules",
+            "User modules"
+        ]
+    },
+    {
+        "q": "What attack bypasses SecureBoot?",
+        "o": [
+            "Boothole vulnerability",
+            "Stack overflow",
+            "Heap overflow",
+            "Format string"
+        ]
+    },
+    {
+        "q": "Which tool signs kernel modules?",
+        "o": [
+            "sign-file script",
+            "gpg-sign",
+            "ssl-sign",
+            "kernel-sign"
+        ]
+    },
+    {
+        "q": "What key type signs kernel modules?",
+        "o": [
+            "X.509 certificate",
+            "PGP key",
+            "SSH key",
+            "API key"
+        ]
+    },
+    {
+        "q": "Which directory contains module signing key?",
+        "o": [
+            "certs/ in kernel source",
+            "keys/ directory",
+            "crypto/ directory",
+            "sign/ directory"
+        ]
+    },
+    {
+        "q": "What config requires signed modules?",
+        "o": [
+            "CONFIG_MODULE_SIG_FORCE",
+            "CONFIG_SIG_REQUIRED",
+            "CONFIG_FORCE_SIGN",
+            "CONFIG_MODULES_SIGNED"
+        ]
+    },
+    {
+        "q": "Which kernel feature measures boot integrity?",
+        "o": [
+            "IMA/EVM subsystem",
+            "SELinux only",
+            "AppArmor only",
+            "SMACK only"
+        ]
+    },
+    {
+        "q": "What does IMA stand for?",
+        "o": [
+            "Integrity Measurement Architecture",
+            "Internal Memory Access",
+            "Integrity Module Audit",
+            "Internal Measure Agent"
+        ]
+    },
+    {
+        "q": "Which file stores IMA measurements?",
+        "o": [
+            "/sys/kernel/security/ima",
+            "/proc/ima",
+            "/etc/ima",
+            "/var/ima"
+        ]
+    },
+    {
+        "q": "What does EVM protect in IMA?",
+        "o": [
+            "Extended attribute integrity",
+            "File content only",
+            "Network data",
+            "Process state"
+        ]
+    },
+    {
+        "q": "Which attack targets IMA measurements?",
+        "o": [
+            "Measurement bypass attack",
+            "Buffer overflow",
+            "Format string",
+            "Integer overflow"
+        ]
+    },
+    {
+        "q": "What TPM function seals IMA data?",
+        "o": [
+            "TPM seal/unseal",
+            "TPM encrypt",
+            "TPM hash",
+            "TPM sign"
+        ]
+    },
+    {
+        "q": "Which PCR stores kernel measurements?",
+        "o": [
+            "PCR 8-9 typically",
+            "PCR 0 only",
+            "PCR 1 only",
+            "PCR 7 only"
+        ]
+    },
+    {
+        "q": "What kernel tracing bypasses detection?",
+        "o": [
+            "Direct syscall invocation",
+            "Normal syscall",
+            "Library call",
+            "Shell command"
+        ]
+    },
+    {
+        "q": "Which technique calls syscall directly?",
+        "o": [
+            "syscall() function",
+            "libc wrapper",
+            "Shell command",
+            "Script call"
+        ]
+    },
+    {
+        "q": "What attack hides network connections?",
+        "o": [
+            "Netfilter hook rootkit",
+            "File hiding",
+            "Process hiding",
+            "User hiding"
+        ]
+    },
+    {
+        "q": "Which netfilter hook intercepts packets?",
+        "o": [
+            "NF_INET_PRE_ROUTING",
+            "NF_FILE_READ",
+            "NF_PROC_START",
+            "NF_USER_LOGIN"
+        ]
+    },
+    {
+        "q": "What kernel structure defines netfilter hook?",
+        "o": [
+            "nf_hook_ops",
+            "net_hook",
+            "filter_ops",
+            "packet_hook"
+        ]
+    },
+    {
+        "q": "Which function registers netfilter hook?",
+        "o": [
+            "nf_register_net_hook()",
+            "register_hook()",
+            "add_filter()",
+            "net_hook_add()"
+        ]
+    },
+    {
+        "q": "What detection finds hidden netfilter hooks?",
+        "o": [
+            "Hook table analysis",
+            "ps command",
+            "netstat only",
+            "top command"
+        ]
+    },
+    {
+        "q": "Which kernel structure stores network namespace?",
+        "o": [
+            "struct net",
+            "struct network",
+            "struct netns",
+            "struct namespace"
+        ]
+    },
+    {
+        "q": "What attack exploits namespace escape?",
+        "o": [
+            "Container break out",
+            "Buffer overflow",
+            "Format string",
+            "Integer overflow"
+        ]
+    },
+    {
+        "q": "Which syscall creates new user namespace?",
+        "o": [
+            "unshare(CLONE_NEWUSER)",
+            "fork()",
+            "clone()",
+            "exec()"
+        ]
+    },
+    {
+        "q": "What capability allows namespace creation?",
+        "o": [
+            "CAP_SYS_ADMIN",
+            "CAP_NET_ADMIN",
+            "CAP_DAC_OVERRIDE",
+            "CAP_SETUID"
+        ]
+    },
+    {
+        "q": "Which file shows process namespace?",
+        "o": [
+            "/proc/pid/ns/",
+            "/proc/ns/",
+            "/sys/ns/",
+            "/etc/ns/"
+        ]
+    },
+    {
+        "q": "What attack targets procfs for info leak?",
+        "o": [
+            "Procfs information disclosure",
+            "Buffer overflow",
+            "Format string",
+            "Integer overflow"
+        ]
+    },
+    {
+        "q": "Which procfs file leaks kernel pointers?",
+        "o": [
+            "/proc/kallsyms (if unrestricted)",
+            "/proc/version",
+            "/proc/uptime",
+            "/proc/loadavg"
+        ]
+    },
+    {
+        "q": "What kptr_restrict value hides all pointers?",
+        "o": [
+            "2 (hide from all)",
+            "0 (show all)",
+            "1 (hide non-root)",
+            "3 (partial hide)"
+        ]
+    },
+    {
+        "q": "Which sysfs file leaks system info?",
+        "o": [
+            "/sys/kernel/debug contents",
+            "/sys/class only",
+            "/sys/devices only",
+            "/sys/block only"
+        ]
+    },
+    {
+        "q": "What debugfs restriction protects kernel?",
+        "o": [
+            "Mount with mode=0700",
+            "No mount",
+            "Remove debugfs",
+            "Disable module"
+        ]
+    },
+    {
+        "q": "Which kernel parameter restricts perf_event?",
+        "o": [
+            "kernel.perf_event_paranoid",
+            "perf.restrict",
+            "kernel.perf_limit",
+            "perf.secure"
+        ]
+    },
+    {
+        "q": "What perf_event_paranoid value is most secure?",
+        "o": [
+            "3 (disallow all)",
+            "0 (allow all)",
+            "1 (allow user)",
+            "2 (allow root only)"
+        ]
+    },
+    {
+        "q": "Which attack uses perf for kernel exploit?",
+        "o": [
+            "Perf subsystem vulnerability",
+            "Buffer overflow",
+            "Format string",
+            "Integer overflow"
+        ]
+    },
+    {
+        "q": "What userfaultfd attack enables races?",
+        "o": [
+            "TOCTOU via userfaultfd",
+            "Buffer overflow",
+            "Format string",
+            "Integer overflow"
+        ]
+    },
+    {
+        "q": "Which sysctl restricts userfaultfd?",
+        "o": [
+            "vm.unprivileged_userfaultfd",
+            "uffd.restrict",
+            "vm.uffd_disable",
+            "kernel.userfault"
+        ]
+    },
+    {
+        "q": "What io_uring attack exploits kernel?",
+        "o": [
+            "io_uring subsystem bugs",
+            "File system bug",
+            "Network bug",
+            "Memory bug"
+        ]
+    },
+    {
+        "q": "Which sysctl restricts io_uring?",
+        "o": [
+            "kernel.io_uring_disabled",
+            "io.ring.off",
+            "uring.disable",
+            "kernel.ioring"
+        ]
+    },
+    {
+        "q": "What value disables io_uring completely?",
+        "o": [
+            "2 (disable for all)",
+            "0 (allow all)",
+            "1 (restrict unpriv)",
+            "3 (audit mode)"
+        ]
+    }
+]

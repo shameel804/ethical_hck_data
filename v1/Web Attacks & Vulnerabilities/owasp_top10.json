@@ -1,0 +1,4574 @@
+[
+    {
+        "q": "What does OWASP stand for?",
+        "o": [
+            "Open Web Application Security Project",
+            "Online Web Application Security Program",
+            "Open Website Application Security Protocol",
+            "Open Web Application Safety Program"
+        ]
+    },
+    {
+        "q": "How often does OWASP update its Top 10 list?",
+        "o": [
+            "Every few years based on data analysis",
+            "Every year without fail",
+            "Monthly with new patches",
+            "Never since first release"
+        ]
+    },
+    {
+        "q": "What is the main purpose of the OWASP Top 10?",
+        "o": [
+            "Raise awareness about critical security risks",
+            "Provide complete web security solutions",
+            "Sell commercial security products",
+            "Train developers in programming"
+        ]
+    },
+    {
+        "q": "Which type of attack involves inserting malicious code into queries?",
+        "o": [
+            "Injection attack",
+            "Phishing attack",
+            "Brute force attack",
+            "Social engineering"
+        ]
+    },
+    {
+        "q": "What is the most common form of injection attack?",
+        "o": [
+            "SQL injection",
+            "DNS injection",
+            "ARP injection",
+            "MAC injection"
+        ]
+    },
+    {
+        "q": "What does SQL stand for?",
+        "o": [
+            "Structured Query Language",
+            "Simple Query Language",
+            "Secure Query Language",
+            "Standard Query Logic"
+        ]
+    },
+    {
+        "q": "What is XSS in web security?",
+        "o": [
+            "Cross-Site Scripting",
+            "Cross-Site Security",
+            "Cross-Server Scripting",
+            "Cross-System Security"
+        ]
+    },
+    {
+        "q": "Which category focuses on session management flaws?",
+        "o": [
+            "Broken Authentication",
+            "Security Misconfiguration",
+            "Insecure Deserialization",
+            "Injection Flaws"
+        ]
+    },
+    {
+        "q": "What is XXE an abbreviation for?",
+        "o": [
+            "XML External Entity",
+            "Cross-Site Exploit",
+            "XML Extended Error",
+            "Extended XML Entity"
+        ]
+    },
+    {
+        "q": "Which HTTP method is commonly exploited in XXE attacks?",
+        "o": [
+            "POST with XML body",
+            "GET with parameters",
+            "DELETE with headers",
+            "OPTIONS with cookies"
+        ]
+    },
+    {
+        "q": "What does sensitive data exposure mean?",
+        "o": [
+            "Unprotected confidential information",
+            "Fast data transmission",
+            "Open source code sharing",
+            "Public API documentation"
+        ]
+    },
+    {
+        "q": "Which protocol helps protect data in transit?",
+        "o": [
+            "HTTPS",
+            "HTTP",
+            "FTP",
+            "SMTP"
+        ]
+    },
+    {
+        "q": "What is broken access control?",
+        "o": [
+            "Improper enforcement of user restrictions",
+            "Failed login attempts by users",
+            "Network firewall failure",
+            "Expired SSL certificates"
+        ]
+    },
+    {
+        "q": "What is the principle of least privilege?",
+        "o": [
+            "Users get minimum access needed",
+            "Admins get unlimited access",
+            "All users share same permissions",
+            "Guests get full read access"
+        ]
+    },
+    {
+        "q": "What causes security misconfiguration vulnerabilities?",
+        "o": [
+            "Default or incomplete settings",
+            "Using latest software versions",
+            "Enabling all security headers",
+            "Regular security audits"
+        ]
+    },
+    {
+        "q": "Which is an example of security misconfiguration?",
+        "o": [
+            "Default admin credentials",
+            "Strong password policy",
+            "Enabled HTTPS protocol",
+            "Updated server software"
+        ]
+    },
+    {
+        "q": "What is insecure deserialization?",
+        "o": [
+            "Converting untrusted data to objects unsafely",
+            "Encrypting data before transmission",
+            "Compressing files for storage",
+            "Validating user input fields"
+        ]
+    },
+    {
+        "q": "What does serialization mean in programming?",
+        "o": [
+            "Converting objects to byte streams",
+            "Running code in parallel",
+            "Encrypting sensitive data",
+            "Compiling source code"
+        ]
+    },
+    {
+        "q": "What risk comes from using vulnerable components?",
+        "o": [
+            "Known exploits can attack system",
+            "Faster application performance",
+            "Better code compatibility",
+            "Improved user experience"
+        ]
+    },
+    {
+        "q": "What is the best way to manage third-party components?",
+        "o": [
+            "Regular updates and monitoring",
+            "Never update once deployed",
+            "Use only beta versions",
+            "Avoid using any libraries"
+        ]
+    },
+    {
+        "q": "Why is insufficient logging a security issue?",
+        "o": [
+            "Makes detecting attacks difficult",
+            "Increases storage costs",
+            "Slows down applications",
+            "Reduces code quality"
+        ]
+    },
+    {
+        "q": "What should security logging capture?",
+        "o": [
+            "Login attempts and failures",
+            "User browsing history only",
+            "All database queries",
+            "Employee personal data"
+        ]
+    },
+    {
+        "q": "What type of XSS stores malicious script on server?",
+        "o": [
+            "Stored XSS",
+            "Reflected XSS",
+            "DOM-based XSS",
+            "Blind XSS"
+        ]
+    },
+    {
+        "q": "Which XSS type reflects script back immediately?",
+        "o": [
+            "Reflected XSS",
+            "Stored XSS",
+            "Persistent XSS",
+            "DOM-based XSS"
+        ]
+    },
+    {
+        "q": "What is the primary goal of SQL injection?",
+        "o": [
+            "Access or modify database data",
+            "Speed up query execution",
+            "Improve database indexes",
+            "Compress database tables"
+        ]
+    },
+    {
+        "q": "Which input validation approach is most secure?",
+        "o": [
+            "Whitelist acceptable inputs only",
+            "Blacklist known bad inputs",
+            "Accept all user inputs",
+            "Ignore input validation"
+        ]
+    },
+    {
+        "q": "What is parameterized query?",
+        "o": [
+            "Query with placeholder for user input",
+            "Query written in plain text",
+            "Query without any conditions",
+            "Query with hardcoded values"
+        ]
+    },
+    {
+        "q": "What is the purpose of Content Security Policy?",
+        "o": [
+            "Prevent XSS by controlling resources",
+            "Speed up page loading time",
+            "Compress website images",
+            "Cache static content"
+        ]
+    },
+    {
+        "q": "What does IDOR stand for?",
+        "o": [
+            "Insecure Direct Object Reference",
+            "Internal Data Object Reference",
+            "Indirect Data Object Request",
+            "Insecure Database Object Record"
+        ]
+    },
+    {
+        "q": "What is a common IDOR vulnerability example?",
+        "o": [
+            "Changing user ID in URL to access others data",
+            "Using strong passwords for login",
+            "Encrypting all stored data",
+            "Validating email formats"
+        ]
+    },
+    {
+        "q": "What protects against CSRF attacks?",
+        "o": [
+            "Anti-CSRF tokens",
+            "Longer passwords",
+            "Complex usernames",
+            "Multiple email addresses"
+        ]
+    },
+    {
+        "q": "What is the SameSite cookie attribute for?",
+        "o": [
+            "Protecting against CSRF",
+            "Encrypting cookie values",
+            "Compressing cookie data",
+            "Extending cookie lifetime"
+        ]
+    },
+    {
+        "q": "What is session hijacking?",
+        "o": [
+            "Stealing session tokens to impersonate users",
+            "Creating backup session copies",
+            "Extending user session time",
+            "Logging session start time"
+        ]
+    },
+    {
+        "q": "Which header helps prevent clickjacking?",
+        "o": [
+            "X-Frame-Options",
+            "X-Content-Type",
+            "X-Cache-Control",
+            "X-Forwarded-For"
+        ]
+    },
+    {
+        "q": "What is HSTS in web security?",
+        "o": [
+            "HTTP Strict Transport Security",
+            "Hypertext Secure Transfer Standard",
+            "HTTP Standard Transport System",
+            "Hypertext Strict Tunnel Service"
+        ]
+    },
+    {
+        "q": "What does authentication verify?",
+        "o": [
+            "User identity",
+            "User location",
+            "User device type",
+            "User network speed"
+        ]
+    },
+    {
+        "q": "What does authorization determine?",
+        "o": [
+            "What actions user can perform",
+            "Who the user claims to be",
+            "Where user is located",
+            "When user last logged in"
+        ]
+    },
+    {
+        "q": "What is credential stuffing?",
+        "o": [
+            "Using stolen credentials across sites",
+            "Creating strong passwords",
+            "Encrypting user credentials",
+            "Resetting forgotten passwords"
+        ]
+    },
+    {
+        "q": "What is brute force attack?",
+        "o": [
+            "Trying all possible password combinations",
+            "Using a single known password",
+            "Social engineering for passwords",
+            "Phishing for user credentials"
+        ]
+    },
+    {
+        "q": "How does rate limiting help security?",
+        "o": [
+            "Slows down automated attacks",
+            "Speeds up application response",
+            "Increases storage capacity",
+            "Improves code quality"
+        ]
+    },
+    {
+        "q": "What is multi-factor authentication?",
+        "o": [
+            "Using multiple verification methods",
+            "Having multiple user accounts",
+            "Using multiple browsers",
+            "Having multiple passwords"
+        ]
+    },
+    {
+        "q": "What is a security header?",
+        "o": [
+            "HTTP response header for security",
+            "HTML tag for styling",
+            "JavaScript function for validation",
+            "CSS class for layout"
+        ]
+    },
+    {
+        "q": "What is input sanitization?",
+        "o": [
+            "Cleaning user input of malicious content",
+            "Encrypting all form data",
+            "Caching user submissions",
+            "Logging all input attempts"
+        ]
+    },
+    {
+        "q": "What is output encoding?",
+        "o": [
+            "Converting special characters safely",
+            "Compressing output data",
+            "Encrypting response data",
+            "Caching rendered pages"
+        ]
+    },
+    {
+        "q": "Which language is commonly used in XSS?",
+        "o": [
+            "JavaScript",
+            "Python",
+            "Java",
+            "C++"
+        ]
+    },
+    {
+        "q": "What is the purpose of WAF?",
+        "o": [
+            "Filter malicious web traffic",
+            "Speed up web applications",
+            "Cache static content",
+            "Compress website images"
+        ]
+    },
+    {
+        "q": "What does WAF stand for?",
+        "o": [
+            "Web Application Firewall",
+            "Web Access Filter",
+            "Wide Area Firewall",
+            "Wireless Access Filter"
+        ]
+    },
+    {
+        "q": "What is path traversal attack?",
+        "o": [
+            "Accessing files outside web root",
+            "Navigating website pages normally",
+            "Creating directory structure",
+            "Organizing website content"
+        ]
+    },
+    {
+        "q": "What characters are used in path traversal?",
+        "o": [
+            "../ or ..\\ sequences",
+            "HTML special entities",
+            "SQL keywords only",
+            "JavaScript functions"
+        ]
+    },
+    {
+        "q": "What is remote code execution?",
+        "o": [
+            "Running attacker code on server",
+            "Executing local scripts only",
+            "Running database queries",
+            "Compiling source code"
+        ]
+    },
+    {
+        "q": "What is local file inclusion?",
+        "o": [
+            "Including local server files in execution",
+            "Downloading files from server",
+            "Uploading files to server",
+            "Deleting server files"
+        ]
+    },
+    {
+        "q": "What is remote file inclusion?",
+        "o": [
+            "Including external files in execution",
+            "Downloading remote images",
+            "Uploading files remotely",
+            "Backing up remote data"
+        ]
+    },
+    {
+        "q": "What is command injection?",
+        "o": [
+            "Executing OS commands through app",
+            "Running SQL queries only",
+            "Writing JavaScript code",
+            "Creating HTML forms"
+        ]
+    },
+    {
+        "q": "Which function is dangerous for command injection in PHP?",
+        "o": [
+            "system()",
+            "htmlspecialchars()",
+            "json_encode()",
+            "array_push()"
+        ]
+    },
+    {
+        "q": "What is LDAP injection?",
+        "o": [
+            "Manipulating LDAP queries",
+            "Modifying SQL databases",
+            "Changing HTTP headers",
+            "Altering CSS styles"
+        ]
+    },
+    {
+        "q": "What is NoSQL injection?",
+        "o": [
+            "Attacking NoSQL databases with malicious input",
+            "Using SQL on NoSQL databases",
+            "Converting NoSQL to SQL",
+            "Optimizing NoSQL queries"
+        ]
+    },
+    {
+        "q": "What is the OWASP ZAP tool used for?",
+        "o": [
+            "Web application security testing",
+            "Database administration",
+            "Code compilation",
+            "Network monitoring"
+        ]
+    },
+    {
+        "q": "What is Burp Suite?",
+        "o": [
+            "Web security testing platform",
+            "Database management tool",
+            "Code editor software",
+            "Network scanner tool"
+        ]
+    },
+    {
+        "q": "What is a vulnerability scanner?",
+        "o": [
+            "Tool that finds security weaknesses",
+            "Software for writing code",
+            "Application for data backup",
+            "Program for file compression"
+        ]
+    },
+    {
+        "q": "What is penetration testing?",
+        "o": [
+            "Authorized security testing of systems",
+            "Installing software updates",
+            "Writing application code",
+            "Designing user interfaces"
+        ]
+    },
+    {
+        "q": "What is the difference between black box and white box testing?",
+        "o": [
+            "Knowledge of internal structure",
+            "Testing speed difference",
+            "Cost of testing tools",
+            "Number of testers needed"
+        ]
+    },
+    {
+        "q": "What is secure coding?",
+        "o": [
+            "Writing code that resists attacks",
+            "Encrypting source files",
+            "Compressing application code",
+            "Obfuscating variable names"
+        ]
+    },
+    {
+        "q": "Why are error messages a security concern?",
+        "o": [
+            "May reveal system information",
+            "Slow down page loading",
+            "Increase storage usage",
+            "Reduce code quality"
+        ]
+    },
+    {
+        "q": "What is information disclosure?",
+        "o": [
+            "Unintentional exposure of sensitive data",
+            "Public API documentation",
+            "Open source code release",
+            "Marketing information sharing"
+        ]
+    },
+    {
+        "q": "What is the robots.txt file?",
+        "o": [
+            "Instructions for search engine crawlers",
+            "List of website administrators",
+            "Database connection settings",
+            "User authentication rules"
+        ]
+    },
+    {
+        "q": "Why can robots.txt be a security issue?",
+        "o": [
+            "Reveals hidden directories",
+            "Slows down crawling",
+            "Increases bandwidth usage",
+            "Reduces SEO ranking"
+        ]
+    },
+    {
+        "q": "What is directory listing vulnerability?",
+        "o": [
+            "Server shows folder contents",
+            "Fast file searching",
+            "Organized file storage",
+            "Improved navigation"
+        ]
+    },
+    {
+        "q": "What is a security patch?",
+        "o": [
+            "Update that fixes vulnerabilities",
+            "New feature addition",
+            "Performance improvement",
+            "User interface change"
+        ]
+    },
+    {
+        "q": "What is zero-day vulnerability?",
+        "o": [
+            "Unknown flaw without existing fix",
+            "Bug found on first day",
+            "Error in new software",
+            "Problem in beta version"
+        ]
+    },
+    {
+        "q": "What is CVE?",
+        "o": [
+            "Common Vulnerabilities and Exposures",
+            "Computer Virus Encyclopedia",
+            "Cyber Vulnerability Engine",
+            "Critical Vulnerability Evaluation"
+        ]
+    },
+    {
+        "q": "What is CVSS?",
+        "o": [
+            "Common Vulnerability Scoring System",
+            "Computer Virus Scanning Software",
+            "Cyber Vulnerability Security Standard",
+            "Critical Vulnerability Status System"
+        ]
+    },
+    {
+        "q": "What is the purpose of security testing?",
+        "o": [
+            "Find vulnerabilities before attackers",
+            "Speed up application loading",
+            "Reduce development costs",
+            "Improve user experience"
+        ]
+    },
+    {
+        "q": "What is threat modeling?",
+        "o": [
+            "Identifying potential security threats",
+            "Creating 3D representations",
+            "Designing user interfaces",
+            "Planning software features"
+        ]
+    },
+    {
+        "q": "What is defense in depth?",
+        "o": [
+            "Multiple layers of security",
+            "Single strong firewall",
+            "One time password",
+            "Frequent password changes"
+        ]
+    },
+    {
+        "q": "What is the secure development lifecycle?",
+        "o": [
+            "Security integrated throughout development",
+            "Testing only at final stage",
+            "Security audit after launch",
+            "Patching after incidents"
+        ]
+    },
+    {
+        "q": "What is code review for security?",
+        "o": [
+            "Examining code for vulnerabilities",
+            "Checking code formatting",
+            "Testing code performance",
+            "Reviewing code comments"
+        ]
+    },
+    {
+        "q": "What is static application security testing?",
+        "o": [
+            "Analyzing code without execution",
+            "Testing running application",
+            "Scanning network traffic",
+            "Monitoring user behavior"
+        ]
+    },
+    {
+        "q": "What is dynamic application security testing?",
+        "o": [
+            "Testing running application",
+            "Analyzing source code only",
+            "Reviewing documentation",
+            "Checking configuration files"
+        ]
+    },
+    {
+        "q": "What is the purpose of input validation?",
+        "o": [
+            "Ensure data meets expected format",
+            "Speed up form submission",
+            "Reduce storage requirements",
+            "Improve visual appearance"
+        ]
+    },
+    {
+        "q": "What is HTML encoding used for?",
+        "o": [
+            "Preventing XSS in HTML context",
+            "Compressing HTML files",
+            "Encrypting HTML content",
+            "Caching HTML pages"
+        ]
+    },
+    {
+        "q": "What is URL encoding?",
+        "o": [
+            "Converting special characters for URLs",
+            "Shortening long URLs",
+            "Encrypting URL paths",
+            "Caching URL responses"
+        ]
+    },
+    {
+        "q": "What is the Same-Origin Policy?",
+        "o": [
+            "Browser restricts cross-origin requests",
+            "Server blocks all requests",
+            "Network filters traffic",
+            "Firewall blocks ports"
+        ]
+    },
+    {
+        "q": "What does CORS stand for?",
+        "o": [
+            "Cross-Origin Resource Sharing",
+            "Common Origin Request System",
+            "Cross-Origin Request Security",
+            "Common Origin Resource Standard"
+        ]
+    },
+    {
+        "q": "What is a secure cookie flag?",
+        "o": [
+            "Cookie only sent over HTTPS",
+            "Cookie encrypted with AES",
+            "Cookie never expires",
+            "Cookie visible to all"
+        ]
+    },
+    {
+        "q": "What is the HttpOnly cookie flag?",
+        "o": [
+            "Cookie inaccessible to JavaScript",
+            "Cookie only for HTTP requests",
+            "Cookie compressed in transit",
+            "Cookie visible to extensions"
+        ]
+    },
+    {
+        "q": "What is session fixation?",
+        "o": [
+            "Attacker sets victims session ID",
+            "Extending session timeout",
+            "Creating session backups",
+            "Logging session activity"
+        ]
+    },
+    {
+        "q": "How to prevent session fixation?",
+        "o": [
+            "Regenerate session ID after login",
+            "Use longer session IDs",
+            "Extend session timeout",
+            "Log all session changes"
+        ]
+    },
+    {
+        "q": "What is password hashing?",
+        "o": [
+            "Converting password to fixed-length value",
+            "Encrypting password reversibly",
+            "Compressing password string",
+            "Encoding password in URL"
+        ]
+    },
+    {
+        "q": "What is password salting?",
+        "o": [
+            "Adding random data before hashing",
+            "Encrypting hash output",
+            "Compressing stored hash",
+            "Shortening password length"
+        ]
+    },
+    {
+        "q": "Which hashing algorithm is recommended for passwords?",
+        "o": [
+            "bcrypt",
+            "MD5",
+            "SHA1",
+            "CRC32"
+        ]
+    },
+    {
+        "q": "Why is MD5 not recommended for password hashing?",
+        "o": [
+            "Too fast and has collisions",
+            "Too slow for users",
+            "Uses too much memory",
+            "Not widely supported"
+        ]
+    },
+    {
+        "q": "What is account enumeration?",
+        "o": [
+            "Discovering valid usernames",
+            "Listing user permissions",
+            "Counting login attempts",
+            "Tracking active sessions"
+        ]
+    },
+    {
+        "q": "How to prevent account enumeration?",
+        "o": [
+            "Generic error messages",
+            "Detailed error messages",
+            "Show all usernames",
+            "Allow unlimited attempts"
+        ]
+    },
+    {
+        "q": "What is CAPTCHA used for?",
+        "o": [
+            "Distinguish humans from bots",
+            "Encrypt form submissions",
+            "Speed up page loading",
+            "Compress form data"
+        ]
+    },
+    {
+        "q": "What is account lockout?",
+        "o": [
+            "Blocking account after failed attempts",
+            "Deleting inactive accounts",
+            "Extending session timeout",
+            "Logging user activity"
+        ]
+    },
+    {
+        "q": "What is the purpose of security headers?",
+        "o": [
+            "Instruct browser security behavior",
+            "Speed up page rendering",
+            "Compress HTTP responses",
+            "Cache static resources"
+        ]
+    },
+    {
+        "q": "What does the X-XSS-Protection header do?",
+        "o": [
+            "Enables browser XSS filter",
+            "Blocks all JavaScript",
+            "Encrypts page content",
+            "Compresses HTML output"
+        ]
+    },
+    {
+        "q": "What is the X-Content-Type-Options header?",
+        "o": [
+            "Prevents MIME type sniffing",
+            "Sets content encoding",
+            "Defines cache duration",
+            "Specifies language"
+        ]
+    },
+    {
+        "q": "What is the Referrer-Policy header used for?",
+        "o": [
+            "Controls referrer information sent",
+            "Blocks all referrers completely",
+            "Encrypts referrer data",
+            "Caches referrer values"
+        ]
+    },
+    {
+        "q": "Which SQL injection type uses UNION operator?",
+        "o": [
+            "Union-based injection",
+            "Boolean-based injection",
+            "Time-based blind injection",
+            "Error-based injection"
+        ]
+    },
+    {
+        "q": "What is blind SQL injection?",
+        "o": [
+            "Injection without visible output",
+            "Injection with hidden queries",
+            "Injection using passwords",
+            "Injection blocking errors"
+        ]
+    },
+    {
+        "q": "How does time-based blind SQL injection work?",
+        "o": [
+            "Uses delays to infer data",
+            "Measures processing speed",
+            "Tracks session duration",
+            "Counts query executions"
+        ]
+    },
+    {
+        "q": "What is second-order SQL injection?",
+        "o": [
+            "Payload stored then executed later",
+            "Two queries in one request",
+            "Double encoding attacks",
+            "Dual database targeting"
+        ]
+    },
+    {
+        "q": "Which tool is commonly used for SQL injection?",
+        "o": [
+            "sqlmap",
+            "Wireshark",
+            "Nmap",
+            "Metasploit"
+        ]
+    },
+    {
+        "q": "What is the purpose of escape characters in SQL?",
+        "o": [
+            "Treat special characters as literals",
+            "Speed up query execution time",
+            "Compress database storage",
+            "Encrypt query parameters"
+        ]
+    },
+    {
+        "q": "What is stored procedure injection?",
+        "o": [
+            "Injecting into database procedures",
+            "Storing injection in files",
+            "Procedure call optimization",
+            "Memory storage attacks"
+        ]
+    },
+    {
+        "q": "How does error-based SQL injection work?",
+        "o": [
+            "Extracts data from error messages",
+            "Creates database error logs",
+            "Triggers system shutdowns",
+            "Monitors error handlers"
+        ]
+    },
+    {
+        "q": "What is the purpose of information_schema in MySQL?",
+        "o": [
+            "Contains database metadata",
+            "Stores user passwords",
+            "Holds backup data",
+            "Manages log files"
+        ]
+    },
+    {
+        "q": "What technique extracts database version via injection?",
+        "o": [
+            "Using version functions in query",
+            "Reading configuration files",
+            "Checking error messages",
+            "Testing performance speed"
+        ]
+    },
+    {
+        "q": "What is DOM-based XSS?",
+        "o": [
+            "XSS executed in browser DOM",
+            "XSS stored on server",
+            "XSS in database fields",
+            "XSS in HTTP headers"
+        ]
+    },
+    {
+        "q": "What makes DOM XSS different from reflected XSS?",
+        "o": [
+            "Payload never reaches server",
+            "Uses server-side processing",
+            "Requires database storage",
+            "Needs authentication first"
+        ]
+    },
+    {
+        "q": "Which JavaScript method is dangerous for XSS?",
+        "o": [
+            "innerHTML",
+            "textContent",
+            "getAttribute",
+            "addEventListener"
+        ]
+    },
+    {
+        "q": "What is the document.write function risk?",
+        "o": [
+            "Can execute injected scripts",
+            "Slows page rendering",
+            "Increases memory usage",
+            "Blocks event handlers"
+        ]
+    },
+    {
+        "q": "What is mutation XSS?",
+        "o": [
+            "XSS through HTML parser mutations",
+            "Changing XSS payloads randomly",
+            "Modifying stored XSS data",
+            "Rotating attack vectors"
+        ]
+    },
+    {
+        "q": "What are XSS polyglots?",
+        "o": [
+            "Payloads working in multiple contexts",
+            "Multi-language XSS scripts",
+            "Encrypted XSS payloads",
+            "Compressed attack vectors"
+        ]
+    },
+    {
+        "q": "What is CSP bypass?",
+        "o": [
+            "Circumventing Content Security Policy",
+            "Creating Custom Security Policy",
+            "Compressing Security Protocols",
+            "Caching Server Permissions"
+        ]
+    },
+    {
+        "q": "Which CSP directive controls script sources?",
+        "o": [
+            "script-src",
+            "style-src",
+            "img-src",
+            "font-src"
+        ]
+    },
+    {
+        "q": "What does CSP nonce provide?",
+        "o": [
+            "One-time token for inline scripts",
+            "Network security encryption",
+            "Content compression option",
+            "Cache invalidation key"
+        ]
+    },
+    {
+        "q": "What is XXE file disclosure attack?",
+        "o": [
+            "Reading server files via XML",
+            "Encrypting XML documents",
+            "Compressing XML entities",
+            "Validating XML schemas"
+        ]
+    },
+    {
+        "q": "How can XXE lead to SSRF?",
+        "o": [
+            "External entities request internal URLs",
+            "XML contains server addresses",
+            "Entities store request data",
+            "Parser blocks connections"
+        ]
+    },
+    {
+        "q": "What is billion laughs attack?",
+        "o": [
+            "XXE denial of service via expansion",
+            "Sending many HTTP requests",
+            "Creating infinite loops",
+            "Flooding with error messages"
+        ]
+    },
+    {
+        "q": "How to prevent XXE vulnerabilities?",
+        "o": [
+            "Disable external entity processing",
+            "Use larger XML parsers",
+            "Enable all DTD features",
+            "Allow external URLs"
+        ]
+    },
+    {
+        "q": "What is out-of-band XXE?",
+        "o": [
+            "Exfiltrating data via external requests",
+            "Processing XML offline",
+            "Storing entities externally",
+            "Caching parser output"
+        ]
+    },
+    {
+        "q": "What parameter can exploit XXE in SOAP?",
+        "o": [
+            "XML body containing entities",
+            "HTTP header values",
+            "Query string parameters",
+            "Cookie data fields"
+        ]
+    },
+    {
+        "q": "What is broken function level authorization?",
+        "o": [
+            "Missing permission checks on functions",
+            "Functions not working properly",
+            "Slow function execution time",
+            "Memory leaks in functions"
+        ]
+    },
+    {
+        "q": "What is horizontal privilege escalation?",
+        "o": [
+            "Accessing other users same-level data",
+            "Gaining administrator access",
+            "Moving across network zones",
+            "Increasing storage quota"
+        ]
+    },
+    {
+        "q": "What is vertical privilege escalation?",
+        "o": [
+            "Gaining higher permission level",
+            "Accessing peer user data",
+            "Downloading more files",
+            "Extending session time"
+        ]
+    },
+    {
+        "q": "How do forced browsing attacks work?",
+        "o": [
+            "Accessing URLs without authorization",
+            "Speeding up page loading",
+            "Caching multiple pages",
+            "Bookmarking all pages"
+        ]
+    },
+    {
+        "q": "What is parameter tampering?",
+        "o": [
+            "Modifying request parameters maliciously",
+            "Optimizing query parameters",
+            "Encrypting form values",
+            "Caching URL parameters"
+        ]
+    },
+    {
+        "q": "How can hidden form fields be exploited?",
+        "o": [
+            "Modifying values before submission",
+            "Reading encrypted content",
+            "Bypassing browser cache",
+            "Accessing server files"
+        ]
+    },
+    {
+        "q": "What is cookie tampering?",
+        "o": [
+            "Modifying cookie values",
+            "Deleting all cookies",
+            "Encrypting cookie data",
+            "Compressing cookie size"
+        ]
+    },
+    {
+        "q": "What indicates security misconfiguration in headers?",
+        "o": [
+            "Missing security headers",
+            "Too many headers present",
+            "Compressed header values",
+            "Encrypted header names"
+        ]
+    },
+    {
+        "q": "Why is debug mode dangerous in production?",
+        "o": [
+            "Exposes detailed error information",
+            "Slows down application speed",
+            "Increases bandwidth usage",
+            "Reduces cache efficiency"
+        ]
+    },
+    {
+        "q": "What is default credential vulnerability?",
+        "o": [
+            "Using unchanged factory passwords",
+            "Creating weak user passwords",
+            "Sharing passwords publicly",
+            "Storing passwords plainly"
+        ]
+    },
+    {
+        "q": "How does unnecessary service exposure cause risk?",
+        "o": [
+            "Increases attack surface area",
+            "Improves system performance",
+            "Enhances user experience",
+            "Reduces maintenance cost"
+        ]
+    },
+    {
+        "q": "What is verbose error handling vulnerability?",
+        "o": [
+            "Detailed errors revealing system info",
+            "Errors displayed too slowly",
+            "Error logs taking space",
+            "Errors formatted poorly"
+        ]
+    },
+    {
+        "q": "What does insecure deserialization enable?",
+        "o": [
+            "Remote code execution attacks",
+            "Faster data processing",
+            "Better object compression",
+            "Improved memory usage"
+        ]
+    },
+    {
+        "q": "Which format is vulnerable to deserialization attacks?",
+        "o": [
+            "Serialized Java objects",
+            "Plain text documents",
+            "Static HTML pages",
+            "Compressed ZIP files"
+        ]
+    },
+    {
+        "q": "What is object injection attack?",
+        "o": [
+            "Injecting malicious serialized objects",
+            "Adding objects to database",
+            "Creating object references",
+            "Modifying object names"
+        ]
+    },
+    {
+        "q": "How does PHP object injection work?",
+        "o": [
+            "Exploiting unserialize function",
+            "Modifying class definitions",
+            "Changing include paths",
+            "Overwriting config files"
+        ]
+    },
+    {
+        "q": "What are magic methods in deserialization?",
+        "o": [
+            "Auto-called methods during processes",
+            "Encryption helper functions",
+            "Random number generators",
+            "String formatting utilities"
+        ]
+    },
+    {
+        "q": "What is a gadget chain in exploitation?",
+        "o": [
+            "Sequence of methods for exploitation",
+            "Hardware security modules",
+            "Network device configuration",
+            "Browser extension chain"
+        ]
+    },
+    {
+        "q": "What is software composition analysis?",
+        "o": [
+            "Identifying third-party components",
+            "Writing custom software",
+            "Compiling source code",
+            "Testing user interfaces"
+        ]
+    },
+    {
+        "q": "What is a software bill of materials?",
+        "o": [
+            "List of components in software",
+            "Invoice for development",
+            "License cost breakdown",
+            "Team member directory"
+        ]
+    },
+    {
+        "q": "Why are transitive dependencies risky?",
+        "o": [
+            "Hidden vulnerable dependencies",
+            "Faster application loading",
+            "Better code organization",
+            "Improved testing coverage"
+        ]
+    },
+    {
+        "q": "What is dependency confusion attack?",
+        "o": [
+            "Hijacking private package names",
+            "Mixing library versions",
+            "Confusing import statements",
+            "Circular dependency loops"
+        ]
+    },
+    {
+        "q": "How does typosquatting affect package security?",
+        "o": [
+            "Malicious packages with similar names",
+            "Slow package download speed",
+            "Large package file sizes",
+            "Complex installation process"
+        ]
+    },
+    {
+        "q": "What should monitoring systems detect?",
+        "o": [
+            "Unauthorized access attempts",
+            "User interface changes",
+            "Code comment updates",
+            "Documentation revisions"
+        ]
+    },
+    {
+        "q": "What is log injection vulnerability?",
+        "o": [
+            "Injecting fake log entries",
+            "Deleting log files",
+            "Compressing log data",
+            "Encrypting log output"
+        ]
+    },
+    {
+        "q": "Why is log tampering a security issue?",
+        "o": [
+            "Can hide evidence of attacks",
+            "Increases storage costs",
+            "Slows log processing",
+            "Reduces log readability"
+        ]
+    },
+    {
+        "q": "What is SIEM in security monitoring?",
+        "o": [
+            "Security Information Event Management",
+            "Secure Internet Email Module",
+            "System Integration Event Monitor",
+            "Server Infrastructure Engine Manager"
+        ]
+    },
+    {
+        "q": "What is the purpose of alerting thresholds?",
+        "o": [
+            "Trigger notifications on anomalies",
+            "Limit number of log entries",
+            "Reduce storage requirements",
+            "Compress alert messages"
+        ]
+    },
+    {
+        "q": "What is security event correlation?",
+        "o": [
+            "Linking related security events",
+            "Deleting duplicate events",
+            "Sorting events by time",
+            "Counting event totals"
+        ]
+    },
+    {
+        "q": "What is prepared statement in SQL?",
+        "o": [
+            "Pre-compiled query with parameters",
+            "Query stored in memory",
+            "Backup query for failure",
+            "Optimized query execution"
+        ]
+    },
+    {
+        "q": "How do stored procedures help prevent SQL injection?",
+        "o": [
+            "Separate code from data properly",
+            "Run queries much faster",
+            "Store data more efficiently",
+            "Reduce network traffic"
+        ]
+    },
+    {
+        "q": "What is ORM in database access?",
+        "o": [
+            "Object Relational Mapping",
+            "Online Resource Manager",
+            "Output Response Module",
+            "Open Request Method"
+        ]
+    },
+    {
+        "q": "How does ORM help prevent injection?",
+        "o": [
+            "Abstracts database queries safely",
+            "Encrypts all database fields",
+            "Compresses query results",
+            "Caches database connections"
+        ]
+    },
+    {
+        "q": "What is context-aware output encoding?",
+        "o": [
+            "Encoding based on output location",
+            "Encoding for all contexts",
+            "General purpose encoding",
+            "Default browser encoding"
+        ]
+    },
+    {
+        "q": "What is JavaScript encoding for XSS prevention?",
+        "o": [
+            "Encoding for JavaScript context",
+            "Compressing JavaScript files",
+            "Minifying JavaScript code",
+            "Obfuscating JavaScript"
+        ]
+    },
+    {
+        "q": "What is CSS encoding used for?",
+        "o": [
+            "Preventing XSS in style contexts",
+            "Compressing CSS files",
+            "Optimizing CSS selectors",
+            "Minifying CSS rules"
+        ]
+    },
+    {
+        "q": "What is attribute encoding?",
+        "o": [
+            "Encoding for HTML attributes",
+            "Compressing attribute values",
+            "Removing empty attributes",
+            "Sorting attribute order"
+        ]
+    },
+    {
+        "q": "What is reflected file download vulnerability?",
+        "o": [
+            "Tricking users to download malware",
+            "Fast file download speeds",
+            "Mirrored file hosting",
+            "Backup download options"
+        ]
+    },
+    {
+        "q": "What is HTTP response splitting?",
+        "o": [
+            "Injecting headers to split responses",
+            "Dividing large responses",
+            "Compressing HTTP output",
+            "Caching response parts"
+        ]
+    },
+    {
+        "q": "What causes CRLF injection?",
+        "o": [
+            "Newline characters in input",
+            "Large file uploads",
+            "Slow network connections",
+            "Expired session tokens"
+        ]
+    },
+    {
+        "q": "What is header injection vulnerability?",
+        "o": [
+            "Adding malicious HTTP headers",
+            "Reading request headers",
+            "Compressing header size",
+            "Caching header values"
+        ]
+    },
+    {
+        "q": "What is open redirect vulnerability?",
+        "o": [
+            "Redirecting users to malicious sites",
+            "Fast page redirection",
+            "Multiple redirect chains",
+            "Cached redirect URLs"
+        ]
+    },
+    {
+        "q": "How can open redirect be exploited for phishing?",
+        "o": [
+            "Legitimate URL redirects to fake site",
+            "Creating multiple accounts",
+            "Sending mass emails",
+            "Posting fake reviews"
+        ]
+    },
+    {
+        "q": "What is server-side template injection?",
+        "o": [
+            "Injecting code into templates",
+            "Creating template files",
+            "Caching template output",
+            "Compressing templates"
+        ]
+    },
+    {
+        "q": "Which template engine is vulnerable to SSTI?",
+        "o": [
+            "Jinja2 with user input",
+            "Static HTML templates",
+            "CSS styling sheets",
+            "JavaScript modules"
+        ]
+    },
+    {
+        "q": "What is expression language injection?",
+        "o": [
+            "Exploiting EL in web frameworks",
+            "Adding math expressions",
+            "Creating language files",
+            "Translating text strings"
+        ]
+    },
+    {
+        "q": "What is null byte injection?",
+        "o": [
+            "Using null character to bypass filters",
+            "Sending empty requests",
+            "Creating zero-byte files",
+            "Clearing memory buffers"
+        ]
+    },
+    {
+        "q": "What is double encoding attack?",
+        "o": [
+            "Encoding payload twice to bypass filters",
+            "Compressing data efficiently",
+            "Using two character sets",
+            "Creating backup encodings"
+        ]
+    },
+    {
+        "q": "What is unicode normalization attack?",
+        "o": [
+            "Using equivalent unicode to bypass filters",
+            "Converting text to unicode",
+            "Standardizing font display",
+            "Translating character sets"
+        ]
+    },
+    {
+        "q": "What is HTTP verb tampering?",
+        "o": [
+            "Changing HTTP method to bypass controls",
+            "Optimizing request methods",
+            "Caching verb responses",
+            "Logging method usage"
+        ]
+    },
+    {
+        "q": "What is content type confusion?",
+        "o": [
+            "Sending wrong content type header",
+            "Large content downloads",
+            "Slow content loading",
+            "Cached content types"
+        ]
+    },
+    {
+        "q": "What is cache poisoning attack?",
+        "o": [
+            "Storing malicious content in cache",
+            "Clearing all cache files",
+            "Extending cache duration",
+            "Compressing cache data"
+        ]
+    },
+    {
+        "q": "How does host header injection work?",
+        "o": [
+            "Manipulating Host header value",
+            "Creating virtual hosts",
+            "DNS configuration changes",
+            "Server hostname updates"
+        ]
+    },
+    {
+        "q": "What is web cache deception attack?",
+        "o": [
+            "Tricking cache to store private data",
+            "Cleaning cache efficiently",
+            "Optimizing cache storage",
+            "Extending cache lifetime"
+        ]
+    },
+    {
+        "q": "What is race condition vulnerability?",
+        "o": [
+            "Exploiting timing between operations",
+            "Fast application response",
+            "Efficient code execution",
+            "Optimized thread handling"
+        ]
+    },
+    {
+        "q": "What is TOCTOU vulnerability?",
+        "o": [
+            "Time of check to time of use flaw",
+            "Total operation count tracking",
+            "Timeout configuration utility",
+            "Token creation tool"
+        ]
+    },
+    {
+        "q": "What is file upload bypass technique?",
+        "o": [
+            "Circumventing upload restrictions",
+            "Faster file transfers",
+            "Larger file support",
+            "Better compression"
+        ]
+    },
+    {
+        "q": "How can image files contain malicious code?",
+        "o": [
+            "Embedding code in metadata or pixels",
+            "Large image dimensions",
+            "High resolution settings",
+            "Compressed image format"
+        ]
+    },
+    {
+        "q": "What is polyglot file attack?",
+        "o": [
+            "File valid as multiple types",
+            "Multi-language document",
+            "Translated file content",
+            "International filename"
+        ]
+    },
+    {
+        "q": "What is the purpose of file type validation?",
+        "o": [
+            "Ensuring uploaded files are safe",
+            "Compressing file sizes",
+            "Organizing file storage",
+            "Speeding up uploads"
+        ]
+    },
+    {
+        "q": "What is magic byte validation?",
+        "o": [
+            "Checking file header signatures",
+            "Encrypting file content",
+            "Compressing file data",
+            "Caching file metadata"
+        ]
+    },
+    {
+        "q": "What is business logic vulnerability?",
+        "o": [
+            "Flaw in application workflow design",
+            "Slow business operations",
+            "Complex logic statements",
+            "Large code functions"
+        ]
+    },
+    {
+        "q": "How can price manipulation occur?",
+        "o": [
+            "Modifying price values in requests",
+            "Comparing competitor prices",
+            "Analyzing price history",
+            "Forecasting price trends"
+        ]
+    },
+    {
+        "q": "What is coupon code abuse?",
+        "o": [
+            "Reusing or manipulating discount codes",
+            "Creating marketing campaigns",
+            "Tracking coupon redemption",
+            "Designing coupon graphics"
+        ]
+    },
+    {
+        "q": "What is feature abuse vulnerability?",
+        "o": [
+            "Using legitimate features maliciously",
+            "Adding new application features",
+            "Removing deprecated features",
+            "Documenting feature usage"
+        ]
+    },
+    {
+        "q": "What is workflow bypass?",
+        "o": [
+            "Skipping required process steps",
+            "Optimizing workflow speed",
+            "Automating manual steps",
+            "Documenting processes"
+        ]
+    },
+    {
+        "q": "What is negative quantity attack?",
+        "o": [
+            "Using negative numbers in orders",
+            "Reducing inventory count",
+            "Decreasing storage space",
+            "Lowering credit balance"
+        ]
+    },
+    {
+        "q": "What is integer overflow vulnerability?",
+        "o": [
+            "Number exceeding maximum value",
+            "Slow calculation speed",
+            "Large memory allocation",
+            "Complex math operations"
+        ]
+    },
+    {
+        "q": "What is mass assignment vulnerability?",
+        "o": [
+            "Modifying unintended object properties",
+            "Large data transfers",
+            "Bulk record updates",
+            "Batch file processing"
+        ]
+    },
+    {
+        "q": "How to prevent mass assignment?",
+        "o": [
+            "Use allowlists for parameters",
+            "Allow all parameters",
+            "Remove validation checks",
+            "Disable form handling"
+        ]
+    },
+    {
+        "q": "What is stacked queries SQL injection?",
+        "o": [
+            "Executing multiple queries in one request",
+            "Organizing queries in database",
+            "Caching query results efficiently",
+            "Sorting query output quickly"
+        ]
+    },
+    {
+        "q": "Which database allows stacked queries by default?",
+        "o": [
+            "Microsoft SQL Server",
+            "MySQL by default",
+            "SQLite always",
+            "Oracle Database"
+        ]
+    },
+    {
+        "q": "What is Boolean-based blind SQL injection?",
+        "o": [
+            "Inferring data from true or false responses",
+            "Using boolean operators in queries",
+            "Filtering results with AND OR",
+            "Creating conditional statements"
+        ]
+    },
+    {
+        "q": "How does out-of-band SQL injection work?",
+        "o": [
+            "Exfiltrating data via DNS or HTTP requests",
+            "Processing queries in background",
+            "Batch processing SQL commands",
+            "Scheduling query execution"
+        ]
+    },
+    {
+        "q": "What is SQL injection in ORDER BY clause?",
+        "o": [
+            "Injecting into sort parameters",
+            "Organizing database tables",
+            "Sorting user records",
+            "Filtering search results"
+        ]
+    },
+    {
+        "q": "How can LIMIT clause be exploited in SQL injection?",
+        "o": [
+            "Bypassing pagination controls",
+            "Limiting user access rights",
+            "Reducing memory usage",
+            "Compressing query output"
+        ]
+    },
+    {
+        "q": "What is WAF evasion in SQL injection?",
+        "o": [
+            "Bypassing web application firewall rules",
+            "Installing firewall software",
+            "Configuring firewall settings",
+            "Monitoring firewall logs"
+        ]
+    },
+    {
+        "q": "What technique uses comments to bypass SQL filters?",
+        "o": [
+            "Inline comment injection",
+            "Code documentation style",
+            "Query explanation method",
+            "Database annotation system"
+        ]
+    },
+    {
+        "q": "What is case manipulation in SQL injection evasion?",
+        "o": [
+            "Using mixed case keywords to bypass filters",
+            "Converting data to uppercase",
+            "Standardizing table naming",
+            "Formatting output display"
+        ]
+    },
+    {
+        "q": "How does hexadecimal encoding evade SQL injection filters?",
+        "o": [
+            "Converting strings to hex representation",
+            "Encrypting query parameters",
+            "Compressing SQL statements",
+            "Formatting numeric values"
+        ]
+    },
+    {
+        "q": "What is whitespace manipulation in injection attacks?",
+        "o": [
+            "Using alternative whitespace characters",
+            "Removing extra spaces",
+            "Formatting code properly",
+            "Indenting SQL queries"
+        ]
+    },
+    {
+        "q": "What is XSS via SVG files?",
+        "o": [
+            "Embedding JavaScript in SVG images",
+            "Styling SVG with CSS",
+            "Animating SVG elements",
+            "Compressing SVG files"
+        ]
+    },
+    {
+        "q": "How can PDF files execute JavaScript?",
+        "o": [
+            "Through embedded JavaScript actions",
+            "By compressing content",
+            "Using text annotations",
+            "Creating bookmarks only"
+        ]
+    },
+    {
+        "q": "What is XSS in Flash applications?",
+        "o": [
+            "ActionScript injection vulnerabilities",
+            "Flash animation errors",
+            "Video compression issues",
+            "Audio streaming problems"
+        ]
+    },
+    {
+        "q": "What is mXSS in web applications?",
+        "o": [
+            "Mutation-based cross-site scripting",
+            "Mobile XSS attacks",
+            "Minimal XSS payloads",
+            "Multi-stage XSS attacks"
+        ]
+    },
+    {
+        "q": "How does browser XSS auditor work?",
+        "o": [
+            "Detects reflected XSS in responses",
+            "Blocks all JavaScript code",
+            "Encrypts page content",
+            "Compresses HTML output"
+        ]
+    },
+    {
+        "q": "What is XSS via data URIs?",
+        "o": [
+            "Embedding scripts in data URL scheme",
+            "Linking to external data",
+            "Downloading data files",
+            "Caching data locally"
+        ]
+    },
+    {
+        "q": "What is event handler XSS?",
+        "o": [
+            "Injecting scripts via HTML event attributes",
+            "Managing browser events",
+            "Creating event listeners",
+            "Logging user interactions"
+        ]
+    },
+    {
+        "q": "Which HTML5 feature can be exploited for XSS?",
+        "o": [
+            "Web Storage API",
+            "Semantic elements",
+            "Structural tags",
+            "Video elements"
+        ]
+    },
+    {
+        "q": "What is XSS via AngularJS template injection?",
+        "o": [
+            "Exploiting Angular expression evaluation",
+            "Creating Angular templates",
+            "Styling components",
+            "Building directives"
+        ]
+    },
+    {
+        "q": "How does React prevent XSS by default?",
+        "o": [
+            "Auto-escaping JSX expressions",
+            "Blocking all user input",
+            "Encrypting component data",
+            "Compressing React output"
+        ]
+    },
+    {
+        "q": "What is dangerouslySetInnerHTML in React?",
+        "o": [
+            "Method to insert raw HTML with XSS risk",
+            "Safe HTML rendering method",
+            "Component error handler",
+            "State management util"
+        ]
+    },
+    {
+        "q": "What is Vue.js v-html XSS risk?",
+        "o": [
+            "Directive renders raw HTML unsafely",
+            "Template compilation error",
+            "Component lifecycle issue",
+            "State binding problem"
+        ]
+    },
+    {
+        "q": "What is JSONP hijacking?",
+        "o": [
+            "Stealing data from JSONP endpoints",
+            "Creating JSON responses",
+            "Parsing JSON securely",
+            "Compressing JSON data"
+        ]
+    },
+    {
+        "q": "What is JWT algorithm confusion attack?",
+        "o": [
+            "Changing algorithm to bypass verification",
+            "Creating token signatures",
+            "Encoding token payload",
+            "Decoding JWT headers"
+        ]
+    },
+    {
+        "q": "What is JWT none algorithm vulnerability?",
+        "o": [
+            "Accepting unsigned tokens as valid",
+            "Missing algorithm field",
+            "Empty token payload",
+            "Null signature value"
+        ]
+    },
+    {
+        "q": "How can JWT secret keys be cracked?",
+        "o": [
+            "Brute forcing weak secrets",
+            "Decoding the header",
+            "Reading token payload",
+            "Copying token value"
+        ]
+    },
+    {
+        "q": "What is kid header injection in JWT?",
+        "o": [
+            "Manipulating key ID for path traversal",
+            "Identifying token owner",
+            "Creating unique identifiers",
+            "Numbering session tokens"
+        ]
+    },
+    {
+        "q": "What is session prediction vulnerability?",
+        "o": [
+            "Guessing session IDs due to weak generation",
+            "Forecasting user behavior",
+            "Estimating traffic patterns",
+            "Predicting server load"
+        ]
+    },
+    {
+        "q": "What is remember me token vulnerability?",
+        "o": [
+            "Persistent tokens without proper security",
+            "User preference storage",
+            "Browser history tracking",
+            "Cache management tool"
+        ]
+    },
+    {
+        "q": "What is session riding attack?",
+        "o": [
+            "Another name for CSRF attack",
+            "Session timeout issue",
+            "Load balancing problem",
+            "Network routing error"
+        ]
+    },
+    {
+        "q": "What is token binding?",
+        "o": [
+            "Tying tokens to specific TLS connections",
+            "Concatenating token values",
+            "Linking user accounts",
+            "Connecting sessions"
+        ]
+    },
+    {
+        "q": "What is logout vulnerability?",
+        "o": [
+            "Session not invalidated on server after logout",
+            "Logout button not visible",
+            "Slow logout process",
+            "Redirect after logout"
+        ]
+    },
+    {
+        "q": "What is concurrent session vulnerability?",
+        "o": [
+            "No limit on simultaneous sessions per user",
+            "Slow session creation",
+            "Large session storage",
+            "Complex session handling"
+        ]
+    },
+    {
+        "q": "What is absolute session timeout?",
+        "o": [
+            "Session expires after fixed duration",
+            "Session never expires",
+            "Session refreshes forever",
+            "Session blocks access"
+        ]
+    },
+    {
+        "q": "What is idle session timeout?",
+        "o": [
+            "Session expires after inactivity period",
+            "Session runs continuously",
+            "Session pauses temporarily",
+            "Session loads slowly"
+        ]
+    },
+    {
+        "q": "What is privilege token manipulation?",
+        "o": [
+            "Changing token to gain higher privileges",
+            "Creating new access tokens",
+            "Refreshing expired tokens",
+            "Logging token activity"
+        ]
+    },
+    {
+        "q": "What is insecure password reset mechanism?",
+        "o": [
+            "Reset process vulnerable to exploitation",
+            "Slow password changes",
+            "Complex reset procedures",
+            "Long reset tokens"
+        ]
+    },
+    {
+        "q": "How can password reset tokens be exploited?",
+        "o": [
+            "Predictable or reusable tokens enable hijacking",
+            "Tokens require encryption",
+            "Tokens expire too quickly",
+            "Tokens are too long"
+        ]
+    },
+    {
+        "q": "What is host header attack in password reset?",
+        "o": [
+            "Manipulating host to redirect reset links",
+            "Setting server hostname",
+            "Configuring virtual hosts",
+            "Creating DNS records"
+        ]
+    },
+    {
+        "q": "What is security question weakness?",
+        "o": [
+            "Questions have guessable or public answers",
+            "Questions are too difficult",
+            "Questions are too long",
+            "Questions load slowly"
+        ]
+    },
+    {
+        "q": "What is password policy bypass?",
+        "o": [
+            "Circumventing password requirements",
+            "Creating password rules",
+            "Documenting policies",
+            "Enforcing complexity"
+        ]
+    },
+    {
+        "q": "What is XML injection vulnerability?",
+        "o": [
+            "Inserting malicious XML content",
+            "Parsing XML documents",
+            "Validating XML schema",
+            "Formatting XML output"
+        ]
+    },
+    {
+        "q": "What is XPath injection?",
+        "o": [
+            "Injecting into XPath queries",
+            "Creating path expressions",
+            "Navigating XML trees",
+            "Formatting XML paths"
+        ]
+    },
+    {
+        "q": "How does XPath injection extract data?",
+        "o": [
+            "Manipulating queries to return sensitive nodes",
+            "Compressing XML output",
+            "Caching query results",
+            "Formatting data display"
+        ]
+    },
+    {
+        "q": "What is blind XPath injection?",
+        "o": [
+            "XPath injection without visible output",
+            "XPath without parameters",
+            "XPath with no results",
+            "XPath blocking errors"
+        ]
+    },
+    {
+        "q": "What is SOAP injection?",
+        "o": [
+            "Manipulating SOAP message structure",
+            "Creating SOAP services",
+            "Designing SOAP APIs",
+            "Testing SOAP endpoints"
+        ]
+    },
+    {
+        "q": "What is WSDL exposure vulnerability?",
+        "o": [
+            "Publicly accessible service definitions",
+            "Missing WSDL files",
+            "Corrupted service specs",
+            "Slow WSDL loading"
+        ]
+    },
+    {
+        "q": "What is SSI injection?",
+        "o": [
+            "Server-Side Includes code injection",
+            "Secure Socket Injection",
+            "Service Side Insertion",
+            "System Script Import"
+        ]
+    },
+    {
+        "q": "What is CGI vulnerability?",
+        "o": [
+            "Exploiting Common Gateway Interface scripts",
+            "Creating graphics interfaces",
+            "Designing image rendering",
+            "Building game interfaces"
+        ]
+    },
+    {
+        "q": "What is Shellshock vulnerability?",
+        "o": [
+            "Bash shell command injection flaw",
+            "Shell script formatting",
+            "Command line interface",
+            "Terminal configuration"
+        ]
+    },
+    {
+        "q": "What is ImageTragick vulnerability?",
+        "o": [
+            "ImageMagick remote code execution",
+            "Image compression error",
+            "Graphics rendering issue",
+            "Photo editing problem"
+        ]
+    },
+    {
+        "q": "What is Log4Shell vulnerability?",
+        "o": [
+            "Log4j remote code execution via JNDI lookup",
+            "Log file corruption",
+            "Logging configuration error",
+            "Log rotation issue"
+        ]
+    },
+    {
+        "q": "What is Heartbleed vulnerability?",
+        "o": [
+            "OpenSSL memory disclosure bug",
+            "Heart rate monitoring issue",
+            "Health data leak",
+            "Cardiac device flaw"
+        ]
+    },
+    {
+        "q": "What is POODLE attack?",
+        "o": [
+            "SSL 3.0 padding oracle vulnerability",
+            "Network routing attack",
+            "Password stealing method",
+            "Phishing technique"
+        ]
+    },
+    {
+        "q": "What is BEAST attack?",
+        "o": [
+            "Browser exploit against SSL/TLS",
+            "Binary encryption method",
+            "Block cipher weakness",
+            "Buffer overflow type"
+        ]
+    },
+    {
+        "q": "What is CRIME attack?",
+        "o": [
+            "Compression Ratio Info-leak Made Easy",
+            "Crypto Related Injection",
+            "Cross Reference Insertion",
+            "Certificate Revocation Issue"
+        ]
+    },
+    {
+        "q": "What is BREACH attack?",
+        "o": [
+            "Browser Reconnaissance Exfiltration via Adaptive Compression",
+            "Binary Read Error And Check Handler",
+            "Block Rotation Encryption Attack Cipher Header",
+            "Buffer Range Exception And Cache Hit"
+        ]
+    },
+    {
+        "q": "What is DROWN attack?",
+        "o": [
+            "Decrypting RSA with Obsolete Weakened eNcryption",
+            "Dynamic Routing Of Web Networks",
+            "Database Replication Over Web",
+            "Distributed Request Over WAN"
+        ]
+    },
+    {
+        "q": "What is Ticketbleed vulnerability?",
+        "o": [
+            "F5 BIG-IP session ticket memory leak",
+            "Event ticketing system flaw",
+            "Support ticket injection",
+            "Help desk vulnerability"
+        ]
+    },
+    {
+        "q": "What is ROBOT attack?",
+        "o": [
+            "Return Of Bleichenbachers Oracle Threat",
+            "Remote Operation Bot Orchestration Tool",
+            "Rapid Online Binary Object Transfer",
+            "Redundant Object Backup Over Time"
+        ]
+    },
+    {
+        "q": "What is Sweet32 attack?",
+        "o": [
+            "Birthday attack on 64-bit block ciphers",
+            "Encryption key weakness",
+            "Password cracking method",
+            "Hash collision attack"
+        ]
+    },
+    {
+        "q": "What is Lucky13 attack?",
+        "o": [
+            "Timing attack on TLS CBC mode",
+            "Random number generation flaw",
+            "Key derivation weakness",
+            "Certificate validation error"
+        ]
+    },
+    {
+        "q": "What is Logjam attack?",
+        "o": [
+            "Downgrade attack on Diffie-Hellman exchange",
+            "Log file manipulation",
+            "Logging system weakness",
+            "Journal storage attack"
+        ]
+    },
+    {
+        "q": "What is FREAK attack?",
+        "o": [
+            "Factoring RSA Export Keys vulnerability",
+            "File Read And Execute Kit",
+            "Fast Remote Encryption Attack Key",
+            "Framework Redundancy Error And Kernel"
+        ]
+    },
+    {
+        "q": "What is Bleichenbacher attack?",
+        "o": [
+            "Adaptive chosen ciphertext on PKCS padding",
+            "Block cipher key extraction",
+            "Binary search decryption",
+            "Brute force key cracking"
+        ]
+    },
+    {
+        "q": "What is padding oracle attack?",
+        "o": [
+            "Exploiting padding error messages for decryption",
+            "Adding extra data to messages",
+            "Filling buffer spaces",
+            "Extending message length"
+        ]
+    },
+    {
+        "q": "What is length extension attack?",
+        "o": [
+            "Appending data to MAC without knowing key",
+            "Extending packet size",
+            "Increasing buffer length",
+            "Growing file size"
+        ]
+    },
+    {
+        "q": "What is hash collision vulnerability?",
+        "o": [
+            "Two inputs producing same hash output",
+            "Hash function slow speed",
+            "Large hash output size",
+            "Complex hash algorithm"
+        ]
+    },
+    {
+        "q": "What is timing attack on authentication?",
+        "o": [
+            "Using response time to guess credentials",
+            "Measuring page load speed",
+            "Tracking session duration",
+            "Counting login attempts"
+        ]
+    },
+    {
+        "q": "What is constant-time comparison?",
+        "o": [
+            "Comparing strings without timing leaks",
+            "Slow string matching",
+            "Real-time data comparison",
+            "Instant value checking"
+        ]
+    },
+    {
+        "q": "What is entropy in security context?",
+        "o": [
+            "Measure of randomness in data",
+            "Heat generated by CPU",
+            "Energy consumption rate",
+            "Processing power usage"
+        ]
+    },
+    {
+        "q": "What is weak random number vulnerability?",
+        "o": [
+            "Predictable random values enable attacks",
+            "Slow number generation",
+            "Large random numbers",
+            "Complex random algorithms"
+        ]
+    },
+    {
+        "q": "What is seed value in PRNG?",
+        "o": [
+            "Initial value for pseudo-random generation",
+            "Final output number",
+            "Maximum range limit",
+            "Minimum value boundary"
+        ]
+    },
+    {
+        "q": "What is nonce reuse vulnerability?",
+        "o": [
+            "Using same nonce twice breaks encryption",
+            "Nonce value too large",
+            "Nonce generation slow",
+            "Nonce storage issue"
+        ]
+    },
+    {
+        "q": "What is IV reuse weakness?",
+        "o": [
+            "Same initialization vector enables attacks",
+            "IV generation too slow",
+            "IV storage consuming space",
+            "IV format incorrect"
+        ]
+    },
+    {
+        "q": "What is ECB mode vulnerability?",
+        "o": [
+            "Patterns visible in encrypted blocks",
+            "Slow encryption speed",
+            "Large ciphertext size",
+            "Complex key management"
+        ]
+    },
+    {
+        "q": "Why is CBC mode preferred over ECB?",
+        "o": [
+            "Chaining hides repeating patterns",
+            "Faster encryption speed",
+            "Smaller output size",
+            "Simpler implementation"
+        ]
+    },
+    {
+        "q": "What is certificate pinning bypass?",
+        "o": [
+            "Circumventing certificate validation",
+            "Installing root certificates",
+            "Creating certificate chains",
+            "Renewing expired certs"
+        ]
+    },
+    {
+        "q": "What is SSL stripping attack?",
+        "o": [
+            "Downgrading HTTPS to HTTP connection",
+            "Removing SSL certificates",
+            "Uninstalling SSL libraries",
+            "Deleting TLS configuration"
+        ]
+    },
+    {
+        "q": "What is mixed content vulnerability?",
+        "o": [
+            "HTTP resources on HTTPS pages",
+            "Multiple file types",
+            "Various content encodings",
+            "Different media formats"
+        ]
+    },
+    {
+        "q": "What is certificate chain validation?",
+        "o": [
+            "Verifying trust from root to leaf certificate",
+            "Creating certificate backups",
+            "Organizing certificate files",
+            "Sorting certificate names"
+        ]
+    },
+    {
+        "q": "What is certificate revocation check?",
+        "o": [
+            "Verifying certificate not revoked",
+            "Deleting old certificates",
+            "Archiving expired certs",
+            "Backing up certificates"
+        ]
+    },
+    {
+        "q": "What is OCSP stapling?",
+        "o": [
+            "Server provides certificate status in handshake",
+            "Attaching files to emails",
+            "Binding documents together",
+            "Joining network nodes"
+        ]
+    },
+    {
+        "q": "What is CT log requirement?",
+        "o": [
+            "Certificate Transparency logging for trust",
+            "Content Type identification",
+            "Continuous Testing logs",
+            "Configuration Tracking"
+        ]
+    },
+    {
+        "q": "What is homograph attack?",
+        "o": [
+            "Using similar-looking characters in URLs",
+            "Copying website content",
+            "Duplicating page layout",
+            "Cloning site structure"
+        ]
+    },
+    {
+        "q": "What is typosquatting domain?",
+        "o": [
+            "Registering misspelled versions of domains",
+            "Optimizing domain SEO",
+            "Managing multiple domains",
+            "Transferring domain ownership"
+        ]
+    },
+    {
+        "q": "What is subdomain takeover?",
+        "o": [
+            "Claiming abandoned DNS subdomain entries",
+            "Creating new subdomains",
+            "Managing subdomain records",
+            "Deleting old subdomains"
+        ]
+    },
+    {
+        "q": "What is DNS rebinding attack?",
+        "o": [
+            "Changing DNS resolution to bypass SOP",
+            "Creating DNS backups",
+            "Updating DNS servers",
+            "Caching DNS queries"
+        ]
+    },
+    {
+        "q": "What is zone transfer vulnerability?",
+        "o": [
+            "Unauthorized DNS zone data retrieval",
+            "Moving DNS servers",
+            "Changing zone settings",
+            "Creating new zones"
+        ]
+    },
+    {
+        "q": "What is dangling DNS record?",
+        "o": [
+            "DNS pointing to decommissioned resource",
+            "Slowly updating record",
+            "Large DNS entry",
+            "Complex DNS configuration"
+        ]
+    },
+    {
+        "q": "What is email header injection?",
+        "o": [
+            "Adding headers to forge email metadata",
+            "Reading email headers",
+            "Formatting email content",
+            "Styling email body"
+        ]
+    },
+    {
+        "q": "What is SMTP injection?",
+        "o": [
+            "Injecting commands in email functionality",
+            "Sending mass emails",
+            "Managing email queues",
+            "Configuring mail server"
+        ]
+    },
+    {
+        "q": "What is web shell?",
+        "o": [
+            "Malicious script providing remote access",
+            "Browser command interface",
+            "Website design tool",
+            "Server configuration UI"
+        ]
+    },
+    {
+        "q": "What is fileless malware technique?",
+        "o": [
+            "Malware running entirely in memory",
+            "Compressed malware files",
+            "Encrypted malware storage",
+            "Hidden malware folders"
+        ]
+    },
+    {
+        "q": "What is living off the land attack?",
+        "o": [
+            "Using legitimate system tools for attacks",
+            "Outdoor security testing",
+            "Rural network scanning",
+            "Remote location hacking"
+        ]
+    },
+    {
+        "q": "What is PowerShell-based attack?",
+        "o": [
+            "Using PowerShell for malicious operations",
+            "Managing Windows power settings",
+            "Configuring shell environments",
+            "Creating command scripts"
+        ]
+    },
+    {
+        "q": "What is WMI persistence technique?",
+        "o": [
+            "Windows Management Instrumentation for persistence",
+            "Web Management Interface setup",
+            "Wireless Monitoring Installation",
+            "Wide Memory Injection"
+        ]
+    },
+    {
+        "q": "What is scheduled task persistence?",
+        "o": [
+            "Using task scheduler for malware persistence",
+            "Planning security updates",
+            "Organizing backup schedules",
+            "Managing maintenance windows"
+        ]
+    },
+    {
+        "q": "What is registry persistence mechanism?",
+        "o": [
+            "Malware surviving reboots via registry keys",
+            "Registering new applications",
+            "Storing user preferences",
+            "Managing system settings"
+        ]
+    },
+    {
+        "q": "What is binary planting attack?",
+        "o": [
+            "Placing malicious DLLs in search path",
+            "Installing new software",
+            "Copying files to system",
+            "Moving binaries around"
+        ]
+    },
+    {
+        "q": "What is DLL search order hijacking?",
+        "o": [
+            "Exploiting Windows DLL loading priority",
+            "Organizing library files",
+            "Sorting DLL references",
+            "Managing dependencies"
+        ]
+    },
+    {
+        "q": "What is COM object hijacking?",
+        "o": [
+            "Replacing legitimate COM objects with malicious",
+            "Creating COM applications",
+            "Managing object references",
+            "Organizing component data"
+        ]
+    },
+    {
+        "q": "What is service binary path manipulation?",
+        "o": [
+            "Changing service executable paths",
+            "Installing service updates",
+            "Managing service logs",
+            "Configuring service ports"
+        ]
+    },
+    {
+        "q": "What is image file execution options attack?",
+        "o": [
+            "Registry key redirecting executable execution",
+            "Optimizing image loading",
+            "Configuring file handlers",
+            "Managing image formats"
+        ]
+    },
+    {
+        "q": "What is accessibility features abuse?",
+        "o": [
+            "Replacing sethc or utilman for backdoor access",
+            "Improving user accessibility",
+            "Enabling screen readers",
+            "Configuring keyboard shortcuts"
+        ]
+    },
+    {
+        "q": "What is AppInit_DLLs injection?",
+        "o": [
+            "Loading DLLs into all GUI applications",
+            "Initializing application settings",
+            "Starting background services",
+            "Configuring startup items"
+        ]
+    },
+    {
+        "q": "What is Netsh helper DLL persistence?",
+        "o": [
+            "Loading malicious code via network shell",
+            "Configuring network adapters",
+            "Managing firewall rules",
+            "Setting proxy servers"
+        ]
+    },
+    {
+        "q": "What is time stomping technique?",
+        "o": [
+            "Modifying file timestamps to evade detection",
+            "Synchronizing system clocks",
+            "Managing timezone settings",
+            "Scheduling time updates"
+        ]
+    },
+    {
+        "q": "What is indicator removal on host?",
+        "o": [
+            "Deleting evidence of intrusion",
+            "Removing error indicators",
+            "Clearing status lights",
+            "Disabling warning messages"
+        ]
+    },
+    {
+        "q": "What is log clearing technique?",
+        "o": [
+            "Erasing security logs to hide activity",
+            "Archiving old log files",
+            "Compressing log storage",
+            "Rotating log entries"
+        ]
+    },
+    {
+        "q": "What is process hollowing?",
+        "o": [
+            "Replacing legitimate process memory with malware",
+            "Creating empty processes",
+            "Optimizing process memory",
+            "Managing process priorities"
+        ]
+    },
+    {
+        "q": "What is process doppelganging?",
+        "o": [
+            "Creating malicious process from transaction",
+            "Duplicating running processes",
+            "Cloning process memory",
+            "Copying process state"
+        ]
+    },
+    {
+        "q": "What is thread execution hijacking?",
+        "o": [
+            "Injecting code into existing thread context",
+            "Managing thread priorities",
+            "Organizing thread pools",
+            "Scheduling thread execution"
+        ]
+    },
+    {
+        "q": "What is APC injection technique?",
+        "o": [
+            "Asynchronous Procedure Call code injection",
+            "Automatic Process Configuration",
+            "Application Protocol Control",
+            "Advanced Packet Capture"
+        ]
+    },
+    {
+        "q": "What is atom bombing attack?",
+        "o": [
+            "Injecting code via Windows atom tables",
+            "Breaking encryption keys",
+            "Fragmenting packet data",
+            "Splitting file content"
+        ]
+    },
+    {
+        "q": "What is early bird injection?",
+        "o": [
+            "Injecting before process protection applies",
+            "Morning system startup",
+            "Initial boot sequence",
+            "Early warning detection"
+        ]
+    },
+    {
+        "q": "What is NtCreateSection injection?",
+        "o": [
+            "Creating memory sections for code injection",
+            "Dividing document sections",
+            "Organizing file segments",
+            "Creating data partitions"
+        ]
+    },
+    {
+        "q": "What is module overwriting?",
+        "o": [
+            "Replacing legitimate modules with malicious",
+            "Updating software components",
+            "Installing module patches",
+            "Managing module versions"
+        ]
+    },
+    {
+        "q": "What is IAT hooking?",
+        "o": [
+            "Modifying Import Address Table entries",
+            "Importing external data",
+            "Adding table rows",
+            "Creating new imports"
+        ]
+    },
+    {
+        "q": "What is inline patching technique?",
+        "o": [
+            "Modifying function code at runtime",
+            "Applying security patches",
+            "Updating inline styles",
+            "Editing embedded content"
+        ]
+    },
+    {
+        "q": "What is VTable hijacking?",
+        "o": [
+            "Modifying virtual function table pointers",
+            "Creating database tables",
+            "Managing HTML tables",
+            "Organizing data tables"
+        ]
+    },
+    {
+        "q": "What is syscall evasion?",
+        "o": [
+            "Directly calling kernel functions to avoid hooks",
+            "Managing system calls",
+            "Logging function calls",
+            "Tracing API usage"
+        ]
+    },
+    {
+        "q": "What is ETW bypass?",
+        "o": [
+            "Evading Event Tracing for Windows logging",
+            "Enabling Trace Writes",
+            "Extending Time Windows",
+            "Encrypting Text Writes"
+        ]
+    },
+    {
+        "q": "What is AMSI bypass?",
+        "o": [
+            "Evading Antimalware Scan Interface detection",
+            "Activating Malware Scanning",
+            "Analyzing Memory Sections",
+            "Authenticating Management Scripts"
+        ]
+    },
+    {
+        "q": "What is UAC bypass technique?",
+        "o": [
+            "Circumventing User Account Control prompts",
+            "Updating Account Credentials",
+            "Unifying Access Controls",
+            "Uploading Archived Content"
+        ]
+    },
+    {
+        "q": "What is fodhelper bypass?",
+        "o": [
+            "UAC bypass using fodhelper.exe process",
+            "Finding Old Data Helper",
+            "File Organization Dashboard",
+            "Format Detection Handler"
+        ]
+    },
+    {
+        "q": "What is eventvwr bypass?",
+        "o": [
+            "UAC bypass exploiting Event Viewer",
+            "Event Viewing Rules",
+            "Enterprise Viewer Report",
+            "Extended Validation Review"
+        ]
+    },
+    {
+        "q": "What is token impersonation attack?",
+        "o": [
+            "Stealing and using another users security token",
+            "Creating access tokens",
+            "Validating token format",
+            "Refreshing expired tokens"
+        ]
+    },
+    {
+        "q": "What is token manipulation?",
+        "o": [
+            "Modifying access tokens for privilege escalation",
+            "Managing token storage",
+            "Creating new tokens",
+            "Deleting old tokens"
+        ]
+    },
+    {
+        "q": "What is Pass-the-Token attack?",
+        "o": [
+            "Reusing authentication tokens without password",
+            "Transferring data tokens",
+            "Sharing session tokens",
+            "Sending API tokens"
+        ]
+    },
+    {
+        "q": "What is SID history injection?",
+        "o": [
+            "Adding SIDs to gain unauthorized access",
+            "Tracking session history",
+            "Logging SID changes",
+            "Archiving old SIDs"
+        ]
+    },
+    {
+        "q": "What is Golden SAML attack?",
+        "o": [
+            "Forging SAML responses for persistent access",
+            "Standard SAML authentication",
+            "SAML token generation",
+            "SAML configuration setup"
+        ]
+    },
+    {
+        "q": "What is Silver Ticket attack?",
+        "o": [
+            "Forging service tickets with stolen key",
+            "Winning contest prizes",
+            "Creating event tickets",
+            "Managing support tickets"
+        ]
+    },
+    {
+        "q": "What is Golden Ticket attack?",
+        "o": [
+            "Forging Kerberos TGT with krbtgt hash",
+            "Winning special access",
+            "Creating VIP access",
+            "Managing premium accounts"
+        ]
+    },
+    {
+        "q": "What is Kerberoasting attack?",
+        "o": [
+            "Extracting service account password hashes",
+            "Managing Kerberos tickets",
+            "Creating service accounts",
+            "Configuring authentication"
+        ]
+    },
+    {
+        "q": "What is AS-REP roasting?",
+        "o": [
+            "Cracking password from AS-REP without preauth",
+            "Requesting authentication",
+            "Responding to requests",
+            "Routing AS traffic"
+        ]
+    },
+    {
+        "q": "What is DCSync attack?",
+        "o": [
+            "Impersonating DC to extract password hashes",
+            "Synchronizing domain data",
+            "Backing up DC state",
+            "Replicating AD objects"
+        ]
+    },
+    {
+        "q": "What is DCShadow attack?",
+        "o": [
+            "Registering rogue DC to push changes",
+            "Creating shadow copies",
+            "Backing up DC data",
+            "Mirroring AD state"
+        ]
+    },
+    {
+        "q": "What is LLMNR poisoning?",
+        "o": [
+            "Intercepting local name resolution traffic",
+            "Managing local links",
+            "Resolving local names",
+            "Routing local traffic"
+        ]
+    },
+    {
+        "q": "What is NBT-NS poisoning?",
+        "o": [
+            "NetBIOS name service spoofing attack",
+            "Network backup service",
+            "Name binding table",
+            "Node broadcast transfer"
+        ]
+    },
+    {
+        "q": "What is WPAD attack?",
+        "o": [
+            "Web Proxy Auto-Discovery protocol abuse",
+            "Web Page Auto Detection",
+            "Windows Policy Auto Deploy",
+            "Wireless Protected Access Data"
+        ]
+    },
+    {
+        "q": "What is Responder tool used for?",
+        "o": [
+            "Capturing NTLM hashes via protocol poisoning",
+            "Responding to web requests",
+            "Managing HTTP responses",
+            "Creating auto-replies"
+        ]
+    },
+    {
+        "q": "What is NTLM relay attack?",
+        "o": [
+            "Forwarding NTLM authentication to another target",
+            "Relaying network traffic",
+            "Forwarding DNS queries",
+            "Routing HTTP requests"
+        ]
+    },
+    {
+        "q": "What is Pass-the-Hash attack?",
+        "o": [
+            "Authenticating with hash without cracking password",
+            "Transferring password hashes",
+            "Sharing hash values",
+            "Sending encrypted data"
+        ]
+    },
+    {
+        "q": "What is SMB signing and why important?",
+        "o": [
+            "Authenticating SMB packets to prevent relay",
+            "Signing documents digitally",
+            "Creating file signatures",
+            "Managing certificate storage"
+        ]
+    },
+    {
+        "q": "What is Zerologon vulnerability?",
+        "o": [
+            "Netlogon crypto flaw allowing DC takeover",
+            "Zero-day logging issue",
+            "Login counter reset",
+            "Authentication timeout"
+        ]
+    },
+    {
+        "q": "What is PrintNightmare vulnerability?",
+        "o": [
+            "Windows Print Spooler remote code execution",
+            "Printing error at night",
+            "Scheduled print failure",
+            "Print queue overflow"
+        ]
+    },
+    {
+        "q": "What is ProxyLogon vulnerability?",
+        "o": [
+            "Exchange Server authentication bypass flaw",
+            "Proxy authentication login",
+            "Log-on proxy setting",
+            "Proxy connection logging"
+        ]
+    },
+    {
+        "q": "What is EternalBlue exploit?",
+        "o": [
+            "SMBv1 remote code execution vulnerability",
+            "Everlasting encryption method",
+            "Perpetual blue screen error",
+            "Continuous network scan"
+        ]
+    },
+    {
+        "q": "What is BlueKeep vulnerability?",
+        "o": [
+            "RDP remote code execution pre-authentication",
+            "Blue screen debugging",
+            "Key management service",
+            "Keyboard layout change"
+        ]
+    },
+    {
+        "q": "What is SIGRed vulnerability?",
+        "o": [
+            "Windows DNS Server remote code execution",
+            "Signature verification bypass",
+            "Signal redirection attack",
+            "Signed document error"
+        ]
+    },
+    {
+        "q": "What is Follina vulnerability?",
+        "o": [
+            "MSDT remote code execution via Office docs",
+            "Following links automatically",
+            "Link tracking service",
+            "Document following feature"
+        ]
+    },
+    {
+        "q": "What is Spring4Shell vulnerability?",
+        "o": [
+            "Spring Framework remote code execution",
+            "Seasonal time change bug",
+            "Spring cleaning service",
+            "Shell environment issue"
+        ]
+    },
+    {
+        "q": "What is deserialization gadget?",
+        "o": [
+            "Class used in deserialization exploit chain",
+            "Hardware debugging tool",
+            "Device configuration utility",
+            "Software installation widget"
+        ]
+    },
+    {
+        "q": "What is ysoserial tool?",
+        "o": [
+            "Java deserialization payload generator",
+            "Serial port manager",
+            "Serialization optimizer",
+            "Data serializer tool"
+        ]
+    },
+    {
+        "q": "What is marshalsec tool?",
+        "o": [
+            "Java unmarshalling vulnerability exploit tool",
+            "Security marshal service",
+            "Marshal data encoder",
+            "Secure marshalling utility"
+        ]
+    },
+    {
+        "q": "What is expression language injection in Spring?",
+        "o": [
+            "Injecting SpEL into Spring applications",
+            "Configuring expression syntax",
+            "Creating language templates",
+            "Managing expression parsing"
+        ]
+    },
+    {
+        "q": "What is template injection in Thymeleaf?",
+        "o": [
+            "Executing code through template expressions",
+            "Creating HTML templates",
+            "Designing page layouts",
+            "Managing view templates"
+        ]
+    },
+    {
+        "q": "What is Velocity template injection?",
+        "o": [
+            "Exploiting Apache Velocity template engine",
+            "Speeding up templates",
+            "Optimizing page loading",
+            "Fast template rendering"
+        ]
+    },
+    {
+        "q": "What is Freemarker template injection?",
+        "o": [
+            "Exploiting Freemarker template expressions",
+            "Creating free templates",
+            "Managing template markers",
+            "Organizing template tags"
+        ]
+    },
+    {
+        "q": "What is Pebble template injection?",
+        "o": [
+            "Exploiting Pebble template engine",
+            "Designing pebble graphics",
+            "Creating stone textures",
+            "Managing gravel patterns"
+        ]
+    },
+    {
+        "q": "What is prototype pollution in JavaScript?",
+        "o": [
+            "Modifying Object.prototype to affect all objects",
+            "Cleaning up prototypes",
+            "Removing old objects",
+            "Filtering object data"
+        ]
+    },
+    {
+        "q": "How can prototype pollution lead to RCE?",
+        "o": [
+            "Gadgets using polluted properties for execution",
+            "Faster code execution",
+            "Improved object creation",
+            "Better memory management"
+        ]
+    },
+    {
+        "q": "What is constructor injection in prototype pollution?",
+        "o": [
+            "Polluting via constructor property chain",
+            "Building class constructors",
+            "Creating object factories",
+            "Managing constructor calls"
+        ]
+    },
+    {
+        "q": "What is __proto__ pollution?",
+        "o": [
+            "Modifying prototype via __proto__ property",
+            "Creating new prototypes",
+            "Managing object inheritance",
+            "Organizing class hierarchy"
+        ]
+    },
+    {
+        "q": "What is AST injection?",
+        "o": [
+            "Manipulating Abstract Syntax Tree for code execution",
+            "Creating syntax trees",
+            "Parsing code structures",
+            "Managing tree nodes"
+        ]
+    },
+    {
+        "q": "What is Webpack misconfiguration vulnerability?",
+        "o": [
+            "Exposing source maps or development code",
+            "Slow build process",
+            "Large bundle size",
+            "Complex configuration"
+        ]
+    },
+    {
+        "q": "What is source map disclosure?",
+        "o": [
+            "Accessing original source code via maps",
+            "Creating map graphics",
+            "Managing location data",
+            "Organizing map tiles"
+        ]
+    },
+    {
+        "q": "What is GraphQL introspection abuse?",
+        "o": [
+            "Querying schema to discover all operations",
+            "Inspecting graph nodes",
+            "Analyzing query patterns",
+            "Tracing execution paths"
+        ]
+    },
+    {
+        "q": "What is GraphQL batching attack?",
+        "o": [
+            "Sending multiple operations to bypass rate limits",
+            "Grouping query results",
+            "Organizing data batches",
+            "Managing query queues"
+        ]
+    },
+    {
+        "q": "What is GraphQL depth attack?",
+        "o": [
+            "Nested queries causing resource exhaustion",
+            "Deep query analysis",
+            "Complex query parsing",
+            "Advanced query optimization"
+        ]
+    },
+    {
+        "q": "What is GraphQL field suggestion disclosure?",
+        "o": [
+            "Error messages revealing valid field names",
+            "Suggesting query improvements",
+            "Recommending field types",
+            "Proposing schema changes"
+        ]
+    },
+    {
+        "q": "What is WebSocket message tampering?",
+        "o": [
+            "Modifying WebSocket frames in transit",
+            "Creating socket connections",
+            "Managing message queues",
+            "Organizing data streams"
+        ]
+    },
+    {
+        "q": "What is WebSocket cross-site hijacking?",
+        "o": [
+            "Connecting to WebSocket from malicious origin",
+            "Moving socket connections",
+            "Transferring WebSocket data",
+            "Migrating socket states"
+        ]
+    },
+    {
+        "q": "What is WebSocket denial of service?",
+        "o": [
+            "Overwhelming server with connection requests",
+            "Disconnecting all sockets",
+            "Closing idle connections",
+            "Terminating long sessions"
+        ]
+    },
+    {
+        "q": "What is postMessage vulnerability?",
+        "o": [
+            "Insecure cross-origin message handling",
+            "Sending mail messages",
+            "Managing post queues",
+            "Organizing message logs"
+        ]
+    },
+    {
+        "q": "What is DOM clobbering?",
+        "o": [
+            "Overwriting DOM properties with HTML elements",
+            "Cleaning DOM elements",
+            "Removing old nodes",
+            "Clearing cached DOM"
+        ]
+    },
+    {
+        "q": "What is dangling markup injection?",
+        "o": [
+            "Injecting unclosed tags to steal page content",
+            "Creating hanging elements",
+            "Managing orphan nodes",
+            "Organizing partial tags"
+        ]
+    },
+    {
+        "q": "What is service worker hijacking?",
+        "o": [
+            "Registering malicious service worker script",
+            "Managing background workers",
+            "Organizing worker threads",
+            "Scheduling worker tasks"
+        ]
+    },
+    {
+        "q": "What is web worker code injection?",
+        "o": [
+            "Executing malicious code in worker context",
+            "Creating worker instances",
+            "Managing worker pools",
+            "Organizing worker tasks"
+        ]
+    },
+    {
+        "q": "What is IndexedDB data theft?",
+        "o": [
+            "Stealing locally stored database information",
+            "Indexing database entries",
+            "Organizing database tables",
+            "Managing database keys"
+        ]
+    },
+    {
+        "q": "What is localStorage XSS?",
+        "o": [
+            "Storing and retrieving XSS payloads in storage",
+            "Managing local files",
+            "Organizing storage space",
+            "Clearing cache data"
+        ]
+    },
+    {
+        "q": "What is cache API abuse?",
+        "o": [
+            "Manipulating cached responses for attacks",
+            "Improving cache speed",
+            "Managing cache size",
+            "Organizing cached files"
+        ]
+    },
+    {
+        "q": "What is web notification attack?",
+        "o": [
+            "Abusing notification permissions for phishing",
+            "Sending push notifications",
+            "Managing alert messages",
+            "Organizing notification queues"
+        ]
+    },
+    {
+        "q": "What is payment API vulnerability?",
+        "o": [
+            "Manipulating payment request handling",
+            "Processing secure payments",
+            "Managing payment gateways",
+            "Organizing transaction logs"
+        ]
+    },
+    {
+        "q": "What is WebRTC IP leak?",
+        "o": [
+            "Revealing real IP via STUN requests",
+            "Connecting video calls",
+            "Managing RTC sessions",
+            "Organizing peer connections"
+        ]
+    },
+    {
+        "q": "What is geolocation data theft?",
+        "o": [
+            "Stealing user location via Geolocation API",
+            "Tracking delivery routes",
+            "Managing location services",
+            "Organizing map data"
+        ]
+    },
+    {
+        "q": "What is clipboard hijacking?",
+        "o": [
+            "Replacing clipboard content with malicious data",
+            "Managing copy paste data",
+            "Organizing clipboard history",
+            "Clearing clipboard buffer"
+        ]
+    },
+    {
+        "q": "What is keystroke logging via JavaScript?",
+        "o": [
+            "Capturing keyboard input with event listeners",
+            "Managing keyboard shortcuts",
+            "Organizing key bindings",
+            "Configuring hotkeys"
+        ]
+    },
+    {
+        "q": "What is screen capture API abuse?",
+        "o": [
+            "Unauthorized screen recording via API",
+            "Taking screenshots properly",
+            "Managing screen shares",
+            "Organizing capture files"
+        ]
+    },
+    {
+        "q": "What is microphone or camera hijacking?",
+        "o": [
+            "Unauthorized media device access",
+            "Configuring audio settings",
+            "Managing video quality",
+            "Organizing media files"
+        ]
+    },
+    {
+        "q": "What is WebAssembly-based attack?",
+        "o": [
+            "Executing malicious compiled code in browser",
+            "Assembling web components",
+            "Building web applications",
+            "Organizing code modules"
+        ]
+    },
+    {
+        "q": "What is WASM memory exploitation?",
+        "o": [
+            "Exploiting WebAssembly linear memory",
+            "Managing WASM modules",
+            "Organizing WASM code",
+            "Compiling WASM binaries"
+        ]
+    },
+    {
+        "q": "What is crypto mining script injection?",
+        "o": [
+            "Injecting cryptocurrency mining code in pages",
+            "Encrypting page content",
+            "Managing crypto wallets",
+            "Organizing blockchain data"
+        ]
+    },
+    {
+        "q": "What is Spectre browser vulnerability?",
+        "o": [
+            "Speculative execution attack leaking cross-origin data",
+            "Ghost image detection",
+            "Hidden element scanning",
+            "Invisible frame analysis"
+        ]
+    },
+    {
+        "q": "What is Site Isolation in browsers?",
+        "o": [
+            "Rendering each site in separate process for security",
+            "Blocking site navigation",
+            "Isolating user sessions",
+            "Separating browser tabs"
+        ]
+    },
+    {
+        "q": "What is Cross-Origin Read Blocking?",
+        "o": [
+            "Preventing sensitive data from entering renderer",
+            "Blocking external scripts",
+            "Stopping cross-origin requests",
+            "Filtering response headers"
+        ]
+    },
+    {
+        "q": "What is Origin-Agent-Cluster header?",
+        "o": [
+            "Requesting dedicated process for origin",
+            "Identifying user agents",
+            "Managing browser clusters",
+            "Organizing origin data"
+        ]
+    },
+    {
+        "q": "What is Cross-Origin-Embedder-Policy?",
+        "o": [
+            "Controlling cross-origin resource embedding rules",
+            "Embedding external content",
+            "Managing iframe sources",
+            "Organizing embed codes"
+        ]
+    },
+    {
+        "q": "What is Cross-Origin-Opener-Policy?",
+        "o": [
+            "Controlling browsing context group isolation",
+            "Opening new windows",
+            "Managing popup blockers",
+            "Organizing tab groups"
+        ]
+    },
+    {
+        "q": "What is mutation XSS via sanitizers?",
+        "o": [
+            "XSS bypassing sanitization through DOM mutations",
+            "Changing XSS detection",
+            "Updating sanitizer rules",
+            "Modifying filter lists"
+        ]
+    },
+    {
+        "q": "What is DOMPurify bypass technique?",
+        "o": [
+            "Exploiting edge cases in DOMPurify sanitization",
+            "Configuring DOMPurify settings",
+            "Installing DOMPurify library",
+            "Updating DOMPurify version"
+        ]
+    },
+    {
+        "q": "What is AngularJS sandbox escape?",
+        "o": [
+            "Breaking out of expression sandbox for RCE",
+            "Managing Angular scope",
+            "Creating sandboxed apps",
+            "Isolating Angular modules"
+        ]
+    },
+    {
+        "q": "What is Vue.js CSP bypass?",
+        "o": [
+            "Using Vue eval alternatives to bypass CSP",
+            "Configuring Vue security",
+            "Managing Vue policies",
+            "Setting Vue permissions"
+        ]
+    },
+    {
+        "q": "What is callback hell exploitation?",
+        "o": [
+            "Exploiting nested callbacks for timing attacks",
+            "Managing async functions",
+            "Organizing callback order",
+            "Chaining promise calls"
+        ]
+    },
+    {
+        "q": "What is race condition in web applications?",
+        "o": [
+            "Exploiting timing between check and use",
+            "Running fast applications",
+            "Competing web requests",
+            "Racing page loads"
+        ]
+    },
+    {
+        "q": "What is TOCTOU vulnerability?",
+        "o": [
+            "Time-of-check to time-of-use race condition",
+            "Tracking Object Changes",
+            "Testing Object Control",
+            "Timing Operations Carefully"
+        ]
+    },
+    {
+        "q": "What is limit overrun via race condition?",
+        "o": [
+            "Bypassing limits through concurrent requests",
+            "Exceeding rate limits",
+            "Overloading servers",
+            "Reaching quota caps"
+        ]
+    },
+    {
+        "q": "What is double-spend in web applications?",
+        "o": [
+            "Using same resource twice via race condition",
+            "Doubling transaction fees",
+            "Spending twice the amount",
+            "Paying duplicate invoices"
+        ]
+    },
+    {
+        "q": "What is null byte injection in file upload?",
+        "o": [
+            "Truncating filename with null byte",
+            "Empty file upload",
+            "Null content upload",
+            "Zero byte transfer"
+        ]
+    },
+    {
+        "q": "What is polyglot file?",
+        "o": [
+            "File valid as multiple formats simultaneously",
+            "Multi-language document",
+            "Translated content file",
+            "International format file"
+        ]
+    },
+    {
+        "q": "What is GIFAR attack?",
+        "o": [
+            "File that is both valid GIF and JAR",
+            "Graphics and Archive format",
+            "Image compression attack",
+            "Animated image exploit"
+        ]
+    },
+    {
+        "q": "What is content sniffing exploitation?",
+        "o": [
+            "Tricking browser into misinterpreting file type",
+            "Detecting content types",
+            "Scanning file headers",
+            "Analyzing file formats"
+        ]
+    },
+    {
+        "q": "What is ImageMagick delegate exploitation?",
+        "o": [
+            "Abusing external program delegates for RCE",
+            "Assigning image processing tasks",
+            "Delegating rendering jobs",
+            "Sharing processing load"
+        ]
+    },
+    {
+        "q": "What is Ghostscript exploitation?",
+        "o": [
+            "Exploiting PostScript interpreter vulnerabilities",
+            "Creating transparent scripts",
+            "Making invisible code",
+            "Hidden script injection"
+        ]
+    },
+    {
+        "q": "What is FFmpeg exploitation?",
+        "o": [
+            "Exploiting video processing vulnerabilities",
+            "Fast media processing",
+            "Efficient video editing",
+            "Quick format conversion"
+        ]
+    },
+    {
+        "q": "What is XXE via SVG?",
+        "o": [
+            "XML entity injection through SVG images",
+            "SVG styling options",
+            "Vector graphic elements",
+            "Scalable image features"
+        ]
+    },
+    {
+        "q": "What is XXE via DOCX?",
+        "o": [
+            "XML entity injection through Office documents",
+            "Document formatting options",
+            "Word processing features",
+            "Office file elements"
+        ]
+    },
+    {
+        "q": "What is XXE via XLSX?",
+        "o": [
+            "XML entity injection through Excel files",
+            "Spreadsheet formulas",
+            "Cell formatting options",
+            "Data validation rules"
+        ]
+    },
+    {
+        "q": "What is Blind XXE via error messages?",
+        "o": [
+            "Exfiltrating data through parsed error responses",
+            "Hiding error displays",
+            "Suppressing error logs",
+            "Filtering error output"
+        ]
+    },
+    {
+        "q": "What is XXE via parameter entities?",
+        "o": [
+            "Using DTD parameter entities for exploitation",
+            "Configuring entity types",
+            "Setting parameter values",
+            "Managing entity lists"
+        ]
+    },
+    {
+        "q": "What is XXE OOB exfiltration?",
+        "o": [
+            "Out-of-band data extraction via external DTD",
+            "Offline file backup",
+            "Outbound data transfer",
+            "External data sync"
+        ]
+    },
+    {
+        "q": "What is billion laughs attack?",
+        "o": [
+            "XML entity expansion causing denial of service",
+            "Humor injection attack",
+            "Comedy script exploit",
+            "Laughter virus spread"
+        ]
+    },
+    {
+        "q": "What is quadratic blowup attack?",
+        "o": [
+            "Entity reference expansion causing memory exhaustion",
+            "Math formula exploit",
+            "Calculation overflow",
+            "Numeric precision attack"
+        ]
+    },
+    {
+        "q": "What is Kubernetes secret extraction via SSRF?",
+        "o": [
+            "Accessing metadata service for secrets",
+            "Storing Kubernetes data",
+            "Managing container secrets",
+            "Organizing cluster configs"
+        ]
+    },
+    {
+        "q": "What is AWS metadata service v1 exploitation?",
+        "o": [
+            "Accessing IAM credentials via SSRF at 169.254.169.254",
+            "Updating AWS metadata",
+            "Managing instance data",
+            "Configuring EC2 settings"
+        ]
+    },
+    {
+        "q": "What is IMDSv2 bypass technique?",
+        "o": [
+            "Exploiting weak IMDSv2 implementations",
+            "Updating metadata service",
+            "Configuring IMDS settings",
+            "Managing instance identity"
+        ]
+    },
+    {
+        "q": "What is GCP metadata exploitation?",
+        "o": [
+            "Accessing Google Cloud credentials via metadata",
+            "Configuring GCP settings",
+            "Managing cloud resources",
+            "Organizing project data"
+        ]
+    },
+    {
+        "q": "What is Azure IMDS exploitation?",
+        "o": [
+            "Accessing managed identity tokens via metadata",
+            "Configuring Azure VMs",
+            "Managing Azure resources",
+            "Organizing subscription data"
+        ]
+    },
+    {
+        "q": "What is container escape vulnerability?",
+        "o": [
+            "Breaking out of container isolation to host",
+            "Moving containers between hosts",
+            "Migrating container workloads",
+            "Transferring container images"
+        ]
+    },
+    {
+        "q": "What is Docker socket exposure?",
+        "o": [
+            "Mounting Docker socket allowing container control",
+            "Network socket creation",
+            "Socket file management",
+            "Connection socket setup"
+        ]
+    },
+    {
+        "q": "What is privileged container exploitation?",
+        "o": [
+            "Abusing elevated container privileges for escape",
+            "High-priority container",
+            "Premium container tier",
+            "Advanced container features"
+        ]
+    },
+    {
+        "q": "What is cap_sys_admin abuse?",
+        "o": [
+            "Exploiting excessive Linux capabilities",
+            "System administration setup",
+            "Admin capability assignment",
+            "Privilege configuration"
+        ]
+    },
+    {
+        "q": "What is proc filesystem escape?",
+        "o": [
+            "Using procfs for container breakout",
+            "Processing file systems",
+            "Managing process files",
+            "Organizing proc data"
+        ]
+    },
+    {
+        "q": "What is cgroup escape technique?",
+        "o": [
+            "Breaking container isolation via cgroup notify",
+            "Grouping containers",
+            "Organizing container clusters",
+            "Managing container sets"
+        ]
+    },
+    {
+        "q": "What is serverless function injection?",
+        "o": [
+            "Injecting malicious code in Lambda or similar",
+            "Creating server functions",
+            "Managing function code",
+            "Organizing serverless apps"
+        ]
+    },
+    {
+        "q": "What is event injection in serverless?",
+        "o": [
+            "Manipulating event trigger data for exploitation",
+            "Creating event handlers",
+            "Managing event queues",
+            "Organizing event logs"
+        ]
+    },
+    {
+        "q": "What is cold start timing attack?",
+        "o": [
+            "Exploiting serverless initialization timing",
+            "Slow function startup",
+            "Initial load delay",
+            "First request latency"
+        ]
+    },
+    {
+        "q": "What is function resource exhaustion?",
+        "o": [
+            "Consuming all function resources maliciously",
+            "Optimizing function resources",
+            "Managing resource allocation",
+            "Balancing function load"
+        ]
+    },
+    {
+        "q": "What is OAuth code interception?",
+        "o": [
+            "Stealing authorization code during redirect",
+            "Generating OAuth codes",
+            "Validating auth tokens",
+            "Managing OAuth flows"
+        ]
+    },
+    {
+        "q": "What is OAuth token hijacking?",
+        "o": [
+            "Stealing access tokens from vulnerable flows",
+            "Creating OAuth tokens",
+            "Refreshing token values",
+            "Managing token storage"
+        ]
+    },
+    {
+        "q": "What is OAuth redirect_uri manipulation?",
+        "o": [
+            "Exploiting weak redirect URI validation",
+            "Configuring redirect URLs",
+            "Setting callback paths",
+            "Managing return URLs"
+        ]
+    },
+    {
+        "q": "What is OAuth scope escalation?",
+        "o": [
+            "Gaining unauthorized permissions via scope manipulation",
+            "Defining OAuth scopes",
+            "Managing permission levels",
+            "Organizing access rights"
+        ]
+    },
+    {
+        "q": "What is OIDC claim injection?",
+        "o": [
+            "Injecting malicious claims in ID tokens",
+            "Verifying identity claims",
+            "Managing user claims",
+            "Organizing claim data"
+        ]
+    },
+    {
+        "q": "What is SAML response modification?",
+        "o": [
+            "Tampering with assertion for privilege escalation",
+            "Creating SAML requests",
+            "Managing SAML sessions",
+            "Organizing SAML data"
+        ]
+    },
+    {
+        "q": "What is SAML signature wrapping?",
+        "o": [
+            "Moving signed element to bypass verification",
+            "Creating signature wrappers",
+            "Managing signature blocks",
+            "Organizing signed data"
+        ]
+    },
+    {
+        "q": "What is SAML comment injection?",
+        "o": [
+            "Using XML comments to bypass identity checks",
+            "Adding SAML documentation",
+            "Creating assertion notes",
+            "Managing config comments"
+        ]
+    },
+    {
+        "q": "What is API mass assignment?",
+        "o": [
+            "Modifying unintended API resource properties",
+            "Bulk API updates",
+            "Batch assignment operations",
+            "Multiple field updates"
+        ]
+    },
+    {
+        "q": "What is BOLA vulnerability?",
+        "o": [
+            "Broken Object Level Authorization in APIs",
+            "Broken Online Link Access",
+            "Bad Object Loading Attack",
+            "Basic Object Level Action"
+        ]
+    },
+    {
+        "q": "What is BFLA vulnerability?",
+        "o": [
+            "Broken Function Level Authorization check",
+            "Broken File Level Access",
+            "Bad Function Loading Attack",
+            "Basic Function Level Action"
+        ]
+    },
+    {
+        "q": "What is API rate limit bypass?",
+        "o": [
+            "Circumventing request throttling mechanisms",
+            "Increasing rate limits",
+            "Managing API quotas",
+            "Setting request limits"
+        ]
+    },
+    {
+        "q": "How to bypass API rate limits via headers?",
+        "o": [
+            "Rotating X-Forwarded-For or similar headers",
+            "Adding custom headers",
+            "Removing rate headers",
+            "Modifying content type"
+        ]
+    },
+    {
+        "q": "What is API versioning exploitation?",
+        "o": [
+            "Accessing deprecated vulnerable API versions",
+            "Updating API versions",
+            "Managing version numbers",
+            "Organizing API releases"
+        ]
+    },
+    {
+        "q": "What is excessive data exposure in APIs?",
+        "o": [
+            "API returning more data than needed client-side",
+            "Large API response size",
+            "Detailed API outputs",
+            "Verbose error messages"
+        ]
+    },
+    {
+        "q": "What is lack of resource limiting?",
+        "o": [
+            "No limits on API operation complexity or size",
+            "Unlimited storage space",
+            "Unrestricted file sizes",
+            "Open bandwidth usage"
+        ]
+    },
+    {
+        "q": "What is unsafe consumption of APIs?",
+        "o": [
+            "Trusting third-party API data without validation",
+            "Slow API consumption",
+            "Heavy API usage",
+            "Frequent API calls"
+        ]
+    },
+    {
+        "q": "What is business logic flaw?",
+        "o": [
+            "Vulnerability in application workflow design",
+            "Software development error",
+            "Code syntax mistake",
+            "Programming logic error"
+        ]
+    },
+    {
+        "q": "What is price manipulation attack?",
+        "o": [
+            "Modifying product prices in checkout flow",
+            "Dynamic pricing changes",
+            "Price comparison tools",
+            "Discount calculation"
+        ]
+    },
+    {
+        "q": "What is coupon code reuse exploitation?",
+        "o": [
+            "Using one-time codes multiple times",
+            "Generating coupon codes",
+            "Managing discount codes",
+            "Organizing promo codes"
+        ]
+    },
+    {
+        "q": "What is gift card balance manipulation?",
+        "o": [
+            "Exploiting gift card system logic flaws",
+            "Checking card balance",
+            "Managing gift cards",
+            "Organizing card inventory"
+        ]
+    },
+    {
+        "q": "What is loyalty points exploitation?",
+        "o": [
+            "Manipulating reward point calculations",
+            "Earning loyalty rewards",
+            "Redeeming point balances",
+            "Managing member points"
+        ]
+    },
+    {
+        "q": "What is referral abuse attack?",
+        "o": [
+            "Self-referral or fake referral exploitation",
+            "Sharing referral links",
+            "Tracking referral sources",
+            "Managing referral programs"
+        ]
+    },
+    {
+        "q": "What is subscription bypass?",
+        "o": [
+            "Accessing premium features without payment",
+            "Managing subscriptions",
+            "Updating payment methods",
+            "Renewing memberships"
+        ]
+    },
+    {
+        "q": "What is trial abuse attack?",
+        "o": [
+            "Repeated free trial exploitation",
+            "Starting trial periods",
+            "Managing trial accounts",
+            "Extending trial duration"
+        ]
+    },
+    {
+        "q": "What is inventory manipulation?",
+        "o": [
+            "Exploiting stock tracking system flaws",
+            "Managing product inventory",
+            "Updating stock levels",
+            "Organizing warehouse data"
+        ]
+    },
+    {
+        "q": "What is order status manipulation?",
+        "o": [
+            "Changing order state for fraudulent purposes",
+            "Tracking order progress",
+            "Updating shipment status",
+            "Managing delivery info"
+        ]
+    },
+    {
+        "q": "What is two-factor bypass technique?",
+        "o": [
+            "Circumventing MFA verification steps",
+            "Enabling two-factor auth",
+            "Configuring MFA settings",
+            "Managing auth factors"
+        ]
+    },
+    {
+        "q": "What is recovery flow exploitation?",
+        "o": [
+            "Abusing account recovery for unauthorized access",
+            "Setting recovery options",
+            "Managing backup codes",
+            "Configuring recovery email"
+        ]
+    },
+    {
+        "q": "What is registration bombing?",
+        "o": [
+            "Creating mass accounts to abuse resources",
+            "Email signup automation",
+            "Bulk user creation",
+            "Mass account registration"
+        ]
+    },
+    {
+        "q": "What is email verification bypass?",
+        "o": [
+            "Accessing features without verifying email",
+            "Sending verification emails",
+            "Resending confirmation links",
+            "Managing email settings"
+        ]
+    },
+    {
+        "q": "What is phone verification bypass?",
+        "o": [
+            "Circumventing SMS verification requirements",
+            "Sending SMS codes",
+            "Verifying phone numbers",
+            "Managing SMS settings"
+        ]
+    },
+    {
+        "q": "What is CAPTCHA bypass technique?",
+        "o": [
+            "Automated solving or circumvention of CAPTCHA",
+            "Displaying verification challenges",
+            "Creating CAPTCHA images",
+            "Managing verification UI"
+        ]
+    },
+    {
+        "q": "What is reCAPTCHA score manipulation?",
+        "o": [
+            "Artificially increasing bot detection score",
+            "Setting CAPTCHA difficulty",
+            "Configuring threshold values",
+            "Managing score limits"
+        ]
+    },
+    {
+        "q": "What is account takeover via SSO?",
+        "o": [
+            "Exploiting SSO misconfigurations for access",
+            "Setting up SSO login",
+            "Configuring SSO providers",
+            "Managing SSO sessions"
+        ]
+    },
+    {
+        "q": "What is social login impersonation?",
+        "o": [
+            "Exploiting social auth for account access",
+            "Setting up social login",
+            "Linking social accounts",
+            "Managing social auth"
+        ]
+    },
+    {
+        "q": "What is ID token confusion attack?",
+        "o": [
+            "Misusing ID token as access token",
+            "Creating token identifiers",
+            "Managing token types",
+            "Organizing token data"
+        ]
+    },
+    {
+        "q": "What is audience confusion in tokens?",
+        "o": [
+            "Using token at unintended service",
+            "Setting token audience",
+            "Configuring allowed audiences",
+            "Managing recipient lists"
+        ]
+    },
+    {
+        "q": "What is cross-tenant token abuse?",
+        "o": [
+            "Using token from one tenant at another",
+            "Managing tenant configurations",
+            "Setting tenant boundaries",
+            "Organizing tenant data"
+        ]
+    },
+    {
+        "q": "What is insecure object reference in file download?",
+        "o": [
+            "Accessing others files via predictable paths",
+            "Configuring download paths",
+            "Managing file references",
+            "Organizing download links"
+        ]
+    },
+    {
+        "q": "What is path normalization bypass?",
+        "o": [
+            "Using encoding to evade path filters",
+            "Normalizing file paths",
+            "Standardizing path formats",
+            "Cleaning path strings"
+        ]
+    },
+    {
+        "q": "What is Unicode normalization attack?",
+        "o": [
+            "Exploiting Unicode handling for bypasses",
+            "Converting character encoding",
+            "Standardizing text format",
+            "Normalizing string data"
+        ]
+    },
+    {
+        "q": "What is IDN homograph attack?",
+        "o": [
+            "Using lookalike Unicode chars in domains",
+            "Creating domain names",
+            "Managing IDN domains",
+            "Registering Unicode URLs"
+        ]
+    },
+    {
+        "q": "What is right-to-left override attack?",
+        "o": [
+            "Using RTLO character to hide file extension",
+            "Changing text direction",
+            "Formatting RTL languages",
+            "Managing bidirectional text"
+        ]
+    },
+    {
+        "q": "What is HTTP parameter pollution?",
+        "o": [
+            "Injecting duplicate parameters for security bypass",
+            "Configuring URL parameters",
+            "Managing query strings",
+            "Organizing request params"
+        ]
+    },
+    {
+        "q": "What is HTTP verb tampering?",
+        "o": [
+            "Changing request method to bypass controls",
+            "Configuring allowed methods",
+            "Managing HTTP verbs",
+            "Setting method handlers"
+        ]
+    },
+    {
+        "q": "What is HTTP method override attack?",
+        "o": [
+            "Using X-HTTP-Method-Override for access",
+            "Overriding default methods",
+            "Configuring method handlers",
+            "Managing override settings"
+        ]
+    },
+    {
+        "q": "What is Host header injection in routing?",
+        "o": [
+            "Manipulating Host header for request routing",
+            "Setting hostname values",
+            "Configuring virtual hosts",
+            "Managing host settings"
+        ]
+    },
+    {
+        "q": "What is connection state confusion?",
+        "o": [
+            "Exploiting HTTP connection reuse vulnerabilities",
+            "Managing connection pools",
+            "Tracking session states",
+            "Organizing connection data"
+        ]
+    },
+    {
+        "q": "What is first request smuggling?",
+        "o": [
+            "Injecting request affecting another users session",
+            "Prioritizing initial requests",
+            "Managing request queues",
+            "Ordering first connections"
+        ]
+    },
+    {
+        "q": "What is response queue poisoning?",
+        "o": [
+            "Desynchronizing response delivery to wrong client",
+            "Managing response queues",
+            "Organizing reply order",
+            "Scheduling response timing"
+        ]
+    },
+    {
+        "q": "What is web cache deception?",
+        "o": [
+            "Tricking cache to store sensitive responses",
+            "Configuring cache rules",
+            "Managing cache storage",
+            "Organizing cached data"
+        ]
+    },
+    {
+        "q": "What is path confusion cache deception?",
+        "o": [
+            "Exploiting path normalization differences",
+            "Configuring path rules",
+            "Managing URL patterns",
+            "Organizing path mappings"
+        ]
+    },
+    {
+        "q": "What is RPO attack?",
+        "o": [
+            "Relative Path Overwrite for script injection",
+            "Remote Procedure Operation",
+            "Request Path Ordering",
+            "Resource Protocol Object"
+        ]
+    },
+    {
+        "q": "What is cache key normalization attack?",
+        "o": [
+            "Exploiting cache key generation differences",
+            "Setting cache key formats",
+            "Managing key generation",
+            "Organizing cache keys"
+        ]
+    },
+    {
+        "q": "What is fat GET request attack?",
+        "o": [
+            "GET with body interpreted differently by servers",
+            "Large GET requests",
+            "Heavy payload GETs",
+            "Big query strings"
+        ]
+    },
+    {
+        "q": "What is HTTP desync via chunked encoding?",
+        "o": [
+            "Exploiting Transfer-Encoding handling differences",
+            "Configuring chunk sizes",
+            "Managing encoding options",
+            "Setting transfer modes"
+        ]
+    },
+    {
+        "q": "What is CL.TE smuggling?",
+        "o": [
+            "Content-Length used by front-end Transfer-Encoding by back",
+            "Client Length Transfer",
+            "Clear Text Encoding",
+            "Content Load Transfer"
+        ]
+    },
+    {
+        "q": "What is TE.CL smuggling?",
+        "o": [
+            "Transfer-Encoding used by front-end Content-Length by back",
+            "Text Encoding Content",
+            "Transfer Content Length",
+            "Typed Encoding Clear"
+        ]
+    },
+    {
+        "q": "What is TE.TE smuggling?",
+        "o": [
+            "Transfer-Encoding obfuscation causes different parsing",
+            "Text Encoding Transfer",
+            "Transfer Text Encoding",
+            "Typed Text Encoding"
+        ]
+    },
+    {
+        "q": "What is HTTP/2 downgrade smuggling?",
+        "o": [
+            "Exploiting HTTP/2 to HTTP/1 translation bugs",
+            "Lowering HTTP version",
+            "Reducing protocol speed",
+            "Decreasing connection quality"
+        ]
+    },
+    {
+        "q": "What is H2.CL smuggling?",
+        "o": [
+            "HTTP/2 front-end with Content-Length back-end issue",
+            "HTTP to Content Length",
+            "Header Clear Length",
+            "Hypertext Content Load"
+        ]
+    },
+    {
+        "q": "What is browser-powered smuggling?",
+        "o": [
+            "Using browser behavior to facilitate smuggling",
+            "Browser automation tools",
+            "Client-side scripting",
+            "Frontend web attacks"
+        ]
+    },
+    {
+        "q": "What is request tunnel hijacking?",
+        "o": [
+            "Taking over HTTP CONNECT tunneled connections",
+            "Creating secure tunnels",
+            "Managing VPN connections",
+            "Organizing tunnel traffic"
+        ]
+    },
+    {
+        "q": "What is XS-Leaks attack category?",
+        "o": [
+            "Cross-Site information leakage techniques",
+            "External Site Leaks",
+            "Extra Session Leaks",
+            "Extended Security Leaks"
+        ]
+    },
+    {
+        "q": "What is frame counting attack?",
+        "o": [
+            "Detecting page state via window frame count",
+            "Counting iframe elements",
+            "Managing frame numbers",
+            "Organizing window frames"
+        ]
+    },
+    {
+        "q": "What is navigation timing attack?",
+        "o": [
+            "Inferring state from page load timing",
+            "Measuring navigation speed",
+            "Tracking page transitions",
+            "Timing URL changes"
+        ]
+    },
+    {
+        "q": "What is cache timing attack?",
+        "o": [
+            "Detecting resources via cache timing differences",
+            "Measuring cache speed",
+            "Tracking cache hits",
+            "Timing cache access"
+        ]
+    },
+    {
+        "q": "What is error message oracle attack?",
+        "o": [
+            "Inferring state from error response differences",
+            "Managing error messages",
+            "Configuring error handlers",
+            "Organizing error logs"
+        ]
+    },
+    {
+        "q": "What is CORB leak?",
+        "o": [
+            "Detecting blocked responses via CORB behavior",
+            "Managing CORB settings",
+            "Configuring blocking rules",
+            "Organizing blocked content"
+        ]
+    },
+    {
+        "q": "What is history length attack?",
+        "o": [
+            "Detecting navigation via history API length",
+            "Tracking browser history",
+            "Managing history entries",
+            "Organizing navigation logs"
+        ]
+    },
+    {
+        "q": "What is postMessage leakage?",
+        "o": [
+            "Extracting data via cross-origin messages",
+            "Sending window messages",
+            "Managing message handlers",
+            "Organizing message data"
+        ]
+    },
+    {
+        "q": "What is payment redirect attack?",
+        "o": [
+            "Redirecting payment to attacker account",
+            "Managing payment flows",
+            "Configuring redirects",
+            "Organizing payment data"
+        ]
+    },
+    {
+        "q": "What is webhook injection attack?",
+        "o": [
+            "Manipulating webhook endpoints for data theft",
+            "Creating webhook URLs",
+            "Managing hook endpoints",
+            "Organizing webhook data"
+        ]
+    }
+]

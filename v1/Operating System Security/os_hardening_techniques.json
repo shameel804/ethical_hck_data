@@ -1,0 +1,4547 @@
+[
+    {
+        "q": "What is operating system hardening?",
+        "o": [
+            "Reducing attack surface and vulnerabilities",
+            "Increasing system speed",
+            "Adding new features",
+            "Upgrading hardware"
+        ]
+    },
+    {
+        "q": "Which principle minimizes system exposure?",
+        "o": [
+            "Least privilege",
+            "Maximum access",
+            "Full permissions",
+            "Open access"
+        ]
+    },
+    {
+        "q": "What is the first step in OS hardening?",
+        "o": [
+            "Asset inventory and baseline",
+            "Install applications",
+            "Create users",
+            "Configure network"
+        ]
+    },
+    {
+        "q": "Which action removes unnecessary software?",
+        "o": [
+            "Uninstall unused programs",
+            "Install more programs",
+            "Update all software",
+            "Backup software"
+        ]
+    },
+    {
+        "q": "What does disabling unnecessary services achieve?",
+        "o": [
+            "Reduces attack surface",
+            "Improves graphics",
+            "Increases storage",
+            "Adds features"
+        ]
+    },
+    {
+        "q": "Which account should be disabled or renamed?",
+        "o": [
+            "Built-in Administrator",
+            "Service accounts",
+            "User accounts",
+            "Guest accounts only"
+        ]
+    },
+    {
+        "q": "What is a security baseline?",
+        "o": [
+            "Standard security configuration",
+            "Network speed baseline",
+            "Performance baseline",
+            "Storage baseline"
+        ]
+    },
+    {
+        "q": "Which organization provides security benchmarks?",
+        "o": [
+            "CIS (Center for Internet Security)",
+            "ISP providers",
+            "Hardware vendors",
+            "Software developers"
+        ]
+    },
+    {
+        "q": "What is CIS benchmark?",
+        "o": [
+            "Security configuration guidelines",
+            "Performance test",
+            "Network speed test",
+            "Hardware test"
+        ]
+    },
+    {
+        "q": "Which password policy is essential?",
+        "o": [
+            "Minimum length and complexity",
+            "No password required",
+            "Simple passwords",
+            "Shared passwords"
+        ]
+    },
+    {
+        "q": "What is account lockout policy?",
+        "o": [
+            "Lock after failed login attempts",
+            "Never lock accounts",
+            "Delete failed accounts",
+            "Disable all accounts"
+        ]
+    },
+    {
+        "q": "Which feature enforces password history?",
+        "o": [
+            "Prevent password reuse",
+            "Allow same password",
+            "No history",
+            "Clear history"
+        ]
+    },
+    {
+        "q": "What is patch management?",
+        "o": [
+            "Regular security updates",
+            "Software removal",
+            "User management",
+            "Network config"
+        ]
+    },
+    {
+        "q": "Why are patches important for hardening?",
+        "o": [
+            "Fix known vulnerabilities",
+            "Add new features only",
+            "Improve graphics",
+            "Increase storage"
+        ]
+    },
+    {
+        "q": "Which update schedule is recommended?",
+        "o": [
+            "Regular automated updates",
+            "Never update",
+            "Update once yearly",
+            "Manual only"
+        ]
+    },
+    {
+        "q": "What is host-based firewall?",
+        "o": [
+            "Firewall on individual system",
+            "Network firewall only",
+            "Hardware firewall",
+            "Cloud firewall"
+        ]
+    },
+    {
+        "q": "Which default firewall action is most secure?",
+        "o": [
+            "Deny all, allow specific",
+            "Allow all traffic",
+            "No firewall",
+            "Allow by default"
+        ]
+    },
+    {
+        "q": "What ports should remain open?",
+        "o": [
+            "Only required service ports",
+            "All ports",
+            "No ports",
+            "Random ports"
+        ]
+    },
+    {
+        "q": "Which protocol should be disabled if unused?",
+        "o": [
+            "Telnet",
+            "HTTPS",
+            "TLS",
+            "SFTP"
+        ]
+    },
+    {
+        "q": "What replaces insecure protocols?",
+        "o": [
+            "SSH replaces Telnet",
+            "FTP replaces SFTP",
+            "HTTP replaces HTTPS",
+            "Telnet replaces SSH"
+        ]
+    },
+    {
+        "q": "What is disk encryption for hardening?",
+        "o": [
+            "Protect data at rest",
+            "Speed up disk",
+            "Increase storage",
+            "Format disk"
+        ]
+    },
+    {
+        "q": "Which Windows feature encrypts drives?",
+        "o": [
+            "BitLocker",
+            "Defender",
+            "Firewall",
+            "UAC"
+        ]
+    },
+    {
+        "q": "Which Linux tool provides disk encryption?",
+        "o": [
+            "LUKS",
+            "iptables",
+            "SELinux",
+            "AppArmor"
+        ]
+    },
+    {
+        "q": "What is boot password protection?",
+        "o": [
+            "BIOS/UEFI password",
+            "User password",
+            "Network password",
+            "Application password"
+        ]
+    },
+    {
+        "q": "Why secure boot settings?",
+        "o": [
+            "Prevent unauthorized OS loading",
+            "Speed up boot",
+            "Add boot options",
+            "Multiple OS support"
+        ]
+    },
+    {
+        "q": "What is Secure Boot?",
+        "o": [
+            "UEFI signature verification",
+            "Fast boot mode",
+            "Network boot",
+            "USB boot"
+        ]
+    },
+    {
+        "q": "Which access should be physically secured?",
+        "o": [
+            "Server room and consoles",
+            "Network cables only",
+            "Keyboards only",
+            "Monitors only"
+        ]
+    },
+    {
+        "q": "What is USB port disable for hardening?",
+        "o": [
+            "Prevent unauthorized devices",
+            "Save power",
+            "Reduce noise",
+            "Improve speed"
+        ]
+    },
+    {
+        "q": "Which logging is essential for hardening?",
+        "o": [
+            "Security event logging",
+            "No logging",
+            "Error logging only",
+            "Application logging only"
+        ]
+    },
+    {
+        "q": "What should audit logs capture?",
+        "o": [
+            "Login attempts and changes",
+            "Nothing important",
+            "Only errors",
+            "Only warnings"
+        ]
+    },
+    {
+        "q": "Where should logs be stored securely?",
+        "o": [
+            "Centralized log server",
+            "Local only",
+            "No storage",
+            "Temporary files"
+        ]
+    },
+    {
+        "q": "What is log rotation?",
+        "o": [
+            "Archive and manage log size",
+            "Delete all logs",
+            "Disable logging",
+            "Hide logs"
+        ]
+    },
+    {
+        "q": "Which antivirus feature is essential?",
+        "o": [
+            "Real-time scanning",
+            "Manual scan only",
+            "No scanning",
+            "Weekly only"
+        ]
+    },
+    {
+        "q": "What is application whitelisting?",
+        "o": [
+            "Only allow approved apps",
+            "Block approved apps",
+            "Allow all apps",
+            "No restrictions"
+        ]
+    },
+    {
+        "q": "Which is more secure than blacklisting?",
+        "o": [
+            "Whitelisting",
+            "Graylisting",
+            "No listing",
+            "Open access"
+        ]
+    },
+    {
+        "q": "What is user account control in hardening?",
+        "o": [
+            "Elevation prompts for admin tasks",
+            "No account control",
+            "Auto-approve all",
+            "Disable accounts"
+        ]
+    },
+    {
+        "q": "Which file permissions are most restrictive?",
+        "o": [
+            "Owner read/write only",
+            "World writable",
+            "Everyone full control",
+            "No permissions"
+        ]
+    },
+    {
+        "q": "What is removing default accounts?",
+        "o": [
+            "Disable or delete unused defaults",
+            "Keep all defaults",
+            "Add more defaults",
+            "Share defaults"
+        ]
+    },
+    {
+        "q": "Which default should be changed?",
+        "o": [
+            "Default passwords",
+            "Default language",
+            "Default theme",
+            "Default wallpaper"
+        ]
+    },
+    {
+        "q": "What is network segmentation for hardening?",
+        "o": [
+            "Isolate systems by function",
+            "Connect all systems",
+            "Remove networks",
+            "Single network"
+        ]
+    },
+    {
+        "q": "Which zone is DMZ?",
+        "o": [
+            "Demilitarized zone for public services",
+            "Internal zone",
+            "Private zone",
+            "Secure zone"
+        ]
+    },
+    {
+        "q": "What is defense in depth?",
+        "o": [
+            "Multiple security layers",
+            "Single security layer",
+            "No security",
+            "Perimeter only"
+        ]
+    },
+    {
+        "q": "Which backup strategy supports recovery?",
+        "o": [
+            "Regular tested backups",
+            "No backups",
+            "Untested backups",
+            "Single backup"
+        ]
+    },
+    {
+        "q": "What is 3-2-1 backup rule?",
+        "o": [
+            "3 copies, 2 media, 1 offsite",
+            "3 drives, 2 systems, 1 backup",
+            "3 users, 2 admins, 1 owner",
+            "3 servers, 2 networks, 1 site"
+        ]
+    },
+    {
+        "q": "Why test backup restoration?",
+        "o": [
+            "Verify recovery works",
+            "Delete old backups",
+            "Create more backups",
+            "Speed up backups"
+        ]
+    },
+    {
+        "q": "What is change management?",
+        "o": [
+            "Track and approve system changes",
+            "Change everything",
+            "No tracking",
+            "Ignore changes"
+        ]
+    },
+    {
+        "q": "Which document guides hardening?",
+        "o": [
+            "Security policy",
+            "User manual",
+            "Marketing guide",
+            "Sales document"
+        ]
+    },
+    {
+        "q": "What is vulnerability scanning?",
+        "o": [
+            "Identify security weaknesses",
+            "Scan for viruses only",
+            "Speed test",
+            "Hardware check"
+        ]
+    },
+    {
+        "q": "Which tool scans for vulnerabilities?",
+        "o": [
+            "Nessus",
+            "Word processor",
+            "Spreadsheet",
+            "Browser"
+        ]
+    },
+    {
+        "q": "What is penetration testing?",
+        "o": [
+            "Simulated attack to find weaknesses",
+            "Network speed test",
+            "User survey",
+            "Hardware test"
+        ]
+    },
+    {
+        "q": "How often should vulnerability scans run?",
+        "o": [
+            "Regularly, at least monthly",
+            "Never",
+            "Once per year",
+            "Only after breach"
+        ]
+    },
+    {
+        "q": "What is security configuration management?",
+        "o": [
+            "Maintain secure settings over time",
+            "Change settings randomly",
+            "Ignore settings",
+            "Default settings only"
+        ]
+    },
+    {
+        "q": "Which prevents unauthorized software install?",
+        "o": [
+            "Restrict admin privileges",
+            "Allow all installs",
+            "No restrictions",
+            "Anyone can install"
+        ]
+    },
+    {
+        "q": "What is removing unnecessary network shares?",
+        "o": [
+            "Disable unused file sharing",
+            "Enable all shares",
+            "Add more shares",
+            "Share everything"
+        ]
+    },
+    {
+        "q": "Which remote access should be secured?",
+        "o": [
+            "RDP, SSH, VPN",
+            "Only RDP",
+            "Only SSH",
+            "Only VPN"
+        ]
+    },
+    {
+        "q": "What is multi-factor authentication?",
+        "o": [
+            "Multiple verification methods",
+            "Single password",
+            "No authentication",
+            "Username only"
+        ]
+    },
+    {
+        "q": "Why enable MFA for admin accounts?",
+        "o": [
+            "Prevent unauthorized access",
+            "Slow down login",
+            "Add complexity",
+            "Reduce security"
+        ]
+    },
+    {
+        "q": "What is session timeout?",
+        "o": [
+            "Auto logout after inactivity",
+            "Never logout",
+            "Immediate logout",
+            "Manual logout only"
+        ]
+    },
+    {
+        "q": "Which screensaver setting is secure?",
+        "o": [
+            "Password protected after timeout",
+            "No screensaver",
+            "No password",
+            "Instant activation"
+        ]
+    },
+    {
+        "q": "What is disabling autorun?",
+        "o": [
+            "Prevent auto-execute from media",
+            "Enable auto-execute",
+            "Speed up loading",
+            "Add convenience"
+        ]
+    },
+    {
+        "q": "Why disable unnecessary startup programs?",
+        "o": [
+            "Reduce attack surface and improve boot",
+            "Add more programs",
+            "Slow down boot",
+            "Increase risk"
+        ]
+    },
+    {
+        "q": "What is banner configuration?",
+        "o": [
+            "Legal warning before login",
+            "Advertising",
+            "Welcome message only",
+            "No message"
+        ]
+    },
+    {
+        "q": "Why display login banner?",
+        "o": [
+            "Legal notice and deterrent",
+            "Welcome users",
+            "Advertise company",
+            "Show system info"
+        ]
+    },
+    {
+        "q": "What is NTP hardening?",
+        "o": [
+            "Secure time synchronization",
+            "Disable time sync",
+            "Random time",
+            "Manual time only"
+        ]
+    },
+    {
+        "q": "Why is accurate time important?",
+        "o": [
+            "Log correlation and authentication",
+            "Not important",
+            "Speed improvement",
+            "Display only"
+        ]
+    },
+    {
+        "q": "What is DNS hardening?",
+        "o": [
+            "Secure DNS configuration",
+            "Disable DNS",
+            "Random DNS",
+            "Open DNS"
+        ]
+    },
+    {
+        "q": "Which DNS feature improves security?",
+        "o": [
+            "DNSSEC validation",
+            "No DNSSEC",
+            "Open resolvers",
+            "No encryption"
+        ]
+    },
+    {
+        "q": "What is registry hardening in Windows?",
+        "o": [
+            "Secure configuration settings",
+            "Delete registry",
+            "Open registry",
+            "Share registry"
+        ]
+    },
+    {
+        "q": "Which registry permissions should be restricted?",
+        "o": [
+            "Limit write access to admins",
+            "Everyone full control",
+            "No restrictions",
+            "Guest access"
+        ]
+    },
+    {
+        "q": "What is Group Policy for hardening?",
+        "o": [
+            "Centralized security settings",
+            "Individual settings only",
+            "No policy",
+            "Random settings"
+        ]
+    },
+    {
+        "q": "Where are GPOs applied?",
+        "o": [
+            "Active Directory domains",
+            "Local only",
+            "Cloud only",
+            "Network only"
+        ]
+    },
+    {
+        "q": "What is Local Security Policy?",
+        "o": [
+            "Standalone machine security settings",
+            "Domain policy only",
+            "Network policy",
+            "Cloud policy"
+        ]
+    },
+    {
+        "q": "Which sysctl hardens Linux?",
+        "o": [
+            "Kernel parameter tuning",
+            "User settings",
+            "Application settings",
+            "Network settings only"
+        ]
+    },
+    {
+        "q": "What is /etc/sysctl.conf?",
+        "o": [
+            "Kernel tuning configuration",
+            "User config",
+            "Network config",
+            "App config"
+        ]
+    },
+    {
+        "q": "Which sysctl disables IP forwarding?",
+        "o": [
+            "net.ipv4.ip_forward = 0",
+            "ip_forward = 1",
+            "forward = on",
+            "route = enable"
+        ]
+    },
+    {
+        "q": "What is /etc/security/limits.conf?",
+        "o": [
+            "Resource limits for users",
+            "Security passwords",
+            "Network limits",
+            "Disk limits"
+        ]
+    },
+    {
+        "q": "Which umask is most restrictive?",
+        "o": [
+            "077",
+            "000",
+            "777",
+            "022"
+        ]
+    },
+    {
+        "q": "What does umask 077 provide?",
+        "o": [
+            "Owner only permissions",
+            "World readable",
+            "Group writable",
+            "Everyone execute"
+        ]
+    },
+    {
+        "q": "What is AIDE in Linux hardening?",
+        "o": [
+            "File integrity checker",
+            "User management",
+            "Network tool",
+            "Disk tool"
+        ]
+    },
+    {
+        "q": "Which checks file changes?",
+        "o": [
+            "File integrity monitoring",
+            "Network monitoring",
+            "User monitoring",
+            "App monitoring"
+        ]
+    },
+    {
+        "q": "What is auditd in Linux?",
+        "o": [
+            "System audit daemon",
+            "Audio daemon",
+            "Network daemon",
+            "User daemon"
+        ]
+    },
+    {
+        "q": "Which file configures audit rules?",
+        "o": [
+            "/etc/audit/audit.rules",
+            "/etc/audit.conf",
+            "/var/audit",
+            "/tmp/audit"
+        ]
+    },
+    {
+        "q": "What is AppArmor profile mode?",
+        "o": [
+            "Enforce or complain mode",
+            "Run always",
+            "Disable mode",
+            "Pass mode"
+        ]
+    },
+    {
+        "q": "Which mode enforces AppArmor rules?",
+        "o": [
+            "Enforce mode",
+            "Complain mode",
+            "Disable mode",
+            "Audit mode"
+        ]
+    },
+    {
+        "q": "What is SELinux mode?",
+        "o": [
+            "Enforcing, permissive, disabled",
+            "On or off only",
+            "Run or stop",
+            "Enable or disable"
+        ]
+    },
+    {
+        "q": "Which command shows SELinux status?",
+        "o": [
+            "sestatus",
+            "selinux-status",
+            "getenforce only",
+            "seinfo"
+        ]
+    },
+    {
+        "q": "What is TCP wrapper?",
+        "o": [
+            "Access control for services",
+            "Network speed tool",
+            "Compression tool",
+            "Encryption tool"
+        ]
+    },
+    {
+        "q": "Which files configure TCP wrappers?",
+        "o": [
+            "/etc/hosts.allow and hosts.deny",
+            "/etc/tcp.conf",
+            "/etc/wrapper.conf",
+            "/etc/network.conf"
+        ]
+    },
+    {
+        "q": "What is xinetd for hardening?",
+        "o": [
+            "Service manager with access control",
+            "Network manager",
+            "Disk manager",
+            "User manager"
+        ]
+    },
+    {
+        "q": "Which PAM module enforces password strength?",
+        "o": [
+            "pam_pwquality or pam_cracklib",
+            "pam_unix only",
+            "pam_deny",
+            "pam_permit"
+        ]
+    },
+    {
+        "q": "What is /etc/login.defs?",
+        "o": [
+            "Login configuration defaults",
+            "Network config",
+            "User list",
+            "Password file"
+        ]
+    },
+    {
+        "q": "Which setting defines password aging?",
+        "o": [
+            "PASS_MAX_DAYS",
+            "MAX_PASS",
+            "AGE_PASS",
+            "PASS_AGE"
+        ]
+    },
+    {
+        "q": "What is STIG in hardening context?",
+        "o": [
+            "Security Technical Implementation Guide",
+            "System Technical Info Guide",
+            "Secure Testing Implementation",
+            "Standard Technical Guide"
+        ]
+    },
+    {
+        "q": "Which organization produces STIGs?",
+        "o": [
+            "DISA (Defense Information Systems Agency)",
+            "Microsoft only",
+            "Apple only",
+            "Google only"
+        ]
+    },
+    {
+        "q": "What is SCAP?",
+        "o": [
+            "Security Content Automation Protocol",
+            "Secure Configuration Audit",
+            "System Check Automation",
+            "Security Compliance Audit"
+        ]
+    },
+    {
+        "q": "Which tool automates SCAP scanning?",
+        "o": [
+            "OpenSCAP",
+            "Word processor",
+            "Spreadsheet",
+            "Browser"
+        ]
+    },
+    {
+        "q": "What is CCE identifier?",
+        "o": [
+            "Common Configuration Enumeration",
+            "Configuration Check Entry",
+            "Common Control Entry",
+            "Configuration Control"
+        ]
+    },
+    {
+        "q": "What is CPE in SCAP?",
+        "o": [
+            "Common Platform Enumeration",
+            "Configuration Platform Entry",
+            "Common Program Entry",
+            "Check Platform Entry"
+        ]
+    },
+    {
+        "q": "What is OVAL in vulnerability assessment?",
+        "o": [
+            "Open Vulnerability Assessment Language",
+            "Open Validation Language",
+            "Online Vulnerability Analyzer",
+            "Operating Vulnerability Assessment"
+        ]
+    },
+    {
+        "q": "What is XCCDF in SCAP?",
+        "o": [
+            "Extensible Configuration Checklist Description",
+            "XML Configuration Check",
+            "Extended Configuration Check",
+            "XML Control Check"
+        ]
+    },
+    {
+        "q": "Which Windows tool applies security templates?",
+        "o": [
+            "Security Configuration and Analysis",
+            "Notepad",
+            "Paint",
+            "Calculator"
+        ]
+    },
+    {
+        "q": "What is secedit in Windows?",
+        "o": [
+            "Command line security configuration",
+            "Registry editor",
+            "Disk tool",
+            "Network tool"
+        ]
+    },
+    {
+        "q": "Which file format stores security templates?",
+        "o": [
+            "INF and security database",
+            "TXT only",
+            "DOC only",
+            "PDF only"
+        ]
+    },
+    {
+        "q": "What is Windows Security Compliance Toolkit?",
+        "o": [
+            "Microsoft security baseline tool",
+            "Third party tool",
+            "Linux tool",
+            "macOS tool"
+        ]
+    },
+    {
+        "q": "Which baseline does Microsoft provide?",
+        "o": [
+            "Windows Security Baselines",
+            "Apple baselines",
+            "Linux baselines",
+            "Android baselines"
+        ]
+    },
+    {
+        "q": "What is LGPO tool?",
+        "o": [
+            "Local Group Policy Object utility",
+            "Linux Group Policy",
+            "Log Policy Object",
+            "Login Policy Object"
+        ]
+    },
+    {
+        "q": "Where are Windows security baselines published?",
+        "o": [
+            "Microsoft Security Compliance Toolkit",
+            "GitHub only",
+            "SourceForge",
+            "Personal blogs"
+        ]
+    },
+    {
+        "q": "What is Attack Surface Analyzer?",
+        "o": [
+            "Microsoft security tool comparing system states",
+            "Virus scanner",
+            "Network analyzer",
+            "Disk tool"
+        ]
+    },
+    {
+        "q": "Which compares system changes before and after install?",
+        "o": [
+            "Attack Surface Analyzer",
+            "Word processor",
+            "Spreadsheet",
+            "Browser"
+        ]
+    },
+    {
+        "q": "What is Credential Guard in Windows?",
+        "o": [
+            "Protects credentials using virtualization",
+            "Password manager",
+            "Disk encryption",
+            "Network guard"
+        ]
+    },
+    {
+        "q": "Which technology enables Credential Guard?",
+        "o": [
+            "Hypervisor-based security",
+            "Software only",
+            "Hardware token",
+            "USB key"
+        ]
+    },
+    {
+        "q": "What is Device Guard in Windows?",
+        "o": [
+            "Application control using code integrity",
+            "Physical device lock",
+            "USB control",
+            "Network filter"
+        ]
+    },
+    {
+        "q": "What is Windows Defender Application Guard?",
+        "o": [
+            "Isolated browsing environment",
+            "Antivirus scanner",
+            "Firewall",
+            "Disk encryption"
+        ]
+    },
+    {
+        "q": "What is WDAC?",
+        "o": [
+            "Windows Defender Application Control",
+            "Windows Defender Access Control",
+            "Windows Device Access",
+            "Windows Driver Access"
+        ]
+    },
+    {
+        "q": "What is AppLocker?",
+        "o": [
+            "Application whitelisting feature",
+            "Screen lock",
+            "Disk lock",
+            "Network lock"
+        ]
+    },
+    {
+        "q": "Which is more flexible than AppLocker?",
+        "o": [
+            "WDAC",
+            "BitLocker",
+            "Firewall",
+            "UAC"
+        ]
+    },
+    {
+        "q": "What is LAPS in Windows?",
+        "o": [
+            "Local Administrator Password Solution",
+            "Login Access Password",
+            "Local Access Pass",
+            "Login Admin Pass"
+        ]
+    },
+    {
+        "q": "What does LAPS manage?",
+        "o": [
+            "Unique local admin passwords",
+            "Domain passwords",
+            "User passwords",
+            "Service passwords"
+        ]
+    },
+    {
+        "q": "Where are LAPS passwords stored?",
+        "o": [
+            "Active Directory attributes",
+            "Local file",
+            "Registry",
+            "Cloud only"
+        ]
+    },
+    {
+        "q": "What is Protected Users group?",
+        "o": [
+            "Enhanced credential protection",
+            "User access group",
+            "Admin group",
+            "Guest group"
+        ]
+    },
+    {
+        "q": "Which prevents credential caching?",
+        "o": [
+            "Protected Users membership",
+            "Local Users membership",
+            "Guest account",
+            "Service account"
+        ]
+    },
+    {
+        "q": "What is SMB signing?",
+        "o": [
+            "Authenticate SMB packets",
+            "Encrypt files",
+            "Compress data",
+            "Speed up transfer"
+        ]
+    },
+    {
+        "q": "Why require SMB signing?",
+        "o": [
+            "Prevent man-in-middle attacks",
+            "Faster transfer",
+            "More storage",
+            "Better compression"
+        ]
+    },
+    {
+        "q": "What is SMB encryption?",
+        "o": [
+            "Encrypt data in transit",
+            "Compress data",
+            "Sign packets only",
+            "Speed up transfer"
+        ]
+    },
+    {
+        "q": "Which SMB version supports encryption?",
+        "o": [
+            "SMB 3.0 and later",
+            "SMB 1.0",
+            "SMB 2.0 only",
+            "All versions"
+        ]
+    },
+    {
+        "q": "What is disabling SMB1 for hardening?",
+        "o": [
+            "Remove vulnerable legacy protocol",
+            "Add compatibility",
+            "Speed up network",
+            "Reduce storage"
+        ]
+    },
+    {
+        "q": "Which command disables SMB1?",
+        "o": [
+            "Disable-WindowsOptionalFeature SMB1",
+            "Enable-SMB1",
+            "Install-SMB1",
+            "Add-SMB1"
+        ]
+    },
+    {
+        "q": "What is NTLM relay attack?",
+        "o": [
+            "Forward captured authentication",
+            "Password cracking",
+            "Brute force",
+            "Phishing"
+        ]
+    },
+    {
+        "q": "Which mitigates NTLM relay?",
+        "o": [
+            "SMB signing and EPA",
+            "No mitigation",
+            "More NTLM",
+            "Disable signing"
+        ]
+    },
+    {
+        "q": "What is Extended Protection for Authentication?",
+        "o": [
+            "Channel binding to prevent relay",
+            "Password extension",
+            "Token extension",
+            "Session extension"
+        ]
+    },
+    {
+        "q": "What is Kerberos Armoring?",
+        "o": [
+            "FAST protection for Kerberos",
+            "Kerberos encryption",
+            "Kerberos compression",
+            "Kerberos caching"
+        ]
+    },
+    {
+        "q": "What is LDAP signing?",
+        "o": [
+            "Require signed LDAP connections",
+            "Encrypt LDAP",
+            "Compress LDAP",
+            "Cache LDAP"
+        ]
+    },
+    {
+        "q": "Why require LDAP channel binding?",
+        "o": [
+            "Prevent LDAP relay attacks",
+            "Speed up queries",
+            "Add storage",
+            "Compress data"
+        ]
+    },
+    {
+        "q": "What is WMI filter in GPO?",
+        "o": [
+            "Apply policy based on system properties",
+            "Block WMI",
+            "Disable WMI",
+            "Encrypt WMI"
+        ]
+    },
+    {
+        "q": "What is GPO loopback processing?",
+        "o": [
+            "Apply user settings based on computer",
+            "Loop through users",
+            "Repeat policy",
+            "Backup policy"
+        ]
+    },
+    {
+        "q": "What is security filtering in GPO?",
+        "o": [
+            "Apply to specific users or computers",
+            "Filter logs",
+            "Filter network",
+            "Filter files"
+        ]
+    },
+    {
+        "q": "What is Restricted Groups policy?",
+        "o": [
+            "Control group membership",
+            "Network groups",
+            "File groups",
+            "Share groups"
+        ]
+    },
+    {
+        "q": "Which controls local admin membership?",
+        "o": [
+            "Restricted Groups or GPO Preferences",
+            "Local policy only",
+            "Registry only",
+            "No control possible"
+        ]
+    },
+    {
+        "q": "What is Software Restriction Policy?",
+        "o": [
+            "Legacy application control",
+            "Speed restriction",
+            "Network restriction",
+            "Disk restriction"
+        ]
+    },
+    {
+        "q": "Which replaced SRP in modern Windows?",
+        "o": [
+            "AppLocker and WDAC",
+            "BitLocker",
+            "Firewall",
+            "UAC"
+        ]
+    },
+    {
+        "q": "What is PowerShell Constrained Language Mode?",
+        "o": [
+            "Restrict unsafe PowerShell operations",
+            "Speed up PowerShell",
+            "Enable all features",
+            "Disable PowerShell"
+        ]
+    },
+    {
+        "q": "Which triggers Constrained Language?",
+        "o": [
+            "WDAC policy without AllowedPowerShell",
+            "Manual setting only",
+            "Always enabled",
+            "Never enabled"
+        ]
+    },
+    {
+        "q": "What is blocking PowerShell 2.0?",
+        "o": [
+            "Remove downgrade attack vector",
+            "Add PowerShell features",
+            "Improve compatibility",
+            "Speed up scripts"
+        ]
+    },
+    {
+        "q": "Why remove PowerShell 2.0?",
+        "o": [
+            "Lacks logging and AMSI",
+            "Too slow",
+            "Too fast",
+            "Not needed"
+        ]
+    },
+    {
+        "q": "What is Script Block Logging?",
+        "o": [
+            "Log PowerShell script content",
+            "Block scripts",
+            "Speed up scripts",
+            "Compress scripts"
+        ]
+    },
+    {
+        "q": "Which logs PowerShell commands?",
+        "o": [
+            "Module and Script Block Logging",
+            "File logging only",
+            "Network logging",
+            "Disk logging"
+        ]
+    },
+    {
+        "q": "What is PowerShell Transcription?",
+        "o": [
+            "Record all session activity",
+            "Translation feature",
+            "Compression",
+            "Encryption"
+        ]
+    },
+    {
+        "q": "What is AMSI in Windows?",
+        "o": [
+            "Antimalware Scan Interface",
+            "Application Management System",
+            "Access Management System",
+            "Audit Management System"
+        ]
+    },
+    {
+        "q": "Which leverages AMSI?",
+        "o": [
+            "PowerShell, VBScript, JavaScript",
+            "Only PowerShell",
+            "Only VBScript",
+            "Only JavaScript"
+        ]
+    },
+    {
+        "q": "What is Just Enough Administration?",
+        "o": [
+            "Role-based PowerShell access",
+            "Full admin access",
+            "No admin access",
+            "Guest access"
+        ]
+    },
+    {
+        "q": "What is JEA endpoint?",
+        "o": [
+            "Constrained PowerShell session",
+            "Network endpoint",
+            "Web endpoint",
+            "API endpoint"
+        ]
+    },
+    {
+        "q": "What is Linux Security Module (LSM)?",
+        "o": [
+            "Kernel security framework",
+            "User space module",
+            "Application module",
+            "Network module"
+        ]
+    },
+    {
+        "q": "Which implements MAC in Linux?",
+        "o": [
+            "SELinux and AppArmor",
+            "Standard permissions only",
+            "Firewall only",
+            "Antivirus only"
+        ]
+    },
+    {
+        "q": "What is SMACK LSM?",
+        "o": [
+            "Simplified Mandatory Access Control",
+            "Smart MAC kernel",
+            "System MAC",
+            "Storage MAC"
+        ]
+    },
+    {
+        "q": "What is TOMOYO Linux?",
+        "o": [
+            "Path-based MAC implementation",
+            "File-based only",
+            "Network-based",
+            "User-based"
+        ]
+    },
+    {
+        "q": "What is Yama LSM?",
+        "o": [
+            "ptrace scope restriction",
+            "File access control",
+            "Network control",
+            "User control"
+        ]
+    },
+    {
+        "q": "What does Yama restrict?",
+        "o": [
+            "Process debugging access",
+            "File access",
+            "Network access",
+            "Disk access"
+        ]
+    },
+    {
+        "q": "What is namespaces for hardening?",
+        "o": [
+            "Process isolation mechanism",
+            "File naming",
+            "User naming",
+            "Network naming"
+        ]
+    },
+    {
+        "q": "Which namespace isolates network?",
+        "o": [
+            "Network namespace",
+            "User namespace",
+            "Mount namespace",
+            "PID namespace"
+        ]
+    },
+    {
+        "q": "What is cgroups for security?",
+        "o": [
+            "Resource limits for processes",
+            "Network groups",
+            "User groups",
+            "File groups"
+        ]
+    },
+    {
+        "q": "Which restricts CPU and memory?",
+        "o": [
+            "cgroups",
+            "namespaces only",
+            "firewall",
+            "antivirus"
+        ]
+    },
+    {
+        "q": "What is seccomp?",
+        "o": [
+            "System call filtering",
+            "Secure compression",
+            "Security comparison",
+            "Secure compilation"
+        ]
+    },
+    {
+        "q": "Which limits syscalls for process?",
+        "o": [
+            "seccomp-bpf",
+            "SELinux only",
+            "AppArmor only",
+            "Firewall"
+        ]
+    },
+    {
+        "q": "What is capabilities in Linux?",
+        "o": [
+            "Fine-grained root privileges",
+            "User capabilities",
+            "File capabilities",
+            "Network capabilities"
+        ]
+    },
+    {
+        "q": "Which replaces setuid root?",
+        "o": [
+            "File capabilities",
+            "setgid",
+            "sticky bit",
+            "umask"
+        ]
+    },
+    {
+        "q": "What is CAP_NET_BIND_SERVICE?",
+        "o": [
+            "Bind to privileged ports",
+            "Network service cap",
+            "Binding capability",
+            "Service capability"
+        ]
+    },
+    {
+        "q": "What is CAP_SYS_ADMIN?",
+        "o": [
+            "Various admin operations",
+            "User admin only",
+            "File admin only",
+            "Network admin only"
+        ]
+    },
+    {
+        "q": "Which is most dangerous capability?",
+        "o": [
+            "CAP_SYS_ADMIN",
+            "CAP_NET_RAW",
+            "CAP_CHOWN",
+            "CAP_KILL"
+        ]
+    },
+    {
+        "q": "What is dropping capabilities?",
+        "o": [
+            "Remove unneeded root privileges",
+            "Add capabilities",
+            "List capabilities",
+            "Share capabilities"
+        ]
+    },
+    {
+        "q": "What is firejail?",
+        "o": [
+            "SUID sandbox program",
+            "Network firewall",
+            "Disk encryption",
+            "Antivirus"
+        ]
+    },
+    {
+        "q": "Which sandboxes desktop apps?",
+        "o": [
+            "firejail and bubblewrap",
+            "iptables",
+            "SELinux only",
+            "firewall only"
+        ]
+    },
+    {
+        "q": "What is bubblewrap?",
+        "o": [
+            "User namespace sandbox",
+            "Package manager",
+            "Disk tool",
+            "Network tool"
+        ]
+    },
+    {
+        "q": "Which Flatpak uses for isolation?",
+        "o": [
+            "bubblewrap",
+            "Docker",
+            "LXC",
+            "chroot"
+        ]
+    },
+    {
+        "q": "What is systemd service hardening?",
+        "o": [
+            "Restrict service capabilities",
+            "Speed up services",
+            "Add services",
+            "Remove services"
+        ]
+    },
+    {
+        "q": "Which systemd directive drops caps?",
+        "o": [
+            "CapabilityBoundingSet",
+            "DropCaps",
+            "RemoveCaps",
+            "NoCaps"
+        ]
+    },
+    {
+        "q": "What is PrivateTmp in systemd?",
+        "o": [
+            "Isolated tmp directory",
+            "Shared tmp",
+            "No tmp access",
+            "Temp directory"
+        ]
+    },
+    {
+        "q": "What does ProtectSystem=strict do?",
+        "o": [
+            "Read-only file system",
+            "Write-only system",
+            "No protection",
+            "Delete protection"
+        ]
+    },
+    {
+        "q": "What is NoNewPrivileges?",
+        "o": [
+            "Prevent privilege escalation",
+            "New privileges allowed",
+            "Add privileges",
+            "Share privileges"
+        ]
+    },
+    {
+        "q": "Which systemd sandboxes networking?",
+        "o": [
+            "PrivateNetwork=true",
+            "NoNetwork",
+            "BlockNetwork",
+            "StopNetwork"
+        ]
+    },
+    {
+        "q": "What is ReadOnlyPaths in systemd?",
+        "o": [
+            "Make paths read-only for service",
+            "Delete paths",
+            "Hide paths",
+            "Encrypt paths"
+        ]
+    },
+    {
+        "q": "What is ProtectHome in systemd?",
+        "o": [
+            "Restrict home directory access",
+            "Protect network",
+            "Protect disk",
+            "Protect memory"
+        ]
+    },
+    {
+        "q": "What is container hardening?",
+        "o": [
+            "Secure container configuration",
+            "Container speed",
+            "Container size",
+            "Container color"
+        ]
+    },
+    {
+        "q": "Which reduces container attack surface?",
+        "o": [
+            "Minimal base images",
+            "Large images",
+            "Many packages",
+            "Full OS images"
+        ]
+    },
+    {
+        "q": "What is distroless container?",
+        "o": [
+            "No shell or package manager",
+            "Full Linux distro",
+            "Windows container",
+            "macOS container"
+        ]
+    },
+    {
+        "q": "Why use non-root in containers?",
+        "o": [
+            "Reduce container escape risk",
+            "Speed up container",
+            "Add features",
+            "More storage"
+        ]
+    },
+    {
+        "q": "What is read-only container filesystem?",
+        "o": [
+            "Immutable container root",
+            "Writable root",
+            "No filesystem",
+            "Shared filesystem"
+        ]
+    },
+    {
+        "q": "Which limits container resources?",
+        "o": [
+            "Resource limits and cgroups",
+            "No limits",
+            "Unlimited resources",
+            "Manual limits"
+        ]
+    },
+    {
+        "q": "What is Kubernetes PodSecurityPolicy?",
+        "o": [
+            "Cluster-wide security constraints",
+            "Pod networking",
+            "Pod storage",
+            "Pod scheduling"
+        ]
+    },
+    {
+        "q": "Which replaced PodSecurityPolicy?",
+        "o": [
+            "Pod Security Admission",
+            "PodSecurityPolicy v2",
+            "SecurityContext only",
+            "RBAC only"
+        ]
+    },
+    {
+        "q": "What is cloud hardening?",
+        "o": [
+            "Secure cloud configuration",
+            "Cloud speed",
+            "Cloud storage",
+            "Cloud color"
+        ]
+    },
+    {
+        "q": "Which provides cloud security benchmarks?",
+        "o": [
+            "CIS cloud benchmarks",
+            "Personal guides",
+            "Blog posts",
+            "Social media"
+        ]
+    },
+    {
+        "q": "What is IAM least privilege in cloud?",
+        "o": [
+            "Minimum permissions needed",
+            "Maximum permissions",
+            "All permissions",
+            "No permissions"
+        ]
+    },
+    {
+        "q": "Which cloud setting should be restricted?",
+        "o": [
+            "Public S3 buckets and storage",
+            "All buckets public",
+            "No restrictions",
+            "Open access"
+        ]
+    },
+    {
+        "q": "What is VPC security group?",
+        "o": [
+            "Cloud network firewall rules",
+            "User group",
+            "Admin group",
+            "Storage group"
+        ]
+    },
+    {
+        "q": "Which default should be changed in cloud?",
+        "o": [
+            "Default security groups",
+            "Default region",
+            "Default color",
+            "Default name"
+        ]
+    },
+    {
+        "q": "What is network hardening?",
+        "o": [
+            "Secure network configuration",
+            "Network speed",
+            "Network storage",
+            "Network color"
+        ]
+    },
+    {
+        "q": "Which protocol should be encrypted?",
+        "o": [
+            "All sensitive traffic",
+            "No traffic",
+            "Only web",
+            "Only email"
+        ]
+    },
+    {
+        "q": "What is 802.1X?",
+        "o": [
+            "Port-based network access control",
+            "Wireless speed",
+            "Cable type",
+            "Router model"
+        ]
+    },
+    {
+        "q": "Which prevents rogue access points?",
+        "o": [
+            "Wireless intrusion detection",
+            "Open WiFi",
+            "No monitoring",
+            "Any access point"
+        ]
+    },
+    {
+        "q": "What is MAC address filtering?",
+        "o": [
+            "Allow only known devices",
+            "Block all devices",
+            "Speed filter",
+            "Color filter"
+        ]
+    },
+    {
+        "q": "Which network protocol is deprecated?",
+        "o": [
+            "SNMPv1 and v2c",
+            "SNMPv3",
+            "HTTPS",
+            "SSH"
+        ]
+    },
+    {
+        "q": "What replaces SNMPv2c?",
+        "o": [
+            "SNMPv3 with encryption",
+            "SNMPv1",
+            "Telnet",
+            "FTP"
+        ]
+    },
+    {
+        "q": "What is network access control list?",
+        "o": [
+            "Rules for network traffic",
+            "User access list",
+            "File access list",
+            "App access list"
+        ]
+    },
+    {
+        "q": "Which is more granular than ACL?",
+        "o": [
+            "Security groups or stateful firewall",
+            "Standard ACL only",
+            "No filtering",
+            "Open access"
+        ]
+    },
+    {
+        "q": "What is port security on switches?",
+        "o": [
+            "Limit MAC addresses per port",
+            "Port speed",
+            "Port color",
+            "Port size"
+        ]
+    },
+    {
+        "q": "Which prevents MAC flooding?",
+        "o": [
+            "Port security limits",
+            "Open ports",
+            "No limits",
+            "Unlimited MACs"
+        ]
+    },
+    {
+        "q": "What is DHCP snooping?",
+        "o": [
+            "Validate DHCP server messages",
+            "DHCP speed up",
+            "DHCP disable",
+            "DHCP color"
+        ]
+    },
+    {
+        "q": "Which prevents rogue DHCP?",
+        "o": [
+            "DHCP snooping",
+            "Open DHCP",
+            "Any DHCP server",
+            "No protection"
+        ]
+    },
+    {
+        "q": "What is dynamic ARP inspection?",
+        "o": [
+            "Validate ARP packets",
+            "ARP speed",
+            "ARP disable",
+            "ARP color"
+        ]
+    },
+    {
+        "q": "Which prevents ARP spoofing?",
+        "o": [
+            "Dynamic ARP inspection",
+            "Open ARP",
+            "No validation",
+            "Trust all ARP"
+        ]
+    },
+    {
+        "q": "What is IP source guard?",
+        "o": [
+            "Validate IP source address",
+            "IP speed",
+            "IP color",
+            "IP size"
+        ]
+    },
+    {
+        "q": "Which prevents IP spoofing at switch?",
+        "o": [
+            "IP source guard",
+            "Open IP",
+            "Trust all sources",
+            "No validation"
+        ]
+    },
+    {
+        "q": "What is private VLAN?",
+        "o": [
+            "Isolate hosts in same subnet",
+            "Public VLAN",
+            "Shared VLAN",
+            "Open VLAN"
+        ]
+    },
+    {
+        "q": "Which isolates VMs in same network?",
+        "o": [
+            "Private VLAN or micro-segmentation",
+            "Shared network",
+            "Open network",
+            "No isolation"
+        ]
+    },
+    {
+        "q": "What is microsegmentation?",
+        "o": [
+            "Fine-grained network isolation",
+            "Large segments",
+            "No segments",
+            "Open network"
+        ]
+    },
+    {
+        "q": "Which implements zero trust networking?",
+        "o": [
+            "Microsegmentation and identity",
+            "Perimeter only",
+            "No trust checks",
+            "Trust all"
+        ]
+    },
+    {
+        "q": "What is RADIUS for hardening?",
+        "o": [
+            "Centralized authentication",
+            "Network speed",
+            "Disk storage",
+            "User interface"
+        ]
+    },
+    {
+        "q": "Which centralizes network auth?",
+        "o": [
+            "RADIUS or TACACS+",
+            "Local auth only",
+            "No auth",
+            "Open access"
+        ]
+    },
+    {
+        "q": "What is TACACS+ advantage?",
+        "o": [
+            "Separate AAA and encryption",
+            "Faster only",
+            "Smaller only",
+            "No advantage"
+        ]
+    },
+    {
+        "q": "What is firmware hardening?",
+        "o": [
+            "Secure low-level software",
+            "Firmware speed",
+            "Firmware storage",
+            "Firmware color"
+        ]
+    },
+    {
+        "q": "Which should have firmware updates?",
+        "o": [
+            "BIOS/UEFI and network devices",
+            "Only OS",
+            "Only apps",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "What is UEFI Secure Boot?",
+        "o": [
+            "Validate boot signatures",
+            "Fast boot",
+            "Network boot",
+            "USB boot"
+        ]
+    },
+    {
+        "q": "Which prevents bootkits?",
+        "o": [
+            "Secure Boot verification",
+            "No protection",
+            "Open boot",
+            "Legacy boot"
+        ]
+    },
+    {
+        "q": "What is TPM for hardening?",
+        "o": [
+            "Hardware security module on board",
+            "Software module",
+            "Network module",
+            "User module"
+        ]
+    },
+    {
+        "q": "Which stores encryption keys securely?",
+        "o": [
+            "TPM chip",
+            "Text file",
+            "Registry",
+            "Desktop"
+        ]
+    },
+    {
+        "q": "What is Measured Boot?",
+        "o": [
+            "Log boot components for attestation",
+            "Speed measurement",
+            "Size measurement",
+            "Color measurement"
+        ]
+    },
+    {
+        "q": "Which extends PCR values?",
+        "o": [
+            "Measured Boot process",
+            "Normal boot",
+            "Fast boot",
+            "Network boot"
+        ]
+    },
+    {
+        "q": "What is remote attestation?",
+        "o": [
+            "Verify platform integrity remotely",
+            "Remote access",
+            "Remote control",
+            "Remote viewing"
+        ]
+    },
+    {
+        "q": "Which service verifies attestation?",
+        "o": [
+            "Attestation server or service",
+            "Local only",
+            "No verification",
+            "Manual check"
+        ]
+    },
+    {
+        "q": "What is Intel TXT?",
+        "o": [
+            "Trusted Execution Technology",
+            "Text editor",
+            "Network text",
+            "File text"
+        ]
+    },
+    {
+        "q": "Which creates hardware trust?",
+        "o": [
+            "Intel TXT and AMD SEV",
+            "Software only",
+            "No trust",
+            "Open execution"
+        ]
+    },
+    {
+        "q": "What is AMD SEV?",
+        "o": [
+            "Secure Encrypted Virtualization",
+            "Speed Enhancement",
+            "Size Enhancement",
+            "Storage Enhancement"
+        ]
+    },
+    {
+        "q": "Which encrypts VM memory?",
+        "o": [
+            "AMD SEV and Intel TME",
+            "No encryption",
+            "Software only",
+            "Guest OS only"
+        ]
+    },
+    {
+        "q": "What is hypervisor hardening?",
+        "o": [
+            "Secure virtualization layer",
+            "Hypervisor speed",
+            "Hypervisor storage",
+            "Hypervisor color"
+        ]
+    },
+    {
+        "q": "Which reduces hypervisor attack surface?",
+        "o": [
+            "Minimal hypervisor install",
+            "Full OS on hypervisor",
+            "Many services",
+            "All features"
+        ]
+    },
+    {
+        "q": "What is VM escape?",
+        "o": [
+            "Break out of virtual machine",
+            "VM migration",
+            "VM backup",
+            "VM copy"
+        ]
+    },
+    {
+        "q": "Which mitigates VM escape?",
+        "o": [
+            "Patching and isolation",
+            "More VMs",
+            "Shared resources",
+            "No patching"
+        ]
+    },
+    {
+        "q": "What is vTPM?",
+        "o": [
+            "Virtual TPM for guest VMs",
+            "VPN TPM",
+            "Very TPM",
+            "Volume TPM"
+        ]
+    },
+    {
+        "q": "Which provides TPM to VMs?",
+        "o": [
+            "vTPM from hypervisor",
+            "Physical TPM only",
+            "No TPM",
+            "Software TPM"
+        ]
+    },
+    {
+        "q": "What is VM network isolation?",
+        "o": [
+            "Separate VM networks",
+            "Shared networks",
+            "Open networks",
+            "No networks"
+        ]
+    },
+    {
+        "q": "Which prevents VM traffic sniffing?",
+        "o": [
+            "VLAN isolation and encryption",
+            "Shared VLAN",
+            "Promiscuous mode",
+            "Open switch"
+        ]
+    },
+    {
+        "q": "What is database hardening?",
+        "o": [
+            "Secure database configuration",
+            "Database speed",
+            "Database storage",
+            "Database color"
+        ]
+    },
+    {
+        "q": "Which default should be changed in databases?",
+        "o": [
+            "Default accounts and ports",
+            "Default theme",
+            "Default font",
+            "Default color"
+        ]
+    },
+    {
+        "q": "What is database encryption at rest?",
+        "o": [
+            "Encrypt stored data",
+            "Encrypt queries",
+            "Speed up database",
+            "Compress data"
+        ]
+    },
+    {
+        "q": "Which encrypts database in transit?",
+        "o": [
+            "TLS for connections",
+            "No encryption",
+            "Compression",
+            "Caching"
+        ]
+    },
+    {
+        "q": "What is SQL injection prevention?",
+        "o": [
+            "Input validation and parameterization",
+            "No validation",
+            "Trust all input",
+            "Direct queries"
+        ]
+    },
+    {
+        "q": "Which database principle applies?",
+        "o": [
+            "Least privilege for DB users",
+            "All users DBA",
+            "No users",
+            "Shared accounts"
+        ]
+    },
+    {
+        "q": "What is database activity monitoring?",
+        "o": [
+            "Track database queries and access",
+            "Database speed",
+            "Database size",
+            "Database backup"
+        ]
+    },
+    {
+        "q": "Which detects anomalous DB access?",
+        "o": [
+            "Database activity monitoring",
+            "No monitoring",
+            "Manual review",
+            "Weekly check"
+        ]
+    },
+    {
+        "q": "What is web server hardening?",
+        "o": [
+            "Secure web server config",
+            "Web speed",
+            "Web storage",
+            "Web color"
+        ]
+    },
+    {
+        "q": "Which should be removed from web servers?",
+        "o": [
+            "Default pages and samples",
+            "All content",
+            "Index page",
+            "CSS files"
+        ]
+    },
+    {
+        "q": "What is directory listing disable?",
+        "o": [
+            "Hide folder contents",
+            "Show all files",
+            "Enable browsing",
+            "List everything"
+        ]
+    },
+    {
+        "q": "Which header improves security?",
+        "o": [
+            "X-Content-Type-Options nosniff",
+            "X-Speed-Fast",
+            "X-Color-Blue",
+            "X-Size-Big"
+        ]
+    },
+    {
+        "q": "What is Content-Security-Policy?",
+        "o": [
+            "Control resource loading sources",
+            "Content compression",
+            "Content caching",
+            "Content backup"
+        ]
+    },
+    {
+        "q": "Which prevents clickjacking?",
+        "o": [
+            "X-Frame-Options header",
+            "No header",
+            "Open frames",
+            "Allow all frames"
+        ]
+    },
+    {
+        "q": "What is HTTP Strict Transport Security?",
+        "o": [
+            "Force HTTPS connections",
+            "HTTP speed",
+            "HTTP color",
+            "HTTP size"
+        ]
+    },
+    {
+        "q": "Which SSL/TLS versions should be disabled?",
+        "o": [
+            "SSL 2.0, 3.0, TLS 1.0, 1.1",
+            "TLS 1.3",
+            "TLS 1.2",
+            "All versions"
+        ]
+    },
+    {
+        "q": "What is perfect forward secrecy?",
+        "o": [
+            "Protect past sessions if key compromised",
+            "Forward caching",
+            "Speed forward",
+            "Future secrecy"
+        ]
+    },
+    {
+        "q": "Which cipher suites support PFS?",
+        "o": [
+            "ECDHE and DHE",
+            "RSA only",
+            "DES",
+            "RC4"
+        ]
+    },
+    {
+        "q": "What is OCSP stapling?",
+        "o": [
+            "Server provides cert status",
+            "Client checks separately",
+            "No checking",
+            "Manual check"
+        ]
+    },
+    {
+        "q": "Which improves TLS performance?",
+        "o": [
+            "OCSP stapling reduces lookups",
+            "More roundtrips",
+            "Larger certificates",
+            "Slow handshakes"
+        ]
+    },
+    {
+        "q": "What is Certificate Transparency?",
+        "o": [
+            "Public log of issued certificates",
+            "Hidden certificates",
+            "Private certs",
+            "Secret certs"
+        ]
+    },
+    {
+        "q": "Which detects mis-issued certificates?",
+        "o": [
+            "Certificate Transparency logs",
+            "No detection",
+            "Manual review",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is CAA DNS record?",
+        "o": [
+            "Specify allowed certificate authorities",
+            "CA address",
+            "CA account",
+            "CA access"
+        ]
+    },
+    {
+        "q": "Which limits who can issue certs for domain?",
+        "o": [
+            "CAA DNS record",
+            "No limits",
+            "Any CA",
+            "All CAs"
+        ]
+    },
+    {
+        "q": "What is mail server hardening?",
+        "o": [
+            "Secure email server config",
+            "Mail speed",
+            "Mail storage",
+            "Mail color"
+        ]
+    },
+    {
+        "q": "Which prevents open relay?",
+        "o": [
+            "Authentication required for relay",
+            "Open relay allowed",
+            "No auth",
+            "Anonymous relay"
+        ]
+    },
+    {
+        "q": "What is SPF record?",
+        "o": [
+            "Sender Policy Framework for email",
+            "Speed Protocol Framework",
+            "Storage Protocol",
+            "Size Protocol"
+        ]
+    },
+    {
+        "q": "Which validates email sender?",
+        "o": [
+            "SPF, DKIM, DMARC",
+            "No validation",
+            "Trust all senders",
+            "Open mail"
+        ]
+    },
+    {
+        "q": "What is DKIM?",
+        "o": [
+            "DomainKeys Identified Mail signing",
+            "Domain Key Internet",
+            "Data Key ID Mail",
+            "Direct Key Mail"
+        ]
+    },
+    {
+        "q": "What is DMARC?",
+        "o": [
+            "Domain-based Message Authentication",
+            "Data Message Authentication",
+            "Direct Mail Authentication",
+            "Domain Mail Access"
+        ]
+    },
+    {
+        "q": "Which enforces email authentication policy?",
+        "o": [
+            "DMARC reject policy",
+            "No policy",
+            "Accept all",
+            "Trust senders"
+        ]
+    },
+    {
+        "q": "What is MTA-STS?",
+        "o": [
+            "Mail Transfer Agent Strict Transport",
+            "Mail Transfer Access",
+            "Message Transfer Access",
+            "Mail Transport Access"
+        ]
+    },
+    {
+        "q": "Which prevents SMTP downgrade?",
+        "o": [
+            "MTA-STS and DANE",
+            "No prevention",
+            "Allow downgrade",
+            "Trust network"
+        ]
+    },
+    {
+        "q": "What is ICS/SCADA hardening?",
+        "o": [
+            "Secure industrial control systems",
+            "ICS speed",
+            "ICS storage",
+            "ICS color"
+        ]
+    },
+    {
+        "q": "Which is critical for ICS?",
+        "o": [
+            "Network segmentation from IT",
+            "Open network",
+            "Internet exposed",
+            "Shared network"
+        ]
+    },
+    {
+        "q": "What is Purdue Model?",
+        "o": [
+            "Industrial network architecture layers",
+            "University model",
+            "Business model",
+            "Software model"
+        ]
+    },
+    {
+        "q": "Which separates IT and OT?",
+        "o": [
+            "DMZ between enterprise and control",
+            "Single network",
+            "Shared systems",
+            "No separation"
+        ]
+    },
+    {
+        "q": "What is air gap for ICS?",
+        "o": [
+            "Physical network isolation",
+            "Air conditioning",
+            "Ventilation gap",
+            "Space between"
+        ]
+    },
+    {
+        "q": "Which protocol is insecure in ICS?",
+        "o": [
+            "Modbus without encryption",
+            "TLS",
+            "SSH",
+            "HTTPS"
+        ]
+    },
+    {
+        "q": "What secures ICS protocols?",
+        "o": [
+            "VPN tunnels or secure wrappers",
+            "No security",
+            "Open protocols",
+            "Trust network"
+        ]
+    },
+    {
+        "q": "What is endpoint hardening?",
+        "o": [
+            "Secure client system config",
+            "Endpoint speed",
+            "Endpoint storage",
+            "Endpoint color"
+        ]
+    },
+    {
+        "q": "Which should be disabled on endpoints?",
+        "o": [
+            "Unused ports and services",
+            "All services",
+            "Security software",
+            "Operating system"
+        ]
+    },
+    {
+        "q": "What is EDR?",
+        "o": [
+            "Endpoint Detection and Response",
+            "Endpoint Data Recorder",
+            "End Data Response",
+            "Extra Data Response"
+        ]
+    },
+    {
+        "q": "Which monitors endpoint behavior?",
+        "o": [
+            "EDR solutions",
+            "No monitoring",
+            "Manual review",
+            "Weekly scan"
+        ]
+    },
+    {
+        "q": "What is mobile device hardening?",
+        "o": [
+            "Secure smartphone/tablet config",
+            "Mobile speed",
+            "Mobile storage",
+            "Mobile color"
+        ]
+    },
+    {
+        "q": "Which MDM feature secures devices?",
+        "o": [
+            "Remote wipe and policy enforcement",
+            "No control",
+            "Open access",
+            "Trust users"
+        ]
+    },
+    {
+        "q": "What is application sandboxing?",
+        "o": [
+            "Isolate app from system resources",
+            "Share resources",
+            "Open access",
+            "Full permissions"
+        ]
+    },
+    {
+        "q": "Which mobile feature limits sensitive access?",
+        "o": [
+            "Permission controls",
+            "All permissions granted",
+            "No permissions",
+            "Root access"
+        ]
+    },
+    {
+        "q": "What is configuration drift?",
+        "o": [
+            "Unauthorized changes from baseline",
+            "Faster configuration",
+            "Better configuration",
+            "Automatic configuration"
+        ]
+    },
+    {
+        "q": "Which detects configuration drift?",
+        "o": [
+            "Configuration management tools",
+            "Manual review only",
+            "No detection",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is Infrastructure as Code?",
+        "o": [
+            "Manage infrastructure through code",
+            "Code on infrastructure",
+            "Infrastructure speed",
+            "Code storage"
+        ]
+    },
+    {
+        "q": "Which IaC tools support hardening?",
+        "o": [
+            "Ansible, Puppet, Chef, Terraform",
+            "Word processor",
+            "Spreadsheet",
+            "Browser"
+        ]
+    },
+    {
+        "q": "What is Ansible for hardening?",
+        "o": [
+            "Automation platform for config",
+            "Manual tool",
+            "Spreadsheet",
+            "Database"
+        ]
+    },
+    {
+        "q": "Which Ansible module manages services?",
+        "o": [
+            "service and systemd modules",
+            "file module only",
+            "user module only",
+            "package only"
+        ]
+    },
+    {
+        "q": "What is Ansible Galaxy?",
+        "o": [
+            "Community role repository",
+            "Space game",
+            "Database",
+            "Network tool"
+        ]
+    },
+    {
+        "q": "Which provides hardening roles?",
+        "o": [
+            "Ansible Galaxy hardening collections",
+            "Manual scripts only",
+            "No roles available",
+            "Text files"
+        ]
+    },
+    {
+        "q": "What is Puppet for hardening?",
+        "o": [
+            "Configuration management tool",
+            "Manual tool",
+            "Database",
+            "Network"
+        ]
+    },
+    {
+        "q": "Which Puppet resource manages files?",
+        "o": [
+            "file resource type",
+            "string resource",
+            "number resource",
+            "date resource"
+        ]
+    },
+    {
+        "q": "What is Chef InSpec?",
+        "o": [
+            "Compliance testing framework",
+            "Cooking tool",
+            "Database",
+            "Network tool"
+        ]
+    },
+    {
+        "q": "Which defines security controls as code?",
+        "o": [
+            "InSpec profiles",
+            "Text files",
+            "Spreadsheets",
+            "Databases"
+        ]
+    },
+    {
+        "q": "What is compliance as code?",
+        "o": [
+            "Automated compliance checking",
+            "Manual compliance",
+            "Written compliance",
+            "Verbal compliance"
+        ]
+    },
+    {
+        "q": "Which validates CIS benchmarks automatically?",
+        "o": [
+            "InSpec CIS profiles",
+            "Manual review",
+            "Hope for best",
+            "No validation"
+        ]
+    },
+    {
+        "q": "What is hardening automation benefit?",
+        "o": [
+            "Consistent repeatable configuration",
+            "Slower deployment",
+            "More errors",
+            "Less security"
+        ]
+    },
+    {
+        "q": "Which CI/CD integrates security?",
+        "o": [
+            "Security scanning in pipeline",
+            "No security",
+            "Manual only",
+            "Post-deployment"
+        ]
+    },
+    {
+        "q": "What is golden image?",
+        "o": [
+            "Pre-hardened system template",
+            "Gold color image",
+            "Expensive image",
+            "Rare image"
+        ]
+    },
+    {
+        "q": "Which benefits from hardened images?",
+        "o": [
+            "Fast secure deployment",
+            "Slow deployment",
+            "Manual config each time",
+            "No benefit"
+        ]
+    },
+    {
+        "q": "What is Packer for hardening?",
+        "o": [
+            "Create hardened machine images",
+            "Packaging tool",
+            "Compression",
+            "Archiving"
+        ]
+    },
+    {
+        "q": "Which creates AMIs automatically?",
+        "o": [
+            "Packer with hardening scripts",
+            "Manual creation",
+            "AWS console only",
+            "No automation"
+        ]
+    },
+    {
+        "q": "What is immutable infrastructure?",
+        "o": [
+            "Replace instead of modify",
+            "Never change anything",
+            "Mutable infrastructure",
+            "Changing infrastructure"
+        ]
+    },
+    {
+        "q": "Which security benefit has immutable?",
+        "o": [
+            "No configuration drift",
+            "More drift",
+            "Less security",
+            "No benefit"
+        ]
+    },
+    {
+        "q": "What is CIS-CAT tool?",
+        "o": [
+            "Benchmark assessment tool",
+            "Cat picture",
+            "Network tool",
+            "Database"
+        ]
+    },
+    {
+        "q": "Which generates compliance reports?",
+        "o": [
+            "CIS-CAT and similar scanners",
+            "Manual reports",
+            "No reports",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is Lynis?",
+        "o": [
+            "Linux security auditing tool",
+            "Windows tool",
+            "macOS only",
+            "Network scanner"
+        ]
+    },
+    {
+        "q": "Which scans Linux for hardening?",
+        "o": [
+            "Lynis audit system",
+            "Windows scanner",
+            "Network scanner",
+            "Web scanner"
+        ]
+    },
+    {
+        "q": "What is Windows Security Baseline?",
+        "o": [
+            "Microsoft recommended settings",
+            "Third party settings",
+            "Linux settings",
+            "macOS settings"
+        ]
+    },
+    {
+        "q": "Which applies baselines at scale?",
+        "o": [
+            "Group Policy and Intune",
+            "Manual each machine",
+            "No automation",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is Microsoft Defender for Endpoint?",
+        "o": [
+            "Advanced threat protection",
+            "Basic antivirus",
+            "Firewall only",
+            "VPN"
+        ]
+    },
+    {
+        "q": "Which provides attack surface reduction?",
+        "o": [
+            "ASR rules in Defender",
+            "No reduction",
+            "Manual only",
+            "Firewall only"
+        ]
+    },
+    {
+        "q": "What is ASR rule?",
+        "o": [
+            "Attack Surface Reduction rule",
+            "Automatic Speed Rule",
+            "Access Speed Rule",
+            "Auto Save Rule"
+        ]
+    },
+    {
+        "q": "Which blocks Office macro abuse?",
+        "o": [
+            "ASR rule for Office macros",
+            "No protection",
+            "Firewall",
+            "Antivirus only"
+        ]
+    },
+    {
+        "q": "What is controlled folder access?",
+        "o": [
+            "Protect folders from ransomware",
+            "Control center",
+            "Folder speed",
+            "Folder color"
+        ]
+    },
+    {
+        "q": "Which blocks unauthorized folder changes?",
+        "o": [
+            "Controlled folder access",
+            "No protection",
+            "Open folders",
+            "Trust all apps"
+        ]
+    },
+    {
+        "q": "What is network protection in Defender?",
+        "o": [
+            "Block malicious network connections",
+            "Network speed",
+            "Network color",
+            "Network size"
+        ]
+    },
+    {
+        "q": "Which blocks low reputation URLs?",
+        "o": [
+            "SmartScreen and network protection",
+            "No blocking",
+            "Allow all URLs",
+            "Trust network"
+        ]
+    },
+    {
+        "q": "What is exploit protection in Windows?",
+        "o": [
+            "Mitigate exploitation techniques",
+            "Exploit creation",
+            "Exploitation speed",
+            "No protection"
+        ]
+    },
+    {
+        "q": "Which replaces EMET?",
+        "o": [
+            "Windows Defender Exploit Guard",
+            "EMET 6.0",
+            "Third party tool",
+            "No replacement"
+        ]
+    },
+    {
+        "q": "What is ASLR in exploit protection?",
+        "o": [
+            "Address Space Layout Randomization",
+            "Auto Speed Layout",
+            "Access Space Layout",
+            "Advanced Speed Layout"
+        ]
+    },
+    {
+        "q": "Which randomizes memory addresses?",
+        "o": [
+            "ASLR mitigation",
+            "Fixed addresses",
+            "Predictable addresses",
+            "No randomization"
+        ]
+    },
+    {
+        "q": "What is DEP in exploit protection?",
+        "o": [
+            "Data Execution Prevention",
+            "Data Entry Protocol",
+            "Direct Execution",
+            "Data Exit Prevention"
+        ]
+    },
+    {
+        "q": "Which prevents code execution in data region?",
+        "o": [
+            "DEP mitigation",
+            "Allow execution",
+            "No prevention",
+            "Trust data"
+        ]
+    },
+    {
+        "q": "What is CFG?",
+        "o": [
+            "Control Flow Guard",
+            "Configuration File Guard",
+            "Central File Guard",
+            "Control File Guard"
+        ]
+    },
+    {
+        "q": "Which validates indirect call targets?",
+        "o": [
+            "Control Flow Guard",
+            "No validation",
+            "Open calls",
+            "Trust targets"
+        ]
+    },
+    {
+        "q": "What is Arbitrary Code Guard?",
+        "o": [
+            "Block dynamic code generation",
+            "Allow all code",
+            "Code generation",
+            "No guard"
+        ]
+    },
+    {
+        "q": "Which blocks dynamically allocated code?",
+        "o": [
+            "ACG mitigation",
+            "Allow allocation",
+            "No blocking",
+            "Trust code"
+        ]
+    },
+    {
+        "q": "What is block child process creation?",
+        "o": [
+            "Prevent spawning child processes",
+            "Allow children",
+            "Create more processes",
+            "No blocking"
+        ]
+    },
+    {
+        "q": "Which mitigates malicious document spawns?",
+        "o": [
+            "Block child processes from Office",
+            "Allow spawns",
+            "No mitigation",
+            "Trust documents"
+        ]
+    },
+    {
+        "q": "What is integrity level in Windows?",
+        "o": [
+            "Process trust classification",
+            "File integrity",
+            "Network integrity",
+            "Disk integrity"
+        ]
+    },
+    {
+        "q": "Which integrity level is lowest?",
+        "o": [
+            "Untrusted (0)",
+            "High",
+            "System",
+            "Protected"
+        ]
+    },
+    {
+        "q": "What is Protected Process Light?",
+        "o": [
+            "Protect process from tampering",
+            "Light process",
+            "Fast process",
+            "Small process"
+        ]
+    },
+    {
+        "q": "Which protects antimalware from attacks?",
+        "o": [
+            "PPL for security processes",
+            "No protection",
+            "Open processes",
+            "Trust all"
+        ]
+    },
+    {
+        "q": "What is kernel mode code signing?",
+        "o": [
+            "Require signed kernel drivers",
+            "Unsigned drivers allowed",
+            "No signing",
+            "Trust all drivers"
+        ]
+    },
+    {
+        "q": "Which prevents unsigned driver loading?",
+        "o": [
+            "KMCS enforcement",
+            "Allow unsigned",
+            "No enforcement",
+            "Trust drivers"
+        ]
+    },
+    {
+        "q": "What is Secure System in Windows?",
+        "o": [
+            "Isolated security processes",
+            "Fast system",
+            "Slow system",
+            "Normal system"
+        ]
+    },
+    {
+        "q": "Which runs in isolated context?",
+        "o": [
+            "Credential Guard and HVCI",
+            "Normal apps",
+            "All processes",
+            "No isolation"
+        ]
+    },
+    {
+        "q": "What is HVCI?",
+        "o": [
+            "Hypervisor-protected Code Integrity",
+            "High Volume Code",
+            "Hardware Video",
+            "Hyper Virtual Code"
+        ]
+    },
+    {
+        "q": "Which validates kernel code integrity?",
+        "o": [
+            "HVCI using hypervisor",
+            "No validation",
+            "Software only",
+            "Trust kernel"
+        ]
+    },
+    {
+        "q": "What is memory integrity?",
+        "o": [
+            "Consumer name for HVCI",
+            "Memory speed",
+            "Memory size",
+            "Memory color"
+        ]
+    },
+    {
+        "q": "Which setting enables HVCI?",
+        "o": [
+            "Memory integrity in Windows Security",
+            "Control Panel",
+            "Notepad",
+            "Calculator"
+        ]
+    },
+    {
+        "q": "What is system guard runtime monitor?",
+        "o": [
+            "Verify system integrity at runtime",
+            "System speed",
+            "System size",
+            "System color"
+        ]
+    },
+    {
+        "q": "Which detects tampering of security?",
+        "o": [
+            "System Guard attestation",
+            "No detection",
+            "Manual check",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is SMM protection?",
+        "o": [
+            "System Management Mode security",
+            "Simple Memory Mode",
+            "System Memory Mode",
+            "Secure Memory Mode"
+        ]
+    },
+    {
+        "q": "Which protects SMM from attacks?",
+        "o": [
+            "Firmware and hardware features",
+            "Software only",
+            "No protection",
+            "Trust SMM"
+        ]
+    },
+    {
+        "q": "What is lockdown policies?",
+        "o": [
+            "Strict enterprise restrictions",
+            "Lock screen",
+            "Locked doors",
+            "Lock files"
+        ]
+    },
+    {
+        "q": "Which environment uses strict lockdown?",
+        "o": [
+            "Kiosks and single-purpose systems",
+            "All systems",
+            "No systems",
+            "Personal systems"
+        ]
+    },
+    {
+        "q": "What is assigned access in Windows?",
+        "o": [
+            "Single app kiosk mode",
+            "All app access",
+            "No access",
+            "Admin access"
+        ]
+    },
+    {
+        "q": "Which creates kiosk configuration?",
+        "o": [
+            "Assigned access and shell launcher",
+            "Normal install",
+            "Full desktop",
+            "No config"
+        ]
+    },
+    {
+        "q": "What is Windows Sandbox?",
+        "o": [
+            "Isolated temporary desktop",
+            "Beach sandbox",
+            "Children toy",
+            "Storage"
+        ]
+    },
+    {
+        "q": "Which safely tests untrusted apps?",
+        "o": [
+            "Windows Sandbox isolation",
+            "Main desktop",
+            "No testing",
+            "Trust apps"
+        ]
+    },
+    {
+        "q": "What is Windows Subsystem for Linux isolation?",
+        "o": [
+            "VM-based WSL2 separation",
+            "No isolation",
+            "Shared kernel",
+            "Open access"
+        ]
+    },
+    {
+        "q": "Which WSL version is more secure?",
+        "o": [
+            "WSL2 with separate kernel",
+            "WSL1",
+            "Both same",
+            "Neither secure"
+        ]
+    },
+    {
+        "q": "What is security monitoring?",
+        "o": [
+            "Continuous security observation",
+            "Monthly review",
+            "Annual check",
+            "No monitoring"
+        ]
+    },
+    {
+        "q": "Which enables security monitoring?",
+        "o": [
+            "SIEM and log collection",
+            "No tools",
+            "Manual review",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is SIEM?",
+        "o": [
+            "Security Information Event Management",
+            "System Information",
+            "Security Interface",
+            "System Interface"
+        ]
+    },
+    {
+        "q": "Which correlates security events?",
+        "o": [
+            "SIEM platform",
+            "Manual correlation",
+            "No correlation",
+            "Hope for patterns"
+        ]
+    },
+    {
+        "q": "What is Windows Event Forwarding?",
+        "o": [
+            "Centralize Windows events",
+            "Forward mail",
+            "Forward files",
+            "Forward network"
+        ]
+    },
+    {
+        "q": "Which collects Windows logs centrally?",
+        "o": [
+            "WEF and WEC",
+            "Local only",
+            "No collection",
+            "Manual copy"
+        ]
+    },
+    {
+        "q": "What is syslog?",
+        "o": [
+            "Standard logging protocol",
+            "System speed log",
+            "Size log",
+            "Color log"
+        ]
+    },
+    {
+        "q": "Which sends Linux logs centrally?",
+        "o": [
+            "syslog and rsyslog",
+            "Local only",
+            "No forwarding",
+            "Manual copy"
+        ]
+    },
+    {
+        "q": "What is Security Onion?",
+        "o": [
+            "Network security monitoring platform",
+            "Vegetable",
+            "Food",
+            "Cooking"
+        ]
+    },
+    {
+        "q": "Which provides network IDS/IPS?",
+        "o": [
+            "Snort, Suricata and similar",
+            "Firewall only",
+            "No IDS",
+            "Trust network"
+        ]
+    },
+    {
+        "q": "What is OSSEC?",
+        "o": [
+            "Open source host-based IDS",
+            "OS Security",
+            "Open Speed",
+            "Online Security"
+        ]
+    },
+    {
+        "q": "Which monitors file changes on hosts?",
+        "o": [
+            "OSSEC and FIM tools",
+            "No monitoring",
+            "Network only",
+            "Trust files"
+        ]
+    },
+    {
+        "q": "What is incident response for hardening?",
+        "o": [
+            "Respond to security events",
+            "No response",
+            "Ignore incidents",
+            "Hope nothing happens"
+        ]
+    },
+    {
+        "q": "Which improves hardening after incident?",
+        "o": [
+            "Lessons learned and updates",
+            "Same config",
+            "No changes",
+            "Ignore lessons"
+        ]
+    },
+    {
+        "q": "What is threat hunting?",
+        "o": [
+            "Proactive threat search",
+            "Wait for alerts",
+            "No hunting",
+            "Trust systems"
+        ]
+    },
+    {
+        "q": "Which validates hardening effectiveness?",
+        "o": [
+            "Red team and penetration testing",
+            "No testing",
+            "Hope for best",
+            "Trust config"
+        ]
+    },
+    {
+        "q": "What is purple team?",
+        "o": [
+            "Red and blue collaboration",
+            "Color team",
+            "Purple color",
+            "New team"
+        ]
+    },
+    {
+        "q": "Which improves detection and hardening?",
+        "o": [
+            "Collaborative purple teaming",
+            "Separate teams",
+            "No collaboration",
+            "Single person"
+        ]
+    },
+    {
+        "q": "What is zero trust architecture?",
+        "o": [
+            "Never trust always verify",
+            "Trust everything",
+            "Trust network",
+            "Trust users"
+        ]
+    },
+    {
+        "q": "Which principle guides zero trust?",
+        "o": [
+            "Assume breach mentality",
+            "Trust by default",
+            "Open access",
+            "No verification"
+        ]
+    },
+    {
+        "q": "What is NIST SP 800-207?",
+        "o": [
+            "Zero Trust Architecture guidelines",
+            "Encryption standard",
+            "Network protocol",
+            "Hardware spec"
+        ]
+    },
+    {
+        "q": "Which implements identity verification?",
+        "o": [
+            "Strong authentication every access",
+            "Once authenticated forever",
+            "No authentication",
+            "Trust tokens"
+        ]
+    },
+    {
+        "q": "What is continuous verification?",
+        "o": [
+            "Ongoing trust assessment",
+            "One-time verification",
+            "No verification",
+            "Trust forever"
+        ]
+    },
+    {
+        "q": "Which monitors context for access?",
+        "o": [
+            "Adaptive access control",
+            "Static access",
+            "No monitoring",
+            "Trust context"
+        ]
+    },
+    {
+        "q": "What is device health attestation?",
+        "o": [
+            "Verify device security state",
+            "Device speed",
+            "Device color",
+            "Device size"
+        ]
+    },
+    {
+        "q": "Which checks device before access?",
+        "o": [
+            "Conditional access with health check",
+            "No checks",
+            "Trust devices",
+            "All access"
+        ]
+    },
+    {
+        "q": "What is software-defined perimeter?",
+        "o": [
+            "Dynamic access based on identity",
+            "Static perimeter",
+            "Physical wall",
+            "Firewall only"
+        ]
+    },
+    {
+        "q": "Which hides resources until authorized?",
+        "o": [
+            "SDP with deny-all firewall",
+            "Open resources",
+            "Trust network",
+            "No hiding"
+        ]
+    },
+    {
+        "q": "What is DevSecOps for hardening?",
+        "o": [
+            "Security in development pipeline",
+            "Development only",
+            "Operations only",
+            "Security separate"
+        ]
+    },
+    {
+        "q": "Which integrates security early?",
+        "o": [
+            "Shift-left security approach",
+            "Security at end",
+            "No security",
+            "Manual review"
+        ]
+    },
+    {
+        "q": "What is container image scanning?",
+        "o": [
+            "Check for vulnerabilities in images",
+            "Image quality",
+            "Image size",
+            "Image color"
+        ]
+    },
+    {
+        "q": "Which scans before deployment?",
+        "o": [
+            "CI/CD security scanning",
+            "No scanning",
+            "Post-deployment",
+            "Manual review"
+        ]
+    },
+    {
+        "q": "What is secret management?",
+        "o": [
+            "Secure credential storage",
+            "Secret files",
+            "Hidden folders",
+            "Encrypted chat"
+        ]
+    },
+    {
+        "q": "Which tool manages secrets?",
+        "o": [
+            "HashiCorp Vault and similar",
+            "Text files",
+            "Environment variables",
+            "Code comments"
+        ]
+    },
+    {
+        "q": "What is hardware security key?",
+        "o": [
+            "Physical authentication device",
+            "USB drive",
+            "Keyboard",
+            "Mouse"
+        ]
+    },
+    {
+        "q": "Which provides phishing-resistant MFA?",
+        "o": [
+            "FIDO2 hardware keys",
+            "SMS codes",
+            "Email codes",
+            "Password only"
+        ]
+    },
+    {
+        "q": "What is privileged access management?",
+        "o": [
+            "Control administrative access",
+            "User access",
+            "Guest access",
+            "Public access"
+        ]
+    },
+    {
+        "q": "Which manages admin credentials?",
+        "o": [
+            "PAM solutions with vaulting",
+            "Shared passwords",
+            "Plain text",
+            "Same password"
+        ]
+    },
+    {
+        "q": "What is just-in-time access?",
+        "o": [
+            "Temporary elevated privileges",
+            "Permanent privileges",
+            "No privileges",
+            "Always elevated"
+        ]
+    },
+    {
+        "q": "Which reduces standing privileges?",
+        "o": [
+            "JIT access with time limits",
+            "Permanent admin",
+            "No limits",
+            "Trust users"
+        ]
+    },
+    {
+        "q": "What is privileged identity management?",
+        "o": [
+            "Manage privileged user lifecycle",
+            "User login",
+            "Password reset",
+            "Account creation"
+        ]
+    },
+    {
+        "q": "Which Azure feature provides JIT?",
+        "o": [
+            "Azure PIM",
+            "Azure AD only",
+            "Azure VM",
+            "Azure Storage"
+        ]
+    },
+    {
+        "q": "What is security orchestration?",
+        "o": [
+            "Automate security workflows",
+            "Manual security",
+            "No automation",
+            "Random actions"
+        ]
+    },
+    {
+        "q": "Which platform automates response?",
+        "o": [
+            "SOAR tools",
+            "Manual scripts",
+            "No automation",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is SOAR?",
+        "o": [
+            "Security Orchestration Automation Response",
+            "Speed Only Auto Response",
+            "Security Only Auto Run",
+            "Simple Only Auto Response"
+        ]
+    },
+    {
+        "q": "Which reduces MTTR?",
+        "o": [
+            "Automated incident response",
+            "Manual response",
+            "No response",
+            "Slow response"
+        ]
+    },
+    {
+        "q": "What is threat intelligence for hardening?",
+        "o": [
+            "Information about threats",
+            "No information",
+            "Random data",
+            "Old data"
+        ]
+    },
+    {
+        "q": "Which applies threat intel to hardening?",
+        "o": [
+            "Block known malicious indicators",
+            "Ignore threats",
+            "Trust sources",
+            "No action"
+        ]
+    },
+    {
+        "q": "What is IOC in security?",
+        "o": [
+            "Indicator of Compromise",
+            "Internet of Control",
+            "Internal Operations",
+            "Input Output"
+        ]
+    },
+    {
+        "q": "Which blocks known bad IPs?",
+        "o": [
+            "Threat intelligence feeds",
+            "Allow all IPs",
+            "Trust network",
+            "No blocking"
+        ]
+    },
+    {
+        "q": "What is STIX format?",
+        "o": [
+            "Structured Threat Information",
+            "System Text Info",
+            "Simple Text Info",
+            "Storage Text"
+        ]
+    },
+    {
+        "q": "Which shares threat intel?",
+        "o": [
+            "STIX and TAXII",
+            "Email only",
+            "Phone calls",
+            "No sharing"
+        ]
+    },
+    {
+        "q": "What is TAXII server?",
+        "o": [
+            "Threat intel transport",
+            "Transportation service",
+            "Taxi service",
+            "Tax service"
+        ]
+    },
+    {
+        "q": "Which automates IOC blocking?",
+        "o": [
+            "Integration with security tools",
+            "Manual blocking",
+            "No automation",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is MITRE ATT&CK for hardening?",
+        "o": [
+            "Adversary tactics and techniques",
+            "Attack tool",
+            "Mitigation tool",
+            "Response tool"
+        ]
+    },
+    {
+        "q": "Which maps adversary behavior?",
+        "o": [
+            "ATT&CK framework",
+            "Random mapping",
+            "No mapping",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is D3FEND?",
+        "o": [
+            "MITRE defensive framework",
+            "Attack framework",
+            "Defense game",
+            "Network tool"
+        ]
+    },
+    {
+        "q": "Which maps defenses to attacks?",
+        "o": [
+            "D3FEND matrix",
+            "Random mapping",
+            "No mapping",
+            "Attack matrix only"
+        ]
+    },
+    {
+        "q": "What is compliance hardening?",
+        "o": [
+            "Meet regulatory requirements",
+            "Ignore regulations",
+            "No compliance",
+            "Random compliance"
+        ]
+    },
+    {
+        "q": "Which framework covers payment cards?",
+        "o": [
+            "PCI DSS",
+            "HIPAA",
+            "FERPA",
+            "SOX"
+        ]
+    },
+    {
+        "q": "What is HIPAA for hardening?",
+        "o": [
+            "Healthcare data protection",
+            "Hospital management",
+            "Health insurance",
+            "Hardware protection"
+        ]
+    },
+    {
+        "q": "Which regulation covers EU data?",
+        "o": [
+            "GDPR",
+            "CCPA",
+            "HIPAA",
+            "SOX"
+        ]
+    },
+    {
+        "q": "What is SOC 2 Type II?",
+        "o": [
+            "Security audit over time",
+            "Network audit",
+            "Quick audit",
+            "No audit"
+        ]
+    },
+    {
+        "q": "Which demonstrates security controls?",
+        "o": [
+            "SOC 2 report",
+            "Self declaration",
+            "No evidence",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is FedRAMP?",
+        "o": [
+            "US cloud security program",
+            "Federal ramp",
+            "Random program",
+            "State program"
+        ]
+    },
+    {
+        "q": "Which authorizes cloud for government?",
+        "o": [
+            "FedRAMP authorization",
+            "Self authorization",
+            "No authorization",
+            "Random approval"
+        ]
+    },
+    {
+        "q": "What is ISO 27001?",
+        "o": [
+            "Information security management",
+            "Network management",
+            "Hardware standard",
+            "Software standard"
+        ]
+    },
+    {
+        "q": "Which certifies ISMS?",
+        "o": [
+            "ISO 27001 certification",
+            "Self certification",
+            "No certification",
+            "Random audit"
+        ]
+    },
+    {
+        "q": "What is NIST CSF?",
+        "o": [
+            "Cybersecurity Framework",
+            "Computer Science",
+            "Cloud Storage",
+            "Central System"
+        ]
+    },
+    {
+        "q": "Which provides security functions?",
+        "o": [
+            "Identify Protect Detect Respond Recover",
+            "Attack only",
+            "Defense only",
+            "No functions"
+        ]
+    },
+    {
+        "q": "What is NIST 800-53?",
+        "o": [
+            "Security and privacy controls",
+            "Network protocol",
+            "Hardware spec",
+            "Software standard"
+        ]
+    },
+    {
+        "q": "Which controls apply to federal systems?",
+        "o": [
+            "NIST 800-53 controls",
+            "No controls",
+            "Random controls",
+            "Self-defined only"
+        ]
+    },
+    {
+        "q": "What is control baseline in NIST?",
+        "o": [
+            "Set of controls for impact level",
+            "Random controls",
+            "All controls",
+            "No controls"
+        ]
+    },
+    {
+        "q": "Which baseline is for high impact?",
+        "o": [
+            "High baseline with more controls",
+            "Low baseline",
+            "No baseline",
+            "Moderate only"
+        ]
+    },
+    {
+        "q": "What is risk-based hardening?",
+        "o": [
+            "Prioritize based on risk",
+            "Random hardening",
+            "All or nothing",
+            "No prioritization"
+        ]
+    },
+    {
+        "q": "Which assesses hardening priority?",
+        "o": [
+            "Risk assessment and analysis",
+            "Random selection",
+            "No assessment",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is forensic readiness?",
+        "o": [
+            "Prepare for investigation",
+            "No preparation",
+            "Random prep",
+            "After incident only"
+        ]
+    },
+    {
+        "q": "Which enables better forensics?",
+        "o": [
+            "Proper logging and retention",
+            "No logging",
+            "Delete logs",
+            "Minimal logging"
+        ]
+    },
+    {
+        "q": "What is log integrity for forensics?",
+        "o": [
+            "Ensure logs not tampered",
+            "Log speed",
+            "Log size",
+            "Log color"
+        ]
+    },
+    {
+        "q": "Which protects log integrity?",
+        "o": [
+            "Write-once or signed logs",
+            "Editable logs",
+            "No protection",
+            "Trust logs"
+        ]
+    },
+    {
+        "q": "What is NTP for security?",
+        "o": [
+            "Synchronized time for correlation",
+            "Network Transfer Protocol",
+            "New Technology Protocol",
+            "No Time Protocol"
+        ]
+    },
+    {
+        "q": "Which requires accurate time?",
+        "o": [
+            "Log correlation and forensics",
+            "Network speed",
+            "Nothing",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is log retention policy?",
+        "o": [
+            "How long to keep logs",
+            "Log speed policy",
+            "Log size policy",
+            "No policy"
+        ]
+    },
+    {
+        "q": "Which compliance requires log retention?",
+        "o": [
+            "Most compliance frameworks",
+            "No compliance",
+            "Optional",
+            "Never required"
+        ]
+    },
+    {
+        "q": "What is security baseline documentation?",
+        "o": [
+            "Record approved configuration",
+            "No documentation",
+            "Random notes",
+            "Verbal only"
+        ]
+    },
+    {
+        "q": "Which tracks approved changes?",
+        "o": [
+            "Change management process",
+            "No tracking",
+            "Random changes",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is configuration management database?",
+        "o": [
+            "Track all configuration items",
+            "Random database",
+            "No database",
+            "File sharing"
+        ]
+    },
+    {
+        "q": "Which CMDB tracks security config?",
+        "o": [
+            "Security configuration items",
+            "No tracking",
+            "Random items",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is security exception process?",
+        "o": [
+            "Document approved deviations",
+            "No exceptions",
+            "All exceptions",
+            "Random approval"
+        ]
+    },
+    {
+        "q": "Which tracks hardening exceptions?",
+        "o": [
+            "Exception documentation and review",
+            "No tracking",
+            "Ignore exceptions",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is security awareness for hardening?",
+        "o": [
+            "User education on security",
+            "No awareness",
+            "Random training",
+            "Hope users know"
+        ]
+    },
+    {
+        "q": "Which human factor affects security?",
+        "o": [
+            "Social engineering susceptibility",
+            "Hardware speed",
+            "Network size",
+            "Disk space"
+        ]
+    },
+    {
+        "q": "What is phishing simulation?",
+        "o": [
+            "Test user awareness",
+            "Real phishing",
+            "No testing",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "Which validates security training?",
+        "o": [
+            "Phishing simulations and tests",
+            "No validation",
+            "Trust training",
+            "Hope works"
+        ]
+    },
+    {
+        "q": "What is secure development lifecycle?",
+        "o": [
+            "Security in software development",
+            "No security",
+            "Post-development only",
+            "Random security"
+        ]
+    },
+    {
+        "q": "Which embeds security in SDLC?",
+        "o": [
+            "Security requirements and testing",
+            "No embedding",
+            "After release",
+            "Hope secure"
+        ]
+    },
+    {
+        "q": "What is static analysis for hardening?",
+        "o": [
+            "Analyze code without running",
+            "Running analysis",
+            "No analysis",
+            "Random review"
+        ]
+    },
+    {
+        "q": "Which SAST finds vulnerabilities?",
+        "o": [
+            "Static code scanners",
+            "Manual review only",
+            "No finding",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is dynamic analysis?",
+        "o": [
+            "Test running application",
+            "Test code only",
+            "No testing",
+            "Random test"
+        ]
+    },
+    {
+        "q": "Which DAST tests applications?",
+        "o": [
+            "Runtime vulnerability scanners",
+            "Code review only",
+            "No testing",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is software composition analysis?",
+        "o": [
+            "Check third party components",
+            "No checking",
+            "Trust components",
+            "Random check"
+        ]
+    },
+    {
+        "q": "Which SCA finds vulnerable libraries?",
+        "o": [
+            "Dependency vulnerability scanners",
+            "Manual check",
+            "No checking",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is runtime application protection?",
+        "o": [
+            "Protect running applications",
+            "No protection",
+            "Pre-runtime only",
+            "Post-runtime"
+        ]
+    },
+    {
+        "q": "Which RASP blocks attacks?",
+        "o": [
+            "In-app security controls",
+            "Perimeter only",
+            "No blocking",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is web application firewall?",
+        "o": [
+            "Filter web application traffic",
+            "Network firewall",
+            "Host firewall",
+            "No filtering"
+        ]
+    },
+    {
+        "q": "Which WAF blocks common attacks?",
+        "o": [
+            "OWASP Core Rule Set",
+            "No blocking",
+            "Trust traffic",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is API gateway security?",
+        "o": [
+            "Protect API endpoints",
+            "No protection",
+            "Trust APIs",
+            "Random security"
+        ]
+    },
+    {
+        "q": "Which enforces API rate limiting?",
+        "o": [
+            "API gateway controls",
+            "No limiting",
+            "Unlimited access",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is service mesh security?",
+        "o": [
+            "Microservices communication security",
+            "No security",
+            "Trust services",
+            "Random policy"
+        ]
+    },
+    {
+        "q": "Which provides mutual TLS in mesh?",
+        "o": [
+            "Istio and similar service mesh",
+            "No mTLS",
+            "One-way TLS",
+            "No encryption"
+        ]
+    },
+    {
+        "q": "What is network policy in Kubernetes?",
+        "o": [
+            "Pod communication rules",
+            "No rules",
+            "All pods communicate",
+            "Random policy"
+        ]
+    },
+    {
+        "q": "Which CNI enforces network policy?",
+        "o": [
+            "Calico, Cilium and others",
+            "No enforcement",
+            "All CNIs same",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is eBPF for security?",
+        "o": [
+            "Kernel observability and enforcement",
+            "Network protocol",
+            "File system",
+            "Database"
+        ]
+    },
+    {
+        "q": "Which uses eBPF for security?",
+        "o": [
+            "Cilium, Falco and others",
+            "No tools",
+            "Random tools",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is runtime security monitoring?",
+        "o": [
+            "Observe container/app behavior",
+            "No monitoring",
+            "Pre-runtime only",
+            "Post-incident only"
+        ]
+    },
+    {
+        "q": "Which detects anomalies at runtime?",
+        "o": [
+            "Falco and similar tools",
+            "No detection",
+            "Manual review",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is shift-left security?",
+        "o": [
+            "Security early in development",
+            "Security at end",
+            "No security",
+            "Random security"
+        ]
+    },
+    {
+        "q": "Which benefit has shift-left?",
+        "o": [
+            "Fix issues when cheaper",
+            "More expensive fixes",
+            "No benefit",
+            "Slower development"
+        ]
+    },
+    {
+        "q": "What is security champions program?",
+        "o": [
+            "Developers with security focus",
+            "Security team only",
+            "No program",
+            "Random champions"
+        ]
+    },
+    {
+        "q": "Which scales security knowledge?",
+        "o": [
+            "Security champions in teams",
+            "Central team only",
+            "No scaling",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is secure by default?",
+        "o": [
+            "Security built into default config",
+            "Security optional",
+            "No security",
+            "User configures all"
+        ]
+    },
+    {
+        "q": "Which reduces configuration errors?",
+        "o": [
+            "Secure default settings",
+            "No defaults",
+            "Insecure defaults",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is defense in depth?",
+        "o": [
+            "Multiple security layers",
+            "Single defense",
+            "No defense",
+            "Random defense"
+        ]
+    },
+    {
+        "q": "Which prevents single point of failure?",
+        "o": [
+            "Layered security controls",
+            "One control only",
+            "No controls",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is fail-secure design?",
+        "o": [
+            "Default to secure state on failure",
+            "Fail open",
+            "No default",
+            "Random behavior"
+        ]
+    },
+    {
+        "q": "Which is safer on failure?",
+        "o": [
+            "Fail-closed design",
+            "Fail-open design",
+            "Random failure",
+            "No planning"
+        ]
+    },
+    {
+        "q": "What is separation of duties?",
+        "o": [
+            "Split critical functions",
+            "One person all",
+            "No separation",
+            "Random assignment"
+        ]
+    },
+    {
+        "q": "Which prevents single person abuse?",
+        "o": [
+            "Multi-person authorization",
+            "Single approval",
+            "No approval",
+            "Trust everyone"
+        ]
+    },
+    {
+        "q": "What is break glass procedure?",
+        "o": [
+            "Emergency access process",
+            "Break windows",
+            "No emergency access",
+            "Random access"
+        ]
+    },
+    {
+        "q": "Which provides emergency admin?",
+        "o": [
+            "Documented break glass accounts",
+            "Shared passwords",
+            "No procedure",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is security as code?",
+        "o": [
+            "Define security through code",
+            "Manual security",
+            "No security",
+            "Random config"
+        ]
+    },
+    {
+        "q": "Which version controls security config?",
+        "o": [
+            "GitOps for infrastructure",
+            "No versioning",
+            "Manual tracking",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is policy as code?",
+        "o": [
+            "Define policies programmatically",
+            "Written policies only",
+            "No policies",
+            "Verbal policies"
+        ]
+    },
+    {
+        "q": "Which enforces policy as code?",
+        "o": [
+            "OPA, Sentinel and similar",
+            "Manual enforcement",
+            "No enforcement",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is OPA Gatekeeper?",
+        "o": [
+            "Kubernetes policy engine",
+            "Network gateway",
+            "Open gate",
+            "Random gate"
+        ]
+    },
+    {
+        "q": "Which blocks non-compliant deployments?",
+        "o": [
+            "Admission controller policies",
+            "No blocking",
+            "Allow all",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is Kyverno?",
+        "o": [
+            "Kubernetes native policy engine",
+            "Network tool",
+            "Database",
+            "Storage"
+        ]
+    },
+    {
+        "q": "Which validates Kubernetes manifests?",
+        "o": [
+            "Policy engines and linters",
+            "No validation",
+            "Manual review",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is supply chain security?",
+        "o": [
+            "Secure software supply chain",
+            "Physical supplies",
+            "No security",
+            "Random security"
+        ]
+    },
+    {
+        "q": "Which SLSA level is highest?",
+        "o": [
+            "SLSA Level 4",
+            "Level 1",
+            "Level 0",
+            "No levels"
+        ]
+    },
+    {
+        "q": "What is SBOM?",
+        "o": [
+            "Software Bill of Materials",
+            "System Board",
+            "Storage Bill",
+            "Security Board"
+        ]
+    },
+    {
+        "q": "Which documents software components?",
+        "o": [
+            "SBOM generation tools",
+            "No documentation",
+            "Manual list",
+            "Hope for best"
+        ]
+    },
+    {
+        "q": "What is Sigstore?",
+        "o": [
+            "Signing and verification project",
+            "Storage project",
+            "Sign language",
+            "Signal store"
+        ]
+    },
+    {
+        "q": "Which signs container images?",
+        "o": [
+            "Cosign and Sigstore",
+            "No signing",
+            "Trust images",
+            "Hope for best"
+        ]
+    }
+]

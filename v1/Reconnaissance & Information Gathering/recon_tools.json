@@ -1,0 +1,4529 @@
+[
+    {
+        "q": "What is the primary purpose of Nmap in reconnaissance?",
+        "o": [
+            "Network discovery and port scanning",
+            "Password cracking and hashing",
+            "Web application pen testing",
+            "Malware analysis detection"
+        ]
+    },
+    {
+        "q": "Which Nmap flag performs a basic TCP connect scan?",
+        "o": [
+            "-sT for full connection",
+            "-sS for stealth mode",
+            "-sU for UDP scanning",
+            "-sA for ACK scanning"
+        ]
+    },
+    {
+        "q": "What does Maltego primarily visualize during OSINT?",
+        "o": [
+            "Entity relationships and links",
+            "Network packet captures",
+            "System memory layouts",
+            "Database table schemas"
+        ]
+    },
+    {
+        "q": "Which tool specializes in email address harvesting?",
+        "o": [
+            "theHarvester tool",
+            "Wireshark sniffer",
+            "Metasploit module",
+            "Burp Suite proxy"
+        ]
+    },
+    {
+        "q": "What type of data does Shodan primarily index?",
+        "o": [
+            "Internet-connected devices",
+            "Social media accounts",
+            "Email server records",
+            "Domain name systems"
+        ]
+    },
+    {
+        "q": "Which Nmap scan type is considered the stealthiest?",
+        "o": [
+            "SYN scan using -sS flag",
+            "Connect scan using -sT",
+            "Version detection -sV",
+            "Ping scan using -sP"
+        ]
+    },
+    {
+        "q": "What is a transform in Maltego terminology?",
+        "o": [
+            "A query that discovers new entities",
+            "A filter that removes duplicates",
+            "A tool that exports reports",
+            "A script that deletes nodes"
+        ]
+    },
+    {
+        "q": "Recon-ng is primarily designed as what type of tool?",
+        "o": [
+            "Modular reconnaissance framework",
+            "Wireless network cracker",
+            "Binary reverse engineer",
+            "Firewall bypass utility"
+        ]
+    },
+    {
+        "q": "Which search engine does Censys specialize in indexing?",
+        "o": [
+            "Internet infrastructure data",
+            "Dark web marketplace listings",
+            "Academic research papers",
+            "Government document leaks"
+        ]
+    },
+    {
+        "q": "What does the Nmap -O flag attempt to detect?",
+        "o": [
+            "Operating system fingerprint",
+            "Open proxy connections",
+            "Outdated software patches",
+            "Online user accounts"
+        ]
+    },
+    {
+        "q": "Which Maltego edition is free for personal use?",
+        "o": [
+            "Maltego CE Community",
+            "Maltego XL Enterprise",
+            "Maltego Classic Pro",
+            "Maltego Server Suite"
+        ]
+    },
+    {
+        "q": "What data source does theHarvester NOT typically query?",
+        "o": [
+            "Encrypted disk drives",
+            "Google search results",
+            "LinkedIn public data",
+            "DNS server records"
+        ]
+    },
+    {
+        "q": "Which Shodan filter searches by organization name?",
+        "o": [
+            "org: filter keyword",
+            "name: filter keyword",
+            "company: filter query",
+            "business: filter term"
+        ]
+    },
+    {
+        "q": "What is the default Nmap scan when run as root?",
+        "o": [
+            "SYN stealth scan mode",
+            "TCP connect scan mode",
+            "UDP full port coverage",
+            "ICMP ping sweep only"
+        ]
+    },
+    {
+        "q": "Which entity type is central in Maltego graphs?",
+        "o": [
+            "Domain names and emails",
+            "Binary executable files",
+            "Encrypted data streams",
+            "Hardware device models"
+        ]
+    },
+    {
+        "q": "What programming language is Recon-ng written in?",
+        "o": [
+            "Python programming",
+            "Ruby scripting",
+            "JavaScript code",
+            "Perl scripting"
+        ]
+    },
+    {
+        "q": "Censys data comes primarily from what source?",
+        "o": [
+            "Internet-wide scanning",
+            "User submitted forms",
+            "Dark web scraping",
+            "Manual data entries"
+        ]
+    },
+    {
+        "q": "Which Nmap flag enables aggressive scan options?",
+        "o": [
+            "-A enables aggressive",
+            "-X enables extended",
+            "-F enables fast mode",
+            "-Q enables quiet scan"
+        ]
+    },
+    {
+        "q": "What does Maltego use to store investigation data?",
+        "o": [
+            "Graph database format",
+            "Flat text file logs",
+            "XML configuration data",
+            "Binary blob storage"
+        ]
+    },
+    {
+        "q": "Which option in theHarvester specifies the data source?",
+        "o": [
+            "-b for data source",
+            "-s for search type",
+            "-d for domain query",
+            "-l for limit number"
+        ]
+    },
+    {
+        "q": "What protocol does Shodan commonly scan for IoT devices?",
+        "o": [
+            "Telnet and SSH ports",
+            "SFTP file transfer",
+            "LDAP directory only",
+            "SNMP v3 encrypted"
+        ]
+    },
+    {
+        "q": "Which Nmap script category focuses on vulnerability detection?",
+        "o": [
+            "vuln script category",
+            "safe script category",
+            "auth script category",
+            "discovery category"
+        ]
+    },
+    {
+        "q": "What is a machine in the context of Maltego?",
+        "o": [
+            "Automated transform sequence",
+            "Physical computer target",
+            "Virtual network adapter",
+            "Database server instance"
+        ]
+    },
+    {
+        "q": "How do you install modules in Recon-ng?",
+        "o": [
+            "marketplace install cmd",
+            "module download path",
+            "pip install package",
+            "git clone repository"
+        ]
+    },
+    {
+        "q": "What certificate data does Censys collect?",
+        "o": [
+            "SSL/TLS certificate info",
+            "Code signing details",
+            "Email S/MIME certs only",
+            "VPN tunnel configs"
+        ]
+    },
+    {
+        "q": "Which Nmap timing template is the fastest?",
+        "o": [
+            "-T5 insane timing",
+            "-T0 paranoid timing",
+            "-T1 sneaky timing",
+            "-T3 normal timing"
+        ]
+    },
+    {
+        "q": "Maltego transforms data using what external services?",
+        "o": [
+            "Transform hub servers",
+            "Local file systems",
+            "USB connected tools",
+            "Bluetooth connections"
+        ]
+    },
+    {
+        "q": "What does theHarvester -l flag control?",
+        "o": [
+            "Limit search results",
+            "Log output verbosity",
+            "List available sources",
+            "Load configuration file"
+        ]
+    },
+    {
+        "q": "Which Shodan membership tier offers API access?",
+        "o": [
+            "All paid membership tiers",
+            "Only enterprise accounts",
+            "Free tier includes API",
+            "Academic license only"
+        ]
+    },
+    {
+        "q": "What does Nmap NSE stand for?",
+        "o": [
+            "Nmap Scripting Engine",
+            "Network Security Enum",
+            "Node Scan Extension",
+            "New Service Explorer"
+        ]
+    },
+    {
+        "q": "Which Maltego feature allows case collaboration?",
+        "o": [
+            "Team collaboration tools",
+            "Single user mode only",
+            "Offline storage option",
+            "Local graph exports"
+        ]
+    },
+    {
+        "q": "Recon-ng stores collected data in what format?",
+        "o": [
+            "SQLite database file",
+            "MongoDB collections",
+            "Redis key-value pairs",
+            "Flat CSV text files"
+        ]
+    },
+    {
+        "q": "What is a Shodan facet in search results?",
+        "o": [
+            "Aggregated data summary",
+            "Individual host detail",
+            "API rate limiter",
+            "Geographic map view"
+        ]
+    },
+    {
+        "q": "Which Nmap output format is XML-based?",
+        "o": [
+            "-oX for XML output",
+            "-oN for normal text",
+            "-oG for grepable out",
+            "-oS for script kiddie"
+        ]
+    },
+    {
+        "q": "What is footprinting in Maltego?",
+        "o": [
+            "Mapping entity relations",
+            "Deleting old graph data",
+            "Exporting as PDF file",
+            "Importing raw datasets"
+        ]
+    },
+    {
+        "q": "Which theHarvester source queries Shodan data?",
+        "o": [
+            "-b shodan as source",
+            "-b censys for devices",
+            "-b nmap for ports",
+            "-b metasploit scan"
+        ]
+    },
+    {
+        "q": "Censys query language is similar to which format?",
+        "o": [
+            "Elasticsearch query DSL",
+            "SQL database queries",
+            "GraphQL query syntax",
+            "Regular expressions"
+        ]
+    },
+    {
+        "q": "What does Nmap -sV flag detect?",
+        "o": [
+            "Service version info",
+            "VLAN configuration data",
+            "Virtual host settings",
+            "VPN tunnel services"
+        ]
+    },
+    {
+        "q": "Which Maltego edition supports custom transforms?",
+        "o": [
+            "All editions support it",
+            "Only enterprise version",
+            "Classic edition only",
+            "Community excludes it"
+        ]
+    },
+    {
+        "q": "What workspace feature does Recon-ng provide?",
+        "o": [
+            "Separate project spaces",
+            "Shared cloud storage",
+            "Real-time sync feature",
+            "Auto-backup service"
+        ]
+    },
+    {
+        "q": "Which port is commonly searched on Shodan for cameras?",
+        "o": [
+            "Port 554 for RTSP",
+            "Port 22 for SSH",
+            "Port 443 for HTTPS",
+            "Port 3306 for MySQL"
+        ]
+    },
+    {
+        "q": "What does Nmap --top-ports flag specify?",
+        "o": [
+            "Scan most common ports",
+            "Target top-level domain",
+            "Output to top of file",
+            "Test open proxies"
+        ]
+    },
+    {
+        "q": "Maltego entities can represent which data types?",
+        "o": [
+            "People, domains, IPs",
+            "Only email addresses",
+            "Just domain records",
+            "File hashes only"
+        ]
+    },
+    {
+        "q": "Which Recon-ng command shows available modules?",
+        "o": [
+            "modules search query",
+            "list all components",
+            "show installed now",
+            "display everything"
+        ]
+    },
+    {
+        "q": "What API does Censys provide for automation?",
+        "o": [
+            "REST API endpoints",
+            "SOAP web services",
+            "GraphQL interface",
+            "gRPC protocols only"
+        ]
+    },
+    {
+        "q": "Which Nmap flag excludes hosts from scanning?",
+        "o": [
+            "--exclude host list",
+            "--remove from scan",
+            "--skip target host",
+            "--ignore addresses"
+        ]
+    },
+    {
+        "q": "What graph layout does Maltego use by default?",
+        "o": [
+            "Block layout format",
+            "Circular ring view",
+            "Hierarchical trees",
+            "Random positioning"
+        ]
+    },
+    {
+        "q": "How does theHarvester output results?",
+        "o": [
+            "Multiple export formats",
+            "Console output only",
+            "PDF documents only",
+            "Database insert only"
+        ]
+    },
+    {
+        "q": "Shodan Exploits database contains what information?",
+        "o": [
+            "Known vulnerability data",
+            "Zero-day exploit code",
+            "Custom attack scripts",
+            "Malware binary samples"
+        ]
+    },
+    {
+        "q": "What does the Nmap -Pn flag disable?",
+        "o": [
+            "Host discovery pings",
+            "Port number display",
+            "Packet fragmentation",
+            "Protocol detection"
+        ]
+    },
+    {
+        "q": "Which Maltego server hosts public transforms?",
+        "o": [
+            "Transform hub server",
+            "Local API gateway",
+            "Cloud storage bucket",
+            "Database replica set"
+        ]
+    },
+    {
+        "q": "What is a workspace in Recon-ng context?",
+        "o": [
+            "Isolated project area",
+            "Shared team folder",
+            "Temporary cache dir",
+            "Backup storage space"
+        ]
+    },
+    {
+        "q": "Which Censys search finds exposed databases?",
+        "o": [
+            "services.service_name",
+            "host.database.type",
+            "query.db.exposed",
+            "find.data.stores"
+        ]
+    },
+    {
+        "q": "What does Nmap --script flag invoke?",
+        "o": [
+            "NSE script execution",
+            "Custom shell commands",
+            "Python script runner",
+            "Bash script launcher"
+        ]
+    },
+    {
+        "q": "Maltego Casefile is used for what purpose?",
+        "o": [
+            "Offline analysis work",
+            "Online real-time scans",
+            "Automated data fetch",
+            "Cloud storage backup"
+        ]
+    },
+    {
+        "q": "Which Recon-ng command sets API keys?",
+        "o": [
+            "keys add key_name",
+            "api set credentials",
+            "config store token",
+            "setup auth values"
+        ]
+    },
+    {
+        "q": "What search finds industrial systems on Shodan?",
+        "o": [
+            "port:502 for Modbus",
+            "ics:true for SCADA",
+            "industrial:enabled",
+            "plc:connected now"
+        ]
+    },
+    {
+        "q": "Which Nmap scan detects firewall rules?",
+        "o": [
+            "ACK scan with -sA",
+            "SYN scan with -sS",
+            "FIN scan with -sF",
+            "Null scan -sN flag"
+        ]
+    },
+    {
+        "q": "What data does Maltego collect via DNS transforms?",
+        "o": [
+            "DNS records and IPs",
+            "Password hash dumps",
+            "HTTP cookie values",
+            "Session token data"
+        ]
+    },
+    {
+        "q": "theHarvester integrates with which tools?",
+        "o": [
+            "Multiple OSINT sources",
+            "Only Google search",
+            "Just LinkedIn only",
+            "Shodan exclusively"
+        ]
+    },
+    {
+        "q": "What is Shodan Monitor used for?",
+        "o": [
+            "Continuous asset watch",
+            "One-time port scans",
+            "Manual device checks",
+            "Offline data review"
+        ]
+    },
+    {
+        "q": "Which Nmap flag sets source port number?",
+        "o": [
+            "--source-port number",
+            "--origin-port value",
+            "--from-port config",
+            "--local-port setting"
+        ]
+    },
+    {
+        "q": "What determines Maltego transform hub access?",
+        "o": [
+            "License type and tier",
+            "Internet speed only",
+            "Hardware capability",
+            "Operating system type"
+        ]
+    },
+    {
+        "q": "Recon-ng reporting module exports to what formats?",
+        "o": [
+            "HTML, JSON, and CSV",
+            "PDF documents only",
+            "Plain text output",
+            "XML schema format"
+        ]
+    },
+    {
+        "q": "Which Censys dataset includes HTTP headers?",
+        "o": [
+            "Host data collection",
+            "Certificate dataset",
+            "Exploit database",
+            "Vulnerability feeds"
+        ]
+    },
+    {
+        "q": "What does Nmap -sU flag scan?",
+        "o": [
+            "UDP port services",
+            "Unix socket files",
+            "URL endpoints only",
+            "User account info"
+        ]
+    },
+    {
+        "q": "Maltego graph exports support which formats?",
+        "o": [
+            "PNG, PDF, and CSV",
+            "Only JPEG images",
+            "Just text reports",
+            "Video file format"
+        ]
+    },
+    {
+        "q": "Which Recon-ng module discovers subdomains?",
+        "o": [
+            "recon/domains-hosts",
+            "scan/network-ports",
+            "enum/users-emails",
+            "gather/creds-hashes"
+        ]
+    },
+    {
+        "q": "What banner data does Shodan capture?",
+        "o": [
+            "Service response text",
+            "Login credentials",
+            "Encryption key data",
+            "File system paths"
+        ]
+    },
+    {
+        "q": "Which Nmap scan type uses FIN packets only?",
+        "o": [
+            "FIN scan using -sF",
+            "SYN scan using -sS",
+            "ACK scan using -sA",
+            "NULL scan using -sN"
+        ]
+    },
+    {
+        "q": "What is pivoting in Maltego investigations?",
+        "o": [
+            "Finding related data",
+            "Deleting old nodes",
+            "Exporting full graph",
+            "Starting new project"
+        ]
+    },
+    {
+        "q": "theHarvester -d flag specifies what parameter?",
+        "o": [
+            "Target domain name",
+            "Database connection",
+            "Debug output mode",
+            "Download path set"
+        ]
+    },
+    {
+        "q": "Shodan CLI requires what for authentication?",
+        "o": [
+            "Valid API key auth",
+            "Username password pair",
+            "OAuth token only",
+            "Certificate file"
+        ]
+    },
+    {
+        "q": "What does Nmap decoy scan (-D) accomplish?",
+        "o": [
+            "Obscures scanner IP",
+            "Doubles scan speed",
+            "Downloads results",
+            "Disables firewall"
+        ]
+    },
+    {
+        "q": "Which Maltego entity represents a company?",
+        "o": [
+            "Company entity type",
+            "Person object node",
+            "Domain name entry",
+            "Email address item"
+        ]
+    },
+    {
+        "q": "Recon-ng modules are organized by what criteria?",
+        "o": [
+            "Function categories",
+            "Alphabetical order",
+            "Date of creation",
+            "Popularity ranking"
+        ]
+    },
+    {
+        "q": "What geographic data does Censys provide?",
+        "o": [
+            "IP location mapping",
+            "Street address data",
+            "Building floor plans",
+            "Office layout info"
+        ]
+    },
+    {
+        "q": "Which Nmap flag randomizes target order?",
+        "o": [
+            "--randomize-hosts",
+            "--shuffle-targets",
+            "--mix-order-list",
+            "--scramble-hosts"
+        ]
+    },
+    {
+        "q": "What is Maltego CTAS system?",
+        "o": [
+            "Commercial transform set",
+            "Client tracking app",
+            "Custom tool adapter",
+            "Certificate trust auth"
+        ]
+    },
+    {
+        "q": "theHarvester can discover what user data?",
+        "o": [
+            "Email and usernames",
+            "Passwords directly",
+            "Social security nums",
+            "Bank account info"
+        ]
+    },
+    {
+        "q": "Shodan search filter hostname: finds what?",
+        "o": [
+            "Devices by hostname",
+            "Historical scan data",
+            "Certificate issues",
+            "Exploit references"
+        ]
+    },
+    {
+        "q": "What does Nmap --open flag filter?",
+        "o": [
+            "Shows only open ports",
+            "Opens output file",
+            "Allows web access",
+            "Enables open relay"
+        ]
+    },
+    {
+        "q": "Maltego Teeth is what type of tool?",
+        "o": [
+            "Data mining package",
+            "Graph layout engine",
+            "Report export tool",
+            "API testing suite"
+        ]
+    },
+    {
+        "q": "Which Recon-ng command loads a module?",
+        "o": [
+            "modules load path",
+            "use module/name",
+            "import mod.file",
+            "require package"
+        ]
+    },
+    {
+        "q": "What vulnerability data does Censys correlate?",
+        "o": [
+            "CVE to host mapping",
+            "Zero-day exploits",
+            "Malware signatures",
+            "Attack patterns"
+        ]
+    },
+    {
+        "q": "Which Nmap option sets packet TTL value?",
+        "o": [
+            "--ttl value setting",
+            "--time-live count",
+            "--hop-limit number",
+            "--packet-life val"
+        ]
+    },
+    {
+        "q": "What does Maltego itDS represent?",
+        "o": [
+            "Internal transform server",
+            "Internet data source",
+            "Investigation display",
+            "Information tracking"
+        ]
+    },
+    {
+        "q": "theHarvester passive mode avoids what?",
+        "o": [
+            "Direct target contact",
+            "Using search engines",
+            "Collecting any data",
+            "Saving output files"
+        ]
+    },
+    {
+        "q": "Shodan Images feature displays what data?",
+        "o": [
+            "Screenshots of services",
+            "Device photographs",
+            "Company logo files",
+            "User profile pics"
+        ]
+    },
+    {
+        "q": "What does Nmap idle scan (-sI) use?",
+        "o": [
+            "Zombie host for scan",
+            "Idle timeout value",
+            "Internal network only",
+            "Internet relay scan"
+        ]
+    },
+    {
+        "q": "Which Maltego link property shows relationship?",
+        "o": [
+            "Link label descriptor",
+            "Node color setting",
+            "Entity size value",
+            "Graph layout type"
+        ]
+    },
+    {
+        "q": "Recon-ng API keys are stored where?",
+        "o": [
+            "Local database file",
+            "Cloud secure vault",
+            "Plain text config",
+            "Environment variable"
+        ]
+    },
+    {
+        "q": "What Censys search finds SSH servers?",
+        "o": [
+            "services.port:22",
+            "ssh.enabled:true",
+            "protocol.ssh.on",
+            "find.ssh.servers"
+        ]
+    },
+    {
+        "q": "Which Nmap flag outputs all formats at once?",
+        "o": [
+            "-oA for all formats",
+            "-oF for full output",
+            "-oM for multi-type",
+            "-oE for everything"
+        ]
+    },
+    {
+        "q": "What is a Maltego collection in graph view?",
+        "o": [
+            "Grouped entity set",
+            "Deleted item trash",
+            "Saved search query",
+            "Export configuration"
+        ]
+    },
+    {
+        "q": "theHarvester LinkedIn source gathers what data?",
+        "o": [
+            "Employee name info",
+            "Password hash data",
+            "Financial records",
+            "Medical history"
+        ]
+    },
+    {
+        "q": "What does Nmap fragment scan (-f) accomplish?",
+        "o": [
+            "Splits packets into fragments",
+            "Finds file system paths",
+            "Filters open port list",
+            "Forces faster timing mode"
+        ]
+    },
+    {
+        "q": "Which Maltego entity category includes infrastructure?",
+        "o": [
+            "Infrastructure entities",
+            "Personal data objects",
+            "Financial record types",
+            "Medical information"
+        ]
+    },
+    {
+        "q": "What Recon-ng module harvests email addresses?",
+        "o": [
+            "recon/domains-contacts",
+            "exploit/creds-gather",
+            "scan/ports-services",
+            "enum/users-passwords"
+        ]
+    },
+    {
+        "q": "How does Shodan categorize discovered services?",
+        "o": [
+            "By port and service tag",
+            "By geographic location only",
+            "By owner company name",
+            "By device manufacturer"
+        ]
+    },
+    {
+        "q": "Which Nmap script checks for common vulnerabilities?",
+        "o": [
+            "vuln category scripts",
+            "safe category scripts",
+            "auth category scripts",
+            "version detection"
+        ]
+    },
+    {
+        "q": "What is Maltego transform server timeout limit?",
+        "o": [
+            "Configurable per transform",
+            "Fixed at 30 seconds",
+            "Always 60 seconds max",
+            "No timeout exists"
+        ]
+    },
+    {
+        "q": "Recon-ng global options affect what settings?",
+        "o": [
+            "All module behavior",
+            "Only network scans",
+            "Just output format",
+            "Database config only"
+        ]
+    },
+    {
+        "q": "What Censys data helps identify vulnerable hosts?",
+        "o": [
+            "Service banner and version",
+            "Owner contact details",
+            "Physical server location",
+            "Purchase order history"
+        ]
+    },
+    {
+        "q": "Which Nmap scan type detects OS using TTL?",
+        "o": [
+            "OS detection with -O",
+            "Service scan with -sV",
+            "Ping sweep with -sP",
+            "Script scan with -sC"
+        ]
+    },
+    {
+        "q": "What Maltego feature organizes large investigations?",
+        "o": [
+            "View and collections",
+            "Single graph only",
+            "Text file exports",
+            "Database dump tools"
+        ]
+    },
+    {
+        "q": "Which Recon-ng table stores discovered hosts?",
+        "o": [
+            "hosts table storage",
+            "targets database",
+            "endpoints listing",
+            "servers collection"
+        ]
+    },
+    {
+        "q": "Shodan honeypot score indicates what probability?",
+        "o": [
+            "Device being a honeypot",
+            "Vulnerability severity",
+            "Network bandwidth speed",
+            "Geographic accuracy"
+        ]
+    },
+    {
+        "q": "What does Nmap --min-rate flag control?",
+        "o": [
+            "Minimum packets per second",
+            "Minimum open ports shown",
+            "Minimum retry attempts",
+            "Minimum timeout delay"
+        ]
+    },
+    {
+        "q": "Maltego bookmark feature saves what items?",
+        "o": [
+            "Important graph entities",
+            "Transform execution logs",
+            "Database query results",
+            "Export file locations"
+        ]
+    },
+    {
+        "q": "How does theHarvester handle rate limiting?",
+        "o": [
+            "Built-in delay options",
+            "No rate limit handling",
+            "Automatic proxy rotation",
+            "VPN tunnel switching"
+        ]
+    },
+    {
+        "q": "Which Censys field shows SSL certificate data?",
+        "o": [
+            "parsed.issuer field",
+            "raw.binary data",
+            "host.location info",
+            "service.banner text"
+        ]
+    },
+    {
+        "q": "What Nmap probe does version detection send?",
+        "o": [
+            "Service-specific probes",
+            "Random data packets",
+            "Empty TCP segments only",
+            "UDP broadcast frames"
+        ]
+    },
+    {
+        "q": "Maltego property values define what attributes?",
+        "o": [
+            "Entity specific details",
+            "Graph visual settings",
+            "Transform access rights",
+            "License key storage"
+        ]
+    },
+    {
+        "q": "What Recon-ng schema stores credentials?",
+        "o": [
+            "credentials table",
+            "passwords database",
+            "secrets storage",
+            "auth_data records"
+        ]
+    },
+    {
+        "q": "Shodan filter before: searches by what date?",
+        "o": [
+            "Discovery timestamp",
+            "Certificate expiry",
+            "Last update time",
+            "Creation date only"
+        ]
+    },
+    {
+        "q": "Which Nmap option enables IPv6 scanning?",
+        "o": [
+            "-6 flag for IPv6",
+            "-4 flag for IPv4 only",
+            "-I flag for IP mode",
+            "-P flag for protocol"
+        ]
+    },
+    {
+        "q": "What Maltego machine type runs on startup?",
+        "o": [
+            "None by default",
+            "Footprint machine",
+            "Discovery machine",
+            "All machines run"
+        ]
+    },
+    {
+        "q": "Recon-ng spool feature captures what output?",
+        "o": [
+            "Session command log",
+            "Network packet data",
+            "Binary file dumps",
+            "Encrypted traffic"
+        ]
+    },
+    {
+        "q": "Which Shodan API endpoint lists search facets?",
+        "o": [
+            "/shodan/host/search",
+            "/api/facets/list",
+            "/query/metadata",
+            "/data/summary"
+        ]
+    },
+    {
+        "q": "What Nmap reason field indicates port status?",
+        "o": [
+            "Why port is open/closed",
+            "Service application name",
+            "Protocol version info",
+            "Host operating system"
+        ]
+    },
+    {
+        "q": "Maltego weight property affects what behavior?",
+        "o": [
+            "Entity visual sizing",
+            "Transform priority",
+            "Link direction",
+            "Color selection"
+        ]
+    },
+    {
+        "q": "Which theHarvester option saves XML output?",
+        "o": [
+            "-f filename option",
+            "-x xml flag only",
+            "-o output switch",
+            "-s save parameter"
+        ]
+    },
+    {
+        "q": "Censys data attribution shows what info?",
+        "o": [
+            "ASN and organization",
+            "User personal details",
+            "Company revenue data",
+            "Employee credentials"
+        ]
+    },
+    {
+        "q": "What Nmap aggressive timing affects most?",
+        "o": [
+            "Probe retransmission speed",
+            "Output file formatting",
+            "Script execution order",
+            "Target selection method"
+        ]
+    },
+    {
+        "q": "Maltego graph detail level controls what display?",
+        "o": [
+            "Entity property visibility",
+            "Transform execution speed",
+            "Database query limits",
+            "Network timeout values"
+        ]
+    },
+    {
+        "q": "Recon-ng show command displays what info?",
+        "o": [
+            "Module options and info",
+            "Database table contents",
+            "Network scan results",
+            "Exported file paths"
+        ]
+    },
+    {
+        "q": "Which Shodan search finds web servers?",
+        "o": [
+            "port:80 or port:443",
+            "http:true filter only",
+            "web.server:enabled",
+            "service.type:web"
+        ]
+    },
+    {
+        "q": "What Nmap verbosity level shows most detail?",
+        "o": [
+            "-vvv maximum verbosity",
+            "-v single verbose only",
+            "-q quiet mode enabled",
+            "-d debug for details"
+        ]
+    },
+    {
+        "q": "Maltego notes field stores what information?",
+        "o": [
+            "User investigation notes",
+            "Transform error logs",
+            "API key credentials",
+            "License information"
+        ]
+    },
+    {
+        "q": "theHarvester DNS resolution performs what tasks?",
+        "o": [
+            "Resolves hostnames to IPs",
+            "Cracks DNS passwords",
+            "Exploits DNS servers",
+            "Creates fake records"
+        ]
+    },
+    {
+        "q": "What Censys query finds TLS 1.0 servers?",
+        "o": [
+            "services.tls.version",
+            "ssl.protocol:1.0",
+            "tls.legacy:enabled",
+            "cert.security:weak"
+        ]
+    },
+    {
+        "q": "Which Nmap scan sends no payload data?",
+        "o": [
+            "NULL scan with -sN",
+            "SYN scan with -sS",
+            "FIN scan with -sF",
+            "ACK scan with -sA"
+        ]
+    },
+    {
+        "q": "Maltego entity icon represents what type?",
+        "o": [
+            "Entity category shown",
+            "Transform run status",
+            "License tier level",
+            "Network connection"
+        ]
+    },
+    {
+        "q": "What Recon-ng command creates a workspace?",
+        "o": [
+            "workspaces create name",
+            "new workspace command",
+            "make project folder",
+            "add space directory"
+        ]
+    },
+    {
+        "q": "Shodan organization data comes from what source?",
+        "o": [
+            "IP WHOIS registrations",
+            "User submitted forms",
+            "Company website data",
+            "Social media profiles"
+        ]
+    },
+    {
+        "q": "What Nmap output includes script results?",
+        "o": [
+            "Normal and XML outputs",
+            "Grepable format only",
+            "Script kiddie format",
+            "No output includes it"
+        ]
+    },
+    {
+        "q": "Maltego link thickness indicates what measurement?",
+        "o": [
+            "Relationship strength",
+            "Data transfer speed",
+            "Query execution time",
+            "Entity importance"
+        ]
+    },
+    {
+        "q": "Which theHarvester source queries Twitter data?",
+        "o": [
+            "-b twitter option",
+            "-t tweet parameter",
+            "-s social flag",
+            "-x extract switch"
+        ]
+    },
+    {
+        "q": "Censys ASN search filter syntax is what?",
+        "o": [
+            "autonomous_system.asn",
+            "asn:number format",
+            "as.number:value",
+            "network.asn:id"
+        ]
+    },
+    {
+        "q": "What does Nmap --unprivileged mode restrict?",
+        "o": [
+            "Raw socket access",
+            "Output file writing",
+            "DNS query limits",
+            "Target host count"
+        ]
+    },
+    {
+        "q": "Maltego transform input defines what parameter?",
+        "o": [
+            "Entity to process",
+            "API key required",
+            "Output file path",
+            "Network interface"
+        ]
+    },
+    {
+        "q": "Recon-ng snapshot feature saves what data?",
+        "o": [
+            "Complete workspace backup",
+            "Network packet capture",
+            "Transform execution",
+            "API response cache"
+        ]
+    },
+    {
+        "q": "Which Shodan filter searches by country code?",
+        "o": [
+            "country:XX format",
+            "geo.country:name",
+            "location.cc:iso",
+            "region:country_id"
+        ]
+    },
+    {
+        "q": "What Nmap proxy scan uses for connections?",
+        "o": [
+            "SOCKS or HTTP proxy",
+            "Direct connections only",
+            "VPN tunnel required",
+            "Tor network default"
+        ]
+    },
+    {
+        "q": "Maltego transform output creates what items?",
+        "o": [
+            "New entities on graph",
+            "Text file reports only",
+            "Database records",
+            "PDF document pages"
+        ]
+    },
+    {
+        "q": "theHarvester virtual hosts feature finds what?",
+        "o": [
+            "Domains sharing IP",
+            "Virtual machine instances",
+            "Cloud container names",
+            "Server admin accounts"
+        ]
+    },
+    {
+        "q": "What Censys search operator combines filters?",
+        "o": [
+            "AND, OR, NOT logic",
+            "Plus minus symbols",
+            "Asterisk wildcards only",
+            "Question marks alone"
+        ]
+    },
+    {
+        "q": "Which Nmap flag scans UDP and TCP together?",
+        "o": [
+            "-sS -sU combined",
+            "-sSU single flag",
+            "-sTU dual mode",
+            "-sB for both"
+        ]
+    },
+    {
+        "q": "Maltego entity palette contains what items?",
+        "o": [
+            "Available entity types",
+            "Color scheme options",
+            "Transform shortcuts",
+            "Graph layout tools"
+        ]
+    },
+    {
+        "q": "What Recon-ng db command manages database?",
+        "o": [
+            "Database operations",
+            "Debug mode toggle",
+            "Dashboard display",
+            "Download manager"
+        ]
+    },
+    {
+        "q": "Shodan query string length limit is what?",
+        "o": [
+            "Varies by membership",
+            "Fixed at 500 chars",
+            "Unlimited for all",
+            "Always 1000 chars"
+        ]
+    },
+    {
+        "q": "What Nmap script category runs safe checks?",
+        "o": [
+            "safe category scripts",
+            "vuln category only",
+            "exploit category",
+            "intrusive scripts"
+        ]
+    },
+    {
+        "q": "Maltego link direction shows what relationship?",
+        "o": [
+            "Parent to child flow",
+            "Creation timestamp",
+            "Transform source only",
+            "License constraints"
+        ]
+    },
+    {
+        "q": "Which theHarvester option sets start result?",
+        "o": [
+            "-S start parameter",
+            "-s skip count",
+            "-b begin offset",
+            "-f from position"
+        ]
+    },
+    {
+        "q": "Censys IPv6 data coverage includes what hosts?",
+        "o": [
+            "Internet accessible IPv6",
+            "Private IPv6 ranges",
+            "Local network devices",
+            "VPN tunnel endpoints"
+        ]
+    },
+    {
+        "q": "What Nmap parallel scan strategy accomplishes?",
+        "o": [
+            "Faster multi-host scanning",
+            "Sequential port checking",
+            "Single thread mode",
+            "Quiet slow scanning"
+        ]
+    },
+    {
+        "q": "Maltego view filtering shows which entities?",
+        "o": [
+            "Matches filter criteria",
+            "All entities always",
+            "Only deleted items",
+            "Transform results only"
+        ]
+    },
+    {
+        "q": "Recon-ng delete command removes what items?",
+        "o": [
+            "Records from tables",
+            "Module from system",
+            "Workspace entirely",
+            "API key storage"
+        ]
+    },
+    {
+        "q": "Which Shodan product filter finds specific software?",
+        "o": [
+            "product: filter term",
+            "software: query key",
+            "app: search param",
+            "program: find tag"
+        ]
+    },
+    {
+        "q": "What does Nmap traceroute option discover?",
+        "o": [
+            "Network path to target",
+            "Total scan duration",
+            "Transport layer info",
+            "Target MAC address"
+        ]
+    },
+    {
+        "q": "Maltego transform category groups what types?",
+        "o": [
+            "Related function transforms",
+            "License tier groups",
+            "Color coded entities",
+            "Graph layout styles"
+        ]
+    },
+    {
+        "q": "theHarvester shodan source requires what key?",
+        "o": [
+            "Shodan API key config",
+            "No key is required",
+            "Google search key",
+            "LinkedIn access key"
+        ]
+    },
+    {
+        "q": "What Censys port state open indicates?",
+        "o": [
+            "Service accepting connections",
+            "Recently closed port",
+            "Firewall blocked state",
+            "Under maintenance"
+        ]
+    },
+    {
+        "q": "Which Nmap interface option sets network card?",
+        "o": [
+            "-e interface_name",
+            "-i network_device",
+            "-n adapter_id",
+            "-c card_number"
+        ]
+    },
+    {
+        "q": "Maltego investigation view shows what layout?",
+        "o": [
+            "Complete entity graph",
+            "Text summary only",
+            "Database raw data",
+            "API response logs"
+        ]
+    },
+    {
+        "q": "What Recon-ng info command displays?",
+        "o": [
+            "Module documentation",
+            "Network scan status",
+            "Database statistics",
+            "API key details"
+        ]
+    },
+    {
+        "q": "Shodan historical data shows what information?",
+        "o": [
+            "Past scan results",
+            "Future predictions",
+            "User access logs",
+            "Price history data"
+        ]
+    },
+    {
+        "q": "What Nmap data-length option adds to packets?",
+        "o": [
+            "Random data padding",
+            "Port number data",
+            "Target hostname",
+            "Scan timestamp"
+        ]
+    },
+    {
+        "q": "Maltego transform settings customize what behavior?",
+        "o": [
+            "Transform execution params",
+            "Graph color schemes",
+            "Entity icon display",
+            "Link direction only"
+        ]
+    },
+    {
+        "q": "Which theHarvester output format is HTML?",
+        "o": [
+            "-f generates HTML",
+            "-h html only flag",
+            "-w web output mode",
+            "-r report format"
+        ]
+    },
+    {
+        "q": "Censys labels field categorizes what data?",
+        "o": [
+            "Service classifications",
+            "User defined tags",
+            "License information",
+            "Geographic regions"
+        ]
+    },
+    {
+        "q": "What Nmap spoof-mac option accomplishes?",
+        "o": [
+            "Fakes source MAC addr",
+            "Detects MAC filtering",
+            "Reveals hidden MACs",
+            "Decrypts MAC data"
+        ]
+    },
+    {
+        "q": "Maltego public transform servers host what?",
+        "o": [
+            "Third-party transforms",
+            "License validation",
+            "Graph backup storage",
+            "User credentials"
+        ]
+    },
+    {
+        "q": "Recon-ng pwnedlist module checks what database?",
+        "o": [
+            "Breached credentials",
+            "Network vulnerabilities",
+            "Port scan history",
+            "DNS record changes"
+        ]
+    },
+    {
+        "q": "Which Shodan filter searches device banners?",
+        "o": [
+            "Default text search",
+            "banner: keyword only",
+            "response: field",
+            "data: filter term"
+        ]
+    },
+    {
+        "q": "What Nmap scan-delay option affects timing?",
+        "o": [
+            "Delay between probes",
+            "Script execution order",
+            "Output file creation",
+            "Target host sorting"
+        ]
+    },
+    {
+        "q": "Maltego transform seeding starts with what entity?",
+        "o": [
+            "Initial input entity",
+            "Random graph node",
+            "Database record ID",
+            "API key reference"
+        ]
+    },
+    {
+        "q": "theHarvester take screenshot option captures what?",
+        "o": [
+            "Web page screenshots",
+            "Network topology maps",
+            "Email thread content",
+            "Social media posts"
+        ]
+    },
+    {
+        "q": "What Censys query finds expired certificates?",
+        "o": [
+            "parsed.validity.end",
+            "cert.expired:true",
+            "ssl.invalid:yes",
+            "tls.status:bad"
+        ]
+    },
+    {
+        "q": "Which Nmap script uses brute force detection?",
+        "o": [
+            "brute category scripts",
+            "safe category scripts",
+            "discovery scripts",
+            "version detection"
+        ]
+    },
+    {
+        "q": "Maltego server transform differs how from hub?",
+        "o": [
+            "Self-hosted execution",
+            "Faster processing speed",
+            "Higher rate limits",
+            "Better output format"
+        ]
+    },
+    {
+        "q": "What Recon-ng options command configures?",
+        "o": [
+            "Module specific settings",
+            "Global preferences",
+            "Database connection",
+            "Output file paths"
+        ]
+    },
+    {
+        "q": "Shodan exploits database links to what CVE?",
+        "o": [
+            "Known vulnerability CVEs",
+            "Zero-day exploit code",
+            "Patch download links",
+            "Vendor contact info"
+        ]
+    },
+    {
+        "q": "What Nmap runtime interaction allows during scan?",
+        "o": [
+            "Status and timing changes",
+            "Adding new targets",
+            "Modifying scan type",
+            "Changing output file"
+        ]
+    },
+    {
+        "q": "Maltego machine editor creates what items?",
+        "o": [
+            "Automated transform chains",
+            "Custom entity types",
+            "Graph layout templates",
+            "Database query filters"
+        ]
+    },
+    {
+        "q": "Which theHarvester source queries Bing?",
+        "o": [
+            "-b bing as source",
+            "-m microsoft search",
+            "-s search engine",
+            "-w web crawler"
+        ]
+    },
+    {
+        "q": "Censys bulk data API provides what access?",
+        "o": [
+            "Full dataset downloads",
+            "Real-time streaming",
+            "Historical archives",
+            "API rate increases"
+        ]
+    },
+    {
+        "q": "What Nmap host timeout terminates scanning?",
+        "o": [
+            "Unresponsive host scan",
+            "All ports are checked",
+            "Script execution done",
+            "Output file written"
+        ]
+    },
+    {
+        "q": "Maltego graph merge combines what data?",
+        "o": [
+            "Multiple investigations",
+            "Transform categories",
+            "License key files",
+            "API credentials"
+        ]
+    },
+    {
+        "q": "What Nmap IDS evasion technique fragments packets?",
+        "o": [
+            "Using -f or --mtu flags",
+            "Running with sudo only",
+            "Scanning common ports",
+            "Setting longer timeouts"
+        ]
+    },
+    {
+        "q": "How does Maltego handle transform rate limits?",
+        "o": [
+            "Configurable throttling per server",
+            "No rate limiting exists",
+            "Fixed one second delay",
+            "Unlimited API calls allowed"
+        ]
+    },
+    {
+        "q": "What Recon-ng pushpin module visualizes geographically?",
+        "o": [
+            "Location data on maps",
+            "Network topology diagrams",
+            "Database relationships",
+            "File system structures"
+        ]
+    },
+    {
+        "q": "Shodan InternetDB provides what type of data lookup?",
+        "o": [
+            "Fast IP address enrichment",
+            "Slow comprehensive scans",
+            "Historical data archives",
+            "Real-time port scanning"
+        ]
+    },
+    {
+        "q": "Which Nmap technique bypasses stateless firewalls?",
+        "o": [
+            "ACK scan showing unfiltered",
+            "SYN scan for stealth",
+            "Connect scan completion",
+            "UDP scan for services"
+        ]
+    },
+    {
+        "q": "What Maltego TDS means in architecture?",
+        "o": [
+            "Transform Distribution Server",
+            "Threat Detection System",
+            "Target Discovery Service",
+            "Transform Data Storage"
+        ]
+    },
+    {
+        "q": "Recon-ng netcraft module discovers what info?",
+        "o": [
+            "Hosting history and tech",
+            "Employee social profiles",
+            "Financial transaction logs",
+            "Customer database dumps"
+        ]
+    },
+    {
+        "q": "How does Censys differ from Shodan scanning?",
+        "o": [
+            "ZMap based methodology",
+            "Nmap based scanning only",
+            "Manual verification required",
+            "No automated scanning used"
+        ]
+    },
+    {
+        "q": "What Nmap Xmas scan sends in packet flags?",
+        "o": [
+            "FIN, PSH, and URG flags",
+            "SYN and ACK combined",
+            "Only RST flag set",
+            "All flags zeroed out"
+        ]
+    },
+    {
+        "q": "Maltego entity overlay displays what information?",
+        "o": [
+            "Additional property data",
+            "Transform source code",
+            "License key details",
+            "API endpoint logs"
+        ]
+    },
+    {
+        "q": "What theHarvester virtual host discovery reveals?",
+        "o": [
+            "Multiple domains per IP",
+            "Virtual machine configs",
+            "Cloud instance details",
+            "Container orchestration"
+        ]
+    },
+    {
+        "q": "Shodan alert notification triggers on what event?",
+        "o": [
+            "New results matching query",
+            "Account billing changes",
+            "API key expiration only",
+            "Password change requests"
+        ]
+    },
+    {
+        "q": "Which Nmap script engine environment runs code?",
+        "o": [
+            "Embedded Lua interpreter",
+            "Python virtual machine",
+            "JavaScript V8 engine",
+            "Ruby script runner"
+        ]
+    },
+    {
+        "q": "What Maltego PATERVA servers originally hosted?",
+        "o": [
+            "Official transform hub",
+            "User graph storage",
+            "License management only",
+            "Documentation website"
+        ]
+    },
+    {
+        "q": "Recon-ng reverse_resolve module performs what?",
+        "o": [
+            "PTR record lookups for IPs",
+            "Forward DNS resolution",
+            "MX record enumeration",
+            "TXT record extraction"
+        ]
+    },
+    {
+        "q": "Censys search syntax supports what wildcards?",
+        "o": [
+            "Asterisk for pattern match",
+            "Question mark sequences",
+            "Regular expression only",
+            "No wildcards supported"
+        ]
+    },
+    {
+        "q": "What Nmap zombie scan accomplishes for anonymity?",
+        "o": [
+            "Third-party IP attribution",
+            "Faster scanning speed",
+            "Better port identification",
+            "More accurate OS detect"
+        ]
+    },
+    {
+        "q": "Maltego collaboration server enables what workflow?",
+        "o": [
+            "Team graph sharing",
+            "Single user access only",
+            "Offline work mode",
+            "API key distribution"
+        ]
+    },
+    {
+        "q": "theHarvester baidu source searches what region?",
+        "o": [
+            "Chinese language content",
+            "Russian web results",
+            "Japanese websites only",
+            "Arabic social media"
+        ]
+    },
+    {
+        "q": "What Shodan diff feature compares between scans?",
+        "o": [
+            "Historical changes over time",
+            "Different host comparisons",
+            "API response variations",
+            "Query syntax differences"
+        ]
+    },
+    {
+        "q": "Which Nmap performance option sets parallelism?",
+        "o": [
+            "--min-parallelism value",
+            "--max-threads count",
+            "--parallel-hosts num",
+            "--concurrent-scans val"
+        ]
+    },
+    {
+        "q": "What Maltego investigation lifecycle includes?",
+        "o": [
+            "Collection and analysis phases",
+            "Billing and payment only",
+            "License renewal steps",
+            "Software update cycle"
+        ]
+    },
+    {
+        "q": "Recon-ng profiler modules gather what data?",
+        "o": [
+            "Social media presence",
+            "Network configurations",
+            "Firewall rule sets",
+            "Database schemas only"
+        ]
+    },
+    {
+        "q": "Censys aggregation queries return what format?",
+        "o": [
+            "Statistical summaries",
+            "Raw host records only",
+            "Binary file downloads",
+            "Image screenshots"
+        ]
+    },
+    {
+        "q": "What Nmap script argument passes custom values?",
+        "o": [
+            "--script-args key=value",
+            "--nse-config settings",
+            "--lua-params options",
+            "--script-opts params"
+        ]
+    },
+    {
+        "q": "Maltego entity inheritance allows what feature?",
+        "o": [
+            "Custom entity from base",
+            "License tier upgrades",
+            "Transform speed increase",
+            "Graph export formats"
+        ]
+    },
+    {
+        "q": "theHarvester dnsdumpster source provides what?",
+        "o": [
+            "DNS recon without API",
+            "Deep web content search",
+            "Email password dumps",
+            "Social profile scraping"
+        ]
+    },
+    {
+        "q": "What Shodan stream API delivers in real-time?",
+        "o": [
+            "New scan discoveries",
+            "Historical data replays",
+            "User action logs",
+            "Billing notification"
+        ]
+    },
+    {
+        "q": "Which Nmap option spoofs source IP address?",
+        "o": [
+            "-S for source address",
+            "-I for identifier",
+            "-O for origin IP",
+            "-F for fake source"
+        ]
+    },
+    {
+        "q": "What Maltego transform developer kit includes?",
+        "o": [
+            "SDK for custom builds",
+            "Graph design templates",
+            "License key generator",
+            "User manual only"
+        ]
+    },
+    {
+        "q": "Recon-ng brute force module attacks what?",
+        "o": [
+            "Subdomain enumeration",
+            "Password hash cracking",
+            "API key guessing",
+            "File extension fuzzing"
+        ]
+    },
+    {
+        "q": "Censys organization filter finds what entities?",
+        "o": [
+            "Company owned assets",
+            "Personal user devices",
+            "Government classified",
+            "Academic research only"
+        ]
+    },
+    {
+        "q": "What Nmap service detection intensity controls?",
+        "o": [
+            "Probe selection depth",
+            "Scan speed maximum",
+            "Output file format",
+            "Target host order"
+        ]
+    },
+    {
+        "q": "Maltego graph annotations describe what items?",
+        "o": [
+            "Custom notes on entities",
+            "Transform execution logs",
+            "API response headers",
+            "License key details"
+        ]
+    },
+    {
+        "q": "theHarvester crtsh source queries what database?",
+        "o": [
+            "Certificate transparency",
+            "Dark web listings only",
+            "Social media accounts",
+            "Financial transactions"
+        ]
+    },
+    {
+        "q": "What Shodan vuln filter searches for?",
+        "o": [
+            "CVE references found",
+            "Zero-day exploits only",
+            "Malware infections",
+            "Ransomware presence"
+        ]
+    },
+    {
+        "q": "Which Nmap output parseable by other tools?",
+        "o": [
+            "XML and grepable formats",
+            "Normal text output only",
+            "Script kiddie mode",
+            "Binary dump format"
+        ]
+    },
+    {
+        "q": "What Maltego hub category groups transforms?",
+        "o": [
+            "Functional domains",
+            "Alphabetical order only",
+            "Date of creation",
+            "User popularity"
+        ]
+    },
+    {
+        "q": "Recon-ng interesting file module discovers what?",
+        "o": [
+            "Exposed sensitive files",
+            "Binary executables only",
+            "Configuration backups",
+            "Database dump files"
+        ]
+    },
+    {
+        "q": "Censys data freshness indicates what metric?",
+        "o": [
+            "Last scan timestamp",
+            "API response speed",
+            "Query complexity level",
+            "Result count accuracy"
+        ]
+    },
+    {
+        "q": "What Nmap technique evades logging via timing?",
+        "o": [
+            "Paranoid timing template",
+            "Aggressive timing mode",
+            "Insane timing speed",
+            "Normal timing default"
+        ]
+    },
+    {
+        "q": "Maltego custom entity properties store what data?",
+        "o": [
+            "User-defined attributes",
+            "Transform source code",
+            "Graph layout configs",
+            "License validation info"
+        ]
+    },
+    {
+        "q": "theHarvester rapiddns source performs what queries?",
+        "o": [
+            "Rapid DNS enumeration",
+            "Slow thorough scanning",
+            "API key validation",
+            "Social profile lookup"
+        ]
+    },
+    {
+        "q": "What Shodan tag indicates honeypot likelihood?",
+        "o": [
+            "honeypot tag in results",
+            "vulnerable label only",
+            "malicious tag always",
+            "suspicious indicator"
+        ]
+    },
+    {
+        "q": "Which Nmap host discovery bypasses ICMP blocks?",
+        "o": [
+            "TCP SYN on multiple ports",
+            "ICMP echo only method",
+            "ARP scan for all",
+            "UDP scan exclusively"
+        ]
+    },
+    {
+        "q": "What Maltego transform chaining accomplishes?",
+        "o": [
+            "Sequential data enrichment",
+            "Single step processing",
+            "License key linking",
+            "Graph layout merging"
+        ]
+    },
+    {
+        "q": "Recon-ng hibp module searches what breach data?",
+        "o": [
+            "Have I Been Pwned check",
+            "Historical IP blocks",
+            "Host intrusion events",
+            "HTTP response codes"
+        ]
+    },
+    {
+        "q": "Censys autonomous system data includes what?",
+        "o": [
+            "ASN and routing info",
+            "Personal contact data",
+            "Financial information",
+            "Physical addresses"
+        ]
+    },
+    {
+        "q": "What Nmap payload option sends custom data?",
+        "o": [
+            "--data-string or hex",
+            "--custom-payload option",
+            "--packet-content flag",
+            "--send-data parameter"
+        ]
+    },
+    {
+        "q": "Maltego graph export to KML provides what?",
+        "o": [
+            "Google Earth compatible",
+            "Text file format only",
+            "Database backup file",
+            "Image screenshot PNG"
+        ]
+    },
+    {
+        "q": "theHarvester sublist3r integration adds what?",
+        "o": [
+            "Enhanced subdomain enum",
+            "Password cracking mode",
+            "Social engineering kit",
+            "Exploit development"
+        ]
+    },
+    {
+        "q": "What Shodan CLI command downloads results?",
+        "o": [
+            "shodan download query",
+            "shodan export results",
+            "shodan save output",
+            "shodan fetch data"
+        ]
+    },
+    {
+        "q": "Which Nmap scan requires no special privileges?",
+        "o": [
+            "TCP connect scan -sT",
+            "SYN stealth scan -sS",
+            "UDP scan with -sU",
+            "ACK scan using -sA"
+        ]
+    },
+    {
+        "q": "What Maltego case management organizes?",
+        "o": [
+            "Multiple investigations",
+            "Single graph only",
+            "API key storage",
+            "License renewals"
+        ]
+    },
+    {
+        "q": "Recon-ng whois_pocs module extracts what?",
+        "o": [
+            "Point of contact info",
+            "Network port status",
+            "Web page content",
+            "Password hash data"
+        ]
+    },
+    {
+        "q": "Censys certificate search finds what expired?",
+        "o": [
+            "validity.end before date",
+            "issuer.invalid status",
+            "subject.removed flag",
+            "signature.broken error"
+        ]
+    },
+    {
+        "q": "What Nmap resume function continues after?",
+        "o": [
+            "Interrupted scan session",
+            "Completed scan review",
+            "New target discovery",
+            "Script development"
+        ]
+    },
+    {
+        "q": "Maltego transform timeout affects what behavior?",
+        "o": [
+            "Maximum execution wait",
+            "Graph rendering speed",
+            "Entity display count",
+            "Link weight values"
+        ]
+    },
+    {
+        "q": "theHarvester spyse source provides what data?",
+        "o": [
+            "Internet assets discovery",
+            "Password breach lists",
+            "Social media scraping",
+            "Dark web monitoring"
+        ]
+    },
+    {
+        "q": "What Shodan network request counts toward?",
+        "o": [
+            "Query credits consumed",
+            "Free unlimited access",
+            "Download speed limits",
+            "Storage quota used"
+        ]
+    },
+    {
+        "q": "Which Nmap target format accepts CIDR ranges?",
+        "o": [
+            "192.168.1.0/24 notation",
+            "Only single IP address",
+            "Hostname list only",
+            "URL format required"
+        ]
+    },
+    {
+        "q": "What Maltego investigation tab displays?",
+        "o": [
+            "Entity graph workspace",
+            "Transform source list",
+            "API configuration sets",
+            "License key manager"
+        ]
+    },
+    {
+        "q": "Recon-ng github module harvests what data?",
+        "o": [
+            "Repository and user info",
+            "Password leak files",
+            "Malware source code",
+            "Exploit proof concepts"
+        ]
+    },
+    {
+        "q": "Censys TLS cipher search syntax requires what?",
+        "o": [
+            "services.tls.cipher field",
+            "ssl.encryption:value",
+            "tls.algorithm:name",
+            "cert.crypto:type"
+        ]
+    },
+    {
+        "q": "What Nmap reason field explains port status?",
+        "o": [
+            "Packet response received",
+            "Script execution result",
+            "Timeout duration value",
+            "Target OS detected"
+        ]
+    },
+    {
+        "q": "Maltego graph comparison highlights what changes?",
+        "o": [
+            "Added and removed nodes",
+            "Transform speed variance",
+            "API response times",
+            "License tier updates"
+        ]
+    },
+    {
+        "q": "theHarvester hunter source requires what key?",
+        "o": [
+            "Hunter.io API access",
+            "No authentication needed",
+            "Google search API key",
+            "LinkedIn developer key"
+        ]
+    },
+    {
+        "q": "What Shodan asn filter searches by number?",
+        "o": [
+            "asn:AS12345 format",
+            "autonomous:number only",
+            "network.as:value",
+            "routing:asn_id"
+        ]
+    },
+    {
+        "q": "Which Nmap port state means filtered response?",
+        "o": [
+            "No response or ICMP error",
+            "Open and accepting traffic",
+            "Closed with RST packet",
+            "Unknown state detected"
+        ]
+    },
+    {
+        "q": "What Maltego hub transform installation involves?",
+        "o": [
+            "One-click from catalog",
+            "Manual code download",
+            "Terminal compilation",
+            "License file merge"
+        ]
+    },
+    {
+        "q": "Recon-ng ipinfodb module returns what data?",
+        "o": [
+            "IP geolocation details",
+            "Port scan results only",
+            "DNS record extracts",
+            "Email address lists"
+        ]
+    },
+    {
+        "q": "Censys reverse DNS data shows what records?",
+        "o": [
+            "PTR record hostnames",
+            "A record IPs only",
+            "MX mail servers",
+            "TXT verification keys"
+        ]
+    },
+    {
+        "q": "What Nmap TCP window scan determines?",
+        "o": [
+            "Firewall rule presence",
+            "Service version info",
+            "Operating system type",
+            "Script vulnerability"
+        ]
+    },
+    {
+        "q": "Maltego local transform runs where?",
+        "o": [
+            "User machine execution",
+            "Remote server only",
+            "Cloud infrastructure",
+            "Hub transform servers"
+        ]
+    },
+    {
+        "q": "theHarvester intelx source searches what?",
+        "o": [
+            "Intelligence X archive",
+            "Regular web crawling",
+            "Social network only",
+            "Email only database"
+        ]
+    },
+    {
+        "q": "What Shodan ssl filter searches certificate?",
+        "o": [
+            "ssl:domain.com common name",
+            "cert:issuer organization",
+            "tls:version protocol",
+            "https:enabled status"
+        ]
+    },
+    {
+        "q": "Which Nmap technique uses fragmented IP headers?",
+        "o": [
+            "-f flag for fragments",
+            "-s flag for stealth",
+            "-h flag for headers",
+            "-p flag for packets"
+        ]
+    },
+    {
+        "q": "What Maltego slider controls entity count?",
+        "o": [
+            "Maximum result limit",
+            "Graph zoom level",
+            "Transform timeout value",
+            "Link thickness weight"
+        ]
+    },
+    {
+        "q": "Recon-ng hackertarget uses what API?",
+        "o": [
+            "Free reconnaissance API",
+            "Paid enterprise license",
+            "Academic access only",
+            "Government restricted"
+        ]
+    },
+    {
+        "q": "Censys software search finds what applications?",
+        "o": [
+            "Service identification tags",
+            "Client-side installer",
+            "Mobile app versions",
+            "Desktop programs only"
+        ]
+    },
+    {
+        "q": "What Nmap IPID idle scan measures?",
+        "o": [
+            "Zombie host IP ID changes",
+            "Target response timing",
+            "Packet loss percentage",
+            "Network bandwidth speed"
+        ]
+    },
+    {
+        "q": "Maltego view tab grouping organizes what?",
+        "o": [
+            "Related entity subsets",
+            "Transform categories",
+            "License tier level",
+            "API key storage"
+        ]
+    },
+    {
+        "q": "theHarvester threatminer source detects what?",
+        "o": [
+            "Threat intelligence feeds",
+            "Social profile data",
+            "Email contact list",
+            "Financial records"
+        ]
+    },
+    {
+        "q": "What Shodan has_screenshot filter returns?",
+        "o": [
+            "Services with captures",
+            "Text responses only",
+            "API documentation",
+            "Empty result sets"
+        ]
+    },
+    {
+        "q": "Which Nmap NSE category handles authentication?",
+        "o": [
+            "auth script category",
+            "vuln script category",
+            "safe script category",
+            "exploit category"
+        ]
+    },
+    {
+        "q": "What Maltego pedigree shows for entities?",
+        "o": [
+            "Transform origin history",
+            "License purchase date",
+            "Graph creation time",
+            "API call statistics"
+        ]
+    },
+    {
+        "q": "Recon-ng youtube module searches what platform?",
+        "o": [
+            "Video platform metadata",
+            "Music streaming apps",
+            "Podcast directories",
+            "Image sharing sites"
+        ]
+    },
+    {
+        "q": "Censys JA3 fingerprint identifies what?",
+        "o": [
+            "TLS client application",
+            "Server certificate only",
+            "User identity data",
+            "Geographic location"
+        ]
+    },
+    {
+        "q": "What Nmap badsum option tests firewall?",
+        "o": [
+            "Sends invalid checksum packets",
+            "Creates correct checksums",
+            "Fixes packet corruption",
+            "Validates data integrity"
+        ]
+    },
+    {
+        "q": "Maltego entity display limit affects what number?",
+        "o": [
+            "Maximum visible nodes",
+            "Transform execution count",
+            "Graph file size limit",
+            "API call quota"
+        ]
+    },
+    {
+        "q": "theHarvester trello source searches what content?",
+        "o": [
+            "Public board exposure",
+            "Private team channels",
+            "Encrypted data stores",
+            "Password vault access"
+        ]
+    },
+    {
+        "q": "What Shodan port search range syntax is?",
+        "o": [
+            "port:80,443,8080 list",
+            "ports:80-443 range",
+            "port.range:80-443",
+            "port.min:80 max:443"
+        ]
+    },
+    {
+        "q": "Which Nmap discovery excludes ICMP scan?",
+        "o": [
+            "-Pn skips ping entirely",
+            "-sP enables ping sweep",
+            "-PE sends echo request",
+            "-PP uses timestamp"
+        ]
+    },
+    {
+        "q": "What Maltego transform hub seed provides?",
+        "o": [
+            "Starting configuration",
+            "License key renewal",
+            "Graph backup data",
+            "API documentation"
+        ]
+    },
+    {
+        "q": "What Nmap NSE library provides HTTP functions?",
+        "o": [
+            "http library for requests",
+            "web module for crawling",
+            "net library for sockets",
+            "html parser for pages"
+        ]
+    },
+    {
+        "q": "Maltego iTDS configuration requires what setup?",
+        "o": [
+            "Server and seed pairing",
+            "License key only needed",
+            "Graph export settings",
+            "API documentation read"
+        ]
+    },
+    {
+        "q": "Recon-ng fullcontact module retrieves what information?",
+        "o": [
+            "Person identity enrichment",
+            "Network infrastructure data",
+            "Port vulnerability scans",
+            "DNS zone transfer logs"
+        ]
+    },
+    {
+        "q": "What Censys BigQuery integration enables?",
+        "o": [
+            "Large-scale data analysis",
+            "Real-time port scanning",
+            "API rate limit bypass",
+            "Free tier access upgrade"
+        ]
+    },
+    {
+        "q": "Which Nmap technique detects version behind proxy?",
+        "o": [
+            "Service probes via tunnel",
+            "Direct port connection only",
+            "ICMP echo requests sent",
+            "ARP spoofing attacks used"
+        ]
+    },
+    {
+        "q": "Maltego entity regex matching validates what data?",
+        "o": [
+            "Property value patterns",
+            "Transform API endpoints",
+            "License key formats only",
+            "Graph layout coordinates"
+        ]
+    },
+    {
+        "q": "theHarvester zoomeye integration searches what?",
+        "o": [
+            "Chinese internet devices",
+            "Western social media",
+            "European email services",
+            "African DNS servers"
+        ]
+    },
+    {
+        "q": "What Shodan data fields are searchable by default?",
+        "o": [
+            "Banner and metadata info",
+            "Only hostname records",
+            "Certificate data alone",
+            "Geographic coordinates"
+        ]
+    },
+    {
+        "q": "Nmap script prerule executes at what phase?",
+        "o": [
+            "Before any host scanning",
+            "After port discovery done",
+            "During service detection",
+            "When script ends running"
+        ]
+    },
+    {
+        "q": "What Maltego graph property panel displays?",
+        "o": [
+            "Entity attribute details",
+            "Transform source code",
+            "License tier information",
+            "API response times only"
+        ]
+    },
+    {
+        "q": "Recon-ng censys_hosts module requires what auth?",
+        "o": [
+            "Censys API credentials",
+            "No authentication needed",
+            "Shodan API key only",
+            "GitHub access token"
+        ]
+    },
+    {
+        "q": "Censys search pagination handles what limit?",
+        "o": [
+            "Result set traversal",
+            "Query syntax length only",
+            "API call frequency",
+            "Download file sizes"
+        ]
+    },
+    {
+        "q": "What Nmap script hostrule filters targets by?",
+        "o": [
+            "Host characteristics match",
+            "Port number selection",
+            "Script argument values",
+            "Output format choice"
+        ]
+    },
+    {
+        "q": "Maltego investigation summary exports what data?",
+        "o": [
+            "Graph statistics report",
+            "Transform source code",
+            "License key backup",
+            "API endpoint configs"
+        ]
+    },
+    {
+        "q": "theHarvester securitytrails requires what access?",
+        "o": [
+            "SecurityTrails API key",
+            "No key authentication",
+            "Government clearance",
+            "Academic credentials"
+        ]
+    },
+    {
+        "q": "Shodan port tag classification shows what info?",
+        "o": [
+            "Service type category",
+            "Exploitation difficulty",
+            "Patch availability date",
+            "Vendor contact details"
+        ]
+    },
+    {
+        "q": "Which Nmap script output format is structured?",
+        "o": [
+            "Table and string formats",
+            "Binary dump only output",
+            "Image screenshot format",
+            "Audio notification tone"
+        ]
+    },
+    {
+        "q": "What Maltego transform response contains?",
+        "o": [
+            "Entity list and messages",
+            "Graph layout settings",
+            "License expiration info",
+            "API rate limit values"
+        ]
+    },
+    {
+        "q": "Recon-ng virustotal module checks what data?",
+        "o": [
+            "Domain reputation info",
+            "Password breach records",
+            "Social media profiles",
+            "Financial transaction"
+        ]
+    },
+    {
+        "q": "What Censys virtual host discovery reveals?",
+        "o": [
+            "Multiple domains on IP",
+            "Virtual machine images",
+            "Container registry data",
+            "Kubernetes pod configs"
+        ]
+    },
+    {
+        "q": "Nmap script categories can be combined how?",
+        "o": [
+            "AND, OR and NOT logic",
+            "Only single category use",
+            "No combination allowed",
+            "Alphabetical order only"
+        ]
+    },
+    {
+        "q": "Maltego entity detail view displays what info?",
+        "o": [
+            "All properties and links",
+            "Transform source only",
+            "License key details",
+            "API documentation"
+        ]
+    },
+    {
+        "q": "theHarvester linkedin source limitations include?",
+        "o": [
+            "Rate limits and blocks",
+            "Unlimited access to all",
+            "No restrictions exist",
+            "Free full API access"
+        ]
+    },
+    {
+        "q": "What Shodan raw data download provides?",
+        "o": [
+            "Complete JSON records",
+            "Summary statistics",
+            "API documentation",
+            "License information"
+        ]
+    },
+    {
+        "q": "Which Nmap timing affects retries specifically?",
+        "o": [
+            "--max-retries option",
+            "--timing-template only",
+            "--min-rate setting",
+            "--host-timeout value"
+        ]
+    },
+    {
+        "q": "Maltego entity validators check what input?",
+        "o": [
+            "Data format correctness",
+            "Transform speed limits",
+            "License expiration dates",
+            "API endpoint health"
+        ]
+    },
+    {
+        "q": "Recon-ng builtwith module discovers what data?",
+        "o": [
+            "Technology stack used",
+            "Password hash values",
+            "Social media posts",
+            "Email message content"
+        ]
+    },
+    {
+        "q": "Censys HTTP response body search uses what?",
+        "o": [
+            "services.http.response fields",
+            "body.content:keyword only",
+            "page.html:search term",
+            "response.data:value"
+        ]
+    },
+    {
+        "q": "What Nmap NSE debug level shows most output?",
+        "o": [
+            "Debug level 3 or higher",
+            "Debug level 1 default",
+            "No debug available here",
+            "Silent mode only works"
+        ]
+    },
+    {
+        "q": "Maltego Hub item permissions control what access?",
+        "o": [
+            "Transform usage rights",
+            "Graph editing ability",
+            "License tier upgrade",
+            "API key distribution"
+        ]
+    },
+    {
+        "q": "theHarvester binaryedge source scans what?",
+        "o": [
+            "Internet-wide assets",
+            "Local network only",
+            "Social profiles alone",
+            "Email servers just"
+        ]
+    },
+    {
+        "q": "What Shodan network map visualizes?",
+        "o": [
+            "Geographic distribution",
+            "Password strength data",
+            "Malware infection rates",
+            "Patch compliance levels"
+        ]
+    },
+    {
+        "q": "Which Nmap feature allows custom port ranges?",
+        "o": [
+            "-p with range syntax",
+            "-P for port listing",
+            "-r for range exclusion",
+            "-n for numeric ports"
+        ]
+    },
+    {
+        "q": "Maltego client credentials authenticate with what?",
+        "o": [
+            "API key and secret pair",
+            "Username password login",
+            "Certificate file only",
+            "Hardware token device"
+        ]
+    },
+    {
+        "q": "Recon-ng shodan_hostname finds what by name?",
+        "o": [
+            "IP addresses matching",
+            "Social profiles linked",
+            "Email addresses found",
+            "Password hashes stored"
+        ]
+    },
+    {
+        "q": "Censys data export limitations include what?",
+        "o": [
+            "Membership tier quotas",
+            "No limits on exports",
+            "Free unlimited access",
+            "Government only access"
+        ]
+    },
+    {
+        "q": "What Nmap broadcast script category scans?",
+        "o": [
+            "Local network discovery",
+            "Internet-wide scanning",
+            "Single target focus",
+            "Port-specific probes"
+        ]
+    },
+    {
+        "q": "Maltego transform parameter types include?",
+        "o": [
+            "String, int, enum, bool",
+            "Only string type allowed",
+            "No parameters supported",
+            "Binary data blob only"
+        ]
+    },
+    {
+        "q": "theHarvester output deduplication removes what?",
+        "o": [
+            "Duplicate result entries",
+            "Valid unique findings",
+            "API response headers",
+            "Configuration settings"
+        ]
+    },
+    {
+        "q": "What Shodan scan network command initiates?",
+        "o": [
+            "On-demand target scanning",
+            "Historical data lookup",
+            "API rate limit reset",
+            "Account billing request"
+        ]
+    },
+    {
+        "q": "Which Nmap script dependency declares requirements?",
+        "o": [
+            "Dependencies table in scripts",
+            "No dependencies allowed",
+            "Automatic resolution only",
+            "Manual library install"
+        ]
+    },
+    {
+        "q": "Maltego investigation file format stores what?",
+        "o": [
+            "Complete graph state data",
+            "Transform source code",
+            "License key information",
+            "API endpoint configs"
+        ]
+    },
+    {
+        "q": "Recon-ng namechk module verifies what presence?",
+        "o": [
+            "Username availability check",
+            "Password strength meter",
+            "Email verification test",
+            "Domain registration status"
+        ]
+    },
+    {
+        "q": "Censys search result cursor enables what?",
+        "o": [
+            "Deep pagination access",
+            "Query speed increase",
+            "API rate limit bypass",
+            "Free tier upgrade path"
+        ]
+    },
+    {
+        "q": "What Nmap script arguments file loads?",
+        "o": [
+            "Per-script config values",
+            "Target host lists only",
+            "Output format settings",
+            "Timing template data"
+        ]
+    },
+    {
+        "q": "Maltego graph undo history tracks what changes?",
+        "o": [
+            "Entity modifications made",
+            "Transform execution logs",
+            "License key updates",
+            "API call statistics"
+        ]
+    },
+    {
+        "q": "theHarvester startpage source queries what engine?",
+        "o": [
+            "Privacy search engine",
+            "Social media platform",
+            "Email service provider",
+            "DNS resolver service"
+        ]
+    },
+    {
+        "q": "What Shodan developer API tier provides?",
+        "o": [
+            "Higher rate limits access",
+            "Same as free tier only",
+            "No scan capability here",
+            "Historical data blocked"
+        ]
+    },
+    {
+        "q": "Which Nmap script runs after port scan?",
+        "o": [
+            "Postrule scripts execute",
+            "Prerule scripts run",
+            "Hostrule scripts apply",
+            "Portrule scripts init"
+        ]
+    },
+    {
+        "q": "Maltego dynamic property calculates what value?",
+        "o": [
+            "Computed from other props",
+            "Static user-entered data",
+            "Transform API response",
+            "License key validation"
+        ]
+    },
+    {
+        "q": "Recon-ng metacrawler combines what sources?",
+        "o": [
+            "Multiple search engines",
+            "Single API endpoint",
+            "Local file parsing",
+            "Hardware device scans"
+        ]
+    },
+    {
+        "q": "Censys host aggregate query counts what data?",
+        "o": [
+            "Field occurrence statistics",
+            "Individual host records",
+            "API call frequencies",
+            "License usage metrics"
+        ]
+    },
+    {
+        "q": "What Nmap performance tuning improves speed?",
+        "o": [
+            "Parallelism and timing options",
+            "Output format selection",
+            "Script category choice",
+            "Target host ordering"
+        ]
+    },
+    {
+        "q": "Maltego graph layout algorithm options include?",
+        "o": [
+            "Block, circular, hierarchical",
+            "Only block layout available",
+            "No automatic layout exists",
+            "Random placement only"
+        ]
+    },
+    {
+        "q": "theHarvester grep source searches what content?",
+        "o": [
+            "Grep.app code search",
+            "Local file systems",
+            "Email attachments",
+            "Social media posts"
+        ]
+    },
+    {
+        "q": "What Shodan facet analysis reveals patterns?",
+        "o": [
+            "Distribution of values",
+            "Individual host details",
+            "API rate usage stats",
+            "Account billing history"
+        ]
+    },
+    {
+        "q": "Which Nmap output verbosity shows all packets?",
+        "o": [
+            "--packet-trace option",
+            "-v verbose mode only",
+            "-d debug level basic",
+            "--reason flag enabled"
+        ]
+    },
+    {
+        "q": "Maltego entity primary display shows what?",
+        "o": [
+            "Main identifying value",
+            "Transform source code",
+            "License details only",
+            "API endpoint config"
+        ]
+    },
+    {
+        "q": "Recon-ng bing_linkedin module targets what?",
+        "o": [
+            "LinkedIn via Bing dorks",
+            "Direct LinkedIn API call",
+            "Social media scraping",
+            "Email list harvesting"
+        ]
+    },
+    {
+        "q": "Censys enterprise features include what access?",
+        "o": [
+            "Bulk data and streaming",
+            "Same as free tier only",
+            "No additional features",
+            "Academic access alone"
+        ]
+    },
+    {
+        "q": "What Nmap script vulnerability disclosure includes?",
+        "o": [
+            "CVE and risk ratings shown",
+            "No vulnerability details",
+            "Only port numbers listed",
+            "Service names displayed"
+        ]
+    },
+    {
+        "q": "Maltego transform server discovery uses what?",
+        "o": [
+            "Seed URL configuration",
+            "Automatic cloud scan",
+            "Local file parsing only",
+            "Hardware device probe"
+        ]
+    },
+    {
+        "q": "theHarvester limit parameter controls what count?",
+        "o": [
+            "Maximum results returned",
+            "API calls per minute",
+            "Download file sizes",
+            "Session time duration"
+        ]
+    },
+    {
+        "q": "What Shodan IP history displays over time?",
+        "o": [
+            "Service change timeline",
+            "User access log data",
+            "API call frequency",
+            "Billing history records"
+        ]
+    },
+    {
+        "q": "Which Nmap feature detects load balancers?",
+        "o": [
+            "http-methods and others",
+            "No detection available",
+            "Only manual testing",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego collection element stores what grouped?",
+        "o": [
+            "Related entities together",
+            "Transform source code",
+            "License key backups",
+            "API endpoint configs"
+        ]
+    },
+    {
+        "q": "Recon-ng resolve module performs what lookup?",
+        "o": [
+            "DNS forward resolution",
+            "Password hash cracking",
+            "Social media search",
+            "Email header analysis"
+        ]
+    },
+    {
+        "q": "Censys certificate search SHA256 uses what field?",
+        "o": [
+            "parsed.fingerprint_sha256",
+            "cert.hash.sha256 value",
+            "sha256:fingerprint key",
+            "hash.type:sha256 query"
+        ]
+    },
+    {
+        "q": "What Nmap host randomization improves?",
+        "o": [
+            "IDS evasion capability",
+            "Scan speed performance",
+            "Output file formatting",
+            "Script execution order"
+        ]
+    },
+    {
+        "q": "Maltego transform registry lists what transformations?",
+        "o": [
+            "Available transforms catalog",
+            "Graph layout templates",
+            "License information only",
+            "API documentation links"
+        ]
+    },
+    {
+        "q": "theHarvester duckduckgo source respects what?",
+        "o": [
+            "Privacy and no tracking",
+            "Heavy tracking by default",
+            "Only paid API access",
+            "Government surveillance"
+        ]
+    },
+    {
+        "q": "What Shodan query filter city: searches?",
+        "o": [
+            "Geographic location name",
+            "Server hostname only",
+            "IP address range value",
+            "Certificate issuer org"
+        ]
+    },
+    {
+        "q": "Which Nmap scan respects port status explicitly?",
+        "o": [
+            "--reason shows why states",
+            "-v just adds verbosity",
+            "-d enables debug mode",
+            "-A runs aggressive types"
+        ]
+    },
+    {
+        "q": "Maltego entity notes markdown supports what?",
+        "o": [
+            "Rich text formatting",
+            "Only plain text mode",
+            "No notes capability",
+            "Binary data storage"
+        ]
+    },
+    {
+        "q": "Recon-ng hunter_io module harvests what data?",
+        "o": [
+            "Professional emails list",
+            "Password hash database",
+            "Network port scanning",
+            "Social media profiles"
+        ]
+    },
+    {
+        "q": "Censys source data comes from what scans?",
+        "o": [
+            "ZMap and ZGrab tools",
+            "Nmap only scanning",
+            "Manual verification",
+            "User submissions only"
+        ]
+    },
+    {
+        "q": "What Nmap script timeout prevents long runs?",
+        "o": [
+            "Script specific limits",
+            "No timeout mechanism",
+            "Global only setting",
+            "Target-based timing"
+        ]
+    },
+    {
+        "q": "Maltego graph export CSV includes what data?",
+        "o": [
+            "Entity properties table",
+            "Transform source code",
+            "License information",
+            "API configurations"
+        ]
+    },
+    {
+        "q": "theHarvester otx source checks what feeds?",
+        "o": [
+            "AlienVault OTX pulses",
+            "Commercial threat data",
+            "Social media content",
+            "Email provider logs"
+        ]
+    },
+    {
+        "q": "What Shodan CLI parse command processes?",
+        "o": [
+            "Downloaded data files",
+            "Live API responses",
+            "Configuration settings",
+            "License key files"
+        ]
+    },
+    {
+        "q": "Which Nmap script intrusive category includes?",
+        "o": [
+            "Potentially harmful probes",
+            "Safe information gathering",
+            "Version detection only",
+            "Authentication testing"
+        ]
+    },
+    {
+        "q": "Maltego transform response time affects what UX?",
+        "o": [
+            "User waiting duration",
+            "Graph layout changes",
+            "License validation timing",
+            "API rate calculations"
+        ]
+    },
+    {
+        "q": "Recon-ng whois_orgs module extracts what POC?",
+        "o": [
+            "Organization contact info",
+            "Personal email addresses",
+            "Password hash values",
+            "Social security numbers"
+        ]
+    },
+    {
+        "q": "Censys webhook notification delivers what events?",
+        "o": [
+            "Search result updates",
+            "License expiration alerts",
+            "API key rotation notice",
+            "Billing payment reminders"
+        ]
+    },
+    {
+        "q": "What Nmap SSL script detects weak ciphers?",
+        "o": [
+            "ssl-enum-ciphers analysis",
+            "No cipher checking exists",
+            "Only certificate validation",
+            "Manual testing required"
+        ]
+    },
+    {
+        "q": "Maltego transform hub categories organize what?",
+        "o": [
+            "Functional groupings shown",
+            "Alphabetical sorting only",
+            "Date added ordering",
+            "User rating ranking"
+        ]
+    },
+    {
+        "q": "theHarvester censys source API version uses?",
+        "o": [
+            "Censys v2 API access",
+            "Legacy v1 API only",
+            "No API integration",
+            "Custom protocol used"
+        ]
+    },
+    {
+        "q": "What Shodan organization scan submits?",
+        "o": [
+            "Private scan request jobs",
+            "Public data contributions",
+            "API documentation feedback",
+            "License renewal requests"
+        ]
+    },
+    {
+        "q": "Which Nmap technique identifies filtered ports?",
+        "o": [
+            "Response analysis patterns",
+            "Only open port detection",
+            "Closed state recognition",
+            "Service version probing"
+        ]
+    },
+    {
+        "q": "Maltego entity alias field stores what alternatives?",
+        "o": [
+            "Other known identifiers",
+            "Transform source code",
+            "License backup data",
+            "API endpoint configs"
+        ]
+    },
+    {
+        "q": "Recon-ng api module manages what resource?",
+        "o": [
+            "Third-party API keys",
+            "Network configuration",
+            "Database connections",
+            "File system access"
+        ]
+    },
+    {
+        "q": "Censys company data enrichment provides what?",
+        "o": [
+            "Organization asset summary",
+            "Individual employee info",
+            "Password breach records",
+            "Social media profiles"
+        ]
+    },
+    {
+        "q": "What Nmap discovery script finds network shares?",
+        "o": [
+            "smb-enum-shares script",
+            "No share discovery exists",
+            "Only port scanning runs",
+            "Manual testing required"
+        ]
+    },
+    {
+        "q": "Maltego graph autosave interval protects what?",
+        "o": [
+            "Unsaved work recovery",
+            "Transform execution logs",
+            "License key storage",
+            "API call statistics"
+        ]
+    },
+    {
+        "q": "theHarvester dnslookup module performs what task?",
+        "o": [
+            "DNS record resolution",
+            "Password hash cracking",
+            "Social profile search",
+            "Email header analysis"
+        ]
+    },
+    {
+        "q": "What Shodan streaming API delivers real-time?",
+        "o": [
+            "New discoveries feed",
+            "Historical data replay",
+            "API documentation updates",
+            "License renewal alerts"
+        ]
+    },
+    {
+        "q": "What Nmap NSE socket library enables for scripts?",
+        "o": [
+            "Low-level network connections",
+            "High-level HTTP only requests",
+            "File system access local",
+            "Database query execution"
+        ]
+    },
+    {
+        "q": "Maltego TRX framework enables what development?",
+        "o": [
+            "Custom Python transforms",
+            "Only JavaScript coding",
+            "C++ library building",
+            "Assembly level access"
+        ]
+    },
+    {
+        "q": "Recon-ng threading implementation uses what library?",
+        "o": [
+            "Python threading module",
+            "Custom C extension only",
+            "No threading supported",
+            "External binary required"
+        ]
+    },
+    {
+        "q": "What Censys search Lucene syntax supports?",
+        "o": [
+            "Complex boolean queries",
+            "Simple text match only",
+            "No advanced syntax here",
+            "SQL compatible queries"
+        ]
+    },
+    {
+        "q": "Which Nmap target specification supports exclusion?",
+        "o": [
+            "--exclude and --excludefile",
+            "Only single target entry",
+            "No exclusion possible",
+            "Random selection only"
+        ]
+    },
+    {
+        "q": "Maltego entity property accessor pattern follows?",
+        "o": [
+            "Dot notation for access",
+            "Bracket array indexing",
+            "XPath query syntax",
+            "SQL select statement"
+        ]
+    },
+    {
+        "q": "theHarvester async implementation improves what?",
+        "o": [
+            "Concurrent source queries",
+            "Sequential processing only",
+            "Single thread execution",
+            "No performance change"
+        ]
+    },
+    {
+        "q": "What Shodan CIDR search notation enables?",
+        "o": [
+            "Network range specification",
+            "Single IP address only",
+            "Hostname wildcards only",
+            "No range search exists"
+        ]
+    },
+    {
+        "q": "Nmap script action function returns what?",
+        "o": [
+            "Output table or string",
+            "Boolean success value",
+            "Integer error codes only",
+            "Binary data blob format"
+        ]
+    },
+    {
+        "q": "Maltego integration server webhook delivers what?",
+        "o": [
+            "Transform requests inbound",
+            "License validation calls",
+            "Graph backup data only",
+            "API documentation updates"
+        ]
+    },
+    {
+        "q": "Recon-ng module author field indicates what info?",
+        "o": [
+            "Creator attribution data",
+            "License type of code",
+            "Version number only",
+            "Dependency listing"
+        ]
+    },
+    {
+        "q": "Censys data schema versioning affects what?",
+        "o": [
+            "Query field compatibility",
+            "No impact on queries",
+            "Only visual display",
+            "License tier access"
+        ]
+    },
+    {
+        "q": "What Nmap script portrule function matches?",
+        "o": [
+            "Port and service criteria",
+            "Host characteristics only",
+            "Script argument values",
+            "Output format selection"
+        ]
+    },
+    {
+        "q": "Maltego transform TRX response format uses?",
+        "o": [
+            "XML structured output",
+            "JSON array format only",
+            "Plain text responses",
+            "Binary protocol buffer"
+        ]
+    },
+    {
+        "q": "theHarvester source plugin architecture allows?",
+        "o": [
+            "Custom source creation",
+            "Only built-in sources",
+            "No extension possible",
+            "Binary blob plugins"
+        ]
+    },
+    {
+        "q": "What Shodan honeyscore field indicates?",
+        "o": [
+            "Honeypot probability rating",
+            "Vulnerability severity only",
+            "Authentication strength",
+            "Encryption quality level"
+        ]
+    },
+    {
+        "q": "Which Nmap NSE brute library provides?",
+        "o": [
+            "Password attack framework",
+            "Only banner grabbing",
+            "Port scanning helpers",
+            "OS detection utilities"
+        ]
+    },
+    {
+        "q": "Maltego seed configuration specifies what servers?",
+        "o": [
+            "Transform server endpoints",
+            "Graph storage backends",
+            "License validation hosts",
+            "API documentation sites"
+        ]
+    },
+    {
+        "q": "Recon-ng database schema migration handles what?",
+        "o": [
+            "Version upgrade changes",
+            "No migration supported",
+            "Manual SQL execution",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Censys API rate limiting implements what method?",
+        "o": [
+            "Token bucket algorithm",
+            "No rate limits exist",
+            "Fixed per second only",
+            "Random delay insertion"
+        ]
+    },
+    {
+        "q": "What Nmap script registry stores metadata?",
+        "o": [
+            "Script attributes table",
+            "Only execution logs",
+            "User preferences data",
+            "Network scan history"
+        ]
+    },
+    {
+        "q": "Maltego entity validation regex enforces what?",
+        "o": [
+            "Property format patterns",
+            "Transform execution order",
+            "License key formats only",
+            "Graph layout constraints"
+        ]
+    },
+    {
+        "q": "theHarvester output normalization standardizes what?",
+        "o": [
+            "Cross-source result format",
+            "Only email addresses",
+            "Domain name casing",
+            "IP address notation"
+        ]
+    },
+    {
+        "q": "What Shodan image capture protocol uses?",
+        "o": [
+            "VNC, RDP, and HTTP methods",
+            "Only SSH connections",
+            "HTTPS encrypted only",
+            "Custom binary protocol"
+        ]
+    },
+    {
+        "q": "Which Nmap encoding library handles data?",
+        "o": [
+            "Base64 and hex conversion",
+            "No encoding support exists",
+            "Only URL encoding here",
+            "Binary blob handling"
+        ]
+    },
+    {
+        "q": "Maltego transform caching reduces what load?",
+        "o": [
+            "Repeated API calls count",
+            "Graph rendering time",
+            "License validation checks",
+            "Memory usage overall"
+        ]
+    },
+    {
+        "q": "Recon-ng report template customization uses?",
+        "o": [
+            "Jinja2 template syntax",
+            "Custom binary format",
+            "No customization possible",
+            "SQL query language"
+        ]
+    },
+    {
+        "q": "Censys certificate chain validation checks what?",
+        "o": [
+            "Trust path completeness",
+            "Only issuer name match",
+            "Expiration date alone",
+            "Key size minimum"
+        ]
+    },
+    {
+        "q": "What Nmap DNS library provides resolvers?",
+        "o": [
+            "Multiple resolver options",
+            "Single DNS only support",
+            "No DNS functionality",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego entity slider precision affects what?",
+        "o": [
+            "Result count granularity",
+            "Graph zoom resolution",
+            "Transform timeout seconds",
+            "Link weight decimals"
+        ]
+    },
+    {
+        "q": "theHarvester verbosity control outputs what level?",
+        "o": [
+            "Debug detail messages",
+            "Only error notifications",
+            "No output at all here",
+            "Binary log files only"
+        ]
+    },
+    {
+        "q": "What Shodan tag system categorizes?",
+        "o": [
+            "Service type labels added",
+            "User custom bookmarks",
+            "API call categories",
+            "License tier markers"
+        ]
+    },
+    {
+        "q": "Which Nmap packet library creates custom frames?",
+        "o": [
+            "Raw packet construction",
+            "Only standard TCP/UDP",
+            "No custom packets here",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego transform concurrency handles what limits?",
+        "o": [
+            "Parallel execution count",
+            "Sequential processing only",
+            "No limit configuration",
+            "Random scheduling"
+        ]
+    },
+    {
+        "q": "Recon-ng credential correlation links what data?",
+        "o": [
+            "Cross-source credential matches",
+            "Only single source entries",
+            "No correlation feature",
+            "Manual matching required"
+        ]
+    },
+    {
+        "q": "Censys host services enumeration returns what?",
+        "o": [
+            "All detected port services",
+            "Only common ports data",
+            "Single service per host",
+            "No service information"
+        ]
+    },
+    {
+        "q": "What Nmap FTP library provides bounce scanning?",
+        "o": [
+            "FTP bounce proxy support",
+            "Only direct connections",
+            "No bounce capability",
+            "External tool needed"
+        ]
+    },
+    {
+        "q": "Maltego graph algorithm selection optimizes what?",
+        "o": [
+            "Layout visual clarity",
+            "Transform execution speed",
+            "License validation time",
+            "API call reduction"
+        ]
+    },
+    {
+        "q": "theHarvester IP resolution caches what lookups?",
+        "o": [
+            "DNS query results stored",
+            "No caching mechanism",
+            "Only failed attempts",
+            "External cache required"
+        ]
+    },
+    {
+        "q": "What Shodan credits system tracks usage?",
+        "o": [
+            "Query and scan quotas",
+            "No credit system exists",
+            "Unlimited access always",
+            "Only download counts"
+        ]
+    },
+    {
+        "q": "Which Nmap SMB library enables share enum?",
+        "o": [
+            "SMB protocol functions",
+            "Only port detection here",
+            "No SMB support exists",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego entity linking logic determines what?",
+        "o": [
+            "Relationship type assignment",
+            "Transform selection only",
+            "License tier access",
+            "API endpoint routing"
+        ]
+    },
+    {
+        "q": "Recon-ng module dependencies declare what needs?",
+        "o": [
+            "Required Python packages",
+            "No dependencies allowed",
+            "Only system binaries",
+            "External services only"
+        ]
+    },
+    {
+        "q": "Censys IPv6 scanning methodology uses what?",
+        "o": [
+            "Targeted hitlist approach",
+            "Full address space scan",
+            "Random sampling only",
+            "No IPv6 scanning done"
+        ]
+    },
+    {
+        "q": "What Nmap MS-SQL library provides authentication?",
+        "o": [
+            "SQL Server login support",
+            "Only port detection here",
+            "No database connection",
+            "External tool needed"
+        ]
+    },
+    {
+        "q": "Maltego transform throttling protects what resource?",
+        "o": [
+            "API rate limit quotas",
+            "Graph memory usage",
+            "License validation calls",
+            "Disk storage space"
+        ]
+    },
+    {
+        "q": "theHarvester source weight prioritizes what order?",
+        "o": [
+            "Data quality ranking",
+            "Alphabetical sorting",
+            "Random selection made",
+            "No prioritization exists"
+        ]
+    },
+    {
+        "q": "What Shodan enterprise data firehose provides?",
+        "o": [
+            "Complete scan stream access",
+            "Same as free tier data",
+            "No additional data here",
+            "Historical archives only"
+        ]
+    },
+    {
+        "q": "Which Nmap SSH library enables key exchange?",
+        "o": [
+            "SSH protocol handshake",
+            "Only port detection here",
+            "No SSH support exists",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego graph persistence stores what state?",
+        "o": [
+            "Complete investigation data",
+            "Only entity positions",
+            "Transform logs alone",
+            "API call history"
+        ]
+    },
+    {
+        "q": "Recon-ng import module parses what file formats?",
+        "o": [
+            "CSV and structured data",
+            "Only plain text lists",
+            "No import capability",
+            "Binary dumps only"
+        ]
+    },
+    {
+        "q": "Censys compliance data indicates what status?",
+        "o": [
+            "Security configuration state",
+            "License tier membership",
+            "API usage statistics",
+            "User account details"
+        ]
+    },
+    {
+        "q": "What Nmap SNMP library enables community?",
+        "o": [
+            "SNMP query functionality",
+            "Only port scanning here",
+            "No SNMP support exists",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego investigation sharing requires what license?",
+        "o": [
+            "Collaboration tier access",
+            "Any license tier works",
+            "Free tier includes this",
+            "No sharing possible"
+        ]
+    },
+    {
+        "q": "theHarvester error handling retries what failures?",
+        "o": [
+            "Transient network errors",
+            "All failures indefinitely",
+            "No retry mechanism here",
+            "Only authentication fails"
+        ]
+    },
+    {
+        "q": "What Shodan vulnerability correlation matches?",
+        "o": [
+            "CVE to service version",
+            "Only port numbers match",
+            "No vulnerability linking",
+            "Manual matching required"
+        ]
+    },
+    {
+        "q": "Which Nmap RPC library discovers services?",
+        "o": [
+            "RPC portmapper queries",
+            "Only TCP port scanning",
+            "No RPC support exists",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego entity deduplication merges what nodes?",
+        "o": [
+            "Identical property values",
+            "All entities together",
+            "No deduplication exists",
+            "Random node selection"
+        ]
+    },
+    {
+        "q": "Recon-ng output sanitization removes what chars?",
+        "o": [
+            "Dangerous injection chars",
+            "All special characters",
+            "No sanitization done",
+            "Only whitespace removed"
+        ]
+    },
+    {
+        "q": "Censys search result scoring ranks what?",
+        "o": [
+            "Relevance to query terms",
+            "No relevance scoring",
+            "Random ordering always",
+            "Alphabetical sorting"
+        ]
+    },
+    {
+        "q": "What Nmap LDAP library queries directories?",
+        "o": [
+            "Active Directory enumeration",
+            "Only port detection here",
+            "No LDAP support exists",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego transform error handling displays what?",
+        "o": [
+            "User-friendly messages",
+            "Raw stack trace only",
+            "No error display here",
+            "Binary error codes"
+        ]
+    },
+    {
+        "q": "theHarvester concurrent source limits prevent what?",
+        "o": [
+            "Rate limit violations",
+            "No limits enforced here",
+            "Only single source runs",
+            "Random source selection"
+        ]
+    },
+    {
+        "q": "What Shodan monitor network tracks changes?",
+        "o": [
+            "Asset discovery deltas",
+            "No change tracking here",
+            "Only new hosts found",
+            "Historical data only"
+        ]
+    },
+    {
+        "q": "Which Nmap VNC library handles authentication?",
+        "o": [
+            "VNC security handshake",
+            "Only port detection here",
+            "No VNC support exists",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego graph export PDF includes what layouts?",
+        "o": [
+            "Current graph rendering",
+            "Only entity list text",
+            "Transform source code",
+            "API documentation"
+        ]
+    },
+    {
+        "q": "Recon-ng module versioning tracks what changes?",
+        "o": [
+            "Functionality updates made",
+            "No versioning exists here",
+            "Only creation date noted",
+            "Random version numbers"
+        ]
+    },
+    {
+        "q": "Censys autonomous system lookup returns what?",
+        "o": [
+            "Organization and routing",
+            "Only IP address count",
+            "No ASN information here",
+            "Personal user details"
+        ]
+    },
+    {
+        "q": "What Nmap MongoDB library enables queries?",
+        "o": [
+            "Database enumeration support",
+            "Only port detection here",
+            "No MongoDB support exists",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego entity icon customization allows what?",
+        "o": [
+            "Visual type distinction",
+            "No customization possible",
+            "Only default icons used",
+            "Transform-selected only"
+        ]
+    },
+    {
+        "q": "theHarvester domain expansion discovers what related?",
+        "o": [
+            "Associated domain names",
+            "Only subdomains found",
+            "No expansion feature here",
+            "Random domain selection"
+        ]
+    },
+    {
+        "q": "What Shodan search term negation uses?",
+        "o": [
+            "Minus prefix operator",
+            "NOT keyword required",
+            "No negation supported",
+            "Exclamation marks only"
+        ]
+    },
+    {
+        "q": "Which Nmap Oracle library tests databases?",
+        "o": [
+            "TNS listener interaction",
+            "Only port detection here",
+            "No Oracle support exists",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego transform input validation rejects what?",
+        "o": [
+            "Invalid entity formats",
+            "All input accepted here",
+            "Only empty string values",
+            "Random rejection occurs"
+        ]
+    },
+    {
+        "q": "Recon-ng geolocation correlation plots what data?",
+        "o": [
+            "IP to physical location",
+            "No geolocation feature",
+            "Only country level data",
+            "Random coordinates used"
+        ]
+    },
+    {
+        "q": "Censys certificate issuer search syntax?",
+        "o": [
+            "parsed.issuer.organization",
+            "cert.issuer:name format",
+            "issuer.org:value query",
+            "ca.name:organization"
+        ]
+    },
+    {
+        "q": "What Nmap Redis library provides commands?",
+        "o": [
+            "Redis protocol support",
+            "Only port detection here",
+            "No Redis support exists",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego graph statistics panel shows what counts?",
+        "o": [
+            "Entity and link totals",
+            "Transform execution time",
+            "License usage metrics",
+            "API call statistics"
+        ]
+    },
+    {
+        "q": "theHarvester email pattern recognition detects what?",
+        "o": [
+            "Common format structures",
+            "Only exact matches found",
+            "No pattern recognition",
+            "Random email generation"
+        ]
+    },
+    {
+        "q": "What Shodan organization exposure summarizes?",
+        "o": [
+            "Attack surface overview",
+            "No summary feature exists",
+            "Only port count shown",
+            "License usage details"
+        ]
+    },
+    {
+        "q": "Which Nmap NFS library mounts shares?",
+        "o": [
+            "NFS export enumeration",
+            "Only port detection here",
+            "No NFS support exists",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego entity weight visualization shows what?",
+        "o": [
+            "Importance sizing effect",
+            "No weight visualization",
+            "Only link thickness used",
+            "Random sizing applied"
+        ]
+    },
+    {
+        "q": "Recon-ng contact discovery normalizes what format?",
+        "o": [
+            "Name and email standardization",
+            "No normalization feature",
+            "Only email lowercasing",
+            "Random formatting applied"
+        ]
+    },
+    {
+        "q": "Censys host risk scoring evaluates what factors?",
+        "o": [
+            "Vulnerability exposure level",
+            "No risk scoring exists",
+            "Only port count metric",
+            "License tier determines"
+        ]
+    },
+    {
+        "q": "What Nmap MySQL library enables enumeration?",
+        "o": [
+            "MySQL protocol support",
+            "Only port detection here",
+            "No MySQL support exists",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego transform progress indication shows what?",
+        "o": [
+            "Execution completion percent",
+            "No progress indication",
+            "Only finish notification",
+            "Random progress values"
+        ]
+    },
+    {
+        "q": "theHarvester subdomain brute force uses what list?",
+        "o": [
+            "Configurable wordlist input",
+            "Only built-in dictionary",
+            "No brute force feature",
+            "Random string generation"
+        ]
+    },
+    {
+        "q": "What Shodan data freshness indicator shows?",
+        "o": [
+            "Last scan timestamp age",
+            "No freshness indicator",
+            "Only creation date shown",
+            "License expiration date"
+        ]
+    },
+    {
+        "q": "Which Nmap PostgreSQL library connects databases?",
+        "o": [
+            "PostgreSQL protocol support",
+            "Only port detection here",
+            "No PostgreSQL support",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego entity copy propagates what properties?",
+        "o": [
+            "All attribute values copied",
+            "Only primary value used",
+            "No property propagation",
+            "Random selection made"
+        ]
+    },
+    {
+        "q": "Recon-ng export timestamp format follows what?",
+        "o": [
+            "ISO 8601 standard format",
+            "Custom binary encoding",
+            "No timestamp included",
+            "Random format selection"
+        ]
+    },
+    {
+        "q": "Censys search field type coercion handles what?",
+        "o": [
+            "Automatic value conversion",
+            "No type handling exists",
+            "Only string types work",
+            "Manual casting required"
+        ]
+    },
+    {
+        "q": "What Nmap TLS library validates certificates?",
+        "o": [
+            "Certificate chain checking",
+            "Only port detection here",
+            "No TLS support exists",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego graph zoom persistence remembers what?",
+        "o": [
+            "View scale between sessions",
+            "No zoom persistence here",
+            "Only default zoom used",
+            "Random zoom on open"
+        ]
+    },
+    {
+        "q": "theHarvester JSON output structure enables what?",
+        "o": [
+            "Programmatic processing",
+            "No JSON output exists",
+            "Only human readable text",
+            "Binary format output"
+        ]
+    },
+    {
+        "q": "What Shodan difference between scan and search?",
+        "o": [
+            "Active vs indexed lookup",
+            "No difference exists here",
+            "Same functionality both",
+            "License tier dependent"
+        ]
+    },
+    {
+        "q": "Which Nmap Cassandra library queries clusters?",
+        "o": [
+            "CQL protocol interaction",
+            "Only port detection here",
+            "No Cassandra support",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego entity selection mode enables what action?",
+        "o": [
+            "Bulk operations on nodes",
+            "No selection mode exists",
+            "Only single entity work",
+            "Random selection made"
+        ]
+    },
+    {
+        "q": "Recon-ng API caching reduces what network calls?",
+        "o": [
+            "Repeated query executions",
+            "No caching implemented",
+            "Only failed calls cached",
+            "All calls repeated always"
+        ]
+    },
+    {
+        "q": "Censys host service banner extracts what info?",
+        "o": [
+            "Version and product data",
+            "Only port number shown",
+            "No banner capture done",
+            "License key information"
+        ]
+    },
+    {
+        "q": "What Nmap script-help displays for users?",
+        "o": [
+            "NSE script documentation",
+            "No help system exists",
+            "Only error messages shown",
+            "License information"
+        ]
+    },
+    {
+        "q": "Maltego transform result filtering shows what?",
+        "o": [
+            "Subset matching criteria",
+            "All results unfiltered",
+            "No filtering possible",
+            "Random result selection"
+        ]
+    },
+    {
+        "q": "theHarvester passive mode limits what activity?",
+        "o": [
+            "Direct target interaction",
+            "No limitation applied",
+            "All network activity",
+            "Only API call counts"
+        ]
+    },
+    {
+        "q": "What Shodan maps geographic distribution by?",
+        "o": [
+            "IP geolocation databases",
+            "No mapping available here",
+            "Only country level data",
+            "User reported locations"
+        ]
+    },
+    {
+        "q": "Which Nmap protocol library extends support?",
+        "o": [
+            "Modular protocol handlers",
+            "Only TCP/UDP built-in",
+            "No extension possible",
+            "External tools required"
+        ]
+    },
+    {
+        "q": "Maltego transform bundle packages what items?",
+        "o": [
+            "Related transforms together",
+            "Only single transform",
+            "No bundling possible",
+            "Random grouping made"
+        ]
+    },
+    {
+        "q": "Recon-ng company enumeration discovers what data?",
+        "o": [
+            "Employee and domain info",
+            "Only financial records",
+            "No company data found",
+            "Random information"
+        ]
+    },
+    {
+        "q": "Censys cloud provider attribution detects what?",
+        "o": [
+            "AWS, Azure, GCP hosting",
+            "No cloud detection here",
+            "Only on-premises systems",
+            "License tier determines"
+        ]
+    },
+    {
+        "q": "What Nmap service probe priority determines?",
+        "o": [
+            "Order of detection attempts",
+            "No priority system exists",
+            "Random probe selection",
+            "User manual override"
+        ]
+    },
+    {
+        "q": "Maltego graph node clustering groups what entities?",
+        "o": [
+            "Related items visually",
+            "No clustering feature",
+            "Random grouping only",
+            "All entities together"
+        ]
+    },
+    {
+        "q": "theHarvester proxy configuration routes what traffic?",
+        "o": [
+            "API calls through tunnel",
+            "No proxy support exists",
+            "Only local file access",
+            "Direct connection always"
+        ]
+    },
+    {
+        "q": "What Shodan bulk lookup API accepts?",
+        "o": [
+            "Multiple IP addresses",
+            "Single IP only here",
+            "No bulk support exists",
+            "Hostname queries only"
+        ]
+    },
+    {
+        "q": "Which Nmap Telnet library provides interaction?",
+        "o": [
+            "Telnet protocol functions",
+            "Only port detection here",
+            "No Telnet support exists",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego entity timestamp tracks what event?",
+        "o": [
+            "Creation and modification",
+            "No timestamp recorded",
+            "Transform execution only",
+            "License validation time"
+        ]
+    },
+    {
+        "q": "Recon-ng multi-domain discovery covers what scope?",
+        "o": [
+            "Cross-domain relationships",
+            "Single domain only here",
+            "No multi-domain feature",
+            "Random domain selection"
+        ]
+    },
+    {
+        "q": "Censys protocol detection identifies what services?",
+        "o": [
+            "Application layer protocols",
+            "Only transport layer",
+            "No protocol detection",
+            "License tier dependent"
+        ]
+    },
+    {
+        "q": "What Nmap payload customization allows injection?",
+        "o": [
+            "Custom application data",
+            "No payload customization",
+            "Only standard probes",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego graph history navigation allows what?",
+        "o": [
+            "Undo and redo operations",
+            "No history available",
+            "Only forward action",
+            "Single step undo only"
+        ]
+    },
+    {
+        "q": "theHarvester result aggregation combines what data?",
+        "o": [
+            "Cross-source findings merged",
+            "Single source per run",
+            "No aggregation feature",
+            "Random data combination"
+        ]
+    },
+    {
+        "q": "What Shodan API response format returns?",
+        "o": [
+            "JSON structured data",
+            "Only XML format here",
+            "Plain text output",
+            "Binary encoded data"
+        ]
+    },
+    {
+        "q": "Which Nmap HTTP library enables web requests?",
+        "o": [
+            "HTTP protocol functions",
+            "Only port scanning here",
+            "No HTTP support exists",
+            "External tool required"
+        ]
+    },
+    {
+        "q": "Maltego transform debugging displays what info?",
+        "o": [
+            "Execution trace details",
+            "No debugging available",
+            "Only final output shown",
+            "License key validation"
+        ]
+    },
+    {
+        "q": "Recon-ng workspace switching preserves what data?",
+        "o": [
+            "Independent project state",
+            "No workspace isolation",
+            "Shared global database",
+            "Random data retention"
+        ]
+    }
+]

@@ -1,0 +1,4574 @@
+[
+    {
+        "q": "What does DNS stand for?",
+        "o": [
+            "Domain Name System",
+            "Data Network Service",
+            "Digital Name Server",
+            "Domain Network System"
+        ]
+    },
+    {
+        "q": "What is the primary function of DNS?",
+        "o": [
+            "Translate domain names to IP addresses",
+            "Encrypt network traffic",
+            "Filter malicious websites",
+            "Manage network bandwidth"
+        ]
+    },
+    {
+        "q": "What port does DNS typically use?",
+        "o": [
+            "Port 53",
+            "Port 80",
+            "Port 443",
+            "Port 22"
+        ]
+    },
+    {
+        "q": "What transport protocol does DNS primarily use?",
+        "o": [
+            "UDP",
+            "TCP only",
+            "ICMP",
+            "FTP"
+        ]
+    },
+    {
+        "q": "When does DNS use TCP instead of UDP?",
+        "o": [
+            "For zone transfers and large responses",
+            "For all queries",
+            "Never uses TCP",
+            "For encrypted queries only"
+        ]
+    },
+    {
+        "q": "What is a DNS resolver?",
+        "o": [
+            "Client that queries DNS servers",
+            "Server storing domain records",
+            "Protocol for DNS encryption",
+            "Tool for fixing DNS issues"
+        ]
+    },
+    {
+        "q": "What is a recursive DNS query?",
+        "o": [
+            "Resolver handles full lookup process",
+            "Client queries multiple servers",
+            "Query repeats infinitely",
+            "Encrypted DNS request"
+        ]
+    },
+    {
+        "q": "What is an iterative DNS query?",
+        "o": [
+            "Server provides best answer or referral",
+            "Client makes multiple parallel requests",
+            "Query processes in loop",
+            "Repeated query to same server"
+        ]
+    },
+    {
+        "q": "What is a DNS zone?",
+        "o": [
+            "Administrative domain portion of DNS",
+            "Encrypted DNS section",
+            "Time zone for DNS servers",
+            "Geographic DNS region"
+        ]
+    },
+    {
+        "q": "What is an A record in DNS?",
+        "o": [
+            "Maps hostname to IPv4 address",
+            "Authentication record",
+            "Administrative record",
+            "Alias record"
+        ]
+    },
+    {
+        "q": "What is an AAAA record?",
+        "o": [
+            "Maps hostname to IPv6 address",
+            "Advanced authentication record",
+            "Quad A security record",
+            "Application address record"
+        ]
+    },
+    {
+        "q": "What is an MX record?",
+        "o": [
+            "Mail exchange server record",
+            "Maximum record size",
+            "Mixed record type",
+            "Management exchange record"
+        ]
+    },
+    {
+        "q": "What is a CNAME record?",
+        "o": [
+            "Canonical name alias record",
+            "Certificate name record",
+            "Client name record",
+            "Connection name record"
+        ]
+    },
+    {
+        "q": "What is a TXT record used for?",
+        "o": [
+            "Store arbitrary text data",
+            "Text message service",
+            "Transmit encrypted text",
+            "Test record type"
+        ]
+    },
+    {
+        "q": "What is an NS record?",
+        "o": [
+            "Name server record",
+            "Network security record",
+            "Node server record",
+            "Naming standard record"
+        ]
+    },
+    {
+        "q": "What is a PTR record?",
+        "o": [
+            "Pointer for reverse DNS lookup",
+            "Protocol transfer record",
+            "Private transfer record",
+            "Protected transmit record"
+        ]
+    },
+    {
+        "q": "What is DNS caching?",
+        "o": [
+            "Storing DNS responses temporarily",
+            "Encrypting DNS data",
+            "Caching DNS credentials",
+            "Permanent DNS storage"
+        ]
+    },
+    {
+        "q": "What is TTL in DNS?",
+        "o": [
+            "Time To Live for cached records",
+            "Total Transfer Length",
+            "Transmission Time Limit",
+            "Transfer Token Length"
+        ]
+    },
+    {
+        "q": "What is DNS cache poisoning?",
+        "o": [
+            "Injecting false DNS records into cache",
+            "Cleaning DNS cache entries",
+            "Corrupting DNS software",
+            "Poisoning server hardware"
+        ]
+    },
+    {
+        "q": "Who is credited with discovering the DNS cache poisoning vulnerability?",
+        "o": [
+            "Dan Kaminsky",
+            "Kevin Mitnick",
+            "Bruce Schneier",
+            "Steve Jobs"
+        ]
+    },
+    {
+        "q": "What is DNS spoofing?",
+        "o": [
+            "Forging DNS responses",
+            "Hiding DNS servers",
+            "Encrypting DNS traffic",
+            "Speeding up DNS"
+        ]
+    },
+    {
+        "q": "What is a DNS amplification attack?",
+        "o": [
+            "DDoS using DNS response size",
+            "Amplifying DNS speed",
+            "Increasing DNS capacity",
+            "DNS signal amplification"
+        ]
+    },
+    {
+        "q": "What makes DNS suitable for amplification attacks?",
+        "o": [
+            "Small query large response ratio",
+            "DNS always uses encryption",
+            "DNS requires authentication",
+            "DNS only uses TCP"
+        ]
+    },
+    {
+        "q": "What is DNS tunneling?",
+        "o": [
+            "Encoding data in DNS queries",
+            "Tunneling DNS through VPN",
+            "Underground DNS servers",
+            "Hidden DNS channels"
+        ]
+    },
+    {
+        "q": "What is a root DNS server?",
+        "o": [
+            "Top of DNS hierarchy",
+            "Server at root of network",
+            "Primary backup server",
+            "Original DNS server"
+        ]
+    },
+    {
+        "q": "How many root DNS server IP addresses exist?",
+        "o": [
+            "13 root server addresses",
+            "Unlimited root servers",
+            "Only one root server",
+            "100 root servers"
+        ]
+    },
+    {
+        "q": "What is a TLD in DNS?",
+        "o": [
+            "Top Level Domain",
+            "Total Load Distribution",
+            "Transfer Level Domain",
+            "Terminal Level Domain"
+        ]
+    },
+    {
+        "q": "What are examples of gTLDs?",
+        "o": [
+            "com net org edu",
+            "Only country codes",
+            "IP addresses only",
+            "Root server names"
+        ]
+    },
+    {
+        "q": "What are ccTLDs?",
+        "o": [
+            "Country Code Top Level Domains",
+            "Central Control TLDs",
+            "Client Connection TLDs",
+            "Certified Control TLDs"
+        ]
+    },
+    {
+        "q": "What is an authoritative DNS server?",
+        "o": [
+            "Server with original zone data",
+            "Server with admin access",
+            "Server with encryption keys",
+            "Server with user data"
+        ]
+    },
+    {
+        "q": "What is DNSSEC?",
+        "o": [
+            "DNS Security Extensions",
+            "DNS Secure Encryption",
+            "DNS Service Extension",
+            "Domain Name Security"
+        ]
+    },
+    {
+        "q": "What does DNSSEC protect against?",
+        "o": [
+            "Data forgery and modification",
+            "Data encryption",
+            "Data compression",
+            "Data storage"
+        ]
+    },
+    {
+        "q": "What cryptographic method does DNSSEC use?",
+        "o": [
+            "Digital signatures",
+            "Symmetric encryption",
+            "Password hashing",
+            "Steganography"
+        ]
+    },
+    {
+        "q": "What is a DNSKEY record?",
+        "o": [
+            "Public key for DNSSEC verification",
+            "Encryption key for DNS traffic",
+            "Password for DNS access",
+            "Key for zone transfers"
+        ]
+    },
+    {
+        "q": "What is an RRSIG record?",
+        "o": [
+            "Resource Record Signature",
+            "Remote Record Signal",
+            "Recursive Response Signature",
+            "Root Record Signature"
+        ]
+    },
+    {
+        "q": "What is a DS record?",
+        "o": [
+            "Delegation Signer record",
+            "Domain Server record",
+            "Data Security record",
+            "Digital Signature record"
+        ]
+    },
+    {
+        "q": "What is NSEC record used for?",
+        "o": [
+            "Proving non-existence of domains",
+            "New security extension",
+            "Network secure encryption",
+            "Next server record"
+        ]
+    },
+    {
+        "q": "What problem does NSEC3 solve?",
+        "o": [
+            "Zone enumeration through NSEC walking",
+            "Encryption speed issues",
+            "Server performance problems",
+            "Cache size limitations"
+        ]
+    },
+    {
+        "q": "What is zone walking in DNS?",
+        "o": [
+            "Enumerating all zone records via NSEC",
+            "Walking through DNS servers",
+            "Physical inspection of zones",
+            "Moving zones between servers"
+        ]
+    },
+    {
+        "q": "What is a DNS zone transfer?",
+        "o": [
+            "Copying zone data between servers",
+            "Moving domain ownership",
+            "Transferring DNS protocols",
+            "Changing zone settings"
+        ]
+    },
+    {
+        "q": "What is AXFR in DNS?",
+        "o": [
+            "Full zone transfer request",
+            "Authentication transfer",
+            "Automatic file transfer",
+            "Advanced transfer protocol"
+        ]
+    },
+    {
+        "q": "What is IXFR in DNS?",
+        "o": [
+            "Incremental zone transfer",
+            "Internet transfer protocol",
+            "Internal transfer request",
+            "Immediate transfer"
+        ]
+    },
+    {
+        "q": "Why should zone transfers be restricted?",
+        "o": [
+            "Prevents attackers from mapping infrastructure",
+            "Saves bandwidth only",
+            "Improves DNS speed",
+            "Reduces server load"
+        ]
+    },
+    {
+        "q": "What is DNS rebinding attack?",
+        "o": [
+            "Changing DNS resolution to attack internal networks",
+            "Rebinding DNS servers",
+            "Connecting DNS together",
+            "Binding DNS records"
+        ]
+    },
+    {
+        "q": "What is a DNS sinkhole?",
+        "o": [
+            "Redirecting malicious domains to safe IP",
+            "Hole in DNS infrastructure",
+            "DNS server failure point",
+            "Underground DNS traffic"
+        ]
+    },
+    {
+        "q": "What is DNS blackholing?",
+        "o": [
+            "Dropping queries for malicious domains",
+            "Black colored DNS servers",
+            "Darknet DNS access",
+            "Hidden DNS records"
+        ]
+    },
+    {
+        "q": "What is split-horizon DNS?",
+        "o": [
+            "Different responses for internal vs external",
+            "Splitting DNS in half",
+            "Horizontal DNS servers",
+            "Divided zone files"
+        ]
+    },
+    {
+        "q": "What is DNS over HTTPS?",
+        "o": [
+            "Encrypted DNS using HTTPS protocol",
+            "DNS hosted on web servers",
+            "HTTP using DNS ports",
+            "Domain over secure HTTP"
+        ]
+    },
+    {
+        "q": "What port does DoH use?",
+        "o": [
+            "Port 443",
+            "Port 53",
+            "Port 853",
+            "Port 80"
+        ]
+    },
+    {
+        "q": "What is DNS over TLS?",
+        "o": [
+            "DNS encrypted with TLS",
+            "DNS for TLS certificates",
+            "TLS over DNS port",
+            "Secure DNS translation"
+        ]
+    },
+    {
+        "q": "What port does DoT use?",
+        "o": [
+            "Port 853",
+            "Port 53",
+            "Port 443",
+            "Port 8853"
+        ]
+    },
+    {
+        "q": "What is the privacy benefit of encrypted DNS?",
+        "o": [
+            "Hides DNS queries from observers",
+            "Makes DNS faster",
+            "Reduces DNS errors",
+            "Increases cache size"
+        ]
+    },
+    {
+        "q": "What is a DNS query ID?",
+        "o": [
+            "Unique identifier matching query to response",
+            "User identification number",
+            "Server registration ID",
+            "Zone identifier"
+        ]
+    },
+    {
+        "q": "Why is query ID important for security?",
+        "o": [
+            "Prevents response forgery",
+            "Identifies the user",
+            "Encrypts the query",
+            "Speeds up responses"
+        ]
+    },
+    {
+        "q": "What are DNS cookies?",
+        "o": [
+            "Lightweight authentication mechanism",
+            "Stored DNS preferences",
+            "Cached query data",
+            "Browser DNS tracking"
+        ]
+    },
+    {
+        "q": "What RFC defines DNS cookies?",
+        "o": [
+            "RFC 7873",
+            "RFC 1035",
+            "RFC 2535",
+            "RFC 8484"
+        ]
+    },
+    {
+        "q": "What is Response Rate Limiting in DNS?",
+        "o": [
+            "Limiting responses to prevent amplification",
+            "Rating DNS response speed",
+            "Limiting DNS cache size",
+            "Response time limits"
+        ]
+    },
+    {
+        "q": "What is DNS query name minimization?",
+        "o": [
+            "Sending only necessary name parts to each server",
+            "Minimizing query size",
+            "Shortening domain names",
+            "Reducing DNS traffic"
+        ]
+    },
+    {
+        "q": "What is the ANY query type?",
+        "o": [
+            "Request all record types for domain",
+            "Any server can respond",
+            "Anonymous query type",
+            "All name servers answer"
+        ]
+    },
+    {
+        "q": "Why is ANY query type a security concern?",
+        "o": [
+            "Large responses enable amplification",
+            "Reveals all user data",
+            "Exposes encryption keys",
+            "Discloses server configs"
+        ]
+    },
+    {
+        "q": "What is passive DNS?",
+        "o": [
+            "Recording historical DNS query data",
+            "Inactive DNS servers",
+            "Standby DNS systems",
+            "Dormant DNS zones"
+        ]
+    },
+    {
+        "q": "How is passive DNS useful for security?",
+        "o": [
+            "Tracks domain changes over time",
+            "Encrypts historical data",
+            "Blocks malicious queries",
+            "Speeds up lookups"
+        ]
+    },
+    {
+        "q": "What is a wildcard DNS record?",
+        "o": [
+            "Record matching any subdomain",
+            "Random DNS response",
+            "Encrypted catch-all record",
+            "Wildcard character only"
+        ]
+    },
+    {
+        "q": "What security issue can wildcards create?",
+        "o": [
+            "Unintended subdomain resolution",
+            "Faster DNS lookups",
+            "Better caching",
+            "Improved security"
+        ]
+    },
+    {
+        "q": "What is a lame delegation?",
+        "o": [
+            "NS record pointing to non-authoritative server",
+            "Slow DNS server",
+            "Broken DNS record",
+            "Incorrect TTL value"
+        ]
+    },
+    {
+        "q": "What is DNS hijacking?",
+        "o": [
+            "Redirecting DNS queries to attacker server",
+            "Stealing DNS server hardware",
+            "Hijacking DNS protocols",
+            "Taking over DNS port"
+        ]
+    },
+    {
+        "q": "What is a rogue DNS server?",
+        "o": [
+            "Unauthorized DNS providing false responses",
+            "Backup DNS server",
+            "Secondary DNS server",
+            "Alternative DNS provider"
+        ]
+    },
+    {
+        "q": "What is pharming attack?",
+        "o": [
+            "Redirecting users to fake sites via DNS",
+            "Farming DNS data",
+            "DNS phishing attempt",
+            "Agricultural DNS usage"
+        ]
+    },
+    {
+        "q": "What is the difference between phishing and pharming?",
+        "o": [
+            "Pharming uses DNS manipulation not links",
+            "They are exactly the same",
+            "Phishing is more dangerous",
+            "Pharming requires passwords"
+        ]
+    },
+    {
+        "q": "What is BIND in DNS?",
+        "o": [
+            "Berkeley Internet Name Domain software",
+            "Boundary Internet Network Domain",
+            "Basic Internet Name Directory",
+            "Binary Name Distribution"
+        ]
+    },
+    {
+        "q": "What percentage of internet DNS uses BIND?",
+        "o": [
+            "Large majority of DNS servers",
+            "Less than ten percent",
+            "Only government servers",
+            "No servers use BIND"
+        ]
+    },
+    {
+        "q": "What is Unbound DNS server?",
+        "o": [
+            "Validating recursive DNS resolver",
+            "Unconfigured DNS server",
+            "Free DNS hosting",
+            "Unencrypted DNS system"
+        ]
+    },
+    {
+        "q": "What is a forwarder in DNS?",
+        "o": [
+            "Server forwarding queries upstream",
+            "Email forwarding service",
+            "Packet forwarding device",
+            "Forward zone definition"
+        ]
+    },
+    {
+        "q": "What is DNS load balancing?",
+        "o": [
+            "Distributing traffic via multiple A records",
+            "Balancing zone files",
+            "Equal DNS server load",
+            "Bandwidth management"
+        ]
+    },
+    {
+        "q": "What is round-robin DNS?",
+        "o": [
+            "Rotating through multiple IP addresses",
+            "DNS for sports tournaments",
+            "Circular DNS queries",
+            "Round trip DNS measurement"
+        ]
+    },
+    {
+        "q": "What is GeoDNS?",
+        "o": [
+            "Location-based DNS responses",
+            "Geographic DNS servers",
+            "Geological domain names",
+            "Global DNS system"
+        ]
+    },
+    {
+        "q": "What is a DNS firewall?",
+        "o": [
+            "Filtering DNS based on threat intelligence",
+            "Firewall for DNS ports only",
+            "DNS-based packet filtering",
+            "Firewall using DNS protocol"
+        ]
+    },
+    {
+        "q": "What is Response Policy Zone?",
+        "o": [
+            "DNS firewall configuration zone",
+            "Policy for DNS responses",
+            "Responsive zone design",
+            "Zone response time"
+        ]
+    },
+    {
+        "q": "What is fast flux DNS?",
+        "o": [
+            "Rapidly changing IP addresses for domains",
+            "Fast DNS resolution",
+            "Quick zone transfers",
+            "Speedy cache updates"
+        ]
+    },
+    {
+        "q": "How do botnets use fast flux?",
+        "o": [
+            "Hide command and control servers",
+            "Speed up bot communication",
+            "Encrypt bot traffic",
+            "Reduce bot detection"
+        ]
+    },
+    {
+        "q": "What is double flux?",
+        "o": [
+            "Changing both A and NS records rapidly",
+            "Double DNS encryption",
+            "Two flux capacitors",
+            "Doubled DNS speed"
+        ]
+    },
+    {
+        "q": "What is domain generation algorithm?",
+        "o": [
+            "Malware creating random domain names",
+            "DNS algorithm for speed",
+            "Domain registration tool",
+            "Generation of DNS zones"
+        ]
+    },
+    {
+        "q": "How do DGAs evade detection?",
+        "o": [
+            "New domains created constantly",
+            "Domains are encrypted",
+            "Algorithms are hidden",
+            "DNS is not monitored"
+        ]
+    },
+    {
+        "q": "What is DNS monitoring?",
+        "o": [
+            "Observing DNS traffic for threats",
+            "Checking DNS server uptime",
+            "Monitoring zone file sizes",
+            "Watching DNS cache"
+        ]
+    },
+    {
+        "q": "What is a suspicious DNS query pattern?",
+        "o": [
+            "High volume to unusual domains",
+            "Normal browsing traffic",
+            "Cached query responses",
+            "Standard zone transfers"
+        ]
+    },
+    {
+        "q": "What is DNS exfiltration?",
+        "o": [
+            "Stealing data through DNS queries",
+            "Removing DNS servers",
+            "Exporting zone files",
+            "Filtering DNS traffic"
+        ]
+    },
+    {
+        "q": "How can data be hidden in DNS queries?",
+        "o": [
+            "Encoding in subdomain names",
+            "Encrypting query IDs",
+            "Hiding in TTL values",
+            "Storing in MX records"
+        ]
+    },
+    {
+        "q": "What is DNS beaconing?",
+        "o": [
+            "Regular DNS queries for C2 communication",
+            "DNS server announcements",
+            "Beacon signal in DNS",
+            "DNS location services"
+        ]
+    },
+    {
+        "q": "What indicates possible DNS beaconing?",
+        "o": [
+            "Regular intervals between queries",
+            "Random query timing",
+            "Normal browsing patterns",
+            "Cached responses only"
+        ]
+    },
+    {
+        "q": "What is a DNS query flood attack?",
+        "o": [
+            "Overwhelming server with queries",
+            "Flooding zone updates",
+            "Query format errors",
+            "Cache flooding"
+        ]
+    },
+    {
+        "q": "What is NXDOMAIN attack?",
+        "o": [
+            "Flooding with non-existent domain queries",
+            "NX security domain",
+            "Next domain attack",
+            "Network domain flooding"
+        ]
+    },
+    {
+        "q": "What is subdomain attack?",
+        "o": [
+            "Random subdomains to bypass cache",
+            "Attacking subdomain servers",
+            "Subdomain enumeration",
+            "Creating subdomains"
+        ]
+    },
+    {
+        "q": "What is phantom domain attack?",
+        "o": [
+            "Domains that never respond to queries",
+            "Ghost DNS servers",
+            "Invisible domain names",
+            "Fake domain registration"
+        ]
+    },
+    {
+        "q": "What is DNS reflection?",
+        "o": [
+            "Using DNS to send traffic to victim",
+            "Reflecting DNS queries",
+            "Mirror DNS zones",
+            "Reflected zone transfers"
+        ]
+    },
+    {
+        "q": "What enables DNS reflection attacks?",
+        "o": [
+            "Spoofed source IP addresses",
+            "Open DNS resolvers only",
+            "Encrypted DNS traffic",
+            "Zone transfer permissions"
+        ]
+    },
+    {
+        "q": "What is an open resolver?",
+        "o": [
+            "DNS server answering any query source",
+            "Open source DNS software",
+            "Resolver with open ports",
+            "Publicly shared resolver"
+        ]
+    },
+    {
+        "q": "Why are open resolvers dangerous?",
+        "o": [
+            "Can be abused for amplification attacks",
+            "Resolve queries slower",
+            "Cache is not secure",
+            "Use more bandwidth"
+        ]
+    },
+    {
+        "q": "What is BCP38 in DNS context?",
+        "o": [
+            "Anti-spoofing network ingress filtering",
+            "Best Current Practice for DNS",
+            "Backup Configuration Protocol",
+            "Basic Control Protocol"
+        ]
+    },
+    {
+        "q": "What is source port randomization in DNS?",
+        "o": [
+            "Using random ports for DNS queries",
+            "Randomizing server ports",
+            "Encrypting port numbers",
+            "Changing destination ports"
+        ]
+    },
+    {
+        "q": "How does source port randomization improve security?",
+        "o": [
+            "Makes spoofing responses harder",
+            "Speeds up DNS lookups",
+            "Encrypts DNS traffic",
+            "Reduces cache size"
+        ]
+    },
+    {
+        "q": "What is the 0x20 encoding in DNS?",
+        "o": [
+            "Case randomization for query names",
+            "20 byte encoding scheme",
+            "Hexadecimal DNS format",
+            "20 character limit"
+        ]
+    },
+    {
+        "q": "How does 0x20 encoding help security?",
+        "o": [
+            "Adds entropy to verify responses",
+            "Compresses DNS packets",
+            "Encrypts domain names",
+            "Speeds up resolution"
+        ]
+    },
+    {
+        "q": "What is bailiwick checking?",
+        "o": [
+            "Verifying response data is in-zone",
+            "Checking DNS credentials",
+            "Bail out checking",
+            "Background data check"
+        ]
+    },
+    {
+        "q": "What does bailiwick protect against?",
+        "o": [
+            "Out-of-zone data injection",
+            "Cache performance issues",
+            "Slow DNS responses",
+            "Zone transfer attempts"
+        ]
+    },
+    {
+        "q": "What is a glue record?",
+        "o": [
+            "A record for NS in same zone",
+            "Adhesive DNS record",
+            "Connection between zones",
+            "Linked DNS servers"
+        ]
+    },
+    {
+        "q": "Why are glue records necessary?",
+        "o": [
+            "Prevent circular lookups",
+            "Speed up DNS queries",
+            "Encrypt zone transfers",
+            "Enable caching"
+        ]
+    },
+    {
+        "q": "What is a referral in DNS?",
+        "o": [
+            "Direction to another name server",
+            "Referring users to websites",
+            "Reference to DNS standards",
+            "Referral link tracking"
+        ]
+    },
+    {
+        "q": "What is EDNS?",
+        "o": [
+            "Extension mechanisms for DNS",
+            "Encrypted DNS System",
+            "Enhanced Domain Name System",
+            "Extended DNS Security"
+        ]
+    },
+    {
+        "q": "What does EDNS0 enable?",
+        "o": [
+            "Larger DNS packet sizes",
+            "Encryption for DNS",
+            "Extended security features",
+            "Enhanced domain naming"
+        ]
+    },
+    {
+        "q": "What is the default 512 byte UDP limit?",
+        "o": [
+            "Original DNS response size limit",
+            "Maximum domain name length",
+            "Encryption key size limit",
+            "Zone file size limit"
+        ]
+    },
+    {
+        "q": "What is truncation in DNS?",
+        "o": [
+            "Response too large for UDP",
+            "Shortening domain names",
+            "Cutting zone files",
+            "Reducing cache size"
+        ]
+    },
+    {
+        "q": "What happens when DNS response is truncated?",
+        "o": [
+            "Client retries with TCP",
+            "Query fails completely",
+            "Response is lost",
+            "Server sends fragments"
+        ]
+    },
+    {
+        "q": "What is the TC flag in DNS?",
+        "o": [
+            "Truncation indicator",
+            "Time control flag",
+            "Total count flag",
+            "Transfer complete flag"
+        ]
+    },
+    {
+        "q": "What is DNS over QUIC?",
+        "o": [
+            "DNS using QUIC transport",
+            "Quick DNS lookups",
+            "Queued DNS queries",
+            "Quality DNS service"
+        ]
+    },
+    {
+        "q": "What port does DoQ use?",
+        "o": [
+            "Port 853 over QUIC",
+            "Port 53",
+            "Port 443",
+            "Port 8853"
+        ]
+    },
+    {
+        "q": "What is Oblivious DNS over HTTPS?",
+        "o": [
+            "Privacy-enhanced DoH with proxy",
+            "Obvious DNS improvement",
+            "Obfuscated DNS queries",
+            "Observable DNS traffic"
+        ]
+    },
+    {
+        "q": "How does ODoH improve privacy?",
+        "o": [
+            "Separates client identity from query",
+            "Encrypts all DNS traffic",
+            "Blocks all tracking",
+            "Speeds up resolution"
+        ]
+    },
+    {
+        "q": "What is the SVCB record type?",
+        "o": [
+            "Service binding record",
+            "Server verification block",
+            "Secure verification block",
+            "Service configuration"
+        ]
+    },
+    {
+        "q": "What is the HTTPS record type?",
+        "o": [
+            "SVCB for HTTPS connections",
+            "HTTPS server address",
+            "HTTP security record",
+            "Hypertext secure record"
+        ]
+    },
+    {
+        "q": "What is DNS resolver privacy?",
+        "o": [
+            "Protecting query data from observers",
+            "Private DNS servers",
+            "Hidden DNS zones",
+            "Resolver configuration privacy"
+        ]
+    },
+    {
+        "q": "What entities can see unencrypted DNS?",
+        "o": [
+            "ISPs network operators and eavesdroppers",
+            "Only the DNS server",
+            "Only the end user",
+            "Nobody can see DNS"
+        ]
+    },
+    {
+        "q": "What is DNS fingerprinting?",
+        "o": [
+            "Identifying systems via DNS patterns",
+            "DNS authentication method",
+            "Fingerprint verification via DNS",
+            "DNS configuration check"
+        ]
+    },
+    {
+        "q": "What is typosquatting in DNS?",
+        "o": [
+            "Registering misspelled domains",
+            "Typing DNS queries",
+            "Squatting on DNS servers",
+            "Type-based DNS attacks"
+        ]
+    },
+    {
+        "q": "What is combosquatting?",
+        "o": [
+            "Adding words to legitimate domains",
+            "Combining DNS zones",
+            "Squatting with combinations",
+            "Combined attack method"
+        ]
+    },
+    {
+        "q": "What is homograph attack?",
+        "o": [
+            "Using similar-looking characters",
+            "Graph-based DNS attack",
+            "Home network attack",
+            "Graphical domain attack"
+        ]
+    },
+    {
+        "q": "What is IDN homograph attack?",
+        "o": [
+            "Using Unicode to mimic ASCII domains",
+            "International domain attack",
+            "Identification number attack",
+            "ID network attack"
+        ]
+    },
+    {
+        "q": "What is punycode?",
+        "o": [
+            "ASCII encoding of Unicode domains",
+            "Small DNS encoding",
+            "Punny domain names",
+            "Point-based encoding"
+        ]
+    },
+    {
+        "q": "What is domain shadowing?",
+        "o": [
+            "Creating subdomains on compromised domains",
+            "Shadowing DNS traffic",
+            "Dark domain names",
+            "Shadow DNS servers"
+        ]
+    },
+    {
+        "q": "How does domain shadowing evade detection?",
+        "o": [
+            "Uses legitimate parent domain reputation",
+            "Hides in encrypted traffic",
+            "Shadows are invisible",
+            "Uses dark web routing"
+        ]
+    },
+    {
+        "q": "What is DNS cache snooping?",
+        "o": [
+            "Checking if domain is cached",
+            "Sniffing DNS cache data",
+            "Snooping on DNS servers",
+            "Cache inspection tool"
+        ]
+    },
+    {
+        "q": "What information does cache snooping reveal?",
+        "o": [
+            "What domains users visited",
+            "User passwords",
+            "Email contents",
+            "File downloads"
+        ]
+    },
+    {
+        "q": "What is the birthday attack in DNS?",
+        "o": [
+            "Probability-based spoofing attack",
+            "Attack on birthday",
+            "Date-based DNS attack",
+            "Annual DNS verification"
+        ]
+    },
+    {
+        "q": "How does birthday attack improve poisoning?",
+        "o": [
+            "Multiple queries increase collision chance",
+            "Attacks on special dates",
+            "Birthday notifications",
+            "Annual key rotation"
+        ]
+    },
+    {
+        "q": "What is the Kaminsky attack?",
+        "o": [
+            "Advanced cache poisoning technique",
+            "Named after DNS researcher",
+            "Kami network attack",
+            "Korean DNS attack"
+        ]
+    },
+    {
+        "q": "What made the Kaminsky attack significant?",
+        "o": [
+            "Could poison any domain",
+            "Only affected specific servers",
+            "Required physical access",
+            "Was easily detected"
+        ]
+    },
+    {
+        "q": "What is a Name Server Daemon?",
+        "o": [
+            "Background process handling DNS",
+            "Named server demon",
+            "Network server driver",
+            "Name service driver"
+        ]
+    },
+    {
+        "q": "What is dig command used for?",
+        "o": [
+            "DNS query and debugging tool",
+            "Digging network cables",
+            "Digital interface gateway",
+            "Distributed internet gateway"
+        ]
+    },
+    {
+        "q": "What is nslookup?",
+        "o": [
+            "Name server lookup tool",
+            "Network socket lookup",
+            "New server lookup",
+            "Node search lookup"
+        ]
+    },
+    {
+        "q": "What does host command do?",
+        "o": [
+            "Simple DNS lookup utility",
+            "Host configuration tool",
+            "Hosting management",
+            "Host file editor"
+        ]
+    },
+    {
+        "q": "What is the hosts file?",
+        "o": [
+            "Local DNS override file",
+            "Host server list",
+            "Hosting configuration",
+            "Host protocol file"
+        ]
+    },
+    {
+        "q": "How can malware abuse the hosts file?",
+        "o": [
+            "Redirect domains to malicious IPs",
+            "Host malware files",
+            "Store stolen data",
+            "Execute remote commands"
+        ]
+    },
+    {
+        "q": "What is DNS caching resolver?",
+        "o": [
+            "Server storing responses locally",
+            "Cache for DNS credentials",
+            "Resolver with no cache",
+            "Caching credentials resolver"
+        ]
+    },
+    {
+        "q": "What is a stub resolver?",
+        "o": [
+            "Minimal resolver in client systems",
+            "Stub network connection",
+            "Stubborn resolver",
+            "Stub file resolver"
+        ]
+    },
+    {
+        "q": "What is a full resolver?",
+        "o": [
+            "Performs complete recursive lookups",
+            "Full disk resolver",
+            "Complete DNS download",
+            "Full zone resolver"
+        ]
+    },
+    {
+        "q": "What is SOA record?",
+        "o": [
+            "Start of Authority zone record",
+            "Secure Operation Authority",
+            "Server Origin Address",
+            "System Operation Administration"
+        ]
+    },
+    {
+        "q": "What information does SOA contain?",
+        "o": [
+            "Primary server refresh and expire times",
+            "Only server IP address",
+            "Only zone name",
+            "Only admin email"
+        ]
+    },
+    {
+        "q": "What is the refresh interval in SOA?",
+        "o": [
+            "How often secondary checks for updates",
+            "How often to refresh cache",
+            "Browser refresh time",
+            "Server restart interval"
+        ]
+    },
+    {
+        "q": "What is the expire time in SOA?",
+        "o": [
+            "When secondary stops serving zone",
+            "Zone deletion time",
+            "Domain expiration date",
+            "Cache expiration time"
+        ]
+    },
+    {
+        "q": "What is negative caching in DNS?",
+        "o": [
+            "Caching non-existent domain responses",
+            "Negative cache performance",
+            "Caching errors",
+            "Removing cache entries"
+        ]
+    },
+    {
+        "q": "What is the minimum TTL in SOA?",
+        "o": [
+            "TTL for negative responses",
+            "Minimum cache time",
+            "Shortest domain name",
+            "Minimum zone size"
+        ]
+    },
+    {
+        "q": "What is SRV record?",
+        "o": [
+            "Service location record",
+            "Server record",
+            "Secure record verification",
+            "Service reservation record"
+        ]
+    },
+    {
+        "q": "What services use SRV records?",
+        "o": [
+            "LDAP SIP XMPP and others",
+            "Only web servers",
+            "Only email servers",
+            "Only DNS servers"
+        ]
+    },
+    {
+        "q": "What is CAA record?",
+        "o": [
+            "Certificate Authority Authorization",
+            "Central Authority Access",
+            "Certificate Authentication Approval",
+            "Central Access Authority"
+        ]
+    },
+    {
+        "q": "How does CAA improve security?",
+        "o": [
+            "Limits which CAs can issue certificates",
+            "Encrypts all certificates",
+            "Authenticates all authorities",
+            "Blocks unauthorized access"
+        ]
+    },
+    {
+        "q": "What is TLSA record?",
+        "o": [
+            "TLS authentication via DNS",
+            "Transport Layer Security Address",
+            "TLS Application record",
+            "TLS Authorization record"
+        ]
+    },
+    {
+        "q": "What is DANE?",
+        "o": [
+            "DNS-based Authentication of Named Entities",
+            "Domain Authentication Network",
+            "DNS Authentication Entity",
+            "Digital Authentication Name"
+        ]
+    },
+    {
+        "q": "What is the chain of trust in DNSSEC?",
+        "o": [
+            "Signatures from root to domain",
+            "Chain of DNS servers",
+            "Trusted DNS list",
+            "Connected zone files"
+        ]
+    },
+    {
+        "q": "What is the trust anchor?",
+        "o": [
+            "Root zone public key",
+            "Anchor for DNS servers",
+            "Trust configuration file",
+            "Anchor points in zones"
+        ]
+    },
+    {
+        "q": "What is KSK in DNSSEC?",
+        "o": [
+            "Key Signing Key",
+            "Kernel Security Key",
+            "Key Storage Key",
+            "Known Signature Key"
+        ]
+    },
+    {
+        "q": "What is ZSK in DNSSEC?",
+        "o": [
+            "Zone Signing Key",
+            "Zero Security Key",
+            "Zone Storage Key",
+            "Zonal Signature Key"
+        ]
+    },
+    {
+        "q": "Why are two key types used in DNSSEC?",
+        "o": [
+            "Separation for security and management",
+            "Two keys for encryption",
+            "Double security level",
+            "Backup key purpose"
+        ]
+    },
+    {
+        "q": "What is key rollover in DNSSEC?",
+        "o": [
+            "Replacing keys periodically",
+            "Rolling keys between zones",
+            "Key rotation stopping",
+            "Overturning key decisions"
+        ]
+    },
+    {
+        "q": "What is algorithm rollover?",
+        "o": [
+            "Changing DNSSEC signing algorithm",
+            "Rolling algorithm updates",
+            "Algorithm version change",
+            "Computational change"
+        ]
+    },
+    {
+        "q": "What is the root signing ceremony?",
+        "o": [
+            "Process to sign root zone",
+            "DNS celebration event",
+            "Ceremony for new domains",
+            "Root server launch"
+        ]
+    },
+    {
+        "q": "What is NSEC3PARAM record?",
+        "o": [
+            "Parameters for NSEC3 hashing",
+            "NSEC parameter 3",
+            "Network security parameter",
+            "Next secure parameter"
+        ]
+    },
+    {
+        "q": "What hash is used in NSEC3?",
+        "o": [
+            "SHA-1 by default",
+            "MD5 only",
+            "SHA-256 only",
+            "No hashing used"
+        ]
+    },
+    {
+        "q": "What is opt-out in NSEC3?",
+        "o": [
+            "Skip unsigned delegations",
+            "Opt out of DNSSEC",
+            "Optional security",
+            "Output option"
+        ]
+    },
+    {
+        "q": "What is algorithm downgrade attack?",
+        "o": [
+            "Forcing use of weaker algorithm",
+            "Downgrading DNS versions",
+            "Algorithm deletion",
+            "Reducing encryption"
+        ]
+    },
+    {
+        "q": "What is DNSSEC key tag?",
+        "o": [
+            "Identifier for DNSKEY records",
+            "Tag on DNS servers",
+            "Key label system",
+            "Tagging zone files"
+        ]
+    },
+    {
+        "q": "What is the AD flag in DNS?",
+        "o": [
+            "Authenticated Data flag",
+            "Admin Domain flag",
+            "Advanced DNS flag",
+            "Additional Data flag"
+        ]
+    },
+    {
+        "q": "What is the CD flag in DNS?",
+        "o": [
+            "Checking Disabled flag",
+            "Certificate Data flag",
+            "Connection Data flag",
+            "Control Data flag"
+        ]
+    },
+    {
+        "q": "When would CD flag be used?",
+        "o": [
+            "Disable DNSSEC validation locally",
+            "Enable CD encryption",
+            "Check domain availability",
+            "Control DNS routing"
+        ]
+    },
+    {
+        "q": "What is DNSSEC lookaside validation?",
+        "o": [
+            "Alternative trust path via DLV",
+            "Looking aside at DNS",
+            "Side validation method",
+            "Lookahead DNS checking"
+        ]
+    },
+    {
+        "q": "What is a validating resolver?",
+        "o": [
+            "Resolver that checks DNSSEC",
+            "DNS validation service",
+            "Resolver with credentials",
+            "Valid DNS server"
+        ]
+    },
+    {
+        "q": "What happens when DNSSEC validation fails?",
+        "o": [
+            "Response is rejected",
+            "Fallback to unsigned",
+            "Query is encrypted",
+            "Cache is cleared"
+        ]
+    },
+    {
+        "q": "What is SERVFAIL in DNS?",
+        "o": [
+            "Server failure response code",
+            "Service failure mode",
+            "Server full error",
+            "Service final state"
+        ]
+    },
+    {
+        "q": "What is NXDOMAIN in DNS?",
+        "o": [
+            "Non-existent domain response",
+            "Next domain response",
+            "Network domain code",
+            "New domain response"
+        ]
+    },
+    {
+        "q": "What is REFUSED in DNS?",
+        "o": [
+            "Server refused to answer query",
+            "Query format refused",
+            "Refuse DNS service",
+            "Refused domain name"
+        ]
+    },
+    {
+        "q": "What is FORMERR in DNS?",
+        "o": [
+            "Format error in query",
+            "Former DNS error",
+            "Forward error",
+            "Form error response"
+        ]
+    },
+    {
+        "q": "What is the QR flag in DNS?",
+        "o": [
+            "Query or Response indicator",
+            "Quick Response flag",
+            "Query Request flag",
+            "Queue Response flag"
+        ]
+    },
+    {
+        "q": "What is the AA flag in DNS?",
+        "o": [
+            "Authoritative Answer flag",
+            "Advanced Authentication",
+            "Automatic Answer",
+            "Additional Answer"
+        ]
+    },
+    {
+        "q": "What is the RD flag in DNS?",
+        "o": [
+            "Recursion Desired flag",
+            "Read Data flag",
+            "Redirect flag",
+            "Remote Data flag"
+        ]
+    },
+    {
+        "q": "What is the RA flag in DNS?",
+        "o": [
+            "Recursion Available flag",
+            "Remote Access flag",
+            "Read Available flag",
+            "Request Available flag"
+        ]
+    },
+    {
+        "q": "What is the OPCODE in DNS header?",
+        "o": [
+            "Operation type for the query",
+            "Optional code field",
+            "Open port code",
+            "Operator configuration"
+        ]
+    },
+    {
+        "q": "What is NOTIFY in DNS?",
+        "o": [
+            "Message for zone change updates",
+            "Notification service",
+            "Note to DNS admin",
+            "Notice of expiration"
+        ]
+    },
+    {
+        "q": "What is DNS UPDATE?",
+        "o": [
+            "Dynamic DNS record modification",
+            "Software update for DNS",
+            "Update to zone files",
+            "Updating DNS servers"
+        ]
+    },
+    {
+        "q": "What is dynamic DNS?",
+        "o": [
+            "Automatic record updates",
+            "Dynamic IP addresses only",
+            "Moving DNS servers",
+            "Changing DNS protocols"
+        ]
+    },
+    {
+        "q": "What security risks does dynamic DNS pose?",
+        "o": [
+            "Unauthorized record modification",
+            "No security risks",
+            "Only performance issues",
+            "Just administrative burden"
+        ]
+    },
+    {
+        "q": "What is TSIG?",
+        "o": [
+            "Transaction Signature for DNS",
+            "Transport Security Identity Gateway",
+            "Time Signature protocol",
+            "Transfer Signing Gateway"
+        ]
+    },
+    {
+        "q": "What does TSIG protect?",
+        "o": [
+            "Zone transfers and dynamic updates",
+            "Only zone transfers",
+            "Only client queries",
+            "Only server responses"
+        ]
+    },
+    {
+        "q": "What cryptography does TSIG use?",
+        "o": [
+            "Shared secret HMAC",
+            "Public key encryption",
+            "Certificate-based",
+            "No cryptography"
+        ]
+    },
+    {
+        "q": "What is SIG(0)?",
+        "o": [
+            "Public key transaction signatures",
+            "Zero signature method",
+            "Signal zero protocol",
+            "Signature initialization"
+        ]
+    },
+    {
+        "q": "What is the DNS message compression?",
+        "o": [
+            "Pointer to reduce name repetition",
+            "Compressing zone files",
+            "Zip format for DNS",
+            "Reducing DNS traffic"
+        ]
+    },
+    {
+        "q": "What attack exploits DNS compression?",
+        "o": [
+            "Compression pointer attack",
+            "Zip bomb attack",
+            "Deflate attack",
+            "Compression overflow"
+        ]
+    },
+    {
+        "q": "What is DNS message decompression bomb?",
+        "o": [
+            "Malformed compression causing loops",
+            "Bomb in DNS packets",
+            "Explosive decompression",
+            "Decompressing data bomb"
+        ]
+    },
+    {
+        "q": "What is a name chain attack?",
+        "o": [
+            "Excessive chained references",
+            "Named attack chains",
+            "Chain of DNS names",
+            "Attack chain pattern"
+        ]
+    },
+    {
+        "q": "What limits protect against name chain attacks?",
+        "o": [
+            "Maximum recursion depth limits",
+            "No protection exists",
+            "Firewall rules only",
+            "Encryption only"
+        ]
+    },
+    {
+        "q": "What is a delegation loop?",
+        "o": [
+            "Circular NS record references",
+            "Looping zone transfers",
+            "Delegate access loops",
+            "Administrative loop"
+        ]
+    },
+    {
+        "q": "What is water torture attack?",
+        "o": [
+            "Slow distributed subdomain queries",
+            "Water damage attack",
+            "Torture testing DNS",
+            "Waterfall DNS attack"
+        ]
+    },
+    {
+        "q": "Why is water torture attack effective?",
+        "o": [
+            "Bypasses caching with random names",
+            "Uses water pressure",
+            "Floods networks physically",
+            "Water corrupts servers"
+        ]
+    },
+    {
+        "q": "What is DNS query recycling attack?",
+        "o": [
+            "Reusing transaction IDs",
+            "Recycling DNS servers",
+            "Recycled query patterns",
+            "Reusing zone files"
+        ]
+    },
+    {
+        "q": "What is fragmentation in DNS?",
+        "o": [
+            "Splitting large responses into fragments",
+            "Fragmenting zone files",
+            "Breaking DNS servers",
+            "Fragmented domain names"
+        ]
+    },
+    {
+        "q": "What is the fragmentation attack?",
+        "o": [
+            "Injecting malicious second fragment",
+            "Breaking servers apart",
+            "Fragmenting queries",
+            "Attack with fragments"
+        ]
+    },
+    {
+        "q": "What is defragmentation poisoning?",
+        "o": [
+            "Poisoning reassembled DNS packets",
+            "Defragmenting poison packets",
+            "Poison fragment protocol",
+            "Fragmented cache poisoning"
+        ]
+    },
+    {
+        "q": "What is DNS amplification factor?",
+        "o": [
+            "Response size vs query size ratio",
+            "Amplifying DNS signals",
+            "Factor of DNS speed",
+            "Amplification of domains"
+        ]
+    },
+    {
+        "q": "What is the typical DNS amplification factor?",
+        "o": [
+            "28x to 70x or higher",
+            "Only 2x amplification",
+            "Always exactly 10x",
+            "No amplification possible"
+        ]
+    },
+    {
+        "q": "What record types produce largest amplification?",
+        "o": [
+            "ANY DNSSEC TXT records",
+            "Only A records",
+            "Only MX records",
+            "Only NS records"
+        ]
+    },
+    {
+        "q": "What is reflector in DNS DDoS?",
+        "o": [
+            "Server sending amplified responses",
+            "Mirror for DNS traffic",
+            "Reflecting DNS queries",
+            "Protocol reflector"
+        ]
+    },
+    {
+        "q": "What is DNS blacklist?",
+        "o": [
+            "List of known malicious domains",
+            "Black colored DNS servers",
+            "Blocked domain list",
+            "Blackout DNS service"
+        ]
+    },
+    {
+        "q": "What is DNSBL?",
+        "o": [
+            "DNS-based Blackhole List",
+            "DNS Block List",
+            "Domain Name Security Block",
+            "DNS Based Lookup"
+        ]
+    },
+    {
+        "q": "How is DNSBL used for email?",
+        "o": [
+            "Blocking spam sender IPs",
+            "Encrypting email domains",
+            "Listing all emails",
+            "Email DNS lookup"
+        ]
+    },
+    {
+        "q": "What is SURBL?",
+        "o": [
+            "URI-based spam domain list",
+            "Super URL Blacklist",
+            "Secure URL Block List",
+            "Spam URL Resolver"
+        ]
+    },
+    {
+        "q": "What is threat intelligence in DNS?",
+        "o": [
+            "Security data about malicious domains",
+            "Intelligent DNS routing",
+            "Threat to DNS systems",
+            "Intelligence on networks"
+        ]
+    },
+    {
+        "q": "What is IOC in DNS security?",
+        "o": [
+            "Indicator of Compromise",
+            "Internet Operation Center",
+            "Input Output Control",
+            "Integrated Operating Command"
+        ]
+    },
+    {
+        "q": "What is DNS logging?",
+        "o": [
+            "Recording DNS queries and responses",
+            "Logging into DNS servers",
+            "Log file on domain",
+            "Login DNS authentication"
+        ]
+    },
+    {
+        "q": "What privacy concerns exist with DNS logging?",
+        "o": [
+            "Reveals browsing history",
+            "No privacy concerns",
+            "Only affects performance",
+            "Logs are encrypted"
+        ]
+    },
+    {
+        "q": "What is DNS traffic analysis?",
+        "o": [
+            "Examining DNS patterns for threats",
+            "Analyzing DNS performance",
+            "Traffic management tool",
+            "DNS route analysis"
+        ]
+    },
+    {
+        "q": "What is anomaly detection in DNS?",
+        "o": [
+            "Finding unusual query patterns",
+            "Detecting DNS anomalies",
+            "Anomalous domain detection",
+            "Detection of errors"
+        ]
+    },
+    {
+        "q": "What indicates DNS tunnel activity?",
+        "o": [
+            "High entropy in query names",
+            "Normal short queries",
+            "Fast response times",
+            "Low bandwidth usage"
+        ]
+    },
+    {
+        "q": "What is entropy analysis in DNS?",
+        "o": [
+            "Measuring randomness in names",
+            "Energy analysis of DNS",
+            "Entropy of DNS servers",
+            "Analysis of order"
+        ]
+    },
+    {
+        "q": "What is lexical analysis of DNS?",
+        "o": [
+            "Analyzing domain name patterns",
+            "Legal analysis of domains",
+            "Lexicon of DNS terms",
+            "Text analysis tool"
+        ]
+    },
+    {
+        "q": "What is n-gram analysis for DGA detection?",
+        "o": [
+            "Character sequence patterns",
+            "Number gram analysis",
+            "N-type graph analysis",
+            "Network gram checking"
+        ]
+    },
+    {
+        "q": "What is machine learning for DNS security?",
+        "o": [
+            "AI detecting malicious patterns",
+            "Learning DNS configuration",
+            "Machine DNS resolution",
+            "Learning domain names"
+        ]
+    },
+    {
+        "q": "What features help ML detect DNS threats?",
+        "o": [
+            "Query frequency length and timing",
+            "Only domain names",
+            "Only IP addresses",
+            "Only response codes"
+        ]
+    },
+    {
+        "q": "What is DNS data exfiltration detection?",
+        "o": [
+            "Finding encoded data in queries",
+            "Detecting DNS exports",
+            "Exfiltration of servers",
+            "Data detection system"
+        ]
+    },
+    {
+        "q": "What is subdomain entropy scoring?",
+        "o": [
+            "Rating randomness of subdomains",
+            "Scoring subdomain speed",
+            "Entropy of main domains",
+            "Subdomain ranking"
+        ]
+    },
+    {
+        "q": "What is DNS reputation scoring?",
+        "o": [
+            "Rating domain trustworthiness",
+            "Reputation of DNS servers",
+            "Scoring DNS speed",
+            "Rating administrator"
+        ]
+    },
+    {
+        "q": "What factors affect DNS reputation?",
+        "o": [
+            "Age hosting and associations",
+            "Only domain age",
+            "Only IP address",
+            "Only registrar"
+        ]
+    },
+    {
+        "q": "What is newly registered domain detection?",
+        "o": [
+            "Identifying recently created domains",
+            "Detecting new DNS servers",
+            "New domain registration",
+            "Domain age verification"
+        ]
+    },
+    {
+        "q": "Why are new domains suspicious?",
+        "o": [
+            "Often used for attacks before detection",
+            "New domains are always safe",
+            "Only old domains are risky",
+            "Domain age is irrelevant"
+        ]
+    },
+    {
+        "q": "What is domain parking?",
+        "o": [
+            "Holding domain without content",
+            "Parking DNS servers",
+            "Domain registration waiting",
+            "Parked domain names"
+        ]
+    },
+    {
+        "q": "What security risk does domain parking pose?",
+        "o": [
+            "Can redirect to malicious sites",
+            "No security risk",
+            "Only affects parking",
+            "Risk to parked cars"
+        ]
+    },
+    {
+        "q": "What is dropper domain?",
+        "o": [
+            "Domain hosting malware downloads",
+            "Dropped domain name",
+            "Domain dropping packets",
+            "Dropping DNS queries"
+        ]
+    },
+    {
+        "q": "What is C2 domain in malware?",
+        "o": [
+            "Command and Control server domain",
+            "Category 2 domain",
+            "Control 2 domain",
+            "Certificate 2 domain"
+        ]
+    },
+    {
+        "q": "What is DNS spur domain?",
+        "o": [
+            "Temporary malicious infrastructure",
+            "Spurious DNS queries",
+            "Spur of domain names",
+            "DNS inspiration"
+        ]
+    },
+    {
+        "q": "What is lookalike domain?",
+        "o": [
+            "Domain visually similar to legitimate",
+            "Looking at domains",
+            "Domain that looks alike",
+            "Similar DNS servers"
+        ]
+    },
+    {
+        "q": "What is brand impersonation via DNS?",
+        "o": [
+            "Fraudulent domains mimicking brands",
+            "Branding DNS servers",
+            "Impersonating DNS protocol",
+            "Personal DNS branding"
+        ]
+    },
+    {
+        "q": "What is DNS takeover?",
+        "o": [
+            "Gaining control of domain records",
+            "Taking over DNS servers",
+            "Takeover of protocols",
+            "DNS server acquisition"
+        ]
+    },
+    {
+        "q": "What is dangling DNS?",
+        "o": [
+            "Records pointing to unclaimed resources",
+            "Hanging DNS servers",
+            "Dangling domain names",
+            "DNS string hanging"
+        ]
+    },
+    {
+        "q": "How does dangling DNS enable takeover?",
+        "o": [
+            "Attacker claims orphaned resource",
+            "Dangles attract attacks",
+            "Hanging causes failures",
+            "No takeover possible"
+        ]
+    },
+    {
+        "q": "What is subdomain takeover?",
+        "o": [
+            "Claiming abandoned cloud subdomains",
+            "Taking subdomains by force",
+            "Subdomain registration",
+            "Subdomain creation"
+        ]
+    },
+    {
+        "q": "What cloud service is common for subdomain takeover?",
+        "o": [
+            "GitHub Pages S3 Azure",
+            "Physical servers only",
+            "No cloud services affected",
+            "Only private clouds"
+        ]
+    },
+    {
+        "q": "What is registrar hijacking?",
+        "o": [
+            "Unauthorized domain transfer",
+            "Hijacking DNS protocol",
+            "Registrar server attack",
+            "Registration hijacking"
+        ]
+    },
+    {
+        "q": "How do attackers hijack registrar accounts?",
+        "o": [
+            "Social engineering and credential theft",
+            "Technical DNS attacks",
+            "Physical server access",
+            "Network interception"
+        ]
+    },
+    {
+        "q": "What is registry lock?",
+        "o": [
+            "Protection against unauthorized transfers",
+            "Locking DNS servers",
+            "Registry file lock",
+            "Locked registration"
+        ]
+    },
+    {
+        "q": "What is EPP auth code?",
+        "o": [
+            "Transfer authorization code",
+            "Enterprise Protocol Password",
+            "Extended Privacy Protection",
+            "Email Protection Password"
+        ]
+    },
+    {
+        "q": "What is DNS in enterprise security?",
+        "o": [
+            "Critical attack surface and defense layer",
+            "Just for name resolution",
+            "Not important for security",
+            "Only internal use"
+        ]
+    },
+    {
+        "q": "What is internal DNS visibility gap?",
+        "o": [
+            "Lack of monitoring for internal DNS",
+            "Gap in DNS software",
+            "Visibility of servers",
+            "Internal network gap"
+        ]
+    },
+    {
+        "q": "What is DNS-based access control?",
+        "o": [
+            "Filtering based on DNS queries",
+            "Controlling DNS access",
+            "Access to DNS servers",
+            "DNS protocol control"
+        ]
+    },
+    {
+        "q": "What is DNS policy enforcement?",
+        "o": [
+            "Applying security rules via DNS",
+            "DNS server policies",
+            "Policy for DNS usage",
+            "Enforcing DNS configuration"
+        ]
+    },
+    {
+        "q": "What is content filtering via DNS?",
+        "o": [
+            "Blocking categories of domains",
+            "Filtering DNS content",
+            "Content in DNS records",
+            "DNS file filtering"
+        ]
+    },
+    {
+        "q": "What is protective DNS?",
+        "o": [
+            "DNS service blocking threats",
+            "DNS protection layer",
+            "Protected DNS servers",
+            "Protecting DNS protocol"
+        ]
+    },
+    {
+        "q": "What government provides protective DNS?",
+        "o": [
+            "CISA with Protective DNS",
+            "No government provides this",
+            "Only private companies",
+            "International DNS body"
+        ]
+    },
+    {
+        "q": "What is Quad9 DNS service?",
+        "o": [
+            "Security-focused public resolver",
+            "Quad core DNS server",
+            "9 DNS servers",
+            "Quadrant DNS system"
+        ]
+    },
+    {
+        "q": "What is Cloudflare 1.1.1.1?",
+        "o": [
+            "Privacy-focused public resolver",
+            "Cloud DNS flaring",
+            "1.1.1.1 GHz DNS",
+            "Cloudflare IP only"
+        ]
+    },
+    {
+        "q": "What is Google Public DNS?",
+        "o": [
+            "Google operated public resolver at 8.8.8.8",
+            "Google private DNS",
+            "Google DNS for Google only",
+            "DNS for Google products"
+        ]
+    },
+    {
+        "q": "What is OpenDNS?",
+        "o": [
+            "Cisco security-focused resolver",
+            "Open source DNS software",
+            "Opening DNS ports",
+            "Open access DNS"
+        ]
+    },
+    {
+        "q": "What is NextDNS?",
+        "o": [
+            "Customizable security DNS service",
+            "Next generation DNS protocol",
+            "Following DNS query",
+            "Next DNS server"
+        ]
+    },
+    {
+        "q": "What is parental control via DNS?",
+        "o": [
+            "Filtering inappropriate content",
+            "DNS for parents only",
+            "Parental DNS access",
+            "Control over DNS configuration"
+        ]
+    },
+    {
+        "q": "What is DNS-based ad blocking?",
+        "o": [
+            "Blocking ad domains at DNS level",
+            "Advertising DNS services",
+            "DNS ads",
+            "Ad-supported DNS"
+        ]
+    },
+    {
+        "q": "What is Pi-hole?",
+        "o": [
+            "Network-wide ad blocking via DNS",
+            "Pi shaped DNS server",
+            "Hole in DNS protocol",
+            "Raspberry Pi DNS"
+        ]
+    },
+    {
+        "q": "What is AdGuard DNS?",
+        "o": [
+            "Ad and tracker blocking resolver",
+            "Guarding DNS ads",
+            "Advertising guard",
+            "Ad DNS service"
+        ]
+    },
+    {
+        "q": "What is blocklist in DNS filtering?",
+        "o": [
+            "List of domains to block",
+            "Blocked DNS protocol",
+            "List of DNS servers",
+            "Blocking list files"
+        ]
+    },
+    {
+        "q": "What is allowlist in DNS?",
+        "o": [
+            "Only permitted domains",
+            "Allow all DNS queries",
+            "Listed DNS servers",
+            "Allowed DNS traffic"
+        ]
+    },
+    {
+        "q": "What is SafeSearch enforcement via DNS?",
+        "o": [
+            "Forcing search engine filtering",
+            "Safe DNS search",
+            "Searching for safe DNS",
+            "DNS search safety"
+        ]
+    },
+    {
+        "q": "What is split DNS deployment?",
+        "o": [
+            "Different views for internal and external",
+            "Splitting DNS packets",
+            "DNS split in half",
+            "Deployed split servers"
+        ]
+    },
+    {
+        "q": "What is hidden primary DNS?",
+        "o": [
+            "Primary hidden behind secondaries",
+            "Hidden DNS software",
+            "Primary in hiding",
+            "Invisible DNS server"
+        ]
+    },
+    {
+        "q": "Why use hidden primary architecture?",
+        "o": [
+            "Protects primary from direct attack",
+            "Hides network from users",
+            "Primary runs faster",
+            "Secondaries need hiding"
+        ]
+    },
+    {
+        "q": "What is Anycast DNS?",
+        "o": [
+            "Same IP multiple locations",
+            "Any DNS server casting",
+            "Casting DNS queries",
+            "Any available DNS"
+        ]
+    },
+    {
+        "q": "How does Anycast improve DNS security?",
+        "o": [
+            "Distributes attack traffic",
+            "Encrypts all DNS",
+            "Blocks all attacks",
+            "Hides DNS servers"
+        ]
+    },
+    {
+        "q": "What is DNS server hardening?",
+        "o": [
+            "Securing DNS server configuration",
+            "Making DNS harder",
+            "Hardware DNS protection",
+            "Hardened DNS queries"
+        ]
+    },
+    {
+        "q": "What are DNS hardening best practices?",
+        "o": [
+            "Restrict transfers limit recursion update patches",
+            "Only install DNS software",
+            "No hardening needed",
+            "Just use encryption"
+        ]
+    },
+    {
+        "q": "What is rate limiting for DNS servers?",
+        "o": [
+            "Limiting queries per source",
+            "Rating DNS speed limits",
+            "Limiting rate of domains",
+            "DNS rate calculation"
+        ]
+    },
+    {
+        "q": "What is ACL in DNS security?",
+        "o": [
+            "Access Control List for DNS",
+            "Advanced Control Layer",
+            "Access Configuration Log",
+            "Automated Control Limit"
+        ]
+    },
+    {
+        "q": "What is view in BIND DNS?",
+        "o": [
+            "Conditional response based on source",
+            "Viewing zone files",
+            "DNS visual interface",
+            "View of server"
+        ]
+    },
+    {
+        "q": "What is match-clients in BIND views?",
+        "o": [
+            "ACL matching client IP",
+            "Client matching service",
+            "Match client credentials",
+            "Client match game"
+        ]
+    },
+    {
+        "q": "What is RPZ action types?",
+        "o": [
+            "NXDOMAIN NODATA PASSTHRU DROP",
+            "Only block action",
+            "Only allow action",
+            "Only redirect"
+        ]
+    },
+    {
+        "q": "What is RPZ local-data policy?",
+        "o": [
+            "Return custom record instead",
+            "Local data storage",
+            "Policy on local disks",
+            "Data locality policy"
+        ]
+    },
+    {
+        "q": "What is CNAME cloaking?",
+        "o": [
+            "Using CNAME to hide tracking domains",
+            "Cloaking DNS servers",
+            "CNAME invisibility cloak",
+            "Hiding CNAME records"
+        ]
+    },
+    {
+        "q": "How does CNAME cloaking evade blocking?",
+        "o": [
+            "First-party subdomain points to tracker",
+            "CNAME is invisible",
+            "Blocking is disabled",
+            "Cloaking encrypts DNS"
+        ]
+    },
+    {
+        "q": "What is ECH Encrypted Client Hello?",
+        "o": [
+            "Encrypting SNI in TLS",
+            "Encrypted channel hello",
+            "ECH protocol version",
+            "Enterprise client hello"
+        ]
+    },
+    {
+        "q": "How does ECH relate to DNS?",
+        "o": [
+            "HTTPS record provides ECH config",
+            "ECH replaces DNS",
+            "DNS encrypts ECH",
+            "No relation exists"
+        ]
+    },
+    {
+        "q": "What is SVCB priority field?",
+        "o": [
+            "Service endpoint preference order",
+            "Priority of DNS servers",
+            "Service configuration priority",
+            "Priority for queries"
+        ]
+    },
+    {
+        "q": "What is AliasMode in SVCB?",
+        "o": [
+            "Points to another SVCB record",
+            "Alias for DNS server",
+            "Mode for aliases",
+            "Alternative mode"
+        ]
+    },
+    {
+        "q": "What is ServiceMode in SVCB?",
+        "o": [
+            "Contains actual service parameters",
+            "Service for DNS mode",
+            "Mode of service",
+            "Configuration mode"
+        ]
+    },
+    {
+        "q": "What is the alpn parameter in SVCB?",
+        "o": [
+            "Application Layer Protocol Negotiation",
+            "Alpha numeric protocol",
+            "Alpine protocol name",
+            "Alpha protocol"
+        ]
+    },
+    {
+        "q": "What is Happy Eyeballs v2?",
+        "o": [
+            "Fast connection algorithm for dual-stack",
+            "Happy network connections",
+            "Eyeball tracking protocol",
+            "Version 2 connections"
+        ]
+    },
+    {
+        "q": "How does DNS affect Happy Eyeballs?",
+        "o": [
+            "A and AAAA query timing matters",
+            "DNS makes connections happy",
+            "Eyeballs use DNS",
+            "No effect on Happy Eyeballs"
+        ]
+    },
+    {
+        "q": "What is DNS prefetching?",
+        "o": [
+            "Resolving domains before needed",
+            "Prefetching DNS servers",
+            "Fetching DNS in advance",
+            "DNS download ahead"
+        ]
+    },
+    {
+        "q": "What security risk does DNS prefetch pose?",
+        "o": [
+            "Information leakage about browsing",
+            "No security risk",
+            "Only performance issue",
+            "Risk to DNS servers"
+        ]
+    },
+    {
+        "q": "What is DNS preconnect?",
+        "o": [
+            "Establishing connections early",
+            "Preconnecting DNS queries",
+            "Connection to DNS early",
+            "Pre DNS connection"
+        ]
+    },
+    {
+        "q": "What is resource hints and DNS?",
+        "o": [
+            "Browser optimization using DNS lookups",
+            "Hinting at DNS resources",
+            "Resource DNS servers",
+            "Hint for resources"
+        ]
+    },
+    {
+        "q": "What is passive DNS replication?",
+        "o": [
+            "Collecting DNS from network sensors",
+            "Passive DNS copying",
+            "Replicating passive servers",
+            "Passive data replication"
+        ]
+    },
+    {
+        "q": "What is Farsight DNSDB?",
+        "o": [
+            "Large passive DNS database",
+            "Far sight DNS server",
+            "DNS database B",
+            "Farsight company DNS"
+        ]
+    },
+    {
+        "q": "What is historical DNS data used for?",
+        "o": [
+            "Threat investigation and attribution",
+            "Only historical records",
+            "DNS data history",
+            "Archiving purposes"
+        ]
+    },
+    {
+        "q": "What is RRset?",
+        "o": [
+            "Set of resource records same name type",
+            "Record resource setting",
+            "RR configuration set",
+            "Resource set record"
+        ]
+    },
+    {
+        "q": "What is DNS amplification mitigation via RRL?",
+        "o": [
+            "Limiting similar responses per interval",
+            "RRL encryption method",
+            "Amplification through RRL",
+            "RRL rate increase"
+        ]
+    },
+    {
+        "q": "What is slip in RRL?",
+        "o": [
+            "Probability of truncated response",
+            "Slipping DNS packets",
+            "RRL slip mode",
+            "Slip protection"
+        ]
+    },
+    {
+        "q": "What is DNS firewall RPZ feed?",
+        "o": [
+            "Threat intelligence zone updates",
+            "Feeding firewall data",
+            "RPZ food source",
+            "Firewall update feed"
+        ]
+    },
+    {
+        "q": "What is sinkhole analysis?",
+        "o": [
+            "Studying traffic hitting sinkhole",
+            "Analyzing sink holes",
+            "Sinkhole traffic study",
+            "Analysis of sinks"
+        ]
+    },
+    {
+        "q": "What can sinkhole traffic reveal?",
+        "o": [
+            "Infected hosts and malware behavior",
+            "Only traffic volume",
+            "Nothing useful",
+            "Server performance"
+        ]
+    },
+    {
+        "q": "What is DNS covert channel?",
+        "o": [
+            "Hidden communication via DNS",
+            "Covert DNS servers",
+            "Channel for DNS",
+            "Hidden DNS protocol"
+        ]
+    },
+    {
+        "q": "What tools create DNS tunnels?",
+        "o": [
+            "iodine dnscat2 dns2tcp",
+            "No tools exist",
+            "Only commercial tools",
+            "Standard DNS software"
+        ]
+    },
+    {
+        "q": "What is iodine DNS tunnel?",
+        "o": [
+            "IP over DNS tunneling tool",
+            "Iodine element DNS",
+            "Iodine protocol",
+            "Chemical DNS system"
+        ]
+    },
+    {
+        "q": "What is dnscat2?",
+        "o": [
+            "Command and control over DNS",
+            "DNS catalog 2",
+            "Category 2 DNS",
+            "DNS concatenation"
+        ]
+    },
+    {
+        "q": "What encoding methods use DNS tunnels?",
+        "o": [
+            "Base32 Base64 Hex",
+            "Only plain text",
+            "Only binary",
+            "No encoding needed"
+        ]
+    },
+    {
+        "q": "What is DNS payload analysis?",
+        "o": [
+            "Examining data in DNS packets",
+            "Payload of DNS servers",
+            "Analysis of DNS load",
+            "DNS packet weight"
+        ]
+    },
+    {
+        "q": "What is frequency analysis in DNS?",
+        "o": [
+            "Query rate patterns over time",
+            "Frequency of DNS servers",
+            "Analysis of DNS radio",
+            "Frequency modulation"
+        ]
+    },
+    {
+        "q": "What is baseline in DNS monitoring?",
+        "o": [
+            "Normal traffic pattern reference",
+            "Base line of DNS",
+            "Baseline DNS server",
+            "Basic line protocol"
+        ]
+    },
+    {
+        "q": "What triggers DNS anomaly alerts?",
+        "o": [
+            "Deviation from baseline patterns",
+            "Any DNS query",
+            "Normal DNS traffic",
+            "Server restarts"
+        ]
+    },
+    {
+        "q": "What is DNS query length analysis?",
+        "o": [
+            "Examining subdomain and query sizes",
+            "Length of DNS servers",
+            "Query length limit",
+            "Analysis of length"
+        ]
+    },
+    {
+        "q": "What is suspiciously long subdomain?",
+        "o": [
+            "Potential data exfiltration encoding",
+            "Long domain names",
+            "Subdomain with many levels",
+            "Extended DNS name"
+        ]
+    },
+    {
+        "q": "What is DNS query timing analysis?",
+        "o": [
+            "Patterns of when queries occur",
+            "Timing DNS servers",
+            "Query time limits",
+            "Analysis of speed"
+        ]
+    },
+    {
+        "q": "What indicates beaconing behavior?",
+        "o": [
+            "Regular periodic query intervals",
+            "Random query timing",
+            "No queries at all",
+            "Burst then silence"
+        ]
+    },
+    {
+        "q": "What is jitter in beaconing?",
+        "o": [
+            "Random variation to avoid detection",
+            "Jittery DNS servers",
+            "Beacon jitter setting",
+            "Variation in speed"
+        ]
+    },
+    {
+        "q": "What is DNS response code analysis?",
+        "o": [
+            "Examining NXDOMAIN SERVFAIL patterns",
+            "Response code programming",
+            "Analysis of codes",
+            "Code response rates"
+        ]
+    },
+    {
+        "q": "What indicates DGA activity via response codes?",
+        "o": [
+            "High NXDOMAIN rate to random domains",
+            "All successful responses",
+            "No NXDOMAIN responses",
+            "Only SERVFAIL errors"
+        ]
+    },
+    {
+        "q": "What is DNS clustering analysis?",
+        "o": [
+            "Grouping similar query patterns",
+            "Clustering DNS servers",
+            "Server cluster analysis",
+            "Cluster configuration"
+        ]
+    },
+    {
+        "q": "What is graph analysis in DNS?",
+        "o": [
+            "Relationship mapping of domains and IPs",
+            "Graphing DNS speed",
+            "Graph of DNS servers",
+            "Analysis with graphs"
+        ]
+    },
+    {
+        "q": "What is DNS infrastructure mapping?",
+        "o": [
+            "Identifying connected domains and servers",
+            "Mapping DNS servers",
+            "Infrastructure of DNS",
+            "DNS building maps"
+        ]
+    },
+    {
+        "q": "What is shared hosting detection?",
+        "o": [
+            "Multiple domains on same infrastructure",
+            "Shared DNS servers",
+            "Hosting detection tool",
+            "Detection of sharing"
+        ]
+    },
+    {
+        "q": "What is AS number correlation in DNS?",
+        "o": [
+            "Linking domains to network operators",
+            "AS number of DNS",
+            "Correlation of AS",
+            "Number correlation"
+        ]
+    },
+    {
+        "q": "What is whois data in DNS analysis?",
+        "o": [
+            "Domain registration information",
+            "Who is using DNS",
+            "Whois DNS server",
+            "Who is the user"
+        ]
+    },
+    {
+        "q": "What is RDAP?",
+        "o": [
+            "Registration Data Access Protocol",
+            "Remote DNS Access Protocol",
+            "Rapid Data Access",
+            "Registration Domain Access"
+        ]
+    },
+    {
+        "q": "How does RDAP improve on whois?",
+        "o": [
+            "Structured format and authentication",
+            "Faster queries only",
+            "Same as whois",
+            "Less information"
+        ]
+    },
+    {
+        "q": "What is domain age in threat analysis?",
+        "o": [
+            "Time since registration",
+            "Age of DNS servers",
+            "Domain aging process",
+            "Analysis of age"
+        ]
+    },
+    {
+        "q": "What is bulk domain registration detection?",
+        "o": [
+            "Finding mass registrations by actors",
+            "Bulk DNS registration",
+            "Detection of bulk",
+            "Registering in bulk"
+        ]
+    },
+    {
+        "q": "What is privacy whois?",
+        "o": [
+            "Proxy hiding registrant info",
+            "Private DNS whois",
+            "Who is private",
+            "Privacy protection"
+        ]
+    },
+    {
+        "q": "How do attackers abuse privacy whois?",
+        "o": [
+            "Hide identity for malicious domains",
+            "Privacy helps security",
+            "Cannot abuse privacy",
+            "Privacy blocks attacks"
+        ]
+    },
+    {
+        "q": "What is certificate transparency logs for DNS?",
+        "o": [
+            "Certificate issuance records for domains",
+            "Transparent DNS certificates",
+            "Log of DNS certs",
+            "Transparency in DNS"
+        ]
+    },
+    {
+        "q": "How do CT logs help DNS security?",
+        "o": [
+            "Detect unauthorized certificates",
+            "Speed up DNS",
+            "Encrypt DNS traffic",
+            "Log DNS queries"
+        ]
+    },
+    {
+        "q": "What is subdomain enumeration?",
+        "o": [
+            "Discovering all subdomains of domain",
+            "Enumerating DNS servers",
+            "Subdomain counting",
+            "Enumeration of DNS"
+        ]
+    },
+    {
+        "q": "What tools perform subdomain enumeration?",
+        "o": [
+            "Subfinder Amass DNSRecon",
+            "Only nslookup",
+            "No tools exist",
+            "Standard browsers"
+        ]
+    },
+    {
+        "q": "What is DNS brute forcing?",
+        "o": [
+            "Guessing subdomains with wordlist",
+            "Brute force DNS servers",
+            "Forcing DNS resolution",
+            "Brute DNS attack"
+        ]
+    },
+    {
+        "q": "What is certificate-based enumeration?",
+        "o": [
+            "Finding domains from CT logs",
+            "Enumerating certificates",
+            "Certificate counting",
+            "Enumeration by cert"
+        ]
+    },
+    {
+        "q": "What is DNS reconnaissance?",
+        "o": [
+            "Gathering information via DNS",
+            "Reconnaissance DNS server",
+            "DNS information scan",
+            "Reconnaissance for DNS"
+        ]
+    },
+    {
+        "q": "What information leaks via DNS?",
+        "o": [
+            "Internal hostnames and infrastructure",
+            "No information leaks",
+            "Only public data",
+            "Encrypted information"
+        ]
+    },
+    {
+        "q": "What is reverse DNS enumeration?",
+        "o": [
+            "PTR lookups across IP ranges",
+            "Reverse DNS servers",
+            "Enumeration in reverse",
+            "Reversed DNS"
+        ]
+    },
+    {
+        "q": "What is autonomous system enumeration?",
+        "o": [
+            "Finding IP ranges of organization",
+            "AS enumeration tool",
+            "Autonomous DNS system",
+            "System enumeration"
+        ]
+    },
+    {
+        "q": "What is DNS banner grabbing?",
+        "o": [
+            "Identifying DNS software version",
+            "Grabbing DNS banners",
+            "Banner for DNS",
+            "DNS advertising"
+        ]
+    },
+    {
+        "q": "Why hide DNS version information?",
+        "o": [
+            "Prevents targeted exploits",
+            "No reason to hide",
+            "Version helps security",
+            "Required by law"
+        ]
+    },
+    {
+        "q": "What is version.bind query?",
+        "o": [
+            "BIND server version disclosure",
+            "Binding version protocol",
+            "Version of DNS bind",
+            "Bind version tool"
+        ]
+    },
+    {
+        "q": "What is hostname.bind query?",
+        "o": [
+            "BIND server hostname disclosure",
+            "Binding hostname protocol",
+            "Hostname of DNS",
+            "Bind hostname info"
+        ]
+    },
+    {
+        "q": "What is chaos class in DNS?",
+        "o": [
+            "Special class for server info queries",
+            "Chaotic DNS queries",
+            "Chaos in DNS",
+            "Class for chaos"
+        ]
+    },
+    {
+        "q": "What is NSID option?",
+        "o": [
+            "Name Server Identifier option",
+            "NS identification number",
+            "NSID protocol",
+            "Identifier for NS"
+        ]
+    },
+    {
+        "q": "What is ECS in DNS?",
+        "o": [
+            "EDNS Client Subnet option",
+            "Encrypted Client Server",
+            "ECS protocol version",
+            "Extended Client System"
+        ]
+    },
+    {
+        "q": "What privacy concern does ECS raise?",
+        "o": [
+            "Client IP subnet exposed to authorities",
+            "No privacy concern",
+            "ECS encrypts data",
+            "Only server sees data"
+        ]
+    },
+    {
+        "q": "What is DNS padding?",
+        "o": [
+            "Adding bytes to obscure query patterns",
+            "Padding DNS servers",
+            "Padded DNS queries",
+            "DNS cushioning"
+        ]
+    },
+    {
+        "q": "How does padding improve privacy?",
+        "o": [
+            "Hides actual query length",
+            "Makes DNS faster",
+            "Encrypts DNS data",
+            "No privacy improvement"
+        ]
+    },
+    {
+        "q": "What is traffic analysis on encrypted DNS?",
+        "o": [
+            "Inferring content from patterns",
+            "Analyzing DNS traffic",
+            "Traffic on DNS servers",
+            "Analysis of speed"
+        ]
+    },
+    {
+        "q": "What is website fingerprinting via DNS?",
+        "o": [
+            "Identifying sites from DNS patterns",
+            "Fingerprinting DNS servers",
+            "Website DNS print",
+            "Fingerprint of DNS"
+        ]
+    },
+    {
+        "q": "What is resolver diversity?",
+        "o": [
+            "Using multiple DNS providers",
+            "Diverse DNS software",
+            "Resolver variations",
+            "Diversity in DNS"
+        ]
+    },
+    {
+        "q": "What is DNS resiliency?",
+        "o": [
+            "Ability to withstand attacks",
+            "Resilient DNS servers",
+            "DNS recovery ability",
+            "Resiliency protocol"
+        ]
+    },
+    {
+        "q": "What is DNS failover?",
+        "o": [
+            "Switching to backup on failure",
+            "Failing over DNS",
+            "DNS failure mode",
+            "Failover protocol"
+        ]
+    },
+    {
+        "q": "What is health checking in DNS?",
+        "o": [
+            "Monitoring endpoint availability",
+            "Checking DNS health",
+            "Health of DNS servers",
+            "DNS doctor check"
+        ]
+    },
+    {
+        "q": "What is DNS-based service discovery?",
+        "o": [
+            "Finding services via DNS records",
+            "Discovering DNS servers",
+            "Service for DNS",
+            "Discovery protocol"
+        ]
+    },
+    {
+        "q": "What is mDNS?",
+        "o": [
+            "Multicast DNS for local networks",
+            "Mini DNS protocol",
+            "Mobile DNS",
+            "Modern DNS"
+        ]
+    },
+    {
+        "q": "What security risk does mDNS pose?",
+        "o": [
+            "Information disclosure on local network",
+            "No security risk",
+            "Only affects speed",
+            "Risk to multicast"
+        ]
+    },
+    {
+        "q": "What is LLMNR?",
+        "o": [
+            "Link-Local Multicast Name Resolution",
+            "Local Link Management",
+            "Low Level Management",
+            "Link Layer Management"
+        ]
+    },
+    {
+        "q": "What is LLMNR poisoning?",
+        "o": [
+            "Responding to queries to capture creds",
+            "Poisoning LLMNR servers",
+            "LLMNR cache poison",
+            "Poisoning links"
+        ]
+    },
+    {
+        "q": "What tool performs LLMNR attacks?",
+        "o": [
+            "Responder and LLMNR-Poisoner",
+            "No tools exist",
+            "Only nslookup",
+            "Standard software"
+        ]
+    },
+    {
+        "q": "What is NetBIOS Name Service?",
+        "o": [
+            "Legacy Windows name resolution",
+            "Network BIOS service",
+            "Net name service",
+            "BIOS for networks"
+        ]
+    },
+    {
+        "q": "What is NBT-NS?",
+        "o": [
+            "NetBIOS over TCP/IP Name Service",
+            "Network Base Transfer Name",
+            "Name Broadcast Transfer",
+            "Net Base Transfer"
+        ]
+    },
+    {
+        "q": "What is WPAD poisoning?",
+        "o": [
+            "Hijacking Web Proxy Auto-Discovery",
+            "Web Proxy Address Distribution",
+            "WPAD address poisoning",
+            "Proxy web attack"
+        ]
+    },
+    {
+        "q": "How does WPAD relate to DNS?",
+        "o": [
+            "WPAD uses DNS to find proxy",
+            "WPAD replaces DNS",
+            "DNS blocks WPAD",
+            "No relation exists"
+        ]
+    },
+    {
+        "q": "What is DNS resolution order in Windows?",
+        "o": [
+            "DNS then LLMNR then NBT-NS",
+            "Only DNS is used",
+            "NBT-NS then DNS",
+            "Random order"
+        ]
+    },
+    {
+        "q": "What is mitm6 attack?",
+        "o": [
+            "IPv6 DNS takeover attack",
+            "Man in the middle 6",
+            "MITM version 6",
+            "6th mitm technique"
+        ]
+    },
+    {
+        "q": "How does mitm6 abuse DNS?",
+        "o": [
+            "Responds to DHCPv6 with rogue DNS",
+            "Blocks all DNS traffic",
+            "Encrypts DNS queries",
+            "Speeds up DNS"
+        ]
+    },
+    {
+        "q": "What is DNS SEC algorithm agility?",
+        "o": [
+            "Supporting multiple algorithms simultaneously",
+            "Agile DNS development",
+            "Algorithm agility testing",
+            "SEC agility protocol"
+        ]
+    },
+    {
+        "q": "What is post-quantum cryptography for DNS?",
+        "o": [
+            "Quantum-resistant signing algorithms",
+            "DNS after quantum physics",
+            "Post-quantum DNS servers",
+            "Quantum DNS protocol"
+        ]
+    },
+    {
+        "q": "What challenge does quantum pose to DNSSEC?",
+        "o": [
+            "Breaking current cryptographic signatures",
+            "Quantum DNS is faster",
+            "No challenge exists",
+            "Quantum improves DNS"
+        ]
+    },
+    {
+        "q": "What is DNS message format vulnerability?",
+        "o": [
+            "Parsing flaws in implementations",
+            "Message format error",
+            "Vulnerability in format",
+            "DNS message bug"
+        ]
+    },
+    {
+        "q": "What is SIGRed vulnerability?",
+        "o": [
+            "Windows DNS integer overflow CVE-2020-1350",
+            "Signed red DNS record",
+            "Signal red alert",
+            "Red signature error"
+        ]
+    },
+    {
+        "q": "What made SIGRed critical?",
+        "o": [
+            "Wormable RCE on Windows DNS",
+            "Only affected Linux",
+            "Just a minor bug",
+            "DoS only impact"
+        ]
+    },
+    {
+        "q": "What is DNSpooq?",
+        "o": [
+            "dnsmasq vulnerabilities collection",
+            "DNS spooky attack",
+            "Spooky DNS protocol",
+            "DNS queue attack"
+        ]
+    },
+    {
+        "q": "What is SAD DNS attack?",
+        "o": [
+            "Side channel attack on DNS",
+            "Sad DNS servers",
+            "DNS making users sad",
+            "Sad domain name"
+        ]
+    },
+    {
+        "q": "What side channel does SAD DNS exploit?",
+        "o": [
+            "ICMP rate limiting to infer ports",
+            "CPU timing attacks",
+            "Memory access patterns",
+            "Power consumption"
+        ]
+    },
+    {
+        "q": "What is NXNSAttack?",
+        "o": [
+            "Delegated NS amplification attack",
+            "NX domain attack",
+            "Next NS attack",
+            "NX name attack"
+        ]
+    },
+    {
+        "q": "How does NXNSAttack amplify traffic?",
+        "o": [
+            "Fake NS records trigger queries",
+            "NX responses multiply",
+            "NXDOMAIN causes amplification",
+            "NS records explode"
+        ]
+    },
+    {
+        "q": "What is tsuNAME attack?",
+        "o": [
+            "Cyclic dependencies cause amplification",
+            "Tsunami name attack",
+            "Name wave attack",
+            "DNS name tsunami"
+        ]
+    },
+    {
+        "q": "What is KeyTrap vulnerability?",
+        "o": [
+            "DNSSEC validation CPU exhaustion",
+            "Key trapping protocol",
+            "Trapped encryption keys",
+            "Key prison attack"
+        ]
+    },
+    {
+        "q": "What makes KeyTrap effective?",
+        "o": [
+            "Single packet causes extended computation",
+            "Traps all DNS keys",
+            "Multiple packets needed",
+            "Only affects old DNS"
+        ]
+    },
+    {
+        "q": "What is NSEC3 closest encloser proof attack?",
+        "o": [
+            "CPU exhaustion via long proof chains",
+            "Closest DNS server attack",
+            "Encloser proof verification",
+            "NSEC3 chain break"
+        ]
+    },
+    {
+        "q": "What is DNS water torture mitigation?",
+        "o": [
+            "Rate limiting and reputation filtering",
+            "Adding water to DNS",
+            "Torture testing DNS",
+            "Water-based DNS"
+        ]
+    },
+    {
+        "q": "What is NS delegation inconsistency?",
+        "o": [
+            "Mismatch between parent and child NS",
+            "Inconsistent NS records",
+            "NS server differences",
+            "Delegation errors"
+        ]
+    },
+    {
+        "q": "What is lame NS detection?",
+        "o": [
+            "Finding non-authoritative NS records",
+            "Detecting lame DNS",
+            "NS lameness test",
+            "Lame server finder"
+        ]
+    },
+    {
+        "q": "What is orphan zone?",
+        "o": [
+            "Zone not delegated but configured",
+            "Zone without parent",
+            "Orphan DNS server",
+            "Zone orphaned data"
+        ]
+    },
+    {
+        "q": "What is ghost domain attack?",
+        "o": [
+            "Keeping deleted domain resolvable",
+            "Ghost in DNS server",
+            "Domain becomes ghost",
+            "Ghosting DNS records"
+        ]
+    },
+    {
+        "q": "How do ghost domains persist?",
+        "o": [
+            "Exploiting cache and timing",
+            "Ghosts are supernatural",
+            "Domain never deleted",
+            "Magic DNS persistence"
+        ]
+    },
+    {
+        "q": "What is DNS cache lock attack?",
+        "o": [
+            "Preventing cache updates",
+            "Locking DNS cache",
+            "Cache lock mechanism",
+            "Lock on cache"
+        ]
+    },
+    {
+        "q": "What is DNS response verification beyond DNSSEC?",
+        "o": [
+            "Additional validation mechanisms",
+            "No verification exists",
+            "Only DNSSEC works",
+            "Verification not needed"
+        ]
+    },
+    {
+        "q": "What is DNS-based blocklist evasion?",
+        "o": [
+            "Techniques to bypass DNS filtering",
+            "Evading DNS servers",
+            "Blocklist evasion tool",
+            "DNS block evasion"
+        ]
+    },
+    {
+        "q": "What methods evade DNS filtering?",
+        "o": [
+            "DoH proxies alternative resolvers VPN",
+            "No methods exist",
+            "Only VPN works",
+            "Filtering cannot be evaded"
+        ]
+    },
+    {
+        "q": "What is resolver fingerprinting?",
+        "o": [
+            "Identifying resolver implementation",
+            "Fingerprinting DNS users",
+            "Resolver identification",
+            "Fingerprint resolver data"
+        ]
+    },
+    {
+        "q": "What is DNS query obfuscation?",
+        "o": [
+            "Hiding query intent from observers",
+            "Obfuscating DNS servers",
+            "Query hiding technique",
+            "Obfuscated DNS"
+        ]
+    },
+    {
+        "q": "What is range queries in DNS?",
+        "o": [
+            "Privacy technique requesting extra domains",
+            "Range of DNS queries",
+            "Query range limit",
+            "Ranging DNS servers"
+        ]
+    },
+    {
+        "q": "What is PRSD?",
+        "o": [
+            "Private Range-Sum DNS queries",
+            "Primary Recursive Server DNS",
+            "Private DNS Standard",
+            "Primary DNS Protocol"
+        ]
+    },
+    {
+        "q": "What is DNS traffic encryption adoption rate?",
+        "o": [
+            "Growing but still minority of traffic",
+            "100% encrypted now",
+            "No encryption exists",
+            "Decreasing adoption"
+        ]
+    },
+    {
+        "q": "What is DNS resolver policy?",
+        "o": [
+            "Rules for how resolver handles queries",
+            "Policy for DNS usage",
+            "Resolver policy server",
+            "Policy DNS file"
+        ]
+    },
+    {
+        "q": "What is EDNS keepalive?",
+        "o": [
+            "Maintaining TCP connections open",
+            "Keeping DNS alive",
+            "EDNS heartbeat",
+            "Alive EDNS check"
+        ]
+    },
+    {
+        "q": "What is DNS pipelining?",
+        "o": [
+            "Multiple queries on single connection",
+            "Pipeline DNS servers",
+            "DNS data pipeline",
+            "Pipelining traffic"
+        ]
+    },
+    {
+        "q": "What is out-of-order DNS responses?",
+        "o": [
+            "Responding in different order than queried",
+            "Order of DNS servers",
+            "Out of order DNS",
+            "Response ordering"
+        ]
+    },
+    {
+        "q": "What is DNS session resumption?",
+        "o": [
+            "Reusing TLS session for DoT",
+            "Resuming DNS queries",
+            "Session for DNS",
+            "DNS session restart"
+        ]
+    },
+    {
+        "q": "What is 0-RTT in DNS over QUIC?",
+        "o": [
+            "Zero round trip time resumption",
+            "Zero RTT protocol",
+            "0 round DNS",
+            "RTT zero DNS"
+        ]
+    },
+    {
+        "q": "What is the security risk of 0-RTT?",
+        "o": [
+            "Replay attacks on early data",
+            "No security risk",
+            "0-RTT is most secure",
+            "Only affects speed"
+        ]
+    },
+    {
+        "q": "What is DNS load shedding?",
+        "o": [
+            "Dropping queries under high load",
+            "Shedding DNS data",
+            "Load on DNS servers",
+            "Shedding DNS load"
+        ]
+    },
+    {
+        "q": "What is graceful degradation in DNS?",
+        "o": [
+            "Maintaining service during attacks",
+            "Degrading DNS slowly",
+            "Graceful DNS failure",
+            "Degradation of grace"
+        ]
+    },
+    {
+        "q": "What is DNS serving stale records?",
+        "o": [
+            "Using expired cache during failure",
+            "Stale DNS servers",
+            "Serving old DNS",
+            "Stale record protocol"
+        ]
+    },
+    {
+        "q": "What RFC covers stale DNS?",
+        "o": [
+            "RFC 8767",
+            "RFC 1035",
+            "RFC 8484",
+            "RFC 7858"
+        ]
+    },
+    {
+        "q": "What is aggressive negative caching?",
+        "o": [
+            "Using NSEC for non-existent inference",
+            "Aggressive cache deletion",
+            "Negative DNS attack",
+            "Aggressive DNS cache"
+        ]
+    },
+    {
+        "q": "What is DNS root hints?",
+        "o": [
+            "Initial root server addresses for resolvers",
+            "Hints for DNS roots",
+            "Root server hints",
+            "Hint at root DNS"
+        ]
+    },
+    {
+        "q": "Why keep root hints updated?",
+        "o": [
+            "Root server infrastructure can change",
+            "No need to update",
+            "Hints never change",
+            "Hints are static"
+        ]
+    },
+    {
+        "q": "What is root zone hyperlocal?",
+        "o": [
+            "Local copy of root zone",
+            "Hyperlocal DNS roots",
+            "Root zone locality",
+            "Hyperlocal DNS"
+        ]
+    },
+    {
+        "q": "What is locally served root zone?",
+        "o": [
+            "Running root zone copy locally",
+            "Local root DNS server",
+            "Served root locally",
+            "Root zone service"
+        ]
+    },
+    {
+        "q": "What is RFC 8806?",
+        "o": [
+            "Running root server locally",
+            "Root zone protocol",
+            "Local DNS RFC",
+            "RFC for roots"
+        ]
+    },
+    {
+        "q": "What is DNS resolver aggressiveness?",
+        "o": [
+            "How actively resolver follows referrals",
+            "Aggressive DNS servers",
+            "Resolver attack mode",
+            "Aggressive resolution"
+        ]
+    },
+    {
+        "q": "What is resolver credibility?",
+        "o": [
+            "Trustworthiness of DNS responses",
+            "Credible DNS servers",
+            "Resolver trust level",
+            "Credibility protocol"
+        ]
+    },
+    {
+        "q": "What is DNS instrumentation?",
+        "o": [
+            "Monitoring DNS for performance and security",
+            "DNS instruments",
+            "Instrumented servers",
+            "Instrument DNS data"
+        ]
+    },
+    {
+        "q": "What is DITL data?",
+        "o": [
+            "Day In The Life of DNS collection",
+            "Detailed Internet Transfer Log",
+            "DNS Internet Traffic Log",
+            "Daily Traffic Log"
+        ]
+    },
+    {
+        "q": "What is the DNS operations community?",
+        "o": [
+            "DNSOPS working group",
+            "DNS operators society",
+            "Community of DNS",
+            "Operations DNS club"
+        ]
+    },
+    {
+        "q": "What is IETF DPRIVE working group?",
+        "o": [
+            "DNS Privacy group",
+            "DP rive protocol",
+            "DPRIVE DNS server",
+            "Privacy drive DNS"
+        ]
+    },
+    {
+        "q": "What is root zone key rollover?",
+        "o": [
+            "Changing root DNSSEC key",
+            "Rolling root servers",
+            "Key root rotation",
+            "Root key change"
+        ]
+    },
+    {
+        "q": "When was first root KSK rollover?",
+        "o": [
+            "2018",
+            "2020",
+            "2015",
+            "2010"
+        ]
+    },
+    {
+        "q": "What is DNS flag day?",
+        "o": [
+            "Coordinated resolver behavior change",
+            "Flag protocol day",
+            "DNS celebration",
+            "Day of DNS flags"
+        ]
+    },
+    {
+        "q": "What was DNS Flag Day 2019 about?",
+        "o": [
+            "EDNS compliance enforcement",
+            "Flag day celebrations",
+            "DNS protocol change",
+            "Encryption enforcement"
+        ]
+    },
+    {
+        "q": "What is DNS Flag Day 2020 focus?",
+        "o": [
+            "TCP and MTU issues",
+            "EDNS enforcement",
+            "Encryption only",
+            "Security updates"
+        ]
+    },
+    {
+        "q": "What is DNS resolver operator responsibility?",
+        "o": [
+            "Providing accurate secure resolution",
+            "Only answering queries",
+            "No responsibility",
+            "Operating DNS servers"
+        ]
+    },
+    {
+        "q": "What is DNS ecosystem health?",
+        "o": [
+            "Overall functioning of DNS infrastructure",
+            "Health of DNS servers",
+            "Ecosystem DNS protocol",
+            "Health check DNS"
+        ]
+    },
+    {
+        "q": "What is Internet root server day?",
+        "o": [
+            "Awareness about root infrastructure",
+            "Root server celebration",
+            "Day for root servers",
+            "Root protocol day"
+        ]
+    },
+    {
+        "q": "What is measurement study in DNS security?",
+        "o": [
+            "Research analyzing real DNS behavior",
+            "Measuring DNS servers",
+            "Study of DNS size",
+            "Measurement protocol"
+        ]
+    },
+    {
+        "q": "What is RIPE Atlas for DNS?",
+        "o": [
+            "Distributed measurement network",
+            "DNS atlas map",
+            "RIPE DNS server",
+            "Atlas protocol"
+        ]
+    },
+    {
+        "q": "What is DNS-OARC?",
+        "o": [
+            "Operations Analysis and Research Center",
+            "Operation Analysis Research",
+            "OARC DNS protocol",
+            "Analysis research center"
+        ]
+    },
+    {
+        "q": "What is ICANN role in DNS security?",
+        "o": [
+            "Coordination and root zone management",
+            "ICANN controls DNS",
+            "No role in security",
+            "Only policy making"
+        ]
+    },
+    {
+        "q": "What is DNS registrar security requirements?",
+        "o": [
+            "Best practices for domain registration",
+            "Registrar DNS servers",
+            "Security for registrars",
+            "Requirements for DNS"
+        ]
+    },
+    {
+        "q": "What is two-factor for domain management?",
+        "o": [
+            "Additional authentication for DNS changes",
+            "Two DNS factors",
+            "Factor for domains",
+            "Two factor DNS"
+        ]
+    },
+    {
+        "q": "What is domain lock service?",
+        "o": [
+            "Premium protection against transfers",
+            "Locking domains",
+            "Domain service lock",
+            "Lock DNS domains"
+        ]
+    },
+    {
+        "q": "What is DNS change monitoring?",
+        "o": [
+            "Alerting on record modifications",
+            "Monitoring DNS changes",
+            "Change DNS monitor",
+            "DNS monitoring tool"
+        ]
+    },
+    {
+        "q": "What is certificate transparency for DNS security?",
+        "o": [
+            "Detecting unauthorized domain certificates",
+            "Transparent DNS certs",
+            "Certificate DNS security",
+            "Transparency in DNS"
+        ]
+    },
+    {
+        "q": "What is subdomain monitoring?",
+        "o": [
+            "Tracking subdomain creation and changes",
+            "Monitor subdomain servers",
+            "Subdomain DNS watch",
+            "Monitoring DNS sub"
+        ]
+    },
+    {
+        "q": "What is DNS record integrity verification?",
+        "o": [
+            "Confirming records match expected values",
+            "Integrity of DNS",
+            "Verification of records",
+            "Record integrity check"
+        ]
+    },
+    {
+        "q": "What is DNS configuration audit?",
+        "o": [
+            "Reviewing DNS settings for security",
+            "Auditing DNS files",
+            "Configuration DNS check",
+            "Audit DNS settings"
+        ]
+    },
+    {
+        "q": "What is secure DNS delegation?",
+        "o": [
+            "Properly configured NS and glue",
+            "Delegating secure DNS",
+            "Secure delegation protocol",
+            "DNS delegation security"
+        ]
+    },
+    {
+        "q": "What is DNSSEC deployment validation?",
+        "o": [
+            "Verifying correct DNSSEC configuration",
+            "Deployment of DNS SEC",
+            "Validation deployment",
+            "DNSSEC deploy test"
+        ]
+    },
+    {
+        "q": "What tools validate DNSSEC?",
+        "o": [
+            "DNSViz Verisign DNSSEC debugger",
+            "No validation tools",
+            "Only dig command",
+            "Standard browsers"
+        ]
+    },
+    {
+        "q": "What is chain validation in DNSSEC?",
+        "o": [
+            "Verifying signatures to root",
+            "Chaining DNS servers",
+            "Validation chain links",
+            "Chain of DNS"
+        ]
+    },
+    {
+        "q": "What is secure delegation chain?",
+        "o": [
+            "DS records linking zones to root",
+            "Delegating chains securely",
+            "Chain delegation protocol",
+            "Secure chain of delegation"
+        ]
+    },
+    {
+        "q": "What is algorithm security level?",
+        "o": [
+            "Strength of DNSSEC signing algorithm",
+            "Level of algorithm",
+            "Security algorithm number",
+            "Algorithm level setting"
+        ]
+    },
+    {
+        "q": "What DNSSEC algorithms are deprecated?",
+        "o": [
+            "DSA and old RSA key sizes",
+            "All algorithms deprecated",
+            "No deprecation exists",
+            "Only new algorithms"
+        ]
+    },
+    {
+        "q": "What is recommended DNSSEC algorithm today?",
+        "o": [
+            "ECDSA P-256 or EdDSA",
+            "Only RSA-1024",
+            "Only DSA",
+            "MD5-based signing"
+        ]
+    },
+    {
+        "q": "What is DNSKEY timing attack?",
+        "o": [
+            "Inferring key from validation time",
+            "Timing DNS keys",
+            "Attack on key time",
+            "Key timing protocol"
+        ]
+    },
+    {
+        "q": "What is signature freshness?",
+        "o": [
+            "How recently DNSSEC signature was created",
+            "Fresh DNS signatures",
+            "Signature age check",
+            "Freshness protocol"
+        ]
+    },
+    {
+        "q": "What is inception and expiration in RRSIG?",
+        "o": [
+            "Signature validity time window",
+            "Inception of DNS",
+            "Expiration date only",
+            "RRSIG time zone"
+        ]
+    },
+    {
+        "q": "What is signature jitter?",
+        "o": [
+            "Randomizing signature expiration",
+            "Jittery DNS signatures",
+            "Signature jitter protocol",
+            "Jitter in RRSIG"
+        ]
+    },
+    {
+        "q": "Why use signature jitter?",
+        "o": [
+            "Prevent simultaneous mass expiration",
+            "Speed up signing",
+            "Jitter improves security",
+            "No reason to use"
+        ]
+    },
+    {
+        "q": "What is online signing in DNSSEC?",
+        "o": [
+            "Signing responses on demand",
+            "Online DNS signature",
+            "Signing while online",
+            "Online protocol signing"
+        ]
+    },
+    {
+        "q": "What is offline signing in DNSSEC?",
+        "o": [
+            "Pre-signing zone in secure environment",
+            "Offline DNS server",
+            "Signing without internet",
+            "Offline protocol"
+        ]
+    },
+    {
+        "q": "What is hardware security module for DNS?",
+        "o": [
+            "Secure key storage device",
+            "Hardware DNS server",
+            "Security module protocol",
+            "Module for DNS hardware"
+        ]
+    },
+    {
+        "q": "What is smart card for DNSSEC?",
+        "o": [
+            "Portable key storage device",
+            "Smart DNS card",
+            "Card for DNS protocol",
+            "DNSSEC card reader"
+        ]
+    },
+    {
+        "q": "What is multi-signer DNSSEC?",
+        "o": [
+            "Multiple operators signing same zone",
+            "Many DNS signers",
+            "Multi-sign protocol",
+            "Signer multiprotocol"
+        ]
+    },
+    {
+        "q": "What RFC covers multi-signer?",
+        "o": [
+            "RFC 8901",
+            "RFC 1035",
+            "RFC 8484",
+            "RFC 7858"
+        ]
+    },
+    {
+        "q": "What is DNS automation?",
+        "o": [
+            "Automated DNS management and updates",
+            "Automatic DNS servers",
+            "Automation protocol",
+            "DNS robot system"
+        ]
+    },
+    {
+        "q": "What is infrastructure as code for DNS?",
+        "o": [
+            "Managing DNS via version-controlled config",
+            "Coding DNS servers",
+            "Infrastructure DNS protocol",
+            "Code for DNS infra"
+        ]
+    },
+    {
+        "q": "What tools manage DNS as code?",
+        "o": [
+            "Terraform OctoDNS DNSControl",
+            "No tools exist",
+            "Only manual management",
+            "Standard GUI tools"
+        ]
+    },
+    {
+        "q": "What is DNS change review process?",
+        "o": [
+            "Approving changes before deployment",
+            "Reviewing DNS servers",
+            "Change process protocol",
+            "DNS review tool"
+        ]
+    },
+    {
+        "q": "What is DNS change rollback?",
+        "o": [
+            "Reverting problematic updates",
+            "Rolling back DNS servers",
+            "Rollback protocol",
+            "Back roll DNS"
+        ]
+    },
+    {
+        "q": "What is DNS split authority?",
+        "o": [
+            "Multiple providers serving zone",
+            "Split DNS servers",
+            "Authority split protocol",
+            "Splitting DNS authority"
+        ]
+    },
+    {
+        "q": "What is DNS provider diversity?",
+        "o": [
+            "Using multiple DNS vendors",
+            "Diverse DNS servers",
+            "Provider diversity protocol",
+            "Diversity in DNS"
+        ]
+    },
+    {
+        "q": "Why use multiple DNS providers?",
+        "o": [
+            "Resilience against provider failures",
+            "Speed improvement only",
+            "Cost reduction",
+            "No reason to use multiple"
+        ]
+    },
+    {
+        "q": "What is DNS monitoring as a service?",
+        "o": [
+            "Third-party DNS health checking",
+            "Monitoring DNS as service",
+            "Service for DNS monitoring",
+            "DNS service monitor"
+        ]
+    },
+    {
+        "q": "What is synthetic DNS monitoring?",
+        "o": [
+            "Simulated queries to test resolution",
+            "Synthetic DNS servers",
+            "Monitoring synthetic protocol",
+            "Synthetic DNS data"
+        ]
+    },
+    {
+        "q": "What is global DNS performance monitoring?",
+        "o": [
+            "Testing from multiple locations",
+            "Global DNS servers",
+            "Performance monitoring DNS",
+            "Global monitoring service"
+        ]
+    },
+    {
+        "q": "What is DNS incident response?",
+        "o": [
+            "Handling DNS security events",
+            "Incident DNS server",
+            "Response to DNS",
+            "Incident protocol DNS"
+        ]
+    },
+    {
+        "q": "What is DNS disaster recovery?",
+        "o": [
+            "Restoring DNS after major failure",
+            "Disaster DNS server",
+            "Recovery DNS protocol",
+            "DNS disaster plan"
+        ]
+    },
+    {
+        "q": "What is DNS backup strategy?",
+        "o": [
+            "Maintaining zone file copies",
+            "Backup DNS servers",
+            "Strategy for DNS backup",
+            "Backup protocol DNS"
+        ]
+    },
+    {
+        "q": "What is zone file version control?",
+        "o": [
+            "Tracking zone changes over time",
+            "Version of zone files",
+            "Control version DNS",
+            "Zone version protocol"
+        ]
+    },
+    {
+        "q": "What is DNS canary domain?",
+        "o": [
+            "Test domain for detecting issues",
+            "Canary DNS server",
+            "Domain canary protocol",
+            "Canary for DNS testing"
+        ]
+    },
+    {
+        "q": "What is DNS A/B testing?",
+        "o": [
+            "Testing configuration changes gradually",
+            "A or B DNS servers",
+            "Testing A and B DNS",
+            "AB protocol DNS"
+        ]
+    },
+    {
+        "q": "What is traffic steering via DNS?",
+        "o": [
+            "Directing users to optimal servers",
+            "Steering DNS servers",
+            "Traffic DNS protocol",
+            "Steering DNS traffic"
+        ]
+    },
+    {
+        "q": "What is intelligent DNS routing?",
+        "o": [
+            "Dynamic responses based on conditions",
+            "Intelligent DNS servers",
+            "Routing intelligence DNS",
+            "Smart DNS routing"
+        ]
+    },
+    {
+        "q": "What is DNS-based traffic management?",
+        "o": [
+            "Load balancing and failover via DNS",
+            "Managing DNS traffic",
+            "Traffic management protocol",
+            "DNS traffic manager"
+        ]
+    },
+    {
+        "q": "What is GSLB?",
+        "o": [
+            "Global Server Load Balancing",
+            "Global DNS Load Balancer",
+            "GSLB protocol DNS",
+            "Server load global"
+        ]
+    },
+    {
+        "q": "How does GSLB use DNS?",
+        "o": [
+            "Returns IP based on health and location",
+            "GSLB replaces DNS",
+            "DNS runs GSLB",
+            "No relation to DNS"
+        ]
+    },
+    {
+        "q": "What is DNS edge security?",
+        "o": [
+            "Protection at network perimeter via DNS",
+            "Edge DNS servers",
+            "Security at edges",
+            "Edge protocol DNS"
+        ]
+    },
+    {
+        "q": "What is Secure DNS Gateway?",
+        "o": [
+            "DNS protection appliance or service",
+            "Gateway for secure DNS",
+            "DNS gateway security",
+            "Secure gateway protocol"
+        ]
+    },
+    {
+        "q": "What is DNS as zero trust network access?",
+        "o": [
+            "Using DNS for identity-aware access",
+            "Zero trust for DNS servers",
+            "DNS without trust",
+            "Zero DNS access"
+        ]
+    },
+    {
+        "q": "What is DNS-layer security platform?",
+        "o": [
+            "Comprehensive DNS protection solution",
+            "Layer for DNS security",
+            "Platform for DNS protocol",
+            "Security layer DNS"
+        ]
+    },
+    {
+        "q": "What is recursive resolver security?",
+        "o": [
+            "Protection for caching resolvers",
+            "Recursive security protocol",
+            "Resolver recursive security",
+            "Security for recursion"
+        ]
+    },
+    {
+        "q": "What is authoritative server DDoS protection?",
+        "o": [
+            "Mitigating attacks on zone servers",
+            "DDoS for authority",
+            "Authoritative DDoS",
+            "Protection authoritative"
+        ]
+    },
+    {
+        "q": "What is DNS query flood attack?",
+        "o": [
+            "High volume of queries to exhaust resources",
+            "Flood of DNS servers",
+            "Query flooding protocol",
+            "Flood DNS data"
+        ]
+    },
+    {
+        "q": "What is DNS response flood?",
+        "o": [
+            "High volume unsolicited responses",
+            "Flooding DNS responses",
+            "Response flood protocol",
+            "Flood response DNS"
+        ]
+    },
+    {
+        "q": "What is phantom domain attack?",
+        "o": [
+            "Slow server responses consuming resolver resources",
+            "Ghost domain attack",
+            "Phantom DNS protocol",
+            "Domain phantom server"
+        ]
+    },
+    {
+        "q": "What is referral attack?",
+        "o": [
+            "Malicious referrals causing excessive queries",
+            "Referral DNS protocol",
+            "Attack on referrals",
+            "Referral DNS server"
+        ]
+    },
+    {
+        "q": "What is DNS query minimization?",
+        "o": [
+            "Sending only needed labels in queries",
+            "Minimizing DNS servers",
+            "Query minimization protocol",
+            "Minimal DNS queries"
+        ]
+    },
+    {
+        "q": "Why does query minimization improve privacy?",
+        "o": [
+            "Reduces information sent to authorities",
+            "Makes queries smaller",
+            "Minimizes DNS traffic",
+            "Privacy through minimization"
+        ]
+    },
+    {
+        "q": "What is QNAME minimization?",
+        "o": [
+            "Privacy enhancement for DNS queries",
+            "QNAME protocol minimization",
+            "Minimal QNAME DNS",
+            "QNAME privacy mode"
+        ]
+    },
+    {
+        "q": "What RFC covers QNAME minimization?",
+        "o": [
+            "RFC 7816",
+            "RFC 1035",
+            "RFC 8484",
+            "RFC 7858"
+        ]
+    },
+    {
+        "q": "What is Oblivious DNS?",
+        "o": [
+            "Privacy protocol hiding client identity",
+            "Oblivious DNS servers",
+            "DNS oblivion mode",
+            "Oblivious protocol"
+        ]
+    },
+    {
+        "q": "What is ODoH?",
+        "o": [
+            "Oblivious DNS over HTTPS",
+            "Optional DNS over HTTP",
+            "Original DNS over HTTPS",
+            "Ordered DNS over HTTP"
+        ]
+    },
+    {
+        "q": "How does ODoH improve privacy?",
+        "o": [
+            "Separates client from query via proxy",
+            "Encrypts all DNS",
+            "Hides DNS servers",
+            "Blocks all tracking"
+        ]
+    },
+    {
+        "q": "What is DNS performance security tradeoff?",
+        "o": [
+            "Security features may add latency",
+            "Performance helps security",
+            "Security improves performance",
+            "No tradeoff exists"
+        ]
+    },
+    {
+        "q": "What is DNS caching security balance?",
+        "o": [
+            "Cache benefits vs stale data risks",
+            "Caching improves security",
+            "Balance DNS servers",
+            "Cache balance protocol"
+        ]
+    },
+    {
+        "q": "What is DNS resolver geolocation accuracy?",
+        "o": [
+            "Matching resolver to user location for CDN",
+            "Geolocation of DNS servers",
+            "Resolver location protocol",
+            "Geolocation accuracy DNS"
+        ]
+    },
+    {
+        "q": "What is centralized DNS privacy concern?",
+        "o": [
+            "Single provider sees all queries",
+            "Central DNS is more secure",
+            "No privacy concern",
+            "Centralized is private"
+        ]
+    },
+    {
+        "q": "What is decentralized DNS?",
+        "o": [
+            "DNS without central authority",
+            "Decentralized DNS servers",
+            "Multiple DNS centers",
+            "Spread DNS protocol"
+        ]
+    },
+    {
+        "q": "What is blockchain DNS?",
+        "o": [
+            "Domain names on distributed ledger",
+            "Blockchain for DNS servers",
+            "Chain of DNS blocks",
+            "Block DNS protocol"
+        ]
+    },
+    {
+        "q": "What are security concerns with blockchain DNS?",
+        "o": [
+            "Immutability prevents abuse takedown",
+            "No security concerns",
+            "Blockchain is most secure",
+            "Only affects speed"
+        ]
+    },
+    {
+        "q": "What is Handshake DNS?",
+        "o": [
+            "Decentralized naming protocol",
+            "Handshake DNS servers",
+            "Shaking hands DNS",
+            "Handshake protocol"
+        ]
+    },
+    {
+        "q": "What is ENS Ethereum Name Service?",
+        "o": [
+            "Blockchain-based naming on Ethereum",
+            "Ether DNS servers",
+            "ENS protocol servers",
+            "Ethereum DNS service"
+        ]
+    }
+]

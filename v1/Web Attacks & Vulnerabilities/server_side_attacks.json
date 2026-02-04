@@ -1,0 +1,4529 @@
+[
+    {
+        "q": "What does SSRF stand for in web security?",
+        "o": [
+            "Server-Side Request Forgery",
+            "Secure Server Request Form",
+            "Server Session Request Failure",
+            "Simple Server Resource Fetch"
+        ]
+    },
+    {
+        "q": "What type of attack allows reading local files through a web application?",
+        "o": [
+            "Path traversal attack",
+            "SQL injection attack",
+            "Cross-site scripting",
+            "Denial of service"
+        ]
+    },
+    {
+        "q": "What is the main goal of a file upload vulnerability exploit?",
+        "o": [
+            "Upload malicious files to server",
+            "Download files from database",
+            "Delete existing server files",
+            "Encrypt stored user data"
+        ]
+    },
+    {
+        "q": "Which sequence is commonly used in path traversal attacks?",
+        "o": [
+            "../",
+            "-->",
+            "<%>",
+            ":::"
+        ]
+    },
+    {
+        "q": "What does IDOR stand for in web vulnerabilities?",
+        "o": [
+            "Insecure Direct Object Reference",
+            "Internal Data Output Response",
+            "Indirect Domain Object Request",
+            "Isolated Directory Object Redirect"
+        ]
+    },
+    {
+        "q": "Which attack involves the server making requests on behalf of an attacker?",
+        "o": [
+            "Server-Side Request Forgery",
+            "Cross-Site Request Forgery",
+            "Session Hijacking Attack",
+            "Buffer Overflow Attack"
+        ]
+    },
+    {
+        "q": "What is the typical target of SSRF attacks?",
+        "o": [
+            "Internal network resources",
+            "External public websites",
+            "User browser cookies",
+            "Database log files"
+        ]
+    },
+    {
+        "q": "Which file extension is commonly blocked to prevent malicious uploads?",
+        "o": [
+            ".php",
+            ".txt",
+            ".jpg",
+            ".pdf"
+        ]
+    },
+    {
+        "q": "What does RCE stand for in security terminology?",
+        "o": [
+            "Remote Code Execution",
+            "Request Control Engine",
+            "Runtime Check Error",
+            "Resource Cache Entry"
+        ]
+    },
+    {
+        "q": "Which path traversal sequence targets the root directory on Linux?",
+        "o": [
+            "../../../../etc/passwd",
+            "C:\\Windows\\System32",
+            "file://localhost/",
+            "//network/share/"
+        ]
+    },
+    {
+        "q": "What is a common way to exploit IDOR vulnerabilities?",
+        "o": [
+            "Changing URL parameter values",
+            "Injecting SQL statements",
+            "Modifying HTML source code",
+            "Uploading executable files"
+        ]
+    },
+    {
+        "q": "Which HTTP method is commonly abused in SSRF attacks?",
+        "o": [
+            "GET and POST",
+            "DELETE only",
+            "OPTIONS only",
+            "TRACE only"
+        ]
+    },
+    {
+        "q": "What type of validation helps prevent file upload attacks?",
+        "o": [
+            "File type validation",
+            "URL encoding only",
+            "HTML sanitization",
+            "Cookie encryption"
+        ]
+    },
+    {
+        "q": "Which file is commonly targeted in Linux path traversal?",
+        "o": [
+            "/etc/passwd",
+            "/var/www/html",
+            "/tmp/cache",
+            "/home/user"
+        ]
+    },
+    {
+        "q": "What makes IDOR vulnerabilities dangerous?",
+        "o": [
+            "Access to unauthorized data",
+            "Server performance issues",
+            "Browser compatibility bugs",
+            "Network bandwidth usage"
+        ]
+    },
+    {
+        "q": "Which protocol is often targeted in SSRF to access internal services?",
+        "o": [
+            "HTTP and HTTPS",
+            "FTP exclusively",
+            "SSH exclusively",
+            "SMTP exclusively"
+        ]
+    },
+    {
+        "q": "What is a common indicator of RCE vulnerability?",
+        "o": [
+            "User input in system commands",
+            "Static HTML content only",
+            "Read-only file access",
+            "Disabled JavaScript"
+        ]
+    },
+    {
+        "q": "Which defense prevents path traversal attacks?",
+        "o": [
+            "Input sanitization",
+            "HTTPS encryption",
+            "Session timeouts",
+            "Rate limiting"
+        ]
+    },
+    {
+        "q": "What information can IDOR expose?",
+        "o": [
+            "Other users private data",
+            "Server hardware specs",
+            "Network topology maps",
+            "Firewall rule sets"
+        ]
+    },
+    {
+        "q": "Which cloud service is commonly targeted via SSRF?",
+        "o": [
+            "Metadata endpoint",
+            "Load balancer logs",
+            "CDN cache servers",
+            "DNS resolver"
+        ]
+    },
+    {
+        "q": "What is the purpose of file extension whitelisting?",
+        "o": [
+            "Allow only safe file types",
+            "Block all file uploads",
+            "Encrypt uploaded content",
+            "Compress large files"
+        ]
+    },
+    {
+        "q": "Which character encoding can bypass path traversal filters?",
+        "o": [
+            "URL encoding",
+            "Base64 only",
+            "ROT13 cipher",
+            "Hex encoding"
+        ]
+    },
+    {
+        "q": "What is a blind SSRF attack?",
+        "o": [
+            "No direct response visible",
+            "Attacker cannot see target",
+            "Uses encrypted channels",
+            "Requires authentication"
+        ]
+    },
+    {
+        "q": "Which function can lead to RCE if user input is passed?",
+        "o": [
+            "exec() or system()",
+            "print() or echo()",
+            "strlen() or count()",
+            "isset() or empty()"
+        ]
+    },
+    {
+        "q": "What does a null byte injection do in path traversal?",
+        "o": [
+            "Terminates string early",
+            "Encrypts file content",
+            "Compresses file path",
+            "Validates file type"
+        ]
+    },
+    {
+        "q": "How can IDOR be detected during testing?",
+        "o": [
+            "Changing object identifiers",
+            "Running SQL queries",
+            "Modifying CSS styles",
+            "Checking SSL certs"
+        ]
+    },
+    {
+        "q": "What internal IP range is often targeted in SSRF?",
+        "o": [
+            "127.0.0.1 and 169.254.x.x",
+            "8.8.8.8 and 1.1.1.1",
+            "255.255.255.255",
+            "0.0.0.0 only"
+        ]
+    },
+    {
+        "q": "Which file header check helps prevent upload attacks?",
+        "o": [
+            "Magic bytes validation",
+            "File name length check",
+            "Upload time stamp",
+            "User agent string"
+        ]
+    },
+    {
+        "q": "What is double encoding in path traversal?",
+        "o": [
+            "Encoding characters twice",
+            "Using two file paths",
+            "Duplicating requests",
+            "Double file extension"
+        ]
+    },
+    {
+        "q": "Which method prevents IDOR in API design?",
+        "o": [
+            "Authorization checks",
+            "Response caching",
+            "Request logging",
+            "Load balancing"
+        ]
+    },
+    {
+        "q": "What is the impact of successful SSRF on cloud environments?",
+        "o": [
+            "Access to cloud credentials",
+            "Slower page load times",
+            "Browser cache issues",
+            "CSS rendering bugs"
+        ]
+    },
+    {
+        "q": "How can content-type validation be bypassed in file uploads?",
+        "o": [
+            "Modifying HTTP headers",
+            "Using HTTPS protocol",
+            "Clearing browser cache",
+            "Disabling JavaScript"
+        ]
+    },
+    {
+        "q": "What is the canonical path in path traversal defense?",
+        "o": [
+            "Absolute resolved path",
+            "Relative file path",
+            "Symbolic link path",
+            "Network share path"
+        ]
+    },
+    {
+        "q": "Which identifier type is most vulnerable to IDOR?",
+        "o": [
+            "Sequential integers",
+            "Cryptographic tokens",
+            "UUID version four",
+            "Hashed identifiers"
+        ]
+    },
+    {
+        "q": "What makes localhost a target in SSRF attacks?",
+        "o": [
+            "Bypasses network firewalls",
+            "Faster response times",
+            "Better error messages",
+            "Simpler URL format"
+        ]
+    },
+    {
+        "q": "Which approach helps secure file upload directories?",
+        "o": [
+            "Disable script execution",
+            "Enable directory listing",
+            "Allow all file types",
+            "Use default permissions"
+        ]
+    },
+    {
+        "q": "What is path normalization in security context?",
+        "o": [
+            "Converting to standard format",
+            "Encrypting file paths",
+            "Compressing directories",
+            "Caching file locations"
+        ]
+    },
+    {
+        "q": "How does proper session validation prevent IDOR?",
+        "o": [
+            "Verifies user owns resource",
+            "Encrypts all responses",
+            "Limits request count",
+            "Blocks external IPs"
+        ]
+    },
+    {
+        "q": "Which URL scheme can be abused in SSRF?",
+        "o": [
+            "file:// and gopher://",
+            "mailto: only",
+            "javascript: only",
+            "data: only"
+        ]
+    },
+    {
+        "q": "What is a webshell in file upload attacks?",
+        "o": [
+            "Malicious script for control",
+            "Secure file manager app",
+            "Browser extension tool",
+            "Database backup utility"
+        ]
+    },
+    {
+        "q": "Which Windows file is targeted in path traversal?",
+        "o": [
+            "C:\\Windows\\win.ini",
+            "D:\\Program Files\\",
+            "E:\\Users\\Public\\",
+            "F:\\Temp\\cache\\"
+        ]
+    },
+    {
+        "q": "What is horizontal IDOR?",
+        "o": [
+            "Accessing same-level user data",
+            "Escalating admin privileges",
+            "Moving between servers",
+            "Crossing network zones"
+        ]
+    },
+    {
+        "q": "How can DNS rebinding assist SSRF attacks?",
+        "o": [
+            "Bypass IP validation checks",
+            "Encrypt malicious payload",
+            "Speed up attack process",
+            "Hide attacker identity"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus scanning for uploads?",
+        "o": [
+            "Detect malicious files",
+            "Compress large uploads",
+            "Verify file ownership",
+            "Check image quality"
+        ]
+    },
+    {
+        "q": "Which encoding bypasses dot-dot-slash filters?",
+        "o": [
+            "..%2f or ..%5c",
+            "base64 encoding",
+            "gzip compression",
+            "AES encryption"
+        ]
+    },
+    {
+        "q": "What is vertical IDOR?",
+        "o": [
+            "Accessing higher privilege data",
+            "Moving down user levels",
+            "Horizontal data access",
+            "Cross-tenant access"
+        ]
+    },
+    {
+        "q": "Which header can reveal internal IPs in SSRF responses?",
+        "o": [
+            "X-Forwarded-For",
+            "Content-Type",
+            "Cache-Control",
+            "Accept-Language"
+        ]
+    },
+    {
+        "q": "What is a polyglot file in upload attacks?",
+        "o": [
+            "Valid as multiple formats",
+            "Encrypted binary file",
+            "Compressed archive file",
+            "Self-extracting file"
+        ]
+    },
+    {
+        "q": "How does chroot jail help prevent path traversal?",
+        "o": [
+            "Restricts directory access",
+            "Encrypts file content",
+            "Logs file operations",
+            "Compresses storage"
+        ]
+    },
+    {
+        "q": "What is BOLA in API security?",
+        "o": [
+            "Broken Object Level Auth",
+            "Basic Online Login Access",
+            "Blocked Origin Link Attack",
+            "Binary Output Log Archive"
+        ]
+    },
+    {
+        "q": "Which port is often targeted internally via SSRF?",
+        "o": [
+            "6379 for Redis",
+            "443 for HTTPS",
+            "80 for HTTP",
+            "21 for FTP"
+        ]
+    },
+    {
+        "q": "What is ImageTragick vulnerability related to?",
+        "o": [
+            "ImageMagick file upload",
+            "JPEG compression flaw",
+            "PNG rendering bug",
+            "GIF animation issue"
+        ]
+    },
+    {
+        "q": "Which technique detects path traversal attempts?",
+        "o": [
+            "Pattern matching in WAF",
+            "SSL certificate check",
+            "DNS lookup caching",
+            "Load balancer rules"
+        ]
+    },
+    {
+        "q": "What makes UUIDs more secure than integers for IDOR?",
+        "o": [
+            "Hard to guess or enumerate",
+            "Shorter in length",
+            "Faster to process",
+            "Easier to remember"
+        ]
+    },
+    {
+        "q": "Which cloud metadata endpoint is commonly exploited?",
+        "o": [
+            "169.254.169.254",
+            "192.168.1.1",
+            "10.0.0.1",
+            "172.16.0.1"
+        ]
+    },
+    {
+        "q": "What is MIME type sniffing in file upload context?",
+        "o": [
+            "Browser detecting file type",
+            "Server compressing files",
+            "Client encrypting uploads",
+            "Caching file metadata"
+        ]
+    },
+    {
+        "q": "How can symbolic links be exploited in path traversal?",
+        "o": [
+            "Link to restricted files",
+            "Encrypt file contents",
+            "Compress directories",
+            "Cache file access"
+        ]
+    },
+    {
+        "q": "What is the difference between IDOR and broken access control?",
+        "o": [
+            "IDOR is a type of BAC",
+            "They are unrelated issues",
+            "BAC is subset of IDOR",
+            "Same vulnerability class"
+        ]
+    },
+    {
+        "q": "Which protocol handler enables file reading via SSRF?",
+        "o": [
+            "file:// scheme",
+            "http:// scheme",
+            "mailto: scheme",
+            "tel: scheme"
+        ]
+    },
+    {
+        "q": "What is the risk of storing uploads in web root?",
+        "o": [
+            "Direct script execution",
+            "Slower file access",
+            "Increased storage cost",
+            "Complex backup process"
+        ]
+    },
+    {
+        "q": "Which function safely handles file paths?",
+        "o": [
+            "realpath() or basename()",
+            "include() or require()",
+            "eval() or exec()",
+            "unserialize() or assert()"
+        ]
+    },
+    {
+        "q": "What is object reference in IDOR context?",
+        "o": [
+            "Identifier to access data",
+            "Database connection string",
+            "API authentication token",
+            "Session cookie value"
+        ]
+    },
+    {
+        "q": "How can SSRF lead to Remote Code Execution?",
+        "o": [
+            "Accessing vulnerable services",
+            "Modifying HTML content",
+            "Changing CSS styles",
+            "Updating DNS records"
+        ]
+    },
+    {
+        "q": "What header prevents MIME type sniffing?",
+        "o": [
+            "X-Content-Type-Options",
+            "Content-Disposition",
+            "Accept-Encoding",
+            "Cache-Control"
+        ]
+    },
+    {
+        "q": "Which approach mitigates path traversal in APIs?",
+        "o": [
+            "Whitelist allowed paths",
+            "Blacklist all paths",
+            "Ignore path parameter",
+            "Cache all responses"
+        ]
+    },
+    {
+        "q": "What is tenant isolation in preventing IDOR?",
+        "o": [
+            "Separate user data spaces",
+            "Shared database access",
+            "Common file storage",
+            "Unified authentication"
+        ]
+    },
+    {
+        "q": "Which bypass technique uses alternate IP formats for SSRF?",
+        "o": [
+            "Decimal or octal notation",
+            "Hexadecimal file paths",
+            "Binary encoded URLs",
+            "Base64 IP addresses"
+        ]
+    },
+    {
+        "q": "What is filename sanitization in upload security?",
+        "o": [
+            "Removing dangerous characters",
+            "Encrypting file names",
+            "Compressing file data",
+            "Caching upload paths"
+        ]
+    },
+    {
+        "q": "How does LFI differ from path traversal?",
+        "o": [
+            "LFI includes the file",
+            "Path traversal reads only",
+            "They are identical",
+            "LFI is client-side"
+        ]
+    },
+    {
+        "q": "What is predictable resource location in IDOR?",
+        "o": [
+            "Guessable URL patterns",
+            "Random file placement",
+            "Encrypted resource paths",
+            "Dynamic URL generation"
+        ]
+    },
+    {
+        "q": "Which SSRF mitigation uses DNS resolution control?",
+        "o": [
+            "DNS pinning technique",
+            "HTTPS enforcement",
+            "Cookie validation",
+            "Session timeout"
+        ]
+    },
+    {
+        "q": "What is content-disposition header used for?",
+        "o": [
+            "Force file download",
+            "Enable script execution",
+            "Compress response data",
+            "Cache static content"
+        ]
+    },
+    {
+        "q": "Which path traversal variant uses backslashes?",
+        "o": [
+            "Windows-based traversal",
+            "Linux-only traversal",
+            "macOS traversal only",
+            "Unix traversal only"
+        ]
+    },
+    {
+        "q": "What is the principle of least privilege in IDOR prevention?",
+        "o": [
+            "Minimum required access",
+            "Maximum user permissions",
+            "Default admin rights",
+            "Shared access tokens"
+        ]
+    },
+    {
+        "q": "How can redirect chains be abused in SSRF?",
+        "o": [
+            "Bypass URL validation",
+            "Speed up requests",
+            "Encrypt traffic",
+            "Cache responses"
+        ]
+    },
+    {
+        "q": "What is the purpose of upload file size limits?",
+        "o": [
+            "Prevent denial of service",
+            "Improve file quality",
+            "Enable encryption",
+            "Support compression"
+        ]
+    },
+    {
+        "q": "Which encoding represents dot as %2e in path traversal?",
+        "o": [
+            "URL percent encoding",
+            "Base64 encoding",
+            "HTML entity encoding",
+            "Unicode encoding"
+        ]
+    },
+    {
+        "q": "What is forced browsing related to IDOR?",
+        "o": [
+            "Manually guessing URLs",
+            "Automated SQL injection",
+            "Cross-site scripting",
+            "Session hijacking"
+        ]
+    },
+    {
+        "q": "Which network scanning can SSRF enable internally?",
+        "o": [
+            "Port scanning via timing",
+            "SSL certificate check",
+            "DNS zone transfer",
+            "Email header analysis"
+        ]
+    },
+    {
+        "q": "What makes double extensions dangerous in uploads?",
+        "o": [
+            "Bypass extension checks",
+            "Improve file compression",
+            "Enable better caching",
+            "Support legacy browsers"
+        ]
+    },
+    {
+        "q": "How does absolute path traversal differ from relative?",
+        "o": [
+            "Uses full path from root",
+            "Requires user directory",
+            "Needs file extension",
+            "Uses only file name"
+        ]
+    },
+    {
+        "q": "What is the impact of IDOR on compliance?",
+        "o": [
+            "Data breach violations",
+            "Performance degradation",
+            "Network latency issues",
+            "Browser compatibility"
+        ]
+    },
+    {
+        "q": "Which defense blocks SSRF requests to internal IPs?",
+        "o": [
+            "Allowlist validation",
+            "Response caching",
+            "Request logging",
+            "Error suppression"
+        ]
+    },
+    {
+        "q": "What is a reverse shell in RCE context?",
+        "o": [
+            "Target connects to attacker",
+            "Attacker connects to target",
+            "Encrypted command channel",
+            "Read-only file access"
+        ]
+    },
+    {
+        "q": "Which log file might reveal successful path traversal?",
+        "o": [
+            "Web server access logs",
+            "Browser console output",
+            "CSS error messages",
+            "JavaScript debug info"
+        ]
+    },
+    {
+        "q": "What is parameter tampering in IDOR attacks?",
+        "o": [
+            "Modifying request values",
+            "Encrypting data packets",
+            "Compressing responses",
+            "Caching API calls"
+        ]
+    },
+    {
+        "q": "How does content-length assist file upload attacks?",
+        "o": [
+            "Bypass size validation",
+            "Improve upload speed",
+            "Enable compression",
+            "Support chunking"
+        ]
+    },
+    {
+        "q": "Which vulnerability allows including remote files?",
+        "o": [
+            "Remote File Inclusion",
+            "Local File Inclusion",
+            "Path Traversal Attack",
+            "Directory Listing Bug"
+        ]
+    },
+    {
+        "q": "What is the risk of verbose error messages in SSRF?",
+        "o": [
+            "Reveals internal info",
+            "Slows down requests",
+            "Breaks SSL connections",
+            "Corrupts session data"
+        ]
+    },
+    {
+        "q": "How can image processing lead to RCE?",
+        "o": [
+            "Malicious image metadata",
+            "Large file dimensions",
+            "Unsupported color space",
+            "Invalid compression"
+        ]
+    },
+    {
+        "q": "Which technique enumerates files via path traversal?",
+        "o": [
+            "Brute forcing file names",
+            "SQL injection queries",
+            "XSS payload testing",
+            "CSRF token analysis"
+        ]
+    },
+    {
+        "q": "What is the role of API gateway in IDOR prevention?",
+        "o": [
+            "Centralized authorization",
+            "Distributed caching",
+            "Load distribution",
+            "Rate monitoring"
+        ]
+    },
+    {
+        "q": "Which technique uses out-of-band channels in SSRF?",
+        "o": [
+            "DNS or HTTP callback",
+            "Browser notification",
+            "Email auto-reply",
+            "SMS alert system"
+        ]
+    },
+    {
+        "q": "What is executable content in file upload context?",
+        "o": [
+            "Files that run as code",
+            "Read-only text files",
+            "Compressed archives",
+            "Encrypted documents"
+        ]
+    },
+    {
+        "q": "How does path traversal affect confidentiality?",
+        "o": [
+            "Exposes sensitive files",
+            "Modifies user data",
+            "Deletes stored files",
+            "Corrupts databases"
+        ]
+    },
+    {
+        "q": "What is access control matrix in IDOR context?",
+        "o": [
+            "Defines user permissions",
+            "Encrypts all data",
+            "Logs all requests",
+            "Caches responses"
+        ]
+    },
+    {
+        "q": "How can SSRF be used to scan internal network ports?",
+        "o": [
+            "Timing differences in responses",
+            "Cookie values in headers",
+            "CSS style changes",
+            "HTML content length"
+        ]
+    },
+    {
+        "q": "What is the role of WAF in preventing file upload attacks?",
+        "o": [
+            "Inspect and block malicious files",
+            "Compress files for storage",
+            "Encrypt file contents",
+            "Cache uploaded content"
+        ]
+    },
+    {
+        "q": "Which technique uses wrapper protocols in LFI attacks?",
+        "o": [
+            "PHP filter wrappers",
+            "SQL union queries",
+            "XSS event handlers",
+            "CSRF token bypass"
+        ]
+    },
+    {
+        "q": "What distinguishes API-based IDOR from web-based IDOR?",
+        "o": [
+            "Parameters in JSON body",
+            "Visible URL patterns",
+            "Form submission only",
+            "Cookie-based access"
+        ]
+    },
+    {
+        "q": "How does gopher protocol assist in SSRF exploitation?",
+        "o": [
+            "Send arbitrary data to services",
+            "Encrypt network traffic",
+            "Cache server responses",
+            "Validate SSL certificates"
+        ]
+    },
+    {
+        "q": "What is content sniffing prevention in upload security?",
+        "o": [
+            "Set proper content-type headers",
+            "Compress uploaded files",
+            "Encrypt file names",
+            "Cache file metadata"
+        ]
+    },
+    {
+        "q": "Which path traversal technique uses Unicode normalization?",
+        "o": [
+            "UTF-8 overlong encoding",
+            "Base64 file encoding",
+            "ROT13 cipher usage",
+            "Hex dump analysis"
+        ]
+    },
+    {
+        "q": "What is function-level access control in IDOR prevention?",
+        "o": [
+            "Check permissions per operation",
+            "Single login verification",
+            "Global admin access",
+            "Anonymous user support"
+        ]
+    },
+    {
+        "q": "How can SSRF bypass allowlist with URL parsing differences?",
+        "o": [
+            "Different URL parsers interpret differently",
+            "Encrypted payload transmission",
+            "Compressed request bodies",
+            "Cached DNS responses"
+        ]
+    },
+    {
+        "q": "What is the htaccess role in upload directory security?",
+        "o": [
+            "Disable script execution",
+            "Enable directory listing",
+            "Allow all file types",
+            "Compress stored files"
+        ]
+    },
+    {
+        "q": "Which file operation is unsafe for path traversal?",
+        "o": [
+            "Using user input directly",
+            "Calling realpath first",
+            "Using basename only",
+            "Validating against whitelist"
+        ]
+    },
+    {
+        "q": "What is indirect object reference compared to direct?",
+        "o": [
+            "Uses mapped internal references",
+            "Exposes internal database IDs",
+            "Shares user session tokens",
+            "Cache result responses"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit Redis database?",
+        "o": [
+            "Send commands via gopher protocol",
+            "Execute JavaScript code",
+            "Modify CSS stylesheets",
+            "Update HTML content"
+        ]
+    },
+    {
+        "q": "What is file type detection by magic bytes?",
+        "o": [
+            "Check file header signatures",
+            "Validate file name only",
+            "Trust content-type header",
+            "Ignore file extensions"
+        ]
+    },
+    {
+        "q": "Which API endpoint often exposes IDOR vulnerabilities?",
+        "o": [
+            "User profile endpoints",
+            "Public static content",
+            "Health check routes",
+            "Documentation pages"
+        ]
+    },
+    {
+        "q": "What is the impact of SSRF on cloud IAM credentials?",
+        "o": [
+            "Steal temporary credentials",
+            "Faster page rendering",
+            "Better cache performance",
+            "Improved SSL handshakes"
+        ]
+    },
+    {
+        "q": "How does image resizing relate to upload security?",
+        "o": [
+            "Can strip malicious metadata",
+            "Increases file size",
+            "Adds script execution",
+            "Enables directory traversal"
+        ]
+    },
+    {
+        "q": "What is dot-dot-slash prevention at OS level?",
+        "o": [
+            "Use chroot or containers",
+            "Disable all file access",
+            "Allow unrestricted paths",
+            "Cache file operations"
+        ]
+    },
+    {
+        "q": "Which authorization model helps prevent IDOR?",
+        "o": [
+            "Role-based access control",
+            "Anonymous access model",
+            "Public sharing default",
+            "No authentication mode"
+        ]
+    },
+    {
+        "q": "What is time-of-check to time-of-use in SSRF context?",
+        "o": [
+            "Race condition in validation",
+            "Caching DNS responses",
+            "Encrypting request data",
+            "Compressing payloads"
+        ]
+    },
+    {
+        "q": "How can PHP streams be abused for file upload attacks?",
+        "o": [
+            "php://input for raw data",
+            "Compression algorithms",
+            "Encryption standards",
+            "Caching mechanisms"
+        ]
+    },
+    {
+        "q": "What is path injection in web applications?",
+        "o": [
+            "Control file system operations",
+            "Inject SQL statements",
+            "Execute JavaScript code",
+            "Modify cookie values"
+        ]
+    },
+    {
+        "q": "Which testing approach finds IDOR in APIs?",
+        "o": [
+            "Swap user identifiers",
+            "Inject SQL payloads",
+            "Add XSS scripts",
+            "Modify HTML forms"
+        ]
+    },
+    {
+        "q": "How can IPv6 addresses bypass SSRF filters?",
+        "o": [
+            "Filters may not check IPv6",
+            "IPv6 is always encrypted",
+            "Faster network routing",
+            "Better DNS resolution"
+        ]
+    },
+    {
+        "q": "What is executable extension list for upload blocking?",
+        "o": [
+            "Deny script file types",
+            "Allow all extensions",
+            "Ignore file headers",
+            "Trust user input"
+        ]
+    },
+    {
+        "q": "Which traversal technique uses null bytes to truncate paths?",
+        "o": [
+            "Bypass extension checks",
+            "Encrypt file paths",
+            "Compress data streams",
+            "Cache file content"
+        ]
+    },
+    {
+        "q": "What is scope validation in IDOR prevention?",
+        "o": [
+            "Verify resource ownership",
+            "Check network latency",
+            "Monitor CPU usage",
+            "Log disk space"
+        ]
+    },
+    {
+        "q": "How does HTTP Host header relate to SSRF?",
+        "o": [
+            "Can be manipulated for routing",
+            "Always encrypted in transit",
+            "Ignored by web servers",
+            "Cached by browsers"
+        ]
+    },
+    {
+        "q": "What is file content validation in upload security?",
+        "o": [
+            "Verify actual file data",
+            "Check file name only",
+            "Trust user headers",
+            "Ignore file type"
+        ]
+    },
+    {
+        "q": "Which path traversal targets web server config files?",
+        "o": [
+            "Reading nginx or Apache configs",
+            "Modifying HTML templates",
+            "Updating CSS styles",
+            "Changing JavaScript files"
+        ]
+    },
+    {
+        "q": "What is the difference between BOLA and BFLA in APIs?",
+        "o": [
+            "Object level vs function level",
+            "Same vulnerability type",
+            "Client vs server-side",
+            "Encryption vs encoding"
+        ]
+    },
+    {
+        "q": "How can DNS over HTTPS assist SSRF attacks?",
+        "o": [
+            "Bypass DNS monitoring",
+            "Faster DNS lookups",
+            "Better cache performance",
+            "Improved reliability"
+        ]
+    },
+    {
+        "q": "What is the purpose of randomized upload filenames?",
+        "o": [
+            "Prevent direct access",
+            "Improve storage speed",
+            "Enable compression",
+            "Support caching"
+        ]
+    },
+    {
+        "q": "Which technique detects traversal in file download functions?",
+        "o": [
+            "Input validation logging",
+            "CSS style analysis",
+            "JavaScript debugging",
+            "HTML parsing"
+        ]
+    },
+    {
+        "q": "What is resource enumeration in IDOR attacks?",
+        "o": [
+            "Iterate through IDs",
+            "Brute force passwords",
+            "Scan network ports",
+            "Discover subdomains"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal Kubernetes services?",
+        "o": [
+            "Access internal DNS names",
+            "Modify container images",
+            "Update pod configurations",
+            "Delete namespace resources"
+        ]
+    },
+    {
+        "q": "What is zip slip vulnerability in file uploads?",
+        "o": [
+            "Path traversal in archives",
+            "Compression algorithm flaw",
+            "Encryption weakness",
+            "Caching issue"
+        ]
+    },
+    {
+        "q": "Which encoding can bypass path traversal blacklist?",
+        "o": [
+            "Double URL encoding",
+            "Single Base64 pass",
+            "Basic hex only",
+            "Simple ROT13"
+        ]
+    },
+    {
+        "q": "What is ownership verification in IDOR context?",
+        "o": [
+            "Check user owns resource",
+            "Verify file extension",
+            "Validate content type",
+            "Confirm SSL certificate"
+        ]
+    },
+    {
+        "q": "How can SSRF abuse cloud instance identity?",
+        "o": [
+            "Access metadata service tokens",
+            "Modify storage buckets",
+            "Delete compute instances",
+            "Update network rules"
+        ]
+    },
+    {
+        "q": "What is content security policy role in upload attacks?",
+        "o": [
+            "Prevent script execution",
+            "Enable file compression",
+            "Support larger uploads",
+            "Improve caching"
+        ]
+    },
+    {
+        "q": "Which path traversal variant uses mixed slashes?",
+        "o": [
+            "Combine forward and backslash",
+            "Use dots exclusively",
+            "Rely on spaces only",
+            "Include tabs between"
+        ]
+    },
+    {
+        "q": "What is session binding to prevent IDOR?",
+        "o": [
+            "Link resources to session",
+            "Share sessions globally",
+            "Cache all responses",
+            "Disable authentication"
+        ]
+    },
+    {
+        "q": "How does URL shortener abuse relate to SSRF?",
+        "o": [
+            "Redirect to internal URLs",
+            "Compress network traffic",
+            "Encrypt DNS queries",
+            "Cache web responses"
+        ]
+    },
+    {
+        "q": "What is server-side file inclusion vulnerability?",
+        "o": [
+            "Include files in response",
+            "Upload new file types",
+            "Download cached content",
+            "Compress stored data"
+        ]
+    },
+    {
+        "q": "Which traversal technique exploits Windows short names?",
+        "o": [
+            "8.3 filename format",
+            "NTFS encryption",
+            "Registry entries",
+            "Event log files"
+        ]
+    },
+    {
+        "q": "What is multi-tenant IDOR in SaaS applications?",
+        "o": [
+            "Cross-organization data access",
+            "Single user isolation",
+            "Admin-only bypass",
+            "Public resource sharing"
+        ]
+    },
+    {
+        "q": "How can SSRF bypass network egress filtering?",
+        "o": [
+            "Use allowed external services",
+            "Disable all connections",
+            "Encrypt internal traffic",
+            "Cache external requests"
+        ]
+    },
+    {
+        "q": "What is archive decompression attack in uploads?",
+        "o": [
+            "Zip bomb or path traversal",
+            "Normal file extraction",
+            "Safe decompression only",
+            "Cached archive content"
+        ]
+    },
+    {
+        "q": "Which path traversal defense uses jail directories?",
+        "o": [
+            "Restrict to specific folder",
+            "Allow full file system",
+            "Disable all file access",
+            "Cache directory listings"
+        ]
+    },
+    {
+        "q": "What is data segregation in IDOR prevention?",
+        "o": [
+            "Separate data by user",
+            "Merge all user data",
+            "Share common resources",
+            "Cache globally"
+        ]
+    },
+    {
+        "q": "How does URL fragment affect SSRF validation?",
+        "o": [
+            "May bypass URL checks",
+            "Always ignored by servers",
+            "Encrypted by browsers",
+            "Cached by proxies"
+        ]
+    },
+    {
+        "q": "What is image reprocessing defense for uploads?",
+        "o": [
+            "Strip metadata and rebuild",
+            "Keep original unchanged",
+            "Add more metadata",
+            "Increase resolution"
+        ]
+    },
+    {
+        "q": "Which path traversal uses relative dot sequences?",
+        "o": [
+            "Navigate up directory tree",
+            "Access absolute paths",
+            "Create new directories",
+            "Delete existing files"
+        ]
+    },
+    {
+        "q": "What is attribute-based access control for IDOR?",
+        "o": [
+            "Check user attributes",
+            "Allow all by default",
+            "Deny everything",
+            "Cache permissions"
+        ]
+    },
+    {
+        "q": "How can SSRF target listening localhost services?",
+        "o": [
+            "Access services on loopback",
+            "Modify system files",
+            "Update kernel parameters",
+            "Delete log entries"
+        ]
+    },
+    {
+        "q": "What is file quarantine in upload security?",
+        "o": [
+            "Isolate before scanning",
+            "Move to public folder",
+            "Share immediately",
+            "Cache without check"
+        ]
+    },
+    {
+        "q": "Which traversal payload targets log files?",
+        "o": [
+            "Access web server logs",
+            "Modify CSS files",
+            "Update HTML pages",
+            "Change JSON configs"
+        ]
+    },
+    {
+        "q": "What is audit logging for IDOR detection?",
+        "o": [
+            "Track access attempts",
+            "Disable all logging",
+            "Cache log entries",
+            "Compress log files"
+        ]
+    },
+    {
+        "q": "How does SSRF interact with internal load balancers?",
+        "o": [
+            "Reach backend services",
+            "Modify routing rules",
+            "Delete health checks",
+            "Update SSL certs"
+        ]
+    },
+    {
+        "q": "What is executable bit checking in upload security?",
+        "o": [
+            "Remove execute permission",
+            "Add execute to all",
+            "Ignore file permissions",
+            "Share with execute"
+        ]
+    },
+    {
+        "q": "Which path traversal targets database config files?",
+        "o": [
+            "Read connection strings",
+            "Execute SQL queries",
+            "Modify table schemas",
+            "Delete stored data"
+        ]
+    },
+    {
+        "q": "What is contextual authorization in IDOR?",
+        "o": [
+            "Check based on context",
+            "Global permission check",
+            "No authorization needed",
+            "Cache auth results"
+        ]
+    },
+    {
+        "q": "How can SSRF abuse internal monitoring systems?",
+        "o": [
+            "Access metrics and data",
+            "Modify alert rules",
+            "Delete dashboards",
+            "Update configurations"
+        ]
+    },
+    {
+        "q": "What is filename length validation in uploads?",
+        "o": [
+            "Limit filename characters",
+            "Allow any length",
+            "Ignore file names",
+            "Cache all names"
+        ]
+    },
+    {
+        "q": "Which traversal technique exploits symlink resolution?",
+        "o": [
+            "Follow symbolic links",
+            "Ignore all links",
+            "Create new links",
+            "Delete existing links"
+        ]
+    },
+    {
+        "q": "What is record-level security for IDOR?",
+        "o": [
+            "Per-record permissions",
+            "Global data access",
+            "No access control",
+            "Shared read-write"
+        ]
+    },
+    {
+        "q": "How does SSRF leverage proxy configurations?",
+        "o": [
+            "Use configured proxies",
+            "Bypass all proxies",
+            "Disable proxy auth",
+            "Cache proxy responses"
+        ]
+    },
+    {
+        "q": "What is antivirus evasion in file uploads?",
+        "o": [
+            "Obfuscate malicious content",
+            "Standard file format",
+            "Clear file headers",
+            "Normal compression"
+        ]
+    },
+    {
+        "q": "Which traversal targets SSH private keys?",
+        "o": [
+            "Read user SSH keys",
+            "Modify SSH configs",
+            "Delete known hosts",
+            "Update authorized keys"
+        ]
+    },
+    {
+        "q": "What is API versioning impact on IDOR?",
+        "o": [
+            "Old versions may lack checks",
+            "All versions are same",
+            "New versions are worse",
+            "Versioning prevents IDOR"
+        ]
+    },
+    {
+        "q": "How can SSRF abuse webhooks?",
+        "o": [
+            "Trigger requests to internal URLs",
+            "Encrypt webhook payloads",
+            "Cache webhook responses",
+            "Compress webhook data"
+        ]
+    },
+    {
+        "q": "What is content-type enforcement in uploads?",
+        "o": [
+            "Serve with correct type",
+            "Ignore content types",
+            "Allow type sniffing",
+            "Cache all types"
+        ]
+    },
+    {
+        "q": "Which traversal exploits web application temp files?",
+        "o": [
+            "Access temporary folders",
+            "Modify source code",
+            "Delete static assets",
+            "Update compiled files"
+        ]
+    },
+    {
+        "q": "What is capability-based security for IDOR?",
+        "o": [
+            "Token grants access",
+            "Role-based only",
+            "No capabilities",
+            "Global access"
+        ]
+    },
+    {
+        "q": "How does SSRF interact with service mesh?",
+        "o": [
+            "Access service endpoints",
+            "Modify mesh config",
+            "Delete sidecar proxies",
+            "Update certificates"
+        ]
+    },
+    {
+        "q": "What is upload directory isolation?",
+        "o": [
+            "Separate from web root",
+            "Inside web root",
+            "Public access folder",
+            "Shared storage"
+        ]
+    },
+    {
+        "q": "Which traversal targets environment variable files?",
+        "o": [
+            "Read dotenv files",
+            "Modify shell scripts",
+            "Delete bash profiles",
+            "Update system paths"
+        ]
+    },
+    {
+        "q": "What is shallow vs deep IDOR testing?",
+        "o": [
+            "Surface vs nested objects",
+            "Fast vs slow testing",
+            "Simple vs complex IDs",
+            "Manual vs automated"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit database admin interfaces?",
+        "o": [
+            "Access admin panels",
+            "Encrypt database",
+            "Compress tables",
+            "Cache queries"
+        ]
+    },
+    {
+        "q": "What is upload rate limiting purpose?",
+        "o": [
+            "Prevent abuse and DoS",
+            "Increase upload speed",
+            "Enable compression",
+            "Support caching"
+        ]
+    },
+    {
+        "q": "Which traversal targets AWS Lambda functions?",
+        "o": [
+            "Read runtime files",
+            "Modify function code",
+            "Delete deployments",
+            "Update permissions"
+        ]
+    },
+    {
+        "q": "What is broken function level authorization?",
+        "o": [
+            "Unauthorized function access",
+            "Correct access control",
+            "Strong authentication",
+            "Proper encryption"
+        ]
+    },
+    {
+        "q": "How does SSRF target internal Git repositories?",
+        "o": [
+            "Access internal repos",
+            "Modify commit history",
+            "Delete branches",
+            "Update remote URLs"
+        ]
+    },
+    {
+        "q": "What is server-side validation importance in uploads?",
+        "o": [
+            "Cannot trust client checks",
+            "Client validation enough",
+            "No validation needed",
+            "Cache all files"
+        ]
+    },
+    {
+        "q": "Which traversal exploits backup file patterns?",
+        "o": [
+            "Access backup copies",
+            "Create new backups",
+            "Delete old versions",
+            "Compress archives"
+        ]
+    },
+    {
+        "q": "What is endpoint enumeration in IDOR context?",
+        "o": [
+            "Find accessible endpoints",
+            "Scan network ports",
+            "Discover subdomains",
+            "Brute force logins"
+        ]
+    },
+    {
+        "q": "How can SSRF abuse queue services?",
+        "o": [
+            "Send messages to queues",
+            "Encrypt queue data",
+            "Compress messages",
+            "Cache queue state"
+        ]
+    },
+    {
+        "q": "What is staged file processing in uploads?",
+        "o": [
+            "Process in safe stages",
+            "Immediate public access",
+            "No processing needed",
+            "Direct execution"
+        ]
+    },
+    {
+        "q": "Which traversal targets cloud storage configs?",
+        "o": [
+            "Read bucket credentials",
+            "Modify storage class",
+            "Delete all objects",
+            "Update lifecycle rules"
+        ]
+    },
+    {
+        "q": "What is cryptographically secure object reference?",
+        "o": [
+            "Unpredictable identifiers",
+            "Sequential integers",
+            "Timestamp-based IDs",
+            "Username as ID"
+        ]
+    },
+    {
+        "q": "How does SSRF interact with serverless functions?",
+        "o": [
+            "Trigger internal functions",
+            "Modify function code",
+            "Delete deployments",
+            "Update runtime"
+        ]
+    },
+    {
+        "q": "What is content inspection depth in uploads?",
+        "o": [
+            "Analyze file internals",
+            "Check name only",
+            "Trust headers",
+            "Ignore content"
+        ]
+    },
+    {
+        "q": "Which traversal targets container secrets?",
+        "o": [
+            "Read mounted secrets",
+            "Modify secret values",
+            "Delete secret keys",
+            "Update volumes"
+        ]
+    },
+    {
+        "q": "What is authorization caching risk in IDOR?",
+        "o": [
+            "Stale permissions cached",
+            "Always up-to-date",
+            "No caching occurs",
+            "Faster access control"
+        ]
+    },
+    {
+        "q": "How does SSRF interact with internal secret managers like HashiCorp Vault?",
+        "o": [
+            "Access secrets through internal APIs",
+            "Cannot reach Vault instances",
+            "Vault blocks all SSRF attempts",
+            "Requires external network only"
+        ]
+    },
+    {
+        "q": "What is the risk of allowing SVG file uploads on web applications?",
+        "o": [
+            "SVGs can contain embedded JavaScript",
+            "SVG files are always safe to upload",
+            "SVGs cannot execute any code",
+            "Only affects image rendering"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits IIS virtual directories?",
+        "o": [
+            "Access files outside web root",
+            "Only reads web root content",
+            "Modifies IIS configuration",
+            "Deletes virtual mappings"
+        ]
+    },
+    {
+        "q": "What is the relationship between IDOR and mass assignment?",
+        "o": [
+            "Both allow unauthorized modification",
+            "Completely unrelated issues",
+            "Mass assignment prevents IDOR",
+            "IDOR is subset of mass"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit GraphQL introspection endpoints?",
+        "o": [
+            "Discover internal schema information",
+            "GraphQL blocks all SSRF requests",
+            "Only affects external endpoints",
+            "Introspection prevents exploitation"
+        ]
+    },
+    {
+        "q": "What is the security implication of file upload to CDN origins?",
+        "o": [
+            "Malicious files cached globally",
+            "CDN sanitizes all content",
+            "No security implications",
+            "Files are automatically scanned"
+        ]
+    },
+    {
+        "q": "Which path traversal technique abuses Spring Boot endpoints?",
+        "o": [
+            "Access actuator sensitive data",
+            "Spring Boot is immune",
+            "Only affects configuration",
+            "Requires admin credentials"
+        ]
+    },
+    {
+        "q": "What is indirect IDOR through related object references?",
+        "o": [
+            "Access via nested object chains",
+            "Direct ID manipulation only",
+            "Requires sequential access",
+            "Only affects root objects"
+        ]
+    },
+    {
+        "q": "How does SSRF leverage OAuth callback manipulation?",
+        "o": [
+            "Redirect auth tokens internally",
+            "OAuth prevents SSRF completely",
+            "Callbacks are always validated",
+            "Only external redirects work"
+        ]
+    },
+    {
+        "q": "What is content-based file validation for upload security?",
+        "o": [
+            "Analyze actual file bytes",
+            "Trust extension only",
+            "Check name length",
+            "Validate upload date"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits PHP session handling?",
+        "o": [
+            "Include session files with payloads",
+            "Sessions prevent traversal",
+            "Only affects session data",
+            "PHP automatically sanitizes"
+        ]
+    },
+    {
+        "q": "What is the difference between horizontal and vertical IDOR escalation?",
+        "o": [
+            "Same level vs privilege escalation",
+            "Both are identical attacks",
+            "Vertical is less severe",
+            "Horizontal requires admin"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit PDF generation libraries?",
+        "o": [
+            "Include internal resources in PDF",
+            "PDF libraries are SSRF-safe",
+            "Only external URLs allowed",
+            "Generates static content only"
+        ]
+    },
+    {
+        "q": "What is the security of document file uploads like DOCX?",
+        "o": [
+            "Can contain malicious macros",
+            "Office formats are safe",
+            "Documents cannot execute code",
+            "Only text content stored"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits Java deserialization?",
+        "o": [
+            "Load gadget chains from files",
+            "Java prevents file access",
+            "Only serialized data affected",
+            "Deserialization is separate"
+        ]
+    },
+    {
+        "q": "What is IDOR in GraphQL mutation operations?",
+        "o": [
+            "Modify unauthorized objects",
+            "GraphQL validates all mutations",
+            "Only queries are vulnerable",
+            "Mutations require admin"
+        ]
+    },
+    {
+        "q": "How does SSRF interact with Elasticsearch clusters?",
+        "o": [
+            "Query and modify indices",
+            "Elasticsearch blocks internal",
+            "Only read operations work",
+            "Requires cluster password"
+        ]
+    },
+    {
+        "q": "What is the risk of EXIF data in uploaded images?",
+        "o": [
+            "May contain sensitive location",
+            "EXIF data is always safe",
+            "Automatically stripped by servers",
+            "Only affects image quality"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits RFI in PHP?",
+        "o": [
+            "Include remote files as code",
+            "PHP blocks remote includes",
+            "Only local files affected",
+            "RFI is disabled by default"
+        ]
+    },
+    {
+        "q": "What is cascading IDOR through API relationships?",
+        "o": [
+            "Access through related entities",
+            "Single object access only",
+            "APIs prevent cascading",
+            "Relationships are validated"
+        ]
+    },
+    {
+        "q": "How can SSRF abuse image embedding features?",
+        "o": [
+            "Fetch internal resources as images",
+            "Image features validate URLs",
+            "Only external images allowed",
+            "Embedding prevents SSRF"
+        ]
+    },
+    {
+        "q": "What is the security of font file uploads?",
+        "o": [
+            "Fonts can trigger parser vulns",
+            "Font files cannot be malicious",
+            "Only affects text rendering",
+            "Automatically sanitized"
+        ]
+    },
+    {
+        "q": "Which path traversal technique targets Java classpath?",
+        "o": [
+            "Access class files and configs",
+            "Classpath is protected",
+            "Only runtime classes affected",
+            "Java sandbox prevents"
+        ]
+    },
+    {
+        "q": "What is IDOR vulnerability in file sharing systems?",
+        "o": [
+            "Access other users shared files",
+            "Sharing prevents IDOR",
+            "Only public files affected",
+            "Links validate ownership"
+        ]
+    },
+    {
+        "q": "How does SSRF target internal Jenkins instances?",
+        "o": [
+            "Execute builds and access secrets",
+            "Jenkins blocks internal requests",
+            "Only external webhooks work",
+            "Requires admin credentials"
+        ]
+    },
+    {
+        "q": "What is the risk of uploading HTML files to a domain?",
+        "o": [
+            "XSS from same origin HTML",
+            "HTML files are always safe",
+            "Browser blocks uploaded HTML",
+            "Only affects text display"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits log injection?",
+        "o": [
+            "Include logs with injected code",
+            "Logs are read-only files",
+            "Log content is sanitized",
+            "Injection is not possible"
+        ]
+    },
+    {
+        "q": "What is time-based IDOR detection?",
+        "o": [
+            "Response timing reveals access",
+            "All responses same speed",
+            "Timing is not exploitable",
+            "Only network latency"
+        ]
+    },
+    {
+        "q": "How can SSRF abuse server-side templating?",
+        "o": [
+            "Include internal URLs in templates",
+            "Templates sanitize all URLs",
+            "Only static content allowed",
+            "Templating prevents SSRF"
+        ]
+    },
+    {
+        "q": "What is the security of video file uploads?",
+        "o": [
+            "Videos can exploit codec vulns",
+            "Video formats are safe",
+            "Only affects playback",
+            "Automatically transcoded"
+        ]
+    },
+    {
+        "q": "Which path traversal technique targets Tomcat manager?",
+        "o": [
+            "Access deploy and config files",
+            "Manager requires auth always",
+            "Tomcat prevents traversal",
+            "Only WAR files affected"
+        ]
+    },
+    {
+        "q": "What is batch IDOR in bulk operations?",
+        "o": [
+            "Access multiple resources at once",
+            "Bulk ops validate each item",
+            "Only single items affected",
+            "Batching prevents IDOR"
+        ]
+    },
+    {
+        "q": "How does SSRF interact with memcached instances?",
+        "o": [
+            "Read and write cached data",
+            "Memcached blocks SSRF",
+            "Only localhost cache works",
+            "Requires authentication"
+        ]
+    },
+    {
+        "q": "What is the security of audio file uploads?",
+        "o": [
+            "Audio parsers may be vulnerable",
+            "Audio files are always safe",
+            "Only affects sound quality",
+            "Automatically sanitized"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits proc filesystem?",
+        "o": [
+            "Read process and system info",
+            "Proc is not accessible",
+            "Only root can read proc",
+            "Web servers block proc"
+        ]
+    },
+    {
+        "q": "What is IDOR in webhook configuration?",
+        "o": [
+            "Modify other users webhooks",
+            "Webhooks are user-isolated",
+            "Only admin can configure",
+            "Validation prevents IDOR"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit XML parsers with XXE?",
+        "o": [
+            "Combine XXE with internal requests",
+            "XXE and SSRF are separate",
+            "XML parsers block SSRF",
+            "Only external entities"
+        ]
+    },
+    {
+        "q": "What is the security of archive file uploads?",
+        "o": [
+            "Zip bombs and path traversal",
+            "Archives are always safe",
+            "Compression prevents attacks",
+            "Only affect disk space"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits Windows alternate data streams?",
+        "o": [
+            "Access hidden ADS content",
+            "ADS prevents traversal",
+            "Only NTFS metadata",
+            "Windows blocks access"
+        ]
+    },
+    {
+        "q": "What is IDOR in notification systems?",
+        "o": [
+            "Access other users notifications",
+            "Notifications are private",
+            "Only admin notifications",
+            "System validates ownership"
+        ]
+    },
+    {
+        "q": "How does SSRF target internal RabbitMQ queues?",
+        "o": [
+            "Publish and consume messages",
+            "RabbitMQ blocks SSRF",
+            "Only external connections",
+            "Requires auth always"
+        ]
+    },
+    {
+        "q": "What is the security of executable file uploads?",
+        "o": [
+            "Server-side execution risk",
+            "Executables are sandboxed",
+            "Cannot run uploaded files",
+            "Only affects downloads"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits CGI scripts?",
+        "o": [
+            "Access CGI bin directory",
+            "CGI prevents traversal",
+            "Only script output",
+            "Web server blocks CGI"
+        ]
+    },
+    {
+        "q": "What is IDOR in payment processing?",
+        "o": [
+            "Access other users transactions",
+            "Payments are encrypted",
+            "Only admin can view",
+            "System validates all"
+        ]
+    },
+    {
+        "q": "How can SSRF abuse SAML token endpoints?",
+        "o": [
+            "Forge or steal SAML tokens",
+            "SAML prevents SSRF",
+            "Only external IdP works",
+            "Tokens are encrypted"
+        ]
+    },
+    {
+        "q": "What is the security of configuration file uploads?",
+        "o": [
+            "May override application settings",
+            "Config files are ignored",
+            "Only affects display",
+            "Automatically validated"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits Docker volumes?",
+        "o": [
+            "Access host filesystem mounts",
+            "Docker isolates volumes",
+            "Only container files",
+            "Volumes are read-only"
+        ]
+    },
+    {
+        "q": "What is IDOR in subscription management?",
+        "o": [
+            "Modify other users subscriptions",
+            "Subscriptions are protected",
+            "Only admin can modify",
+            "System validates user"
+        ]
+    },
+    {
+        "q": "How does SSRF interact with internal Consul services?",
+        "o": [
+            "Access service discovery data",
+            "Consul blocks SSRF",
+            "Only external services",
+            "Requires ACL tokens"
+        ]
+    },
+    {
+        "q": "What is the security of script file uploads?",
+        "o": [
+            "May execute if interpreter exists",
+            "Scripts are text only",
+            "Cannot be executed",
+            "Automatically sanitized"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits WebDAV?",
+        "o": [
+            "Access and modify files via DAV",
+            "WebDAV prevents traversal",
+            "Only affects web files",
+            "DAV is read-only"
+        ]
+    },
+    {
+        "q": "What is IDOR in team collaboration features?",
+        "o": [
+            "Access other teams data",
+            "Teams are isolated",
+            "Only public teams",
+            "System validates membership"
+        ]
+    },
+    {
+        "q": "How can SSRF abuse email sending features?",
+        "o": [
+            "Send emails to internal SMTP",
+            "Email features block SSRF",
+            "Only external SMTP",
+            "Requires authentication"
+        ]
+    },
+    {
+        "q": "What is content disposition role in file uploads?",
+        "o": [
+            "Control how file is served",
+            "Only affects download name",
+            "No security impact",
+            "Ignored by browsers"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits Node.js require?",
+        "o": [
+            "Load arbitrary modules",
+            "Require is sanitized",
+            "Only installed modules",
+            "Node blocks file access"
+        ]
+    },
+    {
+        "q": "What is IDOR in document management systems?",
+        "o": [
+            "Access other users documents",
+            "DMS validates all access",
+            "Only shared documents",
+            "System checks ownership"
+        ]
+    },
+    {
+        "q": "How does SSRF target internal etcd clusters?",
+        "o": [
+            "Read and write config data",
+            "Etcd blocks SSRF",
+            "Only external access",
+            "Requires mTLS"
+        ]
+    },
+    {
+        "q": "What is the security of data file uploads like CSV?",
+        "o": [
+            "May contain formula injection",
+            "CSV files are plain text",
+            "Data files are safe",
+            "Automatically validated"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits Python imports?",
+        "o": [
+            "Import from arbitrary paths",
+            "Python sandbox prevents",
+            "Only standard library",
+            "Imports are restricted"
+        ]
+    },
+    {
+        "q": "What is IDOR in audit logging systems?",
+        "o": [
+            "Access other users audit logs",
+            "Logs are admin only",
+            "System validates user",
+            "Logs are encrypted"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal Prometheus metrics?",
+        "o": [
+            "Scrape sensitive system metrics",
+            "Prometheus blocks SSRF",
+            "Metrics are public",
+            "Requires authentication"
+        ]
+    },
+    {
+        "q": "What is the security of template file uploads?",
+        "o": [
+            "Template injection risk",
+            "Templates are safe text",
+            "Cannot execute code",
+            "Automatically escaped"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits Ruby gems?",
+        "o": [
+            "Access gem installation files",
+            "Gems are protected",
+            "Only runtime data",
+            "Ruby prevents access"
+        ]
+    },
+    {
+        "q": "What is IDOR in preference systems?",
+        "o": [
+            "Change other users settings",
+            "Preferences are isolated",
+            "Only affects own user",
+            "System validates session"
+        ]
+    },
+    {
+        "q": "How does SSRF interact with internal Grafana dashboards?",
+        "o": [
+            "Access sensitive dashboard data",
+            "Grafana blocks internal",
+            "Dashboards are public",
+            "Requires admin auth"
+        ]
+    },
+    {
+        "q": "What is the security of serialized object uploads?",
+        "o": [
+            "Deserialization attacks possible",
+            "Serialized data is safe",
+            "Objects are validated",
+            "Automatically filtered"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits ASP.NET views?",
+        "o": [
+            "Access Razor view source files",
+            "Views are compiled only",
+            "ASP.NET prevents access",
+            "Only output visible"
+        ]
+    },
+    {
+        "q": "What is IDOR in invitation systems?",
+        "o": [
+            "View or modify other invites",
+            "Invitations are secure",
+            "Only sender can view",
+            "System validates token"
+        ]
+    },
+    {
+        "q": "How can SSRF abuse headless browser features?",
+        "o": [
+            "Navigate to internal URLs",
+            "Browsers validate URLs",
+            "Only external pages",
+            "Sandboxed completely"
+        ]
+    },
+    {
+        "q": "What is the security of plugin file uploads?",
+        "o": [
+            "Plugins execute arbitrary code",
+            "Plugins are sandboxed",
+            "Cannot affect system",
+            "Automatically reviewed"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits Django templates?",
+        "o": [
+            "Include arbitrary template files",
+            "Django sanitizes paths",
+            "Only app templates",
+            "Templates are static"
+        ]
+    },
+    {
+        "q": "What is IDOR in analytics dashboards?",
+        "o": [
+            "Access other users analytics",
+            "Analytics are aggregated",
+            "Only public metrics",
+            "System validates access"
+        ]
+    },
+    {
+        "q": "How does SSRF target internal MinIO storage?",
+        "o": [
+            "Access S3-compatible buckets",
+            "MinIO blocks SSRF",
+            "Only external access",
+            "Requires access keys"
+        ]
+    },
+    {
+        "q": "What is the security of database backup uploads?",
+        "o": [
+            "May restore malicious data",
+            "Backups are validated",
+            "Only affects storage",
+            "Automatically sanitized"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits Flask static files?",
+        "o": [
+            "Access files outside static folder",
+            "Flask prevents traversal",
+            "Only static content",
+            "Automatically sanitized"
+        ]
+    },
+    {
+        "q": "What is IDOR in review and rating systems?",
+        "o": [
+            "Modify other users reviews",
+            "Reviews are protected",
+            "Only view is allowed",
+            "System validates author"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal Kafka brokers?",
+        "o": [
+            "Produce and consume messages",
+            "Kafka blocks SSRF",
+            "Only external clients",
+            "Requires SASL auth"
+        ]
+    },
+    {
+        "q": "What is the security of log file uploads?",
+        "o": [
+            "May contain injected payloads",
+            "Logs are plain text only",
+            "Display only effect",
+            "Automatically sanitized"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits Express routes?",
+        "o": [
+            "Bypass route path validation",
+            "Express sanitizes routes",
+            "Only defined routes",
+            "Framework prevents"
+        ]
+    },
+    {
+        "q": "What is IDOR in message threading?",
+        "o": [
+            "Access other users threads",
+            "Threads are private",
+            "Only public messages",
+            "System validates membership"
+        ]
+    },
+    {
+        "q": "How does SSRF interact with internal CouchDB?",
+        "o": [
+            "Access and modify documents",
+            "CouchDB blocks SSRF",
+            "Only external requests",
+            "Requires authentication"
+        ]
+    },
+    {
+        "q": "What is the security of certificate file uploads?",
+        "o": [
+            "May compromise SSL trust",
+            "Certificates are verified",
+            "Only affects display",
+            "Automatically validated"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits Laravel storage?",
+        "o": [
+            "Access outside storage path",
+            "Laravel prevents traversal",
+            "Only storage allowed",
+            "Framework sanitizes"
+        ]
+    },
+    {
+        "q": "What is IDOR in export functionality?",
+        "o": [
+            "Export other users data",
+            "Exports are user-scoped",
+            "Only own data exported",
+            "System validates session"
+        ]
+    },
+    {
+        "q": "How can SSRF abuse proxy configuration features?",
+        "o": [
+            "Route through to internal nets",
+            "Proxies validate targets",
+            "Only external allowed",
+            "Configuration is limited"
+        ]
+    },
+    {
+        "q": "What is the security of code file uploads?",
+        "o": [
+            "Remote code execution risk",
+            "Code files are text only",
+            "Cannot be compiled",
+            "Automatically sandboxed"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits Rails assets?",
+        "o": [
+            "Access non-public assets",
+            "Rails prevents access",
+            "Only public assets",
+            "Pipeline sanitizes"
+        ]
+    },
+    {
+        "q": "What is IDOR in order management?",
+        "o": [
+            "Access other users orders",
+            "Orders are protected",
+            "Only own orders visible",
+            "System validates customer"
+        ]
+    },
+    {
+        "q": "How does SSRF target internal Zookeeper?",
+        "o": [
+            "Access configuration nodes",
+            "Zookeeper blocks SSRF",
+            "Only external clients",
+            "Requires auth always"
+        ]
+    },
+    {
+        "q": "What is the security of binary file uploads?",
+        "o": [
+            "May exploit parser vulns",
+            "Binaries are safe data",
+            "Cannot be executed",
+            "Automatically scanned"
+        ]
+    },
+    {
+        "q": "Which path traversal technique exploits PHP wrappers?",
+        "o": [
+            "Use filter to read source",
+            "Wrappers are disabled",
+            "Only file reading",
+            "PHP prevents access"
+        ]
+    },
+    {
+        "q": "How can chained SSRF and XXE vulnerabilities lead to complete system compromise?",
+        "o": [
+            "XXE fetches internal resources via SSRF",
+            "These vulnerabilities cannot be chained",
+            "Only one vulnerability can be exploited",
+            "Chaining reduces overall impact"
+        ]
+    },
+    {
+        "q": "What is the security implication of race conditions in file upload handling?",
+        "o": [
+            "Bypass validation during upload process",
+            "Race conditions improve security",
+            "File handling is always atomic",
+            "Only affects upload speed"
+        ]
+    },
+    {
+        "q": "How does path traversal interact with containerized application security?",
+        "o": [
+            "May escape container filesystem isolation",
+            "Containers prevent all traversal",
+            "Traversal is less impactful",
+            "Only affects container images"
+        ]
+    },
+    {
+        "q": "What is the impact of IDOR vulnerabilities on GDPR compliance?",
+        "o": [
+            "Unauthorized personal data access violations",
+            "GDPR does not cover IDOR issues",
+            "Only affects consent management",
+            "Compliance is automatically maintained"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal service mesh sidecar proxies?",
+        "o": [
+            "Bypass authentication through sidecars",
+            "Sidecars block all SSRF attempts",
+            "Only external traffic affected",
+            "Mesh prevents all attacks"
+        ]
+    },
+    {
+        "q": "What is the security risk of polyglot file uploads that are valid in multiple formats?",
+        "o": [
+            "Bypass format-specific security controls",
+            "Polyglot files are automatically detected",
+            "Multiple formats increase security",
+            "Only affects file rendering"
+        ]
+    },
+    {
+        "q": "How does path traversal exploitation differ in serverless environments?",
+        "o": [
+            "Access runtime secrets and configs",
+            "Serverless prevents all traversal",
+            "Same impact as traditional servers",
+            "Only affects cold start"
+        ]
+    },
+    {
+        "q": "What is multi-step IDOR exploitation in complex business logic?",
+        "o": [
+            "Chain multiple IDOR vulnerabilities",
+            "Single step is always sufficient",
+            "Complex logic prevents IDOR",
+            "Steps are independently validated"
+        ]
+    },
+    {
+        "q": "How can SSRF leverage internal API gateways for privilege escalation?",
+        "o": [
+            "Access backend services bypassing gateway auth",
+            "API gateways prevent all SSRF",
+            "Only frontend access affected",
+            "Gateway validates all requests"
+        ]
+    },
+    {
+        "q": "What is the impact of insecure deserialization in file upload contexts?",
+        "o": [
+            "Remote code execution through crafted objects",
+            "Deserialization is always safe in uploads",
+            "Only affects data integrity",
+            "Serialization prevents exploitation"
+        ]
+    },
+    {
+        "q": "How does path traversal interact with application sandboxing mechanisms?",
+        "o": [
+            "May reveal sandbox escape vectors",
+            "Sandboxes prevent all traversal",
+            "Traversal is contained always",
+            "Only affects sandbox config"
+        ]
+    },
+    {
+        "q": "What is IDOR exploitation in microservices architecture?",
+        "o": [
+            "Cross-service unauthorized data access",
+            "Microservices prevent IDOR",
+            "Only monolithic apps affected",
+            "Services validate independently"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal certificate authorities?",
+        "o": [
+            "Request rogue certificate issuance",
+            "CAs are never SSRF targets",
+            "Only external CAs affected",
+            "Certificates prevent SSRF"
+        ]
+    },
+    {
+        "q": "What is the security of WebSocket file transfers?",
+        "o": [
+            "Bypass traditional upload protections",
+            "WebSockets are inherently secure",
+            "Standard upload rules apply",
+            "Only affects real-time data"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit distributed file systems?",
+        "o": [
+            "Access files across multiple nodes",
+            "Distributed systems prevent traversal",
+            "Only local files affected",
+            "Replication blocks attacks"
+        ]
+    },
+    {
+        "q": "What is the relationship between IDOR and OAuth token scope abuse?",
+        "o": [
+            "Access resources beyond token scope",
+            "OAuth prevents all IDOR",
+            "Scope eliminates IDOR risk",
+            "Tokens validate resources"
+        ]
+    },
+    {
+        "q": "How can SSRF abuse cloud provider instance identity services?",
+        "o": [
+            "Assume roles for privilege escalation",
+            "Instance identity blocks SSRF",
+            "Only read-only access possible",
+            "Cloud prevents credential theft"
+        ]
+    },
+    {
+        "q": "What is file upload security in edge computing scenarios?",
+        "o": [
+            "Distributed validation challenges",
+            "Edge locations are more secure",
+            "Same as centralized security",
+            "Only affects latency"
+        ]
+    },
+    {
+        "q": "How does path traversal interact with symbolic link following configurations?",
+        "o": [
+            "Exploit symlink resolution for access",
+            "Symlink following is always disabled",
+            "Links prevent traversal",
+            "Configuration blocks attacks"
+        ]
+    },
+    {
+        "q": "What is blind IDOR vulnerability detection methodology?",
+        "o": [
+            "Timing and error-based detection",
+            "Blind IDOR cannot be detected",
+            "Only visible responses work",
+            "Detection requires data access"
+        ]
+    },
+    {
+        "q": "How can SSRF chain with SSTI for remote code execution?",
+        "o": [
+            "Fetch malicious template from internal source",
+            "SSRF and SSTI are incompatible",
+            "Only one vulnerability exploited",
+            "Chaining reduces impact"
+        ]
+    },
+    {
+        "q": "What is the security of chunked file upload implementations?",
+        "o": [
+            "Race conditions in chunk assembly",
+            "Chunking improves security",
+            "Same validation as regular uploads",
+            "Only affects large files"
+        ]
+    },
+    {
+        "q": "How does path traversal affect backup and disaster recovery systems?",
+        "o": [
+            "Access backup data and credentials",
+            "Backups are isolated from traversal",
+            "Only affects backup integrity",
+            "DR systems prevent access"
+        ]
+    },
+    {
+        "q": "What is IDOR in federated identity systems?",
+        "o": [
+            "Cross-organization data access",
+            "Federation prevents IDOR",
+            "Only local identities affected",
+            "Trust relationships validated"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal key management services?",
+        "o": [
+            "Extract or use cryptographic keys",
+            "KMS blocks all SSRF requests",
+            "Only read operations possible",
+            "Keys are hardware protected"
+        ]
+    },
+    {
+        "q": "What is the security of resumable file uploads?",
+        "o": [
+            "Resume token manipulation attacks",
+            "Resumable uploads are secure",
+            "Same security as standard uploads",
+            "Only affects user experience"
+        ]
+    },
+    {
+        "q": "How does path traversal interact with cgroup filesystem?",
+        "o": [
+            "Read container resource limits and info",
+            "Cgroups are not accessible",
+            "Only affects performance",
+            "Filesystem is protected"
+        ]
+    },
+    {
+        "q": "What is temporal IDOR exploitation?",
+        "o": [
+            "Exploit time-based access windows",
+            "Timing does not affect IDOR",
+            "Only persistent access works",
+            "Windows prevent exploitation"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal CI/CD pipeline services?",
+        "o": [
+            "Execute pipelines and access secrets",
+            "CI/CD systems block SSRF",
+            "Only external triggers work",
+            "Pipelines require authentication"
+        ]
+    },
+    {
+        "q": "What is the security of file upload via third-party storage integrations?",
+        "o": [
+            "Trust boundary and validation issues",
+            "Third-party storage is always secure",
+            "Same validation as local upload",
+            "Only affects availability"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit namespace filesystem isolation?",
+        "o": [
+            "Escape namespace boundaries via mounts",
+            "Namespaces prevent all traversal",
+            "Only affects container processes",
+            "Isolation is absolute"
+        ]
+    },
+    {
+        "q": "What is IDOR vulnerability in multi-tenant SaaS platforms?",
+        "o": [
+            "Cross-tenant data access breach",
+            "Multi-tenancy prevents IDOR",
+            "Only same-tenant access affected",
+            "Tenants are fully isolated"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal feature flag services?",
+        "o": [
+            "Modify feature flags for all users",
+            "Feature services block SSRF",
+            "Only read access possible",
+            "Flags are immutable"
+        ]
+    },
+    {
+        "q": "What is the security of streaming file uploads?",
+        "o": [
+            "Validation before complete upload",
+            "Streaming is inherently secure",
+            "Same as buffered uploads",
+            "Only affects performance"
+        ]
+    },
+    {
+        "q": "How does path traversal interact with overlay filesystems?",
+        "o": [
+            "Access underlying layer files",
+            "Overlays prevent traversal",
+            "Only top layer accessible",
+            "Layers are isolated"
+        ]
+    },
+    {
+        "q": "What is IDOR exploitation through GraphQL fragments?",
+        "o": [
+            "Hidden field access via fragments",
+            "Fragments prevent IDOR",
+            "Only queries are vulnerable",
+            "Schema validates access"
+        ]
+    },
+    {
+        "q": "How can SSRF chain with open redirect vulnerabilities?",
+        "o": [
+            "Redirect to internal networks",
+            "Redirects block SSRF chains",
+            "Only external redirects work",
+            "Validation prevents chaining"
+        ]
+    },
+    {
+        "q": "What is the security of browser-based file upload APIs?",
+        "o": [
+            "Client-side validation bypasses",
+            "Browser APIs are secure",
+            "Same as server validation",
+            "Only affects user experience"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit virtualization layer?",
+        "o": [
+            "Access hypervisor or host files",
+            "Virtualization prevents traversal",
+            "Only guest files affected",
+            "Hypervisor is protected"
+        ]
+    },
+    {
+        "q": "What is aggregate IDOR across multiple API endpoints?",
+        "o": [
+            "Combine data from multiple sources",
+            "Aggregation prevents IDOR",
+            "Only single endpoints affected",
+            "APIs validate independently"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal artifact repositories?",
+        "o": [
+            "Access or poison build artifacts",
+            "Repositories block SSRF",
+            "Only external downloads work",
+            "Artifacts are signed"
+        ]
+    },
+    {
+        "q": "What is the security of parallel file upload processing?",
+        "o": [
+            "Race conditions in validation",
+            "Parallel processing is safe",
+            "Sequential validation applied",
+            "Only affects throughput"
+        ]
+    },
+    {
+        "q": "How does path traversal interact with SELinux contexts?",
+        "o": [
+            "Bypass mandatory access controls",
+            "SELinux prevents all traversal",
+            "Contexts block file access",
+            "Only DAC applies"
+        ]
+    },
+    {
+        "q": "What is IDOR in event-driven architectures?",
+        "o": [
+            "Subscribe to unauthorized events",
+            "Event systems prevent IDOR",
+            "Only publishers affected",
+            "Events validate subscribers"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal secret rotation services?",
+        "o": [
+            "Access secrets during rotation",
+            "Rotation services block SSRF",
+            "Only old secrets accessible",
+            "Rotation prevents access"
+        ]
+    },
+    {
+        "q": "What is file upload sandbox escape via symlink creation?",
+        "o": [
+            "Create symlinks to sensitive paths",
+            "Sandboxes prevent symlink creation",
+            "Only affects uploaded files",
+            "Symlinks are validated"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit memory-mapped files?",
+        "o": [
+            "Access mapped file regions",
+            "Memory mapping prevents traversal",
+            "Only process memory affected",
+            "Mapping is protected"
+        ]
+    },
+    {
+        "q": "What is IDOR vulnerability in data pipeline systems?",
+        "o": [
+            "Access data from other pipelines",
+            "Pipelines are isolated",
+            "Only own data processed",
+            "System validates ownership"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal license management systems?",
+        "o": [
+            "Modify or bypass licensing",
+            "License systems block SSRF",
+            "Only read license info",
+            "Licenses are cryptographic"
+        ]
+    },
+    {
+        "q": "What is the security of file upload deduplication?",
+        "o": [
+            "Hash collision or timing attacks",
+            "Deduplication improves security",
+            "Same as unique file storage",
+            "Only affects storage space"
+        ]
+    },
+    {
+        "q": "How does path traversal interact with tmpfs filesystems?",
+        "o": [
+            "Access sensitive temporary data",
+            "Tmpfs is isolated from traversal",
+            "Only persistent files affected",
+            "Memory filesystem protected"
+        ]
+    },
+    {
+        "q": "What is IDOR in schema-less database contexts?",
+        "o": [
+            "Access documents via ID guessing",
+            "Schema-less prevents IDOR",
+            "Only structured data affected",
+            "Documents validate access"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal incident management systems?",
+        "o": [
+            "Access sensitive incident data",
+            "Incident systems block SSRF",
+            "Only public incidents visible",
+            "System requires authentication"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with custom protocols?",
+        "o": [
+            "Protocol-specific vulnerabilities",
+            "Custom protocols are secure",
+            "Same as standard HTTP upload",
+            "Only affects compatibility"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit NFS mount configurations?",
+        "o": [
+            "Access NFS-mounted directories",
+            "NFS mounts prevent traversal",
+            "Only local files affected",
+            "Mounts are protected"
+        ]
+    },
+    {
+        "q": "What is IDOR exploitation via nested resource relationships?",
+        "o": [
+            "Access through parent-child chains",
+            "Nesting prevents IDOR",
+            "Only root resources affected",
+            "Relationships are validated"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal API documentation endpoints?",
+        "o": [
+            "Discover internal API structures",
+            "Documentation endpoints are safe",
+            "Only public APIs exposed",
+            "Docs require authentication"
+        ]
+    },
+    {
+        "q": "What is the security of file upload content addressing?",
+        "o": [
+            "Content hash predictability attacks",
+            "Content addressing is secure",
+            "Same as name-based storage",
+            "Only affects deduplication"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit FUSE filesystems?",
+        "o": [
+            "Custom filesystem traversal paths",
+            "FUSE prevents all traversal",
+            "Only native filesystems affected",
+            "Custom handlers protected"
+        ]
+    },
+    {
+        "q": "What is IDOR in version control systems?",
+        "o": [
+            "Access other repositories or commits",
+            "VCS prevents all IDOR",
+            "Only public repos affected",
+            "Commits validate access"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal compliance scanning systems?",
+        "o": [
+            "Access compliance reports and findings",
+            "Compliance systems block SSRF",
+            "Only external scans work",
+            "Requires authorization"
+        ]
+    },
+    {
+        "q": "What is the security of asynchronous file upload validation?",
+        "o": [
+            "Time-of-check to time-of-use issues",
+            "Async validation is more secure",
+            "Same as synchronous validation",
+            "Only affects user experience"
+        ]
+    },
+    {
+        "q": "How does path traversal interact with AppArmor profiles?",
+        "o": [
+            "Profile bypass via traversal sequences",
+            "AppArmor prevents all traversal",
+            "Profiles block file access",
+            "Only DAC enforcement applies"
+        ]
+    },
+    {
+        "q": "What is IDOR vulnerability in notification preference systems?",
+        "o": [
+            "Modify other users notification settings",
+            "Preferences are fully protected",
+            "Only own settings accessible",
+            "System validates ownership"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal security scanning tools?",
+        "o": [
+            "Trigger scans or access findings",
+            "Security tools block SSRF",
+            "Only external scans available",
+            "Tools require credentials"
+        ]
+    },
+    {
+        "q": "What is the security of file upload in WebRTC data channels?",
+        "o": [
+            "Bypass server-side validation",
+            "WebRTC channels are secure",
+            "Same as HTTP uploads",
+            "Only affects real-time apps"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit bind mount configurations?",
+        "o": [
+            "Access bind-mounted sensitive paths",
+            "Bind mounts prevent traversal",
+            "Only container paths affected",
+            "Mounts are read-only"
+        ]
+    },
+    {
+        "q": "What is IDOR in webhook delivery systems?",
+        "o": [
+            "View other users webhook payloads",
+            "Webhook systems are isolated",
+            "Only own webhooks visible",
+            "Delivery validates endpoint"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal machine learning model endpoints?",
+        "o": [
+            "Access models and training data",
+            "ML endpoints block SSRF",
+            "Only inference API available",
+            "Models are encrypted"
+        ]
+    },
+    {
+        "q": "What is the security of signed URL file uploads?",
+        "o": [
+            "URL spoofing or replay attacks",
+            "Signed URLs are fully secure",
+            "Same as regular upload URLs",
+            "Only affects expiration"
+        ]
+    },
+    {
+        "q": "How does path traversal interact with union mount filesystems?",
+        "o": [
+            "Access files across mount layers",
+            "Union mounts prevent traversal",
+            "Only top layer accessible",
+            "Layers are isolated"
+        ]
+    },
+    {
+        "q": "What is IDOR vulnerability in audit trail systems?",
+        "o": [
+            "View other users audit entries",
+            "Audit systems are protected",
+            "Only own audit visible",
+            "Trails validate access"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal log aggregation systems?",
+        "o": [
+            "Access sensitive application logs",
+            "Log systems block SSRF",
+            "Only public logs visible",
+            "Aggregation requires auth"
+        ]
+    },
+    {
+        "q": "What is the security of file upload via gRPC streaming?",
+        "o": [
+            "Protocol-specific validation needs",
+            "gRPC is inherently secure",
+            "Same as HTTP streaming",
+            "Only affects RPC calls"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit debugfs filesystem?",
+        "o": [
+            "Access kernel debugging info",
+            "Debugfs is not accessible",
+            "Only affects debugging",
+            "Kernel prevents access"
+        ]
+    },
+    {
+        "q": "What is IDOR in content management systems?",
+        "o": [
+            "Access unpublished content",
+            "CMS prevents all IDOR",
+            "Only published content affected",
+            "System validates publishing"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal backup and snapshot services?",
+        "o": [
+            "Access backup data directly",
+            "Backup services block SSRF",
+            "Only restore API available",
+            "Snapshots are encrypted"
+        ]
+    },
+    {
+        "q": "What is the security of multipart file upload boundaries?",
+        "o": [
+            "Boundary manipulation attacks",
+            "Boundaries are always secure",
+            "Same as single-part uploads",
+            "Only affects parsing speed"
+        ]
+    },
+    {
+        "q": "How does path traversal interact with seccomp filters?",
+        "o": [
+            "Allowed syscalls may enable traversal",
+            "Seccomp prevents all traversal",
+            "Only specific calls affected",
+            "Filters block file access"
+        ]
+    },
+    {
+        "q": "What is IDOR vulnerability in API key management?",
+        "o": [
+            "Access or revoke other users keys",
+            "API keys are fully protected",
+            "Only own keys accessible",
+            "Management validates owner"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal distributed tracing systems?",
+        "o": [
+            "Access trace data and spans",
+            "Tracing systems block SSRF",
+            "Only own traces visible",
+            "Traces require authentication"
+        ]
+    },
+    {
+        "q": "What is the security of file upload virus scanning timing?",
+        "o": [
+            "Race between scan and access",
+            "Scanning is always synchronous",
+            "Same as no scanning",
+            "Only affects throughput"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit sysfs kernel interface?",
+        "o": [
+            "Read kernel and device info",
+            "Sysfs is protected from web",
+            "Only affects kernel debugging",
+            "Interface requires root"
+        ]
+    },
+    {
+        "q": "What is IDOR in SSO session management?",
+        "o": [
+            "Access other users SSO sessions",
+            "SSO prevents session IDOR",
+            "Only own sessions affected",
+            "Sessions validated centrally"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal database replica endpoints?",
+        "o": [
+            "Query replicas bypassing controls",
+            "Replicas block SSRF queries",
+            "Only primary accessible",
+            "Replication prevents access"
+        ]
+    },
+    {
+        "q": "What is the security of file upload in progressive web apps?",
+        "o": [
+            "Service worker caching issues",
+            "PWAs are inherently secure",
+            "Same as traditional uploads",
+            "Only affects offline mode"
+        ]
+    },
+    {
+        "q": "How does path traversal interact with Landlock security?",
+        "o": [
+            "Potential bypass of restrictions",
+            "Landlock prevents all traversal",
+            "Only affects sandboxed apps",
+            "Restrictions are absolute"
+        ]
+    },
+    {
+        "q": "What is IDOR vulnerability in two-factor authentication settings?",
+        "o": [
+            "Modify other users MFA config",
+            "MFA settings are protected",
+            "Only own MFA accessible",
+            "System validates identity"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal chaos engineering platforms?",
+        "o": [
+            "Trigger experiments on production",
+            "Chaos platforms block SSRF",
+            "Only test environments work",
+            "Experiments require approval"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with encryption at rest?",
+        "o": [
+            "Encryption key access concerns",
+            "Encryption prevents all attacks",
+            "Same as unencrypted storage",
+            "Only affects confidentiality"
+        ]
+    },
+    {
+        "q": "How can advanced SSRF exploitation leverage protocol smuggling through HTTP/2 connection coalescing?",
+        "o": [
+            "Bypass origin validation via connection reuse",
+            "HTTP/2 prevents all protocol smuggling",
+            "Coalescing improves SSRF protection",
+            "Only affects HTTP/1.1 connections"
+        ]
+    },
+    {
+        "q": "What is the security impact of file upload to object storage with signed URL pre-authentication?",
+        "o": [
+            "Signature replay and TOCTOU vulnerabilities",
+            "Pre-signed URLs are completely secure",
+            "Same security as authenticated uploads",
+            "Only affects URL expiration time"
+        ]
+    },
+    {
+        "q": "How does advanced path traversal exploitation leverage Unicode normalization differences across systems?",
+        "o": [
+            "NFC/NFD normalization creates bypass paths",
+            "Unicode normalization is standardized",
+            "Normalization prevents traversal attacks",
+            "Only affects display rendering"
+        ]
+    },
+    {
+        "q": "What is advanced IDOR exploitation through cryptographic oracle attacks on encrypted identifiers?",
+        "o": [
+            "Decrypt or forge identifiers via oracle",
+            "Encrypted IDs are unbreakable always",
+            "Oracles cannot be exploited for IDOR",
+            "Only affects key management systems"
+        ]
+    },
+    {
+        "q": "How can SSRF leverage internal eBPF observability systems for privilege escalation?",
+        "o": [
+            "Trigger or read eBPF program outputs",
+            "eBPF systems are isolated from SSRF",
+            "Only kernel-level access possible",
+            "Observability prevents exploitation"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with content-addressable storage and Merkle tree verification?",
+        "o": [
+            "Second preimage attacks on hash trees",
+            "Merkle trees prevent all tampering",
+            "Same security as name-based storage",
+            "Only affects deduplication logic"
+        ]
+    },
+    {
+        "q": "How does path traversal exploitation interact with copy-on-write filesystem semantics?",
+        "o": [
+            "Access snapshot or clone data versions",
+            "COW filesystems block all traversal",
+            "Only affects write operations",
+            "Semantics prevent data access"
+        ]
+    },
+    {
+        "q": "What is advanced IDOR through timing side-channel attacks on authorization decision caching?",
+        "o": [
+            "Infer access patterns from response timing",
+            "Caching eliminates timing differences",
+            "Authorization is timing-constant always",
+            "Only affects performance metrics"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal policy decision point services in zero-trust architectures?",
+        "o": [
+            "Bypass or manipulate access policies",
+            "Zero trust prevents all SSRF attacks",
+            "PDPs are isolated from application",
+            "Policies are cryptographically signed"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with homomorphic encryption processing?",
+        "o": [
+            "Computation on encrypted data risks",
+            "Homomorphic encryption is perfectly safe",
+            "Same as plaintext processing security",
+            "Only affects computational overhead"
+        ]
+    },
+    {
+        "q": "How does advanced path traversal exploit kernel keyring filesystem interfaces?",
+        "o": [
+            "Access cryptographic keys in keyring",
+            "Keyring is not filesystem accessible",
+            "Only affects kernel processes",
+            "Keys are hardware protected always"
+        ]
+    },
+    {
+        "q": "What is IDOR exploitation through GraphQL subscription connection hijacking?",
+        "o": [
+            "Intercept real-time data streams",
+            "Subscriptions validate connections",
+            "Only affects query operations",
+            "WebSocket prevents hijacking"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal hardware security module management interfaces?",
+        "o": [
+            "Perform key operations via HSM APIs",
+            "HSMs block all network SSRF",
+            "Only physical access works",
+            "Management requires mTLS always"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with trusted execution environment processing?",
+        "o": [
+            "Enclave side-channel attack risks",
+            "TEE processing is perfectly secure",
+            "Same as regular processing security",
+            "Only affects enclave attestation"
+        ]
+    },
+    {
+        "q": "How does path traversal interact with extended file attribute namespaces?",
+        "o": [
+            "Access security labels and metadata",
+            "Extended attributes are protected",
+            "Only affects file metadata display",
+            "Namespaces prevent attribute access"
+        ]
+    },
+    {
+        "q": "What is advanced IDOR through parameter pollution in nested object structures?",
+        "o": [
+            "Override nested authorization checks",
+            "Nested structures prevent pollution",
+            "Only flat parameters affected",
+            "Pollution is parsed deterministically"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal software-defined networking controllers?",
+        "o": [
+            "Manipulate network flow rules",
+            "SDN controllers block SSRF",
+            "Only affects network monitoring",
+            "Controllers require admin auth"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with blockchain-based integrity verification?",
+        "o": [
+            "Smart contract vulnerability exposure",
+            "Blockchain provides perfect integrity",
+            "Same as traditional hash verification",
+            "Only affects verification latency"
+        ]
+    },
+    {
+        "q": "How does advanced path traversal exploit btrfs subvolume hierarchies?",
+        "o": [
+            "Access across subvolume boundaries",
+            "Subvolumes isolate file access",
+            "Only affects snapshot operations",
+            "Btrfs prevents all traversal"
+        ]
+    },
+    {
+        "q": "What is IDOR exploitation through JWT claim manipulation in stateless architectures?",
+        "o": [
+            "Modify claims without signature check",
+            "JWT signatures prevent manipulation",
+            "Stateless apps are IDOR-immune",
+            "Claims are always validated"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal confidential computing attestation services?",
+        "o": [
+            "Forge or replay attestation reports",
+            "Attestation services block SSRF",
+            "Only affects enclave verification",
+            "Reports are cryptographically bound"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with differential privacy protections?",
+        "o": [
+            "Privacy budget attacks via uploads",
+            "Differential privacy is absolute",
+            "Same as no privacy protections",
+            "Only affects aggregate queries"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit overlayfs write layer semantics?",
+        "o": [
+            "Access or modify upper layer directly",
+            "Overlay layers are fully isolated",
+            "Only affects container images",
+            "Write layer is protected always"
+        ]
+    },
+    {
+        "q": "What is advanced IDOR through race conditions in eventual consistency systems?",
+        "o": [
+            "Access during consistency window",
+            "Eventual consistency prevents IDOR",
+            "Only affects write operations",
+            "Consistency is instantaneous"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal quantum key distribution systems?",
+        "o": [
+            "Intercept key negotiation metadata",
+            "QKD is completely SSRF-immune",
+            "Only affects quantum channels",
+            "Key distribution is isolated"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with secure multi-party computation?",
+        "o": [
+            "Protocol deviation attacks possible",
+            "MPC provides perfect security",
+            "Same as single-party processing",
+            "Only affects computation overhead"
+        ]
+    },
+    {
+        "q": "How does advanced path traversal exploit ZFS dataset hierarchies?",
+        "o": [
+            "Access across dataset boundaries",
+            "ZFS datasets are fully isolated",
+            "Only affects pool-level access",
+            "Datasets prevent all traversal"
+        ]
+    },
+    {
+        "q": "What is IDOR exploitation through transient execution side channels?",
+        "o": [
+            "Leak authorization decisions via cache",
+            "Transient execution is not exploitable",
+            "Only affects CPU performance",
+            "Side channels are mitigated always"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal identity governance and administration systems?",
+        "o": [
+            "Modify user access certifications",
+            "IGA systems block all SSRF",
+            "Only affects compliance reporting",
+            "Administration requires approval"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with post-quantum cryptographic signatures?",
+        "o": [
+            "Signature size and verification time",
+            "PQ crypto provides perfect security",
+            "Same as classical signatures",
+            "Only affects future threat models"
+        ]
+    },
+    {
+        "q": "How does path traversal interact with Linux user namespace filesystem mappings?",
+        "o": [
+            "Exploit UID mapping for file access",
+            "User namespaces prevent traversal",
+            "Only affects container rootless mode",
+            "Mappings are fully protected"
+        ]
+    },
+    {
+        "q": "What is advanced IDOR through memory corruption in authorization middleware?",
+        "o": [
+            "Bypass checks via memory exploits",
+            "Memory-safe middleware prevents this",
+            "Only affects native code paths",
+            "Authorization is always enforced"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal service account key rotation automation?",
+        "o": [
+            "Access keys during rotation window",
+            "Rotation prevents key exposure",
+            "Only affects old key revocation",
+            "Automation is fully protected"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with federated learning model updates?",
+        "o": [
+            "Model poisoning through uploads",
+            "Federated learning is tamper-proof",
+            "Same as centralized training",
+            "Only affects model accuracy"
+        ]
+    },
+    {
+        "q": "How does advanced path traversal exploit SPIFFE workload identity filesystem sockets?",
+        "o": [
+            "Access workload identity tokens",
+            "SPIFFE sockets are protected",
+            "Only affects service mesh auth",
+            "Identity is hardware-bound"
+        ]
+    },
+    {
+        "q": "What is IDOR exploitation through control flow integrity bypass in authorization engines?",
+        "o": [
+            "Hijack execution to skip checks",
+            "CFI prevents all such bypasses",
+            "Only affects interpreter paths",
+            "Authorization is control-flow safe"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal credentials vending machine services?",
+        "o": [
+            "Obtain credentials for any role",
+            "CVM services block all SSRF",
+            "Only affects credential refresh",
+            "Vending requires strong auth"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with verifiable computation proofs?",
+        "o": [
+            "Proof verification DoS and bypass",
+            "Verifiable computation is perfect",
+            "Same as unverified computation",
+            "Only affects proof generation"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit Linux capabilities filesystem interface?",
+        "o": [
+            "Read process capability sets",
+            "Capabilities are not file-exposed",
+            "Only affects privileged processes",
+            "Interface requires CAP_SYS_ADMIN"
+        ]
+    },
+    {
+        "q": "What is advanced IDOR through speculative store bypass attacks?",
+        "o": [
+            "Leak stale authorization values",
+            "Speculative execution is mitigated",
+            "Only affects SSB-vulnerable CPUs",
+            "Authorization uses constant paths"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal data loss prevention inspection engines?",
+        "o": [
+            "Trigger or bypass DLP rules",
+            "DLP engines block all SSRF",
+            "Only affects data classification",
+            "Inspection requires encryption"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with cryptographic watermarking?",
+        "o": [
+            "Watermark removal or forgery",
+            "Cryptographic watermarks permanent",
+            "Same as no watermarking security",
+            "Only affects attribution tracking"
+        ]
+    },
+    {
+        "q": "How does advanced path traversal exploit io_uring submission queue buffer access?",
+        "o": [
+            "Access kernel-mapped file buffers",
+            "io_uring prevents buffer access",
+            "Only affects async I/O performance",
+            "Submission queue is protected"
+        ]
+    },
+    {
+        "q": "What is IDOR exploitation through RowHammer-induced bit flips in authorization data?",
+        "o": [
+            "Flip permission bits in memory",
+            "RowHammer is fully mitigated",
+            "Only affects ECC-less systems",
+            "Authorization uses secure memory"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal workload identity federation services?",
+        "o": [
+            "Request tokens for external systems",
+            "Federation services block SSRF",
+            "Only affects identity exchange",
+            "Tokens are audience-restricted"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with steganographic content detection?",
+        "o": [
+            "Detection bypass via novel methods",
+            "Stego detection is comprehensive",
+            "Same as no detection security",
+            "Only affects hidden data finding"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit Linux pid namespace proc filesystem exposure?",
+        "o": [
+            "Access host process information",
+            "PID namespaces isolate proc access",
+            "Only affects container visibility",
+            "Proc is namespace-isolated always"
+        ]
+    },
+    {
+        "q": "What is advanced IDOR through concurrent request race on lazy permission evaluation?",
+        "o": [
+            "Access before permission computed",
+            "Lazy evaluation prevents races",
+            "Only affects first request time",
+            "Permissions are always eager"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal cloud infrastructure terraform state backends?",
+        "o": [
+            "Access secrets in state files",
+            "State backends block SSRF",
+            "Only affects infrastructure plans",
+            "State is encrypted at rest"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with neural network-based malware detection?",
+        "o": [
+            "Adversarial evasion of ML models",
+            "Neural detection is foolproof",
+            "Same as signature-based detection",
+            "Only affects detection accuracy"
+        ]
+    },
+    {
+        "q": "How does advanced path traversal exploit cgroup v2 unified hierarchy filesystem?",
+        "o": [
+            "Read process resource controls",
+            "Cgroup v2 is protected from web",
+            "Only affects resource limits",
+            "Hierarchy prevents traversal"
+        ]
+    },
+    {
+        "q": "What is IDOR exploitation through ASLR bypass in authorization checking code?",
+        "o": [
+            "Defeat randomization for exploit",
+            "ASLR prevents all such attacks",
+            "Only affects 32-bit systems",
+            "Authorization uses ASLR-safe paths"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal privileged access management vault systems?",
+        "o": [
+            "Check out privileged credentials",
+            "PAM vaults block all SSRF",
+            "Only affects session recording",
+            "Checkout requires approval"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with format-preserving encryption?",
+        "o": [
+            "Small domain attacks on FPE",
+            "FPE provides perfect security",
+            "Same as standard encryption",
+            "Only affects format compatibility"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit Linux net namespace virtual filesystem interfaces?",
+        "o": [
+            "Access network configuration data",
+            "Net namespaces isolate filesystem",
+            "Only affects routing tables",
+            "Interface is protected always"
+        ]
+    },
+    {
+        "q": "What is advanced IDOR through hardware accelerator shared memory exposure?",
+        "o": [
+            "Access other tenant GPU memory",
+            "Accelerators are tenant-isolated",
+            "Only affects processing speed",
+            "Shared memory is protected"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal security orchestration and automation platforms?",
+        "o": [
+            "Trigger incident response playbooks",
+            "SOAR platforms block all SSRF",
+            "Only affects alert correlation",
+            "Playbooks require authentication"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with threshold cryptography protection?",
+        "o": [
+            "Threshold parameter manipulation",
+            "Threshold crypto is unbreakable",
+            "Same as standard crypto security",
+            "Only affects key management"
+        ]
+    },
+    {
+        "q": "How does advanced path traversal exploit Linux mount namespace isolation boundaries?",
+        "o": [
+            "Escape mount namespace via exploits",
+            "Mount namespaces are absolute",
+            "Only affects container mounts",
+            "Isolation prevents all escapes"
+        ]
+    },
+    {
+        "q": "What is IDOR exploitation through JIT compilation cache poisoning?",
+        "o": [
+            "Inject malicious compiled code",
+            "JIT caches are process-isolated",
+            "Only affects interpreter speed",
+            "Caches are integrity-protected"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal AI model governance and registries?",
+        "o": [
+            "Access or modify model artifacts",
+            "Model registries block SSRF",
+            "Only affects model discovery",
+            "Artifacts are signed always"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with attribute-based encryption?",
+        "o": [
+            "Attribute collusion attacks",
+            "ABE provides perfect security",
+            "Same as identity-based encryption",
+            "Only affects policy complexity"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit Linux IPC namespace shared memory segments?",
+        "o": [
+            "Access cross-namespace shared memory",
+            "IPC namespaces isolate segments",
+            "Only affects POSIX IPC objects",
+            "Shared memory is protected"
+        ]
+    },
+    {
+        "q": "What is advanced IDOR through fault injection in authorization hardware?",
+        "o": [
+            "Glitch security checks via voltage",
+            "Hardware is glitch-resistant",
+            "Only affects embedded systems",
+            "Authorization uses redundancy"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal cloud cost management and billing APIs?",
+        "o": [
+            "Access billing data or modify quotas",
+            "Billing APIs block all SSRF",
+            "Only affects cost reporting",
+            "APIs require billing admin role"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with zero-knowledge proof verification?",
+        "o": [
+            "Proof malleability attacks",
+            "ZK proofs are perfectly sound",
+            "Same as standard verification",
+            "Only affects proof size"
+        ]
+    },
+    {
+        "q": "How does advanced path traversal exploit dbus activation service directories?",
+        "o": [
+            "Access or hijack service activation",
+            "DBus directories are protected",
+            "Only affects desktop sessions",
+            "Activation is permission-checked"
+        ]
+    },
+    {
+        "q": "What is IDOR exploitation through microarchitectural covert channels?",
+        "o": [
+            "Leak authorization via cache timing",
+            "Microarch channels are mitigated",
+            "Only affects shared hardware",
+            "Authorization uses secure paths"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal certificate transparency log servers?",
+        "o": [
+            "Submit or query unauthorized certs",
+            "CT logs block all SSRF attacks",
+            "Only affects certificate logging",
+            "Logs are append-only verified"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with searchable symmetric encryption?",
+        "o": [
+            "Query pattern leakage attacks",
+            "SSE provides perfect privacy",
+            "Same as plaintext search security",
+            "Only affects search efficiency"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit systemd private tmp directory semantics?",
+        "o": [
+            "Access service private directories",
+            "Private tmp is fully isolated",
+            "Only affects unit configuration",
+            "Systemd prevents all access"
+        ]
+    },
+    {
+        "q": "What is advanced IDOR through electromagnetic emanation analysis?",
+        "o": [
+            "Infer authorization from EM signals",
+            "EM shielding prevents analysis",
+            "Only affects high-security systems",
+            "Authorization is EM-safe"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal cloud function event source mappings?",
+        "o": [
+            "Trigger functions via event sources",
+            "Event mappings block SSRF",
+            "Only affects trigger configuration",
+            "Functions validate all events"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with functional encryption primitives?",
+        "o": [
+            "Function key extraction attacks",
+            "Functional encryption is secure",
+            "Same as standard encryption",
+            "Only affects decryption policy"
+        ]
+    },
+    {
+        "q": "How does advanced path traversal exploit polkit authorization filesystem rules?",
+        "o": [
+            "Access or modify policy files",
+            "Polkit rules are protected",
+            "Only affects desktop authorization",
+            "Filesystem prevents modification"
+        ]
+    },
+    {
+        "q": "What is IDOR exploitation through DRAM rowhammer in cloud multi-tenancy?",
+        "o": [
+            "Flip permission bits across VMs",
+            "Cloud hypervisors mitigate this",
+            "Only affects same physical host",
+            "Multi-tenancy uses ECC memory"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal security token service federations?",
+        "o": [
+            "Request tokens for federated realms",
+            "STS federations block SSRF",
+            "Only affects token exchange",
+            "Federation validates all requests"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with oblivious RAM access patterns?",
+        "o": [
+            "ORAM traffic analysis attacks",
+            "ORAM provides perfect privacy",
+            "Same as standard access patterns",
+            "Only affects memory overhead"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit Linux securityfs LSM interface files?",
+        "o": [
+            "Read security module state data",
+            "Securityfs requires privileges",
+            "Only affects LSM debugging",
+            "Interface is protected always"
+        ]
+    },
+    {
+        "q": "What is advanced IDOR through power analysis side channels?",
+        "o": [
+            "Infer authorization from power use",
+            "Power analysis is not practical",
+            "Only affects physical access",
+            "Authorization uses constant power"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal code signing and notarization services?",
+        "o": [
+            "Sign malicious code artifacts",
+            "Signing services block SSRF",
+            "Only affects build pipelines",
+            "Signing requires identity proof"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with proxy re-encryption schemes?",
+        "o": [
+            "Re-encryption key compromise",
+            "PRE provides perfect security",
+            "Same as direct encryption",
+            "Only affects delegation model"
+        ]
+    },
+    {
+        "q": "How does advanced path traversal exploit Linux audit subsystem filesystem?",
+        "o": [
+            "Read audit rules or disable logging",
+            "Audit filesystem requires CAP_AUDIT",
+            "Only affects audit configuration",
+            "Subsystem is fully protected"
+        ]
+    },
+    {
+        "q": "What is IDOR exploitation through cold boot attacks on authorization state?",
+        "o": [
+            "Extract permission data from RAM",
+            "Cold boot is not practical",
+            "Only affects physical access",
+            "Authorization uses encrypted RAM"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal container image signing and verification?",
+        "o": [
+            "Bypass signature verification",
+            "Image signing blocks SSRF",
+            "Only affects registry pulls",
+            "Verification is client-side"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with garbled circuit computation?",
+        "o": [
+            "Circuit reuse vulnerabilities",
+            "Garbled circuits are secure",
+            "Same as plaintext computation",
+            "Only affects circuit size"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit Linux perf event subsystem interfaces?",
+        "o": [
+            "Read performance counter data",
+            "Perf interfaces require privileges",
+            "Only affects profiling operations",
+            "Subsystem is access-controlled"
+        ]
+    },
+    {
+        "q": "What is advanced IDOR through acoustic side channel analysis?",
+        "o": [
+            "Infer auth from processor sounds",
+            "Acoustic analysis is impractical",
+            "Only affects open environments",
+            "Authorization is acoustically safe"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal supply chain security scanning pipelines?",
+        "o": [
+            "Poison scan results or dependencies",
+            "Scanning pipelines block SSRF",
+            "Only affects vulnerability detection",
+            "Results are cryptographically signed"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with ring signature anonymity?",
+        "o": [
+            "Ring member deanonymization",
+            "Ring signatures are anonymous",
+            "Same as standard signatures",
+            "Only affects signer privacy"
+        ]
+    },
+    {
+        "q": "How does advanced path traversal exploit bpf filesystem program objects?",
+        "o": [
+            "Access or modify eBPF programs",
+            "BPF filesystem is protected",
+            "Only affects tracing programs",
+            "Programs are permission-checked"
+        ]
+    },
+    {
+        "q": "What is IDOR exploitation through cache timing attacks on permission lookups?",
+        "o": [
+            "Infer other users permissions",
+            "Caches use constant-time lookups",
+            "Only affects shared cache systems",
+            "Lookups are timing-safe always"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal observability and OpenTelemetry collectors?",
+        "o": [
+            "Inject malicious telemetry data",
+            "Collectors block all SSRF",
+            "Only affects trace aggregation",
+            "Telemetry is authenticated"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with identity-based encryption?",
+        "o": [
+            "Key escrow and revocation risks",
+            "IBE provides perfect security",
+            "Same as certificate-based PKI",
+            "Only affects key distribution"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit Linux tracefs debugfs tracing interfaces?",
+        "o": [
+            "Access kernel trace data",
+            "Tracefs requires CAP_SYS_ADMIN",
+            "Only affects debugging output",
+            "Tracing is fully protected"
+        ]
+    },
+    {
+        "q": "What is advanced IDOR through bus contention covert channels?",
+        "o": [
+            "Leak authorization via bus timing",
+            "Bus contention is not exploitable",
+            "Only affects shared bus systems",
+            "Authorization uses dedicated paths"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal cloud workload protection platforms?",
+        "o": [
+            "Disable protection or access alerts",
+            "CWPP blocks all SSRF attacks",
+            "Only affects policy enforcement",
+            "Protection requires admin access"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with broadcast encryption schemes?",
+        "o": [
+            "Collusion attacks on revocation",
+            "Broadcast encryption is secure",
+            "Same as unicast encryption",
+            "Only affects group management"
+        ]
+    },
+    {
+        "q": "How does advanced path traversal exploit Linux cpuset cgroup interfaces?",
+        "o": [
+            "Read CPU and memory assignments",
+            "Cpuset is access-controlled",
+            "Only affects resource scheduling",
+            "Cgroups prevent all access"
+        ]
+    },
+    {
+        "q": "What is IDOR exploitation through NUMA topology information leakage?",
+        "o": [
+            "Infer co-location from NUMA data",
+            "NUMA info is not sensitive",
+            "Only affects performance tuning",
+            "Topology is protected information"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal security information and event management systems?",
+        "o": [
+            "Access or modify security events",
+            "SIEM systems block all SSRF",
+            "Only affects log ingestion",
+            "Events require authentication"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with secret sharing schemes?",
+        "o": [
+            "Threshold recovery poisoning",
+            "Secret sharing is perfectly secure",
+            "Same as single-holder security",
+            "Only affects share distribution"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit Linux fscrypt encryption directories?",
+        "o": [
+            "Access encrypted directory metadata",
+            "Fscrypt prevents all data access",
+            "Only affects encrypted content",
+            "Metadata is fully protected"
+        ]
+    },
+    {
+        "q": "What is advanced IDOR through GPU shared memory tenant isolation bypass?",
+        "o": [
+            "Access other tenant GPU buffers",
+            "GPU isolation is hardware-enforced",
+            "Only affects multi-tenant GPUs",
+            "Shared memory is protected"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal cloud resource tagging and metadata services?",
+        "o": [
+            "Modify resource tags for access",
+            "Tagging services block SSRF",
+            "Only affects resource discovery",
+            "Tags require IAM permissions"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with deniable encryption?",
+        "o": [
+            "Plausible deniability attacks",
+            "Deniable encryption is secure",
+            "Same as standard encryption",
+            "Only affects key revelation"
+        ]
+    },
+    {
+        "q": "How does SSRF exploitation differ when targeting IPv6 internal networks?",
+        "o": [
+            "IPv6 addresses bypass many filters",
+            "IPv6 blocks all SSRF attempts",
+            "Same protection as IPv4",
+            "Only affects external networks"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with client-side encryption keys?",
+        "o": [
+            "Key extraction from client app",
+            "Client keys are fully secure",
+            "Same as server-side encryption",
+            "Only affects key management"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit Windows Junction Points?",
+        "o": [
+            "Redirect paths to sensitive dirs",
+            "Junction Points are protected",
+            "Only affects NTFS volumes",
+            "Windows blocks all junctions"
+        ]
+    },
+    {
+        "q": "What is IDOR vulnerability in password reset flows?",
+        "o": [
+            "Reset other users passwords",
+            "Reset flows are fully secure",
+            "Only affects own account",
+            "Tokens prevent all IDOR"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal Kubernetes API servers?",
+        "o": [
+            "Access cluster secrets and configs",
+            "K8s API blocks all SSRF",
+            "Only external access works",
+            "API requires service account"
+        ]
+    },
+    {
+        "q": "What is the security of file upload size validation bypass?",
+        "o": [
+            "Chunked uploads bypass limits",
+            "Size limits are absolute",
+            "Same as content validation",
+            "Only affects storage space"
+        ]
+    },
+    {
+        "q": "How does path traversal interact with URL percent encoding?",
+        "o": [
+            "Double encoding bypasses filters",
+            "Percent encoding is normalized",
+            "Only single decode occurs",
+            "Encoding prevents traversal"
+        ]
+    },
+    {
+        "q": "What is IDOR in API versioning endpoints?",
+        "o": [
+            "Access deprecated API versions",
+            "Versioning prevents IDOR",
+            "Only current version affected",
+            "APIs validate all versions"
+        ]
+    },
+    {
+        "q": "How can SSRF leverage DNS rebinding with short TTL?",
+        "o": [
+            "Redirect to internal after check",
+            "DNS caching prevents rebinding",
+            "Only affects slow requests",
+            "Rebinding is always detected"
+        ]
+    },
+    {
+        "q": "What is the security of file upload filename sanitization?",
+        "o": [
+            "Bypass via special characters",
+            "Sanitization is complete",
+            "Only affects display name",
+            "Filenames are always safe"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit URL fragments?",
+        "o": [
+            "Server-side fragment processing",
+            "Fragments are client-side only",
+            "Only affects anchors display",
+            "Servers ignore all fragments"
+        ]
+    },
+    {
+        "q": "What is IDOR in soft delete functionality?",
+        "o": [
+            "Access deleted users data",
+            "Soft delete prevents access",
+            "Only affects admin views",
+            "Deletion removes all access"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal Redis clusters?",
+        "o": [
+            "Execute commands via protocol",
+            "Redis blocks SSRF attempts",
+            "Only read operations work",
+            "Requires authentication always"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with magic byte validation only?",
+        "o": [
+            "Polyglot files bypass check",
+            "Magic bytes are definitive",
+            "Same as extension validation",
+            "Only affects file type display"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit query string parameters?",
+        "o": [
+            "Inject path in URL params",
+            "Query strings are data only",
+            "Only affects search functions",
+            "Parameters are sanitized"
+        ]
+    },
+    {
+        "q": "What is IDOR in rate limiting implementations?",
+        "o": [
+            "Bypass rate limits via user ID",
+            "Rate limits are global always",
+            "Only affects own user limits",
+            "System validates all limits"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal mail servers?",
+        "o": [
+            "Send emails via SMTP protocol",
+            "Mail servers block SSRF",
+            "Only external SMTP works",
+            "Requires SMTP credentials"
+        ]
+    },
+    {
+        "q": "What is the security of file upload to public cloud buckets?",
+        "o": [
+            "Bucket misconfiguration access",
+            "Cloud buckets are secure",
+            "Same as private storage",
+            "Only affects availability"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit null byte injection?",
+        "o": [
+            "Truncate path after injection",
+            "Null bytes are filtered",
+            "Only affects C-based apps",
+            "Modern systems prevent null"
+        ]
+    },
+    {
+        "q": "What is IDOR in caching layer implementations?",
+        "o": [
+            "Access cached user data",
+            "Caches are user-isolated",
+            "Only public data cached",
+            "System validates cache keys"
+        ]
+    },
+    {
+        "q": "How can SSRF exploit internal Docker socket?",
+        "o": [
+            "Execute container commands",
+            "Docker socket is protected",
+            "Only read operations work",
+            "Socket requires authentication"
+        ]
+    },
+    {
+        "q": "What is the security of file upload with antivirus scanning?",
+        "o": [
+            "Evasion via obfuscation",
+            "AV catches everything",
+            "Same as no scanning",
+            "Only known malware detected"
+        ]
+    },
+    {
+        "q": "How does path traversal exploit base64 encoded paths?",
+        "o": [
+            "Encode traversal sequences",
+            "Base64 is always decoded",
+            "Only affects encoded data",
+            "Decoding prevents traversal"
+        ]
+    },
+    {
+        "q": "What is IDOR in data export functionality?",
+        "o": [
+            "Export other users data",
+            "Exports are user-scoped",
+            "Only own data exportable",
+            "System validates ownership"
+        ]
+    },
+    {
+        "q": "How can SSRF target internal monitoring endpoints?",
+        "o": [
+            "Access health and metrics data",
+            "Monitoring blocks SSRF",
+            "Only public metrics visible",
+            "Endpoints require auth"
+        ]
+    }
+]

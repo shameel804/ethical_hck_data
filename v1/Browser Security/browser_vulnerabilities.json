@@ -1,0 +1,4547 @@
+[
+    {
+        "q": "What is the primary purpose of the Same-Origin Policy in web browsers?",
+        "o": [
+            "Prevent scripts from one origin accessing data from another",
+            "Speed up website loading by caching content across domains",
+            "Allow all websites to share authentication cookies freely",
+            "Enable browsers to download resources from any server"
+        ]
+    },
+    {
+        "q": "Which three components define an origin in browser security?",
+        "o": [
+            "Protocol, host, and port",
+            "Username, password, path",
+            "Domain, subdomain, TLD",
+            "Cookie, session, token"
+        ]
+    },
+    {
+        "q": "What does CORS stand for in web security?",
+        "o": [
+            "Cross-Origin Resource Sharing",
+            "Cookie Origin Request System",
+            "Central Origin Response Service",
+            "Content Origin Restriction Standard"
+        ]
+    },
+    {
+        "q": "Which HTTP header is used to specify allowed origins in CORS?",
+        "o": [
+            "Access-Control-Allow-Origin",
+            "X-Frame-Options-Allow",
+            "Content-Security-Policy",
+            "Origin-Permission-Grant"
+        ]
+    },
+    {
+        "q": "What does CSP stand for in browser security?",
+        "o": [
+            "Content Security Policy",
+            "Cookie Session Protocol",
+            "Cross Site Protection",
+            "Central Server Policy"
+        ]
+    },
+    {
+        "q": "Which browser storage mechanism stores data that persists after browser closure?",
+        "o": [
+            "localStorage",
+            "sessionStorage",
+            "Memory cache only",
+            "Tab-specific storage"
+        ]
+    },
+    {
+        "q": "What type of storage is automatically cleared when a browser tab is closed?",
+        "o": [
+            "sessionStorage",
+            "localStorage",
+            "IndexedDB database",
+            "Web SQL database"
+        ]
+    },
+    {
+        "q": "What is the main function of Web Workers in browsers?",
+        "o": [
+            "Run JavaScript in background threads",
+            "Store encrypted data on the server",
+            "Manage cookie permissions for sites",
+            "Render complex 3D graphics on pages"
+        ]
+    },
+    {
+        "q": "Can Web Workers directly access the DOM of a webpage?",
+        "o": [
+            "No, they cannot access DOM directly",
+            "Yes, they have full DOM access",
+            "Only for reading DOM elements",
+            "Only when using jQuery library"
+        ]
+    },
+    {
+        "q": "Which value allows any origin to access a resource in CORS?",
+        "o": [
+            "Asterisk wildcard character",
+            "The string literal allow-all",
+            "Empty access control header",
+            "Setting header value to true"
+        ]
+    },
+    {
+        "q": "What is the default behavior of browsers when no CORS headers are present?",
+        "o": [
+            "Block cross-origin requests from scripts",
+            "Allow all requests from any origin",
+            "Prompt the user for each request",
+            "Log warnings but allow request"
+        ]
+    },
+    {
+        "q": "Which CSP directive controls where scripts can be loaded from?",
+        "o": [
+            "script-src",
+            "style-src",
+            "img-src",
+            "font-src"
+        ]
+    },
+    {
+        "q": "What is the maximum storage limit for localStorage in most browsers?",
+        "o": [
+            "Around 5 to 10 megabytes",
+            "Unlimited storage space",
+            "Only 100 kilobytes",
+            "Exactly 1 gigabyte"
+        ]
+    },
+    {
+        "q": "How do Web Workers communicate with the main thread?",
+        "o": [
+            "Through message passing with postMessage",
+            "By directly writing to shared variables",
+            "Using synchronous function calls only",
+            "Through global window object access"
+        ]
+    },
+    {
+        "q": "Which HTTP method triggers a CORS preflight request?",
+        "o": [
+            "PUT and DELETE requests",
+            "GET requests only",
+            "HEAD requests only",
+            "All HTTP requests"
+        ]
+    },
+    {
+        "q": "What type of request does the browser send before actual CORS request?",
+        "o": [
+            "OPTIONS preflight request",
+            "HEAD verification request",
+            "TRACE diagnostic request",
+            "CONNECT tunnel request"
+        ]
+    },
+    {
+        "q": "Which CSP keyword allows inline scripts to execute?",
+        "o": [
+            "unsafe-inline",
+            "allow-inline",
+            "script-inline",
+            "inline-allowed"
+        ]
+    },
+    {
+        "q": "What is IndexedDB used for in browser storage?",
+        "o": [
+            "Store large amounts of structured data",
+            "Only store small text cookies",
+            "Cache images temporarily in memory",
+            "Encrypt passwords on the server"
+        ]
+    },
+    {
+        "q": "Which type of Web Worker can be shared between multiple scripts?",
+        "o": [
+            "SharedWorker",
+            "DedicatedWorker",
+            "ServiceWorker",
+            "BackgroundWorker"
+        ]
+    },
+    {
+        "q": "What happens when a script violates the Same-Origin Policy?",
+        "o": [
+            "The browser blocks the request",
+            "The server returns an error",
+            "The script runs with warnings",
+            "The page automatically refreshes"
+        ]
+    },
+    {
+        "q": "Which header indicates how long CORS preflight results can be cached?",
+        "o": [
+            "Access-Control-Max-Age",
+            "Cache-Control-CORS",
+            "Preflight-Cache-Time",
+            "CORS-Cache-Duration"
+        ]
+    },
+    {
+        "q": "What does the CSP default-src directive specify?",
+        "o": [
+            "Fallback policy for unspecified directives",
+            "Only the default homepage URL source",
+            "The server default configuration",
+            "Browser default security settings"
+        ]
+    },
+    {
+        "q": "Which storage mechanism is best for offline web applications?",
+        "o": [
+            "Service Worker with Cache API",
+            "Only using session cookies",
+            "Relying on server-side storage",
+            "Using memory variables only"
+        ]
+    },
+    {
+        "q": "What security concern exists with localStorage data?",
+        "o": [
+            "Data is accessible via XSS attacks",
+            "Data is always encrypted by default",
+            "Data is shared between all domains",
+            "Data cannot be read by JavaScript"
+        ]
+    },
+    {
+        "q": "Which method terminates a Web Worker?",
+        "o": [
+            "worker.terminate()",
+            "worker.stop()",
+            "worker.kill()",
+            "worker.end()"
+        ]
+    },
+    {
+        "q": "What is the purpose of the CORS credentials flag?",
+        "o": [
+            "Include cookies in cross-origin requests",
+            "Encrypt the request body content",
+            "Verify server SSL certificate",
+            "Authenticate the browser itself"
+        ]
+    },
+    {
+        "q": "Which CSP directive restricts form action targets?",
+        "o": [
+            "form-action",
+            "submit-src",
+            "action-policy",
+            "form-target"
+        ]
+    },
+    {
+        "q": "How is sessionStorage scoped in browsers?",
+        "o": [
+            "Per tab and per origin",
+            "Shared across all browser tabs",
+            "Across all browser windows",
+            "Only per browser session"
+        ]
+    },
+    {
+        "q": "What is a Dedicated Worker in browser context?",
+        "o": [
+            "Worker linked to single script context",
+            "Worker shared between multiple pages",
+            "Worker that runs on the server",
+            "Worker for database operations only"
+        ]
+    },
+    {
+        "q": "Can images be loaded cross-origin without CORS?",
+        "o": [
+            "Yes, but tainted canvas restrictions apply",
+            "No, all cross-origin loads are blocked",
+            "Yes, with full access to pixel data",
+            "Only from whitelisted CDN servers"
+        ]
+    },
+    {
+        "q": "What does Access-Control-Allow-Methods header specify?",
+        "o": [
+            "Allowed HTTP methods for CORS requests",
+            "Authentication methods the server uses",
+            "Encryption methods for data transfer",
+            "Compression methods for responses"
+        ]
+    },
+    {
+        "q": "Which CSP directive controls frame embedding?",
+        "o": [
+            "frame-ancestors",
+            "iframe-policy",
+            "embed-control",
+            "frame-source"
+        ]
+    },
+    {
+        "q": "What data type can localStorage store natively?",
+        "o": [
+            "Only string values",
+            "Any JavaScript object",
+            "Binary data directly",
+            "Arrays and functions"
+        ]
+    },
+    {
+        "q": "Which API allows Service Workers to intercept network requests?",
+        "o": [
+            "Fetch API with event listeners",
+            "XMLHttpRequest only",
+            "WebSocket connections",
+            "Direct TCP socket access"
+        ]
+    },
+    {
+        "q": "What is considered a same-origin request?",
+        "o": [
+            "Same protocol, host, and port match",
+            "Same domain name only matters",
+            "Same path prefix is sufficient",
+            "Same TLD makes it same origin"
+        ]
+    },
+    {
+        "q": "Which header lists allowed headers in CORS requests?",
+        "o": [
+            "Access-Control-Allow-Headers",
+            "Allowed-Request-Headers",
+            "CORS-Header-Whitelist",
+            "Request-Headers-Allowed"
+        ]
+    },
+    {
+        "q": "What is the CSP report-uri directive used for?",
+        "o": [
+            "Specify URL to receive violation reports",
+            "Report browser version to server",
+            "Log all user interactions on page",
+            "Send error messages to developers"
+        ]
+    },
+    {
+        "q": "Which method clears all localStorage data for an origin?",
+        "o": [
+            "localStorage.clear()",
+            "localStorage.deleteAll()",
+            "localStorage.removeAll()",
+            "localStorage.empty()"
+        ]
+    },
+    {
+        "q": "What is the primary use case for Service Workers?",
+        "o": [
+            "Enable offline functionality and caching",
+            "Run intensive calculations on pages",
+            "Manage user authentication tokens",
+            "Handle database write operations"
+        ]
+    },
+    {
+        "q": "Which port difference creates a cross-origin situation?",
+        "o": [
+            "Any port number difference",
+            "Only ports below 1024",
+            "Ports differ by more than 100",
+            "Port differences are ignored"
+        ]
+    },
+    {
+        "q": "What does Access-Control-Expose-Headers control?",
+        "o": [
+            "Which response headers scripts can access",
+            "Which request headers are encrypted",
+            "Headers visible in browser console",
+            "Headers that bypass security checks"
+        ]
+    },
+    {
+        "q": "Which CSP source value restricts to same origin only?",
+        "o": [
+            "self keyword in quotes",
+            "origin keyword in policy",
+            "same directive value",
+            "local source value"
+        ]
+    },
+    {
+        "q": "How do you store objects in localStorage?",
+        "o": [
+            "Convert to JSON string first",
+            "Store directly without conversion",
+            "Use special object methods",
+            "Objects cannot be stored"
+        ]
+    },
+    {
+        "q": "What lifecycle event indicates Service Worker is active?",
+        "o": [
+            "activate event fires",
+            "start event triggers",
+            "ready event occurs",
+            "begin event dispatches"
+        ]
+    },
+    {
+        "q": "Does changing protocol from HTTP to HTTPS create cross-origin?",
+        "o": [
+            "Yes, protocol is part of origin",
+            "No, only domain matters for origin",
+            "Only if port also changes",
+            "Depends on browser settings"
+        ]
+    },
+    {
+        "q": "What is a simple CORS request?",
+        "o": [
+            "GET, HEAD, POST with specific headers",
+            "Any request without authentication",
+            "Requests under 1KB in size",
+            "All requests to same TLD sites"
+        ]
+    },
+    {
+        "q": "Which CSP directive prevents mixed content?",
+        "o": [
+            "upgrade-insecure-requests",
+            "block-mixed-content",
+            "secure-only-mode",
+            "https-required"
+        ]
+    },
+    {
+        "q": "What event is triggered when localStorage changes?",
+        "o": [
+            "storage event on window object",
+            "change event on localStorage",
+            "update event on document",
+            "modify event on storage"
+        ]
+    },
+    {
+        "q": "How do Service Workers handle HTTPS requirement?",
+        "o": [
+            "Required except on localhost",
+            "HTTPS is optional for workers",
+            "Only needed for production",
+            "HTTP works with all workers"
+        ]
+    },
+    {
+        "q": "What is the null origin used for?",
+        "o": [
+            "Sandboxed iframes and data URLs",
+            "Representing the root domain",
+            "Anonymous server requests",
+            "Default origin when unspecified"
+        ]
+    },
+    {
+        "q": "Which CORS header allows credentials with wildcard origin?",
+        "o": [
+            "Not allowed, must specify origin",
+            "Access-Control-With-Credentials",
+            "Allow-Credentials-Wildcard",
+            "Credentials-Any-Origin"
+        ]
+    },
+    {
+        "q": "What does the CSP sandbox directive do?",
+        "o": [
+            "Apply sandbox restrictions to page",
+            "Create a testing environment",
+            "Isolate third-party scripts",
+            "Encrypt all page content"
+        ]
+    },
+    {
+        "q": "What is the difference between sessionStorage and cookies?",
+        "o": [
+            "sessionStorage not sent to server",
+            "Cookies have larger storage limit",
+            "sessionStorage works cross-domain",
+            "Cookies cannot store text data"
+        ]
+    },
+    {
+        "q": "What scope does a Service Worker control?",
+        "o": [
+            "All pages under its registration path",
+            "Only the exact page that registered it",
+            "All pages in the entire domain",
+            "Just the HTML file that includes it"
+        ]
+    },
+    {
+        "q": "Are subdomains considered same origin as parent domain?",
+        "o": [
+            "No, subdomains are different origins",
+            "Yes, all subdomains share origin",
+            "Only for first-level subdomains",
+            "Depends on cookie settings"
+        ]
+    },
+    {
+        "q": "What triggers a CORS preflight request?",
+        "o": [
+            "Custom headers or non-simple methods",
+            "All cross-origin POST requests",
+            "Requests larger than 1 megabyte",
+            "Any request with authentication"
+        ]
+    },
+    {
+        "q": "Which CSP directive controls object and embed elements?",
+        "o": [
+            "object-src",
+            "embed-policy",
+            "plugin-src",
+            "object-policy"
+        ]
+    },
+    {
+        "q": "What happens to localStorage when browser cache is cleared?",
+        "o": [
+            "Data may be cleared depending on browser",
+            "Data is never affected by cache clear",
+            "Only expired data is removed",
+            "Data is automatically backed up"
+        ]
+    },
+    {
+        "q": "How does a Service Worker update itself?",
+        "o": [
+            "Browser checks for new version periodically",
+            "User must manually update the worker",
+            "Updates happen instantly on page load",
+            "Workers cannot be updated once installed"
+        ]
+    },
+    {
+        "q": "What is opaque response in Fetch API?",
+        "o": [
+            "Cross-origin response without CORS",
+            "Encrypted response from server",
+            "Response with hidden status code",
+            "Compressed binary response data"
+        ]
+    },
+    {
+        "q": "Can CORS allow requests from specific domains only?",
+        "o": [
+            "Yes, specify exact origin in header",
+            "No, only wildcard is supported",
+            "Only IP addresses can be specified",
+            "Domains must be registered first"
+        ]
+    },
+    {
+        "q": "What does CSP nonce attribute provide?",
+        "o": [
+            "One-time token for inline scripts",
+            "Random encryption key for data",
+            "Session identifier for tracking",
+            "Cache invalidation timestamp"
+        ]
+    },
+    {
+        "q": "Which storage has synchronous API access?",
+        "o": [
+            "localStorage and sessionStorage",
+            "Only IndexedDB database",
+            "Cache API operations",
+            "Service Worker storage"
+        ]
+    },
+    {
+        "q": "What is the waiting state in Service Worker lifecycle?",
+        "o": [
+            "New worker ready but old is active",
+            "Worker downloading from server",
+            "Worker processing background tasks",
+            "Worker initializing its cache"
+        ]
+    },
+    {
+        "q": "Which browser feature enforces Same-Origin Policy?",
+        "o": [
+            "Browser security sandbox",
+            "Operating system firewall",
+            "Network router settings",
+            "Antivirus software"
+        ]
+    },
+    {
+        "q": "What is the purpose of CORS simple requests?",
+        "o": [
+            "Skip preflight for common scenarios",
+            "Simplify server configuration",
+            "Reduce network bandwidth usage",
+            "Improve browser performance"
+        ]
+    },
+    {
+        "q": "Which CSP keyword allows eval function?",
+        "o": [
+            "unsafe-eval",
+            "allow-eval",
+            "eval-enabled",
+            "script-eval"
+        ]
+    },
+    {
+        "q": "Can IndexedDB store binary data directly?",
+        "o": [
+            "Yes, Blobs and ArrayBuffers",
+            "No, only JSON string data",
+            "Only base64 encoded text",
+            "Binary requires conversion first"
+        ]
+    },
+    {
+        "q": "What is the install event in Service Workers?",
+        "o": [
+            "First event when worker is registered",
+            "Event when user installs PWA",
+            "Notification for app updates",
+            "System installation completion"
+        ]
+    },
+    {
+        "q": "How does document.domain affect origin checks?",
+        "o": [
+            "Can relax origin to parent domain",
+            "Completely disables origin checks",
+            "Has no effect on modern browsers",
+            "Only works for localhost testing"
+        ]
+    },
+    {
+        "q": "What does CORS stand for in full?",
+        "o": [
+            "Cross-Origin Resource Sharing",
+            "Cookie Origin Request Security",
+            "Content Origin Restriction System",
+            "Central Origin Response Sharing"
+        ]
+    },
+    {
+        "q": "Which CSP directive controls web font loading?",
+        "o": [
+            "font-src",
+            "style-src",
+            "media-src",
+            "text-src"
+        ]
+    },
+    {
+        "q": "What is the storage quota for IndexedDB?",
+        "o": [
+            "Dynamic based on available disk space",
+            "Fixed at 50 megabytes per origin",
+            "Unlimited with no restrictions",
+            "Same as localStorage limit"
+        ]
+    },
+    {
+        "q": "How do Dedicated Workers handle errors?",
+        "o": [
+            "Error event on worker object",
+            "Errors crash the main thread",
+            "Errors are silently ignored",
+            "Console warning only displayed"
+        ]
+    },
+    {
+        "q": "What is a tainted canvas?",
+        "o": [
+            "Canvas with cross-origin image data",
+            "Canvas with corrupted pixel data",
+            "Canvas exceeding memory limits",
+            "Canvas with invalid dimensions"
+        ]
+    },
+    {
+        "q": "Which header exposes custom headers to JavaScript?",
+        "o": [
+            "Access-Control-Expose-Headers",
+            "Custom-Header-Access",
+            "Header-Visibility-Control",
+            "Script-Header-Access"
+        ]
+    },
+    {
+        "q": "What does CSP strict-dynamic keyword do?",
+        "o": [
+            "Allow scripts loaded by trusted scripts",
+            "Enable strict mode for all scripts",
+            "Block all dynamically loaded content",
+            "Enforce dynamic type checking"
+        ]
+    },
+    {
+        "q": "How is Web Storage different from cookies?",
+        "o": [
+            "Not automatically sent with requests",
+            "Smaller storage capacity than cookies",
+            "Cannot be accessed by JavaScript code",
+            "Only works on secure HTTPS pages"
+        ]
+    },
+    {
+        "q": "What is the fetch event in Service Workers?",
+        "o": [
+            "Intercepts network requests from page",
+            "Retrieves worker configuration data",
+            "Downloads worker script updates",
+            "Notifies when resources are cached"
+        ]
+    },
+    {
+        "q": "Can JavaScript read cross-origin iframe content?",
+        "o": [
+            "No, blocked by Same-Origin Policy",
+            "Yes, with any valid script access",
+            "Only if iframe has no content",
+            "Depends on browser version used"
+        ]
+    },
+    {
+        "q": "What is the purpose of preflight caching?",
+        "o": [
+            "Reduce repeated OPTIONS requests",
+            "Store preflight request results",
+            "Cache the actual response data",
+            "Improve CORS security checks"
+        ]
+    },
+    {
+        "q": "Which CSP directive restricts image sources?",
+        "o": [
+            "img-src",
+            "image-policy",
+            "media-src",
+            "graphic-src"
+        ]
+    },
+    {
+        "q": "What is the key-value limit for localStorage items?",
+        "o": [
+            "Around 5MB total per origin",
+            "100KB per individual key only",
+            "No limit on individual items",
+            "1MB per key-value pair max"
+        ]
+    },
+    {
+        "q": "Can Service Workers run when browser is closed?",
+        "o": [
+            "Yes, for push and background sync",
+            "No, they always require open tab",
+            "Only on mobile devices support",
+            "Depends on operating system used"
+        ]
+    },
+    {
+        "q": "What origin does about:blank have?",
+        "o": [
+            "Inherits origin from parent context",
+            "Has its own unique null origin",
+            "Matches browser default origin",
+            "No origin concept applies here"
+        ]
+    },
+    {
+        "q": "Which CORS scenario requires credentials setting?",
+        "o": [
+            "Sending cookies cross-origin",
+            "All cross-origin POST requests",
+            "Requests with custom headers",
+            "Any authenticated API calls"
+        ]
+    },
+    {
+        "q": "What is CSP report-only mode used for?",
+        "o": [
+            "Test policy without blocking content",
+            "Only report errors to console",
+            "Limit reporting to specific URLs",
+            "Enable read-only CSP headers"
+        ]
+    },
+    {
+        "q": "Which operation is async in IndexedDB?",
+        "o": [
+            "All database operations are async",
+            "Only write operations are async",
+            "Only read operations are async",
+            "All operations are synchronous"
+        ]
+    },
+    {
+        "q": "What is SharedWorker used for?",
+        "o": [
+            "Share worker between browser tabs",
+            "Share data between different origins",
+            "Share memory between all workers",
+            "Share code between web workers"
+        ]
+    },
+    {
+        "q": "Can postMessage be used cross-origin?",
+        "o": [
+            "Yes, with proper origin validation",
+            "No, blocked by Same-Origin Policy",
+            "Only for same-domain subdomains",
+            "Requires server-side proxy setup"
+        ]
+    },
+    {
+        "q": "What does CORS protect against?",
+        "o": [
+            "Unauthorized cross-origin data access",
+            "SQL injection attacks on server",
+            "Cross-site scripting vulnerabilities",
+            "Malware downloads from websites"
+        ]
+    },
+    {
+        "q": "Which CSP directive controls worker sources?",
+        "o": [
+            "worker-src",
+            "script-src",
+            "thread-src",
+            "process-src"
+        ]
+    },
+    {
+        "q": "How to check if localStorage is available?",
+        "o": [
+            "Try-catch accessing window.localStorage",
+            "Check navigator.storage property",
+            "Call localStorage.isAvailable method",
+            "Test document.storage object"
+        ]
+    },
+    {
+        "q": "What triggers Service Worker update check?",
+        "o": [
+            "Navigation to page under scope",
+            "Only manual developer action",
+            "Every browser restart event",
+            "Periodic timer set by browser"
+        ]
+    },
+    {
+        "q": "Does file:// protocol have origin restrictions?",
+        "o": [
+            "Yes, each file is unique origin",
+            "No, all local files share origin",
+            "Only in private browsing mode",
+            "Depends on file extension type"
+        ]
+    },
+    {
+        "q": "What is the vary header used for in CORS?",
+        "o": [
+            "Indicate response varies by origin",
+            "Vary the CORS policy applied",
+            "Change preflight requirements",
+            "Modify credential handling rules"
+        ]
+    },
+    {
+        "q": "Which attack exploits misconfigured CORS headers?",
+        "o": [
+            "Cross-origin data theft attacks",
+            "SQL injection vulnerabilities",
+            "Buffer overflow exploits",
+            "Denial of service attack"
+        ]
+    },
+    {
+        "q": "What is the security risk of using CORS wildcard with credentials?",
+        "o": [
+            "Browser blocks the request entirely",
+            "Credentials sent to all domains",
+            "Server crashes due to overload",
+            "Cookies are permanently deleted"
+        ]
+    },
+    {
+        "q": "How can CSP be bypassed using JSONP endpoints?",
+        "o": [
+            "JSONP callbacks can execute arbitrary code",
+            "JSONP bypasses all browser security checks",
+            "JSONP encrypts malicious payloads",
+            "JSONP disables Same-Origin Policy"
+        ]
+    },
+    {
+        "q": "Which web storage API provides transactional operations?",
+        "o": [
+            "IndexedDB with object stores",
+            "localStorage with JSON",
+            "sessionStorage objects",
+            "Cookie storage manager"
+        ]
+    },
+    {
+        "q": "What security risk exists when Web Workers import scripts?",
+        "o": [
+            "Imported scripts can execute malicious code",
+            "Workers gain elevated system privileges",
+            "Scripts bypass HTTPS requirements",
+            "Memory corruption occurs automatically"
+        ]
+    },
+    {
+        "q": "How does relaxed document.domain affect security?",
+        "o": [
+            "Allows subdomain communication but has risks",
+            "Completely secures cross-domain requests",
+            "Encrypts all communication automatically",
+            "Prevents any cross-origin access"
+        ]
+    },
+    {
+        "q": "What is the purpose of Access-Control-Request-Method header?",
+        "o": [
+            "Specify method in preflight request",
+            "Define server response format",
+            "Set authentication requirements",
+            "Configure request timeout value"
+        ]
+    },
+    {
+        "q": "Which CSP directive should block base tag hijacking?",
+        "o": [
+            "base-uri directive setting",
+            "script-src strict mode",
+            "frame-ancestors list",
+            "form-action target"
+        ]
+    },
+    {
+        "q": "What happens when IndexedDB storage quota is exceeded?",
+        "o": [
+            "QuotaExceededError is thrown",
+            "Old data is automatically deleted",
+            "Browser crashes immediately",
+            "Data is compressed silently"
+        ]
+    },
+    {
+        "q": "How do Service Workers handle POST request caching?",
+        "o": [
+            "Requires manual cache implementation",
+            "POST requests cached automatically",
+            "Cannot cache any POST requests",
+            "Browser handles POST caching"
+        ]
+    },
+    {
+        "q": "What is origin inheritance in iframes?",
+        "o": [
+            "Sandboxed iframes inherit unique null origin",
+            "All iframes share parent page origin",
+            "Origin is determined by server headers",
+            "Iframes never inherit any origin value"
+        ]
+    },
+    {
+        "q": "Which CORS misconfiguration reflects origin in response?",
+        "o": [
+            "Dynamically reflecting Origin header value",
+            "Setting wildcard in allow origin",
+            "Allowing all HTTP methods listed",
+            "Exposing all response headers fully"
+        ]
+    },
+    {
+        "q": "What does CSP require-sri-for directive enforce?",
+        "o": [
+            "Subresource integrity for scripts and styles",
+            "Strict referrer policy on all links",
+            "SSL requirement for all requests",
+            "Same origin for iframe sources"
+        ]
+    },
+    {
+        "q": "How can localStorage be exploited in XSS attacks?",
+        "o": [
+            "Attacker reads sensitive stored data",
+            "localStorage encrypts XSS payloads",
+            "Stored data executes automatically",
+            "XSS cannot access localStorage"
+        ]
+    },
+    {
+        "q": "What is the difference between Dedicated and Shared Workers?",
+        "o": [
+            "Dedicated serves one page, Shared multiple",
+            "Dedicated runs faster than Shared",
+            "Shared has DOM access, Dedicated does not",
+            "Only Dedicated supports messaging"
+        ]
+    },
+    {
+        "q": "Can window.postMessage leak data cross-origin?",
+        "o": [
+            "Yes, without proper origin validation",
+            "No, postMessage is always secure",
+            "Only when using wildcards allowed",
+            "Data is encrypted automatically"
+        ]
+    },
+    {
+        "q": "What is the Access-Control-Request-Headers purpose?",
+        "o": [
+            "List custom headers in preflight",
+            "Define required response headers",
+            "Set cookie handling preferences",
+            "Specify content encoding type"
+        ]
+    },
+    {
+        "q": "Which CSP bypass uses whitelisted CDN domains?",
+        "o": [
+            "Loading malicious scripts from allowed CDNs",
+            "CDNs automatically bypass all CSP rules",
+            "CSP cannot whitelist CDN domains",
+            "CDNs encrypt bypass attempts"
+        ]
+    },
+    {
+        "q": "What is cursor scope in IndexedDB?",
+        "o": [
+            "Iterator for traversing object store data",
+            "Position of database write pointer",
+            "Limit on concurrent transactions open",
+            "Boundary of index key range"
+        ]
+    },
+    {
+        "q": "How do Service Workers prevent man-in-the-middle attacks?",
+        "o": [
+            "HTTPS requirement secures communication",
+            "Workers encrypt all data automatically",
+            "Browsers detect MITM and block workers",
+            "Service Workers cannot prevent MITM"
+        ]
+    },
+    {
+        "q": "What is the security implication of blob URLs?",
+        "o": [
+            "Inherit origin of creating context",
+            "Blob URLs have no origin restriction",
+            "Always treated as cross-origin resource",
+            "Blob data is publicly accessible"
+        ]
+    },
+    {
+        "q": "Which CORS header prevents caching of preflight?",
+        "o": [
+            "Setting max-age to zero seconds",
+            "Omitting cache control headers",
+            "Using no-store directive value",
+            "Adding private cache header"
+        ]
+    },
+    {
+        "q": "What does CSP navigate-to directive control?",
+        "o": [
+            "Restrict navigation destination URLs",
+            "Control iframe navigation only",
+            "Set redirect chain limits",
+            "Define allowed form targets"
+        ]
+    },
+    {
+        "q": "How can sessionStorage persist data unexpectedly?",
+        "o": [
+            "Duplicate tab inherits storage copy",
+            "Browser caches session data forever",
+            "Data syncs to cloud storage",
+            "Extensions backup session data"
+        ]
+    },
+    {
+        "q": "What is the message event origin property used for?",
+        "o": [
+            "Verify sender origin of message",
+            "Set allowed destination origins",
+            "Define message encoding format",
+            "Specify response timeout value"
+        ]
+    },
+    {
+        "q": "Which origin check is case-sensitive?",
+        "o": [
+            "None, origins are case-insensitive",
+            "Protocol comparison only is case-sensitive",
+            "Domain name matching is case-sensitive",
+            "Port number requires exact match"
+        ]
+    },
+    {
+        "q": "What is the Timing-Allow-Origin header for?",
+        "o": [
+            "Allow cross-origin resource timing access",
+            "Set request timeout for CORS calls",
+            "Control response timing behavior",
+            "Specify allowed request timestamps"
+        ]
+    },
+    {
+        "q": "How does CSP hash validation work?",
+        "o": [
+            "Compare script content hash with policy",
+            "Hash all network requests for security",
+            "Encrypt CSP headers with hash function",
+            "Create hash of allowed origins"
+        ]
+    },
+    {
+        "q": "What is the difference between keyPath and autoIncrement in IndexedDB?",
+        "o": [
+            "keyPath uses object property, autoIncrement generates keys",
+            "keyPath for reading, autoIncrement for writing",
+            "keyPath is faster than autoIncrement method",
+            "autoIncrement requires manual key management"
+        ]
+    },
+    {
+        "q": "Can Service Workers access synchronous APIs?",
+        "o": [
+            "No, only asynchronous APIs available",
+            "Yes, all browser APIs accessible",
+            "Only synchronous localStorage access",
+            "Sync APIs with special permission"
+        ]
+    },
+    {
+        "q": "What is scheme-host-port tuple in origin?",
+        "o": [
+            "The three components defining an origin",
+            "A tuple for encoding URL parameters",
+            "Database key format for storage",
+            "Network socket identifier format"
+        ]
+    },
+    {
+        "q": "Which response indicates CORS is not configured?",
+        "o": [
+            "Missing Access-Control-Allow-Origin header",
+            "HTTP 403 Forbidden status code returned",
+            "Response body contains error message",
+            "Content-Type set to text/plain"
+        ]
+    },
+    {
+        "q": "What is the plugin-types CSP directive for?",
+        "o": [
+            "Restrict MIME types for plugins",
+            "List allowed plugin install sources",
+            "Define plugin permission levels",
+            "Configure plugin loading timeout"
+        ]
+    },
+    {
+        "q": "How does storage event enable cross-tab communication?",
+        "o": [
+            "Fires in other tabs when storage changes",
+            "Broadcasts message to all browser tabs",
+            "Synchronizes data across all tabs",
+            "Creates shared memory between tabs"
+        ]
+    },
+    {
+        "q": "What is importScripts used for in Web Workers?",
+        "o": [
+            "Synchronously load external scripts",
+            "Import ES6 modules into worker",
+            "Copy main thread scripts to worker",
+            "Download scripts for offline use"
+        ]
+    },
+    {
+        "q": "Can data URLs be used to bypass Same-Origin Policy?",
+        "o": [
+            "Data URLs have null origin, limits apply",
+            "Data URLs bypass all origin checks",
+            "Data URLs share parent page origin",
+            "Browser blocks all data URL access"
+        ]
+    },
+    {
+        "q": "What does withCredentials property control in XMLHttpRequest?",
+        "o": [
+            "Include cookies in cross-origin request",
+            "Add HTTP authentication headers",
+            "Encrypt request body content",
+            "Validate server SSL certificate"
+        ]
+    },
+    {
+        "q": "Which CSP source allows data URLs?",
+        "o": [
+            "data: source value in policy",
+            "inline keyword in directive",
+            "blob: source specification",
+            "url: source value setting"
+        ]
+    },
+    {
+        "q": "What is the version number used for in IndexedDB?",
+        "o": [
+            "Trigger upgradeneeded event for schema changes",
+            "Track number of database accesses",
+            "Limit concurrent database connections",
+            "Set expiration date for stored data"
+        ]
+    },
+    {
+        "q": "How do clients.claim() work in Service Workers?",
+        "o": [
+            "Take control of uncontrolled clients immediately",
+            "Claim exclusive rights to network requests",
+            "Request elevated permissions from browser",
+            "Claim storage quota for caching data"
+        ]
+    },
+    {
+        "q": "What security risk exists with overly permissive frame-ancestors?",
+        "o": [
+            "Page can be embedded for clickjacking",
+            "Frames gain access to parent data",
+            "Memory consumption increases sharply",
+            "Network requests become slower"
+        ]
+    },
+    {
+        "q": "Can browsers prefetch cross-origin resources?",
+        "o": [
+            "Yes, but CORS rules still apply",
+            "No, prefetch is same-origin only",
+            "Only images can be prefetched",
+            "Prefetch bypasses all security"
+        ]
+    },
+    {
+        "q": "What is the block-all-mixed-content CSP directive?",
+        "o": [
+            "Block all HTTP resources on HTTPS page",
+            "Block content from unknown origins",
+            "Prevent script and style mixing",
+            "Block all third-party content"
+        ]
+    },
+    {
+        "q": "How is localStorage vulnerable to prototype pollution?",
+        "o": [
+            "JSON parse of stored data can pollute prototype",
+            "localStorage modifies Object prototype directly",
+            "Prototype pollution cannot affect localStorage",
+            "Browser protects against all pollution"
+        ]
+    },
+    {
+        "q": "What is the purpose of Worker.onerror handler?",
+        "o": [
+            "Catch uncaught exceptions in worker",
+            "Handle network request failures",
+            "Process syntax errors in worker script",
+            "Manage worker termination events"
+        ]
+    },
+    {
+        "q": "Why is document.domain deprecated?",
+        "o": [
+            "Security risks from relaxing origin",
+            "Performance overhead is too high",
+            "Incompatible with modern browsers",
+            "Replaced by postMessage method"
+        ]
+    },
+    {
+        "q": "What is the credentials mode 'include' in Fetch?",
+        "o": [
+            "Send cookies for both same and cross-origin",
+            "Include only HTTP authentication headers",
+            "Add API keys to request headers",
+            "Include request body in preflight"
+        ]
+    },
+    {
+        "q": "How does CSP frame-src differ from child-src?",
+        "o": [
+            "frame-src for frames, child-src deprecated",
+            "frame-src allows more resources than child-src",
+            "child-src stricter than frame-src directive",
+            "Both are identical in functionality"
+        ]
+    },
+    {
+        "q": "What is the IDBKeyRange interface for?",
+        "o": [
+            "Define range of keys for queries",
+            "Limit number of stored key pairs",
+            "Set encryption key boundaries",
+            "Configure key generation range"
+        ]
+    },
+    {
+        "q": "Can Service Workers intercept WebSocket connections?",
+        "o": [
+            "No, WebSocket not intercepted by fetch",
+            "Yes, all connections go through worker",
+            "Only the initial handshake is intercepted",
+            "WebSocket uses different worker type"
+        ]
+    },
+    {
+        "q": "What is cross-origin opener policy header for?",
+        "o": [
+            "Control window.opener access cross-origin",
+            "Set cookie sharing between origins",
+            "Define allowed popup opener origins",
+            "Configure frame opening permissions"
+        ]
+    },
+    {
+        "q": "Which attack targets reflected CORS origin?",
+        "o": [
+            "Origin reflection for credential theft",
+            "Injection of malicious CORS headers",
+            "Denial of service through preflight",
+            "Cache poisoning of CORS responses"
+        ]
+    },
+    {
+        "q": "What is the manifest-src CSP directive?",
+        "o": [
+            "Control web app manifest sources",
+            "Set allowed script manifest files",
+            "Define cache manifest locations",
+            "Configure service worker manifests"
+        ]
+    },
+    {
+        "q": "How can Web Storage be cleared by users?",
+        "o": [
+            "Through browser settings or dev tools",
+            "Only by website JavaScript code",
+            "Automatic expiration after set time",
+            "Cannot be cleared once stored"
+        ]
+    },
+    {
+        "q": "What is the onconnect event in SharedWorker?",
+        "o": [
+            "Fires when new port connects to worker",
+            "Triggered on network connection change",
+            "Called when worker script loads",
+            "Occurs on database connection open"
+        ]
+    },
+    {
+        "q": "Can SVG images execute JavaScript cross-origin?",
+        "o": [
+            "Only when loaded as document, not image",
+            "SVG scripts always execute regardless",
+            "JavaScript in SVG is always blocked",
+            "Depends on server MIME type setting"
+        ]
+    },
+    {
+        "q": "What is the purpose of Sec-Fetch-Mode header?",
+        "o": [
+            "Indicate request mode to server",
+            "Set secure fetch encryption level",
+            "Define response format preference",
+            "Configure request timeout value"
+        ]
+    },
+    {
+        "q": "How does style-src nonce work in CSP?",
+        "o": [
+            "Match nonce attribute on style elements",
+            "Generate random style transformations",
+            "Encrypt stylesheet contents",
+            "Create unique style identifiers"
+        ]
+    },
+    {
+        "q": "What is the transaction mode in IndexedDB?",
+        "o": [
+            "Specify read, write, or version change",
+            "Define transaction isolation level",
+            "Set transaction timeout duration",
+            "Configure rollback behavior"
+        ]
+    },
+    {
+        "q": "How do skipWaiting work in Service Workers?",
+        "o": [
+            "Activate new worker immediately",
+            "Skip install phase entirely",
+            "Bypass HTTPS requirement check",
+            "Skip cache validation steps"
+        ]
+    },
+    {
+        "q": "What is cross-origin embedder policy?",
+        "o": [
+            "Require CORP or CORS for subresources",
+            "Configure iframe embedding rules",
+            "Set popup window permissions",
+            "Define plugin embedding policy"
+        ]
+    },
+    {
+        "q": "Which vulnerability affects misconfigured CORS null origin?",
+        "o": [
+            "Sandboxed iframes can exploit null trust",
+            "Null origin has highest privilege level",
+            "All requests treated as same origin",
+            "Browser ignores null origin value"
+        ]
+    },
+    {
+        "q": "What does CSP trusted-types directive prevent?",
+        "o": [
+            "DOM XSS through type enforcement",
+            "Trusted certificate validation bypass",
+            "Type confusion in JavaScript code",
+            "Trusted third-party script loading"
+        ]
+    },
+    {
+        "q": "How does localStorage handle concurrent access?",
+        "o": [
+            "Synchronous API prevents race conditions",
+            "Locking mechanism for concurrent writes",
+            "Last write wins conflict resolution",
+            "Queues all storage operations"
+        ]
+    },
+    {
+        "q": "What is the port property in SharedWorker MessagePort?",
+        "o": [
+            "Communication channel with the worker",
+            "Network port for worker requests",
+            "Port number for WebSocket connection",
+            "Identifier for multiple workers"
+        ]
+    },
+    {
+        "q": "Can cross-origin scripts access error details?",
+        "o": [
+            "No, only generic error with CORS",
+            "Yes, full stack trace available",
+            "Only error message is accessible",
+            "Depends on browser vendor policy"
+        ]
+    },
+    {
+        "q": "What is the Sec-Fetch-Site header value for subdomains?",
+        "o": [
+            "same-site for subdomain requests",
+            "cross-site for all subdomains",
+            "same-origin for subdomain calls",
+            "none for subdomain resources"
+        ]
+    },
+    {
+        "q": "How can connect-src CSP be bypassed?",
+        "o": [
+            "Using allowed WebSocket endpoints",
+            "Disabling browser security settings",
+            "Encoding request in image URL",
+            "Through DNS rebinding attack"
+        ]
+    },
+    {
+        "q": "What is objectStore in IndexedDB?",
+        "o": [
+            "Container for storing records",
+            "Serialization format for objects",
+            "Index on object properties",
+            "Transaction log for changes"
+        ]
+    },
+    {
+        "q": "How does navigator.serviceWorker.ready work?",
+        "o": [
+            "Returns promise when worker is active",
+            "Checks if worker is ready for install",
+            "Waits for worker script to download",
+            "Signals when cache is populated"
+        ]
+    },
+    {
+        "q": "What is cross-origin resource policy header?",
+        "o": [
+            "Restrict which origins can load resource",
+            "Set CORS policy for all resources",
+            "Define resource caching behavior",
+            "Configure resource compression"
+        ]
+    },
+    {
+        "q": "Which attack exploits permissive Access-Control-Allow-Origin?",
+        "o": [
+            "Cross-origin data exfiltration attack",
+            "Server-side request forgery attack",
+            "XML external entity injection",
+            "Remote code execution attack"
+        ]
+    },
+    {
+        "q": "What is the prefetch-src CSP directive?",
+        "o": [
+            "Control prefetch and prerender sources",
+            "Set script prefetching behavior",
+            "Define allowed cache sources",
+            "Configure DNS prefetch domains"
+        ]
+    },
+    {
+        "q": "How is Web Storage quota managed per origin?",
+        "o": [
+            "Shared quota across all storage types",
+            "Separate quota for each storage type",
+            "Unlimited quota for all origins",
+            "First-come first-served basis"
+        ]
+    },
+    {
+        "q": "What is the close method in SharedWorker?",
+        "o": [
+            "Close the MessagePort connection",
+            "Terminate the shared worker",
+            "Close database connections",
+            "End all network requests"
+        ]
+    },
+    {
+        "q": "Can JavaScript access response body of opaque response?",
+        "o": [
+            "No, body is not accessible at all",
+            "Yes, after base64 decoding body",
+            "Only text content is readable",
+            "With special browser permissions"
+        ]
+    },
+    {
+        "q": "What is the Sec-Fetch-Dest header purpose?",
+        "o": [
+            "Indicate destination of request",
+            "Configure response destination",
+            "Set request priority level",
+            "Define cache destination"
+        ]
+    },
+    {
+        "q": "How does report-sample work in CSP reporting?",
+        "o": [
+            "Include violating code sample in report",
+            "Sample percentage of violations reported",
+            "Report only sample violations to URL",
+            "Generate sample CSP policy report"
+        ]
+    },
+    {
+        "q": "What is the uniqueIdentifier in IndexedDB cursor?",
+        "o": [
+            "Primary key of current cursor position",
+            "Unique ID for cursor instance itself",
+            "Database identifier string value",
+            "Transaction unique identifier"
+        ]
+    },
+    {
+        "q": "How do Service Workers handle range requests?",
+        "o": [
+            "Must implement range handling manually",
+            "Automatically handle partial content",
+            "Range requests bypass service worker",
+            "Only full responses are allowed"
+        ]
+    },
+    {
+        "q": "What is origin-agent-cluster header?",
+        "o": [
+            "Request dedicated process for origin",
+            "Cluster multiple origins together",
+            "Set user agent for origin",
+            "Configure origin proxy settings"
+        ]
+    },
+    {
+        "q": "Which security header complements CORS?",
+        "o": [
+            "Cross-Origin-Resource-Policy header",
+            "X-Content-Type-Options header",
+            "Strict-Transport-Security header",
+            "X-XSS-Protection header value"
+        ]
+    },
+    {
+        "q": "What is the script-src-elem CSP directive?",
+        "o": [
+            "Control script element sources only",
+            "Set script element attributes",
+            "Define executable elements list",
+            "Configure inline element scripts"
+        ]
+    },
+    {
+        "q": "How can Storage API quota be estimated?",
+        "o": [
+            "Using navigator.storage.estimate method",
+            "Checking localStorage.quota property",
+            "Calling indexedDB.getQuota function",
+            "Reading navigator.quota object"
+        ]
+    },
+    {
+        "q": "What is the terminateIfNeeded in Web Workers?",
+        "o": [
+            "Not a standard API method name",
+            "Check if worker should terminate",
+            "Forcefully terminate worker",
+            "Request graceful termination"
+        ]
+    },
+    {
+        "q": "Can CSS access cross-origin font data?",
+        "o": [
+            "CORS required for font face rules",
+            "Fonts always load cross-origin",
+            "CSS cannot load external fonts",
+            "Font access bypasses origin checks"
+        ]
+    },
+    {
+        "q": "What is the Sec-Fetch-User header for?",
+        "o": [
+            "Indicate user-initiated navigation",
+            "Identify requesting user agent",
+            "Set user preference for request",
+            "Configure user session timeout"
+        ]
+    },
+    {
+        "q": "How does script-src-attr differ from script-src?",
+        "o": [
+            "Controls inline event handlers only",
+            "More restrictive than script-src",
+            "Applies to external scripts only",
+            "Deprecated alias for script-src"
+        ]
+    },
+    {
+        "q": "What is persistent storage in Storage API?",
+        "o": [
+            "Storage that survives browser cleanup",
+            "Storage across browser sessions",
+            "Encrypted permanent storage",
+            "Cloud-synced storage data"
+        ]
+    },
+    {
+        "q": "Can SharedArrayBuffer be used cross-origin?",
+        "o": [
+            "Requires cross-origin isolation headers",
+            "Works freely across all origins",
+            "Only within same-origin contexts",
+            "Deprecated for cross-origin use"
+        ]
+    },
+    {
+        "q": "What is the purpose of crossOriginIsolated property?",
+        "o": [
+            "Check if high-resolution timers allowed",
+            "Verify cross-origin request isolation",
+            "Test CORS configuration correctness",
+            "Validate iframe isolation settings"
+        ]
+    },
+    {
+        "q": "Which CSP violation can leak sensitive data?",
+        "o": [
+            "Script source violations in reports",
+            "Image loading failure reports",
+            "Style source blocked notifications",
+            "Font loading violation details"
+        ]
+    },
+    {
+        "q": "How does IndexedDB handle version conflicts?",
+        "o": [
+            "Blocks until other connections close",
+            "Automatically resolves version conflicts",
+            "Newest version always takes precedence",
+            "Throws error and fails silently"
+        ]
+    },
+    {
+        "q": "What is the controller property in Service Workers?",
+        "o": [
+            "Reference to controlling service worker",
+            "Remote control for worker actions",
+            "Configuration controller object",
+            "Cache controller instance"
+        ]
+    },
+    {
+        "q": "How does CORB protect against cross-origin data leaks?",
+        "o": [
+            "Blocks sensitive responses from wrong MIME type",
+            "Encrypts all cross-origin response bodies",
+            "Validates response headers for authenticity",
+            "Filters malicious scripts from responses"
+        ]
+    },
+    {
+        "q": "What is the security impact of CORS misconfiguration on APIs?",
+        "o": [
+            "Unauthorized data access from malicious sites",
+            "API endpoints become publicly accessible",
+            "Server performance degrades significantly",
+            "Database connections are exposed directly"
+        ]
+    },
+    {
+        "q": "How can attackers exploit dynamically generated CSP policies?",
+        "o": [
+            "Inject malicious content into policy directives",
+            "Disable CSP entirely through injection",
+            "Modify browser security settings remotely",
+            "Execute scripts before CSP is evaluated"
+        ]
+    },
+    {
+        "q": "What vulnerability allows extraction of IndexedDB data cross-origin?",
+        "o": [
+            "XSS to access same-origin database",
+            "SQL injection in IndexedDB queries",
+            "Direct cross-origin database access",
+            "Buffer overflow in database engine"
+        ]
+    },
+    {
+        "q": "How can Web Workers be exploited for cryptojacking?",
+        "o": [
+            "Run mining scripts in background threads",
+            "Workers have direct GPU access for mining",
+            "Elevated permissions allow system commands",
+            "Workers bypass browser resource limits"
+        ]
+    },
+    {
+        "q": "What is the security risk of using document.write in iframes?",
+        "o": [
+            "Can override entire document with attacker content",
+            "Breaks iframe sandbox protections completely",
+            "Allows iframe to access parent document",
+            "Escalates iframe to parent origin level"
+        ]
+    },
+    {
+        "q": "How does CORS preflight bypass affect application security?",
+        "o": [
+            "Simple requests skip server-side checks",
+            "Preflight responses cached indefinitely",
+            "All methods become allowed automatically",
+            "Credentials sent without user consent"
+        ]
+    },
+    {
+        "q": "What CSP bypass technique uses AngularJS template injection?",
+        "o": [
+            "Expression evaluation in whitelisted scripts",
+            "Direct script injection through templates",
+            "Angular disables CSP by default",
+            "Template compilation ignores CSP rules"
+        ]
+    },
+    {
+        "q": "How can localStorage be exploited for session hijacking?",
+        "o": [
+            "XSS reads stored authentication tokens",
+            "localStorage syncs tokens to attacker",
+            "Tokens are sent with every HTTP request",
+            "Browser shares localStorage cross-domain"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in SharedArrayBuffer timing attacks?",
+        "o": [
+            "High-precision timers enable side channels",
+            "Shared memory leaks to other origins",
+            "Buffer overflows in array operations",
+            "Race conditions corrupt shared data"
+        ]
+    },
+    {
+        "q": "How does CSB sandbox allow-scripts affect security?",
+        "o": [
+            "Re-enables JavaScript execution in frame",
+            "Allows scripts but blocks DOM access",
+            "Scripts run with reduced permissions",
+            "Only whitelisted scripts can execute"
+        ]
+    },
+    {
+        "q": "What attack exploits improper postMessage origin validation?",
+        "o": [
+            "Message spoofing from attacker-controlled origin",
+            "Denial of service through message flooding",
+            "Memory corruption from malformed messages",
+            "Session fixation via manipulated messages"
+        ]
+    },
+    {
+        "q": "How can CSP report-uri leak sensitive URL information?",
+        "o": [
+            "Violation reports contain document URLs",
+            "Report endpoint receives user credentials",
+            "All page content included in reports",
+            "Reports expose server architecture"
+        ]
+    },
+    {
+        "q": "What is the security risk of eval in Web Worker context?",
+        "o": [
+            "Arbitrary code execution from attacker input",
+            "Eval bypasses worker thread isolation",
+            "Worker gains DOM access through eval",
+            "Eval enables cross-origin script loading"
+        ]
+    },
+    {
+        "q": "How does an insecure Service Worker registration affect security?",
+        "o": [
+            "Attacker can intercept all network requests",
+            "Worker gains access to system files",
+            "Browser security settings are modified",
+            "User credentials exposed to third parties"
+        ]
+    },
+    {
+        "q": "What vulnerability allows iframe sandbox escape?",
+        "o": [
+            "Browser bugs in sandbox implementation",
+            "JavaScript can disable sandbox attribute",
+            "Sandbox only applies to first page load",
+            "Nested iframes bypass parent sandbox"
+        ]
+    },
+    {
+        "q": "How can CORS null origin be exploited by attackers?",
+        "o": [
+            "Sandboxed iframes send requests with null",
+            "Null origin has highest trust level",
+            "Server cannot validate null origin",
+            "Null bypasses authentication checks"
+        ]
+    },
+    {
+        "q": "What CSP bypass uses JSONP callbacks on whitelisted domains?",
+        "o": [
+            "Inject payload via callback parameter",
+            "JSONP responses ignore CSP nonces",
+            "Callback functions bypass script-src",
+            "JSONP endpoints always allowed by CSP"
+        ]
+    },
+    {
+        "q": "How can sessionStorage be exploited through duplicate tabs?",
+        "o": [
+            "Initial values copied to new tab context",
+            "All tabs share same sessionStorage",
+            "Tab duplication resets storage state",
+            "Storage persists after tab is closed"
+        ]
+    },
+    {
+        "q": "What security concern exists with Worklet modules?",
+        "o": [
+            "Can process sensitive audio or paint data",
+            "Worklets have unrestricted network access",
+            "Direct DOM manipulation from worklets",
+            "Bypass Same-Origin Policy restrictions"
+        ]
+    },
+    {
+        "q": "How does improper X-Frame-Options conflict with CSP?",
+        "o": [
+            "Headers may have contradicting policies",
+            "X-Frame-Options overrides all CSP rules",
+            "CSP frame-ancestors completely ignores XFO",
+            "Browsers crash on conflicting headers"
+        ]
+    },
+    {
+        "q": "What attack exploits misconfigured Access-Control-Expose-Headers?",
+        "o": [
+            "Reading sensitive custom response headers",
+            "Injecting headers into server response",
+            "Bypassing authentication header checks",
+            "Modifying security headers in transit"
+        ]
+    },
+    {
+        "q": "How can CSP nonce-based bypasses occur?",
+        "o": [
+            "Predictable nonce generation patterns",
+            "Nonces are ignored after first load",
+            "All scripts share the same nonce",
+            "Nonce validation is client-side only"
+        ]
+    },
+    {
+        "q": "What vulnerability allows reading IndexedDB from different origin?",
+        "o": [
+            "Only through XSS on same origin",
+            "DNS rebinding attacks on database",
+            "IndexedDB shared across subdomains",
+            "Database files accessible via file URL"
+        ]
+    },
+    {
+        "q": "How can Message Channel be exploited for data exfiltration?",
+        "o": [
+            "Create covert channel between frames",
+            "Channels bypass Same-Origin Policy",
+            "Messages encrypted and hidden from browser",
+            "Direct access to other origin's data"
+        ]
+    },
+    {
+        "q": "What security risk exists with BroadcastChannel API?",
+        "o": [
+            "Cross-tab data leakage within origin",
+            "Broadcasts reach all browser origins",
+            "Channel bypasses CSP restrictions",
+            "Messages persist after browser close"
+        ]
+    },
+    {
+        "q": "How does CORS credential leakage occur?",
+        "o": [
+            "Cookies sent to reflected origin value",
+            "Credentials visible in browser console",
+            "Authentication tokens cached publicly",
+            "Server logs contain user credentials"
+        ]
+    },
+    {
+        "q": "What CSP bypass uses base64 encoded scripts?",
+        "o": [
+            "Data URIs with base64 script content",
+            "Base64 encoding bypasses nonce checks",
+            "Encoded scripts avoid hash validation",
+            "Browser decodes before CSP evaluation"
+        ]
+    },
+    {
+        "q": "How can localstorage quota exhaustion be exploited?",
+        "o": [
+            "Denial of service for target origin",
+            "Force browser to delete cached data",
+            "Overflow storage into system memory",
+            "Corrupt other origins stored data"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in Transferable objects?",
+        "o": [
+            "Data transfer without proper validation",
+            "Objects accessible from multiple contexts",
+            "Transfer bypasses serialization checks",
+            "Memory corruption in transfer process"
+        ]
+    },
+    {
+        "q": "How does window.name persist data across origins?",
+        "o": [
+            "Name value survives navigation to new origin",
+            "Window name shared between all tabs",
+            "Name property has unlimited storage",
+            "Browser caches name value permanently"
+        ]
+    },
+    {
+        "q": "What attack vector uses CORS proxy misconfiguration?",
+        "o": [
+            "Internal network scanning through proxy",
+            "Proxy adds valid CORS headers automatically",
+            "All requests authenticated by proxy",
+            "Proxy bypasses client-side security"
+        ]
+    },
+    {
+        "q": "How can CSP upgrade-insecure-requests be bypassed?",
+        "o": [
+            "WebSocket connections not upgraded",
+            "All mixed content blocked permanently",
+            "HTTP redirects bypass upgrade directive",
+            "Upgrade only applies to HTML pages"
+        ]
+    },
+    {
+        "q": "What security issue affects Cache API storage?",
+        "o": [
+            "Cached responses may contain stale data",
+            "Cache shared between all domains",
+            "No encryption for cached content",
+            "Cache ignores security headers"
+        ]
+    },
+    {
+        "q": "How can ComputedStyle be exploited cross-origin?",
+        "o": [
+            "CSS history sniffing via visited links",
+            "Get style values from external frames",
+            "Read inline styles cross-origin",
+            "Access computed values of any element"
+        ]
+    },
+    {
+        "q": "What vulnerability allows CORS preflight cache poisoning?",
+        "o": [
+            "Long max-age with permissive policies",
+            "Preflight responses not validated",
+            "Cache shared between all origins",
+            "Browser ignores cache headers"
+        ]
+    },
+    {
+        "q": "How does CSP sandbox affect origin assignment?",
+        "o": [
+            "Sandboxed frames get unique null origin",
+            "Origin inheritance disabled in sandbox",
+            "Parent origin applied to sandboxed frame",
+            "Sandbox creates new opaque origin"
+        ]
+    },
+    {
+        "q": "What attack exploits Storage Access API permissions?",
+        "o": [
+            "User wrongly grants storage access",
+            "API bypasses third-party cookie blocks",
+            "Access granted permanently once approved",
+            "Permissions shared between all origins"
+        ]
+    },
+    {
+        "q": "How can Web Locks API be exploited?",
+        "o": [
+            "Lock resources to cause denial of service",
+            "Locks bypass same-origin restrictions",
+            "Read locked data from other origins",
+            "Modify system files through locks"
+        ]
+    },
+    {
+        "q": "What security concern exists with performance.getEntries?",
+        "o": [
+            "Reveals cross-origin resource timing",
+            "Exposes all network request details",
+            "Returns authentication credentials",
+            "Discloses server internal structure"
+        ]
+    },
+    {
+        "q": "How does SourceBuffer in Media Source Extensions affect security?",
+        "o": [
+            "Processing untrusted media can crash browser",
+            "Buffers can access cross-origin media",
+            "Media data bypasses CSP restrictions",
+            "Buffer overflow leads to code execution"
+        ]
+    },
+    {
+        "q": "What vulnerability allows reading cross-origin PDF content?",
+        "o": [
+            "PDF plugins may not enforce origin policy",
+            "Browser renders PDF without restrictions",
+            "PDF JavaScript accesses parent page",
+            "Embedded PDFs share parent origin"
+        ]
+    },
+    {
+        "q": "How can CSP script-src self be bypassed?",
+        "o": [
+            "Find injection point on same origin",
+            "Self includes all subdomains",
+            "Dynamic scripts bypass self restriction",
+            "Self allows inline event handlers"
+        ]
+    },
+    {
+        "q": "What attack vector uses CORS with internal networks?",
+        "o": [
+            "Browser accesses internal resources",
+            "Internal networks have CORS disabled",
+            "VPN tunnels bypass origin checks",
+            "Local network trusted by default"
+        ]
+    },
+    {
+        "q": "How does window.opener enable cross-origin attacks?",
+        "o": [
+            "Opener allows navigation of parent window",
+            "Direct access to opener document",
+            "Share credentials with opener origin",
+            "Read opener localStorage content"
+        ]
+    },
+    {
+        "q": "What security issue affects ServiceWorkerRegistration scope?",
+        "o": [
+            "Overly broad scope intercepts too much",
+            "Scope applies to all browser origins",
+            "Registration ignores path restrictions",
+            "Scope inherits from parent worker"
+        ]
+    },
+    {
+        "q": "How can CSP hash be exploited with identical hashes?",
+        "o": [
+            "Hash collision allows different script",
+            "Browser ignores hash for inline scripts",
+            "Hashes are case-insensitive in matching",
+            "Multiple scripts share single hash"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in Web Share API?",
+        "o": [
+            "Share arbitrary files including malware",
+            "API accesses contacts without permission",
+            "Shared data sent to multiple recipients",
+            "Share bypasses cross-origin restrictions"
+        ]
+    },
+    {
+        "q": "How does Location header in redirects affect CORS?",
+        "o": [
+            "Redirect target must also allow origin",
+            "Final destination ignores initial CORS",
+            "Redirects bypass preflight requirements",
+            "Location header overrides CORS policy"
+        ]
+    },
+    {
+        "q": "What attack exploits loosely configured CSP default-src?",
+        "o": [
+            "Fallback allows unintended resource types",
+            "Default-src overrides all other directives",
+            "Scripts load from default-src domains",
+            "Default-src ignores nonce requirements"
+        ]
+    },
+    {
+        "q": "How can File System Access API be exploited?",
+        "o": [
+            "Write malicious files to user system",
+            "API bypasses file permission dialogs",
+            "Access files outside granted directory",
+            "Read system files without permission"
+        ]
+    },
+    {
+        "q": "What security risk exists with dynamic import statements?",
+        "o": [
+            "Can import scripts from attacker origin",
+            "Imports bypass CSP script-src checks",
+            "Dynamic imports execute before CSP",
+            "All imports share same security context"
+        ]
+    },
+    {
+        "q": "How does Referrer Policy affect cross-origin security?",
+        "o": [
+            "Leaks sensitive URL paths to third parties",
+            "Disables Same-Origin Policy checks",
+            "Changes browser origin calculation",
+            "Allows reading of referrer cross-origin"
+        ]
+    },
+    {
+        "q": "What vulnerability allows CSP bypass through SVG?",
+        "o": [
+            "SVG can embed scripts within image",
+            "SVG ignores parent page CSP rules",
+            "Browser treats SVG as trusted origin",
+            "SVG scripts run in elevated context"
+        ]
+    },
+    {
+        "q": "How can EventSource be exploited for data exfiltration?",
+        "o": [
+            "Send data to server via SSE connection",
+            "EventSource bypasses CORS restrictions",
+            "Receive commands from attacker server",
+            "SSE connections not logged by browser"
+        ]
+    },
+    {
+        "q": "What attack uses Feature Policy to restrict defenses?",
+        "o": [
+            "Attacker disables security features in frame",
+            "Policy propagates to all nested frames",
+            "Feature policy overrides CSP settings",
+            "Disabled features cannot be re-enabled"
+        ]
+    },
+    {
+        "q": "How does isSecureContext affect security APIs?",
+        "o": [
+            "Sensitive APIs disabled in insecure contexts",
+            "Secure context grants elevated permissions",
+            "Context determines available origins",
+            "Insecure context allows all operations"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in Payment Request API?",
+        "o": [
+            "Phishing through fake payment dialogs",
+            "API accesses payment details silently",
+            "Credentials sent to multiple origins",
+            "Payment bypasses same-origin checks"
+        ]
+    },
+    {
+        "q": "How can getter functions leak cross-origin data?",
+        "o": [
+            "Exceptions reveal cross-origin values",
+            "Getters bypass Same-Origin Policy",
+            "Cross-origin properties directly readable",
+            "All getters work on any origin"
+        ]
+    },
+    {
+        "q": "What security issue affects Credential Management API?",
+        "o": [
+            "Stored credentials accessible via XSS",
+            "API shares credentials between origins",
+            "Credentials synced without encryption",
+            "Anyone can read stored passwords"
+        ]
+    },
+    {
+        "q": "How does Object.getOwnPropertyDescriptor affect security?",
+        "o": [
+            "Can reveal information about cross-origin objects",
+            "Bypasses property access restrictions",
+            "Returns hidden cross-origin properties",
+            "Descriptor access always allowed"
+        ]
+    },
+    {
+        "q": "What attack exploits CSP upgrade-insecure-requests timing?",
+        "o": [
+            "Race condition before upgrade applies",
+            "Downgrade attack during upgrade",
+            "Mixed content loaded before directive",
+            "Upgrade only checked on navigation"
+        ]
+    },
+    {
+        "q": "How can Navigation API be exploited?",
+        "o": [
+            "Intercept and modify navigation requests",
+            "API bypasses browser navigation security",
+            "Historical entries accessible cross-origin",
+            "Navigate frames to arbitrary origins"
+        ]
+    },
+    {
+        "q": "What vulnerability allows reading cross-origin canvas pixels?",
+        "o": [
+            "Canvas not tainted when expected",
+            "Pixel data encrypted but accessible",
+            "WebGL shaders access canvas data",
+            "Canvas API ignores origin checks"
+        ]
+    },
+    {
+        "q": "How does prototype pollution affect browser storage?",
+        "o": [
+            "Polluted values modify storage behavior",
+            "Storage API inherits polluted prototypes",
+            "Pollution spreads to all storage keys",
+            "Browser resets polluted prototypes"
+        ]
+    },
+    {
+        "q": "What attack uses CSP inline style-src unsafe-inline?",
+        "o": [
+            "CSS injection for data exfiltration",
+            "Inline styles execute JavaScript code",
+            "Style injection leads to DOM manipulation",
+            "Styles bypass content security policy"
+        ]
+    },
+    {
+        "q": "How can WebGL shaders leak cross-origin image data?",
+        "o": [
+            "Timing attacks reveal texture content",
+            "Shaders directly access image pixels",
+            "WebGL ignores Same-Origin Policy",
+            "Shader output includes source data"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in Resize Observer API?",
+        "o": [
+            "Side channel for cross-origin content size",
+            "Observer accesses cross-origin elements",
+            "Size changes reveal private information",
+            "Observer callbacks execute cross-origin"
+        ]
+    },
+    {
+        "q": "How does improper blob URL revocation affect security?",
+        "o": [
+            "URLs remain accessible after revocation",
+            "Blob content shared across origins",
+            "Revoked blobs cause memory corruption",
+            "Other origins can access blob URLs"
+        ]
+    },
+    {
+        "q": "What attack exploits Fetch metadata headers?",
+        "o": [
+            "Server trusts headers without validation",
+            "Headers can be spoofed by attackers",
+            "Metadata reveals internal page structure",
+            "Browser always sends accurate metadata"
+        ]
+    },
+    {
+        "q": "How can CSS content property leak data cross-origin?",
+        "o": [
+            "Attribute selectors reveal hidden content",
+            "Content property reads cross-origin data",
+            "CSS selectors bypass origin restrictions",
+            "Content values accessible via JavaScript"
+        ]
+    },
+    {
+        "q": "What security issue affects MutationObserver?",
+        "o": [
+            "Observe DOM changes for XSS payload timing",
+            "Observer works on cross-origin elements",
+            "Mutations bypass CSP script-src rules",
+            "Nested observers cause memory corruption"
+        ]
+    },
+    {
+        "q": "How does history.pushState affect origin security?",
+        "o": [
+            "Cannot change origin, only same-origin paths",
+            "Allows changing displayed origin freely",
+            "History modifications bypass origin policy",
+            "PushState enables cross-origin navigation"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in Web Audio API analysis?",
+        "o": [
+            "Audio fingerprinting identifies users",
+            "API accesses microphone without permission",
+            "Cross-origin audio data readable directly",
+            "Audio processing leaks memory contents"
+        ]
+    },
+    {
+        "q": "How can background fetch be exploited?",
+        "o": [
+            "Large data exfiltration in background",
+            "Fetch bypasses network monitoring",
+            "Background requests skip CORS checks",
+            "Fetched content accessible cross-origin"
+        ]
+    },
+    {
+        "q": "What attack uses frame timing for cross-origin leaks?",
+        "o": [
+            "Measure rendering time to infer content",
+            "Frame timings bypass Same-Origin Policy",
+            "Timing data reveals authentication state",
+            "Frames share timing information"
+        ]
+    },
+    {
+        "q": "How does WebRTC expose internal IP addresses?",
+        "o": [
+            "STUN requests reveal local network IP",
+            "RTC connections bypass VPN tunnels",
+            "Peer connections leak system info",
+            "ICE candidates include router details"
+        ]
+    },
+    {
+        "q": "What vulnerability allows CSP bypass via meta refresh?",
+        "o": [
+            "Redirect before CSP header processed",
+            "Meta tags override CSP header policy",
+            "Refresh ignores CSP navigate-to",
+            "Meta CSP conflicts with header CSP"
+        ]
+    },
+    {
+        "q": "How can IntersectionObserver leak cross-origin data?",
+        "o": [
+            "Visibility timing reveals frame content",
+            "Observer accesses cross-origin element size",
+            "Intersection ratio includes internal data",
+            "Observer callbacks run cross-origin"
+        ]
+    },
+    {
+        "q": "What attack exploits form autofill with hidden fields?",
+        "o": [
+            "Capture autofilled credentials invisibly",
+            "Hidden fields bypass password managers",
+            "Autofill ignores field visibility state",
+            "Forms access cross-origin saved data"
+        ]
+    },
+    {
+        "q": "How does EyeDropper API affect security?",
+        "o": [
+            "Read pixel colors from entire screen",
+            "Capture content outside browser window",
+            "Access cross-origin frame colors",
+            "Record screen without user consent"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in Web Cryptography API?",
+        "o": [
+            "Timing attacks on cryptographic operations",
+            "Keys exportable without protection",
+            "Cross-origin access to generated keys",
+            "Weak random number generation"
+        ]
+    },
+    {
+        "q": "How can console.log leak cross-origin data?",
+        "o": [
+            "Logging cross-origin objects reveals structure",
+            "Console has access to all origins",
+            "Log messages shared between tabs",
+            "Console bypasses security restrictions"
+        ]
+    },
+    {
+        "q": "What attack uses link prefetching for user tracking?",
+        "o": [
+            "Preload requests reveal user behavior",
+            "Prefetch bypasses cookie restrictions",
+            "DNS prefetch leaks browsing history",
+            "Prefetched pages record visit data"
+        ]
+    },
+    {
+        "q": "How does module script crossorigin attribute work?",
+        "o": [
+            "Controls CORS mode for script requests",
+            "Enables cross-origin script execution",
+            "Bypasses CSP for module imports",
+            "Modules ignore the attribute value"
+        ]
+    },
+    {
+        "q": "What vulnerability affects Gamepad API?",
+        "o": [
+            "Device fingerprinting via gamepad ID",
+            "Gamepad input readable cross-origin",
+            "Controller vibration causes denial of service",
+            "API accesses system gamepad memory"
+        ]
+    },
+    {
+        "q": "How can TextEncoder be exploited?",
+        "o": [
+            "Timing differences reveal string content",
+            "Encoder bypasses output sanitization",
+            "Cross-origin strings decodable globally",
+            "Encoded data persists in memory"
+        ]
+    },
+    {
+        "q": "What security issue affects ReportingObserver?",
+        "o": [
+            "Reports may contain sensitive user data",
+            "Observer accesses cross-origin reports",
+            "Report contents sent to all observers",
+            "Privacy policy violations reported"
+        ]
+    },
+    {
+        "q": "How does scroll anchoring affect security?",
+        "o": [
+            "Scroll position can leak content size",
+            "Anchoring bypasses origin restrictions",
+            "Cross-origin scroll events accessible",
+            "Anchor positions reveal private data"
+        ]
+    },
+    {
+        "q": "What attack exploits CSS font loading API?",
+        "o": [
+            "Font timing reveals installed fonts",
+            "Load fonts from attacker-controlled server",
+            "Font data bypasses CSP font-src",
+            "FontFace API ignores CORS headers"
+        ]
+    },
+    {
+        "q": "How can PerformanceObserver leak sensitive timings?",
+        "o": [
+            "Cross-origin resource timing exposure",
+            "Observer bypasses timing-allow-origin",
+            "Performance data shared between tabs",
+            "Detailed timing reveals auth status"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in WebAssembly instantiation?",
+        "o": [
+            "WASM can be instantiated from any origin",
+            "Memory access outside allocated bounds",
+            "Direct system call execution possible",
+            "WebAssembly ignores CSP restrictions"
+        ]
+    },
+    {
+        "q": "How can Spectre variant attacks affect browser security?",
+        "o": [
+            "Leak memory across security boundaries via timing",
+            "Directly read kernel memory from browser context",
+            "Bypass Same-Origin Policy through CPU cache",
+            "Execute arbitrary native code in browser"
+        ]
+    },
+    {
+        "q": "What is the security implication of Portals API iframe replacement?",
+        "o": [
+            "Seamless navigation could mask phishing attacks",
+            "Portals share origin with embedding page always",
+            "Direct access to portal document from parent",
+            "Portals bypass all CSP frame restrictions"
+        ]
+    },
+    {
+        "q": "How does dangling markup injection work for CSP bypass?",
+        "o": [
+            "Unclosed tags capture subsequent page content",
+            "Markup injects scripts before CSP evaluation",
+            "Broken HTML disables CSP enforcement entirely",
+            "Dangling tags inherit parent script permissions"
+        ]
+    },
+    {
+        "q": "What side-channel exploits CSS paint timing attacks?",
+        "o": [
+            "Measure paint time to detect element content",
+            "Access paint buffer memory directly via CSS",
+            "CSS paint events expose DOM structure cross-origin",
+            "Paint timing bypasses browser origin isolation"
+        ]
+    },
+    {
+        "q": "How can WebGPU API introduce new attack vectors?",
+        "o": [
+            "GPU-based side channels leak sensitive data",
+            "Direct GPU memory access across processes",
+            "Shader code executes outside sandbox entirely",
+            "GPU computations bypass security restrictions"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in cross-origin PDF embedding?",
+        "o": [
+            "PDF JavaScript may access embedding page context",
+            "Embedded PDFs share authentication with parent",
+            "PDF viewer ignores cross-origin restrictions",
+            "PDFs can modify parent page DOM elements"
+        ]
+    },
+    {
+        "q": "How does event handler scope affect CSP script-src?",
+        "o": [
+            "Inline handlers require unsafe-inline permission",
+            "Event handlers bypass script-src restrictions",
+            "Handlers execute in separate security context",
+            "CSP only applies to external script handlers"
+        ]
+    },
+    {
+        "q": "What attack uses requestAnimationFrame for timing leaks?",
+        "o": [
+            "Measure rendering time for cross-origin content",
+            "Frame timing bypasses reduced timer precision",
+            "Animation frames access cross-origin data",
+            "RAF callbacks execute with elevated permissions"
+        ]
+    },
+    {
+        "q": "How can origin-keyed agent clusters be exploited?",
+        "o": [
+            "Resource exhaustion through process isolation",
+            "Agent clusters leak between related origins",
+            "Bypass memory isolation through shared memory",
+            "Clusters allow cross-origin data exchange"
+        ]
+    },
+    {
+        "q": "What vulnerability affects import maps in module loading?",
+        "o": [
+            "Override trusted module URLs with malicious ones",
+            "Import maps bypass CSP module restrictions",
+            "Maps execute before security policy evaluation",
+            "Module redirects ignore origin validation"
+        ]
+    },
+    {
+        "q": "How does CSS variable injection enable attacks?",
+        "o": [
+            "Exfiltrate data via custom property values",
+            "Variables execute JavaScript through calc function",
+            "CSS variables bypass Content Security Policy",
+            "Variable injection modifies page behavior globally"
+        ]
+    },
+    {
+        "q": "What security risk exists with EditContext API?",
+        "o": [
+            "Intercept and modify text input cross-origin",
+            "EditContext bypasses input sanitization",
+            "Direct DOM manipulation through edit events",
+            "Editor context shares state between origins"
+        ]
+    },
+    {
+        "q": "How can ArrayBuffer detachment cause security issues?",
+        "o": [
+            "Use-after-detach access causes memory corruption",
+            "Detached buffers remain accessible cross-origin",
+            "Buffer detachment bypasses size validation",
+            "Detached buffers leak previous content data"
+        ]
+    },
+    {
+        "q": "What attack exploits ContentVisibilityAutoStateChanged event?",
+        "o": [
+            "Infer hidden content visibility timing",
+            "Event handlers access cross-origin visibility",
+            "Visibility changes bypass content protection",
+            "Auto state events reveal authentication status"
+        ]
+    },
+    {
+        "q": "How does relaxed JSON parsing enable attack vectors?",
+        "o": [
+            "Parse comments or trailing commas for injection",
+            "JSON bypasses input validation when relaxed",
+            "Relaxed parsing executes embedded JavaScript",
+            "Extended JSON format ignores origin checks"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in Speculation Rules API?",
+        "o": [
+            "Prefetch leaks user navigation intentions",
+            "Speculation rules bypass request logging",
+            "Prerender loads cross-origin with credentials",
+            "Rules execute before content security check"
+        ]
+    },
+    {
+        "q": "How can DOM clobbering bypass security mechanisms?",
+        "o": [
+            "Named elements shadow global JavaScript APIs",
+            "Clobbered DOM accesses cross-origin properties",
+            "Named document properties bypass CSP checks",
+            "DOM clobbering escalates script permissions"
+        ]
+    },
+    {
+        "q": "What security issue affects Sanitizer API integration?",
+        "o": [
+            "Bypass through browser implementation differences",
+            "Sanitizer ignores custom element content entirely",
+            "API removes security attributes incorrectly",
+            "Sanitized content inherits unsafe context"
+        ]
+    },
+    {
+        "q": "How does priority hint attribute affect security?",
+        "o": [
+            "Reveal resource importance to attackers",
+            "Priority affects credential inclusion order",
+            "High priority bypasses CORS restrictions",
+            "Hints modify security header processing"
+        ]
+    },
+    {
+        "q": "What attack uses AbortController for timing leaks?",
+        "o": [
+            "Measure abort timing to detect response size",
+            "AbortController accesses cross-origin state",
+            "Abort signals bypass request authentication",
+            "Controller timing reveals cached resources"
+        ]
+    },
+    {
+        "q": "How can structuredClone be exploited?",
+        "o": [
+            "Clone transferable objects without validation",
+            "Cloning bypasses object security restrictions",
+            "Structured clone shares data cross-origin",
+            "Clone operations access protected properties"
+        ]
+    },
+    {
+        "q": "What vulnerability affects Popover API positioning?",
+        "o": [
+            "Overlay positioning for clickjacking attacks",
+            "Popovers access cross-origin parent content",
+            "Position calculations leak element sizes",
+            "Popover events bypass click validation"
+        ]
+    },
+    {
+        "q": "How does compression dictionary transport affect security?",
+        "o": [
+            "Dictionary content enables CRIME-like attacks",
+            "Shared dictionaries leak cross-origin data",
+            "Compression ratios reveal private content",
+            "Dictionary loading bypasses CORS restrictions"
+        ]
+    },
+    {
+        "q": "What attack exploits declarative shadow DOM?",
+        "o": [
+            "Inject shadow roots to hide malicious content",
+            "Declarative shadow bypasses CSP restrictions",
+            "Shadow DOM scripts execute without policy",
+            "Shadow roots access encapsulating document"
+        ]
+    },
+    {
+        "q": "How can Element Timing API leak cross-origin data?",
+        "o": [
+            "Image render timing reveals dimensions",
+            "Timing entries include cross-origin content",
+            "Element metrics bypass origin restrictions",
+            "Timing API reads authenticated image data"
+        ]
+    },
+    {
+        "q": "What security risk exists with View Transitions API?",
+        "o": [
+            "Capture page snapshots during transitions",
+            "Transitions expose cross-origin document state",
+            "Snapshot images bypass tainted canvas rules",
+            "Transition animations access hidden content"
+        ]
+    },
+    {
+        "q": "How does CSS nesting affect selector injection?",
+        "o": [
+            "Nested selectors access sibling element data",
+            "Nesting bypasses style-src CSP restrictions",
+            "Nested rules execute in parent origin context",
+            "Selector nesting enables DOM traversal attacks"
+        ]
+    },
+    {
+        "q": "What attack vector uses CSS color-mix function?",
+        "o": [
+            "Timing variations reveal computed colors",
+            "Color functions access cross-origin styles",
+            "Mix calculations bypass color restrictions",
+            "Color-mix exposes authenticated content"
+        ]
+    },
+    {
+        "q": "How can Long Animation Frames API be exploited?",
+        "o": [
+            "Detect cross-origin script execution timing",
+            "Animation timing bypasses origin isolation",
+            "Frame duration reveals authentication state",
+            "Long frames access cross-origin callbacks"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in Fenced Frames isolation?",
+        "o": [
+            "Timing side channels through frame loading",
+            "Fenced frames share storage with embedder",
+            "Fence bypass through navigation injection",
+            "Frame isolation fails under specific conditions"
+        ]
+    },
+    {
+        "q": "How does CSS container query affect security?",
+        "o": [
+            "Query conditions reveal parent dimensions",
+            "Container queries access cross-origin sizes",
+            "Query evaluation bypasses style isolation",
+            "Container context leaks to nested frames"
+        ]
+    },
+    {
+        "q": "What attack uses @layer cascade for style injection?",
+        "o": [
+            "Lower layer styles override security styles",
+            "Layer rules bypass CSP style-src directives",
+            "Cascade layers access cross-origin sheets",
+            "Layer ordering enables specificity attacks"
+        ]
+    },
+    {
+        "q": "How can CSS trigonometric functions leak data?",
+        "o": [
+            "Calculation timing reveals input values",
+            "Trig functions access cross-origin properties",
+            "Function output bypasses numeric validation",
+            "Calculations expose hidden element dimensions"
+        ]
+    },
+    {
+        "q": "What security issue affects Priority Hints API?",
+        "o": [
+            "Resource timing differences reveal priority",
+            "Priority bypasses same-origin restrictions",
+            "High priority requests skip authentication",
+            "Hints affect credential inclusion behavior"
+        ]
+    },
+    {
+        "q": "How does CSS @scope rule affect selector isolation?",
+        "o": [
+            "Scope boundaries may leak cross-origin state",
+            "Scoped selectors bypass shadow DOM isolation",
+            "Scope rules access parent document elements",
+            "Boundary evaluation reveals element structure"
+        ]
+    },
+    {
+        "q": "What attack exploits URLPattern API matching?",
+        "o": [
+            "Pattern matching leaks URL structure details",
+            "Patterns bypass URL validation completely",
+            "Match results expose authentication tokens",
+            "Pattern execution runs arbitrary code"
+        ]
+    },
+    {
+        "q": "How can CSS anchor positioning enable attacks?",
+        "o": [
+            "Calculate positions of cross-origin elements",
+            "Anchor references bypass origin restrictions",
+            "Position values reveal hidden content size",
+            "Anchoring enables precision clickjacking"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in Navigation API prerendering?",
+        "o": [
+            "Prerendered pages execute before visibility",
+            "Prerender bypasses user consent requirements",
+            "Navigation API accesses history cross-origin",
+            "Prerender credentials leak to third parties"
+        ]
+    },
+    {
+        "q": "How does CSS custom highlight API affect security?",
+        "o": [
+            "Highlight ranges reveal text selection info",
+            "Custom highlights access cross-origin text",
+            "Highlight styles bypass content restrictions",
+            "Range data exposes document structure"
+        ]
+    },
+    {
+        "q": "What attack uses CSS subgrid for layout leaks?",
+        "o": [
+            "Subgrid dimensions reveal parent content",
+            "Grid inheritance bypasses frame isolation",
+            "Subgrid access cross-origin track sizes",
+            "Layout calculations expose private data"
+        ]
+    },
+    {
+        "q": "How can Compression Streams API be exploited?",
+        "o": [
+            "BREACH-style attacks through compression ratios",
+            "Stream processing accesses cross-origin data",
+            "Compression bypasses output size validation",
+            "Streams expose internal browser memory"
+        ]
+    },
+    {
+        "q": "What security risk exists with CSS color-contrast?",
+        "o": [
+            "Contrast calculation reveals background data",
+            "Color functions access cross-origin styles",
+            "Contrast ratio bypasses visual restrictions",
+            "Function evaluates against hidden elements"
+        ]
+    },
+    {
+        "q": "How does CSS scroll-timeline affect timing attacks?",
+        "o": [
+            "Scroll position tied to animation timing",
+            "Timeline leaks scroll behavior cross-origin",
+            "Scroll events bypass visibility restrictions",
+            "Animation timing reveals content dimensions"
+        ]
+    },
+    {
+        "q": "What attack exploits CSS font-palette animation?",
+        "o": [
+            "Palette transitions reveal font loading state",
+            "Animated palettes access cross-origin fonts",
+            "Palette values bypass color restrictions",
+            "Font animation timing leaks system fonts"
+        ]
+    },
+    {
+        "q": "How can CSS math functions enable exploits?",
+        "o": [
+            "Complex calculations reveal operand values",
+            "Math functions access cross-origin numbers",
+            "Calculation overflow bypasses size limits",
+            "Function nesting enables code execution"
+        ]
+    },
+    {
+        "q": "What vulnerability affects Attribution Reporting API?",
+        "o": [
+            "Attribution leaks cross-site user tracking",
+            "Reporting bypasses privacy restrictions",
+            "Attribution data shared between origins",
+            "Report timing reveals conversion events"
+        ]
+    },
+    {
+        "q": "How does CSS size-adjust affect fingerprinting?",
+        "o": [
+            "Size adjustments reveal installed fonts",
+            "Adjustment values access system font data",
+            "Size calculation bypasses font isolation",
+            "Adjust metric timing leaks font presence"
+        ]
+    },
+    {
+        "q": "What attack uses CSS backdrop-filter for leaks?",
+        "o": [
+            "Filter processing reveals underlying content",
+            "Backdrop access cross-origin visual data",
+            "Filter values bypass element isolation",
+            "Processing timing reveals content changes"
+        ]
+    },
+    {
+        "q": "How can Topics API enable cross-site tracking?",
+        "o": [
+            "Topic selection reveals browsing history",
+            "API bypasses third-party cookie blocks",
+            "Topics shared between unrelated origins",
+            "Topic calculation accesses private data"
+        ]
+    },
+    {
+        "q": "What security issue affects CSS aspect-ratio calculation?",
+        "o": [
+            "Ratio values leak embedded content dimensions",
+            "Aspect calculation accesses cross-origin sizes",
+            "Ratio property bypasses dimension restrictions",
+            "Calculated ratios reveal image properties"
+        ]
+    },
+    {
+        "q": "How does CSS gap animation affect security?",
+        "o": [
+            "Gap transitions reveal child element count",
+            "Animated gaps access cross-origin layout",
+            "Gap values bypass spacing restrictions",
+            "Animation timing leaks grid structure"
+        ]
+    },
+    {
+        "q": "What attack exploits CSS image-set resolution?",
+        "o": [
+            "Resolution selection reveals device density",
+            "Image-set accesses cross-origin sources",
+            "Resolution timing leaks network conditions",
+            "Set evaluation reveals cache state"
+        ]
+    },
+    {
+        "q": "How can Protected Audiences API be exploited?",
+        "o": [
+            "Auction mechanics leak interest group data",
+            "Audience API bypasses consent requirements",
+            "Protected data shared during bidding phase",
+            "Auction timing reveals group membership"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in CSS content-visibility?",
+        "o": [
+            "Visibility transitions reveal element presence",
+            "Content hidden from rendering leaks data",
+            "Visibility calculation accesses cross-origin",
+            "Property changes reveal element dimensions"
+        ]
+    },
+    {
+        "q": "How does CSS overscroll-behavior affect detection?",
+        "o": [
+            "Scroll boundary reveals container dimensions",
+            "Overscroll access cross-origin scroll state",
+            "Behavior values bypass scroll isolation",
+            "Boundary timing leaks content size"
+        ]
+    },
+    {
+        "q": "What attack uses CSS forced-color-adjust?",
+        "o": [
+            "Forced colors reveal system color scheme",
+            "Color adjustment accesses user preferences",
+            "Forced mode bypasses visual restrictions",
+            "Adjust values leak accessibility settings"
+        ]
+    },
+    {
+        "q": "How can CSS margin-trim enable layout leaks?",
+        "o": [
+            "Trimmed margins reveal adjacent content",
+            "Trim calculation accesses sibling elements",
+            "Margin values bypass isolation boundaries",
+            "Trim behavior exposes box dimensions"
+        ]
+    },
+    {
+        "q": "What security risk exists with Private Aggregation API?",
+        "o": [
+            "Aggregated reports may re-identify users",
+            "Aggregation bypasses differential privacy",
+            "Private data leaked through noise patterns",
+            "Report timing reveals contribution values"
+        ]
+    },
+    {
+        "q": "How does CSS line-clamp affect content detection?",
+        "o": [
+            "Clamped line count reveals text length",
+            "Line calculations access cross-origin text",
+            "Clamp values bypass content restrictions",
+            "Overflow detection leaks hidden content"
+        ]
+    },
+    {
+        "q": "What attack exploits CSS text-wrap balance?",
+        "o": [
+            "Balance calculations reveal text metrics",
+            "Wrap algorithm accesses cross-origin fonts",
+            "Text balance bypasses content isolation",
+            "Wrapping timing leaks character widths"
+        ]
+    },
+    {
+        "q": "How can Shared Storage API enable tracking?",
+        "o": [
+            "Cross-site data sharing through worklets",
+            "Storage API bypasses partition boundaries",
+            "Shared partitions leak browsing context",
+            "Worklet execution accesses origin data"
+        ]
+    },
+    {
+        "q": "What vulnerability affects CSS initial-letter sizing?",
+        "o": [
+            "Letter size reveals font metrics information",
+            "Initial sizing accesses cross-origin styles",
+            "Size calculations bypass text restrictions",
+            "Letter dimensions leak font properties"
+        ]
+    },
+    {
+        "q": "How does CSS ruby-align affect layout detection?",
+        "o": [
+            "Ruby alignment reveals annotation content",
+            "Alignment calculations access text metrics",
+            "Ruby positioning bypasses origin isolation",
+            "Align values expose character dimensions"
+        ]
+    },
+    {
+        "q": "What attack uses CSS hanging-punctuation?",
+        "o": [
+            "Punctuation position reveals text content",
+            "Hanging values access cross-origin text",
+            "Punctuation detection bypasses restrictions",
+            "Position timing leaks character presence"
+        ]
+    },
+    {
+        "q": "How can Run Ad Auction API leak data?",
+        "o": [
+            "Auction parameters reveal interest groups",
+            "Bidding scripts access cross-origin data",
+            "Auction timing exposes group membership",
+            "Winner selection leaks preference data"
+        ]
+    },
+    {
+        "q": "What security issue affects CSS hyphenation?",
+        "o": [
+            "Hyphenation points reveal language patterns",
+            "Hyphen calculation accesses dictionary data",
+            "Break points bypass content restrictions",
+            "Hyphenation timing leaks word structure"
+        ]
+    },
+    {
+        "q": "How does CSS scrollbar-gutter affect detection?",
+        "o": [
+            "Gutter size reveals scrollbar presence",
+            "Reserved space accesses cross-origin state",
+            "Gutter calculations bypass visibility",
+            "Scrollbar detection leaks content overflow"
+        ]
+    },
+    {
+        "q": "What attack exploits CSS break-after properties?",
+        "o": [
+            "Page breaks reveal content structure",
+            "Break calculations access document layout",
+            "Fragment boundaries bypass restrictions",
+            "Break timing leaks print layout data"
+        ]
+    },
+    {
+        "q": "How can Trust Token API be exploited?",
+        "o": [
+            "Token issuance reveals attestation state",
+            "Tokens bypass cross-origin restrictions",
+            "Redemption timing leaks token presence",
+            "API reveals issuer interaction history"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in CSS writing-mode stacking?",
+        "o": [
+            "Mode stacking reveals bidirectional text",
+            "Writing calculations access text direction",
+            "Mode inheritance bypasses restrictions",
+            "Stacking context leaks content structure"
+        ]
+    },
+    {
+        "q": "How does CSS text-emphasis affect fingerprinting?",
+        "o": [
+            "Emphasis styles reveal font capabilities",
+            "Mark rendering accesses system fonts",
+            "Emphasis timing leaks font support",
+            "Style calculations expose font metrics"
+        ]
+    },
+    {
+        "q": "What attack uses CSS counter-style detection?",
+        "o": [
+            "Custom counters reveal defined styles",
+            "Counter rendering accesses style rules",
+            "Style calculations bypass restrictions",
+            "Counter timing leaks page structure"
+        ]
+    },
+    {
+        "q": "How can Federated Credential Management API leak identity?",
+        "o": [
+            "Federation reveals cross-origin accounts",
+            "Identity provider metadata exposes users",
+            "Credential timing leaks login state",
+            "API bypasses third-party cookie blocks"
+        ]
+    },
+    {
+        "q": "What security risk exists with CSS font-feature-settings?",
+        "o": [
+            "Feature detection reveals font capabilities",
+            "Settings access expose installed fonts",
+            "Feature timing leaks OpenType support",
+            "Calculations bypass font isolation"
+        ]
+    },
+    {
+        "q": "How does CSS logical properties affect layout leaks?",
+        "o": [
+            "Logical values reveal writing direction",
+            "Property resolution accesses document mode",
+            "Direction detection bypasses restrictions",
+            "Logical calculations expose locale data"
+        ]
+    },
+    {
+        "q": "What attack exploits CSS offset-path animation?",
+        "o": [
+            "Motion paths reveal element positions",
+            "Path calculations access geometry data",
+            "Offset timing leaks animation state",
+            "Path definitions expose layout structure"
+        ]
+    },
+    {
+        "q": "How can First-Party Sets affect security boundaries?",
+        "o": [
+            "Set membership leaks corporate structure",
+            "First-party trust bypasses origin isolation",
+            "Set definitions expose domain ownership",
+            "Membership check timing leaks affiliations"
+        ]
+    },
+    {
+        "q": "What vulnerability affects CSS mask-image compositing?",
+        "o": [
+            "Mask rendering reveals underlying content",
+            "Compositing accesses cross-origin images",
+            "Mask calculations bypass taint checks",
+            "Image timing leaks mask dimensions"
+        ]
+    },
+    {
+        "q": "How does CSS mix-blend-mode affect data leakage?",
+        "o": [
+            "Blend operations reveal underlying colors",
+            "Mode calculations access underlying data",
+            "Blending bypasses visual restrictions",
+            "Processing timing leaks layer content"
+        ]
+    },
+    {
+        "q": "What attack uses CSS clip-path hit testing?",
+        "o": [
+            "Clipped areas reveal element boundaries",
+            "Hit testing accesses clipped content",
+            "Path calculations bypass visibility",
+            "Click detection leaks element shape"
+        ]
+    },
+    {
+        "q": "How can Private State Tokens API be exploited?",
+        "o": [
+            "Token redemption reveals prior attestation",
+            "State tokens bypass privacy protections",
+            "Token timing leaks issuer interactions",
+            "API enables cross-site user tracking"
+        ]
+    },
+    {
+        "q": "What security issue affects CSS filter SVG references?",
+        "o": [
+            "External filter URLs cross security boundaries",
+            "SVG filters access cross-origin context",
+            "Filter processing bypasses CORS checks",
+            "Reference resolution leaks origin data"
+        ]
+    },
+    {
+        "q": "How does CSS perspective affect 3D information leaks?",
+        "o": [
+            "Perspective values reveal depth information",
+            "Transform calculations access position data",
+            "3D rendering bypasses visual isolation",
+            "Perspective timing leaks scene structure"
+        ]
+    },
+    {
+        "q": "What attack exploits CSS ray function in motion path?",
+        "o": [
+            "Ray calculations reveal coordinate space",
+            "Motion geometry accesses layout data",
+            "Path timing leaks element positions",
+            "Ray definitions expose viewport size"
+        ]
+    },
+    {
+        "q": "How can Conversion Measurement API leak attribution?",
+        "o": [
+            "Attribution reports reveal conversion paths",
+            "Measurement bypasses click fraud detection",
+            "Attribution timing exposes user journeys",
+            "API enables cross-site conversion tracking"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in CSS shape-outside floats?",
+        "o": [
+            "Shape calculations reveal image content",
+            "Float boundaries access cross-origin data",
+            "Shape timing leaks alpha channel info",
+            "Outside definition exposes mask details"
+        ]
+    },
+    {
+        "q": "How does CSS scroll-snap affect precision attacks?",
+        "o": [
+            "Snap positions reveal content boundaries",
+            "Snap calculations access element sizes",
+            "Scroll behavior bypasses isolation",
+            "Snap timing leaks scroll dimensions"
+        ]
+    },
+    {
+        "q": "What attack uses CSS pseudo-element detection?",
+        "o": [
+            "Pseudo-elements reveal style application",
+            "Element queries access computed styles",
+            "Pseudo timing leaks selector matches",
+            "Renderer differences expose content"
+        ]
+    },
+    {
+        "q": "How can Device Bound Session Credentials be exploited?",
+        "o": [
+            "Session binding reveals device identity",
+            "Credential timing leaks binding state",
+            "Device attestation exposes hardware info",
+            "Session tokens bypass origin isolation"
+        ]
+    },
+    {
+        "q": "What security risk exists with CSS column-span detection?",
+        "o": [
+            "Spanning elements reveal column layout",
+            "Column calculations access content flow",
+            "Span timing leaks break positions",
+            "Layout detection exposes text structure"
+        ]
+    },
+    {
+        "q": "How does CSS containment affect information isolation?",
+        "o": [
+            "Contain boundaries may leak size changes",
+            "Layout containment accesses parent context",
+            "Size isolation bypasses restrictions",
+            "Containment detection reveals structure"
+        ]
+    },
+    {
+        "q": "How do speculative execution attacks bypass browser process isolation?",
+        "o": [
+            "Transient execution leaks across isolation boundaries",
+            "Process isolation fails against CPU-level attacks",
+            "Speculation bypasses all browser security controls",
+            "CPU caches shared between isolated processes"
+        ]
+    },
+    {
+        "q": "What advanced technique combines DOM clobbering with prototype pollution?",
+        "o": [
+            "Chain clobbered properties to pollute prototypes",
+            "Pollution automatically creates DOM clobbering vectors",
+            "Combined attacks bypass all input sanitization",
+            "Clobbered prototypes gain elevated permissions"
+        ]
+    },
+    {
+        "q": "How can renderer process compromise lead to sandbox escape?",
+        "o": [
+            "Exploit IPC vulnerabilities to broker process",
+            "Compromised renderer directly accesses file system",
+            "Renderer memory maps to kernel space",
+            "Sandbox disables after renderer compromise"
+        ]
+    },
+    {
+        "q": "What advanced CSP bypass uses script gadgets in JS frameworks?",
+        "o": [
+            "Abuse framework-specific code patterns",
+            "Gadgets execute before CSP enforcement loads",
+            "Framework scripts disable CSP entirely",
+            "Gadgets inherit framework elevated permissions"
+        ]
+    },
+    {
+        "q": "How do cache-based timing attacks work in modern browsers?",
+        "o": [
+            "Measure cache hit timing from eviction patterns",
+            "Directly read cache contents through timing",
+            "Cache timing bypasses all memory protections",
+            "Browser caches ignore same-origin policy"
+        ]
+    },
+    {
+        "q": "What is the security implication of cross-origin opener policy gaps?",
+        "o": [
+            "COOP bypass enables Spectre-like attacks",
+            "Policy gaps allow direct document access",
+            "Opener isolation fails in all edge cases",
+            "COOP misconfiguration disables process isolation"
+        ]
+    },
+    {
+        "q": "How can V8 JIT compilation be exploited for code execution?",
+        "o": [
+            "Type confusion through JIT optimization bugs",
+            "JIT compiler generates attacker-controlled code",
+            "Compiled code bypasses all security checks",
+            "JIT disables all memory safety protections"
+        ]
+    },
+    {
+        "q": "What attack vector exploits WebAssembly memory layout?",
+        "o": [
+            "Linear memory bounds check vulnerabilities",
+            "WASM memory directly accesses browser heap",
+            "Memory layout prediction bypasses ASLR",
+            "WebAssembly ignores all memory protections"
+        ]
+    },
+    {
+        "q": "How does Site Isolation interact with Spectre mitigations?",
+        "o": [
+            "Process-per-site limits Spectre attack surface",
+            "Site Isolation completely prevents all Spectre variants",
+            "Isolation fails under high memory pressure",
+            "Spectre mitigations redundant with isolation"
+        ]
+    },
+    {
+        "q": "What advanced technique exploits ArrayBuffer in workers?",
+        "o": [
+            "Race conditions between main thread and worker",
+            "Shared ArrayBuffer enables concurrent attacks",
+            "Worker buffers bypass same-origin checks",
+            "ArrayBuffer in workers ignores size limits"
+        ]
+    },
+    {
+        "q": "How can browser extension APIs be exploited for privilege escalation?",
+        "o": [
+            "Content script to background page injection",
+            "Extension APIs bypass all web security policies",
+            "Escalated extensions access system resources",
+            "API calls automatically grant all permissions"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in cross-origin isolated environment detection?",
+        "o": [
+            "Timing differences reveal isolation state",
+            "Detection bypasses cross-origin restrictions",
+            "Isolated environments share memory channels",
+            "Environment state accessible without isolation"
+        ]
+    },
+    {
+        "q": "How do use-after-free vulnerabilities manifest in browser engines?",
+        "o": [
+            "Dangling pointers from DOM node destruction",
+            "Free memory immediately accessible cross-origin",
+            "UAF automatically leads to code execution",
+            "Browser objects never actually freed"
+        ]
+    },
+    {
+        "q": "What attack exploits differences between browser parsing engines?",
+        "o": [
+            "Parser normalization discrepancies enable XSS",
+            "Different parsers execute mutually exclusive code",
+            "Parser differences bypass all sanitization",
+            "Engine-specific attacks work universally"
+        ]
+    },
+    {
+        "q": "How can integer overflow in browser graphics lead to exploitation?",
+        "o": [
+            "Overflow in size calculations causes heap corruption",
+            "Graphics overflows directly execute shellcode",
+            "Integer wrapping bypasses all bounds checks",
+            "Overflow enables cross-origin graphics access"
+        ]
+    },
+    {
+        "q": "What security issue affects cross-origin history length inference?",
+        "o": [
+            "History length changes reveal navigation count",
+            "Length property returns full history details",
+            "Cross-origin history directly accessible",
+            "History inference bypasses privacy protections"
+        ]
+    },
+    {
+        "q": "How does race condition exploitation work in service workers?",
+        "o": [
+            "TOCTOU vulnerabilities in request handling",
+            "Race conditions grant cross-origin access",
+            "Concurrent requests bypass all validations",
+            "Worker races automatically escalate permissions"
+        ]
+    },
+    {
+        "q": "What advanced technique exploits CSS custom property evaluation?",
+        "o": [
+            "Recursive variable evaluation causes stack overflow",
+            "Custom properties execute arbitrary expressions",
+            "Variable expansion bypasses CSP protections",
+            "Properties access cross-origin DOM directly"
+        ]
+    },
+    {
+        "q": "How can WebGL extension fingerprinting be exploited?",
+        "o": [
+            "Extension availability reveals GPU and driver",
+            "Extensions expose privileged graphics operations",
+            "Fingerprinting bypasses privacy protections",
+            "Extension detection enables memory access"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in browser font rendering pipelines?",
+        "o": [
+            "Font table parsing leads to heap corruption",
+            "Font rendering directly executes embedded code",
+            "Malicious fonts bypass all security checks",
+            "Font pipeline grants cross-origin access"
+        ]
+    },
+    {
+        "q": "How does mXSS enable CSP and sanitizer bypasses?",
+        "o": [
+            "DOM mutation during parsing creates XSS vectors",
+            "mXSS payloads execute without sanitization",
+            "Mutation bypasses all security mechanisms",
+            "Parser mutations grant elevated permissions"
+        ]
+    },
+    {
+        "q": "What attack vector exploits AudioWorklet processing?",
+        "o": [
+            "Real-time audio processing enables timing attacks",
+            "Worklet processing accesses cross-origin audio",
+            "Audio buffer manipulation bypasses isolation",
+            "Worklet timing reveals all browser activity"
+        ]
+    },
+    {
+        "q": "How can browser credential storage be exploited?",
+        "o": [
+            "XSS accesses saved passwords via autofill",
+            "Stored credentials accessible cross-origin",
+            "Credential storage bypasses authentication",
+            "Browser exposes plaintext password database"
+        ]
+    },
+    {
+        "q": "What security implication exists in PDF.js vulnerabilities?",
+        "o": [
+            "JavaScript in PDF executes in page context",
+            "PDF rendering bypasses all CSP protections",
+            "PDF files access hosting page directly",
+            "PDF.js grants full file system access"
+        ]
+    },
+    {
+        "q": "How does address bar spoofing affect browser security?",
+        "o": [
+            "Unicode tricks display misleading URLs",
+            "Spoofed URLs trigger real HTTPS indicators",
+            "Address bar shows attacker-controlled origin",
+            "URL bar modifications bypass all checks"
+        ]
+    },
+    {
+        "q": "What attack exploits browser extension content script injection timing?",
+        "o": [
+            "Race to inject malicious content before extension",
+            "Content scripts execute with extension permissions",
+            "Injection timing bypasses extension security",
+            "Early injection gains extension context"
+        ]
+    },
+    {
+        "q": "How can heap spray techniques work in modern browsers?",
+        "o": [
+            "ArrayBuffer allocations control heap layout",
+            "Heap spraying directly enables code execution",
+            "Modern heaps have no spray mitigations",
+            "Spray patterns bypass all memory protections"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in browser update mechanisms?",
+        "o": [
+            "MITM during update installs malicious code",
+            "Update process runs without signature checking",
+            "Updates bypass all system security controls",
+            "Automatic updates install any downloaded code"
+        ]
+    },
+    {
+        "q": "How does object prototype interference affect JSON parsing?",
+        "o": [
+            "Polluted constructor property alters parse behavior",
+            "JSON parsing directly executes prototype methods",
+            "Prototype pollution makes parsing unsafe",
+            "Parser inherits all polluted properties"
+        ]
+    },
+    {
+        "q": "What attack vector uses service worker cache poisoning?",
+        "o": [
+            "Cache poisoned scripts persist indefinitely",
+            "Poisoned caches automatically execute code",
+            "Cache poisoning bypasses TLS completely",
+            "Service workers cache cross-origin responses"
+        ]
+    },
+    {
+        "q": "How can browser GPU process be exploited?",
+        "o": [
+            "Shader compilation bugs lead to code execution",
+            "GPU process directly accesses system memory",
+            "Compute shaders bypass sandbox restrictions",
+            "GPU exploits grant kernel-level access"
+        ]
+    },
+    {
+        "q": "What security issue affects browser spell check?",
+        "o": [
+            "Spell check sends sensitive input to servers",
+            "Spell checker executes with elevated privileges",
+            "Check results accessible cross-origin",
+            "Spell checking bypasses input protection"
+        ]
+    },
+    {
+        "q": "How does viewport-based side channel work?",
+        "o": [
+            "Viewport changes reveal cross-origin content size",
+            "Viewport measurements bypass origin restrictions",
+            "Size changes accessible through scroll events",
+            "Viewport data directly readable cross-origin"
+        ]
+    },
+    {
+        "q": "What attack exploits browser network stack vulnerabilities?",
+        "o": [
+            "HTTP parsing bugs enable request smuggling",
+            "Network bugs directly bypass all security",
+            "Stack vulnerabilities grant network access",
+            "Parsing errors execute arbitrary code"
+        ]
+    },
+    {
+        "q": "How can browser history API be exploited for phishing?",
+        "o": [
+            "Replace history to trap user in fake site",
+            "History manipulation shows attacker URLs",
+            "API grants access to full browsing history",
+            "History entries become executable"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in browser media codec handling?",
+        "o": [
+            "Malformed media causes heap buffer overflow",
+            "Codec processing executes embedded code",
+            "Media decoding bypasses sandbox entirely",
+            "Codec bugs grant cross-origin access"
+        ]
+    },
+    {
+        "q": "How does cross-site request timing enable attacks?",
+        "o": [
+            "Response timing reveals authentication state",
+            "Timing measurements bypass all restrictions",
+            "Request timing accesses response content",
+            "Authenticated responses time differently"
+        ]
+    },
+    {
+        "q": "What attack uses browser sync functionality?",
+        "o": [
+            "Sync malicious data across user devices",
+            "Synced content executes with elevated rights",
+            "Sync bypasses per-device security settings",
+            "Malicious sync takes over all devices"
+        ]
+    },
+    {
+        "q": "How can browser developer tools be exploited?",
+        "o": [
+            "DevTools protocol exposed to websites",
+            "Developer tools bypass all security policies",
+            "Tools execute arbitrary code on system",
+            "DevTools access grants full permissions"
+        ]
+    },
+    {
+        "q": "What security implication exists in download content disposition?",
+        "o": [
+            "Disposition header controls filename for execution",
+            "Downloaded files bypass security warnings",
+            "Content-Disposition grants execute permission",
+            "Header manipulation forces dangerous extensions"
+        ]
+    },
+    {
+        "q": "How does PDF.js XSS differ from traditional web XSS?",
+        "o": [
+            "PDF context has different origin handling",
+            "PDF XSS executes with native permissions",
+            "PDF scripts bypass all CSP protections",
+            "XSS in PDF affects hosting origin directly"
+        ]
+    },
+    {
+        "q": "What attack vector uses browser print functionality?",
+        "o": [
+            "Print CSS can exfiltrate page content",
+            "Print preview accesses cross-origin data",
+            "Printing bypasses all content restrictions",
+            "Print events execute arbitrary code"
+        ]
+    },
+    {
+        "q": "How can IndexedDB transactions be exploited?",
+        "o": [
+            "Transaction timing reveals stored data presence",
+            "Transactions bypass same-origin restrictions",
+            "Database operations execute arbitrary code",
+            "Transaction locks enable denial of service"
+        ]
+    },
+    {
+        "q": "What vulnerability affects browser notification handling?",
+        "o": [
+            "Notification click handlers may persist malicious state",
+            "Notifications execute with elevated permissions",
+            "Click events bypass user interaction checks",
+            "Notification payload accesses system resources"
+        ]
+    },
+    {
+        "q": "How does postMessage deserialization lead to attacks?",
+        "o": [
+            "Object reconstruction can trigger code execution",
+            "Deserialized objects bypass origin checks",
+            "Message parsing automatically evaluates code",
+            "Complex objects access cross-origin data"
+        ]
+    },
+    {
+        "q": "What attack exploits browser permission persistence?",
+        "o": [
+            "Granted permissions persist after origin change",
+            "Permissions automatically transfer to attackers",
+            "Persistence bypasses user consent requirements",
+            "Old permissions grant new site access"
+        ]
+    },
+    {
+        "q": "How can browser URL bar interaction timing be exploited?",
+        "o": [
+            "User input timing reveals typed characters",
+            "URL bar directly accessible to page scripts",
+            "Timing data bypasses privacy protections",
+            "Input events reveal full URL content"
+        ]
+    },
+    {
+        "q": "What security issue affects browser tab management?",
+        "o": [
+            "Tab identifiers may leak across origins",
+            "Tab management grants cross-tab access",
+            "Closed tabs persist accessible data",
+            "Tab isolation fails under memory pressure"
+        ]
+    },
+    {
+        "q": "How does canvas memory reclamation affect security?",
+        "o": [
+            "Uninitialized memory exposes prior content",
+            "Reclaimed memory accessible cross-origin",
+            "Canvas memory bypasses all restrictions",
+            "Memory reuse reveals authenticated images"
+        ]
+    },
+    {
+        "q": "What attack vector uses browser form fill suggestions?",
+        "o": [
+            "Hidden fields capture suggested values",
+            "Form suggestions accessible cross-origin",
+            "Autosuggest bypasses field visibility",
+            "Suggestions reveal sensitive user data"
+        ]
+    },
+    {
+        "q": "How can ResizeObserver callback timing be exploited?",
+        "o": [
+            "Callback timing reveals cross-origin content changes",
+            "Observer callbacks access cross-origin sizes",
+            "Timing data bypasses origin restrictions",
+            "Resize events reveal authentication state"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in browser bookmark handling?",
+        "o": [
+            "Bookmarklets execute with elevated privileges",
+            "Bookmark data accessible to all websites",
+            "Malicious bookmarks persist across sessions",
+            "Bookmark sync spreads attacks across devices"
+        ]
+    },
+    {
+        "q": "How does CORS null origin handling create vulnerabilities?",
+        "o": [
+            "Multiple sources produce indistinguishable null origin",
+            "Null origin treated as privileged by servers",
+            "Null requests bypass all CORS checks",
+            "Origin header removal grants full access"
+        ]
+    },
+    {
+        "q": "What attack exploits browser animation frame timing?",
+        "o": [
+            "Frame callbacks create high-resolution timers",
+            "Animation timing accesses cross-origin data",
+            "Frame synchronization bypasses restrictions",
+            "RAF timing reveals CPU cache state"
+        ]
+    },
+    {
+        "q": "How can browser geolocation API be exploited beyond tracking?",
+        "o": [
+            "Location permission used for side channel timing",
+            "Geolocation bypasses user consent requirements",
+            "Position data accessible without permission",
+            "Location API grants network access"
+        ]
+    },
+    {
+        "q": "What security issue affects Blob URL lifetime management?",
+        "o": [
+            "Revoked URLs may remain exploitable briefly",
+            "Blob lifetime extends across origin changes",
+            "URL persistence bypasses security revocation",
+            "Blob URLs accessible after context destruction"
+        ]
+    },
+    {
+        "q": "How does speech recognition API enable attacks?",
+        "o": [
+            "Audio processing can fingerprint users",
+            "Recognition bypasses permission requirements",
+            "Speech data sent to third parties",
+            "API accesses microphone without indicator"
+        ]
+    },
+    {
+        "q": "What attack vector uses browser window focus events?",
+        "o": [
+            "Focus timing reveals user tab switching patterns",
+            "Focus events accessible cross-origin",
+            "Window state changes bypass privacy protections",
+            "Focus manipulation enables clickjacking"
+        ]
+    },
+    {
+        "q": "How can JavaScript Error object properties be exploited?",
+        "o": [
+            "Stack traces leak file paths and function names",
+            "Error objects accessible across origins",
+            "Error handling bypasses security restrictions",
+            "Thrown errors reveal source code content"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in browser web bundle handling?",
+        "o": [
+            "Bundled resources may bypass CSP validation",
+            "Web bundles execute with elevated permissions",
+            "Bundle origin overrides resource security",
+            "Bundled content ignores all restrictions"
+        ]
+    },
+    {
+        "q": "How does browser beforeunload event affect security?",
+        "o": [
+            "Event timing reveals cross-origin navigation",
+            "Unload handlers access cross-origin data",
+            "Event blocking bypasses user navigation",
+            "Unload timing leaks authentication state"
+        ]
+    },
+    {
+        "q": "What attack exploits browser sensor API access?",
+        "o": [
+            "Sensor data enables keystroke inference",
+            "Sensor APIs bypass permission requirements",
+            "Readings accessible without user consent",
+            "Sensors directly access hardware registers"
+        ]
+    },
+    {
+        "q": "How can browser resource hint prefetch be exploited?",
+        "o": [
+            "Prefetch credentials leak to speculative targets",
+            "Hints bypass CORS for prefetched resources",
+            "Prefetch loads execute immediately",
+            "Resource hints ignore all restrictions"
+        ]
+    },
+    {
+        "q": "What security issue affects browser Trusted Types enforcement?",
+        "o": [
+            "Policy bypass through implementation gaps",
+            "Trusted Types disable after initial load",
+            "Enforcement fails in specific contexts",
+            "Types automatically trusted after creation"
+        ]
+    },
+    {
+        "q": "How does browser quota management affect privacy?",
+        "o": [
+            "Storage quota differences reveal origin data presence",
+            "Quota measurements bypass origin restrictions",
+            "Storage limits accessible cross-origin",
+            "Quota changes reveal authentication state"
+        ]
+    },
+    {
+        "q": "What attack vector uses browser screen capture API?",
+        "o": [
+            "Capture scope may exceed user expectation",
+            "Screen capture bypasses tab restrictions",
+            "Captured content accessible cross-origin",
+            "API records without visible indicator"
+        ]
+    },
+    {
+        "q": "How can browser keyboard shortcut handling be exploited?",
+        "o": [
+            "Override security shortcuts to trap users",
+            "Shortcuts bypass user confirmation dialogs",
+            "Keyboard events accessible cross-origin",
+            "Custom shortcuts grant elevated permissions"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in browser webdriver communication?",
+        "o": [
+            "Automation protocols exposed to web content",
+            "Webdriver bypasses all browser security",
+            "Protocol access grants full system control",
+            "Automation commands execute automatically"
+        ]
+    },
+    {
+        "q": "How does browser favicon request handling affect privacy?",
+        "o": [
+            "Favicon requests leak with different cookie contexts",
+            "Icon loading bypasses credentials mode",
+            "Favicon caching reveals browsing history",
+            "Request timing exposes authentication state"
+        ]
+    },
+    {
+        "q": "What attack exploits browser cross-document messaging?",
+        "o": [
+            "Origin validation bypass through nested frames",
+            "Messages automatically trusted between documents",
+            "Cross-document access bypasses all restrictions",
+            "Messaging grants DOM manipulation rights"
+        ]
+    },
+    {
+        "q": "How can browser touch event handling be exploited?",
+        "o": [
+            "Touch timing creates high-precision measurements",
+            "Touch events accessible cross-origin",
+            "Touch coordinates bypass privacy protections",
+            "Event handling reveals gesture patterns"
+        ]
+    },
+    {
+        "q": "What security issue affects browser media key handling?",
+        "o": [
+            "Media keys accessible across origins unexpectedly",
+            "Key sessions bypass authentication requirements",
+            "License data shared between origins",
+            "Media keys grant elevated permissions"
+        ]
+    },
+    {
+        "q": "How does browser document.domain setting affect security?",
+        "o": [
+            "Domain relaxation weakens origin isolation",
+            "Setting automatically grants full access",
+            "Domain change bypasses all restrictions",
+            "Relaxed domains share all security context"
+        ]
+    },
+    {
+        "q": "What attack vector uses browser resource timing buffer?",
+        "o": [
+            "Buffer overflow timing reveals entry count",
+            "Timing buffer accessible cross-origin",
+            "Buffer entries bypass all restrictions",
+            "Overflow events reveal detailed timings"
+        ]
+    },
+    {
+        "q": "How can browser selection API be exploited?",
+        "o": [
+            "Selection changes reveal content dimensions",
+            "Selection accessible across iframe boundaries",
+            "Text selection bypasses content restrictions",
+            "Selection events execute arbitrary code"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in browser link preload handling?",
+        "o": [
+            "Preloaded scripts execute before CSP validation",
+            "Preload bypasses cross-origin restrictions",
+            "Link resources automatically trusted",
+            "Preload ignores all security headers"
+        ]
+    },
+    {
+        "q": "How does browser fullscreen API affect clickjacking?",
+        "o": [
+            "Fullscreen hides browser security indicators",
+            "API bypasses all user interface restrictions",
+            "Fullscreen content appears as native UI",
+            "Fullscreen automatically grants permissions"
+        ]
+    },
+    {
+        "q": "What attack exploits browser content editable regions?",
+        "o": [
+            "Paste handler can inject cross-origin content",
+            "Editable regions bypass input sanitization",
+            "Content modifications execute scripts",
+            "Edit events access clipboard cross-origin"
+        ]
+    },
+    {
+        "q": "How can browser payment handler API be exploited?",
+        "o": [
+            "Handler registration persists for phishing",
+            "Payment data accessible to all handlers",
+            "API bypasses user confirmation requirements",
+            "Handlers execute with elevated permissions"
+        ]
+    },
+    {
+        "q": "What security issue affects browser wake lock API?",
+        "o": [
+            "Lock state reveals background tab activity",
+            "Wake locks bypass power management security",
+            "Lock API accessible without permission",
+            "Persistent locks enable tracking"
+        ]
+    },
+    {
+        "q": "How does browser back-forward cache affect security?",
+        "o": [
+            "Cached pages may restore stale security context",
+            "Cache bypasses credential validation",
+            "Restored pages inherit wrong permissions",
+            "Cache state accessible cross-origin"
+        ]
+    },
+    {
+        "q": "What attack vector uses browser file system access?",
+        "o": [
+            "Granted handles persist across sessions",
+            "File access bypasses per-operation consent",
+            "Handles grant access outside allowed scope",
+            "Persistent access enables silent exfiltration"
+        ]
+    },
+    {
+        "q": "How can browser render process reuse affect security?",
+        "o": [
+            "Memory from previous origin may persist",
+            "Process reuse shares security context",
+            "Reused processes bypass isolation",
+            "Previous origin data directly accessible"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in browser client hints handling?",
+        "o": [
+            "Hints reveal detailed browser and device info",
+            "Client hints bypass fingerprinting protections",
+            "Hint values accessible cross-origin",
+            "Headers automatically sent to all origins"
+        ]
+    },
+    {
+        "q": "How does browser lazy loading affect content timing?",
+        "o": [
+            "Load timing reveals viewport interaction",
+            "Lazy loading bypasses prefetch restrictions",
+            "Load events accessible cross-origin",
+            "Timing reveals user scroll behavior"
+        ]
+    },
+    {
+        "q": "What attack exploits browser decoding APIs?",
+        "o": [
+            "Decoder timing reveals input characteristics",
+            "Decoding bypasses content validation",
+            "Decoder output accessible cross-origin",
+            "API enables arbitrary code execution"
+        ]
+    },
+    {
+        "q": "How can browser element enumeration be exploited?",
+        "o": [
+            "Document element count reveals page structure",
+            "Enumeration bypasses cross-origin restrictions",
+            "Element properties accessible universally",
+            "DOM enumeration reveals hidden content"
+        ]
+    },
+    {
+        "q": "What security issue affects browser content type sniffing?",
+        "o": [
+            "MIME sniffing may bypass CSP restrictions",
+            "Sniffing automatically executes scripts",
+            "Content type detected cross-origin",
+            "Sniffed types override security headers"
+        ]
+    },
+    {
+        "q": "How does browser cookie partitioning affect attacks?",
+        "o": [
+            "Partitioning bypass through related domains",
+            "Cookie partitions leak between contexts",
+            "Partitioned cookies accessible cross-origin",
+            "Partition key reveals site relationships"
+        ]
+    },
+    {
+        "q": "What attack vector uses browser storage partitioning gaps?",
+        "o": [
+            "Partition identity leakage through timing",
+            "Storage partitions share data unexpectedly",
+            "Partitioning bypassed through iframes",
+            "Partition keys accessible cross-origin"
+        ]
+    },
+    {
+        "q": "How can browser memory pressure events be exploited?",
+        "o": [
+            "Pressure changes reveal system resource usage",
+            "Memory events accessible cross-origin",
+            "Pressure timing bypasses restrictions",
+            "Low memory triggers reveal page activity"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in browser execution timing?",
+        "o": [
+            "Microtask timing creates precise measurements",
+            "Execution order bypasses origin restrictions",
+            "Task scheduling accesses cross-origin state",
+            "Timing primitives reveal all operations"
+        ]
+    },
+    {
+        "q": "How does browser network information API affect privacy?",
+        "o": [
+            "Connection type enables user fingerprinting",
+            "Network info bypasses privacy protections",
+            "API reveals detailed network topology",
+            "Information accessible without permission"
+        ]
+    },
+    {
+        "q": "What attack exploits browser task attribution?",
+        "o": [
+            "Attribution reveals cross-origin script sources",
+            "Task tracking bypasses origin isolation",
+            "Attribution data accessible universally",
+            "Task information leaks execution context"
+        ]
+    },
+    {
+        "q": "How can browser virtual keyboard API be exploited?",
+        "o": [
+            "Keyboard geometry reveals device information",
+            "API bypasses input field restrictions",
+            "Virtual keyboard accesses system events",
+            "Geometry changes reveal user input"
+        ]
+    },
+    {
+        "q": "What security issue affects browser web transport?",
+        "o": [
+            "Transport streams bypass request logging",
+            "WebTransport ignores CORS restrictions",
+            "Bidirectional streams leak cross-origin",
+            "Transport protocol enables covert channels"
+        ]
+    },
+    {
+        "q": "How does browser background sync affect tracking?",
+        "o": [
+            "Sync events fire across browsing sessions",
+            "Background sync bypasses privacy restrictions",
+            "Sync timing reveals user activity",
+            "Periodic sync enables persistent tracking"
+        ]
+    },
+    {
+        "q": "What attack vector uses browser code cache?",
+        "o": [
+            "Cached bytecode timing reveals prior execution",
+            "Code cache bypasses compilation security",
+            "Cache entries accessible cross-origin",
+            "Bytecode modification enables exploitation"
+        ]
+    },
+    {
+        "q": "How can browser input method editor be exploited?",
+        "o": [
+            "IME events reveal typed characters before commit",
+            "Input methods bypass password field protections",
+            "IME state accessible cross-origin",
+            "Method switching reveals language preferences"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in browser Permissions Policy?",
+        "o": [
+            "Policy inheritance gaps allow feature access",
+            "Permissions bypass through frame navigation",
+            "Policy conflicts grant unexpected access",
+            "Disabled features re-enabled by frames"
+        ]
+    },
+    {
+        "q": "How does browser paint holding affect security?",
+        "o": [
+            "Paint timing differences reveal content presence",
+            "Holding callbacks access cross-origin data",
+            "Paint state accessible without restrictions",
+            "Rendering delays leak authentication status"
+        ]
+    },
+    {
+        "q": "What attack exploits browser task scheduling priority?",
+        "o": [
+            "Priority changes reveal main thread activity",
+            "Scheduler timing bypasses origin isolation",
+            "Task priorities accessible cross-origin",
+            "Scheduling reveals script execution patterns"
+        ]
+    },
+    {
+        "q": "How can browser content index API be exploited?",
+        "o": [
+            "Index entries reveal offline content presence",
+            "Content indexing bypasses privacy protections",
+            "Index accessible without user consent",
+            "Entries leak browsing activity patterns"
+        ]
+    },
+    {
+        "q": "What security issue affects browser periodic background sync?",
+        "o": [
+            "Periodic timing enables cross-session tracking",
+            "Background sync bypasses user activity checks",
+            "Sync events reveal browser foreground state",
+            "Periodic tasks persist indefinitely"
+        ]
+    },
+    {
+        "q": "How does browser display-capture affect frame security?",
+        "o": [
+            "Captured content may include cross-origin frames",
+            "Display capture bypasses frame isolation",
+            "Capture permissions persist unexpectedly",
+            "Screen recording includes protected content"
+        ]
+    },
+    {
+        "q": "What attack vector uses browser scroll event timing?",
+        "o": [
+            "Scroll velocity reveals content dimensions",
+            "Scroll events accessible across frame boundaries",
+            "Timing data bypasses same-origin restrictions",
+            "Scroll position reveals hidden element sizes"
+        ]
+    },
+    {
+        "q": "How can browser contact picker API be exploited?",
+        "o": [
+            "Selected contacts reveal user relationships",
+            "Contact data cached without expiration",
+            "Picker bypasses permission requirements",
+            "Contact access persists across sessions"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in browser Web NFC API?",
+        "o": [
+            "NFC reading reveals nearby device presence",
+            "Write operations persist malicious data",
+            "NFC bypass permission requirements",
+            "Tag data accessible without indicators"
+        ]
+    },
+    {
+        "q": "How does browser keyboard lock API affect security?",
+        "o": [
+            "Lock prevents users from escaping malicious pages",
+            "Keyboard lock traps users in fullscreen attacks",
+            "Lock API accessible without permission",
+            "System shortcuts disabled maliciously"
+        ]
+    },
+    {
+        "q": "What attack exploits browser shape detection API?",
+        "o": [
+            "Face detection reveals presence in images",
+            "Detection results leak cross-origin image data",
+            "Shape APIs bypass tainted canvas checks",
+            "Detection timing reveals image content"
+        ]
+    },
+    {
+        "q": "How can browser clipboard monitoring be exploited?",
+        "o": [
+            "Read clipboard content on page focus",
+            "Clipboard monitoring bypasses user consent",
+            "Clipboard history accessible to pages",
+            "Copy events reveal selected content"
+        ]
+    },
+    {
+        "q": "What security issue affects browser barcode detection?",
+        "o": [
+            "Detection processing reveals image content",
+            "Barcode data from cross-origin images accessible",
+            "Detection bypasses canvas taint checks",
+            "Barcode results leak encoded information"
+        ]
+    },
+    {
+        "q": "How does browser idle detection affect privacy?",
+        "o": [
+            "Idle state reveals user activity patterns",
+            "Detection bypasses privacy protections",
+            "Idle timing accessible without permission",
+            "State changes enable behavioral tracking"
+        ]
+    },
+    {
+        "q": "What attack vector uses browser handwriting recognition?",
+        "o": [
+            "Recognition reveals user input patterns",
+            "Handwriting data sent to external servers",
+            "Recognition bypasses input field protections",
+            "Stroke timing reveals input content"
+        ]
+    },
+    {
+        "q": "How can browser compute pressure API be exploited?",
+        "o": [
+            "Pressure changes reveal system activity",
+            "CPU state differences fingerprint devices",
+            "Pressure timing bypasses restrictions",
+            "Thermal state reveals hardware details"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in browser Bluetooth API?",
+        "o": [
+            "Device enumeration reveals nearby peripherals",
+            "Bluetooth access persists after disconnect",
+            "API bypasses user consent dialogs",
+            "Service data accessible cross-origin"
+        ]
+    },
+    {
+        "q": "How does browser WebUSB affect system security?",
+        "o": [
+            "USB access enables firmware attacks",
+            "Device permissions persist unexpectedly",
+            "USB bypass origin restrictions",
+            "Hardware access without proper isolation"
+        ]
+    },
+    {
+        "q": "What attack exploits browser WebHID API?",
+        "o": [
+            "HID device access enables keystroke injection",
+            "Device enumeration fingerprints users",
+            "HID permissions bypass user consent",
+            "Input devices accessible cross-origin"
+        ]
+    },
+    {
+        "q": "How can browser serial API be exploited?",
+        "o": [
+            "Serial access enables hardware attacks",
+            "Port permissions persist across sessions",
+            "Serial bypass sandboxing restrictions",
+            "Device communication reveals system info"
+        ]
+    },
+    {
+        "q": "What security issue affects browser WebMIDI?",
+        "o": [
+            "SysEx access enables device reprogramming",
+            "MIDI enumeration fingerprints audio setup",
+            "API bypasses permission requirements",
+            "MIDI data accessible without consent"
+        ]
+    },
+    {
+        "q": "How does browser Direct Sockets API affect isolation?",
+        "o": [
+            "Raw socket access bypasses HTTP security",
+            "Socket connections ignore CORS restrictions",
+            "Direct network access enables SSRF",
+            "TCP connections reveal internal network"
+        ]
+    },
+    {
+        "q": "What attack vector uses browser ambient light sensor?",
+        "o": [
+            "Light levels enable screen content inference",
+            "Sensor data fingerprints device environment",
+            "Light changes reveal user activity",
+            "Ambient readings bypass permissions"
+        ]
+    },
+    {
+        "q": "How can browser accelerometer data be exploited?",
+        "o": [
+            "Motion patterns reveal typed characters",
+            "Sensor data fingerprints device models",
+            "Accelerometer bypasses permission checks",
+            "Movement timing reveals user actions"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in browser gyroscope access?",
+        "o": [
+            "Rotation data enables device fingerprinting",
+            "Gyroscope reveals physical user activity",
+            "Sensor access bypasses restrictions",
+            "Motion patterns reveal device orientation"
+        ]
+    },
+    {
+        "q": "How does browser magnetometer affect privacy?",
+        "o": [
+            "Magnetic readings reveal physical location",
+            "Sensor data fingerprints device hardware",
+            "Magnetometer bypasses permission requirements",
+            "Field changes indicate nearby devices"
+        ]
+    },
+    {
+        "q": "What attack exploits browser proximity sensor?",
+        "o": [
+            "Proximity changes reveal user presence",
+            "Sensor timing indicates phone usage patterns",
+            "Distance data bypasses privacy protections",
+            "Proximity reveals screen viewing state"
+        ]
+    },
+    {
+        "q": "How can browser orientation events be exploited?",
+        "o": [
+            "Device orientation enables keystroke inference",
+            "Tilt patterns reveal PIN entry",
+            "Orientation bypasses input protections",
+            "Motion events accessible without permission"
+        ]
+    },
+    {
+        "q": "What security issue affects browser battery status?",
+        "o": [
+            "Battery level enables user tracking",
+            "Charge status fingerprints device hardware",
+            "Battery API bypasses privacy restrictions",
+            "Capacity reveals device model details"
+        ]
+    },
+    {
+        "q": "How does browser pointer lock affect clickjacking?",
+        "o": [
+            "Lock traps cursor on malicious elements",
+            "Pointer events blocked from user detection",
+            "Lock persists after user attempts to exit",
+            "Mouse position hidden from user"
+        ]
+    },
+    {
+        "q": "What attack vector uses browser screen orientation?",
+        "o": [
+            "Orientation changes reveal device rotation",
+            "Screen state fingerprints device usage",
+            "Orientation bypasses privacy protections",
+            "Lock state reveals application context"
+        ]
+    },
+    {
+        "q": "How can browser Storage Access API handle be exploited?",
+        "o": [
+            "Handle reference enables persistent cross-site access",
+            "Storage handle bypasses partition boundaries",
+            "Access persists after permission should expire",
+            "Handle cloning enables data exfiltration"
+        ]
+    },
+    {
+        "q": "What vulnerability exists in browser font enumeration?",
+        "o": [
+            "Installed fonts fingerprint user system",
+            "Font lists reveal software and locale",
+            "Enumeration bypasses privacy protections",
+            "Font timing reveals presence details"
+        ]
+    }
+]

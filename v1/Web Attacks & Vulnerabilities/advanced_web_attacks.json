@@ -1,0 +1,4520 @@
+[
+    {
+        "q": "What is a web cache poisoning attack?",
+        "o": [
+            "Injecting malicious responses into cache",
+            "Clearing server cache data",
+            "Speeding up web page loading",
+            "Encrypting cached content"
+        ]
+    },
+    {
+        "q": "What is HTTP request smuggling?",
+        "o": [
+            "Exploiting request parsing differences",
+            "Encrypting HTTP requests",
+            "Compressing request data",
+            "Logging all HTTP traffic"
+        ]
+    },
+    {
+        "q": "What is a deserialization vulnerability?",
+        "o": [
+            "Exploiting object conversion from bytes",
+            "Encrypting serialized data",
+            "Compressing object data",
+            "Logging serialization events"
+        ]
+    },
+    {
+        "q": "What is prototype pollution in JavaScript?",
+        "o": [
+            "Modifying Object.prototype properties",
+            "Cleaning JavaScript memory",
+            "Optimizing prototype chain",
+            "Documenting object properties"
+        ]
+    },
+    {
+        "q": "What is a race condition vulnerability?",
+        "o": [
+            "Exploiting timing between operations",
+            "Speeding up application response",
+            "Synchronizing database access",
+            "Logging concurrent requests"
+        ]
+    },
+    {
+        "q": "What is DOM clobbering attack?",
+        "o": [
+            "Overwriting DOM properties via HTML",
+            "Cleaning DOM elements",
+            "Optimizing DOM rendering",
+            "Documenting DOM structure"
+        ]
+    },
+    {
+        "q": "What is HTTP header injection?",
+        "o": [
+            "Inserting malicious headers in response",
+            "Encrypting HTTP headers",
+            "Compressing header data",
+            "Logging header values"
+        ]
+    },
+    {
+        "q": "What is a business logic vulnerability?",
+        "o": [
+            "Exploiting application workflow flaws",
+            "Optimizing business processes",
+            "Documenting logic flow",
+            "Testing application features"
+        ]
+    },
+    {
+        "q": "What is GraphQL batching attack?",
+        "o": [
+            "Sending multiple queries in one request",
+            "Optimizing GraphQL performance",
+            "Caching GraphQL responses",
+            "Logging GraphQL queries"
+        ]
+    },
+    {
+        "q": "What is a mass assignment vulnerability?",
+        "o": [
+            "Modifying unintended object properties",
+            "Assigning memory efficiently",
+            "Optimizing data binding",
+            "Logging property changes"
+        ]
+    },
+    {
+        "q": "What is WebSocket hijacking?",
+        "o": [
+            "Taking over WebSocket connections",
+            "Encrypting WebSocket data",
+            "Optimizing WebSocket speed",
+            "Logging WebSocket events"
+        ]
+    },
+    {
+        "q": "What is parameter tampering attack?",
+        "o": [
+            "Modifying request parameters maliciously",
+            "Validating input parameters",
+            "Optimizing parameter handling",
+            "Logging parameter values"
+        ]
+    },
+    {
+        "q": "What is a null byte injection attack?",
+        "o": [
+            "Using null bytes to bypass filters",
+            "Encrypting null characters",
+            "Removing null values",
+            "Logging null inputs"
+        ]
+    },
+    {
+        "q": "What is HTTP verb tampering?",
+        "o": [
+            "Using unexpected HTTP methods",
+            "Encrypting HTTP verbs",
+            "Documenting HTTP methods",
+            "Logging HTTP requests"
+        ]
+    },
+    {
+        "q": "What is a timing attack?",
+        "o": [
+            "Extracting info from response times",
+            "Speeding up server response",
+            "Optimizing application timing",
+            "Logging response durations"
+        ]
+    },
+    {
+        "q": "What is subdomain takeover?",
+        "o": [
+            "Claiming unconfigured subdomains",
+            "Managing DNS records",
+            "Optimizing subdomain routing",
+            "Logging subdomain access"
+        ]
+    },
+    {
+        "q": "What is web socket origin bypass?",
+        "o": [
+            "Bypassing origin validation checks",
+            "Validating WebSocket origins",
+            "Optimizing origin checks",
+            "Logging origin headers"
+        ]
+    },
+    {
+        "q": "What is a CORS misconfiguration?",
+        "o": [
+            "Improperly configured cross-origin policy",
+            "Enabling CORS headers",
+            "Optimizing CORS performance",
+            "Logging CORS requests"
+        ]
+    },
+    {
+        "q": "What is response splitting attack?",
+        "o": [
+            "Injecting headers to split response",
+            "Compressing response data",
+            "Optimizing response size",
+            "Logging response content"
+        ]
+    },
+    {
+        "q": "What is clickjacking attack?",
+        "o": [
+            "Tricking users via hidden frames",
+            "Optimizing click handling",
+            "Logging user clicks",
+            "Validating click events"
+        ]
+    },
+    {
+        "q": "What is an open redirect vulnerability?",
+        "o": [
+            "Redirecting to external malicious sites",
+            "Optimizing redirect performance",
+            "Logging redirect events",
+            "Validating redirect URLs"
+        ]
+    },
+    {
+        "q": "What is session puzzling attack?",
+        "o": [
+            "Confusing session variable handling",
+            "Optimizing session management",
+            "Logging session events",
+            "Validating session data"
+        ]
+    },
+    {
+        "q": "What is cookie tossing attack?",
+        "o": [
+            "Setting cookies from subdomains",
+            "Optimizing cookie storage",
+            "Logging cookie values",
+            "Validating cookie data"
+        ]
+    },
+    {
+        "q": "What is a JSONP hijacking attack?",
+        "o": [
+            "Stealing data via JSONP callbacks",
+            "Optimizing JSONP responses",
+            "Logging JSONP requests",
+            "Validating JSONP data"
+        ]
+    },
+    {
+        "q": "What is host header injection?",
+        "o": [
+            "Manipulating Host header for exploits",
+            "Optimizing host resolution",
+            "Logging host headers",
+            "Validating host values"
+        ]
+    },
+    {
+        "q": "What is a web shell attack?",
+        "o": [
+            "Uploading malicious scripts for control",
+            "Optimizing shell scripts",
+            "Logging shell commands",
+            "Validating script uploads"
+        ]
+    },
+    {
+        "q": "What is JWT algorithm confusion?",
+        "o": [
+            "Tricking server with wrong algorithm",
+            "Optimizing JWT performance",
+            "Logging JWT tokens",
+            "Validating JWT claims"
+        ]
+    },
+    {
+        "q": "What is cache deception attack?",
+        "o": [
+            "Tricking cache to store sensitive data",
+            "Optimizing cache storage",
+            "Logging cache entries",
+            "Validating cached content"
+        ]
+    },
+    {
+        "q": "What is HTTP/2 rapid reset attack?",
+        "o": [
+            "Sending many reset frames for DoS",
+            "Optimizing HTTP/2 streams",
+            "Logging HTTP/2 frames",
+            "Validating reset handling"
+        ]
+    },
+    {
+        "q": "What is Server-Side Template Injection?",
+        "o": [
+            "Injecting code in template engines",
+            "Optimizing template rendering",
+            "Logging template output",
+            "Validating template data"
+        ]
+    },
+    {
+        "q": "What is a second-order SQL injection?",
+        "o": [
+            "Stored payload executed later",
+            "Optimizing SQL queries",
+            "Logging SQL statements",
+            "Validating SQL input"
+        ]
+    },
+    {
+        "q": "What is OAuth implicit flow vulnerability?",
+        "o": [
+            "Token exposure in browser history",
+            "Optimizing OAuth flow",
+            "Logging OAuth tokens",
+            "Validating OAuth requests"
+        ]
+    },
+    {
+        "q": "What is content type confusion?",
+        "o": [
+            "Misinterpreting file content types",
+            "Optimizing content handling",
+            "Logging content types",
+            "Validating file types"
+        ]
+    },
+    {
+        "q": "What is a path normalization attack?",
+        "o": [
+            "Bypassing ACL via path manipulation",
+            "Optimizing path handling",
+            "Logging path requests",
+            "Validating file paths"
+        ]
+    },
+    {
+        "q": "What is DNS rebinding attack?",
+        "o": [
+            "Changing DNS to access internal network",
+            "Optimizing DNS resolution",
+            "Logging DNS queries",
+            "Validating DNS responses"
+        ]
+    },
+    {
+        "q": "What is password reset poisoning?",
+        "o": [
+            "Manipulating reset link generation",
+            "Optimizing reset flow",
+            "Logging reset requests",
+            "Validating reset tokens"
+        ]
+    },
+    {
+        "q": "What is account enumeration?",
+        "o": [
+            "Discovering valid usernames via responses",
+            "Optimizing account lookup",
+            "Logging account queries",
+            "Validating account data"
+        ]
+    },
+    {
+        "q": "What is privilege escalation?",
+        "o": [
+            "Gaining higher access than authorized",
+            "Optimizing privilege checks",
+            "Logging privilege changes",
+            "Validating user roles"
+        ]
+    },
+    {
+        "q": "What is a logic bomb attack?",
+        "o": [
+            "Malicious code triggered by condition",
+            "Optimizing code logic",
+            "Logging logic execution",
+            "Validating code paths"
+        ]
+    },
+    {
+        "q": "What is a watering hole attack?",
+        "o": [
+            "Compromising sites victims visit",
+            "Optimizing site traffic",
+            "Logging visitor data",
+            "Validating site content"
+        ]
+    },
+    {
+        "q": "What is formjacking attack?",
+        "o": [
+            "Injecting malicious form scripts",
+            "Optimizing form handling",
+            "Logging form submissions",
+            "Validating form data"
+        ]
+    },
+    {
+        "q": "What is a CSRF token bypass?",
+        "o": [
+            "Circumventing anti-CSRF protections",
+            "Optimizing CSRF tokens",
+            "Logging CSRF attempts",
+            "Validating token format"
+        ]
+    },
+    {
+        "q": "What is path parameter pollution?",
+        "o": [
+            "Injecting multiple path segments",
+            "Optimizing path routing",
+            "Logging path parameters",
+            "Validating URL paths"
+        ]
+    },
+    {
+        "q": "What is Unicode normalization attack?",
+        "o": [
+            "Exploiting Unicode encoding differences",
+            "Optimizing Unicode handling",
+            "Logging Unicode input",
+            "Validating character encoding"
+        ]
+    },
+    {
+        "q": "What is type juggling vulnerability?",
+        "o": [
+            "Exploiting loose type comparison",
+            "Optimizing type checking",
+            "Logging type conversions",
+            "Validating data types"
+        ]
+    },
+    {
+        "q": "What is ReDoS attack?",
+        "o": [
+            "Causing regex evaluation hang",
+            "Optimizing regex patterns",
+            "Logging regex matches",
+            "Validating regex input"
+        ]
+    },
+    {
+        "q": "What is blind XSS attack?",
+        "o": [
+            "XSS payload triggers in admin panel",
+            "Optimizing XSS detection",
+            "Logging XSS attempts",
+            "Validating XSS input"
+        ]
+    },
+    {
+        "q": "What is mutation XSS?",
+        "o": [
+            "Bypassing sanitizers via DOM mutation",
+            "Optimizing DOM handling",
+            "Logging DOM changes",
+            "Validating HTML input"
+        ]
+    },
+    {
+        "q": "What is polyglot injection?",
+        "o": [
+            "Payload valid in multiple contexts",
+            "Optimizing payload detection",
+            "Logging injection attempts",
+            "Validating input formats"
+        ]
+    },
+    {
+        "q": "What is CSS injection attack?",
+        "o": [
+            "Injecting malicious CSS for data theft",
+            "Optimizing CSS rendering",
+            "Logging CSS changes",
+            "Validating style input"
+        ]
+    },
+    {
+        "q": "What is NoSQL injection?",
+        "o": [
+            "Injecting queries in NoSQL databases",
+            "Optimizing NoSQL queries",
+            "Logging NoSQL operations",
+            "Validating NoSQL input"
+        ]
+    },
+    {
+        "q": "What is LDAP injection attack?",
+        "o": [
+            "Injecting LDAP query syntax",
+            "Optimizing LDAP queries",
+            "Logging LDAP searches",
+            "Validating LDAP input"
+        ]
+    },
+    {
+        "q": "What is XPath injection?",
+        "o": [
+            "Injecting XPath query expressions",
+            "Optimizing XPath queries",
+            "Logging XPath searches",
+            "Validating XPath input"
+        ]
+    },
+    {
+        "q": "What is XXE out-of-band attack?",
+        "o": [
+            "Exfiltrating data via external entity",
+            "Optimizing XML parsing",
+            "Logging XML entities",
+            "Validating XML input"
+        ]
+    },
+    {
+        "q": "What is DOM-based open redirect?",
+        "o": [
+            "Redirect via JavaScript URL handling",
+            "Optimizing redirect logic",
+            "Logging redirect events",
+            "Validating redirect URLs"
+        ]
+    },
+    {
+        "q": "What is HTTP parameter pollution?",
+        "o": [
+            "Sending duplicate parameters",
+            "Optimizing parameter handling",
+            "Logging parameter values",
+            "Validating parameter input"
+        ]
+    },
+    {
+        "q": "What is session fixation attack?",
+        "o": [
+            "Forcing known session ID on victim",
+            "Optimizing session handling",
+            "Logging session events",
+            "Validating session tokens"
+        ]
+    },
+    {
+        "q": "What is credential stuffing attack?",
+        "o": [
+            "Using leaked credentials on other sites",
+            "Optimizing login flow",
+            "Logging login attempts",
+            "Validating credentials"
+        ]
+    },
+    {
+        "q": "What is brute force attack on web apps?",
+        "o": [
+            "Systematically trying all passwords",
+            "Optimizing password validation",
+            "Logging failed logins",
+            "Validating password strength"
+        ]
+    },
+    {
+        "q": "What is directory bruteforcing?",
+        "o": [
+            "Finding hidden paths via wordlists",
+            "Optimizing directory listing",
+            "Logging directory access",
+            "Validating path existence"
+        ]
+    },
+    {
+        "q": "What is SSRF via PDF generation?",
+        "o": [
+            "Fetching internal resources in PDFs",
+            "Optimizing PDF creation",
+            "Logging PDF generation",
+            "Validating PDF content"
+        ]
+    },
+    {
+        "q": "What is vulnerable dependency attack?",
+        "o": [
+            "Exploiting outdated library flaws",
+            "Optimizing dependency management",
+            "Logging dependency versions",
+            "Validating library updates"
+        ]
+    },
+    {
+        "q": "What is insecure direct object reference?",
+        "o": [
+            "Accessing objects via ID manipulation",
+            "Optimizing object access",
+            "Logging object requests",
+            "Validating object permissions"
+        ]
+    },
+    {
+        "q": "What is server misconfiguration vulnerability?",
+        "o": [
+            "Exploiting improper server settings",
+            "Optimizing server config",
+            "Logging config changes",
+            "Validating server setup"
+        ]
+    },
+    {
+        "q": "What is information disclosure vulnerability?",
+        "o": [
+            "Exposing sensitive data unintentionally",
+            "Optimizing data handling",
+            "Logging data access",
+            "Validating data exposure"
+        ]
+    },
+    {
+        "q": "What is error-based information disclosure?",
+        "o": [
+            "Revealing info via error messages",
+            "Optimizing error handling",
+            "Logging error events",
+            "Validating error output"
+        ]
+    },
+    {
+        "q": "What is source code disclosure?",
+        "o": [
+            "Exposing application source files",
+            "Optimizing code deployment",
+            "Logging file access",
+            "Validating file permissions"
+        ]
+    },
+    {
+        "q": "What is backup file disclosure?",
+        "o": [
+            "Accessing exposed backup files",
+            "Optimizing backup storage",
+            "Logging backup access",
+            "Validating backup security"
+        ]
+    },
+    {
+        "q": "What is debug endpoint exposure?",
+        "o": [
+            "Accessing debug interfaces in production",
+            "Optimizing debug features",
+            "Logging debug access",
+            "Validating debug settings"
+        ]
+    },
+    {
+        "q": "What is API key exposure vulnerability?",
+        "o": [
+            "Leaking API keys in client code",
+            "Optimizing API key usage",
+            "Logging API key access",
+            "Validating key permissions"
+        ]
+    },
+    {
+        "q": "What is hardcoded credentials vulnerability?",
+        "o": [
+            "Credentials embedded in source code",
+            "Optimizing credential management",
+            "Logging credential usage",
+            "Validating credential storage"
+        ]
+    },
+    {
+        "q": "What is insecure cookie attributes?",
+        "o": [
+            "Missing Secure or HttpOnly flags",
+            "Optimizing cookie settings",
+            "Logging cookie values",
+            "Validating cookie format"
+        ]
+    },
+    {
+        "q": "What is weak password policy?",
+        "o": [
+            "Allowing easily guessable passwords",
+            "Optimizing password checks",
+            "Logging password changes",
+            "Validating password input"
+        ]
+    },
+    {
+        "q": "What is missing rate limiting?",
+        "o": [
+            "No restriction on request frequency",
+            "Optimizing rate limits",
+            "Logging request rates",
+            "Validating rate policies"
+        ]
+    },
+    {
+        "q": "What is insufficient logging vulnerability?",
+        "o": [
+            "Not recording security events",
+            "Optimizing log storage",
+            "Configuring log rotation",
+            "Validating log formats"
+        ]
+    },
+    {
+        "q": "What is sensitive data in URL parameters?",
+        "o": [
+            "Passing secrets in query strings",
+            "Optimizing URL handling",
+            "Logging URL parameters",
+            "Validating URL formats"
+        ]
+    },
+    {
+        "q": "What is unvalidated redirect parameter?",
+        "o": [
+            "Redirect URL not checked properly",
+            "Optimizing redirect performance",
+            "Logging redirect events",
+            "Validating redirect logic"
+        ]
+    },
+    {
+        "q": "What is insecure file upload location?",
+        "o": [
+            "Uploads in web-accessible directory",
+            "Optimizing upload storage",
+            "Logging upload events",
+            "Validating upload paths"
+        ]
+    },
+    {
+        "q": "What is missing Content-Type validation?",
+        "o": [
+            "Not checking uploaded file types",
+            "Optimizing content handling",
+            "Logging content types",
+            "Validating content format"
+        ]
+    },
+    {
+        "q": "What is path traversal via file upload name?",
+        "o": [
+            "Using ../ in uploaded filename",
+            "Optimizing filename handling",
+            "Logging file uploads",
+            "Validating file names"
+        ]
+    },
+    {
+        "q": "What is stored XSS in file metadata?",
+        "o": [
+            "XSS payload in file properties",
+            "Optimizing metadata handling",
+            "Logging metadata access",
+            "Validating metadata content"
+        ]
+    },
+    {
+        "q": "What is insufficient authorization checks?",
+        "o": [
+            "Not verifying user permissions",
+            "Optimizing auth checks",
+            "Logging auth events",
+            "Validating user roles"
+        ]
+    },
+    {
+        "q": "What is horizontal privilege escalation?",
+        "o": [
+            "Accessing same-level user resources",
+            "Optimizing access control",
+            "Logging access attempts",
+            "Validating user context"
+        ]
+    },
+    {
+        "q": "What is vertical privilege escalation?",
+        "o": [
+            "Gaining higher privilege level access",
+            "Optimizing privilege model",
+            "Logging privilege changes",
+            "Validating role hierarchy"
+        ]
+    },
+    {
+        "q": "What is function level access control bypass?",
+        "o": [
+            "Accessing admin functions as user",
+            "Optimizing function access",
+            "Logging function calls",
+            "Validating function permissions"
+        ]
+    },
+    {
+        "q": "What is broken object level authorization?",
+        "o": [
+            "Not checking object ownership",
+            "Optimizing object access",
+            "Logging object requests",
+            "Validating object permissions"
+        ]
+    },
+    {
+        "q": "What is insecure API endpoint?",
+        "o": [
+            "API lacking proper authentication",
+            "Optimizing API performance",
+            "Logging API requests",
+            "Validating API responses"
+        ]
+    },
+    {
+        "q": "What is GraphQL introspection abuse?",
+        "o": [
+            "Discovering schema via introspection",
+            "Optimizing GraphQL queries",
+            "Logging GraphQL operations",
+            "Validating GraphQL input"
+        ]
+    },
+    {
+        "q": "What is excessive data exposure in API?",
+        "o": [
+            "Returning more data than needed",
+            "Optimizing API responses",
+            "Logging API data",
+            "Validating response size"
+        ]
+    },
+    {
+        "q": "What is lack of resources and rate limiting?",
+        "o": [
+            "No limits on API consumption",
+            "Optimizing resource usage",
+            "Logging resource access",
+            "Validating usage quotas"
+        ]
+    },
+    {
+        "q": "What is broken function level authorization API?",
+        "o": [
+            "Normal user accesses admin endpoints",
+            "Optimizing endpoint access",
+            "Logging API calls",
+            "Validating user permissions"
+        ]
+    },
+    {
+        "q": "What is security misconfiguration in API?",
+        "o": [
+            "Default settings left in production",
+            "Optimizing API config",
+            "Logging config changes",
+            "Validating API settings"
+        ]
+    },
+    {
+        "q": "What is injection in API parameters?",
+        "o": [
+            "Injecting malicious data via API",
+            "Optimizing parameter handling",
+            "Logging API parameters",
+            "Validating API input"
+        ]
+    },
+    {
+        "q": "What is improper assets management?",
+        "o": [
+            "Old API versions still accessible",
+            "Optimizing asset tracking",
+            "Logging asset access",
+            "Validating asset inventory"
+        ]
+    },
+    {
+        "q": "What is insufficient logging in APIs?",
+        "o": [
+            "Not recording API security events",
+            "Optimizing log performance",
+            "Configuring API logging",
+            "Validating log data"
+        ]
+    },
+    {
+        "q": "What is unsafe consumption of APIs?",
+        "o": [
+            "Trusting third-party API data blindly",
+            "Optimizing API consumption",
+            "Logging external API calls",
+            "Validating API responses"
+        ]
+    },
+    {
+        "q": "What is server-side request forgery basic?",
+        "o": [
+            "Making server request to internal target",
+            "Optimizing server requests",
+            "Logging server connections",
+            "Validating request targets"
+        ]
+    },
+    {
+        "q": "What is basic XXE vulnerability?",
+        "o": [
+            "Parsing malicious XML with entities",
+            "Optimizing XML processing",
+            "Logging XML parsing",
+            "Validating XML structure"
+        ]
+    },
+    {
+        "q": "How does HTTP request smuggling exploit CL.TE desync?",
+        "o": [
+            "Content-Length vs Transfer-Encoding conflict",
+            "Both headers processed identically",
+            "Only one header is ever used",
+            "Headers are always synchronized"
+        ]
+    },
+    {
+        "q": "What is the impact of web cache poisoning with unkeyed headers?",
+        "o": [
+            "Malicious response cached for all users",
+            "Only affects requesting user",
+            "Cache automatically filters malicious content",
+            "Headers are always part of cache key"
+        ]
+    },
+    {
+        "q": "How does deserialization attack achieve remote code execution?",
+        "o": [
+            "Gadget chains trigger dangerous methods",
+            "Serialized data cannot execute code",
+            "Only data modification is possible",
+            "Deserialization is always safe"
+        ]
+    },
+    {
+        "q": "What is prototype pollution via JSON.parse?",
+        "o": [
+            "Parsing __proto__ key modifies prototype",
+            "JSON.parse cannot affect prototypes",
+            "Only affects parsed object",
+            "Prototype is immutable in JavaScript"
+        ]
+    },
+    {
+        "q": "How do race conditions exploit TOCTOU vulnerabilities?",
+        "o": [
+            "State changes between check and use",
+            "Checks and operations are atomic",
+            "Only single-threaded apps affected",
+            "TOCTOU is not exploitable"
+        ]
+    },
+    {
+        "q": "What is DOM clobbering via named element access?",
+        "o": [
+            "HTML IDs override window properties",
+            "Named access is always safe",
+            "Only affects local variables",
+            "Window properties are protected"
+        ]
+    },
+    {
+        "q": "How does CRLF injection enable header injection?",
+        "o": [
+            "Newline chars create additional headers",
+            "CRLF is always filtered",
+            "Only affects response body",
+            "Headers cannot be injected"
+        ]
+    },
+    {
+        "q": "What is business logic flaw in e-commerce pricing?",
+        "o": [
+            "Negative quantity or discount manipulation",
+            "Prices are always server-validated",
+            "Only display is affected",
+            "Transactions are always verified"
+        ]
+    },
+    {
+        "q": "How does GraphQL nested query attack work?",
+        "o": [
+            "Deeply nested queries cause resource exhaustion",
+            "Nesting depth is always limited",
+            "Queries are automatically optimized",
+            "Nested queries are prevented"
+        ]
+    },
+    {
+        "q": "What is mass assignment in Rails strong parameters bypass?",
+        "o": [
+            "Permit bypassed via nested attributes",
+            "Strong parameters are absolute",
+            "Only whitelisted params assigned",
+            "Mass assignment is fully prevented"
+        ]
+    },
+    {
+        "q": "How does cross-site WebSocket hijacking work?",
+        "o": [
+            "WebSocket lacks same-origin by default",
+            "WebSockets enforce same-origin always",
+            "Cookies not sent with WebSocket",
+            "Only HTTPS WebSockets affected"
+        ]
+    },
+    {
+        "q": "What is parameter tampering in signed requests?",
+        "o": [
+            "Modifying non-signed parameters",
+            "All parameters are always signed",
+            "Signatures cover entire request",
+            "Tampering invalidates signature"
+        ]
+    },
+    {
+        "q": "How does null byte bypass file extension checks?",
+        "o": [
+            "Null terminates string in C-based code",
+            "Null bytes are always sanitized",
+            "Only affects filename display",
+            "Extensions checked after null"
+        ]
+    },
+    {
+        "q": "What is HTTP verb tampering to bypass access control?",
+        "o": [
+            "Methods like HEAD bypass POST-only checks",
+            "All HTTP methods enforced equally",
+            "Verbs cannot bypass security",
+            "Only GET and POST are allowed"
+        ]
+    },
+    {
+        "q": "How do timing attacks leak password characters?",
+        "o": [
+            "Character comparison time differences",
+            "All comparisons take same time",
+            "Timing is not measurable remotely",
+            "Passwords are hashed before compare"
+        ]
+    },
+    {
+        "q": "What is subdomain takeover via dangling CNAME?",
+        "o": [
+            "Claiming expired cloud service endpoint",
+            "CNAME records are always verified",
+            "Expired endpoints are cleaned up",
+            "Subdomains cannot be taken over"
+        ]
+    },
+    {
+        "q": "How does WebSocket origin validation bypass work?",
+        "o": [
+            "Origin header can be spoofed from browser",
+            "Origin header is unforgeable",
+            "Browsers validate origin strictly",
+            "WebSocket ignores origin header"
+        ]
+    },
+    {
+        "q": "What is CORS null origin bypass?",
+        "o": [
+            "Sandboxed iframes send null origin",
+            "Null origin is never accepted",
+            "CORS blocks all null origins",
+            "Only valid domains are allowed"
+        ]
+    },
+    {
+        "q": "How does response splitting enable XSS?",
+        "o": [
+            "Injecting full HTTP response with script",
+            "Response splitting is prevented",
+            "Only headers can be injected",
+            "Body content is always escaped"
+        ]
+    },
+    {
+        "q": "What is clickjacking via transparent overlay?",
+        "o": [
+            "Invisible frame over visible content",
+            "Transparency is not possible",
+            "Users always see actual clicks",
+            "Frames cannot be transparent"
+        ]
+    },
+    {
+        "q": "How does open redirect enable OAuth token theft?",
+        "o": [
+            "Token sent to attacker-controlled URL",
+            "OAuth validates all redirect URIs",
+            "Tokens are never in redirect",
+            "Only authorized redirects allowed"
+        ]
+    },
+    {
+        "q": "What is session puzzling via shared session variables?",
+        "o": [
+            "One flow sets variables another uses",
+            "Session variables are flow-specific",
+            "Each feature has isolated session",
+            "Variables are never shared"
+        ]
+    },
+    {
+        "q": "How does cookie tossing exploit subdomain cookies?",
+        "o": [
+            "Subdomain overwrites parent domain cookie",
+            "Parent cookies take precedence",
+            "Subdomains cannot set parent cookies",
+            "Cookie scope prevents tossing"
+        ]
+    },
+    {
+        "q": "What is JSONP callback manipulation?",
+        "o": [
+            "Attacker controls callback function name",
+            "Callback names are strictly validated",
+            "Only alphanumeric callbacks allowed",
+            "JSONP escapes all special chars"
+        ]
+    },
+    {
+        "q": "How does host header injection affect password reset?",
+        "o": [
+            "Reset link uses attacker-controlled host",
+            "Host header is always verified",
+            "Reset links use hardcoded domain",
+            "Email contains only token"
+        ]
+    },
+    {
+        "q": "What is web shell persistence technique?",
+        "o": [
+            "Hidden shell survives reboots in webroot",
+            "Web shells are easily detected",
+            "Reboots clear all web shells",
+            "Shells cannot persist long-term"
+        ]
+    },
+    {
+        "q": "How does JWT none algorithm attack work?",
+        "o": [
+            "Changing algorithm to none removes sig check",
+            "None algorithm is always blocked",
+            "Signatures required for all JWTs",
+            "Algorithm changes are validated"
+        ]
+    },
+    {
+        "q": "What is cache deception via path confusion?",
+        "o": [
+            "Appending static extension to dynamic path",
+            "Cache validates content types",
+            "Only static files are cached",
+            "Path extensions are ignored"
+        ]
+    },
+    {
+        "q": "How does HTTP/2 rapid reset attack cause DoS?",
+        "o": [
+            "Many stream resets exhaust server resources",
+            "Reset frames are rate limited",
+            "Servers handle resets efficiently",
+            "Only client resources affected"
+        ]
+    },
+    {
+        "q": "What is SSTI basic template expression injection?",
+        "o": [
+            "Math expressions evaluated by template engine",
+            "Templates only render static content",
+            "Expressions are escaped automatically",
+            "Template syntax is not executable"
+        ]
+    },
+    {
+        "q": "How does second-order SQL injection bypass WAF?",
+        "o": [
+            "Payload stored then executed later",
+            "WAF checks all query executions",
+            "Stored data is always escaped",
+            "Only direct injection works"
+        ]
+    },
+    {
+        "q": "What is OAuth token leakage via Referer header?",
+        "o": [
+            "Token in URL sent via Referer to third party",
+            "Tokens are never in URLs",
+            "Referer header strips tokens",
+            "OAuth prevents Referer leakage"
+        ]
+    },
+    {
+        "q": "How does content type sniffing enable attacks?",
+        "o": [
+            "Browser interprets file as different type",
+            "Content-Type is always respected",
+            "Sniffing is disabled by default",
+            "Only declared types are used"
+        ]
+    },
+    {
+        "q": "What is path normalization bypass via encoding?",
+        "o": [
+            "Encoded slashes bypass path checks",
+            "All path encodings are normalized",
+            "Servers decode before checking",
+            "Encoding is not allowed in paths"
+        ]
+    },
+    {
+        "q": "How does DNS rebinding bypass same-origin policy?",
+        "o": [
+            "DNS changes after browser check",
+            "Browsers cache DNS for session",
+            "Same-origin checks use IP only",
+            "DNS cannot change mid-session"
+        ]
+    },
+    {
+        "q": "What is password reset token prediction?",
+        "o": [
+            "Weak token generation allows guessing",
+            "Tokens are cryptographically random",
+            "Token space is too large to predict",
+            "Each token is unique per user"
+        ]
+    },
+    {
+        "q": "How does username enumeration via timing work?",
+        "o": [
+            "Valid vs invalid user takes different time",
+            "Login always takes constant time",
+            "Timing differences are not measurable",
+            "User lookup is not timed differently"
+        ]
+    },
+    {
+        "q": "What is privilege escalation via forced browsing?",
+        "o": [
+            "Accessing admin URLs without link",
+            "Admin URLs require authentication",
+            "URLs are not guessable",
+            "All paths are protected equally"
+        ]
+    },
+    {
+        "q": "How does logic bomb trigger on specific condition?",
+        "o": [
+            "Malicious code activates on date or event",
+            "Code is executed immediately",
+            "Triggers are easily detected",
+            "Conditions cannot hide code"
+        ]
+    },
+    {
+        "q": "What is watering hole via compromised CDN?",
+        "o": [
+            "Malicious scripts injected via CDN resource",
+            "CDNs have integrity checks always",
+            "Third-party scripts are sandboxed",
+            "Only first-party scripts execute"
+        ]
+    },
+    {
+        "q": "How does formjacking capture payment data?",
+        "o": [
+            "Injected script reads form inputs",
+            "Payment forms are isolated",
+            "Form data cannot be intercepted",
+            "Only secure forms are used"
+        ]
+    },
+    {
+        "q": "What is CSRF token fixation attack?",
+        "o": [
+            "Setting known token before victim visits",
+            "Tokens are regenerated per session",
+            "Fixation is not possible with CSRF",
+            "Tokens are tied to user identity"
+        ]
+    },
+    {
+        "q": "How does path parameter pollution bypass routing?",
+        "o": [
+            "Multiple path segments confuse router",
+            "Routers handle multiple params correctly",
+            "Only first parameter is used",
+            "Pollution is automatically detected"
+        ]
+    },
+    {
+        "q": "What is Unicode case mapping vulnerability?",
+        "o": [
+            "Uppercase and lowercase differ per locale",
+            "Case mapping is universal",
+            "Unicode is handled consistently",
+            "Only ASCII case matters"
+        ]
+    },
+    {
+        "q": "How does type juggling bypass password checks in PHP?",
+        "o": [
+            "String 0e hash equals integer 0",
+            "Type comparison is always strict",
+            "Passwords are compared correctly",
+            "PHP uses secure comparison"
+        ]
+    },
+    {
+        "q": "What is ReDoS via nested quantifiers?",
+        "o": [
+            "Exponential backtracking on mismatch",
+            "Regex engines optimize backtracking",
+            "Quantifiers are always efficient",
+            "Nesting is not allowed"
+        ]
+    },
+    {
+        "q": "How does blind XSS exfiltrate cookies?",
+        "o": [
+            "Payload sends cookies to attacker server",
+            "Admin cookies are HttpOnly",
+            "XSS cannot access cookies",
+            "Blind XSS cannot exfiltrate"
+        ]
+    },
+    {
+        "q": "What is mutation XSS via innerHTML sanitization?",
+        "o": [
+            "Safe HTML becomes dangerous after parsing",
+            "Sanitized HTML is always safe",
+            "innerHTML prevents XSS",
+            "Mutation does not occur"
+        ]
+    },
+    {
+        "q": "How does polyglot XSS bypass multiple filters?",
+        "o": [
+            "Single payload works in multiple contexts",
+            "Filters check all contexts",
+            "Polyglots are easily detected",
+            "Context-specific filtering prevents this"
+        ]
+    },
+    {
+        "q": "What is CSS exfiltration via attribute selectors?",
+        "o": [
+            "Background image leaks attribute values",
+            "CSS cannot read attribute values",
+            "Selectors only style elements",
+            "Attribute values are not exposed"
+        ]
+    },
+    {
+        "q": "How does NoSQL operator injection work?",
+        "o": [
+            "Injecting $gt or $ne operators in query",
+            "Operators are always escaped",
+            "NoSQL queries are parameterized",
+            "Only exact matches are queried"
+        ]
+    },
+    {
+        "q": "What is LDAP filter injection?",
+        "o": [
+            "Injecting OR conditions to bypass auth",
+            "LDAP filters are parameterized",
+            "Special chars are escaped",
+            "Only AND operations allowed"
+        ]
+    },
+    {
+        "q": "How does XPath injection extract data?",
+        "o": [
+            "Boolean queries reveal character values",
+            "XPath is read-only language",
+            "Data cannot be exfiltrated",
+            "Queries are parameterized"
+        ]
+    },
+    {
+        "q": "What is OOB XXE via error messages?",
+        "o": [
+            "Error includes external resource content",
+            "Errors do not include external data",
+            "XXE cannot use error channel",
+            "Messages are sanitized"
+        ]
+    },
+    {
+        "q": "How does DOM-based redirect use location properties?",
+        "o": [
+            "JavaScript reads hash or search for URL",
+            "DOM APIs sanitize redirect URLs",
+            "Location is read-only property",
+            "Only server-side redirects work"
+        ]
+    },
+    {
+        "q": "What is HPP priority parsing bypass?",
+        "o": [
+            "Backend uses last param while WAF checks first",
+            "All parsers use same parameter",
+            "Duplicate params are rejected",
+            "WAF and backend are synchronized"
+        ]
+    },
+    {
+        "q": "How does session fixation via URL parameter work?",
+        "o": [
+            "Session ID in URL accepted by server",
+            "URL session IDs are rejected",
+            "Only cookie sessions are valid",
+            "Sessions regenerate on login"
+        ]
+    },
+    {
+        "q": "What is credential stuffing with automation?",
+        "o": [
+            "Bots test many credential pairs rapidly",
+            "Rate limiting prevents automation",
+            "CAPTCHA blocks all bots",
+            "Credentials are always unique"
+        ]
+    },
+    {
+        "q": "How does smart wordlist improve brute force?",
+        "o": [
+            "Common passwords tried first",
+            "All passwords equally likely",
+            "Wordlists are ineffective",
+            "Random attempts work better"
+        ]
+    },
+    {
+        "q": "What is recursive directory fuzzing?",
+        "o": [
+            "Discover paths then fuzz subdirectories",
+            "Only top-level paths are found",
+            "Recursion is blocked by servers",
+            "Subdirectories are not accessible"
+        ]
+    },
+    {
+        "q": "How does SSRF exploit URL parsers?",
+        "o": [
+            "Different parsing of URL components",
+            "URLs are parsed consistently",
+            "Parser differences are patched",
+            "Only standard URLs accepted"
+        ]
+    },
+    {
+        "q": "What is dependency confusion attack?",
+        "o": [
+            "Public package with same name as private",
+            "Package managers check private first",
+            "Names are globally unique",
+            "Private packages are protected"
+        ]
+    },
+    {
+        "q": "How does IDOR exploit predictable IDs?",
+        "o": [
+            "Sequential IDs allow enumeration",
+            "IDs are always random UUIDs",
+            "Predictable IDs are not used",
+            "Authorization prevents enumeration"
+        ]
+    },
+    {
+        "q": "What is directory listing information disclosure?",
+        "o": [
+            "Exposed file listing reveals structure",
+            "Listing is disabled by default",
+            "Only public files are shown",
+            "Directories are always hidden"
+        ]
+    },
+    {
+        "q": "How does verbose error expose stack trace?",
+        "o": [
+            "Debug mode shows internal code paths",
+            "Errors are always generic",
+            "Stack traces are filtered",
+            "Debug mode cannot be enabled"
+        ]
+    },
+    {
+        "q": "What is source map disclosure?",
+        "o": [
+            "JavaScript source maps reveal original code",
+            "Source maps are server-only",
+            "Minified code cannot be reversed",
+            "Maps are always removed in prod"
+        ]
+    },
+    {
+        "q": "How does git repository exposure work?",
+        "o": [
+            "Accessible .git folder leaks source code",
+            "Git folders are hidden by server",
+            "Only public repos are exposed",
+            "Git requires authentication"
+        ]
+    },
+    {
+        "q": "What is phpinfo page information disclosure?",
+        "o": [
+            "Configuration details reveal attack vectors",
+            "Phpinfo is disabled by default",
+            "Only version is displayed",
+            "Configuration is not sensitive"
+        ]
+    },
+    {
+        "q": "How does API documentation exposure help attackers?",
+        "o": [
+            "Swagger UI reveals all endpoints",
+            "Docs are always authenticated",
+            "Only public endpoints documented",
+            "Documentation is internal only"
+        ]
+    },
+    {
+        "q": "What is hardcoded secret in JavaScript?",
+        "o": [
+            "API keys visible in client-side code",
+            "JavaScript is obfuscated securely",
+            "Keys are encrypted in browser",
+            "Secrets cannot be embedded"
+        ]
+    },
+    {
+        "q": "How does SameSite cookie attribute protect?",
+        "o": [
+            "Restricts cookie sending to same site",
+            "All cookies are sent everywhere",
+            "SameSite is not widely supported",
+            "Only affects third-party cookies"
+        ]
+    },
+    {
+        "q": "What is password complexity bypass via unicode?",
+        "o": [
+            "Unicode chars satisfy complexity falsely",
+            "Complexity checks normalize unicode",
+            "Only ASCII is considered",
+            "All characters strengthen password"
+        ]
+    },
+    {
+        "q": "How does missing rate limit enable account takeover?",
+        "o": [
+            "Unlimited OTP or reset attempts",
+            "Rate limits are always present",
+            "OTPs expire too quickly",
+            "Attempts are logged and blocked"
+        ]
+    },
+    {
+        "q": "What is security event logging gap?",
+        "o": [
+            "Failed logins not recorded for detection",
+            "All security events logged by default",
+            "Logging is automatic",
+            "Events are always captured"
+        ]
+    },
+    {
+        "q": "How does URL parameter sniffing expose data?",
+        "o": [
+            "Sensitive data in browser history",
+            "URL params are encrypted",
+            "History is cleared automatically",
+            "Only session data is in URL"
+        ]
+    },
+    {
+        "q": "What is redirect parameter injection?",
+        "o": [
+            "Injecting URL in redirect parameter",
+            "Redirect params are validated",
+            "Only relative URLs allowed",
+            "Injection is not possible"
+        ]
+    },
+    {
+        "q": "How does web-accessible upload directory enable RCE?",
+        "o": [
+            "Uploaded scripts execute directly",
+            "Uploads are in non-executable dir",
+            "Scripts cannot be uploaded",
+            "Execution is always blocked"
+        ]
+    },
+    {
+        "q": "What is MIME type mismatch in uploads?",
+        "o": [
+            "Server trusts client Content-Type header",
+            "Server always verifies file content",
+            "MIME type is immutable",
+            "Only safe types are accepted"
+        ]
+    },
+    {
+        "q": "How does path injection in filename work?",
+        "o": [
+            "Directory separators in uploaded name",
+            "Filenames are sanitized always",
+            "Separators are stripped",
+            "Paths cannot be injected"
+        ]
+    },
+    {
+        "q": "What is XSS via uploaded image metadata?",
+        "o": [
+            "EXIF data contains script payload",
+            "Metadata is always stripped",
+            "Images cannot contain scripts",
+            "EXIF is not rendered"
+        ]
+    },
+    {
+        "q": "How does missing function-level access control manifest?",
+        "o": [
+            "Any user can access any endpoint",
+            "Endpoints check user roles",
+            "Function access is uniform",
+            "All functions are protected"
+        ]
+    },
+    {
+        "q": "What is horizontal escalation via IDOR?",
+        "o": [
+            "Access peer user data via ID change",
+            "IDs are tied to sessions",
+            "Peer access is always blocked",
+            "IDOR only affects own data"
+        ]
+    },
+    {
+        "q": "How does role manipulation enable vertical escalation?",
+        "o": [
+            "Changing role parameter to admin",
+            "Role is server-side only",
+            "Role cannot be modified",
+            "Admin requires verification"
+        ]
+    },
+    {
+        "q": "What is method override for access control bypass?",
+        "o": [
+            "X-HTTP-Method-Override bypasses checks",
+            "Override headers are ignored",
+            "Only actual method is checked",
+            "Overrides require authentication"
+        ]
+    },
+    {
+        "q": "How does BOLA affect API security?",
+        "o": [
+            "User accesses another users objects",
+            "Objects are always verified",
+            "API validates all ownership",
+            "Access is correctly restricted"
+        ]
+    },
+    {
+        "q": "What is unauthenticated API endpoint risk?",
+        "o": [
+            "Sensitive data without authentication",
+            "All APIs require auth tokens",
+            "Endpoints are IP restricted",
+            "Only public data is exposed"
+        ]
+    },
+    {
+        "q": "How does GraphQL alias attack work?",
+        "o": [
+            "Multiple queries via aliases in one request",
+            "Aliases are rate limited",
+            "Only one alias allowed",
+            "Aliases do not affect queries"
+        ]
+    },
+    {
+        "q": "What is field suggestion information disclosure?",
+        "o": [
+            "Error suggests valid field names",
+            "Suggestions are disabled",
+            "Only public fields suggested",
+            "Errors are generic"
+        ]
+    },
+    {
+        "q": "How does excessive fields in API response leak data?",
+        "o": [
+            "Hidden fields returned in JSON",
+            "Only requested fields returned",
+            "Fields are filtered by role",
+            "Responses are minimal"
+        ]
+    },
+    {
+        "q": "What is resource exhaustion via complex query?",
+        "o": [
+            "Large joins or aggregations crash DB",
+            "Queries are always optimized",
+            "Resource limits prevent crashes",
+            "Complex queries are blocked"
+        ]
+    },
+    {
+        "q": "How does lack of function authorization affect APIs?",
+        "o": [
+            "Calling admin methods as regular user",
+            "Methods check caller role",
+            "Function access is uniform",
+            "Admin methods are hidden"
+        ]
+    },
+    {
+        "q": "What is default credentials in API gateway?",
+        "o": [
+            "Admin panel uses factory password",
+            "Defaults are changed on deploy",
+            "Gateways require setup wizard",
+            "Credentials are always unique"
+        ]
+    },
+    {
+        "q": "How does parameter injection bypass API validation?",
+        "o": [
+            "Unexpected params processed unsafely",
+            "Unknown params are rejected",
+            "Validation covers all params",
+            "Only schema params accepted"
+        ]
+    },
+    {
+        "q": "What is deprecated API version vulnerability?",
+        "o": [
+            "Old vulnerable version still accessible",
+            "Deprecated versions are removed",
+            "Old APIs are read-only",
+            "Versions are upgraded automatically"
+        ]
+    },
+    {
+        "q": "How does missing API logging enable attacks?",
+        "o": [
+            "Malicious activity not detected",
+            "All API calls are logged",
+            "Logging is enabled by default",
+            "Attacks are automatically blocked"
+        ]
+    },
+    {
+        "q": "What is blind SSRF detection method?",
+        "o": [
+            "Out-of-band callback confirms vulnerability",
+            "Blind SSRF cannot be detected",
+            "Only in-band SSRF works",
+            "Callbacks are blocked"
+        ]
+    },
+    {
+        "q": "How does XXE parameter entity attack work?",
+        "o": [
+            "Define entity referencing external file",
+            "Parameter entities are disabled",
+            "Only internal entities work",
+            "External references blocked"
+        ]
+    },
+    {
+        "q": "What is TE.CL HTTP request smuggling variant?",
+        "o": [
+            "Frontend uses Transfer-Encoding backend uses Content-Length",
+            "Both systems use Transfer-Encoding",
+            "Content-Length always takes priority",
+            "Transfer-Encoding is deprecated"
+        ]
+    },
+    {
+        "q": "How does web cache key manipulation work?",
+        "o": [
+            "Varying cached response via query params",
+            "Cache keys are immutable",
+            "Query params never affect caching",
+            "Keys include all request data"
+        ]
+    },
+    {
+        "q": "What is gadget chain in Java deserialization?",
+        "o": [
+            "Sequence of classes leading to code execution",
+            "Single class triggers vulnerability",
+            "Gadgets are safely sandboxed",
+            "Chains cannot achieve RCE"
+        ]
+    },
+    {
+        "q": "How does prototype pollution affect server-side JavaScript?",
+        "o": [
+            "Polluted prototype persists across requests",
+            "Server prototype is request-scoped",
+            "Only client-side JS is affected",
+            "Node.js prevents prototype pollution"
+        ]
+    },
+    {
+        "q": "What is double-fetch race condition?",
+        "o": [
+            "Data fetched twice with state change between",
+            "Single fetch prevents races",
+            "Double fetch is atomic operation",
+            "State is locked between fetches"
+        ]
+    },
+    {
+        "q": "How does DOM clobbering affect JavaScript security?",
+        "o": [
+            "HTML elements override JavaScript variables",
+            "JavaScript cannot be overridden by HTML",
+            "DOM isolation prevents clobbering",
+            "Elements have separate namespace"
+        ]
+    },
+    {
+        "q": "What is HTTP response queue poisoning?",
+        "o": [
+            "Misaligning responses to different requests",
+            "Responses are always matched correctly",
+            "Queue poisoning only affects attacker",
+            "HTTP prevents queue manipulation"
+        ]
+    },
+    {
+        "q": "How does coupon code stacking exploit business logic?",
+        "o": [
+            "Applying multiple exclusive discounts",
+            "System validates coupon exclusivity",
+            "Only one coupon is ever applied",
+            "Stacking is prevented server-side"
+        ]
+    },
+    {
+        "q": "What is GraphQL field duplication attack?",
+        "o": [
+            "Requesting same expensive field multiple times",
+            "Duplicate fields are deduplicated",
+            "Fields are only resolved once",
+            "GraphQL limits field repetition"
+        ]
+    },
+    {
+        "q": "How does mass assignment exploit nested objects?",
+        "o": [
+            "Nested attributes bypass flat validation",
+            "Nested objects are separately validated",
+            "Deep nesting is blocked",
+            "Objects cannot be nested"
+        ]
+    },
+    {
+        "q": "What is WebSocket message tampering?",
+        "o": [
+            "Intercepting and modifying WebSocket frames",
+            "WebSocket messages are encrypted",
+            "Tampering is detected by checksums",
+            "Messages cannot be intercepted"
+        ]
+    },
+    {
+        "q": "How does array parameter bypass input validation?",
+        "o": [
+            "Array value bypasses string checks",
+            "Arrays are converted to strings",
+            "Validation handles all types",
+            "Only strings are accepted"
+        ]
+    },
+    {
+        "q": "What is Unicode overlong encoding attack?",
+        "o": [
+            "Same char encoded with more bytes",
+            "Overlong encoding is normalized",
+            "Unicode prevents overlong forms",
+            "Extra bytes are stripped"
+        ]
+    },
+    {
+        "q": "How does method override header bypass REST security?",
+        "o": [
+            "X-HTTP-Method changes request method",
+            "Override headers are ignored",
+            "Only GET POST are overridable",
+            "REST ignores override headers"
+        ]
+    },
+    {
+        "q": "What is response time side-channel in cryptography?",
+        "o": [
+            "Execution time reveals secret bits",
+            "Crypto operations are constant time",
+            "Time differences are unmeasurable",
+            "Side channels are theoretical only"
+        ]
+    },
+    {
+        "q": "How does CNAME chain enable subdomain takeover?",
+        "o": [
+            "Following CNAME to orphaned endpoint",
+            "CNAME chains are validated",
+            "Chains cannot lead to takeover",
+            "DNS prevents orphaned records"
+        ]
+    },
+    {
+        "q": "What is WebSocket blind XSS attack?",
+        "o": [
+            "XSS payload sent via WebSocket to admin panel",
+            "WebSocket content is always escaped",
+            "Blind XSS only works via HTTP",
+            "Admin panels filter WebSocket data"
+        ]
+    },
+    {
+        "q": "How does CORS preflight bypass work?",
+        "o": [
+            "Simple requests skip preflight checks",
+            "All cross-origin requests require preflight",
+            "Preflight cannot be bypassed",
+            "Simple requests are blocked"
+        ]
+    },
+    {
+        "q": "What is HTTP desync attack via chunked encoding?",
+        "o": [
+            "Invalid chunk sizes cause parsing differences",
+            "Chunk parsing is standardized",
+            "Invalid chunks are rejected",
+            "Desync only affects ancient servers"
+        ]
+    },
+    {
+        "q": "How does iframe sandbox bypass enable clickjacking?",
+        "o": [
+            "Missing allow-top-navigation in sandbox",
+            "Sandbox completely prevents clickjacking",
+            "All sandbox attributes are required",
+            "Iframes cannot be sandboxed"
+        ]
+    },
+    {
+        "q": "What is OAuth state parameter manipulation?",
+        "o": [
+            "Forging or reusing state for CSRF",
+            "State is cryptographically bound",
+            "Manipulation is always detected",
+            "State cannot be modified"
+        ]
+    },
+    {
+        "q": "How does session variable overwrite enable attacks?",
+        "o": [
+            "One feature writes to anothers session key",
+            "Session keys are feature-namespaced",
+            "Overwrites are prevented",
+            "Variables are isolated per feature"
+        ]
+    },
+    {
+        "q": "What is cookie jar overflow attack?",
+        "o": [
+            "Evicting secure cookies via many new cookies",
+            "Browsers protect secure cookies",
+            "Cookie limits prevent overflow",
+            "New cookies cannot evict old ones"
+        ]
+    },
+    {
+        "q": "How does JSONP injection execute arbitrary code?",
+        "o": [
+            "Callback wraps response as function call",
+            "JSONP responses are not executable",
+            "Callbacks are strictly validated",
+            "Only JSON data is returned"
+        ]
+    },
+    {
+        "q": "What is password reset link host injection?",
+        "o": [
+            "Attacker domain in reset email link",
+            "Reset links use server configured domain",
+            "Host header is ignored",
+            "Links are always relative"
+        ]
+    },
+    {
+        "q": "How does web shell obfuscation evade detection?",
+        "o": [
+            "Encoding and string manipulation",
+            "Shells have consistent signatures",
+            "Obfuscation is easily reversed",
+            "Detection is always effective"
+        ]
+    },
+    {
+        "q": "What is JWT key confusion vulnerability?",
+        "o": [
+            "Using public key as HMAC secret",
+            "Keys are type-enforced",
+            "Algorithms are strictly validated",
+            "Key confusion is impossible"
+        ]
+    },
+    {
+        "q": "How does cache key normalization lead to deception?",
+        "o": [
+            "Different URLs normalize to same cache key",
+            "URLs are cached as-is",
+            "Normalization prevents deception",
+            "Keys include full URL"
+        ]
+    },
+    {
+        "q": "What is HTTP/2 HPACK bomb attack?",
+        "o": [
+            "Compressed headers expand massively",
+            "HPACK limits decompression size",
+            "Compression ratio is fixed",
+            "Headers cannot cause DoS"
+        ]
+    },
+    {
+        "q": "How does SSTI sandbox escape work?",
+        "o": [
+            "Accessing runtime objects to bypass restrictions",
+            "Sandboxes are unbreakable",
+            "Template engines prevent escapes",
+            "Runtime objects are inaccessible"
+        ]
+    },
+    {
+        "q": "What is out-of-band SQL injection?",
+        "o": [
+            "Exfiltrating data via DNS or HTTP requests",
+            "SQL cannot make network requests",
+            "Out-of-band is database-agnostic",
+            "Only in-band extraction works"
+        ]
+    },
+    {
+        "q": "How does OAuth redirect URI manipulation work?",
+        "o": [
+            "Partial match allows subdomain or path injection",
+            "URIs are matched exactly",
+            "Registered URIs are immutable",
+            "Any redirect is allowed"
+        ]
+    },
+    {
+        "q": "What is MIME confusion with X-Content-Type-Options?",
+        "o": [
+            "Missing nosniff allows type sniffing",
+            "Nosniff is default in browsers",
+            "MIME type is always respected",
+            "Sniffing cannot be enabled"
+        ]
+    },
+    {
+        "q": "How does double URL encoding bypass WAF?",
+        "o": [
+            "WAF decodes once but app decodes twice",
+            "WAF decodes recursively",
+            "Double encoding is prevented",
+            "Applications never double decode"
+        ]
+    },
+    {
+        "q": "What is DNS rebinding with HTTPS?",
+        "o": [
+            "Certificate validation prevents simple rebinding",
+            "HTTPS fully prevents rebinding",
+            "DNS rebinding ignores protocol",
+            "Certificates are not checked"
+        ]
+    },
+    {
+        "q": "How does weak reset token entropy enable attacks?",
+        "o": [
+            "Short token space allows brute force",
+            "Tokens are always 256 bits",
+            "Entropy is sufficient for security",
+            "Brute force is rate limited"
+        ]
+    },
+    {
+        "q": "What is differential response username enumeration?",
+        "o": [
+            "Different error messages reveal validity",
+            "Error messages are identical",
+            "Responses are normalized",
+            "Enumeration is prevented"
+        ]
+    },
+    {
+        "q": "How does hidden admin parameter enable escalation?",
+        "o": [
+            "Adding isAdmin parameter to request",
+            "Hidden params are ignored",
+            "Admin requires authentication",
+            "Parameters are whitelisted"
+        ]
+    },
+    {
+        "q": "What is time-delayed logic bomb trigger?",
+        "o": [
+            "Code activates after specific date",
+            "Time triggers are detected",
+            "Delayed execution is logged",
+            "Date checks are audited"
+        ]
+    },
+    {
+        "q": "How does supply chain attack via package compromise work?",
+        "o": [
+            "Malicious code in legitimate package update",
+            "Package signatures prevent tampering",
+            "Updates are manually reviewed",
+            "Compromises are instantly detected"
+        ]
+    },
+    {
+        "q": "What is Magecart formjacking technique?",
+        "o": [
+            "Skimmer script on payment pages",
+            "Payment pages are isolated",
+            "Scripts cannot access forms",
+            "PCI prevents skimming"
+        ]
+    },
+    {
+        "q": "How does CSRF via content-type bypass work?",
+        "o": [
+            "Using text/plain to avoid preflight",
+            "All content types trigger preflight",
+            "Text plain is blocked cross-origin",
+            "CSRF tokens check content type"
+        ]
+    },
+    {
+        "q": "What is matrix parameter injection?",
+        "o": [
+            "Injecting semicolon-separated params in path",
+            "Matrix params are not used",
+            "Semicolons are URL encoded",
+            "Path params are separate"
+        ]
+    },
+    {
+        "q": "How does Unicode normalization form bypass filters?",
+        "o": [
+            "Different forms normalize to same string",
+            "All forms are treated identically",
+            "Normalization is consistent",
+            "Unicode forms are standardized"
+        ]
+    },
+    {
+        "q": "What is loose comparison magic hash in PHP?",
+        "o": [
+            "Hash starting with 0e equals zero",
+            "Type comparison is always strict",
+            "Hashes are compared correctly",
+            "Magic hashes are theoretical"
+        ]
+    },
+    {
+        "q": "How does polynomial ReDoS achieve exponential complexity?",
+        "o": [
+            "Alternation with overlapping patterns",
+            "Regex engines are optimized",
+            "Polynomial complexity is linear",
+            "Overlapping is prevented"
+        ]
+    },
+    {
+        "q": "What is persistent XSS via cache poisoning?",
+        "o": [
+            "Malicious response cached and served to users",
+            "Caches sanitize all responses",
+            "XSS payloads are not cached",
+            "Cache validates content"
+        ]
+    },
+    {
+        "q": "How does mXSS exploit browser parsing?",
+        "o": [
+            "Mutation during innerHTML assignment",
+            "InnerHTML is sanitized by browser",
+            "Parsing is deterministic",
+            "Mutation cannot introduce XSS"
+        ]
+    },
+    {
+        "q": "What is context-dependent XSS encoding bypass?",
+        "o": [
+            "Wrong encoding for output context",
+            "Single encoding works everywhere",
+            "Context is automatically detected",
+            "All output is uniformly encoded"
+        ]
+    },
+    {
+        "q": "How does CSS keylogger attack work?",
+        "o": [
+            "Font timing reveals typed characters",
+            "CSS cannot detect input",
+            "Fonts load uniformly",
+            "Timing is not measurable"
+        ]
+    },
+    {
+        "q": "What is NoSQL JavaScript injection?",
+        "o": [
+            "Injecting JS code in query operators",
+            "JavaScript is disabled in queries",
+            "Operators escape all input",
+            "NoSQL prevents code injection"
+        ]
+    },
+    {
+        "q": "How does LDAP null byte injection work?",
+        "o": [
+            "Null terminates filter prematurely",
+            "LDAP escapes null bytes",
+            "Filters are binary safe",
+            "Null injection is prevented"
+        ]
+    },
+    {
+        "q": "What is blind XPath injection technique?",
+        "o": [
+            "Boolean queries extract characters",
+            "XPath cannot be injected blindly",
+            "Responses always include data",
+            "Boolean methods are blocked"
+        ]
+    },
+    {
+        "q": "How does XXE via file upload metadata work?",
+        "o": [
+            "XML in DOCX or SVG processed by server",
+            "Uploaded XML is sanitized",
+            "Metadata is stripped on upload",
+            "Only images are processed"
+        ]
+    },
+    {
+        "q": "What is DOM XSS via postMessage abuse?",
+        "o": [
+            "Untrusted message origin handling",
+            "PostMessage validates origin automatically",
+            "Messages are always trusted",
+            "Origin checking is enforced"
+        ]
+    },
+    {
+        "q": "How does HPP exploit different frameworks?",
+        "o": [
+            "Frameworks parse duplicates differently",
+            "All frameworks use same parsing",
+            "Duplicates are consistently handled",
+            "HPP is framework-agnostic"
+        ]
+    },
+    {
+        "q": "What is session token prediction via weak PRNG?",
+        "o": [
+            "Predictable random number generator state",
+            "Session tokens use CSPRNG",
+            "PRNG state cannot be determined",
+            "Tokens have sufficient entropy"
+        ]
+    },
+    {
+        "q": "How does password spraying avoid lockouts?",
+        "o": [
+            "One password against many accounts",
+            "Spraying triggers rate limits",
+            "Lockouts are per-IP based",
+            "Accounts lock across attempts"
+        ]
+    },
+    {
+        "q": "What is content discovery via backup extensions?",
+        "o": [
+            "Finding .bak and .old file versions",
+            "Backup extensions are blocked",
+            "Only current files are served",
+            "Backups are in separate directory"
+        ]
+    },
+    {
+        "q": "How does SSRF via image processing work?",
+        "o": [
+            "Image library fetches external URL",
+            "Image processing is isolated",
+            "URLs are not followed",
+            "Only local files processed"
+        ]
+    },
+    {
+        "q": "What is typosquatting in package managers?",
+        "o": [
+            "Malicious package with similar name",
+            "Package names are verified",
+            "Typos are auto-corrected",
+            "Only exact names are installed"
+        ]
+    },
+    {
+        "q": "How does IDOR in GraphQL mutations work?",
+        "o": [
+            "Changing ID in mutation arguments",
+            "GraphQL validates object ownership",
+            "Mutations check authorization",
+            "IDs are tied to query context"
+        ]
+    },
+    {
+        "q": "What is header disclosure via proxy misconfiguration?",
+        "o": [
+            "Internal headers exposed by proxy",
+            "Proxies strip internal headers",
+            "Headers are always encrypted",
+            "Misconfiguration is prevented"
+        ]
+    },
+    {
+        "q": "How does verbose error expose database structure?",
+        "o": [
+            "SQL error shows table and column names",
+            "Errors are always generic",
+            "Database structure is hidden",
+            "SQL errors are suppressed"
+        ]
+    },
+    {
+        "q": "What is environment variable disclosure?",
+        "o": [
+            "Exposed env vars reveal credentials",
+            "Env vars are always secured",
+            "Only safe vars are exposed",
+            "Variables are encrypted"
+        ]
+    },
+    {
+        "q": "How does .DS_Store file expose directory structure?",
+        "o": [
+            "Mac metadata file lists directory contents",
+            "DS Store files are filtered",
+            "Contents are not readable",
+            "Only Mac users can read them"
+        ]
+    },
+    {
+        "q": "What is actuator endpoint exposure in Spring?",
+        "o": [
+            "Debug endpoints expose sensitive data",
+            "Actuators are secured by default",
+            "Only metrics are exposed",
+            "Endpoints require authentication"
+        ]
+    },
+    {
+        "q": "How does Swagger JSON schema leak sensitive models?",
+        "o": [
+            "Internal model definitions in schema",
+            "Schemas only show public models",
+            "Internal models are hidden",
+            "Swagger sanitizes output"
+        ]
+    },
+    {
+        "q": "What is AWS metadata credential theft?",
+        "o": [
+            "Accessing 169.254.169.254 for IAM credentials",
+            "Metadata requires authentication",
+            "IMDSv2 prevents all access",
+            "Credentials are encrypted"
+        ]
+    },
+    {
+        "q": "How does cookie prefix bypass work?",
+        "o": [
+            "__Host- prefix enforced incorrectly",
+            "Cookie prefixes are strictly enforced",
+            "Prefixes cannot be bypassed",
+            "All cookies use prefixes"
+        ]
+    },
+    {
+        "q": "What is bcrypt truncation vulnerability?",
+        "o": [
+            "Passwords over 72 bytes truncated",
+            "Bcrypt handles any length",
+            "Truncation is documented behavior",
+            "All bytes are hashed"
+        ]
+    },
+    {
+        "q": "How does IP-based rate limit bypass work?",
+        "o": [
+            "X-Forwarded-For header spoofing",
+            "Forwarded headers are verified",
+            "Only real IP is used",
+            "Spoofing is detected"
+        ]
+    },
+    {
+        "q": "What is audit log injection?",
+        "o": [
+            "Injecting fake log entries",
+            "Logs are append-only",
+            "Injection is escaped",
+            "Log format prevents injection"
+        ]
+    },
+    {
+        "q": "How does fragment identifier leak data in OAuth?",
+        "o": [
+            "Token in fragment sent to third-party scripts",
+            "Fragments are not sent to server",
+            "Third-party access is blocked",
+            "Tokens are never in fragments"
+        ]
+    },
+    {
+        "q": "What is open redirect chain attack?",
+        "o": [
+            "Chaining redirects to bypass validation",
+            "Redirect chains are followed and checked",
+            "Only first redirect is validated",
+            "Chains are prevented"
+        ]
+    },
+    {
+        "q": "How does polyglot file upload bypass validation?",
+        "o": [
+            "File valid as both image and script",
+            "Content type is checked thoroughly",
+            "Polyglots are detected",
+            "Only single-type files accepted"
+        ]
+    },
+    {
+        "q": "What is image tragick vulnerability?",
+        "o": [
+            "ImageMagick command injection via SVG",
+            "ImageMagick sanitizes all input",
+            "SVG is parsed safely",
+            "Commands cannot be injected"
+        ]
+    },
+    {
+        "q": "How does filename extension double bypass work?",
+        "o": [
+            "file.php.jpg bypasses extension check",
+            "Only final extension is checked",
+            "All extensions are validated",
+            "Double extensions are blocked"
+        ]
+    },
+    {
+        "q": "What is upload race condition vulnerability?",
+        "o": [
+            "Execute file before security scanning",
+            "Scanning is synchronous",
+            "Files are quarantined first",
+            "Race window does not exist"
+        ]
+    },
+    {
+        "q": "How does forced browsing to authenticated endpoint work?",
+        "o": [
+            "Direct URL access without going through flow",
+            "All endpoints check session",
+            "URLs require prior navigation",
+            "Direct access is blocked"
+        ]
+    },
+    {
+        "q": "What is multi-step IDOR exploitation?",
+        "o": [
+            "IDOR in middle step of workflow",
+            "All steps validate authorization",
+            "Workflows are atomic",
+            "Middle steps share context"
+        ]
+    },
+    {
+        "q": "How does role hierarchy bypass enable escalation?",
+        "o": [
+            "Lower role inherits higher permissions",
+            "Hierarchies are correctly implemented",
+            "Inheritance is always downward",
+            "Permissions are explicitly defined"
+        ]
+    },
+    {
+        "q": "What is context-dependent authorization bypass?",
+        "o": [
+            "Different contexts have different checks",
+            "Authorization is uniform",
+            "Contexts share same validation",
+            "All paths are equally protected"
+        ]
+    },
+    {
+        "q": "How does API key scope escalation work?",
+        "o": [
+            "Using key beyond intended permissions",
+            "Key scopes are enforced",
+            "Escalation is prevented",
+            "Keys have strict boundaries"
+        ]
+    },
+    {
+        "q": "What is GraphQL directive injection?",
+        "o": [
+            "Custom directive bypasses authorization",
+            "Directives are strictly validated",
+            "Custom directives are blocked",
+            "Authorization ignores directives"
+        ]
+    },
+    {
+        "q": "How does over-permissive wildcard CORS enable attacks?",
+        "o": [
+            "Access-Control-Allow-Origin set to asterisk",
+            "Wildcards block credentials",
+            "CORS prevents sensitive access",
+            "Only same-origin is allowed"
+        ]
+    },
+    {
+        "q": "What is excessive query depth in GraphQL?",
+        "o": [
+            "Deeply nested query exhausts resources",
+            "Depth is automatically limited",
+            "Nesting is prevented",
+            "Resources are allocated per field"
+        ]
+    },
+    {
+        "q": "How does missing API versioning cause vulnerabilities?",
+        "o": [
+            "All clients use vulnerable version",
+            "Versioning is automatic",
+            "Updates are pushed to all clients",
+            "Vulnerabilities are patched instantly"
+        ]
+    },
+    {
+        "q": "What is object-level authorization bypass in REST API?",
+        "o": [
+            "Changing object ID in API request",
+            "IDs are validated per user",
+            "REST enforces ownership",
+            "Object access is always checked"
+        ]
+    },
+    {
+        "q": "How does batch endpoint abuse work?",
+        "o": [
+            "Single request contains many operations",
+            "Batch operations are rate limited",
+            "Each operation is counted separately",
+            "Batching is not supported"
+        ]
+    },
+    {
+        "q": "What is blind SSRF via webhook?",
+        "o": [
+            "User-controlled webhook URL to internal service",
+            "Webhooks validate destination",
+            "Only external URLs allowed",
+            "Internal access is blocked"
+        ]
+    },
+    {
+        "q": "How does DTD-based XXE exfiltration work?",
+        "o": [
+            "External DTD defines file-reading entity",
+            "External DTDs are disabled",
+            "DTD processing is sandboxed",
+            "File reading is prevented"
+        ]
+    },
+    {
+        "q": "What is HTTP/2 stream multiplexing attack?",
+        "o": [
+            "Many concurrent streams overwhelm server",
+            "Stream limits prevent abuse",
+            "Multiplexing improves security",
+            "Streams are rate limited"
+        ]
+    },
+    {
+        "q": "How does cache buster bypass cache protection?",
+        "o": [
+            "Random query param forces fresh fetch",
+            "Cache ignores query parameters",
+            "Busters are blocked by proxy",
+            "Only POST bypasses cache"
+        ]
+    },
+    {
+        "q": "What is ysoserial gadget chain generation?",
+        "o": [
+            "Tool creates serialized exploit payloads",
+            "Gadgets are manually constructed",
+            "Automatic generation is impossible",
+            "Payloads require source code"
+        ]
+    },
+    {
+        "q": "How does prototype pollution via constructor.prototype work?",
+        "o": [
+            "Accessing prototype via constructor property",
+            "Constructor is not accessible",
+            "Prototype path is blocked",
+            "Only __proto__ works"
+        ]
+    },
+    {
+        "q": "What is limit overrun race condition?",
+        "o": [
+            "Parallel requests exceed rate limits",
+            "Limits are atomically checked",
+            "Race conditions cannot bypass limits",
+            "Parallel requests are queued"
+        ]
+    },
+    {
+        "q": "How does DOM clobbering via form elements work?",
+        "o": [
+            "Form name attribute creates window property",
+            "Form names are namespaced",
+            "Window properties are protected",
+            "Only ID attribute works"
+        ]
+    },
+    {
+        "q": "What is request smuggling via H2.CL desync?",
+        "o": [
+            "HTTP/2 to HTTP/1 downgrade with CL",
+            "H2 to H1 conversion is safe",
+            "Content-Length not used in H2",
+            "Downgrade prevents smuggling"
+        ]
+    },
+    {
+        "q": "How does infinite loop exploit business logic?",
+        "o": [
+            "Circular workflow never completes",
+            "Loops are detected and broken",
+            "Workflows have timeout limits",
+            "Circular paths are prevented"
+        ]
+    },
+    {
+        "q": "What is GraphQL query batching abuse?",
+        "o": [
+            "Array of queries bypasses rate limits",
+            "Batches count as single request",
+            "Each query is rate limited",
+            "Batching is disabled"
+        ]
+    },
+    {
+        "q": "How does prototype pollution enable RCE in Node.js?",
+        "o": [
+            "Polluted spawn options execute commands",
+            "Spawn ignores prototype properties",
+            "RCE requires direct code execution",
+            "Node.js blocks polluted options"
+        ]
+    },
+    {
+        "q": "What is WebSocket protocol smuggling?",
+        "o": [
+            "Tunneling HTTP through WebSocket upgrade",
+            "Upgrade requests are isolated",
+            "HTTP cannot be tunneled",
+            "Protocol switching is strict"
+        ]
+    },
+    {
+        "q": "How does JSON interoperability exploit work?",
+        "o": [
+            "Different parsers handle edge cases differently",
+            "JSON parsing is standardized",
+            "Edge cases are rejected",
+            "Parsers behave identically"
+        ]
+    },
+    {
+        "q": "What is Unicode homoglyph attack?",
+        "o": [
+            "Visually similar chars bypass validation",
+            "Homoglyphs are normalized",
+            "Only ASCII is processed",
+            "Visual similarity is detected"
+        ]
+    },
+    {
+        "q": "How does X-Original-URL header bypass work?",
+        "o": [
+            "Backend uses header instead of request path",
+            "Original URL headers are ignored",
+            "Only request path is authoritative",
+            "Headers cannot override path"
+        ]
+    },
+    {
+        "q": "What is cache timing side-channel attack?",
+        "o": [
+            "Response time reveals cached vs fresh",
+            "Cache timing is constant",
+            "Timing cannot reveal cache state",
+            "Side channels are theoretical"
+        ]
+    },
+    {
+        "q": "How does S3 bucket enumeration work?",
+        "o": [
+            "Brute forcing bucket names for access",
+            "Bucket names are not guessable",
+            "Enumeration is rate limited",
+            "All buckets require auth"
+        ]
+    },
+    {
+        "q": "What is reflected file download attack?",
+        "o": [
+            "User downloads malicious file from trusted domain",
+            "Downloads verify content type",
+            "Reflection cannot create files",
+            "Browsers prevent RFD"
+        ]
+    },
+    {
+        "q": "How does CORS credential reflection work?",
+        "o": [
+            "Reflecting origin in ACAO with credentials",
+            "Credential reflection is blocked",
+            "Origin reflection is secure",
+            "CORS prevents credential sharing"
+        ]
+    },
+    {
+        "q": "What is HTTP request splitting via header?",
+        "o": [
+            "Injecting CRLF to create second request",
+            "Headers are CRLF-filtered",
+            "Splitting is impossible",
+            "Only response splitting works"
+        ]
+    },
+    {
+        "q": "How does frame-ancestors bypass enable clickjacking?",
+        "o": [
+            "Missing or misconfigured CSP directive",
+            "Frame-ancestors is always set",
+            "X-Frame-Options takes precedence",
+            "CSP prevents all framing"
+        ]
+    },
+    {
+        "q": "What is OAuth authorization code injection?",
+        "o": [
+            "Injecting stolen code into victims session",
+            "Codes are bound to client session",
+            "Injection is prevented by state",
+            "Codes cannot be reused"
+        ]
+    },
+    {
+        "q": "How does session serialization exploit work?",
+        "o": [
+            "Deserializing malicious session data",
+            "Sessions are securely serialized",
+            "Deserialization is sandboxed",
+            "Session data is validated"
+        ]
+    },
+    {
+        "q": "What is path-relative CSS injection?",
+        "o": [
+            "Importing attacker CSS via relative path",
+            "CSS paths are validated",
+            "Relative imports are blocked",
+            "Only absolute paths work"
+        ]
+    },
+    {
+        "q": "How does callback URL manipulation work?",
+        "o": [
+            "Redirecting response to attacker endpoint",
+            "Callbacks are whitelisted",
+            "URLs are validated strictly",
+            "Manipulation is detected"
+        ]
+    },
+    {
+        "q": "What is persistent web shell via cronjob?",
+        "o": [
+            "Scheduled task reinstalls shell",
+            "Cronjobs are monitored",
+            "Web users cannot create crons",
+            "Shells are detected on restart"
+        ]
+    },
+    {
+        "q": "How does JWT kid header path traversal work?",
+        "o": [
+            "Key ID points to known file content",
+            "KID paths are validated",
+            "Only key files are accessible",
+            "Traversal is prevented"
+        ]
+    },
+    {
+        "q": "What is cache poisoning via fat GET?",
+        "o": [
+            "Body in GET request cached incorrectly",
+            "GET bodies are ignored",
+            "Cache strips request bodies",
+            "Fat GET is not valid HTTP"
+        ]
+    },
+    {
+        "q": "How does HTTP/3 QPACK compression attack work?",
+        "o": [
+            "QUIC header compression abuse for DoS",
+            "QPACK has strict limits",
+            "Compression is safe by design",
+            "H3 prevents compression attacks"
+        ]
+    },
+    {
+        "q": "What is SSTI via error message template?",
+        "o": [
+            "Error includes user input in template",
+            "Error messages are static",
+            "User input is escaped",
+            "Templates use safe defaults"
+        ]
+    },
+    {
+        "q": "How does stacked SQL injection work?",
+        "o": [
+            "Multiple statements via semicolon separator",
+            "Stacked queries are disabled",
+            "Only single statements execute",
+            "Semicolons are escaped"
+        ]
+    },
+    {
+        "q": "What is OAuth PKCE downgrade attack?",
+        "o": [
+            "Removing PKCE from auth request",
+            "PKCE is enforced server-side",
+            "Downgrade is detected",
+            "Code verifier is required"
+        ]
+    },
+    {
+        "q": "How does SVG XSS attack work?",
+        "o": [
+            "Script tags execute in SVG context",
+            "SVG scripts are sandboxed",
+            "Browsers block SVG scripts",
+            "Only inline styles work"
+        ]
+    },
+    {
+        "q": "What is HTTP smuggling via Content-Length overflow?",
+        "o": [
+            "Large CL value causes integer overflow",
+            "CL overflow is handled safely",
+            "Parsers use arbitrary precision",
+            "Overflow is rejected"
+        ]
+    },
+    {
+        "q": "How does DNS zone transfer information disclosure work?",
+        "o": [
+            "AXFR query reveals all DNS records",
+            "Zone transfers require auth",
+            "AXFR is disabled by default",
+            "Only authoritative servers respond"
+        ]
+    },
+    {
+        "q": "What is JWT claim injection?",
+        "o": [
+            "Adding unauthorized claims to token",
+            "Claims are validated on decode",
+            "Signature prevents modification",
+            "Extra claims are ignored"
+        ]
+    },
+    {
+        "q": "How does application-level DoS via regex work?",
+        "o": [
+            "Crafted input causes catastrophic backtracking",
+            "Regex has timeout protection",
+            "Input length is limited",
+            "Backtracking is optimized"
+        ]
+    },
+    {
+        "q": "What is Cross-Origin Resource Sharing abuse via PDFs?",
+        "o": [
+            "PDF JavaScript makes cross-origin requests",
+            "PDF requests respect CORS",
+            "JavaScript is sandboxed in PDF",
+            "Browsers block PDF requests"
+        ]
+    },
+    {
+        "q": "How does content sniffing bypass X-Content-Type-Options?",
+        "o": [
+            "Older browsers ignore nosniff",
+            "Nosniff is universally supported",
+            "Sniffing is completely disabled",
+            "Only modern browsers affected"
+        ]
+    },
+    {
+        "q": "What is blind OS command injection?",
+        "o": [
+            "Detecting via time delays or OOB",
+            "Blind injection is not possible",
+            "Output is always visible",
+            "Commands require output"
+        ]
+    },
+    {
+        "q": "How does WebDAV PROPFIND leak information?",
+        "o": [
+            "Directory content and metadata exposed",
+            "PROPFIND requires authentication",
+            "WebDAV is disabled by default",
+            "Only file content is returned"
+        ]
+    },
+    {
+        "q": "What is service worker script injection?",
+        "o": [
+            "Registering malicious service worker",
+            "SW registration requires HTTPS",
+            "Only same-origin SW allowed",
+            "Workers are sandboxed"
+        ]
+    },
+    {
+        "q": "How does template literal injection work in JavaScript?",
+        "o": [
+            "Expression in backtick string executes",
+            "Template literals are static",
+            "Expressions are escaped",
+            "Only concatenation is used"
+        ]
+    },
+    {
+        "q": "What is HTTP/2 CONTINUATION frame flood?",
+        "o": [
+            "Many CONTINUATION frames cause DoS",
+            "Frames are rate limited",
+            "CONTINUATION requires headers",
+            "Flood is prevented"
+        ]
+    },
+    {
+        "q": "How does insecure object comparison enable bypass?",
+        "o": [
+            "Comparing object refs instead of values",
+            "Objects are compared by value",
+            "Reference comparison is secure",
+            "Language prevents abuse"
+        ]
+    },
+    {
+        "q": "What is cache poisoning via Host header?",
+        "o": [
+            "Malicious host cached in response",
+            "Host is always part of cache key",
+            "Poisoning is prevented",
+            "Host values are validated"
+        ]
+    },
+    {
+        "q": "How does arbitrary file read via XXE work?",
+        "o": [
+            "External entity reads local files",
+            "File access is sandboxed",
+            "Only XML files are readable",
+            "Entities cannot read files"
+        ]
+    },
+    {
+        "q": "What is SQL injection via JSON parameter?",
+        "o": [
+            "Injecting SQL in JSON field values",
+            "JSON is parsed not executed",
+            "SQL and JSON are separate",
+            "JSON escapes prevent injection"
+        ]
+    },
+    {
+        "q": "How does CSP nonce prediction enable bypass?",
+        "o": [
+            "Weak random nonce generation",
+            "Nonces are cryptographically random",
+            "Prediction is impossible",
+            "Nonces change per request"
+        ]
+    },
+    {
+        "q": "What is header smuggling via Unicode encoding?",
+        "o": [
+            "Unicode chars parsed as header delimiters",
+            "Unicode is normalized first",
+            "Only ASCII headers are valid",
+            "Encoding is consistent"
+        ]
+    },
+    {
+        "q": "How does GraphQL max query cost bypass work?",
+        "o": [
+            "Underestimated field costs allow expensive queries",
+            "Costs are accurately calculated",
+            "All fields have equal cost",
+            "Cost is not configurable"
+        ]
+    },
+    {
+        "q": "What is insecure deserialization via ViewState?",
+        "o": [
+            "Tampering .NET ViewState for RCE",
+            "ViewState is encrypted by default",
+            "Signatures prevent tampering",
+            "ViewState is read-only"
+        ]
+    },
+    {
+        "q": "How does path truncation attack work?",
+        "o": [
+            "Long path truncated to valid file",
+            "Path length is enforced",
+            "Truncation is prevented",
+            "Long paths are rejected"
+        ]
+    },
+    {
+        "q": "What is subdomain enumeration via certificate transparency?",
+        "o": [
+            "CT logs reveal issued certificates",
+            "CT logs are private",
+            "Only wildcard certs logged",
+            "Certificates hide subdomains"
+        ]
+    },
+    {
+        "q": "How does unsafe reflection enable code execution?",
+        "o": [
+            "User input controls class instantiation",
+            "Reflection is sandboxed",
+            "Class names are whitelisted",
+            "Input cannot affect reflection"
+        ]
+    },
+    {
+        "q": "What is HTTP request pipelining attack?",
+        "o": [
+            "Response queue confusion via pipelining",
+            "Pipelining is properly synchronized",
+            "Responses match requests exactly",
+            "Confusion is prevented"
+        ]
+    },
+    {
+        "q": "How does padding oracle attack work?",
+        "o": [
+            "Error messages reveal padding validity",
+            "Errors are generic for crypto",
+            "Padding is always valid",
+            "Oracle is not exploitable"
+        ]
+    },
+    {
+        "q": "What is connection pool poisoning?",
+        "o": [
+            "Malicious response affects next connection",
+            "Pools are isolated per user",
+            "Connections are fully reset",
+            "Poisoning is prevented"
+        ]
+    },
+    {
+        "q": "How does open redirect via data URI work?",
+        "o": [
+            "Redirecting to data: protocol",
+            "Data URIs are blocked in redirects",
+            "Only HTTP URLs allowed",
+            "Browsers prevent data redirects"
+        ]
+    },
+    {
+        "q": "What is upload via PUT method misconfiguration?",
+        "o": [
+            "PUT allowed without authentication",
+            "PUT requires authorization",
+            "Method is disabled by default",
+            "Only POST allows uploads"
+        ]
+    },
+    {
+        "q": "How does race condition in file upload work?",
+        "o": [
+            "Accessing file before scan completes",
+            "Scanning is synchronous",
+            "Access is blocked until scan",
+            "Race window is too small"
+        ]
+    },
+    {
+        "q": "What is privilege escalation via API parameter?",
+        "o": [
+            "Adding role or permission in request body",
+            "Parameters are validated server-side",
+            "Roles cannot be self-assigned",
+            "Body is schema-validated"
+        ]
+    },
+    {
+        "q": "How does BFLA affect API authorization?",
+        "o": [
+            "Accessing functions without proper role",
+            "Functions check caller permissions",
+            "Authorization is enforced uniformly",
+            "BFLA is prevented by design"
+        ]
+    },
+    {
+        "q": "What is mass enumeration via GraphQL?",
+        "o": [
+            "Querying all objects via list endpoints",
+            "Lists are paginated and limited",
+            "Enumeration requires authorization",
+            "GraphQL prevents mass queries"
+        ]
+    },
+    {
+        "q": "How does API gateway bypass work?",
+        "o": [
+            "Directly accessing backend bypassing gateway",
+            "Backend only accepts gateway requests",
+            "Direct access is blocked by firewall",
+            "Gateway is the only entry point"
+        ]
+    },
+    {
+        "q": "What is injection via GraphQL variables?",
+        "o": [
+            "Unsanitized variables in resolvers",
+            "Variables are type-checked",
+            "GraphQL prevents injection",
+            "Resolvers escape all input"
+        ]
+    },
+    {
+        "q": "How does SSRF via cloud metadata IMDSv1 work?",
+        "o": [
+            "Simple GET request returns credentials",
+            "IMDSv1 requires token",
+            "Metadata is encrypted",
+            "Credentials are not exposed"
+        ]
+    },
+    {
+        "q": "What is XXE via SOAP message?",
+        "o": [
+            "Malicious entity in SOAP XML body",
+            "SOAP parsers disable entities",
+            "External entities are blocked",
+            "SOAP uses schema validation"
+        ]
+    },
+    {
+        "q": "How does insecure JWT storage enable theft?",
+        "o": [
+            "Token in localStorage accessible by XSS",
+            "LocalStorage is XSS-protected",
+            "Tokens are encrypted in storage",
+            "Storage is origin-isolated"
+        ]
+    },
+    {
+        "q": "What is account takeover via OAuth mislink?",
+        "o": [
+            "Linking OAuth to wrong user account",
+            "Linking validates current session",
+            "Mislink is prevented by state",
+            "OAuth binds to authenticated user"
+        ]
+    },
+    {
+        "q": "How does XML signature wrapping attack work?",
+        "o": [
+            "Moving signed element to bypass validation",
+            "Signature covers entire document",
+            "Wrapping is detected",
+            "Only signed data is processed"
+        ]
+    },
+    {
+        "q": "What is HTTP request body smuggling?",
+        "o": [
+            "Body parsed differently by proxy and backend",
+            "Bodies are parsed consistently",
+            "Smuggling only affects headers",
+            "Body length is verified"
+        ]
+    },
+    {
+        "q": "How does CSRF via Flash crossdomain.xml work?",
+        "o": [
+            "Permissive policy allows cross-origin requests",
+            "Flash is no longer supported",
+            "Crossdomain is secure by default",
+            "Only same-origin is allowed"
+        ]
+    },
+    {
+        "q": "What is DOM-based XSS via eval?",
+        "o": [
+            "User input passed to eval function",
+            "Eval is blocked by CSP",
+            "Input is sanitized before eval",
+            "Eval cannot execute XSS"
+        ]
+    },
+    {
+        "q": "How does SSRF filter bypass via IPv6 work?",
+        "o": [
+            "IPv6 addresses bypass IPv4-only filters",
+            "Filters check both protocols",
+            "IPv6 is disabled by default",
+            "Addresses are normalized"
+        ]
+    },
+    {
+        "q": "What is cache key manipulation via query order?",
+        "o": [
+            "Different param order creates cache miss",
+            "Query params are sorted for cache",
+            "Order is always consistent",
+            "Keys ignore query strings"
+        ]
+    },
+    {
+        "q": "How does prototype pollution gadget work?",
+        "o": [
+            "Polluted property triggers vulnerability",
+            "Properties are validated before use",
+            "Gadgets are not present",
+            "Pollution is sandboxed"
+        ]
+    },
+    {
+        "q": "What is insecure random in session tokens?",
+        "o": [
+            "Predictable sequence from weak PRNG",
+            "Sessions use CSPRNG always",
+            "Random is sufficient for tokens",
+            "Prediction is impractical"
+        ]
+    },
+    {
+        "q": "How does HTTP method override via form work?",
+        "o": [
+            "_method parameter changes request method",
+            "Method override is ignored",
+            "Only actual method is used",
+            "Forms only support GET POST"
+        ]
+    },
+    {
+        "q": "What is arbitrary redirect via javascript URI?",
+        "o": [
+            "Redirect URL allows javascript: protocol",
+            "Protocol is validated to HTTP",
+            "JavaScript URIs are blocked",
+            "Redirects are sanitized"
+        ]
+    },
+    {
+        "q": "How does response body injection work?",
+        "o": [
+            "User input reflected in response body unsanitized",
+            "Body content is always escaped",
+            "Injection is prevented",
+            "Only headers are injectable"
+        ]
+    },
+    {
+        "q": "What is authentication bypass via null password?",
+        "o": [
+            "Null or empty password bypasses check",
+            "Empty passwords are rejected",
+            "Null is handled as invalid",
+            "Bypass is prevented"
+        ]
+    },
+    {
+        "q": "How does content-based SSRF filter bypass work?",
+        "o": [
+            "Response content not validated allows internal access",
+            "Responses are filtered",
+            "Only external content returned",
+            "Internal access is blocked"
+        ]
+    },
+    {
+        "q": "What is session fixation via cookie scope?",
+        "o": [
+            "Setting session cookie from subdomain",
+            "Cookie scope prevents fixation",
+            "Subdomains cannot set parent cookies",
+            "Sessions regenerate on login"
+        ]
+    },
+    {
+        "q": "How does parameter binding bypass input validation?",
+        "o": [
+            "Object properties override validated fields",
+            "Binding respects validation",
+            "Only validated fields are bound",
+            "Override is prevented"
+        ]
+    },
+    {
+        "q": "What is insecure file inclusion via wrapper?",
+        "o": [
+            "PHP wrappers read arbitrary files",
+            "Wrappers are disabled",
+            "Only local files are included",
+            "Wrappers require allow_url_fopen"
+        ]
+    },
+    {
+        "q": "How does CORS misconfiguration leak credentials?",
+        "o": [
+            "Credential headers sent to attacker origin",
+            "Credentials are same-origin only",
+            "CORS blocks credential sharing",
+            "Misconfiguration is prevented"
+        ]
+    },
+    {
+        "q": "What is privilege escalation via JWT role claim?",
+        "o": [
+            "Modifying role claim in unsigned token",
+            "Tokens require valid signature",
+            "Role claims are server-validated",
+            "Modification is detected"
+        ]
+    },
+    {
+        "q": "How does GraphQL persisted query bypass work?",
+        "o": [
+            "Sending arbitrary query alongside ID",
+            "Only persisted queries are executed",
+            "Query ID is strictly validated",
+            "Bypass is prevented"
+        ]
+    },
+    {
+        "q": "What is HTTP desync via request line inconsistency?",
+        "o": [
+            "Different parsing of request line components",
+            "Request lines are standardized",
+            "Parsing is always consistent",
+            "Inconsistency is rejected"
+        ]
+    },
+    {
+        "q": "How does cache poisoning via uncacheable response work?",
+        "o": [
+            "Tricking cache to store private response",
+            "Private responses are never cached",
+            "Cache respects no-cache headers",
+            "Uncacheable is strictly enforced"
+        ]
+    },
+    {
+        "q": "What is commons-collections gadget chain in Java?",
+        "o": [
+            "Using transformer chains for code execution",
+            "Commons-collections is patched",
+            "Transformers cannot execute code",
+            "Chains are blocked"
+        ]
+    },
+    {
+        "q": "How does AST injection in prototype pollution work?",
+        "o": [
+            "Polluting template AST nodes",
+            "AST is immutable after parsing",
+            "Templates use safe node types",
+            "Injection is prevented"
+        ]
+    },
+    {
+        "q": "What is single-packet race condition attack?",
+        "o": [
+            "Multiple requests in one TCP packet for synchronization",
+            "Packets are processed sequentially",
+            "Network timing prevents synchronization",
+            "Single packet is split"
+        ]
+    },
+    {
+        "q": "How does DOM clobbering chain multiple elements?",
+        "o": [
+            "Nested forms create deep property access",
+            "Nesting is not allowed",
+            "Only single level properties work",
+            "Chaining is blocked"
+        ]
+    },
+    {
+        "q": "What is request smuggling via ambiguous chunk size?",
+        "o": [
+            "Different parsing of hex chunk values",
+            "Chunk sizes are standardized",
+            "Parsing is always strict",
+            "Ambiguity is rejected"
+        ]
+    },
+    {
+        "q": "How does negative balance exploit e-commerce apps?",
+        "o": [
+            "Creating negative cart totals via returns",
+            "Balances cannot go negative",
+            "Returns are validated",
+            "Calculations are audited"
+        ]
+    },
+    {
+        "q": "What is GraphQL circular fragment attack?",
+        "o": [
+            "Fragments referencing each other cause infinite loop",
+            "Circular fragments are detected",
+            "Depth limits prevent loops",
+            "Fragments are validated"
+        ]
+    },
+    {
+        "q": "How does prototype pollution bypass sanitization?",
+        "o": [
+            "Polluting sanitizer configuration",
+            "Sanitizer configs are immutable",
+            "Pollution cannot affect sanitizers",
+            "Configuration is protected"
+        ]
+    },
+    {
+        "q": "What is WebSocket frame masking bypass?",
+        "o": [
+            "Sending unmasked frames from browser",
+            "Browsers always mask frames",
+            "Unmasked frames are rejected",
+            "Masking is enforced"
+        ]
+    },
+    {
+        "q": "How does JSON key collision enable attacks?",
+        "o": [
+            "Duplicate keys parsed differently",
+            "Last value is always used",
+            "Duplicates are rejected",
+            "Keys are deduplicated"
+        ]
+    },
+    {
+        "q": "What is IDN homograph attack?",
+        "o": [
+            "Punycode domain looks like legitimate site",
+            "IDN is displayed in punycode",
+            "Browsers detect homographs",
+            "Only ASCII domains are used"
+        ]
+    },
+    {
+        "q": "How does X-Rewrite-URL bypass path-based access control?",
+        "o": [
+            "Backend uses rewrite header for authorization",
+            "Rewrite headers are stripped",
+            "Authorization uses actual path",
+            "Headers cannot override path"
+        ]
+    },
+    {
+        "q": "What is lazy deserialization attack?",
+        "o": [
+            "Triggering deserialization via getter methods",
+            "Getters do not deserialize",
+            "Lazy loading is safe",
+            "Deserialization is immediate"
+        ]
+    },
+    {
+        "q": "How does Azure blob enumeration work?",
+        "o": [
+            "Listing containers via anonymous access",
+            "Anonymous listing is disabled",
+            "Containers require auth",
+            "Enumeration is blocked"
+        ]
+    },
+    {
+        "q": "What is reflected XSS via JSONP endpoint?",
+        "o": [
+            "Callback parameter reflected in response",
+            "Callbacks are strictly validated",
+            "Only alphanumeric allowed",
+            "JSONP escapes output"
+        ]
+    },
+    {
+        "q": "How does CORS header injection work?",
+        "o": [
+            "Injecting origin in response header",
+            "Origin headers are validated",
+            "Injection is prevented",
+            "CORS blocks manipulation"
+        ]
+    },
+    {
+        "q": "What is HTTP response header injection via cookie?",
+        "o": [
+            "Cookie value with CRLF creates headers",
+            "Cookie values are sanitized",
+            "CRLF in cookies is blocked",
+            "Headers cannot be injected"
+        ]
+    },
+    {
+        "q": "How does CSP bypass via base-uri work?",
+        "o": [
+            "Missing base-uri allows base tag injection",
+            "Base-uri is always restricted",
+            "Base tags are blocked",
+            "CSP prevents base injection"
+        ]
+    },
+    {
+        "q": "What is OAuth mix-up attack?",
+        "o": [
+            "Confusing client between authorization servers",
+            "Servers are uniquely identified",
+            "Mix-up is prevented",
+            "Client validates issuer"
+        ]
+    },
+    {
+        "q": "How does session race condition enable bypass?",
+        "o": [
+            "Parallel requests share inconsistent session",
+            "Session is locked during request",
+            "Race conditions are prevented",
+            "State is consistent"
+        ]
+    },
+    {
+        "q": "What is CSS exfiltration via font ligatures?",
+        "o": [
+            "Custom font ligatures leak text content",
+            "Fonts cannot exfiltrate data",
+            "Ligatures are static",
+            "CSS is sandboxed"
+        ]
+    },
+    {
+        "q": "How does webhook signature bypass work?",
+        "o": [
+            "Weak HMAC key allows forgery",
+            "Signatures use strong keys",
+            "HMAC is unforgeable",
+            "Keys are rotated regularly"
+        ]
+    },
+    {
+        "q": "What is memory disclosure via web shell?",
+        "o": [
+            "Reading server process memory",
+            "Memory is protected",
+            "Shells cannot access memory",
+            "Disclosure is prevented"
+        ]
+    },
+    {
+        "q": "How does JWT jku header injection work?",
+        "o": [
+            "Pointing to attacker-controlled key set",
+            "JKU URLs are whitelisted",
+            "Key sets are validated",
+            "Injection is prevented"
+        ]
+    },
+    {
+        "q": "What is cache poisoning via request splitting?",
+        "o": [
+            "Split request poisons cache with second response",
+            "Splitting is prevented",
+            "Cache validates responses",
+            "Poisoning is blocked"
+        ]
+    },
+    {
+        "q": "How does HTTP/2 pseudo-header smuggling work?",
+        "o": [
+            "Manipulating :method or :path headers",
+            "Pseudo-headers are validated",
+            "Smuggling is prevented",
+            "Only standard headers work"
+        ]
+    },
+    {
+        "q": "What is SSTI in Jinja2 sandbox escape?",
+        "o": [
+            "Accessing __globals__ to execute code",
+            "Sandbox blocks __globals__",
+            "Escape is impossible",
+            "Only safe attributes accessible"
+        ]
+    },
+    {
+        "q": "How does error-based SQL injection extract data?",
+        "o": [
+            "Database errors include query results",
+            "Errors are generic",
+            "Data is not in errors",
+            "Extraction is prevented"
+        ]
+    },
+    {
+        "q": "What is OAuth token substitution attack?",
+        "o": [
+            "Using token from different client",
+            "Tokens are client-bound",
+            "Substitution is detected",
+            "Audience is validated"
+        ]
+    },
+    {
+        "q": "How does PDF form XSS attack work?",
+        "o": [
+            "JavaScript in PDF form fields executes",
+            "PDF JavaScript is sandboxed",
+            "Forms cannot contain scripts",
+            "Execution is blocked"
+        ]
+    },
+    {
+        "q": "What is Unicode text direction attack?",
+        "o": [
+            "RTL chars hide malicious content visually",
+            "Direction chars are stripped",
+            "Display matches code",
+            "RTL is not rendered"
+        ]
+    },
+    {
+        "q": "How does GCP metadata credential theft work?",
+        "o": [
+            "Accessing metadata.google.internal",
+            "Metadata requires headers",
+            "GCE blocks SSRF",
+            "Credentials are encrypted"
+        ]
+    },
+    {
+        "q": "What is JWT x5c header injection?",
+        "o": [
+            "Embedding attacker certificate in token",
+            "X5C is validated against trusted CA",
+            "Certificates are not trusted",
+            "Injection is prevented"
+        ]
+    },
+    {
+        "q": "How does billion laughs XXE attack work?",
+        "o": [
+            "Nested entities cause exponential expansion",
+            "Entity expansion is limited",
+            "Nesting is prevented",
+            "Parser blocks billion laughs"
+        ]
+    },
+    {
+        "q": "What is cross-tenant data access in SaaS?",
+        "o": [
+            "Accessing other tenant data via ID",
+            "Tenant isolation is enforced",
+            "IDs are tenant-scoped",
+            "Cross-tenant is blocked"
+        ]
+    },
+    {
+        "q": "How does CSP bypass via data URI work?",
+        "o": [
+            "Script in data: URI executes",
+            "Data URIs are blocked in CSP",
+            "Only https sources allowed",
+            "CSP prevents data execution"
+        ]
+    },
+    {
+        "q": "What is header injection via multiline value?",
+        "o": [
+            "Folded headers inject additional content",
+            "Folding is not supported",
+            "Headers are single line",
+            "Multiline is rejected"
+        ]
+    },
+    {
+        "q": "How does GraphQL subscription abuse work?",
+        "o": [
+            "Many concurrent subscriptions exhaust resources",
+            "Subscription limits are enforced",
+            "Resources are pooled",
+            "Abuse is prevented"
+        ]
+    },
+    {
+        "q": "What is PHP object injection via unserialize?",
+        "o": [
+            "Magic methods triggered during deserialization",
+            "Magic methods are blocked",
+            "Unserialize is safe",
+            "Objects are validated"
+        ]
+    },
+    {
+        "q": "How does path confusion in URL normalization work?",
+        "o": [
+            "Different interpretation of . and ..",
+            "Normalization is standardized",
+            "Dots are handled consistently",
+            "Confusion is prevented"
+        ]
+    },
+    {
+        "q": "What is certificate pinning bypass via proxy?",
+        "o": [
+            "System proxy intercepts pinned connections",
+            "Pinning prevents all interception",
+            "Proxy certificates are rejected",
+            "Bypass is impossible"
+        ]
+    },
+    {
+        "q": "How does unsafe eval sink enable RCE?",
+        "o": [
+            "User input executed via eval-like function",
+            "Eval is blocked by sandbox",
+            "Input is sanitized",
+            "RCE requires direct access"
+        ]
+    },
+    {
+        "q": "What is request smuggling via header obfuscation?",
+        "o": [
+            "Headers with whitespace parsed differently",
+            "Whitespace is normalized",
+            "Obfuscation is blocked",
+            "Headers match exactly"
+        ]
+    },
+    {
+        "q": "How does timing-safe comparison failure enable attacks?",
+        "o": [
+            "Early exit reveals partial match",
+            "Comparison is constant time",
+            "Timing is not observable",
+            "Exit is always consistent"
+        ]
+    },
+    {
+        "q": "What is backend component smuggling?",
+        "o": [
+            "Smuggled request reaches different backend",
+            "Backends are isolated",
+            "Routing is consistent",
+            "Smuggling is blocked"
+        ]
+    },
+    {
+        "q": "How does open redirect via fragment work?",
+        "o": [
+            "JavaScript uses fragment for redirect URL",
+            "Fragments are not used for redirects",
+            "JavaScript validates fragments",
+            "Fragment redirects are blocked"
+        ]
+    },
+    {
+        "q": "What is upload destination manipulation?",
+        "o": [
+            "User controls storage path via parameter",
+            "Paths are server-determined",
+            "Manipulation is blocked",
+            "Storage is fixed"
+        ]
+    },
+    {
+        "q": "How does file content injection via headers work?",
+        "o": [
+            "HTTP headers stored in file content",
+            "Headers are stripped from storage",
+            "Content is validated",
+            "Injection is prevented"
+        ]
+    },
+    {
+        "q": "What is privilege creep via incremental access?",
+        "o": [
+            "Gradual permission accumulation",
+            "Permissions are periodically reviewed",
+            "Access is time-limited",
+            "Creep is prevented"
+        ]
+    },
+    {
+        "q": "How does BOLA via nested resource work?",
+        "o": [
+            "Accessing child resource of unauthorized parent",
+            "Parent authorization is inherited",
+            "Nested resources check ownership",
+            "Access is properly scoped"
+        ]
+    },
+    {
+        "q": "What is GraphQL type confusion attack?",
+        "o": [
+            "Exploiting union type resolution",
+            "Types are strictly validated",
+            "Union resolution is safe",
+            "Confusion is prevented"
+        ]
+    },
+    {
+        "q": "How does internal API documentation exposure help attacks?",
+        "o": [
+            "Hidden endpoints revealed in internal docs",
+            "Internal docs are protected",
+            "Only public APIs documented",
+            "Documentation is access-controlled"
+        ]
+    },
+    {
+        "q": "What is SSRF via PDF generation with links?",
+        "o": [
+            "PDF library fetches link URLs",
+            "Links are not fetched",
+            "URLs are validated",
+            "Fetching is blocked"
+        ]
+    },
+    {
+        "q": "How does XXE via xlsx file work?",
+        "o": [
+            "XML entities in spreadsheet content",
+            "XLSX parsers disable entities",
+            "Content is sanitized",
+            "Entities are blocked"
+        ]
+    },
+    {
+        "q": "What is timing attack on password reset?",
+        "o": [
+            "Valid vs invalid email takes different time",
+            "Reset is constant time",
+            "Timing is not observable",
+            "Emails are validated uniformly"
+        ]
+    },
+    {
+        "q": "How does OAuth phishing via lookalike consent work?",
+        "o": [
+            "Fake consent screen steals authorization",
+            "Consent screens are verified",
+            "Users check consent origin",
+            "Phishing is prevented"
+        ]
+    },
+    {
+        "q": "What is SAML assertion replay attack?",
+        "o": [
+            "Reusing valid assertion for authentication",
+            "Assertions have unique IDs",
+            "Replay is detected",
+            "Assertions expire immediately"
+        ]
+    },
+    {
+        "q": "How does HTTP trailer smuggling work?",
+        "o": [
+            "Headers in HTTP trailer processed unexpectedly",
+            "Trailers are properly handled",
+            "Smuggling via trailer is blocked",
+            "Only data is in trailer"
+        ]
+    },
+    {
+        "q": "What is browser cache persistent XSS?",
+        "o": [
+            "Cached response contains XSS payload",
+            "Cache validates content",
+            "XSS is not cached",
+            "Cache expires quickly"
+        ]
+    },
+    {
+        "q": "How does SSRF bypass via redirect chain work?",
+        "o": [
+            "Initial URL validates but redirects to internal",
+            "Redirects are followed with validation",
+            "Internal redirects are blocked",
+            "Chain is prevented"
+        ]
+    },
+    {
+        "q": "What is prototype pollution in lodash merge?",
+        "o": [
+            "Merge copies __proto__ properties",
+            "Merge ignores __proto__",
+            "Properties are validated",
+            "Pollution is blocked"
+        ]
+    },
+    {
+        "q": "How does insecure comparison enable auth bypass?",
+        "o": [
+            "Truncated or type-coerced comparison",
+            "Comparison is strict",
+            "Types are validated",
+            "Bypass is prevented"
+        ]
+    },
+    {
+        "q": "What is HTTP desync via keep-alive?",
+        "o": [
+            "Persistent connection allows request mixing",
+            "Connections are properly isolated",
+            "Keep-alive is handled correctly",
+            "Mixing is prevented"
+        ]
+    },
+    {
+        "q": "How does redirect bypass via whitespace work?",
+        "o": [
+            "Leading whitespace bypasses URL checks",
+            "Whitespace is trimmed",
+            "URLs are normalized",
+            "Bypass is prevented"
+        ]
+    },
+    {
+        "q": "What is unsafe handling of file operation errors?",
+        "o": [
+            "Error reveals file system structure",
+            "Errors are generic",
+            "Structure is not exposed",
+            "Errors are suppressed"
+        ]
+    },
+    {
+        "q": "How does authentication race condition enable bypass?",
+        "o": [
+            "Parallel logins create conflicting sessions",
+            "Login is serialized",
+            "Sessions are isolated",
+            "Race is prevented"
+        ]
+    },
+    {
+        "q": "What is content security policy bypass via JSONP?",
+        "o": [
+            "Whitelisted domain serves JSONP callback",
+            "JSONP endpoints are blocked",
+            "CSP validates scripts",
+            "Callbacks are sanitized"
+        ]
+    },
+    {
+        "q": "How does ORM injection bypass parameterization?",
+        "o": [
+            "Raw query construction despite ORM",
+            "ORM always parameterizes",
+            "Raw queries are blocked",
+            "Injection is prevented"
+        ]
+    },
+    {
+        "q": "What is privilege escalation via API versioning?",
+        "o": [
+            "Old API version lacks auth checks",
+            "All versions enforce auth",
+            "Old versions are deprecated",
+            "Escalation is prevented"
+        ]
+    },
+    {
+        "q": "How does GraphQL introspection reveal sensitive schema?",
+        "o": [
+            "Full type system exposed via query",
+            "Introspection is disabled in prod",
+            "Sensitive types are hidden",
+            "Schema is access-controlled"
+        ]
+    },
+    {
+        "q": "What is SSRF via document import?",
+        "o": [
+            "Importing URL-referenced document",
+            "Imports are local only",
+            "URLs are validated",
+            "Remote import is blocked"
+        ]
+    },
+    {
+        "q": "How does XXE billion bytes attack work?",
+        "o": [
+            "Single entity expands to huge content",
+            "Entity size is limited",
+            "Expansion is blocked",
+            "Parser prevents abuse"
+        ]
+    },
+    {
+        "q": "What is insecure encryption mode enabling attacks?",
+        "o": [
+            "ECB mode reveals patterns in ciphertext",
+            "CBC mode is always used",
+            "ECB is blocked",
+            "Patterns are not visible"
+        ]
+    },
+    {
+        "q": "How does OAuth implicit flow token theft work?",
+        "o": [
+            "Token in URL fragment exposed via history",
+            "Fragments are not stored",
+            "History is cleared",
+            "Token theft is prevented"
+        ]
+    },
+    {
+        "q": "What is SAML signature exclusion attack?",
+        "o": [
+            "Removing signature from assertion",
+            "Signatures are required",
+            "Exclusion is detected",
+            "Unsigned assertions rejected"
+        ]
+    },
+    {
+        "q": "How does HTTP/1.0 downgrade enable attacks?",
+        "o": [
+            "Forcing HTTP/1.0 disables modern protections",
+            "Downgrade is prevented",
+            "HTTP/1.0 is rejected",
+            "Protections apply to all versions"
+        ]
+    },
+    {
+        "q": "What is DOM-based prototype pollution?",
+        "o": [
+            "URL parameters pollute Object prototype",
+            "URL parsing is safe",
+            "Prototype is protected",
+            "DOM cannot pollute prototype"
+        ]
+    },
+    {
+        "q": "How does SSRF IP bypass via decimal notation work?",
+        "o": [
+            "127.0.0.1 written as decimal bypasses filter",
+            "Decimal notation is normalized",
+            "All IP formats are checked",
+            "Decimal is rejected"
+        ]
+    },
+    {
+        "q": "What is session token entropy exhaustion?",
+        "o": [
+            "Brute forcing small token space",
+            "Token space is 128 bits",
+            "Entropy is sufficient",
+            "Exhaustion is impractical"
+        ]
+    },
+    {
+        "q": "How does HTTP method case sensitivity bypass work?",
+        "o": [
+            "Using GET vs get to bypass checks",
+            "Methods are case-normalized",
+            "Checks are case-insensitive",
+            "Case does not matter"
+        ]
+    },
+    {
+        "q": "What is redirect via meta refresh tag?",
+        "o": [
+            "Injecting meta tag for redirect",
+            "Meta tags are sanitized",
+            "Refresh is blocked",
+            "Only links are allowed"
+        ]
+    },
+    {
+        "q": "How does response charset mismatch enable XSS?",
+        "o": [
+            "Different charset interpretation executes script",
+            "Charset is enforced consistently",
+            "Mismatch is prevented",
+            "XSS is blocked"
+        ]
+    },
+    {
+        "q": "What is brute force via parallel sessions?",
+        "o": [
+            "Multiple sessions bypass per-session limits",
+            "Limits are per-account",
+            "Sessions share rate limit",
+            "Parallel is blocked"
+        ]
+    },
+    {
+        "q": "How does SSRF via DNS CNAME work?",
+        "o": [
+            "CNAME to internal host bypasses check",
+            "CNAME is resolved and checked",
+            "Internal CNAMEs are blocked",
+            "DNS is validated"
+        ]
+    },
+    {
+        "q": "What is session riding via CSRF?",
+        "o": [
+            "Using authenticated session for malicious action",
+            "CSRF tokens prevent riding",
+            "Sessions are protected",
+            "Actions require confirmation"
+        ]
+    },
+    {
+        "q": "How does parameter array pollution work?",
+        "o": [
+            "Array parameter overrides single value",
+            "Arrays are rejected for single params",
+            "Type is validated",
+            "Pollution is blocked"
+        ]
+    },
+    {
+        "q": "What is insecure fallback in protocol negotiation?",
+        "o": [
+            "Forcing weak protocol version",
+            "Weak protocols are disabled",
+            "Fallback is prevented",
+            "Only strong protocols used"
+        ]
+    },
+    {
+        "q": "How does CORS bypass via subdomain wildcard work?",
+        "o": [
+            "Wildcard allows any subdomain access",
+            "Wildcards are specific",
+            "Subdomains are validated",
+            "Bypass is prevented"
+        ]
+    },
+    {
+        "q": "What is privilege escalation via email verification bypass?",
+        "o": [
+            "Claiming unverified admin email",
+            "Email verification is enforced",
+            "Admin emails are protected",
+            "Bypass is prevented"
+        ]
+    },
+    {
+        "q": "How does GraphQL mutation replay work?",
+        "o": [
+            "Replaying captured mutation for duplicate action",
+            "Mutations are idempotent",
+            "Replay is detected",
+            "Actions are deduplicated"
+        ]
+    },
+    {
+        "q": "What is API abuse via mobile app reverse engineering?",
+        "o": [
+            "Extracting API secrets from APK",
+            "Secrets are server-side only",
+            "APK is obfuscated",
+            "Extraction is prevented"
+        ]
+    },
+    {
+        "q": "How does SSRF via email link preview work?",
+        "o": [
+            "Email client fetches link for preview",
+            "Links are not fetched",
+            "Preview uses sandbox",
+            "SSRF is blocked"
+        ]
+    },
+    {
+        "q": "What is XXE via SVG image?",
+        "o": [
+            "External entity in SVG XML",
+            "SVG entities are disabled",
+            "Parser sanitizes SVG",
+            "XXE is blocked"
+        ]
+    },
+    {
+        "q": "How does weak session binding enable hijacking?",
+        "o": [
+            "Session not tied to client fingerprint",
+            "Sessions are IP-bound",
+            "Fingerprint is validated",
+            "Binding is enforced"
+        ]
+    },
+    {
+        "q": "What is OAuth open redirect via path traversal?",
+        "o": [
+            "Traversal in redirect URI reaches external",
+            "Paths are normalized",
+            "Traversal is blocked",
+            "URIs are validated"
+        ]
+    },
+    {
+        "q": "How does SAML XML comment injection work?",
+        "o": [
+            "Comments alter parsed assertion content",
+            "Comments are stripped",
+            "Parser ignores comments",
+            "Injection is prevented"
+        ]
+    },
+    {
+        "q": "What is WebSocket connection hijacking via upgrade?",
+        "o": [
+            "Intercepting upgrade to control connection",
+            "Upgrades are authenticated",
+            "Hijacking is prevented",
+            "Connection is protected"
+        ]
+    },
+    {
+        "q": "How does prototype pollution via URL parsing work?",
+        "o": [
+            "Query string parser pollutes prototype",
+            "Parser uses null prototype",
+            "Pollution is prevented",
+            "Query parsing is safe"
+        ]
+    },
+    {
+        "q": "What is server-side PDF injection attack?",
+        "o": [
+            "Injecting content into generated PDF",
+            "PDF content is escaped",
+            "Injection is prevented",
+            "Templates are safe"
+        ]
+    },
+    {
+        "q": "How does insecure temporary file handling enable attacks?",
+        "o": [
+            "Predictable temp path allows pre-creation",
+            "Temp paths are random",
+            "Prediction is impossible",
+            "Creation is atomic"
+        ]
+    },
+    {
+        "q": "What is HTTP verb override for method spoofing?",
+        "o": [
+            "POST with _method overrides actual method",
+            "Override is ignored",
+            "Only actual method used",
+            "Spoofing is blocked"
+        ]
+    },
+    {
+        "q": "How does SSRF via HTML to PDF conversion work?",
+        "o": [
+            "Image tags fetch internal URLs",
+            "URLs are validated",
+            "Internal access is blocked",
+            "SSRF is prevented"
+        ]
+    },
+    {
+        "q": "What is JWT signature stripping attack?",
+        "o": [
+            "Removing signature and setting alg to none",
+            "None algorithm is rejected",
+            "Signature is required",
+            "Stripping is detected"
+        ]
+    },
+    {
+        "q": "How does race condition in coupon redemption work?",
+        "o": [
+            "Parallel requests use same coupon multiple times",
+            "Redemption is atomic",
+            "Coupons are locked",
+            "Race is prevented"
+        ]
+    },
+    {
+        "q": "What is GraphQL operation name bypass?",
+        "o": [
+            "Using different operation name to evade limits",
+            "Names are normalized",
+            "Limits apply to all operations",
+            "Bypass is prevented"
+        ]
+    },
+    {
+        "q": "How does insecure object graph deserialization work?",
+        "o": [
+            "Circular references cause resource exhaustion",
+            "Graph depth is limited",
+            "Circular refs are detected",
+            "Exhaustion is prevented"
+        ]
+    },
+    {
+        "q": "What is path traversal via symbolic link?",
+        "o": [
+            "Symlink in path escape the intended directory",
+            "Symlinks are not followed",
+            "Traversal is blocked",
+            "Links are resolved"
+        ]
+    },
+    {
+        "q": "How does cache key inconsistency enable poisoning?",
+        "o": [
+            "Different cache key vs routing decision",
+            "Keys match routing exactly",
+            "Inconsistency is prevented",
+            "Poisoning is blocked"
+        ]
+    },
+    {
+        "q": "What is account enumeration via password reset timing?",
+        "o": [
+            "Existing vs non-existing account takes different time",
+            "Reset is constant time",
+            "Timing is uniform",
+            "Enumeration is prevented"
+        ]
+    },
+    {
+        "q": "How does CORS bypass via null origin with file protocol work?",
+        "o": [
+            "Local file sends null origin to server",
+            "Null origin is rejected",
+            "File protocol is blocked",
+            "CORS prevents access"
+        ]
+    },
+    {
+        "q": "What is insecure string interpolation in queries?",
+        "o": [
+            "Template literals include unsanitized input",
+            "Interpolation uses parameterization",
+            "Input is escaped",
+            "Queries are safe"
+        ]
+    },
+    {
+        "q": "How does OAuth client impersonation work?",
+        "o": [
+            "Using known client credentials from another app",
+            "Credentials are client-specific",
+            "Impersonation is detected",
+            "Clients are verified"
+        ]
+    },
+    {
+        "q": "What is SAML response injection attack?",
+        "o": [
+            "Modifying signed response before validation",
+            "Signature validates entire response",
+            "Injection invalidates signature",
+            "Response is protected"
+        ]
+    },
+    {
+        "q": "How does HTTP/2 request priority manipulation work?",
+        "o": [
+            "High priority requests starve others",
+            "Priority is rate limited",
+            "Manipulation is blocked",
+            "Resources are fairly shared"
+        ]
+    },
+    {
+        "q": "What is browser extension hijacking attack?",
+        "o": [
+            "Compromised extension steals page data",
+            "Extensions are sandboxed",
+            "Data access is controlled",
+            "Hijacking is prevented"
+        ]
+    },
+    {
+        "q": "How does SSRF via video transcoding work?",
+        "o": [
+            "Video URL fetched during processing",
+            "URLs are validated",
+            "Transcoding is isolated",
+            "SSRF is blocked"
+        ]
+    },
+    {
+        "q": "What is insecure IV reuse in encryption?",
+        "o": [
+            "Same IV allows ciphertext analysis",
+            "IV is always random",
+            "Reuse is prevented",
+            "Analysis is impossible"
+        ]
+    },
+    {
+        "q": "How does token fixation via link sharing work?",
+        "o": [
+            "Shared link contains session token",
+            "Tokens are not in links",
+            "Sessions regenerate on share",
+            "Fixation is prevented"
+        ]
+    },
+    {
+        "q": "What is GraphQL persisted query hash collision?",
+        "o": [
+            "Finding query with same hash as approved",
+            "Hash space is sufficiently large",
+            "Collision is infeasible",
+            "Queries are verified"
+        ]
+    },
+    {
+        "q": "How does API rate limit bypass via timing work?",
+        "o": [
+            "Sending requests at limit boundary",
+            "Limits use sliding window",
+            "Timing is included",
+            "Bypass is blocked"
+        ]
+    },
+    {
+        "q": "What is server-side request forgery via DNS rebinding?",
+        "o": [
+            "DNS response changes after validation",
+            "DNS is cached after first lookup",
+            "Rebinding is detected",
+            "SSRF is blocked"
+        ]
+    },
+    {
+        "q": "How does HTTP request tunneling work?",
+        "o": [
+            "Encapsulating malicious request in valid one",
+            "Tunneling is detectable",
+            "Only standard requests processed",
+            "Encapsulation is blocked"
+        ]
+    },
+    {
+        "q": "What is blind XXE via error-based exfiltration?",
+        "o": [
+            "File content included in error messages",
+            "Errors are suppressed",
+            "XXE cannot use errors",
+            "Exfiltration is blocked"
+        ]
+    },
+    {
+        "q": "How does insecure API key rotation enable attacks?",
+        "o": [
+            "Old keys remain valid after rotation",
+            "Keys are immediately invalidated",
+            "Rotation is atomic",
+            "Old keys are blocked"
+        ]
+    },
+    {
+        "q": "What is mutation XSS via HTML sanitizer bypass?",
+        "o": [
+            "Valid HTML mutates to executable script",
+            "Sanitizers prevent all XSS",
+            "Mutation is detected",
+            "Scripts are always removed"
+        ]
+    }
+]

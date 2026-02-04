@@ -1,0 +1,4565 @@
+[
+    {
+        "q": "What is CSRF attack?",
+        "o": [
+            "Forcing user to perform unwanted actions",
+            "Cross-site request filtering",
+            "Cookie session reuse flaw",
+            "Client-side request format"
+        ]
+    },
+    {
+        "q": "What does CSRF stand for?",
+        "o": [
+            "Cross-Site Request Forgery",
+            "Client Side Request Format",
+            "Cookie Session Reuse Flaw",
+            "Cross System Resource Failure"
+        ]
+    },
+    {
+        "q": "Which HTTP method is more vulnerable to CSRF?",
+        "o": [
+            "POST requests without tokens",
+            "GET requests only",
+            "DELETE requests always",
+            "OPTIONS requests mainly"
+        ]
+    },
+    {
+        "q": "What is a CSRF token?",
+        "o": [
+            "Unique value to validate requests",
+            "User authentication cookie",
+            "Session identifier string",
+            "Browser fingerprint value"
+        ]
+    },
+    {
+        "q": "Where should CSRF tokens be placed?",
+        "o": [
+            "In hidden form fields or headers",
+            "Only in URL parameters",
+            "Inside cookie values",
+            "Within user passwords"
+        ]
+    },
+    {
+        "q": "What property makes cookies vulnerable to CSRF?",
+        "o": [
+            "Automatic inclusion in requests",
+            "Encryption of values",
+            "Expiration date settings",
+            "Domain path restrictions"
+        ]
+    },
+    {
+        "q": "What is same-site cookie attribute?",
+        "o": [
+            "Restricts cookie to same-origin requests",
+            "Allows cross-site cookie sharing",
+            "Encrypts cookie transmission",
+            "Compresses cookie storage"
+        ]
+    },
+    {
+        "q": "What is SameSite=Strict mode?",
+        "o": [
+            "Cookie only sent for same-site requests",
+            "Cookie sent to all websites",
+            "Cookie encrypted strictly",
+            "Cookie never expires"
+        ]
+    },
+    {
+        "q": "What is SameSite=Lax mode?",
+        "o": [
+            "Cookie sent for top-level navigation",
+            "Cookie blocked completely",
+            "Cookie sent everywhere",
+            "Cookie duplicated across sites"
+        ]
+    },
+    {
+        "q": "Which browser header helps prevent CSRF?",
+        "o": [
+            "Origin header validation",
+            "Content-Type header",
+            "Accept-Language header",
+            "Cache-Control header"
+        ]
+    },
+    {
+        "q": "What is referer header checking?",
+        "o": [
+            "Validating request source URL",
+            "Checking referral programs",
+            "Managing user referrals",
+            "Tracking affiliate links"
+        ]
+    },
+    {
+        "q": "Why might referer checking fail?",
+        "o": [
+            "Users may strip referer headers",
+            "Referer is always present",
+            "Browsers encrypt referer",
+            "Servers ignore headers"
+        ]
+    },
+    {
+        "q": "What is double submit cookie pattern?",
+        "o": [
+            "Sending token in cookie and request",
+            "Using two separate cookies",
+            "Submitting form twice",
+            "Duplicating user session"
+        ]
+    },
+    {
+        "q": "What makes login CSRF dangerous?",
+        "o": [
+            "Attacker logs victim into their account",
+            "Password is stolen directly",
+            "Session becomes encrypted",
+            "Login page is blocked"
+        ]
+    },
+    {
+        "q": "What is logout CSRF attack?",
+        "o": [
+            "Forcing user to log out unexpectedly",
+            "Preventing all logouts",
+            "Stealing logout credentials",
+            "Blocking logout buttons"
+        ]
+    },
+    {
+        "q": "What is CSRF via JSON endpoint?",
+        "o": [
+            "Exploiting API accepting JSON via form",
+            "Creating JSON files",
+            "Parsing JSON responses",
+            "Storing JSON locally"
+        ]
+    },
+    {
+        "q": "What is clickjacking attack?",
+        "o": [
+            "Tricking user to click hidden elements",
+            "Clicking buttons very fast",
+            "Jacking up click counters",
+            "Hijacking keyboard clicks"
+        ]
+    },
+    {
+        "q": "What is UI redressing?",
+        "o": [
+            "Another name for clickjacking",
+            "Redesigning user interface",
+            "Updating CSS styles",
+            "Modifying page layouts"
+        ]
+    },
+    {
+        "q": "How is clickjacking typically performed?",
+        "o": [
+            "Using transparent iframes over content",
+            "Modifying button positions",
+            "Changing button colors",
+            "Hiding buttons completely"
+        ]
+    },
+    {
+        "q": "What header prevents clickjacking?",
+        "o": [
+            "X-Frame-Options header",
+            "Content-Type header",
+            "Authorization header",
+            "Accept-Encoding header"
+        ]
+    },
+    {
+        "q": "What does X-Frame-Options DENY do?",
+        "o": [
+            "Completely prevents iframe embedding",
+            "Denies all page requests",
+            "Blocks all JavaScript",
+            "Rejects cookie storage"
+        ]
+    },
+    {
+        "q": "What does X-Frame-Options SAMEORIGIN do?",
+        "o": [
+            "Allows framing only from same origin",
+            "Allows all origins to frame",
+            "Blocks all frame attempts",
+            "Origins must match exactly"
+        ]
+    },
+    {
+        "q": "What CSP directive prevents clickjacking?",
+        "o": [
+            "frame-ancestors directive",
+            "script-src directive",
+            "style-src directive",
+            "img-src directive"
+        ]
+    },
+    {
+        "q": "What is frame-ancestors 'none'?",
+        "o": [
+            "Prevents all iframe embedding",
+            "Allows ancestor frames",
+            "No frame restrictions",
+            "None of the origins"
+        ]
+    },
+    {
+        "q": "What is likejacking attack?",
+        "o": [
+            "Clickjacking social media likes",
+            "Stealing like buttons",
+            "Blocking like features",
+            "Liking posts automatically"
+        ]
+    },
+    {
+        "q": "What is cursorjacking?",
+        "o": [
+            "Making cursor appear elsewhere",
+            "Cursor speed modification",
+            "Cursor shape changing",
+            "Cursor color styling"
+        ]
+    },
+    {
+        "q": "What is double clickjacking?",
+        "o": [
+            "Exploiting double-click events",
+            "Clicking buttons twice",
+            "Two layer iframes",
+            "Double frame stacking"
+        ]
+    },
+    {
+        "q": "What is drag and drop clickjacking?",
+        "o": [
+            "Tricking user to drag sensitive data",
+            "Moving page elements",
+            "Dragging images around",
+            "Dropping files safely"
+        ]
+    },
+    {
+        "q": "What is text field injection via clickjacking?",
+        "o": [
+            "Tricking user to type in hidden field",
+            "Injecting text into pages",
+            "Adding text automatically",
+            "Filling forms directly"
+        ]
+    },
+    {
+        "q": "What is framebuster script?",
+        "o": [
+            "JavaScript to prevent framing",
+            "Script to create frames",
+            "Frame styling script",
+            "Frame loading code"
+        ]
+    },
+    {
+        "q": "Why do framebuster scripts fail?",
+        "o": [
+            "Can be blocked with sandbox attribute",
+            "Always work perfectly",
+            "Browsers ignore them",
+            "JavaScript is required"
+        ]
+    },
+    {
+        "q": "What is DOM-based XSS?",
+        "o": [
+            "XSS executing through client-side DOM",
+            "Document Object Model",
+            "Data Output Method",
+            "Database Object Mapping"
+        ]
+    },
+    {
+        "q": "What sources are dangerous in DOM XSS?",
+        "o": [
+            "location hash and search parameters",
+            "Static HTML content only",
+            "Server response headers",
+            "Database stored values"
+        ]
+    },
+    {
+        "q": "What is a DOM XSS sink?",
+        "o": [
+            "Function that executes attacker data",
+            "Place to store DOM data",
+            "DOM element container",
+            "JavaScript variable scope"
+        ]
+    },
+    {
+        "q": "Which function is a dangerous DOM sink?",
+        "o": [
+            "innerHTML property assignment",
+            "getElementById method",
+            "console.log function",
+            "Array push method"
+        ]
+    },
+    {
+        "q": "What is document.write vulnerability?",
+        "o": [
+            "Can execute injected scripts directly",
+            "Writes are too slow",
+            "Documents become corrupted",
+            "Writing is blocked"
+        ]
+    },
+    {
+        "q": "What is eval function risk?",
+        "o": [
+            "Executes string as JavaScript code",
+            "Evaluates math only",
+            "Validates form input",
+            "Checks variable types"
+        ]
+    },
+    {
+        "q": "What is setTimeout with string parameter?",
+        "o": [
+            "Acts like eval executing string code",
+            "Sets time zone value",
+            "Manages timeout errors",
+            "Delays page loading"
+        ]
+    },
+    {
+        "q": "What is setInterval vulnerability?",
+        "o": [
+            "String argument executes as code",
+            "Interval too short",
+            "Causes memory leaks",
+            "Blocks main thread"
+        ]
+    },
+    {
+        "q": "What is location.href sink?",
+        "o": [
+            "Can be used for JavaScript URL execution",
+            "Gets page location only",
+            "Tracks user location",
+            "Sets GPS coordinates"
+        ]
+    },
+    {
+        "q": "What is window.location vulnerability?",
+        "o": [
+            "JavaScript protocol URLs can execute code",
+            "Window size changes",
+            "Location services access",
+            "Browser window focus"
+        ]
+    },
+    {
+        "q": "What is outerHTML sink?",
+        "o": [
+            "Replaces element including scripts",
+            "Gets outer dimensions",
+            "Outer frame reference",
+            "External HTML link"
+        ]
+    },
+    {
+        "q": "What is insertAdjacentHTML risk?",
+        "o": [
+            "Inserts HTML without escaping",
+            "Adjacent element styling",
+            "Insert mode selection",
+            "Adjacent text insertion"
+        ]
+    },
+    {
+        "q": "What is jQuery html() vulnerability?",
+        "o": [
+            "Can insert executable HTML/scripts",
+            "Returns HTML string safely",
+            "Validates HTML structure",
+            "Escapes special characters"
+        ]
+    },
+    {
+        "q": "What is jQuery append() risk?",
+        "o": [
+            "Can append script elements",
+            "Appends text safely",
+            "Only adds numbers",
+            "Validates appended data"
+        ]
+    },
+    {
+        "q": "What is jQuery selector injection?",
+        "o": [
+            "Injecting code via jQuery selectors",
+            "Selecting page elements",
+            "Styling selected items",
+            "Filtering DOM nodes"
+        ]
+    },
+    {
+        "q": "What is location.hash source?",
+        "o": [
+            "URL fragment after hash symbol",
+            "Password hash value",
+            "Cryptographic hash",
+            "Hash table location"
+        ]
+    },
+    {
+        "q": "What is location.search source?",
+        "o": [
+            "URL query string parameters",
+            "Search engine query",
+            "Find text function",
+            "Search results page"
+        ]
+    },
+    {
+        "q": "What is document.referrer source?",
+        "o": [
+            "URL of previous page visited",
+            "Current page URL",
+            "User reference ID",
+            "Document reference number"
+        ]
+    },
+    {
+        "q": "What is window.name source?",
+        "o": [
+            "Persists across page navigations",
+            "Window title only",
+            "Browser name string",
+            "User name storage"
+        ]
+    },
+    {
+        "q": "What is postMessage source vulnerability?",
+        "o": [
+            "Receiving untrusted cross-origin messages",
+            "Sending mail messages",
+            "Posting blog comments",
+            "Messaging other users"
+        ]
+    },
+    {
+        "q": "What is HTML injection?",
+        "o": [
+            "Injecting HTML tags into page content",
+            "HTML document creation",
+            "HTML formatting styles",
+            "HTML element attributes"
+        ]
+    },
+    {
+        "q": "What is the difference between HTML and XSS injection?",
+        "o": [
+            "XSS includes script execution",
+            "They are exactly the same",
+            "HTML is more dangerous",
+            "XSS only affects HTML"
+        ]
+    },
+    {
+        "q": "What is dangling markup attack?",
+        "o": [
+            "Using unclosed tags to exfiltrate data",
+            "Hanging page elements",
+            "Suspended markup code",
+            "Delayed HTML loading"
+        ]
+    },
+    {
+        "q": "How does dangling markup work?",
+        "o": [
+            "Unclosed quotes capture page content",
+            "Tags become suspended",
+            "Markup is duplicated",
+            "Content is encrypted"
+        ]
+    },
+    {
+        "q": "What is content injection?",
+        "o": [
+            "Inserting attacker content into pages",
+            "Content management use",
+            "Content delivery setup",
+            "Content type detection"
+        ]
+    },
+    {
+        "q": "What is CSS injection attack?",
+        "o": [
+            "Injecting malicious CSS styles",
+            "Cascading style sheets",
+            "Creating style templates",
+            "Styling page elements"
+        ]
+    },
+    {
+        "q": "How can CSS be used for data theft?",
+        "o": [
+            "Attribute selectors leak values",
+            "Colors hide content",
+            "Fonts encrypt data",
+            "Margins change sizes"
+        ]
+    },
+    {
+        "q": "What is CSS keylogger technique?",
+        "o": [
+            "Using font face to detect keystrokes",
+            "Logging CSS changes",
+            "Recording style updates",
+            "Tracking class names"
+        ]
+    },
+    {
+        "q": "What is localStorage vulnerability?",
+        "o": [
+            "Persistent XSS storage in browser",
+            "Local file storage",
+            "Storage capacity limits",
+            "Stored file encryption"
+        ]
+    },
+    {
+        "q": "What is sessionStorage risk?",
+        "o": [
+            "Can store and retrieve XSS payloads",
+            "Session timeout settings",
+            "Session ID storage only",
+            "Session cookie values"
+        ]
+    },
+    {
+        "q": "What is IndexedDB data exposure?",
+        "o": [
+            "Sensitive data accessible via XSS",
+            "Database indexing speed",
+            "Index creation process",
+            "Database backup files"
+        ]
+    },
+    {
+        "q": "What is client-side template injection?",
+        "o": [
+            "Injecting into frontend template engines",
+            "Creating template files",
+            "Template design patterns",
+            "Server-side rendering"
+        ]
+    },
+    {
+        "q": "What is AngularJS expression injection?",
+        "o": [
+            "Injecting code via Angular expressions",
+            "Angular component naming",
+            "Expression syntax styles",
+            "Angular module imports"
+        ]
+    },
+    {
+        "q": "What is Vue.js template injection?",
+        "o": [
+            "Injecting via Vue template syntax",
+            "Vue component creation",
+            "Vue routing setup",
+            "Vue state management"
+        ]
+    },
+    {
+        "q": "What is client-side path traversal?",
+        "o": [
+            "Accessing unintended client resources",
+            "File system navigation",
+            "Server path access",
+            "Directory structure view"
+        ]
+    },
+    {
+        "q": "What is window.open vulnerability?",
+        "o": [
+            "Can open attacker-controlled pages",
+            "Opening new windows",
+            "Window sizing options",
+            "Pop-up window styling"
+        ]
+    },
+    {
+        "q": "What is target=_blank vulnerability?",
+        "o": [
+            "Opened page can access opener window",
+            "Opens in new tab only",
+            "Target page loads faster",
+            "Blank page is displayed"
+        ]
+    },
+    {
+        "q": "What is rel=noopener used for?",
+        "o": [
+            "Prevents opener access from new window",
+            "Related page linking",
+            "Opening related content",
+            "Opener window styling"
+        ]
+    },
+    {
+        "q": "What is tabnabbing attack?",
+        "o": [
+            "Changing opener page to phishing site",
+            "Opening multiple tabs",
+            "Tab organization feature",
+            "Tab switching behavior"
+        ]
+    },
+    {
+        "q": "What is reverse tabnabbing?",
+        "o": [
+            "Attacker page modifies opener tab",
+            "Reverting tab changes",
+            "Backward tab navigation",
+            "Undo tab operations"
+        ]
+    },
+    {
+        "q": "What is JavaScript protocol URL risk?",
+        "o": [
+            "Executes JavaScript when clicked",
+            "JavaScript file loading",
+            "Protocol version check",
+            "URL validation only"
+        ]
+    },
+    {
+        "q": "What is data URL XSS?",
+        "o": [
+            "Embedding XSS in data URI scheme",
+            "Data file downloads",
+            "URL data encoding",
+            "Data transfer protocol"
+        ]
+    },
+    {
+        "q": "What is blob URL attack?",
+        "o": [
+            "Creating executable content from blobs",
+            "Binary file storage",
+            "Blob data format",
+            "Large object handling"
+        ]
+    },
+    {
+        "q": "What is XSS via file upload display?",
+        "o": [
+            "Uploaded HTML/SVG executing scripts",
+            "File size limitations",
+            "Upload progress display",
+            "File format conversion"
+        ]
+    },
+    {
+        "q": "What is polyglot XSS payload?",
+        "o": [
+            "Works across multiple contexts",
+            "Multiple language support",
+            "Translation features",
+            "Multi-format encoding"
+        ]
+    },
+    {
+        "q": "What is mutation XSS?",
+        "o": [
+            "XSS via browser HTML parsing mutations",
+            "Changing XSS payloads",
+            "Mutating script code",
+            "Variable modifications"
+        ]
+    },
+    {
+        "q": "What is DOM clobbering?",
+        "o": [
+            "Overwriting DOM variables with HTML",
+            "Cleaning up DOM nodes",
+            "Removing page elements",
+            "DOM memory clearing"
+        ]
+    },
+    {
+        "q": "How does DOM clobbering work?",
+        "o": [
+            "HTML IDs create global properties",
+            "DOM is encrypted",
+            "Elements are hidden",
+            "Properties are deleted"
+        ]
+    },
+    {
+        "q": "What is form action hijacking?",
+        "o": [
+            "Changing where form data is sent",
+            "Form validation bypass",
+            "Form styling changes",
+            "Form field addition"
+        ]
+    },
+    {
+        "q": "What is input auto-fill exploitation?",
+        "o": [
+            "Stealing auto-filled sensitive data",
+            "Filling forms automatically",
+            "Auto-complete suggestions",
+            "Input field validation"
+        ]
+    },
+    {
+        "q": "What is hidden form field stealing?",
+        "o": [
+            "Extracting hidden field values via JS",
+            "Hiding form elements",
+            "Field visibility toggle",
+            "Hidden input styling"
+        ]
+    },
+    {
+        "q": "What is WebSocket hijacking?",
+        "o": [
+            "Connecting to WebSocket from attacker origin",
+            "Socket connection management",
+            "WebSocket configuration",
+            "Socket timeout handling"
+        ]
+    },
+    {
+        "q": "What is cross-site WebSocket hijacking?",
+        "o": [
+            "CSRF-like attack on WebSocket handshake",
+            "WebSocket upgrade process",
+            "Socket encryption setup",
+            "Connection pooling method"
+        ]
+    },
+    {
+        "q": "What is service worker attack?",
+        "o": [
+            "Registering malicious service workers",
+            "Background task scheduling",
+            "Worker thread management",
+            "Service configuration"
+        ]
+    },
+    {
+        "q": "What is persistent service worker attack?",
+        "o": [
+            "Service worker surviving page navigation",
+            "Long-running worker tasks",
+            "Worker memory management",
+            "Persistent storage access"
+        ]
+    },
+    {
+        "q": "What is cache poisoning via service worker?",
+        "o": [
+            "Storing malicious responses in cache",
+            "Cache cleanup routines",
+            "Cache size management",
+            "Cache expiration settings"
+        ]
+    },
+    {
+        "q": "What is web worker exploitation?",
+        "o": [
+            "Running malicious code in worker thread",
+            "Worker performance tuning",
+            "Thread pool sizing",
+            "Worker communication"
+        ]
+    },
+    {
+        "q": "What is shared worker attack?",
+        "o": [
+            "Compromising workers shared across tabs",
+            "Sharing worker resources",
+            "Worker coordination methods",
+            "Shared memory access"
+        ]
+    },
+    {
+        "q": "What is browser extension exploitation?",
+        "o": [
+            "Abusing extension permissions for attacks",
+            "Installing browser add-ons",
+            "Extension development tools",
+            "Add-on configuration"
+        ]
+    },
+    {
+        "q": "What is content script injection?",
+        "o": [
+            "Extension injecting malicious scripts",
+            "Script content writing",
+            "Content management system",
+            "Script file loading"
+        ]
+    },
+    {
+        "q": "What is cross-extension messaging attack?",
+        "o": [
+            "Exploiting extension communication channels",
+            "Extension chat features",
+            "Messaging protocol setup",
+            "Communication encryption"
+        ]
+    },
+    {
+        "q": "What is browser history sniffing?",
+        "o": [
+            "Detecting visited URLs via timing",
+            "Browsing history display",
+            "History file management",
+            "History backup creation"
+        ]
+    },
+    {
+        "q": "What is visited link styling attack?",
+        "o": [
+            "CSS timing attack on visited links",
+            "Styling hyperlinks",
+            "Link color changes",
+            "Visited page tracking"
+        ]
+    },
+    {
+        "q": "What is browser fingerprinting?",
+        "o": [
+            "Identifying users via browser properties",
+            "Fingerprint login feature",
+            "Biometric authentication",
+            "Touch ID integration"
+        ]
+    },
+    {
+        "q": "What is canvas fingerprinting?",
+        "o": [
+            "Identifying browser by rendering differences",
+            "Drawing on HTML canvas",
+            "Canvas element styling",
+            "Image canvas creation"
+        ]
+    },
+    {
+        "q": "What is WebGL fingerprinting?",
+        "o": [
+            "Tracking via graphics rendering variations",
+            "WebGL graphics display",
+            "3D rendering setup",
+            "Graphics performance test"
+        ]
+    },
+    {
+        "q": "What is audio fingerprinting?",
+        "o": [
+            "Identifying browser by audio processing",
+            "Recording audio files",
+            "Audio format detection",
+            "Sound quality testing"
+        ]
+    },
+    {
+        "q": "What is font enumeration attack?",
+        "o": [
+            "Detecting installed fonts for tracking",
+            "Font styling options",
+            "Font file loading",
+            "Typography settings"
+        ]
+    },
+    {
+        "q": "What is screen resolution fingerprinting?",
+        "o": [
+            "Using screen properties for identification",
+            "Adjusting screen resolution",
+            "Display settings change",
+            "Monitor configuration"
+        ]
+    },
+    {
+        "q": "What is timezone fingerprinting?",
+        "o": [
+            "Identifying users by timezone offset",
+            "Setting timezone values",
+            "Clock synchronization",
+            "Time format selection"
+        ]
+    },
+    {
+        "q": "What is WebRTC IP leakage?",
+        "o": [
+            "Revealing real IP address via STUN",
+            "Video conferencing setup",
+            "Real-time communication",
+            "WebRTC connection"
+        ]
+    },
+    {
+        "q": "How can WebRTC leak local IP?",
+        "o": [
+            "STUN requests reveal internal addresses",
+            "Local IP is encrypted",
+            "IP is never exposed",
+            "WebRTC blocks local IP"
+        ]
+    },
+    {
+        "q": "What is Geolocation API abuse?",
+        "o": [
+            "Stealing precise user location data",
+            "Map display feature",
+            "Location service setup",
+            "GPS configuration"
+        ]
+    },
+    {
+        "q": "What is clipboard data theft?",
+        "o": [
+            "Reading clipboard without permission",
+            "Clipboard history view",
+            "Copy paste functionality",
+            "Clipboard manager tool"
+        ]
+    },
+    {
+        "q": "What is clipboard manipulation attack?",
+        "o": [
+            "Replacing clipboard with malicious content",
+            "Clipboard format change",
+            "Copy text styling",
+            "Clipboard encryption"
+        ]
+    },
+    {
+        "q": "What is keystroke timing attack?",
+        "o": [
+            "Inferring input from timing patterns",
+            "Keyboard repeat rate",
+            "Typing speed test",
+            "Key response time"
+        ]
+    },
+    {
+        "q": "What is event listener sniffing?",
+        "o": [
+            "Detecting user interactions via events",
+            "Event handler management",
+            "Listener registration",
+            "Event bubbling control"
+        ]
+    },
+    {
+        "q": "What is mouse tracking attack?",
+        "o": [
+            "Recording mouse movements for analysis",
+            "Mouse sensitivity setting",
+            "Cursor speed adjustment",
+            "Mouse button mapping"
+        ]
+    },
+    {
+        "q": "What is scroll position tracking?",
+        "o": [
+            "Monitoring user scrolling behavior",
+            "Scroll bar styling",
+            "Scroll speed setting",
+            "Page scroll animation"
+        ]
+    },
+    {
+        "q": "What is form prefilling attack?",
+        "o": [
+            "Creating hidden fields to capture autofill",
+            "Form auto-save feature",
+            "Prefilled form templates",
+            "Form state management"
+        ]
+    },
+    {
+        "q": "What is credential harvesting via XSS?",
+        "o": [
+            "Stealing login credentials through scripts",
+            "Password strength check",
+            "Credential storage",
+            "Login form validation"
+        ]
+    },
+    {
+        "q": "What is fake login form attack?",
+        "o": [
+            "Injecting phishing login overlay",
+            "Multiple login option",
+            "Password reset form",
+            "Registration form"
+        ]
+    },
+    {
+        "q": "What is session token extraction?",
+        "o": [
+            "Stealing session cookies via XSS",
+            "Session renewal process",
+            "Token generation logic",
+            "Session management"
+        ]
+    },
+    {
+        "q": "What is BeEF framework?",
+        "o": [
+            "Browser Exploitation Framework tool",
+            "Backend framework",
+            "Build environment",
+            "Binary execution file"
+        ]
+    },
+    {
+        "q": "What can BeEF do after hooking browser?",
+        "o": [
+            "Execute various browser attacks remotely",
+            "Create web applications",
+            "Design user interfaces",
+            "Manage server resources"
+        ]
+    },
+    {
+        "q": "What is browser hooking?",
+        "o": [
+            "Maintaining persistent control via XSS",
+            "Loading browser plugins",
+            "Hook function creation",
+            "Browser configuration"
+        ]
+    },
+    {
+        "q": "What is XSS worm?",
+        "o": [
+            "Self-propagating XSS attack",
+            "Malware scanning",
+            "Virus removal tool",
+            "Security worm alert"
+        ]
+    },
+    {
+        "q": "How do XSS worms spread?",
+        "o": [
+            "Injecting payload into user-generated content",
+            "Email attachments only",
+            "File downloads",
+            "USB drive transfer"
+        ]
+    },
+    {
+        "q": "What is the Samy worm?",
+        "o": [
+            "Famous MySpace XSS worm attack",
+            "Network security tool",
+            "Antivirus software",
+            "Web development framework"
+        ]
+    },
+    {
+        "q": "What is scriptless attack?",
+        "o": [
+            "Attacks without JavaScript execution",
+            "Script-only attacks",
+            "Server script attacks",
+            "Script injection method"
+        ]
+    },
+    {
+        "q": "What is CSS-based attack?",
+        "o": [
+            "Exploiting CSS without JavaScript",
+            "Styling page elements",
+            "CSS animation effects",
+            "Style sheet loading"
+        ]
+    },
+    {
+        "q": "What is CSS exfiltration?",
+        "o": [
+            "Leaking data via CSS requests",
+            "Exporting CSS files",
+            "CSS file transfer",
+            "Style sheet backup"
+        ]
+    },
+    {
+        "q": "What is attribute selector data leak?",
+        "o": [
+            "CSS selectors reveal input values",
+            "Select element styling",
+            "Attribute editing",
+            "Selector optimization"
+        ]
+    },
+    {
+        "q": "What is image-based data exfiltration?",
+        "o": [
+            "Sending data via image request URLs",
+            "Image compression",
+            "Image file upload",
+            "Picture formatting"
+        ]
+    },
+    {
+        "q": "What is link prefetch abuse?",
+        "o": [
+            "Forcing requests via prefetch hints",
+            "Link loading speed",
+            "Prefetch performance",
+            "Link optimization"
+        ]
+    },
+    {
+        "q": "What is DNS prefetch abuse?",
+        "o": [
+            "Exfiltrating data via DNS lookups",
+            "DNS server setup",
+            "DNS resolution speed",
+            "Domain configuration"
+        ]
+    },
+    {
+        "q": "What is navigation-based attack?",
+        "o": [
+            "Exploiting page navigation for data leak",
+            "Page navigation links",
+            "Menu navigation system",
+            "Site map structure"
+        ]
+    },
+    {
+        "q": "What is meta refresh exploitation?",
+        "o": [
+            "Using meta refresh for redirect attacks",
+            "Page refresh rate",
+            "Meta tag creation",
+            "Refresh button function"
+        ]
+    },
+    {
+        "q": "What is form action override?",
+        "o": [
+            "Changing form submission target",
+            "Form validation rules",
+            "Action button styling",
+            "Submit button design"
+        ]
+    },
+    {
+        "q": "What is formaction attribute attack?",
+        "o": [
+            "Button-level form destination override",
+            "Form action styling",
+            "Button text change",
+            "Form layout update"
+        ]
+    },
+    {
+        "q": "What is base tag injection?",
+        "o": [
+            "Changing base URL for relative links",
+            "Base element styling",
+            "Tag creation method",
+            "Baseline measurement"
+        ]
+    },
+    {
+        "q": "What is object tag exploitation?",
+        "o": [
+            "Embedding malicious content via object tag",
+            "Object-oriented design",
+            "Object creation code",
+            "Object storage format"
+        ]
+    },
+    {
+        "q": "What is embed tag attack?",
+        "o": [
+            "Injecting external malicious content",
+            "Embedding videos",
+            "Content embedding",
+            "Media integration"
+        ]
+    },
+    {
+        "q": "What is iframe sandbox bypass?",
+        "o": [
+            "Escaping iframe security restrictions",
+            "Sandbox environment",
+            "Testing sandbox",
+            "Development sandbox"
+        ]
+    },
+    {
+        "q": "What is srcdoc attribute attack?",
+        "o": [
+            "Inline HTML in iframe without src",
+            "Source documentation",
+            "Documentation source",
+            "Source code display"
+        ]
+    },
+    {
+        "q": "What is contenteditable exploitation?",
+        "o": [
+            "Injecting content in editable elements",
+            "Content editing feature",
+            "Editable text areas",
+            "Edit mode toggle"
+        ]
+    },
+    {
+        "q": "What is designMode attack?",
+        "o": [
+            "Making entire document editable",
+            "Design pattern selection",
+            "Mode switch function",
+            "Designer interface"
+        ]
+    },
+    {
+        "q": "What is execCommand exploitation?",
+        "o": [
+            "Executing commands in editable content",
+            "Command line execution",
+            "Execute button action",
+            "Command prompt use"
+        ]
+    },
+    {
+        "q": "What is paste event hijacking?",
+        "o": [
+            "Intercepting and modifying pasted content",
+            "Paste function use",
+            "Clipboard paste action",
+            "Copy paste feature"
+        ]
+    },
+    {
+        "q": "What is drag event hijacking?",
+        "o": [
+            "Intercepting drag operations for data theft",
+            "Drag and drop UI",
+            "Draggable elements",
+            "Drag handle styling"
+        ]
+    },
+    {
+        "q": "What is drop event exploitation?",
+        "o": [
+            "Stealing dropped content data",
+            "Drop zone creation",
+            "Drop target styling",
+            "Drop down menu"
+        ]
+    },
+    {
+        "q": "What is selection API abuse?",
+        "o": [
+            "Accessing user text selections",
+            "Selection highlighting",
+            "Text selection style",
+            "Select all function"
+        ]
+    },
+    {
+        "q": "What is Notification API attack?",
+        "o": [
+            "Abusing browser notifications for phishing",
+            "Notification settings",
+            "Alert message display",
+            "Notification sound"
+        ]
+    },
+    {
+        "q": "What is push notification abuse?",
+        "o": [
+            "Sending malicious push messages",
+            "Push notification setup",
+            "Message delivery system",
+            "Notification preferences"
+        ]
+    },
+    {
+        "q": "What is fullscreen API attack?",
+        "o": [
+            "Using fullscreen to hide browser UI",
+            "Fullscreen mode toggle",
+            "Screen size change",
+            "Display mode setting"
+        ]
+    },
+    {
+        "q": "What is pointer lock exploitation?",
+        "o": [
+            "Hiding cursor for deceptive UI",
+            "Mouse pointer settings",
+            "Cursor lock function",
+            "Pointer precision mode"
+        ]
+    },
+    {
+        "q": "What is battery status attack?",
+        "o": [
+            "Using battery API for fingerprinting",
+            "Battery level display",
+            "Power status check",
+            "Charging indicator"
+        ]
+    },
+    {
+        "q": "What is ambient light sensor attack?",
+        "o": [
+            "Inferring user activity from light sensor",
+            "Light sensor settings",
+            "Brightness adjustment",
+            "Light mode toggle"
+        ]
+    },
+    {
+        "q": "What is accelerometer data theft?",
+        "o": [
+            "Stealing motion data for tracking",
+            "Motion sensor setup",
+            "Acceleration display",
+            "Speed measurement"
+        ]
+    },
+    {
+        "q": "What is gyroscope fingerprinting?",
+        "o": [
+            "Device identification via gyroscope",
+            "Rotation sensor use",
+            "Gyroscope calibration",
+            "Motion detection"
+        ]
+    },
+    {
+        "q": "What is payment request API attack?",
+        "o": [
+            "Manipulating payment flow via API",
+            "Payment processing",
+            "Request handling",
+            "Payment gateway"
+        ]
+    },
+    {
+        "q": "What is credential management API abuse?",
+        "o": [
+            "Accessing stored credentials via API",
+            "Credential storage setup",
+            "Password manager API",
+            "Login credential save"
+        ]
+    },
+    {
+        "q": "What is File API attack?",
+        "o": [
+            "Accessing local files via browser API",
+            "File system access",
+            "File upload handler",
+            "File download manager"
+        ]
+    },
+    {
+        "q": "What is FileReader exploitation?",
+        "o": [
+            "Reading file contents via XSS",
+            "File reading utility",
+            "Reader app function",
+            "Text file viewer"
+        ]
+    },
+    {
+        "q": "What is Blob URL attack vector?",
+        "o": [
+            "Creating executable from user data",
+            "Binary large object",
+            "Blob storage service",
+            "Data blob creation"
+        ]
+    },
+    {
+        "q": "What is URL.createObjectURL risk?",
+        "o": [
+            "Creating executable object URLs",
+            "URL generation function",
+            "Object reference creation",
+            "Link shortening service"
+        ]
+    },
+    {
+        "q": "What is importScripts exploitation?",
+        "o": [
+            "Loading malicious scripts in workers",
+            "Script import syntax",
+            "Module loading system",
+            "Import statement use"
+        ]
+    },
+    {
+        "q": "What is dynamic import attack?",
+        "o": [
+            "Loading malicious modules dynamically",
+            "Import optimization",
+            "Dynamic loading speed",
+            "Module bundling process"
+        ]
+    },
+    {
+        "q": "What is module script injection?",
+        "o": [
+            "Injecting ES6 modules with malicious code",
+            "Module creation syntax",
+            "Script module loading",
+            "JavaScript modules"
+        ]
+    },
+    {
+        "q": "What is nomodule fallback attack?",
+        "o": [
+            "Exploiting legacy browser fallback scripts",
+            "Module compatibility",
+            "Fallback mechanism",
+            "Browser support check"
+        ]
+    },
+    {
+        "q": "What is async script loading attack?",
+        "o": [
+            "Injecting async scripts for XSS",
+            "Asynchronous loading",
+            "Script defer attribute",
+            "Loading performance"
+        ]
+    },
+    {
+        "q": "What is defer script exploitation?",
+        "o": [
+            "Timing attacks via deferred scripts",
+            "Script execution order",
+            "Defer attribute use",
+            "Page load timing"
+        ]
+    },
+    {
+        "q": "What is performance API timing attack?",
+        "o": [
+            "Inferring state from timing measurements",
+            "Performance monitoring",
+            "Timing statistics",
+            "Speed measurement API"
+        ]
+    },
+    {
+        "q": "What is Resource Timing leak?",
+        "o": [
+            "Detecting cross-origin resource info",
+            "Resource loading time",
+            "Timing data display",
+            "Performance metrics"
+        ]
+    },
+    {
+        "q": "What is Navigation Timing attack?",
+        "o": [
+            "Using navigation data for user tracking",
+            "Page navigation speed",
+            "Timing breakdown",
+            "Navigation statistics"
+        ]
+    },
+    {
+        "q": "What is Paint Timing attack?",
+        "o": [
+            "Detecting rendering differences for leaks",
+            "Paint performance",
+            "Render timing metric",
+            "Display speed data"
+        ]
+    },
+    {
+        "q": "What is Long Tasks API abuse?",
+        "o": [
+            "Detecting resource-intensive operations",
+            "Task duration tracking",
+            "Long running scripts",
+            "Task management API"
+        ]
+    },
+    {
+        "q": "What is Intersection Observer attack?",
+        "o": [
+            "Detecting element visibility for tracking",
+            "Element intersection",
+            "Observer pattern use",
+            "Visibility detection"
+        ]
+    },
+    {
+        "q": "What is Mutation Observer exploitation?",
+        "o": [
+            "Monitoring DOM changes for attacks",
+            "DOM mutation tracking",
+            "Observer callback use",
+            "Change detection system"
+        ]
+    },
+    {
+        "q": "What is Resize Observer attack?",
+        "o": [
+            "Detecting element size changes for leaks",
+            "Element resizing",
+            "Size observation API",
+            "Resize detection"
+        ]
+    },
+    {
+        "q": "What is ReportingObserver abuse?",
+        "o": [
+            "Accessing error and deprecation reports",
+            "Error reporting setup",
+            "Observer configuration",
+            "Report generation"
+        ]
+    },
+    {
+        "q": "What is memory pressure attack?",
+        "o": [
+            "Detecting memory constraints for info leak",
+            "Memory management",
+            "Pressure monitoring",
+            "RAM usage tracking"
+        ]
+    },
+    {
+        "q": "What is history API state manipulation?",
+        "o": [
+            "Forging browser history entries",
+            "History navigation",
+            "State management",
+            "Browser back button"
+        ]
+    },
+    {
+        "q": "What is history.pushState attack?",
+        "o": [
+            "Manipulating URL without page reload",
+            "Push state method",
+            "History update",
+            "URL change event"
+        ]
+    },
+    {
+        "q": "What is history.replaceState risk?",
+        "o": [
+            "Silently changing current URL",
+            "Replace function use",
+            "State replacement",
+            "History modification"
+        ]
+    },
+    {
+        "q": "What is popstate event exploitation?",
+        "o": [
+            "Hijacking navigation events",
+            "State change event",
+            "Event listener use",
+            "Pop event handling"
+        ]
+    },
+    {
+        "q": "What is hashchange event attack?",
+        "o": [
+            "Triggering events via URL hash changes",
+            "Hash navigation",
+            "Fragment change",
+            "Anchor link click"
+        ]
+    },
+    {
+        "q": "What is SpeechRecognition API threat?",
+        "o": [
+            "Unauthorized voice recording access",
+            "Speech recognition setup",
+            "Voice command feature",
+            "Audio transcription"
+        ]
+    },
+    {
+        "q": "What is SpeechSynthesis API abuse?",
+        "o": [
+            "Using voice output for social engineering",
+            "Text to speech feature",
+            "Voice synthesis system",
+            "Audio output setting"
+        ]
+    },
+    {
+        "q": "What is Web Bluetooth attack?",
+        "o": [
+            "Accessing Bluetooth devices via web",
+            "Bluetooth configuration",
+            "Device pairing setup",
+            "Wireless connection"
+        ]
+    },
+    {
+        "q": "What is Web USB exploitation?",
+        "o": [
+            "Accessing USB devices from browser",
+            "USB connection handling",
+            "Device driver loading",
+            "Hardware interface"
+        ]
+    },
+    {
+        "q": "What is Web NFC attack?",
+        "o": [
+            "Reading NFC data via browser API",
+            "NFC tag scanning",
+            "Contactless payment",
+            "Near field communication"
+        ]
+    },
+    {
+        "q": "What is Web Serial exploitation?",
+        "o": [
+            "Accessing serial ports from browser",
+            "Serial communication",
+            "Port configuration",
+            "Data transfer rate"
+        ]
+    },
+    {
+        "q": "What is WebHID attack?",
+        "o": [
+            "Accessing human interface devices via web",
+            "Keyboard input handling",
+            "Mouse event capture",
+            "Device enumeration"
+        ]
+    },
+    {
+        "q": "What is MediaDevices API abuse?",
+        "o": [
+            "Accessing camera and microphone data",
+            "Media device selection",
+            "Camera configuration",
+            "Audio input settings"
+        ]
+    },
+    {
+        "q": "What is screen capture API risk?",
+        "o": [
+            "Recording user screen without awareness",
+            "Screenshot capture",
+            "Screen recording app",
+            "Display capture tool"
+        ]
+    },
+    {
+        "q": "What is getDisplayMedia attack?",
+        "o": [
+            "Capturing screen content via API",
+            "Display media stream",
+            "Screen sharing feature",
+            "Media capture setup"
+        ]
+    },
+    {
+        "q": "What is Picture-in-Picture abuse?",
+        "o": [
+            "Overlaying video to obscure content",
+            "PiP mode toggle",
+            "Video overlay display",
+            "Floating video window"
+        ]
+    },
+    {
+        "q": "What is Web Share API attack?",
+        "o": [
+            "Triggering unintended share actions",
+            "Share button feature",
+            "Social sharing setup",
+            "Content sharing API"
+        ]
+    },
+    {
+        "q": "What is File System Access API risk?",
+        "o": [
+            "Reading and writing local files from web",
+            "File system navigation",
+            "Folder access permission",
+            "Directory listing view"
+        ]
+    },
+    {
+        "q": "What is showSaveFilePicker attack?",
+        "o": [
+            "Tricking user to overwrite files",
+            "Save dialog display",
+            "File save location",
+            "Download path selection"
+        ]
+    },
+    {
+        "q": "What is showOpenFilePicker exploitation?",
+        "o": [
+            "Accessing sensitive files via picker",
+            "Open file dialog",
+            "File selection UI",
+            "Browse files button"
+        ]
+    },
+    {
+        "q": "What is directory picker attack?",
+        "o": [
+            "Gaining access to entire directories",
+            "Folder picker UI",
+            "Directory browser",
+            "Path selection dialog"
+        ]
+    },
+    {
+        "q": "What is Origin Private File System?",
+        "o": [
+            "Browser sandbox file system for storage",
+            "Private origin server",
+            "File system encryption",
+            "Origin verification"
+        ]
+    },
+    {
+        "q": "What is Contact Picker API risk?",
+        "o": [
+            "Accessing device contacts from browser",
+            "Contact form feature",
+            "Picker UI styling",
+            "Contact list display"
+        ]
+    },
+    {
+        "q": "What is Gamepad API fingerprinting?",
+        "o": [
+            "Identifying devices by gamepad properties",
+            "Game controller setup",
+            "Gamepad button mapping",
+            "Controller configuration"
+        ]
+    },
+    {
+        "q": "What is Keyboard Layout fingerprinting?",
+        "o": [
+            "Tracking users via keyboard layout API",
+            "Keyboard shortcut setup",
+            "Layout switching function",
+            "Keyboard settings panel"
+        ]
+    },
+    {
+        "q": "What is Network Information API leak?",
+        "o": [
+            "Exposing connection type for tracking",
+            "Network configuration",
+            "Connection speed test",
+            "Network status display"
+        ]
+    },
+    {
+        "q": "What is device memory API fingerprinting?",
+        "o": [
+            "Fingerprinting by RAM amount",
+            "Memory usage display",
+            "RAM optimization",
+            "Memory configuration"
+        ]
+    },
+    {
+        "q": "What is hardware concurrency leak?",
+        "o": [
+            "Revealing CPU core count for tracking",
+            "CPU performance test",
+            "Processor information",
+            "Hardware specification"
+        ]
+    },
+    {
+        "q": "What is storage estimation attack?",
+        "o": [
+            "Determining available disk space",
+            "Storage quota setting",
+            "Disk space display",
+            "Storage management"
+        ]
+    },
+    {
+        "q": "What is quota management fingerprinting?",
+        "o": [
+            "Using storage quotas for identification",
+            "Quota limit settings",
+            "Storage allocation",
+            "Disk space limits"
+        ]
+    },
+    {
+        "q": "What is HTTP-only cookie bypass via XSS?",
+        "o": [
+            "Using trace method or browser bugs",
+            "Cookie always protected",
+            "HTTP only blocks all XSS",
+            "Cookies are encrypted"
+        ]
+    },
+    {
+        "q": "What is secure cookie theft via XSS?",
+        "o": [
+            "Stealing cookies over HTTPS connections",
+            "Secure cookies are safe",
+            "XSS cannot access secure",
+            "Cookie encryption prevents"
+        ]
+    },
+    {
+        "q": "What is anti-CSRF token leakage?",
+        "o": [
+            "Extracting CSRF tokens via XSS",
+            "Token auto-generation",
+            "CSRF token encryption",
+            "Token storage location"
+        ]
+    },
+    {
+        "q": "What is token extraction from DOM?",
+        "o": [
+            "Reading tokens from hidden fields",
+            "DOM token storage",
+            "Token display method",
+            "DOM parsing speed"
+        ]
+    },
+    {
+        "q": "What is token forwarding attack?",
+        "o": [
+            "Sending stolen tokens to attacker server",
+            "Token renewal process",
+            "Forwarding email tokens",
+            "Token sharing feature"
+        ]
+    },
+    {
+        "q": "What is referer header leakage?",
+        "o": [
+            "Sensitive data exposed in referer",
+            "Referer always safe",
+            "Headers are encrypted",
+            "Referer is optional"
+        ]
+    },
+    {
+        "q": "What is referrer policy exploitation?",
+        "o": [
+            "Bypassing strict referrer policies",
+            "Policy configuration",
+            "Referrer validation",
+            "Policy enforcement"
+        ]
+    },
+    {
+        "q": "What is cross-origin opener policy bypass?",
+        "o": [
+            "Circumventing COOP protections",
+            "Opener policy setup",
+            "Policy configuration",
+            "Cross-origin settings"
+        ]
+    },
+    {
+        "q": "What is cross-origin embedder policy attack?",
+        "o": [
+            "Bypassing COEP for resource access",
+            "Embedder policy config",
+            "Policy enforcement rules",
+            "Resource loading settings"
+        ]
+    },
+    {
+        "q": "What is cross-origin resource policy bypass?",
+        "o": [
+            "Accessing cross-origin protected resources",
+            "Resource policy setup",
+            "Policy configuration",
+            "Origin settings"
+        ]
+    },
+    {
+        "q": "What is Spectre browser attack?",
+        "o": [
+            "Exploiting CPU speculation in browser",
+            "Browser performance issue",
+            "Spectre malware scan",
+            "Speed optimization"
+        ]
+    },
+    {
+        "q": "How does Spectre affect JavaScript?",
+        "o": [
+            "High-resolution timers enable side channels",
+            "JavaScript is unaffected",
+            "Only backend is vulnerable",
+            "Browsers are immune"
+        ]
+    },
+    {
+        "q": "What is SharedArrayBuffer attack?",
+        "o": [
+            "Enabling high-precision timing attacks",
+            "Shared memory allocation",
+            "Array buffer sizing",
+            "Memory sharing setup"
+        ]
+    },
+    {
+        "q": "What is performance.now() timing attack?",
+        "o": [
+            "Microsecond timing for cache detection",
+            "Performance measurement",
+            "Now function timing",
+            "Time display format"
+        ]
+    },
+    {
+        "q": "What is web worker timing attack?",
+        "o": [
+            "Using workers for high-resolution timing",
+            "Worker performance",
+            "Timing accuracy",
+            "Worker synchronization"
+        ]
+    },
+    {
+        "q": "What is cache timing side channel?",
+        "o": [
+            "Detecting cached resources via timing",
+            "Cache management",
+            "Timing configuration",
+            "Cache optimization"
+        ]
+    },
+    {
+        "q": "What is Stylesheets-based attack enumeration?",
+        "o": [
+            "Detecting cross-origin resources via CSS",
+            "Stylesheet loading",
+            "CSS enumeration",
+            "Style file listing"
+        ]
+    },
+    {
+        "q": "What is image dimension leak?",
+        "o": [
+            "Detecting cross-origin image sizes",
+            "Image resizing",
+            "Dimension display",
+            "Size optimization"
+        ]
+    },
+    {
+        "q": "What is video duration leak?",
+        "o": [
+            "Detecting cross-origin video length",
+            "Video playback time",
+            "Duration display",
+            "Video length setting"
+        ]
+    },
+    {
+        "q": "What is audio duration leak?",
+        "o": [
+            "Detecting cross-origin audio length",
+            "Audio playback time",
+            "Duration display",
+            "Audio length setting"
+        ]
+    },
+    {
+        "q": "What is script error message leak?",
+        "o": [
+            "Extracting info from error messages",
+            "Error handling code",
+            "Message display",
+            "Script debugging"
+        ]
+    },
+    {
+        "q": "What is window.name data transfer?",
+        "o": [
+            "Persisting data across cross-origin navigations",
+            "Window title setting",
+            "Name property display",
+            "Window identification"
+        ]
+    },
+    {
+        "q": "What is postMessage origin spoofing?",
+        "o": [
+            "Sending messages with false origin claims",
+            "Origin verification",
+            "Message authentication",
+            "Spoofing prevention"
+        ]
+    },
+    {
+        "q": "What is postMessage without origin check?",
+        "o": [
+            "Accepting messages from any origin",
+            "Origin always checked",
+            "Default verification",
+            "Automatic validation"
+        ]
+    },
+    {
+        "q": "What is postMessage data injection?",
+        "o": [
+            "Injecting malicious data via messages",
+            "Data validation only",
+            "Message encryption",
+            "Injection prevention"
+        ]
+    },
+    {
+        "q": "What is frame counting attack?",
+        "o": [
+            "Detecting page state via frame count",
+            "Frame counting method",
+            "Iframe enumeration",
+            "Frame listing view"
+        ]
+    },
+    {
+        "q": "What is frame timing attack?",
+        "o": [
+            "Measuring frame load times for leaks",
+            "Frame rate display",
+            "Timing optimization",
+            "Frame performance"
+        ]
+    },
+    {
+        "q": "What is window.length probe?",
+        "o": [
+            "Detecting number of iframes cross-origin",
+            "Window sizing",
+            "Length property use",
+            "Window dimension"
+        ]
+    },
+    {
+        "q": "What is opener reference attack?",
+        "o": [
+            "Accessing opener window from popup",
+            "Opener relationship",
+            "Reference management",
+            "Window hierarchy"
+        ]
+    },
+    {
+        "q": "What is focus stealing attack?",
+        "o": [
+            "Capturing keystrokes via focus hijack",
+            "Focus management",
+            "Element focusing",
+            "Tab navigation"
+        ]
+    },
+    {
+        "q": "What is blur event attack?",
+        "o": [
+            "Detecting focus loss for timing attacks",
+            "Blur effect styling",
+            "Event handling",
+            "Focus tracking"
+        ]
+    },
+    {
+        "q": "What is visibility API leak?",
+        "o": [
+            "Detecting when tab is visible or hidden",
+            "Visibility styling",
+            "Element display",
+            "Show hide toggle"
+        ]
+    },
+    {
+        "q": "What is Page Visibility attack?",
+        "o": [
+            "Tracking user tab switching behavior",
+            "Page visibility setting",
+            "Display configuration",
+            "Visibility toggle"
+        ]
+    },
+    {
+        "q": "What is beforeunload attack?",
+        "o": [
+            "Preventing page navigation via alerts",
+            "Exit confirmation",
+            "Page unload event",
+            "Close button behavior"
+        ]
+    },
+    {
+        "q": "What is pagehide event attack?",
+        "o": [
+            "Executing code when page hides",
+            "Hide animation",
+            "Page transition",
+            "Display change"
+        ]
+    },
+    {
+        "q": "What is pageshow event exploitation?",
+        "o": [
+            "Detecting back-forward cache restore",
+            "Page show animation",
+            "Display event",
+            "Show transition"
+        ]
+    },
+    {
+        "q": "What is unload event exfiltration?",
+        "o": [
+            "Sending data when user leaves page",
+            "Page unload cleanup",
+            "Exit function",
+            "Close handler"
+        ]
+    },
+    {
+        "q": "What is sendBeacon abuse?",
+        "o": [
+            "Reliable data exfiltration on page close",
+            "Beacon configuration",
+            "Signal transmission",
+            "Beacon management"
+        ]
+    },
+    {
+        "q": "What is keepalive fetch exfiltration?",
+        "o": [
+            "Ensuring requests complete after unload",
+            "Keepalive connection",
+            "Fetch timeout",
+            "Request persistence"
+        ]
+    },
+    {
+        "q": "What is fetch credentials mode abuse?",
+        "o": [
+            "Sending credentials cross-origin",
+            "Credential storage",
+            "Fetch configuration",
+            "Mode selection"
+        ]
+    },
+    {
+        "q": "What is fetch no-cors mode attack?",
+        "o": [
+            "Making opaque requests for side effects",
+            "CORS configuration",
+            "Mode selection",
+            "Request settings"
+        ]
+    },
+    {
+        "q": "What is AbortController timing attack?",
+        "o": [
+            "Measuring request timing via abort",
+            "Controller management",
+            "Abort signal use",
+            "Request cancellation"
+        ]
+    },
+    {
+        "q": "What is ReadableStream attack?",
+        "o": [
+            "Monitoring streaming data for leaks",
+            "Stream processing",
+            "Data streaming",
+            "Stream configuration"
+        ]
+    },
+    {
+        "q": "What is WritableStream exploitation?",
+        "o": [
+            "Injecting data into streams",
+            "Stream writing",
+            "Output stream",
+            "Data output"
+        ]
+    },
+    {
+        "q": "What is TransformStream attack?",
+        "o": [
+            "Modifying streaming data in flight",
+            "Stream transformation",
+            "Data conversion",
+            "Format change"
+        ]
+    },
+    {
+        "q": "What is Compression Streams timing?",
+        "o": [
+            "Detecting content via compression ratio",
+            "Data compression",
+            "Stream compression",
+            "Size optimization"
+        ]
+    },
+    {
+        "q": "What is TextEncoder/Decoder attack?",
+        "o": [
+            "Exploiting encoding differences for leaks",
+            "Text encoding",
+            "Character encoding",
+            "Decoder configuration"
+        ]
+    },
+    {
+        "q": "What is structured clone vulnerability?",
+        "o": [
+            "Passing complex objects between contexts",
+            "Clone function",
+            "Object copying",
+            "Data duplication"
+        ]
+    },
+    {
+        "q": "What is transferable object attack?",
+        "o": [
+            "Moving buffer ownership for exploitation",
+            "Object transfer",
+            "Ownership change",
+            "Buffer movement"
+        ]
+    },
+    {
+        "q": "What is Message Channel exploitation?",
+        "o": [
+            "Creating covert communication channels",
+            "Channel messaging",
+            "Message port",
+            "Communication setup"
+        ]
+    },
+    {
+        "q": "What is Broadcast Channel attack?",
+        "o": [
+            "Listening to cross-tab communications",
+            "Broadcast messaging",
+            "Channel setup",
+            "Multi-tab communication"
+        ]
+    },
+    {
+        "q": "What is Cross Tab Communication attack?",
+        "o": [
+            "Exploiting shared state between tabs",
+            "Tab synchronization",
+            "Cross-tab data",
+            "Tab coordination"
+        ]
+    },
+    {
+        "q": "What is Lock API attack?",
+        "o": [
+            "Detecting resource usage via web locks",
+            "Lock management",
+            "Resource locking",
+            "Lock configuration"
+        ]
+    },
+    {
+        "q": "What is Scheduler API abuse?",
+        "o": [
+            "Manipulating task prioritization",
+            "Task scheduling",
+            "Priority settings",
+            "Scheduler configuration"
+        ]
+    },
+    {
+        "q": "What is requestIdleCallback attack?",
+        "o": [
+            "Detecting system load for timing attacks",
+            "Idle callback use",
+            "Request timing",
+            "Callback scheduling"
+        ]
+    },
+    {
+        "q": "What is requestAnimationFrame timing?",
+        "o": [
+            "High-precision timing via animation frames",
+            "Animation frame rate",
+            "Frame request",
+            "Animation timing"
+        ]
+    },
+    {
+        "q": "What is CSS animation timing attack?",
+        "o": [
+            "Detecting state via animation duration",
+            "Animation configuration",
+            "Timing function",
+            "Duration setting"
+        ]
+    },
+    {
+        "q": "What is transition timing side channel?",
+        "o": [
+            "Measuring transitions for leak detection",
+            "Transition duration",
+            "Timing configuration",
+            "Effect duration"
+        ]
+    },
+    {
+        "q": "What is :visited selector attack history?",
+        "o": [
+            "Limited but still possible history leak",
+            "Selector styling",
+            "Visited link color",
+            "Link styling only"
+        ]
+    },
+    {
+        "q": "What is @font-face timing attack?",
+        "o": [
+            "Detecting text content via font loading",
+            "Font loading time",
+            "Font face styling",
+            "Typography timing"
+        ]
+    },
+    {
+        "q": "What is @import timing attack?",
+        "o": [
+            "Measuring stylesheet load times",
+            "Import statement",
+            "CSS loading",
+            "Style import"
+        ]
+    },
+    {
+        "q": "What is CSS scroll-snap attack?",
+        "o": [
+            "Detecting scroll position covertly",
+            "Scroll snapping",
+            "Snap points",
+            "Scroll configuration"
+        ]
+    },
+    {
+        "q": "What is scroll-timeline attack?",
+        "o": [
+            "Tracking user scroll via CSS timeline",
+            "Timeline animation",
+            "Scroll tracking",
+            "Animation timeline"
+        ]
+    },
+    {
+        "q": "What is view-timeline attack?",
+        "o": [
+            "Detecting element visibility via CSS",
+            "View tracking",
+            "Timeline configuration",
+            "Visibility animation"
+        ]
+    },
+    {
+        "q": "What is container query leak?",
+        "o": [
+            "Detecting element dimensions via styles",
+            "Container sizing",
+            "Query breakpoints",
+            "Size configuration"
+        ]
+    },
+    {
+        "q": "What is @layer exploitation?",
+        "o": [
+            "Manipulating cascade layers for attacks",
+            "Layer ordering",
+            "Cascade management",
+            "Style layer"
+        ]
+    },
+    {
+        "q": "What is color scheme attack?",
+        "o": [
+            "Detecting user dark/light mode preference",
+            "Color scheme styling",
+            "Theme configuration",
+            "Mode selection"
+        ]
+    },
+    {
+        "q": "What is prefers-reduced-motion fingerprint?",
+        "o": [
+            "Tracking users by motion preferences",
+            "Motion settings",
+            "Animation preferences",
+            "Accessibility option"
+        ]
+    },
+    {
+        "q": "What is prefers-contrast fingerprint?",
+        "o": [
+            "Identifying users by contrast settings",
+            "Contrast configuration",
+            "Accessibility mode",
+            "Display settings"
+        ]
+    },
+    {
+        "q": "What is forced-colors fingerprint?",
+        "o": [
+            "Detecting high contrast mode for tracking",
+            "Color mode settings",
+            "Forced color display",
+            "Accessibility colors"
+        ]
+    },
+    {
+        "q": "What is print media query leak?",
+        "o": [
+            "Detecting print dialog for user action",
+            "Print styling",
+            "Media query",
+            "Print preview"
+        ]
+    },
+    {
+        "q": "What is orientation media query attack?",
+        "o": [
+            "Tracking device orientation changes",
+            "Screen orientation",
+            "Display mode",
+            "Rotation setting"
+        ]
+    },
+    {
+        "q": "What is aspect-ratio fingerprint?",
+        "o": [
+            "Identifying devices by screen ratio",
+            "Aspect ratio styling",
+            "Screen dimensions",
+            "Display configuration"
+        ]
+    },
+    {
+        "q": "What is display-mode fingerprint?",
+        "o": [
+            "Detecting PWA or browser mode",
+            "Display settings",
+            "Mode configuration",
+            "App display"
+        ]
+    },
+    {
+        "q": "What is inverted-colors fingerprint?",
+        "o": [
+            "Tracking users by color inversion",
+            "Color inversion",
+            "Accessibility setting",
+            "Display mode"
+        ]
+    },
+    {
+        "q": "What is pointer media query fingerprint?",
+        "o": [
+            "Identifying input device type",
+            "Pointer configuration",
+            "Mouse detection",
+            "Input method"
+        ]
+    },
+    {
+        "q": "What is hover media query fingerprint?",
+        "o": [
+            "Detecting touch vs mouse devices",
+            "Hover capability",
+            "Device detection",
+            "Input type"
+        ]
+    },
+    {
+        "q": "What is any-pointer fingerprint?",
+        "o": [
+            "Detecting all available input methods",
+            "Pointer detection",
+            "Input enumeration",
+            "Device capability"
+        ]
+    },
+    {
+        "q": "What is any-hover fingerprint?",
+        "o": [
+            "Detecting any hover-capable input",
+            "Hover detection",
+            "Input capability",
+            "Device feature"
+        ]
+    },
+    {
+        "q": "What is min-resolution fingerprint?",
+        "o": [
+            "Identifying devices by screen DPI",
+            "Resolution detection",
+            "Screen density",
+            "Display quality"
+        ]
+    },
+    {
+        "q": "What is device-pixel-ratio fingerprint?",
+        "o": [
+            "Tracking by pixel density ratio",
+            "Pixel ratio display",
+            "Screen scaling",
+            "Display density"
+        ]
+    },
+    {
+        "q": "What is update media query attack?",
+        "o": [
+            "Detecting screen refresh capabilities",
+            "Update frequency",
+            "Refresh rate",
+            "Screen speed"
+        ]
+    },
+    {
+        "q": "What is scripting media query leak?",
+        "o": [
+            "Detecting if JavaScript is enabled",
+            "Script detection",
+            "JS availability",
+            "Scripting mode"
+        ]
+    },
+    {
+        "q": "What is dynamic-range fingerprint?",
+        "o": [
+            "Identifying HDR display capabilities",
+            "Dynamic range",
+            "HDR detection",
+            "Display capability"
+        ]
+    },
+    {
+        "q": "What is video-dynamic-range fingerprint?",
+        "o": [
+            "Detecting video HDR support",
+            "Video capabilities",
+            "HDR video support",
+            "Playback feature"
+        ]
+    },
+    {
+        "q": "What is cross-origin subframe attack?",
+        "o": [
+            "Exploiting child frames from different origins",
+            "Subframe navigation",
+            "Frame embedding",
+            "Child window"
+        ]
+    },
+    {
+        "q": "What is frame navigation attack?",
+        "o": [
+            "Redirecting framed content maliciously",
+            "Navigation management",
+            "Frame routing",
+            "Page transition"
+        ]
+    },
+    {
+        "q": "What is CSP bypass via data URI?",
+        "o": [
+            "Using data URIs to bypass CSP script-src",
+            "Data URI handling",
+            "URI encoding",
+            "Data format"
+        ]
+    },
+    {
+        "q": "What is CSP bypass via base-uri?",
+        "o": [
+            "Not restricting base-uri allows base injection",
+            "Base URI configuration",
+            "URI management",
+            "Base element"
+        ]
+    },
+    {
+        "q": "What is CSP bypass via form-action?",
+        "o": [
+            "Injecting forms to exfiltrate data",
+            "Form action styling",
+            "Action configuration",
+            "Form submission"
+        ]
+    },
+    {
+        "q": "What is CSP bypass via script-src-elem?",
+        "o": [
+            "Separate policy for inline vs external",
+            "Script element styling",
+            "Element configuration",
+            "Script loading"
+        ]
+    },
+    {
+        "q": "What is CSP bypass via trusted-types?",
+        "o": [
+            "Exploiting misconfigured trusted types",
+            "Type trust configuration",
+            "Trust policy setup",
+            "Type validation"
+        ]
+    },
+    {
+        "q": "What is CSP bypass via JSONP endpoint?",
+        "o": [
+            "Using allowed JSONP for script execution",
+            "JSON parsing method",
+            "Endpoint configuration",
+            "Data format"
+        ]
+    },
+    {
+        "q": "What is CSP bypass via Angular expressions?",
+        "o": [
+            "Angular template execution bypasses CSP",
+            "Angular configuration",
+            "Expression syntax",
+            "Template setup"
+        ]
+    },
+    {
+        "q": "What is CSP bypass via prototype pollution?",
+        "o": [
+            "Polluting Object.prototype to bypass",
+            "Prototype configuration",
+            "Object pollution",
+            "Property setting"
+        ]
+    },
+    {
+        "q": "What is CSP bypass via DOM XSS?",
+        "o": [
+            "Client-side execution avoids CSP for sinks",
+            "DOM manipulation",
+            "XSS configuration",
+            "Script execution"
+        ]
+    },
+    {
+        "q": "What is CSP bypass via policy injection?",
+        "o": [
+            "Injecting additional CSP to weaken policy",
+            "Policy configuration",
+            "Header injection",
+            "CSP setup"
+        ]
+    },
+    {
+        "q": "What is CSP bypass via report-uri?",
+        "o": [
+            "Data exfiltration via violation reports",
+            "Report configuration",
+            "URI setup",
+            "Logging endpoint"
+        ]
+    },
+    {
+        "q": "What is CORS misconfiguration attack?",
+        "o": [
+            "Exploiting overly permissive CORS headers",
+            "CORS configuration",
+            "Origin setup",
+            "Header settings"
+        ]
+    },
+    {
+        "q": "What is Access-Control-Allow-Origin wildcard risk?",
+        "o": [
+            "Allowing any site to access responses",
+            "Origin specification",
+            "Allow configuration",
+            "Wildcard matching"
+        ]
+    },
+    {
+        "q": "What is origin reflection CORS vulnerability?",
+        "o": [
+            "Reflecting any Origin header back",
+            "Origin verification",
+            "Reflection configuration",
+            "Header validation"
+        ]
+    },
+    {
+        "q": "What is null origin CORS bypass?",
+        "o": [
+            "Using null origin for sandboxed attacks",
+            "Origin null value",
+            "Null configuration",
+            "Empty origin"
+        ]
+    },
+    {
+        "q": "What is partial origin match vulnerability?",
+        "o": [
+            "Allowing similar but attacker-controlled origins",
+            "Origin matching rules",
+            "Partial verification",
+            "Match configuration"
+        ]
+    },
+    {
+        "q": "What is CORS credential leak?",
+        "o": [
+            "Stealing cookies via credentialed requests",
+            "Credential configuration",
+            "Cookie handling",
+            "Auth settings"
+        ]
+    },
+    {
+        "q": "What is CORS preflight bypass?",
+        "o": [
+            "Avoiding OPTIONS for simple requests",
+            "Preflight configuration",
+            "Request handling",
+            "CORS setup"
+        ]
+    },
+    {
+        "q": "What is Access-Control-Expose-Headers risk?",
+        "o": [
+            "Leaking sensitive response headers",
+            "Header exposure",
+            "Expose configuration",
+            "Response headers"
+        ]
+    },
+    {
+        "q": "What is Access-Control-Max-Age attack?",
+        "o": [
+            "Caching permissive CORS for longer",
+            "Cache duration",
+            "Max age setting",
+            "Cache configuration"
+        ]
+    },
+    {
+        "q": "What is CORS with internal network access?",
+        "o": [
+            "Accessing internal services via browser",
+            "Network configuration",
+            "Internal access",
+            "Service discovery"
+        ]
+    },
+    {
+        "q": "What is JSONP callback exploitation?",
+        "o": [
+            "Injecting code via callback parameter",
+            "Callback function",
+            "Parameter handling",
+            "Function naming"
+        ]
+    },
+    {
+        "q": "What is JSONP data theft?",
+        "o": [
+            "Stealing data via cross-origin JSONP",
+            "Data extraction",
+            "JSON loading",
+            "Script inclusion"
+        ]
+    },
+    {
+        "q": "What is JSONP CSRF combination?",
+        "o": [
+            "Using JSONP to trigger state changes",
+            "Request combination",
+            "Attack chaining",
+            "CSRF enhancement"
+        ]
+    },
+    {
+        "q": "What is JSONP gadget for XSS?",
+        "o": [
+            "Using JSONP to bypass CSP for execution",
+            "XSS gadget chain",
+            "Script execution",
+            "CSP bypass"
+        ]
+    },
+    {
+        "q": "What is OAuth implicit flow risk?",
+        "o": [
+            "Token exposed in URL fragment",
+            "OAuth configuration",
+            "Flow selection",
+            "Token handling"
+        ]
+    },
+    {
+        "q": "What is OAuth redirect_uri manipulation?",
+        "o": [
+            "Redirecting tokens to attacker domain",
+            "Redirect configuration",
+            "URI validation",
+            "Redirect handling"
+        ]
+    },
+    {
+        "q": "What is OAuth open redirect token theft?",
+        "o": [
+            "Using open redirect to steal tokens",
+            "Redirect chaining",
+            "Token extraction",
+            "OAuth exploitation"
+        ]
+    },
+    {
+        "q": "What is OAuth state parameter bypass?",
+        "o": [
+            "CSRF on OAuth due to missing state",
+            "State validation",
+            "Parameter handling",
+            "CSRF protection"
+        ]
+    },
+    {
+        "q": "What is OAuth authorization code injection?",
+        "o": [
+            "Injecting attacker code into victim session",
+            "Code handling",
+            "Injection technique",
+            "Session hijacking"
+        ]
+    },
+    {
+        "q": "What is OAuth token leakage via referer?",
+        "o": [
+            "Token exposed in referer header",
+            "Header leakage",
+            "Token exposure",
+            "Referer handling"
+        ]
+    },
+    {
+        "q": "What is OAuth mix-up attack?",
+        "o": [
+            "Confusing multiple IdPs to steal tokens",
+            "Identity confusion",
+            "Provider mixing",
+            "Token theft"
+        ]
+    },
+    {
+        "q": "What is PKCE downgrade attack?",
+        "o": [
+            "Forcing OAuth flow without PKCE",
+            "Flow downgrade",
+            "PKCE bypass",
+            "Security reduction"
+        ]
+    },
+    {
+        "q": "What is OpenID Connect token theft?",
+        "o": [
+            "Stealing ID tokens via client-side attacks",
+            "Token extraction",
+            "OIDC exploitation",
+            "Identity theft"
+        ]
+    },
+    {
+        "q": "What is JWT client-side forgery?",
+        "o": [
+            "Creating fake JWTs with none algorithm",
+            "Token forgery",
+            "Algorithm confusion",
+            "JWT creation"
+        ]
+    },
+    {
+        "q": "What is JWT algorithm confusion attack?",
+        "o": [
+            "Using RS256 public key as HS256 secret",
+            "Algorithm switching",
+            "Key confusion",
+            "Signature bypass"
+        ]
+    },
+    {
+        "q": "What is JWT kid header injection?",
+        "o": [
+            "Injecting paths in kid for key retrieval",
+            "Header injection",
+            "Key identifier",
+            "Path traversal"
+        ]
+    },
+    {
+        "q": "What is JWT jku header attack?",
+        "o": [
+            "Pointing to attacker-controlled JWK set",
+            "JWK URL injection",
+            "Key set hosting",
+            "Token validation"
+        ]
+    },
+    {
+        "q": "What is JWT x5u header attack?",
+        "o": [
+            "Pointing to attacker-controlled certificate",
+            "Certificate URL",
+            "X509 injection",
+            "Trust chain"
+        ]
+    },
+    {
+        "q": "What is JWT embedded JWK attack?",
+        "o": [
+            "Embedding attacker public key in token",
+            "Key embedding",
+            "JWK inclusion",
+            "Self-signing"
+        ]
+    },
+    {
+        "q": "What is JWT weak secret brute force?",
+        "o": [
+            "Cracking HMAC JWT with weak secrets",
+            "Secret cracking",
+            "Brute force attack",
+            "Key discovery"
+        ]
+    },
+    {
+        "q": "What is JWT claim injection?",
+        "o": [
+            "Injecting malicious claims into tokens",
+            "Claim manipulation",
+            "Token modification",
+            "Payload injection"
+        ]
+    },
+    {
+        "q": "What is WebSocket cross-site hijacking?",
+        "o": [
+            "CSWSH - attacking WebSocket handshake",
+            "Socket hijacking",
+            "Connection theft",
+            "Handshake attack"
+        ]
+    },
+    {
+        "q": "What is WebSocket same-origin bypass?",
+        "o": [
+            "WebSocket does not enforce same-origin",
+            "Origin verification",
+            "Policy bypass",
+            "Cross-origin access"
+        ]
+    },
+    {
+        "q": "What is WebSocket message injection?",
+        "o": [
+            "Injecting malicious messages into connection",
+            "Message manipulation",
+            "Data injection",
+            "Socket exploitation"
+        ]
+    },
+    {
+        "q": "What is WebSocket protocol confusion?",
+        "o": [
+            "Exploiting protocol upgrade for attacks",
+            "Protocol switching",
+            "Upgrade exploitation",
+            "Connection manipulation"
+        ]
+    },
+    {
+        "q": "What is WebSocket binary data attack?",
+        "o": [
+            "Sending malicious binary payloads",
+            "Binary data handling",
+            "Payload encoding",
+            "Data format"
+        ]
+    },
+    {
+        "q": "What is Server-Sent Events injection?",
+        "o": [
+            "Injecting malicious SSE messages",
+            "Event injection",
+            "Stream manipulation",
+            "Message tampering"
+        ]
+    },
+    {
+        "q": "What is EventSource cross-origin attack?",
+        "o": [
+            "SSE connections following CORS rules",
+            "Cross-origin SSE",
+            "Event stream access",
+            "Origin policy"
+        ]
+    },
+    {
+        "q": "What is subresource integrity bypass?",
+        "o": [
+            "Loading resources without SRI checking",
+            "Integrity verification",
+            "Hash validation",
+            "Resource loading"
+        ]
+    },
+    {
+        "q": "What is SRI hash collision?",
+        "o": [
+            "Creating malicious file with same hash",
+            "Hash collision",
+            "Integrity bypass",
+            "File replacement"
+        ]
+    },
+    {
+        "q": "What is crossorigin attribute abuse?",
+        "o": [
+            "Leaking errors from cross-origin scripts",
+            "Error message leak",
+            "Crossorigin setting",
+            "Script loading"
+        ]
+    },
+    {
+        "q": "What is anonymous credentialed request?",
+        "o": [
+            "Crossorigin anonymous still sends cookies",
+            "Credential handling",
+            "Anonymous mode",
+            "Cookie sending"
+        ]
+    },
+    {
+        "q": "What is use-credentials CORS attack?",
+        "o": [
+            "Stealing authenticated data cross-origin",
+            "Credential mode",
+            "Auth stealing",
+            "Cookie access"
+        ]
+    },
+    {
+        "q": "What is import maps injection?",
+        "o": [
+            "Hijacking module resolution via import maps",
+            "Module mapping",
+            "Import resolution",
+            "Script injection"
+        ]
+    },
+    {
+        "q": "What is speculation rules attack?",
+        "o": [
+            "Abusing prerendering for tracking",
+            "Prefetch rules",
+            "Speculation config",
+            "Prerender abuse"
+        ]
+    },
+    {
+        "q": "What is prerender cross-origin leak?",
+        "o": [
+            "Detecting prerendered pages for tracking",
+            "Prerender detection",
+            "Cross-origin access",
+            "Page state leak"
+        ]
+    },
+    {
+        "q": "What is view transition attack?",
+        "o": [
+            "Exploiting view transitions for UI spoofing",
+            "Transition manipulation",
+            "View change",
+            "Animation abuse"
+        ]
+    },
+    {
+        "q": "What is back-forward cache attack?",
+        "o": [
+            "Exploiting bfcache for state detection",
+            "Cache exploitation",
+            "Navigation attack",
+            "State persistence"
+        ]
+    },
+    {
+        "q": "What is navigation preload attack?",
+        "o": [
+            "Leaking info via service worker preload",
+            "Preload timing",
+            "Navigation info",
+            "Service worker"
+        ]
+    },
+    {
+        "q": "What is periodic background sync attack?",
+        "o": [
+            "Persistent background execution for tracking",
+            "Background sync",
+            "Periodic execution",
+            "Sync abuse"
+        ]
+    },
+    {
+        "q": "What is background fetch attack?",
+        "o": [
+            "Long-running downloads for persistence",
+            "Background download",
+            "Fetch persistence",
+            "Download abuse"
+        ]
+    },
+    {
+        "q": "What is payment handler attack?",
+        "o": [
+            "Registering malicious payment handlers",
+            "Handler registration",
+            "Payment interception",
+            "Method abuse"
+        ]
+    },
+    {
+        "q": "What is credential handler attack?",
+        "o": [
+            "Intercepting credential requests",
+            "Handler abuse",
+            "Credential interception",
+            "Auth attack"
+        ]
+    },
+    {
+        "q": "What is content index attack?",
+        "o": [
+            "Detecting indexed offline content",
+            "Content enumeration",
+            "Index leakage",
+            "Offline detection"
+        ]
+    },
+    {
+        "q": "What is file handling attack?",
+        "o": [
+            "Registering as handler for file types",
+            "Handler registration",
+            "File association",
+            "Type handling"
+        ]
+    },
+    {
+        "q": "What is protocol handler attack?",
+        "o": [
+            "Registering malicious protocol handlers",
+            "Protocol registration",
+            "Handler abuse",
+            "Scheme hijacking"
+        ]
+    },
+    {
+        "q": "What is web share target attack?",
+        "o": [
+            "Intercepting shared content as PWA",
+            "Share target registration",
+            "Content interception",
+            "Share handling"
+        ]
+    },
+    {
+        "q": "What is launch handler attack?",
+        "o": [
+            "Controlling PWA launch behavior",
+            "Launch configuration",
+            "Handler manipulation",
+            "App starting"
+        ]
+    },
+    {
+        "q": "What is window controls overlay attack?",
+        "o": [
+            "Spoofing browser UI in PWA titlebar",
+            "UI spoofing",
+            "Titlebar manipulation",
+            "Control overlay"
+        ]
+    },
+    {
+        "q": "What is display capture prompt bypass?",
+        "o": [
+            "Tricking user into screen sharing",
+            "Permission bypass",
+            "Capture trick",
+            "Prompt manipulation"
+        ]
+    },
+    {
+        "q": "What is media session attack?",
+        "o": [
+            "Hijacking media controls for phishing",
+            "Session hijacking",
+            "Media control abuse",
+            "Playback manipulation"
+        ]
+    },
+    {
+        "q": "What is audio worklet attack?",
+        "o": [
+            "Running persistent code in audio thread",
+            "Worklet execution",
+            "Audio processing",
+            "Thread persistence"
+        ]
+    },
+    {
+        "q": "What is paint worklet attack?",
+        "o": [
+            "Detecting rendering for side channels",
+            "Worklet timing",
+            "Paint detection",
+            "Render attack"
+        ]
+    },
+    {
+        "q": "What is animation worklet timing?",
+        "o": [
+            "High-precision timing via animation thread",
+            "Animation timing",
+            "Worklet precision",
+            "Thread timing"
+        ]
+    },
+    {
+        "q": "What is layout worklet attack?",
+        "o": [
+            "Detecting element sizes via layout thread",
+            "Layout timing",
+            "Size detection",
+            "Element measurement"
+        ]
+    },
+    {
+        "q": "What is WebGPU side channel?",
+        "o": [
+            "Using GPU timing for information leaks",
+            "GPU timing attack",
+            "Compute side channel",
+            "Graphics exploitation"
+        ]
+    },
+    {
+        "q": "What is WebGPU shader attack?",
+        "o": [
+            "Exploiting shader execution for leaks",
+            "Shader timing",
+            "GPU computation",
+            "Graphics attack"
+        ]
+    },
+    {
+        "q": "What is WebTransport attack?",
+        "o": [
+            "Exploiting QUIC-based transport for attacks",
+            "Transport exploitation",
+            "QUIC attack",
+            "Connection abuse"
+        ]
+    },
+    {
+        "q": "What is WebCodecs attack?",
+        "o": [
+            "Exploiting codec vulnerabilities via web",
+            "Codec exploitation",
+            "Media decoding",
+            "Video attack"
+        ]
+    },
+    {
+        "q": "What is Insertable Streams attack?",
+        "o": [
+            "Manipulating WebRTC media in flight",
+            "Stream manipulation",
+            "Media interception",
+            "RTC attack"
+        ]
+    },
+    {
+        "q": "What is MediaStreamTrack Generator attack?",
+        "o": [
+            "Generating fake media tracks",
+            "Track generation",
+            "Media spoofing",
+            "Stream creation"
+        ]
+    },
+    {
+        "q": "What is MediaRecorder attack?",
+        "o": [
+            "Recording without proper user consent",
+            "Recording abuse",
+            "Media capture",
+            "Privacy violation"
+        ]
+    },
+    {
+        "q": "What is EyeDropper API attack?",
+        "o": [
+            "Sampling screen pixels for extraction",
+            "Color sampling",
+            "Pixel extraction",
+            "Screen reading"
+        ]
+    },
+    {
+        "q": "What is local font access attack?",
+        "o": [
+            "Enumerating installed fonts for fingerprint",
+            "Font enumeration",
+            "Local fonts",
+            "Font access"
+        ]
+    },
+    {
+        "q": "What is compute pressure attack?",
+        "o": [
+            "Detecting system load for fingerprinting",
+            "Pressure detection",
+            "Load measurement",
+            "System state"
+        ]
+    },
+    {
+        "q": "What is multi-screen window attack?",
+        "o": [
+            "Detecting and exploiting multiple screens",
+            "Screen enumeration",
+            "Multi-display",
+            "Screen exploitation"
+        ]
+    },
+    {
+        "q": "What is window placement attack?",
+        "o": [
+            "Moving windows to hide or spoof content",
+            "Window positioning",
+            "Placement manipulation",
+            "UI spoofing"
+        ]
+    },
+    {
+        "q": "What is virtual keyboard attack?",
+        "o": [
+            "Detecting virtual keyboard state",
+            "Keyboard detection",
+            "Virtual input",
+            "State leakage"
+        ]
+    },
+    {
+        "q": "What is ink API fingerprinting?",
+        "o": [
+            "Tracking via pen input characteristics",
+            "Ink detection",
+            "Pen fingerprint",
+            "Input tracking"
+        ]
+    },
+    {
+        "q": "What is handwriting recognition attack?",
+        "o": [
+            "Accessing handwritten input data",
+            "Writing recognition",
+            "Input capture",
+            "Handwriting access"
+        ]
+    },
+    {
+        "q": "What is idle detection abuse?",
+        "o": [
+            "Tracking user activity patterns",
+            "Activity detection",
+            "Idle monitoring",
+            "User tracking"
+        ]
+    },
+    {
+        "q": "What is screen wake lock abuse?",
+        "o": [
+            "Keeping screen on for persistent attack",
+            "Wake lock",
+            "Screen persistence",
+            "Display control"
+        ]
+    },
+    {
+        "q": "What is device posture attack?",
+        "o": [
+            "Detecting foldable device states",
+            "Posture detection",
+            "Device state",
+            "Fold tracking"
+        ]
+    },
+    {
+        "q": "What is document picture-in-picture attack?",
+        "o": [
+            "Creating persistent overlay windows",
+            "PiP overlay",
+            "Document window",
+            "Persistent UI"
+        ]
+    },
+    {
+        "q": "What is popover API attack?",
+        "o": [
+            "Creating deceptive popover elements",
+            "Popover manipulation",
+            "UI deception",
+            "Overlay attack"
+        ]
+    },
+    {
+        "q": "What is dialog element attack?",
+        "o": [
+            "Using modal dialogs for phishing",
+            "Dialog abuse",
+            "Modal phishing",
+            "Element exploitation"
+        ]
+    },
+    {
+        "q": "What is details/summary attack?",
+        "o": [
+            "Hiding malicious content in collapsible",
+            "Content hiding",
+            "Collapsible abuse",
+            "Element exploitation"
+        ]
+    },
+    {
+        "q": "What is declarative shadow DOM attack?",
+        "o": [
+            "Injecting shadow DOM via server HTML",
+            "Shadow injection",
+            "DOM encapsulation",
+            "Template attack"
+        ]
+    },
+    {
+        "q": "What is custom element hijacking?",
+        "o": [
+            "Defining malicious custom elements first",
+            "Element registration",
+            "Custom hijack",
+            "Component attack"
+        ]
+    },
+    {
+        "q": "What is slot element attack?",
+        "o": [
+            "Injecting content into shadow DOM slots",
+            "Slot injection",
+            "Content insertion",
+            "Shadow attack"
+        ]
+    },
+    {
+        "q": "What is form-associated custom element?",
+        "o": [
+            "Custom elements stealing form data",
+            "Form association",
+            "Element data theft",
+            "Custom component"
+        ]
+    },
+    {
+        "q": "What is Constructable Stylesheets attack?",
+        "o": [
+            "Injecting styles via JavaScript API",
+            "Style injection",
+            "CSS attack",
+            "Stylesheet creation"
+        ]
+    },
+    {
+        "q": "What is CSS Houdini attack?",
+        "o": [
+            "Low-level CSS API exploitation",
+            "Houdini API",
+            "CSS extension",
+            "Style attack"
+        ]
+    },
+    {
+        "q": "What is custom property timing attack?",
+        "o": [
+            "Detecting elements via CSS variable timing",
+            "Variable timing",
+            "Property detection",
+            "CSS side channel"
+        ]
+    },
+    {
+        "q": "What is registered custom property leak?",
+        "o": [
+            "Detecting defined CSS custom properties",
+            "Property registration",
+            "CSS leak",
+            "Variable detection"
+        ]
+    },
+    {
+        "q": "What is XS-Leaks attack?",
+        "o": [
+            "Cross-site information leakage via side channels",
+            "XS Script attack",
+            "Leak prevention",
+            "Cross-site scripting"
+        ]
+    },
+    {
+        "q": "What is XS-Leaks error event?",
+        "o": [
+            "Detecting resource existence via error events",
+            "Error handling code",
+            "Event management",
+            "Exception catching"
+        ]
+    },
+    {
+        "q": "What is XS-Leaks load event?",
+        "o": [
+            "Detecting resources via successful load events",
+            "Load function use",
+            "Event listener",
+            "Page loading"
+        ]
+    },
+    {
+        "q": "What is XS-Leaks frame counting?",
+        "o": [
+            "Detecting page state via window.length",
+            "Frame counting method",
+            "Iframe management",
+            "Window sizing"
+        ]
+    },
+    {
+        "q": "What is XS-Leaks history length?",
+        "o": [
+            "Detecting navigation via history.length",
+            "History management",
+            "Length property",
+            "Navigation tracking"
+        ]
+    },
+    {
+        "q": "What is XS-Leaks performance API?",
+        "o": [
+            "Using performance entries for cross-origin info",
+            "Performance monitoring",
+            "API configuration",
+            "Speed measurement"
+        ]
+    },
+    {
+        "q": "What is XS-Leaks cache probing?",
+        "o": [
+            "Detecting cache hits/misses cross-origin",
+            "Cache management",
+            "Probing technique",
+            "Cache configuration"
+        ]
+    },
+    {
+        "q": "What is XS-Leaks scroll detection?",
+        "o": [
+            "Detecting page content via scroll events",
+            "Scroll management",
+            "Event detection",
+            "Page scrolling"
+        ]
+    },
+    {
+        "q": "What is XS-Leaks connection pool?",
+        "o": [
+            "Exhausting connections to detect requests",
+            "Pool management",
+            "Connection handling",
+            "Socket configuration"
+        ]
+    },
+    {
+        "q": "What is XS-Leaks payment API?",
+        "o": [
+            "Detecting payment method availability",
+            "Payment configuration",
+            "API detection",
+            "Method enumeration"
+        ]
+    },
+    {
+        "q": "What is XS-Leaks ContentDocument check?",
+        "o": [
+            "Detecting same origin by contentDocument access",
+            "Document access",
+            "Origin detection",
+            "Content check"
+        ]
+    },
+    {
+        "q": "What is XS-Leaks media error?",
+        "o": [
+            "Detecting cross-origin video/audio state",
+            "Media error handling",
+            "Error detection",
+            "Playback state"
+        ]
+    },
+    {
+        "q": "What is XS-Leaks text fragment?",
+        "o": [
+            "Detecting content via scroll-to-text fragments",
+            "Fragment navigation",
+            "Text detection",
+            "Scroll behavior"
+        ]
+    },
+    {
+        "q": "What is XS-Leaks ID fragment focus?",
+        "o": [
+            "Detecting elements via fragment focus events",
+            "Fragment handling",
+            "Focus detection",
+            "ID navigation"
+        ]
+    },
+    {
+        "q": "What is prototype pollution attack?",
+        "o": [
+            "Overwriting Object.prototype properties",
+            "Prototype configuration",
+            "Object inheritance",
+            "Property definition"
+        ]
+    },
+    {
+        "q": "How does prototype pollution enable XSS?",
+        "o": [
+            "Polluting properties used in innerHTML calls",
+            "Pollution cleanup",
+            "XSS prevention",
+            "Prototype security"
+        ]
+    },
+    {
+        "q": "What is __proto__ pollution source?",
+        "o": [
+            "Using __proto__ key in merge operations",
+            "Proto property",
+            "Object prototype",
+            "Inheritance chain"
+        ]
+    },
+    {
+        "q": "What is constructor.prototype pollution?",
+        "o": [
+            "Alternative path to pollute prototype",
+            "Constructor function",
+            "Prototype access",
+            "Object creation"
+        ]
+    },
+    {
+        "q": "What is URL-based prototype pollution?",
+        "o": [
+            "Pollution via query string parsing",
+            "URL handling",
+            "Query parsing",
+            "Parameter processing"
+        ]
+    },
+    {
+        "q": "What is JSON-based prototype pollution?",
+        "o": [
+            "Pollution via JSON.parse with __proto__",
+            "JSON parsing",
+            "Data handling",
+            "Object creation"
+        ]
+    },
+    {
+        "q": "What is Object.assign pollution risk?",
+        "o": [
+            "Shallow copy includes __proto__ from source",
+            "Object assignment",
+            "Copy operation",
+            "Property transfer"
+        ]
+    },
+    {
+        "q": "What is lodash merge pollution?",
+        "o": [
+            "Deep merge allows prototype pollution",
+            "Library vulnerability",
+            "Merge function",
+            "Object combination"
+        ]
+    },
+    {
+        "q": "What is jQuery extend pollution?",
+        "o": [
+            "Deep extend can pollute prototype",
+            "jQuery function",
+            "Object extension",
+            "Library vulnerability"
+        ]
+    },
+    {
+        "q": "What is prototype pollution to RCE?",
+        "o": [
+            "Polluting spawn options in node.js",
+            "RCE exploitation",
+            "Server attack",
+            "Node pollution"
+        ]
+    },
+    {
+        "q": "What is prototype pollution gadget?",
+        "o": [
+            "Code pattern exploitable via pollution",
+            "Gadget chain",
+            "Exploitation path",
+            "Attack vector"
+        ]
+    },
+    {
+        "q": "What is CSS recursive import attack?",
+        "o": [
+            "Infinite imports for denial of service",
+            "Import handling",
+            "CSS loading",
+            "Stylesheet recursion"
+        ]
+    },
+    {
+        "q": "What is CSS calc() overflow attack?",
+        "o": [
+            "Triggering browser bugs via calc overflow",
+            "Calculation overflow",
+            "Math exploitation",
+            "CSS computation"
+        ]
+    },
+    {
+        "q": "What is CSS var() exfiltration?",
+        "o": [
+            "Using variables for recursive data extraction",
+            "Variable exfiltration",
+            "CSS data theft",
+            "Recursive technique"
+        ]
+    },
+    {
+        "q": "What is CSS has() selector attack?",
+        "o": [
+            "Detecting element state via parent selector",
+            "Selector logic",
+            "State detection",
+            "CSS query"
+        ]
+    },
+    {
+        "q": "What is CSS focus-within timing?",
+        "o": [
+            "Detecting focus events via CSS",
+            "Focus detection",
+            "Timing attack",
+            "CSS event"
+        ]
+    },
+    {
+        "q": "What is CSS target selector attack?",
+        "o": [
+            "Detecting fragment target via styling",
+            "Target selector",
+            "Fragment detection",
+            "CSS targeting"
+        ]
+    },
+    {
+        "q": "What is CSS empty selector attack?",
+        "o": [
+            "Detecting empty elements via styling",
+            "Empty detection",
+            "Element state",
+            "CSS query"
+        ]
+    },
+    {
+        "q": "What is CSS checked selector attack?",
+        "o": [
+            "Detecting checkbox state via CSS",
+            "Checked detection",
+            "Form state",
+            "Input styling"
+        ]
+    },
+    {
+        "q": "What is CSS indeterminate attack?",
+        "o": [
+            "Detecting indeterminate checkbox state",
+            "State detection",
+            "Form styling",
+            "Input state"
+        ]
+    },
+    {
+        "q": "What is CSS valid/invalid leak?",
+        "o": [
+            "Detecting form validation state via CSS",
+            "Validation detection",
+            "Form styling",
+            "Input validation"
+        ]
+    },
+    {
+        "q": "What is CSS required selector leak?",
+        "o": [
+            "Detecting required attribute via styling",
+            "Attribute detection",
+            "Form analysis",
+            "Input styling"
+        ]
+    },
+    {
+        "q": "What is CSS lang() selector attack?",
+        "o": [
+            "Detecting language setting via CSS",
+            "Language detection",
+            "Locale styling",
+            "Lang attribute"
+        ]
+    },
+    {
+        "q": "What is CSS dir() selector attack?",
+        "o": [
+            "Detecting text direction via CSS",
+            "Direction detection",
+            "RTL/LTR styling",
+            "Dir attribute"
+        ]
+    },
+    {
+        "q": "What is Cache-Control private bypass?",
+        "o": [
+            "Shared cache storing private responses",
+            "Cache configuration",
+            "Privacy setting",
+            "Header handling"
+        ]
+    },
+    {
+        "q": "What is Vary header bypass attack?",
+        "o": [
+            "Cache ignoring Vary for poisoning",
+            "Header handling",
+            "Cache key",
+            "Vary configuration"
+        ]
+    },
+    {
+        "q": "What is key-less cache poisoning?",
+        "o": [
+            "Poisoning via headers not in cache key",
+            "Cache key configuration",
+            "Header exploitation",
+            "Poisoning technique"
+        ]
+    },
+    {
+        "q": "What is cache deception attack?",
+        "o": [
+            "Tricking cache to store sensitive data",
+            "Cache exploitation",
+            "Deception technique",
+            "Data caching"
+        ]
+    },
+    {
+        "q": "What is path confusion cache attack?",
+        "o": [
+            "Using path normalization for cache issues",
+            "Path handling",
+            "Cache key confusion",
+            "URL handling"
+        ]
+    },
+    {
+        "q": "What is parameter cloaking attack?",
+        "o": [
+            "Hiding parameters from cache key logic",
+            "Parameter handling",
+            "Key exclusion",
+            "Cache bypass"
+        ]
+    },
+    {
+        "q": "What is fat GET request attack?",
+        "o": [
+            "GET with body for cache confusion",
+            "Request body",
+            "Cache handling",
+            "GET exploitation"
+        ]
+    },
+    {
+        "q": "What is X-Original-URL attack?",
+        "o": [
+            "Overriding URL via framework headers",
+            "Header injection",
+            "URL override",
+            "Framework bypass"
+        ]
+    },
+    {
+        "q": "What is X-Rewrite-URL attack?",
+        "o": [
+            "Changing parsed URL via header",
+            "URL rewrite",
+            "Header exploitation",
+            "Path override"
+        ]
+    },
+    {
+        "q": "What is request smuggling to XSS?",
+        "o": [
+            "Smuggling XSS payload in desync",
+            "Smuggling attack",
+            "XSS delivery",
+            "Request desync"
+        ]
+    },
+    {
+        "q": "What is client-side desync attack?",
+        "o": [
+            "Browser-based request smuggling",
+            "Desync attack",
+            "Client exploitation",
+            "Browser attack"
+        ]
+    },
+    {
+        "q": "What is pause-based desync?",
+        "o": [
+            "Using partial request for desync",
+            "Timing attack",
+            "Request pause",
+            "Desync technique"
+        ]
+    },
+    {
+        "q": "What is browser-powered request smuggling?",
+        "o": [
+            "Using browser for smuggling attacks",
+            "Browser exploitation",
+            "Smuggling vector",
+            "Request manipulation"
+        ]
+    },
+    {
+        "q": "What is response queue poisoning?",
+        "o": [
+            "Desync causes response misrouting",
+            "Queue manipulation",
+            "Response redirection",
+            "Poisoning attack"
+        ]
+    },
+    {
+        "q": "What is credential stuffing via browser?",
+        "o": [
+            "Automated login attempts from victim browser",
+            "Credential attack",
+            "Login automation",
+            "Account takeover"
+        ]
+    },
+    {
+        "q": "What is cryptomining via XSS?",
+        "o": [
+            "Running cryptocurrency miners in browser",
+            "Mining attack",
+            "Resource abuse",
+            "Crypto exploitation"
+        ]
+    },
+    {
+        "q": "What is botnet via service worker?",
+        "o": [
+            "Creating persistent browser-based botnet",
+            "Botnet creation",
+            "Worker exploitation",
+            "Persistent attack"
+        ]
+    },
+    {
+        "q": "What is DDoS via browser attack?",
+        "o": [
+            "Using victim browsers for DDoS",
+            "DDoS amplification",
+            "Browser abuse",
+            "Attack distribution"
+        ]
+    },
+    {
+        "q": "What is keylogger via XSS?",
+        "o": [
+            "Capturing all keystrokes on page",
+            "Input capture",
+            "Keystroke logging",
+            "Data theft"
+        ]
+    },
+    {
+        "q": "What is screen capture via XSS?",
+        "o": [
+            "Taking screenshots of page content",
+            "Screen capture",
+            "Visual theft",
+            "Page recording"
+        ]
+    },
+    {
+        "q": "What is form data exfiltration?",
+        "o": [
+            "Stealing form inputs before submission",
+            "Form capture",
+            "Data theft",
+            "Input interception"
+        ]
+    },
+    {
+        "q": "What is login form credential theft?",
+        "o": [
+            "Hooking login forms to steal credentials",
+            "Form hijacking",
+            "Password theft",
+            "Auth interception"
+        ]
+    },
+    {
+        "q": "What is request interception attack?",
+        "o": [
+            "Modifying all outgoing requests",
+            "Request manipulation",
+            "Fetch hijacking",
+            "Network interception"
+        ]
+    },
+    {
+        "q": "What is response modification attack?",
+        "o": [
+            "Altering responses before rendering",
+            "Response manipulation",
+            "Content modification",
+            "Data tampering"
+        ]
+    },
+    {
+        "q": "What is history manipulation attack?",
+        "o": [
+            "Trapping user in malicious page",
+            "History abuse",
+            "Navigation trapping",
+            "Back button attack"
+        ]
+    },
+    {
+        "q": "What is tab enumeration attack?",
+        "o": [
+            "Detecting other open tabs",
+            "Tab detection",
+            "Window enumeration",
+            "Browser fingerprint"
+        ]
+    },
+    {
+        "q": "What is extension detection attack?",
+        "o": [
+            "Detecting installed browser extensions",
+            "Extension enumeration",
+            "Fingerprinting technique",
+            "Add-on detection"
+        ]
+    },
+    {
+        "q": "What is web accessible resource detection?",
+        "o": [
+            "Detecting extensions via WAR URLs",
+            "Resource detection",
+            "Extension ID leak",
+            "WAR enumeration"
+        ]
+    },
+    {
+        "q": "What is contentScriptMatchesExternalUrl attack?",
+        "o": [
+            "Extension injecting into attacker page",
+            "Content script injection",
+            "Extension vulnerability",
+            "Script exposure"
+        ]
+    },
+    {
+        "q": "What is externally_connectable attack?",
+        "o": [
+            "Exploiting extension message passing",
+            "Message exploitation",
+            "Extension communication",
+            "Connection abuse"
+        ]
+    },
+    {
+        "q": "What is extension update hijacking?",
+        "o": [
+            "MITM attack on extension updates",
+            "Update interception",
+            "Extension compromise",
+            "Update hijacking"
+        ]
+    },
+    {
+        "q": "What is webRequestBlocking abuse?",
+        "o": [
+            "Extensions modifying all requests",
+            "Request blocking",
+            "Extension permission",
+            "Traffic modification"
+        ]
+    },
+    {
+        "q": "What is activeTab permission abuse?",
+        "o": [
+            "Tricking user to grant tab access",
+            "Permission abuse",
+            "Tab access",
+            "Click-to-grant"
+        ]
+    },
+    {
+        "q": "What is clipboardWrite abuse?",
+        "o": [
+            "Extensions modifying clipboard",
+            "Clipboard access",
+            "Extension permission",
+            "Data injection"
+        ]
+    },
+    {
+        "q": "What is declarativeNetRequest bypass?",
+        "o": [
+            "Bypassing extension content blocking",
+            "DNR bypass",
+            "Filter evasion",
+            "Blocking circumvention"
+        ]
+    },
+    {
+        "q": "What is manifest V3 attack surface?",
+        "o": [
+            "New attack vectors in MV3 extensions",
+            "Manifest version",
+            "Extension API",
+            "Permission model"
+        ]
+    },
+    {
+        "q": "What is site isolation bypass attempt?",
+        "o": [
+            "Trying to access cross-origin data",
+            "Isolation evasion",
+            "Process boundary",
+            "Security bypass"
+        ]
+    },
+    {
+        "q": "What is OOPIF attack?",
+        "o": [
+            "Exploiting out-of-process iframes",
+            "Frame isolation",
+            "Process attack",
+            "Iframe security"
+        ]
+    },
+    {
+        "q": "What is document.domain attack?",
+        "o": [
+            "Relaxing same-origin via domain setting",
+            "Domain relaxation",
+            "Origin weakening",
+            "SOP bypass"
+        ]
+    },
+    {
+        "q": "What is null origin exploitation?",
+        "o": [
+            "Using sandboxed null origin for attacks",
+            "Null origin",
+            "Sandbox exploitation",
+            "Origin manipulation"
+        ]
+    },
+    {
+        "q": "What is origin inheritance attack?",
+        "o": [
+            "Inheriting privileged origin contexts",
+            "Origin inheritance",
+            "Context exploitation",
+            "Privilege escalation"
+        ]
+    },
+    {
+        "q": "What is blob origin confusion?",
+        "o": [
+            "Exploiting blob URL origin handling",
+            "Blob origin",
+            "URL confusion",
+            "Origin bypass"
+        ]
+    },
+    {
+        "q": "What is data URI origin?",
+        "o": [
+            "Data URIs inherit null or parent origin",
+            "Data origin",
+            "URI handling",
+            "Origin inheritance"
+        ]
+    },
+    {
+        "q": "What is javascript URI origin?",
+        "o": [
+            "JavaScript URIs inherit opener origin",
+            "JS URI",
+            "Origin inheritance",
+            "Protocol handling"
+        ]
+    },
+    {
+        "q": "What is srcdoc origin handling?",
+        "o": [
+            "Srcdoc inherits parent frame origin",
+            "Frame origin",
+            "Document inheriting",
+            "Srcdoc security"
+        ]
+    },
+    {
+        "q": "What is about:blank origin?",
+        "o": [
+            "About blank inherits opener origin",
+            "Blank page origin",
+            "Context inheritance",
+            "Navigation handling"
+        ]
+    },
+    {
+        "q": "What is Trusted Types bypassing?",
+        "o": [
+            "Finding sinks without Trusted Types",
+            "Type bypass",
+            "Sink exploitation",
+            "Trust evasion"
+        ]
+    },
+    {
+        "q": "What is default policy exploitation?",
+        "o": [
+            "Abusing Trusted Types default policy",
+            "Policy bypass",
+            "Default exploitation",
+            "Trust abuse"
+        ]
+    },
+    {
+        "q": "What is policy name collision?",
+        "o": [
+            "Creating policies with conflicting names",
+            "Name collision",
+            "Policy confusion",
+            "Trust exploitation"
+        ]
+    },
+    {
+        "q": "What is createPolicy bypass?",
+        "o": [
+            "Exploiting policy creation flaws",
+            "Policy creation",
+            "Bypass technique",
+            "Trust attack"
+        ]
+    },
+    {
+        "q": "What is require-trusted-types-for bypass?",
+        "o": [
+            "Finding enforcement gaps in TT for script",
+            "Requirement bypass",
+            "Script injection",
+            "Trust bypass"
+        ]
+    },
+    {
+        "q": "What is COOP bypass technique?",
+        "o": [
+            "Circumventing Cross-Origin-Opener-Policy",
+            "Policy bypass",
+            "Opener access",
+            "COOP evasion"
+        ]
+    },
+    {
+        "q": "What is COEP bypass technique?",
+        "o": [
+            "Circumventing Cross-Origin-Embedder-Policy",
+            "Policy bypass",
+            "Embedder access",
+            "COEP evasion"
+        ]
+    },
+    {
+        "q": "What is CORP bypass technique?",
+        "o": [
+            "Accessing cross-origin-resource-policy protected",
+            "Resource access",
+            "Policy bypass",
+            "CORP evasion"
+        ]
+    },
+    {
+        "q": "What is CORB bypass attempt?",
+        "o": [
+            "Trying to access cross-origin read blocked",
+            "Read bypass",
+            "CORB evasion",
+            "Content access"
+        ]
+    },
+    {
+        "q": "What is ORB bypass attempt?",
+        "o": [
+            "Bypassing Opaque Response Blocking",
+            "Response access",
+            "ORB evasion",
+            "Content reading"
+        ]
+    },
+    {
+        "q": "What is Fetch Metadata abuse?",
+        "o": [
+            "Bypassing Sec-Fetch header protections",
+            "Metadata bypass",
+            "Header manipulation",
+            "Fetch exploitation"
+        ]
+    },
+    {
+        "q": "What is Sec-Fetch-Site bypass?",
+        "o": [
+            "Making cross-site appear same-site",
+            "Site bypass",
+            "Header spoofing",
+            "Origin confusion"
+        ]
+    },
+    {
+        "q": "What is Sec-Fetch-Mode manipulation?",
+        "o": [
+            "Changing perceived request mode",
+            "Mode bypass",
+            "Header manipulation",
+            "Request confusion"
+        ]
+    },
+    {
+        "q": "What is Sec-Fetch-User bypass?",
+        "o": [
+            "Making automated appear user-initiated",
+            "User bypass",
+            "Header spoofing",
+            "Automation detection"
+        ]
+    },
+    {
+        "q": "What is Sec-Fetch-Dest manipulation?",
+        "o": [
+            "Changing perceived request destination",
+            "Dest bypass",
+            "Header manipulation",
+            "Request confusion"
+        ]
+    },
+    {
+        "q": "What is partitioned cookies attack?",
+        "o": [
+            "Exploiting CHIPS implementation flaws",
+            "Cookie partition",
+            "CHIPS attack",
+            "State isolation"
+        ]
+    },
+    {
+        "q": "What is first-party sets attack?",
+        "o": [
+            "Abusing related domain grouping",
+            "Domain grouping",
+            "FPS exploitation",
+            "Set abuse"
+        ]
+    },
+    {
+        "q": "What is storage partitioning bypass?",
+        "o": [
+            "Accessing storage across partitions",
+            "Partition bypass",
+            "Storage access",
+            "Isolation evasion"
+        ]
+    },
+    {
+        "q": "What is Storage Access API abuse?",
+        "o": [
+            "Tricking user to grant storage access",
+            "Access grant",
+            "API abuse",
+            "Permission trick"
+        ]
+    },
+    {
+        "q": "What is requestStorageAccess attack?",
+        "o": [
+            "Gaining cross-site cookie access",
+            "Storage request",
+            "Cookie access",
+            "Permission abuse"
+        ]
+    },
+    {
+        "q": "What is hasStorageAccess leak?",
+        "o": [
+            "Detecting storage access state",
+            "Access detection",
+            "State leakage",
+            "Permission check"
+        ]
+    },
+    {
+        "q": "What is Private State Token attack?",
+        "o": [
+            "Exploiting trust token implementation",
+            "Token attack",
+            "Trust abuse",
+            "State exploitation"
+        ]
+    },
+    {
+        "q": "What is Topics API fingerprinting?",
+        "o": [
+            "Using interest topics for tracking",
+            "Topic tracking",
+            "Interest fingerprint",
+            "API abuse"
+        ]
+    },
+    {
+        "q": "What is Attribution Reporting attack?",
+        "o": [
+            "Exploiting conversion measurement API",
+            "Attribution abuse",
+            "Reporting attack",
+            "Measurement leak"
+        ]
+    },
+    {
+        "q": "What is Fenced Frames escape?",
+        "o": [
+            "Breaking out of fenced frame isolation",
+            "Frame escape",
+            "Isolation bypass",
+            "Fence breaking"
+        ]
+    },
+    {
+        "q": "What is Shared Storage attack?",
+        "o": [
+            "Leaking data from cross-site storage",
+            "Storage attack",
+            "Data leakage",
+            "Shared access"
+        ]
+    },
+    {
+        "q": "What is Protected Audience API attack?",
+        "o": [
+            "Exploiting FLEDGE interest groups",
+            "Audience attack",
+            "Interest exploitation",
+            "Bidding abuse"
+        ]
+    }
+]

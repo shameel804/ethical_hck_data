@@ -1,0 +1,4565 @@
+[
+    {
+        "q": "What does API stand for?",
+        "o": [
+            "Application Programming Interface",
+            "Application Protocol Integration",
+            "Automated Protocol Interface",
+            "Application Process Integration"
+        ]
+    },
+    {
+        "q": "Which HTTP method is typically used to retrieve data from a REST API?",
+        "o": [
+            "GET",
+            "POST",
+            "PUT",
+            "DELETE"
+        ]
+    },
+    {
+        "q": "What is the purpose of authentication in APIs?",
+        "o": [
+            "Verify user identity",
+            "Encrypt API responses",
+            "Speed up API calls",
+            "Cache API requests"
+        ]
+    },
+    {
+        "q": "Which status code indicates a successful API request?",
+        "o": [
+            "200 OK",
+            "404 Not Found",
+            "500 Server Error",
+            "401 Unauthorized"
+        ]
+    },
+    {
+        "q": "What is an API endpoint?",
+        "o": [
+            "URL where API receives requests",
+            "Database connection point",
+            "Server hardware location",
+            "User interface button"
+        ]
+    },
+    {
+        "q": "Which header is commonly used to pass API keys?",
+        "o": [
+            "Authorization",
+            "Content-Type",
+            "Accept-Language",
+            "Cache-Control"
+        ]
+    },
+    {
+        "q": "What does REST stand for?",
+        "o": [
+            "Representational State Transfer",
+            "Remote Execution Service Type",
+            "Request Encoding Standard Text",
+            "Reliable Endpoint Service Tool"
+        ]
+    },
+    {
+        "q": "Which HTTP method is used to create new resources?",
+        "o": [
+            "POST",
+            "GET",
+            "DELETE",
+            "OPTIONS"
+        ]
+    },
+    {
+        "q": "What is rate limiting in API security?",
+        "o": [
+            "Restricting number of requests",
+            "Speeding up API response time",
+            "Encrypting API payloads only",
+            "Caching frequent API calls"
+        ]
+    },
+    {
+        "q": "Which status code indicates unauthorized access?",
+        "o": [
+            "401",
+            "200",
+            "404",
+            "302"
+        ]
+    },
+    {
+        "q": "What is the purpose of input validation?",
+        "o": [
+            "Ensure data meets expected format",
+            "Speed up database queries fast",
+            "Cache user input for reuse",
+            "Encrypt input before storage"
+        ]
+    },
+    {
+        "q": "Which method deletes a resource in REST?",
+        "o": [
+            "DELETE",
+            "REMOVE",
+            "ERASE",
+            "DROP"
+        ]
+    },
+    {
+        "q": "What is an API token?",
+        "o": [
+            "Credential for API access",
+            "Error message identifier",
+            "Response compression key",
+            "Database table reference"
+        ]
+    },
+    {
+        "q": "Which status code means resource not found?",
+        "o": [
+            "404",
+            "200",
+            "500",
+            "201"
+        ]
+    },
+    {
+        "q": "What is HTTPS used for in API security?",
+        "o": [
+            "Encrypt data in transit",
+            "Speed up API responses",
+            "Cache API requests only",
+            "Compress response payload"
+        ]
+    },
+    {
+        "q": "Which HTTP method updates an existing resource?",
+        "o": [
+            "PUT",
+            "GET",
+            "POST",
+            "HEAD"
+        ]
+    },
+    {
+        "q": "What does JSON stand for?",
+        "o": [
+            "JavaScript Object Notation",
+            "Java Standard Object Name",
+            "Joint System Object Network",
+            "JavaScript Online Notation"
+        ]
+    },
+    {
+        "q": "What is the purpose of API documentation?",
+        "o": [
+            "Explain how to use the API",
+            "Encrypt API traffic only",
+            "Store API request logs",
+            "Cache API responses fast"
+        ]
+    },
+    {
+        "q": "Which status code indicates server error?",
+        "o": [
+            "500",
+            "200",
+            "301",
+            "403"
+        ]
+    },
+    {
+        "q": "What is the Content-Type header used for?",
+        "o": [
+            "Specify data format of body",
+            "Set authentication method",
+            "Enable request caching",
+            "Define rate limit rules"
+        ]
+    },
+    {
+        "q": "What is authorization in API security?",
+        "o": [
+            "Determine what user can access",
+            "Verify user identity first",
+            "Encrypt API response data",
+            "Speed up API request rate"
+        ]
+    },
+    {
+        "q": "Which method retrieves only headers?",
+        "o": [
+            "HEAD",
+            "GET",
+            "POST",
+            "PUT"
+        ]
+    },
+    {
+        "q": "What is an API gateway?",
+        "o": [
+            "Entry point for API requests",
+            "Database backup location point",
+            "User interface component part",
+            "Storage for API responses"
+        ]
+    },
+    {
+        "q": "What does 403 status code mean?",
+        "o": [
+            "Forbidden access denied",
+            "Success operation done",
+            "Resource not found here",
+            "Request timeout error"
+        ]
+    },
+    {
+        "q": "What is CORS in web APIs?",
+        "o": [
+            "Cross-Origin Resource Sharing",
+            "Central Origin Response Server",
+            "Common Object Request System",
+            "Cache Origin Resource Store"
+        ]
+    },
+    {
+        "q": "What is the purpose of API versioning?",
+        "o": [
+            "Maintain backward compatibility",
+            "Speed up API responses fast",
+            "Encrypt all API data sent",
+            "Cache API request results"
+        ]
+    },
+    {
+        "q": "Which header indicates accepted response format?",
+        "o": [
+            "Accept",
+            "Content-Type",
+            "Authorization",
+            "User-Agent"
+        ]
+    },
+    {
+        "q": "What is an API key?",
+        "o": [
+            "Unique identifier for access",
+            "Encryption algorithm type",
+            "Database column value set",
+            "Response cache duration"
+        ]
+    },
+    {
+        "q": "What does 201 status code indicate?",
+        "o": [
+            "Resource created successfully",
+            "Request failed with error",
+            "Server is unavailable now",
+            "Client error occurred here"
+        ]
+    },
+    {
+        "q": "What is payload in API context?",
+        "o": [
+            "Data sent in request body",
+            "API server location address",
+            "Response time measurement",
+            "Error code description text"
+        ]
+    },
+    {
+        "q": "Which method is idempotent in REST?",
+        "o": [
+            "GET",
+            "POST",
+            "PATCH",
+            "CONNECT"
+        ]
+    },
+    {
+        "q": "What is API throttling?",
+        "o": [
+            "Limiting request frequency",
+            "Increasing response speed",
+            "Encrypting API payloads",
+            "Caching frequent results"
+        ]
+    },
+    {
+        "q": "What does 400 status code mean?",
+        "o": [
+            "Bad request from client",
+            "Server error occurred now",
+            "Resource found and ready",
+            "Redirect to new location"
+        ]
+    },
+    {
+        "q": "What is query parameter in APIs?",
+        "o": [
+            "Data appended to URL string",
+            "Encrypted request body data",
+            "Response header value set",
+            "Authentication token format"
+        ]
+    },
+    {
+        "q": "Which HTTP method is not safe?",
+        "o": [
+            "POST",
+            "GET",
+            "HEAD",
+            "OPTIONS"
+        ]
+    },
+    {
+        "q": "What is an API response body?",
+        "o": [
+            "Data returned by the API",
+            "Request headers sent first",
+            "Server address location URL",
+            "Authentication token value"
+        ]
+    },
+    {
+        "q": "What is the purpose of HTTP headers?",
+        "o": [
+            "Provide metadata for request",
+            "Store database connection info",
+            "Encrypt payload body data",
+            "Cache response permanently"
+        ]
+    },
+    {
+        "q": "Which status code means moved permanently?",
+        "o": [
+            "301",
+            "200",
+            "404",
+            "500"
+        ]
+    },
+    {
+        "q": "What is session-based authentication?",
+        "o": [
+            "Server stores user session",
+            "Client encrypts all data",
+            "API caches every request",
+            "Database logs all queries"
+        ]
+    },
+    {
+        "q": "What does PATCH method do?",
+        "o": [
+            "Partially update a resource",
+            "Delete resource completely",
+            "Create new resource entry",
+            "Retrieve resource details"
+        ]
+    },
+    {
+        "q": "What is Basic Authentication?",
+        "o": [
+            "Username password in header",
+            "Token-based access control",
+            "Certificate authentication type",
+            "Biometric verification method"
+        ]
+    },
+    {
+        "q": "Which status code indicates conflict?",
+        "o": [
+            "409",
+            "200",
+            "301",
+            "404"
+        ]
+    },
+    {
+        "q": "What is an API schema?",
+        "o": [
+            "Structure definition of API",
+            "Encryption algorithm used",
+            "Server hardware location",
+            "Cache duration setting"
+        ]
+    },
+    {
+        "q": "What is the OPTIONS method used for?",
+        "o": [
+            "Get allowed HTTP methods",
+            "Delete server resources",
+            "Create new data entries",
+            "Update existing records"
+        ]
+    },
+    {
+        "q": "What is bearer token authentication?",
+        "o": [
+            "Token passed in header",
+            "Username password combo",
+            "Certificate based access",
+            "IP address whitelist"
+        ]
+    },
+    {
+        "q": "What does 429 status code mean?",
+        "o": [
+            "Too many requests sent",
+            "Server error occurred",
+            "Resource created now",
+            "Request successful done"
+        ]
+    },
+    {
+        "q": "What is request validation?",
+        "o": [
+            "Checking input data format",
+            "Encrypting request payload",
+            "Caching response results",
+            "Logging server actions"
+        ]
+    },
+    {
+        "q": "What is API consumption?",
+        "o": [
+            "Using an API in application",
+            "Deleting API endpoints now",
+            "Creating new API schemas",
+            "Testing server performance"
+        ]
+    },
+    {
+        "q": "Which header prevents caching?",
+        "o": [
+            "Cache-Control: no-store",
+            "Content-Type: application",
+            "Accept: text/html format",
+            "Authorization: Bearer key"
+        ]
+    },
+    {
+        "q": "What is API pagination?",
+        "o": [
+            "Splitting results into pages",
+            "Encrypting all data sent",
+            "Caching every API call",
+            "Validating user inputs"
+        ]
+    },
+    {
+        "q": "What does 204 No Content mean?",
+        "o": [
+            "Success but no response body",
+            "Request failed with errors",
+            "Resource not found anywhere",
+            "Server unavailable currently"
+        ]
+    },
+    {
+        "q": "What is whitelisting in API security?",
+        "o": [
+            "Allow only approved values",
+            "Block all incoming data",
+            "Encrypt every request made",
+            "Cache approved responses"
+        ]
+    },
+    {
+        "q": "What is an API provider?",
+        "o": [
+            "Entity that creates the API",
+            "User who consumes the API",
+            "Tool that tests endpoints",
+            "Cache that stores results"
+        ]
+    },
+    {
+        "q": "Which method checks API availability?",
+        "o": [
+            "HEAD",
+            "DELETE",
+            "POST",
+            "PUT"
+        ]
+    },
+    {
+        "q": "What is response caching?",
+        "o": [
+            "Storing responses for reuse",
+            "Encrypting response payload",
+            "Validating response format",
+            "Logging response details"
+        ]
+    },
+    {
+        "q": "What does 503 status code indicate?",
+        "o": [
+            "Service unavailable now",
+            "Request successful done",
+            "Resource created today",
+            "Client error detected"
+        ]
+    },
+    {
+        "q": "What is API contract?",
+        "o": [
+            "Agreement on API behavior",
+            "License for API usage fee",
+            "Encryption key for data",
+            "Cache policy document"
+        ]
+    },
+    {
+        "q": "What is request body?",
+        "o": [
+            "Data sent in POST or PUT",
+            "URL path of the endpoint",
+            "Response from the server",
+            "Error message displayed"
+        ]
+    },
+    {
+        "q": "Which header sets cookie?",
+        "o": [
+            "Set-Cookie",
+            "Authorization",
+            "Content-Type",
+            "Accept"
+        ]
+    },
+    {
+        "q": "What is blacklisting in input validation?",
+        "o": [
+            "Block known bad values",
+            "Allow all input values",
+            "Encrypt input data first",
+            "Cache valid inputs only"
+        ]
+    },
+    {
+        "q": "What is URI in REST context?",
+        "o": [
+            "Uniform Resource Identifier",
+            "Universal Request Interface",
+            "Unique Response Indicator",
+            "Unified Resource Input"
+        ]
+    },
+    {
+        "q": "What does idempotent mean for APIs?",
+        "o": [
+            "Same result for repeated calls",
+            "Different result each time",
+            "Faster response for calls",
+            "Encrypted data transfer"
+        ]
+    },
+    {
+        "q": "What is error handling in APIs?",
+        "o": [
+            "Managing and returning errors",
+            "Preventing all API errors",
+            "Caching error responses",
+            "Encrypting error messages"
+        ]
+    },
+    {
+        "q": "Which status code means accepted?",
+        "o": [
+            "202",
+            "200",
+            "301",
+            "404"
+        ]
+    },
+    {
+        "q": "What is API consumer?",
+        "o": [
+            "Entity using the API service",
+            "Entity creating the API code",
+            "Server hosting the API app",
+            "Database storing API data"
+        ]
+    },
+    {
+        "q": "What is resource in REST?",
+        "o": [
+            "Entity accessed via API",
+            "Server hardware component",
+            "Database connection pool",
+            "Cache storage location"
+        ]
+    },
+    {
+        "q": "Which header specifies encoding?",
+        "o": [
+            "Content-Encoding",
+            "Authorization",
+            "Accept-Language",
+            "User-Agent"
+        ]
+    },
+    {
+        "q": "What is stateless in REST?",
+        "o": [
+            "No session stored on server",
+            "Server stores all sessions",
+            "Client caches all data",
+            "Database logs all calls"
+        ]
+    },
+    {
+        "q": "What does 405 status code mean?",
+        "o": [
+            "Method not allowed here",
+            "Request successful done",
+            "Resource created today",
+            "Server error occurred"
+        ]
+    },
+    {
+        "q": "What is API latency?",
+        "o": [
+            "Time for request response",
+            "Number of API endpoints",
+            "Size of response payload",
+            "Count of error messages"
+        ]
+    },
+    {
+        "q": "What is path parameter?",
+        "o": [
+            "Variable in URL path part",
+            "Query string at URL end",
+            "Header value in request",
+            "Body content in payload"
+        ]
+    },
+    {
+        "q": "Which header indicates content length?",
+        "o": [
+            "Content-Length",
+            "Content-Type",
+            "Accept",
+            "Authorization"
+        ]
+    },
+    {
+        "q": "What is API security testing?",
+        "o": [
+            "Checking for vulnerabilities",
+            "Measuring response times",
+            "Counting active users",
+            "Caching frequent calls"
+        ]
+    },
+    {
+        "q": "What does 502 status code mean?",
+        "o": [
+            "Bad gateway error today",
+            "Request processed okay",
+            "Resource not found here",
+            "Client error occurred"
+        ]
+    },
+    {
+        "q": "What is HATEOAS in REST?",
+        "o": [
+            "Hypermedia links in response",
+            "Authentication header type",
+            "Encryption protocol name",
+            "Caching mechanism used"
+        ]
+    },
+    {
+        "q": "What is request header?",
+        "o": [
+            "Metadata sent with request",
+            "Data in response body area",
+            "URL path of the endpoint",
+            "Error code from server"
+        ]
+    },
+    {
+        "q": "Which method is safe in REST?",
+        "o": [
+            "GET",
+            "POST",
+            "PUT",
+            "DELETE"
+        ]
+    },
+    {
+        "q": "What is response header?",
+        "o": [
+            "Metadata returned by server",
+            "Data in request body area",
+            "URL path of the endpoint",
+            "Query string parameters"
+        ]
+    },
+    {
+        "q": "What does 304 status code mean?",
+        "o": [
+            "Not modified since cached",
+            "Resource created today",
+            "Server error occurred now",
+            "Request is unauthorized"
+        ]
+    },
+    {
+        "q": "What is input sanitization?",
+        "o": [
+            "Cleaning malicious input data",
+            "Encrypting all input values",
+            "Caching user input entries",
+            "Logging input for review"
+        ]
+    },
+    {
+        "q": "What is API endpoint URL?",
+        "o": [
+            "Address to access resource",
+            "Encryption key for data",
+            "Authentication token value",
+            "Error message identifier"
+        ]
+    },
+    {
+        "q": "Which header prevents clickjacking?",
+        "o": [
+            "X-Frame-Options",
+            "Content-Type",
+            "Accept",
+            "Authorization"
+        ]
+    },
+    {
+        "q": "What is request timeout?",
+        "o": [
+            "Maximum wait for response",
+            "Encryption key duration",
+            "Cache expiration period",
+            "Token refresh interval"
+        ]
+    },
+    {
+        "q": "What does 406 status code mean?",
+        "o": [
+            "Not acceptable content type",
+            "Request successful today",
+            "Server error occurred now",
+            "Resource created recently"
+        ]
+    },
+    {
+        "q": "What is API monitoring?",
+        "o": [
+            "Tracking API performance",
+            "Creating API endpoints only",
+            "Deleting API resources now",
+            "Encrypting API responses"
+        ]
+    },
+    {
+        "q": "What is response time?",
+        "o": [
+            "Duration to get response",
+            "Size of response payload",
+            "Number of API endpoints",
+            "Count of active sessions"
+        ]
+    },
+    {
+        "q": "Which header adds security policy?",
+        "o": [
+            "Content-Security-Policy",
+            "Content-Type",
+            "Accept",
+            "Cookie"
+        ]
+    },
+    {
+        "q": "What is webhook?",
+        "o": [
+            "HTTP callback for events",
+            "API documentation format",
+            "Database backup method",
+            "Encryption algorithm type"
+        ]
+    },
+    {
+        "q": "What does 408 status code mean?",
+        "o": [
+            "Request timeout occurred",
+            "Resource created today",
+            "Request successful now",
+            "Server working properly"
+        ]
+    },
+    {
+        "q": "What is API versioning benefit?",
+        "o": [
+            "Avoid breaking changes",
+            "Speed up API response",
+            "Encrypt all data sent",
+            "Cache every request"
+        ]
+    },
+    {
+        "q": "What is request body format?",
+        "o": [
+            "Structure of sent data",
+            "URL of the API endpoint",
+            "Type of error returned",
+            "Name of the API method"
+        ]
+    },
+    {
+        "q": "Which header prevents XSS attacks?",
+        "o": [
+            "X-XSS-Protection",
+            "Content-Type",
+            "Accept",
+            "Cookie"
+        ]
+    },
+    {
+        "q": "What is API design first approach?",
+        "o": [
+            "Design schema before coding",
+            "Code first then document",
+            "Test before designing API",
+            "Deploy then design spec"
+        ]
+    },
+    {
+        "q": "What does 413 status code mean?",
+        "o": [
+            "Payload too large to process",
+            "Request successful today now",
+            "Resource not found anywhere",
+            "Server error occurred here"
+        ]
+    },
+    {
+        "q": "What is data type validation?",
+        "o": [
+            "Ensure correct data types",
+            "Encrypt data before send",
+            "Cache validated results",
+            "Log data type errors"
+        ]
+    },
+    {
+        "q": "What is API key rotation?",
+        "o": [
+            "Periodically changing keys",
+            "Encrypting key storage",
+            "Caching key lookups",
+            "Logging key usage data"
+        ]
+    },
+    {
+        "q": "Which header specifies language?",
+        "o": [
+            "Accept-Language",
+            "Content-Type",
+            "Authorization",
+            "Cache-Control"
+        ]
+    },
+    {
+        "q": "What is length validation?",
+        "o": [
+            "Check input string length",
+            "Encrypt long input data",
+            "Cache short responses",
+            "Log all input lengths"
+        ]
+    },
+    {
+        "q": "What is OAuth in API authentication?",
+        "o": [
+            "Open authorization protocol",
+            "Online authentication token",
+            "Object access handler type",
+            "Offline authorization tool"
+        ]
+    },
+    {
+        "q": "Which OAuth grant type is used for server-to-server communication?",
+        "o": [
+            "Client credentials grant",
+            "Authorization code flow",
+            "Implicit grant type flow",
+            "Password grant type now"
+        ]
+    },
+    {
+        "q": "What is JWT in API security?",
+        "o": [
+            "JSON Web Token format",
+            "Java Web Transfer type",
+            "Joint Web Technology",
+            "JavaScript Web Toolkit"
+        ]
+    },
+    {
+        "q": "What are the three parts of a JWT?",
+        "o": [
+            "Header, Payload, Signature",
+            "Token, Secret, Timestamp",
+            "User, Role, Permission data",
+            "Key, Value, Expiration time"
+        ]
+    },
+    {
+        "q": "What is API key secret exposure risk?",
+        "o": [
+            "Unauthorized API access allowed",
+            "Faster API response times now",
+            "Better caching performance",
+            "Improved logging details"
+        ]
+    },
+    {
+        "q": "What is refresh token used for?",
+        "o": [
+            "Obtain new access tokens",
+            "Encrypt API responses now",
+            "Cache authentication data",
+            "Log user session events"
+        ]
+    },
+    {
+        "q": "What is scope in OAuth?",
+        "o": [
+            "Level of access granted",
+            "Encryption key strength",
+            "Cache duration setting",
+            "Logging level detail"
+        ]
+    },
+    {
+        "q": "What is HMAC used for in APIs?",
+        "o": [
+            "Message authentication code",
+            "High memory access cache",
+            "HTTP method access control",
+            "Header modification action"
+        ]
+    },
+    {
+        "q": "What is API key storage best practice?",
+        "o": [
+            "Use environment variables",
+            "Hardcode in source code",
+            "Store in URL parameters",
+            "Save in browser storage"
+        ]
+    },
+    {
+        "q": "What is the purpose of access token?",
+        "o": [
+            "Grant temporary API access",
+            "Store permanent user data",
+            "Cache all API responses",
+            "Log every API request"
+        ]
+    },
+    {
+        "q": "What is token expiration benefit?",
+        "o": [
+            "Limit exposure if stolen",
+            "Reduce server load fast",
+            "Improve cache hit rates",
+            "Simplify logging setup"
+        ]
+    },
+    {
+        "q": "What is API request signing?",
+        "o": [
+            "Adding signature for integrity",
+            "Encrypting entire request now",
+            "Compressing request payload",
+            "Caching signed responses"
+        ]
+    },
+    {
+        "q": "What is SQL injection in APIs?",
+        "o": [
+            "Malicious SQL in user input",
+            "Secure query language use",
+            "Standard query injection",
+            "Server query inspection"
+        ]
+    },
+    {
+        "q": "How to prevent SQL injection?",
+        "o": [
+            "Use parameterized queries",
+            "Use string concatenation",
+            "Disable input validation",
+            "Allow all user inputs"
+        ]
+    },
+    {
+        "q": "What is XSS attack on APIs?",
+        "o": [
+            "Cross-site scripting attack",
+            "Extended script sharing",
+            "XML structure scanning",
+            "Xcode security standard"
+        ]
+    },
+    {
+        "q": "What is output encoding?",
+        "o": [
+            "Escape special characters",
+            "Encrypt output payload data",
+            "Compress response content",
+            "Cache encoded responses"
+        ]
+    },
+    {
+        "q": "What is CSRF attack?",
+        "o": [
+            "Cross-site request forgery",
+            "Client secure request form",
+            "Cache storage request file",
+            "Central server routing"
+        ]
+    },
+    {
+        "q": "How to prevent CSRF attacks?",
+        "o": [
+            "Use anti-CSRF tokens now",
+            "Disable all form inputs",
+            "Allow any origin calls",
+            "Remove session handling"
+        ]
+    },
+    {
+        "q": "What is API rate limiting purpose?",
+        "o": [
+            "Prevent abuse and DoS",
+            "Speed up response time",
+            "Improve data accuracy",
+            "Enable better caching"
+        ]
+    },
+    {
+        "q": "What is sliding window rate limiting?",
+        "o": [
+            "Rolling time window check",
+            "Fixed interval counting",
+            "Random request sampling",
+            "Sequential queue waiting"
+        ]
+    },
+    {
+        "q": "What is token bucket algorithm?",
+        "o": [
+            "Tokens consumed per request",
+            "Secret key storage method",
+            "Encryption bucket manager",
+            "Cache bucket allocation"
+        ]
+    },
+    {
+        "q": "What is leaky bucket algorithm?",
+        "o": [
+            "Fixed rate request output",
+            "Variable token addition",
+            "Random delay injection",
+            "Priority queue sorting"
+        ]
+    },
+    {
+        "q": "What header shows rate limit?",
+        "o": [
+            "X-RateLimit-Remaining",
+            "Content-Type header",
+            "Accept-Language value",
+            "Authorization bearer"
+        ]
+    },
+    {
+        "q": "What is IP-based rate limiting?",
+        "o": [
+            "Limit requests per IP",
+            "Limit by user session",
+            "Limit by API key only",
+            "Limit by token type"
+        ]
+    },
+    {
+        "q": "What is user-based rate limiting?",
+        "o": [
+            "Limit per authenticated user",
+            "Limit by IP address only",
+            "Limit by server region",
+            "Limit by request size"
+        ]
+    },
+    {
+        "q": "What is input length validation?",
+        "o": [
+            "Check min and max length",
+            "Allow unlimited input size",
+            "Encrypt long input data",
+            "Compress input payload"
+        ]
+    },
+    {
+        "q": "What is regex validation?",
+        "o": [
+            "Pattern matching validation",
+            "Random expression check",
+            "Recursive encoding type",
+            "Request execution guard"
+        ]
+    },
+    {
+        "q": "What is business logic validation?",
+        "o": [
+            "Validate against rules",
+            "Check syntax format only",
+            "Verify data types only",
+            "Test length limits only"
+        ]
+    },
+    {
+        "q": "What is range validation?",
+        "o": [
+            "Check value within range",
+            "Encrypt numeric values",
+            "Cache range queries now",
+            "Log range violations"
+        ]
+    },
+    {
+        "q": "What is enum validation?",
+        "o": [
+            "Value from allowed list",
+            "Any value is accepted",
+            "Encrypted value check",
+            "Cached value lookup"
+        ]
+    },
+    {
+        "q": "What is format validation?",
+        "o": [
+            "Check expected format",
+            "Encrypt format string",
+            "Cache format patterns",
+            "Log format errors"
+        ]
+    },
+    {
+        "q": "What is email format validation example?",
+        "o": [
+            "Check for at sign domain",
+            "Accept any text input",
+            "Encrypt email before save",
+            "Cache email addresses"
+        ]
+    },
+    {
+        "q": "What is date format validation?",
+        "o": [
+            "Check valid date pattern",
+            "Accept any date string",
+            "Encrypt date values now",
+            "Cache date formatting"
+        ]
+    },
+    {
+        "q": "What is required field validation?",
+        "o": [
+            "Ensure field is present",
+            "Make all fields optional",
+            "Encrypt required fields",
+            "Cache required values"
+        ]
+    },
+    {
+        "q": "What is error message security?",
+        "o": [
+            "Hide sensitive details",
+            "Show full stack traces",
+            "Display database errors",
+            "Reveal system paths"
+        ]
+    },
+    {
+        "q": "What information should not be in error messages?",
+        "o": [
+            "Stack traces and paths",
+            "Generic error codes only",
+            "User-friendly messages",
+            "Request identifier info"
+        ]
+    },
+    {
+        "q": "What is error code standardization?",
+        "o": [
+            "Consistent error formats",
+            "Random error generation",
+            "Verbose error details",
+            "Hidden error handling"
+        ]
+    },
+    {
+        "q": "What is secure error logging?",
+        "o": [
+            "Log details server-side",
+            "Expose logs to clients",
+            "Disable all logging now",
+            "Log to public endpoint"
+        ]
+    },
+    {
+        "q": "What is HTTPS certificate validation?",
+        "o": [
+            "Verify server identity",
+            "Skip certificate checks",
+            "Accept any certificate",
+            "Ignore expiry dates"
+        ]
+    },
+    {
+        "q": "What is certificate pinning?",
+        "o": [
+            "Trust specific certificate",
+            "Accept any certificate",
+            "Disable SSL validation",
+            "Skip hostname check"
+        ]
+    },
+    {
+        "q": "What is TLS version security?",
+        "o": [
+            "Use TLS 1.2 or higher",
+            "Use SSL 2.0 protocol",
+            "Use SSL 3.0 version",
+            "Use TLS 1.0 always"
+        ]
+    },
+    {
+        "q": "What is cipher suite selection?",
+        "o": [
+            "Choose strong ciphers only",
+            "Use any available cipher",
+            "Prefer weak encryption",
+            "Disable cipher checks"
+        ]
+    },
+    {
+        "q": "What is API versioning strategy benefit?",
+        "o": [
+            "Smooth API evolution path",
+            "Faster response times now",
+            "Better caching results",
+            "Improved error handling"
+        ]
+    },
+    {
+        "q": "What is URL path versioning?",
+        "o": [
+            "Version in URL like v1",
+            "Version in header only",
+            "Version in query string",
+            "Version in request body"
+        ]
+    },
+    {
+        "q": "What is header-based versioning?",
+        "o": [
+            "Version in custom header",
+            "Version in URL path now",
+            "Version in query param",
+            "Version in body field"
+        ]
+    },
+    {
+        "q": "What is query parameter versioning?",
+        "o": [
+            "Version as query param",
+            "Version in URL path",
+            "Version in headers",
+            "Version in cookies"
+        ]
+    },
+    {
+        "q": "What is content negotiation versioning?",
+        "o": [
+            "Version in Accept header",
+            "Version in URL path only",
+            "Version in query string",
+            "Version in request body"
+        ]
+    },
+    {
+        "q": "What is API deprecation policy?",
+        "o": [
+            "Plan for retiring old API",
+            "Never remove old versions",
+            "Delete APIs immediately",
+            "Keep all versions always"
+        ]
+    },
+    {
+        "q": "What is CORS preflight request?",
+        "o": [
+            "OPTIONS request before",
+            "GET request first sent",
+            "POST request initially",
+            "PUT request before"
+        ]
+    },
+    {
+        "q": "What header allows CORS origin?",
+        "o": [
+            "Access-Control-Allow-Origin",
+            "Content-Type header now",
+            "Accept-Language header",
+            "Authorization header"
+        ]
+    },
+    {
+        "q": "What is CORS credential handling?",
+        "o": [
+            "Allow cookies cross-origin",
+            "Block all cookie access",
+            "Disable authentication",
+            "Remove session headers"
+        ]
+    },
+    {
+        "q": "What is wildcard CORS risk?",
+        "o": [
+            "Allows any origin access",
+            "Blocks all origins now",
+            "Improves security posture",
+            "Disables cross-origin"
+        ]
+    },
+    {
+        "q": "What is API security audit?",
+        "o": [
+            "Review API for vulnerabilities",
+            "Speed up API responses now",
+            "Cache all API requests",
+            "Log API access events"
+        ]
+    },
+    {
+        "q": "What is penetration testing for APIs?",
+        "o": [
+            "Simulated attack testing",
+            "Performance load testing",
+            "Unit testing API code",
+            "Integration testing APIs"
+        ]
+    },
+    {
+        "q": "What is OWASP API Security Top 10?",
+        "o": [
+            "List of API vulnerabilities",
+            "API performance metrics",
+            "API design guidelines set",
+            "API testing framework"
+        ]
+    },
+    {
+        "q": "What is broken object level auth?",
+        "o": [
+            "Access other users objects",
+            "Invalid password format",
+            "Expired token session",
+            "Missing encryption key"
+        ]
+    },
+    {
+        "q": "What is broken function level auth?",
+        "o": [
+            "Access unauthorized functions",
+            "Invalid function syntax",
+            "Slow function execution",
+            "Missing function cache"
+        ]
+    },
+    {
+        "q": "What is excessive data exposure?",
+        "o": [
+            "Return more data than needed",
+            "Return less data required",
+            "Encrypt all data fields",
+            "Cache response payload"
+        ]
+    },
+    {
+        "q": "What is mass assignment vulnerability?",
+        "o": [
+            "Bind user input to model",
+            "Reject all user input",
+            "Encrypt input values",
+            "Cache input bindings"
+        ]
+    },
+    {
+        "q": "What is security misconfiguration?",
+        "o": [
+            "Improper security setup",
+            "Perfect security config",
+            "Encrypted configuration",
+            "Cached configuration"
+        ]
+    },
+    {
+        "q": "What is injection flaw?",
+        "o": [
+            "Untrusted data in command",
+            "Encrypted data transfer",
+            "Cached query results",
+            "Logged data access"
+        ]
+    },
+    {
+        "q": "What is improper asset management?",
+        "o": [
+            "Unknown API endpoints exist",
+            "All endpoints documented",
+            "Encrypted endpoint data",
+            "Cached endpoint list"
+        ]
+    },
+    {
+        "q": "What is API abuse detection?",
+        "o": [
+            "Identify abnormal usage",
+            "Allow unlimited access",
+            "Disable rate limiting",
+            "Remove authentication"
+        ]
+    },
+    {
+        "q": "What is bot detection in APIs?",
+        "o": [
+            "Identify automated requests",
+            "Allow all bot traffic",
+            "Disable bot protection",
+            "Cache bot responses"
+        ]
+    },
+    {
+        "q": "What is API monitoring purpose?",
+        "o": [
+            "Track health and security",
+            "Disable all logging now",
+            "Remove error handling",
+            "Skip security checks"
+        ]
+    },
+    {
+        "q": "What is API logging best practice?",
+        "o": [
+            "Log without sensitive data",
+            "Log all passwords plain",
+            "Log credit card numbers",
+            "Log encryption keys now"
+        ]
+    },
+    {
+        "q": "What is structured logging?",
+        "o": [
+            "Log in parseable format",
+            "Log random text strings",
+            "Log unformatted output",
+            "Log encrypted messages"
+        ]
+    },
+    {
+        "q": "What is correlation ID?",
+        "o": [
+            "Track request across services",
+            "Encrypt request payload data",
+            "Cache correlation data now",
+            "Delete request history log"
+        ]
+    },
+    {
+        "q": "What is API gateway benefit?",
+        "o": [
+            "Centralized security point",
+            "Distributed security only",
+            "No authentication support",
+            "Disabled rate limiting"
+        ]
+    },
+    {
+        "q": "What is API gateway rate limiting?",
+        "o": [
+            "Apply limits at gateway",
+            "Remove all rate limits",
+            "Disable request counting",
+            "Allow unlimited traffic"
+        ]
+    },
+    {
+        "q": "What is API gateway authentication?",
+        "o": [
+            "Verify identity at entry",
+            "Skip all authentication",
+            "Delay authentication logic",
+            "Remove token validation"
+        ]
+    },
+    {
+        "q": "What is request transformation?",
+        "o": [
+            "Modify request at gateway",
+            "Reject all transformations",
+            "Cache transformed data",
+            "Log transformation errors"
+        ]
+    },
+    {
+        "q": "What is response transformation?",
+        "o": [
+            "Modify response at gateway",
+            "Return raw responses only",
+            "Encrypt all responses now",
+            "Cache response forever"
+        ]
+    },
+    {
+        "q": "What is API caching security?",
+        "o": [
+            "Avoid caching sensitive data",
+            "Cache all responses always",
+            "Cache passwords plaintext",
+            "Cache tokens indefinitely"
+        ]
+    },
+    {
+        "q": "What is cache invalidation?",
+        "o": [
+            "Remove stale cached data",
+            "Keep cached data forever",
+            "Never update cache data",
+            "Ignore cache expiration"
+        ]
+    },
+    {
+        "q": "What is private cache directive?",
+        "o": [
+            "Cache for single user",
+            "Cache for all users now",
+            "Share cache publicly",
+            "Disable caching fully"
+        ]
+    },
+    {
+        "q": "What is no-store directive?",
+        "o": [
+            "Do not cache response",
+            "Cache response forever",
+            "Store in public cache",
+            "Share across clients"
+        ]
+    },
+    {
+        "q": "What is Vary header?",
+        "o": [
+            "Cache based on headers",
+            "Ignore header variation",
+            "Cache all same way now",
+            "Disable header checks"
+        ]
+    },
+    {
+        "q": "What is API timeout configuration?",
+        "o": [
+            "Set maximum wait time",
+            "Wait indefinitely always",
+            "Disable timeout checks",
+            "Remove timeout limits"
+        ]
+    },
+    {
+        "q": "What is circuit breaker pattern?",
+        "o": [
+            "Stop calls when failing",
+            "Continue despite errors",
+            "Ignore failure counts",
+            "Allow unlimited retries"
+        ]
+    },
+    {
+        "q": "What is retry with exponential backoff?",
+        "o": [
+            "Increase delay each retry",
+            "Retry immediately always",
+            "Fixed delay every retry",
+            "No delay between retries"
+        ]
+    },
+    {
+        "q": "What is API health check endpoint?",
+        "o": [
+            "Verify service is running",
+            "Delete service instance",
+            "Restart service always",
+            "Stop service gracefully"
+        ]
+    },
+    {
+        "q": "What is readiness probe?",
+        "o": [
+            "Check if ready for traffic",
+            "Check if process running",
+            "Check memory usage only",
+            "Check disk space only"
+        ]
+    },
+    {
+        "q": "What is liveness probe?",
+        "o": [
+            "Check if process alive",
+            "Check traffic readiness",
+            "Check database status",
+            "Check cache health"
+        ]
+    },
+    {
+        "q": "What is API documentation security?",
+        "o": [
+            "Restrict access to docs",
+            "Make docs fully public",
+            "Include secrets in docs",
+            "Show internal endpoints"
+        ]
+    },
+    {
+        "q": "What is OpenAPI security definition?",
+        "o": [
+            "Describe auth in spec",
+            "Remove auth from spec",
+            "Hide security details",
+            "Ignore authentication"
+        ]
+    },
+    {
+        "q": "What is API contract testing?",
+        "o": [
+            "Verify API meets spec",
+            "Test random endpoints",
+            "Skip specification check",
+            "Ignore contract changes"
+        ]
+    },
+    {
+        "q": "What is schema validation middleware?",
+        "o": [
+            "Validate request schema",
+            "Accept any JSON format",
+            "Skip schema validation",
+            "Ignore malformed data"
+        ]
+    },
+    {
+        "q": "What is content type validation?",
+        "o": [
+            "Check expected media type",
+            "Accept any content type",
+            "Skip type checking now",
+            "Ignore content headers"
+        ]
+    },
+    {
+        "q": "What is request size limit?",
+        "o": [
+            "Limit body size maximum",
+            "Accept unlimited size",
+            "Remove size restrictions",
+            "Ignore payload limits"
+        ]
+    },
+    {
+        "q": "What is OAuth 2.0 authorization code flow?",
+        "o": [
+            "User redirected to auth server",
+            "Direct password submission only",
+            "Token stored in URL fragment",
+            "No user interaction needed"
+        ]
+    },
+    {
+        "q": "What is PKCE in OAuth?",
+        "o": [
+            "Proof Key for Code Exchange",
+            "Private Key Code Encryption",
+            "Public Key Certificate Entry",
+            "Protected Key Client Entry"
+        ]
+    },
+    {
+        "q": "Why is PKCE important for mobile apps?",
+        "o": [
+            "Prevents auth code interception",
+            "Improves app performance speed",
+            "Enables faster token refresh",
+            "Reduces network bandwidth use"
+        ]
+    },
+    {
+        "q": "What is code challenge in PKCE?",
+        "o": [
+            "Hashed code verifier value",
+            "Encrypted access token data",
+            "Compressed refresh token",
+            "Encoded client secret key"
+        ]
+    },
+    {
+        "q": "What is implicit grant flow limitation?",
+        "o": [
+            "Token exposed in URL fragment",
+            "Requires server-side storage",
+            "Too many redirect hops used",
+            "Only works with cookies"
+        ]
+    },
+    {
+        "q": "Why avoid implicit grant flow?",
+        "o": [
+            "Tokens vulnerable in browser",
+            "Requires too many requests",
+            "Uses excessive server memory",
+            "Only works on mobile apps"
+        ]
+    },
+    {
+        "q": "What is resource owner password grant risk?",
+        "o": [
+            "Credentials shared with app",
+            "Requires excessive bandwidth",
+            "Uses too much server memory",
+            "Only works on desktop apps"
+        ]
+    },
+    {
+        "q": "When is client credentials grant appropriate?",
+        "o": [
+            "Machine to machine without user",
+            "Public mobile app with users",
+            "Web browser SPA application",
+            "Desktop app with user login"
+        ]
+    },
+    {
+        "q": "What is JWT header typ claim?",
+        "o": [
+            "Specifies token type as JWT",
+            "Contains encryption algorithm",
+            "Stores user identifier data",
+            "Defines token expiration time"
+        ]
+    },
+    {
+        "q": "What is JWT header alg claim?",
+        "o": [
+            "Signing algorithm used here",
+            "User authentication method",
+            "Token refresh interval set",
+            "Payload encoding format type"
+        ]
+    },
+    {
+        "q": "What is JWT iss claim?",
+        "o": [
+            "Token issuer identifier name",
+            "Token intended audience value",
+            "Token subject user identity",
+            "Token expiration timestamp"
+        ]
+    },
+    {
+        "q": "What is JWT sub claim?",
+        "o": [
+            "Subject of the token data",
+            "Token issuer server name",
+            "Token audience application",
+            "Token expiration time value"
+        ]
+    },
+    {
+        "q": "What is JWT aud claim?",
+        "o": [
+            "Intended audience for token",
+            "Token issuer organization",
+            "Token subject user entity",
+            "Token issued at timestamp"
+        ]
+    },
+    {
+        "q": "What is JWT exp claim?",
+        "o": [
+            "Expiration time of token",
+            "Token issuer organization",
+            "Token subject identity data",
+            "Token audience application"
+        ]
+    },
+    {
+        "q": "What is JWT iat claim?",
+        "o": [
+            "Issued at timestamp value",
+            "Token expiration time set",
+            "Intended audience for token",
+            "Token subject user entity"
+        ]
+    },
+    {
+        "q": "What is JWT nbf claim?",
+        "o": [
+            "Not before timestamp check",
+            "Token expiration time set",
+            "Token issuer organization",
+            "Token audience application"
+        ]
+    },
+    {
+        "q": "What is JWT jti claim?",
+        "o": [
+            "Unique token identifier value",
+            "Token expiration timestamp",
+            "Token issuer organization",
+            "Token audience application"
+        ]
+    },
+    {
+        "q": "What is none algorithm attack on JWT?",
+        "o": [
+            "Bypass signature verification",
+            "Improve token performance",
+            "Enhance token encryption",
+            "Simplify token generation"
+        ]
+    },
+    {
+        "q": "How to prevent none algorithm attack?",
+        "o": [
+            "Whitelist allowed algorithms",
+            "Accept any algorithm value",
+            "Skip algorithm validation",
+            "Use only client-side check"
+        ]
+    },
+    {
+        "q": "What is algorithm confusion attack?",
+        "o": [
+            "Tricking signature validation",
+            "Speeding up verification",
+            "Compressing token payload",
+            "Caching token signatures"
+        ]
+    },
+    {
+        "q": "What is symmetric JWT signing?",
+        "o": [
+            "Same key for sign and verify",
+            "Different keys for operations",
+            "No key required at all used",
+            "Random key each time used"
+        ]
+    },
+    {
+        "q": "What is asymmetric JWT signing?",
+        "o": [
+            "Private sign public verify",
+            "Same key for both tasks",
+            "No key needed at all now",
+            "Random key each call used"
+        ]
+    },
+    {
+        "q": "What is HS256 algorithm?",
+        "o": [
+            "HMAC with SHA-256 hash used",
+            "RSA with 256 bit key size",
+            "Elliptic curve 256 signing",
+            "No encryption algorithm used"
+        ]
+    },
+    {
+        "q": "What is RS256 algorithm?",
+        "o": [
+            "RSA signature with SHA-256",
+            "HMAC with 256 bit secret",
+            "Symmetric key encryption",
+            "No signature algorithm"
+        ]
+    },
+    {
+        "q": "What is ES256 algorithm?",
+        "o": [
+            "ECDSA with P-256 and SHA-256",
+            "RSA with 256 bit key size",
+            "HMAC symmetric algorithm",
+            "No cryptographic signing"
+        ]
+    },
+    {
+        "q": "What is JWT secret key strength requirement?",
+        "o": [
+            "Minimum 256 bits entropy",
+            "Any password is acceptable",
+            "Short key is sufficient now",
+            "Key length does not matter"
+        ]
+    },
+    {
+        "q": "What is JWT token storage in browser?",
+        "o": [
+            "HttpOnly secure cookie best",
+            "Local storage with no flag",
+            "Session storage accessible",
+            "URL query parameter saved"
+        ]
+    },
+    {
+        "q": "Why avoid localStorage for JWT?",
+        "o": [
+            "Accessible via JavaScript XSS",
+            "Data persists too briefly",
+            "Storage limit is too small",
+            "Cannot store string values"
+        ]
+    },
+    {
+        "q": "What is JWT refresh token rotation?",
+        "o": [
+            "Issue new refresh each use",
+            "Reuse same token always now",
+            "Never expire refresh tokens",
+            "Store refresh in localStorage"
+        ]
+    },
+    {
+        "q": "What is JWT token revocation challenge?",
+        "o": [
+            "Stateless nature prevents it",
+            "Easy to implement always now",
+            "Built into JWT standard spec",
+            "No challenge exists at all"
+        ]
+    },
+    {
+        "q": "How to implement JWT revocation?",
+        "o": [
+            "Maintain token blocklist store",
+            "Extend token expiration time",
+            "Remove signature verification",
+            "Use longer token secrets"
+        ]
+    },
+    {
+        "q": "What is short-lived access token benefit?",
+        "o": [
+            "Reduces attack window period",
+            "Improves user experience now",
+            "Reduces server-side storage",
+            "Eliminates need for refresh"
+        ]
+    },
+    {
+        "q": "What is Strict-Transport-Security header?",
+        "o": [
+            "Force HTTPS connections only",
+            "Enable HTTP fallback option",
+            "Disable certificate checking",
+            "Allow mixed content pages"
+        ]
+    },
+    {
+        "q": "What is X-Content-Type-Options header?",
+        "o": [
+            "Prevent MIME type sniffing",
+            "Enable content type guessing",
+            "Allow any content type now",
+            "Disable content validation"
+        ]
+    },
+    {
+        "q": "What is nosniff directive?",
+        "o": [
+            "Block MIME type sniffing",
+            "Enable type detection now",
+            "Allow content guessing mode",
+            "Disable security headers"
+        ]
+    },
+    {
+        "q": "What is X-Frame-Options DENY?",
+        "o": [
+            "Prevent page in any frame",
+            "Allow framing from anywhere",
+            "Enable iframe embedding now",
+            "Skip frame check completely"
+        ]
+    },
+    {
+        "q": "What is X-Frame-Options SAMEORIGIN?",
+        "o": [
+            "Allow frame from same origin",
+            "Block all frame embedding",
+            "Allow frame from anywhere",
+            "Disable frame validation"
+        ]
+    },
+    {
+        "q": "What is Content-Security-Policy purpose?",
+        "o": [
+            "Control resource loading policy",
+            "Disable all security features",
+            "Allow any script execution",
+            "Skip resource validation now"
+        ]
+    },
+    {
+        "q": "What is CSP script-src directive?",
+        "o": [
+            "Valid sources for scripts",
+            "Block all script execution",
+            "Allow inline scripts always",
+            "Disable script validation"
+        ]
+    },
+    {
+        "q": "What is CSP default-src directive?",
+        "o": [
+            "Fallback for other directives",
+            "Override all other settings",
+            "Disable all CSP features",
+            "Allow any resource source"
+        ]
+    },
+    {
+        "q": "What is nonce in CSP?",
+        "o": [
+            "Unique token for inline scripts",
+            "Encryption key for content",
+            "Cache identifier for assets",
+            "Session token for requests"
+        ]
+    },
+    {
+        "q": "What is CSP report-uri directive?",
+        "o": [
+            "Where to send violation reports",
+            "Block all CSP violations now",
+            "Disable reporting features",
+            "Allow any policy violation"
+        ]
+    },
+    {
+        "q": "What is API input sanitization vs validation?",
+        "o": [
+            "Clean vs check input data",
+            "Encrypt vs compress input",
+            "Cache vs log input data",
+            "Store vs transmit input"
+        ]
+    },
+    {
+        "q": "What is allowlist validation?",
+        "o": [
+            "Accept only known good inputs",
+            "Block only known bad inputs",
+            "Allow any input data freely",
+            "Skip all validation checks"
+        ]
+    },
+    {
+        "q": "What is blocklist validation limitation?",
+        "o": [
+            "Cannot anticipate all attacks",
+            "Blocks legitimate user input",
+            "Uses excessive server memory",
+            "Requires constant updates now"
+        ]
+    },
+    {
+        "q": "What is type coercion vulnerability?",
+        "o": [
+            "Unexpected type conversion issue",
+            "Correct type enforcement method",
+            "Proper input validation action",
+            "Normal type checking process"
+        ]
+    },
+    {
+        "q": "What is NoSQL injection?",
+        "o": [
+            "Inject malicious NoSQL queries",
+            "Secure NoSQL query execution",
+            "Normal database query method",
+            "Standard query optimization"
+        ]
+    },
+    {
+        "q": "How to prevent NoSQL injection?",
+        "o": [
+            "Parameterize queries and validate",
+            "Concatenate user input directly",
+            "Skip input validation entirely",
+            "Trust all client-side input"
+        ]
+    },
+    {
+        "q": "What is command injection?",
+        "o": [
+            "Execute OS commands via input",
+            "Normal command execution mode",
+            "Secure shell operation method",
+            "Standard process invocation"
+        ]
+    },
+    {
+        "q": "How to prevent command injection?",
+        "o": [
+            "Avoid shell commands with input",
+            "Pass user input to shell raw",
+            "Skip input sanitization step",
+            "Allow any command characters"
+        ]
+    },
+    {
+        "q": "What is path traversal attack?",
+        "o": [
+            "Access files outside web root",
+            "Normal file access operation",
+            "Secure file path handling",
+            "Standard directory browsing"
+        ]
+    },
+    {
+        "q": "How to prevent path traversal?",
+        "o": [
+            "Validate and canonicalize paths",
+            "Accept any file path value",
+            "Skip path validation checks",
+            "Trust client-provided paths"
+        ]
+    },
+    {
+        "q": "What is SSRF attack?",
+        "o": [
+            "Server makes unintended requests",
+            "Client makes normal requests",
+            "Standard API request pattern",
+            "Secure forwarding of requests"
+        ]
+    },
+    {
+        "q": "How to prevent SSRF?",
+        "o": [
+            "Validate and whitelist URLs",
+            "Allow any URL in requests",
+            "Skip URL validation checks",
+            "Trust client-provided URLs"
+        ]
+    },
+    {
+        "q": "What is XML External Entity attack?",
+        "o": [
+            "Exploit XML parser entities",
+            "Normal XML parsing behavior",
+            "Secure XML processing mode",
+            "Standard entity resolution"
+        ]
+    },
+    {
+        "q": "How to prevent XXE attacks?",
+        "o": [
+            "Disable external entity processing",
+            "Enable all XML features fully",
+            "Allow any DTD processing now",
+            "Trust all XML input content"
+        ]
+    },
+    {
+        "q": "What is deserialization vulnerability?",
+        "o": [
+            "Malicious object reconstruction",
+            "Normal deserialization process",
+            "Secure object creation method",
+            "Standard data transformation"
+        ]
+    },
+    {
+        "q": "How to prevent insecure deserialization?",
+        "o": [
+            "Avoid untrusted input deser",
+            "Deserialize any data format",
+            "Skip integrity validation now",
+            "Trust all serialized input"
+        ]
+    },
+    {
+        "q": "What is prototype pollution?",
+        "o": [
+            "Modify object prototype chain",
+            "Normal prototype inheritance",
+            "Secure object creation mode",
+            "Standard JavaScript pattern"
+        ]
+    },
+    {
+        "q": "What is HTTP parameter pollution?",
+        "o": [
+            "Multiple params same name used",
+            "Normal parameter handling only",
+            "Secure parameter processing",
+            "Standard query string format"
+        ]
+    },
+    {
+        "q": "What is API key scope restriction?",
+        "o": [
+            "Limit actions per key issued",
+            "Allow all actions for keys",
+            "No restrictions on API keys",
+            "Full access for every key"
+        ]
+    },
+    {
+        "q": "What is API key IP restriction?",
+        "o": [
+            "Limit key to specific IPs",
+            "Allow key from any IP now",
+            "No IP checking for keys",
+            "Trust any source IP fully"
+        ]
+    },
+    {
+        "q": "What is API key referrer restriction?",
+        "o": [
+            "Limit by HTTP referrer header",
+            "Allow from any referrer now",
+            "No referrer checking needed",
+            "Trust all referrer values"
+        ]
+    },
+    {
+        "q": "What is mutual TLS authentication?",
+        "o": [
+            "Both client and server verify",
+            "Only server authenticates now",
+            "Only client authenticates here",
+            "No authentication required"
+        ]
+    },
+    {
+        "q": "What is client certificate authentication?",
+        "o": [
+            "Client presents X.509 cert",
+            "Client sends password only",
+            "Client uses API key method",
+            "Client sends bearer token"
+        ]
+    },
+    {
+        "q": "What is API request replay attack?",
+        "o": [
+            "Resend captured valid request",
+            "Normal request retry pattern",
+            "Secure request forwarding",
+            "Standard request caching"
+        ]
+    },
+    {
+        "q": "How to prevent replay attacks?",
+        "o": [
+            "Use nonces and timestamps now",
+            "Accept any request duplicate",
+            "Skip request validation step",
+            "Trust all incoming requests"
+        ]
+    },
+    {
+        "q": "What is timestamp validation?",
+        "o": [
+            "Reject old request timestamps",
+            "Accept any timestamp value",
+            "Skip time validation check",
+            "Trust client-side clocks"
+        ]
+    },
+    {
+        "q": "What is request signing with timestamp?",
+        "o": [
+            "Include time in signature hash",
+            "Sign without time component",
+            "Skip signature verification",
+            "Use static signatures always"
+        ]
+    },
+    {
+        "q": "What is API enumeration attack?",
+        "o": [
+            "Discover valid IDs or values",
+            "Normal ID lookup operation",
+            "Secure identifier handling",
+            "Standard resource retrieval"
+        ]
+    },
+    {
+        "q": "How to prevent ID enumeration?",
+        "o": [
+            "Use unpredictable identifiers",
+            "Use sequential integer IDs",
+            "Expose database primary keys",
+            "Return detailed error info"
+        ]
+    },
+    {
+        "q": "What is BOLA vulnerability?",
+        "o": [
+            "Broken object level authorization",
+            "Balanced object load allocation",
+            "Basic object layer access mode",
+            "Best object level approach"
+        ]
+    },
+    {
+        "q": "How to prevent BOLA?",
+        "o": [
+            "Check user owns resource first",
+            "Trust client-provided user ID",
+            "Skip ownership verification now",
+            "Allow access to any object"
+        ]
+    },
+    {
+        "q": "What is function level authorization?",
+        "o": [
+            "Check permission for each action",
+            "Allow any function for users",
+            "Skip authorization checks now",
+            "Trust client-side permissions"
+        ]
+    },
+    {
+        "q": "What is horizontal privilege escalation?",
+        "o": [
+            "Access other users same level",
+            "Gain admin from normal user",
+            "Normal access pattern usage",
+            "Secure authorization check"
+        ]
+    },
+    {
+        "q": "What is vertical privilege escalation?",
+        "o": [
+            "Gain higher privilege level",
+            "Access same level accounts",
+            "Normal authorization path",
+            "Secure privilege handling"
+        ]
+    },
+    {
+        "q": "What is API data minimization?",
+        "o": [
+            "Return only needed data fields",
+            "Return all available data now",
+            "Cache complete responses always",
+            "Log full request details"
+        ]
+    },
+    {
+        "q": "What is response filtering?",
+        "o": [
+            "Remove sensitive fields from output",
+            "Include all database columns now",
+            "Cache unfiltered responses here",
+            "Log complete response data"
+        ]
+    },
+    {
+        "q": "What is field-level encryption?",
+        "o": [
+            "Encrypt specific data fields",
+            "Encrypt entire database only",
+            "No encryption applied at all",
+            "Encrypt network traffic only"
+        ]
+    },
+    {
+        "q": "What is PII in API context?",
+        "o": [
+            "Personally identifiable information",
+            "Private internal interface type",
+            "Protected input identifier set",
+            "Public integration interface"
+        ]
+    },
+    {
+        "q": "How to handle PII in APIs?",
+        "o": [
+            "Encrypt, mask, or minimize data",
+            "Return raw PII in responses",
+            "Log all PII for debugging",
+            "Store PII in plain text form"
+        ]
+    },
+    {
+        "q": "What is data masking?",
+        "o": [
+            "Hide parts of sensitive data",
+            "Encrypt entire data payload",
+            "Delete all sensitive values",
+            "Compress data for storage"
+        ]
+    },
+    {
+        "q": "What is tokenization?",
+        "o": [
+            "Replace sensitive with tokens",
+            "Encrypt sensitive data fully",
+            "Delete sensitive information",
+            "Compress sensitive payload"
+        ]
+    },
+    {
+        "q": "What is API data retention policy?",
+        "o": [
+            "How long to keep data stored",
+            "How fast to process requests",
+            "How many requests allowed now",
+            "How to encrypt data at rest"
+        ]
+    },
+    {
+        "q": "What is right to be forgotten in APIs?",
+        "o": [
+            "Delete user data on request",
+            "Keep user data indefinitely",
+            "Share user data with third parties",
+            "Archive user data permanently"
+        ]
+    },
+    {
+        "q": "What is audit logging?",
+        "o": [
+            "Record security-relevant events",
+            "Log only error conditions now",
+            "Skip logging for performance",
+            "Log to client-side storage"
+        ]
+    },
+    {
+        "q": "What should audit logs contain?",
+        "o": [
+            "Who what when where outcome",
+            "Only error messages logged",
+            "Just timestamp information",
+            "Raw request payload data"
+        ]
+    },
+    {
+        "q": "What is log injection attack?",
+        "o": [
+            "Insert malicious data in logs",
+            "Normal logging operation mode",
+            "Secure log writing process",
+            "Standard log rotation task"
+        ]
+    },
+    {
+        "q": "How to prevent log injection?",
+        "o": [
+            "Sanitize data before logging",
+            "Log raw user input directly",
+            "Skip log sanitization check",
+            "Trust all input for logs"
+        ]
+    },
+    {
+        "q": "What is security event monitoring?",
+        "o": [
+            "Detect suspicious activities now",
+            "Disable security alerting mode",
+            "Ignore anomalous behavior here",
+            "Skip event correlation task"
+        ]
+    },
+    {
+        "q": "What is API threat detection?",
+        "o": [
+            "Identify potential attacks now",
+            "Ignore suspicious patterns here",
+            "Disable security monitoring mode",
+            "Skip anomaly detection task"
+        ]
+    },
+    {
+        "q": "What is OAuth token introspection?",
+        "o": [
+            "Validate token with auth server",
+            "Skip token validation entirely",
+            "Cache tokens indefinitely always",
+            "Trust all tokens without check"
+        ]
+    },
+    {
+        "q": "What is token introspection endpoint?",
+        "o": [
+            "Resource server checks token",
+            "Client generates new tokens",
+            "User resets authentication",
+            "Admin manages permissions"
+        ]
+    },
+    {
+        "q": "What is opaque token vs JWT?",
+        "o": [
+            "Reference vs self-contained",
+            "Encrypted vs plain text data",
+            "Short vs long token length",
+            "Fast vs slow verification"
+        ]
+    },
+    {
+        "q": "When to use opaque tokens?",
+        "o": [
+            "Need immediate revocation",
+            "Stateless verification required",
+            "Minimal server resources used",
+            "No database access allowed"
+        ]
+    },
+    {
+        "q": "What is token binding?",
+        "o": [
+            "Bind token to client context",
+            "Allow token from any client",
+            "Skip client verification step",
+            "Trust any token presenter"
+        ]
+    },
+    {
+        "q": "What is DPoP in OAuth?",
+        "o": [
+            "Demonstrating Proof of Possession",
+            "Direct Protocol of Protection",
+            "Delegated Proof of Permission",
+            "Dynamic Protocol of Presence"
+        ]
+    },
+    {
+        "q": "How does DPoP prevent token theft?",
+        "o": [
+            "Requires proof of key ownership",
+            "Encrypts token with user data",
+            "Caches token securely always",
+            "Logs all token usage events"
+        ]
+    },
+    {
+        "q": "What is sender-constrained access token?",
+        "o": [
+            "Token tied to specific sender",
+            "Token usable by any client",
+            "Token without restrictions set",
+            "Token with no binding rules"
+        ]
+    },
+    {
+        "q": "What is PAR in OAuth?",
+        "o": [
+            "Pushed Authorization Request",
+            "Protected Access Resource type",
+            "Public Authorization Response",
+            "Private Access Registration"
+        ]
+    },
+    {
+        "q": "What is PAR benefit?",
+        "o": [
+            "Secure param transmission",
+            "Faster token generation now",
+            "Simpler client configuration",
+            "Reduced server resources used"
+        ]
+    },
+    {
+        "q": "What is RAR in OAuth 2.1?",
+        "o": [
+            "Rich Authorization Requests",
+            "Remote Access Registration",
+            "Rapid Authorization Response",
+            "Resource Access Restriction"
+        ]
+    },
+    {
+        "q": "What is RAR purpose?",
+        "o": [
+            "Fine-grained authorization data",
+            "Simple scope string format",
+            "Basic permission checking only",
+            "Minimal authorization rules"
+        ]
+    },
+    {
+        "q": "What is API gateway security filtering?",
+        "o": [
+            "Block malicious traffic early",
+            "Allow all traffic through",
+            "Skip security validation now",
+            "Trust all incoming requests"
+        ]
+    },
+    {
+        "q": "What is WAF integration with API gateway?",
+        "o": [
+            "Layer of attack protection",
+            "Remove security filtering now",
+            "Disable threat detection here",
+            "Skip vulnerability scanning"
+        ]
+    },
+    {
+        "q": "What is API gateway SSL termination?",
+        "o": [
+            "Decrypt HTTPS at gateway point",
+            "Pass encrypted to backend",
+            "Skip SSL processing fully",
+            "Disable encryption handling"
+        ]
+    },
+    {
+        "q": "What is re-encryption after SSL termination?",
+        "o": [
+            "Encrypt again to backend service",
+            "Send plain text to backend",
+            "Skip backend encryption step",
+            "Disable internal security now"
+        ]
+    },
+    {
+        "q": "What is API gateway request validation?",
+        "o": [
+            "Validate schema at entry point",
+            "Skip validation for speed now",
+            "Accept any request format here",
+            "Trust client-side validation"
+        ]
+    },
+    {
+        "q": "What is API composition at gateway?",
+        "o": [
+            "Aggregate multiple API calls",
+            "Split single API requests",
+            "Cache individual responses",
+            "Log aggregation details"
+        ]
+    },
+    {
+        "q": "What is API gateway canary deployment?",
+        "o": [
+            "Route small traffic to new version",
+            "Deploy all traffic at once now",
+            "Skip deployment validation step",
+            "Disable rollback capability"
+        ]
+    },
+    {
+        "q": "What is API gateway blue-green deployment?",
+        "o": [
+            "Switch between two environments",
+            "Deploy to single environment",
+            "Mixed deployment approach here",
+            "No environment separation used"
+        ]
+    },
+    {
+        "q": "What is service mesh authentication?",
+        "o": [
+            "Mutual TLS between services",
+            "No authentication in mesh",
+            "Single TLS at edge only",
+            "Skip internal security now"
+        ]
+    },
+    {
+        "q": "What is sidecar proxy in service mesh?",
+        "o": [
+            "Handle security beside service",
+            "Remove security delegation now",
+            "Skip proxy configuration here",
+            "Disable traffic management"
+        ]
+    },
+    {
+        "q": "What is Istio in API security?",
+        "o": [
+            "Service mesh with mTLS support",
+            "Database encryption service",
+            "File storage security tool",
+            "Log aggregation platform"
+        ]
+    },
+    {
+        "q": "What is SPIFFE in microservices?",
+        "o": [
+            "Identity framework for services",
+            "Encryption algorithm standard",
+            "Logging format specification",
+            "Caching protocol definition"
+        ]
+    },
+    {
+        "q": "What is SPIRE?",
+        "o": [
+            "SPIFFE Runtime Environment here",
+            "Security Protocol for Runtime",
+            "Secure Platform Integration",
+            "Service Protection Interface"
+        ]
+    },
+    {
+        "q": "What is workload identity in cloud?",
+        "o": [
+            "Identity for running services",
+            "User authentication method only",
+            "Device identity management",
+            "Network identity protocol"
+        ]
+    },
+    {
+        "q": "What is AWS IAM role for service?",
+        "o": [
+            "Assign permissions to workload",
+            "User login credentials only",
+            "No service authentication used",
+            "Skip permission assignment"
+        ]
+    },
+    {
+        "q": "What is GCP Workload Identity?",
+        "o": [
+            "Map K8s SA to GCP IAM SA",
+            "No workload authentication used",
+            "Skip identity federation step",
+            "Disable service permissions"
+        ]
+    },
+    {
+        "q": "What is Azure Managed Identity?",
+        "o": [
+            "Automatic credential for services",
+            "Manual credential management",
+            "No identity for services used",
+            "Skip Azure authentication now"
+        ]
+    },
+    {
+        "q": "What is secrets management in APIs?",
+        "o": [
+            "Securely store and access secrets",
+            "Hardcode secrets in source code",
+            "Store secrets in config files",
+            "Commit secrets to repository"
+        ]
+    },
+    {
+        "q": "What is HashiCorp Vault?",
+        "o": [
+            "Secrets management solution now",
+            "Log aggregation platform here",
+            "Database backup service tool",
+            "File storage solution used"
+        ]
+    },
+    {
+        "q": "What is dynamic secrets?",
+        "o": [
+            "Generated on-demand short-lived",
+            "Static long-lived credentials",
+            "Permanent access credentials",
+            "Fixed unchanging passwords"
+        ]
+    },
+    {
+        "q": "What is secret rotation automation?",
+        "o": [
+            "Auto change secrets regularly",
+            "Manual secret updates only",
+            "Never rotate secrets at all",
+            "Skip rotation for simplicity"
+        ]
+    },
+    {
+        "q": "What is envelope encryption?",
+        "o": [
+            "Encrypt keys with master key",
+            "Single layer encryption only",
+            "No key management used here",
+            "Skip encryption key storage"
+        ]
+    },
+    {
+        "q": "What is API key hierarchy?",
+        "o": [
+            "Master and derived API keys",
+            "Single key for all access",
+            "No key hierarchy needed now",
+            "Flat key structure approach"
+        ]
+    },
+    {
+        "q": "What is API security posture?",
+        "o": [
+            "Overall security stance of APIs",
+            "Individual endpoint security",
+            "Single API configuration only",
+            "No security assessment used"
+        ]
+    },
+    {
+        "q": "What is continuous API security testing?",
+        "o": [
+            "Automated ongoing security checks",
+            "One-time security assessment",
+            "Manual periodic testing only",
+            "No automated security testing"
+        ]
+    },
+    {
+        "q": "What is shift-left security for APIs?",
+        "o": [
+            "Security early in development",
+            "Security only in production",
+            "Security after deployment only",
+            "No security during development"
+        ]
+    },
+    {
+        "q": "What is API security in CI/CD?",
+        "o": [
+            "Automated security in pipeline",
+            "Manual security after deploy",
+            "No pipeline security checks",
+            "Skip security in automation"
+        ]
+    },
+    {
+        "q": "What is DAST for APIs?",
+        "o": [
+            "Dynamic Application Security Test",
+            "Database Access Security Tool",
+            "Direct API Security Testing",
+            "Distributed Access System Test"
+        ]
+    },
+    {
+        "q": "What is SAST for API code?",
+        "o": [
+            "Static Application Security Test",
+            "System Access Security Testing",
+            "Standard API Security Tool",
+            "Secure Application Scan Test"
+        ]
+    },
+    {
+        "q": "What is IAST?",
+        "o": [
+            "Interactive App Security Test",
+            "Internal API Security Testing",
+            "Infrastructure Access Scan Tool",
+            "Integrated Access System Test"
+        ]
+    },
+    {
+        "q": "What is API fuzzing?",
+        "o": [
+            "Send malformed input to API",
+            "Normal API request testing",
+            "Standard performance testing",
+            "Load balancing verification"
+        ]
+    },
+    {
+        "q": "What is smart fuzzing?",
+        "o": [
+            "Schema-aware mutation testing",
+            "Random data generation only",
+            "Fixed test case execution",
+            "No mutation applied at all"
+        ]
+    },
+    {
+        "q": "What is coverage-guided fuzzing?",
+        "o": [
+            "Fuzzing based on code coverage",
+            "Random fuzzing without guide",
+            "Fixed input only testing used",
+            "No coverage tracking applied"
+        ]
+    },
+    {
+        "q": "What is API behavioral analysis?",
+        "o": [
+            "Learn normal API behavior",
+            "Skip behavior monitoring now",
+            "Disable anomaly detection here",
+            "No baseline establishment"
+        ]
+    },
+    {
+        "q": "What is API anomaly detection?",
+        "o": [
+            "Identify unusual API patterns",
+            "Allow all traffic patterns now",
+            "Skip pattern analysis checks",
+            "Disable deviation alerting"
+        ]
+    },
+    {
+        "q": "What is API attack surface?",
+        "o": [
+            "All exposed API endpoints",
+            "Internal endpoints only here",
+            "No exposure consideration",
+            "Skip surface assessment"
+        ]
+    },
+    {
+        "q": "What is API sprawl risk?",
+        "o": [
+            "Unmanaged API proliferation",
+            "Controlled API development",
+            "Documented API inventory here",
+            "Managed API lifecycle fully"
+        ]
+    },
+    {
+        "q": "What is shadow API?",
+        "o": [
+            "Undocumented unknown APIs exist",
+            "Well-documented API endpoints",
+            "Managed production APIs only",
+            "Controlled development APIs"
+        ]
+    },
+    {
+        "q": "What is zombie API?",
+        "o": [
+            "Deprecated but still active",
+            "Active well-maintained APIs",
+            "Newly deployed API endpoints",
+            "Properly retired old APIs"
+        ]
+    },
+    {
+        "q": "What is API discovery?",
+        "o": [
+            "Find all APIs in environment",
+            "Hide APIs from discovery",
+            "Skip API inventory building",
+            "No API cataloging needed"
+        ]
+    },
+    {
+        "q": "What is API inventory management?",
+        "o": [
+            "Catalog and track all APIs",
+            "No API tracking required now",
+            "Skip API documentation fully",
+            "Disable API management here"
+        ]
+    },
+    {
+        "q": "What is API governance?",
+        "o": [
+            "Policies for API development",
+            "No rules for API creation",
+            "Skip API standards entirely",
+            "Disable governance controls"
+        ]
+    },
+    {
+        "q": "What is API security policy enforcement?",
+        "o": [
+            "Apply security rules consistently",
+            "Optional security guidelines only",
+            "No enforcement of policies now",
+            "Skip policy application here"
+        ]
+    },
+    {
+        "q": "What is API observability?",
+        "o": [
+            "Deep insight into API behavior",
+            "Surface level monitoring only",
+            "No API visibility provided here",
+            "Skip observability setup now"
+        ]
+    },
+    {
+        "q": "What is distributed tracing for APIs?",
+        "o": [
+            "Track request across services",
+            "Single service tracing only",
+            "No request tracking used here",
+            "Skip tracing implementation"
+        ]
+    },
+    {
+        "q": "What is OpenTelemetry?",
+        "o": [
+            "Observability framework standard",
+            "Security testing tool only",
+            "Database management system",
+            "File storage solution used"
+        ]
+    },
+    {
+        "q": "What is API metrics collection?",
+        "o": [
+            "Gather performance and security data",
+            "Skip metrics collection entirely",
+            "No data gathering required now",
+            "Disable metrics for performance"
+        ]
+    },
+    {
+        "q": "What is golden signals for APIs?",
+        "o": [
+            "Latency errors traffic saturation",
+            "Only error rate monitoring now",
+            "Single metric tracking only",
+            "No signal monitoring required"
+        ]
+    },
+    {
+        "q": "What is API SLA monitoring?",
+        "o": [
+            "Track service level agreements",
+            "Skip SLA verification checks",
+            "No agreement monitoring done",
+            "Disable SLA tracking fully"
+        ]
+    },
+    {
+        "q": "What is API error budget?",
+        "o": [
+            "Allowable failure threshold limit",
+            "No error tolerance allowed",
+            "Unlimited errors acceptable",
+            "Skip error tracking fully"
+        ]
+    },
+    {
+        "q": "What is chaos engineering for APIs?",
+        "o": [
+            "Test resilience via failures",
+            "Avoid testing failure cases",
+            "Skip resilience verification",
+            "No fault injection testing"
+        ]
+    },
+    {
+        "q": "What is API resilience pattern?",
+        "o": [
+            "Handle failures gracefully now",
+            "Fail hard on any error seen",
+            "No failure handling needed",
+            "Skip resilience patterns here"
+        ]
+    },
+    {
+        "q": "What is bulkhead pattern?",
+        "o": [
+            "Isolate failures to components",
+            "Share failures across system",
+            "No isolation of components",
+            "Skip bulkhead implementation"
+        ]
+    },
+    {
+        "q": "What is fallback pattern?",
+        "o": [
+            "Provide default on failure",
+            "Fail completely on errors",
+            "No backup behavior defined",
+            "Skip fallback logic fully"
+        ]
+    },
+    {
+        "q": "What is graceful degradation?",
+        "o": [
+            "Reduced functionality on failure",
+            "Complete failure on any issue",
+            "No degradation strategy used",
+            "Skip degradation handling"
+        ]
+    },
+    {
+        "q": "What is API request prioritization?",
+        "o": [
+            "Important requests first served",
+            "All requests equal priority",
+            "No prioritization applied here",
+            "Skip priority queuing fully"
+        ]
+    },
+    {
+        "q": "What is request queuing?",
+        "o": [
+            "Buffer requests during load",
+            "Reject all excess requests",
+            "No buffering implemented here",
+            "Skip queue management fully"
+        ]
+    },
+    {
+        "q": "What is API backpressure?",
+        "o": [
+            "Slow down upstream callers",
+            "Accept unlimited requests now",
+            "No flow control applied here",
+            "Skip backpressure handling"
+        ]
+    },
+    {
+        "q": "What is load shedding?",
+        "o": [
+            "Drop requests under overload",
+            "Accept all requests always",
+            "No request rejection used",
+            "Skip load shedding fully"
+        ]
+    },
+    {
+        "q": "What is API request deduplication?",
+        "o": [
+            "Prevent duplicate processing now",
+            "Process all duplicates fully",
+            "No deduplication applied here",
+            "Skip duplicate detection task"
+        ]
+    },
+    {
+        "q": "What is idempotency key?",
+        "o": [
+            "Unique identifier for request",
+            "No unique request tracking",
+            "Skip idempotency handling",
+            "Disable duplicate detection"
+        ]
+    },
+    {
+        "q": "What is API versioning deprecation notice?",
+        "o": [
+            "Warn users of version retire",
+            "Silent version deprecation",
+            "No deprecation communication",
+            "Skip retirement notification"
+        ]
+    },
+    {
+        "q": "What is sunset header?",
+        "o": [
+            "Indicates API retirement date",
+            "No deprecation signaling used",
+            "Skip sunset notification fully",
+            "Disable retirement warnings"
+        ]
+    },
+    {
+        "q": "What is API breaking change?",
+        "o": [
+            "Change that breaks clients now",
+            "Backward compatible update only",
+            "No impact on existing clients",
+            "Safe modification to API here"
+        ]
+    },
+    {
+        "q": "How to handle breaking changes?",
+        "o": [
+            "New version with migration path",
+            "Update existing without notice",
+            "No migration support provided",
+            "Skip backward compatibility"
+        ]
+    },
+    {
+        "q": "What is semantic versioning for APIs?",
+        "o": [
+            "Major minor patch version format",
+            "Random version numbering scheme",
+            "No versioning standard applied",
+            "Arbitrary version assignment"
+        ]
+    },
+    {
+        "q": "What is API changelog?",
+        "o": [
+            "Document API changes over time",
+            "No change documentation kept",
+            "Skip change tracking entirely",
+            "Disable version history log"
+        ]
+    },
+    {
+        "q": "What is API first design?",
+        "o": [
+            "Design API before implementation",
+            "Implement then design API docs",
+            "No design phase for APIs used",
+            "Skip API planning entirely"
+        ]
+    },
+    {
+        "q": "What is OpenAPI Specification?",
+        "o": [
+            "Standard API description format",
+            "Proprietary API documentation",
+            "No standard specification used",
+            "Custom API format definition"
+        ]
+    },
+    {
+        "q": "What is API design review?",
+        "o": [
+            "Evaluate API before building",
+            "Skip design verification step",
+            "No review process for APIs",
+            "Disable design evaluation"
+        ]
+    },
+    {
+        "q": "What is API linting?",
+        "o": [
+            "Check API spec for issues",
+            "Skip specification validation",
+            "No linting rules applied here",
+            "Disable specification checks"
+        ]
+    },
+    {
+        "q": "What is API mock server?",
+        "o": [
+            "Simulate API for testing now",
+            "Only use production for tests",
+            "No simulation capability used",
+            "Skip mock server setup here"
+        ]
+    },
+    {
+        "q": "What is contract-first development?",
+        "o": [
+            "Define contract before coding",
+            "Code first then write contract",
+            "No contract defined for API",
+            "Skip contract development here"
+        ]
+    },
+    {
+        "q": "What is consumer-driven contract?",
+        "o": [
+            "Consumers define expectations",
+            "Provider defines all contracts",
+            "No contract testing applied",
+            "Skip consumer input entirely"
+        ]
+    },
+    {
+        "q": "What is Pact testing?",
+        "o": [
+            "Contract testing framework tool",
+            "Performance testing solution",
+            "Security scanning tool only",
+            "Load testing framework used"
+        ]
+    },
+    {
+        "q": "What is API dependency management?",
+        "o": [
+            "Track external API dependencies",
+            "No dependency tracking used",
+            "Skip dependency monitoring here",
+            "Disable external API checks"
+        ]
+    },
+    {
+        "q": "What is third-party API risk?",
+        "o": [
+            "Security risk from external APIs",
+            "No risk from external APIs here",
+            "Skip third-party assessment",
+            "Trust all external APIs fully"
+        ]
+    },
+    {
+        "q": "What is zero trust for API security?",
+        "o": [
+            "Never trust always verify requests",
+            "Trust internal network traffic",
+            "Skip verification for known IPs",
+            "Allow authenticated users always"
+        ]
+    },
+    {
+        "q": "What is zero trust network access for APIs?",
+        "o": [
+            "Identity-based access control used",
+            "Network perimeter security only",
+            "Trust internal traffic by default",
+            "No verification of API requests"
+        ]
+    },
+    {
+        "q": "What is micro-segmentation for APIs?",
+        "o": [
+            "Isolate API workloads granularly",
+            "Single network for all services",
+            "No segmentation of API traffic",
+            "Trust all internal communication"
+        ]
+    },
+    {
+        "q": "What is BeyondCorp model?",
+        "o": [
+            "Zero trust enterprise access model",
+            "Traditional perimeter security",
+            "VPN-based access control method",
+            "Firewall-only security approach"
+        ]
+    },
+    {
+        "q": "What is API security in zero trust?",
+        "o": [
+            "Continuous verification each request",
+            "Single authentication at login",
+            "Trust after initial verification",
+            "No ongoing verification needed"
+        ]
+    },
+    {
+        "q": "What is JWT embedded claims attack?",
+        "o": [
+            "Manipulate claims for escalation",
+            "Normal claim processing method",
+            "Secure claim validation process",
+            "Standard JWT usage pattern"
+        ]
+    },
+    {
+        "q": "What is kid header injection?",
+        "o": [
+            "Inject path in key ID header",
+            "Normal key ID specification",
+            "Secure key lookup process",
+            "Standard header validation"
+        ]
+    },
+    {
+        "q": "What is JWK injection attack?",
+        "o": [
+            "Embed malicious key in token",
+            "Normal key management process",
+            "Secure key distribution used",
+            "Standard key rotation applied"
+        ]
+    },
+    {
+        "q": "How to prevent JWK injection?",
+        "o": [
+            "Ignore embedded JWK in tokens",
+            "Trust any embedded JWK value",
+            "Accept keys from token header",
+            "Skip key source verification"
+        ]
+    },
+    {
+        "q": "What is JWKS endpoint?",
+        "o": [
+            "Public keys for JWT verification",
+            "Private key storage location",
+            "Token generation endpoint used",
+            "Authentication login endpoint"
+        ]
+    },
+    {
+        "q": "What is JWKS rotation?",
+        "o": [
+            "Periodically change signing keys",
+            "Never change signing keys used",
+            "Static key forever in JWKS",
+            "Single key without rotation"
+        ]
+    },
+    {
+        "q": "What is key rollover in JWT?",
+        "o": [
+            "Transition to new signing key",
+            "Immediate key replacement used",
+            "No transition period allowed",
+            "Break existing tokens always"
+        ]
+    },
+    {
+        "q": "What is OAuth token exchange?",
+        "o": [
+            "Exchange one token for another",
+            "Create new token from scratch",
+            "Delete existing token value",
+            "Cache token for later use"
+        ]
+    },
+    {
+        "q": "What is token exchange use case?",
+        "o": [
+            "Delegation and impersonation",
+            "Simple authentication login",
+            "Basic token generation only",
+            "Standard token refresh flow"
+        ]
+    },
+    {
+        "q": "What is device authorization grant?",
+        "o": [
+            "Auth for input-limited devices",
+            "Standard web browser login",
+            "Mobile app authentication flow",
+            "Desktop application login"
+        ]
+    },
+    {
+        "q": "What is CIBA in OAuth?",
+        "o": [
+            "Client Initiated Backchannel Auth",
+            "Central Identity Backend Access",
+            "Common Interface Browser Auth",
+            "Cached Identity Binding Access"
+        ]
+    },
+    {
+        "q": "What is CIBA use case?",
+        "o": [
+            "Decoupled authentication flow",
+            "Standard browser-based login",
+            "Redirect authentication method",
+            "Cookie-based session handling"
+        ]
+    },
+    {
+        "q": "What is OAuth 2.1 changes?",
+        "o": [
+            "PKCE required deprecate implicit",
+            "Add implicit grant support now",
+            "Remove PKCE requirement fully",
+            "Keep password grant enabled"
+        ]
+    },
+    {
+        "q": "What is GNAP?",
+        "o": [
+            "Grant Negotiation Authorization",
+            "General Network Access Protocol",
+            "Global Node Authentication Path",
+            "Grouped Network API Policy"
+        ]
+    },
+    {
+        "q": "What is GNAP vs OAuth?",
+        "o": [
+            "More flexible and modernized",
+            "Simpler but less features now",
+            "Same functionality different name",
+            "Backward compatible with OAuth"
+        ]
+    },
+    {
+        "q": "What is API BFLA vulnerability?",
+        "o": [
+            "Broken function level authz",
+            "Basic function level access",
+            "Best function level approach",
+            "Balanced function level auth"
+        ]
+    },
+    {
+        "q": "How to prevent BFLA?",
+        "o": [
+            "Role-based function authorization",
+            "Allow all function access now",
+            "Skip function level checks here",
+            "Trust client role assertions"
+        ]
+    },
+    {
+        "q": "What is API rate limit bypass?",
+        "o": [
+            "Circumvent rate limiting rules",
+            "Normal rate limited response",
+            "Expected throttling behavior",
+            "Standard rate limit applied"
+        ]
+    },
+    {
+        "q": "What is rate limit header manipulation?",
+        "o": [
+            "Spoof headers to bypass limit",
+            "Normal header processing done",
+            "Secure header validation used",
+            "Standard header handling here"
+        ]
+    },
+    {
+        "q": "What is distributed rate limit evasion?",
+        "o": [
+            "Use multiple IPs to bypass",
+            "Single IP rate limiting only",
+            "No distributed attack possible",
+            "Standard rate limit effective"
+        ]
+    },
+    {
+        "q": "How to prevent rate limit bypass?",
+        "o": [
+            "Multiple factors for limiting",
+            "IP-only rate limiting used",
+            "Single factor rate control",
+            "No bypass prevention needed"
+        ]
+    },
+    {
+        "q": "What is API credential stuffing?",
+        "o": [
+            "Try stolen credentials on API",
+            "Normal authentication attempt",
+            "Secure login processing done",
+            "Standard password validation"
+        ]
+    },
+    {
+        "q": "How to detect credential stuffing?",
+        "o": [
+            "Analyze login patterns velocity",
+            "Allow unlimited login attempts",
+            "Skip login monitoring entirely",
+            "No detection mechanism needed"
+        ]
+    },
+    {
+        "q": "What is account takeover via API?",
+        "o": [
+            "Gain unauthorized account access",
+            "Normal account access pattern",
+            "Secure account management done",
+            "Standard login processing"
+        ]
+    },
+    {
+        "q": "What is API scraping attack?",
+        "o": [
+            "Extract large data via API",
+            "Normal data access pattern",
+            "Secure data retrieval done",
+            "Standard API consumption"
+        ]
+    },
+    {
+        "q": "How to prevent API scraping?",
+        "o": [
+            "Rate limit and behavior analysis",
+            "Allow unlimited data access",
+            "No scraping prevention needed",
+            "Skip behavior monitoring now"
+        ]
+    },
+    {
+        "q": "What is business logic attack on API?",
+        "o": [
+            "Exploit application logic flaws",
+            "Normal API request pattern",
+            "Secure business logic used",
+            "Standard application flow"
+        ]
+    },
+    {
+        "q": "What is race condition in APIs?",
+        "o": [
+            "Exploit timing between checks",
+            "Normal request timing used",
+            "Secure concurrency handling",
+            "Standard request processing"
+        ]
+    },
+    {
+        "q": "What is TOCTOU vulnerability?",
+        "o": [
+            "Time of check to use flaw",
+            "Normal timing validation done",
+            "Secure timing handling used",
+            "Standard check implementation"
+        ]
+    },
+    {
+        "q": "How to prevent race conditions?",
+        "o": [
+            "Atomic operations and locking",
+            "No concurrency protection now",
+            "Skip race condition handling",
+            "Allow parallel modifications"
+        ]
+    },
+    {
+        "q": "What is API denial of wallet attack?",
+        "o": [
+            "Cause excessive cloud costs",
+            "Normal cloud resource usage",
+            "Standard billing consumption",
+            "Expected cost generation"
+        ]
+    },
+    {
+        "q": "How to prevent denial of wallet?",
+        "o": [
+            "Set spending limits and alerts",
+            "No spending limits configured",
+            "Allow unlimited resource usage",
+            "Skip cost monitoring entirely"
+        ]
+    },
+    {
+        "q": "What is API abuse for cryptomining?",
+        "o": [
+            "Exploit API for resource abuse",
+            "Normal API resource usage",
+            "Standard compute consumption",
+            "Expected processing load"
+        ]
+    },
+    {
+        "q": "What is insufficient logging risk?",
+        "o": [
+            "Miss security events detection",
+            "Complete security visibility now",
+            "Full incident investigation",
+            "Comprehensive audit trail"
+        ]
+    },
+    {
+        "q": "What is excessive logging risk?",
+        "o": [
+            "Sensitive data in log files",
+            "Minimal logging overhead used",
+            "No privacy concern at all here",
+            "Secure log handling always"
+        ]
+    },
+    {
+        "q": "What is log tampering attack?",
+        "o": [
+            "Modify logs to hide attack",
+            "Normal log writing operation",
+            "Secure log management done",
+            "Standard log rotation task"
+        ]
+    },
+    {
+        "q": "How to prevent log tampering?",
+        "o": [
+            "Immutable log storage used now",
+            "Writable logs for flexibility",
+            "No log integrity protection",
+            "Skip log security measures"
+        ]
+    },
+    {
+        "q": "What is GraphQL batching attack?",
+        "o": [
+            "Multiple operations in request",
+            "Single operation per request",
+            "Normal GraphQL execution done",
+            "Standard query processing"
+        ]
+    },
+    {
+        "q": "What is GraphQL alias attack?",
+        "o": [
+            "Repeat field with aliases",
+            "Normal alias usage pattern",
+            "Standard field aliasing done",
+            "Expected query structure"
+        ]
+    },
+    {
+        "q": "What is GraphQL circular query?",
+        "o": [
+            "Nested queries cause DoS",
+            "Normal nested query handling",
+            "Standard recursion processing",
+            "Expected query depth used"
+        ]
+    },
+    {
+        "q": "How to prevent GraphQL DoS?",
+        "o": [
+            "Query depth and cost limits",
+            "Allow unlimited query depth",
+            "No cost analysis performed",
+            "Skip query validation fully"
+        ]
+    },
+    {
+        "q": "What is API supply chain attack?",
+        "o": [
+            "Compromise third-party API deps",
+            "Normal dependency management",
+            "Secure third-party APIs used",
+            "Standard dependency handling"
+        ]
+    },
+    {
+        "q": "How to mitigate API supply chain risk?",
+        "o": [
+            "Vet and monitor dependencies",
+            "Trust all third-party APIs now",
+            "Skip dependency verification",
+            "No monitoring of externals"
+        ]
+    },
+    {
+        "q": "What is API compliance requirement?",
+        "o": [
+            "Regulatory security standards",
+            "Optional security guidelines",
+            "Suggested best practices only",
+            "No mandatory requirements"
+        ]
+    },
+    {
+        "q": "What is GDPR impact on APIs?",
+        "o": [
+            "Data protection requirements",
+            "No impact on API design",
+            "Optional privacy controls",
+            "Skip data protection rules"
+        ]
+    },
+    {
+        "q": "What is PCI DSS for API?",
+        "o": [
+            "Payment card data security",
+            "General data protection only",
+            "Optional payment handling",
+            "No card data requirements"
+        ]
+    },
+    {
+        "q": "What is HIPAA for health APIs?",
+        "o": [
+            "Protected health info security",
+            "General data handling rules",
+            "Optional health data privacy",
+            "No health data requirements"
+        ]
+    },
+    {
+        "q": "What is SOC 2 for API providers?",
+        "o": [
+            "Service organization controls",
+            "Software development standard",
+            "Simple operations checklist",
+            "Security optional compliance"
+        ]
+    },
+    {
+        "q": "What is API security certification?",
+        "o": [
+            "Third-party security validation",
+            "Self-declared compliance only",
+            "No verification required now",
+            "Skip certification process"
+        ]
+    },
+    {
+        "q": "What is API threat modeling?",
+        "o": [
+            "Identify and analyze threats",
+            "Skip threat identification",
+            "No threat analysis needed",
+            "Trust all API consumers"
+        ]
+    },
+    {
+        "q": "What is STRIDE for API threats?",
+        "o": [
+            "Categorization threat model",
+            "Single threat category only",
+            "No threat categorization",
+            "Skip threat modeling fully"
+        ]
+    },
+    {
+        "q": "What is attack tree for APIs?",
+        "o": [
+            "Map attack paths visually",
+            "Linear attack description",
+            "No attack visualization",
+            "Skip attack mapping task"
+        ]
+    },
+    {
+        "q": "What is API security maturity model?",
+        "o": [
+            "Assess and improve security",
+            "Single security level only",
+            "No security progression path",
+            "Skip maturity assessment"
+        ]
+    },
+    {
+        "q": "What is API penetration testing?",
+        "o": [
+            "Simulated attacks on API",
+            "Automated scanning only used",
+            "No manual testing required",
+            "Skip security testing fully"
+        ]
+    },
+    {
+        "q": "What is red team API testing?",
+        "o": [
+            "Adversarial security testing",
+            "Defensive testing only done",
+            "No attack simulation used",
+            "Skip adversarial testing"
+        ]
+    },
+    {
+        "q": "What is bug bounty for APIs?",
+        "o": [
+            "Reward external vulnerability finders",
+            "Internal testing only allowed",
+            "No external researcher access",
+            "Skip crowdsourced security"
+        ]
+    },
+    {
+        "q": "What is responsible disclosure?",
+        "o": [
+            "Report vulnerabilities privately",
+            "Publish vulnerabilities publicly",
+            "Ignore found vulnerabilities",
+            "Exploit found issues first"
+        ]
+    },
+    {
+        "q": "What is API security incident response?",
+        "o": [
+            "Handle security breaches plan",
+            "No incident handling plan",
+            "Skip response preparation",
+            "Ignore security incidents"
+        ]
+    },
+    {
+        "q": "What is API forensics?",
+        "o": [
+            "Investigate API security events",
+            "No investigation capability",
+            "Skip forensic analysis done",
+            "Ignore security evidence"
+        ]
+    },
+    {
+        "q": "What is API key compromise response?",
+        "o": [
+            "Revoke and rotate keys fast",
+            "Keep compromised key active",
+            "Delay key revocation action",
+            "Ignore key compromise event"
+        ]
+    },
+    {
+        "q": "What is API breach notification?",
+        "o": [
+            "Inform affected users timely",
+            "No notification required now",
+            "Delay breach disclosure time",
+            "Hide breach from affected"
+        ]
+    },
+    {
+        "q": "What is post-incident review?",
+        "o": [
+            "Learn from security incidents",
+            "No review after incidents",
+            "Skip lessons learned process",
+            "Ignore incident patterns"
+        ]
+    },
+    {
+        "q": "What is API security roadmap?",
+        "o": [
+            "Plan security improvements",
+            "No security planning done",
+            "Ad-hoc security fixes only",
+            "Skip strategic planning"
+        ]
+    },
+    {
+        "q": "What is security debt in APIs?",
+        "o": [
+            "Accumulated security issues",
+            "No security issues exist",
+            "Clean security state always",
+            "Zero vulnerabilities present"
+        ]
+    },
+    {
+        "q": "What is defense in depth for APIs?",
+        "o": [
+            "Multiple security layers used",
+            "Single security control only",
+            "No layered defense applied",
+            "Skip multiple protections"
+        ]
+    },
+    {
+        "q": "What is least privilege for API access?",
+        "o": [
+            "Minimal necessary permissions",
+            "Maximum permissions granted",
+            "Full access for all users",
+            "No access restrictions set"
+        ]
+    },
+    {
+        "q": "What is separation of duties in APIs?",
+        "o": [
+            "Split critical functions apart",
+            "Single user all functions",
+            "No separation required now",
+            "Combined roles for all"
+        ]
+    },
+    {
+        "q": "What is fail-secure principle?",
+        "o": [
+            "Deny access on failure now",
+            "Allow access on failure seen",
+            "No failure handling done",
+            "Skip error security logic"
+        ]
+    },
+    {
+        "q": "What is security by design?",
+        "o": [
+            "Build security from start",
+            "Add security after deploy",
+            "No security consideration",
+            "Security as afterthought"
+        ]
+    },
+    {
+        "q": "What is API security checklist?",
+        "o": [
+            "Verify security controls list",
+            "No verification process done",
+            "Skip security validation now",
+            "Ignore security checklist"
+        ]
+    },
+    {
+        "q": "What is OWASP API Security project?",
+        "o": [
+            "API security awareness effort",
+            "No public security project",
+            "Proprietary security standard",
+            "Internal security initiative"
+        ]
+    },
+    {
+        "q": "What is API TLS mutual authentication?",
+        "o": [
+            "Both parties present certs",
+            "Server-only authentication",
+            "No certificate exchange done",
+            "Skip mutual verification"
+        ]
+    },
+    {
+        "q": "What is certificate transparency?",
+        "o": [
+            "Public log of issued certs",
+            "Private certificate logging",
+            "No certificate tracking done",
+            "Skip transparency logging"
+        ]
+    },
+    {
+        "q": "What is CAA record?",
+        "o": [
+            "Specify allowed cert issuers",
+            "Allow any CA to issue cert",
+            "No CA restriction applied",
+            "Skip CA validation fully"
+        ]
+    },
+    {
+        "q": "What is HPKP deprecation reason?",
+        "o": [
+            "Risk of DoS via pinning",
+            "Too effective for security",
+            "No browser support at all",
+            "Better alternatives emerged"
+        ]
+    },
+    {
+        "q": "What is Expect-CT header?",
+        "o": [
+            "Enforce cert transparency",
+            "Disable transparency check",
+            "Skip CT verification done",
+            "No CT enforcement applied"
+        ]
+    },
+    {
+        "q": "What is subresource integrity for APIs?",
+        "o": [
+            "Verify external script integrity",
+            "Trust external resources fully",
+            "No integrity check applied",
+            "Skip resource verification"
+        ]
+    },
+    {
+        "q": "What is feature policy header?",
+        "o": [
+            "Control browser features now",
+            "Enable all browser features",
+            "No feature restrictions set",
+            "Skip policy configuration"
+        ]
+    },
+    {
+        "q": "What is permission policy?",
+        "o": [
+            "Successor to feature policy",
+            "Different from feature policy",
+            "Unrelated security header here",
+            "No policy restrictions set"
+        ]
+    },
+    {
+        "q": "What is API sandbox isolation?",
+        "o": [
+            "Isolate API execution context",
+            "Share execution environment",
+            "No isolation implemented",
+            "Skip sandbox protection"
+        ]
+    },
+    {
+        "q": "What is container security for APIs?",
+        "o": [
+            "Secure containerized APIs",
+            "No container security needed",
+            "Skip container hardening now",
+            "Trust container environment"
+        ]
+    },
+    {
+        "q": "What is serverless API security?",
+        "o": [
+            "Secure function-based APIs",
+            "No serverless security done",
+            "Skip function hardening now",
+            "Trust serverless platform"
+        ]
+    },
+    {
+        "q": "What is cold start security risk?",
+        "o": [
+            "Initialization vulnerability window",
+            "No cold start security issue",
+            "Skip initialization protection",
+            "Trust startup process fully"
+        ]
+    },
+    {
+        "q": "What is ephemeral infrastructure security?",
+        "o": [
+            "Short-lived instance security",
+            "Permanent infrastructure only",
+            "No ephemeral considerations",
+            "Skip instance lifecycle rules"
+        ]
+    },
+    {
+        "q": "What is immutable infrastructure for APIs?",
+        "o": [
+            "Replace not modify instances",
+            "Modify running instances only",
+            "No immutability applied here",
+            "Skip replacement approach"
+        ]
+    },
+    {
+        "q": "What is GitOps for API security?",
+        "o": [
+            "Git-driven security config",
+            "No version control for config",
+            "Skip declarative security now",
+            "Manual configuration only"
+        ]
+    },
+    {
+        "q": "What is policy as code?",
+        "o": [
+            "Security policies in code",
+            "Manual policy enforcement",
+            "No coded policies used",
+            "Skip policy automation"
+        ]
+    },
+    {
+        "q": "What is OPA for API authorization?",
+        "o": [
+            "Open Policy Agent decisions",
+            "No policy engine used here",
+            "Skip authorization engine",
+            "Manual policy evaluation"
+        ]
+    },
+    {
+        "q": "What is Rego language?",
+        "o": [
+            "OPA policy language used",
+            "General programming language",
+            "No special policy syntax",
+            "Standard config format"
+        ]
+    },
+    {
+        "q": "What is attribute-based access control?",
+        "o": [
+            "Access based on attributes",
+            "Role-only access control",
+            "No attribute consideration",
+            "Skip attribute evaluation"
+        ]
+    },
+    {
+        "q": "What is XACML?",
+        "o": [
+            "Access control markup language",
+            "General markup language used",
+            "No access control standard",
+            "Proprietary access format"
+        ]
+    },
+    {
+        "q": "What is relationship-based access control?",
+        "o": [
+            "Access based on relationships",
+            "No relationship consideration",
+            "Role-only access evaluation",
+            "Skip relationship checks"
+        ]
+    },
+    {
+        "q": "What is Zanzibar model?",
+        "o": [
+            "Google authorization system",
+            "Database management system",
+            "File storage solution used",
+            "Network protocol standard"
+        ]
+    },
+    {
+        "q": "What is SpiceDB?",
+        "o": [
+            "Zanzibar-inspired authz DB",
+            "General purpose database",
+            "File storage system used",
+            "Log aggregation platform"
+        ]
+    },
+    {
+        "q": "What is API security for AI/ML?",
+        "o": [
+            "Protect AI model endpoints",
+            "No AI security concerns now",
+            "Skip ML model protection",
+            "Trust AI API fully today"
+        ]
+    },
+    {
+        "q": "What is model extraction attack?",
+        "o": [
+            "Steal AI model via API",
+            "Normal API consumption done",
+            "Secure model access pattern",
+            "Standard prediction request"
+        ]
+    },
+    {
+        "q": "What is adversarial input attack?",
+        "o": [
+            "Craft input to fool model",
+            "Normal input processing done",
+            "Secure input handling used",
+            "Standard data submission"
+        ]
+    },
+    {
+        "q": "What is prompt injection?",
+        "o": [
+            "Manipulate LLM via prompts",
+            "Normal prompt submission done",
+            "Secure prompt handling used",
+            "Standard query processing"
+        ]
+    },
+    {
+        "q": "How to prevent prompt injection?",
+        "o": [
+            "Input validation and filtering",
+            "Accept any prompt directly now",
+            "No prompt sanitization done",
+            "Trust all user prompts fully"
+        ]
+    },
+    {
+        "q": "What is API security for WebSocket?",
+        "o": [
+            "Secure persistent connections",
+            "No WebSocket security needed",
+            "Skip persistent connection sec",
+            "Trust WebSocket traffic fully"
+        ]
+    },
+    {
+        "q": "What is WebSocket origin validation?",
+        "o": [
+            "Check connection source origin",
+            "Accept any origin connection",
+            "Skip origin verification now",
+            "Trust all WebSocket clients"
+        ]
+    },
+    {
+        "q": "What is gRPC security?",
+        "o": [
+            "Secure gRPC API endpoints",
+            "No gRPC security required",
+            "Skip gRPC protection fully",
+            "Trust gRPC traffic always"
+        ]
+    },
+    {
+        "q": "What is gRPC interceptor security?",
+        "o": [
+            "Security middleware for gRPC",
+            "No middleware security done",
+            "Skip interceptor logic here",
+            "Trust all gRPC requests"
+        ]
+    },
+    {
+        "q": "What is API security maturity assessment?",
+        "o": [
+            "Evaluate current security state",
+            "No assessment performed now",
+            "Skip security evaluation done",
+            "Ignore maturity levels fully"
+        ]
+    },
+    {
+        "q": "What is continuous security improvement?",
+        "o": [
+            "Ongoing security enhancement",
+            "One-time security fix only",
+            "No improvement process done",
+            "Static security forever now"
+        ]
+    },
+    {
+        "q": "What is API rate limiting algorithm?",
+        "o": [
+            "Token bucket or sliding window",
+            "No algorithm needed for rate",
+            "Simple counter only approach",
+            "Random rejection strategy"
+        ]
+    },
+    {
+        "q": "What is leaky bucket algorithm?",
+        "o": [
+            "Smooth rate with queue mechanism",
+            "Burst-friendly rate limiting",
+            "No smoothing of request rate",
+            "Immediate rejection strategy"
+        ]
+    },
+    {
+        "q": "What is sliding window rate limit?",
+        "o": [
+            "Continuous time window tracking",
+            "Fixed window only approach used",
+            "No time tracking needed here",
+            "Random window size applied"
+        ]
+    },
+    {
+        "q": "What is API schema poisoning?",
+        "o": [
+            "Inject malicious schema changes",
+            "Normal schema update process",
+            "Secure schema management done",
+            "Standard schema versioning"
+        ]
+    },
+    {
+        "q": "What is API endpoint enumeration?",
+        "o": [
+            "Discover hidden API endpoints",
+            "Normal endpoint documentation",
+            "Secure endpoint management",
+            "Standard API discovery used"
+        ]
+    },
+    {
+        "q": "How to prevent endpoint enumeration?",
+        "o": [
+            "Consistent error responses now",
+            "Different errors per endpoint",
+            "Reveal endpoint existence always",
+            "Detailed error messages used"
+        ]
+    },
+    {
+        "q": "What is API parameter pollution?",
+        "o": [
+            "Multiple param same name attack",
+            "Normal parameter handling done",
+            "Secure parameter processing",
+            "Standard query string format"
+        ]
+    },
+    {
+        "q": "What is HTTP desync attack?",
+        "o": [
+            "Exploit parsing differences",
+            "Normal HTTP processing done",
+            "Secure message handling used",
+            "Standard protocol behavior"
+        ]
+    },
+    {
+        "q": "What is HTTP request tunneling?",
+        "o": [
+            "Hide requests within others",
+            "Normal request forwarding",
+            "Secure proxy processing",
+            "Standard request handling"
+        ]
+    },
+    {
+        "q": "What is API cache deception?",
+        "o": [
+            "Trick cache to store sensitive",
+            "Normal caching behavior used",
+            "Secure cache configuration",
+            "Standard cache handling"
+        ]
+    },
+    {
+        "q": "What is web cache poisoning?",
+        "o": [
+            "Store malicious cached response",
+            "Normal cache update process",
+            "Secure cache invalidation",
+            "Standard cache refresh"
+        ]
+    },
+    {
+        "q": "What is Host header injection?",
+        "o": [
+            "Manipulate Host header attacks",
+            "Normal Host header handling",
+            "Secure header processing",
+            "Standard request routing"
+        ]
+    },
+    {
+        "q": "What is API mass assignment?",
+        "o": [
+            "Bind unintended properties",
+            "Normal object binding done",
+            "Secure property handling",
+            "Standard object creation"
+        ]
+    },
+    {
+        "q": "How to prevent mass assignment?",
+        "o": [
+            "Explicit allowlist properties",
+            "Accept all request properties",
+            "No property filtering done",
+            "Trust client-sent data fully"
+        ]
+    },
+    {
+        "q": "What is CORS misconfiguration attack?",
+        "o": [
+            "Exploit overly permissive CORS",
+            "Normal cross-origin handling",
+            "Secure CORS configuration",
+            "Standard browser behavior"
+        ]
+    },
+    {
+        "q": "What is reflect origin CORS flaw?",
+        "o": [
+            "Echo any origin in response",
+            "Validate origin against list",
+            "Secure origin verification",
+            "Strict origin matching"
+        ]
+    },
+    {
+        "q": "What is null origin bypass?",
+        "o": [
+            "Use null origin to bypass",
+            "Block null origin request",
+            "Secure null handling done",
+            "Standard origin validation"
+        ]
+    },
+    {
+        "q": "What is API SSRF protection?",
+        "o": [
+            "Validate and restrict URLs",
+            "Allow any URL requests now",
+            "No URL validation needed",
+            "Trust all external URLs"
+        ]
+    },
+    {
+        "q": "What is blind SSRF?",
+        "o": [
+            "No response visible to attacker",
+            "Full response returned always",
+            "Normal external request done",
+            "Standard URL fetching used"
+        ]
+    },
+    {
+        "q": "What is XXE injection in APIs?",
+        "o": [
+            "External entity processing flaw",
+            "Normal XML handling done",
+            "Secure XML processing used",
+            "Standard entity resolution"
+        ]
+    },
+    {
+        "q": "How to prevent XXE?",
+        "o": [
+            "Disable external entity parsing",
+            "Allow all entities parsing now",
+            "Enable DTD processing always",
+            "Trust XML input completely"
+        ]
+    },
+    {
+        "q": "What is prototype pollution?",
+        "o": [
+            "Modify object prototype chain",
+            "Normal object creation done",
+            "Secure prototype handling",
+            "Standard JS object behavior"
+        ]
+    },
+    {
+        "q": "What is NoSQL injection?",
+        "o": [
+            "Inject operators in NoSQL query",
+            "Normal database query done",
+            "Secure query construction",
+            "Standard data retrieval"
+        ]
+    },
+    {
+        "q": "What is MongoDB injection example?",
+        "o": [
+            "Use dollar sign operators",
+            "Normal query parameters",
+            "Secure parameter binding",
+            "Standard find operations"
+        ]
+    },
+    {
+        "q": "What is LDAP injection?",
+        "o": [
+            "Inject LDAP filter syntax",
+            "Normal directory query done",
+            "Secure LDAP search used",
+            "Standard attribute lookup"
+        ]
+    },
+    {
+        "q": "What is expression language injection?",
+        "o": [
+            "Inject EL expressions used",
+            "Normal template processing",
+            "Secure expression handling",
+            "Standard template rendering"
+        ]
+    },
+    {
+        "q": "What is template injection?",
+        "o": [
+            "Inject server-side templates",
+            "Normal template rendering",
+            "Secure template processing",
+            "Standard output generation"
+        ]
+    },
+    {
+        "q": "What is API response splitting?",
+        "o": [
+            "Inject CRLF in response headers",
+            "Normal response generation",
+            "Secure header handling done",
+            "Standard HTTP response"
+        ]
+    },
+    {
+        "q": "What is header injection prevention?",
+        "o": [
+            "Validate and sanitize headers",
+            "Allow any header content now",
+            "No header validation needed",
+            "Trust all header values"
+        ]
+    }
+]

@@ -1,0 +1,4682 @@
+[
+    {
+        "q": "What is the main goal of 'Active Reconnaissance'?",
+        "o": [
+            "Interacting directly with the target system to gather info",
+            "Avoiding all contact with the target",
+            "Using search engines only",
+            "Checking social media profiles"
+        ]
+    },
+    {
+        "q": "Which tool is the 'de facto' standard for active network scanning?",
+        "o": [
+            "Nmap",
+            "VLC Player",
+            "Paint",
+            "Calculator"
+        ]
+    },
+    {
+        "q": "What does a 'ping' command primarily test?",
+        "o": [
+            "Reachability of a host",
+            "Password strength",
+            "Website design",
+            "Email validity"
+        ]
+    },
+    {
+        "q": "What is a 'port scan'?",
+        "o": [
+            "Probing a server or host for open ports",
+            "Scanning a shipping port",
+            "Printer scanning",
+            "Checking USB ports physically"
+        ]
+    },
+    {
+        "q": "What does TCP port 80 typically service?",
+        "o": [
+            "HTTP",
+            "SSH",
+            "FTP",
+            "SMTP"
+        ]
+    },
+    {
+        "q": "What does TCP port 443 typically service?",
+        "o": [
+            "HTTPS",
+            "Telnet",
+            "DNS",
+            "POP3"
+        ]
+    },
+    {
+        "q": "What command flag in Nmap performs a 'stealth' SYN scan?",
+        "o": [
+            "-sS",
+            "-sT",
+            "-sU",
+            "-sP"
+        ]
+    },
+    {
+        "q": "What is 'banner grabbing'?",
+        "o": [
+            "Retrieving the welcome message/banner from a service",
+            "Stealing a physical banner",
+            "Downloading a logo",
+            "Copying a headline"
+        ]
+    },
+    {
+        "q": "What does TCP port 22 typically service?",
+        "o": [
+            "SSH",
+            "HTTP",
+            "Telnet",
+            "FTP"
+        ]
+    },
+    {
+        "q": "What is the risk of 'Active' recon compared to 'Passive'?",
+        "o": [
+            "It is more likely to be detected by IDS/IPS",
+            "It is slower",
+            "It provides less info",
+            "It is perfectly safe"
+        ]
+    },
+    {
+        "q": "What does 'service version detection' do?",
+        "o": [
+            "Identifies the specific software and version running on a port",
+            "Checks if the service is paid",
+            "Installs the service",
+            "Deletes the service"
+        ]
+    },
+    {
+        "q": "Which command checks typical DNS reconds like A, MX, NS?",
+        "o": [
+            "dig or nslookup",
+            "ping",
+            "traceroute",
+            "netstat"
+        ]
+    },
+    {
+        "q": "What constitutes a 'zone transfer' attack?",
+        "o": [
+            "Requesting a copy of the entire DNS zone file",
+            "Transferring money",
+            "Moving to a new time zone",
+            "Copying files via FTP"
+        ]
+    },
+    {
+        "q": "What is the Nmap flag for 'OS detection'?",
+        "o": [
+            "-O",
+            "-os",
+            "-sO",
+            "-A"
+        ]
+    },
+    {
+        "q": "What does 'traceroute' show?",
+        "o": [
+            "The path/hops packets take to reach a destination",
+            "The time of day",
+            "The wifi password",
+            "The server CPU load"
+        ]
+    },
+    {
+        "q": "What is a 'firewall' in network security?",
+        "o": [
+            "System that controls incoming and outgoing network traffic",
+            "A physical wall of fire",
+            "A virus",
+            "A backup drive"
+        ]
+    },
+    {
+        "q": "What does TCP port 21 typically service?",
+        "o": [
+            "FTP",
+            "SSH",
+            "Telnet",
+            "DNS"
+        ]
+    },
+    {
+        "q": "What does TCP port 23 typically service?",
+        "o": [
+            "Telnet",
+            "FTP",
+            "SSH",
+            "SMTP"
+        ]
+    },
+    {
+        "q": "What does TCP port 25 typically service?",
+        "o": [
+            "SMTP",
+            "POP3",
+            "IMAP",
+            "HTTP"
+        ]
+    },
+    {
+        "q": "What does TCP port 53 typically service?",
+        "o": [
+            "DNS",
+            "DHCP",
+            "HTTP",
+            "SSH"
+        ]
+    },
+    {
+        "q": "What does UDP port 53 typically service?",
+        "o": [
+            "DNS queries",
+            "Video streaming",
+            "Voice chat",
+            "File transfer"
+        ]
+    },
+    {
+        "q": "What is 'hping3' used for?",
+        "o": [
+            "Custom packet crafting and scanning",
+            "Playing ping pong",
+            "Printing documents",
+            "Editing videos"
+        ]
+    },
+    {
+        "q": "What is 'Masscan' known for?",
+        "o": [
+            "Being the fastest Internet port scanner",
+            "Scanning massive files",
+            "Weighing objects",
+            "Scanning barcodes"
+        ]
+    },
+    {
+        "q": "What implies an 'Open' port in Nmap results?",
+        "o": [
+            "An application is listening and accepting connections",
+            "The door is open",
+            "The port is broken",
+            "The firewall is off"
+        ]
+    },
+    {
+        "q": "What implies a 'Filtered' port in Nmap results?",
+        "o": [
+            "A firewall or filter is blocking the probe",
+            "The port has a water filter",
+            "The service is filtered coffee",
+            "The port is open but shy"
+        ]
+    },
+    {
+        "q": "What implies a 'Closed' port in Nmap results?",
+        "o": [
+            "Packets are received but no application is listening",
+            "The computer is off",
+            "The internet is down",
+            "The port is deleted"
+        ]
+    },
+    {
+        "q": "What is 'Netcat' often called?",
+        "o": [
+            "The Swiss Army knife of networking",
+            "The Network Cat",
+            "The Cat format",
+            "The Net Catcher"
+        ]
+    },
+    {
+        "q": "How can you use Netcat to banner grab on port 80?",
+        "o": [
+            "nc -v target_ip 80",
+            "nc -grab 80",
+            "nc -banner 80",
+            "nc -scan 80"
+        ]
+    },
+    {
+        "q": "What is 'SMB' protocol often used for?",
+        "o": [
+            "File sharing and printer sharing on Windows",
+            "Sending text messages",
+            "Streaming music",
+            "Web browsing"
+        ]
+    },
+    {
+        "q": "What port does SMB typically use on modern Windows?",
+        "o": [
+            "445",
+            "139",
+            "80",
+            "22"
+        ]
+    },
+    {
+        "q": "What is 'enumeration' in active recon?",
+        "o": [
+            "Extracting detailed info like users, shares, groups",
+            "Counting numbers",
+            "Listing files alphabetically",
+            "Guessing passwords"
+        ]
+    },
+    {
+        "q": "What is 'SNMP' enumeration?",
+        "o": [
+            "Querying Simple Network Management Protocol for info",
+            "Sending email",
+            "Scanning for maps",
+            "Simple Name Mapping Protocol"
+        ]
+    },
+    {
+        "q": "What default community string is often public in SNMP?",
+        "o": [
+            "public",
+            "private",
+            "admin",
+            "root"
+        ]
+    },
+    {
+        "q": "What tool is specialized for SMB enumeration on Linux?",
+        "o": [
+            "Enum4linux",
+            "Nmap",
+            "Wireshark",
+            "Burp Suite"
+        ]
+    },
+    {
+        "q": "What is 'network mapping'?",
+        "o": [
+            "Discovering devices and their connectivity topology",
+            "Drawing a map of the office",
+            "Using Google Maps",
+            "Mapping network drives"
+        ]
+    },
+    {
+        "q": "What does a 'ping sweep' do?",
+        "o": [
+            "Pings a range of IPs to find live hosts",
+            "Cleans the network cables",
+            "Sweeps for bugs",
+            "Pings the router only"
+        ]
+    },
+    {
+        "q": "What is 'ARP scanning' effective for?",
+        "o": [
+            "Discovering hosts on the local LAN segment",
+            "Scanning the internet",
+            "Scanning for viruses",
+            "Scanning for WiFi"
+        ]
+    },
+    {
+        "q": "What is 'Wireshark' primarily used for?",
+        "o": [
+            "Network protocol analysis and packet capture",
+            "Scanning for sharks",
+            "Wireless charging",
+            "Playing MP3s"
+        ]
+    },
+    {
+        "q": "What does 'tcpdump' do?",
+        "o": [
+            "Command-line packet analyzer",
+            "Dumps TCP/IP stack",
+            "Crashes the TCP service",
+            "Deletes TCP logs"
+        ]
+    },
+    {
+        "q": "What is 'TTL' in a ping response?",
+        "o": [
+            "Time To Live",
+            "Time To Load",
+            "Total Traffic Load",
+            "Tea Time Lunch"
+        ]
+    },
+    {
+        "q": "How can TTL help in OS fingerprinting?",
+        "o": [
+            "Different OSes have different default TTL values",
+            "It tells the time",
+            "It shows the manufacturing date",
+            "It contains the OS name"
+        ]
+    },
+    {
+        "q": "What is a 'null session' in SMB?",
+        "o": [
+            "Connecting without a username or password",
+            "A session with no data",
+            "A failed session",
+            "A secure session"
+        ]
+    },
+    {
+        "q": "What is 'LDAP' enumeration?",
+        "o": [
+            " querying Lightweight Directory Access Protocol for directory info",
+            "Learning Data Access Protocol",
+            "Loading App Data",
+            "Linking Devices And Phones"
+        ]
+    },
+    {
+        "q": "What port does LDAP typically use?",
+        "o": [
+            "389",
+            "636",
+            "80",
+            "25"
+        ]
+    },
+    {
+        "q": "What is 'NTP' enumeration useful for?",
+        "o": [
+            "Getting time, but also potentially internal IP info",
+            "Setting the clock",
+            "Measuring ping",
+            "Network Transfer Protocol"
+        ]
+    },
+    {
+        "q": "What is 'SMTP' user enumeration?",
+        "o": [
+            "Verifying if email users exist on the server",
+            "Sending spam",
+            "Reading email",
+            "Creating users"
+        ]
+    },
+    {
+        "q": "What command verifies an email address in SMTP?",
+        "o": [
+            "VRFY",
+            "CHECK",
+            "TEST",
+            "PING"
+        ]
+    },
+    {
+        "q": "What is 'RPC'?",
+        "o": [
+            "Remote Procedure Call",
+            "Real PC",
+            "Random Protocol check",
+            "Remote Power Control"
+        ]
+    },
+    {
+        "q": "What tool enumerates RPC services?",
+        "o": [
+            "rpcinfo",
+            "rpcdump",
+            "rpcscan",
+            "rpcmap"
+        ]
+    },
+    {
+        "q": "What is 'NFS' enumeration?",
+        "o": [
+            "Listing Network File System shares",
+            "Need For Speed game",
+            "No File System",
+            "New File System"
+        ]
+    },
+    {
+        "q": "What implies active recon is 'intrusive'?",
+        "o": [
+            "It generates traffic and logs on the target system",
+            "It breaks the door",
+            "It steals data",
+            "It is rude"
+        ]
+    },
+    {
+        "q": "What is 'Nikto'?",
+        "o": [
+            "Web server scanner for vulnerabilities",
+            "A camera brand",
+            "A shoe brand",
+            "A browser"
+        ]
+    },
+    {
+        "q": "What does 'Dirb' or 'Gobuster' do?",
+        "o": [
+            "Brute-forces directories and files on a web server",
+            "Cleans dust",
+            "Busts ghosts",
+            "Directs traffic"
+        ]
+    },
+    {
+        "q": "What is 'wpscan' specialized for?",
+        "o": [
+            "Scanning WordPress installations",
+            "Scanning Word documents",
+            "Scanning Wifi passwords",
+            "Scanning Windows PCs"
+        ]
+    },
+    {
+        "q": "What generally happens if you scan authorized targets only?",
+        "o": [
+            "It is legal and ethical",
+            "You go to jail",
+            "The internet breaks",
+            "The target hacks you back"
+        ]
+    },
+    {
+        "q": "What is a 'connect' scan (-sT)?",
+        "o": [
+            "Completes the 3-way handshake",
+            "Only sends SYN",
+            "Only sends ACK",
+            "Sends nothing"
+        ]
+    },
+    {
+        "q": "Why is a SYN scan (-sS) quieter?",
+        "o": [
+            "It doesn't complete the connection, reducing logs",
+            "It whispers",
+            "It uses encryption",
+            "It is invisible"
+        ]
+    },
+    {
+        "q": "What does command 'host -t axfr domain.com ns1.domain.com' attempt?",
+        "o": [
+            "A DNS zone transfer",
+            "A ping test",
+            "A website download",
+            "A host reboot"
+        ]
+    },
+    {
+        "q": "What indicates a successful zone transfer?",
+        "o": [
+            "A list of all subdomains and records is returned",
+            "Connection refused",
+            "Server timeout",
+            "Access denied"
+        ]
+    },
+    {
+        "q": "What is 'RDP' port?",
+        "o": [
+            "3389",
+            "22",
+            "80",
+            "443"
+        ]
+    },
+    {
+        "q": "What does 'bluekeep' vulnerability relate to?",
+        "o": [
+            "RDP",
+            "HTTP",
+            "FTP",
+            "SSH"
+        ]
+    },
+    {
+        "q": "What is the purpose of 'fragmentation' in scanning?",
+        "o": [
+            "To evade firewalls/IDS by splitting packets",
+            "To break the internet",
+            "To go faster",
+            "To save bandwidth"
+        ]
+    },
+    {
+        "q": "What does Nmap '-T4' mean?",
+        "o": [
+            "Aggressive timing template (faster scanning)",
+            "Template 4",
+            "Terminal 4",
+            "Try 4 times"
+        ]
+    },
+    {
+        "q": "What implies active recon relies on 'responses'?",
+        "o": [
+            "You send packet, target sends reply",
+            "You guess",
+            "You read a book",
+            "You ask a friend"
+        ]
+    },
+    {
+        "q": "What is 'MySQL' default port?",
+        "o": [
+            "3306",
+            "1433",
+            "5432",
+            "8080"
+        ]
+    },
+    {
+        "q": "What is 'PostgreSQL' default port?",
+        "o": [
+            "5432",
+            "3306",
+            "1433",
+            "1521"
+        ]
+    },
+    {
+        "q": "What is 'MSSQL' default port?",
+        "o": [
+            "1433",
+            "3306",
+            "5432",
+            "1521"
+        ]
+    },
+    {
+        "q": "What is 'Oracle DB' default port?",
+        "o": [
+            "1521",
+            "1433",
+            "3306",
+            "5432"
+        ]
+    },
+    {
+        "q": "What is 'VNC' default port?",
+        "o": [
+            "5900",
+            "3389",
+            "22",
+            "23"
+        ]
+    },
+    {
+        "q": "What is 'Redis' default port?",
+        "o": [
+            "6379",
+            "27017",
+            "11211",
+            "80"
+        ]
+    },
+    {
+        "q": "What is 'MongoDB' default port?",
+        "o": [
+            "27017",
+            "6379",
+            "11211",
+            "3306"
+        ]
+    },
+    {
+        "q": "What tool scans for web vulnerabilities actively?",
+        "o": [
+            "OWASP ZAP",
+            "Notepad++",
+            "Task Manager",
+            "Paint"
+        ]
+    },
+    {
+        "q": "What is 'fuzzing'?",
+        "o": [
+            "Sending random/unexpected data to find crashes/bugs",
+            "Cleaning fuzz off clothes",
+            "Blurring images",
+            "Playing guitar"
+        ]
+    },
+    {
+        "q": "What is 'SQL injection' testing?",
+        "o": [
+            "Active attempt to inject SQL queries via inputs",
+            "Vaccinating a database",
+            "Installing SQL",
+            "Deleting SQL"
+        ]
+    },
+    {
+        "q": "What does a '404' response mean during directory brute force?",
+        "o": [
+            "Not Found - the file/dir does not exist",
+            "Found",
+            "Forbidden",
+            "Server Error"
+        ]
+    },
+    {
+        "q": "What does a '200' response mean?",
+        "o": [
+            "OK - the resource exists",
+            "Error",
+            "Redirect",
+            "Not Found"
+        ]
+    },
+    {
+        "q": "What does a '403' response mean?",
+        "o": [
+            "Forbidden - resource exists but access denied",
+            "OK",
+            "Not Found",
+            "Teapot"
+        ]
+    },
+    {
+        "q": "Which Nmap script category is 'safe'?",
+        "o": [
+            "Scripts not likely to crash the target",
+            "Scripts that wear a helmet",
+            "Scripts that are encrypted",
+            "Scripts that are hidden"
+        ]
+    },
+    {
+        "q": "Which Nmap script category is 'intrusive'?",
+        "o": [
+            "Scripts likely to be detected or crash target",
+            "Scripts that are polite",
+            "Scripts that are fast",
+            "Scripts that are slow"
+        ]
+    },
+    {
+        "q": "What is 'NSE'?",
+        "o": [
+            "Nmap Scripting Engine",
+            "Network Security Engine",
+            "National Stock Exchange",
+            "New Search Engine"
+        ]
+    },
+    {
+        "q": "What language are NSE scripts written in?",
+        "o": [
+            "Lua",
+            "Python",
+            "C++",
+            "Java"
+        ]
+    },
+    {
+        "q": "What does 'Xmas scan' send?",
+        "o": [
+            "Packets with FIN, PSH, and URG flags set",
+            "Christmas cards",
+            "Gifts",
+            "Santa photos"
+        ]
+    },
+    {
+        "q": "Why verify findings with a second tool?",
+        "o": [
+            "To avoid false positives",
+            "To waste time",
+            "To use more RAM",
+            "To impress the boss"
+        ]
+    },
+    {
+        "q": "What is the primary risk of 'active' recon on a production server?",
+        "o": [
+            "Causing a Denial of Service (DoS) or crash",
+            "Getting a virus",
+            "Running out of battery",
+            "Screen flickering"
+        ]
+    },
+    {
+        "q": "What is 'fingerprinting'?",
+        "o": [
+            "Identifying specific details like OS or app version",
+            "Taking fingerprints",
+            "Painting fingers",
+            "Typing fast"
+        ]
+    },
+    {
+        "q": "What does 'robots.txt' check involve?",
+        "o": [
+            "Checking which paths are disallowed for crawlers",
+            "Looking for robot pictures",
+            "Talking to a robot",
+            "Building a robot"
+        ]
+    },
+    {
+        "q": "Is checking robots.txt typically active or passive?",
+        "o": [
+            "Active (you must fetch the file from the server)",
+            "Passive (you guess it)",
+            "Neither",
+            "Both"
+        ]
+    },
+    {
+        "q": "What is 'WAF' detection?",
+        "o": [
+            "Identifying if a Web Application Firewall is present",
+            "Finding a wife",
+            "Looking for waffles",
+            "Wireless Access Fidelity"
+        ]
+    },
+    {
+        "q": "What tool helps identify WAFs?",
+        "o": [
+            "wafw00f",
+            "dogWoof",
+            "catMeow",
+            "nmap-waf"
+        ]
+    },
+    {
+        "q": "What is 'target scope'?",
+        "o": [
+            "The specific list of IPs/Domains authorized for testing",
+            "A telescope",
+            "A gun scope",
+            "A mouthwash"
+        ]
+    },
+    {
+        "q": "Why respect scope?",
+        "o": [
+            "To stay legal and avoid attacking unauthorized systems",
+            "To keep the scope clean",
+            "To save ammo",
+            "To avoid bad luck"
+        ]
+    },
+    {
+        "q": "What is 'active' defense?",
+        "o": [
+            "Defenders actively engaging or disrupting attackers",
+            "Blocking all ports",
+            "Unplugging the cable",
+            "Running away"
+        ]
+    },
+    {
+        "q": "What does 'ACK scan' help map?",
+        "o": [
+            "Firewall rules (stateful vs stateless)",
+            "Ack-ack guns",
+            "Keyboard layout",
+            "Mouse sensitivity"
+        ]
+    },
+    {
+        "q": "What is the 'nmap -sV' flag?",
+        "o": [
+            "Service Version detection",
+            "Scan Video",
+            "Save Virus",
+            "Super Verbose"
+        ]
+    },
+    {
+        "q": "What is 'banner' often revealing?",
+        "o": [
+            "Exact software version (e.g., Apache 2.4.49)",
+            "A pretty picture",
+            "The admin's name",
+            "The password"
+        ]
+    },
+    {
+        "q": "What is 'exploit' based on recon?",
+        "o": [
+            "Using a specific vulnerability found during recon",
+            "Exploiting a friend",
+            "Watching a movie",
+            "Playing a game"
+        ]
+    },
+    {
+        "q": "What comes after Active Recon?",
+        "o": [
+            "Vulnerability Analysis / Exploitation",
+            "Retirement",
+            "Lunch",
+            "Sleep"
+        ]
+    },
+    {
+        "q": "What is 'port knocking'?",
+        "o": [
+            "Opening a port by hitting a specific sequence of closed ports",
+            "Knocking on the monitor",
+            "Knocking on the server rack",
+            "A joke"
+        ]
+    },
+    {
+        "q": "How to detect port knocking?",
+        "o": [
+            "Analyzing logs for specific connection attempt sequences",
+            "Hearing a knock",
+            "Seeing a ghost",
+            "Using a stethoscope"
+        ]
+    },
+    {
+        "q": "What does a 'RST' packet mean?",
+        "o": [
+            "Reset connection (port usually closed)",
+            "Rest time",
+            "Restart computer",
+            "Restaurant"
+        ]
+    },
+    {
+        "q": "What does a 'FIN scan' (-sF) exploit?",
+        "o": [
+            "RFC compliance where closed ports send RST when receiving FIN",
+            "Financial systems",
+            "Fingerprint readers",
+            "File naming conventions"
+        ]
+    },
+    {
+        "q": "What happens if a Windows system receives a FIN packet (typically)?",
+        "o": [
+            "It ignores RFC and usually sends RST regardless of port state",
+            "It shuts down",
+            "It opens the port",
+            "It replies with FIN-ACK"
+        ]
+    },
+    {
+        "q": "What is 'idle scanning' (zombie scan)?",
+        "o": [
+            "Using a spoofed source IP of an idle host to scan hiddenly",
+            "Scanning while sleeping",
+            "Scanning fast",
+            "Scanning random ports"
+        ]
+    },
+    {
+        "q": "What is the Nmap flag for 'UDP scan'?",
+        "o": [
+            "-sU",
+            "-sT",
+            "-sS",
+            "-sP"
+        ]
+    },
+    {
+        "q": "Why makes UDP scanning slower than TCP?",
+        "o": [
+            "Open ports don't respond, requiring timeout waits",
+            "UDP is heavier",
+            "The cables are slow",
+            "It uses more CPU"
+        ]
+    },
+    {
+        "q": "What is 'ICMP' used for in recon?",
+        "o": [
+            "Ping sweeps and tracing routes",
+            "Transferring files",
+            "Encrypting email",
+            "Browsing web"
+        ]
+    },
+    {
+        "q": "What is a 'timestamp request' (ICMP type 13)?",
+        "o": [
+            "Asking target for current time, aids in uptime guessing",
+            "Setting the alarm",
+            "Checking calendar",
+            "Timing the scan"
+        ]
+    },
+    {
+        "q": "What does 'nmap -p-' do?",
+        "o": [
+            "Scans all 65535 ports",
+            "Scans port 0",
+            "Scans popular ports",
+            "Scans no ports"
+        ]
+    },
+    {
+        "q": "What does 'nmap --top-ports 100' do?",
+        "o": [
+            "Scans the 100 most common ports",
+            "Scans ports 1-100",
+            "Scans top 100 IPs",
+            "Scans fast"
+        ]
+    },
+    {
+        "q": "What is 'fragment offset' manipulation?",
+        "o": [
+            "Overlapping fragments to bypass filters",
+            "Moving files",
+            "Copying text",
+            "Deleting fragments"
+        ]
+    },
+    {
+        "q": "What is 'source port manipulation' (-g)?",
+        "o": [
+            "Setting source port to 53 or 80 to bypass firewall rules",
+            "Physically moving the port",
+            "Buying a new port",
+            "Closing the port"
+        ]
+    },
+    {
+        "q": "What is 'decoy scanning' (-D)?",
+        "o": [
+            "Spoofing multiple source IPs to hide the real scanner IP",
+            "Using a duck decoy",
+            "Scanning fake servers",
+            "Playing hide and seek"
+        ]
+    },
+    {
+        "q": "What is 'MAC address spoofing'?",
+        "o": [
+            "Changing the hardware address to impersonate another device",
+            "Buying a Mac computer",
+            "Eating a Big Mac",
+            "Wearing a mask"
+        ]
+    },
+    {
+        "q": "What implies 'promiscuous mode' on a NIC?",
+        "o": [
+            "Card captures all traffic, not just for its MAC",
+            "Card is broken",
+            "Card runs faster",
+            "Card ignores traffic"
+        ]
+    },
+    {
+        "q": "What is 'ARP poisoning' (Man-in-the-Middle)?",
+        "o": [
+            "corrupting ARP cache to intercept LAN traffic",
+            "Poisoning the food",
+            "Breaking the switch",
+            "Unplugging cables"
+        ]
+    },
+    {
+        "q": "What tool performs ARP poisoning active recon?",
+        "o": [
+            "Bettercap or Ettercap",
+            "Notepad",
+            "Calculator",
+            "Paint"
+        ]
+    },
+    {
+        "q": "What is 'DNS cache snooping'?",
+        "o": [
+            "Checking if a specific domain is in the resolver's cache",
+            "Deleting the cache",
+            "Adding to cache",
+            "Reading the manual"
+        ]
+    },
+    {
+        "q": "What is 'SNMPwalk'?",
+        "o": [
+            "iterating through OIDs to retrieve all SNMP data",
+            "Walking the dog",
+            "Going for a walk",
+            "Exercising"
+        ]
+    },
+    {
+        "q": "What info can 'finger' service provide?",
+        "o": [
+            "User information and login status",
+            "Fingerprints",
+            "Hand size",
+            "Pointing direction"
+        ]
+    },
+    {
+        "q": "What is 'rusers' service?",
+        "o": [
+            "Remote users list",
+            "Reusable users",
+            "Russian users",
+            "Registered users"
+        ]
+    },
+    {
+        "q": "What does 'showmount -e' do?",
+        "o": [
+            "Lists NFS exports on a server",
+            "Shows a mountain",
+            "Mounts a drive",
+            "Displays volume"
+        ]
+    },
+    {
+        "q": "What is 'smbclient -L' used for?",
+        "o": [
+            "Listing shares on an SMB server",
+            "Logging in",
+            "Launching SMB",
+            "Leaving SMB"
+        ]
+    },
+    {
+        "q": "What does a '220' FTP response code mean?",
+        "o": [
+            "Service ready for new user",
+            "Error",
+            "File not found",
+            "Transfer complete"
+        ]
+    },
+    {
+        "q": "What is 'anonymous FTP'?",
+        "o": [
+            "Logging in with user 'anonymous' and any password",
+            "Secret FTP",
+            "Hidden FTP",
+            "Fast FTP"
+        ]
+    },
+    {
+        "q": "What is 'TFTP'?",
+        "o": [
+            "Trivial File Transfer Protocol (UDP based)",
+            "Total FTP",
+            "Tiny FTP",
+            "True FTP"
+        ]
+    },
+    {
+        "q": "Why is TFTP dangerous?",
+        "o": [
+            "No authentication required",
+            "It is too fast",
+            "It uses too much disk",
+            "It is colorful"
+        ]
+    },
+    {
+        "q": "What is 'X11' service?",
+        "o": [
+            "Remote graphical display system",
+            "A secret agent",
+            "A rocket",
+            "A car model"
+        ]
+    },
+    {
+        "q": "What is 'xhost +' risk?",
+        "o": [
+            "Allows any host to connect to the X server (keylogging risk)",
+            "Adds a host",
+            "Multiplies hosts",
+            "Deletes hosts"
+        ]
+    },
+    {
+        "q": "What is 'SIP' enumeration?",
+        "o": [
+            "Enumerating VoIP extensions and users",
+            "Sipping coffee",
+            "Simple IP",
+            "System IP"
+        ]
+    },
+    {
+        "q": "What tool scans for SIP vulnerabilities?",
+        "o": [
+            "SIPVicious",
+            "SipScan",
+            "PhoneBook",
+            "CallerID"
+        ]
+    },
+    {
+        "q": "What is 'IKE' scanning?",
+        "o": [
+            "Checking VPN concentrators for aggressive mode handshake",
+            "I like E",
+            "Ikea furniture",
+            "Eye key"
+        ]
+    },
+    {
+        "q": "What is 'ike-scan' tool used for?",
+        "o": [
+            "Discovering IPsec VPN endpoints",
+            "Scanning keys",
+            "Scanning eyes",
+            "Scanning barcodes"
+        ]
+    },
+    {
+        "q": "What implies active recon 'leaving footprints'?",
+        "o": [
+            "Your IP is logged in firewall/server logs",
+            "Muddy shoes",
+            "Sand tracks",
+            "Fingerprints on glass"
+        ]
+    },
+    {
+        "q": "What is Use of 'Tor' during active recon?",
+        "o": [
+            "Anonymizing source IP (though slow)",
+            "Speeding up scan",
+            "Encrypting disk",
+            "Hiding screen"
+        ]
+    },
+    {
+        "q": "What is 'pivot'?",
+        "o": [
+            "Using a compromised host to scan deeper into the network",
+            "Turning around",
+            "Basketball move",
+            "Excel feature"
+        ]
+    },
+    {
+        "q": "What is 'SOCKS proxy' used for in pivoting?",
+        "o": [
+            "Tunneling traffic through the pivot host",
+            "Keeping feet warm",
+            "Filtering water",
+            "Storing socks"
+        ]
+    },
+    {
+        "q": "What does '-Pn' flag in Nmap do?",
+        "o": [
+            "Skip ping/host discovery (assume host is up)",
+            "Ping n times",
+            "Ping now",
+            "Ping network"
+        ]
+    },
+    {
+        "q": "Why use '-Pn'?",
+        "o": [
+            "Target blocks ping (ICMP) but has open ports",
+            "To save time",
+            "To be polite",
+            "To send email"
+        ]
+    },
+    {
+        "q": "What does '-n' flag in Nmap do?",
+        "o": [
+            "Disable DNS resolution (speed up scan)",
+            "Enable DNS",
+            "New scan",
+            "No output"
+        ]
+    },
+    {
+        "q": "What is 'reason' in Nmap output?",
+        "o": [
+            "Explanation why a port is marked open/closed (e.g. syn-ack)",
+            "Philosophical reason",
+            "Excuse",
+            "Purpose of life"
+        ]
+    },
+    {
+        "q": "What is 'randomize hosts' option?",
+        "o": [
+            "Scanning target IPs in random order to evade detection",
+            "Scanning random people",
+            "Choosing random lunch",
+            "Playing dice"
+        ]
+    },
+    {
+        "q": "What is 'slow scan'?",
+        "o": [
+            "Reducing scan speed to blend in with noise",
+            "Low bandwidth connection",
+            "Old computer",
+            "Lazy scanner"
+        ]
+    },
+    {
+        "q": "What is 'SCTP' scan?",
+        "o": [
+            "Scanning for Stream Control Transmission Protocol",
+            "Scanner Type",
+            "Screen Capture",
+            "Script Check"
+        ]
+    },
+    {
+        "q": "What implies 'open|filtered' state?",
+        "o": [
+            "Nmap cannot match response to determine if open or filtered",
+            "It is definitely open",
+            "It is definitely closed",
+            "It is broken"
+        ]
+    },
+    {
+        "q": "What does 'traceroute' use by default on Linux?",
+        "o": [
+            "UDP packets",
+            "TCP packets",
+            "ICMP",
+            "HTTP"
+        ]
+    },
+    {
+        "q": "What does 'tracert' use by default on Windows?",
+        "o": [
+            "ICMP Echo Requests",
+            "UDP",
+            "TCP",
+            "ARP"
+        ]
+    },
+    {
+        "q": "What is 'tcptraceroute'?",
+        "o": [
+            "Tracing route using TCP SYN packets (bypasses some filters)",
+            "Tracing paper",
+            "Tracing phone calls",
+            "Tracing drawings"
+        ]
+    },
+    {
+        "q": "What is 'firewalk' technique?",
+        "o": [
+            "Determining which protocols can pass through a firewall",
+            "Walking on fire",
+            "Fire drill",
+            "Burning calories"
+        ]
+    },
+    {
+        "q": "What is 'ACK ping'?",
+        "o": [
+            "Sending ACK packet to elicit RST from live host",
+            "Ping pong match",
+            "Acknowledge slip",
+            "Greeting"
+        ]
+    },
+    {
+        "q": "What is 'SYN ping'?",
+        "o": [
+            "Sending SYN to elicit SYN/ACK or RST",
+            "Synthetic material",
+            "Synchronization error",
+            "Singing"
+        ]
+    },
+    {
+        "q": "What is 'UDP ping'?",
+        "o": [
+            "Sending UDP packet to elicit ICMP unreachable or response",
+            "Underwater ping",
+            "Up down ping",
+            "User ping"
+        ]
+    },
+    {
+        "q": "What implies 'host unreachable'?",
+        "o": [
+            "Router cannot find path to destination",
+            "Host is sleeping",
+            "Host is busy",
+            "Host is shy"
+        ]
+    },
+    {
+        "q": "What implies 'destination unreachable'?",
+        "o": [
+            "Packet arrived but port/protocol is unavailable",
+            "Wrong address",
+            "Road closed",
+            "Flight cancelled"
+        ]
+    },
+    {
+        "q": "What is 'IP protocol scan' (-sO)?",
+        "o": [
+            "Determining which IP protocols (TCP, UDP, ICMP, etc) are supported",
+            "Scanning paper",
+            "Scanning barcode",
+            "Scanning photos"
+        ]
+    },
+    {
+        "q": "What is 'version intensity'?",
+        "o": [
+            "Level of aggressiveness in probing for version info",
+            "Loudness of music",
+            "Brightness of screen",
+            "Strength of coffee"
+        ]
+    },
+    {
+        "q": "What does 'RPCbind' do?",
+        "o": [
+            "Maps RPC program numbers to ports",
+            "Binds paper",
+            "Tie knots",
+            "Connects cables"
+        ]
+    },
+    {
+        "q": "What is 'port 111'?",
+        "o": [
+            "rpcbind / portmapper",
+            "SSH",
+            "HTTP",
+            "FTP"
+        ]
+    },
+    {
+        "q": "What is 'Java RMI' registry port?",
+        "o": [
+            "1099",
+            "8080",
+            "22",
+            "21"
+        ]
+    },
+    {
+        "q": "Why enumerate Java RMI?",
+        "o": [
+            "Often vulnerable to deserialization attacks",
+            "To learn Java",
+            "To play Minecraft",
+            "To drink coffee"
+        ]
+    },
+    {
+        "q": "What is 'JDWP'?",
+        "o": [
+            "Java Debug Wire Protocol (RCE risk)",
+            "Juice Drinking World Party",
+            "Just Do Work Please",
+            "Jet Design Work Plane"
+        ]
+    },
+    {
+        "q": "What port is JDWP often found on?",
+        "o": [
+            "8000 (often)",
+            "80",
+            "443",
+            "25"
+        ]
+    },
+    {
+        "q": "What is 'Tomcat' manager page?",
+        "o": [
+            "Admin interface often brute-forceable",
+            "Cat food brand",
+            "Cartoon character",
+            "Toy cat"
+        ]
+    },
+    {
+        "q": "What is default Tomcat port?",
+        "o": [
+            "8080",
+            "80",
+            "22",
+            "443"
+        ]
+    },
+    {
+        "q": "What is 'Jenkins' script console?",
+        "o": [
+            "Allows execution of Groovy scripts (RCE)",
+            "Video game console",
+            "Writing scripts",
+            "Acting scripts"
+        ]
+    },
+    {
+        "q": "What is 'Elasticsearch' enumeration?",
+        "o": [
+            "Querying /_cat/indices for data",
+            "Stretching exercise",
+            "Rubber band checking",
+            "Elastic waistbands"
+        ]
+    },
+    {
+        "q": "What is port 9200 used for?",
+        "o": [
+            "Elasticsearch HTTP",
+            "Web browsing",
+            "Email",
+            "SSH"
+        ]
+    },
+    {
+        "q": "What is 'Kibana'?",
+        "o": [
+            "Visualization dashboard for Elasticsearch",
+            "A fruit",
+            "A dance",
+            "A martial art"
+        ]
+    },
+    {
+        "q": "What is port 5601 used for?",
+        "o": [
+            "Kibana",
+            "SSH",
+            "FTP",
+            "Telnet"
+        ]
+    },
+    {
+        "q": "What is 'CouchDB'?",
+        "o": [
+            "NoSQL database",
+            "Furniture store",
+            "Sleeping technique",
+            "TV show"
+        ]
+    },
+    {
+        "q": "What is default CouchDB port?",
+        "o": [
+            "5984",
+            "3306",
+            "1433",
+            "80"
+        ]
+    },
+    {
+        "q": "What is 'scanning from cloud' advantage?",
+        "o": [
+            "High bandwidth and different perspective",
+            "It rains",
+            "It is fluffy",
+            "It is free"
+        ]
+    },
+    {
+        "q": "What is 'cloud WAF' bypassing issue?",
+        "o": [
+            "Scanning the origin IP directly bypasses the WAF",
+            "Flying over the cloud",
+            "Ignoring the cloud",
+            "Deleting the cloud"
+        ]
+    },
+    {
+        "q": "What implies active recon allows 'validation'?",
+        "o": [
+            "Confirming if a vulnerability is real",
+            "Validating parking ticket",
+            "Checking ID",
+            "Signing document"
+        ]
+    },
+    {
+        "q": "What is 'banner' vs 'behaviour'?",
+        "o": [
+            "Banner says what it claims to be, behaviour reveals truth",
+            "Banner is flag",
+            "Behaviour is good",
+            "They are same"
+        ]
+    },
+    {
+        "q": "What is 'Timing attack' in recon?",
+        "o": [
+            "Measuring response times to guess valid users/data",
+            "Attack at noon",
+            "Using a stopwatch",
+            "Setting a timer"
+        ]
+    },
+    {
+        "q": "What is Nmap 'stats-every'?",
+        "o": [
+            "Prints status line periodically",
+            "Shows statistics",
+            "Counts stats",
+            "Draws graph"
+        ]
+    },
+    {
+        "q": "What is 'resume' scan?",
+        "o": [
+            "--resume <filename> continues aborted scan",
+            "Writing a resume",
+            "Applying for job",
+            "Fast forward"
+        ]
+    },
+    {
+        "q": "What is 'XML output' (-oX)?",
+        "o": [
+            "Saving results in XML for easier parsing",
+            "Printing XML",
+            "Drawing XML",
+            "Singing XML"
+        ]
+    },
+    {
+        "q": "What is 'Grepable output' (-oG)?",
+        "o": [
+            "Legacy format easy to grep",
+            "Eating grapes",
+            "Grabbing output",
+            "Green output"
+        ]
+    },
+    {
+        "q": "What is 'Normal output' (-oN)?",
+        "o": [
+            "Standard human readable text file",
+            "Strange output",
+            "Encoded output",
+            "Invisible output"
+        ]
+    },
+    {
+        "q": "What is 'All output' (-oA)?",
+        "o": [
+            "Saves in Normal, XML, and Grepable formats at once",
+            "Saves everything",
+            "Deletes everything",
+            "Prints everything"
+        ]
+    },
+    {
+        "q": "What is 'append-output'?",
+        "o": [
+            "Appends to existing file instead of overwriting",
+            "Deletes file",
+            "Creates new file",
+            "Renames file"
+        ]
+    },
+    {
+        "q": "What is 'script-trace'?",
+        "o": [
+            "Debugs NSE scripts showing all IO",
+            "Traces script writing",
+            "Copying script",
+            "Reading script"
+        ]
+    },
+    {
+        "q": "What is 'packet-trace'?",
+        "o": [
+            "Shows all packets sent and received",
+            "Tracing paper",
+            "Tracking package",
+            "Packing bags"
+        ]
+    },
+    {
+        "q": "What is 'privileged' scan?",
+        "o": [
+            "Running as root allowing raw socket access (SYN scan)",
+            "VIP scan",
+            "Expensive scan",
+            "Secret scan"
+        ]
+    },
+    {
+        "q": "What is 'unprivileged' scan?",
+        "o": [
+            "Running as user, using connect() syscall (Connect scan)",
+            "Poor scan",
+            "Slow scan",
+            "Public scan"
+        ]
+    },
+    {
+        "q": "What is 'MTU' discovery?",
+        "o": [
+            "Finding Maximum Transmission Unit size",
+            "Mountain Unit",
+            "Measurement Tool",
+            "Main Transmission"
+        ]
+    },
+    {
+        "q": "What is 'data-length' argument?",
+        "o": [
+            "APPENDS random data to packets",
+            "Measures length",
+            "Data science",
+            "Long cable"
+        ]
+    },
+    {
+        "q": "What is 'scan delay'?",
+        "o": [
+            "Wait time between probes to be stealthy/gentle",
+            "Delaying the flight",
+            "Being late",
+            "Slow computer"
+        ]
+    },
+    {
+        "q": "What is 'host timeout'?",
+        "o": [
+            "Give up on target after this much time",
+            "Coffee break",
+            "Time out corner",
+            "End of game"
+        ]
+    },
+    {
+        "q": "What is 'min-rate'?",
+        "o": [
+            "Send packets no slower than this rate",
+            "Minimum wage",
+            "Smallest rating",
+            "Minor rate"
+        ]
+    },
+    {
+        "q": "What is 'SMTP' user enumeration via 'RCPT TO'?",
+        "o": [
+            "Sending RCPT TO command and analyzing 250 vs 550 codes",
+            "Receiving emails",
+            "Sending files",
+            "Formatting text"
+        ]
+    },
+    {
+        "q": "What implies 'open relay' in SMTP?",
+        "o": [
+            "Server accepts email from anyone to anyone",
+            "Server is secure",
+            "Server is closed",
+            "Server is fast"
+        ]
+    },
+    {
+        "q": "What does Nmap flag '--script vuln' do?",
+        "o": [
+            "Runs all scripts in the 'vuln' category",
+            "Installs vulnerabilities",
+            "Removes vulnerabilities",
+            "Scans only for open ports"
+        ]
+    },
+    {
+        "q": "What is 'heartbleed' vulnerability check?",
+        "o": [
+            "Checking OpenSSL response to malformed heartbeat",
+            "Breaking hearts",
+            "Checking pulse",
+            "Measuring speed"
+        ]
+    },
+    {
+        "q": "What NSE script checks for Heartbleed?",
+        "o": [
+            "ssl-heartbleed",
+            "http-heartbleed",
+            "tls-bleed",
+            "check-heart"
+        ]
+    },
+    {
+        "q": "What is 'EternalBlue' related to?",
+        "o": [
+            "SMBv1 vulnerability (MS17-010)",
+            "Blue screen of death",
+            "Bluetooth hack",
+            "Water color"
+        ]
+    },
+    {
+        "q": "What NSE script checks for MS17-010?",
+        "o": [
+            "smb-vuln-ms17-010",
+            "check-eternalblue",
+            "smb-check",
+            "ms17-scan"
+        ]
+    },
+    {
+        "q": "What is 'Shellshock' vulnerability?",
+        "o": [
+            "Bash environment variable parsing flaw",
+            "Sea shell",
+            "Electric shock",
+            "Power shell"
+        ]
+    },
+    {
+        "q": "What is 'cold fusion' admin port?",
+        "o": [
+            "8500",
+            "80",
+            "443",
+            "22"
+        ]
+    },
+    {
+        "q": "What is 'VPC' in cloud context?",
+        "o": [
+            "Virtual Private Cloud",
+            "Virtual PC",
+            "Very Personal Computer",
+            "Video Processing Card"
+        ]
+    },
+    {
+        "q": "What is 'promiscuous mode' detection?",
+        "o": [
+            "Determining if a NIC is in promiscuous mode remotely",
+            "Detecting liars",
+            "Detecting speed",
+            "Detecting errors"
+        ]
+    },
+    {
+        "q": "What is 'ISN' prediction?",
+        "o": [
+            "Predicting Initial Sequence Numbers for spoofing",
+            "Predicting lottery",
+            "Predicting weather",
+            "Predicting traffic"
+        ]
+    },
+    {
+        "q": "What does a 'predictable ISN' allow?",
+        "o": [
+            "TCP session hijacking or spoofing",
+            "Free internet",
+            "Faster download",
+            "Better graphics"
+        ]
+    },
+    {
+        "q": "What is 'Syn cookies'?",
+        "o": [
+            "Defense against SYN flood attacks",
+            "Tasty biscuits",
+            " browser cookies",
+            "Software bugs"
+        ]
+    },
+    {
+        "q": "How does Nmap detect 'Syn cookies'?",
+        "o": [
+            "It marks ports as open but notes the response behavior",
+            "It eats them",
+            "It deletes them",
+            "It bakes them"
+        ]
+    },
+    {
+        "q": "What is 'IP ID' field used for in idle scan?",
+        "o": [
+            "Tracking packet counts to infer port state",
+            "Identity card",
+            "Input device",
+            "Intel processor"
+        ]
+    },
+    {
+        "q": "What is 'Global Increment' of IP ID?",
+        "o": [
+            "IP ID increases by 1 for every packet sent globally",
+            "World population increase",
+            "Global warming",
+            "Salary increment"
+        ]
+    },
+    {
+        "q": "What implies active recon 'bottleneck'?",
+        "o": [
+            "Network bandwidth or CPU limit slowing down scan",
+            "Narrow bottle",
+            "Traffic jam",
+            "Neck pain"
+        ]
+    },
+    {
+        "q": "What is 'rate limiting' by target?",
+        "o": [
+            "Target slows down responses to block scanners",
+            "Giving a rating",
+            "Speed limit sign",
+            "Limited edition"
+        ]
+    },
+    {
+        "q": "How to bypass rate limiting?",
+        "o": [
+            "Slow down scan or rotate IPs",
+            "Scan faster",
+            "Yell at computer",
+            "Turn off router"
+        ]
+    },
+    {
+        "q": "What is 'scan interference'?",
+        "o": [
+            "IPS blocking or modifying scan packets",
+            "Radio Static",
+            "Noisy room",
+            "Blurry screen"
+        ]
+    },
+    {
+        "q": "What is 'stateful' firewall?",
+        "o": [
+            "Tracks active connections state",
+            "Government firewall",
+            "Solid state drive",
+            "Emotional state"
+        ]
+    },
+    {
+        "q": "What is 'stateless' firewall?",
+        "o": [
+            "Filters based on static rules only, no connection tracking",
+            "Anarchy",
+            "Liquid state",
+            "Broken firewall"
+        ]
+    },
+    {
+        "q": "What Nmap scan type is best for stateless firewalls?",
+        "o": [
+            "ACK scan (can map rule sets)",
+            "SYN scan",
+            "Connect scan",
+            "Null scan"
+        ]
+    },
+    {
+        "q": "What implies 'filtered' in ACK scan?",
+        "o": [
+            "No RST returned (packet dropped)",
+            "Port is open",
+            "Port is closed",
+            "Port is busy"
+        ]
+    },
+    {
+        "q": "What implies 'unfiltered' in ACK scan?",
+        "o": [
+            "RST returned (packet reached target)",
+            "Port is open",
+            "Port is closed",
+            "Port is deleted"
+        ]
+    },
+    {
+        "q": "What is 'Window scan'?",
+        "o": [
+            "Exploiting TCP window size details to map open ports",
+            "Cleaning windows",
+            "Scanning glass",
+            "Opening windows"
+        ]
+    },
+    {
+        "q": "What is 'Maimon scan'?",
+        "o": [
+            "Variation of FIN/Xmas scan for BSD systems",
+            "Mail scan",
+            "Main scan",
+            "Moon scan"
+        ]
+    },
+    {
+        "q": "What is 'Custom Packet' crafting tool?",
+        "o": [
+            "Scapy",
+            "Notepad",
+            "Word",
+            "Excel"
+        ]
+    },
+    {
+        "q": "What is 'masscan' packet rate?",
+        "o": [
+            "Can send millions of packets per second",
+            "1 packet per second",
+            "10 packets per hour",
+            "Very slow"
+        ]
+    },
+    {
+        "q": "What is a downside of Masscan?",
+        "o": [
+            "Less accurate service detection than Nmap",
+            "Too expensive",
+            "Hard to install",
+            "Requires massive monitor"
+        ]
+    },
+    {
+        "q": "What is 'ZMap'?",
+        "o": [
+            "Single packet scanner optimized for speed",
+            "Map of zoo",
+            "Zombie map",
+            "Zip file"
+        ]
+    },
+    {
+        "q": "What is 'Unicornscan'?",
+        "o": [
+            "Asynchronous stateless scanner",
+            "Scanning for unicorns",
+            "Colorful scanner",
+            "Fantasy game"
+        ]
+    },
+    {
+        "q": "What is 'Banner' grabbing via Telnet?",
+        "o": [
+            "telnet <ip> <port>",
+            "banner <ip>",
+            "grab <ip>",
+            "scan <ip>"
+        ]
+    },
+    {
+        "q": "What if banner is 'fake'?",
+        "o": [
+            "Security through obscurity approach",
+            "It is illegal",
+            "It is broken",
+            "It is a virus"
+        ]
+    },
+    {
+        "q": "What is 'NVT' in OpenVAS?",
+        "o": [
+            "Network Vulnerability Tests",
+            "New Video Tape",
+            "No Virus Thread",
+            "Night Vision Tool"
+        ]
+    },
+    {
+        "q": "What is 'OpenVAS'?",
+        "o": [
+            "Open source vulnerability scanner",
+            "Open vase",
+            "Operating Vastly",
+            "Opening valve"
+        ]
+    },
+    {
+        "q": "What is 'Nessus'?",
+        "o": [
+            "Proprietary vulnerability scanner",
+            "Loch Ness monster",
+            "Nest of birds",
+            "Neon sign"
+        ]
+    },
+    {
+        "q": "What implies active recon 'compliance' check?",
+        "o": [
+            "Checking if configurations meet policy (e.g. PCI-DSS)",
+            "Checking spelling",
+            "Checking colors",
+            "Checking attendance"
+        ]
+    },
+    {
+        "q": "What is 'authenticated' scan?",
+        "o": [
+            "Scanning with credentials to see internal patch levels",
+            "Scanning a certificate",
+            "Scanning a signature",
+            "Valid scan"
+        ]
+    },
+    {
+        "q": "What is 'unauthenticated' scan?",
+        "o": [
+            "Scanning from outside without credentials (black box)",
+            "Illegal scan",
+            "Broken scan",
+            "Fake scan"
+        ]
+    },
+    {
+        "q": "What provides deeper results: authenticated or unauthenticated?",
+        "o": [
+            "Authenticated",
+            "Unauthenticated",
+            "Both same",
+            "Neither"
+        ]
+    },
+    {
+        "q": "What is 'Qualys'?",
+        "o": [
+            "Cloud-based security and compliance solution",
+            "Quality control",
+            "Quick analysis",
+            "Quiz app"
+        ]
+    },
+    {
+        "q": "What is 'InsightVM'?",
+        "o": [
+            "Rapid7 vulnerability management tool",
+            "Virtual machine view",
+            "Inside vision",
+            "Insect viewer"
+        ]
+    },
+    {
+        "q": "What is 'Nexpose'?",
+        "o": [
+            "On-premise vulnerability scanner by Rapid7",
+            "Next pose in yoga",
+            "New exposition",
+            "Negative exposure"
+        ]
+    },
+    {
+        "q": "What is 'Burp Suite' active scanner?",
+        "o": [
+            "Automated web app vulnerability scanner (Pro version)",
+            "Burping sound",
+            "Office suite",
+            "Food menu"
+        ]
+    },
+    {
+        "q": "What is 'spidering' active recon?",
+        "o": [
+            "Crawling a website to map structure",
+            "Scaring people with spiders",
+            "Climbing walls",
+            "Spinning webs"
+        ]
+    },
+    {
+        "q": "What is 'parameter fuzzing'?",
+        "o": [
+            "Injecting payloads into URL parameters",
+            "Measuring perimeter",
+            "Fuzzy logic",
+            "Parameter settings"
+        ]
+    },
+    {
+        "q": "What is 'cookie' manipulation?",
+        "o": [
+            "Modifying cookie values to test auth/logic",
+            "Baking cookies",
+            "Eating cookies",
+            "Deleting history"
+        ]
+    },
+    {
+        "q": "What is 'User-Agent' spoofing?",
+        "o": [
+            "Changing browser ID string to bypass filters or mobile checks",
+            "Becoming a spy",
+            "Using an agent",
+            "Selling insurance"
+        ]
+    },
+    {
+        "q": "What is 'referer' header spoofing?",
+        "o": [
+            "Faking the 'referred by' page to bypass hotlink protection",
+            "Referring a friend",
+            "Reference book",
+            "Referee in sports"
+        ]
+    },
+    {
+        "q": "What is 'infrastructure' profiling?",
+        "o": [
+            "Identifying load balancers, proxies, CDNs",
+            "Building roads",
+            "Profiling criminals",
+            "Designing structure"
+        ]
+    },
+    {
+        "q": "What does HTTP header 'Server' reveal?",
+        "o": [
+            "Web server software (e.g., Nginx, IIS)",
+            "Server rack location",
+            "Waiter's name",
+            "Service capabilities"
+        ]
+    },
+    {
+        "q": "What does 'X-Powered-By' reveal?",
+        "o": [
+            "Underlying technology (e.g., PHP, ASP.NET)",
+            "Battery type",
+            "Power source",
+            "Engine type"
+        ]
+    },
+    {
+        "q": "What is 'CORS' misconfiguration check?",
+        "o": [
+            "Checking if 'Access-Control-Allow-Origin' is too permissive",
+            "Core muscle check",
+            "Course correction",
+            "Cars on road"
+        ]
+    },
+    {
+        "q": "What implies 'wildcard' CORS?",
+        "o": [
+            "Allow Origin: * (any site can read response)",
+            "Wild party",
+            "Card game",
+            "Zoo animal"
+        ]
+    },
+    {
+        "q": "What is 'subdomain enumeration' active method?",
+        "o": [
+            "Brute-forcing subdomains against DNS resolver",
+            "Guessing names",
+            "Reading dictionary",
+            "Searching google"
+        ]
+    },
+    {
+        "q": "What is 'virtual host' brute forcing?",
+        "o": [
+            "Guessing Host headers against an IP",
+            "Virtual reality game",
+            "Hosting a party",
+            "Brute strength"
+        ]
+    },
+    {
+        "q": "What is 'DNS wildcards' detection?",
+        "o": [
+            "Checking if non-existent subdomains resolve to an IP",
+            "Wild animals",
+            "Card tricks",
+            "Forest fire"
+        ]
+    },
+    {
+        "q": "Why detect DNS wildcards?",
+        "o": [
+            "To filter out false positives during subdomain brute force",
+            "To see wildlife",
+            "To play cards",
+            "To find treasure"
+        ]
+    },
+    {
+        "q": "What is 'AXFR'?",
+        "o": [
+            "DNS Zone Transfer",
+            "AXE spray",
+            "Format conversion",
+            "Transfer money"
+        ]
+    },
+    {
+        "q": "What is 'IXFR'?",
+        "o": [
+            "Incremental Zone Transfer",
+            "Internet X",
+            "Internal Transfer",
+            "Individual X-ray"
+        ]
+    },
+    {
+        "q": "What is 'NSEC' walking?",
+        "o": [
+            "Enumerating DNS records via DNSSEC NSEC chain",
+            "Walking north",
+            "Security check",
+            "Nuclear sector"
+        ]
+    },
+    {
+        "q": "What is 'SMB' share brute force?",
+        "o": [
+            "Guessing share names like 'backup', 'finances'",
+            "Breaking shared toy",
+            "Sharing internet",
+            "Forcing share price"
+        ]
+    },
+    {
+        "q": "What is 'RID cycling'?",
+        "o": [
+            "Iterating Windows RIDs to find users/groups via SMB",
+            "Riding a bike",
+            "RecyclingBin",
+            "Reading IDs"
+        ]
+    },
+    {
+        "q": "What is 'null session' vulnerability?",
+        "o": [
+            "Legacy Windows flaw allowing anon enumeration",
+            "Empty session",
+            "Void session",
+            "Zero session"
+        ]
+    },
+    {
+        "q": "What is 'LDAP' anonymous bind?",
+        "o": [
+            "Connecting to LDAP without credentials",
+            "Secret binding",
+            "Book binding",
+            "Legal bind"
+        ]
+    },
+    {
+        "q": "What information can LDAP yield?",
+        "o": [
+            "Organizational structure, usernames, emails, phones",
+            "Lunch menu",
+            "Weather forecast",
+            "Traffic report"
+        ]
+    },
+    {
+        "q": "What is 'SNMP' community string brute force?",
+        "o": [
+            "Guessing strings like 'public', 'private', 'cisco'",
+            "Community service",
+            "String theory",
+            "Force field"
+        ]
+    },
+    {
+        "q": "What version of SNMP is encrypted by default?",
+        "o": [
+            "SNMPv3",
+            "SNMPv1",
+            "SNMPv2c",
+            "SNMPvZero"
+        ]
+    },
+    {
+        "q": "What is 'starttls' check?",
+        "o": [
+            "Checking if plain text protocol can upgrade to crypto",
+            "Starting engine",
+            "Starting race",
+            "Star wars"
+        ]
+    },
+    {
+        "q": "What is 'open proxy' check?",
+        "o": [
+            "Checking if a server forwards traffic for anyone",
+            "Open door",
+            "Open bar",
+            "Proxy war"
+        ]
+    },
+    {
+        "q": "What is 'SOCKS' enumeration?",
+        "o": [
+            "Identifying SOCKS proxy version and auth",
+            "Counting socks",
+            "Folding socks",
+            "Buying socks"
+        ]
+    },
+    {
+        "q": "What is 'SSH' user enumeration?",
+        "o": [
+            "Timing analysis to guess valid users (sometimes possible)",
+            "Logging into SSH",
+            "Generating keys",
+            "Secure shell game"
+        ]
+    },
+    {
+        "q": "What is 'SSH' banner grabbing?",
+        "o": [
+            "Getting SSH version (e.g. OpenSSH 7.4)",
+            "Grabbing a handle",
+            "Flag waving",
+            "Greeting"
+        ]
+    },
+    {
+        "q": "What is 'RDP' screenshotting?",
+        "o": [
+            "Using NSE script to capture login screen of RDP",
+            "Taking selfie",
+            "Recording video",
+            "Drawing screen"
+        ]
+    },
+    {
+        "q": "What NSE script takes RDP screenshot?",
+        "o": [
+            "rdp-screenshot",
+            "rdp-pic",
+            "screen-rdp",
+            "grab-screen"
+        ]
+    },
+    {
+        "q": "What is 'VNC' auth bypass check?",
+        "o": [
+            "Checking for vulnerabilities allowing no-auth access",
+            "Bypassing security guard",
+            "Jumping queue",
+            "Opening door"
+        ]
+    },
+    {
+        "q": "What is 'X11' unauthenticated access?",
+        "o": [
+            "Connecting to open X11 server to view/control screen",
+            "Watching TV",
+            "Playing X-box",
+            "Reading alphabet"
+        ]
+    },
+    {
+        "q": "What is 'finger' user brute force?",
+        "o": [
+            "Guessing usernames to query finger service",
+            "Thumb wrestling",
+            "Finger painting",
+            "Handshake"
+        ]
+    },
+    {
+        "q": "What is 'auth' service (identd)?",
+        "o": [
+            "Port 113, identifying user of a TCP connection",
+            "Authentication",
+            "Authoring",
+            "Authority"
+        ]
+    },
+    {
+        "q": "What implies active recon 'persistence'?",
+        "o": [
+            "Repeatedly scanning over time to spot changes",
+            "Installing malware",
+            "Never giving up",
+            "Staying awake"
+        ]
+    },
+    {
+        "q": "What is 'diffing' scan results?",
+        "o": [
+            "Comparing two scans to see new/closed ports",
+            "Different results",
+            "Difficult math",
+            "Diffusion"
+        ]
+    },
+    {
+        "q": "What tool helps diff Nmap scans?",
+        "o": [
+            "Ndiff",
+            "DiffTool",
+            "CompScan",
+            "ScannerDiff"
+        ]
+    },
+    {
+        "q": "What is 'zenmap'?",
+        "o": [
+            "GUI frontend for Nmap",
+            "Meditation map",
+            "Zen gardening",
+            "Zero map"
+        ]
+    },
+    {
+        "q": "What allows visualization of network topology in Zenmap?",
+        "o": [
+            "Topology tab",
+            "Magic button",
+            "VR headset",
+            "3D glasses"
+        ]
+    },
+    {
+        "q": "What is 'profile' in Zenmap?",
+        "o": [
+            "Saved set of Nmap options",
+            "Social media profile",
+            "Side view of face",
+            "Pro file"
+        ]
+    },
+    {
+        "q": "What is 'WAF' fingerprinting via active recon?",
+        "o": [
+            "Sending specific payloads to provoke unique error messages from WAF",
+            "Taking fingerprints of wires",
+            "Scanning wife",
+            "Checking weather"
+        ]
+    },
+    {
+        "q": "What is 'TCP Connect' scan advantage over SYN?",
+        "o": [
+            "It does not require root/admin privileges",
+            "It is faster",
+            "It is stealthier",
+            "It is newer"
+        ]
+    },
+    {
+        "q": "What is 'ICMP' flooding in recon?",
+        "o": [
+            "Sending many pings to test response under load (or DoS)",
+            "Flooding the room",
+            "Water damage",
+            "Crying"
+        ]
+    },
+    {
+        "q": "What is 'Hping3' flood mode?",
+        "o": [
+            "--flood mode sends packets as fast as possible",
+            "Water mode",
+            "Light mode",
+            "Dark mode"
+        ]
+    },
+    {
+        "q": "What is 'port' 161?",
+        "o": [
+            "SNMP (UDP)",
+            "SSH",
+            "HTTP",
+            "FTP"
+        ]
+    },
+    {
+        "q": "What is 'port' 162?",
+        "o": [
+            "SNMP Trap",
+            "SSH Trap",
+            "Mouse Trap",
+            "Bear Trap"
+        ]
+    },
+    {
+        "q": "What implies a 'closed' UDP port?",
+        "o": [
+            "ICMP Port Unreachable message is received",
+            "No response",
+            "RST packet",
+            "SYN/ACK packet"
+        ]
+    },
+    {
+        "q": "What implies an 'open|filtered' UDP port?",
+        "o": [
+            "No response received (could be open or dropped by firewall)",
+            "ICMP Unreachable",
+            "RST packet received",
+            "Data received"
+        ]
+    },
+    {
+        "q": "What implies an 'open' UDP port?",
+        "o": [
+            "Data payload returned from application",
+            "No response",
+            "ICMP Unreachable",
+            "RST packet"
+        ]
+    },
+    {
+        "q": "What is 'NetBIOS' enumeration?",
+        "o": [
+            "Querying NBNS (port 137) for names and group info",
+            "Bio scanner",
+            "Network biology",
+            "Basic IO system"
+        ]
+    },
+    {
+        "q": "What tool enumerates NetBIOS?",
+        "o": [
+            "nbtscan",
+            "bios-check",
+            "net-tool",
+            "scan-bio"
+        ]
+    },
+    {
+        "q": "What is 'LLMNR' poisoning?",
+        "o": [
+            "Responding to multicast name resolution requests to steal hash",
+            "Food poisoning",
+            "Poison ivy",
+            "Chemical spill"
+        ]
+    },
+    {
+        "q": "What is 'Responder' tool?",
+        "o": [
+            "Tool to conduct LLMNR/NBT-NS poisoning",
+            "Fire truck",
+            "Ambulance",
+            "Answering machine"
+        ]
+    },
+    {
+        "q": "What is 'Active Directory' enumeration?",
+        "o": [
+            "Querying LDAP/Global Catalog for domain objects",
+            "Phone book",
+            "Yellow pages",
+            "Directing traffic"
+        ]
+    },
+    {
+        "q": "What is 'BloodHound'?",
+        "o": [
+            "Tool to visualize AD attack paths",
+            "Dog breed",
+            "Vampire movie",
+            "Red liquid"
+        ]
+    },
+    {
+        "q": "What does BloodHound use to collect data?",
+        "o": [
+            "SharpHound (collector)",
+            "BloodBag",
+            "VeinTapping",
+            "ToothPick"
+        ]
+    },
+    {
+        "q": "What is 'Kerberoasting'?",
+        "o": [
+            "Requesting tickets for service accounts to crack offline",
+            "Roasting marshmallows",
+            "Cooking turkey",
+            "Heating bread"
+        ]
+    },
+    {
+        "q": "What active recon step facilitates Kerberoasting?",
+        "o": [
+            "Identifying accounts with SPNs (Service Principal Names)",
+            "Identifying open ports",
+            "Identifying OS",
+            "Identifying wifi"
+        ]
+    },
+    {
+        "q": "What is 'AS-REP Roasting'?",
+        "o": [
+            "Targeting users w/o pre-auth required to get TGT hash",
+            "Coffee roasting",
+            "Comedy roast",
+            "Oven cooking"
+        ]
+    },
+    {
+        "q": "What is 'WinRM' port?",
+        "o": [
+            "5985 (HTTP) / 5986 (HTTPS)",
+            "80",
+            "443",
+            "22"
+        ]
+    },
+    {
+        "q": "What is 'evil-winrm'?",
+        "o": [
+            "Shell access tool via WinRM",
+            "Bad windows",
+            "Virus installer",
+            "Malware scanner"
+        ]
+    },
+    {
+        "q": "What is 'WMI' enumeration?",
+        "o": [
+            "Querying Windows Management Instrumentation for deep system info",
+            "Wireless Management",
+            "World Medical Info",
+            "Water Meter Index"
+        ]
+    },
+    {
+        "q": "What is 'RNDC' port?",
+        "o": [
+            "953 (BIND DNS control)",
+            "53",
+            "80",
+            "21"
+        ]
+    },
+    {
+        "q": "What is active 'Vhost' discovery?",
+        "o": [
+            "Checking response size variance for different Host headers",
+            "Virtual discovery channel",
+            "Hosting awards",
+            "Discovery network"
+        ]
+    },
+    {
+        "q": "What is 'ffuf'?",
+        "o": [
+            "Fast web fuzzer written in Go",
+            "Fluffy dog",
+            "Funny stuff",
+            "Fast Forward"
+        ]
+    },
+    {
+        "q": "What does 'ffuf -w wordlist -u url' do?",
+        "o": [
+            "Fuzzes the URL using words from wordlist",
+            "Downloads wordlist",
+            "Uploads wordlist",
+            "Deletes url"
+        ]
+    },
+    {
+        "q": "What is 'Gobuster' dns mode?",
+        "o": [
+            "Brute-forcing subdomains",
+            "Busting ghosts",
+            "Cleaning pipes",
+            "Busting clouds"
+        ]
+    },
+    {
+        "q": "What is 'VHost' mode in Gobuster?",
+        "o": [
+            "Brute-forcing virtual hosts",
+            "Virtual reality",
+            "Video hosting",
+            "Voice chat"
+        ]
+    },
+    {
+        "q": "What is active 'email verification'?",
+        "o": [
+            "Connecting to SMTP and trying commands like VRFY",
+            "Reading email",
+            "Sending email",
+            "Deleting email"
+        ]
+    },
+    {
+        "q": "What implies active 'cache poisoning' check?",
+        "o": [
+            "Sending headers to see if response gets cached for others",
+            "Poisoning food",
+            "Checking expiration date",
+            "Cleaning cache"
+        ]
+    },
+    {
+        "q": "What is 'HTTP Request Smuggling' check?",
+        "o": [
+            "Sending ambiguous requests to see how front/backend parse them",
+            "Smuggling goods",
+            "Hiding files",
+            "Stealing cookies"
+        ]
+    },
+    {
+        "q": "What tools scan for request smuggling?",
+        "o": [
+            "HTTP Request Smuggler (Burp Extension)",
+            "SmuggleCheck",
+            "BorderPatrol",
+            "CustomsAgent"
+        ]
+    },
+    {
+        "q": "What implies 'active' vulnerability assessment?",
+        "o": [
+            "Sending specific payloads that trigger known bugs",
+            "Reading news",
+            "Checking versions",
+            "Asking admin"
+        ]
+    },
+    {
+        "q": "What is 'Out-of-Band' (OOB) interaction?",
+        "o": [
+            "Target connects back to attacker's server (e.g. DNS/HTTP callback)",
+            "Playing inside the band",
+            "Music concert",
+            "Wireless band"
+        ]
+    },
+    {
+        "q": "What is 'Burp Collaborator'?",
+        "o": [
+            "Server that captures OOB interactions for testing",
+            "Music collaboration",
+            "Team work",
+            "Office tool"
+        ]
+    },
+    {
+        "q": "What implies 'blind' vulnerability via active recon?",
+        "o": [
+            "No direct error/output, inferred from time delay or OOB",
+            "Blind fold",
+            "Can't see screen",
+            "Broken monitor"
+        ]
+    },
+    {
+        "q": "What is 'XXE' test via active recon?",
+        "o": [
+            "Sending XML with external entity reference",
+            "Playing tic tac toe",
+            "Extra Extra",
+            "X-ray vision"
+        ]
+    },
+    {
+        "q": "What is 'SSTI' test?",
+        "o": [
+            "Injecting template syntax (e.g. {{7*7}}) to see if evaluated",
+            "Safety training",
+            "Speed test",
+            "Sound test"
+        ]
+    },
+    {
+        "q": "What is 'Host header injection' check?",
+        "o": [
+            "Modifying Host header to see if it affects redirection/links",
+            "Hosting party",
+            "Headache",
+            "Hot head"
+        ]
+    },
+    {
+        "q": "What is 'SNI' in SSL scanning?",
+        "o": [
+            "Server Name Indication (allows multiple certs on one IP)",
+            "Sniper rifle",
+            "Serial Number Index",
+            "Super Nintendo"
+        ]
+    },
+    {
+        "q": "What active tool checks SSL/TLS configuration?",
+        "o": [
+            "testssl.sh",
+            "check-cert",
+            "ssl-scan-pro",
+            "tls-checker"
+        ]
+    },
+    {
+        "q": "What does 'testssl.sh' check?",
+        "o": [
+            "Weak ciphers, protocols, header issues, vulnerabilities",
+            "Shell scripts",
+            "Text files",
+            "Screen brightness"
+        ]
+    },
+    {
+        "q": "What is 'POODLE' vulnerability?",
+        "o": [
+            "SSLv3 downgrade attack",
+            "Dog breed",
+            "Pool noodle",
+            "Drawing tool"
+        ]
+    },
+    {
+        "q": "What is 'DROWN' scan?",
+        "o": [
+            "Checking for SSLv2 support affecting TLS security",
+            "Swimming lesson",
+            "Water park",
+            "Sinking ship"
+        ]
+    },
+    {
+        "q": "What is 'Log4Shell' active check?",
+        "o": [
+            "Sending JNDI string in headers to trigger callback",
+            "Logging wood",
+            "Shell game",
+            "Four logs"
+        ]
+    },
+    {
+        "q": "What is 'JNDI'?",
+        "o": [
+            "Java Naming and Directory Interface",
+            "Just No Doubt It",
+            "Jenny's New Diet",
+            "Jump N Dive"
+        ]
+    },
+    {
+        "q": "What implies 'race condition' testing?",
+        "o": [
+            "Sending multiple requests simultaneously to exploit timing",
+            "Running a marathon",
+            "Car racing",
+            "Horse betting"
+        ]
+    },
+    {
+        "q": "What is 'Turbo Intruder'?",
+        "o": [
+            "Burp extension for high-speed race condition/brute force",
+            "Fast burglar",
+            "Turbo car",
+            "Intrusion detector"
+        ]
+    },
+    {
+        "q": "What implies active 'API enumeration'?",
+        "o": [
+            "Fuzzing API endpoints to find hidden methods",
+            "Counting apps",
+            "Listing pies",
+            "Eating apples"
+        ]
+    },
+    {
+        "q": "What is 'GraphQL' introspection?",
+        "o": [
+            "Querying schema from __schema to see all types",
+            "Looking inside glass",
+            "Graphing calculator",
+            "Quality control"
+        ]
+    },
+    {
+        "q": "What if introspection is disabled?",
+        "o": [
+            "Must guess fields (Field Fuzzing)",
+            "Show is over",
+            "Go home",
+            "Use SQL"
+        ]
+    },
+    {
+        "q": "What is 'S3 bucket' active permission check?",
+        "o": [
+            "Trying to upload/delete files to public bucket",
+            "Filling bucket",
+            "Kicking bucket",
+            "Buying bucket"
+        ]
+    },
+    {
+        "q": "What is 'AWS CLI' use in recon?",
+        "o": [
+            "aws s3 ls s3://bucketname --no-sign-request",
+            "Ordering amazon",
+            "Watching prime video",
+            "Listening to music"
+        ]
+    },
+    {
+        "q": "What is 'Azure Blob' enumeration?",
+        "o": [
+            "Checking access to storage containers on Azure",
+            "Blue blob",
+            "Space blob",
+            "Paint blob"
+        ]
+    },
+    {
+        "q": "What is 'GCP' bucket enumeration?",
+        "o": [
+            "Checking Google Cloud Storage permissions",
+            "Google chat",
+            "Google phone",
+            "Google car"
+        ]
+    },
+    {
+        "q": "What active recon reveals 'internal IP' leakage?",
+        "o": [
+            "Headers like Content-Location or metadata exposing private IPs",
+            "Leaking pipe",
+            "Raining inside",
+            "Broken screen"
+        ]
+    },
+    {
+        "q": "What is 'Metadata' service on cloud instances?",
+        "o": [
+            "169.254.169.254 (active query to steal creds)",
+            "Data about data",
+            "Meta universe",
+            "Beta data"
+        ]
+    },
+    {
+        "q": "What is 'SSRF' (Server Side Request Forgery)?",
+        "o": [
+            "Tricking server into making requests to internal network",
+            "Surfing web",
+            "Forgery check",
+            "Signature verification"
+        ]
+    },
+    {
+        "q": "How to actively test for SSRF?",
+        "o": [
+            "Input a URL you control and check for callback",
+            "Ask nicely",
+            "Check logs",
+            "Wait patiently"
+        ]
+    },
+    {
+        "q": "What is 'blind' SSRF?",
+        "o": [
+            "Server makes request but returns no data (need OOB check)",
+            "Can't see server",
+            "Dark room",
+            "No monitor"
+        ]
+    },
+    {
+        "q": "What is 'Command Injection' check?",
+        "o": [
+            "Appending ; id or && whoami to inputs",
+            "Injecting medicine",
+            "Giving orders",
+            "Commanding officer"
+        ]
+    },
+    {
+        "q": "What implies active 'business logic' probing?",
+        "o": [
+            "Applying negative quantity in cart, skipping steps",
+            "Business meeting",
+            "Logical thinking",
+            "Suit and tie"
+        ]
+    },
+    {
+        "q": "What is 'IDOR' check?",
+        "o": [
+            "Changing ID in URL to see other user's data",
+            "Eye door",
+            "Identity verification",
+            "Door lock"
+        ]
+    },
+    {
+        "q": "What implies active 'privilege escalation' check?",
+        "o": [
+            "Trying to access admin pages as low user",
+            "Taking elevator",
+            "Climbing stairs",
+            "Getting promotion"
+        ]
+    },
+    {
+        "q": "What is 'LFI' (Local File Inclusion)?",
+        "o": [
+            "Trying to load ../../../etc/passwd via input",
+            "Loading file",
+            "Lifting weights",
+            "Looking for it"
+        ]
+    },
+    {
+        "q": "What is 'RFI' (Remote File Inclusion)?",
+        "o": [
+            "Trying to load http://attacker.com/malicious.php",
+            "Remote control",
+            "Radio frequency",
+            "Ready for it"
+        ]
+    },
+    {
+        "q": "What active check works for 'PUT' method?",
+        "o": [
+            "Trying to upload a file via HTTP PUT",
+            "Putting it down",
+            "Golf putt",
+            "Putting clothes on"
+        ]
+    },
+    {
+        "q": "What active check works for 'DELETE' method?",
+        "o": [
+            "Trying to delete a resource via HTTP DELETE",
+            "Deleting history",
+            "Deleting account",
+            "Emptying trash"
+        ]
+    },
+    {
+        "q": "What is 'OPTIONS' method check?",
+        "o": [
+            "Checking which HTTP methods are supported",
+            "Choosing options",
+            "Stock options",
+            "Configuration menu"
+        ]
+    },
+    {
+        "q": "What does 'Allow: GET, POST, TRACE' imply?",
+        "o": [
+            "TRACE is enabled (potential XST vulnerability)",
+            "Everything is fine",
+            "Trace is good",
+            "Post office"
+        ]
+    },
+    {
+        "q": "What is 'XST'?",
+        "o": [
+            "Cross-Site Tracing",
+            "Extra Small Tee",
+            "X-ray Station",
+            "Xenon Strobe"
+        ]
+    },
+    {
+        "q": "What active recon targets 'hidden' form fields?",
+        "o": [
+            "Changing values of type='hidden' inputs",
+            "Playing hide and seek",
+            "Hidden treasure",
+            "Invisible ink"
+        ]
+    },
+    {
+        "q": "What is 'CAPTCHA' bypass testing?",
+        "o": [
+            "Reusing tokens, removing captcha param, using OCR",
+            "Capture the flag",
+            "Captain America",
+            "Caps lock"
+        ]
+    },
+    {
+        "q": "What is '2FA' bypass testing?",
+        "o": [
+            "Brute-forcing code, race conditions, response manipulation",
+            "Two friends",
+            "Second floor",
+            "Double check"
+        ]
+    },
+    {
+        "q": "What is 'JWT' active testing?",
+        "o": [
+            "modifying algorithm to 'none', cracking signature",
+            "Jet water",
+            "Jewelry store",
+            "Jogging with time"
+        ]
+    },
+    {
+        "q": "What is 'WebSockets' active test?",
+        "o": [
+            "Injecting payloads into websocket frames (CSWSH)",
+            "Web surfing",
+            "Sock puppet",
+            "Plug in socket"
+        ]
+    },
+    {
+        "q": "What is 'CSWSH'?",
+        "o": [
+            "Cross-Site WebSocket Hijacking",
+            "Car Wash",
+            "Cash Wish",
+            "Computer Switch"
+        ]
+    },
+    {
+        "q": "What is 'protocol smuggling'?",
+        "o": [
+            "Embedding one protocol inside another to bypass inspection",
+            "Smuggling goods",
+            "Protocol droid",
+            "Secret handshake"
+        ]
+    },
+    {
+        "q": "What is 'start-up' scan?",
+        "o": [
+            "Scanning immediately after boot to catch unready services",
+            "Startup company",
+            "Starting car",
+            "Boot up sound"
+        ]
+    },
+    {
+        "q": "What is 'Continuous Security Monitoring'?",
+        "o": [
+            "Regular active scanning to catch new vulnerabilities",
+            "Watching TV forever",
+            "Security guard sleeping",
+            "Continuous music"
+        ]
+    },
+    {
+        "q": "What is 'Purple Teaming'?",
+        "o": [
+            "Red (attack) and Blue (defense) working actively together",
+            "Painting purple",
+            "Mixing colors",
+            "Purple rain"
+        ]
+    },
+    {
+        "q": "What is active 'Honeytoken' check?",
+        "o": [
+            "Checking if using a leaked credential triggers an alert",
+            "Eating honey",
+            "Spending token",
+            "Bee hive"
+        ]
+    },
+    {
+        "q": "What implies active recon 'noise'?",
+        "o": [
+            "Amount of logs generated on target",
+            "Loud sound",
+            "Music",
+            "Static"
+        ]
+    },
+    {
+        "q": "What is 'low and slow' attack?",
+        "o": [
+            "Slow traffic to evade rate limits and detection",
+            "BBQ cooking",
+            "Low rider car",
+            "Slow motion"
+        ]
+    },
+    {
+        "q": "What is 'distributed' scanning?",
+        "o": [
+            "Scanning from multiple IPs (botnet or cloud) to hide source",
+            "Distributing pamphlets",
+            "Delivery truck",
+            "Warehouse"
+        ]
+    },
+    {
+        "q": "What is 'sharding' a scan?",
+        "o": [
+            "Splitting the target range across multiple scanners",
+            "Breaking glass",
+            "Sharing lunch",
+            "Shark fishing"
+        ]
+    },
+    {
+        "q": "What is active 'default credential' check?",
+        "o": [
+            "Trying admin:admin, root:toor on services",
+            "Default settings",
+            "Factory reset",
+            "Credit card check"
+        ]
+    },
+    {
+        "q": "What is 'Hydra' tool?",
+        "o": [
+            "Parallelized login cracker (active brute force)",
+            "Multi-headed snake",
+            "Marvel villain",
+            "Water monster"
+        ]
+    },
+    {
+        "q": "What is 'Medusa' tool?",
+        "o": [
+            "Parallel active login brute forcer",
+            "Snake hair lady",
+            "Stone gaze",
+            "Mythology"
+        ]
+    },
+    {
+        "q": "What is 'Patator'?",
+        "o": [
+            "Multi-purpose brute-forcer written in Python",
+            "Potato eater",
+            "Pattern matching",
+            "Patting back"
+        ]
+    },
+    {
+        "q": "What is 'Hashcat' role in active recon?",
+        "o": [
+            "Cracking hashes captured during active recon (e.g. handshake)",
+            "Cat with hash",
+            "Cooking hash browns",
+            "Petting cat"
+        ]
+    },
+    {
+        "q": "What is 'John the Ripper'?",
+        "o": [
+            "Password cracker",
+            "Serial killer",
+            "Paper ripping",
+            "Gym workout"
+        ]
+    },
+    {
+        "q": "What active recon targets 'IoT'?",
+        "o": [
+            "Scanning for MQTT, RTSP, CoAP ports",
+            "Internet of Things",
+            "Ice Tea",
+            "Robot toys"
+        ]
+    },
+    {
+        "q": "What is 'MQTT' port?",
+        "o": [
+            "1883",
+            "22",
+            "80",
+            "443"
+        ]
+    },
+    {
+        "q": "What is 'RTSP' port?",
+        "o": [
+            "554 (Real Time Streaming Protocol)",
+            "80",
+            "21",
+            "25"
+        ]
+    },
+    {
+        "q": "What is 'CoAP'?",
+        "o": [
+            "Constrained Application Protocol (UDP)",
+            "Soap brand",
+            "Map company",
+            "Police officer"
+        ]
+    },
+    {
+        "q": "What implies active recon 'ethics'?",
+        "o": [
+            "Only scanning what you have permission to scan",
+            "Being nice",
+            "Saying please",
+            "Paying money"
+        ]
+    },
+    {
+        "q": "What is 'Bug Bounty' active recon?",
+        "o": [
+            "Scanning authorized targets for reward",
+            "Killing bugs",
+            "Hunting animals",
+            "Chocolate bar"
+        ]
+    },
+    {
+        "q": "What is 'VDP' (Vulnerability Disclosure Program)?",
+        "o": [
+            "Policy active scanners follow to report bugs",
+            "Video display",
+            "Very deep pool",
+            "Violin player"
+        ]
+    },
+    {
+        "q": "What implies 'safe harbour' clauses?",
+        "o": [
+            "Legal protection for good faith security research",
+            "Boat parking",
+            "Safe box",
+            "Harbor freight"
+        ]
+    },
+    {
+        "q": "What is 'C2' beaconing traffic?",
+        "o": [
+            "Malware calling home (detectable by active monitoring)",
+            "Sea two",
+            "See through",
+            "Carbon copy"
+        ]
+    },
+    {
+        "q": "What active tool can modify traffic on the fly?",
+        "o": [
+            "Burp Suite Proxy or MITMproxy",
+            "VLC",
+            "Paint",
+            "Calculator"
+        ]
+    },
+    {
+        "q": "What is active 'downgrade attack'?",
+        "o": [
+            "Forcing a connection to use older, weaker protocol",
+            "Going downstairs",
+            "Lowering grade",
+            "Driving slow"
+        ]
+    },
+    {
+        "q": "What is 'HSTS' bypass?",
+        "o": [
+            "Stripping SSL/HSTS headers (SSL Stripping)",
+            "High speed train",
+            "Hot sauce",
+            "History book"
+        ]
+    },
+    {
+        "q": "What tool performs SSL Stripping?",
+        "o": [
+            "sslstrip",
+            "stripper",
+            "paint remover",
+            "wire stripper"
+        ]
+    },
+    {
+        "q": "What implies active 'session fixation'?",
+        "o": [
+            "Setting a user's session ID before they login",
+            "Fixing a chair",
+            "Therapy session",
+            "Glue"
+        ]
+    },
+    {
+        "q": "What is 'Session Puzzling'?",
+        "o": [
+            "Using session variables from one context for another purpose",
+            "Confusing puzzle",
+            "Logic game",
+            "Memory test"
+        ]
+    },
+    {
+        "q": "What is 'Polyglot' payload in active recon?",
+        "o": [
+            "A payload valid in multiple contexts (e.g. JPG, PHP, JS combined)",
+            "Speaking many languages",
+            "A fast scanner",
+            "A virus"
+        ]
+    },
+    {
+        "q": "What is 'Blind SQLi' time-based check?",
+        "o": [
+            "Injecting WAITFOR DELAY or SLEEP to detect vulnerability",
+            "Waiting for results",
+            "Checking clock",
+            "Slow database"
+        ]
+    },
+    {
+        "q": "What implies active 'Heap Spraying' detection?",
+        "o": [
+            "Filling memory with NOP sleds to exploit corruption",
+            "Watering garden",
+            "Cleaning memory",
+            "Deleting files"
+        ]
+    },
+    {
+        "q": "What is 'ROP' chain scanning?",
+        "o": [
+            "Scanning binaries for Return Oriented Programming gadgets",
+            "Rope climbing",
+            "Robot operation",
+            "Chain reaction"
+        ]
+    },
+    {
+        "q": "What is 'Dep' bypass check?",
+        "o": [
+            "Testing if Data Execution Prevention is enforced",
+            "Department check",
+            "Dependency check",
+            "Deep scan"
+        ]
+    },
+    {
+        "q": "What is 'ASLR' detection in active recon?",
+        "o": [
+            "Checking if memory addresses change on reboot/execution",
+            "Alphabet soup",
+            "Address book",
+            "Automatic steering"
+        ]
+    },
+    {
+        "q": "What implies 'Stack Canary' presence?",
+        "o": [
+            "A value on stack to detect buffer overflows",
+            "Bird in coal mine",
+            "Singing bird",
+            "Yellow icon"
+        ]
+    },
+    {
+        "q": "What is 'Format String' vulnerability active test?",
+        "o": [
+            "Sending %x %s to inputs to leak memory",
+            "Formatting disk",
+            "Text editor",
+            "String theory"
+        ]
+    },
+    {
+        "q": "What is 'Integer Overflow' probing?",
+        "o": [
+            "Sending max_int+1 values to cause wrap-around",
+            "Counting high",
+            "Math problem",
+            "Spilling water"
+        ]
+    },
+    {
+        "q": "What is 'Race Condition' in file upload?",
+        "o": [
+            "Accessing file before validation script deletes it",
+            "Uploading fast",
+            "Racing cars",
+            "Deleting fast"
+        ]
+    },
+    {
+        "q": "What is 'TOCTOU'?",
+        "o": [
+            "Time of Check to Time of Use",
+            "Tick Tock",
+            "Talking Parrot",
+            "Touch screen"
+        ]
+    },
+    {
+        "q": "What active recon targets 'Symlinks'?",
+        "o": [
+            "Creating links to sensitive files to bypass access controls",
+            "Linking websites",
+            "Sympathetic magic",
+            "Symbolic logic"
+        ]
+    },
+    {
+        "q": "What is 'dll hijacking' check?",
+        "o": [
+            "Placing malicious DLL in path to be loaded by app",
+            "Stealing DLLs",
+            "Deleting DLLs",
+            "Renaming DLLs"
+        ]
+    },
+    {
+        "q": "What implies active 'Unquoted Service Path' check?",
+        "o": [
+            "Checking valid windows services with spaces in path",
+            "Quoting poetry",
+            "Walking path",
+            "Service entrance"
+        ]
+    },
+    {
+        "q": "What is active 'Golden Ticket' attack prep?",
+        "o": [
+            "Dumping the KRBTGT hash active on DC",
+            "Buying movie ticket",
+            "Winning lottery",
+            "Gold mining"
+        ]
+    },
+    {
+        "q": "What is 'Silver Ticket'?",
+        "o": [
+            "Forging TGS for specific service using service hash",
+            "Second place",
+            "Silver coin",
+            "Movie theater"
+        ]
+    },
+    {
+        "q": "What is 'DCSync' attack?",
+        "o": [
+            "Impersonating a DC to replicate password hashes",
+            "Syncing music",
+            "Deleting computer",
+            "Direct current"
+        ]
+    },
+    {
+        "q": "What active tool performs DCSync?",
+        "o": [
+            "Mimikatz",
+            "CatScan",
+            "DogWalker",
+            "BirdWatcher"
+        ]
+    },
+    {
+        "q": "What is 'Pass-the-Hash'?",
+        "o": [
+            "Authenticating with hash instead of password",
+            "Passing ball",
+            "Cooking food",
+            "Secret handshake"
+        ]
+    },
+    {
+        "q": "What is 'Pass-the-Ticket'?",
+        "o": [
+            "Using stolen Kerberos ticket to authenticate",
+            "Train ride",
+            "Concert entry",
+            "Parking validation"
+        ]
+    },
+    {
+        "q": "What is 'Overpass-the-Hash'?",
+        "o": [
+            "Using hash to request a full Kerberos TGT",
+            "Building bridge",
+            "Flying over",
+            "Driving fast"
+        ]
+    },
+    {
+        "q": "What is active 'Skeleton Key' attack?",
+        "o": [
+            "Malware on DC allowing master password for any user",
+            "Key to castle",
+            "Halloween decoration",
+            "Bone structure"
+        ]
+    },
+    {
+        "q": "What is 'Shadow Copy' enumeration?",
+        "o": [
+            "Accessing VSS backups to steal ntds.dit",
+            "Shadow puppets",
+            "Copying paper",
+            "Dark room"
+        ]
+    },
+    {
+        "q": "What is active 'Token Impersonation'?",
+        "o": [
+            "Stealing access token of running process active",
+            "Arcade tokens",
+            "Acting class",
+            "Fake ID"
+        ]
+    },
+    {
+        "q": "What is 'GetSystem' command?",
+        "o": [
+            "Escalating to SYSTEM privileges",
+            "Getting computer",
+            "Buying system",
+            "Installing OS"
+        ]
+    },
+    {
+        "q": "What implies active 'autorun' check?",
+        "o": [
+            "Checking reg keys active for persistence",
+            "Running marathon",
+            "Automatic door",
+            "Self driving car"
+        ]
+    },
+    {
+        "q": "What is 'schtasks' enumeration?",
+        "o": [
+            "Listing scheduled tasks for persistence or privesc",
+            "School tasks",
+            "Schedule planner",
+            "Schematics"
+        ]
+    },
+    {
+        "q": "What is active 'service creation'?",
+        "o": [
+            "Creating a new service to run malware",
+            "Cleaning service",
+            "Helping others",
+            "Church service"
+        ]
+    },
+    {
+        "q": "What is 'Reverse Shell'?",
+        "o": [
+            "Target connects back to attacker's listener active",
+            "Sea shell",
+            "Shell station",
+            "Tortoise shell"
+        ]
+    },
+    {
+        "q": "What is 'Bind Shell'?",
+        "o": [
+            "Attacker connects to open port on target",
+            "Binding book",
+            "Tying knot",
+            "Sticky situation"
+        ]
+    },
+    {
+        "q": "What is 'Web Shell'?",
+        "o": [
+            "Script uploaded to webroot allowing command execution",
+            "Spider web",
+            "Web surfing",
+            "Network cable"
+        ]
+    },
+    {
+        "q": "What implies active 'Meterpreter' session?",
+        "o": [
+            "Advanced payload offering complex post-exploitation",
+            "Measuring tape",
+            "Meteor shower",
+            "Parking meter"
+        ]
+    },
+    {
+        "q": "What is 'Pivoting' via SSH?",
+        "o": [
+            "-D flag for dynamic port forwarding active",
+            "Dancing",
+            "Spinning",
+            "Turning"
+        ]
+    },
+    {
+        "q": "What is active 'Port Forwarding'?",
+        "o": [
+            "Redirecting traffic from one port to another",
+            "Mailing letter",
+            "Moving forward",
+            "Shipping goods"
+        ]
+    },
+    {
+        "q": "What is 'Chisel' tool?",
+        "o": [
+            "TCP/UDP tunnel over HTTP",
+            "Wood working",
+            "Sculpting",
+            "Ice breaking"
+        ]
+    },
+    {
+        "q": "What is 'Ligolo'?",
+        "o": [
+            "Reverse tunneling tool active",
+            "Gigolo movie",
+            "Lego set",
+            "Italian city"
+        ]
+    },
+    {
+        "q": "What implies active 'data exfiltration'?",
+        "o": [
+            "Extracting sensitive data via DNS, HTTP, or ICMP",
+            "Filtering water",
+            "Leaving room",
+            "Deleting data"
+        ]
+    },
+    {
+        "q": "What is 'Steganography' in exfiltration?",
+        "o": [
+            "Hiding data within image files active",
+            "Dinosaur study",
+            "Writing shorthand",
+            "Recording audio"
+        ]
+    },
+    {
+        "q": "What is active 'Covering Tracks'?",
+        "o": [
+            "Deleting logs (wevtutil cl), clearing bash history",
+            "Running fast",
+            "Hiding footprints",
+            "Playing music"
+        ]
+    },
+    {
+        "q": "What is 'Timestomping'?",
+        "o": [
+            "Modifying file timestamps to blend in active",
+            "Stomping feet",
+            "Time travel",
+            "Watch repair"
+        ]
+    },
+    {
+        "q": "What is 'Rootkit' installation?",
+        "o": [
+            "Hiding presence at kernel/OS level active",
+            "Gardening kit",
+            "Tooth canal",
+            "Plumbing"
+        ]
+    },
+    {
+        "q": "What is active 'Process Injection'?",
+        "o": [
+            "Injecting code into valid running process (e.g. explorer.exe)",
+            "Medical shot",
+            "Manufacturing",
+            "Legal process"
+        ]
+    },
+    {
+        "q": "What is 'Reflective DLL Injection'?",
+        "o": [
+            "Loading DLL from memory without touching disk active",
+            "Mirror image",
+            "Thinking deeply",
+            "Light reflection"
+        ]
+    },
+    {
+        "q": "What is active 'AMSI' bypass?",
+        "o": [
+            "Disabling Antimalware Scan Interface in PowerShell",
+            "Driving car",
+            "Skipping class",
+            "Avoiding toll"
+        ]
+    },
+    {
+        "q": "What is 'ETW' patching?",
+        "o": [
+            "Disabling Event Tracing for Windows actively",
+            "Sewing clothes",
+            "Fixing tire",
+            "Software update"
+        ]
+    },
+    {
+        "q": "What is 'AppLocker' bypass?",
+        "o": [
+            "Running blocked executables via allowed paths/methods",
+            "Locking app",
+            "Opening door",
+            "Buying app"
+        ]
+    },
+    {
+        "q": "What active tool creates malicious Office macros?",
+        "o": [
+            "MacroPack or similar active usage",
+            "Microsoft Office",
+            "Notepad",
+            "Calculator"
+        ]
+    },
+    {
+        "q": "What is 'HTML Smuggling'?",
+        "o": [
+            "Delivering malware blob via JS/HTML5 download attribute active",
+            "Smuggling goods",
+            "Web design",
+            "Coding HTML"
+        ]
+    },
+    {
+        "q": "What is 'Clickjacking' test?",
+        "o": [
+            "Checking X-Frame-Options header active",
+            "Clicking mouse",
+            "Stealing car",
+            "Jack in box"
+        ]
+    },
+    {
+        "q": "What is 'Open Redirect' probing?",
+        "o": [
+            "Injecting external URL into redirect parameter active",
+            "Opening door",
+            "Redirecting mail",
+            "Traffic sign"
+        ]
+    },
+    {
+        "q": "What is 'CRL' checking?",
+        "o": [
+            "Certificate Revocation List check",
+            "Curl command",
+            "Coral reef",
+            "Christmas light"
+        ]
+    },
+    {
+        "q": "What is 'OCSP' stapling?",
+        "o": [
+            "Server provides revocation status active",
+            "Stapling paper",
+            "Office supply",
+            "Post stamp"
+        ]
+    },
+    {
+        "q": "What is active 'Subdomain Takeover' verification?",
+        "o": [
+            "Creating the resource at the unclaimed provider active",
+            "Taking over world",
+            "Buying domain",
+            "Deleting DNS"
+        ]
+    },
+    {
+        "q": "What implies active 'Prototype Pollution'?",
+        "o": [
+            "Injecting properties into Object.prototype active",
+            "Polluting water",
+            "Car prototype",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "What is 'Insecure Deserialization' payload?",
+        "o": [
+            "Serialized object containing malicious command active",
+            "Cereal box",
+            "Serial number",
+            "Eating breakfast"
+        ]
+    },
+    {
+        "q": "What is 'ysoserial'?",
+        "o": [
+            "Tool to generate deserialization payloads",
+            "Why so serious",
+            "Cereal killer",
+            "Serial port"
+        ]
+    },
+    {
+        "q": "What implies active 'padding oracle' attack?",
+        "o": [
+            "Decrypting data by analyzing padding errors active",
+            "Padding coat",
+            "Ancient oracle",
+            "Soft pillow"
+        ]
+    },
+    {
+        "q": "What is 'BEAST' attack?",
+        "o": [
+            "SSL/TLS exploit (Browser Exploit Against SSL/TLS)",
+            "Wild animal",
+            "Gym mode",
+            "Scary movie"
+        ]
+    },
+    {
+        "q": "What is 'CRIME' attack?",
+        "o": [
+            "Compression Ratio Info-leak Made Easy (SSL/TLS)",
+            "Breaking law",
+            "Police investigation",
+            "Jail time"
+        ]
+    },
+    {
+        "q": "What is 'BREACH' attack?",
+        "o": [
+            "Browser Reconnaissance and Exfiltration via Adaptive Compression of Hypertext",
+            "Whale breach",
+            "Breaking wall",
+            "Security breach"
+        ]
+    },
+    {
+        "q": "What is 'lucky13' attack?",
+        "o": [
+            "Timing attack against TLS CBC active",
+            "Betting game",
+            "Number 13",
+            "Good luck"
+        ]
+    },
+    {
+        "q": "What implies active 'credential stuffing'?",
+        "o": [
+            "Automated testing of stolen credentials against site active",
+            "Stuffing turkey",
+            "Packing bags",
+            "Eating food"
+        ]
+    },
+    {
+        "q": "What is 'password spraying'?",
+        "o": [
+            "Trying one password against many accounts active",
+            "Spray painting",
+            "Watering plants",
+            "Cleaning window"
+        ]
+    },
+    {
+        "q": "Why use 'spraying' over 'brute force'?",
+        "o": [
+            "Avoids account lockout policies",
+            "It is faster",
+            "It is cleaner",
+            "It smells better"
+        ]
+    },
+    {
+        "q": "What is active 'MFA fatigue' (MFA Bombing)?",
+        "o": [
+            "Spamming push notifications until user accepts",
+            "Being tired",
+            "Explosion",
+            "Sleeping"
+        ]
+    },
+    {
+        "q": "What active recon targets 'GraphQL' endpoint?",
+        "o": [
+            "/graphql or /v1/graphql active fuzzing",
+            "/admin",
+            "/login",
+            "/setup"
+        ]
+    },
+    {
+        "q": "What is 'batch' query attack in GraphQL?",
+        "o": [
+            "Sending multiple queries in one request (DoS/Brute force)",
+            "Baking cookies",
+            "Batch file",
+            "Group photo"
+        ]
+    },
+    {
+        "q": "What does active recon require to be 'ethical'?",
+        "o": [
+            "Explicit written permission (Scope of Work)",
+            "A smile",
+            "Good intentions",
+            "A degree"
+        ]
+    },
+    {
+        "q": "What is 'RoE'?",
+        "o": [
+            "Rules of Engagement",
+            "Fish eggs",
+            "Row boat",
+            "Red or Even"
+        ]
+    },
+    {
+        "q": "What is 'Get-out-of-jail-free' card in pentesting?",
+        "o": [
+            "Letter of Authorization active",
+            "Monopoly card",
+            "Bribe",
+            "Fast car"
+        ]
+    },
+    {
+        "q": "What is 'Risk Assessment' before active recon?",
+        "o": [
+            "Evaluating potential for service disruption active",
+            "Gambling",
+            "Insurance",
+            "Safety drill"
+        ]
+    },
+    {
+        "q": "What is 'cleanup' post active recon?",
+        "o": [
+            "Removing tools, shells, users, logs active",
+            "Vacuuming",
+            "Washing hands",
+            "Taking shower"
+        ]
+    },
+    {
+        "q": "What is 'Debrief'?",
+        "o": [
+            "Explaining findings to client active",
+            "Removing underwear",
+            "Brief inspection",
+            "Short meeting"
+        ]
+    },
+    {
+        "q": "Who is 'Responsible' for damage during active recon?",
+        "o": [
+            "The tester (unless otherwise specified/indemnified)",
+            "The computer",
+            "The internet",
+            "Nobody"
+        ]
+    },
+    {
+        "q": "What is the ultimate goal of Active Recon?",
+        "o": [
+            "Obtain actionable intelligence for exploitation/defense",
+            "Have fun",
+            "Break things",
+            "Be a spy"
+        ]
+    },
+    {
+        "q": "What is IPv6 scanning challenge in active recon?",
+        "o": [
+            "Massive address space makes traditional scan infeasible",
+            "IPv6 is faster to scan than IPv4 networks",
+            "All IPv6 addresses are already documented",
+            "IPv6 does not support port scanning"
+        ]
+    },
+    {
+        "q": "What technique helps discover IPv6 hosts efficiently?",
+        "o": [
+            "Using DNS AAAA records and link-local multicast",
+            "Scanning every possible IPv6 address sequentially",
+            "Converting all IPv4 addresses to IPv6 format",
+            "Waiting for hosts to announce themselves"
+        ]
+    },
+    {
+        "q": "What is fe80:: prefix in IPv6 scanning?",
+        "o": [
+            "Link-local address scope for local segment only",
+            "Global unicast routable address prefix",
+            "Multicast group address identifier",
+            "Anycast service identifier prefix"
+        ]
+    },
+    {
+        "q": "What tool specializes in IPv6 network reconnaissance?",
+        "o": [
+            "THC-IPv6 toolkit with alive6 and others",
+            "Standard nmap with no modifications needed",
+            "Wireshark packet capture only",
+            "Basic ping command utility"
+        ]
+    },
+    {
+        "q": "What is cloud metadata service enumeration target?",
+        "o": [
+            "169.254.169.254 for AWS, Azure, and GCP instances",
+            "192.168.1.1 for all cloud provider services",
+            "8.8.8.8 for Google Cloud Platform only",
+            "127.0.0.1 for localhost metadata access"
+        ]
+    },
+    {
+        "q": "What information can IMDS v1 expose on AWS?",
+        "o": [
+            "IAM credentials, instance identity, and user-data",
+            "Only the instance public IP address value",
+            "Billing information and account details",
+            "Other customer data in shared tenancy"
+        ]
+    },
+    {
+        "q": "How does IMDS v2 protect against SSRF attacks?",
+        "o": [
+            "Requires session token from PUT request first",
+            "Blocks all requests from within instance",
+            "Uses strong password authentication only",
+            "Encrypts all metadata with customer key"
+        ]
+    },
+    {
+        "q": "What is container escape detection in active recon?",
+        "o": [
+            "Finding paths from container to host system",
+            "Exiting the terminal window gracefully",
+            "Stopping all running container services",
+            "Deleting container images from registry"
+        ]
+    },
+    {
+        "q": "What indicates potential container escape path?",
+        "o": [
+            "Privileged mode, host mounts, or cap_sys_admin",
+            "Container having network connectivity",
+            "Container running with resource limits",
+            "Container using non-root user account"
+        ]
+    },
+    {
+        "q": "What is Kubernetes API server enumeration?",
+        "o": [
+            "Querying API at 6443 or 443 for cluster info",
+            "Connecting to kubectl on local machine",
+            "Deleting all pods in the namespace",
+            "Creating new cluster from scratch"
+        ]
+    },
+    {
+        "q": "What tool helps enumerate Kubernetes clusters?",
+        "o": [
+            "kube-hunter for security weakness scanning",
+            "Docker desktop application only",
+            "Standard web browser interface",
+            "Text editor for YAML files"
+        ]
+    },
+    {
+        "q": "What is service mesh enumeration in modern infra?",
+        "o": [
+            "Mapping Istio, Linkerd, or Consul proxies",
+            "Finding all mesh WiFi access points",
+            "Counting physical network cables",
+            "Listing all fishing net materials"
+        ]
+    },
+    {
+        "q": "What is sidecar proxy fingerprinting?",
+        "o": [
+            "Identifying Envoy or other proxy versions",
+            "Counting motorcycle sidecars in traffic",
+            "Finding browser proxy configurations",
+            "Detecting VPN client installations"
+        ]
+    },
+    {
+        "q": "What is API gateway enumeration in microservices?",
+        "o": [
+            "Discovering Kong, AWS API Gateway, or Apigee",
+            "Finding the main entrance to building",
+            "Mapping all airport gates globally",
+            "Listing toll booth locations"
+        ]
+    },
+    {
+        "q": "What header reveals API gateway presence?",
+        "o": [
+            "X-Amzn-RequestId, Via, or X-Kong-headers",
+            "Content-Type header exclusively",
+            "Accept-Language header value",
+            "Cache-Control header setting"
+        ]
+    },
+    {
+        "q": "What is serverless function enumeration?",
+        "o": [
+            "Discovering Lambda, Azure Functions endpoints",
+            "Finding servers without power supply",
+            "Mapping data centers with no staff",
+            "Listing abandoned server rooms"
+        ]
+    },
+    {
+        "q": "What indicates AWS Lambda behind API Gateway?",
+        "o": [
+            "Specific error formats and execution timing",
+            "Standard Apache server signature",
+            "IIS server response headers",
+            "Nginx default configuration"
+        ]
+    },
+    {
+        "q": "What is JA3 fingerprinting in TLS reconnaissance?",
+        "o": [
+            "Hashing TLS client hello parameters",
+            "Checking TLS certificate validity",
+            "Counting TLS handshake packets",
+            "Measuring TLS connection speed"
+        ]
+    },
+    {
+        "q": "What can JA3S fingerprint identify?",
+        "o": [
+            "Server TLS configuration and software",
+            "Client operating system version",
+            "User browser history data",
+            "Website content and structure"
+        ]
+    },
+    {
+        "q": "What is JARM fingerprinting technique?",
+        "o": [
+            "Active TLS server fingerprinting by probing",
+            "Passive traffic analysis only",
+            "Decrypting TLS encrypted traffic",
+            "Breaking TLS certificate chains"
+        ]
+    },
+    {
+        "q": "What is HTTP/2 specific enumeration technique?",
+        "o": [
+            "Checking ALPN negotiation and SETTINGS frames",
+            "Using HTTP/1.0 GET requests only",
+            "Ignoring all connection headers",
+            "Disabling all encryption protocols"
+        ]
+    },
+    {
+        "q": "What is HTTP/3 QUIC reconnaissance challenge?",
+        "o": [
+            "UDP-based protocol requires different scanning",
+            "Works exactly like TCP port scanning",
+            "Cannot be scanned with any tools",
+            "Only uses port 80 for all traffic"
+        ]
+    },
+    {
+        "q": "What tool can perform QUIC protocol scanning?",
+        "o": [
+            "Nmap with specific scripts or quiche tools",
+            "Standard telnet command only",
+            "Basic netcat TCP connection",
+            "FTP client application"
+        ]
+    },
+    {
+        "q": "What is WebAssembly reconnaissance in active testing?",
+        "o": [
+            "Analyzing WASM modules for vulnerabilities",
+            "Assembling website from templates",
+            "Creating web server from scratch",
+            "Compiling JavaScript to bytecode"
+        ]
+    },
+    {
+        "q": "What is gRPC endpoint enumeration?",
+        "o": [
+            "Using grpcurl or similar to query services",
+            "Sending standard HTTP GET requests",
+            "Using basic curl with JSON body",
+            "Connecting via standard FTP client"
+        ]
+    },
+    {
+        "q": "What enables gRPC reflection for enumeration?",
+        "o": [
+            "Server-side reflection API enabled option",
+            "Client certificate authentication only",
+            "User password based authentication",
+            "IP address whitelisting rules"
+        ]
+    },
+    {
+        "q": "What is Protocol Buffer schema extraction?",
+        "o": [
+            "Retrieving .proto definitions from gRPC",
+            "Extracting DNA from biological samples",
+            "Decoding encrypted binary files",
+            "Converting images to vectors"
+        ]
+    },
+    {
+        "q": "What is MQTT broker enumeration?",
+        "o": [
+            "Connecting to 1883 or 8883 to list topics",
+            "Scanning for email server ports",
+            "Finding web proxy configurations",
+            "Mapping database connection strings"
+        ]
+    },
+    {
+        "q": "What wildcard subscription reveals MQTT data?",
+        "o": [
+            "Subscribing to # to see all topic messages",
+            "Connecting to random port numbers",
+            "Sending empty payload messages",
+            "Disconnecting immediately after connect"
+        ]
+    },
+    {
+        "q": "What is CoAP protocol active reconnaissance?",
+        "o": [
+            "UDP-based IoT protocol on port 5683 default",
+            "TCP-based web protocol on port 80",
+            "Email protocol on port 25 standard",
+            "File transfer on port 21 default"
+        ]
+    },
+    {
+        "q": "What is Zigbee network active scanning?",
+        "o": [
+            "Using SDR to capture and analyze 2.4GHz",
+            "Standard WiFi network scanning tools",
+            "Bluetooth low energy scanning apps",
+            "Infrared remote control testing"
+        ]
+    },
+    {
+        "q": "What is Z-Wave security assessment approach?",
+        "o": [
+            "Testing for S0 security downgrade attacks",
+            "Using standard network scanners only",
+            "Applying web vulnerability tests",
+            "Running SQL injection attacks"
+        ]
+    },
+    {
+        "q": "What is LoRaWAN security reconnaissance?",
+        "o": [
+            "Capturing join requests for key extraction",
+            "Scanning standard TCP/IP networks",
+            "Testing web application logins",
+            "Checking email server configs"
+        ]
+    },
+    {
+        "q": "What is active directory LDAP reconnaissance?",
+        "o": [
+            "Querying LDAP for user and group information",
+            "Scanning for open web directories",
+            "Finding shared network folders only",
+            "Checking printer queue status"
+        ]
+    },
+    {
+        "q": "What LDAP query reveals all domain users?",
+        "o": [
+            "(&(objectClass=user)(objectCategory=person))",
+            "SELECT * FROM users WHERE active=1",
+            "GET /users HTTP/1.1 Host: domain.com",
+            "cat /etc/passwd | grep domain"
+        ]
+    },
+    {
+        "q": "What is BloodHound data collection method?",
+        "o": [
+            "SharpHound or equivalent for AD mapping",
+            "Standard nmap network scanning tool",
+            "Wireshark packet capture analysis",
+            "Manual review of documentation"
+        ]
+    },
+    {
+        "q": "What attack path does BloodHound visualize?",
+        "o": [
+            "Shortest path to Domain Admin privileges",
+            "Network topology physical layout",
+            "Website navigation structure",
+            "Database schema relationships"
+        ]
+    },
+    {
+        "q": "What is Kerberoasting enumeration phase?",
+        "o": [
+            "Identifying SPNs associated with user accounts",
+            "Scanning for Kerberos port 88 only",
+            "Checking KDC server uptime status",
+            "Validating TGT ticket expiration times"
+        ]
+    },
+    {
+        "q": "What makes an SPN kerberoastable account?",
+        "o": [
+            "SPN set on user account not computer account",
+            "Any account with Kerberos enabled",
+            "Only administrator level accounts",
+            "Accounts with password never expires"
+        ]
+    },
+    {
+        "q": "What is AS-REP roasting enumeration?",
+        "o": [
+            "Finding users with pre-auth disabled flag",
+            "Scanning AS (Autonomous System) numbers",
+            "Checking router BGP configurations",
+            "Testing firewall rule effectiveness"
+        ]
+    },
+    {
+        "q": "What tool extracts AS-REP hashes for cracking?",
+        "o": [
+            "GetNPUsers.py from Impacket toolkit",
+            "Standard nmap port scanning script",
+            "Basic netcat connection testing",
+            "Wireshark passive capture only"
+        ]
+    },
+    {
+        "q": "What is constrained delegation abuse scanning?",
+        "o": [
+            "Finding accounts with delegation rights set",
+            "Checking network bandwidth constraints",
+            "Testing rate limiting on APIs",
+            "Measuring packet delay times"
+        ]
+    },
+    {
+        "q": "What is RBCD (Resource-Based Constrained Delegation)?",
+        "o": [
+            "Delegation configured on target not source",
+            "Role based access control delegation",
+            "Remote backup and copy deletion",
+            "Redundant binary code duplication"
+        ]
+    },
+    {
+        "q": "What is shadow credentials attack enumeration?",
+        "o": [
+            "Checking for msDS-KeyCredentialLink ability",
+            "Finding dark web credential dumps",
+            "Scanning for password in cleartext",
+            "Mapping hidden network services"
+        ]
+    },
+    {
+        "q": "What is ESC1 certificate template vulnerability?",
+        "o": [
+            "Template allowing SAN specification by user",
+            "Email security certificate issue",
+            "Encrypted storage container weakness",
+            "Enterprise service control flaw"
+        ]
+    },
+    {
+        "q": "What tool enumerates AD CS vulnerabilities?",
+        "o": [
+            "Certify or Certipy for template analysis",
+            "Standard OpenSSL certificate commands",
+            "Basic nmap SSL script scanning",
+            "Web browser certificate viewer"
+        ]
+    },
+    {
+        "q": "What is print spooler service reconnaissance target?",
+        "o": [
+            "Checking for PrintNightmare vulnerability",
+            "Counting physical printers on network",
+            "Testing print job queue delays",
+            "Scanning for paper jam errors"
+        ]
+    },
+    {
+        "q": "What is NTLM relay attack prerequisite scan?",
+        "o": [
+            "Finding services without signing required",
+            "Checking NTLM version numbers only",
+            "Validating password hash formats",
+            "Measuring authentication delays"
+        ]
+    },
+    {
+        "q": "What tool facilitates NTLM relay attacks?",
+        "o": [
+            "ntlmrelayx.py from Impacket framework",
+            "Standard telnet command utility",
+            "Basic ping connectivity test",
+            "FTP client application only"
+        ]
+    },
+    {
+        "q": "What is SCCM/MECM reconnaissance in enterprise?",
+        "o": [
+            "Finding deployment shares with credentials",
+            "Scanning for standard web servers",
+            "Testing email server connectivity",
+            "Checking DNS record accuracy"
+        ]
+    },
+    {
+        "q": "What is LAPS password enumeration technique?",
+        "o": [
+            "Querying AD for ms-Mcs-AdmPwd attribute",
+            "Brute forcing local admin passwords",
+            "Guessing common password patterns",
+            "Dictionary attack on user accounts"
+        ]
+    },
+    {
+        "q": "What is DPAPI secret extraction target?",
+        "o": [
+            "Encrypted credential blobs from user profile",
+            "API documentation public endpoints",
+            "Database connection string files",
+            "Web application configuration"
+        ]
+    },
+    {
+        "q": "What master key enables DPAPI decryption?",
+        "o": [
+            "Domain backup key or user password hash",
+            "Public RSA key from certificate store",
+            "Shared AES key across all domains",
+            "Static hardcoded encryption key"
+        ]
+    },
+    {
+        "q": "What is SAM database extraction technique?",
+        "o": [
+            "Copying SAM, SYSTEM, SECURITY from shadow copy",
+            "Downloading SAM file from Microsoft site",
+            "Generating SAM from user input data",
+            "Creating SAM using password manager"
+        ]
+    },
+    {
+        "q": "What is LSA secrets enumeration target?",
+        "o": [
+            "Service account passwords and cached creds",
+            "Public server documentation files",
+            "Network topology diagram data",
+            "User browser history records"
+        ]
+    },
+    {
+        "q": "What is EDR evasion reconnaissance?",
+        "o": [
+            "Identifying installed EDR and finding bypasses",
+            "Ignoring all endpoint security products",
+            "Disabling Windows Defender permanently",
+            "Removing antivirus from all systems"
+        ]
+    },
+    {
+        "q": "What syscall indicates direct system call use?",
+        "o": [
+            "Bypassing ntdll hooks via direct invocation",
+            "Standard API calls through Windows DLLs",
+            "Using PowerShell cmdlets exclusively",
+            "Running Python scripts on target"
+        ]
+    },
+    {
+        "q": "What is ETW blind spot enumeration?",
+        "o": [
+            "Finding events not logged by ETW providers",
+            "Scanning for all ETW event sources",
+            "Enabling maximum ETW logging level",
+            "Disabling all ETW trace sessions"
+        ]
+    },
+    {
+        "q": "What is parent PID spoofing detection?",
+        "o": [
+            "Process appearing under legitimate parent",
+            "Checking process CPU usage levels",
+            "Monitoring memory allocation size",
+            "Tracking network connection count"
+        ]
+    },
+    {
+        "q": "What is module stomping technique?",
+        "o": [
+            "Overwriting legitimate loaded DLL in memory",
+            "Deleting installed software modules",
+            "Crushing physical storage devices",
+            "Stomping on computer keyboard"
+        ]
+    }
+]

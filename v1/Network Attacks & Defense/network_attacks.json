@@ -1,0 +1,4547 @@
+[
+    {
+        "q": "What type of attack involves intercepting communication between two parties?",
+        "o": [
+            "Man-in-the-Middle attack",
+            "Denial of Service attack",
+            "Password brute force",
+            "Social engineering"
+        ]
+    },
+    {
+        "q": "Which protocol maps IP addresses to MAC addresses on a local network?",
+        "o": [
+            "ARP protocol",
+            "DNS protocol",
+            "HTTP protocol",
+            "FTP protocol"
+        ]
+    },
+    {
+        "q": "What does ARP stand for in networking terminology?",
+        "o": [
+            "Address Resolution Protocol",
+            "Advanced Routing Protocol",
+            "Application Response Protocol",
+            "Automated Redirect Process"
+        ]
+    },
+    {
+        "q": "Which layer of the OSI model does ARP operate at?",
+        "o": [
+            "Data Link Layer",
+            "Network Layer",
+            "Transport Layer",
+            "Application Layer"
+        ]
+    },
+    {
+        "q": "What is the primary purpose of DNS in computer networks?",
+        "o": [
+            "Translate domain names to IP addresses",
+            "Encrypt network traffic securely",
+            "Assign MAC addresses to devices",
+            "Route packets between networks"
+        ]
+    },
+    {
+        "q": "Which protocol assigns IP addresses automatically to network devices?",
+        "o": [
+            "DHCP protocol",
+            "SMTP protocol",
+            "ICMP protocol",
+            "SNMP protocol"
+        ]
+    },
+    {
+        "q": "What does VLAN stand for in network architecture?",
+        "o": [
+            "Virtual Local Area Network",
+            "Very Large Area Network",
+            "Variable Local Access Node",
+            "Virtual Link Access Network"
+        ]
+    },
+    {
+        "q": "In a MITM attack, where does the attacker position themselves?",
+        "o": [
+            "Between the victim and destination",
+            "Outside the network firewall",
+            "Inside the target server only",
+            "At the internet gateway alone"
+        ]
+    },
+    {
+        "q": "What is ARP spoofing also commonly known as?",
+        "o": [
+            "ARP cache poisoning attack",
+            "MAC address filtering bypass",
+            "IP address hijacking attempt",
+            "Network packet fragmentation"
+        ]
+    },
+    {
+        "q": "Which attack sends fake ARP replies to a target machine?",
+        "o": [
+            "ARP spoofing attack",
+            "DNS amplification attack",
+            "SYN flood attack",
+            "Ping of death"
+        ]
+    },
+    {
+        "q": "What information does an ARP table store on a network device?",
+        "o": [
+            "IP to MAC address mappings",
+            "DNS to IP address records",
+            "Port to service associations",
+            "User to password credentials"
+        ]
+    },
+    {
+        "q": "What is the main goal of DNS spoofing attacks?",
+        "o": [
+            "Redirect users to malicious websites",
+            "Block all network access entirely",
+            "Crash the target DNS server",
+            "Steal encryption keys directly"
+        ]
+    },
+    {
+        "q": "Which type of DNS record points to an IP address?",
+        "o": [
+            "A record type",
+            "MX record type",
+            "TXT record type",
+            "NS record type"
+        ]
+    },
+    {
+        "q": "What does DHCP stand for in networking?",
+        "o": [
+            "Dynamic Host Configuration Protocol",
+            "Direct Host Communication Protocol",
+            "Distributed Hardware Control Protocol",
+            "Domain Host Connection Process"
+        ]
+    },
+    {
+        "q": "Which DHCP message initiates the address assignment process?",
+        "o": [
+            "DHCP Discover message",
+            "DHCP Acknowledge message",
+            "DHCP Release message",
+            "DHCP Decline message"
+        ]
+    },
+    {
+        "q": "What is VLAN hopping used to achieve by attackers?",
+        "o": [
+            "Access traffic on other VLANs",
+            "Block all VLAN communications",
+            "Speed up network transfers",
+            "Create new VLAN segments"
+        ]
+    },
+    {
+        "q": "Which technique uses double tagging to hop VLANs?",
+        "o": [
+            "Double encapsulation attack",
+            "Single tag injection attack",
+            "Triple header insertion",
+            "Quad frame manipulation"
+        ]
+    },
+    {
+        "q": "What protocol does VLAN tagging commonly use?",
+        "o": [
+            "IEEE 802.1Q standard",
+            "IEEE 802.11 standard",
+            "IEEE 802.3 standard",
+            "IEEE 802.15 standard"
+        ]
+    },
+    {
+        "q": "In which scenario is ARP spoofing most effective?",
+        "o": [
+            "On the same local network",
+            "Across different subnets",
+            "Through internet connections",
+            "Via satellite links only"
+        ]
+    },
+    {
+        "q": "What tool is commonly used for ARP spoofing attacks?",
+        "o": [
+            "Ettercap tool",
+            "Wireshark alone",
+            "Nmap scanner",
+            "Ping utility"
+        ]
+    },
+    {
+        "q": "What is the purpose of gratuitous ARP packets?",
+        "o": [
+            "Announce IP-MAC changes to network",
+            "Request IP addresses from router",
+            "Encrypt data before transmission",
+            "Block unauthorized connections"
+        ]
+    },
+    {
+        "q": "Which defense mechanism protects against ARP spoofing?",
+        "o": [
+            "Dynamic ARP Inspection",
+            "Static IP addressing only",
+            "Simple packet filtering",
+            "Basic access control lists"
+        ]
+    },
+    {
+        "q": "What is DNS cache poisoning designed to accomplish?",
+        "o": [
+            "Insert false DNS entries into cache",
+            "Delete all DNS records permanently",
+            "Encrypt DNS traffic completely",
+            "Speed up DNS query responses"
+        ]
+    },
+    {
+        "q": "Which port does DNS typically operate on?",
+        "o": [
+            "Port 53",
+            "Port 80",
+            "Port 443",
+            "Port 22"
+        ]
+    },
+    {
+        "q": "What is a rogue DHCP server in network attacks?",
+        "o": [
+            "Unauthorized DHCP server on network",
+            "Backup DHCP server for failover",
+            "Primary DHCP server with updates",
+            "Virtual DHCP server in cloud"
+        ]
+    },
+    {
+        "q": "What can a rogue DHCP server provide to victims?",
+        "o": [
+            "Malicious gateway and DNS settings",
+            "Encrypted network credentials only",
+            "Faster internet connection speeds",
+            "Additional bandwidth allocation"
+        ]
+    },
+    {
+        "q": "Which switch feature helps prevent DHCP attacks?",
+        "o": [
+            "DHCP snooping feature",
+            "Port channel bonding",
+            "Spanning tree protocol",
+            "VLAN trunk pruning"
+        ]
+    },
+    {
+        "q": "What is switch spoofing in the context of VLANs?",
+        "o": [
+            "Pretending to be a trunk switch",
+            "Changing switch MAC address",
+            "Disabling switch port security",
+            "Modifying switch firmware"
+        ]
+    },
+    {
+        "q": "What does DTP stand for in Cisco networking?",
+        "o": [
+            "Dynamic Trunking Protocol",
+            "Direct Transfer Protocol",
+            "Distributed Timing Protocol",
+            "Data Transport Process"
+        ]
+    },
+    {
+        "q": "How can DTP be exploited for VLAN hopping?",
+        "o": [
+            "Negotiate trunk mode with switch",
+            "Block all DTP communications",
+            "Encrypt DTP packet headers",
+            "Disable DTP timeout values"
+        ]
+    },
+    {
+        "q": "What is the native VLAN used for on trunk ports?",
+        "o": [
+            "Untagged traffic transmission",
+            "Encrypted data only passing",
+            "Management traffic isolation",
+            "Broadcast storm prevention"
+        ]
+    },
+    {
+        "q": "Why should the native VLAN be changed from default?",
+        "o": [
+            "Prevent double tagging attacks",
+            "Increase network bandwidth speed",
+            "Reduce switch CPU utilization",
+            "Enable faster VLAN routing"
+        ]
+    },
+    {
+        "q": "What is ARP cache timeout used to determine?",
+        "o": [
+            "How long ARP entries are stored",
+            "Speed of ARP request packets",
+            "Size of the ARP table limit",
+            "Number of ARP retries allowed"
+        ]
+    },
+    {
+        "q": "Which attack combines DNS spoofing with phishing?",
+        "o": [
+            "Pharming attack technique",
+            "Smishing attack method",
+            "Vishing attack strategy",
+            "Whaling attack approach"
+        ]
+    },
+    {
+        "q": "What is the DHCP starvation attack designed to do?",
+        "o": [
+            "Exhaust available IP addresses",
+            "Crash the DHCP server directly",
+            "Encrypt DHCP communications",
+            "Speed up DHCP responses"
+        ]
+    },
+    {
+        "q": "Which tool can be used for DHCP starvation attacks?",
+        "o": [
+            "Yersinia tool",
+            "Burp Suite",
+            "Metasploit only",
+            "Nessus scanner"
+        ]
+    },
+    {
+        "q": "What does MAC flooding attack target on a switch?",
+        "o": [
+            "CAM table overflow attack",
+            "CPU processing power drain",
+            "Memory buffer exhaustion",
+            "Power supply overload"
+        ]
+    },
+    {
+        "q": "What happens when a switch CAM table is full?",
+        "o": [
+            "Switch broadcasts all traffic",
+            "Switch blocks all traffic",
+            "Switch reboots automatically",
+            "Switch encrypts all data"
+        ]
+    },
+    {
+        "q": "Which defense prevents MAC flooding attacks?",
+        "o": [
+            "Port security configuration",
+            "Simple access control lists",
+            "Basic packet filtering",
+            "Standard rate limiting"
+        ]
+    },
+    {
+        "q": "What is the purpose of IP source guard on switches?",
+        "o": [
+            "Prevent IP spoofing attacks",
+            "Speed up packet routing",
+            "Encrypt source addresses",
+            "Block broadcast traffic"
+        ]
+    },
+    {
+        "q": "Which protocol secures DNS communications?",
+        "o": [
+            "DNSSEC protocol",
+            "DNSSSL protocol",
+            "DNSTLS protocol",
+            "DNSVPN protocol"
+        ]
+    },
+    {
+        "q": "What does DNSSEC provide for DNS queries?",
+        "o": [
+            "Authentication and integrity",
+            "Encryption and compression",
+            "Speed and efficiency only",
+            "Caching and redundancy"
+        ]
+    },
+    {
+        "q": "What is a MITM proxy used for by attackers?",
+        "o": [
+            "Intercept and modify traffic",
+            "Block all network access",
+            "Speed up connections only",
+            "Encrypt traffic passively"
+        ]
+    },
+    {
+        "q": "Which tool is commonly used as a MITM proxy?",
+        "o": [
+            "Burp Suite proxy",
+            "Wireshark sniffer",
+            "Nmap scanner tool",
+            "Ping command only"
+        ]
+    },
+    {
+        "q": "What is SSL stripping in MITM attacks?",
+        "o": [
+            "Downgrade HTTPS to HTTP",
+            "Remove SSL certificates",
+            "Block all SSL traffic",
+            "Encrypt HTTP traffic"
+        ]
+    },
+    {
+        "q": "Which header helps prevent SSL stripping attacks?",
+        "o": [
+            "HSTS security header",
+            "CSP content header",
+            "CORS origin header",
+            "Cache control header"
+        ]
+    },
+    {
+        "q": "What is DNS tunneling used for by attackers?",
+        "o": [
+            "Exfiltrate data via DNS queries",
+            "Speed up DNS resolution time",
+            "Block malicious DNS requests",
+            "Encrypt DNS server traffic"
+        ]
+    },
+    {
+        "q": "Which type of DNS record is often used for tunneling?",
+        "o": [
+            "TXT record type",
+            "A record type only",
+            "MX record type only",
+            "SOA record type only"
+        ]
+    },
+    {
+        "q": "What is DHCP option 82 used for in networks?",
+        "o": [
+            "Relay agent information option",
+            "Server identification option",
+            "Client hostname option only",
+            "Lease time extension option"
+        ]
+    },
+    {
+        "q": "What is the lease time in DHCP terminology?",
+        "o": [
+            "Duration of IP address assignment",
+            "Time to process DHCP request",
+            "Timeout for DHCP discovery",
+            "Interval between renewals only"
+        ]
+    },
+    {
+        "q": "What does a trunk port carry between switches?",
+        "o": [
+            "Traffic from multiple VLANs",
+            "Traffic from single VLAN only",
+            "Encrypted management data only",
+            "Untagged traffic exclusively"
+        ]
+    },
+    {
+        "q": "What is inter-VLAN routing used to accomplish?",
+        "o": [
+            "Route traffic between VLANs",
+            "Block traffic between VLANs",
+            "Encrypt VLAN communications",
+            "Speed up VLAN switching"
+        ]
+    },
+    {
+        "q": "Which device typically performs inter-VLAN routing?",
+        "o": [
+            "Layer 3 switch or router",
+            "Layer 2 switch only",
+            "Network hub device",
+            "Wireless access point"
+        ]
+    },
+    {
+        "q": "What is ARP reply used for in normal operation?",
+        "o": [
+            "Respond with MAC address info",
+            "Request IP address assignment",
+            "Block unauthorized devices",
+            "Encrypt network traffic data"
+        ]
+    },
+    {
+        "q": "Which command displays ARP table on Windows?",
+        "o": [
+            "arp -a command",
+            "netstat -r command",
+            "ipconfig /all command",
+            "tracert host command"
+        ]
+    },
+    {
+        "q": "What is static ARP entry used to prevent?",
+        "o": [
+            "ARP spoofing attacks",
+            "DNS cache poisoning",
+            "DHCP starvation only",
+            "VLAN hopping attacks"
+        ]
+    },
+    {
+        "q": "Which layer does DNS spoofing primarily affect?",
+        "o": [
+            "Application layer attack",
+            "Data link layer attack",
+            "Physical layer attack only",
+            "Transport layer attack"
+        ]
+    },
+    {
+        "q": "What is a DNS amplification attack used for?",
+        "o": [
+            "Amplify DDoS attack traffic",
+            "Speed up DNS resolution",
+            "Block DNS queries only",
+            "Encrypt DNS responses"
+        ]
+    },
+    {
+        "q": "What makes DNS suitable for amplification attacks?",
+        "o": [
+            "Small query large response",
+            "Strong encryption support",
+            "Limited query rate only",
+            "Secure authentication"
+        ]
+    },
+    {
+        "q": "What is DHCP spoofing primarily used to achieve?",
+        "o": [
+            "Redirect victim traffic flow",
+            "Block DHCP server access",
+            "Speed up IP assignment time",
+            "Encrypt DHCP messages"
+        ]
+    },
+    {
+        "q": "Which network device is targeted in ARP attacks?",
+        "o": [
+            "Default gateway router",
+            "External DNS server only",
+            "Remote web server only",
+            "Cloud service provider"
+        ]
+    },
+    {
+        "q": "What information does DHCP Offer contain?",
+        "o": [
+            "Proposed IP and config data",
+            "Encrypted authentication token",
+            "Switch port configuration",
+            "VLAN membership details"
+        ]
+    },
+    {
+        "q": "What is the purpose of DHCP Request message?",
+        "o": [
+            "Accept offered IP address",
+            "Release current IP lease",
+            "Decline offered IP address",
+            "Inform of static IP config"
+        ]
+    },
+    {
+        "q": "What does DHCP Acknowledge confirm to client?",
+        "o": [
+            "IP address assignment complete",
+            "IP address request denied",
+            "Lease time extension only",
+            "Server shutdown notice"
+        ]
+    },
+    {
+        "q": "What is the 802.1Q tag size in bytes?",
+        "o": [
+            "4 bytes total",
+            "8 bytes total",
+            "2 bytes total",
+            "6 bytes total"
+        ]
+    },
+    {
+        "q": "Which field in 802.1Q identifies the VLAN?",
+        "o": [
+            "VLAN ID field value",
+            "Priority code point",
+            "Canonical format indicator",
+            "Tag protocol identifier"
+        ]
+    },
+    {
+        "q": "How many VLANs can 802.1Q support maximum?",
+        "o": [
+            "4094 VLANs total",
+            "1024 VLANs total",
+            "256 VLANs total",
+            "65535 VLANs total"
+        ]
+    },
+    {
+        "q": "What is private VLAN used to accomplish?",
+        "o": [
+            "Isolate ports within VLAN",
+            "Speed up VLAN routing",
+            "Encrypt VLAN traffic only",
+            "Block inter-VLAN traffic"
+        ]
+    },
+    {
+        "q": "What is a promiscuous port in private VLANs?",
+        "o": [
+            "Communicates with all ports",
+            "Blocked from all traffic",
+            "Limited to one connection",
+            "Encrypted traffic only"
+        ]
+    },
+    {
+        "q": "What is an isolated port in private VLANs?",
+        "o": [
+            "Cannot talk to other isolated ports",
+            "Communicates with all ports freely",
+            "Only handles encrypted traffic",
+            "Manages VLAN trunk connections"
+        ]
+    },
+    {
+        "q": "What is community port in private VLAN setup?",
+        "o": [
+            "Talks to same community ports",
+            "Isolated from all other ports",
+            "Connected to external networks",
+            "Manages VLAN configuration"
+        ]
+    },
+    {
+        "q": "Which attack exploits gratuitous ARP packets?",
+        "o": [
+            "ARP cache poisoning attack",
+            "DNS amplification attack only",
+            "DHCP starvation attack only",
+            "MAC flooding attack only"
+        ]
+    },
+    {
+        "q": "What is the purpose of Proxy ARP in networks?",
+        "o": [
+            "Answer ARP for other devices",
+            "Block all ARP traffic completely",
+            "Encrypt ARP communications",
+            "Speed up ARP resolution"
+        ]
+    },
+    {
+        "q": "What security risk does Proxy ARP introduce?",
+        "o": [
+            "Enables ARP spoofing attacks",
+            "Causes DNS cache issues only",
+            "Creates DHCP conflicts only",
+            "Blocks legitimate traffic"
+        ]
+    },
+    {
+        "q": "What is DNS rebinding attack designed to bypass?",
+        "o": [
+            "Same-origin policy protection",
+            "Firewall blocking rules only",
+            "Antivirus detection systems",
+            "Intrusion detection systems"
+        ]
+    },
+    {
+        "q": "How does DNS rebinding attack work technically?",
+        "o": [
+            "Changes DNS to internal IP",
+            "Blocks all DNS resolution",
+            "Encrypts DNS traffic data",
+            "Speeds up DNS queries"
+        ]
+    },
+    {
+        "q": "What is DHCP decline message used for?",
+        "o": [
+            "Reject offered IP address",
+            "Accept offered IP address",
+            "Release current IP address",
+            "Request IP address renewal"
+        ]
+    },
+    {
+        "q": "When does a client send DHCP Release?",
+        "o": [
+            "When giving up its IP lease",
+            "When requesting new IP address",
+            "When accepting offered IP",
+            "When declining offered IP"
+        ]
+    },
+    {
+        "q": "What is DHCP Inform used for by clients?",
+        "o": [
+            "Get config without IP request",
+            "Request new IP assignment",
+            "Release current IP address",
+            "Decline offered IP address"
+        ]
+    },
+    {
+        "q": "Which VLAN is typically reserved for management?",
+        "o": [
+            "VLAN 1 by default setting",
+            "VLAN 100 by default setting",
+            "VLAN 4094 by default setting",
+            "VLAN 1000 by default setting"
+        ]
+    },
+    {
+        "q": "Why should management VLAN be changed?",
+        "o": [
+            "Default VLAN is well known",
+            "Default VLAN is too fast",
+            "Default VLAN is encrypted",
+            "Default VLAN is secure"
+        ]
+    },
+    {
+        "q": "What is CAM table in network switches?",
+        "o": [
+            "Content Addressable Memory table",
+            "Central Access Management table",
+            "Controlled Authentication Module",
+            "Cached Address Mapping table"
+        ]
+    },
+    {
+        "q": "What information does CAM table store?",
+        "o": [
+            "MAC address and port mapping",
+            "IP address and hostname data",
+            "Username and password pairs",
+            "VLAN and subnet information"
+        ]
+    },
+    {
+        "q": "How long do CAM table entries typically last?",
+        "o": [
+            "Around 5 minutes default",
+            "Around 24 hours default",
+            "Around 1 hour default only",
+            "Permanently until reboot"
+        ]
+    },
+    {
+        "q": "What is the result of successful MITM attack?",
+        "o": [
+            "Attacker sees all traffic",
+            "Network becomes faster overall",
+            "Devices get new IP addresses",
+            "Firewall rules are updated"
+        ]
+    },
+    {
+        "q": "Which encryption protocol helps prevent MITM?",
+        "o": [
+            "TLS encryption protocol",
+            "WEP encryption protocol",
+            "Basic authentication only",
+            "Plain HTTP protocol only"
+        ]
+    },
+    {
+        "q": "What is certificate pinning used to prevent?",
+        "o": [
+            "MITM with fake certificates",
+            "DNS cache poisoning attacks",
+            "ARP spoofing attacks only",
+            "DHCP starvation attacks"
+        ]
+    },
+    {
+        "q": "What does MAC address represent on network?",
+        "o": [
+            "Unique hardware identifier",
+            "Logical network address only",
+            "Software assigned identifier",
+            "Temporary session token only"
+        ]
+    },
+    {
+        "q": "How many bits is a MAC address in length?",
+        "o": [
+            "48 bits total length",
+            "32 bits total length",
+            "64 bits total length",
+            "128 bits total length"
+        ]
+    },
+    {
+        "q": "What is the OUI portion of a MAC address?",
+        "o": [
+            "Organizationally Unique Identifier",
+            "Optional User Interface portion",
+            "Operating Unit Indicator code",
+            "Original Unified Identity code"
+        ]
+    },
+    {
+        "q": "Which tool displays network interfaces and IPs?",
+        "o": [
+            "ifconfig or ip command",
+            "netstat command only here",
+            "traceroute command only",
+            "dig command only here"
+        ]
+    },
+    {
+        "q": "What is broadcast domain in networking terms?",
+        "o": [
+            "Network where broadcasts reach all",
+            "Encrypted communication channel",
+            "Private network segment only",
+            "Dedicated management zone only"
+        ]
+    },
+    {
+        "q": "How do VLANs affect broadcast domains?",
+        "o": [
+            "Each VLAN is separate domain",
+            "All VLANs share one domain",
+            "VLANs eliminate broadcasts",
+            "VLANs increase broadcasts"
+        ]
+    },
+    {
+        "q": "What is collision domain in network terminology?",
+        "o": [
+            "Segment where collisions occur",
+            "Broadcast transmission area only",
+            "Encrypted network zone only",
+            "Management VLAN area only"
+        ]
+    },
+    {
+        "q": "How do switches handle collision domains?",
+        "o": [
+            "Each port is own domain",
+            "All ports share one domain",
+            "Switches create collisions",
+            "Switches ignore collisions"
+        ]
+    },
+    {
+        "q": "What is spanning tree protocol used for?",
+        "o": [
+            "Prevent network loops occurring",
+            "Speed up packet forwarding only",
+            "Encrypt switch communications",
+            "Manage VLAN configurations"
+        ]
+    },
+    {
+        "q": "Which STP state allows traffic forwarding?",
+        "o": [
+            "Forwarding state only",
+            "Blocking state only here",
+            "Learning state only here",
+            "Listening state only here"
+        ]
+    },
+    {
+        "q": "What is STP root bridge election based on?",
+        "o": [
+            "Lowest bridge ID value wins",
+            "Highest bridge ID value wins",
+            "Random selection process only",
+            "Manual configuration required"
+        ]
+    },
+    {
+        "q": "What is BPDU in spanning tree protocol context?",
+        "o": [
+            "Bridge Protocol Data Unit message",
+            "Broadcast Protocol Detection Unit",
+            "Basic Port Data Update message",
+            "Binary Protocol Delivery Unit"
+        ]
+    },
+    {
+        "q": "What attack targets STP with fake BPDUs?",
+        "o": [
+            "STP root bridge attack method",
+            "ARP cache poisoning only here",
+            "DNS spoofing attack only here",
+            "DHCP starvation attack only"
+        ]
+    },
+    {
+        "q": "Which feature protects against STP attacks?",
+        "o": [
+            "BPDU Guard feature enabled",
+            "Port channel bonding only here",
+            "VLAN trunking protocol only",
+            "Access control lists only"
+        ]
+    },
+    {
+        "q": "What does Root Guard prevent on switch ports?",
+        "o": [
+            "Port becoming root port",
+            "Port becoming trunk port",
+            "Port becoming access port",
+            "Port becoming disabled"
+        ]
+    },
+    {
+        "q": "What is RSTP designed to improve over STP?",
+        "o": [
+            "Faster convergence time achieved",
+            "Better encryption support only",
+            "More VLANs supported overall",
+            "Reduced power consumption"
+        ]
+    },
+    {
+        "q": "What is the convergence time goal for RSTP?",
+        "o": [
+            "Under 1 second typically",
+            "Under 30 seconds typically",
+            "Under 50 seconds typically",
+            "Under 2 minutes typically"
+        ]
+    },
+    {
+        "q": "Which protocol is Cisco proprietary for STP?",
+        "o": [
+            "PVST Plus protocol version",
+            "RSTP standard protocol only",
+            "MSTP standard protocol only",
+            "STP original version only"
+        ]
+    },
+    {
+        "q": "What does MSTP stand for in networking?",
+        "o": [
+            "Multiple Spanning Tree Protocol",
+            "Managed Switch Trunk Protocol",
+            "Master Spanning Tree Process",
+            "Modified Spanning Tree Protocol"
+        ]
+    },
+    {
+        "q": "What advantage does MSTP provide networks?",
+        "o": [
+            "Multiple VLANs per instance",
+            "Faster encryption processing",
+            "Better wireless integration",
+            "Reduced hardware costs only"
+        ]
+    },
+    {
+        "q": "What is the purpose of PortFast on switches?",
+        "o": [
+            "Skip STP states for end devices",
+            "Speed up trunk negotiations only",
+            "Encrypt port communications only",
+            "Block unauthorized devices only"
+        ]
+    },
+    {
+        "q": "Why should PortFast not be enabled on trunks?",
+        "o": [
+            "Can create network loops risk",
+            "Reduces network performance only",
+            "Increases power consumption only",
+            "Disables VLAN tagging support"
+        ]
+    },
+    {
+        "q": "What is loop guard designed to prevent?",
+        "o": [
+            "Loops from unidirectional links",
+            "Loops from bidirectional links",
+            "ARP spoofing attacks on ports",
+            "DNS spoofing attacks on ports"
+        ]
+    },
+    {
+        "q": "What is UDLD protocol used to detect?",
+        "o": [
+            "Unidirectional link failures on network",
+            "Bidirectional link failures on network",
+            "ARP spoofing attempts on network",
+            "DNS spoofing attempts on network"
+        ]
+    },
+    {
+        "q": "What does UDLD stand for in networking?",
+        "o": [
+            "Unidirectional Link Detection protocol",
+            "Unified Data Link Detection protocol",
+            "Universal Device Link Detection",
+            "Updated Link Detection protocol"
+        ]
+    },
+    {
+        "q": "What is the purpose of storm control feature?",
+        "o": [
+            "Limit broadcast traffic levels",
+            "Speed up network throughput",
+            "Encrypt multicast traffic only",
+            "Block all unicast traffic"
+        ]
+    },
+    {
+        "q": "Which traffic types can storm control limit?",
+        "o": [
+            "Broadcast multicast and unicast",
+            "Only unicast traffic on ports",
+            "Only encrypted traffic types",
+            "Only management traffic types"
+        ]
+    },
+    {
+        "q": "What action does storm control take?",
+        "o": [
+            "Drop excess traffic or shutdown port",
+            "Encrypt excess traffic automatically",
+            "Forward excess traffic to backup",
+            "Cache excess traffic for later"
+        ]
+    },
+    {
+        "q": "What is protected port feature on switches?",
+        "o": [
+            "Blocks traffic between protected ports",
+            "Encrypts all port traffic automatically",
+            "Speeds up port communication rates",
+            "Enables VLAN hopping prevention"
+        ]
+    },
+    {
+        "q": "What is port blocking used to accomplish?",
+        "o": [
+            "Block unknown unicast and multicast",
+            "Block all traffic on specific ports",
+            "Encrypt traffic on specific ports",
+            "Speed up traffic on specific ports"
+        ]
+    },
+    {
+        "q": "Which attack exploits weak switch configurations?",
+        "o": [
+            "Native VLAN mismatch exploitation",
+            "Strong encryption bypass attack",
+            "Firewall rule bypass attack here",
+            "Antivirus evasion technique here"
+        ]
+    },
+    {
+        "q": "What is best practice for unused switch ports?",
+        "o": [
+            "Shutdown and assign to null VLAN",
+            "Enable with default configuration",
+            "Configure as trunk ports only",
+            "Leave with factory settings only"
+        ]
+    },
+    {
+        "q": "What is MAC address aging on switches?",
+        "o": [
+            "Time before entries expire from CAM",
+            "Speed at which MACs are learned",
+            "Number of MACs port can learn",
+            "Priority of MAC entries in table"
+        ]
+    },
+    {
+        "q": "What is sticky MAC address learning feature?",
+        "o": [
+            "Dynamically learn and save MACs",
+            "Block all MAC address learning",
+            "Encrypt MAC address entries only",
+            "Speed up MAC learning process"
+        ]
+    },
+    {
+        "q": "What happens when port security is violated?",
+        "o": [
+            "Port can shutdown or restrict",
+            "Traffic is encrypted automatically",
+            "VLAN is changed automatically",
+            "Switch reboots immediately here"
+        ]
+    },
+    {
+        "q": "What is protect mode in port security?",
+        "o": [
+            "Drop violating traffic silently",
+            "Shutdown port immediately here",
+            "Alert and drop violating traffic",
+            "Forward violating traffic anyway"
+        ]
+    },
+    {
+        "q": "What is restrict mode in port security?",
+        "o": [
+            "Drop traffic and log violation",
+            "Shutdown port immediately here",
+            "Forward traffic after logging",
+            "Encrypt traffic after logging"
+        ]
+    },
+    {
+        "q": "What is shutdown mode in port security?",
+        "o": [
+            "Error disable the port on violation",
+            "Drop traffic silently on violation",
+            "Log violation and continue here",
+            "Forward traffic after violation"
+        ]
+    },
+    {
+        "q": "How is error disabled port recovered?",
+        "o": [
+            "Manually shutdown then no shutdown",
+            "Automatically after 5 minutes",
+            "Reboot switch to recover port",
+            "Replace switch port hardware"
+        ]
+    },
+    {
+        "q": "What is errdisable recovery feature used for?",
+        "o": [
+            "Automatically recover ports after timeout",
+            "Manually recover ports after timeout",
+            "Prevent ports from being disabled",
+            "Log port errors without blocking"
+        ]
+    },
+    {
+        "q": "What is 802.1X used for on network ports?",
+        "o": [
+            "Port-based network access control",
+            "Speed up network data transfer",
+            "Encrypt all port traffic data",
+            "Block specific MAC addresses"
+        ]
+    },
+    {
+        "q": "Which component is supplicant in 802.1X?",
+        "o": [
+            "Client requesting network access",
+            "Switch controlling port access",
+            "RADIUS server authenticating",
+            "Network administrator managing"
+        ]
+    },
+    {
+        "q": "Which component is authenticator in 802.1X?",
+        "o": [
+            "Switch controlling port access",
+            "Client requesting network access",
+            "RADIUS server authenticating",
+            "Network administrator managing"
+        ]
+    },
+    {
+        "q": "Which component is authentication server?",
+        "o": [
+            "RADIUS server verifying credentials",
+            "Switch controlling the port access",
+            "Client requesting network access",
+            "Network administrator managing"
+        ]
+    },
+    {
+        "q": "What protocol does 802.1X typically use?",
+        "o": [
+            "EAP over LAN protocol type",
+            "HTTP over LAN protocol type",
+            "SSH over LAN protocol type",
+            "FTP over LAN protocol type"
+        ]
+    },
+    {
+        "q": "What is MAB used for in network access?",
+        "o": [
+            "MAC Authentication Bypass method",
+            "Manual Access Blocking method",
+            "Managed Authentication Backup",
+            "Modified Access Boundary setup"
+        ]
+    },
+    {
+        "q": "When is MAB typically used on networks?",
+        "o": [
+            "Devices without 802.1X support",
+            "All devices on the network here",
+            "Only wireless access points",
+            "Only network printers here"
+        ]
+    },
+    {
+        "q": "What is guest VLAN in 802.1X context?",
+        "o": [
+            "VLAN for unauthenticated devices",
+            "VLAN for authenticated users only",
+            "VLAN for network administrators",
+            "VLAN for server systems only"
+        ]
+    },
+    {
+        "q": "What is auth-fail VLAN used for?",
+        "o": [
+            "Failed authentication limited access",
+            "Successful authentication full access",
+            "Guest users temporary access only",
+            "Administrator full network access"
+        ]
+    },
+    {
+        "q": "What is critical VLAN in 802.1X setup?",
+        "o": [
+            "VLAN when RADIUS unavailable",
+            "VLAN for highest priority traffic",
+            "VLAN for encrypted traffic only",
+            "VLAN for management traffic only"
+        ]
+    },
+    {
+        "q": "What is EAP-TLS authentication method?",
+        "o": [
+            "Certificate-based EAP authentication",
+            "Password-based EAP authentication",
+            "Token-based EAP authentication",
+            "Biometric EAP authentication type"
+        ]
+    },
+    {
+        "q": "What is PEAP authentication method?",
+        "o": [
+            "Protected EAP with TLS tunnel",
+            "Plain EAP without encryption",
+            "Proxy EAP through firewall",
+            "Public EAP for open access"
+        ]
+    },
+    {
+        "q": "What is EAP-FAST designed to provide?",
+        "o": [
+            "Faster secure EAP authentication",
+            "Flexible access point security",
+            "Forward authentication support",
+            "Firewall assisted security type"
+        ]
+    },
+    {
+        "q": "What is PAC in EAP-FAST context?",
+        "o": [
+            "Protected Access Credential file",
+            "Public Access Certificate file",
+            "Private Authentication Code",
+            "Proxy Access Configuration"
+        ]
+    },
+    {
+        "q": "What is RADIUS Change of Authorization?",
+        "o": [
+            "Dynamic policy change for session",
+            "Static policy assignment only",
+            "Password change requirement only",
+            "Certificate renewal process"
+        ]
+    },
+    {
+        "q": "What is TACACS Plus used for primarily?",
+        "o": [
+            "Device administration AAA services",
+            "Network access control services",
+            "Wireless authentication services",
+            "VPN tunnel authentication only"
+        ]
+    },
+    {
+        "q": "What advantage does TACACS Plus have?",
+        "o": [
+            "Encrypts entire packet payload",
+            "Faster than RADIUS protocol",
+            "Open standard implementation",
+            "Uses UDP for transport layer"
+        ]
+    },
+    {
+        "q": "Which port does TACACS Plus use?",
+        "o": [
+            "TCP port 49 for connection",
+            "UDP port 1812 for connection",
+            "TCP port 443 for connection",
+            "UDP port 53 for connection"
+        ]
+    },
+    {
+        "q": "Which ports does RADIUS typically use?",
+        "o": [
+            "UDP 1812 and 1813 ports",
+            "TCP 49 and 50 ports here",
+            "UDP 53 and 80 ports here",
+            "TCP 443 and 8443 ports"
+        ]
+    },
+    {
+        "q": "What is AAA in network security context?",
+        "o": [
+            "Authentication Authorization Accounting",
+            "Advanced Access Architecture model",
+            "Automated Authentication Agent",
+            "Application Access Analyzer tool"
+        ]
+    },
+    {
+        "q": "What does authentication verify in AAA?",
+        "o": [
+            "Identity of user or device",
+            "Permission levels for user",
+            "Activity logging of user",
+            "Bandwidth usage of user"
+        ]
+    },
+    {
+        "q": "What does authorization control in AAA?",
+        "o": [
+            "What user is allowed to do",
+            "Who the user claims to be",
+            "When user accessed system",
+            "Where user is located now"
+        ]
+    },
+    {
+        "q": "What does accounting track in AAA?",
+        "o": [
+            "User activity and resource usage",
+            "User identity verification status",
+            "User permission level changes",
+            "User password complexity score"
+        ]
+    },
+    {
+        "q": "What is network admission control purpose?",
+        "o": [
+            "Enforce security policy compliance",
+            "Speed up network access times",
+            "Encrypt all network traffic",
+            "Block all unknown devices"
+        ]
+    },
+    {
+        "q": "What can NAC check before granting access?",
+        "o": [
+            "Antivirus and patch status here",
+            "User typing speed only here",
+            "Physical location of device",
+            "Device manufacture date only"
+        ]
+    },
+    {
+        "q": "What is posture assessment in NAC?",
+        "o": [
+            "Health check of endpoint device",
+            "Physical security inspection only",
+            "User identity verification only",
+            "Network bandwidth measurement"
+        ]
+    },
+    {
+        "q": "What happens to non-compliant NAC devices?",
+        "o": [
+            "Quarantine or remediation VLAN",
+            "Full network access granted here",
+            "Device is permanently blocked",
+            "Device is physically destroyed"
+        ]
+    },
+    {
+        "q": "What is remediation in NAC context?",
+        "o": [
+            "Fixing compliance issues on device",
+            "Blocking device permanently here",
+            "Granting full access immediately",
+            "Encrypting all device traffic"
+        ]
+    },
+    {
+        "q": "What is agent-based NAC deployment?",
+        "o": [
+            "Software installed on endpoints",
+            "Network-based inspection only",
+            "Physical security controls only",
+            "Manual inspection by admin"
+        ]
+    },
+    {
+        "q": "What is agentless NAC deployment type?",
+        "o": [
+            "No software on endpoints needed",
+            "Requires agent on all devices",
+            "Uses physical security tokens",
+            "Manual inspection required only"
+        ]
+    },
+    {
+        "q": "What technique uses DNS for C2 communication?",
+        "o": [
+            "DNS tunneling for data exfil",
+            "DNS caching for speed boost",
+            "DNS load balancing setup here",
+            "DNS redundancy configuration"
+        ]
+    },
+    {
+        "q": "How can DNS tunneling be detected?",
+        "o": [
+            "Unusual query patterns and lengths",
+            "Standard DNS query monitoring",
+            "Firewall rule inspection only",
+            "Antivirus signature matching"
+        ]
+    },
+    {
+        "q": "What is beaconing in malware context?",
+        "o": [
+            "Regular callback to C2 server",
+            "One-time connection to server",
+            "Encrypted data transmission",
+            "User interaction monitoring"
+        ]
+    },
+    {
+        "q": "How can beaconing be detected on networks?",
+        "o": [
+            "Regular interval traffic patterns",
+            "Random traffic analysis only",
+            "User behavior monitoring only",
+            "Antivirus scanning alone here"
+        ]
+    },
+    {
+        "q": "What is network baselining used for?",
+        "o": [
+            "Establish normal traffic patterns",
+            "Block all abnormal traffic types",
+            "Encrypt all network traffic data",
+            "Speed up network performance"
+        ]
+    },
+    {
+        "q": "What is anomaly detection in network security?",
+        "o": [
+            "Identify deviations from baseline",
+            "Block all network traffic types",
+            "Encrypt suspicious traffic data",
+            "Speed up suspicious traffic"
+        ]
+    },
+    {
+        "q": "What is NetFlow used for in networks?",
+        "o": [
+            "Collect IP traffic information",
+            "Block malicious traffic types",
+            "Encrypt network traffic data",
+            "Speed up packet forwarding"
+        ]
+    },
+    {
+        "q": "What information does NetFlow record?",
+        "o": [
+            "Source dest ports packets bytes",
+            "Only source IP address here",
+            "Only destination port here",
+            "Only packet count value here"
+        ]
+    },
+    {
+        "q": "What is sFlow used for on networks?",
+        "o": [
+            "Sampled traffic flow monitoring",
+            "Full packet capture and analysis",
+            "Encryption of network traffic",
+            "Blocking of malicious traffic"
+        ]
+    },
+    {
+        "q": "What is IPFIX standard used for?",
+        "o": [
+            "IP Flow Information Export standard",
+            "IP Firewall Information Exchange",
+            "Internet Protocol Filter Index",
+            "IP Frame Inspection Extension"
+        ]
+    },
+    {
+        "q": "What advantage does IPFIX have over NetFlow?",
+        "o": [
+            "Open standard with extensibility",
+            "Proprietary with better support",
+            "Faster processing speed only",
+            "Lower bandwidth usage only"
+        ]
+    },
+    {
+        "q": "What is flow stitching in traffic analysis?",
+        "o": [
+            "Combining related flow records",
+            "Separating unrelated flow data",
+            "Encrypting flow information here",
+            "Blocking suspicious flows here"
+        ]
+    },
+    {
+        "q": "What is passive DNS used to accomplish?",
+        "o": [
+            "Record DNS query history data",
+            "Block malicious DNS queries",
+            "Speed up DNS resolution time",
+            "Encrypt DNS traffic data only"
+        ]
+    },
+    {
+        "q": "How does passive DNS help threat hunting?",
+        "o": [
+            "Reveals domain resolution history",
+            "Blocks malicious domains directly",
+            "Encrypts DNS for privacy only",
+            "Speeds up threat detection"
+        ]
+    },
+    {
+        "q": "What is DNS sinkholing technique?",
+        "o": [
+            "Redirect malicious DNS to safe IP",
+            "Block all DNS queries entirely",
+            "Speed up DNS query resolution",
+            "Encrypt DNS for privacy only"
+        ]
+    },
+    {
+        "q": "What is the purpose of DNS RPZ?",
+        "o": [
+            "Response Policy Zone for filtering",
+            "Remote Policy Zone management",
+            "Redundant Protection Zone setup",
+            "Rapid Protocol Zone switching"
+        ]
+    },
+    {
+        "q": "What can DNS RPZ be used to block?",
+        "o": [
+            "Known malicious domain access",
+            "All external DNS queries only",
+            "Internal DNS queries entirely",
+            "Encrypted DNS traffic only"
+        ]
+    },
+    {
+        "q": "What is split DNS architecture design?",
+        "o": [
+            "Different DNS for internal external",
+            "Single DNS for all traffic here",
+            "Encrypted DNS traffic only here",
+            "Blocked DNS for security only"
+        ]
+    },
+    {
+        "q": "What does split horizon DNS prevent?",
+        "o": [
+            "Internal resource exposure to external",
+            "External access to public resources",
+            "Internal access to internal resources",
+            "DNS caching on internal systems"
+        ]
+    },
+    {
+        "q": "What is ICMP redirect attack technique?",
+        "o": [
+            "Manipulate routing via ICMP messages",
+            "Block ICMP traffic completely here",
+            "Encrypt ICMP packet contents only",
+            "Speed up ICMP response times"
+        ]
+    },
+    {
+        "q": "Why should ICMP redirects be disabled?",
+        "o": [
+            "Can be exploited for MITM attacks",
+            "Slows down network performance",
+            "Increases bandwidth usage greatly",
+            "Reduces network reliability here"
+        ]
+    },
+    {
+        "q": "What is source routing attack method?",
+        "o": [
+            "Attacker specifies packet route",
+            "Router specifies packet route",
+            "Firewall specifies packet route",
+            "Switch specifies packet route"
+        ]
+    },
+    {
+        "q": "Why should source routing be disabled?",
+        "o": [
+            "Bypass security controls possible",
+            "Slows down packet forwarding",
+            "Increases network complexity here",
+            "Reduces reliability of routing"
+        ]
+    },
+    {
+        "q": "What is IP spoofing attack technique?",
+        "o": [
+            "Forge source IP address in packets",
+            "Forge destination IP in packets only",
+            "Encrypt IP header information only",
+            "Block IP packets at firewall"
+        ]
+    },
+    {
+        "q": "What defense helps prevent IP spoofing?",
+        "o": [
+            "Ingress and egress filtering setup",
+            "Simple packet logging only here",
+            "Basic access control lists only",
+            "Standard rate limiting only"
+        ]
+    },
+    {
+        "q": "What is BCP 38 network best practice?",
+        "o": [
+            "Network ingress filtering standard",
+            "Network encryption standard only",
+            "Network monitoring standard only",
+            "Network speed standard document"
+        ]
+    },
+    {
+        "q": "What is uRPF used to prevent in networks?",
+        "o": [
+            "Unicast Reverse Path Forwarding check",
+            "Universal Routing Protocol Filter",
+            "Unified Remote Policy Function",
+            "Updated Routing Path Finder"
+        ]
+    },
+    {
+        "q": "How does uRPF verify packet legitimacy?",
+        "o": [
+            "Check if source reachable via interface",
+            "Encrypt packet before forwarding here",
+            "Block all unknown source packets",
+            "Log packet for later analysis"
+        ]
+    },
+    {
+        "q": "What is strict mode uRPF checking?",
+        "o": [
+            "Source must match incoming interface",
+            "Source can match any interface here",
+            "No source verification performed",
+            "Only destination is verified"
+        ]
+    },
+    {
+        "q": "What is loose mode uRPF checking?",
+        "o": [
+            "Source exists in routing table",
+            "Source must match exact interface",
+            "No source verification performed",
+            "Only encrypted packets verified"
+        ]
+    },
+    {
+        "q": "What is VRF-aware uRPF configuration?",
+        "o": [
+            "uRPF check per VRF routing table",
+            "uRPF check across all VRF tables",
+            "uRPF disabled for VRF instances",
+            "uRPF only for default routing"
+        ]
+    },
+    {
+        "q": "What is GARP attack in ARP context?",
+        "o": [
+            "Gratuitous ARP exploitation attack",
+            "Gateway ARP redirect protocol",
+            "General ARP routing protocol",
+            "Global ARP response protocol"
+        ]
+    },
+    {
+        "q": "How does DAI validate ARP packets?",
+        "o": [
+            "Compare against DHCP snooping table",
+            "Encrypt all ARP packet contents",
+            "Block all ARP traffic on network",
+            "Speed up ARP resolution process"
+        ]
+    },
+    {
+        "q": "What is IP source binding in DAI?",
+        "o": [
+            "Static mapping of IP MAC and port",
+            "Dynamic assignment of IP address",
+            "Encryption of source IP header",
+            "Blocking of unknown IP source"
+        ]
+    },
+    {
+        "q": "What is ARP ACL used for in DAI?",
+        "o": [
+            "Validate ARP for non-DHCP hosts",
+            "Block all ARP traffic on VLANs",
+            "Encrypt ARP packet transmissions",
+            "Speed up ARP table updates"
+        ]
+    },
+    {
+        "q": "What validation checks does DAI perform?",
+        "o": [
+            "Source MAC destination and IP checks",
+            "Only destination MAC address check",
+            "Only source IP address checking",
+            "Only packet size validation check"
+        ]
+    },
+    {
+        "q": "What is rate limiting in DAI context?",
+        "o": [
+            "Limit ARP packets per port per second",
+            "Limit IP packets per VLAN per hour",
+            "Limit DNS queries per host per day",
+            "Limit DHCP requests per minute only"
+        ]
+    },
+    {
+        "q": "What happens when DAI rate limit exceeded?",
+        "o": [
+            "Port is error disabled by switch",
+            "Traffic is encrypted automatically",
+            "VLAN is removed from port config",
+            "Switch reboots for protection"
+        ]
+    },
+    {
+        "q": "What is trusted port in DAI configuration?",
+        "o": [
+            "Port where ARP not validated by DAI",
+            "Port with strongest ARP validation",
+            "Port with encrypted ARP traffic",
+            "Port with blocked ARP traffic"
+        ]
+    },
+    {
+        "q": "Which ports should be DAI trusted?",
+        "o": [
+            "Uplink ports to other switches",
+            "All end user access ports here",
+            "All wireless access points only",
+            "Only management ports on switch"
+        ]
+    },
+    {
+        "q": "What is IP source guard protection?",
+        "o": [
+            "Filter traffic based on IP and MAC",
+            "Block all traffic on configured port",
+            "Encrypt all traffic at IP layer",
+            "Speed up IP packet forwarding"
+        ]
+    },
+    {
+        "q": "What does IP source guard use for binding?",
+        "o": [
+            "DHCP snooping or static bindings",
+            "Dynamic ARP inspection table only",
+            "Port security MAC address table",
+            "Spanning tree topology table"
+        ]
+    },
+    {
+        "q": "What is IPSG per-port filtering mode?",
+        "o": [
+            "Filter by source IP address only",
+            "Filter by source MAC address only",
+            "Filter by destination IP address",
+            "Filter by destination MAC address"
+        ]
+    },
+    {
+        "q": "What is IPSG source IP and MAC filtering?",
+        "o": [
+            "Validate both source IP and MAC",
+            "Validate only source IP address",
+            "Validate only source MAC address",
+            "Validate destination addresses"
+        ]
+    },
+    {
+        "q": "What attack does IPSG help prevent?",
+        "o": [
+            "IP spoofing and DHCP starvation",
+            "DNS cache poisoning only here",
+            "STP root bridge attack only",
+            "VLAN hopping via trunking"
+        ]
+    },
+    {
+        "q": "What is DHCP snooping binding database?",
+        "o": [
+            "Maps MAC IP lease port VLAN info",
+            "Stores DNS query history only",
+            "Contains ARP cache entries only",
+            "Lists STP topology information"
+        ]
+    },
+    {
+        "q": "Where is DHCP snooping database stored?",
+        "o": [
+            "Flash memory or TFTP server",
+            "Only in RAM and lost on reboot",
+            "External database server only",
+            "Cloud storage service only here"
+        ]
+    },
+    {
+        "q": "What is DHCP option 82 insertion?",
+        "o": [
+            "Add relay info to DHCP packets",
+            "Remove all DHCP options from packet",
+            "Encrypt DHCP packet contents",
+            "Block DHCP packets on untrusted"
+        ]
+    },
+    {
+        "q": "What information does option 82 contain?",
+        "o": [
+            "Circuit ID and remote ID info",
+            "Only circuit ID information here",
+            "Only remote ID information here",
+            "Only VLAN ID information here"
+        ]
+    },
+    {
+        "q": "What is circuit ID in DHCP option 82?",
+        "o": [
+            "Identifies port and VLAN info",
+            "Identifies only the MAC address",
+            "Identifies only the IP address",
+            "Identifies only the hostname"
+        ]
+    },
+    {
+        "q": "What is remote ID in DHCP option 82?",
+        "o": [
+            "Identifies the switch or relay",
+            "Identifies only the end device",
+            "Identifies only the VLAN here",
+            "Identifies only the subnet used"
+        ]
+    },
+    {
+        "q": "What is VLAN ACL used to accomplish?",
+        "o": [
+            "Filter traffic within same VLAN",
+            "Block all inter-VLAN routing",
+            "Encrypt intra-VLAN traffic only",
+            "Speed up VLAN switching only"
+        ]
+    },
+    {
+        "q": "Where is VACL applied in network?",
+        "o": [
+            "On VLAN not on specific ports",
+            "Only on specific switch ports",
+            "Only on router interfaces here",
+            "Only on firewall interfaces"
+        ]
+    },
+    {
+        "q": "What actions can VACL perform on traffic?",
+        "o": [
+            "Forward redirect or drop traffic",
+            "Only forward or drop traffic here",
+            "Only encrypt or decrypt traffic",
+            "Only log or alert on traffic"
+        ]
+    },
+    {
+        "q": "What is capture option in VACL action?",
+        "o": [
+            "Copy traffic for analysis purpose",
+            "Block all traffic immediately here",
+            "Encrypt traffic before forwarding",
+            "Speed up packet processing only"
+        ]
+    },
+    {
+        "q": "What is router ACL different from VACL?",
+        "o": [
+            "RACL filters routed traffic only",
+            "RACL filters switched traffic only",
+            "RACL has more match options here",
+            "RACL is applied on VLANs only"
+        ]
+    },
+    {
+        "q": "What is port ACL applied on switches?",
+        "o": [
+            "Filter on layer 2 switch ports",
+            "Filter on layer 3 router ports",
+            "Filter on firewall interfaces",
+            "Filter on wireless access points"
+        ]
+    },
+    {
+        "q": "What is ACL precedence on Cisco switches?",
+        "o": [
+            "Port ACL then VACL then RACL",
+            "VACL then port ACL then RACL",
+            "RACL then VACL then port ACL",
+            "All ACLs have equal priority"
+        ]
+    },
+    {
+        "q": "What is reflexive ACL used for?",
+        "o": [
+            "Allow return traffic automatically",
+            "Block all return traffic flows",
+            "Encrypt bidirectional traffic",
+            "Speed up packet routing only"
+        ]
+    },
+    {
+        "q": "How does reflexive ACL track sessions?",
+        "o": [
+            "Create temporary permit entries",
+            "Block all session establishment",
+            "Encrypt session information only",
+            "Log session data permanently"
+        ]
+    },
+    {
+        "q": "What is time-based ACL functionality?",
+        "o": [
+            "Apply ACL rules during time range",
+            "Log ACL matches with timestamps",
+            "Speed up ACL processing time",
+            "Encrypt ACL rule configuration"
+        ]
+    },
+    {
+        "q": "What is object-group in ACL configuration?",
+        "o": [
+            "Group addresses or services together",
+            "Block all grouped traffic only",
+            "Encrypt grouped traffic flows",
+            "Speed up grouped traffic only"
+        ]
+    },
+    {
+        "q": "What advantage does object-group provide?",
+        "o": [
+            "Simplify ACL management and updates",
+            "Increase ACL processing speed only",
+            "Enable stronger encryption only",
+            "Block more traffic patterns only"
+        ]
+    },
+    {
+        "q": "What is established keyword in TCP ACL?",
+        "o": [
+            "Match TCP with ACK or RST flags",
+            "Match only TCP SYN packets here",
+            "Match only TCP FIN packets here",
+            "Match all TCP packets equally"
+        ]
+    },
+    {
+        "q": "What traffic does established keyword permit?",
+        "o": [
+            "Return traffic from connections",
+            "New connection initiations only",
+            "All TCP traffic regardless of flags",
+            "Only encrypted TCP connections"
+        ]
+    },
+    {
+        "q": "What is implicit deny in ACL rules?",
+        "o": [
+            "Deny all traffic not explicitly permitted",
+            "Permit all traffic not explicitly denied",
+            "Encrypt all traffic by default setting",
+            "Log all traffic for later analysis"
+        ]
+    },
+    {
+        "q": "Where should most specific ACL rules be?",
+        "o": [
+            "At the top of the ACL list",
+            "At the bottom of ACL list",
+            "In the middle of ACL list",
+            "Order does not matter here"
+        ]
+    },
+    {
+        "q": "What is turbo ACL feature on routers?",
+        "o": [
+            "Compiled ACL for faster processing",
+            "Standard ACL with encryption option",
+            "Extended ACL with QoS marking",
+            "Reflexive ACL with logging only"
+        ]
+    },
+    {
+        "q": "What is TCAM used for in switches?",
+        "o": [
+            "Hardware-based packet classification",
+            "Software-based packet filtering",
+            "Encryption key storage only here",
+            "Logging of all traffic flows"
+        ]
+    },
+    {
+        "q": "What advantage does TCAM provide?",
+        "o": [
+            "Line-rate ACL processing speed",
+            "Better encryption capability here",
+            "More flexible rule syntax only",
+            "Unlimited rule capacity available"
+        ]
+    },
+    {
+        "q": "What is TCAM resource limitation?",
+        "o": [
+            "Fixed number of entries available",
+            "Cannot process encrypted traffic",
+            "No IPv6 support in hardware",
+            "Only supports layer 2 filtering"
+        ]
+    },
+    {
+        "q": "What is SDM template on Cisco switches?",
+        "o": [
+            "Allocate TCAM for different features",
+            "Configure Software Defined Network",
+            "Enable secure device management",
+            "Setup storage data management"
+        ]
+    },
+    {
+        "q": "What is MAC ACL used for on switches?",
+        "o": [
+            "Filter traffic based on MAC address",
+            "Filter traffic based on IP address",
+            "Encrypt traffic at MAC layer only",
+            "Speed up MAC address learning"
+        ]
+    },
+    {
+        "q": "On which traffic does MAC ACL work?",
+        "o": [
+            "Non-IP traffic on layer 2 ports",
+            "IP traffic on layer 3 ports",
+            "All traffic regardless of type",
+            "Only encrypted traffic flows"
+        ]
+    },
+    {
+        "q": "What is EtherType ACL filtering?",
+        "o": [
+            "Filter by protocol type in header",
+            "Filter by IP address only here",
+            "Filter by port number only here",
+            "Filter by packet size only here"
+        ]
+    },
+    {
+        "q": "What is control plane policing used for?",
+        "o": [
+            "Protect router CPU from attacks",
+            "Speed up packet forwarding only",
+            "Encrypt control plane traffic only",
+            "Block all control plane access"
+        ]
+    },
+    {
+        "q": "What attacks does CoPP help mitigate?",
+        "o": [
+            "DoS attacks targeting router CPU",
+            "Data plane congestion attacks only",
+            "Physical layer attacks on cables",
+            "Social engineering via network"
+        ]
+    },
+    {
+        "q": "What is management plane protection?",
+        "o": [
+            "Restrict management access interfaces",
+            "Speed up management connections",
+            "Encrypt all management traffic",
+            "Log management access attempts"
+        ]
+    },
+    {
+        "q": "What protocols should be in management plane?",
+        "o": [
+            "SSH SNMP NTP Syslog and TFTP",
+            "HTTP DNS and DHCP protocols only",
+            "BGP OSPF and EIGRP routing only",
+            "IPsec SSL and TLS encryption"
+        ]
+    },
+    {
+        "q": "What is data plane on network devices?",
+        "o": [
+            "Forwards user traffic through device",
+            "Manages device configuration only",
+            "Runs routing protocol calculations",
+            "Provides management interface only"
+        ]
+    },
+    {
+        "q": "What is control plane on network devices?",
+        "o": [
+            "Runs routing and signaling protocols",
+            "Forwards user traffic through device",
+            "Provides management interface only",
+            "Encrypts all device traffic here"
+        ]
+    },
+    {
+        "q": "What is NetFlow anomaly detection based on?",
+        "o": [
+            "Deviations from traffic baseline",
+            "Signature matching of known attacks",
+            "Encryption strength analysis only",
+            "Physical device status monitoring"
+        ]
+    },
+    {
+        "q": "What is DNS over HTTPS purpose?",
+        "o": [
+            "Encrypt DNS queries over HTTPS",
+            "Speed up DNS query resolution",
+            "Block malicious DNS queries",
+            "Cache DNS responses locally"
+        ]
+    },
+    {
+        "q": "What security concern does DoH introduce?",
+        "o": [
+            "Bypasses network DNS security controls",
+            "Increases DNS query latency only",
+            "Reduces DNS reliability greatly",
+            "Exposes DNS queries publicly"
+        ]
+    },
+    {
+        "q": "What is DNS over TLS protocol?",
+        "o": [
+            "Encrypt DNS using TLS on port 853",
+            "Encrypt DNS using SSL on port 443",
+            "Encrypt DNS using IPsec tunnel",
+            "Encrypt DNS using SSH tunnel"
+        ]
+    },
+    {
+        "q": "What is advantage of DoT over DoH?",
+        "o": [
+            "Easier to identify and control",
+            "Faster DNS query resolution",
+            "Better encryption strength here",
+            "More compatible with browsers"
+        ]
+    },
+    {
+        "q": "What is DNSSEC used to provide?",
+        "o": [
+            "Authentication and integrity for DNS",
+            "Encryption and confidentiality here",
+            "Speed and performance improvement",
+            "Caching and redundancy features"
+        ]
+    },
+    {
+        "q": "What DNSSEC does not provide?",
+        "o": [
+            "Confidentiality of DNS queries",
+            "Authentication of DNS responses",
+            "Integrity of DNS resource records",
+            "Origin verification of DNS data"
+        ]
+    },
+    {
+        "q": "What is RRSIG record in DNSSEC?",
+        "o": [
+            "Digital signature of resource record",
+            "Encryption key for DNS zone here",
+            "Hash of DNS zone contents only",
+            "List of authorized DNS servers"
+        ]
+    },
+    {
+        "q": "What is DNSKEY record used for?",
+        "o": [
+            "Public key for signature verification",
+            "Private key for signing records",
+            "Encryption key for DNS traffic",
+            "Session key for DNS connection"
+        ]
+    },
+    {
+        "q": "What is DS record in DNSSEC chain?",
+        "o": [
+            "Delegation signer linking zones",
+            "Domain signature for records",
+            "DNS server identification data",
+            "Default settings for DNS zone"
+        ]
+    },
+    {
+        "q": "What is NSEC record purpose?",
+        "o": [
+            "Prove non-existence of domain",
+            "Sign existing domain records",
+            "Encrypt domain name data here",
+            "Speed up domain resolution"
+        ]
+    },
+    {
+        "q": "What is NSEC3 improvement over NSEC?",
+        "o": [
+            "Prevents zone enumeration attacks",
+            "Provides stronger encryption here",
+            "Enables faster signature verification",
+            "Supports more record types only"
+        ]
+    },
+    {
+        "q": "What is KSK in DNSSEC key management?",
+        "o": [
+            "Key Signing Key for DNSKEY records",
+            "Zone Signing Key for all records",
+            "Session key for DNS connections",
+            "Encryption key for DNS traffic"
+        ]
+    },
+    {
+        "q": "What is ZSK in DNSSEC operations?",
+        "o": [
+            "Zone Signing Key for zone records",
+            "Key Signing Key for DNSKEY only",
+            "Session key for client access",
+            "Encryption key for DNS data"
+        ]
+    },
+    {
+        "q": "Why are KSK and ZSK separated?",
+        "o": [
+            "Different rotation frequencies needed",
+            "Different encryption algorithms used",
+            "Different key sizes required here",
+            "Different storage locations needed"
+        ]
+    },
+    {
+        "q": "What is DNSSEC key rollover procedure?",
+        "o": [
+            "Replace old keys with new keys safely",
+            "Delete all existing DNSSEC keys",
+            "Disable DNSSEC temporarily here",
+            "Export keys to backup location"
+        ]
+    },
+    {
+        "q": "What is double signature method in rollover?",
+        "o": [
+            "Sign with both old and new keys",
+            "Use two signatures per record",
+            "Encrypt keys before publishing",
+            "Backup keys in two locations"
+        ]
+    },
+    {
+        "q": "What is VLAN trunking vulnerability?",
+        "o": [
+            "Unauthorized VLAN access via trunk",
+            "VLAN bandwidth limitation issue",
+            "VLAN configuration complexity only",
+            "VLAN performance degradation"
+        ]
+    },
+    {
+        "q": "What is private VLAN edge feature?",
+        "o": [
+            "Isolate ports within same VLAN",
+            "Encrypt traffic between VLANs",
+            "Speed up VLAN switching only",
+            "Block all VLAN communications"
+        ]
+    },
+    {
+        "q": "What is VLAN stacking attack risk?",
+        "o": [
+            "Double tagged frames bypass security",
+            "VLAN configuration overwritten here",
+            "VLAN membership database corrupted",
+            "VLAN trunk links disconnected"
+        ]
+    },
+    {
+        "q": "How to prevent VLAN stacking attacks?",
+        "o": [
+            "Change native VLAN from default",
+            "Disable all VLAN tagging here",
+            "Enable default native VLAN only",
+            "Use single tag on all frames"
+        ]
+    },
+    {
+        "q": "What is ARP inspection logging?",
+        "o": [
+            "Record DAI denied ARP packets info",
+            "Encrypt ARP packets before logging",
+            "Block all ARP traffic and log",
+            "Speed up ARP processing only"
+        ]
+    },
+    {
+        "q": "What information is in DAI log entry?",
+        "o": [
+            "Source MAC IP port and VLAN data",
+            "Only source MAC address logged",
+            "Only source IP address logged",
+            "Only timestamp is logged here"
+        ]
+    },
+    {
+        "q": "What is DHCP snooping logging purpose?",
+        "o": [
+            "Track DHCP violations and drops",
+            "Encrypt DHCP packet contents here",
+            "Speed up DHCP server responses",
+            "Block all DHCP communications"
+        ]
+    },
+    {
+        "q": "What is MAC move detection feature?",
+        "o": [
+            "Detect MAC appearing on new port",
+            "Block MAC address from moving",
+            "Encrypt MAC address information",
+            "Speed up MAC learning process"
+        ]
+    },
+    {
+        "q": "What attack does MAC move detect?",
+        "o": [
+            "MAC spoofing and ARP attacks",
+            "DNS cache poisoning only here",
+            "DHCP starvation attack only",
+            "VLAN hopping attack only here"
+        ]
+    },
+    {
+        "q": "What is flapping detection on switches?",
+        "o": [
+            "Detect rapid link state changes",
+            "Block all unstable connections",
+            "Encrypt flapping port traffic",
+            "Speed up link convergence only"
+        ]
+    },
+    {
+        "q": "What causes port flapping issues?",
+        "o": [
+            "Cable issues or STP problems",
+            "Strong encryption overhead only",
+            "High CPU utilization only here",
+            "Memory exhaustion on switch"
+        ]
+    },
+    {
+        "q": "What is storm prevention mechanism?",
+        "o": [
+            "Limit broadcast multicast unicast rates",
+            "Block all storm traffic completely",
+            "Encrypt storm traffic before dropping",
+            "Log storm events without action"
+        ]
+    },
+    {
+        "q": "What triggers broadcast storm on network?",
+        "o": [
+            "Network loops or misconfiguration",
+            "Strong encryption processing load",
+            "Valid application broadcasts only",
+            "Normal DHCP discovery process"
+        ]
+    },
+    {
+        "q": "What is multicast storm suppression?",
+        "o": [
+            "Limit multicast traffic on ports",
+            "Block all multicast traffic here",
+            "Encrypt multicast packets only",
+            "Log multicast traffic events"
+        ]
+    },
+    {
+        "q": "What is unknown unicast flooding?",
+        "o": [
+            "Send to all ports when dest unknown",
+            "Block traffic when destination unknown",
+            "Encrypt when destination not known",
+            "Request destination from server"
+        ]
+    },
+    {
+        "q": "How can unknown unicast flooding be limited?",
+        "o": [
+            "Storm control for unknown unicast",
+            "Disable unicast forwarding only",
+            "Encrypt all unicast traffic here",
+            "Log unknown unicast packets"
+        ]
+    },
+    {
+        "q": "What is MACsec encryption used for?",
+        "o": [
+            "Layer 2 hop-by-hop encryption",
+            "Layer 3 end-to-end encryption",
+            "Application layer encryption",
+            "Transport layer encryption"
+        ]
+    },
+    {
+        "q": "What does MACsec protect against?",
+        "o": [
+            "Eavesdropping and MITM on LAN",
+            "DNS spoofing attacks only here",
+            "Application layer attacks only",
+            "Wireless attacks exclusively"
+        ]
+    },
+    {
+        "q": "What is MKA protocol in MACsec?",
+        "o": [
+            "MACsec Key Agreement protocol",
+            "MAC Key Authentication protocol",
+            "Master Key Allocation protocol",
+            "Managed Key Access protocol"
+        ]
+    },
+    {
+        "q": "What is CAK in MACsec key hierarchy?",
+        "o": [
+            "Connectivity Association Key value",
+            "Central Authentication Key value",
+            "Control Access Key for MACsec",
+            "Certificate Authority Key value"
+        ]
+    },
+    {
+        "q": "What is SAK derived from in MACsec?",
+        "o": [
+            "Derived from CAK using MKA",
+            "Static configuration by admin",
+            "Random generation each session",
+            "Imported from external server"
+        ]
+    },
+    {
+        "q": "What is secure channel in MACsec terminology?",
+        "o": [
+            "Unidirectional secure path between peers",
+            "Bidirectional encrypted tunnel setup",
+            "Management connection configuration",
+            "Backup communication channel path"
+        ]
+    },
+    {
+        "q": "What is secure association in MACsec?",
+        "o": [
+            "Set of security parameters and keys",
+            "Physical connection between devices",
+            "Logical grouping of VLAN members",
+            "Authentication credentials storage"
+        ]
+    },
+    {
+        "q": "What encryption does MACsec use by default?",
+        "o": [
+            "AES-GCM with 128-bit keys",
+            "DES with 56-bit keys only",
+            "3DES with 168-bit keys here",
+            "RC4 with 128-bit keys used"
+        ]
+    },
+    {
+        "q": "What is integrity check in MACsec frame?",
+        "o": [
+            "ICV validates frame authenticity",
+            "CRC checks frame corruption only",
+            "Hash verifies source identity",
+            "Signature proves authorization"
+        ]
+    },
+    {
+        "q": "Where is MACsec header inserted in frame?",
+        "o": [
+            "Between SA and EtherType fields",
+            "Before destination MAC address",
+            "After FCS at frame end only",
+            "Inside payload before data"
+        ]
+    },
+    {
+        "q": "What is confidentiality offset in MACsec?",
+        "o": [
+            "Bytes left unencrypted for switching",
+            "Encryption strength setting value",
+            "Key derivation function parameter",
+            "Frame header size adjustment"
+        ]
+    },
+    {
+        "q": "Why use confidentiality offset?",
+        "o": [
+            "Allow intermediate device inspection",
+            "Increase encryption strength greatly",
+            "Reduce processing overhead here",
+            "Simplify key management process"
+        ]
+    },
+    {
+        "q": "What is 802.1AE standard specification?",
+        "o": [
+            "MACsec encryption standard document",
+            "Port-based access control standard",
+            "VLAN tagging standard document",
+            "Spanning tree protocol standard"
+        ]
+    },
+    {
+        "q": "How does MACsec integrate with 802.1X?",
+        "o": [
+            "802.1X provides CAK distribution",
+            "MACsec replaces 802.1X completely",
+            "They operate independently here",
+            "802.1X provides MACsec headers"
+        ]
+    },
+    {
+        "q": "What is PSK mode in MACsec deployment?",
+        "o": [
+            "Pre-shared key manually configured",
+            "Public session key exchanged here",
+            "Private signature key for auth",
+            "Protected storage key location"
+        ]
+    },
+    {
+        "q": "What is SGT in TrustSec architecture?",
+        "o": [
+            "Scalable Group Tag for classification",
+            "Secure Gateway Transit protocol",
+            "Standard Group Tunnel method",
+            "Segmented Gateway Topology design"
+        ]
+    },
+    {
+        "q": "How is SGT assigned to traffic?",
+        "o": [
+            "Based on user or device identity",
+            "Randomly by network switches here",
+            "Statically per VLAN configuration",
+            "By destination IP address only"
+        ]
+    },
+    {
+        "q": "What is SGACL in TrustSec design?",
+        "o": [
+            "SGT-based access control list policy",
+            "Source group access control limit",
+            "Secure gateway access configuration",
+            "Standard group ACL template"
+        ]
+    },
+    {
+        "q": "What advantage does SGACL provide?",
+        "o": [
+            "Policy based on identity not topology",
+            "Faster ACL processing speed here",
+            "Stronger encryption capability",
+            "Simpler network configuration"
+        ]
+    },
+    {
+        "q": "What is SXP protocol in TrustSec?",
+        "o": [
+            "SGT Exchange Protocol between devices",
+            "Secure Exchange Protocol standard",
+            "Source XML Protocol for config",
+            "Standard Extension Protocol"
+        ]
+    },
+    {
+        "q": "What is inline tagging in TrustSec?",
+        "o": [
+            "SGT embedded in Ethernet frame",
+            "SGT in separate control packet",
+            "SGT stored in external database",
+            "SGT derived from IP header"
+        ]
+    },
+    {
+        "q": "What is network device admission control?",
+        "o": [
+            "Verify device identity before network access",
+            "Speed up device connection to network",
+            "Encrypt device traffic automatically",
+            "Block all unknown device types"
+        ]
+    },
+    {
+        "q": "What is profiling in NAC context?",
+        "o": [
+            "Identify device type automatically",
+            "Block unknown device connections",
+            "Encrypt device communications here",
+            "Speed up device authentication"
+        ]
+    },
+    {
+        "q": "What attributes are used for device profiling?",
+        "o": [
+            "MAC OUI DHCP options HTTP headers",
+            "Only MAC address for identification",
+            "Only IP address for classification",
+            "Only username for authorization"
+        ]
+    },
+    {
+        "q": "What is change of authorization in ISE?",
+        "o": [
+            "Dynamic policy update for sessions",
+            "Static policy assignment only here",
+            "Password change requirement only",
+            "Certificate renewal procedure"
+        ]
+    },
+    {
+        "q": "What triggers CoA in network environment?",
+        "o": [
+            "Posture change or security event",
+            "Scheduled timer expiration only",
+            "User request for policy change",
+            "Administrator manual action only"
+        ]
+    },
+    {
+        "q": "What is pxGrid in Cisco architecture?",
+        "o": [
+            "Platform Exchange Grid for context sharing",
+            "Proxy Grid for load balancing only",
+            "Public Exchange Gateway protocol",
+            "Protected XML Grid database"
+        ]
+    },
+    {
+        "q": "What information is shared via pxGrid?",
+        "o": [
+            "Session identity and security context",
+            "Only routing table information here",
+            "Only VLAN membership database",
+            "Only encryption key material"
+        ]
+    },
+    {
+        "q": "What is threat-centric NAC functionality?",
+        "o": [
+            "Quarantine based on threat indicators",
+            "Block based on user behavior only",
+            "Encrypt based on data sensitivity",
+            "Prioritize based on bandwidth need"
+        ]
+    },
+    {
+        "q": "What is Rapid Threat Containment in ISE?",
+        "o": [
+            "Automatic isolation of compromised endpoints",
+            "Manual quarantine by administrator only",
+            "Encryption of suspicious traffic flows",
+            "Logging of potential attack patterns"
+        ]
+    },
+    {
+        "q": "What is adaptive network control capability?",
+        "o": [
+            "Dynamic response to security events",
+            "Static policy enforcement only here",
+            "Manual security adjustment only",
+            "Scheduled security updates only"
+        ]
+    },
+    {
+        "q": "What is SD-Access in network architecture?",
+        "o": [
+            "Software-defined campus fabric solution",
+            "Standard data access protocol method",
+            "Secure device access control list",
+            "Storage device access mechanism"
+        ]
+    },
+    {
+        "q": "What is fabric in SD-Access context?",
+        "o": [
+            "Overlay network with automation",
+            "Physical cabling infrastructure here",
+            "Traditional VLAN-based network",
+            "Wireless access point network"
+        ]
+    },
+    {
+        "q": "What is LISP in SD-Access design?",
+        "o": [
+            "Locator/ID Separation Protocol",
+            "Local Internet Service Provider",
+            "Logical Information System Protocol",
+            "Layered Infrastructure Service"
+        ]
+    },
+    {
+        "q": "What does VXLAN provide in SD-Access?",
+        "o": [
+            "Overlay encapsulation for transport",
+            "Underlay routing optimization only",
+            "Security policy enforcement here",
+            "Authentication services only"
+        ]
+    },
+    {
+        "q": "What is control plane node in SD-Access?",
+        "o": [
+            "Maps endpoint to location in fabric",
+            "Forwards user data traffic only",
+            "Authenticates endpoint devices here",
+            "Encrypts all fabric traffic data"
+        ]
+    },
+    {
+        "q": "What is edge node function in SD-Access?",
+        "o": [
+            "Connect endpoints and apply policy",
+            "Route traffic between sites only",
+            "Provide centralized management only",
+            "Store endpoint database entries"
+        ]
+    },
+    {
+        "q": "What is border node role in SD-Access?",
+        "o": [
+            "Connect fabric to external networks",
+            "Connect edge nodes within fabric",
+            "Provide authentication services",
+            "Store policy configuration data"
+        ]
+    },
+    {
+        "q": "What is host tracking in SD-Access?",
+        "o": [
+            "Track endpoint location dynamically",
+            "Block unauthorized host access here",
+            "Encrypt host communications only",
+            "Log host activity permanently"
+        ]
+    },
+    {
+        "q": "What is VN in SD-Access architecture?",
+        "o": [
+            "Virtual Network for segmentation",
+            "VLAN Network traditional design",
+            "Verified Node in fabric mesh",
+            "Variable Numbering scheme used"
+        ]
+    },
+    {
+        "q": "How does VN provide isolation in fabric?",
+        "o": [
+            "Separate VRF for each virtual network",
+            "Physical network separation required",
+            "Firewall between all endpoints here",
+            "Encryption between VN members"
+        ]
+    },
+    {
+        "q": "What is micro-segmentation in SD-Access?",
+        "o": [
+            "SGT-based policy within same VN",
+            "VLAN-based separation only here",
+            "Physical port isolation method",
+            "Firewall rule for each device"
+        ]
+    },
+    {
+        "q": "What is DNA Center role in SD-Access?",
+        "o": [
+            "Centralized management and automation",
+            "Data plane forwarding only here",
+            "Authentication server function",
+            "Encryption key distribution"
+        ]
+    },
+    {
+        "q": "What is assurance in DNA Center platform?",
+        "o": [
+            "Network visibility and analytics",
+            "Policy configuration management",
+            "Device provisioning automation",
+            "Security threat detection only"
+        ]
+    },
+    {
+        "q": "What is automation in DNA Center context?",
+        "o": [
+            "Zero-touch provisioning of devices",
+            "Manual configuration assistance",
+            "Logging of configuration changes",
+            "Backup of device configuration"
+        ]
+    },
+    {
+        "q": "What is encrypted traffic analytics?",
+        "o": [
+            "Detect threats without decryption",
+            "Decrypt traffic for inspection",
+            "Block all encrypted traffic here",
+            "Log encrypted session metadata"
+        ]
+    },
+    {
+        "q": "What metadata does ETA use for analysis?",
+        "o": [
+            "TLS handshake and flow patterns",
+            "Decrypted payload content only",
+            "User credentials in traffic",
+            "Application data in packets"
+        ]
+    },
+    {
+        "q": "What is SPAT analysis in ETA?",
+        "o": [
+            "Sequence of Packet Lengths and Times",
+            "Security Protocol Analysis Type",
+            "Standard Packet Attribute Template",
+            "Source Port Address Translation"
+        ]
+    },
+    {
+        "q": "What advantage does ETA provide?",
+        "o": [
+            "Privacy-preserving threat detection",
+            "Faster traffic analysis speed only",
+            "Better encryption identification",
+            "Complete traffic visibility always"
+        ]
+    },
+    {
+        "q": "What is flexible NetFlow on Cisco devices?",
+        "o": [
+            "Customizable flow record templates",
+            "Fixed format flow records only",
+            "Encrypted flow data export only",
+            "Compressed flow records only"
+        ]
+    },
+    {
+        "q": "What advantage does Flexible NetFlow have?",
+        "o": [
+            "User-defined key and non-key fields",
+            "Faster processing than standard flow",
+            "Smaller storage requirements only",
+            "Better encryption support only"
+        ]
+    },
+    {
+        "q": "What is flow monitor in flexible NetFlow?",
+        "o": [
+            "Combines record exporter and cache",
+            "Only exports flow data to collector",
+            "Only caches flow data in memory",
+            "Only defines flow record format"
+        ]
+    },
+    {
+        "q": "What is flow exporter configuration?",
+        "o": [
+            "Defines destination for flow data",
+            "Defines flow record key fields",
+            "Defines cache timeout values only",
+            "Defines sampling rate settings"
+        ]
+    },
+    {
+        "q": "What is flow record definition?",
+        "o": [
+            "Specifies fields to collect and match",
+            "Specifies export destination only",
+            "Specifies cache size settings only",
+            "Specifies sampling configuration"
+        ]
+    },
+    {
+        "q": "What is application visibility in network?",
+        "o": [
+            "Identify applications in traffic flow",
+            "Block unauthorized applications only",
+            "Encrypt application data in transit",
+            "Speed up application performance"
+        ]
+    },
+    {
+        "q": "What is NBAR used for on Cisco devices?",
+        "o": [
+            "Network Based Application Recognition",
+            "Network Bandwidth Allocation Ratio",
+            "Network Broadcast Anomaly Report",
+            "Network Bridge Address Resolution"
+        ]
+    },
+    {
+        "q": "How does NBAR identify applications?",
+        "o": [
+            "Deep packet inspection and heuristics",
+            "Only by port number identification",
+            "Only by IP address classification",
+            "Only by MAC address matching"
+        ]
+    },
+    {
+        "q": "What is NBAR2 improvement over original?",
+        "o": [
+            "Protocol pack updates and accuracy",
+            "Faster processing speed only here",
+            "Smaller memory footprint only",
+            "Better encryption handling only"
+        ]
+    },
+    {
+        "q": "What is protocol pack in NBAR2?",
+        "o": [
+            "Updateable application signatures",
+            "Fixed protocol definition only",
+            "Network speed optimization package",
+            "Security policy bundle file"
+        ]
+    },
+    {
+        "q": "What is QoS in network security context?",
+        "o": [
+            "Prioritize traffic including security",
+            "Only improve application speed here",
+            "Only encrypt high priority traffic",
+            "Only block low priority traffic"
+        ]
+    },
+    {
+        "q": "How can QoS help with DoS mitigation?",
+        "o": [
+            "Rate limit attack traffic classes",
+            "Encrypt all traffic for protection",
+            "Block all incoming traffic types",
+            "Forward all traffic regardless"
+        ]
+    },
+    {
+        "q": "What is traffic policing in QoS?",
+        "o": [
+            "Drop or mark excess traffic immediately",
+            "Buffer excess traffic for later sending",
+            "Encrypt excess traffic before drop",
+            "Log excess traffic and continue"
+        ]
+    },
+    {
+        "q": "What is traffic shaping in QoS context?",
+        "o": [
+            "Buffer and delay excess traffic",
+            "Drop excess traffic immediately here",
+            "Encrypt excess traffic before buffering",
+            "Block all traffic exceeding rate"
+        ]
+    },
+    {
+        "q": "What is difference between policing and shaping?",
+        "o": [
+            "Policing drops while shaping buffers",
+            "Shaping drops while policing buffers",
+            "Both drop excess traffic equally",
+            "Both buffer excess traffic equally"
+        ]
+    },
+    {
+        "q": "What is CBWFQ in QoS configuration?",
+        "o": [
+            "Class-Based Weighted Fair Queuing",
+            "Content-Based Web Filtering Query",
+            "Centralized Bandwidth Work Queue",
+            "Controlled Broadcast Wireless Queue"
+        ]
+    },
+    {
+        "q": "What is LLQ used for in QoS?",
+        "o": [
+            "Priority queue for delay-sensitive traffic",
+            "Standard queue for bulk data transfer",
+            "Management queue for control traffic",
+            "Backup queue for overflow traffic"
+        ]
+    },
+    {
+        "q": "What traffic should use LLQ priority?",
+        "o": [
+            "Voice and video traffic typically",
+            "Bulk file transfer applications",
+            "Email and web browsing traffic",
+            "Backup and replication traffic"
+        ]
+    },
+    {
+        "q": "What is DSCP marking in QoS packets?",
+        "o": [
+            "Differentiated Services Code Point value",
+            "Dynamic Security Control Protocol",
+            "Data Stream Classification Priority",
+            "Direct Signaling Control Plane"
+        ]
+    },
+    {
+        "q": "What is EF DSCP value used for?",
+        "o": [
+            "Expedited Forwarding for voice",
+            "Enhanced Filtering for security",
+            "Extended Flooding for multicast",
+            "Encrypted Forwarding for VPN"
+        ]
+    },
+    {
+        "q": "What is AF DSCP class in QoS?",
+        "o": [
+            "Assured Forwarding with drop precedence",
+            "Advanced Filtering for security here",
+            "Automatic Failover configuration",
+            "Accelerated Forwarding for speed"
+        ]
+    },
+    {
+        "q": "What is CS DSCP class meaning?",
+        "o": [
+            "Class Selector for backward compatibility",
+            "Controlled Signaling for management",
+            "Centralized Storage for buffering",
+            "Classified Service for prioritization"
+        ]
+    },
+    {
+        "q": "What is trust boundary in QoS design?",
+        "o": [
+            "Point where QoS markings are validated",
+            "Firewall between network zones only",
+            "Encryption boundary in network",
+            "Authentication checkpoint in network"
+        ]
+    },
+    {
+        "q": "Where should trust boundary be placed?",
+        "o": [
+            "As close to source as possible",
+            "At network core switches only",
+            "At internet edge routers only",
+            "At data center boundary only"
+        ]
+    },
+    {
+        "q": "What is remarking in QoS policy?",
+        "o": [
+            "Change DSCP or CoS values in transit",
+            "Add additional QoS markings to packet",
+            "Remove all QoS markings from packet",
+            "Encrypt QoS marking information"
+        ]
+    },
+    {
+        "q": "What is CoS in layer 2 QoS context?",
+        "o": [
+            "Class of Service in 802.1Q tag",
+            "Control of Switching in VLANs",
+            "Continuity of Service guarantee",
+            "Centralized Operation Service"
+        ]
+    },
+    {
+        "q": "How many CoS values are available?",
+        "o": [
+            "Eight values from 0 to 7",
+            "Sixteen values from 0 to 15",
+            "Four values from 0 to 3 here",
+            "Sixty-four values available here"
+        ]
+    },
+    {
+        "q": "What is CoS to DSCP mapping purpose?",
+        "o": [
+            "Translate layer 2 to layer 3 QoS",
+            "Encrypt QoS values for security",
+            "Remove QoS markings at boundary",
+            "Duplicate QoS markings for backup"
+        ]
+    },
+    {
+        "q": "What is WRED in congestion avoidance?",
+        "o": [
+            "Weighted Random Early Detection method",
+            "Wireless Resource Expansion Device",
+            "Wide Range Encryption Detection",
+            "Web Request Endpoint Discovery"
+        ]
+    },
+    {
+        "q": "How does WRED help prevent congestion?",
+        "o": [
+            "Drop packets early before queue full",
+            "Drop all packets when queue full",
+            "Encrypt packets when queue full",
+            "Forward all packets regardless"
+        ]
+    },
+    {
+        "q": "What is tail drop versus WRED approach?",
+        "o": [
+            "Tail drop waits until queue full",
+            "WRED waits until queue full here",
+            "Both drop at same queue level",
+            "Neither drops any packets ever"
+        ]
+    },
+    {
+        "q": "What is TCP synchronization problem?",
+        "o": [
+            "Multiple flows reduce speed together",
+            "Single flow monopolizes bandwidth",
+            "Encrypted flows cause congestion",
+            "UDP flows starve TCP traffic"
+        ]
+    },
+    {
+        "q": "How does WRED address TCP sync?",
+        "o": [
+            "Random drops prevent sync pattern",
+            "Prioritized drops prevent sync here",
+            "All drops at same time regardless",
+            "No drops to prevent any sync"
+        ]
+    },
+    {
+        "q": "What is AFD in Cisco QoS?",
+        "o": [
+            "Approximate Fair Dropping algorithm",
+            "Advanced Firewall Detection method",
+            "Automated Failover Detection",
+            "Application Flow Distribution"
+        ]
+    },
+    {
+        "q": "What advantage does AFD have over WRED?",
+        "o": [
+            "Per-flow fairness in congestion",
+            "Faster processing speed only here",
+            "Simpler configuration options",
+            "Better encryption handling only"
+        ]
+    },
+    {
+        "q": "What is hierarchical QoS policy structure?",
+        "o": [
+            "Parent and child policy relationship",
+            "Single flat policy configuration",
+            "Encrypted policy distribution method",
+            "Centralized policy storage only"
+        ]
+    },
+    {
+        "q": "When is hierarchical QoS policy needed?",
+        "o": [
+            "Subinterface or VLAN specific policies",
+            "Simple bandwidth allocation only here",
+            "Encryption key distribution only",
+            "Logging configuration only here"
+        ]
+    },
+    {
+        "q": "What is BGP hijacking attack technique?",
+        "o": [
+            "Announce unauthorized IP prefixes",
+            "Block all BGP announcements here",
+            "Encrypt BGP route updates only",
+            "Speed up BGP convergence time"
+        ]
+    },
+    {
+        "q": "How can BGP hijacking be detected?",
+        "o": [
+            "Route monitoring and RPKI validation",
+            "Only local router log analysis here",
+            "Only packet capture at edge only",
+            "Only firewall log inspection"
+        ]
+    },
+    {
+        "q": "What is RPKI used to prevent?",
+        "o": [
+            "Resource Public Key Infrastructure protection",
+            "Routing Protocol Key Infrastructure",
+            "Remote Policy Key Injection method",
+            "Rapid Path Key Inspection tool"
+        ]
+    },
+    {
+        "q": "What is ROA in RPKI context?",
+        "o": [
+            "Route Origin Authorization record",
+            "Remote Origin Authentication",
+            "Routing Origin Allocation record",
+            "Resource Origin Address data"
+        ]
+    },
+    {
+        "q": "What does ROA validate in BGP?",
+        "o": [
+            "AS authorized to originate prefix",
+            "Encryption of BGP update messages",
+            "Speed of BGP route propagation",
+            "Size of BGP routing tables"
+        ]
+    },
+    {
+        "q": "What is BGP prefix filtering purpose?",
+        "o": [
+            "Control which prefixes are accepted",
+            "Encrypt BGP prefix announcements",
+            "Speed up prefix propagation time",
+            "Log all prefix changes only"
+        ]
+    },
+    {
+        "q": "What is IRR used for in routing security?",
+        "o": [
+            "Internet Routing Registry database",
+            "Internal Route Reflection method",
+            "Improved Routing Reliability check",
+            "Integrated Route Recording tool"
+        ]
+    },
+    {
+        "q": "What is route leak in BGP context?",
+        "o": [
+            "Propagate routes beyond intended scope",
+            "Block route announcements completely",
+            "Encrypt route information data here",
+            "Speed up route convergence time"
+        ]
+    },
+    {
+        "q": "How does route leak differ from hijack?",
+        "o": [
+            "Leak is unintentional propagation error",
+            "Leak is intentional malicious action",
+            "Hijack is routing configuration issue",
+            "Both are exactly the same attack"
+        ]
+    },
+    {
+        "q": "What is BGPsec protocol purpose?",
+        "o": [
+            "Cryptographic path validation for BGP",
+            "Encryption of BGP session traffic",
+            "Compression of BGP update messages",
+            "Caching of BGP route information"
+        ]
+    },
+    {
+        "q": "What does BGPsec validate?",
+        "o": [
+            "AS path has not been modified",
+            "Only origin AS is validated here",
+            "Only prefix length is checked",
+            "Only community values verified"
+        ]
+    },
+    {
+        "q": "What is limitation of BGPsec deployment?",
+        "o": [
+            "Requires full adoption to be effective",
+            "Too fast for current hardware only",
+            "Incompatible with IPv6 addresses",
+            "Cannot work with RPKI together"
+        ]
+    },
+    {
+        "q": "What is ASPA in routing security?",
+        "o": [
+            "AS Provider Authorization record",
+            "Automated Security Policy Audit",
+            "Advanced Security Path Analysis",
+            "Application Security Protocol Agent"
+        ]
+    },
+    {
+        "q": "What does ASPA help prevent?",
+        "o": [
+            "Route leaks via customer-provider relations",
+            "All BGP hijacking attacks completely",
+            "Encryption weakness in BGP sessions",
+            "Performance issues in BGP routing"
+        ]
+    },
+    {
+        "q": "What is MANRS initiative?",
+        "o": [
+            "Mutually Agreed Norms for Routing Security",
+            "Manual Administration of Network Routes",
+            "Managed Autonomous Network Services",
+            "Measured Analysis of Network Security"
+        ]
+    },
+    {
+        "q": "What actions does MANRS promote?",
+        "o": [
+            "Filtering validation antispoofing coordination",
+            "Only encryption of routing traffic",
+            "Only logging of routing events",
+            "Only backup of routing configuration"
+        ]
+    },
+    {
+        "q": "What is route origin validation status?",
+        "o": [
+            "Valid invalid or not found state",
+            "Only valid or invalid classification",
+            "Numeric score from 0 to 100 here",
+            "Percentage of validation completion"
+        ]
+    },
+    {
+        "q": "What is TCP MD5 signature purpose?",
+        "o": [
+            "Authenticate BGP session peers",
+            "Encrypt BGP session traffic here",
+            "Compress BGP update messages",
+            "Speed up BGP convergence time"
+        ]
+    },
+    {
+        "q": "What is weakness of TCP MD5 for BGP?",
+        "o": [
+            "MD5 cryptographically weakened now",
+            "Too slow for high-speed links",
+            "Incompatible with modern routers",
+            "Cannot work with IPv6 addresses"
+        ]
+    },
+    {
+        "q": "What is TCP-AO improvement over MD5?",
+        "o": [
+            "Stronger algorithms and key rotation",
+            "Faster processing speed only here",
+            "Smaller packet overhead only",
+            "Better compression support only"
+        ]
+    },
+    {
+        "q": "What is GTSM protection for BGP?",
+        "o": [
+            "Generalized TTL Security Mechanism",
+            "Global Transport Security Method",
+            "Gateway Tunnel Security Module",
+            "Group Traffic Security Management"
+        ]
+    },
+    {
+        "q": "How does GTSM protect BGP sessions?",
+        "o": [
+            "Verify TTL is maximum value expected",
+            "Encrypt all BGP packets sent here",
+            "Block all non-BGP traffic types",
+            "Log all BGP session attempts"
+        ]
+    },
+    {
+        "q": "What assumption does GTSM make?",
+        "o": [
+            "Direct neighbors one hop away only",
+            "All peers are multiple hops away",
+            "Encryption is required for peers",
+            "Authentication is not needed"
+        ]
+    },
+    {
+        "q": "What is BFD used for with BGP?",
+        "o": [
+            "Bidirectional Forwarding Detection fast",
+            "Broadcast Filtering Device setup",
+            "Bandwidth Forward Distribution",
+            "Border Firewall Detection method"
+        ]
+    },
+    {
+        "q": "How does BFD improve BGP failover?",
+        "o": [
+            "Sub-second failure detection timing",
+            "Better encryption of BGP sessions",
+            "Larger routing table capacity here",
+            "Faster route calculation speed"
+        ]
+    },
+    {
+        "q": "What is BGP session flooding attack?",
+        "o": [
+            "Exhaust resources with many sessions",
+            "Send too many route updates only",
+            "Encrypt all session traffic data",
+            "Block legitimate session attempts"
+        ]
+    },
+    {
+        "q": "What defense helps against BGP flooding?",
+        "o": [
+            "Rate limit TCP SYN and connections",
+            "Encrypt all BGP traffic data here",
+            "Block all external BGP connections",
+            "Log all connection attempts only"
+        ]
+    },
+    {
+        "q": "What is route flap damping purpose?",
+        "o": [
+            "Suppress unstable route announcements",
+            "Speed up route convergence time here",
+            "Encrypt route update messages only",
+            "Block invalid route announcements"
+        ]
+    },
+    {
+        "q": "Why is route flap damping controversial?",
+        "o": [
+            "Can delay legitimate route recovery",
+            "Too fast for modern networks here",
+            "Incompatible with current routers",
+            "Cannot work with IPv6 routing"
+        ]
+    },
+    {
+        "q": "What is MRAI in BGP route timing?",
+        "o": [
+            "Minimum Route Advertisement Interval",
+            "Maximum Route Allocation Index",
+            "Managed Route Analysis Interface",
+            "Modified Route Aggregation Input"
+        ]
+    },
+    {
+        "q": "What is prefix deaggregation attack?",
+        "o": [
+            "Announce more specific prefixes illegally",
+            "Block all prefix announcements here",
+            "Encrypt prefix information data only",
+            "Speed up prefix propagation time"
+        ]
+    },
+    {
+        "q": "Why do more specific prefixes win in BGP?",
+        "o": [
+            "Longest prefix match routing rule",
+            "Shortest prefix preferred always here",
+            "Random selection between prefixes",
+            "Oldest announcement always wins"
+        ]
+    },
+    {
+        "q": "What is max-prefix limit in BGP?",
+        "o": [
+            "Limit prefixes accepted from peer",
+            "Encrypt prefix announcements only",
+            "Speed up prefix processing time",
+            "Log prefix changes for audit"
+        ]
+    },
+    {
+        "q": "What happens when max-prefix exceeded?",
+        "o": [
+            "Session can be terminated or warned",
+            "Prefixes are encrypted automatically",
+            "Traffic is blocked completely here",
+            "Logs are generated without action"
+        ]
+    },
+    {
+        "q": "What is ORF in BGP filtering?",
+        "o": [
+            "Outbound Route Filtering at source",
+            "Original Route Filtering method",
+            "Optimized Route Forwarding path",
+            "Organized Route Federation design"
+        ]
+    },
+    {
+        "q": "What advantage does ORF provide?",
+        "o": [
+            "Reduce unwanted route updates early",
+            "Encrypt route updates at source here",
+            "Speed up route calculation process",
+            "Block all routes except specific"
+        ]
+    },
+    {
+        "q": "What is graceful restart in BGP?",
+        "o": [
+            "Maintain forwarding during restart",
+            "Encrypt session during restart only",
+            "Speed up restart process timing",
+            "Block traffic during restart here"
+        ]
+    },
+    {
+        "q": "What security concern with graceful restart?",
+        "o": [
+            "Stale routes used during restart period",
+            "Encryption is disabled during restart",
+            "Firewall rules cleared on restart",
+            "Logs are deleted during restart"
+        ]
+    },
+    {
+        "q": "What is FHRP in network redundancy?",
+        "o": [
+            "First Hop Redundancy Protocol family",
+            "Firewall High Reliability Protocol",
+            "Fast Hardware Recovery Protocol",
+            "Forwarding Host Routing Protocol"
+        ]
+    },
+    {
+        "q": "What is HSRP attack vulnerability?",
+        "o": [
+            "Hijack virtual gateway via priority",
+            "Block all HSRP communications here",
+            "Encrypt HSRP packets for privacy",
+            "Speed up HSRP failover timing"
+        ]
+    },
+    {
+        "q": "How to secure HSRP deployment?",
+        "o": [
+            "Use MD5 authentication for groups",
+            "Encrypt all HSRP traffic only here",
+            "Block all HSRP on network edge",
+            "Log HSRP events for analysis"
+        ]
+    },
+    {
+        "q": "What is VRRP security vulnerability?",
+        "o": [
+            "Master election manipulation attack",
+            "Encryption weakness in protocol",
+            "Performance limitation in design",
+            "Scalability issue in deployment"
+        ]
+    },
+    {
+        "q": "How to secure VRRP deployments?",
+        "o": [
+            "Enable authentication on all routers",
+            "Encrypt all VRRP traffic on network",
+            "Block VRRP on all interfaces here",
+            "Log VRRP state changes only here"
+        ]
+    },
+    {
+        "q": "What is GLBP unique feature?",
+        "o": [
+            "Load balancing across multiple gateways",
+            "Encryption of gateway communications",
+            "Faster failover than other FHRPs",
+            "Simpler configuration than others"
+        ]
+    },
+    {
+        "q": "What is AVG in GLBP architecture?",
+        "o": [
+            "Active Virtual Gateway controller role",
+            "Automated Virtual Gateway manager",
+            "Average Virtual Gateway capacity",
+            "Alternative Virtual Gateway backup"
+        ]
+    },
+    {
+        "q": "What is AVF role in GLBP design?",
+        "o": [
+            "Active Virtual Forwarder traffic handler",
+            "Automated Virtual Firewall manager",
+            "Average Virtual Failover timing",
+            "Alternative Virtual Forwarding path"
+        ]
+    },
+    {
+        "q": "What is GLBP attack scenario?",
+        "o": [
+            "Manipulate AVG election priority values",
+            "Encrypt GLBP communications only here",
+            "Block all GLBP traffic on network",
+            "Speed up GLBP failover process"
+        ]
+    },
+    {
+        "q": "What is network time protocol attack?",
+        "o": [
+            "Manipulate time for security bypass",
+            "Block all NTP synchronization here",
+            "Encrypt NTP packets for privacy",
+            "Speed up NTP update intervals"
+        ]
+    },
+    {
+        "q": "How can NTP attacks affect security?",
+        "o": [
+            "Break certificate and key validity",
+            "Only affect log timestamps here",
+            "Only affect user display clocks",
+            "No security impact at all here"
+        ]
+    },
+    {
+        "q": "What is NTP amplification attack?",
+        "o": [
+            "Use monlist for DDoS reflection",
+            "Block NTP queries completely here",
+            "Encrypt NTP packets for privacy",
+            "Speed up NTP synchronization"
+        ]
+    },
+    {
+        "q": "What is NTS in NTP security?",
+        "o": [
+            "Network Time Security authentication",
+            "Network Transport Security protocol",
+            "New Time Synchronization method",
+            "Named Timestamp Service system"
+        ]
+    },
+    {
+        "q": "What does NTS provide for NTP?",
+        "o": [
+            "Authenticated and encrypted time sync",
+            "Only faster time synchronization",
+            "Only reduced network bandwidth",
+            "Only simplified configuration"
+        ]
+    },
+    {
+        "q": "What is SNMP security vulnerability?",
+        "o": [
+            "Community strings sent in cleartext",
+            "Too fast for network processing",
+            "Incompatible with modern devices",
+            "Cannot monitor network devices"
+        ]
+    },
+    {
+        "q": "What is SNMPv3 security improvement?",
+        "o": [
+            "Authentication encryption integrity",
+            "Only faster query processing here",
+            "Only more MIB objects supported",
+            "Only better scalability achieved"
+        ]
+    },
+    {
+        "q": "What is USM in SNMPv3 context?",
+        "o": [
+            "User Security Model authentication",
+            "Universal Security Management tool",
+            "Unified Storage Management system",
+            "Updated Security Module version"
+        ]
+    },
+    {
+        "q": "What security levels in SNMPv3?",
+        "o": [
+            "NoAuthNoPriv AuthNoPriv AuthPriv",
+            "Only encrypted or unencrypted",
+            "Only authenticated or not here",
+            "Single security level available"
+        ]
+    },
+    {
+        "q": "What is VACM in SNMPv3?",
+        "o": [
+            "View Access Control Model policy",
+            "Virtual Access Control Manager",
+            "Verified Authentication Control",
+            "Version Access Configuration Mode"
+        ]
+    },
+    {
+        "q": "What does VACM control access to?",
+        "o": [
+            "MIB views and allowed operations",
+            "Only user authentication methods",
+            "Only encryption algorithms used",
+            "Only session timeout values"
+        ]
+    },
+    {
+        "q": "What is SNMP trap vs inform difference?",
+        "o": [
+            "Inform requires acknowledgement received",
+            "Trap requires acknowledgement always",
+            "Both require acknowledgement always",
+            "Neither requires acknowledgement"
+        ]
+    },
+    {
+        "q": "What is SNMP enumeration attack risk?",
+        "o": [
+            "Discover network topology and config",
+            "Block all SNMP queries completely",
+            "Encrypt SNMP traffic for privacy",
+            "Speed up SNMP query processing"
+        ]
+    },
+    {
+        "q": "What is CDP security vulnerability?",
+        "o": [
+            "Sends device info in cleartext",
+            "Too slow for modern networks here",
+            "Incompatible with non-Cisco devices",
+            "Cannot discover device neighbors"
+        ]
+    },
+    {
+        "q": "What attacks use CDP information?",
+        "o": [
+            "Reconnaissance and VLAN hopping",
+            "Only denial of service attacks here",
+            "Only brute force password attacks",
+            "Only SQL injection web attacks"
+        ]
+    },
+    {
+        "q": "Should CDP be disabled at edge?",
+        "o": [
+            "Yes to prevent information leakage",
+            "No because it improves performance",
+            "No because it is encrypted traffic",
+            "Yes but only on trunk ports here"
+        ]
+    },
+    {
+        "q": "What is LLDP compared to CDP?",
+        "o": [
+            "Vendor-neutral neighbor discovery",
+            "Cisco proprietary enhancement here",
+            "Encrypted neighbor discovery only",
+            "Faster neighbor discovery speed"
+        ]
+    },
+    {
+        "q": "What is LLDP-MED extension for?",
+        "o": [
+            "Media Endpoint Devices like phones",
+            "Management Endpoint Detection only",
+            "Modified Encryption Detection here",
+            "Multicast Endpoint Distribution"
+        ]
+    },
+    {
+        "q": "What is Syslog security consideration?",
+        "o": [
+            "Messages sent in cleartext by default",
+            "Too slow for real-time monitoring",
+            "Incompatible with modern systems",
+            "Cannot log security events properly"
+        ]
+    },
+    {
+        "q": "What is TLS Syslog improvement?",
+        "o": [
+            "Encrypted and authenticated log transport",
+            "Only faster log processing speed here",
+            "Only more log storage capacity",
+            "Only better log format support"
+        ]
+    },
+    {
+        "q": "What is structured syslog benefit?",
+        "o": [
+            "Standardized parseable log format",
+            "Encrypted log transmission only here",
+            "Faster log generation speed only",
+            "Larger log storage capacity only"
+        ]
+    },
+    {
+        "q": "What is CEF log format advantage?",
+        "o": [
+            "Common Event Format for SIEM tools",
+            "Compact Efficient Format for speed",
+            "Cipher Encrypted Format security",
+            "Centralized Event Filtering setup"
+        ]
+    },
+    {
+        "q": "What is log injection attack risk?",
+        "o": [
+            "Insert malicious entries into logs",
+            "Block all log entries completely",
+            "Encrypt log entries before storage",
+            "Speed up log processing time"
+        ]
+    },
+    {
+        "q": "How to prevent log injection attacks?",
+        "o": [
+            "Sanitize and validate log inputs",
+            "Encrypt all log entries stored",
+            "Block external log sources only",
+            "Speed up log rotation process"
+        ]
+    },
+    {
+        "q": "What is log forwarding best practice?",
+        "o": [
+            "Use encrypted transport to collectors",
+            "Send all logs in cleartext only",
+            "Store logs only locally on devices",
+            "Delete logs immediately after write"
+        ]
+    },
+    {
+        "q": "What is centralized logging value?",
+        "o": [
+            "Correlation across multiple sources",
+            "Only reduced storage requirements",
+            "Only faster log generation speed",
+            "Only simpler log format used"
+        ]
+    },
+    {
+        "q": "What is log retention best practice?",
+        "o": [
+            "Based on compliance and investigation needs",
+            "Delete all logs after 24 hours only",
+            "Keep all logs forever indefinitely",
+            "No retention policy is required"
+        ]
+    },
+    {
+        "q": "What is network segmentation microsegmentation?",
+        "o": [
+            "Fine-grained workload isolation policy",
+            "VLAN-based network separation only",
+            "Physical network partition only here",
+            "Firewall rule for each subnet"
+        ]
+    },
+    {
+        "q": "What enables microsegmentation typically?",
+        "o": [
+            "Host-based or SDN policy enforcement",
+            "Only physical firewall appliances",
+            "Only VLAN configuration changes",
+            "Only router ACL configuration"
+        ]
+    },
+    {
+        "q": "What is east-west traffic in data center?",
+        "o": [
+            "Traffic between workloads in DC",
+            "Traffic entering data center only",
+            "Traffic leaving data center only",
+            "Traffic to internet gateway only"
+        ]
+    },
+    {
+        "q": "Why is east-west traffic security important?",
+        "o": [
+            "Lateral movement after initial breach",
+            "Only external attack protection here",
+            "Only compliance requirement met here",
+            "Only performance optimization goal"
+        ]
+    },
+    {
+        "q": "What is zero trust network principle?",
+        "o": [
+            "Never trust always verify access",
+            "Trust internal network completely",
+            "Trust after initial verification",
+            "Trust based on network location"
+        ]
+    },
+    {
+        "q": "What is identity-centric access control?",
+        "o": [
+            "Access based on verified identity",
+            "Access based on network location",
+            "Access based on time of day only",
+            "Access based on device type only"
+        ]
+    },
+    {
+        "q": "What is device trust in zero trust?",
+        "o": [
+            "Verify device health before access",
+            "Trust all devices on network here",
+            "Block all unknown device types",
+            "Encrypt all device traffic only"
+        ]
+    },
+    {
+        "q": "What is continuous verification concept?",
+        "o": [
+            "Ongoing validation during session",
+            "One-time verification at login",
+            "Verification only at logout time",
+            "No verification required ever"
+        ]
+    },
+    {
+        "q": "What is least privilege in zero trust?",
+        "o": [
+            "Minimum access needed for function",
+            "Maximum access for convenience here",
+            "Average access for all users here",
+            "No access restrictions applied"
+        ]
+    },
+    {
+        "q": "What is SDP in zero trust architecture?",
+        "o": [
+            "Software Defined Perimeter approach",
+            "Security Domain Protection method",
+            "Standard Data Protocol format",
+            "Secure Device Provisioning tool"
+        ]
+    },
+    {
+        "q": "How does SDP differ from traditional VPN?",
+        "o": [
+            "Application-specific micro-tunnels",
+            "Network-wide access granted here",
+            "No encryption of traffic used",
+            "Public access without authentication"
+        ]
+    },
+    {
+        "q": "What is ZTNA compared to SDP?",
+        "o": [
+            "Zero Trust Network Access same concept",
+            "Different architecture completely here",
+            "ZTNA is legacy SDP is modern",
+            "SDP is cloud ZTNA is on-premise"
+        ]
+    },
+    {
+        "q": "What is BeyondCorp model from Google?",
+        "o": [
+            "Zero trust implementation reference",
+            "Traditional perimeter security here",
+            "Cloud-only security architecture",
+            "Encryption-only security model"
+        ]
+    },
+    {
+        "q": "What is network visibility platform purpose?",
+        "o": [
+            "Complete traffic analysis capability",
+            "Only encryption of network traffic",
+            "Only blocking of malicious traffic",
+            "Only logging of user activity"
+        ]
+    },
+    {
+        "q": "What is TAP versus SPAN for visibility?",
+        "o": [
+            "TAP is passive SPAN is active copy",
+            "SPAN is passive TAP is active copy",
+            "Both are exactly same method here",
+            "Neither copies traffic for analysis"
+        ]
+    },
+    {
+        "q": "What is network packet broker function?",
+        "o": [
+            "Aggregate filter distribute traffic",
+            "Only encrypt traffic for security",
+            "Only block malicious traffic here",
+            "Only log traffic for compliance"
+        ]
+    },
+    {
+        "q": "What is SSL/TLS inspection challenge?",
+        "o": [
+            "Decrypt examine re-encrypt overhead",
+            "Only key management complexity here",
+            "Only certificate management issue",
+            "Only performance impact concern"
+        ]
+    },
+    {
+        "q": "What is certificate pinning bypass?",
+        "o": [
+            "Inspection fails when app pins cert",
+            "Inspection works better with pinning",
+            "No impact on inspection process here",
+            "Improves inspection accuracy overall"
+        ]
+    },
+    {
+        "q": "What is perfect forward secrecy impact?",
+        "o": [
+            "Passive decryption not possible here",
+            "Easier passive decryption available",
+            "No impact on decryption methods",
+            "Improves decryption performance"
+        ]
+    },
+    {
+        "q": "What is network detection and response?",
+        "o": [
+            "Detect threats via network analysis",
+            "Only firewall rule enforcement here",
+            "Only endpoint protection solution",
+            "Only email security gateway tool"
+        ]
+    },
+    {
+        "q": "How does NDR differ from IDS?",
+        "o": [
+            "ML-based behavioral analysis focus",
+            "Only signature matching detection",
+            "Only rule-based traffic blocking",
+            "Only log analysis for threats"
+        ]
+    },
+    {
+        "q": "What is deception technology in networks?",
+        "o": [
+            "Deploy decoys to detect attackers",
+            "Encrypt traffic to deceive attackers",
+            "Block traffic to confuse attackers",
+            "Log traffic to mislead attackers"
+        ]
+    },
+    {
+        "q": "What are breadcrumbs in deception?",
+        "o": [
+            "Fake credentials and files as lures",
+            "Real credentials stored securely",
+            "Encrypted files for protection here",
+            "Blocked access paths in network"
+        ]
+    },
+    {
+        "q": "What is high-fidelity alert from deception?",
+        "o": [
+            "Low false positive attacker interaction",
+            "High false positive rate expected here",
+            "Average alert quality generated here",
+            "No alerts generated by system"
+        ]
+    },
+    {
+        "q": "What is network forensics purpose?",
+        "o": [
+            "Investigate incidents via traffic analysis",
+            "Only prevent future attacks here",
+            "Only encrypt evidence for storage",
+            "Only block malicious traffic now"
+        ]
+    },
+    {
+        "q": "What is full packet capture challenge?",
+        "o": [
+            "Storage requirements very high here",
+            "Processing speed too fast here",
+            "No analysis tools available now",
+            "Encryption prevents all capture"
+        ]
+    },
+    {
+        "q": "What is metadata versus full packet capture?",
+        "o": [
+            "Metadata less storage more coverage",
+            "Full capture less storage needed",
+            "Both require same storage amount",
+            "Neither requires any storage space"
+        ]
+    },
+    {
+        "q": "What is PCAP file format used for?",
+        "o": [
+            "Store captured network packets data",
+            "Encrypt network traffic for privacy",
+            "Block malicious network traffic here",
+            "Speed up network data transfer"
+        ]
+    },
+    {
+        "q": "What is Zeek used for in security?",
+        "o": [
+            "Network traffic analysis and logging",
+            "Only firewall rule enforcement here",
+            "Only antivirus signature scanning",
+            "Only email spam filtering method"
+        ]
+    },
+    {
+        "q": "What unique capability does Zeek provide?",
+        "o": [
+            "Protocol analysis and file extraction",
+            "Only packet capture and storage",
+            "Only signature-based detection",
+            "Only network traffic blocking"
+        ]
+    },
+    {
+        "q": "What is Suricata capabilities?",
+        "o": [
+            "IDS IPS NSM and offline PCAP analysis",
+            "Only intrusion detection system here",
+            "Only network traffic blocking tool",
+            "Only log analysis platform tool"
+        ]
+    },
+    {
+        "q": "What is rule-based versus ML detection?",
+        "o": [
+            "Rules fixed ML adapts to patterns",
+            "ML fixed rules adapt to patterns",
+            "Both are exactly same approach here",
+            "Neither detects any threats ever"
+        ]
+    },
+    {
+        "q": "What is threat intelligence platform?",
+        "o": [
+            "Aggregate correlate threat data sources",
+            "Only single vendor threat feed",
+            "Only internal log analysis tool",
+            "Only firewall configuration manager"
+        ]
+    },
+    {
+        "q": "What is STIX in threat intelligence?",
+        "o": [
+            "Structured Threat Information Expression",
+            "Security Threat Indicator Exchange",
+            "Standard Threat Intelligence XML",
+            "Secure Threat Information Export"
+        ]
+    },
+    {
+        "q": "What is TAXII used for with STIX?",
+        "o": [
+            "Transport mechanism for STIX data",
+            "Threat analysis XML intelligence",
+            "Trusted authentication extension",
+            "Technical analysis exchange info"
+        ]
+    },
+    {
+        "q": "What is IOC in threat intelligence?",
+        "o": [
+            "Indicator of Compromise artifact",
+            "Internal Operation Configuration",
+            "Integrated Operations Center",
+            "Internet Operations Control"
+        ]
+    },
+    {
+        "q": "What is TTP in threat intelligence?",
+        "o": [
+            "Tactics Techniques Procedures of attackers",
+            "Threat Transfer Protocol standard",
+            "Technical Threat Profile document",
+            "Trusted Threat Protection method"
+        ]
+    },
+    {
+        "q": "What is pyramid of pain concept?",
+        "o": [
+            "Difficulty for attackers to change IOCs",
+            "Ease for defenders to detect threats",
+            "Cost of security tool deployment",
+            "Severity ranking of threat types"
+        ]
+    },
+    {
+        "q": "What is diamond model of intrusion analysis?",
+        "o": [
+            "Adversary infrastructure victim capability",
+            "Only attacker identification method here",
+            "Only attack timeline visualization",
+            "Only network topology mapping tool"
+        ]
+    },
+    {
+        "q": "What is kill chain model in security?",
+        "o": [
+            "Stages of attack from recon to action",
+            "Only malware detection methodology here",
+            "Only incident response procedure used",
+            "Only firewall configuration guide"
+        ]
+    },
+    {
+        "q": "What is MITRE ATT&CK framework purpose?",
+        "o": [
+            "Knowledge base of adversary techniques",
+            "Only vulnerability scoring system used",
+            "Only compliance checking framework",
+            "Only penetration testing methodology"
+        ]
+    },
+    {
+        "q": "What is lateral movement in ATT&CK?",
+        "o": [
+            "Moving through network after access",
+            "Initial network intrusion attempt here",
+            "Data exfiltration to external location",
+            "Permanent backdoor installation step"
+        ]
+    },
+    {
+        "q": "What is persistence in ATT&CK model?",
+        "o": [
+            "Maintaining access across restarts",
+            "Initial network access attempt here",
+            "Lateral movement between systems",
+            "Data collection before exfiltration"
+        ]
+    },
+    {
+        "q": "What is privilege escalation in ATT&CK?",
+        "o": [
+            "Gaining higher permissions on system",
+            "Initial access to target network here",
+            "Data exfiltration to external server",
+            "Lateral movement between hosts only"
+        ]
+    },
+    {
+        "q": "What is defense evasion technique?",
+        "o": [
+            "Avoiding detection by security tools",
+            "Attacking security tools directly here",
+            "Encrypting attack traffic for privacy",
+            "Logging attack activities for review"
+        ]
+    },
+    {
+        "q": "What is credential access in ATT&CK?",
+        "o": [
+            "Stealing passwords and authentication",
+            "Blocking user authentication attempts",
+            "Encrypting stored credentials only",
+            "Logging credential usage events"
+        ]
+    },
+    {
+        "q": "What is command and control in ATT&CK?",
+        "o": [
+            "Attacker communication with implant",
+            "Network administrator management here",
+            "Security tool configuration process",
+            "User access control management"
+        ]
+    },
+    {
+        "q": "What is exfiltration in ATT&CK model?",
+        "o": [
+            "Stealing data from target network",
+            "Installing malware on target here",
+            "Gaining initial access to network",
+            "Maintaining persistence on system"
+        ]
+    },
+    {
+        "q": "What is impact category in ATT&CK?",
+        "o": [
+            "Disruption destruction manipulation of data",
+            "Only denial of service attacks here",
+            "Only data encryption by ransomware",
+            "Only system destruction attempts"
+        ]
+    },
+    {
+        "q": "What is SOAR in security operations?",
+        "o": [
+            "Security Orchestration Automation Response",
+            "Security Operations Alert Registration",
+            "Secure Operations Assessment Report",
+            "Standard Operations Action Response"
+        ]
+    },
+    {
+        "q": "What does SOAR automate?",
+        "o": [
+            "Incident response and playbook execution",
+            "Only alert generation from SIEM here",
+            "Only vulnerability scanning process",
+            "Only patch management deployment"
+        ]
+    },
+    {
+        "q": "What is playbook in SOAR context?",
+        "o": [
+            "Automated response workflow for incidents",
+            "Manual procedure documentation only",
+            "Security policy document format here",
+            "Compliance checklist for audits"
+        ]
+    },
+    {
+        "q": "What is XDR in security detection?",
+        "o": [
+            "Extended Detection and Response platform",
+            "External Data Recovery solution here",
+            "Exchange Detection Report system",
+            "Expanded Data Retention tool"
+        ]
+    },
+    {
+        "q": "How does XDR differ from EDR?",
+        "o": [
+            "Integrates multiple security layers",
+            "Only focuses on endpoint detection",
+            "Only network traffic analysis here",
+            "Only cloud security monitoring"
+        ]
+    },
+    {
+        "q": "What is SIEM correlation rule?",
+        "o": [
+            "Logic to detect patterns across events",
+            "Only filter for specific log sources",
+            "Only alert threshold configuration",
+            "Only report generation template"
+        ]
+    },
+    {
+        "q": "What is baseline in security monitoring?",
+        "o": [
+            "Normal behavior pattern reference",
+            "Minimum security requirement only",
+            "Maximum allowed traffic rate here",
+            "Standard logging format template"
+        ]
+    },
+    {
+        "q": "What is anomaly detection principle?",
+        "o": [
+            "Identify deviation from normal baseline",
+            "Match known attack signatures only",
+            "Block all unknown traffic types here",
+            "Log all network traffic for review"
+        ]
+    },
+    {
+        "q": "What is UEBA in security analytics?",
+        "o": [
+            "User and Entity Behavior Analytics",
+            "Unified Endpoint Breach Assessment",
+            "Universal Event Baseline Analysis",
+            "User Encryption Baseline Audit"
+        ]
+    },
+    {
+        "q": "What does UEBA detect effectively?",
+        "o": [
+            "Insider threats and compromised accounts",
+            "Only external network attacks here",
+            "Only malware infections on endpoints",
+            "Only vulnerability exploitation only"
+        ]
+    },
+    {
+        "q": "What is ML model in security detection?",
+        "o": [
+            "Algorithm trained on security data",
+            "Manual lookup table for threats here",
+            "Simple rule-based detection only",
+            "Static signature matching system"
+        ]
+    },
+    {
+        "q": "What is false positive in security context?",
+        "o": [
+            "Benign activity flagged as threat",
+            "Real threat missed by detection here",
+            "Correct identification of attack",
+            "Accurate classification of normal"
+        ]
+    },
+    {
+        "q": "What is false negative security impact?",
+        "o": [
+            "Real attack goes undetected completely",
+            "Benign activity generates alert here",
+            "Too many alerts overwhelm analysts",
+            "Correct threat identification made"
+        ]
+    },
+    {
+        "q": "What is alert fatigue problem?",
+        "o": [
+            "Analysts overwhelmed by many alerts",
+            "Too few alerts generated by tools",
+            "Alerts sent to wrong recipients here",
+            "Alert format is difficult to read"
+        ]
+    },
+    {
+        "q": "How to reduce false positives effectively?",
+        "o": [
+            "Tune rules and improve context",
+            "Disable all detection rules here",
+            "Block all suspicious traffic types",
+            "Log everything without filtering"
+        ]
+    },
+    {
+        "q": "What is threat hunting purpose?",
+        "o": [
+            "Proactively search for hidden threats",
+            "Wait for alerts from security tools",
+            "Respond to incidents after detection",
+            "Configure security tool settings"
+        ]
+    },
+    {
+        "q": "What is hypothesis in threat hunting?",
+        "o": [
+            "Assumption about attacker activity to test",
+            "Confirmed threat requiring response here",
+            "Automated detection rule definition",
+            "Vulnerability scan result finding"
+        ]
+    },
+    {
+        "q": "What data sources support threat hunting?",
+        "o": [
+            "Logs NetFlow PCAP EDR telemetry",
+            "Only firewall logs for analysis",
+            "Only antivirus alerts generated",
+            "Only SIEM correlation results"
+        ]
+    },
+    {
+        "q": "What is living off the land attack?",
+        "o": [
+            "Using legitimate tools maliciously",
+            "Installing custom malware only here",
+            "Exploiting zero-day vulnerabilities",
+            "Brute force password attacks only"
+        ]
+    },
+    {
+        "q": "Why is LOTL difficult to detect?",
+        "o": [
+            "Uses trusted tools avoiding signatures",
+            "Generates too much network traffic",
+            "Always encrypted for privacy here",
+            "Operates only at kernel level"
+        ]
+    },
+    {
+        "q": "What is fileless malware characteristic?",
+        "o": [
+            "Operates in memory without file access",
+            "Writes files to detect on disk here",
+            "Uses custom encryption algorithm",
+            "Requires administrator privileges"
+        ]
+    },
+    {
+        "q": "How to detect fileless malware?",
+        "o": [
+            "Monitor process behavior and memory",
+            "Scan file system for malware files",
+            "Check antivirus signature database",
+            "Review firewall logs for traffic"
+        ]
+    },
+    {
+        "q": "What is supply chain attack vector?",
+        "o": [
+            "Compromise through trusted vendor software",
+            "Direct attack on target organization only",
+            "Phishing email to target employees here",
+            "Brute force attack on target systems"
+        ]
+    },
+    {
+        "q": "What is watering hole attack technique?",
+        "o": [
+            "Compromise sites targets visit frequently",
+            "Send phishing emails to all targets",
+            "Attack target infrastructure directly",
+            "Exploit unpatched vulnerabilities only"
+        ]
+    },
+    {
+        "q": "What is island hopping attack method?",
+        "o": [
+            "Attack target via weaker partners",
+            "Direct attack on hardened target here",
+            "Phishing attack on target employees",
+            "DDoS attack against target services"
+        ]
+    }
+]
