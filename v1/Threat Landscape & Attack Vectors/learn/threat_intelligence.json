@@ -1,0 +1,89 @@
+{
+    "id": "learn_threat_intelligence",
+    "topicId": "threat_intelligence",
+    "topicTitle": "Threat Intelligence",
+    "description": "Dive into the world of Cyber Threat Intelligence (CTI), understanding threat actors, APTs, TTPs, and IOCs.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "ti_1",
+            "type": "content",
+            "title": "Introduction to Threat Intelligence",
+            "content": "# Threat Intelligence (CTI) 🕵️\n\n**Cyber Threat Intelligence** is knowledge that allows you to prevent or mitigate cyber attacks.\n\n> \"If you know the enemy and know yourself, you need not fear the result of a hundred battles.\" - Sun Tzu\n\n## The Goal\nTo move from **Reactive** (Cleaning up the mess) to **Proactive** (Stopping the mess before it happens).\n\n## The Lifecycle\n1.  **Planning:** What do we need to know?\n2.  **Collection:** Gathering raw data (logs, forums, dark web).\n3.  **Processing:** Normalizing and sorting data.\n4.  **Analysis:** Making sense of it (The \"Intelligence\" part).\n5.  **Dissemination:** Ensuring the right people get the info.\n6.  **Feedback:** Was it useful?"
+        },
+        {
+            "id": "ti_2",
+            "type": "content",
+            "title": "Threat Actors",
+            "content": "# Threat Actors 🎭\n\nWho are "
+        },
+        {
+            "id": "ti_2_redo",
+            "type": "content",
+            "title": "Threat Actors",
+            "content": "# Threat Actors 🎭\n\nWho are the enemies? Knowing your adversary helps you defend.\n\n## Categories\n\n1.  **Script Kiddies:** Unskilled, run existing tools for fun/clout.\n2.  **Hacktivists:** Politically motivated (e.g., Anonymous). Disruption/Defacement.\n3.  **Cybercriminals:** Money motivated (Ransomware, Theft). The majority of attacks.\n4.  **Insiders:** Disgruntled employees. Access is their weapon.\n5.  **Nation-State (APTs):** Government-funded. Espionage, Critical Infra sabotage. Highly skilled.\n6.  **Terrorist Groups:** Ideological violence via cyber means."
+        },
+        {
+            "id": "ti_3",
+            "type": "content",
+            "title": "APT Groups",
+            "content": "# APT Groups (Advanced Persistent Threats) 🥷\n\nAPTs are the special forces of cyber warfare. They are usually Nation-State sponsored.\n\n## Characteristics\n- **Advanced:** High skill, custom zero-day exploits.\n- **Persistent:** They don't just hit and run. They stay for months/years.\n- **Threat:** Specific objectives (Intel, sabotage).\n\n## Famous Groups\n- **APT28 (Fancy Bear):** Russia. Targeted US DNC.\n- **APT1 (Unit 61398):** China. Intellectual property theft.\n- **Lazarus Group:** North Korea. Sony Hack, WannaCry (Money for regime).\n- **Equation Group:** USA (NSA linked). Stuxnet."
+        },
+        {
+            "id": "ti_4",
+            "type": "content",
+            "title": "TTPs (Tactics, Techniques, Procedures)",
+            "content": "# TTPs 📚\n\nTTPs describe *how* the actor operates. This is the most valuable intel because it's hardest for the attacker to change.\n\n- **Tactics:** The \"Why\". The high-level goal (e.g., \"Initial Access\", \"Persistence\").\n- **Techniques:** The \"How\". The method used (e.g., \"Phishing\", \"Registry Run Key\").\n- **Procedures:** The \"What\". The specific steps/tools (e.g., \"Cobalt Strike command X\", \"PowerShell script Y\").\n\n> 💡 **MITRE ATT&CK:** The global knowledge base of adversary TTPs. Every security pro uses it."
+        },
+        {
+            "id": "ti_5",
+            "type": "content",
+            "title": "Indicators of Compromise (IOCs)",
+            "content": "# Indicators of Compromise (IOCs) 🚩\n\nIOCs are the forensic evidence left behind.\n\n## The Pyramid of Pain\n(From easiest for attacker to change to hardest)\n\n1.  **Hash Values:** (SHA256 of malware) - *Trivial due to policing.*\n2.  **IP Addresses:** - *Easy to change.*\n3.  **Domain Names:** - *Simple.*\n4.  **Network Artifacts:** (User-Agent strings) - *Annoying.*\n5.  **Host Artifacts:** (Registry keys, Dropped files) - *Challenging.*\n6.  **TTPs:** (Behaviors) - *Tough! If we detect their TTP, they have to re-learn how to hack.*\n\n> 🔍 **Usage:** You feed IOCs into your SIEM/Firewall to detect known bad guys."
+        },
+        {
+            "id": "ti_6",
+            "type": "content",
+            "title": "IOC Extraction Demo",
+            "content": "# Coding: Extracting IOCs 🧬\n\nAutomating the extraction of IOCs (like IPs and Emails) from log text.\n\n```python\nimport re\n\nlog = \"User contacted external IP 192.168.1.50 and sent email to badguy@evil.com\"\nips = re.findall(r'\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}', log)\nprint(ips)\n```\n\n<!-- FULL_CODE_START\nimport re\n\nprint(\"=== IOC Extractor Tool ===\\n\")\n\n# Sample \"Threat Intel\" Report text\nreport_text = \"\"\"\nALERT: New campaign by APT-Unknown.\nCommand and Control (C2) servers detected at:\n- 104.24.12.11\n- 45.33.22.11\n\nMalware hashes (MD5):\n- 5e884898da28047151d0e56f8dc62927\n- d41d8cd98f00b204e9800998ecf8427e\n\nPhishing emails coming from:\n- admin@g00gle.com\n- support@microsoft-verify.net\n\"\"\"\n\ndef extract_iocs(text):\n    # Regex patterns\n    ip_pattern = r'\\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b'\n    md5_pattern = r'\\b[a-fA-F0-9]{32}\\b'\n    # Simple email regex\n    email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}'\n    \n    ips = re.findall(ip_pattern, text)\n    hashes = re.findall(md5_pattern, text)\n    emails = re.findall(email_pattern, text)\n    \n    return {\"IPs\": ips, \"Hashes\": hashes, \"Emails\": emails}\n\nresults = extract_iocs(report_text)\n\nprint(\"--- Extracted Indicators ---\")\nfor ioc_type, artifacts in results.items():\n    print(f\"{ioc_type}:\")\n    for a in artifacts:\n        print(f\"  - {a}\")\n\nprint(\"\\n\" + \"=\"*40)\nprint(\"IOCs extracted! These can now be pushed to the Firewall.\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "ti_7",
+            "type": "content",
+            "title": "Threat Feeds",
+            "content": "# Threat Feeds 📡\n\nReal-time streams of IOCs and Intel.\n\n## Types\n- **Open Source (OSINT):** AlienVault OTX, Abuse.ch (MalwareBazaar).\n- **Commercial:** FireEye (Mandiant), CrowdStrike, Recorded Future. Highly curated, context-rich.\n- **Government:** AIS (Automated Indicator Sharing) from CISA.\n\n## Formats\n- **STIX/TAXII:** The standard for sharing intel.\n    - **STIX:** Structured Threat Information Expression (The Data format - JSON).\n    - **TAXII:** Trusted Automated Exchange of Indicator Information (The Transport protocol - HTTPS)."
+        },
+        {
+            "id": "ti_8",
+            "type": "content",
+            "title": "Threat Intelligence Levels",
+            "content": "# Three Levels of Intel 📐\n\n1.  **Strategic (High Level):** For Executives (C-Suite). Trends, financial impact, \"Who is targeting our industry?\". Analysis: Long-term.\n2.  **Operational (Mid Level):** For Defenders (SOC Managers). TTPs, Campaigns. \"How are they attacking?\". Analysis: Days/Weeks.\n3.  **Tactical (Low Level):** For Systems (SIEM/Firewall). IOCs (IPs, Hashes). Automated blocking. Analysis: Real-time."
+        },
+        {
+            "id": "ti_9",
+            "type": "quiz",
+            "title": "Intel Check",
+            "content": "Verify your CTI knowledge.",
+            "quizQuestion": "Which level of the 'Pyramid of Pain' is the hardest for an attacker to change and thus the most effective to target for defenders?",
+            "quizOptions": [
+                "IP Addresses",
+                "Hash Values",
+                "TTPs (Tactics, Techniques, Procedures)",
+                "Domain Names"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "ti_10",
+            "type": "content",
+            "title": "Attribution",
+            "content": "# The Attribution Problem 🎭\n\n\"Who did it?\"\n\nAttribution is **extremely hard** in cyber.\n\n## Why?\n- **False Flags:** Attackers mimic other groups (e.g., Russian hackers using Chinese malware code/language settings).\n- **Proxy Servers:** Attacks bounce through 50 countries.\n- **Commodity Malware:** Everyone uses the same tools (Cobalt Strike, Metasploit).\n\n> ⚖️ **Rule:** Unless you are a Government Agency with human spies, attribution is usually a \"best guess\" based on TTPs and targets."
+        },
+        {
+            "id": "ti_11",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Module Summary 🎓\n\nYou've stepped into the shoes of a Threat Intel Analyst!\n\n## Recap\n- **Threat Actors:** From Script Kiddies to Nation-States.\n- **APTs:** The persistent, well-funded enemy.\n- **TTPs:** Tactics (Why), Techniques (How), Procedures (What). The gold filtering.\n- **IOCs:** The digital breadcrumbs (IPs, Hashs).\n- **Pyramid of Pain:** Focus on TTPs for maximum pain to the adversary.\n\n## What's Next?\nNow that we know *who* attacks and *how* they think, let's explore **Common Attack Vectors** to see the paths they take into our systems."
+        }
+    ]
+}

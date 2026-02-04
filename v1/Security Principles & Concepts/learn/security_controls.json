@@ -1,0 +1,115 @@
+{
+    "id": "learn_security_controls",
+    "topicId": "security_controls",
+    "topicTitle": "Security Controls Framework",
+    "description": "Understand the different categories of security controls and how frameworks like NIST CSF guide their implementation.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "sc_1",
+            "type": "content",
+            "title": "Introduction to Security Controls",
+            "content": "# Security Controls 🛡️\n\nSecurity controls are the specific measures taken to protect systems. They are the \"How\" of security policy.\n\n## The Three Main Categories\nControls are often categorized by **function** (what they do) or **method** (how they do it).\n\n### By Method of Implementation:\n1.  **Technical (Logical):** Software/Hardware (Firewalls, Authentication).\n2.  **Administrative (Managerial):** Policies, procedures, training.\n3.  **Physical:** Fences, locks, guards.\n\n### By Function (When they act):\n1.  **Preventive:** Stop the attack.\n2.  **Detective:** Spot the attack.\n3.  **Corrective:** Fix the damage.\n\nAnd two special types:\n- **Deterrent:** Discourage the attacker.\n- **Compensating:** Alternative control when the primary one typically can't be used."
+        },
+        {
+            "id": "sc_2",
+            "type": "content",
+            "title": "Preventive Controls",
+            "content": "# Preventive Controls 🛑\n\n**Goal:** Stop an incident from occurring.\n\nThese are the most desirable controls because they avoid damage entirely.\n\n## Examples\n- **Technical:** Multifactor Authentication (MFA), Firewall rules, IPS (Intrusion Prevention System), Data Execution Prevention (DEP).\n- **Administrative:** Hiring background checks, Separation of duties policy.\n- **Physical:** High fence, biometric door lock.\n\n> 💡 **Analogy:** Locking your front door prevents a thief from walking in."
+        },
+        {
+            "id": "sc_3",
+            "type": "content",
+            "title": "Preventive Control Demo",
+            "content": "# Coding a Preventive Control 💻\n\nInput validation is a key preventive control against injection attacks.\n\n```python\ndef register_user(username):\n    # Preventive Control: Input Validation\n    if not username.isalnum():\n        raise ValueError(\"Invalid username\")\n    # Proceed to DB...\n```\n\n<!-- FULL_CODE_START\nprint(\"=== Preventive Control: Input Validation ===\\n\")\n\nimport re\n\ndef validate_input(user_input):\n    # Rule: Only alphanumeric and underscores allowed, max 20 chars\n    pattern = r'^[a-zA-Z0-9_]{1,20}$'\n    \n    if re.match(pattern, user_input):\n        return True, \"Input accepted.\"\n    else:\n        return False, \"Input rejected! Potential attack vector.\"\n\n# Test cases\ntest_inputs = [\n    \"valid_user_123\",       # Good\n    \"admin\",                # Good\n    \"user<script>alert()\",  # XSS Attack\n    \"admin' --\",            # SQL Injection\n    \"Wait... this is way too long for a username and should definitely fail\"\n]\n\nprint(f\"{'Input':<30} | {'Result':<10} | {'Message'}\")\nprint(\"-\"*70)\n\nfor i in test_inputs:\n    is_valid, msg = validate_input(i)\n    status = \"ALLOWED\" if is_valid else \"BLOCKED\"\n    print(f\"{i[:30]:<30} | {status:<10} | {msg}\")\n\nprint(\"\\n\" + \"=\"*50)\nprint(\"By validating input BEFORE processing, we prevent attacks.\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "sc_4",
+            "type": "content",
+            "title": "Detective Controls",
+            "content": "# Detective Controls 🔍\n\n**Goal:** Identify that an incident has occurred or is occurring.\n\nYou can't prevent everything. Detection allows you to respond.\n\n## Examples\n- **Technical:** IDS (Intrusion Detection System), SIEM (Security Info & Event Management), System Logs, File Integrity Monitoring.\n- **Administrative:** Audits, Mandatory vacations (detects fraud), Reviewing camera footage.\n- **Physical:** Motion sensor alarm, CCTV recording.\n\n> 💡 **Analogy:** A burglar alarm detecting a broken window."
+        },
+        {
+            "id": "sc_5",
+            "type": "content",
+            "title": "Detective Control Demo",
+            "content": "# Coding a Detective Control 🕵️\n\nA simple honeypot file can detect unauthorized access.\n\n```python\nimport os\n\ndef check_file_access():\n    # Detective Control: File Monitoring\n    if os.path.exists(\"trap.txt\"):\n        log_alert(\"Someone touched the trap!\")\n```\n\n<!-- FULL_CODE_START\nprint(\"=== Detective Control: Log Monitor ===\\n\")\n\n# Simulated log stream\nlogs = [\n    \"2023-10-27 10:00:01 User alice logged in\",\n    \"2023-10-27 10:05:22 User bob logged in\",\n    \"2023-10-27 10:06:00 User bob failed login attempt 1\",\n    \"2023-10-27 10:06:01 User bob failed login attempt 2\",\n    \"2023-10-27 10:06:02 User bob failed login attempt 3\",\n    \"2023-10-27 10:06:03 User bob failed login attempt 4\",\n    \"2023-10-27 10:06:04 User bob failed login attempt 5 - ACCOUNT LOCKED\",\n    \"2023-10-27 10:15:00 User charlie logged in\"\n]\n\ndef detect_brute_force(log_entries):\n    failures = 0\n    user = \"\"\n    \n    for entry in log_entries:\n        if \"failed login\" in entry:\n            failures += 1\n            if failures == 1:\n                # Extract user (simplified)\n                parts = entry.split(\" \")\n                user = parts[3]\n        else:\n            # Reset on success or other event (simplified logic)\n            failures = 0\n            \n        if failures >= 5:\n            print(f\"🚨 ALERT: Brute force detected against user '{user}'!\")\n            return\n            \n    print(\"✅ No anomalies detected.\")\n\nprint(\"Scanning logs...\")\ndetect_brute_force(logs)\nFULL_CODE_END -->"
+        },
+        {
+            "id": "sc_6",
+            "type": "content",
+            "title": "Corrective Controls",
+            "content": "# Corrective Controls 🩹\n\n**Goal:** Restore systems to normal after an incident.\n\nOnce a threat is detected, corrective controls fix it.\n\n## Examples\n- **Technical:** Restoring from Backups, Rebooting a service, Quarantining a virus (Antivirus).\n- **Administrative:** Incident Response Plan execution, Firing an employee who violated policy.\n- **Physical:** Replacing a broken lock, using a fire extinguisher.\n\n> 💡 **Analogy:** Using a first-aid kit after getting cut."
+        },
+        {
+            "id": "sc_7",
+            "type": "content",
+            "title": "Deterrent & Compensating Controls",
+            "content": "# Special Control Types 🌟\n\n## Deterrent Controls 👿\n**Goal:** Discourage the attacker from trying.\n- **Examples:** \"Trespassers will be prosecuted\" sign, Fake cameras, Login warning banners.\n- *Psychological:* Makes the attacker choose a softer target.\n\n## Compensating Controls ⚖️\n**Goal:** Provide an alternative measure when the primary control is too expensive or impossible.\n- **Scenario:** A legacy application can't support encryption.\n- **Primary Control (Fail):** Encryption.\n- **Compensating Control:** Isolate the server in a separate VLAN and strictly limit access via firewall.\n- *Result:* The risk is mitigated largely even without the primary control."
+        },
+        {
+            "id": "sc_8",
+            "type": "quiz",
+            "title": "Controls Quiz",
+            "content": "Categorize the security solution.",
+            "quizQuestion": "A security camera recording footage to a hard drive for later review is primarily which type of control?",
+            "quizOptions": [
+                "Preventive",
+                "Detective",
+                "Corrective",
+                "Compensating"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "sc_9",
+            "type": "content",
+            "title": "NIST Cybersecurity Framework (CSF)",
+            "content": "# NIST Cybersecurity Framework (CSF) 🇺🇸\n\nThe **NIST CSF** is the gold standard framework for managing cybersecurity risk. It organizes security activities into five functions.\n\n## The Core Functions\n\n1.  **Identify (ID):** Know what you have. Asset management, Risk assessment.\n    - *\"What devices do we own?\"*\n2.  **Protect (PR):** Limit the impact. Access control, Awareness, Data security.\n    - *\"How do we stop attacks?\"*\n3.  **Detect (DE):** Spot events. Anomalies, Monitoring.\n    - *\"Are we under attack?\"*\n4.  **Respond (RS):** Action time. Planning, Mitigation, Analysis.\n    - *\"The alarm went off, now what?\"*\n5.  **Recover (RC):** Restore. Recovery planning, Improvements.\n    - *\"How do we get back to business?\"*"
+        },
+        {
+            "id": "sc_10",
+            "type": "content",
+            "title": "Mapping Controls to NIST CSF",
+            "content": "# Mapping Controls to NIST CSF 🗺️\n\nLet's see where our controls fit.\n\n| Function | Control Examples |\n|----------|------------------|\n| **Identify** | Asset Inventory, Threat Modeling |\n| **Protect** | Firewalls, Encryption, Training (Preventive) |\n| **Detect** | IDS, SIEM, Log Analysis (Detective) |\n| **Respond** | Incident Response Team, Forensics (Corrective) |\n| **Recover** | Backups, Disaster Recovery Site (Corrective) |"
+        },
+        {
+            "id": "sc_11",
+            "type": "content",
+            "title": "Selecting the Right Controls",
+            "content": "# Selecting Controls: Cost vs Value 💰\n\nYou can't secure everything perfectly. You have limited budget and time.\n\n## Factors for Selection\n1.  **Asset Value:** Don't spend $1 million to protect a $100 printer.\n2.  **Risk Level:** High risk = Stronger controls.\n3.  **Feasibility:** Is it technically possible?\n4.  **User Impact:** Will it make the system unusable?\n\n> ⚖️ \"Security at the expense of usability comes at the expense of security.\" Users will bypass annoying controls."
+        },
+        {
+            "id": "sc_12",
+            "type": "content",
+            "title": "Layering Controls",
+            "content": "# Layering Controls (Defense in Depth) 🍰\n\nRecall Defense in Depth. We layer different types of controls.\n\n**Scenario: Secure a Server Room**\n\n1.  **Deterrent:** Warning signs.\n2.  **Preventive:** Keycard lock on door.\n3.  **Preventive:** Biometric scanner.\n4.  **Detective:** CCTV Camera inside.\n5.  **Detective:** Motion heat sensors.\n6.  **Corrective:** Fire suppression system.\n\nIf the thief ignores the sign, picks the lock, and fakes the fingerprint... the camera sees them, and if they set a fire, the suppression system puts it out."
+        },
+        {
+            "id": "sc_13",
+            "type": "content",
+            "title": "Control Failures",
+            "content": "# When Controls Fail 💥\n\nControls fail. Hard drives crash, guards sleep, software has bugs.\n\n## Failure Modes\n- **Fail-Safe:** Defaults to safety/security. (Ex: Electronic door locks when power goes out -> Locked? Unlocked? For fire safety, usually unlocked! For a bank vault, locked!)\n- **Fail-Secure:** Defaults to closed/secure state.\n- **Fail-Open:** Defaults to allowing access.\n\n## Redundancy\nHaving backup controls (Compensating Controls) is key. If the Firewall fails, the Host IPS should catch it."
+        },
+        {
+            "id": "sc_14",
+            "type": "quiz",
+            "title": "Framework Quiz",
+            "content": "Check your framework knowledge.",
+            "quizQuestion": "In NIST CSF, which function deals with restoring services impaired due to a cybersecurity incident?",
+            "quizOptions": [
+                "Respond",
+                "Recover",
+                "Protect",
+                "Detect"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "sc_15",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Module Summary 🎓\n\nYou now understand the toolkit of a security professional!\n\n## Recap\n- **Control Types:** Preventive, Detective, Corrective (plus Deterrent, Compensating).\n- **Implementation:** Technical, Administrative, Physical.\n- **NIST CSF:** Identify, Protect, Detect, Respond, Recover.\n- **Selection:** Balance security, cost, and usability.\n\n## What's Next?\nWith the basics, threats, and controls understood, we will look at how to structure everything into a **Security Architecture**.\n\nSecure all the things! 🔒"
+        }
+    ]
+}

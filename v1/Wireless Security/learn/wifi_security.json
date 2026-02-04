@@ -1,0 +1,113 @@
+{
+    "id": "wifi_security",
+    "topicId": "wifi_basics",
+    "topicTitle": "WiFi Security",
+    "description": "Understand wireless protocols and common attacks like Evil Twins and Deauthentication.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "wifi_1",
+            "type": "content",
+            "title": "Wireless Fundamentals",
+            "content": "# Wireless Security 📶\n\nWireless networks broadcast data through the air (Radio Frequency), making them inherently easier to intercept than wired networks.\n\n## 802.11 Standards\n- **2.4 GHz:** Longer range, more interference, slower.\n- **5 GHz:** Shorter range, less interference, faster.\n\n## Modes\n- **Managed:** Client connects to Access Point (AP). Standard home use.\n- **Monitor Mode:** Card listens to ALL traffic in the air, not just traffic destined for it. (Hacker mode)."
+        },
+        {
+            "id": "wifi_2",
+            "type": "content",
+            "title": "WEP, WPA, WPA2, WPA3",
+            "content": "# Encryption Standards 🔐\n\n- **WEP (Wired Equivalent Privacy):** The oldest. Broken. Can be cracked in minutes due to weak IVs (Initialization Vectors).\n- **WPA (Wi-Fi Protected Access):** Improving WEP using TKIP. Obsolete.\n- **WPA2:** Uses AES (CCMP) encryption. Current standard.\n- **WPA3:** Newest. Offers Forward Secrecy and stronger auth (SAE/Dragonfly handshake)."
+        },
+        {
+            "id": "wifi_3",
+            "type": "content",
+            "title": "WPA2 Handshake",
+            "content": "# WPA2 4-Way Handshake 🤝\n\nTo connect, a client and AP exchange 4 packets to derive the session key.\n\n## The Vulnerability\nIf an attacker captures this handshake, they can brute-force the password offline.\n\n1.  Wait for user to connect.\n2.  Capture the 4 packets (EAPOL).\n3.  Run `aircrack-ng` or `hashcat` against the capture file using a dictionary.\n\nIf the password is weak (\"password123\"), it will be cracked."
+        },
+        {
+            "id": "wifi_4",
+            "type": "content",
+            "title": "WPA2 Dictionary Attack",
+            "content": "# Dictionary Attack Logic 📖\n\nHow cracking works (conceptual).\n\n<!-- FULL_CODE_START\nimport hashlib\n\n# Simulated WPA2 cracking logic (Simplified PBKDF2)\n\nssid = \"HomeWiFi\"\ncap_mic = \"a1b2c3d4...\" # The captured Message Integrity Code (Hash)\n\ndef check_password(password, ssid, target_mic):\n    # WPA2 uses PBKDF2 (4096 iterations of SHA1)\n    # This is SLOW by design.\n    pmk = hashlib.pbkdf2_hmac('sha1', password.encode(), ssid.encode(), 4096, 32)\n    \n    # In reality, we'd use PMK to derive PTK and check MIC\n    # For demo, let's just pretend simple equality\n    simulated_mic = hashlib.sha256(pmk).hexdigest()[:10]\n    \n    return simulated_mic == target_mic\n\n# Let's pretend the correct MIC corresponds to 'admin123'\ntrue_pass = \"admin123\"\ntrue_mic = hashlib.sha256(hashlib.pbkdf2_hmac('sha1', true_pass.encode(), ssid.encode(), 4096, 32)).hexdigest()[:10]\n\nprint(f\"Target Network: {ssid}\")\nprint(f\"Captured Handshake MIC: {true_mic}\")\nprint(\"--- Starting Dictionary Attack ---\")\n\nwordlist = [\"password\", \"123456\", \"HomeWiFi\", \"admin123\", \"qwerty\"]\n\nfor word in wordlist:\n    print(f\"Trying: {word}\")\n    if check_password(word, ssid, true_mic):\n        print(f\"[+] CRACKED! Password is: {word}\")\n        break\n    else:\n        print(\"[-] Failed\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "wifi_5",
+            "type": "content",
+            "title": "Deauthentication Attack",
+            "content": "# Deauth Attack 🚫\n\nForcing a client to disconnect from the AP.\n\n## Why?\n- **Capture Handshake:** When the user reconnects automatically, we capture the fresh handshake.\n- **Evil Twin:** Force them off the real AP so they connect to our fake one.\n- **Prank/DoS:** Just annoy people.\n\n**Mechanism:** Attacker sends a spoofed management frame: \"Sender: AP, Receiver: Client, Body: Disconnect Now!\""
+        },
+        {
+            "id": "wifi_6",
+            "type": "content",
+            "title": "Evil Twin",
+            "content": "# Evil Twin 👯\n\nA rogue Access Point that looks identical to a legitimate one.\n\n## Scenario\n1.  Legit AP: \"Starbucks WiFi\" (CH 6, Open).\n2.  Attacker Deauths everyone from Legit AP.\n3.  Attacker starts specific AP: \"Starbucks WiFi\" (CH 6, Open).\n4.  Victims auto-connect to Attacker.\n5.  Attacker serves a Phishing Page: \"Please login with Facebook to use free WiFi\"."
+        },
+        {
+            "id": "wifi_7",
+            "type": "content",
+            "title": "Captive Portal Phishing",
+            "content": "# Captive Portal Phishing 🎣\n\nOnce connected to an Evil Twin, the attacker typically redirects all traffic to a fake login page.\n\nDNS Spoofing makes `google.com` resolve to `10.0.0.1` (Attacker).\nAttacker runs a web server at `10.0.0.1` serving a cloned login page.\n\nTools: `Wifiphisher`, `Evilginx`."
+        },
+        {
+            "id": "wifi_quiz_1",
+            "type": "quiz",
+            "title": "Attack Check",
+            "content": "Verify understanding.",
+            "quizQuestion": "What is the primary technical reason attackers perform a Deauthentication attack?",
+            "quizOptions": [
+                "To burn the network card",
+                "To force a reconnection and capture the WPA Handshake",
+                "To decrypt SSL traffic",
+                "To change the MAC address"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "wifi_8",
+            "type": "content",
+            "title": "KRACK Attack",
+            "content": "# KRACK 🦑\n\n**K**ey **R**einstallation **A**tta**ck**.\n\nA serious flaw in WPA2 protocol itself (2017).\n\nIt tricks the client into reinstalling an already-in-use key. This resets the Nonce (number used once) and Replay Counter.\n\nResult: Packets are encrypted with the same keystream (Keystream reuse). XORing two packets together cancels out the key, revealing the plaintext."
+        },
+        {
+            "id": "wifi_9",
+            "type": "content",
+            "title": "WiFi Pineapple",
+            "content": "# WiFi Pineapple 🍍\n\nA hardware tool for wireless auditing.\n\n## Karma / PineAP Attack\nDevices constantly probe for known networks: \"Is 'Home-WiFi' here?\"\n\nPineapple listens. When it hears \"Is 'Home-WiFi' here?\", it replies: **\"Yes, I am Home-WiFi!\"**\n\nThe device connects. The Pineapple simulates *every* network the phone asks for."
+        },
+        {
+            "id": "wifi_10",
+            "type": "content",
+            "title": "WPS (Wi-Fi Protected Setup)",
+            "content": "# WPS Vulnerability 🔘\n\nA feature to easily connect devices (Push button or Pin).\n\n## Pixie Dust Attack\nMany routers use weak random number generation (nonces) for the WPS exchange.\nAttackers can retrieve the WPS PIN offline using the `pixiewps` tool in seconds.\n\nOnce you have the PIN, the router gives you the WPA2 Password."
+        },
+        {
+            "id": "wifi_11",
+            "type": "content",
+            "title": "Bluetooth Security",
+            "content": "# Bluetooth Basics 🦷\n\nShort-range wireless protocol.\n\n## Discoverability\nDevices can be \"Discoverable\" (visible to all) or \"Non-Discoverable\" (visible only if you know the MAC).\n\n## Pairing\nOlder devices use a fixed PIN (0000 or 1234). Easy to brute-force.\nModern devices use Secure Simple Pairing (SSP)."
+        },
+        {
+            "id": "wifi_12",
+            "type": "content",
+            "title": "Bluejacking vs Bluesnarfing",
+            "content": "# Attacks ⚔️\n\n**Bluejacking:** Sending unsolicited messages (like contact cards) to a device. Harmless but annoying. \"You have been Bluejacked!\".\n\n**Bluesnarfing:** Unauthorized theft of data (contacts, SMS, photos) from a Bluetooth device. Much more dangerous."
+        },
+        {
+            "id": "wifi_13",
+            "type": "content",
+            "title": "Mitigations",
+            "content": "# Defending Wireless 🛡️\n\n- **Use WPA3** if available.\n- **Strong Passwords:** Long, random passwords (20+ chars) make dictionary attacks impossible.\n- **Disable WPS:** It's a major hole.\n- **Hidden SSID:** Hiding the name helps slightly, but scanners can still see it when clients connect.\n- **VPN:** Always use a VPN on public WiFi."
+        },
+        {
+            "id": "wifi_14",
+            "type": "content",
+            "title": "Wireless Hardening",
+            "content": "# Hardening Config ⚙️\n\n- **MAC Filtering:** Whitelisting specific devices. Bypassed easily by MAC Cloning.\n- **Guest Network:** Isolate guests from your main LAN.\n- **Reduce Transmit Power:** Don't blast your signal into the parking lot."
+        },
+        {
+            "id": "wifi_15",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Wireless Summary 🏁\n\nRadio waves have no boundaries.\n\n## Recap\n- **WEP** is dead. **WPA2** is standard (but crackable). **WPA3** is future.\n- **Handshakes** are the target for password cracking.\n- **Evil Twins** rely on social engineering.\n- **Pineapples** automate rogue AP attacks.\n\nAssume hostile airspace. Encrypt at the Application Layer (HTTPS/VPN)."
+        }
+    ]
+}

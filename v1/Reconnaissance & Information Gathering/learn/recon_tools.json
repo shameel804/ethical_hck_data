@@ -1,0 +1,77 @@
+{
+    "id": "learn_recon_tools",
+    "topicId": "recon_tools",
+    "topicTitle": "Reconnaissance Tools",
+    "description": "Get hands-on with the essential toolkit: Nmap, Maltego, Shodan, and more.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "rt_1",
+            "type": "content",
+            "title": "Introduction to Recon Tools",
+            "content": "# The Recon Toolkit 🧰\n\nManual recon is fine for one target. For a whole network, you need automation.\n\n## The Industry Standards\n1.  **Nmap:** The King of Port Scanners.\n2.  **Shodan:** The Search Engine for Hackers.\n3.  **Maltego:** Visual Link Analysis.\n4.  **Recon-ng:** A Recon framework.\n5.  **TheHarvester:** Email/Domain scraper."
+        },
+        {
+            "id": "rt_2",
+            "type": "content",
+            "title": "Nmap: The Basics",
+            "content": "# Nmap (Network Mapper) 🗺️\n\nNmap is the most popular scanner in the world. It sends custom packets and analyzes responses.\n\n## Basic Commands\n- `nmap 192.168.1.1`: Scan single IP.\n- `nmap -p 1-100 target.com`: Scan specific ports.\n- `nmap -sV target.com`: Version detection (Service probing).\n- `nmap -O target.com`: Operating System detection."
+        },
+        {
+            "id": "rt_3",
+            "type": "content",
+            "title": "Nmap: Advanced Scanning",
+            "content": "# Advanced Nmap 🚀\n\n## NSE (Nmap Scripting Engine)\nNmap isn't just a scanner; it's a scripting engine using Lua errors.\n- `nmap --script=vuln target.com`: Runs vulnerability checks.\n- `nmap --script=http-title`: Grabs page titles.\n\n## Stealth Scanning\n- `-sS` (SYN Scan): The default. Fast, stealthy. Sends SYN, gets SYN-ACK, sends RST (Don't complete the handshake).\n- `-sT` (Connect Scan): Completes the 3-Way Handshake (Noisier).\n- `-T4`: Aggressive timing (Faster but may trigger IDS).\n- `-Pn`: Treat host as online (Skip Ping), useful if ICMP is blocked."
+        },
+        {
+            "id": "rt_4",
+            "type": "content",
+            "title": "Nmap Demo",
+            "content": "# Nmap in Action 💻\n\n```bash\nnmap -sV -O -p 22,80,443 scanme.nmap.org\n```\n\n**Output:**\n```\nPORT    STATE SERVICE REASON  VERSION\n22/tcp  open  ssh     syn-ack OpenSSH 6.6.1p1 Ubuntu 2ubuntu2\n80/tcp  open  http    syn-ack Apache httpd 2.4.7 ((Ubuntu))\n443/tcp closed https  reset\nRunning: Linux 3.X|4.X\nOS CPE: cpe:/o:linux:linux_kernel:3\nOS details: Linux 3.2 - 4.9\n```\n**Analysis:**\n- Ports 22/80 are open.\n- 443 is valid but closed (RST packet).\n- OS is likely Linux.\n- Web Server is Apache 2.4.7 (Old! Check for CVEs)."
+        },
+        {
+            "id": "rt_5",
+            "type": "content",
+            "title": "Shodan: The Google for IoT",
+            "content": "# Shodan & Censys 🦅\n\nGoogle crawls websites. Shodan crawls **devices** (Routers, Cameras, Refrigerators, Nuclear Plants).\n\n## How it works\nShodan constantly scans the entire internet (IPv4) 24/7, banner grabs everything, and indexes it.\n\n## Search Queries\n- `apache city:\"New York\"`: Find Apache servers in NY.\n- `webcamXP`: Find unprotected webcams.\n- `port:21 \"230 login successful\"`: Find FTP servers that don't require a password (Anonymous login).\n\n> ⚠️ **Warning:** Finding vulnerable devices on Shodan is legal. Logging into them is NOT."
+        },
+        {
+            "id": "rt_6",
+            "type": "content",
+            "title": "Maltego",
+            "content": "# Maltego 🕸️\n\nA visual link analysis tool. It shows relationships between entities.\n\n## How it looks\nImagine a detective board with red string connecting clues.\n\n## Transforms\nRight-click an entity (e.g., Domain) and run a \"Transform\":\n- **Domain -> To DNS Name:** Finds subdomains.\n- **Domain -> To Email Address:** Finds emails.\n- **Email -> To Social Media:** Finds profiles.\n\nIt automates the process of connecting the dots."
+        },
+        {
+            "id": "rt_7",
+            "type": "content",
+            "title": "Recon-ng",
+            "content": "# Recon-ng 💥\n\nA full-featured Web Reconnaissance framework written in Python. It looks and feels like Metasploit.\n\n## Structure\n- **Workspaces:** Keep projects separate.\n- **Modules:** Tools to run (e.g., `recon/domains-hosts/google_site_web`).\n- **Database:** Automatically stores findings (hosts, contacts, creds).\n\n```bash\n[recon-ng][default] > modules load hacker_target\n[recon-ng][default][hacker_target] > options set SOURCE tesla.com\n[recon-ng][default][hacker_target] > run\n```"
+        },
+        {
+            "id": "rt_8",
+            "type": "content",
+            "title": "TheHarvester",
+            "content": "# TheHarvester 🚜\n\nSimple, effective Python script for early-stage recon.\n\n## Purpose\nQuickly gather emails, names, subdomains, IPs, and URLs.\n\n## Sources\nIt queries roughly 20 public sources including:\n- Google, Bing, Baidu (Search Engines).\n- PGP Servers (Keys).\n- LinkedIn (Employees).\n- Twitter (Mentions).\n\n> 💡 **Tip:** Great for quickly populating a Phishing list."
+        },
+        {
+            "id": "rt_9",
+            "type": "quiz",
+            "title": "Tools Quiz",
+            "content": "Check your tools knowledge.",
+            "quizQuestion": "Which Nmap flag is used to enable OS detection and Version detection simultaneously (Aggressive scan)?",
+            "quizOptions": [
+                "-sS",
+                "-A",
+                "-Pn",
+                "-T5"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "rt_10",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Module Summary 🎓\n\nYou now have a powerful toolbox.\n\n## Recap\n- **Nmap:** The active network mapper.\n- **Shodan:** Passive recon via search engine.\n- **Maltego:** Visualizing relationships.\n- **Recon-ng:** The data-gathering framework.\n\n## Course Completion!\nThis concludes **Reconnaissance & Information Gathering**! You know how to find the target and map the attack surface.\n\n## Next Course\nFinding the open door is one thing. Knowing if it's unlocked is another. Next course: **Vulnerability Assessment**."
+        }
+    ]
+}

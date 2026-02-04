@@ -1,0 +1,77 @@
+{
+    "id": "learn_passive_recon",
+    "topicId": "passive_recon",
+    "topicTitle": "Passive Reconnaissance",
+    "description": "Learn to gather intelligence without touching the target's infrastructure, avoiding detection.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "pr_1",
+            "type": "content",
+            "title": "Introduction to Passive Recon",
+            "content": "# Passive Reconnaissance 🕵️\n\n**Reconnaissance** is the first phase of an attack (Ethical or otherwise).\n\n## Passive vs Active\n- **Passive:** Zero direct interaction with the target's systems. You interact with *third parties* (Google, WHOIS, Social Media). It is **undetectable** by the target.\n- **Active:** Touching the target's servers (Port scanning, Pinging). It generates logs and alerts.\n\n> 🎯 **Goal:** Build a profile of the target without them knowing you are there."
+        },
+        {
+            "id": "pr_2",
+            "type": "content",
+            "title": "WHOIS Lookups",
+            "content": "# WHOIS Lookups 📇\n\nWHOIS is the registrar data for domain names.\n\n## What you find\n- **Registrant:** Who owns the domain?\n- **Admin Contact:** Email/Phone of the IT admin (Phishing target!).\n- **Name Servers:** Where is the site hosted?\n- **Creation/Expiry:** Is it a new throwaway site?\n\n> 🛡️ **Privacy Guard:** Most companies use \"WhoisGuard\" to hide this, but older domains or mistakes often leak real names/emails."
+        },
+        {
+            "id": "pr_3",
+            "type": "content",
+            "title": "WHOIS Demo",
+            "content": "# Coding: WHOIS Lookup 💻\n\n```python\n# Using 'whois' library\nimport whois\n\ndomain = whois.whois('google.com')\nprint(domain.creation_date)\nprint(domain.emails)\n```\n\n<!-- FULL_CODE_START\nimport whois21\n\nprint(\"=== Passive Recon: WHOIS Lookup ===\\n\")\n\ntarget = \"google.com\"\nprint(f\"Target: {target}\\n\")\n\ntry:\n    # Note: Using whois21 wrapper or similar library notion\n    # For Piston, we simulate the output structure as networking is limited\n    print(f\"Fetching records for {target}...\")\n    \n    # Simulated Response for demo purposes\n    whois_data = {\n        \"registrar\": \"MarkMonitor Inc.\",\n        \"creation_date\": \"1997-09-15\",\n        \"expiration_date\": \"2028-09-14\",\n        \"name_servers\": [\"ns1.google.com\", \"ns2.google.com\", \"ns3.google.com\"],\n        \"emails\": [\"abusecomplaints@markmonitor.com\", \"dns-admin@google.com\"],\n        \"org\": \"Google LLC\"\n    }\n    \n    print(\"\\n--- WHOIS RECORD ---\")\n    print(f\"Organization: {whois_data['org']}\")\n    print(f\"Registrar:    {whois_data['registrar']}\")\n    print(f\"Created:      {whois_data['creation_date']}\")\n    print(f\"Expires:      {whois_data['expiration_date']}\")\n    print(f\"\\nName Servers:\")\n    for ns in whois_data['name_servers']:\n        print(f\"  - {ns}\")\n    \n    print(f\"\\nContact Emails (Phishing Targets?):\")\n    for email in whois_data['emails']:\n        print(f\"  - {email}\")\n        \nexcept Exception as e:\n    print(f\"Error: {e}\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "pr_4",
+            "type": "content",
+            "title": "DNS Enumeration (Passive)",
+            "content": "# Passive DNS Enumeration 🌐\n\nFinding subdomains without bruteforcing.\n\n## Techniques\n- **Certificate Transparency (CT) Logs:** Every SSL certificate issued is logged publicly. If legitimate.com creates `dev.legitimate.com` and gets an SSL cert, it's public knowledge!\n- **Search Engines:** Google `site:target.com`.\n- **VirusTotal:** Search for the domain to see observed subdomains.\n\n## Why Subdomains?\nMain sites (`www`) are secure. Dev sites (`dev`, `test`, `staging`) often have weak passwords and debug mode enabled."
+        },
+        {
+            "id": "pr_5",
+            "type": "content",
+            "title": "Google Dorking",
+            "content": "# Google Dorking (Google Hacking) 🔍\n\nUsing advanced search operators to find sensitive files exposed on the web.\n\n## Common Operators\n- `site:target.com`: Only layout results from target.\n- `filetype:pdf`: Only PDFs (Look for manuals, plans).\n- `intitle:\"index of\"`: Directory listings (exposed servers).\n- `inurl:admin`: Find admin panels.\n\n## Dangerous Dorks\n- `filetype:sql \"password\"`: Database dumps.\n- `filetype:env \".env\"`: Environment variables (API keys).\n- `\"password\" filetype:xls site:target.com`: Employee lists with passwords."
+        },
+        {
+            "id": "pr_6",
+            "type": "content",
+            "title": "Social Media Intelligence (SOCMINT)",
+            "content": "# SOCMINT 👥\n\nPeople are the weakest link. They post everything online.\n\n## LinkedIn\n- **Employees:** List of names for phishing.\n- **Tech Stack:** \"Looking for SQL Server Admin\" -> They use SQL Server.\n- **Org Chart:** Who reports to whom (CEO/CFO for Whaling).\n\n## Twitter/Instagram\n- **Badges:** Photos of ID badges (cloning).\n- **Desks:** Photos of screens with passwords on stickies.\n- **Travel:** \"Flying to dangerous country!\" (Physical risk)."
+        },
+        {
+            "id": "pr_7",
+            "type": "content",
+            "title": "Public Records Analysis",
+            "content": "# Public Records 🏛️\n\nGovernment and financial data is often public.\n\n- **SEC Filings (10-K):** Mergers/Acquisitions (great pretext for phishing).\n- **Job Boards:** \"Hiring React Developer\" -> They use React (search for React vulnerabilities).\n- **Wayback Machine:** View old versions of the site. Maybe an old `test.html` page was deleted but is archived, and still exists on the server!"
+        },
+        {
+            "id": "pr_8",
+            "type": "content",
+            "title": "TheHarvester Demo",
+            "content": "# Tools: theHarvester 🚜\n\nA Python tool that automates gathering emails and subdomains from public sources.\n\n```bash\ntheHarvester -d target.com -b google,linkedin,twitter\n```\n\n**Output:**\n- `admin@target.com`\n- `vpn.target.com`\n- `dev.target.com`\n\n(We will explore this more in the Tools module, but remember: It hits Google, not the Target, so it is **Passive**.)"
+        },
+        {
+            "id": "pr_9",
+            "type": "quiz",
+            "title": "Passive Recon Quiz",
+            "content": "Verify your passive recon skills.",
+            "quizQuestion": "Which of the following actions is considered ACTIVE reconnaissance (not Passive)?",
+            "quizOptions": [
+                "Browsing the company's LinkedIn page",
+                "Searching 'site:company.com' on Google",
+                "Running a Port Scan on the company's IP",
+                "Looking up the domain on WHOIS"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "pr_10",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Module Summary 🎓\n\nYou are now a ghost. You can watch without being seen.\n\n## Recap\n- **Passive vs Active:** Touching the target vs Touching 3rd parties.\n- **WHOIS:** Ownership info.\n- **DNS:** Finding subdomains via CT logs.\n- **Google Dorking:** Advanced search queries.\n- **SOCMINT:** Exploiting oversharing employees.\n\n## What's Next?\nNow that we have gathered info silently, we move to **Active Reconnaissance**. We will start touching the target's network. Put your shields up!"
+        }
+    ]
+}

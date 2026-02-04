@@ -1,0 +1,125 @@
+{
+    "id": "dos_attacks",
+    "topicId": "dos_basics",
+    "topicTitle": "Denial of Service Attacks",
+    "description": "Understand how attackers crash services or exhaust resources to make systems unavailable, from DoS to DDoS.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "dos_1",
+            "type": "content",
+            "title": "DoS Overview",
+            "content": "# DoS & DDoS ⛔\n\n**Denial of Service (DoS):** An attack meant to shut down a machine or network, making it inaccessible to its intended users.\n\n**Distributed Denial of Service (DDoS):** A DoS attack originating from many sources (botnet) simultaneously, making it harder to block.\n\n## Primary Goal\nBreach the **Availability** pillar of the CIA Triad."
+        },
+        {
+            "id": "dos_2",
+            "type": "content",
+            "title": "Categories of DoS",
+            "content": "# DoS Categories 🗂️\n\n1.  **Volumetric Attacks:** Consuming the bandwidth of the target. (Measured in bits per second - Gbps).\n2.  **Protocol Attacks:** Consuming actual server resources (firewall states, load balancers) via protocol abuse. (Measured in packets per second - pps).\n3.  **Application Layer Attacks:** Targetting the logic of the specific application (e.g., WordPress search). (Measured in requests per second - rps)."
+        },
+        {
+            "id": "dos_3",
+            "type": "content",
+            "title": "Volumetric Attacks",
+            "content": "# Volumetric Attacks 🌊\n\nFlooding the pipe. If you have a 1Gbps link and I send 10Gbps of traffic, legitimate packets get dropped.\n\n## UDP Flood\nSending UDP packets to random ports. Host checks for application on that port -> finds none -> generates \"Destination Unreachable\" packet. This process consumes resources.\n\n## ICMP Flood (Ping Flood)\nSending overwhelming numbers of Ping requests."
+        },
+        {
+            "id": "dos_4",
+            "type": "content",
+            "title": "Amplification Attacks",
+            "content": "# Amplification Attacks 📢\n\nA type of volumetric attack where the attacker sends a small request to a 3rd party server (reflector) using a **spoofed IP** (the victim's IP).\n\n## Effect\nReflector sends the large response to the Victim.\n\n**DNS Amplification:**\nQuery: `DIG ANY google.com` (60 bytes)\nResponse: Huge list of records (3000 bytes)\n**Amplification Factor:** 50x.\n\nAttacker (1 Mbps) -> DNS Servers -> Victim (50 Mbps)."
+        },
+        {
+            "id": "dos_5",
+            "type": "content",
+            "title": "Amplification Simulation",
+            "content": "# Amplification Logic 📣\n\nHow spoofing causes reflection.\n\n<!-- FULL_CODE_START\nclass Server:\n    def __init__(self, name, amp_factor):\n        self.name = name\n        self.amp_factor = amp_factor\n\n    def handle_request(self, src_ip, size):\n        response_size = size * self.amp_factor\n        print(f\"[{self.name}] Recv {size}b from '{src_ip}' -> Sending {response_size}b to '{src_ip}'\")\n        return response_size\n\nprint(\"--- DNS Amplification Demo ---\")\n\nvictim_ip = \"1.2.3.4\"\nattacker_ip = \"6.6.6.6\"\ndns_server = Server(\"OpenDNS\", 50)\n\n# Attack Step:\n# Attacker sends packet claiming to be Victim\n# request_size = 60 bytes\nprint(f\"Attacker sends 60 byte query to DNS, spoofing source as {victim_ip}\")\n\n# Server replies to the Source IP (Victim)\nload_on_victim = dns_server.handle_request(victim_ip, 60)\n\nprint(f\"\\nImpact:\")\nprint(f\"Attacker Bandwidth Used: 60 bytes\")\nprint(f\"Victim Bandwidth Hit:    {load_on_victim} bytes\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "dos_6",
+            "type": "content",
+            "title": "Protocol Attacks: SYN Flood",
+            "content": "# SYN Flood 🤝\n\nExploits the TCP 3-Way Handshake.\n\n## Normal Handshake\n1.  Client -> SYN -> Server\n2.  Server -> SYN-ACK -> Client (Server allocates RAM for connection)\n3.  Client -> ACK -> Server (Connection Established)\n\n## The Attack\n1.  Attacker sends millions of SYN packets.\n2.  Server sends SYN-ACK and waits...\n3.  Attacker **never** sends ACK.\n\nServer memory fills up with half-open connections. New, valid users cannot connect."
+        },
+        {
+            "id": "dos_7",
+            "type": "content",
+            "title": "SYN Flood Code Concept",
+            "content": "# SYN Flood Concept 🎭\n\nIn Python (conceptual, as raw sockets need root).\n\n```python\nfrom scapy.all import *\n\ntarget_ip = \"192.168.1.5\"\ntarget_port = 80\n\nwhile True:\n    # Random source IP and Port to avoid blocking\n    ip = IP(src=RandIP(), dst=target_ip)\n    tcp = TCP(sport=RandShort(), dport=target_port, flags=\"S\") # S = SYN\n    raw = Raw(b\"X\" * 1024)\n    \n    # Send and do not wait for reply\n    send(ip/tcp/raw, verbose=0)\n```\n\nThis fills the server's backlog queue."
+        },
+        {
+            "id": "dos_quiz_1",
+            "type": "quiz",
+            "title": "Attack Type Check",
+            "content": "Identify the vector.",
+            "quizQuestion": "Which attack type abuses the TCP handshake by leaving connections 'half-open'?",
+            "quizOptions": [
+                "UDP Flood",
+                "SYN Flood",
+                "HTTP Flood",
+                "Ping of Death"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "dos_8",
+            "type": "content",
+            "title": "Application Layer Attacks",
+            "content": "# Application Layer (L7) Attacks 📲\n\nThese look like legitimate traffic (HTTP GET/POST), but are designed to exhaust resources.\n\n## HTTP Flood\nBotnet sends thousands of requests for `index.html`.\n\n## Slowloris\nOpens many connections but sends the HTTP request headers extremely slowly.\n`GET / HTTP/1.1` ... (wait 10s) ... `Host: site.com` ... (wait 10s).\n\nThe server keeps the thread open waiting for the request to finish. Eventually, all server threads are tied up."
+        },
+        {
+            "id": "dos_9",
+            "type": "content",
+            "title": "Slowloris Simulation",
+            "content": "# Slowloris Concept 🐌\n\nSending partial data.\n\n<!-- FULL_CODE_START\nimport time\n\nclass WebServerThread:\n    def __init__(self, id):\n        self.id = id\n        self.busy = False\n        self.timeout = 5\n        self.data = \"\"\n        \n    def receive(self, chunk):\n        self.busy = True\n        self.data += chunk\n        print(f\"[Thread {self.id}] Received chunk: '{chunk}'. Waiting for more...\")\n\nserver_threads = [WebServerThread(i) for i in range(3)] # Server only handles 3 clients!\n\nprint(\"--- Slowloris Attack ---\")\n\n# Attacker takes up all threads\nfor i in range(3):\n    # Sends incomplete header\n    server_threads[i].receive(f\"GET / HTTP/1.1\\r\\nHost: site.com\")\n\nprint(\"\\nServer Status: All threads busy waiting.\")\n\n# Legitimate user tries to connect\nprint(\"\\nLegitimate User trying to connect...\")\nif all(t.busy for t in server_threads):\n    print(\"CONNECTION REFUSED: Server Full\")\n\n# Attacker keeps them alive by sending junk headers periodically\nprint(\"\\nAttacker sending keep-alive... (X-a: b)\")\nserver_threads[0].receive(\"\\r\\nX-a: b\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "dos_10",
+            "type": "content",
+            "title": "Botnets",
+            "content": "# Botnets 🤖\n\nA network of compromised computers (\"zombies\") controlled by a \"Botmaster\".\n\n## Mirai\nA famous botnet that targeted IoT devices (cameras, routers) using default passwords (`admin`/`admin`). It amassed 400,000 bots and launched massive DDoS attacks (1 Tbps+).\n\n## C2 (Command & Control)\nThe architecture used to issue commands to bots. Modern botnets use P2P or legitimate services (Twitter, Telegram) for C2 to avoid takedown."
+        },
+        {
+            "id": "dos_11",
+            "type": "content",
+            "title": "Botnet Architecture",
+            "content": "# C2 Topologies 🕸️\n\n## Centralized (Star)\nAll bots connect to one IRC/HTTP server. Easy to set up, easy to takedown (kill the server).\n\n## Decentralized (P2P)\nBots talk to each other. Commands propagate like gossip. Very hard to takedown (no single point of failure).\n\n## Hybrid\nUsing Domain Generation Algorithms (DGA) to rotate the C2 domain every day."
+        },
+        {
+            "id": "dos_12",
+            "type": "content",
+            "title": "DDoS Mitigation",
+            "content": "# Mitigation Strategies 🛡️\n\n## Network Level\n- **Blackholing:** Routing attack traffic to a null interface (drops it). Side effect: Might drop good traffic too if target IP is blackholed.\n- **Rate Limiting:** Cap packets per second from a single IP.\n- **Anycast:** Distributing IP traffic across multiple servers globally. The attack is diluted across data centers."
+        },
+        {
+            "id": "dos_13",
+            "type": "content",
+            "title": "Mitigating Protocol Attacks",
+            "content": "# Fixing Protocol Flaws 🔧\n\n## SYN Cookies\nMitigation for SYN Floods.\n1.  Server does *not* allocate RAM on receiving SYN.\n2.  Instead, it encodes connection details into the specific Sequence Number of the SYN-ACK (the \"Cookie\") and sends it back.\n3.  Server only allocates RAM when the final ACK returns containing that Sequence Number + 1.\n\nNow, spoofed SYN packets consume 0 server memory."
+        },
+        {
+            "id": "dos_14",
+            "type": "content",
+            "title": "Cloud Protection (WAF & Scrubbing)",
+            "content": "# Cloud Scrubbing Centers ☁️\n\nServices like Cloudflare, Akamai, AWS Shield.\n\nTraffic is routed through their massive networks first.\n1.  **Ingest:** They take in the 400 Gbps attack.\n2.  **Scrub:** AI analyzes packets. 'Bad' robots blocked. 'Good' humans passed.\n3.  **Forward:** Only clean traffic reaches your actual web server.\n\nEssential for surviving modern Volumetric attacks."
+        },
+        {
+            "id": "dos_15",
+            "type": "content",
+            "title": "Economic Denial of Sustainability",
+            "content": "# EDoS 💸\n\nTargeting the wallet, not the server.\n\nFor cloud auto-scaling utility:\n1.  Attacker generates moderate traffic.\n2.  Cloud Auto-Scaler spins up 100 new heavy servers.\n3.  Victim receives a bill for $50,000.\n\nThe service stayed up, but the company goes bankrupt."
+        },
+        {
+            "id": "dos_16",
+            "type": "content",
+            "title": "Permanent DoS (PDoS)",
+            "content": "# Phlashing (PDoS) 🧱\n\nDamaging the hardware so it requires physical replacement.\n\n## Bricking\nBy overwriting the firmware/BIOS with corrupt data.\n\nExample: **BrickerBot** malware would infect insecure IoT devices and corrupt their storage, effectively destroying them to prevent Mirai from using them."
+        },
+        {
+            "id": "dos_17",
+            "type": "content",
+            "title": "Summary",
+            "content": "# DoS Summary 🏁\n\nAvailability is fragile.\n\n## Recap\n- **Volumetric:** Bandwidth saturation (UDP flood).\n- **Protocol:** Resource exhaustion (SYN flood).\n- **L7:** Logic abuse (Slowloris).\n- **Botnets:** The engine of DDoS.\n- **Scrubbing Centers:** The primary defense.\n\nUnderstanding both the pipe size and protocol handshakes is key to defense."
+        }
+    ]
+}

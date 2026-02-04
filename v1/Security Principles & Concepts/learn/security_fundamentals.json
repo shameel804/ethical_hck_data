@@ -1,0 +1,155 @@
+{
+    "id": "learn_security_fundamentals",
+    "topicId": "security_fundamentals",
+    "topicTitle": "Security Fundamentals",
+    "description": "Master the core principles of cybersecurity including CIA Triad, Security Models, Defense in Depth, Zero Trust, and Governance.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "sec_fund_1",
+            "type": "content",
+            "title": "Introduction to Security Fundamentals",
+            "content": "# Security Fundamentals 🛡️\n\nWelcome to the cornerstone of cybersecurity! Understanding these fundamental principles is essential for building and maintaining secure systems.\n\n## What you'll learn:\n- **CIA Triad** - The heart of information security\n- **Security Models** - Frameworks for implementing security\n- **Defense in Depth** - Layered security approach\n- **Zero Trust** - The \"never trust, always verify\" paradigm\n- **Security Governance** - Aligning security with business goals\n\n> 💡 **Did You Know?** The CIA Triad concept has roots dating back to 1976 in a paper by the U.S. Air Force, though the term itself emerged later!\n\n## Why these fundamentals matter?\n- 🏗️ **Strong Foundation** - Basis for all advanced security concepts\n- 🔄 **Universal Application** - Applies to everything from small apps to enterprise networks\n- ⚖️ **Risk Management** - Helps in making informed security decisions\n- 📜 **Compliance** - Essential for meeting regulatory requirements\n\nLet's start building your security mindset!"
+        },
+        {
+            "id": "sec_fund_2",
+            "type": "content",
+            "title": "The CIA Triad",
+            "content": "# The CIA Triad 🔺\n\nThe **CIA Triad** is the most foundational model in information security, representing the three main goals of security efforts.\n\n## 1. Confidentiality 🤐\nEnsuring that information is accessible only to those authorized to have access.\n- **Example:** Encrypting passwords, file permissions.\n- **Attack:** Data breach, snooping.\n\n## 2. Integrity ✍️\nEnsuring the accuracy and completeness of data. Data should not be altered by unauthorized people or processes.\n- **Example:** Hashing files to check for corruption.\n- **Attack:** Man-in-the-middle modification, database injection.\n\n## 3. Availability ⏱️\nEnsuring that authorized users have access to information and associated assets when required.\n- **Example:** Redundant servers, backups.\n- **Attack:** DoS/DDoS attacks, ransomware.\n\n> ⚖️ **Balance:** Security is often a trade-off. Increasing security controls (Confidentiality) might reduce convenience (Availability)."
+        },
+        {
+            "id": "sec_fund_3",
+            "type": "content",
+            "title": "Confidentiality Deep Dive",
+            "content": "# Deep Dive: Confidentiality 🔐\n\nConfidentiality is often what people first think of when they hear \"security\". It's about keeping secrets secret.\n\n## Key Techniques\n\n### Encryption\nTransforming data into an unreadable format.\n\n```python\nfrom cryptography.fernet import Fernet\n\n# Generate a key\nkey = Fernet.generate_key()\ncipher_suite = Fernet(key)\n\ntext = b\"Super Secret Message\"\ncipher_text = cipher_suite.encrypt(text)\nprint(f\"Encrypted: {cipher_text}\")\n```\n\n<!-- FULL_CODE_START\nfrom cryptography.fernet import Fernet\n\nprint(\"=== Confidentiality Demo: Encryption ===\\n\")\n\n# 1. Key Generation\nprint(\"1. Generating a symmetric key...\")\nkey = Fernet.generate_key()\nprint(f\"   Key: {key.decode()}\")\n\n# 2. Initialize Cipher\ncipher_suite = Fernet(key)\n\n# 3. Encryption\noriginal_message = \"Confidential Data: Salary = $120,000\"\nprint(f\"\\n2. Original Message: '{original_message}'\")\n\nencrypted_message = cipher_suite.encrypt(original_message.encode())\nprint(f\"\\n3. Encrypted Message (Ciphertext):\\n   {encrypted_message.decode()}\")\n\n# 4. Decryption\ndecrypted_message = cipher_suite.decrypt(encrypted_message).decode()\nprint(f\"\\n4. Decrypted Message:\\n   '{decrypted_message}'\")\n\nprint(\"\\n\" + \"=\"*50)\nprint(\"Demonstrated how encryption protects data confidentiality!\")\nFULL_CODE_END -->\n\n### Access Controls\nLimiting who can see what.\n- **DAC (Discretionary Access Control):** Owner decides.\n- **RBAC (Role-Based Access Control):** Role decides (e.g., Admin vs User).\n\n### Data Classification\nLabeling data based on sensitivity (e.g., Public, Internal, Secret, Top Secret)."
+        },
+        {
+            "id": "sec_fund_4",
+            "type": "content",
+            "title": "Integrity Deep Dive",
+            "content": "# Deep Dive: Integrity ✅\n\nIntegrity ensures that data is exactly what it is supposed to be.\n\n## Hashing\nA one-way function that turns data into a fixed-size string (hash). If one bit of the data changes, the hash changes completely.\n\n```python\nimport hashlib\n\ndata = \"Hello World\"\nhash_obj = hashlib.sha256(data.encode())\nprint(hash_obj.hexdigest())\n```\n\n<!-- FULL_CODE_START\nimport hashlib\n\nprint(\"=== Integrity Demo: Hashing ===\\n\")\n\ndef calculate_hash(data):\n    return hashlib.sha256(data.encode()).hexdigest()\n\n# Original Data\ndocument = \"Contract Agreement: User pays $500\"\noriginal_hash = calculate_hash(document)\n\nprint(f\"Original Document: '{document}'\")\nprint(f\"Original Hash:     {original_hash}\")\n\nprint(\"\\n\" + \"-\"*50 + \"\\n\")\n\n# Tampered Data (Tiny change)\ntampered_document = \"Contract Agreement: User pays $50\"\ntampered_hash = calculate_hash(tampered_document)\n\nprint(f\"Tampered Document: '{tampered_document}'\")\nprint(f\"Tampered Hash:     {tampered_hash}\")\n\nprint(\"\\n\" + \"=\"*50)\nif original_hash == tampered_hash:\n    print(f\"❌ Integrity Check Failed! Hashes Match.\")\nelse:\n    print(f\"✅ Integrity Check Passed! Hashes are different.\")\n    print(\"Even a small change in input creates a vastly different hash.\")\nFULL_CODE_END -->\n\n## Digital Signatures\nCombines hashing with encryption to prove origin and integrity.\n\n## Version Control\nTracking changes allows you to revert to a \"known good state\" if integrity is compromised."
+        },
+        {
+            "id": "sec_fund_5",
+            "type": "quiz",
+            "title": "CIA Triad Check",
+            "content": "Let's check your understanding of the CIA Triad.",
+            "quizQuestion": "A hospital implements a backup generator to ensure power outages don't shut down life-support systems. Which CIA principle is this addressing?",
+            "quizOptions": [
+                "Confidentiality",
+                "Integrity",
+                "Availability",
+                "Authenticity"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "sec_fund_6",
+            "type": "content",
+            "title": "Security Models",
+            "content": "# Security Models 🏛️\n\nSecurity models utilize the CIA triad and other concepts to provide a formal structure for security policies.\n\n## Bell-LaPadula (BLP) Model\n- Focuses on **Confidentiality**.\n- **Rules:**\n  - **No Read Up:** A subject at a lower security level cannot read data at a higher security level.\n  - **No Write Down:** A subject at a higher security level cannot write data to a lower security level (prevents leakage).\n- Used in military and government.\n\n## Biba Integrity Model\n- Focuses on **Integrity**.\n- **Rules:**\n  - **No Read Down:** Cannot read data from a lower integrity level (prevents contamination).\n  - **No Write Up:** Cannot write data to a higher integrity level.\n\n## Clark-Wilson Model\n- Focuses on commercial environments.\n- Uses transaction separation and separation of duties.\n- Ensures internal and external consistency."
+        },
+        {
+            "id": "sec_fund_7",
+            "type": "content",
+            "title": "Defense in Depth",
+            "content": "# Defense in Depth 🧅\n\nAlso known as the **Layered Security** approach.\n\n> \"Don't put all your eggs in one basket.\"\n\nIf an attacker bypasses one layer, they should face another. It's like a medieval castle: Moat -> Wall -> Gate -> Guards -> Keep.\n\n## The Layers\n\n1.  **Physical:** Fences, locks, guards, CCTV.\n2.  **Perimeter:** Firewalls, border routers.\n3.  **Network:** IDS/IPS, segmentation, VLANs.\n4.  **Endpoint:** Antivirus, EDR, patch management.\n5.  **Application:** Input validation, secure coding.\n6.  **Data:** Encryption, hashing, access controls.\n7.  **Human:** Awareness training, policies.\n\n## Example Scenario\nEven if a hacker guesses a user's password (Human layer failure), MFA (Authentication layer) stops them. If they bypass MFA, they might be stopped by lack of privilege (Authorization layer) or caught by logging (Monitoring layer)."
+        },
+        {
+            "id": "sec_fund_8",
+            "type": "content",
+            "title": "Defense in Depth Simulation",
+            "content": "# Simulating Defense in Depth 🛡️\n\nLet's see how multiple layers trap an attack.\n\n```python\ndef layer_1_firewall(packet):\n    if packet['port'] != 80: return False\n    return True\n\ndef layer_2_ips(packet):\n    if \"malicious\" in packet['payload']: return False\n    return True\n```\n\n<!-- FULL_CODE_START\nprint(\"=== Defense in Depth Simulation ===\\n\")\n\nclass SecurityLayer:\n    def __init__(self, name):\n        self.name = name\n\n    def check(self, packet):\n        raise NotImplementedError\n\nclass Firewall(SecurityLayer):\n    def check(self, packet):\n        if packet['port'] not in [80, 443]:\n            print(f\"🛑 {self.name}: Blocked traffic on port {packet['port']}\")\n            return False\n        print(f\"✅ {self.name}: Port {packet['port']} allowed\")\n        return True\n\nclass IDS(SecurityLayer):\n    def check(self, packet):\n        if \"SELECT * FROM\" in packet['payload'].upper():\n            print(f\"🛑 {self.name}: Detected SQL Injection signature!\")\n            return False\n        print(f\"✅ {self.name}: No known signatures found\")\n        return True\n\nclass Antivirus(SecurityLayer):\n    def check(self, packet):\n        if \"virus\" in packet['payload']:\n            print(f\"🛑 {self.name}: Malware signature detected!\")\n            return False\n        print(f\"✅ {self.name}: Clean\")\n        return True\n\n# Define the stack\ndefense_stack = [\n    Firewall(\"Perimeter Firewall\"),\n    IDS(\"Network IDS\"),\n    Antivirus(\"Endpoint AV\")\n]\n\ndef simulate_attack(packet_name, packet_data):\n    print(f\"\\n--- Simulating: {packet_name} ---\")\n    for layer in defense_stack:\n        if not layer.check(packet_data):\n            print(f\"🛡️ Attack stopped at {layer.name}!\")\n            return\n    print(\"⚠️ Attack penetrated all layers!\")\n\n# Sceanrios\nnormal_traffic = {'port': 443, 'payload': \"GET /index.html\"}\nsimulate_attack(\"Legitimate Web Request\", normal_traffic)\n\nbad_port = {'port': 22, 'payload': \"ssh root@host\"}\nsimulate_attack(\"SSH Brute Force\", bad_port)\n\nsql_injection = {'port': 80, 'payload': \"admin' OR 1=1; SELECT * FROM users --\"}\nsimulate_attack(\"Web SQL Injection\", sql_injection)\nFULL_CODE_END -->"
+        },
+        {
+            "id": "sec_fund_9",
+            "type": "quiz",
+            "title": "Defense in Depth Quiz",
+            "content": "Test your layered security knowledge.",
+            "quizQuestion": "In a Defense in Depth strategy, if an attacker bypasses the network firewall, which layer is the NEXT likely line of defense?",
+            "quizOptions": [
+                "Physical Security",
+                "Policies and Procedures",
+                "Endpoint Security / IDS",
+                "The Internet"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "sec_fund_10",
+            "type": "content",
+            "title": "Zero Trust Architecture",
+            "content": "# Zero Trust Architecture 🚫🤝\n\nIn the old days, we trusted everything inside the network (Castles & Moats). Zero Trust changes the paradigm.\n\n## Core Principle: \"Never Trust, Always Verify\"\n\nZero Trust assumes that the network is **already compromised**.\n\n### Key Concepts:\n1.  **Verify Explicitly:** Always authenticate and authorize based on all available data (identity, location, device health).\n2.  **Use Least Privilege:** Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA).\n3.  **Assume Breach:** Segment networks, encrypt end-to-end, and use analytics to detect anomalies.\n\n### Why the shift?\n- Cloud computing moved data outside the perimeter.\n- Remote work (BYOD/WFH) dissolved the traditional perimeter.\n- Insider threats exist inside the \"trusted\" zone."
+        },
+        {
+            "id": "sec_fund_11",
+            "type": "content",
+            "title": "Implementing Zero Trust",
+            "content": "# Implementing Zero Trust 🏗️\n\nZero Trust is a strategy, not a product. It requires multiple pillars.\n\n## The Zero Trust Pillars\n\n1.  **Identity:** Verify the User (MFA, SSO).\n2.  **Device:** Verify the Endpoint (Is it patched? Is it corporate managed?).\n3.  **Network:** Segment and Isolate (Micro-segmentation).\n4.  **Applications:** Secure the App layer.\n5.  **Data:** Encrypt and classify.\n6.  **Infrastructure:** Hardening and monitoring.\n\n> 🔍 **Example:** Even the CEO accessing a file sharing server from a company laptop must re-authenticate if they change locations or try to access a sensitive finance folder."
+        },
+        {
+            "id": "sec_fund_12",
+            "type": "content",
+            "title": "Security Governance",
+            "content": "# Security Governance 👔\n\nSecurity isn't just technical; it's organizational. Governance ensures security efforts align with business goals.\n\n## Key Components\n\n### Policies\nHigh-level statements of management intent. Mandatory.\n- *Example:* \"All employees must use MFA.\"\n\n### Standards\nSpecific, mandatory requirements (hardware, software, etc.).\n- *Example:* \"All laptops must use AES-256 full disk encryption.\"\n\n### Procedures\nStep-by-step instructions.\n- *Example:* \"How to onboard a new employee.\"\n\n### Guidelines\nRecommended advice, not mandatory.\n- *Example:* \"Best practices for choosing a password.\"\n\n## Governance Frameworks\n- **ISO/IEC 27001:** International standard for Information Security Management Systems (ISMS).\n- **NIST CSF:** Cybersecurity Framework (Identify, Protect, Detect, Respond, Recover)."
+        },
+        {
+            "id": "sec_fund_13",
+            "type": "content",
+            "title": "Risk Management",
+            "content": "# Risk Management 🎲\n\nGovernance is heavily tied to managing risk.\n\n## The Formula\n```\nRisk = Threat × Vulnerability × Impact\n```\n\n## Risk Treatment Options\n\n1.  **Avoid:** Stop the activity causing the risk.\n    - *Ex:* Shutting down an old, vulnerable server.\n2.  **Mitigate:** Reduce the likelihood or impact.\n    - *Ex:* Installing a firewall, patching software.\n3.  **Transfer:** Move the risk to a third party.\n    - *Ex:* Buying cyber insurance.\n4.  **Accept:** Acknowledge the risk and continue (usually if cost of mitigation > cost of asset).\n\n<!-- FULL_CODE_START\nprint(\"=== Risk Calculation Demo ===\\n\")\n\ndef calculate_risk_score(likelihood, impact):\n    # Simple risk matrix calculation (1-5 scale)\n    risk_score = likelihood * impact\n    \n    level = \"Low\"\n    if risk_score >= 20: level = \"Critical\"\n    elif risk_score >= 12: level = \"High\"\n    elif risk_score >= 6: level = \"Medium\"\n    \n    return risk_score, level\n\nscenarios = [\n    {\"name\": \"Unpatched Server\", \"likelihood\": 5, \"impact\": 5},\n    {\"name\": \"Lost Employee Laptop (Encrypted)\", \"likelihood\": 3, \"impact\": 2},\n    {\"name\": \"Phishing Attack\", \"likelihood\": 4, \"impact\": 4},\n    {\"name\": \"Power Outage (with UPS)\", \"likelihood\": 2, \"impact\": 1}\n]\n\nprint(f\"{'Scenario':<35} | {'Risk':<5} | {'Level'}\")\nprint(\"-\"*60)\n\nfor s in scenarios:\n    score, level = calculate_risk_score(s['likelihood'], s['impact'])\n    print(f\"{s['name']:<35} | {score:<5} | {level}\")\n\nprint(\"\\n\" + \"=\"*40)\nprint(\"Organizations use matrices like this to prioritize fixes!\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "sec_fund_14",
+            "type": "quiz",
+            "title": "Risk Quiz",
+            "content": "Review your understanding of risk concepts.",
+            "quizQuestion": "Buying insurance to cover the cost of a potential data breach is an example of which risk treatment?",
+            "quizOptions": [
+                "Risk Avoidance",
+                "Risk Mitigation",
+                "Risk Transfer",
+                "Risk Acceptance"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "sec_fund_15",
+            "type": "content",
+            "title": "Identity & Access Management (IAM)",
+            "content": "# Identity & Access Management (IAM) 🆔\n\nIAM is a crucial part of security governance and architecture.\n\n## AAA Framework\n\n1.  **Identification:** Who are you? (Username)\n2.  **Authentication:** Prove it. (Password, Biometrics)\n3.  **Authorization:** What are you allowed to do? (Permissions)\n4.  **Accounting (Auditing):** What did you do? (Logs)\n\n## Authentication Factors\n- **Something you know:** Password, PIN.\n- **Something you have:** Smart card, Phone (OTP).\n- **Something you are:** Fingerprint, Retina scan.\n- **Something you do:** Typing rhythm, gait.\n- **Somewhere you are:** GPS location."
+        },
+        {
+            "id": "sec_fund_16",
+            "type": "content",
+            "title": "Security vs Compliance",
+            "content": "# Security vs Compliance 📋\n\nIt is important to distinguish between being secure and being compliant.\n\n## Compliance\n- Meeting a specific set of requirements (PCI-DSS, HIPAA, GDPR).\n- \"Checking the boxes.\"\n- **Goal:** Pass the audit, avoid fines.\n- *Note:* You can be compliant but not secure.\n\n## Security\n- Protecting assets from threats.\n- Holistic approach.\n- **Goal:** Minimize risk, protect the business.\n- *Note:* Good security usually makes compliance easier.\n\n> 🤝 **The Goal:** Security-driven compliance. Build a secure system first, then map it to compliance requirements."
+        },
+        {
+            "id": "sec_fund_17",
+            "type": "content",
+            "title": "Physical Security",
+            "content": "# Physical Security 🏢\n\nOften overlooked, but critical. If I can steal the server, your firewall doesn't matter.\n\n## Key Concepts\n- **Access Control:** Badge readers, Mantraps (double door systems to prevent tailgating).\n- **Surveillance:** CCTV, Motion sensors.\n- **Environmental Controls:** HVAC (cooling), Fire suppression (FM-200 gas instead of water for electronics), Power (UPS, Generators).\n- **Secure Disposal:** Shredding documents, degaussing hard drives.\n\n> ⚠️ **Tailgating:** When an unauthorized person follows an authorized person through a secure door. \"Hold the door, please!\" is a security vulnerability."
+        },
+        {
+            "id": "sec_fund_18",
+            "type": "quiz",
+            "title": "Final Knowledge Check",
+            "content": "Let's verify your mastery of Security Fundamentals.",
+            "quizQuestion": "Which security model is primarily concerned with maintaining the integrity of data?",
+            "quizOptions": [
+                "Bell-LaPadula",
+                "Biba",
+                "Brewer-Nash",
+                "Zero Trust"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "sec_fund_19",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Module Summary 🎓\n\nYou have completed the Security Fundamentals module! These concepts are the language of the industry.\n\n## Recap\n- **CIA Triad:** The balance of Confidentiality, Integrity, and Availability.\n- **Security Models:** BLP (Confidentiality), Biba (Integrity).\n- **Defense in Depth:** Layering defenses (Physical, Network, Host, App, Data).\n- **Zero Trust:** Never trust, always verify. Assume breach.\n- **Governance:** Policies, Standards, and Risk Management guide the ship.\n\n## What's Next?\nNow that you understand the principles, you are ready to explore **Threat Modeling** to see how attackers try to break these principles.\n\nKeep learning and stay secure! 🛡️"
+        }
+    ]
+}

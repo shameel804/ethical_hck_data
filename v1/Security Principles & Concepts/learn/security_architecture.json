@@ -1,0 +1,89 @@
+{
+    "id": "learn_security_architecture",
+    "topicId": "security_architecture",
+    "topicTitle": "Security Architecture",
+    "description": "Explore the structural design of secure systems, from principles and patterns to microsegmentation and hybrid cloud defense.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "sa_1",
+            "type": "content",
+            "title": "Introduction to Security Architecture",
+            "content": "# Security Architecture 🏛️\n\nSecurity Architecture is the design of security controls and how they fit together to protect the organization.\n\n> \"Ideally, security is baked in, not bolted on.\"\n\n## Why Architecture?\n- **Consistency:** Ensures all systems follow the same security rules.\n- **Efficiency:** Reusable patterns save time.\n- **Holistic View:** Prevents gaps between different systems.\n\n## The Role of an Architect\n- **Aligns** security with business goals.\n- **Designs** the defense strategy.\n- **Evaluates** new technologies."
+        },
+        {
+            "id": "sa_2",
+            "type": "content",
+            "title": "Secure Design Principles",
+            "content": "# Secure Design Principles 📐\n\nThese are the \"Laws of Physics\" for building secure software.\n\n## Saltzer and Schroeder's Principles (1975)\n\n1.  **Least Privilege:** Give minimum access necessary.\n2.  **Fail-Safe Defaults:** If it breaks, it should lock (deny access).\n3.  **Economy of Mechanism:** Keep it simple. Complexity hides bugs.\n4.  **Complete Mediation:** Check access every single time.\n5.  **Open Design:** Security shouldn't depend on secrecy (No \"Security by Obscurity\").\n6.  **Separation of Privilege:** require two keys to open the door (MFA).\n7.  **Least Common Mechanism:** Don't share state if you don't have to.\n8.  **Psychological Acceptability:** Security must be easy to use."
+        },
+        {
+            "id": "sa_3",
+            "type": "content",
+            "title": "Design Principle Demo",
+            "content": "# Coding Principle: Economy of Mechanism 💻\n\nComplexity is the enemy of security.\n\n```python\n# BAD: Complex Logic (Prone to bugs)\ndef access_check(user):\n    if user.is_admin and (user.location == \"US\" or user.override_token):\n        if not user.is_suspended:\n            return True\n    return False\n\n# GOOD: Simple Logic\ndef access_check(user):\n    if not user.is_admin: return False\n    if user.is_suspended: return False\n    if not user.is_in_valid_location: return False\n    return True\n```"
+        },
+        {
+            "id": "sa_4",
+            "type": "content",
+            "title": "Security Patterns",
+            "content": "# Security Patterns 🧩\n\nPatterns are reusable solutions to common security problems.\n\n## 1. Authentication Enforcer\nCentralized point that authenticates users (e.g., API Gateway). Preventing every microservice from doing its own auth check avoids mistakes.\n\n## 2. Authorization (Access Control)\nDecoupling decision from enforcement. \"Policy Decision Point (PDP)\" decides, \"Policy Enforcement Point (PEP)\" blocks/allows.\n\n## 3. Secure Logger\nEnsuring logs are tamper-proof and don't contain sensitive info (like passwords).\n\n## 4. Input Validator\nCentralized validation logic (e.g., intercepting all requests to check for SQL/XSS)."
+        },
+        {
+            "id": "sa_5",
+            "type": "content",
+            "title": "Perimeter Security",
+            "content": "# Perimeter Security 🏰\n\nThe traditional approach: \"Hard shell, soft center.\"\n\n## Components\n- **Border Router:** Connects to ISP, filters garbage traffic.\n- **Firewall:** Stateful inspection of packets (Ports/IPs).\n- **DMZ (Demilitarized Zone):** A buffer zone for public-facing servers (Web, Mail, DNS). If hacked, they can't access the internal network.\n- **Internal Network:** Where the employees and databases live.\n\n> ⚠️ **The Problem:** Once an attacker gets insde (Phishing, VPN breach), they have free reign. This led to the rise of Zero Trust."
+        },
+        {
+            "id": "sa_6",
+            "type": "content",
+            "title": "Microsegmentation",
+            "content": "# Microsegmentation 🔪\n\nBreaking the network into tiny, isolated zones.\n\n> \"Don't trust the neighbor.\"\n\n## How it works\nInstead of one Firewall at the edge, you have a software firewall on **every single VM or Container**.\n- Web Server A can talk to App Server A.\n- Web Server A **cannot** talk to Web Server B.\n- App Server A can only talk to DB Server A on port 3306.\n\n## Benefits\n- **Limits Lateral Movement:** Attacker is trapped in one pod.\n- **Granular Control:** Specific rules for specific apps."
+        },
+        {
+            "id": "sa_7",
+            "type": "content",
+            "title": "Microsegmentation in Code",
+            "content": "# Microsegmentation with Policies 📄\n\nIn modern cloud (Kubernetes), we use YAML policies.\n\n```yaml\n# Kubernetes Network Policy\nkind: NetworkPolicy\nspec:\n  podSelector:\n    matchLabels:\n      app: database\n  ingress:\n  - from:\n    - podSelector:\n        matchLabels:\n          app: backend\n    ports:\n    - port: 5432\n```\n\nThis says: \"Only pods labeled 'backend' can access 'database' on port 5432. Everyone else? BLOCKED.\""
+        },
+        {
+            "id": "sa_8",
+            "type": "content",
+            "title": "Hybrid Security Models",
+            "content": "# Hybrid Security Models ☁️🏢\n\nMost companies have both On-Premise (Data Center) and Cloud (AWS/Azure). Securing the bridge is hard.\n\n## Challenges\n- **Inconsistent Policy:** Firewall rule on-prem doesn't automatically exist in cloud.\n- **Latency:** Inspecting traffic requires tromboning (sending cloud traffic back to on-prem to be scanned).\n- **Identity:** Synching Active Directory (On-prem) with Azure AD/Okta (Cloud). \n\n## Solutions\n- **CASB (Cloud Access Security Broker):** A control point between users and cloud apps.\n- **SASE (Secure Access Service Edge):** Moving security to the cloud edge, delivering firewall-as-a-service."
+        },
+        {
+            "id": "sa_9",
+            "type": "content",
+            "title": "Secure Architecture Diagram",
+            "content": "# Visualizing a Secure Architecture 🖼️\n\n```\nInternet \n   ↓\n[DDoS Protection & WAF]\n   ↓\n[Public Load Balancer (DMZ)] -----> [Bastion Host]\n   ↓\n[Web Servers (Private Subnet)]\n   ↓\n[Internal Load Balancer]\n   ↓\n[App Servers (Private Subnet)]\n   ↓\n[Database (Private Subnet, No Internet)]\n```\n\n- **WAF:** Web Application Firewall (Blocks XSS/SQLi).\n- **Private Subnet:** No direct route from internet.\n- **Bastion:** Only entry point for admins (SSH/RDP)."
+        },
+        {
+            "id": "sa_10",
+            "type": "quiz",
+            "title": "Principles Quiz",
+            "content": "Test your knowledge of design principles.",
+            "quizQuestion": "Which principle states that a mechanism should not be complex, because complexity hides vulnerabilities?",
+            "quizOptions": [
+                "Least Privilege",
+                "Open Design",
+                "Economy of Mechanism",
+                "Complete Mediation"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "sa_11",
+            "type": "content",
+            "title": "Defense in Depth vs Architecture",
+            "content": "# Philosophy: Defense vs Architecture 🧠\n\n- **Defense in Depth** is a *tactic* (Layering controls).\n- **Security Architecture** is the *strategy* (Designing the system).\n\nArchitecture decides **where** to put the layers.\n\n## Example\n- Arhitecture decides: \"We need a DMZ for web servers.\"\n- Defense in Depth ensures: \"The web server has an oversized WAF, OS hardening, and tight file permissions.\""
+        },
+        {
+            "id": "sa_12",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Module Summary 🎓\n\nYou've completed the Security Architecture module! You now see the \"Big Picture\" of how systems are designed securely.\n\n## Recap\n- **Principles:** Least Privilege, Fail-Safe, Economy of Mechanism.\n- **Patterns:** Auth Enforcer, Secure Logger.\n- **Perimeter:** The classic \"Hard Shell\" (Firewall/DMZ).\n- **Microsegmentation:** The modern \"Zero Trust\" network style.\n- **Hybrid:** Connecting On-Prem to Cloud securely.\n\n## Course Completion!\nThis concludes the **Security Principles & Concepts** course! You have a solid theoretical foundation.\n\n## Next Course\nReady to see what you are defending against? The next course is **Threat Landscape & Attack Vectors**."
+        }
+    ]
+}

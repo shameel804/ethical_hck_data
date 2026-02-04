@@ -1,0 +1,101 @@
+{
+    "id": "rfid_nfc",
+    "topicId": "rfid_basics",
+    "topicTitle": "RFID & NFC Security",
+    "description": "Dive into Near Field Communication and RFID attacks, including card cloning and replay attacks.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "rfid_1",
+            "type": "content",
+            "title": "RFID Overview",
+            "content": "# RFID & NFC 💳\n\n**RFID (Radio Frequency Identification):** Generic term for technologies using radio waves to identify keys/cards.\n**NFC (Near Field Communication):** A subset of RFID operating at 13.56 MHz (High Frequency).\n\n## Use Cases\n- Access Badges (Office buildings).\n- Credit Cards (Tap to Pay).\n- Passports (ePassports).\n- Inventory Tracking (Tags)."
+        },
+        {
+            "id": "rfid_2",
+            "type": "content",
+            "title": "Frequencies (LF vs HF)",
+            "content": "# Frequency Matters 📉\n\n## Low Frequency (LF) - 125 kHz\n- **Range:** ~10 cm.\n- **Uses:** Basic door access badges (HID Prox).\n- **Security:** often **None**. It just broadcasts a static ID number.\n- **Attack:** Trivial to clone.\n\n## High Frequency (HF) - 13.56 MHz\n- **Range:** ~4 cm.\n- **Uses:** Payment cards, MIFARE, NFC.\n- **Security:** Supports encryption and mutual authentication."
+        },
+        {
+            "id": "rfid_3",
+            "type": "content",
+            "title": "Cloning LF Cards",
+            "content": "# Cloning 125kHz Cards 🐑\n\nTools: **Proxmark3**, **Flipper Zero**, cheap \"Blue Cloners\".\n\n## The Attack\n1.  Attacker stands near victim (elevator, line).\n2.  Attacker's reader energizes victim's card.\n3.  Card shouts: \"I am ID 12345!\"\n4.  Attacker writes \"12345\" to a blank card ($0.50).\n5.  Attacker enters the building."
+        },
+        {
+            "id": "rfid_4",
+            "type": "content",
+            "title": "NFC Attacks",
+            "content": "# NFC Attacks 📱\n\nAttacking 13.56 MHz.\n\n## MIFARE Classic\nA very common HF card. Historically used weak crypto (CRYPTO1 algorithm).\n\n## Nested Attack\nIf the attacker knows *one* key (many cards use default keys for some sectors), they can exploit the PRNG (Pseudo Random Number Generator) to recover *all* keys for the card."
+        },
+        {
+            "id": "rfid_5",
+            "type": "content",
+            "title": "Replay Attacks",
+            "content": "# Replay Attacks 🔁\n\nIf the system doesn't use a rolling code or challenge-response correctly.\n\n1.  Attacker captures the signal of a valid unlock: \"Open Door!\"\n2.  Attacker plays back the signal later.\n3.  Door opens.\n\nModern systems use a \"Nonce\" (Number used once) to prevent this. The reader says \"Encrypt 'Banana'\", card replies with \" Encrypted('Banana')\". Replaying an old signal fails."
+        },
+        {
+            "id": "rfid_6",
+            "type": "content",
+            "title": "Relay Attack",
+            "content": "# Relay Attack (Wormhole) 🕳️\n\nExtending the range of NFC/RFID.\n\n## Scenario\nVictim has car keys in the house. Car is in the driveway.\n\n1.  Thief A stands by the car with a transceiver.\n2.  Thief B stands by the front door with a transceiver.\n3.  Thief A pings car -> Relays signal to Thief B -> Relays to Keys -> Keys reply -> Relay to Car.\n4.  Car thinks keys are right next to it -> Unlocks & Starts."
+        },
+        {
+            "id": "rfid_7",
+            "type": "content",
+            "title": "EMV (Chip) & Contactless",
+            "content": "# Contactless Payments 💸\n\nCredit cards use EMV (Europay, Mastercard, Visa).\n\n## Security\nEMV uses dynamic crypto. You cannot just \"clone\" a credit card to buy things later because the chip generates a unique code for every transaction.\n\n## Downgrade Attacks\nAttackers might try to force the terminal to use Magstripe mode (which is static) instead of Chip mode."
+        },
+        {
+            "id": "rfid_quiz_1",
+            "type": "quiz",
+            "title": "Frequency Check",
+            "content": "Know your tech.",
+            "quizQuestion": "Which RFID frequency is commonly used for basic Employee Access Badges and often lacks encryption (making it easy to clone)?",
+            "quizOptions": [
+                "High Frequency (13.56 MHz)",
+                "Low Frequency (125 kHz)",
+                "Ultra High Frequency (UHF)",
+                "Microwave"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "rfid_8",
+            "type": "content",
+            "title": "Tools: Proxmark3",
+            "content": "# Proxmark3 🛠️\n\nThe \"Swiss Army Knife\" of RFID.\n\nIt can Read, Write, Clone, Snooping, and Simulating both LF and HF tags.\n\n`lf search` -> Finds 125khz tags.\n`hf search` -> Finds NFC tags.\n`hf mf autopwn` -> Cracks MIFARE Classic keys."
+        },
+        {
+            "id": "rfid_9",
+            "type": "content",
+            "title": "RFID Zapping",
+            "content": "# RFID Zapping ⚡\n\nDestroying tags permanently.\n\nHigh-power RFID fields or EMPs can burn out the tiny chip inside the tag. Thieves sometimes zap anti-theft tags in stores (EAS tags) to walk out without triggering alarms."
+        },
+        {
+            "id": "rfid_10",
+            "type": "content",
+            "title": "Shielding",
+            "content": "# Shielding 🛡️\n\nBlocking the radio waves.\n\n**Faraday Cage:** A mesh of conductive material.\nSecure wallets use aluminum foil layers to prevent \"Skimming\" (someone bumping into you to read your cards). \n\nEffectiveness depends on the frequency. A mesh that blocks LF might let HF through if holes are too big."
+        },
+        {
+            "id": "rfid_11",
+            "type": "content",
+            "title": "Skimming",
+            "content": "# Digital Pickpocketing 🕵️\n\nAttackers scanning pockets in crowds.\n\nData obtained:\n- Card Number (PAN).\n- Expiration Date.\n\nData *NOT* obtained:\n- CVV (The 3 digits on back).\n\nThis limited data is usually not enough for online shopping, but can be used for some fraud."
+        },
+        {
+            "id": "rfid_12",
+            "type": "content",
+            "title": "Simulation: Reading Tag",
+            "content": "# Reader Logic 💾\n\nConceptual Python RFID reader.\n\n```python\n# Using a library like MFRC522 on Raspberry Pi\n# from mfrc522 import SimpleMFRC522\n\n# reader = SimpleMFRC522()\n\n# print(\"Hold tag near reader...\")\n# id, text = reader.read()\n# print(f\"Card Included ID: {id}\")\n# print(f\"Data on Card: {text}\")\n```\n\nIf `id` is static and `text` is unencrypted, the system is insecure."
+        },
+        {
+            "id": "rfid_13",
+            "type": "content",
+            "title": "Summary",
+            "content": "# RFID Summary 🏁\n\nInvisible identification.\n\n## Recap\n- **LF (125kHz)** is insecure and easily cloned.\n- **HF/NFC** is smarter but still vulnerable to Relay and Implementation bugs.\n- **Relay Attacks** defeat encryption by extending distance.\n- **Shielding** is the physical defense.\n\nTreat access badges like physical keys—don't let anyone borrow them!"
+        }
+    ]
+}

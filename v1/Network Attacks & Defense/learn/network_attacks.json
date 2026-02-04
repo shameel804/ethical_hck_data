@@ -1,0 +1,125 @@
+{
+    "id": "network_attacks",
+    "topicId": "network_attack_basics",
+    "topicTitle": "Network-Based Attacks",
+    "description": "Learn how attackers intercept and manipulate network traffic using MitM, Spoofing, and Layer 2 attacks.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "net_att_1",
+            "type": "content",
+            "title": "Network Attacks Overview",
+            "content": "# Network Attacks 🕸️\n\nAttacks that occur on the communication medium itself.\n\n## Key Topics\n- **Man-in-the-Middle (MitM):** Intercepting private comms.\n- **ARP Spoofing:** Redirection on the local network.\n- **DNS Spoofing:** Redirection on the internet.\n- **DHCP Attacks:** Starvation and rogue servers.\n- **VLAN Hopping:** Jumping between segmented networks."
+        },
+        {
+            "id": "net_att_2",
+            "type": "content",
+            "title": "Man-in-the-Middle (MitM)",
+            "content": "# Man-in-the-Middle (MitM) 🕵️\n\nA MitM attack happens when an attacker secretly relays and possibly alters the communication between two parties who believe they are directly communicating with each other.\n\n## Scenario\n**Bob** sends a message to **Alice**.\n**Attacker** sits in between.\n\n`Bob -> Attacker -> Alice`\n\nThe attacker can read, modify, or block the message."
+        },
+        {
+            "id": "net_att_3",
+            "type": "content",
+            "title": "ARP Spoofing",
+            "content": "# ARP Spoofing 🎭\n\nARP (Address Resolution Protocol) maps IP addresses to MAC addresses on a local network (LAN).\n\n## The Vulnerability\nARP has NO authentication. Any device can claim to be any IP.\n\n1.  BitCoin user (Alice) asks: \"Who has Gateway IP?\"\n2.  Attacker Spams: \"I am Gateway IP! My MAC is AA:AA...\"\n3.  Alice updates her ARP cache sending traffic to Attacker's MAC.\n4.  Attacker forwards traffic to real gateway (after logging passwords)."
+        },
+        {
+            "id": "net_att_4",
+            "type": "content",
+            "title": "ARP Spoofing Simulation",
+            "content": "# ARP Simulation 🐍\n\nDemonstrating how ARP replies work.\n\n<!-- FULL_CODE_START\n# NOTE: Scapy is the standard tool for this, but it requires root and raw sockets.\n# We will simulate the logic of packet construction.\n\nprint(\"--- ARP Spoofing Logic Simulator ---\")\n\ntarget_ip = \"192.168.1.5\"\ngateway_ip = \"192.168.1.1\"\nmy_mac = \"aa:bb:cc:dd:ee:ff\"\n\ndef make_arp_packet(op, pdst, hwdst, psrc, hwsrc):\n    # op=2 is 'is-at' (Reply)\n    return f\"[ARP op={op} psrc={psrc} hwsrc={hwsrc} pdst={pdst} hwdst={hwdst}]\"\n\n# Poisoning the Target\n# Telling Target that I (hwsrc=my_mac) am the Gateway (psrc=gateway_ip)\npacket1 = make_arp_packet(op=2, pdst=target_ip, hwdst=\"ff:ff:ff:ff:ff:ff\", \n                          psrc=gateway_ip, hwsrc=my_mac)\n\nprint(f\"1. Sending to Target ({target_ip}):\")\nprint(f\"   {packet1}\")\nprint(\"   Meaning: 'Hi Target, I belong to IP 192.168.1.1'\")\n\n# Poisoning the Gateway\n# Telling Gateway that I (hwsrc=my_mac) am the Target (psrc=target_ip)\npacket2 = make_arp_packet(op=2, pdst=gateway_ip, hwdst=\"ff:ff:ff:ff:ff:ff\", \n                          psrc=target_ip, hwsrc=my_mac)\n\nprint(f\"\\n2. Sending to Gateway ({gateway_ip}):\")\nprint(f\"   {packet2}\")\nprint(\"   Meaning: 'Hi Gateway, I belong to IP 192.168.1.5'\")\n\nprint(\"\\nRESULT: Now all traffic between Target and Gateway flows through ME.\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "net_att_5",
+            "type": "content",
+            "title": "DNS Spoofing (Cache Poisoning)",
+            "content": "# DNS Spoofing 🌍\n\nRedirecting users to fake websites by creating false DNS entries.\n\n## Mechanism\n1.  Victim types `bank.com`.\n2.  Computer asks DNS Server: \"IP for `bank.com`?\"\n3.  Attacker (if local MitM) replies faster than the real DNS: \"It's `6.6.6.6`\" (Attacker's IP).\n4.  Victim loads fake `bank.com` hosted at `6.6.6.6` and enters credentials.\n\nAlso called **DNS Cache Poisoning** when the attacker corrupts the cache of the DNS server itself."
+        },
+        {
+            "id": "net_att_6",
+            "type": "content",
+            "title": "DHCP Starvation",
+            "content": "# DHCP Starvation 🍽️\n\nDHCP servers assign IPs to devices. They have a limited pool (scope) of IPs.\n\n## The Attack\n1.  Attacker requests IPs using thousands of random spoofed MAC addresses.\n2.  DHCP server allocates all available IPs to these fake clients.\n3.  Valid users cannot get an IP and cannot connect to the network.\n\nThis is a Denial of Service (DoS) attack against the network infrastructure."
+        },
+        {
+            "id": "net_att_7",
+            "type": "content",
+            "title": "Visualizing DHCP Starvation",
+            "content": "# Starvation Logic 🛑\n\nHow a loop exhausts resources.\n\n<!-- FULL_CODE_START\nimport random\n\n# Simulating DHCP Server Pool\ndhcp_pool = [f\"192.168.1.{i}\" for i in range(100, 110)] # Only 10 IPs for demo\nleases = {}\n\ndef request_ip(mac_address):\n    if not dhcp_pool:\n        return \"FAIL: No IPs available\"\n    \n    ip = dhcp_pool.pop(0)\n    leases[mac_address] = ip\n    return f\"SUCCESS: Assigned {ip}\"\n\nprint(\"--- DHCP Starvation Attack ---\")\nprint(f\"Initial Pool Size: {len(dhcp_pool)}\")\n\n# Attacker loop\nfor i in range(12):\n    # Generate random MAC\n    fake_mac = \"02:%02x:%02x:%02x:%02x:%02x\" % (\n        random.randint(0, 255), random.randint(0, 255),\n        random.randint(0, 255), random.randint(0, 255),\n        random.randint(0, 255))\n    \n    status = request_ip(fake_mac)\n    print(f\"Req #{i+1} from {fake_mac}: {status}\")\n\nprint(\"\\n--- Legitimate User Joins ---\")\nstatus = request_ip(\"AA:BB:CC:11:22:33\")\nprint(f\"User Request: {status}\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "net_att_8",
+            "type": "content",
+            "title": "Rogue DHCP Server",
+            "content": "# Rogue DHCP Server \n\nAfter running DHCP Starvation, the attacker sets up their *own* DHCP server.\n\nSince the real server has no IPs, new clients accept the offer from the Rogue Server.\n\nThe Rogue Server assigns:\n- IP: Valid IP\n- Gateway: **Attacker's IP**\n- DNS: **Attacker's IP**\n\nNow the attacker captures 100% of the traffic!"
+        },
+        {
+            "id": "net_att_quiz_1",
+            "type": "quiz",
+            "title": "Protocol Check",
+            "content": "Verify understanding of spoofing.",
+            "quizQuestion": "Which protocol is abused in local network spoofing to map an attacker's MAC address to a victim's IP?",
+            "quizOptions": [
+                "DNS",
+                "DHCP",
+                "ARP",
+                "HTTP"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "net_att_9",
+            "type": "content",
+            "title": "VLAN Hopping",
+            "content": "# VLAN Hopping 🦘\n\nVLANs (Virtual LANs) segment traffic logically on switches (e.g., HR Dept vs Engineering).\n\n## Switch Spoofing\nIf a switch port is set to \"Dynamic Desirable\" (DTP auto-negotiation), an attacker can pretend to be a switch.\n- Attacker sends DTP frames.\n- Switch agrees to form a **Trunk Link**.\n- Trunk links carry traffic for *all* VLANs. Attacker sees everything.\n\n## Double Tagging\nTagging a packet with two VLAN IDs (Outer: Native VLAN, Inner: Victim VLAN). The first switch strips the outer tag, the packet forward to the second switch, which sees the inner tag and routes it to the protected VLAN."
+        },
+        {
+            "id": "net_att_10",
+            "type": "content",
+            "title": "MAC Flooding",
+            "content": "# MAC Flooding 🌊\n\nSwitches learn MAC addresses and store them in a CAM Table (Content Addressable Memory). The table has a fixed size.\n\n## The Attack\n1.  Attacker floods switch with thousands of packets with random source MACs.\n2.  CAM Table fills up.\n3.  Switch enters **Fail-Open Mode** (acts like a Hub).\n4.  It broadcasts *all* traffic to *all* ports.\n5.  Attacker sniffers the wire and intercepts packets intended for others."
+        },
+        {
+            "id": "net_att_11",
+            "type": "content",
+            "title": "SSL/TLS Stripping",
+            "content": "# SSL Stripping 🔓\n\nUsers often type `bank.com` (ignoring `https://`). The first request is via HTTP, then the server redirects to HTTPS.\n\n## The Attack\nTool: `sslstrip`\n1.  Victim requests `http://bank.com`.\n2.  Attacker intercepts, requests `https://bank.com` from server.\n3.  Server talks HTTPS to Attacker.\n4.  Attacker talks plain HTTP to Victim.\n\nResult: Victim sees the real site but on HTTP. Attacker sees all plain traffic."
+        },
+        {
+            "id": "net_att_12",
+            "type": "content",
+            "title": "HSTS (Defense)",
+            "content": "# HSTS 🛡️\n\n**HTTP Strict Transport Security (HSTS)** prevents SSL Stripping.\n\nThe server sends a header: `Strict-Transport-Security: max-age=31536000`\n\nThe Browser remembers: \"Never use HTTP for this site again.\" Even if the user types `http://`, the browser upgrades it *internally* before sending any packet."
+        },
+        {
+            "id": "net_att_13",
+            "type": "content",
+            "title": "Network Sniffing",
+            "content": "# Sniffing 👃\n\ncapturing data packets as they flow across a computer network.\n\n## Promiscuous Mode\nNormally, a Network Interface Card (NIC) drops packets not addressed to it. Promiscuous mode forces the NIC to pass *all* traffic to the CPU.\n\nTools: **Wireshark**, **tcpdump**.\n\nIf encryption (SSL/TLS) is used, sniffed data is unreadable garbage."
+        },
+        {
+            "id": "net_att_14",
+            "type": "content",
+            "title": "Simple Sniffer (Python)",
+            "content": "# Sniffer Logic 🐍\n\nUsing Python `socket` to capture raw packets (requires root/admin).\n\n```python\n# Conceptual example (Not runnable on Piston without root/network)\nimport socket\n\n# Create raw socket\n# socket.AF_PACKET is Linux specific for layer 2\n# sniffer = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))\n# ... loop and print(sniffer.recvfrom(65565))\n```\n\nIn Python, libraries like **Scapy** make this trivial:\n`sniff(filter=\"tcp port 80\", prn=packet_callback)`"
+        },
+        {
+            "id": "net_att_15",
+            "type": "content",
+            "title": "Pass the Hash (Network)",
+            "content": "# SMB Relay & PtH 📨\n\nOn Windows networks, if an attacker intercepts an authentication attempt (SMB), they can relay those credentials to another machine.\n\nIf the victim is an Admin on the target machine, the attacker gets a shell on the target machine.\n\nTools: `Responder`, `Impacket-ntlmrelayx`."
+        },
+        {
+            "id": "net_att_16",
+            "type": "content",
+            "title": "Mitigations",
+            "content": "# Defending the Network 🏰\n\n- **Port Security:** Limit MAC addresses per port to stop flooding/starvation.\n- **DAI (Dynamic ARP Inspection):** Rejects invalid ARP packets by checking DHCP table.\n- **DHCP Snooping:** Only allow DHCP offers from trusted ports (uplinks).\n- **Disable DTP:** Manually configure Trunk ports. Set user ports to `switchport mode access`.\n- **Encryption everywhere:** HTTPS, SSH, VPNs."
+        },
+        {
+            "id": "net_att_17",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Network Attacks Summary 🏁\n\nNetwork layer attacks compromise the path data travels.\n\n## Recap\n- **MitM** allows interception and injection.\n- **ARP/DNS Spoofing** misdirects traffic.\n- **DHCP Attacks** can deny service or redirect clients.\n- **VLAN Hopping** breaks segmentation.\n\nStrong layer 2 security features on switches are essential defenses."
+        }
+    ]
+}

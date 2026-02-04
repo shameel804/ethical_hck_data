@@ -1,0 +1,127 @@
+{
+    "id": "learn_threat_modeling",
+    "topicId": "threat_modeling",
+    "topicTitle": "Threat Modeling",
+    "description": "Learn to anticipate attacks using STRIDE, DREAD, Attack Trees, and Data Flow Diagrams to secure systems by design.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "tm_1",
+            "type": "content",
+            "title": "Introduction to Threat Modeling",
+            "content": "# Threat Modeling 🕵️\n\nThreat modeling is the process of identifying potential threats to a system and determining countermeasures.\n\n> \"Think like an attacker to defend like a pro.\"\n\n## Why Threat Model?\n- **Proactive Security:** Fix issues *before* code is written or deployed.\n- **Cost Effective:** Fixing a bug in design costs 100x less than in production.\n- **Better Awareness:** Helps the whole team understand risks.\n\n## When to Threat Model?\n- **Ideally:** During the design phase.\n- **Realistically:** Before major features, architecture changes, or sprints.\n\n## The 4 Key Questions\n1.  What are we building?\n2.  What can go wrong?\n3.  What are we going to do about it?\n4.  Did we do a good job?"
+        },
+        {
+            "id": "tm_2",
+            "type": "content",
+            "title": "Data Flow Diagrams (DFD)",
+            "content": "# Data Flow Diagrams (DFD) 🗺️\n\nTo know what can go wrong, you first need to know how the system works. DFDs visualize the flow of data.\n\n## DFD Elements\n1.  **External Entities:** Users, external APIs (Rectangles).\n2.  **Processes:** Code, functions, services (Circles/Ovals).\n3.  **Data Stores:** Databases, files, logs (Parallel lines).\n4.  **Data Flows:** Movement of data (Arrows).\n5.  **Trust Boundaries:** Line separating different trust levels (e.g., Internet vs Internal Network).\n\n> ⚠️ **Trust Boundaries:** The most critical part. Attacks usually happen where data crosses a trust boundary (e.g., User Input -> Web Server)."
+        },
+        {
+            "id": "tm_3",
+            "type": "content",
+            "title": "STRIDE Methodology",
+            "content": "# STRIDE Methodology 🦶\n\nDeveloped by Microsoft, **STRIDE** is a mnemonic for categorizing threats.\n\n| Letter | Threat | Violated Property | Definition |\n|--------|--------|-------------------|------------|\n| **S** | **Spoofing** | Authenticity | Pretending to be someone else. |\n| **T** | **Tampering** | Integrity | Modifying data or code. |\n| **R** | **Repudiation** | Non-repudiation | Denying an action took place. |\n| **I** | **Information Disclosure** | Confidentiality | Exposing data to unauthorized users. |\n| **D** | **Denial of Service** | Availability | Crashing or slowing down the system. |\n| **E** | **Elevation of Privilege** | Authorization | Gaining higher access rights than allowed. |"
+        },
+        {
+            "id": "tm_4",
+            "type": "content",
+            "title": "STRIDE in Action: Spoofing",
+            "content": "# S is for Spoofing 🎭\n\n**Goal:** Impersonating a user, device, or service.\n\n**Examples:**\n- Stealing a user's cookie to log in as them.\n- Sending an email from \"admin@company.com\" (Email Spoofing).\n- ARP Spoofing (Pretending to be the router).\n\n**Mitigations:**\n- Strong Authentication (MFA).\n- Digital Signatures (DKIM/SPF for email).\n- Secure session management.\n\n```python\n# Vulnerable to IP Spoofing (relying on IP for trust)\ndef check_admin_access(request):\n    if request.remote_ip == \"192.168.1.100\":\n        return True # DANGEROUS! IPs can be spoofed.\n    return False\n```"
+        },
+        {
+            "id": "tm_5",
+            "type": "content",
+            "title": "STRIDE in Action: Tampering",
+            "content": "# T is for Tampering 🔧\n\n**Goal:** Modifying data on disk, in memory, or in transit.\n\n**Examples:**\n- Changing a price parameter in a URL `?price=10` to `?price=1`.\n- Modifying a game save file to get infinite health.\n- Injecting malicious code into a webpage (XSS).\n\n**Mitigations:**\n- Integrity Checks (Hashing, HMAC).\n- Digital Signatures.\n- Write-protection (Permissions).\n- Transport Layer Security (HTTPS).\n\n<!-- FULL_CODE_START\nimport hmac\nimport hashlib\n\nprint(\"=== Tampering Mitigation: HMAC ===\\n\")\n\nsecret_key = b\"super-secret-key\"\nmessage = b\"Transfer $1000 to Alice\"\n\n# Generate HMAC (Hash-based Message Authentication Code)\n# This proves integrity AND authenticity (because it uses a key)\nsignature = hmac.new(secret_key, message, hashlib.sha256).hexdigest()\n\nprint(f\"Message: {message.decode()}\")\nprint(f\"HMAC Signature: {signature}\")\n\nprint(\"\\n--- Verification Scenario ---\")\n\n# Scenario 1: Unmodified message\nreceived_msg = b\"Transfer $1000 to Alice\"\nreceived_sig = signature # The signature received with the message\n\ncalculated_sig = hmac.new(secret_key, received_msg, hashlib.sha256).hexdigest()\n\nif hmac.compare_digest(received_sig, calculated_sig):\n    print(f\"✅ Verification Passed: Message is authentic and untampered.\")\nelse:\n    print(f\"❌ Verification Failed!\")\n\n# Scenario 2: Tampered message (Attacker changes amount)\ntampered_msg = b\"Transfer $9000 to Alice\"\nprint(f\"\\n--- Attacker modifies message to: '{tampered_msg.decode()}' ---\")\n\ncalculated_sig_tampered = hmac.new(secret_key, tampered_msg, hashlib.sha256).hexdigest()\n\nif hmac.compare_digest(received_sig, calculated_sig_tampered):\n    print(f\"✅ Verification Passed.\")\nelse:\n    print(f\"❌ Verification Failed! Signature does not match tampered message.\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "tm_6",
+            "type": "content",
+            "title": "STRIDE in Action: Repudiation",
+            "content": "# R is for Repudiation 🤷‍♂️\n\n**Goal:** Denying an action occurred (or claiming it did not occur).\n\n**Examples:**\n- \"I didn't send that email.\"\n- \"I didn't delete that database.\"\n- A customer claiming they didn't order the item.\n\n**Mitigations:**\n- **Audit Logging:** Record who did what, when.\n- **Digital Signatures:** Provides non-repudiation (proof of origin).\n- **Blockchain:** Immutable ledgers."
+        },
+        {
+            "id": "tm_7",
+            "type": "content",
+            "title": "STRIDE in Action: Information Disclosure",
+            "content": "# I is for Information Disclosure 📢\n\n**Goal:** Exposing information to someone not authorized to see it.\n\n**Examples:**\n- Data leaks (PII, Credit Cards).\n- Error messages revealing server details (Stack traces).\n- Hardcoded API keys in GitHub repos.\n\n**Mitigations:**\n- Encryption (At rest and in transit).\n- Access Control Lists (ACLs).\n- Data Masking/Redaction.\n- Generic error messages for users.\n\n```python\ntry:\n    connect_db()\nexcept Exception as e:\n    # BAD: print(e)  <- Reveals internal details\n    print(\"An error occurred. Please contact support.\") # GOOD\n    log_internal_error(e) # Securely log the details\n```"
+        },
+        {
+            "id": "tm_8",
+            "type": "content",
+            "title": "STRIDE in Action: Denial of Service",
+            "content": "# D is for Denial of Service 🛑\n\n**Goal:** Making the system unavailable to legitimate users.\n\n**Examples:**\n- Flooding a server with traffic (DDoS).\n- Deleting configuration files.\n- Engaging a resource-heavy process (e.g., zip bomb, endless loop).\n\n**Mitigations:**\n- Rate Limiting.\n- Load Balancing.\n- Input Validation (limit upload size).\n- Redundancy/Failover."
+        },
+        {
+            "id": "tm_9",
+            "type": "content",
+            "title": "STRIDE in Action: Elevation of Privilege",
+            "content": "# E is for Elevation of Privilege 🧗\n\n**Goal:** Gaining capabilities that user shouldn't have.\n\n**Examples:**\n- Regular user becoming Admin.\n- Jailbreaking a phone.\n- Exploiting a buffer overflow to get a root shell.\n\n**Mitigations:**\n- Principle of Least Privilege.\n- Input Validation.\n- Patch Management.\n- Sandboxing."
+        },
+        {
+            "id": "tm_10",
+            "type": "quiz",
+            "title": "STRIDE Quiz",
+            "content": "Check your understanding of STRIDE categories.",
+            "quizQuestion": "An attacker modifies the URL ID parameter to access another user's account details. Which two STRIDE categories does this involve?",
+            "quizOptions": [
+                "Spoofing and Denial of Service",
+                "Tampering and Information Disclosure",
+                "Repudiation and Elevation of Privilege",
+                "Spoofing and Repudiation"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "tm_11",
+            "type": "content",
+            "title": "DREAD Scoring",
+            "content": "# DREAD Scoring 📊\n\nOnce you find threats with STRIDE, you need to prioritize them. DREAD is a scoring system (1-10) for risk.\n\n1.  **D**amage Potential: How bad is the hit? (1=Annoyance, 10=Total System Destruction)\n2.  **R**eproducibility: How easy is it to reproduce? (1=Impossible, 10=Every time)\n3.  **E**xploitability: How much work is it to launch? (1=Advanced PhD, 10=Script Kiddie)\n4.  **A**ffected Users: How many people impacted? (1=Single user, 10=All users)\n5.  **D**iscoverability: How easy is it to find? (1=Hidden, 10=Obvious)\n\n**Score = (D + R + E + A + D) / 5**\n\n> ⚠️ **Note:** Microsoft has largely replaced DREAD with \"Bug Bar\" ratings (Critical, Important, Moderate, Low) because D (Discoverability) rewards \"Security by Obscurity\"."
+        },
+        {
+            "id": "tm_12",
+            "type": "content",
+            "title": "Attack Trees",
+            "content": "# Attack Trees 🌳\n\nAn attack tree conceptualizes attacks in a tree structure. The **Root** is the attacker's goal.\n\n**Root:** \"Read User Passwords\"\n\n- **Branch 1:** Hack Database\n    - **Leaf:** SQL Injection\n    - **Leaf:** Guess Admin Password\n- **Branch 2:** Sniff Network\n    - **Leaf:** ARP Spoofing\n    - **Leaf:** Rogue WiFi AP\n- **Branch 3:** Social Engineering\n    - **Leaf:** Phishing Admin\n\nAttack trees help you visualize multiple paths to the same goal and decide where to place defenses (e.g., Encrypting the DB mitigates Branch 1)."
+        },
+        {
+            "id": "tm_13",
+            "type": "content",
+            "title": "Calculating Risk",
+            "content": "# Calculating Risk in Code 🧮\n\nLet's build a simple tool to calculate DREAD scores.\n\n```python\ndef calculate_dread(damage, reproducibility, exploitability, affected, discoverability):\n    return (damage + reproducibility + exploitability + affected + discoverability) / 5\n```\n\n<!-- FULL_CODE_START\nprint(\"=== DREAD Risk Calculator ===\\n\")\n\ndef calculate_dread(damage, reproducibility, exploitability, affected, discoverability):\n    total = damage + reproducibility + exploitability + affected + discoverability\n    avg = total / 5\n    return avg\n\n# Define some threats\nthreats = [\n    {\n        \"name\": \"SQL Injection in Login\",\n        \"scores\": [9, 10, 8, 10, 9] # D, R, E, A, D\n    },\n    {\n        \"name\": \"Reflected XSS on Profile\",\n        \"scores\": [5, 8, 7, 3, 8]\n    },\n    {\n        \"name\": \"Server Info Leak in Headers\",\n        \"scores\": [1, 10, 10, 10, 10]\n    }\n]\n\nprint(f\"{'Threat Name':<30} | {'Score':<5} | {'Rating'}\")\nprint(\"-\"*60)\n\nfor t in threats:\n    d, r, e, a, disc = t[\"scores\"]\n    score = calculate_dread(d, r, e, a, disc)\n    \n    rating = \"Low\"\n    if score >= 8: rating = \"Critical\"\n    elif score >= 6: rating = \"High\"\n    elif score >= 4: rating = \"Medium\"\n    \n    print(f\"{t['name']:<30} | {score:<5.1f} | {rating}\")\n\nprint(\"\\n\" + \"=\"*40)\nprint(\"Higher score = Higher priority to fix!\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "tm_14",
+            "type": "content",
+            "title": "Threat Modeling Process",
+            "content": "# The Threat Modeling Process 🔄\n\n1.  **Diagram:** Draw the DFD. Understand the system.\n2.  **Identify:** Use STRIDE to find threats at every element.\n3.  **Mitigate:** Determine how to fix or manage the threats.\n4.  **Validate:** Did we find everything? Did the mitigations work?\n\n## Example: Web Login Form\n1.  **Data Flow:** Browser -> Internet -> Web Server -> Database.\n2.  **Threats (STRIDE):**\n    - **A:** Spoofing (Attacker guesses password).\n    - **B:** Repudiation (User claims they didn't login).\n    - **C:** Info Disclosure (Passwords sent over HTTP).\n3.  **Mitigations:**\n    - **A:** Enforce strong passwords, lockout policy.\n    - **B:** Log login IP and time.\n    - **C:** Use HTTPS (TLS).\n4.  **Validate:** Penetration test the login form."
+        },
+        {
+            "id": "tm_15",
+            "type": "content",
+            "title": "Tools for Threat Modeling",
+            "content": "# Tools for Threat Modeling 🛠️\n\nWhile whiteboards are great, tools help document and track threats.\n\n- **Microsoft Threat Modeling Tool:** Free, uses DFDs, acts like Visio with a \"brain\" that suggests threats.\n- **OWASP Threat Dragon:** Open source, web-based/desktop.\n- **Threagile:** Agile threat modeling (Threat Modeling as Code).\n- **IriusRisk:** Enterprise Automated Threat Modeling.\n\n> 💡 **Tip:** Start simple. A whiteboard and STRIDE is better than a complex tool you never use."
+        },
+        {
+            "id": "tm_16",
+            "type": "quiz",
+            "title": "Threat Modeling Quiz",
+            "content": "Final check on Threat Modeling concepts.",
+            "quizQuestion": "In an Attack Tree, what does the root node represent?",
+            "quizOptions": [
+                "The vulnerability being exploited",
+                "The attacker's ultimate goal",
+                "The first step of the attack",
+                "The defensive countermeasure"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "tm_17",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Module Summary 🎓\n\nYou have mastered Threat Modeling! You can now predict attacks before they happen.\n\n## Recap\n- **Threat Modeling:** Identifying and mitigating risks during design.\n- **DFD:** Visualizing data flow to find trust boundaries.\n- **STRIDE:** The mnomic used to find threats (Spoofing, Tampering, Repudiation, Info Disclosure, DoS, Elevation).\n- **DREAD:** A method for scoring and prioritizing risks.\n- **Attack Trees:** Mapping out the paths an attacker takes to a goal.\n\n## What's Next?\nNow that you know how to find threats, let's look at the **Security Controls Framework** to see the standard ways we defend against them.\n\nStay one step ahead of the attackers! 🕵️‍♂️"
+        }
+    ]
+}

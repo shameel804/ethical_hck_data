@@ -1,0 +1,77 @@
+{
+    "id": "learn_active_recon",
+    "topicId": "active_recon",
+    "topicTitle": "Active Reconnaissance",
+    "description": "Engage directly with the target. Learn Port Scanning, Banner Grabbing, and Enumeration techniques.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "ar_1",
+            "type": "content",
+            "title": "Introduction to Active Recon",
+            "content": "# Active Reconnaissance 📡\n\n**Active Recon** involves sending packets to the target system and analyzing the response.\n\n> ⚠️ **Warning:** This will log your IP address on the target's firewall. Without permission, this is illegal.\n\n## The Goal\nTo map the attack surface: What doors are open? What services are running? what OS is it?"
+        },
+        {
+            "id": "ar_2",
+            "type": "content",
+            "title": "Port Scanning",
+            "content": "# Port Scanning 🚪\n\nComputers communicate via ports (0-65535). Scanning finds which ports are listening.\n\n## Port States\n- **Open:** Application is listening. (Attack surface!)\n- **Closed:** Application received req but said \"Go away\" (RST).\n- **Filtered:** Firewall dropped the packet. No response.\n\n## Common Ports\n- **21:** FTP\n- **22:** SSH\n- **80/443:** HTTP/HTTPS\n- **3306:** MySQL\n- **3389:** RDP"
+        },
+        {
+            "id": "ar_3",
+            "type": "content",
+            "title": "Port Scanning Demo",
+            "content": "# Coding: Simple Port Scanner 🕵️\n\nA basic scanner using Python sockets.\n\n```python\nimport socket\n\nfor port in [21, 22, 80]:\n    s = socket.socket()\n    s.settimeout(0.5)\n    if s.connect_ex(('google.com', port)) == 0:\n        print(f\"Port {port}: OPEN\")\n    s.close()\n```\n\n<!-- FULL_CODE_START\nimport socket\nimport time\n\nprint(\"=== Python Port Scanner ===\\n\")\n\ntarget = \"scanme.nmap.org\"  # Safe target for testing\nports_to_scan = [21, 22, 80, 443, 8080]\n\nprint(f\"Target: {target}\")\nprint(f\"Scanning ports: {ports_to_scan}...\")\nprint(\"-\"*30)\n\nfor port in ports_to_scan:\n    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    sock.settimeout(1) # 1 second timeout\n    \n    result = sock.connect_ex((target, port))\n    \n    status = \"CLOSED/FILTERED\"\n    if result == 0:\n        status = \"OPEN\"\n    \n    print(f\"Port {port:<5}: {status}\")\n    sock.close()\n\nprint(\"-\"*30)\nprint(\"Scan Complete.\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "ar_4",
+            "type": "content",
+            "title": "Service Fingerprinting",
+            "content": "# Service Fingerprinting 🖐️\n\nKnowing a port is open isn't enough. WHAT is running on it?\n\n## Version Detection\n- Is Port 80 running **Apache 2.4.49** or **IIS 10.0**?\n- Knowing the version lets you search for CVEs (e.g., Apache 2.4.49 had a path traversal bug).\n\n## OS Fingerprinting\n- Identifying the Operating System (Linux vs Windows).\n- **TCP/IP Stack Fingerprinting:** Different OSs handle packets slightly differently (TTL values, Window size). Nmap analyzes these quirks."
+        },
+        {
+            "id": "ar_5",
+            "type": "content",
+            "title": "Banner Grabbing",
+            "content": "# Banner Grabbing 🚩\n\nThe simplest way to fingerprint. Just ask the service \"Who are you?\".\n\n## Example (Telnet/Netcat)\nConnecting to a server might yield:\n```\n220 (vsFTPd 2.3.4)\n```\nBoom! We know it's **vsFTPd 2.3.4** (which has a famous backdoor).\n\n## HTTP Headers\n`Server: Apache/2.4.1 (Unix)`\n`X-Powered-By: PHP/5.3`"
+        },
+        {
+            "id": "ar_6",
+            "type": "content",
+            "title": "Banner Grabbing Demo",
+            "content": "# Coding: Banner Grabber 🎣\n\n```python\nimport socket\n\ndef grab_banner(ip, port):\n    s = socket.socket()\n    s.connect((ip, port))\n    print(s.recv(1024))\n\ngrab_banner('192.168.1.1', 22)\n```\n\n<!-- FULL_CODE_START\nimport socket\n\nprint(\"=== Banner Grabber ===\\n\")\n\ndef grab(target, port):\n    try:\n        s = socket.socket()\n        s.settimeout(2)\n        s.connect((target, port))\n        \n        # Some services send a banner immediately (SSH, SMTP)\n        # Others require us to send data first (HTTP)\n        \n        if port == 80:\n            s.send(b\"HEAD / HTTP/1.1\\r\\nHost: \" + target.encode() + b\"\\r\\n\\r\\n\")\n            \n        banner = s.recv(1024).decode().strip()\n        print(f\"[+] Port {port} Banner:\\n{banner}\")\n        s.close()\n    except Exception as e:\n        print(f\"[-] Port {port}: Failed to grab banner. ({e})\")\n\ntarget = \"scanme.nmap.org\"\n# Testing standard HTTP port\ngrab(target, 80)\n\nprint(\"\\n(Note: SSH usually prints a banner too if open)\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "ar_7",
+            "type": "content",
+            "title": "Network Mapping",
+            "content": "# Network Mapping 🗺️\n\nDrawing the map of the network topology.\n\n## Traceroute\nShows the path (hops) packets take. Reveals routers and firewalls between you and the target.\n\n## Ping Sweep\nPinging every IP in a subnet (`192.168.1.1-254`) to see who is alive. \n- **Problem:** Many firewalls block ICMP (Ping).\n- **Solution:** ARP Scan (if on same LAN) or TSP Ping."
+        },
+        {
+            "id": "ar_8",
+            "type": "content",
+            "title": "DNS Zone Transfers",
+            "content": "# DNS Zone Transfers (AXFR) 📂\n\nIf misconfigured, a DNS server will send **all** its records for a domain to anyone who asks.\n\n1.  **Attacker:** \"Hey DNS server, I am a backup server. Send me a copy of the whole zone.\"\n2.  **Server:** \"Sure! Here is `admin.site.com`, `dev.site.com`, `hr.site.com`...\"\n\n> 💣 **Impact:** Instantly finding all internal hostnames and IPs.\n> 🛡️ **Fix:** Configure DNS to only allow transfers to trusted IPs."
+        },
+        {
+            "id": "ar_9",
+            "type": "quiz",
+            "title": "Active Recon Quiz",
+            "content": "Test your active recon knowledge.",
+            "quizQuestion": "In a port scan, what does the status 'FILTERED' usually mean?",
+            "quizOptions": [
+                "The port is closed and no service is running",
+                "The application accepted the connection",
+                "A firewall dropped the packet",
+                "The service is sending a banner"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "ar_10",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Module Summary 🎓\n\nYou've started knocking on doors.\n\n## Recap\n- **Port States:** Open, Closed, Filtered.\n- **Fingerprinting:** Identifing OS and App versions.\n- **Banner Grabbing:** Reading the welcome message.\n- **Zone Transfers:** The holy grail of DNS recon.\n\n## What's Next?\nNow we dig deeper with **OSINT (Open Source Intelligence)** to find hidden data in public places."
+        }
+    ]
+}

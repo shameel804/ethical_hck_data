@@ -1,0 +1,77 @@
+{
+    "id": "learn_osint",
+    "topicId": "osint",
+    "topicTitle": "OSINT Techniques",
+    "description": "Master Open Source Intelligence techniques to gather emails, analyze metadata, and build target personas.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "ot_1",
+            "type": "content",
+            "title": "Introduction to OSINT",
+            "content": "# OSINT (Open Source Intelligence) 🌐\n\n**OSINT** involves collecting and analyzing information from publicly available sources.\n\n> \"The internet never forgets.\"\n\n## Sources\n- **Social Media:** Facebook, LinkedIn, Twitter.\n- **Technical:** GitHub, DNS records, Certificates.\n- **Files:** PDFs, DOCX, Images exposed on websites.\n- **Breach Data:** Leaked databases (HaveIBeenPwned)."
+        },
+        {
+            "id": "ot_2",
+            "type": "content",
+            "title": "Email Harvesting",
+            "content": "# Email Harvesting 📧\n\nFinding email addresses is crucial for Phishing and Credential Stuffing.\n\n## Techniques\n1.  **Search Engine Patterns:** `site:target.com \"@target.com\"`.\n2.  **Naming Convention Guessing:** If you find `john.doe@target.com` on LinkedIn, you know the format is `first.last`.\n3.  **PGP Servers:** People upload public keys tied to their email.\n4.  **Tools:** `theHarvester`, `Hunter.io`."
+        },
+        {
+            "id": "ot_3",
+            "type": "content",
+            "title": "Metadata Extraction",
+            "content": "# Metadata Extraction 📎\n\n**Metadata** is \"data about data\". Files often contain hidden details.\n\n## What's hidden in a PDF/Word Doc?\n- **Author Name:** \"Created by John Smith\".\n- **Software Version:** \"Microsoft Word 2013\" (Vulnerable?).\n- **Creation Date:** When was this project started?\n- **Paths:** `C:\\Users\\admin\\Desktop\\Budget_Final.pdf` (Reveals username `admin`).\n\n## EXIF Data (Images)\n- **GPS Coordinates:** Where was the photo taken? (Home address?).\n- **Camera Make/Model:** \"iPhone 13 Pro\"."
+        },
+        {
+            "id": "ot_4",
+            "type": "content",
+            "title": "Metadata Demo",
+            "content": "# Coding: Extracting EXIF 📸\n\n```python\n# Using Pillow (PIL)\nfrom PIL import Image\nfrom PIL.ExifTags import TAGS\n\nimg = Image.open('photo.jpg')\nexif = img.getexif()\n\nfor tag_id in exif:\n    tag = TAGS.get(tag_id, tag_id)\n    data = exif.get(tag_id)\n    print(f\"{tag}: {data}\")\n```\n\n<!-- FULL_CODE_START\n# Simulating EXIF data extraction\nprint(\"=== Metadata Extraction Demo ===\\n\")\n\n# Simulated raw EXIF data from an image\nmock_exif = {\n    \"Make\": \"Apple\",\n    \"Model\": \"iPhone 12\",\n    \"Software\": \"15.1\",\n    \"DateTimeOriginal\": \"2023:11:05 14:30:22\",\n    \"GPSInfo\": { # Decimal degrees\n        \"Lat\": 37.7749,\n        \"Lon\": -122.4194\n    }\n}\n\ndef analyze_metadata(data):\n    print(\"--- Image Analysis Report ---\")\n    print(f\"Device: {data['Make']} {data['Model']}\")\n    print(f\"OS/Software: {data['Software']}\")\n    print(f\"Date Taken: {data['DateTimeOriginal']}\")\n    \n    if \"GPSInfo\" in data:\n        lat = data['GPSInfo']['Lat']\n        lon = data['GPSInfo']['Lon']\n        print(f\"Location: {lat}, {lon}\")\n        print(f\"Google Maps: https://maps.google.com/?q={lat},{lon}\")\n    \n    print(\"\\n[!] RISK: Publishing this photo reveals your exact location!\")\n\nanalyze_metadata(mock_exif)\nFULL_CODE_END -->"
+        },
+        {
+            "id": "ot_5",
+            "type": "content",
+            "title": "Website Archiving",
+            "content": "# Website Archiving 🕰️\n\nSometimes the best intel is in the past.\n\n## Wayback Machine (Internet Archive)\n- View deleted pages.\n- Find old job postings (revealing tech stack).\n- Find unintentional data leaks that were quickly removed.\n\n## Cached Pages\n- Google Cache: `cache:target.com`.\n- Useful if the site is down or blocking your requests."
+        },
+        {
+            "id": "ot_6",
+            "type": "content",
+            "title": "Image Analysis (IMINT)",
+            "content": "# Image Analysis (IMINT) 🌄\n\nGathering info from visual data.\n\n## Reverse Image Search\n- **Google Images / TinEye:** \"Where else does this profile picture appear?\"\n- Used to find sockpuppets (fake accounts) or verify identity.\n\n## Geolocation\n- Analyzing landmarks, reflections, weather patterns, and shadows to determine *exactly* where a photo was taken.\n- Famous for tracking military movements or finding influencers."
+        },
+        {
+            "id": "ot_7",
+            "type": "content",
+            "title": "Persona Development",
+            "content": "# Persona Development 🎭\n\nCreating a fake identity (Sockpuppet) to interact with targets without revealing yourself.\n\n## Steps to create a Sockpuppet\n1.  **Fake Name/Photo:** Use AI generated faces (ThisPersonDoesNotExist.com) to avoid reverse image search detection.\n2.  **Backstory:** Job, Education, Interests.\n3.  **Digital Footprint:** Create accounts on multiple platforms (reddit, twitter, linkedin) to age the account.\n4.  **Behavior:** Post normal content. Don't just lurk.\n\n> ⚠️ **OpSec:** Never login to a sockpuppet from your personal IP. Use VPN/Tor."
+        },
+        {
+            "id": "ot_8",
+            "type": "content",
+            "title": "Data Breaches",
+            "content": "# Breach Data 🔓\n\nHackers often dump databases online. This data is gold for OSINT.\n\n## HaveIBeenPwned\nChecks if an email was in a breach.\n\n## DeHashed / IntelX\nSearchable databases of leaked credentials.\n- If you find `admin@target.com` used the password `Summer2019!`, chances are they updated it to `Summer2023!`.\n\n## Pastebin\nDevelopers often accidentally paste code with API keys or Configs to Pastebin."
+        },
+        {
+            "id": "ot_9",
+            "type": "quiz",
+            "title": "OSINT Quiz",
+            "content": "Verify your OSINT skills.",
+            "quizQuestion": "Which tool would you use to find the geographical location where a photo was taken?",
+            "quizOptions": [
+                "Wayback Machine",
+                "EXIF Data Extractor",
+                "Wireshark",
+                "SQLMap"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "ot_10",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Module Summary 🎓\n\nYou've learned to dig deep using public data.\n\n## Recap\n- **Email Harvesting:** The start of phishing campaigns.\n- **Metadata:** The hidden data files carry.\n- **Archives:** Time travel for websites.\n- **Sockpuppets:** Fake personas for safe spying.\n\n## What's Next?\nManual recon is slow. In the next module, **Reconnaissance Tools**, we will look at the automated heavy lifters like Nmap and Maltego."
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+{
+    "id": "learn_advanced_persistent_threats",
+    "topicId": "advanced_persistent_threats",
+    "topicTitle": "Advanced Persistent Threats (APTs)",
+    "description": "Study the elite hackers: Nation-states and organized groups who play the long game.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "apt_1",
+            "type": "content",
+            "title": "Introduction to APTs",
+            "content": "# Advanced Persistent Threats 🥷\n\n**APT** refers to an attacker that possesses sophisticated levels of expertise and significant resources, allowing them to create opportunities to achieve their objectives using multiple attack vectors.\n\n## The Definition\n- **Advanced:** Custom malware, Zero-days, sophisticated social engineering.\n- **Persistent:** Maximize dwell time (time inside network). They don't smash and grab; they stay.\n- **Threat:** Intentional, human-driven, funded (often by governments).\n\n> 🎯 **Goal:** Espionage, intellectual property theft, or destruction."
+        },
+        {
+            "id": "apt_2",
+            "type": "content",
+            "title": "The Cyber Kill Chain",
+            "content": "# The Cyber Kill Chain ⛓️\n\nDeveloped by Lockheed Martin, this framework describes the APT lifecycle.\n\n1.  **Reconnaissance:** Harvesting email addresses, conference information, etc.\n2.  **Weaponization:** Coupling an exploit with a backdoor into a deliverable payload.\n3.  **Delivery:** Delivering the weaponized bundle (Email, Web, USB).\n4.  **Exploitation:** Exploiting a vulnerability to execute code.\n5.  **Installation:** Installing malware on the asset (Persistence).\n6.  **Command & Control (C2):** Communication channel to manage target.\n7.  **Actions on Objectives:** \"Hands on keyboard\" (Data exfiltration, Destruction)."
+        },
+        {
+            "id": "apt_3",
+            "type": "content",
+            "title": "Nation-State Actors",
+            "content": "# Nation-State Actors 🌍\n\nCountries use cyber capabilities for geopolitical goals.\n\n## Major Players\n- **China (PLA/MSS):** Focus on Economic Espionage. Stealing IP (Plans for jets, chips, pharma).\n- **Russia (GRU/SVR):** Focus on Disruption and Political Espionage (Ukraine power grid, US Elections).\n- **North Korea (RGB):** Focus on Financial Theft to fund the regime (Crypto heists, Ransomware).\n- **Iran (IRGC):** Focus on Retaliation and critical infrastructure (Saudi Aramco wiper attack).\n- **USA/Israel:** Focus on Counter-terror and Sabotage (Stuxnet)."
+        },
+        {
+            "id": "apt_4",
+            "type": "content",
+            "title": "Case Study: Stuxnet",
+            "content": "# Case Study: Stuxnet ☢️\n\n**The world's first Digital Weapon.** (2010)\n\n## The Target\nIranian Nuclear Centrifuges at Natanz.\n\n## The Method\n1.  **Air Gap:** The facility was offline. Delivery via **infected USB drives** dropped in employee parking lots.\n2.  **Zero Days:** It used **4 Zero-day exploits** (unprecedented).\n3.  **Payload:** It targeted specific Siemens PLCs. It spun the centrifuges too fast to break them, while reporting \"Normal Speed\" to the monitoring screens.\n\n**Result:** Set back Iran's nuclear program by years."
+        },
+        {
+            "id": "apt_5",
+            "type": "content",
+            "title": "Cyber Espionage",
+            "content": "# Cyber Espionage 🕵️\n\nDigital spying is cheaper and safer than physical spying.\n\n## Targets\n- **Government:** Classified documents, diplomatic cables.\n- **Corporate:** Trade secrets, R&D, customer lists.\n- **Dissidents:** Tracking journalists and activists.\n\n## Techniques\n- **Spear Phishing:** Highly customized emails.\n- **Watering Hole:** Infecting industry-specific websites.\n- **Supply Chain:** Compromising software updates."
+        },
+        {
+            "id": "apt_6",
+            "type": "content",
+            "title": "Long-term Compromise (Persistence)",
+            "content": "# Persistence ⚓\n\nOnce they are in, they want to stay in, even if the computer restarts.\n\n## Techniques\n1.  **Registry Keys:** `HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run`. (Malware runs on boot).\n2.  **Scheduled Tasks:** Windows Task Scheduler running a script every hour.\n3.  **Services:** Creating a malicious Windows Service.\n4.  **Web Shells:** A backdoor script left on a web server (`<?php system($_GET['cmd']); ?>`).\n5.  **Account Creation:** Creating a hidden Admin account.\n\n> 🔍 **Hunting:** Look for \"Autoruns\" (Sysinternals tool)."
+        },
+        {
+            "id": "apt_7",
+            "type": "content",
+            "title": "Lateral Movement",
+            "content": "# Lateral Movement 🦀\n\nMoving sideways from the initial \"Patient Zero\" to the \"Crown Jewels\".\n\n## The Process\n1.  **Initial Compromise:** Phishing -> HR Employee laptop.\n2.  **Recon:** Dump memory (Mimikatz) to find credentials.\n3.  **Move:** Use credentials to SSH/RDP to the File Server.\n4.  **Escalate:** Find Admin credentials on File Server.\n5.  **Dominate:** Access the Domain Controller.\n\n## Tools\n- **PsExec:** Run commands on remote windows machines.\n- **WMI:** Windows Management Instrumentation.\n- **Pass-the-Hash:** Authenticating without cracking the password hash."
+        },
+        {
+            "id": "apt_8",
+            "type": "content",
+            "title": "Lateral Movement Demo",
+            "content": "# Simulating Lateral Movement 📡\n\nHow an attacker moves using Pass-the-Hash (Conceptually).\n\n```python\n# Psuedo-code for Pass-the-Hash\ndef authenticate(target_ip, username, password_hash):\n    # Normal auth requires password\n    # NTLM auth can accept the HASH directly\n    session = smb.login(target_ip, username, hash=password_hash)\n    return session\n\nhash = \"aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0\"\nsession = authenticate(\"192.168.1.5\", \"Administrator\", hash)\nsession.execute(\"whoami\") # Output: nt authority\\system\n```\n\n<!-- FULL_CODE_START\nprint(\"=== Lateral Movement Simulation ===\\n\")\n\nnetwork = {\n    \"PC-HR\": {\"user\": \"alice\", \"role\": \"user\", \"connections\": [\"FileServer\"]},\n    \"PC-IT\": {\"user\": \"bob\", \"role\": \"admin\", \"connections\": [\"FileServer\", \"DC\"]},\n    \"FileServer\": {\"contains\": \"admin_creds\", \"connections\": [\"DC\"]},\n    \"DC\": {\"goal\": \"Crown Jewels\"}\n}\n\ncurrent_pos = \"PC-HR\"\npermissions = \"user\"\n\nprint(f\"[1] Initial Compromise: Phished {current_pos}\")\n\n# Recon\nprint(f\"[2] Scanned connections: {network[current_pos]['connections']}\")\n\n# Move to FileServer\ncurrent_pos = \"FileServer\"\nprint(f\"[3] Lateral Move -> {current_pos} (Using Alice's creds)\")\n\n# Escalate\nif \"contains\" in network[current_pos] and network[current_pos]['contains'] == \"admin_creds\":\n    permissions = \"admin\"\n    print(f\"[4] Found stored Admin credentials! Privileges escalated to: {permissions}\")\n\n# Move to DC\nif \"DC\" in network[current_pos]['connections']:\n    current_pos = \"DC\"\n    print(f\"[5] Lateral Move -> {current_pos} (Using Admin creds)\")\n    print(\"SUCCESS: Domain Controller Compromised!\")\nelse:\n    print(\"Stuck.\")\n\nprint(\"\\n\" + \"=\"*50)\nprint(\"Defenders use 'Network Segmentation' to stop this flow.\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "apt_9",
+            "type": "content",
+            "title": "Living off the Land (LotL)",
+            "content": "# Living off the Land (LotL) 🌿\n\nAPTs avoid dropping custom malware files because Antivirus catches them. Instead, they use tools already installed.\n\n## Tools they abuse\n- **PowerShell:** \"Fileless\" malware runs entirely in memory.\n- **CertUtil:** Built-in tool to manage certificates, can be used to download files.\n- **WMI:** Use Windows Management to interact with system.\n- **Bash/Python:** (On Linux/Mac).\n\n> 🛡️ **Defense:** Monitor command line logs (EDR), disable unnecessary tools (AppLocker)."
+        },
+        {
+            "id": "apt_10",
+            "type": "quiz",
+            "title": "APT Quiz",
+            "content": "Test your specific APT knowledge.",
+            "quizQuestion": "In the Cyber Kill Chain, what is the step where the attacker installs a backdoor to maintain access?",
+            "quizOptions": [
+                "Weaponization",
+                "Command & Control",
+                "Installation",
+                "Actions on Objectives"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "apt_11",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Module Summary 🎓\n\nYou have studied the apex predators of the cyber world.\n\n## Recap\n- **APTs:** Advanced, Persistent, Threat. Usually Nation-States.\n- **Kill Chain:** The 7 steps of an attack (Recon to Action).\n- **Stuxnet:** The dawn of cyber warfare.\n- **Lateral Movement:** The art of moving from one machine to the whole network.\n- **Persistence:** Ensuring access remains after a reboot.\n\n## Course Completion!\nThis concludes the **Threat Landscape & Attack Vectors** course! You know the Enemy.\n\n## Next Course\nReady to learn how *you* can act like an attacker? The next course is **Reconnaissance & Information Gathering**."
+        }
+    ]
+}

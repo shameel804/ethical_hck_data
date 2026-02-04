@@ -1,0 +1,95 @@
+{
+    "id": "wireless_defense",
+    "topicId": "wifi_defense_strat",
+    "topicTitle": "Wireless Defense Strategies",
+    "description": "Master the defensive side of wireless security, including WIDS, rogue AP detection, and hardening.",
+    "baseKP": 150,
+    "slides": [
+        {
+            "id": "wdef_1",
+            "type": "content",
+            "title": "Wireless Defense Overview",
+            "content": "# Wireless Defense 🛡️\n\nSecuring the invisible perimeter.\n\n## Key Components\n- **WIDS/WIPS:** Monitoring the air.\n- **Rogue AP Detection:** Finding Evil Twins.\n- **Hardening:** Strong config.\n- **802.1X (Enterprise):** Individual credentials.\n- **VPN:** The ultimate fallback."
+        },
+        {
+            "id": "wdef_2",
+            "type": "content",
+            "title": "WPA2/3 Enterprise (802.1X)",
+            "content": "# Enterprise Security 🏢\n\nHome WiFi (WPA-Personal) uses one password for everyone. If one person leaves, you must change it for everyone.\n\n**WPA-Enterprise (802.1X):**\n- Uses a RADIUS server.\n- Every user has their *own* username/password.\n- Encryption keys are unique per session.\n- If Bob leaves, we just disable Bob's account.\n\nThis also prevents Rainbow Table/Dictionary attacks significantly."
+        },
+        {
+            "id": "wdef_3",
+            "type": "content",
+            "title": "Wireless IDS (WIDS)",
+            "content": "# WIDS 📡\n\n**Wireless Intrusion Detection System.**\nSensors placed around the building listening to radio traffic.\n\n## Detections\n- **Deauth Floods:** High volume of management frames.\n- **Signal Strength Anomalies:** A known client suddenly appearing on the other side of the building.\n- **Unknown MACs:** New devices probing the network.\n- **Spoofing:** A MAC address normally associated with a specific vendor (Apple) behaving like an Access Point."
+        },
+        {
+            "id": "wdef_4",
+            "type": "content",
+            "title": "Rogue AP Detection",
+            "content": "# Finding Rogues 🕵️\n\nIdentifying unauthorized Access Points (Evil Twins or Employee shadowing).\n\n## Methods\n1.  **MAC Correlation:** WIDS sees an AP broadcasting \"Corp-WiFi\" but with a MAC not in the authorized list. -> **ALERT!**\n2.  **Wired Side Analysis:** Scanning the LAN for devices that look like router interfaces (ARP scanning).\n3.  **Triangulation:** Using multiple sensors to physically locate the Rogue AP on a floor plan."
+        },
+        {
+            "id": "wdef_5",
+            "type": "content",
+            "title": "Signal Containment",
+            "content": "# Signal Geofencing 🗺️\n\nAdjusting the Tx (Transmit) Power and Antenna placement so WiFi is strong *inside* the building but weak *outside* (Parking lot).\n\nPaint / Windows can be treated with signal-blocking materials to create a \"Faraday Cage\" effect for sensitive rooms (SCIFs)."
+        },
+        {
+            "id": "wdef_6",
+            "type": "content",
+            "title": "Client Isolation",
+            "content": "# Client Isolation 🏝️\n\n Prevents wireless clients from talking to each other directly.\n\nClient A can talk to Gateway.\nClient B can talk to Gateway.\nClient A CANNOT ping Client B.\n\nThis stops direct attacks (ARP Spoofing, SMB exploits) between users on public/guest networks."
+        },
+        {
+            "id": "wdef_7",
+            "type": "content",
+            "title": "Management Frame Protection (MFP)",
+            "content": "# 802.11w (MFP) 🛡️\n\nPrevents Deauthentication Attacks.\n\nStandard 802.11 allows *anyone* to spoof a \"Disconnect\" frame. \n**802.11w** adds cryptographic integrity checks to management frames.\n\nIf an attacker sends a spoofed Deauth, the client ignores it because the signature is invalid."
+        },
+        {
+            "id": "wdef_quiz_1",
+            "type": "quiz",
+            "title": "Protocol Check",
+            "content": "Best practices.",
+            "quizQuestion": "Which security standard assigns unique credentials (username/password) to each user, rather than a shared PSK?",
+            "quizOptions": [
+                "WPA2-Personal",
+                "WEP",
+                "WPA2-Enterprise (802.1X)",
+                "WPS"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "wdef_8",
+            "type": "content",
+            "title": "VPN as a Defense",
+            "content": "# VPN Usage 🚇\n\nAssume Wireless is Compromised.\n\nEven if WPA2 is cracked, or it's an Open network, a VPN wraps *all* traffic in untagged tunnel from the device to the VPN server.\n\nAttacker sees: `[Encrypted Garbage]`.\n\nPolicies often force \"Always-On VPN\" for corporate laptops."
+        },
+        {
+            "id": "wdef_9",
+            "type": "content",
+            "title": "Certificate Pinning",
+            "content": "# Certificate Pinning 📌\n\nDefends against MitM on SSL.\n\nThe App knows *exactly* which SSL certificate the server should use.\nIf an attacker (Evil Twin) intercepts SSL traffic and presents a fake certificate (even a \"valid\" one signed by a compromised CA), the App rejects it because it doesn't match the \"Pinned\" hash."
+        },
+        {
+            "id": "wdef_10",
+            "type": "content",
+            "title": "War Walking / Driving",
+            "content": "# Defensive War Driving 🚗\n\nSecurity teams should periodically \"War Walk\" their own campus.\n- Walk around with Kismet/WiGLE.\n- Look for unauthorized APs.\n- Check signal bleed (Can I connect from the street?).\n- Verify encryption settings."
+        },
+        {
+            "id": "wdef_11",
+            "type": "content",
+            "title": "Fake AP Detection Logic",
+            "content": "# Detecting Anomalies 🚨\n\nLogic for a detector.\n\n<!-- FULL_CODE_START\n# Simple Logic for identifying Evil Twins\n\nknown_bssids = [\"00:11:22:33:44:55\", \"00:11:22:33:44:56\"]\nvalid_ssid = \"Corp-Secure\"\n\ndef analyze_beacon(ssid, bssid, signal, encryption):\n    print(f\"Analyzing Beacon: {ssid} [{bssid}]\")\n    \n    # Check 1: SSID spoofing\n    if ssid == valid_ssid:\n        if bssid not in known_bssids:\n            print(\"  [!] ALERT: EVIL TWIN DETECTED! Unknown BSSID broadcasting valid SSID.\")\n            return\n            \n    # Check 2: Encryption Downgrade\n    if ssid == valid_ssid and \"OPEN\" in encryption:\n        print(\"  [!] ALERT: SECURITY DOWNGRADE! Secure network broadcasting as OPEN.\")\n        return\n        \n    print(\"  [+] Beacon looks normal.\")\n\nprint(\"--- WIDS Simulation ---\")\nanalyze_beacon(\"Corp-Secure\", \"00:11:22:33:44:55\", -40, \"WPA2\")\nanalyze_beacon(\"Corp-Secure\", \"AA:BB:CC:DD:EE:FF\", -30, \"OPEN\") # Attacker\nFULL_CODE_END -->"
+        },
+        {
+            "id": "wdef_12",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Defense Summary 🏁\n\nWireless security is about visibility and strong auth.\n\n## Recap\n- **802.1X** removes the weakness of shared passwords.\n- **WIDS** detects attacks in progress.\n- **Segmentation** protects the LAN even if WiFi is breached.\n- **Monitoring** ensures no rogues set up shop.\n\nKeep the airwaves clean!"
+        }
+    ]
+}

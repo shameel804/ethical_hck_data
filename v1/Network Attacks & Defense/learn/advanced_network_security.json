@@ -1,0 +1,113 @@
+{
+    "id": "advanced_network_security",
+    "topicId": "adv_net_sec",
+    "topicTitle": "Advanced Network Security",
+    "description": "Deep dive into Traffic Analysis, Full Packet Capture, and modern network architectures like SDN and Zero Trust.",
+    "baseKP": 150,
+    "slides": [
+        {
+            "id": "adv_net_1",
+            "type": "content",
+            "title": "Advanced Network Concepts",
+            "content": "# Advanced Network Security 📡\n\nBeyond basic firewalls lies detailed analysis and modern architecture.\n\n## Key Topics\n- **Traffic Analysis:** Behavioral baselining.\n- **Full Packet Capture (FPC):** Examples and Forensics.\n- **Encrypted Traffic Analysis:** Finding evil in HTTPS.\n- **SDN Security:** Software Defined Networking.\n- **Zero Trust:** Implementation details."
+        },
+        {
+            "id": "adv_net_2",
+            "type": "content",
+            "title": "Network Traffic Analysis (NTA)",
+            "content": "# Network Traffic Analysis 📈\n\nNTA focuses on *flows* rather than individual packets.\n\n## NetFlow / IPFIX\nA standard for summarizing connection data.\nRecords: `SrcIP, DstIP, SrcPort, DstPort, Protocol, Bytes, StartTime, EndTime`.\n\nBy analyzing NetFlow, we can see \"Who is talking to whom\" and \"How much\" without needing to store the full payload (which is huge)."
+        },
+        {
+            "id": "adv_net_3",
+            "type": "content",
+            "title": "Flow Data Simulation",
+            "content": "# Flow Analysis Logic 🌊\n\nDetecting anomalies in metadata.\n\n<!-- FULL_CODE_START\nflows = [\n    {\"src\": \"10.0.0.5\", \"dst\": \"google.com\", \"bytes\": 5000, \"duration\": 2},\n    {\"src\": \"10.0.0.5\", \"dst\": \"fileserver\", \"bytes\": 5000000000, \"duration\": 300}, # 5GB! Exfil?\n    {\"src\": \"10.0.0.6\", \"dst\": \"google.com\", \"bytes\": 4000, \"duration\": 1}\n]\n\nprint(\"--- Analyzing NetFlow Records ---\")\n\ntreshold_bytes = 100000000 # 100MB\ninternal_hosts = [\"fileserver\"]\n\nfor f in flows:\n    print(f\"Flow: {f['src']} -> {f['dst']} ({f['bytes']} bytes)\")\n    \n    # Anomaly Detection Rule: Large outbound transfer\n    if f['bytes'] > treshold_bytes:\n        print(\"  [!] ALERT: Massive Data Transfer Detected!\")\n        if f['dst'] not in internal_hosts:\n             print(\"  [!!!] CRITICAL: Possible Data Exfiltration to External Host!\")\n        else:\n             print(\"  [i] Info: Large Internal Transfer (Less Critical)\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "adv_net_4",
+            "type": "content",
+            "title": "Full Packet Capture (FPC)",
+            "content": "# Full Packet Capture 📸\n\nStoring the *entire* content of every packet. \n\n## Pros\n- Perfect retrospective forensics. \"What exactly was in that malware file downloaded 3 weeks ago?\" We can extract it from the PCAP.\n\n## Cons\n- **Storage:** Requires massive hard drive arrays (Petabytes). Usually loop-recorded (overwritten every 7-30 days).\n- **Privacy:** Captures user emails, passwords (if unencrypted)."
+        },
+        {
+            "id": "adv_net_5",
+            "type": "content",
+            "title": "Encrypted Traffic Analysis (ETA)",
+            "content": "# Encrypted Traffic Analysis 🔐\n\n90%+ of web traffic is HTTPS. We can't see the payload. How do we detect malware?\n\n## JA3 Fingerprinting\nTLS negotiation has a unique \"fingerprint\" based on the Ciphers, TLS Version, and Extensions supported by the client.\n\nStandard Chrome has a specific JA3 hash.\nMalware (using a basic python library) has a different JA3 hash.\n\nWe can identify malware *by how it negotiates encryption*!"
+        },
+        {
+            "id": "adv_net_6",
+            "type": "content",
+            "title": "Software Defined Networking (SDN)",
+            "content": "# SDN Security ☁️\n\nDecoupling the Control Plane (Brains) from the Data Plane (Muscle).\n\n## Architecture\n- **Controller:** Centralized software managing network state.\n- **Switches:** Dump forwarding devices taking orders from Controller.\n\n## Security Implications\n- **Pro:** Can instantly quarantine an infection by reprogramming the network globally.\n- **Con:** The Controller is a Single Point of Failure. If hacked, the attacker owns the whole network."
+        },
+        {
+            "id": "adv_net_7",
+            "type": "content",
+            "title": "Zero Trust Implementation",
+            "content": "# Micro-Segmentation 🧩\n\nA key component of Zero Trust in data centers.\n\nInstead of one Firewall at the edge, every virtual machine (VM) has its own firewall policy.\n\n**Web VM** can talk to **App VM** on port 8080.\n**App VM** can talk to **DB VM** on port 3306.\n**Web VM** CANNOT talk to **DB VM** directly.\n\nThis prevents Lateral Movement even if they are on the same subnet."
+        },
+        {
+            "id": "adv_net_8",
+            "type": "content",
+            "title": "Network Forensics Steps",
+            "content": "# Network Forensics 🕵️\n\nWhen a breach is suspected:\n\n1.  **Preparation:** Have sensors (FPC, Logs) ready.\n2.  **Detection:** Trigger from SIEM/IDS.\n3.  **Collection:** PCAP preservation.\n4.  **Analysis:** Extracting artifacts (malware EXEs, chat logs).\n5.  **Reconstruction:** Reassembling TCP streams to see the user's view."
+        },
+        {
+            "id": "adv_net_quiz_1",
+            "type": "quiz",
+            "title": "Forensics Quiz",
+            "content": "Test your knowledge.",
+            "quizQuestion": "What is the primary advantage of Full Packet Capture (FPC) over NetFlow?",
+            "quizOptions": [
+                "It uses less storage",
+                "It is faster to search",
+                "It allows reconstructing files and viewing full payloads",
+                "It decrypts all traffic automatically"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "adv_net_9",
+            "type": "content",
+            "title": "Covert Channels",
+            "content": "# Covert Channels 🤫\n\nHiding communication in protocols not meant for data transfer.\n\n## Examples\n- **ICMP Tunneling:** Payload inside ping requests.\n- **DNS Tunneling:** Payload inside subdomains.\n- **TCP Timing:** Modulating the timing of packets to represent binary 1s and 0s.\n\nAdvanced firewalls look for statistical anomalies (e.g., DNS queries that are too long or have high entropy) to detect this."
+        },
+        {
+            "id": "adv_net_10",
+            "type": "content",
+            "title": "Protocol Analysis with Wireshark",
+            "content": "# Wireshark Logic 🦈\n\nUnderstanding filtering.\n\n`http.request.method == \"POST\" and ip.src == 192.168.1.5`\n\nAnalysts look for:\n- Beacons (Heartbeats calling home every 60s).\n- Long connections.\n- User Agents that don't look like browsers (e.g., \"Python-urllib\", \"curl\")."
+        },
+        {
+            "id": "adv_net_11",
+            "type": "content",
+            "title": "User Entity Behavior Analytics (UEBA)",
+            "content": "# UEBA 👤\n\nUsing Machine Learning to find anomalies.\n\n- **Normal:** User logs in at 9 AM, accesses Email.\n- **Abnormal:** User logs in at 3 AM, accesses HR Payroll DB, uploads 5GB to Dropbox.\n\nTraditional rules might miss this (access is allowed). UEBA catches the deviation from the *pattern*."
+        },
+        {
+            "id": "adv_net_12",
+            "type": "content",
+            "title": "Deception Technology",
+            "content": "# Active Deception 🎭\n\nMoving beyond static honeypots.\n\nInjecting fake credentials into memory (Honeytokens).\nCreating fake Active Directory accounts.\n\nIf an attacker runs `BloodHound` or `Mimikatz`, they grab the fake creds. When they try to use them, an alarm triggers immediately with high confidence."
+        },
+        {
+            "id": "adv_net_13",
+            "type": "content",
+            "title": "Secure Access Service Edge (SASE)",
+            "content": "# SASE 🌐\n\nThe future of enterprise networking.\n\nMerging Network Security (VPN, FW) with WAN capabilities (SD-WAN) and delivering it as a Cloud Service.\n\nEmployees connect to the SASE cloud (PoP) nearest to them. Security policy is applied in the cloud before traffic goes to the Internet or Corporate Apps. No more backhauling everything to HQ."
+        },
+        {
+            "id": "adv_net_14",
+            "type": "content",
+            "title": "Quantum Key Distribution (QKD)",
+            "content": "# Quantum Security ⚛️\n\nDefending against future Quantum Computers breaking RSA/ECC.\n\n**QKD** uses physics (photons) to exchange keys.\nIf an attacker observes (sniffs) the key exchange, the quantum state changes (Heisenberg Principle), and the parties know they are being watched. They discard the key and try again."
+        },
+        {
+            "id": "adv_net_15",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Advanced Network Summary 🎓\n\nNetwork security is evolving from static blocklists to intelligent analysis.\n\n## Recap\n- **Traffic Analysis** reveals what encryption hides.\n- **Zero Trust** limits blast radius.\n- **Deception** turns the table on attackers.\n- **SASE** moves security to the cloud.\n\nThe fight is now about data, analytics, and speed."
+        }
+    ]
+}
