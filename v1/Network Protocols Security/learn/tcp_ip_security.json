@@ -1,0 +1,127 @@
+{
+  "id": "learn_tcp_ip_security",
+  "topicId": "tcp_ip_security",
+  "topicTitle": "TCP/IP Security",
+  "description": "Deep dive into the vulnerabilities and defenses of the TCP/IP protocol suite, covering IP Spoofing, TCP Hijacking, and more.",
+  "baseKP": 100,
+  "slides": [
+    {
+      "id": "tcp_ip_intro_1",
+      "type": "content",
+      "title": "Module Overview",
+      "content": "# TCP/IP Security 🛡️\n\nThe **Transmission Control Protocol/Internet Protocol (TCP/IP)** suite is the foundation of the internet. However, it was designed with connectivity in mind, not security.\n\n## What you'll learn:\n- **IP Spoofing** - Faking identity at the network layer\n- **TCP Sequence Prediction** - Guessing sequence numbers to hijack sessions\n- **SYN Floods** - Overwhelming servers with half-open connections\n- **TCP Session Hijacking** - Taking over established connections\n- **IP Fragmentation Attacks** - Evading firewalls by splitting packets\n\n> ⚠️ **Warning:** Mastering these concepts is crucial for understanding network attacks and implementing effective defenses."
+    },
+    {
+      "id": "ip_spoofing_1",
+      "type": "content",
+      "title": "IP Spoofing Basics",
+      "content": "# IP Spoofing 🎭\n\n**IP Spoofing** is the creation of Internet Protocol packets with a false source IP address for the purpose of impersonating another computing system.\n\n## How It Works\n1.  **Attacker Modification**: The attacker modifies the packet header.\n2.  **False Source**: The Source Address field is changed to a trusted IP.\n3.  **Target Deception**: The target believes the packet is from the trusted source and accepts it.\n\n## Why Spoof?\n-   **Hide Identity**: Launch DoS/DDoS attacks without revealing the true source.\n-   **Bypass Auth**: Access systems that rely on IP-based authentication.\n-   **Reflected Attacks**: Cause responses to be sent to a victim (amplification)."
+    },
+    {
+      "id": "ip_spoofing_code",
+      "type": "content",
+      "title": "Spoofing with Scapy",
+      "content": "# IP Spoofing Code Example 🐍\n\nUsing Python's `scapy` library to craft a spoofed packet.\n\n```python\nfrom scapy.all import *\n\n# Crafting a spoofed IP packet\nspoofed_packet = IP(src=\"192.168.1.100\", dst=\"10.0.0.5\") / ICMP()\n\n# Sending the packet\nsend(spoofed_packet)\n```\n\n<!-- FULL_CODE_START\n# This code requires root privileges and the scapy library.\n# It will not run effectively in a restricted environment like Piston API without raw socket access.\n# However, here is a complete runnable logic structure.\n\ntry:\n    from scapy.all import IP, ICMP, send, ls\n    print(\"Scapy library loaded successfully.\")\n\n    # Define spoofed source and target\n    fake_src = \"192.168.1.100\"\n    target_dst = \"127.0.0.1\" # Using localhost for safety\n\n    print(f\"[*] Crafting packet: {fake_src} -> {target_dst}\")\n\n    # Create IP layer\n    ip_layer = IP(src=fake_src, dst=target_dst)\n    \n    # Create ICMP layer (Ping)\n    icmp_layer = ICMP()\n\n    # Stack layers\n    packet = ip_layer / icmp_layer\n\n    print(\"[*] Packet Summary:\")\n    packet.show()\n\n    # In a real scenario, you would use send(packet)\n    # send(packet, verbose=False)\n    print(\"[!] Packet ready to send (Simulation End)\")\n\nexcept ImportError:\n    print(\"Scapy not installed. Run: pip install scapy\")\nexcept PermissionError:\n    print(\"Root privileges required for packet crafting.\")\nFULL_CODE_END -->\n\n> 🛡️ **Defense:** Implement **Ingress/Egress Filtering** at the router level to drop packets with invalid source addresses for your network."
+    },
+    {
+      "id": "tcp_seq_prediction_1",
+      "type": "content",
+      "title": "TCP Sequence Prediction",
+      "content": "# TCP Sequence Prediction 🎲\n\nTCP connections use **Sequence Numbers (ISN)** to track data and ensure ordered delivery. If an attacker can predict the next sequence number, they can inject malicious packets.\n\n## The Vulnerability\n-   Older OSs generated ISNs predictably (e.g., incrementing by a fixed amount).\n-   Attackers could guess the ISN of an active session.\n\n## Implications\n-   **Blind Injection**: Injecting commands into a connection without seeing the responses.\n-   **Connection Reset**: Sending a RST packet with the correct sequence number to kill a connection."
+    },
+    {
+      "id": "tcp_seq_quiz",
+      "type": "quiz",
+      "title": "Sequence Quiz",
+      "content": "Check your understanding of the TCP mechanism.",
+      "quizQuestion": "What is the primary purpose of TCP Sequence Numbers?",
+      "quizOptions": [
+        "To encrypt the data payload",
+        "To identify the source IP address",
+        "To ensure ordered delivery and track data",
+        "To determine the routing path"
+      ],
+      "correctOptionIndex": 2
+    },
+    {
+      "id": "syn_flood_1",
+      "type": "content",
+      "title": "SYN Flood Attacks",
+      "content": "# SYN Floods 🌊\n\nA **SYN Flood** is a DoS attack that exploits the TCP 3-Way Handshake.\n\n## 3-Way Handshake Review\n1.  **SYN**: Client sends SYN packet.\n2.  **SYN-ACK**: Server acknowledges and allocates memory (Transmission Control Block - TCB).\n3.  **ACK**: Client sends ACK to complete connection.\n\n## The Attack\n-   Attacker sends massive numbers of **SYN** packets.\n-   Attacker uses **spoofed IPs** or simply does not send the final ACK.\n-   Server waits for ACK, holding resources (TCB) open.\n-   **Result**: Server runs out of memory/resources for legitimate connections."
+    },
+    {
+      "id": "syn_flood_diagram",
+      "type": "content",
+      "title": "Visualizing SYN Flood",
+      "content": "# SYN Flood Diagram\n\n```mermaid\nsequenceDiagram\n    participant Attacker\n    participant Server\n    Attacker->>Server: SYN (Spoofed IP 1)\n    Server-->>Attacker: SYN-ACK (Wait...)\n    Attacker->>Server: SYN (Spoofed IP 2)\n    Server-->>Attacker: SYN-ACK (Wait...)\n    Attacker->>Server: SYN (Spoofed IP 3)\n    Server-->>Attacker: SYN-ACK (Wait...)\n    Note right of Server: Resources Exhausted! 🥵\n```\n\n> 🛡️ **Defense:** **SYN Cookies** allow the server to avoid allocating memory until the final ACK is received."
+    },
+    {
+      "id": "syn_flood_code",
+      "type": "content",
+      "title": "Simulating SYN Flood",
+      "content": "# SYN Flood Simulation 💻\n\nDemonstrating packet generation for a flood (Educational Use Only).\n\n```python\n# Pseudocode for SYN flooding logic\nwhile True:\n    ip = IP(src=RandIP(), dst=target_ip)\n    tcp = TCP(sport=RandShort(), dport=80, flags=\"S\")\n    send(ip/tcp)\n```\n\n<!-- FULL_CODE_START\n# Educational Simulation of Packet Structure\nimport random\n\ndef generate_random_ip():\n    return \".\".join(str(random.randint(0, 255)) for _ in range(4))\n\nprint(\"=== SYN Flood Packet Simulation ===\")\nprint(\"Target: 192.168.1.50:80\")\nprint(\"Generating packets...\\n\")\n\nfor i in range(1, 6):\n    spoofed_src = generate_random_ip()\n    src_port = random.randint(1024, 65535)\n    seq_num = random.randint(1000, 90000)\n    \n    print(f\"[Packet {i}] State: SYN\")\n    print(f\"  Source: {spoofed_src}:{src_port}\")\n    print(f\"  Dest  : 192.168.1.50:80\")\n    print(f\"  SeqNum: {seq_num}\")\n    print(f\"  Flags : SYN\")\n    print(\"-\" * 30)\n\nprint(\"\\n[!] Simulation Complete. In a real attack, thousands/sec are sent.\")\nFULL_CODE_END -->"
+    },
+    {
+      "id": "tcp_hijacking_1",
+      "type": "content",
+      "title": "TCP Session Hijacking",
+      "content": "# TCP Session Hijacking 🕵️‍♂️\n\nTaking over an authenticated user's session by injecting packets with the correct sequence numbers.\n\n## Prerequisites\n1.  **Monitor**: Attacker must sniff the traffic to see current Sequence (SEQ) and Acknowledgment (ACK) numbers.\n2.  **Predict**: Or predict them if they are blind.\n3.  **Inject**: Send a malicious packet with the *expected* SEQ number.\n4.  **Desynchronize**: The victim and server get out of sync; the server accepts the attacker's data."
+    },
+    {
+      "id": "tcp_hijack_tools",
+      "type": "content",
+      "title": "Hijacking Tools",
+      "content": "# Hijacking Tools 🛠️\n\nSeveral tools automate session hijacking, often combining ARP Spoofing to intercept traffic first.\n\n## Common Tools\n-   **Ettercap**: Comprehensive suite for Man-in-the-Middle (MitM) attacks.\n-   **Bettercap**: Modern, powerful MitM framework.\n-   **Hunt**: Old but famous tool specifically for TCP hijacking.\n-   **Scapy**: Custom scriptable attacks.\n\n> 🛡️ **Defense:** **Encryption (TLS/SSL)** is the best defense. Even if traffic is hijacked, the attacker cannot inject valid encrypted data without the keys."
+    },
+    {
+      "id": "ip_frag_1",
+      "type": "content",
+      "title": "IP Fragmentation Attacks",
+      "content": "# IP Fragmentation Attacks 🧩\n\nNetworks have a **Maximum Transmission Unit (MTU)**. Packets larger than the MTU must be split into fragments. Attackers exploit how systems reassemble these fragments.\n\n## Attack Types\n-   **Tiny Fragment Attack**: Splitting the TCP header across fragments to force the firewall to pass the first fragment (lacking full port info), hoping subsequent ones pass unchecked.\n-   **Teardrop Attack**: Making fragments overlap (Offset + Length > Next Offset). Old OSs crashed trying to reassemble them.\n-   **Bonk / Boink**: Similar fragmentation DoS attacks affecting Windows systems."
+    },
+    {
+      "id": "ip_frag_quiz",
+      "type": "quiz",
+      "title": "Fragmentation Quiz",
+      "content": "Test your knowledge on fragmentation.",
+      "quizQuestion": "What is the main goal of a 'Tiny Fragment' attack?",
+      "quizOptions": [
+        "To increase download speed",
+        "To corrupt the hard drive",
+        "To hide header information from firewalls",
+        "To encrypt the payload"
+      ],
+      "correctOptionIndex": 2
+    },
+    {
+      "id": "mitigation_1",
+      "type": "content",
+      "title": "Mitigation Strategies",
+      "content": "# Mitigation Strategies 🛡️\n\nHow to defend against TCP/IP attacks.\n\n## Network Layer\n-   **Anti-Spoofing Filters**: Configure routers (ACLs) to block incoming packets with internal source IPs from the outside (RFC 2827).\n-   **Firewall Rules**: Drop malformed or overlapping fragments.\n-   **Unicast Reverse Path Forwarding (uRPF)**: Check that the source IP is reachable via the interface the packet arrived on.\n\n## Transport Layer\n-   **SYN Cookies**: Enable on servers to mitigate SYN floods.\n-   **Randomized ISN**: Modern OSs use strong random number generators for Initial Sequence Numbers.\n-   **Timeouts**: Aggressive connection timeouts for half-open states."
+    },
+    {
+      "id": "mitigation_encryption",
+      "type": "content",
+      "title": "The Role of Encryption",
+      "content": "# Encryption: The Ultimate Shield 🔐\n\nMany TCP/IP attacks (Hijacking, Spoofing for Access) rely on cleartext trust relationships.\n\n## IPSec (Internet Protocol Security)\n-   Adds authentication and encryption at the IP layer.\n-   Used in VPNs to secure the tunnel.\n\n## TLS/SSL\n-   Secures the application data.\n-   Even if a sequence number is guessed, the attacker cannot forge the Message Authentication Code (MAC) or encrypt the payload correctly."
+    },
+    {
+      "id": "lab_exercise_1",
+      "type": "content",
+      "title": "Lab: Detecting Attacks",
+      "content": "# Lab: Detecting Attacks with Wireshark 🦈\n\nHow to spot these attacks in packet captures.\n\n## Signs of SYN Flood\n-   Filter: `tcp.flags.syn == 1 and tcp.flags.ack == 0`\n-   High volume of SYN packets to a single port.\n-   Random/Many source IPs.\n\n## Signs of Hijacking\n-   Duplicate ACKs.\n-   Retransmissions (victim trying to send data that server ignores).\n-   Unexpected RST packets."
+    },
+    {
+      "id": "python_sniffer_code",
+      "type": "content",
+      "title": "Simple Python Sniffer",
+      "content": "# Building a Basic Sniffer 🕸️\n\nA simple script to detect TCP SYN packets (requires root/admin).\n\n```python\nimport socket\nimport struct\n\n# Create raw socket\ns = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_TCP)\n\nwhile True:\n    packet = s.recvfrom(65565)\n    # ... parse header ...\n```\n\n<!-- FULL_CODE_START\nimport struct\nimport sys\nimport os\n\n# This is a simulation of parsing logic as raw sockets require root privileges\n# and won't work in restricted sandboxes.\n\ndef parse_tcp_header(raw_data):\n    # TCP header is 20 bytes\n    # Unpack: src_port, dst_port, seq, ack, offset_flags, window, checksum, urg\n    tcp_header = struct.unpack('!HHLLBBHHH', raw_data)\n    \n    src_port = tcp_header[0]\n    dst_port = tcp_header[1]\n    seq_num = tcp_header[2]\n    ack_num = tcp_header[3]\n    flags = tcp_header[5]\n    \n    # Extract flags\n    fin = flags & 0x01\n    syn = (flags & 0x02) >> 1\n    rst = (flags & 0x04) >> 2\n    psh = (flags & 0x08) >> 3\n    ack = (flags & 0x10) >> 4\n    urg = (flags & 0x20) >> 5\n    \n    return {\n        \"src_port\": src_port,\n        \"dst_port\": dst_port,\n        \"syn\": syn,\n        \"ack\": ack\n    }\n\nprint(\"=== TCP Header Parser Simulation ===\")\n\n# Simulating a raw TCP header (20 bytes)\n# Ports: 1234 -> 80, Seq: 100, Ack: 0, Flags: SYN (0x02)\nsimulated_packet = struct.pack('!HHLLBBHHH', \n    1234, 80, 100, 0, 5 << 4, 0x02, 65535, 0, 0)\n\nparsed = parse_tcp_header(simulated_packet)\nprint(f\"Parsed Packet Data:\")\nprint(f\"Source Port: {parsed['src_port']}\")\nprint(f\"Dest Port  : {parsed['dst_port']}\")\nprint(f\"SYN Flag   : {parsed['syn']}\")\nprint(f\"ACK Flag   : {parsed['ack']}\")\n\nif parsed['syn'] == 1 and parsed['ack'] == 0:\n    print(\"\\n[ALERT] SYN Packet Detected! Possible connection attempt or flood.\")\nFULL_CODE_END -->"
+    },
+    {
+      "id": "tcp_ip_summary",
+      "type": "content",
+      "title": "Module Summary",
+      "content": "# Key Takeaways 📝\n\n-   **IP Spoofing**: Hides the attacker's origin; mitigated by Ingress Filtering.\n-   **SYN Floods**: Exhaust server resources; mitigated by SYN Cookies.\n-   **Sequence Prediction**: Enables hijacking; fixed by randomized ISNs.\n-   **Fragmentation**: Evades simple firewalls; mitigated by reassembly and inspection.\n-   **Defense in Depth**: Combine network filtering, OS hardening, and encryption (TLS/IPSec) for robust security.\n\nGreat job! You've mastered the basics of TCP/IP Security."
+    }
+  ]
+}

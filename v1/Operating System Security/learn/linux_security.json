@@ -1,0 +1,119 @@
+{
+    "id": "learn_linux_security",
+    "topicId": "linux_security",
+    "topicTitle": "Linux Security",
+    "description": "Master Linux security fundamentals: Permissions, SELinux, Hardening, and Authentication.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "linux_intro_1",
+            "type": "content",
+            "title": "Linux Security Model",
+            "content": "# The Server OS 🐧\n\nLinux powers the internet. Its security model is based on **Unix** principles.\n\n## Core Concepts\n-   **Everything is a file**: Configs, devices, sockets.\n-   **Multi-user**: Designed for multiple users from day one.\n-   **Root**: The Superuser (UID 0) has unlimited power."
+        },
+        {
+            "id": "linux_permissions_1",
+            "type": "content",
+            "title": "File Permissions",
+            "content": "# UGO Permissions 📜\n\n**User (Owner), Group, Others**.\n\n## Octal Notation\n-   Read (r) = 4\n-   Write (w) = 2\n-   Execute (x) = 1\n\n`chmod 755 file`\n-   Owner: 7 (rwx)\n-   Group: 5 (r-x)\n-   Others: 5 (r-x)"
+        },
+        {
+            "id": "suid_permissions",
+            "type": "content",
+            "title": "Special Permissions",
+            "content": "# Special Bits 🌟\n\n-   **SUID (Set User ID)**: `chmod u+s`. Run the file with the permissions of the file *owner* (usually root) instead of the user running it. (Dangerous!)\n-   **SGID**: Run with Group permissions.\n-   **Sticky Bit**: On directories (like `/tmp`). Only the owner of a file can delete it, even if the folder is writable by all."
+        },
+        {
+            "id": "perm_quiz",
+            "type": "quiz",
+            "title": "Permission Quiz",
+            "content": "Math check.",
+            "quizQuestion": "What does 'chmod 600 secrets.txt' mean?",
+            "quizOptions": [
+                "Everyone can read and write",
+                "Owner can read/write, no one else has access",
+                "Owner can execute only",
+                "Group can read/write"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "linux_auth_shadow",
+            "type": "content",
+            "title": "Authentication & Shadow",
+            "content": "# Storing Passwords 🔑\n\n-   **`/etc/passwd`**: User information (shell, home dir). World readable.\n-   **`/etc/shadow`**: Password hashes. Readable ONLY by root.\n\n## Hashing\nModern Linux uses **SHA-512** (identifier `$6$`) or **yescrypt** with salt."
+        },
+        {
+            "id": "pam_1",
+            "type": "content",
+            "title": "PAM",
+            "content": "# Pluggable Authentication Modules (PAM) 🔌\n\nModular auth system.\n\n## Function\nAllows admins to change auth policies without recompiling apps.\n-   \"Require Fingerprint OR Password\"\n-   \"Enforce strong passwords (pam_cracklib)\"\n-   \"Lockout after 3 failures (pam_tally2)\"\n\nConfig: `/etc/pam.d/`"
+        },
+        {
+            "id": "selinux_1",
+            "type": "content",
+            "title": "SELinux & AppArmor",
+            "content": "# Mandatory Access Control (MAC) 🛡️\n\nStandard permissions (DAC) are discretionary. MAC enforces rules even root can't easily bypass.\n\n## SELinux\n-   **Labels**: Files and Processes have labels (Contexts).\n-   **Policy**: \"Apache Process (httpd_t) can read /var/www (httpd_sys_content_t) but CANNOT read /home/user.\"\n-   Prevents compromised web servers from reading sensitive system files."
+        },
+        {
+            "id": "sudo_security",
+            "type": "content",
+            "title": "Sudo Security",
+            "content": "# Sudo (Superuser Do) 🦸\n\nAllows users to run commands as root.\n\n## Config: `/etc/sudoers`\n-   **Least Privilege**: Give access to specific commands, not `ALL`.\n-   **NoExec**: Prevent shell escapes from allowed commands.\n-   **Logs**: Sudo logs all commands run."
+        },
+        {
+            "id": "ssh_hardening",
+            "type": "content",
+            "title": "SSH Hardening",
+            "content": "# Hardening SSH Sockets 🔒\n\n`/etc/ssh/sshd_config`\n\n1.  `PermitRootLogin no`: Login as user, then escalate.\n2.  `PasswordAuthentication no`: Use SSH Keys only.\n3.  `Port 2222`: Change default port (obscurity, reduces log noise).\n4.  `AllowUsers alice bob`: Whitelist specific users."
+        },
+        {
+            "id": "ssh_code",
+            "type": "content",
+            "title": "SSH Key Generation",
+            "content": "# Generating Keys 🔑\n\n```bash\n# Generate generic key\nssh-keygen -t ed25519 -C \"email@example.com\"\n\n# Copy to server\nssh-copy-id user@host\n```\n\n> 💡 **Tip**: **Ed25519** is faster and more secure than RSA."
+        },
+        {
+            "id": "package_management",
+            "type": "content",
+            "title": "Package Security",
+            "content": "# Package Managers 📦\n\nAPT, DNF, Pacman.\n\n## Security\n-   **Signatures**: Packages are signed with GPG keys (`.gpg`).\n-   **Repositories**: Only trust official repos or known PPAs.\n-   **Supply Chain**: Adding `curl | bash` scripts adds their repo to your trusted list."
+        },
+        {
+            "id": "kernel_hardening",
+            "type": "content",
+            "title": "Kernel Hardening",
+            "content": "# Kernel Sysctl 🧠\n\nRuntime configuration in `/etc/sysctl.conf`.\n\n-   `net.ipv4.conf.all.accept_redirects = 0`: Prevent MITM routing.\n-   `kernel.dmesg_restrict = 1`: Hide kernel logs from non-root (hides addresses for exploits).\n-   `kernel.kptr_restrict = 1`: Hide kernel pointers."
+        },
+        {
+            "id": "auditd_1",
+            "type": "content",
+            "title": "Auditd",
+            "content": "# Linux Auditing 👁️\n\n**auditd** is the subsystem for monitoring syscalls.\n\n## What to log\n-   File access (`/etc/passwd`, `/etc/shadow`).\n-   Execution of commands (`execve`).\n-   Network connections.\n-   Changes to file attributes (`chmod`, `chown`)."
+        },
+        {
+            "id": "firewalls_linux",
+            "type": "content",
+            "title": "Linux Firewalls",
+            "content": "# IPTables / NFTables 🔥\n\nThe kernel packet filter.\n\n-   **UFW (Uncomplicated Firewall)**: Easy wrapper for Ubuntu.\n    -   `ufw allow ssh`\n    -   `ufw enable`\n-   **Firewalld**: RedHat wrapper.\n-   **Netfilter**: The actual kernel hook."
+        },
+        {
+            "id": "rootkits_1",
+            "type": "content",
+            "title": "Linux Rootkits",
+            "content": "# Rootkits 🪴\n\nMalware that hides itself.\n\n## Types\n-   **User Mode**: Replaces binaries like `ls`, `ps`, `top` to hide the malware process.\n-   **Kernel Mode (LKM)**: Loadable Kernel Module. Intercepts syscalls. `ls` returns legitimate files minus the malware file. Very hard to detect."
+        },
+        {
+            "id": "log_files",
+            "type": "content",
+            "title": "Log Files",
+            "content": "# Forensics: Logs 🪵\n\n-   `/var/log/auth.log`: Logins, sudo usage.\n-   `/var/log/syslog`: General system messages.\n-   `/var/log/secure`: (RHEL/CentOS) Auth logs.\n-   `journalctl`: Systemd journal.\n-   **Anti-Forensics**: Attackers often `rm -rf /var/log` or disable logging upon entry."
+        },
+        {
+            "id": "linux_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **Permissions**: Understand 755 vs 600 and SUID.\n-   **SSH**: Keys only, no root login.\n-   **Updates**: Unpatched kernel = Local Privilege Escalation.\n-   **SELinux**: Don't just disable it; configure it.\n-   **Logs**: Ship them to a remote server (SIEM) so attackers can't delete them."
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "id": "learn_browser_vulnerabilities",
+    "topicId": "browser_vulnerabilities",
+    "topicTitle": "Browser Vulnerabilities",
+    "description": "Understand the browser's security model, including SOP, CORS, and storage security.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "browser_intro_1",
+            "type": "content",
+            "title": "The Browser Security Model",
+            "content": "# The Gatekeeper ⛩️\n\nThe browser is the most hostile environment for code execution. It downloads untrusted code (JS) from random sites and runs it.\n\nTo keep you safe, it enforces strict isolation rules.\n\n## Core Concept\n**Isolation**: Site A (evil.com) should not be able to read data from Site B (bank.com)."
+        },
+        {
+            "id": "sop_1",
+            "type": "content",
+            "title": "Same-Origin Policy (SOP)",
+            "content": "# Same-Origin Policy 🛡️\n\nThe cornerstone of web security.\n\n## Definition\nTwo pages have the same origin if they share:\n1.  **Protocol** (https)\n2.  **Host** (example.com)\n3.  **Port** (443)\n\nIf Origin A != Origin B, scripts on A cannot read DOM/Data from B.\n\n## Allowed\n-   Embedding (linking images, scripts, CSS) cross-origin is usually allowed (Cross-Origin Embedding)."
+        },
+        {
+            "id": "sop_quiz",
+            "type": "quiz",
+            "title": "SOP Quiz",
+            "content": "Origin Check.",
+            "quizQuestion": "Do `http://site.com` and `https://site.com` have the same origin?",
+            "quizOptions": [
+                "Yes, same domain",
+                "Yes, same host",
+                "No, different protocol",
+                "No, different browser"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "cors_deep_dive",
+            "type": "content",
+            "title": "CORS Revisited",
+            "content": "# CORS: Relaxing SOP 🤝\n\nSometimes you *want* to allow cross-origin access (e.g., API calls).\n\n## Mechanism\nBrowser: \"Hey `api.com`, I am `site.com`. Can I read your data?\"\nServer: `Access-Control-Allow-Origin: site.com`\n\nIf the header matches, the browser allows the JS to read the response. If not, the request usually happens, but JS gets an error."
+        },
+        {
+            "id": "csp_deep_dive",
+            "type": "content",
+            "title": "Content Security Policy (CSP)",
+            "content": "# CSP: Lockdown 🔒\n\nLimiting what the browser is allowed to do.\n\n## Capabilities\n-   **sources**: `img-src cdn.com` (Only load images from CDN).\n-   **inline**: `script-src 'self'` (Block `<script>alert(1)</script>`).\n-   **reporting**: `report-uri /log` (Tell admin if a violation occurs).\n\n> 🛡️ **Defense against**: XSS, Clickjacking, Packet Sniffing (loading images from attacker URL)."
+        },
+        {
+            "id": "csp_code",
+            "type": "content",
+            "title": "CSP Header Example",
+            "content": "# Implementing CSP 🛡️\n\n```http\nContent-Security-Policy: default-src 'self'; script-src 'self' https://trusted.com; object-src 'none';\n```\n\n<!-- FULL_CODE_START\nprint(\"=== CSP Violation Logic Demo ===\")\n\ndef check_csp(policy, resource_url, res_type):\n    print(f\"[*] Policy: {policy}\")\n    print(f\"[*] Requesting: {res_type} from {resource_url}\")\n    \n    # Simplified Parser logic\n    directives = {d.split()[0]: d.split()[1:] for d in policy.split(';') if d.strip()}\n    \n    allowed = False\n    relevant_directive = directives.get(f\"{res_type}-src\", directives.get(\"default-src\", []))\n    \n    # Check allowed sources\n    for source in relevant_directive:\n        if source == \"'self'\" and \"mysite.com\" in resource_url:\n            allowed = True\n        elif source in resource_url:\n            allowed = True\n    \n    if allowed:\n        print(\"[+] ALLOWED by CSP.\")\n    else:\n        print(\"[-] BLOCKED by CSP violation.\")\n\npolicy = \"default-src 'self'; script-src 'self' https://trusted.com;\"\n\n# 1. Internal Script\ncheck_csp(policy, \"https://mysite.com/app.js\", \"script\")\n\n# 2. External Trusted Script\ncheck_csp(policy, \"https://trusted.com/lib.js\", \"script\")\n\n# 3. External Malicious Script\ncheck_csp(policy, \"https://evil.com/hack.js\", \"script\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "cookies_security",
+            "type": "content",
+            "title": "Cookie Security Attributes",
+            "content": "# Protecting Cookies 🍪\n\nCookies are the keys to the session.\n\n-   **Secure**: Only sent over HTTPS.\n-   **HttpOnly**: Cannot be accessed by JavaScript (`document.cookie` returns empty string). Stops XSS stealing session.\n-   **SameSite**: Controls when cookies are sent cross-site (stops CSRF).\n    -   `Strict`: Never sent cross-site.\n    -   `Lax`: Sent on top-level navigation (clicking links)."
+        },
+        {
+            "id": "local_storage_risk",
+            "type": "content",
+            "title": "LocalStorage Security",
+            "content": "# LocalStorage vs Cookies 🥊\n\n-   **LocalStorage**: 5-10MB, persistent. **Risk**: accessible by ANY script on the page (XSS = Game Over). No protection mechanisms.\n-   **Cookies**: 4KB, sent with every request. **Benefit**: Can be secured with HttpOnly/Secure.\n\n> 💡 **Tip**: Store JWTs in HttpOnly cookies, not LocalStorage."
+        },
+        {
+            "id": "web_workers_1",
+            "type": "content",
+            "title": "Web Workers Security",
+            "content": "# Web Workers 👷\n\nBackground threads for JS.\n\n## Isolation\n-   They have no access to the DOM (safeguard against DOM XSS).\n-   They *do* have access to network requests (fetch/XHR).\n-   **Risk**: Malicious workers (crypto miners) consuming CPU. Browsers throttle them."
+        },
+        {
+            "id": "sri_integrity",
+            "type": "content",
+            "title": "Subresource Integrity (SRI)",
+            "content": "# Trusting CDNs 🤝\n\nYou load jQuery from `cdn.google.com`. What if the CDN is hacked?\n\n## SRI\nAdd a hash to the script tag:\n`<script src=\"https://cdn.../lib.js\" integrity=\"sha384-Qqy...\" crossorigin=\"anonymous\"></script>`\n\nBrowser calculates the hash of the downloaded file. If it doesn't match the `integrity` attribute, it refuses to run the script."
+        },
+        {
+            "id": "sandboxing_iframe",
+            "type": "content",
+            "title": "Iframe Sandboxing",
+            "content": "# Taming Iframes 📦\n\nWhen you embed 3rd party content (ads, widgets).\n\n## `sandbox` attribute\n`<iframe src=\"unsafe.html\" sandbox></iframe>`\n-   Disables Scripts.\n-   Disables Forms.\n-   Disables Same-Origin (treats it as unique origin).\n\nYou can selectively re-enable: `sandbox=\"allow-scripts\"`."
+        },
+        {
+            "id": "mime_sniffing",
+            "type": "content",
+            "title": "MIME Sniffing",
+            "content": "# MIME Sniffing 👃\n\nBrowsers try to be helpful by guessing the file type if the server is wrong.\n\n## Risk\nServer serves `user.jpg`. Browser sees `<script>` inside the \"image\" and decides to run it as JS.\n\n> 🛡️ **Fix**: `X-Content-Type-Options: nosniff`. Forces browser to trust the server's Content-Type."
+        },
+        {
+            "id": "referrer_policy",
+            "type": "content",
+            "title": "Referrer Policy",
+            "content": "# Leaking History 🔗\n\nThe `Referer` header tells a site where you came from.\n\n## Leakage\nFrom: `https://bank.com/reset-password?token=SECRET`\nClick link to: `https://social.com`\nReferer Header: `https://bank.com/reset-password?token=SECRET`\n\n**Result**: `social.com` knows your password reset token.\n\n> 🛡️ **Fix**: `Referrer-Policy: strict-origin-when-cross-origin`."
+        },
+        {
+            "id": "browser_fingerprinting",
+            "type": "content",
+            "title": "Browser Fingerprinting",
+            "content": "# You are Unique 🕵️\n\nTracking without cookies.\n\n## Techniques\n-   **Canvas Fingerprinting**: Rendering invisible text and reading the pixels. Differences in GPU/Drivers create a unique hash.\n-   **AudioContext**: Audio hardware differences.\n-   **Fonts/Plugins**: List of installed items.\n\nA privacy risk, hard to fully prevent."
+        },
+        {
+            "id": "feature_policy",
+            "type": "content",
+            "title": "Permissions Policy",
+            "content": "# Permissions Policy 🚦\n\nFormerly Feature Policy. Controls what APIs the browser can use.\n\n`Permissions-Policy: camera=(), microphone=(), geolocation=(self)`\n\nPrevents malicious ads or XSS from activating your webcam or GPS."
+        },
+        {
+            "id": "browser_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **SOP**: The walls between sites.\n-   **CSP**: The internal police.\n-   **Cookies**: Use HttpOnly and Secure.\n-   **Headers**: SRI, HSTS, Nosniff, Referrer-Policy.\n\nThe browser is complex, but these headers and attributes are your best defense tools!"
+        }
+    ]
+}

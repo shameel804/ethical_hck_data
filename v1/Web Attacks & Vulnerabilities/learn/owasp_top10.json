@@ -1,0 +1,141 @@
+{
+    "id": "learn_owasp_top10",
+    "topicId": "owasp_top10",
+    "topicTitle": "OWASP Top 10",
+    "description": "The standard awareness document for developers and web application security. It represents a broad consensus about the most critical security risks to web applications.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "owasp_intro_1",
+            "type": "content",
+            "title": "What is OWASP Top 10?",
+            "content": "# The Holy Grail of WebSec 🏆\n\nThe **Open Web Application Security Project (OWASP)** publishes a list of the 10 most critical web application security risks.\n\n## Why it matters?\n-   **Industry Standard**: Compliance (PCI-DSS, NIST) often requires OWASP coverage.\n-   **Prioritization**: Helps developers focus on the biggest risks first.\n-   **Evolution**: The list changes every few years (2017, 2021) as attacks evolve."
+        },
+        {
+            "id": "a01_broken_access_1",
+            "type": "content",
+            "title": "A01: Broken Access Control",
+            "content": "# A01: Broken Access Control 🚧\n\nMoving up to #1 in 2021. This happens when users can act outside of their intended permissions.\n\n## Examples\n-   **IDOR**: Modifying `?id=123` to `?id=124` to see someone else's data.\n-   **Privilege Escalation**: A normal user accessing `/admin` pages.\n-   **CORS Misconfiguration**: Allowing API access from unauthorized origins."
+        },
+        {
+            "id": "broken_access_code",
+            "type": "content",
+            "title": "Vulnerable Code: IDOR",
+            "content": "# Vulnerable Example ❌\n\n```python\n@app.route('/account')\ndef view_account():\n    user_id = request.args.get('id')\n    # No check if logged_in_user == user_id!\n    return db.get_user(user_id)\n```\n\n> 🛡️ **Fix**: ALWAYS verify that the requesting user owns the object they are trying to access."
+        },
+        {
+            "id": "a02_crypto_failures_1",
+            "type": "content",
+            "title": "A02: Cryptographic Failures",
+            "content": "# A02: Cryptographic Failures 🔐\n\nPreviously known as \"Sensitive Data Exposure\". Focuses on failures related to cryptography.\n\n## Common Issues\n-   **Cleartext transmission**: Sending passwords over HTTP.\n-   **Weak Algorithms**: Using MD5, SHA1, or RC4.\n-   **Hardcoded Keys**: Storing encryption keys in the source code.\n-   **Default Keys**: Using default vendor keys for crypto operations."
+        },
+        {
+            "id": "a02_quiz",
+            "type": "quiz",
+            "title": "Crypto Quiz",
+            "content": "Check your crypto knowledge.",
+            "quizQuestion": "Which of the following is considered a weak hashing algorithm today?",
+            "quizOptions": [
+                "SHA-256",
+                "Argon2",
+                "MD5",
+                "Bcrypt"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "a03_injection_1",
+            "type": "content",
+            "title": "A03: Injection",
+            "content": "# A03: Injection 💉\n\nInjection occurs when untrusted data is sent to an interpreter as part of a command or query.\n\n## Types\n-   **SQL Injection (SQLi)**: Manipulating database queries.\n-   **Command Injection**: Executing OS commands.\n-   **LDAP Injection**: Manipulating LDAP statements.\n\n**Impact**: Data loss, data theft, or complete host takeover."
+        },
+        {
+            "id": "sqli_example",
+            "type": "content",
+            "title": "SQL Injection Code",
+            "content": "# SQLi Example 💥\n\n```python\n# Vulnerable\nquery = \"SELECT * FROM users WHERE user='\" + user_input + \"'\"\n\n# User enters: ' OR '1'='1\n# Result: SELECT * FROM users WHERE user='' OR '1'='1'\n# Logs in as the first user (usually Admin)\n```\n\n<!-- FULL_CODE_START\nprint(\"=== SQL Injection Simulation ===\")\n\ndef mock_database_query(query_string):\n    print(f\"[DB] Executing Query: {query_string}\")\n    # Simulation of DB logic\n    if \"' OR '1'='1\" in query_string:\n        return \"[RESULT] Login Successful: Welcome, Admin!\"\n    elif \"admin\" in query_string:\n        return \"[RESULT] Login Successful: Welcome, Admin!\"\n    else:\n        return \"[RESULT] Login Failed: Invalid User\"\n\nusername = \"admin' OR '1'='1\"\nprint(f\"User Input: {username}\")\n\nvulnerable_query = f\"SELECT * FROM users WHERE name = '{username}'\"\nresult = mock_database_query(vulnerable_query)\nprint(result)\n\nprint(\"\\n=== Secure Version (Parameterized) ===\")\nprint(\"Query: SELECT * FROM users WHERE name = ?\")\nprint(f\"Parameters: ('{username}',)\")\nprint(\"[DB] The input is treated strictly as a string literal, not code.\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "a04_insecure_design_1",
+            "type": "content",
+            "title": "A04: Insecure Design",
+            "content": "# A04: Insecure Design 🎨\n\nA new category in 2021 focusing on risks related to design flaws.\n\n## Concept\n-   You can't code your way out of a bad design.\n-   **Example**: A password recovery flow using \"Security Questions\" is a design flaw (answers are easy to guess/OSINT), not an implementation bug.\n-   **Fix**: Threat Modeling, Secure Design Patterns, and Paved Roads."
+        },
+        {
+            "id": "a05_misconfig_1",
+            "type": "content",
+            "title": "A05: Security Misconfiguration",
+            "content": "# A05: Security Misconfiguration ⚙️\n\nThe most common issue.\n\n## Examples\n-   **Default Accounts**: Leaving `admin:admin` active.\n-   **Verbose Errors**: Stack traces visible to users (leaks info).\n-   **Unused Pages**: Default sample apps installed on the server.\n-   **Open Cloud Storage**: S3 buckets set to \"Public Read\"."
+        },
+        {
+            "id": "a06_vuln_components_1",
+            "type": "content",
+            "title": "A06: Vulnerable Components",
+            "content": "# A06: Vulnerable & Outdated Components 📦\n\nUsing libraries/frameworks with known vulnerabilities.\n\n## The Supply Chain Risk\n-   Modern apps are 80-90% external code (npm, user, pip).\n-   If `log4j` has a bug, and you use it, you are vulnerable.\n-   **Fix**: Software Composition Analysis (SCA) tools (like Dependabot, Snyk)."
+        },
+        {
+            "id": "vulnerable_components_quiz",
+            "type": "quiz",
+            "title": "Components Quiz",
+            "content": "Supply chain security check.",
+            "quizQuestion": "How should you primarily mitigate the risk of vulnerable components?",
+            "quizOptions": [
+                "Stop using external libraries",
+                "Rewrite all libraries yourself",
+                "Regularly scan dependencies and update them",
+                "Hide the list of libraries in headers"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "a07_auth_failures_1",
+            "type": "content",
+            "title": "A07: ID & Auth Failures",
+            "content": "# A07: Identification & Auth Failures 🆔\n\nPreviously \"Broken Authentication\".\n\n## Weaknesses\n-   **Credential Stuffing**: Allowing automated login attempts.\n-   **Weak Passwords**: Permitting \"123456\".\n-   **No MFA**: Relying solely on passwords.\n-   **Session Fixation**: Not rotating session IDs after login."
+        },
+        {
+            "id": "a08_integrity_failures_1",
+            "type": "content",
+            "title": "A08: Integrity Failures",
+            "content": "# A08: Software & Data Integrity Failures 💿\n\nRelates to code and infrastructure that does not protect against integrity violations.\n\n## Scenarios\n-   **Insecure Deserialization**: Trusting serialized objects from users (leading to RCE).\n-   **Unsigned Updates**: Downloading firmware updates without verifying signatures.\n-   **CI/CD Pipeline**: If the build pipeline is compromised, the output is trusted but malicious."
+        },
+        {
+            "id": "deserialization_code",
+            "type": "content",
+            "title": "Deserialization Exploit",
+            "content": "# Pickle Deserialization 🥒\n\nPython's `pickle` module is notoriously unsafe.\n\n```python\nimport pickle, base64, os\n\nclass RCE:\n    def __reduce__(self):\n        return (os.system, (\"id\",))\n\npayload = base64.b64encode(pickle.dumps(RCE()))\n# If the server unpickles this, it runs 'id'\n```\n\n<!-- FULL_CODE_START\nimport pickle\nimport base64\nimport os\n\nprint(\"=== Insecure Deserialization Demo ===\")\nprint(\"Warning: This code executes commands. Be careful.\")\n\nclass Malicious:\n    def __reduce__(self):\n        # This method defines how the object is pickled\n        # When unpickled, it will execute 'echo HACKED'\n        return (os.system, (\"echo '[!] MALICIOUS CODE EXECUTED: System Compromised'\",))\n\n# 1. Attacker creates the payload\nmal_obj = Malicious()\npayload = base64.b64encode(pickle.dumps(mal_obj))\nprint(f\"\\n[Attacker] Serialized Payload: {payload.decode()}\")\n\n# 2. Server receives payload (e.g., in a cookie) and deserializes it\nprint(\"\\n[Server] Processing User Data...\")\ntry:\n    # VULNERABILITY: Unpickling untrusted data\n    data = pickle.loads(base64.b64decode(payload))\nexcept Exception as e:\n    print(e)\n\nprint(\"\\n[!] Lesson: Never unpickle untrusted data. Use JSON instead.\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "a09_logging_1",
+            "type": "content",
+            "title": "A09: Logging Failures",
+            "content": "# A09: Insufficient Logging & Monitoring 📝\n\nYou can't stop what you can't see.\n\n## The Risks\n-   **Breach Detection**: Average time to detect a breach is 200+ days.\n-   **Post-Mortem**: Without logs, you can't know what data was stolen.\n-   **Alerts**: Critical events (failed logins, high-value transactions) should trigger alerts."
+        },
+        {
+            "id": "a10_ssrf_1",
+            "type": "content",
+            "title": "A10: SSRF",
+            "content": "# A10: Server-Side Request Forgery 🔁\n\nSSRF occurs when a web application is fetching a remote resource without validating the user-supplied URL.\n\n## The Attack\n-   Attacker asks server to fetch `http://localhost/admin`.\n-   Server trusts the request because it comes from *itself* (or internal network).\n-   Access to cloud metadata (AWS: `http://169.254.169.254/latest/meta-data/`)."
+        },
+        {
+            "id": "ssrf_quiz",
+            "type": "quiz",
+            "title": "SSRF Quiz",
+            "content": "The cloud killer.",
+            "quizQuestion": "What is a common target for SSRF attacks in cloud environments?",
+            "quizOptions": [
+                "The user's browser history",
+                "The CSS stylesheet",
+                "The Instance Metadata Service",
+                "The DNS cache"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "owasp_summary",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Top 10 Wrap-up 🏁\n\n1.  **Broken Access Control**: Check permissions on every access.\n2.  **Crypto Failures**: Encrypt everything, properly.\n3.  **Injection**: Validate input, parameterize queries.\n4.  **Insecure Design**: Threat model early.\n5.  **Misconfiguration**: Harden servers, automate configs.\n6.  **Vulnerable Components**: Scan dependencies.\n7.  **Auth Failures**: No weak passwords, enable MFA.\n8.  **Integrity Failures**: Verify signatures.\n9.  **Logging**: Log widely, monitor signals.\n10. **SSRF**: Validate outbound URLs.\n\nStay safe out there!"
+        }
+    ]
+}

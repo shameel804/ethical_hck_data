@@ -1,0 +1,107 @@
+{
+    "id": "learn_os_hardening",
+    "topicId": "os_hardening",
+    "topicTitle": "OS Hardening",
+    "description": "General principles and practices for hardening any operating system to reduce the attack surface.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "hardening_intro_1",
+            "type": "content",
+            "title": "Defense in Depth 🏰",
+            "content": "# Why Harden? 🛡️\n\nDefault installations are designed for **compatibility** and **usability**, not security. They have too many services running, weak passwords, and permissive rules.\n\n**Hardening** is the process of securing a system by reducing its footprint and vulnerability surface."
+        },
+        {
+            "id": "attack_surface_reduction",
+            "type": "content",
+            "title": "Attack Surface Reduction",
+            "content": "# Less is More 📉\n\nEvery installed software is a potential entry point.\n\n## Principles\n-   **Remove Unused Software**: If you don't need LibreOffice on a Web Server, uninstall it.\n-   **Disable Unused Services**: Turn off Bluetooth, Print Spooler, FTP if not strictly required.\n-   **Block Ports**: Close all firewall ports except the ones needed (e.g., 80, 443)."
+        },
+        {
+            "id": "patch_management_1",
+            "type": "content",
+            "title": "Patch Management",
+            "content": "# Updates & Patches 🩹\n\nThe #1 defense against exploitation.\n\n## Strategy\n-   **Automate**: Enable auto-updates if possible.\n-   **Prioritize**: Security critical patches should be applied within 24-48 hours.\n-   **Inventory**: You can't patch what you don't know you have. Maintain a Software Bill of Materials (SBOM)."
+        },
+        {
+            "id": "least_privilege_os",
+            "type": "content",
+            "title": "Least Privilege",
+            "content": "# Limit the Damage 💥\n\n-   **User Accounts**: Daily tasks should run as a standard user, not Admin/Root.\n-   **Service Accounts**: Run the web server as `www-data`, not root. If the server is hacked, the attacker only gets `www-data` access.\n-   **Sudoless**: Don't give full sudo access to everyone."
+        },
+        {
+            "id": "logging_auditing",
+            "type": "content",
+            "title": "Logging & Auditing",
+            "content": "# Visibility 🔦\n\nConfigure logs to capture security events.\n\n## What to log?\n-   **Auth**: Success and Failed logins.\n-   **Privilege Escalation**: Usage of `sudo` or `RunAs`.\n-   **Process Creation**: New programs starting (detects malware launching).\n-   **Network**: Outbound connections."
+        },
+        {
+            "id": "logging_code",
+            "type": "content",
+            "title": "Analysing Logs",
+            "content": "# Log Analysis 📝\n\nDetecting brute force.\n\n```bash\ngrep \"Failed password\" /var/log/auth.log | awk '{print $11}' | sort | uniq -c | sort -nr\n```\n\n**Output**:\n```\n4500 192.168.1.50\n  12 10.0.0.5\n```\n(The IP 192.168.1.50 is likely attacking)."
+        },
+        {
+            "id": "cis_benchmarks",
+            "type": "content",
+            "title": "CIS Benchmarks",
+            "content": "# CIS Benchmarks 📏\n\nThe Center for Internet Security (CIS) publishes PDF guides with hundreds of specific settings to change for every OS.\n\n## Examples\n-   \"Ensure SSH Root Login is disabled\"\n-   \"Ensure password expiration is 90 days\"\n-   \"Ensure /tmp is mounted noexec\""
+        },
+        {
+            "id": "fde_encryption",
+            "type": "content",
+            "title": "Disk Encryption",
+            "content": "# Full Disk Encryption (FDE) 🔐\n\nProtects data at rest (physical theft).\n\n-   **Windows**: BitLocker.\n-   **macOS**: FileVault.\n-   **Linux**: LUKS (Linux Unified Key Setup).\n\nKey stored in TPU/Secure Enclave helps prevent cold boot attacks."
+        },
+        {
+            "id": "application_whitelisting",
+            "type": "content",
+            "title": "App Whitelisting",
+            "content": "# Whitelisting 📋\n\nInstead of blocking known bad (Antivirus), allow **only** known good.\n\n-   **Windows**: AppLocker / Windows Defender Application Control (WDAC).\n-   **macOS**: Gatekeeper.\n-   **Linux**: fapolicyd.\n\nPrevents users (or malware) from running any binary not signed by a trusted certificate."
+        },
+        {
+            "id": "hardening_quiz",
+            "type": "quiz",
+            "title": "Hardening Quiz",
+            "content": "Check your skills.",
+            "quizQuestion": "Which principle states that a user or process should only have access to the resources necessary for its legitimate purpose?  ",
+            "quizOptions": [
+                "Defense in Depth",
+                "Security through Obscurity",
+                "Least Privilege",
+                "Fail Secure"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "bios_uefi",
+            "type": "content",
+            "title": "BIOS / UEFI Security",
+            "content": "# Hardware Level ⚙️\n\n-   **BIOS Password**: Prevent attackers from booting from a USB drive (Live Linux) to bypass OS login.\n-   **Secure Boot**: Ensures the bootloader is signed (prevents bootkits).\n-   **Disable DMA**: Direct Memory Access ports (Thunderbolt) at boot."
+        },
+        {
+            "id": "account_policies",
+            "type": "content",
+            "title": "Account Policies",
+            "content": "# Password Policies 🔑\n\n-   **Complexity**: Length > Complexity. 12+ chars preferred.\n-   **Lockout**: Lock account after 5 failed attempts (stops brute force, but risks DoS).\n-   **MFA**: Mandate Multi-Factor Auth for all remote access."
+        },
+        {
+            "id": "network_hardening",
+            "type": "content",
+            "title": "Network Hardening",
+            "content": "# Host Firewall 🧱\n\n-   **Default Deny Inbound**: Block all incoming connections (except management if needed).\n-   **Restrict Outbound**: Servers usually don't need to browse the web. Block HTTP/S outbound to prevent C2 communication."
+        },
+        {
+            "id": "hardening_tools",
+            "type": "content",
+            "title": "Hardening Tools",
+            "content": "# Automation 🤖\n\nDon't do it manually.\n\n-   **Ansible / Puppet / Chef**: Infrastructure as Code. Apply configs automatically.\n-   **OpenSCAP**: Scans systems against CIS/NIST profiles and generates reports.\n-   **Lynis**: Linux security auditing tool."
+        },
+        {
+            "id": "hardening_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **Remove**: Unused apps/services.\n-   **Limit**: User permissions (Least Privilege).\n-   **Update**: Patch everything immediately.\n-   **Monitor**: Logs tell the story.\n-   **Standardize**: Use CIS Benchmarks.\n\nA hardened system is a tough nut to crack!"
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "id": "learn_advanced_web_attacks",
+    "topicId": "advanced_web_attacks",
+    "topicTitle": "Advanced Web Attacks",
+    "description": "Complex attack vectors targeting modern web architectures, including Request Smuggling, Prototype Pollution, and GraphQL.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "adv_intro_1",
+            "type": "content",
+            "title": "Beyond the Basics",
+            "content": "# Modern Architecture Risks 🏙️\n\nWeb apps are no longer simple LAMP stacks. They use CDNs, Load Balancers, Microservices, and complex JavaScript Frameworks.\n\nThis complexity introduces subtle, sophisticated bugs that arise from how different components interact."
+        },
+        {
+            "id": "req_smuggling_1",
+            "type": "content",
+            "title": "HTTP Request Smuggling",
+            "content": "# HTTP Request Smuggling 📦\n\nDiscrepancy in how the frontend (Load Balancer) and backend server parse HTTP requests.\n\n## CL vs TE\n-   **Content-Length (CL)**: Header specifying body size.\n-   **Transfer-Encoding (TE)**: Header specifying chunked encoding.\n-   If a request has *both*, and one server prefers CL while the other prefers TE, they desynchronize."
+        },
+        {
+            "id": "req_smuggling_cl_te",
+            "type": "content",
+            "title": "CL.TE Attack",
+            "content": "# CL.TE Vulnerability 💥\n\nFrontend uses Content-Length, Backend uses Transfer-Encoding.\n\n1.  **Frontend**: Reads full body (including malicious prefix) based on CL.\n2.  **Backend**: Reads only the first chunk based on TE.\n3.  **Result**: The \"leftover\" malicious part of the request remains in the backend's buffer and is prepended to the *next* user's request.\n4.  **Impact**: Account takeover (`GET /admin` prepended to victim's req), Cache Poisoning."
+        },
+        {
+            "id": "req_smuggling_te_cl",
+            "type": "content",
+            "title": "TE.CL Attack",
+            "content": "# TE.CL Vulnerability 💥\n\nFrontend uses TE, Backend uses CL.\n\n-   Opposite of CL.TE.\n-   The frontend processes chunks but the backend reads a fixed length, leaving the rest of the chunks as a \"new\" request.\n\n> 🛡️ **Fix**: Use HTTP/2 (robust framing), or ensure front/back end configurations match perfectly regarding header priority."
+        },
+        {
+            "id": "web_cache_poisoning_1",
+            "type": "content",
+            "title": "Web Cache Poisoning",
+            "content": "# Web Cache Poisoning 🧪\n\nExploiting the cache to serve malicious content to everyone.\n\n## Mechanism\n1.  **Unkeyed Inputs**: Identify headers/params that reflect in the response but are NOT part of the cache key (usually Request Line + Host).\n2.  **Injection**: Send a request with a malicious unkeyed header (`X-Forwarded-Host: evil.com`).\n3.  **Reflection**: Server reflects it: `<script src=\"http: //evil.com/main.js\">`.\n4.  **Cache**: The cache saves this response for `/home`.\n5.  **Victim**: Users visiting `/home` get the cached page with the XSS payload."
+        },
+        {
+            "id": "proto_pollution_1",
+            "type": "content",
+            "title": "Prototype Pollution",
+            "content": "# Prototype Pollution 🧬\n\nA JavaScript-specific vulnerability.\n\n## The Concept\nObjects in JS inherit from a prototype.\nIf you can modify `Object.prototype`, you change every object in the application.\n\n## Attack Vector\nMerging objects recursively:\n`merge(target, source)`\nInput: `{\"__proto__\": {\"isAdmin\": true}}`\nResult: `user.isAdmin` becomes `true` for ALL users if undefined locally."
+        },
+        {
+            "id": "proto_pollution_code",
+            "type": "content",
+            "title": "Pollution Code",
+            "content": "# Pollution Example ⚠️\n\n```javascript\nlet user = {name: \"Alice\"};\n// Attacker input processed by insecure merge function:\nObject.prototype.isAdmin = true;\n\nconsole.log(user.isAdmin); // true! \n// Alice is now Admin.\n```\n\n> 🛡️ **Fix**: Use `Object.create(null)` for maps, or freeze the prototype `Object.freeze(Object.prototype)`."
+        },
+        {
+            "id": "graphql_vulns_1",
+            "type": "content",
+            "title": "GraphQL Vulnerabilities",
+            "content": "# GraphQL Security 🕸️\n\nA query language for APIs, giving clients power to ask for exactly what they want.\n\n## Introspection\nEnabled by default. Allows anyone to dump the entire schema (all types, fields, queries).\n`{ __schema { types { name fields { name } } } }`\n**Fix**: Disable introspection in production."
+        },
+        {
+            "id": "graphql_dos",
+            "type": "content",
+            "title": "GraphQL DoS",
+            "content": "# GraphQL DoS 🐌\n\nClient decides the query complexity.\n\n## Nested Queries\n`query { author { posts { author { posts { ... } } } } }`\nDeeply nested circular queries can crash the database or CPU.\n\n## Batching\nSending 10,000 mutations in a single HTTP request.\n\n> 🛡️ **Fix**: Max Query Depth limits and Query Cost Analysis."
+        },
+        {
+            "id": "graphql_quiz",
+            "type": "quiz",
+            "title": "GraphQL Quiz",
+            "content": "Graph check.",
+            "quizQuestion": "What feature allows attackers to map out the entire GraphQL schema?",
+            "quizOptions": [
+                "Mutation",
+                "Subscription",
+                "Introspection",
+                "Resolver"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "wasm_security_1",
+            "type": "content",
+            "title": "WebAssembly (Wasm) Security",
+            "content": "# WebAssembly Security 🦀\n\nRunning binary code in the browser at near-native speed.\n\n## Risks\n-   **Memory Corruption**: Buffer overflows are possible *inside* the Wasm sandbox (linear memory).\n-   **Side Channels**: Spectre/Meltdown style attacks might be easier.\n-   **Cryptomining**: Efficient mining in the browser.\n-   **Obfuscation**: Malware compiled to Wasm is harder to reverse engineer than JS."
+        },
+        {
+            "id": "jwt_attacks_1",
+            "type": "content",
+            "title": "JWT Attacks",
+            "content": "# JSON Web Token (JWT) Attacks 🎫\n\nStateless auth tokens.\n\n## None Algorithm\n-   Attacker changes header `{\"alg\": \"none\"}` and strips the signature.\n-   Vulnerable libraries accept the token as valid without verification.\n\n## Key Confusion\n-   Changing `alg` from `RS256` (Asymmetric) to `HS256` (Symmetric).\n-   Attacker signs the token with the public key (which is public!), and the server verifies it using the public key as the HMAC secret."
+        },
+        {
+            "id": "oauth_pitfalls_1",
+            "type": "content",
+            "title": "OAuth 2.0 Pitfalls",
+            "content": "# OAuth 2.0 / OIDC Issues 🔑\n\n## Redirect URI Poisoning\n-   Attacker modifies `redirect_uri` to send the Auth Code to their server.\n-   Requires weak validation on the Provider side.\n\n## CSRF in Login\n-   Attacker logs the victim into the *attacker's* account.\n-   Victim adds credit card/data -> Attacker accesses it.\n-   **Fix**: Use the `state` parameter to bind the request to the session."
+        },
+        {
+            "id": "race_conditions_web",
+            "type": "content",
+            "title": "Web Race Conditions",
+            "content": "# Limit Overrun Race 🏎️\n\nA logical flaw in business flows.\n\n## Infinite Coupon\n-   User applies \"10% OFF\" coupon.\n-   Server checks: \"Has code 123 been used? No.\"\n-   Server applies discount.\n-   Server marks 123 as used.\n-   **Attack**: User sends 50 requests in parallel. All 50 pass the check before the first one marks it as used.\n-   **Result**: 500% discount."
+        },
+        {
+            "id": "xs_leaks_1",
+            "type": "content",
+            "title": "XS-Leaks",
+            "content": "# Cross-Site Leaks (XS-Leaks) 💧\n\nSide-channel attacks to infer data cross-origin.\n\n## Concept\nUsing timing, error events, or object counts to answer boolean questions about a user on another site.\n-   \"Does the user have 'secret' in their inbox?\"\n-   Load endpoint `search?q=secret`.\n-   If response time is > 500ms (many results), answer is YES.\n-   If < 100ms, answer is NO."
+        },
+        {
+            "id": "subdomain_takeover",
+            "type": "content",
+            "title": "Subdomain Takeover",
+            "content": "# Subdomain Takeover 🚩\n\n## Scenario\n1.  Company creates `promo.site.com` pointing to `bucket-name.s3.amazonaws.com` (CNAME).\n2.  Campaign ends, bucket is deleted.\n3.  DNS record `promo.site.com` remains.\n4.  **Attack**: Attacker claims the S3 bucket name `bucket-name`.\n5.  **Result**: `promo.site.com` now serves attacker's content, with valid SSL (since it's a subdomain of the company)."
+        },
+        {
+            "id": "adv_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **Smuggling**: Attacks the infrastructure layers.\n-   **Pollution**: Corrupts JS objects globally.\n-   **GraphQL**: Needs depth limits and introspection blocks.\n-   **JWT/OAuth**: Cryptographic and logic flaws in auth.\n-   **Cache Poisoning**: Turning the CDN against the users.\n\nThese attacks require deep understanding of protocols and parsing logic!"
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "id": "learn_graphql_security",
+    "topicId": "graphql_security",
+    "topicTitle": "GraphQL Security",
+    "description": "Understand the unique security challenges of GraphQL, including Introspection, Query Depth limit configuration, and Batching attacks.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "graphql_intro_1",
+            "type": "content",
+            "title": "GraphQL Basics",
+            "content": "# REST vs GraphQL 🆚\n\n**GraphQL** is a query language for your API.\n\n-   **Single Endpoint**: Usually `/graphql` (POST).\n-   **Client-Driven**: Client asks for exactly the fields it needs.\n-   **Typed Schema**: Strongly typed definition of data.\n\n> ⚠️ **Challenge**: Moving complexity from the server to the client gives the attacker more power to craft malicious queries."
+        },
+        {
+            "id": "introspection_1",
+            "type": "content",
+            "title": "Introspection",
+            "content": "# Introspection 📖\n\nGraphQL's ability to document itself.\n\n## The Feature\nA special query to ask the server about its schema:\n`query { __schema { types { name } } }`\n\n## The Risk\n-   Attackers map your ENTIRE database structure (User fields, Private tables, Admin mutations).\n-   Makes finding other vulnerabilities (like IDOR or Injection) much easier.\n\n> 🛡️ **Fix**: Disable Introspection in Production."
+        },
+        {
+            "id": "introspection_tool",
+            "type": "content",
+            "title": "Introspection Tools",
+            "content": "# Visualizing the Schema 🔭\n\nTools like **GraphQL Voyager** or **Altair** can take an introspection result and draw a complete entity-relationship diagram of your backend.\n\nAttackers use this to find \"hidden\" fields like `isSuperAdmin` or `resetPasswordToken`."
+        },
+        {
+            "id": "query_depth_1",
+            "type": "content",
+            "title": "Query Depth Attacks",
+            "content": "# Deep Recursion 🕳️\n\nGraphQL allows nested queries. If types reference each other (User -> Posts -> User), you can loop indefinitely.\n\n## The Payload\n```graphql\nquery {\n  user {\n    posts {\n      author {\n        posts {\n          author {\n            ... # x1000\n          }\n        }\n      }\n    }\n  }\n}\n```\n**Result**: Stack Overflow or DB Crash."
+        },
+        {
+            "id": "query_depth_quiz",
+            "type": "quiz",
+            "title": "Depth Quiz",
+            "content": "Defending depth.",
+            "quizQuestion": "What is the standard defense against recursive query attacks?",
+            "quizOptions": [
+                "Disable POST requests",
+                "Implement Max Query Depth limits",
+                "Use SSL/TLS",
+                "Remove relationships from schema"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "field_duplication_1",
+            "type": "content",
+            "title": "Field Duplication",
+            "content": "# Field Duplication DoS 👯\n\nEven without depth, width can kill.\n\n## The Payload\nAsking for the same heavy field 10,000 times using aliases.\n\n```graphql\nquery {\n  a: heavyComputation\n  b: heavyComputation\n  c: heavyComputation\n  ... # x1000\n}\n```\n**Result**: Server tries to compute the result 1000 times in parallel/sequence for a single HTTP request."
+        },
+        {
+            "id": "batching_attacks_1",
+            "type": "content",
+            "title": "Batching Attacks",
+            "content": "# Query Batching 📦\n\nGraphQL supports sending an array of queries in one JSON body `[query1, query2, ...]`.\n\n## The Abuse\n-   **Brute Force**: checking 1000 passwords in 1 HTTP request.\n-   **Bypassing Rate Limits**: WAF sees 1 request, but the server processes 1000 operations.\n\n> 🛡️ **Fix**: Disable batching or count the *operations* inside the batch against the rate limit."
+        },
+        {
+            "id": "graphql_injection_1",
+            "type": "content",
+            "title": "GraphQL Injection",
+            "content": "# Injection in Resolvers 💉\n\nGraphQL resolvers eventually talk to a Database (SQL/NoSQL).\n\n## SQL Injection\nIf the arguments are passed directly to SQL:\n`query { user(name: \"admin' OR '1'='1\") { id } }`\n\nSince GraphQL is strongly typed, this is harder than in REST, but still possible if the developer uses string concatenation in resolvers."
+        },
+        {
+            "id": "resolver_code",
+            "type": "content",
+            "title": "Vulnerable Resolver",
+            "content": "# Code Example 👨‍💻\n\n```javascript\n// Vulnerable Node.js Resolver\nconst resolvers = {\n  Query: {\n    user: (parent, args) => {\n      // Direct concat = SQLi\n      return db.query(\"SELECT * FROM users WHERE name = '\" + args.name + \"'\");\n    }\n  }\n}\n```\n\n> 🛡️ **Fix**: Always use parameterized queries or an ORM."
+        },
+        {
+            "id": "auth_graphql",
+            "type": "content",
+            "title": "Authorization in GraphQL",
+            "content": "# Where to put Auth? 🔐\n\n## The Mistake\nPutting authorization logic in the **Controller/Route** layer.\n-   In GraphQL, there is only one route: `/graphql`.\n\n## The Solution\n-   **Business Logic Layer**: Auth must be checked inside the **Resolver** or the Model.\n-   Every single field access (like `user.email`) needs to verify if the `currentUser` is allowed to see it."
+        },
+        {
+            "id": "info_disclosure_graphql",
+            "type": "content",
+            "title": "Information Disclosure",
+            "content": "# Leaking Data via Errors 📢\n\nGraphQL's default error handling is very verbose.\n\n## Helpful Errors\n`\"Field 'password' exists but you do not have permission.\"`\n\n## Suggestion Feature\nIf you typo a field `passwrd`, GraphQL might suggest: `\"Did you mean 'password'?\"`\n\n> 🛡️ **Fix**: Sanitize errors in production. Disable suggestions."
+        },
+        {
+            "id": "complexity_analysis",
+            "type": "content",
+            "title": "Query Cost Analysis",
+            "content": "# Cost Analysis 💰\n\nAdvanced defense against DoS.\n\n## Concept\nAssign a \"cost\" to every field.\n-   `scalar` (int, string) = 1 point\n-   `object` (User) = 5 points\n-   `list` (posts) = 10 points\n\nCalculate total complexity *before* execution. If > 1000, reject query."
+        },
+        {
+            "id": "complexity_code",
+            "type": "content",
+            "title": "Cost Calculation",
+            "content": "# Calculation Logic 🧮\n\n```graphql\n# Total Cost: 2 + 10 + (5 * 2) = 22\nquery { \n  user {        # 5\n    name        # 1\n    posts {     # 10\n      title     # 1\n      body      # 1\n    }\n  }\n}\n```"
+        },
+        {
+            "id": "csrf_graphql",
+            "type": "content",
+            "title": "CSRF in GraphQL",
+            "content": "# CSRF via GET 🎣\n\nGraphQL is usually POST+JSON (safe from CSRF if Content-Type is validated).\n\n## The Catch\nMany libraries *also* support GraphQL via **GET** query parameters.\n`GET /graphql?query=mutation{deleteUser(id:1)}`\n\nThis makes it vulnerable to CSRF via simple links or images.\n\n> 🛡️ **Fix**: Disable GET method support for Mutations."
+        },
+        {
+            "id": "ssrf_graphql",
+            "type": "content",
+            "title": "SSRF in GraphQL",
+            "content": "# SSRF Vectors 🔗\n\nDoes your schema allow fetching URLs?\n\n`mutation { uploadImage(url: \"http://169.254.169.254/...\") }`\n\nSince GraphQL backends are often \"Gateway\" services aggregating data from other microservices, SSRF is a high risk."
+        },
+        {
+            "id": "directives_abuse",
+            "type": "content",
+            "title": "Directive Abuse",
+            "content": "# Directives Abuse 🎬\n\nGraphQL Directives (`@include`, `@skip`) modify query execution.\n\n## Abuse\nAttackers might use custom directives provided by libraries (like `@deprecated`) to bypass filters or cause unexpected server behavior."
+        },
+        {
+            "id": "graphql_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **Disable Introspection**: Don't leak the map.\n-   **Limit Depth/Cost**: Stop DoS attacks.\n-   **Auth in Resolvers**: Authorization must be granular.\n-   **Input Validation**: Strong typing isn't enough; validate logic.\n-   **Disable Batching**: Or rate limit it correctly.\n\nGraphQL is powerful, but power requires control!"
+        }
+    ]
+}

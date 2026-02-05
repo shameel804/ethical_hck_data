@@ -1,0 +1,119 @@
+{
+    "id": "learn_macos_security",
+    "topicId": "macos_security",
+    "topicTitle": "macOS Security",
+    "description": "Deep dive into Apple's walled garden security model: Gatekeeper, SIP, TCC and the Apple Silicon architecture.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "macos_intro_1",
+            "type": "content",
+            "title": "Apple's Walled Garden",
+            "content": "# macOS Security Philosophy 🍎\n\nApple prioritizes consumer safety and privacy, often at the expense of user freedom.\n\n## Core Layers\n-   **Hardware**: T2/M-series chips (Secure Enclave).\n-   **Software**: Gatekeeper, XProtect.\n-   **Runtime**: SIP, Hardened Runtime, Sandboxing."
+        },
+        {
+            "id": "gatekeeper_1",
+            "type": "content",
+            "title": "Gatekeeper & Notarization",
+            "content": "# Gatekeeper 🛡️\n\nEnsures trustworthy software.\n\n## The process\n1.  **Quarantine**: Files downloaded from the web get the `com.apple.quarantine` extended attribute.\n2.  **Check**: On first launch, Gatekeeper checks if the app is **Code Signed** by a Developer ID and **Notarized** (scanned by Apple for malware).\n3.  **Block**: Unsigned/Unnotarized apps are blocked by default."
+        },
+        {
+            "id": "gatekeeper_bypass",
+            "type": "content",
+            "title": "Gatekeeper Bypasses",
+            "content": "# Bypassing Gatekeeper 🚧\n\n-   **Rights**: Gatekeeper only checks the app bundle `.app`. If you run the binary inside via terminal, it might bypass.\n-   **Formats**: Historically, script formats or symbolic links sometimes evaded the quarantine flag application.\n-   **Override**: Right-click -> Open forces an override."
+        },
+        {
+            "id": "sip_1",
+            "type": "content",
+            "title": "System Integrity Protection (SIP)",
+            "content": "# SIP (Rootless) 🌳\n\nEven **Root** cannot modify system files.\n\n## Protected Paths\n-   `/System`, `/usr`, `/bin`, `/sbin`.\n-   Only Apple installers/updates (signed with special entitlements) can modify these.\n-   Prevents malware from overwriting system binaries to persist or hook OS calls."
+        },
+        {
+            "id": "sip_quiz",
+            "type": "quiz",
+            "title": "SIP Quiz",
+            "content": "Root vs SIP.",
+            "quizQuestion": "Can the 'root' user modify files in /System on a standard macOS installation?",
+            "quizOptions": [
+                "Yes, root has all permissions",
+                "No, SIP prevents this",
+                "Yes, but only via GUI",
+                "No, because the disk is read-only"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "xprotect_mrt",
+            "type": "content",
+            "title": "XProtect & MRT",
+            "content": "# Built-in AV 🦠\n\n-   **XProtect**: Basic signature-based malware detection (Yara rules). Checks on file launch.\n-   **MRT (Malware Removal Tool)**: Runs in the background to remediate infections.\n-   **Updates**: Occur silently in the background, independent of macOS updates."
+        },
+        {
+            "id": "tcc_1",
+            "type": "content",
+            "title": "TCC (Transparency, Consent, Control)",
+            "content": "# Privacy Permissions ✋\n\nThe \"Pop-up\" system.\n\n## Controlled Resources\n-   Camera, Microphone.\n-   Documents, Downloads, Desktop.\n-   Accessibility (controlling the mouse/keyboard).\n-   Full Disk Access.\n\nDatabase: `/Library/Application Support/com.apple.TCC/TCC.db` (Protected by SIP)."
+        },
+        {
+            "id": "tcc_bypass",
+            "type": "content",
+            "title": "TCC Bypasses",
+            "content": "# Bypassing TCC 🕵️\n\nA major area of macOS research.\n\n-   **Clickjacking**: Drawing a window over the \"Allow\" button.\n-   **Injection**: Injecting code into an app that *already* has the permission (e.g., Terminal or Finder).\n-   **SSH**: If you have SSH access, TCC often blocks you from reading `~/Documents`. Bypasses involve finding apps with FDA (Full Disk Access) and piggybacking."
+        },
+        {
+            "id": "filevault_1",
+            "type": "content",
+            "title": "FileVault 2",
+            "content": "# FileVault 🔐\n\nFull Disk Encryption (XTS-AES-128).\n\n-   **Volume Encryption**: Encrypts the Data volume.\n-   **Key Management**: Keys are wrapped by the user's password and/or a Recovery Key.\n-   **Secure Boot**: On Apple Silicon, encryption is tied to the hardware UID of the Secure Enclave."
+        },
+        {
+            "id": "macos_sandboxing",
+            "type": "content",
+            "title": "App Sandboxing",
+            "content": "# App Sandbox 📦\n\nMandatory for App Store apps.\n\n## Constraints\n-   Cannot read files outside its container (`~/Library/Containers/com.app.name/`).\n-   Cannot access Hardware (Cam/Mic) without Entitlements.\n-   Cannot launch other apps.\n-   **Escapes**: Exploiting XPC services/IPC to talk to privileged processes."
+        },
+        {
+            "id": "keychain_1",
+            "type": "content",
+            "title": "Keychain",
+            "content": "# Keychain 🔑\n\nSystem-wide password manager.\n\n-   Stores Wi-Fi keys, Website passwords, Certs, Secure Notes.\n-   **ACLs**: Each item has an Access Control List. \"Only Chrome can read this password\".\n-   **Attack**: If you get root/user access, you can dump the keychain (requires user interaction/permission prompt usually, but exploits exist)."
+        },
+        {
+            "id": "secure_enclave",
+            "type": "content",
+            "title": "Secure Enclave (SEP)",
+            "content": "# Secure Enclave Processor 🏰\n\nA separate coprocessor.\n\n-   Handles Touch ID / Face ID biometric data (never leaves the chip).\n-   Stores encryption keys.\n-   **Hardware isolation**: Even if the main kernel is compromised, the SEP should remain secure."
+        },
+        {
+            "id": "signed_system_volume",
+            "type": "content",
+            "title": "Signed System Volume (SSV)",
+            "content": "# SSV (Big Sur+) 💿\n\nTaking SIP further.\n\nThe system volume is **Read-Only** and **Cryptographically Signed** (SHA-256 Merkle Tree).\n\n-   The OS doesn't boot from the files; it boots from the snapshot.\n-   Any modification breaks the signature, and the Mac refuses to boot.\n-   Makes persistence in `/System` impossible."
+        },
+        {
+            "id": "entitlements_1",
+            "type": "content",
+            "title": "Entitlements",
+            "content": "# Entitlements 🎫\n\nKey-Value pairs signed into the app binary.\n\n-   `com.apple.security.app-sandbox`: true\n-   `com.apple.security.device.camera`: true\n\nThe kernel enforces these. If an app tries to use the camera without the entitlement, the kernel kills the request."
+        },
+        {
+            "id": "entitlements_code",
+            "type": "content",
+            "title": "Checking Entitlements",
+            "content": "# Codesign Tool 💻\n\n```bash\ncodesign -d --entitlements - /System/Applications/Calculator.app\n```\n\n<!-- FULL_CODE_START\nprint(\"=== Entitlement Checker Concept ===\")\n\ndef check_entitlements(app_name):\n    print(f\"[*] Checking entitlements for {app_name}...\")\n    # In a real environment, we would run: \n    # codesign -d --entitlements - /Path/To/App\n    \n    if app_name == \"Terminal\":\n        print(\"  > com.apple.security.device.camera: false\")\n        print(\"  > com.apple.rootless.storage.TaskportSafe: true\")\n    elif app_name == \"Zoom\":\n        print(\"  > com.apple.security.device.camera: true\")\n        print(\"  > com.apple.security.device.microphone: true\")\n\ncheck_entitlements(\"Zoom\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "kexts_system_extensions",
+            "type": "content",
+            "title": "Kexts vs System Extensions",
+            "content": "# Kernel Extensions 🧩\n\n-   **Kexts**: Code running in Ring 0 (Kernel). One crash = Kernel Panic. Being deprecated.\n-   **System Extensions**: Modern replacement. Run in Userspace. Safer, more stable.\n-   **Attack Surface**: Kexts are a prime target for exploits to gain Ring 0 execution."
+        },
+        {
+            "id": "macos_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **Layers**: Hardware (SEP) -> Kernel (SIP/SSV) -> User (Gatekeeper/TCC).\n-   **Philosophy**: Trust code (Signing) and verify Consent (TCC).\n-   **Forensics**: Harder due to volume encryption and TCC blocking tools.\n\nmacOS is robust, but user error (allowing permissions) remains a weakness."
+        }
+    ]
+}

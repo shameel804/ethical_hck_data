@@ -1,0 +1,125 @@
+{
+    "id": "learn_rest_api_security",
+    "topicId": "rest_api_security",
+    "topicTitle": "REST API Security",
+    "description": "Learn how to secure REST APIs, focusing on authentication, authorization, rate limiting, and input validation.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "api_intro_1",
+            "type": "content",
+            "title": "The API Economy 🌐",
+            "content": "# APIs Everywhere\n\n**Application Programming Interfaces (APIs)** interact with data more than humans do. They are the backbone of modern apps (Mobile, SPA, B2B).\n\n## REST (Representational State Transfer)\nThe most common architectural style using standard HTTP methods (GET, POST, PUT, DELETE)."
+        },
+        {
+            "id": "auth_n_1",
+            "type": "content",
+            "title": "API Authentication (AuthN)",
+            "content": "# Who are you? 🆔\n\nVerifying identity in a stateless world.\n\n## Common Mechanisms\n-   **Basic Auth**: Base64(`user:pass`). Simple but risky (cred stuffing).\n-   **API Keys**: A long string sent in headers (`X-API-Key`). Good for machine identification, bad for user identity.\n-   **Bearer Tokens (JWT)**: The standard. Signed tokens containing claims."
+        },
+        {
+            "id": "auth_z_1",
+            "type": "content",
+            "title": "API Authorization (AuthZ)",
+            "content": "# What can you do? 🛑\n\nJust because you are logged in doesn't mean you can do everything.\n\n## Failures\n-   **BOLA (Broken Object Level Authorization)**: IDOR for APIs. Accessing `/api/orders/123` when you own order `122`.\n-   **BFLA (Broken Function Level Authorization)**: A regular user sending `DELETE /api/users/5`. Missing role checks in the code."
+        },
+        {
+            "id": "bola_quiz",
+            "type": "quiz",
+            "title": "BOLA Quiz",
+            "content": "Test your AuthZ knowledge.",
+            "quizQuestion": "What corresponds to IDOR in the OWASP API Top 10?",
+            "quizOptions": [
+                "Mass Assignment",
+                "Security Misconfiguration",
+                "Broken Object Level Authorization (BOLA)",
+                "Improper Assets Management"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "rate_limiting_1",
+            "type": "content",
+            "title": "Rate Limiting",
+            "content": "# Throttling Requests 🚦\n\nPreventing abuse and DoS.\n\n## Strategies\n-   **User-based**: 100 req/min per User ID.\n-   **IP-based**: 1000 req/min per IP (bypassable via proxies).\n-   **Resource-based**: Heavy endpoints (e.g., `POST /export-pdf`) get stricter limits (5 req/min).\n\n> 🛡️ **Response**: Return `429 Too Many Requests` with `Retry-After` header."
+        },
+        {
+            "id": "input_validation_1",
+            "type": "content",
+            "title": "Input Validation",
+            "content": "# Trust No One 🕵️‍♀️\n\nAPIs receive structured data (JSON, XML).\n\n## Schema Validation\nDefine a strict schema for every endpoint.\n-   Type: String, Int, Boolean\n-   Format: Email, UUID, Date\n-   Length: Min 1, Max 100\n-   Pattern: Regex `^[a-zA-Z0-9]+$`\n\n> ❌ **Fail Fast**: Reject invalid JSON before processing business logic."
+        },
+        {
+            "id": "schema_code",
+            "type": "content",
+            "title": "Validation Example",
+            "content": "# Python Schema Validation 🐍\n\n```python\nfrom pydantic import BaseModel, EmailStr\n\nclass UserSignup(BaseModel):\n    username: str\n    email: EmailStr\n    age: int\n\n# Automatically rejects:\n# {\"username\": \"bob\", \"email\": \"not-an-email\", \"age\": \"five\"}\n```\n\n<!-- FULL_CODE_START\nfrom pydantic import BaseModel, EmailStr, ValidationError\n\nprint(\"=== Pydantic Schema Validation Demo ===\")\n\n# Define the strict schema\nclass UserSignup(BaseModel):\n    username: str\n    email: EmailStr\n    age: int\n\ndef process_signup(data):\n    try:\n        print(f\"\\n[*] Processing: {data}\")\n        user = UserSignup(**data)\n        print(f\"[+] Validated User: {user.username} is {user.age} years old.\")\n    except ValidationError as e:\n        print(f\"[-] Validation Failed: {e}\")\n\n# 1. Valid Data\nprocess_signup({\n    \"username\": \"alice\",\n    \"email\": \"alice@example.com\",\n    \"age\": 25\n})\n\n# 2. Invalid Email\nprocess_signup({\n    \"username\": \"bob\",\n    \"email\": \"generic-string\",\n    \"age\": 30\n})\n\n# 3. Invalid Type (String for Integer)\nprocess_signup({\n    \"username\": \"charlie\",\n    \"email\": \"charlie@example.com\",\n    \"age\": \"twenty\"\n})\nFULL_CODE_END -->"
+        },
+        {
+            "id": "mass_assignment_1",
+            "type": "content",
+            "title": "Mass Assignment",
+            "content": "# Mass Assignment 📦\n\nAuto-binding incoming JSON to internal code objects.\n\n## The Flaw\n-   Code: `user.update(request.json)`\n-   Request: `{\"username\": \"newname\", \"role\": \"admin\"}`\n-   Result: User becomes admin because the `role` field wasn't stripped/blocked.\n\n> 🛡️ **Fix**: Use DTOs (Data Transfer Objects) or `white-lists` of allowed fields."
+        },
+        {
+            "id": "error_handling_1",
+            "type": "content",
+            "title": "Error Handling",
+            "content": "# Leaky Errors 🚰\n\nAPIs often return detailed stack traces in JSON responses during development, which are left in production.\n\n## Information Leakage\n-   Database versions\n-   Internal file paths\n-   Library dependencies\n\n> 🛡️ **Fix**: Global Error Handler used to catch exceptions and return generic messages: `{\"error\": \"Internal Server Error\", \"ref\": \"#12345\"}`."
+        },
+        {
+            "id": "injection_api",
+            "type": "content",
+            "title": "API Injection",
+            "content": "# Injection in APIs 💉\n\nSQLi and NoSQLi are prevalent in APIs.\n\n## NoSQL Injection (MongoDB)\n-   Target: Login endpoint.\n-   Payload: `{\"username\": \"admin\", \"password\": {\"$ne\": \"\"}}`\n-   Query Logic: Find user \"admin\" where password is \"NOT EQUAL\" to empty.\n-   Result: Bypasses password check."
+        },
+        {
+            "id": "nosqli_code",
+            "type": "content",
+            "title": "NoSQLi Example",
+            "content": "# MongoDB Injection 🍃\n\n```javascript\n// Vulnerable\ndb.users.find({\n    username: req.body.username,\n    password: req.body.password\n});\n// Attacker sends JSON object for password\n// { \"$ne\": \"xyz\" }\n```\n\n> 🛡️ **Fix**: Sanitize input types. Ensure `password` is a string, not an object."
+        },
+        {
+            "id": "api_keys_in_code",
+            "type": "content",
+            "title": "Hardcoded Secrets",
+            "content": "# Secrets Management 🗝️\n\nDevelopers accidentally committing API keys to GitHub or baking them into mobile apps.\n\n## Tools to prevent this\n-   **GitLeaks / TruffleHog**: Scan repos for high-entropy strings.\n-   **Env Vars**: Store secrets in environment variables, not code.\n-   **Vault**: Use dynamic secret injection at runtime."
+        },
+        {
+            "id": "improper_assets",
+            "type": "content",
+            "title": "Improper Assets Management",
+            "content": "# Zombie APIs 🧟\n\nOld versions of APIs (v1, v2) left running while everyone uses v3.\n\n## The Risk\n-   Old APIs often lack modern security controls (like Rate Limiting or updated Auth).\n-   Attackers target `/api/v1/login` to bypass defenses implemented in `/api/v3/login`.\n\n> 🛡️ **Fix**: Decommission old versions aggressively. Maintain an accurate inventory."
+        },
+        {
+            "id": "http_methods",
+            "type": "content",
+            "title": "HTTP Verb Tampering",
+            "content": "# Verb Tampering 🗣️\n\nAccess controls might only block `GET` but allow `HEAD` or `POST`.\n\n## Scenario\n-   Rule: `Block GET /admin/users`\n-   Attack: `POST /admin/users` (might return the list if the framework defaults to handling it).\n-   Attack: `HEAD /admin/users` (might return headers 200 OK, confirming existence)."
+        },
+        {
+            "id": "pagination_dos",
+            "type": "content",
+            "title": "Pagination Attacks",
+            "content": "# Pagination DoS 📄\n\nAPIs return lists of data.\n\n## Abuse\n-   Request: `GET /users?limit=1000000`\n-   Database attempts to fetch 1 million rows.\n-   Server OOM (Out of Memory) crash.\n\n> 🛡️ **Fix**: Hard limit pagination (max=100). Enforce default limits."
+        },
+        {
+            "id": "cors_api",
+            "type": "content",
+            "title": "CORS for APIs",
+            "content": "# Relaxed CORS 🔓\n\nAPIs meant for mobile apps often inadvertently enable CORS for browsers.\n\n## Preflight\n-   Browser sends `OPTIONS` request first.\n-   Server replies with allowed origins.\n-   If `Access-Control-Allow-Origin: *` is used with Auth, it's a vulnerability."
+        },
+        {
+            "id": "logging_mon_api",
+            "type": "content",
+            "title": "Logging & Monitoring",
+            "content": "# API Observability 👁️\n\nYou need to know who is calling what.\n\n## What to log\n-   Identity (User ID / API Key Hash)\n-   Endpoint + Method\n-   Response Status Code\n-   **Latency** (Slow responses might indicate DoS or SQLi time-based attacks)."
+        },
+        {
+            "id": "rest_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **BOLA**: The #1 API killer. Check ownership.\n-   **Rate Limits**: Essential for availability.\n-   **Mass Assignment**: Don't bind blindly.\n-   **Schema Validation**: Reject bad JSON early.\n-   **Inventory**: Know what APIs (and versions) you have exposed.\n\nNext: GraphQL Security!"
+        }
+    ]
+}

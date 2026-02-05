@@ -1,0 +1,107 @@
+{
+    "id": "learn_api_abuse",
+    "topicId": "api_abuse",
+    "topicTitle": "API Abuse Techniques",
+    "description": "Techniques used to manipulate business logic, pollute parameters, and bypass controls in APIs.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "abuse_intro_1",
+            "type": "content",
+            "title": "Logic vs Bugs",
+            "content": "# Hacking the Logic 🧠\n\nAPI Abuse often doesn't rely on \"bugs\" (buffer overflows, SQLi) but on how component logic is implemented.\n\nIt's \"Using the feature in a way the developer didn't anticipate.\"\n\n## Focus Areas\n-   Parameter Pollution\n-   Business Logic Flaws\n-   Mass Assignment"
+        },
+        {
+            "id": "hpp_1",
+            "type": "content",
+            "title": "HTTP Parameter Pollution (HPP)",
+            "content": "# Parameter Pollution 🏭\n\nSending the same parameter multiple times to confuse the backend.\n\n## Example\n`GET /transfer?to=bob&amount=100&to=alice`\n\n## Server behaviors vary\n-   **PHP/Apache**: Takes the *last* value (`alice`).\n-   **ASP.NET/IIS**: Concatenates them (`bob,alice`).\n-   **Node.js**: Creates an array (`['bob', 'alice']`).\n-   **Java**: Takes the *first* value (`bob`)."
+        },
+        {
+            "id": "hpp_abuse",
+            "type": "content",
+            "title": "HPP Exploitation",
+            "content": "# Utilizing HPP 🛠️\n\n## WAF Bypass\nProfile: `GET /products?id=105 OR 1=1` (Blocked by WAF)\n\nHPP: `GET /products?id=105&id=OR&id=1=1`\n-   WAF sees 3 separate safe params.\n-   Server (ASP.NET) joins them: `id=105 OR 1=1` -> **Injected!**\n\n## Logic Override\n`POST /reset_password?email=victim@mail.com&email=attacker@mail.com`\n-   App sends email to first arg.\n-   App resets password for second arg."
+        },
+        {
+            "id": "mass_assignment_deep",
+            "type": "content",
+            "title": "Mass Assignment Deep Dive",
+            "content": "# Mass Assignment 📦\n\nAlso known as Auto-Binding.\n\n## Scenario\n-   User Model: `{ id, username, password, role, balance }`\n-   Signup Form: Sends `{ username, password }`\n-   Controller: `User.create(req.body)`\n\n## Attack\n-   Attacker sends: `{ username, password, balance: 1000000 }`\n-   Controller blindly accepts extraneous fields.\n-   Attacker starts rich."
+        },
+        {
+            "id": "mass_assignment_quiz",
+            "type": "quiz",
+            "title": "Mass Assignment Quiz",
+            "content": "Check your DTO knowledge.",
+            "quizQuestion": "Which design pattern prevents Mass Assignment?",
+            "quizOptions": [
+                "Singleton",
+                "Data Transfer Object (DTO)",
+                "Factory Pattern",
+                "Observer Pattern"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "business_logic_bypass_1",
+            "type": "content",
+            "title": "Business Logic Bypass",
+            "content": "# Flawed Logic 🧩\n\nExploiting the workflow.\n\n## e.g., The Coupon Glitch\n1.  Add item to cart ($100).\n2.  Apply coupon ($10 off) -> Total $90.\n3.  Remove item.\n4.  Add item again.\n5.  Total is now $90, but coupon button is re-enabled?\n6.  Apply coupon again -> Total $80.\n7.  Repeat until free."
+        },
+        {
+            "id": "logic_bypass_code",
+            "type": "content",
+            "title": "Logic Flaw Example",
+            "content": "# Python Cart Logic 🐍\n\n```python\ndef apply_coupon(cart, code):\n    if code == \"SAVE10\":\n        cart.discount += 10\n    # Flaw: Does not check if SAVE10 was already used\n    # Flaw: Does not check if discount > cart.total\n```\n\n> 🛡️ **Fix**: Maintain state correctly. `if code in cart.used_coupons: error()`."
+        },
+        {
+            "id": "excessive_data_exposure",
+            "type": "content",
+            "title": "Excessive Data Exposure",
+            "content": "# Sending Too Much 📡\n\nThe API sends a full object, relying on the client app to filter it.\n\n## Example\n-   App shows: User's Name and Avatar.\n-   API returns: `{ id, name, avatar, email, phone, address, ssn }`\n-   Mobile App: Reads `name` and `avatar`, ignores the rest.\n-   **Attacker**: Intercepts traffic (Burp Suite) and sees the `ssn` and `address`."
+        },
+        {
+            "id": "function_level_ac_1",
+            "type": "content",
+            "title": "Broken Function Level Auth",
+            "content": "# Hidden Admin Functions 🙈\n\n## Discovery\n-   Guessing URLs: `/api/admin`, `/api/users/delete`.\n-   Monitoring Errors: \"Access Denied\" vs \"Not Found\".\n-   Analyzing Javascript: Finding commented out admin UI code referencing API endpoints.\n\n## Exploitation\n-   Changing HTTP Method: `GET /users` works for everyone. `DELETE /users` might lack the check.\n-   Changing Hierarchy: `/api/users/v1/profile` -> `/api/admins/v1/profile`."
+        },
+        {
+            "id": "api_scraping",
+            "type": "content",
+            "title": "API Scraping",
+            "content": "# Automated Scraping 🤖\n\nAPIs are structured data, making them perfect targets for scrapers.\n\n## Competitor Analysis\n-   Attacker loops through catalog IDs: `GET /products/{id}` from 1 to 100000.\n-   Extracts pricing, inventory levels, descriptions.\n-   Replicates your business database.\n\n> 🛡️ **Fix**: Rate limiting, CAPTCHA on suspicious volumes, User Behavior Analytics."
+        },
+        {
+            "id": "improper_inventory",
+            "type": "content",
+            "title": "Improper Assets Management",
+            "content": "# Lost in the Cloud ☁️\n\n-   **Staging/Dev environments**: Often connected to production DB but have weaker security (Debug mode enabled, no Auth).\n-   **Old Versions**: v1 had a flaw. v2 fixed it. But v1 is still running \"for backward compatibility\" and attackers use it."
+        },
+        {
+            "id": "lack_of_resources",
+            "type": "content",
+            "title": "Lack of Resources & Rate Limiting",
+            "content": "# Unlimited Consumption 🍽️\n\nAPI endpoints often consume CPU/Memory/Disk/SMS credits.\n\n## Attacks\n-   **SMS Bombing**: Triggering the \"Send OTP\" endpoint 10,000 times to a victim number (costing you money).\n-   **Zip Bomb**: Uploading a zip file that decompresses to petabytes.\n-   **Regular Expression DoS (ReDoS)**: Sending strings that cause regex engines to hang."
+        },
+        {
+            "id": "redos_code",
+            "type": "content",
+            "title": "ReDoS Example",
+            "content": "# Regex DoS 🐌\n\nRegex: `(a+)+b`\nInput: `aaaaaaaaaaaaaaaaaaaaaaac`\n\nThe engine backtracks exponentially trying to match. A short string can hang the CPU for seconds or minutes.\n\n> 🛡️ **Fix**: Use safe regex engines (Re2) or avoid nested quantifiers."
+        },
+        {
+            "id": "integrity_check",
+            "type": "content",
+            "title": "Integrity Check Bypass",
+            "content": "# Client-Side Integrity 🤥\n\nSome APIs rely on the client to calculate prices or integrity hashes.\n\n## Example\n-   Request: `POST /order { \"item\": \"PS5\", \"price\": 10, \"checksum\": \"...\" }`\n-   App logic: Client calculates price.\n-   Attacker: Modifies price to $10, recalculates checksum (if alg is known/in JS), sends request.\n\n> 🛡️ **Fix**: Calculate pricing/totals on the **Server** only."
+        },
+        {
+            "id": "api_abuse_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **HPP**: Confusing the server with duplicate params.\n-   **Logic**: It's not a syntax error, it's a process error.\n-   **Scraping**: Protecting data from automated theft.\n-   **Resources**: Everything costs something (CPU, DB, SMS). Rate limit it.\n\nThink like a thief: \"What if I do steps 1, 3, then 2?\""
+        }
+    ]
+}

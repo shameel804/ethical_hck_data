@@ -1,0 +1,105 @@
+{
+    "id": "learn_advanced_priv_esc",
+    "topicId": "advanced_priv_esc",
+    "topicTitle": "Advanced Privilege Escalation",
+    "description": "Exploiting modern and complex systems: PrintSpooler, Docker, Kubernetes, and Cloud environments.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "adv_priv_intro_1",
+            "type": "content",
+            "title": "Beyond Basics 🚀",
+            "content": "# The New Frontier\n\nBasic misconfigurations (SUID, Unquoted Paths) are often patched automatically.\n\nModern PrivEsc targets:\n-   **Complex Services**: Print Spooler, Exchange.\n-   **Virtualization**: Docker, K8s.\n-   **Cloud**: AWS IAM, Azure AD."
+        },
+        {
+            "id": "printnightmare",
+            "type": "content",
+            "title": "PrintNightmare",
+            "content": "# PrintNightmare (CVE-2021-34527) 🖨️\n\nA flaw in the Windows Print Spooler service (`spoolsv.exe`).\n\n## The Bug\n-   The service runs as **SYSTEM**.\n-   It allows authenticated users to install printer drivers.\n-   **Exploit**: Tell the spooler to install a driver located at `\\\\attacker\\malicious.dll`.\n-   **Result**: The DLL is loaded and executed by the Spooler (SYSTEM)."
+        },
+        {
+            "id": "docker_sock_abuse",
+            "type": "content",
+            "title": "Docker Socket Abuse",
+            "content": "# Docker Socket 🐳\n\n`docker.sock` is the Unix socket used to talk to the Docker Daemon.\n\n## Scenario\n-   You are in a container or on a host as a user in the `docker` group.\n-   **Power**: Being in the `docker` group is equivalent to **Root**.\n-   **Exploit**: `docker run -v /:/mnt -it alpine`\n-   This mounts the host's root filesystem (`/`) to `/mnt` inside the container. You can now edit `/mnt/etc/passwd` of the host."
+        },
+        {
+            "id": "kubernetes_priv_esc",
+            "type": "content",
+            "title": "Kubernetes (K8s) PrivEsc",
+            "content": "# Kubernetes RBAC ☸️\n\nRole-Based Access Control.\n\n## Service Accounts\n-   Every pod has a service account token mounted at `/var/run/secrets/kubernetes.io/serviceaccount/token`.\n-   **Attack**: Check permissions: `kubectl auth can-i create pods`.\n-   If you can create pods, create a privileged pod that mounts the node's filesystem."
+        },
+        {
+            "id": "aws_iam_priv_esc",
+            "type": "content",
+            "title": "AWS IAM PrivEsc",
+            "content": "# AWS IAM Escalation ☁️\n\nStarting with low-privilege IAM keys and becoming Administrator.\n\n## Vectors\n-   `iam:CreatePolicyVersion`: Create a new version of a policy that allows `*` on `*`.\n-   `iam:AttachUserPolicy`: Attach the `AdministratorAccess` policy to your own user.\n-   `ec2:CreateInstanceWithProfile`: Create a new EC2 instance passing an Admin Role, then SSH into it."
+        },
+        {
+            "id": "azure_ad_connect",
+            "type": "content",
+            "title": "Azure AD Connect",
+            "content": "# AD Connect ☁️\n\nSyncs on-prem AD to Azure AD.\n\n## The Threat\n-   The AD Connect server has a service account with \"Replicate Directory Changes\" permissions (DCSync).\n-   If you compromise the AD Connect server (local admin), you can extract credentials and DCSync the on-prem domain, getting the KRBTGT hash."
+        },
+        {
+            "id": "token_manipulation_adv",
+            "type": "content",
+            "title": "Advanced Token Manipulation",
+            "content": "# SeDebugPrivilege 🐛\n\nIf a user has `SeDebugPrivilege` (often given to developers to debug apps).\n\n-   It allows the user to open ANY process (even SYSTEM processes like `lsass.exe`) with full access.\n-   **Exploit**: Inject shellcode into a running SYSTEM service."
+        },
+        {
+            "id": "named_pipes",
+            "type": "content",
+            "title": "Named Pipes",
+            "content": "# Named Pipes 🚰\n\nInter-process communication on Windows.\n\n## Impersonation\n-   If a client connects to a server's pipe, the server can **Impersonate** the client.\n-   **Attack**: Create a malicious pipe. Trick a SYSTEM service into writing to it (e.g., via a Printer bug or SQL exploit). Impersonate the SYSTEM token."
+        },
+        {
+            "id": "cve_2022_0847",
+            "type": "content",
+            "title": "Dirty Pipe (Linux)",
+            "content": "# Dirty Pipe 🛠️\n\nSpecifically CVE-2022-0847.\n\n## Mechanism\n-   Allows overwriting data in read-only files due to uninitialized pipe buffers.\n-   **Exploit**: Overwrite `/etc/passwd` (remove the `x` in the password field for root).\n-   **Impact**: Instant root without crashing the system (cleaner than Dirty COW)."
+        },
+        {
+            "id": "cap_sys_admin",
+            "type": "content",
+            "title": "CAP_SYS_ADMIN",
+            "content": "# The God Capability ⚡\n\nIn Linux/Docker, `CAP_SYS_ADMIN` is almost effectively root.\n\n-   Allows mounting filesystems.\n-   Allows configuring cgroups.\n-   Allows debugging.\n\nIf you find a container with this capability, breakout is almost guaranteed."
+        },
+        {
+            "id": "exchange_proxyshell",
+            "type": "content",
+            "title": "Exchange ProxyShell",
+            "content": "# Exchange Server 📧\n\nA high-value target.\n\n## ProxyShell Chain\n-   **Authentication Bypass**: Access the backend PowerShell remoting.\n-   **Privilege Escalation**: Execute commands as SYSTEM.\n-   Because Exchange usually runs as SYSTEM and has high rights in the Domain (Exchange Windows Permissions), compromising it often leads to Domain Admin."
+        },
+        {
+            "id": "adv_quiz",
+            "type": "content",
+            "title": "Advanced Quiz",
+            "content": "# Quick Check 🧠\n\n**Q**: Which AWS permission allows you to attach an Administrator policy to a user?\n\n-   A) `iam:ListUsers`\n-   B) `iam:AttachUserPolicy`\n-   C) `s3:ListBuckets`\n\n**Answer**: B."
+        },
+        {
+            "id": "shadow_credentials",
+            "type": "content",
+            "title": "Shadow Credentials",
+            "content": "# Shadow Credentials 👻\n\nAbusing `msDS-KeyCredentialLink`.\n\n-   Modern way to takeover accounts (Windows Hello for Business feature).\n-   **Attack**: If you have write access to a Computer/User object, you can inject a Key Credential (certificate) and authenticate as them using PKINIT (Kerberos) without ever knowing their password."
+        },
+        {
+            "id": "petitpotam",
+            "type": "content",
+            "title": "PetitPotam",
+            "content": "# PetitPotam 🦛\n\nCoercing Authentication.\n\n-   Forces a Windows host (even a Domain Controller) to authenticate to a machine of your choice via NTLM.\n-   **Chain with AD CS**: Relay this NTLM auth to the Active Directory Certificate Service (AD CS) to request a certificate for the DC. Use cert to be DC."
+        },
+        {
+            "id": "process_doppelganging",
+            "type": "content",
+            "title": "Process Doppelgänging",
+            "content": "# Evading AV/EDR 👻\n\nAdvanced technical evasion.\n\n-   Uses Transactional NTFS (TxF).\n-   Overwrites a legitimate executable inside a transaction, maps a section, then rolls back the transaction.\n-   The file on disk never changes, but the process executing in memory is malicious."
+        },
+        {
+            "id": "advanced_priv_esc_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **Cloud**: Identity (IAM) is the new perimeter.\n-   **Containers**: Breakouts via sockets and capabilities.\n-   **Windows**: Coercion (PetitPotam) and Relay (AD CS).\n\nAdvanced PrivEsc requires understanding the *architecture*, not just running scripts."
+        }
+    ]
+}

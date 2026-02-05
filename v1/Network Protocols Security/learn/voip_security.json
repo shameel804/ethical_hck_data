@@ -1,0 +1,127 @@
+{
+    "id": "learn_voip_security",
+    "topicId": "voip_security",
+    "topicTitle": "VoIP & SIP Security",
+    "description": "Explore the world of Voice over IP security, covering SIP vulnerabilities, eavesdropping, and denial of service attacks.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "voip_intro_1",
+            "type": "content",
+            "title": "VoIP Overview",
+            "content": "# Voice over IP (VoIP) 📞\n\n**VoIP** allows voice communications over IP networks (Internet, LANs), replacing traditional phone lines.\n\n## Key Protocols\n-   **SIP (Session Initiation Protocol)**: Signaling protocol. Sets up, modifies, and tears down calls. (Port 5060/5061)\n-   **RTP (Real-time Transport Protocol)**: Carries the actual audio/video data. (Random high ports)\n\n> ⚠️ **Risk:** VoIP inherits all standard IP network vulnerabilities, plus its own specific flaws."
+        },
+        {
+            "id": "sip_vuln_1",
+            "type": "content",
+            "title": "SIP Vulnerabilities",
+            "content": "# SIP: The Target 🎯\n\nSIP is text-based (like HTTP) and often poorly implemented.\n\n## Common Issues\n-   **Plaintext Signaling**: Credentials and call info sent in cleartext.\n-   **Registration Hijacking**: Attacker sends a REGISTER request to the server, claiming to be a legitimate user (e.g., User A), but giving the attacker's IP. All calls for User A go to the attacker.\n-   **Enumeration**: SIP provides verbose error messages (e.g., \"User not found\" vs \"Password incorrect\")."
+        },
+        {
+            "id": "sip_enum_code",
+            "type": "content",
+            "title": "SIP Enumeration Script",
+            "content": "# SIP User Enumeration 🐍\n\nUsing Python to identify valid extensions.\n\n```python\n# Sending OPTIONS request\nmsg = \"OPTIONS sip:101@target.com SIP/2.0...\"\nsock.sendto(msg.encode(), target)\n# 200 OK = User Exists\n# 404 Not Found = Invalid User\n```\n\n<!-- FULL_CODE_START\nimport socket\nimport sys\n\n# Basic SIP OPTIONS scanner concept\n# NOTE: This requires a listening SIP server to respond.\n\ndef scan_sip_extension(target_ip, target_port, extension):\n    print(f\"[*] Scanning Extension: {extension}@{target_ip}\")\n    \n    # Construct a raw SIP OPTIONS packet\n    # This is a minimal header set for demonstration\n    sip_msg = (\n        f\"OPTIONS sip:{extension}@{target_ip} SIP/2.0\\r\\n\"\n        f\"Via: SIP/2.0/UDP 192.168.1.5:5060;branch=z9hG4bK-32432\\r\\n\"\n        f\"From: <sip:scanner@192.168.1.5>;tag=1\\r\\n\"\n        f\"To: <sip:{extension}@{target_ip}>\\r\\n\"\n        f\"Call-ID: 123456789@{target_ip}\\r\\n\"\n        f\"CSeq: 1 OPTIONS\\r\\n\"\n        f\"Conten-Length: 0\\r\\n\"\n        f\"\\r\\n\"\n    )\n    \n    try:\n        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\n        sock.settimeout(2)\n        sock.sendto(sip_msg.encode(), (target_ip, target_port))\n        \n        response, addr = sock.recvfrom(1024)\n        resp_decoded = response.decode('utf-8', errors='ignore')\n        \n        # Extract status code (e.g., SIP/2.0 200 OK)\n        status_line = resp_decoded.split('\\r\\n')[0]\n        print(f\"[+] Response: {status_line}\")\n        \n        if \"200 OK\" in status_line:\n             print(f\"[!] Extension {extension} exists and is active!\")\n        elif \"404\" in status_line:\n             print(f\"[-] Extension {extension} not found.\")\n        elif \"401\" in status_line or \"407\" in status_line:\n             print(f\"[!] Extension {extension} exists (Authentication Required).\")\n             \n    except timeout:\n        print(\"[-] Timeout - No response.\")\n    except Exception as e:\n        print(f\"[-] Error: {e}\")\n\nprint(\"=== SIP Enumeration Tool Simulation ===\")\n# scan_sip_extension(\"192.168.1.100\", 5060, \"101\")\nprint(\"Code ready. Point to a valid Asterisk/SIP server to test.\")\nFULL_CODE_END -->"
+        },
+        {
+            "id": "eavesdropping_1",
+            "type": "content",
+            "title": "VoIP Eavesdropping",
+            "content": "# Eavesdropping (Vishing) 👂\n\nIntercepting audio calls.\n\n## The Mechanism\n1.  **Arp Spoofing**: Attacker inserts themselves between the phone and the Gateway.\n2.  **Capture**: Tools like Wireshark capture the RTP packets.\n3.  **Decode**: Wireshark has a built-in feature \"Telephony -> VoIP Calls -> Play Streams\" to reconstruct the audio.\n\n> 🛡️ **Defense:** SRTP (Secure RTP) encrypts the voice payload. Without the key, the captured RTP stream is just static noise."
+        },
+        {
+            "id": "call_spoofing_1",
+            "type": "content",
+            "title": "Call Spoofing",
+            "content": "# Caller ID Spoofing 🎭\n\nFaking the originating number.\n\n## How It Works\n-   In the SIP INVITE header, the `From:` field is user-controlled.\n-   `From: \"Bank Manager\" <sip:18005550000@server.com>`\n-   If the VoIP provider doesn't strictly validate this against the authenticated user, the recipient sees the trusted number.\n\n## Uses\n-   **Vishing (Voice Phishing)**: \"Hello, this is your bank security team...\"\n-   **Swatting**: Faking emergency calls from a victim's house."
+        },
+        {
+            "id": "spoofing_quiz",
+            "type": "quiz",
+            "title": "Spoofing Quiz",
+            "content": "Check your spoofing knowledge.",
+            "quizQuestion": "Which SIP header is typically modified to perform Caller ID spoofing?",
+            "quizOptions": [
+                "Via:",
+                "Call-ID:",
+                "From:",
+                "Contact:"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "dos_attacks_1",
+            "type": "content",
+            "title": "VoIP DoS",
+            "content": "# VoIP Denial of Service 🚫\n\nDisrupting phone service.\n\n## Methods\n-   **SIP Flood**: Sending thousands of INVITE requests. The server burns CPU trying to process them (ringing non-existent phones).\n-   **Bye Attack**: Sniffing an ongoing call's Call-ID and sending a spoofed `BYE` message to both parties. The call drops immediately.\n-   **Malformed Packets**: Crashing the lightweight firmware of IP phones with fuzzed packets."
+        },
+        {
+            "id": "sip_flood_diagram",
+            "type": "content",
+            "title": "SIP Flood Visual",
+            "content": "# SIP Flood Diagram\n\n```mermaid\nsequenceDiagram\n    participant Attacker\n    participant SIPServer\n    participant Phone\n    Attacker->>SIPServer: INVITE 101 @fast\n    Attacker->>SIPServer: INVITE 102 @fast\n    Attacker->>SIPServer: INVITE 103 @fast\n    SIPServer->>Phone: Ringing? (CPU Spike)\n    SIPServer->>Phone: Ringing? (CPU Spike)\n    Note right of SIPServer: Overloaded! Drop legitimate calls.\n```"
+        },
+        {
+            "id": "spit_1",
+            "type": "content",
+            "title": "SPIT Attacks",
+            "content": "# SPIT (Spam over IP Telephony) 🥫\n\nAutomated robocalls sent cheaply over VoIP.\n\n## Characteristics\n-   **Bulk Dialing**: Botnets can dial thousands of numbers per minute.\n-   **Voicemail Stuffing**: Filling up voicemail inboxes to disrupt business operations.\n-   **Cost**: near zero for the attacker, annoying/costly for the victim."
+        },
+        {
+            "id": "toll_fraud_1",
+            "type": "content",
+            "title": "Toll Fraud",
+            "content": "# Toll Fraud (Phreaking) 💸\n\nThe most financially damaging attack.\n\n## The Scenario\n1.  Attacker scans for open SIP ports or brute-forces extension passwords.\n2.  Compromises a valid account.\n3.  Routes expensive calls (Premium Rate Numbers, International calls) through the victim's server.\n\n**Result**: Victim gets a $100,000 phone bill. The attacker (who likely owns the Premium Rate Number) collects the payout."
+        },
+        {
+            "id": "mitigation_voip_1",
+            "type": "content",
+            "title": "VoIP Best Practices",
+            "content": "# VoIP Security Checklist ✅\n\n1.  **Encryption**: Use **TLS** for Signaling (SIP) and **SRTP** for Media (RTP).\n2.  **Network Segregation**: Place VoIP phones on a separate VLAN. Voice traffic shouldn't mix with Data traffic.\n3.  **Strong Auth**: Long, complex passwords for extensions. No default credentials on phones!\n4.  **Firewall**: Only allow SIP traffic from your provider's IP. Block port 5060 from the open internet."
+        },
+        {
+            "id": "auth_code",
+            "type": "content",
+            "title": "SIP Digest Auth",
+            "content": "# Understanding SIP Auth 🔐\n\nSIP uses Digest Authentication (Challenge-Response).\n\n1.  **Client**: `INVITE`\n2.  **Server**: `401 Unauthorized` (nonce)\n3.  **Client**: `INVITE` (response = MD5(user:realm:pass:nonce...))\n\n> ⚠️ **Weakness**: If an attacker captures the handshake, they can brute-force the MD5 hash offline to find the password."
+        },
+        {
+            "id": "sbc_role",
+            "type": "content",
+            "title": "Session Border Controllers",
+            "content": "# Session Border Controllers (SBC) 🚧\n\nAn SBC is a specialized firewall for VoIP.\n\n## Functions\n-   **Topology Hiding**: Replaces internal IPs in headers with the SBC's public IP.\n-   **DoS Protection**: Rate-limits INVITEs and malformed packets.\n-   **Transcoding**: Converts codecs (e.g., G.711 to G.729).\n-   **Encryption Termination**: Offloads TLS/SRTP processing."
+        },
+        {
+            "id": "sbc_quiz",
+            "type": "quiz",
+            "title": "SBC Quiz",
+            "content": "Test your defense knowledge.",
+            "quizQuestion": "What is the primary security function of an SBC regarding network topology?",
+            "quizOptions": [
+                "It broadcasts internal IPs",
+                "It hides internal network details (Topology Hiding)",
+                "It disables encryption",
+                "It acts as a DNS server"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "man_in_middle_sip",
+            "type": "content",
+            "title": "SIP Man-in-the-Middle",
+            "content": "# SIP MitM Proxy 🕵️‍♀️\n\nTools like `SiVus` or `Viproy` can intercept and modify calls on the fly.\n\n## Attack Vector\nIf signaling isn't encrypted (TLS), an attacker can Change the `INVITE` SDP body to redirect the audio stream (RTP) to a recording server before forwarding it to the victim.\n\n**Result**: Invisible tap on the line."
+        },
+        {
+            "id": "vlan_hopping",
+            "type": "content",
+            "title": "VLAN Hopping",
+            "content": "# VLAN Hopping 🐇\n\nIf VoIP is on a separate VLAN, attackers try to \"hop\" onto it.\n\n## Switch Spoofing\n-   Attacker negotiates a trunk link (DTP) with the switch.\n-   Gains access to ALL VLANs, including the Voice VLAN.\n\n> 🛡️ **Fix**: Disable DTP (Dynamic Trunking Protocol) on access ports. Ensure ports are statically configured as access ports."
+        },
+        {
+            "id": "voip_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **SIP**: The control protocol; vulnerable to spoofing, hijacking, and floods.\n-   **RTP**: The media protocol; vulnerable to eavesdropping (use SRTP).\n-   **Toll Fraud**: The biggest financial risk.\n-   **Defense**: Isolate Voice VLANs, use SBCs, and enforces TLS+SRTP.\n\nYou've completed the Network Protocols Security course! Next: Web Attacks."
+        }
+    ]
+}

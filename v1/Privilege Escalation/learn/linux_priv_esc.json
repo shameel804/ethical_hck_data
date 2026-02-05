@@ -1,0 +1,107 @@
+{
+    "id": "learn_linux_priv_esc",
+    "topicId": "linux_priv_esc",
+    "topicTitle": "Linux Privilege Escalation",
+    "description": "Techniques to elevate privileges from a standard user to root on Linux systems.",
+    "baseKP": 100,
+    "slides": [
+        {
+            "id": "linux_priv_esc_intro_1",
+            "type": "content",
+            "title": "Becoming Root 🦸",
+            "content": "# The Goal: UID 0\n\nPrivilege Escalation on Linux usually aims to get a shell running as `root` (User ID 0).\n\n## Enumeration is Key\nBefore running exploits, you must understand the system.\n-   What OS version?\n-   What services are running?\n-   What files can I write to?"
+        },
+        {
+            "id": "kernel_exploits_linux",
+            "type": "content",
+            "title": "Kernel Exploits",
+            "content": "# Dirty Cow & Friends 🐮\n\nExploiting the Linux Kernel.\n\n## Examples\n-   **Dirty COW (CVE-2016-5195)**: Race condition in Copy-On-Write logic. Impact: Write to read-only files (like `/etc/passwd`).\n-   **Dirty Pipe (CVE-2022-0847)**: Overwriting data in read-only pipes.\n-   **OverlayFS**: Exploits in the filesystem commonly used by Docker.\n\n> ⚠️ **Risk**: Kernel exploits can panic (crash) the server."
+        },
+        {
+            "id": "sudo_abuse",
+            "type": "content",
+            "title": "Sudo Abuse",
+            "content": "# Sudo Misconfigurations 📝\n\n`sudo -l` (List allowed commands).\n\n## GTFOBins\nIf you are allowed to run a binary as root, can you escape to a  shell?\n\n-   **vim**: `sudo vim -c ':!/bin/sh'`\n-   **less**: `sudo less file` -> `!/bin/sh`\n-   **find**: `sudo find . -exec /bin/sh \\;`\n\nIf you see any of these in `sudo -l`, you win."
+        },
+        {
+            "id": "gtfobins_quiz",
+            "type": "quiz",
+            "title": "Sudo Quiz",
+            "content": "Check your escape skills.",
+            "quizQuestion": "Which website is the primary reference for finding Unix binaries that can be used to bypass local security restrictions?",
+            "quizOptions": [
+                "ExploitDB",
+                "GTFOBins",
+                "StackOverflow",
+                "Github"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "suid_bit_abuse",
+            "type": "content",
+            "title": "SUID Bit Abuse",
+            "content": "# SUID Files 🚩\n\nFiles that execute with the owner's (root) privileges.\n\n## Finding them\n`find / -perm -u=s -type f 2>/dev/null`\n\n## Exploit\n-   Standard: `passwd`, `sudo`, `mount` (Safe).\n-   Abnormal: `bash`, `python`, `nmap`.\n-   If `python` has SUID: `./python -c 'import os; os.execl(\"/bin/sh\", \"sh\", \"-p\")'` -> Root shell."
+        },
+        {
+            "id": "capabilities_linux",
+            "type": "content",
+            "title": "Linux Capabilities",
+            "content": "# Capabilities 🦸‍♂️\n\nGranular permissions (breaking down root).\n\n`getcap -r / 2>/dev/null`\n\n## Dangerous Caps\n-   `cap_setuid+ep`: Process can change its UID (become root).\n-   `cap_dac_read_search+ep`: Skip file permission checks (read `/etc/shadow`)."
+        },
+        {
+            "id": "cron_jobs",
+            "type": "content",
+            "title": "Cron Jobs",
+            "content": "# Cron Jobs 🕰️\n\nScheduled tasks in `/etc/crontab`.\n\n## Attack\n-   Look for scripts running as root: `* * * * * root /opt/backup.sh`\n-   Check permissions: Is `/opt/backup.sh` writable by you?\n-   **Exploit**: Append `cp /bin/bash /tmp/rootbash; chmod +s /tmp/rootbash` to the script.\n-   Wait 1 minute."
+        },
+        {
+            "id": "path_hijacking",
+            "type": "content",
+            "title": "PATH Hijacking",
+            "content": "# PATH Hijacking 🛣️\n\nIf a SUID binary runs a command using a relative path.\n\n## Scenario\n-   Binary `admin_tool` (SUID) runs: `system(\"service apache2 start\")`.\n-   It doesn't use absolute path `/usr/sbin/service`.\n\n## Exploit\n1.  Create file `service` in current dir: `echo '/bin/sh' > service`\n2.  Export PATH: `export PATH=.:$PATH`\n3.  Run `admin_tool`. It finds *your* `service` first and runs it as root."
+        },
+        {
+            "id": "wildcard_injection",
+            "type": "content",
+            "title": "Wildcard Injection",
+            "content": "# Wildcards (*) 🃏\n\nUsing filenames as arguments.\n\n## Scenario\n-   Cron job runs: `tar -czf backup.tar.gz *`\n-   **Attack**: Create files named `--checkpoint=1` and `--checkpoint-action=exec=sh shell.sh`.\n-   `tar` interprets these filenames as command-line flags and executes the script."
+        },
+        {
+            "id": "nfs_root_squashing",
+            "type": "content",
+            "title": "NFS Root Squashing",
+            "content": "# NFS Misconfiguration 📂\n\nNetwork File System.\n\nIf a share has `no_root_squash` enabled:\n1.  Mount the share on your local machine (where you are root).\n2.  Create a binary, `chown root` and `chmod +s`.\n3.  On the target machine, execute that file to get root."
+        },
+        {
+            "id": "passwd_file_write",
+            "type": "content",
+            "title": "Writable /etc/passwd",
+            "content": "# Writable /etc/passwd 📝\n\nIf you can write to `/etc/passwd`, you can create a root user.\n\n## Technique\n1.  Generate password hash: `openssl passwd -1 password123` -> `$1$abc...`\n2.  Add line: `hacker:$1$abc...:0:0:root:/root:/bin/bash`\n3.  `su hacker` -> You are now root."
+        },
+        {
+            "id": "ssh_keys_theft",
+            "type": "content",
+            "title": "SSH Keys",
+            "content": "# Searching for Keys 🔑\n\n-   Look for `id_rsa` keys in backups, logs, or `/home/user/.ssh`.\n-   If you find a private key, can you SSH into `root@localhost`?\n-   Sometimes User A has access to User B via SSH keys, and User B has sudo access."
+        },
+        {
+            "id": "linpeas_enum",
+            "type": "content",
+            "title": "LinPEAS",
+            "content": "# LinPEAS 🟢\n\n**Linux Privilege Escalation Awesome Script.**\n\n-   Standard enumeration script.\n-   Colors vulnerabilities:\n    -   **RED/YELLOW**: 95% probability of exploit.\n    -   **RED**: Check it out.\n-   Checks: Kernel, Sudo, SUID, Cron, Capabilities, Passwords."
+        },
+        {
+            "id": "docker_breakout",
+            "type": "content",
+            "title": "Docker Breakouts",
+            "content": "# Container Escapes 🐳\n\nIf you are root *inside* a container, can you escape to the host?\n\n## Privileged Container\n-   If run with `--privileged`, the container has access to host devices (`/dev/sda1`).\n-   **Escape**: Mount the host disk inside the container (`mount /dev/sda1 /mnt`) and `chroot` into it. You now own the host."
+        },
+        {
+            "id": "linux_priv_esc_summary",
+            "type": "content",
+            "title": "Module Summary",
+            "content": "# Wrap Up 🎁\n\n-   **Sudo**: `sudo -l` is step #1.\n-   **SUID**: `find -perm -u=s`.\n-   **Kernel**: DirtyCow/DirtyPipe if the OS is old.\n-   **Tools**: Run LinPEAS and read the output carefully.\n\nRoot is just one misconfigured permission away!"
+        }
+    ]
+}
