@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Cross-Site Request Forgery (CSRF)",
+        "ques": "Describe a **CSRF** attack scenario involving a banking website. Why does the browser send the user's cookies automatically?",
+        "answer": {
+            "type": "text",
+            "content": "**Scenario:**\n1. User logs into `bank.com` and has an active session (cookies stored).\n2. User visits a malicious site `evil.com` in another tab.\n3. `evil.com` has a hidden form (or image) that submits a POST request to `bank.com/transfer?amount=1000&to=attacker`.\n\n**Implicit Auth:** The browser sees a request to `bank.com` and automatically attaches the cookies for that domain. The bank server sees a valid session and processes the transfer, thinking the user intended it.\n\n**Defense:** Anti-CSRF tokens are required."
+        },
+        "explanation": "Browsers automatically include ambient credentials (cookies, Basic Auth) with cross-origin requests. CSRF exploits this trust."
+    },
+    {
+        "title": "Clickjacking (UI Redressing)",
+        "ques": "How does **Clickjacking** trick a user into clicking something they didn't intend? Explain the role of the `iframe`.",
+        "answer": {
+            "type": "text",
+            "content": "**Mechanism:** The attacker creates a transparent (invisible) **iframe** pointing to a target site (e.g., a 'Delete Account' button on a social media site). They overlay this invisible iframe on top of a decoy button on their own site (e.g., 'Claim Prize').\n\n**Trick:** When the user tries to click 'Claim Prize', they are actually clicking the invisible 'Delete Account' button in the iframe above it.\n\n**Defense:** The `X-Frame-Options` header prevents the site from being Framed."
+        },
+        "explanation": "The user interacts with the UI they *see*, but the action registers on the UI that is *hidden* (redressed)."
+    },
+    {
+        "title": "DOM-Based XSS",
+        "ques": "How does **DOM-Based XSS** differ from Stored or Reflected XSS? Identify the 'Source' and 'Sink' in this context.",
+        "answer": {
+            "type": "text",
+            "content": "**Difference:** In DOM XSS, the payload never reaches the server. The vulnerability is entirely in the client-side JavaScript code.\n\n**Source:** The JavaScript reads data from an untrusted source (e.g., `location.hash`, `document.referrer`).\n**Sink:** The script unsafely writes that data to the DOM (e.g., using `innerHTML`, `document.write`).\n\n**Example:** `document.body.innerHTML = decodeURI(location.hash);` allows an attacker to inject scripts via the URL fragment."
+        },
+        "explanation": "Traditional XSS involves the server returning the script. DOM XSS is purely a client-side logic flaw."
+    },
+    {
+        "title": "HTML Injection",
+        "ques": "What is **HTML Injection**? If a user profile allows HTML input without sanitization, how could an attacker use this to deface the site?",
+        "answer": {
+            "type": "text",
+            "content": "**HTML Injection:** It occurs when an application accepts user input and renders it as HTML without escaping special characters.\n\n**Defacement:** An attacker could inject `<h1>HACKED</h1>` or `<img src='http://evil.com/bad_image.jpg'>`. While this might not execute code (unless it becomes XSS), it can completely alter the visual appearance of the page, insert fake login forms, or destroy consumer trust."
+        },
+        "explanation": "It is a subset of injection attacks. Where XSS targets script execution, HTML injection targets content structure and presentation."
+    },
+    {
+        "title": "Local Storage Security",
+        "ques": "Why is it considered a bad practice to store sensitive **JWTs** (JSON Web Tokens) or session IDs in the browser's **localStorage**?",
+        "answer": {
+            "type": "text",
+            "content": "**Vulnerability:** `localStorage` is accessible by **any JavaScript** running on the same domain.\n\n**Risk:** If the application has a single Cross-Site Scripting (XSS) vulnerability, an attacker can execute `localStorage.getItem('token')` and steal the user's session token. \n\n**Better Alternative:** `HttpOnly` cookies are generally safer because JavaScript cannot access them, mitigating the impact of XSS on session theft."
+        },
+        "explanation": "Storage mechanisms matter. Accessible storage + XSS = Account Takeover."
+    }
+]

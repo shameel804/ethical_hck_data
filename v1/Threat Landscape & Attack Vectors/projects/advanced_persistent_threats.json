@@ -1,0 +1,47 @@
+[
+    {
+        "title": "APT Lifecycle",
+        "ques": "The **Cyber Kill Chain** (by Lockheed Martin) describes the phases of an APT attack. List the first **four phases** in order.",
+        "answer": {
+            "type": "text",
+            "content": "1.  **Reconnaissance:** Intruder selects target, researches it, and attempts to identify vulnerabilities.\n2.  **Weaponization:** Intruder creates a remote access malware weapon, such as a virus or worm, tailored to a specific vulnerability.\n3.  **Delivery:** Intruder transmits the weapon to the target (e.g., via email attachments, websites, or USB drives).\n4.  **Exploitation:** Malware weapon's code triggers, which exploits the vulnerability on the target network to gain access."
+        },
+        "explanation": "Stopping the attack at any stage breaks the chain."
+    },
+    {
+        "title": "Cyber Espionage",
+        "ques": "**Cyber Espionage** is a primary motive for APTs. Unlike cybercriminals who want quick money (ransomware), what are cyber spies typically after? Give two examples of targeted data.",
+        "answer": {
+            "type": "text",
+            "content": "They are after **Information Superiority**.\n\n**Targets:**\n1.  **Intellectual Property (IP):** Blueprints, source code, formulas, patent designs (to copy products without R&D costs).\n2.  **Strategic Intelligence:** Government negotiation emails, military troop movements, or dissident lists."
+        },
+        "explanation": "The damage is often silent. You might not know you lost your trade secrets until a competitor launches an identical product cheaper."
+    },
+    {
+        "title": "Long-term Compromise: Living off the Land",
+        "ques": "APT actors often use **'Living off the Land' (LotL)** techniques to remain undetected. What does this mean?",
+        "answer": {
+            "type": "text",
+            "content": "**Living off the Land** means using tools that are already installed on the target system (like PowerShell, WMI, Bash, Netsh) to conduct attacks, rather than bringing in custom malware files.\n\n**Why?**\n*   It generates less noise.\n*   It bypasses Application Whitelisting (since PowerShell is a trusted app).\n*   It makes attribution harder."
+        },
+        "explanation": "If the attacker uses the admin's own tools, it's hard to tell the difference between maintenance and an attack."
+    },
+    {
+        "title": "Lateral Movement Techniques",
+        "ques": "Once an APT compromises a single patient-zero machine, they use **Lateral Movement**. Define this term and explain the **Pass-the-Hash** technique.",
+        "answer": {
+            "type": "text",
+            "content": "**Lateral Movement:** Moving from one compromised host to another within the network to find the high-value assets (like the Domain Controller).\n\n**Pass-the-Hash (PtH):**\nInstead of cracking a password (which takes time), the attacker steals the **hashed** password from the memory of a comprised machine and uses the hash itself to authenticate to other servers. Windows protocols often accept the hash as proof of identity."
+        },
+        "explanation": "This is why safeguarding admin credentials is vital. If an admin logs into an infected PC, their hash is stolen, and the Game is Over."
+    },
+    {
+        "title": "Nation-State Attribution",
+        "ques": "Attributing a cyberattack to a specific **Nation-State** is difficult due to **'False Flags'**. What is a **False Flag** operation in cyber warfare?",
+        "answer": {
+            "type": "text",
+            "content": "A **False Flag** is when an attacker leaves misleading evidence to frame someone else.\n\n**Example:** A Russian hacking group might use snippets of code written in Mandarin Chinese, or compile their malware during Beijing business hours, to make security researchers think the attack came from China."
+        },
+        "explanation": "Attribution requires more than technical evidence; it often needs political context and human intelligence."
+    }
+]

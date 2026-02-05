@@ -1,0 +1,47 @@
+[
+    {
+        "title": "SIP Protocol Vulnerabilities",
+        "ques": "The **Session Initiation Protocol (SIP)** is used to set up VoIP calls. Why is it inherently easier for attackers to manipulate compared to proprietary binary protocols? Name one text-based method attackers often target.",
+        "answer": {
+            "type": "text",
+            "content": "**Vulnerability:** SIP is a **text-based protocol**, very similar to HTTP. This makes it human-readable and easy to parse or modify using simple tools (like `sed` or scripts).\n\n**Target:** The **INVITE** message is a common target. Attackers can flood a server with INVITE requests (INVITE Flood) or manipulate the headers to spoof the Caller ID."
+        },
+        "explanation": "Protocols that use plain text are easier to debug but also easier to exploit because specialized binary reverse engineering tools aren't needed."
+    },
+    {
+        "title": "VoIP Eavesdropping",
+        "ques": "If a VoIP call is unencrypted, an attacker on the network can reconstruct the audio. Which specific protocol carries the voice data, and what category of tools is used to listen to it?",
+        "answer": {
+            "type": "text",
+            "content": "**Protocol:** Voice data is carried by **RTP (Real-time Transport Protocol)**. SIP just sets up the call; RTP carries the actual audio stream.\n\n**Tools:** **Packet Sniffers** or Protocol Analyzers like **Wireshark** or **Cain & Abel** are used. Wireshark has a built-in 'VoIP Calls' feature that can detect RTP streams and literally 'Play' the conversation directly from the captured packets."
+        },
+        "explanation": "This emphasizes the separation of Control Plane (SIP) and Data Plane (RTP). Implementing TLS for SIP doesn't encrypt the voice; you need SRTP for that."
+    },
+    {
+        "title": "Caller ID Spoofing",
+        "ques": "Explain how **Caller ID Spoofing** is achieved in a VoIP environment. Which header field is typically modified?",
+        "answer": {
+            "type": "text",
+            "content": "In VoIP, the Caller ID is just a data field in the SIP header, much like a 'From' address in an email. \n\n**Mechanism:** An attacker using a SIP client or PBX can simply configure the **`From:`** header or the **`P-Asserted-Identity:`** header to display any number or name they choose (e.g., `From: \"Bank Security\" <sip:18005551234@evil.com>`).\n\nUnless the provider performs strict validation (like STIR/SHAKEN), the recipient's phone will display the fake information."
+        },
+        "explanation": "This is a classic 'trust' issue. The protocol was designed assuming trusted endpoints."
+    },
+    {
+        "title": "VoIP Denial of Service (DoS)",
+        "ques": "Describe a **BYE Attack** (or Teardown Attack) in VoIP. How does it disrupt service?",
+        "answer": {
+            "type": "text",
+            "content": "**BYE Attack:** An attacker sniffs an ongoing call to get the Call-ID and other parameters.\n\n**Disruption:** The attacker constructs a spoofed **SIP BYE** message and sends it to one or both parties involved in the call. \n\n**Result:** The receiving device interprets this as a collaborative request to end the call and immediately hangs up. This effectively terminates active conversations."
+        },
+        "explanation": "This is a targeted DoS. Unlike flooding which slows things down, this selectively kills active sessions."
+    },
+    {
+        "title": "Securing VoIP",
+        "ques": "To protect VoIP traffic from eavesdropping and tampering, which two secure protocols should replace SIP and RTP respectively?",
+        "answer": {
+            "type": "text",
+            "content": "1.  **SIP over TLS (SIPS):** Encrypts the **signaling** traffic (who is calling whom). It wraps the text-based SIP messages in a TLS tunnel.\n2.  **SRTP (Secure Real-time Transport Protocol):** Encrypts the **media** traffic (the actual voice/video audio). \n\nBoth must be used together for complete privacy. Using SIPS alone hides who you are calling, but the audio (RTP) would still be clear text without SRTP."
+        },
+        "explanation": "Standard defense-in-depth for comms: Encrypt the handshake (Control) and encrypt the payload (Data)."
+    }
+]

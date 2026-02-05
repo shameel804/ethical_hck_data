@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Bluejacking vs. Bluesnarfing",
+        "ques": "Distinguish between **Bluejacking** and **Bluesnarfing**. Which one involves data theft?",
+        "answer": {
+            "type": "text",
+            "content": "*   **Bluejacking:** Sending unsolicited messages (like digital graffiti or contact cards) to a nearby Bluetooth device. It is annoying but harmless.\n*   **Bluesnarfing:** Unauthorized access to steal information (contacts, messages, photos) from a device via Bluetooth.\n\n**Data Theft:** **Bluesnarfing** is the critical threat."
+        },
+        "explanation": "Jacking is pranking; Snarfing is stealing."
+    },
+    {
+        "title": "Bluetooth Low Energy (BLE) Security",
+        "ques": "**BLE** is used in IoT devices and smart trackers. Why is it often less secure than Classic Bluetooth?",
+        "answer": {
+            "type": "text",
+            "content": "**BLE** prioritizes low power consumption and fast pairing over security.\n\n**Weakness:** Many BLE devices do not implement encryption or authentication at the application layer, transmitting data in cleartext to save battery life. Anyone with a sniffer app (like nRF Connect) can read the data."
+        },
+        "explanation": "Battery life vs. Security is the eternal IoT trade-off."
+    },
+    {
+        "title": "Bluetooth Pairing Mechanisms",
+        "ques": "Understanding pairing is key. What is the **'Just Works'** pairing model in Bluetooth, and why is it vulnerable to Man-in-the-Middle (MitM)?",
+        "answer": {
+            "type": "text",
+            "content": "**'Just Works':** Designed for devices with no display (like headsets). It uses a hardcoded PIN (usually 0000) or no PIN at all.\n\n**Vulnerability:** Since there is no user verification matches, an attacker can impersonate both devices and intercept the keys exchanged during pairing."
+        },
+        "explanation": "If you don't check a screen, you don't know who you are connecting to."
+    }
+]

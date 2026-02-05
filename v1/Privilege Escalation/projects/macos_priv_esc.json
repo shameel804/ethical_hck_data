@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Writable LaunchDaemons",
+        "ques": "macOS uses **LaunchDaemons** (stored in `/Library/LaunchDaemons`) to start services as root at boot. What happens if a regular user has **Write** access to one of these `.plist` files?",
+        "answer": {
+            "type": "text",
+            "content": "**Vulnerability:** Misconfigured file permissions (e.g., world-writable).\n\n**Exploit:** The attacker edits the `ProgramArguments` key in the plist file to point to their own malicious script/binary instead of the legitimate service.\n\n**Execution:** On the next reboot, `launchd` reads the plist and executes the attacker's binary as **root**."
+        },
+        "explanation": "Persistence and Privilege Escalation often go hand-in-hand. Control the startup config, control the machine."
+    },
+    {
+        "title": "Authorization Bypass (XPC)",
+        "ques": "Modern macOS services communicate via **XPC** (Inter-Process Communication). How can a logic flaw in an XPC service lead to privilege escalation?",
+        "answer": {
+            "type": "text",
+            "content": "**Scenario:** A privileged 'Helper Tool' (running as root) accepts commands from a user app via XPC.\n\n**Flaw:** If the Helper Tool doesn't properly verify the *code signature* or *entitlements* of the calling app, or blindly accepts command arguments (like a file path to delete).\n\n**Exploit:** An attacker writes a script to send XPC messages telling the Helper Tool to perform a privileged action (e.g., delete `/etc/sudoers`), getting root to do their dirty work."
+        },
+        "explanation": "The 'Confused Deputy' problem. The Helper has the power, but the attacker tricks it into abusing that power."
+    },
+    {
+        "title": "Keychain Attacks",
+        "ques": "The macOS **Keychain** stores passwords. If an attacker gains accessing to a user's terminal session, what tool can they use to dump keychain contents?",
+        "answer": {
+            "type": "text",
+            "content": "**Tool:** `security` (command line tool).\n\n**Command:** `security dump-keychain -d login.keychain`\n\n**Constraint:** This typically requires the keychain to be unlocked (which it is when the user is logged in), and newer macOS versions prompt the user for a password (GUI prompt) access confirmation. However, attackers can install keyloggers or fake prompts to bypass this."
+        },
+        "explanation": "Local access often leads to credential harvesting."
+    },
+    {
+        "title": "Dylib Hijacking on macOS",
+        "ques": "Similar to Windows DLL Hijacking, macOS apps load dynamic libraries (**Dylibs**). Explain how an attacker can exploit a weak **RPATH** (Runpath Search Path).",
+        "answer": {
+            "type": "text",
+            "content": "**RPATH:** A list of directories where the binary looks for its libraries (e.g., `@rpath/lib.dylib`).\n\n**Weakness:** If an RPATH entry points to a directory the attacker can write to (or a non-existent path followed by a writable path), the attacker places a malicious dylib there.\n\n**Execution:** The app loads the malicious library on startup."
+        },
+        "explanation": "Always validate load paths. Relative paths or writable user directories in RPATH are dangerous."
+    },
+    {
+        "title": "Kernel Extensions (Kexts)",
+        "ques": "Why has macOS moved away from **Kernel Extensions (Kexts)** in favor of System Extensions? What risk did Kexts pose?",
+        "answer": {
+            "type": "text",
+            "content": "**Risk:** Kexts run in Ring 0 (Kernel Mode). A single bug in a third-party audio driver Kext could panic (crash) the entire OS or introduce a root-level security hole.\n\n**System Extensions:** Run in User Space. If they crash, only the extension restarts, not the OS. They also have limited privileges compared to the god-mode access of a Kext."
+        },
+        "explanation": "Moving code out of the kernel increases stability and security."
+    }
+]

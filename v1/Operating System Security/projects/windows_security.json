@@ -1,0 +1,47 @@
+[
+    {
+        "title": "NTLM vs. Kerberos",
+        "ques": "Windows uses both NTLM and Kerberos for authentication. Why is **NTLM** considered weaker, and what specific attack is it vulnerable to?",
+        "answer": {
+            "type": "text",
+            "content": "**Weakness:** NTLM is a challenge-response protocol that transmits the password hash (specifically the NT hash) across the network. It does not verify the server's identity to the client.\n\n**Attack:** **Pass-the-Hash (PtH)**. An attacker who steals the NTLM hash can use it directly to authenticate to other servers without ever cracking it to get the plaintext password. NTLM Relay is another major risk."
+        },
+        "explanation": "Kerberos uses tickets and mutual authentication, making it much harder to spoof or replay, though not immune (Golden Ticket)."
+    },
+    {
+        "title": "Active Directory: Kerberoasting",
+        "ques": "Explain the **Kerberoasting** attack. What artifact does the attacker request, and how do they crack the password?",
+        "answer": {
+            "type": "text",
+            "content": "**Mechanism:** Any authenticated user can request a Kerberos service ticket (TGS) for any service (SPN) in the domain.\n\n**Artifact:** The attacker requests a TGS for a service account (e.g., SQLService).\n\n**Cracking:** The TGS is encrypted with the service account's NTLM hash. The attacker saves the ticket offline and uses tools like **Hashcat** to brute-force the NTLM hash. If the service account has a weak password, it will be cracked."
+        },
+        "explanation": "This relies on the design of Kerberos (offline cracking possible) and human behavior (weak service account passwords)."
+    },
+    {
+        "title": "Windows Privileges: SeDebugPrivilege",
+        "ques": "The **SeDebugPrivilege** is often found enabled on Administrator accounts. What dangerous capability does this privilege grant?",
+        "answer": {
+            "type": "text",
+            "content": "**Capability:** It allows the user to debug processes owned by *other users*, including the SYSTEM.\n\n**Danger:** An attacker with this privilege can inject code into (or dump the memory of) the **LSASS** (Local Security Authority Subsystem Service) process. LSASS holds the credentials (hashes, tickets) of all logged-in users. Tools like Mimikatz require this privilege to extract passwords."
+        },
+        "explanation": "Privileges are granular rights. `SeDebugPrivilege` effectively bypasses process isolation security boundaries."
+    },
+    {
+        "title": "AMSI (Anti-Malware Scan Interface)",
+        "ques": "What is **AMSI**, and how does it help Windows Defender detect malicious PowerShell scripts that are obfuscated or memory-only?",
+        "answer": {
+            "type": "text",
+            "content": "**Standard AV:** Typically scans files on disk. \n\n**AMSI:** An interface that allows applications (like PowerShell, Office, .NET) to send content to the antivirus scanner *after* it has been de-obfuscated but *before* it is executed.\n\n**Result:** Even if a script is heavily encrypted or loaded directly into RAM (fileless malware), AMSI sees the final plaintext command and blocks it."
+        },
+        "explanation": "AMSI forces attackers to find bypasses in the checking mechanism itself rather than just packing the malware."
+    },
+    {
+        "title": "Group Policy Object (GPO) Abuses",
+        "ques": "How can an attacker exploit a misconfigured **Group Policy** object that allows 'Write' access to verified users?",
+        "answer": {
+            "type": "text",
+            "content": "**Misconfiguration:** If standard users have write access to a GPO.\n\n**Exploit:** The attacker edits the GPO to add a **Scheduled Task** or a **Startup Script** that executes a malicious payload.\n\n**Impact:** When other computers (or Domain Controllers) in the domain refresh their policy (`gpupdate`), they download and execute the attacker's script, spreading the infection instantly across the network."
+        },
+        "explanation": "GPO is the central nervous system of AD. Compromising a GPO is arguably more powerful than compromising a single server."
+    }
+]

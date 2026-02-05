@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Web Cache Poisoning",
+        "ques": "Explain the concept of **Unkeyed Inputs** in Web Cache Poisoning. How does this allow an attacker to serve malicious content to other users?",
+        "answer": {
+            "type": "text",
+            "content": "**Unkeyed Inputs:** These are parts of the HTTP request (like specific headers) that the cache mechanism *ignores* when deciding if a response is cached.\n\n**Attack:**\n1. The attacker sends a request with a malicious unkeyed header (e.g., `X-Forwarded-Host: evil.com`).\n2. The application reflects this input in the response (e.g., importing a script from `evil.com`).\n3. The cache saves this received 'poisoned' response.\n4. When legitimate users request the same page, the cache serves them the stored poisoned response containing the malicious script."
+        },
+        "explanation": "Users act as the delivery mechanism. The payload is stored in the server's cache, affecting anyone hitting that cache key."
+    },
+    {
+        "title": "HTTP Request Smuggling",
+        "ques": "HTTP Request Smuggling arises from a disagreement between the Front-End (Load Balancer) and Back-End server. What two HTTP headers determine the request length and are the source of this conflict?",
+        "answer": {
+            "type": "text",
+            "content": "The conflict is between:\n1.  **`Content-Length` (CL):** Specifies the size of the body in bytes.\n2.  **`Transfer-Encoding` (TE):** Specifies that any `chunked` encoding is used.\n\n**Conflict:** If one server prioritizes CL and the other prioritizes TE, an attacker can craft an ambiguous request where the Front-End sees one request, but the Back-End sees two (smuggling the second one). This desynchronizes the connection."
+        },
+        "explanation": "This is a low-level parsing logic flaw. It allows bypassing security controls or poisoning other users' request queues."
+    },
+    {
+        "title": "Prototype Pollution",
+        "ques": "What is **Prototype Pollution** in JavaScript? If an attacker can merge properties into `__proto__`, what is the global impact?",
+        "answer": {
+            "type": "text",
+            "content": "**Definition:** A vulnerability where an attacker manipulates the base `Object.prototype` (often via recursive merge functions).\n\n**Impact:** Because almost all objects in JavaScript inherit from `Object.prototype`, adding or modifying a property on `__proto__` affects **every object** in the application. This can lead to Denial of Service, logic bypasses, or even RCE if the polluted property is used in a dangerous sink (like `child_process.spawn`)."
+        },
+        "explanation": "It is specific to prototype-based languages. Global state mutation is catastrophic in shared environments."
+    },
+    {
+        "title": "GraphQL Vulnerabilities",
+        "ques": "What is **Introspection** in GraphQL, and why might you disable it in production?",
+        "answer": {
+            "type": "text",
+            "content": "**Introspection:** A feature that allows you to query the GraphQL schema itself to discover all available queries, mutations, types, and fields.\n\n**Risk:** While useful for development, leaving it enabled in production gives attackers a complete map of your API, including hidden or administrative fields they might not have guessed otherwise. It significantly speeds up their reconnaissance."
+        },
+        "explanation": "Security through obscurity isn't a fix, but disabling introspection forces attackers to work much harder to find vulnerable endpoints."
+    },
+    {
+        "title": "WebAssembly (Wasm) Security",
+        "ques": "WebAssembly brings binary execution to the browser. Does Wasm code have access to the **DOM** directly? How does this impact XSS exploits within Wasm?",
+        "answer": {
+            "type": "text",
+            "content": "**DOM Access:** No, WebAssembly cannot access the DOM directly. It runs in a separate virtual machine sandbox. It must import JavaScript functions to interact with the outside world.\n\n**Impact:** This means 'Wasm-based XSS' is harder because the Wasm code cannot simply read `document.cookie` or modify the page unless the host environment explicitly gives it that capability via imported functions. However, memory corruption *within* the Wasm heap is still possible."
+        },
+        "explanation": "Wasm security model is strong, sandboxed, and distinct from JS, but interactions between the two (the 'boundary') are potential weak points."
+    }
+]

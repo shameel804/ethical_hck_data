@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Nmap: Advanced Scanning Techniques",
+        "ques": "**Nmap** is the standard for network scanning. Explain what the `-O` and `-sV` flags do.",
+        "answer": {
+            "type": "text",
+            "content": "*   `-O`: **OS Detection**. It analyzes how the target responds to specific TCP/IP packets (its 'stack fingerprint') to guess the Operating System (e.g., 'Linux 2.6.x' or 'Windows Server 2019').\n*   `-sV`: **Version Detection**. It connects to open ports and interrogates them to determine the specific service and version running (e.g., 'OpenSSH 7.6p1')."
+        },
+        "explanation": "Combining these (`nmap -A` does both + traceroute) gives a complete picture of the target host."
+    },
+    {
+        "title": "Shortcomings of Maltego",
+        "ques": "**Maltego** is a powerful visual link analysis tool for OSINT. What is its primary function in an investigation?",
+        "answer": {
+            "type": "text",
+            "content": "**Maltego** automates the discovery of relationships between pieces of information.\n\n**Function:**\nIt takes a seed entity (like a domain name) and runs 'Transforms' to find connected entities (DNS records, IP addresses, email addresses, social profiles). It maps these relationships in a large graph, allowing investigators to see how different data points connect."
+        },
+        "explanation": "It helps connect the dots that a human might miss in a spreadsheet."
+    },
+    {
+        "title": "TheHarvester",
+        "ques": "**theHarvester** is a simple yet effective tool. What is its main purpose and where does it get its data?",
+        "answer": {
+            "type": "text",
+            "content": "**Purpose:** To gather emails, subdomains, hosts, employee names, open ports, and banners from different public sources.\n\n**Sources:** It scrapes data from search engines (Google, Bing, Baidu), PGP key servers, and identifying databases like Shodan."
+        },
+        "explanation": "It's often one of the first tools run during the passive recon phase."
+    },
+    {
+        "title": "Recon-ng Framework",
+        "ques": "**Recon-ng** has a look and feel very similar to another famous framework. Which one? And how is Recon-ng organized?",
+        "answer": {
+            "type": "text",
+            "content": "**Similar to:** **Metasploit Framework** (msfconsole).\n\n**Organization:**\nIt uses a modular structure:\n*   **Modules:** Different scripts for different tasks (e.g., `recon/domains-hosts/google_site_web`).\n*   **Workspaces:** DBs to store data for different projects.\n*   **Commands:** Uses `use`, `set`, `run`, `show options` just like Metasploit."
+        },
+        "explanation": "This familiarity makes it very easy for Pentesters to pick up."
+    },
+    {
+        "title": "Shodan: The Search Engine for IoT",
+        "ques": "How does **Shodan** differ from **Google**? Give an example of a search query you might run on Shodan.",
+        "answer": {
+            "type": "text",
+            "content": "**Difference:**\n*   **Google** crawls the *content* of websites (HTML, text).\n*   **Shodan** crawls the *banners* of devices connected to the internet (Servers, Webcams, Routers, SCADA systems).\n\n**Example Query:**\n`webcamxp` -> Searches for unsecured webcams.\n`port:21 anonymous` -> Searches for FTP servers allowing anonymous login."
+        },
+        "explanation": "Shodan allows you to see the infrastructure of the internet."
+    }
+]

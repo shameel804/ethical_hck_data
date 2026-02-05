@@ -1,0 +1,47 @@
+[
+    {
+        "title": "GraphQL Introspection",
+        "ques": "Why is it considered a best practice to **disable Introspection** in a production GraphQL public endpoint?",
+        "answer": {
+            "type": "text",
+            "content": "**Reason:** Introspection (`__schema` query) returns the full documentation of the API, including all types, queries, and mutations.\n\n**Risk:** While great for developers, it provides attackers with a perfect map of the attack surface, including hidden admin fields or deprecated endpoints they wouldn't easily guess. Disabling it forces them to fly blind."
+        },
+        "explanation": "Don't hand the blueprints of the bank to the robbers. Keep the schema private."
+    },
+    {
+        "title": "Query Depth Limiting",
+        "ques": "GraphQL allows nested queries. How can a **Deeply Nested Query** cause a Denial of Service (DoS)? Give an example.",
+        "answer": {
+            "type": "text",
+            "content": "**Attack:** A user asks for `author { books { author { books { author ... } } } }`.\n\n**Impact:** The server attempts to resolve this exponentially growing or infinitely recursive relationship in a single request. This consumes massive CPU and database resources, crashing the server.\n\n**Defense:** Implement **Query Depth Limiting** to reject queries deeper than a set number (e.g., 5 levels)."
+        },
+        "explanation": "GraphQL gives clients control over what they ask for. Without limits, they can ask for 'infinity'."
+    },
+    {
+        "title": "Batching Attacks",
+        "ques": "GraphQL defaults allow processing multiple queries in a single request (Batching). How does this defeat standard **Rate Limiting** or help in Brute Forcing?",
+        "answer": {
+            "type": "text",
+            "content": "**Mechanism:** The attacker sends ONE HTTP request, but inside the JSON body, they ask for 1,000 different queries (or verify 1,000 different passwords).\n\n**Bypass:** The web server sees only 1 request, so the Rate Limiter (counting HTTP requests) doesn't block it. But the GraphQL resolver processes all 1,000 operations."
+        },
+        "explanation": "Cost analysis is needed. Rate limit based on 'Query Complexity' relative to server load, not just Request Count."
+    },
+    {
+        "title": "GraphQL Injection",
+        "ques": "Since GraphQL is a query language, is it susceptible to **Injection Attacks** like SQL Injection? Explain.",
+        "answer": {
+            "type": "text",
+            "content": "**Yes.** GraphQL resolves fields by fetching data, often from a SQL database. \n\n**Scenario:** If the arguments passed to a GraphQL query (like `user(name: \"$input\")`) are passed directly to a raw SQL query in the resolver without sanitization, SQL Injection is fully possible.\n\n**Defense:** Use ORMs or parameterized queries inside the resolvers."
+        },
+        "explanation": "GraphQL is just a translation layer. The underlying data fetchers are still vulnerable to traditional injection flaws."
+    },
+    {
+        "title": "Field Duplication & Alias Overload",
+        "ques": "Explain the **Alias Overload** attack in GraphQL. How does renaming fields allow an attacker to request the same resource thousands of times?",
+        "answer": {
+            "type": "text",
+            "content": "**Mechanism:** A client can use aliases to request the same field multiple times in one query:\n`{ user1: user(id:1), user2: user(id:1), ... user99: user(id:1) }`.\n\n**Impact:** The server processes each alias as a distinct requirement, fetching the database repeatedly. This is another form of application-layer DoS."
+        },
+        "explanation": "Defenses include analyzing Query Cost/Complexity before execution."
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "title": "The CIA Triad 🛡️",
+        "ques": "The **CIA Triad** is the foundational model for information security. Briefly explain each of the three components: **Confidentiality**, **Integrity**, and **Availability**. Provide a real-world example for a violation of each.",
+        "answer": {
+            "type": "text",
+            "content": "**1. Confidentiality:** ensures that information is not disclosed to unauthorized individuals, entities, or processes.\n*   **Violation Example:** A hacker stealing a database of user passwords.\n\n**2. Integrity:** ensures that data is accurate and trustworthy and has not been altered by unauthorized people.\n*   **Violation Example:** An attacker modifying banking transaction logs to cover their tracks.\n\n**3. Availability:** ensures that information and resources are accessible to authorized users when needed.\n*   **Violation Example:** A Distributed Denial of Service (DDoS) attack taking down a company's website."
+        },
+        "explanation": "The **CIA Triad** guides security policies.\n*   **Confidentiality** is about secrecy.\n*   **Integrity** is about accuracy.\n*   **Availability** is about accessibility."
+    },
+    {
+        "title": "Security Models: Bell-LaPadula vs. Biba",
+        "ques": "Compare the **Bell-LaPadula** and **Biba** security models. Which primary goal of the CIA triad does each model focus on? Describe their key rules (e.g., 'No Read Up', 'No Write Down').",
+        "answer": {
+            "type": "text",
+            "content": "**Bell-LaPadula Model:**\n*   **Primary Goal:** **Confidentiality**.\n*   **Rules:**\n    *   **Simple Security Property (No Read Up):** A subject cannot read data at a higher security level.\n    *   ***-Property (No Write Down):** A subject cannot write data to a lower security level.\n\n**Biba Model:**\n*   **Primary Goal:** **Integrity**.\n*   **Rules:**\n    *   **Simple Integrity Property (No Read Down):** A subject cannot read data from a lower integrity level.\n    *   ***-Integrity Property (No Write Up):** A subject cannot write data to a higher integrity level."
+        },
+        "explanation": "**Bell-LaPadula** prevents data leakage (Confidentiality), while **Biba** prevents data corruption (Integrity). They are effectively inverses of each other regarding information flow."
+    },
+    {
+        "title": "Defense in Depth Strategy",
+        "ques": "Explain the concept of **Defense in Depth** (also known as Layered Security). Why is it superior to relying on a single perimeter defense? List at least **three layers** of security controls you might find in a corporate environment.",
+        "answer": {
+            "type": "text",
+            "content": "**Defense in Depth** is a strategy that uses multiple independent layers of security controls to protect assets. If one layer fails, others stand in the way of the attacker.\n\n**Why it's superior:** It eliminates single points of failure. A perimeter firewall alone is insufficient if an attacker bypasses it (e.g., via phishing); internal controls are needed to stop further movement.\n\n**Common Layers:**\n1.  **Physical:** Security guards, biometric locks.\n2.  **Network:** Firewalls, IDPS, Network Segmentation.\n3.  **Host/Endpoint:** Antivirus, EDR, Patch Management.\n4.  **Application:** Input validation, WAF.\n5.  **Data:** Encryption, Access Control Lists (ACLs)."
+        },
+        "explanation": "Think of **Defense in Depth** like a castle: you have a moat, then a wall, then a keep, and finally guards inside. Even if the moat is crossed, the castle is still secure."
+    },
+    {
+        "title": "Zero Trust Architecture",
+        "ques": "The traditional security model assumes 'trust but verify'. **Zero Trust** assumes 'never trust, always verify'. What are the **three core principles** of Zero Trust Architecture according to NIST?",
+        "answer": {
+            "type": "text",
+            "content": "**1. Verify Explicitly:** Always authenticate and authorize based on all available data points (user identity, location, device health, service classification, data classification, and anomalies).\n\n**2. Use Least Privilege Access:** Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection to help secure both data and productivity.\n\n**3. Assume Breach:** Minimalize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses."
+        },
+        "explanation": "**Zero Trust** eliminates the idea of a trusted internal network. Every request, whether from inside or outside the organization, must be authenticated, authorized, and encrypted."
+    },
+    {
+        "title": "Security Governance: Policies vs. Standards",
+        "ques": "In the context of **Security Governance**, differentiate between a **Policy**, a **Standard**, and a **Procedure**. Provide a brief one-line example for each.",
+        "answer": {
+            "type": "text",
+            "content": "**1. Policy:** A high-level document outlining senior management's intent and direction. It is mandatory.\n*   *Example:* 'All sensitive company data must be encrypted at rest and in transit.'\n\n**2. Standard:** Specific mandatory requirements (hardware, software, technology) to support the policy.\n*   *Example:* 'AES-256 encryption must be used for all databases.'\n\n**3. Procedure:** Step-by-step instructions to implement the policy and standards.\n*   *Example:* '1. Open the database configuration tool. 2. Select the encryption tab. 3. Choose AES-256...'"
+        },
+        "explanation": "**Governance** is the hierarchy of rules:\n*   **Policy:** The 'Why' and 'What'.\n*   **Standard:** The specific 'What'.\n*   **Procedure:** The 'How'."
+    }
+]

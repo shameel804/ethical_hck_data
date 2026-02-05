@@ -1,0 +1,47 @@
+[
+    {
+        "title": "WHOIS Lookups",
+        "ques": "**WHOIS** is a query and response protocol used for querying databases that store the registered users or assignees of an Internet resource (like a domain name or IP block). What **three key pieces of information** can you typically find in a WHOIS record?",
+        "answer": {
+            "type": "text",
+            "content": "1.  **Registrar Information:** The company through which the domain was registered (e.g., GoDaddy, Namecheap).\n2.  **Registrant Contact Details:** Name, email address, physical address, and phone number of the domain owner (unless redacted by privacy protection).\n3.  **Name Servers:** The DNS servers authoritative for the domain (useful for mapping the hosting infrastructure)."
+        },
+        "explanation": "WHOIS is often the first step in building a target profile."
+    },
+    {
+        "title": "Google Dorking (Search Engine Hacking)",
+        "ques": "**Google Dorking** involves using advanced search operators to find sensitive information that shouldn't be public. Match the operator to its function:\n1.  `site:`\n2.  `filetype:`\n3.  `intitle:`",
+        "answer": {
+            "type": "text",
+            "content": "1.  `site:` -> Limits results to a specific domain (e.g., `site:example.com`).\n2.  `filetype:` -> Searches for specific file extensions (e.g., `filetype:pdf` or `filetype:xls`).\n3.  `intitle:` -> Searches for pages with specific text in the title tag (e.g., `intitle:\"index of\"`)."
+        },
+        "explanation": "**Example Combo:** `site:target.com filetype:xls password` could find an Excel sheet named 'passwords' on the target's website."
+    },
+    {
+        "title": "Passive DNS Enumeration",
+        "ques": "What is meant by **Passive DNS Enumeration**? How does it differ from active querying?",
+        "answer": {
+            "type": "text",
+            "content": "**Passive DNS Enumeration** involves querying historic DNS databases (like VirusTotal, SecurityTrails) to find subdomains that were previously associated with a domain.\n\n**Key Difference:**\n*   **Active:** You ask the target's DNS server directly (it sees your IP).\n*   **Passive:** You ask a third-party database (the target never sees your IP)."
+        },
+        "explanation": "It allows you to map the target's network without touching their infrastructure."
+    },
+    {
+        "title": "Social Media Intelligence (SOCMINT)",
+        "ques": "How can **LinkedIn** be weaponized during the reconnaissance phase?",
+        "answer": {
+            "type": "text",
+            "content": "Attackers browse company employees on LinkedIn to:\n1.  **Identify Tech Stack:** Engineers often lists skills like 'React', 'AWS', or 'Cisco ASA', revealing the technologies used internally.\n2.  **Identify Targets:** Find the names of System Admins or HR staff for spear-phishing campaigns.\n3.  **Org Structure:** Understand reporting lines to craft convincing CEO fraud emails."
+        },
+        "explanation": "Employees often overshare professional details that are gold for attackers."
+    },
+    {
+        "title": "Public Records Analysis",
+        "ques": "Why would an attacker search for a company's **SEC Filings** (10-K reports) or job postings?",
+        "answer": {
+            "type": "text",
+            "content": "*   **SEC Filings:** Reveal potential mergers (chaos), financial health (budget for security), or key subsidiaries (new targets).\n*   **Job Postings:** Reveal specific software versions (e.g., 'Must have 5 years experience with Oracle 11g'). Knowing the version allows the attacker to look for specific exploits for that old version."
+        },
+        "explanation": "HR departments inadvertently leak technical intelligence in job descriptions."
+    }
+]

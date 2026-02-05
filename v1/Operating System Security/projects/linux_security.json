@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Linux Permissions",
+        "ques": "Explain the permission bits `rwxr-xr--` (754). Why is setting permissions to `777` (`rwxrwxrwx`) considered a severe security risk?",
+        "answer": {
+            "type": "text",
+            "content": "**Breakdown:**\n*   **Owner:** `rwx` (Read, Write, Execute) - Full control.\n*   **Group:** `r-x` (Read, Execute) - Can see and run, but not edit.\n*   **Others:** `r--` (Read) - Can only read.\n\n**Risk of 777:** It gives **Execute** and **Write** permission to `Others` (everyone on the system). Any compromised user account or malicious script can delete, modify, or infect the file, or execute it if it's a script."
+        },
+        "explanation": "Permission hardening is the first line of defense. Always define *who* needs access."
+    },
+    {
+        "title": "Mandatory Access Control (SELinux)",
+        "ques": "How does **SELinux** (Security-Enhanced Linux) differ from standard Linux DAC (Discretionary Access Control)? What happens if a web server running as `root` tries to read `/etc/shadow` in `Enforcing` mode?",
+        "answer": {
+            "type": "text",
+            "content": "**DAC:** Access is based on user identity (e.g., 'Does the `apache` user own this file?').\n**SELinux (MAC):** Access is based on **Policies** and **Labels**. \n\n**Scenario:** Even if the web server process runs as `root` (0), SELinux checks the policy. If the policy says 'The `httpd_t` process context cannot read files with the `shadow_t` label', the action is **blocked**, and the intrusion is logged."
+        },
+        "explanation": "SELinux limits the damage of a compromised daemon. Root is no longer god; the Policy is god."
+    },
+    {
+        "title": "SSH Hardening",
+        "ques": "Which configuration parameter in `/etc/ssh/sshd_config` should be changed to prevent attackers from brute-forcing the `root` account directly? What is the safer alternative?",
+        "answer": {
+            "type": "text",
+            "content": "**Parameter:** `PermitRootLogin no`\n\n**Safeguard:** This stops anyone from even trying to guess the root password over the network.\n\n**Alternative:** Users should log in with a regular, unprivileged account and then use `sudo` (after authenticating again) to perform administrative tasks. Using **Public Key Authentication** instead of passwords (`PasswordAuthentication no`) is also highly recommended."
+        },
+        "explanation": "Disable direct root access. This forces an attacker to compromise a normal user *and* find a privilege escalation exploit."
+    },
+    {
+        "title": "Package Management Security",
+        "ques": "When you install a package using `apt` or `yum`, how does the system ensure the software hasn't been tampered with by a Man-in-the-Middle attacker?",
+        "answer": {
+            "type": "text",
+            "content": "**GPG Signing:** Repositories sign their package metadata and the packages themselves with a **GPG Private Key**.\n\n**Verification:** Your local system has the repo's **GPG Public Key** installed in its keyring. Before installing, the package manager verifies the digital signature. If the hash doesn't match (file altered) or the signature is invalid (wrong key), the installation aborts."
+        },
+        "explanation": "Trust is mathematical. The integrity of the distribution channel relies on asymmetric cryptography."
+    },
+    {
+        "title": "Linux Authentication Files",
+        "ques": "Why are user password hashes stored in `/etc/shadow` instead of `/etc/passwd` on modern Linux systems?",
+        "answer": {
+            "type": "text",
+            "content": "**Permission:** `/etc/passwd` must be **world-readable** so tools like `ls` can display usernames.\n\n**Privacy:** `/etc/shadow` is readable **only by root**.\n\nIf hashes were in `passwd`, any user could read them and start an offline brute-force attack."
+        },
+        "explanation": "Separation of public info (User ID, shell path) and private info (hash)."
+    }
+]

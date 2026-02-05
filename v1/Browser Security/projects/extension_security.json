@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Extension Permissions Risk",
+        "ques": "When installing a browser extension, why is the permission **'Read and change all your data on the websites you visit'** (often `<all_urls>` in manifest) considered high risk?",
+        "answer": {
+            "type": "text",
+            "content": "**Access Level:** This gives the extension the ability to inject JavaScript into **every page** you load.\n\n**Risk:** A malicious (or compromised) extension with this permission can:\n1. Keylog your passwords on banking sites.\n2. Steal authentication cookies.\n3. Alter data displayed to you (e.g., changing crypto wallet addresses).\nIt effectively acts as a persistent Man-in-the-Browser."
+        },
+        "explanation": "Always follow the Principle of Least Privilege. Restrict extensions to specific domains if possible."
+    },
+    {
+        "title": "XSS in Extensions",
+        "ques": "Extensions have HTML pages too (Options page, Popup). If an extension is vulnerable to **XSS** in its background page or popup, why is the impact often higher than a normal website XSS?",
+        "answer": {
+            "type": "text",
+            "content": "**Privilege Escalation:** Extensions run with special privileges defined in their manifest.\n\n**Impact:** A successful XSS attack inside the extension context allows the attacker to **execute code with the extension's privileges**. This can lead to bypassing SOP, accessing browser history, or making cross-origin requests that a normal web page couldn't do."
+        },
+        "explanation": "Extensions are trusted more than web pages. Compromising that trust chain leads to deeper system compromise."
+    },
+    {
+        "title": "Malicious Extension Tactics",
+        "ques": "How do bad actors typically distribute malicious extensions or compromise legitimate ones?",
+        "answer": {
+            "type": "text",
+            "content": "**Methods:**\n1.  **Direct Upload:** Uploading a useful-looking tool (e.g., 'PDF Converter') that contains hidden spyware.\n2.  **Buying Out:** Attackers approach developers of popular legitimate extensions and offer to buy them. Once ownership transfers, they push a malicious update to the thousands of existing users.\n3.  **Typosquatting:** Creating extensions with names very similar to popular ones (e.g., 'AddBlock Plus' vs 'AdBlock Plus')."
+        },
+        "explanation": "Supply chain attacks are common here. Users trust the 'Store', but vetting isn't perfect."
+    },
+    {
+        "title": "Extension Analysis",
+        "ques": "What file is the starting point for reviewing the security of a browser extension, and what key information does it contain?",
+        "answer": {
+            "type": "text",
+            "content": "**File:** `manifest.json`\n\n**Key Info:**\n1.  **Permissions:** What capabilities it requests (tabs, cookies, history).\n2.  **Content Scripts:** Which scripts run on which websites.\n3.  **Background Scripts:** Persistent scripts that handle events.\n4.  **CSP:** The Content Security Policy enforced on the extension.\n\nReviewing this file reveals the extension's intent and attack surface."
+        },
+        "explanation": "The manifest is the blueprint. Review permissions first, then analyze the code referenced in the content/background scripts."
+    },
+    {
+        "title": "Content Script Isolation",
+        "ques": "Content scripts run in the context of the web page. Can a website detects or interfere with the variables defined in a Chrome Extension's **Content Script**?",
+        "answer": {
+            "type": "text",
+            "content": "**Isolation:** No. Content scripts live in an **isolated world**.\n\n**Mechanism:** They share the *DOM* with the page (so they can read/change HTML), but they do **not** share the JavaScript variables or functions. A variable `var secret = 123` in the content script is invisible to the webpage's scripts, and vice versa.\n\n**Note:** However, they can still conflict if they modify the same DOM elements."
+        },
+        "explanation": "This isolation protects the extension code from the hostile web page environment."
+    }
+]

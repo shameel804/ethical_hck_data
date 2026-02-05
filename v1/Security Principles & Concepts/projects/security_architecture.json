@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Secure Design Principles",
+        "ques": "Jerome Saltzer and Michael Schroeder proposed key design principles for secure systems. Create a matching exercise for these three principles:\n1.  **Economy of Mechanism**\n2.  **Fail-Safe Defaults**\n3.  **Complete Mediation**",
+        "answer": {
+            "type": "text",
+            "content": "1.  **Economy of Mechanism:** Keep the design as simple and small as possible. Complexity hides vulnerabilities.\n2.  **Fail-Safe Defaults:** The default access decision should be denial. If a system fails, it should fail to a secure state (closed), not an open one.\n3.  **Complete Mediation:** Every access to every object must be checked for authority. Do not cache access decisions; check permissions every time."
+        },
+        "explanation": "These 1970s principles are still the bedrock of modern security architecture."
+    },
+    {
+        "title": "Security Patterns: The Ambassador Pattern",
+        "ques": "In the context of distributed systems and cloud security, what is the **Ambassador Pattern**? How does it help in offloading security tasks from a legacy application container?",
+        "answer": {
+            "type": "text",
+            "content": "The **Ambassador Pattern** involves creating a helper service (a 'sidecar' container) that sends network requests on behalf of a consumer service or application.\n\n**Usage:**\nInstead of modifying a legacy application to support mutual TLS (mTLS), logging, or circuit breaking, you route its traffic through the local Ambassador proxy. The proxy handles the encryption and authentication, while the legacy app talks to the proxy in plain text describing *where* it wants to go. This isolates security logic from application logic."
+        },
+        "explanation": "It acts like a security diplomat for your application, handling the complex negotiations (auth, encryption) so the app doesn't have to."
+    },
+    {
+        "title": "Microsegmentation",
+        "ques": "**Microsegmentation** is a key component of Zero Trust. How does it differ from traditional VLAN-based network segmentation? What granularity does it offer?",
+        "answer": {
+            "type": "text",
+            "content": "**Traditional Segmentation (VLANs):** Groups devices by broad categories (e.g., 'HR VLAN', 'Engineering VLAN'). If an attacker breaches one device, they can often access everything else on that same VLAN.\n\n**Microsegmentation:** Applies security policies to individual workloads, containers, or virtual machines. It effectively puts a tiny firewall around every single server.\n\n**Granularity:** It allows for rules like 'Web Server A can talk to Database B on port 3306, but Web Server B cannot talk to Database B at all,' even if they are on the same subnet."
+        },
+        "explanation": "Microsegmentation dramatically reduces the **blast radius** of an attack by limiting lateral movement to the absolute minimum required for business function."
+    },
+    {
+        "title": "Perimeter Security vs. De-perimeterization",
+        "ques": "Define **Perimeter Security** (the 'Hard crunchy shell, soft chewy center' model). Why is modern architecture moving towards **De-perimeterization** (Jericho Forum style)?",
+        "answer": {
+            "type": "text",
+            "content": "**Perimeter Security:** Relies on a strong border firewall to keep bad guys out and trusts everyone inside. Once inside, users often have broad access.\n\n**De-perimeterization:** Recognizes that in a world of Cloud, Mobile, and Remote Work, the network perimeter has dissolved. Employees access data from coffee shops (outside the firewall) using SaaS apps (outside the firewall). Therefore, security controls must move from the network edge to the **data** and **identity** level (Identity is the new perimeter)."
+        },
+        "explanation": "You can't build a wall around a cloud. Security must follow the user and the data wherever they go."
+    },
+    {
+        "title": "Hybrid Security Models",
+        "ques": "A company is migrating from an on-premise data center to a hybrid cloud environment (AWS + On-Prem). What is the **Shared Responsibility Model**? Who is responsible for 'Security **of** the Cloud' vs. 'Security **in** the Cloud'?",
+        "answer": {
+            "type": "text",
+            "content": "**Shared Responsibility Model:** Security is a joint effort between the Cloud Provider (AWS/Azure/GCP) and the Customer.\n\n1.  **Security OF the Cloud (Provider's Job):** Protecting the hardware, software, networking, and facilities that run the cloud services. (e.g., physical security of data centers, patching the hypervisor).\n2.  **Security IN the Cloud (Customer's Job):** Protecting the data, OS, identity management, and firewall configuration. (e.g., patching the Guest OS, encrypting customer data, setting strong passwords)."
+        },
+        "explanation": "AWS secures the concrete; you must secure the house you build on it. If you leave your S3 bucket open to the public, that is your fault, not Amazon's."
+    }
+]

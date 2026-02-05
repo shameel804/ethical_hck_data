@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Man-in-the-Middle (MitM)",
+        "ques": "A **Man-in-the-Middle** attack intercepts communication between two parties. Why does **HTTPS** (TLS/SSL) largely prevent this?",
+        "answer": {
+            "type": "text",
+            "content": "**HTTPS** encrypts the data between the client (victim) and the server.\n\nEven if an attacker intercepts the traffic (MitM), they only see garbled encrypted text. They cannot read or modify the messages without the private key. Also, certificates verify the server's identity, preventing the attacker from impersonating the bank."
+        },
+        "explanation": "MitM is easy on open WiFi; it's very hard against properly implemented Encryption."
+    },
+    {
+        "title": "ARP Spoofing",
+        "ques": "**ARP Spoofing** is a local network attack. What false information does the attacker send to the victim's computer?",
+        "answer": {
+            "type": "text",
+            "content": "The attacker sends a forged ARP (Address Resolution Protocol) 'Reply' packet saying:\n**'I am the Router! (My MAC Address = Router's IP)'**\n\nThe victim's computer updates its ARP cache and starts sending all internet traffic to the attacker's machine instead of the real router."
+        },
+        "explanation": "This allows the attacker to inspect, modify, or drop the victim's traffic."
+    },
+    {
+        "title": "DHCP Starvation",
+        "ques": "How does a **DHCP Starvation** attack create a Denial of Service on a local network?",
+        "answer": {
+            "type": "text",
+            "content": "The attacker floods the DHCP server with thousands of requests using fake MAC addresses.\n\n**Result:** The DHCP server issues all available IP addresses in its pool to these fake clients. When a real user tries to join the network, there are no IP addresses left, and they cannot connect."
+        },
+        "explanation": "It's like booking all the tables at a restaurant so no one else can eat."
+    },
+    {
+        "title": "VLAN Hopping",
+        "ques": "**VLAN Hopping** allows an attacker to access traffic on a different VLAN. Describe the **Switch Spoofing** method.",
+        "answer": {
+            "type": "text",
+            "content": "The attacker configures their computer to pretend it is a switch.\nIt negotiates a **Trunking** link (DTP - Dynamic Trunking Protocol) with the real switch. Once the trunk is established, the attacker has access to traffic from **ALL** VLANs passing through that switch, effectively bypassing segmentation."
+        },
+        "explanation": "This is why you should always disable DTP on access ports."
+    },
+    {
+        "title": "DNS Spoofing (Cache Poisoning)",
+        "ques": "What is the goal of a **DNS Spoofing** attack?",
+        "answer": {
+            "type": "text",
+            "content": "The goal is to map a legitimate domain name (e.g., `google.com`) to a malicious IP address controlled by the attacker.\n\n**Outcome:** When the victim types `google.com` into their browser, they are unknowingly sent to the attacker's fake website (which might look identical) to steal credentials."
+        },
+        "explanation": "It corrupts the phonebook of the internet."
+    }
+]

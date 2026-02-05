@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Same-Origin Policy (SOP)",
+        "ques": "The **Same-Origin Policy** is the cornerstone of browser security. Which three components must match for two URLs to be considered the 'Same Origin'? Give an example of a mismatch.",
+        "answer": {
+            "type": "text",
+            "content": "**Components:** \n1. **Protocol** (e.g., `https`)\n2. **Host** (e.g., `example.com`)\n3. **Port** (e.g., `443`)\n\n**Mismatch Example:** `http://example.com` (Port 80) and `https://example.com` (Port 443) are **different origins** because the protocol and default ports differ."
+        },
+        "explanation": "SOP prevents a malicious script on one site from reading sensitive data (like emails) on another site."
+    },
+    {
+        "title": "CORS Misconfigurations",
+        "ques": "Cross-Origin Resource Sharing (CORS) relaxes SOP. Why is setting `Access-Control-Allow-Origin: *` dangerous for an API that handles sensitive user data with cookies?",
+        "answer": {
+            "type": "text",
+            "content": "**Danger:** The wildcard `*` tells the browser to allow **any website** to read the response.\n\n**Impact:** However, browsers generally forbid sending credentials (cookies) when the wildcard is used. The real danger is when developers dynamically reflect the `Origin` header sent by the client (e.g., `Access-Control-Allow-Origin: attacker.com`) AND set `Access-Control-Allow-Credentials: true`. This allows the attacker to read the private data of the victim."
+        },
+        "explanation": "CORS is precise. Relaxing it too much (Wildcards or Unvalidated Reflection) defeats the purpose of SOP."
+    },
+    {
+        "title": "Content Security Policy (CSP)",
+        "ques": "How does a **Content Security Policy (CSP)** help mitigate Cross-Site Scripting (XSS)? What directive restricts scripts to load only from the site's own origin?",
+        "answer": {
+            "type": "text",
+            "content": "**Mitigation:** CSP allows the server to define a 'whitelist' of sources from which the browser is allowed to load resources (scripts, images, CSS). It blocks the execution of unauthorized scripts, even if the application is vulnerable to XSS injection.\n\n**Directive:** `script-src 'self'`\nThis tells the browser: Only execute scripts hosted on the same domain as this page. Block everything else (including inline scripts like `<script>alert(1)</script>`)."
+        },
+        "explanation": "CSP is a second layer of defense. It limits the *damage* of XSS by preventing the payload from executing or calling home."
+    },
+    {
+        "title": "Web Workers Security",
+        "ques": "Web Workers run scripts in background threads. From a security perspective, can a malicious Web Worker directly access the main page's **DOM** or **Cookies** to steal data?",
+        "answer": {
+            "type": "text",
+            "content": "**DOM Access:** No. Workers run in a separate global context and have **no access** to the `window` object, the `document` object, or the DOM.\n\n**Cookie Access:** No. Workers generally cannot access `document.cookie`.\n\n**Risk:** While they can't directly steal DOM data, they can still perform computation-heavy attacks (like crypto-mining) or network scanning (using `fetch`)."
+        },
+        "explanation": "The isolation of Web Workers reduces their utility for XSS-based data theft but makes them useful for resource abuse."
+    },
+    {
+        "title": "Browser Storage Isolation",
+        "ques": "Compare **sessionStorage** and **localStorage** in terms of data persistence and tab isolation.",
+        "answer": {
+            "type": "text",
+            "content": "**localStorage:** Persists even after the browser is closed and reopened. Shared across all tabs/windows of the same origin.\n\n**sessionStorage:** Survives page reloads but is **cleared when the tab is closed**. Crucially, it is **isolated per tab**. Two tabs open to the same website have separate sessionStorage instances.\n\n**Security:** `sessionStorage` reduces the window of exposure slightly but is still accessible via XSS similar to localStorage."
+        },
+        "explanation": "Understand the lifecycle of data. Short-lived sensitive data is often better in sessionStorage (or memory) than long-lived localStorage."
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Gatekeeper & Quarantine",
+        "ques": "How does macOS **Gatekeeper** protect users from running malicious apps downloaded from the internet? Mention the 'Quarantine' attribute.",
+        "answer": {
+            "type": "text",
+            "content": "**Mechanism:** When you download an app, the browser adds an extended attribute (`com.apple.quarantine`) to the file.\n\n**Check:** When you try to run it, Gatekeeper checks this flag. It then verifies if the app is **Code Signed** by a valid Apple Developer ID and (in newer versions) **Notarized** by Apple (scanned for malware). If not, execution is blocked."
+        },
+        "explanation": "Gatekeeper enforces a trust model. Unsigned code is treated as hostile."
+    },
+    {
+        "title": "FileVault Encryption",
+        "ques": "What type of encryption does **FileVault** provide? If a thief steals a Mac laptop that is powered off, can they access the data without the password?",
+        "answer": {
+            "type": "text",
+            "content": "**Type:** **Full Disk Encryption (FDE)** (XTS-AES-128).\n\n**Protection:** No. The data on the drive is encrypted at rest. Without the user's password (or recovery key) to unlock the encryption volume, the drive appears as random noise. The OS cannot even boot to the login screen without unlocking the volume first (Pre-Boot Authentication)."
+        },
+        "explanation": "Physical security is moot if the disk isn't encrypted. FileVault is essential for mobile devices."
+    },
+    {
+        "title": "System Integrity Protection (SIP)",
+        "ques": "Explain the concept of 'Rootless' introduced by **SIP**. Can the root user modify system files like `/System/Library/Kernels`?",
+        "answer": {
+            "type": "text",
+            "content": "**Rootless:** Steps away from the traditional model where `root` can do anything.\n\n**Constraint:** Even the root user (`sudo`) **cannot** modify protected system locations (like `/System`, `/usr`, `/bin`). Only processes signed by Apple and with special entitlements (like Apple Software Update) can write there.\n\n**Goal:** Prevents malware from modifying core OS files even if it gains root privileges."
+        },
+        "explanation": "SIP restricts the superuser to protect the system integrity."
+    },
+    {
+        "title": "Permissions (TCC)",
+        "ques": "macOS prompts the user heavily for permissions (e.g., 'App wants to access your Desktop'). This system is called **TCC** (Transparency, Consent, and Control). Why is this necessary?",
+        "answer": {
+            "type": "text",
+            "content": "**Necessity:** Traditionally, any app running as 'User' could read all 'User' files (documents, photos). TCC erects a barrier between applications and sensitive private data.\n\n**Mechanism:** It forces the application to explicitly ask for consent. The user's decision is stored in a privacy database protected by SIP."
+        },
+        "explanation": "It shifts from User-level boundaries to App-level boundaries."
+    },
+    {
+        "title": "App Sandbox",
+        "ques": "Apps distributed via the Mac App Store are required to be **Sandboxed**. What does this restriction imply for the app's ability to access files?",
+        "answer": {
+            "type": "text",
+            "content": "**Constraint:** A sandboxed app can generally only read/write files within its own **Container** directory (`~/Library/Containers/...`).\n\n**Access:** To access files outside (like a user's document), the user must explicitly grant permission via a **Powerbox** (Save/Open dialog). The app cannot simply browse the file system freely."
+        },
+        "explanation": "Sandboxing limits the blast radius. If a Calculator app is compromised, it shouldn't be able to read your Emails."
+    }
+]

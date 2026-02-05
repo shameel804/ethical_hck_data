@@ -1,0 +1,48 @@
+[
+    {
+        "title": "SQL Injection (Injection Flaws)",
+        "ques": "Explain how a **SQL Injection** vulnerability occurs. If an application executes the query `SELECT * FROM users WHERE user = '$input'`, what input could an attacker provide to log in without a password?",
+        "answer": {
+            "type": "text",
+            "content": "**Occurrence:** It happens when untrusted user data is concatenated directly into a database command without validation or escaping.\n\n**Attack Input:** An input like `' OR '1'='1`.\n\n**Resulting Query:** `SELECT * FROM users WHERE user = '' OR '1'='1'`\nSince `'1'='1'` is always true, the database returns all records (or the first record, usually the admin), bypassing authentication."
+        },
+        "explanation": "This is the classic 'tautology' attack. The database treats the user's input as code rather than data."
+    },
+    {
+        "title": "Broken Access Control",
+        "ques": "What is meant by **Broken Access Control** in the context of IDOR (Insecure Direct Object References)? Give an example.",
+        "answer": {
+            "type": "text",
+            "content": "**Broken Access Control** means the application fails to enforce permissions properly, allowing users to perform actions outside their intended limits.\n\n**IDOR Example:**\nA user visits `example.com/account?id=123` to see their profile. If they change the URL to `?id=124` and the server displays another user's private data without checking if the requester *owns* account 124, that is an IDOR vulnerability."
+        },
+        "explanation": "Access control must be enforced on the *server side* for every request, not just by hiding UI buttons."
+    },
+    {
+        "title": "XML External Entity (XXE)",
+        "ques": "How can an **XXE** attack lead to Local File Disclosure? Write a pseudo-XML snippet that might be used to read `/etc/passwd`.",
+        "answer": {
+            "type": "code",
+            "lang": "xml",
+            "content": "<!DOCTYPE foo [ \n  <!ENTITY xxe SYSTEM \"file:///etc/passwd\"> \n]>\n<stockCheck>\n  <productId>&xxe;</productId>\n</stockCheck>"
+        },
+        "explanation": "The attacker defines an external entity `&xxe;` that points to a local file URI. When the XML parser processes the input, it replaces the entity reference with the *contents* of the file, returning it in the response."
+    },
+    {
+        "title": "Security Misconfiguration",
+        "ques": "Why are **default credentials** considered a significant Security Misconfiguration? Provide a real-world example of where this often occurs.",
+        "answer": {
+            "type": "text",
+            "content": "**Reason:** Default credentials (like `admin`/`admin`) are publicly known. If a system is deployed without changing them, anyone can log in with full administrative privileges.\n\n**Example:** IoT devices (routers, cameras) often ship with default passwords. Attackers scan the internet for these specific device models and try the default logins to build botnets (like Mirai)."
+        },
+        "explanation": "Hardening requires changing defaults immediately. It's a low-hanging fruit for attackers."
+    },
+    {
+        "title": "Insecure Deserialization",
+        "ques": "What is the danger of **Insecure Deserialization** when handling objects passed from the client?",
+        "answer": {
+            "type": "text",
+            "content": "**Danger:** Deserialization is the process of converting data (like JSON or binary) back into an object. If the application blindly deserializes data from an untrusted source, an attacker can manipulate the serialized data structure.\n\n**Impact:** This can lead to **Remote Code Execution (RCE)** if the attacker manipulates the data to instantiate malicious objects or trigger 'gadget chains' (sequences of code execution) available in the application's libraries."
+        },
+        "explanation": "Data should be treated as data. Instantiating objects from user input is risky because it can trigger code execution during the object creation process."
+    }
+]

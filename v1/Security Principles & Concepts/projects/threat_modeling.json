@@ -1,0 +1,47 @@
+[
+    {
+        "title": "STRIDE Methodology",
+        "ques": "**STRIDE** is a threat classification model developed by Microsoft. List the **six categories** identified by the acronym and the specific security property each threat violates.",
+        "answer": {
+            "type": "text",
+            "content": "1.  **S - Spoofing:** Pretending to be someone else. Violates **Authentication**.\n2.  **T - Tampering:** Modifying data or code. Violates **Integrity**.\n3.  **R - Repudiation:** Denying having performed an action. Violates **Non-Repudiation**.\n4.  **I - Information Disclosure:** Exposing data to unauthorized users. Violates **Confidentiality**.\n5.  **D - Denial of Service:** Making a system unavailable. Violates **Availability**.\n6.  **E - Elevation of Privilege:** Gaining unauthorized capabilities. Violates **Authorization**."
+        },
+        "explanation": "**STRIDE** helps security experts systematically identify potential threats during the design phase of a system."
+    },
+    {
+        "title": "DREAD Scoring System",
+        "ques": "The **DREAD** model is used to rate, compare, and prioritize the severity of risks. What do the five letters in **DREAD** stand for?",
+        "answer": {
+            "type": "text",
+            "content": "1.  **D - Damage Potential:** How bad is the attack? (0 = No damage, 10 = Complete system destruction)\n2.  **R - Reproducibility:** How easy is it to reproduce the attack? (0 = Impossible, 10 = Trivial)\n3.  **E - Exploitability:** How much work is it to launch the attack? (0 = Advanced knowledge required, 10 = Script kiddie)\n4.  **A - Affected Users:** How many people will be impacted? (0 = None, 10 = All users)\n5.  **D - Discoverability:** How easy is it to find the vulnerability? (0 = Very hard, 10 = Visible in source code)"
+        },
+        "explanation": "Calculating the average of these 5 scores gives a risk rating. High **DREAD** scores indicate critical vulnerabilities that should be fixed immediately."
+    },
+    {
+        "title": "Attack Trees",
+        "ques": "What is an **Attack Tree**? Describe its structure using the terms 'Root Node' and 'Leaf Nodes'. Create a simple textual attack tree for the goal: 'Read User Emails'.",
+        "answer": {
+            "type": "text",
+            "content": "An **Attack Tree** is a conceptual diagram showing how an asset, or target, might be attacked.\n*   **Root Node:** The ultimate goal of the attacker.\n*   **Leaf Nodes:** Specific ways to achieve that goal.\n\n**Example: Goal = Read User Emails**\n*   **OR** (Attacker can choose any path)\n    *   **1. Phish User Password**\n        *   Send fake login email -> User clicks link -> User enters credentials\n    *   **2. Exploit Mail Server Vulnerability**\n        *   Scan for unpatched service -> Run exploit -> Dump database\n    *   **3. Intercept Network Traffic**\n        *   ARP Spoofing -> Sniff unencrypted traffic"
+        },
+        "explanation": "**Attack Trees** provide a visual way to analyze the security of a system by mapping out potential attack vectors against a specific objective."
+    },
+    {
+        "title": "Data Flow Diagrams (DFD) for Security",
+        "ques": "How are **Data Flow Diagrams (DFDs)** utilized in Threat Modeling? Specifically, what is drawn to identify where security checks (like authentication) must occur?",
+        "answer": {
+            "type": "text",
+            "content": "In Threat Modeling, **DFDs** map the flow of information through a system (processes, data stores, external entities, and data flows).\n\nKey to security is the **Trust Boundary**: A line drawn on the DFD that represents a transition between different levels of trust (e.g., between the public internet and the internal web server, or between the web server and the database).\n\n**Note:** Every data flow that crosses a **Trust Boundary** is a potential attack surface and requires validation, authentication, and authorization."
+        },
+        "explanation": "Visualizing **Trust Boundaries** on a DFD makes it obvious where attackers can inject malicious data or access sensitive systems."
+    },
+    {
+        "title": "Quantitative Risk Assessment",
+        "ques": "In **Quantitative Risk Assessment**, numeric values are assigned to risks. Define the following terms and the formula connecting them:\n1.  **SLE (Single Loss Expectancy)**\n2.  **ARO (Annualized Rate of Occurrence)**\n3.  **ALE (Annualized Loss Expectancy)**",
+        "answer": {
+            "type": "text",
+            "content": "1.  **SLE (Single Loss Expectancy):** The monetary loss expected from a single occurrence of a risk event.\n    *   *Formula:* `SLE = Asset Value * Exposure Factor (EF)`\n2.  **ARO (Annualized Rate of Occurrence):** The estimated frequency of the risk event occurring in a year.\n3.  **ALE (Annualized Loss Expectancy):** The expected monetary loss per year from this specific risk.\n\n**Master Formula:**\n`ALE = SLE * ARO`"
+        },
+        "explanation": "If a laptop is worth $1,000 (Asset Value) and is stolen, the loss is $1,000. If we expect to lose 5 laptops a year (ARO = 5), the **ALE** is $5,000. This helps justify the budget for security controls (e.g., locks or tracking software)."
+    }
+]

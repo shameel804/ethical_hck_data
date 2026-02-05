@@ -1,0 +1,47 @@
+[
+    {
+        "title": "HTTP Parameter Pollution (HPP)",
+        "ques": "Explain **HTTP Parameter Pollution**. If a request contains `id=100&id=999`, how might a vulnerable back-end process this to an attacker's advantage?",
+        "answer": {
+            "type": "text",
+            "content": "**Mechanism:** HPP occurs when multiple parameters with the same name are sent.\n\n**Behavior variation:**\n*   **PHP/Apache:** Uses the *last* value (999).\n*   **ASP.NET/IIS:** Concatenates them (`100,999`).\n*   **Node.js:** Creates an array (`[100, 999]`).\n\n**Attack:** A WAF (Web Application Firewall) might inspect the *first* value (100) and approve it as safe, while the backend application processes the *second* value (999), effectively bypassing the WAF."
+        },
+        "explanation": "Inconsistencies in standard parsing between security layers (WAF) and the application layer allow known bad inputs to slip through."
+    },
+    {
+        "title": "Business Logic Bypass",
+        "ques": "A shopping cart API calculates the total price. How can an attacker exploit a **Logic Flaw** to shop for free without any technical injection?",
+        "answer": {
+            "type": "text",
+            "content": "**Scenario:** A user buys a $1000 item.\n\n**Exploit:** The attacker adds a second item but intercepts the request and sets the quantity to a **negative number** (e.g., `-1`).\n\n**Result:** \nItem A: 1 * $1000 = $1000\nItem B: -1 * $1000 = -$1000\n**Total:** $0.\n\nIf the application doesn't validate that quantity > 0, the order processes for free."
+        },
+        "explanation": "Logic bugs are immune to automated scanners. They require understanding the rules of the business and thinking outside the box."
+    },
+    {
+        "title": "Broken Function Level Authorization",
+        "ques": "Differentiate between **Broken Object Level** Authorization (BOLA) and **Broken Function Level** Authorization (BFLA). Give a BFLA example.",
+        "answer": {
+            "type": "text",
+            "content": "**BOLA:** Specific to *data* (Can I see *User A's* profile?).\n**BFLA:** Specific to *features* (Can I use the *Admin* delete function?).\n\n**BFLA Example:**\nA regular user changes the URL from `/user/dashboard` to `/admin/users`. If the API serves the admin panel because it checks for *authentication* (is logged in) but forgets to check for the *admin role*, it is BFLA."
+        },
+        "explanation": "It's about vertical privilege escalation. Regular users accessing administrative functions."
+    },
+    {
+        "title": "Excessive Data Exposure",
+        "ques": "An API endpoint correctly displays a user's name on a profile page. However, inspecting the JSON response reveals their email, address, and DOB. Why is this **Excessive Data Exposure**?",
+        "answer": {
+            "type": "text",
+            "content": "**Issue:** The API returns the *entire* User object from the database (including sensitive fields) and relies on the front-end code to filter what is shown.\n\n**Risk:** An attacker can proxy the traffic and see the full JSON response, harvesting private data (PII) that was never meant to be public, even though the UI looks secure."
+        },
+        "explanation": "Never rely on the client to filter data. The API should return a DTO (Data Transfer Object) containing ONLY the data needed for that view."
+    },
+    {
+        "title": "Improper Assets Management",
+        "ques": "Why are **Deprecated API Versions** (e.g., `/api/v1/login` vs `/api/v3/login`) a security risk?",
+        "answer": {
+            "type": "text",
+            "content": "**Shadow APIs:** Developers often release `v3` with security fixes (e.g., rate limiting) but leave `v1` running for backward compatibility.\n\n**Attack:** Attackers specifically target the older, unpatched `v1` endpoints to exploit vulnerabilities that were fixed in newer versions but still exist in the 'zombie' endpoints."
+        },
+        "explanation": "Retire old versions. Identify and decommission shadow endpoints that are no longer maintained."
+    }
+]

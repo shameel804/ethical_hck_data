@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Network Traffic Analysis (NTA)",
+        "ques": "An analyst sees a large spike in outbound UDP traffic on Port 53 from a random workstation. Based on **Baseline Analysis**, why is this suspicious?",
+        "answer": {
+            "type": "text",
+            "content": "**Baseline:** Workstations usually send small DNS queries and receive small answers.\n\n**Anomaly:** A massive stream of outbound UDP 53 suggests **Data Exfiltration** (via DNS Tunneling). The workstation isn't asking for IP addresses; it's uploading files."
+        },
+        "explanation": "You can't spot the abnormal if you don't know the normal."
+    },
+    {
+        "title": "Full Packet Capture (PCAP)",
+        "ques": "Why is **Full Packet Capture** the 'Gold Standard' for forensic investigation, and what is its major downside?",
+        "answer": {
+            "type": "text",
+            "content": "**Pro:** It records every single bit that crossed the wire. You can reconstruct entire files, emails, or images that were transferred.\n**Con:** **Storage Cost**. Storing terabytes of data per day is incredibly expensive and difficult to index."
+        },
+        "explanation": "It's like recording CCTV footage of the entire internet 24/7."
+    },
+    {
+        "title": "Encrypted Traffic Analysis (ETA)",
+        "ques": "Since most malware uses HTTPS/TLS, we can't see the payload. How does **JA3 Fingerprinting** help detect malicious encrypted traffic without decrypting it?",
+        "answer": {
+            "type": "text",
+            "content": "**JA3** creates a unique fingerprint based on the *way* the SSL Hello handshake is negotiated (cipher suites, TLS version, extensions order).\n\n**Use:** Malware clients often use specific libraries with unique handshake patterns. Even if the data is encrypted, the 'handshake signature' identifies the malware family."
+        },
+        "explanation": "You can't see who is in the car, but you can identify the unique engine sound."
+    },
+    {
+        "title": "SDN Security (Software Defined Networking)",
+        "ques": "How does **SDN** enable 'Micro-segmentation' easier than traditional hardware networking?",
+        "answer": {
+            "type": "text",
+            "content": "In traditional networking, changing VLANs requires logging into switch CLIs.\n\nIn **SDN**, the network is code. You can write a policy: 'If a VM is tagged *Web Server*, block all SSH except from *Jump Box*.' The SDN controller instantly pushes this firewall rule to the virtual switch of every relevant VM. It automates security at scale."
+        },
+        "explanation": "Programmable security moves as fast as the attackers."
+    },
+    {
+        "title": "Zero Trust Networking: The Access Proxy",
+        "ques": "In a **Zero Trust** model, users don't VPN into the network. Instead, they access apps via an **Identity Aware Proxy (IAP)**. How does this improve security?",
+        "answer": {
+            "type": "text",
+            "content": "With a VPN, once you are in, you often have broad network access.\n\nWith **IAP**: The user connects to the proxy (publicly accessible). The proxy authenticates the user (MFA) and checks device health. Only THEN does it proxy the connection to the specific backend app. The user never touches the internal network directly."
+        },
+        "explanation": "It's like a concierge who checks your ID and then walks you specifically to your room, rather than giving you a key to the building."
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Server-Side Request Forgery (SSRF)",
+        "ques": "Explain how an attacker can use **SSRF** to scan an internal network. If the server accepts a URL like `image_url=http://public.com/img.png`, what might an attacker manipulate it to?",
+        "answer": {
+            "type": "text",
+            "content": "**Scanning:** The attacker forces the vulnerable server to make requests to arbitrary addresses. By observing the server's response (error messages, response time, or status codes), they can infer whether an internal host or port is active.\n\n**Manipulation:**\nThe attacker changes the input to an internal IP and port:\n`image_url=http://127.0.0.1:8080/admin`\nor\n`image_url=http://192.168.1.5:22`"
+        },
+        "explanation": "SSRF breaches the firewall trust boundary. The request comes from the *trusted* web server, not the external attacker."
+    },
+    {
+        "title": "Remote Code Execution (Command Injection)",
+        "ques": "A script uses the system command `ping` to test connectivity: `system(\"ping \" + host)`. How can this lead to **RCE**? Provide a payload to list files.",
+        "answer": {
+            "type": "text",
+            "content": "**Vulnerability:** The input `host` is concatenated directly into a shell command without sanitization.\n\n**Payload:** `127.0.0.1; ls -la`\n\n**Execution:** The shell executes `ping 127.0.0.1` (success), then encounters the semicolon `;` (command separator), and proceeds to execute `ls -la`, returning the directory listing to the attacker."
+        },
+        "explanation": "Shell injection allows execution of arbitrary OS commands. It is one of the most critical vulnerabilities."
+    },
+    {
+        "title": "File Upload Vulnerabilities",
+        "ques": "Why is it dangerous to allow file uploads without validating the **file content** and **extension**? What is a 'Web Shell'?",
+        "answer": {
+            "type": "text",
+            "content": "**Danger:** If an attacker uploads a script file (like `shell.php` or `shell.aspx`) to a directory that the web server can execute, they can trigger that script by simply visiting its URL.\n\n**Web Shell:** A small script (e.g., `<?php system($_GET['cmd']); ?>`) uploaded to the server that provides a persistent command-line interface via the browser, effectively taking control of the server."
+        },
+        "explanation": "Validation must be strict (allow-list of extensions, check magic bytes). Never trust the MIME type sent by the browser."
+    },
+    {
+        "title": "Path Traversal (Directory Traversal)",
+        "ques": "Describe how **Path Traversal** works. If a URL is `load_file.php?file=report.txt`, what would the attacker input to try and access the system password file on Linux?",
+        "answer": {
+            "type": "text",
+            "content": "**Mechanism:** It exploits insufficient sanitization of user-supplied filenames. \n\n**Input:** `../../../../etc/passwd`\n\n**Explanation:** The `../` sequence means 'go up one directory'. Repeated enough times, it navigates out of the intended web root folder and into the root of the file system to access sensitive system files."
+        },
+        "explanation": "This allows reading files outside the web root. Proper defense involves canonicalizing the path and ensuring it starts with the expected base directory."
+    },
+    {
+        "title": "Insecure Direct Object References (IDOR)",
+        "ques": "A user's profile is accessed via `user_id=1001`. Why are **Sequential IDs** (like 1001, 1002) more risky than **UUIDs** (Universally Unique Identifiers) in this context?",
+        "answer": {
+            "type": "text",
+            "content": "**Enumeration Risk:** Sequential IDs are predictable. An attacker knows that if user 1001 exists, user 1002 likely exists too. They can simply iterate through numbers to scrape data for all users.\n\n**UUID Advantage:** UUIDs (like `550e8400-e29b-41d4-a716-446655440000`) are practically impossible to guess. While UUIDs do not *replace* access control checks, they prevent trivial enumeration attacks."
+        },
+        "explanation": "Obscurity (UUIDs) is not security, but it adds a significant barrier against automated scraping. Access control must still be enforced."
+    }
+]

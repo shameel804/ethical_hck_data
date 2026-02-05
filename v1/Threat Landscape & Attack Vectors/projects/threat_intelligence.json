@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Threat Actors Classification",
+        "ques": "Categorize the following threat actors based on their primary motivation:\n1.  **Script Kiddies**\n2.  **Hacktivists**\n3.  **Nation-State Actors**\n\nPossible Motivations: *Ideology/Political*, *Notoriety/Chaos*, *Espionage/Geopolitical Strategic Advantage*.",
+        "answer": {
+            "type": "text",
+            "content": "1.  **Script Kiddies:** **Notoriety/Chaos**. They use existing tools to hack for fun or bragging rights with little skill.\n2.  **Hacktivists:** **Ideology/Political**. They hack to promote a political or social cause (e.g., Anonymous).\n3.  **Nation-State Actors:** **Espionage/Geopolitical Strategic Advantage**. Highly skilled groups funded by governments to steal secrets or disrupt infrastructure (e.g., APT28)."
+        },
+        "explanation": "Understanding the *who* and *why* helps in predicting *how* they might attack."
+    },
+    {
+        "title": "APT Groups",
+        "ques": "What defines an **Advanced Persistent Threat (APT)** group? Why are they considered more dangerous than typical cybercriminals? Name one well-known APT group.",
+        "answer": {
+            "type": "text",
+            "content": "**APT groups** are stealthy, sophisticated threat actors (usually nation-state sponsored) that gain unauthorized access to a network and remain undetected for an extended period.\n\n**Why dangerous:**\n*   **Resources:** Unlimited funding and custom zero-day exploits.\n*   **Persistence:** They don't just 'smash and grab'; they install backdoors to spy for years.\n\n**Example:** **APT29 (Cozy Bear)**, linked to Russian intelligence."
+        },
+        "explanation": "The 'Persistent' part is key. You might kick them out of one server, but they are likely hiding in three others."
+    },
+    {
+        "title": "TTPs: Tactics, Techniques, and Procedures",
+        "ques": "In Threat Intelligence, we analyze **TTPs**. Explain the difference between **Tactics** and **Techniques** using the **MITRE ATT&CK** framework terminology.",
+        "answer": {
+            "type": "text",
+            "content": "*   **Tactics:** The 'Why'. The tactical goal of the adversary. (e.g., 'Initial Access', 'Privilege Escalation', 'Lateral Movement').\n*   **Techniques:** The 'How'. The specific method used to achieve the tactical goal. (e.g., 'Phishing via Spearphishing Link' is a technique to achieve 'Initial Access')."
+        },
+        "explanation": "David Bianco's 'Pyramid of Pain' places TTPs at the top. They are the hardest thing for an attacker to change, so detecting them is the most valuable."
+    },
+    {
+        "title": "Indicators of Compromise (IoC)",
+        "ques": "An **IoC** is a piece of forensic data that identifies potentially malicious activity. List **three common types** of IoCs you might find in a threat feed.",
+        "answer": {
+            "type": "text",
+            "content": "1.  **File Hashes:** MD5, SHA1, or SHA256 signatures of known malware files.\n2.  **IP Addresses:** Source IPs of known command-and-control (C2) servers or botnets.\n3.  **Domain Names:** URLs used for phishing sites or malware distribution."
+        },
+        "explanation": "IoCs are the 'fingerprints' left behind at a crime scene. Blocking them provides a basic level of defense, though they are easy for attackers to change."
+    },
+    {
+        "title": "Threat Feeds",
+        "ques": "What is a **Threat Intelligence Feed**? Differentiate between **Strategic** and **Operational** threat intelligence.",
+        "answer": {
+            "type": "text",
+            "content": "A **Threat Feed** is a real-time stream of data related to potential or current cyber threats.\n\n*   **Strategic Intelligence:** High-level trends for executives (CISO/CEO). Focuses on longer-term risks, financial impact, and geopolitical events. (e.g., 'Ransomware attacks in the healthcare sector are rising by 40%').\n*   **Operational Intelligence:** Actionable technical details for security teams (SOC). Focuses on specific attacks and TTPs. (e.g., 'Block IP 192.168.1.5 immediately; it's a C2 server for Emotet')."
+        },
+        "explanation": "Feeds turn raw data into actionable knowledge."
+    }
+]

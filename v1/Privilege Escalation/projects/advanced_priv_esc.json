@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Container Escape",
+        "ques": "A Docker container has the host's **docker.sock** mounted inside it (`/var/run/docker.sock`). How does this allow an attacker inside the container to escape to the host with root privileges?",
+        "answer": {
+            "type": "text",
+            "content": "**Capability:** Access to `docker.sock` allows sending commands to the Docker daemon on the host.\n\n**Exploit:** The attacker uses the docker CLI (or API) inside the container to spin up a *new* container that mounts the host's root filesystem (`/`) to a folder (e.g., `/mnt`) and runs with `--privileged`.\n\n**Result:** The attacker enters this new container, navigates to `/mnt`, and now has full Read/Write access to the entire Host OS filesystem as root."
+        },
+        "explanation": "Never mount the docker socket inside a container unless you absolutely trust the processes inside to be Root on the host."
+    },
+    {
+        "title": "Active Directory Golden Ticket",
+        "ques": "What is a **Golden Ticket** in Active Directory? Which specific account's hash is required to forge it?",
+        "answer": {
+            "type": "text",
+            "content": "**Definition:** A forged Kerberos TGT (Ticket Granting Ticket) that gives the attacker domain admin access to *any* resource in the domain for up to 10 years.\n\n**Requirement:** The **KRBTGT** account hash.\n\n**Impact:** Once an attacker has the KRBTGT hash, they can create valid tickets for non-existent users or elevate any user to Admin, bypassing all password changes (until the KRBTGT password itself is changed twice)."
+        },
+        "explanation": "It is the ultimate persistent backdoor in a Windows Domain."
+    },
+    {
+        "title": "Cloud IAM Privilege Escalation",
+        "ques": "In AWS, an attacker compromises an EC2 instance and finds it has an **IAM Role** attached with the `iam:CreatePolicyVersion` and `iam:SetDefaultPolicyVersion` permissions. How does this lead to full Admin access?",
+        "answer": {
+            "type": "text",
+            "content": "**Exploit:**\n1. The attacker checks the policy attached to their current role.\n2. They use `CreatePolicyVersion` to create a new version of that policy that grants `\"Action\": \"*\", \"Resource\": \"*\"` (AdministratorAccess).\n3. They use `SetDefaultPolicyVersion` to make this new permissive version the active one.\n\n**Result:** The role they actively possess now has full admin rights."
+        },
+        "explanation": "Cloud privilege escalation is often about 'permission to grant permissions'."
+    },
+    {
+        "title": "Hypervisor Escape",
+        "ques": "What is a **Hypervisor Escape** (or vm escape)? Why is it considered a critical cloud vulnerability?",
+        "answer": {
+            "type": "text",
+            "content": "**Definition:** An exploit that allows code running inside a Guest VM to break out and execute code on the Host Hypervisor.\n\n**Criticality:** In a public cloud (AWS/Azure), the Host Hypervisor runs VMs from *many different customers*. An escape allows an attacker to compromise the host and potentially access the data/VMs of *other customers* (Tenant Isolation Breach)."
+        },
+        "explanation": "It breaks the fundamental promise of cloud computing: isolation."
+    },
+    {
+        "title": "Zero-Day Privilege Escalation",
+        "ques": "What defines a **Zero-Day** exploit? If a software vendor releases a patch today, does the exploit stop being a Zero-Day?",
+        "answer": {
+            "type": "text",
+            "content": "**Definition:** An attack that exploits a vulnerability that is unknown to the vendor. The vendor has had \"zero days\" to fix it.\n\n**Post-Patch:** Correct. Once the patch is released (or the vulnerability is publicly disclosed), it becomes an \"N-day\" exploit. It is still dangerous to unpatched systems, but it is no longer a Zero-Day."
+        },
+        "explanation": "Zero-days are rare and expensive. They represent the unknown unknowns of security."
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Phishing Attacks",
+        "ques": "**Phishing** is the most common entry point for attacks. Differentiate between general **Phishing**, **Spear Phishing**, and **Whaling**.",
+        "answer": {
+            "type": "text",
+            "content": "1.  **Phishing:** A broad, automated campaign sending generic emails to thousands of users hoping someone bites. (e.g., 'Dear Customer, update your password').\n2.  **Spear Phishing:** Highly targeted attack aimed at a specific individual or organization. Uses personal details to increase credibility. (e.g., 'Hi Bob, please review the Q3 report attached').\n3.  **Whaling:** A form of spear phishing targeting high-profile executives (C-suite) or 'big fish'. (e.g., Fake email from the CEO to the CFO requesting an urgent wire transfer)."
+        },
+        "explanation": "The more targeted the attack, the harder it is to detect and the more dangerous it becomes."
+    },
+    {
+        "title": "Malware Delivery Methods",
+        "ques": "Attackers need a way to deliver their payload. Describe the **Drive-by Download** delivery method. How does it differ from a malicious email attachment?",
+        "answer": {
+            "type": "text",
+            "content": "**Drive-by Download:**\nUser visits a legitimate website that has been compromised (or a malicious site). Malicious code on the webpage automatically exploits a vulnerability in the user's browser or plugin *without* the user clicking anything to download a file.\n\n**Difference:**\n*   **Email Attachment:** Requires user interaction (clicking/opening).\n*   **Drive-by:** Requires ZERO user interaction beyond visiting the page."
+        },
+        "explanation": "This highlights the importance of keeping browsers and plugins updated. You can get infected just by viewing an ad."
+    },
+    {
+        "title": "Supply Chain Attacks",
+        "ques": "The **SolarWinds** hack is a classic example of a **Supply Chain Attack**. Explain how this attack vector works. Why is it so difficult to defend against?",
+        "answer": {
+            "type": "text",
+            "content": "**How it works:** Instead of attacking the target company directly (which might be well-defended), the attacker compromises a trusted third-party vendor or software supplier. They inject malware into a legitimate software update. When the target company updates their software, they unknowingly install the malware.\n\n**Why it's hard:** You inherently trust signed updates from your vendors. It bypasses the perimeter because the traffic is initiated from inside essentially (pulling an update)."
+        },
+        "explanation": "It exploits the trust relationship between an organization and its suppliers."
+    },
+    {
+        "title": "Insider Threats",
+        "ques": "Not all attacks come from the outside. Define an **Insider Threat**. Distinguish between a **Malicious Insider** and a **Negligent Insider**.",
+        "answer": {
+            "type": "text",
+            "content": "**Insider Threat:** A security risk that originates from within the targeted organization (employees, contractors, business partners).\n\n1.  **Malicious Insider:** An employee who intentionally abuses their access for personal gain or revenge (e.g., stealing IP before quitting, planting a logic bomb).\n2.  **Negligent Insider:** An employee who accidentally causes a breach through carelessness or lack of training (e.g., losing a USB drive, clicking a phishing link, leaving a server publicly accessible)."
+        },
+        "explanation": "Negligent insiders are actually more common than malicious ones, but both can cause catastrophic damage."
+    },
+    {
+        "title": "Zero-Day Exploits",
+        "ques": "What is a **Zero-Day Exploit**? Why is the term 'Zero-Day' used?",
+        "answer": {
+            "type": "text",
+            "content": "A **Zero-Day Exploit** attacks a software vulnerability that is unknown to the software vendor or has no patch available yet.\n\n**The Name:** It refers to the fact that developers have had **zero days** to fix the flaw before it was exploited in the wild. The race is on: attackers are using it, and defenders have no official patch."
+        },
+        "explanation": "These are the most expensive and prized weapons in a hacker's arsenal because standard defenses (like antivirus signatures) usually miss them."
+    }
+]

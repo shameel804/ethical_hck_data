@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Firewalls: Stateful vs. Stateless",
+        "ques": "**Firewalls** form the first line of defense. Explain the key advantage of a **Stateful Firewall** over a simple Packet Filter (Stateless).",
+        "answer": {
+            "type": "text",
+            "content": "**Stateless:** Looks at every packet in isolation. It forgets the packet it saw 1 millisecond ago.\n**Stateful:** Memories the state of interactions. It knows 'This incoming packet is the reply to the outbound request sent 2 seconds ago'.\n\n**Advantage:** It can automatically allow return traffic for established connections without needing open 'Any/Any' inbound rules."
+        },
+        "explanation": "Stateful inspection is smarter and safer."
+    },
+    {
+        "title": "IDS vs. IPS",
+        "ques": "What is the critical functional difference between an **IDS** (Intrusion Detection System) and an **IPS** (Intrusion Prevention System)?",
+        "answer": {
+            "type": "text",
+            "content": "*   **IDS (Passive):** Like a burglar alarm. It detects an attack and alerts the admin, but the attack *still happens*.\n*   **IPS (Active):** Like a bouncer. It sits inline with the traffic flow. If it detects an attack, it drops the packet immediately, preventing the attack from reaching the target."
+        },
+        "explanation": "IDS watches; IPS acts."
+    },
+    {
+        "title": "Network Segmentation (DMZ)",
+        "ques": "Why should public-facing servers (like Web Servers) be placed in a **DMZ** (Demilitarized Zone) rather than on the internal LAN?",
+        "answer": {
+            "type": "text",
+            "content": "A **DMZ** is a buffer zone.\n\n**Reason:** If an attacker hacks the web server in the DMZ, they are still stuck behind a second firewall. They cannot directly access the internal HR database or employee laptops. If the web server was on the LAN, hacking it would give direct access to everything."
+        },
+        "explanation": "Containment is key. Assume the public server *will* be hacked."
+    },
+    {
+        "title": "Honeypots",
+        "ques": "A **Honeypot** is a decoy system. Why would a defender want to attract an attacker?",
+        "answer": {
+            "type": "text",
+            "content": "1.  **Distraction:** Wastes the attacker's time and resources on a fake target.\n2.  **Detection:** Since no real user should ever touch the honeypot, *any* traffic to it is 100% malicious (Zero False Positives).\n3.  **Intelligence:** You can record the attacker's commands to learn their tools and techniques."
+        },
+        "explanation": "It's a mousetrap for hackers."
+    },
+    {
+        "title": "Next-Generation Firewalls (NGFW)",
+        "ques": "How does an **NGFW** go beyond traditional port-based blocking? Give an example involving 'Facebook'.",
+        "answer": {
+            "type": "text",
+            "content": "Traditional firewalls block ports (e.g., Block TCP 80). Since almost everything uses port 80/443 (HTTP/S), this is useless.\n\n**NGFW (Application Awareness):** It looks inside the payload. It can say 'Allow HTTP traffic to *Salesforce.com* but Block HTTP traffic to *Facebook.com*', even though both use port 443."
+        },
+        "explanation": "It understands the Application, not just the plumbing."
+    }
+]

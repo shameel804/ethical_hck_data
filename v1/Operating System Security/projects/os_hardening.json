@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Security Baselines (CIS Benchmarks)",
+        "ques": "What is a **Security Baseline** (like CIS Benchmarks)? Why is it better to start with a standard baseline than to harden a server from scratch?",
+        "answer": {
+            "type": "text",
+            "content": "**Baseline:** A defined set of configuration settings (e.g., 'Disable Telnet', 'Set Password Age') agreed upon by industry experts.\n\n**Benefit:** Hardening is complex. Using a vetted benchmark ensures you cover hundreds of obscure settings you might miss otherwise, providing a known secure starting point that is auditable."
+        },
+        "explanation": "Don't reinvent the wheel. Use industry standards to ensure comprehensive coverage."
+    },
+    {
+        "title": "Patch Management Strategy",
+        "ques": "In a corporate environment, you cannot patch everything instantly. How do you prioritize which patches to apply first? Mention **CVSS** and **Exploitability**.",
+        "answer": {
+            "type": "text",
+            "content": "**Prioritization:**\n1.  **CVSS Score:** High severity (9.0+).\n2.  **Exploitability:** Is there a known public exploit? Is it being actively used in the wild (KEV - Known Exploited Vulnerabilities)?\n3.  **Asset Value:** Is the target an external-facing production server or an internal test box?\n\nHigh CVSS + Active Exploit + Critical Asset = Patch Immediately."
+        },
+        "explanation": "Risk = Threat * Vulnerability * Impact. Patching reduces Vulnerability."
+    },
+    {
+        "title": "Logging and SIEM",
+        "ques": "Why is **Centralized Logging** (forwarding logs to a SIEM) critical for incident response, especially if a server is compromised?",
+        "answer": {
+            "type": "text",
+            "content": "**Integrity:** If an attacker compromises a server, the first thing they often do is **delete the local logs** (`/var/log/auth.log`) to cover their tracks.\n\n**Response:** If logs are forwarded in real-time to a remote, write-only server (SIEM), the evidence is preserved separate from the compromised endpoint, allowing forensic reconstruction of the attack."
+        },
+        "explanation": "Logs on the compromised machine are untrustworthy. Off-site logs are the source of truth."
+    },
+    {
+        "title": "Kernel Hardening",
+        "ques": "What is the purpose of **disabling kernel modules** (like USB storage or FireWire drivers) on a secure server?",
+        "answer": {
+            "type": "text",
+            "content": "**Attack Surface Reduction:** Many kernel drivers have bugs. If a server is in a data center and never needs to plug in a USB drive, the USB driver code is just unnecessary risk.\n\n**Prevention:** Disabling it prevents attackers with physical access (or RCE) from loading malicious devices or exploiting bugs in those unused drivers to crash or subvert the kernel."
+        },
+        "explanation": "If you don't use it, disable it. Code that doesn't run cannot be exploited."
+    },
+    {
+        "title": "Container Security",
+        "ques": "What is the security benefit of running containers as a **non-root user** ('Rootless Containers')?",
+        "answer": {
+            "type": "text",
+            "content": "**Risk:** By default, the `root` user *inside* a container is often the same `root` user (UID 0) on the *host* machine.\n\n**Benefit:** If an attacker breaks out of a rootless container (Container Escape), they find themselves as a low-privileged user on the host, severely limiting their ability to compromise the underlying infrastructure."
+        },
+        "explanation": "Mapping container root to host root is a major design risk. User namespace remapping mitigates this."
+    }
+]

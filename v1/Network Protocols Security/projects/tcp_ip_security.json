@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Understanding IP Spoofing",
+        "ques": "Explain the concept of **IP Spoofing** and describe one common scenario where an attacker might use it. How does the receiver perceive the source of the packet?",
+        "answer": {
+            "type": "text",
+            "content": "**IP Spoofing** is a technique where an attacker creates Internet Protocol (IP) packets with a **forged source IP address** to impersonate another computer system.\n\n**Common Scenario:** It is frequently used in **Denial of Service (DoS)** attacks. The attacker sends a flood of packets to a victim, but because the source address is spoofed, the response packets are sent to the forged IP (or nowhere), hiding the attacker's identity and potentially overwhelming the victim or a third party (Reflected DoS).\n\n**Receiver's Perception:** The receiver believes the packet originated from the trusted source indicated by the spoofed IP header, not the actual attacker's machine."
+        },
+        "explanation": "IP Spoofing relies on the lack of **source address validation** in many networks. It manipulates the IP header to deceive the recipient about the packet's origin."
+    },
+    {
+        "title": "TCP Sequence Prediction Attack",
+        "ques": "What is **TCP Sequence Prediction**, and why is it dangerous? Describe how an attacker can use this to hijack a connection.",
+        "answer": {
+            "type": "text",
+            "content": "**TCP Sequence Prediction** is an attack where the attacker guesses the **Initial Sequence Number (ISN)** used in a TCP connection.\n\n**Danger:** If an attacker can predict the sequence number, they can construct valid TCP packets that the receiving system will accept as legitimate, even without seeing the actual traffic.\n\n**Hijacking Process:**\n1. The attacker monitors traffic or analyzes the ISN generation algorithm of the target OS.\n2. They flood the victim with a connection request (spoofing a trusted IP).\n3. They predict the ISN the server will send back.\n4. They send an ACK packet with the predicted sequence number, establishing a connection as the trusted host without ever completing the handshake legitimately."
+        },
+        "explanation": "This attack exploits weak **random number generation** in older operating systems. Modern systems use more randomized ISNs to mitigate this."
+    },
+    {
+        "title": "Analyzing SYN Floods",
+        "ques": "A server is experiencing a **SYN Flood** attack. The administrator observes a large number of connections in a specific state. What is that state, and what command could you use on a Linux server to count these connections?",
+        "answer": {
+            "type": "text",
+            "content": "**Connection State:** The connections will be in the **SYN_RECV** state. This happens because the server has received the initial SYN packet and sent a SYN-ACK, but is waiting for the final ACK which never arrives (or arrives from a spoofed IP).\n\n**Command:**\nYou can use `netstat` or `ss` to count them:\n`netstat -antp | grep SYN_RECV | wc -l`\n\n**Mitigation:** Enabling **SYN Cookies** is a common defense mechanism."
+        },
+        "explanation": "A SYN Flood exhausts the server's **backlog queue** of half-open connections, preventing legitimate users from connecting. Identifying the `SYN_RECV` state is the primary diagnostic step."
+    },
+    {
+        "title": "TCP Session Hijacking Mechanics",
+        "ques": "Differentiate between **Blind** and **Non-Blind** TCP Session Hijacking.",
+        "answer": {
+            "type": "text",
+            "content": "*   **Non-Blind Hijacking:** The attacker is on the same network segment and can **sniff** the traffic. They can see the sequence numbers and acknowledgement numbers in real-time, making it easier to inject malicious packets and take over the session.\n*   **Blind Hijacking:** The attacker **cannot see** the traffic (e.g., they are outside the network). They must guess or predict the sequence numbers (Sequence Prediction) to inject data. This is significantly harder to execute."
+        },
+        "explanation": "The key difference is **visibility**. Non-Blind attacks rely on sniffing (Man-in-the-Middle), while Blind attacks rely on prediction and probability."
+    },
+    {
+        "title": "IP Fragmentation Evasion",
+        "ques": "How can **IP Fragmentation** be used to evade Intrusion Detection Systems (IDS)? Explain the **Tiny Fragment Attack**.",
+        "answer": {
+            "type": "text",
+            "content": "IDSs typically inspect packet headers to detect malicious signatures (e.g., a specific TCP port or flag).\n\n**Tiny Fragment Attack:**\nThe attacker fragments the IP packet into very small chunks. Ideally, the first fragment is small enough that it contains the IP header but **does not contain the complete TCP header** (specifically, the destination port might be pushed to the second fragment).\n\nIf the IDS only filters based on the first fragment's header information, it might miss the malicious payload or forbidden port number that follows in subsequent fragments, allowing the attack to pass through to the destination where it is reassembled."
+        },
+        "explanation": "This attack exploits the **reassembly** process. The target host reassembles the fragments, but the security device might inspect them individually and miss the context, or simply fail to handle the overhead of reassembling every stream."
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "title": "RFID Cloning",
+        "ques": "**RFID Cloning** is a physical security attack. Explain how an attacker can clone a building access card without stealing it.",
+        "answer": {
+            "type": "text",
+            "content": "The attacker uses a portable RFID reader/writer (like a Proxmark3).\n\n**Process:** They bump into the victim in a crowded elevator or line (Proximity). The reader energizes the victim's card, reads the ID number, and saves it. The attacker can then write that ID to a blank card, creating a perfect clone."
+        },
+        "explanation": "Low-frequency (125kHz) cards have NO encryption; they just shout their ID to anyone who asks."
+    },
+    {
+        "title": "NFC vs. RFID",
+        "ques": "**NFC** (Near Field Communication) is a subset of RFID. What is the key operational difference affecting security range?",
+        "answer": {
+            "type": "text",
+            "content": "*   **RFID:** Can be read from feet or even meters away (UHF).\n*   **NFC:** Designed for extremely short range (less than 4 cm or 2 inches).\n\n**Security:** This physical proximity requirement makes NFC harder to attack surreptitiously than long-range RFID."
+        },
+        "explanation": "NFC requires deliberate action (tapping)."
+    },
+    {
+        "title": "Proximity Card Security (HID Prox)",
+        "ques": "Why are standard **HID Prox II** cards considered insecure for high-security facilities?",
+        "answer": {
+            "type": "text",
+            "content": "They lack **Mutual Authentication** and **Encryption**.\n\nThe card will transmit its facility code and card number to *any* reader that powers it up. There is no secret key involved. It is equivalent to writing the password on a piece of paper and taping it to your forehead."
+        },
+        "explanation": "Upgrade to smart cards (like MIFARE DESFire) that use encryption keys."
+    },
+    {
+        "title": "Contactless Payment Security",
+        "ques": "Contactless Credit Cards (EMV) use NFC. Why can't an attacker simply clone your credit card and use it forever like a building pass?",
+        "answer": {
+            "type": "text",
+            "content": "EMV cards use a **Dynamic CVV** (iCVV).\n\nEvery time the card is read, it generates a unique, one-time-use cryptographic code. If an attacker copies the signal, that code is valid for *that specific transaction only*. They cannot use it for a second purchase."
+        },
+        "explanation": "It's a rolling code, not a static password."
+    },
+    {
+        "title": "RFID Jamming (DoS)",
+        "ques": "How can **RFID Jamming** be used to facilitate a physical break-in?",
+        "answer": {
+            "type": "text",
+            "content": "An attacker uses a jammer to flood the frequency (125kHz or 13.56MHz) with noise.\n\n**Scenario:** A legitimate employee tries to scan their badge to open the door, but it fails. Frustrated, they manually open the door or ask the security guard to buzz them in, bypassing the audit log."
+        },
+        "explanation": "Attacking availability can force people to bypass security controls."
+    }
+]

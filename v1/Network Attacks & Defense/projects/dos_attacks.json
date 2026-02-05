@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Volumetric Attacks",
+        "ques": "A **Volumetric DDoS** attack (like UDP Flood) tries to exhaust bandwidth. How is this measured?",
+        "answer": {
+            "type": "text",
+            "content": "It is measured in **Bits Per Second (bps)**.\n\n**Concept:** If your internet connection is a 1 Gbps pipe, the attacker tries to blast 100 Gbps of useless data at it. The pipe clogs, and legitimate traffic cannot get through."
+        },
+        "explanation": "It's sheer brute force traffic congestion."
+    },
+    {
+        "title": "Protocol Attacks (SYN Flood)",
+        "ques": "Explain how a **SYN Flood** utilizes the TCP Handshake to exhaust server resources.",
+        "answer": {
+            "type": "text",
+            "content": "1.  Attacker sends thousands of `SYN` packets (Start connection).\n2.  Server replies with `SYN-ACK` and allocates memory for the connection, waiting for the final ACK.\n3.  Attacker **NEVER** sends the final `ACK`.\n\n**Result:** The server waits and waits, holding open thousands of half-open connections until its memory is full and it crashes."
+        },
+        "explanation": "It exploits the politeness of the TCP protocol."
+    },
+    {
+        "title": "Application Layer Attacks (HTTP Flood)",
+        "ques": "Why are **Application Layer (Layer 7)** attacks harder to detect than volumetric attacks?",
+        "answer": {
+            "type": "text",
+            "content": "Layer 7 attacks (like sending complex search queries) look like legitimate web traffic. They don't need huge bandwidth.\n\n**Example:** 100 people refreshing a heavy database report page can crash a server just as effectively as a 10 Gbps flood, but the traffic volume looks normal."
+        },
+        "explanation": "It attacks the CPU/RAM, not the bandwidth."
+    },
+    {
+        "title": "Botnets",
+        "ques": "What is a **Botnet** and how is a 'C2' server involved?",
+        "answer": {
+            "type": "text",
+            "content": "**Botnet:** A network of infected computers (Zombies) controlled by an attacker.\n**C2 (Command and Control):** The server that issues orders to the botnet. The attacker sends one command ('Attack Target X') to the C2, and the C2 broadcasts it to 100,000 bots."
+        },
+        "explanation": "There is strength in numbers. Your IoT toaster might be attacking the Pentagon right now."
+    },
+    {
+        "title": "DDoS Mitigation: Anycast",
+        "ques": "How does **Anycast** routing help mitigate a DDoS attack?",
+        "answer": {
+            "type": "text",
+            "content": "**Anycast** shares the same IP address across multiple servers geographically distributed around the world.\n\n**Mitigation:** When an attack occurs, the traffic is automatically routed to the *nearest* data center. This spreads the impact. Instead of one server taking the full hit, 50 servers share the load, absorbing the attack."
+        },
+        "explanation": "Divide and conquer (the traffic)."
+    }
+]

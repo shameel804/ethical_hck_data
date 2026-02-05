@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Port Scanning Basics",
+        "ques": "Port scanning determines which ports on a network are open and listening. What is the difference between a **TCP Connect Scan** and a **SYN Scan** (Stealth Scan)?",
+        "answer": {
+            "type": "text",
+            "content": "**TCP Connect Scan:** Completes the full 3-way handshake (SYN -> SYN-ACK -> ACK). The application knows a connection was made. It's noisy and easily logged.\n**SYN Scan (Stealth):** Sends SYN, receives SYN-ACK, but sends **RST** (Reset) instead of ACK. The connection is never fully established. It's faster and stealthier."
+        },
+        "explanation": "The SYN scan is the default in Nmap (`-sS`) for a reason: speed and discretion."
+    },
+    {
+        "title": "Service Fingerprinting",
+        "ques": "After finding an open port, the next step is **Service Fingerprinting** (also known as Version Detection). Why is knowing that Port 80 is open not enough?",
+        "answer": {
+            "type": "text",
+            "content": "Knowing Port 80 is open just tells you *something* is listening.\n**Fingerprinting** tells you *what* is listening (e.g., 'Apache httpd 2.4.49').\n\n**Value:** Knowing the exact version allows you to search for specific Vulnerabilities (CVEs) related to that version. (e.g., Apache 2.4.49 was vulnerable to path traversal)."
+        },
+        "explanation": "It transforms a generic 'open door' into a specific 'lock type' you can pick."
+    },
+    {
+        "title": "Banner Grabbing",
+        "ques": "**Banner Grabbing** is a technique used to glean information about a computer system on a network and the services running on its open ports. Write a command using `netcat` or `telnet` to grab the banner of a web server at `192.168.1.5` on port 80.",
+        "answer": {
+            "type": "code",
+            "lang": "bash",
+            "content": "nc -v 192.168.1.5 80\nHEAD / HTTP/1.0\n\n# OR\n\ntelnet 192.168.1.5 80\nHEAD / HTTP/1.0"
+        },
+        "explanation": "The server might respond with a header like `Server: nginx/1.18.0 (Ubuntu)`, revealing the OS and software version."
+    },
+    {
+        "title": "DNS Zone Transfers",
+        "ques": "A **DNS Zone Transfer** (AXFR) is a mechanism to replicate DNS databases across a set of DNS servers. Why is it a critical vulnerability if allowed to an unauthorized IP?",
+        "answer": {
+            "type": "text",
+            "content": "If a DNS server allows an arbitrary client to request a Zone Transfer (`AXFR`), it will dump the **entire** DNS database for that domain.\n\n**Impact:** The attacker gets a complete list of every subdomain, internal IP, and mail server in one go, saving them hours of guessing."
+        },
+        "explanation": "It's like getting the complete blueprints of the building instead of checking every window."
+    },
+    {
+        "title": "Network Mapping (Traceroute)",
+        "ques": "How does `traceroute` (or `tracert` on Windows) help in Active Reconnaissance? What protocol field does it manipulate to discover hops?",
+        "answer": {
+            "type": "text",
+            "content": "**Purpose:** It maps the path packets take to the target, revealing the network topology (routers, firewalls, ISPs) between you and them.\n\n**Mechanism:** It manipulates the **TTL (Time to Live)** field in IP packets. It starts with TTL=1 (expires at first router), then TTL=2 (second router), and so on. Each router sends back an 'ICMP Time Exceeded' message, revealing its IP."
+        },
+        "explanation": "Mapping the path helps identify potential choke points or intermediate firewalls."
+    }
+]

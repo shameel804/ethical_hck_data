@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Unquoted Service Paths",
+        "ques": "A service is configured with the binary path: `C:\\Program Files\\My App\\service.exe` (no quotes). How can an attacker exploit this if they have write access into `C:\\`?",
+        "answer": {
+            "type": "text",
+            "content": "**Ambiguity:** Windows parses paths with spaces by looking for executables in order. \n\n**Exploit:** It attempts to run:\n1. `C:\\Program.exe` (Attacker places malicious file here)\n2. `C:\\Program Files\\My.exe`\n3. `C:\\Program Files\\My App\\service.exe`\n\nIf the attacker creates `C:\\Program.exe`, Windows runs that *instead* of the real service when the service starts (usually as SYSTEM)."
+        },
+        "explanation": "Quotes matter. Without them, the OS has to guess where the filename ends and the arguments begin."
+    },
+    {
+        "title": "AlwaysInstallElevated",
+        "ques": "The `AlwaysInstallElevated` registry key is set to 1 for both HKCU and HKLM. What does this allow any user to do with an **MSI** file?",
+        "answer": {
+            "type": "text",
+            "content": "**Effect:** It tells the Windows Installer service to run **ALL** MSI packages with elevated (SYSTEM) privileges, even if launched by a low-privileged user.\n\n**Exploit:** An attacker creates a malicious MSI that executes a command (like adding a user to Administrators) and simply runs it. Since the installer runs as SYSTEM, the command succeeds."
+        },
+        "explanation": "This setting is strictly for debugging, never for production. It essentially turns off the security model for installers."
+    },
+    {
+        "title": "DLL Hijacking",
+        "ques": "An application tries to load `missing.dll` and doesn't find it. What is the **DLL Search Order** vulnerability?",
+        "answer": {
+            "type": "text",
+            "content": "**Search Order:** Windows looks for DLLs in a specific order: 1. Application's directory, 2. System32, 3. Path environment variable, etc.\n\n**Exploit:** If the attacker can place a malicious DLL named `missing.dll` in a directory that is searched *before* the real location (or if the DLL is missing entirely), the application will load and execute the attacker's DLL code with the application's privileges."
+        },
+        "explanation": "If the app calls for a taxi but doesn't say which company, anyone can show up."
+    },
+    {
+        "title": "Token Manipulation",
+        "ques": "What is an **Access Token** in Windows? If an attacker has administrative privileges, how can they use Token Manipulation to become another user?",
+        "answer": {
+            "type": "text",
+            "content": "**Token:** It's a kernel object that identifies a user and their privileges/groups.\n\n**Attack:** An administrator (or SYSTEM) can list the tokens of all running processes. They can **Impersonate** (copy) the token of another logged-in user (e.g., a Domain Admin) and create a new process using that stolen token, effectively becoming that user on the network."
+        },
+        "explanation": "Authentication happens once. Verification uses the Token. Steal the Token, skip the Authentication."
+    },
+    {
+        "title": "Service Misconfiguration (BinPath)",
+        "ques": "If a user has **SERVICE_CHANGE_CONFIG** permission on a Windows service running as SYSTEM, how can they escalate privileges?",
+        "answer": {
+            "type": "text",
+            "content": "**Capability:** This permission allows modifying the service's configuration.\n\n**Exploit:**\n1. `sc config VulnerableService binpath= \"net localgroup administrators attacker /add\"`\n2. `sc stop VulnerableService`\n3. `sc start VulnerableService`\n\n**Result:** The service restarts, executes the command to add the user to admins (running as SYSTEM), and fails (because it's not a real service binary), but the payload has already executed."
+        },
+        "explanation": "Write access to a service config is equal to Root access."
+    }
+]

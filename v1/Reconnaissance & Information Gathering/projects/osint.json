@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Email Harvesting",
+        "ques": "**Email Harvesting** is the process of obtaining lists of email addresses for a target organization. Why is the naming convention (e.g., `firstname.lastname@company.com`) valuable to an attacker?",
+        "answer": {
+            "type": "text",
+            "content": "Once an attacker discovers the naming convention (e.g., finding `john.doe@target.com`), they can predict the email address of *any* employee simply by knowing their name.\n\n**Example:** Identifying the CEO as 'Alice Smith' allows the attacker to deduce `alice.smith@target.com` and target her with phishing, without ever seeing her email published online."
+        },
+        "explanation": "It turns a list of names (from LinkedIn) into a list of targets."
+    },
+    {
+        "title": "Metadata Extraction (FOCA)",
+        "ques": "Documents published by a company (PDF, DOCX, JPG) contain hidden **Metadata**. What specific information can be extracted from a PDF file created by an employee?",
+        "answer": {
+            "type": "text",
+            "content": "Metadata often reveals:\n1.  **Username:** The internal login name of the author (e.g., `jsmith`).\n2.  **Software Version:** The exact version of Word or PDF creator used (good for finding exploits).\n3.  **File Paths:** Internal directory structures (e.g., `C:\\Users\\jsmith\\Confidential\\ProjectX\\`).\n4.  **Printers:** Network names of printers used."
+        },
+        "explanation": "Tools like **FOCA** or `exiftool` can automate this extraction across thousands of documents."
+    },
+    {
+        "title": "Website Archiving (Wayback Machine)",
+        "ques": "How can the **Internet Archive (Wayback Machine)** be used to find sensitive information that a company has already deleted from their website?",
+        "answer": {
+            "type": "text",
+            "content": "The Wayback Machine takes snapshots of websites over time.\n\n**Use Case:**\nIf a company accidentally posted a file containing passwords or an org chart and then deleted it 5 minutes later, the Wayback Machine might have captured it. Attackers browse historical snapshots to look for these 'ghost' files, old contact info, or previous versions of code."
+        },
+        "explanation": "The internet never forgets. Deleting a file doesn't mean it's gone."
+    },
+    {
+        "title": "Image Analysis (IMINT)",
+        "ques": "An employee posts a photo of their desk on social media. What **security risks** might this harmless photo pose (IMINT)?",
+        "answer": {
+            "type": "text",
+            "content": "Images can reveal:\n1.  **Badges:** High-res photos allows cloning of ID badges.\n2.  **Sticky Notes:** Passwords often written on post-its stuck to monitors.\n3.  **Keyboards:** Types of hardware used.\n4.  **Screen Content:** Confidential emails or code visible on the monitor.\n5.  **Background:** Whiteboards with network diagrams or project names."
+        },
+        "explanation": "This leads to strict 'No Photography' policies in secure facilities."
+    },
+    {
+        "title": "Persona Development (Sock Puppets)",
+        "ques": "In OSINT, what is a **Sock Puppet** and why is it necessary for investigation?",
+        "answer": {
+            "type": "text",
+            "content": "A **Sock Puppet** is a fake online identity (persona) used to gather intelligence without revealing the investigator's true identity.\n\n**Necessity:**\n*   **Anonymity:** You don't want the target to see 'John Doe from CyberSec Inc' viewing their LinkedIn profile.\n*   **Access:** Some information is only available to 'friends' or group members. A credible persona aids in infiltrating these circles."
+        },
+        "explanation": "Burner phones and fake accounts are the digital disguises of the OSINT world."
+    }
+]

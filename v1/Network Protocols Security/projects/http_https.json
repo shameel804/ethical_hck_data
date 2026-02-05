@@ -1,0 +1,47 @@
+[
+    {
+        "title": "HTTPS Interception (Deep Packet Inspection)",
+        "ques": "In a corporate environment, security appliances often perform **HTTPS Inspection** (SSL Stripping/Termination). How is this achieved without triggering browser certificate warnings on employee devices?",
+        "answer": {
+            "type": "text",
+            "content": "To intercept and inspect encrypted HTTPS traffic without errors:\n\n1.  **Proxy Authority:** The corporate proxy acts as a **MitM (Man-in-the-Middle)**.\n2.  **Dynamic Cert Generation:** When a client requests `google.com`, the proxy presents its *own* certificate for `google.com` to the client, effectively terminating the SSL connection.\n3.  **Trust Anchor:** For this to work seamlessly, the **Certificate Authority (CA)** certificate of the proxy usually must be installed as a **Trusted Root CA** on all employee machines. This tells the browsers to trust any certificate signed by the corporate proxy."
+        },
+        "explanation": "This demonstrates that the 'chain of trust' is critical. If you control the root store, you can intercept traffic seamlessly."
+    },
+    {
+        "title": "SSL/TLS Vulnerabilities: POODLE",
+        "ques": "Explain the **POODLE** attack. What specific protocol feature does it exploit, and what is the recommended fix?",
+        "answer": {
+            "type": "text",
+            "content": "**POODLE** (Padding Oracle On Downgraded Legacy Encryption) exploits vulnerabilities in **SSL 3.0**.\n\n**Mechanism:** It forces the browser to degrade the connection from a secure protocol (like TLS 1.2) down to the older, insecure SSL 3.0 protocol. Once downgraded, it exploits the way SSL 3.0 handles **block cipher padding** to decipher byte-by-byte content (like cookies).\n\n**Fix:** The definitive fix is to **completely disable SSL 3.0** on both the server and the client, determining that only TLS protocols (1.2 or 1.3) are accepted."
+        },
+        "explanation": "Downgrade attacks rely on backward compatibility. Removing support for obsolete protocols is a fundamental hardening step."
+    },
+    {
+        "title": "HSTS Protection",
+        "ques": "What is **HSTS** (HTTP Strict Transport Security), and how does it prevent **SSL Stripping** attacks?",
+        "answer": {
+            "type": "text",
+            "content": "**HSTS** is a web security policy mechanism that forces browsers to interact with a website *only* using secure HTTPS connections, never plain HTTP.\n\n**Prevention:**\n1.  **First Trust:** Once a user visits a site with an HSTS header, the browser caches this command.\n2.  **Automatic Upgrade:** For all future attempts to access `http://example.com`, the browser *internally* redirects to `https://example.com` **before** sending a single packet.\n3.  **No Downgrade:** This prevents attackers (like tools using `sslstrip`) from intercepting the initial HTTP request and redirecting the user to an unencrypted version of the site."
+        },
+        "explanation": "HSTS acts as a client-side enforcer. It closes the small window of opportunity (the initial HTTP redirect) that attackers exploit."
+    },
+    {
+        "title": "HTTP/2 Security Issues",
+        "ques": "HTTP/2 introduced efficiency but also new attack vectors. Explain **HPACK Bomb** (or Compression Bomb) in the context of specific HTTP/2 features.",
+        "answer": {
+            "type": "text",
+            "content": "**Feature:** HTTP/2 uses **header compression** (HPACK) to reduce bandwidth.\n\n**Attack:** In an **HPACK Bomb** attack, the attacker sends a small, highly compressed request. When the server processes it, it decompresses the headers into a gigabytes-sized payload in memory.\n\n**Result:** This consumes excessive server memory resources (RAM), leading to a **Denial of Service (DoS)** or crashing the service."
+        },
+        "explanation": "Compression algorithms often introduce DoS risks (like Zip bombs). The disparity between compressed size (attacker bandwidth) and decompressed size (server memory) is the weapon."
+    },
+    {
+        "title": "Cross-Site WebSocket Hijacking (CSWSH)",
+        "ques": "How is **Cross-Site WebSocket Hijacking** similar to **CSRF** (Cross-Site Request Forgery), and what specific header should be checked to prevent it?",
+        "answer": {
+            "type": "text",
+            "content": "**Similarity:** Like CSRF, CSWSH exploits the fact that the browser automatically sends **cookies** (including session IDs) with cross-origin requests. An attacker hosts a malicious page that initiates a WebSocket handshake to the vulnerable application. If the app relies solely on cookies for authentication, the handshake succeeds, giving the attacker a two-way channel to the server.\n\n**Prevention:** The server must validate the **`Origin` header** during the WebSocket handshake. If the `Origin` does not match the expected domain, the connection should be rejected."
+        },
+        "explanation": "WebSockets do not follow the Same-Origin Policy (SOP) by default. The handshake is just an HTTP upgrade request, so standard HTTP protections (Origin check, CSRF tokens) are required."
+    }
+]

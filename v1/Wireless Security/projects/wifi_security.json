@@ -1,0 +1,47 @@
+[
+    {
+        "title": "WiFi Encryption Evolution",
+        "ques": "Arrange the following WiFi security credentials in order from **Weakest** to **Strongest**:\n1.  **WPA2 (AES)**\n2.  **WEP**\n3.  **WPA (TKIP)**\n4.  **WPA3**",
+        "answer": {
+            "type": "text",
+            "content": "1.  **Weakest:** **WEP** (Cracked in minutes).\n2.  **Weak:** **WPA (TKIP)** (Deprecated).\n3.  **Strong:** **WPA2 (AES)** (Current standard).\n4.  **Strongest:** **WPA3** (Latest standard with SAE)."
+        },
+        "explanation": "WEP is so broken it's considered an 'open' network by modern standards."
+    },
+    {
+        "title": "Evil Twin Attacks",
+        "ques": "You sit in a coffee shop called 'Starbucks'. You see two WiFi networks named 'Starbucks WiFi'. What is likely happening?",
+        "answer": {
+            "type": "text",
+            "content": "This is likely an **Evil Twin** attack.\n\n**Mechanism:** An attacker sets up a rogue Access Point with the *exact same SSID* (name) as the legitimate network. They boost their signal strength to overpower the real AP, hoping your phone connects to them automatically. If you connect, they can intercept all your traffic."
+        },
+        "explanation": "A fake tower enticing your phone to roam."
+    },
+    {
+        "title": "Deauthentication Attack",
+        "ques": "Why is a **Deauthentication (Deauth)** attack considered a Denial of Service? How does it help in capturing a WPA Handshake?",
+        "answer": {
+            "type": "text",
+            "content": "A **Deauth** attack sends spoofed management frames telling a client 'Disconnect immediately!'.\n\n**DoS:** The client is disconnected from the internet.\n**Handshake Capture:** The client will immediately try to *reconnect*. During this reconnection, the client and AP exchange the **4-Way Handshake**. The attacker captures this handshake to crack the password offline."
+        },
+        "explanation": "It's like hanging up someone's phone so you can record them dialing it back."
+    },
+    {
+        "title": "KRACK Attack (Key Reinstallation)",
+        "ques": "The **KRACK** attack (2017) was a devastating vulnerability in the WPA2 protocol itself. What did it allow attackers to do?",
+        "answer": {
+            "type": "text",
+            "content": "It tricked the client into reinstalling an already-in-use encryption key (hence Key Reinstallation).\n\n**Impact:** By resetting the key parameters (Nonce and Replay Counter), the attacker could decrypt the data stream without ever knowing the actual WiFi password."
+        },
+        "explanation": "It proved that even WPA2-AES wasn't invincible."
+    },
+    {
+        "title": "WiFi Pineapple",
+        "ques": "The **WiFi Pineapple** is a popular penetration testing tool. What feature makes it dangerous to devices probing for known networks?",
+        "answer": {
+            "type": "text",
+            "content": "**Karma / PineAP:** \nDevices constantly shout out 'Is *Home WiFi* here? Is *Office WiFi* here?'.\n\nThe Pineapple creates a fake AP for *every* request. It replies 'Yes, I am Home WiFi' and 'Yes, I am Office WiFi', tricking the device into connecting to it automatically."
+        },
+        "explanation": "It's a Yes-Man for WiFi requests."
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Preventive Controls",
+        "ques": "**Preventive Controls** are designed to stop an incident from occurring in the first place. List three examples of **Preventive Controls**—one for each of the following categories: **Physical**, **Technical**, and **Administrative**.",
+        "answer": {
+            "type": "text",
+            "content": "1.  **Physical:** Fences, locks, mantraps, or security guards that physically stop an intruder.\n2.  **Technical (Logical):** Firewalls, IPS (Intrusion Prevention Systems), or Multifactor Authentication (MFA) that block unauthorized digital access.\n3.  **Administrative:** Background checks on new hires, separation of duties policies, or mandatory security awareness training."
+        },
+        "explanation": "If a control *stops* an action (like a locked door stops entry), it is **Preventive**."
+    },
+    {
+        "title": "Detective Controls",
+        "ques": "**Detective Controls** do not stop an attack but identify and characterize an incident as it happens or after it has occurred. Why are they crucial even if you have strong preventive controls? Give two examples.",
+        "answer": {
+            "type": "text",
+            "content": "No preventive control is 100% perfect. **Detective Controls** act as a safety net to alert you when prevention fails, allowing for a timely response.\n\n**Examples:**\n1.  **Security Information and Event Management (SIEM):** Aggregates logs to find anomalies.\n2.  **Video Surveillance (CCTV):** Records physical events for later review.\n3.  **Intrusion Detection System (IDS):** Alerts on suspicious network traffic (without blocking it)."
+        },
+        "explanation": "If a control *alerts* or *records* an action (like a smoke detector or log file), it is **Detective**."
+    },
+    {
+        "title": "Corrective Controls",
+        "ques": "**Corrective Controls** are measures taken to restore systems after an incident has occurred. They limit the impact of a violation. Provide an example of a **Technical** corrective control and an **Administrative** corrective control.",
+        "answer": {
+            "type": "text",
+            "content": "1.  **Technical Example:** **Automated Patching** or **System Reboot** scripts that run after malware is detected to remove the threat and restore integrity. **Data Backups** are also corrective (used to restore lost data).\n2.  **Administrative Example:** **Incident Response Plan (IRP)** activation. This is the set of procedures followed by the team to contain and recover from the breach."
+        },
+        "explanation": "If a control *fixes* or *mitigates* damage (like a fire extinguisher or restoring a backup), it is **Corrective**."
+    },
+    {
+        "title": "Compensating Controls",
+        "ques": "What is a **Compensating Control**? Describe a scenario where a company cannot implement a primary requirement (e.g., 'Encrypt all legacy database connections') and must use a compensating control instead.",
+        "answer": {
+            "type": "text",
+            "content": "A **Compensating Control** is an alternative security measure put in place to mitigate a risk when the primary control is not feasible due to technical or business constraints.\n\n**Scenario:**\n*   **Requirement:** Encrypt all database connections.\n*   **Constraint:** A legacy application does not support encryption and replacing it is too expensive.\n*   **Compensating Control:** Isolate the legacy application on a dedicated, strictly firewalled network segment (VLAN) where only authorized application servers can connect, ensuring no eavesdropping can occur from the general network."
+        },
+        "explanation": "It's the 'Plan B' of security controls. It doesn't fix the original issue directly but reduces the risk to an acceptable level via other means."
+    },
+    {
+        "title": "NIST Cybersecurity Framework",
+        "ques": "The **NIST Cybersecurity Framework (CSF)** is widely used to manage and reduce cybersecurity risk. List its **five core functions** in the correct order of an incident lifecycle.",
+        "answer": {
+            "type": "text",
+            "content": "1.  **Identify:** Develop an organizational understanding to manage cybersecurity risk to systems, assets, data, and capabilities. (What do we have?)\n2.  **Protect:** Develop and implement the appropriate safeguards to ensure delivery of critical infrastructure services. (How do we stop attacks?)\n3.  **Detect:** Develop and implement the appropriate activities to identify the occurrence of a cybersecurity event. (How do we know we are under attack?)\n4.  **Respond:** Develop and implement the appropriate activities to take action regarding a detected cybersecurity event. (What do we do now?)\n5.  **Recover:** Develop and implement the appropriate activities to maintain plans for resilience and to restore any capabilities or services that were impaired. (How do we get back to normal?)"
+        },
+        "explanation": "The framework provides a common language for understanding, managing, and expressing cybersecurity risk to internal and external stakeholders."
+    }
+]

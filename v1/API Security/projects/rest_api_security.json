@@ -1,0 +1,47 @@
+[
+    {
+        "title": "API Authentication Methods",
+        "ques": "Compare **API Keys** and **JWTs** (JSON Web Tokens) for authentication. Why is an API Key generally considered less secure for user-level authentication?",
+        "answer": {
+            "type": "text",
+            "content": "**API Keys:** Static strings usually sent in headers. They identify the *project* or the *client app*, but not the specific *user*. They are hard to rotate if compromised and act like a long-lived password.\n\n**JWTs:** Signed tokens that can contain user-specific claims (user ID, roles, expiration). They confirm *who* makes the request. \n\n**Security:** API Keys effectively give full access until revoked. JWTs expire quickly and limit scope."
+        },
+        "explanation": "Authenticating the 'app' (API Key) is not the same as authenticating the 'user' (JWT/OAuth)."
+    },
+    {
+        "title": "Broken Object Level Authorization (BOLA)",
+        "ques": "BOLA (also known as IDOR for APIs) is the #1 API vulnerability. If an API endpoint is `GET /users/555/documents`, how does BOLA occur?",
+        "answer": {
+            "type": "text",
+            "content": "**Occurrence:** The API relies on the client to send the user ID (555) but fails to check if the current logged-in user *is* user 555.\n\n**Attack:** A user logged in as user 666 can simply change the URL to `/users/555/documents`. If the API returns the data, BOLA exists."
+        },
+        "explanation": "The API checks 'Is the user logged in?' but fails to check 'Does this user have permission to access THIS specific object?'"
+    },
+    {
+        "title": "Rate Limiting and Throttling",
+        "ques": "What HTTP status code should an API return when a user exceeds their **Rate Limit**? Why is this control essential?",
+        "answer": {
+            "type": "text",
+            "content": "**Status Code:** `429 Too Many Requests`.\n\n**Importance:** \n1. **Availability:** Prevents Denial of Service (DoS) attacks from spamming the server.\n2. **Security:** Slows down Brute Force attacks on login or credential stuffing attempts."
+        },
+        "explanation": "Without rate limits, APIs are open doors for brute-force attacks and resource exhaustion."
+    },
+    {
+        "title": "Mass Assignment Vulnerability",
+        "ques": "An API endpoint `PUT /user` updates a user profile. It takes a JSON body. Explain how **Mass Assignment** allows a user to become an admin.",
+        "answer": {
+            "type": "text",
+            "content": "**Mechanism:** Frameworks often automatically bind request parameters to code objects.\n\n**Attack:** The user sends normally expected fields (`name`, `email`) but adds an extra field: `\"is_admin\": true`.\n\n**Result:** If the backend blindly binds all input fields to the User object without filtering, the `is_admin` property is overwritten, escalating privileges."
+        },
+        "explanation": "Always explicitly define which fields are updatable (Allow-list), never rely on the client to send only safe data."
+    },
+    {
+        "title": "Verbose Error Handling",
+        "ques": "Why should API error responses never expose **Stack Traces** or database details in a production environment?",
+        "answer": {
+            "type": "text",
+            "content": "**Information Leakage:** Detailed errors reveal the underlying technology stack (e.g., 'Django version X', 'PostgreSQL syntax error').\n\n**Risk:** Attackers use this specific info to find known vulnerabilities (CVEs) for that exact version or to fine-tune injection attacks based on the database errors returned."
+        },
+        "explanation": "Production errors should be generic (`500 Internal Server Error`). Detailed logs belong in the server logs, not the HTTP response."
+    }
+]

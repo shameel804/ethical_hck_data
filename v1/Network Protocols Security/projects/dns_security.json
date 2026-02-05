@@ -1,0 +1,47 @@
+[
+    {
+        "title": "DNS Cache Poisoning / Spoofing",
+        "ques": "What is the primary goal of a **DNS Cache Poisoning** attack? Describe the potential impact on a user attempting to visit a banking website.",
+        "answer": {
+            "type": "text",
+            "content": "**Goal:** The attacker aims to insert **corrupt DNS records** into a DNS resolver's cache. This causes the resolver to return an incorrect IP address for a specific domain name.\n\n**Impact on User:**\nWhen the user types the URL of their bank (e.g., `bank.com`), the poisoned DNS server resolves it to the **attacker's IP address** instead of the real bank server. The user is unknowingly redirected to a fake (phishing) site that looks identical to the bank's site, where their credentials can be stolen."
+        },
+        "explanation": "This attack compromises the **integrity** of the DNS lookup process. Because DNS is stateless (UDP), it is susceptible to spoofed responses if transaction IDs are guessed."
+    },
+    {
+        "title": "Understanding DNSSEC",
+        "ques": "How does **DNSSEC** (Domain Name System Security Extensions) protect against DNS Spoofing? What cryptographic mechanism does it use?",
+        "answer": {
+            "type": "text",
+            "content": "**DNSSEC** adds a layer of security by enabling DNS responses to be **digitally signed**.\n\n**Mechanism:**\n1.  **Digital Signatures:** DNS records are signed using public-key cryptography (specifically, Resource Record Signature or RRSIG records).\n2.  **Chain of Trust:** When a resolver receives a DNS response, it checks the digital signature using the public key of the zone. It verifies the trust chain all the way up to the root.\n\n**Protection:** If an attacker attempts to spoof a response (Cache Poisoning), they cannot generate a valid digital signature for their fake IP. The resolver detects the invalid signature and rejects the response."
+        },
+        "explanation": "DNSSEC provides **origin authority** and **data integrity** to DNS data, ensuring the response comes from the legitimate authoritative server and hasn't been altered."
+    },
+    {
+        "title": "DNS Tunneling for Exfiltration",
+        "ques": "Explain how **DNS Tunneling** works and why it is often used by attackers in restricted network environments.",
+        "answer": {
+            "type": "text",
+            "content": "**DNS Tunneling** encapsulates non-DNS traffic (like HTTP, SSH, or sensitive data) inside standard DNS protocol packets (DNS queries and responses).\n\n**Mechanism:**\n1. The attacker registers a domain (e.g., `evil.com`) and sets up an authoritative DNS server.\n2. The malware on the victim's machine encodes data (e.g., stolen files) into the *subdomains* of queries (e.g., `secretdata.evil.com`).\n3. The requests pass through the company's DNS resolver to the attacker's server, which decodes the data.\n\n**Why it's used:** DNS traffic is almost always allowed through firewalls (port 53) for normal internet operation. Attackers exploit this 'hole' to communicate with C2 servers or exfiltrate data without being blocked."
+        },
+        "explanation": "Tunneling exploits the **ubiquity** of DNS. Since blocking DNS breaks internet access, it is a discreet channel for covert communication."
+    },
+    {
+        "title": "DNS Amplification Attack",
+        "ques": "A **DNS Amplification Attack** is a type of Distributed Denial of Service (DDoS). Why is it called 'Amplification'? Identify the protocol characteristic that makes this possible.",
+        "answer": {
+            "type": "text",
+            "content": "**Amplification:** It is called amplification because the attacker sends a small query (e.g., 60 bytes) but elicits a massive response (e.g., 3000+ bytes) from the server.\n\n**Protocol Characteristic:** It exploits **UDP (User Datagram Protocol)**, which is connectionless. Since there is no handshake, the attacker can **spoof** the victim's IP address as the source. Open DNS resolvers typically reply to any query. The attacker sends thousands of small queries with the spoofed victim IP, causing the resolvers to bombard the victim with massive response packets, overwhelming their bandwidth."
+        },
+        "explanation": "The **amplification factor** allows an attacker with limited bandwidth to take down a target with much larger bandwidth capacity."
+    },
+    {
+        "title": "Monitoring Passive DNS",
+        "ques": "What is **Passive DNS** monitoring, and how can it aid in forensic investigations involving malicious domains?",
+        "answer": {
+            "type": "text",
+            "content": "**Passive DNS** involves capturing and archiving DNS query and response data without interacting with the DNS servers directly (i.e., just listening).\n\n**Forensic Use:**\n1.  **History:** It creates a historical record of domain-to-IP mappings. Even if an attacker takes down their malicious site or changes the IP today, Passive DNS logs show where `malware.com` pointed to *yesterday*.\n2.  **Association:** It can reveal other malicious domains hosted on the same IP address/subnet, effectively mapping out the attacker's infrastructure."
+        },
+        "explanation": "Passive DNS is crucial because DNS records change rapidly. It provides a **'time machine'** for DNS data, essential for tracking ephemeral malicious infrastructure."
+    }
+]

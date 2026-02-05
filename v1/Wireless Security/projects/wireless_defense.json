@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Wireless Intrusion Detection System (WIDS)",
+        "ques": "What is the primary function of a **WIDS** in a corporate environment?",
+        "answer": {
+            "type": "text",
+            "content": "A **WIDS** monitors the radio spectrum (RF) for malicious wireless activity.\n\nIt detects:\n1.  **Rogue APs:** Unknown devices broadcasting WiFi.\n2.  **Deauth Attacks:** Floods of disconnect packets.\n3.  **Ad-Hoc Networks:** Clients connecting directly to each other."
+        },
+        "explanation": "It's an alarm system for the airwaves."
+    },
+    {
+        "title": "Rogue AP Detection: Triangulation",
+        "ques": "Once a WIDS detects a Rogue AP, how does it locate it physically?",
+        "answer": {
+            "type": "text",
+            "content": "It uses **RSSI (Received Signal Strength Indicator)** Triangulation used by multiple sensors.\n\nIf Sensor A hears the Rogue AP at -50dBm (Loud) and Sensor B hears it at -80dBm (Quiet), the system calculates that the rogue device is physically closer to Sensor A, guiding security guards to the right office."
+        },
+        "explanation": "It draws a map of where the signal is coming from."
+    },
+    {
+        "title": "Wireless Hardening: Enterprise WPA2",
+        "ques": "Why is **WPA2-Enterprise** (802.1X) more secure than **WPA2-Personal** (PSK) for businesses?",
+        "answer": {
+            "type": "text",
+            "content": "**WPA2-Personal (PSK):** Everyone shares the same password. If one employee leaves, you must change the WiFi password for everyone.\n\n**WPA2-Enterprise (802.1X):** Each user logs in with their unique username/password (RADIUS). You can revoke a single user's access without affecting anyone else, and unique encryption keys are generated for each session."
+        },
+        "explanation": "Shared passwords are the root of all evil in enterprise security."
+    },
+    {
+        "title": "Wireless Penetration Testing",
+        "ques": "A Wireless Pen Test typically involves 'War Driving' or 'War Walking'. What is this activity?",
+        "answer": {
+            "type": "text",
+            "content": "**War Driving:** Driving around the physical perimeter of a building with a high-gain antenna to detect signal leakage.\n\n**Goal:** To see if the internal WiFi network is reachable from the parking lot or the street. If it is, attackers can hack the network from the safety of their car."
+        },
+        "explanation": "WiFi signals don't stop at the walls."
+    },
+    {
+        "title": "Faraday Cages",
+        "ques": "What is a **Faraday Cage** and how is it used for high-security areas (SCIFs)?",
+        "answer": {
+            "type": "text",
+            "content": "A **Faraday Cage** is a physical enclosure made of conductive material (copper mesh) that blocks electromagnetic fields.\n\n**Use:** It prevents any wireless signals (WiFi, Cellular, Bluetooth) from entering or leaving a Sensitive Compartmented Information Facility (SCIF), ensuring total communication isolation."
+        },
+        "explanation": "The ultimate wireless defense is NO wireless."
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "title": "API Fuzzing",
+        "ques": "What is the primary objective of **API Fuzzing** (Fuzz Testing)? Name one type of data an attacker might inject.",
+        "answer": {
+            "type": "text",
+            "content": "**Objective:** To discover implementation bugs (crashes, memory leaks, unhandled exceptions) by feeding the API invalid, unexpected, or random data.\n\n**Data:** Massive strings (buffer overflow attempt), Unicode characters, or integers larger than the maximum allowed capability (integer overflow)."
+        },
+        "explanation": "Fuzzing is the automated process of finding edge cases that developers didn't write test cases for."
+    },
+    {
+        "title": "Swagger / OpenAPI Analysis",
+        "ques": "If you find a public `swagger.json` file on a target, what is the first thing you should look for to expand your attack surface?",
+        "answer": {
+            "type": "text",
+            "content": "**Reconnaissance:** Look for **API endpoints** that are not used by the main web application (hidden endpoints).\n\n**Examples:** `/admin`, `/debug`, `/internal`, or `/test`. These are often less secured than the main user-facing endpoints because developers assume nobody knows they exist."
+        },
+        "explanation": "Documentation files are gold mines. They often catalog the entire API, including the 'secret' parts."
+    },
+    {
+        "title": "JWT 'None' Algorithm Attack",
+        "ques": "Explain the **JWT 'None' Algorithm** vulnerability. How does modifying the header allow a user to forge a token?",
+        "answer": {
+            "type": "text",
+            "content": "**Mechanism:** The JWT header specifies the signing alg (e.g., `HS256`).\n\n**Attack:**\n1. Attacker changes the header to `{\"alg\": \"none\"}`.\n2. Attacker modifies the payload (e.g., `\"admin\": true`).\n3. Attacker removes the signature section of the token.\n\n**Result:** If the backend library supports the 'none' alg (used for debugging) and doesn't explicitly disable it, it accepts the unsigned token as valid."
+        },
+        "explanation": "This is a classic implementation flaw in JWT libraries. Tokens must always be verified with a strong algorithm."
+    },
+    {
+        "title": "OAuth Redirect URI Manipulation",
+        "ques": "In an OAuth 2.0 flow, why is it critical to validate the `redirect_uri` parameter? What happens if an attacker changes it to their own domain?",
+        "answer": {
+            "type": "text",
+            "content": "**Attack:** The attacker constructs a login link with `redirect_uri=attacker.com`.\n\n**Result:** If the authorization server doesn't validate this URI against a whitelist, it will send the sensitive **Authorization Code** or **Access Token** to `attacker.com` after the user logs in.\n\n**Theft:** The attacker captures the code/token from their server logs and uses it to access the victim's account."
+        },
+        "explanation": "The Redirect URI is the destination for the keys to the castle. It must be strictly whitelisted."
+    },
+    {
+        "title": "API Security Headers",
+        "ques": "Why is enforcing the `Content-Type: application/json` header important for API security? How does it help prevent CSRF?",
+        "answer": {
+            "type": "text",
+            "content": "**CSRF Defense:** Standard HTML forms (used in CSRF) can only send `application/x-www-form-urlencoded`, `multipart/form-data`, or `text/plain`. They **cannot** send `application/json` without using CORS-preflighted JavaScript (which implies the attacker has permission).\n\n**Enforcement:** By rejecting any request that isn't `application/json`, you effectively immune your JSON API endpoints from simple HTML-based CSRF attacks."
+        },
+        "explanation": "Strict content-type checks act as a simple but effective barrier against cross-origin form submissions."
+    }
+]
