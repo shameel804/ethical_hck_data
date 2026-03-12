@@ -1,0 +1,4358 @@
+[
+    {
+        "q": "What is the primary purpose of security monitoring in blue team operations?",
+        "o": [
+            "Detecting and responding to security incidents",
+            "Developing software applications",
+            "Managing user passwords",
+            "Configuring network hardware"
+        ]
+    },
+    {
+        "q": "Which log source provides information about user authentication attempts?",
+        "o": [
+            "Security event logs",
+            "Application crash dumps",
+            "Performance monitor logs",
+            "Disk cleanup reports"
+        ]
+    },
+    {
+        "q": "What is a SIEM system primarily used for?",
+        "o": [
+            "Security information and event management",
+            "System installation and configuration",
+            "Software development and testing",
+            "Hardware inventory tracking"
+        ]
+    },
+    {
+        "q": "Which of the following is a common log format used in security monitoring?",
+        "o": [
+            "Common Event Format (CEF)",
+            "JPEG image format",
+            "MP3 audio format",
+            "PDF document format"
+        ]
+    },
+    {
+        "q": "What does log management involve in security operations?",
+        "o": [
+            "Collecting, storing, and analyzing log data",
+            "Deleting all logs to save space",
+            "Printing logs for physical storage",
+            "Encrypting logs with user passwords"
+        ]
+    },
+    {
+        "q": "Which log source would help detect a brute force attack?",
+        "o": [
+            "Authentication logs",
+            "Printer status logs",
+            "Temperature sensor logs",
+            "Battery health reports"
+        ]
+    },
+    {
+        "q": "What is the primary goal of threat detection?",
+        "o": [
+            "Identifying potential security breaches",
+            "Increasing network speed",
+            "Reducing power consumption",
+            "Improving printer performance"
+        ]
+    },
+    {
+        "q": "Which component is essential for security analytics?",
+        "o": [
+            "Data correlation engine",
+            "Word processor software",
+            "Spreadsheet macros",
+            "Presentation graphics"
+        ]
+    },
+    {
+        "q": "What is alert tuning in security monitoring?",
+        "o": [
+            "Adjusting alert thresholds to reduce noise",
+            "Increasing alert volume for all events",
+            "Disabling all security alerts",
+            "Changing alert sound frequencies"
+        ]
+    },
+    {
+        "q": "What information does a firewall log typically contain?",
+        "o": [
+            "Source and destination IP addresses",
+            "Keyboard typing patterns",
+            "Monitor refresh rates",
+            "Mouse click coordinates"
+        ]
+    },
+    {
+        "q": "Why is timestamp normalization important in log management?",
+        "o": [
+            "To correlate events from different time zones",
+            "To make logs look uniform",
+            "To reduce log file size",
+            "To encrypt log contents"
+        ]
+    },
+    {
+        "q": "What does a security dashboard typically display?",
+        "o": [
+            "Key security metrics and alerts",
+            "Weather forecast data",
+            "Stock market prices",
+            "Sports scores"
+        ]
+    },
+    {
+        "q": "Which log source provides details about web server requests?",
+        "o": [
+            "HTTP access logs",
+            "DNS cache logs",
+            "DHCP lease logs",
+            "NTP synchronization logs"
+        ]
+    },
+    {
+        "q": "What is a false positive in security monitoring?",
+        "o": [
+            "An alert triggered by normal activity",
+            "A real attack that was missed",
+            "A correctly identified threat",
+            "A system configuration error"
+        ]
+    },
+    {
+        "q": "Which security monitoring concept involves establishing normal behavior patterns?",
+        "o": [
+            "Baselining",
+            "Overclocking",
+            "Defragmenting",
+            "Compiling"
+        ]
+    },
+    {
+        "q": "What does a DNS log typically record?",
+        "o": [
+            "Domain name resolution requests",
+            "Email message content",
+            "File transfer data",
+            "User password hashes"
+        ]
+    },
+    {
+        "q": "What is the purpose of log retention policies?",
+        "o": [
+            "Determining how long to keep logs",
+            "Deleting logs immediately",
+            "Printing logs for archive",
+            "Converting logs to images"
+        ]
+    },
+    {
+        "q": "Which tool is commonly used for security dashboard development?",
+        "o": [
+            "Grafana",
+            "Photoshop",
+            "Audacity",
+            "Blender"
+        ]
+    },
+    {
+        "q": "What type of attack do failed login attempts often indicate?",
+        "o": [
+            "Brute force attack",
+            "DDoS attack",
+            "Man-in-the-middle attack",
+            "SQL injection"
+        ]
+    },
+    {
+        "q": "What is a SIEM correlation rule?",
+        "o": [
+            "Logic linking multiple events",
+            "Network cable type",
+            "Hardware specification",
+            "Software license key"
+        ]
+    },
+    {
+        "q": "Which log source is critical for detecting malware infections?",
+        "o": [
+            "Antivirus logs",
+            "Printer spooler logs",
+            "Scanner logs",
+            "Power management logs"
+        ]
+    },
+    {
+        "q": "What does an IDS primarily do?",
+        "o": [
+            "Detects intrusion attempts",
+            "Prevents all network traffic",
+            "Manages user accounts",
+            "Installs software updates"
+        ]
+    },
+    {
+        "q": "Which log format is commonly used by Windows systems?",
+        "o": [
+            "EVTX",
+            "JSON",
+            "XML",
+            "CSV"
+        ]
+    },
+    {
+        "q": "What is a key consideration when developing security dashboards?",
+        "o": [
+            "Relevant metrics for stakeholders",
+            "Colorful animations",
+            "Background music",
+            "Gaming capabilities"
+        ]
+    },
+    {
+        "q": "What does alert severity typically indicate?",
+        "o": [
+            "Criticality of the threat",
+            "Time of day",
+            "User location",
+            "System temperature"
+        ]
+    },
+    {
+        "q": "Which log source provides information about system changes?",
+        "o": [
+            "Windows Event Log",
+            "MP3 metadata",
+            "Image EXIF data",
+            "Video subtitles"
+        ]
+    },
+    {
+        "q": "What is the purpose of log aggregation?",
+        "o": [
+            "Collecting logs from multiple sources",
+            "Deleting old log files",
+            "Compressing log data",
+            "Encrypting log content"
+        ]
+    },
+    {
+        "q": "Which security concept involves monitoring for known attack patterns?",
+        "o": [
+            "Signature-based detection",
+            "Color-based detection",
+            "Sound-based detection",
+            "Taste-based detection"
+        ]
+    },
+    {
+        "q": "What does a proxy log typically record?",
+        "o": [
+            "Web traffic through proxy server",
+            "CPU temperature readings",
+            "Fan speed measurements",
+            "Power supply voltage"
+        ]
+    },
+    {
+        "q": "Why is log integrity important in security monitoring?",
+        "o": [
+            "To ensure logs haven't been tampered",
+            "To make logs look pretty",
+            "To reduce storage costs",
+            "To improve read speed"
+        ]
+    },
+    {
+        "q": "What is a common challenge in threat detection?",
+        "o": [
+            "High volume of false positives",
+            "Too few security tools",
+            "Excessive storage space",
+            "Perfect network speed"
+        ]
+    },
+    {
+        "q": "Which metric is commonly displayed on security dashboards?",
+        "o": [
+            "Number of active alerts",
+            "CPU clock speed",
+            "RAM manufacturer",
+            "Hard disk color"
+        ]
+    },
+    {
+        "q": "What does a VPN log typically contain?",
+        "o": [
+            "User connection attempts",
+            "Screen resolution",
+            "Keyboard model",
+            "Mouse brand"
+        ]
+    },
+    {
+        "q": "What is the purpose of log parsing?",
+        "o": [
+            "Extracting structured data from logs",
+            "Deleting log contents",
+            "Printing log files",
+            "Emailing log data"
+        ]
+    },
+    {
+        "q": "Which attack does unusual outbound traffic often indicate?",
+        "o": [
+            "Data exfiltration",
+            "ARP poisoning",
+            "DNS spoofing",
+            "MAC flooding"
+        ]
+    },
+    {
+        "q": "What is a key feature of security analytics platforms?",
+        "o": [
+            "Machine learning capabilities",
+            "Word processing functions",
+            "Spreadsheet editing",
+            "Presentation tools"
+        ]
+    },
+    {
+        "q": "What does log rotation help manage?",
+        "o": [
+            "Disk space usage",
+            "CPU temperature",
+            "Network latency",
+            "Memory speed"
+        ]
+    },
+    {
+        "q": "Which log source helps detect privilege escalation attempts?",
+        "o": [
+            "User account logs",
+            "Printer status logs",
+            "Scanner logs",
+            "Fax logs"
+        ]
+    },
+    {
+        "q": "What is alert fatigue in security operations?",
+        "o": [
+            "Desensitization from too many alerts",
+            "Physical exhaustion from alarms",
+            "Alert sound volume",
+            "Alert light brightness"
+        ]
+    },
+    {
+        "q": "What does a database log typically record?",
+        "o": [
+            "SQL queries and transactions",
+            "Monitor refresh rates",
+            "Keyboard key presses",
+            "Mouse movements"
+        ]
+    },
+    {
+        "q": "What is the purpose of threat intelligence feeds?",
+        "o": [
+            "Providing known threat indicators",
+            "Weather forecasting",
+            "Stock predictions",
+            "Sports analytics"
+        ]
+    },
+    {
+        "q": "Which dashboard element shows real-time alert status?",
+        "o": [
+            "Alert count widget",
+            "Calendar display",
+            "Clock widget",
+            "Calculator tool"
+        ]
+    },
+    {
+        "q": "What does an email security log typically contain?",
+        "o": [
+            "Sender and recipient addresses",
+            "Email font size",
+            "Message color scheme",
+            "Email template name"
+        ]
+    },
+    {
+        "q": "What is a common SIEM deployment challenge?",
+        "o": [
+            "Log source integration",
+            "Monitor placement",
+            "Keyboard selection",
+            "Mouse pad choice"
+        ]
+    },
+    {
+        "q": "Which behavior might indicate a compromised account?",
+        "o": [
+            "Unusual login locations",
+            "Regular password changes",
+            "Normal working hours",
+            "Typical file access"
+        ]
+    },
+    {
+        "q": "What does a network flow log provide?",
+        "o": [
+            "Conversation metadata",
+            "Full packet contents",
+            "File attachments",
+            "Email bodies"
+        ]
+    },
+    {
+        "q": "What is the purpose of alert prioritization?",
+        "o": [
+            "Focusing on critical threats first",
+            "Sorting alerts alphabetically",
+            "Coloring alert boxes",
+            "Animating alert icons"
+        ]
+    },
+    {
+        "q": "Which log source helps detect port scanning activity?",
+        "o": [
+            "Firewall logs",
+            "Printer logs",
+            "Scanner logs",
+            "Fax logs"
+        ]
+    },
+    {
+        "q": "What does a security dashboard KPI represent?",
+        "o": [
+            "Key performance indicator",
+            "Keyboard processing input",
+            "Kernel programming interface",
+            "Knowledge process integration"
+        ]
+    },
+    {
+        "q": "Why is log encryption used in security monitoring?",
+        "o": [
+            "Protecting sensitive log data",
+            "Speeding up log writes",
+            "Reducing log size",
+            "Improving readability"
+        ]
+    },
+    {
+        "q": "What is anomaly-based detection?",
+        "o": [
+            "Identifying deviations from normal",
+            "Detecting known signatures",
+            "Blocking all traffic",
+            "Allowing all access"
+        ]
+    },
+    {
+        "q": "Which log source records system resource usage?",
+        "o": [
+            "Performance monitor logs",
+            "Security event logs",
+            "Application logs",
+            "Setup logs"
+        ]
+    },
+    {
+        "q": "What does alert context provide to analysts?",
+        "o": [
+            "Additional information about the alert",
+            "Alert sound effects",
+            "Alert background color",
+            "Alert animation speed"
+        ]
+    },
+    {
+        "q": "What is the purpose of log indexing?",
+        "o": [
+            "Enabling fast log searches",
+            "Deleting old log entries",
+            "Printing log summaries",
+            "Emailing log files"
+        ]
+    },
+    {
+        "q": "Which attack might create many DNS query logs?",
+        "o": [
+            "DNS tunneling",
+            "ARP poisoning",
+            "MAC flooding",
+            "DHCP starvation"
+        ]
+    },
+    {
+        "q": "What does a cloud security log typically include?",
+        "o": [
+            "API call details",
+            "Server room temperature",
+            "Rack power usage",
+            "Cooling system status"
+        ]
+    },
+    {
+        "q": "Why is real-time monitoring important?",
+        "o": [
+            "Immediate threat response",
+            "Saving electricity",
+            "Reducing bandwidth",
+            "Extending hardware life"
+        ]
+    },
+    {
+        "q": "What is a common dashboard visualization type?",
+        "o": [
+            "Time series graph",
+            "Word document",
+            "Spreadsheet cell",
+            "Text file"
+        ]
+    },
+    {
+        "q": "Which log source helps detect unauthorized software?",
+        "o": [
+            "Application installation logs",
+            "Printer paper logs",
+            "Scanner usage logs",
+            "Fax transmission logs"
+        ]
+    },
+    {
+        "q": "What does log normalization achieve?",
+        "o": [
+            "Consistent log format across sources",
+            "Deleting duplicate logs",
+            "Reducing log verbosity",
+            "Increasing log detail"
+        ]
+    },
+    {
+        "q": "Which security concept uses known attack patterns?",
+        "o": [
+            "Signature matching",
+            "Color matching",
+            "Pattern sewing",
+            "Sound mixing"
+        ]
+    },
+    {
+        "q": "What does a successful login from a new location indicate?",
+        "o": [
+            "Possible account compromise",
+            "Definite system upgrade",
+            "Normal maintenance",
+            "Routine backup"
+        ]
+    },
+    {
+        "q": "What is the purpose of security monitoring alerts?",
+        "o": [
+            "Notifying of potential incidents",
+            "Playing background music",
+            "Displaying screen savers",
+            "Running system updates"
+        ]
+    },
+    {
+        "q": "Which log type records operating system events?",
+        "o": [
+            "System logs",
+            "Print logs",
+            "Scan logs",
+            "Fax logs"
+        ]
+    },
+    {
+        "q": "What does a UEBA tool analyze?",
+        "o": [
+            "User and entity behavior",
+            "Universal encryption blocks",
+            "Unified endpoint basics",
+            "Updated enterprise backups"
+        ]
+    },
+    {
+        "q": "Why are timestamps crucial in security logs?",
+        "o": [
+            "Event sequence reconstruction",
+            "Log file naming",
+            "Storage optimization",
+            "Bandwidth management"
+        ]
+    },
+    {
+        "q": "What does a suspicious process execution log indicate?",
+        "o": [
+            "Possible malware activity",
+            "Normal system operation",
+            "Scheduled maintenance",
+            "Routine update"
+        ]
+    },
+    {
+        "q": "What is the purpose of log filtering?",
+        "o": [
+            "Removing irrelevant log entries",
+            "Deleting all security logs",
+            "Printing selected logs",
+            "Encrypting log files"
+        ]
+    },
+    {
+        "q": "Which dashboard shows geographic attack origins?",
+        "o": [
+            "World map visualization",
+            "Calendar view",
+            "Table display",
+            "List format"
+        ]
+    },
+    {
+        "q": "What does an authentication failure log indicate?",
+        "o": [
+            "Possible brute force attempt",
+            "Successful login",
+            "Account creation",
+            "Password update"
+        ]
+    },
+    {
+        "q": "What is a common log management challenge?",
+        "o": [
+            "Storage capacity planning",
+            "Monitor brightness adjustment",
+            "Keyboard layout configuration",
+            "Mouse sensitivity settings"
+        ]
+    },
+    {
+        "q": "Which log source helps detect data breaches?",
+        "o": [
+            "Data loss prevention logs",
+            "Printer status logs",
+            "Scanner calibration logs",
+            "Fax cover page logs"
+        ]
+    },
+    {
+        "q": "What does alert throttling prevent?",
+        "o": [
+            "Alert storm overload",
+            "Email delivery",
+            "Log rotation",
+            "System backups"
+        ]
+    },
+    {
+        "q": "What is the purpose of security dashboards?",
+        "o": [
+            "Centralized security visibility",
+            "Gaming performance",
+            "Video editing",
+            "Music production"
+        ]
+    },
+    {
+        "q": "Which log entry indicates system startup?",
+        "o": [
+            "Boot event",
+            "Login failure",
+            "File access",
+            "Print job"
+        ]
+    },
+    {
+        "q": "What does a SIEM use for log analysis?",
+        "o": [
+            "Correlation engine",
+            "Word processor",
+            "Spreadsheet",
+            "Presentation tool"
+        ]
+    },
+    {
+        "q": "Why is baseline establishment important?",
+        "o": [
+            "Identifying abnormal activity",
+            "Increasing network speed",
+            "Reducing power use",
+            "Extending hardware life"
+        ]
+    },
+    {
+        "q": "Which activity might generate security alerts?",
+        "o": [
+            "Multiple failed logins",
+            "Regular file backups",
+            "Scheduled updates",
+            "Normal logoffs"
+        ]
+    },
+    {
+        "q": "What does a cloud access log record?",
+        "o": [
+            "API and console access",
+            "Server room humidity",
+            "Rack cabinet locks",
+            "Cooling fan speed"
+        ]
+    },
+    {
+        "q": "What is the purpose of threat hunting?",
+        "o": [
+            "Proactively searching for threats",
+            "Waiting for alerts",
+            "Disabling security tools",
+            "Ignoring suspicious activity"
+        ]
+    },
+    {
+        "q": "Which dashboard element shows top alert sources?",
+        "o": [
+            "Leaderboard visualization",
+            "Calendar display",
+            "Clock widget",
+            "Calculator tool"
+        ]
+    },
+    {
+        "q": "What does a registry modification log indicate?",
+        "o": [
+            "System configuration change",
+            "File deletion",
+            "Print job completion",
+            "Email delivery"
+        ]
+    },
+    {
+        "q": "What is a common log format for web servers?",
+        "o": [
+            "Combined Log Format",
+            "JPEG format",
+            "MP3 format",
+            "PDF format"
+        ]
+    },
+    {
+        "q": "Which behavior suggests lateral movement?",
+        "o": [
+            "Connections to multiple internal hosts",
+            "Single workstation access",
+            "Printer usage",
+            "Email checking"
+        ]
+    },
+    {
+        "q": "What does alert enrichment provide?",
+        "o": [
+            "Additional context data",
+            "Alert sound effects",
+            "Visual effects",
+            "Animation speed"
+        ]
+    },
+    {
+        "q": "Why is log compression used?",
+        "o": [
+            "Reducing storage requirements",
+            "Increasing log detail",
+            "Speeding up writes",
+            "Improving readability"
+        ]
+    },
+    {
+        "q": "Which log source helps detect account sharing?",
+        "o": [
+            "Concurrent login logs",
+            "Printer usage logs",
+            "Scanner logs",
+            "Fax logs"
+        ]
+    },
+    {
+        "q": "What does a security monitoring policy define?",
+        "o": [
+            "Monitoring scope and procedures",
+            "Computer hardware specs",
+            "Office furniture layout",
+            "Employee dress code"
+        ]
+    },
+    {
+        "q": "Which metric indicates detection effectiveness?",
+        "o": [
+            "Mean time to detect",
+            "CPU temperature",
+            "Fan speed",
+            "Power usage"
+        ]
+    },
+    {
+        "q": "What does a PowerShell execution log record?",
+        "o": [
+            "Script commands and output",
+            "Printer paper size",
+            "Scanner resolution",
+            "Fax transmission speed"
+        ]
+    },
+    {
+        "q": "What is the purpose of log archiving?",
+        "o": [
+            "Long-term log preservation",
+            "Real-time monitoring",
+            "Active threat hunting",
+            "Immediate alerting"
+        ]
+    },
+    {
+        "q": "Which log source detects suspicious scheduled tasks?",
+        "o": [
+            "Task scheduler logs",
+            "Print queue logs",
+            "Scan job logs",
+            "Fax history logs"
+        ]
+    },
+    {
+        "q": "What does a security dashboard heat map show?",
+        "o": [
+            "Attack concentration areas",
+            "Temperature readings",
+            "Humidity levels",
+            "Air pressure"
+        ]
+    },
+    {
+        "q": "Why is NTP synchronization important for logs?",
+        "o": [
+            "Accurate timestamp correlation",
+            "Faster log writes",
+            "Smaller log files",
+            "Better compression"
+        ]
+    },
+    {
+        "q": "Which activity triggers file integrity monitoring?",
+        "o": [
+            "Critical file modification",
+            "File printing",
+            "File copying",
+            "File moving"
+        ]
+    },
+    {
+        "q": "What does a service installation log indicate?",
+        "o": [
+            "New system service added",
+            "User logged off",
+            "File deleted",
+            "Email sent"
+        ]
+    },
+    {
+        "q": "What is the purpose of alert aggregation?",
+        "o": [
+            "Grouping related alerts",
+            "Deleting all alerts",
+            "Creating new alerts",
+            "Ignoring alerts"
+        ]
+    },
+    {
+        "q": "Which dashboard shows alert trends over time?",
+        "o": [
+            "Line chart",
+            "Pie chart",
+            "Bar chart",
+            "Table"
+        ]
+    },
+    {
+        "q": "What does a USB device connection log indicate?",
+        "o": [
+            "Possible data transfer",
+            "Monitor connection",
+            "Printer status",
+            "Network cable"
+        ]
+    },
+    {
+        "q": "What is a common log source in cloud environments?",
+        "o": [
+            "CloudTrail logs",
+            "Printer logs",
+            "Scanner logs",
+            "Fax logs"
+        ]
+    },
+    {
+        "q": "What is the primary difference between SIEM and log management?",
+        "o": [
+            "SIEM adds correlation and analysis",
+            "Log management is more expensive",
+            "SIEM only stores raw logs",
+            "Log management provides alerting"
+        ]
+    },
+    {
+        "q": "Which log source would help detect a pass-the-hash attack?",
+        "o": [
+            "Windows security logs with event ID 4624",
+            "DNS query logs",
+            "DHCP lease logs",
+            "NTP synchronization logs"
+        ]
+    },
+    {
+        "q": "What does the Common Event Format (CEF) standardize?",
+        "o": [
+            "Log message structure and fields",
+            "Network cable colors",
+            "Server rack sizes",
+            "Monitor resolutions"
+        ]
+    },
+    {
+        "q": "How can you distinguish between a bot and human web traffic in logs?",
+        "o": [
+            "Unusual request patterns and user agents",
+            "IP address color",
+            "Browser language preference",
+            "Time zone settings"
+        ]
+    },
+    {
+        "q": "What is a key consideration when setting alert thresholds?",
+        "o": [
+            "Balancing false positives and negatives",
+            "Making thresholds extremely low",
+            "Setting all thresholds to zero",
+            "Using random threshold values"
+        ]
+    },
+    {
+        "q": "Which Windows event ID indicates successful logon?",
+        "o": [
+            "4624",
+            "4625",
+            "4634",
+            "4647"
+        ]
+    },
+    {
+        "q": "What does a spike in outbound DNS traffic potentially indicate?",
+        "o": [
+            "DNS tunneling exfiltration",
+            "Normal web browsing",
+            "Email checking",
+            "Software updates"
+        ]
+    },
+    {
+        "q": "What is the purpose of MITRE ATT&CK framework in security monitoring?",
+        "o": [
+            "Mapping detections to adversary tactics",
+            "Network cable management",
+            "Server cooling optimization",
+            "Power distribution planning"
+        ]
+    },
+    {
+        "q": "Which log source provides visibility into containerized environments?",
+        "o": [
+            "Docker daemon logs",
+            "Printer status logs",
+            "Scanner calibration logs",
+            "Fax transmission logs"
+        ]
+    },
+    {
+        "q": "What does a SIEM use case document typically describe?",
+        "o": [
+            "Detection logic and response procedures",
+            "Server purchase orders",
+            "Employee vacation schedules",
+            "Office supply inventory"
+        ]
+    },
+    {
+        "q": "How can you detect a DDoS attack from firewall logs?",
+        "o": [
+            "Traffic volume from single sources",
+            "Printer paper jams",
+            "Scanner resolution changes",
+            "Fax line busy signals"
+        ]
+    },
+    {
+        "q": "What is the role of threat intelligence in alert tuning?",
+        "o": [
+            "Prioritizing alerts based on known threats",
+            "Deleting all security alerts",
+            "Increasing alert volume",
+            "Disabling correlation rules"
+        ]
+    },
+    {
+        "q": "Which log entry suggests successful credential dumping?",
+        "o": [
+            "LSASS process access",
+            "File download complete",
+            "Print job finished",
+            "Email sent"
+        ]
+    },
+    {
+        "q": "What does a Web Application Firewall log typically contain?",
+        "o": [
+            "HTTP request details and blocking actions",
+            "Server room temperature",
+            "CPU clock speed",
+            "Memory usage"
+        ]
+    },
+    {
+        "q": "How do you calculate false positive rate in security monitoring?",
+        "o": [
+            "False positives divided by total alerts",
+            "True positives times false positives",
+            "Total alerts minus true positives",
+            "False positives plus true negatives"
+        ]
+    },
+    {
+        "q": "Which dashboard visualization is best for showing alert severity distribution?",
+        "o": [
+            "Pie chart",
+            "Line graph",
+            "Scatter plot",
+            "Gauge meter"
+        ]
+    },
+    {
+        "q": "What does a syslog severity level of 0 indicate?",
+        "o": [
+            "Emergency - system unstable",
+            "Informational message",
+            "Debug message",
+            "Warning condition"
+        ]
+    },
+    {
+        "q": "How can you detect SQL injection attempts in web logs?",
+        "o": [
+            "SQL keywords in URL parameters",
+            "Image file requests",
+            "CSS style sheet loads",
+            "JavaScript file downloads"
+        ]
+    },
+    {
+        "q": "What is the purpose of log hashing for integrity?",
+        "o": [
+            "Verifying logs haven't been altered",
+            "Compressing log files",
+            "Encrypting log content",
+            "Indexing log entries"
+        ]
+    },
+    {
+        "q": "Which behavior in authentication logs suggests password spraying?",
+        "o": [
+            "Multiple users with single password attempts",
+            "Single user multiple password attempts",
+            "Successful logins from home",
+            "Failed logins after hours"
+        ]
+    },
+    {
+        "q": "What does a SIEM correlation rule with time window achieve?",
+        "o": [
+            "Detecting related events within timeframe",
+            "Speeding up log ingestion",
+            "Reducing storage needs",
+            "Improving search speed"
+        ]
+    },
+    {
+        "q": "Which log source helps detect cryptocurrency mining malware?",
+        "o": [
+            "Process CPU usage logs",
+            "Printer paper consumption",
+            "Scanner glass cleanliness",
+            "Fax line quality"
+        ]
+    },
+    {
+        "q": "What is the difference between IDS and IPS logs?",
+        "o": [
+            "IDS detects, IPS also blocks",
+            "IDS logs more data",
+            "IPS only monitors",
+            "IDS blocks automatically"
+        ]
+    },
+    {
+        "q": "How can you identify a man-in-the-middle attack from logs?",
+        "o": [
+            "Certificate mismatches and ARP anomalies",
+            "High CPU usage",
+            "Low disk space",
+            "Memory errors"
+        ]
+    },
+    {
+        "q": "What does a security dashboard SLA widget track?",
+        "o": [
+            "Response time compliance",
+            "System uptime",
+            "CPU temperature",
+            "Fan speed"
+        ]
+    },
+    {
+        "q": "Which log entry suggests scheduled task persistence?",
+        "o": [
+            "Task creation event ID 4698",
+            "File deletion event",
+            "Print job completion",
+            "Email delivery receipt"
+        ]
+    },
+    {
+        "q": "What is the purpose of log sampling in high-volume environments?",
+        "o": [
+            "Reducing storage while maintaining visibility",
+            "Deleting all security events",
+            "Stopping all log collection",
+            "Disabling monitoring tools"
+        ]
+    },
+    {
+        "q": "How can you detect data exfiltration via email logs?",
+        "o": [
+            "Large attachments to external domains",
+            "Internal email forwarding",
+            "Meeting invitations",
+            "Automatic replies"
+        ]
+    },
+    {
+        "q": "Which SIEM feature enables baseline establishment?",
+        "o": [
+            "Statistical analysis engine",
+            "Word processor",
+            "Spreadsheet",
+            "Presentation tool"
+        ]
+    },
+    {
+        "q": "What does a Windows event ID 4688 indicate?",
+        "o": [
+            "Process creation",
+            "Process termination",
+            "Service start",
+            "Service stop"
+        ]
+    },
+    {
+        "q": "How do you tune alerts for a new application?",
+        "o": [
+            "Monitor and adjust based on behavior",
+            "Set all thresholds to minimum",
+            "Disable all related alerts",
+            "Use default settings forever"
+        ]
+    },
+    {
+        "q": "Which log source helps detect unauthorized API usage?",
+        "o": [
+            "API gateway logs",
+            "Printer status logs",
+            "Scanner logs",
+            "Fax logs"
+        ]
+    },
+    {
+        "q": "What does a sudden increase in 404 errors indicate?",
+        "o": [
+            "Possible directory scanning",
+            "Server maintenance",
+            "Normal operation",
+            "Cache clearing"
+        ]
+    },
+    {
+        "q": "What is the purpose of SOAR in security monitoring?",
+        "o": [
+            "Orchestrating incident response",
+            "Storing log files",
+            "Printing reports",
+            "Displaying dashboards"
+        ]
+    },
+    {
+        "q": "Which log pattern suggests ransomware activity?",
+        "o": [
+            "Mass file modifications and renaming",
+            "Regular backup completion",
+            "Scheduled updates",
+            "Normal user logins"
+        ]
+    },
+    {
+        "q": "How can you detect DNS poisoning from logs?",
+        "o": [
+            "Mismatched DNS responses",
+            "Slow internet speed",
+            "High CPU usage",
+            "Low memory"
+        ]
+    },
+    {
+        "q": "What does a security dashboard risk score combine?",
+        "o": [
+            "Multiple security metrics",
+            "Single alert type",
+            "Only threat intelligence",
+            "Just compliance data"
+        ]
+    },
+    {
+        "q": "Which Windows event ID indicates account lockout?",
+        "o": [
+            "4740",
+            "4624",
+            "4625",
+            "4634"
+        ]
+    },
+    {
+        "q": "What is the difference between statistical and behavioral analytics?",
+        "o": [
+            "Statistics use numbers, behavior uses patterns",
+            "Behavior is always better",
+            "Statistics never work",
+            "They are exactly the same"
+        ]
+    },
+    {
+        "q": "How can you identify command and control traffic from proxy logs?",
+        "o": [
+            "Regular beaconing patterns",
+            "Video streaming",
+            "File downloads",
+            "Email access"
+        ]
+    },
+    {
+        "q": "What does a SIEM content pack typically include?",
+        "o": [
+            "Pre-built rules and dashboards",
+            "Hardware specifications",
+            "Software licenses",
+            "Network diagrams"
+        ]
+    },
+    {
+        "q": "Which log source detects physical security breaches?",
+        "o": [
+            "Badge access logs",
+            "Server logs",
+            "Application logs",
+            "Database logs"
+        ]
+    },
+    {
+        "q": "What does an alert with high severity but low confidence indicate?",
+        "o": [
+            "Potentially critical but uncertain threat",
+            "Definite false positive",
+            "Confirmed attack",
+            "System error"
+        ]
+    },
+    {
+        "q": "How do you detect kerberoasting attacks from logs?",
+        "o": [
+            "TGS-REQ requests for service accounts",
+            "User logon events",
+            "File access attempts",
+            "Print job submissions"
+        ]
+    },
+    {
+        "q": "What is the purpose of log enrichment with geoIP data?",
+        "o": [
+            "Identifying geographic origin of attacks",
+            "Improving log compression",
+            "Speeding up searches",
+            "Reducing storage needs"
+        ]
+    },
+    {
+        "q": "Which dashboard visualization shows attack timeline?",
+        "o": [
+            "Gantt chart",
+            "Pie chart",
+            "Bar chart",
+            "Table"
+        ]
+    },
+    {
+        "q": "What does a Windows event ID 5156 indicate?",
+        "o": [
+            "Windows Filtering Platform connection",
+            "User logoff",
+            "Service install",
+            "File create"
+        ]
+    },
+    {
+        "q": "How can you detect SMB relay attacks from logs?",
+        "o": [
+            "SMB traffic anomalies and NTLM usage",
+            "HTTP requests",
+            "DNS queries",
+            "DHCP renewals"
+        ]
+    },
+    {
+        "q": "What is the difference between rule-based and ML-based detection?",
+        "o": [
+            "Rules use fixed patterns, ML adapts",
+            "ML is always better",
+            "Rules never work",
+            "They are identical"
+        ]
+    },
+    {
+        "q": "Which log source helps detect container breakout attempts?",
+        "o": [
+            "Host system logs",
+            "Container logs only",
+            "Application logs",
+            "Network logs only"
+        ]
+    },
+    {
+        "q": "What does an alert tuning feedback loop accomplish?",
+        "o": [
+            "Continuous improvement of detection",
+            "Increasing false positives",
+            "Disabling all alerts",
+            "Ignoring analyst input"
+        ]
+    },
+    {
+        "q": "How can you detect golden ticket attacks from logs?",
+        "o": [
+            "Anomalous Kerberos ticket usage",
+            "User password changes",
+            "Group policy updates",
+            "File share access"
+        ]
+    },
+    {
+        "q": "What does a security dashboard compliance widget show?",
+        "o": [
+            "Regulatory compliance status",
+            "System performance",
+            "Network speed",
+            "Storage capacity"
+        ]
+    },
+    {
+        "q": "Which Windows event ID indicates service installation?",
+        "o": [
+            "4697",
+            "4624",
+            "4625",
+            "4634"
+        ]
+    },
+    {
+        "q": "What is the purpose of log forwarding in distributed environments?",
+        "o": [
+            "Centralizing logs from multiple sources",
+            "Deleting local logs",
+            "Printing log files",
+            "Encrypting all data"
+        ]
+    },
+    {
+        "q": "How can you detect SSRF attacks from web logs?",
+        "o": [
+            "Internal IPs in URL parameters",
+            "Image requests",
+            "CSS loads",
+            "JavaScript files"
+        ]
+    },
+    {
+        "q": "What does a SIEM rule with exception list achieve?",
+        "o": [
+            "Reducing false positives",
+            "Increasing alert volume",
+            "Disabling detection",
+            "Slowing performance"
+        ]
+    },
+    {
+        "q": "Which log source helps detect AWS credential compromise?",
+        "o": [
+            "CloudTrail logs",
+            "VPC flow logs",
+            "Route53 logs",
+            "CloudFront logs"
+        ]
+    },
+    {
+        "q": "What does an alert with low severity but high confidence indicate?",
+        "o": [
+            "Low impact but confirmed issue",
+            "Critical attack",
+            "False positive",
+            "System error"
+        ]
+    },
+    {
+        "q": "How do you detect pass-the-ticket attacks from logs?",
+        "o": [
+            "Kerberos ticket reuse anomalies",
+            "NTLM authentication",
+            "Basic auth usage",
+            "Anonymous logins"
+        ]
+    },
+    {
+        "q": "What is the purpose of MITRE ATT&CK mapping in dashboards?",
+        "o": [
+            "Visualizing coverage gaps",
+            "Showing server status",
+            "Displaying network map",
+            "Tracking user activity"
+        ]
+    },
+    {
+        "q": "Which Windows event ID indicates scheduled task creation?",
+        "o": [
+            "4698",
+            "4624",
+            "4625",
+            "4634"
+        ]
+    },
+    {
+        "q": "How can you detect cloud cryptojacking from logs?",
+        "o": [
+            "Spike in compute instance usage",
+            "Storage increases",
+            "Network traffic",
+            "API calls"
+        ]
+    },
+    {
+        "q": "What does a SIEM correlation rule with threshold achieve?",
+        "o": [
+            "Alerting after specified occurrences",
+            "Stopping all alerts",
+            "Increasing noise",
+            "Deleting logs"
+        ]
+    },
+    {
+        "q": "Which log source helps detect Kubernetes security issues?",
+        "o": [
+            "kube-apiserver logs",
+            "Node system logs",
+            "Pod logs only",
+            "Container logs only"
+        ]
+    },
+    {
+        "q": "What does alert triage involve in security operations?",
+        "o": [
+            "Initial assessment and prioritization",
+            "Final incident report",
+            "System reboot",
+            "Password reset"
+        ]
+    },
+    {
+        "q": "How can you detect DLL side-loading from process logs?",
+        "o": [
+            "Process loading DLLs from unusual paths",
+            "Normal application start",
+            "Service shutdown",
+            "User logoff"
+        ]
+    },
+    {
+        "q": "What is the purpose of log review meetings?",
+        "o": [
+            "Analyzing detection effectiveness",
+            "Reading log files aloud",
+            "Deleting old logs",
+            "Printing reports"
+        ]
+    },
+    {
+        "q": "Which dashboard shows top attack vectors?",
+        "o": [
+            "Attack type breakdown",
+            "Server list",
+            "User directory",
+            "Application inventory"
+        ]
+    },
+    {
+        "q": "What does a Windows event ID 1102 indicate?",
+        "o": [
+            "Security log cleared",
+            "User logged on",
+            "File accessed",
+            "Service started"
+        ]
+    },
+    {
+        "q": "How can you detect LDAP injection from logs?",
+        "o": [
+            "LDAP query anomalies",
+            "SQL errors",
+            "HTTP 404s",
+            "DNS timeouts"
+        ]
+    },
+    {
+        "q": "What is the difference between TTP and IOC in threat detection?",
+        "o": [
+            "TTP is behavior, IOC is indicator",
+            "They are exactly the same",
+            "IOC is behavior",
+            "TTP is always file hash"
+        ]
+    },
+    {
+        "q": "Which log source helps detect Azure AD compromise?",
+        "o": [
+            "Azure AD sign-in logs",
+            "VM logs",
+            "Storage logs",
+            "SQL logs"
+        ]
+    },
+    {
+        "q": "What does an alert severity matrix consider?",
+        "o": [
+            "Impact and likelihood combination",
+            "Time of day only",
+            "User department only",
+            "System type only"
+        ]
+    },
+    {
+        "q": "How do you detect zero-day exploits from network logs?",
+        "o": [
+            "Anomalous traffic patterns",
+            "Known signatures",
+            "File hashes",
+            "Domain names"
+        ]
+    },
+    {
+        "q": "What is the purpose of log retention classes?",
+        "o": [
+            "Different storage periods by log type",
+            "Same retention for all logs",
+            "No log storage",
+            "Immediate deletion"
+        ]
+    },
+    {
+        "q": "Which Windows event ID indicates group membership change?",
+        "o": [
+            "4728",
+            "4624",
+            "4625",
+            "4634"
+        ]
+    },
+    {
+        "q": "How can you detect DNS data exfiltration?",
+        "o": [
+            "Long subdomain queries",
+            "Short domain names",
+            "Common websites",
+            "Normal browsing"
+        ]
+    },
+    {
+        "q": "What does a security dashboard threat feed widget display?",
+        "o": [
+            "Latest threat intelligence",
+            "Weather forecast",
+            "Stock prices",
+            "Sports scores"
+        ]
+    },
+    {
+        "q": "Which log source helps detect AWS IAM privilege escalation?",
+        "o": [
+            "CloudTrail IAM events",
+            "VPC flow logs",
+            "CloudFront logs",
+            "Route53 logs"
+        ]
+    },
+    {
+        "q": "What does alert correlation with threat intelligence achieve?",
+        "o": [
+            "Contextualizing alerts with known threats",
+            "Deleting all alerts",
+            "Increasing false positives",
+            "Disabling detection"
+        ]
+    },
+    {
+        "q": "How can you detect process hollowing from process logs?",
+        "o": [
+            "Process creation anomalies",
+            "Normal application start",
+            "Service shutdown",
+            "File access"
+        ]
+    },
+    {
+        "q": "What is the purpose of log parsing regex patterns?",
+        "o": [
+            "Extracting structured data",
+            "Deleting log entries",
+            "Encrypting content",
+            "Compressing files"
+        ]
+    },
+    {
+        "q": "Which Windows event ID indicates service stop?",
+        "o": [
+            "4699",
+            "4624",
+            "4625",
+            "4634"
+        ]
+    },
+    {
+        "q": "How can you detect malicious macro execution from logs?",
+        "o": [
+            "Office process spawning cmd",
+            "Normal document open",
+            "Email reading",
+            "Web browsing"
+        ]
+    },
+    {
+        "q": "What does a SIEM rule with suppression achieve?",
+        "o": [
+            "Preventing duplicate alerts",
+            "Increasing alert volume",
+            "Deleting logs",
+            "Slowing detection"
+        ]
+    },
+    {
+        "q": "Which log source helps detect Google Cloud compromise?",
+        "o": [
+            "Cloud Audit logs",
+            "Compute logs",
+            "Storage logs",
+            "Network logs"
+        ]
+    },
+    {
+        "q": "What does alert fatigue lead to in SOC operations?",
+        "o": [
+            "Missed critical alerts",
+            "Better detection",
+            "Faster response",
+            "Improved tuning"
+        ]
+    },
+    {
+        "q": "How can you detect API abuse from access logs?",
+        "o": [
+            "Unusual API call patterns",
+            "Normal API usage",
+            "Static content access",
+            "Image requests"
+        ]
+    },
+    {
+        "q": "What is the purpose of threat hunting hypothesis?",
+        "o": [
+            "Guiding investigation direction",
+            "Random log checking",
+            "Deleting old data",
+            "Running reports"
+        ]
+    },
+    {
+        "q": "Which dashboard shows detection coverage by MITRE tactic?",
+        "o": [
+            "Attack matrix visualization",
+            "Pie chart",
+            "Line graph",
+            "Table"
+        ]
+    },
+    {
+        "q": "What does a Windows event ID 4657 indicate?",
+        "o": [
+            "Registry value modified",
+            "User logged on",
+            "File created",
+            "Service started"
+        ]
+    },
+    {
+        "q": "How can you detect cloud credential harvesting from logs?",
+        "o": [
+            "Suspicious console logins",
+            "API calls",
+            "Storage access",
+            "Network traffic"
+        ]
+    },
+    {
+        "q": "What is the difference between EDR and SIEM logs?",
+        "o": [
+            "EDR has endpoint context, SIEM aggregates",
+            "They are identical",
+            "SIEM has more detail",
+            "EDR only alerts"
+        ]
+    },
+    {
+        "q": "Which log source helps detect container image vulnerabilities?",
+        "o": [
+            "Container registry scan logs",
+            "Runtime logs",
+            "Orchestrator logs",
+            "Node logs"
+        ]
+    },
+    {
+        "q": "What does alert escalation trigger in SOC workflows?",
+        "o": [
+            "Incident response activation",
+            "Alert deletion",
+            "Log rotation",
+            "System reboot"
+        ]
+    },
+    {
+        "q": "How can you detect fileless malware from process logs?",
+        "o": [
+            "Script interpreters with network connections",
+            "Normal EXE execution",
+            "DLL loading",
+            "Service starts"
+        ]
+    },
+    {
+        "q": "What is the purpose of log anonymization?",
+        "o": [
+            "Protecting sensitive data",
+            "Deleting logs",
+            "Speeding up searches",
+            "Reducing size"
+        ]
+    },
+    {
+        "q": "Which Windows event ID indicates WMI activity?",
+        "o": [
+            "5861",
+            "4624",
+            "4625",
+            "4634"
+        ]
+    },
+    {
+        "q": "What is the primary challenge when correlating logs from cloud and on-premise sources?",
+        "o": [
+            "Time synchronization and format differences",
+            "Network cable compatibility",
+            "Monitor refresh rates",
+            "Keyboard layout variations"
+        ]
+    },
+    {
+        "q": "How can you detect pass-the-hash attacks using Windows event logs?",
+        "o": [
+            "Event ID 4624 with logon type 3 and NTLM",
+            "Event ID 4625 with bad password",
+            "Event ID 4634 with logoff",
+            "Event ID 4647 with initiator logoff"
+        ]
+    },
+    {
+        "q": "Which statistical method is commonly used for anomaly detection in security analytics?",
+        "o": [
+            "Standard deviation from baseline",
+            "Mean time between failures",
+            "Average response time",
+            "Median absolute deviation"
+        ]
+    },
+    {
+        "q": "What does a SIEM correlation rule with 'not' condition achieve?",
+        "o": [
+            "Excluding specific events from matching",
+            "Increasing alert volume",
+            "Disabling the rule",
+            "Creating duplicate alerts"
+        ]
+    },
+    {
+        "q": "How can you distinguish between legitimate admin activity and attacker persistence from logs?",
+        "o": [
+            "Time patterns and asset criticality",
+            "Username length",
+            "Password complexity",
+            "IP address color"
+        ]
+    },
+    {
+        "q": "Which log source provides the earliest indicator of ransomware execution?",
+        "o": [
+            "Process creation logs with unusual parents",
+            "File deletion logs",
+            "Print job logs",
+            "Email delivery logs"
+        ]
+    },
+    {
+        "q": "What is the purpose of frequency analysis in security monitoring?",
+        "o": [
+            "Identifying periodic malicious activity",
+            "Counting total log lines",
+            "Measuring storage usage",
+            "Tracking CPU usage"
+        ]
+    },
+    {
+        "q": "How can you detect SMBv1 exploitation attempts from network logs?",
+        "o": [
+            "SMB protocol negotiation anomalies",
+            "HTTP traffic spikes",
+            "DNS query floods",
+            "DHCP renewal storms"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs help detect DCShadow attacks?",
+        "o": [
+            "Event IDs 4742 and 5136",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "What does a time-based sliding window correlation achieve?",
+        "o": [
+            "Detecting slow and low attacks",
+            "Stopping all brute force",
+            "Blocking all traffic",
+            "Deleting old logs"
+        ]
+    },
+    {
+        "q": "How can you identify Kerberos delegation abuse from domain controller logs?",
+        "o": [
+            "Event ID 4769 with service ticket options",
+            "Event ID 4624 with logon type 2",
+            "Event ID 4634 with logoff",
+            "Event ID 4648 with explicit credentials"
+        ]
+    },
+    {
+        "q": "Which log source helps detect AWS Metadata Service attacks?",
+        "o": [
+            "VPC flow logs to 169.254.169.254",
+            "CloudTrail management events",
+            "S3 access logs",
+            "CloudFront logs"
+        ]
+    },
+    {
+        "q": "What is the difference between threshold-based and ratio-based alerting?",
+        "o": [
+            "Absolute count vs relative proportion",
+            "Speed vs accuracy",
+            "Cost vs benefit",
+            "Simple vs complex"
+        ]
+    },
+    {
+        "q": "How can you detect DLL search order hijacking from process logs?",
+        "o": [
+            "DLL loads from user-writable paths",
+            "System DLL loading",
+            "Kernel module loading",
+            "Driver installation"
+        ]
+    },
+    {
+        "q": "Which statistical distribution is often used for network traffic baselining?",
+        "o": [
+            "Poisson distribution",
+            "Normal distribution",
+            "Binomial distribution",
+            "Exponential distribution"
+        ]
+    },
+    {
+        "q": "What does a SIEM rule with aggregation by source IP achieve?",
+        "o": [
+            "Tracking attacker activity patterns",
+            "Counting total events",
+            "Measuring log size",
+            "Tracking system uptime"
+        ]
+    },
+    {
+        "q": "How can you detect AD FS compromise from authentication logs?",
+        "o": [
+            "Anomalous token issuance patterns",
+            "User password changes",
+            "Group membership updates",
+            "OU modifications"
+        ]
+    },
+    {
+        "q": "Which Windows event ID indicates LSASS process access?",
+        "o": [
+            "Event ID 4656 with LSASS handle",
+            "Event ID 4624 logon success",
+            "Event ID 4634 logoff",
+            "Event ID 4647 user logoff"
+        ]
+    },
+    {
+        "q": "What is the purpose of sequence-based correlation in SIEM?",
+        "o": [
+            "Detecting multi-step attack chains",
+            "Counting log events",
+            "Measuring performance",
+            "Tracking user sessions"
+        ]
+    },
+    {
+        "q": "How can you detect cloud IAM privilege escalation from CloudTrail?",
+        "o": [
+            "Sequence of policy changes and role assumptions",
+            "S3 bucket deletions",
+            "EC2 instance starts",
+            "RDS snapshot creations"
+        ]
+    },
+    {
+        "q": "Which machine learning approach is commonly used for UEBA?",
+        "o": [
+            "Unsupervised learning",
+            "Reinforcement learning",
+            "Supervised learning",
+            "Deep learning only"
+        ]
+    },
+    {
+        "q": "How can you detect golden ticket attacks from Kerberos logs?",
+        "o": [
+            "Event ID 4768 with anomalous ticket lifetime",
+            "Event ID 4769 with service tickets",
+            "Event ID 4770 with ticket renewal",
+            "Event ID 4771 with pre-auth failed"
+        ]
+    },
+    {
+        "q": "What does a SIEM look-aside buffer achieve in correlation?",
+        "o": [
+            "Temporary event storage for window correlation",
+            "Permanent log archive",
+            "Backup storage",
+            "Cache for dashboards"
+        ]
+    },
+    {
+        "q": "Which log source helps detect container escape via CVE-2022-0492?",
+        "o": [
+            "Host audit logs for release_agent",
+            "Container stdout logs",
+            "Kubernetes API logs",
+            "Docker daemon logs"
+        ]
+    },
+    {
+        "q": "How can you distinguish between web scraping and DDoS from logs?",
+        "o": [
+            "Request pattern regularity and depth",
+            "Total request volume",
+            "Source IP count",
+            "Bandwidth usage"
+        ]
+    },
+    {
+        "q": "What is the role of Markov chains in security analytics?",
+        "o": [
+            "Modeling state transitions in attacks",
+            "Predicting stock prices",
+            "Weather forecasting",
+            "Traffic routing"
+        ]
+    },
+    {
+        "q": "How can you detect LDAP reconnaissance from domain logs?",
+        "o": [
+            "Event ID 4662 with directory service access",
+            "Event ID 4624 logon success",
+            "Event ID 4634 logoff",
+            "Event ID 4648 explicit credentials"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track WMI persistence?",
+        "o": [
+            "Event IDs 5861 and 5859",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "What does seasonal decomposition reveal in time series security data?",
+        "o": [
+            "Regular patterns vs anomalies",
+            "Total volume trends",
+            "Storage requirements",
+            "Processing latency"
+        ]
+    },
+    {
+        "q": "How can you detect DCSync attacks from domain logs?",
+        "o": [
+            "Event ID 4662 with DS-Replication-Get-Changes",
+            "Event ID 4624 with admin logon",
+            "Event ID 4634 with logoff",
+            "Event ID 4647 with user logoff"
+        ]
+    },
+    {
+        "q": "Which log source helps detect Kubernetes RBAC abuse?",
+        "o": [
+            "Kubernetes audit logs",
+            "Container runtime logs",
+            "Node system logs",
+            "Pod application logs"
+        ]
+    },
+    {
+        "q": "What is the purpose of ensemble methods in threat detection?",
+        "o": [
+            "Combining multiple detection techniques",
+            "Single algorithm optimization",
+            "Data preprocessing",
+            "Log normalization"
+        ]
+    },
+    {
+        "q": "How can you detect Skeleton Key malware from domain logs?",
+        "o": [
+            "Event ID 4624 with anomalous authentication",
+            "Event ID 4768 with TGT requests",
+            "Event ID 4769 with service tickets",
+            "Event ID 4771 with pre-auth failures"
+        ]
+    },
+    {
+        "q": "Which AWS CloudTrail event indicates privilege escalation via IAM?",
+        "o": [
+            "CreatePolicyVersion",
+            "RunInstances",
+            "CreateBucket",
+            "DeleteSnapshot"
+        ]
+    },
+    {
+        "q": "How do you tune alerts for false positives from legitimate scanning tools?",
+        "o": [
+            "Allowlisting known scanner IPs and user agents",
+            "Disabling all scan detection",
+            "Increasing thresholds to maximum",
+            "Deleting scan logs"
+        ]
+    },
+    {
+        "q": "What does a hidden Markov model detect in user behavior analytics?",
+        "o": [
+            "Suspicious sequence deviations",
+            "Password strength",
+            "Login frequency",
+            "Session duration"
+        ]
+    },
+    {
+        "q": "How can you detect overpass-the-hash attacks from Windows logs?",
+        "o": [
+            "Event ID 4624 with logon type 9",
+            "Event ID 4625 with bad password",
+            "Event ID 4634 with logoff",
+            "Event ID 4647 with initiator logoff"
+        ]
+    },
+    {
+        "q": "Which log source helps detect Azure Key Vault compromise?",
+        "o": [
+            "Key Vault diagnostic logs",
+            "VM boot logs",
+            "Storage analytics logs",
+            "Network security group logs"
+        ]
+    },
+    {
+        "q": "What is the difference between FP rate and FN rate in alert tuning?",
+        "o": [
+            "False alarms vs missed detections",
+            "Speed vs accuracy",
+            "Cost vs benefit",
+            "Simple vs complex"
+        ]
+    },
+    {
+        "q": "How can you detect Kerberoasting with RC4 encryption from logs?",
+        "o": [
+            "Event ID 4769 with RC4 encryption type",
+            "Event ID 4768 with TGT request",
+            "Event ID 4770 with ticket renewal",
+            "Event ID 4771 with pre-auth failed"
+        ]
+    },
+    {
+        "q": "Which machine learning technique detects zero-day malware from process logs?",
+        "o": [
+            "One-class classification",
+            "Linear regression",
+            "Logistic regression",
+            "Decision trees"
+        ]
+    },
+    {
+        "q": "What does cross-correlation of multiple log sources achieve?",
+        "o": [
+            "Validating threats across different systems",
+            "Counting total events",
+            "Measuring storage usage",
+            "Tracking single source"
+        ]
+    },
+    {
+        "q": "How can you detect PrintNightmare exploitation from Windows logs?",
+        "o": [
+            "Event ID 316 with printer spooler",
+            "Event ID 4624 with logon",
+            "Event ID 4634 with logoff",
+            "Event ID 4647 with user logoff"
+        ]
+    },
+    {
+        "q": "Which GCP log source helps detect Cloud IAM privilege escalation?",
+        "o": [
+            "Cloud Audit logs for IAM",
+            "Compute Engine logs",
+            "Cloud Storage logs",
+            "Cloud SQL logs"
+        ]
+    },
+    {
+        "q": "What is the purpose of cumulative sum (CUSUM) in security monitoring?",
+        "o": [
+            "Detecting small persistent shifts",
+            "Counting total events",
+            "Measuring latency",
+            "Tracking throughput"
+        ]
+    },
+    {
+        "q": "How can you detect malicious Outlook rules from Exchange logs?",
+        "o": [
+            "Event ID 1027 with rule creation",
+            "Event ID 4624 logon",
+            "Event ID 4634 logoff",
+            "Event ID 4647 user logoff"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track PowerShell script block logging?",
+        "o": [
+            "Event IDs 4103 and 4104",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement alert throttling for noisy but necessary rules?",
+        "o": [
+            "Time-based suppression after first alert",
+            "Disabling the rule at night",
+            "Increasing thresholds weekly",
+            "Deleting rule completely"
+        ]
+    },
+    {
+        "q": "What does spectral analysis detect in network traffic monitoring?",
+        "o": [
+            "Periodic beaconing patterns",
+            "Total bandwidth",
+            "Packet loss",
+            "Latency spikes"
+        ]
+    },
+    {
+        "q": "How can you detect Azure AD Kerberos ticket abuse?",
+        "o": [
+            "Azure AD sign-in logs with ticket anomalies",
+            "VM login logs",
+            "Storage access logs",
+            "SQL audit logs"
+        ]
+    },
+    {
+        "q": "Which log source helps detect supply chain attacks via software updates?",
+        "o": [
+            "Software update client logs",
+            "Firewall logs",
+            "DNS logs",
+            "DHCP logs"
+        ]
+    },
+    {
+        "q": "What is the role of graph analytics in security monitoring?",
+        "o": [
+            "Finding hidden relationships in entities",
+            "Counting events",
+            "Measuring time",
+            "Tracking performance"
+        ]
+    },
+    {
+        "q": "How can you detect NotPetya-style encryption from process logs?",
+        "o": [
+            "Fsutil and cipher.exe execution",
+            "Normal file access",
+            "Print spooler activity",
+            "Email sending"
+        ]
+    },
+    {
+        "q": "Which AWS CloudTrail event indicates backdoor IAM user creation?",
+        "o": [
+            "CreateUser followed by CreateAccessKey",
+            "DeleteUser",
+            "UpdateUser",
+            "ListUsers"
+        ]
+    },
+    {
+        "q": "What does precision and recall optimization achieve in alert tuning?",
+        "o": [
+            "Balancing accuracy and completeness",
+            "Increasing all alerts",
+            "Decreasing all alerts",
+            "Random threshold setting"
+        ]
+    },
+    {
+        "q": "How can you detect Token Manipulation attacks from Windows logs?",
+        "o": [
+            "Event ID 4672 with special privileges",
+            "Event ID 4624 with logon",
+            "Event ID 4634 with logoff",
+            "Event ID 4647 with user logoff"
+        ]
+    },
+    {
+        "q": "Which log source helps detect Kubernetes container escape?",
+        "o": [
+            "Host audit logs for syscalls",
+            "Container stdout",
+            "Kubelet logs",
+            "API server logs"
+        ]
+    },
+    {
+        "q": "What is the purpose of Holt-Winters forecasting in security analytics?",
+        "o": [
+            "Predicting seasonal attack patterns",
+            "Counting events",
+            "Storing logs",
+            "Displaying dashboards"
+        ]
+    },
+    {
+        "q": "How can you detect AD CS abuse from certificate services logs?",
+        "o": [
+            "Event ID 4886 and 4887 anomalies",
+            "Event ID 4624 logon",
+            "Event ID 4634 logoff",
+            "Event ID 4647 user logoff"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track driver installation?",
+        "o": [
+            "Event IDs 4657 and 4670",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement risk-based alerting in SIEM?",
+        "o": [
+            "Weighting alerts by asset criticality",
+            "Same priority for all alerts",
+            "Random alert assignment",
+            "Alphabetical ordering"
+        ]
+    },
+    {
+        "q": "What does mutual information reveal in log analysis?",
+        "o": [
+            "Statistical dependencies between events",
+            "Total event count",
+            "Time between events",
+            "Event severity"
+        ]
+    },
+    {
+        "q": "How can you detect cloud metadata service attacks from process logs?",
+        "o": [
+            "Curl or wget to 169.254.169.254",
+            "Normal web browsing",
+            "File downloads",
+            "Email checking"
+        ]
+    },
+    {
+        "q": "Which GCP audit log helps detect privilege escalation via IAM?",
+        "o": [
+            "SetIamPolicy",
+            "CreateInstance",
+            "DeleteBucket",
+            "GetObject"
+        ]
+    },
+    {
+        "q": "What is the difference between univariate and multivariate anomaly detection?",
+        "o": [
+            "Single metric vs multiple metrics",
+            "Fast vs slow",
+            "Simple vs complex",
+            "Cheap vs expensive"
+        ]
+    },
+    {
+        "q": "How can you detect LSASS memory dumping from process logs?",
+        "o": [
+            "Process access with backup privilege",
+            "Normal application start",
+            "Service shutdown",
+            "User logoff"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track scheduled task modification?",
+        "o": [
+            "Event ID 4699",
+            "Event ID 4624",
+            "Event ID 4634",
+            "Event ID 4647"
+        ]
+    },
+    {
+        "q": "How do you tune alerts for business application noise?",
+        "o": [
+            "Creating maintenance windows in correlation",
+            "Disabling all business app monitoring",
+            "Ignoring business hours",
+            "Alerting on everything"
+        ]
+    },
+    {
+        "q": "What does clustering algorithm detect in user behavior analytics?",
+        "o": [
+            "Groups of similar anomalous behavior",
+            "Single user activity",
+            "Total login count",
+            "Password changes"
+        ]
+    },
+    {
+        "q": "How can you detect DCOM abuse from Windows logs?",
+        "o": [
+            "Event ID 10036 with DCOM activation",
+            "Event ID 4624 logon",
+            "Event ID 4634 logoff",
+            "Event ID 4647 user logoff"
+        ]
+    },
+    {
+        "q": "Which Azure log source helps detect Key Vault backdoor?",
+        "o": [
+            "AzureActivity for Key Vault",
+            "VM diagnostics",
+            "Storage metrics",
+            "SQL auditing"
+        ]
+    },
+    {
+        "q": "What is the purpose of Bayesian networks in security analytics?",
+        "o": [
+            "Probabilistic threat reasoning",
+            "Counting events",
+            "Storing data",
+            "Displaying charts"
+        ]
+    },
+    {
+        "q": "How can you detect Kerberos bronze bit attack from logs?",
+        "o": [
+            "Event ID 4769 with forwardable flag",
+            "Event ID 4768 with TGT",
+            "Event ID 4770 with renewal",
+            "Event ID 4771 with failure"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track service creation?",
+        "o": [
+            "Event ID 7045",
+            "Event ID 4624",
+            "Event ID 4634",
+            "Event ID 4647"
+        ]
+    },
+    {
+        "q": "How do you implement context-aware alert correlation?",
+        "o": [
+            "Including asset inventory and vulnerability data",
+            "Using only raw logs",
+            "Ignoring asset context",
+            "Random correlation"
+        ]
+    },
+    {
+        "q": "What does Granger causality test identify in security time series?",
+        "o": [
+            "Predictive relationships between events",
+            "Event frequency",
+            "Event severity",
+            "Storage needs"
+        ]
+    },
+    {
+        "q": "How can you detect SAM dump from registry logs?",
+        "o": [
+            "Registry access to SAM hive",
+            "Normal registry reads",
+            "File access",
+            "Print jobs"
+        ]
+    },
+    {
+        "q": "Which AWS CloudTrail event indicates CloudTrail disabling?",
+        "o": [
+            "StopLogging and DeleteTrail",
+            "StartLogging",
+            "CreateTrail",
+            "UpdateTrail"
+        ]
+    },
+    {
+        "q": "What is the difference between heuristic and signature-based detection?",
+        "o": [
+            "Rule of thumb vs exact patterns",
+            "Fast vs slow",
+            "Old vs new",
+            "Cheap vs expensive"
+        ]
+    },
+    {
+        "q": "How can you detect PowerSploit usage from PowerShell logs?",
+        "o": [
+            "Script block logging with suspicious functions",
+            "Normal cmdlet usage",
+            "Variable assignment",
+            "Loop constructs"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track AppLocker execution?",
+        "o": [
+            "Event IDs 8003 and 8004",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you tune alerts for seasonal traffic variations?",
+        "o": [
+            "Dynamic baselines with time factors",
+            "Static thresholds",
+            "No monitoring during peaks",
+            "Random thresholds"
+        ]
+    },
+    {
+        "q": "What does random forest algorithm contribute to threat detection?",
+        "o": [
+            "Ensemble classification of malicious activity",
+            "Single decision path",
+            "Linear regression",
+            "Simple averaging"
+        ]
+    },
+    {
+        "q": "How can you detect Unconstrained Delegation abuse from logs?",
+        "o": [
+            "Event ID 4769 with delegation flags",
+            "Event ID 4768 with TGT",
+            "Event ID 4770 with renewal",
+            "Event ID 4771 with failure"
+        ]
+    },
+    {
+        "q": "Which log source helps detect Kubernetes secrets theft?",
+        "o": [
+            "Kubernetes audit for secret access",
+            "Container logs",
+            "Node logs",
+            "Pod logs"
+        ]
+    },
+    {
+        "q": "What is the purpose of long short-term memory (LSTM) in security?",
+        "o": [
+            "Learning long-term sequence patterns",
+            "Short-term memory only",
+            "Counting events",
+            "Storing data"
+        ]
+    },
+    {
+        "q": "How can you detect Group Policy preference password extraction?",
+        "o": [
+            "Access to Groups.xml files",
+            "Normal GPO updates",
+            "User logons",
+            "File shares"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track BitLocker recovery key access?",
+        "o": [
+            "Event IDs 523 and 524",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement federated search across multiple SIEMs?",
+        "o": [
+            "Distributed query with result aggregation",
+            "Centralized storage only",
+            "Local search only",
+            "No cross-correlation"
+        ]
+    },
+    {
+        "q": "What does network motif analysis detect in traffic patterns?",
+        "o": [
+            "Recurring significant subgraphs",
+            "Total bandwidth",
+            "Packet count",
+            "Connection duration"
+        ]
+    },
+    {
+        "q": "How can you detect cloud cross-account role chaining abuse?",
+        "o": [
+            "CloudTrail with assumed role sequences",
+            "Single role usage",
+            "Direct user access",
+            "API key usage"
+        ]
+    },
+    {
+        "q": "Which Azure log source helps detect PIM privilege escalation?",
+        "o": [
+            "Azure AD PIM audit logs",
+            "VM boot logs",
+            "Storage logs",
+            "Network logs"
+        ]
+    },
+    {
+        "q": "What is the difference between autoencoder and PCA in anomaly detection?",
+        "o": [
+            "Neural network vs linear reduction",
+            "Same algorithm",
+            "Fast vs slow",
+            "Old vs new"
+        ]
+    },
+    {
+        "q": "How can you detect MSSQL linked server abuse from logs?",
+        "o": [
+            "SQL Server logs with linked server queries",
+            "Windows event logs",
+            "IIS logs",
+            "DNS logs"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory replication?",
+        "o": [
+            "Event IDs 1980 and 1981",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement whitelist-based alerting for critical systems?",
+        "o": [
+            "Alerting on any non-approved activity",
+            "No monitoring",
+            "Blacklist only",
+            "Random alerting"
+        ]
+    },
+    {
+        "q": "What does changepoint detection identify in security metrics?",
+        "o": [
+            "Sudden shifts in baseline behavior",
+            "Gradual trends",
+            "Seasonal patterns",
+            "Random noise"
+        ]
+    },
+    {
+        "q": "How can you detect Active Directory replication hijacking using domain logs?",
+        "o": [
+            "Event ID 4662 with anomalous replication requests",
+            "Event ID 4624 with successful logins",
+            "Event ID 4634 with normal logoffs",
+            "Event ID 4647 with user initiated logoffs"
+        ]
+    },
+    {
+        "q": "Which statistical method identifies low and slow data exfiltration over DNS?",
+        "o": [
+            "Multivariate distribution analysis of query entropy",
+            "Simple packet count threshold",
+            "Basic bandwidth monitoring",
+            "Single query length check"
+        ]
+    },
+    {
+        "q": "What does a SIEM rule using Levenshtein distance detect?",
+        "o": [
+            "Domain squatting and similar names",
+            "Exact string matches only",
+            "IP address equality",
+            "Timestamp comparisons"
+        ]
+    },
+    {
+        "q": "How can you detect Azure AD hybrid identity synchronization abuse?",
+        "o": [
+            "Azure AD Connect logs with attribute changes",
+            "VM login successes",
+            "Storage access patterns",
+            "Network security rules"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs indicate Active Directory schema modification?",
+        "o": [
+            "Event IDs 2100 and 2101",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "What is the purpose of hyperparameter tuning in ML-based detection?",
+        "o": [
+            "Optimizing algorithm sensitivity and specificity",
+            "Increasing false positives",
+            "Decreasing all alerts",
+            "Random model selection"
+        ]
+    },
+    {
+        "q": "How can you detect shadow admin creation via LDAP from domain logs?",
+        "o": [
+            "Event ID 5136 with privileged attribute changes",
+            "Event ID 4624 with user logins",
+            "Event ID 4634 with session endings",
+            "Event ID 4647 with explicit logoffs"
+        ]
+    },
+    {
+        "q": "Which AWS CloudTrail event suggests privilege escalation via Lambda?",
+        "o": [
+            "UpdateFunctionCode with IAM role changes",
+            "InvokeFunction calls",
+            "CreateFunction events",
+            "DeleteFunction attempts"
+        ]
+    },
+    {
+        "q": "What does Granger causality reveal in correlated security events?",
+        "o": [
+            "Predictive direction between event streams",
+            "Simple correlation strength",
+            "Event frequency matching",
+            "Timestamp alignment only"
+        ]
+    },
+    {
+        "q": "How can you detect Kerberos PAC validation bypass from logs?",
+        "o": [
+            "Event ID 4768 with PAC anomalies",
+            "Event ID 4769 with service tickets",
+            "Event ID 4770 with ticket renewal",
+            "Event ID 4771 with pre-auth failures"
+        ]
+    },
+    {
+        "q": "Which log source helps detect Kubernetes admission controller bypass?",
+        "o": [
+            "Kubernetes audit logs with webhook failures",
+            "Container runtime logs",
+            "Node kernel logs",
+            "Pod application logs"
+        ]
+    },
+    {
+        "q": "What is the role of adversarial validation in detection engineering?",
+        "o": [
+            "Testing rules against evasion techniques",
+            "Basic unit testing",
+            "Performance testing",
+            "Load testing only"
+        ]
+    },
+    {
+        "q": "How can you detect LSASS protection bypass from process logs?",
+        "o": [
+            "Process access with PPL bypass patterns",
+            "Normal process creation",
+            "Standard DLL loading",
+            "Regular thread creation"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory backup and recovery?",
+        "o": [
+            "Event IDs 2080 and 2081",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement composite scoring in risk-based alerting?",
+        "o": [
+            "Weighted combination of multiple risk factors",
+            "Single metric scoring",
+            "Binary threat indicators",
+            "Simple severity levels"
+        ]
+    },
+    {
+        "q": "What does spectral coherence detect in network beaconing analysis?",
+        "o": [
+            "Frequency domain correlation of multiple beacons",
+            "Single beacon period detection",
+            "Traffic volume monitoring",
+            "Packet size analysis"
+        ]
+    },
+    {
+        "q": "How can you detect Azure Automation account compromise from logs?",
+        "o": [
+            "AzureActivity with runbook execution anomalies",
+            "VM login attempts",
+            "Storage account access",
+            "SQL database queries"
+        ]
+    },
+    {
+        "q": "Which GCP audit log helps detect privilege escalation via service accounts?",
+        "o": [
+            "SetIamPolicy with service account impersonation",
+            "CreateInstance calls",
+            "DeleteBucket events",
+            "GetObject requests"
+        ]
+    },
+    {
+        "q": "What is the difference between one-class SVM and isolation forest?",
+        "o": [
+            "Boundary-based vs tree-based isolation",
+            "Same algorithm",
+            "Fast vs slow only",
+            "Old vs new technique"
+        ]
+    },
+    {
+        "q": "How can you detect NTLM relay with LDAP signing disabled from logs?",
+        "o": [
+            "Event ID 4776 with signing condition anomalies",
+            "Event ID 4624 with NTLM logins",
+            "Event ID 4634 with logoffs",
+            "Event ID 4647 with user logoffs"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory functional level changes?",
+        "o": [
+            "Event IDs 2120 and 2121",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement temporal abstraction in complex event processing?",
+        "o": [
+            "Deriving higher-level events from time sequences",
+            "Simple event counting",
+            "Basic threshold monitoring",
+            "Single event detection"
+        ]
+    },
+    {
+        "q": "What does wavelet analysis reveal in network traffic monitoring?",
+        "o": [
+            "Multi-scale anomaly patterns",
+            "Total bandwidth usage",
+            "Peak traffic times",
+            "Protocol distribution"
+        ]
+    },
+    {
+        "q": "How can you detect AWS metadata service SSRF from CloudTrail?",
+        "o": [
+            "CloudTrail with metadata API call patterns",
+            "VPC flow logs only",
+            "S3 access logs",
+            "CloudFront logs"
+        ]
+    },
+    {
+        "q": "Which log source helps detect Docker socket mounting in containers?",
+        "o": [
+            "Host audit logs for docker.sock access",
+            "Container stdout logs",
+            "Docker daemon logs",
+            "Kubernetes API logs"
+        ]
+    },
+    {
+        "q": "What is the purpose of contrastive learning in user behavior analytics?",
+        "o": [
+            "Distinguishing normal from anomalous patterns",
+            "Clustering similar users",
+            "Counting user actions",
+            "Tracking login times"
+        ]
+    },
+    {
+        "q": "How can you detect resource-based constrained delegation abuse from logs?",
+        "o": [
+            "Event ID 4769 with RBCD flags",
+            "Event ID 4768 with TGT requests",
+            "Event ID 4770 with ticket renewal",
+            "Event ID 4771 with failures"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory domain trust changes?",
+        "o": [
+            "Event IDs 2060 and 2061",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement active learning in threat detection systems?",
+        "o": [
+            "Human feedback loop for model improvement",
+            "Fully automated detection",
+            "Static rule updates",
+            "Random sampling only"
+        ]
+    },
+    {
+        "q": "What does transfer entropy identify in correlated security logs?",
+        "o": [
+            "Information flow direction between events",
+            "Basic correlation strength",
+            "Event count matching",
+            "Timestamp synchronization"
+        ]
+    },
+    {
+        "q": "How can you detect Azure RBAC privilege escalation via custom roles?",
+        "o": [
+            "AzureActivity with custom role creation and assignment",
+            "VM power state changes",
+            "Storage account creation",
+            "Network interface updates"
+        ]
+    },
+    {
+        "q": "Which GCP log source helps detect service account key compromise?",
+        "o": [
+            "Cloud Audit logs for service account keys",
+            "Compute Engine logs",
+            "Cloud Storage logs",
+            "Cloud SQL logs"
+        ]
+    },
+    {
+        "q": "What is the difference between boosting and bagging in ensemble detection?",
+        "o": [
+            "Sequential vs parallel model combination",
+            "Same technique",
+            "Fast vs slow",
+            "Old vs new"
+        ]
+    },
+    {
+        "q": "How can you detect Shadow Credentials attacks from domain logs?",
+        "o": [
+            "Event ID 5136 with KeyCredentialLink modifications",
+            "Event ID 4624 with logons",
+            "Event ID 4634 with logoffs",
+            "Event ID 4647 with user logoffs"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory RODC replication?",
+        "o": [
+            "Event IDs 3000 and 3001",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement concept drift detection in behavioral analytics?",
+        "o": [
+            "Monitoring model performance degradation",
+            "Static baseline maintenance",
+            "Fixed threshold rules",
+            "Annual model updates"
+        ]
+    },
+    {
+        "q": "What does dynamic time warping detect in sequence analysis?",
+        "o": [
+            "Similar patterns with temporal variations",
+            "Exact sequence matching",
+            "Simple substring search",
+            "Length-based comparison"
+        ]
+    },
+    {
+        "q": "How can you detect AWS CloudTrail logging bypass from logs?",
+        "o": [
+            "CloudTrail with trail configuration deletions",
+            "S3 public access changes",
+            "EC2 instance launches",
+            "RDS snapshot exports"
+        ]
+    },
+    {
+        "q": "Which log source helps detect Linux eBPF rootkit installation?",
+        "o": [
+            "Audit logs for BPF program loads",
+            "System service logs",
+            "Application debug logs",
+            "Kernel ring buffer"
+        ]
+    },
+    {
+        "q": "What is the purpose of SHAP values in explainable threat detection?",
+        "o": [
+            "Feature importance for detection decisions",
+            "Model accuracy metrics",
+            "Processing latency",
+            "Resource consumption"
+        ]
+    },
+    {
+        "q": "How can you detect AD FS token signing certificate theft from logs?",
+        "o": [
+            "Event ID 315 with certificate export attempts",
+            "Event ID 4624 with logins",
+            "Event ID 4634 with logoffs",
+            "Event ID 4647 with user logoffs"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory LDAP policy changes?",
+        "o": [
+            "Event IDs 1450 and 1451",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement counterfactual reasoning in alert investigation?",
+        "o": [
+            "What-if analysis of alternative scenarios",
+            "Direct causality tracking",
+            "Simple root cause analysis",
+            "Linear investigation paths"
+        ]
+    },
+    {
+        "q": "What does topological data analysis reveal in network security?",
+        "o": [
+            "Shape-based patterns in network behavior",
+            "Simple connectivity graphs",
+            "Bandwidth utilization",
+            "Protocol distribution"
+        ]
+    },
+    {
+        "q": "How can you detect Azure Managed Identity token abuse from logs?",
+        "o": [
+            "AzureActivity with identity token anomalies",
+            "VM extension logs",
+            "Storage metrics",
+            "Network watcher logs"
+        ]
+    },
+    {
+        "q": "Which GCP audit log helps detect privilege escalation via org policies?",
+        "o": [
+            "Organization policy audit logs",
+            "Project level audit logs",
+            "Folder level logs",
+            "Resource level logs"
+        ]
+    },
+    {
+        "q": "What is the difference between federated learning and distributed detection?",
+        "o": [
+            "Privacy-preserving vs data-sharing approaches",
+            "Same architecture",
+            "Fast vs slow",
+            "Centralized vs local"
+        ]
+    },
+    {
+        "q": "How can you detect KrbRelay attacks from Windows authentication logs?",
+        "o": [
+            "Event ID 4769 with relay indicators",
+            "Event ID 4624 with logins",
+            "Event ID 4634 with logoffs",
+            "Event ID 4647 with user logoffs"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory syskey extraction?",
+        "o": [
+            "Event IDs 1090 and 1091",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement causal inference in security incident reconstruction?",
+        "o": [
+            "Determining cause-effect relationships",
+            "Temporal ordering only",
+            "Simple correlation",
+            "Statistical association"
+        ]
+    },
+    {
+        "q": "What does manifold learning detect in high-dimensional security data?",
+        "o": [
+            "Low-dimensional structure of attack patterns",
+            "Raw data visualization",
+            "Simple clustering",
+            "Linear projections"
+        ]
+    },
+    {
+        "q": "How can you detect AWS IAM Access Analyzer bypass from CloudTrail?",
+        "o": [
+            "Resource policy changes without analyzer updates",
+            "S3 bucket creations",
+            "EC2 security group changes",
+            "RDS instance launches"
+        ]
+    },
+    {
+        "q": "Which log source helps detect Kubernetes pod breakout with syscalls?",
+        "o": [
+            "Falco or tracee audit logs",
+            "Kubelet logs",
+            "API server logs",
+            "Controller manager logs"
+        ]
+    },
+    {
+        "q": "What is the purpose of variational autoencoders in anomaly detection?",
+        "o": [
+            "Probabilistic reconstruction of normal behavior",
+            "Deterministic compression",
+            "Simple autoencoding",
+            "Linear reduction"
+        ]
+    },
+    {
+        "q": "How can you detect Azure Key Vault firewall bypass from logs?",
+        "o": [
+            "Key Vault diagnostic logs with trust service abuse",
+            "VM boot diagnostics",
+            "Storage analytics",
+            "Network security groups"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory ntds.dit access attempts?",
+        "o": [
+            "Event IDs 1120 and 1121",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement reinforcement learning for dynamic alert tuning?",
+        "o": [
+            "Adaptive thresholds based on feedback rewards",
+            "Static rule configuration",
+            "Manual threshold adjustment",
+            "Fixed baseline monitoring"
+        ]
+    },
+    {
+        "q": "What does persistent homology detect in time series security data?",
+        "o": [
+            "Topological features across scales",
+            "Simple peaks detection",
+            "Trend analysis",
+            "Seasonal decomposition"
+        ]
+    },
+    {
+        "q": "How can you detect GCP service account impersonation from audit logs?",
+        "o": [
+            "Service account token generation anomalies",
+            "Compute instance creations",
+            "Storage bucket modifications",
+            "Network configuration changes"
+        ]
+    },
+    {
+        "q": "Which log source helps detect container escape via CVE-2019-5736?",
+        "o": [
+            "Host audit logs for runc binary access",
+            "Container stdout",
+            "Docker events",
+            "Kubernetes pod logs"
+        ]
+    },
+    {
+        "q": "What is the difference between attention mechanisms and transformers?",
+        "o": [
+            "Specific architecture vs broader concept",
+            "Same technology",
+            "Old vs new",
+            "Fast vs slow"
+        ]
+    },
+    {
+        "q": "How can you detect AD DS database mounting from domain controller logs?",
+        "o": [
+            "Event ID 1024 with database mount attempts",
+            "Event ID 4624 with logins",
+            "Event ID 4634 with logoffs",
+            "Event ID 4647 with user logoffs"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory domain controller promotion?",
+        "o": [
+            "Event IDs 1000 and 1001",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement graph neural networks for threat correlation?",
+        "o": [
+            "Learning from entity relationship structures",
+            "Simple graph queries",
+            "Basic path analysis",
+            "Node property checks"
+        ]
+    },
+    {
+        "q": "What does cross-modal learning detect in multi-source security data?",
+        "o": [
+            "Patterns across different log types",
+            "Single source analysis",
+            "Independent monitoring",
+            "Separate processing"
+        ]
+    },
+    {
+        "q": "How can you detect AWS CloudHSM key extraction from CloudTrail?",
+        "o": [
+            "CloudHSM API calls with key export patterns",
+            "KMS key rotations",
+            "Secrets Manager access",
+            "Parameter Store reads"
+        ]
+    },
+    {
+        "q": "Which log source helps detect Windows Container breakout?",
+        "o": [
+            "Host process creation logs with container escapes",
+            "Container console logs",
+            "Docker daemon logs",
+            "Windows event logs"
+        ]
+    },
+    {
+        "q": "What is the purpose of quantile regression in alert thresholding?",
+        "o": [
+            "Thresholds based on conditional distributions",
+            "Mean-based thresholds",
+            "Fixed percentiles",
+            "Standard deviation limits"
+        ]
+    },
+    {
+        "q": "How can you detect Azure Automation account runbook backdoors?",
+        "o": [
+            "AzureActivity with suspicious runbook modifications",
+            "VM start/stop events",
+            "Storage account access",
+            "SQL database queries"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory KDC configuration changes?",
+        "o": [
+            "Event IDs 2060 and 2061",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement meta-learning for few-shot threat detection?",
+        "o": [
+            "Learning to detect new attacks from few examples",
+            "Requires many samples",
+            "Traditional ML approaches",
+            "Rule-based detection"
+        ]
+    },
+    {
+        "q": "What does symbolic aggregation approximate in complex event processing?",
+        "o": [
+            "Abstraction of low-level events into symbols",
+            "Raw event processing",
+            "Simple filtering",
+            "Basic aggregation"
+        ]
+    },
+    {
+        "q": "How can you detect GCP VPC Service Controls bypass from audit logs?",
+        "o": [
+            "Access attempts with perimeter violation patterns",
+            "Compute engine usage",
+            "Cloud Storage operations",
+            "BigQuery queries"
+        ]
+    },
+    {
+        "q": "Which log source helps detect Linux kernel module rootkit loading?",
+        "o": [
+            "Audit logs for insmod and modprobe",
+            "System service logs",
+            "Application logs",
+            "Kernel messages"
+        ]
+    },
+    {
+        "q": "What is the difference between prototype networks and matching networks?",
+        "o": [
+            "Class representation vs pairwise matching",
+            "Same approach",
+            "Fast vs slow",
+            "Old vs new"
+        ]
+    },
+    {
+        "q": "How can you detect AD FS OAuth client registration abuse from logs?",
+        "o": [
+            "Event ID 309 with client registration anomalies",
+            "Event ID 4624 with logins",
+            "Event ID 4634 with logoffs",
+            "Event ID 4647 with user logoffs"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory backup privilege usage?",
+        "o": [
+            "Event IDs 1040 and 1041",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement temporal convolutional networks for log analysis?",
+        "o": [
+            "Parallel processing of sequence patterns",
+            "Sequential RNN processing",
+            "Simple time series",
+            "Basic trend analysis"
+        ]
+    },
+    {
+        "q": "What does homomorphic encryption enable in security analytics?",
+        "o": [
+            "Analysis on encrypted data without decryption",
+            "Standard encryption",
+            "Data masking",
+            "Tokenization only"
+        ]
+    },
+    {
+        "q": "How can you detect AWS WAF bypass from application load balancer logs?",
+        "o": [
+            "ALB access logs with evasion patterns",
+            "CloudFront logs",
+            "S3 access logs",
+            "Route53 logs"
+        ]
+    },
+    {
+        "q": "Which log source helps detect Kubernetes node compromise?",
+        "o": [
+            "Node audit logs and kubelet logs correlation",
+            "Pod logs only",
+            "Container logs only",
+            "API server logs only"
+        ]
+    },
+    {
+        "q": "What is the purpose of differential privacy in security data sharing?",
+        "o": [
+            "Privacy-preserving analysis with noise addition",
+            "Complete anonymization",
+            "Data encryption",
+            "Access controls"
+        ]
+    },
+    {
+        "q": "How can you detect Azure Policy exemption abuse from logs?",
+        "o": [
+            "AzureActivity with policy exemption creations",
+            "VM deployments",
+            "Storage account changes",
+            "Network configurations"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory domain trust keys?",
+        "o": [
+            "Event IDs 1060 and 1061",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement neural architecture search for detection models?",
+        "o": [
+            "Automated discovery of optimal network structures",
+            "Manual architecture design",
+            "Fixed model selection",
+            "Random architecture choice"
+        ]
+    },
+    {
+        "q": "What does quantum machine learning promise for security analytics?",
+        "o": [
+            "Exponential speedup for certain problems",
+            "Linear speedup only",
+            "No improvement",
+            "Slower processing"
+        ]
+    },
+    {
+        "q": "How can you detect GCP Cloud Function privilege escalation from logs?",
+        "o": [
+            "Cloud Function deployment with service account changes",
+            "Cloud Storage triggers",
+            "Pub/Sub subscriptions",
+            "Firestore operations"
+        ]
+    },
+    {
+        "q": "Which log source helps detect confidential computing enclave attacks?",
+        "o": [
+            "Enclave attestation and audit logs",
+            "Host system logs",
+            "Application logs",
+            "Network logs"
+        ]
+    },
+    {
+        "q": "What is the difference between zero-shot and few-shot learning?",
+        "o": [
+            "No examples vs few examples for detection",
+            "Same learning paradigm",
+            "Fast vs slow",
+            "Old vs new"
+        ]
+    },
+    {
+        "q": "How can you detect Azure AD password hash synchronization abuse?",
+        "o": [
+            "Azure AD Connect logs with sync anomalies",
+            "User login logs",
+            "Group membership changes",
+            "Application registrations"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory RID pool exhaustion?",
+        "o": [
+            "Event IDs 16650 and 16651",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement federated learning across different SOCs?",
+        "o": [
+            "Collaborative learning without data sharing",
+            "Centralized data collection",
+            "Independent model training",
+            "Rule sharing only"
+        ]
+    },
+    {
+        "q": "How can you detect APT-level pass-the-cache attacks on Linux systems using auditd logs?",
+        "o": [
+            "Correlating ccache files access with Kerberos tickets",
+            "Monitoring SSH authentication attempts",
+            "Checking sudo command history",
+            "Analyzing bash command logs"
+        ]
+    },
+    {
+        "q": "Which mathematical framework enables optimal threshold setting for intrusion detection with game theory?",
+        "o": [
+            "Nash equilibrium in attacker-defender games",
+            "Linear programming optimization",
+            "Monte Carlo simulations",
+            "Markov decision processes"
+        ]
+    },
+    {
+        "q": "What does a SIEM rule using Bloom filters efficiently detect at scale?",
+        "o": [
+            "Previously seen malicious indicators with memory efficiency",
+            "Exact string matches with full storage",
+            "Regular expression patterns",
+            "Timestamp comparisons"
+        ]
+    },
+    {
+        "q": "How can you detect Azure AD Federation Server (AD FS) trust modification from logs with zero false positives?",
+        "o": [
+            "Event ID 316 with trusted realm changes and signatures",
+            "Event ID 4624 with admin logins",
+            "Event ID 4634 with session ends",
+            "Event ID 4647 with user logoffs"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track direct LDAP API calls bypassing Active Directory?",
+        "o": [
+            "Event IDs 5008 and 5009 from NTDS activity",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "What is the purpose of Kolmogorov-Smirnov test in behavioral drift detection?",
+        "o": [
+            "Detecting distribution shifts in user behavior",
+            "Mean comparison between samples",
+            "Variance equality testing",
+            "Median difference testing"
+        ]
+    },
+    {
+        "q": "How can you detect GCP Cloud Run service-to-service impersonation from audit logs?",
+        "o": [
+            "Service account token exchange anomalies",
+            "Container instance startups",
+            "Load balancer configurations",
+            "Cloud SQL connections"
+        ]
+    },
+    {
+        "q": "Which log source helps detect speculative execution side-channel attacks (Spectre/Meltdown)?",
+        "o": [
+            "Performance counter anomalies and cache timing logs",
+            "System call traces",
+            "Process creation logs",
+            "Network connection logs"
+        ]
+    },
+    {
+        "q": "What does the Page-Hinkley statistic detect in streaming security data?",
+        "o": [
+            "Abrupt changes in time series distributions",
+            "Gradual trend shifts",
+            "Seasonal patterns",
+            "Cyclical variations"
+        ]
+    },
+    {
+        "q": "How can you detect AWS Lambda function persistence via layer code injection from CloudTrail?",
+        "o": [
+            "UpdateFunctionConfiguration with layer changes",
+            "InvokeFunction calls",
+            "CreateFunction events",
+            "DeleteFunction attempts"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs indicate Active Directory object tombstones reactivation?",
+        "o": [
+            "Event IDs 1096 and 1097",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement zero-knowledge proofs for privacy-preserving threat intelligence sharing?",
+        "o": [
+            "Proving IOC matches without revealing data",
+            "Encrypting all shared data",
+            "Anonymizing IP addresses",
+            "Hashing all indicators"
+        ]
+    },
+    {
+        "q": "What does the Dirichlet process enable in unsupervised anomaly detection?",
+        "o": [
+            "Infinite mixture models for unknown attack types",
+            "Fixed number of clusters",
+            "Gaussian distributions only",
+            "K-means clustering"
+        ]
+    },
+    {
+        "q": "How can you detect Azure Arc-enabled server credential theft from logs?",
+        "o": [
+            "Azure Arc agent logs with certificate access anomalies",
+            "VM extension logs",
+            "Guest configuration logs",
+            "Update management logs"
+        ]
+    },
+    {
+        "q": "Which log source helps detect USB-based DMA attacks (e.g., PoisonTap) from system logs?",
+        "o": [
+            "Kernel USB device enumeration with network gadget creation",
+            "Power management logs",
+            "Printer spooler logs",
+            "Audio device logs"
+        ]
+    },
+    {
+        "q": "What is the role of copula functions in multivariate anomaly detection?",
+        "o": [
+            "Modeling complex dependencies between security metrics",
+            "Linear correlation analysis",
+            "Simple covariance matrices",
+            "Pearson correlation only"
+        ]
+    },
+    {
+        "q": "How can you detect GCP Cloud Functions event injection attacks from audit logs?",
+        "o": [
+            "Eventarc trigger patterns with malicious payloads",
+            "Function execution times",
+            "Memory usage metrics",
+            "CPU utilization logs"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory LAPS password access?",
+        "o": [
+            "Event IDs 4662 with ms-Mcs-AdmPwd attribute access",
+            "Event IDs 4624 with logins",
+            "Event IDs 4634 with logoffs",
+            "Event IDs 4647 with user logoffs"
+        ]
+    },
+    {
+        "q": "How do you implement differential privacy in SOC metrics reporting?",
+        "o": [
+            "Adding calibrated noise to aggregated statistics",
+            "Removing all identifying information",
+            "Encrypting all reports",
+            "Limiting report access"
+        ]
+    },
+    {
+        "q": "What does the CUSUM algorithm detect with sequential probability ratio test?",
+        "o": [
+            "Small persistent changes in process parameters",
+            "Large sudden spikes",
+            "Seasonal variations",
+            "Random noise"
+        ]
+    },
+    {
+        "q": "How can you detect AWS Organizations root account activity from CloudTrail with complete evasion?",
+        "o": [
+            "Root API calls with source IP obfuscation patterns",
+            "Management account logins",
+            "Service control policy changes",
+            "Organization unit modifications"
+        ]
+    },
+    {
+        "q": "Which log source helps detect Rowhammer attacks on cloud infrastructure?",
+        "o": [
+            "Memory error correction codes and performance counters",
+            "CPU temperature logs",
+            "Fan speed metrics",
+            "Power consumption logs"
+        ]
+    },
+    {
+        "q": "What is the purpose of wavelet packet decomposition in network traffic analysis?",
+        "o": [
+            "Multi-resolution analysis of traffic patterns",
+            "Simple frequency analysis",
+            "Time domain only",
+            "Spectral analysis"
+        ]
+    },
+    {
+        "q": "How can you detect Azure AD Connect Health credential dumping from logs?",
+        "o": [
+            "Health service logs with credential access anomalies",
+            "Sync cycle logs",
+            "Connector space changes",
+            "Metaverse updates"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs indicate Active Directory SIDHistory injection?",
+        "o": [
+            "Event IDs 4765 and 4766",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement federated learning for cross-SOC threat detection without data leakage?",
+        "o": [
+            "Secure aggregation with homomorphic encryption",
+            "Centralized data sharing",
+            "Independent model training",
+            "Rule exchange only"
+        ]
+    },
+    {
+        "q": "What does the Hilbert-Huang transform reveal in non-stationary security time series?",
+        "o": [
+            "Instantaneous frequency patterns in attacks",
+            "Average frequency content",
+            "Power spectral density",
+            "Harmonic analysis"
+        ]
+    },
+    {
+        "q": "How can you detect GCP Cloud Run service mesh sidecar injection attacks from logs?",
+        "o": [
+            "Istio proxy logs with configuration anomalies",
+            "Container startup logs",
+            "Load balancer metrics",
+            "Network policy logs"
+        ]
+    },
+    {
+        "q": "Which log source helps detect cache poisoning attacks on DNS over HTTPS (DoH)?",
+        "o": [
+            "DoH resolver logs with response validation failures",
+            "Standard DNS logs",
+            "Firewall logs",
+            "Proxy logs"
+        ]
+    },
+    {
+        "q": "What is the role of Bayesian change point detection in security monitoring?",
+        "o": [
+            "Probabilistic identification of regime shifts",
+            "Deterministic threshold crossing",
+            "Simple moving averages",
+            "Exponential smoothing"
+        ]
+    },
+    {
+        "q": "How can you detect AWS API Gateway Lambda authorizer bypass from CloudTrail?",
+        "o": [
+            "API Gateway logs with authorization context manipulation",
+            "Lambda invocation logs",
+            "CloudFront access logs",
+            "Route53 resolver logs"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory domain controller certificate theft?",
+        "o": [
+            "Event IDs 4886 and 4887 with export patterns",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement secure multi-party computation for collaborative threat hunting?",
+        "o": [
+            "Joint analysis without revealing raw data",
+            "Data sharing agreements",
+            "Centralized repository",
+            "Anonymized data sharing"
+        ]
+    },
+    {
+        "q": "What does the Lyapunov exponent detect in chaotic security behavior?",
+        "o": [
+            "Sensitivity to initial conditions in attack patterns",
+            "Average behavior trends",
+            "Periodic cycles",
+            "Random variations"
+        ]
+    },
+    {
+        "q": "How can you detect Azure DDoS Protection bypass with application-layer attacks from logs?",
+        "o": [
+            "Azure DDoS Protection logs with application pattern anomalies",
+            "Network security group flows",
+            "Load balancer metrics",
+            "Firewall logs"
+        ]
+    },
+    {
+        "q": "Which log source helps detect TPM-based key extraction via bus sniffing?",
+        "o": [
+            "TPM event logs with unexpected access patterns",
+            "System event logs",
+            "Application logs",
+            "Security audit logs"
+        ]
+    },
+    {
+        "q": "What is the purpose of Granger causality networks in security analytics?",
+        "o": [
+            "Mapping causal relationships between security events",
+            "Simple correlation networks",
+            "Co-occurrence graphs",
+            "Time-based sequences"
+        ]
+    },
+    {
+        "q": "How can you detect GCP IAP (Identity-Aware Proxy) bypass from access logs?",
+        "o": [
+            "IAP logs with tunnel creation without authentication",
+            "Load balancer logs",
+            "Cloud CDN logs",
+            "Cloud Armor logs"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs indicate Active Directory domain controller demotion attacks?",
+        "o": [
+            "Event IDs 2928 and 2929",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement adversarial training for robust ML-based detection?",
+        "o": [
+            "Training with generated evasion examples",
+            "Standard training only",
+            "Regular model updates",
+            "Manual rule tuning"
+        ]
+    },
+    {
+        "q": "What does the Hurst exponent reveal in network traffic self-similarity?",
+        "o": [
+            "Long-range dependence in attack patterns",
+            "Short-term correlations",
+            "Random walk behavior",
+            "Markov properties"
+        ]
+    },
+    {
+        "q": "How can you detect AWS CloudMap service discovery poisoning from logs?",
+        "o": [
+            "CloudMap API calls with namespace registration anomalies",
+            "Route53 health checks",
+            "CloudWatch metrics",
+            "X-Ray traces"
+        ]
+    },
+    {
+        "q": "Which log source helps detect cache-timing attacks on cloud crypto implementations?",
+        "o": [
+            "Performance counters with cryptographic operation timing",
+            "Application debug logs",
+            "System call traces",
+            "Network latency logs"
+        ]
+    },
+    {
+        "q": "What is the role of symbolic execution in malware detection from logs?",
+        "o": [
+            "Path exploration of malicious code behavior",
+            "Signature matching",
+            "Static analysis",
+            "Dynamic analysis only"
+        ]
+    },
+    {
+        "q": "How can you detect Azure AD Password Protection bypass from logs?",
+        "o": [
+            "Azure AD logs with password validation bypass patterns",
+            "User login successes",
+            "Group membership changes",
+            "Application registrations"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory KDS root key compromise?",
+        "o": [
+            "Event IDs 4007 and 4008",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement multi-view learning for cross-domain threat detection?",
+        "o": [
+            "Combining multiple data representations",
+            "Single view analysis",
+            "Independent model training",
+            "Sequential processing"
+        ]
+    },
+    {
+        "q": "What does the phase space reconstruction reveal in attack time series?",
+        "o": [
+            "Hidden attractors in adversarial dynamics",
+            "Linear trends",
+            "Seasonal components",
+            "Random residuals"
+        ]
+    },
+    {
+        "q": "How can you detect GCP Cloud CDN edge cache poisoning from access logs?",
+        "o": [
+            "Cloud CDN logs with cache poisoning patterns",
+            "Load balancer logs",
+            "Cloud Storage logs",
+            "Cloud Armor logs"
+        ]
+    },
+    {
+        "q": "Which log source helps detect microarchitectural data sampling (MDS) attacks?",
+        "o": [
+            "Performance counters with buffer access patterns",
+            "System call logs",
+            "Process creation logs",
+            "Memory allocation logs"
+        ]
+    },
+    {
+        "q": "What is the purpose of topological data analysis in network intrusion detection?",
+        "o": [
+            "Persistent homology of attack graphs",
+            "Graph connectivity metrics",
+            "Path length analysis",
+            "Node degree distribution"
+        ]
+    },
+    {
+        "q": "How can you detect AWS Outposts edge site compromise from CloudTrail?",
+        "o": [
+            "Outposts API calls with physical access anomalies",
+            "EC2 instance launches",
+            "S3 bucket operations",
+            "VPC configuration changes"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs indicate Active Directory read-only domain controller compromise?",
+        "o": [
+            "Event IDs 3010 and 3011",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement reinforcement learning for adaptive intrusion response?",
+        "o": [
+            "Learning optimal countermeasures from outcomes",
+            "Predefined response playbooks",
+            "Manual intervention only",
+            "Static response rules"
+        ]
+    },
+    {
+        "q": "What does the Kramers-Kronig relation enable in signal processing for security?",
+        "o": [
+            "Phase retrieval from magnitude of attack signals",
+            "Amplitude analysis only",
+            "Frequency estimation",
+            "Time domain processing"
+        ]
+    },
+    {
+        "q": "How can you detect Azure Front Door WAF bypass from access logs?",
+        "o": [
+            "Front Door logs with rule evasion techniques",
+            "Application gateway logs",
+            "Traffic manager logs",
+            "CDN profile logs"
+        ]
+    },
+    {
+        "q": "Which log source helps detect speculative store bypass (SSB) exploits?",
+        "o": [
+            "CPU performance counters with store operation anomalies",
+            "Kernel audit logs",
+            "Application debug logs",
+            "System call traces"
+        ]
+    },
+    {
+        "q": "What is the role of information geometry in anomaly detection optimization?",
+        "o": [
+            "Manifold learning for detection boundaries",
+            "Euclidean distance metrics",
+            "Cosine similarity",
+            "Mahalanobis distance"
+        ]
+    },
+    {
+        "q": "How can you detect GCP Cloud Interconnect link hijacking from logs?",
+        "o": [
+            "Cloud Interconnect logs with BGP route hijacking",
+            "VPC network logs",
+            "Cloud Router logs",
+            "VPN gateway logs"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory DNS dynamic update abuse?",
+        "o": [
+            "Event IDs 6001 and 6002",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement generative adversarial networks for attack simulation?",
+        "o": [
+            "Creating realistic attack patterns for testing",
+            "Simple attack replay",
+            "Manual attack creation",
+            "Known exploit replication"
+        ]
+    },
+    {
+        "q": "What does the Wiener filter optimize in signal processing for security monitoring?",
+        "o": [
+            "Minimum mean square error estimation of attacks",
+            "Simple noise removal",
+            "Bandpass filtering",
+            "Moving averages"
+        ]
+    },
+    {
+        "q": "How can you detect AWS Local Zones edge service compromise from CloudTrail?",
+        "o": [
+            "Local Zones API calls with resource access anomalies",
+            "EC2 instance operations",
+            "EBS volume modifications",
+            "VPC subnet changes"
+        ]
+    },
+    {
+        "q": "Which log source helps detect cross-VM side-channel attacks in cloud?",
+        "o": [
+            "Hypervisor performance counters with cache contention",
+            "VM guest logs",
+            "Host system logs",
+            "Network flow logs"
+        ]
+    },
+    {
+        "q": "What is the purpose of compressive sensing in log data reduction?",
+        "o": [
+            "Sparse sampling with accurate reconstruction",
+            "Random sampling",
+            "Log rotation",
+            "Data compression"
+        ]
+    },
+    {
+        "q": "How can you detect Azure Confidential Computing enclave compromise from logs?",
+        "o": [
+            "Intel SGX attestation failure logs",
+            "VM boot diagnostics",
+            "Guest OS logs",
+            "Application logs"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs indicate Active Directory forest trust compromise?",
+        "o": [
+            "Event IDs 2080 and 2081",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement meta-reinforcement learning for adaptive threat hunting?",
+        "o": [
+            "Learning to learn hunting strategies",
+            "Fixed hunting procedures",
+            "Manual hypothesis generation",
+            "Automated scans only"
+        ]
+    },
+    {
+        "q": "What does the Wigner-Ville distribution reveal in non-stationary attack signals?",
+        "o": [
+            "Time-frequency energy distribution of attacks",
+            "Average spectrum",
+            "Short-time Fourier transform",
+            "Wavelet analysis"
+        ]
+    },
+    {
+        "q": "How can you detect GCP Cloud CDN signed URL compromise from access logs?",
+        "o": [
+            "CDN logs with URL signature validation failures",
+            "Load balancer logs",
+            "Cloud Storage logs",
+            "Cloud Armor logs"
+        ]
+    },
+    {
+        "q": "Which log source helps detect Rowhammer-induced bit flips in cloud memory?",
+        "o": [
+            "ECC memory error correction logs",
+            "System event logs",
+            "Application crash dumps",
+            "Kernel panics"
+        ]
+    },
+    {
+        "q": "What is the role of functional data analysis in continuous security monitoring?",
+        "o": [
+            "Analyzing curves and functions of security metrics",
+            "Discrete point analysis",
+            "Time series decomposition",
+            "Trend analysis"
+        ]
+    },
+    {
+        "q": "How can you detect AWS WAF rate-based rule bypass from application logs?",
+        "o": [
+            "ALB access logs with distributed slow attacks",
+            "CloudFront logs",
+            "S3 access logs",
+            "API Gateway logs"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory Kerberos armoring bypass?",
+        "o": [
+            "Event IDs 4769 with FAST negotiation failures",
+            "Event IDs 4624 with logins",
+            "Event IDs 4634 with logoffs",
+            "Event IDs 4647 with user logoffs"
+        ]
+    },
+    {
+        "q": "How do you implement quantum-resistant cryptography for log integrity?",
+        "o": [
+            "Lattice-based signatures for log authentication",
+            "RSA signatures",
+            "SHA hashing",
+            "AES encryption"
+        ]
+    },
+    {
+        "q": "What does the bispectrum analysis detect in nonlinear attack patterns?",
+        "o": [
+            "Quadratic phase coupling in attack signals",
+            "Linear correlations",
+            "Power spectrum",
+            "Autocorrelation"
+        ]
+    },
+    {
+        "q": "How can you detect Azure Firewall premium TLS inspection bypass from logs?",
+        "o": [
+            "Azure Firewall logs with TLS fingerprint anomalies",
+            "Network security groups",
+            "Application gateway logs",
+            "Traffic analytics"
+        ]
+    },
+    {
+        "q": "Which log source helps detect cache side-channel attacks on SGX enclaves?",
+        "o": [
+            "Enclave page cache access patterns",
+            "Host performance counters",
+            "Guest OS logs",
+            "Network traffic"
+        ]
+    },
+    {
+        "q": "What is the purpose of topological entropy in measuring attack complexity?",
+        "o": [
+            "Quantifying unpredictability in attack sequences",
+            "Attack frequency",
+            "Severity scoring",
+            "Impact measurement"
+        ]
+    },
+    {
+        "q": "How can you detect GCP Cloud SQL privilege escalation from audit logs?",
+        "o": [
+            "Cloud SQL logs with instance configuration anomalies",
+            "Database query logs",
+            "Storage metrics",
+            "Network connections"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs indicate Active Directory DCShadow with replication?",
+        "o": [
+            "Event IDs 4928 and 4929",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement federated learning for IoT botnet detection?",
+        "o": [
+            "Distributed learning across edge devices",
+            "Centralized data collection",
+            "Cloud-only analysis",
+            "Gateway aggregation"
+        ]
+    },
+    {
+        "q": "What does the Lempel-Ziv complexity measure in attack pattern analysis?",
+        "o": [
+            "Compression-based complexity of attack sequences",
+            "Sequence length",
+            "Pattern frequency",
+            "Entropy rate"
+        ]
+    },
+    {
+        "q": "How can you detect AWS Global Accelerator traffic steering manipulation from logs?",
+        "o": [
+            "Global Accelerator logs with endpoint routing anomalies",
+            "Route53 DNS logs",
+            "CloudFront logs",
+            "ALB access logs"
+        ]
+    },
+    {
+        "q": "Which log source helps detect speculative execution attacks on eBPF?",
+        "o": [
+            "eBPF verifier logs with JIT compilation anomalies",
+            "Kernel audit logs",
+            "System call traces",
+            "Process creation logs"
+        ]
+    },
+    {
+        "q": "What is the role of large deviation theory in rare attack detection?",
+        "o": [
+            "Modeling probabilities of extreme events",
+            "Average case analysis",
+            "Median-based statistics",
+            "Mode detection"
+        ]
+    },
+    {
+        "q": "How can you detect Azure Key Vault managed HSM key extraction from logs?",
+        "o": [
+            "Key Vault logs with HSM key export attempts",
+            "Secret access logs",
+            "Certificate operations",
+            "Key rotations"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs track Active Directory authentication policy silo abuse?",
+        "o": [
+            "Event IDs 4820 and 4821",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement homomorphic encryption for privacy-preserving log correlation?",
+        "o": [
+            "Encrypted search and correlation operations",
+            "Data masking before sharing",
+            "Tokenization of sensitive fields",
+            "Anonymized log shipping"
+        ]
+    },
+    {
+        "q": "What does the Fisher information matrix optimize in detection parameter tuning?",
+        "o": [
+            "Maximum sensitivity to attack parameters",
+            "Minimum variance estimation",
+            "Bias reduction",
+            "Consistency checking"
+        ]
+    },
+    {
+        "q": "How can you detect GCP Cloud CDN signed request forgery from access logs?",
+        "o": [
+            "CDN logs with signature forgery patterns",
+            "Load balancer access logs",
+            "Cloud Storage audit logs",
+            "Cloud Armor logs"
+        ]
+    },
+    {
+        "q": "Which log source helps detect cross-core covert channels in cloud?",
+        "o": [
+            "Performance counters with cache timing patterns",
+            "Network flow logs",
+            "System call traces",
+            "Process scheduling logs"
+        ]
+    },
+    {
+        "q": "What is the purpose of stochastic differential equations in attack modeling?",
+        "o": [
+            "Continuous-time modeling of attack propagation",
+            "Discrete event simulation",
+            "Markov chains",
+            "Queueing models"
+        ]
+    },
+    {
+        "q": "How can you detect AWS EBS direct APIs for snapshot theft from CloudTrail?",
+        "o": [
+            "EBS direct API calls with snapshot access patterns",
+            "EC2 instance launches",
+            "Volume modifications",
+            "Snapshot creations"
+        ]
+    },
+    {
+        "q": "Which Windows event IDs indicate Active Directory PAM trust abuse?",
+        "o": [
+            "Event IDs 2310 and 2311",
+            "Event IDs 4624 and 4625",
+            "Event IDs 4634 and 4647",
+            "Event IDs 4656 and 4663"
+        ]
+    },
+    {
+        "q": "How do you implement Byzantine fault tolerance in distributed threat detection?",
+        "o": [
+            "Consensus despite malicious nodes",
+            "Majority voting",
+            "Centralized authority",
+            "Peer verification"
+        ]
+    }
+]

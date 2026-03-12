@@ -746,6 +746,7 @@ class Constants {
       },
     ],
 
+    // Create learn and exercise from below courses
     "Cryptographic Systems": [
       {
         'id': 'crypto_fundamentals',
@@ -946,6 +947,7 @@ class Constants {
         ],
       },
     ],
+
     "Blue Teaming & Defense": [
       {
         'id': 'security_monitoring',

@@ -1,0 +1,4340 @@
+[
+    {
+        "q": "What is the primary purpose of a firewall in network security?",
+        "o": [
+            "Filter traffic based on rules",
+            "Encrypt all network data",
+            "Detect software vulnerabilities",
+            "Manage user passwords"
+        ]
+    },
+    {
+        "q": "Which type of firewall operates at Layer 3 of the OSI model?",
+        "o": [
+            "Packet filtering firewall",
+            "Application gateway",
+            "Circuit-level gateway",
+            "Web application firewall"
+        ]
+    },
+    {
+        "q": "What does IDS stand for in network security?",
+        "o": [
+            "Intrusion Detection System",
+            "Internal Data Security",
+            "Integrated Defense System",
+            "Internet Detection Service"
+        ]
+    },
+    {
+        "q": "Which IPS type can block traffic based on application data?",
+        "o": [
+            "Network-based IPS",
+            "Host-based IPS",
+            "Wireless IPS",
+            "Cloud IPS"
+        ]
+    },
+    {
+        "q": "What is the main function of antivirus software?",
+        "o": [
+            "Detect and remove malware",
+            "Block network intrusions",
+            "Encrypt sensitive files",
+            "Manage software updates"
+        ]
+    },
+    {
+        "q": "Which method does antivirus use to identify known threats?",
+        "o": [
+            "Signature-based detection",
+            "Behavioral analysis",
+            "Heuristic scanning",
+            "Sandbox execution"
+        ]
+    },
+    {
+        "q": "What is application whitelisting?",
+        "o": [
+            "Allowing only approved programs to run",
+            "Blocking all unknown applications",
+            "Listing all installed software",
+            "Removing unauthorized applications"
+        ]
+    },
+    {
+        "q": "What does NAC stand for in network security?",
+        "o": [
+            "Network Access Control",
+            "Network Authentication Center",
+            "Node Authorization Check",
+            "Network Activity Control"
+        ]
+    },
+    {
+        "q": "Which firewall type inspects the entire packet payload?",
+        "o": [
+            "Stateful inspection firewall",
+            "Static packet filter",
+            "Proxy firewall",
+            "Next-gen firewall"
+        ]
+    },
+    {
+        "q": "What is the default action for most firewall rules?",
+        "o": [
+            "Deny all unless allowed",
+            "Allow all unless denied",
+            "Log all traffic",
+            "Encrypt all packets"
+        ]
+    },
+    {
+        "q": "Which IDS detection method uses known attack patterns?",
+        "o": [
+            "Signature-based detection",
+            "Anomaly-based detection",
+            "Policy-based detection",
+            "Protocol analysis"
+        ]
+    },
+    {
+        "q": "What is a common IPS response to detected threats?",
+        "o": [
+            "Reset the connection",
+            "Delete infected files",
+            "Update antivirus signatures",
+            "Change user passwords"
+        ]
+    },
+    {
+        "q": "How often should antivirus signatures be updated?",
+        "o": [
+            "Daily or more frequently",
+            "Once per month",
+            "Only during attacks",
+            "Yearly basis"
+        ]
+    },
+    {
+        "q": "What type of applications are typically whitelisted?",
+        "o": [
+            "Approved business software",
+            "All internet downloads",
+            "Personal gaming apps",
+            "Unknown executables"
+        ]
+    },
+    {
+        "q": "What does NAC enforce before allowing network access?",
+        "o": [
+            "Security policy compliance",
+            "User age verification",
+            "Software installation date",
+            "Hardware specifications"
+        ]
+    },
+    {
+        "q": "Which firewall feature maintains connection state information?",
+        "o": [
+            "Stateful inspection",
+            "Static filtering",
+            "Packet filtering",
+            "Proxy service"
+        ]
+    },
+    {
+        "q": "What is the purpose of firewall logging?",
+        "o": [
+            "Record traffic for analysis",
+            "Block all malicious IPs",
+            "Encrypt outbound data",
+            "Speed up connections"
+        ]
+    },
+    {
+        "q": "Which IDS component analyzes network traffic?",
+        "o": [
+            "Analysis engine",
+            "User interface",
+            "Signature database",
+            "Reporting module"
+        ]
+    },
+    {
+        "q": "What is a false positive in IDS terminology?",
+        "o": [
+            "Alert for normal traffic",
+            "Missed real attack",
+            "Correct threat detection",
+            "System error message"
+        ]
+    },
+    {
+        "q": "What does antivirus heuristic scanning detect?",
+        "o": [
+            "Unknown new malware",
+            "Only known viruses",
+            "Network intrusions",
+            "Hardware failures"
+        ]
+    },
+    {
+        "q": "Which application whitelisting approach is most secure?",
+        "o": [
+            "Deny all by default",
+            "Allow all by default",
+            "User chooses manually",
+            "Admin reviews weekly"
+        ]
+    },
+    {
+        "q": "What is a common NAC enforcement method?",
+        "o": [
+            "Quarantine non-compliant devices",
+            "Delete user accounts",
+            "Format hard drives",
+            "Disable all switches"
+        ]
+    },
+    {
+        "q": "Which port does HTTPS typically use for secure web traffic?",
+        "o": [
+            "Port 443",
+            "Port 80",
+            "Port 22",
+            "Port 21"
+        ]
+    },
+    {
+        "q": "What is the purpose of a DMZ in firewall architecture?",
+        "o": [
+            "Host public-facing services",
+            "Store backup data",
+            "Connect to internet only",
+            "Isolate user workstations"
+        ]
+    },
+    {
+        "q": "Which IDS placement provides visibility of all network traffic?",
+        "o": [
+            "Behind the firewall",
+            "Inside each server",
+            "On user desktops",
+            "Outside the network"
+        ]
+    },
+    {
+        "q": "What is the main limitation of signature-based antivirus?",
+        "o": [
+            "Cannot detect new unknown threats",
+            "Requires too much memory",
+            "Slows down computers",
+            "Needs internet access"
+        ]
+    },
+    {
+        "q": "Which file hash is commonly used for application whitelisting?",
+        "o": [
+            "SHA-256",
+            "MD4",
+            "CRC32",
+            "Base64"
+        ]
+    },
+    {
+        "q": "What does 802.1X provide for network access control?",
+        "o": [
+            "Port-based authentication",
+            "Wireless encryption",
+            "IP address assignment",
+            "DNS resolution"
+        ]
+    },
+    {
+        "q": "Which firewall rule order is typically followed?",
+        "o": [
+            "Most specific first",
+            "Most general first",
+            "Alphabetical order",
+            "Random order"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS tuning?",
+        "o": [
+            "Reduce false positives",
+            "Increase alert volume",
+            "Disable all signatures",
+            "Speed up processing"
+        ]
+    },
+    {
+        "q": "Which antivirus update is most critical for new threats?",
+        "o": [
+            "Signature definitions",
+            "Program version",
+            "User interface",
+            "Documentation files"
+        ]
+    },
+    {
+        "q": "What is a drawback of strict application whitelisting?",
+        "o": [
+            "High administrative overhead",
+            "Increased malware infections",
+            "Faster computer speed",
+            "Better user experience"
+        ]
+    },
+    {
+        "q": "Which NAC component checks device security posture?",
+        "o": [
+            "Policy server",
+            "Firewall rules",
+            "DNS server",
+            "DHCP server"
+        ]
+    },
+    {
+        "q": "What type of firewall is a software running on a server?",
+        "o": [
+            "Host-based firewall",
+            "Network-based firewall",
+            "Hardware firewall",
+            "Cloud firewall"
+        ]
+    },
+    {
+        "q": "Which protocol do firewalls use for dynamic routing?",
+        "o": [
+            "OSPF",
+            "HTTP",
+            "FTP",
+            "SMTP"
+        ]
+    },
+    {
+        "q": "What does an IPS do when it detects an attack?",
+        "o": [
+            "Actively blocks the traffic",
+            "Only logs the event",
+            "Sends an email alert",
+            "Reboots the system"
+        ]
+    },
+    {
+        "q": "Which malware type does antivirus commonly detect?",
+        "o": [
+            "Trojans and worms",
+            "Hardware failures",
+            "Power outages",
+            "Network congestion"
+        ]
+    },
+    {
+        "q": "What is application whitelisting based on?",
+        "o": [
+            "Trust and approval",
+            "User popularity",
+            "Download frequency",
+            "File size only"
+        ]
+    },
+    {
+        "q": "Which NAC deployment mode only monitors traffic?",
+        "o": [
+            "Passive mode",
+            "Active mode",
+            "Blocking mode",
+            "Enforcement mode"
+        ]
+    },
+    {
+        "q": "What is the first step in firewall configuration?",
+        "o": [
+            "Define security policy",
+            "Install hardware",
+            "Block all traffic",
+            "Enable logging"
+        ]
+    },
+    {
+        "q": "Which IDS type monitors single host activity?",
+        "o": [
+            "Host-based IDS",
+            "Network-based IDS",
+            "Wireless IDS",
+            "Cloud IDS"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus quarantine?",
+        "o": [
+            "Isolate infected files",
+            "Delete files permanently",
+            "Copy files to backup",
+            "Share with analysts"
+        ]
+    },
+    {
+        "q": "Which application attribute is NOT used for whitelisting?",
+        "o": [
+            "File creation date",
+            "File path",
+            "Digital signature",
+            "Cryptographic hash"
+        ]
+    },
+    {
+        "q": "What does a NAC agent do on endpoints?",
+        "o": [
+            "Check compliance status",
+            "Install new software",
+            "Delete user files",
+            "Monitor keystrokes"
+        ]
+    },
+    {
+        "q": "Which firewall type uses proxy servers?",
+        "o": [
+            "Application-level gateway",
+            "Packet filter",
+            "Stateful firewall",
+            "Circuit-level gateway"
+        ]
+    },
+    {
+        "q": "What is a false negative in IDS operations?",
+        "o": [
+            "Missed actual attack",
+            "False alert",
+            "Correct detection",
+            "System crash"
+        ]
+    },
+    {
+        "q": "Which scanning method analyzes program behavior?",
+        "o": [
+            "Heuristic analysis",
+            "Signature matching",
+            "Hash comparison",
+            "CRC checking"
+        ]
+    },
+    {
+        "q": "What is the main benefit of application whitelisting?",
+        "o": [
+            "Prevents unauthorized software",
+            "Installs updates automatically",
+            "Speeds up computer",
+            "Reduces disk space"
+        ]
+    },
+    {
+        "q": "Which network device often integrates NAC functions?",
+        "o": [
+            "Network switch",
+            "Hub",
+            "Repeater",
+            "Modem"
+        ]
+    },
+    {
+        "q": "What does a firewall use to make filtering decisions?",
+        "o": [
+            "Rule set",
+            "User preferences",
+            "Random selection",
+            "Time of day"
+        ]
+    },
+    {
+        "q": "Which protocol is used for secure remote firewall management?",
+        "o": [
+            "SSH",
+            "Telnet",
+            "HTTP",
+            "FTP"
+        ]
+    },
+    {
+        "q": "What is the purpose of IDS signature updates?",
+        "o": [
+            "Detect new attacks",
+            "Fix software bugs",
+            "Improve interface",
+            "Increase speed"
+        ]
+    },
+    {
+        "q": "Which antivirus feature prevents execution of suspicious code?",
+        "o": [
+            "Real-time protection",
+            "Scheduled scans",
+            "Email scanning",
+            "Boot-time scan"
+        ]
+    },
+    {
+        "q": "What is a whitelist in application control?",
+        "o": [
+            "List of approved software",
+            "Blocked applications",
+            "Quarantined files",
+            "System processes"
+        ]
+    },
+    {
+        "q": "Which authentication method does NAC commonly use?",
+        "o": [
+            "RADIUS",
+            "Kerberos",
+            "NTLM",
+            "LDAP"
+        ]
+    },
+    {
+        "q": "What is the function of firewall NAT?",
+        "o": [
+            "Translate private to public IPs",
+            "Block malicious traffic",
+            "Encrypt data packets",
+            "Compress data"
+        ]
+    },
+    {
+        "q": "Which IDS component stores known attack patterns?",
+        "o": [
+            "Signature database",
+            "Packet decoder",
+            "Alert manager",
+            "Log file"
+        ]
+    },
+    {
+        "q": "What does on-access scanning in antivirus mean?",
+        "o": [
+            "Scan files when opened",
+            "Scan once per day",
+            "Scan during idle time",
+            "Scan on reboot"
+        ]
+    },
+    {
+        "q": "Which software type is typically NOT whitelisted?",
+        "o": [
+            "Peer-to-peer file sharing",
+            "Microsoft Office",
+            "Adobe Reader",
+            "Corporate VPN"
+        ]
+    },
+    {
+        "q": "What is a pre-admission NAC check?",
+        "o": [
+            "Before network access",
+            "After connection",
+            "During data transfer",
+            "At logoff time"
+        ]
+    },
+    {
+        "q": "Which firewall policy is most restrictive?",
+        "o": [
+            "Default deny",
+            "Default allow",
+            "Hybrid mode",
+            "Learning mode"
+        ]
+    },
+    {
+        "q": "What is the purpose of IDS alert prioritization?",
+        "o": [
+            "Focus on critical threats",
+            "Delete low alerts",
+            "Reduce storage use",
+            "Speed up detection"
+        ]
+    },
+    {
+        "q": "Which malware type replicates without user interaction?",
+        "o": [
+            "Worm",
+            "Trojan",
+            "Ransomware",
+            "Spyware"
+        ]
+    },
+    {
+        "q": "What is a certificate-based whitelisting?",
+        "o": [
+            "Allow signed applications",
+            "Block unsigned apps",
+            "Verify file size",
+            "Check file name"
+        ]
+    },
+    {
+        "q": "Which NAC component enforces access policies?",
+        "o": [
+            "Enforcement point",
+            "Policy server",
+            "User directory",
+            "Logging system"
+        ]
+    },
+    {
+        "q": "What does firewall state table track?",
+        "o": [
+            "Active connections",
+            "User passwords",
+            "File contents",
+            "CPU usage"
+        ]
+    },
+    {
+        "q": "Which IDS deployment requires monitoring ports on a switch?",
+        "o": [
+            "SPAN port",
+            "Inline mode",
+            "Tap mode",
+            "Passive mode"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus exclusions?",
+        "o": [
+            "Prevent false positives",
+            "Speed up scans",
+            "Save disk space",
+            "Reduce memory use"
+        ]
+    },
+    {
+        "q": "Which application path is commonly whitelisted?",
+        "o": [
+            "C:\\Program Files",
+            "C:\\Temp",
+            "C:\\Users\\Downloads",
+            "D:\\Backup"
+        ]
+    },
+    {
+        "q": "What does a NAC posture assessment verify?",
+        "o": [
+            "Patch level and antivirus",
+            "User age and gender",
+            "Computer color",
+            "Monitor size"
+        ]
+    },
+    {
+        "q": "Which firewall type filters based on port numbers?",
+        "o": [
+            "Packet filtering",
+            "Application proxy",
+            "Circuit gateway",
+            "Web filter"
+        ]
+    },
+    {
+        "q": "What is an IPS false positive?",
+        "o": [
+            "Alert for legitimate traffic",
+            "Missed real attack",
+            "Correct block",
+            "System error"
+        ]
+    },
+    {
+        "q": "Which scanning method uses file checksums?",
+        "o": [
+            "Integrity checking",
+            "Heuristic scan",
+            "Behavioral block",
+            "Cloud lookup"
+        ]
+    },
+    {
+        "q": "What is the main challenge of application whitelisting?",
+        "o": [
+            "Maintaining the approved list",
+            "High cost of software",
+            "Slow computer speed",
+            "User training needs"
+        ]
+    },
+    {
+        "q": "Which VLAN is often used for quarantined devices?",
+        "o": [
+            "Remediation VLAN",
+            "Management VLAN",
+            "Voice VLAN",
+            "Native VLAN"
+        ]
+    },
+    {
+        "q": "What is the purpose of firewall ruleset optimization?",
+        "o": [
+            "Improve performance",
+            "Block more traffic",
+            "Allow all traffic",
+            "Simplify logging"
+        ]
+    },
+    {
+        "q": "Which IDS evasion technique fragments packets?",
+        "o": [
+            "Packet splitting",
+            "Encryption",
+            "Compression",
+            "Flooding"
+        ]
+    },
+    {
+        "q": "What does antivirus cloud-based detection use?",
+        "o": [
+            "Real-time threat intelligence",
+            "Local signatures only",
+            "User feedback",
+            "Email reports"
+        ]
+    },
+    {
+        "q": "Which user type should manage application whitelisting?",
+        "o": [
+            "System administrators",
+            "End users",
+            "Guest users",
+            "Interns"
+        ]
+    },
+    {
+        "q": "What is a dissolvable NAC agent?",
+        "o": [
+            "Temporary installation",
+            "Permanent software",
+            "Hardware device",
+            "Cloud service"
+        ]
+    },
+    {
+        "q": "Which firewall feature prevents IP spoofing?",
+        "o": [
+            "Anti-spoofing rules",
+            "NAT translation",
+            "VPN encryption",
+            "QoS marking"
+        ]
+    },
+    {
+        "q": "What is the purpose of IDS protocol analysis?",
+        "o": [
+            "Detect protocol anomalies",
+            "Speed up traffic",
+            "Compress packets",
+            "Route data"
+        ]
+    },
+    {
+        "q": "Which malware type encrypts files for ransom?",
+        "o": [
+            "Ransomware",
+            "Adware",
+            "Spyware",
+            "Rootkit"
+        ]
+    },
+    {
+        "q": "What is a path-based whitelisting rule?",
+        "o": [
+            "Allow files from specific folders",
+            "Block by file extension",
+            "Allow by file size",
+            "Block by creation date"
+        ]
+    },
+    {
+        "q": "Which NAC check ensures firewall is enabled?",
+        "o": [
+            "Personal firewall status",
+            "Screen saver setting",
+            "Wallpaper image",
+            "Mouse speed"
+        ]
+    },
+    {
+        "q": "What does firewall logging record for denied packets?",
+        "o": [
+            "Source IP and port",
+            "File contents",
+            "User passwords",
+            "Encryption keys"
+        ]
+    },
+    {
+        "q": "Which IDS type uses machine learning for detection?",
+        "o": [
+            "Anomaly-based IDS",
+            "Signature-based IDS",
+            "Rule-based IDS",
+            "Pattern-based IDS"
+        ]
+    },
+    {
+        "q": "What is the purpose of scheduled antivirus scans?",
+        "o": [
+            "Detect dormant malware",
+            "Replace real-time protection",
+            "Update signatures",
+            "Defragment disks"
+        ]
+    },
+    {
+        "q": "Which software publisher is commonly trusted for whitelisting?",
+        "o": [
+            "Microsoft Corporation",
+            "Unknown developer",
+            "Freeware author",
+            "Beta tester"
+        ]
+    },
+    {
+        "q": "What is a persistent NAC agent?",
+        "o": [
+            "Permanently installed",
+            "Web-based only",
+            "Cloud-hosted",
+            "Removable"
+        ]
+    },
+    {
+        "q": "Which firewall mode is used for initial testing?",
+        "o": [
+            "Learning mode",
+            "Blocking mode",
+            "Stealth mode",
+            "Active mode"
+        ]
+    },
+    {
+        "q": "What does IDS normalization process?",
+        "o": [
+            "Traffic standardization",
+            "Signature updates",
+            "Alert correlation",
+            "Report generation"
+        ]
+    },
+    {
+        "q": "Which antivirus feature protects during boot?",
+        "o": [
+            "Boot-time scan",
+            "Email filter",
+            "Web shield",
+            "Firewall"
+        ]
+    },
+    {
+        "q": "What is a hash-based whitelisting entry?",
+        "o": [
+            "SHA-256 of file",
+            "File name only",
+            "File extension",
+            "File size"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses 802.1X standard?",
+        "o": [
+            "Port-based control",
+            "IP-based control",
+            "MAC-based control",
+            "User-based control"
+        ]
+    },
+    {
+        "q": "What is the purpose of firewall zones?",
+        "o": [
+            "Segment networks by trust",
+            "Group users by name",
+            "Organize by time",
+            "Sort by IP only"
+        ]
+    },
+    {
+        "q": "Which IDS response is considered passive?",
+        "o": [
+            "Send alert only",
+            "Block traffic",
+            "Reset connection",
+            "Update rules"
+        ]
+    },
+    {
+        "q": "What does antivirus behavior blocker monitor?",
+        "o": [
+            "Program actions",
+            "File names only",
+            "Network speed",
+            "Disk space"
+        ]
+    },
+    {
+        "q": "Which application attribute changes after updates?",
+        "o": [
+            "File hash",
+            "File path",
+            "Publisher name",
+            "Product name"
+        ]
+    },
+    {
+        "q": "What is a remediation network in NAC?",
+        "o": [
+            "Fix non-compliant devices",
+            "Block all users",
+            "Allow guest access",
+            "Store backups"
+        ]
+    },
+    {
+        "q": "What is the difference between a stateful and stateless firewall?",
+        "o": [
+            "Stateful tracks connection state",
+            "Stateless is more secure",
+            "Stateful uses fewer resources",
+            "Stateless inspects payload"
+        ]
+    },
+    {
+        "q": "Which IPS signature type detects buffer overflow attempts?",
+        "o": [
+            "Exploit-based signatures",
+            "Virus signatures",
+            "Spam signatures",
+            "URL filtering"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus exclusion lists?",
+        "o": [
+            "Prevent performance issues",
+            "Allow all malware",
+            "Speed up infections",
+            "Disable protection"
+        ]
+    },
+    {
+        "q": "Which application whitelisting method uses publisher certificates?",
+        "o": [
+            "Certificate-based whitelisting",
+            "Hash-based whitelisting",
+            "Path-based whitelisting",
+            "Name-based whitelisting"
+        ]
+    },
+    {
+        "q": "What does a NAC solution check for endpoint compliance?",
+        "o": [
+            "Antivirus signature age",
+            "User browser history",
+            "Installed games",
+            "Desktop wallpaper"
+        ]
+    },
+    {
+        "q": "Which firewall rule would block all inbound telnet traffic?",
+        "o": [
+            "Deny TCP port 23",
+            "Deny UDP port 23",
+            "Allow TCP port 23",
+            "Deny TCP port 22"
+        ]
+    },
+    {
+        "q": "What is the main advantage of host-based IDS over network-based?",
+        "o": [
+            "Can see encrypted traffic",
+            "Monitors entire network",
+            "Lower resource usage",
+            "Easier to deploy"
+        ]
+    },
+    {
+        "q": "Which heuristic detection level generates more false positives?",
+        "o": [
+            "Aggressive heuristic",
+            "Conservative heuristic",
+            "Signature-only mode",
+            "Passive monitoring"
+        ]
+    },
+    {
+        "q": "What is a common challenge with path-based whitelisting?",
+        "o": [
+            "Users can copy files to allowed paths",
+            "Hashes change frequently",
+            "Certificates expire",
+            "Publishers are untrusted"
+        ]
+    },
+    {
+        "q": "Which NAC authentication method uses certificates?",
+        "o": [
+            "EAP-TLS",
+            "PEAP-MSCHAPv2",
+            "LEAP",
+            "PAP"
+        ]
+    },
+    {
+        "q": "What is the purpose of a firewall's DMZ interface?",
+        "o": [
+            "Host public servers with limited access",
+            "Connect to internal workstations",
+            "Manage remote users",
+            "Store backup data"
+        ]
+    },
+    {
+        "q": "Which IDS evasion technique uses encryption?",
+        "o": [
+            "Protocol tunneling",
+            "Packet fragmentation",
+            "Slow scanning",
+            "Random IPs"
+        ]
+    },
+    {
+        "q": "What does antivirus rootkit detection target?",
+        "o": [
+            "Hidden system modifications",
+            "Email attachments",
+            "Web browsing history",
+            "Network connections"
+        ]
+    },
+    {
+        "q": "Which application attribute remains constant after updates?",
+        "o": [
+            "Digital publisher",
+            "File hash",
+            "File size",
+            "File version"
+        ]
+    },
+    {
+        "q": "What is a captive portal in NAC deployments?",
+        "o": [
+            "Web-based authentication",
+            "Hardware authentication",
+            "Certificate enrollment",
+            "VPN connection"
+        ]
+    },
+    {
+        "q": "Which firewall feature allows multiple internal users to share one public IP?",
+        "o": [
+            "Source NAT",
+            "Destination NAT",
+            "Port forwarding",
+            "Access list"
+        ]
+    },
+    {
+        "q": "What is the purpose of tuning IPS sensitivity levels?",
+        "o": [
+            "Balance detection vs false positives",
+            "Increase network speed",
+            "Reduce hardware needs",
+            "Simplify management"
+        ]
+    },
+    {
+        "q": "Which malware type modifies operating system kernel?",
+        "o": [
+            "Rootkit",
+            "Trojan",
+            "Worm",
+            "Adware"
+        ]
+    },
+    {
+        "q": "What is a drawback of hash-based whitelisting?",
+        "o": [
+            "Hashes change with updates",
+            "Hashes are too long",
+            "Certificates are expensive",
+            "Paths are unreliable"
+        ]
+    },
+    {
+        "q": "Which NAC component performs remediation actions?",
+        "o": [
+            "Policy enforcement point",
+            "Authentication server",
+            "User directory",
+            "Logging database"
+        ]
+    },
+    {
+        "q": "What does an application-level firewall inspect?",
+        "o": [
+            "Full application data",
+            "Only packet headers",
+            "IP addresses only",
+            "MAC addresses"
+        ]
+    },
+    {
+        "q": "Which IDS alert level indicates a confirmed attack?",
+        "o": [
+            "High severity",
+            "Informational",
+            "Debug message",
+            "System log"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus cloud-based reputation?",
+        "o": [
+            "Check file reputation online",
+            "Store files in cloud",
+            "Backup infected files",
+            "Share user data"
+        ]
+    },
+    {
+        "q": "Which application whitelisting rule is most flexible?",
+        "o": [
+            "Publisher-based rules",
+            "Hash-based rules",
+            "Path-based rules",
+            "Name-based rules"
+        ]
+    },
+    {
+        "q": "What is a post-admission NAC control?",
+        "o": [
+            "Monitor after access granted",
+            "Check before access",
+            "Block all traffic",
+            "Install software"
+        ]
+    },
+    {
+        "q": "Which firewall rule order can cause shadowing?",
+        "o": [
+            "General before specific",
+            "Specific before general",
+            "Alphabetical order",
+            "Numerical order"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS custom signatures?",
+        "o": [
+            "Detect internal application attacks",
+            "Replace all signatures",
+            "Disable default rules",
+            "Increase false positives"
+        ]
+    },
+    {
+        "q": "Which antivirus feature prevents USB auto-run infections?",
+        "o": [
+            "Removable media scanning",
+            "Email filtering",
+            "Web protection",
+            "Firewall integration"
+        ]
+    },
+    {
+        "q": "What is a golden image in application whitelisting?",
+        "o": [
+            "Approved master system configuration",
+            "Expensive software",
+            "Backup copy",
+            "Recovery disk"
+        ]
+    },
+    {
+        "q": "Which NAC check ensures disk encryption is enabled?",
+        "o": [
+            "Full disk encryption status",
+            "Screen saver timeout",
+            "Password complexity",
+            "Account lockout"
+        ]
+    },
+    {
+        "q": "What does a circuit-level firewall do?",
+        "o": [
+            "Validate TCP handshakes",
+            "Inspect application data",
+            "Filter packet contents",
+            "Encrypt all traffic"
+        ]
+    },
+    {
+        "q": "Which IDS deployment method sees all traffic without latency?",
+        "o": [
+            "Passive tap",
+            "Inline mode",
+            "Proxy mode",
+            "SPAN port only"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus macro virus detection?",
+        "o": [
+            "Scan office documents",
+            "Detect boot viruses",
+            "Find email worms",
+            "Block network attacks"
+        ]
+    },
+    {
+        "q": "Which application whitelisting approach requires most maintenance?",
+        "o": [
+            "Hash-based whitelisting",
+            "Publisher whitelisting",
+            "Path whitelisting",
+            "Name whitelisting"
+        ]
+    },
+    {
+        "q": "What is a remediation script in NAC?",
+        "o": [
+            "Automatically fix compliance issues",
+            "Delete user files",
+            "Format hard drive",
+            "Disable network"
+        ]
+    },
+    {
+        "q": "Which protocol does a firewall use for VPN tunnels?",
+        "o": [
+            "IPsec",
+            "HTTP",
+            "FTP",
+            "SMTP"
+        ]
+    },
+    {
+        "q": "What is the difference between IDS and IPS?",
+        "o": [
+            "IPS blocks, IDS alerts",
+            "IDS blocks, IPS alerts",
+            "Both only alert",
+            "Both only block"
+        ]
+    },
+    {
+        "q": "Which malware type displays unwanted advertisements?",
+        "o": [
+            "Adware",
+            "Ransomware",
+            "Spyware",
+            "Rootkit"
+        ]
+    },
+    {
+        "q": "What is a trusted publisher in whitelisting?",
+        "o": [
+            "Digitally signed software vendor",
+            "Any software author",
+            "Microsoft only",
+            "Open source developers"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses DHCP enforcement?",
+        "o": [
+            "IP address assignment control",
+            "Port-based control",
+            "Certificate-based control",
+            "VPN-based control"
+        ]
+    },
+    {
+        "q": "What does firewall deep packet inspection examine?",
+        "o": [
+            "Application layer content",
+            "Only IP headers",
+            "MAC addresses only",
+            "Route tables"
+        ]
+    },
+    {
+        "q": "Which IDS signature type detects port scans?",
+        "o": [
+            "Reconnaissance signatures",
+            "Virus signatures",
+            "Spam signatures",
+            "Phishing signatures"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus scheduled updates?",
+        "o": [
+            "Get latest signature files",
+            "Scan for viruses",
+            "Clean infected files",
+            "Restart computer"
+        ]
+    },
+    {
+        "q": "Which application path should never be whitelisted?",
+        "o": [
+            "C:\\Users\\*\\AppData\\Local\\Temp",
+            "C:\\Program Files\\",
+            "C:\\Windows\\System32",
+            "D:\\Applications\\"
+        ]
+    },
+    {
+        "q": "What is a guest network in NAC?",
+        "o": [
+            "Limited access for visitors",
+            "Full network access",
+            "Internal network",
+            "Server network"
+        ]
+    },
+    {
+        "q": "Which firewall feature protects against DoS attacks?",
+        "o": [
+            "Flood protection",
+            "URL filtering",
+            "Application control",
+            "User authentication"
+        ]
+    },
+    {
+        "q": "What is the purpose of IDS alert correlation?",
+        "o": [
+            "Combine related alerts",
+            "Delete old alerts",
+            "Create new alerts",
+            "Speed up detection"
+        ]
+    },
+    {
+        "q": "Which antivirus detection uses sandboxing?",
+        "o": [
+            "Run files in isolated environment",
+            "Compare file signatures",
+            "Check file hashes",
+            "Monitor file names"
+        ]
+    },
+    {
+        "q": "What is a drawback of publisher-based whitelisting?",
+        "o": [
+            "Compromised certificates can sign malware",
+            "Hashes change too often",
+            "Paths are unreliable",
+            "Names are duplicated"
+        ]
+    },
+    {
+        "q": "Which NAC enforcement is most restrictive?",
+        "o": [
+            "Block all access until compliant",
+            "Log only violations",
+            "Alert administrators",
+            "Allow with warning"
+        ]
+    },
+    {
+        "q": "What does a web application firewall protect against?",
+        "o": [
+            "SQL injection attacks",
+            "Network layer attacks",
+            "Physical theft",
+            "Power outages"
+        ]
+    },
+    {
+        "q": "Which IPS tuning parameter reduces false positives?",
+        "o": [
+            "Threshold adjustment",
+            "Disable all signatures",
+            "Increase sensitivity",
+            "Block all traffic"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus startup scan?",
+        "o": [
+            "Check boot sectors and startup items",
+            "Scan all email",
+            "Check internet history",
+            "Scan documents only"
+        ]
+    },
+    {
+        "q": "Which application whitelisting tool is built into Windows?",
+        "o": [
+            "AppLocker",
+            "BitLocker",
+            "Defender",
+            "Firewall"
+        ]
+    },
+    {
+        "q": "What is a role-based NAC policy?",
+        "o": [
+            "Access based on job function",
+            "Access based on time",
+            "Access based on location",
+            "Access based on device"
+        ]
+    },
+    {
+        "q": "Which firewall type is most common in home routers?",
+        "o": [
+            "NAT with packet filtering",
+            "Application proxy",
+            "Stateful inspection",
+            "Web filter"
+        ]
+    },
+    {
+        "q": "What does IDS anomaly detection compare against?",
+        "o": [
+            "Baseline normal traffic",
+            "Known attack signatures",
+            "Virus definitions",
+            "Blacklist IPs"
+        ]
+    },
+    {
+        "q": "Which malware type steals personal information?",
+        "o": [
+            "Spyware",
+            "Ransomware",
+            "Worm",
+            "Virus"
+        ]
+    },
+    {
+        "q": "What is a rule of least privilege in whitelisting?",
+        "o": [
+            "Allow minimum required applications",
+            "Allow all applications",
+            "Block all applications",
+            "Allow by user request"
+        ]
+    },
+    {
+        "q": "Which NAC check verifies OS patch level?",
+        "o": [
+            "Windows Update status",
+            "Screen resolution",
+            "CPU speed",
+            "RAM size"
+        ]
+    },
+    {
+        "q": "What does firewall VPN concentrator do?",
+        "o": [
+            "Terminate multiple VPN tunnels",
+            "Block VPN traffic",
+            "Encrypt internal traffic",
+            "Decrypt web traffic"
+        ]
+    },
+    {
+        "q": "Which IDS response is considered active?",
+        "o": [
+            "Reset TCP connection",
+            "Write to log file",
+            "Send email alert",
+            "Display popup"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus game mode?",
+        "o": [
+            "Delay scans during gaming",
+            "Scan games only",
+            "Block gaming sites",
+            "Speed up graphics"
+        ]
+    },
+    {
+        "q": "Which application attribute is easiest to spoof?",
+        "o": [
+            "File name",
+            "Digital signature",
+            "Cryptographic hash",
+            "Publisher certificate"
+        ]
+    },
+    {
+        "q": "What is a quarantine network in NAC?",
+        "o": [
+            "Isolated VLAN for non-compliant devices",
+            "Main production network",
+            "Guest wireless network",
+            "Server farm network"
+        ]
+    },
+    {
+        "q": "Which firewall rule prevents inbound traffic from initiating connections?",
+        "o": [
+            "Block inbound, allow outbound",
+            "Allow all traffic",
+            "Block all traffic",
+            "Allow inbound only"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS protocol decoders?",
+        "o": [
+            "Parse application protocols",
+            "Encrypt traffic",
+            "Compress packets",
+            "Route data"
+        ]
+    },
+    {
+        "q": "Which antivirus component monitors email attachments?",
+        "o": [
+            "Mail shield",
+            "Web shield",
+            "Firewall",
+            "Behavior blocker"
+        ]
+    },
+    {
+        "q": "What is a limitation of path-based whitelisting?",
+        "o": [
+            "Users can write to allowed paths",
+            "Hashes change frequently",
+            "Certificates expire",
+            "Publishers are unknown"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses ARP poisoning?",
+        "o": [
+            "Layer 2 enforcement",
+            "Layer 3 enforcement",
+            "Layer 7 enforcement",
+            "Physical enforcement"
+        ]
+    },
+    {
+        "q": "What does a next-generation firewall add?",
+        "o": [
+            "Application awareness and IDS",
+            "More packet filtering",
+            "Faster throughput",
+            "More ports"
+        ]
+    },
+    {
+        "q": "Which IDS signature type detects brute force attacks?",
+        "o": [
+            "Failed login threshold",
+            "Virus signature",
+            "Spam rule",
+            "URL filter"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus exception hashes?",
+        "o": [
+            "Exclude specific files from scanning",
+            "Block specific files",
+            "Quarantine specific files",
+            "Delete specific files"
+        ]
+    },
+    {
+        "q": "Which application whitelisting mode logs but does not block?",
+        "o": [
+            "Audit mode",
+            "Enforce mode",
+            "Block mode",
+            "Disable mode"
+        ]
+    },
+    {
+        "q": "What is a device fingerprint in NAC?",
+        "o": [
+            "Unique device identification",
+            "User biometrics",
+            "Password hash",
+            "Network name"
+        ]
+    },
+    {
+        "q": "Which firewall feature translates public IP to private server?",
+        "o": [
+            "Destination NAT",
+            "Source NAT",
+            "PAT only",
+            "Access list"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS reputation filtering?",
+        "o": [
+            "Block known malicious IPs",
+            "Filter spam emails",
+            "Scan for viruses",
+            "Monitor bandwidth"
+        ]
+    },
+    {
+        "q": "Which malware type requires user action to spread?",
+        "o": [
+            "Trojan",
+            "Worm",
+            "Blaster",
+            "Sasser"
+        ]
+    },
+    {
+        "q": "What is a benefit of publisher-based whitelisting?",
+        "o": [
+            "No updates needed for software patches",
+            "Most secure method",
+            "Easiest to implement",
+            "Lowest overhead"
+        ]
+    },
+    {
+        "q": "Which NAC check ensures anti-malware is running?",
+        "o": [
+            "Service status",
+            "Installation date",
+            "Version number",
+            "Vendor name"
+        ]
+    },
+    {
+        "q": "What does a firewall do with unsolicited inbound traffic?",
+        "o": [
+            "Drops by default",
+            "Allows by default",
+            "Forwards to all",
+            "Encrypts automatically"
+        ]
+    },
+    {
+        "q": "Which IDS deployment adds network latency?",
+        "o": [
+            "Inline mode",
+            "Passive mode",
+            "SPAN mode",
+            "Tap mode"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus archive scanning?",
+        "o": [
+            "Scan inside compressed files",
+            "Scan email only",
+            "Scan network traffic",
+            "Scan memory only"
+        ]
+    },
+    {
+        "q": "Which application whitelisting rule applies to scripts?",
+        "o": [
+            "PowerShell execution policy",
+            "EXE hash only",
+            "MSI publisher",
+            "DLL path"
+        ]
+    },
+    {
+        "q": "What is a persistent agent in NAC?",
+        "o": [
+            "Always installed on endpoint",
+            "Web-based temporary",
+            "Cloud-hosted",
+            "Hardware token"
+        ]
+    },
+    {
+        "q": "Which firewall rule allows web traffic from internal users?",
+        "o": [
+            "Allow outbound TCP 80,443",
+            "Allow inbound TCP 80",
+            "Allow all UDP",
+            "Deny all TCP"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS exception rules?",
+        "o": [
+            "Prevent false positives for specific traffic",
+            "Block all traffic",
+            "Allow all attacks",
+            "Disable protection"
+        ]
+    },
+    {
+        "q": "Which antivirus feature detects potentially unwanted programs?",
+        "o": [
+            "PUP detection",
+            "Virus scan",
+            "Firewall",
+            "Email filter"
+        ]
+    },
+    {
+        "q": "What is a drawback of name-based whitelisting?",
+        "o": [
+            "Easy to rename malicious files",
+            "Names are unique",
+            "Names never change",
+            "Names are secure"
+        ]
+    },
+    {
+        "q": "Which NAC enforcement uses SNMP traps?",
+        "o": [
+            "Switch port disable",
+            "User logout",
+            "File deletion",
+            "Service stop"
+        ]
+    },
+    {
+        "q": "What does a firewall do during a SYN flood?",
+        "o": [
+            "Use SYN cookies or rate limit",
+            "Allow all connections",
+            "Drop all traffic",
+            "Reboot system"
+        ]
+    },
+    {
+        "q": "Which IDS signature type detects DNS poisoning?",
+        "o": [
+            "Protocol anomaly",
+            "Virus signature",
+            "Spam rule",
+            "URL filter"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus script scanning?",
+        "o": [
+            "Detect malicious scripts",
+            "Block all scripts",
+            "Speed up scripts",
+            "Edit scripts"
+        ]
+    },
+    {
+        "q": "Which application whitelisting method is most secure?",
+        "o": [
+            "Hash-based with frequent updates",
+            "Path-based",
+            "Name-based",
+            "Extension-based"
+        ]
+    },
+    {
+        "q": "What is a temporal NAC policy?",
+        "o": [
+            "Time-based access restrictions",
+            "Location-based access",
+            "Role-based access",
+            "Device-based access"
+        ]
+    },
+    {
+        "q": "Which firewall type is used between cloud and on-premise?",
+        "o": [
+            "Cloud firewall",
+            "Host firewall",
+            "Personal firewall",
+            "Application firewall"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS SSL decryption?",
+        "o": [
+            "Inspect encrypted traffic",
+            "Encrypt all traffic",
+            "Block HTTPS",
+            "Speed up SSL"
+        ]
+    },
+    {
+        "q": "Which malware type modifies browser settings?",
+        "o": [
+            "Browser hijacker",
+            "Boot sector virus",
+            "Macro virus",
+            "File infector"
+        ]
+    },
+    {
+        "q": "What is the primary difference between signature-based and anomaly-based IDS?",
+        "o": [
+            "Signatures match known patterns, anomalies detect deviations",
+            "Both use the exact same detection methods",
+            "Anomaly only detects known attacks",
+            "Signature detects unknown attacks better"
+        ]
+    },
+    {
+        "q": "Which firewall deployment uses virtual instances for multi-tenant environments?",
+        "o": [
+            "Virtual firewall",
+            "Hardware appliance",
+            "Software on desktop",
+            "Cloud proxy"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus machine learning models?",
+        "o": [
+            "Detect never-before-seen malware",
+            "Replace signature updates",
+            "Improve scan speed only",
+            "Reduce disk usage"
+        ]
+    },
+    {
+        "q": "Which application whitelisting challenge arises with software updates?",
+        "o": [
+            "Hashes change requiring rule updates",
+            "Publishers become untrusted",
+            "Paths become invalid",
+            "Names conflict with others"
+        ]
+    },
+    {
+        "q": "What does a NAC solution do with IoT devices that cannot run agents?",
+        "o": [
+            "Use profiling and fingerprinting",
+            "Block them permanently",
+            "Require manual approval",
+            "Ignore compliance checks"
+        ]
+    },
+    {
+        "q": "Which firewall technique prevents DNS tunneling exfiltration?",
+        "o": [
+            "Deep DNS inspection",
+            "Block all DNS",
+            "Allow all DNS",
+            "Encrypt DNS queries"
+        ]
+    },
+    {
+        "q": "What is the purpose of IDS/IPS tuning during a penetration test?",
+        "o": [
+            "Temporarily disable to allow testing",
+            "Increase sensitivity",
+            "Block all test traffic",
+            "Log all activities"
+        ]
+    },
+    {
+        "q": "Which antivirus evasion technique uses polymorphism?",
+        "o": [
+            "Changing code signature each infection",
+            "Encrypting entire file",
+            "Compressing the malware",
+            "Hiding in memory only"
+        ]
+    },
+    {
+        "q": "What is a benefit of combining hash and publisher whitelisting?",
+        "o": [
+            "Balance security and manageability",
+            "Eliminate all false positives",
+            "Remove need for updates",
+            "Allow all unsigned code"
+        ]
+    },
+    {
+        "q": "Which NAC integration allows automated remediation from SIEM alerts?",
+        "o": [
+            "API-based orchestration",
+            "Manual ticketing",
+            "Email notifications",
+            "Phone calls"
+        ]
+    },
+    {
+        "q": "What does a firewall do when it detects a state mismatch?",
+        "o": [
+            "Drops the packet",
+            "Allows the packet",
+            "Creates new state",
+            "Forwards anyway"
+        ]
+    },
+    {
+        "q": "Which IDS evasion technique uses deliberate delays?",
+        "o": [
+            "Slowloris attack",
+            "Packet fragmentation",
+            "Encryption",
+            "Source routing"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus rootkit removal in safe mode?",
+        "o": [
+            "Bypass rootkit protection",
+            "Speed up removal",
+            "Save disk space",
+            "Prevent data loss"
+        ]
+    },
+    {
+        "q": "Which application whitelisting rule is most appropriate for power users?",
+        "o": [
+            "Allow by publisher with path restrictions",
+            "Allow all applications",
+            "Block all applications",
+            "Allow by name only"
+        ]
+    },
+    {
+        "q": "What is a critical consideration for NAC in 802.1X environments?",
+        "o": [
+            "Supplicant compatibility",
+            "Network speed",
+            "Switch port count",
+            "Cable length"
+        ]
+    },
+    {
+        "q": "Which firewall feature allows rule creation based on application identity?",
+        "o": [
+            "Application control",
+            "Port filtering",
+            "IP blocking",
+            "MAC filtering"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS virtual patching?",
+        "o": [
+            "Protect unpatched vulnerabilities",
+            "Install actual patches",
+            "Reboot servers",
+            "Update signatures"
+        ]
+    },
+    {
+        "q": "Which malware technique uses legitimate system tools for malicious purposes?",
+        "o": [
+            "Living off the land",
+            "Polymorphic code",
+            "Metamorphic code",
+            "Armored virus"
+        ]
+    },
+    {
+        "q": "What is a limitation of publisher-based whitelisting with expired certificates?",
+        "o": [
+            "Expired certs may block legitimate software",
+            "Certificates never expire",
+            "All certs are trusted",
+            "Expiration improves security"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses VMware NSX integration?",
+        "o": [
+            "Micro-segmentation",
+            "Perimeter firewall",
+            "VPN gateway",
+            "Load balancer"
+        ]
+    },
+    {
+        "q": "What does a firewall do with IP fragments that cannot be reassembled?",
+        "o": [
+            "Drops incomplete fragments",
+            "Forwards anyway",
+            "Creates new fragments",
+            "Stores indefinitely"
+        ]
+    },
+    {
+        "q": "Which IDS signature type detects command and control traffic?",
+        "o": [
+            "Botnet signatures",
+            "Virus signatures",
+            "Spam signatures",
+            "Phishing signatures"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus cloud-based sandbox analysis?",
+        "o": [
+            "Execute suspicious files in isolated cloud",
+            "Store files permanently",
+            "Share with other users",
+            "Backup important data"
+        ]
+    },
+    {
+        "q": "Which application whitelisting approach is recommended for servers?",
+        "o": [
+            "Strict hash-based with change control",
+            "Allow all by default",
+            "User decides each time",
+            "Path-based only"
+        ]
+    },
+    {
+        "q": "What is a RADIUS server's role in NAC?",
+        "o": [
+            "Authentication and authorization",
+            "DHCP address assignment",
+            "DNS resolution",
+            "Traffic filtering"
+        ]
+    },
+    {
+        "q": "Which firewall technique prevents IP address spoofing on internal networks?",
+        "o": [
+            "uRPF check",
+            "NAT overload",
+            "Port forwarding",
+            "Proxy ARP"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS regular expression signatures?",
+        "o": [
+            "Match complex attack patterns",
+            "Simple string matching",
+            "Port matching only",
+            "IP matching only"
+        ]
+    },
+    {
+        "q": "Which malware type uses steganography to hide in images?",
+        "o": [
+            "Image-based malware",
+            "Boot sector virus",
+            "Macro virus",
+            "Script virus"
+        ]
+    },
+    {
+        "q": "What is a challenge with path-based whitelisting in virtualized environments?",
+        "o": [
+            "Paths may differ across VMs",
+            "Hashes change constantly",
+            "Certificates are invalid",
+            "Names are duplicated"
+        ]
+    },
+    {
+        "q": "Which NAC enforcement method works at Layer 7?",
+        "o": [
+            "HTTP redirect to captive portal",
+            "Switch port disable",
+            "VLAN assignment",
+            "IP blocking"
+        ]
+    },
+    {
+        "q": "What does a stateful firewall do with out-of-window TCP packets?",
+        "o": [
+            "Drops them as invalid",
+            "Allows them anyway",
+            "Creates new connection",
+            "Forwards with warning"
+        ]
+    },
+    {
+        "q": "Which IDS tuning technique reduces alerts for internal scanning?",
+        "o": [
+            "Whitelist vulnerability scanners",
+            "Disable all scan alerts",
+            "Increase sensitivity",
+            "Block all scanners"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus memory scanning?",
+        "o": [
+            "Detect fileless malware",
+            "Scan hard drives",
+            "Check email",
+            "Monitor network"
+        ]
+    },
+    {
+        "q": "Which application whitelisting rule can prevent DLL hijacking?",
+        "o": [
+            "DLL hash verification",
+            "Allow all DLLs",
+            "Block all DLLs",
+            "Name-based allow"
+        ]
+    },
+    {
+        "q": "What is a TACACS+ advantage over RADIUS for NAC?",
+        "o": [
+            "Command authorization",
+            "Better accounting",
+            "Uses UDP only",
+            "Standard protocol"
+        ]
+    },
+    {
+        "q": "Which firewall feature helps identify encrypted traffic without decryption?",
+        "o": [
+            "TLS fingerprinting",
+            "Deep packet inspection",
+            "Port matching",
+            "IP reputation"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS rate-based signatures?",
+        "o": [
+            "Detect DoS and brute force",
+            "Match single packets",
+            "Detect viruses",
+            "Filter spam"
+        ]
+    },
+    {
+        "q": "Which malware technique uses encrypted payloads with known keys?",
+        "o": [
+            "Oligomorphic code",
+            "Polymorphic code",
+            "Metamorphic code",
+            "Stealth code"
+        ]
+    },
+    {
+        "q": "What is a benefit of using file reputation services in whitelisting?",
+        "o": [
+            "Leverage community knowledge",
+            "Replace all local rules",
+            "Eliminate all risks",
+            "Speed up scanning"
+        ]
+    },
+    {
+        "q": "Which NAC deployment integrates with MDM for mobile devices?",
+        "o": [
+            "Mobile device management",
+            "Desktop management",
+            "Server management",
+            "Printer management"
+        ]
+    },
+    {
+        "q": "What does a firewall do with packets that have both SYN and RST flags?",
+        "o": [
+            "Drops invalid flag combinations",
+            "Allows as valid",
+            "Forwards normally",
+            "Creates new state"
+        ]
+    },
+    {
+        "q": "Which IDS signature type detects SQL injection attempts?",
+        "o": [
+            "Web application signatures",
+            "Network virus signatures",
+            "Spam signatures",
+            "DoS signatures"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus boot sector protection?",
+        "o": [
+            "Prevent master boot record infection",
+            "Scan email faster",
+            "Block websites",
+            "Monitor network"
+        ]
+    },
+    {
+        "q": "Which application whitelisting challenge arises with scripting languages?",
+        "o": [
+            "Scripts are interpreted not compiled",
+            "Hashes work perfectly",
+            "Publishers always sign",
+            "Paths never change"
+        ]
+    },
+    {
+        "q": "What is a certificate revocation list check in NAC?",
+        "o": [
+            "Verify certificates are not revoked",
+            "Check user passwords",
+            "Validate IP addresses",
+            "Test network speed"
+        ]
+    },
+    {
+        "q": "Which firewall technique prevents HTTP smuggling attacks?",
+        "o": [
+            "HTTP normalization",
+            "Port blocking",
+            "IP filtering",
+            "MAC filtering"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS custom vulnerability signatures?",
+        "o": [
+            "Protect internal applications",
+            "Block all traffic",
+            "Replace patches",
+            "Update antivirus"
+        ]
+    },
+    {
+        "q": "Which malware type targets industrial control systems?",
+        "o": [
+            "ICS malware",
+            "Ransomware",
+            "Adware",
+            "Spyware"
+        ]
+    },
+    {
+        "q": "What is a limitation of hash-based whitelisting with temporary files?",
+        "o": [
+            "Temp files have unpredictable hashes",
+            "Hashes are too long",
+            "Hashes are too short",
+            "Hashes never change"
+        ]
+    },
+    {
+        "q": "Which NAC enforcement uses BGP routing updates?",
+        "o": [
+            "Route injection",
+            "Port blocking",
+            "VLAN assignment",
+            "DHCP control"
+        ]
+    },
+    {
+        "q": "What does a firewall do with packets that have invalid checksums?",
+        "o": [
+            "Drops corrupted packets",
+            "Forwards anyway",
+            "Corrects checksum",
+            "Logs and allows"
+        ]
+    },
+    {
+        "q": "Which IDS evasion technique uses session splicing?",
+        "o": [
+            "Split across multiple packets",
+            "Encrypt all data",
+            "Use random ports",
+            "Slow down traffic"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus exploit protection?",
+        "o": [
+            "Block vulnerability exploitation",
+            "Scan for viruses",
+            "Clean infected files",
+            "Update software"
+        ]
+    },
+    {
+        "q": "Which application whitelisting method works best for locked-down kiosks?",
+        "o": [
+            "Strict path and hash rules",
+            "Allow all applications",
+            "User decides",
+            "Publisher only"
+        ]
+    },
+    {
+        "q": "What is a EAP-TLS requirement for NAC?",
+        "o": [
+            "Client certificates",
+            "Username only",
+            "Password only",
+            "MAC address"
+        ]
+    },
+    {
+        "q": "Which firewall feature prevents geolocation-based attacks?",
+        "o": [
+            "Geo-IP filtering",
+            "Port blocking",
+            "Protocol filtering",
+            "Application control"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS signature severity levels?",
+        "o": [
+            "Prioritize response actions",
+            "Delete low alerts",
+            "Speed up detection",
+            "Reduce false positives"
+        ]
+    },
+    {
+        "q": "Which malware technique uses rootkit to hide from antivirus?",
+        "o": [
+            "Kernel mode hooks",
+            "Polymorphic code",
+            "Encrypted payloads",
+            "Compressed files"
+        ]
+    },
+    {
+        "q": "What is a challenge with publisher whitelisting for open-source software?",
+        "o": [
+            "Often lacks digital signatures",
+            "Too many signatures",
+            "Certificates expensive",
+            "Hashes unreliable"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses SCEP for certificate enrollment?",
+        "o": [
+            "Automated certificate provisioning",
+            "Manual certificate install",
+            "Password authentication",
+            "Biometric auth"
+        ]
+    },
+    {
+        "q": "What does a firewall do with packets that have expired TTL?",
+        "o": [
+            "Drops and sends ICMP time exceeded",
+            "Forwards anyway",
+            "Increases TTL",
+            "Ignores and allows"
+        ]
+    },
+    {
+        "q": "Which IDS signature type detects SMB exploits like EternalBlue?",
+        "o": [
+            "Protocol exploit signatures",
+            "Virus signatures",
+            "Spam signatures",
+            "Web signatures"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus network traffic inspection?",
+        "o": [
+            "Detect malware downloads",
+            "Block all websites",
+            "Speed up browsing",
+            "Encrypt traffic"
+        ]
+    },
+    {
+        "q": "Which application whitelisting rule can block malicious macros?",
+        "o": [
+            "Office macro policies",
+            "Block all Office files",
+            "Allow all macros",
+            "Name-based rules"
+        ]
+    },
+    {
+        "q": "What is a posture validator in NAC?",
+        "o": [
+            "Check endpoint compliance",
+            "Assign IP addresses",
+            "Route traffic",
+            "Block ports"
+        ]
+    },
+    {
+        "q": "Which firewall technique prevents IP fragmentation attacks?",
+        "o": [
+            "Fragment reassembly and validation",
+            "Block all fragments",
+            "Allow all fragments",
+            "Ignore fragments"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS traffic normalization?",
+        "o": [
+            "Defeat evasion techniques",
+            "Speed up traffic",
+            "Compress data",
+            "Encrypt packets"
+        ]
+    },
+    {
+        "q": "Which malware type uses fileless persistence in registry?",
+        "o": [
+            "Registry resident malware",
+            "File infector",
+            "Boot sector virus",
+            "Macro virus"
+        ]
+    },
+    {
+        "q": "What is a benefit of combining multiple whitelisting methods?",
+        "o": [
+            "Defense in depth",
+            "Easier management",
+            "Lower cost",
+            "Faster performance"
+        ]
+    },
+    {
+        "q": "Which NAC enforcement works with Cisco SD-Access?",
+        "o": [
+            "SGT-based policies",
+            "VLAN only",
+            "ACL only",
+            "Port security"
+        ]
+    },
+    {
+        "q": "What does a firewall do with asymmetric routing?",
+        "o": [
+            "May drop return traffic without state",
+            "Always works fine",
+            "Creates multiple states",
+            "Forwards all traffic"
+        ]
+    },
+    {
+        "q": "Which IDS tuning parameter reduces alerts for noisy environments?",
+        "o": [
+            "Threshold tuning",
+            "Disable all rules",
+            "Increase sensitivity",
+            "Block all traffic"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus behavioral monitoring?",
+        "o": [
+            "Detect suspicious actions",
+            "Scan file names",
+            "Check file sizes",
+            "Monitor disk space"
+        ]
+    },
+    {
+        "q": "Which application whitelisting rule is hardest for attackers to bypass?",
+        "o": [
+            "Hash-based with code signing",
+            "Path-based rules",
+            "Name-based rules",
+            "Extension-based"
+        ]
+    },
+    {
+        "q": "What is a TrustSec environment in NAC?",
+        "o": [
+            "Cisco security group tags",
+            "Microsoft NAP",
+            "OpenNAC",
+            "PacketFence"
+        ]
+    },
+    {
+        "q": "Which firewall feature allows temporary rule openings for specific IPs?",
+        "o": [
+            "Lock and key feature",
+            "Static rules",
+            "NAT only",
+            "VPN only"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS passive mode monitoring?",
+        "o": [
+            "Test signatures without blocking",
+            "Block all traffic",
+            "Encrypt data",
+            "Route packets"
+        ]
+    },
+    {
+        "q": "Which malware technique uses process hollowing?",
+        "o": [
+            "Run code in legitimate processes",
+            "Hide in boot sector",
+            "Infect document macros",
+            "Modify browser settings"
+        ]
+    },
+    {
+        "q": "What is a limitation of whitelisting for developers' workstations?",
+        "o": [
+            "Need to run many new tools",
+            "Security is too strict",
+            "Too many rules",
+            "No limitations"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses OAuth for API security?",
+        "o": [
+            "Zero-trust API access",
+            "Network login",
+            "VPN authentication",
+            "WiFi password"
+        ]
+    },
+    {
+        "q": "What does a firewall do with packets that have incorrect TCP sequence numbers?",
+        "o": [
+            "Drops out-of-state packets",
+            "Allows and corrects",
+            "Forwards anyway",
+            "Creates new state"
+        ]
+    },
+    {
+        "q": "Which IDS signature type detects DNS amplification attacks?",
+        "o": [
+            "DoS signatures",
+            "Virus signatures",
+            "Spam signatures",
+            "Web signatures"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus cloud-based URL filtering?",
+        "o": [
+            "Block malicious websites",
+            "Speed up browsing",
+            "Cache web content",
+            "Encrypt traffic"
+        ]
+    },
+    {
+        "q": "Which application whitelisting challenge arises with Windows Store apps?",
+        "o": [
+            "AppX packages need special handling",
+            "EXE rules work fine",
+            "MSI rules work",
+            "No special handling"
+        ]
+    },
+    {
+        "q": "What is a MAB in NAC deployments?",
+        "o": [
+            "MAC Authentication Bypass",
+            "Multi-factor Auth",
+            "Main Auth Board",
+            "Management Access"
+        ]
+    },
+    {
+        "q": "Which firewall technique prevents DNS cache poisoning?",
+        "o": [
+            "DNS security extensions",
+            "Block DNS",
+            "Allow all DNS",
+            "Encrypt queries"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS global threat intelligence feeds?",
+        "o": [
+            "Real-time blocking of new threats",
+            "Replace local signatures",
+            "Disable all rules",
+            "Slow down detection"
+        ]
+    },
+    {
+        "q": "Which malware type uses macro scripts in documents?",
+        "o": [
+            "Macro virus",
+            "Boot virus",
+            "File virus",
+            "Script virus"
+        ]
+    },
+    {
+        "q": "What is a benefit of rule hierarchy in application whitelisting?",
+        "o": [
+            "Specific rules override general",
+            "Simpler management",
+            "Faster performance",
+            "Lower cost"
+        ]
+    },
+    {
+        "q": "Which NAC integration allows guest social media login?",
+        "o": [
+            "Social media authentication",
+            "RADIUS only",
+            "LDAP only",
+            "Certificates only"
+        ]
+    },
+    {
+        "q": "What does a firewall do with IP options like source routing?",
+        "o": [
+            "Drops for security",
+            "Allows all options",
+            "Ignores options",
+            "Forwards unchanged"
+        ]
+    },
+    {
+        "q": "Which IDS evasion technique uses Unicode encoding?",
+        "o": [
+            "Character encoding obfuscation",
+            "Packet fragmentation",
+            "Encryption",
+            "Timing attacks"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus script emulation?",
+        "o": [
+            "Simulate script execution safely",
+            "Run scripts normally",
+            "Delete all scripts",
+            "Edit scripts"
+        ]
+    },
+    {
+        "q": "Which application whitelisting method works for PowerShell?",
+        "o": [
+            "Constrained language mode",
+            "EXE hash only",
+            "Path only",
+            "Name only"
+        ]
+    },
+    {
+        "q": "What is a endpoint health check in NAC?",
+        "o": [
+            "Verify security posture",
+            "Check physical health",
+            "Monitor temperature",
+            "Test battery"
+        ]
+    },
+    {
+        "q": "How do next-gen firewalls implement application identification without port dependency?",
+        "o": [
+            "Use protocol decoding and signatures",
+            "Rely solely on port numbers",
+            "Block all unknown applications",
+            "Use MAC address filtering"
+        ]
+    },
+    {
+        "q": "Which IPS tuning strategy reduces false positives during legitimate vulnerability scans?",
+        "o": [
+            "Create passlist for scanner IPs",
+            "Disable all detection rules",
+            "Increase sensitivity to maximum",
+            "Block all scanning activity"
+        ]
+    },
+    {
+        "q": "What is the primary challenge of antivirus detection for fileless malware?",
+        "o": [
+            "No file to scan on disk",
+            "Signatures update too slowly",
+            "Files are too large",
+            "Encryption is too strong"
+        ]
+    },
+    {
+        "q": "How does application whitelisting handle software installed per user vs system-wide?",
+        "o": [
+            "Different rules for user and system paths",
+            "Same rules apply everywhere",
+            "Only system paths are allowed",
+            "Only user paths are allowed"
+        ]
+    },
+    {
+        "q": "Which NAC deployment integrates with ServiceNow for automated ticket creation?",
+        "o": [
+            "ITSM integration",
+            "Manual ticketing",
+            "Email alerts only",
+            "Phone notifications"
+        ]
+    },
+    {
+        "q": "What technique prevents firewall bypass through IPv6 tunneling?",
+        "o": [
+            "Inspect IPv6 in IPv4 tunnels",
+            "Block all IPv6 traffic",
+            "Disable IPv4 entirely",
+            "Allow all tunnels"
+        ]
+    },
+    {
+        "q": "How do IPS systems detect encrypted malware C2 channels?",
+        "o": [
+            "Traffic patterns and JA3 fingerprints",
+            "Decrypt all TLS traffic",
+            "Block all encrypted traffic",
+            "Only detect plaintext"
+        ]
+    },
+    {
+        "q": "Which antivirus technique identifies malware by behavior in sandbox?",
+        "o": [
+            "Dynamic analysis",
+            "Static signature matching",
+            "Hash comparison only",
+            "File name checking"
+        ]
+    },
+    {
+        "q": "What is a challenge when whitelisting applications in containerized environments?",
+        "o": [
+            "Containers are ephemeral",
+            "Hashes never change",
+            "Publishers always sign",
+            "Paths are static"
+        ]
+    },
+    {
+        "q": "How does NAC handle devices with multiple users like kiosks?",
+        "o": [
+            "Device-based authentication",
+            "User-based authentication",
+            "No authentication needed",
+            "Biometric per user"
+        ]
+    },
+    {
+        "q": "Which firewall technique prevents HTTP/2 protocol-based attacks?",
+        "o": [
+            "HTTP/2 decoder and validation",
+            "Block HTTP/2 entirely",
+            "Allow all HTTP/2 traffic",
+            "Convert to HTTP/1.1"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS machine learning models for anomaly detection?",
+        "o": [
+            "Baseline and detect deviations",
+            "Match known signatures",
+            "Block all traffic",
+            "Encrypt all data"
+        ]
+    },
+    {
+        "q": "Which malware technique uses reflective DLL loading to avoid disk writes?",
+        "o": [
+            "Memory-only execution",
+            "File infection",
+            "Boot sector infection",
+            "Macro infection"
+        ]
+    },
+    {
+        "q": "How do you whitelist applications in a Citrix VDI environment?",
+        "o": [
+            "Master image with layered policies",
+            "Each VDI individually",
+            "No whitelisting possible",
+            "User-based only"
+        ]
+    },
+    {
+        "q": "What is a RADIUS CoA in NAC operations?",
+        "o": [
+            "Change of Authorization",
+            "Certificate of Authority",
+            "Center of Attention",
+            "Cost of Access"
+        ]
+    },
+    {
+        "q": "How does a firewall handle encrypted DNS like DoH for policy enforcement?",
+        "o": [
+            "Use DoH inspection or block",
+            "Cannot inspect at all",
+            "Allow all DoH traffic",
+            "Convert to plain DNS"
+        ]
+    },
+    {
+        "q": "Which IPS evasion technique uses IPv6 fragmentation overlap?",
+        "o": [
+            "IPv6 fragment attacks",
+            "IPv4 only attacks",
+            "TCP sequence prediction",
+            "DNS tunneling"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus kernel-mode callbacks?",
+        "o": [
+            "Monitor system calls in real-time",
+            "Scan files on demand",
+            "Update signatures",
+            "Manage quarantines"
+        ]
+    },
+    {
+        "q": "How does application whitelisting handle software that self-updates?",
+        "o": [
+            "Publisher rules allow updates",
+            "Hash rules block updates",
+            "Path rules fail",
+            "Name rules work best"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses ZTNA principles for remote access?",
+        "o": [
+            "Zero Trust Network Access",
+            "VPN only",
+            "Leased lines",
+            "Dial-up"
+        ]
+    },
+    {
+        "q": "What technique prevents firewall bypass through IP fragmentation overlap?",
+        "o": [
+            "Fragment reassembly with overlap detection",
+            "Block all fragments",
+            "Allow all fragments",
+            "Ignore fragments"
+        ]
+    },
+    {
+        "q": "How do IPS systems detect slow, low-bandwidth attacks?",
+        "o": [
+            "Long-duration threshold monitoring",
+            "Immediate packet inspection",
+            "Signature matching only",
+            "Port scanning detection"
+        ]
+    },
+    {
+        "q": "Which antivirus feature detects and blocks ransomware encryption behavior?",
+        "o": [
+            "Behavioral ransomware protection",
+            "Signature updates",
+            "Scheduled scans",
+            "Email filtering"
+        ]
+    },
+    {
+        "q": "What is a challenge with hash-based whitelisting for Java applications?",
+        "o": [
+            "JAR files can be recompressed with new hash",
+            "Java has no hashes",
+            "Hashes are always same",
+            "Java uses different format"
+        ]
+    },
+    {
+        "q": "How does NAC integrate with PAM solutions for privileged access?",
+        "o": [
+            "Just-in-time access provisioning",
+            "Always-on admin access",
+            "No integration possible",
+            "Static VLAN assignment"
+        ]
+    },
+    {
+        "q": "Which firewall technique prevents TLS man-in-the-middle attacks by inspecting certificates?",
+        "o": [
+            "Certificate pinning and validation",
+            "Block all TLS",
+            "Allow all certificates",
+            "Ignore certificate errors"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS threat intelligence file hash blocking?",
+        "o": [
+            "Block known malware hashes",
+            "Allow all files",
+            "Scan all files",
+            "Encrypt all files"
+        ]
+    },
+    {
+        "q": "Which malware technique uses WMI for persistence without registry?",
+        "o": [
+            "WMI event subscription",
+            "Run key persistence",
+            "Service installation",
+            "Scheduled tasks"
+        ]
+    },
+    {
+        "q": "How do you whitelist macros in Office while maintaining security?",
+        "o": [
+            "Digitally signed macros only",
+            "Allow all macros",
+            "Block all macros",
+            "User decides each time"
+        ]
+    },
+    {
+        "q": "What is a EAP-Chaining in advanced NAC deployments?",
+        "o": [
+            "Machine and user authentication",
+            "Password only auth",
+            "Certificate only auth",
+            "Biometric auth"
+        ]
+    },
+    {
+        "q": "How does a firewall handle QUIC protocol for policy enforcement?",
+        "o": [
+            "Inspect or block QUIC",
+            "Allow all QUIC traffic",
+            "Convert to TCP",
+            "Ignore QUIC"
+        ]
+    },
+    {
+        "q": "Which IPS detection method uses stateful protocol analysis?",
+        "o": [
+            "Protocol anomaly detection",
+            "Pattern matching",
+            "Hash comparison",
+            "File reputation"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus cloud-based machine learning?",
+        "o": [
+            "Real-time classification of unknowns",
+            "Local scanning only",
+            "Signature updates",
+            "File backups"
+        ]
+    },
+    {
+        "q": "How does application whitelisting handle PowerShell scripts in constrained mode?",
+        "o": [
+            "Allow signed scripts only",
+            "Block all PowerShell",
+            "Allow all scripts",
+            "User approval needed"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses SGT for policy enforcement across domains?",
+        "o": [
+            "Security Group Tags",
+            "VLAN tags",
+            "MAC addresses",
+            "IP addresses"
+        ]
+    },
+    {
+        "q": "What technique prevents firewall bypass through HTTP CONNECT method tunneling?",
+        "o": [
+            "Inspect CONNECT destinations",
+            "Block all CONNECT",
+            "Allow all tunnels",
+            "Ignore CONNECT"
+        ]
+    },
+    {
+        "q": "How do IPS systems detect DNS tunneling for data exfiltration?",
+        "o": [
+            "Analyze DNS query entropy and volume",
+            "Block all DNS",
+            "Allow all DNS",
+            "Only detect known domains"
+        ]
+    },
+    {
+        "q": "Which malware technique uses process doppelganging?",
+        "o": [
+            "Transaction NTFS abuse",
+            "Process hollowing",
+            "DLL injection",
+            "Hook injection"
+        ]
+    },
+    {
+        "q": "What is a challenge with publisher whitelisting using EV certificates?",
+        "o": [
+            "EV certs are expensive and rare",
+            "EV certs are always trusted",
+            "EV certs never expire",
+            "EV certs are insecure"
+        ]
+    },
+    {
+        "q": "How does NAC handle BYOD devices with mixed personal and corporate use?",
+        "o": [
+            "Containerization and app-level policies",
+            "Block all personal devices",
+            "Allow full access",
+            "No special handling"
+        ]
+    },
+    {
+        "q": "Which firewall technique prevents SSRF attacks through malicious requests?",
+        "o": [
+            "Filter internal IP destinations",
+            "Block all outbound",
+            "Allow all requests",
+            "Ignore URLs"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS global threat correlation?",
+        "o": [
+            "Link events across sensors",
+            "Local logging only",
+            "Single device alerts",
+            "Basic reporting"
+        ]
+    },
+    {
+        "q": "Which antivirus technique detects rootkits by comparing system state?",
+        "o": [
+            "Cross-view detection",
+            "Signature scanning",
+            "Heuristic analysis",
+            "Behavior monitoring"
+        ]
+    },
+    {
+        "q": "How does application whitelisting handle .NET applications with dynamic code generation?",
+        "o": [
+            "Focus on parent process and publisher",
+            "Block all .NET apps",
+            "Allow all .NET",
+            "Hash-based fails"
+        ]
+    },
+    {
+        "q": "What is a Trusted Network Connect in NAC history?",
+        "o": [
+            "TCG standard for NAC",
+            "Cisco proprietary",
+            "Microsoft only",
+            "Open source project"
+        ]
+    },
+    {
+        "q": "How does a firewall handle WebSocket traffic for policy enforcement?",
+        "o": [
+            "Inspect WebSocket handshake and data",
+            "Block all WebSockets",
+            "Allow all WebSockets",
+            "Treat as HTTP"
+        ]
+    },
+    {
+        "q": "Which IPS evasion technique uses application-layer encoding like base64?",
+        "o": [
+            "Payload encoding",
+            "Packet fragmentation",
+            "IP spoofing",
+            "Port hopping"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus boot-time scan in modern systems?",
+        "o": [
+            "Detect bootkits before OS loads",
+            "Replace real-time protection",
+            "Scan documents faster",
+            "Clean temporary files"
+        ]
+    },
+    {
+        "q": "How do you whitelist applications in a DevOps CI/CD pipeline?",
+        "o": [
+            "Integrate with pipeline tools",
+            "Manual approval each build",
+            "No whitelisting possible",
+            "Allow all builds"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses AI for risk-based access decisions?",
+        "o": [
+            "Adaptive access control",
+            "Static VLANs",
+            "Fixed ACLs",
+            "Basic authentication"
+        ]
+    },
+    {
+        "q": "What technique prevents firewall bypass through GRE tunneling?",
+        "o": [
+            "Inspect GRE tunnel contents",
+            "Block all GRE",
+            "Allow all tunnels",
+            "Ignore GRE"
+        ]
+    },
+    {
+        "q": "How do IPS systems detect zero-day exploits using generic signatures?",
+        "o": [
+            "Generic exploit payload detection",
+            "Specific virus signatures",
+            "Hash matching",
+            "File reputation"
+        ]
+    },
+    {
+        "q": "Which malware technique uses stolen certificates to sign malicious drivers?",
+        "o": [
+            "Certificate theft",
+            "Hash collision",
+            "Path manipulation",
+            "Name spoofing"
+        ]
+    },
+    {
+        "q": "What is a challenge with whitelisting in multi-tenant cloud environments?",
+        "o": [
+            "Different tenants need different rules",
+            "Hashes are identical",
+            "Publishers same",
+            "Paths standard"
+        ]
+    },
+    {
+        "q": "How does NAC integrate with cloud CASB for shadow IT detection?",
+        "o": [
+            "API-based policy sync",
+            "Manual configuration",
+            "No integration",
+            "Email alerts only"
+        ]
+    },
+    {
+        "q": "Which firewall technique prevents HTTP response splitting attacks?",
+        "o": [
+            "Header validation and sanitization",
+            "Block all HTTP",
+            "Allow all headers",
+            "Ignore responses"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS virtual patching for web applications?",
+        "o": [
+            "Protect web app vulnerabilities",
+            "Install patches",
+            "Reboot servers",
+            "Update OS"
+        ]
+    },
+    {
+        "q": "Which antivirus technique detects fileless malware in registry?",
+        "o": [
+            "Registry monitoring",
+            "File scanning",
+            "Email filtering",
+            "Web protection"
+        ]
+    },
+    {
+        "q": "How does application whitelisting handle DLLs loaded by legitimate processes?",
+        "o": [
+            "Verify DLL hashes or publishers",
+            "Allow all DLLs",
+            "Block all DLLs",
+            "Only check EXE files"
+        ]
+    },
+    {
+        "q": "What is a posture plugin in NAC?",
+        "o": [
+            "Checks specific compliance items",
+            "Network hardware",
+            "User interface",
+            "Database connector"
+        ]
+    },
+    {
+        "q": "How does a firewall handle encrypted SNI for TLS domain filtering?",
+        "o": [
+            "Use ESNI or block without inspection",
+            "Always can see domain",
+            "Never can see domain",
+            "Use IP only"
+        ]
+    },
+    {
+        "q": "Which IPS evasion technique uses protocol tunneling over HTTP?",
+        "o": [
+            "HTTP tunneling",
+            "ICMP tunneling",
+            "DNS tunneling",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus emulation for packed executables?",
+        "o": [
+            "Unpack and analyze",
+            "Delete packed files",
+            "Block all packers",
+            "Ignore packed files"
+        ]
+    },
+    {
+        "q": "How do you whitelist applications in a macOS environment?",
+        "o": [
+            "Use Apple's Gatekeeper and custom rules",
+            "Windows rules work",
+            "No whitelisting on Mac",
+            "Linux tools only"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses device posture for dynamic firewall rules?",
+        "o": [
+            "Policy-based ACLs",
+            "Static firewall rules",
+            "No integration",
+            "Manual updates"
+        ]
+    },
+    {
+        "q": "What technique prevents firewall bypass through IP address spoofing with MAC spoofing?",
+        "o": [
+            "IP-MAC binding",
+            "Block all traffic",
+            "Allow all spoofing",
+            "Ignore MAC"
+        ]
+    },
+    {
+        "q": "How do IPS systems detect botnet activity using behavioral analysis?",
+        "o": [
+            "C2 pattern detection",
+            "Signature matching",
+            "Hash blocking",
+            "URL filtering"
+        ]
+    },
+    {
+        "q": "Which malware technique uses API hooking to hide from antivirus?",
+        "o": [
+            "User-mode hooks",
+            "File infection",
+            "Boot infection",
+            "Macro infection"
+        ]
+    },
+    {
+        "q": "What is a challenge with publisher whitelisting for legacy applications?",
+        "o": [
+            "Old apps may not be signed",
+            "Hashes are perfect",
+            "Paths always work",
+            "Names are unique"
+        ]
+    },
+    {
+        "q": "How does NAC integrate with EDR for advanced threat response?",
+        "o": [
+            "Automated quarantine on EDR alerts",
+            "Manual isolation",
+            "No integration",
+            "Email alerts only"
+        ]
+    },
+    {
+        "q": "Which firewall technique prevents cache poisoning via DNS over TCP?",
+        "o": [
+            "DNS TCP inspection",
+            "Block all DNS",
+            "Allow all DNS",
+            "Ignore TCP DNS"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS threat emulation sandbox?",
+        "o": [
+            "Execute suspicious files",
+            "Match signatures",
+            "Block all files",
+            "Scan for viruses"
+        ]
+    },
+    {
+        "q": "Which antivirus technique detects process injection attacks?",
+        "o": [
+            "Process monitoring",
+            "File scanning",
+            "Registry cleaning",
+            "Disk defrag"
+        ]
+    },
+    {
+        "q": "How does application whitelisting handle software installed via MSI?",
+        "o": [
+            "MSI publisher and hash rules",
+            "EXE rules only",
+            "DLL rules only",
+            "Script rules only"
+        ]
+    },
+    {
+        "q": "What is a remediation network with automated patch deployment?",
+        "o": [
+            "Self-healing NAC",
+            "Manual patching",
+            "No patching",
+            "Email notification"
+        ]
+    },
+    {
+        "q": "How does a firewall handle IPv6 extension headers for policy?",
+        "o": [
+            "Inspect or drop malicious headers",
+            "Allow all headers",
+            "Block IPv6",
+            "Ignore headers"
+        ]
+    },
+    {
+        "q": "Which IPS detection method uses AI for user behavior analysis?",
+        "o": [
+            "UEBA integration",
+            "Signature matching",
+            "Protocol analysis",
+            "Port scanning"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus cloud-based threat hunting?",
+        "o": [
+            "Proactive threat search",
+            "Passive scanning",
+            "Scheduled scans",
+            "Signature updates"
+        ]
+    },
+    {
+        "q": "How do you whitelist applications in a Linux environment?",
+        "o": [
+            "AppArmor or SELinux policies",
+            "Windows AppLocker",
+            "macOS rules",
+            "No tools exist"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses RPC for endpoint assessment?",
+        "o": [
+            "Windows NAP",
+            "Cisco NAC",
+            "OpenNAC",
+            "PacketFence"
+        ]
+    },
+    {
+        "q": "What technique prevents firewall bypass through HTTP parameter pollution?",
+        "o": [
+            "Parameter validation",
+            "Block all HTTP",
+            "Allow all parameters",
+            "Ignore parameters"
+        ]
+    },
+    {
+        "q": "How do IPS systems detect crypto-mining malware on network?",
+        "o": [
+            "Mining pool traffic patterns",
+            "Virus signatures",
+            "Hash blocking",
+            "URL filtering"
+        ]
+    },
+    {
+        "q": "Which malware technique uses scheduled tasks for persistence?",
+        "o": [
+            "Task scheduler abuse",
+            "Run key",
+            "Service install",
+            "Boot execute"
+        ]
+    },
+    {
+        "q": "What is a challenge with whitelisting in highly dynamic serverless environments?",
+        "o": [
+            "Ephemeral functions",
+            "Static files",
+            "Permanent storage",
+            "Fixed paths"
+        ]
+    },
+    {
+        "q": "How does NAC integrate with SOAR for automated response?",
+        "o": [
+            "Playbook orchestration",
+            "Manual response",
+            "No automation",
+            "Basic alerts"
+        ]
+    },
+    {
+        "q": "Which firewall technique prevents HTTP request smuggling in modern proxies?",
+        "o": [
+            "HTTP/2 and TLS termination",
+            "Block all HTTP",
+            "Allow all requests",
+            "Ignore content-length"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS file integrity monitoring?",
+        "o": [
+            "Detect critical file changes",
+            "Block all files",
+            "Scan for viruses",
+            "Monitor network"
+        ]
+    },
+    {
+        "q": "Which antivirus technique detects exploit kits landing pages?",
+        "o": [
+            "URL and script analysis",
+            "File scanning",
+            "Email filtering",
+            "Disk cleanup"
+        ]
+    },
+    {
+        "q": "How does application whitelisting handle browser extensions?",
+        "o": [
+            "Browser-specific policies",
+            "EXE rules apply",
+            "DLL rules apply",
+            "No control possible"
+        ]
+    },
+    {
+        "q": "What is a endpoint compliance score in NAC?",
+        "o": [
+            "Risk-based numerical value",
+            "Pass/fail only",
+            "Binary compliant only",
+            "No scoring"
+        ]
+    },
+    {
+        "q": "How does a firewall handle QUIC's 0-RTT for policy enforcement?",
+        "o": [
+            "Rate limit or block 0-RTT",
+            "Allow all 0-RTT",
+            "Convert to TCP",
+            "Ignore QUIC"
+        ]
+    },
+    {
+        "q": "Which IPS evasion technique uses TLS session resumption?",
+        "o": [
+            "Abuse session tickets",
+            "Packet fragmentation",
+            "IP spoofing",
+            "Port hopping"
+        ]
+    },
+    {
+        "q": "How do you design a firewall policy that prevents DNS rebinding attacks against IoT devices?",
+        "o": [
+            "Filter private IP responses and validate origins",
+            "Block all DNS traffic from IoT",
+            "Allow all DNS queries",
+            "Use static host files only"
+        ]
+    },
+    {
+        "q": "Which IPS tuning methodology uses F1 scores to optimize signature thresholds?",
+        "o": [
+            "Precision-recall optimization",
+            "Random threshold selection",
+            "Disable all signatures",
+            "Maximum sensitivity always"
+        ]
+    },
+    {
+        "q": "What technique detects antivirus evasion through direct system call invocation?",
+        "o": [
+            "Kernel callback monitoring",
+            "User-mode hooking",
+            "Signature scanning",
+            "Hash verification"
+        ]
+    },
+    {
+        "q": "How does application whitelisting handle .NET assembly loading from untrusted sources?",
+        "o": [
+            "CAS policy and assembly binding",
+            "Allow all assemblies",
+            "Block all .NET",
+            "Hash only verification"
+        ]
+    },
+    {
+        "q": "Which NAC architecture uses distributed enforcement for branch offices without controllers?",
+        "o": [
+            "Cloud-managed edge NAC",
+            "Centralized controller",
+            "Standalone only",
+            "No branch support"
+        ]
+    },
+    {
+        "q": "How do you prevent firewall bypass through IPv6 RA flooding and neighbor discovery spoofing?",
+        "o": [
+            "RA guard and ND inspection",
+            "Disable IPv6 entirely",
+            "Allow all RA messages",
+            "Use static neighbors"
+        ]
+    },
+    {
+        "q": "What is the purpose of IPS threat intelligence sharing via STIX/TAXII?",
+        "o": [
+            "Automated indicator exchange",
+            "Manual IOC updates",
+            "Disable threat intel",
+            "Local only feeds"
+        ]
+    },
+    {
+        "q": "Which malware technique uses VBA stomping to evade antivirus?",
+        "o": [
+            "P-code vs source code mismatch",
+            "Polymorphic code",
+            "Metamorphic code",
+            "Encrypted payloads"
+        ]
+    },
+    {
+        "q": "How do you whitelist applications in a environment with thousands of custom in-house tools?",
+        "o": [
+            "Internal CA signing and CI/CD integration",
+            "Hash each build manually",
+            "Allow all internal tools",
+            "No whitelisting possible"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses eBPF for deep endpoint visibility?",
+        "o": [
+            "Extended Berkeley Packet Filter",
+            "Windows only agents",
+            "SNMP polling",
+            "NetFlow only"
+        ]
+    },
+    {
+        "q": "How does a stateful firewall handle TCP simultaneous open scenario?",
+        "o": [
+            "Creates state for both SYN packets",
+            "Drops both connections",
+            "Allows only one",
+            "Treats as invalid"
+        ]
+    },
+    {
+        "q": "What technique detects IPS evasion through IDS load balancing and out-of-order delivery?",
+        "o": [
+            "Flow reassembly with sequence tracking",
+            "Drop all out-of-order",
+            "Process individually",
+            "Ignore ordering"
+        ]
+    },
+    {
+        "q": "Which antivirus technique uses hardware-assisted virtualization for rootkit detection?",
+        "o": [
+            "VT-x/AMD-V memory isolation",
+            "Software emulation",
+            "Signature scanning",
+            "Hash verification"
+        ]
+    },
+    {
+        "q": "How does application whitelisting handle Electron-based applications with embedded Chromium?",
+        "o": [
+            "Main executable hash with resource monitoring",
+            "Block all Electron apps",
+            "Allow all JavaScript",
+            "Name-based only"
+        ]
+    },
+    {
+        "q": "What is a RADIUS dynamic VLAN change with CoA in NAC?",
+        "o": [
+            "VLAN reassign based on posture change",
+            "Static VLAN assignment",
+            "No VLAN changes",
+            "Manual VLAN switch"
+        ]
+    },
+    {
+        "q": "How do you prevent firewall bypass through HTTP/2 HPACK compression side-channel?",
+        "o": [
+            "HPACK decoder limits",
+            "Block HTTP/2",
+            "Allow all compression",
+            "Ignore headers"
+        ]
+    },
+    {
+        "q": "Which IPS detection method uses Bayesian networks for anomaly scoring?",
+        "o": [
+            "Probabilistic anomaly detection",
+            "Simple threshold",
+            "Static rules",
+            "Signature only"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus hypervisor-level memory introspection?",
+        "o": [
+            "Inspect guest VM memory from host",
+            "Guest OS scanning",
+            "Network monitoring",
+            "File scanning"
+        ]
+    },
+    {
+        "q": "How do you whitelist applications in a SOA microservices architecture?",
+        "o": [
+            "Service mesh policy enforcement",
+            "Container level only",
+            "Host level only",
+            "No whitelisting"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses TPM for hardware-rooted attestation?",
+        "o": [
+            "Trusted Platform Module",
+            "Software only",
+            "BIOS password",
+            "USB token"
+        ]
+    },
+    {
+        "q": "How does a firewall handle TCP Fast Open for policy enforcement?",
+        "o": [
+            "Validate TFO cookie and data",
+            "Block all TFO",
+            "Allow all TFO",
+            "Ignore TFO"
+        ]
+    },
+    {
+        "q": "What technique detects IPS evasion through protocol ambiguity in RPC?",
+        "o": [
+            "RPC state machine normalization",
+            "Block all RPC",
+            "Allow all RPC",
+            "Port only filtering"
+        ]
+    },
+    {
+        "q": "Which malware technique uses indirect syscalls to bypass user-mode hooks?",
+        "o": [
+            "Hell's Gate technique",
+            "Direct syscall",
+            "DLL injection",
+            "Process hollowing"
+        ]
+    },
+    {
+        "q": "How does application whitelisting handle applications packed with multiple layers?",
+        "o": [
+            "Final unpacked hash after emulation",
+            "Packed hash only",
+            "Block all packers",
+            "Name-based allow"
+        ]
+    },
+    {
+        "q": "What is a TrustSec SGT propagation across WAN with LISP?",
+        "o": [
+            "Locator/ID Separation Protocol",
+            "MPLS only",
+            "VLAN tags",
+            "IP only"
+        ]
+    },
+    {
+        "q": "How do you prevent firewall bypass through ICMP tunnel with covert channels?",
+        "o": [
+            "ICMP payload inspection and rate limits",
+            "Block all ICMP",
+            "Allow all ICMP",
+            "Ignore ICMP"
+        ]
+    },
+    {
+        "q": "Which IPS detection method uses hidden Markov models for protocol analysis?",
+        "o": [
+            "State-sequence anomaly",
+            "Static signatures",
+            "Pattern matching",
+            "Hash comparison"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus UEFI firmware scanning?",
+        "o": [
+            "Detect bootkits in firmware",
+            "Scan OS files",
+            "Check drivers",
+            "Monitor network"
+        ]
+    },
+    {
+        "q": "How do you whitelist applications in a Kerberos-authenticated Windows domain?",
+        "o": [
+            "Group policy with AppLocker rules",
+            "Local policy only",
+            "User decides",
+            "No integration"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses CCPA for privacy-compliant access control?",
+        "o": [
+            "Privacy-preserving attribute checks",
+            "Full data collection",
+            "No privacy",
+            "Basic logging"
+        ]
+    },
+    {
+        "q": "How does a firewall handle MPTCP for multi-path policy enforcement?",
+        "o": [
+            "Track all subflows as single session",
+            "Each subflow separate",
+            "Block MPTCP",
+            "Allow all"
+        ]
+    },
+    {
+        "q": "What technique detects IPS evasion through TCP SACK panic exploitation?",
+        "o": [
+            "SACK validation and limits",
+            "Block SACK",
+            "Allow all options",
+            "Ignore TCP"
+        ]
+    },
+    {
+        "q": "Which antivirus technique uses Intel CET for control-flow integrity?",
+        "o": [
+            "Hardware shadow stack",
+            "Software emulation",
+            "Signature scanning",
+            "Behavior monitoring"
+        ]
+    },
+    {
+        "q": "How does application whitelisting handle COM objects and scriptlet execution?",
+        "o": [
+            "COM object permissions and CLSID rules",
+            "Block all COM",
+            "Allow all COM",
+            "EXE rules only"
+        ]
+    },
+    {
+        "q": "What is a EAP-TEAP for advanced NAC authentication?",
+        "o": [
+            "Tunneled EAP with inner methods",
+            "Basic EAP-TLS",
+            "PEAP only",
+            "LEAP only"
+        ]
+    },
+    {
+        "q": "How do you prevent firewall bypass through DNS-over-HTTPS with domain fronting?",
+        "o": [
+            "SNI and TLS fingerprint analysis",
+            "Block all HTTPS",
+            "Allow all DoH",
+            "IP only blocks"
+        ]
+    },
+    {
+        "q": "Which IPS detection method uses graph-based attack path analysis?",
+        "o": [
+            "Network kill chain mapping",
+            "Single alert only",
+            "Signature matching",
+            "Port scanning"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus ROP gadget detection?",
+        "o": [
+            "Return-oriented programming exploit detection",
+            "Virus signature",
+            "File hash",
+            "Email filter"
+        ]
+    },
+    {
+        "q": "How do you whitelist applications in a mixed OS environment with Linux, Windows, macOS?",
+        "o": [
+            "Unified endpoint management",
+            "Per-OS manual rules",
+            "Allow all",
+            "Block all non-Windows"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses微分段 (micro-segmentation) in SDN?",
+        "o": [
+            "Software-defined network integration",
+            "VLAN only",
+            "ACL only",
+            "Firewall only"
+        ]
+    },
+    {
+        "q": "How does a firewall handle IPsec ESP without decryption?",
+        "o": [
+            "SPI tracking and bypass",
+            "Block all ESP",
+            "Allow all ESP",
+            "Attempt decrypt"
+        ]
+    },
+    {
+        "q": "What technique detects IPS evasion through interleaving TCP urgent pointers?",
+        "o": [
+            "Urgent pointer sanitization",
+            "Block urgent data",
+            "Allow all flags",
+            "Ignore TCP"
+        ]
+    },
+    {
+        "q": "Which malware technique uses heaven's gate to switch between 32 and 64-bit execution?",
+        "o": [
+            "Wow64 transition abuse",
+            "DLL injection",
+            "Process hollowing",
+            "Hook injection"
+        ]
+    },
+    {
+        "q": "How does application whitelisting handle JIT-compiled code from browsers?",
+        "o": [
+            "Browser process policies",
+            "Block all JIT",
+            "Allow all scripts",
+            "Hash verification"
+        ]
+    },
+    {
+        "q": "What is a IETF RFC 8576 for IoT NAC?",
+        "o": [
+            "IoT device onboarding standards",
+            "VLAN standard",
+            "802.1X update",
+            "RADIUS extension"
+        ]
+    },
+    {
+        "q": "How do you prevent firewall bypass through IPv6 extension header chaining attacks?",
+        "o": [
+            "Header chain length limits",
+            "Block all IPv6",
+            "Allow all headers",
+            "Ignore extensions"
+        ]
+    },
+    {
+        "q": "Which IPS detection method uses federated learning for cross-enterprise threat detection?",
+        "o": [
+            "Privacy-preserving ML",
+            "Local models only",
+            "Centralized only",
+            "No ML"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus Intel TDT integration?",
+        "o": [
+            "Threat Detection Technology",
+            "CPU scanning",
+            "Memory only",
+            "Disk only"
+        ]
+    },
+    {
+        "q": "How do you whitelist applications using reputation with threat intelligence feeds?",
+        "o": [
+            "Dynamic reputation scoring",
+            "Static allow lists",
+            "Manual updates",
+            "No reputation"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses NIST 800-207 for Zero Trust architecture?",
+        "o": [
+            "ZTA compliance",
+            "Perimeter only",
+            "VPN only",
+            "Firewall only"
+        ]
+    },
+    {
+        "q": "How does a firewall handle QUIC connection migration for policy?",
+        "o": [
+            "Track connection IDs across paths",
+            "New connection each path",
+            "Block migration",
+            "Allow all"
+        ]
+    },
+    {
+        "q": "What technique detects IPS evasion through HTTP chunked encoding tricks?",
+        "o": [
+            "Chunk decoding and reassembly",
+            "Block chunked",
+            "Allow all",
+            "Ignore encoding"
+        ]
+    },
+    {
+        "q": "Which malware technique uses callback table manipulation in memory?",
+        "o": [
+            "Kernel callback hooks",
+            "File infection",
+            "Boot sector",
+            "Macro virus"
+        ]
+    },
+    {
+        "q": "How does application whitelisting handle Python packages in virtual environments?",
+        "o": [
+            "Hash verification of site-packages",
+            "Block all Python",
+            "Allow all scripts",
+            "Name only"
+        ]
+    },
+    {
+        "q": "What is a OpenRoaming for carrier-grade NAC?",
+        "o": [
+            "Wi-Fi roaming alliance",
+            "Cisco only",
+            "Microsoft only",
+            "Apple only"
+        ]
+    },
+    {
+        "q": "How do you prevent firewall bypass through TLS 1.3 early data with 0-RTT replay?",
+        "o": [
+            "Anti-replay mechanisms",
+            "Block 0-RTT",
+            "Allow all",
+            "Ignore replay"
+        ]
+    },
+    {
+        "q": "Which IPS detection method uses GANs for adversarial attack detection?",
+        "o": [
+            "Generative adversarial networks",
+            "Static rules",
+            "Signature only",
+            "Basic ML"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus AMD PSP integration?",
+        "o": [
+            "Platform Security Processor",
+            "CPU crypto",
+            "Memory only",
+            "Disk only"
+        ]
+    },
+    {
+        "q": "How do you whitelist applications using Docker content trust?",
+        "o": [
+            "Signed images with Notary",
+            "Allow all images",
+            "Block all containers",
+            "Hash only"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses blockchain for distributed identity?",
+        "o": [
+            "DID and verifiable credentials",
+            "Centralized LDAP",
+            "RADIUS only",
+            "Local accounts"
+        ]
+    },
+    {
+        "q": "How does a firewall handle SRv6 for policy in 5G networks?",
+        "o": [
+            "Segment routing inspection",
+            "Block SRv6",
+            "Allow all",
+            "Ignore routing"
+        ]
+    },
+    {
+        "q": "What technique detects IPS evasion through TCP timestamp manipulation?",
+        "o": [
+            "Timestamp sanity checks",
+            "Block timestamps",
+            "Allow all",
+            "Ignore options"
+        ]
+    },
+    {
+        "q": "Which malware technique uses exception handler hijacking?",
+        "o": [
+            "SEH overwrite",
+            "DLL injection",
+            "Process hollowing",
+            "Hook injection"
+        ]
+    },
+    {
+        "q": "How does application whitelisting handle WebAssembly in browsers?",
+        "o": [
+            "Browser security policies",
+            "Block all WASM",
+            "Allow all code",
+            "Hash verification"
+        ]
+    },
+    {
+        "q": "What is a EAP-NOOB for IoT NAC?",
+        "o": [
+            "Nimble Out-of-Band auth",
+            "Certificate only",
+            "Password only",
+            "MAC only"
+        ]
+    },
+    {
+        "q": "How do you prevent firewall bypass through HTTP/2 PRIORITY frame flooding?",
+        "o": [
+            "Priority frame rate limiting",
+            "Block HTTP/2",
+            "Allow all frames",
+            "Ignore priority"
+        ]
+    },
+    {
+        "q": "Which IPS detection method uses entropy analysis for polymorphic code?",
+        "o": [
+            "Statistical randomness detection",
+            "Signature match",
+            "Hash compare",
+            "Pattern match"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus ARM TrustZone monitoring?",
+        "o": [
+            "Secure world integrity",
+            "Normal world only",
+            "Memory only",
+            "Disk only"
+        ]
+    },
+    {
+        "q": "How do you whitelist applications in serverless functions across cloud providers?",
+        "o": [
+            "IAM roles and function policies",
+            "Allow all functions",
+            "Block all",
+            "Manual list"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses CACAO for security orchestration?",
+        "o": [
+            "Collaborative Automated Course of Action",
+            "Manual playbooks",
+            "Static response",
+            "Email alerts"
+        ]
+    },
+    {
+        "q": "How does a firewall handle MPLS label stacking for policy?",
+        "o": [
+            "Deep label inspection",
+            "Block MPLS",
+            "Allow all",
+            "Ignore labels"
+        ]
+    },
+    {
+        "q": "What technique detects IPS evasion through TCP MD5 signature options?",
+        "o": [
+            "MD5 digest validation",
+            "Block MD5",
+            "Allow all",
+            "Ignore options"
+        ]
+    },
+    {
+        "q": "Which malware technique uses Vectored Exception Handler injection?",
+        "o": [
+            "VEH hijacking",
+            "SEH overwrite",
+            "DLL injection",
+            "Process hollowing"
+        ]
+    },
+    {
+        "q": "How does application whitelisting handle Frida and dynamic instrumentation?",
+        "o": [
+            "Detect and block injection",
+            "Allow all tools",
+            "Block all debuggers",
+            "Name-based"
+        ]
+    },
+    {
+        "q": "What is a RATS for continuous NAC assessment?",
+        "o": [
+            "Remote Attestation Procedures",
+            "Static checks",
+            "Login only",
+            "Periodic scans"
+        ]
+    },
+    {
+        "q": "How do you prevent firewall bypass through GRE-in-UDP encapsulation?",
+        "o": [
+            "Inspect inner GRE packets",
+            "Block all UDP",
+            "Allow all GRE",
+            "Ignore tunnels"
+        ]
+    },
+    {
+        "q": "Which IPS detection method uses differential privacy for threat sharing?",
+        "o": [
+            "Privacy-preserving analytics",
+            "Raw data sharing",
+            "No sharing",
+            "Local only"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus Apple M1 Secure Boot verification?",
+        "o": [
+            "iBoot integrity check",
+            "File scanning",
+            "Email filter",
+            "Network monitor"
+        ]
+    },
+    {
+        "q": "How do you whitelist applications using eBPF in Linux kernels?",
+        "o": [
+            "BPF LSM hooks",
+            "AppArmor only",
+            "SELinux only",
+            "No eBPF"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses OPA for policy-as-code?",
+        "o": [
+            "Open Policy Agent",
+            "Static ACLs",
+            "VLAN only",
+            "Firewall rules"
+        ]
+    },
+    {
+        "q": "How does a firewall handle VXLAN for policy in data centers?",
+        "o": [
+            "VNI and inner packet inspection",
+            "Block VXLAN",
+            "Allow all",
+            "Ignore tunnels"
+        ]
+    },
+    {
+        "q": "What technique detects IPS evasion through TCP SACK selective acknowledgment exploitation?",
+        "o": [
+            "SACK range validation",
+            "Block SACK",
+            "Allow all",
+            "Ignore TCP"
+        ]
+    },
+    {
+        "q": "Which malware technique uses kernel callback tables for persistence?",
+        "o": [
+            "Notify routine abuse",
+            "Run key",
+            "Service",
+            "Scheduled task"
+        ]
+    },
+    {
+        "q": "How does application whitelisting handle PowerShell JEA (Just Enough Admin)?",
+        "o": [
+            "Constrained endpoints",
+            "Allow all PowerShell",
+            "Block PowerShell",
+            "User decide"
+        ]
+    },
+    {
+        "q": "What is a FIDO2 for passwordless NAC authentication?",
+        "o": [
+            "WebAuthn and CTAP",
+            "Password only",
+            "Certificate only",
+            "Biometric only"
+        ]
+    },
+    {
+        "q": "How do you prevent firewall bypass through HTTP desync attacks?",
+        "o": [
+            "HTTP request smuggling protection",
+            "Block all HTTP",
+            "Allow all",
+            "Ignore headers"
+        ]
+    },
+    {
+        "q": "Which IPS detection method uses homomorphic encryption for analysis?",
+        "o": [
+            "Encrypted data processing",
+            "Plaintext only",
+            "Decrypt first",
+            "No analysis"
+        ]
+    },
+    {
+        "q": "What is the purpose of antivirus RISC-V hypervisor extension monitoring?",
+        "o": [
+            "Virtualization layer integrity",
+            "Guest OS only",
+            "Host only",
+            "Network only"
+        ]
+    },
+    {
+        "q": "How do you whitelist applications using confidential computing enclaves?",
+        "o": [
+            "Attestation-based policies",
+            "Allow all enclaves",
+            "Block enclaves",
+            "Hash only"
+        ]
+    },
+    {
+        "q": "Which NAC deployment uses ALFA for attribute-based access control?",
+        "o": [
+            "ABAC with XACML",
+            "RBAC only",
+            "DAC only",
+            "MAC only"
+        ]
+    },
+    {
+        "q": "How does a firewall handle GENEVE tunnel with multiple options?",
+        "o": [
+            "Option TLV inspection",
+            "Block GENEVE",
+            "Allow all",
+            "Ignore options"
+        ]
+    },
+    {
+        "q": "What technique detects IPS evasion through TCP window scaling manipulation?",
+        "o": [
+            "Window scale validation",
+            "Block scaling",
+            "Allow all",
+            "Ignore windows"
+        ]
+    },
+    {
+        "q": "Which malware technique uses PCIe DMA for direct memory access?",
+        "o": [
+            "DMA attacks",
+            "DLL injection",
+            "Process hollowing",
+            "Hook injection"
+        ]
+    },
+    {
+        "q": "How does application whitelisting handle WASI in WebAssembly system interface?",
+        "o": [
+            "Capability-based security",
+            "Block all WASI",
+            "Allow all",
+            "Name-based"
+        ]
+    },
+    {
+        "q": "What is a OpenID Connect for federated NAC?",
+        "o": [
+            "OIDC with claims",
+            "SAML only",
+            "OAuth only",
+            "LDAP only"
+        ]
+    },
+    {
+        "q": "How do you prevent firewall bypass through TLS encrypted client hello?",
+        "o": [
+            "ECH configuration and policy",
+            "Block TLS 1.3",
+            "Allow all ECH",
+            "Ignore encryption"
+        ]
+    },
+    {
+        "q": "Which IPS detection method uses topological data analysis for network flows?",
+        "o": [
+            "Persistent homology",
+            "Statistical only",
+            "Signature only",
+            "Pattern only"
+        ]
+    }
+]
