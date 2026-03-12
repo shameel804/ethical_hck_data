@@ -1,0 +1,4358 @@
+[
+    {
+        "q": "What is the primary purpose of Cloud IAM in GCP?",
+        "o": [
+            "Manage access control by defining who has access to which resources",
+            "Monitor network traffic between virtual machines",
+            "Store encrypted secrets and passwords",
+            "Create and manage virtual machine instances"
+        ]
+    },
+    {
+        "q": "Which GCP service is used to centrally manage encryption keys?",
+        "o": [
+            "Cloud Key Management Service",
+            "Secret Manager",
+            "Cloud HSM",
+            "Cloud EKM"
+        ]
+    },
+    {
+        "q": "What does VPC stand for in GCP networking?",
+        "o": [
+            "Virtual Private Cloud",
+            "Very Private Connection",
+            "Virtual Public Cloud",
+            "Verified Private Channel"
+        ]
+    },
+    {
+        "q": "Which GCP service provides audit trails for API activities?",
+        "o": [
+            "Cloud Audit Logs",
+            "Cloud Monitoring",
+            "Cloud Trace",
+            "Cloud Debugger"
+        ]
+    },
+    {
+        "q": "What type of data is primarily stored in Secret Manager?",
+        "o": [
+            "Sensitive data like API keys and passwords",
+            "Virtual machine disk images",
+            "BigQuery datasets",
+            "Cloud Storage buckets"
+        ]
+    },
+    {
+        "q": "Which IAM role provides read-only access to GCP resources?",
+        "o": [
+            "Viewer",
+            "Editor",
+            "Owner",
+            "Admin"
+        ]
+    },
+    {
+        "q": "What is a fundamental principle of IAM permissions?",
+        "o": [
+            "Grant least privilege necessary for tasks",
+            "Grant all users admin access by default",
+            "Never audit user permissions",
+            "Use only primitive roles"
+        ]
+    },
+    {
+        "q": "Which encryption option is used by default for data at rest in GCP?",
+        "o": [
+            "Google-managed encryption keys",
+            "Customer-managed encryption keys",
+            "Customer-supplied encryption keys",
+            "No encryption by default"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule used for?",
+        "o": [
+            "Allow or deny traffic to VM instances",
+            "Create virtual machines",
+            "Store database backups",
+            "Manage user identities"
+        ]
+    },
+    {
+        "q": "How long are Cloud Audit Logs retained by default?",
+        "o": [
+            "30 days",
+            "7 days",
+            "90 days",
+            "365 days"
+        ]
+    },
+    {
+        "q": "What is the maximum size of a secret version in Secret Manager?",
+        "o": [
+            "64 KB",
+            "1 MB",
+            "10 MB",
+            "100 MB"
+        ]
+    },
+    {
+        "q": "Which IAM role allows modifying but not deleting resources?",
+        "o": [
+            "Editor",
+            "Viewer",
+            "Owner",
+            "Admin"
+        ]
+    },
+    {
+        "q": "What is a bucket in Cloud Storage security context?",
+        "o": [
+            "A container for storing objects with access policies",
+            "A type of firewall rule",
+            "An IAM role",
+            "A virtual network segment"
+        ]
+    },
+    {
+        "q": "Which component defines network boundaries in GCP?",
+        "o": [
+            "VPC networks",
+            "Cloud Functions",
+            "App Engine",
+            "Cloud Run"
+        ]
+    },
+    {
+        "q": "What type of audit logs record administrative activities?",
+        "o": [
+            "Admin Activity logs",
+            "Data Access logs",
+            "System Event logs",
+            "Network logs"
+        ]
+    },
+    {
+        "q": "What is a secret version in Secret Manager?",
+        "o": [
+            "An immutable copy of secret data",
+            "A user permission level",
+            "An encryption algorithm",
+            "A network security group"
+        ]
+    },
+    {
+        "q": "Which IAM role provides full control over all resources?",
+        "o": [
+            "Owner",
+            "Editor",
+            "Viewer",
+            "Browser"
+        ]
+    },
+    {
+        "q": "What is object versioning in Cloud Storage?",
+        "o": [
+            "Keeping multiple versions of an object",
+            "Encrypting objects with different keys",
+            "Sharing objects with multiple users",
+            "Moving objects between buckets"
+        ]
+    },
+    {
+        "q": "What is a subnet in VPC networking?",
+        "o": [
+            "A range of IP addresses within a VPC",
+            "A type of firewall rule",
+            "A VPN connection",
+            "A load balancer configuration"
+        ]
+    },
+    {
+        "q": "Which audit log type requires explicit enablement?",
+        "o": [
+            "Data Access logs",
+            "Admin Activity logs",
+            "System Event logs",
+            "Policy Denied logs"
+        ]
+    },
+    {
+        "q": "How is a secret accessed in Secret Manager?",
+        "o": [
+            "Via API calls with proper permissions",
+            "Through Cloud Console only",
+            "By SSH into VMs only",
+            "Using gcloud command only"
+        ]
+    },
+    {
+        "q": "What is a custom IAM role?",
+        "o": [
+            "User-defined role with specific permissions",
+            "Default primitive role",
+            "Predefined role by Google",
+            "Basic role for all users"
+        ]
+    },
+    {
+        "q": "What encryption option uses customer-provided keys?",
+        "o": [
+            "Customer-supplied encryption keys",
+            "Google-managed encryption keys",
+            "Default encryption",
+            "No encryption"
+        ]
+    },
+    {
+        "q": "What is a VPC peering connection?",
+        "o": [
+            "Private connectivity between VPC networks",
+            "Public internet connection",
+            "Database connection string",
+            "Load balancer endpoint"
+        ]
+    },
+    {
+        "q": "What information is included in audit logs?",
+        "o": [
+            "Who did what and when",
+            "Only error messages",
+            "Only successful operations",
+            "Only failed attempts"
+        ]
+    },
+    {
+        "q": "What is secret rotation in Secret Manager?",
+        "o": [
+            "Regularly updating secret values",
+            "Deleting old secrets",
+            "Moving secrets to new regions",
+            "Changing secret names"
+        ]
+    },
+    {
+        "q": "What is a service account used for?",
+        "o": [
+            "Grant permissions to applications and VMs",
+            "Store user passwords",
+            "Create VPC networks",
+            "Manage billing accounts"
+        ]
+    },
+    {
+        "q": "What is a CMEK in GCP storage security?",
+        "o": [
+            "Customer-managed encryption keys",
+            "Cloud-managed encryption keys",
+            "Centralized managed encryption keys",
+            "Custom memory encryption keys"
+        ]
+    },
+    {
+        "q": "What is a firewall rule composed of?",
+        "o": [
+            "Direction, protocol, ports, and targets",
+            "Only IP addresses",
+            "Only port numbers",
+            "Only protocol types"
+        ]
+    },
+    {
+        "q": "What is excluded from audit logs by default?",
+        "o": [
+            "Data Access logs",
+            "Admin Activity logs",
+            "System Event logs",
+            "Policy Denied logs"
+        ]
+    },
+    {
+        "q": "What is the purpose of secret labels?",
+        "o": [
+            "Organize and filter secrets",
+            "Encrypt secret data",
+            "Rotate secrets automatically",
+            "Share secrets with users"
+        ]
+    },
+    {
+        "q": "What is IAM policy inheritance in GCP?",
+        "o": [
+            "Policies flow from organization to resources",
+            "Policies are isolated per resource",
+            "Policies never inherit",
+            "Policies only apply to users"
+        ]
+    },
+    {
+        "q": "What is a signed URL in Cloud Storage?",
+        "o": [
+            "URL with temporary access permissions",
+            "URL that never expires",
+            "URL for internal use only",
+            "URL requiring VPN access"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule priority?",
+        "o": [
+            "Number determining rule evaluation order",
+            "Speed of network connection",
+            "Importance of network traffic",
+            "Bandwidth allocation"
+        ]
+    },
+    {
+        "q": "What is an audit log sink used for?",
+        "o": [
+            "Export logs to storage or BigQuery",
+            "Delete old logs",
+            "Create new logs",
+            "Encrypt log data"
+        ]
+    },
+    {
+        "q": "What is secret replication in Secret Manager?",
+        "o": [
+            "Copying secrets to multiple locations",
+            "Creating secret backups",
+            "Sharing secrets with teams",
+            "Encrypting secrets twice"
+        ]
+    },
+    {
+        "q": "What is a primitive IAM role?",
+        "o": [
+            "Basic roles like Owner, Editor, Viewer",
+            "Custom-defined roles",
+            "Predefined service roles",
+            "Organization-level roles"
+        ]
+    },
+    {
+        "q": "What is object lifecycle management in Cloud Storage?",
+        "o": [
+            "Rules to automatically manage objects",
+            "Manual object deletion",
+            "Object encryption process",
+            "Object sharing settings"
+        ]
+    },
+    {
+        "q": "What is a Cloud NAT in VPC security?",
+        "o": [
+            "Network Address Translation for private instances",
+            "Network security scanner",
+            "Firewall management tool",
+            "VPN gateway service"
+        ]
+    },
+    {
+        "q": "What is excluded from audit logs for privacy?",
+        "o": [
+            "User email addresses in some contexts",
+            "Project names",
+            "Resource locations",
+            "Timestamp information"
+        ]
+    },
+    {
+        "q": "What is the maximum number of secret versions allowed?",
+        "o": [
+            "No hard limit but managed for performance",
+            "Exactly 10 versions",
+            "Exactly 100 versions",
+            "Exactly 1000 versions"
+        ]
+    },
+    {
+        "q": "What is a conditional IAM binding?",
+        "o": [
+            "Role granted only when conditions are met",
+            "Role granted to all users",
+            "Role with no conditions",
+            "Role for emergency access"
+        ]
+    },
+    {
+        "q": "What is a bucket retention policy?",
+        "o": [
+            "Minimum time objects must be kept",
+            "Maximum time objects can be kept",
+            "Time before objects are deleted",
+            "Time before objects are encrypted"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule direction?",
+        "o": [
+            "Ingress or egress traffic",
+            "Up or down traffic",
+            "Fast or slow traffic",
+            "Secure or insecure traffic"
+        ]
+    },
+    {
+        "q": "What are Cloud Audit Logs service name?",
+        "o": [
+            "Cloud Logging",
+            "Cloud Monitoring",
+            "Cloud Trace",
+            "Cloud Debugger"
+        ]
+    },
+    {
+        "q": "What is a secret manager IAM role?",
+        "o": [
+            "Secret Manager Admin or Viewer",
+            "Storage Admin",
+            "Compute Admin",
+            "Network Admin"
+        ]
+    },
+    {
+        "q": "What is a service account key?",
+        "o": [
+            "Credential for service account authentication",
+            "Encryption key for data",
+            "Network security key",
+            "Database access key"
+        ]
+    },
+    {
+        "q": "What is a bucket public access prevention?",
+        "o": [
+            "Feature to block public access",
+            "Feature to allow public access",
+            "Feature to monitor access",
+            "Feature to log access"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule target?",
+        "o": [
+            "VMs the rule applies to",
+            "Network packets",
+            "IP addresses",
+            "Port numbers"
+        ]
+    },
+    {
+        "q": "What is an audit log exclusion filter?",
+        "o": [
+            "Criteria to exclude certain logs from storage",
+            "Filter to show only errors",
+            "Filter for search results",
+            "Criteria for log rotation"
+        ]
+    },
+    {
+        "q": "What is secret payload in Secret Manager?",
+        "o": [
+            "The actual secret data being stored",
+            "Secret metadata",
+            "Secret version number",
+            "Secret replication policy"
+        ]
+    },
+    {
+        "q": "What is IAM member type in GCP?",
+        "o": [
+            "User, group, service account, domain",
+            "Only individual users",
+            "Only groups",
+            "Only service accounts"
+        ]
+    },
+    {
+        "q": "What is a bucket default encryption?",
+        "o": [
+            "Encryption automatically applied to new objects",
+            "Manual encryption setting",
+            "Optional encryption feature",
+            "Bucket name encryption"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule action?",
+        "o": [
+            "Allow or deny traffic",
+            "Log or monitor traffic",
+            "Route or block traffic",
+            "Encrypt or decrypt traffic"
+        ]
+    },
+    {
+        "q": "What is the purpose of audit log analytics?",
+        "o": [
+            "Analyze logs for security insights",
+            "Delete unnecessary logs",
+            "Compress log files",
+            "Encrypt log data"
+        ]
+    },
+    {
+        "q": "What is secret manager pricing based on?",
+        "o": [
+            "Number of secrets and access operations",
+            "Size of secret data only",
+            "Number of users only",
+            "Storage duration only"
+        ]
+    },
+    {
+        "q": "What is a deny policy in IAM?",
+        "o": [
+            "Explicitly denies access to resources",
+            "Grants access to resources",
+            "Audits access to resources",
+            "Logs access to resources"
+        ]
+    },
+    {
+        "q": "What is a bucket uniform bucket-level access?",
+        "o": [
+            "Access controlled by IAM only",
+            "Access controlled by ACLs",
+            "Access controlled by both",
+            "Access controlled by neither"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule source filter?",
+        "o": [
+            "Source IP ranges or tags",
+            "Destination IP ranges",
+            "Protocol types only",
+            "Port numbers only"
+        ]
+    },
+    {
+        "q": "What is an audit log retention period?",
+        "o": [
+            "Time logs are stored",
+            "Time between log entries",
+            "Time to process logs",
+            "Time to encrypt logs"
+        ]
+    },
+    {
+        "q": "What is a secret manager replication policy?",
+        "o": [
+            "Specifies where secrets are stored",
+            "Specifies secret format",
+            "Specifies secret size",
+            "Specifies secret name"
+        ]
+    },
+    {
+        "q": "What is a group in IAM context?",
+        "o": [
+            "Collection of users with shared permissions",
+            "Collection of resources",
+            "Collection of roles",
+            "Collection of policies"
+        ]
+    },
+    {
+        "q": "What is a bucket lock feature in Cloud Storage?",
+        "o": [
+            "Makes retention policy permanent",
+            "Locks bucket for editing",
+            "Locks objects for reading",
+            "Locks bucket for deletion"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule destination?",
+        "o": [
+            "Targets the rule applies to",
+            "Source IP addresses",
+            "Network gateways",
+            "Load balancers"
+        ]
+    },
+    {
+        "q": "What is an audit log routing?",
+        "o": [
+            "Directing logs to different destinations",
+            "Log delivery method",
+            "Log format conversion",
+            "Log compression method"
+        ]
+    },
+    {
+        "q": "What is a secret manager access request?",
+        "o": [
+            "API call to retrieve secret data",
+            "Secret creation process",
+            "Secret deletion process",
+            "Secret rotation process"
+        ]
+    },
+    {
+        "q": "What is a domain in IAM context?",
+        "o": [
+            "Google Workspace or Cloud Identity domain",
+            "Website domain name",
+            "Network domain",
+            "Database domain"
+        ]
+    },
+    {
+        "q": "What is CSEK in Cloud Storage security?",
+        "o": [
+            "Customer-supplied encryption keys",
+            "Cloud storage encryption keys",
+            "Central security encryption keys",
+            "Compute storage encryption keys"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule protocol?",
+        "o": [
+            "TCP, UDP, ICMP, or all protocols",
+            "Only TCP protocol",
+            "Only UDP protocol",
+            "Only ICMP protocol"
+        ]
+    },
+    {
+        "q": "What are System Event audit logs?",
+        "o": [
+            "Logs of Google Cloud system events",
+            "User activity logs",
+            "Data access logs",
+            "Network traffic logs"
+        ]
+    },
+    {
+        "q": "What is secret manager regionality?",
+        "o": [
+            "Secrets stored in specific locations",
+            "Global secret access",
+            "Regional secret rotation",
+            "Local secret backup"
+        ]
+    },
+    {
+        "q": "What is an IAM policy composed of?",
+        "o": [
+            "Bindings of roles to members",
+            "Only role definitions",
+            "Only member lists",
+            "Only resource lists"
+        ]
+    },
+    {
+        "q": "What is a bucket requester pays feature?",
+        "o": [
+            "Requester pays for access costs",
+            "Bucket owner pays all costs",
+            "Free access for all",
+            "Shared cost model"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule logging?",
+        "o": [
+            "Records firewall rule matches",
+            "Records all network traffic",
+            "Records VM logs",
+            "Records application logs"
+        ]
+    },
+    {
+        "q": "What are Policy Denied audit logs?",
+        "o": [
+            "Logs of access denied by IAM policy",
+            "Logs of allowed access",
+            "Logs of system errors",
+            "Logs of network activity"
+        ]
+    },
+    {
+        "q": "What is secret manager version state?",
+        "o": [
+            "Enabled, disabled, or destroyed",
+            "Active or inactive only",
+            "New or old only",
+            "Public or private only"
+        ]
+    },
+    {
+        "q": "What is a resource hierarchy in IAM?",
+        "o": [
+            "Organization, folders, projects, resources",
+            "Projects only",
+            "Resources only",
+            "Users only"
+        ]
+    },
+    {
+        "q": "What is object hold in Cloud Storage?",
+        "o": [
+            "Prevents object deletion or modification",
+            "Holds object for processing",
+            "Holds object for review",
+            "Holds object for transfer"
+        ]
+    },
+    {
+        "q": "What is a VPC subnet secondary range?",
+        "o": [
+            "Additional IP range for pods/services",
+            "Backup subnet range",
+            "Emergency IP range",
+            "Temporary IP range"
+        ]
+    },
+    {
+        "q": "What is an audit log timestamp?",
+        "o": [
+            "Time of the logged event",
+            "Log creation time",
+            "Log storage time",
+            "Log expiration time"
+        ]
+    },
+    {
+        "q": "What is secret manager automatic rotation?",
+        "o": [
+            "Scheduled secret updates",
+            "Manual secret changes",
+            "Random secret changes",
+            "On-demand secret updates"
+        ]
+    },
+    {
+        "q": "What is a role in IAM?",
+        "o": [
+            "Collection of permissions",
+            "Collection of users",
+            "Collection of resources",
+            "Collection of policies"
+        ]
+    },
+    {
+        "q": "What is a bucket IAM condition?",
+        "o": [
+            "Conditional access based on attributes",
+            "Bucket creation condition",
+            "Bucket deletion condition",
+            "Bucket rename condition"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule port range?",
+        "o": [
+            "Specific ports or port ranges",
+            "All ports always",
+            "Only port 80",
+            "Only port 443"
+        ]
+    },
+    {
+        "q": "What is an audit log principal email?",
+        "o": [
+            "Identity of the user or service account",
+            "Log file creator",
+            "System administrator",
+            "Project owner"
+        ]
+    },
+    {
+        "q": "What is secret manager secret ID?",
+        "o": [
+            "Unique identifier for the secret",
+            "Secret password",
+            "Secret encryption key",
+            "Secret access token"
+        ]
+    },
+    {
+        "q": "What is IAM role recommendation?",
+        "o": [
+            "Suggested role based on usage patterns",
+            "Required role for all users",
+            "Default role for projects",
+            "Minimum role for access"
+        ]
+    },
+    {
+        "q": "What is a bucket CORS configuration?",
+        "o": [
+            "Cross-origin resource sharing settings",
+            "Bucket backup settings",
+            "Bucket encryption settings",
+            "Bucket logging settings"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule source tag?",
+        "o": [
+            "VM tags as source identifiers",
+            "Network tags for routing",
+            "Security labels",
+            "Cost allocation tags"
+        ]
+    },
+    {
+        "q": "What is an audit log method name?",
+        "o": [
+            "API method that was called",
+            "Log generation method",
+            "Audit technique used",
+            "Review process name"
+        ]
+    },
+    {
+        "q": "What is secret manager expiration?",
+        "o": [
+            "Time after which secret is deleted",
+            "Secret creation time",
+            "Secret last access time",
+            "Secret rotation time"
+        ]
+    },
+    {
+        "q": "What is a permission in IAM?",
+        "o": [
+            "Ability to perform specific operation",
+            "User login credential",
+            "Resource access token",
+            "Service account key"
+        ]
+    },
+    {
+        "q": "What is a bucket logging configuration?",
+        "o": [
+            "Records access to bucket objects",
+            "Bucket creation records",
+            "Bucket deletion records",
+            "Bucket modification records"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule destination tag?",
+        "o": [
+            "VM tags as destination identifiers",
+            "IP address tags",
+            "Port tags",
+            "Protocol tags"
+        ]
+    },
+    {
+        "q": "What is an audit log resource name?",
+        "o": [
+            "The resource affected by the operation",
+            "Log file name",
+            "Audit tool name",
+            "Reviewer name"
+        ]
+    },
+    {
+        "q": "What is secret manager access logging?",
+        "o": [
+            "Records who accessed which secret",
+            "Secret creation date",
+            "Secret size record",
+            "Secret type record"
+        ]
+    },
+    {
+        "q": "What is IAM policy binding?",
+        "o": [
+            "Association of role with members",
+            "Policy document binding",
+            "Resource binding",
+            "Service binding"
+        ]
+    },
+    {
+        "q": "What is a bucket object change notification?",
+        "o": [
+            "Alerts when objects change",
+            "Object encryption notice",
+            "Object deletion warning",
+            "Object creation notice"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule directionality?",
+        "o": [
+            "Whether rule applies to incoming or outgoing traffic",
+            "Traffic speed direction",
+            "Data flow direction",
+            "Network path direction"
+        ]
+    },
+    {
+        "q": "What is an audit log service data?",
+        "o": [
+            "Service-specific operation details",
+            "General log information",
+            "User account data",
+            "Network statistics"
+        ]
+    },
+    {
+        "q": "What is secret manager version destruction?",
+        "o": [
+            "Permanently deleting a secret version",
+            "Temporarily disabling secret",
+            "Moving secret to archive",
+            "Encrypting secret again"
+        ]
+    },
+    {
+        "q": "What is the difference between primitive and predefined IAM roles?",
+        "o": [
+            "Primitive roles are broad, predefined roles are service-specific",
+            "Primitive roles are newer, predefined roles are legacy",
+            "Primitive roles cost more, predefined roles are free",
+            "Primitive roles are temporary, predefined roles are permanent"
+        ]
+    },
+    {
+        "q": "How does Cloud Storage encrypt data by default?",
+        "o": [
+            "AES-256 encryption with Google-managed keys",
+            "Triple DES encryption with user keys",
+            "RSA encryption with hardware modules",
+            "Blowfish encryption with automatic rotation"
+        ]
+    },
+    {
+        "q": "What is the purpose of VPC Network Peering?",
+        "o": [
+            "Connect two VPC networks privately using internal IPs",
+            "Connect VPC to the public internet",
+            "Connect VPC to on-premises datacenter",
+            "Connect VPC to Cloud CDN"
+        ]
+    },
+    {
+        "q": "Which audit log type records requests that exceed quota limits?",
+        "o": [
+            "System Event logs for quota violations",
+            "Admin Activity logs only",
+            "Data Access logs only",
+            "Policy Denied logs only"
+        ]
+    },
+    {
+        "q": "What happens when you disable a secret version in Secret Manager?",
+        "o": [
+            "Secret data cannot be accessed but is still stored",
+            "Secret data is permanently deleted",
+            "Secret data is automatically rotated",
+            "Secret data is moved to cold storage"
+        ]
+    },
+    {
+        "q": "How can you grant multiple users the same IAM role efficiently?",
+        "o": [
+            "Add them to a group and grant role to the group",
+            "Grant role to each user individually",
+            "Create custom role for each user",
+            "Use service accounts instead"
+        ]
+    },
+    {
+        "q": "What is a Cloud Storage bucket's uniform bucket-level access?",
+        "o": [
+            "Disables ACLs and uses IAM exclusively",
+            "Disables IAM and uses ACLs exclusively",
+            "Enables both IAM and ACLs simultaneously",
+            "Enables anonymous public access"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule's priority range?",
+        "o": [
+            "0 to 65535 with lower numbers evaluated first",
+            "1 to 100 with higher numbers evaluated first",
+            "0 to 1000 with random evaluation order",
+            "1 to 10 with sequential evaluation"
+        ]
+    },
+    {
+        "q": "What information is NOT included in Admin Activity audit logs?",
+        "o": [
+            "The actual data content of resources",
+            "The identity of the API caller",
+            "The time of the API call",
+            "The resource affected by the call"
+        ]
+    },
+    {
+        "q": "What is the purpose of secret manager replication policy?",
+        "o": [
+            "Specify locations where secret data is stored",
+            "Create backup copies of secrets",
+            "Duplicate secrets for multiple projects",
+            "Mirror secrets to external systems"
+        ]
+    },
+    {
+        "q": "What happens when you delete a service account?",
+        "o": [
+            "All resources lose permissions granted to that account",
+            "Resources retain permissions permanently",
+            "Permissions transfer to project owner",
+            "Resources become publicly accessible"
+        ]
+    },
+    {
+        "q": "Which Cloud Storage feature prevents object deletion for a fixed time?",
+        "o": [
+            "Retention policies with retention period",
+            "Object holds with temporary lock",
+            "Versioning with archive flag",
+            "Lifecycle rules with delete delay"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule's implicit deny?",
+        "o": [
+            "Default rule that denies all traffic not explicitly allowed",
+            "Rule that denies specific protocols",
+            "Rule that denies traffic from specific IPs",
+            "Rule that denies all egress traffic"
+        ]
+    },
+    {
+        "q": "How are audit logs exported to BigQuery?",
+        "o": [
+            "Create a sink with BigQuery dataset destination",
+            "Manually copy logs each day",
+            "Use Cloud Functions to stream logs",
+            "Export through Cloud Console only"
+        ]
+    },
+    {
+        "q": "What is the maximum number of secret versions recommended per secret?",
+        "o": [
+            "No hard limit but manage for performance",
+            "Exactly 10 versions maximum",
+            "Exactly 100 versions maximum",
+            "Exactly 1000 versions maximum"
+        ]
+    },
+    {
+        "q": "What is a custom IAM role's parent organization?",
+        "o": [
+            "Role defined at organization level usable by child projects",
+            "Role defined at project level only",
+            "Role defined globally for all GCP",
+            "Role defined per resource type"
+        ]
+    },
+    {
+        "q": "What is CSEK encryption in Cloud Storage?",
+        "o": [
+            "Customer-supplied encryption keys",
+            "Cloud storage encryption keys",
+            "Central security encryption keys",
+            "Compute storage encryption keys"
+        ]
+    },
+    {
+        "q": "What is a VPC Shared VPC configuration?",
+        "o": [
+            "One VPC network shared across multiple projects",
+            "Multiple VPCs in one project",
+            "VPC shared with external partners",
+            "VPC connected to on-premises"
+        ]
+    },
+    {
+        "q": "What is the difference between audit logs and metrics?",
+        "o": [
+            "Logs record events, metrics measure performance",
+            "Logs are for errors, metrics for success",
+            "Logs are text, metrics are numerical",
+            "Logs are real-time, metrics are historical"
+        ]
+    },
+    {
+        "q": "How does Secret Manager handle secret rotation automatically?",
+        "o": [
+            "Cannot rotate automatically, requires manual update",
+            "Built-in scheduler with Cloud Scheduler",
+            "Automatic rotation every 30 days",
+            "Rotation triggered by access count"
+        ]
+    },
+    {
+        "q": "What is a service account key's recommended maximum lifetime?",
+        "o": [
+            "Not recommended, use workload identity federation instead",
+            "Unlimited lifetime is acceptable",
+            "Maximum 1 year with rotation",
+            "Maximum 30 days only"
+        ]
+    },
+    {
+        "q": "What is object holds in Cloud Storage?",
+        "o": [
+            "Placeholder to prevent object deletion",
+            "Object storage location",
+            "Object encryption status",
+            "Object access log"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule logging sampling rate?",
+        "o": [
+            "Configurable from 0.0 to 1.0",
+            "Fixed at 100 percent",
+            "Fixed at 50 percent",
+            "Fixed at 10 percent"
+        ]
+    },
+    {
+        "q": "What is an audit log's principal authentication info?",
+        "o": [
+            "Authentication method and credentials used",
+            "User's password hash",
+            "User's SSH public key",
+            "User's API token"
+        ]
+    },
+    {
+        "q": "What is secret manager regionality requirement?",
+        "o": [
+            "Must specify at least one location",
+            "Global only, no regional option",
+            "Exactly two regions required",
+            "All regions automatically"
+        ]
+    },
+    {
+        "q": "What is the difference between IAM roles and permissions?",
+        "o": [
+            "Roles are groups of permissions",
+            "Permissions are groups of roles",
+            "Roles and permissions are identical",
+            "Permissions contain multiple roles"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage object versioning retention?",
+        "o": [
+            "Keeps noncurrent object versions indefinitely",
+            "Deletes old versions automatically",
+            "Archives versions after 30 days",
+            "Compresses older versions"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule with priority zero?",
+        "o": [
+            "Highest priority evaluated first",
+            "Lowest priority evaluated last",
+            "Rule is disabled",
+            "Rule applies to all traffic"
+        ]
+    },
+    {
+        "q": "What is the default retention for Data Access audit logs?",
+        "o": [
+            "30 days by default, configurable with sinks",
+            "90 days minimum retention",
+            "365 days default retention",
+            "Indefinite retention by default"
+        ]
+    },
+    {
+        "q": "What is secret manager IAM condition for access?",
+        "o": [
+            "Restrict access based on attributes like time or IP",
+            "Always allow full access",
+            "Restrict based on secret name",
+            "Restrict based on secret size"
+        ]
+    },
+    {
+        "q": "What is a service account impersonation?",
+        "o": [
+            "Allowing a user to act as a service account",
+            "Creating fake service accounts",
+            "Copying service account keys",
+            "Renaming service accounts"
+        ]
+    },
+    {
+        "q": "What is a Cloud Storage bucket retention policy lock?",
+        "o": [
+            "Permanently enforces retention policy",
+            "Temporarily locks bucket editing",
+            "Locks individual objects",
+            "Locks bucket deletion only"
+        ]
+    },
+    {
+        "q": "What is VPC Private Google Access?",
+        "o": [
+            "Access Google APIs without external IP addresses",
+            "Private VPC network for Google employees",
+            "Hidden VPC configuration",
+            "Encrypted Google service access"
+        ]
+    },
+    {
+        "q": "What is an audit log's resource location?",
+        "o": [
+            "Geographic region where resource exists",
+            "Log file storage location",
+            "User's physical location",
+            "API endpoint location"
+        ]
+    },
+    {
+        "q": "What is secret manager payload size limit?",
+        "o": [
+            "64 KB maximum per secret version",
+            "1 MB maximum per secret version",
+            "10 MB maximum per secret version",
+            "100 MB maximum per secret version"
+        ]
+    },
+    {
+        "q": "What is a deny rule in IAM policy?",
+        "o": [
+            "Explicitly denies permissions even if allowed elsewhere",
+            "Always overridden by allow rules",
+            "Only applies to public access",
+            "Only applies to service accounts"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket lifecycle rule?",
+        "o": [
+            "Automated actions based on object age or conditions",
+            "Manual object management process",
+            "Bucket creation workflow",
+            "Bucket deletion schedule"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule with target service accounts?",
+        "o": [
+            "Applies to VMs using specified service accounts",
+            "Applies to all VMs equally",
+            "Applies to network service accounts",
+            "Applies to user accounts"
+        ]
+    },
+    {
+        "q": "What is the audit log retention for logs exported to Cloud Storage?",
+        "o": [
+            "Controlled by bucket lifecycle management",
+            "Fixed at 30 days",
+            "Fixed at 90 days",
+            "Fixed at 365 days"
+        ]
+    },
+    {
+        "q": "What is secret manager automatic replication?",
+        "o": [
+            "Secrets automatically replicated to specified regions",
+            "Manual copy to each region",
+            "Replication only on access",
+            "Replication only on update"
+        ]
+    },
+    {
+        "q": "What is a service account key rotation best practice?",
+        "o": [
+            "Rotate keys regularly and use multiple keys",
+            "Never rotate keys to maintain stability",
+            "Use only one key permanently",
+            "Rotate keys daily automatically"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage object change notification?",
+        "o": [
+            "Push notifications for object changes",
+            "Email alerts for changes",
+            "SMS notifications for changes",
+            "Log entries for changes"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with source service accounts?",
+        "o": [
+            "Matches traffic from VMs with specified service accounts",
+            "Matches traffic from any source",
+            "Matches traffic from networks",
+            "Matches traffic from users"
+        ]
+    },
+    {
+        "q": "What is an audit log's request metadata?",
+        "o": [
+            "HTTP request information and parameters",
+            "User's browser history",
+            "Network packet contents",
+            "Database query results"
+        ]
+    },
+    {
+        "q": "What is secret manager version enable or disable?",
+        "o": [
+            "Control which secret versions can be accessed",
+            "Permanently delete secret versions",
+            "Create new secret versions",
+            "Modify secret data content"
+        ]
+    },
+    {
+        "q": "What is the principle of least privilege in IAM?",
+        "o": [
+            "Grant minimum permissions needed for tasks",
+            "Grant all permissions to be safe",
+            "Grant no permissions by default",
+            "Grant maximum permissions temporarily"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage object ACL?",
+        "o": [
+            "Access control list for individual objects",
+            "Automatic compression level",
+            "Object lifecycle rule",
+            "Object encryption setting"
+        ]
+    },
+    {
+        "q": "What is a VPC subnet with private Google access enabled?",
+        "o": [
+            "VMs can access Google APIs without external IPs",
+            "VMs cannot access any Google services",
+            "VMs have public IPs automatically",
+            "VMs are isolated from all networks"
+        ]
+    },
+    {
+        "q": "What is the difference between audit logs and Cloud Monitoring?",
+        "o": [
+            "Logs record events, Monitoring tracks metrics and alerts",
+            "Both services are identical",
+            "Logs are for security only",
+            "Monitoring is for logging only"
+        ]
+    },
+    {
+        "q": "What is secret manager CMEK integration?",
+        "o": [
+            "Encrypt secrets with customer-managed encryption keys",
+            "Use Google-managed keys only",
+            "No encryption option available",
+            "Use hardware security modules"
+        ]
+    },
+    {
+        "q": "What is a service account's role on compute instances?",
+        "o": [
+            "Identity for instance to access other GCP services",
+            "User account for instance login",
+            "Billing account for instance costs",
+            "Network identity for routing"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's default event-based hold?",
+        "o": [
+            "Hold applied to objects based on event triggers",
+            "Default hold on all new objects",
+            "Temporary hold during transfer",
+            "Permanent hold on deletion"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with disabled state?",
+        "o": [
+            "Rule exists but is not enforced",
+            "Rule is permanently deleted",
+            "Rule applies only to test traffic",
+            "Rule applies only to production"
+        ]
+    },
+    {
+        "q": "What is an audit log filter expression?",
+        "o": [
+            "Query to select specific log entries",
+            "Filter to exclude sensitive data",
+            "Filter to compress logs",
+            "Filter to encrypt logs"
+        ]
+    },
+    {
+        "q": "What is secret manager access auditing?",
+        "o": [
+            "All access attempts logged in Cloud Audit Logs",
+            "No logging available for security",
+            "Only failed access logged",
+            "Only successful access logged"
+        ]
+    },
+    {
+        "q": "What is a custom IAM role's permission list?",
+        "o": [
+            "Collection of specific API permissions",
+            "Collection of predefined roles",
+            "Collection of user emails",
+            "Collection of resource names"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's requester pays feature?",
+        "o": [
+            "Requester pays for operations and data transfer",
+            "Bucket owner pays all costs",
+            "Both parties share costs equally",
+            "Google pays all costs"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule with ingress direction?",
+        "o": [
+            "Traffic entering VMs from any source",
+            "Traffic leaving VMs to any destination",
+            "Traffic between VMs only",
+            "Traffic to load balancers only"
+        ]
+    },
+    {
+        "q": "What is an audit log's authentication info?",
+        "o": [
+            "How the request was authenticated",
+            "User's password hash",
+            "User's multi-factor method",
+            "User's biometric data"
+        ]
+    },
+    {
+        "q": "What is secret manager version destruction time?",
+        "o": [
+            "Destroyed versions are permanently deleted immediately",
+            "Destroyed versions are kept for 30 days",
+            "Destroyed versions are archived",
+            "Destroyed versions are recoverable"
+        ]
+    },
+    {
+        "q": "What is the difference between roles and policies?",
+        "o": [
+            "Roles define permissions, policies bind roles to members",
+            "Policies define permissions, roles bind policies",
+            "Both terms mean the same thing",
+            "Roles are for users, policies for resources"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage object lifecycle deletion?",
+        "o": [
+            "Automatic deletion based on age or conditions",
+            "Manual deletion only",
+            "Deletion after 30 days always",
+            "Deletion requires approval"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with egress direction?",
+        "o": [
+            "Traffic leaving VMs to any destination",
+            "Traffic entering VMs from any source",
+            "Traffic between VMs only",
+            "Traffic from load balancers only"
+        ]
+    },
+    {
+        "q": "What is an audit log exclusion?",
+        "o": [
+            "Filtering out specific logs from storage",
+            "Removing logs permanently",
+            "Encrypting selected logs",
+            "Compressing old logs"
+        ]
+    },
+    {
+        "q": "What is secret manager regional pricing?",
+        "o": [
+            "Costs vary by replication location",
+            "Same price globally",
+            "Free in some regions",
+            "Only charged for access"
+        ]
+    },
+    {
+        "q": "What is a service account's email format?",
+        "o": [
+            "name@project.iam.gserviceaccount.com",
+            "name@project.gcp.com",
+            "name@googleapis.com",
+            "name@cloud.google.com"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's CORS configuration?",
+        "o": [
+            "Cross-origin resource sharing settings",
+            "Consistency and replication settings",
+            "Cost optimization rules",
+            "Compression settings"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule with target tags?",
+        "o": [
+            "Applies to VMs with specific network tags",
+            "Applies to all VMs equally",
+            "Applies to network interfaces",
+            "Applies to subnets only"
+        ]
+    },
+    {
+        "q": "What is the audit log retention for logs exported to Pub/Sub?",
+        "o": [
+            "Controlled by Pub/Sub subscription retention",
+            "Fixed at 7 days",
+            "Fixed at 30 days",
+            "No retention, immediate deletion"
+        ]
+    },
+    {
+        "q": "What is secret manager VPC Service Controls support?",
+        "o": [
+            "Restrict secret access to VPC perimeter",
+            "No VPC integration available",
+            "Only public internet access",
+            "Global access only"
+        ]
+    },
+    {
+        "q": "What is a custom IAM role's stage?",
+        "o": [
+            "Alpha, Beta, or GA indicating readiness",
+            "Development or production only",
+            "Enabled or disabled only",
+            "Active or deprecated only"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's website configuration?",
+        "o": [
+            "Static website hosting settings",
+            "Dynamic website backend",
+            "Content management system",
+            "E-commerce platform"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with protocol tcp?",
+        "o": [
+            "Applies to TCP traffic only",
+            "Applies to all protocols",
+            "Applies to UDP only",
+            "Applies to ICMP only"
+        ]
+    },
+    {
+        "q": "What is an audit log's response status?",
+        "o": [
+            "HTTP status code of the API call",
+            "User's reaction to event",
+            "System health status",
+            "Network latency status"
+        ]
+    },
+    {
+        "q": "What is secret manager customer-managed encryption?",
+        "o": [
+            "Use CMEK from Cloud KMS to encrypt secrets",
+            "Use Google-managed keys only",
+            "Use custom encryption algorithm",
+            "No encryption available"
+        ]
+    },
+    {
+        "q": "What is the difference between service account and user account?",
+        "o": [
+            "Service accounts are for applications, users are for people",
+            "Both are identical in function",
+            "Service accounts cost more",
+            "User accounts are automated"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's versioning benefit?",
+        "o": [
+            "Protects against accidental deletion or overwrites",
+            "Increases storage costs only",
+            "Slows down access times",
+            "Reduces data durability"
+        ]
+    },
+    {
+        "q": "What is a VPC firewall rule with source IP ranges?",
+        "o": [
+            "Matches traffic from specified CIDR blocks",
+            "Matches traffic from any source",
+            "Matches traffic from VMs only",
+            "Matches traffic from internet only"
+        ]
+    },
+    {
+        "q": "What is an audit log sink filter?",
+        "o": [
+            "Criteria for selecting logs to export",
+            "Filter to remove sensitive data",
+            "Filter to compress logs",
+            "Filter to encrypt logs"
+        ]
+    },
+    {
+        "q": "What is secret manager version state destroyed?",
+        "o": [
+            "Version is permanently deleted and unrecoverable",
+            "Version is temporarily disabled",
+            "Version is archived",
+            "Version is in cold storage"
+        ]
+    },
+    {
+        "q": "What is a conditional IAM binding with resource attribute?",
+        "o": [
+            "Access based on resource name or type",
+            "Access based on user location",
+            "Access based on time of day",
+            "Access based on IP address"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle condition age?",
+        "o": [
+            "Days since object creation",
+            "Days since last access",
+            "Days since last modification",
+            "Days until expiration"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with port range 80-80?",
+        "o": [
+            "Applies only to port 80 traffic",
+            "Applies to ports 80 through 800",
+            "Applies to all ports",
+            "Applies to no ports"
+        ]
+    },
+    {
+        "q": "What is an audit log's caller IP address?",
+        "o": [
+            "IP address of the API caller",
+            "IP of the log server",
+            "IP of the resource",
+            "IP of the network gateway"
+        ]
+    },
+    {
+        "q": "What is secret manager rotation schedule?",
+        "o": [
+            "Defined frequency for automatic secret updates",
+            "Random rotation intervals",
+            "Rotation on each access",
+            "No rotation possible"
+        ]
+    },
+    {
+        "q": "What is a service account's maximum number of keys?",
+        "o": [
+            "No hard limit but best practice limits apply",
+            "Exactly 10 keys maximum",
+            "Exactly 5 keys maximum",
+            "Exactly 20 keys maximum"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle condition matchesStorageClass?",
+        "o": [
+            "Applies to objects with specific storage class",
+            "Matches any storage class",
+            "Matches bucket storage class",
+            "Matches default storage class"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with priority 65535?",
+        "o": [
+            "Lowest priority evaluated last",
+            "Highest priority evaluated first",
+            "Rule is ignored",
+            "Rule applies to all traffic"
+        ]
+    },
+    {
+        "q": "What is an audit log's resource state before and after?",
+        "o": [
+            "Resource state for successful modifying operations",
+            "Resource state for read operations",
+            "Resource state for failed operations",
+            "Resource state for delete operations"
+        ]
+    },
+    {
+        "q": "What is secret manager automatic rotation with Cloud Functions?",
+        "o": [
+            "Use Cloud Functions as rotation trigger",
+            "Built-in rotation without code",
+            "Manual rotation only",
+            "Rotation through Cloud Scheduler only"
+        ]
+    },
+    {
+        "q": "What is the difference between role and privilege?",
+        "o": [
+            "Role is collection of permissions, privilege is specific right",
+            "Both terms are interchangeable",
+            "Privilege is broader than role",
+            "Role is for resources, privilege for users"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage object's retention expiration?",
+        "o": [
+            "Time when retention period ends",
+            "Time when object was created",
+            "Time when object was deleted",
+            "Time when object was accessed"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with disabled logging?",
+        "o": [
+            "No log entries generated for rule matches",
+            "Logs generated but not stored",
+            "Logs generated and stored",
+            "Logs generated for denies only"
+        ]
+    },
+    {
+        "q": "What is an audit log's service name format?",
+        "o": [
+            "Service domain like compute.googleapis.com",
+            "Service display name only",
+            "Service IP address",
+            "Service port number"
+        ]
+    },
+    {
+        "q": "What is secret manager version state enabled?",
+        "o": [
+            "Version can be accessed by authorized users",
+            "Version is temporarily unavailable",
+            "Version is permanently deleted",
+            "Version is being created"
+        ]
+    },
+    {
+        "q": "What is a service account key's private key format?",
+        "o": [
+            "JSON or P12 format",
+            "TXT format only",
+            "XML format only",
+            "Binary format only"
+        ]
+    },
+    {
+        "q": "How does IAM policy evaluation work when both allow and deny rules exist?",
+        "o": [
+            "Deny rules always override allow rules regardless of order",
+            "Allow rules always override deny rules",
+            "First rule evaluated takes precedence",
+            "Rules are evaluated alphabetically"
+        ]
+    },
+    {
+        "q": "What is the purpose of Cloud Storage object retention locks?",
+        "o": [
+            "Prevent object deletion or retention policy changes",
+            "Encrypt objects with customer keys",
+            "Lock objects for compliance review",
+            "Prevent object access during transfer"
+        ]
+    },
+    {
+        "q": "What is VPC Flow Logs aggregation interval?",
+        "o": [
+            "5 seconds or 1 minute configurable",
+            "Always 10 seconds only",
+            "Always 30 seconds only",
+            "Always 5 minutes only"
+        ]
+    },
+    {
+        "q": "What is the difference between audit logs and VPC Flow Logs?",
+        "o": [
+            "Audit logs track API calls, Flow Logs track network packets",
+            "Both track the same information",
+            "Audit logs are for VPC only",
+            "Flow Logs are for IAM only"
+        ]
+    },
+    {
+        "q": "How does Secret Manager integrate with Cloud KMS for CMEK?",
+        "o": [
+            "Secrets are encrypted with KMS keys before storage",
+            "KMS stores secrets directly",
+            "Secret Manager replaces KMS",
+            "No integration exists between services"
+        ]
+    },
+    {
+        "q": "What is the maximum number of IAM roles that can be bound to a member?",
+        "o": [
+            "No hard limit but subject to policy size limits",
+            "Exactly 10 roles maximum",
+            "Exactly 20 roles maximum",
+            "Exactly 50 roles maximum"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's object lifecycle with multiple conditions?",
+        "o": [
+            "All conditions must be met for action to trigger",
+            "Any single condition triggers action",
+            "Conditions are ignored in lifecycle",
+            "Only first condition matters"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule logging metadata configuration?",
+        "o": [
+            "Include or exclude metadata like project and VM details",
+            "Always include all metadata",
+            "Never include any metadata",
+            "Include only timestamps"
+        ]
+    },
+    {
+        "q": "What is an audit log's service account impersonation chain?",
+        "o": [
+            "Sequence of service accounts used in delegated calls",
+            "Chain of command for approvals",
+            "Network path for API calls",
+            "Certificate chain for authentication"
+        ]
+    },
+    {
+        "q": "What is secret manager version state disabling effect on access?",
+        "o": [
+            "Prevents access to that specific version only",
+            "Prevents access to all secret versions",
+            "Deletes the secret data",
+            "Rotates to a new version"
+        ]
+    },
+    {
+        "q": "What is workload identity federation in IAM?",
+        "o": [
+            "Allow external identities to access GCP resources",
+            "Internal identity management only",
+            "Service account creation tool",
+            "User authentication service"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's object hold vs retention policy?",
+        "o": [
+            "Holds are temporary, retention policies are permanent rules",
+            "Both are exactly the same",
+            "Holds are permanent, retention temporary",
+            "Holds apply to buckets, retention to objects"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with target service account and tags?",
+        "o": [
+            "Applies to VMs matching either service account or tags",
+            "Applies only if both match",
+            "Ignores service account if tags present",
+            "Ignores tags if service account present"
+        ]
+    },
+    {
+        "q": "What is the audit log retention for logs with custom sinks?",
+        "o": [
+            "Defined by destination storage lifecycle",
+            "Fixed at 30 days always",
+            "Fixed at 365 days always",
+            "No retention, immediate deletion"
+        ]
+    },
+    {
+        "q": "What is secret manager rotation period best practice?",
+        "o": [
+            "Based on risk assessment and compliance needs",
+            "Always rotate every 30 days",
+            "Always rotate every 90 days",
+            "Never rotate secrets"
+        ]
+    },
+    {
+        "q": "What is a custom IAM role with deleted permissions?",
+        "o": [
+            "Role becomes invalid until permissions are restored",
+            "Role continues with cached permissions",
+            "Role automatically updates",
+            "Role converts to primitive role"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle action SetStorageClass?",
+        "o": [
+            "Changes storage class of matching objects",
+            "Sets default bucket storage class",
+            "Sets object encryption class",
+            "Sets bucket access class"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with source tags and target tags?",
+        "o": [
+            "Matches traffic from VMs with source tags to VMs with target tags",
+            "Matches all traffic between VMs",
+            "Matches traffic from internet only",
+            "Matches traffic within same VM"
+        ]
+    },
+    {
+        "q": "What is an audit log's policy evaluation decision?",
+        "o": [
+            "Whether access was allowed or denied by IAM",
+            "Whether network packet passed firewall",
+            "Whether system was healthy",
+            "Whether user was authenticated"
+        ]
+    },
+    {
+        "q": "What is secret manager CMEK key rotation impact?",
+        "o": [
+            "New secret versions use new key, old versions use old key",
+            "All secrets are re-encrypted automatically",
+            "Secrets become inaccessible",
+            "No impact on secrets"
+        ]
+    },
+    {
+        "q": "What is the difference between IAM conditions and ABAC?",
+        "o": [
+            "IAM conditions are attribute-based, ABAC is broader concept",
+            "Both are identical",
+            "IAM conditions replace ABAC",
+            "ABAC is specific to GCP only"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with days since noncurrent time?",
+        "o": [
+            "Days since object became noncurrent in versioned bucket",
+            "Days since object was created",
+            "Days since object was accessed",
+            "Days since object was modified"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with protocol udp and specific ports?",
+        "o": [
+            "Matches UDP traffic on specified ports only",
+            "Matches all UDP traffic regardless of port",
+            "Matches TCP traffic on specified ports",
+            "Matches ICMP traffic only"
+        ]
+    },
+    {
+        "q": "What is an audit log sink with multiple destinations?",
+        "o": [
+            "Create multiple sinks for different destinations",
+            "One sink can have multiple destinations",
+            "Sinks cannot export to multiple locations",
+            "Destinations must be identical"
+        ]
+    },
+    {
+        "q": "What is secret manager version destruction with time delay?",
+        "o": [
+            "Destroyed versions are permanently deleted immediately",
+            "30 day soft delete period exists",
+            "7 day recovery window available",
+            "1 year archive before deletion"
+        ]
+    },
+    {
+        "q": "What is a service account key vulnerability?",
+        "o": [
+            "Keys can be exposed and misused if not properly secured",
+            "Keys are immune to theft",
+            "Keys automatically expire daily",
+            "Keys cannot access resources"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with days since custom time?",
+        "o": [
+            "Days since custom timestamp set on object",
+            "Days since bucket creation",
+            "Days since last lifecycle run",
+            "Days since object deletion"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule logging with metadata include?",
+        "o": [
+            "Includes instance details like project and VM name",
+            "Includes only packet headers",
+            "Includes only timestamps",
+            "Includes no additional data"
+        ]
+    },
+    {
+        "q": "What is an audit log's request attributes for conditional IAM?",
+        "o": [
+            "Attributes like destination IP and hostname for conditions",
+            "User's personal information",
+            "Resource configuration data",
+            "Network performance metrics"
+        ]
+    },
+    {
+        "q": "What is secret manager automatic rotation with Pub/Sub?",
+        "o": [
+            "Pub/Sub notifications trigger rotation functions",
+            "Pub/Sub stores secret data",
+            "Rotation happens without notification",
+            "Pub/Sub replaces Secret Manager"
+        ]
+    },
+    {
+        "q": "What is IAM policy hierarchy evaluation order?",
+        "o": [
+            "All policies evaluated, deny overrides allow at any level",
+            "Organization policies override project",
+            "Project policies override organization",
+            "Resource policies override all"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's object holds with retention policy?",
+        "o": [
+            "Holds can extend retention but cannot shorten",
+            "Holds override retention policies",
+            "Retention policies override holds",
+            "Holds and retention conflict"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with priority conflict resolution?",
+        "o": [
+            "Lower number priority wins regardless of specificity",
+            "More specific rules win over priority",
+            "Deny rules win over allow",
+            "Rules are merged"
+        ]
+    },
+    {
+        "q": "What is the audit log retention for logs with routing to multiple sinks?",
+        "o": [
+            "Logs are routed to all sinks with independent retention",
+            "Logs sent to only one sink",
+            "Logs deleted after first sink",
+            "All sinks must have same retention"
+        ]
+    },
+    {
+        "q": "What is secret manager regional replication consistency?",
+        "o": [
+            "Secrets are asynchronously replicated to specified regions",
+            "Synchronous replication across all regions",
+            "No replication, single region only",
+            "Replication on demand only"
+        ]
+    },
+    {
+        "q": "What is a custom IAM role with stage alpha?",
+        "o": [
+            "Role may change or be removed without notice",
+            "Role is production ready",
+            "Role is deprecated",
+            "Role is permanently stable"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with days since storage class change?",
+        "o": [
+            "Days since last storage class change",
+            "Days since bucket creation",
+            "Days since object creation",
+            "Days since last access"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with source and destination filtering?",
+        "o": [
+            "Matches traffic from specific sources to specific destinations",
+            "Matches all traffic regardless",
+            "Matches only source criteria",
+            "Matches only destination criteria"
+        ]
+    },
+    {
+        "q": "What is an audit log's principal with third party identity?",
+        "o": [
+            "External identity from workload identity federation",
+            "Internal Google account only",
+            "Service account only",
+            "Anonymous user only"
+        ]
+    },
+    {
+        "q": "What is secret manager CMEK with key version rotation?",
+        "o": [
+            "New secret versions use current primary key version",
+            "All secrets use same key version permanently",
+            "Key rotation breaks secret access",
+            "Secrets must be recreated after rotation"
+        ]
+    },
+    {
+        "q": "What is the difference between IAM roles and permissions hierarchy?",
+        "o": [
+            "Permissions are atomic, roles group permissions",
+            "Roles are atomic, permissions group roles",
+            "Both are at same level",
+            "Permissions contain multiple roles"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with days since noncurrent days?",
+        "o": [
+            "Days object has been noncurrent with versioning",
+            "Days since bucket creation",
+            "Days since last lifecycle run",
+            "Days since object access"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with logging disabled for specific rules?",
+        "o": [
+            "Saves costs by not logging high-volume allow rules",
+            "Required for security compliance",
+            "Improves network performance",
+            "Prevents log analysis"
+        ]
+    },
+    {
+        "q": "What is an audit log's resource data for deleted resources?",
+        "o": [
+            "Resource metadata captured at time of deletion",
+            "No data available for deleted resources",
+            "Only resource name remains",
+            "Complete resource data persists"
+        ]
+    },
+    {
+        "q": "What is secret manager version state disabled use case?",
+        "o": [
+            "Temporarily prevent access without deleting data",
+            "Permanently delete secret data",
+            "Create backup of secret",
+            "Rotate to new version"
+        ]
+    },
+    {
+        "q": "What is a service account with domain-wide delegation?",
+        "o": [
+            "Can access user data in Google Workspace",
+            "Access only GCP resources",
+            "Access only billing data",
+            "Access only project data"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with matches prefix condition?",
+        "o": [
+            "Applies to objects with name matching prefix",
+            "Applies to all objects equally",
+            "Applies to bucket names",
+            "Applies to project names"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with service account specification limitations?",
+        "o": [
+            "Cannot specify both source and target service accounts",
+            "Can specify both source and target",
+            "Service accounts not supported",
+            "Only target service accounts work"
+        ]
+    },
+    {
+        "q": "What is an audit log filter with multiple conditions?",
+        "o": [
+            "Conditions combined with AND or OR operators",
+            "Only single condition allowed",
+            "Conditions must all be true",
+            "Conditions evaluated randomly"
+        ]
+    },
+    {
+        "q": "What is secret manager automatic rotation with Cloud Scheduler?",
+        "o": [
+            "Cloud Scheduler triggers rotation HTTP endpoints",
+            "Cloud Scheduler stores secrets",
+            "Rotation requires manual trigger",
+            "Scheduler replaces Secret Manager"
+        ]
+    },
+    {
+        "q": "What is IAM role recommendation based on?",
+        "o": [
+            "Analyzing user permissions and usage patterns",
+            "Random role assignment",
+            "User job title only",
+            "Project size only"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with days since set storage class?",
+        "o": [
+            "Days since object storage class was set",
+            "Days since bucket creation",
+            "Days since object creation",
+            "Days since last lifecycle run"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with protocol icmp and specific types?",
+        "o": [
+            "Matches ICMP traffic with specific type and code",
+            "Matches all ICMP traffic",
+            "Matches TCP traffic",
+            "Matches UDP traffic"
+        ]
+    },
+    {
+        "q": "What is an audit log's authentication context for federated identity?",
+        "o": [
+            "Information about external identity provider",
+            "Only Google account details",
+            "Only service account details",
+            "No authentication context"
+        ]
+    },
+    {
+        "q": "What is secret manager regional replication latency?",
+        "o": [
+            "Asynchronous replication with eventual consistency",
+            "Synchronous with immediate consistency",
+            "No replication latency",
+            "Replication blocks access"
+        ]
+    },
+    {
+        "q": "What is a custom IAM role with project-level deletion effect?",
+        "o": [
+            "Role is deleted from that project only",
+            "Role deleted from entire organization",
+            "Role becomes unavailable globally",
+            "Role persists in other projects"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with matches suffix condition?",
+        "o": [
+            "Applies to objects with name matching suffix",
+            "Applies to all objects equally",
+            "Applies to bucket names",
+            "Applies to folder names"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with source and target tag limitations?",
+        "o": [
+            "Tags must exist on VMs to be effective",
+            "Tags work without VMs",
+            "Tags are automatically created",
+            "Tags replace IP addresses"
+        ]
+    },
+    {
+        "q": "What is an audit log's resource location for global resources?",
+        "o": [
+            "Global location indicated in log entry",
+            "No location information",
+            "Random region assigned",
+            "User's location used"
+        ]
+    },
+    {
+        "q": "What is secret manager version state destroying effect on replication?",
+        "o": [
+            "Version destroyed in all replication locations",
+            "Destroyed only in primary location",
+            "Replicated versions persist",
+            "Destruction blocked by replication"
+        ]
+    },
+    {
+        "q": "What is the difference between IAM deny policies and conditional bindings?",
+        "o": [
+            "Deny policies explicitly block, conditions restrict allow",
+            "Both are identical",
+            "Deny policies are weaker",
+            "Conditions are for denies only"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with numNewerVersions condition?",
+        "o": [
+            "Number of newer versions of the object",
+            "Total versions count",
+            "Object age in versions",
+            "Bucket version capacity"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with priority and rule evaluation optimization?",
+        "o": [
+            "Rules with higher priority evaluated first for efficiency",
+            "All rules evaluated equally",
+            "Random order evaluation",
+            "Rules evaluated by creation time"
+        ]
+    },
+    {
+        "q": "What is an audit log sink with filter excluding Data Access logs?",
+        "o": [
+            "Only Admin Activity and System Event logs exported",
+            "No logs exported",
+            "All logs exported",
+            "Only Data Access logs exported"
+        ]
+    },
+    {
+        "q": "What is secret manager CMEK with key deletion impact?",
+        "o": [
+            "Secrets become permanently inaccessible",
+            "Secrets use backup key",
+            "Secrets automatically re-encrypted",
+            "No impact on secrets"
+        ]
+    },
+    {
+        "q": "What is a service account key with external rotation system?",
+        "o": [
+            "Create new keys, deploy, then disable old keys",
+            "Directly modify existing keys",
+            "Keys rotate automatically",
+            "External systems cannot manage keys"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with isLive condition?",
+        "o": [
+            "Applies to live or noncurrent object versions",
+            "Applies to all versions",
+            "Applies to deleted objects",
+            "Applies to archived objects"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with source tags across projects?",
+        "o": [
+            "Tags are project-specific and don't cross projects",
+            "Tags work across all projects",
+            "Tags are globally unique",
+            "Tags are organization-wide"
+        ]
+    },
+    {
+        "q": "What is an audit log's method name for long-running operations?",
+        "o": [
+            "Multiple log entries for operation lifecycle",
+            "Single log entry at completion",
+            "No logs for async operations",
+            "Logs only at start"
+        ]
+    },
+    {
+        "q": "What is secret manager automatic rotation with HTTP endpoint?",
+        "o": [
+            "Configurable endpoint called to generate new secret",
+            "Secret Manager generates secrets automatically",
+            "External system not supported",
+            "Only manual updates possible"
+        ]
+    },
+    {
+        "q": "What is IAM policy with organization constraints?",
+        "o": [
+            "Organization policies that restrict IAM permissions",
+            "IAM policies that restrict organizations",
+            "Policies that create organizations",
+            "Policies that delete organizations"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with matches storage class condition?",
+        "o": [
+            "Applies to objects with specific storage class",
+            "Applies to bucket storage class",
+            "Applies to all objects",
+            "Applies to deleted objects"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with target tags and service account conflict?",
+        "o": [
+            "Rule applies if VM matches either criterion",
+            "Must match both criteria",
+            "Service account ignored if tags present",
+            "Tags ignored if service account present"
+        ]
+    },
+    {
+        "q": "What is an audit log filter with timestamp range?",
+        "o": [
+            "Selects logs within specific time window",
+            "Selects all logs",
+            "Selects logs by size",
+            "Selects logs by type only"
+        ]
+    },
+    {
+        "q": "What is secret manager version state enabling previously disabled version?",
+        "o": [
+            "Version becomes accessible again with same data",
+            "Data is lost when disabled",
+            "New version must be created",
+            "Enabling not possible"
+        ]
+    },
+    {
+        "q": "What is the difference between service account and workload identity?",
+        "o": [
+            "Service accounts are GCP internal, workload identity is for external",
+            "Both are identical",
+            "Workload identity is for humans only",
+            "Service accounts are for external only"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with days since custom time set?",
+        "o": [
+            "Days since custom timestamp was set on object",
+            "Days since object creation",
+            "Days since bucket creation",
+            "Days since last access"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with logging and metadata fields?",
+        "o": [
+            "Connection information like src_ip, dest_ip, protocol",
+            "Only packet payload",
+            "Only timestamps",
+            "Only VM names"
+        ]
+    },
+    {
+        "q": "What is an audit log sink with BigQuery partition expiration?",
+        "o": [
+            "Logs removed based on table partition expiration",
+            "Logs never expire in BigQuery",
+            "Logs expire after 30 days fixed",
+            "Logs expire after 365 days fixed"
+        ]
+    },
+    {
+        "q": "What is secret manager replication with customer-managed keys?",
+        "o": [
+            "Each region can use different CMEK keys",
+            "Same key must be used in all regions",
+            "CMEK not supported with replication",
+            "Replication breaks CMEK"
+        ]
+    },
+    {
+        "q": "What is a custom IAM role with permission dependencies?",
+        "o": [
+            "Some permissions require other permissions to function",
+            "All permissions work independently",
+            "No dependencies exist",
+            "Dependencies automatically handled"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with days since time condition?",
+        "o": [
+            "Fixed date condition for object actions",
+            "Relative days only supported",
+            "Time condition not available",
+            "Always uses current date"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with source service accounts across projects?",
+        "o": [
+            "Service accounts can be from any project in same organization",
+            "Only same project service accounts",
+            "Only same VPC service accounts",
+            "Cross-project not supported"
+        ]
+    },
+    {
+        "q": "What is an audit log's resource hierarchy context?",
+        "o": [
+            "Organization, folder, project information",
+            "Only resource name",
+            "Only project ID",
+            "Only zone location"
+        ]
+    },
+    {
+        "q": "What is secret manager rotation with version lifecycle management?",
+        "o": [
+            "New version added, old versions disabled or destroyed",
+            "Old versions automatically deleted",
+            "Only one version allowed",
+            "Versions never change"
+        ]
+    },
+    {
+        "q": "What is IAM policy with delegation chain limits?",
+        "o": [
+            "Maximum depth for service account impersonation",
+            "No limits on delegation",
+            "Unlimited delegation allowed",
+            "Delegation not supported"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with multiple actions?",
+        "o": [
+            "Multiple actions can be specified in single rule",
+            "Only one action per rule",
+            "Actions must be in separate rules",
+            "Actions cannot be combined"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with priority and implied rules?",
+        "o": [
+            "Implied allow egress and deny ingress always present",
+            "No implied rules exist",
+            "All rules must be explicit",
+            "Implied rules have priority zero"
+        ]
+    },
+    {
+        "q": "What is an audit log filter with resource type and labels?",
+        "o": [
+            "Selects logs for specific resource types with labels",
+            "Selects all resource logs",
+            "Resource filtering not possible",
+            "Only labels can filter"
+        ]
+    },
+    {
+        "q": "What is secret manager CMEK with key version state change?",
+        "o": [
+            "Secrets encrypted with disabled key become inaccessible",
+            "Key state doesn't affect secrets",
+            "Secrets auto-migrate to new key",
+            "Key changes ignored"
+        ]
+    },
+    {
+        "q": "What is the difference between IAM policies and organization policies?",
+        "o": [
+            "IAM controls access, org policies constrain resource usage",
+            "Both control access",
+            "Org policies replace IAM",
+            "IAM is for organization only"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with days since noncurrent and numNewerVersions?",
+        "o": [
+            "Both conditions can be combined for precise control",
+            "Cannot combine these conditions",
+            "Only one condition works",
+            "Conditions conflict"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with source tags and service account overlap?",
+        "o": [
+            "VM must match either source tags or service account",
+            "Must match both",
+            "Tags take precedence",
+            "Service account takes precedence"
+        ]
+    },
+    {
+        "q": "What is an audit log's request metadata with pagination?",
+        "o": [
+            "Tokens and page sizes for list operations",
+            "No pagination data",
+            "Only first page recorded",
+            "All results in single log"
+        ]
+    },
+    {
+        "q": "What is secret manager version state destroyed with replication lag?",
+        "o": [
+            "Destroy synchronously across all regions",
+            "Regions destroyed at different times",
+            "Destroy blocked until sync",
+            "Primary region only destroyed"
+        ]
+    },
+    {
+        "q": "What is a service account with no keys and workload identity federation?",
+        "o": [
+            "Uses external identity without key management",
+            "Cannot function without keys",
+            "Automatically generates keys",
+            "Uses default keys only"
+        ]
+    },
+    {
+        "q": "How does IAM policy evaluation handle resource hierarchy with multiple deny rules?",
+        "o": [
+            "Any deny at any level overrides all allows throughout hierarchy",
+            "Deny only applies at the level where it's defined",
+            "Deny closest to resource takes precedence",
+            "Deny rules are ignored if any allow exists"
+        ]
+    },
+    {
+        "q": "What happens to Cloud Storage objects when bucket retention policy is locked?",
+        "o": [
+            "Policy becomes permanent and cannot be reduced or removed",
+            "Policy can still be modified with special permissions",
+            "Objects become immutable forever",
+            "Bucket must be deleted within 30 days"
+        ]
+    },
+    {
+        "q": "What is VPC Flow Logs sampling rate effect on accuracy?",
+        "o": [
+            "Lower rates reduce accuracy but also reduce costs",
+            "Sampling rate does not affect accuracy",
+            "Higher rates always capture all packets",
+            "Sampling only applies to metadata"
+        ]
+    },
+    {
+        "q": "How are audit logs for deleted projects retained?",
+        "o": [
+            "Logs retained for project's lifetime plus retention period",
+            "Logs deleted immediately with project",
+            "Logs moved to organization level",
+            "Logs archived for 10 years"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's integration with VPC Service Controls perimeter?",
+        "o": [
+            "Secret access restricted to within VPC perimeter",
+            "Secrets ignore VPC perimeters",
+            "VPC perimeters block all secret access",
+            "Secrets must be outside perimeter"
+        ]
+    },
+    {
+        "q": "What is the maximum number of conditional IAM bindings per policy?",
+        "o": [
+            "Limited by overall policy size of 64 KB",
+            "Exactly 10 conditions maximum",
+            "Exactly 20 conditions maximum",
+            "No practical limit exists"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage object's temporary hold vs event-based hold?",
+        "o": [
+            "Temporary hold is manual, event-based hold is automatic",
+            "Both are exactly the same function",
+            "Event-based hold is always permanent",
+            "Temporary hold requires bucket configuration"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule evaluation with overlapping priorities?",
+        "o": [
+            "Most specific rule wins among same priority rules",
+            "Random selection among same priority",
+            "First created rule wins",
+            "Last created rule wins"
+        ]
+    },
+    {
+        "q": "What is an audit log's service data for managed services?",
+        "o": [
+            "Service-specific metadata about the operation",
+            "Only basic request information",
+            "No additional service data",
+            "User's personal data"
+        ]
+    },
+    {
+        "q": "What happens when a secret version is destroyed during active rotation?",
+        "o": [
+            "Rotation fails or creates inconsistent state",
+            "Destroy takes precedence over rotation",
+            "Rotation continues unaffected",
+            "Secret becomes permanently locked"
+        ]
+    },
+    {
+        "q": "How does IAM role recommendation handle custom roles?",
+        "o": [
+            "Can recommend creating custom roles based on usage",
+            "Only works with predefined roles",
+            "Custom roles cannot be analyzed",
+            "Recommends converting custom to predefined"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's retention policy with versioning enabled?",
+        "o": [
+            "Retention applies to all object versions including live",
+            "Retention only applies to live objects",
+            "Retention only applies to archived versions",
+            "Versioning overrides retention"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with service account and tag combinations limitations?",
+        "o": [
+            "Cannot use both source and target service accounts with tags",
+            "All combinations are fully supported",
+            "Tags cannot be used with service accounts",
+            "Service accounts cannot be used with tags"
+        ]
+    },
+    {
+        "q": "What is audit log retention for logs with customer-managed encryption keys?",
+        "o": [
+            "Logs become inaccessible if CMEK key is destroyed",
+            "CMEK does not apply to audit logs",
+            "Logs use separate encryption always",
+            "Key destruction has no effect on logs"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's maximum secret version age limit?",
+        "o": [
+            "No technical age limit but recommended to rotate",
+            "Maximum 1 year per version",
+            "Maximum 5 years per version",
+            "Maximum 10 years per version"
+        ]
+    },
+    {
+        "q": "What is a custom IAM role with permissions from different services?",
+        "o": [
+            "Can combine permissions from multiple services",
+            "Limited to single service permissions",
+            "Only compute permissions allowed",
+            "Only storage permissions allowed"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage object's hold release with retention policy active?",
+        "o": [
+            "Object remains protected by retention policy after hold release",
+            "Object becomes immediately deletable",
+            "Retention policy is suspended",
+            "Hold overrides retention policy"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with source tags and target service accounts interaction?",
+        "o": [
+            "Source tags apply to source VMs, target service accounts to destination",
+            "Both apply to same VMs",
+            "Only one can be specified",
+            "Tags override service accounts"
+        ]
+    },
+    {
+        "q": "What is an audit log's policy evaluation with hierarchical conditions?",
+        "o": [
+            "Conditions evaluated at each level where they exist",
+            "Conditions only apply at resource level",
+            "Conditions ignored in hierarchy",
+            "Conditions override hierarchy"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior when CMEK key version is disabled?",
+        "o": [
+            "Secret versions encrypted with that key become inaccessible",
+            "Secrets automatically re-encrypt with new version",
+            "Access continues using cached key",
+            "Secret Manager falls back to Google-managed keys"
+        ]
+    },
+    {
+        "q": "What is the difference between IAM conditions and VPC Service Controls?",
+        "o": [
+            "IAM conditions control access, VPC SC defines security perimeter",
+            "Both are identical security features",
+            "VPC SC replaces IAM conditions",
+            "IAM conditions are for networking"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with days since custom time and storage class?",
+        "o": [
+            "Both conditions can be combined in single rule",
+            "Cannot combine time and storage class",
+            "Storage class condition overrides time",
+            "Time condition requires storage class"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule logging with metadata exclusion for sensitive data?",
+        "o": [
+            "Cannot exclude specific metadata fields from logging",
+            "Can exclude any metadata fields",
+            "Sensitive data automatically redacted",
+            "All metadata is always logged"
+        ]
+    },
+    {
+        "q": "What is an audit log sink with inclusion and exclusion filters interaction?",
+        "o": [
+            "Exclusion filters applied after inclusion filters",
+            "Inclusion filters applied after exclusion",
+            "Filters are evaluated in parallel",
+            "Only exclusion filters matter"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's replication with CMEK and key rotation?",
+        "o": [
+            "Each region's secret version uses its region's CMEK key",
+            "All regions share same CMEK key",
+            "CMEK cannot be used with replication",
+            "Replication breaks CMEK encryption"
+        ]
+    },
+    {
+        "q": "What is a service account key with access to multiple projects?",
+        "o": [
+            "Key permissions depend on IAM roles across projects",
+            "Keys are project-scoped only",
+            "Keys automatically work in all projects",
+            "Keys must be recreated per project"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's object versioning with lifecycle rules interaction?",
+        "o": [
+            "Lifecycle rules can target specific versions using conditions",
+            "Lifecycle ignores versioning entirely",
+            "Versioning prevents lifecycle actions",
+            "Lifecycle only applies to live objects"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with protocol and port ranges for ICMP?",
+        "o": [
+            "ICMP does not use ports, uses type and code instead",
+            "ICMP uses port ranges like TCP",
+            "ICMP supports all port numbers",
+            "ICMP ports are configurable"
+        ]
+    },
+    {
+        "q": "What is an audit log's authentication info for service account impersonation?",
+        "o": [
+            "Chain of identities including original and impersonated",
+            "Only final impersonated identity",
+            "Only original identity",
+            "No identity information recorded"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's version destruction with replication lag in multi-region?",
+        "o": [
+            "Destruction waits for replication to complete",
+            "Destruction proceeds regardless of replication",
+            "Replication canceled during destruction",
+            "Destruction fails if replication pending"
+        ]
+    },
+    {
+        "q": "What is IAM policy with organization constraints and deny rules?",
+        "o": [
+            "Both are evaluated independently and can both deny access",
+            "Organization constraints override IAM deny",
+            "IAM deny overrides organization constraints",
+            "Only one can deny access"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's retention policy lock effect on lifecycle rules?",
+        "o": [
+            "Lifecycle rules cannot delete objects before retention expires",
+            "Lifecycle overrides retention policy",
+            "Retention policy disables lifecycle",
+            "Lifecycle rules are ignored after lock"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with priority and implicit rules interaction?",
+        "o": [
+            "Implicit rules have highest priority always",
+            "Implicit rules can be overridden",
+            "Implicit rules have lowest priority",
+            "Implicit rules don't have priority"
+        ]
+    },
+    {
+        "q": "What is an audit log filter with resource labels and project scope?",
+        "o": [
+            "Filters can combine labels from multiple resources",
+            "Labels only work within single project",
+            "Labels cannot be used in filters",
+            "Project scope overrides labels"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's CMEK key destruction recovery option?",
+        "o": [
+            "No recovery, secrets permanently inaccessible",
+            "90 day soft delete for keys",
+            "Automatic backup key used",
+            "Secrets revert to Google-managed keys"
+        ]
+    },
+    {
+        "q": "What is a custom IAM role with stage deprecated behavior?",
+        "o": [
+            "Role still functions but may be removed in future",
+            "Role immediately stops working",
+            "Role automatically converts to GA",
+            "Role cannot be used anymore"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's object hold with retention policy and versioning?",
+        "o": [
+            "Holds apply to specific versions independently",
+            "Holds apply to all versions equally",
+            "Versioning breaks hold functionality",
+            "Retention policy overrides holds"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with source tags that don't exist on any VM?",
+        "o": [
+            "Rule matches no traffic, effectively inactive",
+            "Rule matches all traffic",
+            "Rule creation fails",
+            "Rule matches future VMs with tags"
+        ]
+    },
+    {
+        "q": "What is an audit log's method name for batch operations?",
+        "o": [
+            "Single log entry for batch with individual operation details",
+            "Separate log for each batch operation",
+            "No logs for batch operations",
+            "Batch operations not logged"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's rotation with version expiration interaction?",
+        "o": [
+            "Rotation creates new version, old versions expire separately",
+            "Rotation automatically expires old versions",
+            "Expiration triggers rotation",
+            "Rotation and expiration unrelated"
+        ]
+    },
+    {
+        "q": "What is the difference between IAM deny policies and organization policy constraints?",
+        "o": [
+            "Deny policies block access, constraints restrict resource configuration",
+            "Both block access to resources",
+            "Constraints are for IAM only",
+            "Deny policies are for networks only"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with days since noncurrent and days since storage class?",
+        "o": [
+            "Both conditions can be combined for complex transitions",
+            "Cannot combine time-based conditions",
+            "Only one time condition works",
+            "Conditions conflict with each other"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with service accounts and network tags for GKE nodes?",
+        "o": [
+            "GKE nodes inherit both service account and node tags",
+            "GKE nodes only use service accounts",
+            "GKE nodes only use network tags",
+            "GKE ignores firewall rules"
+        ]
+    },
+    {
+        "q": "What is an audit log's resource state for failed operations?",
+        "o": [
+            "Resource state may not be recorded for failed operations",
+            "Always recorded for all operations",
+            "Only recorded for successful operations",
+            "Recorded in separate log"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's replication with customer-managed key in different regions?",
+        "o": [
+            "Each region must have its own CMEK key available",
+            "Single key works across all regions",
+            "CMEK keys are global only",
+            "Replication regions must share keys"
+        ]
+    },
+    {
+        "q": "What is a service account with workload identity federation for AWS?",
+        "o": [
+            "Allows AWS identities to assume GCP service account roles",
+            "Only works with GCP identities",
+            "Requires service account keys",
+            "AWS identities directly access resources"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's object holds with default bucket hold?",
+        "o": [
+            "Default hold applies to new objects, individual holds override",
+            "Default hold overrides individual holds",
+            "Holds cannot be set at bucket level",
+            "Individual holds disable default hold"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with priority and logging for specific traffic?",
+        "o": [
+            "Logging can be enabled per rule regardless of priority",
+            "Logging only works for high priority rules",
+            "Logging requires minimum priority",
+            "Logging disabled for low priority"
+        ]
+    },
+    {
+        "q": "What is an audit log filter with severity and resource type combination?",
+        "o": [
+            "Combines multiple criteria for precise log selection",
+            "Only one filter type allowed",
+            "Severity overrides resource type",
+            "Resource type overrides severity"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's version state with automated rotation conflict?",
+        "o": [
+            "Manual state changes can interrupt automated rotation",
+            "Rotation overrides manual states",
+            "Manual states block rotation",
+            "Rotation ignores version states"
+        ]
+    },
+    {
+        "q": "What is IAM policy with hierarchical conditions inheritance?",
+        "o": [
+            "Conditions are not inherited, only evaluated at defined level",
+            "Conditions inherit to child resources",
+            "Conditions always apply to all descendants",
+            "Inheritance depends on condition type"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with multiple rules priority?",
+        "o": [
+            "Rules evaluated in order defined, first match applies",
+            "All matching rules execute",
+            "Random rule execution order",
+            "Most specific rule executes"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with source and target service accounts across organizations?",
+        "o": [
+            "Cross-organization service accounts not supported",
+            "Works across any organizations",
+            "Requires organization peering",
+            "Limited to same folder only"
+        ]
+    },
+    {
+        "q": "What is an audit log's request metadata with quota information?",
+        "o": [
+            "Quota usage and limits included for quota-related operations",
+            "Quota information never logged",
+            "Quota only in separate metrics",
+            "Quota included for all operations"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's CMEK with automatic key rotation from Cloud KMS?",
+        "o": [
+            "New secret versions use new key version automatically",
+            "Existing secrets re-encrypt with new key",
+            "Key rotation breaks secret access",
+            "Secrets must be manually updated"
+        ]
+    },
+    {
+        "q": "What is the difference between IAM conditions and access context manager?",
+        "o": [
+            "IAM conditions are for GCP, Access Context Manager for BeyondCorp",
+            "Both are identical services",
+            "Access context manager replaces IAM conditions",
+            "IAM conditions are for network access"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's retention policy with object holds conflict?",
+        "o": [
+            "Both apply and the longer protection period wins",
+            "Retention policy always wins",
+            "Object hold always wins",
+            "Conflict prevents object deletion"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with source tags and service account performance impact?",
+        "o": [
+            "Tag-based rules scale better than service account rules",
+            "Service account rules are faster",
+            "No performance difference exists",
+            "Both cause significant latency"
+        ]
+    },
+    {
+        "q": "What is an audit log sink with multiple filters interaction?",
+        "o": [
+            "Filters are combined with AND logic by default",
+            "Filters use OR logic by default",
+            "Only first filter applied",
+            "Filters processed sequentially"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's version destruction with CMEK key pending deletion?",
+        "o": [
+            "Destruction proceeds but data becomes inaccessible if key deleted",
+            "Destruction blocked until key resolved",
+            "Secret moves to Google-managed key",
+            "Destruction requires active key"
+        ]
+    },
+    {
+        "q": "What is a custom IAM role with permissions that become deprecated?",
+        "o": [
+            "Role still contains deprecated permissions until manually removed",
+            "Deprecated permissions auto-removed",
+            "Role becomes invalid",
+            "Role auto-updates to new permissions"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with days since noncurrent and isLive false?",
+        "o": [
+            "Both indicate same condition, either can be used",
+            "Days since noncurrent requires isLive condition",
+            "IsLive false overrides time condition",
+            "Conditions cannot be combined"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with target tags for load balanced traffic?",
+        "o": [
+            "Health check traffic must be allowed separately",
+            "Load balancer automatically allows traffic",
+            "Target tags apply to health checks",
+            "Health checks ignore firewall rules"
+        ]
+    },
+    {
+        "q": "What is an audit log's policy evaluation with multiple deny conditions?",
+        "o": [
+            "Any deny condition true results in denial",
+            "All deny conditions must be true",
+            "Deny conditions are ignored",
+            "Only first deny condition matters"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's replication with CMEK and key location constraints?",
+        "o": [
+            "CMEK key must exist in each replication region",
+            "Key can be global and work everywhere",
+            "Key location independent of replication",
+            "Replication uses single key region"
+        ]
+    },
+    {
+        "q": "What is a service account with domain-wide delegation security implications?",
+        "o": [
+            "Can access all Google Workspace data, requires careful protection",
+            "Limited to GCP resources only",
+            "No special security concerns",
+            "Automatically audited and restricted"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's object versioning with lifecycle delete marker?",
+        "o": [
+            "Delete markers are separate versions that can be managed",
+            "Delete markers are not versions",
+            "Lifecycle ignores delete markers",
+            "Delete markers bypass lifecycle"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with protocol and port ranges for load balancers?",
+        "o": [
+            "Load balancer health checks use specific ranges",
+            "Load balancers ignore firewall rules",
+            "Firewall rules don't apply to load balancers",
+            "All ports must be open for load balancers"
+        ]
+    },
+    {
+        "q": "What is an audit log filter with timestamp and severity for compliance?",
+        "o": [
+            "Can create precise queries for audit requirements",
+            "Limited to basic filtering only",
+            "Timestamp and severity cannot combine",
+            "Compliance requires separate tools"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's version state transition conflicts?",
+        "o": [
+            "Cannot enable a destroyed version, must create new",
+            "Destroyed versions can be re-enabled",
+            "Disabled versions auto-destroy after time",
+            "All states are reversible"
+        ]
+    },
+    {
+        "q": "What is IAM policy with organization constraints and conditions interaction?",
+        "o": [
+            "Both evaluated, constraints may block operations even with IAM allow",
+            "IAM conditions override constraints",
+            "Constraints override IAM conditions",
+            "Only one evaluation matters"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with days since custom time and numNewerVersions?",
+        "o": [
+            "Can combine time and count conditions for complex rules",
+            "Time and count conditions mutually exclusive",
+            "Count condition requires time condition",
+            "Time condition requires count condition"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with source tags that change dynamically?",
+        "o": [
+            "Rule evaluation updates as tags change on VMs",
+            "Rules cached at VM startup only",
+            "Tag changes require rule recreation",
+            "Tags are static after VM creation"
+        ]
+    },
+    {
+        "q": "What is an audit log's resource name format for deleted resources?",
+        "o": [
+            "Resource name recorded at time of operation",
+            "Resource name not available after deletion",
+            "Only resource ID remains",
+            "New name assigned after deletion"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's CMEK with key rotation and version access?",
+        "o": [
+            "Secret versions always use key version from encryption time",
+            "Secrets update to use latest key version",
+            "Key rotation re-encrypts all secrets",
+            "Access fails after key rotation"
+        ]
+    },
+    {
+        "q": "What is the difference between IAM and Cloud Identity?",
+        "o": [
+            "IAM manages permissions, Cloud Identity manages user identities",
+            "Both manage the same thing",
+            "Cloud Identity replaces IAM",
+            "IAM is for external users only"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's object hold with retention policy extension?",
+        "o": [
+            "Hold can extend protection beyond retention period",
+            "Hold cannot exceed retention period",
+            "Retention period extends to match hold",
+            "Hold and retention must match exactly"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with target service accounts for GKE pods?",
+        "o": [
+            "GKE pods inherit node service account, not pod-specific accounts",
+            "Pods have their own service accounts",
+            "Firewall rules apply directly to pods",
+            "GKE uses separate pod firewall"
+        ]
+    },
+    {
+        "q": "What is an audit log's method name for operations with multiple steps?",
+        "o": [
+            "Separate logs for each step with correlation ID",
+            "Single combined log for all steps",
+            "Only final step logged",
+            "Steps not individually logged"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's replication with automatic rotation across regions?",
+        "o": [
+            "Rotation creates new version in all replication regions",
+            "Rotation only occurs in primary region",
+            "Regions have independent rotation",
+            "Rotation breaks replication"
+        ]
+    },
+    {
+        "q": "What is a custom IAM role with permissions that require additional APIs?",
+        "o": [
+            "Role works but APIs must be enabled for permissions to function",
+            "APIs auto-enable with role",
+            "Role creation requires APIs enabled",
+            "APIs not needed for IAM"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's lifecycle with days since storage class and storage class condition?",
+        "o": [
+            "Can transition objects based on current storage class",
+            "Storage class condition redundant with action",
+            "Cannot use storage class in condition",
+            "Condition must match target class"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with priority and rule count performance?",
+        "o": [
+            "Large number of rules can impact latency",
+            "No performance impact from rule count",
+            "More rules improve performance",
+            "Only priority affects performance"
+        ]
+    },
+    {
+        "q": "What is an audit log's request metadata with field masks for partial updates?",
+        "o": [
+            "Field mask information included for update operations",
+            "Full resource state always logged",
+            "Field masks not captured in logs",
+            "Only final state matters"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's version state with scheduled rotation overlap?",
+        "o": [
+            "Rotation creates new version regardless of existing states",
+            "Rotation respects disabled states",
+            "Rotation blocked by disabled versions",
+            "States reset on rotation"
+        ]
+    },
+    {
+        "q": "What is IAM policy with organization constraints and resource location conditions?",
+        "o": [
+            "Both can restrict where resources can be created",
+            "Only organization constraints control location",
+            "Only IAM conditions control location",
+            "Location cannot be restricted"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's retention policy with object lock compliance?",
+        "o": [
+            "Meets SEC Rule 17a-4 requirements when locked",
+            "Not compliant with regulatory requirements",
+            "Requires additional configuration",
+            "Only object holds are compliant"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with source service accounts for health checks?",
+        "o": [
+            "Google health check service accounts must be allowed",
+            "Health checks use special IP ranges only",
+            "Service accounts not used for health checks",
+            "Health checks ignore service accounts"
+        ]
+    },
+    {
+        "q": "What is an audit log sink with inclusion and exclusion filters order importance?",
+        "o": [
+            "Order matters, exclusions applied after inclusions",
+            "Order doesn't matter, both evaluated",
+            "Exclusions always applied first",
+            "Inclusions always applied first"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's CMEK with key deletion and version destruction order?",
+        "o": [
+            "Destroy versions before deleting keys to avoid permanent inaccessibility",
+            "Delete keys before destroying versions",
+            "Order doesn't matter",
+            "Both operations independent"
+        ]
+    },
+    {
+        "q": "What is a service account with workload identity federation for Azure?",
+        "o": [
+            "Allows Azure AD identities to assume GCP service account roles",
+            "Only works with GCP identities",
+            "Requires Azure service account",
+            "Direct Azure access to GCP"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage bucket's object holds with default bucket hold interaction?",
+        "o": [
+            "Default hold applies to new objects, can be overridden per object",
+            "Default hold applies to all objects permanently",
+            "Object holds disable default hold",
+            "Default hold overrides all"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with protocol and port ranges for GKE node communication?",
+        "o": [
+            "Specific ports required for node communication",
+            "All ports open between nodes",
+            "GKE manages its own firewall",
+            "No firewall needed for GKE"
+        ]
+    },
+    {
+        "q": "What is an audit log's resource state size limitations?",
+        "o": [
+            "Resource state truncated if exceeds size limits",
+            "Always complete regardless of size",
+            "Resource state not logged for large resources",
+            "Only resource name logged"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's replication with customer-managed key destruction in one region?",
+        "o": [
+            "Secret versions in that region become inaccessible",
+            "All secret versions become inaccessible",
+            "Secret moves to other region automatically",
+            "Key destruction ignored in replication"
+        ]
+    },
+    {
+        "q": "How does IAM policy evaluation handle hierarchical deny rules with conditions at different levels?",
+        "o": [
+            "Conditions at each deny level must be satisfied for that deny to apply",
+            "Any deny condition true at any level blocks all access",
+            "Only the lowest level deny conditions are evaluated",
+            "Conditions are ignored for deny rules in hierarchy"
+        ]
+    },
+    {
+        "q": "What happens to Cloud Storage objects when bucket retention policy is locked and then CMEK key is destroyed?",
+        "o": [
+            "Objects become permanently inaccessible but cannot be deleted until retention expires",
+            "Objects can still be accessed using alternative keys",
+            "Retention policy is automatically suspended",
+            "Objects are deleted immediately to prevent data loss"
+        ]
+    },
+    {
+        "q": "What is the maximum number of VPC firewall rules and their performance impact at scale?",
+        "o": [
+            "Soft limit of 200 rules with potential latency at higher counts",
+            "No limit but performance degrades linearly",
+            "Hard limit of 1000 rules with no impact",
+            "Unlimited rules with constant performance"
+        ]
+    },
+    {
+        "q": "How are audit logs for operations that span multiple projects and organizations aggregated?",
+        "o": [
+            "Each project and organization logs independently with correlation IDs",
+            "Centralized logging required for cross-project visibility",
+            "Logs are automatically merged at organization level",
+            "Cross-project operations not logged completely"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior during regional outage with replicated secrets?",
+        "o": [
+            "Access automatically fails over to available replica regions",
+            "Secrets become unavailable until region recovers",
+            "Manual failover required to secondary region",
+            "Read-only access continues in affected region"
+        ]
+    },
+    {
+        "q": "What is the theoretical maximum number of IAM policy bindings before performance degradation?",
+        "o": [
+            "Around 1500 bindings before policy evaluation latency increases",
+            "No limit with constant evaluation time",
+            "100 bindings maximum recommended",
+            "Performance independent of binding count"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with concurrent retention policy lock and object write operations?",
+        "o": [
+            "Lock operation blocks until all dependent writes complete",
+            "Writes continue during lock operation",
+            "Lock fails if writes in progress",
+            "Writes are rolled back after lock"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule evaluation order with service accounts and network tags in large environments?",
+        "o": [
+            "Tag-based evaluation faster than service account lookups at scale",
+            "Service account evaluation always faster",
+            "No performance difference between methods",
+            "Both scale identically with VM count"
+        ]
+    },
+    {
+        "q": "What is the audit log consistency model for globally distributed operations?",
+        "o": [
+            "Eventually consistent with logs appearing within minutes",
+            "Strongly consistent across all regions",
+            "Logs available immediately in all regions",
+            "Consistency depends on operation type"
+        ]
+    },
+    {
+        "q": "What happens when Secret Manager automatic rotation fails due to CMEK key unavailability?",
+        "o": [
+            "Rotation retries with exponential backoff, logs failure",
+            "Rotation uses Google-managed key as fallback",
+            "Secret becomes permanently inaccessible",
+            "Rotation skips and continues next schedule"
+        ]
+    },
+    {
+        "q": "How does IAM policy evaluation handle circular dependencies in service account impersonation?",
+        "o": [
+            "Detects and prevents circular dependencies at evaluation time",
+            "Allows but may cause infinite loops",
+            "Circular dependencies not possible in IAM",
+            "Evaluation fails with unclear error"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with object versioning and retention policy when reaching bucket limit?",
+        "o": [
+            "Write operations fail until space available or older versions removed",
+            "Automatic deletion of oldest noncurrent versions",
+            "Retention policy suspended to allow writes",
+            "Bucket expands automatically"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule logging accuracy with high packet rates?",
+        "o": [
+            "Sampling may drop logs at very high rates",
+            "All packets logged regardless of rate",
+            "Logging rate limited per rule",
+            "High rates cause packet drops"
+        ]
+    },
+    {
+        "q": "What is the audit log retention behavior with multiple sinks and exclusions in complex hierarchies?",
+        "o": [
+            "Logs routed to all sinks before exclusions applied at destination",
+            "Exclusions applied before sink routing",
+            "Sink order determines processing",
+            "Hierarchy level affects routing"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior during CMEK key rotation with in-flight access requests?",
+        "o": [
+            "Existing requests complete with current key, new requests use rotated key",
+            "All requests blocked during rotation",
+            "Access fails during rotation window",
+            "Requests randomly use old or new key"
+        ]
+    },
+    {
+        "q": "What is the maximum size of IAM policy with conditions before hitting system limits?",
+        "o": [
+            "64 KB total size including all conditions",
+            "1 MB maximum policy size",
+            "No size limit on policies",
+            "Size limit applies to bindings only"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with object holds and retention policy during legal hold orders?",
+        "o": [
+            "Legal hold overrides both and prevents any deletion",
+            "Retention policy supersedes legal hold",
+            "Object holds conflict with legal hold",
+            "Legal hold requires separate mechanism"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule evaluation with overlapping priorities and multiple tags in large deployments?",
+        "o": [
+            "Most specific tag combination wins among same priority rules",
+            "Priority alone determines match regardless of tags",
+            "Tags ignored if priorities overlap",
+            "Random selection among matches"
+        ]
+    },
+    {
+        "q": "What is the audit log ingestion guarantee during regional outages?",
+        "o": [
+            "Logs buffered at edge and delivered when region available",
+            "Logs lost during regional outages",
+            "Failover to alternate region automatically",
+            "Logging suspended until recovery"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's consistency model for version state changes across replicated regions?",
+        "o": [
+            "Eventually consistent, changes propagate asynchronously",
+            "Strongly consistent across all regions",
+            "Primary region only consistent",
+            "Consistency configurable per secret"
+        ]
+    },
+    {
+        "q": "How does IAM policy evaluation handle time-based conditions across daylight saving time boundaries?",
+        "o": [
+            "Uses UTC consistently, unaffected by DST",
+            "Local time zones applied with DST adjustments",
+            "Policies need manual DST adjustment",
+            "DST causes policy evaluation errors"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with lifecycle rules and object holds during bucket transfer?",
+        "o": [
+            "Holds and lifecycle rules transfer with objects",
+            "Holds reset in destination bucket",
+            "Lifecycle rules reapplied after transfer",
+            "Transfer ignores all holds and rules"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule with source and target service accounts in different organizations?",
+        "o": [
+            "Not possible as service accounts are organization-scoped",
+            "Possible with organization peering",
+            "Works if both in same Google Cloud organization",
+            "Cross-organization service accounts supported"
+        ]
+    },
+    {
+        "q": "What is the audit log size limit per entry and truncation behavior?",
+        "o": [
+            "Entries over 256 KB truncated with warning",
+            "No size limit, all data preserved",
+            "Large entries split across multiple logs",
+            "Entries over 1 MB rejected"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior when CMEK key version is disabled during secret access?",
+        "o": [
+            "Access fails immediately with permission denied",
+            "Cached key continues working temporarily",
+            "Automatic fallback to previous key version",
+            "Access continues indefinitely"
+        ]
+    },
+    {
+        "q": "What is the maximum number of custom IAM roles that can be created in an organization?",
+        "o": [
+            "Soft limit of 3000 custom roles per organization",
+            "Unlimited custom role creation",
+            "100 custom roles maximum",
+            "1000 custom roles maximum"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with bucket policy only and ACLs from legacy objects?",
+        "o": [
+            "ACLs ignored but preserved for backward compatibility",
+            "ACLs still enforced alongside IAM",
+            "Bucket fails to enable policy only with existing ACLs",
+            "ACLs automatically converted to IAM"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule evaluation with service accounts in GKE clusters using workload identity?",
+        "o": [
+            "Pods use node service account for firewall evaluation",
+            "Pods have individual service accounts for firewall",
+            "Workload identity bypasses firewall rules",
+            "GKE has separate firewall mechanism"
+        ]
+    },
+    {
+        "q": "What is the audit log timestamp accuracy and ordering guarantee?",
+        "o": [
+            "Microsecond precision with eventual consistent ordering",
+            "Nanosecond precision with strict ordering",
+            "Second precision with no ordering guarantee",
+            "Millisecond precision with real-time ordering"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior when destroying a secret with active CMEK key rotation?",
+        "o": [
+            "All versions destroyed regardless of key state",
+            "Destruction blocked if key rotation in progress",
+            "Secret enters pending destruction state",
+            "Destruction fails with key rotation active"
+        ]
+    },
+    {
+        "q": "How does IAM policy evaluation handle resource hierarchy with 10+ levels of folders?",
+        "o": [
+            "All levels evaluated with potential latency impact",
+            "Evaluation depth limited to 5 levels",
+            "Folders beyond 5 levels ignored",
+            "Hierarchy flattened for evaluation"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with retention policy and object rewrite operations?",
+        "o": [
+            "Rewrite creates new object with fresh retention period",
+            "Original retention period preserved",
+            "Rewrite blocked by retention policy",
+            "Retention reset to bucket default"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule evaluation with IPv6 and IPv4 mixed traffic?",
+        "o": [
+            "Separate rules needed for IPv4 and IPv6",
+            "Single rule applies to both address families",
+            "IPv6 rules automatically generated from IPv4",
+            "VPC does not support IPv6 firewall"
+        ]
+    },
+    {
+        "q": "What is the audit log deduplication mechanism for identical operations?",
+        "o": [
+            "Logs may contain duplicate entries for same operation",
+            "Automatic deduplication within 5 minutes",
+            "No duplicates ever generated",
+            "Deduplication based on operation ID"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior when reaching regional replication limits?",
+        "o": [
+            "New replication requests throttle with backoff",
+            "Replication fails with quota error",
+            "Automatic failover to other regions",
+            "Replication queues indefinitely"
+        ]
+    },
+    {
+        "q": "What is the maximum number of service account keys per service account and performance impact?",
+        "o": [
+            "Soft limit of 10 keys, more causes key lookup latency",
+            "Unlimited keys with no impact",
+            "Hard limit of 5 keys maximum",
+            "20 keys maximum with constant performance"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with object versioning and lifecycle rules during bucket rename?",
+        "o": [
+            "Bucket rename not possible, must create new bucket",
+            "Version history preserved during rename",
+            "Lifecycle rules reset after rename",
+            "Versioning disabled during rename"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule evaluation with overlapping CIDR ranges and priorities?",
+        "o": [
+            "Most specific CIDR wins among same priority",
+            "Priority determines match regardless of CIDR specificity",
+            "CIDR specificity overrides priority",
+            "Both factors weighted equally"
+        ]
+    },
+    {
+        "q": "What is the audit log field exfiltration protection for sensitive data?",
+        "o": [
+            "Sensitive fields automatically redacted in logs",
+            "All data preserved for security analysis",
+            "Redaction must be configured manually",
+            "Sensitive data never logged"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior when CMEK key is deleted during secret version destruction?",
+        "o": [
+            "Destruction completes but version data irrecoverable",
+            "Destruction fails with key deleted error",
+            "Secret moves to Google-managed key",
+            "Destruction pending until key restored"
+        ]
+    },
+    {
+        "q": "How does IAM policy evaluation handle conditions referencing resource tags that change frequently?",
+        "o": [
+            "Conditions evaluated with eventual consistency on tag changes",
+            "Real-time tag evaluation always",
+            "Tags cached for 5 minutes minimum",
+            "Tag changes require policy refresh"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with retention policy and object composition?",
+        "o": [
+            "Composite object inherits earliest retention of components",
+            "Latest retention applies to composite",
+            "Composition blocked by retention policies",
+            "Components lose individual retention"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule logging with metadata for high-throughput environments?",
+        "o": [
+            "Logging may sample packets at very high throughput",
+            "All packets logged with full metadata",
+            "Metadata excluded at high throughput",
+            "Logging disabled automatically at limit"
+        ]
+    },
+    {
+        "q": "What is the audit log retention for logs containing PII data with compliance requirements?",
+        "o": [
+            "Must manage through sinks with data lifecycle policies",
+            "Automatic PII deletion after 30 days",
+            "PII data never retained in logs",
+            "Compliance requires separate storage"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior with secret version limits and performance?",
+        "o": [
+            "Performance degrades with thousands of versions per secret",
+            "No performance impact from version count",
+            "Hard limit of 1000 versions per secret",
+            "Versions automatically archived after 100"
+        ]
+    },
+    {
+        "q": "What is the maximum number of IAM conditions per policy before evaluation complexity increases?",
+        "o": [
+            "Around 50 conditions before noticeable latency",
+            "No limit with constant evaluation time",
+            "10 conditions maximum recommended",
+            "Conditions don't affect performance"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with object holds and bucket policy changes?",
+        "o": [
+            "Policy changes blocked if objects on hold would be affected",
+            "Policy changes proceed ignoring holds",
+            "Holds temporarily suspended during policy changes",
+            "Holds and policies independent"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule evaluation with overlapping service account and tag rules at scale?",
+        "o": [
+            "Tag rules evaluated first, then service account for efficiency",
+            "Service account rules evaluated first",
+            "Both evaluated simultaneously",
+            "Evaluation order configurable"
+        ]
+    },
+    {
+        "q": "What is the audit log correlation across multiple GCP services for complex operations?",
+        "o": [
+            "Correlation IDs link related logs across services",
+            "No correlation possible across services",
+            "Manual correlation using timestamps required",
+            "Separate logs for each service"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior during regional replication with asymmetric CMEK keys?",
+        "o": [
+            "Each region uses its own key pair for encryption",
+            "Same key pair used across all regions",
+            "Asymmetric keys not supported with replication",
+            "Keys must be symmetric for replication"
+        ]
+    },
+    {
+        "q": "How does IAM policy evaluation handle resource hierarchy changes during active sessions?",
+        "o": [
+            "Permissions reevaluated on each request, hierarchy changes apply immediately",
+            "Sessions cached for duration regardless of hierarchy changes",
+            "Hierarchy changes require token refresh",
+            "Evaluation at session start only"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with bucket policy only and public access prevention?",
+        "o": [
+            "Both enforced, public access prevention blocks all public IAM",
+            "Public access prevention overrides bucket policy",
+            "Bucket policy only overrides prevention",
+            "Features conflict and cause errors"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule evaluation with protocol any and specific port limitations?",
+        "o": [
+            "Protocol any ignores port specifications",
+            "Ports apply to all protocols with any",
+            "Protocol any requires all ports",
+            "Ports optional with protocol any"
+        ]
+    },
+    {
+        "q": "What is the audit log retention guarantee for regulatory compliance across regions?",
+        "o": [
+            "Eventually consistent but durable within retention period",
+            "Strongly consistent globally for compliance",
+            "Retention guarantees vary by region",
+            "Compliance requires additional tools"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior with CMEK key revocation and secret rotation?",
+        "o": [
+            "Rotation fails if CMEK key revoked, secrets remain accessible until rotated",
+            "Rotation uses new key automatically",
+            "Secrets inaccessible immediately",
+            "Rotation bypasses CMEK requirements"
+        ]
+    },
+    {
+        "q": "What is the maximum number of service accounts that can be created in a project?",
+        "o": [
+            "Soft limit of 100 service accounts per project",
+            "Unlimited service accounts per project",
+            "50 service accounts maximum",
+            "200 service accounts maximum"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with object versioning and lifecycle rules during bucket replication?",
+        "o": [
+            "Version history and lifecycle rules replicate to destination",
+            "Only current version replicates",
+            "Lifecycle rules not replicated",
+            "Replication resets version history"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule evaluation with multiple protocols in single rule?",
+        "o": [
+            "Must create separate rules for different protocols",
+            "Can specify multiple protocols in one rule",
+            "Protocol combinations not supported",
+            "All protocols always allowed together"
+        ]
+    },
+    {
+        "q": "What is the audit log sink export consistency during high-volume logging events?",
+        "o": [
+            "Exports may lag during high volume but eventually consistent",
+            "Real-time export always guaranteed",
+            "Export paused during high volume",
+            "High volume causes data loss"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior with secret version destruction and replication lag?",
+        "o": [
+            "Destruction synchronously removes from all regions before completion",
+            "Destruction async, regions eventually consistent",
+            "Primary region destroyed first",
+            "Destruction fails if replication lag exists"
+        ]
+    },
+    {
+        "q": "How does IAM policy evaluation handle conditions on resource hierarchy ancestors?",
+        "o": [
+            "Conditions on ancestors evaluated when accessing descendant resources",
+            "Ancestor conditions ignored for descendants",
+            "Conditions don't inherit down hierarchy",
+            "Descendants override ancestor conditions"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with bucket retention policy and object rewrite to different storage class?",
+        "o": [
+            "Rewrite respects original retention period",
+            "New retention period starts after rewrite",
+            "Rewrite blocked during retention",
+            "Retention policy reapplied after rewrite"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule evaluation with source and target service accounts in GKE Autopilot?",
+        "o": [
+            "Autopilot manages firewall rules automatically",
+            "Manual firewall rules still apply",
+            "Service accounts ignored in Autopilot",
+            "Firewall not supported in Autopilot"
+        ]
+    },
+    {
+        "q": "What is the audit log field sensitivity for service account impersonation chains?",
+        "o": [
+            "Full chain logged including all identities",
+            "Only final identity logged for privacy",
+            "Chain truncated after 3 hops",
+            "Impersonation not logged"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior with CMEK key version rotation and secret version access patterns?",
+        "o": [
+            "Old secret versions use old key, new versions use new key",
+            "All versions re-encrypted with new key",
+            "Access fails until migration complete",
+            "Key rotation requires secret rotation"
+        ]
+    },
+    {
+        "q": "What is the maximum number of folder levels in resource hierarchy before IAM performance impact?",
+        "o": [
+            "10 folder levels recommended, beyond causes latency",
+            "No limit with constant performance",
+            "5 folder levels maximum",
+            "20 folder levels supported"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with object holds and bucket lifecycle rules during disaster recovery?",
+        "o": [
+            "Holds and rules preserved in DR copy",
+            "DR copy has no holds or rules",
+            "Holds reset, rules reapplied",
+            "DR ignores all protection mechanisms"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule evaluation with IPv6 ranges and legacy instances?",
+        "o": [
+            "IPv6 rules ignored on instances without IPv6",
+            "Instances auto-configure IPv6",
+            "Legacy instances block IPv6 rules",
+            "IPv6 requires separate VPC"
+        ]
+    },
+    {
+        "q": "What is the audit log integrity protection against tampering?",
+        "o": [
+            "Logs immutable after writing, deletion requires special permissions",
+            "Logs can be modified by anyone",
+            "Integrity not guaranteed",
+            "Tampering detection only with add-ons"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior with secret version replication and compliance boundaries?",
+        "o": [
+            "Replication respects compliance boundaries, secrets not copied across boundaries",
+            "Replication ignores compliance boundaries",
+            "Compliance requires single region",
+            "Boundaries block all replication"
+        ]
+    },
+    {
+        "q": "How does IAM policy evaluation handle conditions referencing dynamic attributes like current time?",
+        "o": [
+            "Evaluated at request time with UTC timestamp",
+            "Cached for performance, may be stale",
+            "Time conditions approximate only",
+            "Dynamic attributes not supported"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with object versioning and lifecycle rules during bucket locking?",
+        "o": [
+            "Bucket cannot be locked with versioning enabled",
+            "Versioning must be disabled before lock",
+            "Lock preserves versioning settings",
+            "Lock overrides versioning"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule evaluation with service accounts for Compute Engine default service account?",
+        "o": [
+            "Default service account can be used in firewall rules like any other",
+            "Default service account excluded from firewall",
+            "Special handling for default account",
+            "Default account not recommended for rules"
+        ]
+    },
+    {
+        "q": "What is the audit log retention for logs exported to multiple destinations with different policies?",
+        "o": [
+            "Each destination manages its own retention independently",
+            "Shortest retention applies to all",
+            "Longest retention applies to all",
+            "Retention must be identical"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior during CMEK key rotation with automatic rotation schedule conflict?",
+        "o": [
+            "CMEK rotation independent, secret rotation uses current primary key",
+            "Secret rotation waits for CMEK rotation",
+            "CMEK rotation triggers secret rotation",
+            "Rotations conflict and fail"
+        ]
+    },
+    {
+        "q": "What is the maximum number of principals in a single IAM policy binding?",
+        "o": [
+            "1500 members per binding limit",
+            "Unlimited members per binding",
+            "500 members maximum",
+            "100 members maximum"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with bucket policy only and object-level ACLs from prior configuration?",
+        "o": [
+            "ACLs stored but ignored, visible in metadata",
+            "ACLs automatically deleted",
+            "Bucket cannot enable policy only with existing ACLs",
+            "ACLs converted to IAM conditions"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule evaluation with overlapping rules and logging configuration conflicts?",
+        "o": [
+            "Logging setting from highest priority rule applies",
+            "All matching rules log independently",
+            "Logging aggregated across rules",
+            "Logging conflict causes no logs"
+        ]
+    },
+    {
+        "q": "What is the audit log completeness guarantee for operations that modify IAM policies?",
+        "o": [
+            "All policy changes logged before they take effect",
+            "Logs generated after changes applied",
+            "Some policy changes not logged",
+            "Logging optional for IAM changes"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior with secret version destruction and CMEK key pending deletion?",
+        "o": [
+            "Destruction proceeds, data becomes permanently inaccessible when key deleted",
+            "Destruction blocked until key resolved",
+            "Secret moves to Google-managed key",
+            "Destruction requires active key"
+        ]
+    },
+    {
+        "q": "How does IAM policy evaluation handle conditions on deleted resources?",
+        "o": [
+            "Conditions not evaluated as resource doesn't exist",
+            "Conditions still evaluated with cached state",
+            "Access denied for deleted resources",
+            "Special handling for deleted resources"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with retention policy and object rewrite to different bucket?",
+        "o": [
+            "Original retention period lost, destination bucket policy applies",
+            "Original retention preserved in new bucket",
+            "Rewrite blocked if retention active",
+            "Retention period transferred"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule evaluation with source tags referencing instances in stopped state?",
+        "o": [
+            "Stopped instances not considered in rule evaluation",
+            "Tags preserved and evaluated while stopped",
+            "Stopped instances block rule evaluation",
+            "Tags cleared when instance stopped"
+        ]
+    },
+    {
+        "q": "What is the audit log reliability during zonal failures in multi-region logging?",
+        "o": [
+            "Logs buffered in other zones, no loss",
+            "Logs lost during zonal failure",
+            "Manual failover required",
+            "Logging suspended until recovery"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior with secret version replication and CMEK key region mismatch?",
+        "o": [
+            "Each region must have its own CMEK key in that region",
+            "Single key works across all regions",
+            "Key region must match secret region",
+            "Mismatch causes replication failure"
+        ]
+    },
+    {
+        "q": "What is the maximum number of IAM deny policies per organization?",
+        "o": [
+            "Soft limit of 100 deny policies per organization",
+            "Unlimited deny policies",
+            "25 deny policies maximum",
+            "50 deny policies maximum"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with object holds and bucket replication across projects?",
+        "o": [
+            "Holds preserved in destination bucket",
+            "Holds reset in destination project",
+            "Replication blocked by holds",
+            "Holds must be removed for replication"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule evaluation with protocol icmp and specific type for path MTU discovery?",
+        "o": [
+            "Type 3 code 4 required for path MTU, must be allowed",
+            "All ICMP types allowed for MTU",
+            "MTU discovery uses TCP only",
+            "ICMP type 3 automatically allowed"
+        ]
+    },
+    {
+        "q": "What is the audit log timestamp synchronization across globally distributed services?",
+        "o": [
+            "All logs use synchronized NTP time with bounded skew",
+            "Timestamps vary by region up to seconds",
+            "No synchronization guarantee",
+            "Client timestamps used"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior with CMEK key access logging and secret access patterns?",
+        "o": [
+            "KMS audit logs show key access correlated with secret access",
+            "KMS access not logged separately",
+            "Secret Manager logs include key details",
+            "Key access not auditable"
+        ]
+    },
+    {
+        "q": "How does IAM policy evaluation handle conditions with resource tags that have high update frequency?",
+        "o": [
+            "Eventual consistency, updates may take seconds to affect evaluation",
+            "Real-time evaluation always",
+            "Tags cached for policy evaluation",
+            "High frequency tags not supported"
+        ]
+    },
+    {
+        "q": "What is Cloud Storage's behavior with bucket policy only and public access prevention during migration?",
+        "o": [
+            "Migration order: enable public access prevention, then policy only",
+            "Enable policy only, then public access prevention",
+            "Order doesn't matter",
+            "Cannot use both features"
+        ]
+    },
+    {
+        "q": "What is VPC firewall rule evaluation with target service accounts for preemptible VM behavior?",
+        "o": [
+            "Rules apply same as regular VMs, preemption doesn't affect evaluation",
+            "Preemptible VMs have separate rules",
+            "Firewall suspended during preemption",
+            "Rules reapplied after preemption"
+        ]
+    },
+    {
+        "q": "What is the audit log completeness for operations that fail before reaching the API?",
+        "o": [
+            "Not logged as API never received request",
+            "Logged as failed authentication",
+            "Partial log entry created",
+            "Logged at network level"
+        ]
+    },
+    {
+        "q": "What is Secret Manager's behavior with secret version limits and automated rotation conflicts?",
+        "o": [
+            "Rotation fails if version limit reached, requires cleanup",
+            "Rotation overwrites oldest version",
+            "Version limit ignored for rotation",
+            "Automatic cleanup before rotation"
+        ]
+    },
+    {
+        "q": "What is the maximum number of resource hierarchy levels recommended for optimal IAM performance?",
+        "o": [
+            "5-7 levels maximum for good performance",
+            "Unlimited levels supported",
+            "3 levels maximum recommended",
+            "10 levels with no impact"
+        ]
+    }
+]

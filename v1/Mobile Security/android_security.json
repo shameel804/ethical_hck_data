@@ -1,0 +1,4376 @@
+[
+    {
+        "q": "What is the primary security feature that sandboxes Android apps?",
+        "o": [
+            "Application sandbox",
+            "Firewall rules",
+            "Network proxy",
+            "Antivirus software"
+        ]
+    },
+    {
+        "q": "Which component enforces permissions at the Android system level?",
+        "o": [
+            "PackageManager",
+            "ActivityManager",
+            "WindowManager",
+            "NotificationManager"
+        ]
+    },
+    {
+        "q": "What file format is used for Android application packages?",
+        "o": [
+            "APK",
+            "EXE",
+            "MSI",
+            "DMG"
+        ]
+    },
+    {
+        "q": "Which Linux kernel feature isolates Android apps from each other?",
+        "o": [
+            "User ID separation",
+            "Memory paging",
+            "Process scheduling",
+            "File indexing"
+        ]
+    },
+    {
+        "q": "Where are Android app permissions declared?",
+        "o": [
+            "AndroidManifest.xml",
+            "strings.xml",
+            "styles.xml",
+            "build.gradle"
+        ]
+    },
+    {
+        "q": "What is the purpose of the Android permission model?",
+        "o": [
+            "Protect user privacy",
+            "Increase battery life",
+            "Improve network speed",
+            "Enhance display quality"
+        ]
+    },
+    {
+        "q": "Which class is used to create explicit intents in Android?",
+        "o": [
+            "Intent",
+            "Message",
+            "Bundle",
+            "Handler"
+        ]
+    },
+    {
+        "q": "What does root detection in apps typically check for?",
+        "o": [
+            "Superuser access",
+            "Low battery level",
+            "Weak WiFi signal",
+            "Limited storage"
+        ]
+    },
+    {
+        "q": "What is the Android Keystore system primarily used for?",
+        "o": [
+            "Storing cryptographic keys",
+            "Saving user passwords",
+            "Caching app data",
+            "Managing contacts"
+        ]
+    },
+    {
+        "q": "Which permission level requires user approval at install time on older Android?",
+        "o": [
+            "Normal",
+            "Signature",
+            "Privileged",
+            "Development"
+        ]
+    },
+    {
+        "q": "What is the base of the Android security architecture?",
+        "o": [
+            "Linux kernel",
+            "Java VM",
+            "SQLite",
+            "WebKit"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the internet?",
+        "o": [
+            "INTERNET",
+            "NETWORK",
+            "WEB_ACCESS",
+            "ONLINE_MODE"
+        ]
+    },
+    {
+        "q": "What is an implicit intent in Android?",
+        "o": [
+            "Action without specific component",
+            "Intent with extra data",
+            "Background service call",
+            "System broadcast only"
+        ]
+    },
+    {
+        "q": "Which file often contains root detection logic in apps?",
+        "o": [
+            "SecurityHelper.java",
+            "MainActivity.xml",
+            "styles.css",
+            "index.html"
+        ]
+    },
+    {
+        "q": "What type of keys does Android Keystore protect?",
+        "o": [
+            "Private and secret keys",
+            "Only public keys",
+            "Session tokens",
+            "Encrypted files"
+        ]
+    },
+    {
+        "q": "Which Android version introduced runtime permissions?",
+        "o": [
+            "Android 6.0",
+            "Android 4.4",
+            "Android 5.0",
+            "Android 7.0"
+        ]
+    },
+    {
+        "q": "What is the purpose of SELinux in Android?",
+        "o": [
+            "Mandatory access control",
+            "Battery optimization",
+            "Network filtering",
+            "Display rendering"
+        ]
+    },
+    {
+        "q": "Which permission group does CAMERA belong to?",
+        "o": [
+            "Camera group",
+            "Storage group",
+            "Location group",
+            "Contacts group"
+        ]
+    },
+    {
+        "q": "How are intents filtered by components?",
+        "o": [
+            "Intent filters",
+            "Data schemes",
+            "Action maps",
+            "Category lists"
+        ]
+    },
+    {
+        "q": "What command is often checked for root detection?",
+        "o": [
+            "su",
+            "ls",
+            "cp",
+            "mv"
+        ]
+    },
+    {
+        "q": "What algorithm does Android Keystore commonly support?",
+        "o": [
+            "AES",
+            "MD2",
+            "RC4",
+            "DES"
+        ]
+    },
+    {
+        "q": "Which zone of Android architecture handles app permissions?",
+        "o": [
+            "Application framework",
+            "Linux kernel",
+            "Hardware layer",
+            "Boot loader"
+        ]
+    },
+    {
+        "q": "What is a dangerous permission in Android?",
+        "o": [
+            "Access to private data",
+            "Internet access",
+            "Vibrate feature",
+            "Bluetooth scan"
+        ]
+    },
+    {
+        "q": "What does intent resolution involve?",
+        "o": [
+            "Matching components",
+            "Data encryption",
+            "Memory allocation",
+            "Network routing"
+        ]
+    },
+    {
+        "q": "Which path is commonly checked for root binaries?",
+        "o": [
+            "/system/bin/su",
+            "/data/local/tmp",
+            "/mnt/sdcard",
+            "/cache/recovery"
+        ]
+    },
+    {
+        "q": "What is a key advantage of Android Keystore?",
+        "o": [
+            "Hardware-backed security",
+            "Faster computation",
+            "Larger key storage",
+            "Cloud synchronization"
+        ]
+    },
+    {
+        "q": "What is the Android sandbox based on?",
+        "o": [
+            "User ID per app",
+            "Process name",
+            "Package version",
+            "App signature"
+        ]
+    },
+    {
+        "q": "Which permission allows reading SMS messages?",
+        "o": [
+            "READ_SMS",
+            "SMS_READ",
+            "VIEW_SMS",
+            "ACCESS_SMS"
+        ]
+    },
+    {
+        "q": "What is an intent action?",
+        "o": [
+            "A string describing operation",
+            "A data URI scheme",
+            "A component class name",
+            "A category of receiver"
+        ]
+    },
+    {
+        "q": "What does root detection often check in build properties?",
+        "o": [
+            "ro.debuggable",
+            "ro.product.model",
+            "ro.build.version",
+            "ro.hardware"
+        ]
+    },
+    {
+        "q": "Where are Android Keystore keys stored?",
+        "o": [
+            "Protected system area",
+            "App private folder",
+            "External storage",
+            "Cache directory"
+        ]
+    },
+    {
+        "q": "Which Android layer provides security APIs?",
+        "o": [
+            "Framework layer",
+            "Kernel layer",
+            "App layer",
+            "Hardware layer"
+        ]
+    },
+    {
+        "q": "What is a signature permission in Android?",
+        "o": [
+            "Granted to apps with same cert",
+            "Given to all system apps",
+            "Approved by user once",
+            "Available to any app"
+        ]
+    },
+    {
+        "q": "What is an intent category?",
+        "o": [
+            "Additional info about action",
+            "Type of data URI",
+            "Component to launch",
+            "Flag for broadcast"
+        ]
+    },
+    {
+        "q": "Which method detects root via system property?",
+        "o": [
+            "System.getProperty",
+            "File.exists",
+            "Runtime.exec",
+            "ProcessBuilder"
+        ]
+    },
+    {
+        "q": "What does Android Keystore prevent?",
+        "o": [
+            "Key extraction",
+            "App crashes",
+            "Battery drain",
+            "Network attacks"
+        ]
+    },
+    {
+        "q": "What is the purpose of app signing?",
+        "o": [
+            "Verify app author",
+            "Encrypt app data",
+            "Compress APK file",
+            "Optimize graphics"
+        ]
+    },
+    {
+        "q": "Which permission is considered normal?",
+        "o": [
+            "VIBRATE",
+            "CAMERA",
+            "LOCATION",
+            "CONTACTS"
+        ]
+    },
+    {
+        "q": "What does intent data specify?",
+        "o": [
+            "URI of content",
+            "Action to perform",
+            "Category to match",
+            "Flag to set"
+        ]
+    },
+    {
+        "q": "Which file indicates root if present in /system?",
+        "o": [
+            "su",
+            "sh",
+            "bash",
+            "ksh"
+        ]
+    },
+    {
+        "q": "What is a benefit of hardware-backed keystore?",
+        "o": [
+            "Keys never leave secure hardware",
+            "Faster encryption speed",
+            "More key storage space",
+            "Easier key sharing"
+        ]
+    },
+    {
+        "q": "What is the Android Verified Boot?",
+        "o": [
+            "Checks system integrity",
+            "Verifies app signatures",
+            "Validates user input",
+            "Tests network security"
+        ]
+    },
+    {
+        "q": "When are runtime permissions requested?",
+        "o": [
+            "While app is running",
+            "At app install time",
+            "During system boot",
+            "When uninstalling"
+        ]
+    },
+    {
+        "q": "What is an intent flag?",
+        "o": [
+            "Instruction for system",
+            "Data type indicator",
+            "Component selector",
+            "Permission marker"
+        ]
+    },
+    {
+        "q": "What does root detection via test-keys check?",
+        "o": [
+            "Build fingerprint",
+            "Kernel version",
+            "SDK version",
+            "Screen density"
+        ]
+    },
+    {
+        "q": "Which Android Keystore feature requires lock screen?",
+        "o": [
+            "Key authentication",
+            "Key generation",
+            "Key deletion",
+            "Key export"
+        ]
+    },
+    {
+        "q": "What is the Android security model based on?",
+        "o": [
+            "Sandboxing and permissions",
+            "Firewall and VPN",
+            "Antivirus and scanner",
+            "Encryption only"
+        ]
+    },
+    {
+        "q": "Which permission allows access to contacts?",
+        "o": [
+            "READ_CONTACTS",
+            "VIEW_CONTACTS",
+            "OPEN_CONTACTS",
+            "USE_CONTACTS"
+        ]
+    },
+    {
+        "q": "What is an intent extra?",
+        "o": [
+            "Additional data bundle",
+            "Main action string",
+            "Target component",
+            "Launch flag"
+        ]
+    },
+    {
+        "q": "Which app component is commonly rooted?",
+        "o": [
+            "System framework",
+            "Web browser",
+            "Email client",
+            "Calendar app"
+        ]
+    },
+    {
+        "q": "What type of key can Android Keystore generate?",
+        "o": [
+            "RSA key pair",
+            "SSL certificate",
+            "SSH key",
+            "PGP key"
+        ]
+    },
+    {
+        "q": "What does Android use for inter-process communication?",
+        "o": [
+            "Binder",
+            "Socket",
+            "Pipe",
+            "Signal"
+        ]
+    },
+    {
+        "q": "Which permission allows fine location access?",
+        "o": [
+            "ACCESS_FINE_LOCATION",
+            "ACCESS_COARSE_LOCATION",
+            "ACCESS_LOCATION",
+            "GET_LOCATION"
+        ]
+    },
+    {
+        "q": "What is a pending intent?",
+        "o": [
+            "Intent for future use",
+            "Intent that failed",
+            "Intent in queue",
+            "Intent with delay"
+        ]
+    },
+    {
+        "q": "Which directory often contains root management apps?",
+        "o": [
+            "/data/app",
+            "/system/app",
+            "/cache",
+            "/mnt"
+        ]
+    },
+    {
+        "q": "What does keystore alias represent?",
+        "o": [
+            "Key entry name",
+            "Encryption algorithm",
+            "Key size value",
+            "Certificate type"
+        ]
+    },
+    {
+        "q": "Which component verifies app signatures?",
+        "o": [
+            "PackageManager",
+            "ActivityManager",
+            "ContentResolver",
+            "DownloadManager"
+        ]
+    },
+    {
+        "q": "What is a runtime permission prompt?",
+        "o": [
+            "Dialog to user",
+            "Background check",
+            "System notification",
+            "Toast message"
+        ]
+    },
+    {
+        "q": "What happens if no component matches intent?",
+        "o": [
+            "ActivityNotFoundException",
+            "App crashes silently",
+            "Intent is ignored",
+            "System reboots"
+        ]
+    },
+    {
+        "q": "Which command output helps detect root?",
+        "o": [
+            "id",
+            "date",
+            "time",
+            "ps"
+        ]
+    },
+    {
+        "q": "What is required for Android Keystore operations?",
+        "o": [
+            "Keystore instance",
+            "Internet connection",
+            "GPS location",
+            "Camera access"
+        ]
+    },
+    {
+        "q": "What is the Android security patch level?",
+        "o": [
+            "Monthly update date",
+            "App version code",
+            "SDK version number",
+            "Build timestamp"
+        ]
+    },
+    {
+        "q": "Which permission allows camera access?",
+        "o": [
+            "CAMERA",
+            "PHOTO",
+            "PICTURE",
+            "IMAGE"
+        ]
+    },
+    {
+        "q": "What is an intent scheme?",
+        "o": [
+            "URI protocol like http",
+            "Action category",
+            "Component package",
+            "Flag constant"
+        ]
+    },
+    {
+        "q": "Which file property reveals rooted device?",
+        "o": [
+            "Permissions of /system/bin/su",
+            "Size of build.prop",
+            "Date of last update",
+            "Hash of kernel"
+        ]
+    },
+    {
+        "q": "What does keystore entry contain?",
+        "o": [
+            "Key and certificate chain",
+            "Only the private key",
+            "Only the public key",
+            "Encrypted data"
+        ]
+    },
+    {
+        "q": "What is the purpose of Android encryption?",
+        "o": [
+            "Protect data at rest",
+            "Speed up processing",
+            "Save battery power",
+            "Improve graphics"
+        ]
+    },
+    {
+        "q": "Which permission allows recording audio?",
+        "o": [
+            "RECORD_AUDIO",
+            "MICROPHONE",
+            "AUDIO_CAPTURE",
+            "SOUND_RECORD"
+        ]
+    },
+    {
+        "q": "What is a broadcast intent?",
+        "o": [
+            "Event message to multiple apps",
+            "Intent to single activity",
+            "Service start request",
+            "Data provider query"
+        ]
+    },
+    {
+        "q": "What is a common root detection bypass method?",
+        "o": [
+            "Magisk Hide",
+            "App uninstall",
+            "Cache clearing",
+            "Data reset"
+        ]
+    },
+    {
+        "q": "What does Android KeystKey use for key access?",
+        "o": [
+            "Permissions and user auth",
+            "Network tokens",
+            "Cloud validation",
+            "Time-based codes"
+        ]
+    },
+    {
+        "q": "What is the Android security bulletin?",
+        "o": [
+            "Monthly vulnerability list",
+            "App store updates",
+            "Device specifications",
+            "Developer guide"
+        ]
+    },
+    {
+        "q": "Which permission allows read call log?",
+        "o": [
+            "READ_CALL_LOG",
+            "VIEW_CALLS",
+            "ACCESS_LOGS",
+            "GET_CALLS"
+        ]
+    },
+    {
+        "q": "What is an ordered broadcast?",
+        "o": [
+            "Sequential delivery to receivers",
+            "Broadcast with priority",
+            "Intent with order flag",
+            "System-only message"
+        ]
+    },
+    {
+        "q": "Which file indicates root via SuperSU?",
+        "o": [
+            "/system/bin/supersu",
+            "/data/su.img",
+            "/cache/su",
+            "/mnt/su"
+        ]
+    },
+    {
+        "q": "What is key attestation in Android?",
+        "o": [
+            "Proof of hardware-backed key",
+            "Key generation method",
+            "Encryption algorithm",
+            "Certificate signing"
+        ]
+    },
+    {
+        "q": "What is the Android security keychain?",
+        "o": [
+            "System credential storage",
+            "App password manager",
+            "Network VPN config",
+            "Device lock pattern"
+        ]
+    },
+    {
+        "q": "Which permission allows read external storage?",
+        "o": [
+            "READ_EXTERNAL_STORAGE",
+            "ACCESS_SD_CARD",
+            "VIEW_FILES",
+            "OPEN_MEDIA"
+        ]
+    },
+    {
+        "q": "What is a sticky intent?",
+        "o": [
+            "Broadcast that persists",
+            "Intent that cannot be canceled",
+            "Intent with high priority",
+            "Delayed broadcast"
+        ]
+    },
+    {
+        "q": "What is a symptom of rooted device?",
+        "o": [
+            "Superuser app present",
+            "Faster performance",
+            "Longer battery life",
+            "Better camera"
+        ]
+    },
+    {
+        "q": "What Android version added Keystore 2.0?",
+        "o": [
+            "Android 11",
+            "Android 8.0",
+            "Android 9.0",
+            "Android 10"
+        ]
+    },
+    {
+        "q": "What is the Android permission protection level?",
+        "o": [
+            "Normal, dangerous, signature",
+            "Low, medium, high",
+            "Public, private, system",
+            "Basic, advanced, root"
+        ]
+    },
+    {
+        "q": "Which permission allows access to body sensors?",
+        "o": [
+            "BODY_SENSORS",
+            "HEALTH_DATA",
+            "PHYSICAL_SENSORS",
+            "FITNESS_INFO"
+        ]
+    },
+    {
+        "q": "What is intent resolution priority?",
+        "o": [
+            "Order of matching components",
+            "Intent execution speed",
+            "Data transfer rate",
+            "Memory allocation size"
+        ]
+    },
+    {
+        "q": "Which build tag indicates engineering build?",
+        "o": [
+            "test-keys",
+            "release-keys",
+            "dev-keys",
+            "debug-keys"
+        ]
+    },
+    {
+        "q": "What is a Keystore provider?",
+        "o": [
+            "Implementation of keystore",
+            "Key storage location",
+            "Encryption service",
+            "Certificate authority"
+        ]
+    },
+    {
+        "q": "What is the Android SafetyNet?",
+        "o": [
+            "Device attestation API",
+            "Network security tool",
+            "App scanner service",
+            "Permission manager"
+        ]
+    },
+    {
+        "q": "Which permission allows access to calendar?",
+        "o": [
+            "READ_CALENDAR",
+            "VIEW_EVENTS",
+            "ACCESS_SCHEDULE",
+            "GET_APPOINTMENTS"
+        ]
+    },
+    {
+        "q": "What is a service intent?",
+        "o": [
+            "Intent to start background service",
+            "Intent for UI activity",
+            "Broadcast receiver intent",
+            "Content provider query"
+        ]
+    },
+    {
+        "q": "What is Magisk in Android rooting?",
+        "o": [
+            "Systemless root tool",
+            "Root management app",
+            "Bootloader unlocker",
+            "Custom recovery"
+        ]
+    },
+    {
+        "q": "What does keystore key pair generator create?",
+        "o": [
+            "Public and private key",
+            "Symmetric key only",
+            "Secret key only",
+            "Certificate only"
+        ]
+    },
+    {
+        "q": "What is the Android security model weakness?",
+        "o": [
+            "User grants permissions",
+            "Kernel is too old",
+            "Apps run as root",
+            "No encryption"
+        ]
+    },
+    {
+        "q": "Which permission allows read phone state?",
+        "o": [
+            "READ_PHONE_STATE",
+            "PHONE_INFO",
+            "DEVICE_DETAILS",
+            "NETWORK_STATE"
+        ]
+    },
+    {
+        "q": "What is an intent action for dialer?",
+        "o": [
+            "ACTION_DIAL",
+            "CALL_NUMBER",
+            "OPEN_PHONE",
+            "START_CALL"
+        ]
+    },
+    {
+        "q": "What does root detection often check in /system/xbin?",
+        "o": [
+            "su binary",
+            "bash binary",
+            "busybox binary",
+            "toolbox binary"
+        ]
+    },
+    {
+        "q": "What is key purpose in Android Keystore?",
+        "o": [
+            "Intended use like encryption",
+            "Key storage location",
+            "Key generation method",
+            "Key backup status"
+        ]
+    },
+    {
+        "q": "What is the Android permission model based on?",
+        "o": [
+            "User consent",
+            "System defaults",
+            "App store rules",
+            "Developer choice"
+        ]
+    },
+    {
+        "q": "Which permission allows write to calendar?",
+        "o": [
+            "WRITE_CALENDAR",
+            "EDIT_EVENTS",
+            "MODIFY_SCHEDULE",
+            "CHANGE_APPOINTMENTS"
+        ]
+    },
+    {
+        "q": "What is an intent category for launcher?",
+        "o": [
+            "CATEGORY_LAUNCHER",
+            "CATEGORY_HOME",
+            "CATEGORY_MAIN",
+            "CATEGORY_APP"
+        ]
+    },
+    {
+        "q": "What is the purpose of Xposed framework?",
+        "o": [
+            "Modify system behavior",
+            "Root device",
+            "Unlock bootloader",
+            "Install custom ROM"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key algorithm?",
+        "o": [
+            "Algorithm like RSA or AES",
+            "Key storage method",
+            "Encryption mode",
+            "Padding scheme"
+        ]
+    },
+    {
+        "q": "What is the Android security boundary?",
+        "o": [
+            "Between apps and system",
+            "Between kernel and hardware",
+            "Between user and device",
+            "Between network and app"
+        ]
+    },
+    {
+        "q": "Which permission allows receive SMS?",
+        "o": [
+            "RECEIVE_SMS",
+            "GET_SMS",
+            "READ_SMS",
+            "SMS_DELIVER"
+        ]
+    },
+    {
+        "q": "What is the primary purpose of the Android Binder framework?",
+        "o": [
+            "Inter-process communication",
+            "User interface rendering",
+            "Database management",
+            "Network connectivity"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access approximate location?",
+        "o": [
+            "ACCESS_COARSE_LOCATION",
+            "ACCESS_FINE_LOCATION",
+            "ACCESS_BACKGROUND_LOCATION",
+            "ACCESS_LOCATION"
+        ]
+    },
+    {
+        "q": "What is an implicit intent vulnerability?",
+        "o": [
+            "Interception by malicious apps",
+            "Slow performance issues",
+            "Memory leak problems",
+            "Battery drain risks"
+        ]
+    },
+    {
+        "q": "Which method is commonly used for root detection via build properties?",
+        "o": [
+            "Build.TAGS.contains test-keys",
+            "Build.VERSION.SDK_INT",
+            "Build.MANUFACTURER",
+            "Build.BRAND"
+        ]
+    },
+    {
+        "q": "What is the Android Keystoyre system's key access restriction?",
+        "o": [
+            "App-specific access only",
+            "Any app can access",
+            "System apps only",
+            "Root apps only"
+        ]
+    },
+    {
+        "q": "What does the AndroidManifest.xml declare regarding permissions?",
+        "o": [
+            "Permissions app requires",
+            "App version code",
+            "Activity names",
+            "Resource locations"
+        ]
+    },
+    {
+        "q": "What is an intent filter used for?",
+        "o": [
+            "Declaring component capabilities",
+            "Filtering broadcast messages",
+            "Managing background tasks",
+            "Controlling data flow"
+        ]
+    },
+    {
+        "q": "Which file path is commonly checked for root management apps?",
+        "o": [
+            "/data/data/com.noshufou.android.su",
+            "/system/framework",
+            "/vendor/lib",
+            "/cache/download"
+        ]
+    },
+    {
+        "q": "What does the Android Keystore system provide for key generation?",
+        "o": [
+            "KeyPairGenerator API",
+            "Random number generator",
+            "SecureRandom class",
+            "MessageDigest API"
+        ]
+    },
+    {
+        "q": "What is the difference between explicit and implicit intents?",
+        "o": [
+            "Explicit names component",
+            "Implicit has priority",
+            "Explicit carries data",
+            "Implicit is faster"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read contacts on Android 10+?",
+        "o": [
+            "READ_CONTACTS",
+            "ACCESS_CONTACTS",
+            "VIEW_CONTACTS",
+            "GET_CONTACTS"
+        ]
+    },
+    {
+        "q": "What is the purpose of the <intent-filter> element?",
+        "o": [
+            "Specify intents component handles",
+            "Define app permissions",
+            "Set activity layout",
+            "Configure service settings"
+        ]
+    },
+    {
+        "q": "Which system property indicates a userdebug build?",
+        "o": [
+            "ro.debuggable = 1",
+            "ro.secure = 1",
+            "ro.build.type = user",
+            "ro.product.cpu.abi"
+        ]
+    },
+    {
+        "q": "What is the Android Keystore key purpose for encryption?",
+        "o": [
+            "KeyPurpose.ENCRYPT",
+            "Purpose.ENCRYPTION",
+            "KeyProperties.ENCRYPT",
+            "Cipher.ENCRYPT_MODE"
+        ]
+    },
+    {
+        "q": "What is the Android security model for app data isolation?",
+        "o": [
+            "Each app has unique UID",
+            "Apps share storage",
+            "Data stored in cloud",
+            "Files are world-readable"
+        ]
+    },
+    {
+        "q": "Which permission allows access to the fingerprint sensor?",
+        "o": [
+            "USE_FINGERPRINT",
+            "FINGERPRINT_ACCESS",
+            "BIOMETRIC",
+            "AUTHENTICATE"
+        ]
+    },
+    {
+        "q": "What is an intent action for viewing content?",
+        "o": [
+            "ACTION_VIEW",
+            "ACTION_EDIT",
+            "ACTION_OPEN",
+            "ACTION_SHOW"
+        ]
+    },
+    {
+        "q": "What does checking for /system/app/Superuser.apk indicate?",
+        "o": [
+            "Root management app installed",
+            "System app updated",
+            "Custom ROM present",
+            "Bootloader unlocked"
+        ]
+    },
+    {
+        "q": "What is the Android Keystore key generation requirement?",
+        "o": [
+            "Keystore instance initialization",
+            "Internet connectivity",
+            "GPS permission",
+            "Camera access"
+        ]
+    },
+    {
+        "q": "What is the purpose of the PackageManager service?",
+        "o": [
+            "Manage app installations",
+            "Handle UI rendering",
+            "Control network access",
+            "Process user input"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to send SMS messages?",
+        "o": [
+            "SEND_SMS",
+            "WRITE_SMS",
+            "SMS_SEND",
+            "TRANSMIT_SMS"
+        ]
+    },
+    {
+        "q": "What is an intent extra for passing text data?",
+        "o": [
+            "Intent.EXTRA_TEXT",
+            "Intent.DATA_TEXT",
+            "Intent.TEXT_EXTRA",
+            "Intent.EXTRA_DATA"
+        ]
+    },
+    {
+        "q": "Which method attempts to execute su command for root detection?",
+        "o": [
+            "Runtime.exec su",
+            "ProcessBuilder ls",
+            "System.load su",
+            "Class.forName su"
+        ]
+    },
+    {
+        "q": "What is the Android Keystore key import feature?",
+        "o": [
+            "Add existing keys to keystore",
+            "Generate random keys",
+            "Export public keys",
+            "Delete unused keys"
+        ]
+    },
+    {
+        "q": "What is the Android application sandbox based on?",
+        "o": [
+            "Linux UID/GID separation",
+            "Java VM isolation",
+            "Network firewalls",
+            "Encryption barriers"
+        ]
+    },
+    {
+        "q": "Which permission group does READ_EXTERNAL_STORAGE belong to?",
+        "o": [
+            "Storage group",
+            "Files group",
+            "Media group",
+            "Data group"
+        ]
+    },
+    {
+        "q": "What is a malformed intent vulnerability?",
+        "o": [
+            "Crash via invalid intent",
+            "Slow intent processing",
+            "Delayed broadcast",
+            "Missing extras"
+        ]
+    },
+    {
+        "q": "What does the presence of /system/bin/su with root:root indicate?",
+        "o": [
+            "Device is rooted",
+            "Device is encrypted",
+            "System is updated",
+            "Bootloader locked"
+        ]
+    },
+    {
+        "q": "What is the Android Keystore key validity period?",
+        "o": [
+            "Can be set with KeyGenParameterSpec",
+            "Permanent forever",
+            "One hour maximum",
+            "Until app uninstall"
+        ]
+    },
+    {
+        "q": "What is the role of SELinux in Android security?",
+        "o": [
+            "Enforce security policies",
+            "Manage user permissions",
+            "Encrypt user data",
+            "Control app installs"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read call logs on Android 11+?",
+        "o": [
+            "READ_CALL_LOG",
+            "ACCESS_CALLS",
+            "VIEW_HISTORY",
+            "GET_LOGS"
+        ]
+    },
+    {
+        "q": "What is intent data and type?",
+        "o": [
+            "URI and MIME type",
+            "Action and category",
+            "Flag and extra",
+            "Package and class"
+        ]
+    },
+    {
+        "q": "Which system property might indicate root when modified?",
+        "o": [
+            "ro.secure",
+            "ro.build.version",
+            "ro.product.model",
+            "ro.board.platform"
+        ]
+    },
+    {
+        "q": "What is the Android Keystore key protection with user authentication?",
+        "o": [
+            "Requires biometric or pin",
+            "Always available",
+            "Network-based check",
+            "Time-based access"
+        ]
+    },
+    {
+        "q": "What is the Android permission revocation feature?",
+        "o": [
+            "User can revoke runtime permissions",
+            "System auto-revokes",
+            "Apps cannot lose permissions",
+            "Only install-time revoke"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the account list?",
+        "o": [
+            "GET_ACCOUNTS",
+            "READ_ACCOUNTS",
+            "VIEW_ACCOUNTS",
+            "ACCESS_ACCOUNTS"
+        ]
+    },
+    {
+        "q": "What is an intent action for picking content?",
+        "o": [
+            "ACTION_PICK",
+            "ACTION_CHOOSE",
+            "ACTION_SELECT",
+            "ACTION_GET"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for test-keys in build tags?",
+        "o": [
+            "Build.TAGS test-keys check",
+            "Build.FINGERPRINT check",
+            "Build.VERSION check",
+            "Build.BOARD check"
+        ]
+    },
+    {
+        "q": "What is the Android Keystore key access after device reboot?",
+        "o": [
+            "Locked until user unlocks device",
+            "Immediately available",
+            "Permanently lost",
+            "Requires reinstall"
+        ]
+    },
+    {
+        "q": "What is the Android security patch level check?",
+        "o": [
+            "Build.VERSION.SECURITY_PATCH",
+            "Build.DATE",
+            "Build.TIME",
+            "Build.FINGERPRINT"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read your own contacts?",
+        "o": [
+            "READ_CONTACTS",
+            "VIEW_PROFILE",
+            "ACCESS_SELF",
+            "READ_PROFILE"
+        ]
+    },
+    {
+        "q": "What is an intent category for browser?",
+        "o": [
+            "CATEGORY_APP_BROWSER",
+            "CATEGORY_WEB",
+            "CATEGORY_VIEW",
+            "CATEGORY_OPENABLE"
+        ]
+    },
+    {
+        "q": "What does checking for busybox binary indicate?",
+        "o": [
+            "Root access possibility",
+            "Custom ROM only",
+            "Stock Android",
+            "Encrypted device"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation certificate chain?",
+        "o": [
+            "Proof of key origin and security",
+            "Key encryption method",
+            "Key storage location",
+            "Key backup status"
+        ]
+    },
+    {
+        "q": "What is the Android permission auto-revoke feature?",
+        "o": [
+            "Revoke unused app permissions",
+            "Auto-grant permissions",
+            "Revoke at uninstall",
+            "Revoke on update"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the clipboard?",
+        "o": [
+            "No permission required",
+            "READ_CLIPBOARD",
+            "ACCESS_CLIPBOARD",
+            "CLIPBOARD_READ"
+        ]
+    },
+    {
+        "q": "What is a component in intent security?",
+        "o": [
+            "Activity, service, receiver",
+            "Action, data, category",
+            "Flag, extra, type",
+            "Package, class, URI"
+        ]
+    },
+    {
+        "q": "Which file in /data/data is often checked for root?",
+        "o": [
+            "Superuser.apk",
+            "cache",
+            "databases",
+            "lib"
+        ]
+    },
+    {
+        "q": "What is the Android Keystore key usage limitation?",
+        "o": [
+            "Only in app that created it",
+            "Any app can use",
+            "System apps only",
+            "All signed apps"
+        ]
+    },
+    {
+        "q": "What is the Android verified boot process?",
+        "o": [
+            "Check integrity at startup",
+            "Verify app signatures",
+            "Scan for malware",
+            "Check network security"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read SMS on Android 10+?",
+        "o": [
+            "READ_SMS",
+            "SMS_READ",
+            "VIEW_MESSAGES",
+            "GET_SMS"
+        ]
+    },
+    {
+        "q": "What is an intent flag for new task?",
+        "o": [
+            "FLAG_ACTIVITY_NEW_TASK",
+            "FLAG_NEW_TASK",
+            "ACTIVITY_NEW_TASK",
+            "TASK_NEW_FLAG"
+        ]
+    },
+    {
+        "q": "Which method detects root by checking for su in PATH?",
+        "o": [
+            "System.getenv PATH search",
+            "File.exists check",
+            "Runtime.exec ls",
+            "ProcessBuilder which"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key authentication validity?",
+        "o": [
+            "Duration after auth",
+            "Permanent access",
+            "Single use only",
+            "Until reboot"
+        ]
+    },
+    {
+        "q": "What is the Android security model for system apps?",
+        "o": [
+            "More privileges than user apps",
+            "Same as user apps",
+            "Less privileges",
+            "No permissions"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the microphone?",
+        "o": [
+            "RECORD_AUDIO",
+            "MICROPHONE",
+            "AUDIO_CAPTURE",
+            "SOUND_INPUT"
+        ]
+    },
+    {
+        "q": "What is an intent action for sending data?",
+        "o": [
+            "ACTION_SEND",
+            "ACTION_TRANSFER",
+            "ACTION_FORWARD",
+            "ACTION_SENDTO"
+        ]
+    },
+    {
+        "q": "What does ro.debuggable=1 in build.prop indicate?",
+        "o": [
+            "Debuggable system",
+            "Rooted device",
+            "Encrypted storage",
+            "Production build"
+        ]
+    },
+    {
+        "q": "What is the Android Keystore key generation spec?",
+        "o": [
+            "KeyGenParameterSpec",
+            "KeyPairGeneratorSpec",
+            "KeyStore.Builder",
+            "KeyProtection"
+        ]
+    },
+    {
+        "q": "What is the Android permission for system alerts?",
+        "o": [
+            "SYSTEM_ALERT_WINDOW",
+            "DISPLAY_OVER_APPS",
+            "SHOW_ALERTS",
+            "POPUP_WINDOW"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the fingerprint hardware?",
+        "o": [
+            "USE_BIOMETRIC",
+            "FINGERPRINT",
+            "BIOMETRIC_AUTH",
+            "AUTH_BIOMETRIC"
+        ]
+    },
+    {
+        "q": "What is an intent category for home screen?",
+        "o": [
+            "CATEGORY_HOME",
+            "CATEGORY_LAUNCHER",
+            "CATEGORY_MAIN",
+            "CATEGORY_DEFAULT"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for Magisk?",
+        "o": [
+            "Check for Magisk package",
+            "Check su binary",
+            "Check build tags",
+            "Check permissions"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key usage with Cipher?",
+        "o": [
+            "Initialize Cipher with key",
+            "Store encrypted data",
+            "Generate random IV",
+            "Create signature"
+        ]
+    },
+    {
+        "q": "What is the Android security model for content providers?",
+        "o": [
+            "Permissions control access",
+            "Open to all apps",
+            "System-only access",
+            "No access control"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read history bookmarks?",
+        "o": [
+            "READ_HISTORY_BOOKMARKS",
+            "BROWSER_HISTORY",
+            "ACCESS_BOOKMARKS",
+            "VIEW_HISTORY"
+        ]
+    },
+    {
+        "q": "What is an intent action for inserting data?",
+        "o": [
+            "ACTION_INSERT",
+            "ACTION_ADD",
+            "ACTION_PUT",
+            "ACTION_NEW"
+        ]
+    },
+    {
+        "q": "What does checking for /data/local/tmp indicate?",
+        "o": [
+            "Writable temporary directory",
+            "System read-only area",
+            "Encrypted partition",
+            "App data storage"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key storage location?",
+        "o": [
+            "/data/misc/keystore",
+            "/system/keystore",
+            "/cache/keys",
+            "/vendor/keys"
+        ]
+    },
+    {
+        "q": "What is the Android permission for binding to a service?",
+        "o": [
+            "BIND_ACCESSIBILITY_SERVICE",
+            "SERVICE_BIND",
+            "CONNECT_SERVICE",
+            "ATTACH_SERVICE"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the network state?",
+        "o": [
+            "ACCESS_NETWORK_STATE",
+            "NETWORK_INFO",
+            "CONNECTIVITY",
+            "INTERNET_STATE"
+        ]
+    },
+    {
+        "q": "What is an intent flag for clearing task?",
+        "o": [
+            "FLAG_ACTIVITY_CLEAR_TOP",
+            "CLEAR_TASK_FLAG",
+            "ACTIVITY_CLEAR",
+            "FLAG_CLEAR_TASK"
+        ]
+    },
+    {
+        "q": "Which method detects root by checking for rooted apps?",
+        "o": [
+            "PackageManager check for su",
+            "File search for su",
+            "Property check",
+            "Binary execution"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key import format?",
+        "o": [
+            "PKCS8 for private keys",
+            "DER format only",
+            "PEM format only",
+            "RAW bytes only"
+        ]
+    },
+    {
+        "q": "What is the Android security model for broadcasts?",
+        "o": [
+            "Permissions can restrict receivers",
+            "All apps receive all",
+            "System broadcasts only",
+            "No broadcast security"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to modify contacts?",
+        "o": [
+            "WRITE_CONTACTS",
+            "EDIT_CONTACTS",
+            "UPDATE_CONTACTS",
+            "CHANGE_CONTACTS"
+        ]
+    },
+    {
+        "q": "What is an intent action for picking an activity?",
+        "o": [
+            "ACTION_CHOOSER",
+            "ACTION_SELECTOR",
+            "ACTION_PICKER",
+            "ACTION_OPTIONS"
+        ]
+    },
+    {
+        "q": "What does the presence of /system/xbin/su indicate?",
+        "o": [
+            "Root binary in xbin",
+            "System app updated",
+            "Custom recovery",
+            "Bootloader unlocked"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key algorithm parameter?",
+        "o": [
+            "Key size in bits",
+            "Key storage path",
+            "Key alias name",
+            "Key creation date"
+        ]
+    },
+    {
+        "q": "What is the Android permission for reading sync settings?",
+        "o": [
+            "READ_SYNC_SETTINGS",
+            "SYNC_READ",
+            "GET_SYNC",
+            "VIEW_SYNC"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the vibration feature?",
+        "o": [
+            "VIBRATE",
+            "USE_VIBRATOR",
+            "CONTROL_VIBRATION",
+            "VIBRATOR_ACCESS"
+        ]
+    },
+    {
+        "q": "What is an intent action for editing content?",
+        "o": [
+            "ACTION_EDIT",
+            "ACTION_MODIFY",
+            "ACTION_UPDATE",
+            "ACTION_CHANGE"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for root apps list?",
+        "o": [
+            "Check for known root packages",
+            "Check build properties",
+            "Check file permissions",
+            "Check system version"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key access with auth required?",
+        "o": [
+            "setUserAuthenticationRequired",
+            "setAuthRequired",
+            "needAuthentication",
+            "authNecessary"
+        ]
+    },
+    {
+        "q": "What is the Android security model for intents?",
+        "o": [
+            "Permissions can protect components",
+            "All intents allowed",
+            "Only system intents",
+            "No intent security"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read user dictionary?",
+        "o": [
+            "READ_USER_DICTIONARY",
+            "ACCESS_DICTIONARY",
+            "VIEW_WORDS",
+            "GET_DICTIONARY"
+        ]
+    },
+    {
+        "q": "What is an intent extra for email?",
+        "o": [
+            "Intent.EXTRA_EMAIL",
+            "EMAIL_ADDRESS",
+            "EXTRA_MAIL",
+            "EMAIL_EXTRA"
+        ]
+    },
+    {
+        "q": "What does checking for /data/local/bin/su indicate?",
+        "o": [
+            "Root binary in local bin",
+            "System app data",
+            "Cache files",
+            "Temporary files"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with secure hardware?",
+        "o": [
+            "setIsStrongBoxBacked",
+            "useStrongBox",
+            "hardwareBacked",
+            "secureHardware"
+        ]
+    },
+    {
+        "q": "What is the Android permission for installing packages?",
+        "o": [
+            "INSTALL_PACKAGES",
+            "PACKAGE_INSTALL",
+            "INSTALL_APPS",
+            "INSTALLER"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the wallpaper?",
+        "o": [
+            "SET_WALLPAPER",
+            "WALLPAPER_ACCESS",
+            "CHANGE_WALLPAPER",
+            "MODIFY_WALLPAPER"
+        ]
+    },
+    {
+        "q": "What is an intent action for calling?",
+        "o": [
+            "ACTION_CALL",
+            "ACTION_DIAL",
+            "ACTION_PHONE",
+            "ACTION_CALL_PHONE"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for Magisk files?",
+        "o": [
+            "/data/adb/magisk",
+            "/system/magisk",
+            "/cache/magisk",
+            "/vendor/magisk"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation for?",
+        "o": [
+            "Verify key is hardware-backed",
+            "Encrypt data faster",
+            "Store more keys",
+            "Share keys securely"
+        ]
+    },
+    {
+        "q": "What is the Android security model for external storage?",
+        "o": [
+            "World-readable with permissions",
+            "Fully encrypted",
+            "App-specific only",
+            "No access allowed"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read battery statistics?",
+        "o": [
+            "BATTERY_STATS",
+            "POWER_INFO",
+            "ENERGY_DATA",
+            "BATTERY_INFO"
+        ]
+    },
+    {
+        "q": "What is an intent action for searching?",
+        "o": [
+            "ACTION_SEARCH",
+            "ACTION_QUERY",
+            "ACTION_FIND",
+            "ACTION_LOOKUP"
+        ]
+    },
+    {
+        "q": "What does checking for /sbin/su indicate?",
+        "o": [
+            "Root binary in sbin",
+            "System library",
+            "Vendor binary",
+            "Recovery tool"
+        ]
+    },
+    {
+        "q": "What is the primary mechanism for Android's permission enforcement at kernel level?",
+        "o": [
+            "POSIX capabilities and UID/GID",
+            "Java security managers",
+            "Application layer checks",
+            "Network firewalls"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the exact location in background?",
+        "o": [
+            "ACCESS_BACKGROUND_LOCATION",
+            "ACCESS_FINE_LOCATION",
+            "ACCESS_COARSE_LOCATION",
+            "ACCESS_CONTINUOUS_LOCATION"
+        ]
+    },
+    {
+        "q": "What is an intent spoofing attack?",
+        "o": [
+            "Sending malicious intents to components",
+            "Intercepting broadcast intents",
+            "Delaying intent delivery",
+            "Encrypting intent data"
+        ]
+    },
+    {
+        "q": "Which method uses reflection to detect root by finding su classes?",
+        "o": [
+            "Class.forName dalvik.system.Taint",
+            "Runtime.exec which su",
+            "File.exists /system/bin/su",
+            "System.getProperty java.class.path"
+        ]
+    },
+    {
+        "q": "What is the Android Keystore key generation with StrongBox requirement?",
+        "o": [
+            "setIsStrongBoxBacked true",
+            "setHardwareBacked true",
+            "setSecureHardware true",
+            "setStrongBox true"
+        ]
+    },
+    {
+        "q": "What is the Android permission model for signature permissions?",
+        "o": [
+            "Same certificate required",
+            "Same package name required",
+            "Same UID required",
+            "Same installer required"
+        ]
+    },
+    {
+        "q": "What is intent resolution ambiguity vulnerability?",
+        "o": [
+            "Multiple components match intent",
+            "No components match intent",
+            "Intent has no action",
+            "Intent has extra data"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for Magisk Hide process name?",
+        "o": [
+            "Check for magiskd process",
+            "Check su binary name",
+            "Check build.prop changes",
+            "Check file permissions"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key access with invalidated by biometric?",
+        "o": [
+            "setInvalidatedByBiometricEnrollment",
+            "setBiometricInvalidation",
+            "setInvalidateOnBiometric",
+            "setBioInvalidate"
+        ]
+    },
+    {
+        "q": "What is the Android security architecture for trusted execution environment?",
+        "o": [
+            "TEE for sensitive operations",
+            "Linux kernel only",
+            "Java VM isolation",
+            "App sandbox only"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the device serial number?",
+        "o": [
+            "READ_PHONE_STATE",
+            "ACCESS_DEVICE_INFO",
+            "GET_SERIAL",
+            "DEVICE_IDENTIFIERS"
+        ]
+    },
+    {
+        "q": "What is an intent action for installing a package?",
+        "o": [
+            "ACTION_INSTALL_PACKAGE",
+            "ACTION_PACKAGE_INSTALL",
+            "ACTION_INSTALL",
+            "ACTION_APPLICATION_INSTALL"
+        ]
+    },
+    {
+        "q": "What does checking for ro.build.tags with release-keys indicate?",
+        "o": [
+            "Official signed build",
+            "Test build",
+            "Engineering build",
+            "Rooted device"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with user authentication validity?",
+        "o": [
+            "setUserAuthenticationValidityDuration",
+            "setAuthTimeout",
+            "setAuthenticationTime",
+            "setValidityPeriod"
+        ]
+    },
+    {
+        "q": "What is the Android permission for binding to a device admin app?",
+        "o": [
+            "BIND_DEVICE_ADMIN",
+            "DEVICE_ADMIN",
+            "ADMIN_BIND",
+            "MANAGE_DEVICE"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the user's calendar on Android 12+?",
+        "o": [
+            "READ_CALENDAR",
+            "ACCESS_CALENDAR",
+            "VIEW_EVENTS",
+            "GET_SCHEDULE"
+        ]
+    },
+    {
+        "q": "What is an intent extra for stream URI in media?",
+        "o": [
+            "Intent.EXTRA_STREAM",
+            "Intent.EXTRA_URI",
+            "Intent.EXTRA_MEDIA",
+            "Intent.EXTRA_DATA"
+        ]
+    },
+    {
+        "q": "Which root detection method uses native code execution?",
+        "o": [
+            "JNI call to check su",
+            "Java File.exists",
+            "Runtime.exec",
+            "Build.TAGS check"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation challenge?",
+        "o": [
+            "Random data for freshness",
+            "Key encryption key",
+            "Certificate authority",
+            "Authentication token"
+        ]
+    },
+    {
+        "q": "What is the Android security model for component export?",
+        "o": [
+            "Exported components accessible",
+            "All components exported",
+            "No components exported",
+            "Only services exported"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the phone number?",
+        "o": [
+            "READ_PHONE_NUMBERS",
+            "ACCESS_PHONE_NUMBER",
+            "GET_PHONE_NUMBER",
+            "PHONE_STATE_READ"
+        ]
+    },
+    {
+        "q": "What is an intent action for creating a shortcut?",
+        "o": [
+            "ACTION_CREATE_SHORTCUT",
+            "ACTION_ADD_SHORTCUT",
+            "ACTION_INSTALL_SHORTCUT",
+            "ACTION_SHORTCUT"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for dm-verity status?",
+        "o": [
+            "Check for dm-verity in kernel",
+            "Check su binary",
+            "Check build tags",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with encryption at rest?",
+        "o": [
+            "setEncryptionAtRestRequired",
+            "setStorageEncrypted",
+            "setEncryptedStorage",
+            "setKeyEncryption"
+        ]
+    },
+    {
+        "q": "What is the Android permission for reading network history?",
+        "o": [
+            "READ_NETWORK_USAGE_HISTORY",
+            "NETWORK_STATS",
+            "DATA_USAGE",
+            "TRAFFIC_STATS"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the sensor data?",
+        "o": [
+            "BODY_SENSORS",
+            "SENSOR_ACCESS",
+            "USE_SENSORS",
+            "MOTION_DATA"
+        ]
+    },
+    {
+        "q": "What is an intent flag for excluding recent tasks?",
+        "o": [
+            "FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS",
+            "EXCLUDE_RECENTS",
+            "NO_RECENTS_FLAG",
+            "HIDE_FROM_RECENTS"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for Xposed framework?",
+        "o": [
+            "Check for de.robv.android.xposed",
+            "Check su binary",
+            "Check build.prop",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key purpose for signing?",
+        "o": [
+            "KeyProperties.PURPOSE_SIGN",
+            "PURPOSE_SIGNING",
+            "KEY_SIGN",
+            "SIGNING_ONLY"
+        ]
+    },
+    {
+        "q": "What is the Android security model for implicit broadcasts?",
+        "o": [
+            "Restricted in recent Android",
+            "Always allowed",
+            "Only system broadcasts",
+            "No restrictions"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the user's contacts profile?",
+        "o": [
+            "READ_PROFILE",
+            "VIEW_PROFILE",
+            "ACCESS_PROFILE",
+            "GET_PROFILE"
+        ]
+    },
+    {
+        "q": "What is an intent action for unlocking a document?",
+        "o": [
+            "ACTION_UNLOCK",
+            "ACTION_OPEN",
+            "ACTION_ACCESS",
+            "ACTION_AUTHENTICATE"
+        ]
+    },
+    {
+        "q": "What does checking for /system/app/Superuser folder indicate?",
+        "o": [
+            "Root management app as system",
+            "User installed app",
+            "System update",
+            "Default Android app"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with random IV?",
+        "o": [
+            "setRandomizedEncryptionRequired",
+            "setIVRequired",
+            "setEncryptionRandom",
+            "setRandomIV"
+        ]
+    },
+    {
+        "q": "What is the Android permission for reading sync statistics?",
+        "o": [
+            "READ_SYNC_STATS",
+            "SYNC_INFO",
+            "GET_SYNC_STATS",
+            "VIEW_SYNC_DATA"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the USB device?",
+        "o": [
+            "USB_PERMISSION",
+            "ACCESS_USB",
+            "USB_DEVICE",
+            "MANAGE_USB"
+        ]
+    },
+    {
+        "q": "What is an intent action for managing pending intents?",
+        "o": [
+            "No specific action",
+            "ACTION_MANAGE",
+            "ACTION_PENDING",
+            "ACTION_INTENT"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for systemless root indicators?",
+        "o": [
+            "Check for .magisk in /data",
+            "Check su in system",
+            "Check build tags",
+            "Check permissions"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation extension?",
+        "o": [
+            "Attestation key extension data",
+            "Key size extension",
+            "Algorithm extension",
+            "Storage extension"
+        ]
+    },
+    {
+        "q": "What is the Android security model for runtime permission grants?",
+        "o": [
+            "User can grant or deny",
+            "System auto-grants",
+            "Installer grants",
+            "Developer decides"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the user's social stream?",
+        "o": [
+            "READ_SOCIAL_STREAM",
+            "ACCESS_SOCIAL",
+            "VIEW_FEED",
+            "SOCIAL_DATA"
+        ]
+    },
+    {
+        "q": "What is an intent action for picking a contact?",
+        "o": [
+            "ACTION_PICK_CONTACT",
+            "ACTION_SELECT_CONTACT",
+            "ACTION_CHOOSE_CONTACT",
+            "ACTION_GET_CONTACT"
+        ]
+    },
+    {
+        "q": "What does checking for ro.debuggable=1 and ro.secure=0 indicate?",
+        "o": [
+            "Engineering build with root",
+            "Production build",
+            "Userdebug build",
+            "Stock Android"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with unlocked device only?",
+        "o": [
+            "setUnlockedDeviceRequired",
+            "setDeviceLockedRequired",
+            "setScreenLockRequired",
+            "setKeyguardRequired"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the DRM content?",
+        "o": [
+            "ACCESS_DRM",
+            "DRM_PERMISSION",
+            "DRM_CONTENT",
+            "MANAGE_DRM"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the user's call log on Android 12+?",
+        "o": [
+            "READ_CALL_LOG",
+            "ACCESS_CALLS",
+            "VIEW_HISTORY",
+            "CALL_DETAILS"
+        ]
+    },
+    {
+        "q": "What is an intent action for viewing a contact?",
+        "o": [
+            "ACTION_VIEW_CONTACT",
+            "ACTION_SHOW_CONTACT",
+            "ACTION_DISPLAY_CONTACT",
+            "ACTION_OPEN_CONTACT"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for test signed APKs?",
+        "o": [
+            "Check app signatures",
+            "Check su binary",
+            "Check build props",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with user presence?",
+        "o": [
+            "setUserPresenceRequired",
+            "setPresenceCheck",
+            "setUserPresent",
+            "setPresenceRequired"
+        ]
+    },
+    {
+        "q": "What is the Android security model for content provider permissions?",
+        "o": [
+            "Read and write permissions",
+            "Only read permission",
+            "Only write permission",
+            "No permissions"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the account manager?",
+        "o": [
+            "AUTHENTICATE_ACCOUNTS",
+            "MANAGE_ACCOUNTS",
+            "USE_ACCOUNTS",
+            "ACCESS_ACCOUNTS"
+        ]
+    },
+    {
+        "q": "What is an intent action for managing accounts?",
+        "o": [
+            "ACTION_MANAGE_ACCOUNTS",
+            "ACTION_ACCOUNTS",
+            "ACTION_ACCOUNT_SETTINGS",
+            "ACTION_ACCOUNT_MANAGER"
+        ]
+    },
+    {
+        "q": "What does checking for Magisk module presence involve?",
+        "o": [
+            "/data/adb/modules",
+            "/system/magisk",
+            "/cache/magisk",
+            "/vendor/magisk"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation for key ownership?",
+        "o": [
+            "Proves key belongs to device",
+            "Proves key strength",
+            "Proves key age",
+            "Proves key usage"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the clipboard service?",
+        "o": [
+            "No permission needed pre-13",
+            "CLIPBOARD_ACCESS",
+            "READ_CLIPBOARD",
+            "USE_CLIPBOARD"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the user's SMS on Android 12+?",
+        "o": [
+            "READ_SMS",
+            "SMS_READ",
+            "VIEW_MESSAGES",
+            "MESSAGE_READ"
+        ]
+    },
+    {
+        "q": "What is an intent action for viewing app details?",
+        "o": [
+            "ACTION_APPLICATION_DETAILS",
+            "ACTION_APP_INFO",
+            "ACTION_VIEW_APP",
+            "ACTION_APP_DETAILS"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for write access to /system?",
+        "o": [
+            "Try writing to /system/test",
+            "Check su binary",
+            "Check build tags",
+            "Check file exists"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with biometric only?",
+        "o": [
+            "setBiometricOnly",
+            "setStrongAuthOnly",
+            "setUserAuthBiometric",
+            "setBiometricRequired"
+        ]
+    },
+    {
+        "q": "What is the Android security model for pending intents?",
+        "o": [
+            "Retain original permissions",
+            "Lose all permissions",
+            "Gain caller permissions",
+            "System permissions only"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the device identifiers?",
+        "o": [
+            "READ_PRIVILEGED_PHONE_STATE",
+            "DEVICE_INFO",
+            "IDENTIFIER_ACCESS",
+            "PHONE_IDENTIFIERS"
+        ]
+    },
+    {
+        "q": "What is an intent action for managing all applications?",
+        "o": [
+            "ACTION_MANAGE_ALL_APPLICATIONS",
+            "ACTION_ALL_APPS",
+            "ACTION_APP_MANAGER",
+            "ACTION_APPLICATIONS"
+        ]
+    },
+    {
+        "q": "What does checking for MagiskHide props config indicate?",
+        "o": [
+            "MagiskHide properties modified",
+            "System properties default",
+            "Build props original",
+            "No root hiding"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with trusted execution?",
+        "o": [
+            "Inside TEE or StrongBox",
+            "In system memory",
+            "In app memory",
+            "On external storage"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the carrier billing?",
+        "o": [
+            "BILLING",
+            "CARRIER_BILLING",
+            "ACCESS_BILLING",
+            "PAYMENT_API"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the visual voicemail?",
+        "o": [
+            "READ_VOICEMAIL",
+            "VOICEMAIL_ACCESS",
+            "VIEW_VOICEMAIL",
+            "VMAIL_READ"
+        ]
+    },
+    {
+        "q": "What is an intent action for editing a contact?",
+        "o": [
+            "ACTION_EDIT_CONTACT",
+            "ACTION_MODIFY_CONTACT",
+            "ACTION_UPDATE_CONTACT",
+            "ACTION_CHANGE_CONTACT"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for custom recovery?",
+        "o": [
+            "Check for recovery mode keys",
+            "Check su binary",
+            "Check build props",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with critical purposes?",
+        "o": [
+            "Encrypt, decrypt, sign, verify",
+            "Only encrypt and decrypt",
+            "Only sign and verify",
+            "Only key agreement"
+        ]
+    },
+    {
+        "q": "What is the Android security model for broadcast receivers?",
+        "o": [
+            "Exported receivers accessible",
+            "All receivers exported",
+            "No receivers exported",
+            "Only system receivers"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the NFC feature?",
+        "o": [
+            "NFC",
+            "USE_NFC",
+            "NFC_ACCESS",
+            "CONTROL_NFC"
+        ]
+    },
+    {
+        "q": "What is an intent action for sending multiple data?",
+        "o": [
+            "ACTION_SEND_MULTIPLE",
+            "ACTION_SEND_MANY",
+            "ACTION_MULTIPLE_SEND",
+            "ACTION_SEND_DATA"
+        ]
+    },
+    {
+        "q": "What does checking for /system/bin/.ext/.su indicate?",
+        "o": [
+            "Hidden su binary",
+            "System library",
+            "Vendor file",
+            "App data"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with digests?",
+        "o": [
+            "SHA256, SHA512 digests",
+            "Only MD5",
+            "Only SHA1",
+            "No digests"
+        ]
+    },
+    {
+        "q": "What is the Android permission for binding to a wallpaper service?",
+        "o": [
+            "BIND_WALLPAPER",
+            "WALLPAPER_SERVICE",
+            "USE_WALLPAPER",
+            "WALLPAPER_BIND"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the user's input history?",
+        "o": [
+            "READ_INPUT_HISTORY",
+            "INPUT_DATA",
+            "KEYBOARD_HISTORY",
+            "TYPING_DATA"
+        ]
+    },
+    {
+        "q": "What is an intent action for unlocking the device?",
+        "o": [
+            "ACTION_DEVICE_UNLOCK",
+            "ACTION_UNLOCK_DEVICE",
+            "ACTION_SCREEN_UNLOCK",
+            "ACTION_KEYGUARD"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for unsafe operating system?",
+        "o": [
+            "Check for OS version vulnerabilities",
+            "Check su binary",
+            "Check build tags",
+            "Check permissions"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with block modes?",
+        "o": [
+            "CBC, CTR, ECB, GCM",
+            "Only ECB",
+            "Only CBC",
+            "No block modes"
+        ]
+    },
+    {
+        "q": "What is the Android security model for services?",
+        "o": [
+            "Exported services accessible",
+            "All services exported",
+            "No services exported",
+            "Only system services"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the Bluetooth stack?",
+        "o": [
+            "BLUETOOTH",
+            "USE_BLUETOOTH",
+            "BLUETOOTH_ACCESS",
+            "CONTROL_BLUETOOTH"
+        ]
+    },
+    {
+        "q": "What is an intent action for viewing an image?",
+        "o": [
+            "ACTION_VIEW_IMAGE",
+            "ACTION_VIEW_PICTURE",
+            "ACTION_OPEN_IMAGE",
+            "ACTION_DISPLAY_IMAGE"
+        ]
+    },
+    {
+        "q": "What does checking for /data/local/tmp/.su indicate?",
+        "o": [
+            "Temporary su binary",
+            "System file",
+            "App cache",
+            "Log file"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with padding schemes?",
+        "o": [
+            "PKCS1, OAEP, PKCS7",
+            "Only NoPadding",
+            "Only PKCS5",
+            "No padding"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the location in background continuously?",
+        "o": [
+            "ACCESS_BACKGROUND_LOCATION",
+            "FOREGROUND_LOCATION",
+            "CONTINUOUS_LOCATION",
+            "ALWAYS_LOCATION"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the user's app usage statistics?",
+        "o": [
+            "PACKAGE_USAGE_STATS",
+            "USAGE_ACCESS",
+            "APP_USAGE",
+            "VIEW_USAGE"
+        ]
+    },
+    {
+        "q": "What is an intent action for picking a directory?",
+        "o": [
+            "ACTION_OPEN_DOCUMENT_TREE",
+            "ACTION_PICK_DIRECTORY",
+            "ACTION_SELECT_FOLDER",
+            "ACTION_CHOOSE_DIR"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for SELinux status?",
+        "o": [
+            "Check if SELinux is permissive",
+            "Check su binary",
+            "Check build tags",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with key wrapping?",
+        "o": [
+            "KeyProperties.PURPOSE_WRAP_KEY",
+            "PURPOSE_WRAP",
+            "KEY_WRAPPING",
+            "WRAP_PURPOSE"
+        ]
+    },
+    {
+        "q": "What is the Android security model for app permissions after update?",
+        "o": [
+            "Permissions persist if signature same",
+            "All permissions revoked",
+            "Need to re-grant",
+            "System decides"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the companion device?",
+        "o": [
+            "COMPANION_DEVICE_ACCESS",
+            "USE_COMPANION",
+            "COMPANION_APP",
+            "ACCESS_COMPANION"
+        ]
+    },
+    {
+        "q": "What is an intent action for viewing a video?",
+        "o": [
+            "ACTION_VIEW_VIDEO",
+            "ACTION_PLAY_VIDEO",
+            "ACTION_OPEN_VIDEO",
+            "ACTION_WATCH_VIDEO"
+        ]
+    },
+    {
+        "q": "What does checking for /data/data/com.kingroot.kinguser indicate?",
+        "o": [
+            "KingRoot app installed",
+            "System app",
+            "Google app",
+            "Stock app"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with device IDs?",
+        "o": [
+            "Includes device identifiers",
+            "No device info",
+            "Only key info",
+            "Only app info"
+        ]
+    },
+    {
+        "q": "What is the Android permission system's implementation in the Linux kernel?",
+        "o": [
+            "Extended attributes and groups",
+            "Capability bits only",
+            "SELinux contexts",
+            "Filesystem ACLs"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the precise location with background updates?",
+        "o": [
+            "ACCESS_FINE_LOCATION + background",
+            "ACCESS_COARSE_LOCATION",
+            "LOCATION_UPDATE",
+            "CONTINUOUS_LOCATION"
+        ]
+    },
+    {
+        "q": "What is a confused deputy attack with intents?",
+        "o": [
+            "Privileged component tricked",
+            "Intent interception",
+            "Broadcast injection",
+            "Intent spoofing"
+        ]
+    },
+    {
+        "q": "Which advanced root detection checks for mount namespace isolation?",
+        "o": [
+            "Check /proc/self/mountinfo",
+            "Check su binary",
+            "Check build tags",
+            "Check file permissions"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with root of trust?",
+        "o": [
+            "Hardware-rooted certificate chain",
+            "Software attestation",
+            "Cloud verification",
+            "App signature"
+        ]
+    },
+    {
+        "q": "What is the Android signature permission with privileged access?",
+        "o": [
+            "signatureOrSystem",
+            "signatureOnly",
+            "systemOnly",
+            "privilegedOnly"
+        ]
+    },
+    {
+        "q": "What is intent redirection vulnerability in Android?",
+        "o": [
+            "Nested intents with malicious extras",
+            "Slow intent delivery",
+            "Intent duplication",
+            "Intent delay"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for kernel module loading?",
+        "o": [
+            "Check /proc/modules for rootkit",
+            "Check su binary",
+            "Check build props",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with trusted user presence?",
+        "o": [
+            "setUserPresenceRequirement",
+            "setPresenceCheck",
+            "setUserAuth",
+            "setBiometric"
+        ]
+    },
+    {
+        "q": "What is the Android security architecture for HAL hardening?",
+        "o": [
+            "Treble and VINTF",
+            "Binder only",
+            "Kernel modules",
+            "App framework"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the activity recognition?",
+        "o": [
+            "ACTIVITY_RECOGNITION",
+            "MOTION_ACTIVITY",
+            "PHYSICAL_ACTIVITY",
+            "BODY_MOVEMENT"
+        ]
+    },
+    {
+        "q": "What is an intent action for revoking a permission?",
+        "o": [
+            "ACTION_REVOKE_PERMISSION",
+            "ACTION_PERMISSION_REVOKE",
+            "ACTION_UNGRANT",
+            "ACTION_REMOVE_PERMISSION"
+        ]
+    },
+    {
+        "q": "What does checking for /system/bin/.magisk indicate?",
+        "o": [
+            "Magisk binary hidden",
+            "System binary",
+            "App data",
+            "Cache file"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation for boot state?",
+        "o": [
+            "Verified boot state included",
+            "No boot info",
+            "Only key info",
+            "Only device IDs"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the autofill service?",
+        "o": [
+            "BIND_AUTOFILL_SERVICE",
+            "AUTOFILL_ACCESS",
+            "USE_AUTOFILL",
+            "AUTOFILL_BIND"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the user's notifications?",
+        "o": [
+            "BIND_NOTIFICATION_LISTENER",
+            "READ_NOTIFICATIONS",
+            "NOTIFICATION_ACCESS",
+            "VIEW_NOTIFICATIONS"
+        ]
+    },
+    {
+        "q": "What is an intent extra for allowing multiple URI grants?",
+        "o": [
+            "FLAG_GRANT_PERSISTABLE_URI_PERMISSION",
+            "GRANT_URI_PERMS",
+            "URI_PERMISSION_FLAG",
+            "PERSISTABLE_GRANT"
+        ]
+    },
+    {
+        "q": "Which advanced root detection checks for kernel symbols?",
+        "o": [
+            "Check /proc/kallsyms for hooks",
+            "Check su binary",
+            "Check build tags",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with StrongBox version?",
+        "o": [
+            "StrongBox hardware version",
+            "Software version",
+            "Key size",
+            "Algorithm type"
+        ]
+    },
+    {
+        "q": "What is the Android security model for instant apps?",
+        "o": [
+            "Limited permissions and storage",
+            "Full permissions",
+            "No permissions",
+            "System permissions"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the SMS database directly?",
+        "o": [
+            "WRITE_SMS",
+            "SMS_DATABASE",
+            "ACCESS_SMS_DB",
+            "MODIFY_SMS"
+        ]
+    },
+    {
+        "q": "What is an intent action for managing network usage?",
+        "o": [
+            "ACTION_MANAGE_NETWORK_USAGE",
+            "ACTION_NETWORK_STATS",
+            "ACTION_DATA_USAGE",
+            "ACTION_NETWORK_MANAGER"
+        ]
+    },
+    {
+        "q": "What does checking for /data/adb/magisk.img indicate?",
+        "o": [
+            "Magisk image file",
+            "System image",
+            "Recovery image",
+            "Boot image"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with security level?",
+        "o": [
+            "Software, TEE, StrongBox level",
+            "Key size only",
+            "Algorithm only",
+            "Purpose only"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the telecom service?",
+        "o": [
+            "BIND_TELECOM_CONNECTION_SERVICE",
+            "TELECOM_ACCESS",
+            "USE_TELECOM",
+            "PHONE_SERVICE"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the user's call screening?",
+        "o": [
+            "BIND_SCREENING_SERVICE",
+            "CALL_SCREENING",
+            "SCREEN_CALLS",
+            "FILTER_CALLS"
+        ]
+    },
+    {
+        "q": "What is an intent flag for granting URI permissions?",
+        "o": [
+            "FLAG_GRANT_READ_URI_PERMISSION",
+            "GRANT_READ_URI",
+            "URI_READ_FLAG",
+            "READ_URI_PERMISSION"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for Zygote injection?",
+        "o": [
+            "Check for Xposed in Zygote",
+            "Check su binary",
+            "Check build props",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with secure import?",
+        "o": [
+            "Wrapped key import",
+            "Plaintext import",
+            "Encrypted import",
+            "Base64 import"
+        ]
+    },
+    {
+        "q": "What is the Android security model for work profiles?",
+        "o": [
+            "Separate storage and permissions",
+            "Same as personal",
+            "No separation",
+            "Only apps separated"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the call log with details?",
+        "o": [
+            "READ_CALL_LOG with extras",
+            "CALL_DETAILS",
+            "VIEW_CALL_LOG",
+            "ACCESS_CALL_HISTORY"
+        ]
+    },
+    {
+        "q": "What is an intent action for processing a text message?",
+        "o": [
+            "ACTION_PROCESS_TEXT",
+            "ACTION_TEXT_PROCESS",
+            "ACTION_HANDLE_TEXT",
+            "ACTION_TEXT_EDIT"
+        ]
+    },
+    {
+        "q": "What does checking for /data/local/tmp/root.sh indicate?",
+        "o": [
+            "Root script presence",
+            "System script",
+            "App data",
+            "Log file"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with patch level?",
+        "o": [
+            "Security patch level included",
+            "No patch info",
+            "Only key info",
+            "Only device model"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the content capture service?",
+        "o": [
+            "BIND_CONTENT_CAPTURE_SERVICE",
+            "CAPTURE_CONTENT",
+            "CONTENT_CAPTURE",
+            "VIEW_CAPTURE"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the user's voice interaction?",
+        "o": [
+            "BIND_VOICE_INTERACTION",
+            "VOICE_INPUT",
+            "SPEECH_RECOGNITION",
+            "AUDIO_INTERACTION"
+        ]
+    },
+    {
+        "q": "What is an intent action for requesting a permission?",
+        "o": [
+            "ACTION_REQUEST_PERMISSION",
+            "ACTION_PERMISSION_REQUEST",
+            "ACTION_ASK_PERMISSION",
+            "ACTION_GRANT_PERMISSION"
+        ]
+    },
+    {
+        "q": "Which advanced root detection checks for process tracing?",
+        "o": [
+            "Check for ptrace attachments",
+            "Check su binary",
+            "Check build tags",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with remote attestation?",
+        "o": [
+            "Cloud-based key verification",
+            "Local only",
+            "Device only",
+            "App only"
+        ]
+    },
+    {
+        "q": "What is the Android security architecture for biometric integration?",
+        "o": [
+            "BiometricPrompt and Keystore",
+            "FingerprintManager only",
+            "Face unlock only",
+            "Iris scanner only"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the user's autofill data?",
+        "o": [
+            "BIND_AUTOFILL",
+            "AUTOFILL_DATA",
+            "USE_AUTOFILL_DATA",
+            "ACCESS_AUTOFILL"
+        ]
+    },
+    {
+        "q": "What is an intent action for viewing a document tree?",
+        "o": [
+            "ACTION_VIEW_DOCUMENT_TREE",
+            "ACTION_OPEN_TREE",
+            "ACTION_BROWSE_TREE",
+            "ACTION_SELECT_TREE"
+        ]
+    },
+    {
+        "q": "What does checking for /data/data/com.topjohnwu.magisk indicate?",
+        "o": [
+            "Magisk app installed",
+            "System app",
+            "Google app",
+            "Stock app"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with key destruction policy?",
+        "o": [
+            "setKeyValidityEnd",
+            "setKeyDestroy",
+            "setExpiration",
+            "setInvalidate"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the content suggestions?",
+        "o": [
+            "BIND_CONTENT_SUGGESTIONS",
+            "SUGGEST_CONTENT",
+            "CONTENT_SUGGEST",
+            "VIEW_SUGGESTIONS"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the user's phone accounts?",
+        "o": [
+            "READ_PHONE_ACCOUNTS",
+            "PHONE_ACCOUNTS",
+            "ACCESS_PHONE_ACCOUNTS",
+            "VIEW_PHONE_ACCOUNTS"
+        ]
+    },
+    {
+        "q": "What is an intent action for handling a custom URL scheme?",
+        "o": [
+            "ACTION_VIEW with custom scheme",
+            "ACTION_CUSTOM_URL",
+            "ACTION_HANDLE_URL",
+            "ACTION_OPEN_URL"
+        ]
+    },
+    {
+        "q": "Which advanced root detection checks for kernel function hooks?",
+        "o": [
+            "Check syscall table integrity",
+            "Check su binary",
+            "Check build props",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with certificate extension?",
+        "o": [
+            "Key description extensions",
+            "No extensions",
+            "Basic extensions",
+            "Standard X509"
+        ]
+    },
+    {
+        "q": "What is the Android security model for direct boot mode?",
+        "o": [
+            "Device encrypted storage",
+            "Credential encrypted",
+            "No encryption",
+            "Full disk encryption"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the user's shortcuts?",
+        "o": [
+            "BIND_SHORTCUT_SERVICE",
+            "SHORTCUT_ACCESS",
+            "USE_SHORTCUTS",
+            "MODIFY_SHORTCUTS"
+        ]
+    },
+    {
+        "q": "What is an intent action for managing default apps?",
+        "o": [
+            "ACTION_MANAGE_DEFAULT_APPS",
+            "ACTION_DEFAULT_APPS",
+            "ACTION_SET_DEFAULT",
+            "ACTION_APP_DEFAULTS"
+        ]
+    },
+    {
+        "q": "What does checking for /system/lib/libsupol.so indicate?",
+        "o": [
+            "SuperSU library",
+            "System library",
+            "Vendor library",
+            "App library"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with StrongBox attestation?",
+        "o": [
+            "StrongBox attestation keys",
+            "TEE attestation",
+            "Software attestation",
+            "App attestation"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the tv input service?",
+        "o": [
+            "BIND_TV_INPUT",
+            "TV_ACCESS",
+            "USE_TV",
+            "TV_INPUT"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the user's voice mail?",
+        "o": [
+            "READ_VOICEMAIL",
+            "VOICEMAIL_READ",
+            "ACCESS_VOICEMAIL",
+            "VIEW_VOICEMAIL"
+        ]
+    },
+    {
+        "q": "What is an intent action for granting persistent permissions?",
+        "o": [
+            "ACTION_GRANT_PERSISTABLE_URI_PERMISSION",
+            "ACTION_PERSIST_PERMISSION",
+            "ACTION_GRANT_PERSISTENT",
+            "ACTION_URI_PERMISSION"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for custom init scripts?",
+        "o": [
+            "Check /etc/init.d for scripts",
+            "Check su binary",
+            "Check build tags",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with device lock state?",
+        "o": [
+            "Lock screen state included",
+            "No lock info",
+            "Only key info",
+            "Only device IDs"
+        ]
+    },
+    {
+        "q": "What is the Android security architecture for app isolation?",
+        "o": [
+            "Namespaces and seccomp",
+            "JVM only",
+            "Kernel only",
+            "Hardware only"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the user's companion device pairing?",
+        "o": [
+            "COMPANION_DEVICE_ACCESS",
+            "COMPANION_PAIR",
+            "DEVICE_COMPANION",
+            "PAIR_COMPANION"
+        ]
+    },
+    {
+        "q": "What is an intent action for viewing the app permission summary?",
+        "o": [
+            "ACTION_VIEW_PERMISSION_SUMMARY",
+            "ACTION_PERMISSION_SUMMARY",
+            "ACTION_APP_PERMISSIONS",
+            "ACTION_PERMISSION_DETAILS"
+        ]
+    },
+    {
+        "q": "What does checking for /data/data/com.magisk.magiskhide indicate?",
+        "o": [
+            "MagiskHide app data",
+            "System data",
+            "Google data",
+            "Stock data"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with key usage count?",
+        "o": [
+            "setKeyUsageCount",
+            "setMaxUses",
+            "setUsageLimit",
+            "setCounter"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the tv remote service?",
+        "o": [
+            "BIND_TV_REMOTE_SERVICE",
+            "TV_REMOTE",
+            "REMOTE_ACCESS",
+            "TV_CONTROL"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the user's ambient context?",
+        "o": [
+            "AMBIENT_CONTEXT_READ",
+            "CONTEXT_AWARE",
+            "AMBIENT_SENSORS",
+            "ENVIRONMENT_ACCESS"
+        ]
+    },
+    {
+        "q": "What is an intent action for managing storage access?",
+        "o": [
+            "ACTION_MANAGE_STORAGE_ACCESS",
+            "ACTION_STORAGE_ACCESS",
+            "ACTION_ACCESS_STORAGE",
+            "ACTION_STORAGE_MANAGER"
+        ]
+    },
+    {
+        "q": "Which advanced root detection checks for kernel memory modifications?",
+        "o": [
+            "Check /dev/mem access",
+            "Check su binary",
+            "Check build props",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with verified boot key?",
+        "o": [
+            "Boot key included",
+            "No boot key",
+            "Only app key",
+            "Only device key"
+        ]
+    },
+    {
+        "q": "What is the Android security model for ephemeral apps?",
+        "o": [
+            "Temporary permissions and data",
+            "Permanent permissions",
+            "No permissions",
+            "System permissions"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the user's subscriptions?",
+        "o": [
+            "SUBSCRIPTIONS_ACCESS",
+            "READ_SUBSCRIPTIONS",
+            "VIEW_SUBSCRIPTIONS",
+            "MANAGE_SUBSCRIPTIONS"
+        ]
+    },
+    {
+        "q": "What is an intent action for viewing the backup settings?",
+        "o": [
+            "ACTION_VIEW_BACKUP_SETTINGS",
+            "ACTION_BACKUP_SETTINGS",
+            "ACTION_MANAGE_BACKUP",
+            "ACTION_BACKUP_CONFIG"
+        ]
+    },
+    {
+        "q": "What does checking for /data/local/tmp/magisk.db indicate?",
+        "o": [
+            "Magisk database file",
+            "System database",
+            "App data",
+            "Cache file"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with critical boot parameters?",
+        "o": [
+            "Boot parameters in attestation",
+            "No boot params",
+            "Only key params",
+            "Only device params"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the content classification?",
+        "o": [
+            "BIND_CONTENT_CLASSIFIER",
+            "CLASSIFY_CONTENT",
+            "CONTENT_CLASSIFY",
+            "VIEW_CLASSIFIER"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the user's calendar with attendee details?",
+        "o": [
+            "READ_CALENDAR with details",
+            "CALENDAR_DETAILS",
+            "VIEW_ATTENDEES",
+            "EVENT_DETAILS"
+        ]
+    },
+    {
+        "q": "What is an intent action for revoking URI permissions?",
+        "o": [
+            "ACTION_REVOKE_URI_PERMISSION",
+            "ACTION_URI_REVOKE",
+            "ACTION_REMOVE_URI",
+            "ACTION_UNGRANT_URI"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for SELinux policy modifications?",
+        "o": [
+            "Check for permissive enforcing",
+            "Check su binary",
+            "Check build tags",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with key agreement purpose?",
+        "o": [
+            "KeyProperties.PURPOSE_AGREE_KEY",
+            "PURPOSE_AGREE",
+            "KEY_AGREEMENT",
+            "AGREE_PURPOSE"
+        ]
+    },
+    {
+        "q": "What is the Android security architecture for hardware-backed biometrics?",
+        "o": [
+            "TEE-based biometric matching",
+            "Software matching",
+            "Cloud matching",
+            "App matching"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the user's visual voicemail service?",
+        "o": [
+            "BIND_VISUAL_VOICEMAIL_SERVICE",
+            "VISUAL_VOICEMAIL",
+            "VOICEMAIL_SERVICE",
+            "VVM_ACCESS"
+        ]
+    },
+    {
+        "q": "What is an intent action for managing permission policies?",
+        "o": [
+            "ACTION_MANAGE_PERMISSION_POLICY",
+            "ACTION_PERMISSION_POLICY",
+            "ACTION_POLICY_MANAGER",
+            "ACTION_GRANT_POLICY"
+        ]
+    },
+    {
+        "q": "What does checking for /system/xbin/daemonsu indicate?",
+        "o": [
+            "SuperSU daemon",
+            "System daemon",
+            "Vendor daemon",
+            "App process"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with OS version?",
+        "o": [
+            "OS version included",
+            "No OS version",
+            "Only key version",
+            "Only app version"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the MIDI service?",
+        "o": [
+            "BIND_MIDI_DEVICE_SERVICE",
+            "MIDI_ACCESS",
+            "USE_MIDI",
+            "MIDI_SERVICE"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the user's attention tracking?",
+        "o": [
+            "ATTENTION_TRACKING",
+            "EYE_TRACKING",
+            "GAZE_DETECTION",
+            "FOCUS_MONITOR"
+        ]
+    },
+    {
+        "q": "What is an intent action for configuring app hibernation?",
+        "o": [
+            "ACTION_APP_HIBERNATION",
+            "ACTION_HIBERNATE_APP",
+            "ACTION_SLEEP_APP",
+            "ACTION_PAUSE_APP"
+        ]
+    },
+    {
+        "q": "Which advanced root detection checks for kernel rootkit behavior?",
+        "o": [
+            "Check hidden processes",
+            "Check su binary",
+            "Check build props",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with key authorization tags?",
+        "o": [
+            "Authorization tags set",
+            "No tags",
+            "Basic tags",
+            "Default tags"
+        ]
+    },
+    {
+        "q": "What is the Android security model for scoped storage?",
+        "o": [
+            "App-specific and media collections",
+            "Full SD card access",
+            "No storage access",
+            "System only"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to access the user's nearby devices?",
+        "o": [
+            "NEARBY_DEVICES",
+            "ACCESS_NEARBY",
+            "DEVICE_PROXIMITY",
+            "NEARBY_ACCESS"
+        ]
+    },
+    {
+        "q": "What is an intent action for managing app-specific permissions?",
+        "o": [
+            "ACTION_MANAGE_APP_PERMISSIONS",
+            "ACTION_APP_PERMISSION",
+            "ACTION_PER_APP",
+            "ACTION_SPECIFIC_PERMISSION"
+        ]
+    },
+    {
+        "q": "What does checking for /data/adb/modules/.core indicate?",
+        "o": [
+            "Magisk core module",
+            "System module",
+            "Vendor module",
+            "App module"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with key rotation?",
+        "o": [
+            "Key rotation policy",
+            "No rotation",
+            "Manual rotation",
+            "Auto rotation"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the VR service?",
+        "o": [
+            "BIND_VR_SERVICE",
+            "VR_ACCESS",
+            "USE_VR",
+            "VR_SERVICE"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the user's screen content?",
+        "o": [
+            "CAPTURE_VIDEO_OUTPUT",
+            "READ_SCREEN",
+            "DISPLAY_CAPTURE",
+            "SCREEN_CONTENT"
+        ]
+    },
+    {
+        "q": "What is an intent action for managing restricted permissions?",
+        "o": [
+            "ACTION_MANAGE_RESTRICTED_PERMISSIONS",
+            "ACTION_RESTRICTED",
+            "ACTION_PERMISSION_RESTRICT",
+            "ACTION_RESTRICT_PERMISSION"
+        ]
+    },
+    {
+        "q": "What is the Android kernel's security mechanism against privilege escalation?",
+        "o": [
+            "LSM hooks and capability bounding",
+            "Java sandboxing only",
+            "Application layer checks",
+            "Network filtering"
+        ]
+    },
+    {
+        "q": "Which permission combination allows a system app to bypass runtime approval?",
+        "o": [
+            "signatureOrSystem with privileged",
+            "normal with auto-grant",
+            "dangerous with user grant",
+            "development with debug"
+        ]
+    },
+    {
+        "q": "What is a deep link verification bypass vulnerability?",
+        "o": [
+            "Malicious app claiming verified links",
+            "Intent interception",
+            "Broadcast injection",
+            "Service hijacking"
+        ]
+    },
+    {
+        "q": "Which advanced root detection checks for kernel function hooking via kprobes?",
+        "o": [
+            "Check /sys/kernel/debug/kprobes",
+            "Check su binary",
+            "Check build tags",
+            "Check file permissions"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with keymint version?",
+        "o": [
+            "KeyMint hardware version",
+            "Software version",
+            "App version",
+            "OS version"
+        ]
+    },
+    {
+        "q": "What is the Android permission with install-time grant and never user prompt?",
+        "o": [
+            "normal and signature",
+            "dangerous only",
+            "development only",
+            "system only"
+        ]
+    },
+    {
+        "q": "What is a fragment injection attack via intents?",
+        "o": [
+            "Malicious fragment in activity",
+            "Intent spoofing",
+            "Broadcast theft",
+            "Service start"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for SELinux policy loading?",
+        "o": [
+            "Check for policy file modifications",
+            "Check su binary",
+            "Check build props",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with keymaster version?",
+        "o": [
+            "Keymaster hardware version",
+            "Software version",
+            "App version",
+            "OS version"
+        ]
+    },
+    {
+        "q": "What is the Android security architecture for virtualized environments?",
+        "o": [
+            "Cuttlefish with secure configs",
+            "Emulator only",
+            "VM only",
+            "Container only"
+        ]
+    },
+    {
+        "q": "Which permission allows a privileged app to access hidden APIs?",
+        "o": [
+            "ACCESS_HIDDEN_API",
+            "USE_HIDDEN_API",
+            "HIDDEN_ACCESS",
+            "API_BYPASS"
+        ]
+    },
+    {
+        "q": "What is an intent action for triggering a system update?",
+        "o": [
+            "ACTION_SYSTEM_UPDATE",
+            "ACTION_UPDATE_SYSTEM",
+            "ACTION_INSTALL_UPDATE",
+            "ACTION_OTA_UPDATE"
+        ]
+    },
+    {
+        "q": "What does checking for /dev/mem access in root detection indicate?",
+        "o": [
+            "Direct memory access possible",
+            "Root binary present",
+            "System modified",
+            "Bootloader unlocked"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with rollback resistance?",
+        "o": [
+            "Rollback protection enabled",
+            "No rollback protection",
+            "Basic protection",
+            "Software only"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the system recovery?",
+        "o": [
+            "RECOVERY_ACCESS",
+            "SYSTEM_RECOVERY",
+            "BOOT_RECOVERY",
+            "INSTALL_RECOVERY"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the kernel logs?",
+        "o": [
+            "READ_LOGS",
+            "KERNEL_LOGS",
+            "SYSTEM_LOGS",
+            "VIEW_LOGS"
+        ]
+    },
+    {
+        "q": "What is an intent extra for granting URI permissions with persistence?",
+        "o": [
+            "FLAG_GRANT_PERSISTABLE_URI_PERMISSION",
+            "PERSIST_URI",
+            "URI_PERSIST",
+            "GRANT_PERSIST"
+        ]
+    },
+    {
+        "q": "Which advanced root detection checks for ftrace framework hooks?",
+        "o": [
+            "Check /sys/kernel/debug/tracing",
+            "Check su binary",
+            "Check build tags",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with early boot attestation?",
+        "o": [
+            "Boot-time key validation",
+            "Runtime validation",
+            "Install-time validation",
+            "No validation"
+        ]
+    },
+    {
+        "q": "What is the Android security model for protected confirmation?",
+        "o": [
+            "Trusted UI for confirmations",
+            "App dialogs",
+            "System toasts",
+            "Notifications"
+        ]
+    },
+    {
+        "q": "Which permission allows a system app to modify the system settings?",
+        "o": [
+            "WRITE_SECURE_SETTINGS",
+            "MODIFY_SETTINGS",
+            "CHANGE_CONFIG",
+            "UPDATE_SYSTEM"
+        ]
+    },
+    {
+        "q": "What is an intent action for handling a security patch update?",
+        "o": [
+            "ACTION_SECURITY_PATCH",
+            "ACTION_PATCH_UPDATE",
+            "ACTION_SECURITY_UPDATE",
+            "ACTION_UPDATE_PATCH"
+        ]
+    },
+    {
+        "q": "What does checking for /data/local/property/persist property modifications indicate?",
+        "o": [
+            "Persistent property changes",
+            "Root binary",
+            "System app",
+            "User data"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with OS patch level?",
+        "o": [
+            "OS patch level included",
+            "No patch info",
+            "Only key info",
+            "Only device info"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the device policy management?",
+        "o": [
+            "MANAGE_DEVICE_POLICY",
+            "DEVICE_ADMIN",
+            "POLICY_ACCESS",
+            "ADMIN_POLICY"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the secure settings?",
+        "o": [
+            "READ_SECURE_SETTINGS",
+            "ACCESS_SECURE",
+            "VIEW_SECURE",
+            "GET_SECURE"
+        ]
+    },
+    {
+        "q": "What is an intent flag for direct boot awareness?",
+        "o": [
+            "FLAG_ACTIVITY_DIRECT_BOOT_AWARE",
+            "DIRECT_BOOT",
+            "BOOT_AWARE",
+            "DIRECT_ACCESS"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for kernel live patching?",
+        "o": [
+            "Check for livepatch modules",
+            "Check su binary",
+            "Check build props",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with key expiration?",
+        "o": [
+            "setKeyValidityStart and End",
+            "setExpireTime",
+            "setValidUntil",
+            "setTimeout"
+        ]
+    },
+    {
+        "q": "What is the Android security architecture for trusted UI?",
+        "o": [
+            "Hardware-backed secure display",
+            "Software rendering",
+            "App UI only",
+            "System UI only"
+        ]
+    },
+    {
+        "q": "Which permission allows a system app to access the DRM certificates?",
+        "o": [
+            "ACCESS_DRM_CERTIFICATES",
+            "DRM_CERTS",
+            "CERTIFICATE_ACCESS",
+            "DRM_KEYS"
+        ]
+    },
+    {
+        "q": "What is an intent action for revoking a system permission?",
+        "o": [
+            "ACTION_REVOKE_SYSTEM_PERMISSION",
+            "ACTION_SYSTEM_REVOKE",
+            "ACTION_PERMISSION_SYSTEM",
+            "ACTION_UNGRANT_SYSTEM"
+        ]
+    },
+    {
+        "q": "What does checking for /sys/kernel/security/current/lsm indicate?",
+        "o": [
+            "LSM module status",
+            "Root binary",
+            "System app",
+            "User data"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with bootloader state?",
+        "o": [
+            "Bootloader unlock status",
+            "No bootloader info",
+            "Only key info",
+            "Only app info"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the trusted execution environment?",
+        "o": [
+            "ACCESS_TEE",
+            "TEE_PERMISSION",
+            "TRUSTED_EXECUTION",
+            "SECURE_WORLD"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the hardware keystore debug info?",
+        "o": [
+            "KEYSTORE_DEBUG",
+            "DEBUG_KEYSTORE",
+            "HARDWARE_INFO",
+            "KEYSTORE_DUMP"
+        ]
+    },
+    {
+        "q": "What is an intent action for managing trusted credentials?",
+        "o": [
+            "ACTION_MANAGE_TRUSTED_CERTIFICATES",
+            "ACTION_TRUSTED_CERTS",
+            "ACTION_CERT_MANAGER",
+            "ACTION_CREDENTIALS"
+        ]
+    },
+    {
+        "q": "Which advanced root detection checks for kernel syscall hooking?",
+        "o": [
+            "Check syscall table integrity",
+            "Check su binary",
+            "Check build tags",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with key origin attestation?",
+        "o": [
+            "Origin (generated/imported) attested",
+            "No origin info",
+            "Only key type",
+            "Only algorithm"
+        ]
+    },
+    {
+        "q": "What is the Android security model for automotive builds?",
+        "o": [
+            "Vehicle HAL with security",
+            "Standard Android",
+            "No special security",
+            "App only"
+        ]
+    },
+    {
+        "q": "Which permission allows a system app to access the OTA update service?",
+        "o": [
+            "OTA_UPDATE_ACCESS",
+            "UPDATE_SERVICE",
+            "SYSTEM_UPDATE",
+            "OTA_PERMISSION"
+        ]
+    },
+    {
+        "q": "What is an intent action for verifying a digital signature?",
+        "o": [
+            "ACTION_VERIFY_SIGNATURE",
+            "ACTION_SIGNATURE_CHECK",
+            "ACTION_VERIFY_CERT",
+            "ACTION_SIGNATURE_VERIFY"
+        ]
+    },
+    {
+        "q": "What does checking for /proc/1/mountinfo for namespace changes indicate?",
+        "o": [
+            "Mount namespace isolation",
+            "Root binary",
+            "System app",
+            "User data"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with key security level?",
+        "o": [
+            "Security level (TEE/StrongBox)",
+            "No security level",
+            "Only algorithm",
+            "Only key size"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the keymaster service directly?",
+        "o": [
+            "ACCESS_KEYMASTER",
+            "KEYMASTER_USE",
+            "KEYSTORE_ACCESS",
+            "HARDWARE_KEYSTORE"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the secure element?",
+        "o": [
+            "ACCESS_SECURE_ELEMENT",
+            "SECURE_ELEMENT",
+            "NFC_SECURE",
+            "ELEMENT_ACCESS"
+        ]
+    },
+    {
+        "q": "What is an intent action for managing app hibernation state?",
+        "o": [
+            "ACTION_MANAGE_HIBERNATION",
+            "ACTION_HIBERNATION",
+            "ACTION_APP_HIBERNATE",
+            "ACTION_SLEEP_STATE"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for kernel module loading restrictions?",
+        "o": [
+            "Check /proc/sys/kernel/modules_disabled",
+            "Check su binary",
+            "Check build props",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with key authentication time?",
+        "o": [
+            "Authentication time boundary",
+            "No time limit",
+            "Infinite time",
+            "Session only"
+        ]
+    },
+    {
+        "q": "What is the Android security architecture for virtual A/B updates?",
+        "o": [
+            "Seamless updates with rollback",
+            "Full updates",
+            "Incremental only",
+            "No security"
+        ]
+    },
+    {
+        "q": "Which permission allows a system app to access the boot control HAL?",
+        "o": [
+            "BOOT_CONTROL_ACCESS",
+            "CONTROL_BOOT",
+            "BOOT_HAL",
+            "SYSTEM_BOOT"
+        ]
+    },
+    {
+        "q": "What is an intent action for triggering a factory reset?",
+        "o": [
+            "ACTION_FACTORY_RESET",
+            "ACTION_RESET_DEVICE",
+            "ACTION_WIPE_DATA",
+            "ACTION_MASTER_CLEAR"
+        ]
+    },
+    {
+        "q": "What does checking for /sys/fs/selinux/enforce status indicate?",
+        "o": [
+            "SELinux enforcing mode",
+            "Root binary",
+            "System app",
+            "User data"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with verified boot hash?",
+        "o": [
+            "Boot hash included",
+            "No boot hash",
+            "Only key hash",
+            "Only device hash"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the storage daemon?",
+        "o": [
+            "ACCESS_STORAGE_DAEMON",
+            "STORAGE_DAEMON",
+            "SDCARD_DAEMON",
+            "VOLD_ACCESS"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the tombstone files?",
+        "o": [
+            "READ_TOMBSTONES",
+            "ACCESS_TOMBSTONE",
+            "CRASH_DUMPS",
+            "DEBUG_TOMBSTONE"
+        ]
+    },
+    {
+        "q": "What is an intent action for managing the keychain?",
+        "o": [
+            "ACTION_MANAGE_KEYCHAIN",
+            "ACTION_KEYCHAIN",
+            "ACTION_CREDENTIAL_STORE",
+            "ACTION_KEY_MANAGER"
+        ]
+    },
+    {
+        "q": "Which advanced root detection checks for kernel control groups modifications?",
+        "o": [
+            "Check cgroup mount options",
+            "Check su binary",
+            "Check build tags",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with key usage limits?",
+        "o": [
+            "Usage count limits",
+            "No limits",
+            "Time limits",
+            "Size limits"
+        ]
+    },
+    {
+        "q": "What is the Android security model for dynamic code loading?",
+        "o": [
+            "Restricted with permissions",
+            "Always allowed",
+            "Never allowed",
+            "System only"
+        ]
+    },
+    {
+        "q": "Which permission allows a system app to access the gatekeeper HAL?",
+        "o": [
+            "ACCESS_GATEKEEPER",
+            "GATEKEEPER_USE",
+            "AUTH_HAL",
+            "LOCKSCREEN_HAL"
+        ]
+    },
+    {
+        "q": "What is an intent action for verifying app integrity?",
+        "o": [
+            "ACTION_VERIFY_APP_INTEGRITY",
+            "ACTION_APP_VERIFY",
+            "ACTION_INTEGRITY_CHECK",
+            "ACTION_VERIFY_APK"
+        ]
+    },
+    {
+        "q": "What does checking for /proc/sys/abi/trace status indicate?",
+        "o": [
+            "ABI tracing status",
+            "Root binary",
+            "System app",
+            "User data"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with key rotation history?",
+        "o": [
+            "Rotation history included",
+            "No history",
+            "Only current key",
+            "Only previous key"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the weaver HAL?",
+        "o": [
+            "ACCESS_WEAVER",
+            "WEAVER_HAL",
+            "STORAGE_HAL",
+            "SECURE_STORAGE"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the last kernel crash log?",
+        "o": [
+            "READ_LAST_KMSG",
+            "KERNEL_CRASH",
+            "LAST_KMSG",
+            "PANIC_LOG"
+        ]
+    },
+    {
+        "q": "What is an intent action for managing the VPN service?",
+        "o": [
+            "ACTION_MANAGE_VPN",
+            "ACTION_VPN_SETTINGS",
+            "ACTION_VPN_CONFIG",
+            "ACTION_VPN_SERVICE"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for kernel function tracer hooks?",
+        "o": [
+            "Check ftrace function tracing",
+            "Check su binary",
+            "Check build props",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with key exportability?",
+        "o": [
+            "Exportable or not",
+            "Always exportable",
+            "Never exportable",
+            "System only"
+        ]
+    },
+    {
+        "q": "What is the Android security architecture for protected virtual machines?",
+        "o": [
+            "pVM with hypervisor",
+            "Standard VM",
+            "Container only",
+            "No protection"
+        ]
+    },
+    {
+        "q": "Which permission allows a system app to access the confirmation UI HAL?",
+        "o": [
+            "ACCESS_CONFIRMATION_UI",
+            "CONFIRMATION_HAL",
+            "TRUSTED_UI",
+            "SECURE_UI"
+        ]
+    },
+    {
+        "q": "What is an intent action for handling a secure element transaction?",
+        "o": [
+            "ACTION_SECURE_ELEMENT",
+            "ACTION_SE_TRANSACTION",
+            "ACTION_NFC_SE",
+            "ACTION_ELEMENT_TRANSFER"
+        ]
+    },
+    {
+        "q": "What does checking for /dev/tz_access indicate?",
+        "o": [
+            "TrustZone access device",
+            "Root binary",
+            "System app",
+            "User data"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with key derivation info?",
+        "o": [
+            "Key derivation parameters",
+            "No derivation info",
+            "Only algorithm",
+            "Only key type"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the secure NFC element?",
+        "o": [
+            "ACCESS_SECURE_NFC",
+            "NFC_SE_ACCESS",
+            "SECURE_NFC",
+            "NFC_ELEMENT"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the hardware random number generator?",
+        "o": [
+            "ACCESS_HW_RNG",
+            "RNG_ACCESS",
+            "RANDOM_HARDWARE",
+            "ENTROPY_ACCESS"
+        ]
+    },
+    {
+        "q": "What is an intent action for verifying a hardware attestation?",
+        "o": [
+            "ACTION_VERIFY_ATTESTATION",
+            "ACTION_HW_ATTEST",
+            "ACTION_ATTESTATION",
+            "ACTION_VERIFY_HARDWARE"
+        ]
+    },
+    {
+        "q": "Which advanced root detection checks for kernel eBPF programs?",
+        "o": [
+            "Check for eBPF hooking",
+            "Check su binary",
+            "Check build tags",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with key integrity check?",
+        "o": [
+            "Integrity verification",
+            "No integrity",
+            "Basic check",
+            "Software only"
+        ]
+    },
+    {
+        "q": "What is the Android security model for APEX modules?",
+        "o": [
+            "Signed and verified modules",
+            "Unsigned modules",
+            "System only",
+            "App only"
+        ]
+    },
+    {
+        "q": "Which permission allows a system app to access the health HAL?",
+        "o": [
+            "ACCESS_HEALTH_HAL",
+            "HEALTH_SERVICE",
+            "BATTERY_HAL",
+            "SYSTEM_HEALTH"
+        ]
+    },
+    {
+        "q": "What is an intent action for managing the trusted UI session?",
+        "o": [
+            "ACTION_TRUSTED_UI",
+            "ACTION_SECURE_SESSION",
+            "ACTION_UI_SESSION",
+            "ACTION_TRUSTED_DISPLAY"
+        ]
+    },
+    {
+        "q": "What does checking for /sys/firmware/devicetree/base/firmware/android/ compatible indicate?",
+        "o": [
+            "Device tree Android info",
+            "Root binary",
+            "System app",
+            "User data"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with key purpose list?",
+        "o": [
+            "Complete purpose list",
+            "No purpose info",
+            "Only main purpose",
+            "Only algorithm"
+        ]
+    },
+    {
+        "q": "What is the Android permission for accessing the secure storage HAL?",
+        "o": [
+            "ACCESS_STORAGE_HAL",
+            "SECURE_STORAGE_HAL",
+            "STORAGE_SECURE",
+            "HAL_STORAGE"
+        ]
+    },
+    {
+        "q": "Which permission allows an app to read the keymaster logs?",
+        "o": [
+            "READ_KEYMASTER_LOGS",
+            "KEYMASTER_DEBUG",
+            "KEYSTORE_LOGS",
+            "HARDWARE_LOGS"
+        ]
+    },
+    {
+        "q": "What is an intent action for triggering a secure element reset?",
+        "o": [
+            "ACTION_SE_RESET",
+            "ACTION_ELEMENT_RESET",
+            "ACTION_SECURE_RESET",
+            "ACTION_NFC_RESET"
+        ]
+    },
+    {
+        "q": "Which root detection method checks for hypervisor presence?",
+        "o": [
+            "Check for KVM or hypervisor",
+            "Check su binary",
+            "Check build props",
+            "Check file system"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key generation with key derivation function?",
+        "o": [
+            "KDF algorithm specified",
+            "No KDF",
+            "Default KDF",
+            "Software KDF"
+        ]
+    },
+    {
+        "q": "What is the Android security architecture for remote key provisioning?",
+        "o": [
+            "Remote key attestation",
+            "Local only",
+            "Cloud only",
+            "No provisioning"
+        ]
+    },
+    {
+        "q": "Which permission allows a system app to access the biometric HAL?",
+        "o": [
+            "ACCESS_BIOMETRIC_HAL",
+            "BIOMETRIC_SERVICE",
+            "FINGERPRINT_HAL",
+            "FACE_HAL"
+        ]
+    },
+    {
+        "q": "What is an intent action for verifying the boot state?",
+        "o": [
+            "ACTION_VERIFY_BOOT",
+            "ACTION_BOOT_STATE",
+            "ACTION_CHECK_BOOT",
+            "ACTION_BOOT_VERIFY"
+        ]
+    },
+    {
+        "q": "What does checking for /sys/kernel/security/ima/status indicate?",
+        "o": [
+            "IMA integrity status",
+            "Root binary",
+            "System app",
+            "User data"
+        ]
+    },
+    {
+        "q": "What is Android Keystore key attestation with key algorithm details?",
+        "o": [
+            "Full algorithm parameters",
+            "No algorithm info",
+            "Only algorithm name",
+            "Only key size"
+        ]
+    }
+]

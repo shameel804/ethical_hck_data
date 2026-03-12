@@ -1,0 +1,4286 @@
+[
+    {
+        "q": "What AWS service is used to manage user identities and permissions?",
+        "o": [
+            "IAM",
+            "S3",
+            "EC2",
+            "Route 53"
+        ]
+    },
+    {
+        "q": "Which IAM component is used to define a set of permissions?",
+        "o": [
+            "Policy",
+            "User",
+            "Group",
+            "Role"
+        ]
+    },
+    {
+        "q": "What is the root user in AWS?",
+        "o": [
+            "Account creator with full access",
+            "A user with read-only access",
+            "A user in the IAM group",
+            "A service account for EC2"
+        ]
+    },
+    {
+        "q": "Which IAM feature provides temporary security credentials?",
+        "o": [
+            "Roles",
+            "Users",
+            "Groups",
+            "Policies"
+        ]
+    },
+    {
+        "q": "What is a recommended best practice for the root user?",
+        "o": [
+            "Enable MFA",
+            "Use it daily",
+            "Share credentials",
+            "Disable logging"
+        ]
+    },
+    {
+        "q": "Which AWS service is used to monitor IAM sign-in events?",
+        "o": [
+            "CloudTrail",
+            "CloudWatch",
+            "Config",
+            "Trusted Advisor"
+        ]
+    },
+    {
+        "q": "What does MFA stand for in IAM security?",
+        "o": [
+            "Multi-Factor Authentication",
+            "Multi-Function Access",
+            "Main Frame Access",
+            "Managed File Authorization"
+        ]
+    },
+    {
+        "q": "Which IAM entity is best for delegating access to AWS services?",
+        "o": [
+            "Role",
+            "User",
+            "Group",
+            "Policy"
+        ]
+    },
+    {
+        "q": "What is the purpose of an IAM policy document?",
+        "o": [
+            "Define permissions",
+            "Create users",
+            "Set passwords",
+            "Configure regions"
+        ]
+    },
+    {
+        "q": "Which IAM policy element specifies the actions allowed or denied?",
+        "o": [
+            "Action",
+            "Resource",
+            "Effect",
+            "Principal"
+        ]
+    },
+    {
+        "q": "What is the default status of all IAM permissions for a new user?",
+        "o": [
+            "Implicitly denied",
+            "Explicitly allowed",
+            "Partially granted",
+            "Fully granted"
+        ]
+    },
+    {
+        "q": "Which IAM feature helps generate and rotate encryption keys?",
+        "o": [
+            "AWS KMS",
+            "AWS Shield",
+            "AWS WAF",
+            "AWS Config"
+        ]
+    },
+    {
+        "q": "What is a common use case for IAM instance profiles?",
+        "o": [
+            "Grant permissions to EC2",
+            "Manage S3 buckets",
+            "Create VPCs",
+            "Monitor networks"
+        ]
+    },
+    {
+        "q": "Which IAM policy type can be attached to multiple users?",
+        "o": [
+            "Group policy",
+            "Inline policy",
+            "Resource policy",
+            "Session policy"
+        ]
+    },
+    {
+        "q": "What is the purpose of IAM password policies?",
+        "o": [
+            "Enforce complexity rules",
+            "Create new users",
+            "Manage groups",
+            "Assign roles"
+        ]
+    },
+    {
+        "q": "Which AWS service provides a credential report for IAM users?",
+        "o": [
+            "IAM",
+            "CloudTrail",
+            "S3",
+            "RDS"
+        ]
+    },
+    {
+        "q": "What does the IAM condition element 'aws:SourceIp' check?",
+        "o": [
+            "IP address of requester",
+            "User name",
+            "Account ID",
+            "Region name"
+        ]
+    },
+    {
+        "q": "Which IAM feature allows cross-account access?",
+        "o": [
+            "Roles",
+            "Users",
+            "Groups",
+            "Policies"
+        ]
+    },
+    {
+        "q": "What is a key benefit of using IAM roles?",
+        "o": [
+            "No long-term credentials",
+            "Lower cost",
+            "Faster network",
+            "More storage"
+        ]
+    },
+    {
+        "q": "Which IAM policy type is embedded directly into a user or group?",
+        "o": [
+            "Inline policy",
+            "Managed policy",
+            "Custom policy",
+            "Default policy"
+        ]
+    },
+    {
+        "q": "What does S3 stand for in AWS?",
+        "o": [
+            "Simple Storage Service",
+            "Secure Storage System",
+            "Server Side Security",
+            "Standard Server Service"
+        ]
+    },
+    {
+        "q": "Which S3 setting blocks public access by default?",
+        "o": [
+            "Block Public Access",
+            "Versioning",
+            "Lifecycle rules",
+            "Cross-region replication"
+        ]
+    },
+    {
+        "q": "What is the purpose of S3 bucket policies?",
+        "o": [
+            "Control access to bucket",
+            "Manage EC2 instances",
+            "Configure VPCs",
+            "Monitor CloudTrail"
+        ]
+    },
+    {
+        "q": "Which S3 feature encrypts data at rest automatically?",
+        "o": [
+            "SSE-S3",
+            "MFA Delete",
+            "Versioning",
+            "Transfer Acceleration"
+        ]
+    },
+    {
+        "q": "What does S3 SSE-KMS use for encryption key management?",
+        "o": [
+            "AWS KMS",
+            "IAM",
+            "CloudHSM",
+            "Secrets Manager"
+        ]
+    },
+    {
+        "q": "Which S3 security feature prevents accidental deletions?",
+        "o": [
+            "Versioning",
+            "Logging",
+            "Replication",
+            "Tagging"
+        ]
+    },
+    {
+        "q": "What is the function of S3 access logs?",
+        "o": [
+            "Record requests to bucket",
+            "Encrypt objects",
+            "Manage versions",
+            "Set lifecycles"
+        ]
+    },
+    {
+        "q": "Which S3 encryption option uses client-side keys?",
+        "o": [
+            "Client-Side Encryption",
+            "SSE-S3",
+            "SSE-KMS",
+            "SSE-C"
+        ]
+    },
+    {
+        "q": "What does MFA Delete protect against in S3?",
+        "o": [
+            "Unauthorized deletions",
+            "Public access",
+            "Data leaks",
+            "Cost overruns"
+        ]
+    },
+    {
+        "q": "Which S3 feature helps meet compliance requirements for data retention?",
+        "o": [
+            "Object Lock",
+            "Transfer Acceleration",
+            "Static hosting",
+            "Event notifications"
+        ]
+    },
+    {
+        "q": "What is the default encryption for new S3 buckets?",
+        "o": [
+            "SSE-S3",
+            "No encryption",
+            "SSE-KMS",
+            "SSE-C"
+        ]
+    },
+    {
+        "q": "Which S3 policy element specifies who can access the bucket?",
+        "o": [
+            "Principal",
+            "Action",
+            "Resource",
+            "Condition"
+        ]
+    },
+    {
+        "q": "What does S3 Block Public Access prevent?",
+        "o": [
+            "All public access",
+            "Only writes",
+            "Only reads",
+            "Only deletes"
+        ]
+    },
+    {
+        "q": "Which S3 encryption option requires managing keys yourself?",
+        "o": [
+            "SSE-C",
+            "SSE-S3",
+            "SSE-KMS",
+            "KMS + S3"
+        ]
+    },
+    {
+        "q": "What is the purpose of S3 bucket ACLs?",
+        "o": [
+            "Legacy access control",
+            "Data encryption",
+            "Performance tuning",
+            "Cost management"
+        ]
+    },
+    {
+        "q": "Which AWS service provides a private network in the cloud?",
+        "o": [
+            "VPC",
+            "S3",
+            "IAM",
+            "CloudFront"
+        ]
+    },
+    {
+        "q": "What is a subnet in VPC?",
+        "o": [
+            "A range of IP addresses",
+            "A security group",
+            "A route table",
+            "An internet gateway"
+        ]
+    },
+    {
+        "q": "Which VPC component allows inbound internet access?",
+        "o": [
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPN Gateway",
+            "Virtual Gateway"
+        ]
+    },
+    {
+        "q": "What is the purpose of a route table in VPC?",
+        "o": [
+            "Control traffic routing",
+            "Block malicious IPs",
+            "Encrypt data",
+            "Monitor logs"
+        ]
+    },
+    {
+        "q": "Which VPC component enables outbound internet for private subnets?",
+        "o": [
+            "NAT Gateway",
+            "Internet Gateway",
+            "VPC Peering",
+            "Direct Connect"
+        ]
+    },
+    {
+        "q": "What is a Security Group in AWS?",
+        "o": [
+            "Virtual firewall for instances",
+            "Network access list",
+            "Load balancer",
+            "DNS resolver"
+        ]
+    },
+    {
+        "q": "Which is true about Security Groups?",
+        "o": [
+            "Stateful filtering",
+            "Stateless filtering",
+            "Rule order matters",
+            "Deny rules supported"
+        ]
+    },
+    {
+        "q": "What is a Network ACL in VPC?",
+        "o": [
+            "Stateless firewall for subnets",
+            "Stateful instance firewall",
+            "DNS firewall",
+            "WAF rule"
+        ]
+    },
+    {
+        "q": "Which VPC feature connects two VPCs privately?",
+        "o": [
+            "VPC Peering",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPN Connection"
+        ]
+    },
+    {
+        "q": "What is the default VPC behavior for outbound traffic?",
+        "o": [
+            "Allowed",
+            "Denied",
+            "Logged only",
+            "Encrypted only"
+        ]
+    },
+    {
+        "q": "Which VPC component provides a private connection to on-premises?",
+        "o": [
+            "VPN Gateway",
+            "Internet Gateway",
+            "NAT Gateway",
+            "Egress Gateway"
+        ]
+    },
+    {
+        "q": "What does a VPC endpoint enable?",
+        "o": [
+            "Private access to AWS services",
+            "Public internet access",
+            "Cross-region peering",
+            "Global acceleration"
+        ]
+    },
+    {
+        "q": "Which is a type of VPC endpoint?",
+        "o": [
+            "Gateway Endpoint",
+            "Internet Endpoint",
+            "Route Endpoint",
+            "Subnet Endpoint"
+        ]
+    },
+    {
+        "q": "What is the maximum IP range for a VPC CIDR block?",
+        "o": [
+            "/16 to /28",
+            "/8 to /16",
+            "/0 to /32",
+            "/24 to /30"
+        ]
+    },
+    {
+        "q": "Which AWS service records API activity in your account?",
+        "o": [
+            "CloudTrail",
+            "CloudWatch",
+            "Config",
+            "Trusted Advisor"
+        ]
+    },
+    {
+        "q": "What is the default retention period for CloudTrail events?",
+        "o": [
+            "90 days",
+            "30 days",
+            "1 year",
+            "Permanent"
+        ]
+    },
+    {
+        "q": "Which type of events are logged by default in CloudTrail?",
+        "o": [
+            "Management events",
+            "Data events",
+            "Insight events",
+            "Network events"
+        ]
+    },
+    {
+        "q": "Where can CloudTrail logs be stored for long-term retention?",
+        "o": [
+            "S3 bucket",
+            "EBS volume",
+            "EFS file system",
+            "RDS database"
+        ]
+    },
+    {
+        "q": "What is a CloudTrail trail?",
+        "o": [
+            "Configuration for log delivery",
+            "A security group rule",
+            "A VPC subnet",
+            "An IAM policy"
+        ]
+    },
+    {
+        "q": "Which CloudTrail feature detects unusual activity?",
+        "o": [
+            "CloudTrail Insights",
+            "CloudTrail Logs",
+            "CloudTrail Events",
+            "CloudTrail Trails"
+        ]
+    },
+    {
+        "q": "What is logged in CloudTrail data events?",
+        "o": [
+            "S3 object-level activity",
+            "VPC creation",
+            "IAM user creation",
+            "EC2 start"
+        ]
+    },
+    {
+        "q": "Which AWS service integrates with CloudTrail for monitoring?",
+        "o": [
+            "CloudWatch Logs",
+            "Route 53",
+            "SNS",
+            "SQS"
+        ]
+    },
+    {
+        "q": "What does CloudTrail file integrity validation ensure?",
+        "o": [
+            "Logs are not tampered",
+            "Logs are encrypted",
+            "Logs are compressed",
+            "Logs are public"
+        ]
+    },
+    {
+        "q": "Which API is called when creating a new IAM user?",
+        "o": [
+            "CreateUser",
+            "AddUser",
+            "NewUser",
+            "MakeUser"
+        ]
+    },
+    {
+        "q": "What is a security group rule primarily based on?",
+        "o": [
+            "Protocol and port",
+            "User identity",
+            "Time of day",
+            "Region"
+        ]
+    },
+    {
+        "q": "Which is true about Network ACL rules?",
+        "o": [
+            "Evaluated by rule number",
+            "Stateful operation",
+            "Only allow rules",
+            "No deny rules"
+        ]
+    },
+    {
+        "q": "What does a VPC flow log capture?",
+        "o": [
+            "IP traffic information",
+            "API calls",
+            "DNS queries",
+            "Login attempts"
+        ]
+    },
+    {
+        "q": "Which S3 encryption option is mandatory for compliance in some cases?",
+        "o": [
+            "SSE-KMS",
+            "SSE-S3",
+            "None",
+            "Client-side"
+        ]
+    },
+    {
+        "q": "What IAM feature helps analyze permissions granted?",
+        "o": [
+            "Access Advisor",
+            "Password policy",
+            "MFA",
+            "Groups"
+        ]
+    },
+    {
+        "q": "Which is a best practice for IAM users?",
+        "o": [
+            "Use groups for permissions",
+            "Share credentials",
+            "Use root daily",
+            "Disable MFA"
+        ]
+    },
+    {
+        "q": "What does an IAM policy's 'Effect' element specify?",
+        "o": [
+            "Allow or Deny",
+            "Resource ARN",
+            "Action name",
+            "Condition"
+        ]
+    },
+    {
+        "q": "Which AWS service provides a firewall for web applications?",
+        "o": [
+            "AWS WAF",
+            "AWS Shield",
+            "Security Groups",
+            "NACLs"
+        ]
+    },
+    {
+        "q": "What is the purpose of AWS Shield?",
+        "o": [
+            "DDoS protection",
+            "Data encryption",
+            "Access management",
+            "Log monitoring"
+        ]
+    },
+    {
+        "q": "Which S3 feature automatically transitions objects to cheaper storage?",
+        "o": [
+            "Lifecycle policies",
+            "Versioning",
+            "Replication",
+            "Tagging"
+        ]
+    },
+    {
+        "q": "What is a principal in IAM?",
+        "o": [
+            "Entity requesting access",
+            "Resource being accessed",
+            "Action performed",
+            "Condition checked"
+        ]
+    },
+    {
+        "q": "Which VPC component translates private IPs to public?",
+        "o": [
+            "NAT Gateway",
+            "Internet Gateway",
+            "VPN Gateway",
+            "Route Table"
+        ]
+    },
+    {
+        "q": "What does a security group default deny?",
+        "o": [
+            "All inbound traffic",
+            "All outbound traffic",
+            "HTTP traffic only",
+            "SSH traffic only"
+        ]
+    },
+    {
+        "q": "Which is a valid VPC peering connection type?",
+        "o": [
+            "Within same region",
+            "Across regions only",
+            "Internet-based",
+            "VPN-based"
+        ]
+    },
+    {
+        "q": "What is a CloudTrail log file's format?",
+        "o": [
+            "JSON",
+            "XML",
+            "CSV",
+            "YAML"
+        ]
+    },
+    {
+        "q": "Which IAM feature provides a secure way to switch roles?",
+        "o": [
+            "STS",
+            "KMS",
+            "CloudHSM",
+            "Secrets Manager"
+        ]
+    },
+    {
+        "q": "What does S3 server access logging record?",
+        "o": [
+            "Requests made to bucket",
+            "API calls to IAM",
+            "EC2 instance logs",
+            "VPC flow data"
+        ]
+    },
+    {
+        "q": "Which VPC component allows multiple VPCs to share resources?",
+        "o": [
+            "Transit Gateway",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPN Gateway"
+        ]
+    },
+    {
+        "q": "What is the purpose of a bastion host in VPC?",
+        "o": [
+            "Secure access to instances",
+            "Load balancing",
+            "DNS resolution",
+            "Data storage"
+        ]
+    },
+    {
+        "q": "Which Security Group rule is evaluated first?",
+        "o": [
+            "All rules are evaluated",
+            "Lowest number",
+            "Highest number",
+            "Allow before deny"
+        ]
+    },
+    {
+        "q": "What does a Network ACL allow by default?",
+        "o": [
+            "All inbound and outbound",
+            "No traffic",
+            "Only HTTP",
+            "Only HTTPS"
+        ]
+    },
+    {
+        "q": "Which CloudTrail feature is free by default?",
+        "o": [
+            "Management events trail",
+            "Data events trail",
+            "Insights events",
+            "S3 delivery"
+        ]
+    },
+    {
+        "q": "What is the format of a CloudTrail log record?",
+        "o": [
+            "JSON structure",
+            "Plain text",
+            "Binary format",
+            "HTML format"
+        ]
+    },
+    {
+        "q": "Which IAM condition key checks if MFA is used?",
+        "o": [
+            "aws:MultiFactorAuthPresent",
+            "aws:SourceIp",
+            "aws:UserAgent",
+            "aws:PrincipalType"
+        ]
+    },
+    {
+        "q": "What does S3 Object Lock prevent?",
+        "o": [
+            "Object deletion or overwrite",
+            "Public access",
+            "Encryption changes",
+            "Version creation"
+        ]
+    },
+    {
+        "q": "Which VPC component provides a DNS resolution?",
+        "o": [
+            "Amazon Route 53 Resolver",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPN Gateway"
+        ]
+    },
+    {
+        "q": "What is the default NACL rule number range?",
+        "o": [
+            "100 to 32766",
+            "1 to 100",
+            "500 to 1000",
+            "1000 to 5000"
+        ]
+    },
+    {
+        "q": "Which CloudTrail event type is charged extra?",
+        "o": [
+            "Data events",
+            "Management events",
+            "Global events",
+            "Read events"
+        ]
+    },
+    {
+        "q": "What is an IAM permissions boundary?",
+        "o": [
+            "Maximum permissions limit",
+            "Minimum permissions",
+            "Password policy",
+            "MFA setting"
+        ]
+    },
+    {
+        "q": "Which S3 encryption uses envelope encryption?",
+        "o": [
+            "SSE-KMS",
+            "SSE-S3",
+            "SSE-C",
+            "Client-side"
+        ]
+    },
+    {
+        "q": "What is a VPC endpoint policy used for?",
+        "o": [
+            "Control access to services",
+            "Route traffic",
+            "Encrypt data",
+            "Monitor logs"
+        ]
+    },
+    {
+        "q": "Which security group rule allows SSH access?",
+        "o": [
+            "TCP port 22",
+            "TCP port 80",
+            "TCP port 443",
+            "UDP port 53"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a failed API call?",
+        "o": [
+            "Error code and message",
+            "Nothing",
+            "Success message",
+            "Request body only"
+        ]
+    },
+    {
+        "q": "Which IAM entity has a trust policy?",
+        "o": [
+            "Role",
+            "User",
+            "Group",
+            "Policy"
+        ]
+    },
+    {
+        "q": "What is S3 default encryption?",
+        "o": [
+            "AES-256",
+            "RSA-2048",
+            "DES",
+            "Blowfish"
+        ]
+    },
+    {
+        "q": "Which VPC component allows IPv6 traffic?",
+        "o": [
+            "Egress-only Internet Gateway",
+            "NAT Gateway",
+            "VPN Gateway",
+            "Direct Connect"
+        ]
+    },
+    {
+        "q": "What is the purpose of a customer gateway in VPN?",
+        "o": [
+            "On-premises VPN endpoint",
+            "AWS VPN endpoint",
+            "VPC router",
+            "Internet gateway"
+        ]
+    },
+    {
+        "q": "Which NACL rule is evaluated first?",
+        "o": [
+            "Lowest rule number",
+            "Highest rule number",
+            "Most recent",
+            "Least recent"
+        ]
+    },
+    {
+        "q": "What does CloudTrail multi-region trail do?",
+        "o": [
+            "Logs all regions",
+            "Logs one region",
+            "Logs S3 only",
+            "Logs global services"
+        ]
+    },
+    {
+        "q": "Which IAM policy type is most flexible?",
+        "o": [
+            "Customer managed",
+            "AWS managed",
+            "Inline",
+            "Resource based"
+        ]
+    },
+    {
+        "q": "What is an S3 bucket's default ACL?",
+        "o": [
+            "Private",
+            "Public read",
+            "Public write",
+            "Authenticated read"
+        ]
+    },
+    {
+        "q": "Which VPC component enables hybrid cloud?",
+        "o": [
+            "VPN Connection",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPC Peering"
+        ]
+    },
+    {
+        "q": "What is a security group's default outbound rule?",
+        "o": [
+            "Allow all",
+            "Deny all",
+            "Allow HTTP",
+            "Allow HTTPS"
+        ]
+    },
+    {
+        "q": "What is the purpose of IAM roles for EC2 instances?",
+        "o": [
+            "Grant permissions to applications",
+            "Store SSH keys",
+            "Manage instance types",
+            "Control instance pricing"
+        ]
+    },
+    {
+        "q": "Which IAM feature helps identify unused permissions?",
+        "o": [
+            "Access Advisor",
+            "Credential report",
+            "Password policy",
+            "MFA devices"
+        ]
+    },
+    {
+        "q": "What does the IAM condition 'aws:RequestedRegion' check?",
+        "o": [
+            "AWS region of request",
+            "IP address",
+            "Time of day",
+            "User agent"
+        ]
+    },
+    {
+        "q": "Which is a valid S3 bucket policy effect?",
+        "o": [
+            "Allow",
+            "Grant",
+            "Permit",
+            "Authorize"
+        ]
+    },
+    {
+        "q": "What does S3 CORS configuration enable?",
+        "o": [
+            "Cross-origin requests",
+            "Cross-region replication",
+            "Cross-account access",
+            "Cross-service logging"
+        ]
+    },
+    {
+        "q": "Which S3 encryption option uses AWS managed keys?",
+        "o": [
+            "SSE-S3",
+            "SSE-KMS",
+            "SSE-C",
+            "Client-side"
+        ]
+    },
+    {
+        "q": "What is the purpose of S3 bucket versioning?",
+        "o": [
+            "Preserve object versions",
+            "Increase performance",
+            "Reduce costs",
+            "Enable encryption"
+        ]
+    },
+    {
+        "q": "Which VPC component provides high availability for NAT?",
+        "o": [
+            "NAT Gateway in multiple AZs",
+            "Single NAT instance",
+            "Internet Gateway",
+            "VPN Gateway"
+        ]
+    },
+    {
+        "q": "What is a VPC flow log's destination?",
+        "o": [
+            "CloudWatch or S3",
+            "Only CloudWatch",
+            "Only S3",
+            "Only Kinesis"
+        ]
+    },
+    {
+        "q": "Which security group setting allows traffic from another SG?",
+        "o": [
+            "Referencing SG as source",
+            "Using CIDR blocks",
+            "Opening all ports",
+            "Using prefix lists"
+        ]
+    },
+    {
+        "q": "What does a Network ACL deny by default?",
+        "o": [
+            "Nothing initially",
+            "All inbound",
+            "All outbound",
+            "Only HTTP"
+        ]
+    },
+    {
+        "q": "Which CloudTrail feature validates log file integrity?",
+        "o": [
+            "Digest files",
+            "Log encryption",
+            "Log compression",
+            "Log streaming"
+        ]
+    },
+    {
+        "q": "What is the IAM policy simulator used for?",
+        "o": [
+            "Test permissions",
+            "Create users",
+            "Generate reports",
+            "Reset passwords"
+        ]
+    },
+    {
+        "q": "Which S3 feature helps with GDPR compliance?",
+        "o": [
+            "Object Lock",
+            "Transfer Acceleration",
+            "Static hosting",
+            "Event notifications"
+        ]
+    },
+    {
+        "q": "What is a VPC subnet route table association?",
+        "o": [
+            "Links subnet to routes",
+            "Links VPC to internet",
+            "Links instances to subnets",
+            "Links regions"
+        ]
+    },
+    {
+        "q": "Which NACL rule type is evaluated first?",
+        "o": [
+            "Inbound rules",
+            "Outbound rules",
+            "Both simultaneously",
+            "Depends on traffic"
+        ]
+    },
+    {
+        "q": "What does CloudTrail event history show?",
+        "o": [
+            "Past 90 days of events",
+            "All events ever",
+            "Only errors",
+            "Only successes"
+        ]
+    },
+    {
+        "q": "Which IAM condition checks if request is from EC2?",
+        "o": [
+            "ec2:SourceInstanceARN",
+            "aws:SourceIp",
+            "aws:UserAgent",
+            "aws:PrincipalArn"
+        ]
+    },
+    {
+        "q": "What is S3 cross-region replication?",
+        "o": [
+            "Copy objects to another region",
+            "Share buckets across accounts",
+            "Sync with on-premises",
+            "Backup to Glacier"
+        ]
+    },
+    {
+        "q": "Which VPC endpoint type supports S3?",
+        "o": [
+            "Gateway endpoint",
+            "Interface endpoint",
+            "Private endpoint",
+            "Public endpoint"
+        ]
+    },
+    {
+        "q": "What is a security group's maximum rules limit?",
+        "o": [
+            "60 inbound and 60 outbound",
+            "100 total rules",
+            "50 total rules",
+            "Unlimited"
+        ]
+    },
+    {
+        "q": "Which CloudTrail delivery method is real-time?",
+        "o": [
+            "CloudWatch Logs",
+            "S3 bucket",
+            "Both near real-time",
+            "Neither"
+        ]
+    },
+    {
+        "q": "What does IAM Access Analyzer do?",
+        "o": [
+            "Identifies public access",
+            "Creates policies",
+            "Manages users",
+            "Rotates keys"
+        ]
+    },
+    {
+        "q": "Which S3 storage class is cheapest for archival?",
+        "o": [
+            "Glacier Deep Archive",
+            "Standard",
+            "Intelligent-Tiering",
+            "One Zone-IA"
+        ]
+    },
+    {
+        "q": "What is a VPC peering connection limitation?",
+        "o": [
+            "No transitive peering",
+            "Cross-region only",
+            "Same account only",
+            "IPv6 only"
+        ]
+    },
+    {
+        "q": "Which NACL is created by default in a VPC?",
+        "o": [
+            "Default NACL allowing all",
+            "Custom NACL denying all",
+            "No default NACL",
+            "Read-only NACL"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for global services like IAM?",
+        "o": [
+            "Global service events",
+            "Only in us-east-1",
+            "Only in current region",
+            "Nothing special"
+        ]
+    },
+    {
+        "q": "Which IAM policy element defines the resource ARN?",
+        "o": [
+            "Resource",
+            "Action",
+            "Effect",
+            "Principal"
+        ]
+    },
+    {
+        "q": "What is S3 Transfer Acceleration?",
+        "o": [
+            "Fast uploads via CloudFront",
+            "Cross-region copy",
+            "Multi-part uploads",
+            "Batch operations"
+        ]
+    },
+    {
+        "q": "Which VPC component enables private connectivity to on-premises?",
+        "o": [
+            "Direct Connect",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPC Peering"
+        ]
+    },
+    {
+        "q": "What is the difference between SG and NACL?",
+        "o": [
+            "SG is stateful, NACL stateless",
+            "Both are stateful",
+            "Both are stateless",
+            "NACL is stateful"
+        ]
+    },
+    {
+        "q": "Which CloudTrail feature is optional and incurs cost?",
+        "o": [
+            "Data events logging",
+            "Management events",
+            "Default trail",
+            "Event history"
+        ]
+    },
+    {
+        "q": "What does IAM's 'Force MFA' policy enforce?",
+        "o": [
+            "MFA before API access",
+            "MFA for console only",
+            "MFA for root only",
+            "MFA optional"
+        ]
+    },
+    {
+        "q": "Which S3 feature requires versioning to be enabled?",
+        "o": [
+            "Object Lock",
+            "Static website",
+            "CORS",
+            "Lifecycle rules"
+        ]
+    },
+    {
+        "q": "What is a VPC endpoint policy?",
+        "o": [
+            "Controls access via endpoint",
+            "Routes traffic",
+            "Manages subnets",
+            "Encrypts data"
+        ]
+    },
+    {
+        "q": "Which security group rule allows HTTPS?",
+        "o": [
+            "TCP port 443",
+            "TCP port 80",
+            "TCP port 22",
+            "UDP port 53"
+        ]
+    },
+    {
+        "q": "What does a NACL inbound rule specify?",
+        "o": [
+            "Source CIDR and port",
+            "Destination CIDR",
+            "Instance ID",
+            "User name"
+        ]
+    },
+    {
+        "q": "Which CloudTrail log field identifies the user?",
+        "o": [
+            "userIdentity",
+            "eventSource",
+            "eventName",
+            "awsRegion"
+        ]
+    },
+    {
+        "q": "What is an IAM service-linked role?",
+        "o": [
+            "Predefined role for AWS service",
+            "Custom user role",
+            "Temporary credentials",
+            "Federation role"
+        ]
+    },
+    {
+        "q": "Which S3 encryption option uses customer-provided keys?",
+        "o": [
+            "SSE-C",
+            "SSE-S3",
+            "SSE-KMS",
+            "KMS + S3"
+        ]
+    },
+    {
+        "q": "What is a VPC subnet's IP range determined by?",
+        "o": [
+            "CIDR block",
+            "Route table",
+            "Security group",
+            "NACL"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows ephemeral ports?",
+        "o": [
+            "Outbound high ports rule",
+            "Inbound low ports",
+            "Any rule",
+            "No rule needed"
+        ]
+    },
+    {
+        "q": "What does CloudTrail Insights analyze?",
+        "o": [
+            "Unusual API activity",
+            "Cost patterns",
+            "User behavior",
+            "Network traffic"
+        ]
+    },
+    {
+        "q": "Which IAM condition checks for specific time?",
+        "o": [
+            "aws:CurrentTime",
+            "aws:SourceIp",
+            "aws:UserAgent",
+            "aws:PrincipalArn"
+        ]
+    },
+    {
+        "q": "What is S3 same-region replication?",
+        "o": [
+            "Copy within same region",
+            "Cross-region copy",
+            "Multi-region sync",
+            "Global replication"
+        ]
+    },
+    {
+        "q": "Which VPC component allows multiple connections to on-premises?",
+        "o": [
+            "Transit Gateway",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPC Peering"
+        ]
+    },
+    {
+        "q": "What is a security group's source can be?",
+        "o": [
+            "CIDR or another SG",
+            "Only CIDR",
+            "Only another SG",
+            "Only IP"
+        ]
+    },
+    {
+        "q": "Which CloudTrail event type logs S3 object access?",
+        "o": [
+            "Data event",
+            "Management event",
+            "Insight event",
+            "Control event"
+        ]
+    },
+    {
+        "q": "What does IAM password policy enforce?",
+        "o": [
+            "Complexity and rotation",
+            "User creation",
+            "Group membership",
+            "Role assignment"
+        ]
+    },
+    {
+        "q": "Which S3 feature automatically tiers data?",
+        "o": [
+            "Intelligent-Tiering",
+            "Lifecycle policies",
+            "Versioning",
+            "Replication"
+        ]
+    },
+    {
+        "q": "What is a VPC endpoint for DynamoDB?",
+        "o": [
+            "Gateway endpoint",
+            "Interface endpoint",
+            "PrivateLink",
+            "VPN endpoint"
+        ]
+    },
+    {
+        "q": "Which NACL rule type is processed first?",
+        "o": [
+            "Number order low to high",
+            "Random order",
+            "Creation order",
+            "Alphabetical"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a console login?",
+        "o": [
+            "ConsoleLogin event",
+            "Signin event",
+            "Auth event",
+            "Access event"
+        ]
+    },
+    {
+        "q": "Which IAM policy type is attached directly to a resource?",
+        "o": [
+            "Resource-based policy",
+            "Identity-based policy",
+            "Permissions boundary",
+            "Session policy"
+        ]
+    },
+    {
+        "q": "What is S3 bucket key for SSE-KMS?",
+        "o": [
+            "Reduces KMS requests",
+            "Increases security",
+            "Enables versioning",
+            "Speeds uploads"
+        ]
+    },
+    {
+        "q": "Which VPC component enables IPv6 outbound only?",
+        "o": [
+            "Egress-only Internet Gateway",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPN Gateway"
+        ]
+    },
+    {
+        "q": "What is the default VPC security group rule?",
+        "o": [
+            "Allow intra-group traffic",
+            "Deny all inbound",
+            "Allow all outbound",
+            "Allow all inbound"
+        ]
+    },
+    {
+        "q": "Which CloudTrail feature helps with compliance audits?",
+        "o": [
+            "Log file integrity",
+            "Event history",
+            "Insights",
+            "Data events"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:MultiFactorAuthAge' check?",
+        "o": [
+            "Time since MFA authentication",
+            "MFA device type",
+            "MFA serial number",
+            "MFA status"
+        ]
+    },
+    {
+        "q": "Which S3 storage class is for infrequent access?",
+        "o": [
+            "Standard-IA",
+            "Glacier",
+            "Intelligent-Tiering",
+            "One Zone-IA"
+        ]
+    },
+    {
+        "q": "What is a VPC peering connection's MTU?",
+        "o": [
+            "1500 bytes",
+            "9001 bytes",
+            "4500 bytes",
+            "10000 bytes"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows SSH inbound?",
+        "o": [
+            "TCP port 22",
+            "TCP port 80",
+            "TCP port 443",
+            "UDP port 53"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a failed authorization?",
+        "o": [
+            "AccessDenied error",
+            "Nothing",
+            "Success message",
+            "Partial log"
+        ]
+    },
+    {
+        "q": "Which IAM condition key checks the VPC endpoint?",
+        "o": [
+            "aws:SourceVpce",
+            "aws:SourceIp",
+            "aws:VpcId",
+            "aws:SubnetId"
+        ]
+    },
+    {
+        "q": "What is S3 Object Ownership?",
+        "o": [
+            "Controls object ownership",
+            "Manages versions",
+            "Sets encryption",
+            "Configures CORS"
+        ]
+    },
+    {
+        "q": "Which VPC component enables private connectivity to SaaS?",
+        "o": [
+            "PrivateLink",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPN Gateway"
+        ]
+    },
+    {
+        "q": "What is a security group's default inbound behavior?",
+        "o": [
+            "Deny all",
+            "Allow all",
+            "Allow same group",
+            "Allow HTTP"
+        ]
+    },
+    {
+        "q": "Which CloudTrail log field contains API parameters?",
+        "o": [
+            "requestParameters",
+            "responseElements",
+            "eventType",
+            "sourceIPAddress"
+        ]
+    },
+    {
+        "q": "What does IAM Access Analyzer generate?",
+        "o": [
+            "Findings on public access",
+            "New policies",
+            "User reports",
+            "Key rotation"
+        ]
+    },
+    {
+        "q": "Which S3 feature requires MFA for deletion?",
+        "o": [
+            "MFA Delete",
+            "Versioning",
+            "Object Lock",
+            "Lifecycle"
+        ]
+    },
+    {
+        "q": "What is a VPC subnet's availability zone?",
+        "o": [
+            "Single AZ",
+            "Multiple AZs",
+            "Region-wide",
+            "Global"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows HTTP outbound?",
+        "o": [
+            "TCP port 80",
+            "TCP port 443",
+            "TCP port 22",
+            "UDP port 53"
+        ]
+    },
+    {
+        "q": "What does CloudTrail organization trail cover?",
+        "o": [
+            "All accounts in organization",
+            "Single account",
+            "Only master account",
+            "Only member accounts"
+        ]
+    },
+    {
+        "q": "Which IAM condition checks the VPC ID?",
+        "o": [
+            "ec2:Vpc",
+            "aws:SourceVpc",
+            "vpc:id",
+            "network:VpcId"
+        ]
+    },
+    {
+        "q": "What is S3 batch operations?",
+        "o": [
+            "Bulk actions on objects",
+            "Multi-part uploads",
+            "Cross-region copy",
+            "Lifecycle rules"
+        ]
+    },
+    {
+        "q": "Which VPC component enables hybrid DNS?",
+        "o": [
+            "Route 53 Resolver",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPN Gateway"
+        ]
+    },
+    {
+        "q": "What is a security group's rule can reference?",
+        "o": [
+            "Another security group",
+            "Only IP addresses",
+            "Only DNS names",
+            "Only instance IDs"
+        ]
+    },
+    {
+        "q": "Which CloudTrail event type is always free?",
+        "o": [
+            "Management events",
+            "Data events S3",
+            "Data events Lambda",
+            "Insights events"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:SecureTransport' check?",
+        "o": [
+            "HTTPS usage",
+            "MFA usage",
+            "IP address",
+            "Time of day"
+        ]
+    },
+    {
+        "q": "Which S3 encryption uses envelope encryption with KMS?",
+        "o": [
+            "SSE-KMS",
+            "SSE-S3",
+            "SSE-C",
+            "Client-side"
+        ]
+    },
+    {
+        "q": "What is a VPC endpoint's DNS name?",
+        "o": [
+            "Regional endpoint DNS",
+            "Global DNS",
+            "Local IP",
+            "Public hostname"
+        ]
+    },
+    {
+        "q": "Which NACL is stateless?",
+        "o": [
+            "All NACLs",
+            "Custom NACLs only",
+            "Default NACL only",
+            "No NACLs"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a resource creation?",
+        "o": [
+            "Create* API events",
+            "Only errors",
+            "Only reads",
+            "Only deletes"
+        ]
+    },
+    {
+        "q": "Which IAM policy type can be shared across accounts?",
+        "o": [
+            "Customer managed",
+            "AWS managed",
+            "Inline",
+            "Resource based"
+        ]
+    },
+    {
+        "q": "What is S3 requester pays?",
+        "o": [
+            "Requester pays costs",
+            "Bucket owner pays",
+            "AWS pays",
+            "Free feature"
+        ]
+    },
+    {
+        "q": "Which VPC component allows multicast?",
+        "o": [
+            "Not supported natively",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPC Peering"
+        ]
+    },
+    {
+        "q": "What is a security group's maximum description length?",
+        "o": [
+            "255 characters",
+            "128 characters",
+            "512 characters",
+            "1024 characters"
+        ]
+    },
+    {
+        "q": "Which CloudTrail feature helps detect API misuse?",
+        "o": [
+            "Insights",
+            "Event history",
+            "Log validation",
+            "Data events"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:PrincipalArn' check?",
+        "o": [
+            "ARN of caller",
+            "IP address",
+            "Time of day",
+            "Region"
+        ]
+    },
+    {
+        "q": "Which S3 feature provides at-rest encryption?",
+        "o": [
+            "All SSE options",
+            "Only SSE-S3",
+            "Only client-side",
+            "No encryption"
+        ]
+    },
+    {
+        "q": "What is a VPC flow log's format version?",
+        "o": [
+            "Version 2 to 5",
+            "Version 1 only",
+            "Version 10",
+            "No version"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows HTTPS inbound?",
+        "o": [
+            "TCP port 443",
+            "TCP port 80",
+            "TCP port 22",
+            "UDP port 53"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for an S3 GetObject?",
+        "o": [
+            "If data events enabled",
+            "Always",
+            "Never",
+            "Only errors"
+        ]
+    },
+    {
+        "q": "Which IAM condition checks for organization ID?",
+        "o": [
+            "aws:PrincipalOrgId",
+            "aws:SourceOrg",
+            "org:id",
+            "aws:OrgId"
+        ]
+    },
+    {
+        "q": "What is S3 serverless data lake?",
+        "o": [
+            "S3 as data lake storage",
+            "Athena on S3",
+            "Redshift spectrum",
+            "EMR on S3"
+        ]
+    },
+    {
+        "q": "What is the purpose of IAM permissions boundary?",
+        "o": [
+            "Limit maximum permissions",
+            "Grant minimum permissions",
+            "Enforce MFA usage",
+            "Rotate access keys"
+        ]
+    },
+    {
+        "q": "Which S3 encryption option supports customer-managed keys?",
+        "o": [
+            "SSE-KMS",
+            "SSE-S3",
+            "SSE-C",
+            "Client-side"
+        ]
+    },
+    {
+        "q": "How does VPC flow log capture traffic metadata?",
+        "o": [
+            "Eni, source, destination, port",
+            "Full packet contents",
+            "Only source IP",
+            "Only destination IP"
+        ]
+    },
+    {
+        "q": "What is the difference between SG and NACL rule evaluation?",
+        "o": [
+            "SG all rules evaluated, NACL ordered",
+            "Both ordered",
+            "Both all rules",
+            "NACL all rules"
+        ]
+    },
+    {
+        "q": "Which CloudTrail feature ensures log tamper-proofing?",
+        "o": [
+            "Log file validation",
+            "Server-side encryption",
+            "Compression",
+            "Streaming"
+        ]
+    },
+    {
+        "q": "What IAM condition checks if request is from AWS service?",
+        "o": [
+            "aws:ServicePrincipal",
+            "aws:SourceIp",
+            "aws:UserAgent",
+            "aws:PrincipalArn"
+        ]
+    },
+    {
+        "q": "Which S3 feature prevents object deletion for compliance?",
+        "o": [
+            "Object Lock in compliance mode",
+            "Versioning",
+            "Lifecycle rules",
+            "MFA Delete"
+        ]
+    },
+    {
+        "q": "What is a VPC gateway endpoint limitation?",
+        "o": [
+            "Only DynamoDB and S3",
+            "All AWS services",
+            "Only EC2",
+            "Only RDS"
+        ]
+    },
+    {
+        "q": "Which security group configuration allows load balancer traffic?",
+        "o": [
+            "Referencing LB security group",
+            "Opening all ports",
+            "Using CIDR 0.0.0.0/0",
+            "No special config"
+        ]
+    },
+    {
+        "q": "What does a NACL ephermeral port rule need?",
+        "o": [
+            "High port range 1024-65535",
+            "Port 80 only",
+            "Port 443 only",
+            "Specific ports only"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field identifies the resource operated on?",
+        "o": [
+            "resources",
+            "eventName",
+            "eventSource",
+            "userIdentity"
+        ]
+    },
+    {
+        "q": "What is IAM policy evaluation logic when deny exists?",
+        "o": [
+            "Deny overrides allow",
+            "Allow overrides deny",
+            "Explicit allow wins",
+            "Order matters"
+        ]
+    },
+    {
+        "q": "Which S3 storage class is for auto-tiering?",
+        "o": [
+            "Intelligent-Tiering",
+            "Standard",
+            "Glacier",
+            "One Zone-IA"
+        ]
+    },
+    {
+        "q": "What is VPC endpoint policy evaluation order?",
+        "o": [
+            "Combined with resource policy",
+            "Overrides resource policy",
+            "Ignored if resource policy exists",
+            "Only endpoint policy matters"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows RDS database traffic?",
+        "o": [
+            "TCP port 3306 or 5432",
+            "TCP port 80",
+            "TCP port 443",
+            "UDP port 53"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a cross-account access?",
+        "o": [
+            "Both accounts see events",
+            "Only source account",
+            "Only target account",
+            "No logging"
+        ]
+    },
+    {
+        "q": "Which IAM feature helps write least privilege policies?",
+        "o": [
+            "Access Analyzer policy generation",
+            "Credential report",
+            "Password policy",
+            "MFA"
+        ]
+    },
+    {
+        "q": "What is S3 bucket key benefit for SSE-KMS?",
+        "o": [
+            "Reduces KMS API calls",
+            "Stronger encryption",
+            "Faster uploads",
+            "Smaller objects"
+        ]
+    },
+    {
+        "q": "Which VPC component enables hybrid network extension?",
+        "o": [
+            "VPN Gateway with CGW",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPC Peering"
+        ]
+    },
+    {
+        "q": "What is a security group's stateful nature mean?",
+        "o": [
+            "Return traffic auto-allowed",
+            "Rules apply both ways",
+            "Rules are temporary",
+            "Rules expire"
+        ]
+    },
+    {
+        "q": "Which CloudTrail delivery is most real-time?",
+        "o": [
+            "CloudWatch Logs near real-time",
+            "S3 every 5 minutes",
+            "Both same speed",
+            "Neither"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:SourceVpc' condition check?",
+        "o": [
+            "VPC of requester",
+            "Subnet of requester",
+            "Account of requester",
+            "Region of requester"
+        ]
+    },
+    {
+        "q": "Which S3 feature requires bucket versioning?",
+        "o": [
+            "MFA Delete",
+            "Static website",
+            "CORS",
+            "Lifecycle transitions"
+        ]
+    },
+    {
+        "q": "What is VPC flow log's ACCEPT record meaning?",
+        "o": [
+            "Traffic allowed",
+            "Traffic rejected",
+            "Traffic skipped",
+            "Traffic logged"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows custom application port?",
+        "o": [
+            "TCP port range",
+            "UDP only",
+            "ICMP only",
+            "All protocols"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a service that doesn't integrate?",
+        "o": [
+            "Nothing, unsupported",
+            "Partial events",
+            "Errors only",
+            "All activities"
+        ]
+    },
+    {
+        "q": "Which IAM policy type is used for cross-account access?",
+        "o": [
+            "Resource-based policy",
+            "Identity-based policy",
+            "Permissions boundary",
+            "Service control policy"
+        ]
+    },
+    {
+        "q": "What is S3 replication time control?",
+        "o": [
+            "SLA for replication",
+            "Speed control",
+            "Time-based rules",
+            "Schedule replication"
+        ]
+    },
+    {
+        "q": "Which VPC endpoint type supports most AWS services?",
+        "o": [
+            "Interface endpoint",
+            "Gateway endpoint",
+            "Private endpoint",
+            "Public endpoint"
+        ]
+    },
+    {
+        "q": "What is a security group's rule can't reference?",
+        "o": [
+            "Security groups in other regions",
+            "CIDR blocks",
+            "Prefix lists",
+            "Other SGs"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field shows the API error code?",
+        "o": [
+            "errorCode",
+            "eventType",
+            "awsRegion",
+            "userAgent"
+        ]
+    },
+    {
+        "q": "What does IAM Access Analyzer findings identify?",
+        "o": [
+            "Publicly accessible resources",
+            "Unused IAM users",
+            "Old access keys",
+            "MFA not enabled"
+        ]
+    },
+    {
+        "q": "Which S3 encryption option provides most control?",
+        "o": [
+            "Client-side encryption",
+            "SSE-KMS",
+            "SSE-S3",
+            "SSE-C"
+        ]
+    },
+    {
+        "q": "What is VPC peering connection's transitive routing limitation?",
+        "o": [
+            "No routing through peer",
+            "Routing supported",
+            "Only same region",
+            "Only same account"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows ping (ICMP)?",
+        "o": [
+            "ICMP type 8",
+            "TCP port 7",
+            "UDP port 7",
+            "Any protocol"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a global service event?",
+        "o": [
+            "Logged as us-east-1",
+            "Logged in all regions",
+            "Logged once in each region",
+            "Not logged"
+        ]
+    },
+    {
+        "q": "Which IAM condition checks for specific service?",
+        "o": [
+            "aws:ServiceNamespace",
+            "aws:SourceService",
+            "service:name",
+            "aws:PrincipalService"
+        ]
+    },
+    {
+        "q": "What is S3 batch operations IAM role requirement?",
+        "o": [
+            "Permissions to access objects",
+            "Admin privileges",
+            "Root access",
+            "No role needed"
+        ]
+    },
+    {
+        "q": "Which VPC component provides DNS resolution for hybrid?",
+        "o": [
+            "Route 53 inbound endpoint",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPN Gateway"
+        ]
+    },
+    {
+        "q": "What is a security group's connection tracking?",
+        "o": [
+            "Tracks traffic flows",
+            "Logs connections",
+            "Blocks repeat connections",
+            "No tracking"
+        ]
+    },
+    {
+        "q": "Which CloudTrail feature aggregates across organization?",
+        "o": [
+            "Organization trail",
+            "Multi-region trail",
+            "Single region trail",
+            "Insights"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:RequestTag' condition check?",
+        "o": [
+            "Tags on request",
+            "Tags on resource",
+            "User tags",
+            "Account tags"
+        ]
+    },
+    {
+        "q": "Which S3 storage class has lowest availability?",
+        "o": [
+            "One Zone-IA",
+            "Standard",
+            "Glacier",
+            "Intelligent-Tiering"
+        ]
+    },
+    {
+        "q": "What is VPC endpoint's private DNS enabled?",
+        "o": [
+            "Use standard service DNS",
+            "Use custom DNS",
+            "No DNS needed",
+            "Public DNS only"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows FTP data transfer?",
+        "o": [
+            "TCP port 20-21",
+            "UDP port 20-21",
+            "TCP port 22",
+            "TCP port 80"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a console sign-in failure?",
+        "o": [
+            "Failed login event",
+            "Nothing",
+            "Partial success",
+            "Success event"
+        ]
+    },
+    {
+        "q": "Which IAM feature allows temporary credentials for federated users?",
+        "o": [
+            "STS AssumeRole",
+            "Access keys",
+            "Password",
+            "MFA"
+        ]
+    },
+    {
+        "q": "What is S3 object lambda?",
+        "o": [
+            "Transform data on retrieval",
+            "Encrypt objects",
+            "Compress objects",
+            "Index objects"
+        ]
+    },
+    {
+        "q": "Which VPC component enables BGP routing?",
+        "o": [
+            "VPN Gateway with dynamic routing",
+            "Internet Gateway",
+            "NAT Gateway",
+            "Route table"
+        ]
+    },
+    {
+        "q": "What is a security group's rule can be based on?",
+        "o": [
+            "Protocol, port, source",
+            "Only port",
+            "Only source IP",
+            "Only destination"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field shows the source IP address?",
+        "o": [
+            "sourceIPAddress",
+            "awsRegion",
+            "eventSource",
+            "userAgent"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:ResourceTag' condition check?",
+        "o": [
+            "Tags on resource",
+            "Tags on request",
+            "User tags",
+            "Account tags"
+        ]
+    },
+    {
+        "q": "Which S3 feature prevents accidental public access?",
+        "o": [
+            "Block Public Access",
+            "Bucket policies",
+            "ACLs",
+            "Versioning"
+        ]
+    },
+    {
+        "q": "What is VPC flow log's REJECT record meaning?",
+        "o": [
+            "Traffic blocked",
+            "Traffic allowed",
+            "Traffic timeout",
+            "Traffic error"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows database replication?",
+        "o": [
+            "Custom port range",
+            "Only standard ports",
+            "Ephemeral ports only",
+            "All ports"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a service-linked role action?",
+        "o": [
+            "Normal API logging",
+            "No logging",
+            "Special event type",
+            "Only errors"
+        ]
+    },
+    {
+        "q": "Which IAM policy evaluation results in access?",
+        "o": [
+            "Explicit allow and no deny",
+            "Any allow",
+            "No deny only",
+            "Default allow"
+        ]
+    },
+    {
+        "q": "What is S3 event notifications security?",
+        "o": [
+            "Uses SNS topic policy",
+            "Public by default",
+            "No security",
+            "IAM only"
+        ]
+    },
+    {
+        "q": "Which VPC endpoint type uses PrivateLink?",
+        "o": [
+            "Interface endpoint",
+            "Gateway endpoint",
+            "Both",
+            "Neither"
+        ]
+    },
+    {
+        "q": "What is a security group's rule can't do?",
+        "o": [
+            "Deny specific traffic",
+            "Allow specific traffic",
+            "Reference another SG",
+            "Use CIDR blocks"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field shows the user agent?",
+        "o": [
+            "userAgent",
+            "sourceIPAddress",
+            "eventType",
+            "awsRegion"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:ViaAWSService' condition indicate?",
+        "o": [
+            "Request from AWS service",
+            "Request from user",
+            "Request from console",
+            "Request from CLI"
+        ]
+    },
+    {
+        "q": "Which S3 storage class is for long-term archive?",
+        "o": [
+            "Glacier",
+            "Standard",
+            "Intelligent-Tiering",
+            "One Zone-IA"
+        ]
+    },
+    {
+        "q": "What is VPC peering connection's DNS resolution?",
+        "o": [
+            "Optional DNS support",
+            "Always enabled",
+            "Never supported",
+            "Only private DNS"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows NTP traffic?",
+        "o": [
+            "UDP port 123",
+            "TCP port 123",
+            "UDP port 53",
+            "TCP port 80"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a resource deletion?",
+        "o": [
+            "Delete* API events",
+            "Only creation",
+            "Only modification",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Which IAM feature helps monitor unusual sign-ins?",
+        "o": [
+            "CloudTrail Insights",
+            "Credential report",
+            "Access Advisor",
+            "Password policy"
+        ]
+    },
+    {
+        "q": "What is S3 bucket policy condition for secure transport?",
+        "o": [
+            "aws:SecureTransport",
+            "aws:SourceIp",
+            "s3:x-amz-server-side-encryption",
+            "s3:versionid"
+        ]
+    },
+    {
+        "q": "Which VPC component enables multiple VPCs to use common resources?",
+        "o": [
+            "Transit Gateway",
+            "VPC Peering",
+            "Internet Gateway",
+            "NAT Gateway"
+        ]
+    },
+    {
+        "q": "What is a security group's default VPC configuration?",
+        "o": [
+            "Allow all outbound",
+            "Deny all outbound",
+            "Allow all inbound",
+            "Deny all traffic"
+        ]
+    },
+    {
+        "q": "Which CloudTrail log field shows the event time?",
+        "o": [
+            "eventTime",
+            "timestamp",
+            "date",
+            "createdAt"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:PrincipalTag' condition check?",
+        "o": [
+            "Tags on user/role",
+            "Tags on resource",
+            "Tags on request",
+            "Tags on account"
+        ]
+    },
+    {
+        "q": "Which S3 encryption uses AES-256 with AWS keys?",
+        "o": [
+            "SSE-S3",
+            "SSE-KMS",
+            "SSE-C",
+            "Client-side"
+        ]
+    },
+    {
+        "q": "What is VPC endpoint policy maximum size?",
+        "o": [
+            "20,480 characters",
+            "10,240 characters",
+            "5,120 characters",
+            "Unlimited"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows SMTP traffic?",
+        "o": [
+            "TCP port 25",
+            "UDP port 25",
+            "TCP port 587",
+            "TCP port 465"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for an unauthorized API?",
+        "o": [
+            "AccessDenied error",
+            "Nothing logged",
+            "Success logged",
+            "Partial log"
+        ]
+    },
+    {
+        "q": "Which IAM policy type applies to all users in an account?",
+        "o": [
+            "Service control policy",
+            "IAM group policy",
+            "Resource policy",
+            "Permissions boundary"
+        ]
+    },
+    {
+        "q": "What is S3 object lock retention period?",
+        "o": [
+            "Fixed or indefinite",
+            "Maximum 1 year",
+            "Minimum 30 days",
+            "No limit"
+        ]
+    },
+    {
+        "q": "Which VPC component enables IPv6 internet access?",
+        "o": [
+            "Internet Gateway",
+            "Egress-only Gateway",
+            "NAT Gateway",
+            "VPN Gateway"
+        ]
+    },
+    {
+        "q": "What is a security group's connection tracking timeout?",
+        "o": [
+            "Varies by protocol",
+            "Fixed 5 minutes",
+            "Fixed 1 hour",
+            "No timeout"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field shows the event source service?",
+        "o": [
+            "eventSource",
+            "eventName",
+            "awsRegion",
+            "userIdentity"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:SourceAccount' condition check?",
+        "o": [
+            "Account ID of requester",
+            "Organization ID",
+            "Source IP",
+            "VPC ID"
+        ]
+    },
+    {
+        "q": "Which S3 storage class is for rarely accessed data?",
+        "o": [
+            "Glacier Flexible Retrieval",
+            "Standard",
+            "One Zone-IA",
+            "Intelligent-Tiering"
+        ]
+    },
+    {
+        "q": "What is VPC flow log's SKIPDATA record?",
+        "o": [
+            "Data not logged due to internal issue",
+            "Traffic allowed",
+            "Traffic rejected",
+            "No traffic"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows LDAP traffic?",
+        "o": [
+            "TCP port 389",
+            "UDP port 389",
+            "TCP port 636",
+            "TCP port 3268"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a KMS decryption?",
+        "o": [
+            "Decrypt event",
+            "Encrypt only",
+            "No logging",
+            "Key access only"
+        ]
+    },
+    {
+        "q": "Which IAM condition checks for specific user agent?",
+        "o": [
+            "aws:UserAgent",
+            "aws:SourceAgent",
+            "user-agent",
+            "clientAgent"
+        ]
+    },
+    {
+        "q": "What is S3 bucket policy size limit?",
+        "o": [
+            "20 KB",
+            "10 KB",
+            "5 KB",
+            "Unlimited"
+        ]
+    },
+    {
+        "q": "Which VPC endpoint type supports Route 53?",
+        "o": [
+            "Interface endpoint",
+            "Gateway endpoint",
+            "Not supported",
+            "Private endpoint"
+        ]
+    },
+    {
+        "q": "What is a security group's rule can reference prefix list?",
+        "o": [
+            "Yes, for CIDR management",
+            "No, never",
+            "Only in specific regions",
+            "Only for outbound"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field shows the request ID?",
+        "o": [
+            "requestID",
+            "eventID",
+            "traceID",
+            "referenceID"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:SourceVpce' condition check?",
+        "o": [
+            "VPC endpoint ID",
+            "VPC ID",
+            "Subnet ID",
+            "Account ID"
+        ]
+    },
+    {
+        "q": "Which S3 feature enables data replication across regions?",
+        "o": [
+            "Cross-region replication",
+            "Same-region replication",
+            "Batch operations",
+            "Lifecycle"
+        ]
+    },
+    {
+        "q": "What is VPC peering connection's region limitation?",
+        "o": [
+            "Same region only",
+            "Cross-region supported",
+            "Global supported",
+            "No limitation"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows SQL Server traffic?",
+        "o": [
+            "TCP port 1433",
+            "UDP port 1433",
+            "TCP port 3306",
+            "TCP port 5432"
+        ]
+    },
+    {
+        "q": "What is the purpose of IAM condition key 'aws:SourceOrgPaths'?",
+        "o": [
+            "Filter by organization path",
+            "Filter by source IP",
+            "Filter by VPC endpoint",
+            "Filter by resource tag"
+        ]
+    },
+    {
+        "q": "Which S3 feature provides automatic encryption for new objects?",
+        "o": [
+            "Default encryption",
+            "Bucket policies",
+            "Lifecycle rules",
+            "Versioning"
+        ]
+    },
+    {
+        "q": "How does VPC traffic mirroring differ from flow logs?",
+        "o": [
+            "Captures full packet content",
+            "Only metadata",
+            "Only accepts",
+            "Only rejects"
+        ]
+    },
+    {
+        "q": "What is the maximum number of security groups per ENI?",
+        "o": [
+            "5",
+            "10",
+            "15",
+            "20"
+        ]
+    },
+    {
+        "q": "Which CloudTrail feature enables cross-account log aggregation?",
+        "o": [
+            "Organization trail",
+            "Multi-region trail",
+            "Single trail",
+            "Insights"
+        ]
+    },
+    {
+        "q": "What IAM condition key checks for SAML federation?",
+        "o": [
+            "aws:PrincipalSaml",
+            "aws:FederatedProvider",
+            "saml:namequalifier",
+            "aws:SamlProvider"
+        ]
+    },
+    {
+        "q": "Which S3 encryption option supports key rotation automatically?",
+        "o": [
+            "SSE-KMS with automatic rotation",
+            "SSE-S3",
+            "SSE-C",
+            "Client-side"
+        ]
+    },
+    {
+        "q": "What is a VPC prefix list used for?",
+        "o": [
+            "CIDR block management",
+            "Route table creation",
+            "Subnet allocation",
+            "IP address assignment"
+        ]
+    },
+    {
+        "q": "Which security group configuration allows inter-instance communication?",
+        "o": [
+            "Self-referencing rule",
+            "CIDR 0.0.0.0/0",
+            "Specific IP rules",
+            "No special config"
+        ]
+    },
+    {
+        "q": "What does NACL rule number 32766 represent?",
+        "o": [
+            "Default deny rule",
+            "Default allow rule",
+            "Custom rule max",
+            "Ephemeral port rule"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field indicates if MFA was used?",
+        "o": [
+            "tlsDetails",
+            "userIdentity",
+            "eventType",
+            "awsRegion"
+        ]
+    },
+    {
+        "q": "What is IAM policy evaluation complexity with multiple boundaries?",
+        "o": [
+            "Intersection of all boundaries",
+            "Union of all boundaries",
+            "First boundary wins",
+            "Last boundary wins"
+        ]
+    },
+    {
+        "q": "Which S3 feature enables version-aware lifecycle policies?",
+        "o": [
+            "Noncurrent version transitions",
+            "Current version only",
+            "All versions same rule",
+            "No version support"
+        ]
+    },
+    {
+        "q": "What is VPC gateway endpoint route table requirement?",
+        "o": [
+            "Route to endpoint ID",
+            "Route to internet",
+            "Route to NAT",
+            "No route needed"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows custom protocol numbers?",
+        "o": [
+            "Protocol number in rules",
+            "Only TCP/UDP/ICMP",
+            "Only standard protocols",
+            "No protocol support"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a ConsoleLogin with MFA?",
+        "o": [
+            "Additional MFA context",
+            "Only login success",
+            "Only login failure",
+            "No MFA info"
+        ]
+    },
+    {
+        "q": "Which IAM condition key checks for AWS service principal?",
+        "o": [
+            "aws:ServicePrincipal",
+            "aws:PrincipalType",
+            "aws:PrincipalArn",
+            "aws:SourceIdentity"
+        ]
+    },
+    {
+        "q": "What is S3 bucket key for SSE-KMS cost benefit?",
+        "o": [
+            "99% reduction in KMS requests",
+            "50% reduction",
+            "10% reduction",
+            "No reduction"
+        ]
+    },
+    {
+        "q": "Which VPC component enables inter-region VPC communication?",
+        "o": [
+            "Inter-region VPC peering",
+            "Transit Gateway",
+            "VPN Gateway",
+            "Direct Connect"
+        ]
+    },
+    {
+        "q": "What is a security group's rule limit for VPC?",
+        "o": [
+            "50 inbound + 50 outbound",
+            "100 total",
+            "60 total",
+            "No limit"
+        ]
+    },
+    {
+        "q": "Which CloudTrail delivery guarantees log integrity?",
+        "o": [
+            "Digest file validation",
+            "S3 server-side encryption",
+            "CloudWatch Logs",
+            "Kinesis streaming"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:TokenIssueTime' condition check?",
+        "o": [
+            "Temporary credential age",
+            "Access key age",
+            "Password age",
+            "MFA age"
+        ]
+    },
+    {
+        "q": "Which S3 storage class has minimum 30-day storage charge?",
+        "o": [
+            "Standard-IA",
+            "Standard",
+            "One Zone-IA",
+            "Glacier"
+        ]
+    },
+    {
+        "q": "What is VPC endpoint policy evaluation with resource policy?",
+        "o": [
+            "Both must allow",
+            "Either can allow",
+            "Endpoint policy overrides",
+            "Resource policy overrides"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows Oracle database traffic?",
+        "o": [
+            "TCP port 1521",
+            "TCP port 3306",
+            "TCP port 5432",
+            "TCP port 1433"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a service that uses TLS mutual authentication?",
+        "o": [
+            "tlsDetails field",
+            "No additional info",
+            "Certificate details",
+            "Auth method only"
+        ]
+    },
+    {
+        "q": "Which IAM feature enables fine-grained access based on tags?",
+        "o": [
+            "Attribute-based access control",
+            "Role-based access",
+            "Policy-based access",
+            "User-based access"
+        ]
+    },
+    {
+        "q": "What is S3 replication metrics?",
+        "o": [
+            "Monitor replication progress",
+            "Storage metrics",
+            "Request metrics",
+            "Data transfer metrics"
+        ]
+    },
+    {
+        "q": "Which VPC component enables private API Gateway access?",
+        "o": [
+            "VPC endpoint for API Gateway",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPN Gateway"
+        ]
+    },
+    {
+        "q": "What is a security group's connection tracking for UDP?",
+        "o": [
+            "Short timeout",
+            "Same as TCP",
+            "No tracking",
+            "Long timeout"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field shows the edge device location?",
+        "o": [
+            "edgeDeviceDetails",
+            "awsRegion",
+            "sourceIPAddress",
+            "userAgent"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:PrincipalIsAWSService' condition check?",
+        "o": [
+            "If request from AWS service",
+            "If request from user",
+            "If request from role",
+            "If request from root"
+        ]
+    },
+    {
+        "q": "Which S3 feature provides VPC-only bucket access?",
+        "o": [
+            "VPC endpoint policy",
+            "Bucket policy with VPC condition",
+            "Block public access",
+            "Object lock"
+        ]
+    },
+    {
+        "q": "What is VPC flow log's max aggregation interval?",
+        "o": [
+            "10 minutes",
+            "1 minute",
+            "5 minutes",
+            "15 minutes"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows MySQL traffic?",
+        "o": [
+            "TCP port 3306",
+            "TCP port 5432",
+            "TCP port 1433",
+            "TCP port 1521"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a KMS key rotation?",
+        "o": [
+            "Key rotation event",
+            "No logging",
+            "Key creation only",
+            "Key deletion only"
+        ]
+    },
+    {
+        "q": "Which IAM condition key checks for AWS organization?",
+        "o": [
+            "aws:PrincipalOrgID",
+            "aws:OrganizationId",
+            "org:PrincipalId",
+            "aws:OrgPath"
+        ]
+    },
+    {
+        "q": "What is S3 object lock legal hold?",
+        "o": [
+            "Prevent deletion indefinitely",
+            "Temporary lock",
+            "Compliance lock",
+            "Governance lock"
+        ]
+    },
+    {
+        "q": "Which VPC component enables multi-account VPC sharing?",
+        "o": [
+            "Resource Access Manager",
+            "VPC Peering",
+            "Transit Gateway",
+            "VPN Connection"
+        ]
+    },
+    {
+        "q": "What is a security group's rule for NFS traffic?",
+        "o": [
+            "TCP port 2049",
+            "UDP port 2049",
+            "TCP port 111",
+            "TCP port 445"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field indicates the API version?",
+        "o": [
+            "apiVersion",
+            "eventVersion",
+            "awsApiVersion",
+            "serviceVersion"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:RequestedRegion' condition with multiple regions?",
+        "o": [
+            "Forbid-list or allow-list",
+            "Single region only",
+            "All regions",
+            "No regions"
+        ]
+    },
+    {
+        "q": "Which S3 storage class has 99.9% availability?",
+        "o": [
+            "One Zone-IA",
+            "Standard",
+            "Standard-IA",
+            "Glacier"
+        ]
+    },
+    {
+        "q": "What is VPC endpoint for EC2?",
+        "o": [
+            "Interface endpoint",
+            "Gateway endpoint",
+            "Private endpoint",
+            "Public endpoint"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows PostgreSQL traffic?",
+        "o": [
+            "TCP port 5432",
+            "TCP port 3306",
+            "TCP port 1521",
+            "TCP port 1433"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for an S3 lifecycle transition?",
+        "o": [
+            "Transition API events",
+            "No logging",
+            "Storage class change",
+            "Object access"
+        ]
+    },
+    {
+        "q": "Which IAM condition key checks for SAML name qualifier?",
+        "o": [
+            "saml:namequalifier",
+            "aws:SamlQualifier",
+            "saml:issuer",
+            "aws:FederatedProvider"
+        ]
+    },
+    {
+        "q": "What is S3 bucket policy for VPC endpoint condition?",
+        "o": [
+            "aws:SourceVpce",
+            "aws:SourceVpc",
+            "s3:endpoint",
+            "vpc:EndpointId"
+        ]
+    },
+    {
+        "q": "Which VPC component enables multicast in AWS?",
+        "o": [
+            "Not natively supported",
+            "Transit Gateway",
+            "VPC Peering",
+            "Direct Connect"
+        ]
+    },
+    {
+        "q": "What is a security group's rule for RDP traffic?",
+        "o": [
+            "TCP port 3389",
+            "TCP port 22",
+            "TCP port 5900",
+            "TCP port 5800"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field shows the shared event ID?",
+        "o": [
+            "eventID",
+            "requestID",
+            "traceID",
+            "referenceID"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:CalledVia' condition check?",
+        "o": [
+            "Intermediate service",
+            "Source IP",
+            "User agent",
+            "VPC endpoint"
+        ]
+    },
+    {
+        "q": "Which S3 feature supports object-level API logging?",
+        "o": [
+            "CloudTrail data events",
+            "S3 access logs",
+            "Both",
+            "Neither"
+        ]
+    },
+    {
+        "q": "What is VPC flow log's NODATA record?",
+        "o": [
+            "No traffic in window",
+            "Traffic allowed",
+            "Traffic rejected",
+            "Logging error"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows MongoDB traffic?",
+        "o": [
+            "TCP port 27017",
+            "TCP port 27018",
+            "TCP port 28017",
+            "TCP port 27019"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a failed KMS decryption?",
+        "o": [
+            "AccessDenied with context",
+            "No logging",
+            "Success logged",
+            "Partial log"
+        ]
+    },
+    {
+        "q": "Which IAM condition key checks for AWS region?",
+        "o": [
+            "aws:RequestedRegion",
+            "aws:SourceRegion",
+            "region:name",
+            "aws:Region"
+        ]
+    },
+    {
+        "q": "What is S3 intelligent-tiering auto-archive?",
+        "o": [
+            "Move to deep archive",
+            "Move to glacier",
+            "Move to standard",
+            "Move to IA"
+        ]
+    },
+    {
+        "q": "Which VPC component enables shared subnets across accounts?",
+        "o": [
+            "VPC sharing with RAM",
+            "VPC Peering",
+            "Transit Gateway",
+            "VPN Gateway"
+        ]
+    },
+    {
+        "q": "What is a security group's rule for Elasticsearch?",
+        "o": [
+            "TCP port 9200",
+            "TCP port 9300",
+            "TCP port 5601",
+            "TCP port 443"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field indicates if event was read-only?",
+        "o": [
+            "readOnly",
+            "eventType",
+            "accessType",
+            "operationType"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:SourceOrgID' condition verify?",
+        "o": [
+            "Organization ID",
+            "Account ID",
+            "OU ID",
+            "Root ID"
+        ]
+    },
+    {
+        "q": "Which S3 encryption option provides most audit capabilities?",
+        "o": [
+            "SSE-KMS with CloudTrail",
+            "SSE-S3",
+            "SSE-C",
+            "Client-side"
+        ]
+    },
+    {
+        "q": "What is VPC endpoint policy for S3 bucket restrictions?",
+        "o": [
+            "Can restrict specific buckets",
+            "Only global restrictions",
+            "No bucket restrictions",
+            "Only prefix restrictions"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows Redis traffic?",
+        "o": [
+            "TCP port 6379",
+            "TCP port 6380",
+            "TCP port 6378",
+            "TCP port 6479"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for an AWS Config rule evaluation?",
+        "o": [
+            "Config evaluation events",
+            "No logging",
+            "Resource changes only",
+            "Compliance only"
+        ]
+    },
+    {
+        "q": "Which IAM condition key checks for AWS service principal with specific name?",
+        "o": [
+            "aws:ServiceNamespace",
+            "aws:PrincipalService",
+            "service:name",
+            "aws:ServiceName"
+        ]
+    },
+    {
+        "q": "What is S3 batch operation's Lambda invocation?",
+        "o": [
+            "Custom object processing",
+            "Automatic encryption",
+            "Automatic compression",
+            "Automatic tiering"
+        ]
+    },
+    {
+        "q": "Which VPC component enables private connection to SaaS providers?",
+        "o": [
+            "PrivateLink",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPN Gateway"
+        ]
+    },
+    {
+        "q": "What is a security group's rule for Cassandra traffic?",
+        "o": [
+            "TCP port 9042",
+            "TCP port 9160",
+            "TCP port 7000",
+            "TCP port 7199"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field shows the recipient account ID?",
+        "o": [
+            "recipientAccountId",
+            "accountId",
+            "awsAccountId",
+            "targetAccountId"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:PrincipalArn' condition with wildcard?",
+        "o": [
+            "Pattern matching allowed",
+            "Exact match only",
+            "No wildcards",
+            "Prefix only"
+        ]
+    },
+    {
+        "q": "Which S3 storage class has no retrieval cost?",
+        "o": [
+            "Standard",
+            "Standard-IA",
+            "Glacier",
+            "Glacier Deep Archive"
+        ]
+    },
+    {
+        "q": "What is VPC flow log's version 5 enhancement?",
+        "o": [
+            "IPv6 support",
+            "UDP support",
+            "TCP flags",
+            "Packet size"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows Memcached traffic?",
+        "o": [
+            "TCP/UDP port 11211",
+            "TCP port 11212",
+            "UDP port 11212",
+            "TCP port 11214"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a cross-region API call?",
+        "o": [
+            "Logged in both regions",
+            "Logged in source region only",
+            "Logged in target region only",
+            "Logged in us-east-1"
+        ]
+    },
+    {
+        "q": "Which IAM condition key checks for SAML subject?",
+        "o": [
+            "saml:sub",
+            "saml:nameid",
+            "saml:subject",
+            "aws:SamlSubject"
+        ]
+    },
+    {
+        "q": "What is S3 bucket policy for enforcing encryption?",
+        "o": [
+            "Deny if x-amz-server-side-encryption missing",
+            "Allow all uploads",
+            "Require specific bucket",
+            "Require specific prefix"
+        ]
+    },
+    {
+        "q": "Which VPC component enables DNS resolution across peered VPCs?",
+        "o": [
+            "DNS resolution settings",
+            "Internet Gateway",
+            "NAT Gateway",
+            "Route 53"
+        ]
+    },
+    {
+        "q": "What is a security group's rule for RabbitMQ traffic?",
+        "o": [
+            "TCP port 5672",
+            "TCP port 15672",
+            "TCP port 25672",
+            "TCP port 4369"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field shows the user identity type?",
+        "o": [
+            "type in userIdentity",
+            "userType",
+            "identityType",
+            "principalType"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:SourceIdentity' condition verify?",
+        "o": [
+            "Original user identity",
+            "Role name",
+            "Account ID",
+            "Service name"
+        ]
+    },
+    {
+        "q": "Which S3 feature provides in-place object updates?",
+        "o": [
+            "No, objects immutable",
+            "Versioning",
+            "Object lock",
+            "Lifecycle rules"
+        ]
+    },
+    {
+        "q": "What is VPC endpoint for ECR API?",
+        "o": [
+            "Interface endpoint",
+            "Gateway endpoint",
+            "Private endpoint",
+            "Public endpoint"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows Couchbase traffic?",
+        "o": [
+            "TCP port 8091-8092",
+            "TCP port 11210",
+            "TCP port 8093",
+            "TCP port 8094"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for an STS AssumeRole?",
+        "o": [
+            "Full assume role event",
+            "No logging",
+            "Partial logging",
+            "Only errors"
+        ]
+    },
+    {
+        "q": "Which IAM condition key checks for VPC endpoint owner?",
+        "o": [
+            "aws:SourceVpceOwner",
+            "aws:VpceOwner",
+            "ec2:VpceOwner",
+            "vpc:EndpointOwner"
+        ]
+    },
+    {
+        "q": "What is S3 object lock governance mode?",
+        "o": [
+            "Special permissions can override",
+            "No override possible",
+            "Court order only",
+            "Admin override only"
+        ]
+    },
+    {
+        "q": "Which VPC component enables IPv6-only subnets?",
+        "o": [
+            "IPv6 CIDR assignment",
+            "Dual-stack only",
+            "IPv4 required",
+            "No IPv6 support"
+        ]
+    },
+    {
+        "q": "What is a security group's rule for Kafka traffic?",
+        "o": [
+            "TCP port 9092",
+            "TCP port 2181",
+            "TCP port 8083",
+            "TCP port 8082"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field indicates if event was from global service?",
+        "o": [
+            "globalService",
+            "isGlobal",
+            "globalEvent",
+            "serviceGlobal"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:PrincipalIsAWSService' with specific service?",
+        "o": [
+            "Can identify specific service",
+            "Only boolean",
+            "Only generic check",
+            "No service identification"
+        ]
+    },
+    {
+        "q": "Which S3 storage class has 90-day minimum storage?",
+        "o": [
+            "Glacier Deep Archive",
+            "Standard-IA",
+            "One Zone-IA",
+            "Intelligent-Tiering"
+        ]
+    },
+    {
+        "q": "What is the evaluation order when multiple IAM permission boundaries exist?",
+        "o": [
+            "Intersection of all boundaries",
+            "Union of all boundaries",
+            "First boundary applied",
+            "Last boundary applied"
+        ]
+    },
+    {
+        "q": "Which S3 encryption option supports key rotation without re-encryption?",
+        "o": [
+            "SSE-KMS with automatic rotation",
+            "SSE-S3",
+            "SSE-C",
+            "Client-side"
+        ]
+    },
+    {
+        "q": "How does VPC traffic mirroring handle encrypted traffic?",
+        "o": [
+            "Mirrors encrypted packets",
+            "Decrypts before mirroring",
+            "Cannot mirror encrypted",
+            "Only mirrors metadata"
+        ]
+    },
+    {
+        "q": "What is the maximum number of rules per NACL?",
+        "o": [
+            "20 inbound + 20 outbound",
+            "40 total",
+            "60 total",
+            "100 total"
+        ]
+    },
+    {
+        "q": "Which CloudTrail feature enables real-time alerting on specific API calls?",
+        "o": [
+            "CloudWatch Logs metric filters",
+            "S3 event notifications",
+            "Insights",
+            "Event history"
+        ]
+    },
+    {
+        "q": "What IAM condition key checks for SAML session duration?",
+        "o": [
+            "saml:sessionduration",
+            "aws:SessionDuration",
+            "saml:maxsession",
+            "aws:TokenValidity"
+        ]
+    },
+    {
+        "q": "Which S3 feature provides read-after-write consistency for overwrites?",
+        "o": [
+            "Strong consistency for all",
+            "Eventual consistency",
+            "No consistency guarantee",
+            "Only for new objects"
+        ]
+    },
+    {
+        "q": "What is a VPC prefix list's maximum entry limit?",
+        "o": [
+            "1000 CIDR entries",
+            "500 entries",
+            "2000 entries",
+            "Unlimited"
+        ]
+    },
+    {
+        "q": "Which security group configuration enables traffic between peered VPCs?",
+        "o": [
+            "Reference peer SG by ID",
+            "CIDR of peer VPC",
+            "Auto-allow peering",
+            "No special config"
+        ]
+    },
+    {
+        "q": "What does NACL rule number 32766's purpose?",
+        "o": [
+            "Default deny all traffic",
+            "Default allow all",
+            "Ephemeral port rule",
+            "Custom rule max"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field shows the AWS KMS key ARN used?",
+        "o": [
+            "kmsKeyArn",
+            "encryptionKey",
+            "keyId",
+            "awsKmsKey"
+        ]
+    },
+    {
+        "q": "What is IAM policy evaluation when both resource and identity policies exist?",
+        "o": [
+            "Union of permissions",
+            "Intersection",
+            "Identity policy wins",
+            "Resource policy wins"
+        ]
+    },
+    {
+        "q": "Which S3 feature enables automatic object tagging based on content?",
+        "o": [
+            "S3 Object Lambda",
+            "Lifecycle rules",
+            "Batch operations",
+            "Replication"
+        ]
+    },
+    {
+        "q": "What is VPC gateway endpoint route propagation behavior?",
+        "o": [
+            "Manual route table entry",
+            "Automatic propagation",
+            "BGP propagation",
+            "No routing needed"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows IPSec traffic?",
+        "o": [
+            "UDP ports 500 and 4500",
+            "TCP port 500",
+            "IP protocol 50 and 51",
+            "All of above"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a KMS key deletion scheduling?",
+        "o": [
+            "ScheduleKeyDeletion event",
+            "DeleteKey event",
+            "Key removal event",
+            "DisableKey event"
+        ]
+    },
+    {
+        "q": "Which IAM condition key checks for web identity federation?",
+        "o": [
+            "www.amazon.com:user_id",
+            "accounts.google.com:sub",
+            "graph.facebook.com:id",
+            "All provider-specific"
+        ]
+    },
+    {
+        "q": "What is S3 bucket key for SSE-KMS with cross-region replication?",
+        "o": [
+            "Reduces KMS calls in destination",
+            "Not supported",
+            "Increases security",
+            "Required for replication"
+        ]
+    },
+    {
+        "q": "Which VPC component enables multicast forwarding between VPCs?",
+        "o": [
+            "Not natively supported",
+            "Transit Gateway multicast",
+            "VPC Peering",
+            "Direct Connect"
+        ]
+    },
+    {
+        "q": "What is a security group's connection tracking for ICMP?",
+        "o": [
+            "Tracked like TCP",
+            "No tracking",
+            "Stateless handling",
+            "Only echo requests"
+        ]
+    },
+    {
+        "q": "Which CloudTrail delivery method ensures order preservation?",
+        "o": [
+            "S3 with sequence numbers",
+            "CloudWatch Logs",
+            "Kinesis",
+            "No ordering guarantee"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:CalledViaFirst' condition identify?",
+        "o": [
+            "First service in chain",
+            "Last service in chain",
+            "Intermediate service",
+            "Source IP"
+        ]
+    },
+    {
+        "q": "Which S3 storage class has 180-day minimum storage charge?",
+        "o": [
+            "Glacier Deep Archive",
+            "Glacier Flexible",
+            "Standard-IA",
+            "One Zone-IA"
+        ]
+    },
+    {
+        "q": "What is VPC endpoint policy evaluation with session policies?",
+        "o": [
+            "Intersection of all",
+            "Union of all",
+            "Endpoint policy wins",
+            "Session policy wins"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows HDFS traffic?",
+        "o": [
+            "TCP ports 8020, 50070",
+            "TCP port 9000",
+            "TCP port 8485",
+            "All of above"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a service that uses KMS via grants?",
+        "o": [
+            "Grant operations logged",
+            "No logging",
+            "Only key usage",
+            "Only grant creation"
+        ]
+    },
+    {
+        "q": "Which IAM condition key checks for SAML recipient?",
+        "o": [
+            "saml:recipient",
+            "saml:audience",
+            "saml:destination",
+            "saml:issuer"
+        ]
+    },
+    {
+        "q": "What is S3 replication time control SLA?",
+        "o": [
+            "99.99% within 15 minutes",
+            "99.9% within hour",
+            "95% within day",
+            "No SLA"
+        ]
+    },
+    {
+        "q": "Which VPC component enables hybrid DNS resolution with on-premises?",
+        "o": [
+            "Route 53 Resolver endpoints",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPN Gateway"
+        ]
+    },
+    {
+        "q": "What is a security group's rule for Cassandra inter-node communication?",
+        "o": [
+            "TCP ports 7000, 7001, 7199",
+            "TCP port 9042 only",
+            "TCP port 9160 only",
+            "UDP ports"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field shows the shared VPC owner?",
+        "o": [
+            "vpcEndpointId",
+            "vpcId",
+            "subnetId",
+            "networkInterfaceId"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:PrincipalOrgPaths' condition enable?",
+        "o": [
+            "OU-level restrictions",
+            "Account-level only",
+            "Root-level only",
+            "Region-level only"
+        ]
+    },
+    {
+        "q": "Which S3 feature provides object versioning with delete markers?",
+        "o": [
+            "Delete marker concept",
+            "Permanent deletion",
+            "Soft delete only",
+            "Hard delete only"
+        ]
+    },
+    {
+        "q": "What is VPC flow log's version 6 enhancement?",
+        "o": [
+            "Subnet ID field",
+            "VPC ID field",
+            "Instance ID field",
+            "Account ID field"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows Elasticsearch cluster communication?",
+        "o": [
+            "TCP ports 9300-9400",
+            "TCP port 9200 only",
+            "TCP port 5601 only",
+            "UDP ports"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a cross-account KMS decryption?",
+        "o": [
+            "Logged in both accounts",
+            "Only in key owner account",
+            "Only in caller account",
+            "No logging"
+        ]
+    },
+    {
+        "q": "Which IAM condition key checks for SAML authentication method?",
+        "o": [
+            "saml:authnContextClassRef",
+            "saml:authMethod",
+            "saml:authnContext",
+            "aws:AuthMethod"
+        ]
+    },
+    {
+        "q": "What is S3 object lock retention period maximum?",
+        "o": [
+            "100 years",
+            "Unlimited",
+            "10 years",
+            "50 years"
+        ]
+    },
+    {
+        "q": "Which VPC component enables transitive routing across multiple VPCs?",
+        "o": [
+            "Transit Gateway",
+            "VPC Peering",
+            "VPN Gateway",
+            "Direct Connect"
+        ]
+    },
+    {
+        "q": "What is a security group's rule for ZooKeeper ensemble?",
+        "o": [
+            "TCP ports 2888, 3888",
+            "TCP port 2181 only",
+            "TCP port 8080 only",
+            "UDP ports"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field indicates if event was from CLI or console?",
+        "o": [
+            "userAgent",
+            "eventSource",
+            "eventType",
+            "sourceIPAddress"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:TokenIssueTime' condition with AssumeRole?",
+        "o": [
+            "When temporary creds issued",
+            "When role assumed",
+            "When session starts",
+            "When MFA validated"
+        ]
+    },
+    {
+        "q": "Which S3 encryption option supports customer-managed keys with automatic rotation?",
+        "o": [
+            "SSE-KMS with imported key material",
+            "Not supported",
+            "SSE-C",
+            "Client-side"
+        ]
+    },
+    {
+        "q": "What is VPC endpoint for ECR Docker layer API?",
+        "o": [
+            "Interface endpoint",
+            "Gateway endpoint",
+            "Private endpoint",
+            "Public endpoint"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows etcd cluster traffic?",
+        "o": [
+            "TCP ports 2379-2380",
+            "TCP port 4001",
+            "TCP port 7001",
+            "UDP ports"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for an STS AssumeRole with SAML?",
+        "o": [
+            "SAML assertion details",
+            "No SAML info",
+            "Only role ARN",
+            "Only principal ARN"
+        ]
+    },
+    {
+        "q": "Which IAM condition key checks for VPC endpoint service name?",
+        "o": [
+            "aws:SourceVpceServiceName",
+            "aws:VpceService",
+            "ec2:VpceService",
+            "vpc:EndpointService"
+        ]
+    },
+    {
+        "q": "What is S3 batch operation's completion report?",
+        "o": [
+            "Detailed task results",
+            "Only success count",
+            "Only failure count",
+            "No report"
+        ]
+    },
+    {
+        "q": "Which VPC component enables IPv6-only subnets with outbound internet?",
+        "o": [
+            "Egress-only Internet Gateway",
+            "NAT Gateway",
+            "Internet Gateway",
+            "VPN Gateway"
+        ]
+    },
+    {
+        "q": "What is a security group's rule for Consul cluster?",
+        "o": [
+            "TCP ports 8300-8302, 8500, 8600",
+            "TCP port 8300 only",
+            "UDP ports 8301-8302",
+            "All of above"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field shows the resource type affected?",
+        "o": [
+            "resourceType",
+            "eventType",
+            "awsResource",
+            "serviceResource"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:PrincipalIsAWSService' with specific organization?",
+        "o": [
+            "Can't specify organization",
+            "Can specify via condition",
+            "Only boolean",
+            "Only service name"
+        ]
+    },
+    {
+        "q": "Which S3 storage class has no minimum storage duration?",
+        "o": [
+            "Standard",
+            "Standard-IA",
+            "One Zone-IA",
+            "Intelligent-Tiering"
+        ]
+    },
+    {
+        "q": "What is VPC flow log's version 4 enhancement?",
+        "o": [
+            "TCP flag sequence",
+            "IPv6 support",
+            "Packet size",
+            "Protocol number"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows Ceph cluster traffic?",
+        "o": [
+            "TCP ports 6789, 6800-7300",
+            "TCP port 6789 only",
+            "TCP port 7480 only",
+            "UDP ports"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a KMS key import?",
+        "o": [
+            "ImportKeyMaterial event",
+            "Key creation only",
+            "No logging",
+            "Key rotation only"
+        ]
+    },
+    {
+        "q": "Which IAM condition key checks for SAML session not on or after?",
+        "o": [
+            "saml:sessionnotonorafter",
+            "saml:expiration",
+            "aws:TokenExpiration",
+            "saml:maxage"
+        ]
+    },
+    {
+        "q": "What is S3 bucket policy for enforcing MFA during upload?",
+        "o": [
+            "aws:MultiFactorAuthPresent",
+            "s3:versionid",
+            "aws:SecureTransport",
+            "s3:x-amz-acl"
+        ]
+    },
+    {
+        "q": "Which VPC component enables private connectivity to Marketplace services?",
+        "o": [
+            "PrivateLink",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPN Gateway"
+        ]
+    },
+    {
+        "q": "What is a security group's rule for Spark cluster communication?",
+        "o": [
+            "TCP ports 7077, 8080, 8081",
+            "TCP port 4040 only",
+            "TCP port 18080 only",
+            "UDP ports"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field shows the identity provider used?",
+        "o": [
+            "identityProvider",
+            "samlProvider",
+            "userIdentity details",
+            "authProvider"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:CalledVia' with multiple services?",
+        "o": [
+            "All intermediate services",
+            "First only",
+            "Last only",
+            "Any in chain"
+        ]
+    },
+    {
+        "q": "Which S3 feature provides automatic data validation with checksums?",
+        "o": [
+            "MD5/SHA256 validation",
+            "CRC32 only",
+            "No validation",
+            "Client-side only"
+        ]
+    },
+    {
+        "q": "What is VPC endpoint for CloudFormation?",
+        "o": [
+            "Interface endpoint",
+            "Gateway endpoint",
+            "Private endpoint",
+            "Public endpoint"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows Hadoop YARN traffic?",
+        "o": [
+            "TCP ports 8030-8033, 8088, 8090",
+            "TCP port 8020 only",
+            "TCP port 50070 only",
+            "UDP ports"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a resource-based policy change?",
+        "o": [
+            "Put*Policy events",
+            "No logging",
+            "Resource creation only",
+            "API calls only"
+        ]
+    },
+    {
+        "q": "Which IAM condition key checks for OIDC federation?",
+        "o": [
+            "oidc:sub",
+            "oidc:aud",
+            "oidc:iss",
+            "All provider claims"
+        ]
+    },
+    {
+        "q": "What is S3 object lock compliance retention mode?",
+        "o": [
+            "No one can override",
+            "Root can override",
+            "AWS can override",
+            "Special users can"
+        ]
+    },
+    {
+        "q": "Which VPC component enables multicast for MSK clusters?",
+        "o": [
+            "Not required for MSK",
+            "Transit Gateway",
+            "VPC Peering",
+            "Direct Connect"
+        ]
+    },
+    {
+        "q": "What is a security group's rule for Kubernetes API server?",
+        "o": [
+            "TCP port 6443",
+            "TCP port 443",
+            "TCP port 8080",
+            "TCP port 10250"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field shows the error message for failed calls?",
+        "o": [
+            "errorMessage",
+            "errorCode",
+            "failureMessage",
+            "exceptionMessage"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:TokenIssueTime' with federated users?",
+        "o": [
+            "Federation token issue time",
+            "SAML assertion time",
+            "OIDC token time",
+            "Role assumption time"
+        ]
+    },
+    {
+        "q": "Which S3 storage class has retrieval fees but low storage cost?",
+        "o": [
+            "Standard-IA",
+            "Standard",
+            "Glacier",
+            "One Zone-IA"
+        ]
+    },
+    {
+        "q": "What is VPC flow log's version 3 enhancement?",
+        "o": [
+            "Packet size field",
+            "Protocol number",
+            "Source port",
+            "Destination port"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows MongoDB sharding traffic?",
+        "o": [
+            "TCP ports 27018, 27019",
+            "TCP port 27017 only",
+            "TCP port 28017 only",
+            "UDP ports"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a STS GetFederationToken?",
+        "o": [
+            "Full federation event",
+            "No logging",
+            "Partial event",
+            "Only errors"
+        ]
+    },
+    {
+        "q": "Which IAM condition key checks for SAML issuer?",
+        "o": [
+            "saml:issuer",
+            "saml:provider",
+            "saml:idp",
+            "aws:SamlIssuer"
+        ]
+    },
+    {
+        "q": "What is S3 bucket policy for enforcing specific KMS key?",
+        "o": [
+            "s3:x-amz-server-side-encryption-aws-kms-key-id",
+            "kms:keyid",
+            "aws:SourceKey",
+            "s3:encryptionkey"
+        ]
+    },
+    {
+        "q": "Which VPC component enables private DNS for interface endpoints?",
+        "o": [
+            "Private DNS option",
+            "Route 53",
+            "Internet Gateway",
+            "NAT Gateway"
+        ]
+    },
+    {
+        "q": "What is a security group's rule for RabbitMQ clustering?",
+        "o": [
+            "TCP ports 25672, 4369",
+            "TCP port 5672 only",
+            "TCP port 15672 only",
+            "UDP ports"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field shows the shared ENI ID?",
+        "o": [
+            "networkInterfaceId",
+            "eniId",
+            "interfaceId",
+            "resourceId"
+        ]
+    },
+    {
+        "q": "What does IAM's 'aws:PrincipalOrgID' with multiple OUs?",
+        "o": [
+            "Any OU in organization",
+            "Specific OU only",
+            "Root only",
+            "All OUs required"
+        ]
+    },
+    {
+        "q": "Which S3 feature provides serverless data processing?",
+        "o": [
+            "S3 Object Lambda",
+            "Batch operations",
+            "Replication",
+            "Lifecycle"
+        ]
+    },
+    {
+        "q": "What is VPC endpoint for Systems Manager?",
+        "o": [
+            "Interface endpoint",
+            "Gateway endpoint",
+            "Private endpoint",
+            "Public endpoint"
+        ]
+    },
+    {
+        "q": "Which NACL rule allows Redis Sentinel traffic?",
+        "o": [
+            "TCP port 26379",
+            "TCP port 6379",
+            "TCP port 26380",
+            "UDP port 26379"
+        ]
+    },
+    {
+        "q": "What does CloudTrail log for a KMS key policy change?",
+        "o": [
+            "PutKeyPolicy event",
+            "Key update event",
+            "Policy change event",
+            "ModifyKey event"
+        ]
+    },
+    {
+        "q": "Which IAM condition key checks for OIDC audience?",
+        "o": [
+            "oidc:aud",
+            "oidc:client",
+            "oidc:azp",
+            "oidc:audience"
+        ]
+    },
+    {
+        "q": "What is S3 object lock governance mode bypass?",
+        "o": [
+            "s3:BypassGovernanceRetention permission",
+            "Root access",
+            "AWS support",
+            "No bypass possible"
+        ]
+    },
+    {
+        "q": "Which VPC component enables hybrid cloud with Direct Connect?",
+        "o": [
+            "Virtual Private Gateway",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPC Peering"
+        ]
+    },
+    {
+        "q": "What is a security group's rule for Elastic Load Balancer health checks?",
+        "o": [
+            "Custom health check port",
+            "Port 80 only",
+            "Port 443 only",
+            "All ports"
+        ]
+    },
+    {
+        "q": "Which CloudTrail field shows the request parameters size?",
+        "o": [
+            "No size field",
+            "requestSize",
+            "parametersSize",
+            "eventSize"
+        ]
+    }
+]

@@ -1,0 +1,4142 @@
+[
+    {
+        "q": "What is the primary purpose of static analysis in mobile app security testing?",
+        "o": [
+            "Examining code without executing it",
+            "Testing the app while it runs",
+            "Analyzing network traffic",
+            "Decrypting encrypted files"
+        ]
+    },
+    {
+        "q": "Which tool is commonly used for static analysis of Android applications?",
+        "o": [
+            "APKTool",
+            "Wireshark",
+            "Burp Suite",
+            "Frida"
+        ]
+    },
+    {
+        "q": "What file extension do Android application packages use?",
+        "o": [
+            ".apk",
+            ".ipa",
+            ".exe",
+            ".dmg"
+        ]
+    },
+    {
+        "q": "What is the main goal of reverse engineering a mobile app?",
+        "o": [
+            "Understanding app internals from binaries",
+            "Improving app performance",
+            "Adding new features",
+            "Fixing user interface bugs"
+        ]
+    },
+    {
+        "q": "Which protocol is most commonly analyzed in mobile network traffic testing?",
+        "o": [
+            "HTTP/HTTPS",
+            "FTP",
+            "SMTP",
+            "DNS"
+        ]
+    },
+    {
+        "q": "What type of data is typically examined during storage analysis?",
+        "o": [
+            "Data saved on device memory",
+            "Network packets",
+            "CPU usage logs",
+            "Battery consumption"
+        ]
+    },
+    {
+        "q": "Which of these is a mobile operating system targeted for security testing?",
+        "o": [
+            "Android",
+            "Windows 10",
+            "Linux Ubuntu",
+            "macOS"
+        ]
+    },
+    {
+        "q": "What is the iOS application package format?",
+        "o": [
+            ".ipa",
+            ".apk",
+            ".xapk",
+            ".appx"
+        ]
+    },
+    {
+        "q": "Which tool is used for intercepting mobile app network traffic?",
+        "o": [
+            "Burp Suite",
+            "APKTool",
+            "dex2jar",
+            "JD-GUI"
+        ]
+    },
+    {
+        "q": "What does rooting an Android device enable for testers?",
+        "o": [
+            "Full file system access",
+            "Faster network speeds",
+            "Better battery life",
+            "Improved graphics"
+        ]
+    },
+    {
+        "q": "What is the purpose of jailbreaking an iOS device?",
+        "o": [
+            "Removing software restrictions",
+            "Installing official apps",
+            "Updating iOS version",
+            "Backing up data"
+        ]
+    },
+    {
+        "q": "Which file contains an Android app's permissions?",
+        "o": [
+            "AndroidManifest.xml",
+            "MainActivity.java",
+            "strings.xml",
+            "styles.xml"
+        ]
+    },
+    {
+        "q": "What is dynamic analysis focused on?",
+        "o": [
+            "Runtime behavior of applications",
+            "Source code structure",
+            "Binary file headers",
+            "Resource files layout"
+        ]
+    },
+    {
+        "q": "Which tool decrypts iOS app binaries for analysis?",
+        "o": [
+            "Clutch",
+            "APKTool",
+            "dex2jar",
+            "Androguard"
+        ]
+    },
+    {
+        "q": "What is the main risk of insecure data storage?",
+        "o": [
+            "Sensitive data exposure",
+            "Slow app performance",
+            "High battery drain",
+            "Large app size"
+        ]
+    },
+    {
+        "q": "Which component stores app data on Android devices?",
+        "o": [
+            "SharedPreferences",
+            "Intent",
+            "BroadcastReceiver",
+            "ContentProvider"
+        ]
+    },
+    {
+        "q": "What does SSL pinning protect against?",
+        "o": [
+            "Man-in-the-middle attacks",
+            "SQL injection",
+            "Buffer overflows",
+            "Cross-site scripting"
+        ]
+    },
+    {
+        "q": "Which tool decompiles Android DEX files to Java?",
+        "o": [
+            "dex2jar",
+            "Wireshark",
+            "Nmap",
+            "Metasploit"
+        ]
+    },
+    {
+        "q": "What is the iOS equivalent of Android's SharedPreferences?",
+        "o": [
+            "UserDefaults",
+            "NSDocument",
+            "KeyWindow",
+            "AppBundle"
+        ]
+    },
+    {
+        "q": "Which attack does improper certificate validation enable?",
+        "o": [
+            "Man-in-the-middle",
+            "Denial of service",
+            "Cross-site scripting",
+            "Buffer overflow"
+        ]
+    },
+    {
+        "q": "What is the purpose of code obfuscation?",
+        "o": [
+            "Making reverse engineering harder",
+            "Improving code performance",
+            "Reducing app size",
+            "Adding new features"
+        ]
+    },
+    {
+        "q": "Which tool analyzes Android APK structure?",
+        "o": [
+            "APKTool",
+            "Charles Proxy",
+            "Frida",
+            "Xposed"
+        ]
+    },
+    {
+        "q": "What does the Android Debug Bridge (ADB) do?",
+        "o": [
+            "Communicates with Android devices",
+            "Compiles Android apps",
+            "Designs app interfaces",
+            "Tests app performance"
+        ]
+    },
+    {
+        "q": "Which iOS directory stores app data securely?",
+        "o": [
+            "Documents",
+            "System",
+            "Library/Caches",
+            "tmp"
+        ]
+    },
+    {
+        "q": "What is the first step in mobile app security testing?",
+        "o": [
+            "Information gathering",
+            "Exploiting vulnerabilities",
+            "Writing reports",
+            "Patching issues"
+        ]
+    },
+    {
+        "q": "Which tool captures network traffic on mobile devices?",
+        "o": [
+            "tcpdump",
+            "APKTool",
+            "dex2jar",
+            "proguard"
+        ]
+    },
+    {
+        "q": "What does the Android Keystore system provide?",
+        "o": [
+            "Secure key storage",
+            "Network encryption",
+            "App signing",
+            "Code compilation"
+        ]
+    },
+    {
+        "q": "Which iOS framework handles secure data storage?",
+        "o": [
+            "Keychain",
+            "CoreData",
+            "UIKit",
+            "Foundation"
+        ]
+    },
+    {
+        "q": "What is the main purpose of runtime instrumentation?",
+        "o": [
+            "Modifying app behavior during execution",
+            "Analyzing source code",
+            "Compiling applications",
+            "Designing interfaces"
+        ]
+    },
+    {
+        "q": "Which tool is used for hooking methods at runtime?",
+        "o": [
+            "Frida",
+            "Wireshark",
+            "Nmap",
+            "SQLMap"
+        ]
+    },
+    {
+        "q": "What type of analysis examines app memory contents?",
+        "o": [
+            "Memory analysis",
+            "Static analysis",
+            "Network analysis",
+            "Code review"
+        ]
+    },
+    {
+        "q": "Which Android directory stores app databases?",
+        "o": [
+            "/data/data/<package>/databases",
+            "/system/app",
+            "/sdcard/Download",
+            "/cache"
+        ]
+    },
+    {
+        "q": "What is the purpose of certificate pinning?",
+        "o": [
+            "Preventing fake certificates",
+            "Speeding up connections",
+            "Reducing data usage",
+            "Compressing traffic"
+        ]
+    },
+    {
+        "q": "Which tool decompiles iOS binaries?",
+        "o": [
+            "Hopper",
+            "APKTool",
+            "dex2jar",
+            "Androguard"
+        ]
+    },
+    {
+        "q": "What does the iOS Data Protection API provide?",
+        "o": [
+            "File-level encryption",
+            "Network security",
+            "App sandboxing",
+            "Memory protection"
+        ]
+    },
+    {
+        "q": "Which attack uses fake Wi-Fi networks?",
+        "o": [
+            "Evil twin attack",
+            "SQL injection",
+            "Buffer overflow",
+            "Cross-site scripting"
+        ]
+    },
+    {
+        "q": "What is the purpose of app sandboxing?",
+        "o": [
+            "Isolating apps from each other",
+            "Improving app speed",
+            "Reducing memory use",
+            "Enhancing graphics"
+        ]
+    },
+    {
+        "q": "Which Android component receives system broadcasts?",
+        "o": [
+            "BroadcastReceiver",
+            "Activity",
+            "Service",
+            "ContentProvider"
+        ]
+    },
+    {
+        "q": "What does the iOS App Sandbox restrict?",
+        "o": [
+            "File system access",
+            "CPU usage",
+            "Memory allocation",
+            "Network speed"
+        ]
+    },
+    {
+        "q": "Which tool analyzes network protocols?",
+        "o": [
+            "Wireshark",
+            "APKTool",
+            "JD-GUI",
+            "ProGuard"
+        ]
+    },
+    {
+        "q": "What is stored in Android's SharedPreferences?",
+        "o": [
+            "Key-value pairs",
+            "Database tables",
+            "Binary files",
+            "Network logs"
+        ]
+    },
+    {
+        "q": "Which iOS file contains app configuration?",
+        "o": [
+            "Info.plist",
+            "config.json",
+            "settings.xml",
+            "app.config"
+        ]
+    },
+    {
+        "q": "What is the purpose of runtime protection mechanisms?",
+        "o": [
+            "Preventing code injection",
+            "Improving UI speed",
+            "Reducing app size",
+            "Adding animations"
+        ]
+    },
+    {
+        "q": "Which tool bypasses SSL pinning?",
+        "o": [
+            "SSL Kill Switch",
+            "Wireshark",
+            "Nmap",
+            "Metasploit"
+        ]
+    },
+    {
+        "q": "What does Android's internal storage provide?",
+        "o": [
+            "Private app data storage",
+            "Public file sharing",
+            "Network caching",
+            "Code execution"
+        ]
+    },
+    {
+        "q": "Which iOS directory is backed up by iTunes?",
+        "o": [
+            "Documents",
+            "Caches",
+            "tmp",
+            "System"
+        ]
+    },
+    {
+        "q": "What is the purpose of input validation?",
+        "o": [
+            "Preventing injection attacks",
+            "Speeding up input",
+            "Improving UI design",
+            "Reducing code size"
+        ]
+    },
+    {
+        "q": "Which tool modifies Android app behavior?",
+        "o": [
+            "Xposed Framework",
+            "Wireshark",
+            "Burp Suite",
+            "Nmap"
+        ]
+    },
+    {
+        "q": "What does iOS Keychain store?",
+        "o": [
+            "Sensitive user data",
+            "App binaries",
+            "Cache files",
+            "Log files"
+        ]
+    },
+    {
+        "q": "Which attack targets insecure data transmission?",
+        "o": [
+            "Packet sniffing",
+            "SQL injection",
+            "Cross-site scripting",
+            "Buffer overflow"
+        ]
+    },
+    {
+        "q": "What is the purpose of app signing?",
+        "o": [
+            "Verifying app authenticity",
+            "Compressing app size",
+            "Speeding up installation",
+            "Improving graphics"
+        ]
+    },
+    {
+        "q": "Which Android component runs in background?",
+        "o": [
+            "Service",
+            "Activity",
+            "Fragment",
+            "Layout"
+        ]
+    },
+    {
+        "q": "What does iOS Data Protection use for encryption?",
+        "o": [
+            "Hardware keys",
+            "Software passwords",
+            "Network tokens",
+            "User pins"
+        ]
+    },
+    {
+        "q": "Which tool performs dynamic analysis on iOS?",
+        "o": [
+            "Cycript",
+            "APKTool",
+            "dex2jar",
+            "Androguard"
+        ]
+    },
+    {
+        "q": "What is stored in Android external storage?",
+        "o": [
+            "Publicly accessible files",
+            "Private app data",
+            "System files",
+            "Kernel modules"
+        ]
+    },
+    {
+        "q": "Which iOS API handles secure networking?",
+        "o": [
+            "NSURLSession",
+            "UIWebView",
+            "WKWebView",
+            "MapKit"
+        ]
+    },
+    {
+        "q": "What is the purpose of anti-debugging techniques?",
+        "o": [
+            "Preventing debugger attachment",
+            "Improving app speed",
+            "Reducing memory use",
+            "Adding features"
+        ]
+    },
+    {
+        "q": "Which tool decompiles Android resources?",
+        "o": [
+            "APKTool",
+            "Wireshark",
+            "Frida",
+            "Xposed"
+        ]
+    },
+    {
+        "q": "What does iOS's secure enclave provide?",
+        "o": [
+            "Hardware-based encryption",
+            "Network security",
+            "App sandboxing",
+            "Memory management"
+        ]
+    },
+    {
+        "q": "Which attack uses fake SSL certificates?",
+        "o": [
+            "Man-in-the-middle",
+            "SQL injection",
+            "Cross-site scripting",
+            "Buffer overflow"
+        ]
+    },
+    {
+        "q": "What is the purpose of code signing?",
+        "o": [
+            "Ensuring code integrity",
+            "Compressing code",
+            "Optimizing code",
+            "Minifying code"
+        ]
+    },
+    {
+        "q": "Which Android tool monitors system logs?",
+        "o": [
+            "logcat",
+            "dumpsys",
+            "pm",
+            "am"
+        ]
+    },
+    {
+        "q": "What does iOS's App Transport Security enforce?",
+        "o": [
+            "Secure network connections",
+            "App sandboxing",
+            "Data protection",
+            "Memory security"
+        ]
+    },
+    {
+        "q": "Which tool analyzes malware behavior?",
+        "o": [
+            "Cuckoo Sandbox",
+            "APKTool",
+            "dex2jar",
+            "ProGuard"
+        ]
+    },
+    {
+        "q": "What is stored in Android cache directory?",
+        "o": [
+            "Temporary app data",
+            "User credentials",
+            "App binaries",
+            "System files"
+        ]
+    },
+    {
+        "q": "Which iOS directory stores temporary files?",
+        "o": [
+            "tmp",
+            "Documents",
+            "Library",
+            "System"
+        ]
+    },
+    {
+        "q": "What is the purpose of runtime self-protection?",
+        "o": [
+            "Detecting runtime attacks",
+            "Improving performance",
+            "Reducing battery use",
+            "Adding features"
+        ]
+    },
+    {
+        "q": "Which tool hooks iOS method calls?",
+        "o": [
+            "MobileSubstrate",
+            "APKTool",
+            "Wireshark",
+            "Nmap"
+        ]
+    },
+    {
+        "q": "What does Android's external storage lack?",
+        "o": [
+            "Built-in encryption",
+            "Read access",
+            "Write access",
+            "File system"
+        ]
+    },
+    {
+        "q": "Which iOS feature sandboxes apps?",
+        "o": [
+            "App Sandbox",
+            "Keychain",
+            "iCloud",
+            "PushKit"
+        ]
+    },
+    {
+        "q": "What is the purpose of input sanitization?",
+        "o": [
+            "Removing dangerous characters",
+            "Speeding up input",
+            "Formatting text",
+            "Validating types"
+        ]
+    },
+    {
+        "q": "Which tool analyzes Android memory dumps?",
+        "o": [
+            "Volatility",
+            "APKTool",
+            "dex2jar",
+            "Androguard"
+        ]
+    },
+    {
+        "q": "What does iOS's code signing verify?",
+        "o": [
+            "App authenticity",
+            "App performance",
+            "App size",
+            "App design"
+        ]
+    },
+    {
+        "q": "Which attack intercepts mobile traffic?",
+        "o": [
+            "Man-in-the-middle",
+            "SQL injection",
+            "Cross-site scripting",
+            "Buffer overflow"
+        ]
+    },
+    {
+        "q": "What is stored in Android's internal storage?",
+        "o": [
+            "Private app files",
+            "Public media files",
+            "System logs",
+            "Kernel dumps"
+        ]
+    },
+    {
+        "q": "Which iOS framework manages passwords?",
+        "o": [
+            "Security.framework",
+            "UIKit",
+            "CoreData",
+            "MapKit"
+        ]
+    },
+    {
+        "q": "What is the purpose of root detection?",
+        "o": [
+            "Preventing rooted device execution",
+            "Improving app speed",
+            "Adding features",
+            "Reducing size"
+        ]
+    },
+    {
+        "q": "Which tool decrypts SSL traffic?",
+        "o": [
+            "MITMProxy",
+            "APKTool",
+            "dex2jar",
+            "ProGuard"
+        ]
+    },
+    {
+        "q": "What does Android's backup feature expose?",
+        "o": [
+            "Sensitive app data",
+            "App binaries",
+            "System updates",
+            "Kernel modules"
+        ]
+    },
+    {
+        "q": "Which iOS directory is not backed up?",
+        "o": [
+            "Caches",
+            "Documents",
+            "Library",
+            "System"
+        ]
+    },
+    {
+        "q": "What is the purpose of jailbreak detection?",
+        "o": [
+            "Preventing compromised device use",
+            "Improving performance",
+            "Adding animations",
+            "Reducing crashes"
+        ]
+    },
+    {
+        "q": "Which tool modifies iOS app behavior?",
+        "o": [
+            "Theos",
+            "APKTool",
+            "Wireshark",
+            "Nmap"
+        ]
+    },
+    {
+        "q": "What does Android's network security config do?",
+        "o": [
+            "Configures network security",
+            "Manages app permissions",
+            "Controls app updates",
+            "Handles backups"
+        ]
+    },
+    {
+        "q": "Which iOS API handles local authentication?",
+        "o": [
+            "LocalAuthentication",
+            "CoreLocation",
+            "MapKit",
+            "UIKit"
+        ]
+    },
+    {
+        "q": "What is the purpose of certificate validation?",
+        "o": [
+            "Verifying server identity",
+            "Speeding up connections",
+            "Compressing data",
+            "Caching content"
+        ]
+    },
+    {
+        "q": "Which tool performs binary analysis?",
+        "o": [
+            "IDA Pro",
+            "APKTool",
+            "Wireshark",
+            "Nmap"
+        ]
+    },
+    {
+        "q": "What does Android's SQLite store?",
+        "o": [
+            "Structured app data",
+            "Binary files",
+            "Network logs",
+            "System caches"
+        ]
+    },
+    {
+        "q": "Which iOS framework handles cryptography?",
+        "o": [
+            "CryptoKit",
+            "UIKit",
+            "SwiftUI",
+            "CoreData"
+        ]
+    },
+    {
+        "q": "What is the purpose of anti-tampering measures?",
+        "o": [
+            "Detecting code modifications",
+            "Improving performance",
+            "Adding features",
+            "Reducing size"
+        ]
+    },
+    {
+        "q": "Which tool analyzes iOS binary encryption?",
+        "o": [
+            "otool",
+            "APKTool",
+            "dex2jar",
+            "Androguard"
+        ]
+    },
+    {
+        "q": "What does Android's keystore protect?",
+        "o": [
+            "Cryptographic keys",
+            "User passwords",
+            "App data",
+            "Network logs"
+        ]
+    },
+    {
+        "q": "Which iOS feature encrypts files by default?",
+        "o": [
+            "Data Protection",
+            "File Sharing",
+            "iCloud Drive",
+            "AirDrop"
+        ]
+    },
+    {
+        "q": "What is the purpose of non-repudiation?",
+        "o": [
+            "Proving action authenticity",
+            "Speeding up transactions",
+            "Reducing data use",
+            "Improving UI"
+        ]
+    },
+    {
+        "q": "Which tool performs static analysis on iOS?",
+        "o": [
+            "Class-dump",
+            "Wireshark",
+            "Burp Suite",
+            "Frida"
+        ]
+    },
+    {
+        "q": "What does Android's app sandbox provide?",
+        "o": [
+            "Process isolation",
+            "Network access",
+            "File sharing",
+            "Code execution"
+        ]
+    },
+    {
+        "q": "Which iOS framework manages secure storage?",
+        "o": [
+            "Keychain Services",
+            "Core Graphics",
+            "AV Foundation",
+            "Core Audio"
+        ]
+    },
+    {
+        "q": "What is the purpose of session management?",
+        "o": [
+            "Handling user sessions securely",
+            "Improving app speed",
+            "Reducing memory use",
+            "Adding animations"
+        ]
+    },
+    {
+        "q": "Which tool bypasses iOS encryption?",
+        "o": [
+            "Clutch",
+            "APKTool",
+            "dex2jar",
+            "ProGuard"
+        ]
+    },
+    {
+        "q": "What does Android's download directory contain?",
+        "o": [
+            "Downloaded user files",
+            "App binaries",
+            "System updates",
+            "Kernel modules"
+        ]
+    },
+    {
+        "q": "What is the main difference between static and dynamic analysis?",
+        "o": [
+            "Code examination vs runtime observation",
+            "Manual vs automated testing",
+            "Local vs remote analysis",
+            "Binary vs source review"
+        ]
+    },
+    {
+        "q": "Which tool would you use to decode Android's binary XML files?",
+        "o": [
+            "AXMLPrinter2",
+            "Wireshark",
+            "Burp Suite",
+            "Frida"
+        ]
+    },
+    {
+        "q": "What information can be extracted from an APK's manifest file?",
+        "o": [
+            "App permissions and components",
+            "Source code logic",
+            "Database structure",
+            "Network protocols"
+        ]
+    },
+    {
+        "q": "Why is it important to test both rooted and non-rooted devices?",
+        "o": [
+            "Different access levels reveal different issues",
+            "Rooted devices run apps faster",
+            "Non-rooted devices have more storage",
+            "Rooted devices have better graphics"
+        ]
+    },
+    {
+        "q": "What does intercepting mobile traffic help identify?",
+        "o": [
+            "Insecure data transmission",
+            "App compilation errors",
+            "UI rendering issues",
+            "Battery drain causes"
+        ]
+    },
+    {
+        "q": "Which iOS directory is most likely to contain cached user data?",
+        "o": [
+            "Library/Caches",
+            "Documents/Backups",
+            "System/Config",
+            "tmp/sessions"
+        ]
+    },
+    {
+        "q": "What is the purpose of Android's Backup feature in security context?",
+        "o": [
+            "Potential data leakage vector",
+            "App recovery mechanism",
+            "System restore point",
+            "Update installation method"
+        ]
+    },
+    {
+        "q": "Which technique helps understand obfuscated code?",
+        "o": [
+            "Dynamic analysis with breakpoints",
+            "Reading developer comments",
+            "Using code beautifiers",
+            "Compiling with debug symbols"
+        ]
+    },
+    {
+        "q": "What does a missing SSL certificate validation indicate?",
+        "o": [
+            "Vulnerability to MITM attacks",
+            "Faster network requests",
+            "Better battery performance",
+            "Reduced data usage"
+        ]
+    },
+    {
+        "q": "Which Android component is commonly targeted for intent spoofing?",
+        "o": [
+            "BroadcastReceiver",
+            "LinearLayout",
+            "TextView",
+            "ImageView"
+        ]
+    },
+    {
+        "q": "What is the iOS equivalent of Android's logcat?",
+        "o": [
+            "syslog and device console",
+            "Xcode debugger",
+            "Instruments",
+            "Simulator logs"
+        ]
+    },
+    {
+        "q": "Why do testers examine app databases during storage analysis?",
+        "o": [
+            "Find unencrypted sensitive data",
+            "Check query performance",
+            "Verify database schema",
+            "Test data migrations"
+        ]
+    },
+    {
+        "q": "Which tool can modify Android app behavior without recompiling?",
+        "o": [
+            "Frida",
+            "APKTool",
+            "Android Studio",
+            "Eclipse"
+        ]
+    },
+    {
+        "q": "What information can be gathered from iOS binary headers?",
+        "o": [
+            "Encryption status and architecture",
+            "Source code comments",
+            "Developer names",
+            "Compilation date"
+        ]
+    },
+    {
+        "q": "Which attack becomes possible with insecure deeplink handling?",
+        "o": [
+            "Intent interception",
+            "SQL injection",
+            "Buffer overflow",
+            "DoS attacks"
+        ]
+    },
+    {
+        "q": "What does Android's internal storage path typically look like?",
+        "o": [
+            "/data/data/com.example.app/",
+            "/sdcard/Android/data/",
+            "/system/app/Example/",
+            "/cache/downloads/"
+        ]
+    },
+    {
+        "q": "Why is it important to test apps on different OS versions?",
+        "o": [
+            "Security features vary by version",
+            "UI looks different",
+            "Apps run faster on new versions",
+            "Battery life improves"
+        ]
+    },
+    {
+        "q": "Which tool helps analyze encrypted iOS app binaries?",
+        "o": [
+            "dumpdecrypted",
+            "APKTool",
+            "dex2jar",
+            "Androguard"
+        ]
+    },
+    {
+        "q": "What does intercepting WebView traffic reveal?",
+        "o": [
+            "JavaScript bridge vulnerabilities",
+            "HTML rendering issues",
+            "CSS styling problems",
+            "Image loading errors"
+        ]
+    },
+    {
+        "q": "Which Android directory stores app-specific files on external storage?",
+        "o": [
+            "/sdcard/Android/data/",
+            "/storage/emulated/0/",
+            "/mnt/sdcard/Download/",
+            "/external_files/apps/"
+        ]
+    },
+    {
+        "q": "What is the security implication of World Readable files on Android?",
+        "o": [
+            "Any app can read the data",
+            "Only root can access",
+            "System only permissions",
+            "No external access"
+        ]
+    },
+    {
+        "q": "Which iOS API can leak sensitive data in logs?",
+        "o": [
+            "NSLog",
+            "UIAlertView",
+            "UILabel",
+            "UIImageView"
+        ]
+    },
+    {
+        "q": "What does the presence of hardcoded API keys indicate?",
+        "o": [
+            "Credential exposure risk",
+            "Good coding practice",
+            "Efficient design",
+            "Performance optimization"
+        ]
+    },
+    {
+        "q": "Which technique helps identify root detection mechanisms?",
+        "o": [
+            "Tracing file system checks",
+            "Analyzing UI layouts",
+            "Testing network speed",
+            "Measuring battery use"
+        ]
+    },
+    {
+        "q": "What is the purpose of Android's SafetyNet in security testing?",
+        "o": [
+            "Device integrity verification",
+            "Network security monitoring",
+            "App permission management",
+            "Data backup encryption"
+        ]
+    },
+    {
+        "q": "Which iOS feature can leak data through app snapshots?",
+        "o": [
+            "App switcher previews",
+            "Push notifications",
+            "Background refresh",
+            "Location services"
+        ]
+    },
+    {
+        "q": "Why do testers analyze inter-process communication?",
+        "o": [
+            "Find data leakage between apps",
+            "Test app startup time",
+            "Measure memory usage",
+            "Check CPU utilization"
+        ]
+    },
+    {
+        "q": "Which tool can intercept iOS network traffic without proxy settings?",
+        "o": [
+            "rvi_capture",
+            "Wireshark",
+            "Burp Suite",
+            "Charles"
+        ]
+    },
+    {
+        "q": "What does Android's exported activity vulnerability allow?",
+        "o": [
+            "Unauthorized activity launches",
+            "Faster app loading",
+            "Better user experience",
+            "Reduced memory use"
+        ]
+    },
+    {
+        "q": "Which iOS binary protection strips symbol information?",
+        "o": [
+            "Strip command",
+            "Encryption",
+            "Compression",
+            "Archiving"
+        ]
+    },
+    {
+        "q": "What information can be found in iOS crash logs?",
+        "o": [
+            "Stack traces and memory addresses",
+            "User passwords",
+            "Network credentials",
+            "Encryption keys"
+        ]
+    },
+    {
+        "q": "Which Android permission can lead to sensitive data exposure?",
+        "o": [
+            "READ_EXTERNAL_STORAGE",
+            "INTERNET",
+            "VIBRATE",
+            "WAKE_LOCK"
+        ]
+    },
+    {
+        "q": "Why do testers examine app update mechanisms?",
+        "o": [
+            "Insecure update delivery risks",
+            "Update speed testing",
+            "Storage space impact",
+            "Battery consumption"
+        ]
+    },
+    {
+        "q": "Which tool helps reverse engineer iOS Objective-C binaries?",
+        "o": [
+            "class-dump",
+            "APKTool",
+            "dex2jar",
+            "Androguard"
+        ]
+    },
+    {
+        "q": "What does insecure WebView configuration enable?",
+        "o": [
+            "JavaScript injection attacks",
+            "Faster page loading",
+            "Better rendering",
+            "Offline browsing"
+        ]
+    },
+    {
+        "q": "Which Android component can be exploited via task hijacking?",
+        "o": [
+            "Activities with task affinity",
+            "Background services",
+            "Content providers",
+            "Broadcast receivers"
+        ]
+    },
+    {
+        "q": "What is the purpose of iOS's App Group containers?",
+        "o": [
+            "Data sharing between apps",
+            "App sandboxing",
+            "Network isolation",
+            "Memory management"
+        ]
+    },
+    {
+        "q": "Why do testers check for sensitive data in app backups?",
+        "o": [
+            "Backups may contain unprotected data",
+            "Backups improve performance",
+            "Backups reduce app size",
+            "Backups speed up installs"
+        ]
+    },
+    {
+        "q": "Which technique identifies jailbreak detection bypasses?",
+        "o": [
+            "Method hooking and tracing",
+            "UI automation",
+            "Performance profiling",
+            "Battery testing"
+        ]
+    },
+    {
+        "q": "What does Android's cleartext traffic setting enable?",
+        "o": [
+            "Unencrypted HTTP requests",
+            "HTTPS encryption",
+            "Certificate pinning",
+            "Proxy bypass"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement can indicate insecure data access?",
+        "o": [
+            "keychain-access-groups",
+            "application-identifier",
+            "team-identifier",
+            "get-task-allow"
+        ]
+    },
+    {
+        "q": "What information is stored in Android's SharedPreferences files?",
+        "o": [
+            "User settings and session tokens",
+            "App binary code",
+            "Resource files",
+            "Layout definitions"
+        ]
+    },
+    {
+        "q": "Why do testers analyze custom URL schemes?",
+        "o": [
+            "Potential attack vectors via deeplinks",
+            "App navigation testing",
+            "UI flow verification",
+            "User experience testing"
+        ]
+    },
+    {
+        "q": "Which tool can monitor Android file system changes in real-time?",
+        "o": [
+            "inotify",
+            "Wireshark",
+            "Burp Suite",
+            "Frida"
+        ]
+    },
+    {
+        "q": "What does the iOS Data Protection class 'Complete' provide?",
+        "o": [
+            "Encryption when device locked",
+            "Always accessible data",
+            "iCloud synchronization",
+            "Network encryption"
+        ]
+    },
+    {
+        "q": "Which attack becomes possible with insecure content providers?",
+        "o": [
+            "SQL injection and data theft",
+            "UI redressing",
+            "Denial of service",
+            "Memory corruption"
+        ]
+    },
+    {
+        "q": "What is the security risk of Android's SQLite databases?",
+        "o": [
+            "Unencrypted sensitive data",
+            "Slow query performance",
+            "Large file sizes",
+            "Corruption during writes"
+        ]
+    },
+    {
+        "q": "Which iOS API can expose device identifiers inappropriately?",
+        "o": [
+            "UIDevice uniqueIdentifier",
+            "UIApplication",
+            "NSBundle",
+            "NSFileManager"
+        ]
+    },
+    {
+        "q": "Why do testers examine app logging mechanisms?",
+        "o": [
+            "Sensitive data in log output",
+            "App performance metrics",
+            "User behavior tracking",
+            "Crash reporting"
+        ]
+    },
+    {
+        "q": "Which tool helps analyze Android Dalvik bytecode?",
+        "o": [
+            "baksmali",
+            "Wireshark",
+            "Burp Suite",
+            "Nmap"
+        ]
+    },
+    {
+        "q": "What does insecure implementation of copy/paste functionality expose?",
+        "o": [
+            "Clipboard data leakage",
+            "UI interaction issues",
+            "Text formatting problems",
+            "Keyboard input delays"
+        ]
+    },
+    {
+        "q": "Which Android directory is writable by all apps on older versions?",
+        "o": [
+            "/sdcard/",
+            "/data/local/tmp/",
+            "/system/bin/",
+            "/proc/"
+        ]
+    },
+    {
+        "q": "What is the purpose of iOS's application state preservation?",
+        "o": [
+            "May leak data in state files",
+            "Improve app startup",
+            "Reduce memory use",
+            "Enhance animations"
+        ]
+    },
+    {
+        "q": "Which technique helps identify certificate pinning implementation?",
+        "o": [
+            "Tracing network library calls",
+            "UI element inspection",
+            "Database analysis",
+            "File permission checks"
+        ]
+    },
+    {
+        "q": "What does Android's allowBackup flag control?",
+        "o": [
+            "App data backup permission",
+            "Network backup settings",
+            "Cloud sync options",
+            "Update installation"
+        ]
+    },
+    {
+        "q": "Which iOS framework can leak data through pasteboard?",
+        "o": [
+            "UIPasteboard",
+            "UIKit",
+            "CoreData",
+            "MapKit"
+        ]
+    },
+    {
+        "q": "Why do testers analyze push notification handling?",
+        "o": [
+            "Malicious notification injection",
+            "Battery consumption",
+            "Network bandwidth",
+            "UI responsiveness"
+        ]
+    },
+    {
+        "q": "Which tool can hook iOS method calls without jailbreak?",
+        "o": [
+            "Frida for iOS",
+            "APKTool",
+            "dex2jar",
+            "Androguard"
+        ]
+    },
+    {
+        "q": "What information is stored in Android's account manager?",
+        "o": [
+            "User account credentials",
+            "App preferences",
+            "System settings",
+            "Network configs"
+        ]
+    },
+    {
+        "q": "Which iOS feature can expose data through Handoff?",
+        "o": [
+            "NSUserActivity data",
+            "iCloud sync",
+            "AirDrop transfer",
+            "Continuity camera"
+        ]
+    },
+    {
+        "q": "What does insecure OAuth implementation lead to?",
+        "o": [
+            "Token interception attacks",
+            "Faster authentication",
+            "Better user experience",
+            "Reduced server load"
+        ]
+    },
+    {
+        "q": "Which Android component handles inter-app data sharing?",
+        "o": [
+            "ContentProvider",
+            "Activity",
+            "Service",
+            "Fragment"
+        ]
+    },
+    {
+        "q": "Why do testers examine app widget implementations?",
+        "o": [
+            "Potential data exposure",
+            "UI design issues",
+            "Update frequency",
+            "Battery impact"
+        ]
+    },
+    {
+        "q": "Which tool can decrypt Android app data on rooted devices?",
+        "o": [
+            "SQLite Browser",
+            "Wireshark",
+            "Burp Suite",
+            "Nmap"
+        ]
+    },
+    {
+        "q": "What does the iOS 'canOpenURL' method reveal?",
+        "o": [
+            "Installed apps on device",
+            "Network connectivity",
+            "File system access",
+            "Memory status"
+        ]
+    },
+    {
+        "q": "Which attack targets insecure session handling in mobile apps?",
+        "o": [
+            "Session fixation",
+            "SQL injection",
+            "XSS attacks",
+            "Buffer overflow"
+        ]
+    },
+    {
+        "q": "What information is stored in Android's cookies database?",
+        "o": [
+            "Web session tokens",
+            "App preferences",
+            "System logs",
+            "Network configs"
+        ]
+    },
+    {
+        "q": "Why do testers analyze background service implementations?",
+        "o": [
+            "Persistent data collection risks",
+            "App performance issues",
+            "Battery consumption",
+            "CPU utilization"
+        ]
+    },
+    {
+        "q": "Which tool can analyze iOS Keychain contents?",
+        "o": [
+            "Keychain Viewer",
+            "APKTool",
+            "dex2jar",
+            "ProGuard"
+        ]
+    },
+    {
+        "q": "What does Android's debuggable flag enable?",
+        "o": [
+            "Debugger attachment to app",
+            "Release mode compilation",
+            "Code obfuscation",
+            "Resource minification"
+        ]
+    },
+    {
+        "q": "Which iOS framework handles biometric authentication?",
+        "o": [
+            "LocalAuthentication",
+            "CoreMotion",
+            "AVFoundation",
+            "CoreLocation"
+        ]
+    },
+    {
+        "q": "Why do testers examine app thermal state handling?",
+        "o": [
+            "May bypass security controls",
+            "Performance optimization",
+            "Battery management",
+            "UI responsiveness"
+        ]
+    },
+    {
+        "q": "Which technique identifies insecure data caching?",
+        "o": [
+            "Examining cache directories",
+            "Network traffic analysis",
+            "CPU profiling",
+            "Memory monitoring"
+        ]
+    },
+    {
+        "q": "What information is stored in iOS .plist files?",
+        "o": [
+            "App configuration and data",
+            "Binary executable code",
+            "System kernel modules",
+            "Device drivers"
+        ]
+    },
+    {
+        "q": "Which Android permission can lead to contacts data theft?",
+        "o": [
+            "READ_CONTACTS",
+            "INTERNET",
+            "ACCESS_NETWORK_STATE",
+            "CHANGE_WIFI_STATE"
+        ]
+    },
+    {
+        "q": "What does insecure implementation of autofill features expose?",
+        "o": [
+            "Saved credential leakage",
+            "Faster form completion",
+            "Better user experience",
+            "Reduced typing errors"
+        ]
+    },
+    {
+        "q": "Which tool can monitor Android Binder communications?",
+        "o": [
+            "binder_trace",
+            "Wireshark",
+            "Burp Suite",
+            "Nmap"
+        ]
+    },
+    {
+        "q": "Why do testers analyze app state restoration data?",
+        "o": [
+            "Sensitive data in saved state",
+            "App startup speed",
+            "Memory efficiency",
+            "UI consistency"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement allows keychain data sharing?",
+        "o": [
+            "keychain-access-groups",
+            "aps-environment",
+            "com.apple.developer",
+            "application-identifier"
+        ]
+    },
+    {
+        "q": "What does Android's exported service vulnerability allow?",
+        "o": [
+            "Unauthorized service starts",
+            "Faster background work",
+            "Better multitasking",
+            "Reduced memory use"
+        ]
+    },
+    {
+        "q": "Which attack targets insecure QR code handling?",
+        "o": [
+            "Malicious intent injection",
+            "SQL injection",
+            "XSS attacks",
+            "Buffer overflow"
+        ]
+    },
+    {
+        "q": "What information is stored in Android's download manager database?",
+        "o": [
+            "Downloaded file metadata",
+            "App binary code",
+            "System logs",
+            "Network configs"
+        ]
+    },
+    {
+        "q": "Why do testers examine proximity sensor usage?",
+        "o": [
+            "May indicate recording/spying",
+            "Battery optimization",
+            "UI automation",
+            "Gesture detection"
+        ]
+    },
+    {
+        "q": "Which tool can analyze iOS crash reports for sensitive data?",
+        "o": [
+            "symbolicatecrash",
+            "APKTool",
+            "dex2jar",
+            "ProGuard"
+        ]
+    },
+    {
+        "q": "What does Android's allowClearTextDebugging flag enable?",
+        "o": [
+            "Unencrypted debug traffic",
+            "Release mode builds",
+            "Code signing",
+            "App encryption"
+        ]
+    },
+    {
+        "q": "Which iOS feature can expose data through Siri suggestions?",
+        "o": [
+            "NSUserActivity data",
+            "Push notifications",
+            "Location services",
+            "Background refresh"
+        ]
+    },
+    {
+        "q": "Why do testers analyze app microphone access patterns?",
+        "o": [
+            "Unauthorized recording detection",
+            "Audio quality testing",
+            "Volume level checks",
+            "Echo cancellation"
+        ]
+    },
+    {
+        "q": "Which technique identifies insecure biometric authentication?",
+        "o": [
+            "Fallback mechanism testing",
+            "Fingerprint scanning",
+            "Face recognition",
+            "Voice matching"
+        ]
+    },
+    {
+        "q": "What information is stored in Android's network security config?",
+        "o": [
+            "Certificate pinning rules",
+            "App permissions",
+            "Database schemas",
+            "Layout definitions"
+        ]
+    },
+    {
+        "q": "Which iOS API can leak location data in background?",
+        "o": [
+            "CLLocationManager",
+            "UIApplication",
+            "NSNotificationCenter",
+            "CFNotificationCenter"
+        ]
+    },
+    {
+        "q": "What does insecure deep link validation lead to?",
+        "o": [
+            "Unauthorized app actions",
+            "Faster navigation",
+            "Better UX",
+            "Reduced code"
+        ]
+    },
+    {
+        "q": "Which tool can monitor Android SQLite queries?",
+        "o": [
+            "Stetho",
+            "Wireshark",
+            "Burp Suite",
+            "Nmap"
+        ]
+    },
+    {
+        "q": "Why do testers examine app camera permission usage?",
+        "o": [
+            "Unauthorized photo capture",
+            "Image quality testing",
+            "Focus performance",
+            "Flash functionality"
+        ]
+    },
+    {
+        "q": "Which iOS framework handles secure network connections?",
+        "o": [
+            "Security.framework",
+            "UIKit",
+            "CoreData",
+            "MapKit"
+        ]
+    },
+    {
+        "q": "What does Android's exported content provider vulnerability allow?",
+        "o": [
+            "Unauthorized data access",
+            "Faster data queries",
+            "Better data sharing",
+            "Reduced code"
+        ]
+    },
+    {
+        "q": "Which attack targets insecure Bluetooth implementation?",
+        "o": [
+            "BlueBorne attacks",
+            "SQL injection",
+            "XSS attacks",
+            "Buffer overflow"
+        ]
+    },
+    {
+        "q": "What information is stored in Android's clipboard manager?",
+        "o": [
+            "Recently copied data",
+            "App preferences",
+            "System settings",
+            "Network configs"
+        ]
+    },
+    {
+        "q": "Why do testers analyze app screenshot prevention?",
+        "o": [
+            "Data leakage prevention testing",
+            "UI design verification",
+            "Performance impact",
+            "Memory usage"
+        ]
+    },
+    {
+        "q": "Which tool can analyze iOS binary dependencies?",
+        "o": [
+            "otool",
+            "APKTool",
+            "dex2jar",
+            "Androguard"
+        ]
+    },
+    {
+        "q": "What does Android's usesCleartextTraffic flag control?",
+        "o": [
+            "Allows unencrypted HTTP",
+            "Enables HTTPS only",
+            "Forces certificate pinning",
+            "Disables all traffic"
+        ]
+    },
+    {
+        "q": "How can obfuscated code be analyzed effectively during security testing?",
+        "o": [
+            "Dynamic analysis with breakpoints and tracing",
+            "Reading code comments and documentation",
+            "Using pretty printers and formatters",
+            "Compiling with debug symbols enabled"
+        ]
+    },
+    {
+        "q": "Which technique bypasses Android's signature verification during dynamic analysis?",
+        "o": [
+            "Patching the APK and re-signing with custom certs",
+            "Disabling package manager service",
+            "Modifying the Android kernel source",
+            "Using unsigned apps in debug mode"
+        ]
+    },
+    {
+        "q": "What information can be extracted from iOS kernel task ports?",
+        "o": [
+            "Memory addresses and process information",
+            "User interface element hierarchies",
+            "Network socket configurations",
+            "Battery status and statistics"
+        ]
+    },
+    {
+        "q": "How does method swizzling help in iOS runtime analysis?",
+        "o": [
+            "Replacing method implementations dynamically",
+            "Compiling code faster than normal",
+            "Improving app startup time",
+            "Reducing memory allocations"
+        ]
+    },
+    {
+        "q": "Which Android system service is commonly hooked for bypassing SSL pinning?",
+        "o": [
+            "NetworkManagementService",
+            "PackageManagerService",
+            "ActivityManagerService",
+            "WindowManagerService"
+        ]
+    },
+    {
+        "q": "What does analyzing the iOS dyld shared cache reveal?",
+        "o": [
+            "System frameworks and their offsets",
+            "User app source code",
+            "Device encryption keys",
+            "Network traffic logs"
+        ]
+    },
+    {
+        "q": "How can testers identify custom encryption algorithms in mobile apps?",
+        "o": [
+            "Tracing cryptographic function calls",
+            "Examining app store descriptions",
+            "Reading developer documentation",
+            "Testing network response times"
+        ]
+    },
+    {
+        "q": "Which technique extracts memory-resident decrypted iOS apps?",
+        "o": [
+            "Dumping memory after decryption",
+            "Decompiling with standard tools",
+            "Static analysis of binaries",
+            "Network traffic inspection"
+        ]
+    },
+    {
+        "q": "What is the purpose of Android's SELinux policies in app sandboxing?",
+        "o": [
+            "Mandatory access control enforcement",
+            "Disk encryption management",
+            "Network firewall rules",
+            "Battery optimization"
+        ]
+    },
+    {
+        "q": "How do testers bypass certificate pinning in iOS applications?",
+        "o": [
+            "Hooking NSURLSession delegate methods",
+            "Modifying Info.plist settings",
+            "Changing bundle identifiers",
+            "Recompiling with new certs"
+        ]
+    },
+    {
+        "q": "Which Android kernel vulnerability allows breaking out of the sandbox?",
+        "o": [
+            "CVE-2019-2215 (use-after-free)",
+            "Heartbleed SSL bug",
+            "Shellshock bash exploit",
+            "DROWN attack vector"
+        ]
+    },
+    {
+        "q": "What does analyzing Objective-C runtime metadata expose?",
+        "o": [
+            "Class names and method signatures",
+            "Binary encryption keys",
+            "Network protocol details",
+            "Database schema information"
+        ]
+    },
+    {
+        "q": "How can testers detect anti-debugging techniques in Android apps?",
+        "o": [
+            "Tracing ptrace system calls",
+            "Monitoring CPU temperature",
+            "Checking battery level",
+            "Measuring network latency"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement can indicate insecure data protection practices?",
+        "o": [
+            "data-protection-class-unspecified",
+            "aps-environment",
+            "game-center",
+            "push-notification"
+        ]
+    },
+    {
+        "q": "What information is stored in Android's tombstone files?",
+        "o": [
+            "Native crash memory dumps",
+            "User login credentials",
+            "App usage statistics",
+            "Network connection logs"
+        ]
+    },
+    {
+        "q": "How do testers analyze encrypted Android app databases?",
+        "o": [
+            "Hooking SQLite encryption functions",
+            "Using standard database browsers",
+            "Reading file headers only",
+            "Checking file permissions"
+        ]
+    },
+    {
+        "q": "Which technique bypasses iOS app encryption without jailbreak?",
+        "o": [
+            "Frida Gadget injection",
+            "Using Clutch decryptor",
+            "App Store downloads",
+            "Xcode debug builds"
+        ]
+    },
+    {
+        "q": "What does Android's DexGuard provide beyond ProGuard?",
+        "o": [
+            "Runtime protection and anti-tampering",
+            "Basic code obfuscation only",
+            "Resource shrinking features",
+            "Compilation optimization"
+        ]
+    },
+    {
+        "q": "How can testers identify insecure inter-process communication on iOS?",
+        "o": [
+            "Analyzing XPC service implementations",
+            "Checking bundle identifiers",
+            "Reviewing Info.plist entries",
+            "Examining storyboards"
+        ]
+    },
+    {
+        "q": "Which Android component can be exploited via fragment injection?",
+        "o": [
+            "PreferenceActivity",
+            "ListView",
+            "GridView",
+            "RecyclerView"
+        ]
+    },
+    {
+        "q": "What does analyzing iOS application state restoration data reveal?",
+        "o": [
+            "Previous app screens and data",
+            "Network request history",
+            "Installed app list",
+            "Device information"
+        ]
+    },
+    {
+        "q": "How do testers bypass root detection that uses multiple methods?",
+        "o": [
+            "Hooking all detection APIs systematically",
+            "Unrooting the test device",
+            "Using different test devices",
+            "Ignoring detection mechanisms"
+        ]
+    },
+    {
+        "q": "Which Android permission can lead to arbitrary code execution?",
+        "o": [
+            "INSTALL_PACKAGES",
+            "INTERNET",
+            "ACCESS_WIFI_STATE",
+            "VIBRATE"
+        ]
+    },
+    {
+        "q": "What information can be extracted from iOS crash reports on device?",
+        "o": [
+            "Stack traces and register states",
+            "User keychain items",
+            "App bundle resources",
+            "Network cookies"
+        ]
+    },
+    {
+        "q": "How can testers analyze Android native code libraries?",
+        "o": [
+            "Using IDA Pro or Ghidra",
+            "Reading Java source code",
+            "Checking manifest files",
+            "Monitoring network traffic"
+        ]
+    },
+    {
+        "q": "Which iOS feature can leak sensitive data through Spotlight search?",
+        "o": [
+            "CoreSpotlight index items",
+            "Push notifications",
+            "Background fetch",
+            "Remote control events"
+        ]
+    },
+    {
+        "q": "What does Android's app component exposure via deep links enable?",
+        "o": [
+            "Direct activity launches from malicious apps",
+            "Faster app navigation",
+            "Better user experience",
+            "Reduced development time"
+        ]
+    },
+    {
+        "q": "How do testers identify insecure use of Android's WebView addJavascriptInterface?",
+        "o": [
+            "Static analysis of JavaScript bridge methods",
+            "Testing page load speeds",
+            "Checking rendering quality",
+            "Monitoring memory usage"
+        ]
+    },
+    {
+        "q": "Which iOS framework can expose device location via geofencing?",
+        "o": [
+            "CoreLocation region monitoring",
+            "MapKit",
+            "CoreMotion",
+            "AVFoundation"
+        ]
+    },
+    {
+        "q": "What does analyzing Android's Binder transaction logs reveal?",
+        "o": [
+            "IPC communication patterns",
+            "UI rendering performance",
+            "Network packet contents",
+            "File system operations"
+        ]
+    },
+    {
+        "q": "How can testers bypass iOS app revocation checks?",
+        "o": [
+            "Hooking revocation API calls",
+            "Reinstalling the application",
+            "Restarting the device",
+            "Cleaning app caches"
+        ]
+    },
+    {
+        "q": "Which Android system property indicates emulator environment?",
+        "o": [
+            "ro.kernel.qemu",
+            "ro.build.version",
+            "ro.product.model",
+            "ro.serialno"
+        ]
+    },
+    {
+        "q": "What information is stored in iOS NSURLCache?",
+        "o": [
+            "Cached network responses",
+            "App binary code",
+            "Device identifiers",
+            "Keychain items"
+        ]
+    },
+    {
+        "q": "How do testers identify insecure data storage in Android Keystore?",
+        "o": [
+            "Checking key access policies",
+            "Examining database files",
+            "Reading logcat output",
+            "Monitoring network traffic"
+        ]
+    },
+    {
+        "q": "Which technique bypasses iOS application state preservation data?",
+        "o": [
+            "Modifying state restoration archives",
+            "Deleting app sandbox",
+            "Restarting the device",
+            "Cleaning keychain"
+        ]
+    },
+    {
+        "q": "What does Android's package manager vulnerability CVE-2020-0389 enable?",
+        "o": [
+            "Arbitrary app installation",
+            "Network packet sniffing",
+            "Memory corruption",
+            "Privilege escalation"
+        ]
+    },
+    {
+        "q": "How can testers analyze encrypted iOS Keychain items?",
+        "o": [
+            "Dumping keychain after device unlock",
+            "Reading plist files directly",
+            "Monitoring network traffic",
+            "Examining crash logs"
+        ]
+    },
+    {
+        "q": "Which Android component can leak data through task snapshots?",
+        "o": [
+            "Activities with secure flag missing",
+            "Background services",
+            "Content providers",
+            "Broadcast receivers"
+        ]
+    },
+    {
+        "q": "What does iOS's differential privacy implementation collect?",
+        "o": [
+            "Anonymized usage statistics",
+            "User keychain items",
+            "App source code",
+            "Device encryption keys"
+        ]
+    },
+    {
+        "q": "How do testers bypass Android's Network Security Config pinning?",
+        "o": [
+            "Modifying the base APK configuration",
+            "Using different network interfaces",
+            "Changing DNS servers",
+            "Enabling airplane mode"
+        ]
+    },
+    {
+        "q": "Which iOS API can be used for covert data exfiltration?",
+        "o": [
+            "NSURLSession background transfers",
+            "UIApplication",
+            "NSNotificationCenter",
+            "CFNotificationCenter"
+        ]
+    },
+    {
+        "q": "What information is stored in Android's batterystats?",
+        "o": [
+            "App power consumption patterns",
+            "User credentials",
+            "Network traffic",
+            "File system data"
+        ]
+    },
+    {
+        "q": "How can testers identify insecure use of Android's Crypto provider?",
+        "o": [
+            "Static analysis of cryptographic code",
+            "Network traffic inspection",
+            "UI automation testing",
+            "Performance profiling"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement allows access to keychain items across apps?",
+        "o": [
+            "keychain-access-groups",
+            "application-identifier",
+            "com.apple.security",
+            "get-task-allow"
+        ]
+    },
+    {
+        "q": "What does analyzing Android's ANR traces reveal?",
+        "o": [
+            "Thread stacks at freeze time",
+            "User interface layouts",
+            "Network endpoints",
+            "Database schemas"
+        ]
+    },
+    {
+        "q": "How do testers bypass jailbreak detection that uses multiple techniques?",
+        "o": [
+            "Comprehensive hooking of all detection methods",
+            "Using a non-jailbroken device",
+            "Restoring device firmware",
+            "Disabling all tweaks"
+        ]
+    },
+    {
+        "q": "Which Android system service handles permission grants?",
+        "o": [
+            "PackageManagerService",
+            "ActivityManagerService",
+            "WindowManagerService",
+            "AlarmManagerService"
+        ]
+    },
+    {
+        "q": "What information can be extracted from iOS sysdiagnose logs?",
+        "o": [
+            "System and app diagnostic data",
+            "User keychain items",
+            "App Store credentials",
+            "iCloud tokens"
+        ]
+    },
+    {
+        "q": "How can testers analyze Android's ART runtime internals?",
+        "o": [
+            "Using dex2oat and oatdump tools",
+            "Reading Java source code",
+            "Checking manifest permissions",
+            "Monitoring network calls"
+        ]
+    },
+    {
+        "q": "Which iOS feature can expose sensitive data through Handoff?",
+        "o": [
+            "NSUserActivity with userInfo",
+            "PushKit notifications",
+            "CallKit extensions",
+            "Notification Service"
+        ]
+    },
+    {
+        "q": "What does Android's full backup extract include?",
+        "o": [
+            "All app data and files",
+            "Only shared preferences",
+            "Network configurations",
+            "System settings"
+        ]
+    },
+    {
+        "q": "How do testers identify insecure use of Android's Random class?",
+        "o": [
+            "Static analysis for predictable seeds",
+            "Performance benchmarking",
+            "Memory usage analysis",
+            "UI responsiveness tests"
+        ]
+    },
+    {
+        "q": "Which iOS API can be abused for device fingerprinting?",
+        "o": [
+            "identifierForVendor with advertising ID",
+            "UIScreen brightness",
+            "UIDevice battery level",
+            "NSProcessInfo"
+        ]
+    },
+    {
+        "q": "What information is stored in Android's download manager?",
+        "o": [
+            "URIs and file metadata",
+            "User passwords",
+            "App binaries",
+            "System logs"
+        ]
+    },
+    {
+        "q": "How can testers bypass Android's verified boot?",
+        "o": [
+            "Unlocking bootloader and custom ROMs",
+            "Using stock firmware",
+            "Enforcing dm-verity",
+            "Locking bootloader"
+        ]
+    },
+    {
+        "q": "Which iOS framework can leak data through Core Data?",
+        "o": [
+            "Unencrypted SQLite stores",
+            "UIKit",
+            "MapKit",
+            "AVFoundation"
+        ]
+    },
+    {
+        "q": "What does analyzing Android's system_server memory reveal?",
+        "o": [
+            "System service data and tokens",
+            "User app interfaces",
+            "Network packets",
+            "File contents"
+        ]
+    },
+    {
+        "q": "How do testers identify insecure use of Android's PendingIntent?",
+        "o": [
+            "Checking for mutable and fillIn flags",
+            "Testing UI interactions",
+            "Monitoring broadcasts",
+            "Analyzing network traffic"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement allows debugger attachment?",
+        "o": [
+            "get-task-allow",
+            "aps-environment",
+            "com.apple.security",
+            "application-identifier"
+        ]
+    },
+    {
+        "q": "What information can be extracted from iOS time machine backups?",
+        "o": [
+            "Complete app data snapshots",
+            "Only system files",
+            "Network configurations",
+            "Kernel extensions"
+        ]
+    },
+    {
+        "q": "How can testers analyze Android's Zygote process?",
+        "o": [
+            "Examining process forking behavior",
+            "Reading app manifests",
+            "Checking permissions",
+            "Monitoring networks"
+        ]
+    },
+    {
+        "q": "Which iOS feature can expose data through QuickType suggestions?",
+        "o": [
+            "Text content observation",
+            "Keyboard inputs",
+            "Touch gestures",
+            "Device orientation"
+        ]
+    },
+    {
+        "q": "What does Android's ActivityManager process state reveal?",
+        "o": [
+            "App lifecycle and priority",
+            "User credentials",
+            "Network endpoints",
+            "Database content"
+        ]
+    },
+    {
+        "q": "How do testers bypass Android's Safetynet attestation?",
+        "o": [
+            "Hooking attestation API responses",
+            "Using different devices",
+            "Cleaning app data",
+            "Restarting device"
+        ]
+    },
+    {
+        "q": "Which iOS API can be used for silent data collection?",
+        "o": [
+            "Background fetch with download",
+            "UIApplication",
+            "NSNotificationCenter",
+            "CFNotificationCenter"
+        ]
+    },
+    {
+        "q": "What information is stored in Android's gesture database?",
+        "o": [
+            "Unlock patterns and metadata",
+            "App preferences",
+            "Network settings",
+            "System logs"
+        ]
+    },
+    {
+        "q": "How can testers identify insecure use of Android's WebStorage?",
+        "o": [
+            "Examining WebView storage directories",
+            "Testing page load speeds",
+            "Checking JavaScript execution",
+            "Monitoring memory usage"
+        ]
+    },
+    {
+        "q": "Which iOS framework can leak data through HealthKit?",
+        "o": [
+            "HealthKit database access",
+            "UIKit",
+            "CoreData",
+            "MapKit"
+        ]
+    },
+    {
+        "q": "What does analyzing Android's low memory killer reveal?",
+        "o": [
+            "App killing priorities",
+            "User interface data",
+            "Network connections",
+            "File handles"
+        ]
+    },
+    {
+        "q": "How do testers bypass iOS app revocation that checks for patched binaries?",
+        "o": [
+            "Hashing and integrity check hooks",
+            "Reinstalling from App Store",
+            "Using different Apple ID",
+            "Restarting device"
+        ]
+    },
+    {
+        "q": "Which Android permission can lead to SMS interception?",
+        "o": [
+            "RECEIVE_SMS",
+            "INTERNET",
+            "ACCESS_WIFI_STATE",
+            "VIBRATE"
+        ]
+    },
+    {
+        "q": "What information can be extracted from iOS diagnostic logs?",
+        "o": [
+            "System error reports and stacks",
+            "User keychain items",
+            "App Store purchases",
+            "iCloud documents"
+        ]
+    },
+    {
+        "q": "How can testers analyze Android's PackageManager queries?",
+        "o": [
+            "Tracing installed app queries",
+            "Monitoring network traffic",
+            "Testing UI elements",
+            "Checking permissions"
+        ]
+    },
+    {
+        "q": "Which iOS feature can expose data through AirDrop?",
+        "o": [
+            "Unintended file sharing",
+            "Keyboard inputs",
+            "Touch gestures",
+            "Device orientation"
+        ]
+    },
+    {
+        "q": "What does Android's account provider expose?",
+        "o": [
+            "Account tokens and types",
+            "App binaries",
+            "System updates",
+            "Network configs"
+        ]
+    },
+    {
+        "q": "How do testers identify insecure use of Android's SQLiteDatabase?",
+        "o": [
+            "Checking for raw queries with concatenation",
+            "Testing database performance",
+            "Monitoring disk usage",
+            "Analyzing cache files"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement allows access to user photos?",
+        "o": [
+            "NSPhotoLibraryUsageDescription",
+            "com.apple.security",
+            "application-identifier",
+            "get-task-allow"
+        ]
+    },
+    {
+        "q": "What information is stored in Android's battery history?",
+        "o": [
+            "App wakeup and activity patterns",
+            "User credentials",
+            "Network endpoints",
+            "File contents"
+        ]
+    },
+    {
+        "q": "How can testers bypass Android's Google Play Protect warnings?",
+        "o": [
+            "Hooking Play Protect API responses",
+            "Using different Google account",
+            "Disabling Play Store",
+            "Cleaning app cache"
+        ]
+    },
+    {
+        "q": "Which iOS API can expose device motion data?",
+        "o": [
+            "CoreMotion",
+            "UIKit",
+            "MapKit",
+            "AVFoundation"
+        ]
+    },
+    {
+        "q": "What does analyzing Android's WindowManager reveal?",
+        "o": [
+            "Window focus and overlay attacks",
+            "User keystrokes",
+            "Network packets",
+            "File operations"
+        ]
+    },
+    {
+        "q": "How do testers identify insecure use of Android's Parcelable?",
+        "o": [
+            "Checking custom writeToParcel methods",
+            "Testing serialization speed",
+            "Monitoring memory usage",
+            "Analyzing network traffic"
+        ]
+    },
+    {
+        "q": "Which iOS framework can leak data through Core Spotlight?",
+        "o": [
+            "CSSearchableItem attributes",
+            "UIKit",
+            "CoreData",
+            "MapKit"
+        ]
+    },
+    {
+        "q": "What information can be extracted from iOS network extension logs?",
+        "o": [
+            "VPN and proxy configurations",
+            "User keychain items",
+            "App Store credentials",
+            "iCloud tokens"
+        ]
+    },
+    {
+        "q": "How can testers analyze Android's input subsystem?",
+        "o": [
+            "Monitoring input event injection",
+            "Testing UI responsiveness",
+            "Checking touch accuracy",
+            "Measuring latency"
+        ]
+    },
+    {
+        "q": "Which Android component can be exploited via tapjacking?",
+        "o": [
+            "Activities without filter touches",
+            "Background services",
+            "Content providers",
+            "Broadcast receivers"
+        ]
+    },
+    {
+        "q": "What does iOS's App Nap feature monitor?",
+        "o": [
+            "App background activity",
+            "User keychain access",
+            "Network connections",
+            "File system changes"
+        ]
+    },
+    {
+        "q": "How do testers bypass Android's OEM unlock detection?",
+        "o": [
+            "Hooking system property reads",
+            "Locking bootloader",
+            "Using stock ROM",
+            "Enforcing verified boot"
+        ]
+    },
+    {
+        "q": "Which iOS API can be abused for call interception?",
+        "o": [
+            "CallKit",
+            "UIKit",
+            "CoreData",
+            "MapKit"
+        ]
+    },
+    {
+        "q": "What information is stored in Android's diskstats?",
+        "o": [
+            "I/O operation patterns",
+            "User credentials",
+            "Network endpoints",
+            "File contents"
+        ]
+    },
+    {
+        "q": "How can testers identify insecure use of Android's GCM/FCM?",
+        "o": [
+            "Checking push notification payloads",
+            "Testing message delivery",
+            "Monitoring battery use",
+            "Analyzing registration"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement allows location access always?",
+        "o": [
+            "NSLocationAlwaysUsageDescription",
+            "com.apple.security",
+            "application-identifier",
+            "get-task-allow"
+        ]
+    },
+    {
+        "q": "What does analyzing Android's SurfaceFlinger reveal?",
+        "o": [
+            "Screen composition and overlays",
+            "User keystrokes",
+            "Network traffic",
+            "File operations"
+        ]
+    },
+    {
+        "q": "How do testers bypass iOS app revocation that checks bundle integrity?",
+        "o": [
+            "Hooking bundle validation methods",
+            "Reinstalling application",
+            "Using different certificate",
+            "Restarting device"
+        ]
+    },
+    {
+        "q": "Which Android permission can lead to call interception?",
+        "o": [
+            "READ_CALL_LOG",
+            "INTERNET",
+            "ACCESS_WIFI_STATE",
+            "VIBRATE"
+        ]
+    },
+    {
+        "q": "How can testers exploit Android's insecure content provider SQL injection vulnerabilities?",
+        "o": [
+            "Using crafted URIs with projection/selection parameters",
+            "Modifying the app's manifest file permissions",
+            "Intercepting network traffic between provider and app",
+            "Decompiling and patching the content provider code"
+        ]
+    },
+    {
+        "q": "What techniques bypass iOS binary encryption on non-jailbroken devices?",
+        "o": [
+            "Frida Gadget injection and dynamic instrumentation",
+            "Using Clutch or dumpdecrypted tools only",
+            "App Store enterprise distribution",
+            "Xcode debugging with development provision"
+        ]
+    },
+    {
+        "q": "Which Android kernel exploits allow breaking out of the application sandbox?",
+        "o": [
+            "CVE-2016-5195 (Dirty Cow)",
+            "Heartbleed OpenSSL vulnerability",
+            "Stagefright media library bugs",
+            "KRACK WPA2 protocol attack"
+        ]
+    },
+    {
+        "q": "How do testers analyze iOS apps that use anti-hooking techniques?",
+        "o": [
+            "Bypassing with custom Frida scripts",
+            "Using standard debugging tools",
+            "Recompiling from source code",
+            "Testing on simulator only"
+        ]
+    },
+    {
+        "q": "What does Android's verified boot process protect against?",
+        "o": [
+            "Unauthorized system partition modifications",
+            "Network man-in-the-middle attacks",
+            "SQL injection vulnerabilities",
+            "Cross-site scripting exploits"
+        ]
+    },
+    {
+        "q": "Which iOS feature can leak sensitive data through Universal Links?",
+        "o": [
+            "Handling URLs without proper validation",
+            "Push notification delivery",
+            "Background app refresh",
+            "Location region monitoring"
+        ]
+    },
+    {
+        "q": "How can testers exploit Android's insecure Broadcast Receivers?",
+        "o": [
+            "Sending malicious broadcasts with extras",
+            "Modifying receiver priority in manifest",
+            "Disabling receiver components",
+            "Monitoring receiver logs only"
+        ]
+    },
+    {
+        "q": "What information is stored in iOS's secure enclave processor?",
+        "o": [
+            "Biometric data and cryptographic keys",
+            "User application source code",
+            "Network traffic logs",
+            "App cache directories"
+        ]
+    },
+    {
+        "q": "How do testers bypass Android's FLAG_SECURE window protection?",
+        "o": [
+            "Hooking View.setSecure method with Frida",
+            "Taking screenshots with ADB commands",
+            "Using hardware video output capture",
+            "Rooting device and disabling flag"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement allows reading other apps' keychain items?",
+        "o": [
+            "keychain-access-groups with wildcard",
+            "application-identifier",
+            "com.apple.developer",
+            "get-task-allow"
+        ]
+    },
+    {
+        "q": "What does Android's Trusted Execution Environment (TEE) provide?",
+        "o": [
+            "Isolated secure world for sensitive operations",
+            "Network traffic encryption",
+            "App sandboxing mechanisms",
+            "File system permissions"
+        ]
+    },
+    {
+        "q": "How can testers analyze iOS apps compiled with Swift?",
+        "o": [
+            "Using Swift decompilers and demanglers",
+            "Objective-C runtime introspection",
+            "Reading Swift source code",
+            "Compiling with debug symbols"
+        ]
+    },
+    {
+        "q": "Which Android vulnerability enables arbitrary code execution via Bluetooth?",
+        "o": [
+            "BlueBorne (CVE-2017-0785)",
+            "Stagefright (CVE-2015-1538)",
+            "Heartbleed (CVE-2014-0160)",
+            "KRACK (CVE-2017-13077)"
+        ]
+    },
+    {
+        "q": "How do testers bypass iOS jailbreak detection that uses multiple sophisticated checks?",
+        "o": [
+            "Comprehensive hooking of filesystem and process checks",
+            "Using non-jailbroken test devices",
+            "Restoring device to factory settings",
+            "Disabling all Cydia Substrate tweaks"
+        ]
+    },
+    {
+        "q": "What information can be extracted from Android's /proc/pid/maps?",
+        "o": [
+            "Memory layout and loaded libraries",
+            "User login credentials",
+            "Network connection details",
+            "File system structure"
+        ]
+    },
+    {
+        "q": "Which iOS API can be exploited for persistent data storage without user knowledge?",
+        "o": [
+            "NSUserDefaults with iCloud sync",
+            "UIApplication background tasks",
+            "NSNotificationCenter observers",
+            "CFNotificationCenter posting"
+        ]
+    },
+    {
+        "q": "How can testers exploit Android's insecure Parcelable deserialization?",
+        "o": [
+            "Crafting malicious parcels with custom class loaders",
+            "Modifying serialVersionUID fields",
+            "Compressing parcel data differently",
+            "Encrypting parcel contents"
+        ]
+    },
+    {
+        "q": "What does iOS's Pointer Authentication Codes (PAC) protect against?",
+        "o": [
+            "Return-oriented programming attacks",
+            "SQL injection vulnerabilities",
+            "Cross-site scripting exploits",
+            "Man-in-the-middle attacks"
+        ]
+    },
+    {
+        "q": "How do testers analyze Android apps protected by DexGuard string encryption?",
+        "o": [
+            "Dynamic analysis with decryption function hooks",
+            "Static analysis of encrypted strings",
+            "Reading developer documentation",
+            "Testing on emulator only"
+        ]
+    },
+    {
+        "q": "Which Android component can be exploited via fragment injection in PreferenceActivity?",
+        "o": [
+            "Arbitrary fragment loading from malicious sources",
+            "Background service manipulation",
+            "Content provider data theft",
+            "Broadcast receiver spoofing"
+        ]
+    },
+    {
+        "q": "What information is stored in iOS's kernel task port?",
+        "o": [
+            "Kernel memory and task structures",
+            "User application data",
+            "Network packet contents",
+            "File system metadata"
+        ]
+    },
+    {
+        "q": "How can testers bypass Android's Network Security Config certificate pinning at native level?",
+        "o": [
+            "Hooking OpenSSL/BoringSSL certificate validation",
+            "Modifying network_security_config.xml",
+            "Using different network interfaces",
+            "Changing system time and date"
+        ]
+    },
+    {
+        "q": "Which iOS vulnerability allowed persistent jailbreaks on A11 chips?",
+        "o": [
+            "checkm8 bootrom exploit",
+            "SockPuppet kernel bug",
+            "WebKit RCE vulnerabilities",
+            "WiFi firmware exploits"
+        ]
+    },
+    {
+        "q": "How do testers identify insecure use of Android's FingerprintManager?",
+        "o": [
+            "Checking for fallback mechanisms without crypto",
+            "Testing fingerprint recognition speed",
+            "Monitoring sensor hardware calls",
+            "Analyzing UI feedback messages"
+        ]
+    },
+    {
+        "q": "What does Android's hardware-backed keystore provide over software keystore?",
+        "o": [
+            "Key material never exposed to kernel",
+            "Faster cryptographic operations",
+            "Larger key storage capacity",
+            "Automatic key rotation"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement allows access to the device's UDID?",
+        "o": [
+            "com.apple.coretelephony",
+            "application-identifier",
+            "keychain-access-groups",
+            "get-task-allow"
+        ]
+    },
+    {
+        "q": "How can testers exploit Android's insecure use of SQLite databases with user data?",
+        "o": [
+            "SQL injection via content providers",
+            "Reading database files directly",
+            "Monitoring database transactions",
+            "Compressing database files"
+        ]
+    },
+    {
+        "q": "What information can be extracted from iOS's syslog after crash?",
+        "o": [
+            "Register states and stack traces",
+            "User keychain contents",
+            "App Store purchase history",
+            "iCloud backup tokens"
+        ]
+    },
+    {
+        "q": "How do testers bypass Android's root detection that uses native code checks?",
+        "o": [
+            "Hooking native methods with Frida or custom LD_PRELOAD",
+            "Unrooting the test device",
+            "Using different Android version",
+            "Enabling Magisk hide"
+        ]
+    },
+    {
+        "q": "Which Android permission combined with others can lead to full device compromise?",
+        "o": [
+            "WRITE_SECURE_SETTINGS with ADB shell",
+            "INTERNET with ACCESS_WIFI_STATE",
+            "VIBRATE with WAKE_LOCK",
+            "CAMERA with RECORD_AUDIO"
+        ]
+    },
+    {
+        "q": "What does iOS's Kernel Patch Protection (KPP) monitor?",
+        "o": [
+            "Kernel integrity and modifications",
+            "User app memory usage",
+            "Network traffic patterns",
+            "File system permissions"
+        ]
+    },
+    {
+        "q": "How can testers analyze Android apps protected by Obfuscator-LLVM?",
+        "o": [
+            "Dynamic tracing with instruction counting",
+            "Static decompilation with standard tools",
+            "Reading symbol tables directly",
+            "Debugging with breakpoints"
+        ]
+    },
+    {
+        "q": "Which iOS feature can expose sensitive data through Siri Suggestions?",
+        "o": [
+            "Donated intents with userInfo",
+            "Push notification payloads",
+            "Background fetch data",
+            "Location region events"
+        ]
+    },
+    {
+        "q": "How do testers exploit Android's insecure custom URL schemes?",
+        "o": [
+            "Crafting malicious intent URIs with parameters",
+            "Modifying the app's AndroidManifest.xml",
+            "Intercepting network traffic to URLs",
+            "Decompiling URL handling code"
+        ]
+    },
+    {
+        "q": "What information is stored in Android's batterystats dump?",
+        "o": [
+            "Detailed power usage per component",
+            "User login timestamps",
+            "Network packet contents",
+            "File access patterns"
+        ]
+    },
+    {
+        "q": "Which iOS framework can be abused for keyboard logging?",
+        "o": [
+            "UIKeyboard extensions",
+            "UIKit",
+            "CoreData",
+            "MapKit"
+        ]
+    },
+    {
+        "q": "How can testers bypass Android's FLAG_SECURE on non-rooted devices?",
+        "o": [
+            "Using accessibility service to capture screen",
+            "ADB shell screencap commands",
+            "Hardware HDMI capture",
+            "Camera recording of screen"
+        ]
+    },
+    {
+        "q": "What does iOS's Code Directory hash protect?",
+        "o": [
+            "Binary integrity verification",
+            "User data encryption",
+            "Network certificate validation",
+            "App sandbox permissions"
+        ]
+    },
+    {
+        "q": "How do testers identify insecure use of Android's KeyStore with WeakBox?",
+        "o": [
+            "Checking for software-only implementations",
+            "Testing encryption performance",
+            "Monitoring key generation logs",
+            "Analyzing key storage files"
+        ]
+    },
+    {
+        "q": "Which Android vulnerability allows arbitrary app installation via text message?",
+        "o": [
+            "Stagefright (CVE-2015-1538)",
+            "BlueBorne (CVE-2017-0785)",
+            "KRACK (CVE-2017-13077)",
+            "Heartbleed (CVE-2014-0160)"
+        ]
+    },
+    {
+        "q": "What information can be extracted from iOS's PowerLog?",
+        "o": [
+            "App wakeup and activity patterns",
+            "User keychain items",
+            "Network endpoints",
+            "File contents"
+        ]
+    },
+    {
+        "q": "How can testers analyze Android apps with anti-emulator techniques?",
+        "o": [
+            "Patching emulator detection methods",
+            "Using physical test devices",
+            "Running on different emulators",
+            "Disabling Google Play Services"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement allows access to call history?",
+        "o": [
+            "com.apple.coretelephony",
+            "application-identifier",
+            "keychain-access-groups",
+            "get-task-allow"
+        ]
+    },
+    {
+        "q": "How do testers exploit Android's insecure PendingIntent with mutable flag?",
+        "o": [
+            "Modifying intent extras before delivery",
+            "Changing intent action strings",
+            "Adding new categories to intent",
+            "Removing intent flags"
+        ]
+    },
+    {
+        "q": "What does iOS's AMFI (Apple Mobile File Integrity) enforce?",
+        "o": [
+            "Code signature validation",
+            "User data encryption",
+            "Network firewall rules",
+            "App sandbox policies"
+        ]
+    },
+    {
+        "q": "How can testers bypass iOS app revocation that checks for modified executables?",
+        "o": [
+            "Hooking integrity check functions",
+            "Re-signing with valid certificate",
+            "Using original App Store version",
+            "Installing with different Apple ID"
+        ]
+    },
+    {
+        "q": "Which Android permission can be abused for call recording?",
+        "o": [
+            "CAPTURE_AUDIO_OUTPUT",
+            "RECORD_AUDIO",
+            "MODIFY_AUDIO_SETTINGS",
+            "ACCESS_ULTRASOUND"
+        ]
+    },
+    {
+        "q": "What information is stored in Android's anr traces?",
+        "o": [
+            "Thread stacks at ANR time",
+            "User credentials",
+            "Network packets",
+            "Database queries"
+        ]
+    },
+    {
+        "q": "How do testers identify insecure use of Android's WebView with file access?",
+        "o": [
+            "Checking for file:// scheme with universal access",
+            "Testing JavaScript execution speed",
+            "Monitoring memory usage patterns",
+            "Analyzing cache directory"
+        ]
+    },
+    {
+        "q": "Which iOS feature can leak data through Copy/Paste across apps?",
+        "o": [
+            "UIPasteboard with persistence",
+            "NSNotificationCenter",
+            "CFNotificationCenter",
+            "UIApplication events"
+        ]
+    },
+    {
+        "q": "How can testers exploit Android's insecure backup of sensitive data?",
+        "o": [
+            "Extracting and analyzing backup files",
+            "Modifying backup restore process",
+            "Intercepting backup network traffic",
+            "Compressing backup data differently"
+        ]
+    },
+    {
+        "q": "What does Android's dm-verity protect against?",
+        "o": [
+            "Block device tampering",
+            "Network MITM attacks",
+            "SQL injection",
+            "Cross-site scripting"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement allows access to motion activity data?",
+        "o": [
+            "NSMotionUsageDescription",
+            "com.apple.security",
+            "application-identifier",
+            "get-task-allow"
+        ]
+    },
+    {
+        "q": "How do testers bypass Android's SafetyNet with Magisk?",
+        "o": [
+            "Using MagiskHide with proper configuration",
+            "Uninstalling Magisk completely",
+            "Disabling root access",
+            "Locking bootloader"
+        ]
+    },
+    {
+        "q": "What information can be extracted from iOS's biometrickitd logs?",
+        "o": [
+            "Biometric authentication attempts",
+            "User keychain items",
+            "App usage statistics",
+            "Network connections"
+        ]
+    },
+    {
+        "q": "How can testers analyze Android apps with whitebox cryptography?",
+        "o": [
+            "Dynamic tracing of key extraction",
+            "Static analysis of lookup tables",
+            "Reading cryptographic documentation",
+            "Testing encryption speed"
+        ]
+    },
+    {
+        "q": "Which Android vulnerability enables privilege escalation via device policy?",
+        "o": [
+            "CVE-2020-0219 (DevicePolicyManager)",
+            "Stagefright media bugs",
+            "BlueBorne Bluetooth exploit",
+            "KRACK Wi-Fi attack"
+        ]
+    },
+    {
+        "q": "What does iOS's sandbox container privacy protection enforce?",
+        "o": [
+            "File access restrictions per app",
+            "Network traffic encryption",
+            "Memory usage limits",
+            "CPU time allocation"
+        ]
+    },
+    {
+        "q": "How do testers exploit Android's insecure custom permissions?",
+        "o": [
+            "Creating apps with same permission names",
+            "Modifying permission protection levels",
+            "Removing permission checks",
+            "Disabling permission enforcement"
+        ]
+    },
+    {
+        "q": "Which iOS API can be abused for silent audio recording?",
+        "o": [
+            "AVAudioSession with background mode",
+            "UIApplication",
+            "NSNotificationCenter",
+            "CFNotificationCenter"
+        ]
+    },
+    {
+        "q": "How can testers bypass Android's FBE (File-Based Encryption)?",
+        "o": [
+            "Extracting keys from memory when device unlocked",
+            "Brute-forcing encryption passwords",
+            "Using recovery mode exploits",
+            "Flashing custom recovery"
+        ]
+    },
+    {
+        "q": "What information is stored in Android's tombstone files for native crashes?",
+        "o": [
+            "Register dumps and memory around crash",
+            "User login credentials",
+            "Network packets",
+            "Database records"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement allows access to Apple Pay data?",
+        "o": [
+            "com.apple.passbook",
+            "application-identifier",
+            "keychain-access-groups",
+            "get-task-allow"
+        ]
+    },
+    {
+        "q": "How do testers identify insecure use of Android's BiometricPrompt with CryptoObject?",
+        "o": [
+            "Checking cipher initialization before authentication",
+            "Testing biometric recognition speed",
+            "Monitoring sensor events",
+            "Analyzing UI prompts"
+        ]
+    },
+    {
+        "q": "What does iOS's KTRR (Kernel Text Readonly Region) protect?",
+        "o": [
+            "Kernel code from modification",
+            "User data encryption",
+            "Network certificate storage",
+            "App sandbox boundaries"
+        ]
+    },
+    {
+        "q": "How can testers analyze Android apps that use OAT compilation?",
+        "o": [
+            "Examining oatdump output for methods",
+            "Decompiling DEX files directly",
+            "Reading ELF headers only",
+            "Monitoring network traffic"
+        ]
+    },
+    {
+        "q": "Which Android component can be exploited via Sticky Broadcast?",
+        "o": [
+            "Last broadcast data accessible to any app",
+            "Background services",
+            "Content providers",
+            "Activities"
+        ]
+    },
+    {
+        "q": "What information can be extracted from iOS's idstorage log?",
+        "o": [
+            "Device identifier access attempts",
+            "User keychain items",
+            "App usage statistics",
+            "Network connections"
+        ]
+    },
+    {
+        "q": "How do testers bypass iOS app encryption on A12+ devices?",
+        "o": [
+            "Using checkm8 bootrom exploit chain",
+            "Clutch decryption tool only",
+            "App Store enterprise distribution",
+            "Xcode debug builds"
+        ]
+    },
+    {
+        "q": "Which Android permission can be abused for screen recording?",
+        "o": [
+            "MEDIA_PROJECTION",
+            "RECORD_AUDIO",
+            "SYSTEM_ALERT_WINDOW",
+            "WRITE_EXTERNAL_STORAGE"
+        ]
+    },
+    {
+        "q": "What does iOS's PAC (Pointer Authentication Codes) protect against in userspace?",
+        "o": [
+            "ROP/JOP attack mitigation",
+            "SQL injection vulnerabilities",
+            "XSS exploit prevention",
+            "MITM attack detection"
+        ]
+    },
+    {
+        "q": "How can testers exploit Android's insecure Fragment injection?",
+        "o": [
+            "Loading arbitrary fragments via intent extras",
+            "Modifying fragment arguments",
+            "Changing fragment lifecycle",
+            "Removing fragment checks"
+        ]
+    },
+    {
+        "q": "Which iOS framework can be abused for persistent location tracking?",
+        "o": [
+            "CoreLocation with significant change",
+            "UIKit",
+            "MapKit",
+            "AVFoundation"
+        ]
+    },
+    {
+        "q": "How do testers identify insecure use of Android's Network Security Config with debug overrides?",
+        "o": [
+            "Checking for user CA certificates in debug builds",
+            "Testing certificate validation speed",
+            "Monitoring handshake logs",
+            "Analyzing network traffic"
+        ]
+    },
+    {
+        "q": "What information is stored in Android's dumpsys package output?",
+        "o": [
+            "Package permissions and component info",
+            "User credentials",
+            "Network packets",
+            "Database content"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement allows access to SMS messages?",
+        "o": [
+            "com.apple.coretelephony",
+            "application-identifier",
+            "keychain-access-groups",
+            "get-task-allow"
+        ]
+    },
+    {
+        "q": "How can testers bypass Android's keystore hardware-backed security?",
+        "o": [
+            "Extracting keys via kernel vulnerabilities",
+            "Using software keystore fallback",
+            "Brute-forcing key passwords",
+            "Flashing custom ROMs"
+        ]
+    },
+    {
+        "q": "What does iOS's bootchain secure boot verify?",
+        "o": [
+            "Each stage before execution",
+            "User data encryption",
+            "Network connections",
+            "App signatures"
+        ]
+    },
+    {
+        "q": "How do testers analyze Android apps with anti-Frida techniques?",
+        "o": [
+            "Using custom Frida gadgets with detection bypass",
+            "Standard Frida scripts only",
+            "Physical device debugging",
+            "Emulator testing"
+        ]
+    },
+    {
+        "q": "Which Android vulnerability allows system app installation from untrusted sources?",
+        "o": [
+            "CVE-2020-0096 (PackageManager)",
+            "Stagefright media bugs",
+            "BlueBorne exploit",
+            "KRACK attack"
+        ]
+    },
+    {
+        "q": "What information can be extracted from iOS's lockdown services?",
+        "o": [
+            "Device pairing and debug status",
+            "User keychain items",
+            "App Store purchases",
+            "iCloud documents"
+        ]
+    },
+    {
+        "q": "How can testers exploit Android's insecure Task Affinity with task hijacking?",
+        "o": [
+            "Creating activities with same task affinity",
+            "Modifying launch modes",
+            "Changing activity flags",
+            "Removing intent filters"
+        ]
+    },
+    {
+        "q": "Which iOS API can be abused for clipboard monitoring?",
+        "o": [
+            "UIPasteboard change notifications",
+            "UIApplication",
+            "NSNotificationCenter",
+            "CFNotificationCenter"
+        ]
+    },
+    {
+        "q": "How do testers bypass iOS application state restoration data protection?",
+        "o": [
+            "Modifying state restoration archives",
+            "Deleting app sandbox files",
+            "Restarting the device",
+            "Cleaning keychain items"
+        ]
+    },
+    {
+        "q": "How can testers exploit Android's kernel same-page merging (KSM) for side-channel attacks?",
+        "o": [
+            "Using page merge patterns to infer app memory content",
+            "Modifying KSM tuning parameters for faster merging",
+            "Disabling KSM to prevent memory optimizations",
+            "Monitoring KSM statistics for performance data"
+        ]
+    },
+    {
+        "q": "What techniques bypass iOS's PAC (Pointer Authentication Codes) on A13+ devices?",
+        "o": [
+            "Exploiting PAC signing oracle with speculative execution",
+            "Using standard ROP chains without bypass",
+            "Disabling PAC via kernel patching",
+            "Brute-forcing 16-bit PAC signatures"
+        ]
+    },
+    {
+        "q": "Which Android TrustZone vulnerability allows secure world code execution?",
+        "o": [
+            "CVE-2019-1056 (QSEE privilege escalation)",
+            "Heartbleed OpenSSL bug",
+            "Stagefright media library",
+            "BlueBorne Bluetooth exploit"
+        ]
+    },
+    {
+        "q": "How do testers analyze iOS apps protected by Dyld shared cache obfuscation?",
+        "o": [
+            "Extracting and rebasing cache for analysis",
+            "Running apps on simulator only",
+            "Using standard disassemblers directly",
+            "Reading Apple documentation"
+        ]
+    },
+    {
+        "q": "What does Android's ION memory allocator vulnerability enable?",
+        "o": [
+            "Physical memory address exposure",
+            "Network traffic decryption",
+            "SQL database corruption",
+            "File system manipulation"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement combined with others can bypass Transparency Consent?",
+        "o": [
+            "com.apple.developer.device-information.user",
+            "aps-environment",
+            "keychain-access-groups",
+            "application-identifier"
+        ]
+    },
+    {
+        "q": "How can testers exploit Android's V8 engine memory corruption in WebView?",
+        "o": [
+            "Crafting JavaScript with JIT spray techniques",
+            "Using standard HTML injection",
+            "Modifying CSS stylesheets",
+            "Changing WebView cache settings"
+        ]
+    },
+    {
+        "q": "What information can be extracted from iOS's secure page table mappings?",
+        "o": [
+            "Kernel memory layout and permissions",
+            "User application source code",
+            "Network packet contents",
+            "File system metadata"
+        ]
+    },
+    {
+        "q": "How do testers bypass Android's SELinux policies in system apps?",
+        "o": [
+            "Exploiting policy reload vulnerabilities",
+            "Disabling SELinux via kernel patch",
+            "Using permissive mode only",
+            "Changing file contexts"
+        ]
+    },
+    {
+        "q": "Which iOS kernel vulnerability enabled tfp0 (task for pid 0) on iOS 13?",
+        "o": [
+            "CVE-2020-9839 (out-of-bounds read)",
+            "checkm8 bootrom exploit",
+            "SockPuppet kernel bug",
+            "WebKit RCE chain"
+        ]
+    },
+    {
+        "q": "What does Android's HDCP (High-bandwidth Digital Content Protection) vulnerability expose?",
+        "o": [
+            "Screen content during protected playback",
+            "Network authentication keys",
+            "App signing certificates",
+            "Database encryption keys"
+        ]
+    },
+    {
+        "q": "How can testers analyze iOS apps with anti-debugging that uses ptrace?",
+        "o": [
+            "Hooking ptrace with custom syscall handler",
+            "Using standard debugger breakpoints",
+            "Running on non-jailbroken device",
+            "Disabling debug server"
+        ]
+    },
+    {
+        "q": "Which Android component can be exploited via Bundle serialization gadget chains?",
+        "o": [
+            "Custom Parcelable objects with deserialization",
+            "Standard Intent extras",
+            "SharedPreferences keys",
+            "ContentProvider URIs"
+        ]
+    },
+    {
+        "q": "What information is stored in iOS's kernel slide randomness?",
+        "o": [
+            "ASLR offset for kernel base",
+            "User keychain encryption keys",
+            "App binary signatures",
+            "Network certificate pins"
+        ]
+    },
+    {
+        "q": "How do testers bypass Android's hardware-backed keystore with fault injection?",
+        "o": [
+            "Voltage glitching on secure element",
+            "Software key extraction only",
+            "Brute-force key guessing",
+            "Using recovery mode"
+        ]
+    },
+    {
+        "q": "Which iOS framework can leak data through CoreDuet context storage?",
+        "o": [
+            "_CDContextQueries with sensitive keys",
+            "UIKit",
+            "CoreData",
+            "MapKit"
+        ]
+    },
+    {
+        "q": "How can testers exploit Android's Binder use-after-free vulnerabilities?",
+        "o": [
+            "Spraying objects and triggering UAF",
+            "Monitoring Binder transaction logs",
+            "Modifying Binder thread pools",
+            "Changing Binder protocol"
+        ]
+    },
+    {
+        "q": "What does iOS's APFS volume encryption miss?",
+        "o": [
+            "Metadata may remain unencrypted",
+            "File contents always encrypted",
+            "Directory structure hidden",
+            "Extended attributes protected"
+        ]
+    },
+    {
+        "q": "How do testers identify insecure use of Android's FingerprintManager with invalidated keys?",
+        "o": [
+            "Checking key invalidation after enrollment changes",
+            "Testing fingerprint recognition speed",
+            "Monitoring sensor authentication logs",
+            "Analyzing UI feedback timing"
+        ]
+    },
+    {
+        "q": "Which Android vulnerability allows arbitrary file overwrite via installed apps?",
+        "o": [
+            "CVE-2020-0096 (PackageManager)",
+            "Stagefright media bugs",
+            "BlueBorne exploit",
+            "KRACK attack"
+        ]
+    },
+    {
+        "q": "What information can be extracted from iOS's AOP (Always-On Processor) memory?",
+        "o": [
+            "Sensor data and device state",
+            "User keychain items",
+            "App Store credentials",
+            "iCloud tokens"
+        ]
+    },
+    {
+        "q": "How can testers bypass Android's CFI (Control Flow Integrity) in native code?",
+        "o": [
+            "Using JIT pages with executable memory",
+            "Standard ROP techniques only",
+            "Disabling CFI at compile time",
+            "Modifying shadow stacks"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement allows access to Bluetooth always?",
+        "o": [
+            "com.apple.corebluetooth",
+            "application-identifier",
+            "keychain-access-groups",
+            "get-task-allow"
+        ]
+    },
+    {
+        "q": "How do testers exploit Android's SystemServer exposed services?",
+        "o": [
+            "Accessing hidden service interfaces",
+            "Modifying service binder tokens",
+            "Disabling service permissions",
+            "Monitoring service logs"
+        ]
+    },
+    {
+        "q": "What does iOS's Page Protection Layer (PPL) protect on newer devices?",
+        "o": [
+            "Kernel page tables from modification",
+            "User app memory encryption",
+            "Network packet filtering",
+            "File system journaling"
+        ]
+    },
+    {
+        "q": "How can testers analyze Android apps with LLVM obfuscation passes?",
+        "o": [
+            "Tracing JIT-compiled code patterns",
+            "Static decompilation only",
+            "Reading compiler documentation",
+            "Testing on emulator"
+        ]
+    },
+    {
+        "q": "Which Android component can be exploited via Input Method Editor (IME) injection?",
+        "o": [
+            "Injecting keystrokes into other apps",
+            "Background services",
+            "Content providers",
+            "Broadcast receivers"
+        ]
+    },
+    {
+        "q": "What information is stored in iOS's non-volatile RAM (NVRAM)?",
+        "o": [
+            "Boot arguments and variables",
+            "User keychain items",
+            "App Store purchases",
+            "iCloud documents"
+        ]
+    },
+    {
+        "q": "How do testers bypass iOS's KPP (Kernel Patch Protection) on checkm8 devices?",
+        "o": [
+            "Using bootrom exploit to disable KPP",
+            "Standard kernel patching only",
+            "Running unsigned code",
+            "Disabling SIP"
+        ]
+    },
+    {
+        "q": "Which Android Trusted Application (TA) vulnerabilities exist in TEE?",
+        "o": [
+            "CVE-2020-11136 (QSEE memory leak)",
+            "Heartbleed bug",
+            "Stagefright exploit",
+            "BlueBorne attack"
+        ]
+    },
+    {
+        "q": "What does iOS's Image4 format validate?",
+        "o": [
+            "Boot component signatures",
+            "User data encryption",
+            "App bundle integrity",
+            "Network certificates"
+        ]
+    },
+    {
+        "q": "How can testers exploit Android's SystemProperties with arbitrary writes?",
+        "o": [
+            "Modifying system properties via vulnerabilities",
+            "Reading property values only",
+            "Changing build.prop file",
+            "Using setprop command"
+        ]
+    },
+    {
+        "q": "Which iOS API can be abused for silent photo capture?",
+        "o": [
+            "AVCaptureSession with background mode",
+            "UIKit",
+            "CoreImage",
+            "Metal"
+        ]
+    },
+    {
+        "q": "How do testers identify insecure use of Android's BiometricManager with weak liveness?",
+        "o": [
+            "Testing presentation attacks with artifacts",
+            "Checking authentication success rate",
+            "Monitoring sensor quality metrics",
+            "Analyzing template storage"
+        ]
+    },
+    {
+        "q": "What information can be extracted from iOS's kernel task structs?",
+        "o": [
+            "Process credentials and entitlements",
+            "User application source code",
+            "Network packet contents",
+            "File system data"
+        ]
+    },
+    {
+        "q": "How can testers bypass Android's F2FS encryption with direct block access?",
+        "o": [
+            "Reading raw block device when unlocked",
+            "Using file-level decryption only",
+            "Mounting filesystem elsewhere",
+            "Changing encryption keys"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement allows access to call audio routing?",
+        "o": [
+            "com.apple.coretelephony",
+            "application-identifier",
+            "keychain-access-groups",
+            "get-task-allow"
+        ]
+    },
+    {
+        "q": "How do testers exploit Android's MediaCodec vulnerabilities?",
+        "o": [
+            "Crafting malformed media streams for RCE",
+            "Playing standard video files",
+            "Recording audio input",
+            "Capturing camera output"
+        ]
+    },
+    {
+        "q": "What does iOS's SEP (Secure Enclave Processor) firmware contain?",
+        "o": [
+            "AES and EC keys for encryption",
+            "User app source code",
+            "Network traffic logs",
+            "File system structure"
+        ]
+    },
+    {
+        "q": "How can testers analyze Android apps with arm64 pointer authentication?",
+        "o": [
+            "Bypassing with speculative execution",
+            "Standard disassembly methods",
+            "Reading compiler symbols",
+            "Debugging with breakpoints"
+        ]
+    },
+    {
+        "q": "Which Android vulnerability enables permanent denial of service via modem?",
+        "o": [
+            "CVE-2020-11234 (baseband RCE)",
+            "Stagefright media bugs",
+            "BlueBorne exploit",
+            "KRACK attack"
+        ]
+    },
+    {
+        "q": "What information is stored in iOS's crash reporter for kernel panics?",
+        "o": [
+            "Register states and panic strings",
+            "User keychain contents",
+            "App Store purchase history",
+            "iCloud backup tokens"
+        ]
+    },
+    {
+        "q": "How do testers bypass Android's VTS (Vendor Test Suite) security requirements?",
+        "o": [
+            "Exploiting vendor HAL implementations",
+            "Using AOSP reference code only",
+            "Disabling SELinux permissively",
+            "Modifying CTS tests"
+        ]
+    },
+    {
+        "q": "Which iOS framework can leak data through CoreMotion background updates?",
+        "o": [
+            "CMSensorRecorder with historical data",
+            "UIKit",
+            "CoreData",
+            "MapKit"
+        ]
+    },
+    {
+        "q": "How can testers exploit Android's PackageManager with shared user IDs?",
+        "o": [
+            "Gaining cross-app permissions via shared UID",
+            "Installing apps separately",
+            "Changing package signatures",
+            "Modifying manifest files"
+        ]
+    },
+    {
+        "q": "What does iOS's BootROM vulnerability checkm8 enable?",
+        "o": [
+            "Arbitrary code execution at boot",
+            "User data decryption",
+            "App installation",
+            "Network access"
+        ]
+    },
+    {
+        "q": "How do testers identify insecure use of Android's KeyGenParameterSpec with user auth?",
+        "o": [
+            "Testing key use after device lock",
+            "Checking key generation speed",
+            "Monitoring authentication events",
+            "Analyzing key storage"
+        ]
+    },
+    {
+        "q": "Which Android component can be exploited via Accessibility Service abuse?",
+        "o": [
+            "Performing actions on behalf of user",
+            "Background services",
+            "Content providers",
+            "Broadcast receivers"
+        ]
+    },
+    {
+        "q": "What information can be extracted from iOS's secure enclave NVRAM?",
+        "o": [
+            "SEP firmware and configuration",
+            "User keychain items",
+            "App Store purchases",
+            "iCloud documents"
+        ]
+    },
+    {
+        "q": "How can testers bypass Android's verified boot with vbmeta corruption?",
+        "o": [
+            "Exploiting vbmeta hash verification",
+            "Locking bootloader only",
+            "Using stock firmware",
+            "Enforcing dm-verity"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement allows access to HomeKit data?",
+        "o": [
+            "com.apple.homekit",
+            "application-identifier",
+            "keychain-access-groups",
+            "get-task-allow"
+        ]
+    },
+    {
+        "q": "How do testers exploit Android's Wi-Fi firmware vulnerabilities?",
+        "o": [
+            "Crafting malicious beacon frames",
+            "Scanning for networks only",
+            "Connecting to open APs",
+            "Monitoring signal strength"
+        ]
+    },
+    {
+        "q": "What does iOS's SPTM (Secure Page Table Monitor) protect?",
+        "o": [
+            "Page table integrity",
+            "User data encryption",
+            "Network certificates",
+            "App sandboxing"
+        ]
+    },
+    {
+        "q": "How can testers analyze Android apps with eBPF kernel monitoring?",
+        "o": [
+            "Using eBPF for syscall tracing",
+            "Standard strace debugging",
+            "Reading kernel logs",
+            "Monitoring proc files"
+        ]
+    },
+    {
+        "q": "Which Android vulnerability enables arbitrary code execution in TrustZone?",
+        "o": [
+            "CVE-2019-1056 (QSEE)",
+            "Heartbleed OpenSSL",
+            "Stagefright media",
+            "BlueBorne Bluetooth"
+        ]
+    },
+    {
+        "q": "What information is stored in iOS's kernel zone map?",
+        "o": [
+            "Memory allocation metadata",
+            "User application code",
+            "Network packet data",
+            "File system blocks"
+        ]
+    },
+    {
+        "q": "How do testers bypass Android's scudo hardened allocator?",
+        "o": [
+            "Exploiting logic bugs not memory safety",
+            "Heap spraying techniques",
+            "Use-after-free chaining",
+            "Double-free attacks"
+        ]
+    },
+    {
+        "q": "Which iOS API can be abused for silent call recording?",
+        "o": [
+            "CallKit with VoIP background mode",
+            "UIKit",
+            "AVFoundation",
+            "CoreAudio"
+        ]
+    },
+    {
+        "q": "How can testers exploit Android's SystemUI with overlay attacks?",
+        "o": [
+            "Creating SYSTEM_ALERT_WINDOW overlays",
+            "Modifying notification layouts",
+            "Changing status bar icons",
+            "Disabling quick settings"
+        ]
+    },
+    {
+        "q": "What does iOS's PMP (Protected Memory Pages) enforce?",
+        "o": [
+            "Memory page access restrictions",
+            "Network traffic filtering",
+            "File system permissions",
+            "App sandbox rules"
+        ]
+    },
+    {
+        "q": "How do testers identify insecure use of Android's Identity Credential API?",
+        "o": [
+            "Checking certificate chain validation",
+            "Testing presentation protocols",
+            "Monitoring secure element",
+            "Analyzing proof requests"
+        ]
+    },
+    {
+        "q": "Which Android component can be exploited via WallpaperManager privilege escalation?",
+        "o": [
+            "CVE-2020-0149 (WallpaperManager)",
+            "Stagefright media bugs",
+            "BlueBorne exploit",
+            "KRACK attack"
+        ]
+    },
+    {
+        "q": "What information can be extracted from iOS's SEP OS kernel?",
+        "o": [
+            "Secure Enclave OS structures",
+            "User keychain items",
+            "App Store purchases",
+            "iCloud documents"
+        ]
+    },
+    {
+        "q": "How can testers bypass iOS's Pointer Authentication on userspace apps?",
+        "o": [
+            "Using JIT pages without PAC",
+            "Standard ROP gadgets only",
+            "Disabling PAC in binary",
+            "Brute-forcing signatures"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement allows access to CoreNFC background reads?",
+        "o": [
+            "com.apple.developer.nfc.readersession",
+            "application-identifier",
+            "keychain-access-groups",
+            "get-task-allow"
+        ]
+    },
+    {
+        "q": "How do testers exploit Android's PackageInstaller with session hijacking?",
+        "o": [
+            "Intercepting install sessions",
+            "Modifying APK files only",
+            "Changing installer UI",
+            "Disabling permissions"
+        ]
+    },
+    {
+        "q": "What does iOS's APRR (Application Processor Reset Reason) logs reveal?",
+        "o": [
+            "Kernel panic and reset causes",
+            "User keychain contents",
+            "App usage statistics",
+            "Network connections"
+        ]
+    },
+    {
+        "q": "How can testers analyze Android apps with Samsung RKP (Real-time Kernel Protection)?",
+        "o": [
+            "Exploiting RKP implementation flaws",
+            "Standard kernel debugging",
+            "Reading Samsung documentation",
+            "Using stock Android"
+        ]
+    },
+    {
+        "q": "Which Android vulnerability enables permanent bootloader unlock?",
+        "o": [
+            "CVE-2020-12345 (bootloader bypass)",
+            "Stagefright media bugs",
+            "BlueBorne exploit",
+            "KRACK attack"
+        ]
+    },
+    {
+        "q": "What information is stored in iOS's secure boot nonce?",
+        "o": [
+            "Anti-replay values for boot",
+            "User encryption keys",
+            "App signing certificates",
+            "Network security tokens"
+        ]
+    },
+    {
+        "q": "How do testers bypass Android's GWP-ASan (heap memory protection)?",
+        "o": [
+            "Triggering allocation patterns without sampling",
+            "Standard heap exploitation",
+            "Disabling GWP-ASan",
+            "Using different allocator"
+        ]
+    },
+    {
+        "q": "Which iOS API can be abused for silent motion data collection?",
+        "o": [
+            "CMMotionManager background updates",
+            "UIKit",
+            "CoreData",
+            "MapKit"
+        ]
+    },
+    {
+        "q": "How can testers exploit Android's DRM framework vulnerabilities?",
+        "o": [
+            "Crafting malformed DRM requests",
+            "Playing protected content only",
+            "Extracting license keys",
+            "Bypassing HDCP checks"
+        ]
+    },
+    {
+        "q": "What does iOS's A12+ memory controller protect?",
+        "o": [
+            "Physical memory encryption",
+            "Virtual memory layout",
+            "Cache coherence",
+            "DMA access"
+        ]
+    },
+    {
+        "q": "How do testers identify insecure use of Android's RemoteKeyProvisioning?",
+        "o": [
+            "Checking key attestation chain validation",
+            "Testing provisioning protocols",
+            "Monitoring secure element",
+            "Analyzing certificate storage"
+        ]
+    },
+    {
+        "q": "Which Android component can be exploited via Dynamic Code Loading vulnerabilities?",
+        "o": [
+            "Loading unverified DEX files",
+            "Background services",
+            "Content providers",
+            "Broadcast receivers"
+        ]
+    },
+    {
+        "q": "What information can be extracted from iOS's PMU (Performance Monitoring Unit)?",
+        "o": [
+            "Hardware performance counters",
+            "User keychain items",
+            "App usage statistics",
+            "Network connections"
+        ]
+    },
+    {
+        "q": "How can testers bypass iOS's KASLR with info leaks?",
+        "o": [
+            "Using kernel pointer disclosure bugs",
+            "Brute-forcing slide value",
+            "Reading system logs",
+            "Monitoring crashes"
+        ]
+    },
+    {
+        "q": "Which iOS entitlement allows access to Weather data?",
+        "o": [
+            "com.apple.weather",
+            "application-identifier",
+            "keychain-access-groups",
+            "get-task-allow"
+        ]
+    },
+    {
+        "q": "How do testers exploit Android's NFC stack vulnerabilities?",
+        "o": [
+            "Crafting malicious NDEF messages",
+            "Reading NFC tags only",
+            "Pairing with devices",
+            "Enabling Android Beam"
+        ]
+    },
+    {
+        "q": "What does iOS's SEP OS secure boot verify?",
+        "o": [
+            "SEP firmware signatures",
+            "User data encryption",
+            "App bundle integrity",
+            "Network certificates"
+        ]
+    },
+    {
+        "q": "How can testers analyze Android apps with Knox container security?",
+        "o": [
+            "Exploiting container escape bugs",
+            "Standard app testing",
+            "Reading Samsung Knox docs",
+            "Using regular Android"
+        ]
+    }
+]

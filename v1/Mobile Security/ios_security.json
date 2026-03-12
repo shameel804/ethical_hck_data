@@ -1,0 +1,4376 @@
+[
+    {
+        "q": "What is the primary purpose of the iOS sandbox?",
+        "o": [
+            "Limit app access to system resources",
+            "Increase app download speed",
+            "Improve battery performance",
+            "Enhance display quality"
+        ]
+    },
+    {
+        "q": "Which technology ensures only trusted code runs on iOS devices?",
+        "o": [
+            "Code Signing",
+            "App Thinning",
+            "Bitcode",
+            "Swift Compiler"
+        ]
+    },
+    {
+        "q": "What does the Data Protection API primarily protect?",
+        "o": [
+            "User files and data",
+            "Network connections",
+            "Battery usage",
+            "Processor speed"
+        ]
+    },
+    {
+        "q": "What is a jailbroken device?",
+        "o": [
+            "Device with removed software restrictions",
+            "Device with broken screen",
+            "Device in recovery mode",
+            "Device with expired warranty"
+        ]
+    },
+    {
+        "q": "How does Touch ID authenticate users?",
+        "o": [
+            "Using fingerprint recognition",
+            "Using voice patterns",
+            "Using facial features",
+            "Using iris scanning"
+        ]
+    },
+    {
+        "q": "What is the iOS sandbox?",
+        "o": [
+            "Security mechanism isolating apps",
+            "Game development platform",
+            "Cloud storage service",
+            "App testing environment"
+        ]
+    },
+    {
+        "q": "Which key does iOS use for code signing?",
+        "o": [
+            "Apple issued certificate",
+            "User generated password",
+            "Device serial number",
+            "App store receipt"
+        ]
+    },
+    {
+        "q": "What encryption class provides maximum data protection?",
+        "o": [
+            "Complete Protection",
+            "Protected Unless Open",
+            "Protected Until First Auth",
+            "No Protection"
+        ]
+    },
+    {
+        "q": "What is a common jailbreak detection method?",
+        "o": [
+            "Checking for Cydia app",
+            "Measuring battery temperature",
+            "Counting installed apps",
+            "Testing camera resolution"
+        ]
+    },
+    {
+        "q": "Where is Face ID data stored?",
+        "o": [
+            "Secure Enclave",
+            "iCloud servers",
+            "App memory",
+            "External storage"
+        ]
+    },
+    {
+        "q": "What happens when an app violates sandbox rules?",
+        "o": [
+            "App is terminated",
+            "Phone restarts",
+            "Data is erased",
+            "Warning appears"
+        ]
+    },
+    {
+        "q": "What must developers have to sign iOS apps?",
+        "o": [
+            "Apple Developer account",
+            "GitHub repository",
+            "Twitter verification",
+            "Facebook page"
+        ]
+    },
+    {
+        "q": "When does Data Protection API encrypt files?",
+        "o": [
+            "When device locks",
+            "During app install",
+            "On network transfer",
+            "While charging"
+        ]
+    },
+    {
+        "q": "Which file indicates a jailbroken device?",
+        "o": [
+            "/Applications/Cydia.app",
+            "/System/Library",
+            "/var/mobile",
+            "/private/var"
+        ]
+    },
+    {
+        "q": "What biometric data does Face ID use?",
+        "o": [
+            "3D facial map",
+            "Retina pattern",
+            "Ear shape",
+            "Hand geometry"
+        ]
+    },
+    {
+        "q": "Can apps access files outside their sandbox?",
+        "o": [
+            "No, with rare exceptions",
+            "Yes, always",
+            "Only at night",
+            "During backups"
+        ]
+    },
+    {
+        "q": "What is a provisioning profile?",
+        "o": [
+            "File containing app entitlements",
+            "User agreement document",
+            "App store description",
+            "Marketing material"
+        ]
+    },
+    {
+        "q": "What key protects Data Protection API?",
+        "o": [
+            "Device UID key",
+            "iCloud password",
+            "Apple ID",
+            "SIM card PIN"
+        ]
+    },
+    {
+        "q": "What is Cydia?",
+        "o": [
+            "Alternative app store for jailbroken devices",
+            "Apple productivity app",
+            "iOS development tool",
+            "Cloud gaming service"
+        ]
+    },
+    {
+        "q": "What happens to Touch ID after device restart?",
+        "o": [
+            "Requires passcode first",
+            "Works immediately",
+            "Disables permanently",
+            "Needs reconfiguration"
+        ]
+    },
+    {
+        "q": "What is containerization in iOS?",
+        "o": [
+            "App isolation mechanism",
+            "Battery optimization",
+            "Display technology",
+            "Network protocol"
+        ]
+    },
+    {
+        "q": "What does code signing prevent?",
+        "o": [
+            "Unauthorized code execution",
+            "App downloads",
+            "Internet access",
+            "Battery drain"
+        ]
+    },
+    {
+        "q": "Which files use Data Protection API?",
+        "o": [
+            "All files by default",
+            "Only photos",
+            "Only emails",
+            "Only contacts"
+        ]
+    },
+    {
+        "q": "What is a tethered jailbreak?",
+        "o": [
+            "Requires computer connection to boot",
+            "Permanent device modification",
+            "Wireless exploit only",
+            "Cloud based unlock"
+        ]
+    },
+    {
+        "q": "How many faces can Face ID store?",
+        "o": [
+            "One face",
+            "Five faces",
+            "Ten faces",
+            "Unlimited faces"
+        ]
+    },
+    {
+        "q": "What directory contains app sandbox data?",
+        "o": [
+            "/var/containers/Bundle/Application",
+            "/System/Apps",
+            "/CoreServices",
+            "/Developer"
+        ]
+    },
+    {
+        "q": "What is an entitlements file?",
+        "o": [
+            "Lists app permissions",
+            "App icon set",
+            "Source code",
+            "User manual"
+        ]
+    },
+    {
+        "q": "When is Class C protection applied?",
+        "o": [
+            "After first unlock",
+            "Immediately on lock",
+            "During reboot",
+            "Never applied"
+        ]
+    },
+    {
+        "q": "What is a semi-tethered jailbreak?",
+        "o": [
+            "Can boot without computer but lose jailbreak",
+            "Never needs computer",
+            "Requires constant connection",
+            "Permanent modification"
+        ]
+    },
+    {
+        "q": "What happens after five failed Face ID attempts?",
+        "o": [
+            "Passcode is required",
+            "Face ID disables",
+            "Device erases",
+            "Face ID retrains"
+        ]
+    },
+    {
+        "q": "What is the iOS sandbox based on?",
+        "o": [
+            "UNIX style permissions",
+            "Windows registry",
+            "Linux containers",
+            "Android framework"
+        ]
+    },
+    {
+        "q": "Who issues code signing certificates?",
+        "o": [
+            "Apple Inc.",
+            "Google LLC",
+            "Microsoft Corp",
+            "Amazon Web"
+        ]
+    },
+    {
+        "q": "What is NSFileProtectionComplete?",
+        "o": [
+            "Highest file protection class",
+            "Network security protocol",
+            "App distribution method",
+            "Backup encryption type"
+        ]
+    },
+    {
+        "q": "What does jailbreak detection often check?",
+        "o": [
+            "Write permissions outside sandbox",
+            "Battery health",
+            "Screen resolution",
+            "Processor speed"
+        ]
+    },
+    {
+        "q": "What sensor does Face ID primarily use?",
+        "o": [
+            "TrueDepth camera",
+            "Standard selfie camera",
+            "LiDAR scanner",
+            "Ambient light sensor"
+        ]
+    },
+    {
+        "q": "What is app group container?",
+        "o": [
+            "Shared container for related apps",
+            "Multiplayer gaming",
+            "App store category",
+            "Developer team"
+        ]
+    },
+    {
+        "q": "What is ad-hoc distribution?",
+        "o": [
+            "Limited device testing",
+            "Public app store",
+            "Enterprise deployment",
+            "Beta testing"
+        ]
+    },
+    {
+        "q": "What protects keys in Data Protection API?",
+        "o": [
+            "Hardware encryption engine",
+            "Software algorithm",
+            "Network security",
+            "Cloud storage"
+        ]
+    },
+    {
+        "q": "What is an untethered jailbreak?",
+        "o": [
+            "Permanent jailbreak",
+            "Requires computer",
+            "Temporary exploit",
+            "Cloud based"
+        ]
+    },
+    {
+        "q": "What is Touch ID's false acceptance rate?",
+        "o": [
+            "1 in 50,000",
+            "1 in 1,000",
+            "1 in 100",
+            "1 in 10"
+        ]
+    },
+    {
+        "q": "What is kernel in iOS?",
+        "o": [
+            "Core operating system",
+            "App store",
+            "Web browser",
+            "Music player"
+        ]
+    },
+    {
+        "q": "What happens when code signature fails?",
+        "o": [
+            "App won't launch",
+            "Phone crashes",
+            "Data deletes",
+            "Network disables"
+        ]
+    },
+    {
+        "q": "What is NSFileProtectionCompleteUnlessOpen?",
+        "o": [
+            "Protection for files while closed",
+            "Always encrypted",
+            "Never encrypted",
+            "Network only"
+        ]
+    },
+    {
+        "q": "What is root access on iOS?",
+        "o": [
+            "Highest system privileges",
+            "User account type",
+            "File manager",
+            "Backup system"
+        ]
+    },
+    {
+        "q": "Can Face ID work with sunglasses?",
+        "o": [
+            "Yes, with most types",
+            "No, never",
+            "Only at night",
+            "Requires removal"
+        ]
+    },
+    {
+        "q": "What is the Secure Enclave?",
+        "o": [
+            "Dedicated security coprocessor",
+            "App storage area",
+            "Cloud server",
+            "Network router"
+        ]
+    },
+    {
+        "q": "What is enterprise code signing?",
+        "o": [
+            "Internal app distribution",
+            "Public app signing",
+            "Open source signing",
+            "Individual developer"
+        ]
+    },
+    {
+        "q": "What is file protection class A?",
+        "o": [
+            "Complete Protection",
+            "No Protection",
+            "Network Protection",
+            "Backup Only"
+        ]
+    },
+    {
+        "q": "What is substrate in jailbreaking?",
+        "o": [
+            "Framework for tweaks",
+            "Jailbreak tool",
+            "App store",
+            "Security patch"
+        ]
+    },
+    {
+        "q": "What is Touch ID's match threshold?",
+        "o": [
+            "Multiple partial matches",
+            "Exact pixel match",
+            "Password match",
+            "Pattern match"
+        ]
+    },
+    {
+        "q": "What is iOS container structure?",
+        "o": [
+            "App bundle and data container",
+            "Single unified folder",
+            "Cloud storage",
+            "Network drive"
+        ]
+    },
+    {
+        "q": "What is a developer certificate?",
+        "o": [
+            "Digital identity for signing",
+            "App store receipt",
+            "User license",
+            "Device warranty"
+        ]
+    },
+    {
+        "q": "What is NSFileProtectionNone?",
+        "o": [
+            "No file encryption",
+            "Maximum security",
+            "Partial protection",
+            "Network only"
+        ]
+    },
+    {
+        "q": "What is MobileSubstrate?",
+        "o": [
+            "Jailbreak extension system",
+            "iOS backup tool",
+            "App development kit",
+            "Security scanner"
+        ]
+    },
+    {
+        "q": "What happens to Touch ID with wet fingers?",
+        "o": [
+            "Recognition may fail",
+            "Works perfectly",
+            "Device may shock",
+            "Sensor may break"
+        ]
+    },
+    {
+        "q": "What is the purpose of sandbox containers?",
+        "o": [
+            "Isolate app resources",
+            "Share all data",
+            "Increase speed",
+            "Save battery"
+        ]
+    },
+    {
+        "q": "What is a wildcard app ID?",
+        "o": [
+            "Matches multiple apps",
+            "Specific app only",
+            "System app only",
+            "Game app only"
+        ]
+    },
+    {
+        "q": "When are protected files accessible?",
+        "o": [
+            "Based on lock state",
+            "Always accessible",
+            "Never accessible",
+            "During charging"
+        ]
+    },
+    {
+        "q": "What is evasi0n?",
+        "o": [
+            "Jailbreak tool name",
+            "Security company",
+            "Apple product",
+            "Programming language"
+        ]
+    },
+    {
+        "q": "What is Face ID's neural engine?",
+        "o": [
+            "Dedicated AI hardware",
+            "Cloud AI service",
+            "Software algorithm",
+            "User preference"
+        ]
+    },
+    {
+        "q": "What are iOS app entitlements?",
+        "o": [
+            "Permissions granted to app",
+            "App store rankings",
+            "User ratings",
+            "Download counts"
+        ]
+    },
+    {
+        "q": "What is a bundle ID?",
+        "o": [
+            "Unique app identifier",
+            "App icon set",
+            "Source code file",
+            "User data"
+        ]
+    },
+    {
+        "q": "What is NSFileProtectionCompleteUntilFirstAuth?",
+        "o": [
+            "Protection until first unlock",
+            "Never protects",
+            "Always protects",
+            "Network only"
+        ]
+    },
+    {
+        "q": "What is a semi-untethered jailbreak?",
+        "o": [
+            "Reapply after reboot",
+            "Never needs reboot",
+            "Permanent jailbreak",
+            "Cloud based"
+        ]
+    },
+    {
+        "q": "What is Touch ID's capacitive sensor?",
+        "o": [
+            "Detects finger contact",
+            "Measures temperature",
+            "Checks pulse",
+            "Reads veins"
+        ]
+    },
+    {
+        "q": "What is the System container?",
+        "o": [
+            "Read-only system files",
+            "User downloads",
+            "App data",
+            "Cache files"
+        ]
+    },
+    {
+        "q": "What is code signing identity?",
+        "o": [
+            "Certificate used for signing",
+            "Developer name",
+            "App store ID",
+            "Device name"
+        ]
+    },
+    {
+        "q": "What is data protection class?",
+        "o": [
+            "Encryption level for files",
+            "User password type",
+            "Network security",
+            "Backup method"
+        ]
+    },
+    {
+        "q": "What is a jailbreak exploit?",
+        "o": [
+            "Vulnerability used for jailbreak",
+            "Security patch",
+            "Apple update",
+            "User error"
+        ]
+    },
+    {
+        "q": "What happens to Touch ID after battery drain?",
+        "o": [
+            "Requires passcode",
+            "Loses all prints",
+            "Works normally",
+            "Needs recalibration"
+        ]
+    },
+    {
+        "q": "What is the Data container?",
+        "o": [
+            "App's user data area",
+            "System files",
+            "Cache only",
+            "Temporary files"
+        ]
+    },
+    {
+        "q": "What is a development certificate?",
+        "o": [
+            "Used for testing apps",
+            "Production only",
+            "Enterprise only",
+            "App store only"
+        ]
+    },
+    {
+        "q": "What is key wrapping in Data Protection?",
+        "o": [
+            "Encrypting encryption keys",
+            "Present wrapping",
+            "Data compression",
+            "Network protocol"
+        ]
+    },
+    {
+        "q": "What is a jailbreak tweak?",
+        "o": [
+            "Modification for jailbroken devices",
+            "Apple update",
+            "Security patch",
+            "App store app"
+        ]
+    },
+    {
+        "q": "What is Face ID's attention detection?",
+        "o": [
+            "Checks if eyes are open",
+            "Measures brain waves",
+            "Tracks eye color",
+            "Checks glasses"
+        ]
+    },
+    {
+        "q": "What is sandbox profile?",
+        "o": [
+            "Rules for app permissions",
+            "User profile",
+            "Game profile",
+            "Network profile"
+        ]
+    },
+    {
+        "q": "What is a distribution certificate?",
+        "o": [
+            "Used for app store release",
+            "Testing only",
+            "Development only",
+            "Personal use"
+        ]
+    },
+    {
+        "q": "What is NSFileProtectionCompleteWhenOpen?",
+        "o": [
+            "Protection while file open",
+            "Never protects",
+            "Always protects",
+            "Backup only"
+        ]
+    },
+    {
+        "q": "What is Cydia Substrate?",
+        "o": [
+            "Tweak injection framework",
+            "App store",
+            "Browser plugin",
+            "Security tool"
+        ]
+    },
+    {
+        "q": "What is Touch ID's subdermal layer?",
+        "o": [
+            "Scans below skin surface",
+            "Top layer only",
+            "Surface oil",
+            "Dead skin"
+        ]
+    },
+    {
+        "q": "What is app sandbox root?",
+        "o": [
+            "Top level app directory",
+            "System root",
+            "User home",
+            "Device root"
+        ]
+    },
+    {
+        "q": "What is a team identifier?",
+        "o": [
+            "Developer team ID in certificate",
+            "Group name",
+            "App name",
+            "Device name"
+        ]
+    },
+    {
+        "q": "What is file system encryption?",
+        "o": [
+            "Whole disk encryption",
+            "File only",
+            "Network only",
+            "App only"
+        ]
+    },
+    {
+        "q": "What is redsn0w?",
+        "o": [
+            "Jailbreak tool",
+            "Security patch",
+            "Apple product",
+            "iOS update"
+        ]
+    },
+    {
+        "q": "What is Face ID's infrared projection?",
+        "o": [
+            "Maps face with dots",
+            "Takes selfies",
+            "Records video",
+            "Measures heat"
+        ]
+    },
+    {
+        "q": "What is sandbox container sharing?",
+        "o": [
+            "Limited via app groups",
+            "Full sharing",
+            "No sharing",
+            "Cloud only"
+        ]
+    },
+    {
+        "q": "What is a signing request?",
+        "o": [
+            "Certificate request file",
+            "App review",
+            "User permission",
+            "Download request"
+        ]
+    },
+    {
+        "q": "What is per-file encryption?",
+        "o": [
+            "Individual file encryption",
+            "Full disk only",
+            "Network only",
+            "App only"
+        ]
+    },
+    {
+        "q": "What is TaiG?",
+        "o": [
+            "Jailbreak tool name",
+            "Security firm",
+            "Apple division",
+            "iOS version"
+        ]
+    },
+    {
+        "q": "What is Touch ID's sensor size?",
+        "o": [
+            "Small capacitive area",
+            "Full screen",
+            "Button only",
+            "Rear panel"
+        ]
+    },
+    {
+        "q": "What is the Bundle container?",
+        "o": [
+            "Read-only app executable",
+            "User data",
+            "System files",
+            "Cache files"
+        ]
+    },
+    {
+        "q": "What is a provision profile?",
+        "o": [
+            "Contains entitlements and devices",
+            "App binary",
+            "Source code",
+            "User data"
+        ]
+    },
+    {
+        "q": "What is class key protection?",
+        "o": [
+            "Key hierarchy for files",
+            "User password",
+            "Network key",
+            "Backup key"
+        ]
+    },
+    {
+        "q": "What is Pangu?",
+        "o": [
+            "Jailbreak team",
+            "Apple product",
+            "iOS feature",
+            "Security tool"
+        ]
+    },
+    {
+        "q": "What is Face ID's adaptive recognition?",
+        "o": [
+            "Learns appearance changes",
+            "Static template",
+            "Daily reset",
+            "Manual updates"
+        ]
+    },
+    {
+        "q": "What is sandbox container path?",
+        "o": [
+            "App specific directory",
+            "System wide path",
+            "User home",
+            "Network drive"
+        ]
+    },
+    {
+        "q": "What is code signature validation?",
+        "o": [
+            "Verifies app authenticity",
+            "Checks app size",
+            "Tests performance",
+            "Reviews content"
+        ]
+    },
+    {
+        "q": "What is hardware encryption engine?",
+        "o": [
+            "Dedicated crypto chip",
+            "Software only",
+            "Cloud service",
+            "Network device"
+        ]
+    },
+    {
+        "q": "What is Yalu jailbreak?",
+        "o": [
+            "iOS 10 jailbreak",
+            "Android root",
+            "Windows tool",
+            "Mac app"
+        ]
+    },
+    {
+        "q": "What is Touch ID's enrolled fingerprints?",
+        "o": [
+            "Up to five prints",
+            "Single print",
+            "Ten prints",
+            "Unlimited prints"
+        ]
+    },
+    {
+        "q": "What is app sandbox container ID?",
+        "o": [
+            "Unique container identifier",
+            "App name",
+            "Bundle ID",
+            "Device ID"
+        ]
+    },
+    {
+        "q": "What is a certificate authority?",
+        "o": [
+            "Issuer of certificates",
+            "App reviewer",
+            "Security guard",
+            "Developer"
+        ]
+    },
+    {
+        "q": "How does the iOS sandbox restrict network access?",
+        "o": [
+            "Apps need specific entitlements",
+            "No network restrictions apply",
+            "Only Wi-Fi is permitted",
+            "Cellular data is blocked"
+        ]
+    },
+    {
+        "q": "What happens during iOS code signature verification?",
+        "o": [
+            "Hash comparison with certificate",
+            "App size is checked",
+            "Icon dimensions validated",
+            "Name uniqueness verified"
+        ]
+    },
+    {
+        "q": "Which Data Protection class encrypts files until first user unlock?",
+        "o": [
+            "NSFileProtectionCompleteUntilFirstUserAuthentication",
+            "NSFileProtectionCompleteAlways",
+            "NSFileProtectionNone",
+            "NSFileProtectionWhenInUse"
+        ]
+    },
+    {
+        "q": "Why do banking apps check for jailbreak?",
+        "o": [
+            "Prevent security bypass attempts",
+            "Reduce app file size",
+            "Improve loading speed",
+            "Enable biometric features"
+        ]
+    },
+    {
+        "q": "What makes Face ID more secure than Touch ID?",
+        "o": [
+            "Higher entropy in biometric data",
+            "Faster authentication speed",
+            "Works with more devices",
+            "Easier to configure"
+        ]
+    },
+    {
+        "q": "What system calls are blocked by sandbox?",
+        "o": [
+            "Kernel level privileged operations",
+            "Memory allocation calls",
+            "Graphics rendering calls",
+            "Audio playback calls"
+        ]
+    },
+    {
+        "q": "How long are development certificates valid?",
+        "o": [
+            "One year",
+            "Thirty days",
+            "Five years",
+            "Permanently valid"
+        ]
+    },
+    {
+        "q": "What happens to Data Protection keys during device backup?",
+        "o": [
+            "Keys are not backed up",
+            "Keys are stored in iCloud",
+            "Keys are printed",
+            "Keys are emailed"
+        ]
+    },
+    {
+        "q": "Which method detects Cydia installation?",
+        "o": [
+            "Checking for known file paths",
+            "Measuring storage space",
+            "Testing camera focus",
+            "Counting running processes"
+        ]
+    },
+    {
+        "q": "What is liveness detection in Face ID?",
+        "o": [
+            "Ensures real face not photo",
+            "Checks battery level",
+            "Tests screen brightness",
+            "Measures body temperature"
+        ]
+    },
+    {
+        "q": "Can apps read each other's keychain items?",
+        "o": [
+            "Only with same keychain groups",
+            "Yes, always accessible",
+            "No, never possible",
+            "During backups only"
+        ]
+    },
+    {
+        "q": "What is the purpose of app thinning?",
+        "o": [
+            "Optimize app for specific devices",
+            "Remove code signing",
+            "Disable sandboxing",
+            "Enable jailbreaking"
+        ]
+    },
+    {
+        "q": "Which encryption key is unique per device?",
+        "o": [
+            "UID key",
+            "User passcode",
+            "Apple ID password",
+            "iCloud recovery key"
+        ]
+    },
+    {
+        "q": "What is a common jailbreak evasion technique?",
+        "o": [
+            "Hiding jailbreak files",
+            "Deleting system apps",
+            "Updating iOS version",
+            "Clearing browser cache"
+        ]
+    },
+    {
+        "q": "How does Face ID adapt to appearance changes?",
+        "o": [
+            "Updates mathematical representation",
+            "Stores multiple photos",
+            "Resets daily",
+            "Requires reconfiguration"
+        ]
+    },
+    {
+        "q": "What is the sandbox's writeable container?",
+        "o": [
+            "Data directory for app files",
+            "System directory only",
+            "Read-only bundle",
+            "Temporary internet files"
+        ]
+    },
+    {
+        "q": "What is required for enterprise app distribution?",
+        "o": [
+            "Apple Enterprise Developer Program",
+            "Public app store listing",
+            "Individual developer account",
+            "Open source license"
+        ]
+    },
+    {
+        "q": "When are Data Protection keys removed from memory?",
+        "o": [
+            "When device locks",
+            "During app launch",
+            "On network disconnect",
+            "While charging"
+        ]
+    },
+    {
+        "q": "What is sandbox level jailbreak detection?",
+        "o": [
+            "Testing file permissions",
+            "Checking iOS version",
+            "Measuring processor speed",
+            "Counting installed apps"
+        ]
+    },
+    {
+        "q": "What is Face ID's neural network training?",
+        "o": [
+            "On-device learning",
+            "Cloud based training",
+            "Apple server processing",
+            "No learning involved"
+        ]
+    },
+    {
+        "q": "What is keychain data sharing?",
+        "o": [
+            "Between apps from same dev",
+            "All apps on device",
+            "System apps only",
+            "No sharing allowed"
+        ]
+    },
+    {
+        "q": "What does code signing protect against?",
+        "o": [
+            "Malware injection",
+            "Battery drain",
+            "Screen burn-in",
+            "Data overuse"
+        ]
+    },
+    {
+        "q": "Which Data Protection class is default for new files?",
+        "o": [
+            "Protected Until First Auth",
+            "Complete Protection",
+            "No Protection",
+            "Complete Unless Open"
+        ]
+    },
+    {
+        "q": "What is a jailbreak detection bypass?",
+        "o": [
+            "Tweak to hide jailbreak",
+            "iOS security update",
+            "App store feature",
+            "Developer tool"
+        ]
+    },
+    {
+        "q": "What happens to Face ID after failed attempts?",
+        "o": [
+            "Progressive time delays",
+            "Permanent disable",
+            "Factory reset",
+            "No change in behavior"
+        ]
+    },
+    {
+        "q": "What is the purpose of sandbox profiles?",
+        "o": [
+            "Define allowed system resources",
+            "Store user preferences",
+            "Track app usage",
+            "Manage battery life"
+        ]
+    },
+    {
+        "q": "What is a code signature hash?",
+        "o": [
+            "Cryptographic fingerprint",
+            "App icon design",
+            "Developer address",
+            "Version number"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys derived?",
+        "o": [
+            "From passcode and device UID",
+            "From Apple ID only",
+            "From random generator",
+            "From network time"
+        ]
+    },
+    {
+        "q": "What is system call filtering?",
+        "o": [
+            "Sandbox monitoring of kernel requests",
+            "App store review process",
+            "Network traffic analysis",
+            "Battery optimization"
+        ]
+    },
+    {
+        "q": "What is Face ID's anti-spoofing measure?",
+        "o": [
+            "Requires eye contact",
+            "Checks for warmth",
+            "Measures pulse",
+            "Tests skin texture"
+        ]
+    },
+    {
+        "q": "Can enterprise apps use sandbox escapes?",
+        "o": [
+            "No, sandbox applies to all",
+            "Yes, with special entitlements",
+            "Only during testing",
+            "In development mode"
+        ]
+    },
+    {
+        "q": "What is a revoked certificate?",
+        "o": [
+            "Invalidated signing identity",
+            "Expired app license",
+            "User password reset",
+            "Device ban"
+        ]
+    },
+    {
+        "q": "What protects the master encryption key?",
+        "o": [
+            "Hardware backed keychain",
+            "User password only",
+            "Cloud storage",
+            "Network token"
+        ]
+    },
+    {
+        "q": "What is jailbreak detection obfuscation?",
+        "o": [
+            "Hiding detection methods",
+            "Removing jailbreak",
+            "Updating iOS",
+            "Cleaning files"
+        ]
+    },
+    {
+        "q": "What is Face ID's match probability threshold?",
+        "o": [
+            "One in million false match",
+            "Fifty percent accuracy",
+            "Guaranteed match",
+            "Random selection"
+        ]
+    },
+    {
+        "q": "What is temporary entitlement granting?",
+        "o": [
+            "Runtime permission requests",
+            "Permanent permission",
+            "Developer override",
+            "User bypass"
+        ]
+    },
+    {
+        "q": "What happens when app signature expires?",
+        "o": [
+            "App fails to launch",
+            "App deletes itself",
+            "Phone restarts",
+            "Warning only appears"
+        ]
+    },
+    {
+        "q": "What is key escrow in Data Protection?",
+        "o": [
+            "Key recovery mechanism",
+            "Key deletion process",
+            "Key generation",
+            "Key sharing"
+        ]
+    },
+    {
+        "q": "What is userspace jailbreak detection?",
+        "o": [
+            "Checks within app sandbox",
+            "Kernel level detection",
+            "Network monitoring",
+            "Hardware verification"
+        ]
+    },
+    {
+        "q": "How does Face ID handle twins?",
+        "o": [
+            "Statistical improbability of match",
+            "Always recognizes both",
+            "Never recognizes either",
+            "Requires passcode"
+        ]
+    },
+    {
+        "q": "What is the purpose of sandbox container migration?",
+        "o": [
+            "Move data between devices",
+            "Delete old files",
+            "Speed up access",
+            "Reduce storage"
+        ]
+    },
+    {
+        "q": "What is a certificate signing request?",
+        "o": [
+            "Public key for Apple",
+            "App binary file",
+            "User agreement",
+            "Payment request"
+        ]
+    },
+    {
+        "q": "What is NSFileProtectionCompleteWhenUserActive?",
+        "o": [
+            "Protection during user activity",
+            "Always protected",
+            "Never protected",
+            "Backup only"
+        ]
+    },
+    {
+        "q": "What is a jailbreak detection API?",
+        "o": [
+            "System framework for checks",
+            "Apple developer tool",
+            "User application",
+            "Network service"
+        ]
+    },
+    {
+        "q": "What is Face ID's infrared flood illuminator?",
+        "o": [
+            "Lights face in darkness",
+            "Takes selfies",
+            "Charges battery",
+            "Cools device"
+        ]
+    },
+    {
+        "q": "What are iOS sandbox container permissions?",
+        "o": [
+            "POSIX style permissions",
+            "Windows ACLs",
+            "No permissions",
+            "User managed"
+        ]
+    },
+    {
+        "q": "What is a provisioning profile expiration?",
+        "o": [
+            "Profile validity period ends",
+            "App stops selling",
+            "Developer quits",
+            "Device breaks"
+        ]
+    },
+    {
+        "q": "What is volume encryption key?",
+        "o": [
+            "Encrypts entire filesystem",
+            "Per file key",
+            "Network key",
+            "Backup key"
+        ]
+    },
+    {
+        "q": "What is root privilege escalation?",
+        "o": [
+            "Gaining system level access",
+            "User account creation",
+            "App installation",
+            "File deletion"
+        ]
+    },
+    {
+        "q": "What is Face ID's dot projector purpose?",
+        "o": [
+            "Create 3D facial map",
+            "Display notifications",
+            "Illuminate keyboard",
+            "Charge battery"
+        ]
+    },
+    {
+        "q": "What is app sandbox container structure?",
+        "o": [
+            "Bundle, Data, Shared directories",
+            "Single flat folder",
+            "Database only",
+            "Network mount"
+        ]
+    },
+    {
+        "q": "What is the difference between development and distribution certs?",
+        "o": [
+            "Usage environment and restrictions",
+            "Certificate color",
+            "File size",
+            "Price only"
+        ]
+    },
+    {
+        "q": "What is NSFileProtectionCompleteUnlessOpen used for?",
+        "o": [
+            "Files accessed while device locked",
+            "System configuration files",
+            "User photos only",
+            "Temporary cache"
+        ]
+    },
+    {
+        "q": "What is a jailbreak detection evasion library?",
+        "o": [
+            "Code to bypass checks",
+            "Security framework",
+            "Apple SDK",
+            "Developer tool"
+        ]
+    },
+    {
+        "q": "What is Face ID's A-series chip integration?",
+        "o": [
+            "Secure Neural Engine",
+            "Separate processor",
+            "Cloud processing",
+            "External hardware"
+        ]
+    },
+    {
+        "q": "What are iOS sandbox container limits?",
+        "o": [
+            "Size and resource constraints",
+            "No limits apply",
+            "Network only limits",
+            "Temporary only"
+        ]
+    },
+    {
+        "q": "What happens during certificate revocation?",
+        "o": [
+            "App becomes untrusted",
+            "Phone resets",
+            "Data deletes",
+            "Updates install"
+        ]
+    },
+    {
+        "q": "What is the key hierarchy depth?",
+        "o": [
+            "Multiple levels of keys",
+            "Single master key",
+            "No hierarchy",
+            "User only"
+        ]
+    },
+    {
+        "q": "What is userspace vs kernelspace jailbreak?",
+        "o": [
+            "Different privilege levels",
+            "Same level access",
+            "Network based",
+            "Hardware based"
+        ]
+    },
+    {
+        "q": "What is Face ID's attention aware features?",
+        "o": [
+            "Requires user attention",
+            "Works with closed eyes",
+            "Ignores face direction",
+            "No attention check"
+        ]
+    },
+    {
+        "q": "What is the purpose of sandbox container cleanup?",
+        "o": [
+            "Remove unused app data",
+            "Speed up processor",
+            "Improve camera",
+            "Enhance display"
+        ]
+    },
+    {
+        "q": "What is a certificate chain of trust?",
+        "o": [
+            "Hierarchy of certificates",
+            "App store ranking",
+            "User trust score",
+            "Developer reputation"
+        ]
+    },
+    {
+        "q": "What is NSFileProtectionComplete for Mail attachments?",
+        "o": [
+            "Protected until device lock",
+            "Always accessible",
+            "Never encrypted",
+            "Network only"
+        ]
+    },
+    {
+        "q": "What is a jailbreak detection bypass tool?",
+        "o": [
+            "Software to hide jailbreak",
+            "iOS update utility",
+            "App store app",
+            "Developer IDE"
+        ]
+    },
+    {
+        "q": "What is Face ID's random subwindow?",
+        "o": [
+            "Authentication with partial view",
+            "Full screen always",
+            "Bottom half only",
+            "Top corner only"
+        ]
+    },
+    {
+        "q": "What are shared sandbox containers?",
+        "o": [
+            "App groups for data sharing",
+            "System wide access",
+            "Public directories",
+            "Network drives"
+        ]
+    },
+    {
+        "q": "What is code signature resource enforcement?",
+        "o": [
+            "Validates all bundled files",
+            "Checks main binary only",
+            "Verifies icons",
+            "Tests performance"
+        ]
+    },
+    {
+        "q": "What is key derivation function used?",
+        "o": [
+            "PBKDF2 algorithm",
+            "Simple hash only",
+            "No derivation",
+            "Random generation"
+        ]
+    },
+    {
+        "q": "What is a jailbreak detection false positive?",
+        "o": [
+            "Legitimate device flagged",
+            "Missed jailbreak",
+            "App crash",
+            "System reboot"
+        ]
+    },
+    {
+        "q": "What is Face ID's TrueDepth camera resolution?",
+        "o": [
+            "30,000 infrared dots",
+            "Standard 12MP",
+            "4K video",
+            "VGA quality"
+        ]
+    },
+    {
+        "q": "What is sandbox container inheritance?",
+        "o": [
+            "Child processes inherit restrictions",
+            "No inheritance occurs",
+            "Only parent controls",
+            "User sets rules"
+        ]
+    },
+    {
+        "q": "What is a certificate public key?",
+        "o": [
+            "Verification key for signatures",
+            "Private signing key",
+            "User password",
+            "Device ID"
+        ]
+    },
+    {
+        "q": "What is NSFileProtectionComplete for Notes?",
+        "o": [
+            "Protected while locked",
+            "Always visible",
+            "Cloud only",
+            "No protection"
+        ]
+    },
+    {
+        "q": "What is a jailbreak detection bypass method?",
+        "o": [
+            "Method swizzling",
+            "App deletion",
+            "iOS update",
+            "Factory reset"
+        ]
+    },
+    {
+        "q": "What is Face ID's statistical model?",
+        "o": [
+            "Neural network comparison",
+            "Pixel matching",
+            "Password check",
+            "Pattern recognition"
+        ]
+    },
+    {
+        "q": "What is the sandbox's temporary directory?",
+        "o": [
+            "Short term storage location",
+            "Permanent storage",
+            "System cache",
+            "Backup location"
+        ]
+    },
+    {
+        "q": "What is a certificate private key protection?",
+        "o": [
+            "Stored in keychain",
+            "Plain text file",
+            "Network storage",
+            "User document"
+        ]
+    },
+    {
+        "q": "What is NSFileProtectionComplete for Health data?",
+        "o": [
+            "Highest protection level",
+            "No encryption",
+            "Cloud only",
+            "Backup only"
+        ]
+    },
+    {
+        "q": "What is kernel level jailbreak detection?",
+        "o": [
+            "System call monitoring",
+            "App store check",
+            "User preference",
+            "Network scan"
+        ]
+    },
+    {
+        "q": "What is Face ID's spoof resistance?",
+        "o": [
+            "High against masks and photos",
+            "Easily fooled",
+            "No protection",
+            "Basic only"
+        ]
+    },
+    {
+        "q": "What are iOS sandbox container backups?",
+        "o": [
+            "Included in device backups",
+            "Never backed up",
+            "Cloud only",
+            "Manual only"
+        ]
+    },
+    {
+        "q": "What is code signature page hash validation?",
+        "o": [
+            "Verifies each code page",
+            "Single hash for all",
+            "No hash checking",
+            "Icon validation"
+        ]
+    },
+    {
+        "q": "What is the UID key's uniqueness?",
+        "o": [
+            "Unique per device",
+            "Same for all devices",
+            "User settable",
+            "Network assigned"
+        ]
+    },
+    {
+        "q": "What is a jailbreak detection obfuscation technique?",
+        "o": [
+            "Encrypted detection logic",
+            "Public source code",
+            "Open API",
+            "Documentation"
+        ]
+    },
+    {
+        "q": "What is Face ID's machine learning model?",
+        "o": [
+            "Updates with appearance changes",
+            "Static template",
+            "Random data",
+            "No learning"
+        ]
+    },
+    {
+        "q": "What is sandbox container deletion behavior?",
+        "o": [
+            "Removed with app uninstall",
+            "Persists forever",
+            "Cloud stored",
+            "System managed"
+        ]
+    },
+    {
+        "q": "What is a certificate intermediate authority?",
+        "o": [
+            "Mid-level certificate issuer",
+            "End user only",
+            "Root only",
+            "No authority"
+        ]
+    },
+    {
+        "q": "What is NSFileProtectionComplete for Keychain?",
+        "o": [
+            "Hardware protected items",
+            "Plain text storage",
+            "User defaults",
+            "Cache files"
+        ]
+    },
+    {
+        "q": "What is runtime jailbreak detection?",
+        "o": [
+            "Checks during app execution",
+            "Install time only",
+            "First launch only",
+            "Never checked"
+        ]
+    },
+    {
+        "q": "What is Face ID's match speed?",
+        "o": [
+            "Sub-second authentication",
+            "Several seconds",
+            "Minutes",
+            "Variable delay"
+        ]
+    },
+    {
+        "q": "What are sandbox container URL types?",
+        "o": [
+            "Documents, Library, Temp paths",
+            "Single path only",
+            "Network URLs",
+            "Cloud addresses"
+        ]
+    },
+    {
+        "q": "What is code signature requirement language?",
+        "o": [
+            "Rules for code validation",
+            "Programming language",
+            "User interface",
+            "Documentation"
+        ]
+    },
+    {
+        "q": "What is keychain accessibility attribute?",
+        "o": [
+            "When item can be accessed",
+            "Item size",
+            "Creation date",
+            "Modification time"
+        ]
+    },
+    {
+        "q": "What is environment based jailbreak detection?",
+        "o": [
+            "Checks system parameters",
+            "User input only",
+            "Network status",
+            "Battery level"
+        ]
+    },
+    {
+        "q": "What is Face ID's adaptive learning limit?",
+        "o": [
+            "Limited appearance changes",
+            "Unlimited changes",
+            "No learning",
+            "Daily reset"
+        ]
+    },
+    {
+        "q": "What is the purpose of sandbox container encryption?",
+        "o": [
+            "Protect data at rest",
+            "Speed up access",
+            "Reduce size",
+            "Enable sharing"
+        ]
+    },
+    {
+        "q": "What is a certificate root authority?",
+        "o": [
+            "Top level certificate issuer",
+            "User certificate",
+            "Device cert",
+            "App cert"
+        ]
+    },
+    {
+        "q": "What is NSFileProtectionComplete for Safari data?",
+        "o": [
+            "Protected browsing data",
+            "Public information",
+            "No protection",
+            "Cache only"
+        ]
+    },
+    {
+        "q": "How does the iOS sandbox implement seatbelt profiles?",
+        "o": [
+            "Kernel level mandatory access control",
+            "User level permission checks",
+            "App level self policing",
+            "Network based filtering"
+        ]
+    },
+    {
+        "q": "What is the role of CDHash in code signing?",
+        "o": [
+            "Unique identifier for code directory",
+            "App store receipt validation",
+            "Developer identity verification",
+            "Device authorization token"
+        ]
+    },
+    {
+        "q": "How are Data Protection class keys wrapped?",
+        "o": [
+            "Using class key and device UID",
+            "User password only",
+            "Apple ID credentials",
+            "Random generation only"
+        ]
+    },
+    {
+        "q": "What techniques detect Cydia Substrate presence?",
+        "o": [
+            "Checking loaded dynamic libraries",
+            "Measuring free storage space",
+            "Counting running processes",
+            "Testing network latency"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network process images?",
+        "o": [
+            "Converts to mathematical representation",
+            "Stores raw photos",
+            "Creates video files",
+            "Generates passwords"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to IPC?",
+        "o": [
+            "Restricted inter-process communication",
+            "Full IPC access allowed",
+            "No IPC permitted",
+            "Network only IPC"
+        ]
+    },
+    {
+        "q": "How are iOS app binaries verified at runtime?",
+        "o": [
+            "Kernel validates signature pages",
+            "App self validates",
+            "User confirms trust",
+            "Network verification"
+        ]
+    },
+    {
+        "q": "What is the keybag structure in Data Protection?",
+        "o": [
+            "Collection of wrapped class keys",
+            "User password storage",
+            "App data container",
+            "Network credential cache"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection tools check fork operations?",
+        "o": [
+            "Test process creation privileges",
+            "Monitor battery usage",
+            "Check file sizes",
+            "Measure screen brightness"
+        ]
+    },
+    {
+        "q": "What is the Secure Enclave's role in Face ID?",
+        "o": [
+            "Stores and processes face data",
+            "Captures facial images",
+            "Displays authentication UI",
+            "Manages network connections"
+        ]
+    },
+    {
+        "q": "How does sandbox container migration work during iOS updates?",
+        "o": [
+            "Preserved and transferred securely",
+            "Deleted and recreated",
+            "Left on old system",
+            "Merged with system files"
+        ]
+    },
+    {
+        "q": "What is the difference between ad-hoc and enterprise signing?",
+        "o": [
+            "Device limit and distribution method",
+            "Certificate color only",
+            "Price difference only",
+            "App type restriction"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys revoked on lock?",
+        "o": [
+            "Wiped from memory",
+            "Deleted from disk",
+            "Sent to Apple",
+            "Backed up to cloud"
+        ]
+    },
+    {
+        "q": "What methods detect symbolic link attacks?",
+        "o": [
+            "Check for symlink creation outside sandbox",
+            "Monitor CPU temperature",
+            "Test GPU performance",
+            "Analyze network traffic"
+        ]
+    },
+    {
+        "q": "How does Face ID prevent replay attacks?",
+        "o": [
+            "Uses random challenge response",
+            "Stores all previous faces",
+            "Requires passcode always",
+            "Locks after each use"
+        ]
+    },
+    {
+        "q": "What is the sandbox's handling of Mach ports?",
+        "o": [
+            "Restricted access to system ports",
+            "Full access permitted",
+            "No port access allowed",
+            "Network port only"
+        ]
+    },
+    {
+        "q": "What is the code signing requirement for dynamic libraries?",
+        "o": [
+            "Must match main app signature",
+            "No signature required",
+            "Separate Apple signature",
+            "User verified only"
+        ]
+    },
+    {
+        "q": "What is the class key protection for NSFileProtectionComplete?",
+        "o": [
+            "Key protected by passcode",
+            "No key protection",
+            "Hardware only",
+            "Software only"
+        ]
+    },
+    {
+        "q": "How do advanced jailbreak detection methods check integrity?",
+        "o": [
+            "Hash comparison of system files",
+            "Counting installed apps",
+            "Measuring battery cycles",
+            "Testing camera resolution"
+        ]
+    },
+    {
+        "q": "What is the neural engine's architecture for Face ID?",
+        "o": [
+            "Specialized matrix multiplication cores",
+            "General purpose CPU",
+            "Standard GPU cores",
+            "DSP processors"
+        ]
+    },
+    {
+        "q": "How does sandbox handle file system hard links?",
+        "o": [
+            "Prevents crossing container boundaries",
+            "Allows unlimited linking",
+            "Creates copies instead",
+            "Blocks all links"
+        ]
+    },
+    {
+        "q": "What is a bilevel code signature?",
+        "o": [
+            "Multiple signature layers",
+            "Two color coding",
+            "Paired certificates",
+            "Dual developer sign"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys generated for new files?",
+        "o": [
+            "Random per-file key creation",
+            "Reuse existing keys",
+            "User provided key",
+            "Network derived key"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through environment variables?",
+        "o": [
+            "Check for modified system paths",
+            "Monitor CPU usage",
+            "Test memory limits",
+            "Analyze network speed"
+        ]
+    },
+    {
+        "q": "How does Face ID's attention detection work technically?",
+        "o": [
+            "Analyzes eye gaze direction",
+            "Measures pupil dilation",
+            "Tracks head movement",
+            "Checks blink rate"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to POSIX compliance?",
+        "o": [
+            "Modified with security extensions",
+            "Full POSIX compliance",
+            "No POSIX support",
+            "Windows style only"
+        ]
+    },
+    {
+        "q": "How does iOS verify app extensions code signature?",
+        "o": [
+            "Separate validation with parent app",
+            "No validation required",
+            "System only validation",
+            "User verification"
+        ]
+    },
+    {
+        "q": "What is the key wrapping algorithm used in Data Protection?",
+        "o": [
+            "AES key wrap",
+            "RSA encryption",
+            "SHA hashing",
+            "Base64 encoding"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for suspicious processes?",
+        "o": [
+            "Examine process list with sysctl",
+            "Count total processes",
+            "Monitor battery drain",
+            "Check app installation dates"
+        ]
+    },
+    {
+        "q": "What is the liveness detection mechanism in Face ID?",
+        "o": [
+            "Analyzes micro-expressions",
+            "Checks skin temperature",
+            "Measures pulse rate",
+            "Tests muscle tension"
+        ]
+    },
+    {
+        "q": "How does sandbox container quarantine work?",
+        "o": [
+            "Marks files from untrusted sources",
+            "Deletes suspicious files",
+            "Encrypts all data",
+            "Blocks network access"
+        ]
+    },
+    {
+        "q": "What is a resource envelope in code signing?",
+        "o": [
+            "Hashes of bundled resources",
+            "App icon package",
+            "Asset catalog",
+            "Storyboard file"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys stored during device sleep?",
+        "o": [
+            "Removed based on class type",
+            "Persisted to disk",
+            "Cloud backup",
+            "Never removed"
+        ]
+    },
+    {
+        "q": "What techniques detect Cydia installer through URL schemes?",
+        "o": [
+            "Check registered custom URL schemes",
+            "Scan open ports",
+            "Monitor network traffic",
+            "Test DNS resolution"
+        ]
+    },
+    {
+        "q": "How does Face ID's statistical model handle partial occlusion?",
+        "o": [
+            "Matches available facial features",
+            "Fails authentication",
+            "Requires full view",
+            "Uses backup method"
+        ]
+    },
+    {
+        "q": "What is the sandbox's rule for XPC services?",
+        "o": [
+            "Restricted to approved services",
+            "All services accessible",
+            "No XPC allowed",
+            "Network only"
+        ]
+    },
+    {
+        "q": "How does iOS handle code signature during app updates?",
+        "o": [
+            "Resigns with new signature",
+            "Keeps original signature",
+            "Removes signature",
+            "User must resign"
+        ]
+    },
+    {
+        "q": "What is the technical purpose of the effaceable storage?",
+        "o": [
+            "Store class keys for quick wipe",
+            "User data backup",
+            "App cache storage",
+            "System logs"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for fork bombs?",
+        "o": [
+            "Test process creation limits",
+            "Monitor memory usage",
+            "Check CPU load",
+            "Analyze disk I/O"
+        ]
+    },
+    {
+        "q": "What is the role of the SEP in Touch ID matching?",
+        "o": [
+            "Performs match in secure hardware",
+            "Stores fingerprint images",
+            "Displays UI prompts",
+            "Manages network"
+        ]
+    },
+    {
+        "q": "How does sandbox handle AppleFileConduit?",
+        "o": [
+            "Restricted file system access",
+            "Full file access",
+            "No file access",
+            "Read only access"
+        ]
+    },
+    {
+        "q": "What is a designated requirement in code signing?",
+        "o": [
+            "Expression defining valid signatures",
+            "Required app features",
+            "Minimum iOS version",
+            "Device requirements"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys escrowed for recovery?",
+        "o": [
+            "Not escrowed for security",
+            "Stored with Apple",
+            "Backed to iCloud",
+            "User keeps copy"
+        ]
+    },
+    {
+        "q": "What techniques detect debugger presence for jailbreak?",
+        "o": [
+            "Check ptrace calls",
+            "Monitor screen size",
+            "Test vibration motor",
+            "Check battery level"
+        ]
+    },
+    {
+        "q": "How does Face ID's anti-spoofing detect photographs?",
+        "o": [
+            "Looks for depth inconsistencies",
+            "Checks paper texture",
+            "Measures reflectivity",
+            "Tests color accuracy"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to syscall filtering?",
+        "o": [
+            "Whitelist of allowed calls",
+            "Blacklist of blocked calls",
+            "No filtering",
+            "User configured"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature on jailbroken devices?",
+        "o": [
+            "Signature validation disabled",
+            "Still fully enforced",
+            "Partial validation",
+            "User controlled"
+        ]
+    },
+    {
+        "q": "What is the relationship between class keys and file metadata?",
+        "o": [
+            "Class key stored with metadata",
+            "No relationship",
+            "Key in separate file",
+            "Key in database"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for suspicious dylibs?",
+        "o": [
+            "Examine loaded libraries list",
+            "Count total libraries",
+            "Check library sizes",
+            "Verify library names"
+        ]
+    },
+    {
+        "q": "What is the matching algorithm in Touch ID?",
+        "o": [
+            "Subset pattern matching",
+            "Full fingerprint image",
+            "Password comparison",
+            "PIN verification"
+        ]
+    },
+    {
+        "q": "How does sandbox container encryption affect performance?",
+        "o": [
+            "Minimal overhead with hardware acceleration",
+            "Significant slowdown",
+            "No performance impact",
+            "Variable based on usage"
+        ]
+    },
+    {
+        "q": "What is a code signature requirement language syntax?",
+        "o": [
+            "Identifier and anchor conditions",
+            "XML format only",
+            "JSON structure",
+            "Binary format"
+        ]
+    },
+    {
+        "q": "How are Data Protection class keys derived from passcode?",
+        "o": [
+            "PBKDF2 with salt",
+            "Plain text conversion",
+            "Base64 encoding",
+            "MD5 hashing"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through file permission anomalies?",
+        "o": [
+            "Check world-writable system files",
+            "Count file extensions",
+            "Measure file sizes",
+            "List creation dates"
+        ]
+    },
+    {
+        "q": "How does Face ID handle multiple enrolled appearances?",
+        "o": [
+            "Single model updates continuously",
+            "Stores multiple templates",
+            "Separate profiles",
+            "Manual switching"
+        ]
+    },
+    {
+        "q": "What is the sandbox's handling of setuid binaries?",
+        "o": [
+            "Prevents setuid execution",
+            "Allows with restrictions",
+            "Full setuid support",
+            "User approved"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature during dynamic code loading?",
+        "o": [
+            "Validates all loaded code",
+            "Skips validation",
+            "Validates once",
+            "User confirms"
+        ]
+    },
+    {
+        "q": "What is the technical implementation of NSFileProtectionComplete?",
+        "o": [
+            "Key wrapped with passcode",
+            "No encryption",
+            "Software only",
+            "Network based"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for SSH services?",
+        "o": [
+            "Test for open network ports",
+            "Scan for processes",
+            "Check file existence",
+            "Monitor battery"
+        ]
+    },
+    {
+        "q": "What is the false match rate calculation for Touch ID?",
+        "o": [
+            "Probability based on entropy",
+            "Fixed percentage",
+            "User configurable",
+            "Device dependent"
+        ]
+    },
+    {
+        "q": "How does sandbox container backup exclusion work?",
+        "o": [
+            "Mark files with skip backup attribute",
+            "Always backs up",
+            "Never backs up",
+            "Cloud only"
+        ]
+    },
+    {
+        "q": "What is the code signature's CMS format?",
+        "o": [
+            "Cryptographic Message Syntax",
+            "Code Management System",
+            "Certificate Management Service",
+            "Content Management Standard"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during secure idle?",
+        "o": [
+            "Class keys removed, file keys kept",
+            "All keys removed",
+            "No keys removed",
+            "Backup keys used"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through system call hooks?",
+        "o": [
+            "Check syscall table integrity",
+            "Count system calls",
+            "Measure call latency",
+            "Monitor call frequency"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network training occur?",
+        "o": [
+            "On-device learning only",
+            "Cloud based training",
+            "Factory trained only",
+            "User guided"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to memory mapping?",
+        "o": [
+            "Restricted mmap permissions",
+            "Full mmap access",
+            "No mmap allowed",
+            "Read only mmap"
+        ]
+    },
+    {
+        "q": "How does iOS handle code signature for watchOS apps?",
+        "o": [
+            "Separate signing requirement",
+            "Same as iOS",
+            "No signing needed",
+            "Phone signature"
+        ]
+    },
+    {
+        "q": "What is the key derivation for NSFileProtectionCompleteUnlessOpen?",
+        "o": [
+            "Key from system keybag",
+            "User passcode only",
+            "Random only",
+            "Network derived"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for substrate?",
+        "o": [
+            "Look for MobileSubstrate dylib",
+            "Check process names",
+            "Monitor memory usage",
+            "Test file system"
+        ]
+    },
+    {
+        "q": "What is the match threshold calculation in Face ID?",
+        "o": [
+            "Neural network confidence score",
+            "Pixel match count",
+            "Feature point count",
+            "Distance measurement"
+        ]
+    },
+    {
+        "q": "How does sandbox handle macOS compatibility?",
+        "o": [
+            "Different profile sets",
+            "Same as iOS",
+            "No macOS support",
+            "Emulation layer"
+        ]
+    },
+    {
+        "q": "What is a code signature requirement anchor?",
+        "o": [
+            "Trust anchor certificate",
+            "File system anchor",
+            "Network anchor",
+            "Device anchor"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys rotated?",
+        "o": [
+            "On passcode change",
+            "Never rotated",
+            "Daily rotation",
+            "User initiated"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through kernel structs?",
+        "o": [
+            "Check for modifications",
+            "Count processes",
+            "Measure kernel size",
+            "Test system calls"
+        ]
+    },
+    {
+        "q": "How does Face ID handle identical twins?",
+        "o": [
+            "Statistically improbable match",
+            "Always recognizes both",
+            "Requires passcode",
+            "Random outcome"
+        ]
+    },
+    {
+        "q": "What is the sandbox's rule for IOKit access?",
+        "o": [
+            "Restricted to approved classes",
+            "Full IOKit access",
+            "No IOKit access",
+            "Read only access"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for app extensions?",
+        "o": [
+            "Same team identifier required",
+            "No verification needed",
+            "Apple only signs",
+            "User verifies"
+        ]
+    },
+    {
+        "q": "What is the technical difference between protection classes?",
+        "o": [
+            "Key availability timing",
+            "Encryption strength",
+            "Algorithm type",
+            "Key length"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for AFC?",
+        "o": [
+            "Apple File Conduit service check",
+            "Network scan",
+            "Process list",
+            "File existence"
+        ]
+    },
+    {
+        "q": "What is the role of the Secure Enclave in key storage?",
+        "o": [
+            "Hardware isolation of keys",
+            "Software storage",
+            "Cloud key storage",
+            "User key storage"
+        ]
+    },
+    {
+        "q": "How does sandbox container compression work?",
+        "o": [
+            "Automatic HFS compression",
+            "Manual compression only",
+            "No compression",
+            "Network compression"
+        ]
+    },
+    {
+        "q": "What is a code signature requirement certificate?",
+        "o": [
+            "Specific certificate condition",
+            "Generic certificate",
+            "User certificate",
+            "Device certificate"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys generated for new volumes?",
+        "o": [
+            "Random volume key creation",
+            "Reuse existing",
+            "User provided",
+            "Network derived"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through privilege escalation?",
+        "o": [
+            "Test root access attempts",
+            "Monitor user accounts",
+            "Check group membership",
+            "Test sudo access"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network handle aging?",
+        "o": [
+            "Gradual model adaptation",
+            "No adaptation",
+            "Periodic retraining",
+            "Manual updates"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to named pipes?",
+        "o": [
+            "Restricted FIFO access",
+            "Full FIFO support",
+            "No FIFO allowed",
+            "Read only FIFO"
+        ]
+    },
+    {
+        "q": "How does iOS handle code signature for Swift libraries?",
+        "o": [
+            "Part of main signature",
+            "Separate signature needed",
+            "No signature required",
+            "Runtime verification"
+        ]
+    },
+    {
+        "q": "What is the keybag structure during device restore?",
+        "o": [
+            "Recreated with new keys",
+            "Preserved exactly",
+            "Merged with backup",
+            "Deleted permanently"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for sandbox violations?",
+        "o": [
+            "Attempt restricted operations",
+            "Monitor log files",
+            "Check error codes",
+            "Test permissions"
+        ]
+    },
+    {
+        "q": "What is the match confidence threshold in Face ID?",
+        "o": [
+            "Configurable security level",
+            "Fixed threshold",
+            "User adjustable",
+            "Device determined"
+        ]
+    },
+    {
+        "q": "How does sandbox handle copy-on-write?",
+        "o": [
+            "Respects COW semantics",
+            "Disables COW",
+            "Modifies COW",
+            "Ignores COW"
+        ]
+    },
+    {
+        "q": "What is a code signature requirement identifier?",
+        "o": [
+            "Bundle ID condition",
+            "Developer name",
+            "App version",
+            "Device type"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys stored during OTA updates?",
+        "o": [
+            "Preserved in secure storage",
+            "Temporarily backed up",
+            "Deleted and restored",
+            "Cloud synced"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through dynamic linker?",
+        "o": [
+            "Check dyld environment",
+            "Count loaded images",
+            "Measure launch time",
+            "Test library loading"
+        ]
+    },
+    {
+        "q": "How does Face ID handle low light conditions?",
+        "o": [
+            "Uses infrared illumination",
+            "Fails authentication",
+            "Uses flash",
+            "Requires light"
+        ]
+    },
+    {
+        "q": "How does the iOS sandbox implement MACF framework policies?",
+        "o": [
+            "Mandatory Access Control Framework hooks",
+            "Discretionary access controls only",
+            "User defined permission sets",
+            "Network based authorization"
+        ]
+    },
+    {
+        "q": "What is the code signature's requirement for FairPlay encrypted binaries?",
+        "o": [
+            "Signature must validate before decryption",
+            "Decryption occurs before validation",
+            "No signature required for FairPlay",
+            "Apple signs after decryption"
+        ]
+    },
+    {
+        "q": "How are Data Protection class keys protected during Secure Enclave updates?",
+        "o": [
+            "Preserved through secure migration",
+            "Regenerated after update",
+            "Backed up to iCloud",
+            "Deleted for security"
+        ]
+    },
+    {
+        "q": "What methods detect KPP/KTRR bypass in jailbreaks?",
+        "o": [
+            "Check kernel integrity against golden images",
+            "Monitor battery temperature",
+            "Count running processes",
+            "Test memory allocation"
+        ]
+    },
+    {
+        "q": "How does Face ID's liveness detection differentiate between silicone and skin?",
+        "o": [
+            "Analyzes subsurface scattering patterns",
+            "Measures thermal signature",
+            "Tests electrical conductivity",
+            "Checks moisture levels"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to AppleMobileFileIntegrity?",
+        "o": [
+            "AMFI enforces sandbox extensions",
+            "Separate from sandbox",
+            "Replaces sandbox completely",
+            "User configurable"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for Just-In-Time compiled code?",
+        "o": [
+            "Pages must be signed or entitlements",
+            "No verification for JIT",
+            "Runtime hash checking",
+            "Compiler provides signature"
+        ]
+    },
+    {
+        "q": "What is the technical implementation of NSFileProtectionCompleteUnlessOpen?",
+        "o": [
+            "File key cached while open",
+            "Key always in memory",
+            "No special handling",
+            "Key stored with file"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for sandbox escape exploits?",
+        "o": [
+            "Attempt known exploit vectors",
+            "Monitor system logs",
+            "Check process entitlements",
+            "Analyze crash reports"
+        ]
+    },
+    {
+        "q": "What is the neural engine's role in Face ID matching confidence?",
+        "o": [
+            "Calculates probability distribution",
+            "Stores reference images",
+            "Manages power consumption",
+            "Handles network requests"
+        ]
+    },
+    {
+        "q": "How does sandbox handle platform applications vs third-party apps?",
+        "o": [
+            "Different profiles and entitlements",
+            "Same restrictions apply",
+            "Platform apps unrestricted",
+            "Third-party unrestricted"
+        ]
+    },
+    {
+        "q": "What is the code signature's handling of multi-architecture binaries?",
+        "o": [
+            "Each architecture signed separately",
+            "Single signature for all",
+            "Architecture specific signing",
+            "No multi-arch support"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during Secure Enclave SEPOS updates?",
+        "o": [
+            "Hardware isolated key migration",
+            "Software based transfer",
+            "Key regeneration required",
+            "Cloud key restoration"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through PAC bypass attempts?",
+        "o": [
+            "Check pointer authentication integrity",
+            "Monitor instruction pointers",
+            "Count authenticated pointers",
+            "Test branch targets"
+        ]
+    },
+    {
+        "q": "How does Face ID handle presentation attacks with 3D masks?",
+        "o": [
+            "Analyzes micro-movements and texture",
+            "Matches static geometry only",
+            "Uses thermal detection",
+            "Requires verbal response"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to com.apple.security.exception?",
+        "o": [
+            "Temporary entitlement grants",
+            "Permanent exemptions",
+            "No exceptions allowed",
+            "User approved only"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for embedded frameworks?",
+        "o": [
+            "Recursive signature validation",
+            "Parent app signature covers",
+            "No validation required",
+            "Runtime checks only"
+        ]
+    },
+    {
+        "q": "What is the key wrapping hierarchy for Data Protection in iOS 13+?",
+        "o": [
+            "UID key wraps class keys wraps file keys",
+            "Single layer encryption",
+            "User key only",
+            "Network based wrapping"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for AMFI patches?",
+        "o": [
+            "Verify AppleMobileFileIntegrity status",
+            "Check kernel extensions",
+            "Monitor file access",
+            "Test code signing"
+        ]
+    },
+    {
+        "q": "What is the liveness detection algorithm's false acceptance rate?",
+        "o": [
+            "One in million for presentation attacks",
+            "Variable based on lighting",
+            "User configurable",
+            "Device dependent"
+        ]
+    },
+    {
+        "q": "How does sandbox container handle CloudDocs syncing?",
+        "o": [
+            "Managed through NSMetadataQuery",
+            "Direct file system access",
+            "No cloud support",
+            "Manual sync only"
+        ]
+    },
+    {
+        "q": "What is a code signature requirement for driverkit extensions?",
+        "o": [
+            "Separate system extension signing",
+            "Same as app signing",
+            "No signature needed",
+            "Apple only signs"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during device firmware updates?",
+        "o": [
+            "Preserved via effaceable storage",
+            "Regenerated after update",
+            "Backed to secure server",
+            "User must re-enter"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through trust cache injection?",
+        "o": [
+            "Check trust cache entries for anomalies",
+            "Monitor binary execution",
+            "Count trusted binaries",
+            "Verify cache size"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network handle facial pareidolia?",
+        "o": [
+            "Statistical rejection of non-face patterns",
+            "Matches any face-like pattern",
+            "User must confirm",
+            "Random rejection"
+        ]
+    },
+    {
+        "q": "What is the sandbox's handling of com.apple.security.app-sandbox?",
+        "o": [
+            "Enables sandbox with default profile",
+            "Disables sandbox entirely",
+            "Custom profile only",
+            "Network only sandbox"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for cryptographic libraries?",
+        "o": [
+            "Standard signature validation applies",
+            "Special crypto exemption",
+            "No signature required",
+            "FIPS validation only"
+        ]
+    },
+    {
+        "q": "What is the technical difference between class C and class A protection?",
+        "o": [
+            "Key availability before first unlock",
+            "Encryption algorithm used",
+            "Key length variation",
+            "Hardware involvement"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for kernel task port?",
+        "o": [
+            "Attempt to access kernel task",
+            "Monitor port allocations",
+            "Check port rights",
+            "Test mach calls"
+        ]
+    },
+    {
+        "q": "What is the anti-replay mechanism in Face ID authentication?",
+        "o": [
+            "Rolling challenge nonce",
+            "Static biometric data",
+            "Time based codes",
+            "Location verification"
+        ]
+    },
+    {
+        "q": "How does sandbox handle entitlements inheritance in XPC services?",
+        "o": [
+            "Child services get subset of parent",
+            "Full inheritance",
+            "No inheritance",
+            "User specified"
+        ]
+    },
+    {
+        "q": "What is the code signature requirement for watchOS complications?",
+        "o": [
+            "Signed with companion app",
+            "Independent signature",
+            "No signature needed",
+            "Apple Watch signs"
+        ]
+    },
+    {
+        "q": "How are Data Protection class keys protected during secure idle after reboot?",
+        "o": [
+            "Not available until first unlock",
+            "Available immediately",
+            "Partial availability",
+            "User must unlock"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through launchd overrides?",
+        "o": [
+            "Check launchd plist modifications",
+            "Monitor process spawning",
+            "Count daemons",
+            "Test service loading"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network handle face symmetry analysis?",
+        "o": [
+            "One of many feature vectors",
+            "Primary matching criteria",
+            "Ignored completely",
+            "Secondary check only"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to com.apple.security.files.downloads?",
+        "o": [
+            "Read-only access to Downloads",
+            "Full file system access",
+            "No downloads access",
+            "Write only access"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for app clips?",
+        "o": [
+            "Lightweight signature validation",
+            "Full app signature required",
+            "No signature required",
+            "Apple validates"
+        ]
+    },
+    {
+        "q": "What is the key derivation for NSFileProtectionCompleteWhenOpen?",
+        "o": [
+            "Temporary key in memory only",
+            "Persistent file key",
+            "User passcode derived",
+            "Hardware UID only"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for system call table hooks?",
+        "o": [
+            "Compare syscall table with stored hash",
+            "Count syscalls",
+            "Monitor call times",
+            "Test random syscalls"
+        ]
+    },
+    {
+        "q": "What is the role of the Secure Neural Engine in Face ID matching?",
+        "o": [
+            "Dedicated inference hardware",
+            "Software fallback",
+            "Cloud processing",
+            "GPU acceleration"
+        ]
+    },
+    {
+        "q": "How does sandbox handle com.apple.security.network.server?",
+        "o": [
+            "Allows incoming network connections",
+            "Blocks all network",
+            "Client only allowed",
+            "User configured"
+        ]
+    },
+    {
+        "q": "What is a code signature requirement for nested applications?",
+        "o": [
+            "Each level independently signed",
+            "Top level only signed",
+            "No signing needed",
+            "Runtime signing"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during iCloud backup?",
+        "o": [
+            "Keys not backed up, data re-encrypted",
+            "Keys backed with Apple key",
+            "Full key backup",
+            "User password protects"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through vnode operations?",
+        "o": [
+            "Check vnode mount flags",
+            "Monitor file handles",
+            "Count open files",
+            "Test vnode lookup"
+        ]
+    },
+    {
+        "q": "How does Face ID handle authentication with masks during COVID-19?",
+        "o": [
+            "Attention aware with partial face",
+            "Requires mask removal",
+            "Works through any mask",
+            "Disables Face ID"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to com.apple.security.device.camera?",
+        "o": [
+            "Entitlement based camera access",
+            "Always allowed",
+            "Never allowed",
+            "User approves each use"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for kernel extensions?",
+        "o": [
+            "Strict signature requirement",
+            "No kernel extensions allowed",
+            "Developer signed only",
+            "Runtime verification"
+        ]
+    },
+    {
+        "q": "What is the technical implementation of class key escrow?",
+        "o": [
+            "No escrow for security",
+            "Apple maintains backup",
+            "iCloud keychain escrow",
+            "User paper copy"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for mount points?",
+        "o": [
+            "Check for additional mounts",
+            "Count mount points",
+            "Measure mount space",
+            "Test mount commands"
+        ]
+    },
+    {
+        "q": "What is the anti-spoofing technology for 3D printed masks?",
+        "o": [
+            "Analyzes material properties",
+            "Matches shape only",
+            "Uses color detection",
+            "Checks eye movement"
+        ]
+    },
+    {
+        "q": "How does sandbox handle com.apple.security.personal-information.addressbook?",
+        "o": [
+            "Entitlement for contact access",
+            "Full address book access",
+            "No contact access",
+            "Partial access only"
+        ]
+    },
+    {
+        "q": "What is a code signature requirement for macOS catalyst apps?",
+        "o": [
+            "iOS style signature required",
+            "Mac signature only",
+            "No signature needed",
+            "Dual signature"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during passcode change?",
+        "o": [
+            "Keys rewrapped with new passcode",
+            "New keys generated",
+            "Keys remain unchanged",
+            "Keys deleted"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through dyld shared cache?",
+        "o": [
+            "Check cache integrity",
+            "Count cached images",
+            "Measure cache size",
+            "Test cache loading"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network handle adversarial examples?",
+        "o": [
+            "Robust to small perturbations",
+            "Easily fooled",
+            "Random response",
+            "Always rejects"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to com.apple.security.device.bluetooth?",
+        "o": [
+            "Entitlement for Bluetooth",
+            "Always allowed",
+            "Never allowed",
+            "Pairing required"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for resources in asset catalogs?",
+        "o": [
+            "Covered by main signature",
+            "Separately signed",
+            "No verification",
+            "Runtime check"
+        ]
+    },
+    {
+        "q": "What is the key hierarchy for iCloud keychain syncing?",
+        "o": [
+            "Circle of trust keys",
+            "Single master key",
+            "User password only",
+            "Device UID only"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for kernel symbols?",
+        "o": [
+            "Look for exposed kernel symbols",
+            "Count available symbols",
+            "Check symbol names",
+            "Test symbol access"
+        ]
+    },
+    {
+        "q": "What is the liveness detection for identical twins in Face ID?",
+        "o": [
+            "Statistical improbability of identical",
+            "Always accepts both",
+            "Always rejects both",
+            "Random outcome"
+        ]
+    },
+    {
+        "q": "How does sandbox handle com.apple.security.device.audio-input?",
+        "o": [
+            "Entitlement for microphone",
+            "Always allowed",
+            "Never allowed",
+            "User approves"
+        ]
+    },
+    {
+        "q": "What is a code signature requirement for app extensions?",
+        "o": [
+            "Same team identifier",
+            "Different team allowed",
+            "No requirement",
+            "Apple only"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during low power mode?",
+        "o": [
+            "Same protection levels apply",
+            "Reduced protection",
+            "No protection",
+            "Temporary keys"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through proc_info calls?",
+        "o": [
+            "Check for hidden processes",
+            "Count all processes",
+            "Measure CPU time",
+            "Monitor memory use"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network handle cross-eyed users?",
+        "o": [
+            "Still matches despite eye position",
+            "Fails authentication",
+            "Requires straight gaze",
+            "Uses backup method"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to com.apple.security.network.client?",
+        "o": [
+            "Allows outgoing connections",
+            "Blocks all network",
+            "Server only allowed",
+            "User configured"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for plug-ins?",
+        "o": [
+            "Parent app signature covers",
+            "Independent signing",
+            "No signature required",
+            "Runtime validation"
+        ]
+    },
+    {
+        "q": "What is the technical difference between NSFileProtectionComplete and NSFileProtectionCompleteUnlessOpen?",
+        "o": [
+            "Key caching behavior differs",
+            "Same protection level",
+            "Algorithm difference",
+            "Key length difference"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for sandbox profile modifications?",
+        "o": [
+            "Compare profiles with known good",
+            "Count profile rules",
+            "Check profile size",
+            "Test profile loading"
+        ]
+    },
+    {
+        "q": "What is the anti-spoofing technology for high-resolution photographs?",
+        "o": [
+            "Depth analysis detects flatness",
+            "Matches any 2D image",
+            "Uses color accuracy",
+            "Checks for pixels"
+        ]
+    },
+    {
+        "q": "How does sandbox handle com.apple.security.files.user-selected.read-only?",
+        "o": [
+            "Read access to selected files",
+            "Full file access",
+            "No file access",
+            "Write only"
+        ]
+    },
+    {
+        "q": "What is a code signature requirement for Siri intents?",
+        "o": [
+            "Signed with host app",
+            "Independent signing",
+            "Apple signs intents",
+            "No signature needed"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during device migration?",
+        "o": [
+            "Secure transfer between devices",
+            "Regenerated on new device",
+            "Cloud key sync",
+            "User manual entry"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through task_for_pid?",
+        "o": [
+            "Attempt to access other tasks",
+            "Monitor task creation",
+            "Count tasks",
+            "Test task names"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network handle facial hair changes?",
+        "o": [
+            "Gradual model adaptation",
+            "Fails until retrained",
+            "Immediate rejection",
+            "Requires shaving"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to com.apple.security.app-data-protection?",
+        "o": [
+            "Data protection entitlement",
+            "No data protection",
+            "Always on",
+            "User configurable"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for on-demand resources?",
+        "o": [
+            "Signed with main app",
+            "Separately signed",
+            "No signature",
+            "Apple signed only"
+        ]
+    },
+    {
+        "q": "What is the key hierarchy for hardware-backed keys?",
+        "o": [
+            "UID wrapped keys in Secure Enclave",
+            "Software only storage",
+            "Cloud key storage",
+            "User key storage"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for kernel module loading?",
+        "o": [
+            "Monitor kextstat for anomalies",
+            "Count loaded modules",
+            "Check module sizes",
+            "Test module names"
+        ]
+    },
+    {
+        "q": "What is the liveness detection for cadaveric spasms?",
+        "o": [
+            "Detects lack of micro-movements",
+            "Matches any face",
+            "Random rejection",
+            "Always accepts"
+        ]
+    },
+    {
+        "q": "How does sandbox handle com.apple.security.device.usb?",
+        "o": [
+            "Entitlement for USB access",
+            "Always allowed",
+            "Never allowed",
+            "User approved"
+        ]
+    },
+    {
+        "q": "What is a code signature requirement for notification content extensions?",
+        "o": [
+            "Signed with containing app",
+            "Independent signing",
+            "Apple signs only",
+            "No signature"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during cellular updates?",
+        "o": [
+            "Baseband preserved separately",
+            "Keys in application processor",
+            "Shared keys",
+            "No protection"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through KASLR bypass?",
+        "o": [
+            "Check kernel slide consistency",
+            "Monitor memory layout",
+            "Test address leaks",
+            "Measure entropy"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network handle plastic surgery changes?",
+        "o": [
+            "May require reconfiguration",
+            "Adapts automatically",
+            "Continues working",
+            "Always fails"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to com.apple.security.exception.files.absolute-path.read-only?",
+        "o": [
+            "Read access to specific paths",
+            "Full file system access",
+            "No file access",
+            "Write only"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for watchOS complications?",
+        "o": [
+            "Signed with watch app",
+            "iPhone signs them",
+            "Apple signs only",
+            "No signature needed"
+        ]
+    },
+    {
+        "q": "What is the technical implementation of NSFileProtectionComplete for SQLite databases?",
+        "o": [
+            "Page level encryption",
+            "File level only",
+            "No encryption",
+            "Table level"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for CoreTrust bypass?",
+        "o": [
+            "Verify trust cache integrity",
+            "Check certificate trust",
+            "Monitor binary validation",
+            "Test code loading"
+        ]
+    },
+    {
+        "q": "What is the anti-spoofing technology for video replay attacks?",
+        "o": [
+            "Depth and movement analysis",
+            "Matches any video",
+            "Screen detection",
+            "Pixel analysis"
+        ]
+    },
+    {
+        "q": "How does sandbox handle com.apple.security.exception.shared-preference.read-only?",
+        "o": [
+            "Read preferences from app groups",
+            "Full preference access",
+            "No preference access",
+            "Write only"
+        ]
+    },
+    {
+        "q": "What is a code signature requirement for file provider extensions?",
+        "o": [
+            "Same team as main app",
+            "Different team allowed",
+            "Apple signs only",
+            "No requirement"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during secure boot?",
+        "o": [
+            "Not available until after boot",
+            "Available immediately",
+            "Partial availability",
+            "User must enter"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through PAC exception handling?",
+        "o": [
+            "Monitor PAC failures",
+            "Count exceptions",
+            "Test exception handlers",
+            "Check error rates"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network handle anisocoria conditions?",
+        "o": [
+            "Still functions normally",
+            "Fails authentication",
+            "Requires doctor note",
+            "Uses backup"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to com.apple.security.exception.mach-lookup.global-name?",
+        "o": [
+            "Access to named Mach services",
+            "All Mach services",
+            "No Mach access",
+            "Local only"
+        ]
+    },
+    {
+        "q": "How does the iOS sandbox implement MACF policy decisions through the Sandbox.kext?",
+        "o": [
+            "Kernel extension evaluating system calls",
+            "User space daemon managing rules",
+            "Hardware enforced permissions",
+            "Cloud based policy server"
+        ]
+    },
+    {
+        "q": "What is the code signature's handling of Thread Local Storage in dyld shared cache?",
+        "o": [
+            "Signed as part of cache",
+            "Separate signature required",
+            "No signature for TLS",
+            "Runtime generated signatures"
+        ]
+    },
+    {
+        "q": "How are Data Protection class keys protected during Secure Enclave personalization?",
+        "o": [
+            "Fused during manufacturing",
+            "Generated after boot",
+            "Downloaded from Apple",
+            "User provided during setup"
+        ]
+    },
+    {
+        "q": "What methods detect checkm8 bootrom exploit presence?",
+        "o": [
+            "USB device descriptor analysis",
+            "Memory layout inspection",
+            "CPU register verification",
+            "Boot chain integrity check"
+        ]
+    },
+    {
+        "q": "How does Face ID's liveness detection analyze skin pore distribution?",
+        "o": [
+            "High resolution texture analysis",
+            "Ignored in matching",
+            "Primary matching factor",
+            "Secondary verification only"
+        ]
+    },
+    {
+        "q": "What is the sandbox's handling of ioctl commands on /dev/dtrace?",
+        "o": [
+            "Restricted to platform binaries",
+            "Full access for all apps",
+            "No access permitted",
+            "User approved access"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for LLVM bitcode in App Store submissions?",
+        "o": [
+            "Bitcode validation separate",
+            "No bitcode verification",
+            "Included in main signature",
+            "Apple re-signs bitcode"
+        ]
+    },
+    {
+        "q": "What is the technical implementation of NSFileProtectionComplete for Core Data?",
+        "o": [
+            "SQLite encryption at page level",
+            "File level encryption only",
+            "No encryption support",
+            "Attribute level encryption"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for Cydia Substrate via MSHookFunction?",
+        "o": [
+            "Verify function pointer integrity",
+            "Count hooked functions",
+            "Check library load order",
+            "Monitor function calls"
+        ]
+    },
+    {
+        "q": "What is the neural engine's role in Face ID for 3D reconstruction?",
+        "o": [
+            "Depth map generation from dot pattern",
+            "2D image processing",
+            "Thermal imaging analysis",
+            "Infrared spectroscopy"
+        ]
+    },
+    {
+        "q": "How does sandbox handle com.apple.security.temporary-exception.files.absolute-path.read-write?",
+        "o": [
+            "Temporary entitlement for file access",
+            "Permanent permission grant",
+            "No exceptions allowed",
+            "User must approve"
+        ]
+    },
+    {
+        "q": "What is the code signature requirement for Swift concurrency runtime?",
+        "o": [
+            "Part of standard library signature",
+            "Separate signature needed",
+            "No signature required",
+            "Runtime generated signature"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during Secure Enclave firmware updates?",
+        "o": [
+            "Hardware isolated key migration",
+            "Keys regenerated post-update",
+            "Backed to iCloud",
+            "Stored in separate partition"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through PPL bypass on A12+ devices?",
+        "o": [
+            "Check page protection layer integrity",
+            "Monitor memory permissions",
+            "Count protected pages",
+            "Test write protection"
+        ]
+    },
+    {
+        "q": "How does Face ID handle presentation attacks with gelatin masks?",
+        "o": [
+            "Analyzes subsurface scattering",
+            "Matches surface geometry",
+            "Uses thermal detection",
+            "Checks electrical properties"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to com.apple.security.exception.iokit-user-client-class?",
+        "o": [
+            "Access to specific IOKit classes",
+            "Full IOKit access",
+            "No IOKit access",
+            "User client approval"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for PAC authenticated functions?",
+        "o": [
+            "Signature validation plus PAC",
+            "PAC replaces signature",
+            "No additional verification",
+            "Runtime only checks"
+        ]
+    },
+    {
+        "q": "What is the key hierarchy for Hardware Cryptographic Engine backing?",
+        "o": [
+            "UID key in efuse storage",
+            "Software generated key",
+            "User provided key",
+            "Network derived key"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for kernel patch protection bypass?",
+        "o": [
+            "Verify KPP/KTRR integrity",
+            "Monitor kernel text",
+            "Check page tables",
+            "Test memory regions"
+        ]
+    },
+    {
+        "q": "What is the liveness detection algorithm for identical twins using vein patterns?",
+        "o": [
+            "Subdermal vein detection",
+            "Surface feature only",
+            "No vein analysis",
+            "Thermal signature only"
+        ]
+    },
+    {
+        "q": "How does sandbox handle com.apple.security.exception.shared-preference.read-write?",
+        "o": [
+            "Write access to shared preferences",
+            "Read only access",
+            "No preference access",
+            "Full system access"
+        ]
+    },
+    {
+        "q": "What is a code signature requirement for DriverKit system extensions?",
+        "o": [
+            "Apple-signed or team-signed",
+            "No signature required",
+            "User must approve",
+            "Runtime signed"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during AOP firmware updates?",
+        "o": [
+            "Always Processor keys preserved",
+            "Regenerated after update",
+            "Stored in main processor",
+            "Cloud backed up"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through SEP exploit attempts?",
+        "o": [
+            "Monitor Secure Enclave communication",
+            "Check SEP firmware",
+            "Count SEP calls",
+            "Test SEP services"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network handle facial recognition with makeup?",
+        "o": [
+            "Works through cosmetic changes",
+            "Fails authentication",
+            "Requires clean face",
+            "Random outcome"
+        ]
+    },
+    {
+        "q": "What is the sandbox's handling of host special ports?",
+        "o": [
+            "Restricted to platform processes",
+            "Available to all apps",
+            "No access permitted",
+            "User approved access"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for Rosetta translated code?",
+        "o": [
+            "Original signature remains valid",
+            "New signature generated",
+            "No verification needed",
+            "Runtime translation signs"
+        ]
+    },
+    {
+        "q": "What is the technical difference between NSFileProtectionComplete and complete protection for keychain items?",
+        "o": [
+            "Keychain uses separate class keys",
+            "Same protection mechanism",
+            "Keychain is weaker",
+            "Keychain is stronger"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for amfid patches?",
+        "o": [
+            "Verify amfid integrity and hooks",
+            "Count amfid calls",
+            "Monitor amfid memory",
+            "Check amfid version"
+        ]
+    },
+    {
+        "q": "What is the anti-spoofing technology for deepfake video attacks?",
+        "o": [
+            "Micro-expression timing analysis",
+            "Matches any video",
+            "Pixel comparison only",
+            "Color accuracy check"
+        ]
+    },
+    {
+        "q": "How does sandbox handle com.apple.security.temporary-exception.mach-lookup.global-name?",
+        "o": [
+            "Temporary Mach service access",
+            "Permanent Mach access",
+            "No Mach service access",
+            "User approved access"
+        ]
+    },
+    {
+        "q": "What is the code signature requirement for quantum-safe algorithms in CryptoKit?",
+        "o": [
+            "Part of CryptoKit signature",
+            "Separate signature required",
+            "No signature required",
+            "Apple signs algorithms"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during Secure Pagelist generation?",
+        "o": [
+            "Hardware generated keys",
+            "Software random only",
+            "User provided seed",
+            "Network entropy"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through TrustZone exploit on A-series chips?",
+        "o": [
+            "Monitor Secure World integrity",
+            "Check Normal World only",
+            "Test hypervisor calls",
+            "Count secure monitors"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network handle post-mortem identification attempts?",
+        "o": [
+            "Liveness detection blocks",
+            "Matches any face",
+            "Random acceptance",
+            "Always rejects"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to com.apple.rootless.storage?",
+        "o": [
+            "Rootless storage protection",
+            "Full storage access",
+            "No storage access",
+            "User managed storage"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for Swift async functions in binaries?",
+        "o": [
+            "Covered by function signatures",
+            "Separate verification",
+            "No verification needed",
+            "Runtime async validation"
+        ]
+    },
+    {
+        "q": "What is the key hierarchy for Secure Enclave key generation?",
+        "o": [
+            "Hardware random seeded from UID",
+            "Software PRNG only",
+            "User entropy only",
+            "Network randomness"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for syscall filtering bypass?",
+        "o": [
+            "Attempt blocked syscalls indirectly",
+            "Monitor syscall logs",
+            "Count syscall types",
+            "Test syscall speed"
+        ]
+    },
+    {
+        "q": "What is the liveness detection for prosthetic makeup applications?",
+        "o": [
+            "Material property analysis",
+            "Surface matching only",
+            "Color detection only",
+            "Shape recognition"
+        ]
+    },
+    {
+        "q": "How does sandbox handle com.apple.security.exception.process-info?",
+        "o": [
+            "Limited process information access",
+            "Full process list access",
+            "No process info",
+            "User approved only"
+        ]
+    },
+    {
+        "q": "What is a code signature requirement for Neural Engine model encryption?",
+        "o": [
+            "Models covered by app signature",
+            "Separate model signing",
+            "No model encryption",
+            "Apple signs models"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during NAND mirroring attacks?",
+        "o": [
+            "Keys not stored on NAND",
+            "Keys on NAND encrypted",
+            "Keys in plain text",
+            "Software only protection"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through hardware debug interfaces?",
+        "o": [
+            "Check JTAG/SWD lock status",
+            "Monitor debug registers",
+            "Count breakpoints",
+            "Test debug exceptions"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network handle facial recognition with aging?",
+        "o": [
+            "Continuous model adaptation",
+            "Static template only",
+            "Periodic retraining",
+            "User must retrain"
+        ]
+    },
+    {
+        "q": "What is the sandbox's handling of AppleEmbeddedPCIeController?",
+        "o": [
+            "Restricted PCIe access",
+            "Full PCIe access",
+            "No PCIe access",
+            "User configured"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for Siri Shortcuts?",
+        "o": [
+            "Shortcuts signed by creator",
+            "Apple signs shortcuts",
+            "No signature required",
+            "Runtime verification only"
+        ]
+    },
+    {
+        "q": "What is the technical implementation of NSFileProtectionComplete for CloudKit records?",
+        "o": [
+            "End-to-end encryption",
+            "Server side only",
+            "Transport only",
+            "No encryption"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for PAC bypass via ROP?",
+        "o": [
+            "Analyze pointer authentication",
+            "Count ROP gadgets",
+            "Monitor stack traces",
+            "Test return addresses"
+        ]
+    },
+    {
+        "q": "What is the anti-spoofing technology for contact lens interference?",
+        "o": [
+            "Iris pattern analysis",
+            "Lens detection only",
+            "Eye color matching",
+            "Pupil response only"
+        ]
+    },
+    {
+        "q": "How does sandbox handle com.apple.security.exception.sbpl?",
+        "o": [
+            "Sandbox profile language exceptions",
+            "No exceptions allowed",
+            "Full profile override",
+            "User defined rules"
+        ]
+    },
+    {
+        "q": "What is the code signature requirement for SwiftUI previews?",
+        "o": [
+            "Development signed only",
+            "No preview signing",
+            "App store signed",
+            "Runtime generated"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during memory dumps?",
+        "o": [
+            "Keys never in plain text",
+            "Keys in memory plain",
+            "Keys on disk only",
+            "Network stored"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through SEP ROM exploits?",
+        "o": [
+            "Verify SEPROM integrity",
+            "Check SEP version",
+            "Monitor SEP calls",
+            "Test SEP services"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network handle facial recognition with scars?",
+        "o": [
+            "Incorporates as features",
+            "Ignores completely",
+            "Causes rejection",
+            "Random outcome"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to com.apple.private.security.container-manager?",
+        "o": [
+            "Container management privileges",
+            "No container access",
+            "Full container access",
+            "User container only"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for Metal shader binaries?",
+        "o": [
+            "Covered by app signature",
+            "Separate shader signing",
+            "No shader verification",
+            "Runtime compilation signs"
+        ]
+    },
+    {
+        "q": "What is the key hierarchy for Hardware Cryptographic Engine during secure boot?",
+        "o": [
+            "Chain of trust keys",
+            "Single boot key",
+            "User provided key",
+            "Network key"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for KTRR bypass on A13?",
+        "o": [
+            "Verify kernel text region",
+            "Monitor page tables",
+            "Count protected pages",
+            "Test write protection"
+        ]
+    },
+    {
+        "q": "What is the liveness detection for silicone-based hyper-realistic masks?",
+        "o": [
+            "Subsurface scattering analysis",
+            "Surface geometry only",
+            "Color matching only",
+            "Thermal detection"
+        ]
+    },
+    {
+        "q": "How does sandbox handle com.apple.private.security.no-sandbox?",
+        "o": [
+            "Disables sandbox for platform apps",
+            "Enables for all apps",
+            "No effect",
+            "User controlled"
+        ]
+    },
+    {
+        "q": "What is a code signature requirement for developer ID applications?",
+        "o": [
+            "Apple notarization required",
+            "Self-signed only",
+            "No signature needed",
+            "User verified"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during DMA attacks?",
+        "o": [
+            "IOMMU protection",
+            "No DMA protection",
+            "Software only",
+            "User configured"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through iBoot exploit chains?",
+        "o": [
+            "Verify boot chain signatures",
+            "Check iBoot version",
+            "Monitor boot args",
+            "Test boot commands"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network handle facial recognition after stroke?",
+        "o": [
+            "Adapts to changes gradually",
+            "Requires retraining",
+            "Permanent failure",
+            "Random outcome"
+        ]
+    },
+    {
+        "q": "What is the sandbox's handling of AppleARMIIController?",
+        "o": [
+            "Restricted I2C access",
+            "Full I2C access",
+            "No I2C access",
+            "User configured"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for CoreML model updates?",
+        "o": [
+            "Models must be signed",
+            "No signature required",
+            "Apple signs all models",
+            "Runtime verification"
+        ]
+    },
+    {
+        "q": "What is the technical implementation of NSFileProtectionComplete for HealthKit?",
+        "o": [
+            "HealthKit specific encryption",
+            "Standard file protection",
+            "No encryption",
+            "Cloud encryption only"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for sandbox escapes via launchd?",
+        "o": [
+            "Monitor launchd communication",
+            "Check launchd configs",
+            "Count launchd jobs",
+            "Test launchd services"
+        ]
+    },
+    {
+        "q": "What is the anti-spoofing technology for 4K video replay on high-refresh screens?",
+        "o": [
+            "Screen refresh rate detection",
+            "Matches any video",
+            "Pixel analysis only",
+            "Color accuracy check"
+        ]
+    },
+    {
+        "q": "How does sandbox handle com.apple.private.security.storage.AppDataContainers?",
+        "o": [
+            "Container storage access",
+            "Full file access",
+            "No storage access",
+            "User data only"
+        ]
+    },
+    {
+        "q": "What is the code signature requirement for App Store server notifications?",
+        "o": [
+            "Signed by App Store",
+            "Developer signed",
+            "No signature",
+            "Apple ID signed"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during Spectre/Meltdown style attacks?",
+        "o": [
+            "Constant time crypto",
+            "No mitigation",
+            "Software only",
+            "User mitigation"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through AOP exploit on Always-On Processor?",
+        "o": [
+            "Monitor AOP firmware",
+            "Check AOP memory",
+            "Count AOP tasks",
+            "Test AOP services"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network handle facial recognition with paralysis?",
+        "o": [
+            "Static features still match",
+            "Requires movement",
+            "Fails authentication",
+            "Uses backup"
+        ]
+    },
+    {
+        "q": "What is the sandbox's approach to com.apple.private.security.storage.SystemLibrary?",
+        "o": [
+            "Read-only system library access",
+            "Full system access",
+            "No system access",
+            "Write only access"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for JavaScriptCore JIT pages?",
+        "o": [
+            "MAP_JIT with entitlement",
+            "No verification needed",
+            "Runtime signing",
+            "Apple signs pages"
+        ]
+    },
+    {
+        "q": "What is the key hierarchy for Secure Element in Apple Pay?",
+        "o": [
+            "SE separate key system",
+            "Same as Secure Enclave",
+            "Software keys only",
+            "Cloud keys"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for PAC bypass via JOP?",
+        "o": [
+            "Analyze jump-oriented programming",
+            "Count jump gadgets",
+            "Monitor branch targets",
+            "Test control flow"
+        ]
+    },
+    {
+        "q": "What is the liveness detection for eye transplant recipients?",
+        "o": [
+            "Iris pattern unchanged",
+            "Complete failure",
+            "Requires retraining",
+            "Random outcome"
+        ]
+    },
+    {
+        "q": "How does sandbox handle com.apple.private.security.storage.SystemGroup?",
+        "o": [
+            "System group container access",
+            "Full group access",
+            "No group access",
+            "User groups only"
+        ]
+    },
+    {
+        "q": "What is a code signature requirement for watchOS complications with background updates?",
+        "o": [
+            "Background modes entitlement",
+            "No special requirement",
+            "Apple approves only",
+            "User must enable"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during Rowhammer attacks?",
+        "o": [
+            "Memory integrity checks",
+            "No protection",
+            "ECC memory only",
+            "Software detection"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through SEP OS exploit?",
+        "o": [
+            "Verify SEPOS integrity",
+            "Check SEP version",
+            "Monitor SEP calls",
+            "Test SEP services"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network handle facial recognition after extreme weight loss?",
+        "o": [
+            "Adapts to facial changes",
+            "Fails permanently",
+            "Requires retraining",
+            "Random outcome"
+        ]
+    },
+    {
+        "q": "What is the sandbox's handling of AppleSPURateController?",
+        "o": [
+            "Restricted SPI access",
+            "Full SPI access",
+            "No SPI access",
+            "User configured"
+        ]
+    },
+    {
+        "q": "How does iOS verify code signature for Core Data persistent stores?",
+        "o": [
+            "Covered by data protection",
+            "Separate signature",
+            "No verification",
+            "Apple signs stores"
+        ]
+    },
+    {
+        "q": "What is the technical implementation of NSFileProtectionComplete for CloudKit sync?",
+        "o": [
+            "End-to-end encrypted",
+            "Server encrypted",
+            "Transport only",
+            "No encryption"
+        ]
+    },
+    {
+        "q": "How do jailbreak detection methods check for sandbox escapes via XPC?",
+        "o": [
+            "Monitor XPC message validation",
+            "Count XPC services",
+            "Check XPC policies",
+            "Test XPC calls"
+        ]
+    },
+    {
+        "q": "What is the anti-spoofing technology for animatronic replicas?",
+        "o": [
+            "Biological property detection",
+            "Shape matching only",
+            "Movement only",
+            "Color analysis"
+        ]
+    },
+    {
+        "q": "How does sandbox handle com.apple.private.security.storage.Bundle?",
+        "o": [
+            "Read-only bundle access",
+            "Full bundle modification",
+            "No bundle access",
+            "Write only access"
+        ]
+    },
+    {
+        "q": "What is the code signature requirement for NSExtension with background modes?",
+        "o": [
+            "Extension specific entitlements",
+            "No requirements",
+            "Apple signs only",
+            "User approves"
+        ]
+    },
+    {
+        "q": "How are Data Protection keys protected during cache side-channel attacks?",
+        "o": [
+            "Constant time operations",
+            "No mitigation",
+            "Cache flushing",
+            "User isolation"
+        ]
+    },
+    {
+        "q": "What techniques detect jailbreak through PAC bypass using ROP?",
+        "o": [
+            "Monitor pointer authentication",
+            "Count ROP chains",
+            "Analyze return addresses",
+            "Test function pointers"
+        ]
+    },
+    {
+        "q": "How does Face ID's neural network handle facial recognition with prosthetic eyes?",
+        "o": [
+            "Surrounding features used",
+            "Complete failure",
+            "Requires backup",
+            "Random outcome"
+        ]
+    }
+]

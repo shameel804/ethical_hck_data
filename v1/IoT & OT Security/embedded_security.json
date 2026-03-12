@@ -1,0 +1,4232 @@
+[
+    {
+        "q": "What is the primary purpose of hardware security in embedded systems?",
+        "o": [
+            "Protecting physical devices from unauthorized access and tampering",
+            "Increasing the processing speed of the microcontroller",
+            "Reducing the manufacturing cost of the circuit board",
+            "Improving the battery life of portable devices"
+        ]
+    },
+    {
+        "q": "Which of the following is considered a hardware security module?",
+        "o": [
+            "Trusted Platform Module (TPM)",
+            "Universal Asynchronous Receiver Transmitter",
+            "Analog-to-Digital Converter",
+            "Pulse Width Modulator"
+        ]
+    },
+    {
+        "q": "What does JTAG stand for in embedded systems?",
+        "o": [
+            "Joint Test Action Group",
+            "Java Test Automation Grid",
+            "Junction Transistor Array Gate",
+            "Jump Trace Address Generator"
+        ]
+    },
+    {
+        "q": "Which interface is commonly used for debugging embedded devices?",
+        "o": [
+            "UART",
+            "HDMI",
+            "VGA",
+            "DisplayPort"
+        ]
+    },
+    {
+        "q": "What is the main purpose of secure boot?",
+        "o": [
+            "Ensure only authenticated code runs on the device",
+            "Make the device boot up faster",
+            "Reduce power consumption during startup",
+            "Enable wireless connectivity"
+        ]
+    },
+    {
+        "q": "What type of attack monitors power consumption to extract secrets?",
+        "o": [
+            "Side-channel attack",
+            "Denial of service attack",
+            "Man in the middle attack",
+            "Phishing attack"
+        ]
+    },
+    {
+        "q": "Which of the following is a firmware analysis technique?",
+        "o": [
+            "Static code analysis",
+            "Dynamic memory allocation",
+            "Garbage collection",
+            "Cache optimization"
+        ]
+    },
+    {
+        "q": "What is the role of a hardware root of trust?",
+        "o": [
+            "Provide a foundation for all security operations",
+            "Manage the device's power supply",
+            "Control the display output",
+            "Handle user input"
+        ]
+    },
+    {
+        "q": "Which pin is typically used for data transmission in UART?",
+        "o": [
+            "TX",
+            "VCC",
+            "GND",
+            "SCL"
+        ]
+    },
+    {
+        "q": "What does firmware analysis primarily examine?",
+        "o": [
+            "Code stored in non-volatile memory",
+            "Volatile RAM contents",
+            "CPU cache data",
+            "Network packets"
+        ]
+    },
+    {
+        "q": "Which attack exploits timing variations in cryptographic operations?",
+        "o": [
+            "Timing attack",
+            "Buffer overflow attack",
+            "SQL injection attack",
+            "Cross-site scripting"
+        ]
+    },
+    {
+        "q": "What is a common protection against JTAG debugging?",
+        "o": [
+            "Disabling JTAG ports before deployment",
+            "Increasing the clock frequency",
+            "Adding more memory",
+            "Using a larger power supply"
+        ]
+    },
+    {
+        "q": "What does a secure boot process verify?",
+        "o": [
+            "Digital signatures of bootloader and OS",
+            "Available RAM size",
+            "CPU temperature",
+            "Battery voltage"
+        ]
+    },
+    {
+        "q": "Which of the following is a hardware security feature?",
+        "o": [
+            "Memory Protection Unit (MPU)",
+            "Interrupt controller",
+            "DMA controller",
+            "Timer module"
+        ]
+    },
+    {
+        "q": "What information can side-channel attacks reveal?",
+        "o": [
+            "Encryption keys",
+            "Device color",
+            "Physical weight",
+            "Screen resolution"
+        ]
+    },
+    {
+        "q": "Which protocol is commonly used over UART for communication?",
+        "o": [
+            "RS-232",
+            "PCIe",
+            "USB 3.0",
+            "Thunderbolt"
+        ]
+    },
+    {
+        "q": "What is firmware usually stored in?",
+        "o": [
+            "Flash memory",
+            "CPU registers",
+            "L1 cache",
+            "Hard disk"
+        ]
+    },
+    {
+        "q": "What does a hardware security module typically do?",
+        "o": [
+            "Store and manage cryptographic keys securely",
+            "Compress data for storage",
+            "Render graphics",
+            "Manage network connections"
+        ]
+    },
+    {
+        "q": "Which attack measures electromagnetic radiation from a device?",
+        "o": [
+            "EM side-channel attack",
+            "Power glitch attack",
+            "Clock glitch attack",
+            "Voltage fault attack"
+        ]
+    },
+    {
+        "q": "What is the purpose of a lock bit in microcontrollers?",
+        "o": [
+            "Prevent unauthorized reading of flash memory",
+            "Lock the CPU clock speed",
+            "Secure the physical casing",
+            "Disable interrupt requests"
+        ]
+    },
+    {
+        "q": "Which tool is commonly used for JTAG debugging?",
+        "o": [
+            "OpenOCD",
+            "Wireshark",
+            "Nmap",
+            "Metasploit"
+        ]
+    },
+    {
+        "q": "What does secure boot protect against?",
+        "o": [
+            "Bootloader modification attacks",
+            "Power supply fluctuations",
+            "Overheating issues",
+            "Display burn-in"
+        ]
+    },
+    {
+        "q": "Which of the following is a side-channel attack vector?",
+        "o": [
+            "Power consumption",
+            "USB port",
+            "Ethernet cable",
+            "Audio jack"
+        ]
+    },
+    {
+        "q": "What is firmware reverse engineering used for?",
+        "o": [
+            "Finding vulnerabilities in embedded code",
+            "Increasing processing speed",
+            "Reducing memory usage",
+            "Improving graphics quality"
+        ]
+    },
+    {
+        "q": "Which JTAG signal is used for clock input?",
+        "o": [
+            "TCK",
+            "TDI",
+            "TDO",
+            "TMS"
+        ]
+    },
+    {
+        "q": "What is a hardware trojan?",
+        "o": [
+            "Malicious modification of integrated circuits",
+            "Software virus in firmware",
+            "Network worm",
+            "Phishing email"
+        ]
+    },
+    {
+        "q": "Which UART signal indicates data is ready to send?",
+        "o": [
+            "RTS",
+            "VCC",
+            "GND",
+            "XTAL"
+        ]
+    },
+    {
+        "q": "What does code signing ensure in secure boot?",
+        "o": [
+            "Code authenticity and integrity",
+            "Code execution speed",
+            "Memory efficiency",
+            "Power optimization"
+        ]
+    },
+    {
+        "q": "Which attack exploits processor cache behavior?",
+        "o": [
+            "Cache timing attack",
+            "Buffer overflow attack",
+            "Format string attack",
+            "Integer overflow"
+        ]
+    },
+    {
+        "q": "What is a physical unclonable function (PUF)?",
+        "o": [
+            "Hardware security primitive generating unique fingerprints",
+            "Software encryption algorithm",
+            "Network security protocol",
+            "Memory management technique"
+        ]
+    },
+    {
+        "q": "Which JTAG pin receives test data?",
+        "o": [
+            "TDI",
+            "TDO",
+            "TCK",
+            "TRST"
+        ]
+    },
+    {
+        "q": "What does firmware analysis often require?",
+        "o": [
+            "Extracting code from flash memory",
+            "Measuring supply voltage",
+            "Testing battery life",
+            "Checking display quality"
+        ]
+    },
+    {
+        "q": "Which side-channel attack uses differential power analysis?",
+        "o": [
+            "DPA attack",
+            "SPA attack",
+            "EMA attack",
+            "TEMPEST attack"
+        ]
+    },
+    {
+        "q": "What is the purpose of secure element hardware?",
+        "o": [
+            "Provide isolated secure execution environment",
+            "Increase CPU clock speed",
+            "Add more RAM",
+            "Improve graphics performance"
+        ]
+    },
+    {
+        "q": "Which UART parameter defines data bits per frame?",
+        "o": [
+            "Data bits",
+            "Stop bits",
+            "Parity bits",
+            "Start bits"
+        ]
+    },
+    {
+        "q": "What does a boot ROM contain?",
+        "o": [
+            "Initial code executed at power-on",
+            "User application code",
+            "File system data",
+            "Network configuration"
+        ]
+    },
+    {
+        "q": "Which attack involves introducing faults into hardware?",
+        "o": [
+            "Fault injection attack",
+            "Replay attack",
+            "Dictionary attack",
+            "Birthday attack"
+        ]
+    },
+    {
+        "q": "What is JTAG primarily used for in development?",
+        "o": [
+            "Debugging and programming microcontrollers",
+            "Powering the device",
+            "Connecting to the internet",
+            "Charging batteries"
+        ]
+    },
+    {
+        "q": "How does secure boot verify the bootloader?",
+        "o": [
+            "Checking its cryptographic hash signature",
+            "Measuring its file size",
+            "Testing its execution speed",
+            "Analyzing its memory usage"
+        ]
+    },
+    {
+        "q": "Which of the following is a hardware backdoor?",
+        "o": [
+            "Hidden debug interface left in production chips",
+            "Software vulnerability in application",
+            "Network firewall misconfiguration",
+            "Weak user password"
+        ]
+    },
+    {
+        "q": "What information can power analysis reveal?",
+        "o": [
+            "Cryptographic operations being performed",
+            "Screen display content",
+            "Audio output",
+            "Network IP addresses"
+        ]
+    },
+    {
+        "q": "Which tool is used for UART communication?",
+        "o": [
+            "PuTTY",
+            "Photoshop",
+            "AutoCAD",
+            "Excel"
+        ]
+    },
+    {
+        "q": "What is firmware dumping?",
+        "o": [
+            "Extracting firmware from memory chips",
+            "Deleting firmware from device",
+            "Compressing firmware files",
+            "Encrypting firmware data"
+        ]
+    },
+    {
+        "q": "Which hardware feature prevents code execution from RAM?",
+        "o": [
+            "XN bit (Execute Never)",
+            "Cache controller",
+            "Branch predictor",
+            "Pipeline stage"
+        ]
+    },
+    {
+        "q": "What does a differential power analysis measure?",
+        "o": [
+            "Power differences between operations",
+            "Absolute power consumption",
+            "Average power over time",
+            "Peak power usage"
+        ]
+    },
+    {
+        "q": "Which JTAG signal selects test mode?",
+        "o": [
+            "TMS",
+            "TCK",
+            "TDI",
+            "TDO"
+        ]
+    },
+    {
+        "q": "What is the first stage of secure boot?",
+        "o": [
+            "Root of trust verification",
+            "OS kernel loading",
+            "Driver initialization",
+            "User authentication"
+        ]
+    },
+    {
+        "q": "Which attack uses electromagnetic emissions?",
+        "o": [
+            "Van Eck phreaking",
+            "Rowhammer attack",
+            "Spectre attack",
+            "Meltdown attack"
+        ]
+    },
+    {
+        "q": "What is a common UART baud rate?",
+        "o": [
+            "115200",
+            "1000000",
+            "50",
+            "10"
+        ]
+    },
+    {
+        "q": "Which firmware analysis tool disassembles binary code?",
+        "o": [
+            "IDA Pro",
+            "Wireshark",
+            "Nmap",
+            "John the Ripper"
+        ]
+    },
+    {
+        "q": "What does hardware encryption acceleration provide?",
+        "o": [
+            "Faster cryptographic operations with reduced CPU load",
+            "Better graphics rendering",
+            "Improved audio quality",
+            "Enhanced network speed"
+        ]
+    },
+    {
+        "q": "Which side-channel attack uses acoustic analysis?",
+        "o": [
+            "Sound-based key extraction",
+            "Power-based attack",
+            "Timing-based attack",
+            "Cache-based attack"
+        ]
+    },
+    {
+        "q": "What is the purpose of a JTAG boundary scan?",
+        "o": [
+            "Testing interconnections between chips",
+            "Programming flash memory",
+            "Debugging software",
+            "Measuring power consumption"
+        ]
+    },
+    {
+        "q": "How does secure boot handle unsigned code?",
+        "o": [
+            "Prevents it from executing",
+            "Runs it in sandbox",
+            "Logs a warning only",
+            "Executes normally"
+        ]
+    },
+    {
+        "q": "Which hardware attack requires physical probe stations?",
+        "o": [
+            "Micro-probing",
+            "Network sniffing",
+            "Social engineering",
+            "Phishing"
+        ]
+    },
+    {
+        "q": "What does UART stand for?",
+        "o": [
+            "Universal Asynchronous Receiver Transmitter",
+            "Unified Audio Rendering Technology",
+            "Ultra Advanced Register Transfer",
+            "Universal Array Reference Table"
+        ]
+    },
+    {
+        "q": "Which firmware component is verified first in secure boot?",
+        "o": [
+            "Boot ROM",
+            "Operating system",
+            "Device drivers",
+            "User applications"
+        ]
+    },
+    {
+        "q": "What is a voltage glitch attack?",
+        "o": [
+            "Temporary power drop to cause faulty operations",
+            "Permanent power supply damage",
+            "Continuous overvoltage",
+            "Gradual voltage decrease"
+        ]
+    },
+    {
+        "q": "Which JTAG signal is optional for reset?",
+        "o": [
+            "TRST",
+            "TCK",
+            "TDI",
+            "TDO"
+        ]
+    },
+    {
+        "q": "What does firmware extraction typically require?",
+        "o": [
+            "Hardware interface to memory chip",
+            "Network connection",
+            "Bluetooth pairing",
+            "USB keyboard"
+        ]
+    },
+    {
+        "q": "Which hardware security feature isolates trusted execution?",
+        "o": [
+            "TrustZone",
+            "HyperThreading",
+            "TurboBoost",
+            "SpeedStep"
+        ]
+    },
+    {
+        "q": "What does simple power analysis reveal?",
+        "o": [
+            "Operation sequence from power traces",
+            "Encryption key values",
+            "Memory contents",
+            "Network packets"
+        ]
+    },
+    {
+        "q": "Which UART setting detects transmission errors?",
+        "o": [
+            "Parity bit",
+            "Start bit",
+            "Stop bit",
+            "Baud rate"
+        ]
+    },
+    {
+        "q": "What is the role of a bootloader?",
+        "o": [
+            "Load and start the operating system",
+            "Manage power consumption",
+            "Control display output",
+            "Handle user input"
+        ]
+    },
+    {
+        "q": "Which attack exploits speculative execution?",
+        "o": [
+            "Spectre attack",
+            "Heartbleed attack",
+            "Shellshock attack",
+            "DDoS attack"
+        ]
+    },
+    {
+        "q": "What is hardware sandboxing?",
+        "o": [
+            "Isolating code execution in secure hardware enclaves",
+            "Physical containment of devices",
+            "Testing hardware in controlled environment",
+            "Storing devices in protective cases"
+        ]
+    },
+    {
+        "q": "Which JTAG operation reads internal registers?",
+        "o": [
+            "Shift-DR",
+            "Run-Test",
+            "Update-DR",
+            "Capture-DR"
+        ]
+    },
+    {
+        "q": "What does secure boot prevent?",
+        "o": [
+            "Running modified or malicious firmware",
+            "Device overheating",
+            "Battery draining",
+            "Screen cracking"
+        ]
+    },
+    {
+        "q": "Which side-channel attack uses cache timing?",
+        "o": [
+            "Prime Probe attack",
+            "Power analysis attack",
+            "Electromagnetic attack",
+            "Acoustic attack"
+        ]
+    },
+    {
+        "q": "What is a common UART voltage level?",
+        "o": [
+            "3.3V",
+            "12V",
+            "48V",
+            "110V"
+        ]
+    },
+    {
+        "q": "Which firmware analysis identifies known vulnerabilities?",
+        "o": [
+            "Version fingerprinting",
+            "Code obfuscation",
+            "Dead code elimination",
+            "Loop unrolling"
+        ]
+    },
+    {
+        "q": "What does hardware random number generator provide?",
+        "o": [
+            "True random numbers from physical processes",
+            "Pseudo-random numbers from algorithms",
+            "Fixed sequence numbers",
+            "User-defined numbers"
+        ]
+    },
+    {
+        "q": "Which attack uses clock glitching?",
+        "o": [
+            "Fault injection by altering clock signal",
+            "Timing analysis attack",
+            "Cache timing attack",
+            "Branch prediction attack"
+        ]
+    },
+    {
+        "q": "What is the purpose of JTAG chain?",
+        "o": [
+            "Connect multiple devices for testing",
+            "Power multiple devices",
+            "Synchronize device clocks",
+            "Share memory between devices"
+        ]
+    },
+    {
+        "q": "How does secure boot handle key compromise?",
+        "o": [
+            "Allows key revocation and updates",
+            "Permanently bricks the device",
+            "Ignores the compromise",
+            "Slows down boot process"
+        ]
+    },
+    {
+        "q": "Which hardware security mechanism prevents DMA attacks?",
+        "o": [
+            "IOMMU",
+            "AHB",
+            "APB",
+            "AXI"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis measure?",
+        "o": [
+            "EM radiation during computation",
+            "Power supply voltage",
+            "Temperature variations",
+            "Clock signal jitter"
+        ]
+    },
+    {
+        "q": "Which UART line indicates data carrier detect?",
+        "o": [
+            "DCD",
+            "RXD",
+            "TXD",
+            "CTS"
+        ]
+    },
+    {
+        "q": "What is firmware unpacking?",
+        "o": [
+            "Extracting compressed filesystem from firmware",
+            "Removing firmware from device",
+            "Installing firmware updates",
+            "Backing up firmware"
+        ]
+    },
+    {
+        "q": "Which attack targets JTAG debugging interface?",
+        "o": [
+            "JTAG exploitation for memory readout",
+            "Power analysis attack",
+            "Timing attack",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does secure element provide?",
+        "o": [
+            "Tamper-resistant key storage",
+            "Faster CPU execution",
+            "More memory capacity",
+            "Better graphics"
+        ]
+    },
+    {
+        "q": "Which side-channel attack requires many traces?",
+        "o": [
+            "Differential power analysis",
+            "Simple power analysis",
+            "Acoustic analysis",
+            "Optical analysis"
+        ]
+    },
+    {
+        "q": "What is a typical JTAG connector pin count?",
+        "o": [
+            "20 pins",
+            "4 pins",
+            "40 pins",
+            "100 pins"
+        ]
+    },
+    {
+        "q": "What does secure boot use for signature verification?",
+        "o": [
+            "Public key cryptography",
+            "Symmetric encryption",
+            "Hash function only",
+            "Checksum only"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses focused ion beams?",
+        "o": [
+            "FIB circuit editing",
+            "Laser fault injection",
+            "Power glitching",
+            "Clock glitching"
+        ]
+    },
+    {
+        "q": "What is the purpose of UART flow control?",
+        "o": [
+            "Prevent data buffer overflow",
+            "Control data encryption",
+            "Manage power usage",
+            "Adjust signal voltage"
+        ]
+    },
+    {
+        "q": "Which firmware analysis finds hardcoded credentials?",
+        "o": [
+            "String extraction",
+            "Code compilation",
+            "Memory allocation",
+            "Garbage collection"
+        ]
+    },
+    {
+        "q": "What does hardware security key storage prevent?",
+        "o": [
+            "Key extraction through software attacks",
+            "Normal device operation",
+            "Firmware updates",
+            "Power management"
+        ]
+    },
+    {
+        "q": "Which attack uses laser fault injection?",
+        "o": [
+            "Optical fault attack",
+            "Power analysis attack",
+            "Timing attack",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What is JTAG debugging limited by?",
+        "o": [
+            "Security fuses and lock bits",
+            "CPU clock speed",
+            "Available RAM",
+            "Power supply"
+        ]
+    },
+    {
+        "q": "What does secure boot chain of trust establish?",
+        "o": [
+            "Sequential verification from hardware root",
+            "Parallel verification of all components",
+            "User-based authentication",
+            "Network-based validation"
+        ]
+    },
+    {
+        "q": "Which hardware feature prevents buffer overflows?",
+        "o": [
+            "Memory Protection Unit",
+            "Cache controller",
+            "DMA controller",
+            "Interrupt controller"
+        ]
+    },
+    {
+        "q": "What does correlation power analysis measure?",
+        "o": [
+            "Statistical relationship between power and data",
+            "Absolute power consumption",
+            "Peak power values",
+            "Average power only"
+        ]
+    },
+    {
+        "q": "Which UART signal is used for clear to send?",
+        "o": [
+            "CTS",
+            "RTS",
+            "DSR",
+            "DTR"
+        ]
+    },
+    {
+        "q": "What is firmware modification detection?",
+        "o": [
+            "Checking cryptographic hashes",
+            "Measuring file size",
+            "Counting lines of code",
+            "Checking creation date"
+        ]
+    },
+    {
+        "q": "Which attack exploits UART console access?",
+        "o": [
+            "Bootloader interrupt for shell access",
+            "Power analysis attack",
+            "Timing attack",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does secure boot do if verification fails?",
+        "o": [
+            "Halts boot process",
+            "Continues with warning",
+            "Attempts recovery mode",
+            "Ignores failure"
+        ]
+    },
+    {
+        "q": "Which hardware security feature encrypts memory bus?",
+        "o": [
+            "Secure memory encryption engine",
+            "Cache controller",
+            "Memory controller",
+            "DMA engine"
+        ]
+    },
+    {
+        "q": "What does template attack require?",
+        "o": [
+            "Profiling device with known keys",
+            "Random guessing",
+            "Brute force search",
+            "Dictionary attack"
+        ]
+    },
+    {
+        "q": "What is the function of JTAG TAP controller?",
+        "o": [
+            "Manage test access port state machine",
+            "Generate test clock",
+            "Supply test voltage",
+            "Store test data"
+        ]
+    },
+    {
+        "q": "What is the purpose of hardware security in IoT devices?",
+        "o": [
+            "Protect device and data from physical attacks",
+            "Increase wireless range",
+            "Improve battery charging speed",
+            "Enhance display brightness"
+        ]
+    },
+    {
+        "q": "What is the role of a hardware watchdog timer in security?",
+        "o": [
+            "Detect and recover from code execution failures",
+            "Encrypt data in flash memory",
+            "Generate random numbers for keys",
+            "Manage user authentication"
+        ]
+    },
+    {
+        "q": "Which technique extracts firmware from a running device?",
+        "o": [
+            "In-situ programming via debug interface",
+            "X-ray imaging of the chip",
+            "Electromagnetic analysis",
+            "Thermal imaging"
+        ]
+    },
+    {
+        "q": "What does a clock glitch attack typically disrupt?",
+        "o": [
+            "Instruction execution timing",
+            "Power supply voltage",
+            "Data bus width",
+            "Memory addressing"
+        ]
+    },
+    {
+        "q": "Which JTAG instruction bypasses the device?",
+        "o": [
+            "BYPASS",
+            "IDCODE",
+            "SAMPLE",
+            "EXTEST"
+        ]
+    },
+    {
+        "q": "How does secure boot verify the OS kernel?",
+        "o": [
+            "Checking signature against public key in bootloader",
+            "Comparing file size with expected value",
+            "Running antivirus on kernel code",
+            "Measuring execution time"
+        ]
+    },
+    {
+        "q": "What is a hardware security module's key feature?",
+        "o": [
+            "Tamper-resistant key generation and storage",
+            "High-speed graphics processing",
+            "Network packet filtering",
+            "Audio signal processing"
+        ]
+    },
+    {
+        "q": "Which side-channel attack uses statistical methods?",
+        "o": [
+            "Differential power analysis",
+            "Simple power analysis",
+            "Acoustic analysis",
+            "Optical analysis"
+        ]
+    },
+    {
+        "q": "What information does UART bootloader often reveal?",
+        "o": [
+            "Firmware version and debug messages",
+            "Encryption keys in plain text",
+            "User passwords",
+            "Network credentials"
+        ]
+    },
+    {
+        "q": "Which firmware analysis technique emulates execution?",
+        "o": [
+            "Dynamic analysis in emulator",
+            "Static code review",
+            "Binary diffing",
+            "String extraction"
+        ]
+    },
+    {
+        "q": "What does a hardware cryptographic accelerator do?",
+        "o": [
+            "Offload encryption tasks from CPU",
+            "Increase display frame rate",
+            "Compress files for storage",
+            "Manage power consumption"
+        ]
+    },
+    {
+        "q": "Which attack exploits voltage regulator response?",
+        "o": [
+            "Voltage fault injection",
+            "Cache timing attack",
+            "Branch prediction attack",
+            "Spectre attack"
+        ]
+    },
+    {
+        "q": "What is the purpose of JTAG IDCODE instruction?",
+        "o": [
+            "Read device identification register",
+            "Program flash memory",
+            "Erase configuration bits",
+            "Disable debug interface"
+        ]
+    },
+    {
+        "q": "How does secure boot handle multiple boot stages?",
+        "o": [
+            "Each stage verifies the next",
+            "All stages verified at once",
+            "Only first stage is verified",
+            "No verification after boot"
+        ]
+    },
+    {
+        "q": "Which hardware feature prevents Snoop attacks?",
+        "o": [
+            "Secure bus encryption",
+            "Cache flushing",
+            "Branch prediction",
+            "Pipeline forwarding"
+        ]
+    },
+    {
+        "q": "What does electromagnetic side-channel require?",
+        "o": [
+            "Near-field probes and amplifiers",
+            "Network packet capture",
+            "Power supply modification",
+            "Clock signal injection"
+        ]
+    },
+    {
+        "q": "Which UART signal indicates data set ready?",
+        "o": [
+            "DSR",
+            "RXD",
+            "TXD",
+            "RI"
+        ]
+    },
+    {
+        "q": "What is firmware signature stripping?",
+        "o": [
+            "Removing cryptographic signatures for analysis",
+            "Compressing firmware size",
+            "Encrypting firmware content",
+            "Adding debug symbols"
+        ]
+    },
+    {
+        "q": "Which attack targets secure boot bypass?",
+        "o": [
+            "Returning to bootrom via glitching",
+            "Power analysis attack",
+            "Timing attack",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does a physically unclonable function generate?",
+        "o": [
+            "Unique device fingerprint from silicon variations",
+            "Random numbers from software",
+            "Encryption keys from user input",
+            "Passwords from environment"
+        ]
+    },
+    {
+        "q": "Which JTAG mode tests inter-chip connections?",
+        "o": [
+            "EXTEST",
+            "INTEST",
+            "RUNBIST",
+            "CLAMP"
+        ]
+    },
+    {
+        "q": "How does secure boot store root public key?",
+        "o": [
+            "In one-time programmable fuses",
+            "On external SD card",
+            "In volatile RAM",
+            "On network server"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses probing stations?",
+        "o": [
+            "Micro-probing data buses",
+            "Power glitch attack",
+            "Clock glitch attack",
+            "Laser fault injection"
+        ]
+    },
+    {
+        "q": "What does correlation power analysis require?",
+        "o": [
+            "Power model of target device",
+            "Network traffic capture",
+            "Source code access",
+            "Debug symbols"
+        ]
+    },
+    {
+        "q": "Which UART parameter defines synchronization?",
+        "o": [
+            "Start bit",
+            "Data bits",
+            "Stop bits",
+            "Parity bit"
+        ]
+    },
+    {
+        "q": "What is firmware extraction via boundary scan?",
+        "o": [
+            "Reading memory through JTAG",
+            "Dumping via UART bootloader",
+            "Extracting via SPI interface",
+            "Reading with logic analyzer"
+        ]
+    },
+    {
+        "q": "Which security feature prevents DMA attacks?",
+        "o": [
+            "System Memory Management Unit",
+            "Cache controller",
+            "Interrupt controller",
+            "Timer module"
+        ]
+    },
+    {
+        "q": "What does a template attack profile?",
+        "o": [
+            "Device behavior with known data",
+            "Network traffic patterns",
+            "User input patterns",
+            "Power supply variations"
+        ]
+    },
+    {
+        "q": "Which JTAG register holds test data?",
+        "o": [
+            "Boundary scan register",
+            "Instruction register",
+            "Bypass register",
+            "IDCODE register"
+        ]
+    },
+    {
+        "q": "How does secure boot resist downgrade attacks?",
+        "o": [
+            "Version number verification",
+            "Timestamp checking",
+            "File size validation",
+            "Name comparison"
+        ]
+    },
+    {
+        "q": "Which hardware feature provides trusted execution?",
+        "o": [
+            "Trusted Execution Environment",
+            "Graphics processing unit",
+            "Network interface",
+            "Audio codec"
+        ]
+    },
+    {
+        "q": "What does acoustic side-channel analyze?",
+        "o": [
+            "Sound from capacitors and coils",
+            "Electromagnetic radiation",
+            "Power consumption",
+            "Heat dissipation"
+        ]
+    },
+    {
+        "q": "Which UART handshake line is for request to send?",
+        "o": [
+            "RTS",
+            "CTS",
+            "DTR",
+            "DSR"
+        ]
+    },
+    {
+        "q": "What is firmware modification for backdoors?",
+        "o": [
+            "Injecting malicious code into firmware image",
+            "Removing debug symbols",
+            "Compressing firmware",
+            "Encrypting content"
+        ]
+    },
+    {
+        "q": "Which attack exploits debug interface leftover?",
+        "o": [
+            "Production debug port abuse",
+            "Power analysis attack",
+            "Timing attack",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does hardware security countermeasure do?",
+        "o": [
+            "Detect and respond to physical attacks",
+            "Increase CPU frequency",
+            "Add more memory",
+            "Improve display"
+        ]
+    },
+    {
+        "q": "Which JTAG operation runs self-test?",
+        "o": [
+            "RUNBIST",
+            "EXTEST",
+            "INTEST",
+            "CLAMP"
+        ]
+    },
+    {
+        "q": "How does secure boot verify bootloader in flash?",
+        "o": [
+            "Hash comparison with stored digest",
+            "Length check",
+            "Date verification",
+            "Name validation"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses laser cutting?",
+        "o": [
+            "Focused ion beam circuit editing",
+            "Power glitch attack",
+            "Clock glitch attack",
+            "Voltage fault injection"
+        ]
+    },
+    {
+        "q": "What does differential electromagnetic analysis measure?",
+        "o": [
+            "EM differences between operations",
+            "Absolute EM radiation",
+            "Peak EM emissions",
+            "Average EM field"
+        ]
+    },
+    {
+        "q": "Which UART signal indicates ring indicator?",
+        "o": [
+            "RI",
+            "DCD",
+            "DSR",
+            "DTR"
+        ]
+    },
+    {
+        "q": "What is firmware encryption purpose?",
+        "o": [
+            "Prevent unauthorized reading of code",
+            "Speed up execution",
+            "Reduce memory usage",
+            "Improve compatibility"
+        ]
+    },
+    {
+        "q": "Which security feature prevents bootloader interrupt?",
+        "o": [
+            "Bootloader password protection",
+            "JTAG disable",
+            "UART disable",
+            "SPI lock"
+        ]
+    },
+    {
+        "q": "What does secure element provide for payments?",
+        "o": [
+            "Secure transaction processing",
+            "Faster payment completion",
+            "Better receipt printing",
+            "Larger transaction storage"
+        ]
+    },
+    {
+        "q": "Which side-channel attack requires device access?",
+        "o": [
+            "All physical side-channel attacks",
+            "Network-based attacks",
+            "Remote timing attacks",
+            "Cache attacks"
+        ]
+    },
+    {
+        "q": "What is the JTAG state after reset?",
+        "o": [
+            "Test-Logic-Reset",
+            "Run-Test-Idle",
+            "Select-DR-Scan",
+            "Capture-DR"
+        ]
+    },
+    {
+        "q": "How does secure boot use hardware keys?",
+        "o": [
+            "Keys stored in fuses or OTP memory",
+            "Keys typed by user",
+            "Keys from network",
+            "Keys from SD card"
+        ]
+    },
+    {
+        "q": "Which hardware feature prevents code readout?",
+        "o": [
+            "Flash read protection",
+            "Cache controller",
+            "Branch predictor",
+            "Pipeline stage"
+        ]
+    },
+    {
+        "q": "What does power analysis countermeasure do?",
+        "o": [
+            "Add noise to power consumption",
+            "Increase clock speed",
+            "Reduce voltage",
+            "Add more memory"
+        ]
+    },
+    {
+        "q": "Which UART mode uses three wires only?",
+        "o": [
+            "TX, RX, GND",
+            "TX, RX, CTS",
+            "TX, RX, RTS",
+            "TX, RX, DTR"
+        ]
+    },
+    {
+        "q": "What is firmware unpacking of encrypted images?",
+        "o": [
+            "Decryption before extraction",
+            "Direct decompression",
+            "Binary copy",
+            "Hex editing"
+        ]
+    },
+    {
+        "q": "Which attack finds JTAG port on PCB?",
+        "o": [
+            "JTAG pinout discovery",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does hardware monotonic counter provide?",
+        "o": [
+            "One-way increasing counter for security",
+            "Random number generation",
+            "Time-of-day clock",
+            "Event timer"
+        ]
+    },
+    {
+        "q": "Which JTAG instruction samples inputs?",
+        "o": [
+            "SAMPLE",
+            "EXTEST",
+            "INTEST",
+            "BYPASS"
+        ]
+    },
+    {
+        "q": "How does secure boot verify application code?",
+        "o": [
+            "Signature check before loading",
+            "Runtime monitoring",
+            "Post-execution audit",
+            "Periodic checks"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses chemical etching?",
+        "o": [
+            "Chip decapsulation",
+            "Power glitch",
+            "Clock glitch",
+            "Voltage fault"
+        ]
+    },
+    {
+        "q": "What does simple electromagnetic analysis show?",
+        "o": [
+            "Operation patterns from EM traces",
+            "Encryption key values",
+            "Memory contents",
+            "Network data"
+        ]
+    },
+    {
+        "q": "Which UART parameter sets transmission speed?",
+        "o": [
+            "Baud rate",
+            "Data bits",
+            "Stop bits",
+            "Parity"
+        ]
+    },
+    {
+        "q": "What is firmware obfuscation technique?",
+        "o": [
+            "Code encryption and packing",
+            "Code optimization",
+            "Dead code removal",
+            "Loop unrolling"
+        ]
+    },
+    {
+        "q": "Which security feature protects against glitching?",
+        "o": [
+            "Voltage and clock sensors",
+            "Cache flushing",
+            "Branch prediction",
+            "Pipeline forwarding"
+        ]
+    },
+    {
+        "q": "What does secure boot do in recovery mode?",
+        "o": [
+            "Load signed recovery image",
+            "Boot unsigned code",
+            "Skip verification",
+            "Ignore errors"
+        ]
+    },
+    {
+        "q": "Which hardware feature provides isolation?",
+        "o": [
+            "TrustZone technology",
+            "Graphics accelerator",
+            "Sound processor",
+            "Network chip"
+        ]
+    },
+    {
+        "q": "Which attack uses power supply variation?",
+        "o": [
+            "Voltage glitch attack",
+            "Cache timing attack",
+            "Branch prediction attack",
+            "Spectre attack"
+        ]
+    },
+    {
+        "q": "What is JTAG clock frequency limited by?",
+        "o": [
+            "Target device maximum TCK rate",
+            "Power supply voltage",
+            "Data bus width",
+            "Memory size"
+        ]
+    },
+    {
+        "q": "How does secure boot store measurement hashes?",
+        "o": [
+            "In Platform Configuration Registers",
+            "On external storage",
+            "In log file",
+            "On network"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses infrared laser?",
+        "o": [
+            "Laser fault injection",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does correlation electromagnetic analysis use?",
+        "o": [
+            "Statistical correlation with hypothetical model",
+            "Peak detection only",
+            "Average calculation",
+            "Threshold comparison"
+        ]
+    },
+    {
+        "q": "Which UART line indicates data carrier detect?",
+        "o": [
+            "DCD",
+            "RTS",
+            "CTS",
+            "DSR"
+        ]
+    },
+    {
+        "q": "What is firmware differential analysis?",
+        "o": [
+            "Comparing firmware versions for changes",
+            "Encrypting firmware",
+            "Compressing firmware",
+            "Decompiling code"
+        ]
+    },
+    {
+        "q": "Which attack exploits insecure UART console?",
+        "o": [
+            "Root shell access via bootloader",
+            "Power analysis",
+            "Timing attack",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does hardware security mesh protect?",
+        "o": [
+            "Detect tampering attempts",
+            "Increase clock speed",
+            "Add memory",
+            "Improve graphics"
+        ]
+    },
+    {
+        "q": "Which JTAG instruction tests internal logic?",
+        "o": [
+            "INTEST",
+            "EXTEST",
+            "SAMPLE",
+            "BYPASS"
+        ]
+    },
+    {
+        "q": "How does secure boot handle key rotation?",
+        "o": [
+            "Support for key revocation lists",
+            "No key changes allowed",
+            "Manual key updates only",
+            "Network key refresh"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses electron microscope?",
+        "o": [
+            "Chip imaging for reverse engineering",
+            "Power glitch attack",
+            "Clock glitch attack",
+            "Voltage fault"
+        ]
+    },
+    {
+        "q": "What does power analysis with machine learning do?",
+        "o": [
+            "Classify operations from power traces",
+            "Generate encryption keys",
+            "Decrypt data",
+            "Compress files"
+        ]
+    },
+    {
+        "q": "Which UART handshake is hardware flow control?",
+        "o": [
+            "RTS/CTS",
+            "XON/XOFF",
+            "DTR/DSR",
+            "DCD/RI"
+        ]
+    },
+    {
+        "q": "What is firmware extraction via SPI?",
+        "o": [
+            "Reading flash chip with programmer",
+            "JTAG boundary scan",
+            "UART bootloader",
+            "Debug interface"
+        ]
+    },
+    {
+        "q": "Which security feature prevents fault injection?",
+        "o": [
+            "Error correction codes",
+            "Cache flushing",
+            "Branch prediction",
+            "Pipeline forwarding"
+        ]
+    },
+    {
+        "q": "What does secure boot use for anti-rollback?",
+        "o": [
+            "Version numbers in secure storage",
+            "File creation dates",
+            "Image file sizes",
+            "Code names"
+        ]
+    },
+    {
+        "q": "Which hardware feature enables secure updates?",
+        "o": [
+            "Secure firmware update engine",
+            "DMA controller",
+            "Interrupt controller",
+            "Timer module"
+        ]
+    },
+    {
+        "q": "Which attack uses optical emission analysis?",
+        "o": [
+            "Photon emission analysis",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What is JTAG security through obscurity?",
+        "o": [
+            "Hidden or non-standard JTAG pinouts",
+            "Encrypted JTAG communication",
+            "Password protection",
+            "Physical port removal"
+        ]
+    },
+    {
+        "q": "How does secure boot use hardware RNG?",
+        "o": [
+            "Generate random challenges for authentication",
+            "Create encryption keys",
+            "Seed software RNG",
+            "All of the above"
+        ]
+    },
+    {
+        "q": "Which hardware countermeasure detects voltage glitches?",
+        "o": [
+            "Voltage sensors",
+            "Temperature sensors",
+            "Light sensors",
+            "Motion sensors"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis with probe measure?",
+        "o": [
+            "Magnetic field near chip surface",
+            "Electric current",
+            "Power consumption",
+            "Heat radiation"
+        ]
+    },
+    {
+        "q": "Which UART signal is for data terminal ready?",
+        "o": [
+            "DTR",
+            "DSR",
+            "RTS",
+            "CTS"
+        ]
+    },
+    {
+        "q": "What is firmware repackaging attack?",
+        "o": [
+            "Modifying firmware and resigning",
+            "Extracting firmware",
+            "Compressing firmware",
+            "Encrypting firmware"
+        ]
+    },
+    {
+        "q": "Which attack exploits JTAG debugging features?",
+        "o": [
+            "Reading memory via boundary scan",
+            "Power analysis",
+            "Timing attack",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does hardware secure clock provide?",
+        "o": [
+            "Tamper-proof time reference",
+            "Faster processing",
+            "More memory",
+            "Better graphics"
+        ]
+    },
+    {
+        "q": "Which JTAG state captures data into register?",
+        "o": [
+            "Capture-DR",
+            "Shift-DR",
+            "Update-DR",
+            "Exit1-DR"
+        ]
+    },
+    {
+        "q": "How does secure boot handle unsigned updates?",
+        "o": [
+            "Rejects installation",
+            "Installs with warning",
+            "Installs normally",
+            "Asks user permission"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses backside chip access?",
+        "o": [
+            "Backside probing through substrate",
+            "Frontside microprobing",
+            "Side channel analysis",
+            "Fault injection"
+        ]
+    },
+    {
+        "q": "What does template attack require for success?",
+        "o": [
+            "Identical device for profiling",
+            "Network access",
+            "Source code",
+            "Debug symbols"
+        ]
+    },
+    {
+        "q": "Which UART mode is asynchronous?",
+        "o": [
+            "Standard UART",
+            "I2C",
+            "SPI",
+            "USB"
+        ]
+    },
+    {
+        "q": "What is firmware analysis with binwalk?",
+        "o": [
+            "Extracting filesystems from firmware",
+            "Executing firmware code",
+            "Debugging applications",
+            "Compressing binaries"
+        ]
+    },
+    {
+        "q": "Which security feature prevents bus snooping?",
+        "o": [
+            "Bus encryption",
+            "Cache flushing",
+            "Branch prediction",
+            "Pipeline forwarding"
+        ]
+    },
+    {
+        "q": "What does secure boot measure in TPM?",
+        "o": [
+            "PCR values for boot components",
+            "CPU temperature",
+            "Power consumption",
+            "Fan speed"
+        ]
+    },
+    {
+        "q": "Which hardware feature provides key wrapping?",
+        "o": [
+            "Key encryption engine",
+            "Graphics processor",
+            "Audio codec",
+            "Network interface"
+        ]
+    },
+    {
+        "q": "Which attack uses photonic emission?",
+        "o": [
+            "Time-resolved photon emission",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What is JTAG chain integrity check?",
+        "o": [
+            "Verify all devices are responsive",
+            "Check power supply",
+            "Test clock speed",
+            "Measure voltage"
+        ]
+    },
+    {
+        "q": "How does secure boot handle hardware changes?",
+        "o": [
+            "Detects through TPM measurements",
+            "Ignores hardware",
+            "Only checks software",
+            "No detection"
+        ]
+    },
+    {
+        "q": "What is the principle of differential power analysis?",
+        "o": [
+            "Statistical analysis of power traces with guessed keys",
+            "Direct measurement of current consumption",
+            "Visual inspection of power waveforms",
+            "Peak power detection method"
+        ]
+    },
+    {
+        "q": "Which technique bypasses flash read protection?",
+        "o": [
+            "Voltage glitching during security check",
+            "Increasing clock frequency",
+            "Cooling the microcontroller",
+            "Using larger power supply"
+        ]
+    },
+    {
+        "q": "What does JTAG clock signal integrity affect?",
+        "o": [
+            "Reliable data capture and shift operations",
+            "Power consumption of device",
+            "Memory addressing range",
+            "Voltage regulator output"
+        ]
+    },
+    {
+        "q": "How does secure boot implement measured boot?",
+        "o": [
+            "Store component hashes in TPM PCRs",
+            "Verify signatures only once",
+            "Check file permissions",
+            "Validate timestamps"
+        ]
+    },
+    {
+        "q": "Which hardware trojan type activates under condition?",
+        "o": [
+            "Triggered trojan with specific input",
+            "Always-on trojan",
+            "Passive monitoring trojan",
+            "Analog trojan"
+        ]
+    },
+    {
+        "q": "What does correlation power analysis exploit?",
+        "o": [
+            "Hamming weight data dependency",
+            "Supply voltage variations",
+            "Clock jitter",
+            "Temperature changes"
+        ]
+    },
+    {
+        "q": "Which UART vulnerability enables command injection?",
+        "o": [
+            "Unfiltered debug console input",
+            "High baud rate settings",
+            "Parity bit errors",
+            "Flow control misconfiguration"
+        ]
+    },
+    {
+        "q": "What is firmware packing for malware evasion?",
+        "o": [
+            "Compressed and encrypted malicious code",
+            "Code optimization techniques",
+            "Memory allocation methods",
+            "Function inlining"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses masking?",
+        "o": [
+            "Randomizing intermediate values",
+            "Increasing clock speed",
+            "Adding capacitor filters",
+            "Shielding the device"
+        ]
+    },
+    {
+        "q": "What does JTAG secure extension provide?",
+        "o": [
+            "Authenticated debugging",
+            "Faster data transfer",
+            "Lower power consumption",
+            "Reduced pin count"
+        ]
+    },
+    {
+        "q": "How does secure boot resist physical attacks?",
+        "o": [
+            "Combine with hardware root of trust",
+            "Use longer keys",
+            "Add more signatures",
+            "Increase hash rounds"
+        ]
+    },
+    {
+        "q": "Which hardware attack extracts keys from SRAM?",
+        "o": [
+            "Cold boot attack",
+            "Power analysis",
+            "Timing attack",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does electromagnetic emanation security measure?",
+        "o": [
+            "TEMPEST protection effectiveness",
+            "Power supply quality",
+            "Clock signal purity",
+            "Data bus speed"
+        ]
+    },
+    {
+        "q": "Which UART signal is vulnerable to glitching?",
+        "o": [
+            "RX line during bootloader",
+            "VCC power line",
+            "GND reference",
+            "Shield connection"
+        ]
+    },
+    {
+        "q": "What is firmware signature verification weakness?",
+        "o": [
+            "Weak hash algorithms",
+            "Large key sizes",
+            "Multiple signatures",
+            "Long certificates"
+        ]
+    },
+    {
+        "q": "Which side-channel attack requires no profiling?",
+        "o": [
+            "Simple power analysis",
+            "Differential power analysis",
+            "Correlation power analysis",
+            "Template attack"
+        ]
+    },
+    {
+        "q": "What does JTAG bypass attack accomplish?",
+        "o": [
+            "Access secured features through debug",
+            "Increase test clock speed",
+            "Reduce power consumption",
+            "Improve signal quality"
+        ]
+    },
+    {
+        "q": "How does secure boot use hardware OTP?",
+        "o": [
+            "Store root public key hash",
+            "Temporary key storage",
+            "Session key generation",
+            "Random number seed"
+        ]
+    },
+    {
+        "q": "Which hardware trojan is inserted during design?",
+        "o": [
+            "RTL-level trojan",
+            "Layout-level trojan",
+            "Mask-level trojan",
+            "Package-level trojan"
+        ]
+    },
+    {
+        "q": "What does power analysis with FFT reveal?",
+        "o": [
+            "Frequency components of operations",
+            "Peak power values",
+            "Average current",
+            "Voltage drops"
+        ]
+    },
+    {
+        "q": "Which UART bootloader attack requires reset?",
+        "o": [
+            "Interrupting boot sequence",
+            "Baud rate detection",
+            "Parity calculation",
+            "Flow control"
+        ]
+    },
+    {
+        "q": "What is firmware anti-debugging technique?",
+        "o": [
+            "Detecting debugger presence",
+            "Code obfuscation",
+            "String encryption",
+            "Function inlining"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses noise?",
+        "o": [
+            "Random process interleaving",
+            "Clock frequency increase",
+            "Voltage reduction",
+            "Current limiting"
+        ]
+    },
+    {
+        "q": "What does JTAG chain scanning identify?",
+        "o": [
+            "Number and type of devices",
+            "Power requirements",
+            "Clock frequency limits",
+            "Temperature range"
+        ]
+    },
+    {
+        "q": "How does secure boot implement measured boot?",
+        "o": [
+            "Extend measurements into TPM",
+            "Store in flash memory",
+            "Save to external storage",
+            "Log to console"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses laser scanning?",
+        "o": [
+            "Optical fault injection",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does differential electromagnetic analysis find?",
+        "o": [
+            "Data-dependent EM variations",
+            "Absolute field strength",
+            "Peak emissions",
+            "Background noise"
+        ]
+    },
+    {
+        "q": "Which UART setting affects timing attacks?",
+        "o": [
+            "Baud rate accuracy",
+            "Data bit count",
+            "Stop bit count",
+            "Parity type"
+        ]
+    },
+    {
+        "q": "What is firmware unpacking of custom formats?",
+        "o": [
+            "Reverse engineering proprietary compression",
+            "Standard decompression",
+            "Binary copying",
+            "Hex editing only"
+        ]
+    },
+    {
+        "q": "Which side-channel attack uses statistical moments?",
+        "o": [
+            "Higher-order DPA",
+            "First-order DPA",
+            "Simple power analysis",
+            "Timing analysis"
+        ]
+    },
+    {
+        "q": "What does JTAG clock rate affect security?",
+        "o": [
+            "Faster reads before detection",
+            "Power consumption",
+            "Signal integrity",
+            "Data accuracy"
+        ]
+    },
+    {
+        "q": "How does secure boot handle compromised CA?",
+        "o": [
+            "Certificate revocation lists",
+            "Ignore the issue",
+            "Continue verification",
+            "Disable security"
+        ]
+    },
+    {
+        "q": "Which hardware trojan leaks information?",
+        "o": [
+            "Covert channel trojan",
+            "Denial of service trojan",
+            "Function change trojan",
+            "Reliability trojan"
+        ]
+    },
+    {
+        "q": "What does power analysis with compression?",
+        "o": [
+            "Reduce traces for faster analysis",
+            "Increase data accuracy",
+            "Remove noise",
+            "Enhance signals"
+        ]
+    },
+    {
+        "q": "Which UART attack uses voltage levels?",
+        "o": [
+            "Overvoltage damage to interface",
+            "Baud rate detection",
+            "Data sniffing",
+            "Command injection"
+        ]
+    },
+    {
+        "q": "What is firmware emulation for fuzzing?",
+        "o": [
+            "Testing with malformed inputs",
+            "Performance profiling",
+            "Code coverage analysis",
+            "Memory leak detection"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses dual-rail?",
+        "o": [
+            "Constant power logic",
+            "Clock randomization",
+            "Voltage scaling",
+            "Frequency hopping"
+        ]
+    },
+    {
+        "q": "What does JTAG boundary scan cell do?",
+        "o": [
+            "Capture and update pin states",
+            "Generate test clock",
+            "Supply test voltage",
+            "Store device ID"
+        ]
+    },
+    {
+        "q": "How does secure boot use monotonic counter?",
+        "o": [
+            "Prevent rollback attacks",
+            "Generate random numbers",
+            "Measure time",
+            "Count boot attempts"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses passive probes?",
+        "o": [
+            "Non-invasive measurement",
+            "Invasive microprobing",
+            "Semi-invasive attack",
+            "Destructive analysis"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis with HMM?",
+        "o": [
+            "Hidden Markov Model for operation detection",
+            "Fast Fourier transform",
+            "Principal component analysis",
+            "Linear discriminant analysis"
+        ]
+    },
+    {
+        "q": "Which UART handshake is software flow control?",
+        "o": [
+            "XON/XOFF",
+            "RTS/CTS",
+            "DTR/DSR",
+            "DCD/RI"
+        ]
+    },
+    {
+        "q": "What is firmware signature algorithm vulnerability?",
+        "o": [
+            "RSA with weak padding",
+            "Large key sizes",
+            "Long hashes",
+            "Multiple signatures"
+        ]
+    },
+    {
+        "q": "Which side-channel attack uses machine learning?",
+        "o": [
+            "Deep learning side-channel",
+            "Simple power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does JTAG secure mode disable?",
+        "o": [
+            "Debug access to secure resources",
+            "All JTAG functionality",
+            "Boundary scan only",
+            "IDCODE reading"
+        ]
+    },
+    {
+        "q": "How does secure boot handle multiple keys?",
+        "o": [
+            "Key hierarchy with different roles",
+            "Single key for everything",
+            "No key management",
+            "User-provided keys"
+        ]
+    },
+    {
+        "q": "Which hardware trojan modifies functionality?",
+        "o": [
+            "Logic change trojan",
+            "Information leak trojan",
+            "Denial of service trojan",
+            "Parameter change trojan"
+        ]
+    },
+    {
+        "q": "What does power analysis with PCA do?",
+        "o": [
+            "Dimensionality reduction for traces",
+            "Signal amplification",
+            "Noise filtering",
+            "Peak detection"
+        ]
+    },
+    {
+        "q": "Which UART attack uses timing analysis?",
+        "o": [
+            "Character timing inference",
+            "Voltage glitching",
+            "Clock glitching",
+            "Baud rate detection"
+        ]
+    },
+    {
+        "q": "What is firmware binary diffing used for?",
+        "o": [
+            "Find patched vulnerabilities",
+            "Code optimization",
+            "Memory reduction",
+            "Speed improvement"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses hiding?",
+        "o": [
+            "Random delays insertion",
+            "Power filtering",
+            "EM shielding",
+            "Temperature control"
+        ]
+    },
+    {
+        "q": "What does JTAG bypass fuse protect?",
+        "o": [
+            "Prevent re-enabling debug",
+            "Speed up testing",
+            "Reduce power",
+            "Improve signal"
+        ]
+    },
+    {
+        "q": "How does secure boot use hardware crypto?",
+        "o": [
+            "Accelerate signature verification",
+            "Store keys in software",
+            "Generate random numbers",
+            "Measure entropy"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses voltage contrast?",
+        "o": [
+            "SEM voltage contrast imaging",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis with CEMA?",
+        "o": [
+            "Correlation electromagnetic analysis",
+            "Simple electromagnetic analysis",
+            "Differential electromagnetic analysis",
+            "Template electromagnetic analysis"
+        ]
+    },
+    {
+        "q": "Which UART parameter affects synchronization?",
+        "o": [
+            "Clock accuracy",
+            "Data bits",
+            "Stop bits",
+            "Parity"
+        ]
+    },
+    {
+        "q": "What is firmware virtualization detection?",
+        "o": [
+            "Checking for emulator artifacts",
+            "Code optimization",
+            "Memory protection",
+            "Stack canaries"
+        ]
+    },
+    {
+        "q": "Which side-channel attack uses leakage models?",
+        "o": [
+            "Correlation power analysis",
+            "Simple power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does JTAG chain speed impact?",
+        "o": [
+            "Data transfer rate for debugging",
+            "Power consumption",
+            "Signal integrity",
+            "Temperature"
+        ]
+    },
+    {
+        "q": "How does secure boot handle hardware faults?",
+        "o": [
+            "Fallback to recovery mode",
+            "Continue booting",
+            "Ignore faults",
+            "Retry verification"
+        ]
+    },
+    {
+        "q": "Which hardware trojan is inserted during fabrication?",
+        "o": [
+            "Mask-level trojan",
+            "RTL-level trojan",
+            "Layout-level trojan",
+            "Package-level trojan"
+        ]
+    },
+    {
+        "q": "What does power analysis with template use?",
+        "o": [
+            "Profiled device characteristics",
+            "Generic leakage model",
+            "Statistical assumptions",
+            "Random guessing"
+        ]
+    },
+    {
+        "q": "Which UART attack uses signal injection?",
+        "o": [
+            "Fake data injection",
+            "Baud rate detection",
+            "Parity calculation",
+            "Flow control"
+        ]
+    },
+    {
+        "q": "What is firmware anti-reverse engineering?",
+        "o": [
+            "Code obfuscation techniques",
+            "Function inlining",
+            "Loop unrolling",
+            "Compiler optimization"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses balancing?",
+        "o": [
+            "Dual-rail logic",
+            "Clock randomization",
+            "Voltage scaling",
+            "Frequency hopping"
+        ]
+    },
+    {
+        "q": "What does JTAG password protection do?",
+        "o": [
+            "Authenticate debugger before access",
+            "Encrypt all JTAG traffic",
+            "Reduce test speed",
+            "Disable boundary scan"
+        ]
+    },
+    {
+        "q": "How does secure boot implement lockstep?",
+        "o": [
+            "Dual-core verification",
+            "Single-core check",
+            "Software only",
+            "External validation"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses thermal imaging?",
+        "o": [
+            "Hotspot analysis",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis with SEMA?",
+        "o": [
+            "Simple electromagnetic analysis",
+            "Differential electromagnetic analysis",
+            "Correlation electromagnetic analysis",
+            "Template electromagnetic analysis"
+        ]
+    },
+    {
+        "q": "Which UART signal is for data set ready?",
+        "o": [
+            "DSR",
+            "DTR",
+            "RTS",
+            "CTS"
+        ]
+    },
+    {
+        "q": "What is firmware checksum bypass?",
+        "o": [
+            "Modifying code while fixing hash",
+            "Removing checksum check",
+            "Increasing hash size",
+            "Adding salt"
+        ]
+    },
+    {
+        "q": "Which side-chain attack uses deep learning?",
+        "o": [
+            "CNN-based side-channel",
+            "Simple power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does JTAG trace buffer capture?",
+        "o": [
+            "Instruction execution history",
+            "Power consumption",
+            "Temperature data",
+            "Clock cycles"
+        ]
+    },
+    {
+        "q": "How does secure boot handle debug modes?",
+        "o": [
+            "Disable debug after boot",
+            "Enable debug always",
+            "Debug only in factory",
+            "User-controlled debug"
+        ]
+    },
+    {
+        "q": "Which hardware trojan affects reliability?",
+        "o": [
+            "Aging acceleration trojan",
+            "Function change trojan",
+            "Information leak trojan",
+            "Denial of service"
+        ]
+    },
+    {
+        "q": "What does power analysis with LDA use?",
+        "o": [
+            "Linear discriminant analysis for classification",
+            "Fast Fourier transform",
+            "Principal component analysis",
+            "Wavelet transform"
+        ]
+    },
+    {
+        "q": "Which UART attack uses baud rate confusion?",
+        "o": [
+            "Mismatched speed DoS",
+            "Data injection",
+            "Signal sniffing",
+            "Voltage glitching"
+        ]
+    },
+    {
+        "q": "What is firmware encryption key extraction?",
+        "o": [
+            "Side-channel key recovery",
+            "Brute force attack",
+            "Dictionary attack",
+            "Rainbow tables"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses randomness?",
+        "o": [
+            "Randomized operation order",
+            "Fixed operation order",
+            "Constant time only",
+            "Power smoothing"
+        ]
+    },
+    {
+        "q": "What does JTAG clock gating prevent?",
+        "o": [
+            "Unauthorized debug clocking",
+            "Power consumption",
+            "Signal noise",
+            "Data errors"
+        ]
+    },
+    {
+        "q": "How does secure boot use hardware watchdog?",
+        "o": [
+            "Detect boot hangs",
+            "Generate randomness",
+            "Measure time",
+            "Count attempts"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses focused ion beam?",
+        "o": [
+            "Circuit modification",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis with wavelet?",
+        "o": [
+            "Time-frequency analysis",
+            "Peak detection",
+            "Average calculation",
+            "Threshold comparison"
+        ]
+    },
+    {
+        "q": "Which UART parameter affects error detection?",
+        "o": [
+            "Parity type",
+            "Baud rate",
+            "Data bits",
+            "Stop bits"
+        ]
+    },
+    {
+        "q": "What is firmware hooking detection?",
+        "o": [
+            "Checking for interrupt vector modification",
+            "Code optimization",
+            "Memory protection",
+            "Stack canaries"
+        ]
+    },
+    {
+        "q": "Which side-chain attack uses Gaussian models?",
+        "o": [
+            "Template attack",
+            "Simple power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does JTAG authentication protocol do?",
+        "o": [
+            "Verify debugger identity",
+            "Encrypt data",
+            "Speed up transfer",
+            "Reduce pins"
+        ]
+    },
+    {
+        "q": "How does secure boot handle firmware corruption?",
+        "o": [
+            "Boot to recovery",
+            "Try to boot anyway",
+            "Ignore corruption",
+            "Retry verification"
+        ]
+    },
+    {
+        "q": "Which hardware trojan is inserted during packaging?",
+        "o": [
+            "Package-level trojan",
+            "RTL-level trojan",
+            "Layout-level trojan",
+            "Mask-level trojan"
+        ]
+    },
+    {
+        "q": "What does power analysis with MIA measure?",
+        "o": [
+            "Mutual information analysis",
+            "Peak current",
+            "Average power",
+            "Voltage drop"
+        ]
+    },
+    {
+        "q": "Which UART attack uses line noise injection?",
+        "o": [
+            "Data corruption attack",
+            "Baud rate detection",
+            "Parity calculation",
+            "Flow control"
+        ]
+    },
+    {
+        "q": "What is firmware self-modifying code risk?",
+        "o": [
+            "Bypass signature verification",
+            "Faster execution",
+            "Memory savings",
+            "Better optimization"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses jitter?",
+        "o": [
+            "Clock randomization",
+            "Power filtering",
+            "EM shielding",
+            "Temperature control"
+        ]
+    },
+    {
+        "q": "What does JTAG secure key store protect?",
+        "o": [
+            "Debug authentication keys",
+            "User data",
+            "Application code",
+            "Configuration"
+        ]
+    },
+    {
+        "q": "What is the principle of mutual information analysis in side-channel attacks?",
+        "o": [
+            "Measures nonlinear dependencies between traces and keys",
+            "Linear correlation calculation",
+            "Peak power detection",
+            "Simple variance analysis"
+        ]
+    },
+    {
+        "q": "Which technique bypasses ARM TrustZone secure world?",
+        "o": [
+            "Cold boot attack on secure RAM",
+            "JTAG debugging",
+            "UART console access",
+            "Power analysis"
+        ]
+    },
+    {
+        "q": "What does advanced JTAG attacks exploit?",
+        "o": [
+            "Scan chain reuse for data extraction",
+            "Clock speed limitations",
+            "Power supply requirements",
+            "Temperature dependencies"
+        ]
+    },
+    {
+        "q": "How does secure boot implement anti-replay protection?",
+        "o": [
+            "Fresh nonces in challenge-response",
+            "Static verification only",
+            "Timestamp checking",
+            "Sequence numbers"
+        ]
+    },
+    {
+        "q": "Which hardware trojan uses analog techniques?",
+        "o": [
+            "Current sensing trojan",
+            "Digital logic trojan",
+            "Memory trojan",
+            "Processor trojan"
+        ]
+    },
+    {
+        "q": "What does higher-order DPA protect against?",
+        "o": [
+            "First-order masking countermeasures",
+            "Simple power analysis",
+            "Timing attacks",
+            "Cache attacks"
+        ]
+    },
+    {
+        "q": "Which UART vulnerability enables firmware dump?",
+        "o": [
+            "Bootloader memory read commands",
+            "Baud rate negotiation",
+            "Parity error handling",
+            "Flow control bypass"
+        ]
+    },
+    {
+        "q": "What is firmware virtualization for malware?",
+        "o": [
+            "Hypervisor hiding malicious code",
+            "Code compression",
+            "Memory encryption",
+            "Function inlining"
+        ]
+    },
+    {
+        "q": "Which side-channel attack uses machine learning classification?",
+        "o": [
+            "SVM-based template attack",
+            "Simple power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does JTAG advanced protocol support?",
+        "o": [
+            "Bidirectional data transfer",
+            "Single pin operation",
+            "Analog testing",
+            "Power delivery"
+        ]
+    },
+    {
+        "q": "How does secure boot handle physical memory protection?",
+        "o": [
+            "Configure MPU regions",
+            "Software checks only",
+            "External validation",
+            "User authentication"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses electron beam probing?",
+        "o": [
+            "E-beam waveform measurement",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis with machine learning?",
+        "o": [
+            "Deep neural network classification",
+            "Peak detection",
+            "Average calculation",
+            "Threshold comparison"
+        ]
+    },
+    {
+        "q": "Which UART attack uses hardware flow control?",
+        "o": [
+            "RTS/CTS buffer overflow",
+            "Baud rate detection",
+            "Data sniffing",
+            "Command injection"
+        ]
+    },
+    {
+        "q": "What is firmware encryption with white-box?",
+        "o": [
+            "Software-only key protection",
+            "Hardware encryption",
+            "Network encryption",
+            "Disk encryption"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses threshold implementation?",
+        "o": [
+            "Multi-share secret sharing",
+            "Single-rail logic",
+            "Clock randomization",
+            "Voltage scaling"
+        ]
+    },
+    {
+        "q": "What does JTAG bypass with glitching accomplish?",
+        "o": [
+            "Re-enable disabled debug ports",
+            "Increase test speed",
+            "Reduce power",
+            "Improve signal"
+        ]
+    },
+    {
+        "q": "How does secure boot use encrypted bootloader?",
+        "o": [
+            "Decrypt using hardware key",
+            "Software decryption",
+            "Network key fetch",
+            "User password"
+        ]
+    },
+    {
+        "q": "Which hardware trojan uses radio emissions?",
+        "o": [
+            "RF leaking trojan",
+            "Power trojan",
+            "Timing trojan",
+            "Memory trojan"
+        ]
+    },
+    {
+        "q": "What does power analysis with deep learning require?",
+        "o": [
+            "Large training dataset",
+            "Simple leakage model",
+            "Linear assumptions",
+            "Gaussian distribution"
+        ]
+    },
+    {
+        "q": "Which UART bootloader uses XMODEM protocol?",
+        "o": [
+            "File transfer with error checking",
+            "Raw binary transfer",
+            "Text-only transfer",
+            "Compressed transfer"
+        ]
+    },
+    {
+        "q": "What is firmware anti-disassembly technique?",
+        "o": [
+            "Jump tables with computed targets",
+            "Code optimization",
+            "Memory alignment",
+            "Stack protection"
+        ]
+    },
+    {
+        "q": "Which side-channel attack uses principal component analysis?",
+        "o": [
+            "Dimensionality reduction for traces",
+            "Peak detection",
+            "Average calculation",
+            "Threshold comparison"
+        ]
+    },
+    {
+        "q": "What does JTAG clock frequency affect?",
+        "o": [
+            "Maximum scan chain length",
+            "Power consumption only",
+            "Temperature range",
+            "Voltage levels"
+        ]
+    },
+    {
+        "q": "How does secure boot implement secure debug?",
+        "o": [
+            "Authenticated debug access",
+            "Permanent disable",
+            "Always enabled",
+            "User switch"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses backside infrared?",
+        "o": [
+            "Backside imaging through silicon",
+            "Frontside probing",
+            "Power analysis",
+            "Timing analysis"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis with CNN?",
+        "o": [
+            "Convolutional neural network classification",
+            "Simple pattern matching",
+            "Peak detection",
+            "Threshold comparison"
+        ]
+    },
+    {
+        "q": "Which UART attack uses break condition?",
+        "o": [
+            "Enter bootloader mode",
+            "Baud rate change",
+            "Parity error",
+            "Frame error"
+        ]
+    },
+    {
+        "q": "What is firmware signature stripping attack?",
+        "o": [
+            "Remove signature check code",
+            "Compress firmware",
+            "Encrypt data",
+            "Add debug info"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses shuffling?",
+        "o": [
+            "Randomize operation sequence",
+            "Fixed operation order",
+            "Constant time",
+            "Power smoothing"
+        ]
+    },
+    {
+        "q": "What does JTAG boundary scan test?",
+        "o": [
+            "PCB interconnect integrity",
+            "CPU performance",
+            "Memory speed",
+            "Power quality"
+        ]
+    },
+    {
+        "q": "How does secure boot handle key extraction?",
+        "o": [
+            "Key wrapping with PUF",
+            "Plain storage",
+            "Software encryption",
+            "External storage"
+        ]
+    },
+    {
+        "q": "Which hardware trojan uses temperature sensors?",
+        "o": [
+            "Thermal trigger trojan",
+            "Voltage trigger",
+            "Clock trigger",
+            "Data trigger"
+        ]
+    },
+    {
+        "q": "What does power analysis with LSTM networks?",
+        "o": [
+            "Sequence-based key recovery",
+            "Single-trace analysis",
+            "Peak detection",
+            "Average calculation"
+        ]
+    },
+    {
+        "q": "Which UART vulnerability exposes bootloader?",
+        "o": [
+            "Interrupt during boot sequence",
+            "Normal operation",
+            "Sleep mode",
+            "Power down"
+        ]
+    },
+    {
+        "q": "What is firmware runtime integrity check?",
+        "o": [
+            "On-the-fly code verification",
+            "Static check only",
+            "Boot-time only",
+            "Update-time only"
+        ]
+    },
+    {
+        "q": "Which side-channel attack uses frequency domain?",
+        "o": [
+            "FFT-based power analysis",
+            "Time domain analysis",
+            "Peak detection",
+            "Threshold comparison"
+        ]
+    },
+    {
+        "q": "What does JTAG secure protocol encrypt?",
+        "o": [
+            "All debug communication",
+            "Only data",
+            "Only addresses",
+            "Only commands"
+        ]
+    },
+    {
+        "q": "How does secure boot implement chain of trust?",
+        "o": [
+            "Hash extension in TPM",
+            "Single signature",
+            "No verification",
+            "User confirmation"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses laser voltage probing?",
+        "o": [
+            "LVP signal measurement",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis with RNN?",
+        "o": [
+            "Recurrent neural network for traces",
+            "Peak detection",
+            "Average calculation",
+            "Threshold comparison"
+        ]
+    },
+    {
+        "q": "Which UART handshake is modem control?",
+        "o": [
+            "DTR/DSR",
+            "RTS/CTS",
+            "XON/XOFF",
+            "DCD/RI"
+        ]
+    },
+    {
+        "q": "What is firmware obfuscation with virtualization?",
+        "o": [
+            "Bytecode interpreters",
+            "Code compression",
+            "String encryption",
+            "Function inlining"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses masking?",
+        "o": [
+            "Boolean masking",
+            "No countermeasure",
+            "Simple delays",
+            "Power filtering"
+        ]
+    },
+    {
+        "q": "What does JTAG clock stretching indicate?",
+        "o": [
+            "Slow target response",
+            "Fast transfer",
+            "Error condition",
+            "Power saving"
+        ]
+    },
+    {
+        "q": "How does secure boot handle JTAG attacks?",
+        "o": [
+            "Disable debug after boot",
+            "Leave enabled",
+            "Ignore attacks",
+            "Log attempts"
+        ]
+    },
+    {
+        "q": "Which hardware trojan uses capacitive coupling?",
+        "o": [
+            "Side-channel leakage trojan",
+            "Logic trojan",
+            "Memory trojan",
+            "Power trojan"
+        ]
+    },
+    {
+        "q": "What does power analysis with wavelets provide?",
+        "o": [
+            "Multi-resolution analysis",
+            "Single frequency",
+            "Time domain only",
+            "Peak detection"
+        ]
+    },
+    {
+        "q": "Which UART attack uses hardware handshake?",
+        "o": [
+            "Flow control denial",
+            "Data injection",
+            "Signal sniffing",
+            "Baud rate change"
+        ]
+    },
+    {
+        "q": "What is firmware encryption with AES?",
+        "o": [
+            "Hardware accelerated AES",
+            "Software AES only",
+            "No encryption",
+            "Simple XOR"
+        ]
+    },
+    {
+        "q": "Which side-channel attack uses spectral analysis?",
+        "o": [
+            "Frequency-based DPA",
+            "Time-based DPA",
+            "Peak-based DPA",
+            "Threshold DPA"
+        ]
+    },
+    {
+        "q": "What does JTAG advanced features include?",
+        "o": [
+            "Real-time trace",
+            "Power measurement",
+            "Temperature sensing",
+            "Voltage control"
+        ]
+    },
+    {
+        "q": "How does secure boot implement measured boot?",
+        "o": [
+            "Extend PCRs incrementally",
+            "Overwrite PCRs",
+            "Store in flash",
+            "Log to serial"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses optical beam induced current?",
+        "o": [
+            "OBIC imaging",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis with SVM?",
+        "o": [
+            "Support vector machine classification",
+            "Peak detection",
+            "Average calculation",
+            "Threshold comparison"
+        ]
+    },
+    {
+        "q": "Which UART parameter affects character framing?",
+        "o": [
+            "Start and stop bits",
+            "Baud rate only",
+            "Data bits only",
+            "Parity only"
+        ]
+    },
+    {
+        "q": "What is firmware remote attestation?",
+        "o": [
+            "Prove firmware integrity to remote party",
+            "Local verification",
+            "Boot-time check",
+            "Update check"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses random delays?",
+        "o": [
+            "Desynchronization",
+            "Power smoothing",
+            "EM shielding",
+            "Temperature control"
+        ]
+    },
+    {
+        "q": "What does JTAG power domain crossing affect?",
+        "o": [
+            "Multi-voltage testing",
+            "Single voltage only",
+            "Clock domains",
+            "Reset domains"
+        ]
+    },
+    {
+        "q": "How does secure boot handle DMA attacks?",
+        "o": [
+            "IOMMU configuration",
+            "Disable DMA",
+            "Software checks",
+            "User permission"
+        ]
+    },
+    {
+        "q": "Which hardware trojan uses power supply?",
+        "o": [
+            "Voltage drop trojan",
+            "Logic trojan",
+            "Memory trojan",
+            "Processor trojan"
+        ]
+    },
+    {
+        "q": "What does power analysis with KNN classify?",
+        "o": [
+            "K-nearest neighbors operation detection",
+            "Key extraction",
+            "Peak detection",
+            "Average calculation"
+        ]
+    },
+    {
+        "q": "Which UART attack uses break signal?",
+        "o": [
+            "Bootloader entry",
+            "Data corruption",
+            "Baud rate change",
+            "Parity error"
+        ]
+    },
+    {
+        "q": "What is firmware pointer authentication?",
+        "o": [
+            "Sign pointers for integrity",
+            "Encrypt pointers",
+            "Hide pointers",
+            "Remove pointers"
+        ]
+    },
+    {
+        "q": "Which side-channel attack uses online template?",
+        "o": [
+            "Adaptive template attack",
+            "Static template",
+            "Simple power",
+            "Timing"
+        ]
+    },
+    {
+        "q": "What does JTAG boundary scan description language do?",
+        "o": [
+            "Define device test configuration",
+            "Program firmware",
+            "Debug software",
+            "Measure power"
+        ]
+    },
+    {
+        "q": "How does secure boot implement rollback protection?",
+        "o": [
+            "Versioned measurements",
+            "No protection",
+            "Timestamp only",
+            "Size check"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses magnetic field?",
+        "o": [
+            "Magnetic fault injection",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis with autoencoder?",
+        "o": [
+            "Dimensionality reduction for traces",
+            "Peak detection",
+            "Average calculation",
+            "Threshold comparison"
+        ]
+    },
+    {
+        "q": "Which UART mode is synchronous?",
+        "o": [
+            "USART with clock",
+            "Standard UART",
+            "RS-232",
+            "RS-485"
+        ]
+    },
+    {
+        "q": "What is firmware control flow integrity?",
+        "o": [
+            "Validate branch targets",
+            "Encrypt code",
+            "Compress code",
+            "Hide code"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses leakage resilient cryptography?",
+        "o": [
+            "Provably secure masking",
+            "Simple delays",
+            "Power filtering",
+            "EM shielding"
+        ]
+    },
+    {
+        "q": "What does JTAG access port protection prevent?",
+        "o": [
+            "Unauthorized debug",
+            "Normal operation",
+            "Boundary scan",
+            "IDCODE reading"
+        ]
+    },
+    {
+        "q": "How does secure boot handle cache attacks?",
+        "o": [
+            "Cache flushing",
+            "Ignore attacks",
+            "Disable cache",
+            "Software checks"
+        ]
+    },
+    {
+        "q": "Which hardware trojan uses optical sensors?",
+        "o": [
+            "Light-sensitive trojan",
+            "Voltage trojan",
+            "Clock trojan",
+            "Data trojan"
+        ]
+    },
+    {
+        "q": "What does power analysis with clustering reveal?",
+        "o": [
+            "Natural groupings of operations",
+            "Exact keys",
+            "Memory contents",
+            "Network data"
+        ]
+    },
+    {
+        "q": "Which UART attack uses framing errors?",
+        "o": [
+            "Denial of service",
+            "Data extraction",
+            "Key recovery",
+            "Code injection"
+        ]
+    },
+    {
+        "q": "What is firmware stack canary bypass?",
+        "o": [
+            "Information leak before overflow",
+            "Remove canary",
+            "Encrypt canary",
+            "Hash canary"
+        ]
+    },
+    {
+        "q": "Which side-channel attack uses correlation in frequency domain?",
+        "o": [
+            "Frequency correlation analysis",
+            "Time correlation",
+            "Peak correlation",
+            "Average correlation"
+        ]
+    },
+    {
+        "q": "What does JTAG clock divider setting do?",
+        "o": [
+            "Adapt to target speed",
+            "Increase power",
+            "Improve accuracy",
+            "Reduce noise"
+        ]
+    },
+    {
+        "q": "How does secure boot implement secure storage?",
+        "o": [
+            "Sealed storage with TPM",
+            "Plain flash",
+            "External SD",
+            "Network storage"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses resistive probing?",
+        "o": [
+            "Tungsten needle probing",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis with genetic algorithms?",
+        "o": [
+            "Optimized key search",
+            "Peak detection",
+            "Average calculation",
+            "Threshold comparison"
+        ]
+    },
+    {
+        "q": "Which UART signal indicates ringing indicator?",
+        "o": [
+            "RI",
+            "DCD",
+            "DSR",
+            "DTR"
+        ]
+    },
+    {
+        "q": "What is firmware address space layout randomization?",
+        "o": [
+            "Randomize code locations",
+            "Encrypt addresses",
+            "Hide addresses",
+            "Remove pointers"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses random process interrupts?",
+        "o": [
+            "Operation interleaving",
+            "Fixed sequence",
+            "Power smoothing",
+            "EM shielding"
+        ]
+    },
+    {
+        "q": "What does JTAG secure debug authentication use?",
+        "o": [
+            "Challenge-response protocol",
+            "Static password",
+            "No authentication",
+            "PIN code"
+        ]
+    },
+    {
+        "q": "How does secure boot handle cold boot attacks?",
+        "o": [
+            "Memory encryption",
+            "Clear memory",
+            "Ignore attacks",
+            "Software checks"
+        ]
+    },
+    {
+        "q": "Which hardware trojan uses clock network?",
+        "o": [
+            "Clock glitch trojan",
+            "Power trojan",
+            "Data trojan",
+            "Memory trojan"
+        ]
+    },
+    {
+        "q": "What does power analysis with neural networks require?",
+        "o": [
+            "Proper network architecture",
+            "Simple model",
+            "Linear assumptions",
+            "Gaussian data"
+        ]
+    },
+    {
+        "q": "What is the mathematical foundation for masking in side-channel attacks?",
+        "o": [
+            "Secret sharing over finite fields",
+            "Linear algebra over reals",
+            "Boolean algebra simplification",
+            "Number theory prime factorization"
+        ]
+    },
+    {
+        "q": "Which advanced technique bypasses ARM TrustZone via cache attacks?",
+        "o": [
+            "Cache speculation across worlds",
+            "Direct memory access",
+            "JTAG debug interface",
+            "Power analysis"
+        ]
+    },
+    {
+        "q": "What does JTAG SCAN_N speculative execution exploit?",
+        "o": [
+            "Pre-scan data leakage",
+            "Post-scan verification",
+            "During-scan power",
+            "After-scan timing"
+        ]
+    },
+    {
+        "q": "How does secure boot implement post-quantum signatures?",
+        "o": [
+            "Lattice-based cryptography",
+            "RSA with larger keys",
+            "ECC with curves",
+            "AES encryption"
+        ]
+    },
+    {
+        "q": "Which hardware trojan uses analog RF front-end?",
+        "o": [
+            "Covert channel transmitter",
+            "Digital logic trojan",
+            "Memory corruption",
+            "Processor backdoor"
+        ]
+    },
+    {
+        "q": "What does higher-order masking protect against?",
+        "o": [
+            "Multivariate side-channel attacks",
+            "Simple power analysis",
+            "Timing attacks",
+            "Cache attacks"
+        ]
+    },
+    {
+        "q": "Which UART vulnerability enables remote code execution?",
+        "o": [
+            "Stack overflow in parser",
+            "Baud rate negotiation",
+            "Hardware flow control",
+            "Parity calculation"
+        ]
+    },
+    {
+        "q": "What is firmware virtualization for anti-reverse engineering?",
+        "o": [
+            "Custom bytecode interpreters",
+            "Code compression only",
+            "String encryption",
+            "Function inlining"
+        ]
+    },
+    {
+        "q": "Which side-channel attack uses deep learning with convolutional networks?",
+        "o": [
+            "CNN for trace feature extraction",
+            "Simple neural network",
+            "Linear regression",
+            "Decision trees"
+        ]
+    },
+    {
+        "q": "What does JTAG advanced protocol with encryption use?",
+        "o": [
+            "AES-GCM authenticated encryption",
+            "Simple XOR masking",
+            "Base64 encoding",
+            "Checksum only"
+        ]
+    },
+    {
+        "q": "How does secure boot implement dynamic root of trust?",
+        "o": [
+            "Late launch instructions",
+            "Static boot only",
+            "Software verification",
+            "User authentication"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses laser-assisted device alteration?",
+        "o": [
+            "LADA fault localization",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis with reinforcement learning?",
+        "o": [
+            "Adaptive attack strategies",
+            "Static classification",
+            "Peak detection",
+            "Average calculation"
+        ]
+    },
+    {
+        "q": "Which UART attack uses precision timing for key extraction?",
+        "o": [
+            "Inter-packet timing analysis",
+            "Baud rate detection",
+            "Data sniffing",
+            "Command injection"
+        ]
+    },
+    {
+        "q": "What is firmware control flow tunneling?",
+        "o": [
+            "Hidden execution paths",
+            "Code optimization",
+            "Memory protection",
+            "Stack canaries"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses threshold implementations?",
+        "o": [
+            "Glitch-resistant logic",
+            "Clock randomization",
+            "Voltage scaling",
+            "Power smoothing"
+        ]
+    },
+    {
+        "q": "What does JTAG fault injection exploit?",
+        "o": [
+            "Boundary scan cell state corruption",
+            "Clock speed increase",
+            "Power reduction",
+            "Temperature variation"
+        ]
+    },
+    {
+        "q": "How does secure boot handle speculative execution attacks?",
+        "o": [
+            "Fence instructions and serialization",
+            "Ignore completely",
+            "Disable speculation",
+            "Software patches"
+        ]
+    },
+    {
+        "q": "Which hardware trojan uses thermal coupling?",
+        "o": [
+            "Heat-based side channel",
+            "Power trojan",
+            "Clock trojan",
+            "Data trojan"
+        ]
+    },
+    {
+        "q": "What does power analysis with multivariate statistics?",
+        "o": [
+            "Joint distribution analysis",
+            "Univariate only",
+            "Peak detection",
+            "Average calculation"
+        ]
+    },
+    {
+        "q": "Which UART bootloader uses YMODEM protocol?",
+        "o": [
+            "Batch file transfer with CRC",
+            "Single file only",
+            "Text only",
+            "Raw binary"
+        ]
+    },
+    {
+        "q": "What is firmware polymorphic code generation?",
+        "o": [
+            "Self-modifying encryption",
+            "Static code only",
+            "Compressed code",
+            "Obfuscated strings"
+        ]
+    },
+    {
+        "q": "Which side-chain attack uses information theory metrics?",
+        "o": [
+            "Mutual information analysis",
+            "Correlation analysis",
+            "Difference of means",
+            "Variance analysis"
+        ]
+    },
+    {
+        "q": "What does JTAG clock recovery in hostile environment?",
+        "o": [
+            "Adapt to noisy conditions",
+            "Fixed clock only",
+            "Ignore noise",
+            "Reduce speed"
+        ]
+    },
+    {
+        "q": "How does secure boot implement hypervisor protection?",
+        "o": [
+            "Nested page tables",
+            "Software only",
+            "User mode",
+            "Kernel patches"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses magnetic resonance imaging?",
+        "o": [
+            "MRI chip analysis",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis with graph neural networks?",
+        "o": [
+            "Trace relationship modeling",
+            "Independent analysis",
+            "Peak detection",
+            "Threshold comparison"
+        ]
+    },
+    {
+        "q": "Which UART attack uses echo cancellation?",
+        "o": [
+            "Signal isolation bypass",
+            "Baud rate detection",
+            "Data sniffing",
+            "Command injection"
+        ]
+    },
+    {
+        "q": "What is firmware return-oriented programming defense?",
+        "o": [
+            "Control flow integrity",
+            "Stack canaries",
+            "ASLR only",
+            "Code encryption"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses circuit-level balancing?",
+        "o": [
+            "Dual-rail with precharge",
+            "Single-rail logic",
+            "Clock gating",
+            "Power gating"
+        ]
+    },
+    {
+        "q": "What does JTAG side-channel leakage reveal?",
+        "o": [
+            "Internal state during scan",
+            "Power consumption",
+            "Temperature data",
+            "Clock jitter"
+        ]
+    },
+    {
+        "q": "How does secure boot implement measured launch environment?",
+        "o": [
+            "Dynamic PCR extensions",
+            "Static measurements",
+            "Boot-time only",
+            "User verification"
+        ]
+    },
+    {
+        "q": "Which hardware trojan uses optical waveguide?",
+        "o": [
+            "Photonic side channel",
+            "Electronic trojan",
+            "Magnetic trojan",
+            "Thermal trojan"
+        ]
+    },
+    {
+        "q": "What does power analysis with Bayesian inference?",
+        "o": [
+            "Probabilistic key ranking",
+            "Deterministic extraction",
+            "Peak detection",
+            "Average calculation"
+        ]
+    },
+    {
+        "q": "Which UART vulnerability enables DMA attack?",
+        "o": [
+            "Shared buffer without protection",
+            "Baud rate change",
+            "Parity error",
+            "Flow control"
+        ]
+    },
+    {
+        "q": "What is firmware just-in-time code generation risk?",
+        "o": [
+            "Runtime code injection",
+            "Static analysis",
+            "Memory leaks",
+            "Stack overflows"
+        ]
+    },
+    {
+        "q": "Which side-channel attack uses algebraic side-channel analysis?",
+        "o": [
+            "Equation solving with leakage",
+            "Statistical only",
+            "Machine learning",
+            "Template matching"
+        ]
+    },
+    {
+        "q": "What does JTAG test access port security fuse protect?",
+        "o": [
+            "Permanent debug disable",
+            "Temporary disable",
+            "Password only",
+            "User control"
+        ]
+    },
+    {
+        "q": "How does secure boot handle interrupt vector attacks?",
+        "o": [
+            "VTOR locking",
+            "Software checks",
+            "User verification",
+            "Logging only"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses X-ray ptychography?",
+        "o": [
+            "High-resolution chip imaging",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis with transfer learning?",
+        "o": [
+            "Cross-device attack adaptation",
+            "Same device only",
+            "Peak detection",
+            "Average calculation"
+        ]
+    },
+    {
+        "q": "Which UART handshake is for data terminal ready?",
+        "o": [
+            "DTR",
+            "DSR",
+            "RTS",
+            "CTS"
+        ]
+    },
+    {
+        "q": "What is firmware pointer authentication bypass?",
+        "o": [
+            "PACMAN style attacks",
+            "Remove authentication",
+            "Brute force",
+            "Dictionary attack"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses noise engineering?",
+        "o": [
+            "Active noise insertion",
+            "Passive filtering",
+            "Shielding only",
+            "Clock control"
+        ]
+    },
+    {
+        "q": "What does JTAG clock domain crossing security affect?",
+        "o": [
+            "Multi-clock domain attacks",
+            "Single domain only",
+            "Power domains",
+            "Reset domains"
+        ]
+    },
+    {
+        "q": "How does secure boot implement SMM protection?",
+        "o": [
+            "SMM isolation",
+            "Disable SMM",
+            "Software checks",
+            "User mode"
+        ]
+    },
+    {
+        "q": "Which hardware trojan uses substrate coupling?",
+        "o": [
+            "Body-bias trojan",
+            "Logic trojan",
+            "Memory trojan",
+            "Power trojan"
+        ]
+    },
+    {
+        "q": "What does power analysis with deep belief networks?",
+        "o": [
+            "Unsupervised feature learning",
+            "Supervised only",
+            "Peak detection",
+            "Average calculation"
+        ]
+    },
+    {
+        "q": "Which UART attack uses oversampling?",
+        "o": [
+            "Signal reconstruction",
+            "Baud rate detection",
+            "Data sniffing",
+            "Command injection"
+        ]
+    },
+    {
+        "q": "What is firmware return-oriented programming gadget?",
+        "o": [
+            "Code sequences ending in return",
+            "Function calls",
+            "System calls",
+            "Interrupts"
+        ]
+    },
+    {
+        "q": "Which side-chain attack uses compressed sensing?",
+        "o": [
+            "Sparse trace reconstruction",
+            "Full trace analysis",
+            "Peak detection",
+            "Average calculation"
+        ]
+    },
+    {
+        "q": "What does JTAG IEEE 1149.7 features include?",
+        "o": [
+            "Two-pin interface",
+            "Four-pin only",
+            "Five-pin only",
+            "Six-pin only"
+        ]
+    },
+    {
+        "q": "How does secure boot implement memory encryption?",
+        "o": [
+            "Total memory encryption",
+            "Partial encryption",
+            "Software only",
+            "No encryption"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses photonic emission analysis?",
+        "o": [
+            "Time-resolved emission",
+            "Static emission",
+            "Power analysis",
+            "Timing analysis"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis with ensemble methods?",
+        "o": [
+            "Multiple classifier fusion",
+            "Single classifier",
+            "Peak detection",
+            "Average calculation"
+        ]
+    },
+    {
+        "q": "Which UART parameter affects long-distance communication?",
+        "o": [
+            "Signal voltage levels",
+            "Baud rate only",
+            "Data bits only",
+            "Parity only"
+        ]
+    },
+    {
+        "q": "What is firmware just-in-time code revelation?",
+        "o": [
+            "On-demand decryption",
+            "Permanent decryption",
+            "Static decryption",
+            "No encryption"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses asynchronous logic?",
+        "o": [
+            "Quasi-delay insensitive circuits",
+            "Synchronous logic",
+            "Clock gating",
+            "Power gating"
+        ]
+    },
+    {
+        "q": "What does JTAG boundary scan interconnect test find?",
+        "o": [
+            "Open and short circuits",
+            "Logic errors",
+            "Timing violations",
+            "Power issues"
+        ]
+    },
+    {
+        "q": "How does secure boot handle SMM cache poisoning?",
+        "o": [
+            "Cache flushing",
+            "Ignore attacks",
+            "Disable cache",
+            "Software checks"
+        ]
+    },
+    {
+        "q": "Which hardware trojan uses quantum tunneling?",
+        "o": [
+            "FET parameter modification",
+            "Logic trojan",
+            "Memory trojan",
+            "Power trojan"
+        ]
+    },
+    {
+        "q": "What does power analysis with symbolic execution?",
+        "o": [
+            "Path constraint solving",
+            "Concrete execution",
+            "Peak detection",
+            "Average calculation"
+        ]
+    },
+    {
+        "q": "Which UART attack uses ring indicator?",
+        "o": [
+            "Wake-up trigger",
+            "Data injection",
+            "Signal sniffing",
+            "Baud rate change"
+        ]
+    },
+    {
+        "q": "What is firmware shadow stack protection?",
+        "o": [
+            "Return address duplication",
+            "Stack canaries",
+            "ASLR only",
+            "Code encryption"
+        ]
+    },
+    {
+        "q": "Which side-chain attack uses differential deep learning?",
+        "o": [
+            "Contrastive learning approach",
+            "Standard classification",
+            "Peak detection",
+            "Average calculation"
+        ]
+    },
+    {
+        "q": "What does JTAG advanced security extensions standardize?",
+        "o": [
+            "Debug authentication",
+            "Faster clocks",
+            "Lower power",
+            "More pins"
+        ]
+    },
+    {
+        "q": "How does secure boot implement virtualization-based security?",
+        "o": [
+            "VBS with hypervisor",
+            "Software only",
+            "Hardware only",
+            "User mode"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses magnetic current imaging?",
+        "o": [
+            "Current distribution mapping",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis with attention mechanisms?",
+        "o": [
+            "Focused trace region analysis",
+            "Full trace analysis",
+            "Peak detection",
+            "Average calculation"
+        ]
+    },
+    {
+        "q": "Which UART mode supports multi-drop?",
+        "o": [
+            "RS-485",
+            "RS-232",
+            "RS-422",
+            "USB"
+        ]
+    },
+    {
+        "q": "What is firmware code reuse attack prevention?",
+        "o": [
+            "Fine-grained ASLR",
+            "Coarse ASLR",
+            "No protection",
+            "Stack cookies"
+        ]
+    },
+    {
+        "q": "Which side-channel countermeasure uses randomized addition chains?",
+        "o": [
+            "Scalar multiplication randomization",
+            "Fixed operations",
+            "Power smoothing",
+            "EM shielding"
+        ]
+    },
+    {
+        "q": "What does JTAG scan chain encryption prevent?",
+        "o": [
+            "Data eavesdropping",
+            "Clock glitching",
+            "Power analysis",
+            "Temperature attack"
+        ]
+    },
+    {
+        "q": "How does secure boot implement secure enclave?",
+        "o": [
+            "Hardware isolated execution",
+            "Software sandbox",
+            "User mode",
+            "Kernel module"
+        ]
+    },
+    {
+        "q": "Which hardware trojan uses body bias?",
+        "o": [
+            "Threshold voltage modification",
+            "Logic trojan",
+            "Memory trojan",
+            "Power trojan"
+        ]
+    },
+    {
+        "q": "What does power analysis with homomorphic encryption?",
+        "o": [
+            "Encrypted trace processing",
+            "Plaintext analysis",
+            "Peak detection",
+            "Average calculation"
+        ]
+    },
+    {
+        "q": "Which UART attack uses DCD signal?",
+        "o": [
+            "Carrier detection spoofing",
+            "Data injection",
+            "Signal sniffing",
+            "Baud rate change"
+        ]
+    },
+    {
+        "q": "What is firmware kernel page table isolation?",
+        "o": [
+            "Separate user and kernel pages",
+            "Shared pages",
+            "No isolation",
+            "Software only"
+        ]
+    },
+    {
+        "q": "Which side-chain attack uses frequency injection?",
+        "o": [
+            "Electromagnetic fault injection",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does JTAG protocol fuzzing discover?",
+        "o": [
+            "Undocumented commands",
+            "Clock limits",
+            "Power requirements",
+            "Temperature range"
+        ]
+    },
+    {
+        "q": "How does secure boot handle rowhammer attacks?",
+        "o": [
+            "Target row refresh",
+            "Ignore completely",
+            "Software ECC",
+            "Disable memory"
+        ]
+    },
+    {
+        "q": "Which hardware attack uses near-field scanning?",
+        "o": [
+            "Electromagnetic field mapping",
+            "Power analysis",
+            "Timing analysis",
+            "Cache attack"
+        ]
+    },
+    {
+        "q": "What does electromagnetic analysis with generative adversarial networks?",
+        "o": [
+            "Synthetic trace generation",
+            "Real trace analysis",
+            "Peak detection",
+            "Average calculation"
+        ]
+    },
+    {
+        "q": "Which UART parameter affects noise immunity?",
+        "o": [
+            "Signal swing",
+            "Baud rate",
+            "Data bits",
+            "Stop bits"
+        ]
+    },
+    {
+        "q": "What is firmware speculative store bypass protection?",
+        "o": [
+            "Memory disambiguation barriers",
+            "No protection",
+            "Software only",
+            "User mode"
+        ]
+    }
+]

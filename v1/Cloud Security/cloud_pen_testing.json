@@ -1,0 +1,4367 @@
+[
+    {
+        "q": "What is the primary security goal of cloud penetration testing?",
+        "o": [
+            "Identify exploitable vulnerabilities in cloud environments",
+            "Guarantee 100 percent system uptime",
+            "Increase cloud storage capacity",
+            "Reduce cloud service costs"
+        ]
+    },
+    {
+        "q": "Which IAM principle suggests granting only necessary permissions to perform a function?",
+        "o": [
+            "Least privilege",
+            "Separation of duties",
+            "Defense in depth",
+            "Mandatory access"
+        ]
+    },
+    {
+        "q": "What is a public cloud storage bucket that allows anyone to read its contents called?",
+        "o": [
+            "Publicly accessible bucket",
+            "Encrypted container",
+            "Private repository",
+            "Shared volume"
+        ]
+    },
+    {
+        "q": "Which AWS service is primarily used for managing identity and access?",
+        "o": [
+            "IAM",
+            "EC2",
+            "S3",
+            "Lambda"
+        ]
+    },
+    {
+        "q": "What is the default network access setting for most newly created cloud databases?",
+        "o": [
+            "Private access only",
+            "Public access enabled",
+            "Shared access only",
+            "No network access"
+        ]
+    },
+    {
+        "q": "Which of the following is a common cloud misconfiguration?",
+        "o": [
+            "Overly permissive IAM policies",
+            "Regular security patching",
+            "Multi-factor authentication",
+            "Data encryption at rest"
+        ]
+    },
+    {
+        "q": "What does the principle of defense in depth refer to in cloud security?",
+        "o": [
+            "Multiple layers of security controls",
+            "Single strong password policy",
+            "Physical security only",
+            "Encryption at all costs"
+        ]
+    },
+    {
+        "q": "In cloud penetration testing, what is 'reconnaissance'?",
+        "o": [
+            "Gathering information about the target",
+            "Exploiting a vulnerability",
+            "Cleaning up test artifacts",
+            "Reporting findings"
+        ]
+    },
+    {
+        "q": "What is an AWS S3 bucket policy that allows access to 'Any Authenticated AWS User' considered?",
+        "o": [
+            "Potentially risky",
+            "Completely secure",
+            "Industry best practice",
+            "Default setting"
+        ]
+    },
+    {
+        "q": "Which HTTP method is often overly permissive in cloud API configurations?",
+        "o": [
+            "DELETE",
+            "GET",
+            "HEAD",
+            "OPTIONS"
+        ]
+    },
+    {
+        "q": "What is a container image?",
+        "o": [
+            "A lightweight executable package",
+            "A physical server",
+            "A virtual network",
+            "A database backup"
+        ]
+    },
+    {
+        "q": "Which tool is commonly used to scan container images for vulnerabilities?",
+        "o": [
+            "Trivy",
+            "Nmap",
+            "Wireshark",
+            "Metasploit"
+        ]
+    },
+    {
+        "q": "What is the host operating system in containerized environments called?",
+        "o": [
+            "Host OS",
+            "Guest OS",
+            "Container OS",
+            "Hypervisor"
+        ]
+    },
+    {
+        "q": "Which Docker command shows all running containers?",
+        "o": [
+            "docker ps",
+            "docker images",
+            "docker run",
+            "docker build"
+        ]
+    },
+    {
+        "q": "What is a key security risk of running a container as the root user?",
+        "o": [
+            "Privilege escalation on host",
+            "Slower network speeds",
+            "Increased memory usage",
+            "Container cannot start"
+        ]
+    },
+    {
+        "q": "What is the purpose of a Dockerfile?",
+        "o": [
+            "To build a container image",
+            "To run a container",
+            "To stop all containers",
+            "To network containers"
+        ]
+    },
+    {
+        "q": "Which of the following is a container orchestration platform?",
+        "o": [
+            "Kubernetes",
+            "Jenkins",
+            "Git",
+            "Ansible"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes pod?",
+        "o": [
+            "A group of one or more containers",
+            "A physical node",
+            "A storage volume",
+            "A network policy"
+        ]
+    },
+    {
+        "q": "What does FaaS stand for in cloud computing?",
+        "o": [
+            "Function as a Service",
+            "File as a Service",
+            "Firewall as a Service",
+            "Framework as a Service"
+        ]
+    },
+    {
+        "q": "Which AWS service is a serverless compute engine?",
+        "o": [
+            "AWS Lambda",
+            "AWS EC2",
+            "AWS RDS",
+            "AWS VPC"
+        ]
+    },
+    {
+        "q": "What is a serverless function's execution duration typically limited by?",
+        "o": [
+            "Time limits set by provider",
+            "Permanent storage size",
+            "Physical CPU cores",
+            "Network bandwidth"
+        ]
+    },
+    {
+        "q": "What is a common injection attack against serverless functions?",
+        "o": [
+            "OS command injection",
+            "Buffer overflow",
+            "ARP spoofing",
+            "DNS poisoning"
+        ]
+    },
+    {
+        "q": "Where are serverless function logs often stored?",
+        "o": [
+            "Centralized logging service",
+            "Local text file",
+            "Physical printout",
+            "RAM memory only"
+        ]
+    },
+    {
+        "q": "What is event data in serverless computing?",
+        "o": [
+            "Input that triggers the function",
+            "Error message only",
+            "Database schema",
+            "Function source code"
+        ]
+    },
+    {
+        "q": "What is the shared responsibility model?",
+        "o": [
+            "Division of security tasks between provider and customer",
+            "Shared passwords among team members",
+            "Joint ownership of physical servers",
+            "Collaborative software development"
+        ]
+    },
+    {
+        "q": "In the shared responsibility model, what is the customer typically responsible for?",
+        "o": [
+            "Data and configuration",
+            "Physical hardware",
+            "Network cables",
+            "Data center power"
+        ]
+    },
+    {
+        "q": "What is multi-cloud security?",
+        "o": [
+            "Securing services across multiple cloud providers",
+            "Using only one cloud vendor",
+            "Securing a single application",
+            "On-premises security only"
+        ]
+    },
+    {
+        "q": "What is a challenge of multi-cloud security?",
+        "o": [
+            "Inconsistent security tools across providers",
+            "Lower overall security costs",
+            "Simplified identity management",
+            "Redundant hardware"
+        ]
+    },
+    {
+        "q": "Which IAM concept defines what actions are allowed on which resources?",
+        "o": [
+            "Policy",
+            "User",
+            "Group",
+            "Role"
+        ]
+    },
+    {
+        "q": "What is a cloud access key typically used for?",
+        "o": [
+            "Programmatic access to APIs",
+            "Console password login",
+            "Physical door access",
+            "Database encryption"
+        ]
+    },
+    {
+        "q": "What is bucket enumeration in cloud security?",
+        "o": [
+            "Listing accessible storage bucket names",
+            "Counting objects in a bucket",
+            "Encrypting a bucket",
+            "Deleting bucket contents"
+        ]
+    },
+    {
+        "q": "What is a snapshot in cloud computing?",
+        "o": [
+            "A point-in-time backup of data",
+            "A live video feed",
+            "A user profile picture",
+            "A network packet"
+        ]
+    },
+    {
+        "q": "Why are public snapshots of volumes a security risk?",
+        "o": [
+            "They may expose sensitive data",
+            "They cost more money",
+            "They are read-only",
+            "They cannot be deleted"
+        ]
+    },
+    {
+        "q": "What is an AWS security group?",
+        "o": [
+            "A virtual firewall for instances",
+            "A user group for IAM",
+            "A physical security team",
+            "A database table"
+        ]
+    },
+    {
+        "q": "What does an overly permissive security group rule often use?",
+        "o": [
+            "0.0.0.0/0",
+            "127.0.0.1/32",
+            "10.0.0.0/16",
+            "192.168.1.0/24"
+        ]
+    },
+    {
+        "q": "What is container isolation primarily achieved through?",
+        "o": [
+            "Namespaces and cgroups",
+            "Virtual machines",
+            "Hardware firewalls",
+            "SSL certificates"
+        ]
+    },
+    {
+        "q": "What is a 'base image' in container security?",
+        "o": [
+            "The starting point for a container image",
+            "The physical server",
+            "The container runtime",
+            "The orchestration tool"
+        ]
+    },
+    {
+        "q": "Which Docker command builds an image from a Dockerfile?",
+        "o": [
+            "docker build",
+            "docker create",
+            "docker commit",
+            "docker export"
+        ]
+    },
+    {
+        "q": "What is the container runtime responsible for?",
+        "o": [
+            "Running containers",
+            "Building images",
+            "Writing code",
+            "Managing users"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes secret?",
+        "o": [
+            "An object for sensitive data",
+            "A hidden namespace",
+            "A private container",
+            "A secure pod"
+        ]
+    },
+    {
+        "q": "What is an etcd in Kubernetes?",
+        "o": [
+            "A key-value store for cluster data",
+            "A container runtime",
+            "A network plugin",
+            "A monitoring tool"
+        ]
+    },
+    {
+        "q": "Why is etcd access considered critical for security?",
+        "o": [
+            "It holds all cluster configuration and secrets",
+            "It runs all containers",
+            "It exposes external IPs",
+            "It manages user logins"
+        ]
+    },
+    {
+        "q": "What is a serverless application composed of?",
+        "o": [
+            "Functions and event triggers",
+            "Always-on virtual machines",
+            "Physical servers",
+            "Persistent SSH connections"
+        ]
+    },
+    {
+        "q": "Which of these is a serverless database?",
+        "o": [
+            "Amazon DynamoDB",
+            "MySQL on EC2",
+            "MongoDB on VM",
+            "PostgreSQL locally"
+        ]
+    },
+    {
+        "q": "What is dependency confusion in serverless?",
+        "o": [
+            "Using a malicious package with the same name as a private one",
+            "Mixing up environment variables",
+            "Losing function source code",
+            "Confusing trigger events"
+        ]
+    },
+    {
+        "q": "What is the purpose of cloud forensics?",
+        "o": [
+            "Investigating security incidents in the cloud",
+            "Predicting future attacks",
+            "Designing cloud architecture",
+            "Managing cloud costs"
+        ]
+    },
+    {
+        "q": "What is a key challenge in cloud forensics?",
+        "o": [
+            "Data volatility and limited access",
+            "Too much physical evidence",
+            "Permanent data storage",
+            "Overly simple processes"
+        ]
+    },
+    {
+        "q": "What is a CloudTrail log in AWS?",
+        "o": [
+            "An audit log of API activity",
+            "A network traffic log",
+            "A DNS query log",
+            "A cost report"
+        ]
+    },
+    {
+        "q": "What does a VPC Flow Log record?",
+        "o": [
+            "IP traffic information",
+            "User login attempts",
+            "CPU utilization",
+            "Disk I/O operations"
+        ]
+    },
+    {
+        "q": "What is chain of custody in forensics?",
+        "o": [
+            "Documentation of evidence handling",
+            "A type of encryption",
+            "A network topology",
+            "An access control list"
+        ]
+    },
+    {
+        "q": "What is a common format for exporting cloud logs?",
+        "o": [
+            "JSON",
+            "MP4",
+            "EXE",
+            "ISO"
+        ]
+    },
+    {
+        "q": "What is a critical step before starting a cloud penetration test?",
+        "o": [
+            "Obtaining written authorization",
+            "Informing all users",
+            "Backing up all data",
+            "Disabling firewalls"
+        ]
+    },
+    {
+        "q": "What does a cloud penetration tester often first need to test IAM?",
+        "o": [
+            "Valid user credentials",
+            "Root access to hardware",
+            "Physical access to servers",
+            "Network cables"
+        ]
+    },
+    {
+        "q": "What is metadata in cloud computing?",
+        "o": [
+            "Data about cloud resources",
+            "User content in storage",
+            "Encrypted database fields",
+            "Application source code"
+        ]
+    },
+    {
+        "q": "What is the IMDS in AWS?",
+        "o": [
+            "Instance Metadata Service",
+            "Internet Mail Data System",
+            "Identity Management Directory Service",
+            "Integrated Monitoring Dashboard"
+        ]
+    },
+    {
+        "q": "Why is the IMDS a target for attackers?",
+        "o": [
+            "It may contain IAM credentials",
+            "It stores user files",
+            "It hosts websites",
+            "It runs applications"
+        ]
+    },
+    {
+        "q": "What is an AWS AMI?",
+        "o": [
+            "Amazon Machine Image",
+            "Advanced Malware Inspector",
+            "Automated Managed Instance",
+            "Active Management Interface"
+        ]
+    },
+    {
+        "q": "What is the risk of using a public AMI from an untrusted source?",
+        "o": [
+            "It may contain malware or backdoors",
+            "It will cost more money",
+            "It cannot be launched",
+            "It is read-only"
+        ]
+    },
+    {
+        "q": "What is the principle of container immutability?",
+        "o": [
+            "Containers are replaced, not patched",
+            "Containers cannot be stopped",
+            "Containers are always running",
+            "Containers store all data"
+        ]
+    },
+    {
+        "q": "What is a Linux capability in container security?",
+        "o": [
+            "A specific privileged operation",
+            "A type of container",
+            "A network protocol",
+            "A storage driver"
+        ]
+    },
+    {
+        "q": "What does dropping all capabilities for a container do?",
+        "o": [
+            "Reduces its attack surface",
+            "Stops it from running",
+            "Makes it root-only",
+            "Enables networking"
+        ]
+    },
+    {
+        "q": "What is a read-only root filesystem in a container?",
+        "o": [
+            "Prevents writing to the container's filesystem",
+            "Stops all disk reads",
+            "Enables permanent storage",
+            "Allows only temporary files"
+        ]
+    },
+    {
+        "q": "What is Kubernetes RBAC?",
+        "o": [
+            "Role-Based Access Control",
+            "Runtime Behavior Analysis Check",
+            "Remote Backup and Archive",
+            "Resource-Based Allocation Cost"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes namespace used for?",
+        "o": [
+            "Isolating resources within a cluster",
+            "Naming containers",
+            "Versioning images",
+            "Storing logs"
+        ]
+    },
+    {
+        "q": "What is a pod security policy in Kubernetes?",
+        "o": [
+            "A cluster-level resource for pod security",
+            "A network firewall rule",
+            "A user password policy",
+            "A backup schedule"
+        ]
+    },
+    {
+        "q": "What is a common misconfiguration in serverless functions regarding permissions?",
+        "o": [
+            "Overprivileged execution role",
+            "Underpowered CPU",
+            "Too much memory",
+            "Short timeout"
+        ]
+    },
+    {
+        "q": "What is a serverless function's environment variable used for?",
+        "o": [
+            "Storing configuration and secrets",
+            "Executing code",
+            "Triggering events",
+            "Logging errors"
+        ]
+    },
+    {
+        "q": "Why should secrets not be hardcoded in serverless functions?",
+        "o": [
+            "They would be exposed in code and logs",
+            "They would run slower",
+            "They would cost more",
+            "They would not work"
+        ]
+    },
+    {
+        "q": "What is a better way to manage secrets in serverless?",
+        "o": [
+            "A dedicated secrets manager service",
+            "Hardcoding in the function",
+            "Storing in a public bucket",
+            "Sharing via email"
+        ]
+    },
+    {
+        "q": "What is the purpose of artifact collection in cloud forensics?",
+        "o": [
+            "Gathering logs and evidence",
+            "Creating new VMs",
+            "Deleting compromised data",
+            "Rebuilding applications"
+        ]
+    },
+    {
+        "q": "What is a disk snapshot in forensics used for?",
+        "o": [
+            "Preserving a point-in-time state",
+            "Deleting all data",
+            "Increasing disk speed",
+            "Changing disk type"
+        ]
+    },
+    {
+        "q": "What does a memory dump from a cloud instance capture?",
+        "o": [
+            "RAM contents",
+            "Hard drive data",
+            "Network packets",
+            "CPU cache"
+        ]
+    },
+    {
+        "q": "Why is time synchronization important in forensics?",
+        "o": [
+            "To correlate events across multiple logs",
+            "To make logs smaller",
+            "To speed up analysis",
+            "To encrypt evidence"
+        ]
+    },
+    {
+        "q": "What is a federated identity in multi-cloud?",
+        "o": [
+            "An identity that works across multiple providers",
+            "A merged database",
+            "A combined network",
+            "A single physical server"
+        ]
+    },
+    {
+        "q": "What is a common standard for federated identity?",
+        "o": [
+            "SAML",
+            "JPEG",
+            "MP3",
+            "PDF"
+        ]
+    },
+    {
+        "q": "What is a multi-cloud key management challenge?",
+        "o": [
+            "Using different KMS systems for each provider",
+            "Having too many keys",
+            "Keys never expire",
+            "Keys are physical objects"
+        ]
+    },
+    {
+        "q": "What is a benefit of using Infrastructure as Code?",
+        "o": [
+            "Version-controlled and repeatable deployments",
+            "Manual server configuration",
+            "Slower deployments",
+            "Increased human error"
+        ]
+    },
+    {
+        "q": "What is a common IaC tool for cloud?",
+        "o": [
+            "Terraform",
+            "MS Word",
+            "Photoshop",
+            "Excel"
+        ]
+    },
+    {
+        "q": "What is the risk of hardcoding credentials in IaC templates?",
+        "o": [
+            "Secrets exposure in version control",
+            "Templates will not compile",
+            "Increased compute costs",
+            "Slower deployment speed"
+        ]
+    },
+    {
+        "q": "What is a 'backdoor' in cloud security?",
+        "o": [
+            "A secret method of bypassing security",
+            "A maintenance entrance",
+            "A backup server",
+            "A network port"
+        ]
+    },
+    {
+        "q": "What does 'patching' refer to in cloud security?",
+        "o": [
+            "Updating software to fix vulnerabilities",
+            "Connecting network cables",
+            "Creating new users",
+            "Monitoring costs"
+        ]
+    },
+    {
+        "q": "What is a vulnerability scan?",
+        "o": [
+            "An automated check for known weaknesses",
+            "A manual code review",
+            "A physical inspection",
+            "A user survey"
+        ]
+    },
+    {
+        "q": "What is the difference between a vulnerability and an exploit?",
+        "o": [
+            "A weakness vs. code that uses it",
+            "They are the same thing",
+            "A tool vs. a person",
+            "A network vs. an application"
+        ]
+    },
+    {
+        "q": "What is an Azure 'App Registration' used for?",
+        "o": [
+            "Identity and authentication for apps",
+            "Creating mobile applications",
+            "Registering user complaints",
+            "Billing management"
+        ]
+    },
+    {
+        "q": "What is a GCP 'Service Account'?",
+        "o": [
+            "An identity for applications and VMs",
+            "A customer support role",
+            "A billing account",
+            "A type of storage"
+        ]
+    },
+    {
+        "q": "What is a shared VPC?",
+        "o": [
+            "A network shared across multiple projects",
+            "A public internet connection",
+            "A dial-up modem",
+            "A peer-to-peer network"
+        ]
+    },
+    {
+        "q": "What is a DMZ in cloud networking?",
+        "o": [
+            "A perimeter network with controlled access",
+            "A database zone",
+            "A developer environment",
+            "A disaster recovery site"
+        ]
+    },
+    {
+        "q": "What is a jump box or bastion host used for?",
+        "o": [
+            "Secure access to private instances",
+            "Running public websites",
+            "Storing backups",
+            "Monitoring network speed"
+        ]
+    },
+    {
+        "q": "What is SSH key-based authentication?",
+        "o": [
+            "A secure login method using key pairs",
+            "A password-only login",
+            "A biometric scan",
+            "A hardware token"
+        ]
+    },
+    {
+        "q": "What is the risk of sharing a private SSH key?",
+        "o": [
+            "Non-repudiation is lost",
+            "It becomes public key",
+            "It stops working",
+            "It doubles in size"
+        ]
+    },
+    {
+        "q": "What is a container registry?",
+        "o": [
+            "A repository for storing container images",
+            "A running container",
+            "A type of container runtime",
+            "A container log file"
+        ]
+    },
+    {
+        "q": "What is Docker Hub?",
+        "o": [
+            "A public container registry",
+            "A container orchestration tool",
+            "A CI/CD platform",
+            "A code editor"
+        ]
+    },
+    {
+        "q": "What is a 'tag' in Docker?",
+        "o": [
+            "A label for an image version",
+            "A physical sticker",
+            "A metadata service",
+            "A network label"
+        ]
+    },
+    {
+        "q": "What is the risk of using the 'latest' tag?",
+        "o": [
+            "It can be ambiguous and change unexpectedly",
+            "It is always insecure",
+            "It cannot be pulled",
+            "It costs more"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes Ingress?",
+        "o": [
+            "API object for external access to services",
+            "A type of pod",
+            "A secret store",
+            "A volume mount"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes Network Policy used for?",
+        "o": [
+            "Controlling pod-to-pod communication",
+            "Managing user logins",
+            "Storing configuration",
+            "Scheduling pods"
+        ]
+    },
+    {
+        "q": "What does CIS Benchmarks provide?",
+        "o": [
+            "Security configuration best practices",
+            "Cloud pricing guides",
+            "Network speed tests",
+            "Programming tutorials"
+        ]
+    },
+    {
+        "q": "What is the purpose of a cloud security group's inbound rules?",
+        "o": [
+            "Control incoming traffic to instances",
+            "Manage outgoing traffic only",
+            "Define user permissions",
+            "Schedule automated backups"
+        ]
+    },
+    {
+        "q": "Which AWS feature allows you to manage permissions across multiple accounts?",
+        "o": [
+            "AWS Organizations",
+            "AWS Config",
+            "AWS CloudFormation",
+            "AWS Trusted Advisor"
+        ]
+    },
+    {
+        "q": "What is a common misconfiguration involving cloud storage versioning?",
+        "o": [
+            "Leaving old versions accessible",
+            "Enabling encryption",
+            "Turning on logging",
+            "Setting lifecycle policies"
+        ]
+    },
+    {
+        "q": "What does the HTTP status code 403 indicate in cloud API responses?",
+        "o": [
+            "Forbidden access",
+            "Successful request",
+            "Server error",
+            "Redirect required"
+        ]
+    },
+    {
+        "q": "What is the primary risk of using long-term access keys?",
+        "o": [
+            "Increased chance of key compromise",
+            "Slower API performance",
+            "Higher compute costs",
+            "Limited region access"
+        ]
+    },
+    {
+        "q": "What is a better alternative to long-term access keys for applications?",
+        "o": [
+            "IAM roles with temporary credentials",
+            "Root account credentials",
+            "Hardcoded passwords",
+            "Shared user logins"
+        ]
+    },
+    {
+        "q": "What does AWS CloudTrail provide for security auditing?",
+        "o": [
+            "History of API calls",
+            "Network packet inspection",
+            "Vulnerability scans",
+            "Cost optimization"
+        ]
+    },
+    {
+        "q": "What is an AWS Config rule used for?",
+        "o": [
+            "Evaluating resource compliance",
+            "Creating firewall rules",
+            "Managing user passwords",
+            "Deploying applications"
+        ]
+    },
+    {
+        "q": "What is a public AMI shared vulnerability?",
+        "o": [
+            "Embedded backdoors in the image",
+            "High cost of usage",
+            "Slow boot times",
+            "Limited storage"
+        ]
+    },
+    {
+        "q": "What is the purpose of AWS Key Management Service?",
+        "o": [
+            "Create and manage encryption keys",
+            "Monitor network traffic",
+            "Scan for vulnerabilities",
+            "Manage user identities"
+        ]
+    },
+    {
+        "q": "What is a container breakout attack?",
+        "o": [
+            "Escaping the container to access the host",
+            "Starting a new container",
+            "Stopping all containers",
+            "Building a container image"
+        ]
+    },
+    {
+        "q": "What Linux kernel feature is fundamental to container isolation?",
+        "o": [
+            "Namespaces",
+            "Systemd",
+            "Bash shell",
+            "Ext4 filesystem"
+        ]
+    },
+    {
+        "q": "What does 'privileged: true' do in a Docker container configuration?",
+        "o": [
+            "Grants all capabilities and host access",
+            "Runs as a non-root user",
+            "Disables networking",
+            "Makes filesystem read-only"
+        ]
+    },
+    {
+        "q": "Why is running privileged containers considered dangerous?",
+        "o": [
+            "It can lead to host compromise",
+            "They cannot access the network",
+            "They use more memory",
+            "They cannot be stopped"
+        ]
+    },
+    {
+        "q": "What is a Docker image layer?",
+        "o": [
+            "A set of filesystem changes",
+            "A network interface",
+            "A running container",
+            "A user permission"
+        ]
+    },
+    {
+        "q": "How do image layers affect security scanning?",
+        "o": [
+            "Vulnerabilities can exist in any layer",
+            "Only the top layer is scanned",
+            "Layers are encrypted",
+            "Layers hide malware"
+        ]
+    },
+    {
+        "q": "What is the purpose of a Kubernetes ServiceAccount?",
+        "o": [
+            "Provides identity for pods",
+            "Creates user accounts",
+            "Manages billing",
+            "Stores passwords"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes cluster's API server?",
+        "o": [
+            "The central management endpoint",
+            "A container runtime",
+            "A network proxy",
+            "A data store"
+        ]
+    },
+    {
+        "q": "Why is the Kubernetes API server a high-value target?",
+        "o": [
+            "It controls all cluster operations",
+            "It stores user files",
+            "It runs applications",
+            "It hosts websites"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes dashboard?",
+        "o": [
+            "A web UI for cluster management",
+            "A monitoring tool",
+            "A log aggregator",
+            "A network visualizer"
+        ]
+    },
+    {
+        "q": "What is the security risk of exposing the Kubernetes dashboard publicly?",
+        "o": [
+            "Unauthorized cluster access",
+            "Slower pod startup",
+            "Increased storage costs",
+            "Network bandwidth limits"
+        ]
+    },
+    {
+        "q": "What is a serverless function's execution role?",
+        "o": [
+            "An IAM role assumed by the function",
+            "The function's runtime environment",
+            "The function's memory allocation",
+            "The function's timeout setting"
+        ]
+    },
+    {
+        "q": "What is the principle of least privilege for serverless functions?",
+        "o": [
+            "Grant minimal permissions needed",
+            "Use the root account",
+            "Grant all permissions",
+            "Use no permissions"
+        ]
+    },
+    {
+        "q": "What is an event injection attack in serverless?",
+        "o": [
+            "Manipulating event data to alter behavior",
+            "Flooding with many events",
+            "Deleting event sources",
+            "Encrypting event data"
+        ]
+    },
+    {
+        "q": "What is a serverless function's cold start?",
+        "o": [
+            "Initialization delay on first invocation",
+            "The function shutting down",
+            "The function freezing",
+            "A type of error"
+        ]
+    },
+    {
+        "q": "How can cold starts affect security testing?",
+        "o": [
+            "Timing-based tests may be inconsistent",
+            "Functions run faster",
+            "Logs are disabled",
+            "Permissions are elevated"
+        ]
+    },
+    {
+        "q": "What is the purpose of AWS CloudTrail in forensics?",
+        "o": [
+            "Reconstructing API call sequences",
+            "Capturing network packets",
+            "Performing memory analysis",
+            "Scanning disk images"
+        ]
+    },
+    {
+        "q": "What is a forensic image of a cloud disk?",
+        "o": [
+            "A bit-by-bit copy of the volume",
+            "A logical file copy",
+            "A screenshot of files",
+            "A text listing of contents"
+        ]
+    },
+    {
+        "q": "Why is hashing evidence important in forensics?",
+        "o": [
+            "To verify data integrity",
+            "To compress the data",
+            "To encrypt the data",
+            "To delete the data"
+        ]
+    },
+    {
+        "q": "What is a common hashing algorithm used in forensics?",
+        "o": [
+            "SHA-256",
+            "AES-256",
+            "RSA-4096",
+            "Base64"
+        ]
+    },
+    {
+        "q": "What is volatility in cloud forensics?",
+        "o": [
+            "Data that changes or disappears quickly",
+            "A type of malware",
+            "A forensic tool",
+            "A network attack"
+        ]
+    },
+    {
+        "q": "What is an example of volatile data in cloud forensics?",
+        "o": [
+            "RAM contents",
+            "Disk snapshot",
+            "S3 bucket data",
+            "RDS database"
+        ]
+    },
+    {
+        "q": "What is a multi-cloud identity federation?",
+        "o": [
+            "Trust relationships between cloud providers",
+            "Merging two clouds into one",
+            "Physical identity cards",
+            "Biometric authentication"
+        ]
+    },
+    {
+        "q": "What is a challenge of consistent policy enforcement across clouds?",
+        "o": [
+            "Each cloud has its own policy language",
+            "Policies are universal",
+            "Policies cannot be copied",
+            "Policies are free"
+        ]
+    },
+    {
+        "q": "What is a CASB?",
+        "o": [
+            "Cloud Access Security Broker",
+            "Computer Anti-Spyware Block",
+            "Central Authentication Service Base",
+            "Cloud Application Security Bridge"
+        ]
+    },
+    {
+        "q": "What is the role of a CASB in multi-cloud security?",
+        "o": [
+            "Enforce security policies across services",
+            "Run container workloads",
+            "Store backup data",
+            "Write application code"
+        ]
+    },
+    {
+        "q": "What is a shadow IT risk in cloud?",
+        "o": [
+            "Unauthorized cloud service usage",
+            "Dark mode interface",
+            "Night-time attacks",
+            "Hidden files"
+        ]
+    },
+    {
+        "q": "What is the purpose of a cloud security assessment?",
+        "o": [
+            "Identify gaps and weaknesses",
+            "Increase cloud spending",
+            "Hire more staff",
+            "Rewrite all code"
+        ]
+    },
+    {
+        "q": "What is the difference between a vulnerability scan and a penetration test?",
+        "o": [
+            "Automated vs. manual exploitation",
+            "They are identical",
+            "One is free, one is paid",
+            "One is fast, one is slow"
+        ]
+    },
+    {
+        "q": "What is a false positive in cloud security testing?",
+        "o": [
+            "An alert for a non-existent issue",
+            "A real vulnerability",
+            "A successful exploit",
+            "A missed finding"
+        ]
+    },
+    {
+        "q": "What is the purpose of AWS GuardDuty?",
+        "o": [
+            "Intelligent threat detection",
+            "Firewall management",
+            "Backup scheduling",
+            "Cost optimization"
+        ]
+    },
+    {
+        "q": "What type of data does GuardDuty analyze?",
+        "o": [
+            "CloudTrail, VPC Flow, and DNS logs",
+            "Application source code",
+            "User profile pictures",
+            "Billing reports"
+        ]
+    },
+    {
+        "q": "What is Azure Security Center?",
+        "o": [
+            "A unified security management system",
+            "A virtual machine",
+            "A database service",
+            "A content delivery network"
+        ]
+    },
+    {
+        "q": "What is GCP Cloud Security Command Center?",
+        "o": [
+            "A central dashboard for security findings",
+            "A command-line tool",
+            "A compute engine",
+            "A storage bucket"
+        ]
+    },
+    {
+        "q": "What is a container image vulnerability scan looking for?",
+        "o": [
+            "Known CVEs in installed packages",
+            "Syntax errors in code",
+            "Network misconfigurations",
+            "User permission issues"
+        ]
+    },
+    {
+        "q": "What is a CVE?",
+        "o": [
+            "Common Vulnerabilities and Exposures",
+            "Cloud Virtual Environment",
+            "Container Version Error",
+            "Critical Vulnerability Exploit"
+        ]
+    },
+    {
+        "q": "What is a Docker Content Trust?",
+        "o": [
+            "Image signing for authenticity",
+            "User trust levels",
+            "Network encryption",
+            "Access control lists"
+        ]
+    },
+    {
+        "q": "Why is image signing important in container security?",
+        "o": [
+            "Ensures image integrity and origin",
+            "Makes images run faster",
+            "Reduces image size",
+            "Increases storage limits"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes PodSecurityPolicy?",
+        "o": [
+            "Admission controller for pod security",
+            "Network security group",
+            "User password policy",
+            "Storage security policy"
+        ]
+    },
+    {
+        "q": "What does a PodSecurityPolicy restrict?",
+        "o": [
+            "Privileged containers and host access",
+            "Pod names",
+            "Image sizes",
+            "Container colors"
+        ]
+    },
+    {
+        "q": "What is Kubernetes RBAC authorization?",
+        "o": [
+            "Controlling access based on roles",
+            "Random password generation",
+            "Encrypted communication",
+            "Backup authorization"
+        ]
+    },
+    {
+        "q": "What is a Role and RoleBinding in Kubernetes RBAC?",
+        "o": [
+            "Define permissions and assign them",
+            "A type of pod",
+            "A network rule",
+            "A storage class"
+        ]
+    },
+    {
+        "q": "What is a serverless function's timeout setting?",
+        "o": [
+            "Maximum execution duration",
+            "Minimum execution duration",
+            "Cold start duration",
+            "Warm-up period"
+        ]
+    },
+    {
+        "q": "How can long timeouts affect serverless security?",
+        "o": [
+            "Longer window for resource exhaustion attacks",
+            "Functions run faster",
+            "Permissions increase",
+            "Logs are disabled"
+        ]
+    },
+    {
+        "q": "What is a serverless function's memory setting?",
+        "o": [
+            "Allocated RAM for the function",
+            "Storage space",
+            "Network bandwidth",
+            "CPU cores"
+        ]
+    },
+    {
+        "q": "How does memory setting affect serverless security?",
+        "o": [
+            "Higher memory may enable more complex attacks",
+            "Functions run slower",
+            "Permissions are reduced",
+            "Logging is disabled"
+        ]
+    },
+    {
+        "q": "What is an AWS Lambda layer?",
+        "o": [
+            "A distribution mechanism for libraries",
+            "A security group",
+            "A VPC component",
+            "A log stream"
+        ]
+    },
+    {
+        "q": "What is the security risk of using public Lambda layers?",
+        "o": [
+            "They may contain malicious code",
+            "They cost more money",
+            "They are read-only",
+            "They cannot be updated"
+        ]
+    },
+    {
+        "q": "What is a digital forensic artifact in the cloud?",
+        "o": [
+            "Any piece of evidence",
+            "A hacker tool",
+            "A type of malware",
+            "A security control"
+        ]
+    },
+    {
+        "q": "What is an example of a cloud forensic artifact?",
+        "o": [
+            "Launch configuration of an instance",
+            "The instance's color",
+            "The user's name",
+            "The billing address"
+        ]
+    },
+    {
+        "q": "What is the purpose of time-stamping evidence?",
+        "o": [
+            "Establish a timeline of events",
+            "Make evidence older",
+            "Encrypt the evidence",
+            "Delete old evidence"
+        ]
+    },
+    {
+        "q": "What is a log file integrity check?",
+        "o": [
+            "Verifying logs haven't been altered",
+            "Making logs readable",
+            "Compressing log files",
+            "Deleting old logs"
+        ]
+    },
+    {
+        "q": "What is AWS CloudTrail log file validation?",
+        "o": [
+            "Digital signatures to detect tampering",
+            "Log file compression",
+            "Log file encryption",
+            "Log file deletion"
+        ]
+    },
+    {
+        "q": "What is the purpose of AWS VPC Flow Logs in forensics?",
+        "o": [
+            "Trace network traffic patterns",
+            "Track user logins",
+            "Monitor CPU usage",
+            "Track disk space"
+        ]
+    },
+    {
+        "q": "What information does a VPC Flow Log contain?",
+        "o": [
+            "Source IP, destination IP, port, protocol",
+            "User passwords",
+            "File contents",
+            "Application code"
+        ]
+    },
+    {
+        "q": "What is a multi-cloud network architecture?",
+        "o": [
+            "Networks spanning multiple providers",
+            "A single VPC",
+            "A local network",
+            "A home router"
+        ]
+    },
+    {
+        "q": "What is a challenge of multi-cloud networking security?",
+        "o": [
+            "Consistent encryption across providers",
+            "Single cloud console",
+            "Unified billing",
+            "One support team"
+        ]
+    },
+    {
+        "q": "What is a VPN in multi-cloud connectivity?",
+        "o": [
+            "Encrypted tunnel between networks",
+            "A physical cable",
+            "A wireless signal",
+            "A satellite link"
+        ]
+    },
+    {
+        "q": "What is a direct interconnect in multi-cloud?",
+        "o": [
+            "Private physical connection between providers",
+            "Public internet routing",
+            "Dial-up modem",
+            "Cellular network"
+        ]
+    },
+    {
+        "q": "What is the principle of infrastructure immutability?",
+        "o": [
+            "Resources are replaced, not modified",
+            "Resources never change",
+            "Resources are permanent",
+            "Resources are physical"
+        ]
+    },
+    {
+        "q": "How does immutability improve security?",
+        "o": [
+            "Prevents configuration drift",
+            "Stops all attacks",
+            "Encrypts all data",
+            "Slows down hackers"
+        ]
+    },
+    {
+        "q": "What is configuration drift?",
+        "o": [
+            "Unauthorized changes over time",
+            "Moving data between regions",
+            "Changing cloud providers",
+            "Updating software"
+        ]
+    },
+    {
+        "q": "What tool can detect configuration drift?",
+        "o": [
+            "AWS Config",
+            "AWS Lambda",
+            "Amazon S3",
+            "AWS EC2"
+        ]
+    },
+    {
+        "q": "What is a cloud security control?",
+        "o": [
+            "A safeguard to mitigate risk",
+            "A type of attack",
+            "A vulnerability",
+            "A hacker tool"
+        ]
+    },
+    {
+        "q": "What is a preventive security control?",
+        "o": [
+            "Stops attacks before they happen",
+            "Detects attacks in progress",
+            "Responds after an attack",
+            "Recovers from attacks"
+        ]
+    },
+    {
+        "q": "What is a detective security control?",
+        "o": [
+            "Identifies security events",
+            "Prevents attacks",
+            "Corrects issues",
+            "Restores services"
+        ]
+    },
+    {
+        "q": "What is an example of a preventive control?",
+        "o": [
+            "IAM policy denying access",
+            "CloudTrail logging",
+            "Security alert",
+            "Incident response"
+        ]
+    },
+    {
+        "q": "What is an example of a detective control?",
+        "o": [
+            "VPC Flow Logs",
+            "Security group rules",
+            "Encryption keys",
+            "Backup snapshots"
+        ]
+    },
+    {
+        "q": "What is the shared responsibility model for containers?",
+        "o": [
+            "Provider secures host, customer secures container",
+            "Provider secures everything",
+            "Customer secures everything",
+            "Security is not shared"
+        ]
+    },
+    {
+        "q": "In container security, who is responsible for the container runtime?",
+        "o": [
+            "Varies by provider and service model",
+            "Always the customer",
+            "Always the provider",
+            "No one"
+        ]
+    },
+    {
+        "q": "What is a container security scanner?",
+        "o": [
+            "Tool to find vulnerabilities in images",
+            "A container runtime",
+            "A network firewall",
+            "An IAM tool"
+        ]
+    },
+    {
+        "q": "What is Clair?",
+        "o": [
+            "An open-source container vulnerability scanner",
+            "A Kubernetes distribution",
+            "A Docker alternative",
+            "A cloud provider"
+        ]
+    },
+    {
+        "q": "What is a seccomp profile in container security?",
+        "o": [
+            "Restricts system calls from containers",
+            "A network profile",
+            "A user profile",
+            "A storage profile"
+        ]
+    },
+    {
+        "q": "What is an AppArmor profile?",
+        "o": [
+            "Mandatory access control for programs",
+            "A type of firewall",
+            "An encryption standard",
+            "A logging tool"
+        ]
+    },
+    {
+        "q": "How do seccomp and AppArmor help container security?",
+        "o": [
+            "Reduce kernel attack surface",
+            "Speed up containers",
+            "Increase memory",
+            "Add more features"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes admission controller?",
+        "o": [
+            "Intercepts API requests for validation",
+            "A type of pod",
+            "A network plugin",
+            "A storage driver"
+        ]
+    },
+    {
+        "q": "How can admission controllers enhance security?",
+        "o": [
+            "Enforce policies before resource creation",
+            "Delete all pods",
+            "Block all traffic",
+            "Encrypt all data"
+        ]
+    },
+    {
+        "q": "What is OPA in Kubernetes security?",
+        "o": [
+            "Open Policy Agent",
+            "Open Port Analyzer",
+            "Object Permission Auditor",
+            "Origin Policy Authenticator"
+        ]
+    },
+    {
+        "q": "What is OPA used for?",
+        "o": [
+            "Policy-based control across the stack",
+            "Network scanning",
+            "Vulnerability detection",
+            "Password cracking"
+        ]
+    },
+    {
+        "q": "What is a serverless function's dead letter queue?",
+        "o": [
+            "Destination for failed event processing",
+            "A queue of dead functions",
+            "A security alert",
+            "A backup queue"
+        ]
+    },
+    {
+        "q": "How can dead letter queues be a security risk?",
+        "o": [
+            "May expose sensitive data in failed events",
+            "They stop all processing",
+            "They delete all data",
+            "They run forever"
+        ]
+    },
+    {
+        "q": "What is serverless function versioning?",
+        "o": [
+            "Managing different code versions",
+            "A type of attack",
+            "A security control",
+            "A logging feature"
+        ]
+    },
+    {
+        "q": "Why is versioning important for serverless security?",
+        "o": [
+            "Allows rollback to secure versions",
+            "Increases function speed",
+            "Reduces memory usage",
+            "Eliminates cold starts"
+        ]
+    },
+    {
+        "q": "What is a cloud forensic investigation?",
+        "o": [
+            "Systematic examination of evidence",
+            "A type of attack",
+            "A security control",
+            "A backup process"
+        ]
+    },
+    {
+        "q": "What is the first step in cloud forensic investigation?",
+        "o": [
+            "Identify and preserve evidence",
+            "Delete all logs",
+            "Rebuild systems",
+            "Notify customers"
+        ]
+    },
+    {
+        "q": "What is the order of volatility in forensics?",
+        "o": [
+            "Collect most volatile data first",
+            "Collect least volatile first",
+            "Collect any data",
+            "Ignore volatility"
+        ]
+    },
+    {
+        "q": "What is more volatile than disk in cloud forensics?",
+        "o": [
+            "RAM",
+            "CPU cache",
+            "Network packets",
+            "All of these"
+        ]
+    },
+    {
+        "q": "What is a cloud metadata service SSRF attack?",
+        "o": [
+            "Forcing a server to fetch metadata credentials",
+            "A type of DDoS attack",
+            "A SQL injection technique",
+            "A phishing campaign"
+        ]
+    },
+    {
+        "q": "Which cloud metadata service version requires HTTP headers for defense?",
+        "o": [
+            "IMDSv2",
+            "IMDSv1",
+            "IPv6 metadata",
+            "API gateway"
+        ]
+    },
+    {
+        "q": "What header does IMDSv2 require to prevent SSRF?",
+        "o": [
+            "X-aws-ec2-metadata-token",
+            "Authorization Bearer",
+            "X-Forwarded-For",
+            "Content-Security-Policy"
+        ]
+    },
+    {
+        "q": "What is a cloud cross-account role assumption attack?",
+        "o": [
+            "Abusing trust policies to access other accounts",
+            "Creating new user accounts",
+            "Deleting IAM roles",
+            "Encrypting cross-account data"
+        ]
+    },
+    {
+        "q": "What is a confused deputy problem in cloud IAM?",
+        "o": [
+            "A privileged entity tricked into misusing authority",
+            "A confused security guard",
+            "A misconfigured firewall",
+            "A DNS resolution error"
+        ]
+    },
+    {
+        "q": "What AWS condition key prevents confused deputy attacks?",
+        "o": [
+            "aws:SourceArn or aws:SourceAccount",
+            "aws:RequestedRegion",
+            "aws:MultiFactorAuthPresent",
+            "aws:SecureTransport"
+        ]
+    },
+    {
+        "q": "What is an S3 bucket policy condition that can be overly permissive?",
+        "o": [
+            "Principal set to asterisk",
+            "Effect set to Deny",
+            "Action set to GetObject",
+            "Resource specific ARN"
+        ]
+    },
+    {
+        "q": "What is a dangerous combination in an S3 ACL?",
+        "o": [
+            "WRITE_ACP permission for authenticated users",
+            "READ permission for bucket owner",
+            "FULL_CONTROL for specific user",
+            "READ_ACP for log delivery"
+        ]
+    },
+    {
+        "q": "What is a cloud formation stack drift?",
+        "o": [
+            "Manual changes outside of IaC templates",
+            "Stack deletion",
+            "Stack creation failure",
+            "Stack update timeout"
+        ]
+    },
+    {
+        "q": "How can stack drift affect security posture?",
+        "o": [
+            "Creates unmanaged vulnerable resources",
+            "Increases deployment speed",
+            "Reduces cloud costs",
+            "Improves audit trails"
+        ]
+    },
+    {
+        "q": "What is a container root filesystem in memory?",
+        "o": [
+            "A writable layer on top of image layers",
+            "The base image only",
+            "The host filesystem",
+            "A network mount"
+        ]
+    },
+    {
+        "q": "What is a Union Filesystem in container context?",
+        "o": [
+            "Combines multiple directories into one",
+            "A database union query",
+            "A network union",
+            "A user group union"
+        ]
+    },
+    {
+        "q": "What is a Docker socket vulnerability?",
+        "o": [
+            "Exposing docker.sock to containers",
+            "A network socket error",
+            "A CPU socket issue",
+            "A memory socket leak"
+        ]
+    },
+    {
+        "q": "What can an attacker do with access to docker.sock?",
+        "o": [
+            "Control the host Docker daemon",
+            "Only list containers",
+            "Only view images",
+            "Only read logs"
+        ]
+    },
+    {
+        "q": "What is a container capability dropping?",
+        "o": [
+            "Removing specific Linux capabilities",
+            "Deleting container features",
+            "Reducing container memory",
+            "Limiting network access"
+        ]
+    },
+    {
+        "q": "What is the security impact of dropping NET_RAW capability?",
+        "o": [
+            "Prevents raw socket packet crafting",
+            "Stops all network traffic",
+            "Disables DNS resolution",
+            "Blocks HTTP requests"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes privilege escalation via pod spec?",
+        "o": [
+            "Setting privileged flag or host mounts",
+            "Changing pod names",
+            "Updating pod labels",
+            "Modifying pod annotations"
+        ]
+    },
+    {
+        "q": "What is a hostPath mount in Kubernetes?",
+        "o": [
+            "Mounting host filesystem into pod",
+            "A network path",
+            "A service path",
+            "A storage class"
+        ]
+    },
+    {
+        "q": "Why is hostPath mount dangerous?",
+        "o": [
+            "Allows pod access to host filesystem",
+            "Slows down pod startup",
+            "Uses more memory",
+            "Increases network latency"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes etcd encryption at rest requirement?",
+        "o": [
+            "Must be manually configured",
+            "Always enabled by default",
+            "Not possible to enable",
+            "Only in managed services"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes anonymous authentication risk?",
+        "o": [
+            "Allowing unauthenticated API access",
+            "Anonymous user login",
+            "Guest container access",
+            "Public image pulling"
+        ]
+    },
+    {
+        "q": "What is a kubelet API exposed risk?",
+        "o": [
+            "Unauthorized node-level access",
+            "Cluster-level access",
+            "Cloud account access",
+            "Storage access"
+        ]
+    },
+    {
+        "q": "What is a serverless function event injection payload?",
+        "o": [
+            "Malicious data in event parameters",
+            "A DDoS attack",
+            "A network packet",
+            "A binary executable"
+        ]
+    },
+    {
+        "q": "What is a serverless function's temporary storage directory?",
+        "o": [
+            "Writable space for runtime data",
+            "Permanent database",
+            "Network file system",
+            "External volume"
+        ]
+    },
+    {
+        "q": "How can temporary storage be abused in serverless?",
+        "o": [
+            "Store malware or exfiltrate data",
+            "Increase function speed",
+            "Reduce cold starts",
+            "Improve logging"
+        ]
+    },
+    {
+        "q": "What is a serverless function's dependency poisoning?",
+        "o": [
+            "Using malicious package versions",
+            "Memory poisoning",
+            "Cache poisoning",
+            "DNS poisoning"
+        ]
+    },
+    {
+        "q": "What is a typical serverless function's maximum execution time?",
+        "o": [
+            "15 minutes for AWS Lambda",
+            "5 minutes for all providers",
+            "1 hour for all providers",
+            "No time limit"
+        ]
+    },
+    {
+        "q": "What is a serverless function's concurrency limit?",
+        "o": [
+            "Maximum parallel executions",
+            "Maximum memory usage",
+            "Maximum storage size",
+            "Maximum code size"
+        ]
+    },
+    {
+        "q": "What can happen when serverless concurrency limits are reached?",
+        "o": [
+            "Requests are throttled or queued",
+            "Functions run faster",
+            "Functions use more memory",
+            "Functions become root"
+        ]
+    },
+    {
+        "q": "What is a cloud forensic artifact in memory?",
+        "o": [
+            "Running processes and network connections",
+            "Disk partitions",
+            "Database tables",
+            "S3 objects"
+        ]
+    },
+    {
+        "q": "How can memory be acquired from a cloud instance?",
+        "o": [
+            "Using tools like LiME or through hypervisor",
+            "Taking a screenshot",
+            "Copying disk files",
+            "Dumping database"
+        ]
+    },
+    {
+        "q": "What is a challenge of memory acquisition in cloud?",
+        "o": [
+            "No physical access to hardware",
+            "Memory is too large",
+            "Memory is encrypted",
+            "Memory is read-only"
+        ]
+    },
+    {
+        "q": "What is a hypervisor-level memory capture?",
+        "o": [
+            "Acquiring VM memory from host",
+            "Capturing network packets",
+            "Saving CPU registers",
+            "Dumping BIOS"
+        ]
+    },
+    {
+        "q": "What is a forensic timeline analysis?",
+        "o": [
+            "Correlating events across time",
+            "Predicting future attacks",
+            "Analyzing code",
+            "Reviewing policies"
+        ]
+    },
+    {
+        "q": "What is log correlation in cloud forensics?",
+        "o": [
+            "Linking events from multiple sources",
+            "Deleting old logs",
+            "Compressing log files",
+            "Encrypting log data"
+        ]
+    },
+    {
+        "q": "What is a challenge of multi-cloud log correlation?",
+        "o": [
+            "Different log formats and timezones",
+            "Too few logs",
+            "Logs are identical",
+            "No logs available"
+        ]
+    },
+    {
+        "q": "What is a common timestamp format in cloud logs?",
+        "o": [
+            "ISO 8601",
+            "Unix timestamp only",
+            "MM-DD-YYYY",
+            "DD-MM-YYYY"
+        ]
+    },
+    {
+        "q": "What is a multi-cloud IAM federation attack surface?",
+        "o": [
+            "Trust relationships between providers",
+            "Single cloud vulnerabilities",
+            "Physical security",
+            "Network cables"
+        ]
+    },
+    {
+        "q": "What is a SAML assertion signing requirement?",
+        "o": [
+            "Must be cryptographically signed",
+            "Must be plain text",
+            "Must be encrypted",
+            "Must be compressed"
+        ]
+    },
+    {
+        "q": "What is a SAML assertion replay attack?",
+        "o": [
+            "Reusing a captured valid assertion",
+            "Creating fake assertions",
+            "Deleting assertions",
+            "Modifying assertions"
+        ]
+    },
+    {
+        "q": "How can SAML replay be prevented?",
+        "o": [
+            "Use short expiration and OneTimeUse conditions",
+            "Use longer expiration times",
+            "Disable signing",
+            "Use plain text"
+        ]
+    },
+    {
+        "q": "What is a cross-cloud key management issue?",
+        "o": [
+            "Key synchronization across providers",
+            "Key generation speed",
+            "Key storage cost",
+            "Key deletion"
+        ]
+    },
+    {
+        "q": "What is a BYOK in cloud security?",
+        "o": [
+            "Bring Your Own Key",
+            "Backup Your Own Keys",
+            "Bind Your Own Key",
+            "Build Your Own Key"
+        ]
+    },
+    {
+        "q": "What is a HYOK in cloud security?",
+        "o": [
+            "Hold Your Own Key",
+            "Harden Your Own Key",
+            "Hash Your Own Key",
+            "Hide Your Own Key"
+        ]
+    },
+    {
+        "q": "What is a cloud security posture management tool?",
+        "o": [
+            "CSPM for misconfiguration detection",
+            "A penetration testing tool",
+            "A vulnerability scanner",
+            "A firewall"
+        ]
+    },
+    {
+        "q": "What is a CIEM in cloud security?",
+        "o": [
+            "Cloud Infrastructure Entitlement Management",
+            "Cloud Identity Encryption Module",
+            "Compute Instance Event Monitor",
+            "Container Image Execution Manager"
+        ]
+    },
+    {
+        "q": "What does CIEM address?",
+        "o": [
+            "Excessive permissions and entitlement risks",
+            "Network misconfigurations",
+            "Container vulnerabilities",
+            "Data encryption"
+        ]
+    },
+    {
+        "q": "What is a CWPP?",
+        "o": [
+            "Cloud Workload Protection Platform",
+            "Cloud Web Proxy Protocol",
+            "Container Workload Patch Process",
+            "Compute Workload Penetration Plan"
+        ]
+    },
+    {
+        "q": "What does CWPP typically protect?",
+        "o": [
+            "VMs, containers, and serverless workloads",
+            "Only physical servers",
+            "Only network devices",
+            "Only user endpoints"
+        ]
+    },
+    {
+        "q": "What is a container escape via kernel exploit?",
+        "o": [
+            "Using kernel vulnerability to break isolation",
+            "Using Docker commands",
+            "Using Kubernetes API",
+            "Using network attacks"
+        ]
+    },
+    {
+        "q": "What is a CVE example for container escape?",
+        "o": [
+            "CVE-2016-5195 (Dirty Cow)",
+            "CVE-2014-0160 (Heartbleed)",
+            "CVE-2017-5638 (Struts)",
+            "CVE-2021-44228 (Log4Shell)"
+        ]
+    },
+    {
+        "q": "What is a Linux namespace type for isolation?",
+        "o": [
+            "Mount, PID, Network, User",
+            "CPU, RAM, Disk",
+            "TCP, UDP, ICMP",
+            "JSON, XML, YAML"
+        ]
+    },
+    {
+        "q": "What is a user namespace in container security?",
+        "o": [
+            "Maps non-root user to root inside container",
+            "Maps all users to root",
+            "Disables all users",
+            "Creates new users"
+        ]
+    },
+    {
+        "q": "What is the benefit of user namespace remapping?",
+        "o": [
+            "Reduces privilege escalation risk",
+            "Increases container speed",
+            "Decreases memory usage",
+            "Improves networking"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes network policy default behavior?",
+        "o": [
+            "Allow all traffic if no policy exists",
+            "Deny all traffic by default",
+            "Allow only internal traffic",
+            "Allow only external traffic"
+        ]
+    },
+    {
+        "q": "What is a zero-trust network policy in Kubernetes?",
+        "o": [
+            "Deny all except explicitly allowed",
+            "Allow all except explicitly denied",
+            "Trust internal traffic",
+            "Trust external traffic"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes service mesh security benefit?",
+        "o": [
+            "mTLS encryption between services",
+            "Faster pod startup",
+            "Larger pod sizes",
+            "More storage options"
+        ]
+    },
+    {
+        "q": "What is Istio's authorization policy?",
+        "o": [
+            "Access control at service mesh level",
+            "Pod security policy",
+            "Network policy",
+            "IAM policy"
+        ]
+    },
+    {
+        "q": "What is a serverless function's VPC configuration risk?",
+        "o": [
+            "Placing function in private subnet without NAT",
+            "Placing function in public subnet",
+            "Using multiple subnets",
+            "Using default VPC"
+        ]
+    },
+    {
+        "q": "What happens to a Lambda function in a VPC without NAT?",
+        "o": [
+            "No internet access",
+            "Faster execution",
+            "More memory available",
+            "Lower cost"
+        ]
+    },
+    {
+        "q": "What is a serverless function's reserved concurrency?",
+        "o": [
+            "Guaranteed execution capacity",
+            "Maximum memory limit",
+            "Maximum storage limit",
+            "Maximum code size"
+        ]
+    },
+    {
+        "q": "How can reserved concurrency be abused?",
+        "o": [
+            "Accidental DoS by using all capacity",
+            "Increasing function speed",
+            "Reducing cold starts",
+            "Improving logging"
+        ]
+    },
+    {
+        "q": "What is a serverless function's dead-letter queue use case?",
+        "o": [
+            "Capture failed events for analysis",
+            "Store successful events",
+            "Queue incoming requests",
+            "Buffer function output"
+        ]
+    },
+    {
+        "q": "What is a forensic challenge with serverless?",
+        "o": [
+            "Ephemeral nature and short logs retention",
+            "Too many logs",
+            "Permanent storage",
+            "Physical access"
+        ]
+    },
+    {
+        "q": "What is a typical log retention period for cloud providers?",
+        "o": [
+            "Varies by service and configuration",
+            "Forever by default",
+            "One day only",
+            "No logs by default"
+        ]
+    },
+    {
+        "q": "What is a forensic imaging challenge for cloud VMs?",
+        "o": [
+            "Large disk sizes and transfer times",
+            "Small disk sizes",
+            "Instant transfer",
+            "No imaging possible"
+        ]
+    },
+    {
+        "q": "What is a forensic snapshot analysis?",
+        "o": [
+            "Examining point-in-time disk copies",
+            "Live memory analysis",
+            "Network packet analysis",
+            "Log file review"
+        ]
+    },
+    {
+        "q": "What can be found in a cloud VM snapshot?",
+        "o": [
+            "Files, deleted files, and system logs",
+            "Only running processes",
+            "Only network connections",
+            "Only CPU state"
+        ]
+    },
+    {
+        "q": "What is a challenge of analyzing encrypted snapshots?",
+        "o": [
+            "Requires access to decryption keys",
+            "Snapshots are too small",
+            "Snapshots are too fast",
+            "Snapshots are public"
+        ]
+    },
+    {
+        "q": "What is a cloud trail log delivery issue?",
+        "o": [
+            "Logs may be delayed or lost",
+            "Logs are instant",
+            "Logs are guaranteed",
+            "Logs are immutable"
+        ]
+    },
+    {
+        "q": "What is a multi-cloud security policy consistency challenge?",
+        "o": [
+            "Translating policies between provider languages",
+            "Policies are identical",
+            "Policies are automatic",
+            "Policies are free"
+        ]
+    },
+    {
+        "q": "What is a terraform security scanning tool?",
+        "o": [
+            "Checkov or tfsec",
+            "Nmap",
+            "Wireshark",
+            "Metasploit"
+        ]
+    },
+    {
+        "q": "What does Checkov scan for in IaC?",
+        "o": [
+            "Misconfigurations and security violations",
+            "Network speed",
+            "CPU performance",
+            "Memory usage"
+        ]
+    },
+    {
+        "q": "What is a dangerous default in terraform AWS provider?",
+        "o": [
+            "Publicly accessible RDS instances",
+            "Encrypted storage",
+            "Private subnets",
+            "VPC flow logs"
+        ]
+    },
+    {
+        "q": "What is a cloud security benchmark standard?",
+        "o": [
+            "CIS AWS Foundations Benchmark",
+            "ISO 9001",
+            "IEEE 802.11",
+            "RFC 1918"
+        ]
+    },
+    {
+        "q": "What does the CIS AWS Foundations Benchmark cover?",
+        "o": [
+            "IAM, logging, monitoring, and networking",
+            "Application code standards",
+            "Physical security",
+            "Employee training"
+        ]
+    },
+    {
+        "q": "What is a PCI DSS requirement for cloud?",
+        "o": [
+            "Encryption of cardholder data",
+            "Public access to databases",
+            "Shared accounts",
+            "Default passwords"
+        ]
+    },
+    {
+        "q": "What is a HIPAA consideration in cloud?",
+        "o": [
+            "BA agreements with cloud providers",
+            "Public health data",
+            "Physical therapy",
+            "Hospital location"
+        ]
+    },
+    {
+        "q": "What is a GDPR data residency requirement?",
+        "o": [
+            "EU data must stay in EU",
+            "Data can go anywhere",
+            "No data restrictions",
+            "Data must be public"
+        ]
+    },
+    {
+        "q": "What is a container image vulnerability severity?",
+        "o": [
+            "Critical, High, Medium, Low",
+            "A, B, C, D",
+            "1, 2, 3, 4",
+            "Red, Yellow, Green"
+        ]
+    },
+    {
+        "q": "What is a CVE score called?",
+        "o": [
+            "CVSS score",
+            "CIA score",
+            "AAA score",
+            "ISO score"
+        ]
+    },
+    {
+        "q": "What is a CVSS vector string?",
+        "o": [
+            "Text representation of vulnerability metrics",
+            "A type of malware",
+            "A network protocol",
+            "An encryption key"
+        ]
+    },
+    {
+        "q": "What is a container registry vulnerability scan frequency?",
+        "o": [
+            "On push and periodically",
+            "Never",
+            "Once a year",
+            "Only manually"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes security context?",
+        "o": [
+            "Pod or container privilege settings",
+            "Security group",
+            "Network policy",
+            "IAM role"
+        ]
+    },
+    {
+        "q": "What can a Kubernetes security context set?",
+        "o": [
+            "User ID, group ID, and capabilities",
+            "Pod name",
+            "Container image",
+            "Service type"
+        ]
+    },
+    {
+        "q": "What is a readOnlyRootFilesystem in security context?",
+        "o": [
+            "Makes container filesystem immutable",
+            "Allows writing everywhere",
+            "Disables filesystem",
+            "Enables network"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes pod security standard?",
+        "o": [
+            "Privileged, Baseline, Restricted",
+            "High, Medium, Low",
+            "Public, Private, Shared",
+            "Gold, Silver, Bronze"
+        ]
+    },
+    {
+        "q": "What does the Restricted pod security level disallow?",
+        "o": [
+            "Privileged containers and hostPath",
+            "All containers",
+            "All network traffic",
+            "All storage"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes OPA Gatekeeper?",
+        "o": [
+            "Admission controller for policy enforcement",
+            "Network firewall",
+            "Log aggregator",
+            "Container runtime"
+        ]
+    },
+    {
+        "q": "What is a constraint template in Gatekeeper?",
+        "o": [
+            "Reusable policy logic",
+            "Pod template",
+            "Service template",
+            "Volume template"
+        ]
+    },
+    {
+        "q": "What is a serverless function's dependency manifest?",
+        "o": [
+            "List of required packages",
+            "Function code",
+            "Event source",
+            "Environment variables"
+        ]
+    },
+    {
+        "q": "What is a software bill of materials for serverless?",
+        "o": [
+            "Inventory of all components and dependencies",
+            "Financial cost report",
+            "Hardware list",
+            "Employee roster"
+        ]
+    },
+    {
+        "q": "Why is SBOM important for serverless security?",
+        "o": [
+            "Tracks vulnerable dependencies",
+            "Increases execution speed",
+            "Reduces memory usage",
+            "Lowers costs"
+        ]
+    },
+    {
+        "q": "What is a serverless function's layer vulnerability?",
+        "o": [
+            "Vulnerabilities in shared layers",
+            "Network layer issues",
+            "Application layer attacks",
+            "Physical layer problems"
+        ]
+    },
+    {
+        "q": "What is a cloud forensic acquisition tool?",
+        "o": [
+            "AWS CLI, Azure CLI, or GCloud SDK",
+            "Wireshark",
+            "Nmap",
+            "Burp Suite"
+        ]
+    },
+    {
+        "q": "What is a cloud privilege escalation via instance profile?",
+        "o": [
+            "Using IMDS to steal role credentials",
+            "Creating a new user account",
+            "Modifying security groups",
+            "Deleting CloudTrail logs"
+        ]
+    },
+    {
+        "q": "What is a sts:AssumeRole abuse in AWS?",
+        "o": [
+            "Assuming roles with overly permissive trust policies",
+            "Creating new storage buckets",
+            "Launching EC2 instances",
+            "Configuring load balancers"
+        ]
+    },
+    {
+        "q": "What is a resource-based policy attack vector?",
+        "o": [
+            "Policies that grant access to external accounts",
+            "Policies that deny all access",
+            "Policies that enforce encryption",
+            "Policies that require MFA"
+        ]
+    },
+    {
+        "q": "What is a S3 bucket ACL modification attack?",
+        "o": [
+            "Granting write access to external users",
+            "Enabling versioning on a bucket",
+            "Adding lifecycle policies",
+            "Enabling default encryption"
+        ]
+    },
+    {
+        "q": "What is a cloud malware persistence mechanism?",
+        "o": [
+            "Lambda functions triggered by events",
+            "Manual user login",
+            "Physical USB drive",
+            "BIOS infection"
+        ]
+    },
+    {
+        "q": "What is a cryptojacking attack in cloud?",
+        "o": [
+            "Unauthorized cryptocurrency mining",
+            "Encrypting files for ransom",
+            "Stealing encryption keys",
+            "Breaking cryptographic algorithms"
+        ]
+    },
+    {
+        "q": "What is a cloud data exfiltration technique?",
+        "o": [
+            "Uploading data to public bucket",
+            "Using MFA-protected API calls",
+            "Enabling encryption at rest",
+            "Taking database snapshots"
+        ]
+    },
+    {
+        "q": "What is a VPC peering abuse scenario?",
+        "o": [
+            "Accessing resources across peered VPCs",
+            "Blocking all network traffic",
+            "Encrypting VPC flow logs",
+            "Creating new subnets"
+        ]
+    },
+    {
+        "q": "What is a transitive trust risk in cloud networking?",
+        "o": [
+            "Access via chained VPC peering connections",
+            "Direct internet access",
+            "VPN tunnel encryption",
+            "Direct Connect security"
+        ]
+    },
+    {
+        "q": "What is a container runtime security monitoring?",
+        "o": [
+            "Detecting anomalous container behavior",
+            "Building container images",
+            "Pushing to registry",
+            "Writing Dockerfiles"
+        ]
+    },
+    {
+        "q": "What is a Falco rule in container security?",
+        "o": [
+            "Detect suspicious syscalls",
+            "Build a container",
+            "Run a container",
+            "Stop all containers"
+        ]
+    },
+    {
+        "q": "What is a container drift detection?",
+        "o": [
+            "Changes to container filesystem at runtime",
+            "Container migration",
+            "Container version change",
+            "Container image update"
+        ]
+    },
+    {
+        "q": "What is a malicious container image backdoor?",
+        "o": [
+            "Embedded reverse shell in image",
+            "Large image size",
+            "Slow build process",
+            "Missing Dockerfile"
+        ]
+    },
+    {
+        "q": "What is a Docker build cache poisoning?",
+        "o": [
+            "Injecting malicious layers into cache",
+            "Deleting build cache",
+            "Speeding up builds",
+            "Reducing image size"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes RBAC privilege escalation?",
+        "o": [
+            "Creating roles and bindings with excessive permissions",
+            "Deleting pods",
+            "Viewing configmaps",
+            "Listing services"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes cluster-admin role risk?",
+        "o": [
+            "Full control over entire cluster",
+            "Read-only access",
+            "Pod creation only",
+            "Namespace deletion only"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes service account token theft?",
+        "o": [
+            "Extracting token from compromised pod",
+            "Creating new service account",
+            "Deleting service account",
+            "Listing service accounts"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes MITM attack on pod communication?",
+        "o": [
+            "Intercepting traffic in non-mTLS mesh",
+            "DNS spoofing external sites",
+            "ARP poisoning in host network",
+            "Session hijacking of user"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes API server SSRF?",
+        "o": [
+            "Requesting internal cluster resources via API",
+            "External DDoS attack",
+            "SQL injection on database",
+            "Cross-site scripting on dashboard"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes webhook configuration hijacking?",
+        "o": [
+            "Modifying admission webhooks",
+            "Creating new pods",
+            "Deleting namespaces",
+            "Viewing secrets"
+        ]
+    },
+    {
+        "q": "What is a serverless function's event source mapping poisoning?",
+        "o": [
+            "Malicious events from compromised source",
+            "Deleting event source",
+            "Creating new source",
+            "Disabling source"
+        ]
+    },
+    {
+        "q": "What is a serverless function's environment variable leakage?",
+        "o": [
+            "Exposed in logs or error messages",
+            "Stored in encrypted form",
+            "Hidden from function",
+            "Accessible only at runtime"
+        ]
+    },
+    {
+        "q": "What is a serverless function's code injection via dependency?",
+        "o": [
+            "Malicious package execution during build",
+            "Runtime code eval",
+            "SQL injection",
+            "Command injection"
+        ]
+    },
+    {
+        "q": "What is a serverless function's side-channel timing attack?",
+        "o": [
+            "Inferring secrets from execution time",
+            "DDoS attack",
+            "Man-in-the-middle",
+            "DNS poisoning"
+        ]
+    },
+    {
+        "q": "What is a serverless function's warm container reuse risk?",
+        "o": [
+            "Previous execution data leakage",
+            "Faster execution time",
+            "Lower memory usage",
+            "Reduced cold starts"
+        ]
+    },
+    {
+        "q": "What is a forensic analysis of compromised container?",
+        "o": [
+            "Examining image layers and runtime artifacts",
+            "Physical memory only",
+            "Network packets only",
+            "CPU cache only"
+        ]
+    },
+    {
+        "q": "What is a Docker container diff analysis?",
+        "o": [
+            "Comparing container filesystem to image",
+            "Network packet diff",
+            "CPU usage diff",
+            "Memory diff"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes audit log analysis?",
+        "o": [
+            "Reviewing API request sequences",
+            "Network traffic analysis",
+            "Container runtime logs",
+            "Application logs"
+        ]
+    },
+    {
+        "q": "What is a forensic timeline reconstruction from CloudTrail?",
+        "o": [
+            "Ordering API calls to trace attacker actions",
+            "Deleting old logs",
+            "Compressing log files",
+            "Encrypting log data"
+        ]
+    },
+    {
+        "q": "What is a challenge of investigating compromised IAM credentials?",
+        "o": [
+            "Distinguishing legitimate from malicious usage",
+            "Too few API calls",
+            "No logs available",
+            "All access is denied"
+        ]
+    },
+    {
+        "q": "What is a cloud forensic artifact in serverless?",
+        "o": [
+            "Execution logs and CloudWatch logs",
+            "Physical memory dump",
+            "Disk image",
+            "Network capture"
+        ]
+    },
+    {
+        "q": "What is a forensic challenge with ephemeral containers?",
+        "o": [
+            "Short lifespan limits evidence collection",
+            "Too much data",
+            "Permanent storage",
+            "Physical access"
+        ]
+    },
+    {
+        "q": "What is a multi-cloud IAM federation misconfiguration?",
+        "o": [
+            "Overly broad trust policies",
+            "Specific role assignments",
+            "Short token lifetimes",
+            "MFA requirements"
+        ]
+    },
+    {
+        "q": "What is a SAML XML signature wrapping attack?",
+        "o": [
+            "Manipulating XML to bypass signature validation",
+            "Stealing private keys",
+            "DDoS attack",
+            "DNS poisoning"
+        ]
+    },
+    {
+        "q": "What is a cross-cloud identity propagation risk?",
+        "o": [
+            "Stolen token used across providers",
+            "Local account compromise",
+            "Physical theft",
+            "Social engineering"
+        ]
+    },
+    {
+        "q": "What is a multi-cloud KMS key synchronization issue?",
+        "o": [
+            "Key material exposure during transfer",
+            "Key generation speed",
+            "Key storage cost",
+            "Key deletion lag"
+        ]
+    },
+    {
+        "q": "What is a cloud cryptanalysis risk?",
+        "o": [
+            "Weak encryption algorithm usage",
+            "Strong encryption",
+            "Long key lengths",
+            "Hardware security modules"
+        ]
+    },
+    {
+        "q": "What is a cloud side-channel attack?",
+        "o": [
+            "Inferring data from shared resource usage",
+            "Direct memory access",
+            "Network sniffing",
+            "Phishing emails"
+        ]
+    },
+    {
+        "q": "What is a hypervisor breakout risk in cloud?",
+        "o": [
+            "Escaping VM to access host",
+            "Container escape",
+            "Application vulnerability",
+            "Network attack"
+        ]
+    },
+    {
+        "q": "What is a cloud orchestration tool vulnerability?",
+        "o": [
+            "Exploiting Terraform or CloudFormation bugs",
+            "Physical security flaw",
+            "Network cable issue",
+            "Power supply failure"
+        ]
+    },
+    {
+        "q": "What is a CI/CD pipeline cloud misconfiguration?",
+        "o": [
+            "Exposed secrets in build logs",
+            "Fast build times",
+            "Automated testing",
+            "Code review process"
+        ]
+    },
+    {
+        "q": "What is a GitHub Actions cloud credential leak?",
+        "o": [
+            "Secrets exposed in workflow logs",
+            "Fast execution",
+            "Matrix builds",
+            "Caching dependencies"
+        ]
+    },
+    {
+        "q": "What is a cloud API rate limiting bypass?",
+        "o": [
+            "Distributed attacks across accounts",
+            "Single IP brute force",
+            "Password spraying",
+            "Credential stuffing"
+        ]
+    },
+    {
+        "q": "What is a cloud WAF evasion technique?",
+        "o": [
+            "Encoding payloads to bypass rules",
+            "Direct IP access",
+            "DDoS attack",
+            "SQL injection"
+        ]
+    },
+    {
+        "q": "What is a cloud CDN origin exposure?",
+        "o": [
+            "Direct access to origin server bypassing WAF",
+            "Cached content theft",
+            "CDN DDoS",
+            "SSL certificate issue"
+        ]
+    },
+    {
+        "q": "What is a container image trust verification?",
+        "o": [
+            "Checking signatures before deployment",
+            "Pulling latest tag",
+            "Building locally",
+            "Scanning for CVEs"
+        ]
+    },
+    {
+        "q": "What is a Sigstore in container security?",
+        "o": [
+            "Software signing and transparency",
+            "Container runtime",
+            "Orchestration tool",
+            "Network plugin"
+        ]
+    },
+    {
+        "q": "What is a cosign tool used for?",
+        "o": [
+            "Signing and verifying container images",
+            "Building images",
+            "Running containers",
+            "Scanning vulnerabilities"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes image policy webhook?",
+        "o": [
+            "Enforce image signatures or sources",
+            "Network policy",
+            "Security context",
+            "Resource quota"
+        ]
+    },
+    {
+        "q": "What is a Kyverno policy in Kubernetes?",
+        "o": [
+            "Kubernetes-native policy engine",
+            "Network plugin",
+            "Container runtime",
+            "Storage driver"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes Pod Security Standards replacement for PSP?",
+        "o": [
+            "Pod Security Admission",
+            "Network policies",
+            "RBAC roles",
+            "Resource quotas"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes Pod Security Admission mode?",
+        "o": [
+            "Enforce, Audit, Warn",
+            "Allow, Deny, Log",
+            "Create, Read, Update",
+            "Public, Private, Shared"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes namespace default service account risk?",
+        "o": [
+            "Mounted token with excessive permissions",
+            "No token mounted",
+            "Read-only token",
+            "Expired token"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes automountServiceAccountToken setting?",
+        "o": [
+            "Controls if token is mounted automatically",
+            "Token expiration time",
+            "Token permissions",
+            "Token renewal"
+        ]
+    },
+    {
+        "q": "What is a serverless function's runtime language vulnerability?",
+        "o": [
+            "Vulnerabilities in Node.js or Python runtime",
+            "Function timeout",
+            "Memory limit",
+            "Concurrency limit"
+        ]
+    },
+    {
+        "q": "What is a serverless function's custom runtime risk?",
+        "o": [
+            "Unpatched or malicious runtime",
+            "Standard runtime",
+            "Managed runtime",
+            "Official runtime"
+        ]
+    },
+    {
+        "q": "What is a serverless function's code signing requirement?",
+        "o": [
+            "Ensure code integrity and origin",
+            "Faster execution",
+            "Lower memory",
+            "Reduced cold starts"
+        ]
+    },
+    {
+        "q": "What is a serverless function's tracing data exposure?",
+        "o": [
+            "Sensitive data in X-Ray traces",
+            "Function logs",
+            "Error messages",
+            "CloudWatch metrics"
+        ]
+    },
+    {
+        "q": "What is a serverless function's catastrophic backtracking?",
+        "o": [
+            "ReDoS via malicious regex input",
+            "Infinite loop",
+            "Memory leak",
+            "Timeout error"
+        ]
+    },
+    {
+        "q": "What is a forensic challenge with AWS Lambda ephemeral storage?",
+        "o": [
+            "Data lost after function execution",
+            "Permanent storage",
+            "Too much storage",
+            "Encrypted storage"
+        ]
+    },
+    {
+        "q": "What is a forensic analysis of CloudFront logs?",
+        "o": [
+            "Identifying source IPs and request patterns",
+            "Server CPU usage",
+            "Database queries",
+            "Memory dumps"
+        ]
+    },
+    {
+        "q": "What is a forensic value of AWS CloudTrail Insights?",
+        "o": [
+            "Detects unusual API activity",
+            "Network packet capture",
+            "Disk imaging",
+            "Memory analysis"
+        ]
+    },
+    {
+        "q": "What is a multi-cloud forensic investigation framework challenge?",
+        "o": [
+            "Different evidence formats and access methods",
+            "Too many tools",
+            "Too few tools",
+            "No evidence available"
+        ]
+    },
+    {
+        "q": "What is a cross-cloud data sovereignty issue in forensics?",
+        "o": [
+            "Legal restrictions on data movement",
+            "Technical transfer speed",
+            "Storage costs",
+            "Encryption standards"
+        ]
+    },
+    {
+        "q": "What is a legal hold in cloud forensics?",
+        "o": [
+            "Preserving data for legal proceedings",
+            "Deleting all data",
+            "Encrypting all data",
+            "Sharing all data"
+        ]
+    },
+    {
+        "q": "What is a cloud forensic expert witness role?",
+        "o": [
+            "Testify about findings in court",
+            "Conduct penetration tests",
+            "Write security policies",
+            "Configure firewalls"
+        ]
+    },
+    {
+        "q": "What is a blockchain cloud security application?",
+        "o": [
+            "Immutable audit logs",
+            "Faster compute",
+            "Cheaper storage",
+            "Better networking"
+        ]
+    },
+    {
+        "q": "What is a confidential computing cloud feature?",
+        "o": [
+            "Encrypting data in use",
+            "Data at rest encryption",
+            "Data in transit encryption",
+            "Data masking"
+        ]
+    },
+    {
+        "q": "What is a TEE in cloud security?",
+        "o": [
+            "Trusted Execution Environment",
+            "Total Encryption Engine",
+            "Traffic Encryption Endpoint",
+            "Token Exchange Environment"
+        ]
+    },
+    {
+        "q": "What is a enclave in confidential computing?",
+        "o": [
+            "Hardware-isolated secure region",
+            "Network segment",
+            "Database partition",
+            "Storage container"
+        ]
+    },
+    {
+        "q": "What is a cloud HSM advantage?",
+        "o": [
+            "FIPS 140-2 validated hardware",
+            "Software-based keys",
+            "Shared keys",
+            "No key management"
+        ]
+    },
+    {
+        "q": "What is a cloud key rotation policy requirement?",
+        "o": [
+            "Automated rotation at defined intervals",
+            "Never rotate keys",
+            "Manual rotation yearly",
+            "Rotation only on compromise"
+        ]
+    },
+    {
+        "q": "What is a cloud data classification challenge?",
+        "o": [
+            "Identifying sensitive data across services",
+            "Too much encryption",
+            "Too few labels",
+            "Simple classification"
+        ]
+    },
+    {
+        "q": "What is a cloud DLP tool function?",
+        "o": [
+            "Detect and prevent data leakage",
+            "Monitor network traffic",
+            "Scan for vulnerabilities",
+            "Manage identities"
+        ]
+    },
+    {
+        "q": "What is a CASB's shadow IT discovery capability?",
+        "o": [
+            "Identify unauthorized cloud services",
+            "Block all cloud services",
+            "Allow all services",
+            "Monitor approved services"
+        ]
+    },
+    {
+        "q": "What is a cloud security orchestration use case?",
+        "o": [
+            "Automated incident response",
+            "Manual ticket creation",
+            "Email alerts only",
+            "No automation"
+        ]
+    },
+    {
+        "q": "What is a SOAR platform in cloud security?",
+        "o": [
+            "Security Orchestration Automation Response",
+            "Secure Object Access Registry",
+            "System Orchestration and Recovery",
+            "Security Operations Analysis Report"
+        ]
+    },
+    {
+        "q": "What is a cloud deception technology example?",
+        "o": [
+            "Honeytokens and honeypots",
+            "Firewalls",
+            "Encryption",
+            "Backups"
+        ]
+    },
+    {
+        "q": "What is a cloud honeytoken purpose?",
+        "o": [
+            "Alert when fake credential is used",
+            "Encrypt data",
+            "Authenticate users",
+            "Back up files"
+        ]
+    },
+    {
+        "q": "What is a cloud threat intelligence feed?",
+        "o": [
+            "Indicators of compromise for cloud",
+            "Weather forecast",
+            "Stock market data",
+            "Traffic reports"
+        ]
+    },
+    {
+        "q": "What is a MITRE ATT&CK for Cloud matrix?",
+        "o": [
+            "Tactics and techniques for cloud attacks",
+            "Cloud pricing model",
+            "Compliance standard",
+            "Network protocol"
+        ]
+    },
+    {
+        "q": "What is a cloud initial access technique per MITRE?",
+        "o": [
+            "Compromised credentials",
+            "Physical intrusion",
+            "USB drop",
+            "Social media"
+        ]
+    },
+    {
+        "q": "What is a cloud privilege escalation technique?",
+        "o": [
+            "Modifying IAM policies",
+            "Deleting logs",
+            "Exfiltrating data",
+            "Persistence"
+        ]
+    },
+    {
+        "q": "What is a cloud defense evasion technique?",
+        "o": [
+            "Disabling CloudTrail logging",
+            "Using MFA",
+            "Enabling encryption",
+            "Patching systems"
+        ]
+    },
+    {
+        "q": "What is a cloud credential access technique?",
+        "o": [
+            "Retrieving from instance metadata",
+            "Physical theft",
+            "Keylogger",
+            "Shoulder surfing"
+        ]
+    },
+    {
+        "q": "What is a cloud lateral movement technique?",
+        "o": [
+            "Moving from compromised resource to another",
+            "External attack",
+            "Physical movement",
+            "User relocation"
+        ]
+    },
+    {
+        "q": "What is a cloud collection technique?",
+        "o": [
+            "Gathering data from databases",
+            "Deleting data",
+            "Encrypting data",
+            "Modifying data"
+        ]
+    },
+    {
+        "q": "What is a cloud exfiltration technique?",
+        "o": [
+            "Transferring data out of account",
+            "Backing up data",
+            "Archiving data",
+            "Compressing data"
+        ]
+    },
+    {
+        "q": "What is a cloud impact technique?",
+        "o": [
+            "Resource hijacking or destruction",
+            "Normal operation",
+            "Performance improvement",
+            "Cost reduction"
+        ]
+    },
+    {
+        "q": "What is a penetration testing methodology for cloud?",
+        "o": [
+            "PTES or OWASP Cloud Testing Guide",
+            "Waterfall model",
+            "Agile development",
+            "Scrum meetings"
+        ]
+    },
+    {
+        "q": "What is a cloud pentest scope consideration?",
+        "o": [
+            "Provider permission for certain tests",
+            "Testing all systems",
+            "No limitations",
+            "Testing only on-premises"
+        ]
+    },
+    {
+        "q": "What is a prohibited cloud pentest activity?",
+        "o": [
+            "Denial of service attacks",
+            "Port scanning",
+            "Vulnerability scanning",
+            "Password guessing"
+        ]
+    },
+    {
+        "q": "What is a cloud pentest responsible disclosure?",
+        "o": [
+            "Report findings to vendor first",
+            "Public disclosure immediately",
+            "Sell to third parties",
+            "Ignore findings"
+        ]
+    },
+    {
+        "q": "What is a cloud security assessment report component?",
+        "o": [
+            "Executive summary and findings",
+            "Only technical data",
+            "Only financial data",
+            "Only user names"
+        ]
+    },
+    {
+        "q": "What is a cloud risk scoring methodology?",
+        "o": [
+            "Likelihood and impact analysis",
+            "Random assignment",
+            "Alphabetical order",
+            "Chronological order"
+        ]
+    },
+    {
+        "q": "What is a cloud security control gap?",
+        "o": [
+            "Missing or ineffective control",
+            "Excessive control",
+            "Perfect control",
+            "Automated control"
+        ]
+    },
+    {
+        "q": "What is a cloud remediation priority factor?",
+        "o": [
+            "Criticality and exploitability",
+            "Ease of fix only",
+            "Cost only",
+            "Time only"
+        ]
+    },
+    {
+        "q": "What is a sophisticated cloud cross-account pivot technique?",
+        "o": [
+            "Abusing delegated administration permissions",
+            "Simple bucket listing",
+            "Basic port scanning",
+            "Default credential use"
+        ]
+    },
+    {
+        "q": "What is a cloud service provider API backward compatibility risk?",
+        "o": [
+            "Deprecated insecure API versions remain accessible",
+            "New API features",
+            "API documentation updates",
+            "SDK improvements"
+        ]
+    },
+    {
+        "q": "What is a cloud control plane data reflection attack?",
+        "o": [
+            "Using cloud APIs to exfiltrate data via logs",
+            "Direct database access",
+            "Network sniffing",
+            "Physical theft"
+        ]
+    },
+    {
+        "q": "What is a sophisticated IMDSv2 bypass technique?",
+        "o": [
+            "Exploiting applications with token access",
+            "Direct IP request",
+            "ARP spoofing",
+            "DNS poisoning"
+        ]
+    },
+    {
+        "q": "What is a cloud service endpoint policy enforcement bypass?",
+        "o": [
+            "Using alternative endpoints or regions",
+            "Direct IP access",
+            "VPN tunneling",
+            "Proxy servers"
+        ]
+    },
+    {
+        "q": "What is a cloud VPC traffic mirroring attack?",
+        "o": [
+            "Redirecting traffic to attacker-controlled instance",
+            "Packet sniffing only",
+            "DNS hijacking",
+            "BGP hijacking"
+        ]
+    },
+    {
+        "q": "What is a container runtime runc vulnerability impact?",
+        "o": [
+            "Container escape to host",
+            "Image corruption",
+            "Build failure",
+            "Registry push error"
+        ]
+    },
+    {
+        "q": "What is a CVE-2019-5736 runc attack?",
+        "o": [
+            "Overwriting host runc binary from container",
+            "Network DoS",
+            "Memory leak",
+            "CPU exhaustion"
+        ]
+    },
+    {
+        "q": "What is a container overlay filesystem vulnerability?",
+        "o": [
+            "Inode exhaustion or filesystem corruption",
+            "Network packet loss",
+            "CPU throttling",
+            "Memory pressure"
+        ]
+    },
+    {
+        "q": "What is a Docker image history information leak?",
+        "o": [
+            "Sensitive data in image layers",
+            "Image size",
+            "Image tag",
+            "Image creation date"
+        ]
+    },
+    {
+        "q": "What is a multi-stage build security benefit?",
+        "o": [
+            "Reducing attack surface by excluding build tools",
+            "Faster builds",
+            "Smaller images only",
+            "Better caching"
+        ]
+    },
+    {
+        "q": "What is a distroless container image advantage?",
+        "o": [
+            "Minimal packages reducing vulnerabilities",
+            "Easier debugging",
+            "More tools available",
+            "Larger image size"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes kubelet credential provider?",
+        "o": [
+            "Dynamic image pull credentials",
+            "Static secrets",
+            "Basic auth",
+            "Bearer tokens"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes node compromise impact?",
+        "o": [
+            "Access to all pods on that node",
+            "Cluster-wide admin access",
+            "Cloud account access",
+            "Storage system access"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes daemonset privilege escalation?",
+        "o": [
+            "Daemonset runs on all nodes with high privileges",
+            "Pod deletion",
+            "Service exposure",
+            "Configmap update"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes crontab attack via pod?",
+        "o": [
+            "Using hostPath to modify host cron jobs",
+            "Creating new pods",
+            "Deleting services",
+            "Updating secrets"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes container sidecar proxy security benefit?",
+        "o": [
+            "mTLS and policy without app changes",
+            "Faster networking",
+            "Less memory usage",
+            "Smaller pods"
+        ]
+    },
+    {
+        "q": "What is a Kubernetes eBPF security monitoring tool?",
+        "o": [
+            "Cilium or Falco with eBPF",
+            "Traditional iptables",
+            "Userspace proxies",
+            "Legacy IDS"
+        ]
+    },
+    {
+        "q": "What is a serverless function's /tmp storage encryption risk?",
+        "o": [
+            "Data may not be encrypted at rest",
+            "Too much space",
+            "Too fast access",
+            "Permanent storage"
+        ]
+    },
+    {
+        "q": "What is a serverless function's container reuse cross-tenant risk?",
+        "o": [
+            "Previous tenant data in memory or /tmp",
+            "Isolated execution",
+            "Secure sandbox",
+            "Hardware separation"
+        ]
+    },
+    {
+        "q": "What is a serverless function's role chaining attack?",
+        "o": [
+            "Assuming multiple roles across functions",
+            "Single function execution",
+            "Cold start delay",
+            "Concurrency limit"
+        ]
+    },
+    {
+        "q": "What is a serverless function's event injection via poisoned queue?",
+        "o": [
+            "Malicious messages in SQS or SNS",
+            "Direct API call",
+            "HTTP request",
+            "Database trigger"
+        ]
+    },
+    {
+        "q": "What is a serverless function's prototype pollution in Node.js?",
+        "o": [
+            "Modifying object prototype via malicious input",
+            "SQL injection",
+            "Command injection",
+            "XSS attack"
+        ]
+    },
+    {
+        "q": "What is a serverless function's pickle deserialization in Python?",
+        "o": [
+            "RCE via malicious pickle payload",
+            "JSON parsing",
+            "XML parsing",
+            "YAML loading"
+        ]
+    },
+    {
+        "q": "What is a cloud forensic anti-forensic technique?",
+        "o": [
+            "Disabling logs or altering timestamps",
+            "Creating backups",
+            "Enabling encryption",
+            "Patching systems"
+        ]
+    },
+    {
+        "q": "What is a cloud log injection attack?",
+        "o": [
+            "Falsifying log entries",
+            "Reading log files",
+            "Deleting logs",
+            "Compressing logs"
+        ]
+    },
+    {
+        "q": "What is a forensic challenge with ephemeral serverless logs?",
+        "o": [
+            "Default retention may be too short",
+            "Too many logs",
+            "Too detailed",
+            "Easily accessible"
+        ]
+    },
+    {
+        "q": "What is a cloud forensic analysis of compromised KMS keys?",
+        "o": [
+            "Audit key usage and access patterns",
+            "Key deletion",
+            "Key rotation",
+            "Key generation"
+        ]
+    },
+    {
+        "q": "What is a multi-cloud identity federation key compromise impact?",
+        "o": [
+            "Access to all federated clouds",
+            "Single cloud only",
+            "On-premises only",
+            "Physical access only"
+        ]
+    },
+    {
+        "q": "What is a SAML XML signature exclusion attack?",
+        "o": [
+            "Removing signature element from assertion",
+            "Encrypting assertion",
+            "Compressing assertion",
+            "Encoding assertion"
+        ]
+    },
+    {
+        "q": "What is a SAML XML comment injection attack?",
+        "o": [
+            "Using comments to bypass signature validation",
+            "Adding new elements",
+            "Deleting attributes",
+            "Changing values"
+        ]
+    },
+    {
+        "q": "What is a cross-cloud token exchange vulnerability?",
+        "o": [
+            "Weak validation in token translation",
+            "Strong encryption",
+            "Short token lifetime",
+            "MFA requirement"
+        ]
+    },
+    {
+        "q": "What is a cloud cryptographic key material extraction risk?",
+        "o": [
+            "Side-channel or memory dumping",
+            "Direct API call",
+            "Console access",
+            "Backup restore"
+        ]
+    },
+    {
+        "q": "What is a cloud TEE side-channel attack?",
+        "o": [
+            "Inferring secrets from cache or timing",
+            "Direct memory read",
+            "Network sniffing",
+            "API call"
+        ]
+    },
+    {
+        "q": "What is a speculative execution attack in cloud?",
+        "o": [
+            "Spectre or Meltdown type exploits",
+            "Buffer overflow",
+            "SQL injection",
+            "XSS attack"
+        ]
+    },
+    {
+        "q": "What is a cloud hypervisor vulnerability impact?",
+        "o": [
+            "Cross-VM attack potential",
+            "Container escape only",
+            "Application crash",
+            "Network failure"
+        ]
+    },
+    {
+        "q": "What is a cloud supply chain attack vector?",
+        "o": [
+            "Compromised base images or third-party code",
+            "Physical hardware",
+            "Network cables",
+            "Power supply"
+        ]
+    },
+    {
+        "q": "What is a CI/CD pipeline artifact poisoning?",
+        "o": [
+            "Injecting malicious code into build artifacts",
+            "Speeding up builds",
+            "Caching dependencies",
+            "Parallel execution"
+        ]
+    },
+    {
+        "q": "What is a cloud secret management tool sidecar?",
+        "o": [
+            "Inject secrets without code changes",
+            "Hardcoded secrets",
+            "Environment variables only",
+            "Config files"
+        ]
+    },
+    {
+        "q": "What is a HashiCorp Vault dynamic secret benefit?",
+        "o": [
+            "Short-lived credentials per access",
+            "Static passwords",
+            "Long-term keys",
+            "No expiration"
+        ]
+    },
+    {
+        "q": "What is a cloud WAF SQL injection bypass technique?",
+        "o": [
+            "Encoding and obfuscation with comments",
+            "Direct query",
+            "Simple payloads",
+            "Standard attacks"
+        ]
+    },
+    {
+        "q": "What is a cloud CDN cache poisoning attack?",
+        "o": [
+            "Forcing cache of malicious content",
+            "Direct origin access",
+            "DDoS attack",
+            "SSL stripping"
+        ]
+    },
+    {
+        "q": "What is a cloud API gateway misconfiguration exploit?",
+        "o": [
+            "Bypassing auth via alternative endpoints",
+            "Rate limiting",
+            "Caching responses",
+            "Logging requests"
+        ]
+    },
+    {
+        "q": "What is a cloud serverless function event injection?",
+        "o": [
+            "Malicious payload in event data",
+            "Network packet",
+            "Direct code execution",
+            "Memory dump"
+        ]
+    },
+    {
+        "q": "What is a cloud function as a service provider vulnerability?",
+        "o": [
+            "Isolation failure between customer functions",
+            "User error",
+            "Configuration mistake",
+            "Weak password"
+        ]
+    },
+    {
+        "q": "What is a sophisticated cloud persistence mechanism?",
+        "o": [
+            "Hidden EventBridge rules or Lambda triggers",
+            "Cron job",
+            "Startup script",
+            "User profile"
+        ]
+    },
+    {
+        "q": "What is a cloud defense evasion via API fuzzing?",
+        "o": [
+            "Finding unmonitored API endpoints",
+            "Using standard APIs",
+            "Documented features",
+            "Common requests"
+        ]
+    },
+    {
+        "q": "What is a cloud credential harvesting via SSRF?",
+        "o": [
+            "Requesting IMDS from vulnerable app",
+            "Phishing email",
+            "Keylogger",
+            "Shoulder surfing"
+        ]
+    },
+    {
+        "q": "What is a cloud lateral movement via shared resources?",
+        "o": [
+            "Using compromised resource to access another",
+            "Direct network scan",
+            "Password spray",
+            "Brute force"
+        ]
+    },
+    {
+        "q": "What is a cloud impact via resource deletion?",
+        "o": [
+            "Destroying infrastructure without backup",
+            "Data encryption",
+            "Data exfiltration",
+            "Defacement"
+        ]
+    },
+    {
+        "q": "What is a red team cloud operation goal?",
+        "o": [
+            "Assess detection and response capabilities",
+            "Find all vulnerabilities",
+            "Patch systems",
+            "Deploy security tools"
+        ]
+    },
+    {
+        "q": "What is a purple team exercise in cloud?",
+        "o": [
+            "Collaborative red and blue team testing",
+            "Only attack",
+            "Only defense",
+            "Only reporting"
+        ]
+    },
+    {
+        "q": "What is a cloud penetration testing tool for IAM?",
+        "o": [
+            "Pacu or ScoutSuite",
+            "Nmap",
+            "Wireshark",
+            "Metasploit"
+        ]
+    },
+    {
+        "q": "What is Pacu tool used for?",
+        "o": [
+            "AWS exploitation framework",
+            "Network scanning",
+            "Web app testing",
+            "Wireless attacks"
+        ]
+    },
+    {
+        "q": "What is a cloud security assessment of container orchestration?",
+        "o": [
+            "Kube-bench or kube-hunter",
+            "Docker bench",
+            "Trivy",
+            "Clair"
+        ]
+    },
+    {
+        "q": "What is kube-hunter tool purpose?",
+        "o": [
+            "Penetration testing for Kubernetes",
+            "Benchmark scanning",
+            "Image scanning",
+            "Runtime monitoring"
+        ]
+    },
+    {
+        "q": "What is a cloud serverless security assessment tool?",
+        "o": [
+            "Lambda Guard or Protego",
+            "Pacu",
+            "ScoutSuite",
+            "Nmap"
+        ]
+    },
+    {
+        "q": "What is a cloud forensic analysis tool for disk images?",
+        "o": [
+            "The Sleuth Kit or Autopsy",
+            "Wireshark",
+            "Nmap",
+            "Metasploit"
+        ]
+    },
+    {
+        "q": "What is a cloud memory analysis tool?",
+        "o": [
+            "Volatility or Rekall",
+            "FTK Imager",
+            "dd",
+            "Guymager"
+        ]
+    },
+    {
+        "q": "What is a cloud log analysis platform?",
+        "o": [
+            "ELK Stack or Splunk",
+            "Nmap",
+            "Wireshark",
+            "Burp Suite"
+        ]
+    },
+    {
+        "q": "What is a multi-cloud security orchestration challenge?",
+        "o": [
+            "Integrating disparate APIs and data formats",
+            "Single console",
+            "Unified billing",
+            "Common support"
+        ]
+    },
+    {
+        "q": "What is a cloud security policy as code tool?",
+        "o": [
+            "Sentinel or OPA",
+            "CloudFormation",
+            "Terraform",
+            "Ansible"
+        ]
+    },
+    {
+        "q": "What is a cloud compliance automation tool?",
+        "o": [
+            "AWS Config or Azure Policy",
+            "Manual checklists",
+            "Spreadsheets",
+            "Email reports"
+        ]
+    },
+    {
+        "q": "What is a cloud security benchmark automation?",
+        "o": [
+            "CIS-CAT or InSpec",
+            "Manual review",
+            "Penetration testing",
+            "Code review"
+        ]
+    },
+    {
+        "q": "What is a cloud threat hunting methodology?",
+        "o": [
+            "Proactive search for indicators of compromise",
+            "Reactive alert review",
+            "Scheduled scans",
+            "Compliance audits"
+        ]
+    },
+    {
+        "q": "What is a cloud threat hunting hypothesis example?",
+        "o": [
+            "Unusual API calls from new regions",
+            "Daily backups",
+            "Weekly patching",
+            "Monthly reviews"
+        ]
+    },
+    {
+        "q": "What is a cloud threat hunting data source?",
+        "o": [
+            "CloudTrail, VPC Flow Logs, DNS logs",
+            "Only application logs",
+            "Only network packets",
+            "Only disk images"
+        ]
+    },
+    {
+        "q": "What is a cloud machine learning security detection?",
+        "o": [
+            "Anomaly detection on user behavior",
+            "Signature-based only",
+            "Rule-based only",
+            "Manual review"
+        ]
+    },
+    {
+        "q": "What is a cloud UEBA tool?",
+        "o": [
+            "User and Entity Behavior Analytics",
+            "Firewall",
+            "Antivirus",
+            "Encryption"
+        ]
+    },
+    {
+        "q": "What is a cloud zero-day exploit mitigation challenge?",
+        "o": [
+            "No signature available for detection",
+            "Easy to patch",
+            "Known vulnerability",
+            "Public exploit"
+        ]
+    },
+    {
+        "q": "What is a cloud bug bounty program benefit?",
+        "o": [
+            "Crowdsourced vulnerability discovery",
+            "Guaranteed security",
+            "No false positives",
+            "Automatic fixes"
+        ]
+    },
+    {
+        "q": "What is a cloud responsible vulnerability disclosure process?",
+        "o": [
+            "Report privately, allow time to fix",
+            "Public disclosure immediately",
+            "Sell to highest bidder",
+            "Ignore the finding"
+        ]
+    },
+    {
+        "q": "What is a cloud security researcher's legal consideration?",
+        "o": [
+            "Terms of service and authorization",
+            "No restrictions",
+            "Unlimited testing",
+            "Ignore laws"
+        ]
+    },
+    {
+        "q": "What is a cloud penetration test exit criteria?",
+        "o": [
+            "All objectives met and documented",
+            "First finding discovered",
+            "Time expired",
+            "Budget used"
+        ]
+    },
+    {
+        "q": "What is a cloud penetration test report severity rating?",
+        "o": [
+            "CVSS score or criticality matrix",
+            "Random assignment",
+            "Alphabetical order",
+            "Chronological order"
+        ]
+    },
+    {
+        "q": "What is a cloud pentest remediation validation?",
+        "o": [
+            "Re-testing to confirm fixes",
+            "Assuming fixed",
+            "Ignoring fixes",
+            "Deferring fixes"
+        ]
+    },
+    {
+        "q": "What is a cloud security champion role?",
+        "o": [
+            "Advocate for security in development teams",
+            "Penetration tester",
+            "Security analyst",
+            "Compliance officer"
+        ]
+    },
+    {
+        "q": "What is a cloud security culture shift requirement?",
+        "o": [
+            "Shared responsibility mindset across teams",
+            "Only security team responsible",
+            "Only operations responsible",
+            "Only developers responsible"
+        ]
+    },
+    {
+        "q": "What is a cloud security training gap for developers?",
+        "o": [
+            "Lack of cloud-specific secure coding knowledge",
+            "Too much training",
+            "Perfect knowledge",
+            "No coding required"
+        ]
+    },
+    {
+        "q": "What is a cloud security center of excellence purpose?",
+        "o": [
+            "Drive cloud security best practices",
+            "Perform all penetration tests",
+            "Manage all incidents",
+            "Approve all changes"
+        ]
+    },
+    {
+        "q": "What is a cloud security metrics for executives?",
+        "o": [
+            "Risk posture and compliance status",
+            "Technical vulnerability count",
+            "Tool names",
+            "Configuration details"
+        ]
+    },
+    {
+        "q": "What is a cloud security OKR example?",
+        "o": [
+            "Reduce critical misconfigurations by percentage",
+            "Install security tools",
+            "Hire more staff",
+            "Buy software"
+        ]
+    },
+    {
+        "q": "What is a cloud security maturity model?",
+        "o": [
+            "CMMI or cloud-specific maturity framework",
+            "Number of tools",
+            "Budget size",
+            "Team size"
+        ]
+    },
+    {
+        "q": "What is a cloud security roadmap component?",
+        "o": [
+            "Phased improvements with milestones",
+            "Random changes",
+            "Immediate perfection",
+            "No planning"
+        ]
+    },
+    {
+        "q": "What is a cloud security budget consideration?",
+        "o": [
+            "People, processes, and technology costs",
+            "Only software licenses",
+            "Only hardware",
+            "Only training"
+        ]
+    },
+    {
+        "q": "What is a cloud security ROI measurement?",
+        "o": [
+            "Risk reduction and incident prevention",
+            "Profit increase",
+            "Revenue growth",
+            "Stock price"
+        ]
+    },
+    {
+        "q": "What is a cloud security vendor lock-in risk?",
+        "o": [
+            "Dependency on proprietary security tools",
+            "Open source tools",
+            "Standards compliance",
+            "Portable code"
+        ]
+    },
+    {
+        "q": "What is a cloud security exit strategy?",
+        "o": [
+            "Plan for migrating security controls",
+            "No plan needed",
+            "Immediate shutdown",
+            "Ignore security"
+        ]
+    },
+    {
+        "q": "What is a cloud security in mergers and acquisitions?",
+        "o": [
+            "Assessing security posture of target company",
+            "Ignoring security",
+            "Assuming secure",
+            "Deferring assessment"
+        ]
+    },
+    {
+        "q": "What is a cloud security due diligence question?",
+        "o": [
+            "How are access controls and monitoring implemented",
+            "What is company stock price",
+            "Number of employees",
+            "Office location"
+        ]
+    },
+    {
+        "q": "What is a cloud security insurance requirement?",
+        "o": [
+            "Evidence of security controls and practices",
+            "No requirements",
+            "Simple form",
+            "Payment only"
+        ]
+    },
+    {
+        "q": "What is a cloud security regulatory trend?",
+        "o": [
+            "Increasing compliance requirements",
+            "Decreasing regulations",
+            "No changes",
+            "Self-regulation only"
+        ]
+    },
+    {
+        "q": "What is a cloud security future challenge?",
+        "o": [
+            "AI-driven attacks and defense",
+            "No new challenges",
+            "Everything solved",
+            "Simpler security"
+        ]
+    },
+    {
+        "q": "What is a cloud AI security testing requirement?",
+        "o": [
+            "Model poisoning and evasion testing",
+            "Standard pentest only",
+            "No testing needed",
+            "Basic scans"
+        ]
+    },
+    {
+        "q": "What is a cloud machine learning model inversion attack?",
+        "o": [
+            "Extracting training data from model",
+            "SQL injection",
+            "XSS attack",
+            "DDoS attack"
+        ]
+    },
+    {
+        "q": "What is a cloud serverless AI function risk?",
+        "o": [
+            "Inference data leakage via logs",
+            "Model accuracy",
+            "Training speed",
+            "Deployment ease"
+        ]
+    },
+    {
+        "q": "What is a cloud 5G security consideration?",
+        "o": [
+            "Edge computing and increased attack surface",
+            "Same as 4G",
+            "No changes",
+            "Simpler security"
+        ]
+    },
+    {
+        "q": "What is a cloud edge computing security challenge?",
+        "o": [
+            "Distributed nodes with limited physical security",
+            "Centralized controls",
+            "Unified management",
+            "Single point of control"
+        ]
+    },
+    {
+        "q": "What is a cloud quantum computing security impact?",
+        "o": [
+            "Breaking current cryptographic algorithms",
+            "No impact",
+            "Stronger encryption",
+            "Simpler math"
+        ]
+    }
+]
